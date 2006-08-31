@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
-"POT-Creation-Date: 2006-08-30 02:45+0200\n"
+"POT-Creation-Date: 2006-08-31 02:45+0200\n"
 "PO-Revision-Date: 2006-08-03 13:45+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: khmer <support@forum.org>\n"
@@ -1262,8 +1262,8 @@ msgid "Description:"
 msgstr "ពិពណ៌នា ៖"
 
 #. i18n: file ./ui/wdgnewimage.ui line 251
-#: ui/kis_layerlist.cc:184 rc.cpp:209 rc.cpp:301 rc.cpp:1347 rc.cpp:1644
-#: rc.cpp:1754
+#: ui/kis_layerlist.cc:184 ui/kis_tool_paint.cc:123 rc.cpp:209 rc.cpp:301
+#: rc.cpp:1347 rc.cpp:1644 rc.cpp:1754
 #, no-c-format
 msgid "Opacity:"
 msgstr "ភាព​ស្រអាប់ ៖"
@@ -2283,7 +2283,7 @@ msgid "SIOX"
 msgstr "SIOX"
 
 #. i18n: file ./plugins/tools/tool_siox/wdg_tool_siox.ui line 38
-#: rc.cpp:797
+#: ui/kis_tool_paint.cc:129 rc.cpp:797
 #, fuzzy, no-c-format
 msgid "Mode:"
 msgstr "របៀប​ ៖ "
@@ -3132,7 +3132,7 @@ msgid "Blur radius:"
 msgstr "កាំ​ព្រិល​ ៖"
 
 #. i18n: file ./plugins/viewplugins/dropshadow/wdg_dropshadow.ui line 48
-#: rc.cpp:1344
+#: rc.cpp:1344 rc.cpp:1744
 #, no-c-format
 msgid "Color:"
 msgstr "ពណ៌ ៖"
@@ -3792,12 +3792,6 @@ msgstr "ពន្លឺ"
 msgid "Channel:"
 msgstr "​ឆានែល​ ៖"
 
-#. i18n: file ./plugins/filters/colors/wdgcolortoalphabase.ui line 52
-#: rc.cpp:1744
-#, no-c-format
-msgid "Color :"
-msgstr "ពណ៌ ៖"
-
 #. i18n: file ./plugins/filters/colors/wdgcolortoalphabase.ui line 85
 #: rc.cpp:1748 rc.cpp:1763
 #, no-c-format
@@ -4243,7 +4237,8 @@ msgid "No options for %1."
 msgstr "គ្មាន​ជម្រើស​សម្រាប់ %1 ឡើយ ។"
 
 #: ui/kis_brush_chooser.cc:33
-msgid "Spacing: "
+#, fuzzy
+msgid "Spacing:"
 msgstr "គម្លាត ៖ "
 
 #: ui/kis_dlg_adj_layer_props.cc:95 ui/kis_dlg_adjustment_layer.cc:81
@@ -4472,9 +4467,9 @@ msgstr "បង្ហាញ​របាំង"
 msgid "Edit Mask"
 msgstr "កែសម្រួល​របាំង"
 
-#: ui/kis_view.cc:662
-msgid "&Flatten image"
-msgstr "ធ្វើ​ឲ្យ​ រូបភាព​រាបស្មើ"
+#: ui/kis_view.cc:662 ui/kis_view.cc:1946
+msgid "&Flatten Image"
+msgstr "ធ្វើ​រូបភាព​ឲ្យរាបស្មើ"
 
 #: ui/kis_view.cc:663
 msgid "&Merge with Layer Below"
@@ -4554,10 +4549,6 @@ msgstr "រូបភាព​មាន​ស្រទាប់​ដែល​ល
 
 #: core/kis_image.cc:1306 ui/kis_view.cc:1945
 msgid "Flatten Image"
-msgstr "ធ្វើ​រូបភាព​ឲ្យរាបស្មើ"
-
-#: ui/kis_view.cc:1946
-msgid "&Flatten Image"
 msgstr "ធ្វើ​រូបភាព​ឲ្យរាបស្មើ"
 
 #: ui/kis_view.cc:2599
@@ -4748,14 +4739,6 @@ msgstr "ស្លាបសត្វ​..."
 #: ui/kis_selection_manager.cc:783
 msgid "Grow"
 msgstr "ដុះដាល​"
-
-#: ui/kis_tool_paint.cc:123
-msgid "Opacity: "
-msgstr "ភាព​ស្រអាប់ ៖ "
-
-#: ui/kis_tool_paint.cc:129
-msgid "Mode: "
-msgstr "របៀប​ ៖ "
 
 #: core/kis_layer.cc:74
 msgid "Lock Layer"
@@ -6516,16 +6499,19 @@ msgid "Grow Selection"
 msgstr ""
 
 #: plugins/viewplugins/modify_selection/modify_selection.cc:69
-msgid "Grow selection..."
-msgstr ""
+#, fuzzy
+msgid "Grow Selection..."
+msgstr "បង្កើន​ការ​ជ្រើស​រើស​ដោយ"
 
 #: plugins/viewplugins/modify_selection/modify_selection.cc:70
-msgid "Shrink selection..."
-msgstr ""
+#, fuzzy
+msgid "Shrink Selection..."
+msgstr "បង្រួញ​ការជ្រើស​រើស​ដោយ"
 
 #: plugins/viewplugins/modify_selection/modify_selection.cc:71
-msgid "Border selection..."
-msgstr ""
+#, fuzzy
+msgid "Border Selection..."
+msgstr "ការជ្រើស​រើស​ស៊ុម​ដោយ"
 
 #: plugins/viewplugins/modify_selection/dlg_border_selection.cc:42
 #: plugins/viewplugins/modify_selection/modify_selection.cc:144
@@ -6690,8 +6676,9 @@ msgid "Noise"
 msgstr ""
 
 #: plugins/filters/noisefilter/noisefilter.cc:67
-msgid "&Random Noise"
-msgstr ""
+#, fuzzy
+msgid "&Random Noise..."
+msgstr "តំណក់​​ភ្លៀង..."
 
 #: plugins/filters/noisefilter/noisefilter.cc:85
 msgid "Configuration of noise filter"
@@ -6723,8 +6710,9 @@ msgid "Raindrops"
 msgstr "តំណក់​​ភ្លៀង"
 
 #: plugins/filters/wavefilter/wavefilter.cc:102
-msgid "&Wave"
-msgstr ""
+#, fuzzy
+msgid "&Wave..."
+msgstr "​រក្សាទុក​ជា..."
 
 #: plugins/filters/wavefilter/wavefilter.cc:126
 msgid "Configuration of wave filter"
@@ -6763,7 +6751,7 @@ msgid "Sobel"
 msgstr "ជាន់​លើគ្នា"
 
 #: plugins/filters/lenscorrectionfilter/lenscorrectionfilter.cc:71
-msgid "&Lens correction"
+msgid "&Lens Correction..."
 msgstr ""
 
 #: plugins/filters/lenscorrectionfilter/lenscorrectionfilter.cc:93
@@ -6820,16 +6808,18 @@ msgid "Color to alpha"
 msgstr "បន្ថែម​ពណ៌​ទៅកាន់​ក្តារលាយ​"
 
 #: plugins/filters/colors/kis_minmax_filters.cc:71
-msgid "M&aximize channel"
-msgstr ""
+#, fuzzy
+msgid "M&aximize Channel"
+msgstr "ឆានែល​ ៖"
 
 #: plugins/filters/colors/kis_minmax_filters.cc:117
-msgid "M&inimize channel"
-msgstr ""
+#, fuzzy
+msgid "M&inimize Channel"
+msgstr "ឆានែល​ ៖"
 
 #: plugins/filters/colors/kis_color_to_alpha.cc:33
 #, fuzzy
-msgid "&Color to alpha"
+msgid "&Color to Alpha..."
 msgstr "បន្ថែម​ពណ៌​ទៅកាន់​ក្តារលាយ​"
 
 #: plugins/filters/imageenhancement/kis_wavelet_noise_reduction.h:59
@@ -6857,8 +6847,9 @@ msgid "Random Pick"
 msgstr ""
 
 #: plugins/filters/randompickfilter/randompickfilter.cc:68
-msgid "&Random Pick"
-msgstr ""
+#, fuzzy
+msgid "&Random Pick..."
+msgstr "តំណក់​​ភ្លៀង..."
 
 #: plugins/filters/randompickfilter/randompickfilter.cc:87
 msgid "Configuration of random pick filter"
@@ -6866,7 +6857,7 @@ msgstr ""
 
 #: plugins/filters/unsharp/kis_unsharp_filter.cc:54
 #, fuzzy
-msgid "&Unsharp mask..."
+msgid "&Unsharp Mask..."
 msgstr "កាត់​រូបភាព​..."
 
 #: plugins/filters/unsharp/kis_unsharp_filter.h:36
@@ -6876,7 +6867,7 @@ msgstr "របាំង​​អាល់ហ្វា"
 
 #: plugins/filters/fastcolortransfer/fastcolortransfer.cc:61
 #, fuzzy
-msgid "&Color Transfer"
+msgid "&Color Transfer..."
 msgstr "ជួរ​ពណ៌​"
 
 #: plugins/filters/fastcolortransfer/fastcolortransfer.h:45
@@ -6955,6 +6946,18 @@ msgid ""
 msgstr ""
 "khoemsokhem@khmeros.info,sokun_poch@khmeros.info,soben@khmeros.info,"
 "evannak@khmeros.info,piseth_dv@khmeros.info"
+
+#~ msgid "Color :"
+#~ msgstr "ពណ៌ ៖"
+
+#~ msgid "&Flatten image"
+#~ msgstr "ធ្វើ​ឲ្យ​ រូបភាព​រាបស្មើ"
+
+#~ msgid "Opacity: "
+#~ msgstr "ភាព​ស្រអាប់ ៖ "
+
+#~ msgid "Mode: "
+#~ msgstr "របៀប​ ៖ "
 
 #, fuzzy
 #~ msgid "Editing Mode"
