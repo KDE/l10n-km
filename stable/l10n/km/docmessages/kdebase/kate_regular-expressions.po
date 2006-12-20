@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: kate_regular-expressions\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2005-12-23 18:16+0000\n"
-"PO-Revision-Date: 2006-12-20 05:06+0700\n"
+"PO-Revision-Date: 2006-12-20 21:02+0700\n"
 "Last-Translator: sokun_poch <sokun_poch@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.infor>\n"
 "MIME-Version: 1.0\n"
@@ -1406,6 +1406,9 @@ msgid ""
 "<quote>in</quote> in the string <quote>He came in through the window</quote>"
 ", but not at the <quote>in</quote> in <quote>window</quote>."
 msgstr ""
+"នេះ​ជា​អត្ថប្រយោជន៍​ដើម្បី​ស្វែងរក​ចុង​ពាក្យ​ ឧទាហរណ៍​ស្វែងរក​ពាក្យ​ទាំងមូល​នៃ​ចុង​ពាក្យ​ទាំងពីរ ឃ្លា​ <userinput>\\bin\\b</userinput> នឹង​ផ្គូផ្គង​​បំបែក​"
+"<quote>in</quote> ជា​ខ្សែអក្សរ <quote> គាត់​បាន​មក​តាម​បង្អួច </quote>"
+"ប៉ុន្តែ​មិន​មែន​ <quote>in</quote> ក្នុង​ <quote> បង្អួច​ឡើយ </quote> ។​"
 
 #. Tag: term
 #: regular-expressions.docbook:612
@@ -1417,7 +1420,7 @@ msgstr "<userinput>\\B</userinput> (មិនមែនជា​ព្រំដ�
 #: regular-expressions.docbook:613
 #, no-c-format
 msgid "Matches wherever <quote>\\b</quote> does not."
-msgstr ""
+msgstr "ផ្គូផ្គង​ពេល​​ <quote>\\b</quote> មិនទាន់​បាន​ផ្គូផ្គង​ ។"
 
 #. Tag: para
 #: regular-expressions.docbook:614
@@ -1427,12 +1430,15 @@ msgid ""
 "<userinput>\\Bin\\B</userinput> will match at in <quote>window</quote> "
 "but not in <quote>integer</quote> or <quote>I'm in love</quote>."
 msgstr ""
+"មានន័យ​ថា​វា​នឹង​ផ្គូផ្គង​ទៅ​ឧទាហរណ៍​ នៅ​ក្នុង​ពាក្យ​នីមួយៗ ៖ កន្សោម​"
+"<userinput>\\Bin\\B</userinput> នឹង​ផ្គូផ្គង​ក្នុង​ <quote> បង្អួច </quote> "
+"ប៉ុន្តែ​មិន​មែន​  <quote>integer</quote> ឬ <quote> ខ្ញុំ​មាន​ស្នេហា </quote> ។"
 
 #. Tag: term
 #: regular-expressions.docbook:620
 #, no-c-format
 msgid "<userinput>(?=PATTERN)</userinput> (Positive lookahead)"
-msgstr ""
+msgstr "<userinput>(?=PATTERN)</userinput> ( lookahead វិជ្ជមាន​)"
 
 #. Tag: para
 #: regular-expressions.docbook:621
@@ -1444,6 +1450,10 @@ msgid ""
 "of the assertion, but the text matched by that will not be included in the "
 "result."
 msgstr ""
+"ការអះអាង​ lookahead ជា​ផ្នែក​មួយ​នៃ​ខ្សែអក្សរ​ធ្វើ​តាម​ការផ្គូផ្គង​ដែល​អាច​ធ្វើ​បាន​ ។ "
+"lookahead វិជ្ជមាន​នឹង​ការពារ​ខ្សែអក្សរ​ពី​ការផ្គូផ្គង​ បើ​អត្ថបទ​អាច​ធ្វើ​បាន​តាម​ការផ្គូផ្គង​ "
+"ឬ​មិន​ផ្គូផ្គង​ <emphasis>PATTERN</emphasis> នៃ​ការអះអាង​"
+"ប៉ុន្តែ​អត្ថបទ​ត្រូវ​បាន​ផ្គូផ្គង​រួម​មាន​ទាំង​លទ្ធផល​ ។"
 
 #. Tag: para
 #: regular-expressions.docbook:625
@@ -1453,12 +1463,15 @@ msgid ""
 "handy</quote> in <quote>handyman</quote> but not in <quote>"
 "That came in handy!</quote>"
 msgstr ""
+"កន្សោម​  <userinput>handy(?=\\w)</userinput> នឹង​ផ្គូផ្គង​  <quote>"
+"handy</quote> ក្នុង <quote>handyman</quote> ប៉ុន្តែ​មិនមែន​  <quote>"
+"That came in handy!</quote>"
 
 #. Tag: term
 #: regular-expressions.docbook:631
 #, no-c-format
 msgid "<userinput>(?!PATTERN)</userinput> (Negative lookahead)"
-msgstr ""
+msgstr "<userinput>(?!PATTERN)</userinput> (បដិសេធ​ lookahead)"
 
 #. Tag: para
 #: regular-expressions.docbook:633
@@ -1468,6 +1481,9 @@ msgid ""
 "following part of the searched string does match its <emphasis>"
 "PATTERN</emphasis>."
 msgstr ""
+"lookahead បដិសេធ​ការពារ​ផ្គូផ្គង​ការយល់​ដឹង​ដែល​អាច​ធ្វើ​បាន​ បើ​ផ្នែក​នៃ​ខ្សែអក្សរ​ដែលបាន​"
+"ស្វែងរក​មិន​ទាន់​បាន​ផ្គូផ្គង​ទៅ​ <emphasis>"
+"PATTERN</emphasis> នូវ​ឡើយ​ ។"
 
 #. Tag: para
 #: regular-expressions.docbook:636
