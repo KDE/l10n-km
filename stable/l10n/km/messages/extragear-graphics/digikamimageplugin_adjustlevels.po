@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: digikamimageplugin_adjustlevels\n"
-"POT-Creation-Date: 2005-12-16 03:16+0100\n"
+"POT-Creation-Date: 2006-12-21 02:47+0100\n"
 "PO-Revision-Date: 2006-04-29 10:41+0700\n"
 "Last-Translator: Leang Chumsoben <soben@khmeros.info>\n"
 "Language-Team:  <en@li.org>\n"
@@ -30,44 +30,51 @@ msgstr ""
 "khoemsokhem@khmeros.info,sokun_poch@khmeros.info,soben@khmeros.info,"
 "evannak@khmeros.info,piseth_dv@khmeros.info"
 
-#: adjustlevels.cpp:78 adjustlevels.cpp:87
+#: adjustlevels.cpp:91 imageplugin_adjustlevels.cpp:63
 msgid "Adjust Color Levels"
 msgstr "លៃតម្រូវ​កម្រិត​ពណ៌"
 
-#: adjustlevels.cpp:89
+#: adjustlevels.cpp:93
 msgid "An image-histogram-levels adjustment plugin for digiKam."
 msgstr ""
 "កម្មវិធី​ជំនួយ digiKam ឲ្យ​អាច​លៃតម្រូវ​កម្រិត​​អ៊ីស្តូក្រាម​របស់​រូបភាព ។"
 
-#: adjustlevels.cpp:95
+#: adjustlevels.cpp:99
 msgid "Author and maintainer"
 msgstr "​​អ្នក​និពន្ធ និង អ្នក​ថែទាំ​"
 
-#: adjustlevels.cpp:105
+#: adjustlevels.cpp:107
+msgid ""
+"<p>Here you can see the image's level-adjustments preview. You can pick color "
+"on image to see the color level corresponding on histogram."
+msgstr ""
+
+#: adjustlevels.cpp:117
 msgid "Channel:"
 msgstr "​​ឆានែល​ ៖"
 
-#: adjustlevels.cpp:108 adjustlevels.cpp:113
+#: adjustlevels.cpp:120 adjustlevels.cpp:125
 msgid "Luminosity"
 msgstr "ពន្លឺ"
 
-#: adjustlevels.cpp:109
+#: adjustlevels.cpp:121
 msgid "Red"
 msgstr "​ក្រហម"
 
-#: adjustlevels.cpp:110
+#: adjustlevels.cpp:122
 msgid "Green"
 msgstr "​​បៃតង"
 
-#: adjustlevels.cpp:111
+#: adjustlevels.cpp:123
 msgid "Blue"
 msgstr "​​ខៀវ"
 
-#: adjustlevels.cpp:112
+#: adjustlevels.cpp:124
 msgid "Alpha"
 msgstr "​អាល់ហ្វា"
 
-#: adjustlevels.cpp:114
+#: adjustlevels.cpp:126
+#, fuzzy
 msgid ""
 "<p>Select here the histogram channel to display:"
 "<p><b>Luminosity</b>: display the image's luminosity values."
@@ -76,7 +83,7 @@ msgid ""
 "<p><b>Blue</b>: display the blue image-channel values."
 "<p><b>Alpha</b>: display the alpha image-channel values. This channel "
 "corresponds to the transparency value and is supported by some image formats, "
-"such as PNG or GIF."
+"such as PNG or TIF."
 msgstr ""
 "<p>ជ្រើសឆានែល​អ៊ីស្តូក្រាម​ដើម្បី​បង្ហាញ នៅ​ទីនេះ ៖"
 "<p><b>ពន្លឺ</b> ៖ បង្ហាញ​តម្លៃ​ពន្លឺ​របស់​រូបភាព ។"
@@ -87,7 +94,7 @@ msgstr ""
 "ឆានែល​នេះ​​ត្រូវ​គ្នា​ទៅ​នឹង​តម្លៃ​ភាពថ្លា "
 "ហើយ​ត្រូវ​បាន​គាំ​ទ្រ​ដោយ​ទ្រង់ទ្រាយ​រូបភាព​មួយ​ចំនួន​​ដូចជា ៖ PNG ឬ GIF ។"
 
-#: adjustlevels.cpp:127
+#: adjustlevels.cpp:139
 msgid ""
 "<p>Select here the histogram scale."
 "<p>If the image's maximal counts are small, you can use the linear scale."
@@ -100,68 +107,76 @@ msgstr ""
 "<p>អ្នក​អាច​ប្រើ​មាត្រដ្ឋាន​លោការីត នៅ​ពេល​ដែល​ចំនួន​អតិបរមា​មាន​តម្លៃ​ធំ ។ "
 "បើ​ប្រើ​វា អ្នក​នឹង​ឃើញ​តម្លៃ​ទាំងអស់ (តូច និង ធំ) នៅ​លើ​ក្រាហ្វ ។"
 
-#: adjustlevels.cpp:133
+#: adjustlevels.cpp:145
 msgid "<p>Linear"
 msgstr "​<p>លីនេអ៊ែរ"
 
-#: adjustlevels.cpp:141
+#: adjustlevels.cpp:153
 msgid "<p>Logarithmic"
 msgstr "<p>លោការីត"
 
-#: adjustlevels.cpp:162
-msgid "<p>This is the histogram drawing of the selected image channel"
+#: adjustlevels.cpp:171
+msgid ""
+"<p>Here you can see the target preview image histogram drawing of the selected "
+"image channel. This one is re-computed at any levels settings changes."
+msgstr ""
+
+#: adjustlevels.cpp:181
+#, fuzzy
+msgid ""
+"<p>This is the histogram drawing of the selected channel from original image"
 msgstr ""
 "<p>នេះ​គឺ​ជា​គំនូរ​អ៊ីស្តូក្រាម​របស់​ឆានែល​អ៊ីស្តូក្រាម​រូបភាព​ដែល​បាន​ជ្រើស"
 
-#: adjustlevels.cpp:172 adjustlevels.cpp:188
+#: adjustlevels.cpp:190 adjustlevels.cpp:206
 msgid "<p>Select here the minimal intensity input value of the histogram."
 msgstr ""
 "<p>ជ្រើស​តម្លៃ​ចូល​នៃ​អាំងតង់​ស៊ីតេ​អប្បរមា​របស់​អ៊ីស្តូក្រាម នៅ​ទីនេះ ។"
 
-#: adjustlevels.cpp:173 adjustlevels.cpp:189
+#: adjustlevels.cpp:191 adjustlevels.cpp:207
 msgid "Minimal intensity input."
 msgstr "តម្លៃ​ចូល​នៃ​អាំងតង់ស៊ីតេ​អប្បបរមា ។"
 
-#: adjustlevels.cpp:181 adjustlevels.cpp:199
+#: adjustlevels.cpp:199 adjustlevels.cpp:217
 msgid "<p>Select here the maximal intensity input value of the histogram."
 msgstr ""
 "<p>ជ្រើស​តម្លៃ​ចូល​នៃ​អាំងតង់​ស៊ីតេ​អតិបរមា​របស់​អ៊ីស្តូក្រាម នៅ​ទីនេះ ។"
 
-#: adjustlevels.cpp:182 adjustlevels.cpp:198
+#: adjustlevels.cpp:200 adjustlevels.cpp:216
 msgid "Maximal intensity input."
 msgstr "តម្លៃ​ចូល​នៃ​អាំងតង់ស៊ីតេ​អតិបរមា ។"
 
-#: adjustlevels.cpp:194
+#: adjustlevels.cpp:212
 msgid "Gamma input value."
 msgstr "តម្លៃ​ចូល​នៃ​ហ្គាម៉ា ។"
 
-#: adjustlevels.cpp:195
+#: adjustlevels.cpp:213
 msgid "<p>Select here the gamma input value."
 msgstr "<p>ជ្រើស​តម្លៃ​ចូល​នៃ​ហ្គាម៉ា នៅ​ទីនេះ ។"
 
-#: adjustlevels.cpp:206 adjustlevels.cpp:225
+#: adjustlevels.cpp:224 adjustlevels.cpp:243
 msgid "<p>Select here the minimal intensity output value of the histogram."
 msgstr ""
 "<p>ជ្រើស​តម្លៃ​លទ្ធផល​អាំងតង់ស៊ីតេ​អប្បរមា​របស់​អ៊ីស្តូក្រាម​ នៅ​ទីនេះ ។"
 
-#: adjustlevels.cpp:207 adjustlevels.cpp:224
+#: adjustlevels.cpp:225 adjustlevels.cpp:242
 msgid "Minimal intensity output."
 msgstr "លទ្ធផល​អាំងតង់ស៊ីតេ​អប្បរមា ។"
 
-#: adjustlevels.cpp:215 adjustlevels.cpp:229
+#: adjustlevels.cpp:233 adjustlevels.cpp:247
 msgid "<p>Select here the maximal intensity output value of the histogram."
 msgstr ""
 "<p>ជ្រើស​តម្លៃ​លទ្ធផល​អាំងតង់ស៊ីតេ​អតិបរមា​របស់​អ៊ីស្តូក្រាម​ នៅ​ទីនេះ ។"
 
-#: adjustlevels.cpp:216 adjustlevels.cpp:228
+#: adjustlevels.cpp:234 adjustlevels.cpp:246
 msgid "Maximal intensity output."
 msgstr "លទ្ធផល​អាំងតង់ស៊ីតេ​អតិបរមា ។"
 
-#: adjustlevels.cpp:243
+#: adjustlevels.cpp:261
 msgid "All channels shadow tone color picker"
 msgstr "ឧបករណ៍​ជ្រើស​ពណ៌​ដាក់ពណ៌ស្រមោល​នៅគ្រប់ឆានែលទាំងអស់"
 
-#: adjustlevels.cpp:244
+#: adjustlevels.cpp:262
 msgid ""
 "<p>With this button, you can pick the color from original image used to set <b>"
 "Shadow Tone</b> levels input on Red, Green, Blue, and Luminosity channels."
@@ -170,11 +185,11 @@ msgstr ""
 "អ្នក​អាច​រើស​ពណ៌​ពី​រូបភាព​ដើម​ដែល​ត្រូវ​បាន​ប្រើ​ដើម្បី​កំណត់​តម្លៃ​ចូល​នៃ​កម្រ"
 "ិត​របស់ <b>ពណ៌​ស្រមោល</b> នៅ​លើ​ឆានែល​ពណ៌​ក្រហម, បៃតង, ខៀវ និង ពន្លឺ ។"
 
-#: adjustlevels.cpp:253
+#: adjustlevels.cpp:271
 msgid "All channels middle tone color picker"
 msgstr "ឧបករណ៍​ជ្រើស​ពណ៌​ដាក់ពណ៌កណ្ដាល​នៅគ្រប់ឆានែលទាំងអស់"
 
-#: adjustlevels.cpp:254
+#: adjustlevels.cpp:272
 msgid ""
 "<p>With this button, you can pick the color from original image used to set <b>"
 "Middle Tone</b> levels input on Red, Green, Blue, and Luminosity channels."
@@ -183,11 +198,11 @@ msgstr ""
 "អ្នក​អាច​រើស​ពណ៌​ពី​រូបភាព​ដើម​ដែល​ត្រូវ​បាន​ប្រើ​ដើម្បី​កំណត់​តម្លៃ​ចូល​នៃ​កម្រ"
 "ិត​របស់ <b>ពណ៌​កណ្ដាល</b> នៅ​លើ​ឆានែល​ពណ៌​ក្រហម, បៃតង, ខៀវ និង ពន្លឺ ។"
 
-#: adjustlevels.cpp:263
+#: adjustlevels.cpp:281
 msgid "All channels highlight tone color picker"
 msgstr "ឧបករណ៍​ជ្រើស​ពណ៌​ដាក់ពណ៌បន្លិច​នៅគ្រប់ឆានែលទាំងអស់"
 
-#: adjustlevels.cpp:264
+#: adjustlevels.cpp:282
 msgid ""
 "<p>With this button, you can pick the color from original image used to set <b>"
 "Highlight Tone</b> levels input on Red, Green, Blue, and Luminosity channels."
@@ -196,27 +211,36 @@ msgstr ""
 "អ្នក​អាច​រើស​ពណ៌​ពី​រូបភាព​ដើម​ដែល​ត្រូវ​បាន​ប្រើ​ដើម្បី​កំណត់​តម្លៃ​ចូល​នៃ​កម្រ"
 "ិត​របស់ <b>ពណ៌​បន្លិច</b> នៅ​លើ​ឆានែល​ពណ៌​ក្រហម, បៃតង, ខៀវ និង ពន្លឺ ។"
 
-#: adjustlevels.cpp:269
-msgid "&Auto"
-msgstr "ស្វ័យប្រវត្តិ"
-
-#: adjustlevels.cpp:270
-msgid "<p>Adjust all levels automatically."
+#: adjustlevels.cpp:289
+#, fuzzy
+msgid "Adjust all levels automatically."
 msgstr "<p>លៃតម្រូវ​កម្រិត​ទាំងអស់​ដោយស្វ័យ​ប្រត្តិ ។"
 
-#: adjustlevels.cpp:271
+#: adjustlevels.cpp:290
+msgid ""
+"<p>If you press this button, all channel levels will be adjusted automatically."
+msgstr ""
+
+#: adjustlevels.cpp:293
 msgid "&Reset"
 msgstr "​កំណត់​ឡើង​វិញ"
 
-#: adjustlevels.cpp:272
-msgid "<p>Reset levels values from the current selected channel."
+#: adjustlevels.cpp:295
+msgid "Reset current channel levels' values."
+msgstr ""
+
+#: adjustlevels.cpp:296
+#, fuzzy
+msgid ""
+"<p>If you press this button, all levels' values from the current selected "
+"channel will be reset to the default values."
 msgstr "<p>កំណត់​តម្លៃ​កម្រិត​ឡើង​វិញ​ពី​ឆានែល​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន ។"
 
-#: adjustlevels.cpp:284
+#: adjustlevels.cpp:310
 msgid "Over exposure indicator"
 msgstr "ចង្អុល​បង្ហាញ​ការ​បង្ហាញ​លើស"
 
-#: adjustlevels.cpp:285
+#: adjustlevels.cpp:311
 msgid ""
 "<p>If you enable this option, over-exposed pixels from the target image preview "
 "will be over-colored. This will not have an effect on the final rendering."
@@ -225,42 +249,27 @@ msgstr ""
 "នឹង​ត្រូវ​បាន​ផាត់​ពណ៌​លើស​គេ ។ "
 "វា​នឹង​មិន​ប៉ះពាល់​ដល់​ការ​បង្ហាញ​ចុងក្រោយ​ឡើយ ។"
 
-#: adjustlevels.cpp:296
-msgid ""
-"<p>Here you can see the original image. You can pick a color from the image "
-"using the color picker tools to select shadow, middle, and highlight tones to "
-"adjust the curves' points in the Red, Green, Blue, and Luminosity Channels."
-msgstr ""
-"<p>អ្នក​អាច​មើល​រូបភាព​ដើម​នៅ​ទីនេះ ។ "
-"អ្នក​អាច​រើស​ពណ៌​ពី​រូបភាព​ដោយ​ប្រើ​ឧបករណ៍​ជ្រើស​ពណ៌ ដើម្បី​ជ្រើស​ពណ៌ស្រមោល, "
-"ពណ៌កណ្ដាល និង ពណ៌​បន្លិច​ "
-"ដើម្បី​លៃ​តម្រូវ​ចំណុច​ខ្សែកោង​នៅ​ក្នុង​ឆានែល​ពណ៌​ក្រហម, បៃតង, ខៀវ និង ពន្លឺ ។"
-
-#: adjustlevels.cpp:302
-msgid "<p>Here you can see the image's level-adjustments preview."
-msgstr "<p>នៅ​ទីនេះ អ្នក​អាច​មើល​ទិដ្ឋភាព​នៃ​ការ​លៃតម្រូវ​កម្រិត​របស់​រូបភាព ។"
-
-#: adjustlevels.cpp:551
+#: adjustlevels.cpp:600
 msgid "Adjust Level"
 msgstr "កម្រិត​លៃតម្រូវ"
 
-#: adjustlevels.cpp:639
+#: adjustlevels.cpp:696
 msgid "Select Gimp Levels File to Load"
 msgstr "ជ្រើស​ឯកសារ​កម្រិត​របស់ Gimp ដើម្បី​ផ្ទុក"
 
-#: adjustlevels.cpp:645
+#: adjustlevels.cpp:702
 msgid "Cannot load from the Gimp levels text file."
 msgstr "មិន​អាច​ផ្ទុក​ពី​ឯកសារ​អត្ថបទ​កម្រិត​របស់​ Gimp បាន​ឡើយ ។"
 
-#: adjustlevels.cpp:660
+#: adjustlevels.cpp:717
 msgid "Gimp Levels File to Save"
 msgstr "ឯកសារ​កម្រិត​របស់ Gimp ដែល​ត្រូវ​រក្សា​ទុក"
 
-#: adjustlevels.cpp:666
+#: adjustlevels.cpp:723
 msgid "Cannot save to the Gimp levels text file."
 msgstr "មិន​អាច​រក្សារ​ឯកសារ​អត្ថបទ​កម្រិត​របស់ Gimp បាន​ឡើយ ។"
 
-#: imageplugin_adjustlevels.cpp:44
+#: imageplugin_adjustlevels.cpp:43
 msgid "Levels Adjust..."
 msgstr "លៃតម្រូវ​កម្រិត..."
 
@@ -275,3 +284,12 @@ msgstr "​ជួសជុល"
 #, no-c-format
 msgid "&Colors"
 msgstr "ពណ៌"
+
+#~ msgid "&Auto"
+#~ msgstr "ស្វ័យប្រវត្តិ"
+
+#~ msgid "<p>Here you can see the original image. You can pick a color from the image using the color picker tools to select shadow, middle, and highlight tones to adjust the curves' points in the Red, Green, Blue, and Luminosity Channels."
+#~ msgstr "<p>អ្នក​អាច​មើល​រូបភាព​ដើម​នៅ​ទីនេះ ។ អ្នក​អាច​រើស​ពណ៌​ពី​រូបភាព​ដោយ​ប្រើ​ឧបករណ៍​ជ្រើស​ពណ៌ ដើម្បី​ជ្រើស​ពណ៌ស្រមោល, ពណ៌កណ្ដាល និង ពណ៌​បន្លិច​ ដើម្បី​លៃ​តម្រូវ​ចំណុច​ខ្សែកោង​នៅ​ក្នុង​ឆានែល​ពណ៌​ក្រហម, បៃតង, ខៀវ និង ពន្លឺ ។"
+
+#~ msgid "<p>Here you can see the image's level-adjustments preview."
+#~ msgstr "<p>នៅ​ទីនេះ អ្នក​អាច​មើល​ទិដ្ឋភាព​នៃ​ការ​លៃតម្រូវ​កម្រិត​របស់​រូបភាព ។"
