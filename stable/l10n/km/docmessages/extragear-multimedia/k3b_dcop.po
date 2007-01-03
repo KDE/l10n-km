@@ -1,0 +1,178 @@
+# translation of k3b_dcop.po to Khmer
+#
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: k3b_dcop\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"X-KDE-DocBook-SVN-URL: branches/stable/extragear/multimedia/doc/k3b/dcop.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 385904\n"
+"POT-Creation-Date: 2005-12-23 18:19+0000\n"
+"PO-Revision-Date: 2007-01-02 15:28+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"Language-Team: Khmer <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Tag: title
+#: dcop.docbook:2
+#, no-c-format
+msgid "The &k3b; &DCOP; Interface"
+msgstr "The &k3b; &DCOP; Interface"
+
+#. Tag: para
+#: dcop.docbook:3
+#, no-c-format
+msgid ""
+"&k3b; features, like many other &kde; applications as well, a &DCOP; interface "
+"which makes it possible to control a part of it's functionality from &eg; a "
+"shellscript."
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:6
+#, no-c-format
+msgid ""
+"To use these &DCOP; functions you can either use the <command>dcop</command> "
+"commandline program or the more convenient <application>Kdcop</application> "
+"application. Both provide the same functionality so it's mostly a matter of "
+"taste and context of usage when deciding which way to choose."
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:11
+#, no-c-format
+msgid ""
+"This chapter assumes that you're using the <command>dcop</command> "
+"commandline program. To access &k3b;'s &DCOP; functions, make sure that &k3b; "
+"is started and then enter something like this at a console:"
+msgstr ""
+
+#. Tag: screen
+#: dcop.docbook:14
+#, no-c-format
+msgid ""
+"<prompt>#</prompt> <command>dcop</command> <option>k3b</option> <option>"
+"K3bInterface</option> <replaceable>[function]</replaceable>"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:17
+#, no-c-format
+msgid ""
+"Besides the generic &DCOP; functions available to all &kde; applications, "
+"&k3b;'s DCOP interface mainly consists of two parts as described below."
+msgstr ""
+
+#. Tag: title
+#: dcop.docbook:21
+#, no-c-format
+msgid "The default K3bInterface"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:23
+#, no-c-format
+msgid ""
+"The default K3b DCOP interface provides functionality like copyCD, formatDVD, "
+"and methods for creating new projects."
+msgstr ""
+
+#. Tag: programlisting
+#: dcop.docbook:25
+#, no-c-format
+msgid ""
+"DCOPRef createDataCDProject()\n"
+"DCOPRef createAudioCDProject()\n"
+"DCOPRef createMixedCDProject()\n"
+"DCOPRef createVideoCDProject()\n"
+"DCOPRef createMovixCDProject()\n"
+"DCOPRef createDataDVDProject()\n"
+"DCOPRef createVideoDVDProject()\n"
+"DCOPRef createMovixDVDProject()\n"
+"DCOPRef openProject(KURL url)\n"
+"QValueList&lt;DCOPRef&gt; projects()\n"
+"DCOPRef currentProject()\n"
+"void copyCd()\n"
+"void copyDvd()\n"
+"void eraseCdrw()\n"
+"void formatDvd()\n"
+"void burnCdImage(KURL url)\n"
+"void burnDvdImage(KURL url)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:27
+#, no-c-format
+msgid ""
+"As result from one of the createXXXProject methods one gets a DCOP reference to "
+"the newly created project: "
+"<programlisting>DCOPRef(k3b,K3bProject-0)</programlisting> "
+"Alternatively you may create a project using the command line: <screen>\n"
+"<prompt>#</prompt> <command>k3b</command> <replaceable>--audiocd</replaceable>\n"
+"</screen> and then retrieve a reference to this project with <screen>\n"
+"<prompt>#</prompt> <command>dcop</command> <option>k3b</option> <option>"
+"K3bInterface</option> <replaceable>currentProject</replaceable>\n"
+"</screen> Using this reference it is possible to manipulate the project using "
+"the <link linkend=\"k3bprojectinterface\">K3bProjectInterface</link>."
+msgstr ""
+
+#. Tag: title
+#: dcop.docbook:44
+#, no-c-format
+msgid "K3bProjectInterface"
+msgstr ""
+
+#. Tag: programlisting
+#: dcop.docbook:46
+#, no-c-format
+msgid ""
+"void addUrls(KURL::List urls)\n"
+"void addUrl(KURL url)\n"
+"void burn()"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:48
+#, no-c-format
+msgid ""
+"K3b offers the K3bProjectInterface as listed above or the more powerful "
+"K3bDataProjectInterface which only applies to data projects (CD and DVD):"
+msgstr ""
+
+#. Tag: programlisting
+#: dcop.docbook:50
+#, no-c-format
+msgid ""
+"void createFolder(QString name)\n"
+"void createFolder(QString name,QString parent)\n"
+"void addUrl(KURL url,QString parent)\n"
+"void addUrls(KURL::List urls,QString parent)\n"
+"void removeItem(QString path)\n"
+"void renameItem(QString path,QString newName)\n"
+"void setVolumeID(QString id)"
+msgstr ""
+
+#. Tag: para
+#: dcop.docbook:53
+#, no-c-format
+msgid ""
+"Using this it is possible to fill a data project with files and folders from a "
+"script. The following script for example creates a new data project, adds "
+"several folders to the project, and adds files to the newly created folders:"
+msgstr ""
+
+#. Tag: programlisting
+#: dcop.docbook:56
+#, no-c-format
+msgid ""
+"#!/bin/bash\n"
+"PROJECT=$(dcop k3b K3bInterface createDataCDProject)\n"
+"dcop $PROJECT createFolder test\n"
+"dcop $PROJECT createFolder foo\n"
+"dcop $PROJECT createFolder bar /foo\n"
+"dcop $PROJECT addUrl /home/trueg/somefile.txt /foo/bar"
+msgstr ""
+
