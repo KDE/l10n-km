@@ -1,19 +1,19 @@
 # translation of userguide_troubleshooting-network-x.po to Khmer
 #
 # Khoem Sokhem <khoemsokhem@khmeros.info>, 2007.
+# Eng Vannak <evannak@khmeros.info>, 2007.
 msgid ""
 msgstr ""
 "Project-Id-Version: userguide_troubleshooting-network-x\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2005-12-23 18:17+0000\n"
-"PO-Revision-Date: 2007-01-04 15:19+0700\n"
-"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
-"Language-Team: Khmer <en@li.org>\n"
+"PO-Revision-Date: 2007-02-16 16:55+0700\n"
+"Last-Translator: Eng Vannak <evannak@khmeros.info>\n"
+"Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-KDE-DocBook-SVN-URL: "
-"branches/KDE/3.5/kdebase/doc/userguide/troubleshooting-network-x.docbook\n"
+"X-KDE-DocBook-SVN-URL: branches/KDE/3.5/kdebase/doc/userguide/troubleshooting-network-x.docbook\n"
 "X-KDE-DocBook-SVN-Changed-Revision: 383053\n"
 "X-Generator: KBabel 1.11.4\n"
 
@@ -21,13 +21,13 @@ msgstr ""
 #: troubleshooting-network-x.docbook:4
 #, no-c-format
 msgid "&J.Hall;"
-msgstr " "
+msgstr "&J.Hall;"
 
 #. Tag: title
 #: troubleshooting-network-x.docbook:7
 #, no-c-format
 msgid "Networking and X"
-msgstr ""
+msgstr "តភ្ជាប់​បណ្ដាញ និង X"
 
 #. Tag: para
 #: troubleshooting-network-x.docbook:8
@@ -41,6 +41,7 @@ msgstr ""
 #. Tag: para
 #: troubleshooting-network-x.docbook:11
 #, no-c-format
+#, fuzzy
 msgid ""
 "X uses the hostname to create both a unique key for authorization, and to "
 "figure out where (via $<envar>DISPLAY</envar>) to send the actual windows it's "
@@ -48,6 +49,9 @@ msgid ""
 "inordinate amounts of time trying to look itself up, a fate you can avoid by "
 "simply teaching your computer what it's own name is."
 msgstr ""
+"ប្រើ​ឈ្មោះ​ម៉ាស៊ីន hostname ដើម្បី​បង្កើត​ទាំងពីរ គ្រាប់​ចុច​តែ​មួយ​សម្រាប់​អ្នក​និពន្ធ និង​ដើម្បី​រក​កន្លែង (via $<envar>DISPLAY</envar>) ដើម្បី​ផ្ញើ​បង្អួច​ពិត ដែល​វា​គូស​នៅ​លើ​អេក្រង់ ។ បើ​កុំព្យូទ័រ​របស់​អ្នក​មិន​ដឹង​វា​មាន​ឈ្មោះ​ផ្ទាល់​ខ្លួន it will spend "
+"inordinate amounts of time trying to look itself up, a fate you can avoid by "
+"simply teaching your computer what it's own name is."
 
 #. Tag: para
 #: troubleshooting-network-x.docbook:16
@@ -56,13 +60,13 @@ msgid ""
 "Check your <filename>/etc/hosts</filename> file and ensure there is an entry "
 "for localhost that looks something like this at the top of the file (after any "
 "comments)."
-msgstr ""
+msgstr "ពិនិត្យ​ឯកសារ <filename>/etc/hosts</filename> របស់​អ្នក និង​ធានា​មាន​ធាតុ​សម្រាប់ localhost ដែល​មើល​អ្វី​ដូច​ជា​នេះ​នៅ​កំពូល​នៃ​ឯកសារ (បន្ទាប់​ពី​មតិ​យោបល់​មួយ​ចំនួន) ។"
 
 #. Tag: screen
 #: troubleshooting-network-x.docbook:20
 #, no-c-format
 msgid "127.0.0.1        localhost"
-msgstr ""
+msgstr "127.0.0.1        localhost"
 
 #. Tag: para
 #: troubleshooting-network-x.docbook:21
@@ -81,6 +85,8 @@ msgid ""
 "127.0.0.1        hal.btl                hal                 (for dhcp)\n"
 "192.168.0.1        hal.btl                hal                (static)"
 msgstr ""
+"127.0.0.1        hal.btl                hal                 (for dhcp)\n"
+"192.168.0.1        hal.btl                hal                (static)"
 
 #. Tag: para
 #: troubleshooting-network-x.docbook:25
@@ -104,6 +110,12 @@ msgid ""
 "ACCEPT</parameter> \n"
 "</computeroutput>"
 msgstr ""
+"<prompt>&percnt;</prompt><userinput><command>iptables-save</command> <literal>"
+"|</literal> <command>grep</command> <option>lo</option></userinput>\n"
+"<computeroutput><option>-A</option> <parameter>INPUT</parameter> <option>"
+"-i</option> <parameter>lo</parameter> <option>-j</option>  <parameter>"
+"ACCEPT</parameter> \n"
+"</computeroutput>"
 
 #. Tag: para
 #: troubleshooting-network-x.docbook:29
@@ -115,3 +127,9 @@ msgid ""
 "misconfigured rules (Such as a <parameter>DROP</parameter> on the <parameter>"
 "OUTPUT</parameter> chain)"
 msgstr ""
+"ច្បាប់ <computeroutput><option>-A</option> <parameter>INPUT</parameter> "
+"<option>-i</option> <parameter>lo</parameter> <option>-j</option> <parameter>"
+"ACCEPT</parameter></computeroutput> គួរ​ធ្វើការ​ជានិច្ច ទាល់​តែ​មាន​ច្បាប់ "
+"misconfigured ផ្សេង​ទៀត (ដូចជា <parameter>DROP</parameter> នៅ​លើ​ច្រវាក់ <parameter>"
+"OUTPUT</parameter>)"
+
