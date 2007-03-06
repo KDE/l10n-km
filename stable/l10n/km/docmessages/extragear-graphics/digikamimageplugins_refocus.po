@@ -1,0 +1,462 @@
+# translation of digikamimageplugins_refocus.po to Khmer
+#
+# Khoem Sokhem <khoemsokhem@khmeros.info>, 2007.
+msgid ""
+msgstr ""
+"Project-Id-Version: digikamimageplugins_refocus\n"
+"Report-Msgid-Bugs-To: http://bugs.kde.org\n"
+"X-KDE-DocBook-SVN-URL: branches/stable/extragear/graphics/doc/digikamimageplugins/refocus.docbook\n"
+"X-KDE-DocBook-SVN-Changed-Revision: 457114\n"
+"POT-Creation-Date: 2005-12-23 18:18+0000\n"
+"PO-Revision-Date: 2007-03-06 10:39+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"Language-Team: Khmer <en@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: KBabel 1.11.4\n"
+
+#. Tag: title
+#: refocus.docbook:4
+#, no-c-format
+msgid "Refocus a Photograph"
+msgstr " "
+
+#. Tag: author
+#: refocus.docbook:7
+#, no-c-format
+msgid "<firstname>Gilles</firstname><surname>Caulier</surname>"
+msgstr ""
+
+#. Tag: email
+#: refocus.docbook:9
+#, no-c-format
+msgid "caulier dot gilles at free.fr"
+msgstr ""
+
+#. Tag: author
+#: refocus.docbook:11
+#, no-c-format
+msgid "<firstname>Gerhard</firstname><surname>Kulzer</surname>"
+msgstr ""
+
+#. Tag: email
+#: refocus.docbook:13
+#, no-c-format
+msgid "gerhard at kulzer.net"
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:18
+#, no-c-format
+msgid ""
+"The digiKam image plugin <emphasis>Refocus</emphasis> "
+"is a tool to refocus an image by enhancing the sharpness. It uses the <emphasis>"
+"Deconvolution Filter</emphasis> algorithm copyrighted by Ernst Lippe."
+msgstr ""
+
+#. Tag: keyword
+#: refocus.docbook:24
+#, no-c-format
+msgid "<keyword>KDE</keyword>"
+msgstr ""
+
+#. Tag: keyword
+#: refocus.docbook:25
+#, no-c-format
+msgid "Digikam"
+msgstr ""
+
+#. Tag: title
+#: refocus.docbook:29
+#, no-c-format
+msgid "Introduction"
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:31
+#, no-c-format
+msgid ""
+"Out-of-focus photographs, as well as most digitized images, need correction of "
+"sharpness. This is due to the digitizing process that must chop up a color "
+"continuum in points with slightly different colors: elements thinner than "
+"sampling frequency will be averaged into an uniform color. Thus, sharp borders "
+"are rendered a little blurred. The same phenomenon appears when printing color "
+"dots on paper. SLR cameras need even more sharpening on a regular basis than "
+"consumer cameras."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:35
+#, no-c-format
+msgid ""
+"Some scanners apply a sharpen filter while scanning. It's worth to disable it "
+"so that you keep control over your image."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:39
+#, no-c-format
+msgid ""
+"This tool attempts to \"refocus\" an image by undoing the defocussing. This is "
+"better than just trying to sharpen a photograph. It is employing a technique "
+"called <emphasis>FIR Wiener Filtering</emphasis>. The traditional technique for "
+"sharpening images is to use unsharp masking. Refocus generally produces better "
+"results than Unsharp masking. Start it from the <menuchoice><guimenu>"
+"Fix</guimenu><guimenuitem>Refocus</guimenuitem></menuchoice> Image Editor menu."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:43
+#, no-c-format
+msgid ""
+"The Refocus technique works differently from <ulink "
+"url=\"help:/digikamimageplugins/unsharp.html\">Unsharp Mask</ulink> "
+"and is also unlike the <ulink "
+"url=\"help:/digikam/using-kapp-imageeditor.html#using-kapp-adjustsharpness\">"
+"Sharpen Filter</ulink> which both increase the contrast of the feature the "
+"edges of an image. Refocus rather reverses the process by which the image got "
+"blurred by the circular aperture of the camera. This method gives you as much "
+"of the original \"in focus\" image as possible. Refocus uses a very powerful "
+"deconvolution algorithm that will reclaim the data that has been mixed up. In "
+"mathmatical terms, blurring is usually the result of a convolution, a "
+"deconvolution will reverse the process, this is exactly what Refocus is doing. "
+"Furthermore, the FIR filter technique allows to remove much of the noise and "
+"granularity that often gets accentuated in the sharpening process of all "
+"sharpening filters."
+msgstr ""
+
+#. Tag: title
+#: refocus.docbook:48
+#, no-c-format
+msgid "Using the plugin"
+msgstr ""
+
+#. Tag: title
+#: refocus.docbook:51
+#, no-c-format
+msgid "Refocus Dialog"
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:55
+#, no-c-format
+msgid ""
+"The image panel and the original preview help you to pan within the image. The "
+"preview window shows the filter output using the current settings."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:59
+#, no-c-format
+msgid ""
+"In most cases you don't know precisely what convolution caused the image "
+"degradation. There are two convolutions that are frequently used to model image "
+"degradation: <itemizedlist> <listitem><para>The Gaussian convolution: this one "
+"is mathematically similar to the normal distribution, with its bell-shaped "
+"curve. From a theoretical point of view the mathematical justification for "
+"using the Gaussian convolution is that when you a apply a large number of "
+"independent random convolutions the results will always approach a Gaussian "
+"convolution.</para></listitem> <listitem><para>The circular convolution: this "
+"one spreads each source point uniformly across a small disk with a fixed "
+"radius. Technically this describes the effects of using a (ideal) lens that is "
+"not correctly focused.</para></listitem> </itemizedlist> "
+"The refocus plug-in supports both the Gaussian and the Circular convolution "
+"plus mixtures of both. The actual convolution that is used by the plug-in is in "
+"fact the result of convolving both the Gaussian and the circular convolution "
+"with one another. Both of these convolutions are identical to the identity "
+"convolution when their parameter is equal to 0. Therefore, when the Gaussian "
+"radius equals 0, the result is a Circular convolution, and likewise when the "
+"radius equals 0 the result is a Gaussian convolution."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:73
+#, no-c-format
+msgid ""
+"In practice, in most cases the Circular convolution works much better than the "
+"Gaussian convolution. The Gaussian convolution has a very long tail, so "
+"mathematically the result of the convolution also depends on source pixels at a "
+"large distance from the original source pixel. The FIR Wiener inverse of a "
+"Gaussian convolution in most cases is heavily influenced by source pixels at a "
+"large distances, and in most cases this produces undesirable results."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:77
+#, no-c-format
+msgid ""
+"The Circular convolution generally produces much better results. One reason is "
+"that the FIR Wiener inverse of the Circular convolution in general influenced "
+"by source pixels in the immediate neighborhood of the original source pixel. "
+"Another reason is that a Circular convolution is theoretically a good "
+"mathematical model for images that are slightly unfocused."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:81
+#, no-c-format
+msgid ""
+"To set correctly the deconvolution filter, the plug-in has the following "
+"parameters:"
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:86
+#, no-c-format
+msgid ""
+"<guilabel>Circular Sharpness</guilabel>: This is the radius of the Circular "
+"convolution filter. It is the most important parameter for using the plug-in. "
+"With most images the default value of 1 should give good results. Select a "
+"higher value when your image is very blurred, but beware of producing halos."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:88
+#, no-c-format
+msgid ""
+"<guilabel>Correlation</guilabel>: Increasing the <guilabel>"
+"Correlation</guilabel> may help reducing artifacts. The correlation can range "
+"from 0-1. Useful values are 0.5 and values close to 1, e.g. 0.95 and 0.99. "
+"Using a high value for the correlation will reduce the sharpening effect of the "
+"plug-in."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:90
+#, no-c-format
+msgid ""
+"<guilabel>Noise filter</guilabel>: Increasing the <guilabel>"
+"Noise filter</guilabel> parameter helps reducing artifacts. The Noise can range "
+"from 0-1 but values higher than 0.1 are rarely helpful. When the Noise value is "
+"too low, e.g. 0 the image quality will be horrible. A useful value is 0.03. "
+"Using a high value for the Noise will even blur the image further."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:92
+#, no-c-format
+msgid ""
+"<guilabel>Gaussian Sharpness</guilabel>: This is the radius for the Gaussian "
+"convolution filter. Use this parameter when your blurring is Gaussian (mostly "
+"due to previous blur filtering). In most cases you should leave this parameter "
+"to 0, because it causes nasty artifacts. When you use non-zero values you will "
+"probably have to increase the <guilabel>Correlation</guilabel> and/or <guilabel>"
+"Noise filter</guilabel> parameters, too."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:94
+#, no-c-format
+msgid ""
+"<guilabel>Matrix size</guilabel>: This parameter determines the size of the "
+"transformation matrix. Increasing the <guilabel>Matrix Size</guilabel> "
+"may give better results, especially when you have chosen large values for "
+"<guilabel>Circular Sharpness</guilabel> or <guilabel>"
+"Gaussian Sharpness</guilabel>. Note that the plug-in will become very slow when "
+"you select large values for this parameter. In most cases you should select a "
+"value in the range 3-10."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:96
+#, no-c-format
+msgid ""
+"<guilabel>Save As</guilabel> and <guilabel>Load</guilabel>"
+": these buttons are used to do just that. Any Refocus parameters that you have "
+"set can be saved to the filesystem and loaded later."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:98
+#, no-c-format
+msgid ""
+"<guilabel>Reset All</guilabel>: this button resets all settings to default "
+"values."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:104
+#, no-c-format
+msgid "Below, you can see few hints to help you work with the refocus plug-in:"
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:110
+#, no-c-format
+msgid ""
+"Preferrably perform all croping, color and intensity curve corrections on the "
+"image before using this plug-in."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:112
+#, no-c-format
+msgid ""
+"Otherwise use this plug-in before performing any other operations on the image. "
+"The reason is that many operations on the image will leave boundaries that are "
+"not immediately visible but that will leave nasty artifacts."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:114
+#, no-c-format
+msgid ""
+"When you are scanning images and compress them, e.g. to JPEG, you should use "
+"the plug-in on the uncompressed image."
+msgstr ""
+
+#. Tag: title
+#: refocus.docbook:123
+#, no-c-format
+msgid "Comparison With Other Techniques"
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:125
+#, no-c-format
+msgid "Comparison to two other techniques frequently used to enhance images are:"
+msgstr ""
+
+#. Tag: ulink
+#: refocus.docbook:130
+#, no-c-format
+msgid "Sharpen Filter"
+msgstr ""
+
+#. Tag: ulink
+#: refocus.docbook:132
+#, no-c-format
+msgid "Unsharp Mask"
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:137
+#, no-c-format
+msgid ""
+"Sharpening applies a small convolution matrix that increases the difference "
+"between a source pixel and its immediate neighbors. FIR Wiener filtering is a "
+"more general technique because it allows a much larger neighborhood and better "
+"parameterizations. Sharpening only works when your images are very slightly "
+"blurred. Furthermore, for high values of the sharpening parameter the results "
+"frequently looks \"noisy\". With FIR Wiener filtering this noise can be greatly "
+"reduced by selecting higher values for the <guilabel>Correlation</guilabel> "
+"and <guilabel>Noise filter</guilabel> parameters."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:141
+#, no-c-format
+msgid ""
+"Unsharp masking is another very popular image enhancement technique. From a "
+"mathematical point of view its justification is a bit obscure but many people "
+"are very fond of it. The first step is to creat a blurred copy of the source "
+"image. Then the difference between the source image and the blurred image is "
+"subtracted from the source image, hence the name unsharp masking. If fact, "
+"unsharp masking is more of a contrast enhancement on the important image "
+"feature than a sharpening. It does not undo the aperture pattern interference "
+"of the camera diaphragm as refocus does."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:145
+#, no-c-format
+msgid ""
+"In general, unsharp masking produces better results than sharpening. This is "
+"probably caused by the fact that unsharp masking uses a larger neighborhood "
+"than sharpening."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:149
+#, no-c-format
+msgid ""
+"From a theoretical point of view unsharp masking must always introduce "
+"artifacts. Even under optimal circumstances it can never completely undo the "
+"effect of blurring. For Wiener filtering it is possible to prove that it is the "
+"optimal linear filter. In practice, in all cases the results of the FIR Wiener "
+"filter were at least as good as those of unsharp masking. The FIR Wiener filter "
+"is frequently better in restoring small details."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:153
+#, no-c-format
+msgid ""
+"Below, you can see a comparison of different filter apply on a small unfocused "
+"image:"
+msgstr ""
+
+#. Tag: entry
+#: refocus.docbook:159
+#, no-c-format
+msgid "Preview"
+msgstr ""
+
+#. Tag: entry
+#: refocus.docbook:160
+#, no-c-format
+msgid "Type"
+msgstr ""
+
+#. Tag: entry
+#: refocus.docbook:169
+#, no-c-format
+msgid ""
+"Original blured color image to fix. This image have been taken with an analog "
+"still camera. The unfocusing result of an insuffisant light for the auto-focus "
+"lens."
+msgstr ""
+
+#. Tag: entry
+#: refocus.docbook:179
+#, no-c-format
+msgid "Fixed image using simple sharpening filter. Sharpness setting is 80."
+msgstr ""
+
+#. Tag: entry
+#: refocus.docbook:189
+#, no-c-format
+msgid ""
+"Fixed image using unsharp mask filter. Settings are Radius=50, Amount = 5, and "
+"Threshold=0."
+msgstr ""
+
+#. Tag: entry
+#: refocus.docbook:199
+#, no-c-format
+msgid ""
+"Fixed image using Refocus filter. Settings are Circular Sharpness=1.3, "
+"Correlation=0.5, Noise Filter=0.020, Gaussian Sharpness=0 and Matrix Size=5."
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:210
+#, no-c-format
+msgid ""
+"For more information about correction of sharpness methods used in digital "
+"imagery, you can found a technical comparison at <ulink "
+"url=\"http://www.bialith.com/Research/BARclockblur.htm\">this url</ulink>."
+msgstr ""
+
+#. Tag: title
+#: refocus.docbook:217
+#, no-c-format
+msgid "The plugin in action"
+msgstr ""
+
+#. Tag: para
+#: refocus.docbook:219
+#, no-c-format
+msgid ""
+"This is an example of how the Refocus can change your life. The original image "
+"is (1) and the corrected image is (2). Refocus settings used to fix this "
+"unfocused image are defaults."
+msgstr ""
+
+#. Tag: title
+#: refocus.docbook:224
+#, no-c-format
+msgid "Refocus Tool in Action"
+msgstr ""
+
