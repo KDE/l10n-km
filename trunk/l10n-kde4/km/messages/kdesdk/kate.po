@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-06-03 05:48+0200\n"
+"POT-Creation-Date: 2007-06-11 06:09+0200\n"
 "PO-Revision-Date: 2007-02-22 09:40+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -613,17 +613,17 @@ msgstr "ជំនួយ​ដ៏​ប្រពៃ"
 msgid "All people who have contributed and I have forgotten to mention"
 msgstr "មនុស្ស​ទាំងអស់​ដែល​បាន​ចូលរួម ហើយ​ខ្ញុំ​ភ្លេច​រៀបរាប់"
 
-#: app/katemain.cpp:104
-msgid ""
-"_: NAME OF TRANSLATORS\n"
-"Your names"
-msgstr ""
+#: app/katemain.cpp:104 rc.cpp:1
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ខឹម សុខែម, ប៉ុច សុគន្ធ, អេង វណ្ណៈ, អោក ពិសិដ្ឋ"
 
-#: app/katemain.cpp:104
-msgid ""
-"_: EMAIL OF TRANSLATORS\n"
-"Your emails"
+#: app/katemain.cpp:104 rc.cpp:2
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
 msgstr ""
+"khoemsokhem@khmeros.info,sokun_poch@khmeros.info,evannak@khmeros.info,"
+"piseth_dv@khmeros.info"
 
 #: app/katedocmanager.cpp:291
 #, qt-format
@@ -1029,18 +1029,6 @@ msgstr ""
 #, fuzzy
 msgid "Session exists"
 msgstr "សម័យ"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "ខឹម សុខែម, ប៉ុច សុគន្ធ, អេង វណ្ណៈ, អោក ពិសិដ្ឋ"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr ""
-"khoemsokhem@khmeros.info,sokun_poch@khmeros.info,evannak@khmeros.info,"
-"piseth_dv@khmeros.info"
 
 #. i18n: tag text
 #. i18n: file ./data/kateui.rc line 5
@@ -1582,6 +1570,7 @@ msgstr ""
 
 #: plugins/kpybrowser/kpybrowser.cpp:194 plugins/kpybrowser/kpybrowser.cpp:274
 #: plugins/symbolviewer/python_parser.cpp:43
+#: plugins/symbolviewer/ruby_parser.cpp:44
 msgid "Classes"
 msgstr ""
 
@@ -1969,10 +1958,49 @@ msgid ""
 msgstr ""
 
 #: plugins/symbolviewer/tcl_parser.cpp:42
+#: plugins/symbolviewer/php_parser.cpp:44
 #: plugins/symbolviewer/fortran_parser.cpp:50
 #: plugins/symbolviewer/cpp_parser.cpp:45
 msgid "Functions"
 msgstr ""
+
+#: plugins/symbolviewer/php_parser.cpp:42
+#: plugins/symbolviewer/cpp_parser.cpp:43
+msgid "Macros"
+msgstr ""
+
+#: plugins/symbolviewer/php_parser.cpp:43
+#: plugins/symbolviewer/cpp_parser.cpp:44
+msgid "Structures"
+msgstr ""
+
+#: plugins/symbolviewer/xslt_parser.cpp:24
+#, fuzzy
+msgid "Show Params"
+msgstr "បង្ហាញ​ផ្លូវ"
+
+#: plugins/symbolviewer/xslt_parser.cpp:25
+#, fuzzy
+msgid "Show Variables"
+msgstr "បង្ហាញ​របារ​ចំហៀង"
+
+#: plugins/symbolviewer/xslt_parser.cpp:26
+#, fuzzy
+msgid "Show Templates"
+msgstr "ពុម្ព ៖"
+
+#: plugins/symbolviewer/xslt_parser.cpp:50
+msgid "Params"
+msgstr ""
+
+#: plugins/symbolviewer/xslt_parser.cpp:51
+msgid "Variables"
+msgstr ""
+
+#: plugins/symbolviewer/xslt_parser.cpp:52
+#, fuzzy
+msgid "Templates"
+msgstr "ពុម្ព ៖"
 
 #: plugins/symbolviewer/fortran_parser.cpp:43
 #: plugins/symbolviewer/perl_parser.cpp:25
@@ -1999,25 +2027,20 @@ msgstr ""
 msgid "Modules"
 msgstr ""
 
-#: plugins/symbolviewer/cpp_parser.cpp:43
-msgid "Macros"
-msgstr ""
-
-#: plugins/symbolviewer/cpp_parser.cpp:44
-msgid "Structures"
-msgstr ""
-
 #: plugins/symbolviewer/python_parser.cpp:23
+#: plugins/symbolviewer/ruby_parser.cpp:23
 #, fuzzy
 msgid "Show Globals"
 msgstr "បង្ហាញ​របារ​ចំហៀង"
 
 #: plugins/symbolviewer/python_parser.cpp:24
+#: plugins/symbolviewer/ruby_parser.cpp:24
 #, fuzzy
 msgid "Show Methods"
 msgstr "បង្ហាញ​ផ្លូវ"
 
 #: plugins/symbolviewer/python_parser.cpp:25
+#: plugins/symbolviewer/ruby_parser.cpp:25
 msgid "Show Classes"
 msgstr ""
 
@@ -2056,20 +2079,20 @@ msgstr ""
 msgid "Symbol List"
 msgstr ""
 
-#: plugins/symbolviewer/plugin_katesymbolviewer.cpp:245
+#: plugins/symbolviewer/plugin_katesymbolviewer.cpp:253
 msgid "Sorry. Language not supported yet"
 msgstr ""
 
-#: plugins/symbolviewer/plugin_katesymbolviewer.cpp:337
+#: plugins/symbolviewer/plugin_katesymbolviewer.cpp:345
 #, fuzzy
 msgid "Parser Options"
 msgstr "ជម្រើស​ទូទៅ"
 
-#: plugins/symbolviewer/plugin_katesymbolviewer.cpp:339
+#: plugins/symbolviewer/plugin_katesymbolviewer.cpp:347
 msgid "Display functions parameters"
 msgstr ""
 
-#: plugins/symbolviewer/plugin_katesymbolviewer.cpp:340
+#: plugins/symbolviewer/plugin_katesymbolviewer.cpp:348
 msgid "Automatically expand nodes in tree mode"
 msgstr ""
 
