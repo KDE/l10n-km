@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-07-02 05:08+0200\n"
+"POT-Creation-Date: 2007-07-03 05:04+0200\n"
 "PO-Revision-Date: 2007-02-06 11:06+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: khmer <en@li.org>\n"
@@ -775,7 +775,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./khtml/test_regression_gui.ui line 265
-#: rc.cpp:318
+#: rc.cpp:318 khtml/test_regression.cpp:607
 msgid "Do not use Xvfb"
 msgstr ""
 
@@ -1991,46 +1991,56 @@ msgid ""
 "Please install the KDEPIM/Kontact package for your system"
 msgstr ""
 
-#: kded/khostname.cpp:42
-msgid "Old hostname"
-msgstr "ឈ្មោះ​ម៉ាស៊ីន​ចាស់"
-
-#: kded/khostname.cpp:43
-msgid "New hostname"
-msgstr "ឈ្មោះ​ម៉ាស៊ីន​​ថ្មី"
-
-#: kded/khostname.cpp:79
+#: kded/khostname.cpp:73
 msgid "Error: HOME environment variable not set.\n"
 msgstr "កំហុស ៖ អថេរ​បរិស្ថាន HOME មិន​ត្រូវ​បាន​កំណត់ ។\n"
 
-#: kded/khostname.cpp:89
+#: kded/khostname.cpp:83
 msgid "Error: DISPLAY environment variable not set.\n"
 msgstr "កំហុស ៖ អថេរ​បរិស្ថាន DISPLAY មិន​ត្រូវ​បាន​កំណត់ ។\n"
 
-#: kded/khostname.cpp:225
+#: kded/khostname.cpp:218
 msgid "KDontChangeTheHostName"
 msgstr "កុំ​ប្ដូរ​ឈ្មោះ​ម៉ាស៊ីន"
 
-#: kded/khostname.cpp:226
+#: kded/khostname.cpp:219
 msgid "Informs KDE about a change in hostname"
 msgstr "ជូន​ដំណឹង KDE អំពី​ការ​ផ្លាស់ប្ដូរ​​ឈ្មោះ​ម៉ាស៊ីន"
 
-#: kded/khostname.cpp:228 kded/kbuildsycoca.cpp:724 kded/kbuildsycoca.cpp:725
+#: kded/khostname.cpp:220
+msgid "(c) 2001 Waldo Bastian"
+msgstr ""
+
+#: kded/khostname.cpp:221 kded/kbuildsycoca.cpp:709
+#: khtml/khtml_factory.cpp:171 kconf_update/kconf_update.cpp:963
+msgid "Waldo Bastian"
+msgstr ""
+
+#: kded/khostname.cpp:221 kded/kbuildsycoca.cpp:708 kded/kbuildsycoca.cpp:709
+#: kross/test/main.cpp:139 kross/console/main.cpp:102
 #: kde3support/kdeui/k3aboutdialog.cpp:184
 msgid "Author"
 msgstr "អ្នក​និពន្ធ"
 
-#: kded/kded.cpp:699
-msgid "Check Sycoca database only once"
-msgstr "ពិនិត្យ​មើល​មូលដ្ឋាន​ទិន្នន័យ Sycoca តែ​មួយ​ដងគត់"
+#: kded/khostname.cpp:224
+msgid "Old hostname"
+msgstr "ឈ្មោះ​ម៉ាស៊ីន​ចាស់"
 
-#: kded/kded.cpp:815
+#: kded/khostname.cpp:225
+msgid "New hostname"
+msgstr "ឈ្មោះ​ម៉ាស៊ីន​​ថ្មី"
+
+#: kded/kded.cpp:809
 msgid "KDE Daemon"
 msgstr "KDE Daemon"
 
-#: kded/kded.cpp:817
+#: kded/kded.cpp:811
 msgid "KDE Daemon - triggers Sycoca database updates when needed"
 msgstr "KDE Daemon - កម្មវិធី​កេះ​មូលដ្ឋាន​ទិន្នន័យ Sycoca ធ្វើ​ឲ្យ​ទាន់​សម័យ ពេល​ចាំបាច់"
+
+#: kded/kded.cpp:814
+msgid "Check Sycoca database only once"
+msgstr "ពិនិត្យ​មើល​មូលដ្ឋាន​ទិន្នន័យ Sycoca តែ​មួយ​ដងគត់"
 
 #: kded/kbuildsycoca.cpp:483
 #, qt-format
@@ -2043,7 +2053,7 @@ msgstr ""
 "ពិនិត្យ​មើល​ថា​សេចក្តី​អនុញ្ញាត​គឺ​ត្រឹមត្រូវ​នៅ​លើ​ថត និង ថាស​មិន​ពេញ ។\n"
 
 #: kded/kbuildsycoca.cpp:483 kded/kbuildsycoca.cpp:514
-#: kded/kbuildsycoca.cpp:721
+#: kded/kbuildsycoca.cpp:705
 msgid "KBuildSycoca"
 msgstr "KBuildSycoca"
 
@@ -2057,241 +2067,257 @@ msgstr ""
 "កំហុស​ក្នុង​ការសរសេរ​មូលដ្ឋានទិន្នន័យ '%1' ។\n"
 "ពិនិត្យ​មើល​ថា​សេចក្តី​អនុញ្ញាត​គឺ​ត្រឹមត្រូវ​នៅ​លើ​ថត និង ថាស​មិន​ពេញ ។\n"
 
-#: kded/kbuildsycoca.cpp:700
-msgid "Do not signal applications to update"
-msgstr "កុំ​ផ្តល់​សញ្ញា​ឲ្យ​កម្មវិធី​ធ្វើ​ឲ្យ​ទាន់សម័យ"
-
-#: kded/kbuildsycoca.cpp:701
-msgid "Disable incremental update, re-read everything"
-msgstr "មិន​អនុញ្ញាត​ការ​ធ្វើ​ឲ្យ​ទាន់សម័យ​បន្ថែម អាន​អ្វី​ៗ​ឡើង​វិញ"
-
-#: kded/kbuildsycoca.cpp:702
-msgid "Check file timestamps"
-msgstr "ពិនិត្យ​មើល timestamps របស់​ឯកសារ"
-
-#: kded/kbuildsycoca.cpp:703
-msgid "Disable checking files (dangerous)"
-msgstr "មិន​អនុញ្ញាត​ការពិនិត្យ​ឯកសារ (គ្រោះថ្នាក់)"
-
-#: kded/kbuildsycoca.cpp:704
-msgid "Create global database"
-msgstr "បង្កើត​មូលដ្ឋាន​ទិន្នន័យ​សកល"
-
-#: kded/kbuildsycoca.cpp:705
-msgid "Perform menu generation test run only"
-msgstr "ធ្វើ​តែ​ការ​រត់​សាកល្បង​ក្នុង​ការ​បង្កើត​ម៉ឺនុយ"
-
 #: kded/kbuildsycoca.cpp:706
-msgid "Track menu id for debug purposes"
-msgstr "តាមដាន​លេខ​សម្គាល់​របស់ម៉ឺនុយ ដើម្បី​បំបាត់​កំហុស"
-
-#: kded/kbuildsycoca.cpp:708
-msgid "Silent - work without windows and stderr"
-msgstr "ស្ងាត់ - ធ្វើការ​ដោយ​គ្មាន​បង្អួច និង stderr"
-
-#: kded/kbuildsycoca.cpp:709
-msgid "Show progress information (even if 'silent' mode is on)"
-msgstr "បង្ហាញ​ព័ត៌មាន​វឌ្ឍនភាព (ទោះបី​របៀប 'ស្ងាត់' ត្រូវ​បាន​បើក​ក៏​ដោយ)"
-
-#: kded/kbuildsycoca.cpp:722
 msgid "Rebuilds the system configuration cache."
 msgstr "ស្ថាបនា​ឃ្លាំង​សម្ងាត់​នៃ​ការកំណត់​រចនាសម្ព័ន្ធ​របស់​ប្រព័ន្ធ​ឡើង​វិញ ។"
 
-#: kded/kbuildsycoca.cpp:749
+#: kded/kbuildsycoca.cpp:707
+msgid "(c) 1999-2002 KDE Developers"
+msgstr ""
+
+#: kded/kbuildsycoca.cpp:708
+msgid "David Faure"
+msgstr ""
+
+#: kded/kbuildsycoca.cpp:712
+msgid "Do not signal applications to update"
+msgstr "កុំ​ផ្តល់​សញ្ញា​ឲ្យ​កម្មវិធី​ធ្វើ​ឲ្យ​ទាន់សម័យ"
+
+#: kded/kbuildsycoca.cpp:713
+msgid "Disable incremental update, re-read everything"
+msgstr "មិន​អនុញ្ញាត​ការ​ធ្វើ​ឲ្យ​ទាន់សម័យ​បន្ថែម អាន​អ្វី​ៗ​ឡើង​វិញ"
+
+#: kded/kbuildsycoca.cpp:714
+msgid "Check file timestamps"
+msgstr "ពិនិត្យ​មើល timestamps របស់​ឯកសារ"
+
+#: kded/kbuildsycoca.cpp:715
+msgid "Disable checking files (dangerous)"
+msgstr "មិន​អនុញ្ញាត​ការពិនិត្យ​ឯកសារ (គ្រោះថ្នាក់)"
+
+#: kded/kbuildsycoca.cpp:716
+msgid "Create global database"
+msgstr "បង្កើត​មូលដ្ឋាន​ទិន្នន័យ​សកល"
+
+#: kded/kbuildsycoca.cpp:717
+msgid "Perform menu generation test run only"
+msgstr "ធ្វើ​តែ​ការ​រត់​សាកល្បង​ក្នុង​ការ​បង្កើត​ម៉ឺនុយ"
+
+#: kded/kbuildsycoca.cpp:718
+msgid "Track menu id for debug purposes"
+msgstr "តាមដាន​លេខ​សម្គាល់​របស់ម៉ឺនុយ ដើម្បី​បំបាត់​កំហុស"
+
+#: kded/kbuildsycoca.cpp:720
+msgid "Silent - work without windows and stderr"
+msgstr "ស្ងាត់ - ធ្វើការ​ដោយ​គ្មាន​បង្អួច និង stderr"
+
+#: kded/kbuildsycoca.cpp:721
+msgid "Show progress information (even if 'silent' mode is on)"
+msgstr "បង្ហាញ​ព័ត៌មាន​វឌ្ឍនភាព (ទោះបី​របៀប 'ស្ងាត់' ត្រូវ​បាន​បើក​ក៏​ដោយ)"
+
+#: kded/kbuildsycoca.cpp:746
 msgid "Reloading KDE configuration, please wait..."
 msgstr "កំពុង​ផ្ទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ KDE ឡើង​វិញ សូម​រង់ចាំ..."
 
-#: kded/kbuildsycoca.cpp:750
+#: kded/kbuildsycoca.cpp:747
 msgid "KDE Configuration Manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​ការកំណត់​រចនាសម្ព័ន្ធ KDE"
 
-#: kded/kbuildsycoca.cpp:752
+#: kded/kbuildsycoca.cpp:749
 msgid "Do you want to reload KDE configuration?"
 msgstr "តើ​អ្នក​ចង់​ផ្ទុក​ការកំណត់​រចនាសម្ព័ន្ធ KDE ឡើង​វិញ​ឬ​ទេ ?"
 
-#: kded/kbuildsycoca.cpp:752 kdeui/shortcuts/kstandardshortcut.cpp:98
+#: kded/kbuildsycoca.cpp:749 kdeui/shortcuts/kstandardshortcut.cpp:98
 #: kfile/kdiroperator.cpp:1377
 msgid "Reload"
 msgstr "ផ្ទុក​ឡើង​វិញ"
 
-#: kded/kbuildsycoca.cpp:752
+#: kded/kbuildsycoca.cpp:749
 msgid "Do Not Reload"
 msgstr "កុំ​ផ្ទុក​ឡើង​វិញ"
 
-#: kded/kbuildsycoca.cpp:928
+#: kded/kbuildsycoca.cpp:925
 msgid "Configuration information reloaded successfully."
 msgstr "ព័ត៌មាន​អំពី​ការ​កំណត់​រចនាសម្ព័ន្ធ បាន​ផ្ទុក​ឡើង​វិញ​ដោយ​ជោគជ័យ ។"
 
-#: kdecore/kde-config.cpp:19
-msgid "A little program to output installation paths"
-msgstr "កម្មវិធី​តូច​មួយ​ដែល​ត្រូវបង្កើត​ផ្លូវ​ដំឡើង"
-
-#: kdecore/kde-config.cpp:23
-msgid "Left for legacy support"
-msgstr ""
-
-#: kdecore/kde-config.cpp:24
-msgid "Compiled in prefix for KDE libraries"
-msgstr "បាន​ចងក្រង​ជា​បុព្វបទ​សម្រាប់​បណ្ណាល័យ KDE"
-
-#: kdecore/kde-config.cpp:25
-msgid "Compiled in exec_prefix for KDE libraries"
-msgstr "បាន​ចងក្រង​ជា exec_prefix សម្រាប់​បណ្ណាល័យ KDE"
-
-#: kdecore/kde-config.cpp:26
-msgid "Compiled in library path suffix"
-msgstr "បាន​ចងក្រង​ក្នុង​បច្ច័យ​ផ្លូវ​របស់​បណ្ណាល័យ"
-
-#: kdecore/kde-config.cpp:27
-msgid "Prefix in $HOME used to write files"
-msgstr "បុព្វបទ​ក្នុង $HOME ដែល​ប្រើ ដើម្បី​សរសេរ​ឯកសារ"
-
-#: kdecore/kde-config.cpp:28
-msgid "Compiled in version string for KDE libraries"
-msgstr "Compiled in version string for KDE libraries"
-
-#: kdecore/kde-config.cpp:29
-msgid "Available KDE resource types"
-msgstr "ប្រភេទ​ធនធាន KDE ដែល​អាច​ប្រើ​បាន"
-
-#: kdecore/kde-config.cpp:30
-msgid "Search path for resource type"
-msgstr "ស្វែងរក​ផ្លូវ​សម្រាប់​ប្រភេទ​ធនធាន"
-
 #: kdecore/kde-config.cpp:31
-msgid "Find filename inside the resource type given to --path"
+msgid "kde4-config"
 msgstr ""
 
 #: kdecore/kde-config.cpp:32
+msgid "A little program to output installation paths"
+msgstr "កម្មវិធី​តូច​មួយ​ដែល​ត្រូវបង្កើត​ផ្លូវ​ដំឡើង"
+
+#: kdecore/kde-config.cpp:34
+msgid "(C) 2000 Stephan Kulow"
+msgstr ""
+
+#: kdecore/kde-config.cpp:38
+msgid "Left for legacy support"
+msgstr ""
+
+#: kdecore/kde-config.cpp:39
+msgid "Compiled in prefix for KDE libraries"
+msgstr "បាន​ចងក្រង​ជា​បុព្វបទ​សម្រាប់​បណ្ណាល័យ KDE"
+
+#: kdecore/kde-config.cpp:40
+msgid "Compiled in exec_prefix for KDE libraries"
+msgstr "បាន​ចងក្រង​ជា exec_prefix សម្រាប់​បណ្ណាល័យ KDE"
+
+#: kdecore/kde-config.cpp:41
+msgid "Compiled in library path suffix"
+msgstr "បាន​ចងក្រង​ក្នុង​បច្ច័យ​ផ្លូវ​របស់​បណ្ណាល័យ"
+
+#: kdecore/kde-config.cpp:42
+msgid "Prefix in $HOME used to write files"
+msgstr "បុព្វបទ​ក្នុង $HOME ដែល​ប្រើ ដើម្បី​សរសេរ​ឯកសារ"
+
+#: kdecore/kde-config.cpp:43
+msgid "Compiled in version string for KDE libraries"
+msgstr "Compiled in version string for KDE libraries"
+
+#: kdecore/kde-config.cpp:44
+msgid "Available KDE resource types"
+msgstr "ប្រភេទ​ធនធាន KDE ដែល​អាច​ប្រើ​បាន"
+
+#: kdecore/kde-config.cpp:45
+msgid "Search path for resource type"
+msgstr "ស្វែងរក​ផ្លូវ​សម្រាប់​ប្រភេទ​ធនធាន"
+
+#: kdecore/kde-config.cpp:46
+msgid "Find filename inside the resource type given to --path"
+msgstr ""
+
+#: kdecore/kde-config.cpp:47
 #, fuzzy
 msgid "User path: desktop|autostart|document"
 msgstr "ផ្លូវ​របស់​អ្នកប្រើ ៖ desktop|autostart|trash|document"
 
-#: kdecore/kde-config.cpp:33
+#: kdecore/kde-config.cpp:48
 msgid "Prefix to install resource files to"
 msgstr "បុព្វបទ​ដែល​ត្រូវដំឡើង​ឯកសារ​ធនធាន​ទៅ"
 
-#: kdecore/kde-config.cpp:99
+#: kdecore/kde-config.cpp:95
 msgid "Applications menu (.desktop files)"
 msgstr "ម៉ឺនុយ​កម្មវិធី (.ឯកសារ​ផ្ទៃតុ)"
 
-#: kdecore/kde-config.cpp:100
+#: kdecore/kde-config.cpp:96
 msgid "CGIs to run from kdehelp"
 msgstr "CGIs ដែល​ត្រូវ​រត់​ពី kdehelp"
 
-#: kdecore/kde-config.cpp:101
+#: kdecore/kde-config.cpp:97
 msgid "Configuration files"
 msgstr "ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ"
 
-#: kdecore/kde-config.cpp:102
+#: kdecore/kde-config.cpp:98
 msgid "Where applications store data"
 msgstr "កន្លែង​ដែល​កម្មវិធី​ផ្ទុក​ទិន្នន័យ"
 
-#: kdecore/kde-config.cpp:103
+#: kdecore/kde-config.cpp:99
 #, fuzzy
 msgid "Emoticons"
 msgstr "[ជម្រើស] "
 
-#: kdecore/kde-config.cpp:104
+#: kdecore/kde-config.cpp:100
 msgid "Executables in $prefix/bin"
 msgstr "អាច​ប្រតិបត្តិ​បាន​ក្នុង $prefix/bin"
 
-#: kdecore/kde-config.cpp:105
+#: kdecore/kde-config.cpp:101
 msgid "HTML documentation"
 msgstr "ឯកសារ HTML"
 
-#: kdecore/kde-config.cpp:106
+#: kdecore/kde-config.cpp:102
 msgid "Icons"
 msgstr "រូបតំណាង"
 
-#: kdecore/kde-config.cpp:107
+#: kdecore/kde-config.cpp:103
 msgid "Configuration description files"
 msgstr "ឯកសារ​ពិពណ៌នាការ​​កំណត់​រចនាសម្ព័ន្ធ"
 
-#: kdecore/kde-config.cpp:108
+#: kdecore/kde-config.cpp:104
 msgid "Libraries"
 msgstr "បណ្ណាល័យ"
 
-#: kdecore/kde-config.cpp:109
+#: kdecore/kde-config.cpp:105
 msgid "Includes/Headers"
 msgstr "រួម​មាន/​បឋមកថា"
 
-#: kdecore/kde-config.cpp:110
+#: kdecore/kde-config.cpp:106
 msgid "Translation files for KLocale"
 msgstr "ឯកសារ​បកប្រែ KLocale"
 
-#: kdecore/kde-config.cpp:111
+#: kdecore/kde-config.cpp:107
 msgid "Mime types"
 msgstr "ប្រភេទ Mime"
 
-#: kdecore/kde-config.cpp:112
+#: kdecore/kde-config.cpp:108
 msgid "Loadable modules"
 msgstr "ម៉ូឌុល​ដែល​អាច​ផ្ទុក"
 
-#: kdecore/kde-config.cpp:113 kdecore/kde-config.cpp:123
+#: kdecore/kde-config.cpp:109 kdecore/kde-config.cpp:119
 msgid "Legacy pixmaps"
 msgstr ""
 
-#: kdecore/kde-config.cpp:114
+#: kdecore/kde-config.cpp:110
 msgid "Qt plugins"
 msgstr "កម្មវិធី​ជំនួយ​ខាងក្នុង Qt"
 
-#: kdecore/kde-config.cpp:115
+#: kdecore/kde-config.cpp:111
 msgid "Services"
 msgstr "សេវា"
 
-#: kdecore/kde-config.cpp:116
+#: kdecore/kde-config.cpp:112
 msgid "Service types"
 msgstr "ប្រភេទ​សេវា"
 
-#: kdecore/kde-config.cpp:117
+#: kdecore/kde-config.cpp:113
 msgid "Application sounds"
 msgstr "សម្លេង​កម្មវិធី"
 
-#: kdecore/kde-config.cpp:118
+#: kdecore/kde-config.cpp:114
 msgid "Templates"
 msgstr "ពុម្ព"
 
-#: kdecore/kde-config.cpp:119
+#: kdecore/kde-config.cpp:115
 msgid "Wallpapers"
 msgstr "ក្រដាស​បិទ​ជញ្ជាំង"
 
-#: kdecore/kde-config.cpp:120
+#: kdecore/kde-config.cpp:116
 msgid "XDG Application menu (.desktop files)"
 msgstr "ម៉ឺនុយ​កម្មវិធី XDG  (.ឯកសារ​ផ្ទៃតុ)"
 
-#: kdecore/kde-config.cpp:121
+#: kdecore/kde-config.cpp:117
 msgid "XDG Menu descriptions (.directory files)"
 msgstr "ពិពណ៌នា​ម៉ឺនុយ XDG  (.ឯកសារ​ថត)"
 
-#: kdecore/kde-config.cpp:122
+#: kdecore/kde-config.cpp:118
 #, fuzzy
 msgid "XDG Icons"
 msgstr "រូបតំណាង"
 
-#: kdecore/kde-config.cpp:124
+#: kdecore/kde-config.cpp:120
 #, fuzzy
 msgid "XDG Mime Types"
 msgstr "ប្រភេទ Mime"
 
-#: kdecore/kde-config.cpp:125
+#: kdecore/kde-config.cpp:121
 msgid "XDG Menu layout (.menu files)"
 msgstr "ប្លង់​ម៉ឺនុយ XDG (.ឯកសារ​ម៉ឺនុយ)"
 
-#: kdecore/kde-config.cpp:126
+#: kdecore/kde-config.cpp:122
 msgid "Temporary files (specific for both current host and current user)"
 msgstr "ឯកសារ​បណ្ដោះ​អាសន្ន (ជាក់លាក់​ទាំង​ម៉ាស៊ីន​បច្ចុប្បន្ន និង អ្នកប្រើ​បច្ចុប្បន្ន)"
 
-#: kdecore/kde-config.cpp:127
+#: kdecore/kde-config.cpp:123
 msgid "UNIX Sockets (specific for both current host and current user)"
 msgstr "រន្ធ UNIX (ជាក់លាក់​ទាំងម៉ាស៊ីន​បច្ចុប្បន្ន និង អ្នកប្រើ​បច្ចុប្បន្ន)"
 
-#: kdecore/kde-config.cpp:139
+#: kdecore/kde-config.cpp:135
 #, qt-format
 msgid "%1 - unknown type\n"
 msgstr "%1 - មិន​ស្គាល់​ប្រភេទ\n"
 
-#: kdecore/kde-config.cpp:201
+#: kdecore/kde-config.cpp:197
 #, qt-format
 msgid "%1 - unknown type of userpath\n"
 msgstr "%1 - មិន​ស្គាល់​ប្រភេទ​នៃ​ផ្លូវ​អ្នក​ប្រើ\n"
@@ -3281,19 +3307,19 @@ msgstr "ម៉ាស៊ីន​ភ្ញៀវ NEC SOCKS"
 msgid "Dante SOCKS client"
 msgstr "ម៉ាស៊ីន​ភ្ញៀវ Dante SOCKS"
 
-#: kdecore/kernel/kcmdlineargs.cpp:59
+#: kdecore/kernel/kcmdlineargs.cpp:268
 msgid "Use the X-server display 'displayname'"
 msgstr "ប្រើ​ការបង្ហាញ​ម៉ាស៊ីន​បម្រើ-X 'displayname'"
 
-#: kdecore/kernel/kcmdlineargs.cpp:61
+#: kdecore/kernel/kcmdlineargs.cpp:270
 msgid "Use the QWS display 'displayname'"
 msgstr "ប្រើ​ការបង្ហាញ QWS 'displayname'"
 
-#: kdecore/kernel/kcmdlineargs.cpp:64
+#: kdecore/kernel/kcmdlineargs.cpp:273
 msgid "Restore the application for the given 'sessionId'"
 msgstr "ស្តារ​កម្មវិធី​របស់ 'sessionId' ដែល​បាន​ផ្តល់"
 
-#: kdecore/kernel/kcmdlineargs.cpp:65
+#: kdecore/kernel/kcmdlineargs.cpp:274
 msgid ""
 "Causes the application to install a private color\n"
 "map on an 8-bit display"
@@ -3301,7 +3327,7 @@ msgstr ""
 "ធ្វើ​ឲ្យ​កម្មវិធី​ដំឡើង​ផែនទី​ពណ៌​ឯកជន\n"
 "លើ​ការបង្ហាញ ៨-ប៊ីត​មួយ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:66
+#: kdecore/kernel/kcmdlineargs.cpp:275
 msgid ""
 "Limits the number of colors allocated in the color\n"
 "cube on an 8-bit display, if the application is\n"
@@ -3313,11 +3339,11 @@ msgstr ""
 "using the QApplication::ManyColor color\n"
 "specification"
 
-#: kdecore/kernel/kcmdlineargs.cpp:67
+#: kdecore/kernel/kcmdlineargs.cpp:276
 msgid "tells Qt to never grab the mouse or the keyboard"
 msgstr "ប្រាប់ Qt កុំ​ចាប់​យក​កណ្ដុរ ឬ ក្ដារចុច"
 
-#: kdecore/kernel/kcmdlineargs.cpp:68
+#: kdecore/kernel/kcmdlineargs.cpp:277
 msgid ""
 "running under a debugger can cause an implicit\n"
 "-nograb, use -dograb to override"
@@ -3325,15 +3351,15 @@ msgstr ""
 "រត់​ក្រោម​កម្មវិធី​បំបាត់​កំហុស​អាច​បង្ក​នូវ implicit មួយ\n"
 "-nograb ប្រើ -dograb ដើម្បី​បដិសេធ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:69
+#: kdecore/kernel/kcmdlineargs.cpp:278
 msgid "switches to synchronous mode for debugging"
 msgstr "ប្ដូរ​ទៅ​របៀប​សមកាល ដើម្បី​បំបាត់​កំហុស"
 
-#: kdecore/kernel/kcmdlineargs.cpp:71
+#: kdecore/kernel/kcmdlineargs.cpp:280
 msgid "defines the application font"
 msgstr "កំណត់​ពុម្ពអក្សរ​របស់​កម្មវិធី"
 
-#: kdecore/kernel/kcmdlineargs.cpp:73
+#: kdecore/kernel/kcmdlineargs.cpp:282
 msgid ""
 "sets the default background color and an\n"
 "application palette (light and dark shades are\n"
@@ -3343,23 +3369,23 @@ msgstr ""
 "ក្ដារ​លាយ​ពណ៌​កម្មវិធី (ស្រមោល​ភ្លឺ និង ងងឹត​ត្រូវ​បាន\n"
 "គណនា)"
 
-#: kdecore/kernel/kcmdlineargs.cpp:75
+#: kdecore/kernel/kcmdlineargs.cpp:284
 msgid "sets the default foreground color"
 msgstr "កំណត់​ពណ៌​ផ្ទៃ​ខាង​មុខ​លំនាំដើម"
 
-#: kdecore/kernel/kcmdlineargs.cpp:77
+#: kdecore/kernel/kcmdlineargs.cpp:286
 msgid "sets the default button color"
 msgstr "កំណត់​ពណ៌​ប៊ូតុង​លំនាំដើម"
 
-#: kdecore/kernel/kcmdlineargs.cpp:78
+#: kdecore/kernel/kcmdlineargs.cpp:287
 msgid "sets the application name"
 msgstr "កំណត់​ឈ្មោះ​កម្មវិធី"
 
-#: kdecore/kernel/kcmdlineargs.cpp:79
+#: kdecore/kernel/kcmdlineargs.cpp:288
 msgid "sets the application title (caption)"
 msgstr "កំណត់ឈ្មោះ​កម្មវិធី (ចំណងជើង)"
 
-#: kdecore/kernel/kcmdlineargs.cpp:81
+#: kdecore/kernel/kcmdlineargs.cpp:290
 msgid ""
 "forces the application to use a TrueColor visual on\n"
 "an 8-bit display"
@@ -3367,7 +3393,7 @@ msgstr ""
 "បង្ខំ​កម្មវិធី​ឲ្យ​ប្រើ​ទិដ្ឋភាព TrueColor ក្នុង\n"
 "ការ​បង្ហាញ ៨ ប៊ីត"
 
-#: kdecore/kernel/kcmdlineargs.cpp:82
+#: kdecore/kernel/kcmdlineargs.cpp:291
 msgid ""
 "sets XIM (X Input Method) input style. Possible\n"
 "values are onthespot, overthespot, offthespot and\n"
@@ -3377,63 +3403,79 @@ msgstr ""
 "តម្លៃ​​ដែល​អាច​រួម​មាន onthespot, overthespot, offthespot និង\n"
 "root"
 
-#: kdecore/kernel/kcmdlineargs.cpp:83
+#: kdecore/kernel/kcmdlineargs.cpp:292
 msgid "set XIM server"
 msgstr "កំណត់​ម៉ាស៊ីន​បម្រើ XIM"
 
-#: kdecore/kernel/kcmdlineargs.cpp:84
+#: kdecore/kernel/kcmdlineargs.cpp:293
 msgid "disable XIM"
 msgstr "មិន​អនុញ្ញាត XIM"
 
-#: kdecore/kernel/kcmdlineargs.cpp:87
+#: kdecore/kernel/kcmdlineargs.cpp:296
 msgid "forces the application to run as QWS Server"
 msgstr "បង្ខំ​កម្មវិធី​ឲ្យ​រត់​ជា​ម៉ាស៊ីន​បម្រើ QWS"
 
-#: kdecore/kernel/kcmdlineargs.cpp:89
+#: kdecore/kernel/kcmdlineargs.cpp:298
 msgid "mirrors the whole layout of widgets"
 msgstr "ឆ្លុះ​ប្លង់​វត្ថុ​មើលឃើញ​ទាំងមូល"
 
-#: kdecore/kernel/kcmdlineargs.cpp:95
+#: kdecore/kernel/kcmdlineargs.cpp:301
 msgid "Use 'caption' as name in the titlebar"
 msgstr "ប្រើ 'ចំណងជើង' ជា​ឈ្មោះ​ក្នុង​របារ​ចំណងជើង"
 
-#: kdecore/kernel/kcmdlineargs.cpp:96
+#: kdecore/kernel/kcmdlineargs.cpp:302
 msgid "Use 'icon' as the application icon"
 msgstr "ប្រើ 'រូបតំណាង' ជា​រូបតំណាង​កម្មវិធី"
 
-#: kdecore/kernel/kcmdlineargs.cpp:97
+#: kdecore/kernel/kcmdlineargs.cpp:303
 msgid "Use alternative configuration file"
 msgstr "ប្រើ​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ​ផ្សេង"
 
-#: kdecore/kernel/kcmdlineargs.cpp:98
+#: kdecore/kernel/kcmdlineargs.cpp:304
 msgid "Disable crash handler, to get core dumps"
 msgstr "Disable crash handler, to get core dumps"
 
-#: kdecore/kernel/kcmdlineargs.cpp:99
+#: kdecore/kernel/kcmdlineargs.cpp:305
 msgid "Waits for a WM_NET compatible windowmanager"
 msgstr "រង់ចាំ​​កម្មវិធី​គ្រប់គ្រង​បង្អួច​ដែល​ឆប​គ្នានឹង WM_NET"
 
-#: kdecore/kernel/kcmdlineargs.cpp:100
+#: kdecore/kernel/kcmdlineargs.cpp:306
 msgid "sets the application GUI style"
 msgstr "កំណត់​រចនាប័ទ្ម GUI របស់​កម្មវិធី"
 
-#: kdecore/kernel/kcmdlineargs.cpp:101
+#: kdecore/kernel/kcmdlineargs.cpp:307
 msgid ""
 "sets the client geometry of the main widget - see man X for the argument "
 "format"
 msgstr "កំណត់​"
 
-#: kdecore/kernel/kcmdlineargs.cpp:551 kdecore/kernel/kcmdlineargs.cpp:571
+#: kdecore/kernel/kcmdlineargs.cpp:415
+#, fuzzy
+#| msgid "Application: "
+msgid "KDE Application"
+msgstr "កម្មវិធី ៖"
+
+#: kdecore/kernel/kcmdlineargs.cpp:472
+#, fuzzy
+#| msgid "Quit"
+msgid "Qt"
+msgstr "ចេញ"
+
+#: kdecore/kernel/kcmdlineargs.cpp:475 khtml/khtml_part.cpp:4854
+msgid "KDE"
+msgstr "KDE"
+
+#: kdecore/kernel/kcmdlineargs.cpp:776 kdecore/kernel/kcmdlineargs.cpp:796
 #, qt-format
 msgid "Unknown option '%1'."
 msgstr "មិន​ស្គាល់​ជម្រើស '%1' ។"
 
-#: kdecore/kernel/kcmdlineargs.cpp:579
+#: kdecore/kernel/kcmdlineargs.cpp:804
 #, qt-format
 msgid "'%1' missing."
 msgstr "បាត់ '%1' ។"
 
-#: kdecore/kernel/kcmdlineargs.cpp:674
+#: kdecore/kernel/kcmdlineargs.cpp:889
 #, qt-format
 msgctxt "the 2nd argument is a list of name+address, one on each line"
 msgid ""
@@ -3443,86 +3485,86 @@ msgstr ""
 "%1 ត្រូវ​បាន​សរសេរ​ដោយ\n"
 "%2"
 
-#: kdecore/kernel/kcmdlineargs.cpp:677
+#: kdecore/kernel/kcmdlineargs.cpp:892
 msgid "This application was written by somebody who wants to remain anonymous."
 msgstr "កម្មវិធី​នេះ​ត្រូវ​បាន​សរសេរ​ដោយ​អ្នក ដែល​មិន​ចង់​បង្ហាញ​ឈ្មោះ ។"
 
-#: kdecore/kernel/kcmdlineargs.cpp:684
+#: kdecore/kernel/kcmdlineargs.cpp:899
 msgid "Please use http://bugs.kde.org to report bugs.\n"
 msgstr "សូម​ប្រើ http://bugs.kde.org ដើម្បី​រាយការណ៍​កំហុស ។\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:687 kdecore/kernel/kcmdlineargs.cpp:689
+#: kdecore/kernel/kcmdlineargs.cpp:902 kdecore/kernel/kcmdlineargs.cpp:904
 #, qt-format
 msgid "Please report bugs to %1.\n"
 msgstr "សូម​រាយការណ៍​កំហុស​ទៅ %1 ។\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:715
+#: kdecore/kernel/kcmdlineargs.cpp:930
 #, qt-format
 msgid "Unexpected argument '%1'."
 msgstr "អាគុយម៉ង់ '%1' ដែល​មិន​រំពឹង ។"
 
-#: kdecore/kernel/kcmdlineargs.cpp:831
+#: kdecore/kernel/kcmdlineargs.cpp:1046
 msgid "Use --help to get a list of available command line options."
 msgstr "ប្រើ --help ដើម្បី​ទទួល​បាន​ជម្រើស​បន្ទាត់​បញ្ជា​ដែល​មាន ។"
 
-#: kdecore/kernel/kcmdlineargs.cpp:854
+#: kdecore/kernel/kcmdlineargs.cpp:1069
 msgid "[options] "
 msgstr "[ជម្រើស] "
 
-#: kdecore/kernel/kcmdlineargs.cpp:861
+#: kdecore/kernel/kcmdlineargs.cpp:1076
 #, qt-format
 msgid "[%1-options]"
 msgstr "[%1-ជម្រើស]"
 
-#: kdecore/kernel/kcmdlineargs.cpp:883
+#: kdecore/kernel/kcmdlineargs.cpp:1097
 #, qt-format
 msgid "Usage: %1 %2\n"
 msgstr "ការ​ប្រើ ៖ %1 %2\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:886
+#: kdecore/kernel/kcmdlineargs.cpp:1100
 #, fuzzy
 msgid ""
 "\n"
 "Generic options:\n"
 msgstr "ជម្រើសទូទៅ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:887
+#: kdecore/kernel/kcmdlineargs.cpp:1101
 msgid "Show help about options"
 msgstr "បង្ហាញ​ជំនួយ​អំពី​ជម្រើស"
 
-#: kdecore/kernel/kcmdlineargs.cpp:895
+#: kdecore/kernel/kcmdlineargs.cpp:1109
 #, qt-format
 msgid "Show %1 specific options"
 msgstr "បង្ហាញ​ជម្រើស​ជាក់លាក់ %1"
 
-#: kdecore/kernel/kcmdlineargs.cpp:902
+#: kdecore/kernel/kcmdlineargs.cpp:1116
 msgid "Show all options"
 msgstr "បង្ហាញ​ជម្រើស​ទាំងអស់"
 
-#: kdecore/kernel/kcmdlineargs.cpp:903
+#: kdecore/kernel/kcmdlineargs.cpp:1117
 msgid "Show author information"
 msgstr "បង្ហាញ​ព័ត៌មាន​របស់​​អ្នក​និពន្ធ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:904
+#: kdecore/kernel/kcmdlineargs.cpp:1118
 msgid "Show version information"
 msgstr "បង្ហាញ​ព័ត៌មាន​កំណែ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:905
+#: kdecore/kernel/kcmdlineargs.cpp:1119
 msgid "Show license information"
 msgstr "បង្ហាញ​ព័ត៌មាន​អាជ្ញាបណ្ណ"
 
-#: kdecore/kernel/kcmdlineargs.cpp:906
+#: kdecore/kernel/kcmdlineargs.cpp:1120
 msgid "End of options"
 msgstr "ចុង​​​ជម្រើស"
 
-#: kdecore/kernel/kcmdlineargs.cpp:928
+#: kdecore/kernel/kcmdlineargs.cpp:1141
 #, fuzzy, qt-format
 msgid ""
 "\n"
 "%1 options:\n"
 msgstr "ជម្រើស %1"
 
-#: kdecore/kernel/kcmdlineargs.cpp:930
+#: kdecore/kernel/kcmdlineargs.cpp:1143
 msgid ""
 "\n"
 "Options:\n"
@@ -3530,7 +3572,7 @@ msgstr ""
 "\n"
 "ជម្រើស ៖\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:987
+#: kdecore/kernel/kcmdlineargs.cpp:1198
 msgid ""
 "\n"
 "Arguments:\n"
@@ -3538,9 +3580,13 @@ msgstr ""
 "\n"
 "អាគុយម៉ង់ ៖\n"
 
-#: kdecore/kernel/kcmdlineargs.cpp:1359
+#: kdecore/kernel/kcmdlineargs.cpp:1565
 msgid "The files/URLs opened by the application will be deleted after use"
 msgstr "ឯកសារ/URLs ដែលបាន​បើក​ដោយ​កម្មវិធី នឹង​ត្រូវ​បាន​លុប​បន្ទាប់​ពី​ប្រើ​រួច"
+
+#: kdecore/kernel/kcmdlineargs.cpp:1566
+msgid "KDE-tempfile"
+msgstr ""
 
 #: kdecore/kernel/ktoolinvocation_x11.cpp:96
 #, qt-format
@@ -3587,7 +3633,7 @@ msgstr ""
 msgid "Could not Launch Browser"
 msgstr "មិន​អាច​បើក​កម្មវិធី​រុករក​បាន​ឡើយ"
 
-#: kdecore/kernel/kaboutdata.cpp:507
+#: kdecore/kernel/kaboutdata.cpp:541
 msgctxt "replace this with information about your translation team"
 msgid ""
 "<p>KDE is translated into many languages thanks to the work of the "
@@ -3599,7 +3645,7 @@ msgstr ""
 "ព័ត៌មាន​បន្ថែម​អំពី​គម្រោង សូម​ទស្សនា <a href=\"http://www.khmeros.info\">www.khmeros."
 "info</a></p>"
 
-#: kdecore/kernel/kaboutdata.cpp:561
+#: kdecore/kernel/kaboutdata.cpp:595
 msgid ""
 "No licensing terms for this program have been specified.\n"
 "Please check the documentation or the source for any\n"
@@ -3608,41 +3654,41 @@ msgstr ""
 "កម្មវិធី​នេះ​មិន​មានបញ្ជាក់​លក្ខខណ្ឌ​អាជ្ញាបណ្ណ​ឡើយ ។\n"
 "សូម​ស្វែងរក​លក្ខខណ្ឌ​អាជ្ញាបណ្ណ ដោយ​ពិនិត្យ​មើលឯកសារ ឬ កូដ ។\n"
 
-#: kdecore/kernel/kaboutdata.cpp:568
+#: kdecore/kernel/kaboutdata.cpp:602
 #, qt-format
 msgid "This program is distributed under the terms of the %1."
 msgstr "កម្មវិធី​នេះ​ត្រូវ​បាន​ចែកចាយ​ក្រោម​លក្ខខណ្ឌ​របស់ %1 ។"
 
-#: kdecore/kernel/kaboutdata.cpp:593
+#: kdecore/kernel/kaboutdata.cpp:627
 msgid "GNU General Public License Version 2"
 msgstr ""
 
-#: kdecore/kernel/kaboutdata.cpp:597
+#: kdecore/kernel/kaboutdata.cpp:631
 msgid "GNU Library General Public License Version 2"
 msgstr ""
 
-#: kdecore/kernel/kaboutdata.cpp:601
+#: kdecore/kernel/kaboutdata.cpp:635
 #, fuzzy
 #| msgid "License:"
 msgid "BSD License"
 msgstr "អាជ្ញាបណ្ណ ៖"
 
-#: kdecore/kernel/kaboutdata.cpp:605
+#: kdecore/kernel/kaboutdata.cpp:639
 msgid "Artistic License"
 msgstr ""
 
-#: kdecore/kernel/kaboutdata.cpp:609
+#: kdecore/kernel/kaboutdata.cpp:643
 #, fuzzy
 #| msgid "Public Key"
 msgid "Q Public License"
 msgstr "កូនសោ​សាធារណៈ"
 
-#: kdecore/kernel/kaboutdata.cpp:613
+#: kdecore/kernel/kaboutdata.cpp:647
 #, fuzzy
 msgid "Custom"
 msgstr "ផ្ទាល់​ខ្លួន "
 
-#: kdecore/kernel/kaboutdata.cpp:616
+#: kdecore/kernel/kaboutdata.cpp:650
 #, fuzzy
 msgid "Not specified"
 msgstr "មិន​បាន​ជ្រើស​អ្នក​ផ្តល់​ណាមួយ​ឡើយ ។"
@@ -4171,7 +4217,7 @@ msgstr "%1%"
 #: kdecore/localization/kuitsemantics.cpp:593
 #, qt-format
 msgctxt "@command/rich"
-msgid "<tt>%1<tt>"
+msgid "<tt>%1</tt>"
 msgstr ""
 
 #. i18n: KUIT pattern, see the comment to the first of these entries above.
@@ -4189,7 +4235,7 @@ msgstr "%1 ( %2 )"
 msgctxt ""
 "@command-with-section/rich\n"
 "%1 is the command name, %2 is its man section"
-msgid "<tt>%1(%2)<tt>"
+msgid "<tt>%1(%2)</tt>"
 msgstr ""
 
 #. i18n: KUIT pattern, see the comment to the first of these entries above.
@@ -4317,16 +4363,17 @@ msgstr ""
 #. i18n: KUIT pattern, see the comment to the first of these entries above.
 #: kdecore/localization/kuitsemantics.cpp:709
 #, fuzzy, qt-format
-msgctxt "@/plain"
+msgctxt "@message/plain"
 msgid "/%1/"
 msgstr "(%1/វិ.)"
 
 #. i18n: KUIT pattern, see the comment to the first of these entries above.
 #: kdecore/localization/kuitsemantics.cpp:713
-#, qt-format
-msgctxt "@/rich"
+#, fuzzy, qt-format
+#| msgid "<b>Error</b>: %1: %2"
+msgctxt "@message/rich"
 msgid "<i>%1</i>"
-msgstr ""
+msgstr "<b>កំហុស</b> ៖ %1 ៖ %2"
 
 #. i18n: Decide how integer-valued amounts will be formatted in your
 #. language. For possible formats, see translation documentation.
@@ -6857,6 +6904,10 @@ msgstr ""
 msgid "The style '%1' was not found"
 msgstr "រក​មិន​ឃើញ​រចនាប័ទ្ម %1\n"
 
+#: kdeui/kernel/kuniqueapplication.cpp:80
+msgid "Don't run in the background."
+msgstr ""
+
 #: kdeui/actions/krecentfilesaction.cpp:92
 #: kdeui/actions/krecentfilesaction.cpp:195
 #, fuzzy
@@ -7931,7 +7982,7 @@ msgstr "កំហុស​មួយ​បាន​កើត​ឡើង ខណ�
 msgid "An error occurred while accessing '%1'"
 msgstr "កំហុស​មួយ​បាន​កើត​ឡើង ខណៈពេល​កំពុង​ផ្ទុក <B>%1</B> ៖"
 
-#: kfile/kurlnavigator.cpp:545
+#: kfile/kurlnavigator.cpp:550
 #, fuzzy
 #| msgid "Custom"
 msgid "Custom Path"
@@ -8230,6 +8281,22 @@ msgstr "កែសម្រួល"
 msgid "Navigate"
 msgstr "ការ​រុករក"
 
+#: khtml/testkhtml.cpp:40
+#, fuzzy
+#| msgid "URL to open"
+msgid "url to open"
+msgstr "URL ដែល​ត្រូវ​បើក"
+
+#: khtml/testkhtml.cpp:42
+#, fuzzy
+#| msgid "Test"
+msgid "Testkhtml"
+msgstr "សាកល្បង"
+
+#: khtml/testkhtml.cpp:43
+msgid "a basic web browser using the KHTML library"
+msgstr ""
+
 #: khtml/khtml_run.cpp:84 khtml/khtml_part.cpp:3907 khtml/khtml_part.cpp:4121
 #: khtml/khtml_part.cpp:4442 kparts/browserrun.cpp:410
 msgid "Save As"
@@ -8258,6 +8325,60 @@ msgstr "រូបភាព -  ភីកសែល %1x%2 "
 #: khtml/khtmlimage.cpp:205
 msgid "Done."
 msgstr "ធ្វើ​រួច ។"
+
+#: khtml/test_regression.cpp:596
+msgid "Directory containing tests, basedir and output directories."
+msgstr ""
+
+#: khtml/test_regression.cpp:598
+msgid "Do not suppress debug output"
+msgstr ""
+
+#: khtml/test_regression.cpp:600
+msgid "Regenerate baseline (instead of checking)"
+msgstr ""
+
+#: khtml/test_regression.cpp:602
+msgid "Do not show the window while running tests"
+msgstr ""
+
+#: khtml/test_regression.cpp:604
+msgid "Only run a single test. Multiple options allowed."
+msgstr ""
+
+#: khtml/test_regression.cpp:605
+msgid "Only run .js tests"
+msgstr ""
+
+#: khtml/test_regression.cpp:606
+msgid "Only run .html tests"
+msgstr ""
+
+#: khtml/test_regression.cpp:609
+msgid "Put output in <directory> instead of <base_dir>/output"
+msgstr ""
+
+#: khtml/test_regression.cpp:610
+msgid ""
+"Directory containing tests,basedir and output directories. Only regarded if -"
+"b is not specified."
+msgstr ""
+
+#: khtml/test_regression.cpp:611
+msgid ""
+"Relative path to testcase, or directory of testcases to be run (equivalent "
+"to -t)."
+msgstr ""
+
+#: khtml/test_regression.cpp:613
+#, fuzzy
+#| msgid "Regular e&xpression"
+msgid "TestRegression"
+msgstr "កន្សោម​ធម្មតា"
+
+#: khtml/test_regression.cpp:614
+msgid "Regression tester for khtml"
+msgstr ""
 
 #: khtml/khtml_ext.cpp:431
 msgid "&Copy Text"
@@ -8807,10 +8928,6 @@ msgstr ""
 "តំបន់​បណ្តាញ​នេះ​​ប៉ុនប៉ង​ភ្ជាប់​ឯកសារ​មួយ​ពី​កុំព្យូទ័រ​របស់​អ្នក ក្នុង​ការ​ដាក់​ស្នើ​សំណុំ​បែបបទ ។ ដើម្បី​ការពារ​អ្នក "
 "ឯកសារ​ភ្ជាប់​ត្រូវ​បាន​យក​ចេញ ​។"
 
-#: khtml/khtml_part.cpp:4854
-msgid "KDE"
-msgstr "KDE"
-
 #: khtml/khtml_part.cpp:5766
 #, qt-format
 msgid "(%1/s)"
@@ -8957,6 +9074,14 @@ msgstr "គ្រាប់ចុច​ចូលដំណើរការ​​ត
 msgid "Print %1"
 msgstr "បោះពុម្ព %1"
 
+#: khtml/test_regression_gui_main.cpp:34
+msgid "TestRegressionGui"
+msgstr ""
+
+#: khtml/test_regression_gui_main.cpp:35
+msgid "GUI for the khtml regression tester"
+msgstr ""
+
 #: khtml/khtml_factory.cpp:166
 msgid "KHTML"
 msgstr "KHTML"
@@ -8964,6 +9089,38 @@ msgstr "KHTML"
 #: khtml/khtml_factory.cpp:167
 msgid "Embeddable HTML component"
 msgstr "សមាសភាគ HTML ដែល​អាច​បង្កប់​បាន"
+
+#: khtml/khtml_factory.cpp:169
+msgid "Lars Knoll"
+msgstr ""
+
+#: khtml/khtml_factory.cpp:170
+msgid "Antti Koivisto"
+msgstr ""
+
+#: khtml/khtml_factory.cpp:172
+msgid "Dirk Mueller"
+msgstr ""
+
+#: khtml/khtml_factory.cpp:173
+msgid "Peter Kelly"
+msgstr ""
+
+#: khtml/khtml_factory.cpp:174
+msgid "Torben Weis"
+msgstr ""
+
+#: khtml/khtml_factory.cpp:175
+msgid "Martin Jones"
+msgstr ""
+
+#: khtml/khtml_factory.cpp:176
+msgid "Simon Hausmann"
+msgstr ""
+
+#: khtml/khtml_factory.cpp:177
+msgid "Tobias Anton"
+msgstr ""
 
 #: khtml/xml/xml_tokenizer.cpp:315
 msgid "the document is not in the correct file format"
@@ -9424,6 +9581,10 @@ msgstr "KMultiPart"
 msgid "Embeddable component for multipart/mixed"
 msgstr "សមាសភាគ​ដែល​អាច​បង្កប់បាន​សម្រាប់ ផ្នែក​ច្រើន/លាយ​គ្នា"
 
+#: khtml/kmultipart/kmultipart.cpp:583
+msgid "(c) 2001, David Faure <david@mandrakesoft.com>"
+msgstr ""
+
 #: khtml/rendering/render_form.cpp:405 kde3support/kdeui/k3textedit.cpp:348
 msgid "Spell Checking"
 msgstr "ការពិនិត្យ​អក្ខរាវិរុទ្ធ"
@@ -9653,53 +9814,115 @@ msgstr ""
 msgid "Failed to create script for interpreter \"%1\""
 msgstr "មិន​អាច​យក KScript Runner សម្រាប់​ប្រភេទ \"%1\" ។"
 
-#: kconf_update/kconf_update.cpp:43
-msgid "Keep output results from scripts"
-msgstr "រក្សា​លទ្ធផល​ឲ្យ​ឆ្ងាយ​ពី​ស្គ្រីប"
+#: kross/test/main.cpp:131
+#, fuzzy
+#| msgid "KIOTest"
+msgid "KrossTest"
+msgstr "KIOTest"
 
-#: kconf_update/kconf_update.cpp:44
-msgid "Check whether config file itself requires updating"
-msgstr "ពិនិត្យ​មើល​ថា​តើ​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ​ខ្លួន​វា ​ទាមទារ​ការ​ធ្វើ​ឲ្យ​ទាន់​សម័យ"
+#: kross/test/main.cpp:133
+msgid "KDE application to test the Kross framework."
+msgstr ""
 
-#: kconf_update/kconf_update.cpp:45
-msgid "File to read update instructions from"
-msgstr "ឯកសារ​ដែល​ត្រូវ​អាន​សេចក្តី​ណែនាំ​អំពី​ការ​ធ្វើ​ឲ្យ​ទាន់​សម័យ​ពី"
+#: kross/test/main.cpp:135
+msgid "(C) 2005-2007 Sebastian Sauer"
+msgstr ""
 
-#: kconf_update/kconf_update.cpp:144
+#: kross/test/main.cpp:136
+msgid "Test the Kross framework!"
+msgstr ""
+
+#: kross/test/main.cpp:139 kross/console/main.cpp:102
+msgid "Sebastian Sauer"
+msgstr ""
+
+#: kross/test/main.cpp:142 kross/console/main.cpp:108
+#, fuzzy
+msgid "Scriptfile"
+msgstr "ស្គ្រីប "
+
+#: kross/console/main.cpp:94
+#, fuzzy
+#| msgid "Props"
+msgid "Kross"
+msgstr "Props"
+
+#: kross/console/main.cpp:96
+msgid "KDE application to run Kross scripts."
+msgstr ""
+
+#: kross/console/main.cpp:98
+msgid "(C) 2006 Sebastian Sauer"
+msgstr ""
+
+#: kross/console/main.cpp:99
+#, fuzzy
+msgid "Run Kross scripts."
+msgstr "សុវត្ថិភាព..."
+
+#: kconf_update/kconf_update.cpp:136
 msgid "Only local files are supported."
 msgstr "គាំទ្រ​តែ​ឯកសារ​មូលដ្ឋាន ។"
 
-#: kconf_update/kconf_update.cpp:960
+#: kconf_update/kconf_update.cpp:953
+msgid "Keep output results from scripts"
+msgstr "រក្សា​លទ្ធផល​ឲ្យ​ឆ្ងាយ​ពី​ស្គ្រីប"
+
+#: kconf_update/kconf_update.cpp:954
+msgid "Check whether config file itself requires updating"
+msgstr "ពិនិត្យ​មើល​ថា​តើ​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ​ខ្លួន​វា ​ទាមទារ​ការ​ធ្វើ​ឲ្យ​ទាន់​សម័យ"
+
+#: kconf_update/kconf_update.cpp:955
+msgid "File to read update instructions from"
+msgstr "ឯកសារ​ដែល​ត្រូវ​អាន​សេចក្តី​ណែនាំ​អំពី​ការ​ធ្វើ​ឲ្យ​ទាន់​សម័យ​ពី"
+
+#: kconf_update/kconf_update.cpp:957
 msgid "KConf Update"
 msgstr "ការ​ធ្វើ​ឲ្យ KConf ទាន់​សម័យ"
 
-#: kconf_update/kconf_update.cpp:962
+#: kconf_update/kconf_update.cpp:959
 msgid "KDE Tool for updating user configuration files"
 msgstr "ឧបករណ៍ KDE សម្រាប់​ធ្វើ​ឲ្យ​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធអ្នកប្រើ​ទាន់​សម័យ"
 
-#: kdewidgets/makekdewidgets.cpp:17
+#: kconf_update/kconf_update.cpp:961
+msgid "(c) 2001, Waldo Bastian"
+msgstr ""
+
+#: kdewidgets/makekdewidgets.cpp:84
 msgid "Builds Qt widget plugins from an ini style description file."
 msgstr "ស្ថាបនា​កម្មវិធី​ជំនួយរបស់​វត្ថុមើលឃើញ Qt ពី​ឯកសារ​ពិពណ៌នា​រចនាប័ទ្ម ini មួយ ។"
 
-#: kdewidgets/makekdewidgets.cpp:79
+#: kdewidgets/makekdewidgets.cpp:88
 msgid "Input file"
 msgstr "ឯកសារ​បញ្ចូល"
 
-#: kdewidgets/makekdewidgets.cpp:80
+#: kdewidgets/makekdewidgets.cpp:89
 msgid "Output file"
 msgstr "ឯកសារ​ទិន្នផល"
 
-#: kdewidgets/makekdewidgets.cpp:81
+#: kdewidgets/makekdewidgets.cpp:90
 msgid "Name of the plugin class to generate"
 msgstr "ឈ្មោះ​របស់​ថ្នាក់​​កម្មវិធី​ជំនួយ​ខាងក្នុង​ដែល​ត្រូវ​បង្កើត"
 
-#: kdewidgets/makekdewidgets.cpp:82
+#: kdewidgets/makekdewidgets.cpp:91
 msgid "Default widget group name to display in designer"
 msgstr "ឈ្មោះ​ក្រុមវត្ថុ​មើល​ឃើញ​លំនាំដើម ដើម្បី​បង្ហាញ​ក្នុង​កម្មវិធី​រចនា"
 
-#: kdewidgets/makekdewidgets.cpp:95
+#: kdewidgets/makekdewidgets.cpp:94
 msgid "makekdewidgets"
 msgstr "makekdewidgets"
+
+#: kdewidgets/makekdewidgets.cpp:94
+msgid "(C) 2004-2005 Ian Reinhart Geiser"
+msgstr ""
+
+#: kdewidgets/makekdewidgets.cpp:95
+msgid "Ian Reinhart Geiser"
+msgstr ""
+
+#: kdewidgets/makekdewidgets.cpp:96
+msgid "Daniel Molkentin"
+msgstr ""
 
 #: kstyles/web/plugin.cpp:9
 msgid "Web style plugin"
@@ -9741,6 +9964,10 @@ msgstr ""
 #, fuzzy
 msgid "Tag exists"
 msgstr "សាកល្បង"
+
+#: nepomuk/core/test/tagcloudtest.cpp:30
+msgid "tagcloudtest"
+msgstr ""
 
 #: nepomuk/core/generated/resource.cpp:172
 msgid "Success"
@@ -10045,28 +10272,32 @@ msgstr "ជ្រើស​សមាសធាតុ"
 msgid "component enabled:"
 msgstr ""
 
-#: kjsembed/kjscmd/kjscmd.cpp:60 kjsembed/kjscmd/kjscmd.cpp:61
-msgid "Execute script without gui support"
-msgstr ""
-
-#: kjsembed/kjscmd/kjscmd.cpp:62 kjsembed/kjscmd/kjscmd.cpp:63
-msgid "start interactive kjs interpreter"
-msgstr ""
-
-#: kjsembed/kjscmd/kjscmd.cpp:64 kjsembed/kjscmd/kjscmd.cpp:65
-msgid "start without KDE KApplication support."
-msgstr ""
-
-#: kjsembed/kjscmd/kjscmd.cpp:66
-msgid "Script to execute"
-msgstr ""
-
-#: kjsembed/kjscmd/kjscmd.cpp:151
+#: kjsembed/kjscmd/kjscmd.cpp:139
 msgid "KJSCmd"
 msgstr ""
 
-#: kjsembed/kjscmd/kjscmd.cpp:152
+#: kjsembed/kjscmd/kjscmd.cpp:140
 msgid "Utility for running KJSEmbed scripts \n"
+msgstr ""
+
+#: kjsembed/kjscmd/kjscmd.cpp:143
+msgid "(C) 2005-2006 The KJSEmbed Authors"
+msgstr ""
+
+#: kjsembed/kjscmd/kjscmd.cpp:146 kjsembed/kjscmd/kjscmd.cpp:147
+msgid "Execute script without gui support"
+msgstr ""
+
+#: kjsembed/kjscmd/kjscmd.cpp:148 kjsembed/kjscmd/kjscmd.cpp:149
+msgid "start interactive kjs interpreter"
+msgstr ""
+
+#: kjsembed/kjscmd/kjscmd.cpp:150 kjsembed/kjscmd/kjscmd.cpp:151
+msgid "start without KDE KApplication support."
+msgstr ""
+
+#: kjsembed/kjscmd/kjscmd.cpp:152
+msgid "Script to execute"
 msgstr ""
 
 #: kjsembed/kjsembed/qlayout_binding.cpp:90
@@ -10552,28 +10783,38 @@ msgstr "កម្មវិធី​ពិនិត្យ​អក្ខរាវ
 msgid "Incremental Spellcheck"
 msgstr "ពិនិត្យ​អក្ខរាវិរុទ្ធ​បន្ថែម"
 
-#: kde3support/kunittest/modrunner.cpp:36
+#: kde3support/kunittest/modrunner.cpp:41
 msgid "A command-line application that can be used to run KUnitTest modules."
 msgstr "កម្មវិធី​បន្ទាត់​បញ្ជា​មួយ​ដែល​អាច​ត្រូវ​បាន​ប្រើ​សម្រាប់​រត់​ម៉ូឌុល KUnitTest ។"
 
-#: kde3support/kunittest/modrunner.cpp:42
+#: kde3support/kunittest/modrunner.cpp:46
 msgid "Only run modules whose filenames match the regexp."
 msgstr "រត់​​តែ​ម៉ូឌុល​​​ដែល​ឈ្មោះ​ឯកសារ​របស់​វាដូច​នឹង regexp ។"
 
-#: kde3support/kunittest/modrunner.cpp:43
+#: kde3support/kunittest/modrunner.cpp:47
 msgid ""
 "Only run tests modules which are found in the folder. Use the query option "
 "to select modules."
 msgstr "រត់​​តែ​ម៉ូឌុល​សាកល្បង ដែល​​បាន​រក​ឃើញ​ក្នុង​ថត​នេះ ។ ប្រើ​ជម្រើស​សំណួរ ដើម្បី​ជ្រើស​ម៉ូឌុល ។"
 
-#: kde3support/kunittest/modrunner.cpp:44
+#: kde3support/kunittest/modrunner.cpp:48
 msgid ""
 "Disables debug capturing. You typically use this option when you use the GUI."
 msgstr "មិន​អនុញ្ញាត​ការ​ចាប់​កំហុស ។ ជា​ធម្មតា អ្នក​ប្រើ​ជម្រើស​នេះ ពេល​ប្រើ GUI ។"
 
-#: kde3support/kunittest/modrunner.cpp:53
+#: kde3support/kunittest/modrunner.cpp:50
 msgid "KUnitTest ModRunner"
 msgstr "KUnitTest ModRunner"
+
+#: kde3support/kunittest/modrunner.cpp:51
+msgid "(C) 2005 Jeroen Wijnhout"
+msgstr ""
+
+#: interfaces/terminal/test/main.cc:34
+#, fuzzy
+#| msgid "Test"
+msgid "TETest"
+msgstr "សាកល្បង"
 
 #: khtml/khtml_settings.cc:150
 msgid "Accept"
@@ -10796,6 +11037,12 @@ msgstr ""
 #: security/kcert/kcertpart.cc:887
 msgid "KDE Certificate Part"
 msgstr "ផ្នែក​វិញ្ញាបនបត្រ KDE "
+
+#: kdecore/util/qtest_kde.h:81 kdecore/util/qtest_kde.h:122
+#, fuzzy
+#| msgid "Latest"
+msgid "qttest"
+msgstr "ថ្មី​បំផុត"
 
 #: kdeui/actions/kstandardaction_p.h:43
 msgid "&New"
@@ -11149,10 +11396,6 @@ msgstr ""
 
 #~ msgid "expand ${prefix} and ${exec_prefix} in output"
 #~ msgstr "ពង្រីក ${prefix} និង ${exec_prefix} ក្នុង​លទ្ធផល"
-
-#, fuzzy
-#~ msgid "Script File"
-#~ msgstr "ស្គ្រីប "
 
 #, fuzzy
 #~ msgid "Script"
@@ -13634,12 +13877,6 @@ msgstr ""
 
 #~ msgid "Your new entry could not be added."
 #~ msgstr "មិន​អាច​បន្ថែម​ធាតុបញ្ចូល​ថ្មី​របស់​អ្នក​បាន​ទេ ។"
-
-#~ msgid "URL to open"
-#~ msgstr "URL ដែល​ត្រូវ​បើក"
-
-#~ msgid "KIOTest"
-#~ msgstr "KIOTest"
 
 #~ msgid "0.1"
 #~ msgstr "0.1"
