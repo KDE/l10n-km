@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-08 05:31+0200\n"
+"POT-Creation-Date: 2007-08-09 05:29+0200\n"
 "PO-Revision-Date: 2007-02-20 13:39+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -47,7 +47,7 @@ msgstr "ចម្លង​ទៅ"
 #: koeventpopupmenu.cpp:69 koeditorrecurrence.cpp:617 kotodoview.cpp:519
 #: calendarview.cpp:846 actionmanager.cpp:314 actionmanager.cpp:467
 #: actionmanager.cpp:1487 actionmanager.cpp:1515 rc.cpp:6 rc.cpp:2245
-#: koeditorattachments.cpp:426
+#: koeditorattachments.cpp:426 journalview.cpp:192
 #, fuzzy
 msgid "&Delete"
 msgstr "លុប %1"
@@ -107,7 +107,7 @@ msgstr ""
 #. i18n: file publishdialog_base.ui line 26
 #. i18n: tag string
 #. i18n: file ./publishdialog_base.ui line 26
-#: koeditordetails.cpp:225 koeditorfreebusy.cpp:273 koprefsdialog.cpp:1136
+#: koeditordetails.cpp:225 koeditorfreebusy.cpp:273 koprefsdialog.cpp:1153
 #: rc.cpp:879 rc.cpp:2035
 msgid "Name"
 msgstr "ឈ្មោះ"
@@ -117,7 +117,7 @@ msgstr "ឈ្មោះ"
 #. i18n: tag string
 #. i18n: file ./publishdialog_base.ui line 31
 #: koeditordetails.cpp:226 koeditorfreebusy.cpp:274 koeditoralarms.cpp:82
-#: koprefsdialog.cpp:904 rc.cpp:882 rc.cpp:2038
+#: koprefsdialog.cpp:917 rc.cpp:882 rc.cpp:2038
 msgid "Email"
 msgstr "អ៊ីមែល"
 
@@ -304,7 +304,7 @@ msgstr "អះអាង​ការ​លុប"
 #. i18n: file template_management_dialog_base.ui line 41
 #. i18n: tag string
 #. i18n: file ./template_management_dialog_base.ui line 41
-#: filtereditdialog.cpp:215 kojournaleditor.cpp:196 rc.cpp:960 rc.cpp:1654
+#: filtereditdialog.cpp:215 kojournaleditor.cpp:198 rc.cpp:960 rc.cpp:1654
 #: koeventeditor.cpp:367
 #, fuzzy
 msgid "Delete"
@@ -1101,7 +1101,7 @@ msgstr "មិន​អាច​រក​ពុម្ព '%1' បាន​ឡើ
 msgid "Error loading template file '%1'."
 msgstr "កំហុស​ក្នុង​ការ​ផ្ទុក​ឯកសារ​ពុម្ព '%1' ។"
 
-#: koeditoralarms.cpp:76 koprefsdialog.cpp:187 koeditorattachments.cpp:229
+#: koeditoralarms.cpp:76 koprefsdialog.cpp:208 koeditorattachments.cpp:229
 #: koeditorgeneralevent.cpp:333
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
@@ -1155,7 +1155,7 @@ msgid "1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "%1 ម៉ោង"
 
-#: koeditoralarms.cpp:122 koprefsdialog.cpp:284
+#: koeditoralarms.cpp:122 koprefsdialog.cpp:369
 #: printing/calprintdefaultplugins.cpp:334 koeditorgeneralevent.cpp:456
 #, qt-format
 msgid "1 minute"
@@ -1187,12 +1187,12 @@ msgstr "អ្នក​ចូល​រួម \"%1\" បាន​បន្ថែ�
 msgid "Attendee added"
 msgstr "បាន​បន្ថែម​អ្នក​ចូលរួម"
 
-#: koagendaitem.cpp:772 koagendaitem.cpp:876
+#: koagendaitem.cpp:771 koagendaitem.cpp:875
 #, qt-format
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: koagendaitem.cpp:784
+#: koagendaitem.cpp:783
 #, qt-format
 msgid "- %1"
 msgstr "- %1"
@@ -1260,16 +1260,37 @@ msgstr ""
 msgid "Theme to use"
 msgstr ""
 
-#: koprefsdialog.cpp:100
+#: koprefsdialog.cpp:89 koprefs.cpp:177
+msgid "Personal"
+msgstr "ផ្ទាល់​ខ្លួន"
+
+#: koprefsdialog.cpp:97
+#, fuzzy
+msgid "Email settings"
+msgstr "ការ​កំណត់ ៖"
+
+#: koprefsdialog.cpp:114
+#, fuzzy
+#| msgid "Travel"
+msgid "Save"
+msgstr "ការ​ធ្វើ​ដំណើរ"
+
+#: koprefsdialog.cpp:117
 msgid "Saving Calendar"
 msgstr "កំពុង​រក្សាទុក​ប្រតិទិន"
 
-#: koprefsdialog.cpp:175 koeditorgeneralevent.cpp:135
+#: koprefsdialog.cpp:188
+#, fuzzy
+#| msgid "Personal"
+msgid "Regional"
+msgstr "ផ្ទាល់​ខ្លួន"
+
+#: koprefsdialog.cpp:196 koeditorgeneralevent.cpp:135
 #, fuzzy
 msgid "Time zone:"
 msgstr "តំបន់​ពេលវេលា ៖"
 
-#: koprefsdialog.cpp:176
+#: koprefsdialog.cpp:197
 #, fuzzy
 msgid ""
 "Select your time zone from the list of locations on this drop down box. If "
@@ -1280,7 +1301,7 @@ msgstr ""
 "ជ្រើស​ទីក្រុង​មួយ​ដែល​ប្រើ​តំបន់​ពេលវេលា​រួម​គ្នា ។ KOrganizer នឹង​លៃតម្រូវ​ការ​រក្សាទុក​ពន្លឺ​ថ្ងៃ​ដោយ​"
 "ស្វ័យប្រវត្តិ ។"
 
-#: koprefsdialog.cpp:199
+#: koprefsdialog.cpp:220
 msgid "[No selection]"
 msgstr "[គ្មាន​ជម្រើស]"
 
@@ -1288,7 +1309,7 @@ msgstr "[គ្មាន​ជម្រើស]"
 #. i18n: file korganizer.kcfg line 140
 #. i18n: tag label
 #. i18n: file ./korganizer.kcfg line 140
-#: koprefsdialog.cpp:220 rc.cpp:435 rc.cpp:1300
+#: koprefsdialog.cpp:241 rc.cpp:435 rc.cpp:1300
 msgid "Use holiday region:"
 msgstr "ប្រើ​តំបន់​ថ្ងៃ​ឈប់​សម្រាក ៖"
 
@@ -1296,7 +1317,7 @@ msgstr "ប្រើ​តំបន់​ថ្ងៃ​ឈប់​សម្រ
 #. i18n: file korganizer.kcfg line 141
 #. i18n: tag whatsthis
 #. i18n: file ./korganizer.kcfg line 141
-#: koprefsdialog.cpp:221 rc.cpp:438 rc.cpp:1303
+#: koprefsdialog.cpp:242 rc.cpp:438 rc.cpp:1303
 msgid ""
 "Select from which region you want to use the holidays here. Defined holidays "
 "are shown as non-working days in the date navigator, the agenda view, etc."
@@ -1304,39 +1325,15 @@ msgstr ""
 "ជ្រើស​តំបន់​ដែល​អ្នក​ចង់​ប្រើ​ថ្ងៃឈប់សម្រាក​សម្រាប់ នៅ​ទីនេះ ។ ថ្ងៃឈប់សម្រាក​ដែល​បាន​កំណត់​នឹង​ត្រូវ​បាន​បង្ហាញ​ជា​"
 "ថ្ងៃ​ឈប់ នៅ​ក្នុង​កម្មវិធី​រុករក​កាលបរិច្ឆេទ និង ទិដ្ឋភាព​របៀបវារៈ ជាដើម ។"
 
-#: koprefsdialog.cpp:257
+#: koprefsdialog.cpp:278
 msgid "(None)"
 msgstr "(គ្មាន)"
 
-#: koprefsdialog.cpp:284
-msgid "5 minutes"
-msgstr "៥ នាទី"
-
-#: koprefsdialog.cpp:285
-msgid "10 minutes"
-msgstr "១០ នាទី"
-
-#: koprefsdialog.cpp:285
-msgid "15 minutes"
-msgstr "១៥ នាទី"
-
-#: koprefsdialog.cpp:286
-msgid "30 minutes"
-msgstr "៣០ នាទី"
-
-#: koprefsdialog.cpp:287
-msgid "Default reminder time:"
-msgstr "ពេលវេលា​របស់​កម្មវិធី​រំលឹក​លំនាំដើម ៖"
-
-#: koprefsdialog.cpp:290 koprefsdialog.cpp:293
-msgid "Enter the default reminder time here."
-msgstr "បញ្ចូល​ពេលវេលា​​របស់​កម្មវិធី​​រំលឹក​លំនាំដើម នៅ​ទីនេះ ។"
-
-#: koprefsdialog.cpp:300
+#: koprefsdialog.cpp:294
 msgid "Working Hours"
 msgstr "ម៉ោង​ធ្វើការ"
 
-#: koprefsdialog.cpp:320
+#: koprefsdialog.cpp:314
 msgid ""
 "Check this box to make KOrganizer mark the working hours for this day of the "
 "week. If this is a work day for you, check this box, or the working hours "
@@ -1345,46 +1342,83 @@ msgstr ""
 "គូស​ធីក​ប្រអប់​នេះដើម្បី​ឲ្យ KOrganizer សម្គាល់​ម៉ោង​ធ្វើ​ការ​សម្រាប់​ថ្ងៃ​នេះនៃ​សប្ដាហ៍ ។ បើ​វា​ជា​ថ្ងៃ​"
 "ធ្វើការសម្រាប់​អ្នក សូម​ធីក​ប្រអប់​នេះ ឬ បើ​ពុំ​នោះ​ទេ ម៉ោង​ធ្វើការ​នឹង​មិន​ត្រូវ​បាន​សម្គាល់​ដោយ​ពណ៌​ឡើយ ។"
 
-#: koprefsdialog.cpp:462
+#: koprefsdialog.cpp:354
+#, fuzzy
+#| msgid "Default Calendar"
+msgid "Default values"
+msgstr "ប្រតិទិន​លំនាំដើម"
+
+#: koprefsdialog.cpp:369
+msgid "5 minutes"
+msgstr "៥ នាទី"
+
+#: koprefsdialog.cpp:370
+msgid "10 minutes"
+msgstr "១០ នាទី"
+
+#: koprefsdialog.cpp:370
+msgid "15 minutes"
+msgstr "១៥ នាទី"
+
+#: koprefsdialog.cpp:371
+msgid "30 minutes"
+msgstr "៣០ នាទី"
+
+#: koprefsdialog.cpp:372
+msgid "Default reminder time:"
+msgstr "ពេលវេលា​របស់​កម្មវិធី​រំលឹក​លំនាំដើម ៖"
+
+#: koprefsdialog.cpp:375 koprefsdialog.cpp:378
+msgid "Enter the default reminder time here."
+msgstr "បញ្ចូល​ពេលវេលា​​របស់​កម្មវិធី​​រំលឹក​លំនាំដើម នៅ​ទីនេះ ។"
+
+#: koprefsdialog.cpp:476 kojournaleditor.cpp:77 exportwebdialog.cpp:143
+#: koeventeditor.cpp:113 kotodoeditor.cpp:94
+msgid "General"
+msgstr "ទូទៅ"
+
+#: koprefsdialog.cpp:490
 msgid "Date Navigator"
 msgstr "កម្មវិធី​រុករក​កាលបរិច្ឆេទ"
 
-#: koprefsdialog.cpp:473
+#: koprefsdialog.cpp:503
 msgid "Agenda View"
 msgstr "ទិដ្ឋភាព​របៀបវារៈ"
 
-#: koprefsdialog.cpp:484
+#: koprefsdialog.cpp:512
 msgctxt "suffix in the hour size spin box"
 msgid " pixel"
 msgstr " ភីកសែល"
 
-#: koprefsdialog.cpp:496
+#: koprefsdialog.cpp:524
 msgctxt "suffix in the N days spin box"
 msgid " days"
 msgstr " ថ្ងៃ"
 
-#: koprefsdialog.cpp:527
+#: koprefsdialog.cpp:554
 msgid "Month View"
 msgstr "ទិដ្ឋភាព​ខែ"
 
-#: koprefsdialog.cpp:546
-msgid "To-do View"
+#: koprefsdialog.cpp:573
+#, fuzzy
+#| msgid "To-do View"
+msgid "Todo View"
 msgstr "ទិដ្ឋភាព​ការងារ​ត្រូវ​ធ្វើ"
 
-#: koprefsdialog.cpp:602 koprefsdialog.cpp:610
-msgid "Event text"
-msgstr "អត្ថបទ​ព្រឹត្តិការណ៍"
+#: koprefsdialog.cpp:617
+msgid "Colors"
+msgstr ""
 
 #. i18n: tag string
 #. i18n: file filteredit_base.ui line 172
 #. i18n: tag string
 #. i18n: file ./filteredit_base.ui line 172
-#: koprefsdialog.cpp:693 kolistview.cpp:222 kotodoview.cpp:140 rc.cpp:42
+#: koprefsdialog.cpp:660 kolistview.cpp:222 kotodoview.cpp:140 rc.cpp:42
 #: rc.cpp:2281
 msgid "Categories"
 msgstr "ប្រភេទ"
 
-#: koprefsdialog.cpp:702
+#: koprefsdialog.cpp:669
 msgid ""
 "Select here the event category you want to modify. You can change the "
 "selected category color using the button below."
@@ -1392,17 +1426,17 @@ msgstr ""
 "នៅ​ទីនេះ អ្នក​អាច​ជ្រើស​ប្រភេទ​ព្រឹត្តិការណ៍​ដែល​អ្នក​ចង់​កែប្រែ ។ អ្នក​អាច​ផ្លាស់ប្ដូរ​ពណ៌​ប្រភេទ​ដែល​បាន​ជ្រើស "
 "ដោយ​ប្រើ​ប៊ូតុង​ខាង​ក្រោម ។​"
 
-#: koprefsdialog.cpp:710
+#: koprefsdialog.cpp:677
 msgid ""
 "Choose here the color of the event category selected using the combo box "
 "above."
 msgstr "នៅ​ទីនេះ អ្នក​អាច​ជ្រើស​ពណ៌​របស់​ប្រភេទ​ព្រឹត្តិការណ៍​ដែល​បាន​ជ្រើស ដោោយ​ប្រើ​ប្រអប់បន្សំំ​ខាង​លើ ។"
 
-#: koprefsdialog.cpp:718
+#: koprefsdialog.cpp:685
 msgid "Resources"
 msgstr "ធនធាន"
 
-#: koprefsdialog.cpp:726
+#: koprefsdialog.cpp:693
 msgid ""
 "Select here resource you want to modify. You can change the selected "
 "resource color using the button below."
@@ -1410,24 +1444,34 @@ msgstr ""
 "នៅ​ទី​នេះ អ្នក​អាច​ជ្រើស​ធនធាន​ដែល​អ្នក​ចង់​កែប្រែ ។ អ្នក​អាច​ផ្លាស់ប្ដូរ​ពណ៌​ធនធាន​ដែល​បានជ្រើស ដោយ​ប្រើ​"
 "ប៊ូតុង​ខាង​ក្រោម ។"
 
-#: koprefsdialog.cpp:734
+#: koprefsdialog.cpp:701
 msgid ""
 "Choose here the color of the resource selected using the combo box above."
 msgstr "នៅ​ទីនេះ អ្នក​អាច​ជ្រើស​ពណ៌​របស់​ធនធាន​បាន​ជ្រើស ដោយ​ប្រើ​ប្រអប់​បន្សំ​ខាង​លើ ។"
 
-#: koprefsdialog.cpp:883
+#: koprefsdialog.cpp:713
+#, fuzzy
+#| msgid "month(s)"
+msgid "Fonts"
+msgstr "ខែ"
+
+#: koprefsdialog.cpp:728 koprefsdialog.cpp:736
+msgid "Event text"
+msgstr "អត្ថបទ​ព្រឹត្តិការណ៍"
+
+#: koprefsdialog.cpp:896
 msgid "Scheduler Mail Client"
 msgstr "កម្មវិធី​អ៊ីមែល​តាម​កាលវិភាគ"
 
-#: koprefsdialog.cpp:886
+#: koprefsdialog.cpp:899
 msgid "Mail client"
 msgstr "កម្មវិធី​អ៊ីមែល"
 
-#: koprefsdialog.cpp:891
+#: koprefsdialog.cpp:904
 msgid "Additional email addresses:"
 msgstr "អាសយដ្ឋាន​អ៊ីមែល​បន្ថែម ៖"
 
-#: koprefsdialog.cpp:892
+#: koprefsdialog.cpp:905
 msgid ""
 "Add, edit or remove additional e-mails addresses here. These email addresses "
 "are the ones you have in addition to the one set in personal preferences. If "
@@ -1439,11 +1483,11 @@ msgstr ""
 "ព្រឹត្តិការណ៍​មួយ ប៉ុន្តែ​ប្រើ​អាសយដ្ឋាន​អ៊ីមែល​ផ្សេង​នៅ​ទី​នោះ អ្នក​ត្រូវ​តែ​រាយ​អាសយដ្ឋាននេះ​នៅ​ទី​នេះ ដូច្នេះ​"
 "ទើប KOrganizer អាច​ស្គាល់​វា​ថា​ជារបស់​អ្នក​ ។"
 
-#: koprefsdialog.cpp:907
+#: koprefsdialog.cpp:920
 msgid "Additional email address:"
 msgstr "អាសយដ្ឋាន​អ៊ីមែល​បន្ថែម ៖"
 
-#: koprefsdialog.cpp:908
+#: koprefsdialog.cpp:921
 msgid ""
 "Edit additional e-mails addresses here. To edit an address select it from "
 "the list above or press the \"New\" button below. These email addresses are "
@@ -1453,11 +1497,11 @@ msgstr ""
 "លើ ឬ ចុច​ប៊ូតុង \"ថ្មី\" ខាង​ក្រោម ។ អាសយដ្ឋាន​អ៊ីមែល​ទាំង​នេះ គឺ​ជា​អាសយដ្ឋាន​បន្ថែម​ពី​លើ​អាសយដ្ឋាន​មួយ​"
 "ដែល​បាន​កំណត់​ក្នុង​ចំណង់ចំណូល​ចិត្ត​ផ្ទាល់​ខ្លួន ។"
 
-#: koprefsdialog.cpp:920
+#: koprefsdialog.cpp:933
 msgid "New"
 msgstr "ថ្មី"
 
-#: koprefsdialog.cpp:922
+#: koprefsdialog.cpp:935
 msgid ""
 "Press this button to add a new entry to the additional e-mail addresses "
 "list. Use the edit box above to edit the new entry."
@@ -1465,61 +1509,61 @@ msgstr ""
 "ចុច​ប៊ូតុង​នេះ ដើម្បី​បន្ថែម​ធាតុ​ថ្មី​មួយ​ទៅ​បញ្ជីអាសយដ្ឋាន​អ៊ីមែល​បន្ថែម ។ ប្រើ​ប្រអប់​កែសម្រួល​ខាង​លើ ដើម្បី​"
 "កែសម្រួល​ធាតុ​ថ្មី ។"
 
-#: koprefsdialog.cpp:927
+#: koprefsdialog.cpp:940
 #, fuzzy
 msgid "Remove"
 msgstr "យក​ចេញ..."
 
-#: koprefsdialog.cpp:970 publishdialog.cpp:104
+#: koprefsdialog.cpp:983 publishdialog.cpp:104
 msgid "(EmptyEmail)"
 msgstr "(អ៊ីមែល​ទទេ)"
 
-#: koprefsdialog.cpp:1154
+#: koprefsdialog.cpp:1171
 msgid "Configure &Plugin..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​ជំនួយ..."
 
-#: koprefsdialog.cpp:1155
+#: koprefsdialog.cpp:1172
 msgid ""
 "This button allows you to configure the plugin that you have selected in the "
 "list above"
 msgstr "ប៊ូតុង​នេះ អនុញ្ញាត​ឲ្យ​អ្នក​កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​ជំនួយ ដែល​អ្នក​បាន​ជ្រើស​ក្នុង​បញ្ជី​ខាង​លើ​"
 
-#: koprefsdialog.cpp:1162
+#: koprefsdialog.cpp:1179
 #, fuzzy
 #| msgid "Destination"
 msgid "Position"
 msgstr "ទិសដៅ"
 
-#: koprefsdialog.cpp:1163
+#: koprefsdialog.cpp:1180
 #, fuzzy
 msgid "Show in the month view"
 msgstr "បង្ហាញ​តែ​អ្វី​ដែល​បាន​ជ្រើស"
 
-#: koprefsdialog.cpp:1165
+#: koprefsdialog.cpp:1182
 msgid "Show at the top of the agenda views"
 msgstr ""
 
-#: koprefsdialog.cpp:1167
+#: koprefsdialog.cpp:1184
 msgid "Show at the bottom of the agenda views"
 msgstr ""
 
-#: koprefsdialog.cpp:1204
+#: koprefsdialog.cpp:1221
 msgid "Calendar decorations"
 msgstr ""
 
-#: koprefsdialog.cpp:1206
+#: koprefsdialog.cpp:1223
 #, fuzzy
 #| msgid "Print list"
 msgid "Print plugins"
 msgstr "បោះពុម្ព​បញ្ជី"
 
-#: koprefsdialog.cpp:1208
+#: koprefsdialog.cpp:1225
 #, fuzzy
 #| msgid "Other Options"
 msgid "Other plugins"
 msgstr "ជម្រើស​ផ្សេង​ទៀត"
 
-#: koprefsdialog.cpp:1270
+#: koprefsdialog.cpp:1287
 msgid "Unable to configure this plugin"
 msgstr "មិន​អាច​កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​ជំនួយ​នេះ​បាន​ឡើយ"
 
@@ -1591,7 +1635,7 @@ msgstr "ម្ចាស់ ៖"
 msgid "Sets the Title of this event or to-do."
 msgstr "កំណត់​ចំណង​ជើង​នៃ​ព្រឹត្តិការណ៍ ឬ ការងារ​ត្រូវ​ធ្វើ​នេះ ។"
 
-#: koeditorgeneral.cpp:103 koeditorgeneraljournal.cpp:64
+#: koeditorgeneral.cpp:103 koeditorgeneraljournal.cpp:68
 msgid "T&itle:"
 msgstr "ចំណងជើង ៖"
 
@@ -1608,7 +1652,7 @@ msgid ""
 "Allows you to select the categories that this event or to-do belongs to."
 msgstr "អនុញ្ញាត​ឲ្យ​អ្នក​ជ្រើស​ប្រភេទ​របស់​ព្រឹត្តិការណ៍ ឬ ការងារ​ត្រូវ​ធ្វើ​នេះ ។"
 
-#: koeditorgeneral.cpp:138
+#: koeditorgeneral.cpp:138 koeditorgeneraljournal.cpp:156
 msgid "Select Cate&gories..."
 msgstr "ជ្រើស​ប្រភេទ..."
 
@@ -2200,10 +2244,6 @@ msgid "Special Occasion"
 msgstr "ឱកាស​ពិសេសៗ"
 
 #: koprefs.cpp:177
-msgid "Personal"
-msgstr "ផ្ទាល់​ខ្លួន"
-
-#: koprefs.cpp:177
 msgid "Travel"
 msgstr "ការ​ធ្វើ​ដំណើរ"
 
@@ -2287,7 +2327,7 @@ msgid "The item \"%1\" will be permanently deleted."
 msgstr "ធាតុ \"%1\" នឹង​ត្រូវ​បាន​លុបជា​រៀង​រហូត ។"
 
 #: calendarview.cpp:845 calendarview.cpp:2021 calendarview.cpp:2084
-#: calendarview.cpp:2095 kojournaleditor.cpp:196 koeditorattachments.cpp:695
+#: calendarview.cpp:2095 kojournaleditor.cpp:198 koeditorattachments.cpp:695
 #: koeventeditor.cpp:367 kotodoeditor.cpp:340
 msgid "KOrganizer Confirmation"
 msgstr "ការ​អះអាង KOrganizer"
@@ -2597,48 +2637,6 @@ msgstr ""
 msgid "This file is not a KOrganizer theme file."
 msgstr ""
 
-#: journalentry.cpp:182
-msgid "Sets the Title of this journal entry."
-msgstr "កំណត់​ចំណង​ជើង​របស់ធាតុ​ទិនានុប្បវត្តិ​នេះ ។"
-
-#: journalentry.cpp:184
-msgid "&Title: "
-msgstr "ចំណង​ជើង ៖ "
-
-#: journalentry.cpp:194
-msgid "Ti&me: "
-msgstr "ពេលវេលា ៖ "
-
-#: journalentry.cpp:200
-msgid "Determines whether this journal entry has a time associated with it"
-msgstr "កំណត់​ថាតើ​ធាតុ​ទិនានុប្បវត្តិ​នេះ​មាន​ភ្ជាប់​ម៉ោង​ជាមួយ​វា​ឬ​ក៏​អត់ ។"
-
-#: journalentry.cpp:202
-#, fuzzy
-msgid "Sets the time associated with this journal  entry"
-msgstr "កំណត់​ពេលវេលា​ដែល​ភ្ជាប់​ជាមួយ​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
-
-#: journalentry.cpp:212 journalentry.cpp:213
-msgid "Delete this journal entry"
-msgstr "លុប​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
-
-#: journalentry.cpp:221
-msgid "Edit this journal entry"
-msgstr "កែសម្រួល​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
-
-#: journalentry.cpp:222
-msgid "Opens an editor dialog for this journal entry"
-msgstr "បើក​ប្រអប់​កម្មវិធី​និពន្ធ សម្រាប់​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
-
-#: journalentry.cpp:231
-msgid "Print this journal entry"
-msgstr "បោះពុម្ព​​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
-
-#: journalentry.cpp:232
-#, fuzzy
-msgid "Opens a print dialog for this journal entry"
-msgstr "បើក​ប្រអប់​បោះពុម្ព​​សម្រាប់​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
-
 #: korgac/korgacmain.cpp:59 korgac/korgacmain.cpp:60
 #: korgac/alarmdockwindow.cpp:58
 msgid "KOrganizer Reminder Daemon"
@@ -2764,11 +2762,11 @@ msgstr "ទីតាំង​របស់​ព័ត៌មាន​ទំនេ
 msgid "Edit Journal Entry"
 msgstr "កែសម្រួល​ធាតុ​ទិនានុប្បវត្តិ"
 
-#: kojournaleditor.cpp:195
+#: kojournaleditor.cpp:197
 msgid "This journal entry will be permanently deleted."
 msgstr "ធាតុ​ទិនានុប្បវត្តិ​នេះ​នឹង​ត្រូវ​បានលុប​ជា​រៀង​រហូត ។"
 
-#: kojournaleditor.cpp:211
+#: kojournaleditor.cpp:213
 msgid "Template does not contain a valid journal."
 msgstr "ពុម្ព​មិនមាន​ទិនានុប្បវត្តិ​ត្រឹមត្រូវ​ឡើយ ។"
 
@@ -3679,17 +3677,17 @@ msgid "Repeat"
 msgstr "ធ្វើ​ម្ដង​ទៀត"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 13
+#. i18n: file kogroupwareprefspage.ui line 35
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 13
+#. i18n: file ./kogroupwareprefspage.ui line 35
 #: rc.cpp:169 rc.cpp:980
 msgid "P&ublish"
 msgstr "បោះពុម្ព​ផ្សាយ"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 25
+#. i18n: file kogroupwareprefspage.ui line 56
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 25
+#. i18n: file ./kogroupwareprefspage.ui line 56
 #: rc.cpp:172 rc.cpp:983
 msgid ""
 "By publishing Free/Busy information, you allow others to take your calendar "
@@ -3701,9 +3699,9 @@ msgstr ""
 "ពេលវេលា​ដែល​ពួកគេ​រវល់ឡើយ ។"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 37
+#. i18n: file kogroupwareprefspage.ui line 68
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 37
+#. i18n: file ./kogroupwareprefspage.ui line 68
 #: rc.cpp:175 rc.cpp:986
 msgid ""
 "Check this box to upload your Free/Busy information automatically.\n"
@@ -3721,21 +3719,21 @@ msgstr ""
 "គ្រប់គ្រង​ការ​ចូលដំណើរការ​​ពី​អ្នក​ប្រើ​ផ្សេង​ទៀត​រួច​ហើយ ។"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 40
+#. i18n: file kogroupwareprefspage.ui line 71
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 40
+#. i18n: file ./kogroupwareprefspage.ui line 71
 #: rc.cpp:180 rc.cpp:991
 msgid "Publish your free/&busy information automatically"
 msgstr "បោះពុម្ព​ផ្សាយ​ព័ត៌មាន​ទំនេរ/រវល់​របស់​អ្នក ដោយ​ស្វ័យប្រវត្តិ"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 55
+#. i18n: file kogroupwareprefspage.ui line 95
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 68
+#. i18n: file kogroupwareprefspage.ui line 108
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 55
+#. i18n: file ./kogroupwareprefspage.ui line 95
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 68
+#. i18n: file ./kogroupwareprefspage.ui line 108
 #: rc.cpp:183 rc.cpp:189 rc.cpp:994 rc.cpp:1000
 msgid ""
 "Configure minimum the interval of time in minutes between each upload here. "
@@ -3747,25 +3745,25 @@ msgstr ""
 "ប៉ុណ្ណោះ ។"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 58
+#. i18n: file kogroupwareprefspage.ui line 98
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 58
+#. i18n: file ./kogroupwareprefspage.ui line 98
 #: rc.cpp:186 rc.cpp:997
 msgid "Minimum time between uploads (in minutes):"
 msgstr "រយៈពេល​អប្បបរមា ចន្លោះ​ពេល​ផ្ទុក​ឡើង (គិតជា​នាទី) ៖"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 88
+#. i18n: file kogroupwareprefspage.ui line 137
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 101
+#. i18n: file kogroupwareprefspage.ui line 150
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 117
+#. i18n: file kogroupwareprefspage.ui line 166
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 88
+#. i18n: file ./kogroupwareprefspage.ui line 137
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 101
+#. i18n: file ./kogroupwareprefspage.ui line 150
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 117
+#. i18n: file ./kogroupwareprefspage.ui line 166
 #: rc.cpp:192 rc.cpp:198 rc.cpp:201 rc.cpp:1003 rc.cpp:1009 rc.cpp:1012
 msgid ""
 "Configure the number of calendar days you wish to be published and available "
@@ -3774,41 +3772,41 @@ msgstr ""
 "កំណត់​រចនាសម្ព័ន្ធ​ចំនួន​ថ្ងៃ​ប្រតិទិន ដែល​អ្នក​ចង់​ឲ្យ​បោះពុម្ព​ផ្សាយ និង មាន​ចំពោះ​អ្នក​ផ្សេង​ទៀត នៅ​ទីនេះ ។"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 91
+#. i18n: file kogroupwareprefspage.ui line 140
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 91
+#. i18n: file ./kogroupwareprefspage.ui line 140
 #: rc.cpp:195 rc.cpp:1006
 msgid "Publish"
 msgstr "បោះពុម្ព​ផ្សាយ"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 120
+#. i18n: file kogroupwareprefspage.ui line 169
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 120
+#. i18n: file ./kogroupwareprefspage.ui line 169
 #: rc.cpp:204 rc.cpp:1015
 msgid "days of free/busy information"
 msgstr "ព័ត៌មាន​អំពី​ថ្ងៃ​ទំនេរ/រវល់"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 145
+#. i18n: file kogroupwareprefspage.ui line 194
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 319
+#. i18n: file kogroupwareprefspage.ui line 389
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 145
+#. i18n: file ./kogroupwareprefspage.ui line 194
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 319
+#. i18n: file ./kogroupwareprefspage.ui line 389
 #: rc.cpp:207 rc.cpp:273 rc.cpp:1018 rc.cpp:1084
 msgid "Server Information"
 msgstr "ព័ត៌មាន​ម៉ាស៊ីន​បម្រើ"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 165
+#. i18n: file kogroupwareprefspage.ui line 226
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 238
+#. i18n: file kogroupwareprefspage.ui line 299
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 165
+#. i18n: file ./kogroupwareprefspage.ui line 226
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 238
+#. i18n: file ./kogroupwareprefspage.ui line 299
 #: rc.cpp:210 rc.cpp:244 rc.cpp:1021 rc.cpp:1055
 msgid ""
 "Enter the URL for the server on which your Free/Busy information shall be "
@@ -3823,50 +3821,50 @@ msgstr ""
 "joe@kolab2.com.ifb\""
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 172
+#. i18n: file kogroupwareprefspage.ui line 233
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 182
+#. i18n: file kogroupwareprefspage.ui line 243
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 331
+#. i18n: file kogroupwareprefspage.ui line 413
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 392
+#. i18n: file kogroupwareprefspage.ui line 474
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 172
+#. i18n: file ./kogroupwareprefspage.ui line 233
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 182
+#. i18n: file ./kogroupwareprefspage.ui line 243
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 331
+#. i18n: file ./kogroupwareprefspage.ui line 413
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 392
+#. i18n: file ./kogroupwareprefspage.ui line 474
 #: rc.cpp:215 rc.cpp:218 rc.cpp:276 rc.cpp:305 rc.cpp:1026 rc.cpp:1029
 #: rc.cpp:1087 rc.cpp:1116
 msgid "Enter your groupware server login password here."
 msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់​ចូល​ម៉ាស៊ីន​បម្រើ groupware នៅ​ទី​នេះ ។"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 185
+#. i18n: file kogroupwareprefspage.ui line 246
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 185
+#. i18n: file ./kogroupwareprefspage.ui line 246
 #: rc.cpp:221 rc.cpp:1032
 msgid "Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 197
+#. i18n: file kogroupwareprefspage.ui line 258
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 218
+#. i18n: file kogroupwareprefspage.ui line 279
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 343
+#. i18n: file kogroupwareprefspage.ui line 425
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 379
+#. i18n: file kogroupwareprefspage.ui line 461
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 197
+#. i18n: file ./kogroupwareprefspage.ui line 258
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 218
+#. i18n: file ./kogroupwareprefspage.ui line 279
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 343
+#. i18n: file ./kogroupwareprefspage.ui line 425
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 379
+#. i18n: file ./kogroupwareprefspage.ui line 461
 #: rc.cpp:224 rc.cpp:232 rc.cpp:279 rc.cpp:297 rc.cpp:1035 rc.cpp:1043
 #: rc.cpp:1090 rc.cpp:1108
 msgid ""
@@ -3883,21 +3881,21 @@ msgstr ""
 "ផង​ដែរ ។ បើ​ជា​ករណី​ចុងក្រោយ សូម​បញ្ចូល UID របស់​អ្នក ។"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 200
+#. i18n: file kogroupwareprefspage.ui line 261
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 200
+#. i18n: file ./kogroupwareprefspage.ui line 261
 #: rc.cpp:229 rc.cpp:1040
 msgid "Username:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 226
+#. i18n: file kogroupwareprefspage.ui line 287
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 412
+#. i18n: file kogroupwareprefspage.ui line 494
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 226
+#. i18n: file ./kogroupwareprefspage.ui line 287
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 412
+#. i18n: file ./kogroupwareprefspage.ui line 494
 #: rc.cpp:237 rc.cpp:311 rc.cpp:1048 rc.cpp:1122
 msgid ""
 "Check this box to make KOrganizer remember your password and skip asking you "
@@ -3911,37 +3909,37 @@ msgstr ""
 "ដើម្បី​ឲ្យ​មាន​សុវត្ថិភាព អ្នក​មិន​គួរ​ទុក​ពាក្យ​សម្ងាត់​របស់​អ្នក​នៅ​ក្នុង​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ​ឡើយ ។"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 229
+#. i18n: file kogroupwareprefspage.ui line 290
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 229
+#. i18n: file ./kogroupwareprefspage.ui line 290
 #: rc.cpp:241 rc.cpp:1052
 msgid "Remember p&assword"
 msgstr "ចងចាំ​ពាក្យ​សម្ងាត់"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 241
+#. i18n: file kogroupwareprefspage.ui line 302
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 367
+#. i18n: file kogroupwareprefspage.ui line 449
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 241
+#. i18n: file ./kogroupwareprefspage.ui line 302
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 367
+#. i18n: file ./kogroupwareprefspage.ui line 449
 #: rc.cpp:249 rc.cpp:294 rc.cpp:1060 rc.cpp:1105
 msgid "Server URL:"
 msgstr "URL ម៉ាស៊ីន​បម្រើ ៖"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 271
+#. i18n: file kogroupwareprefspage.ui line 332
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 271
+#. i18n: file ./kogroupwareprefspage.ui line 332
 #: rc.cpp:252 rc.cpp:1063
 msgid "&Retrieve"
 msgstr "ទៅយក"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 283
+#. i18n: file kogroupwareprefspage.ui line 353
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 283
+#. i18n: file ./kogroupwareprefspage.ui line 353
 #: rc.cpp:255 rc.cpp:1066
 msgid ""
 "By retrieving Free/Busy information that others have published, you can take "
@@ -3951,9 +3949,9 @@ msgstr ""
 "ពេល​អញ្ជើញ​ពួក​គាត់​មក​ចូលរួម​ប្រជុំ ។"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 293
+#. i18n: file kogroupwareprefspage.ui line 363
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 293
+#. i18n: file ./kogroupwareprefspage.ui line 363
 #: rc.cpp:258 rc.cpp:1069
 msgid ""
 "Check this box to retrieve other peoples' Free/Busy information "
@@ -3964,26 +3962,26 @@ msgstr ""
 "បំពេញ​ព័ត៌មាន​ត្រឹមត្រូវ​អំពី​ម៉ាស៊ីន​បម្រើ ដើម្បី​អាច​ធ្វើ​ដូច្នេះ​បាន​ ។"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 296
+#. i18n: file kogroupwareprefspage.ui line 366
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 296
+#. i18n: file ./kogroupwareprefspage.ui line 366
 #: rc.cpp:261 rc.cpp:1072
 msgid "Retrieve other peoples' free/&busy information automatically"
 msgstr "ទៅយក​ព័ត៌មាន​ទំនេរ/រវល់​របស់​អ្នក​ផ្សេង​ទៀត ដោយ​ស្វ័យប្រវត្តិ"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 306
+#. i18n: file kogroupwareprefspage.ui line 376
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 306
+#. i18n: file ./kogroupwareprefspage.ui line 376
 #: rc.cpp:264 rc.cpp:1075
 msgid ""
 "Set this to retrieve user@domain.ifb instead of user.ifb from the server"
 msgstr "កំណត់​ជម្រើស​នេះ​ដើម្បី​ទៅ​យក user@domain.ifb ជំនួស​ឲ្យ user.ifb ពី​ម៉ាស៊ីនបម្រើ"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 309
+#. i18n: file kogroupwareprefspage.ui line 379
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 309
+#. i18n: file ./kogroupwareprefspage.ui line 379
 #: rc.cpp:267 rc.cpp:1078
 msgid ""
 "Check this box to download a free/busy file in the format \"user@domain.ifb"
@@ -3997,21 +3995,21 @@ msgstr ""
 "ជម្រើស​នេះ ។"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 312
+#. i18n: file kogroupwareprefspage.ui line 382
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 312
+#. i18n: file ./kogroupwareprefspage.ui line 382
 #: rc.cpp:270 rc.cpp:1081
 msgid "Use full email &address for retrieval"
 msgstr "ប្រើ​អាសយដ្ឋាន​អ៊ីមែល​ពេញលេញ ដើម្បី​ទៅយក"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 355
+#. i18n: file kogroupwareprefspage.ui line 437
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 364
+#. i18n: file kogroupwareprefspage.ui line 446
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 355
+#. i18n: file ./kogroupwareprefspage.ui line 437
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 364
+#. i18n: file ./kogroupwareprefspage.ui line 446
 #: rc.cpp:284 rc.cpp:289 rc.cpp:1095 rc.cpp:1100
 msgid ""
 "Enter the URL for the server on which the Free/Busy information is published "
@@ -4024,25 +4022,25 @@ msgstr ""
 "នេះ​ជា​ឧទាហរណ៍​នៃ URL របស់​ម៉ាស៊ីន​បម្រើ Kolab2 ៖ \"webdavs://kolab2.com/freebusy/\""
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 382
+#. i18n: file kogroupwareprefspage.ui line 464
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 382
+#. i18n: file ./kogroupwareprefspage.ui line 464
 #: rc.cpp:302 rc.cpp:1113
 msgid "User&name:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 395
+#. i18n: file kogroupwareprefspage.ui line 477
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 395
+#. i18n: file ./kogroupwareprefspage.ui line 477
 #: rc.cpp:308 rc.cpp:1119
 msgid "Passwor&d:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
 #. i18n: tag string
-#. i18n: file kogroupwareprefspage.ui line 415
+#. i18n: file kogroupwareprefspage.ui line 497
 #. i18n: tag string
-#. i18n: file ./kogroupwareprefspage.ui line 415
+#. i18n: file ./kogroupwareprefspage.ui line 497
 #: rc.cpp:315 rc.cpp:1126
 msgid "Re&member password"
 msgstr "ចងចាំ​ពាក្យ​សម្ងាត់"
@@ -5539,7 +5537,7 @@ msgstr "នាំចេញ"
 #. i18n: file ./korganizer_part.rc line 32
 #. i18n: tag text
 #. i18n: file ./korganizerui.rc line 26
-#: rc.cpp:792 rc.cpp:840 rc.cpp:1672 rc.cpp:1720
+#: rc.cpp:792 rc.cpp:840 rc.cpp:1672 rc.cpp:1720 journalview.cpp:182
 #, fuzzy
 msgid "&Edit"
 msgstr "កែសម្រួល..."
@@ -6689,10 +6687,6 @@ msgstr "ការ​កំណត់​ចំណង់​ចំណូល​ចិ
 msgid "Reset to Defaults"
 msgstr "កំណត់​ឡើង​វិញ​ទៅ​ជា​លំនាំដើម"
 
-#: exportwebdialog.cpp:143 koeventeditor.cpp:113 kotodoeditor.cpp:94
-msgid "General"
-msgstr "ទូទៅ"
-
 #: exportwebdialog.cpp:159
 msgid "View Type"
 msgstr "ប្រភេទ​ទិដ្ឋភាព"
@@ -7621,25 +7615,58 @@ msgstr ""
 msgid "The archive file name is not valid.\n"
 msgstr "ឈ្មោះ​ឯកសារ​ប័ណ្ណសារ​មិន​ត្រឹមត្រូវ​ឡើយ ។\n"
 
+#: journalview.cpp:185
+msgid "Edit this journal entry"
+msgstr "កែសម្រួល​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
+
+#: journalview.cpp:186
+msgid "Opens an editor dialog for this journal entry"
+msgstr "បើក​ប្រអប់​កម្មវិធី​និពន្ធ សម្រាប់​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
+
+#: journalview.cpp:196 journalview.cpp:197
+msgid "Delete this journal entry"
+msgstr "លុប​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
+
+#: journalview.cpp:203
+#, fuzzy
+msgid "&Print"
+msgstr "បោះពុម្ព​ថ្ងៃ"
+
+#: journalview.cpp:207
+msgid "Print this journal entry"
+msgstr "បោះពុម្ព​​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
+
+#: journalview.cpp:208
+#, fuzzy
+msgid "Opens a print dialog for this journal entry"
+msgstr "បើក​ប្រអប់​បោះពុម្ព​​សម្រាប់​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
+
 #: komonthview.cpp:359
 #, qt-format
 msgctxt "'Month day' for month view cells"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: koeditorgeneraljournal.cpp:63
+#: koeditorgeneraljournal.cpp:67
 msgid "Sets the title of this journal."
 msgstr "កំណត់​ចំណងជើង​របស់​ទិនានុប្បវត្តិ​នេះ ។"
 
-#: koeditorgeneraljournal.cpp:83
+#: koeditorgeneraljournal.cpp:87
 msgid "&Date:"
 msgstr "កាលបរិច្ឆេទ ៖"
 
-#: koeditorgeneraljournal.cpp:92
+#: koeditorgeneraljournal.cpp:96
 msgid "&Time: "
 msgstr "ពេលវេលា ៖ "
 
-#: koeditorgeneraljournal.cpp:193
+#: koeditorgeneraljournal.cpp:152
+#, fuzzy
+#| msgid ""
+#| "Allows you to select the categories that this event or to-do belongs to."
+msgid "Allows you to select the categories that this journal belongs to."
+msgstr "អនុញ្ញាត​ឲ្យ​អ្នក​ជ្រើស​ប្រភេទ​របស់​ព្រឹត្តិការណ៍ ឬ ការងារ​ត្រូវ​ធ្វើ​នេះ ។"
+
+#: koeditorgeneraljournal.cpp:249
 #, qt-format
 msgid "Please specify a valid date, for example '%1'."
 msgstr "សូម​បញ្ជាក់កាលបរិច្ឆេទ​ត្រឹមត្រូវ​មួយ ឧទាហរណ៍ '%1' ។"
@@ -8558,6 +8585,22 @@ msgstr "ពុះ​ការ​កើតឡើង​ដដែលៗ​ពេល
 #: koagenda.cpp:1145
 msgid "Unable to add the future items to the calendar. No change will be done."
 msgstr "មិន​អាច​បន្ថែម​ធាតុ​ពេល​ខាង​មុខ​ទៅ​ប្រតិទិន​បាន​ឡើយ ។ មិន​បាន​ផ្លាស់ប្ដូរ​អ្វី​ទាំងអស់ ។"
+
+#~ msgid "Sets the Title of this journal entry."
+#~ msgstr "កំណត់​ចំណង​ជើង​របស់ធាតុ​ទិនានុប្បវត្តិ​នេះ ។"
+
+#~ msgid "&Title: "
+#~ msgstr "ចំណង​ជើង ៖ "
+
+#~ msgid "Ti&me: "
+#~ msgstr "ពេលវេលា ៖ "
+
+#~ msgid "Determines whether this journal entry has a time associated with it"
+#~ msgstr "កំណត់​ថាតើ​ធាតុ​ទិនានុប្បវត្តិ​នេះ​មាន​ភ្ជាប់​ម៉ោង​ជាមួយ​វា​ឬ​ក៏​អត់ ។"
+
+#, fuzzy
+#~ msgid "Sets the time associated with this journal  entry"
+#~ msgstr "កំណត់​ពេលវេលា​ដែល​ភ្ជាប់​ជាមួយ​ធាតុ​ទិនានុប្បវត្តិ​នេះ"
 
 #~ msgid "To-dos:"
 #~ msgstr "ការងារ​ត្រូវ​ធ្វើ ៖"
