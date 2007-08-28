@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-27 05:31+0200\n"
+"POT-Creation-Date: 2007-08-28 05:43+0200\n"
 "PO-Revision-Date: 2007-02-27 16:09+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -197,9 +197,12 @@ msgid "To:"
 msgstr "ទៅ ៖"
 
 #: alarmtext.cpp:250
-msgctxt "@info/plain"
-msgid "Copy-to in email headers"
-msgstr ""
+#, fuzzy
+#| msgctxt "Copy-to in email headers"
+#| msgid "Cc:"
+msgctxt "@info/plain Copy-to in email headers"
+msgid "Cc:"
+msgstr "ចម្លង ៖"
 
 #: alarmtext.cpp:251
 #, fuzzy
@@ -474,12 +477,11 @@ msgstr "ជ្រើស​ថ្ងៃ​កំណើត"
 #| "the list, or by clicking the mouse while pressing Ctrl or Shift."
 msgctxt "@info:whatsthis"
 msgid ""
-"Select birthdays to set alarms for.\n"
-"This list shows all birthdays in <application>KAddressBook</application> "
-"except those for which alarms already exist.\n"
-"\n"
-"You can select multiple birthdays at one time by dragging the mouse over the "
-"list, or by clicking the mouse while pressing Ctrl or Shift."
+"<para>Select birthdays to set alarms for.<br />This list shows all birthdays "
+"in <application>KAddressBook</application> except those for which alarms "
+"already exist.</para><para>You can select multiple birthdays at one time by "
+"dragging the mouse over the list, or by clicking the mouse while pressing "
+"Ctrl or Shift.</para>"
 msgstr ""
 "ជ្រើស​ថ្ងៃ​កំណើត ដើម្បីកំណត់​ការជូនដំណឹង​​ឲ្យ ។\n"
 "បញ្ជី​នេះ​បង្ហាញ​ថ្ងៃ​កំណើត​ទាំងអស់​ក្នុង KAddressBook លើកលែង​តែ​ថ្ងៃ​កំណើត​ដែល​មាន​ការជូនដំណឹង​រួច​"
@@ -536,10 +538,10 @@ msgctxt "@info"
 msgid "Error reading address book"
 msgstr "កំហុស ពេេល​កំពុងអាន​សៀវភៅ​អាសយដ្ឋាន"
 
-#: birthdaymodel.cpp:113 eventlistmodel.cpp:315
+#: birthdaymodel.cpp:113
 #, fuzzy
 #| msgid "Name"
-msgctxt "@title:column"
+msgctxt "@title:column Name of person"
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -592,7 +594,7 @@ msgstr "រក​មិន​ឃើញ​ដេមិនជូនដំណឹង
 #| "(Installation or configuration error: %1 cannot locate %2 executable.)"
 msgctxt "@info"
 msgid ""
-"Alarms will be disabled if you stop <application>KAlarm</application>.\n"
+"Alarms will be disabled if you stop <application>KAlarm</application>.<br />"
 "(Installation or configuration error: <command>%1</command> cannot locate "
 "<command>%2</command> executable.)"
 msgstr ""
@@ -606,28 +608,26 @@ msgstr ""
 #| "Failed to register with Alarm Daemon (%1)"
 msgctxt "@info"
 msgid ""
-"Cannot enable alarms:\n"
-"Failed to register with <application>Alarm Daemon</application> (<command>%"
-"1</command>)"
+"Cannot enable alarms:<br />Failed to register with <application>Alarm "
+"Daemon</application> (<command>%1</command>)"
 msgstr ""
 "មិន​អាចបើក​ការជូនដំណឹង ៖\n"
 "បរាជ័យ​ក្នុង​ការ​ចុះឈ្មោះ​ជាមួយដេមិន​ជូនដំណឹង (%1)"
 
-#: daemon.cpp:308
+#: daemon.cpp:309
 #, fuzzy, qt-format
 #| msgid ""
 #| "Cannot enable alarms:\n"
 #| "Failed to start Alarm Daemon (%1)"
 msgctxt "@info"
 msgid ""
-"Cannot enable alarms:\n"
-"Failed to start <application>Alarm Daemon</application> (<command>%1</"
-"command>)"
+"Cannot enable alarms:<br />Failed to start <application>Alarm Daemon</"
+"application> (<command>%1</command>)"
 msgstr ""
 "មិន​អាចបើក​ការជូនដំណឹង ៖\n"
 "បរាជ័យ​ក្នុងការ​ចាប់ផ្ដើម​ដេមិនជូនដំណឹង (%1)"
 
-#: daemon.cpp:794
+#: daemon.cpp:795
 #, fuzzy
 #| msgid "Enable &Alarms"
 msgctxt "@action"
@@ -1609,8 +1609,15 @@ msgctxt "@title:column"
 msgid "Message, File or Command"
 msgstr "សារ​ ឯកសារ ឬ ពាក្យ​បញ្ជា"
 
+#: eventlistmodel.cpp:315
+#, fuzzy
+#| msgid "Name"
+msgctxt "@title:column Template name"
+msgid "Name"
+msgstr "ឈ្មោះ"
+
 #: eventlistmodel.cpp:579 eventlistmodel.cpp:616
-msgctxt "@info"
+msgctxt "@info Alarm never occurs"
 msgid "Never"
 msgstr ""
 
@@ -2070,8 +2077,7 @@ msgstr "ទុក​ឲ្យ​បិទ"
 #| msgid "Unable to locate this email in KMail"
 msgctxt "@info"
 msgid ""
-"Unable to start <application>KMail</application>\n"
-"(<message>%1</message>)"
+"Unable to start <application>KMail</application><br />(<message>%1</message>)"
 msgstr "មិន​អាច​ទុកអ៊ីមែល​នេះ​ក្នុង KMail"
 
 #: functions.cpp:1377
@@ -2116,7 +2122,7 @@ msgctxt "Name of the weekday"
 msgid "Sunday"
 msgstr "សម្លេង"
 
-#: kalarmapp.cpp:322
+#: kalarmapp.cpp:321
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
@@ -2124,7 +2130,7 @@ msgid ""
 "<icode>%1</icode>, <icode>%2</icode>, <icode>%3</icode> mutually exclusive"
 msgstr "%1 មិន​ឆប​គ្នា​នឹង %2"
 
-#: kalarmapp.cpp:354
+#: kalarmapp.cpp:353
 #, fuzzy, qt-format
 #| msgid "%1: Event %2 not found, or not editable"
 msgctxt "@info:shell"
@@ -2132,62 +2138,62 @@ msgid ""
 "<icode>%1</icode>: Event <resource>%2</resource> not found, or not editable"
 msgstr "%1 ៖ រក​មិន​ឃើញ​ព្រឹត្តិការណ៍ %2 ឬ មិន​អាច​កែសម្រួល​បាន"
 
-#: kalarmapp.cpp:386 kalarmapp.cpp:388 kalarmapp.cpp:398 kalarmapp.cpp:487
-#: kalarmapp.cpp:489 kalarmapp.cpp:498 kalarmapp.cpp:569 kalarmapp.cpp:571
-#: kalarmapp.cpp:573 kalarmapp.cpp:589 kalarmapp.cpp:599 kalarmapp.cpp:602
-#: kalarmapp.cpp:604
+#: kalarmapp.cpp:385 kalarmapp.cpp:387 kalarmapp.cpp:397 kalarmapp.cpp:486
+#: kalarmapp.cpp:488 kalarmapp.cpp:497 kalarmapp.cpp:568 kalarmapp.cpp:570
+#: kalarmapp.cpp:572 kalarmapp.cpp:588 kalarmapp.cpp:598 kalarmapp.cpp:601
+#: kalarmapp.cpp:603
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> incompatible with <icode>%2</icode>"
 msgstr "%1 មិន​ឆប​គ្នា​នឹង %2"
 
-#: kalarmapp.cpp:390
+#: kalarmapp.cpp:389
 #, fuzzy, qt-format
 #| msgid "message incompatible with %1"
 msgctxt "@info:shell"
 msgid "message incompatible with <icode>%1</icode>"
 msgstr "សារ​មិន​ឆប​គ្នា​នឹង %1"
 
-#: kalarmapp.cpp:420
+#: kalarmapp.cpp:419
 #, fuzzy, qt-format
 #| msgid "%1: invalid email address"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode>: invalid email address"
 msgstr "%1 ៖ អាសយដ្ឋាន​អ៊ីមែល​មិន​ត្រឹមត្រូវ"
 
-#: kalarmapp.cpp:438 kalarmapp.cpp:440 kalarmapp.cpp:442 kalarmapp.cpp:444
-#: kalarmapp.cpp:507 kalarmapp.cpp:557 kalarmapp.cpp:559 kalarmapp.cpp:634
+#: kalarmapp.cpp:437 kalarmapp.cpp:439 kalarmapp.cpp:441 kalarmapp.cpp:443
+#: kalarmapp.cpp:506 kalarmapp.cpp:556 kalarmapp.cpp:558 kalarmapp.cpp:633
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> requires <icode>%2</icode>"
 msgstr "%1 មិន​ឆប​គ្នា​នឹង %2"
 
-#: kalarmapp.cpp:461 kalarmapp.cpp:471 kalarmapp.cpp:478 kalarmapp.cpp:504
-#: kalarmapp.cpp:518 kalarmapp.cpp:534 kalarmapp.cpp:580 kalarmapp.cpp:622
-#: kalarmapp.cpp:631
+#: kalarmapp.cpp:460 kalarmapp.cpp:470 kalarmapp.cpp:477 kalarmapp.cpp:503
+#: kalarmapp.cpp:517 kalarmapp.cpp:533 kalarmapp.cpp:579 kalarmapp.cpp:621
+#: kalarmapp.cpp:630
 #, fuzzy, qt-format
 #| msgid "Invalid %1 parameter"
 msgctxt "@info:shell"
 msgid "Invalid <icode>%1</icode> parameter"
 msgstr "ប៉ារ៉ាម៉ែត្រ %1 មិន​ត្រឹមត្រូវ"
 
-#: kalarmapp.cpp:520 kalarmapp.cpp:536 kalarmapp.cpp:614
+#: kalarmapp.cpp:519 kalarmapp.cpp:535 kalarmapp.cpp:613
 #, fuzzy, qt-format
 #| msgid "Invalid %1 parameter for date-only alarm"
 msgctxt "@info:shell"
 msgid "Invalid <icode>%1</icode> parameter for date-only alarm"
 msgstr "ប៉ារ៉ាម៉ែត្រ %1 មិន​ត្រឹមត្រូវ សម្រាប់ការជូនដំណឹង​ដែល​បាន​កំណត់ពេល"
 
-#: kalarmapp.cpp:524
+#: kalarmapp.cpp:523
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> earlier than <icode>%2</icode>"
 msgstr "%1 មិន​ឆប​គ្នា​នឹង %2"
 
-#: kalarmapp.cpp:543
+#: kalarmapp.cpp:542
 #, fuzzy, qt-format
 #| msgid "Invalid %1 and %2 parameters: repetition is longer than %3 interval"
 msgctxt "@info:shell"
@@ -2196,14 +2202,14 @@ msgid ""
 "longer than <icode>%3</icode> interval"
 msgstr "ប៉ារ៉ាម៉ែត្រ %1 និង %2 មិន​ត្រឹមត្រូវ ៖ ការធ្វើឡើងដដែល​យូរ​ជាង​ចន្លោះពេល %3"
 
-#: kalarmapp.cpp:585
+#: kalarmapp.cpp:584
 #, fuzzy, qt-format
 #| msgid "%1 incompatible with %2"
 msgctxt "@info:shell"
 msgid "<icode>%1</icode> requires <icode>%2</icode> or <icode>%3</icode>"
 msgstr "%1 មិន​ឆប​គ្នា​នឹង %2"
 
-#: kalarmapp.cpp:591
+#: kalarmapp.cpp:590
 #, fuzzy, qt-format
 #| msgid "%1 requires speech synthesis to be configured using KTTSD"
 msgctxt "@info:shell"
@@ -2211,7 +2217,7 @@ msgid ""
 "<icode>%1</icode> requires speech synthesis to be configured using KTTSD"
 msgstr "%1 ត្រូវការ​សំយោគ​សំដី​ដែល​ត្រូវ​កំណត់​រចនា​សម្ព័ន្ធ​ដោយប្រើ KTTSD"
 
-#: kalarmapp.cpp:719
+#: kalarmapp.cpp:718
 #, fuzzy, qt-format
 #| msgid ": option(s) only valid with a message/%1/%2"
 msgctxt "@info:shell"
@@ -2219,7 +2225,7 @@ msgid ""
 ": option(s) only valid with a message/<icode>%1</icode>/<icode>%2</icode>"
 msgstr " ៖ ជម្រើស​មាន​ប្រសិទ្ធិភាព​តែ​ជាមួយ​សារ /%1/%2"
 
-#: kalarmapp.cpp:739
+#: kalarmapp.cpp:738
 #, fuzzy
 #| msgid ""
 #| "\n"
@@ -2232,7 +2238,7 @@ msgstr ""
 "\n"
 "ប្រើ --help ដើម្បី​ទទួល​បាន​បញ្ជីជម្រើសបន្ទាត់​ពាក្យ​បញ្ជដែល​មាន ។\n"
 
-#: kalarmapp.cpp:811
+#: kalarmapp.cpp:810
 #, fuzzy
 #| msgid ""
 #| "Quitting will disable alarms\n"
@@ -2244,21 +2250,21 @@ msgstr ""
 "ការចេញ​នឹង​បិទ​ការជូនដំណឹង\n"
 "(ពេល​ដែល​បង្អួច​សារ​ការជូនដំណឹង​ត្រូវ​បាន​បិទ) ។"
 
-#: kalarmapp.cpp:1764
+#: kalarmapp.cpp:1763
 #, fuzzy
 #| msgid "Error creating temporary script file"
 msgctxt "@info"
 msgid "Error creating temporary script file"
 msgstr "មាន​កំហុស​ពេល​បង្កើត​ឯកសារ​ស្គ្រីប​បណ្ដោះអាសន្ន"
 
-#: kalarmapp.cpp:1856
+#: kalarmapp.cpp:1855
 #, fuzzy
 #| msgid "Pre-alarm action:"
 msgctxt "@info"
 msgid "Pre-alarm action:"
 msgstr "អំពើ​មុន​ការជូនដំណឹង ៖"
 
-#: kalarmapp.cpp:1861
+#: kalarmapp.cpp:1860
 #, fuzzy
 #| msgid "Post-alarm action:"
 msgctxt "@info"
@@ -2291,8 +2297,8 @@ msgstr "សំបុត្រ​​បាន​ផ្ញើ"
 #| "KMail identity '%1' not found."
 msgctxt "@info"
 msgid ""
-"Invalid 'From' email address.\n"
-"<application>KMail</application> identity <resource>%1</resource> not found."
+"Invalid 'From' email address.<br /><application>KMail</application> identity "
+"<resource>%1</resource> not found."
 msgstr ""
 "អាសយដ្ឋាន​អ៊ីមែល​ក្នុង​ប្រអប់​ 'ពី' មិន​ត្រឹមត្រូវ ។\n"
 "រក​មិន​ឃើញអត្តសញ្ញាណ KMail '%1' ។"
@@ -2304,16 +2310,16 @@ msgstr ""
 #| "Please set it in KMail or in the KAlarm Preferences dialog."
 msgctxt "@info"
 msgid ""
-"No 'From' email address is configured (no default <application>KMail</"
-"application> identity found)\n"
-"Please set it in <application>KMail</application> or in the "
-"<application>KAlarm</application> Preferences dialog."
+"<para>No 'From' email address is configured (no default <application>KMail</"
+"application> identity found)</para><para>Please set it in "
+"<application>KMail</application> or in the <application>KAlarm</application> "
+"Preferences dialog.</para>"
 msgstr ""
 "គ្មាន​អាសយដ្ឋាន​អ៊ីមែល​ក្នុង​ប្រអប់ 'ពី' ត្រូវ​បាន​កំណត់​រចនាសម្ព័ន្ធ (រក​មិន​ឃើញអត្តសញ្ញាណ KMail "
 "លំនាំដើម)\n"
 "សូម​កំណត់​វា​ក្នុង KMail ឬ ​ក្នុង​ប្រអប់​ចំណង់ចំណូល​ចិត្ត KAlarm ។"
 
-#: kamail.cpp:129
+#: kamail.cpp:130
 #, fuzzy
 #| msgid ""
 #| "No 'From' email address is configured.\n"
@@ -2321,85 +2327,81 @@ msgstr ""
 #| "dialog."
 msgctxt "@info"
 msgid ""
-"No 'From' email address is configured.\n"
-"Please set it in the KDE Control Center or in the <application>KAlarm</"
-"application> Preferences dialog."
+"<para>No 'From' email address is configured.</para><para>Please set it in "
+"the KDE Control Center or in the <application>KAlarm</application> "
+"Preferences dialog.</para>"
 msgstr ""
 "គ្មាន​អាសយដ្ឋាន​អ៊ីមែល​ក្នុង​​ប្រអប់ 'ពី' ត្រូវ​បាន​កំណត់​រចនាសម្ព័ន្ធ ។\n"
 "សូម​កំណត់វា​​ក្នុង​មជ្ឈមណ្ឌល​បញ្ជា KDE ឬ ក្នុង​ប្រអប់​ចំណង់​ចំណូលចិត KAlarm ។"
 
-#: kamail.cpp:133
+#: kamail.cpp:135
 #, fuzzy
 #| msgid ""
 #| "No 'From' email address is configured.\n"
 #| "Please set it in the KAlarm Preferences dialog."
 msgctxt "@info"
 msgid ""
-"No 'From' email address is configured.\n"
-"Please set it in the <application>KAlarm</application> Preferences dialog."
+"<para>No 'From' email address is configured.</para><para>Please set it in "
+"the <application>KAlarm</application> Preferences dialog.</para>"
 msgstr ""
 "គ្មាន​អាសយដ្ឋាន​អ៊ីមែល​ក្នុង​ប្រអប់ 'ពី' ត្រូវ​បាន​កំណត់​រចនាសម្ព័ន្ធ ។\n"
 "សូម​កំណត់​វា​ក្នុង​ប្រអប់​ចំណង់ចំណូល​ចិត្ត KAlarm ។"
 
-#: kamail.cpp:160
+#: kamail.cpp:163
 #, qt-format
 msgctxt "@info"
 msgid "<command>%1</command> not found"
 msgstr ""
 
-#: kamail.cpp:259 kamail.cpp:304
+#: kamail.cpp:262 kamail.cpp:307
 msgctxt "@info"
 msgid "Error calling <application>KMail</application>"
 msgstr ""
 
-#: kamail.cpp:375
+#: kamail.cpp:378
 #, fuzzy, qt-format
 #| msgid ""
 #| "Error attaching file:\n"
 #| "%1"
 msgctxt "@info"
-msgid ""
-"Error attaching file:\n"
-"<filename>%1</filename>"
+msgid "Error attaching file: <filename>%1</filename>"
 msgstr ""
 "កំហុស​ពេល​ភ្ជាប់​ឯកសារ ៖\n"
 "%1"
 
-#: kamail.cpp:380
+#: kamail.cpp:383
 #, fuzzy, qt-format
 #| msgid ""
 #| "Attachment not found:\n"
 #| "%1"
 msgctxt "@info"
-msgid ""
-"Attachment not found:\n"
-"<filename>%1</filename>"
+msgid "Attachment not found: <filename>%1</filename>"
 msgstr ""
 "រក​មិន​ឃើញ​ឯកសារ​ភ្ជាប់ ៖\n"
 "%1"
 
-#: kamail.cpp:460
+#: kamail.cpp:463
 #, fuzzy
 #| msgid "An email has been queued to be sent by KMail"
 msgctxt "@info"
 msgid "An email has been queued to be sent by <application>KMail</application>"
 msgstr "អ៊ីមែល​មួយ​ស្ថិត​ក្នុង​ជួរ​ដែល​ត្រូវ​ផ្ញើ​ចេញដោយ KMail"
 
-#: kamail.cpp:461
+#: kamail.cpp:464
 #, fuzzy
 #| msgid "An email has been queued to be sent"
 msgctxt "@info"
 msgid "An email has been queued to be sent"
 msgstr "អ៊ីមែល​មួយ​ស្ថិត​ក្នុង​ជួរ​ដែល​ត្រូវ​ផ្ញើ​ចេញ"
 
-#: kamail.cpp:743
+#: kamail.cpp:746
 #, fuzzy
 #| msgid "Failed to send email"
 msgctxt "@info"
 msgid "Failed to send email"
 msgstr "បរាជ័យ​ក្នុង​ការ​ផ្ញើ​អ៊ីមែល"
 
-#: kamail.cpp:744
+#: kamail.cpp:747
 #, fuzzy, qt-format
 #| msgid "Error copying sent email to KMail %1 folder"
 msgctxt "@info"
@@ -2465,7 +2467,7 @@ msgstr "បោះបង់ បើ​យឺត​ត្រឹម"
 #: latecancel.cpp:75
 #, fuzzy
 #| msgid "Enter how late will cause the alarm to be canceled"
-msgctxt "@label:whatsthis"
+msgctxt "@info:whatsthis"
 msgid "Enter how late will cause the alarm to be canceled"
 msgstr "បញ្ចូល​លក្ខណៈ​យឺត​ដែល​នឹង​ធ្វើ​ឲ្យ​ការជូនដំណឹង​ត្រូវ​បាន​បោះបង់​"
 
@@ -2705,8 +2707,8 @@ msgstr "លាក់​ការជូនដំណឹង​ដែល​ផុត
 #| "(perhaps %1 missing or corrupted)"
 msgctxt "@info"
 msgid ""
-"Failure to create menus\n"
-"(perhaps <filename>%1</filename> missing or corrupted)"
+"Failure to create menus (perhaps <filename>%1</filename> missing or "
+"corrupted)"
 msgstr ""
 "បរាជ័យ​ក្នុង​ការ​បង្កើត​ម៉ឺនុយ\n"
 "(ប្រហែលជាបាត់ ឬ ខូច %1)"
@@ -3061,7 +3063,7 @@ msgstr "ឈប់​ការចាក់​សម្លេង"
 #, fuzzy
 #| msgid "Unable to locate this email in KMail"
 msgctxt "@info:tooltip Locate this email in KMail"
-msgid "Locate in <application>KMail<application>"
+msgid "Locate in <application>KMail</application>"
 msgstr "មិន​អាច​ទុកអ៊ីមែល​នេះ​ក្នុង KMail"
 
 #: messagewin.cpp:615
@@ -6178,7 +6180,7 @@ msgstr "ការ​កំណត់​ទិដ្ឋភាព"
 
 #: resourceconfigdialog.cpp:62
 #, fuzzy
-msgctxt "@label:textbox"
+msgctxt "@label:textbox Resource name"
 msgid "Name:"
 msgstr "ឈ្មោះ"
 
@@ -6306,9 +6308,9 @@ msgstr "កែសម្រួល​ពុម្ព​ជូនដំណឹង​
 #: resourceselector.cpp:107
 msgctxt "@info:whatsthis"
 msgid ""
-"Remove the highlighted resource from the list.\n"
-"The resource itself is left intact, and may subsequently be reinstated in "
-"the list if desired."
+"<para>Remove the highlighted resource from the list.</para><para>The "
+"resource itself is left intact, and may subsequently be reinstated in the "
+"list if desired.</para>"
 msgstr ""
 
 #: resourceselector.cpp:131
@@ -6508,7 +6510,7 @@ msgstr "បើក​បាន​ធីក ឯកសារ​សម្លេង�
 #: sounddlg.cpp:104
 #, fuzzy
 #| msgid "Volume"
-msgctxt "@title:group"
+msgctxt "@title:group Sound volume"
 msgid "Volume"
 msgstr "កម្រិត​សម្លេង"
 
@@ -7523,10 +7525,6 @@ msgstr ""
 #~ msgctxt "Hours and Minutes"
 #~ msgid "%1H %2M"
 #~ msgstr "%1ម៉ោង. %2នាទី"
-
-#~ msgctxt "Copy-to in email headers"
-#~ msgid "Cc:"
-#~ msgstr "ចម្លង ៖"
 
 #~ msgid "read-only"
 #~ msgstr "បាន​តែ​អាន"
