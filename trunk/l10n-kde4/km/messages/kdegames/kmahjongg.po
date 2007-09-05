@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmahjongg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-08-23 05:39+0200\n"
+"POT-Creation-Date: 2007-09-05 05:31+0200\n"
 "PO-Revision-Date: 2007-02-07 08:36+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: khmer <support@khmeros.info>\n"
@@ -97,7 +97,7 @@ msgstr "បើក​ប្លង់​ក្តារ"
 msgid "Save Board Layout"
 msgstr "រក្សាទុក​ប្លង់​ក្ដារ"
 
-#: Editor.cpp:349 Preview.cpp:427
+#: Editor.cpp:349 Preview.cpp:427 kmahjongg.cpp:604
 msgid "Only saving to local files currently supported."
 msgstr "គាំទ្រ​តែ​ការ​រក្សាទុក​ឯកសារ​មូលដ្ឋាន​ប៉ុណ្ណោះ ។"
 
@@ -238,82 +238,110 @@ msgstr "កំហុស​ក្នុង​ការ​បង្កើត​ល
 msgid "Game over: You have no moves left."
 msgstr "ល្បែង​ចប់ ។ អ្នក​មិន​អាច​ផ្លាស់ទី​បាន​ទៀត​ឡើយ ។"
 
-#: kmahjongg.cpp:170
+#: kmahjongg.cpp:171
 msgid "New Numbered Game..."
 msgstr "ល្បែង​ដែល​បាន​បង់​លេខ​ថ្មី..."
 
-#: kmahjongg.cpp:187
+#: kmahjongg.cpp:175
 msgid "Open La&yout..."
 msgstr "បើក​ប្លង់..."
 
-#: kmahjongg.cpp:199
+#: kmahjongg.cpp:182
 msgid "Shu&ffle"
 msgstr "សាប់"
 
-#: kmahjongg.cpp:203
+#: kmahjongg.cpp:186
 msgid "Rotate View Counter Clockwise"
 msgstr ""
 
-#: kmahjongg.cpp:207
+#: kmahjongg.cpp:190
 msgid "Rotate View Clockwise"
 msgstr ""
 
-#: kmahjongg.cpp:213
+#: kmahjongg.cpp:196
 msgid "Show &Matching Tiles"
 msgstr "បង្ហាញ​ក្រឡា​ដែល​ដូច"
 
-#: kmahjongg.cpp:216
+#: kmahjongg.cpp:199
 msgid "Hide &Matching Tiles"
 msgstr "លាក់​ក្រឡា​ដែល​ដូច"
 
-#: kmahjongg.cpp:239
+#: kmahjongg.cpp:212
 msgid "&Board Editor"
 msgstr "កម្មវិធី​និពន្ធ​ក្តារ"
 
-#: kmahjongg.cpp:251
+#: kmahjongg.cpp:224
 msgid "Removed: 0000/0000"
 msgstr ""
 
-#: kmahjongg.cpp:258
+#: kmahjongg.cpp:231
 msgid "Game: 000000000000000000000"
 msgstr ""
 
-#: kmahjongg.cpp:272
+#: kmahjongg.cpp:245
 msgid "Time: 0:00:00"
 msgstr ""
 
-#: kmahjongg.cpp:278
+#: kmahjongg.cpp:251
 #, fuzzy
 msgid "Time: "
 msgstr "រយៈ​ពេល"
 
-#: kmahjongg.cpp:296
+#: kmahjongg.cpp:269
 #, fuzzy
 msgid "New Game"
 msgstr "រក្សាទុក​ល្បែង"
 
-#: kmahjongg.cpp:296
+#: kmahjongg.cpp:269
 msgid "Enter game number:"
 msgstr "បញ្ចូល​លេខ​ល្បែង​ ៖"
 
 #  i18n: file settings.ui line 47
-#: kmahjongg.cpp:326
+#: kmahjongg.cpp:299
 msgid "General"
 msgstr "ទូទៅ"
 
-#: kmahjongg.cpp:463
+#: kmahjongg.cpp:410
 msgid "You have won!"
 msgstr "អ្នក​ឈ្នះ​ហើយ !"
 
-#: kmahjongg.cpp:504
+#: kmahjongg.cpp:451
 #, qt-format
 msgid "Game number: %1"
 msgstr "លេខ​ល្បែង ៖ %1"
 
-#: kmahjongg.cpp:514
+#: kmahjongg.cpp:461
 #, qt-format
 msgid "Removed: %1/%2  Combinations left: %3"
 msgstr "បាន​យក​ចេញ ៖ %1/%2  នៅសល់​បន្សំ ៖ %3"
+
+#: kmahjongg.cpp:531
+msgid "Load Game"
+msgstr "ផ្ទុក​ល្បែង"
+
+#: kmahjongg.cpp:542
+msgid "Could not read from file. Aborting."
+msgstr "មិន​អាច​អាន​ពី​ឯកសារ ។ កំពុង​បោះ​បង់ ។"
+
+#: kmahjongg.cpp:552
+msgid "File is not a KMahjongg game."
+msgstr ""
+
+#: kmahjongg.cpp:566
+msgid "File format not recognized."
+msgstr "មិន​ទទួល​ស្គាល់​ទ្រង់ទ្រាយ​ឯកសារ ។"
+
+#: kmahjongg.cpp:597
+#, fuzzy
+#| msgid "Save Theme"
+msgid "Save Game"
+msgstr "រក្សាទុក​ស្បែក"
+
+#: kmahjongg.cpp:611
+#, fuzzy
+#| msgid "Could not write to file. Aborting."
+msgid "Could not write saved game."
+msgstr "មិន​អាច​សរ​សេរ​ទៅ​កាន់​ឯកសារ ។ កំពុង​បោះបង់ ។"
 
 #: main.cpp:29
 #, fuzzy
@@ -584,15 +612,6 @@ msgstr ""
 
 #~ msgid "Sa&ve Theme..."
 #~ msgstr "រក្សាទុក​ស្បែក..."
-
-#~ msgid "Load Game"
-#~ msgstr "ផ្ទុក​ល្បែង"
-
-#~ msgid "Could not read from file. Aborting."
-#~ msgstr "មិន​អាច​អាន​ពី​ឯកសារ ។ កំពុង​បោះ​បង់ ។"
-
-#~ msgid "File format not recognized."
-#~ msgstr "មិន​ទទួល​ស្គាល់​ទ្រង់ទ្រាយ​ឯកសារ ។"
 
 #  i18n: file settings.ui line 77
 #~ msgid "Play winning animation"
