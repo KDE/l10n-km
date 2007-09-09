@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmlocale\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-09-01 05:34+0200\n"
+"POT-Creation-Date: 2007-09-09 05:43+0200\n"
 "PO-Revision-Date: 2007-08-28 11:22+0700\n"
 "Last-Translator: Sokun <sokun_poch@khmeros.info>\n"
 "Language-Team: Khmer  <en@li.org>\n"
@@ -17,31 +17,72 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: kcmlocale.cpp:201
-msgid "Other"
-msgstr "ផ្សេងៗ"
+#: countryselectordialog.cpp:216
+msgid "Country Selector"
+msgstr ""
 
-#: kcmlocale.cpp:209 kcmlocale.cpp:258 kcmlocale.cpp:280
+#: countryselectordialog.cpp:262 countryselectordialog.cpp:277
 msgid "without name"
 msgstr "ដោយមិន​មានឈ្មោះ​"
 
-#: kcmlocale.cpp:375
+#: countryselectordialog.cpp:293
+msgctxt "@item:Country"
+msgid "Default"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file language.ui line 81
+#: kcmlocale.cpp:49 rc.cpp:12
+msgid "Country or Region:"
+msgstr "ប្រទេស ឬតំបន់ ៖"
+
+#. i18n: tag string
+#. i18n: file language.ui line 21
+#: kcmlocale.cpp:50 rc.cpp:3
+msgid "Languages:"
+msgstr "ភាសា ៖"
+
+#. i18n: tag string
+#. i18n: file language.ui line 31
+#: kcmlocale.cpp:51 rc.cpp:6
+msgid "Remove"
+msgstr "យកចេញ​"
+
+#: kcmlocale.cpp:227
+msgctxt "@item:intext Country"
+msgid "Default"
+msgstr ""
+
+#: kcmlocale.cpp:228
+#, fuzzy, qt-format
+#| msgid "None selected (<a href=\"/change\">change...</a>)"
+msgctxt "@info %1 is country name"
+msgid "<html>%1 (<a href=\"changeCountry\">change...</a>)</html>"
+msgstr "គ្មាន​អ្វី​ដេល​ត្រូវ​ជ្រើស (<a href=\"/change\">ជ្រើស​...</a>)"
+
+#: kcmlocale.cpp:233
+#, fuzzy
+#| msgid "Languages:"
+msgid "Add Language"
+msgstr "ភាសា ៖"
+
+#: kcmlocale.cpp:236
 msgid ""
 "This is where you live. KDE will use the defaults for this country or region."
 msgstr "នេះ​ជា​កន្លែង​ដែល​អ្នក​រស់​នៅ ។ KDE នឹង​ប្រើ​លំនាំដើម សម្រាប់​ប្រទេស ឬ​តំបន់​នេះ ។"
 
-#: kcmlocale.cpp:378
+#: kcmlocale.cpp:239
 msgid ""
 "This will add a language to the list. If the language is already in the "
 "list, the old one will be moved instead."
 msgstr ""
 "ការ​​នេះ​នឹង​បន្ថែម​ភាសា​មួយ​ទៅ​បញ្ជី ។ ​បើ​ភាសា​មាន​ក្នុង​បញ្ជី​រួច​ហើយ ភាសា​ចាស់​នឹង​ត្រូវ​បានផ្លាស់ទី​ជំនួសវិញ​ ។"
 
-#: kcmlocale.cpp:382
+#: kcmlocale.cpp:243
 msgid "This will remove the highlighted language from the list."
 msgstr "ការ​នេះ​នឹង​យក​ភាសា​ដែល​បានជ្រើសចេញ​ពីបញ្ជី ។"
 
-#: kcmlocale.cpp:385
+#: kcmlocale.cpp:246
 msgid ""
 "KDE programs will be displayed in the first available language in this "
 "list.\n"
@@ -50,7 +91,7 @@ msgstr ""
 "កម្មវិធី KDE នឹង​ត្រូវ​បង្ហាញ​ក្នុង​ភាសា​ដែល​អាច​ប្រើ​បាន​ជា​ដំបូង​ក្នុង​បញ្ជី​នេះ ។\n"
 "បើ​គ្មាន​ភាសា​ដែល​អាច​ប្រើ​បានទេ​ ភាសា​អង់គ្លេសបែប​អាមេរិក នឹង​ត្រូវ​បាន​ប្រើ ។"
 
-#: kcmlocale.cpp:392
+#: kcmlocale.cpp:253
 msgid ""
 "Here you can choose your country or region. The settings for languages, "
 "numbers etc. will automatically switch to the corresponding values."
@@ -58,7 +99,7 @@ msgstr ""
 "នៅទីនេះ អ្នក​អាច​ជ្រើស​ប្រទេស ឬ​តំបន់​របស់​អ្នក ។ ការ​កំណត់​ភាសា លេខ ។ល។ នឹង​ប្ដូរ​ដោយ​ស្វ័យ​ប្រវត្តិ​ទៅ​តម្លៃ​"
 "ដែល​ត្រូវ​គ្នា ។"
 
-#: kcmlocale.cpp:399
+#: kcmlocale.cpp:260
 msgid ""
 "<p>Here you can choose the languages that will be used by KDE. If the first "
 "language in the list is not available, the second will be used, etc. If only "
@@ -73,113 +114,143 @@ msgstr ""
 "មួយ​ចំនួន​ប្រហែល​ជាមិន​អាច​បក​ប្រែ​ទៅ​ជាភាសា​របស់​អ្នក​ ក្នុង​ករណី​នេះ​ឡើយ ពួក​វា​នឹង​ប្ដូរ​មក​ប្រើ​ភាសា អង់គ្លេស​"
 "បែប​អាមេរិច​ដោយ​ស្វ័យប្រវត្តិ  ។</p>"
 
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 152
-#: klocalesample.cpp:53 rc.cpp:45
+#: klocalesample.cpp:53
 msgid "Numbers:"
 msgstr "លេខ ៖"
 
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 112
-#: klocalesample.cpp:60 rc.cpp:36
+#: klocalesample.cpp:61
 msgid "Money:"
 msgstr "រូបិយប័ណ្ណ ៖"
 
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 102
-#: klocalesample.cpp:67 rc.cpp:33
+#: klocalesample.cpp:69
 msgid "Date:"
 msgstr "កាល​បរិច្ឆេទ ៖"
 
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 135
-#: klocalesample.cpp:74 rc.cpp:39
+#: klocalesample.cpp:77
 msgid "Short date:"
 msgstr "កាល​បរិច្ឆេទ​ខ្លី ៖"
 
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 92
-#: klocalesample.cpp:81 rc.cpp:30
+#: klocalesample.cpp:85
 msgid "Time:"
 msgstr "ពេលវេលា ៖"
 
-#: klocalesample.cpp:123
+#: klocalesample.cpp:126
 msgid "This is how numbers will be displayed."
 msgstr "នេះ​ជារបៀប​ដែល​លេខ នឹង​ត្រូវ​បាន​បង្ហាញ ។"
 
-#: klocalesample.cpp:127
+#: klocalesample.cpp:130
 msgid "This is how monetary values will be displayed."
 msgstr "នេះ​ជារបៀបដែល​តម្លៃ​រូបិយប័ណ្ណ នឹង​ត្រូវ​បាន​បង្ហាញ ។"
 
-#: klocalesample.cpp:131
+#: klocalesample.cpp:134
 msgid "This is how date values will be displayed."
 msgstr "នេះ​ជារបៀបដែល​តម្លៃ​កាល​បរិច្ឆេទ នឹង​ត្រូវ​បាន​បង្ហាញ ។"
 
-#: klocalesample.cpp:135
+#: klocalesample.cpp:138
 msgid "This is how date values will be displayed using a short notation."
 msgstr "នេះ​ជារបៀបដែល​តម្លៃ​កាលបរិច្ឆេទ នឹង​ត្រូវ​បាន​បង្ហាញ ដោយ​ប្រើ​លេខខ្លី ។"
 
-#: klocalesample.cpp:140
+#: klocalesample.cpp:143
 msgid "This is how the time will be displayed."
 msgstr "នេះ​ជារបៀប​ដែល​ពេល​វេលា​នឹង​ត្រូវបង្ហាញ ។"
 
-#: localemon.cpp:56
+#. i18n: tag string
+#. i18n: file localemon.ui line 21
+#: localemon.cpp:51 rc.cpp:18
 msgid "Currency symbol:"
 msgstr "និមិត្ត​សញ្ញា​រូបិយប័ណ្ណ ៖"
 
-#: localemon.cpp:64
+#. i18n: tag string
+#. i18n: file localemon.ui line 31
+#: localemon.cpp:52 rc.cpp:21
 msgid "Decimal symbol:"
 msgstr "និមិត្ត​សញ្ញា​ទសភាគ ៖"
 
-#: localemon.cpp:72
+#. i18n: tag string
+#. i18n: file localemon.ui line 41
+#: localemon.cpp:53 rc.cpp:24
 msgid "Thousands separator:"
 msgstr "អ្នក​បំបែក​ខ្ទង់​ពាន់ ៖"
 
-#: localemon.cpp:80
+#. i18n: tag string
+#. i18n: file localemon.ui line 51
+#: localemon.cpp:54 rc.cpp:27
 msgid "Fract digits:"
 msgstr "តួលេខ​ប្រភាគ ៖"
 
-#: localemon.cpp:93
+#. i18n: tag string
+#. i18n: file localemon.ui line 63
+#: localemon.cpp:55 rc.cpp:30
 msgid "Positive"
 msgstr "វិជ្ជមាន"
 
-#: localemon.cpp:97 localemon.cpp:118
+#. i18n: tag string
+#. i18n: file localemon.ui line 69
+#. i18n: tag string
+#. i18n: file localemon.ui line 125
+#: localemon.cpp:56 localemon.cpp:59 rc.cpp:33 rc.cpp:57
 msgid "Prefix currency symbol"
 msgstr "ដាក់​បុព្វបទ​និមិត្ត​សញ្ញា​រូបិយប័ណ្ណ"
 
-#: localemon.cpp:107 localemon.cpp:128
+#. i18n: tag string
+#. i18n: file localemon.ui line 78
+#. i18n: tag string
+#. i18n: file localemon.ui line 134
+#: localemon.cpp:57 localemon.cpp:60 rc.cpp:36 rc.cpp:60
 msgid "Sign position:"
 msgstr "ទីតាំង​សញ្ញា ៖"
 
-#: localemon.cpp:114
+#. i18n: tag string
+#. i18n: file localemon.ui line 119
+#: localemon.cpp:58 rc.cpp:54
 msgid "Negative"
 msgstr "អវិជ្ជមាន"
 
-#: localemon.cpp:291
+#. i18n: tag string
+#. i18n: file localemon.ui line 86
+#. i18n: tag string
+#. i18n: file localemon.ui line 142
+#: localemon.cpp:232 rc.cpp:39 rc.cpp:63
 msgid "Parentheses Around"
 msgstr "វង់​ក្រចក​ជុំវិញ"
 
-#: localemon.cpp:292
+#. i18n: tag string
+#. i18n: file localemon.ui line 91
+#. i18n: tag string
+#. i18n: file localemon.ui line 147
+#: localemon.cpp:233 rc.cpp:42 rc.cpp:66
 msgid "Before Quantity Money"
 msgstr "ដាក់​ពីមុខ​បរិមាណ​រូបិយប័ណ្ណ"
 
-#: localemon.cpp:293
+#. i18n: tag string
+#. i18n: file localemon.ui line 96
+#. i18n: tag string
+#. i18n: file localemon.ui line 152
+#: localemon.cpp:234 rc.cpp:45 rc.cpp:69
 msgid "After Quantity Money"
 msgstr "ដាក់​បន្ទាប់ពី​​បរិមាណ​រូបិយប័ណ្ណ"
 
-#: localemon.cpp:294
+#. i18n: tag string
+#. i18n: file localemon.ui line 101
+#. i18n: tag string
+#. i18n: file localemon.ui line 157
+#: localemon.cpp:235 rc.cpp:48 rc.cpp:72
 msgid "Before Money"
 msgstr "ដាក់​ពីមុខរូបិយប័ណ្ណ"
 
-#: localemon.cpp:295
+#. i18n: tag string
+#. i18n: file localemon.ui line 106
+#. i18n: tag string
+#. i18n: file localemon.ui line 162
+#: localemon.cpp:236 rc.cpp:51 rc.cpp:75
 msgid "After Money"
 msgstr "ដាក់​បន្ទាប់​ពី​រូបិយប័ណ្ណ"
 
-#: localemon.cpp:300
+#: localemon.cpp:241
 msgid "Here you can enter your usual currency symbol, e.g. $ or €."
 msgstr "ទីនេះ​អ្នកអាច​បញ្ចូល​និម្មិតសញ្ញា​រូបិយបណ្ណ ឧ. $ ឬ € ។"
 
-#: localemon.cpp:304
+#: localemon.cpp:245
 msgid ""
 "<p>Here you can define the decimal separator used to display monetary values."
 "</p><p>Note that the decimal separator used to display other numbers has to "
@@ -189,7 +260,7 @@ msgstr ""
 "សញ្ញា​ទសភាគត្រូវ​បាន​ប្រើ ដើម្បី​បង្ហាញ​លេខ​ផ្សេងៗ ដែល​ត្រូវ​បាន​កំណត់​ដោយ​ឡែក​ពី​គ្នា (មើល​ផ្ទាំង "
 "'លេខ') ។ </p>"
 
-#: localemon.cpp:312
+#: localemon.cpp:253
 msgid ""
 "<p>Here you can define the thousands separator used to display monetary "
 "values.</p><p>Note that the thousands separator used to display other "
@@ -199,7 +270,7 @@ msgstr ""
 "សញ្ញា​ក្បៀស​​​ខ្ទង់​ពាន់​ប្រើ​សម្រាប់​បង្ហាញ​លេខ​ផ្សេងៗ ដែល​បាន​កំណត់​ដាច់ដោយ​ឡែក​ពី​គ្នា (មើល​ផ្ទាំង 'លេខ') ។ "
 "</p>"
 
-#: localemon.cpp:320
+#: localemon.cpp:261
 msgid ""
 "This determines the number of fract digits for monetary values, i.e. the "
 "number of digits you find <em>behind</em> the decimal separator. Correct "
@@ -208,7 +279,7 @@ msgstr ""
 "ការ​នេះ​កំណត់​ចំនួន​តួលេខ​ប្រភាគ​សម្រាប់​តម្លៃ​រូបិយប័ណ្ណ ឧ. ចំនួន​តួលេខ​ដែល​អ្ន ក​រក<em>ខាង​ក្រោយ</em> សញ្ញា​"
 "ក្បៀស ។ តម្លៃ​ត្រឹម​ត្រូវ​គឺ ២ សម្រាប់មនុស្ស​ស្ទើរ​តែគ្រាប់​គ្នា​ទាំង​អស់ ។"
 
-#: localemon.cpp:327
+#: localemon.cpp:268
 msgid ""
 "If this option is checked, the currency sign will be prefixed (i.e. to the "
 "left of the value) for all positive monetary values. If not, it will be "
@@ -217,7 +288,7 @@ msgstr ""
 "បើ​ជម្រើស​នេះ​ត្រូវ​បានធីក សញ្ញា​រូបិយប័ណ្ណ​នឹង​ត្រូវ​បាន​ដាក់ជា​​បុព្វបទ (ឧ. ទៅ​ខាង​ឆ្វេង​តម្លៃ) សម្រាប់​តម្លៃ​"
 "រូបិយប័ណ្ណ​វិជ្ជមានទាំង​អស់ ។ ​បើជម្រើស​នេះ​មិន​ត្រូវ​បានធីក វា​នឹង​ត្រូវ​បាន​ដាក់​បច្ច័យ (ឧ. ទៅ​ខាង​ស្ដាំ) ។"
 
-#: localemon.cpp:333
+#: localemon.cpp:274
 msgid ""
 "If this option is checked, the currency sign will be prefixed (i.e. to the "
 "left of the value) for all negative monetary values. If not, it will be "
@@ -226,7 +297,7 @@ msgstr ""
 "​បើ​ជម្រើស​នេះ​ត្រូវ​បាន​ធីក សញ្ញា​រូបិយប័ណ្ណ​នឹង​ត្រូវ​បាន​ដាក់​បុព្វបទ (ឧ. ទៅ​ខាង​ឆ្វេង​នៃ​តម្លៃ) សម្រាប់​តម្លៃ​"
 "រូបិយប័ណ្ណ​អវិជ្ជមាន​ទាំង​អស់ ។ ​បើ​ជម្រើស​នេះ​មិន​ត្រូវ​បាន​ធីក វា​នឹង​ត្រូវ​បានដាក់បច្ច័យ (ឧ. ទៅ​ខាង​ស្ដាំ) ។"
 
-#: localemon.cpp:339
+#: localemon.cpp:280
 msgid ""
 "Here you can select how a positive sign will be positioned. This only "
 "affects monetary values."
@@ -234,7 +305,7 @@ msgstr ""
 "នៅ​ទីនេះ​ អ្នកអាច​ជ្រើសរបៀប​ដែល​សញ្ញា​វិជ្ជមាន​ត្រូវ​ឋិត​នៅ ។ ការ​នេះ​មាន​ប្រសិទ្ធិ​ភាព​តែ​ចំពោះ ​តម្លៃ​"
 "រូបិយប័ណ្ណតែ​ប៉ុណ្ណោះ ។"
 
-#: localemon.cpp:344
+#: localemon.cpp:285
 msgid ""
 "Here you can select how a negative sign will be positioned. This only "
 "affects monetary values."
@@ -258,7 +329,7 @@ msgstr "សញ្ញា​វិជ្ជមាន ៖"
 msgid "&Negative sign:"
 msgstr "សញ្ញា​អវិជ្ជមាន ៖"
 
-#: localenum.cpp:175
+#: localenum.cpp:176
 msgid ""
 "<p>Here you can define the decimal separator used to display numbers (i.e. a "
 "dot or a comma in most countries).</p><p>Note that the decimal separator "
@@ -269,7 +340,7 @@ msgstr ""
 "(,) មាន​ប្រទេ​ស​ជា​ច្រើន​ប្រើវា) ។ </p><p>ចំណាំថា សញ្ញា​បំបែក​ចំនួន​គត់​ធ្លាប់​បង្ហាញ​តម្លៃ​រូបិយប័ណ្ណ​ដែល​"
 "ត្រូវ​កំណត់​ដោយ​ឡែក​ពី​គ្នា (មើល​ផ្ទាំង 'រូបិយប័ណ្ណ') ។</p>"
 
-#: localenum.cpp:184
+#: localenum.cpp:185
 msgid ""
 "<p>Here you can define the thousands separator used to display numbers.</"
 "p><p>Note that the thousands separator used to display monetary values has "
@@ -279,7 +350,7 @@ msgstr ""
 "ពាន់ដែល​ត្រូវ​ប្រើ ​ដើម្បី​បង្ហាញតម្លៃ​រូបិយប័ណ្ណ​ដែល​ត្រូវ​បាន​កំណត់​ដោយ​ឡែក​ពី​គ្នា (មើល​ផ្ទាំង 'រូបិយប័ណ្ណ') ។ "
 "</p>"
 
-#: localenum.cpp:192
+#: localenum.cpp:193
 msgid ""
 "Here you can specify text used to prefix positive numbers. Most people leave "
 "this blank."
@@ -287,7 +358,7 @@ msgstr ""
 "នៅ​ទីនេះ អ្នក​អាច​បញ្ជាក់​អត្ថបទ​ដែលត្រូវប្រើ ​ដើម្បី​ដាក់​បុព្វបទលេខវិជ្ជមាន ។ មនុស្ស​ភាគ​ច្រើន​ទុក​កន្លែង​"
 "នេះ​ឲ្យ​នៅ​ទទេ ។"
 
-#: localenum.cpp:198
+#: localenum.cpp:199
 msgid ""
 "Here you can specify text used to prefix negative numbers. This should not "
 "be empty, so you can distinguish positive and negative numbers. It is "
@@ -322,101 +393,101 @@ msgstr "A4"
 msgid "US Letter"
 msgstr "សំបុត្រ US "
 
-#: localetime.cpp:99
+#: localetime.cpp:94
 msgid "HH"
 msgstr "HH"
 
-#: localetime.cpp:100
+#: localetime.cpp:95
 msgid "hH"
 msgstr "hH"
 
-#: localetime.cpp:101
+#: localetime.cpp:96
 msgid "PH"
 msgstr "PH"
 
-#: localetime.cpp:102
+#: localetime.cpp:97
 msgid "pH"
 msgstr "pH"
 
-#: localetime.cpp:103
+#: localetime.cpp:98
 msgctxt "Minute"
 msgid "MM"
 msgstr "MM"
 
-#: localetime.cpp:104
+#: localetime.cpp:99
 msgid "SS"
 msgstr "SS"
 
-#: localetime.cpp:105
+#: localetime.cpp:100
 msgid "AMPM"
 msgstr "AMPM"
 
-#: localetime.cpp:115
+#: localetime.cpp:110
 msgid "YYYY"
 msgstr "YYYY"
 
-#: localetime.cpp:116
+#: localetime.cpp:111
 msgid "YY"
 msgstr "YY"
 
-#: localetime.cpp:117
+#: localetime.cpp:112
 msgid "mM"
 msgstr "mM"
 
-#: localetime.cpp:118
+#: localetime.cpp:113
 msgctxt "Month"
 msgid "MM"
 msgstr "MM"
 
-#: localetime.cpp:119
+#: localetime.cpp:114
 msgid "SHORTMONTH"
 msgstr "SHORTMONTH"
 
-#: localetime.cpp:120
+#: localetime.cpp:115
 msgid "MONTH"
 msgstr "MONTH"
 
-#: localetime.cpp:121
+#: localetime.cpp:116
 msgid "dD"
 msgstr "dD"
 
-#: localetime.cpp:122
+#: localetime.cpp:117
 msgid "DD"
 msgstr "DD"
 
-#: localetime.cpp:123
+#: localetime.cpp:118
 msgid "SHORTWEEKDAY"
 msgstr "SHORTWEEKDAY"
 
-#: localetime.cpp:124
+#: localetime.cpp:119
 msgid "WEEKDAY"
 msgstr "WEEKDAY"
 
-#: localetime.cpp:209
+#: localetime.cpp:204
 msgid "Calendar system:"
 msgstr "ប្រព័ន្ធ​ប្រតិទិន ៖"
 
-#: localetime.cpp:221
+#: localetime.cpp:216
 msgid "Time format:"
 msgstr "ទ្រង់​ទ្រាយ​ពេល​វេលា ៖"
 
-#: localetime.cpp:232
+#: localetime.cpp:227
 msgid "Date format:"
 msgstr "ទ្រង់ទ្រាយ​កាលបរិច្ឆេទ ៖"
 
-#: localetime.cpp:241
+#: localetime.cpp:236
 msgid "Short date format:"
 msgstr "ទ្រង់ទ្រាយ​កាលបរិច្ឆេទ​ខ្លី ៖"
 
-#: localetime.cpp:250
+#: localetime.cpp:245
 msgid "First day of the week:"
 msgstr "ថ្ងៃ​ចាប់ផ្ដើម​នៃ​សប្ដាហ៍ ៖"
 
-#: localetime.cpp:260
+#: localetime.cpp:255
 msgid "Use declined form of month name"
 msgstr "ប្រើ​ទម្រង់​ដែល​បាន​បដិសេធ​នៃ​ឈ្មោះ​ខែ"
 
-#: localetime.cpp:453
+#: localetime.cpp:449
 msgctxt "some reasonable time formats for the language"
 msgid ""
 "HH:MM:SS\n"
@@ -425,7 +496,7 @@ msgstr ""
 "HH:MM:SS\n"
 "pH:MM:SS AMPM"
 
-#: localetime.cpp:461
+#: localetime.cpp:457
 msgctxt "some reasonable date formats for the language"
 msgid ""
 "WEEKDAY MONTH dD YYYY\n"
@@ -434,7 +505,7 @@ msgstr ""
 "ថ្ងៃ​ធ្វើការ ខែ dD YYYY\n"
 "ថ្ងៃ​ធ្វើ​ការ​ខ្លី ខែ dD YYYY"
 
-#: localetime.cpp:469
+#: localetime.cpp:465
 msgctxt "some reasonable short date formats for the language"
 msgid ""
 "YYYY-MM-DD\n"
@@ -445,27 +516,27 @@ msgstr ""
 "dD.mM.YYYY\n"
 "DD.MM.YYYY"
 
-#: localetime.cpp:480
+#: localetime.cpp:476
 msgctxt "Calendar System Gregorian"
 msgid "Gregorian"
 msgstr "នៃក្រុម"
 
-#: localetime.cpp:482
+#: localetime.cpp:478
 msgctxt "Calendar System Hijri"
 msgid "Hijri"
 msgstr "Hijri"
 
-#: localetime.cpp:484
+#: localetime.cpp:480
 msgctxt "Calendar System Hebrew"
 msgid "Hebrew"
 msgstr "ហេប្រូ"
 
-#: localetime.cpp:486
+#: localetime.cpp:482
 msgctxt "Calendar System Jalali"
 msgid "Jalali"
 msgstr "Jalali"
 
-#: localetime.cpp:489
+#: localetime.cpp:485
 msgid ""
 "<p>The text in this textbox will be used to format time strings. The "
 "sequences below will be replaced:</p><table><tr><td><b>HH</b></td><td>The "
@@ -490,7 +561,7 @@ msgstr ""
 "បាន​ផ្តល់​ឲ្យ​ ។ ពេលរសៀល​ត្រូវ​បាន​ចាត់​ទុក​ជា​ \"ល្ងាយ\" និង​ពាក់​កណ្តាល​អាធ្រាត្រ​ជា​ \"ព្រឹក\" ។</td></"
 "tr></table>"
 
-#: localetime.cpp:512
+#: localetime.cpp:508
 msgid ""
 "<table><tr><td><b>YYYY</b></td><td>The year with century as a decimal number."
 "</td></tr><tr><td><b>YY</b></td><td>The year without century as a decimal "
@@ -514,7 +585,7 @@ msgstr ""
 "tr><tr><td><b>ថ្ងៃ​ធ្វើ​ការ​ខ្លី</b></td><td>តួអក្សរ​បី​ដំបូង​នៃ​ឈ្មោះ​ថ្ងៃ​ធ្វើ​ការ ។</td></"
 "tr><tr><td><b>ថ្ងៃ​ធ្វើ​ការ</b></td><td>ឈ្មោះ​ថ្ងៃ​ធ្វើ​ការ​ពេញ ។</td></tr></table>"
 
-#: localetime.cpp:533
+#: localetime.cpp:529
 msgid ""
 "<p>The text in this textbox will be used to format long dates. The sequences "
 "below will be replaced:</p>"
@@ -522,7 +593,7 @@ msgstr ""
 "<p>អត្ថបទ​ក្នុង​ប្រអប់​អត្ថបទ​នេះ នឹង​ត្រូវ​បាន​ប្រើ ដើម្បី​ធ្វើ​ទ្រង់ទ្រាយ​កាលបរិច្ឆេទ​វែងៗ ។ លំដាប់ ខាង​"
 "ក្រោម​នេះ នឹង​ត្រូវ​បានជំនួស ៖</p>"
 
-#: localetime.cpp:539
+#: localetime.cpp:535
 msgid ""
 "<p>The text in this textbox will be used to format short dates. For "
 "instance, this is used when listing files. The sequences below will be "
@@ -531,96 +602,36 @@ msgstr ""
 "<p>អត្ថបទ​ក្នុង​ប្រអប់​អត្ថបទ​នេះ នឹង​ត្រូវ​បាន​ប្រើ ដើម្បី​ធ្វើ​ទ្រង់ទ្រាយ​កាល​បរិច្ឆេទ​ខ្លីៗ ។ ឧទាហរណ៍ វា​នេះ​"
 "ត្រូវ​បាន​ប្រើ​នៅ​ពេល​រាយ​ឯកសារ ។ លំដាប់ខាង​ក្រោម​នឹង​ត្រូវ​បាន​ជំនួស ៖</p>"
 
-#: localetime.cpp:546
+#: localetime.cpp:542
 msgid ""
 "<p>This option determines which day will be considered as the first one of "
 "the week.</p>"
 msgstr "<p>ជម្រើស​នេះ​កំណត់​ ថា​តើ​ថ្ងៃ​មួយ​ណា នឹង​ត្រូវ​បានចាត់​ទុក​ជា​ថ្ងៃ​ដំបូង​នៃ​សប្ដាហ៍ ។</p>"
 
-#: localetime.cpp:553
+#: localetime.cpp:549
 msgid ""
 "<p>This option determines whether possessive form of month names should be "
 "used in dates.</p>"
 msgstr "<p>ជម្រើស​នេះ​កំណត់ ​ថា​តើទម្រង់​ជា​ម្ចាស់​នៃ​ឈ្មោះ​ខែ គួរត្រូវ​បាន​ប្រើក្នុង​កាលបរិច្ឆេទ​ឬទេ ។</p>"
 
 #. i18n: tag string
-#. i18n: file language.ui line 33
-#: rc.cpp:3
-msgid "Languages:"
-msgstr "ភាសា ៖"
-
-#. i18n: tag string
-#. i18n: file language.ui line 56
-#: rc.cpp:6
-msgid "Add..."
-msgstr "បន្ថែម..."
-
-#. i18n: tag string
-#. i18n: file language.ui line 63
+#. i18n: file language.ui line 44
 #: rc.cpp:9
-msgid "Remove"
-msgstr "យកចេញ​"
-
-#. i18n: tag string
-#. i18n: file language.ui line 78
-#: rc.cpp:12
 msgid "None selected (<a href=\"/change\">change...</a>)"
 msgstr "គ្មាន​អ្វី​ដេល​ត្រូវ​ជ្រើស (<a href=\"/change\">ជ្រើស​...</a>)"
 
 #. i18n: tag string
-#. i18n: file language.ui line 123
+#. i18n: file localemon.ui line 13
 #: rc.cpp:15
-msgid "Country or Region:"
-msgstr "ប្រទេស ឬតំបន់ ៖"
+msgid "Form"
+msgstr ""
 
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 34
-#: rc.cpp:18
-msgid "Locale"
-msgstr "មូលដ្ឋាន"
-
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 39
-#: rc.cpp:21
-msgid "Number"
-msgstr "លេខ"
-
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 78
-#: rc.cpp:24
-msgid "Wednesday 23 February 1927"
-msgstr "ថ្ងៃ​ពុធ ទី​ ២៣ ខែ កុម្ភៈ ឆ្នាំ ១៩២៧"
-
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 85
-#: rc.cpp:27
-msgid "1,234,567.89"
-msgstr "1,234,567.89"
-
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 145
-#: rc.cpp:42
-msgid "$ 1,234,567.89"
-msgstr "$ 1,234,567.89"
-
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 162
-#: rc.cpp:48
-msgid "1927-02-20"
-msgstr "1927-02-20"
-
-#. i18n: tag string
-#. i18n: file toplevelbase.ui line 169
-#: rc.cpp:51
-msgid "19:38:47"
-msgstr "19:38:47"
-
-#: rc.cpp:52
+#: rc.cpp:76
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "ខឹម សុខែម, ប៉ុច សុគន្ធ, អេង វណ្ណៈ, អោក ពិសិដ្ឋ"
 
-#: rc.cpp:53
+#: rc.cpp:77
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
@@ -641,7 +652,7 @@ msgstr ""
 "(C) រក្សាសិទ្ធ​ឆ្នាំ ១៩៩៨ ដោយ​ Matthias Hoelzer (C) រក្សាសិទ្ធ​ឆ្នាំ ១៩៩៩-២០០៣ ដោយ Hans "
 "Petter Bieker"
 
-#: toplevel.cpp:195
+#: toplevel.cpp:186
 msgid ""
 "Changed language settings apply only to newly started applications.\n"
 "To change the language of all programs, you will have to logout first."
@@ -649,11 +660,11 @@ msgstr ""
 "ការ​កំណត់​ភាសា​ដែល​បាន​ផ្លាស់ប្ដូរ អនុវត្តបាន​​តែ​ចំពោះ​កម្មវិធី​ដែល​បាន​ចាប់​ផ្ដើម​ថ្មី​ៗ ។\n"
 "ដើម្បី​ផ្លាស់​ប្ដូរ​ភាសា​នៃ​កម្មវិធី​ទាំង​អស់ ដំបូង​អ្នក​ត្រូវ​តែចេញពី​វា​​សិន ។"
 
-#: toplevel.cpp:199
+#: toplevel.cpp:190
 msgid "Applying Language Settings"
 msgstr "ការ​កំណត់​ភាសា​ដែល​កំពុង​អនុវត្ត"
 
-#: toplevel.cpp:238
+#: toplevel.cpp:229
 msgid ""
 "<h1>Country/Region & Language</h1>\n"
 "<p>From here you can configure language, numeric, and time \n"
@@ -671,26 +682,53 @@ msgstr ""
 "\"ប្រទេស​អាល្លឺម៉ង់\" ពី​បញ្ជី ។ វា​នឹង​ផ្លាស់​ប្ដូរ​ទ្រង់ទ្រាយ​ពេល​វេលា​ផង​ដែរ \n"
 "ដើម្បី​ប្រើទ្រង់ទ្រាយ ២៤ ម៉ោង និង ប្រើ​សញ្ញា (,) ជា​សញ្ញាក្បៀស ។</p>\n"
 
-#: toplevel.cpp:278
+#: toplevel.cpp:266
 msgid "Examples"
 msgstr "ឧទាហរណ៍"
 
-#: toplevel.cpp:279
+#: toplevel.cpp:267
 msgid "&Locale"
 msgstr "មូលដ្ឋាន"
 
-#: toplevel.cpp:280
+#: toplevel.cpp:268
 msgid "&Numbers"
 msgstr "លេខ"
 
-#: toplevel.cpp:281
+#: toplevel.cpp:269
 msgid "&Money"
 msgstr "រូបិយប័ណ្ណ"
 
-#: toplevel.cpp:282
+#: toplevel.cpp:270
 msgid "&Time && Dates"
 msgstr "កាលបរិច្ឆេទ និង​ពេល​វេលា"
 
-#: toplevel.cpp:283
+#: toplevel.cpp:271
 msgid "&Other"
 msgstr "ផ្សេងៗ"
+
+#~ msgid "Other"
+#~ msgstr "ផ្សេងៗ"
+
+#~ msgid "Add..."
+#~ msgstr "បន្ថែម..."
+
+#~ msgid "Locale"
+#~ msgstr "មូលដ្ឋាន"
+
+#~ msgid "Number"
+#~ msgstr "លេខ"
+
+#~ msgid "Wednesday 23 February 1927"
+#~ msgstr "ថ្ងៃ​ពុធ ទី​ ២៣ ខែ កុម្ភៈ ឆ្នាំ ១៩២៧"
+
+#~ msgid "1,234,567.89"
+#~ msgstr "1,234,567.89"
+
+#~ msgid "$ 1,234,567.89"
+#~ msgstr "$ 1,234,567.89"
+
+#~ msgid "1927-02-20"
+#~ msgstr "1927-02-20"
+
+#~ msgid "19:38:47"
+#~ msgstr "19:38:47"
