@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2007-12-30 06:22+0100\n"
+"POT-Creation-Date: 2008-01-09 07:18+0100\n"
 "PO-Revision-Date: 2007-12-31 08:53+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -109,8 +109,8 @@ msgstr "នេះ​ជា​អាសយដ្ឋាន​ដែល​ពេញ
 msgid "New..."
 msgstr "ថ្មី..."
 
-#: addresseditwidget.cpp:319 emaileditwidget.cpp:197 keywidget.cpp:60
-#: phoneeditwidget.cpp:180 features/resourceselection.cpp:367
+#: addresseditwidget.cpp:319 emaileditwidget.cpp:197 kabcore.cpp:1112
+#: keywidget.cpp:60 phoneeditwidget.cpp:180 features/resourceselection.cpp:367
 msgid "Remove"
 msgstr "យក​ចេញ"
 
@@ -1059,7 +1059,7 @@ msgstr "%1 ៖"
 msgid "Blog feed:"
 msgstr "មតិព័ត៌មាន blog ៖"
 
-#: addresseeeditorwidget.cpp:292 kabcore.cpp:1179
+#: addresseeeditorwidget.cpp:292 kabcore.cpp:1297
 msgid "Select Categories..."
 msgstr "ជ្រើស​ប្រភេទ..."
 
@@ -1205,6 +1205,89 @@ msgstr "បន្ថែម​វាល..."
 msgid "Remove Field..."
 msgstr "យក​វាល​ចេញ..."
 
+#: distributionlisteditor.cpp:161
+#, fuzzy
+#| msgid "New Distribution List"
+msgid "Edit Distribution List"
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
+
+#: distributionlisteditor.cpp:172 filtereditdialog.cpp:107
+#: simpleaddresseeeditor.cpp:72
+msgid "Name:"
+msgstr "ឈ្មោះ ៖"
+
+#: distributionlisteditor.cpp:182
+#, fuzzy
+#| msgid "Distribution List Editor"
+msgid "Distribution list members:"
+msgstr "ឧបករណ៍​​កែម្រួល​​បញ្ជី​ចែកចាយ"
+
+#: distributionlisteditor.cpp:252
+#, fuzzy, kde-format
+#| msgid ""
+#| "A field with the same name already exists, please choose another one."
+msgid ""
+"A distribution list with the name %1 already exists. Please choose another "
+"name."
+msgstr "មាន​វាល​ដែល​មាន​ឈ្មោះ​ដូច​គ្នា​រួច​ហើយ សូម​ជ្រើស​ឈ្មោះ​​ផ្សេង ។"
+
+#: distributionlisteditor.cpp:252
+msgid "Name in Use"
+msgstr ""
+
+#: distributionlistentryview.cpp:51
+#, fuzzy
+#| msgid "New Distribution List"
+msgid "<b>Distribution list:</b>"
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
+
+#: distributionlistentryview.cpp:64
+msgid "<b>Email address to use in this list:</b>"
+msgstr ""
+
+#: distributionlistentryview.cpp:122
+#, kde-format
+msgctxt "Formatted name, role, organization"
+msgid "<qt><h2>%1</h2><p>%2<br/>%3</p></qt>"
+msgstr ""
+
+#: distributionlistentryview.cpp:125
+#, fuzzy, kde-format
+#| msgid "Address Book"
+msgid "<b>Address book:</b> %1"
+msgstr "សៀវភៅ​អាសយដ្ឋាន"
+
+#: distributionlistpicker.cpp:50
+#, fuzzy
+#| msgid "New Distribution List"
+msgid "Add New Distribution List"
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
+
+#: distributionlistpicker.cpp:98
+#, fuzzy
+#| msgid "Manager's Name"
+msgid "Enter Name"
+msgstr "ឈ្មោះ​អ្នក​គ្រប់​គ្រង"
+
+#: distributionlistpicker.cpp:98
+#, fuzzy
+#| msgid "Rename Distribution List"
+msgid "Enter a name for the new distribution list:"
+msgstr "ប្ដូរឈ្មោះ​បញ្ជី​​ចែកចាយ​"
+
+#: distributionlistpicker.cpp:114
+#, fuzzy, kde-format
+#| msgid ""
+#| "A field with the same name already exists, please choose another one."
+msgid ""
+"A distribution list with the the name %1 already exists. Please choose "
+"another name"
+msgstr "មាន​វាល​ដែល​មាន​ឈ្មោះ​ដូច​គ្នា​រួច​ហើយ សូម​ជ្រើស​ឈ្មោះ​​ផ្សេង ។"
+
+#: distributionlistpicker.cpp:114
+msgid "Name Exists"
+msgstr ""
+
 #: emaileditwidget.cpp:88 emaileditwidget.cpp:276 simpleaddresseeeditor.cpp:80
 msgid "Email:"
 msgstr "អ៊ីមែល ៖"
@@ -1221,7 +1304,8 @@ msgstr "កែសម្រួល​អាសយដ្ឋាន​អ៊ីមែ
 msgid "Add..."
 msgstr "បន្ថែម..."
 
-#: emaileditwidget.cpp:192 features/resourceselection.cpp:365
+#: emaileditwidget.cpp:192 features/distributionlistngwidget.cpp:158
+#: features/resourceselection.cpp:365
 msgid "Edit..."
 msgstr "កែសម្រួល..."
 
@@ -1243,7 +1327,8 @@ msgstr "កែសម្រួល​អ៊ីមែល"
 
 #: emaileditwidget.cpp:299
 #, kde-format
-msgid "<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
+msgid ""
+"<qt>Are you sure that you want to remove the email address <b>%1</b>?</qt>"
 msgstr "<qt>តើ​អ្នក​ប្រាកដ​ថា ​​ចង់​​យក​​អាសយដ្ឋាន​អ៊ីមែល <b>%1</b>ចេញ​ឬ ?</qt>"
 
 #: emaileditwidget.cpp:300
@@ -1254,18 +1339,9 @@ msgstr "អះអាង​ការយកចេញ"
 msgid "&Delete"
 msgstr "លុប"
 
-#: extensionmanager.cpp:182 viewmanager.cpp:555
-#: views/configuretableviewdialog.cpp:120 xxport/csvimportdialog.cpp:435
-msgid "None"
-msgstr "គ្មាន"
-
 #: filtereditdialog.cpp:52
 msgid "Edit Address Book Filter"
 msgstr "កែសម្រួល​តម្រង​សៀវភៅ​អាសយដ្ឋាន"
-
-#: filtereditdialog.cpp:107 simpleaddresseeeditor.cpp:72
-msgid "Name:"
-msgstr "ឈ្មោះ ៖"
 
 #: filtereditdialog.cpp:130
 msgid "Show only contacts matching the selected categories"
@@ -1404,7 +1480,8 @@ msgid "Select incremental search field"
 msgstr "ជ្រើស​វាល​ស្វែង​រក​កើនឡើង"
 
 #: incsearchwidget.cpp:66
-msgid "Here you can choose the field, which shall be used for incremental search."
+msgid ""
+"Here you can choose the field, which shall be used for incremental search."
 msgstr "នៅ​ទីនេះ អ្នក​អាច​ជ្រើស​វាល ដែល​នឹង​ត្រូវ​បាន​ប្រើ​សម្រាប់​ការ​ស្វែង​រកកើនឡើង ។"
 
 #: incsearchwidget.cpp:111
@@ -1415,144 +1492,165 @@ msgstr "​វាល​​មើល​ឃើញ"
 msgid "All Fields"
 msgstr "វាល​ទាំង​អស់"
 
-#: kabcore.cpp:120
+#: kabcore.cpp:122
 msgid "Profession"
 msgstr "វិជ្ជាជីវៈ"
 
-#: kabcore.cpp:122
+#: kabcore.cpp:124
 msgid "Assistant's Name"
 msgstr "ឈ្មោះ​អ្នក​ជំនួយ​ការ"
 
-#: kabcore.cpp:124
+#: kabcore.cpp:126
 msgid "Manager's Name"
 msgstr "ឈ្មោះ​អ្នក​គ្រប់​គ្រង"
 
-#: kabcore.cpp:126
+#: kabcore.cpp:128
 msgid "Partner's Name"
 msgstr "ឈ្មោះ​ដៃគូ"
 
-#: kabcore.cpp:128
+#: kabcore.cpp:130
 msgid "Office"
 msgstr "ការិយាល័យ"
 
-#: kabcore.cpp:130
+#: kabcore.cpp:132
 msgid "IM Address"
 msgstr "អាសយដ្ឋាន IM"
 
-#: kabcore.cpp:132
+#: kabcore.cpp:134
 msgid "Anniversary"
 msgstr "ថ្ងៃ​បុណ្យ​ខួប"
 
-#: kabcore.cpp:134
+#: kabcore.cpp:136
 msgid "Blog"
 msgstr "កំណត់ហេតុ"
 
-#: kabcore.cpp:300
+#: kabcore.cpp:293
 msgid "KAddressBook"
 msgstr "KAddressBook"
 
-#: kabcore.cpp:301
+#: kabcore.cpp:294
 msgid "The KDE Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន KDE"
 
-#: kabcore.cpp:303
+#: kabcore.cpp:296
 msgid "(c) 1997-2005, The KDE PIM Team"
 msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ១៩៩៧-២០០៥ ដោយ​ក្រុម KDE PIM"
 
-#: kabcore.cpp:304
+#: kabcore.cpp:297
 msgid "Tobias Koenig"
 msgstr "Tobias Koenig"
 
-#: kabcore.cpp:304
+#: kabcore.cpp:297
 msgid "Current maintainer"
 msgstr "អ្នក​ថែទាំ​​បច្ចុប្បន្ន"
 
-#: kabcore.cpp:305
+#: kabcore.cpp:298
 msgid "Don Sanders"
 msgstr "Don Sanders"
 
-#: kabcore.cpp:305
+#: kabcore.cpp:298
 msgid "Original author"
 msgstr "អ្នក​និពន្ធ​ដើម"
 
-#: kabcore.cpp:306
+#: kabcore.cpp:299
 msgid "Cornelius Schumacher"
 msgstr "Cornelius Schumacher"
 
-#: kabcore.cpp:307
+#: kabcore.cpp:300
 msgid "Co-maintainer, libkabc port, CSV import/export"
 msgstr "សហ-អ្នក​ថែរក្សា ច្រក libkabc ការ​នាំចូល/នាំចេញ CSV"
 
-#: kabcore.cpp:309
+#: kabcore.cpp:302
 msgid "Mike Pilone"
 msgstr "Mike Pilone"
 
-#: kabcore.cpp:309
+#: kabcore.cpp:302
 msgid "GUI and framework redesign"
 msgstr "រចនា GUI និង​គម្រោង​ឡើង​វិញ"
 
-#: kabcore.cpp:311
+#: kabcore.cpp:304
 msgid "Greg Stern"
 msgstr "Greg Stern"
 
-#: kabcore.cpp:311
+#: kabcore.cpp:304
 msgid "DCOP interface"
 msgstr "ចំណុច​ប្រទាក់ DCOP"
 
-#: kabcore.cpp:312
+#: kabcore.cpp:305
 msgid "Mark Westcott"
 msgstr "Mark Westcott"
 
-#: kabcore.cpp:312
+#: kabcore.cpp:305
 msgid "Contact pinning"
 msgstr "ការ​ភ្ជាប់​ទំនាក់​ទំនង"
 
-#: kabcore.cpp:313
+#: kabcore.cpp:306
 msgid "Mischel Boyer de la Giroday"
 msgstr "Mischel Boyer de la Giroday"
 
-#: kabcore.cpp:313 kabcore.cpp:315
+#: kabcore.cpp:306 kabcore.cpp:308
 msgid "LDAP Lookup"
 msgstr "ស្វែង​រក LDAP"
 
-#: kabcore.cpp:315
+#: kabcore.cpp:308
 msgid "Steffen Hansen"
 msgstr "Steffen Hansen"
 
-#: kabcore.cpp:424
-#, kde-format
+#: kabcore.cpp:412
+#, fuzzy, c-format
 #| msgid "Do you really want to delete these %1 contacts?"
-msgid "Do you really want to delete these %1 contacts?"
-msgstr "តើអ្នក​ពិតជា​ចង់​លុប​ទំនាក់ទំនង​ទាំង %1 នេះ​ឬ ?"
+msgid "Do you really want to delete this distribution list?"
+msgid_plural "Do you really want to delete these %n distribution lists?"
+msgstr[0] "តើអ្នក​ពិតជា​ចង់​លុប​ទំនាក់ទំនង​ទាំង %1 នេះ​ឬ ?"
+msgstr[1] "តើអ្នក​ពិតជា​ចង់​លុប​ទំនាក់ទំនង​ទាំង %1 នេះ​ឬ ?"
 
-#: kabcore.cpp:520
+#: kabcore.cpp:438
+#, fuzzy, kde-format
+#| msgid "Do you really want to delete these %1 contacts?"
+msgid "Do you really want to delete this contact?"
+msgid_plural "Do you really want to delete these %1 contacts?"
+msgstr[0] "តើអ្នក​ពិតជា​ចង់​លុប​ទំនាក់ទំនង​ទាំង %1 នេះ​ឬ ?"
+msgstr[1] "តើអ្នក​ពិតជា​ចង់​លុប​ទំនាក់ទំនង​ទាំង %1 នេះ​ឬ ?"
+
+#: kabcore.cpp:534
 msgid "Please select only one contact."
 msgstr "សូម​ជ្រើស​តែ​ទំនាក់​ទំនង​មួយ​បានហើយ ។"
 
-#: kabcore.cpp:524
+#: kabcore.cpp:538
 #, kde-format
-msgid "<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
+msgid ""
+"<qt>Do you really want to use <b>%1</b> as your new personal contact?</qt>"
 msgstr "<qt>តើ​អ្នក​ពិត​ជា​ចង់​ប្រើ <b>%1</b> ជា​ទំនាក់​ទំនង​​ផ្ទាល់​ខ្លួន​ថ្មី​របស់​អ្នកឬ ?</qt>"
 
-#: kabcore.cpp:525
+#: kabcore.cpp:539
 msgid "Use"
 msgstr "ប្រើ"
 
-#: kabcore.cpp:525
+#: kabcore.cpp:539
 msgid "Do Not Use"
 msgstr "កុំប្រើ"
 
-#: kabcore.cpp:740
+#: kabcore.cpp:614 features/distributionlistwidget.cpp:241
+msgid "New Distribution List"
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
+
+#: kabcore.cpp:620
+#, fuzzy, kde-format
+#| msgid "New Distribution List"
+msgid "New Distribution List (%1)"
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
+
+#: kabcore.cpp:788
 #, kde-format
 msgid "<qt>Unable to save address book <b>%1</b>.</qt>"
 msgstr "<qt>មិន​អាច​រក្សា​ទុក​សៀវភៅ​អាសយដ្ឋាន <b>%1</b> បានទេ ។</qt>"
 
-#: kabcore.cpp:747
+#: kabcore.cpp:795
 #, kde-format
 msgid "<qt>Unable to get access for saving the address book <b>%1</b>.</qt>"
 msgstr "<qt>មិន​អាច​ចូល​ដំណើរ​ការ ដើម្បី​រក្សា​ទុក​សៀវភៅ​អាសយដ្ឋាន <b>%1</b> បានទេ ។</qt>"
 
-#: kabcore.cpp:839
+#: kabcore.cpp:884
 msgid ""
 "Your KDE installation is missing LDAP support, please ask your administrator "
 "or distributor for more information."
@@ -1560,43 +1658,57 @@ msgstr ""
 "ការ​ដំឡើង KDE របស់​អ្នក ​បាត់ការ​គាំទ្រ LDAP សូម​សួរ​អ្នក​គ្រប់គ្រង ឬ​អ្នក​ចែកចាយ​របស់​អ្នក សម្រាប់​ព័ត៌មាន​"
 "បន្ថែម ។"
 
-#: kabcore.cpp:841
+#: kabcore.cpp:886
 msgid "No LDAP IO Slave Available"
 msgstr "គ្មាន LDAP IO Slave"
 
-#: kabcore.cpp:878
+#: kabcore.cpp:923
 msgid "Address Book"
 msgstr "សៀវភៅ​អាសយដ្ឋាន"
 
-#: kabcore.cpp:883
+#: kabcore.cpp:928
 msgid "Print Addresses"
 msgstr "បោះពុម្ព​អាសយដ្ឋាន"
 
-#: kabcore.cpp:1073
+#: kabcore.cpp:1093 kabcore.cpp:1563
+#, fuzzy
+#| msgid "Contains"
+msgid "Contacts"
+msgstr "មាន"
+
+#: kabcore.cpp:1104 phoneeditwidget.cpp:176
+msgid "Add"
+msgstr "បន្ថែម"
+
+#: kabcore.cpp:1180
 msgid "&Send Email to Contact..."
 msgstr "ផ្ញើ​អ៊ីមែល​ទៅ​ទំនាក់​ទំនង..."
 
-#: kabcore.cpp:1076
+#: kabcore.cpp:1183
 msgid "Send a mail to all selected contacts."
 msgstr "ផ្ញើ​សំបុត្រ​ទៅកាន់​ទំនាក់ទំនង​ដែលបាន​ជ្រើស ។"
 
-#: kabcore.cpp:1077
+#: kabcore.cpp:1184
 msgid "Print a special number of contacts."
 msgstr "បោះពុម្ព​លេខ​ពិសេស​របស់​ទំនាក់​ទំនង ។"
 
-#: kabcore.cpp:1081
+#: kabcore.cpp:1188
 msgid "Save all changes of the address book to the storage backend."
 msgstr "រក្សា​ទុក​ការ​ផ្លាស់​ប្ដូរ​ទាំង​អស់​របស់​សៀវភៅ​អាស័យដ្ឋាន​​ទៅ​កម្មវិធី​ផ្ទុក​ខាង​ក្រោយ ។"
 
-#: kabcore.cpp:1085
+#: kabcore.cpp:1192
 msgid "&New Contact..."
 msgstr "ទំនាក់​ទំនង​ថ្មី..."
 
-#: kabcore.cpp:1086
+#. i18n: tag text
+#. i18n: file kaddressbook_part.rc line 5
+#. i18n: tag text
+#. i18n: file kaddressbookui.rc line 5
+#: kabcore.cpp:1193 rc.cpp:6 rc.cpp:36
 msgid "New"
 msgstr "ថ្មី"
 
-#: kabcore.cpp:1089
+#: kabcore.cpp:1196
 msgid ""
 "Create a new contact<p>You will be presented with a dialog where you can add "
 "all data about a person, including addresses and phone numbers.</p>"
@@ -1604,31 +1716,49 @@ msgstr ""
 "បង្កើត​ទំនាក់ទំនង​ថ្មី​<p>អ្នក​នឹង​ត្រូវ​បាន​បង្ហាញ​ដោយ​ប្រអប់ ដែល​អាច​បន្ថែម​ទិន្នន័យ​ទាំងអស់​អំពី​មុន រួមមាន​"
 "អាសយដ្ឋាន និង​លេខ​ទូរស័ព្ទ ។</p>"
 
-#: kabcore.cpp:1093
+#: kabcore.cpp:1200
 msgid "Send &Contact..."
 msgstr "ផ្ញើ​​ទំនាក់​ទំនង..."
 
-#: kabcore.cpp:1095
+#: kabcore.cpp:1205
+#, fuzzy
+#| msgid "New Distribution List"
+msgid "&New Distribution List..."
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
+
+#: kabcore.cpp:1207
+#, fuzzy
+#| msgid ""
+#| "Edit the contact filters<p>You will be presented with a dialog, where you "
+#| "can add, remove and edit filters.</p>"
+msgid ""
+"Create a new distribution list<p>You will be presented with a dialog where "
+"you can create a new distribution list."
+msgstr ""
+"កែសម្រួល​តម្រង​ទំនាក់ទំនង​<p>អ្ន​ក​នឹង​ត្រូវ​បានបង្ហាញ​ដោយ​ប្រអប់​មួយ ដែល​អ្នក​អាច​បន្ថែម យក​តម្រង​ចេញ និង​"
+"កែសម្រួល ។</p>"
+
+#: kabcore.cpp:1209
 msgid "Send a mail with the selected contact as attachment."
 msgstr "ផ្ញើ​អ៊ីមែល​ជាមួយ​​ទំនាក់​ទំនង​ដែល​បាន​ជ្រើស ជា​ឯកសារ​ភ្ជាប់ ។"
 
-#: kabcore.cpp:1098
+#: kabcore.cpp:1212
 msgid "Chat &With..."
 msgstr "ជជែក​កំសាន្ត​ជាមួយ..."
 
-#: kabcore.cpp:1100
+#: kabcore.cpp:1214
 msgid "Start a chat with the selected contact."
 msgstr "ចាប់​ផ្ដើម​​សន្ទនា​​ជាមួយ​ទំនាក់​ទំនង​ដែល​បាន​ជ្រើស ។"
 
-#: kabcore.cpp:1104
+#: kabcore.cpp:1218
 msgid "&Edit Contact..."
 msgstr "កែសម្រួល​ទំនាក់​ទំនង..."
 
-#: kabcore.cpp:1105
+#: kabcore.cpp:1219
 msgid "Edit"
 msgstr "កែសម្រួល"
 
-#: kabcore.cpp:1107
+#: kabcore.cpp:1221
 msgid ""
 "Edit a contact<p>You will be presented with a dialog where you can change "
 "all data about a person, including addresses and phone numbers.</p>"
@@ -1636,75 +1766,89 @@ msgstr ""
 "កែសម្រួល​ទំនាក់ទំនង​<p>អ្ន​ក​នឹង​ត្រូវ​បានបង្ហាញ​ប្រអប់មួយ ដែលអ្នក​អាច​ផ្លាស់ប្ដូរ​ទិន្នន័យ​អំពី​មនុស្ស ដែល​រួមមាន​"
 "អាសយដ្ឋាន និង​លេខ​ទូរស័ព្ទ ។</p>"
 
-#: kabcore.cpp:1110
+#: kabcore.cpp:1224
 msgid "&Merge Contacts"
 msgstr "បញ្ចូល​ទំនាក់​ទំនង​ចូល​គ្នា"
 
-#: kabcore.cpp:1118
-msgid "Copy the currently selected contact(s) to system clipboard in vCard format."
+#: kabcore.cpp:1232
+msgid ""
+"Copy the currently selected contact(s) to system clipboard in vCard format."
 msgstr "ចម្លង​ទំនាក់​ទំនង​ដែល​បាន​ជ្រើស​ថ្មីៗ ​ទៅ​ក្ដារ​តម្បៀត​ខ្ទាស់​របស់​ប្រព័ន្ធ​ជា​ទ្រង់ទ្រាយ vCard ។​"
 
-#: kabcore.cpp:1119
-msgid "Cuts the currently selected contact(s) to system clipboard in vCard format."
+#: kabcore.cpp:1233
+msgid ""
+"Cuts the currently selected contact(s) to system clipboard in vCard format."
 msgstr "កាត់​​ទំនាក់​ទំនង​ដែល​បាន​ជ្រើស​ថ្មីៗ​ទៅ​ក្ដារ​តម្បៀត​ខ្ទាស់​របស់​ប្រព័ន្ធ​ជា​ទ្រង់ទ្រាយ vCard ។"
 
-#: kabcore.cpp:1120
+#: kabcore.cpp:1234
 msgid "Paste the previously cut or copied contacts from clipboard."
 msgstr "បិទ​ភ្ជាប់​ទំនាក់​ទំនង​ដែល​បាន​កាត់ ឬ​ចម្លង​ពី​ក្ដារ​តម្បៀត​ខ្ទាស់ ។"
 
-#: kabcore.cpp:1121
+#: kabcore.cpp:1235
 msgid "Selects all visible contacts from current view."
 msgstr "ជ្រើស​ទំនាក់​ទំនង​ដែល​មើល​ឃើញ​ទាំង​អស់​ពី​ទិដ្ឋភាព​​បច្ចុប្បន្ន ។"
 
-#: kabcore.cpp:1127
+#: kabcore.cpp:1241
 msgid "&Delete Contact"
 msgstr "លុប​ទំនាក់​ទំនង"
 
-#: kabcore.cpp:1130
+#: kabcore.cpp:1244
 msgid "Delete all selected contacts."
 msgstr "លុប​ទំនាក់​ទំនង​ដែល​បាន​ជ្រើស​ទាំង​អស់ ។"
 
-#: kabcore.cpp:1135
-msgid "St&ore Contact In..."
-msgstr "ទុក​ទំនាក់​ទំនង​ក្នុង..."
-
-#: kabcore.cpp:1137
+#: kabcore.cpp:1246
+#, fuzzy
+#| msgid ""
+#| "Store a contact in a different Addressbook<p>You will be presented with a "
+#| "dialog where you can select a new storage place for this contact.</p>"
 msgid ""
 "Store a contact in a different Addressbook<p>You will be presented with a "
-"dialog where you can select a new storage place for this contact.</p>"
+"dialog where you can select a new storage place for this contact."
 msgstr ""
 "ផ្ទុក​ទំនាក់ទំនង​នៅ​ក្នុង​សៀវភៅ​អាសយដ្ឋាន​ផ្សេងៗ<p>អ្ន​ក​នឹង​ត្រូវ​បាន​បង្ហាញ​ដោយ​ប្រអប់​មួយ ដែល​អ្នក​អាច​ជ្រើស​"
 "កន្លែង​ផ្ទុក​ថ្មី​មួយ​សម្រាប់ទំនាក់ទំនង​នេះ ។</p>"
 
-#: kabcore.cpp:1141
+#: kabcore.cpp:1248
+#, fuzzy
+#| msgid "St&ore Contact In..."
+msgid "C&opy Contact To..."
+msgstr "ទុក​ទំនាក់​ទំនង​ក្នុង..."
+
+#: kabcore.cpp:1253
+#, fuzzy
+#| msgid "St&ore Contact In..."
+msgid "&Move Contact To..."
+msgstr "ទុក​ទំនាក់​ទំនង​ក្នុង..."
+
+#: kabcore.cpp:1259
 msgid "Show Jump Bar"
 msgstr "បង្ហាញ​របារ​លោត"
 
-#: kabcore.cpp:1143
+#: kabcore.cpp:1261
 msgid "Toggle whether the jump button bar shall be visible."
 msgstr "បិទ​បើក​ថា​តើ​របារ​ប៊ូតុង​លោត​នឹង​មើល​ឃើញ​ឬក៏​អត់ ។"
 
-#: kabcore.cpp:1144
+#: kabcore.cpp:1262
 msgid "Hide Jump Bar"
 msgstr "លាក់​របារ​លោត"
 
-#: kabcore.cpp:1148
+#: kabcore.cpp:1266
 msgid "Show Details"
 msgstr "បង្ហាញសេចក្តី​​​លម្អិត"
 
-#: kabcore.cpp:1149
+#: kabcore.cpp:1267
 msgid "Toggle whether the details page shall be visible."
 msgstr "បិទ​បើក​ថាតើ​ទំព័រ​សេចក្ដី​លម្អិត​នឹង​មើល​ឃើញ​ឬក៏​អត់ ។​"
 
-#: kabcore.cpp:1150
+#: kabcore.cpp:1268
 msgid "Hide Details"
 msgstr "លាក់​សេចក្តី​លម្អិត"
 
-#: kabcore.cpp:1157
+#: kabcore.cpp:1275
 msgid "&Configure Address Book..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​សៀវភៅ​អាសយដ្ឋាន..."
 
-#: kabcore.cpp:1163
+#: kabcore.cpp:1281
 msgid ""
 "You will be presented with a dialog, that offers you all possibilities to "
 "configure KAddressBook."
@@ -1712,11 +1856,11 @@ msgstr ""
 "អ្នក​​នឹង​ត្រូវ​បាន​បង្ហាញ​ដោយ​ប្រអប់​មួយ ដែល​ផ្ដល់​ឲ្យ​អ្នក​នូវ​លទ្ធភាព​ទាំង​អស់ ​ដើម្បី​​កំណត់​រចនាសម្ព័ន្ធ "
 "KAddressBook ។​​"
 
-#: kabcore.cpp:1168
+#: kabcore.cpp:1286
 msgid "LDAP &Lookup"
 msgstr "ស្វែង​រក LDAP"
 
-#: kabcore.cpp:1170
+#: kabcore.cpp:1288
 msgid ""
 "Search for contacts on a LDAP server<p>You will be presented with a dialog, "
 "where you can search for contacts and select the ones you want to add to "
@@ -1725,11 +1869,11 @@ msgstr ""
 "ស្វែង​រក​ទំនាក់​ទំនង​នៅ​លើ​​ម៉ាស៊ីន​បម្រើ LDAP <p>អ្នក​នឹង​ត្រូវ​បាន​បង្ហាញ​ដោយ​ប្រអប់​មួយ ដែល​អ្នក​អាច​ស្វែង​រក​"
 "ទំនាក់​​ទំនង និង​​ជ្រើស​វា​មួយ​ដែល​ចង់​បន្ថែម​ទៅ​សៀវភៅ​អាសយដ្ឋាន​មូលដ្ឋាន​របស់​អ្នក ។"
 
-#: kabcore.cpp:1174
+#: kabcore.cpp:1292
 msgid "Set as Personal Contact Data"
 msgstr "កំណត់​ជា​ទិន្នន័យ​ទំនាក់​ទំនង​ផ្ទាល់​ខ្លួន"
 
-#: kabcore.cpp:1176
+#: kabcore.cpp:1294
 msgid ""
 "Set the personal contact<p>The data of this contact will be used in many "
 "other KDE applications, so you do not have to input your personal data "
@@ -1738,41 +1882,49 @@ msgstr ""
 "កំណត់​ទំនាក់ទំនង​ផ្ទាល់ខ្លួន​<p>ទិន្នន័យ​របស់​ទំនាក់ទំនង​នេះ​នឹង​ត្រូវ​បាន​ប្រើ​ក្នុង​កម្មវិធី​របស់ KDE ផ្សេង​ទៀត "
 "ដូច្នេះ​អ្នក​មិន​ត្រូវ​បញ្ចូល​ទិន្នន័យ​ផ្ទាល់ខ្លួន​របស់​អ្នក​​ច្រើន​ដង​ទេ ។</p>"
 
-#: kabcore.cpp:1181
+#: kabcore.cpp:1299
 msgid "Set the categories for all selected contacts."
 msgstr "កំណត់​ប្រភេទ​សម្រាប់​ទំនាក់​ទំនង​ដែល​បាន​ជ្រើស ។"
 
-#: kabcore.cpp:1185
+#: kabcore.cpp:1303
 msgid "Clear Search Bar"
 msgstr "ជម្រះ​របារ​ស្វែង​រក"
 
-#: kabcore.cpp:1188
+#: kabcore.cpp:1306
 msgid "Clear Search Bar<br /><br />Clears the content of the quick search bar."
 msgstr "ជម្រះ​របារ​ស្វែងរក<br /><br />ជម្រះ​មាតិកា​របស់​របារ​ស្វែងរក​រហ័ស ។"
 
-#: kabcore.cpp:1261
+#: kabcore.cpp:1379
 msgid "Merge with existing categories?"
 msgstr "បញ្ចូល​គ្នា​ជាមួយ​ប្រភេទ​ដែល​មាន​ស្រាប់ ?"
 
-#: kabcore.cpp:1262
+#: kabcore.cpp:1380
 msgid "Merge"
 msgstr "បញ្ចូល​គ្នា"
 
-#: kabcore.cpp:1262
+#: kabcore.cpp:1380
 msgid "Do Not Merge"
 msgstr "កុំ​បញ្ចូល​គ្នា"
 
-#: kabcore.cpp:1313
-#, kde-format
+#: kabcore.cpp:1431
+#, fuzzy, kde-format
 #| msgid "%1 contacts matching"
-msgid "%1 contacts matching"
-msgstr "ផ្គូផ្គង​ទំនាក់ទំនង %1"
+msgid "%1 contact matches"
+msgid_plural "%1 contacts matching"
+msgstr[0] "ផ្គូផ្គង​ទំនាក់ទំនង %1"
+msgstr[1] "ផ្គូផ្គង​ទំនាក់ទំនង %1"
+
+#: kabcore.cpp:1563
+#, fuzzy, kde-format
+#| msgid "New Distribution List"
+msgid "Distribution List: %1"
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
 
 #: kaddressbookmain.cpp:49
 msgid "Address Book Browser"
 msgstr "កម្មវិធី​រុករក​សៀវភៅ​អាសយដ្ឋាន"
 
-#: kaddressbookmain.cpp:154
+#: kaddressbookmain.cpp:159
 msgid ""
 "You will be presented with a dialog, where you can configure the application "
 "wide shortcuts."
@@ -1805,146 +1957,188 @@ msgstr "<qt>មិន​អាច​បើក​ឯកសារ <b>%1</b> ។</
 msgid "<qt>Do you really want to remove the key <b>%1</b>?</qt>"
 msgstr "<qt>តើ​អ្នក​ពិត​ជាចង់​យក​កូនសោ <b>%1</b>ចេញ​ឬ ?</qt>"
 
-#: ldapsearchdialog.cpp:81 ldapsearchdialog.cpp:292
+#: ldapsearchdialog.cpp:85 ldapsearchdialog.cpp:318
 msgid "Title"
 msgstr "ចំណង​ជើង"
 
-#: ldapsearchdialog.cpp:82 ldapsearchdialog.cpp:275 nameeditdialog.cpp:311
+#: ldapsearchdialog.cpp:86 ldapsearchdialog.cpp:301 nameeditdialog.cpp:311
 msgid "Full Name"
 msgstr "ឈ្មោះ​ពេញ"
 
-#: ldapsearchdialog.cpp:83 ldapsearchdialog.cpp:161 ldapsearchdialog.cpp:276
-#: ldapsearchdialog.cpp:347 features/distributionlistwidget.cpp:171
+#: ldapsearchdialog.cpp:87 ldapsearchdialog.cpp:184 ldapsearchdialog.cpp:302
+#: ldapsearchdialog.cpp:375 features/distributionlistwidget.cpp:171
 msgid "Email"
 msgstr "អ៊ីមែល"
 
-#: ldapsearchdialog.cpp:84 ldapsearchdialog.cpp:162 ldapsearchdialog.cpp:277
-#: ldapsearchdialog.cpp:349
+#: ldapsearchdialog.cpp:88 ldapsearchdialog.cpp:185 ldapsearchdialog.cpp:303
+#: ldapsearchdialog.cpp:377
 msgid "Home Number"
 msgstr "លេខ​ទូរស័ព្ទ​ផ្ទះ"
 
-#: ldapsearchdialog.cpp:85 ldapsearchdialog.cpp:163 ldapsearchdialog.cpp:278
-#: ldapsearchdialog.cpp:351
+#: ldapsearchdialog.cpp:89 ldapsearchdialog.cpp:186 ldapsearchdialog.cpp:304
+#: ldapsearchdialog.cpp:379
 msgid "Work Number"
 msgstr "លេខ​ទូរស័ព្ទ​កន្លែង​ធ្វើ​ការ"
 
-#: ldapsearchdialog.cpp:86 ldapsearchdialog.cpp:279
+#: ldapsearchdialog.cpp:90 ldapsearchdialog.cpp:305
 msgid "Mobile Number"
 msgstr "លេខ​ទូរស័ព្ទ​ចល័ត"
 
-#: ldapsearchdialog.cpp:87 ldapsearchdialog.cpp:280
+#: ldapsearchdialog.cpp:91 ldapsearchdialog.cpp:306
 msgid "Fax Number"
 msgstr "លេខ​ទូរសារ"
 
-#: ldapsearchdialog.cpp:88
+#: ldapsearchdialog.cpp:92
 msgid "Pager"
 msgstr "ភេកយ័រ"
 
-#: ldapsearchdialog.cpp:89 ldapsearchdialog.cpp:283
+#: ldapsearchdialog.cpp:93 ldapsearchdialog.cpp:309
 msgid "Street"
 msgstr "ផ្លូវ"
 
-#: ldapsearchdialog.cpp:90 ldapsearchdialog.cpp:284
+#: ldapsearchdialog.cpp:94 ldapsearchdialog.cpp:310
 msgid "State"
 msgstr "រដ្ឋ"
 
-#: ldapsearchdialog.cpp:91 ldapsearchdialog.cpp:285
+#: ldapsearchdialog.cpp:95 ldapsearchdialog.cpp:311
 msgid "Country"
 msgstr "ប្រទេស"
 
-#: ldapsearchdialog.cpp:92 ldapsearchdialog.cpp:288
+#: ldapsearchdialog.cpp:96 ldapsearchdialog.cpp:314
 msgid "City"
 msgstr "ទីក្រុង"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 144
-#: ldapsearchdialog.cpp:93 ldapsearchdialog.cpp:282 nameeditdialog.cpp:314
-#: rc.cpp:194
+#: ldapsearchdialog.cpp:97 ldapsearchdialog.cpp:308 nameeditdialog.cpp:314
+#: rc.cpp:200
 msgid "Organization"
 msgstr "អង្គការ"
 
-#: ldapsearchdialog.cpp:94 ldapsearchdialog.cpp:281
+#: ldapsearchdialog.cpp:98 ldapsearchdialog.cpp:307
 msgid "Company"
 msgstr "ក្រុម​ហ៊ុន"
 
-#: ldapsearchdialog.cpp:95 ldapsearchdialog.cpp:289
+#: ldapsearchdialog.cpp:99 ldapsearchdialog.cpp:315
 msgid "Department"
 msgstr "ផ្នែក"
 
-#: ldapsearchdialog.cpp:96 ldapsearchdialog.cpp:286
+#: ldapsearchdialog.cpp:100 ldapsearchdialog.cpp:312
 msgid "Zip Code"
 msgstr "កូដ​តំបន់"
 
-#: ldapsearchdialog.cpp:97 ldapsearchdialog.cpp:287
+#: ldapsearchdialog.cpp:101 ldapsearchdialog.cpp:313
 #: printing/kabentrypainter.cpp:383
 msgid "Postal Address"
 msgstr "អាសយដ្ឋាន​​​ប្រៃសណីយ៍"
 
-#: ldapsearchdialog.cpp:98 ldapsearchdialog.cpp:290
+#: ldapsearchdialog.cpp:102 ldapsearchdialog.cpp:316
 msgid "Description"
 msgstr "ការ​ពិពណ៌នា"
 
-#: ldapsearchdialog.cpp:99 ldapsearchdialog.cpp:291
+#: ldapsearchdialog.cpp:103 ldapsearchdialog.cpp:317
 msgid "User ID"
 msgstr "លេខ​សម្គាល់​អ្នក​ប្រើ"
 
-#: ldapsearchdialog.cpp:127 ldapsearchdialog.cpp:139
+#: ldapsearchdialog.cpp:150 ldapsearchdialog.cpp:162
 msgid "Search for Addresses in Directory"
 msgstr "ស្វែង​រក​អាសយដ្ឋាន​ក្នុង​ថត"
 
-#: ldapsearchdialog.cpp:149
+#: ldapsearchdialog.cpp:172
 msgid "Search for:"
 msgstr "ស្វែងរក ៖"
 
-#: ldapsearchdialog.cpp:156
+#: ldapsearchdialog.cpp:179
 msgctxt "In LDAP attribute"
 msgid "in"
 msgstr "ក្នុង​"
 
-#: ldapsearchdialog.cpp:160 ldapsearchdialog.cpp:342
+#: ldapsearchdialog.cpp:183 ldapsearchdialog.cpp:370
 #: features/distributionlistwidget.cpp:170
 msgid "Name"
 msgstr "ឈ្មោះ"
 
-#: ldapsearchdialog.cpp:167 ldapsearchdialog.cpp:368
+#: ldapsearchdialog.cpp:190 ldapsearchdialog.cpp:396
 msgid "Stop"
 msgstr "បញ្ឈប់"
 
-#: ldapsearchdialog.cpp:169 ldapsearchdialog.cpp:406
+#: ldapsearchdialog.cpp:192 ldapsearchdialog.cpp:435
 msgid "&Search"
 msgstr "ស្វែង​រក"
 
-#: ldapsearchdialog.cpp:177
+#: ldapsearchdialog.cpp:200
 msgid "Recursive search"
 msgstr "ស្វែងរក​​តាម​ការ​ហៅ​ខ្លួន​ឯង"
 
-#: ldapsearchdialog.cpp:182
+#: ldapsearchdialog.cpp:205
 msgid "Contains"
 msgstr "មាន"
 
-#: ldapsearchdialog.cpp:183
+#: ldapsearchdialog.cpp:206
 msgid "Starts With"
 msgstr "ចាប់​ផ្ដើម​ដោយ​​"
 
-#: ldapsearchdialog.cpp:195
+#: ldapsearchdialog.cpp:218
 msgid "Select All"
 msgstr "ជ្រើស​ទាំងអស់"
 
-#: ldapsearchdialog.cpp:196
+#: ldapsearchdialog.cpp:219
 msgid "Unselect All"
 msgstr "ដោះ​ជ្រើស​ទាំងអស់"
 
-#: ldapsearchdialog.cpp:202
+#: ldapsearchdialog.cpp:225
 msgid "Add Selected"
 msgstr "បន្ថែម​អ្វី​​ដែល​បាន​ជ្រើស"
 
-#: ldapsearchdialog.cpp:244
+#: ldapsearchdialog.cpp:226
+#, fuzzy
+#| msgid "New Distribution List"
+msgid "Add to Distribution List..."
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
+
+#: ldapsearchdialog.cpp:270
 msgid ""
 "You must select a LDAP server before searching.\n"
 "You can do this from the menu Settings/Configure KAddressBook."
 msgstr ""
 "អ្នក​ត្រូវ​តែ​ជ្រើស​ម៉ាស៊ីន​បម្រើ LDAP មួយ មុន​ពេល​ស្វែង​រក ។\n"
 "អ្នក​អាច​ធ្វើ​ដូច​នេះ​បាន ​ពី​ម៉ឺនុយ ​ការកំណត់/កំណត់​រចនាសម្ព័ន្ធ KAddressBook ។"
+
+#: ldapsearchdialog.cpp:547
+#, fuzzy
+#| msgid "Send a mail to all selected contacts."
+msgid "Select a distribution list to add the selected contacts to."
+msgstr "ផ្ញើ​សំបុត្រ​ទៅកាន់​ទំនាក់ទំនង​ដែលបាន​ជ្រើស ។"
+
+#: ldapsearchdialog.cpp:548
+#, fuzzy
+#| msgid "New Distribution List"
+msgid "Select Distribution List"
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
+
+#: ldapsearchdialog.cpp:572
+#, kde-format
+msgctxt "arguments are host name, datetime"
+msgid "Imported from LDAP directory %1 on %2"
+msgstr ""
+
+#: ldapsearchdialog.cpp:583
+#, fuzzy, c-format
+#| msgid "Import %1 contacts into your addressbook?"
+msgid "The following contact was imported into your address book:"
+msgid_plural "The following %n contacts were imported into your address book:"
+msgstr[0] "នាំចូល​ទំនាក់ទំនង %1 ទៅក្នុង​សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក​ឬ ?"
+msgstr[1] "នាំចូល​ទំនាក់ទំនង %1 ទៅក្នុង​សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក​ឬ ?"
+
+#: ldapsearchdialog.cpp:598
+msgid "Please select the contacts you want to add to the distribution list."
+msgstr ""
+
+#: ldapsearchdialog.cpp:598
+#, fuzzy
+#| msgid "&Selected contacts (%1 selected)"
+msgid "No Contacts Selected"
+msgstr "ទំនាក់ទំនង​ដែលបាន​ជ្រើស (បានជ្រើស %1)"
 
 #: nameeditdialog.cpp:50
 msgid "Edit Contact Name"
@@ -1955,7 +2149,8 @@ msgid "Honorific prefixes:"
 msgstr "បុព្វបទ​កិត្តិយស ៖"
 
 #: nameeditdialog.cpp:71
-msgid "The predefined honorific prefixes can be extended in the settings dialog."
+msgid ""
+"The predefined honorific prefixes can be extended in the settings dialog."
 msgstr "បុព្វបទ​កិត្តិយស​ដែល​បាន​កំណត់​ជាមុន អាច​ត្រូវ​បាន​ពង្រីក​ក្នុង​ប្រអប់​កំណត់ ។"
 
 #: nameeditdialog.cpp:73
@@ -1975,7 +2170,8 @@ msgid "Honorific suffixes:"
 msgstr "បច្ច័យ​កិត្តិយស ៖"
 
 #: nameeditdialog.cpp:103
-msgid "The predefined honorific suffixes can be extended in the settings dialog."
+msgid ""
+"The predefined honorific suffixes can be extended in the settings dialog."
 msgstr "បច្ច័យ​​កិត្តិយស​ដែល​បាន​កំណត់​ជាមុន អាច​ត្រូវ​បាន​ពង្រីក​ក្នុង​ប្រអប់​កំណត់ ។"
 
 #: nameeditdialog.cpp:117
@@ -2046,10 +2242,6 @@ msgstr "ឈ្មោះ​បញ្ច្រាស"
 msgid "Other..."
 msgstr "ផ្សេង​ទៀត..."
 
-#: phoneeditwidget.cpp:176
-msgid "Add"
-msgstr "បន្ថែម"
-
 #: phoneeditwidget.cpp:293
 msgid "Edit Phone Number"
 msgstr "កែសម្រួល​លេខ​ទូរស័ព្ទ"
@@ -2063,87 +2255,89 @@ msgid "Types"
 msgstr "ប្រភេទ"
 
 #. i18n: tag text
-#. i18n: file kaddressbook_part.rc line 5
+#. i18n: file kaddressbook_part.rc line 4
 #. i18n: tag text
-#. i18n: file kaddressbookui.rc line 5
-#: rc.cpp:3 rc.cpp:30
+#. i18n: file kaddressbookui.rc line 4
+#: rc.cpp:3 rc.cpp:33
 msgid "&File"
 msgstr "ឯកសារ"
 
 #. i18n: tag text
-#. i18n: file kaddressbook_part.rc line 10
+#. i18n: file kaddressbook_part.rc line 11
 #. i18n: tag text
-#. i18n: file kaddressbookui.rc line 10
-#: rc.cpp:6 rc.cpp:33
+#. i18n: file kaddressbookui.rc line 11
+#: rc.cpp:9 rc.cpp:39
 msgid "&Import"
 msgstr "នាំ​ចូល"
 
 #. i18n: tag text
-#. i18n: file kaddressbook_part.rc line 12
+#. i18n: file kaddressbook_part.rc line 13
 #. i18n: tag text
-#. i18n: file kaddressbookui.rc line 12
-#: rc.cpp:9 rc.cpp:36
+#. i18n: file kaddressbookui.rc line 13
+#: rc.cpp:12 rc.cpp:42
 msgid "&Export"
 msgstr "នាំចេញ"
 
 #. i18n: tag text
-#. i18n: file kaddressbook_part.rc line 23
+#. i18n: file kaddressbook_part.rc line 24
 #. i18n: tag text
-#. i18n: file kaddressbookui.rc line 23
-#: rc.cpp:12 rc.cpp:39
+#. i18n: file kaddressbookui.rc line 24
+#: rc.cpp:15 rc.cpp:45
 msgid "&Edit"
 msgstr "កែសម្រួល"
 
 #. i18n: tag text
-#. i18n: file kaddressbook_part.rc line 39
+#. i18n: file kaddressbook_part.rc line 43
 #. i18n: tag text
-#. i18n: file kaddressbookui.rc line 39
-#: rc.cpp:15 rc.cpp:42
+#. i18n: file kaddressbookui.rc line 43
+#: rc.cpp:18 rc.cpp:48
 msgid "&View"
 msgstr "មើល"
 
 #. i18n: tag text
-#. i18n: file kaddressbook_part.rc line 48
-#: rc.cpp:18
+#. i18n: file kaddressbook_part.rc line 52
+#: rc.cpp:21
 msgid "Tools"
 msgstr "ឧបករណ៍"
 
 #. i18n: tag text
-#. i18n: file kaddressbook_part.rc line 52
+#. i18n: file kaddressbook_part.rc line 56
 #. i18n: tag text
-#. i18n: file kaddressbookui.rc line 52
-#: rc.cpp:21 rc.cpp:48
+#. i18n: file kaddressbookui.rc line 56
+#: rc.cpp:24 rc.cpp:54
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: tag text
-#. i18n: file kaddressbook_part.rc line 54
+#. i18n: file kaddressbook_part.rc line 58
 #. i18n: tag text
-#. i18n: file kaddressbookui.rc line 54
-#: rc.cpp:24 rc.cpp:51
-msgid "Show Extension Bar"
+#. i18n: file kaddressbookui.rc line 58
+#: rc.cpp:27 rc.cpp:57
+#, fuzzy
+#| msgid "Show Extension Bar"
+msgid "Show Extension"
 msgstr "បង្ហាញ​របារ​បន្ថែម"
 
 #. i18n: tag text
-#. i18n: file kaddressbook_part.rc line 81
+#. i18n: file kaddressbook_part.rc line 90
 #. i18n: tag text
-#. i18n: file kaddressbookui.rc line 84
-#: rc.cpp:27 rc.cpp:54
+#. i18n: file kaddressbookui.rc line 94
+#: rc.cpp:30 rc.cpp:60
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
 #. i18n: tag text
-#. i18n: file kaddressbookui.rc line 48
-#: rc.cpp:45
+#. i18n: file kaddressbookui.rc line 52
+#: rc.cpp:51
 msgid "&Tools"
 msgstr "ឧបករណ៍"
 
-#: rc.cpp:55
+#: rc.cpp:61
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "ខឹម សុខែម, ប៉ុច សុគន្ធ, អេង វណ្ណៈ, អោក ពិសិដ្ឋ"
 
-#: rc.cpp:56
+#: rc.cpp:62
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
@@ -2152,49 +2346,49 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 24
-#: rc.cpp:59 editors/imeditorwidget.cpp:372
+#: rc.cpp:65 editors/imeditorwidget.cpp:372
 msgctxt "Instant messaging"
 msgid "Edit Address"
 msgstr "កែសម្រួល​អាសយដ្ឋាន"
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 33
-#: rc.cpp:62
+#: rc.cpp:68
 msgctxt "Instant messaging"
 msgid "&Protocol:"
 msgstr "ពិធីការ ៖"
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 49
-#: rc.cpp:65
+#: rc.cpp:71
 msgctxt "Instant messaging"
 msgid "&Address:"
 msgstr "អាសយដ្ឋាន ៖"
 
 #. i18n: tag string
 #. i18n: file editors/imaddressbase.ui line 62
-#: rc.cpp:68
+#: rc.cpp:74
 msgctxt "Instant messaging"
 msgid "&Network:"
 msgstr "បណ្ដាញ ៖"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 24
-#: rc.cpp:71
+#: rc.cpp:77
 msgctxt "Instant messaging"
 msgid "IM Addresses"
 msgstr "អាសយដ្ឋាន​កម្មវិធី​ផ្ញើ​សារ​បន្ទាន់"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 46
-#: rc.cpp:74
+#: rc.cpp:80
 msgctxt "Instant messaging"
 msgid "&Set Standard"
 msgstr "កំណត់​ស្ដង់ដា"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 49
-#: rc.cpp:77
+#: rc.cpp:83
 msgctxt "Instant messaging"
 msgid ""
 "The IM Address that is set as the standard is the address that is shown in "
@@ -2205,7 +2399,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 52
-#: rc.cpp:80
+#: rc.cpp:86
 msgctxt "Instant messaging"
 msgid ""
 "<qt>Only one IM Address can be set as the standard IM Address.<br>The "
@@ -2218,42 +2412,42 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 59
-#: rc.cpp:83
+#: rc.cpp:89
 msgctxt "Instant messaging"
 msgid "&Remove"
 msgstr "យក​ចេញ"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 66
-#: rc.cpp:86
+#: rc.cpp:92
 msgctxt "Instant messaging"
 msgid "&Edit..."
 msgstr "កែសម្រួល..."
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 73
-#: rc.cpp:89
+#: rc.cpp:95
 msgctxt "Instant messaging"
 msgid "&Add..."
 msgstr "បន្ថែម..."
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 104
-#: rc.cpp:92
+#: rc.cpp:98
 msgctxt "Instant messaging"
 msgid "Protocol"
 msgstr "ពិធីការ"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 115
-#: rc.cpp:95
+#: rc.cpp:101
 msgctxt "Instant messaging"
 msgid "Address"
 msgstr "អាសយដ្ឋាន"
 
 #. i18n: tag string
 #. i18n: file editors/imeditorbase.ui line 137
-#: rc.cpp:98
+#: rc.cpp:104
 msgctxt "Instant messaging"
 msgid ""
 "<em>Note:</em> Please read the help page before adding or editing Instant "
@@ -2262,31 +2456,31 @@ msgstr "<em>ចំណាំ ៖</em> សូម​អាន​ទំព័រជ
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 16
-#: rc.cpp:101
+#: rc.cpp:107
 msgid "Appearance Page"
 msgstr "ទំព័រ​រូបរាង"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 53
-#: rc.cpp:104 printing/detailledstyle.cpp:88
+#: rc.cpp:110 printing/detailledstyle.cpp:88
 msgid "Detailed Print Style - Appearance"
 msgstr "រចនាប័ទ្ម​បោះពុម្ព​ដែល​បាន​បញ្ជាក់​លម្អិត - រូបរាង"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 74
-#: rc.cpp:107
+#: rc.cpp:113
 msgid "Font Settings"
 msgstr "ការ​កំណត់​ពុម្ពអក្សរ"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 86
-#: rc.cpp:110
+#: rc.cpp:116
 msgid "Use standard KDE fonts"
 msgstr "ប្រើ​ពុម្ពអក្សរ KDE ស្តង់ដារ"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 108
-#: rc.cpp:113
+#: rc.cpp:119
 msgid "Details font:"
 msgstr "ពុម្ពអក្សរ​លម្អិត ៖"
 
@@ -2300,73 +2494,73 @@ msgstr "ពុម្ពអក្សរ​លម្អិត ៖"
 #. i18n: file printing/ds_appearance.ui line 226
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 236
-#: rc.cpp:116 rc.cpp:122 rc.cpp:128 rc.cpp:134 rc.cpp:137
+#: rc.cpp:122 rc.cpp:128 rc.cpp:134 rc.cpp:140 rc.cpp:143
 msgid "Size:"
 msgstr "ទំហំ ៖"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 128
-#: rc.cpp:119
+#: rc.cpp:125
 msgid "Body font:"
 msgstr "ពុម្ពអក្សរ​តួ ៖"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 148
-#: rc.cpp:125
+#: rc.cpp:131
 msgid "Fixed font:"
 msgstr "ពុម្ពអក្សរ​ថេរ ៖"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 201
-#: rc.cpp:131
+#: rc.cpp:137
 msgid "Contact header font:"
 msgstr "ពុម្ពអក្សរ​បឋមកថា​ទំនាក់​ទំនង ៖"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 249
-#: rc.cpp:140
+#: rc.cpp:146
 msgid "Headlines:"
 msgstr "ចំណង​ជើង ៖"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 279
-#: rc.cpp:143
+#: rc.cpp:149
 msgid "Contact Headers"
 msgstr "បឋមកថា​ទំនាក់​ទំនង"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 291
-#: rc.cpp:146
+#: rc.cpp:152
 msgid "Use colored contact headers"
 msgstr "ប្រើ​បឋមកថា​ទំនាក់​ទំនង​ដែល​មាន​ពណ៌"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 327
-#: rc.cpp:149
+#: rc.cpp:155
 msgid "Headline background color:"
 msgstr "ពណ៌​ផ្ទៃ​ខាង​ក្រោយរបស់​​ចំណង​ជើង ៖"
 
 #. i18n: tag string
 #. i18n: file printing/ds_appearance.ui line 337
-#: rc.cpp:152
+#: rc.cpp:158
 msgid "Headline text color:"
 msgstr "ពណ៌​អត្ថបទ​ចំណង​ជើង ៖"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 16
-#: rc.cpp:155
+#: rc.cpp:161
 msgid "Appearance"
 msgstr "រូបរាង"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 28
-#: rc.cpp:158
+#: rc.cpp:164
 msgid "Miscellaneous"
 msgstr "ផ្សេងៗ"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 56
-#: rc.cpp:161
+#: rc.cpp:167
 msgid ""
 "If this box is checked, at least one page will be printed for every letter "
 "group, regardless of whether entries exist for this letter group. This is "
@@ -2379,13 +2573,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 59
-#: rc.cpp:164
+#: rc.cpp:170
 msgid "Always print pages for all tabs"
 msgstr "តែងតែ​បោះពុម្ព​ទំព័រ​សម្រាប់​ផ្ទាំង​ទាំង​អស់"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 69
-#: rc.cpp:167
+#: rc.cpp:173
 msgid ""
 "This is the minimum number of empty fields that have to be printed in "
 "addition to real entries; if this number is not reached on the first page, "
@@ -2396,7 +2590,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 76
-#: rc.cpp:170
+#: rc.cpp:176
 msgid ""
 "If you often add contacts to your printout manually before entering them "
 "into the KDE addressbook, you should set this option to a value greater than "
@@ -2410,13 +2604,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 79
-#: rc.cpp:173
+#: rc.cpp:179
 msgid "Min. number of empty fields:"
 msgstr "ចំនួន​វាល​ទទេ​អប្បបរមា ៖"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 86
-#: rc.cpp:176
+#: rc.cpp:182
 msgid ""
 "If this option is turned on, behind the contacts on a page the remaining "
 "space will be filled with empty fields so you can add contacts manually later"
@@ -2426,49 +2620,49 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 89
-#: rc.cpp:179
+#: rc.cpp:185
 msgid "Fill pages with empty address fields"
 msgstr "បំពេញ​ទំព័រ​ជា​មួយ​វាល​អាសយដ្ឋាន​ទទេ"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 102
-#: rc.cpp:182
+#: rc.cpp:188
 msgid "Print Contact's Information"
 msgstr "បោះពុម្ព​ព័ត៌មាន​របស់​ទំនាក់ទំនង"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 114
-#: rc.cpp:185
+#: rc.cpp:191
 msgid "Phone numbers"
 msgstr "លេខ​ទូរស័ព្ទ"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 124
-#: rc.cpp:188
+#: rc.cpp:194
 msgid "Email addresses"
 msgstr "អាសយដ្ឋាន​អ៊ីមែល"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 134
-#: rc.cpp:191
+#: rc.cpp:197
 msgid "Street addresses"
 msgstr "អាសយដ្ឋាន​ផ្លូវ"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 151
-#: rc.cpp:197
+#: rc.cpp:203
 msgid "Birthday"
 msgstr "ថ្ងៃកំណើត"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 185
-#: rc.cpp:200
+#: rc.cpp:206
 msgid "Letter Groups"
 msgstr "ក្រុម​សំបុត្រ"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 197
-#: rc.cpp:203
+#: rc.cpp:209
 msgid ""
 "Here you can group letters together as they are grouped in your time "
 "planner. Press 'group letter' to combine the selected letter with the letter "
@@ -2481,49 +2675,49 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 216
-#: rc.cpp:206
+#: rc.cpp:212
 msgid "Group Letter"
 msgstr "ដាក់​សំបុត្រ​ជា​ក្រុម"
 
 #. i18n: tag string
 #. i18n: file printing/rbs_appearance.ui line 223
-#: rc.cpp:209
+#: rc.cpp:215
 msgid "Ungroup Letter"
 msgstr "បំបែក​ក្រុម​សំបុត្រ"
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 10
-#: rc.cpp:212
+#: rc.cpp:218
 msgid "Automatic name parsing for new addressees"
 msgstr "ញែក​ឈ្មោះ​ដោយ​ស្វ័យ​ប្រវត្តិ សម្រាប់​អ្នក​ទទួល​សំបុត្រ​ថ្មី"
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 18
-#: rc.cpp:216
+#: rc.cpp:222
 msgid "Phone"
 msgstr "ទូរស័ព្ទ"
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 22
-#: rc.cpp:220
+#: rc.cpp:226
 msgid "Fax"
 msgstr "ទូរសារ"
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 27
-#: rc.cpp:224
+#: rc.cpp:230
 msgid "SMS"
 msgstr "សេវា​សារ​ខ្លីៗ"
 
 #. i18n: tag whatsthis
 #. i18n: file common/kaddressbook.kcfg line 28
-#: rc.cpp:227
+#: rc.cpp:233
 msgid "The script used to send a GSM SMS text message to the mobile phone"
 msgstr "ស្គ្រីបដែល​​បាន​ប្រើ​ដើម្បី​ផ្ញើ​សារ​អត្ថបទ GSM SMS ទៅ​ទូរស័ព្ទ​ចល័ត"
 
 #. i18n: tag label
 #. i18n: file common/kaddressbook.kcfg line 34
-#: rc.cpp:230
+#: rc.cpp:236
 msgid "Honor KDE single click"
 msgstr "ប្រើ​​ការចុច​តែ​មួយ​ដង​របស់ KDE"
 
@@ -2542,28 +2736,36 @@ msgid "Save only the URL to the sound file, not the whole object."
 msgstr "រក្សា​ទុក​តែ URL ទៅ​ឯកសារ​សម្លេង មិន​មែន​វត្ថុ​ទាំង​មូល​ទេ ។"
 
 #: undocmds.cpp:47
-#, kde-format
+#, fuzzy, kde-format
 #| msgid "&Delete Contact"
-msgid "Delete %1 Contacts"
-msgstr "លុប​ទំនាក់ទំនង %1"
+msgid "Delete Contact"
+msgid_plural "Delete %1 Contacts"
+msgstr[0] "លុប​ទំនាក់​ទំនង"
+msgstr[1] "លុប​ទំនាក់​ទំនង"
 
 #: undocmds.cpp:98
-#, kde-format
+#, fuzzy, kde-format
 #| msgid "Paste %1 Contacts"
-msgid "Paste %1 Contacts"
-msgstr "បិទភ្ជាប់​ទំនាក់ទំនង %1"
+msgid "Paste Contact"
+msgid_plural "Paste %1 Contacts"
+msgstr[0] "បិទភ្ជាប់​ទំនាក់ទំនង %1"
+msgstr[1] "បិទភ្ជាប់​ទំនាក់ទំនង %1"
 
 #: undocmds.cpp:154
-#, kde-format
+#, fuzzy, kde-format
 #| msgid "&New Contact..."
-msgid "New %1 Contacts"
-msgstr "ទំនាក់ទំនង​ថ្មី %1"
+msgid "New Contact"
+msgid_plural "New %1 Contacts"
+msgstr[0] "ទំនាក់​ទំនង​ថ្មី..."
+msgstr[1] "ទំនាក់​ទំនង​ថ្មី..."
 
 #: undocmds.cpp:223
-#, kde-format
+#, fuzzy, kde-format
 #| msgid "Cut %1 Contacts"
-msgid "Cut %1 Contacts"
-msgstr "កាត់​ទំនាក់ទំនង %1"
+msgid "Cut Contact"
+msgid_plural "Cut %1 Contacts"
+msgstr[0] "កាត់​ទំនាក់ទំនង %1"
+msgstr[1] "កាត់​ទំនាក់ទំនង %1"
 
 #: viewconfigurefieldspage.cpp:205
 msgid "Select Fields to Display"
@@ -2618,10 +2820,12 @@ msgid "Confirm Delete"
 msgstr "អះអាង​ការលុប"
 
 #: viewmanager.cpp:442
-#, kde-format
+#, fuzzy, kde-format
 #| msgid "Import %1 contacts into your addressbook?"
-msgid "Import %1 contacts into your addressbook?"
-msgstr "នាំចូល​ទំនាក់ទំនង %1 ទៅក្នុង​សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក​ឬ ?"
+msgid "Import one contact into your addressbook?"
+msgid_plural "Import %1 contacts into your addressbook?"
+msgstr[0] "នាំចូល​ទំនាក់ទំនង %1 ទៅក្នុង​សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក​ឬ ?"
+msgstr[1] "នាំចូល​ទំនាក់ទំនង %1 ទៅក្នុង​សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក​ឬ ?"
 
 #: viewmanager.cpp:443
 msgid "Import Contacts?"
@@ -2634,6 +2838,11 @@ msgstr "នាំចូល"
 #: viewmanager.cpp:443 xxport/kde2_xxport.cpp:58
 msgid "Do Not Import"
 msgstr "កុំនាំចូល"
+
+#: viewmanager.cpp:555 views/configuretableviewdialog.cpp:120
+#: xxport/csvimportdialog.cpp:435
+msgid "None"
+msgstr "គ្មាន"
 
 #: viewmanager.cpp:556
 msgid "Unfiled"
@@ -2742,10 +2951,12 @@ msgid "Export the entire address book"
 msgstr "នាំចេញ​សៀវភៅ​អាសយដ្ឋាន​ទាំង​មូល"
 
 #: xxportselectdialog.cpp:194
-#, kde-format
+#, fuzzy, kde-format
 #| msgid "&Selected contacts"
-msgid "&Selected contacts (%1 selected)"
-msgstr "ទំនាក់ទំនង​ដែលបាន​ជ្រើស (បានជ្រើស %1)"
+msgid "&Selected contact"
+msgid_plural "&Selected contacts (%1 selected)"
+msgstr[0] "ទំនាក់​ទំនង​ដែល​បាន​ជ្រើស"
+msgstr[1] "ទំនាក់​ទំនង​ដែល​បាន​ជ្រើស"
 
 #: xxportselectdialog.cpp:195
 msgid ""
@@ -2872,12 +3083,43 @@ msgid "Add Address"
 msgstr "បន្ថែម​អាសយដ្ឋាន"
 
 #: editors/imeditorwidget.cpp:433
-#, kde-format
+#, fuzzy, kde-format
 #| msgctxt "Instant messaging"
 #| msgid "Do you really want to delete the %1 selected addresses?"
 msgctxt "Instant messaging"
-msgid "Do you really want to delete the %1 selected addresses?"
-msgstr "តើអ្នក​ពិតជាចង់​លុប​អាសយដ្ឋាន %1 ​ដែលបានជ្រើស​ឬ ?"
+msgid "Do you really want to delete the selected address?"
+msgid_plural "Do you really want to delete the %1 selected addresses?"
+msgstr[0] "តើអ្នក​ពិតជាចង់​លុប​អាសយដ្ឋាន %1 ​ដែលបានជ្រើស​ឬ ?"
+msgstr[1] "តើអ្នក​ពិតជាចង់​លុប​អាសយដ្ឋាន %1 ​ដែលបានជ្រើស​ឬ ?"
+
+#: features/distributionlistngwidget.cpp:108
+#, fuzzy
+#| msgid "Distribution List Editor"
+msgid "Distribution List Editor NG"
+msgstr "ឧបករណ៍​​កែម្រួល​​បញ្ជី​ចែកចាយ"
+
+#: features/distributionlistngwidget.cpp:122
+#, fuzzy
+#| msgid "New Distribution List"
+msgid "Distribution Lists"
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
+
+#: features/distributionlistngwidget.cpp:155
+#, fuzzy
+#| msgid "New Distribution List"
+msgid "New Distribution List..."
+msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
+
+#: features/distributionlistngwidget.cpp:159
+#: features/distributionlistwidget.cpp:328
+msgid "Delete"
+msgstr "លុប"
+
+#: features/distributionlistngwidget.cpp:220
+#, fuzzy
+#| msgid "&All contacts"
+msgid "All Contacts"
+msgstr "ទំនាក់​ទំនង​ទាំង​អស់"
 
 #: features/distributionlistwidget.cpp:124
 msgid "Yes"
@@ -2915,10 +3157,6 @@ msgstr "ផ្លាស់ប្ដូរ​អ៊ីមែល..."
 msgid "Remove Contact"
 msgstr "យក​ទំនាក់​ទំនង​ចេញ"
 
-#: features/distributionlistwidget.cpp:241
-msgid "New Distribution List"
-msgstr "បញ្ជី​ចែកចាយ​ថ្មី"
-
 #: features/distributionlistwidget.cpp:242
 #: features/distributionlistwidget.cpp:289
 msgid "Please enter name:"
@@ -2941,15 +3179,13 @@ msgstr "ឈ្មោះ​មាន​រួច​ហើយ ។"
 msgid "<qt>Delete distribution list <b>%1</b>?</qt>"
 msgstr "<qt>លុប​បញ្ជី​ចែកចាយ <b>%1</b>ឬទេ ?</qt>"
 
-#: features/distributionlistwidget.cpp:328
-msgid "Delete"
-msgstr "លុប"
-
 #: features/distributionlistwidget.cpp:494
-#, kde-format
+#, fuzzy, kde-format
 #| msgid "Count: %1 contacts"
-msgid "Count: %1 contacts"
-msgstr "រាប់ ៖ %1 ទំនាក់​ទំនង"
+msgid "Count: %1 contact"
+msgid_plural "Count: %1 contacts"
+msgstr[0] "រាប់ ៖ %1 ទំនាក់​ទំនង"
+msgstr[1] "រាប់ ៖ %1 ទំនាក់​ទំនង"
 
 #: features/distributionlistwidget.cpp:554
 msgid "Distribution List Editor"
@@ -3277,7 +3513,8 @@ msgstr ""
 msgid ""
 "Double click or press RETURN on a item to select a color for the related "
 "strings in the view."
-msgstr "ចុច​ទ្វេដង ឬ ចុច RETURN នៅ​លើ​ធាតុ​មួយ ​ដើម្បី​ជ្រើស​ពណ៌​មួយ​សម្រាប់​ខ្សែអក្សរ​ក្នុង​ទិដ្ឋភាព​ដែល​ទាក់ទង ។"
+msgstr ""
+"ចុច​ទ្វេដង ឬ ចុច RETURN នៅ​លើ​ធាតុ​មួយ ​ដើម្បី​ជ្រើស​ពណ៌​មួយ​សម្រាប់​ខ្សែអក្សរ​ក្នុង​ទិដ្ឋភាព​ដែល​ទាក់ទង ។"
 
 #: views/configurecardviewdialog.cpp:272
 msgid "&Enable custom fonts"
@@ -3690,7 +3927,8 @@ msgstr "ការនាំចូល​ទូរស័ព្ទ​ចល័ត"
 msgid ""
 "<qt><center>Establishing connection to the Mobile Phone.<br /><br />Please "
 "wait...</center></qt>"
-msgstr "<qt><center>កំពុង​បង្កើត​ការ​តភ្ជាប់​ទៅ​ទូរស័ព្ទ​ចល័ត ។<br><br>សូម​រង់​ចាំ...</center></qt>"
+msgstr ""
+"<qt><center>កំពុង​បង្កើត​ការ​តភ្ជាប់​ទៅ​ទូរស័ព្ទ​ចល័ត ។<br><br>សូម​រង់​ចាំ...</center></qt>"
 
 #: xxport/gnokii_xxport.cpp:498
 msgid "&Stop Import"
@@ -3925,3 +4163,10 @@ msgstr "វាល​ផ្សេង​ទៀត"
 msgid "Encryption keys"
 msgstr "កូនសោ​អ៊ិនគ្រីប"
 
+#~| msgid "&Delete Contact"
+#~ msgid "Delete %1 Contacts"
+#~ msgstr "លុប​ទំនាក់ទំនង %1"
+
+#~| msgid "&New Contact..."
+#~ msgid "New %1 Contacts"
+#~ msgstr "ទំនាក់ទំនង​ថ្មី %1"
