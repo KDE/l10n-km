@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-09 07:18+0100\n"
+"POT-Creation-Date: 2008-01-10 10:26+0100\n"
 "PO-Revision-Date: 2008-01-10 11:31+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -88,7 +88,6 @@ msgid "Network and Downloads"
 msgstr "បណ្ដាញ និង​ការ​ទាញយក"
 
 #: conf/preferencesdialog.cpp:51
-#| msgid "Advanced"
 msgctxt "Advanced Options"
 msgid "Advanced"
 msgstr "កម្រិត​ខ្ពស់"
@@ -109,43 +108,53 @@ msgstr "ជម្រើស​កម្មវិធី​ជំនួយ​កា
 msgid "Folder and extension can not be empty."
 msgstr "ថត និង​ផ្នែក​បន្ថែម​មិន​អាច​ទទេ​បាន​ឡើយ ។"
 
-#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:115 core/kget.cpp:450
-#: core/kget.cpp:736 ui/transferhistory.cpp:168 ui/transferhistory.cpp:214
+#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:117 core/kget.cpp:450
+#: core/kget.cpp:736 ui/transferhistory.cpp:177 ui/transferhistory.cpp:224
 msgid "Error"
 msgstr "កំហុស"
 
 #: core/transfertreemodel.cpp:295
-#| msgid "Name"
 msgctxt "name of download"
 msgid "Name"
 msgstr "ឈ្មោះ"
 
 #: core/transfertreemodel.cpp:297
-#| msgid "Status"
 msgctxt "status of download"
 msgid "Status"
 msgstr "ស្ថានភាព"
 
 #: core/transfertreemodel.cpp:299
-#| msgid "Size"
 msgctxt "size of download"
 msgid "Size"
 msgstr "ទំហំ"
 
 #: core/transfertreemodel.cpp:301
-#| msgid "Progress"
 msgctxt "progress of download"
 msgid "Progress"
 msgstr "វឌ្ឍនភាព"
 
 #: core/transfertreemodel.cpp:303
-#| msgid "Speed"
 msgctxt "speed of download"
 msgid "Speed"
 msgstr "ល្បឿន"
 
-#: core/transfergroup.cpp:115 ui/transferhistory.cpp:168
-#: ui/transferhistory.cpp:214
+#: core/transfergroup.cpp:112 ui/transferhistory.cpp:52
+#, fuzzy
+#| msgctxt "transfer state: finished"
+#| msgid "Finished"
+msgctxt "the transfer has been finished"
+msgid "Finished"
+msgstr "បាន​បញ្ចប់"
+
+#: core/transfergroup.cpp:114
+#, fuzzy
+#| msgid "Aborted"
+msgctxt "the transfer has been aborted"
+msgid "Aborted"
+msgstr "បាន​បោះបង់"
+
+#: core/transfergroup.cpp:117 ui/transferhistory.cpp:177
+#: ui/transferhistory.cpp:224
 msgid "History-File cannot be opened correctly!"
 msgstr "ឯកសារ​ប្រវត្តិ​មិន​អាច​ត្រូវ​បានបើក​យ៉ាង​ត្រឹមត្រូវ​ទេ !"
 
@@ -166,19 +175,19 @@ msgid "%1/s"
 msgstr "%1/វិ."
 
 #: core/transfergrouphandler.cpp:107
-#, kde-format
-#| msgid "%1 Items"
+#, fuzzy, kde-format
+#| msgid "1 Item"
 msgid "1 Item"
-msgstr "ធាតុ ១"
+msgid_plural "%1 Items"
+msgstr[0] "ធាតុ ១"
+msgstr[1] "ធាតុ ១"
 
 #: core/transfergrouphandler.cpp:316
-#| msgid "Start"
 msgctxt "start transfergroup downloads"
 msgid "Start"
 msgstr "ចាប់ផ្ដើម"
 
 #: core/transfergrouphandler.cpp:322
-#| msgid "Stop"
 msgctxt "stop transfergroup downloads"
 msgid "Stop"
 msgstr "បញ្ឈប់"
@@ -197,13 +206,11 @@ msgstr "ឥឡូវ KGet បាន​បិទ ព្រោះ​បាន​�
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:60
 #: transfer-plugins/bittorrent/bttransfer.cpp:146
 #: transfer-plugins/bittorrent/bttransfer.cpp:239
-#| msgid "Stopped"
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "បាន​បញ្ឈប់"
 
 #: core/transfer.cpp:54
-#| msgid "Delayed"
 msgctxt "transfer state: delayed"
 msgid "Delayed"
 msgstr "បានពន្យារ​ពេល"
@@ -213,7 +220,6 @@ msgstr "បានពន្យារ​ពេល"
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:198
 #: transfer-plugins/bittorrent/bttransfer.cpp:141
 #: transfer-plugins/bittorrent/bttransfer.cpp:236
-#| msgid "Finished"
 msgctxt "transfer state: finished"
 msgid "Finished"
 msgstr "បាន​បញ្ចប់"
@@ -293,10 +299,10 @@ msgstr ""
 
 #: core/kget.cpp:894
 #, kde-format
-#| msgid ""
-#| "<html><p>KLibLoader could not load the plugin:<br/><i>%1</i></p></html>"
-msgid "<html><p>KPluginFactory could not load the plugin:<br/><i>%1</i></p></html>"
-msgstr "<html><p>KPluginFactory មិនអាច​ផ្ទុក​កម្មវិធី​ជំនួយ ៖<br/><i>%1 បាន​ទេ</i></p></html>"
+msgid ""
+"<html><p>KPluginFactory could not load the plugin:<br/><i>%1</i></p></html>"
+msgstr ""
+"<html><p>KPluginFactory មិនអាច​ផ្ទុក​កម្មវិធី​ជំនួយ ៖<br/><i>%1 បាន​ទេ</i></p></html>"
 
 #: core/kget.cpp:911
 #, kde-format
@@ -327,7 +333,6 @@ msgstr ""
 #: transfer-plugins/kio/transferKio.cpp:35
 #: transfer-plugins/metalink/metalink.cpp:37
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:42
-#| msgid "Connecting.."
 msgctxt "transfer state: connecting"
 msgid "Connecting.."
 msgstr "កំពុង​តភ្ជាប់..."
@@ -338,6 +343,11 @@ msgid "Aborted"
 msgstr "បាន​បោះបង់"
 
 #: transfer-plugins/kio/transferKio.cpp:153
+#, fuzzy
+#| msgid "Downloading.."
+msgid "Downloading..."
+msgstr "កំពុង​ទាញយក..."
+
 #: transfer-plugins/kio/transferKio.cpp:167
 #: transfer-plugins/kio/transferKio.cpp:182
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:240
@@ -347,7 +357,6 @@ msgid "Downloading.."
 msgstr "កំពុង​ទាញយក..."
 
 #: transfer-plugins/metalink/metalink.cpp:122
-#| msgid "Aborted"
 msgctxt "transfer state: aborted"
 msgid "Aborted"
 msgstr "បាន​បោះបង់"
@@ -370,7 +379,6 @@ msgstr "Url ៖"
 
 #: transfer-plugins/bittorrent/advanceddetails/torrentfiletreemodel.cpp:256
 #: transfer-plugins/bittorrent/advanceddetails/torrentfilelistmodel.cpp:71
-#| msgid "&File"
 msgid "File"
 msgstr "ឯកសារ"
 
@@ -380,38 +388,31 @@ msgid "Size"
 msgstr "ទំហំ"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:61
-#| msgid "Open File"
 msgctxt "Open file"
 msgid "Open"
 msgstr "បើក​"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:63
-#| msgid "Downloads"
 msgid "Download first"
 msgstr "ទាញ​យក​ដំបូង"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:64
-#| msgid "Download Folder"
 msgid "Download normally"
 msgstr "​ទាញយក​ធម្មតា"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:65
-#| msgid "Downloads"
 msgid "Download last"
 msgstr "ទាញ​យក​ចុងក្រោយ"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:67
-#| msgid "New Download"
 msgid "Do Not Download"
 msgstr "កុំទាញយក"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:68
-#| msgid "Delete Selected"
 msgid "Delete File(s)"
 msgstr "លុប​ឯកសារ"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:70
-#| msgid "Open File"
 msgid "Move File"
 msgstr "ផ្លាស់ទី​ឯកសារ"
 
@@ -420,7 +421,8 @@ msgid "You will lose all data in this file, are you sure you want to do this ?"
 msgstr "អ្នក​នឹង​បាត់បង់​ទិន្នន័យ​ទាំងអស់​នៅ​ក្នុង​ឯកសារ​នេះ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ធ្វើ​ដូចនេះ​ឬ ?"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:245
-msgid "You will lose all data in these files, are you sure you want to do this ?"
+msgid ""
+"You will lose all data in these files, are you sure you want to do this ?"
 msgstr "អ្នក​នឹង​បាត់បង់​ទិន្នន័យ​ទាំងអស់​នៅ​ក្នុង​ឯកសារ​ទាំង​នេះ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ធ្វើ​ដូច​នេះ​ឬ ?"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:259
@@ -430,19 +432,16 @@ msgstr "ជ្រើស​ថត​ត្រូវ​ផ្លាស់ទី​
 
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:53
 #, kde-format
-#| msgid "Details for: %1"
 msgid "Advanced-Details for %1"
 msgstr "កម្រិត​ខ្ពស់-សេចក្ដីលម្អិត​សម្រាប់ %1"
 
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:57
 #, kde-format
-#| msgid "Details for: %1"
 msgid "Advanced Details for %1"
 msgstr "សេចក្ដី​លម្អិត​កម្រិត​ខ្ពស់​សម្រាប់ %1"
 
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:65
 #: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:194
-#| msgid "&File"
 msgid "Files"
 msgstr "ឯកសារ"
 
@@ -460,7 +459,6 @@ msgid "Chunks"
 msgstr "ចំណិត"
 
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:73
-#| msgid "Transfers:"
 msgid "Trackers"
 msgstr "កម្មវិធី​តាមដាន"
 
@@ -471,9 +469,6 @@ msgstr "មិនអាច​បន្ថែម​កម្មវិធី​ត
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:92
 #: transfer-plugins/bittorrent/bttransfer.cpp:201
-#| msgid ""
-#| "Malformed URL:\n"
-#| "%1"
 msgid "Malformed URL."
 msgstr "URL ត្រឹមត្រូវ ។"
 
@@ -511,12 +506,10 @@ msgstr "ម៉ាស៊ីន​ភ្ញៀវ"
 
 #: transfer-plugins/bittorrent/advanceddetails/peerview.cpp:153
 #: transfer-plugins/bittorrent/advanceddetails/chunkdownloadmodel.cpp:192
-#| msgid "Speed"
 msgid "Down Speed"
 msgstr "បន្ថយ​ល្បឿន"
 
 #: transfer-plugins/bittorrent/advanceddetails/peerview.cpp:154
-#| msgid "Speed"
 msgid "Up Speed"
 msgstr "បង្កើន​ល្បឿន"
 
@@ -537,7 +530,6 @@ msgid "DHT"
 msgstr "DHT"
 
 #: transfer-plugins/bittorrent/advanceddetails/peerview.cpp:159
-#| msgid "Source:"
 msgid "Score"
 msgstr "ពិន្ទុ"
 
@@ -550,7 +542,6 @@ msgid "Requests"
 msgstr "សំណើ"
 
 #: transfer-plugins/bittorrent/advanceddetails/peerview.cpp:162
-#| msgid "Downloads"
 msgid "Downloaded"
 msgstr "បាន​ទាញ​យក"
 
@@ -658,22 +649,18 @@ msgid "Available"
 msgstr "មាន"
 
 #: transfer-plugins/bittorrent/bttransferfactory.cpp:74
-#| msgid "Advanced Options"
 msgid "&Advanced Details"
 msgstr "សេចក្ដី​លម្អិ​ត​កម្រិត​ខ្ពស់"
 
 #: transfer-plugins/bittorrent/bttransferfactory.cpp:80
-#| msgid "Speed limit"
 msgid "&Speed Limits"
 msgstr "ដែន​កំណត់​ល្បឿន"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:84
-#| msgid "Downloading.."
 msgid "Downloading Torrent-File.."
 msgstr "កំពុងទាញ​​​​​​យក​ឯកសារ Torrent..."
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:220
-#| msgid "Downloading.."
 msgctxt "transfer state: downloading"
 msgid "Downloading.."
 msgstr "កំពុង​ទាញយក..."
@@ -691,13 +678,11 @@ msgstr "កំពុង​បណ្ដុះ..."
 msgid "Transfer details"
 msgstr "សេចក្ដី​លម្អិត​នៃ​ការ​ផ្ទេរ"
 
-#: ui/transferhistory.cpp:30
-#| msgid "Transfer List"
+#: ui/transferhistory.cpp:33
 msgid "Transfer History"
 msgstr "ប្រវត្តិ​ផ្ទេរ"
 
 #: ui/transferdetails.cpp:36
-#| msgid "Source:"
 msgctxt "@label transfer source"
 msgid "Source:"
 msgstr "ប្រភព ៖"
@@ -723,7 +708,6 @@ msgid " of "
 msgstr " នៃ "
 
 #: ui/droptarget.cpp:85
-#| msgid "Sticky"
 msgctxt "fix position for droptarget"
 msgid "Sticky"
 msgstr "ស្អិត"
@@ -784,7 +768,6 @@ msgid "Transfer details:"
 msgstr "សេចក្ដី​លម្អិត​ការ​ផ្ទេរ ៖"
 
 #: extensions/konqueror/kget_linkview.h:85
-#| msgid "All"
 msgctxt "filter: show all file types"
 msgid "All"
 msgstr "ទាំងអស់"
@@ -833,51 +816,50 @@ msgstr "ត្រង​ឯកសារ​នៅ​ទីនេះ..."
 msgid "Show:"
 msgstr "បង្ហាញ ៖"
 
-#: extensions/konqueror/kget_linkview.cpp:92
-#: extensions/konqueror/kget_linkview.cpp:249
+#: extensions/konqueror/kget_linkview.cpp:90
+#: extensions/konqueror/kget_linkview.cpp:247
 msgid "Select all"
 msgstr "ជ្រើស​ទាំងអស់"
 
-#: extensions/konqueror/kget_linkview.cpp:93
+#: extensions/konqueror/kget_linkview.cpp:91
 msgid "Show web content"
 msgstr "បង្ហាញ​មាតិកា​បណ្ដាញ"
 
-#: extensions/konqueror/kget_linkview.cpp:94
+#: extensions/konqueror/kget_linkview.cpp:92
 msgid "Download checked"
 msgstr "បាន​ពិនិត្យ​ការ​ទាញយក"
 
-#: extensions/konqueror/kget_linkview.cpp:96
+#: extensions/konqueror/kget_linkview.cpp:94
 msgid "Cancel"
 msgstr "បោះបង់"
 
-#: extensions/konqueror/kget_linkview.cpp:132
+#: extensions/konqueror/kget_linkview.cpp:130
 msgid "Auxiliar header"
 msgstr "បឋមកថា​ជំនួយ"
 
-#: extensions/konqueror/kget_linkview.cpp:133
+#: extensions/konqueror/kget_linkview.cpp:131
 msgid "File Name"
 msgstr "ឈ្មោះ​ឯកសារ"
 
-#: extensions/konqueror/kget_linkview.cpp:134
+#: extensions/konqueror/kget_linkview.cpp:132
 msgid "Description"
 msgstr "សេចក្ដី​ពិពណ៌នា"
 
-#: extensions/konqueror/kget_linkview.cpp:135
-#| msgid "File Type"
+#: extensions/konqueror/kget_linkview.cpp:133
 msgctxt "list header: type of file"
 msgid "File Type"
 msgstr "ប្រភេទ​ឯកសារ"
 
-#: extensions/konqueror/kget_linkview.cpp:136
+#: extensions/konqueror/kget_linkview.cpp:134
 msgid "Location (URL)"
 msgstr "ទីតាំង (URL)"
 
-#: extensions/konqueror/kget_linkview.cpp:197
+#: extensions/konqueror/kget_linkview.cpp:195
 #, kde-format
 msgid "Links in: %1 - KGet"
 msgstr "តំណ​ក្នុង ៖ %1 - KGet"
 
-#: extensions/konqueror/kget_linkview.cpp:249
+#: extensions/konqueror/kget_linkview.cpp:247
 msgid "Select all filtered"
 msgstr "ជ្រើស​ឯកសារ​ដែល​បាន​ត្រង​ទាំងអស់"
 
@@ -1004,7 +986,6 @@ msgid "Use KGet as Konqueror Download Manager"
 msgstr "ប្រើ KGet ជា​កម្មវិធី​គ្រប់គ្រង​ការ​ទាញយក​របស់ Konqueror"
 
 #: mainwindow.cpp:164
-#| msgid "Delete Selected"
 msgctxt "delete selected transfer item"
 msgid "Delete Selected"
 msgstr "លុប​អ្វី​​ដែល​បាន​ជ្រើស"
@@ -1050,7 +1031,6 @@ msgid "Copy URL to Clipboard"
 msgstr "ចម្លង URL ទៅ​ក្ដារ​តម្បៀត​ខ្ទាស់"
 
 #: mainwindow.cpp:234
-#| msgid "Transfer List"
 msgid "&Transfer History"
 msgstr "ប្រវត្តិ​ផ្ទេរ"
 
@@ -1473,14 +1453,12 @@ msgstr "សមាមាត្រ​ដែល​បានចែករំលែក
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 110
 #: rc.cpp:195
-#| msgid "Default Folder"
 msgid "Default Torrent-Folder:"
 msgstr "ថត Torrent លំនាំដើម ៖"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btsettingswidget.ui line 127
 #: rc.cpp:198
-#| msgid "Default Folder"
 msgid "Default temporary folder"
 msgstr "ថត​បណ្ដោះ​អាសន្ន​លំនាំដើម"
 
@@ -1514,7 +1492,6 @@ msgstr "កា​រទាញ​យក​បច្ចុប្បន្ន ៖"
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 163
 #: rc.cpp:216 rc.cpp:309
-#| msgid "Downloads"
 msgid "Downloaded:"
 msgstr "បានទាញ​យក ៖"
 
@@ -1538,7 +1515,6 @@ msgstr "ឆ្វេង ៖"
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui line 203
 #: rc.cpp:225
-#| msgid "Size"
 msgid "Size:"
 msgstr "ទំហំ ៖"
 
@@ -1577,7 +1553,6 @@ msgstr "បន្ថែម​កម្មវិធី​តាមដាន"
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/advanceddetails/trackerview.ui line 144
 #: rc.cpp:249
-#| msgid "Rename transfer"
 msgid "Remove Tracker"
 msgstr "យក​កម្មវិធី​តាមដាន​ចេញ"
 
@@ -1596,14 +1571,12 @@ msgstr "ស្ដារ​លំនាំ​ដើម"
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btspeedlimits.ui line 13
 #: rc.cpp:258
-#| msgid "Speed limit"
 msgid "Bittorrent-Speedlimits"
 msgstr "ដែន​កំណត់​ល្បឿន​របស់ Bittorrent"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btspeedlimits.ui line 19
 #: rc.cpp:261
-#| msgid "Downloads"
 msgid "Download-Limit:"
 msgstr "ដែន​កំណត់​ទាញ​យក ៖"
 
@@ -1616,7 +1589,6 @@ msgstr "ដែន​កំណត់​ផ្ទុក​ឡើង ៖"
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btspeedlimits.ui line 65
 #: rc.cpp:273
-#| msgid "Speed limit"
 msgid "Speed-Limits"
 msgstr "ដែន​កំណត់​ល្បឿន"
 
@@ -1629,14 +1601,12 @@ msgstr "សមាមាត្រ​ដែល​បានចែករំលែក
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 29
 #: rc.cpp:279
-#| msgid "Status"
 msgid "Stats"
 msgstr "ស្ថានភាព"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 47
 #: rc.cpp:282
-#| msgid "Speed"
 msgid "Seeders:"
 msgstr "ឧបករណ៍​បណ្ដុះ ៖"
 
@@ -1658,14 +1628,12 @@ msgstr "ឧបករណ៍​បណ្ដុះ ៖"
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 212
 #: rc.cpp:285 rc.cpp:291 rc.cpp:297 rc.cpp:303 rc.cpp:312 rc.cpp:318
 #: rc.cpp:324 rc.cpp:330
-#| msgid "<icon>"
 msgid "<n>"
 msgstr "<n>"
 
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 73
 #: rc.cpp:288
-#| msgid "Download checked"
 msgid "Download-Speed:"
 msgstr "ល្បឿន​ទាញ​យក ៖"
 
@@ -1684,7 +1652,6 @@ msgstr "ល្បឿន​ផ្ទុកឡើង ៖"
 #. i18n: tag string
 #. i18n: file transfer-plugins/bittorrent/btdetailswidgetfrm.ui line 191
 #: rc.cpp:321
-#| msgid "All"
 msgctxt "all chunks"
 msgid "All:"
 msgstr "ទាំងអស់ ៖"
@@ -1694,7 +1661,6 @@ msgstr "ទាំងអស់ ៖"
 #. i18n: tag string
 #. i18n: file ui/transferdetailsfrm.ui line 71
 #: rc.cpp:333 rc.cpp:357
-#| msgid "Source:"
 msgctxt "source-file"
 msgid "Source:"
 msgstr "ប្រភព ៖"
@@ -1744,14 +1710,14 @@ msgstr "<speed>"
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 47
 #: rc.cpp:375
-#| msgid "Source:"
-msgid "Source"
+#, fuzzy
+#| msgid "Source"
+msgid "Source-File"
 msgstr "ប្រភព"
 
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 52
 #: rc.cpp:378
-#| msgid "Open Destination"
 msgid "Destination"
 msgstr "ទិសដៅ"
 
@@ -1764,71 +1730,81 @@ msgstr "ពេលវេលា"
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 62
 #: rc.cpp:384
-#| msgid "Start"
-msgid "State"
+#, fuzzy
+#| msgid "File"
+msgid "File-Size"
+msgstr "ឯកសារ"
+
+#. i18n: tag string
+#. i18n: file ui/transferhistory.ui line 67
+#: rc.cpp:387
+#, fuzzy
+#| msgctxt "status of download"
+#| msgid "Status"
+msgid "Status"
 msgstr "ស្ថានភាព"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 78
-#: rc.cpp:387
+#. i18n: file ui/transferhistory.ui line 83
+#: rc.cpp:390
 msgid "Clear History"
 msgstr "ជ្រះ​ប្រវត្តិ"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 104
-#: rc.cpp:390
-#| msgid "Filter files here..."
+#. i18n: file ui/transferhistory.ui line 109
+#: rc.cpp:393
 msgid "Filter history..."
 msgstr "ប្រវត្តិ​តម្រង..."
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 113
-#: rc.cpp:393
-#| msgid "Delete Selected"
+#. i18n: file ui/transferhistory.ui line 118
+#: rc.cpp:396
 msgctxt "delete selected transfer"
 msgid "Delete Selected"
 msgstr "លុប​អ្វី​ដែល​បានជ្រើស"
 
 #. i18n: tag string
-#. i18n: file ui/transferhistory.ui line 118
-#: rc.cpp:396
-#| msgid "Downloads"
+#. i18n: file ui/transferhistory.ui line 123
+#: rc.cpp:399
 msgid "Download"
 msgstr "​ទាញយក"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 4
-#: rc.cpp:399
+#: rc.cpp:402
 msgid "&File"
 msgstr "ឯកសារ"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 14
-#: rc.cpp:402
+#: rc.cpp:405
 msgid "&Downloads"
 msgstr "ទាញយក"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 23
-#: rc.cpp:405
+#: rc.cpp:408
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 35
-#: rc.cpp:408
+#: rc.cpp:411
 msgid "&Help"
 msgstr "ជំនួយ"
 
 #. i18n: tag text
 #. i18n: file ui/kgetui.rc line 38
-#: rc.cpp:411
+#: rc.cpp:414
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
 #. i18n: tag Text
 #. i18n: file extensions/konqueror/kget_plug_in.rc line 4
-#: rc.cpp:414
+#: rc.cpp:417
 msgid "&Tools"
 msgstr "ឧបករណ៍"
 
+#~| msgid "Start"
+#~ msgid "State"
+#~ msgstr "ស្ថានភាព"
