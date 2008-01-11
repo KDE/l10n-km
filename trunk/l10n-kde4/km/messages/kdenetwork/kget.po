@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-01-10 10:26+0100\n"
+"POT-Creation-Date: 2008-01-11 09:44+0100\n"
 "PO-Revision-Date: 2008-01-11 10:13+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: khmer <support@khmeros.info>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: 1\n"
 
 #: conf/transfersgroupwidget.cpp:87 core/transfergrouphandler.cpp:187
-#: core/kget.cpp:580
+#: core/kget.cpp:581
 msgid "My Downloads"
 msgstr "ការ​ទាញយក​របស់​ខ្ញុំ"
 
@@ -108,8 +108,8 @@ msgstr "ជម្រើស​កម្មវិធី​ជំនួយ​កា
 msgid "Folder and extension can not be empty."
 msgstr "ថត និង​ផ្នែក​បន្ថែម​មិន​អាច​ទទេ​បាន​ឡើយ ។"
 
-#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:117 core/kget.cpp:450
-#: core/kget.cpp:736 ui/transferhistory.cpp:177 ui/transferhistory.cpp:224
+#: conf/dlgdirectories.cpp:140 core/transfergroup.cpp:117 core/kget.cpp:451
+#: core/kget.cpp:753 ui/transferhistory.cpp:177 ui/transferhistory.cpp:224
 msgid "Error"
 msgstr "កំហុស"
 
@@ -139,14 +139,11 @@ msgid "Speed"
 msgstr "ល្បឿន"
 
 #: core/transfergroup.cpp:112 ui/transferhistory.cpp:52
-#| msgctxt "transfer state: finished"
-#| msgid "Finished"
 msgctxt "the transfer has been finished"
 msgid "Finished"
 msgstr "បាន​បញ្ចប់"
 
 #: core/transfergroup.cpp:114
-#| msgid "Aborted"
 msgctxt "the transfer has been aborted"
 msgid "Aborted"
 msgstr "បាន​បោះបង់"
@@ -173,9 +170,12 @@ msgid "%1/s"
 msgstr "%1/វិ."
 
 #: core/transfergrouphandler.cpp:107
-#| msgid "1 Item"
-msgid "%1 Items"
-msgstr "ធាតុ %1"
+#, fuzzy, kde-format
+#| msgid "%1 Items"
+msgid "1 Item"
+msgid_plural "%1 Items"
+msgstr[0] "ធាតុ %1"
+msgstr[1] "ធាតុ %1"
 
 #: core/transfergrouphandler.cpp:316
 msgctxt "start transfergroup downloads"
@@ -187,11 +187,11 @@ msgctxt "stop transfergroup downloads"
 msgid "Stop"
 msgstr "បញ្ឈប់"
 
-#: core/kget.h:54 ui/droptarget.cpp:92
+#: core/kget.h:55 ui/droptarget.cpp:92
 msgid "Quit KGet"
 msgstr "ចេញ​ពី KGet"
 
-#: core/kget.h:55
+#: core/kget.h:56
 msgid "KGet quits now because all downloads have been completed."
 msgstr "ឥឡូវ KGet បាន​បិទ ព្រោះ​បាន​បញ្ចប់​ការ​ទាញយក​ទាំងអស់​ហើយ ។"
 
@@ -199,8 +199,8 @@ msgstr "ឥឡូវ KGet បាន​បិទ ព្រោះ​បាន​�
 #: transfer-plugins/kio/transferKio.cpp:53
 #: transfer-plugins/metalink/metalink.cpp:53
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:60
-#: transfer-plugins/bittorrent/bttransfer.cpp:146
-#: transfer-plugins/bittorrent/bttransfer.cpp:239
+#: transfer-plugins/bittorrent/bttransfer.cpp:167
+#: transfer-plugins/bittorrent/bttransfer.cpp:260
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "បាន​បញ្ឈប់"
@@ -213,17 +213,17 @@ msgstr "បានពន្យារ​ពេល"
 #: core/transfer.cpp:119 transfer-plugins/kio/transferKio.cpp:114
 #: transfer-plugins/metalink/metalink.cpp:113
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:198
-#: transfer-plugins/bittorrent/bttransfer.cpp:141
-#: transfer-plugins/bittorrent/bttransfer.cpp:236
+#: transfer-plugins/bittorrent/bttransfer.cpp:162
+#: transfer-plugins/bittorrent/bttransfer.cpp:257
 msgctxt "transfer state: finished"
 msgid "Finished"
 msgstr "បាន​បញ្ចប់"
 
-#: core/kget.cpp:179
+#: core/kget.cpp:180
 msgid "Rename transfer"
 msgstr "ប្ដូរ​ឈ្មោះ​ការ​ផ្ទេរ"
 
-#: core/kget.cpp:422
+#: core/kget.cpp:423
 #, kde-format
 msgid ""
 "The file %1 already exists.\n"
@@ -232,26 +232,26 @@ msgstr ""
 "មាន​ឯកសារ %1 រួច​ហើយ ។\n"
 "សរសេរ​ជាន់លើ​ឬ?"
 
-#: core/kget.cpp:423
+#: core/kget.cpp:424
 msgid "Overwrite existing file?"
 msgstr "សរសេរ​ជាន់លើ​ឯកសារ​ដែល​មាន​រួច?"
 
-#: core/kget.cpp:449
+#: core/kget.cpp:450
 #, kde-format
 msgid "Unable to save to: %1"
 msgstr "មិន​អាច​រក្សា​ទុក​ទៅ ៖ %1"
 
 #. i18n: tag string
 #. i18n: file ui/newtransferwidget.ui line 24
-#: core/kget.cpp:673 ui/newtransferdialog.cpp:33 rc.cpp:339
+#: core/kget.cpp:690 ui/newtransferdialog.cpp:33 rc.cpp:339
 msgid "New Download"
 msgstr "ទាញយក​ថ្មី"
 
-#: core/kget.cpp:673
+#: core/kget.cpp:690
 msgid "Enter URL:"
 msgstr "បញ្ចូល URL ៖"
 
-#: core/kget.cpp:735
+#: core/kget.cpp:752
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -260,7 +260,7 @@ msgstr ""
 "ទម្រង់ URL មិន​ត្រឹមត្រូវ ៖\n"
 "%1"
 
-#: core/kget.cpp:747
+#: core/kget.cpp:764
 #, kde-format
 msgid ""
 "URL already saved:\n"
@@ -271,15 +271,15 @@ msgstr ""
 "%1\n"
 "ទាញយក​ម្ដង​ទៀត​ឬ?"
 
-#: core/kget.cpp:748
+#: core/kget.cpp:765
 msgid "Download URL again?"
 msgstr "ទាញយក URL ម្ដង​ទៀត​ឬ?"
 
-#: core/kget.cpp:773
+#: core/kget.cpp:790
 msgid "Directory is not writable"
 msgstr "ថត​មិន​អាច​សរសេរ​បាន​ឡើយ"
 
-#: core/kget.cpp:782
+#: core/kget.cpp:799
 #, kde-format
 msgid ""
 "Destination file \n"
@@ -292,12 +292,14 @@ msgstr ""
 "រួច​ហើយ ។\n"
 "តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ?"
 
-#: core/kget.cpp:894
-#, kde-format
-msgid "<html><p>KPluginFactory could not load the plugin:<br/><i>%1</i></p></html>"
-msgstr "<html><p>KPluginFactory មិនអាច​ផ្ទុក​កម្មវិធី​ជំនួយ ៖<br/><i>%1 បាន​ទេ</i></p></html>"
-
 #: core/kget.cpp:911
+#, kde-format
+msgid ""
+"<html><p>KPluginFactory could not load the plugin:<br/><i>%1</i></p></html>"
+msgstr ""
+"<html><p>KPluginFactory មិនអាច​ផ្ទុក​កម្មវិធី​ជំនួយ ៖<br/><i>%1 បាន​ទេ</i></p></html>"
+
+#: core/kget.cpp:928
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -308,11 +310,11 @@ msgstr ""
 "%1 ឡើយ\n"
 "ដោយ​សារ​តែ​វា​ជា​ថត ។"
 
-#: core/kget.cpp:913 core/kget.cpp:924
+#: core/kget.cpp:930 core/kget.cpp:941
 msgid "Not Deleted"
 msgstr "មិន​បាន​លុប"
 
-#: core/kget.cpp:922
+#: core/kget.cpp:939
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -336,7 +338,6 @@ msgid "Aborted"
 msgstr "បាន​បោះបង់"
 
 #: transfer-plugins/kio/transferKio.cpp:153
-#| msgid "Downloading.."
 msgid "Downloading..."
 msgstr "កំពុង​ទាញយក..."
 
@@ -413,7 +414,8 @@ msgid "You will lose all data in this file, are you sure you want to do this ?"
 msgstr "អ្នក​នឹង​បាត់បង់​ទិន្នន័យ​ទាំងអស់​នៅ​ក្នុង​ឯកសារ​នេះ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ធ្វើ​ដូចនេះ​ឬ ?"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:245
-msgid "You will lose all data in these files, are you sure you want to do this ?"
+msgid ""
+"You will lose all data in these files, are you sure you want to do this ?"
 msgstr "អ្នក​នឹង​បាត់បង់​ទិន្នន័យ​ទាំងអស់​នៅ​ក្នុង​ឯកសារ​ទាំង​នេះ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ធ្វើ​ដូច​នេះ​ឬ ?"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:259
@@ -454,12 +456,12 @@ msgid "Trackers"
 msgstr "កម្មវិធី​តាមដាន"
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:76
-#: transfer-plugins/bittorrent/bttransfer.cpp:195
+#: transfer-plugins/bittorrent/bttransfer.cpp:216
 msgid "Cannot add a tracker to a private torrent."
 msgstr "មិនអាច​បន្ថែម​កម្មវិធី​តាមដាន​ទៅ​ torrent ឯកជន ។"
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:92
-#: transfer-plugins/bittorrent/bttransfer.cpp:201
+#: transfer-plugins/bittorrent/bttransfer.cpp:222
 msgid "Malformed URL."
 msgstr "URL ត្រឹមត្រូវ ។"
 
@@ -647,20 +649,20 @@ msgstr "សេចក្ដី​លម្អិ​ត​កម្រិត​ខ
 msgid "&Speed Limits"
 msgstr "ដែន​កំណត់​ល្បឿន"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:84
+#: transfer-plugins/bittorrent/bttransfer.cpp:85
 msgid "Downloading Torrent-File.."
 msgstr "កំពុងទាញ​​​​​​យក​ឯកសារ Torrent..."
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:220
+#: transfer-plugins/bittorrent/bttransfer.cpp:241
 msgctxt "transfer state: downloading"
 msgid "Downloading.."
 msgstr "កំពុង​ទាញយក..."
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:265
+#: transfer-plugins/bittorrent/bttransfer.cpp:286
 msgid "Analizing torrent.."
 msgstr "កំពុង​វិភាគ torrent.."
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:340
+#: transfer-plugins/bittorrent/bttransfer.cpp:361
 msgctxt "Transfer status: seeding"
 msgid "Seeding.."
 msgstr "កំពុង​បណ្ដុះ..."
@@ -1701,7 +1703,6 @@ msgstr "<speed>"
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 47
 #: rc.cpp:375
-#| msgid "Source"
 msgid "Source-File"
 msgstr "ឯកសារ​ប្រភព"
 
@@ -1720,15 +1721,12 @@ msgstr "ពេលវេលា"
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 62
 #: rc.cpp:384
-#| msgid "File"
 msgid "File-Size"
 msgstr "ទំហំ​ឯកសារ"
 
 #. i18n: tag string
 #. i18n: file ui/transferhistory.ui line 67
 #: rc.cpp:387
-#| msgctxt "status of download"
-#| msgid "Status"
 msgid "Status"
 msgstr "ស្ថានភាព"
 
@@ -1792,4 +1790,3 @@ msgstr "របារ​ឧបករណ៍​មេ"
 #: rc.cpp:417
 msgid "&Tools"
 msgstr "ឧបករណ៍"
-
