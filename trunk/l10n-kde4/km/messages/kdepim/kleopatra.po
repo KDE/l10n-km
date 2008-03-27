@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-03-22 20:29+0100\n"
+"POT-Creation-Date: 2008-03-27 15:24+0100\n"
 "PO-Revision-Date: 2008-03-18 10:04+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -363,7 +363,7 @@ msgstr "សរសេរ​ជាន់​លើ​ឯកសារឬ ?"
 msgid "Serial"
 msgstr "សៀរៀល"
 
-#: certmanager.cpp:274 mainwindow.cpp:364
+#: certmanager.cpp:274 mainwindow.cpp:365
 msgid "Stop Operation"
 msgstr "បញ្ឈប់​ប្រតិបត្តិ​"
 
@@ -395,7 +395,7 @@ msgstr "ដកហូត​វិញ"
 msgid "Extend"
 msgstr "ពង្រីក​"
 
-#: certmanager.cpp:316 certmanager.cpp:1118 mainwindow.cpp:369
+#: certmanager.cpp:316 certmanager.cpp:1118 mainwindow.cpp:370
 msgid "Delete"
 msgstr "លុប"
 
@@ -403,7 +403,7 @@ msgstr "លុប"
 msgid "Validate"
 msgstr "ធ្វើ​ឲ្យ​មាន​សុពលភាព"
 
-#: certmanager.cpp:329 mainwindow.cpp:357
+#: certmanager.cpp:329 mainwindow.cpp:358
 msgid "Import Certificates..."
 msgstr "នាំចូល​វិញ្ញាបនបត្រ​..."
 
@@ -411,7 +411,7 @@ msgstr "នាំចូល​វិញ្ញាបនបត្រ​..."
 msgid "Import CRLs..."
 msgstr "នាំចូល​ CRL..."
 
-#: certmanager.cpp:340 mainwindow.cpp:355
+#: certmanager.cpp:340 mainwindow.cpp:356
 msgid "Export Certificates..."
 msgstr "នាំចេញ​វិញ្ញាបនបត្រ​..."
 
@@ -419,7 +419,7 @@ msgstr "នាំចេញ​វិញ្ញាបនបត្រ​..."
 msgid "Export Secret Key..."
 msgstr "នាំចេញ​សោ​សម្ងាត់..."
 
-#: certmanager.cpp:350 mainwindow.cpp:366
+#: certmanager.cpp:350 mainwindow.cpp:367
 msgid "Certificate Details"
 msgstr "សេចក្ដី​លម្អិត​វិញ្ញាបនបត្រ"
 
@@ -427,11 +427,11 @@ msgstr "សេចក្ដី​លម្អិត​វិញ្ញាបនប
 msgid "Download"
 msgstr "ទាញយក"
 
-#: certmanager.cpp:359 mainwindow.cpp:376
+#: certmanager.cpp:359 mainwindow.cpp:377
 msgid "Dump CRL Cache"
 msgstr "បោះបង់ចោល​ឃ្លាំងសម្ងាត់​ CRL"
 
-#: certmanager.cpp:364 mainwindow.cpp:374
+#: certmanager.cpp:364 mainwindow.cpp:375
 msgid "Clear CRL Cache"
 msgstr "ជម្រះ​ឃ្លាំង​សម្ងាត់ CRL"
 
@@ -859,40 +859,77 @@ msgstr " ឯកសារ​នាំចេញ OpenPGP ៖"
 msgid "S/MIME export file:"
 msgstr "ឯកសារ​នាំចេញ S/MIME ៖"
 
-#: main.cpp:152
+#: main.cpp:128
+msgid ""
+"Kleopatra detected an obsolete registry key (\"HKLM\\GNU\\GnuPG\\gpgProgram"
+"\"),added by either previous gpg4win versions or applications such as WinPT "
+"or EnigMail.Keeping the entry might lead to problems during operations (old "
+"GnuPG backend being used).It is advised to delete the key."
+msgstr ""
+
+#: main.cpp:132
+msgid "Old Registry Entries Detected"
+msgstr ""
+
+#: main.cpp:133
+msgid "Delete Registry Key"
+msgstr ""
+
+#: main.cpp:147
+#, kde-format
+msgid ""
+"Could not open key \"HKLM\\GNU\\GnuPG\\gpgProgram\" from the registry.\n"
+"Error: \"%1\""
+msgstr ""
+
+#: main.cpp:148 main.cpp:161
+#, fuzzy
+#| msgid "Deleting keys..."
+msgid "Error Deleting Key"
+msgstr "កំពុង​លុប​សោ​..."
+
+#: main.cpp:160
+#, kde-format
+msgid ""
+"Could not delete the key \"HKLM\\GNU\\GnuPG\\gpgProgram\" from the "
+"registry.\n"
+"Error: \"%1\""
+msgstr ""
+
+#: main.cpp:219
 msgid "Loading certificate cache..."
 msgstr "កំពុង​ឃ្លាំង​សម្ងាត់​វិញ្ញាបនបត្រ​..."
 
-#: main.cpp:155
+#: main.cpp:222
 msgid "Certificate cache loaded."
 msgstr "បាន​ផ្ទុក​ឃ្លាំង​សម្ងាត់​វិញ្ញាបនបត្រ ។"
 
-#: main.cpp:167
+#: main.cpp:234
 msgid "Search for external certificates initially"
 msgstr "ស្វែងរក​មើល​វិញ្ញាបនបត្រ​ខាងក្រៅ​ពី​ដំបូង"
 
-#: main.cpp:168
+#: main.cpp:235
 msgid "Initial query string"
 msgstr "ចាប់ផ្តើម​ខ្សែ​អក្សរ​សំណួរ"
 
-#: main.cpp:170
+#: main.cpp:237
 msgid "Run UI server only, hide main window"
 msgstr "រត់​តែ​ម៉ាស៊ីន​បម្រើ UI ប៉ុណ្នោះ ដោយ​លាក់​បង្អួច​មេ"
 
-#: main.cpp:172
+#: main.cpp:239
 msgid "Name of certificate file to import"
 msgstr "ឈ្មោះ​ឯកសារ​វិញ្ញាបនបត្រ​ដែលត្រូវ​នាំចូល"
 
-#: main.cpp:174
+#: main.cpp:241
 msgid "Location of the socket the ui server is listening on"
 msgstr "ទីតាំង​របស់​រន្ធ​ម៉ាស៊ីន​បម្រើ ui កំពុង​ស្ដាប់"
 
-#: main.cpp:233
+#: main.cpp:300
 #, kde-format
 msgid "Kleopatra UI Server listening on %1"
 msgstr "ម៉ាស៊ីន​បម្រើ UI របស់ Kleopatra ស្ដាប់ %1"
 
-#: main.cpp:240
+#: main.cpp:307
 msgid ""
 "<qt>The crypto plugin could not be initialized.<br />Certificate Manager "
 "will terminate now.</qt>"
@@ -900,11 +937,11 @@ msgstr ""
 "<qt>កម្មវិធី​ជំនួយ​ការ​គ្រីប មិនអាច​ចាប់ផ្ដើម​បានទេ ។<br />កម្មវិធី​គ្រប់គ្រង​វិញ្ញាបនបត្រ​នឹង​បញ្ចប់​ឥឡូវ ។</"
 "qt>"
 
-#: main.cpp:286
+#: main.cpp:356
 msgid "GPG UI Server Error"
 msgstr "កំហុស​ម៉ាស៊ីន​បម្រើ UI GPG"
 
-#: main.cpp:287
+#: main.cpp:357
 #, kde-format
 msgid ""
 "<qt>The Kleopatra GPG UI Server Module couldn't be initialized.<br/>The "
@@ -946,35 +983,35 @@ msgstr "ពិនិត្យ​ការ​កំណត់​រចនា​ស
 msgid "Configure GnuPG Backend..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្នែក​ខាង​ក្រោយ​របស់ GnuPG​..."
 
-#: mainwindow.cpp:353
+#: mainwindow.cpp:354
 msgid "New Certificate..."
 msgstr "វិញ្ញាបនបត្រ​ថ្មី..."
 
-#: mainwindow.cpp:359
+#: mainwindow.cpp:360
 msgid "Sign/Encrypt Files..."
 msgstr "ចុះហត្ថលេខា/អ៊ីនគ្រិប​ឯកសារ..."
 
-#: mainwindow.cpp:371
+#: mainwindow.cpp:372
 msgid "Change Expiry Date..."
 msgstr "ផ្លាស់ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់..."
 
-#: mainwindow.cpp:378
+#: mainwindow.cpp:379
 msgid "Import CRL From File..."
 msgstr "នាំចូល​ CRL ពី​ឯកសារ..."
 
-#: mainwindow.cpp:416
+#: mainwindow.cpp:417
 msgid "GnuPG Configuration Self-Check Results"
 msgstr "លទ្ធផល​ពិនិត្យ​ខ្លួនឯង​នៃ​ការ​កំណត់រចនា​សម្ព័ន្ធ​របស់ GnuPG"
 
-#: mainwindow.cpp:418
+#: mainwindow.cpp:419
 msgid "This is the result of the GnuPG configuration self-check:"
 msgstr "នេះ​ជា​លទ្ធផល​នៃ​​ការ​ពិនិត្យ​ការ​កំណត់​រចនា​សម្ព័ន្ធ GnuPG ដោយ​ខ្លួន​ឯង ៖"
 
-#: mainwindow.cpp:452
+#: mainwindow.cpp:453
 msgid "The process terminated prematurely"
 msgstr "ដំណើរការ​ត្រូវបាន​បញ្ចប់​មុនពេល"
 
-#: mainwindow.cpp:457
+#: mainwindow.cpp:458
 #, kde-format
 msgid ""
 "There was an error executing the GnuPG configuration self-check:\n"
@@ -989,7 +1026,7 @@ msgstr ""
 "\n"
 "សញ្ញា ៖"
 
-#: mainwindow.cpp:462
+#: mainwindow.cpp:463
 #, kde-format
 msgid ""
 "There was an error executing \"gpgconf --check-config\":\n"
@@ -1000,7 +1037,7 @@ msgstr ""
 "  %1\n"
 "អ្នក​អាច​ប្រតិបត្តិ \"gpgconf --check-config\" នៅ​លើ​បន្ទាត់​ពាក្យ​បញ្ជា ។"
 
-#: mainwindow.cpp:467
+#: mainwindow.cpp:468
 #, kde-format
 msgid ""
 "The GnuPG configuration self-check failed.\n"
@@ -1013,7 +1050,7 @@ msgstr ""
 "កូដ​កំហុស ៖ %1\n"
 "សញ្ញា ៖"
 
-#: mainwindow.cpp:471
+#: mainwindow.cpp:472
 #, kde-format
 msgid ""
 "The GnuPG configuration self-check failed with error code %1.\n"
@@ -1022,7 +1059,7 @@ msgstr ""
 "ការ​ពិនិត្យ​ខ្លួនឯង​នៃការ​កំណត់រចនា​សម្ព័ន្ធ​របស់ GnuPG បានបរាជ័យ​ជាមួយ​កូដកំហុស %1 ។\n"
 "មិនមាន​លទ្ធផល​ដែល​បាន​ទទួល​ទេ ។"
 
-#: mainwindow.cpp:475
+#: mainwindow.cpp:476
 msgid ""
 "The GnuPG configuration self-check succeeded.\n"
 "\n"
@@ -1032,31 +1069,31 @@ msgstr ""
 "\n"
 "សញ្ញា ៖"
 
-#: mainwindow.cpp:478
+#: mainwindow.cpp:479
 msgid "The GnuPG configuration self-check succeeded."
 msgstr "ពិនិត្យ​ការ​កំណត់​រចនា​សម្ព័ន្ធ GnuPG ដោយ​ខ្លួន​ឯង​បានជោគជ័យ"
 
-#: mainwindow.cpp:488
+#: mainwindow.cpp:489
 msgid "Could not configure the cryptography backend (gpgconf tool not found)"
 msgstr "មិន​អាច​កំណត់​រចនាសម្ព័ន្ធ​ផ្នែក​ខាង​ក្រោយ​កា​រគ្រីប (រក​មិន​ឃើញ​ឧបករណ៍ gpgconf​)"
 
-#: mainwindow.cpp:488
+#: mainwindow.cpp:489
 msgid "Configuration Error"
 msgstr "កំហុស​កំណត់​រចនាសម្ព័ន្ធ"
 
-#: mainwindow.cpp:585
+#: mainwindow.cpp:586
 msgid "Sign/Encrypt..."
 msgstr "ចុះហត្ថលេខា/អ៊ីនគ្រិប..."
 
-#: mainwindow.cpp:587
+#: mainwindow.cpp:588
 msgid "Import Certificates"
 msgstr "នាំចូល​វិញ្ញាបនបត្រ​"
 
-#: mainwindow.cpp:588
+#: mainwindow.cpp:589
 msgid "Import CRLs"
 msgstr "នាំចូល​ CRL"
 
-#: mainwindow.cpp:590
+#: mainwindow.cpp:591
 msgid "Cancel"
 msgstr "​បោះបង់"
 
