@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular_dvi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-02-27 15:03+0100\n"
+"POT-Creation-Date: 2008-04-12 19:05+0200\n"
 "PO-Revision-Date: 2008-02-13 09:31+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -22,7 +22,9 @@ msgid "Okular is currently generating bitmap fonts..."
 msgstr "Okular បច្ចុប្បន្ន​កំពុង​បង្កើត​ពុម្ពអក្សរ​រូបភាព..."
 
 #: fontpool.cpp:40
-msgid "Aborts the font generation. Don't do this."
+#, fuzzy
+#| msgid "Aborts the font generation. Don't do this."
+msgid "Aborts the font generation. Do not do this."
 msgstr "បោះបង់​​​ការ​បង្កើត​ពុម្ពអក្សរ ។ កុំ​ធ្វើ​ដូច្នេះ​"
 
 #: fontpool.cpp:41
@@ -93,9 +95,13 @@ msgid "Locating fonts..."
 msgstr "កំពុង​រក​ទីតាំង​​ពុម្ពអក្សរ​..."
 
 #: fontpool.cpp:344
+#, fuzzy
+#| msgid ""
+#| "<p>Okular relies on the <b>kpsewhich</b> program to locate font files on "
+#| "your hard disc and to generate PK fonts, if necessary.</p>"
 msgid ""
 "<p>Okular relies on the <b>kpsewhich</b> program to locate font files on "
-"your hard disc and to generate PK fonts, if necessary.</p>"
+"your hard disk and to generate PK fonts, if necessary.</p>"
 msgstr ""
 "<p>Okular អាស្រ័យយ​លើ​កម្មវិធី <b>kpsewhich</b> ដើម្បី​បម្រុង​ទុក​ឯកសារ​ពុម្ពអក្សរ​នៅ​លើ​ថាស​រឹង​របស់​"
 "អ្នក និង​ដើម្បីបង្កើត​ពុម្ពអក្សរ PK ប្រសិន​បើ​ចាំបាច់ ។</p>"
@@ -174,19 +180,32 @@ msgid "Could not load the DVI-file."
 msgstr "មិនអាច​ផ្ទុក​ឯកសារ DVI ឡើយ ។"
 
 #: dviFile.cpp:386
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt><p>The external program <strong>pdf2ps</strong> could not be started. "
+#| "As a result, the PDF-file %1 could not be converted to PostScript. Some "
+#| "graphic elements in your document will therefore not be displayed.</"
+#| "p><p><b>Possible reason:</b> The program <strong>pdf2ps</strong> is "
+#| "perhaps not installed on your system, or it cannot be found in the "
+#| "current search path.</p><p><b>What you can do:</b> The program "
+#| "<strong>pdf2ps</strong> program is normally contained in distributions of "
+#| "the ghostscript PostScript interpreter system. If ghostscipt is not "
+#| "installed on your system, you could install it now. If you are sure that "
+#| "ghostscript is installed, please try to use <strong>pdf2ps</strong> from "
+#| "the command line to check if it really works.</p><p><b>PATH:</b> %2</p></"
+#| "qt>"
 msgid ""
 "<qt><p>The external program <strong>pdf2ps</strong> could not be started. As "
 "a result, the PDF-file %1 could not be converted to PostScript. Some graphic "
 "elements in your document will therefore not be displayed.</p><p><b>Possible "
-"reason:</b> The program <strong>pdf2ps</strong> is perhaps not installed on "
-"your system, or it cannot be found in the current search path.</p><p><b>What "
-"you can do:</b> The program <strong>pdf2ps</strong> program is normally "
-"contained in distributions of the ghostscript PostScript interpreter system. "
-"If ghostscipt is not installed on your system, you could install it now. If "
-"you are sure that ghostscript is installed, please try to use "
-"<strong>pdf2ps</strong> from the command line to check if it really works.</"
-"p><p><b>PATH:</b> %2</p></qt>"
+"reason:</b> The program <strong>pdf2ps</strong> may not be installed on your "
+"system, or cannot be found in the current search path.</p><p><b>What you can "
+"do:</b> The program <strong>pdf2ps</strong> is normally contained in "
+"distributions of the ghostscript PostScript interpreter system. If "
+"ghostscipt is not installed on your system, you could install it now. If you "
+"are sure that ghostscript is installed, try to use <strong>pdf2ps</strong> "
+"from the command line to check if it really works.</p><p><b>PATH:</b> %2</"
+"p></qt>"
 msgstr ""
 "<qt><p>កម្មវិធី​ខាង​ក្រៅ <strong>pdf2ps</strong> មិន​អាច​ត្រូវ​បាន​ចាប់ផ្ដើម ។ ជា​លទ្ធផលឯកសារ "
 "PDF %1 មិន​អាច​ត្រូវ​បាន​បម្លែង​ទៅ PostScript ។ ធាតុ​ក្រាហ្វិក​មួយ​ចំនួន​នៅ​ក្នុង​ឯកសារ​របស់​អ្នក ដូច្នេះ​​នឹង​"
@@ -278,13 +297,24 @@ msgid "Please be patient"
 msgstr "សូម​មេត្តា​​អត់ធ្មត់"
 
 #: dviexport.cpp:234
+#, fuzzy
+#| msgid ""
+#| "Okular could not locate the program 'dvipdfm' on your computer. That "
+#| "program is essential for the export function to work. You can, however, "
+#| "convert the DVI-file to PDF using the print function of Okular, but that "
+#| "will often produce documents which print ok, but are of inferior quality "
+#| "if viewed in the Acrobat Reader. It may be wise to upgrade to a more "
+#| "recent version of your TeX distribution which includes the 'dvipdfm' "
+#| "program.\n"
+#| "Hint to the perplexed system administrator: Okular uses the PATH "
+#| "environment variable when looking for programs."
 msgid ""
-"Okular could not locate the program 'dvipdfm' on your computer. That program "
+"Okular could not locate the program 'dvipdfm' on your computer. This program "
 "is essential for the export function to work. You can, however, convert the "
 "DVI-file to PDF using the print function of Okular, but that will often "
-"produce documents which print ok, but are of inferior quality if viewed in "
-"the Acrobat Reader. It may be wise to upgrade to a more recent version of "
-"your TeX distribution which includes the 'dvipdfm' program.\n"
+"produce documents which print okay, but are of inferior quality if viewed in "
+"Acrobat Reader. It may be wise to upgrade to a more recent version of your "
+"TeX distribution which includes the 'dvipdfm' program.\n"
 "Hint to the perplexed system administrator: Okular uses the PATH environment "
 "variable when looking for programs."
 msgstr ""
@@ -299,24 +329,27 @@ msgstr ""
 msgid "*.pdf|Portable Document Format (*.pdf)"
 msgstr "*.pdf|ទ្រង់ទ្រាយ​ឯកសារ​ចល័ត (*.pdf)"
 
-#: dviexport.cpp:247 dviexport.cpp:334
+#: dviexport.cpp:247 dviexport.cpp:333
 msgid "Export File As"
 msgstr "នាំចេញ​ឯកសារ​ជា​"
 
-#: dviexport.cpp:255 dviexport.cpp:342
-#, kde-format
+#: dviexport.cpp:255 dviexport.cpp:341
+#, fuzzy, kde-format
+#| msgid ""
+#| "The file %1\n"
+#| "exists. Do you want to overwrite that file?"
 msgid ""
 "The file %1\n"
-"exists. Do you want to overwrite that file?"
+"exists. Do you want to overwrite it?"
 msgstr ""
 "មាន​ឯកសារ​ %1\n"
 "រួចហើយ​ ​។ ​តើ​អ្នក​ចង់​សរសេរ​ជាន់​ពីលើ​ឯកសារ​នោះ​ឬ ?"
 
-#: dviexport.cpp:256 dviexport.cpp:343
+#: dviexport.cpp:256 dviexport.cpp:342
 msgid "Overwrite File"
 msgstr "សរសេរ​ជាន់​លើ​ឯកសារ"
 
-#: dviexport.cpp:257 dviexport.cpp:344
+#: dviexport.cpp:257 dviexport.cpp:343
 msgid "Overwrite"
 msgstr "សរសេរ​ជាន់​លើ"
 
@@ -354,6 +387,17 @@ msgstr ""
 "ការរាយការណ៍​ដ៏​មាន​តម្លៃ ។</qt>"
 
 #: dviexport.cpp:308
+#, fuzzy
+#| msgid ""
+#| "<qt><P>This DVI file refers to external graphic files which are not in "
+#| "PostScript format, and cannot be handled by the <strong>dvips</strong> "
+#| "program that Okular uses interally to print or to export to PostScript. "
+#| "The functionality that you require is therefore unavailable in this "
+#| "version of Okular.</p><p>As a workaround, you can use the <strong>File/"
+#| "Export As</strong>-Menu to save this file in PDF format, and then use a "
+#| "PDF viewer.</p><p>The author of Okular apologizes for the inconvenience. "
+#| "If enough users complain, the missing functionality might later be added."
+#| "</p></qt>"
 msgid ""
 "<qt><P>This DVI file refers to external graphic files which are not in "
 "PostScript format, and cannot be handled by the <strong>dvips</strong> "
@@ -361,8 +405,7 @@ msgid ""
 "functionality that you require is therefore unavailable in this version of "
 "Okular.</p><p>As a workaround, you can use the <strong>File/Export As</"
 "strong>-Menu to save this file in PDF format, and then use a PDF viewer.</"
-"p><p>The author of Okular apologizes for the inconvenience. If enough users "
-"complain, the missing functionality might later be added.</p></qt>"
+"p><p>It is planned to add this functionality at a later date.</p></qt>"
 msgstr ""
 "<qt><P>ឯការ DVI សំដៅលើ​ឯកសារ​ក្រាហ្វិក​ខាង​ក្រៅ​ដែល​មិន​នៅ​ក្នុង​ទ្រង់ទ្រាយ​PostScript និង​មិន​អាច​ត្រូវ​"
 "បានគ្រប់គ្រង​ដោយ​កម្មវិធី <strong>dvips</strong> ដែល Okular ប្រើ​​ដើម្បីបោះពុម្ព ឬ​នាំចេញ​ទៅ​ជា "
@@ -372,11 +415,11 @@ msgstr ""
 "អភ័យទោស​ចំពោះកា​ររអាក់រអួល​នេះ ។ ប្រសិន​បើ​មាន​អ្នក​ប្រើ​​តវ៉ា​គ្រប់គ្រាន់ មុខងារ​ដែល​បាត់​អាច​ត្រូវ​បាន​បន្ថែម​"
 "ពេល​ក្រោយ ។</p></qt>"
 
-#: dviexport.cpp:315
+#: dviexport.cpp:314
 msgid "Functionality Unavailable"
 msgstr "មុខងារ​ដែល​មិន​អាច​​ប្រើ​បាន​"
 
-#: dviexport.cpp:321
+#: dviexport.cpp:320
 msgid ""
 "Okular could not locate the program 'dvips' on your computer. That program "
 "is essential for the export function to work.\n"
@@ -387,15 +430,15 @@ msgstr ""
 "មុខងារ​នាំចេញ​ដើម្បី​ដំណើរការ ។\n"
 "ជំនួយ​ទៅ​អ្នក​គ្រប់គ្រង​ប្រព័ន្ធ​ដែល​មិន​ច្បាស់ ៖ Okular ប្រើ​អថេរ​បរិស្ថាន​ផ្លូវ​នៅ​ពេល​រក​មើល​កម្មវិធី ។"
 
-#: dviexport.cpp:334
+#: dviexport.cpp:333
 msgid "*.ps|PostScript (*.ps)"
 msgstr "*.ps|PostScript (*.ps)"
 
-#: dviexport.cpp:421
+#: dviexport.cpp:420
 msgid "Using dvips to export the file to PostScript"
 msgstr "ដោយ​ប្រើ​ dvips ដើម្បី​នាំចេញ​ឯកសារ​ទៅ​ជា PostScript"
 
-#: dviexport.cpp:422
+#: dviexport.cpp:421
 msgid ""
 "Okular is currently using the external program 'dvips' to convert your DVI-"
 "file to PostScript. Sometimes that can take a while because dvips needs to "
@@ -405,16 +448,16 @@ msgstr ""
 "PostScript ។ ពេលខ្លះ​អាច​ចំណាយ​ពេល​មួយ​រយៈ ពីព្រោះ dvips ត្រូវ​បង្កើត​ពុម្ពអក្សរ​​រូបភាព​ផ្ទាល់​របស់​វា "
 "សូម​មេត្តា​អត់ធ្មត់ ។"
 
-#: dviexport.cpp:426
+#: dviexport.cpp:425
 msgid "Waiting for dvips to finish..."
 msgstr "កំពុង​រង់ចាំ​ dvips ដើម្បី​បញ្ចប់​..."
 
-#: dviexport.cpp:429
+#: dviexport.cpp:428
 #, kde-format
 msgid "Export: %1 to PostScript"
 msgstr "នាំចេញ ៖ %1 ទៅ​ជា​ PostScript"
 
-#: dviexport.cpp:448
+#: dviexport.cpp:447
 msgid ""
 "<qt>The external program 'dvips', which was used to export the file, "
 "reported an error. You might wish to look at the <strong>document info "
@@ -434,7 +477,9 @@ msgid "Abort"
 msgstr "បោះបង់"
 
 #: fontprogress.cpp:43
-msgid "What's going on here?"
+#, fuzzy
+#| msgid "What's going on here?"
+msgid "What is happening here?"
 msgstr "តើ​មាន​អ្វី​​កើត​ឡើង​នៅ​ទីនេះ ?"
 
 #: fontprogress.cpp:58
@@ -486,8 +531,12 @@ msgid "FreeType is unable to load metric for glyph #%1 from font file %2."
 msgstr "FreeType ​អាច​ផ្ទុក​​ម៉ែត្រ​របស់ glyph #%1  ពី​ឯកសារ​ពុម្ពអក្សរ ​%2 បាន​ឡើយ​ ។​"
 
 #: dviRenderer.cpp:231
+#, fuzzy
+#| msgid ""
+#| "<qt><strong>File corruption</strong> Okular could not interprete your DVI "
+#| "file. This is most commonly caused by a corrupted file.</qt>"
 msgid ""
-"<qt><strong>File corruption</strong> Okular could not interprete your DVI "
+"<qt><strong>File corruption</strong> Okular could not interpret your DVI "
 "file. This is most commonly caused by a corrupted file.</qt>"
 msgstr ""
 "<qt><strong>ឯកសារ​ខូច</strong> Okular មិនអាច​បកប្រែ​ឯកសារ DVI  ។ នេះ​ជា​ធម្មតា​បណ្ដាល​មកពី​"
