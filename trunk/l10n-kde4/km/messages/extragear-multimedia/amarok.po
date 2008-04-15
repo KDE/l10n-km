@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-12 19:21+0200\n"
+"POT-Creation-Date: 2008-04-14 19:02+0200\n"
 "PO-Revision-Date: 2008-04-08 08:06+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -143,7 +143,7 @@ msgstr "កំពុង​ដំណើរការ​លទ្ធផល​ស្
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 91
-#: collection/sqlcollection/SqlMeta.cpp:223 rc.cpp:1637
+#: collection/sqlcollection/SqlMeta.cpp:223 rc.cpp:1622
 msgid "Stream"
 msgstr "ស្ទ្រីម"
 
@@ -600,16 +600,34 @@ msgid "Track:"
 msgstr "បទ ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 110
-#: context/applets/currenttrack/CurrentTrack.cpp:62 rc.cpp:1514
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 110
+#: context/applets/currenttrack/CurrentTrack.cpp:62 rc.cpp:1499
 msgid "Artist:"
 msgstr "សិល្បករ ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 90
-#: context/applets/currenttrack/CurrentTrack.cpp:63 rc.cpp:1511
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 90
+#: context/applets/currenttrack/CurrentTrack.cpp:63 rc.cpp:1496
 msgid "Album:"
 msgstr "​អាល់ប៊ុម ៖"
+
+#: context/applets/currenttrack/CurrentTrack.cpp:66 scriptmanager.cpp:140
+#: scriptmanager.cpp:793 playlist/PlaylistModel.cpp:428 TrackTooltip.cpp:103
+#: SmartPlaylistEditor.cpp:184
+msgid "Score"
+msgstr "ពិន្ទុ"
+
+#: context/applets/currenttrack/CurrentTrack.cpp:68
+#: playlist/PlaylistModel.cpp:430 TrackTooltip.cpp:128
+msgid "Play Count"
+msgstr "ចំនួន​ចាក់"
+
+#: context/applets/currenttrack/CurrentTrack.cpp:70 TrackTooltip.cpp:133
+#, fuzzy
+#| msgctxt "Column name"
+#| msgid "Last Played"
+msgid "Last Played"
+msgstr "ចាក់​ចុងក្រោយ"
 
 #: context/applets/lastfmevents/LastFmEvents.cpp:274
 msgid "Configure Last.Fm Events"
@@ -627,7 +645,7 @@ msgstr "បង្ហាញ​ព្រឹត្តិការណ៍​ដែល
 msgid "Show Your Future Events"
 msgstr "បង្ហាញ​ព្រឹត្តិការណ៍​អនាគត​របស់​អ្នក"
 
-#: context/applets/lyrics/LyricsApplet.cpp:82 scriptmanager.cpp:162
+#: context/applets/lyrics/LyricsApplet.cpp:82 scriptmanager.cpp:139
 #: tagdialog.cpp:530
 msgid "Lyrics"
 msgstr "អត្ថបទ​ចម្រៀង"
@@ -647,7 +665,7 @@ msgstr "ចំណង​ជើង"
 #: transferdialog.cpp:90 playlist/PlaylistHeader.cpp:46
 #: playlist/PlaylistModel.cpp:413
 #: servicebrowser/magnatunestore/MagnatuneStore.cpp:167
-#: servicebrowser/jamendo/jamendoservice.cpp:131 SmartPlaylistEditor.cpp:182
+#: servicebrowser/jamendo/JamendoService.cpp:131 SmartPlaylistEditor.cpp:182
 #: SmartPlaylistEditor.cpp:196
 msgid "Artist"
 msgstr "សិល្បករ"
@@ -764,10 +782,6 @@ msgstr "យក​ឯកសារ​ដែល​បាន​បម្លែង​
 #: deviceconfiguredialog.cpp:117 deviceconfiguredialog.cpp:118
 msgid "For this feature, a script of type \"Transcode\" has to be running"
 msgstr "សម្រាប់​លក្ខណៈ​ពិសេស​នេះ ស្គ្រីប​នៃ​ប្រភេទ \"បម្លែងកូដ\" ត្រូវ​តែ​រត់"
-
-#: tracktooltip.cpp:272
-msgid "Amarok - rediscover your music"
-msgstr "Amarok - នាំ​អារម្មណ៍​អស់​លោក​អ្នក​ទៅកាន់​ពិភព​មួយ​នៃ​ជីវិត"
 
 #: ActionClasses.cpp:85
 msgid "Amarok Menu"
@@ -1255,7 +1269,7 @@ msgstr "ការ​ស្វែងរក​ធម្មតា"
 #: transferdialog.cpp:91 playlist/PlaylistHeader.cpp:46
 #: playlist/PlaylistModel.cpp:417
 #: servicebrowser/magnatunestore/MagnatuneStore.cpp:175
-#: servicebrowser/jamendo/jamendoservice.cpp:139 SmartPlaylistEditor.cpp:182
+#: servicebrowser/jamendo/JamendoService.cpp:139 SmartPlaylistEditor.cpp:182
 #: SmartPlaylistEditor.cpp:196
 msgid "Album"
 msgstr "អាល់ប៊ុម"
@@ -1469,32 +1483,27 @@ msgstr ""
 msgid "Empty Text Field"
 msgstr "វាល​អត្ថបទ​ទទេ"
 
-#: scriptmanager.cpp:140 MainWindow.cpp:871
+#: scriptmanager.cpp:117 MainWindow.cpp:871
 msgid "Script Manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​ស្គ្រីប"
 
-#: scriptmanager.cpp:161
+#: scriptmanager.cpp:138
 msgid "General"
 msgstr "ទូទៅ"
 
-#: scriptmanager.cpp:163 scriptmanager.cpp:828 playlist/PlaylistModel.cpp:428
-#: SmartPlaylistEditor.cpp:184
-msgid "Score"
-msgstr "ពិន្ទុ"
-
-#: scriptmanager.cpp:164
+#: scriptmanager.cpp:141
 msgid "Transcoding"
 msgstr "កា​របម្លែង​កូដ"
 
-#: scriptmanager.cpp:165
+#: scriptmanager.cpp:142
 msgid "Context Browser"
 msgstr "កម្មវិធី​រុករក​បរិបទ"
 
-#: scriptmanager.cpp:166
+#: scriptmanager.cpp:143
 msgid "Scripted Services"
 msgstr "សេវាដែល​បាន​ស្គ្រីប"
 
-#: scriptmanager.cpp:338
+#: scriptmanager.cpp:315
 msgid ""
 "No score scripts were found, or none of them worked. Automatic scoring will "
 "be disabled. Sorry."
@@ -1502,28 +1511,28 @@ msgstr ""
 "រក​មិនឃើញ​ស្គ្រីប​ពិន្ទុ​ទេ ឬ​អាច​មកពី​ពួក​វា​មិន​ដំណើរការ ។ កា​រដាក់​ពិន្ទុ​ដោយស្វ័យប្រវត្តិ​នឹង​ត្រូវ​បាន​បិទ ។ សូម​"
 "ទោស !"
 
-#: scriptmanager.cpp:418
+#: scriptmanager.cpp:395
 msgid ""
 "Script Packages (*.amarokscript.tar, *.amarokscript.tar.bz2, *.amarokscript."
 "tar.gz)"
 msgstr ""
 "កញ្ចប់​ស្គ្រីប (*.amarokscript.tar, *.amarokscript.tar.bz2, *.amarokscript.tar.gz)"
 
-#: scriptmanager.cpp:425
+#: scriptmanager.cpp:402
 msgid "Could not read this package."
 msgstr "មិន​អាច​អាន​កញ្ចប់​នេះ​បាន​ឡើយ ។"
 
-#: scriptmanager.cpp:435
+#: scriptmanager.cpp:412
 #, kde-format
 msgid ""
 "A script with the name '%1' is already installed. Please uninstall it first."
 msgstr "បាន​ដំឡើង​ស្គ្រីប '%1' រួច​ហើយ ។ សូម​លុប​វា​ជាមុន​សិន ។"
 
-#: scriptmanager.cpp:445
+#: scriptmanager.cpp:422
 msgid "Script successfully installed."
 msgstr "បាន​ដំឡើង​ស្គ្រីប​ដោយ​ជោគជ័យ ។"
 
-#: scriptmanager.cpp:449
+#: scriptmanager.cpp:426
 msgid ""
 "<p>Script installation failed.</p><p>The package did not contain an "
 "executable file. Please inform the package maintainer about this error.</p>"
@@ -1531,20 +1540,20 @@ msgstr ""
 "<p>ការ​ដំឡើង​ស្គ្រីប​បាន​បរាជ័យ ។</p><p>កញ្ចប់​មិន​មាន​ឯកសារ​ប្រតិបត្តិ​ឡើយ ។ សូម​ប្រាប់​អ្នក​ថែទាំ​កញ្ចប់ អំពី​"
 "កំហុស​នេះ ។</p>"
 
-#: scriptmanager.cpp:514
+#: scriptmanager.cpp:479
 #, kde-format
 msgid "Are you sure you want to uninstall the script '%1'?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​ស្គ្រីប '%1' ឬ ?"
 
-#: scriptmanager.cpp:514
+#: scriptmanager.cpp:479
 msgid "Uninstall Script"
 msgstr "លុប​ស្គ្រីប"
 
-#: scriptmanager.cpp:514
+#: scriptmanager.cpp:479
 msgid "Uninstall"
 msgstr "លុប"
 
-#: scriptmanager.cpp:525
+#: scriptmanager.cpp:490
 msgid ""
 "<p>Could not uninstall this script.</p><p>The ScriptManager can only "
 "uninstall scripts which have been installed as packages.</p>"
@@ -1552,20 +1561,20 @@ msgstr ""
 "<p>មិន​អាច​លុប​ស្គ្រីប​នេះ​បាន​ឡើយ ។</p><p>កម្មវិធី​គ្រប់គ្រង​ស្គ្រីប អាច​លុប​តែ​ស្គ្រីប​ដែល​បាន​ដំឡើង​ជា​កញ្ចប់​"
 "ប៉ុណ្ណោះ ។</p>"
 
-#: scriptmanager.cpp:555
+#: scriptmanager.cpp:520
 msgid ""
 "Another lyrics script is already running. You may only run one lyrics script "
 "at a time."
 msgstr ""
 "ស្គ្រីប​អត្ថបទ​ចម្រៀង​ផ្សេងទៀត​កំពុង​តែ​រត់​ ។ អ្នក​អាច​រត់​តែ​ស្គ្រីប​អត្ថបទ​ចម្រៀង​មួយ​ប៉ុណ្ណោះ​នៅ​ពេល​តែ​មួយ ។"
 
-#: scriptmanager.cpp:562
+#: scriptmanager.cpp:527
 msgid ""
 "Another transcode script is already running. You may only run one transcode "
 "script at a time."
 msgstr "ស្គ្រីប​បម្លែងកូដ​ផ្សេង​ទៀត​កំពុង​តែ​រត់ ។ អ្នក​អាច​រត់​តែ​ស្គ្រីប​​បម្លែងកូដ​មួយ​ប៉ុណ្ណោះ​នៅ​ពេល​តែ​មួយ ​។"
 
-#: scriptmanager.cpp:593
+#: scriptmanager.cpp:558
 #, kde-format
 msgid ""
 "<p>Could not start the script <i>%1</i>.</p><p>Please make sure that the "
@@ -1574,33 +1583,33 @@ msgstr ""
 "<p>មិន​អាច​ចាប់ផ្ដើម​ស្គ្រីប <i>%1</i> បាន​ឡើយ ។</p><p>សូម​ប្រាកដ​ថា ឯកសារ​មាន​សិទ្ធិ​ប្រតិបត្តិ "
 "(+x) ។</p>"
 
-#: scriptmanager.cpp:657
+#: scriptmanager.cpp:622
 msgid "There is no information available for this script."
 msgstr "មិន​មាន​ព័ត៌មាន​សម្រាប់​ស្គ្រីប​នេះ​ឡើយ ។"
 
-#: scriptmanager.cpp:668
+#: scriptmanager.cpp:633
 #, kde-format
 msgid "About %1"
 msgstr "អំពី %1"
 
-#: scriptmanager.cpp:696
+#: scriptmanager.cpp:661
 msgid "Debugging"
 msgstr "បំបាត់​កំហុស"
 
-#: scriptmanager.cpp:697
+#: scriptmanager.cpp:662
 msgid "Show Output &Log"
 msgstr "បង្ហាញ​កំណត់ហេតុ​លទ្ធផល"
 
-#: scriptmanager.cpp:698
+#: scriptmanager.cpp:663
 msgid "&Edit"
 msgstr "កែសម្រួល"
 
-#: scriptmanager.cpp:721
+#: scriptmanager.cpp:686
 #, kde-format
 msgid "Output Log for %1"
 msgstr "កំណត់ហេតុ​លទ្ធផល​សម្រាប់ %1"
 
-#: scriptmanager.cpp:776
+#: scriptmanager.cpp:741
 #, kde-format
 msgid "The script '%1' exited with error code: %2"
 msgstr "ស្គ្រីប '%1' បាន​ចេញ​ដោយ​មាន​កូដ​កំហុស ៖ %2"
@@ -1984,7 +1993,7 @@ msgstr "%1. %2"
 #: mediadevice/ipod/ipodmediadevice.cpp:2079
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:170
 #: mediadevice/generic/genericmediadevice.cpp:525
-#: collectionbrowser/OrganizeCollectionDialog.cpp:91
+#: collectionbrowser/OrganizeCollectionDialog.cpp:92
 #: collectionbrowser/CollectionTreeItem.cpp:126
 #: playlist/PlaylistGraphicsItem.cpp:336
 #: collectionscanner/collectionscanner.cpp:450 CoverManager.cpp:994
@@ -2022,14 +2031,14 @@ msgstr ""
 
 #: Statistics.cpp:645 mediadevice/daap/daapclient.cpp:249
 #: mediadevice/ipod/ipodmediadevice.cpp:2240
-#: mediadevice/generic/genericmediadevice.cpp:938 systray.cpp:102
+#: mediadevice/generic/genericmediadevice.cpp:938 systray.cpp:113
 #: collectionbrowser/CollectionTreeView.cpp:135
 #: playlistbrowser/PodcastCategory.cpp:317 CoverManager.cpp:564
 msgid "&Append to Playlist"
 msgid_plural "&Append Selected Albums to Playlist"
 msgstr[0] "បន្ថែម​ទៅ​បញ្ជីចាក់"
 
-#: Statistics.cpp:646 systray.cpp:105
+#: Statistics.cpp:646 systray.cpp:116
 msgid "&Queue Track"
 msgstr "រៀប​បទ​ជា​ជួរ"
 
@@ -2038,7 +2047,7 @@ msgctxt "[only-singular]"
 msgid "Edit Track &Information..."
 msgstr "កែសម្រួល​ព័ត៌មាន​បទ..."
 
-#: EngineController.cpp:145
+#: EngineController.cpp:146
 msgid ""
 "<p>Phonon claims it <b>cannot</b> play MP3 files.You may want to examine the "
 "installation of the backend that phonon uses.</p><p>You may find useful "
@@ -2048,15 +2057,15 @@ msgstr ""
 "ខាង​ក្រោយ​ដែល​ phonon ប្រើ ។</p><p>អ្នក​អាច​រក​ព័ត៌មាន​ដែល​មាន​ប្រយោជន៍​នៅ​ក្នុង​ផ្នែក <i>FAQ</i> "
 "របស់<i>សៀវភៅ​ដៃ Amarok​</i> ។</p>"
 
-#: EngineController.cpp:169
+#: EngineController.cpp:170
 msgid "Amarok currently cannot play MP3 files."
 msgstr "បច្ចុប្បន្ន Amarok មិនអាច​ចាក់​ឯកសារ MP3 បាន​ទេ ។"
 
-#: EngineController.cpp:170
+#: EngineController.cpp:171
 msgid "No MP3 Support"
 msgstr "គ្មាន​ការ​គាំទ្រ MP3 ទេ"
 
-#: EngineController.cpp:452
+#: EngineController.cpp:453
 msgid "Previous track finished"
 msgstr "បានបញ្ចប់​បទ​មុន"
 
@@ -2850,8 +2859,8 @@ msgstr "មិន​អាច​ចូល​ទៅ​ក្នុង​ថត '%
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 96
-#: mediadevice/ifp/ifpmediadevice.cpp:654 rc.cpp:1640
-#: servicebrowser/jamendo/jamendoservice.cpp:107
+#: mediadevice/ifp/ifpmediadevice.cpp:654 rc.cpp:1625
+#: servicebrowser/jamendo/JamendoService.cpp:107
 msgid "Download"
 msgstr "ទាញយក"
 
@@ -3216,7 +3225,7 @@ msgstr "ចូល​ទៅ​ការ​ចែករំលែក​តន្ត
 #. i18n: tag string
 #. i18n: file ./servicebrowser/ampache/AmpacheConfigWidget.ui line 61
 #: mediadevice/daap/daapclient.cpp:522 rc.cpp:75 rc.cpp:123 rc.cpp:1087
-#: rc.cpp:1135 rc.cpp:1646 rc.cpp:1694
+#: rc.cpp:1135 rc.cpp:1631 rc.cpp:1694
 msgid "Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
@@ -3501,39 +3510,39 @@ msgstr "ធ្វើ​សមកាលកម្ម​ជាមួយ​ស្ថ
 
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:261
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:264
-#: collectionbrowser/OrganizeCollectionDialog.cpp:136
-#: collectionbrowser/OrganizeCollectionDialog.cpp:139
+#: collectionbrowser/OrganizeCollectionDialog.cpp:137
+#: collectionbrowser/OrganizeCollectionDialog.cpp:140
 #, kde-format
 msgid "%1 or %2"
 msgstr "%1 ឬ %2"
 
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:265
-#: collectionbrowser/OrganizeCollectionDialog.cpp:140
+#: collectionbrowser/OrganizeCollectionDialog.cpp:141
 msgid "Artist's Initial"
 msgstr "អាទិ​សង្កេត​របស់​សិល្បករ"
 
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:266
-#: collectionbrowser/OrganizeCollectionDialog.cpp:141
+#: collectionbrowser/OrganizeCollectionDialog.cpp:142
 msgid "File Extension of Source"
 msgstr "កន្ទុយ​ឯកសារ​របស់​ប្រភព"
 
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:267
-#: collectionbrowser/OrganizeCollectionDialog.cpp:142
+#: collectionbrowser/OrganizeCollectionDialog.cpp:143
 msgid "Track Number"
 msgstr "លេខ​បទ"
 
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:269
-#: collectionbrowser/OrganizeCollectionDialog.cpp:144
+#: collectionbrowser/OrganizeCollectionDialog.cpp:145
 msgid "<h3>Custom Format String</h3>"
 msgstr "<h3>ខ្សែអក្សរ​ទ្រង់ទ្រាយ​ផ្ទាល់ខ្លួន</h3>"
 
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:270
-#: collectionbrowser/OrganizeCollectionDialog.cpp:145
+#: collectionbrowser/OrganizeCollectionDialog.cpp:146
 msgid "You can use the following tokens:"
 msgstr "អ្នក​អាច​ប្រើ​ថូខឹន​ដូច​ខាង​ក្រោម ៖"
 
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:280
-#: collectionbrowser/OrganizeCollectionDialog.cpp:155
+#: collectionbrowser/OrganizeCollectionDialog.cpp:156
 msgid ""
 "If you surround sections of text that contain a token with curly-braces, "
 "that section will be hidden if the token is empty."
@@ -3544,7 +3553,7 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./collectionbrowser/OrganizeCollectionDialogBase.ui line 187
 #: mediadevice/generic/genericmediadeviceconfigdialog.ui.h:311
-#: collectionbrowser/OrganizeCollectionDialog.cpp:290 rc.cpp:1328
+#: collectionbrowser/OrganizeCollectionDialog.cpp:291 rc.cpp:1328
 msgid "(Help)"
 msgstr "(ជំនួយ)"
 
@@ -3855,7 +3864,7 @@ msgstr "របៀប​អូឌីយ៉ូ"
 msgid "Data Mode"
 msgstr "របៀប​ទិន្នន័យ"
 
-#: systray.cpp:103
+#: systray.cpp:114
 msgid "Append && &Play"
 msgstr "បន្ថែម​ខាង​ចុង និងចាក់"
 
@@ -3864,8 +3873,8 @@ msgstr "បន្ថែម​ខាង​ចុង និងចាក់"
 #. i18n: tag string
 #. i18n: file ./tagdialogbase.ui line 793
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 36
-#: systray.cpp:108 rc.cpp:390 rc.cpp:1463 rc.cpp:1475
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneRedownloadDialogBase.ui line 36
+#: systray.cpp:119 rc.cpp:390 rc.cpp:1463 rc.cpp:1646
 msgid "&Cancel"
 msgstr "បោះបង់"
 
@@ -3906,13 +3915,13 @@ msgid "year"
 msgstr "ឆ្នាំ"
 
 #: collectionbrowser/CollectionWidget.cpp:43
-#: servicebrowser/servicebase.cpp:145
+#: servicebrowser/ServiceBase.cpp:145
 msgid "Group By"
 msgstr "ដាក់​ជា​ក្រុម​តាម"
 
 #: collectionbrowser/CollectionWidget.cpp:60
 #: servicebrowser/magnatunestore/MagnatuneStore.cpp:171
-#: servicebrowser/jamendo/jamendoservice.cpp:135
+#: servicebrowser/jamendo/JamendoService.cpp:135
 msgid "Artist / Album"
 msgstr "សិល្បករ / អាល់ប៊ុម"
 
@@ -3922,13 +3931,13 @@ msgstr "សិល្បករ / ឆ្នាំ - អាល់ប៊ុម"
 
 #: collectionbrowser/CollectionWidget.cpp:72
 #: servicebrowser/magnatunestore/MagnatuneStore.cpp:179
-#: servicebrowser/jamendo/jamendoservice.cpp:143
+#: servicebrowser/jamendo/JamendoService.cpp:143
 msgid "Genre / Artist"
 msgstr "ចង្វាក់ / សិល្បករ"
 
 #: collectionbrowser/CollectionWidget.cpp:76
 #: servicebrowser/magnatunestore/MagnatuneStore.cpp:183
-#: servicebrowser/jamendo/jamendoservice.cpp:147
+#: servicebrowser/jamendo/JamendoService.cpp:147
 msgid "Genre / Artist / Album"
 msgstr "ចង្វាក់ / សិល្បករ / អាល់ប៊ុម"
 
@@ -6070,38 +6079,14 @@ msgid "Overwrite &Destination"
 msgstr "សរសេរ​ជាន់​លើ​ទិសដៅ"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 13
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneDownloadDialogBase.ui line 13
 #: rc.cpp:1466
-msgid "Redownload manager"
-msgstr "ទាញ​យក​កម្មវិធី​គ្រប់គ្រង​ម្ដ​ងទៀត"
-
-#. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 19
-#: rc.cpp:1469
-msgid "These are the albums that you have previously downloaded:"
-msgstr "មាន​អាល់ប៊ុម​ដែល​អ្នក​បានទាញ​យក​ពី​មុន ៖"
-
-#. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 29
-#: rc.cpp:1472
-msgid "Re&download"
-msgstr "ទាញយក​ម្ដង​ទៀត"
-
-#. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatuneredownloaddialogbase.ui line 60
-#: rc.cpp:1478
-msgid "Artist - Album"
-msgstr "សិល្បករ - អាល់ប៊ុម"
-
-#. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 13
-#: rc.cpp:1481
 msgid "Magnatune.com Album Download"
 msgstr "ទាញ​យក​អាល់ប៊ុមពី Magnatune.com"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 19
-#: rc.cpp:1484 servicebrowser/magnatunestore/MagnatuneMeta.cpp:228
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneDownloadDialogBase.ui line 19
+#: rc.cpp:1469 servicebrowser/magnatunestore/MagnatuneMeta.cpp:228
 #: servicebrowser/magnatunestore/MagnatuneMeta.cpp:426
 #: servicebrowser/mp3tunes/Mp3tunesMeta.cpp:60
 #: servicebrowser/jamendo/JamendoMeta.cpp:127
@@ -6110,32 +6095,32 @@ msgid "&Download"
 msgstr "ទាញយក"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 26
-#: rc.cpp:1487
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneDownloadDialogBase.ui line 26
+#: rc.cpp:1472
 msgid "Magnatune info"
 msgstr "ព័ត៌មាន Magnatune"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 42
-#: rc.cpp:1490
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneDownloadDialogBase.ui line 42
+#: rc.cpp:1475
 msgid "Download options"
 msgstr "ជម្រើស​ទាញ​យក"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 48
-#: rc.cpp:1493
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneDownloadDialogBase.ui line 48
+#: rc.cpp:1478
 msgid "Select Format:"
 msgstr "ជ្រើស​ទ្រង់ទ្រាយ ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 61
-#: rc.cpp:1496
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneDownloadDialogBase.ui line 61
+#: rc.cpp:1481
 msgid "Download to:"
 msgstr "ទាញ​យក​ទៅ​កាន់ ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunedownloaddialogbase.ui line 74
-#: rc.cpp:1499
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneDownloadDialogBase.ui line 74
+#: rc.cpp:1484
 msgid ""
 "If you download to a location that is already being monitored by Amarok, the "
 "album will automatically be added to your collection."
@@ -6144,202 +6129,202 @@ msgstr ""
 "របស់​អ្នក​ដោយ​ស្វ័យ​ប្រវត្តិ ។"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 22
-#: rc.cpp:1502
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 22
+#: rc.cpp:1487
 msgid "Purchase Album from Magnatune.com"
 msgstr "ជាវ​អាល់ប៊ុម​ពី Magnatune.com"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 28
-#: rc.cpp:1505
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 28
+#: rc.cpp:1490
 msgid "Info"
 msgstr "ព័ត៌មាន"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 34
-#: rc.cpp:1508
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 34
+#: rc.cpp:1493
 msgid "You have chosen to purchase the following album from Magnatune.com"
 msgstr "អ្នក​បាន​ជ្រើស​ដើម្បី​ជាវ​អាល់ប៊ុម​ដូចខាង​ក្រោម​ពី Magnatune.com"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 130
-#: rc.cpp:1517
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 130
+#: rc.cpp:1502
 msgid "Genre:"
 msgstr "ចង្វាក់ ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 150
-#: rc.cpp:1520
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 150
+#: rc.cpp:1505
 msgid "Launch Year:"
 msgstr "ឆ្នាំ​ប្រកាស ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 176
-#: rc.cpp:1523
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 176
+#: rc.cpp:1508
 msgid "Payment"
 msgstr "ការ​ចំណាយ"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 182
-#: rc.cpp:1526
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 182
+#: rc.cpp:1511
 msgctxt "The name of the person buying songs from magnatune"
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 195
-#: rc.cpp:1529
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 195
+#: rc.cpp:1514
 msgctxt "The e-mail address of the user"
 msgid "E-mail:"
 msgstr "អ៊ីមែល ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 208
-#: rc.cpp:1532
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 208
+#: rc.cpp:1517
 msgid "Pay using:"
 msgstr "បង់ប្រាក់​ដោយប្រើ ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 231
-#: rc.cpp:1535
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 231
+#: rc.cpp:1520
 msgid "credit card"
 msgstr "ប័ណ្ណ​ឥណទាន"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 238
-#: rc.cpp:1538
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 238
+#: rc.cpp:1523
 msgid "Magnatune gift card"
 msgstr "កាត Magnatune gift"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 727
-#: rc.cpp:1541
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 727
+#: rc.cpp:1526
 msgid "VISA and Mastercard accepted."
 msgstr "ទទួល​តែ VISA និង Mastercard ។"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 737
-#: rc.cpp:1544
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 737
+#: rc.cpp:1529
 msgid "Credit card number:"
 msgstr "លេខប័ណ្ណ​ឥទាន ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 757
-#: rc.cpp:1547
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 757
+#: rc.cpp:1532
 msgid "Expiration date:"
 msgstr "កាលបរិច្ឆេទ​ផុត​កំណត់ ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 783
-#: rc.cpp:1550
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 783
+#: rc.cpp:1535
 msgid "Month (xx):"
 msgstr "ខែ (xx) ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 803
-#: rc.cpp:1553
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 803
+#: rc.cpp:1538
 msgid "Year (xx):"
 msgstr "ឆ្នាំ (xx) ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 835
-#: rc.cpp:1556
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 835
+#: rc.cpp:1541
 msgid "Gift card code:"
 msgstr "លេខកូដ​កាត Gift ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 852
-#: rc.cpp:1559
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 852
+#: rc.cpp:1544
 msgid "Amount to pay (USD):"
 msgstr "ចំនួន​ត្រូវ​ចំណាយ (ជា​ដុល្លារ)​ ៖"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 866
-#: rc.cpp:1562
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 866
+#: rc.cpp:1547
 msgid "5"
 msgstr "៥"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 871
-#: rc.cpp:1565
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 871
+#: rc.cpp:1550
 msgid "6"
 msgstr "៦"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 876
-#: rc.cpp:1568
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 876
+#: rc.cpp:1553
 msgid "7"
 msgstr "៧"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 881
-#: rc.cpp:1571
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 881
+#: rc.cpp:1556
 msgid "8"
 msgstr "៨"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 886
-#: rc.cpp:1574
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 886
+#: rc.cpp:1559
 msgid "9"
 msgstr "៩"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 891
-#: rc.cpp:1577
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 891
+#: rc.cpp:1562
 msgid "10"
 msgstr "១០"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 896
-#: rc.cpp:1580
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 896
+#: rc.cpp:1565
 msgid "11"
 msgstr "១១"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 901
-#: rc.cpp:1583
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 901
+#: rc.cpp:1568
 msgid "12"
 msgstr "១២"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 906
-#: rc.cpp:1586
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 906
+#: rc.cpp:1571
 msgid "13"
 msgstr "១៣"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 911
-#: rc.cpp:1589
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 911
+#: rc.cpp:1574
 msgid "14"
 msgstr "១៤"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 916
-#: rc.cpp:1592
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 916
+#: rc.cpp:1577
 msgid "15"
 msgstr "១៥"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 921
-#: rc.cpp:1595
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 921
+#: rc.cpp:1580
 msgid "16"
 msgstr "១៦"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 926
-#: rc.cpp:1598
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 926
+#: rc.cpp:1583
 msgid "17"
 msgstr "១៧"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 931
-#: rc.cpp:1601
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 931
+#: rc.cpp:1586
 msgid "18"
 msgstr "១៨"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 939
-#: rc.cpp:1604
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 939
+#: rc.cpp:1589
 msgid ""
 "The amount you choose to pay will be split 50/50 between the artist and "
 "Magnatune.com. Your personal and credit card information is sent securely to "
@@ -6351,81 +6336,105 @@ msgstr ""
 "ការ​អ៊ិនគ្រីប SSL ហើយ Amarok មិនអាច​ទុក​វា​បាន ​ឬអ្នក​អភិវឌ្ឍន៍ Amarok ក៏​មិនអាច​អាន​វា​បានដែរ ។"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 979
-#: rc.cpp:1607
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 979
+#: rc.cpp:1592
 msgid "P&urchase"
 msgstr "ជាវ"
 
 #. i18n: tag string
-#. i18n: file ./servicebrowser/magnatunestore/magnatunepurchasedialogbase.ui line 986
-#: rc.cpp:1610
+#. i18n: file ./servicebrowser/magnatunestore/MagnatunePurchaseDialogBase.ui line 986
+#: rc.cpp:1595
 msgid "Ca&ncel"
 msgstr "បោះបង់"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 22
-#: rc.cpp:1613
+#: rc.cpp:1598
 msgid "Stream options"
 msgstr "ជម្រើស​ស្ទ្រីម"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 28
-#: rc.cpp:1616
+#: rc.cpp:1601
 msgid "Preview stream type:"
 msgstr "មើល​ប្រភេទ​ស្ទ្រីម​ជា​មុន ៖"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 36
-#: rc.cpp:1619
+#: rc.cpp:1604
 msgid "Ogg"
 msgstr "Ogg"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 41
-#: rc.cpp:1622
+#: rc.cpp:1607
 msgid "Mp3"
 msgstr "Mp3"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 46
-#: rc.cpp:1625
+#: rc.cpp:1610
 msgid "Lofi mp3"
 msgstr "Lofi mp3"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 57
-#: rc.cpp:1628
+#: rc.cpp:1613
 msgid "Membership options"
 msgstr "ជម្រើស​សមាជិក"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 63
-#: rc.cpp:1631
+#: rc.cpp:1616
 msgid "I am a member"
 msgstr "ខ្ញុំ​ជា​សមាជិក"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 83
-#: rc.cpp:1634
+#: rc.cpp:1619
 msgid "Membership type:"
 msgstr "ប្រភេទ​សមាជិក ៖"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 104
-#: rc.cpp:1643
+#: rc.cpp:1628
 msgctxt "Username for logins to Magnatune"
 msgid "Username:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/magnatunestore/MagnatuneConfigWidget.ui line 124
-#: rc.cpp:1649
+#: rc.cpp:1634
 msgid ""
 "For more information about the Magnatune.com memberships, and to sign up, go "
 "to http://magnatune.com/<To be anounced>"
 msgstr ""
 "ចំពោះ​ព័ត៌មាន​បន្ថែម​អំពី​សមាជិក Magnatune.com និង​ដើម្បី​ចុះឈ្មោះ សូម​ទៅកាន់ http://magnatune."
 "com/<ប្រកាស>"
+
+#. i18n: tag string
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneRedownloadDialogBase.ui line 13
+#: rc.cpp:1637
+msgid "Redownload manager"
+msgstr "ទាញ​យក​កម្មវិធី​គ្រប់គ្រង​ម្ដ​ងទៀត"
+
+#. i18n: tag string
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneRedownloadDialogBase.ui line 19
+#: rc.cpp:1640
+msgid "These are the albums that you have previously downloaded:"
+msgstr "មាន​អាល់ប៊ុម​ដែល​អ្នក​បានទាញ​យក​ពី​មុន ៖"
+
+#. i18n: tag string
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneRedownloadDialogBase.ui line 29
+#: rc.cpp:1643
+msgid "Re&download"
+msgstr "ទាញយក​ម្ដង​ទៀត"
+
+#. i18n: tag string
+#. i18n: file ./servicebrowser/magnatunestore/MagnatuneRedownloadDialogBase.ui line 60
+#: rc.cpp:1649
+msgid "Artist - Album"
+msgstr "សិល្បករ - អាល់ប៊ុម"
 
 #. i18n: tag string
 #. i18n: file ./servicebrowser/lastfm/LastFmConfigWidget.ui line 73
@@ -8001,7 +8010,7 @@ msgstr[0] "<p>អ្នក​បាន​ជ្រើស %1 បទ​ដើម�
 msgid "This dynamic playlist has no sources set."
 msgstr "បញ្ជីចាក់​ថាមវន្ត​នេះ​គ្មាន​សំណុំ​ប្រភពទេ ។"
 
-#: analyzers/blockanalyzer.cpp:440
+#: analyzers/blockanalyzer.cpp:442
 msgid "Framerate"
 msgstr "អត្រា​ស៊ុម"
 
@@ -8105,7 +8114,7 @@ msgid "Track Number - Title"
 msgstr "លេខ​បទ - ចំណង​ជើង"
 
 #: playlist/PlaylistHeader.cpp:46 playlist/PlaylistModel.cpp:425
-#: SmartPlaylistEditor.cpp:182
+#: TrackTooltip.cpp:142 TrackTooltip.cpp:149 SmartPlaylistEditor.cpp:182
 msgid "Length"
 msgstr "ប្រវែង"
 
@@ -8137,7 +8146,7 @@ msgstr "ទៅ​យក​គម្រប"
 msgid "Unset Cover"
 msgstr "មិន​បាន​កំណត់​គម្រប"
 
-#: playlist/PlaylistWidget.cpp:91
+#: playlist/PlaylistWidget.cpp:92
 msgctxt "switch view"
 msgid "&View"
 msgstr "មើល"
@@ -8205,13 +8214,10 @@ msgstr "អត្រា​ប៊ីត"
 msgid "Sample Rate"
 msgstr "អត្រាគំរូ"
 
-#: playlist/PlaylistModel.cpp:429 SmartPlaylistEditor.cpp:184
+#: playlist/PlaylistModel.cpp:429 TrackTooltip.cpp:121
+#: SmartPlaylistEditor.cpp:184
 msgid "Rating"
 msgstr "អត្រា"
-
-#: playlist/PlaylistModel.cpp:430
-msgid "Play Count"
-msgstr "ចំនួន​ចាក់"
 
 #: playlist/PlaylistModel.cpp:431
 msgctxt "Column name"
@@ -8300,7 +8306,15 @@ msgstr "Magnatune.com ៖ ទិញ"
 msgid "Magnatune.com: &Download"
 msgstr "Magnatune.com ៖ ទាញយក"
 
-#: servicebrowser/magnatunestore/magnatunexmlparser.cpp:63
+#: servicebrowser/magnatunestore/MagnatuneAlbumDownloader.cpp:70
+msgid "Downloading album"
+msgstr "កំពុង​ទាញយក​អាល់ប៊ុម"
+
+#: servicebrowser/magnatunestore/MagnatuneAlbumDownloader.cpp:118
+msgid "Adding album cover to collection"
+msgstr "កំពុង​បន្ថែម​គម្រប​អាល់ប៊ុម​ទៅ​សម្រាំង"
+
+#: servicebrowser/magnatunestore/MagnatuneXmlParser.cpp:63
 #, kde-format
 msgid ""
 "Magnatune.com database update complete. Added %1 tracks on %2 albums from %3 "
@@ -8309,36 +8323,19 @@ msgstr ""
 "ការ​ធ្វើ​ឲ្យ​មូលដ្ឋាន​ទិន្នន័យ Magnatune.com ទាន់​សម័យ​បាន​បញ្ចប់ ។ បាន​បន្ថែម​បទ %1 នៅ​ក្នុង​អាល់ប៊ុម %"
 "2 ពី​សិល្បករ %3"
 
-#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:86
-msgid "Processing download"
-msgstr "កំពុង​ដំណើរការ​ទាញយក"
-
-#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:134
-#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:156
-msgid "Processing Payment"
-msgstr "កំពុង​ដំណើរ​ការ​ចំណាយ"
-
-#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:224
-msgid "check the gift card code"
-msgstr "ពិនិត្យ​មើល​កូដ​កាត gift"
-
-#: servicebrowser/magnatunestore/magnatunepurchasehandler.cpp:226
-msgid "check the credit card information"
-msgstr "ពិនិត្យ​មើល​ព័ត៌មាន​ប័ណ្ណ​ឥណទាន"
-
-#: servicebrowser/magnatunestore/magnatuneredownloadhandler.cpp:60
+#: servicebrowser/magnatunestore/MagnatuneRedownloadHandler.cpp:60
 msgid "No purchases found!"
 msgstr "រក​មិន​ឃើញ​ការ​ទិញ !"
 
-#: servicebrowser/magnatunestore/magnatuneredownloadhandler.cpp:61
+#: servicebrowser/magnatunestore/MagnatuneRedownloadHandler.cpp:61
 msgid "No previous purchases have been found. Nothing to redownload..."
 msgstr "រក​មិន​ឃើញ​កា​រទិញ​ពីមុន ។ គ្មាន​អ្វី​ត្រូវ​ទាញ​យក​ម្ដង​ទៀត..."
 
-#: servicebrowser/magnatunestore/magnatuneredownloadhandler.cpp:139
+#: servicebrowser/magnatunestore/MagnatuneRedownloadHandler.cpp:139
 msgid "Could not re-download album"
 msgstr "មិនអាច​ទាញយក​អាល់ប៊ុម​ម្ដង​ទៀត"
 
-#: servicebrowser/magnatunestore/magnatuneredownloadhandler.cpp:140
+#: servicebrowser/magnatunestore/MagnatuneRedownloadHandler.cpp:140
 msgid "There seems to be a problem with the selected redownload info file."
 msgstr "ហាក់បី​ដូច​ជា​មាន​បញ្ហា​ជា​មួយ​នឹង​ឯកសារ​ព័ត៌មាន​ទាញយក​ឡើងវិញ​ដែល​បាន​ជ្រើស ។"
 
@@ -8410,19 +8407,28 @@ msgstr "យល់ព្រម"
 msgid "ERROR: Unknown argument."
 msgstr "ERROR ៖ មិន​ស្គាល់សារ"
 
-#: servicebrowser/magnatunestore/magnatunealbumdownloader.cpp:70
-msgid "Downloading album"
-msgstr "កំពុង​ទាញយក​អាល់ប៊ុម"
+#: servicebrowser/magnatunestore/MagnatunePurchaseHandler.cpp:86
+msgid "Processing download"
+msgstr "កំពុង​ដំណើរការ​ទាញយក"
 
-#: servicebrowser/magnatunestore/magnatunealbumdownloader.cpp:118
-msgid "Adding album cover to collection"
-msgstr "កំពុង​បន្ថែម​គម្រប​អាល់ប៊ុម​ទៅ​សម្រាំង"
+#: servicebrowser/magnatunestore/MagnatunePurchaseHandler.cpp:134
+#: servicebrowser/magnatunestore/MagnatunePurchaseHandler.cpp:156
+msgid "Processing Payment"
+msgstr "កំពុង​ដំណើរ​ការ​ចំណាយ"
 
-#: servicebrowser/servicebase.cpp:301
+#: servicebrowser/magnatunestore/MagnatunePurchaseHandler.cpp:224
+msgid "check the gift card code"
+msgstr "ពិនិត្យ​មើល​កូដ​កាត gift"
+
+#: servicebrowser/magnatunestore/MagnatunePurchaseHandler.cpp:226
+msgid "check the credit card information"
+msgstr "ពិនិត្យ​មើល​ព័ត៌មាន​ប័ណ្ណ​ឥណទាន"
+
+#: servicebrowser/ServiceBase.cpp:301
 msgid "This service does not accept any messages"
 msgstr "សេវា​នេះ​មិន​ទទួល​យក​សារ​ណាមួយ​ទេ"
 
-#: servicebrowser/servicebase.cpp:306
+#: servicebrowser/ServiceBase.cpp:306
 msgid "ERROR: unknown message"
 msgstr "ERROR ៖ មិន​ស្គាល់សារ"
 
@@ -8436,7 +8442,7 @@ msgid "A large listing of podcasts"
 msgstr "បញ្ជី​ផតខាស់​ធំ"
 
 #: servicebrowser/opmldirectory/OpmlDirectoryService.cpp:97
-#: servicebrowser/jamendo/jamendoservice.cpp:100
+#: servicebrowser/jamendo/JamendoService.cpp:100
 msgctxt "Fetch new information from the website"
 msgid "Update"
 msgstr "ធ្វើ​ឲ្យ​ទាន់​សម័យ"
@@ -8554,27 +8560,27 @@ msgstr "Last.fm គឺ​ល្អ..."
 msgid "Radio playlist has ended."
 msgstr "បាន​បញ្ចប់​បញ្ជី​ចាក់​វិទ្យុ ។"
 
-#: servicebrowser/lastfm/LastFmService.cpp:76
+#: servicebrowser/lastfm/LastFmService.cpp:79
 msgid "Last.fm: The social music revolution."
 msgstr "Last.fm ៖ បដិវត្តន៍​តន្ត្រី​សង្គម ។"
 
-#: servicebrowser/lastfm/LastFmService.cpp:105
+#: servicebrowser/lastfm/LastFmService.cpp:108
 msgid "Love"
 msgstr "ពេញចិត្ត"
 
-#: servicebrowser/lastfm/LastFmService.cpp:111
+#: servicebrowser/lastfm/LastFmService.cpp:114
 msgid "Ban"
 msgstr "Ban"
 
-#: servicebrowser/lastfm/LastFmService.cpp:117
+#: servicebrowser/lastfm/LastFmService.cpp:120
 msgid "Skip"
 msgstr "រំលង"
 
-#: servicebrowser/lastfm/LastFmService.cpp:129
+#: servicebrowser/lastfm/LastFmService.cpp:132
 msgid "Enter artist name"
 msgstr "បញ្ចូល​ឈ្មោះ​សិល្បករ"
 
-#: servicebrowser/lastfm/LastFmService.cpp:131
+#: servicebrowser/lastfm/LastFmService.cpp:134
 msgid "Go"
 msgstr "ទៅ"
 
@@ -8635,12 +8641,12 @@ msgid "Enter the server name and a password"
 msgstr "បញ្ចូល​ឈ្មោះ និង​ពាក្យ​សម្ងាត់​របស់​ម៉ាស៊ីន​បម្រើ"
 
 #: servicebrowser/ampache/AmpacheService.cpp:194
-#: servicebrowser/mp3tunes/mp3tunesservice.cpp:132
+#: servicebrowser/mp3tunes/Mp3tunesService.cpp:132
 msgid "Authenticating"
 msgstr "ផ្ទៀងផ្ទាត់​ភាពត្រឹមត្រូវ"
 
 #: servicebrowser/ampache/AmpacheService.cpp:228
-#: servicebrowser/mp3tunes/mp3tunesservice.cpp:178
+#: servicebrowser/mp3tunes/Mp3tunesService.cpp:178
 msgid "Authentication Error!"
 msgstr "កំហុស​ការ​ផ្ទៀងផ្ទាត់​ភាពត្រឹមត្រូវ !"
 
@@ -8649,22 +8655,13 @@ msgstr "កំហុស​ការ​ផ្ទៀងផ្ទាត់​ភា
 msgid "Ampache Server %1"
 msgstr "ម៉ាស៊ីន​បម្រើ Ampache %1"
 
-#: servicebrowser/mp3tunes/mp3tunesservice.cpp:80
+#: servicebrowser/mp3tunes/Mp3tunesService.cpp:80
 msgid "The MP3Tunes Locker service. Access your stored music!"
 msgstr "សេវា​កម្មវិធី​ចាក់សោ Mp3Tunes ។ ចូល​ដំណើរការ​តន្ត្រី​ដែល​បានរក្សា​ទុក​របស់​អ្នក !"
 
-#: servicebrowser/mp3tunes/mp3tunesservice.cpp:106
+#: servicebrowser/mp3tunes/Mp3tunesService.cpp:106
 msgid "Enter a login and a password"
 msgstr "បញ្ចូល​ឈ្មោះ​ចូល និង​ពាក្យ​សម្ងាត់"
-
-#: servicebrowser/jamendo/jamendoxmlparser.cpp:63
-#, kde-format
-msgid ""
-"Jamendo.com database update complete. Added %1 tracks on %2 albums from %3 "
-"artists"
-msgstr ""
-"ការ​ធ្វើ​ឲ្យ​មូលដ្ឋាន​ទិន្នន័យ Jamendo.com ទាន់​សម័យ​បាន​បញ្ចប់ ។ បាន​បន្ថែម​បទ %1 នៅ​ក្នុង​អាល់ប៊ុម %2 ពី​"
-"សិល្បករ %3"
 
 #: servicebrowser/jamendo/JamendoMeta.cpp:142
 msgid "Jamendo.com: &Download"
@@ -8674,22 +8671,31 @@ msgstr "Jamendo.com ៖ ទាញយក"
 msgid "&download"
 msgstr "ទាញយក"
 
+#: servicebrowser/jamendo/JamendoService.cpp:75
+msgid "A site where artists can showcase their creations to the world"
+msgstr "តំបន់បណ្ដាញ​ដែល​សិល្បករ​អាច​បង្ហាញ​ការ​បង្កើត​របស់​ពួកគេ​ចំពោះ​ពិភពលោក"
+
+#: servicebrowser/jamendo/JamendoService.cpp:177
+msgid "Downloading Jamendo.com Database"
+msgstr "ទាញយក​មូលដ្ឋាន​ទិន្នន័យ Jamendo.com"
+
+#: servicebrowser/jamendo/JamendoService.cpp:213
+msgid "Updating the local Jamendo database."
+msgstr "ធ្វើ​ឲ្យ​មូលដ្ឋាន​ទិន្នន័យ Jamendo មូលដ្ឋាន​ទាន់សម័យ ។"
+
 #: servicebrowser/jamendo/JamendoInfoParser.cpp:48
 #: servicebrowser/jamendo/JamendoInfoParser.cpp:78
 msgid "No description available..."
 msgstr "មិនមាន​សេចក្ដី​ពិពណ៌នា..."
 
-#: servicebrowser/jamendo/jamendoservice.cpp:75
-msgid "A site where artists can showcase their creations to the world"
-msgstr "តំបន់បណ្ដាញ​ដែល​សិល្បករ​អាច​បង្ហាញ​ការ​បង្កើត​របស់​ពួកគេ​ចំពោះ​ពិភពលោក"
-
-#: servicebrowser/jamendo/jamendoservice.cpp:177
-msgid "Downloading Jamendo.com Database"
-msgstr "ទាញយក​មូលដ្ឋាន​ទិន្នន័យ Jamendo.com"
-
-#: servicebrowser/jamendo/jamendoservice.cpp:213
-msgid "Updating the local Jamendo database."
-msgstr "ធ្វើ​ឲ្យ​មូលដ្ឋាន​ទិន្នន័យ Jamendo មូលដ្ឋាន​ទាន់សម័យ ។"
+#: servicebrowser/jamendo/JamendoXmlParser.cpp:63
+#, kde-format
+msgid ""
+"Jamendo.com database update complete. Added %1 tracks on %2 albums from %3 "
+"artists"
+msgstr ""
+"ការ​ធ្វើ​ឲ្យ​មូលដ្ឋាន​ទិន្នន័យ Jamendo.com ទាន់​សម័យ​បាន​បញ្ចប់ ។ បាន​បន្ថែម​បទ %1 នៅ​ក្នុង​អាល់ប៊ុម %2 ពី​"
+"សិល្បករ %3"
 
 #: playlistbrowser/PodcastModel.cpp:248
 msgid "Enter Podcast URL:"
@@ -8911,6 +8917,25 @@ msgstr "នាំចូល​បញ្ជីចាក់"
 #: collectionscanner/main.cpp:53
 msgid "Restart the scanner at last position, after a crash"
 msgstr "ចាប់ផ្ដើម​ឧបករណ៍​វិភាគ​នៅ​ទីតាំង​ចុងក្រោយ ក្រោយ​ពី​គាំង"
+
+#: TrackTooltip.cpp:136
+#, fuzzy
+#| msgctxt "The name of the playing song"
+#| msgid "Track:"
+msgid "Track: "
+msgstr "បទ ៖"
+
+#: TrackTooltip.cpp:166 CoverManager.cpp:910
+msgid " by "
+msgstr " ដោយ "
+
+#: TrackTooltip.cpp:168
+msgid " on "
+msgstr ""
+
+#: TrackTooltip.cpp:199
+msgid "Amarok - rediscover your music"
+msgstr "Amarok - នាំ​អារម្មណ៍​អស់​លោក​អ្នក​ទៅកាន់​ពិភព​មួយ​នៃ​ជីវិត"
 
 #: amarokcore/crashhandler.cpp:96
 msgid ""
@@ -9363,10 +9388,6 @@ msgstr[0] "%1 លទ្ធផល​សម្រាប់ \"%2\""
 msgid "1 album"
 msgid_plural "%1 albums"
 msgstr[0] "%1 អាល់ប៊ុម"
-
-#: CoverManager.cpp:910
-msgid " by "
-msgstr " ដោយ "
 
 #: CoverManager.cpp:915
 #, kde-format
