@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-10 23:27+0200\n"
+"POT-Creation-Date: 2008-04-16 16:11+0200\n"
 "PO-Revision-Date: 2008-04-07 16:56+0700\n"
 "Last-Translator: Eng Vannak <evannak@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -1366,7 +1366,7 @@ msgstr "ទំហំ​អេក្រង់"
 
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgnewimage.ui line 246
-#: rc.cpp:245 ui/kis_dlg_preferences.cc:409
+#: rc.cpp:245 ui/dialogs/kis_dlg_preferences.cc:409
 msgid "Color"
 msgstr "ពណ៌"
 
@@ -1546,7 +1546,8 @@ msgstr "បោះបង់"
 
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgautogradient.ui line 25
-#: rc.cpp:335 ui/kis_gradient_chooser.cc:41 ui/kis_gradient_chooser.cc:46
+#: rc.cpp:335 ui/widgets/kis_gradient_chooser.cc:41
+#: ui/widgets/kis_gradient_chooser.cc:46
 msgid "Custom Gradient"
 msgstr "ជម្រាល​ផ្ទាល់ខ្លួន"
 
@@ -1652,8 +1653,8 @@ msgstr "ម៉ូដែល​ពណ៌​លំនាំ​ដើម​សម្
 #. i18n: file ./ui/forms/wdgcolorsettings.ui line 60
 #. i18n: tag string
 #. i18n: file ./ui/forms/wdgdisplaysettings.ui line 13
-#: rc.cpp:398 rc.cpp:473 ui/kis_dlg_preferences.cc:400
-#: ui/kis_dlg_preferences.cc:401
+#: rc.cpp:398 rc.cpp:473 ui/dialogs/kis_dlg_preferences.cc:400
+#: ui/dialogs/kis_dlg_preferences.cc:401
 msgid "Display"
 msgstr "បង្ហាញ"
 
@@ -2023,7 +2024,7 @@ msgstr "ដែល​មាន​ចលនា​"
 #. i18n: file ./ui/forms/wdgcustombrush.ui line 98
 #. i18n: tag string
 #. i18n: file ./plugins/brushes/imagepipe/wdgcustombrush.ui line 98
-#: rc.cpp:578 rc.cpp:2731 ui/kis_brush_chooser.cc:44
+#: rc.cpp:578 rc.cpp:2731 ui/widgets/kis_brush_chooser.cc:44
 msgid "Use color as mask"
 msgstr "ប្រើ​ពណ៌​ជា​របាំង​"
 
@@ -3518,7 +3519,7 @@ msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​ថ
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/compose/wdg_compose.ui line 22
-#: rc.cpp:1393 ui/kis_dlg_adj_layer_props.cc:75
+#: rc.cpp:1393 ui/dialogs/kis_dlg_adj_layer_props.cc:75
 msgid "Layer name:"
 msgstr "ឈ្មោះ​ស្រទាប់ ៖"
 
@@ -4856,7 +4857,7 @@ msgstr "ស្រទាប់​សកម្ម"
 
 #. i18n: tag string
 #. i18n: file ./plugins/viewplugins/scripting/scripts/pilimport.ui line 134
-#: rc.cpp:2227 ui/kis_dlg_new_layer.cc:51
+#: rc.cpp:2227 ui/dialogs/kis_dlg_new_layer.cc:51
 msgid "New Layer"
 msgstr "ស្រទាប់​ថ្មី​"
 
@@ -5649,18 +5650,6 @@ msgstr "ជ្រើស"
 msgid "&Rotate"
 msgstr "បង្វិល"
 
-#: ui/kis_dlg_image_properties.cc:52
-msgid "Image Properties"
-msgstr "លក្ខណៈសម្បត្តិ​រូបភាព"
-
-#: ui/kis_gradient_chooser.cc:55
-msgid "Custom Gradient..."
-msgstr "ជម្រាល​ផ្ទាល់​ខ្លួន​..."
-
-#: ui/kis_gradient_chooser.cc:90
-msgid "Choose Gradient to Add"
-msgstr "ជ្រើស​ជម្រាល​ត្រូវ​បន្ថែម"
-
 #: ui/kis_image_manager.cc:57
 msgid "I&nsert Image as Layer..."
 msgstr "បញ្ចូល​រូបភាព​ជា​ស្រទាប់..."
@@ -5673,33 +5662,58 @@ msgstr "លក្ខណៈ​សម្បត្តិ..."
 msgid "Import Image"
 msgstr "នាំ​ចូល​រូបភាព"
 
-#: ui/kis_dlg_preferences.cc:148
+#: ui/dialogs/kis_dlg_image_properties.cc:52
+msgid "Image Properties"
+msgstr "លក្ខណៈសម្បត្តិ​រូបភាព"
+
+#: ui/dialogs/kis_dlg_preferences.cc:148
 msgid "Monitor profile: "
 msgstr "ទម្រង់​ម៉ូនីទ័រ ៖ "
 
-#: ui/kis_dlg_preferences.cc:152
+#: ui/dialogs/kis_dlg_preferences.cc:152
 msgid "&Monitor profile: "
 msgstr "ទម្រង់​​ម៉ូនីទ័រ ៖ "
 
-#: ui/kis_dlg_preferences.cc:387
+#: ui/dialogs/kis_dlg_preferences.cc:387
 msgid "Preferences"
 msgstr "ចំណូល​ចិត្ត"
 
-#: ui/kis_dlg_preferences.cc:393 ui/kis_dlg_preferences.cc:394
+#: ui/dialogs/kis_dlg_preferences.cc:393 ui/dialogs/kis_dlg_preferences.cc:394
 msgid "General"
 msgstr "ទូទៅ"
 
-#: ui/kis_dlg_preferences.cc:408
+#: ui/dialogs/kis_dlg_preferences.cc:408
 msgid "Color Management"
 msgstr "ការ​គ្រប់គ្រង​ពណ៌"
 
-#: ui/kis_dlg_preferences.cc:415 ui/kis_dlg_preferences.cc:416
+#: ui/dialogs/kis_dlg_preferences.cc:415 ui/dialogs/kis_dlg_preferences.cc:416
 msgid "Performance"
 msgstr "ដំណើរ​ការ"
 
-#: ui/kis_dlg_preferences.cc:421 ui/kis_dlg_preferences.cc:422
+#: ui/dialogs/kis_dlg_preferences.cc:421 ui/dialogs/kis_dlg_preferences.cc:422
 msgid "Grid"
 msgstr "ក្រឡា​ចត្រង្គ"
+
+#: ui/dialogs/kis_dlg_layer_properties.cc:58
+msgid "Layer Properties"
+msgstr "លក្ខណៈ​សម្បត្តិ​ស្រទាប់"
+
+#: ui/dialogs/kis_dlg_apply_profile.cc:45
+msgid "Apply Image Profile to Clipboard Data"
+msgstr "អនុវត្ត​ទម្រង់​រូបភាព​​ទៅកាន់​ទិន្នន័យ​ក្ដារតម្បៀតខ្ទាស់"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:62
+msgid "Name:"
+msgstr "ឈ្មោះ ៖"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:77
+msgid "Configuration"
+msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ"
+
+#: ui/dialogs/kis_dlg_adjustment_layer.cc:83
+#: ui/dialogs/kis_dlg_adj_layer_props.cc:93
+msgid "No configuration options are available for this filter"
+msgstr "គ្មាន​ជម្រើស​កំណត់​រចនា​សម្ព័ន្ធ​ ដែល​អាច​រក​បាន​សម្រាប់​តម្រង​នេះ​ឡើយ"
 
 #: ui/kis_paintop_box.cc:68
 msgid "Painter's Toolchest"
@@ -5713,26 +5727,10 @@ msgstr "សម្ភារៈ​របស់​សិល្បៈករ"
 msgid "Edit brush settings"
 msgstr "កែសម្រួល​កំណត់​ច្រាស"
 
-#: ui/kis_previewwidget.cc:113 ui/kis_previewwidget.cc:165
-msgid "Preview: "
-msgstr "មើល​ជា​មុន ៖ "
-
-#: ui/kis_previewwidget.cc:168
-msgid "Original: "
-msgstr "ដើម ៖"
-
-#: ui/kis_previewwidget.cc:176
-msgid "Preview (needs update)"
-msgstr "មើល​ជាមុន​ (ត្រូវ​ការ​ធ្វើ​ឲ្យ​ទាន់សម័យ​)"
-
 #: ui/kis_bookmarked_configurations_editor.cc:63
 #, kde-format
 msgid "New configuration %1"
 msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ថ្មី %1"
-
-#: ui/kis_pattern_chooser.cc:71
-msgid "Choose Pattern to Add"
-msgstr "ជ្រើស​លំនាំ​ត្រូវ​បន្ថែម"
 
 #: ui/kis_mask_manager.cc:84 ui/kis_mask_manager.cc:197
 msgid "Transparency Mask"
@@ -5827,34 +5825,9 @@ msgstr "អនុវត្ត​តម្រង​ម្ដង​ទៀត"
 msgid "Apply Filter Again: %1"
 msgstr "អនុវត្ត​តម្រង​ម្ដង​ទៀត ៖ %1"
 
-#: ui/kis_dlg_layer_properties.cc:58
-msgid "Layer Properties"
-msgstr "លក្ខណៈ​សម្បត្តិ​ស្រទាប់"
-
-#: ui/kis_gradient_slider_widget.cc:48
-msgid "Split Segment"
-msgstr "ពុះ​ចម្រៀក​"
-
-#: ui/kis_gradient_slider_widget.cc:49
-msgid "Duplicate Segment"
-msgstr "ផ្ទួន​ចម្រៀក"
-
-#: ui/kis_gradient_slider_widget.cc:50
-msgid "Mirror Segment"
-msgstr "ឆ្លុះ​ចម្រៀក"
-
-#: ui/kis_gradient_slider_widget.cc:52
-msgid "Remove Segment"
-msgstr "យក​ចម្រៀក​ចេញ"
-
 #: ui/kis_birdeye_box.cc:214
 msgid "Exposure:"
 msgstr "​ការ​បង្ហាញ ៖"
-
-#: ui/kis_filter_dialog.cc:144
-#: plugins/viewplugins/tonemapping/kis_tonemapping_dialog.cc:121
-msgid "No configuration option."
-msgstr "គ្មាន​ជម្រើស​កំណត់​រចនាសម្ព័ន្ធ ។"
 
 #: ui/kis_layer_manager.cc:138
 msgid "&Flatten image"
@@ -5995,30 +5968,6 @@ msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 msgid "Export Layer"
 msgstr "នាំ​ស្រទាប់​ចេញ"
 
-#: ui/kis_dlg_apply_profile.cc:45
-msgid "Apply Image Profile to Clipboard Data"
-msgstr "អនុវត្ត​ទម្រង់​រូបភាព​​ទៅកាន់​ទិន្នន័យ​ក្ដារតម្បៀតខ្ទាស់"
-
-#: ui/kis_brush_chooser.cc:38
-msgid "Spacing: "
-msgstr "ដាក់ចន្លោះ ៖ "
-
-#: ui/kis_brush_chooser.cc:114
-msgid "Choose Brush to Add"
-msgstr "ជ្រើស​ជក់​ត្រូវ​បន្ថែម"
-
-#: ui/kis_dlg_adjustment_layer.cc:62
-msgid "Name:"
-msgstr "ឈ្មោះ ៖"
-
-#: ui/kis_dlg_adjustment_layer.cc:77
-msgid "Configuration"
-msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ"
-
-#: ui/kis_dlg_adjustment_layer.cc:83 ui/kis_dlg_adj_layer_props.cc:93
-msgid "No configuration options are available for this filter"
-msgstr "គ្មាន​ជម្រើស​កំណត់​រចនា​សម្ព័ន្ធ​ ដែល​អាច​រក​បាន​សម្រាប់​តម្រង​នេះ​ឡើយ"
-
 #: ui/kis_custom_palette.cc:104 ui/kis_custom_palette.cc:142
 #: plugins/tools/defaulttools/kis_tool_colorpicker.cc:181
 #, kde-format
@@ -6107,6 +6056,58 @@ msgstr ""
 "បន្ទាត់​បង្ហាញ​ទីតាំង​កណ្ដុរ​ផ្ដេក និង​បញ្ឈរ នៅលើ​រូបភាព និង​អាច​ត្រូវ​បាន​ប្រើ​ដើម្បី​កំណត់ទីតាំង​កណ្ដុរ​របស់​អ្នក​នៅ​"
 "កន្លែង​ត្រឹមត្រូវ​នៅ​លើ​ផ្ទាំង​ក្រណាត់ ។<p>មិន​គូស​ធីកវា ដើម្បី​លាក់​បន្ទាត់"
 
+#: ui/widgets/kis_gradient_chooser.cc:55
+msgid "Custom Gradient..."
+msgstr "ជម្រាល​ផ្ទាល់​ខ្លួន​..."
+
+#: ui/widgets/kis_gradient_chooser.cc:90
+msgid "Choose Gradient to Add"
+msgstr "ជ្រើស​ជម្រាល​ត្រូវ​បន្ថែម"
+
+#: ui/widgets/kis_previewwidget.cc:113 ui/widgets/kis_previewwidget.cc:165
+msgid "Preview: "
+msgstr "មើល​ជា​មុន ៖ "
+
+#: ui/widgets/kis_previewwidget.cc:168
+msgid "Original: "
+msgstr "ដើម ៖"
+
+#: ui/widgets/kis_previewwidget.cc:176
+msgid "Preview (needs update)"
+msgstr "មើល​ជាមុន​ (ត្រូវ​ការ​ធ្វើ​ឲ្យ​ទាន់សម័យ​)"
+
+#: ui/widgets/kis_pattern_chooser.cc:71
+msgid "Choose Pattern to Add"
+msgstr "ជ្រើស​លំនាំ​ត្រូវ​បន្ថែម"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:48
+msgid "Split Segment"
+msgstr "ពុះ​ចម្រៀក​"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:49
+msgid "Duplicate Segment"
+msgstr "ផ្ទួន​ចម្រៀក"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:50
+msgid "Mirror Segment"
+msgstr "ឆ្លុះ​ចម្រៀក"
+
+#: ui/widgets/kis_gradient_slider_widget.cc:52
+msgid "Remove Segment"
+msgstr "យក​ចម្រៀក​ចេញ"
+
+#: ui/widgets/kis_brush_chooser.cc:38
+msgid "Spacing: "
+msgstr "ដាក់ចន្លោះ ៖ "
+
+#: ui/widgets/kis_brush_chooser.cc:114
+msgid "Choose Brush to Add"
+msgstr "ជ្រើស​ជក់​ត្រូវ​បន្ថែម"
+
+#: ui/widgets/kis_meta_data_merge_strategy_chooser_widget.cc:61
+msgid "Choose meta data merge strategy"
+msgstr "ជ្រើស​យុទ្ធសាស្ត្រ​បញ្ជូន​ទិន្នន័យ​មេតា​ចូល​គ្នា"
+
 #: ui/kis_selection_manager.cc:144
 msgid "Paste into &New Image"
 msgstr "បិទភ្ជាប់​ទៅ​ក្នុង​រូបភាព​ថ្មី"
@@ -6191,10 +6192,6 @@ msgstr "បង្រួម"
 msgid "Border"
 msgstr "ស៊ុម"
 
-#: ui/kis_meta_data_merge_strategy_chooser_widget.cc:61
-msgid "Choose meta data merge strategy"
-msgstr "ជ្រើស​យុទ្ធសាស្ត្រ​បញ្ជូន​ទិន្នន័យ​មេតា​ចូល​គ្នា"
-
 #: ui/kis_tool_paint.cc:131
 msgid "Mode: "
 msgstr "របៀប​ ៖ "
@@ -6217,7 +6214,6 @@ msgid "Opacity"
 msgstr "ភាព​ស្រអាប់"
 
 #: image/kis_layer.cc:99
-#: plugins/tools/defaulttools/kis_tool_colorpicker.cc:209
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
@@ -7219,6 +7215,10 @@ msgstr "បំបែក​រូបភាព"
 #: plugins/viewplugins/tonemapping/tonemapping.cc:53
 msgid "Tonemapping"
 msgstr "កា​រផ្គូផ្គង​សូរ​សំឡេង"
+
+#: plugins/viewplugins/tonemapping/kis_tonemapping_dialog.cc:121
+msgid "No configuration option."
+msgstr "គ្មាន​ជម្រើស​កំណត់​រចនាសម្ព័ន្ធ ។"
 
 #: plugins/viewplugins/tonemapping/operators/icam/kis_icam_operator.cc:67
 msgid "Icam"
