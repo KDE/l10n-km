@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-04-16 15:50+0200\n"
+"POT-Creation-Date: 2008-04-24 01:46+0200\n"
 "PO-Revision-Date: 2008-04-21 10:33+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -26,10 +26,10 @@ msgstr "ត្រួតពិនិត្យ I/O សម្រាប់ %1 (%2)"
 #: DisplayProcessDlg.cpp:45
 #, kde-format
 msgid ""
-"The program '%1' (Pid: %2) is being monitored for input and output through "
+"The program '%1' (PID: %2) is being monitored for input and output through "
 "any file descriptor (stdin, stdout, stderr, open files, network connections, "
-"etc).  Data being written by the process is shown in red and data being read "
-"by the process is shown in blue."
+"etc.).  Data being written by the process is shown in red and data being "
+"read by the process is shown in blue."
 msgstr ""
 
 #: DisplayProcessDlg.cpp:47 DisplayProcessDlg.cpp:82 DisplayProcessDlg.cpp:91
@@ -104,7 +104,9 @@ msgid "Hangup (HUP)"
 msgstr "បង្អាក់ (HUP)"
 
 #: ksysguardprocesslist.cpp:158
-msgid "Interupt (INT)"
+#, fuzzy
+#| msgid "Interupt (INT)"
+msgid "Interrupt (INT)"
 msgstr "ផ្អាក (INT)"
 
 #: ksysguardprocesslist.cpp:159
@@ -147,19 +149,27 @@ msgid "Display Units"
 msgstr "បង្ហាញ​ឯកតា"
 
 #: ksysguardprocesslist.cpp:531
-msgid "KiloBytes"
+#, fuzzy
+#| msgid "KiloBytes"
+msgid "Kilobytes"
 msgstr "គីឡូបៃ"
 
 #: ksysguardprocesslist.cpp:536
-msgid "MegaBytes"
+#, fuzzy
+#| msgid "MegaBytes"
+msgid "Megabytes"
 msgstr "មេកាបៃ"
 
 #: ksysguardprocesslist.cpp:541
-msgid "GigaBytes"
+#, fuzzy
+#| msgid "GigaBytes"
+msgid "Gigabytes"
 msgstr "ជីកាបៃ"
 
 #: ksysguardprocesslist.cpp:736 ksysguardprocesslist.cpp:969
-msgid "You need to select a process first."
+#, fuzzy
+#| msgid "You need to select a process first."
+msgid "You must select a process first."
 msgstr "អ្នក​ចង់​ជ្រើស​ដំណើរការ​ជាមុន ។"
 
 #: ksysguardprocesslist.cpp:813
@@ -168,14 +178,22 @@ msgid ""
 msgstr "អ្នក​មិនមាន​សិទ្ធិ​គ្រប់គ្រាន់​ដើម្បី​ផ្លាស់ប្ដូរ​កម្មវិធី​កំណត់​ពេល CPU ទេ ។ បោះបង់ !"
 
 #: ksysguardprocesslist.cpp:821
+#, fuzzy
+#| msgid ""
+#| "You do not have sufficient privileges to change the CPU priority.  "
+#| "Aborting"
 msgid ""
-"You do not have sufficient privileges to change the CPU priority.  Aborting"
+"You do not have sufficient privileges to change the CPU priority. Aborting"
 msgstr "អ្នក​មិនមាន​សិទ្ធិ​គ្រប់គ្រាន់​ដើម្បី​ផ្លាស់ប្ដូរ​អាទិភាព CPU ទេ ។ បោះបង់ !"
 
 #: ksysguardprocesslist.cpp:827
+#, fuzzy
+#| msgid ""
+#| "You do not have sufficient privileges to change the IO scheduler and "
+#| "priority. Aborting."
 msgid ""
 "You do not have sufficient privileges to change the IO scheduler and "
-"priority. Aborting."
+"priority. Aborting"
 msgstr "អ្នក​មិនមាន​សិទ្ធិ​គ្រប់គ្រាន់​ដើម្បី​ផ្លាស់ប្ដូរ​កម្មវិធី​កំណត់ពេល IO និង​អាទិភាព​ទេ ។ បោះបង់ !"
 
 #: ksysguardprocesslist.cpp:974
@@ -216,7 +234,7 @@ msgstr "សំណុំ​បែបបទ"
 #. i18n: file DisplayProcessUi.ui line 28
 #: rc.cpp:6
 msgid ""
-"Interpret output as containing VT100 commands. For based console prgrams."
+"Interpret output as containing VT100 commands. For console-based programs."
 msgstr ""
 
 #. i18n: tag string
@@ -236,7 +254,7 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file DisplayProcessUi.ui line 44
 #: rc.cpp:15
-msgid "Show the ouput from processes launched by this process"
+msgid "Show the output from processes launched by this process."
 msgstr ""
 
 #. i18n: tag string
@@ -261,9 +279,9 @@ msgstr ""
 #. i18n: file DisplayProcessUi.ui line 65
 #: rc.cpp:27
 msgid ""
-"Stop reading the output from the process  This will cause the process to "
-"block, effectivey pausing it  The process can be resumed by resuming, by "
-"detaching or by closing the dialog"
+"Stop reading the output from the process. This will cause the process to be "
+"blocked, effectively pausing it. The process can be resumed by resuming, "
+"detaching or closing the dialog."
 msgstr ""
 
 #. i18n: tag string
@@ -287,7 +305,9 @@ msgstr "បញ្ឈប់​ដំណើរការ"
 #. i18n: tag string
 #. i18n: file ProcessWidgetUI.ui line 55
 #: rc.cpp:45
-msgid " Quick search"
+#, fuzzy
+#| msgid " Quick search"
+msgid "Quick search"
 msgstr " ស្វែងរក​រហ័ស"
 
 #. i18n: tag string
@@ -553,6 +573,17 @@ msgstr "Round Robin"
 #. i18n: tag string
 #. i18n: file ReniceDlgUi.ui line 162
 #: rc.cpp:120
+#, fuzzy
+#| msgid ""
+#| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#| "css\">\n"
+#| "p, li { white-space: pre-wrap; }\n"
+#| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+#| "font-weight:400; font-style:normal;\">\n"
+#| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#| "right:0px; -qt-block-indent:0; text-indent:0px;\">Process will run "
+#| "whenever runnable.  Higher priority that Normal or Batch.  No timeslicing."
+#| "</p></body></html>"
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -561,7 +592,7 @@ msgid ""
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px;\">Process will run whenever "
-"runnable.  Higher priority that Normal or Batch.  No timeslicing.</p></"
+"runnable.  Higher priority than Normal or Batch.  No timeslicing.</p></"
 "body></html>"
 msgstr ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
@@ -621,6 +652,16 @@ msgstr "កម្មវិធី​កំណត់ពេល I/O"
 #. i18n: tag string
 #. i18n: file ReniceDlgUi.ui line 246
 #: rc.cpp:139
+#, fuzzy
+#| msgid ""
+#| "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/"
+#| "css\">\n"
+#| "p, li { white-space: pre-wrap; }\n"
+#| "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; "
+#| "font-weight:400; font-style:normal;\">\n"
+#| "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+#| "right:0px; -qt-block-indent:0; text-indent:0px;\">Processes priority is "
+#| "based on the CPU priority</p></body></html>"
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -628,7 +669,7 @@ msgid ""
 "</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
 "weight:400; font-style:normal;\">\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Processes priority is "
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Process's priority is "
 "based on the CPU priority</p></body></html>"
 msgstr ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
@@ -970,7 +1011,9 @@ msgstr ""
 "ចែករំលែក​ក្នុង​ចំណោម​ដំណើរការទាំងអស់​​ដែលប្រើ​បណ្ណាល័យនេះ</qt>"
 
 #: ProcessModel.cc:558
-msgid "<qt>The command that this process was launched with</qt>"
+#, fuzzy
+#| msgid "<qt>The command that this process was launched with</qt>"
+msgid "<qt>The command with which this process was launched</qt>"
 msgstr "<qt>ពាក្យបញ្ជា​ដែល​ដំណើរការ​នេះ​ចាប់ផ្ដើម​ជាមួយ</qt>"
 
 #: ProcessModel.cc:560
@@ -987,7 +1030,9 @@ msgid "Login Name: %1<br/>"
 msgstr "ឈ្មោះ​ចូល ៖ %1<br/>"
 
 #: ProcessModel.cc:647
-msgid "This user is not recognised for some reason"
+#, fuzzy
+#| msgid "This user is not recognised for some reason"
+msgid "This user is not recognized for some reason."
 msgstr "អ្នកប្រើ​នេះ​មិនត្រូវ​បាន​ទទួល​ស្គាល់​សម្រាប់​ហេតុផល​ណាមួយ​ទេ"
 
 #: ProcessModel.cc:650
@@ -1073,9 +1118,13 @@ msgid ""
 msgstr "<b>Init</b> គឺ​ជា​មេ​នៃ​ដំណើរការ​ផ្សេងទៀត​ទាំងអស់ និង​មិនអាច​ត្រូវបាន​បិទ​បានទេ ។<br/>"
 
 #: ProcessModel.cc:833
+#, fuzzy
+#| msgid ""
+#| "<b>KThreadd</b> manages kernel threads. The children processes run in the "
+#| "kernel, controlling hard disk access etc.<br/>"
 msgid ""
 "<b>KThreadd</b> manages kernel threads. The children processes run in the "
-"kernel, controlling hard disk access etc.<br/>"
+"kernel, controlling hard disk access, etc.<br/>"
 msgstr ""
 "<b>KThreadd</b> គ្រប់គ្រង​ខ្សែស្រឡាយ​សរុប ។ ដំណើរការ​កូន រត់​នៅ​ក្នុង​ខឺណែល ដែល​ត្រួតពិនិត្យ​ការ​ចូល​"
 "ដំណើរការ​ថាសរឹង ។ល ។<br/>"
@@ -1205,8 +1254,12 @@ msgid "RSS Memory usage: %1"
 msgstr "ការប្រើប្រាស់​សតិ RSS ៖ %1"
 
 #: ProcessModel.cc:949
+#, fuzzy
+#| msgid ""
+#| "<qt>Your system does not seem to have this information for us to read, "
+#| "sorry.</qt>"
 msgid ""
-"<qt>Your system does not seem to have this information for us to read, sorry."
+"<qt>Your system does not seem to have this information available to be read."
 "</qt>"
 msgstr "<qt>ប្រព័ន្ធ​របស់​អ្នក​ហាក់ដូចជា​មិនមាន​ព័ត៌មាន​សម្រាប់​យើង​ដើម្បី​ផ្ទុក​ទេ សូម​ទោស ។</qt>"
 
@@ -1232,13 +1285,13 @@ msgstr "ឈ្មោះ​អ្នក​ប្រើ"
 
 #: ProcessModel.cc:1154
 msgctxt "process heading"
-msgid "Pid"
-msgstr "Pid"
+msgid "PID"
+msgstr ""
 
 #: ProcessModel.cc:1155
 msgctxt "process heading"
-msgid "Tty"
-msgstr "Tty"
+msgid "TTY"
+msgstr ""
 
 #: ProcessModel.cc:1156
 msgctxt "process heading"
@@ -1277,20 +1330,37 @@ msgid "Window Title"
 msgstr "ចំណងជើង​បង្អួច"
 
 #: ProcessModel.cc:1229
-#, kde-format
-msgid "%1 k"
+#, fuzzy, kde-format
+#| msgid "%1 k"
+msgid "%1 K"
 msgstr "%1 k"
 
 #: ProcessModel.cc:1231
-#, kde-format
-msgid "%1 m"
-msgstr "%1 m"
+#, fuzzy, kde-format
+#| msgid "%1 k"
+msgid "%1 M"
+msgstr "%1 k"
 
 #: ProcessModel.cc:1233
-#, kde-format
-msgid "%1 g"
-msgstr "%1 g"
+#, fuzzy, kde-format
+#| msgid "%1 k"
+msgid "%1 G"
+msgstr "%1 k"
 
 #: ReniceDlg.cc:39
 msgid "Renice Process"
 msgstr "ដំណើរ​ការ Renice"
+
+#~ msgctxt "process heading"
+#~ msgid "Pid"
+#~ msgstr "Pid"
+
+#~ msgctxt "process heading"
+#~ msgid "Tty"
+#~ msgstr "Tty"
+
+#~ msgid "%1 m"
+#~ msgstr "%1 m"
+
+#~ msgid "%1 g"
+#~ msgstr "%1 g"
