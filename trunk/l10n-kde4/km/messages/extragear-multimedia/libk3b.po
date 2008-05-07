@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libk3b\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-03 11:41+0200\n"
+"POT-Creation-Date: 2008-05-06 23:08+0200\n"
 "PO-Revision-Date: 2008-04-08 08:15+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -407,6 +407,10 @@ msgstr "សូម​អភ័យ​ទោស មិន​ទាន់​បា�
 msgid "Quick Format"
 msgstr "ធ្វើ​ទ្រង់ទ្រាយ​រហ័ស"
 
+#: jobs/k3bverificationjob.cpp:159
+msgid "no tracks added"
+msgstr ""
+
 #: jobs/k3bverificationjob.cpp:158 jobs/k3bverificationjob.cpp:196
 #, kde-format
 msgid "Internal Error: Verification job improperly initialized (%1)"
@@ -415,6 +419,10 @@ msgstr "កំហុស​ខាង​ក្នុង ៖ បាន​ចាប
 #: jobs/k3bverificationjob.cpp:164
 msgid "Checking medium"
 msgstr "កំពុង​ពិនិត្យ​ឧបករណ៍​ផ្ទុក"
+
+#: jobs/k3bverificationjob.cpp:197
+msgid "specified track number not found on medium"
+msgstr ""
 
 #: jobs/k3bverificationjob.cpp:204 jobs/k3bcdcopyjob.cpp:1034
 #: projects/mixedcd/k3bmixedjob.cpp:511
@@ -690,8 +698,9 @@ msgid "No device set."
 msgstr "មិន​បាន​កំណត់​ឧបករណ៍ ។"
 
 #: jobs/k3bclonejob.cpp:111
-#, kde-format
-msgid "CD writer %1 does not support cloning."
+#, fuzzy, kde-format
+#| msgid "CD writer %1 does not support cloning."
+msgid "CD writer %1 (%2) does not support cloning."
 msgstr "ក្បាល​សរសេរ​ស៊ីឌី %1 មិន​គាំទ្រ​ការ​ក្លូន​ឡើយ ។"
 
 #: jobs/k3bclonejob.cpp:144
@@ -937,8 +946,9 @@ msgid "Writing Copy %1 (Session %2)"
 msgstr "កំពុង​សរសេរ​ច្បាប់​ចម្លង %1 (សម័យ %2)"
 
 #: jobs/k3bcdcopyjob.cpp:699
-#, kde-format
-msgid "Writing Copy (Session %2)"
+#, fuzzy, kde-format
+#| msgid "Writing Copy (Session %2)"
+msgid "Writing Copy (Session %1)"
 msgstr "កំពុង​សរសេរ​ច្បាប់​ចម្លង (សម័យ %2)"
 
 #: jobs/k3bcdcopyjob.cpp:703 projects/mixedcd/k3bmixedjob.cpp:1012
@@ -2037,12 +2047,12 @@ msgstr "កំពុង​ស្វែងរក​សម័យ​ចាស់"
 msgid "Could not open Iso9660 filesystem in %1."
 msgstr "មិន​អាច​បើក​ប្រព័ន្ធ​ឯកសារ Iso9660 នៅ​ក្នុង %1 ។"
 
-#: projects/datacd/k3bdatadoc.cpp:1105 projects/videocd/k3bvcddoc.cpp:404
+#: projects/datacd/k3bdatadoc.cpp:1105 projects/videocd/k3bvcddoc.cpp:402
 #: projects/audiocd/k3baudiodoc.cpp:937
 msgid "Could not find the following files:"
 msgstr "មិន​អាច​រក​ឯកសារ​ខាង​ក្រោម​ឃើញ​ឡើយ ៖"
 
-#: projects/datacd/k3bdatadoc.cpp:1106 projects/videocd/k3bvcddoc.cpp:405
+#: projects/datacd/k3bdatadoc.cpp:1106 projects/videocd/k3bvcddoc.cpp:403
 #: projects/audiocd/k3baudiodoc.cpp:939
 msgid "Not Found"
 msgstr "រក​មិន​ឃើញ"
@@ -2694,43 +2704,46 @@ msgid "1 MPEG (%2)"
 msgid_plural "%1 MPEGs (%2)"
 msgstr[0] "%1 MPEGs (%2)"
 
-#: projects/videocd/k3bvcddoc.cpp:215 projects/videocd/k3bvcddoc.cpp:226
-#, kde-format
+#: projects/videocd/k3bvcddoc.cpp:218
+msgid "VCD"
+msgstr "វីស៊ីឌី"
+
+#: projects/videocd/k3bvcddoc.cpp:215 projects/videocd/k3bvcddoc.cpp:225
+#, fuzzy, kde-format
+#| msgid ""
+#| "K3b will create a %1 image from the given MPEG files, but these files "
+#| "must already be in %2 format. K3b does not yet resample MPEG files."
 msgid ""
 "K3b will create a %1 image from the given MPEG files, but these files must "
-"already be in %2 format. K3b does not yet resample MPEG files."
+"already be in %1 format. K3b does not yet resample MPEG files."
 msgstr ""
 "K3b នឹង​បង្កើត​រូបភាព %1 ពី​ឯកសារ MPEG ដែល​បាន​ផ្ដល់ ប៉ុន្តែ​ឯកសារ​ទាំងនេះ​ត្រូវ​តែ​មាន​ទ្រង់ទ្រាយ %2 "
 "រួច​ជាស្រេច ។ K3b មិន​ទាន់​អាច​ប្ដូរ​គុណភាព MPEG នៅ​ឡើយ​ទេ ។"
 
-#: projects/videocd/k3bvcddoc.cpp:218 projects/videocd/k3bvcddoc.cpp:219
-msgid "VCD"
-msgstr "វីស៊ីឌី"
-
-#: projects/videocd/k3bvcddoc.cpp:220 projects/videocd/k3bvcddoc.cpp:234
-#: projects/videocd/k3bvcddoc.cpp:263
+#: projects/videocd/k3bvcddoc.cpp:219 projects/videocd/k3bvcddoc.cpp:232
+#: projects/videocd/k3bvcddoc.cpp:261
 msgid "Information"
 msgstr "ព័ត៌មាន"
 
-#: projects/videocd/k3bvcddoc.cpp:229 projects/videocd/k3bvcddoc.cpp:230
+#: projects/videocd/k3bvcddoc.cpp:228
 msgid "SVCD"
 msgstr "អេសវីស៊ីឌី"
 
-#: projects/videocd/k3bvcddoc.cpp:232
+#: projects/videocd/k3bvcddoc.cpp:230
 msgid ""
 "Note: Forcing MPEG2 as VCD is not supported by some standalone DVD players."
 msgstr ""
 "ចំណាំ ៖ ការ​បង្ខំ MPEG2 ឲ្យ​ធ្វើ​ជា​ស៊ីឌី​វីដេអូ មិន​ត្រូវ​បាន​គាំទ្រ​ឡើយ​ដោយ​ឧបករណ៍​ចាក់​ឌីវីឌី​ដាច់​តែ​ឯង​មួយ​ចំនួន ។"
 
-#: projects/videocd/k3bvcddoc.cpp:235
+#: projects/videocd/k3bvcddoc.cpp:233
 msgid "Force VCD"
 msgstr "បង្ខំ​វីស៊ីឌី"
 
-#: projects/videocd/k3bvcddoc.cpp:236
+#: projects/videocd/k3bvcddoc.cpp:234
 msgid "Do not force VCD"
 msgstr "កុំ​បង្ខំ​វីស៊ីឌី"
 
-#: projects/videocd/k3bvcddoc.cpp:249
+#: projects/videocd/k3bvcddoc.cpp:247
 msgid ""
 "You cannot mix MPEG1 and MPEG2 video files.\n"
 "Please start a new Project for this filetype.\n"
@@ -2740,11 +2753,11 @@ msgstr ""
 "សូម​ចាប់ផ្ដើម​គម្រោង​ថ្មី សម្រាប់​ប្រភេទ​ឯកសារ​នេះ ។\n"
 "K3b មិន​ទាន់​អាច​ប្រតិបត្តិ​ការ​ប្ដូរ​គុណភាព​នៅ​ឡើយ​ទេ ។"
 
-#: projects/videocd/k3bvcddoc.cpp:250
+#: projects/videocd/k3bvcddoc.cpp:248
 msgid "Wrong File Type for This Project"
 msgstr "គម្រោង​នេះ​មាន​ប្រភេទ​ឯកសារ​ខុស"
 
-#: projects/videocd/k3bvcddoc.cpp:261
+#: projects/videocd/k3bvcddoc.cpp:259
 msgid ""
 "PBC (Playback control) enabled.\n"
 "Videoplayers can not reach Segments (Mpeg Still Pictures) without Playback "
@@ -2754,11 +2767,11 @@ msgstr ""
 "ឧបករណ៍​ចាក់​វីដេអូ​នឹង​មិន​អាច​ទៅ​ដល់​ចម្រៀក​បាន​ឡើយ (Mpeg នៅ​តែ​ជា​រូបភាព) បើ​គ្មាន​ការ​គ្រប់គ្រង​ការ​ចាក់​"
 "សារ​ថ្មី ។"
 
-#: projects/videocd/k3bvcddoc.cpp:293
+#: projects/videocd/k3bvcddoc.cpp:291
 msgid "Only MPEG1 and MPEG2 video files are supported.\n"
 msgstr "គាំទ្រ​តែ​ឯកសារ​វីដេអូ MPEG1 និង MPEG2 ប៉ុណ្ណោះ ។\n"
 
-#: projects/videocd/k3bvcddoc.cpp:294
+#: projects/videocd/k3bvcddoc.cpp:292
 msgid "Wrong File Format"
 msgstr "ខុស​ទ្រង់ទ្រាយ​ឯកសារ"
 
