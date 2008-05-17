@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-13 19:26+0200\n"
+"POT-Creation-Date: 2008-05-16 18:21+0200\n"
 "PO-Revision-Date: 2008-05-09 08:57+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -88,25 +88,22 @@ msgid "%1 sec"
 msgid_plural "%1 secs"
 msgstr[0] "%1 វិ."
 
-#: app/thumbnailviewpanel.cpp:107
+#: app/thumbnailviewpanel.cpp:93
 msgctxt "@action:inmenu Navigation Bar"
 msgid "Edit Location"
 msgstr "កែសម្រួល​ទីតាំង"
 
-#: app/thumbnailviewpanel.cpp:113
+#: app/thumbnailviewpanel.cpp:99
 msgctxt "@action:inmenu"
 msgid "Add Folder to Places"
 msgstr ""
 
-#: app/thumbnailviewpanel.cpp:121
-msgctxt "@action:inmenu Tools"
-msgid "Hide Filter Bar"
-msgstr "លាក់​របារ​តម្រង"
-
-#: app/thumbnailviewpanel.cpp:123
-msgctxt "@action:inmenu Tools"
-msgid "Show Filter Bar"
-msgstr "បង្ហាញ​របារ​តម្រង"
+#: app/thumbnailviewpanel.cpp:105
+#, kde-format
+msgctxt "@label"
+msgid "%1 document"
+msgid_plural "%1 documents"
+msgstr[0] ""
 
 #: app/gvcore.cpp:102
 msgctxt "@info:progress saving all image changes"
@@ -200,7 +197,14 @@ msgctxt "@label"
 msgid "%1 folders and %2 files selected"
 msgstr "បាន​ជ្រើសថត %1 និង​ឯកសារ %2"
 
-#: app/kipiinterface.cpp:217
+#: app/kipiimagecollectionselector.cpp:54
+#, kde-format
+msgctxt "%1 is collection name, %2 is image count in collection"
+msgid "%1 (%2 image)"
+msgid_plural "%1 (%2 images)"
+msgstr[0] ""
+
+#: app/kipiinterface.cpp:199
 msgid "No Plugin"
 msgstr "គ្មាន​កម្មវិធី​ជំនួយ"
 
@@ -306,6 +310,13 @@ msgstr "រក្សា​​ទុក​​"
 msgid "Save All"
 msgstr "រក្សា​ទុក​ទាំង​អស់"
 
+#: app/kipiuploadwidget.cpp:42
+#, kde-format
+msgid ""
+"Images will be uploaded here:\n"
+"%1"
+msgstr ""
+
 #: app/imageopscontextmanageritem.cpp:73 lib/transformimageoperation.cpp:47
 msgid "Rotate Left"
 msgstr "បង្វិល​ទៅ​ឆ្វេង"
@@ -350,7 +361,7 @@ msgstr "ផ្ទុក​ឡើង​វិញ"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 212
-#: app/mainwindow.cpp:275 rc.cpp:96
+#: app/mainwindow.cpp:275 rc.cpp:84
 msgid "Browse"
 msgstr "រកមើល"
 
@@ -427,6 +438,22 @@ msgstr[0] "បាន​កែប្រែ​រូបភាព %1 ។"
 #: app/mainwindow.cpp:1108
 msgid "If you quit now, your changes will be lost."
 msgstr "ប្រសិន​បើ​អ្នក​ចេញ​នៅពេល​ឥឡូវ នោះ​ការ​ផ្លាស់ប្ដូរ​របស់​អ្នក​នឹង​ត្រូវបាត់បង់ ។"
+
+#: app/filterwidget.cpp:239 app/filterwidget.cpp:265
+#, fuzzy
+#| msgid "Filter:"
+msgid "Filter by Name:"
+msgstr "តម្រង ៖"
+
+#: app/filterwidget.cpp:267
+#, fuzzy
+#| msgid "Filter:"
+msgid "Filter by Tag:"
+msgstr "តម្រង ៖"
+
+#: app/filterwidget.cpp:268
+msgid "Filter by Rating:"
+msgstr ""
 
 #: lib/print/printhelper.cpp:129
 msgid "Print Image"
@@ -608,43 +635,19 @@ msgstr "បិទ"
 #. i18n: file ./app/startpage.ui line 13
 #. i18n: tag string
 #. i18n: file ./app/nepomuksidebaritem.ui line 13
-#: rc.cpp:41 rc.cpp:56 rc.cpp:132
+#: rc.cpp:41 rc.cpp:44 rc.cpp:120
 msgid "Form"
 msgstr "សំណុំ​បែបបទ"
 
 #. i18n: tag string
-#. i18n: file ./app/thumbnailviewpanel.ui line 40
-#: rc.cpp:44
-msgid "Minimum Rating:"
-msgstr "អត្រា​អប្បបរមា ៖"
-
-#. i18n: tag string
-#. i18n: file ./app/thumbnailviewpanel.ui line 69
-#: rc.cpp:47
-msgid "Filter:"
-msgstr "តម្រង ៖"
-
-#. i18n: tag string
-#. i18n: file ./app/thumbnailviewpanel.ui line 79
-#: rc.cpp:50
-msgid "Enter search term here..."
-msgstr "បញ្ចូល​ពាក្យ​ស្វែងរក​នៅ​ទីនេះ..."
-
-#. i18n: tag string
-#. i18n: file ./app/thumbnailviewpanel.ui line 94
-#: rc.cpp:53
-msgid "..."
-msgstr "..."
-
-#. i18n: tag string
 #. i18n: file ./app/startpage.ui line 34
-#: rc.cpp:59
+#: rc.cpp:47
 msgid "Places"
 msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./app/startpage.ui line 41
-#: rc.cpp:62
+#: rc.cpp:50
 #, fuzzy
 #| msgid "Create Folder"
 msgid "Recent Folders"
@@ -652,7 +655,7 @@ msgstr "បង្កើត​ថត"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 19
-#: rc.cpp:65
+#: rc.cpp:53
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -674,13 +677,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 26
-#: rc.cpp:71
+#: rc.cpp:59
 msgid "&View background color:"
 msgstr "ពណ៌​ផ្ទៃខាងក្រោយ​ទិដ្ឋភាព ៖"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 83
-#: rc.cpp:74
+#: rc.cpp:62
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -706,31 +709,31 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 90
-#: rc.cpp:81
+#: rc.cpp:69
 msgid "Transparent background:"
 msgstr "ផ្ទៃខាងក្រោយ​ថ្លា ៖"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 108
-#: rc.cpp:84
+#: rc.cpp:72
 msgid "&Check board"
 msgstr "ក្ដារ​ត្រួតពិនិត្យ"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 141
-#: rc.cpp:87
+#: rc.cpp:75
 msgid "&Solid color:"
 msgstr "ពណ៌​សុទ្ធ ៖"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 173
-#: rc.cpp:90
+#: rc.cpp:78
 msgid "Mouse wheel behavior:"
 msgstr "ឥរិយាបទ​កង់​កណ្ដុរ ៖"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 185
-#: rc.cpp:93
+#: rc.cpp:81
 msgid "Scroll"
 msgstr "រមូរ"
 
@@ -738,199 +741,216 @@ msgstr "រមូរ"
 #. i18n: file ./app/configdialog.ui line 236
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 157
-#: rc.cpp:99 rc.cpp:159
+#: rc.cpp:87 rc.cpp:147
 msgid "Enlarge smaller images"
 msgstr "ពង្រីក​រូបភាពល​តូចៗ"
 
 #. i18n: tag text
-#. i18n: file ./app/gwenviewui.rc line 58
-#: rc.cpp:102
+#. i18n: file ./app/gwenviewui.rc line 57
+#: rc.cpp:90
 msgid "&Plugins"
 msgstr "កម្មវិធី​ជំនួយ"
 
 #. i18n: tag text
-#. i18n: file ./app/gwenviewui.rc line 60
-#: rc.cpp:105
+#. i18n: file ./app/gwenviewui.rc line 59
+#: rc.cpp:93
 msgid "Images"
 msgstr "រូបភាព"
 
 #. i18n: tag text
-#. i18n: file ./app/gwenviewui.rc line 64
-#: rc.cpp:108
+#. i18n: file ./app/gwenviewui.rc line 63
+#: rc.cpp:96
 msgid "Effects"
 msgstr "បែបផែន"
 
 #. i18n: tag text
-#. i18n: file ./app/gwenviewui.rc line 68
-#: rc.cpp:111
+#. i18n: file ./app/gwenviewui.rc line 67
+#: rc.cpp:99
 msgid "Tools"
 msgstr "ឧបករណ៍"
 
 #. i18n: tag text
-#. i18n: file ./app/gwenviewui.rc line 72
-#: rc.cpp:114
+#. i18n: file ./app/gwenviewui.rc line 71
+#: rc.cpp:102
 msgid "Batch Processing"
 msgstr "ដំណើរការ​បាច់"
 
 #. i18n: tag text
-#. i18n: file ./app/gwenviewui.rc line 76
-#: rc.cpp:117
+#. i18n: file ./app/gwenviewui.rc line 75
+#: rc.cpp:105
 msgid "Import"
 msgstr "នាំចូល"
 
 #. i18n: tag text
-#. i18n: file ./app/gwenviewui.rc line 80
-#: rc.cpp:120
+#. i18n: file ./app/gwenviewui.rc line 79
+#: rc.cpp:108
 msgid "Export"
 msgstr "នាំចេញ"
 
 #. i18n: tag text
-#. i18n: file ./app/gwenviewui.rc line 84
-#: rc.cpp:123
+#. i18n: file ./app/gwenviewui.rc line 83
+#: rc.cpp:111
 msgid "Collections"
 msgstr "សម្រាំង"
 
 #. i18n: tag text
-#. i18n: file ./app/gwenviewui.rc line 89
-#: rc.cpp:126
+#. i18n: file ./app/gwenviewui.rc line 88
+#: rc.cpp:114
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: tag text
-#. i18n: file ./app/gwenviewui.rc line 102
-#: rc.cpp:129
+#. i18n: file ./app/gwenviewui.rc line 101
+#: rc.cpp:117
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
 #. i18n: tag string
 #. i18n: file ./app/nepomuksidebaritem.ui line 22
-#: rc.cpp:135
+#: rc.cpp:123
 msgid "Rating:"
 msgstr "ការ​វាយតម្លៃ ៖"
 
 #. i18n: tag string
 #. i18n: file ./app/nepomuksidebaritem.ui line 42
-#: rc.cpp:138
+#: rc.cpp:126
 msgid "Description:"
 msgstr "សេចក្ដី​ពិពណ៌នា ៖"
 
 #. i18n: tag string
 #. i18n: file ./app/nepomuksidebaritem.ui line 58
-#: rc.cpp:141
+#: rc.cpp:129
 msgid "Tags:"
 msgstr "ស្លាក ៖"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 13
-#: rc.cpp:144
+#: rc.cpp:132
 msgid "Image Settings"
 msgstr "​ការកំណត់​រូបភាព"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 34
-#: rc.cpp:147
+#: rc.cpp:135
 msgid "Image Position"
 msgstr "ទីតាំង​រូបភាព"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 77
-#: rc.cpp:150
+#: rc.cpp:138
 msgid "Scaling"
 msgstr "ធ្វើ​មាត្រដ្ឋាន"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 101
-#: rc.cpp:153
+#: rc.cpp:141
 msgid "&No scaling"
 msgstr "គ្មាន​ការ​ធ្វើ​មាត្រដ្ឋាន"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 111
-#: rc.cpp:156
+#: rc.cpp:144
 msgid "&Fit image to page"
 msgstr "ធ្វើ​ឲ្យ​រូបភាព​សម​ទៅ​នឹង​ទំព័រ"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 182
-#: rc.cpp:162
+#: rc.cpp:150
 msgid "&Scale to:"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ទៅ ៖"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 232
-#: rc.cpp:165
+#: rc.cpp:153
 msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 msgid "x"
 msgstr "x"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 259
-#: rc.cpp:168
+#: rc.cpp:156
 msgid "Millimeters"
 msgstr "មិល្លីម៉ែត្រ"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 264
-#: rc.cpp:171
+#: rc.cpp:159
 msgid "Centimeters"
 msgstr "សង់ទីម៉ែត្រ"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 269
-#: rc.cpp:174
+#: rc.cpp:162
 msgid "Inches"
 msgstr "អ៊ិន្ឈ៍"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 280
-#: rc.cpp:177
+#: rc.cpp:165
 msgid "Keep ratio"
 msgstr "រក្សា​សមាមាត្រ"
 
 #. i18n: tag string
 #. i18n: file ./lib/cropsidebar.ui line 22
-#: rc.cpp:180
+#: rc.cpp:168
 msgid "&X:"
 msgstr "X ៖"
 
 #. i18n: tag string
 #. i18n: file ./lib/cropsidebar.ui line 45
-#: rc.cpp:183
+#: rc.cpp:171
 msgid "&Y:"
 msgstr "Y ៖"
 
 #. i18n: tag string
 #. i18n: file ./lib/cropsidebar.ui line 61
-#: rc.cpp:186
+#: rc.cpp:174
 msgid "&Width:"
 msgstr "ទទឹង ៖"
 
 #. i18n: tag string
 #. i18n: file ./lib/cropsidebar.ui line 77
-#: rc.cpp:189
+#: rc.cpp:177
 msgid "&Height:"
 msgstr "កម្ពស់ ៖"
 
 #. i18n: tag string
 #. i18n: file ./lib/cropsidebar.ui line 151
-#: rc.cpp:192
+#: rc.cpp:180
 msgid "x"
 msgstr "x"
 
 #. i18n: tag string
 #. i18n: file ./lib/cropsidebar.ui line 170
-#: rc.cpp:195
+#: rc.cpp:183
 msgid "Constrain ratio"
 msgstr "កម្រិត​សមាមាត្រ"
 
 #. i18n: tag text
 #. i18n: file ./part/gvpart.rc line 4
-#: rc.cpp:198
+#: rc.cpp:186
 msgid "&File"
 msgstr "ឯកសារ"
 
 #. i18n: tag Text
 #. i18n: file ./part/gvpart.rc line 7
-#: rc.cpp:201
+#: rc.cpp:189
 msgid "&View"
 msgstr "មើល"
+
+#~ msgctxt "@action:inmenu Tools"
+#~ msgid "Hide Filter Bar"
+#~ msgstr "លាក់​របារ​តម្រង"
+
+#~ msgctxt "@action:inmenu Tools"
+#~ msgid "Show Filter Bar"
+#~ msgstr "បង្ហាញ​របារ​តម្រង"
+
+#~ msgid "Minimum Rating:"
+#~ msgstr "អត្រា​អប្បបរមា ៖"
+
+#~ msgid "Enter search term here..."
+#~ msgstr "បញ្ចូល​ពាក្យ​ស្វែងរក​នៅ​ទីនេះ..."
+
+#~ msgid "..."
+#~ msgstr "..."
