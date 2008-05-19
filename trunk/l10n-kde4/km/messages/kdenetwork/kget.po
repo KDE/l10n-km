@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-16 18:23+0200\n"
+"POT-Creation-Date: 2008-05-19 07:53+0200\n"
 "PO-Revision-Date: 2008-05-09 21:19+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: khmer <support@khmeros.info>\n"
@@ -196,6 +196,8 @@ msgstr "ពេល​នៅ​សល់"
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:30
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:31
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:32
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:33
+#: transfer-plugins/bittorrent/btdetailswidget.cpp:34
 #: ui/transfersviewdelegate.cpp:352
 msgctxt "not available"
 msgid "n/a"
@@ -242,7 +244,7 @@ msgstr "បញ្ឈប់"
 #: transfer-plugins/kio/transferKio.cpp:57
 #: transfer-plugins/metalink/metalink.cpp:53
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:62
-#: transfer-plugins/bittorrent/bttransfer.cpp:241
+#: transfer-plugins/bittorrent/bttransfer.cpp:235
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "បាន​បញ្ឈប់"
@@ -255,7 +257,7 @@ msgstr "បានពន្យារ​ពេល"
 #: core/transfer.cpp:198 transfer-plugins/kio/transferKio.cpp:123
 #: transfer-plugins/metalink/metalink.cpp:103
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:210
-#: transfer-plugins/bittorrent/bttransfer.cpp:238
+#: transfer-plugins/bittorrent/bttransfer.cpp:232
 msgctxt "transfer state: finished"
 msgid "Finished"
 msgstr "បាន​បញ្ចប់"
@@ -601,12 +603,12 @@ msgid "Cannot remove webseed %1, it is part of the torrent."
 msgstr "មិនអាច​យក webseed %1 ចេញ​បានទេ វា​ជា​ផ្នែក​របស់ torrent ។"
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:87
-#: transfer-plugins/bittorrent/bttransfer.cpp:198
+#: transfer-plugins/bittorrent/bttransfer.cpp:193
 msgid "Cannot add a tracker to a private torrent."
 msgstr "មិនអាច​បន្ថែម​កម្មវិធី​តាមដាន​ទៅ​ torrent ឯកជន ។"
 
 #: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:94
-#: transfer-plugins/bittorrent/bttransfer.cpp:204
+#: transfer-plugins/bittorrent/bttransfer.cpp:199
 msgid "Malformed URL."
 msgstr "URL ត្រឹមត្រូវ ។"
 
@@ -730,20 +732,20 @@ msgstr "សេចក្ដី​លម្អិ​ត​កម្រិត​ខ
 msgid "&Scan Files"
 msgstr "វិភាគ​ឯកសារ"
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:83
+#: transfer-plugins/bittorrent/bttransfer.cpp:79
 msgid "Downloading Torrent-File.."
 msgstr "កំពុងទាញ​​​​​​យក​ឯកសារ Torrent..."
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:223
+#: transfer-plugins/bittorrent/bttransfer.cpp:217
 msgctxt "transfer state: downloading"
 msgid "Downloading.."
 msgstr "កំពុង​ទាញយក..."
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:285
+#: transfer-plugins/bittorrent/bttransfer.cpp:279
 msgid "Analyzing torrent.."
 msgstr "កំពុង​វិភាគ torrent.."
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:358
+#: transfer-plugins/bittorrent/bttransfer.cpp:350
 msgctxt "Transfer status: seeding"
 msgid "Seeding.."
 msgstr "កំពុង​បណ្ដុះ..."
@@ -1627,13 +1629,19 @@ msgstr "អ្នក​អភិវឌ្ឍន៍​ស្នូល និង�
 msgid "Javier Goday"
 msgstr "Javier Goday"
 
-#: main.cpp:125 main.cpp:126
+#: main.cpp:125
 msgid "Developer"
 msgstr "អ្នក​អភិវឌ្ឍន៍"
 
 #: main.cpp:126
 msgid "Lukas Appelhans"
 msgstr "Lukas Appelhans"
+
+#: main.cpp:126
+#, fuzzy
+#| msgid "Core Developer, Multithreaded Plugin Author"
+msgid "Developer, Torrent Plugin Author"
+msgstr "អ្នក​អភិវឌ្ឍន៍​ស្នូល និង​អ្នក​និពន្ធ​កម្មវិធី​ជំនួយ​ដែល​បាន​ចង​ខ្សែ​ស្រឡាយ​ច្រើន"
 
 #: main.cpp:127
 msgid "Patrick Charbonnier"
@@ -2607,13 +2615,17 @@ msgstr "ការ​កំណត់​ក្រុម"
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 33
 #: rc.cpp:440
-msgid "Max download Speed"
+#, fuzzy
+#| msgid "Max download Speed"
+msgid "Maximum download speed"
 msgstr "ល្បឿន​ទាញយក​អតិបរមា"
 
 #. i18n: tag string
 #. i18n: file ui/groupsettingsdialog.ui line 59
 #: rc.cpp:446
-msgid "Max upload Speed"
+#, fuzzy
+#| msgid "Max upload Speed"
+msgid "Maximum upload speed"
 msgstr "ល្បឿន​ផ្ទុកឡើង​អតិបរមា"
 
 #. i18n: tag string
