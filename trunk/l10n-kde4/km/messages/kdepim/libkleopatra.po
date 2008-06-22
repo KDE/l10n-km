@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-05-25 11:06+0200\n"
+"POT-Creation-Date: 2008-06-22 02:53+0200\n"
 "PO-Revision-Date: 2008-05-21 10:09+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -137,9 +137,14 @@ msgstr "ចុច​ដើម្បី​យក​សេវា​ដែល​ប
 #. i18n: tag string
 #. i18n: file ui/directoryserviceswidget.ui line 86
 #: rc.cpp:53
+#, fuzzy
+#| msgid ""
+#| "Click this button to remove the currently selected directory service. The "
+#| "change will only take effect once you acknowledge the mail configuration "
+#| "dialog."
 msgid ""
 "Click this button to remove the currently selected directory service. The "
-"change will only take effect once you acknowledge the mail configuration "
+"change will only take effect once you acknowledge the main configuration "
 "dialog."
 msgstr ""
 "ចុច​ប៊ូតុង​នេះ ដើម្បី​យក​សេវា​ថត​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន ។ ការ​ផ្លាស់ប្ដូរ នឹង​មាន​ប្រសិទ្ធិភាព នៅពេលដែល​អ្នក​"
@@ -154,6 +159,14 @@ msgstr "លុប"
 #. i18n: tag string
 #. i18n: file ui/directoryserviceswidget.ui line 119
 #: rc.cpp:59
+msgid ""
+"Use this option to switch display of username and password information on or "
+"off in the above table."
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file ui/directoryserviceswidget.ui line 122
+#: rc.cpp:62
 msgid "Show user and password information"
 msgstr "បង្ហាញ​ព័ត៌មាន​អ្នកប្រើ និង​ពាក្យ​សម្ងាត់"
 
@@ -315,19 +328,25 @@ msgctxt "progress info: \"%1 of %2\""
 msgid "%1/%2"
 msgstr "%1/%2"
 
-#: kleo/keyfiltermanager.cpp:79
+#: kleo/keyfiltermanager.cpp:77
+#, fuzzy
+#| msgid "My Certificates"
+msgid "All Certificates"
+msgstr "វិញ្ញាបនបត្រ​របស់​ខ្ញុំ"
+
+#: kleo/keyfiltermanager.cpp:91
 msgid "My Certificates"
 msgstr "វិញ្ញាបនបត្រ​របស់​ខ្ញុំ"
 
-#: kleo/keyfiltermanager.cpp:97
+#: kleo/keyfiltermanager.cpp:109
 msgid "Trusted Certificates"
 msgstr "​វិញ្ញាបនបត្រ​ដែលទុកចិត្ត"
 
-#: kleo/keyfiltermanager.cpp:113
+#: kleo/keyfiltermanager.cpp:125
 msgid "Other Certificates"
 msgstr "​វិញ្ញាបនបត្រ​ផ្សេងៗ​"
 
-#: ui/backendconfigwidget.cpp:146 ui/directoryserviceswidget.cpp:582
+#: ui/backendconfigwidget.cpp:146 ui/directoryserviceswidget.cpp:634
 msgid "OpenPGP"
 msgstr "OpenPGP"
 
@@ -407,27 +426,37 @@ msgstr "Guru (សារ​បំបាត់​កំហុស​ទាំងអ
 msgid "Set the debugging level to"
 msgstr "កំណត់​កម្រិត​បំបាត់​កំហុស​ទៅ"
 
-#: ui/cryptoconfigmodule.cpp:783 ui/cryptoconfigmodule.cpp:851
+#: ui/cryptoconfigmodule.cpp:783
+msgid "Show..."
+msgstr ""
+
+#: ui/cryptoconfigmodule.cpp:783 ui/cryptoconfigmodule.cpp:870
 msgid "Edit..."
 msgstr "កែសម្រួល..."
 
-#: ui/cryptoconfigmodule.cpp:818 ui/cryptoconfigmodule.cpp:894
+#: ui/cryptoconfigmodule.cpp:836
 msgid "Configure LDAP Servers"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ម៉ាស៊ីន​បម្រើ LDAP"
 
-#: ui/cryptoconfigmodule.cpp:836
+#: ui/cryptoconfigmodule.cpp:855
 msgid "No server configured yet"
 msgstr "គ្មាន​ម៉ាស៊ីន​បម្រើ​ដែល​បាន​កំណត់​រចនា​សម្ព័ន្ធ​នៅឡើយ​ទេ"
 
-#: ui/cryptoconfigmodule.cpp:838
+#: ui/cryptoconfigmodule.cpp:857
 #, kde-format
 msgid "1 server configured"
 msgid_plural "%1 servers configured"
 msgstr[0] "បាន​កំណត់​រចនាសម្ព័ន្ធ​ម៉ាស៊ីន​​បម្រើ %1"
 
-#: ui/cryptoconfigmodule.cpp:855
+#: ui/cryptoconfigmodule.cpp:874
 msgid "Use keyserver at"
 msgstr "ប្រើ​ម៉ាស៊ីន​បម្រើ​សោ​នៅ"
+
+#: ui/cryptoconfigmodule.cpp:913
+#, fuzzy
+#| msgid "Configure LDAP Servers"
+msgid "Configure Keyservers"
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ម៉ាស៊ីន​បម្រើ LDAP"
 
 #: ui/directoryserviceswidget.cpp:64
 msgctxt "default server name, keep it a valid domain name, ie. no spaces"
@@ -462,63 +491,73 @@ msgstr "ldap"
 msgid "ldaps"
 msgstr "ldaps"
 
-#: ui/directoryserviceswidget.cpp:468
+#: ui/directoryserviceswidget.cpp:507
 msgctxt "New X.509 Directory Server"
 msgid "X.509"
 msgstr "X.509"
 
-#: ui/directoryserviceswidget.cpp:469
+#: ui/directoryserviceswidget.cpp:508
 msgctxt "New OpenPGP Directory Server"
 msgid "OpenPGP"
 msgstr "OpenPGP"
 
-#: ui/directoryserviceswidget.cpp:575
+#: ui/directoryserviceswidget.cpp:627
 msgid "Scheme"
 msgstr "គ្រោងការណ៍"
 
-#: ui/directoryserviceswidget.cpp:576
+#: ui/directoryserviceswidget.cpp:628
 msgid "Server Name"
 msgstr "ឈ្មោះ​ម៉ាស៊ីន​បម្រើ"
 
-#: ui/directoryserviceswidget.cpp:577
+#: ui/directoryserviceswidget.cpp:629
 msgid "Server Port"
 msgstr "ច្រក​ម៉ាស៊ីន​បម្រើ"
 
-#: ui/directoryserviceswidget.cpp:578
+#: ui/directoryserviceswidget.cpp:630
 msgid "Base DN"
 msgstr "គោល​ DN"
 
-#: ui/directoryserviceswidget.cpp:579
+#: ui/directoryserviceswidget.cpp:631
 msgid "User Name"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ"
 
-#: ui/directoryserviceswidget.cpp:580
+#: ui/directoryserviceswidget.cpp:632
 msgid "Password"
 msgstr "ពាក្យ​សម្ងាត់"
 
-#: ui/directoryserviceswidget.cpp:581
+#: ui/directoryserviceswidget.cpp:633
 msgid "X.509"
 msgstr "X.509"
 
-#: ui/directoryserviceswidget.cpp:762
+#: ui/directoryserviceswidget.cpp:653
+msgid "(read-only)"
+msgstr ""
+
+#: ui/directoryserviceswidget.cpp:655
+#, kde-format
+msgctxt "amended tooltip; %1: original tooltip"
+msgid "%1 (read-only)"
+msgstr ""
+
+#: ui/directoryserviceswidget.cpp:837
 msgid ""
 "Select the access protocol (scheme) that the directory service is available "
 "through."
 msgstr "ជ្រើស​ពិធីការ​ចូលដំណើរការ (គ្រោងការណ៍) ដែល​សេវា​ថត​មាន​សម្រាប់​វា ។"
 
-#: ui/directoryserviceswidget.cpp:764
+#: ui/directoryserviceswidget.cpp:839
 msgid ""
 "Enter the name or IP address of the server hosting the directory service."
 msgstr "បញ្ចូល​ឈ្មោះ ឬ​អាសយដ្ឋាន IP របស់​ម៉ាស៊ីន​បម្រើ​ដែល​បង្ហោះ​សេវា​ថត ។"
 
-#: ui/directoryserviceswidget.cpp:766
+#: ui/directoryserviceswidget.cpp:841
 msgid ""
 "<b>(Optional, the default is fine in most cases)</b> Pick the port number "
 "the directory service is listening on."
 msgstr ""
 "<b>(ស្រេចចិត្ត លំនាំដើម​គឺ​ត្រឹមត្រូវ​សម្រាប់​ករណី​ភាគច្រើន)</b> រើស​លេខ​ច្រក ដែល​សេវា​ថត​ស្ដាប់ ។"
 
-#: ui/directoryserviceswidget.cpp:769
+#: ui/directoryserviceswidget.cpp:844
 msgid ""
 "<b>(Only for LDAP)</b> Enter the base DN for this LDAP server to limit "
 "searches to only that subtree of the directory."
@@ -526,11 +565,11 @@ msgstr ""
 "<b>(សម្រាប់​តែ LDAP)</b> បញ្ចូលឈ្មោះ​ដែន​មូលដ្ឋាន​សម្រាប់​ម៉ាស៊ីន​បម្រើ​ LDAP នេះ​ដើម្បី​កំណត់​ការ​ស្វែងរក​"
 "មែកធាង​ថត ។"
 
-#: ui/directoryserviceswidget.cpp:772
+#: ui/directoryserviceswidget.cpp:847
 msgid "<b>(Optional)</b> Enter your user name here, if needed."
 msgstr "<b>(ស្រេចចិត្ត)</b> បញ្ចូល​ឈ្មោះ​អ្នកប្រើ​របស់​អ្នក ប្រសិន​បើ​ត្រូវការ ។"
 
-#: ui/directoryserviceswidget.cpp:774
+#: ui/directoryserviceswidget.cpp:849
 msgid ""
 "<b>(Optional, not recommended)</b> Enter your password here, if needed. Note "
 "that the password will be saved in the clear in a config file in your home "
@@ -539,13 +578,13 @@ msgstr ""
 "<b>(ស្រេចចិត្ត មិន​ត្រូវបាន​ផ្ដល់​អានុសាសន៍​ទេ)</b> បញ្ចូល​ពាក្យ​សម្ងាត់​នៅ​ទីនេះ ប្រសិន​បើ​ត្រូវការ ។ "
 "ចំណាំថា ពាក្យ​សម្ងាត់​នឹង​ត្រូវបាន​រក្សាទុក​នៅ​ក្នុង​ឯកសារ​កំណត់​រចនា​សម្ព័ន្ធ​នៅ​ក្នុង​ថត​ផ្ទះ​របស់​អ្នក ។"
 
-#: ui/directoryserviceswidget.cpp:778
+#: ui/directoryserviceswidget.cpp:853
 msgid ""
 "Check this column if this directory service is providing S/MIME (X.509) "
 "certificates."
 msgstr "ពិនិត្យ​ជួរឈរ​នេះ ថាតើ​សេវា​ថត​នេះ​ផ្ដល់​វិញ្ញាបនបត្រ S/MIME (X.509) ឬ​អត់ ។"
 
-#: ui/directoryserviceswidget.cpp:780
+#: ui/directoryserviceswidget.cpp:855
 msgid ""
 "Check this column if this directory service is providing OpenPGP "
 "certificates."
@@ -652,7 +691,7 @@ msgid "<placeholder>unknown</placeholder>"
 msgstr "<placeholder>មិនស្គាល់</placeholder>"
 
 #: ui/keyrequester.cpp:231 ui/keyselectiondialog.cpp:535
-#: backends/qgpgme/qgpgmekeylistjob.cpp:176
+#: backends/qgpgme/qgpgmekeylistjob.cpp:148
 #, kde-format
 msgid ""
 "<qt><p>An error occurred while fetching the keys from the backend:</p><p><b>%"
@@ -713,7 +752,7 @@ msgstr "កុំ​"
 
 #: ui/keyselectiondialog.cpp:247 ui/keyselectiondialog.cpp:249
 #: ui/keyselectiondialog.cpp:256 ui/keyselectiondialog.cpp:258
-#: ui/keyselectiondialog.cpp:259 backends/qgpgme/qgpgmebackend.cpp:84
+#: ui/keyselectiondialog.cpp:259 backends/qgpgme/qgpgmebackend.cpp:85
 msgid "unknown"
 msgstr "​មិន​ស្គាល់"
 
@@ -809,23 +848,23 @@ msgstr "លទ្ធផ​ល​នៃ​បញ្ជី​កូនសោ"
 msgid "Recheck Key"
 msgstr "ពិនិត្យ​​កូនសោ​ឡើង​វិញ"
 
-#: ui/messagebox.cpp:61
+#: ui/messagebox.cpp:63
 msgid "&Save to Disk..."
 msgstr "រក្សាទុក​ទៅ​ថាស..."
 
-#: ui/messagebox.cpp:65
+#: ui/messagebox.cpp:67
 msgid "&Copy to Clipboard"
 msgstr "ចម្លង​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
 
-#: ui/messagebox.cpp:65
+#: ui/messagebox.cpp:67
 msgid "Copy Audit Log to Clipboard"
 msgstr "ចម្លង​កំណត់ហេតុ​ត្រួតពិនិត្យ​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
 
-#: ui/messagebox.cpp:69
+#: ui/messagebox.cpp:71
 msgid "&Show Audit Log"
 msgstr "បង្ហាញ​កំណត់ហេតុ​ត្រួតពិនិត្យ"
 
-#: ui/messagebox.cpp:79
+#: ui/messagebox.cpp:80
 msgid "View GnuPG Audit Log"
 msgstr "មើល​កំណត់ហេតុ​ត្រួតពិនិត្យ GnuPG"
 
@@ -842,57 +881,57 @@ msgstr "មិន​អាច​រក្សាទុកឯកសារ \"%1\" 
 msgid "File Save Error"
 msgstr "កំហុស​ក្នុងការ​រក្សាទុក​ឯកសារ"
 
-#: ui/messagebox.cpp:145
+#: ui/messagebox.cpp:140
 msgid "Your system does not have support for GnuPG Audit Logs"
 msgstr "ប្រព័ន្ធ​របស់​អ្នក​មិន​មានការ​គាំទ្រ​សម្រាប់​កំណត់ហេតុ GnuPG Audit"
 
-#: ui/messagebox.cpp:146
+#: ui/messagebox.cpp:141
 msgid "System Error"
 msgstr "កំហុស​ប្រព័ន្ធ"
 
-#: ui/messagebox.cpp:152
+#: ui/messagebox.cpp:147
 msgid "No GnuPG Audit Log available for this operation."
 msgstr "មិនមាន​កំណត់​ហេតុ GnuPG Audit សម្រាប់​ប្រតិបត្តិការ​នេះ ។"
 
-#: ui/messagebox.cpp:153
+#: ui/messagebox.cpp:148
 msgid "No GnuPG Audit Log"
 msgstr "គ្មានកំណត់ហេតុ GnuPG Audit"
 
-#: ui/messagebox.cpp:170 ui/messagebox.cpp:175
+#: ui/messagebox.cpp:165 ui/messagebox.cpp:170
 msgid "GnuPG Audit Log Viewer"
 msgstr "កម្មវិធី​មើល​កំណត់ហេតុ GnuPG Audit"
 
-#: ui/messagebox.cpp:180
+#: ui/messagebox.cpp:175
 #, kde-format
 msgid "Signing failed: %1"
 msgstr "ការ​ចុះហត្ថលេខា​បាន​បរាជ័យ ៖ %1"
 
-#: ui/messagebox.cpp:181
+#: ui/messagebox.cpp:176
 msgid "Signing successful"
 msgstr "ចុះហត្ថលេខា​ដោយ​ជោគជ័យ"
 
-#: ui/messagebox.cpp:190 backends/chiasmus/chiasmusjob.cpp:206
+#: ui/messagebox.cpp:185 backends/chiasmus/chiasmusjob.cpp:206
 #, kde-format
 msgid "Encryption failed: %1"
 msgstr "ការ​អ៊ិនគ្រីប​បាន​បរាជ័យ ៖ %1"
 
-#: ui/messagebox.cpp:191
+#: ui/messagebox.cpp:186
 msgid "Encryption successful"
 msgstr "អ៊ិគ្រីប​ដោយ​ជោគជ័យ"
 
-#: ui/messagebox.cpp:208
+#: ui/messagebox.cpp:203
 msgid "Signing Result"
 msgstr "ចុះហត្ថលេខា​លទ្ធផល"
 
-#: ui/messagebox.cpp:218
+#: ui/messagebox.cpp:213
 msgid "Signing Error"
 msgstr "កំហុស​ក្នុងកា​រចុះហត្ថលេខា"
 
-#: ui/messagebox.cpp:228 ui/messagebox.cpp:248
+#: ui/messagebox.cpp:223 ui/messagebox.cpp:243
 msgid "Encryption Result"
 msgstr "​លទ្ធផល​អ៊ិនគ្រីប"
 
-#: ui/messagebox.cpp:238 ui/messagebox.cpp:258
+#: ui/messagebox.cpp:233 ui/messagebox.cpp:253
 msgid "Encryption Error"
 msgstr "កំហុស​អ៊ិនគ្រីប"
 
@@ -901,28 +940,28 @@ msgstr "កំហុស​អ៊ិនគ្រីប"
 msgid "%1: %2"
 msgstr "%1 ៖ %2"
 
-#: backends/chiasmus/chiasmusbackend.cpp:262
+#: backends/chiasmus/chiasmusbackend.cpp:264
 msgid "General"
 msgstr "ទូទៅ"
 
-#: backends/chiasmus/chiasmusbackend.cpp:317
-#: backends/chiasmus/chiasmusbackend.cpp:414
+#: backends/chiasmus/chiasmusbackend.cpp:319
+#: backends/chiasmus/chiasmusbackend.cpp:416
 msgid "Chiasmus"
 msgstr "Chiasmus"
 
-#: backends/chiasmus/chiasmusbackend.cpp:362
+#: backends/chiasmus/chiasmusbackend.cpp:364
 msgid "Chiasmus command line tool"
 msgstr "ឧបករណ៍​បន្ទាត់​ពាក្យ​បញ្ជា Chiasmus"
 
-#: backends/chiasmus/chiasmusbackend.cpp:434
-#: backends/chiasmus/chiasmusbackend.cpp:440
-#: backends/chiasmus/chiasmusbackend.cpp:469
-#: backends/qgpgme/qgpgmebackend.cpp:332
+#: backends/chiasmus/chiasmusbackend.cpp:436
+#: backends/chiasmus/chiasmusbackend.cpp:442
+#: backends/chiasmus/chiasmusbackend.cpp:471
+#: backends/qgpgme/qgpgmebackend.cpp:343
 #, kde-format
 msgid "Unsupported protocol \"%1\""
 msgstr "ពិធីការ \"%1\" ដែលមិន​បាន​គាំទ្រ"
 
-#: backends/chiasmus/chiasmusbackend.cpp:456
+#: backends/chiasmus/chiasmusbackend.cpp:458
 #, kde-format
 msgid "File \"%1\" does not exist or is not executable."
 msgstr "មិនមាន​ឯកសារ \"%1\" ឬ​មិន​អាច​ប្រតិបត្តិ​វា​បាន ។"
@@ -960,26 +999,26 @@ msgstr "បណ្ណាល័យ​មិនមាន​និមិត្ត​
 msgid "Scanning directory %1..."
 msgstr "កំពុង​វិភាគ​ថត %1..."
 
-#: backends/qgpgme/qgpgmebackend.cpp:286
+#: backends/qgpgme/qgpgmebackend.cpp:297
 msgid "GpgME"
 msgstr "GpgME"
 
-#: backends/qgpgme/qgpgmebackend.cpp:306
+#: backends/qgpgme/qgpgmebackend.cpp:317
 #, kde-format
 msgid "GPGME was compiled without support for %1."
 msgstr "GPGME ត្រូវបាន​ចងក្រង​ដោយ​មិន​មានការគាំទ្រ​សម្រាប់ %1 ទេ ។"
 
-#: backends/qgpgme/qgpgmebackend.cpp:308
+#: backends/qgpgme/qgpgmebackend.cpp:319
 #, kde-format
 msgid "Engine %1 is not installed properly."
 msgstr "ម៉ាស៊ីន %1 គឺ​មិនបាន​ដំឡើង​ត្រឹមត្រូវ​ទេ ។"
 
-#: backends/qgpgme/qgpgmebackend.cpp:310
+#: backends/qgpgme/qgpgmebackend.cpp:321
 #, kde-format
 msgid "Engine %1 version %2 installed, but at least version %3 is required."
 msgstr "បាន​ដំឡើង​ម៉ាស៊ីន​ %1 កំណែ %2 ប៉ុន្តែ​វា​ត្រូវការ​យ៉ាងហោចណាស់​ក៏​កំណែ %3 ។"
 
-#: backends/qgpgme/qgpgmebackend.cpp:314
+#: backends/qgpgme/qgpgmebackend.cpp:325
 #, kde-format
 msgid "Unknown problem with engine for protocol %1."
 msgstr "មិនស្គាល់​បញ្ហា​ជាមួយ​ម៉ាស៊ីន​សម្រាប់​ពិធីការ %1 ទេ ។"
@@ -1010,65 +1049,6 @@ msgstr ""
 msgid "Error from gpgconf while saving configuration: %1"
 msgstr "មាន​កំហុស​ពី gpgconf នៅពេល​ដែល​រក្សាទុក​ការ​កំណត់​រចនា​សម្ព័ន្ធ ៖ %1"
 
-#: backends/qgpgme/qgpgmedecryptjob.cpp:95
-msgid "Can't start decrypt job"
-msgstr "មិន​ចាប់ផ្ដើម​ការងារ​ឌិគ្រីប"
-
-#: backends/qgpgme/qgpgmedecryptverifyjob.cpp:96
-msgid "Can't start combined decrypt/verify operation"
-msgstr "មិន​ចាប់ផ្ដើម​ប្រតិបត្តិការ​ឌិគ្រីប/ផ្ទៀតផ្ទាត់​ដែល​បានផ្សំ"
-
-#: backends/qgpgme/qgpgmeencryptjob.cpp:111
-msgid "Can't start encrypt job"
-msgstr "មិន​អាច​ចាប់ផ្ដើម​ការងារ​អ៊ិនគ្រីប"
-
-#: backends/qgpgme/qgpgmejob.cpp:239
-#, kde-format
-msgid "Error adding signer %1."
-msgstr "កំហុស​ក្នុង​កា​របន្ថែម​អ្នកចុះហត្ថលេខា %1 ។"
-
-#: backends/qgpgme/qgpgmejob.cpp:328
-#, kde-format
-msgid ""
-"You need a passphrase to unlock the secret key for user:<br/> %1 (retry)"
-msgstr "អ្នក​ត្រូវការ​ឃ្លា​សម្ងាត់​ដើម្បី​ដោះសោ​សម្ងាត់​សម្រាប់​អ្នក​ប្រើ ៖<br/> %1 (ព្យាយាម​ម្ដងទៀត)"
-
-#: backends/qgpgme/qgpgmejob.cpp:330
-#, kde-format
-msgid "You need a passphrase to unlock the secret key for user:<br/> %1"
-msgstr "អ្នក​ត្រូវ​ការ​ឃ្លា​សម្ងាត់​ដើម្បី​ដោះសោ​សម្ងាត់​សម្រាប់​អ្នក​ប្រើ ៖<br/> %1"
-
-#: backends/qgpgme/qgpgmejob.cpp:334
-msgid ""
-"This dialog will reappear every time the passphrase is needed. For a more "
-"secure solution that also allows caching the passphrase, use gpg-agent."
-msgstr ""
-"ប្រអប់​នេះ​នឹង​លេចឡើង​ម្ដងទៀត នៅរៀងរាល់ពេល​ដែល​ត្រូវការ​ឃ្លា​សម្ងាត់ ។ ចំពោះ​ដំណោះស្រាយ​"
-"សុវត្ថិភាពបន្ថែមដែលអនុញ្ញាត​ឲ្យ​ទុក​ឃ្លា​សម្ងាត់​នៅ​ក្នុង​ឃ្លាំង​សម្ងាត់ គឺ​ប្រើ ភ្នាកងារ gpg ។"
-
-#: backends/qgpgme/qgpgmejob.cpp:337
-#, kde-format
-msgid "gpg-agent was found in %1, but does not appear to be running."
-msgstr "បាន​រក​ឃើញ​ភ្នាក់ងារ gpg នៅ​ក្នុង %1 ប៉ុន្តែ​​វា​មិន​លេចឡើង​ដើម្បី​រត់​នោះទេ ។"
-
-#: backends/qgpgme/qgpgmejob.cpp:340
-#, kde-format
-msgid "gpg-agent is part of gnupg-%1, which you can download from %2"
-msgstr "ភ្នាក់ងារ gpg គឺ​ជា​ផ្នែក​នៃ gnupg-%1 ដែលអ្នក​អាច​ទាញ​យក​ពី %2"
-
-#: backends/qgpgme/qgpgmejob.cpp:345
-#, kde-format
-msgid "For information on how to set up gpg-agent, see %1"
-msgstr "ចំពោះ​ព័ត៌មាន​អំពី​របៀប​រៀបចំ​ភ្នាក់​ងារ gpg សូម​មើល %1"
-
-#: backends/qgpgme/qgpgmejob.cpp:348
-msgid "Enter passphrase:"
-msgstr "បញ្ចូល​ឃ្លា​សម្ងាត់ ៖"
-
-#: backends/qgpgme/qgpgmejob.cpp:351
-msgid "Passphrase Dialog"
-msgstr "ប្រអប់​ឃ្លា​សម្ងាត់"
-
 #: backends/qgpgme/qgpgmeprogresstokenmapper.cpp:50
 msgid "Generating DSA key..."
 msgstr "កំពុង​បង្កើត​កូនសោ DSA..."
@@ -1097,18 +1077,55 @@ msgid ""
 "instead)..."
 msgstr "កំពុង​ចាប់​ផ្ដើម​ភ្នាក់ងារ gpg (អ្នក​គួរតែ​ចាត់ទុក​ការចាប់​ផ្ដើម​វត្ថុ​ជាសកល​ជំនួសវិញ)..."
 
-#: backends/qgpgme/qgpgmesignencryptjob.cpp:123
-msgid "Can't start combined sign-encrypt job"
-msgstr "មិនអាច​ចាប់ផ្ដើម​ការងារ​អ៊ិនគ្រីប​ហត្ថលេខា​ដែល​បានផ្សំ​បានទេ"
+#~ msgid "Can't start decrypt job"
+#~ msgstr "មិន​ចាប់ផ្ដើម​ការងារ​ឌិគ្រីប"
 
-#: backends/qgpgme/qgpgmesignjob.cpp:119
-msgid "Can't start sign job"
-msgstr "មិនអាច​ចាប់ផ្ដើម​ការងារចុះ​ហត្ថលេខា​បាន​ទេ"
+#~ msgid "Can't start combined decrypt/verify operation"
+#~ msgstr "មិន​ចាប់ផ្ដើម​ប្រតិបត្តិការ​ឌិគ្រីប/ផ្ទៀតផ្ទាត់​ដែល​បានផ្សំ"
 
-#: backends/qgpgme/qgpgmeverifydetachedjob.cpp:99
-msgid "Can't start detached signature verification"
-msgstr "មិន​អាច​ចាប់ផ្ដើម​ផ្ទៀតផ្ទាត់​ហត្ថលេខា​ដែល​បានផ្ដាច់​បានទេ"
+#~ msgid "Can't start encrypt job"
+#~ msgstr "មិន​អាច​ចាប់ផ្ដើម​ការងារ​អ៊ិនគ្រីប"
 
-#: backends/qgpgme/qgpgmeverifyopaquejob.cpp:95
-msgid "Can't start opaque signature verification"
-msgstr "មិន​អាច​ចាប់ផ្ដើម​ការ​ផ្ទៀងផ្ទាត់​ហត្ថលេខា​មិនច្បាស់​បានទេ"
+#~ msgid "Error adding signer %1."
+#~ msgstr "កំហុស​ក្នុង​កា​របន្ថែម​អ្នកចុះហត្ថលេខា %1 ។"
+
+#~ msgid ""
+#~ "You need a passphrase to unlock the secret key for user:<br/> %1 (retry)"
+#~ msgstr "អ្នក​ត្រូវការ​ឃ្លា​សម្ងាត់​ដើម្បី​ដោះសោ​សម្ងាត់​សម្រាប់​អ្នក​ប្រើ ៖<br/> %1 (ព្យាយាម​ម្ដងទៀត)"
+
+#~ msgid "You need a passphrase to unlock the secret key for user:<br/> %1"
+#~ msgstr "អ្នក​ត្រូវ​ការ​ឃ្លា​សម្ងាត់​ដើម្បី​ដោះសោ​សម្ងាត់​សម្រាប់​អ្នក​ប្រើ ៖<br/> %1"
+
+#~ msgid ""
+#~ "This dialog will reappear every time the passphrase is needed. For a more "
+#~ "secure solution that also allows caching the passphrase, use gpg-agent."
+#~ msgstr ""
+#~ "ប្រអប់​នេះ​នឹង​លេចឡើង​ម្ដងទៀត នៅរៀងរាល់ពេល​ដែល​ត្រូវការ​ឃ្លា​សម្ងាត់ ។ ចំពោះ​ដំណោះស្រាយ​"
+#~ "សុវត្ថិភាពបន្ថែមដែលអនុញ្ញាត​ឲ្យ​ទុក​ឃ្លា​សម្ងាត់​នៅ​ក្នុង​ឃ្លាំង​សម្ងាត់ គឺ​ប្រើ ភ្នាកងារ gpg ។"
+
+#~ msgid "gpg-agent was found in %1, but does not appear to be running."
+#~ msgstr "បាន​រក​ឃើញ​ភ្នាក់ងារ gpg នៅ​ក្នុង %1 ប៉ុន្តែ​​វា​មិន​លេចឡើង​ដើម្បី​រត់​នោះទេ ។"
+
+#~ msgid "gpg-agent is part of gnupg-%1, which you can download from %2"
+#~ msgstr "ភ្នាក់ងារ gpg គឺ​ជា​ផ្នែក​នៃ gnupg-%1 ដែលអ្នក​អាច​ទាញ​យក​ពី %2"
+
+#~ msgid "For information on how to set up gpg-agent, see %1"
+#~ msgstr "ចំពោះ​ព័ត៌មាន​អំពី​របៀប​រៀបចំ​ភ្នាក់​ងារ gpg សូម​មើល %1"
+
+#~ msgid "Enter passphrase:"
+#~ msgstr "បញ្ចូល​ឃ្លា​សម្ងាត់ ៖"
+
+#~ msgid "Passphrase Dialog"
+#~ msgstr "ប្រអប់​ឃ្លា​សម្ងាត់"
+
+#~ msgid "Can't start combined sign-encrypt job"
+#~ msgstr "មិនអាច​ចាប់ផ្ដើម​ការងារ​អ៊ិនគ្រីប​ហត្ថលេខា​ដែល​បានផ្សំ​បានទេ"
+
+#~ msgid "Can't start sign job"
+#~ msgstr "មិនអាច​ចាប់ផ្ដើម​ការងារចុះ​ហត្ថលេខា​បាន​ទេ"
+
+#~ msgid "Can't start detached signature verification"
+#~ msgstr "មិន​អាច​ចាប់ផ្ដើម​ផ្ទៀតផ្ទាត់​ហត្ថលេខា​ដែល​បានផ្ដាច់​បានទេ"
+
+#~ msgid "Can't start opaque signature verification"
+#~ msgstr "មិន​អាច​ចាប់ផ្ដើម​ការ​ផ្ទៀងផ្ទាត់​ហត្ថលេខា​មិនច្បាស់​បានទេ"
