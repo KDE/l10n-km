@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-12 06:56+0200\n"
+"POT-Creation-Date: 2008-07-15 12:11+0200\n"
 "PO-Revision-Date: 2008-07-10 10:56+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -507,17 +507,17 @@ msgstr "សរសេរ​ជាន់​លើ​កាល​បរិច្ឆ
 msgid "EXIF Information"
 msgstr "ព័ត៌មាន EXIF"
 
-#: Exif/InfoDialog.cpp:69
+#: Exif/InfoDialog.cpp:71
 #, fuzzy
 msgid "Current EXIF Label Search: "
 msgstr "ការ​ស្វែងរក​ស្លាក EXIF ថ្មីៗ​: "
 
-#: Exif/InfoDialog.cpp:83
+#: Exif/InfoDialog.cpp:85
 #, fuzzy
 msgid "IPTC character set:"
 msgstr "សំណុំ​តួ​អក្សរ IPTC:"
 
-#: Exif/InfoDialog.cpp:102
+#: Exif/InfoDialog.cpp:104
 #, fuzzy
 msgid "<No Search>"
 msgstr "<មិន​ស្វែងរក>"
@@ -726,7 +726,7 @@ msgid "Error in file %1: expected 'KPhotoAlbum' as top element but found '%2'"
 msgstr "កំហុស​ក្នុង​ឯកសារ %1: រំពឹង​ថា KPhotoAlbum' ជា​ធាតុ​កំពូល ប៉ុន្តែ​បាន​រក​ឃើញ '%2'"
 
 #: Plugins/CategoryImageCollection.cpp:34 Survey/SurveyCount.cpp:47
-#: Browser/ContentFolder.cpp:60
+#: Browser/ContentFolder.cpp:60 MainWindow/StatisticsDialog.cpp:109
 #, fuzzy
 msgid "None"
 msgstr "គ្មាន"
@@ -1019,7 +1019,7 @@ msgid_plural "%1 videos"
 msgstr[0] "វីដេអូ 1"
 msgstr[1] ""
 
-#: Browser/ContentFolderAction.cpp:63 MainWindow/StatisticsDialog.cpp:36
+#: Browser/ContentFolderAction.cpp:63 MainWindow/StatisticsDialog.cpp:47
 #, fuzzy
 msgid "Category"
 msgstr "ប្រភេទ"
@@ -2545,7 +2545,7 @@ msgstr "<p>ពិត​ជា​ចង់​លុប​ប្រភេទ '%1'?
 msgid "Subcategories"
 msgstr "ប្រភេទ​រង"
 
-#: Settings/SettingsDialog.cpp:707
+#: Settings/SettingsDialog.cpp:707 MainWindow/StatisticsDialog.cpp:96
 #, fuzzy
 msgid "Category:"
 msgstr "ប្រភេទ​ ៖"
@@ -3409,28 +3409,51 @@ msgstr[1] ""
 msgid "Total: %1"
 msgstr "សរុប​ ៖ %1"
 
-#: MainWindow/StatisticsDialog.cpp:19
+#: MainWindow/StatisticsDialog.cpp:23
 msgid ""
 "<h1>Description</h1><table><tr><td># of Items</td><td>This is the number of "
 "different items in the category</td></tr><tr><td>Tags Total</td><td>This is "
 "a count of how many tags was made,<br/>i.e. a simple counting though all the "
 "images</tr></tr><tr><td>Tags Per Picture</td><td>This tells you how many "
-"tags are on each picture on average</td></tr></table>"
+"tags are on each picture on average</td></tr></table><br/><br/>Don't get too "
+"attached to this dialog, it has the problem that it counts categories AND "
+"subcategories,<br/>so if an image has been taken in Las Vegas, Nevada, USA, "
+"then 3 tags are counted for that image,<br/>while it should only be one.</"
+"br>I'm not really sure if it is worth fixing that bug (as it is pretty hard "
+"to fix),<br/>so maybe the dialog will simply go away again"
 msgstr ""
 
-#: MainWindow/StatisticsDialog.cpp:36
+#: MainWindow/StatisticsDialog.cpp:47
 msgid "# of Items"
 msgstr ""
 
-#: MainWindow/StatisticsDialog.cpp:36
+#: MainWindow/StatisticsDialog.cpp:47
 msgid "Tags Totals"
 msgstr ""
 
-#: MainWindow/StatisticsDialog.cpp:36
+#: MainWindow/StatisticsDialog.cpp:47
 msgid "Tags Per Picture"
 msgstr ""
 
-#: MainWindow/StatisticsDialog.cpp:63
+#: MainWindow/StatisticsDialog.cpp:86
+msgid "Tag indication completed annotation"
+msgstr ""
+
+#: MainWindow/StatisticsDialog.cpp:92
+msgid ""
+"If you use a specific tag to indicate that an image has been tagged, then "
+"specify it here."
+msgstr ""
+
+#: MainWindow/StatisticsDialog.cpp:102
+msgid "Tag:"
+msgstr ""
+
+#: MainWindow/StatisticsDialog.cpp:147
+msgid "All"
+msgstr ""
+
+#: MainWindow/StatisticsDialog.cpp:192
 #, fuzzy
 msgid "Total"
 msgstr "សរុប​ ៖ %1"
@@ -4128,7 +4151,7 @@ msgstr "<p>មិន​អាច​ចម្លង %1 ទៅ %2</p>"
 msgid "Unable to write image '%1'."
 msgstr "មិន​អាច​សរសេរ​រូបភាព '%1' ។"
 
-#: ThumbnailView/ThumbnailWidget.cpp:1084
+#: ThumbnailView/ThumbnailWidget.cpp:1095
 msgid ""
 "<p><b>Really reorder thumbnails?</b></p><p>By dragging images around in the "
 "thumbnail viewer, you actually reorder them. This is very useful in case you "
@@ -4137,12 +4160,12 @@ msgid ""
 "By Date and Time</b></p>"
 msgstr ""
 
-#: ThumbnailView/ThumbnailWidget.cpp:1090
+#: ThumbnailView/ThumbnailWidget.cpp:1101
 #, fuzzy
 msgid "Reorder Thumbnails"
 msgstr "ឧបករណ៍​កត់ត្រា​រូបភាព​តូច"
 
-#: ThumbnailView/ThumbnailBuilder.cpp:37
+#: ThumbnailView/ThumbnailBuilder.cpp:39
 #, fuzzy
 msgid "Generating thumbnails"
 msgstr "កំពុង​បង្កើត​រូបភាព​តូច"
