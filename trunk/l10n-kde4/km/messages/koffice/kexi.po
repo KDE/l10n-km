@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-15 12:08+0200\n"
+"POT-Creation-Date: 2008-07-16 06:36+0200\n"
 "PO-Revision-Date: 2008-07-15 16:03+0700\n"
 "Last-Translator: LY Soursdey <soursdey@khmeros.info>\n"
 "Language-Team: Khmer <kde-i18n-ca@kde.org>\n"
@@ -32,7 +32,8 @@ msgstr ""
 msgid "Unknown error"
 msgstr "មិន​ស្គាល់​កំហុស ។"
 
-#: core/kexiguimsghandler.cpp:151
+#: core/kexiguimsghandler.cpp:151 plugins/reportspgz/kexireportview.cpp:177
+#: plugins/reportspgz/kexireportview.cpp:196
 #, fuzzy
 msgid "Warning"
 msgstr "ព្រមាន"
@@ -996,6 +997,8 @@ msgstr ""
 "តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា ?"
 
 #: main/startup/KexiStartupFileWidget.cpp:381
+#: plugins/reportspgz/kexireportview.cpp:177
+#: plugins/reportspgz/kexireportview.cpp:196
 #, fuzzy
 msgid "Overwrite"
 msgstr "សរសេរ​ជាន់​លើ"
@@ -5275,43 +5278,43 @@ msgstr ""
 msgid "Row"
 msgstr ""
 
-#: webforms/main.cpp:48
+#: webforms/main.cpp:51
 msgid "Web Forms Daemon"
 msgstr ""
 
-#: webforms/main.cpp:49
+#: webforms/main.cpp:52
 msgid "Exports Kexi Forms to standard HTML pages"
 msgstr ""
 
-#: webforms/main.cpp:51
+#: webforms/main.cpp:54
 msgid "(C) Copyright 2008, Lorenzo Villani"
 msgstr ""
 
-#: webforms/main.cpp:54
+#: webforms/main.cpp:57
 msgid "Listen port"
 msgstr ""
 
-#: webforms/main.cpp:55
+#: webforms/main.cpp:58
 msgid "Web Root (used also as template root directory)"
 msgstr ""
 
-#: webforms/main.cpp:56
+#: webforms/main.cpp:59
 msgid "HTTPS listen port"
 msgstr ""
 
-#: webforms/main.cpp:57
+#: webforms/main.cpp:60
 msgid "Path to SSL certificate file"
 msgstr ""
 
-#: webforms/main.cpp:58
+#: webforms/main.cpp:61
 msgid "Path to SSL key file"
 msgstr ""
 
-#: webforms/main.cpp:59
+#: webforms/main.cpp:62
 msgid "Enable directory listing"
 msgstr ""
 
-#: webforms/main.cpp:60
+#: webforms/main.cpp:63
 msgid "Path to Kexi database file"
 msgstr ""
 
@@ -5663,7 +5666,7 @@ msgid "Open in Data View"
 msgstr ""
 
 #: plugins/forms/kexiactionselectiondialog.cpp:282
-#: plugins/reportspgz/kexireportview.cpp:66
+#: plugins/reportspgz/kexireportview.cpp:67
 msgid "Print"
 msgstr ""
 
@@ -6223,85 +6226,124 @@ msgstr ""
 msgid "Query \"%1\" already exists."
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:60
+#: plugins/reportspgz/kexireportview.cpp:61
 #, fuzzy
 msgid "Page"
 msgstr "ទំព័រ​ទី %1"
 
-#: plugins/reportspgz/kexireportview.cpp:68
+#: plugins/reportspgz/kexireportview.cpp:69
 msgid "Print Report"
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:69
+#: plugins/reportspgz/kexireportview.cpp:70
 #, fuzzy
 msgid "Prints the current report."
 msgstr "បិទ​គម្រោង​បច្ចុប្បន្ន ។"
 
-#: plugins/reportspgz/kexireportview.cpp:72
+#: plugins/reportspgz/kexireportview.cpp:73
 msgid "Open in KWord"
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:74
+#: plugins/reportspgz/kexireportview.cpp:75
 msgid "Open the report in KWord"
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:75
+#: plugins/reportspgz/kexireportview.cpp:76
 #, fuzzy
 msgid "Opens the current report in KWord."
 msgstr "បិទ​គម្រោង​បច្ចុប្បន្ន ។"
 
-#: plugins/reportspgz/kexireportview.cpp:80
+#: plugins/reportspgz/kexireportview.cpp:81
 msgid "Open in KSpread"
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:82
+#: plugins/reportspgz/kexireportview.cpp:83
 msgid "Open the report in KSpread"
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:83
+#: plugins/reportspgz/kexireportview.cpp:84
 #, fuzzy
 msgid "Opens the current report in KSpread."
 msgstr "បិទ​គម្រោង​បច្ចុប្បន្ន ។"
 
-#: plugins/reportspgz/kexireportview.cpp:88
+#: plugins/reportspgz/kexireportview.cpp:89
 msgid "Export to HTML"
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:90
+#: plugins/reportspgz/kexireportview.cpp:91
 msgid "Export the report to HTML"
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:91
+#: plugins/reportspgz/kexireportview.cpp:92
 #, fuzzy
 msgid "Exports the report to a HTML file."
 msgstr "នាំចូល​តារាង​ទិន្នន័យ​ពី​ឯកសារ ។"
 
-#: plugins/reportspgz/kexireportview.cpp:173
-#: plugins/reportspgz/kexireportview.cpp:186
-msgid "Report not saved, unable to open file for writing."
+#: plugins/reportspgz/kexireportview.cpp:170
+#: plugins/reportspgz/kexireportview.cpp:190
+msgid "Save Report to.."
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:173
-#: plugins/reportspgz/kexireportview.cpp:186
+#: plugins/reportspgz/kexireportview.cpp:172
+msgid "Report not exported.The URL was invalid"
+msgstr ""
+
+#: plugins/reportspgz/kexireportview.cpp:172
+#: plugins/reportspgz/kexireportview.cpp:192
 msgid "Not Saved"
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:190
+#: plugins/reportspgz/kexireportview.cpp:177
+#: plugins/reportspgz/kexireportview.cpp:196
+#, fuzzy, kde-format
+msgid ""
+"The file %1 exists.\n"
+"Do you wish to overwrite it?"
+msgstr ""
+"ឯកសារ​ \"%1\" មាន​រួច​ហើយ ។\n"
+"តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា ?"
+
+#: plugins/reportspgz/kexireportview.cpp:183
+#, kde-format
+msgid "Failed to open %1 in KSpread"
+msgstr ""
+
+#: plugins/reportspgz/kexireportview.cpp:183
+#, fuzzy
+msgid "Opening in KSpread failed"
+msgstr "បើក​វត្ថុ \"%1\" បរាជ័យ ។"
+
+#: plugins/reportspgz/kexireportview.cpp:192
+msgid "Report not exported, no file selected for writing to"
+msgstr ""
+
+#: plugins/reportspgz/kexireportview.cpp:202
 msgid ""
 "Would you like to export using a Cascading Style Sheet which will give "
 "output closer to the original, or export using a Table which outputs a much "
 "simpler format."
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:190
+#: plugins/reportspgz/kexireportview.cpp:202
 msgid "Export Style"
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:196
-msgid "Report saved to "
+#: plugins/reportspgz/kexireportview.cpp:206
+#, fuzzy, kde-format
+msgid "Exporting report to %1 failed"
+msgstr "នាំចូល​តារាង​ទិន្នន័យ​ពី​ឯកសារ ។"
+
+#: plugins/reportspgz/kexireportview.cpp:206
+#, fuzzy
+msgid "Saving failed"
+msgstr "ការ​រក្សា​ទុក​វត្ថុ \"%1\" បាន​បរាជ័យ ។"
+
+#: plugins/reportspgz/kexireportview.cpp:208
+#, kde-format
+msgid "Report saved to %1"
 msgstr ""
 
-#: plugins/reportspgz/kexireportview.cpp:196
+#: plugins/reportspgz/kexireportview.cpp:208
 #, fuzzy
 msgid "Saved OK"
 msgstr "រក្សា​ទុក"
