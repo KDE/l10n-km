@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-17 10:20+0200\n"
+"POT-Creation-Date: 2008-07-18 09:38+0200\n"
 "PO-Revision-Date: 2008-07-16 10:28+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -141,8 +141,8 @@ msgstr "បាន​នាំចូល <b>%1</b>"
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 155
 #: ktorrent/spinboxdelegate.cpp:39 rc.cpp:98 rc.cpp:541 rc.cpp:550 rc.cpp:790
-#: rc.cpp:799 rc.cpp:1018 rc.cpp:1030 rc.cpp:2421 rc.cpp:2430 rc.cpp:2490
-#: rc.cpp:2499
+#: rc.cpp:799 rc.cpp:1006 rc.cpp:1018 rc.cpp:2409 rc.cpp:2418 rc.cpp:2478
+#: rc.cpp:2487
 msgid " KB/s"
 msgstr " គ.ប./វិ."
 
@@ -245,9 +245,9 @@ msgstr " គ.ប./វិ."
 #: ktorrent/spinboxdelegate.cpp:41 ktorrent/speedlimitsmodel.cpp:137
 #: ktorrent/speedlimitsmodel.cpp:142 rc.cpp:538 rc.cpp:547 rc.cpp:556
 #: rc.cpp:565 rc.cpp:621 rc.cpp:630 rc.cpp:703 rc.cpp:712 rc.cpp:787
-#: rc.cpp:796 rc.cpp:997 rc.cpp:1006 rc.cpp:1015 rc.cpp:1027 rc.cpp:1583
-#: rc.cpp:1589 rc.cpp:2418 rc.cpp:2427 rc.cpp:2442 rc.cpp:2448 rc.cpp:2487
-#: rc.cpp:2496 rc.cpp:2511 rc.cpp:2517 plugins/infowidget/statustab.cpp:55
+#: rc.cpp:796 rc.cpp:985 rc.cpp:994 rc.cpp:1003 rc.cpp:1015 rc.cpp:1571
+#: rc.cpp:1577 rc.cpp:2406 rc.cpp:2415 rc.cpp:2430 rc.cpp:2436 rc.cpp:2475
+#: rc.cpp:2484 rc.cpp:2499 rc.cpp:2505 plugins/infowidget/statustab.cpp:55
 msgid "No limit"
 msgstr "គ្មាន​កំណត់"
 
@@ -256,19 +256,29 @@ msgstr "គ្មាន​កំណត់"
 msgid "No assured speed"
 msgstr "គ្មាន​ល្បឿន​ដែល​បាន​អះអាង"
 
-#: ktorrent/ipfilterwidget.cpp:96
+#: ktorrent/ipfilterwidget.cpp:53
+#, fuzzy
+#| msgid "IP Filter"
+msgid "IP Filter List"
+msgstr "តម្រង IP"
+
+#: ktorrent/ipfilterwidget.cpp:101
+#, fuzzy, kde-format
+#| msgid ""
+#| "You must enter IP in format 'XXX.XXX.XXX.XXX'. You can also use wildcards "
+#| "for ranges like '127.0.0.*'."
 msgid ""
-"You must enter IP in format 'XXX.XXX.XXX.XXX'. You can also use wildcards "
-"for ranges like '127.0.0.*'."
+"Invalid IP address %1. You must enter an IP address in the format 'XXX.XXX."
+"XXX.XXX'. You can also use wildcards for ranges like '127.0.0.*'."
 msgstr ""
 "អ្នក​ត្រូវ​តែ​បញ្ចូល IP ជា​ទ្រង់ទ្រាយ 'XXX.XXX.XXX.XXX' ។ អ្នក​ក៍​អាច​ប្រើ​តួអក្សរ​ជំនួស​សម្រាប់​ជួរ​បាន​"
 "ដែរ ដូចជា '127.0.0.*' ។"
 
-#: ktorrent/ipfilterwidget.cpp:112
+#: ktorrent/ipfilterwidget.cpp:132
 msgid "Choose a file"
 msgstr "ជ្រើស​ឯកសារ"
 
-#: ktorrent/ipfilterwidget.cpp:124
+#: ktorrent/ipfilterwidget.cpp:144
 msgid "Choose a filename to save under"
 msgstr "ជ្រើស​ឈ្មោះ​ឯកសារ​ដែល​ត្រូវប្រើ​ដើម្បី​រក្សាទុក"
 
@@ -361,7 +371,7 @@ msgstr "បន្ថែម​ម៉ាស៊ីន​ដូចគ្នា"
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 795
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 234
-#: ktorrent/viewmanager.cpp:416 rc.cpp:1632 rc.cpp:1719 rc.cpp:1782
+#: ktorrent/viewmanager.cpp:416 rc.cpp:1620 rc.cpp:1707 rc.cpp:1770
 #: plugins/infowidget/peerviewmodel.cpp:273
 msgid "DHT"
 msgstr "DHT"
@@ -421,6 +431,17 @@ msgstr "បើក​ថត"
 msgid "Add to Group"
 msgstr "បន្ថែម​ទៅ​ក្រុម"
 
+#: ktorrent/ipfilterlist.cpp:94
+#, fuzzy, kde-format
+#| msgid "Invalid url %1"
+msgid "Invalid IP address %1 !"
+msgstr "url %1 មិនត្រឹមត្រូវ"
+
+#: ktorrent/ipfilterlist.cpp:99
+#, kde-format
+msgid "Duplicate IP address %1 !"
+msgstr ""
+
 #. i18n: tag string
 #. i18n: file ./ktorrent/queuemanagerwidget.ui line 13
 #. i18n: tag string
@@ -454,7 +475,7 @@ msgstr "(%1 គ.ប.​/វិ​.)"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 338
-#: ktorrent/main.cpp:79 rc.cpp:1200
+#: ktorrent/main.cpp:79 rc.cpp:1188
 msgid "KTorrent"
 msgstr "KTorrent"
 
@@ -821,7 +842,7 @@ msgstr "%1 %"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 57
-#: ktorrent/viewmodel.cpp:368 ktorrent/queuemanagermodel.cpp:98 rc.cpp:2331
+#: ktorrent/viewmodel.cpp:368 ktorrent/queuemanagermodel.cpp:98 rc.cpp:2319
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -999,7 +1020,7 @@ msgstr "ចំណុច​ប្រទាក់​ទាំងអស់"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 167
-#: ktorrent/advancedpref.cpp:27 rc.cpp:1033
+#: ktorrent/advancedpref.cpp:27 rc.cpp:1021
 msgid "Advanced"
 msgstr "កម្រិត​ខ្ពស់"
 
@@ -1062,7 +1083,7 @@ msgstr "បើក​ស្ងាត់ៗ"
 #. i18n: tag string
 #. i18n: file ./ktorrent/torrentcreatordlg.ui line 339
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 65
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 59
 #. i18n: tag string
 #. i18n: file ./ktorrent/torrentcreatordlg.ui line 189
 #. i18n: tag string
@@ -1070,8 +1091,8 @@ msgstr "បើក​ស្ងាត់ៗ"
 #. i18n: tag string
 #. i18n: file ./ktorrent/torrentcreatordlg.ui line 339
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 65
-#: ktorrent/gui.cpp:458 rc.cpp:444 rc.cpp:471 rc.cpp:480 rc.cpp:826
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 59
+#: ktorrent/gui.cpp:458 rc.cpp:444 rc.cpp:471 rc.cpp:480 rc.cpp:823
 msgid "Remove"
 msgstr "យក​ចេញ"
 
@@ -1356,7 +1377,7 @@ msgstr "មិន​អាច​សរសេរ​សូម្បី​តែ​
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 284
 #: libktcore/pluginmanagerprefpage.cpp:38
-#: libktcore/pluginmanagerprefpage.cpp:54 rc.cpp:1959
+#: libktcore/pluginmanagerprefpage.cpp:54 rc.cpp:1947
 msgid "Plugins"
 msgstr "កម្មវិធី​ជំនួយ"
 
@@ -1732,16 +1753,12 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./ktorrent/speedlimitsdlg.ui line 139
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 133
-#. i18n: tag string
 #. i18n: file ./ktorrent/scandlg.ui line 217
 #. i18n: tag string
 #. i18n: file ./ktorrent/missingfilesdlg.ui line 91
 #. i18n: tag string
 #. i18n: file ./ktorrent/speedlimitsdlg.ui line 139
-#. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 133
-#: rc.cpp:56 rc.cpp:763 rc.cpp:808 rc.cpp:844
+#: rc.cpp:56 rc.cpp:763 rc.cpp:808
 msgid "Cancel"
 msgstr "បោះបង់"
 
@@ -1753,7 +1770,7 @@ msgstr "បោះបង់"
 #. i18n: file ./ktorrent/recommendedsettingsdlg.ui line 13
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 291
-#: rc.cpp:62 rc.cpp:1070
+#: rc.cpp:62 rc.cpp:1058
 msgid "Recommended Settings"
 msgstr "ការ​កំណត់​ដែល​ផ្ដល់​អនុសាសន៍"
 
@@ -1853,7 +1870,7 @@ msgstr "ការ​កំណត់​ដែល​ផ្ដល់​អនុស
 #. i18n: file ./ktorrent/speedlimitsdlg.ui line 71
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 141
-#: rc.cpp:113 rc.cpp:793 rc.cpp:1021
+#: rc.cpp:113 rc.cpp:793 rc.cpp:1009
 msgid "Maximum upload speed:"
 msgstr "ល្បឿន​ផ្ទុក​ឡើង​អតិបរមា ៖"
 
@@ -1902,7 +1919,7 @@ msgstr "ស្លាក​អត្ថបទ"
 #. i18n: file ./ktorrent/speedlimitsdlg.ui line 48
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 118
-#: rc.cpp:119 rc.cpp:784 rc.cpp:1009
+#: rc.cpp:119 rc.cpp:784 rc.cpp:997
 msgid "Maximum download speed:"
 msgstr "ល្បឿន​ទាញយក​អតិបរមា ៖"
 
@@ -1922,7 +1939,7 @@ msgstr "ល្បឿន​ទាញយក​អតិបរមា ៖"
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 143
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 183
-#: rc.cpp:125 rc.cpp:991 rc.cpp:2439 rc.cpp:2508
+#: rc.cpp:125 rc.cpp:979 rc.cpp:2427 rc.cpp:2496
 msgid "Maximum connections per torrent:"
 msgstr "ការ​តភ្ជាប់​អតិបរាមា​ក្នុង​​មួយ torrent ៖​"
 
@@ -1942,7 +1959,7 @@ msgstr "ការ​តភ្ជាប់​អតិបរាមា​ក្ន
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 160
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 200
-#: rc.cpp:131 rc.cpp:1000 rc.cpp:2445 rc.cpp:2514
+#: rc.cpp:131 rc.cpp:988 rc.cpp:2433 rc.cpp:2502
 msgid "Global connection limit:"
 msgstr "ដែន​​កំណត់​ការ​តភ្ជាប់​សកល ៖"
 
@@ -2250,7 +2267,7 @@ msgstr "បង្ហាញ​សារ​លេចឡើង​នៅ​ក្ន
 #. i18n: file ./ktorrent/generalpref.ui line 119
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 310
-#: rc.cpp:268 rc.cpp:1182
+#: rc.cpp:268 rc.cpp:1170
 msgid "Miscellaneous"
 msgstr "ផ្សេងៗ"
 
@@ -2582,12 +2599,12 @@ msgstr ""
 #. i18n: tag string
 #. i18n: file ./ktorrent/addpeersdlg.ui line 48
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 34
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 28
 #. i18n: tag string
 #. i18n: file ./ktorrent/addpeersdlg.ui line 48
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 34
-#: rc.cpp:375 rc.cpp:820
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 28
+#: rc.cpp:375 rc.cpp:817
 msgid "127.0.0.1"
 msgstr "127.0.0.1"
 
@@ -2619,8 +2636,8 @@ msgstr "127.0.0.1"
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 64
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 33
-#: rc.cpp:378 rc.cpp:459 rc.cpp:871 rc.cpp:921 rc.cpp:969 rc.cpp:1251
-#: rc.cpp:1354
+#: rc.cpp:378 rc.cpp:459 rc.cpp:859 rc.cpp:909 rc.cpp:957 rc.cpp:1239
+#: rc.cpp:1342
 msgid "Port:"
 msgstr "ច្រក ៖"
 
@@ -2633,7 +2650,7 @@ msgstr "ច្រក ៖"
 #. i18n: tag string
 #. i18n: file ./ktorrent/torrentcreatordlg.ui line 327
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 45
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 40
 #. i18n: tag string
 #. i18n: file ./ktorrent/addpeersdlg.ui line 111
 #. i18n: tag string
@@ -2643,8 +2660,8 @@ msgstr "ច្រក ៖"
 #. i18n: tag string
 #. i18n: file ./ktorrent/torrentcreatordlg.ui line 327
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 45
-#: rc.cpp:381 rc.cpp:441 rc.cpp:462 rc.cpp:477 rc.cpp:823
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 40
+#: rc.cpp:381 rc.cpp:441 rc.cpp:462 rc.cpp:477 rc.cpp:820
 msgid "Add"
 msgstr "បន្ថែម"
 
@@ -2653,10 +2670,14 @@ msgstr "បន្ថែម"
 #. i18n: tag string
 #. i18n: file ./ktorrent/torrentmigratordlg.ui line 61
 #. i18n: tag string
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 100
+#. i18n: tag string
 #. i18n: file ./ktorrent/addpeersdlg.ui line 118
 #. i18n: tag string
 #. i18n: file ./ktorrent/torrentmigratordlg.ui line 61
-#: rc.cpp:384 rc.cpp:721
+#. i18n: tag string
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 100
+#: rc.cpp:384 rc.cpp:721 rc.cpp:835
 msgid "Close"
 msgstr "បិទ​"
 
@@ -2684,7 +2705,7 @@ msgstr "ឯកសារ ឬ​ថត​ដែលត្រូវ​បង្ក�
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 61
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 775
-#: rc.cpp:393 rc.cpp:1299 rc.cpp:2262
+#: rc.cpp:393 rc.cpp:1287 rc.cpp:2250
 msgid "Options"
 msgstr "ជម្រើស​"
 
@@ -2774,7 +2795,7 @@ msgstr "ធ្វើការ​ចែករំលែក (តែ DHT ប៉ុ�
 #. i18n: file ./ktorrent/torrentcreatordlg.ui line 149
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 125
-#: rc.cpp:435 rc.cpp:1342
+#: rc.cpp:435 rc.cpp:1330
 msgid "Add torrent to group:"
 msgstr "បន្ថែម torrent ទៅ​ក្រុម ៖"
 
@@ -3005,7 +3026,7 @@ msgstr "ពេលវេលា​បណ្ដុះ​អតិបរមា ៖"
 #. i18n: file ./ktorrent/grouppolicydlg.ui line 126
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 364
-#: rc.cpp:559 rc.cpp:1592
+#: rc.cpp:559 rc.cpp:1580
 msgid " Hours"
 msgstr " ម៉ោង"
 
@@ -3487,13 +3508,7 @@ msgstr "យល់​​ព្រម​"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/speedlimitsdlg.ui line 132
-#. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 126
-#. i18n: tag string
-#. i18n: file ./ktorrent/speedlimitsdlg.ui line 132
-#. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 126
-#: rc.cpp:805 rc.cpp:841
+#: rc.cpp:805
 msgid "Apply"
 msgstr "អនុវត្ត"
 
@@ -3504,60 +3519,38 @@ msgid "KTorrent Blacklisted Peers"
 msgstr "ម៉ាស៊ីន​ដូចគ្នា​ដែល​មាន​ក្នុង​បញ្ជី​របស់ KTorrent"
 
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 19
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 21
 #: rc.cpp:814
-msgid "Banned Peers"
-msgstr "ម៉ាស៊ីន​ដូចគ្នា​ដែល​បាន​ហាម"
-
-#. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 27
-#: rc.cpp:817
 msgid "Add peer:"
 msgstr "បន្ថែម​ម៉ាស៊ីន​ដូចគ្នា ៖"
 
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 72
-#: rc.cpp:829
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 66
+#: rc.cpp:826
 msgid "Clear"
 msgstr "ជម្រះ"
 
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 92
-#: rc.cpp:832
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 86
+#: rc.cpp:829
 msgid "Open..."
 msgstr "បើក​..."
 
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 99
-#: rc.cpp:835
+#. i18n: file ./ktorrent/ipfilterwidget.ui line 93
+#: rc.cpp:832
 msgid "Save As..."
 msgstr "រក្សាទុក​ជា..."
 
 #. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 119
-#: rc.cpp:838
-msgid "Ok"
-msgstr "យល់ព្រម"
-
-#. i18n: tag string
-#. i18n: file ./ktorrent/ipfilterwidget.ui line 164
-#: rc.cpp:847
-msgid ""
-"Note: Blacklist applies to current session only. Use save/open to save your "
-"entries or use IPFilter plugin (PeerGuardian)."
-msgstr ""
-"ចំណាំ ៖ បញ្ជី​អនុវត្ត​តែ​ចំពោះ​សម័យ​បច្ចុប្បន្ន​ប៉ុណ្ណោះ ។ ប្រើ​ រក្សាទុក/បើក​ ដើម្បី​រក្សាទុក​ធាតុ​របស់​អ្នក ឬ​ប្រើ​"
-"កម្មវិធី​ជំនួយ IPFilter(PeerGuardian) ។"
-
-#. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 16
-#: rc.cpp:850
+#: rc.cpp:838
 msgid "HTTP"
 msgstr "HTTP"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 25
-#: rc.cpp:853
+#: rc.cpp:841
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3581,19 +3574,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 28
-#: rc.cpp:859
+#: rc.cpp:847
 msgid "Use KDE proxy settings"
 msgstr "ប្រើ​ការ​កំណត់​ប្រូកស៊ី KDE"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 37
-#: rc.cpp:862
+#: rc.cpp:850
 msgid "Proxy:"
 msgstr "ប្រូកស៊ី ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 47
-#: rc.cpp:865
+#: rc.cpp:853
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3615,7 +3608,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 64
-#: rc.cpp:874
+#: rc.cpp:862
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3637,7 +3630,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 85
-#: rc.cpp:880
+#: rc.cpp:868
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3659,13 +3652,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 88
-#: rc.cpp:886
+#: rc.cpp:874
 msgid "Use proxy for webseed connections"
 msgstr "ប្រើ​ប្រូកស៊ី​សម្រាប់​ការ​តភ្ជាប់ webseed"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 98
-#: rc.cpp:889
+#: rc.cpp:877
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3687,19 +3680,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 101
-#: rc.cpp:895
+#: rc.cpp:883
 msgid "Use proxy for tracker connections"
 msgstr "ប្រើ​ប្រូកស៊ី​សម្រាប់​ការ​តភ្ជាប់​កម្មវិធី​តាមដាន"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 111
-#: rc.cpp:898
+#: rc.cpp:886
 msgid "SOCKS"
 msgstr "SOCKS"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 122
-#: rc.cpp:901
+#: rc.cpp:889
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3735,19 +3728,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 125
-#: rc.cpp:909
+#: rc.cpp:897
 msgid "Use a SOCKS proxy server:"
 msgstr "ប្រើ​ម៉ាស៊ីន​បម្រើ​ប្រូកស៊ី SOCKS ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 134
-#: rc.cpp:912
+#: rc.cpp:900
 msgid "Server:"
 msgstr "ម៉ាស៊ីនបម្រើ ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 144
-#: rc.cpp:915
+#: rc.cpp:903
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3769,7 +3762,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 161
-#: rc.cpp:924
+#: rc.cpp:912
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3791,13 +3784,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 168
-#: rc.cpp:930
+#: rc.cpp:918
 msgid "Version:"
 msgstr "កំណែ ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 183
-#: rc.cpp:933
+#: rc.cpp:921
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3821,7 +3814,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 186
-#: rc.cpp:939
+#: rc.cpp:927
 msgid "Username and password required"
 msgstr "ឈ្មោះ​អ្នកប្រើ និង​ពាក្យ​សម្ងាត់​ដែល​ទាមទារ"
 
@@ -3833,13 +3826,13 @@ msgstr "ឈ្មោះ​អ្នកប្រើ និង​ពាក្យ�
 #. i18n: file ./ktorrent/proxypref.ui line 197
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 193
-#: rc.cpp:942 rc.cpp:1392
+#: rc.cpp:930 rc.cpp:1380
 msgid "Username:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 207
-#: rc.cpp:945
+#: rc.cpp:933
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3867,13 +3860,13 @@ msgstr ""
 #. i18n: file ./ktorrent/proxypref.ui line 214
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 210
-#: rc.cpp:951 rc.cpp:1398
+#: rc.cpp:939 rc.cpp:1386
 msgid "Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/proxypref.ui line 224
-#: rc.cpp:954
+#: rc.cpp:942
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3895,7 +3888,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/pastedlgbase.ui line 13
-#: rc.cpp:960
+#: rc.cpp:948
 msgid "Open an URL"
 msgstr "បើក URL"
 
@@ -3911,19 +3904,19 @@ msgstr "បើក URL"
 #. i18n: file ./plugins/infowidget/trackerview.ui line 34
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 140
-#: rc.cpp:963 rc.cpp:1442 rc.cpp:2298
+#: rc.cpp:951 rc.cpp:1430 rc.cpp:2286
 msgid "URL:"
 msgstr "URL ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 16
-#: rc.cpp:966
+#: rc.cpp:954
 msgid "Ports && Limits"
 msgstr "ច្រក និង​ដែន​កំណត់"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 34
-#: rc.cpp:972
+#: rc.cpp:960
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3960,13 +3953,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 50
-#: rc.cpp:980
+#: rc.cpp:968
 msgid "UDP tracker port:"
 msgstr "ច្រក​កម្មវិធី​តាមដាន​​ UDP ៖​"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 62
-#: rc.cpp:983
+#: rc.cpp:971
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4002,37 +3995,37 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 85
-#: rc.cpp:994
+#: rc.cpp:982
 msgid "The maximum number of connections allowed per torrent."
 msgstr "ចំនួន​ការ​តភ្ជាប់​​អតិបរមា​ដែល​បាន​អនុញ្ញាត​ក្នុង​មួយ torrent ។"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 105
-#: rc.cpp:1003
+#: rc.cpp:991
 msgid "The global connection limit for all torrents combined."
 msgstr "ដែន​កំណត់​ការតភ្ជាប់​សកល​សម្រាប់ torrent ដែល​បាន​បន្សំ​ចូលគ្នា​ទាំងអស់ ។"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 125
-#: rc.cpp:1012
+#: rc.cpp:1000
 msgid "The maximum download speed in KB/s."
 msgstr "ល្បឿន​ទាញក្នុង​អតិបរមា​គិត​ជា គ.ប./វិ. ។"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 148
-#: rc.cpp:1024
+#: rc.cpp:1012
 msgid "The maximum upload speed in KB/s"
 msgstr "ល្បឿន​ផ្ទុកឡើង​អតិបរមា គិត​ជា​ គ.ប./វិ."
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 175
-#: rc.cpp:1036
+#: rc.cpp:1024
 msgid "DSCP value for IP packets:"
 msgstr "តម្លៃ DSCP សម្រាប់​កញ្ចប់ IP ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 185
-#: rc.cpp:1039
+#: rc.cpp:1027
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4055,13 +4048,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 195
-#: rc.cpp:1045
+#: rc.cpp:1033
 msgid "Maximum number of connection setups:"
 msgstr "ចំនួន​ការ​រៀបចំ​ការ​តភ្ជាប់​អតិបរមា ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 207
-#: rc.cpp:1048
+#: rc.cpp:1036
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4096,13 +4089,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 227
-#: rc.cpp:1056
+#: rc.cpp:1044
 msgid "Network interface:"
 msgstr "ចំណុច​ប្រទាក់​បណ្ដាញ ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 245
-#: rc.cpp:1059
+#: rc.cpp:1047
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4138,7 +4131,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/networkpref.ui line 288
-#: rc.cpp:1067
+#: rc.cpp:1055
 msgid ""
 "Let KTorrent calculate the recommended settings based upon the bandwidth you "
 "have available."
@@ -4146,13 +4139,13 @@ msgstr "អនុញ្ញាត​ឲ្យ KTorrent គណនា​ការ�
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 16
-#: rc.cpp:1073
+#: rc.cpp:1061
 msgid "Data Checking"
 msgstr "ការ​ពិនិត្យ​ទិន្នន័យ​"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 22
-#: rc.cpp:1076
+#: rc.cpp:1064
 msgid ""
 "During uploading when a chunk is loaded into memory automatically recheck "
 "this chunk, to see if it still is OK."
@@ -4162,13 +4155,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 25
-#: rc.cpp:1079
+#: rc.cpp:1067
 msgid "Recheck chunks during uploading"
 msgstr "ពិនិត្យ​មើល​កំណាត់​ឡើងវិញ​នៅពេល​ផ្ទុកឡើង"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 34
-#: rc.cpp:1082
+#: rc.cpp:1070
 msgid ""
 "Because rechecking big chunks can take a lot of time, the recheck can be "
 "disabled when the chunks are bigger then a certain size."
@@ -4178,13 +4171,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 37
-#: rc.cpp:1085
+#: rc.cpp:1073
 msgid "Don't recheck when chunks are bigger then"
 msgstr "កុំ​ពិនិត្យ​ឡើងវិញ​នៅពេល​ដែល​កំណាត់​ធំជាង"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 44
-#: rc.cpp:1088
+#: rc.cpp:1076
 msgid "The maximum size a chunk can be for rechecking during uploading."
 msgstr "ទំហំ​អតិបរមា​ដែល​កំណាត់​អាច​ប្រើ​សម្រាប់​ពិនិត្យ​ឡើងវិញ​នៅពេល​ផ្ទុកឡើង ។"
 
@@ -4200,38 +4193,38 @@ msgstr "ទំហំ​អតិបរមា​ដែល​កំណាត់​
 #. i18n: file ./ktorrent/advancedpref.ui line 379
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 405
-#: rc.cpp:1091 rc.cpp:1224 rc.cpp:1236
+#: rc.cpp:1079 rc.cpp:1212 rc.cpp:1224
 msgid " KB"
 msgstr " គីឡូបៃ"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 67
-#: rc.cpp:1094
+#: rc.cpp:1082
 msgid ""
 "Automatically do a full data check when we find to many corrupted chunks."
 msgstr "ធ្វើការ​ពិនិត្យ​ទិន្នន័យ​ពេញលេញ នៅពេល​ដែល​យើង​​រក​កំណាត់​ដែល​ខូច​ច្រើន ។"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 70
-#: rc.cpp:1097
+#: rc.cpp:1085
 msgid "Do a full data check after "
 msgstr "ធ្វើការ​ពិនិត្យ​ទិន្នន័យ​ពេញលេញ​បន្ទាប់​ពី "
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 77
-#: rc.cpp:1100
+#: rc.cpp:1088
 msgid "The number of corrupted chunks before a full data check is done"
 msgstr "ចំនួន​កំណាត់​ដែល​ខូច មុន​ពេល​ធ្វើការ​ពិនិត្យ​ទិន្នន័យ​ពេញលេញ​រួច"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 93
-#: rc.cpp:1103
+#: rc.cpp:1091
 msgid "corrupted chunks"
 msgstr "កំណាត់​ខូច"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 118
-#: rc.cpp:1106
+#: rc.cpp:1094
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4253,25 +4246,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 121
-#: rc.cpp:1112
+#: rc.cpp:1100
 msgid "Check data when download is finished"
 msgstr "ពិនិត្យ​ទិន្នន័យ នៅពេល​ទាញយក​ចប់"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 131
-#: rc.cpp:1115
+#: rc.cpp:1103
 msgid "Performance"
 msgstr "ដំណើរការ"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 139
-#: rc.cpp:1118
+#: rc.cpp:1106
 msgid "GUI update interval:"
 msgstr "ចន្លោះពេល​ធ្វើ​ឲ្យ GUI ទាន់សម័យ ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 157
-#: rc.cpp:1121
+#: rc.cpp:1109
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4312,19 +4305,19 @@ msgstr ""
 #. i18n: file ./ktorrent/advancedpref.ui line 160
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 193
-#: rc.cpp:1129 rc.cpp:1145
+#: rc.cpp:1117 rc.cpp:1133
 msgid " ms"
 msgstr " មិ.វិ."
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 176
-#: rc.cpp:1132
+#: rc.cpp:1120
 msgid "Network sleep interval:"
 msgstr "ចន្លោះពេល​ដេក​របស់​បណ្ដាញ ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 190
-#: rc.cpp:1135
+#: rc.cpp:1123
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4378,13 +4371,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 227
-#: rc.cpp:1148
+#: rc.cpp:1136
 msgid "Disk Space"
 msgstr "ទំហំ​ថាស"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 233
-#: rc.cpp:1151
+#: rc.cpp:1139
 msgid ""
 "Whether or not diskspace should be reserved before starting to download a "
 "torrent."
@@ -4392,13 +4385,13 @@ msgstr "ថាតើ​គួរ​តែ​បម្រុង​ទុក​ទ
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 236
-#: rc.cpp:1154
+#: rc.cpp:1142
 msgid "Reserve disk space before starting a torrent"
 msgstr "បម្រុង​ទុក​ទំហំ​ថាស​មុនពេល​ចាប់ផ្ដើម torrent"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 243
-#: rc.cpp:1157
+#: rc.cpp:1145
 msgid ""
 "Instead of doing a quick reservation, do a full reservation. This is slower "
 "then the quick way, but avoids fragmentation on the disk."
@@ -4408,19 +4401,19 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 246
-#: rc.cpp:1160
+#: rc.cpp:1148
 msgid "Fully reserve disk space (avoids fragmentation)"
 msgstr "បម្រុង​ទំហំថាស​ពេញលេញ (ជៀសវាង​ការ​បែងចែក)"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 255
-#: rc.cpp:1163
+#: rc.cpp:1151
 msgid "Disk space reservation method:"
 msgstr "វិធីសាស្ដ្រ​បម្រុងទុក​ទំហំ​ថាស ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 275
-#: rc.cpp:1166
+#: rc.cpp:1154
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4469,25 +4462,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 279
-#: rc.cpp:1176
+#: rc.cpp:1164
 msgid "Basic"
 msgstr "មូល​ដ្ឋាន"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 284
-#: rc.cpp:1179
+#: rc.cpp:1167
 msgid "Filesystem Specific"
 msgstr "ប្រព័ន្ធ​ឯកសារ​ជាក់លាក់"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 318
-#: rc.cpp:1185
+#: rc.cpp:1173
 msgid "Time estimation algorithm:"
 msgstr "ក្បួនដោះស្រាយ​ប៉ាន់ស្មាន​ពេលវេលា ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 334
-#: rc.cpp:1188
+#: rc.cpp:1176
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4551,37 +4544,37 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 343
-#: rc.cpp:1203
+#: rc.cpp:1191
 msgid "Current speed"
 msgstr "ល្បឿន​បច្ចុប្បន្ន"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 348
-#: rc.cpp:1206
+#: rc.cpp:1194
 msgid "Average speed"
 msgstr "ល្បឿន​មធ្យម"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 353
-#: rc.cpp:1209
+#: rc.cpp:1197
 msgid "Window of X"
 msgstr "បង្អួច X"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 358
-#: rc.cpp:1212
+#: rc.cpp:1200
 msgid "Moving average"
 msgstr "មធ្យម​ផ្លាស់ទី"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 366
-#: rc.cpp:1215
+#: rc.cpp:1203
 msgid "Preview size for audio files:"
 msgstr "មើល​ទំហំ​ឯកសារ​អូឌីយ៉ូ​ជាមុន ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 376
-#: rc.cpp:1218
+#: rc.cpp:1206
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4604,13 +4597,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 392
-#: rc.cpp:1227
+#: rc.cpp:1215
 msgid "Preview size for video files:"
 msgstr "មើល​ទំហំ​ឯកសារ​វីដេអូ​ជាមុន ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktorrent/advancedpref.ui line 402
-#: rc.cpp:1230
+#: rc.cpp:1218
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4633,43 +4626,43 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 13
-#: rc.cpp:1239
+#: rc.cpp:1227
 msgid "UPnP Test Application"
 msgstr "កម្មវិធី​សាកល្បង UPnP"
 
 #. i18n: tag string
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 23
-#: rc.cpp:1242
+#: rc.cpp:1230
 msgid "Router:"
 msgstr "រ៉ោតទ័រ ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 39
-#: rc.cpp:1245
+#: rc.cpp:1233
 msgid "No routers found !"
 msgstr "រកមិនឃើញ​រ៉ោតទ័រ​ទេ !"
 
 #. i18n: tag string
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 48
-#: rc.cpp:1248
+#: rc.cpp:1236
 msgid "Find Routers"
 msgstr "រក​រ៉ោតទ័រ"
 
 #. i18n: tag string
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 88
-#: rc.cpp:1254
+#: rc.cpp:1242
 msgid "Protocol:"
 msgstr "ពិធីការ ៖"
 
 #. i18n: tag string
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 96
-#: rc.cpp:1257
+#: rc.cpp:1245
 msgid "UDP"
 msgstr "UDP"
 
 #. i18n: tag string
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 101
-#: rc.cpp:1260
+#: rc.cpp:1248
 msgid "TCP"
 msgstr "TCP"
 
@@ -4681,7 +4674,7 @@ msgstr "TCP"
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 124
 #. i18n: tag string
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 24
-#: rc.cpp:1263 rc.cpp:1281
+#: rc.cpp:1251 rc.cpp:1269
 msgid "Forward"
 msgstr "ទៅ​មុខ"
 
@@ -4693,73 +4686,73 @@ msgstr "ទៅ​មុខ"
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 131
 #. i18n: tag string
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 31
-#: rc.cpp:1266 rc.cpp:1284
+#: rc.cpp:1254 rc.cpp:1272
 msgid "Undo Forward"
 msgstr "មិនធ្វើ​ការ​ទៅមុខ​វិញ"
 
 #. i18n: tag string
 #. i18n: file ./ktupnptest/upnptestwidget.ui line 138
-#: rc.cpp:1269
+#: rc.cpp:1257
 msgid "Verbose mode"
 msgstr "របៀប​បរិយាយ"
 
 #. i18n: tag string
 #. i18n: file ./plasma/applet/appletconfig.ui line 13
-#: rc.cpp:1272
+#: rc.cpp:1260
 msgid "KTorrent Plasma Applet"
 msgstr "អាប់ភ្លេត Plasma KTorrent"
 
 #. i18n: tag string
 #. i18n: file ./plasma/applet/appletconfig.ui line 21
-#: rc.cpp:1275
+#: rc.cpp:1263
 msgid "Torrent to display:"
 msgstr "Torrent ត្រូវ​បង្ហាញ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 13
-#: rc.cpp:1278 plugins/upnp/upnpplugin.cpp:53
+#: rc.cpp:1266 plugins/upnp/upnpplugin.cpp:53
 msgid "UPnP"
 msgstr "UPnP"
 
 #. i18n: tag string
 #. i18n: file ./plugins/upnp/upnpwidget.ui line 51
-#: rc.cpp:1287
+#: rc.cpp:1275
 msgid "Rescan"
 msgstr "វិភាគ​ឡើង​វិញ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 16
-#: rc.cpp:1290
+#: rc.cpp:1278
 msgid "Folders to scan for torrents:"
 msgstr "ថត​ដែល​ត្រូវ​វិភាគ​រក torrent ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 30
-#: rc.cpp:1293
+#: rc.cpp:1281
 msgid "Add Folder"
 msgstr "បន្ថែម​ថត"
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 37
-#: rc.cpp:1296
+#: rc.cpp:1284
 msgid "Remove Folder"
 msgstr "យក​ថត​ចេញ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 67
-#: rc.cpp:1302
+#: rc.cpp:1290
 msgid "Open the torrents without asking any questions."
 msgstr "បើក torrent ដោយ​មិនបាច់​សួរ ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 70
-#: rc.cpp:1305
+#: rc.cpp:1293
 msgid "Open silently"
 msgstr "បើក​ស្ងាត់ៗ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 82
-#: rc.cpp:1308
+#: rc.cpp:1296
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4795,13 +4788,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 85
-#: rc.cpp:1316
+#: rc.cpp:1304
 msgid "Scan subfolders"
 msgstr "វិភាគ​ថត​រង"
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 97
-#: rc.cpp:1319
+#: rc.cpp:1307
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4836,13 +4829,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 100
-#: rc.cpp:1327
+#: rc.cpp:1315
 msgid "Remove torrent file after loading"
 msgstr "យក​ឯកសារ torrent ចេញ​បន្ទាប់​ពី​ផ្ទុក​រួច"
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 107
-#: rc.cpp:1330
+#: rc.cpp:1318
 msgid ""
 "When a torrent file is loaded, move it to a subdirectory named loaded. If "
 "the folder does not exist, it will be created."
@@ -4852,13 +4845,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 110
-#: rc.cpp:1333
+#: rc.cpp:1321
 msgid "Move torrent file to loaded directory"
 msgstr "ផ្លាស់ទី​ឯកសារ torrent ទៅ​ថត​ដែល​បាន​ផ្ទុក"
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 122
-#: rc.cpp:1336
+#: rc.cpp:1324
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4880,7 +4873,7 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/scanfolder/scanfolderprefpage.ui line 135
-#: rc.cpp:1345
+#: rc.cpp:1333
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4908,19 +4901,19 @@ msgstr ""
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 25
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 25
-#: rc.cpp:1351 rc.cpp:2277
+#: rc.cpp:1339 rc.cpp:2265
 msgid "Search Preferences"
 msgstr "ស្វែងរក​ចំណូល​ចិត្ត​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 49
-#: rc.cpp:1357
+#: rc.cpp:1345
 msgid "The port the webinterface listens on."
 msgstr "ច្រក​ដែល​ចំណុចប្រទាក់​បណ្ដាញ​ស្ដាប់ ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 76
-#: rc.cpp:1360
+#: rc.cpp:1348
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4958,61 +4951,61 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 79
-#: rc.cpp:1368
+#: rc.cpp:1356
 msgid "Forward port"
 msgstr "ច្រក​បញ្ជូន​បន្ត"
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 102
-#: rc.cpp:1371
+#: rc.cpp:1359
 msgid "Session TTL:"
 msgstr "សម័យ TTL ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 118
-#: rc.cpp:1374
+#: rc.cpp:1362
 msgid "How long a session is valid (in seconds)."
 msgstr "រយៈពេល​ដែល​សម័យ​មាន​ប្រសិទ្ធិភាព (គិត​ជា​វិនាទី) ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 121
-#: rc.cpp:1377
+#: rc.cpp:1365
 msgid " secs"
 msgstr " វិ."
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 144
-#: rc.cpp:1380
+#: rc.cpp:1368
 msgid "Select interface:"
 msgstr "ជ្រើស​ចំណុច​ប្រទាក់ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 154
-#: rc.cpp:1383
+#: rc.cpp:1371
 msgid "Which interface to use."
 msgstr "ចំណុច​ប្រទាក់​ដែល​ត្រូវ​ប្រើ ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 165
-#: rc.cpp:1386
+#: rc.cpp:1374
 msgid "Php executable path:"
 msgstr "ផ្លូវ​ប្រតិបត្តិ Php ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 175
-#: rc.cpp:1389
+#: rc.cpp:1377
 msgid "The path of the php executable."
 msgstr "ផ្លូវ​នៃ​ការ​ប្រតិបត្តិ php ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 203
-#: rc.cpp:1395
+#: rc.cpp:1383
 msgid "Username you need to use in the login page of the webinterface."
 msgstr "ឈ្មោះ​អ្នកប្រើ​ដែល​អ្នក​ត្រូវប្រើ​នៅ​ក្នុង​ទំព័រ​ចូល​របស់​ចំណុចប្រទាក់​បណ្ដាញ ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/webinterface/webinterfaceprefwidget.ui line 217
-#: rc.cpp:1401
+#: rc.cpp:1389
 msgid ""
 "The password for the webinterface login page. By default this is set to "
 "ktorrent."
@@ -5020,7 +5013,7 @@ msgstr "ពាក្យ​សម្ងាត់​សម្រាប់​ទំ
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/webseedstab.ui line 21
-#: rc.cpp:1404
+#: rc.cpp:1392
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -5056,13 +5049,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/webseedstab.ui line 28
-#: rc.cpp:1412
+#: rc.cpp:1400
 msgid "Add Webseed"
 msgstr "បន្ថែម Webseed"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/webseedstab.ui line 50
-#: rc.cpp:1415
+#: rc.cpp:1403
 msgid "Remove Webseed"
 msgstr "យក Webseed ចេញ"
 
@@ -5074,49 +5067,49 @@ msgstr "យក Webseed ចេញ"
 #. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 13
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 210
-#: rc.cpp:1418 rc.cpp:1565 plugins/infowidget/infowidgetplugin.cpp:235
+#: rc.cpp:1406 rc.cpp:1553 plugins/infowidget/infowidgetplugin.cpp:235
 msgid "Chunks"
 msgstr "កំណាត់"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 23
-#: rc.cpp:1421
+#: rc.cpp:1409
 msgid "Total:"
 msgstr "សរុប ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 59
-#: rc.cpp:1424
+#: rc.cpp:1412
 msgid "Currently downloading:"
 msgstr "ការ​ទាញយក​បច្ចុប្បន្ន​ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 95
-#: rc.cpp:1427
+#: rc.cpp:1415
 msgid "Downloaded:"
 msgstr "បាន​ទាញយក​ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 131
-#: rc.cpp:1430
+#: rc.cpp:1418
 msgid "Excluded:"
 msgstr "មិន​រួមបញ្ចូល ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 167
-#: rc.cpp:1433
+#: rc.cpp:1421
 msgid "Left:"
 msgstr "ឆ្វេង ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/chunkdownloadview.ui line 203
-#: rc.cpp:1436
+#: rc.cpp:1424
 msgid "Size:"
 msgstr "ទំហំ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 26
-#: rc.cpp:1439
+#: rc.cpp:1427
 msgid "Current Tracker"
 msgstr "កម្មវិធី​តាម​ដាន​បច្ចុប្បន្ន"
 
@@ -5128,13 +5121,13 @@ msgstr "កម្មវិធី​តាម​ដាន​បច្ចុប្
 #. i18n: file ./plugins/infowidget/trackerview.ui line 47
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 71
-#: rc.cpp:1445 rc.cpp:1451
+#: rc.cpp:1433 rc.cpp:1439
 msgid "KSqueezedTextLabel"
 msgstr "KSqueezedTextLabel"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 58
-#: rc.cpp:1448
+#: rc.cpp:1436
 msgid "Status:"
 msgstr "ស្ថាន​ភាព ៖"
 
@@ -5146,7 +5139,7 @@ msgstr "ស្ថាន​ភាព ៖"
 #. i18n: file ./plugins/infowidget/trackerview.ui line 84
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 111
-#: rc.cpp:1454 rc.cpp:1556
+#: rc.cpp:1442 rc.cpp:1544
 msgid "Seeders:"
 msgstr "កម្មវិធី​បណ្តុះ ៖"
 
@@ -5158,103 +5151,103 @@ msgstr "កម្មវិធី​បណ្តុះ ៖"
 #. i18n: file ./plugins/infowidget/trackerview.ui line 108
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 42
-#: rc.cpp:1457 rc.cpp:1547
+#: rc.cpp:1445 rc.cpp:1535
 msgid "Leechers:"
 msgstr "កម្មវិធី​ស្រូបយក​ ៖​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 132
-#: rc.cpp:1460
+#: rc.cpp:1448
 msgid "Times Downloaded:"
 msgstr "ពេល​វេលា​ដែល​បាន​ទាញយក ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 156
-#: rc.cpp:1463
+#: rc.cpp:1451
 msgid "Next Update In:"
 msgstr "ធ្វើ​ឲ្យ​ទាន់សម័យ​បន្ទាប់​នៅ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 195
-#: rc.cpp:1466
+#: rc.cpp:1454
 msgid "Update Tracker"
 msgstr "ធ្វើ​ឲ្យ​កម្មវិធី​តាមដាន​ទាន់សម័យ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 218
-#: rc.cpp:1469
+#: rc.cpp:1457
 msgid "Available Trackers"
 msgstr "កម្មវិធី​តាមដាន​ដែល​មាន"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 231
-#: rc.cpp:1472
+#: rc.cpp:1460
 msgid "Add Tracker"
 msgstr "បន្ថែម​កម្មវិធី​តាមដាន"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 243
-#: rc.cpp:1475
+#: rc.cpp:1463
 msgid "Remove Tracker"
 msgstr "យក​កម្មវិធី​តាម​ដាន​ចេញ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 250
-#: rc.cpp:1478
+#: rc.cpp:1466
 msgid "Change Tracker"
 msgstr "ផ្លាស់ប្ដូរ​កម្មវិធី​តាមដាន"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/trackerview.ui line 270
-#: rc.cpp:1481
+#: rc.cpp:1469
 msgid "Restore Defaults"
 msgstr "ស្ដារ​លំនាំ​ដើម​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 16
-#: rc.cpp:1484
+#: rc.cpp:1472
 msgid "Tabs"
 msgstr "ផ្ទាំង"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 22
-#: rc.cpp:1487
+#: rc.cpp:1475
 msgid "Whether or not to show the peers tab in the bottom of the window."
 msgstr "ថាតើ​ត្រូវបង្ហាញ​ផ្ទាំង​ម៉ាស៊ីន​ដូចគ្នា​នៅ​បាត​បង្អួច​ឬ​អត់ ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 25
-#: rc.cpp:1490
+#: rc.cpp:1478
 msgid "Show list of peers"
 msgstr "បង្ហាញ​បញ្ជី​ម៉ាស៊ីន​ដូចគ្នា​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 32
-#: rc.cpp:1493
+#: rc.cpp:1481
 msgid "Whether or not to show the chunks tab in the bottom of the window."
 msgstr "ថាតើ​ត្រូវបង្ហាញ​ផ្ទាំង​កំណត់​នៅ​បាត​បង្អួច​ឬ​អត់ ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 35
-#: rc.cpp:1496
+#: rc.cpp:1484
 msgid "Show list of chunks currently downloading"
 msgstr "បង្ហាញ​បញ្ជី​កំណាត់​ដែល​កំពុង​ទាញយក​បច្ចុប្បន្ន"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 42
-#: rc.cpp:1499
+#: rc.cpp:1487
 msgid "Whether or not to show the trackers tab in the bottom of the window."
 msgstr "ថាតើ​ត្រូវបង្ហាញ​ផ្ទាំង​កម្មវិធី​តាមដាន​នៅ​បាត​បង្អួច​ឬ​អត់ ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 45
-#: rc.cpp:1502
+#: rc.cpp:1490
 msgid "Show list of trackers"
 msgstr "បង្ហាញ​​បញ្ជី​កម្មវិធី​តាមដាន"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 55
-#: rc.cpp:1505
+#: rc.cpp:1493
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -5276,25 +5269,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 58
-#: rc.cpp:1511
+#: rc.cpp:1499
 msgid "Show list of webseeds"
 msgstr "បង្ហាញ​បញ្ជី webseed"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 68
-#: rc.cpp:1514
+#: rc.cpp:1502
 msgid "File Priority Colors"
 msgstr "ពណ៌​សម្រាប់​អាទិភាព​របស់​ឯកសារ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 74
-#: rc.cpp:1517
+#: rc.cpp:1505
 msgid "First priority:"
 msgstr "អាទិភាព​មុន​គេ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 84
-#: rc.cpp:1520
+#: rc.cpp:1508
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -5316,13 +5309,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 91
-#: rc.cpp:1526
+#: rc.cpp:1514
 msgid "Normal priority:"
 msgstr "អាទិភាព​ធម្មតា ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 101
-#: rc.cpp:1529
+#: rc.cpp:1517
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -5344,13 +5337,13 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 108
-#: rc.cpp:1535
+#: rc.cpp:1523
 msgid "Last priority:"
 msgstr "អាទិភាព​ចុងក្រោយ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/iwprefpage.ui line 118
-#: rc.cpp:1538
+#: rc.cpp:1526
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -5372,127 +5365,127 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 31
-#: rc.cpp:1544
+#: rc.cpp:1532
 msgid "Info"
 msgstr "ព័ត៌មាន"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 65
-#: rc.cpp:1550
+#: rc.cpp:1538
 msgid "Average down speed:"
 msgstr "ល្បឿន​ទាញយក​មធ្យម ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 88
-#: rc.cpp:1553
+#: rc.cpp:1541
 msgid "Tracker status:"
 msgstr "ស្ថានភាព​កម្មវិធី​តាមដាន​ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 134
-#: rc.cpp:1559
+#: rc.cpp:1547
 msgid "Average up speed:"
 msgstr "ល្បឿន​ផ្ទុកឡើង​មធ្យម ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 157
-#: rc.cpp:1562
+#: rc.cpp:1550
 msgid "Next update in:"
 msgstr "ភាព​ទាន់​សម័យ​បន្ទាប់​​នៅ​ក្នុង ៖​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 217
-#: rc.cpp:1568
+#: rc.cpp:1556
 msgid "Downloaded chunks:"
 msgstr "កំណាត់​ដែល​បាន​ទាញយក ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 240
-#: rc.cpp:1571
+#: rc.cpp:1559
 msgid "Available chunks:"
 msgstr "កំណត់​ដែល​មាន ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 302
-#: rc.cpp:1574
+#: rc.cpp:1562
 msgid "Sharing"
 msgstr "ការ​ចែក​រំលែក"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 311
-#: rc.cpp:1577
+#: rc.cpp:1565
 msgid "Share ratio:"
 msgstr "សមាមាត្រ​ចែក​រំលែក​ ៖​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 328
-#: rc.cpp:1580
+#: rc.cpp:1568
 msgid "Ratio limit:"
 msgstr "សមាមាត្រ​កំណត់ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/infowidget/statustab.ui line 354
-#: rc.cpp:1586
+#: rc.cpp:1574
 msgid "Time limit:"
 msgstr "ពេល​កំណត់ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/ipfilter/convertdialog.ui line 19
-#: rc.cpp:1595 plugins/ipfilter/convertthread.cpp:204
+#: rc.cpp:1583 plugins/ipfilter/convertthread.cpp:204
 msgid "Converting..."
 msgstr "កំពុង​​​បម្លែង..."
 
 #. i18n: tag string
 #. i18n: file ./plugins/ipfilter/convertdialog.ui line 28
-#: rc.cpp:1598
+#: rc.cpp:1586
 msgid "Converting block list to KTorrent format. This might take some time."
 msgstr "បម្លែង​បញ្ជី​ប្លុក​ទៅ​ទ្រង់ទ្រាយ KTorrent ។ វា​អាច​ចំណាយ​ពេល​បន្តិច ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/ipfilter/convertdialog.ui line 95
-#: rc.cpp:1601
+#: rc.cpp:1589
 msgid "C&ancel"
 msgstr "បោះបង់"
 
 #. i18n: tag string
 #. i18n: file ./plugins/ipfilter/ipblockingprefpage.ui line 13
-#: rc.cpp:1604
+#: rc.cpp:1592
 msgid "IPBlocking Preferences"
 msgstr "ចំណូលចិត្ត​ IPBlocking"
 
 #. i18n: tag string
 #. i18n: file ./plugins/ipfilter/ipblockingprefpage.ui line 38
-#: rc.cpp:1607
+#: rc.cpp:1595
 msgid "Select PeerGuardian filter file "
 msgstr "ជ្រើស​ឯកសារ​តម្រង PeerGuardian "
 
 #. i18n: tag string
 #. i18n: file ./plugins/ipfilter/ipblockingprefpage.ui line 44
-#: rc.cpp:1610
+#: rc.cpp:1598
 msgid "Use PeerGuardian filter"
 msgstr "ប្រើ​តម្រង PeerGuardian"
 
 #. i18n: tag string
 #. i18n: file ./plugins/ipfilter/ipblockingprefpage.ui line 56
-#: rc.cpp:1613
+#: rc.cpp:1601
 msgid "IP filter file:"
 msgstr "ឯកសារ​តម្រង​ IP ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/ipfilter/ipblockingprefpage.ui line 66
-#: rc.cpp:1616
+#: rc.cpp:1604
 msgid "http://www.bluetack.co.uk/modules.php?name=Downloads&d_op=getit&lid=8"
 msgstr "http://www.bluetack.co.uk/modules.php?name=Downloads&d_op=getit&lid=8"
 
 #. i18n: tag string
 #. i18n: file ./plugins/ipfilter/ipblockingprefpage.ui line 96
-#: rc.cpp:1619
+#: rc.cpp:1607
 msgid "Dow&nload/Convert"
 msgstr "ទាញយក/បម្លែង"
 
 #. i18n: tag string
 #. i18n: file ./plugins/ipfilter/ipblockingprefpage.ui line 106
-#: rc.cpp:1622
+#: rc.cpp:1610
 msgid ""
 "Download PeerGuardian filter from bluetack.co.uk or blocklist.org.\n"
 "NOTE: ZIP file from bluetack.co.uk is supported."
@@ -5516,13 +5509,13 @@ msgstr ""
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 504
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 140
-#: rc.cpp:1626 rc.cpp:1629 rc.cpp:1692 rc.cpp:1773
+#: rc.cpp:1614 rc.cpp:1617 rc.cpp:1680 rc.cpp:1761
 msgid "Connections"
 msgstr "ការ​ត​ភ្ជាប់"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Spd.ui line 13
-#: rc.cpp:1635 plugins/infowidget/webseedsmodel.cpp:125
+#: rc.cpp:1623 plugins/infowidget/webseedsmodel.cpp:125
 msgid "Speed"
 msgstr "ល្បឿន"
 
@@ -5542,7 +5535,7 @@ msgstr "ល្បឿន"
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 36
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 114
-#: rc.cpp:1638 rc.cpp:1650 rc.cpp:1653 rc.cpp:1770
+#: rc.cpp:1626 rc.cpp:1638 rc.cpp:1641 rc.cpp:1758
 #: plugins/search/htmlpart.cpp:166
 msgid "Download"
 msgstr "ទាញយក"
@@ -5559,7 +5552,7 @@ msgstr "ទាញយក"
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 164
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 166
-#: rc.cpp:1641 rc.cpp:1662 rc.cpp:1776
+#: rc.cpp:1629 rc.cpp:1650 rc.cpp:1764
 #: plugins/infowidget/infowidgetplugin.cpp:215
 msgid "Peers"
 msgstr "ម៉ាស៊ីន​ដូចគ្នា"
@@ -5580,7 +5573,7 @@ msgstr "ម៉ាស៊ីន​ដូចគ្នា"
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 373
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 192
-#: rc.cpp:1644 rc.cpp:1680 rc.cpp:1683 rc.cpp:1779
+#: rc.cpp:1632 rc.cpp:1668 rc.cpp:1671 rc.cpp:1767
 msgid "Upload"
 msgstr "ផ្ទុកឡើង"
 
@@ -5592,7 +5585,7 @@ msgstr "ផ្ទុកឡើង"
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 16
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/bwprefpage.ui line 16
-#: rc.cpp:1647 rc.cpp:2376
+#: rc.cpp:1635 rc.cpp:2364
 msgid "Colors"
 msgstr "ពណ៌"
 
@@ -5604,7 +5597,7 @@ msgstr "ពណ៌"
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 72
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 412
-#: rc.cpp:1656 rc.cpp:1686
+#: rc.cpp:1644 rc.cpp:1674
 msgid "Average"
 msgstr "មធ្យម"
 
@@ -5616,139 +5609,139 @@ msgstr "មធ្យម"
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 111
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 451
-#: rc.cpp:1659 rc.cpp:1689
+#: rc.cpp:1647 rc.cpp:1677
 msgid "Limit"
 msgstr "ដែន​កំណត់"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 172
-#: rc.cpp:1665
+#: rc.cpp:1653
 msgid "Average from leechers"
 msgstr "មធ្យម​ពី​កម្មវិធី​ស្រូបយក"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 207
-#: rc.cpp:1668
+#: rc.cpp:1656
 msgid "Average to leechers"
 msgstr "មធ្យម​ទៅ​កម្មវិធី​ស្រូបយក"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 242
-#: rc.cpp:1671
+#: rc.cpp:1659
 msgid "Average from seeds"
 msgstr "មធ្យម​ពី​ការ​បណ្ដុះ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 277
-#: rc.cpp:1674
+#: rc.cpp:1662
 msgid "From leechers"
 msgstr "ពី​កម្មវិធី​ស្រូបយក"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 312
-#: rc.cpp:1677
+#: rc.cpp:1665
 msgid "From seeds"
 msgstr "ពី​ការ​បណ្ដុះ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 512
-#: rc.cpp:1695
+#: rc.cpp:1683
 msgid "Leechers connected"
 msgstr "បាន​តភ្ជាប់​កម្មវិធី​ស្រូបយក"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 547
-#: rc.cpp:1698
+#: rc.cpp:1686
 msgid "Leechers in swarms"
 msgstr "កម្មវិធី​ស្រូបយក​ក្នុង swarm"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 582
-#: rc.cpp:1701
+#: rc.cpp:1689
 msgid "Seeds connected"
 msgstr "បាន​តភ្ជាប់​ទៅ​ការ​បណ្ដុះ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 617
-#: rc.cpp:1704
+#: rc.cpp:1692
 msgid "Seeds  in swarms"
 msgstr "ការ​បណ្ដុះ​នៅ​ក្នុង swarm"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 652
-#: rc.cpp:1707
+#: rc.cpp:1695
 msgid "Average leechers connected per torrent"
 msgstr "កម្មវិធី​ស្រូបយក​មធ្យម​ដែល​បាន​តភ្ជាប់​ក្នុង​មួយ torrent"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 687
-#: rc.cpp:1710
+#: rc.cpp:1698
 msgid "Average seeds connected per torrent"
 msgstr "ការ​បណ្ដុះ​មធ្យម​ដែល​បាន​តភ្ជាប់​ក្នុង​មួយ torrent"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 722
-#: rc.cpp:1713
+#: rc.cpp:1701
 msgid "Avg. leechers connected per running torr."
 msgstr "កម្មវិធី​ស្រូបយក​មធ្យម​ដែល​បាន​តភ្ជាប់​ក្នុង​ torrent ដែល​កំពុង​ដំណើរការ ។"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 757
-#: rc.cpp:1716
+#: rc.cpp:1704
 msgid "Avg. seeds connected per running torrent"
 msgstr "ការ​បណ្ដុះ​មធ្យម​ដែល​បាន​តភ្ជាប់​​ក្នុង torrent ដែល​កំពុង​ដំណើរការ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 805
-#: rc.cpp:1722
+#: rc.cpp:1710
 msgid "Nodes"
 msgstr "ថ្នាំង"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 844
-#: rc.cpp:1725
+#: rc.cpp:1713
 msgid "Tasks"
 msgstr "ភារកិច្ច"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 903
-#: rc.cpp:1728
+#: rc.cpp:1716
 msgid "Display"
 msgstr "បង្ហាញ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 909
-#: rc.cpp:1731
+#: rc.cpp:1719
 msgid "Use anti-aliasing"
 msgstr "ប្រើ​ការ​ប្រឆាំង​ឈ្មោះ​ក្លែងក្លាយ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 919
-#: rc.cpp:1734
+#: rc.cpp:1722
 msgid "Draw background grid"
 msgstr "គូ​ក្រឡាចត្រង្គ​ផ្ទៃ​ខាងក្រោយ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 931
-#: rc.cpp:1737
+#: rc.cpp:1725
 msgid "Widget type:"
 msgstr "ប្រភេទ​ធាតុ​ក្រាហ្វិក ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 939
-#: rc.cpp:1740
+#: rc.cpp:1728
 msgid "Native"
 msgstr "ដើម"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 944
-#: rc.cpp:1743
+#: rc.cpp:1731
 msgid "KDE"
 msgstr "KDE"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/DisplaySettings.ui line 952
-#: rc.cpp:1746
+#: rc.cpp:1734
 msgid "(plugin reload is needed after change)"
 msgstr "(ត្រូវ​ការ​ឲ្យ​ផ្ទុក​កម្មវិធី​ជំនួយ​បន្ទាប់​ពី​ផ្លាស់ប្ដូរ)"
 
@@ -5760,97 +5753,97 @@ msgstr "(ត្រូវ​ការ​ឲ្យ​ផ្ទុក​កម្�
 #. i18n: file ./plugins/stats/Settings.ui line 13
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 49
-#: rc.cpp:1749 rc.cpp:2328
+#: rc.cpp:1737 rc.cpp:2316
 msgid "Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 19
-#: rc.cpp:1752
+#: rc.cpp:1740
 msgid "Update"
 msgstr "ធ្វើ​ឲ្យ​ទាន់​សម័យ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 25
-#: rc.cpp:1755
+#: rc.cpp:1743
 msgid "Update charts every"
 msgstr "ធ្វើ​ឲ្យ​គំនូសតាង​ទាន់សម័យ​រៀងរាល់"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 50
-#: rc.cpp:1758
+#: rc.cpp:1746
 msgid "GUI updates"
 msgstr "ភាព​ទាន់សម័យ​របស់ GUI"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 69
-#: rc.cpp:1761
+#: rc.cpp:1749
 msgid "Gather data every"
 msgstr "ប្រមូល​ទិន្នន័យ​រៀងរាល់"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 95
-#: rc.cpp:1764
+#: rc.cpp:1752
 msgid "milliseconds"
 msgstr "មីល្លី​វិនាទី"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 108
-#: rc.cpp:1767
+#: rc.cpp:1755
 msgid "Measurements counts"
 msgstr "ចំនួន​ការ​វាស់"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 247
-#: rc.cpp:1785
+#: rc.cpp:1773
 msgid "Maximum"
 msgstr "អតិបរមា"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 255
-#: rc.cpp:1788
+#: rc.cpp:1776
 msgid "Maximum speed scale mode: "
 msgstr "របៀប​ធ្វើ​មាត្រដ្ឋាន​ល្បឿន​អតិបរមា ៖ "
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 272
-#: rc.cpp:1791
+#: rc.cpp:1779
 msgid "Top"
 msgstr "កំពូល"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 277
-#: rc.cpp:1794
+#: rc.cpp:1782
 msgid "Exact"
 msgstr "ពិត"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 290
-#: rc.cpp:1797
+#: rc.cpp:1785
 msgid "Peers connections"
 msgstr "ការ​តភ្ជាប់​ម៉ាស៊ីន​ដូចគ្នា"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 296
-#: rc.cpp:1800
+#: rc.cpp:1788
 msgid "Show seeds in swarms"
 msgstr "បង្ហាញ​ការ​បណ្ដុះ​នៅ​ក្នុង swarm"
 
 #. i18n: tag string
 #. i18n: file ./plugins/stats/Settings.ui line 303
-#: rc.cpp:1803
+#: rc.cpp:1791
 msgid "Show leechers in swarms"
 msgstr "បង្ហាញ​កម្មវិធី​ស្រូបយក​នៅ​ក្នុង swarm"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 18
-#: rc.cpp:1806
+#: rc.cpp:1794
 msgid "System"
 msgstr "ប្រព័ន្ធ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 26
-#: rc.cpp:1809
+#: rc.cpp:1797
 msgid "General:"
 msgstr "ទូទៅ ៖"
 
@@ -5914,9 +5907,9 @@ msgstr "ទូទៅ ៖"
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 690
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 738
-#: rc.cpp:1812 rc.cpp:1842 rc.cpp:1872 rc.cpp:1902 rc.cpp:1932 rc.cpp:1965
-#: rc.cpp:1995 rc.cpp:2025 rc.cpp:2055 rc.cpp:2085 rc.cpp:2115 rc.cpp:2145
-#: rc.cpp:2175 rc.cpp:2205 rc.cpp:2235
+#: rc.cpp:1800 rc.cpp:1830 rc.cpp:1860 rc.cpp:1890 rc.cpp:1920 rc.cpp:1953
+#: rc.cpp:1983 rc.cpp:2013 rc.cpp:2043 rc.cpp:2073 rc.cpp:2103 rc.cpp:2133
+#: rc.cpp:2163 rc.cpp:2193 rc.cpp:2223
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -6032,9 +6025,9 @@ msgstr ""
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 694
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 742
-#: rc.cpp:1824 rc.cpp:1854 rc.cpp:1884 rc.cpp:1914 rc.cpp:1944 rc.cpp:1977
-#: rc.cpp:2007 rc.cpp:2037 rc.cpp:2067 rc.cpp:2097 rc.cpp:2127 rc.cpp:2157
-#: rc.cpp:2187 rc.cpp:2217 rc.cpp:2247
+#: rc.cpp:1812 rc.cpp:1842 rc.cpp:1872 rc.cpp:1902 rc.cpp:1932 rc.cpp:1965
+#: rc.cpp:1995 rc.cpp:2025 rc.cpp:2055 rc.cpp:2085 rc.cpp:2115 rc.cpp:2145
+#: rc.cpp:2175 rc.cpp:2205 rc.cpp:2235
 msgid "All"
 msgstr "ទាំង​អស់"
 
@@ -6098,9 +6091,9 @@ msgstr "ទាំង​អស់"
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 699
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 747
-#: rc.cpp:1827 rc.cpp:1857 rc.cpp:1887 rc.cpp:1917 rc.cpp:1947 rc.cpp:1980
-#: rc.cpp:2010 rc.cpp:2040 rc.cpp:2070 rc.cpp:2100 rc.cpp:2130 rc.cpp:2160
-#: rc.cpp:2190 rc.cpp:2220 rc.cpp:2250
+#: rc.cpp:1815 rc.cpp:1845 rc.cpp:1875 rc.cpp:1905 rc.cpp:1935 rc.cpp:1968
+#: rc.cpp:1998 rc.cpp:2028 rc.cpp:2058 rc.cpp:2088 rc.cpp:2118 rc.cpp:2148
+#: rc.cpp:2178 rc.cpp:2208 rc.cpp:2238
 msgid "Debug"
 msgstr "បំបាត់​កំហុស"
 
@@ -6164,9 +6157,9 @@ msgstr "បំបាត់​កំហុស"
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 704
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 752
-#: rc.cpp:1830 rc.cpp:1860 rc.cpp:1890 rc.cpp:1920 rc.cpp:1950 rc.cpp:1983
-#: rc.cpp:2013 rc.cpp:2043 rc.cpp:2073 rc.cpp:2103 rc.cpp:2133 rc.cpp:2163
-#: rc.cpp:2193 rc.cpp:2223 rc.cpp:2253
+#: rc.cpp:1818 rc.cpp:1848 rc.cpp:1878 rc.cpp:1908 rc.cpp:1938 rc.cpp:1971
+#: rc.cpp:2001 rc.cpp:2031 rc.cpp:2061 rc.cpp:2091 rc.cpp:2121 rc.cpp:2151
+#: rc.cpp:2181 rc.cpp:2211 rc.cpp:2241
 msgid "Notice"
 msgstr "ចំណាំ"
 
@@ -6230,9 +6223,9 @@ msgstr "ចំណាំ"
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 709
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 757
-#: rc.cpp:1833 rc.cpp:1863 rc.cpp:1893 rc.cpp:1923 rc.cpp:1953 rc.cpp:1986
-#: rc.cpp:2016 rc.cpp:2046 rc.cpp:2076 rc.cpp:2106 rc.cpp:2136 rc.cpp:2166
-#: rc.cpp:2196 rc.cpp:2226 rc.cpp:2256
+#: rc.cpp:1821 rc.cpp:1851 rc.cpp:1881 rc.cpp:1911 rc.cpp:1941 rc.cpp:1974
+#: rc.cpp:2004 rc.cpp:2034 rc.cpp:2064 rc.cpp:2094 rc.cpp:2124 rc.cpp:2154
+#: rc.cpp:2184 rc.cpp:2214 rc.cpp:2244
 msgid "Important"
 msgstr "សំខាន់"
 
@@ -6296,99 +6289,99 @@ msgstr "សំខាន់"
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 714
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 762
-#: rc.cpp:1836 rc.cpp:1866 rc.cpp:1896 rc.cpp:1926 rc.cpp:1956 rc.cpp:1989
-#: rc.cpp:2019 rc.cpp:2049 rc.cpp:2079 rc.cpp:2109 rc.cpp:2139 rc.cpp:2169
-#: rc.cpp:2199 rc.cpp:2229 rc.cpp:2259
+#: rc.cpp:1824 rc.cpp:1854 rc.cpp:1884 rc.cpp:1914 rc.cpp:1944 rc.cpp:1977
+#: rc.cpp:2007 rc.cpp:2037 rc.cpp:2067 rc.cpp:2097 rc.cpp:2127 rc.cpp:2157
+#: rc.cpp:2187 rc.cpp:2217 rc.cpp:2247
 msgid "None"
 msgstr "គ្មាន"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 74
-#: rc.cpp:1839
+#: rc.cpp:1827
 msgid "Connections:"
 msgstr "ការ​តភ្ជាប់ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 122
-#: rc.cpp:1869
+#: rc.cpp:1857
 msgid "Tracker:"
 msgstr "កម្មវិធី​តាមដាន​ ៖​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 170
-#: rc.cpp:1899
+#: rc.cpp:1887
 msgid "DHT:"
 msgstr "DHT ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 218
-#: rc.cpp:1929
+#: rc.cpp:1917
 msgid "Disk I/O:"
 msgstr "ថាស I/O ៖​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 290
-#: rc.cpp:1962
+#: rc.cpp:1950
 msgid "BitFinder:"
 msgstr "BitFinder ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 338
-#: rc.cpp:1992
+#: rc.cpp:1980
 msgid "Infowidget:"
 msgstr "ធាតុក្រាហ្វិក​ព័ត៌មាន ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 386
-#: rc.cpp:2022
+#: rc.cpp:2010
 msgid "IP Filter:"
 msgstr "តម្រង​ IP ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 434
-#: rc.cpp:2052
+#: rc.cpp:2040
 msgid "Mediaplayer:"
 msgstr "កម្មវិធី​ចាក់​មេឌៀ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 482
-#: rc.cpp:2082
+#: rc.cpp:2070
 msgid "Scanfolder:"
 msgstr "វិភាគ​ថត ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 530
-#: rc.cpp:2112
+#: rc.cpp:2100
 msgid "Scheduler:"
 msgstr "កម្មវិធី​កំណត់​ពេល​ ៖​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 578
-#: rc.cpp:2142
+#: rc.cpp:2130
 msgid "Search:"
 msgstr "ស្វែងរក ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 626
-#: rc.cpp:2172
+#: rc.cpp:2160
 msgid "UPnP:"
 msgstr "UPnP ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 674
-#: rc.cpp:2202
+#: rc.cpp:2190
 msgid "Webinterface:"
 msgstr "ចំណុច​ប្រទាក់​បណ្ដាញ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 722
-#: rc.cpp:2232
+#: rc.cpp:2220
 msgid "Zeroconf:"
 msgstr "Zeroconf ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 781
-#: rc.cpp:2265
+#: rc.cpp:2253
 msgid ""
 "Whether or not to use rich text or just plain text, for the logging output "
 "shown in the logviewer."
@@ -6398,145 +6391,145 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file ./plugins/logviewer/logprefwidget.ui line 784
-#: rc.cpp:2268
+#: rc.cpp:2256
 msgid "Use rich text for logging output"
 msgstr "ប្រើ​អត្ថបទ​សំបូរបែប​សម្រាប់​ចុះកំណត់ហេតុ​លទ្ធផល"
 
 #. i18n: tag text
 #. i18n: file ./plugins/mediaplayer/ktmediaplayerpluginui.rc line 3
-#: rc.cpp:2271
+#: rc.cpp:2259
 msgid "Media Player Menu"
 msgstr "ម៉ឺនុយ​កម្មវិធី​ចាក់​មេឌៀ"
 
 #. i18n: tag text
 #. i18n: file ./plugins/mediaplayer/ktmediaplayerpluginui.rc line 11
-#: rc.cpp:2274
+#: rc.cpp:2262
 msgid "Media Player Toolbar"
 msgstr "របារ​ឧបករណ៍​កម្មវិធី​ចាក់​មេឌៀ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 33
-#: rc.cpp:2280
+#: rc.cpp:2268
 msgid "Clear Search History"
 msgstr "ជម្រះ​ប្រវត្តិ​ស្វែងរក"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 55
-#: rc.cpp:2283
+#: rc.cpp:2271
 msgid "Open searches in external browser"
 msgstr "បើក​ការ​ស្វែងរក​នៅ​ក្នុង​កម្មវិធី​រុករក​ខាងក្រៅ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 62
-#: rc.cpp:2286
+#: rc.cpp:2274
 msgid "Use default browser"
 msgstr "ប្រើ​កម្មវិធី​រុករក​លំនាំដើម"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 74
-#: rc.cpp:2289
+#: rc.cpp:2277
 msgid "Custom browser path:"
 msgstr "ផ្លូវ​កម្មវិធី​រុករក​ផ្ទាល់ខ្លួន ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 105
-#: rc.cpp:2292
+#: rc.cpp:2280
 msgid "Search Engines"
 msgstr "ម៉ាស៊ីន​ស្វែងរក"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 123
-#: rc.cpp:2295
+#: rc.cpp:2283
 msgid "Search engine name:"
 msgstr "ឈ្មោះ​ម៉ាស៊ីន​ស្វែងរក​ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 159
-#: rc.cpp:2301
+#: rc.cpp:2289
 msgid "&Add"
 msgstr "បន្ថែម"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 184
-#: rc.cpp:2304
+#: rc.cpp:2292
 msgid "Engine"
 msgstr "ម៉ាស៊ីន"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 189
-#: rc.cpp:2307 plugins/infowidget/webseedsmodel.cpp:124
+#: rc.cpp:2295 plugins/infowidget/webseedsmodel.cpp:124
 msgid "URL"
 msgstr "URL"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 199
-#: rc.cpp:2310
+#: rc.cpp:2298
 msgid "&Remove"
 msgstr "យក​ចេញ​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 206
-#: rc.cpp:2313
+#: rc.cpp:2301
 msgid "R&emove All"
 msgstr "យក​ចេញ​ទាំងអស់"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 229
-#: rc.cpp:2316
+#: rc.cpp:2304
 msgid "Add Defau&lt"
 msgstr "បន្ថែម​លំនាំ​ដើម"
 
 #. i18n: tag string
 #. i18n: file ./plugins/search/searchpref.ui line 236
-#: rc.cpp:2319
+#: rc.cpp:2307
 msgid "Update From Internet"
 msgstr "ធ្វើ​ឲ្យ​ទាន់សម័យ​ពី​អ៊ីនធឺណិត"
 
 #. i18n: tag text
 #. i18n: file ./plugins/search/ktsearchpluginui.rc line 3
-#: rc.cpp:2322
+#: rc.cpp:2310
 msgid "Search Toolbar"
 msgstr "របារ​ឧបករណ៍​ស្វែងរក"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 13
-#: rc.cpp:2325
+#: rc.cpp:2313
 msgid "Filter"
 msgstr "តម្រង"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 77
-#: rc.cpp:2334
+#: rc.cpp:2322
 msgid "Type"
 msgstr "ប្រភេទ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 87
-#: rc.cpp:2337
+#: rc.cpp:2325
 msgid "Group"
 msgstr "ក្រុម"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 97
-#: rc.cpp:2340
+#: rc.cpp:2328
 msgid "Test String"
 msgstr "ខ្សែអក្សរ​សាកល្បង"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 130
-#: rc.cpp:2343
+#: rc.cpp:2331
 msgid "Expressions"
 msgstr "ឃ្លា"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 172
-#: rc.cpp:2346
+#: rc.cpp:2334
 msgid "Source List"
 msgstr "បញ្ជី​ប្រភព"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 195
-#: rc.cpp:2349
+#: rc.cpp:2337
 msgid "Source List Type"
 msgstr "ប្រភេទ​បញ្ជី​ប្រភព"
 
@@ -6548,67 +6541,67 @@ msgstr "ប្រភេទ​បញ្ជី​ប្រភព"
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 258
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 264
-#: rc.cpp:2352 rc.cpp:2355
+#: rc.cpp:2340 rc.cpp:2343
 msgid "MultiMatch"
 msgstr "ពហុ​ដំណូច"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 277
-#: rc.cpp:2358
+#: rc.cpp:2346
 msgid "Rerelease"
 msgstr "ចេញផ្សាយ​ឡើងវិញ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 290
-#: rc.cpp:2361
+#: rc.cpp:2349
 msgid "Rerelease Terms"
 msgstr "លក្ខខណ្ឌ​នៃការ​ចេញផ្សាយ​ឡើងវិញ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/filterdetails.ui line 325
-#: rc.cpp:2364
+#: rc.cpp:2352
 msgid "Matches"
 msgstr "ដំណូច"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/capturecheckerdetails.ui line 37
-#: rc.cpp:2367
+#: rc.cpp:2355
 msgid "Captures"
 msgstr "ការ​ចាប់យក"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/capturecheckerdetails.ui line 68
-#: rc.cpp:2370
+#: rc.cpp:2358
 msgid "Variables"
 msgstr "អថេរ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bitfinder/filter/capturecheckerdetails.ui line 99
-#: rc.cpp:2373
+#: rc.cpp:2361
 msgid "Mappings"
 msgstr "ការ​ផ្គូផ្គង"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/bwprefpage.ui line 22
-#: rc.cpp:2379
+#: rc.cpp:2367
 msgid "Schedule background color:"
 msgstr "ពណ៌​ផ្ទៃខាង​ក្រោយ​កាលវិភាគ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/bwprefpage.ui line 32
-#: rc.cpp:2382
+#: rc.cpp:2370
 msgid "Schedule line color:"
 msgstr "ពណ៌​បន្ទាត់​កាលវិភាគ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/bwprefpage.ui line 42
-#: rc.cpp:2385
+#: rc.cpp:2373
 msgid "Schedule Item color:"
 msgstr "ពណ៌​ធាតុ​កាលវិភាគ ៖​"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/bwprefpage.ui line 52
-#: rc.cpp:2388
+#: rc.cpp:2376
 msgid "Paused schedule item color:"
 msgstr "បានផ្អាក​ពណ៌​ធាតុ​កាលវិភាគ ៖"
 
@@ -6620,7 +6613,7 @@ msgstr "បានផ្អាក​ពណ៌​ធាតុ​កាលវិភ
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 13
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 13
-#: rc.cpp:2391 rc.cpp:2451
+#: rc.cpp:2379 rc.cpp:2439
 msgid "Add a new item to the schedule"
 msgstr "បន្ថែម​ធាតុ​ថ្មី​ទៅកាន់តារាង​កំណត់​ពេល"
 
@@ -6632,7 +6625,7 @@ msgstr "បន្ថែម​ធាតុ​ថ្មី​ទៅកាន់ត
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 22
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 24
-#: rc.cpp:2394 rc.cpp:2454
+#: rc.cpp:2382 rc.cpp:2442
 msgid "Time"
 msgstr "ពេល​វេលា​"
 
@@ -6644,7 +6637,7 @@ msgstr "ពេល​វេលា​"
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 30
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 32
-#: rc.cpp:2397 rc.cpp:2457
+#: rc.cpp:2385 rc.cpp:2445
 msgid "From:"
 msgstr "ពី ៖"
 
@@ -6664,7 +6657,7 @@ msgstr "ពី ៖"
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 39
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 53
-#: rc.cpp:2400 rc.cpp:2406 rc.cpp:2460 rc.cpp:2466
+#: rc.cpp:2388 rc.cpp:2394 rc.cpp:2448 rc.cpp:2454
 msgid "hh:mm"
 msgstr "hh:mm"
 
@@ -6676,13 +6669,13 @@ msgstr "hh:mm"
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 44
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 46
-#: rc.cpp:2403 rc.cpp:2463
+#: rc.cpp:2391 rc.cpp:2451
 msgid "To:"
 msgstr "ទៅ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 62
-#: rc.cpp:2409
+#: rc.cpp:2397
 msgid "Day:"
 msgstr "ថ្ងៃ ៖"
 
@@ -6694,7 +6687,7 @@ msgstr "ថ្ងៃ ៖"
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 77
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 117
-#: rc.cpp:2412 rc.cpp:2481
+#: rc.cpp:2400 rc.cpp:2469
 msgid "Limits"
 msgstr "ដែន​កំណត់"
 
@@ -6706,7 +6699,7 @@ msgstr "ដែន​កំណត់"
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 85
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 125
-#: rc.cpp:2415 rc.cpp:2484
+#: rc.cpp:2403 rc.cpp:2472
 msgid "Download limit:"
 msgstr "ដែន​កំណត់​ការ​ទាញយក ៖"
 
@@ -6718,7 +6711,7 @@ msgstr "ដែន​កំណត់​ការ​ទាញយក ៖"
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 105
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 145
-#: rc.cpp:2424 rc.cpp:2493
+#: rc.cpp:2412 rc.cpp:2481
 msgid "Upload limit:"
 msgstr "ដែន​កំណត់​ការ​ផ្ទុកឡើង ៖"
 
@@ -6730,7 +6723,7 @@ msgstr "ដែន​កំណត់​ការ​ផ្ទុកឡើង ៖"
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 127
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 167
-#: rc.cpp:2433 rc.cpp:2502
+#: rc.cpp:2421 rc.cpp:2490
 msgid "Stop all torrents"
 msgstr "បញ្ឈប់ torrents ទាំងអស់"
 
@@ -6742,31 +6735,31 @@ msgstr "បញ្ឈប់ torrents ទាំងអស់"
 #. i18n: file ./plugins/bwscheduler/edititemdlg.ui line 134
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 174
-#: rc.cpp:2436 rc.cpp:2505
+#: rc.cpp:2424 rc.cpp:2493
 msgid "Set connection limits"
 msgstr "កំណត់​ដែន​កំណត់​ការ​តភ្ជាប់"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 62
-#: rc.cpp:2469
+#: rc.cpp:2457
 msgid "Days:"
 msgstr "ថ្ងៃ ៖"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 76
-#: rc.cpp:2472
+#: rc.cpp:2460
 msgid "Entire Week"
 msgstr "ពេញ​សប្ដាហ៍"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 83
-#: rc.cpp:2475
+#: rc.cpp:2463
 msgid "Weekdays Only"
 msgstr "តែ​ថ្ងៃ​ធ្វើកា​រប៉ុណ្ណោះ"
 
 #. i18n: tag string
 #. i18n: file ./plugins/bwscheduler/additemdlg.ui line 90
-#: rc.cpp:2478
+#: rc.cpp:2466
 msgid "Weekend"
 msgstr "ចុងសប្ដាហ៍"
 
@@ -7940,3 +7933,16 @@ msgstr "URL កម្មវិធី​តាមដាន​មិន​ត្�
 #, kde-format
 msgid "Cannot open file : %1 : %2"
 msgstr "មិន​អាច​បើក​ឯកសារ​ ៖​ %1 ៖ %2"
+
+#~ msgid "Banned Peers"
+#~ msgstr "ម៉ាស៊ីន​ដូចគ្នា​ដែល​បាន​ហាម"
+
+#~ msgid "Ok"
+#~ msgstr "យល់ព្រម"
+
+#~ msgid ""
+#~ "Note: Blacklist applies to current session only. Use save/open to save "
+#~ "your entries or use IPFilter plugin (PeerGuardian)."
+#~ msgstr ""
+#~ "ចំណាំ ៖ បញ្ជី​អនុវត្ត​តែ​ចំពោះ​សម័យ​បច្ចុប្បន្ន​ប៉ុណ្ណោះ ។ ប្រើ​ រក្សាទុក/បើក​ ដើម្បី​រក្សាទុក​ធាតុ​របស់​អ្នក ឬ​"
+#~ "ប្រើ​កម្មវិធី​ជំនួយ IPFilter(PeerGuardian) ។"
