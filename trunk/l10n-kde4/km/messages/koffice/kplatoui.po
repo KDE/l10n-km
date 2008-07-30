@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-07-18 09:33+0200\n"
+"POT-Creation-Date: 2008-07-29 08:34+0200\n"
 "PO-Revision-Date: 2008-07-14 10:15+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -40,7 +40,7 @@ msgstr "លុប​គណនី​ដែល​បាន​ជ្រើស"
 #: kptaccountspanel.cpp:155 kptcalendarlistdialog.cpp:327
 #: kptpertresult.cpp:139 kptpertresult.cpp:557
 #: kptrequestresourcespanel.cpp:114 kptresourcedialog.cpp:152
-#: kpttaskcostpanel.cpp:40 kpttaskgeneralpanel.cpp:70 rc.cpp:509
+#: kpttaskcostpanel.cpp:40 kpttaskgeneralpanel.cpp:70 rc.cpp:536
 msgid "None"
 msgstr "គ្មាន"
 
@@ -64,7 +64,8 @@ msgstr "ខែ"
 #: kptganttview.cpp:598 kptpertresult.cpp:319 kptpertresult.cpp:471
 #: kptrelationeditor.cpp:171 kptresourceeditor.cpp:276
 #: kptscheduleeditor.cpp:275 kptscheduleeditor.cpp:494 kpttaskeditor.cpp:322
-#: kpttaskeditor.cpp:656 kpttaskstatusview.cpp:311 kpttaskstatusview.cpp:797
+#: kpttaskeditor.cpp:656 kpttaskstatusview.cpp:311 kpttaskstatusview.cpp:472
+#: kpttaskstatusview.cpp:887
 msgid "Configure..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ..."
 
@@ -251,13 +252,13 @@ msgstr "លុបភារកិច្ច"
 
 #. i18n: tag string
 #. i18n: file resourcespanelbase.ui line 99
-#: kptdocumentseditor.cpp:217 rc.cpp:770
+#: kptdocumentseditor.cpp:217 rc.cpp:797
 msgid "Edit..."
 msgstr "កែសម្រួល..."
 
 #. i18n: tag string
 #. i18n: file kptworkpackagecontrolpanel.ui line 120
-#: kptdocumentseditor.cpp:223 rc.cpp:667
+#: kptdocumentseditor.cpp:223 rc.cpp:694
 msgid "View..."
 msgstr "មើល..."
 
@@ -319,7 +320,7 @@ msgstr "បន្ថែម​ឯកសារ"
 #. i18n: file kptcalendarlistpanel.ui line 38
 #. i18n: tag string
 #. i18n: file kptresourceassignmentview.ui line 27
-#: kptdoublelistviewbase.cpp:359 rc.cpp:33 rc.cpp:261
+#: kptdoublelistviewbase.cpp:359 rc.cpp:33 rc.cpp:288
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -349,23 +350,33 @@ msgstr "កែសម្រួល​ចន្លោះ​ការងារ"
 msgid "Modify Work Interval"
 msgstr "កែប្រែ​ចន្លោះ​ការងារ"
 
-#: kptitemviewsettup.cpp:137 kptitemviewsettup.cpp:157
+#: kptitemviewsettup.cpp:137 kptitemviewsettup.cpp:175
 msgid "View Settings"
 msgstr "ការ​កំណត់​ទិដ្ឋភាព"
 
-#: kptitemviewsettup.cpp:166
+#: kptitemviewsettup.cpp:145
+msgid "Tree View"
+msgstr ""
+
+#: kptitemviewsettup.cpp:146
+#, fuzzy
+#| msgid "Main View Column Configuration"
+msgid "Tree View Column Configuration"
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​ជួរឈរ​ទិដ្ឋភាព​មេ"
+
+#: kptitemviewsettup.cpp:184
 msgid "Main View"
 msgstr "ទិដ្ឋភាព​មេ"
 
-#: kptitemviewsettup.cpp:167
+#: kptitemviewsettup.cpp:185
 msgid "Main View Column Configuration"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ជួរឈរ​ទិដ្ឋភាព​មេ"
 
-#: kptitemviewsettup.cpp:172
+#: kptitemviewsettup.cpp:190
 msgid "Auxiliary View"
 msgstr "ទិដ្ឋភាព​បន្ថែម"
 
-#: kptitemviewsettup.cpp:173
+#: kptitemviewsettup.cpp:191
 msgid "Auxiliary View Column Configuration"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ជួរឈរ​ទិដ្ឋភាព​បន្ថែម"
 
@@ -450,13 +461,13 @@ msgstr "មិន​អាច​ទាញយក​ឯកសារ​ពុម្
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 181
-#: kptresourceassignmentview.cpp:85 rc.cpp:724
+#: kptresourceassignmentview.cpp:85 rc.cpp:751
 msgid "Work"
 msgstr "ការងារ"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 186
-#: kptresourceassignmentview.cpp:89 rc.cpp:727
+#: kptresourceassignmentview.cpp:89 rc.cpp:754
 msgid "Material"
 msgstr "សម្ភារៈ"
 
@@ -497,7 +508,7 @@ msgstr "បន្ថែម​ក្រុម​ធនធាន..."
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 214
-#: kptresourceeditor.cpp:260 rc.cpp:565
+#: kptresourceeditor.cpp:260 rc.cpp:592
 msgid "Add Resource..."
 msgstr "បន្ថែម​ធនធាន..."
 
@@ -515,7 +526,7 @@ msgstr "កែប្រែធនធាន​"
 
 #. i18n: tag string
 #. i18n: file kpttaskresourcespanelbase.ui line 36
-#: kptresourcespanel.cpp:228 rc.cpp:583
+#: kptresourcespanel.cpp:228 rc.cpp:610
 msgid "Group"
 msgstr "ក្រុម"
 
@@ -588,7 +599,7 @@ msgstr "លេខ​សម្គាល់​ភារកិច្ច​ត្រ
 
 #. i18n: tag string
 #. i18n: file resourcespanelbase.ui line 69
-#: kpttaskappointmentsview.cpp:67 kptusedefforteditor.cpp:45 rc.cpp:764
+#: kpttaskappointmentsview.cpp:67 kptusedefforteditor.cpp:45 rc.cpp:791
 msgid "Resource"
 msgstr "ធនធាន"
 
@@ -664,6 +675,18 @@ msgstr "ទូទៅ"
 msgid "General Settings"
 msgstr "ការ​កំណត់​ទូទៅ"
 
+#: kpttaskstatusview.cpp:963 kpttaskstatusview.cpp:976
+#, fuzzy
+#| msgid "Clear"
+msgid "Chart"
+msgstr "ជម្រះ"
+
+#: kpttaskstatusview.cpp:963 kpttaskstatusview.cpp:977
+#, fuzzy
+#| msgid "Task Settings"
+msgid "Chart Settings"
+msgstr "ការ​កំណត់​ភារកិច្ច"
+
 #: kptusedefforteditor.cpp:49
 msgid "This Week"
 msgstr "សប្ដាហ៍​នេះ"
@@ -737,7 +760,7 @@ msgstr "មិន​បាន​កំណត់​ពេល"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 231
-#: kptworkpackageview.cpp:182 rc.cpp:452
+#: kptworkpackageview.cpp:182 rc.cpp:479
 msgid "Schedule:"
 msgstr "កាលវិភាគ ៖"
 
@@ -797,7 +820,7 @@ msgstr "គណនីលំនាំដើម ៖"
 #. i18n: file kptaccountspanelbase.ui line 72
 #. i18n: tag string
 #. i18n: file resourcespanelbase.ui line 51
-#: rc.cpp:9 rc.cpp:758
+#: rc.cpp:9 rc.cpp:785
 msgid "&New"
 msgstr "ថ្មី"
 
@@ -811,7 +834,7 @@ msgstr "គណនី​រង​ថ្មី"
 #. i18n: file kptaccountspanelbase.ui line 86
 #. i18n: tag string
 #. i18n: file resourcespanelbase.ui line 58
-#: rc.cpp:15 rc.cpp:761
+#: rc.cpp:15 rc.cpp:788
 msgid "&Remove"
 msgstr "យក​ចេញ​"
 
@@ -855,7 +878,7 @@ msgstr "ថ្មី"
 #. i18n: file kptwbsdefinitionpanelbase.ui line 170
 #. i18n: tag string
 #. i18n: file resourcespanelbase.ui line 109
-#: rc.cpp:39 rc.cpp:88 rc.cpp:109 rc.cpp:646 rc.cpp:773
+#: rc.cpp:39 rc.cpp:88 rc.cpp:109 rc.cpp:673 rc.cpp:800
 msgid "Remove"
 msgstr "យក​ចេញ"
 
@@ -899,7 +922,7 @@ msgstr "តម្លៃ​ពិតប្រាកដ​របស់​ការ
 #. i18n: file kptcpmwidget.ui line 36
 #. i18n: tag string
 #. i18n: file kptpertresult.ui line 45
-#: rc.cpp:66 rc.cpp:249
+#: rc.cpp:66 rc.cpp:276
 msgid "Project Schedule:"
 msgstr "កាលវិភាគ​គម្រោង ៖"
 
@@ -913,7 +936,7 @@ msgstr "កាលវិភាគ​គម្រោង ៖"
 #. i18n: file kptscheduleeditor.ui line 84
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 117
-#: rc.cpp:69 rc.cpp:252 rc.cpp:258 rc.cpp:279 rc.cpp:285
+#: rc.cpp:69 rc.cpp:279 rc.cpp:285 rc.cpp:306 rc.cpp:312
 msgid "..."
 msgstr "..."
 
@@ -937,7 +960,7 @@ msgstr "ជា"
 #. i18n: file kpttaskgeneralpanelbase.ui line 490
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 259
-#: rc.cpp:79 rc.cpp:522 rc.cpp:529 rc.cpp:740
+#: rc.cpp:79 rc.cpp:549 rc.cpp:556 rc.cpp:767
 #, no-c-format
 msgid "%"
 msgstr "%"
@@ -976,7 +999,7 @@ msgstr "ពី ៖"
 #. i18n: file kptintervaleditbase.ui line 50
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 372
-#: rc.cpp:103 rc.cpp:485
+#: rc.cpp:103 rc.cpp:512
 msgid "Length"
 msgstr "ប្រវែង"
 
@@ -1076,7 +1099,7 @@ msgstr "ជ្រើស​..."
 #. i18n: file kptsummarytaskgeneralpanelbase.ui line 56
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 44
-#: rc.cpp:163 rc.cpp:326 rc.cpp:404
+#: rc.cpp:163 rc.cpp:353 rc.cpp:431
 msgid "WBS:"
 msgstr "WBS ៖"
 
@@ -1119,7 +1142,7 @@ msgstr ""
 #. i18n: file kptmainprojectpanelbase.ui line 233
 #. i18n: tag string
 #. i18n: file kpttasknotespanelbase.ui line 22
-#: rc.cpp:180 rc.cpp:535
+#: rc.cpp:180 rc.cpp:562
 msgid "&Project notes and summary:"
 msgstr "កំណត់ចំណាំ និង​សេចក្ដី​សង្ខេប​របស់​គម្រោង ៖"
 
@@ -1245,7 +1268,7 @@ msgstr ""
 #. i18n: file kpttaskcostpanelbase.ui line 91
 #. i18n: tag string
 #. i18n: file kpttaskcostpanelbase.ui line 157
-#: rc.cpp:225 rc.cpp:378 rc.cpp:387
+#: rc.cpp:225 rc.cpp:405 rc.cpp:414
 msgid "Cost:"
 msgstr "តម្លៃ​ ៖"
 
@@ -1268,20 +1291,68 @@ msgid "SPI:"
 msgstr "SPI ៖"
 
 #. i18n: tag string
-#. i18n: file kptperteditor.ui line 37
+#. i18n: file kptperformancestatusviewsettingspanel.ui line 13
 #: rc.cpp:237
+#, fuzzy
+#| msgid "TaskStatusViewSettingsPanel"
+msgid "PerformanceStatusViewSettingsPanel"
+msgstr "បន្ទះ​កា​រកំណត់​ទិដ្ឋភាព​ស្ថានភាព​ភារកិច្ច"
+
+#. i18n: tag string
+#. i18n: file kptperformancestatusviewsettingspanel.ui line 22
+#. i18n: tag string
+#. i18n: file resourcedialogbase.ui line 307
+#: rc.cpp:240 rc.cpp:773
+msgid "Cost"
+msgstr "តម្លៃ​"
+
+#. i18n: tag string
+#. i18n: file kptperformancestatusviewsettingspanel.ui line 37
+#. i18n: tag string
+#. i18n: file kptperformancestatusviewsettingspanel.ui line 73
+#: rc.cpp:243 rc.cpp:255
+msgid "Show BCWS plot"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file kptperformancestatusviewsettingspanel.ui line 44
+#. i18n: tag string
+#. i18n: file kptperformancestatusviewsettingspanel.ui line 80
+#: rc.cpp:246 rc.cpp:258
+msgid "Show BCWP plot"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file kptperformancestatusviewsettingspanel.ui line 51
+#. i18n: tag string
+#. i18n: file kptperformancestatusviewsettingspanel.ui line 87
+#: rc.cpp:249 rc.cpp:261
+msgid "Show ACWP plot"
+msgstr ""
+
+#. i18n: tag string
+#. i18n: file kptperformancestatusviewsettingspanel.ui line 61
+#. i18n: tag string
+#. i18n: file kpttaskgeneralpanelbase.ui line 362
+#: rc.cpp:252 rc.cpp:506
+msgid "Effort"
+msgstr "កិច្ចប្រឹងប្រែង"
+
+#. i18n: tag string
+#. i18n: file kptperteditor.ui line 37
+#: rc.cpp:264
 msgid "Available tasks"
 msgstr "ភារកិច្ច​ដែល​មាន"
 
 #. i18n: tag string
 #. i18n: file kptperteditor.ui line 72
-#: rc.cpp:240
+#: rc.cpp:267
 msgid "Add required task"
 msgstr "បន្ថែម​ភារកិច្ច​ដែល​ត្រូវ​ការ"
 
 #. i18n: tag string
 #. i18n: file kptperteditor.ui line 88
-#: rc.cpp:243
+#: rc.cpp:270
 msgid "Remove required task"
 msgstr "យក​ភារកិច្ច​ដែល​ត្រូវ​កា​រចេញ"
 
@@ -1289,103 +1360,103 @@ msgstr "យក​ភារកិច្ច​ដែល​ត្រូវ​កា
 #. i18n: file kptperteditor.ui line 117
 #. i18n: tag string
 #. i18n: file kptresourceassignmentview.ui line 39
-#: rc.cpp:246 rc.cpp:267
+#: rc.cpp:273 rc.cpp:294
 msgid "Tasks"
 msgstr "ភារកិច្ច"
 
 #. i18n: tag string
 #. i18n: file kptpertresult.ui line 114
-#: rc.cpp:255
+#: rc.cpp:282
 msgid "Total Float:"
 msgstr "ការ​ចាប់ផ្ដើម​សរុប ៖"
 
 #. i18n: tag string
 #. i18n: file kptresourceassignmentview.ui line 32
-#: rc.cpp:264
+#: rc.cpp:291
 msgid "Type"
 msgstr "ប្រភេទ"
 
 #. i18n: tag string
 #. i18n: file kptresourceassignmentview.ui line 44
-#: rc.cpp:270
+#: rc.cpp:297
 msgid "Advance"
 msgstr "កម្រិត​ខ្ពស់"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 19
-#: rc.cpp:273
+#: rc.cpp:300
 msgid "Project"
 msgstr "គម្រោង"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 77
-#: rc.cpp:276
+#: rc.cpp:303
 msgid "Critical Path (Task Id) :"
 msgstr "ផ្លូវសំខាន់ (លេខ​សម្គាល់​ភារកិច្ច) ៖"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 110
-#: rc.cpp:282
+#: rc.cpp:309
 msgid "Project Float :"
 msgstr "ចាប់ផ្ដើម​គម្រោង ៖"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 131
-#: rc.cpp:288
+#: rc.cpp:315
 msgid "Task details "
 msgstr "សេចក្ដី​លម្អិត​ភារកិច្ច "
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 162
-#: rc.cpp:291
+#: rc.cpp:318
 msgid "Id"
 msgstr "លេខ​សម្គាល់"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 167
-#: rc.cpp:294
+#: rc.cpp:321
 msgid "Task"
 msgstr "ភារកិច្ច"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 172
-#: rc.cpp:297
+#: rc.cpp:324
 msgid "Early start date"
 msgstr "មុន​កាលបរិច្ឆេទ​ចាប់ផ្ដើម"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 177
-#: rc.cpp:300
+#: rc.cpp:327
 msgid "Early finish date"
 msgstr "មុន​កាលបរិច្ឆេទ​បញ្ចប់"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 182
-#: rc.cpp:303
+#: rc.cpp:330
 msgid "Late start date"
 msgstr "កាលបរិច្ឆេទ​ចាប់ផ្ដើម​បន្ទាប់"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 187
-#: rc.cpp:306
+#: rc.cpp:333
 msgid "Late finish date"
 msgstr "កាលបរិច្ឆេទ​បញ្ចប់​បន្ទាប់"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 192
-#: rc.cpp:309
+#: rc.cpp:336
 msgid "Float"
 msgstr "អណ្ដែត"
 
 #. i18n: tag string
 #. i18n: file kptscheduleeditor.ui line 197
-#: rc.cpp:312
+#: rc.cpp:339
 msgid "Free Margin"
 msgstr "រឹម​សេរី"
 
 #. i18n: tag string
 #. i18n: file kptsummarytaskgeneralpanelbase.ui line 20
-#: rc.cpp:315
+#: rc.cpp:342
 msgid "SummaryTaskGeneralPanelBase"
 msgstr "SummaryTaskGeneralPanelBase"
 
@@ -1393,7 +1464,7 @@ msgstr "SummaryTaskGeneralPanelBase"
 #. i18n: file kptsummarytaskgeneralpanelbase.ui line 48
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 36
-#: rc.cpp:318 rc.cpp:396
+#: rc.cpp:345 rc.cpp:423
 msgid "Work Breakdown Structure"
 msgstr "រចនាសម្ព័ន្ធ​ចែក​តាម​ការងារ"
 
@@ -1401,7 +1472,7 @@ msgstr "រចនាសម្ព័ន្ធ​ចែក​តាម​ការ
 #. i18n: file kptsummarytaskgeneralpanelbase.ui line 53
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 41
-#: rc.cpp:321 rc.cpp:399
+#: rc.cpp:348 rc.cpp:426
 msgid ""
 "The Work Breakdown Structure introduces numbering for all tasks in the "
 "project, according to the task structure.\n"
@@ -1423,7 +1494,7 @@ msgstr ""
 #. i18n: file kpttaskgeneralpanelbase.ui line 54
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 153
-#: rc.cpp:329 rc.cpp:349 rc.cpp:407 rc.cpp:427
+#: rc.cpp:356 rc.cpp:376 rc.cpp:434 rc.cpp:454
 msgid "The name of the Task."
 msgstr "ឈ្មោះ​ភារកិច្ច ។"
 
@@ -1433,7 +1504,7 @@ msgstr "ឈ្មោះ​ភារកិច្ច ។"
 #. i18n: file kpttaskgeneralpanelbase.ui line 57
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 41
-#: rc.cpp:332 rc.cpp:410 rc.cpp:703
+#: rc.cpp:359 rc.cpp:437 rc.cpp:730
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
@@ -1445,7 +1516,7 @@ msgstr "ឈ្មោះ ៖"
 #. i18n: file kpttaskgeneralpanelbase.ui line 72
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 170
-#: rc.cpp:335 rc.cpp:352 rc.cpp:413 rc.cpp:430
+#: rc.cpp:362 rc.cpp:379 rc.cpp:440 rc.cpp:457
 msgid ""
 "The person responsible for this task.\n"
 "\n"
@@ -1464,7 +1535,7 @@ msgstr ""
 #. i18n: file kpttaskgeneralpanelbase.ui line 75
 #. i18n: tag string
 #. i18n: file kptworkpackagecontrolpanel.ui line 58
-#: rc.cpp:340 rc.cpp:418 rc.cpp:655
+#: rc.cpp:367 rc.cpp:445 rc.cpp:682
 msgid "Responsible:"
 msgstr "អ្នក​ទទួល​ខុសត្រូវ ៖"
 
@@ -1472,7 +1543,7 @@ msgstr "អ្នក​ទទួល​ខុសត្រូវ ៖"
 #. i18n: file kptsummarytaskgeneralpanelbase.ui line 144
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 132
-#: rc.cpp:343 rc.cpp:421
+#: rc.cpp:370 rc.cpp:448
 msgid "This is the unique identifier for this task."
 msgstr "នេះ​គឺ​ជា​គ្រឿងសម្គាល់​តែ​មួយ​គត់ សម្រាប់​ភារកិច្ច​នេះ ។"
 
@@ -1480,7 +1551,7 @@ msgstr "នេះ​គឺ​ជា​គ្រឿងសម្គាល់​ត
 #. i18n: file kptsummarytaskgeneralpanelbase.ui line 147
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 135
-#: rc.cpp:346 rc.cpp:424
+#: rc.cpp:373 rc.cpp:451
 msgid "Task id:"
 msgstr "លេខសម្គាល់​ភារកិច្ច ៖"
 
@@ -1488,7 +1559,7 @@ msgstr "លេខសម្គាល់​ភារកិច្ច ៖"
 #. i18n: file kptsummarytaskgeneralpanelbase.ui line 207
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 177
-#: rc.cpp:357 rc.cpp:435
+#: rc.cpp:384 rc.cpp:462
 msgid "Insert a person from your address book"
 msgstr "បញ្ចូល​មនុស្ស​ពី​សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក"
 
@@ -1498,7 +1569,7 @@ msgstr "បញ្ចូល​មនុស្ស​ពី​សៀវភៅ​អ
 #. i18n: file kpttaskgeneralpanelbase.ui line 183
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 75
-#: rc.cpp:360 rc.cpp:441 rc.cpp:709
+#: rc.cpp:387 rc.cpp:468 rc.cpp:736
 msgid "Choose..."
 msgstr "ជ្រើស..."
 
@@ -1506,19 +1577,19 @@ msgstr "ជ្រើស..."
 #. i18n: file kptsummarytaskgeneralpanelbase.ui line 226
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 512
-#: rc.cpp:363 rc.cpp:532
+#: rc.cpp:390 rc.cpp:559
 msgid "Note:"
 msgstr "ចំណាំ ៖"
 
 #. i18n: tag string
 #. i18n: file kpttaskcostpanelbase.ui line 14
-#: rc.cpp:366
+#: rc.cpp:393
 msgid "TaskCostPanelBase"
 msgstr "TaskCostPanelBase"
 
 #. i18n: tag string
 #. i18n: file kpttaskcostpanelbase.ui line 26
-#: rc.cpp:369
+#: rc.cpp:396
 msgid "Running"
 msgstr "កំពុង​រត់"
 
@@ -1528,37 +1599,37 @@ msgstr "កំពុង​រត់"
 #. i18n: file kpttaskcostpanelbase.ui line 104
 #. i18n: tag string
 #. i18n: file kpttaskcostpanelbase.ui line 170
-#: rc.cpp:372 rc.cpp:381 rc.cpp:390
+#: rc.cpp:399 rc.cpp:408 rc.cpp:417
 msgid "Account:"
 msgstr "​គណនី ៖"
 
 #. i18n: tag string
 #. i18n: file kpttaskcostpanelbase.ui line 79
-#: rc.cpp:375
+#: rc.cpp:402
 msgid "Startup"
 msgstr "ចាប់ផ្ដើម"
 
 #. i18n: tag string
 #. i18n: file kpttaskcostpanelbase.ui line 145
-#: rc.cpp:384
+#: rc.cpp:411
 msgid "Shutdown"
 msgstr "បិទ"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 14
-#: rc.cpp:393
+#: rc.cpp:420
 msgid "TaskGeneralPanelBase"
 msgstr "TaskGeneralPanelBase"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 180
-#: rc.cpp:438
+#: rc.cpp:465
 msgid "Insert a person from your address book."
 msgstr "បញ្ចូល​មនុស្ស​ម្នាក់​ពី​សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក ។"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 201
-#: rc.cpp:444
+#: rc.cpp:471
 msgid ""
 "Scheduling Configuration. These settings affect the actual scheduling of the "
 "task.\n"
@@ -1577,67 +1648,61 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 204
-#: rc.cpp:449
+#: rc.cpp:476
 msgid "Timing"
 msgstr "កំណត់​ពេល"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 251
-#: rc.cpp:455
+#: rc.cpp:482
 msgid "As Soon as Possible"
 msgstr "ឆាប់ៗតាម​តែ​អាច​ធ្វើ​បាន"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 256
-#: rc.cpp:458
+#: rc.cpp:485
 msgid "As Late as Possible"
 msgstr "យឺតតាម​តែ​អាច​ធ្វើ​បាន"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 261
-#: rc.cpp:461
+#: rc.cpp:488
 msgid "Must Start On"
 msgstr "ត្រូវ​តែ​ចាប់​ផ្តើ​ម​នៅ​ថ្ងៃ"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 266
-#: rc.cpp:464
+#: rc.cpp:491
 msgid "Must Finish On"
 msgstr "ត្រូវ​តែ​បញ្ចប់​នៅ​ថ្ងៃ"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 271
-#: rc.cpp:467
+#: rc.cpp:494
 msgid "Start Not Earlier Than"
 msgstr "ចាប់ផ្ដើម​កុំ​ឲ្យ​មុន"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 276
-#: rc.cpp:470
+#: rc.cpp:497
 msgid "Finish Not Later Than"
 msgstr "បញ្ចប់​កុំ​ឲ្យ​ក្រោយ"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 281
-#: rc.cpp:473
+#: rc.cpp:500
 msgid "Fixed Interval"
 msgstr "ចន្លោះពេល​ថេរ"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 339
-#: rc.cpp:476
+#: rc.cpp:503
 msgid "Estimate:"
 msgstr "បាន់ស្មាន ៖"
 
 #. i18n: tag string
-#. i18n: file kpttaskgeneralpanelbase.ui line 362
-#: rc.cpp:479
-msgid "Effort"
-msgstr "កិច្ចប្រឹងប្រែង"
-
-#. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 367
-#: rc.cpp:482
+#: rc.cpp:509
 msgid "Duration"
 msgstr "ថិរវេលា"
 
@@ -1645,7 +1710,7 @@ msgstr "ថិរវេលា"
 #. i18n: file kpttaskgeneralpanelbase.ui line 389
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 417
-#: rc.cpp:488 rc.cpp:500
+#: rc.cpp:515 rc.cpp:527
 msgid ""
 "Risk controles the PERT distribution used when calculating the actual "
 "estimate for this task."
@@ -1657,7 +1722,7 @@ msgstr ""
 #. i18n: file kpttaskgeneralpanelbase.ui line 395
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 423
-#: rc.cpp:491 rc.cpp:503
+#: rc.cpp:518 rc.cpp:530
 msgid ""
 "<p>Risk controles the PERT distribution used when calculating the actual "
 "estimate for the task.\n"
@@ -1675,175 +1740,175 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 398
-#: rc.cpp:497
+#: rc.cpp:524
 msgid "Risk:"
 msgstr "ខូច ៖"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 435
-#: rc.cpp:512
+#: rc.cpp:539
 msgid "Low"
 msgstr "ទាប"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 440
-#: rc.cpp:515
+#: rc.cpp:542
 msgid "High"
 msgstr "ខ្ពស់"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 448
-#: rc.cpp:518
+#: rc.cpp:545
 msgid "Optimistic:"
 msgstr "សុទិដ្ឋិនិយម​ ៖"
 
 #. i18n: tag string
 #. i18n: file kpttaskgeneralpanelbase.ui line 474
-#: rc.cpp:525
+#: rc.cpp:552
 msgid "Pessimistic:"
 msgstr "ទុទិដ្ឋិនិយម​ ៖"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 14
-#: rc.cpp:538
+#: rc.cpp:565
 msgid "TaskProgressPanelBase"
 msgstr "TaskProgressPanelBase"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 36
-#: rc.cpp:541
+#: rc.cpp:568
 msgid "Completion"
 msgstr "បញ្ចប់"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 51
-#: rc.cpp:544
+#: rc.cpp:571
 msgid "Started:"
 msgstr "បានចាប់​ផ្តើម​ ៖"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 64
-#: rc.cpp:547
+#: rc.cpp:574
 msgid "Finished:"
 msgstr "បាន​បញ្ចប់:"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 113
-#: rc.cpp:550
+#: rc.cpp:577
 msgid "Add Entry"
 msgstr "បន្ថែម​ធាតុបញ្ចូល"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 120
-#: rc.cpp:553
+#: rc.cpp:580
 msgid "Remove Entry"
 msgstr "យក​ធាតុ​ចេញ"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 149
-#: rc.cpp:556
+#: rc.cpp:583
 msgid "Per Resource"
 msgstr "ក្នុង​មួយ​ធនធាន"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 184
-#: rc.cpp:559
+#: rc.cpp:586
 msgid "Prev"
 msgstr "មុន​"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 194
-#: rc.cpp:562
+#: rc.cpp:589
 msgid "Next"
 msgstr "បន្ទាប់"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 227
-#: rc.cpp:568
+#: rc.cpp:595
 msgid "Mode"
 msgstr "របៀប​"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 233
-#: rc.cpp:571
+#: rc.cpp:598
 msgid "Have used- and remaining effort calculated based on percent completed"
 msgstr "បាន​ប្រើ និង​កិច្ច​ប្រឹងប្រែង​ដែល​នៅ​សល់​បាន​គណនា​ដោយ​ផ្អែក​លើ​ចំនួន​បញ្ចប់​ជា​ភាគរយ"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 240
-#: rc.cpp:574
+#: rc.cpp:601
 msgid "Enter used effort per task"
 msgstr "បញ្ចូល​កិច្ច​ប្រឹងប្រែង​ដែល​បាន​ប្រើ​/ភារកិច្ច"
 
 #. i18n: tag string
 #. i18n: file kpttaskprogresspanelbase.ui line 247
-#: rc.cpp:577
+#: rc.cpp:604
 msgid "Enter used effort per resource"
 msgstr "បញ្ចូល​កិច្ច​ប្រឹងប្រែង​ដែល​បានប្រើ​/ធនធាន"
 
 #. i18n: tag string
 #. i18n: file kpttaskresourcespanelbase.ui line 14
-#: rc.cpp:580
+#: rc.cpp:607
 msgid "TaskResourcesPanelBase"
 msgstr "TaskResourcesPanelBase"
 
 #. i18n: tag string
 #. i18n: file kpttaskresourcespanelbase.ui line 41
-#: rc.cpp:586
+#: rc.cpp:613
 msgid "Max. Units"
 msgstr "ឯកតាអតិ."
 
 #. i18n: tag string
 #. i18n: file kpttaskresourcespanelbase.ui line 66
-#: rc.cpp:589
+#: rc.cpp:616
 msgid "Allocate resources:"
 msgstr "លៃតម្រូវ​ធនធាន ៖"
 
 #. i18n: tag string
 #. i18n: file kpttaskstatusviewsettingspanel.ui line 13
-#: rc.cpp:592
+#: rc.cpp:619
 msgid "TaskStatusViewSettingsPanel"
 msgstr "បន្ទះ​កា​រកំណត់​ទិដ្ឋភាព​ស្ថានភាព​ភារកិច្ច"
 
 #. i18n: tag string
 #. i18n: file kpttaskstatusviewsettingspanel.ui line 19
-#: rc.cpp:595
+#: rc.cpp:622
 msgid "Period Definition"
 msgstr "ការ​កំណត់​សម័យ"
 
 #. i18n: tag string
 #. i18n: file kpttaskstatusviewsettingspanel.ui line 28
-#: rc.cpp:598
+#: rc.cpp:625
 msgid "Period length (days):"
 msgstr "ប្រវែង​សម័យ (ថ្ងៃ) ៖"
 
 #. i18n: tag string
 #. i18n: file kpttaskstatusviewsettingspanel.ui line 51
-#: rc.cpp:601
+#: rc.cpp:628
 msgid "Use current date"
 msgstr "ប្រើ​កាលបរិច្ឆេទ​បច្ចុប្បន្ន"
 
 #. i18n: tag string
 #. i18n: file kpttaskstatusviewsettingspanel.ui line 71
-#: rc.cpp:604
+#: rc.cpp:631
 msgid "Use weekday:"
 msgstr "ប្រើ​ថ្ងៃ​នៃ​សប្ដាហ៍ ៖"
 
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 14
-#: rc.cpp:607
+#: rc.cpp:634
 msgid "WBSDefinitionPanelBase"
 msgstr "WBSDefinitionPanelBase"
 
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 23
-#: rc.cpp:610
+#: rc.cpp:637
 msgid "Define code for the project node"
 msgstr "កំណត់​កូដ​សម្រាប់​ថ្នាំង​គម្រោង"
 
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 35
-#: rc.cpp:613
+#: rc.cpp:640
 msgid "Project Code Definition"
 msgstr "កា​រកំណត់​កូដ​គម្រោង"
 
@@ -1851,7 +1916,7 @@ msgstr "កា​រកំណត់​កូដ​គម្រោង"
 #. i18n: file kptwbsdefinitionpanelbase.ui line 44
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 103
-#: rc.cpp:616 rc.cpp:628
+#: rc.cpp:643 rc.cpp:655
 msgid "Code:"
 msgstr "កូដ ៖"
 
@@ -1859,229 +1924,223 @@ msgstr "កូដ ៖"
 #. i18n: file kptwbsdefinitionpanelbase.ui line 57
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 120
-#: rc.cpp:619 rc.cpp:631
+#: rc.cpp:646 rc.cpp:658
 msgid "Separator:"
 msgstr "បន្ទាត់​ខណ្ឌ​ចែក ៖"
 
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 82
-#: rc.cpp:622
+#: rc.cpp:649
 msgid "Define default code"
 msgstr "កំណត់​កូដលំនាំដើម"
 
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 94
-#: rc.cpp:625
+#: rc.cpp:652
 msgid "Default Definition"
 msgstr "ការ​កំណត់​លំនាំដើម"
 
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 138
-#: rc.cpp:634
+#: rc.cpp:661
 msgid "Define separate codes for individual levels"
 msgstr "កំណត់​កូដ​បំបែក​សម្រាប់​កម្រិត​នីមួយៗ"
 
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 141
-#: rc.cpp:637
+#: rc.cpp:664
 msgid "Use Levels Definition"
 msgstr "ប្រើកា​រកំណត់​កម្រិត"
 
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 157
-#: rc.cpp:640
+#: rc.cpp:667
 msgid "Code"
 msgstr "កូដ"
 
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 162
-#: rc.cpp:643
+#: rc.cpp:670
 msgid "Separator"
 msgstr "បន្ទាត់​ខណ្ឌ​ចែក"
 
 #. i18n: tag string
 #. i18n: file kptwbsdefinitionpanelbase.ui line 177
-#: rc.cpp:649
+#: rc.cpp:676
 msgid "Add Level"
 msgstr "បន្ថែម​កម្រិត"
 
 #. i18n: tag string
 #. i18n: file kptworkpackagecontrolpanel.ui line 20
-#: rc.cpp:652
+#: rc.cpp:679
 msgid "WorkPackageControlPanel"
 msgstr "WorkPackageControlPanel"
 
 #. i18n: tag string
 #. i18n: file kptworkpackagecontrolpanel.ui line 86
-#: rc.cpp:658
+#: rc.cpp:685
 msgid "Transfer"
 msgstr "ផ្ទេរ"
 
 #. i18n: tag string
 #. i18n: file kptworkpackagecontrolpanel.ui line 93
-#: rc.cpp:661
+#: rc.cpp:688
 msgid "Mail To..."
 msgstr "ផ្ញើ​សំបុត្រ​ទៅ..."
 
 #. i18n: tag string
 #. i18n: file kptworkpackagecontrolpanel.ui line 113
-#: rc.cpp:664
+#: rc.cpp:691
 msgid "Load"
 msgstr "ផ្ទុក"
 
 #. i18n: tag string
 #. i18n: file relationpanel.ui line 29
-#: rc.cpp:670
+#: rc.cpp:697
 msgid "RelationPanel"
 msgstr "RelationPanel"
 
 #. i18n: tag string
 #. i18n: file relationpanel.ui line 64
-#: rc.cpp:673
+#: rc.cpp:700
 msgid "From"
 msgstr "ពី"
 
 #. i18n: tag string
 #. i18n: file relationpanel.ui line 85
-#: rc.cpp:676
+#: rc.cpp:703
 msgid "Task 1"
 msgstr "ភារកិច្ច​ទី ១"
 
 #. i18n: tag string
 #. i18n: file relationpanel.ui line 101
-#: rc.cpp:679
+#: rc.cpp:706
 msgid "To"
 msgstr "ទៅ"
 
 #. i18n: tag string
 #. i18n: file relationpanel.ui line 122
-#: rc.cpp:682
+#: rc.cpp:709
 msgid "Task 2"
 msgstr "ភារកិច្ច​ទី ២"
 
 #. i18n: tag string
 #. i18n: file relationpanel.ui line 140
-#: rc.cpp:685
+#: rc.cpp:712
 msgid "Relationship Type"
 msgstr "ប្រភេទ​ទំនាក់ទំនង​"
 
 #. i18n: tag string
 #. i18n: file relationpanel.ui line 161
-#: rc.cpp:688
+#: rc.cpp:715
 msgid "Finish-Start"
 msgstr "បញ្ចប់-ចាប់ផ្ដើម"
 
 #. i18n: tag string
 #. i18n: file relationpanel.ui line 168
-#: rc.cpp:691
+#: rc.cpp:718
 msgid "Finish-Finish"
 msgstr "បញ្ចប់​-បញ្ចប់​"
 
 #. i18n: tag string
 #. i18n: file relationpanel.ui line 175
-#: rc.cpp:694
+#: rc.cpp:721
 msgid "Start-Start"
 msgstr "ចាប់ផ្ដើម-ចាប់ផ្ដើម"
 
 #. i18n: tag string
 #. i18n: file relationpanel.ui line 187
-#: rc.cpp:697
+#: rc.cpp:724
 msgid "Lag:"
 msgstr "យឺត ៖"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 14
-#: rc.cpp:700
+#: rc.cpp:727
 msgid "ResourceDialogBase"
 msgstr "ResourceDialogBase"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 72
-#: rc.cpp:706
+#: rc.cpp:733
 msgid "Choose resource from addressbook"
 msgstr "ជ្រើស​ធនធាន​ពី​សៀវភៅ​អាសយដ្ឋាន"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 84
-#: rc.cpp:712
+#: rc.cpp:739
 msgid "Initials:"
 msgstr "ដំបូង ៖"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 124
-#: rc.cpp:715
+#: rc.cpp:742
 msgid "<p align=\"right\">Email:</p>"
 msgstr "<p align=\"right\">អ៊ីមែល ៖</p>"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 146
-#: rc.cpp:718
+#: rc.cpp:745
 msgid "Group:"
 msgstr "ក្រុម ៖"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 167
-#: rc.cpp:721
+#: rc.cpp:748
 msgid "Resource type:"
 msgstr "ប្រភេទ​ធនធាន​ ៖"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 194
-#: rc.cpp:730
+#: rc.cpp:757
 msgid "<p align=\"right\">Calendar:</p>"
 msgstr "<p align=\"right\">ប្រតិទិន ៖</p>"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 220
-#: rc.cpp:733
+#: rc.cpp:760
 msgid "Available:"
 msgstr "មាន ៖"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 240
-#: rc.cpp:736
+#: rc.cpp:763
 msgid "<p align=\"right\">From:</p>"
 msgstr "<p align=\"right\">ពី ៖</p>"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 285
-#: rc.cpp:743
+#: rc.cpp:770
 msgid "<p align=\"right\">Until:</p>"
 msgstr "<p align=\"right\">ដល់ ៖</p>"
 
 #. i18n: tag string
-#. i18n: file resourcedialogbase.ui line 307
-#: rc.cpp:746
-msgid "Cost"
-msgstr "តម្លៃ​"
-
-#. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 319
-#: rc.cpp:749
+#: rc.cpp:776
 msgid "Hourly rate:"
 msgstr "អត្រា​ក្នុង​មួយ​ម៉ោង ៖"
 
 #. i18n: tag string
 #. i18n: file resourcedialogbase.ui line 339
-#: rc.cpp:752
+#: rc.cpp:779
 msgid "Overtime rate:"
 msgstr "អត្រា​លើស​ម៉ោង ៖"
 
 #. i18n: tag string
 #. i18n: file resourcespanelbase.ui line 20
-#: rc.cpp:755
+#: rc.cpp:782
 msgid "ResourcesPanelBase"
 msgstr "ResourcesPanelBase"
 
 #. i18n: tag string
 #. i18n: file resourcespanelbase.ui line 92
-#: rc.cpp:767
+#: rc.cpp:794
 msgid "New..."
 msgstr "ថ្មី..."
 
 #. i18n: tag string
 #. i18n: file standardworktimedialogbase.ui line 14
-#: rc.cpp:776
+#: rc.cpp:803
 msgid "StandardWorktime"
 msgstr "រយៈពេល​ធ្វើការ​ខ្នាតគំរូ"
 
@@ -2089,7 +2148,7 @@ msgstr "រយៈពេល​ធ្វើការ​ខ្នាតគំរូ
 #. i18n: file standardworktimedialogbase.ui line 17
 #. i18n: tag string
 #. i18n: file standardworktimedialogbase.ui line 107
-#: rc.cpp:779 rc.cpp:791
+#: rc.cpp:806 rc.cpp:818
 msgid ""
 "These values are used when you estimate the effort needed to complete a task."
 msgstr ""
@@ -2097,25 +2156,25 @@ msgstr ""
 
 #. i18n: tag string
 #. i18n: file standardworktimedialogbase.ui line 35
-#: rc.cpp:782
+#: rc.cpp:809
 msgid "Hours per year:"
 msgstr "ចំនួនម៉ោងក្នុង​មួយ​ឆ្នាំ​ ៖"
 
 #. i18n: tag string
 #. i18n: file standardworktimedialogbase.ui line 58
-#: rc.cpp:785
+#: rc.cpp:812
 msgid "Hours per month:"
 msgstr "ចំនួនម៉ោង​ក្នុង​មួយ​ខែ​ ៖"
 
 #. i18n: tag string
 #. i18n: file standardworktimedialogbase.ui line 84
-#: rc.cpp:788
+#: rc.cpp:815
 msgid "Hours per week:"
 msgstr "ចំនួន​ម៉ោង​ក្នុង​មួយ​សប្ដាហ៍ ៖"
 
 #. i18n: tag string
 #. i18n: file standardworktimedialogbase.ui line 110
-#: rc.cpp:794
+#: rc.cpp:821
 msgid "Hours per day:"
 msgstr "ចំនួន​ម៉ោង​ក្នុង​មួយ​ថ្ងៃ ៖"
 
