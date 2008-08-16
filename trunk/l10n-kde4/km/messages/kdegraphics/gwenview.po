@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-08-15 08:27+0200\n"
+"POT-Creation-Date: 2008-08-16 09:50+0200\n"
 "PO-Revision-Date: 2008-08-11 15:23+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -62,21 +62,6 @@ msgstr "បង្កើត​ថត"
 #: app/fileoperations.cpp:211
 msgid "Enter the name of the folder to create:"
 msgstr "បញ្ចូល​ឈ្មោះ​ថត​ដែលត្រូវ​បង្កើត ៖"
-
-#: app/nepomukcontextmanageritem.cpp:102
-msgid "Edit"
-msgstr "កែសម្រួល"
-
-#: app/nepomukcontextmanageritem.cpp:124
-msgctxt "@action"
-msgid "Edit Tags"
-msgstr "កែសម្រួល​ស្លាក"
-
-#: app/nepomukcontextmanageritem.cpp:148
-#, fuzzy
-#| msgid "Meta Information"
-msgid "Semantic Information"
-msgstr "ព័ត៌មាន​មេតា"
 
 #: app/documentpanel.cpp:320
 msgid "Thumbnail Bar"
@@ -288,6 +273,21 @@ msgstr "ការ​ប្រតិបត្តិ​ឯកសារ"
 #: app/fileopscontextmanageritem.cpp:295
 msgid "Other Application..."
 msgstr "កម្មវិធី​ផ្សេង..."
+
+#: app/semanticinfocontextmanageritem.cpp:102
+msgid "Edit"
+msgstr "កែសម្រួល"
+
+#: app/semanticinfocontextmanageritem.cpp:124
+msgctxt "@action"
+msgid "Edit Tags"
+msgstr "កែសម្រួល​ស្លាក"
+
+#: app/semanticinfocontextmanageritem.cpp:148
+#, fuzzy
+#| msgid "Meta Information"
+msgid "Semantic Information"
+msgstr "ព័ត៌មាន​មេតា"
 
 #: app/savebar.cpp:83
 msgid ""
@@ -700,69 +700,87 @@ msgid "Next"
 msgstr "បន្ទាប់"
 
 #. i18n: tag string
-#. i18n: file ./app/startpage.ui line 31
+#. i18n: file ./app/semanticinfosidebaritem.ui line 19
 #: rc.cpp:47
+msgid "Rating:"
+msgstr "ការ​វាយតម្លៃ ៖"
+
+#. i18n: tag string
+#. i18n: file ./app/semanticinfosidebaritem.ui line 39
+#: rc.cpp:50
+msgid "Description:"
+msgstr "សេចក្ដី​ពិពណ៌នា ៖"
+
+#. i18n: tag string
+#. i18n: file ./app/semanticinfosidebaritem.ui line 55
+#: rc.cpp:53
+msgid "Tags:"
+msgstr "ស្លាក ៖"
+
+#. i18n: tag string
+#. i18n: file ./app/startpage.ui line 31
+#: rc.cpp:56
 msgid "Places"
 msgstr "ទីតាំង"
 
 #. i18n: tag string
 #. i18n: file ./app/startpage.ui line 38
-#: rc.cpp:50
+#: rc.cpp:59
 msgid "Recent Folders"
 msgstr "ថត​បច្ចុប្បន្ន"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 21
-#: rc.cpp:53
+#: rc.cpp:62
 msgid "<b>General</b>"
 msgstr "<b>ទូទៅ</b>"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 28
-#: rc.cpp:56
+#: rc.cpp:65
 msgid "&View background color:"
 msgstr "ពណ៌​ផ្ទៃខាងក្រោយ​ទិដ្ឋភាព ៖"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 86
-#: rc.cpp:59
+#: rc.cpp:68
 msgid "<b>Image View</b>"
 msgstr "<b>ទិដ្ឋភាព​រូបភាព</b>"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 93
-#: rc.cpp:62
+#: rc.cpp:71
 msgid "Transparent background:"
 msgstr "ផ្ទៃខាងក្រោយ​ថ្លា ៖"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 111
-#: rc.cpp:65
+#: rc.cpp:74
 msgid "&Check board"
 msgstr "ក្ដារ​ត្រួតពិនិត្យ"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 144
-#: rc.cpp:68
+#: rc.cpp:77
 msgid "&Solid color:"
 msgstr "ពណ៌​សុទ្ធ ៖"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 192
-#: rc.cpp:71
+#: rc.cpp:80
 msgid "Mouse wheel behavior:"
 msgstr "ឥរិយាបទ​កង់​កណ្ដុរ ៖"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 204
-#: rc.cpp:74
+#: rc.cpp:83
 msgctxt "@option:radio action on mouse wheel"
 msgid "Scroll"
 msgstr "រមូរ"
 
 #. i18n: tag string
 #. i18n: file ./app/configdialog.ui line 231
-#: rc.cpp:77
+#: rc.cpp:86
 msgctxt "@option:radio action on mouse wheel"
 msgid "Browse"
 msgstr "រកមើល"
@@ -771,61 +789,61 @@ msgstr "រកមើល"
 #. i18n: file ./app/configdialog.ui line 271
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 157
-#: rc.cpp:80 rc.cpp:137
+#: rc.cpp:89 rc.cpp:137
 msgid "Enlarge smaller images"
 msgstr "ពង្រីក​រូបភាពល​តូចៗ"
 
 #. i18n: tag text
 #. i18n: file ./app/gwenviewui.rc line 63
-#: rc.cpp:83
+#: rc.cpp:92
 msgid "&Plugins"
 msgstr "កម្មវិធី​ជំនួយ"
 
 #. i18n: tag text
 #. i18n: file ./app/gwenviewui.rc line 65
-#: rc.cpp:86
+#: rc.cpp:95
 msgid "Images"
 msgstr "រូបភាព"
 
 #. i18n: tag text
 #. i18n: file ./app/gwenviewui.rc line 69
-#: rc.cpp:89
+#: rc.cpp:98
 msgid "Effects"
 msgstr "បែបផែន"
 
 #. i18n: tag text
 #. i18n: file ./app/gwenviewui.rc line 73
-#: rc.cpp:92
+#: rc.cpp:101
 msgid "Tools"
 msgstr "ឧបករណ៍"
 
 #. i18n: tag text
 #. i18n: file ./app/gwenviewui.rc line 77
-#: rc.cpp:95
+#: rc.cpp:104
 msgid "Batch Processing"
 msgstr "ដំណើរការ​បាច់"
 
 #. i18n: tag text
 #. i18n: file ./app/gwenviewui.rc line 81
-#: rc.cpp:98
+#: rc.cpp:107
 msgid "Import"
 msgstr "នាំចូល"
 
 #. i18n: tag text
 #. i18n: file ./app/gwenviewui.rc line 85
-#: rc.cpp:101
+#: rc.cpp:110
 msgid "Export"
 msgstr "នាំចេញ"
 
 #. i18n: tag text
 #. i18n: file ./app/gwenviewui.rc line 89
-#: rc.cpp:104
+#: rc.cpp:113
 msgid "Collections"
 msgstr "សម្រាំង"
 
 #. i18n: tag text
 #. i18n: file ./app/gwenviewui.rc line 94
-#: rc.cpp:107
+#: rc.cpp:116
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
@@ -833,27 +851,9 @@ msgstr "ការ​កំណត់"
 #. i18n: file ./app/gwenviewui.rc line 107
 #. i18n: tag text
 #. i18n: file ./part/gvpart.rc line 14
-#: rc.cpp:110 rc.cpp:191
+#: rc.cpp:119 rc.cpp:191
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
-
-#. i18n: tag string
-#. i18n: file ./app/nepomuksidebaritem.ui line 19
-#: rc.cpp:113
-msgid "Rating:"
-msgstr "ការ​វាយតម្លៃ ៖"
-
-#. i18n: tag string
-#. i18n: file ./app/nepomuksidebaritem.ui line 39
-#: rc.cpp:116
-msgid "Description:"
-msgstr "សេចក្ដី​ពិពណ៌នា ៖"
-
-#. i18n: tag string
-#. i18n: file ./app/nepomuksidebaritem.ui line 55
-#: rc.cpp:119
-msgid "Tags:"
-msgstr "ស្លាក ៖"
 
 #. i18n: tag string
 #. i18n: file ./lib/print/printoptionspage.ui line 13
