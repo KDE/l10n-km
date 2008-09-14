@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kipiplugin_slideshow\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-09-10 10:22+0200\n"
+"POT-Creation-Date: 2008-09-14 09:51+0200\n"
 "PO-Revision-Date: 2008-07-31 11:52+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -17,6 +17,56 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: captiondialog.cpp:39
+msgid "Slideshow is part of KIPI-Plugins (http://www.kipi-plugins.org)"
+msgstr "បញ្ចាំង​ស្លាយ​គឺ​ជា​ផ្នែក​របស់​កម្មវិធីជំនួយ KIPI (http://www.kipi-plugins.org)"
+
+#: maindialog.cpp:124
+msgid ""
+"In this version of kipi-plugins, normal SlideShow's effects still under "
+"porting.<br><b>They will be available again in the future.</b>"
+msgstr ""
+
+#: maindialog.cpp:187
+#, kde-format
+msgid "%1 image [%2]"
+msgstr "%1 រូបភាព [%2]"
+
+#: maindialog.cpp:189
+#, kde-format
+msgid "%1 images [%2]"
+msgstr "%1 រូបភាព [%2]"
+
+#: maindialog.cpp:253
+#, kde-format
+msgid "Cannot access to file %1, please check the path is right."
+msgstr "មិនអាច​ចូល​ដំណើរការ​ទៅ​ឯកសារ %1 សូម​ពិនិត្យ​មើល​ថាតើ​ផ្លូវ​ត្រឹមត្រូវ​ឬទេ ។"
+
+#: maindialog.cpp:291
+#, kde-format
+msgid "Image no. %1"
+msgstr "ចំនួន​រូបភាព %1"
+
+#: maindialog.cpp:377
+msgid "You can only move up one image file at once."
+msgstr "អ្នក​អាច​ផ្លាស់ទីតែ​ឯកសារ​រូបភាព​មួយ​នៅ​ពេល​តែ​មួយ ។"
+
+#: maindialog.cpp:412
+msgid "You can only move down one image file at once."
+msgstr "អ្នក​អាច​ផ្លាស់ទី​តែ​ឯកសារ​រូបភាព​មួយ​នៅ​ពេល​តែ​មួយ ។"
+
+#: maindialog.cpp:450 slideshowkb.cpp:546
+msgid "Ken Burns"
+msgstr "ការ​ដុត​របស់ Ken"
+
+#: maindialog.cpp:472
+msgid "Delay between images (ms):"
+msgstr "ពន្យារ​រវាង​រូបភាព (មិ.វិ.) ៖"
+
+#: maindialog.cpp:480
+msgid "Delay between images  (s):"
+msgstr "ពន្យារ​រវាង​រូបភាព  (វិ.) ៖"
 
 #: plugin_slideshow.cpp:86
 msgid "Advanced SlideShow..."
@@ -30,57 +80,195 @@ msgstr "គ្មាន​រូបភាព​ត្រូវ​បង្ហា
 msgid "Sorry. OpenGL support not available on your system"
 msgstr "សូម​អភ័យ​ទោស ។ ការ​គាំទ្រ OpenGL មិន​អាច​ប្រើបាន​នៅ​ក្នុង​ប្រព័ន្ធ​របស់​អ្នក​ទេ"
 
-#. i18n: file: slideshowconfigbase.ui:13
-#. i18n: ectx: property (windowTitle), widget (QDialog, SlideShowConfigBase)
-#: rc.cpp:3 slideshowconfig.cpp:90
+#. i18n: file: advanceddialog.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, AdvancedDialog)
+#: rc.cpp:3
 #, fuzzy
-#| msgid "Slide Show"
-msgid "SlideShow"
-msgstr "បញ្ចាំង​ស្លាយ"
+#| msgid "Advanced"
+msgid "advancedDialog"
+msgstr "កម្រិត​ខ្ពស់"
 
-#. i18n: file: slideshowconfigbase.ui:37
-#. i18n: ectx: attribute (title), widget (QWidget, mainTab)
+#. i18n: file: advanceddialog.ui:27
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:6
-msgid "Main"
-msgstr "មេ"
+#, fuzzy
+#| msgid "Interface"
+msgid "&Interface"
+msgstr "ចំណុច​ប្រទាក់"
 
-#. i18n: file: slideshowconfigbase.ui:61
-#. i18n: ectx: property (text), widget (QRadioButton, m_allFilesButton)
+#. i18n: file: advanceddialog.ui:39
+#. i18n: ectx: property (text), widget (QCheckBox, m_useMillisecondsCheckBox)
 #: rc.cpp:9
+#, fuzzy
+#| msgid "Use milliseconds instead of seconds"
+msgid "Use &milliseconds instead of seconds"
+msgstr "ប្រើ​មិល្លីវិនាទីជំនួស​ឲ្យ​វិនាទី"
+
+#. i18n: file: advanceddialog.ui:55
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:12
+#, fuzzy
+#| msgid "Controls"
+msgid "&Controls"
+msgstr "វត្ថុ​​បញ្ជា​"
+
+#. i18n: file: advanceddialog.ui:67
+#. i18n: ectx: property (toolTip), widget (QCheckBox, m_enableMouseWheelCheckBox)
+#: rc.cpp:15
+#, fuzzy
+#| msgid "Enable mouse wheel (move between images)"
+msgid "Enable mouse wheel to move between slides."
+msgstr "បើក​កង់​កណ្ដុរ (ផ្លាស់ទី​រវាង​រូបភាព)"
+
+#. i18n: file: advanceddialog.ui:70
+#. i18n: ectx: property (text), widget (QCheckBox, m_enableMouseWheelCheckBox)
+#: rc.cpp:18
+#, fuzzy
+#| msgid "Enable mouse wheel (move between images)"
+msgid "Enable mouse &wheel "
+msgstr "បើក​កង់​កណ្ដុរ (ផ្លាស់ទី​រវាង​រូបភាព)"
+
+#. i18n: file: advanceddialog.ui:88
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:21
+#, fuzzy
+#| msgid "Ken Burns effect"
+msgid "&Ken Burns effect"
+msgstr "បែបផែន​ដុត​របស់ Ken"
+
+#. i18n: file: advanceddialog.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, m_kbDisableFadeCheckBox)
+#: rc.cpp:24
+#, fuzzy
+#| msgid "Disable fade-in / fade-out"
+msgid "Disable &fade-in / fade-out"
+msgstr "បិទលេចបន្តិចម្ដងៗ / លិច​បន្តិចម្ដង"
+
+#. i18n: file: advanceddialog.ui:113
+#. i18n: ectx: property (text), widget (QCheckBox, m_kbDisableCrossfadeCheckBox)
+#: rc.cpp:27
+#, fuzzy
+#| msgid "Disable crossfade"
+msgid "Disable &crossfade"
+msgstr "បិតកា​រលេច​កាត់"
+
+#. i18n: file: advanceddialog.ui:129
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: rc.cpp:30
+#, fuzzy
+#| msgid "Others"
+msgid "&Others"
+msgstr "ផ្សេងទៀត"
+
+#. i18n: file: advanceddialog.ui:143
+#. i18n: ectx: property (text), widget (QCheckBox, m_cacheCheckBox)
+#: rc.cpp:33
+#, fuzzy
+#| msgid "Enable cache"
+msgid "Enable &Cache"
+msgstr "បើក​ឃ្លាំង​សម្ងាត់"
+
+#. i18n: file: advanceddialog.ui:158
+#. i18n: ectx: property (text), widget (QLabel, m_cacheSizeLabel1)
+#: rc.cpp:36
+msgid "Cache size:"
+msgstr "ទំហំ​ឃ្លាំង​សម្ងាត់ ៖"
+
+#. i18n: file: advanceddialog.ui:200
+#. i18n: ectx: property (text), widget (QLabel, m_cacheSizeLabel2)
+#: rc.cpp:39
+msgid "images"
+msgstr "រូបភាព"
+
+#. i18n: file: advanceddialog.ui:215
+#. i18n: ectx: property (text), widget (QLabel, m_KBCacheLabel)
+#: rc.cpp:42
+msgid ""
+"<b>Notice</b>:\n"
+"Ken Burns effect doesn't use this cache mechanism."
+msgstr ""
+"<b>ចំណាំ</b> ៖\n"
+"បែបផែន​ដុត​របស់ Ken មិនប្រើ​យន្តការ​ឃ្លាំង​សម្ងាត់​នេះ​ទេ ។"
+
+#. i18n: file: captiondialog.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, CaptionDialog)
+#: rc.cpp:46
+msgid "captionDialog"
+msgstr ""
+
+#. i18n: file: captiondialog.ui:24
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:49
+msgid "Colors"
+msgstr "ពណ៌"
+
+#. i18n: file: captiondialog.ui:30
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:52
+msgid "Font color :"
+msgstr "ពណ៌​ពុម្ពអក្សរ ៖"
+
+#. i18n: file: captiondialog.ui:53
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:55
+msgid "Background color:"
+msgstr "ពណ៌​ផ្ទៃ​ខាង​ក្រោយ ៖"
+
+#. i18n: file: captiondialog.ui:76
+#. i18n: ectx: property (text), widget (QCheckBox, m_transparentBgCheckBox)
+#: rc.cpp:58
+msgid "Transparent background"
+msgstr ""
+
+#. i18n: file: captiondialog.ui:90
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:61
+#, fuzzy
+#| msgid "Line length (in characters) :"
+msgid "Line lenght (in characters)"
+msgstr "ប្រវែង​បន្ទាត់ (គិត​ជា​តួអក្សរ) ៖"
+
+#. i18n: file: maindialog.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, MainDialog)
+#: rc.cpp:64
+msgid "mainDialog"
+msgstr ""
+
+#. i18n: file: maindialog.ui:28
+#. i18n: ectx: property (text), widget (QRadioButton, m_allFilesButton)
+#: rc.cpp:67
 msgid "Show all images in current al&bum"
 msgstr "បង្ហាញ​រូបភាព​ទាំងអស់​នៅ​ក្នុង​អាល់ប៊ុម​បច្ចុប្បន្ន"
 
-#. i18n: file: slideshowconfigbase.ui:74
+#. i18n: file: maindialog.ui:35
 #. i18n: ectx: property (text), widget (QRadioButton, m_selectedFilesButton)
-#: rc.cpp:12
+#: rc.cpp:70
 msgid "Show onl&y selected images"
 msgstr "បង្ហាញ​តែ​រូបភាព​ដែល​បាន​ជ្រើស​ប៉ុណ្ណោះ"
 
-#. i18n: file: slideshowconfigbase.ui:81
+#. i18n: file: maindialog.ui:42
 #. i18n: ectx: property (text), widget (QRadioButton, m_customButton)
-#: rc.cpp:15
+#: rc.cpp:73
 #, fuzzy
 #| msgid "Custom"
 msgid "Cu&stom"
 msgstr "ផ្ទាល់ខ្លួន"
 
-#. i18n: file: slideshowconfigbase.ui:91
-#. i18n: ectx: property (whatsThis), widget (Q3GroupBox, m_ImagesFilesGroup)
-#. i18n: file: slideshowconfigbase.ui:276
-#. i18n: ectx: property (whatsThis), widget (QLabel, m_ImageLabel)
-#: rc.cpp:18 rc.cpp:59
+#. i18n: file: maindialog.ui:52
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, m_ImagesFilesGroup)
+#: rc.cpp:76
 msgid "Preview the currently selected image."
 msgstr "មើល​រូបភាព​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន​ជា​មុន ។"
 
-#. i18n: file: slideshowconfigbase.ui:94
-#. i18n: ectx: property (title), widget (Q3GroupBox, m_ImagesFilesGroup)
-#: rc.cpp:21
+#. i18n: file: maindialog.ui:55
+#. i18n: ectx: property (title), widget (QGroupBox, m_ImagesFilesGroup)
+#: rc.cpp:79
 msgid "Image Files in slideshow"
 msgstr "ឯកសារ​រូបភាព​នៅ​ក្នុងកា​របញ្ចាំង​ស្លាយ"
 
-#. i18n: file: slideshowconfigbase.ui:110
+#. i18n: file: maindialog.ui:69
 #. i18n: ectx: property (whatsThis), widget (KIPISlideShowPlugin::ListImageItems, m_ImagesFilesListBox)
-#: rc.cpp:24
+#: rc.cpp:82
 msgid ""
 "This is the list of the image files for your portfolio.\n"
 "The portfolio's first image is on the top; the last image is on the bottom.\n"
@@ -91,288 +279,128 @@ msgstr ""
 "រូបភាព​ដំបូង​របស់​អាល់ប៊ុម​នៅ​កំពូល រូបភាព​ចុងក្រោយ​នៅ​បាត ។\n"
 "ប្រសិន​បើ​អ្នក​ចង់​បន្ថែម​រូបភាព​មួយ​ចំនួន ចុច​លើ​ប៊ូតុង 'បន្ថែម' ឬ​ប្រើ​អូស និង​ទម្លាក់ ។"
 
-#. i18n: file: slideshowconfigbase.ui:123
-#. i18n: ectx: property (whatsThis), widget (QLabel, m_label6)
-#: rc.cpp:29
-msgid "Total number of images in the portfolio and sequence duration."
-msgstr "ចំនួន​រូបភាព​សរុប​នៅ​ក្នុង​ថិរវេលា​លំដាប់ និង​អាល់ប៊ុម ។"
-
-#. i18n: file: slideshowconfigbase.ui:126
-#. i18n: ectx: property (text), widget (QLabel, m_label6)
-#. i18n: file: slideshowconfigbase.ui:304
-#. i18n: ectx: property (text), widget (QLabel, m_label7)
-#: rc.cpp:32 rc.cpp:65 slideshow.cpp:267 slideshowgl.cpp:409
-msgid "None"
-msgstr "គ្មាន"
-
-#. i18n: file: slideshowconfigbase.ui:168
-#. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonAdd)
-#: rc.cpp:35
-msgid "Add some image files to the portfolio list."
-msgstr "បន្ថែម​​ឯកសារ​រូបភាព​មួយ​ចំនួន​ទៅ​បញ្ជីអាល់ប៊ុម ។"
-
-#. i18n: file: slideshowconfigbase.ui:171
-#. i18n: ectx: property (text), widget (QPushButton, m_ImagesFilesButtonAdd)
-#: rc.cpp:38
-msgid "&Add..."
-msgstr "បន្ថែម..."
-
-#. i18n: file: slideshowconfigbase.ui:190
-#. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonDelete)
-#: rc.cpp:41
-msgid "Remove some image files from the portfolio list."
-msgstr "យក​ឯកសារ​រូបភាព​មួយ​ចំនួន​ចេញ​ពី​បញ្ជី​អាល់ប៊ុម ។"
-
-#. i18n: file: slideshowconfigbase.ui:193
-#. i18n: ectx: property (text), widget (QPushButton, m_ImagesFilesButtonDelete)
-#: rc.cpp:44
-msgid "&Delete"
-msgstr "លុប"
-
-#. i18n: file: slideshowconfigbase.ui:212
+#. i18n: file: maindialog.ui:114
 #. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonUp)
-#: rc.cpp:47
+#: rc.cpp:87
 msgid "Moving the current image up on the portfolio list."
 msgstr "ផ្លាស់ទី​រូបភាព​នៅ​លើបច្ចុប្បន្ននៅ​លើ​​បញ្ជីអាល់ប៊ុម ។"
 
-#. i18n: file: slideshowconfigbase.ui:215
-#. i18n: ectx: property (text), widget (QPushButton, m_ImagesFilesButtonUp)
-#: rc.cpp:50
-msgid "Image &Up"
-msgstr "រូបភាពនៅ​លើ"
+#. i18n: file: maindialog.ui:136
+#. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonAdd)
+#: rc.cpp:90
+msgid "Add some image files to the portfolio list."
+msgstr "បន្ថែម​​ឯកសារ​រូបភាព​មួយ​ចំនួន​ទៅ​បញ្ជីអាល់ប៊ុម ។"
 
-#. i18n: file: slideshowconfigbase.ui:234
+#. i18n: file: maindialog.ui:158
+#. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonDelete)
+#: rc.cpp:93
+msgid "Remove some image files from the portfolio list."
+msgstr "យក​ឯកសារ​រូបភាព​មួយ​ចំនួន​ចេញ​ពី​បញ្ជី​អាល់ប៊ុម ។"
+
+#. i18n: file: maindialog.ui:180
 #. i18n: ectx: property (whatsThis), widget (QPushButton, m_ImagesFilesButtonDown)
-#: rc.cpp:53
+#: rc.cpp:96
 msgid "Moving the current image down on the portfolio list."
 msgstr "ផ្លាស់ទី​រូបភាព​នៅ​ក្រោម​បច្ចុប្បន្ន​នៅ​លើ​បញ្ជី​អាល់ប៊ុម ។"
 
-#. i18n: file: slideshowconfigbase.ui:237
-#. i18n: ectx: property (text), widget (QPushButton, m_ImagesFilesButtonDown)
-#: rc.cpp:56
-msgid "Image D&own"
-msgstr "រូបភាព​នៅ​ក្រោម"
+#. i18n: file: maindialog.ui:212
+#. i18n: ectx: property (whatsThis), widget (QLabel, m_label6)
+#: rc.cpp:99
+msgid "Total number of images in the portfolio and sequence duration."
+msgstr "ចំនួន​រូបភាព​សរុប​នៅ​ក្នុង​ថិរវេលា​លំដាប់ និង​អាល់ប៊ុម ។"
 
-#. i18n: file: slideshowconfigbase.ui:301
+#. i18n: file: maindialog.ui:215
+#. i18n: ectx: property (text), widget (QLabel, m_label6)
+#. i18n: file: maindialog.ui:234
+#. i18n: ectx: property (text), widget (QLabel, m_label7)
+#: rc.cpp:102 rc.cpp:108 slideshow.cpp:267 slideshowgl.cpp:409
+msgid "None"
+msgstr "គ្មាន"
+
+#. i18n: file: maindialog.ui:231
 #. i18n: ectx: property (whatsThis), widget (QLabel, m_label7)
-#: rc.cpp:62
+#: rc.cpp:105
 msgid "Currently selected image in the portfolio list."
 msgstr "រូបភាព​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន​នៅ​ក្នុង​បញ្ជី​អាល់ប៊ុម ។"
 
-#. i18n: file: slideshowconfigbase.ui:329
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox1)
-#: rc.cpp:68
-msgid "Video options"
-msgstr "ជម្រើស​វីដេអូ"
+#. i18n: file: maindialog.ui:249
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:111
+#, fuzzy
+#| msgid "Comments"
+msgid "Content"
+msgstr "សេចក្តី​អធិប្បាយ"
 
-#. i18n: file: slideshowconfigbase.ui:347
-#. i18n: ectx: property (text), widget (QCheckBox, m_openglCheckBox)
-#: rc.cpp:71
-msgid "Use Open&GL slideshow transitions"
-msgstr "ប្រើដំណើរ​ផ្លាស់ប្ដូរ​ការ​បញ្ចាំង​ស្លាយ​របស់ OpenGL"
-
-#. i18n: file: slideshowconfigbase.ui:382
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox1_2)
-#: rc.cpp:74
-msgid "Content options"
-msgstr "ជម្រើសមាតិកា"
-
-#. i18n: file: slideshowconfigbase.ui:402
+#. i18n: file: maindialog.ui:257
 #. i18n: ectx: property (text), widget (QCheckBox, m_printNameCheckBox)
-#: rc.cpp:77
+#: rc.cpp:114
 msgid "P&rint filename"
 msgstr "បោះពុម្ព​ឈ្មោះ​ឯកសារ"
 
-#. i18n: file: slideshowconfigbase.ui:418
+#. i18n: file: maindialog.ui:264
 #. i18n: ectx: property (text), widget (QCheckBox, m_printProgressCheckBox)
-#: rc.cpp:80
+#: rc.cpp:117
 msgid "Progress indicator"
 msgstr "ទ្រនិច​បង្ហាញ​វឌ្ឍនភាព"
 
-#. i18n: file: slideshowconfigbase.ui:439
+#. i18n: file: maindialog.ui:273
 #. i18n: ectx: property (text), widget (QCheckBox, m_printCommentsCheckBox)
-#: rc.cpp:83
+#: rc.cpp:120
 msgid "Pr&int captions "
 msgstr "បោះពុម្ព​ចំណង​ជើង"
 
-#. i18n: file: slideshowconfigbase.ui:476
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox3)
-#: rc.cpp:86
-msgid "Playback options"
+#. i18n: file: maindialog.ui:296
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:123
+#, fuzzy
+#| msgid "Slide"
+msgid "Video"
+msgstr "ស្លាយ"
+
+#. i18n: file: maindialog.ui:302
+#. i18n: ectx: property (text), widget (QCheckBox, m_openglCheckBox)
+#: rc.cpp:126
+msgid "Use Open&GL slideshow transitions"
+msgstr "ប្រើដំណើរ​ផ្លាស់ប្ដូរ​ការ​បញ្ចាំង​ស្លាយ​របស់ OpenGL"
+
+#. i18n: file: maindialog.ui:325
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:129
+#, fuzzy
+#| msgid "Playback options"
+msgid "Playback"
 msgstr "ជម្រើស​ចាក់​ម្ដង​ទៀត"
 
-#. i18n: file: slideshowconfigbase.ui:497
+#. i18n: file: maindialog.ui:331
 #. i18n: ectx: property (text), widget (QCheckBox, m_loopCheckBox)
-#: rc.cpp:89
+#: rc.cpp:132
 msgid "&Loop"
 msgstr "រង្វិល​ជុំ"
 
-#. i18n: file: slideshowconfigbase.ui:516
+#. i18n: file: maindialog.ui:338
 #. i18n: ectx: property (text), widget (QCheckBox, m_shuffleCheckBox)
-#: rc.cpp:92
+#: rc.cpp:135
 msgid "&Shuffle images"
 msgstr "ច្របល់​រូបភាព"
 
-#. i18n: file: slideshowconfigbase.ui:537
+#. i18n: file: maindialog.ui:347
 #. i18n: ectx: property (text), widget (QLabel, m_delayLabel)
-#: rc.cpp:95
+#: rc.cpp:138
 msgid "Delay between images (s):"
 msgstr "ពន្យារ​រវាង​រូបភាព ៖"
 
-#. i18n: file: slideshowconfigbase.ui:591
-#. i18n: ectx: property (text), widget (QLabel, label2)
-#: rc.cpp:98
+#. i18n: file: maindialog.ui:373
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:141
 msgid "Transition effect:"
 msgstr "បែបផែន​ដំណើរការ​ផ្លាស់ប្ដូរ ៖"
 
-#. i18n: file: slideshowconfigbase.ui:680
-#. i18n: ectx: attribute (title), widget (QWidget, commentsTab)
-#: rc.cpp:101
-msgid "Comments"
-msgstr "សេចក្តី​អធិប្បាយ"
-
-#. i18n: file: slideshowconfigbase.ui:698
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox7)
-#: rc.cpp:104
-msgid "Colors"
-msgstr "ពណ៌"
-
-#. i18n: file: slideshowconfigbase.ui:706
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:107
-msgid "Font color :"
-msgstr "ពណ៌​ពុម្ពអក្សរ ៖"
-
-#. i18n: file: slideshowconfigbase.ui:746
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:110
-msgid "Background color:"
-msgstr "ពណ៌​ផ្ទៃ​ខាង​ក្រោយ ៖"
-
-#. i18n: file: slideshowconfigbase.ui:791
-#. i18n: ectx: property (text), widget (QCheckBox, m_transparentBgCheckBox)
-#: rc.cpp:113
-msgid "Transparent background"
-msgstr ""
-
-#. i18n: file: slideshowconfigbase.ui:821
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:116
-msgid "Line length (in characters) :"
-msgstr "ប្រវែង​បន្ទាត់ (គិត​ជា​តួអក្សរ) ៖"
-
-#. i18n: file: slideshowconfigbase.ui:892
-#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
-#: rc.cpp:119
-msgid "Advanced"
-msgstr "កម្រិត​ខ្ពស់"
-
-#. i18n: file: slideshowconfigbase.ui:904
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox5)
-#: rc.cpp:122
-msgid "Interface"
-msgstr "ចំណុច​ប្រទាក់"
-
-#. i18n: file: slideshowconfigbase.ui:916
-#. i18n: ectx: property (text), widget (QCheckBox, m_useMillisecondsCheckBox)
-#: rc.cpp:125
-msgid "Use milliseconds instead of seconds"
-msgstr "ប្រើ​មិល្លីវិនាទីជំនួស​ឲ្យ​វិនាទី"
-
-#. i18n: file: slideshowconfigbase.ui:926
-#. i18n: ectx: property (title), widget (Q3GroupBox, groupBox8)
-#: rc.cpp:128
-msgid "Controls"
-msgstr "វត្ថុ​​បញ្ជា​"
-
-#. i18n: file: slideshowconfigbase.ui:938
-#. i18n: ectx: property (text), widget (QCheckBox, m_enableMouseWheelCheckBox)
-#: rc.cpp:131
-msgid "Enable mouse wheel (move between images)"
-msgstr "បើក​កង់​កណ្ដុរ (ផ្លាស់ទី​រវាង​រូបភាព)"
-
-#. i18n: file: slideshowconfigbase.ui:948
-#. i18n: ectx: property (title), widget (Q3ButtonGroup, buttonGroup3)
-#: rc.cpp:134
-msgid "Ken Burns effect"
-msgstr "បែបផែន​ដុត​របស់ Ken"
-
-#. i18n: file: slideshowconfigbase.ui:954
-#. i18n: ectx: property (text), widget (QCheckBox, m_kbDisableFadeCheckBox)
-#: rc.cpp:137
-msgid "Disable fade-in / fade-out"
-msgstr "បិទលេចបន្តិចម្ដងៗ / លិច​បន្តិចម្ដង"
-
-#. i18n: file: slideshowconfigbase.ui:961
-#. i18n: ectx: property (text), widget (QCheckBox, m_kbDisableCrossfadeCheckBox)
-#: rc.cpp:140
-msgid "Disable crossfade"
-msgstr "បិតកា​រលេច​កាត់"
-
-#. i18n: file: slideshowconfigbase.ui:974
-#. i18n: ectx: property (title), widget (Q3ButtonGroup, m_cacheButtonGroup)
-#: rc.cpp:143
-msgid "Others"
-msgstr "ផ្សេងទៀត"
-
-#. i18n: file: slideshowconfigbase.ui:980
-#. i18n: ectx: property (text), widget (QCheckBox, m_cacheCheckBox)
-#: rc.cpp:146
-msgid "Enable cache"
-msgstr "បើក​ឃ្លាំង​សម្ងាត់"
-
-#. i18n: file: slideshowconfigbase.ui:992
-#. i18n: ectx: property (text), widget (QLabel, m_cacheSizeLabel1)
-#: rc.cpp:149
-msgid "Cache size:"
-msgstr "ទំហំ​ឃ្លាំង​សម្ងាត់ ៖"
-
-#. i18n: file: slideshowconfigbase.ui:1028
-#. i18n: ectx: property (text), widget (QLabel, m_cacheSizeLabel2)
-#: rc.cpp:152
-msgid "images"
-msgstr "រូបភាព"
-
-#. i18n: file: slideshowconfigbase.ui:1044
-#. i18n: ectx: property (text), widget (QLabel, m_KBCacheLabel)
-#: rc.cpp:155
-msgid ""
-"<b>Notice</b>:\n"
-"Ken Burns effect doesn't use this cache mechanism."
-msgstr ""
-"<b>ចំណាំ</b> ៖\n"
-"បែបផែន​ដុត​របស់ Ken មិនប្រើ​យន្តការ​ឃ្លាំង​សម្ងាត់​នេះ​ទេ ។"
-
-#. i18n: file: slideshowconfigbase.ui:1085
-#. i18n: ectx: property (text), widget (QPushButton, m_helpButton)
-#: rc.cpp:159
-msgid "&Help"
-msgstr "ជំនួយ"
-
-#. i18n: file: slideshowconfigbase.ui:1088
-#. i18n: ectx: property (shortcut), widget (QPushButton, m_helpButton)
-#: rc.cpp:162
-msgid "F1"
-msgstr "F1"
-
-#. i18n: file: slideshowconfigbase.ui:1120
-#. i18n: ectx: property (text), widget (QPushButton, m_buttonStart)
-#: rc.cpp:165
-msgid "&Start Slideshow"
-msgstr "ចាប់ផ្ដើមបញ្ចាំង​ស្លាយ"
-
-#. i18n: file: slideshowconfigbase.ui:1139
-#. i18n: ectx: property (text), widget (QPushButton, m_buttonExit)
-#: rc.cpp:168
-msgid "&Exit"
-msgstr "ចេញ"
-
-#: rc.cpp:169
+#: rc.cpp:142
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "ខឹម សុខែម, លី សួស្ដី, អេង វណ្ណៈ, អោក ពិសិដ្ឋ​​"
 
-#: rc.cpp:170
+#: rc.cpp:143
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
@@ -439,15 +467,39 @@ msgstr "បាន​បញ្ចប់​ការ​បញ្ចាំង​ស
 msgid "Click To Exit..."
 msgstr "ចុច​ដើម្បី​ចាកចេញ..."
 
-#: slideshowconfig.cpp:94
-msgid "Slide Show"
+#: slideshowconfig.cpp:66 slideshowconfig.cpp:104
+#, fuzzy
+#| msgid "Slide Show"
+msgid "SlideShow"
 msgstr "បញ្ចាំង​ស្លាយ"
 
-#: slideshowconfig.cpp:97
+#: slideshowconfig.cpp:81
+#, fuzzy
+#| msgid "&Start Slideshow"
+msgid "Start SlideShow"
+msgstr "ចាប់ផ្ដើមបញ្ចាំង​ស្លាយ"
+
+#: slideshowconfig.cpp:88
+msgid "Main"
+msgstr "មេ"
+
+#: slideshowconfig.cpp:89
+msgid "Main Settings"
+msgstr ""
+
+#: slideshowconfig.cpp:93 slideshowconfig.cpp:94
+msgid "Caption"
+msgstr ""
+
+#: slideshowconfig.cpp:98 slideshowconfig.cpp:99
+msgid "Advanced"
+msgstr "កម្រិត​ខ្ពស់"
+
+#: slideshowconfig.cpp:107
 msgid "A Kipi plugin for image slideshow"
 msgstr "កម្មវិធី Kipi សម្រាប់​ការ​បញ្ចាំង​ស្លាយ​រូបភាព"
 
-#: slideshowconfig.cpp:98
+#: slideshowconfig.cpp:108
 #, fuzzy
 #| msgid ""
 #| "(c) 2003-2004, Renchi Raju\n"
@@ -459,75 +511,25 @@ msgstr ""
 "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៣-២០០៤ ដោយ Renchi Raju\n"
 "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៧ ដោយ Valerio Fuoglio"
 
-#: slideshowconfig.cpp:100
+#: slideshowconfig.cpp:110
 msgid "Renchi Raju"
 msgstr "Renchi Raju"
 
-#: slideshowconfig.cpp:100
+#: slideshowconfig.cpp:110
 msgid "Author"
 msgstr "អ្នក​និពន្ធ"
 
-#: slideshowconfig.cpp:102
+#: slideshowconfig.cpp:112
 msgid "Valerio Fuoglio"
 msgstr "Valerio Fuoglio"
 
-#: slideshowconfig.cpp:102
+#: slideshowconfig.cpp:112
 msgid "Author and maintainer"
 msgstr "​អ្នក​និពន្ធ និង​អ្នក​ថែទាំ​"
 
-#: slideshowconfig.cpp:108
+#: slideshowconfig.cpp:121
 msgid "SlideShow Handbook"
 msgstr "សៀវភៅ​ដៃ​បញ្ចាំង​ស្លាយ"
-
-#: slideshowconfig.cpp:169
-msgid ""
-"In this version of kipi-plugins, normal SlideShow's effects still under "
-"porting.<br><b>They will be available again in the future.</b>"
-msgstr ""
-
-#: slideshowconfig.cpp:179
-msgid "Slideshow is part of KIPI-Plugins (http://www.kipi-plugins.org)"
-msgstr "បញ្ចាំង​ស្លាយ​គឺ​ជា​ផ្នែក​របស់​កម្មវិធីជំនួយ KIPI (http://www.kipi-plugins.org)"
-
-#: slideshowconfig.cpp:514
-msgid "Delay between images (ms):"
-msgstr "ពន្យារ​រវាង​រូបភាព (មិ.វិ.) ៖"
-
-#: slideshowconfig.cpp:522
-msgid "Delay between images  (s):"
-msgstr "ពន្យារ​រវាង​រូបភាព  (វិ.) ៖"
-
-#: slideshowconfig.cpp:533 slideshowkb.cpp:546
-msgid "Ken Burns"
-msgstr "ការ​ដុត​របស់ Ken"
-
-#: slideshowconfig.cpp:652
-#, kde-format
-msgid "Image no. %1"
-msgstr "ចំនួន​រូបភាព %1"
-
-#: slideshowconfig.cpp:705
-msgid "You can only move up one image file at once."
-msgstr "អ្នក​អាច​ផ្លាស់ទីតែ​ឯកសារ​រូបភាព​មួយ​នៅ​ពេល​តែ​មួយ ។"
-
-#: slideshowconfig.cpp:740
-msgid "You can only move down one image file at once."
-msgstr "អ្នក​អាច​ផ្លាស់ទី​តែ​ឯកសារ​រូបភាព​មួយ​នៅ​ពេល​តែ​មួយ ។"
-
-#: slideshowconfig.cpp:779
-#, kde-format
-msgid "%1 image [%2]"
-msgstr "%1 រូបភាព [%2]"
-
-#: slideshowconfig.cpp:781
-#, kde-format
-msgid "%1 images [%2]"
-msgstr "%1 រូបភាព [%2]"
-
-#: slideshowconfig.cpp:810
-#, kde-format
-msgid "Cannot access to file %1, please check the path is right."
-msgstr "មិនអាច​ចូល​ដំណើរការ​ទៅ​ឯកសារ %1 សូម​ពិនិត្យ​មើល​ថាតើ​ផ្លូវ​ត្រឹមត្រូវ​ឬទេ ។"
 
 #: slideshowgl.cpp:410
 msgid "Bend"
@@ -560,6 +562,36 @@ msgstr "បង្វិល"
 #: slideshowgl.cpp:417
 msgid "Slide"
 msgstr "ស្លាយ"
+
+#~ msgid "&Add..."
+#~ msgstr "បន្ថែម..."
+
+#~ msgid "&Delete"
+#~ msgstr "លុប"
+
+#~ msgid "Image &Up"
+#~ msgstr "រូបភាពនៅ​លើ"
+
+#~ msgid "Image D&own"
+#~ msgstr "រូបភាព​នៅ​ក្រោម"
+
+#~ msgid "Video options"
+#~ msgstr "ជម្រើស​វីដេអូ"
+
+#~ msgid "Content options"
+#~ msgstr "ជម្រើសមាតិកា"
+
+#~ msgid "&Help"
+#~ msgstr "ជំនួយ"
+
+#~ msgid "F1"
+#~ msgstr "F1"
+
+#~ msgid "&Exit"
+#~ msgstr "ចេញ"
+
+#~ msgid "Slide Show"
+#~ msgstr "បញ្ចាំង​ស្លាយ"
 
 #~ msgid "Slideshow"
 #~ msgstr "បញ្ចាំង​ស្លាយ"
