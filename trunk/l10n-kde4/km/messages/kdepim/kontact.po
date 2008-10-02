@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kontact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-01 10:41+0200\n"
+"POT-Creation-Date: 2008-10-02 09:48+0200\n"
 "PO-Revision-Date: 2008-09-23 15:07+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -929,12 +929,12 @@ msgid_plural "No upcoming events starting within the next %1 days"
 msgstr[0] "គ្មាន​ព្រឹត្តិការណ៍​ដែល​នឹង​មាន​ចាប់ផ្ដើម​ក្នុង​រយៈពេល %1 បន្ទាប់"
 
 #: plugins/korganizer/apptsummarywidget.cpp:217
-#: plugins/planner/planner.cpp:722
+#: plugins/planner/planner.cpp:789
 msgid "&Edit Appointment..."
 msgstr "កែសម្រួល​ការ​ណាត់​ជួប..."
 
 #: plugins/korganizer/apptsummarywidget.cpp:218
-#: plugins/planner/planner.cpp:723
+#: plugins/planner/planner.cpp:790
 msgid "&Delete Appointment"
 msgstr "លប់​ការ​ណាត់​ជួប"
 
@@ -998,17 +998,17 @@ msgstr "ថ្ងៃ​កំណើត"
 msgid "ANNIVERSARY"
 msgstr "ថ្ងៃ​បុណ្យ​ខួប ៖"
 
-#: plugins/korganizer/summaryeventinfo.cpp:176
+#: plugins/korganizer/summaryeventinfo.cpp:178
 msgctxt "@label the appointment is today"
 msgid "Today"
 msgstr "ថ្ងៃ​នេះ"
 
-#: plugins/korganizer/summaryeventinfo.cpp:180
+#: plugins/korganizer/summaryeventinfo.cpp:182
 msgctxt "@label the appointment is tomorrow"
 msgid "Tomorrow"
 msgstr "ថ្ងៃស្អែក"
 
-#: plugins/korganizer/summaryeventinfo.cpp:201
+#: plugins/korganizer/summaryeventinfo.cpp:203
 #: plugins/korganizer/todosummarywidget.cpp:224
 #: plugins/specialdates/sdsummarywidget.cpp:489
 #, kde-format
@@ -1016,12 +1016,12 @@ msgid "in 1 day"
 msgid_plural "in %1 days"
 msgstr[0] "ក្នុង​រយៈពេល %1 ថ្ងៃ"
 
-#: plugins/korganizer/summaryeventinfo.cpp:203
+#: plugins/korganizer/summaryeventinfo.cpp:205
 #: plugins/specialdates/sdsummarywidget.cpp:487
 msgid "now"
 msgstr "ឥឡូវ"
 
-#: plugins/korganizer/summaryeventinfo.cpp:232 plugins/planner/planner.cpp:535
+#: plugins/korganizer/summaryeventinfo.cpp:234 plugins/planner/planner.cpp:535
 #, kde-format
 msgctxt "Time from - to"
 msgid "%1 - %2"
@@ -1066,22 +1066,22 @@ msgid_plural "No pending to-dos due within the next %1 days"
 msgstr[0] "គ្មាន​​កា​រពន្យារ​កា​រងារ​ត្រូវ​ធ្វើ​​ក្នុង​រយៈពេល %1 ​ថ្ងៃ​បន្ទាប់"
 
 #: plugins/korganizer/todosummarywidget.cpp:325
-#: plugins/planner/planner.cpp:785
+#: plugins/planner/planner.cpp:852
 msgid "&Edit To-do..."
 msgstr "កែសម្រួល​ការងារ​ត្រូវ​ធ្វើ..."
 
 #: plugins/korganizer/todosummarywidget.cpp:326
-#: plugins/planner/planner.cpp:786
+#: plugins/planner/planner.cpp:853
 msgid "&Delete To-do"
 msgstr "លុប​ការងារ​ត្រូវធ្វើ"
 
 #: plugins/korganizer/todosummarywidget.cpp:331
-#: plugins/planner/planner.cpp:791
+#: plugins/planner/planner.cpp:858
 msgid "&Mark To-do Completed"
 msgstr "បាន​សម្គាល់​អ្វី​ដែល​ត្រូវ​ធ្វើ​​ចប់​ទាំង​ស្រុង"
 
 #: plugins/korganizer/todosummarywidget.cpp:351
-#: plugins/planner/planner.cpp:883
+#: plugins/planner/planner.cpp:950
 #, kde-format
 msgid "Edit To-do: \"%1\""
 msgstr "កែ​សម្រួល​អ្វី​ដែល​ត្រូវ​ធ្វើ ៖ \"%1\""
@@ -1252,77 +1252,104 @@ msgid_plural "No appointments pending within the next %1 days"
 msgstr[0] "គ្មានកា​រណាត់ជួប​​ដែល​រង់ចាំ​​ក្នុង​រយៈពេល %1 ​ថ្ងៃ​បន្ទាប់"
 
 #: plugins/planner/planner.cpp:340 plugins/planner/planner.cpp:366
-#: plugins/planner/planner.cpp:383 plugins/planner/planner.cpp:757
+#: plugins/planner/planner.cpp:383 plugins/planner/planner.cpp:824
 msgctxt "to-do is overdue"
 msgid "overdue"
 msgstr "ហួស​កំណត់"
 
-#: plugins/planner/planner.cpp:740
+#: plugins/planner/planner.cpp:709
+#: plugins/specialdates/sdsummarywidget.cpp:500
+msgid "Birthday"
+msgstr "ថ្ងៃកំណើត"
+
+#: plugins/planner/planner.cpp:712
+#: plugins/specialdates/sdsummarywidget.cpp:503
+msgid "Anniversary"
+msgstr "ថ្ងៃ​បុណ្យ​ខួប"
+
+#: plugins/planner/planner.cpp:715
+#: plugins/specialdates/sdsummarywidget.cpp:506
+msgid "Holiday"
+msgstr "ថ្ងៃ​ឈប់​សម្រាក"
+
+#: plugins/planner/planner.cpp:718
+#: plugins/specialdates/sdsummarywidget.cpp:509
+msgid "Special Occasion"
+msgstr "ឱកាស​ពិសេស"
+
+#: plugins/planner/planner.cpp:758
+#: plugins/specialdates/sdsummarywidget.cpp:550
+#, kde-format
+msgid "one year"
+msgid_plural "%1 years"
+msgstr[0] "%1 ឆ្នាំ"
+
+#: plugins/planner/planner.cpp:807
 #, kde-format
 msgid "Edit Appointment: \"%1\""
 msgstr "កែសម្រួល​ការ​ណាត់​ជួប ៖ \"%1\""
 
-#: plugins/planner/planner.cpp:764
+#: plugins/planner/planner.cpp:831
 msgctxt "work on to-do is in progress"
 msgid "in progress"
 msgstr "កំពុង​ដំណើរការ "
 
-#: plugins/planner/planner.cpp:769
+#: plugins/planner/planner.cpp:836
 msgctxt "to-do starts today"
 msgid "starts today"
 msgstr "ចាប់​ផ្តើម​ថ្ងៃនេះ"
 
-#: plugins/planner/planner.cpp:774
+#: plugins/planner/planner.cpp:841
 msgctxt "to-do ends today"
 msgid "ends today"
 msgstr "បញ្ចប់​​ថ្ងៃនេះ"
 
-#: plugins/planner/planner.cpp:777
+#: plugins/planner/planner.cpp:844
 msgctxt "to-do is completed"
 msgid "completed"
 msgstr "បាន​បញ្ចប់"
 
-#: plugins/planner/planner.cpp:835
+#: plugins/planner/planner.cpp:902
 msgid "0%"
 msgstr "០%"
 
-#: plugins/planner/planner.cpp:836
+#: plugins/planner/planner.cpp:903
 msgid "10%"
 msgstr "១០%"
 
-#: plugins/planner/planner.cpp:837
+#: plugins/planner/planner.cpp:904
 msgid "20%"
 msgstr "២០%"
 
-#: plugins/planner/planner.cpp:838
+#: plugins/planner/planner.cpp:905
 msgid "30%"
 msgstr "៣០%"
 
-#: plugins/planner/planner.cpp:839
+#: plugins/planner/planner.cpp:906
 msgid "40%"
 msgstr "៤០%"
 
-#: plugins/planner/planner.cpp:840
+#: plugins/planner/planner.cpp:907
 msgid "50%"
 msgstr "៥០%"
 
-#: plugins/planner/planner.cpp:841
+#: plugins/planner/planner.cpp:908
 msgid "60%"
 msgstr "៦០%"
 
-#: plugins/planner/planner.cpp:842
+#: plugins/planner/planner.cpp:909
 msgid "70%"
 msgstr "៧០%"
 
-#: plugins/planner/planner.cpp:843
+#: plugins/planner/planner.cpp:910
 msgid "80%"
 msgstr "៨០%"
 
-#: plugins/planner/planner.cpp:844
+#: plugins/planner/planner.cpp:911
 msgid "90%"
 msgstr "៩០ %"
 
-#: plugins/planner/planner.cpp:845
+#: plugins/planner/planner.cpp:912
 msgid "100%"
 msgstr "១០០%"
 
@@ -1370,28 +1397,6 @@ msgstr "ថ្ងៃ​ឈប់​សម្រាក"
 #: plugins/specialdates/sdsummarywidget.cpp:350
 msgid "SPECIAL OCCASION"
 msgstr "ឱកាស​ពិសេស"
-
-#: plugins/specialdates/sdsummarywidget.cpp:500
-msgid "Birthday"
-msgstr "ថ្ងៃកំណើត"
-
-#: plugins/specialdates/sdsummarywidget.cpp:503
-msgid "Anniversary"
-msgstr "ថ្ងៃ​បុណ្យ​ខួប"
-
-#: plugins/specialdates/sdsummarywidget.cpp:506
-msgid "Holiday"
-msgstr "ថ្ងៃ​ឈប់​សម្រាក"
-
-#: plugins/specialdates/sdsummarywidget.cpp:509
-msgid "Special Occasion"
-msgstr "ឱកាស​ពិសេស"
-
-#: plugins/specialdates/sdsummarywidget.cpp:550
-#, kde-format
-msgid "one year"
-msgid_plural "%1 years"
-msgstr[0] "%1 ឆ្នាំ"
 
 #: plugins/specialdates/sdsummarywidget.cpp:561
 #, kde-format
