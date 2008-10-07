@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-10-04 10:37+0200\n"
+"POT-Creation-Date: 2008-10-07 09:46+0200\n"
 "PO-Revision-Date: 2008-10-06 14:39+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -38,15 +38,26 @@ msgstr "បង្កើត​ថត"
 msgid "Enter the name of the folder to create:"
 msgstr "បញ្ចូល​ឈ្មោះ​ថត​ដែលត្រូវ​បង្កើត ៖"
 
-#: app/documentpanel.cpp:322 app/thumbnailviewpanel.cpp:93
+#: app/documentpanel.cpp:323 app/thumbnailviewpanel.cpp:93
 #: app/mainwindow.cpp:271 lib/documentview/documentview.cpp:110
 msgctxt "@title actions category - means actions changing smth in interface"
 msgid "View"
 msgstr "ទិដ្ឋភាព"
 
-#: app/documentpanel.cpp:325
+#: app/documentpanel.cpp:326
 msgid "Thumbnail Bar"
 msgstr "របារ​រូបភាព​តូចៗ"
+
+#: app/documentpanel.cpp:477
+msgctxt "@action:button"
+msgid "Discard Changes and Reload"
+msgstr "បោះបង់​ការ​ផ្លាស់ប្ដូរ ហើយ​ផ្ទុក​ឡើង​វិញ"
+
+#: app/documentpanel.cpp:479
+msgctxt "@info"
+msgid ""
+"This image has been modified. Reloading it will discard all your changes."
+msgstr "រូបភាព​នេះ​ត្រូវ​បានកែប្រែ ។ ករ​ផ្ទុក​វា​ឡើង​វិញ​នឹង​បោះបង់​ការ​ផ្លាស់ប្ដូរ​របស់​អ្នក​ទាំងអស់ ។"
 
 #: app/fullscreencontent.cpp:107
 msgctxt "@info:tooltip"
@@ -128,14 +139,12 @@ msgid "Gwenview cannot save images in '%1' format."
 msgstr "Gwenview មិនអាច​រក្សាទុក​រូបភាព​ជា​ទ្រង់ទ្រាយ '%1' បានទេ ។"
 
 #: app/gvcore.cpp:215
-#| msgid "No document selected"
 msgctxt "@info"
 msgid "No image format selected."
 msgstr "គ្មាន​ទ្រង់ទ្រាយ​រូបភាព​បាន​ជ្រើស ។"
 
 #: app/gvcore.cpp:228
 #, kde-format
-#| msgid "Gwenview cannot save images in '%1' format."
 msgctxt "@info"
 msgid "Gwenview cannot save images as %1."
 msgstr "Gwenview មិនអាច​រក្សាទុក​រូបភាព​​ជា %1 ។"
@@ -189,7 +198,8 @@ msgstr "​ឯកសារ​ ឬ​ថត​​​ចាប់​ផ្ដើ�
 
 #: app/infocontextmanageritem.cpp:72
 #, kde-format
-msgctxt "@item:intext %1 is a key, we append a colon to it. A value is displayed after"
+msgctxt ""
+"@item:intext %1 is a key, we append a colon to it. A value is displayed after"
 msgid "%1:"
 msgstr "%1 ៖"
 
@@ -234,13 +244,10 @@ msgid_plural "%1 (%2 images)"
 msgstr[0] "%1 (%2 រូបភាព)"
 
 #: app/configdialog.cpp:67
-#| msgctxt "@title:group General info about the image"
-#| msgid "General"
 msgid "General"
 msgstr "ទូទៅ"
 
 #: app/configdialog.cpp:82
-#| msgid "An Image Viewer"
 msgid "Image View"
 msgstr "ទិដ្ឋភាព​រូបភាព"
 
@@ -312,16 +319,28 @@ msgstr "ការ​ប្រតិបត្តិ​ឯកសារ"
 msgid "Other Application..."
 msgstr "កម្មវិធី​ផ្សេង..."
 
-#: app/semanticinfocontextmanageritem.cpp:102
+#: app/semanticinfocontextmanageritem.cpp:69
+#, fuzzy
+#| msgid "Edit"
+msgctxt "@title actions category"
 msgid "Edit"
 msgstr "កែសម្រួល"
 
-#: app/semanticinfocontextmanageritem.cpp:123
+#: app/semanticinfocontextmanageritem.cpp:72
 msgctxt "@action"
 msgid "Edit Tags"
 msgstr "កែសម្រួល​ស្លាក"
 
-#: app/semanticinfocontextmanageritem.cpp:147
+#: app/semanticinfocontextmanageritem.cpp:81
+msgctxt "@action Rating value of zero"
+msgid "Zero"
+msgstr ""
+
+#: app/semanticinfocontextmanageritem.cpp:115
+msgid "Edit"
+msgstr "កែសម្រួល"
+
+#: app/semanticinfocontextmanageritem.cpp:157
 msgid "Semantic Information"
 msgstr "ព័ត៌មាន​សេមិនទិក​​"
 
@@ -477,44 +496,34 @@ msgstr "លាក់​របារ​ចំហៀង"
 msgid "Show Sidebar"
 msgstr "បង្ហាញ​របារ​ចំហៀង"
 
-#: app/mainwindow.cpp:1073
-msgctxt "@action:button"
-msgid "Discard Changes and Reload"
-msgstr "បោះបង់​ការ​ផ្លាស់ប្ដូរ ហើយ​ផ្ទុក​ឡើង​វិញ"
-
-#: app/mainwindow.cpp:1075
-msgctxt "@info"
-msgid "This image has been modified. Reloading it will discard all your changes."
-msgstr "រូបភាព​នេះ​ត្រូវ​បានកែប្រែ ។ ករ​ផ្ទុក​វា​ឡើង​វិញ​នឹង​បោះបង់​ការ​ផ្លាស់ប្ដូរ​របស់​អ្នក​ទាំងអស់ ។"
-
-#: app/mainwindow.cpp:1092
+#: app/mainwindow.cpp:1081
 msgctxt "@title:window"
 msgid "Open Image"
 msgstr "បើក​រូបភាព"
 
-#: app/mainwindow.cpp:1135
+#: app/mainwindow.cpp:1124
 msgid "Stop Slideshow"
 msgstr "បញ្ឈប់​ការ​បញ្ចាំង​ស្លាយ"
 
-#: app/mainwindow.cpp:1138
+#: app/mainwindow.cpp:1127
 msgid "Start Slideshow"
 msgstr "ចាប់ផ្ដើម​បញ្ចាំង​ស្លាយ"
 
-#: app/mainwindow.cpp:1166
+#: app/mainwindow.cpp:1155
 msgid "Save All Changes"
 msgstr "រក្សាទុក​ការ​ផ្លាស់ប្ដូរ​ទាំងអស់"
 
-#: app/mainwindow.cpp:1167
+#: app/mainwindow.cpp:1156
 msgid "Discard Changes"
 msgstr "បោះចោល​ការផ្លាស់ប្តូរ"
 
-#: app/mainwindow.cpp:1168
+#: app/mainwindow.cpp:1157
 #, kde-format
 msgid "One image has been modified."
 msgid_plural "%1 images have been modified."
 msgstr[0] "បាន​កែប្រែ​រូបភាព %1 ។"
 
-#: app/mainwindow.cpp:1170
+#: app/mainwindow.cpp:1159
 msgid "If you quit now, your changes will be lost."
 msgstr "ប្រសិន​បើ​អ្នក​ចេញ​នៅពេល​ឥឡូវ នោះ​ការ​ផ្លាស់ប្ដូរ​របស់​អ្នក​នឹង​ត្រូវបាត់បង់ ។"
 
@@ -836,7 +845,7 @@ msgstr "ស្លាក ៖"
 #. i18n: ectx: property (windowTitle), widget (QWidget, PerformanceConfigPage)
 #. i18n: file: app/imageviewconfigpage.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, ImageViewConfigPage)
-#: rc.cpp:59 rc.cpp:105
+#: rc.cpp:59 rc.cpp:108
 msgid "Form"
 msgstr "សំណុំបែបបទ"
 
@@ -856,8 +865,8 @@ msgid ""
 "by Gwenview and other applications."
 msgstr ""
 "បើក​ជម្រើស​នេះ ប្រសិនបើ​អ្នក​មិនមានទំហំ​ថាស​​ច្រើន ។\n"
-"សូម​ប្រយ័ត្ន ៖ វា​នឹង​លុប​ថត​ដែល​មាន​ឈ្មោះ <filename>.thumbnails</"
-"filename> នៅ​ក្នុង​ថត​ផ្ទះ ការ​លុប​រូបភាព​តូចៗ​ដែល​បាន​បង្កើត​ពីមុន​ដោយ Gwenview និង​កម្មវិធី​ផ្សេងៗ​ទៀត ។"
+"សូម​ប្រយ័ត្ន ៖ វា​នឹង​លុប​ថត​ដែល​មាន​ឈ្មោះ <filename>.thumbnails</filename> នៅ​ក្នុង​ថត​ផ្ទះ ការ​"
+"លុប​រូបភាព​តូចៗ​ដែល​បាន​បង្កើត​ពីមុន​ដោយ Gwenview និង​កម្មវិធី​ផ្សេងៗ​ទៀត ។"
 
 #. i18n: file: app/startpage.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -871,102 +880,110 @@ msgstr "ទីតាំង"
 msgid "Recent Folders"
 msgstr "ថត​បច្ចុប្បន្ន"
 
-#. i18n: file: app/gwenviewui.rc:64
-#. i18n: ectx: Menu (plugins)
+#. i18n: file: app/gwenviewui.rc:46
+#. i18n: ectx: Menu (rating)
 #: rc.cpp:75
+#, fuzzy
+#| msgid "Rating:"
+msgid "&Rating"
+msgstr "ការ​វាយតម្លៃ ៖"
+
+#. i18n: file: app/gwenviewui.rc:73
+#. i18n: ectx: Menu (plugins)
+#: rc.cpp:78
 msgid "&Plugins"
 msgstr "កម្មវិធី​ជំនួយ"
 
-#. i18n: file: app/gwenviewui.rc:66
+#. i18n: file: app/gwenviewui.rc:75
 #. i18n: ectx: Menu (kipi_images)
-#: rc.cpp:78
+#: rc.cpp:81
 msgid "Images"
 msgstr "រូបភាព"
 
-#. i18n: file: app/gwenviewui.rc:70
+#. i18n: file: app/gwenviewui.rc:79
 #. i18n: ectx: Menu (kipi_effects)
-#: rc.cpp:81
+#: rc.cpp:84
 msgid "Effects"
 msgstr "បែបផែន"
 
-#. i18n: file: app/gwenviewui.rc:74
+#. i18n: file: app/gwenviewui.rc:83
 #. i18n: ectx: Menu (kipi_tools)
-#: rc.cpp:84
+#: rc.cpp:87
 msgid "Tools"
 msgstr "ឧបករណ៍"
 
-#. i18n: file: app/gwenviewui.rc:78
+#. i18n: file: app/gwenviewui.rc:87
 #. i18n: ectx: Menu (kipi_batch)
-#: rc.cpp:87
+#: rc.cpp:90
 msgid "Batch Processing"
 msgstr "ដំណើរការ​បាច់"
 
-#. i18n: file: app/gwenviewui.rc:82
+#. i18n: file: app/gwenviewui.rc:91
 #. i18n: ectx: Menu (kipi_import)
-#: rc.cpp:90
+#: rc.cpp:93
 msgid "Import"
 msgstr "នាំចូល"
 
-#. i18n: file: app/gwenviewui.rc:86
+#. i18n: file: app/gwenviewui.rc:95
 #. i18n: ectx: Menu (kipi_export)
-#: rc.cpp:93
+#: rc.cpp:96
 msgid "Export"
 msgstr "នាំចេញ"
 
-#. i18n: file: app/gwenviewui.rc:90
+#. i18n: file: app/gwenviewui.rc:99
 #. i18n: ectx: Menu (kipi_collections)
-#: rc.cpp:96
+#: rc.cpp:99
 msgid "Collections"
 msgstr "សម្រាំង"
 
-#. i18n: file: app/gwenviewui.rc:95
+#. i18n: file: app/gwenviewui.rc:104
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:99
+#: rc.cpp:102
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
-#. i18n: file: app/gwenviewui.rc:108
+#. i18n: file: app/gwenviewui.rc:117
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: part/gvpart.rc:14
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:102 rc.cpp:201
+#: rc.cpp:105 rc.cpp:204
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
 #. i18n: file: app/imageviewconfigpage.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:108
+#: rc.cpp:111
 msgid "Transparent background:"
 msgstr "ផ្ទៃខាងក្រោយ​ថ្លា ៖"
 
 #. i18n: file: app/imageviewconfigpage.ui:37
 #. i18n: ectx: property (text), widget (QRadioButton, checkBoardRadioButton)
-#: rc.cpp:111
+#: rc.cpp:114
 msgid "&Check board"
 msgstr "ក្ដារ​ត្រួតពិនិត្យ"
 
 #. i18n: file: app/imageviewconfigpage.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, solidColorRadioButton)
-#: rc.cpp:114
+#: rc.cpp:117
 msgid "&Solid color:"
 msgstr "ពណ៌​សុទ្ធ ៖"
 
 #. i18n: file: app/imageviewconfigpage.ui:118
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:117
+#: rc.cpp:120
 msgid "Mouse wheel behavior:"
 msgstr "ឥរិយាបទ​កង់​កណ្ដុរ ៖"
 
 #. i18n: file: app/imageviewconfigpage.ui:130
 #. i18n: ectx: property (text), widget (QRadioButton, mouseWheelScrollRadioButton)
-#: rc.cpp:120
+#: rc.cpp:123
 msgctxt "@option:radio action on mouse wheel"
 msgid "Scroll"
 msgstr "រមូរ"
 
 #. i18n: file: app/imageviewconfigpage.ui:157
 #. i18n: ectx: property (text), widget (QRadioButton, mouseWheelBrowseRadioButton)
-#: rc.cpp:123
+#: rc.cpp:126
 msgctxt "@option:radio action on mouse wheel"
 msgid "Browse"
 msgstr "រកមើល"
@@ -975,88 +992,86 @@ msgstr "រកមើល"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnlargeSmallerImages)
 #. i18n: file: lib/print/printoptionspage.ui:157
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:126 rc.cpp:150
+#: rc.cpp:129 rc.cpp:153
 msgid "Enlarge smaller images"
 msgstr "ពង្រីក​រូបភាពល​តូចៗ"
 
 #. i18n: file: lib/redeyereduction/redeyereductionhud.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:129
-#| msgctxt "@item:intable"
-#| msgid "File Size"
+#: rc.cpp:132
 msgid "Size"
 msgstr "ទំហំ​"
 
 #. i18n: file: lib/redeyereduction/redeyereductionhud.ui:46
 #. i18n: ectx: property (text), widget (QToolButton, applyButton)
-#: rc.cpp:132
+#: rc.cpp:135
 msgid "Apply"
 msgstr "អនុវត្ត"
 
 #. i18n: file: lib/print/printoptionspage.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: rc.cpp:135
+#: rc.cpp:138
 msgid "Image Settings"
 msgstr "​ការកំណត់​រូបភាព"
 
 #. i18n: file: lib/print/printoptionspage.ui:34
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:138
+#: rc.cpp:141
 msgid "Image Position"
 msgstr "ទីតាំង​រូបភាព"
 
 #. i18n: file: lib/print/printoptionspage.ui:77
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:141
+#: rc.cpp:144
 msgid "Scaling"
 msgstr "ធ្វើ​មាត្រដ្ឋាន"
 
 #. i18n: file: lib/print/printoptionspage.ui:101
 #. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
-#: rc.cpp:144
+#: rc.cpp:147
 msgid "&No scaling"
 msgstr "គ្មាន​ការ​ធ្វើ​មាត្រដ្ឋាន"
 
 #. i18n: file: lib/print/printoptionspage.ui:111
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
-#: rc.cpp:147
+#: rc.cpp:150
 msgid "&Fit image to page"
 msgstr "ធ្វើ​ឲ្យ​រូបភាព​សម​ទៅ​នឹង​ទំព័រ"
 
 #. i18n: file: lib/print/printoptionspage.ui:182
 #. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
-#: rc.cpp:153
+#: rc.cpp:156
 msgid "&Scale to:"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ទៅ ៖"
 
 #. i18n: file: lib/print/printoptionspage.ui:232
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:156
+#: rc.cpp:159
 msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
 msgid "x"
 msgstr "x"
 
 #. i18n: file: lib/print/printoptionspage.ui:259
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:159
+#: rc.cpp:162
 msgid "Millimeters"
 msgstr "មិល្លីម៉ែត្រ"
 
 #. i18n: file: lib/print/printoptionspage.ui:264
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:162
+#: rc.cpp:165
 msgid "Centimeters"
 msgstr "សង់ទីម៉ែត្រ"
 
 #. i18n: file: lib/print/printoptionspage.ui:269
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:165
+#: rc.cpp:168
 msgid "Inches"
 msgstr "អ៊ិន្ឈ៍"
 
 #. i18n: file: lib/print/printoptionspage.ui:280
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
-#: rc.cpp:168
+#: rc.cpp:171
 msgid "Keep ratio"
 msgstr "រក្សា​សមាមាត្រ"
 
@@ -1064,55 +1079,54 @@ msgstr "រក្សា​សមាមាត្រ"
 #. i18n: ectx: property (text), widget (QLabel, mIconLabel)
 #. i18n: file: lib/documentview/messageview.ui:58
 #. i18n: ectx: property (text), widget (QLabel, mTextLabel)
-#: rc.cpp:171 rc.cpp:174
+#: rc.cpp:174 rc.cpp:177
 msgid "TextLabel"
 msgstr "ស្លាក​អត្ថបទ"
 
 #. i18n: file: lib/cropsidebar.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:177
+#: rc.cpp:180
 msgid "&X:"
 msgstr "X ៖"
 
 #. i18n: file: lib/cropsidebar.ui:45
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:180
+#: rc.cpp:183
 msgid "&Y:"
 msgstr "Y ៖"
 
 #. i18n: file: lib/cropsidebar.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:183
+#: rc.cpp:186
 msgid "&Width:"
 msgstr "ទទឹង ៖"
 
 #. i18n: file: lib/cropsidebar.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:186
+#: rc.cpp:189
 msgid "&Height:"
 msgstr "កម្ពស់ ៖"
 
 #. i18n: file: lib/cropsidebar.ui:151
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:189
+#: rc.cpp:192
 msgid "x"
 msgstr "x"
 
 #. i18n: file: lib/cropsidebar.ui:170
 #. i18n: ectx: property (text), widget (QCheckBox, constrainRatioCheckBox)
-#: rc.cpp:192
+#: rc.cpp:195
 msgid "Constrain ratio"
 msgstr "កម្រិត​សមាមាត្រ"
 
 #. i18n: file: part/gvpart.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:195
+#: rc.cpp:198
 msgid "&File"
 msgstr "ឯកសារ"
 
 #. i18n: file: part/gvpart.rc:7
 #. i18n: ectx: Menu (view)
-#: rc.cpp:198
+#: rc.cpp:201
 msgid "&View"
 msgstr "មើល"
-
