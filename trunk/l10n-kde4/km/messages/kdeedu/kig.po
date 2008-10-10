@@ -1,18 +1,17 @@
-# translation of kig.po to khmer
+# translation of kig.po to Khmer
 # translation of kig.po to
 #
 # Auk Piseth <piseth_dv@khmeros.info>, 2006, 2007, 2008.
 # Eng Vannak <evannak@khmeros.info>, 2006, 2007, 2008.
-# Poch Sokun <sokunpoch@khmeros.info>, 2006.
-# Khoem Sokhem <khoemsokhem@khmeros.info>, 2006, 2008.
+# Khoem Sokhem <khoemsokhem@khmeros.info>2006, 2007, 2008.
 msgid ""
 msgstr ""
 "Project-Id-Version: kig\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2008-10-08 10:31+0200\n"
-"PO-Revision-Date: 2008-09-01 11:43+0700\n"
-"Last-Translator: Eng Vannak <evannak@khmeros.info>\n"
-"Language-Team: khmer <support@khmeros.info>\n"
+"PO-Revision-Date: 2008-10-10 10:27+0700\n"
+"Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
+"Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -43,19 +42,38 @@ msgid ""
 "hexagons (Point(0,0), Point(1,0), 5)\n"
 "</pre></code>\n"
 msgstr ""
+"<p>អ្នក​អាច​ត្រួតពិនិត្យ​កា​រស្ថាបនា​តាម​មធ្យោបាយ​របស់​ស្គ្រីប python \"pykig\" \n"
+"ដែល​អាច​ត្រូវ​បាន​ប្រតិបត្តិ​ជា​មួយនឹង​ពាក្យ​បញ្ជា\n"
+"<code>pykig.py</code> ។ នេះ​ជា​ឧទាហរណ៍​ដ៏​ល្អ​មួយ\n"
+"(<code>hexagons.kpy</code>) ដែល​អ្នក​អាច​សាកល្បង​បាន ៖\n"
+"<code><pre>\n"
+"kigdocument.hideobjects()\n"
+"def hexagons (c, v, n):\n"
+"  hexagon = PolygonBCV (c, v, 6)\n"
+"  if n &lt;= 0:\n"
+"    hexagon.show()\n"
+"    for i in range(6): \n"
+"      PolygonSide (hexagon, i, True)\n"
+"    return\n"
+"  cnew = MidPoints (c, v)\n"
+"  hexagons (cnew, v, n-1)\n"
+"  for k in [2,4]:\n"
+"    v1 = PolygonVertex (hexagon, k)\n"
+"    cnew = MidPoints (c, v1)\n"
+"    hexagons (cnew, v1, n-1)\n"
+"hexagons (Point(0,0), Point(1,0), 5)\n"
+"</pre></code>\n"
 
 #: tips.cpp:28
-#, fuzzy
 msgid ""
 "<p>You can repeat the latest construction simply by pressing the key\n"
 "'Z'; this comes in very handy if you need to construct a sequence\n"
 "of objects with the same construction, especially if there is\n"
 "no shortcut for that construction.</p>\n"
 msgstr ""
-"<p>អ្នក​អាច​ធ្វើ​ការ​សាងសង់​ចុងក្រោយ​បំផុត​ម្ដង​ទៀត​ដោយ​ជា​ធម្មតា​ចុច​លើ​គ្រាប់​ចុច\n"
-"'Z'; this comes in very handy if you need to construct a sequence\n"
-"of objects with the same construction, especially if there is\n"
-"no shortcut for that construction.</p>\n"
+"<p>អ្នក​អាច​ធ្វើ​ការ​ស្ថាបនា​ចុងក្រោយ​ឡើង​វិញ​តាមធម្មតា ដោយ​ចុច​គ្រាប់​ចុច\n"
+"'Z'; វា​មក​យ៉ាង​ងាយសម្រួល ប្រសិនបើ​អ្នក​ត្រូវ​ការ​ស្ថាបនា​លំដាប់​វត្ថុ​ដែល​មាន​ការ​ស្ថាបនា​ដូច​គ្នា ជា​ពិសេស​"
+"មិនមានផ្លូវ​កាត់​សម្រាប់​ការ​ស្ថាបនា​នោះ​ទេ ។</p>\n"
 
 #: tips.cpp:36
 msgid ""
@@ -96,6 +114,9 @@ msgid ""
 "constructions you can use in your documents: open the <em>Objects</em> \n"
 "menu to see them all.</p>\n"
 msgstr ""
+"<p>Kig មាន​វត្ថុ​ច្រើនជាង ២០ និង​ ការ​បម្លែង ១០ ជា​មួយ​នឹង​ការ​​សាង​សង់​​ច្រើនជាង ៨០ ដែល​អ្នក​ប្រើ​"
+"ប្រើនៅ​ក្នុង​ឯកសារ​របស់​អ្នក ៖ បើក​ម៉ឺនុយ <em>វត្ថុ</em> \n"
+"ដើម្បីមើល​ពួកវា​ទាំងអស់ ។</p>\n"
 
 #: tips.cpp:65
 msgid ""
@@ -138,7 +159,6 @@ msgstr ""
 "នៅពេល​នោះ អ្នកអាច​ជ្រើស​វា​បានហើយ ។</p>\n"
 
 #: tips.cpp:88
-#, fuzzy
 #| msgid ""
 #| "<p>When you construct a locus, you can click on it with the <em>right</"
 #| "em> mouse\n"
@@ -152,9 +172,9 @@ msgid ""
 "equation, \n"
 "whenever it is an algebraic curve of low degree.</p>\n"
 msgstr ""
-"<p>ពេល​អ្នក​សាងសង់ locus អ្នក​អាច​ចុច​លើ​វា​ដោយ​ប្រើ​ប៊ូតុង​កណ្ដុរ <em>ស្ដាំ</em>\n"
-"<em>សមីការ cartesian</em> ដើម្បី​មើល​សមីការ cartesian របស់​វា \n"
-"នៅ​ពេល​ណា​ដែល​វា​ជា​ខ្សែ​កោង​ពិជគណិត នៃ​ដឺក្រេ​ទាប ។</p>\n"
+"<p>នៅពេល​អ្នកសង់ locus អ្នក​អាច​ចុច​លើ​វា​ដោយ​ប្រើ​ប៊ូតុង​កណ្ដុរ​​ <em>ស្ដាំ</em> \n"
+"និង​ជ្រើស <em>សមីការ cartesian​</em> ដើម្បីមើល​សមីការ cartesian របស់វា\n"
+"នៅពេល​ណា​ដែល​វា​ជា​ខ្សែកោង​គណិត​របស់​ដឺក្រេ​ទាប ។</p>\n"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -484,8 +504,7 @@ msgstr "ជ្រើស​ប្រភេទ​នៅទីនេះ..."
 msgid ""
 "This is a list of the current macro types... You can select, edit, delete, "
 "export and import them..."
-msgstr ""
-"នេះ​ជា​បញ្ជី​ប្រភេទ​ម៉ាក្រូ​បច្ចុប្បន្ន... អ្នកអាចជ្រើស កែសម្រួល លុប នាំ​ចេញ និង នាំចូលពួកវាបាន..."
+msgstr "នេះ​ជា​បញ្ជី​ប្រភេទ​ម៉ាក្រូ​បច្ចុប្បន្ន... អ្នកអាចជ្រើស កែសម្រួល លុប នាំ​ចេញ និង នាំចូលពួកវាបាន..."
 
 #. i18n: file: modes/typeswidget.ui:99
 #. i18n: ectx: property (whatsThis), widget (KPushButton, buttonEdit)
@@ -564,13 +583,11 @@ msgid "Circle by Point && Segment (as the Diameter)"
 msgstr "រង្វង់​ដោយប្រើ​ចំណុច និង ចម្រៀក (ជា​អង្កត់​ផ្ចិត)"
 
 #: rc.cpp:208
-msgid ""
-"A circle defined by its center and the length of a segment as the diameter"
+msgid "A circle defined by its center and the length of a segment as the diameter"
 msgstr "រង្វង់​ដែលបាន​កំណត់​ដោយ​ចំណុច​កណ្ដាល​របស់វា និង ប្រវែង​នៃ​ចម្រៀក​ជា​អង្កត់​ផ្ចិត"
 
 #: rc.cpp:210
-msgid ""
-"Construct a circle with the diameter given by the length of this segment"
+msgid "Construct a circle with the diameter given by the length of this segment"
 msgstr "បង្កើត​រង្វង់​ដែល​មាន​អង្កត់​ផ្ចិត​​ជា​ប្រវែង​នៃ​ចម្រៀក"
 
 #: rc.cpp:212
@@ -818,6 +835,8 @@ msgid ""
 "This Cabri version (%1) is not supported yet.\n"
 "Please contact the Kig authors to help supporting this Cabri version."
 msgstr ""
+"កំនែ​របស់ Cabri (%1) នេះ​មិន​ត្រូវ​បានគាំទ្រ​នៅ​ឡើយ​ទេ ។\n"
+"សូម​ទាក់ទង​អ្នក​និពន្ធ Kig ដើម្បីជួយ​គាំទ្រ​កំណែ​របស់ Cabri នេះ ។"
 
 #: filters/cabri-filter.cc:657
 #, kde-format
@@ -914,8 +933,7 @@ msgstr ""
 
 #: filters/filter.cc:82
 #, kde-format
-msgid ""
-"An error was encountered while parsing the file \"%1\".  It cannot be opened."
+msgid "An error was encountered while parsing the file \"%1\".  It cannot be opened."
 msgstr "បាន​ជួប​កំហុស​ខណៈ​ពេល​ញែក​ឯកសារ \"%1\" ។  មិន​អាច​បើក​វា​បាន​ទេ ។"
 
 #: filters/filter.cc:84
@@ -944,13 +962,11 @@ msgid ""
 msgstr "​ឯកសារ​ KSeg នេះ​បាន​បំពេញ​ដោយ​រង្វង់​ ដែល​ Kig បច្ចុប្បន្ន​មិន​បាន​គាំទ្រ​ ។"
 
 #: filters/kseg-filter.cc:567
-msgid ""
-"This KSeg file contains an arc sector, which Kig does not currently support."
+msgid "This KSeg file contains an arc sector, which Kig does not currently support."
 msgstr "ឯកសារ​ KSeg នេះ​មាន​ចម្រៀក​ធ្នូ ដែល​Kig បច្ចុប្បន្ន​មិន​បាន​គាំទ្រ"
 
 #: filters/kseg-filter.cc:573
-msgid ""
-"This KSeg file contains an arc segment, which Kig does not currently support."
+msgid "This KSeg file contains an arc segment, which Kig does not currently support."
 msgstr "ឯកសារ​ KSeg នេះ​មានធ្នូ​ច្រៀក​ ដែល​Kig បច្ចុប្បន្ន​មិន​បាន​គាំទ្រ​ ។"
 
 #: filters/latexexporter.cc:72
@@ -975,8 +991,7 @@ msgstr "ជម្រើស Latex"
 
 #: filters/native-filter.cc:194
 #, kde-format
-msgid ""
-"This file was created by Kig version \"%1\", which this version cannot open."
+msgid "This file was created by Kig version \"%1\", which this version cannot open."
 msgstr "ឯកសារ​នេះ​ត្រូវ​បាន​បង្កើត​ដោយ​កំណែ Kig \"%1\", ដែល​កំណែ​នេះ​មិន​អាច​ត្រូវ​បាន​បើក​ទេ ។"
 
 #: filters/native-filter.cc:200
@@ -1019,6 +1034,8 @@ msgid ""
 "save the construction with a different name and check that it works as "
 "expected."
 msgstr ""
+"ឯកសារ​របស់ Kig នេះ​ប្រើ​វត្ថុ​ប្រភេទ \"%1\" ដែល​​លែង​ប្រើ អ្នក​គួរ​រក្សាទុក​ការសាងសង់​​​ដោយ​ដាក់​ឈ្មោះ​"
+"ផ្សេង និង​ពិនិត្យ​ថាតើ​វា​ដំណើរការ​តាម​​អ្វីដែល​រំពឹង​ទុកដែរឬទេ ។"
 
 #: filters/svgexporter.cc:45
 msgid "&Export to SVG..."
@@ -1098,8 +1115,7 @@ msgid "Perpendicular"
 msgstr "បន្ទាត់​កាត់កែង​"
 
 #: misc/builtin_stuff.cc:91
-msgid ""
-"A line constructed through a point, perpendicular to another line or segment."
+msgid "A line constructed through a point, perpendicular to another line or segment."
 msgstr "បន្ទាត់​ត្រូវ​បាន​បង្កើត​កាត់តាម​ចំណុច​ បន្ទាត់​កាត់កែង​ជាមួយ​បន្ទាត់​ឬ ចម្រៀក​ផ្សេង​ទៀត​ ។"
 
 #: misc/builtin_stuff.cc:98
@@ -1107,8 +1123,7 @@ msgid "Parallel"
 msgstr "ប៉ារ៉ាឡែល"
 
 #: misc/builtin_stuff.cc:99
-msgid ""
-"A line constructed through a point, and parallel to another line or segment"
+msgid "A line constructed through a point, and parallel to another line or segment"
 msgstr "បន្ទាត់​ត្រូវ​បាន​សង់​កាត់តាម​ចំណុច ហើយ​ ប៉ារ៉ាឡែលសង់​តាម​បន្ទាត់​ឬ ចម្រៀក​ផ្សេងទៀត​"
 
 #: misc/builtin_stuff.cc:106
@@ -1241,11 +1256,11 @@ msgstr "ខ្សែកោង​គូប​មាន​ចុងស្រួច
 
 #: misc/builtin_stuff.cc:234
 msgid "Cubic Function by Four Points"
-msgstr ""
+msgstr "អនុគមន៍​គូប​មាន​បួន​ចំណុច"
 
 #: misc/builtin_stuff.cc:235
 msgid "A cubic function through four points"
-msgstr ""
+msgstr "អនុគមន៍​គូប​តាមរ​យៈ​បួន​ចំណុច"
 
 #: misc/builtin_stuff.cc:242
 msgid "Directrix of a Conic"
@@ -1325,27 +1340,26 @@ msgstr "សង់​ធ្នូ​តាម​បី​ចំណុច ។"
 
 #: misc/builtin_stuff.cc:332
 msgid "Conic Arc by Center and Three Points"
-msgstr ""
+msgstr "ធ្នូ Conic នៅ​កណ្ដាល និង​មាន​ចំណុច​បី"
 
 #: misc/builtin_stuff.cc:333
 msgid "Construct a conic arc with given center through three points."
-msgstr ""
+msgstr "សង់ធ្នូសា​ជី​ជា​មួយនឹង​ចំណុច​កណ្ដាល​ដែល​បានផ្ដល់​តាមរយៈ​ចំណុច​បី ។"
 
 #: misc/builtin_stuff.cc:340
 msgid "Conic Arc by Five Points"
-msgstr ""
+msgstr "ធ្នូ Conic មាន​ប្រាំ​ចំណុច"
 
 #: misc/builtin_stuff.cc:341
 msgid "Construct a conic arc through five points."
-msgstr ""
+msgstr "សង់​ធ្នូ​សាជី​តាមរយៈ​ប្រាំ​ចំណុច ។"
 
 #: misc/builtin_stuff.cc:348
 msgid "Arc by Center, Angle && Point"
 msgstr "គូស​ធ្នូ​តាម​ចំណុច​កណ្ដាល មុំ និង ចំណុច"
 
 #: misc/builtin_stuff.cc:349
-msgid ""
-"Construct an arc by its center and a given angle, starting at a given point"
+msgid "Construct an arc by its center and a given angle, starting at a given point"
 msgstr "សង់​ធ្នូរ​តាម​ចំណុច​កណ្តាល​របស់​វា​ និង មុំ​ដែល​បាន​ផ្តល់​ឲ្យ​ ដោយ​​ចាប់ផ្តើម​នៅ​ចំណុច​ដែល​ផ្ដល់​ឲ្យ"
 
 #: misc/builtin_stuff.cc:357
@@ -1393,8 +1407,7 @@ msgid "Scale"
 msgstr "មាត្រដ្ឋាន"
 
 #: misc/builtin_stuff.cc:411
-msgid ""
-"Scale an object over a point, by the ratio given by the length of a segment"
+msgid "Scale an object over a point, by the ratio given by the length of a segment"
 msgstr "ធ្វើ មាត្រដ្ឋាន​វត្ថុ​លើ​ជ្រុង​ តាម​សមាមាត្រ​ដែល​បាន​ផ្តល់​ឲ្យ​តាម​ប្រវែង​នៃ​ចម្រៀក​"
 
 #: misc/builtin_stuff.cc:418
@@ -1402,8 +1415,7 @@ msgid "Scale over Line"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​លើ​បន្ទាត់​"
 
 #: misc/builtin_stuff.cc:419
-msgid ""
-"An object scaled over a line, by the ratio given by the length of a segment"
+msgid "An object scaled over a line, by the ratio given by the length of a segment"
 msgstr "វត្ថុ​ដែល​បាន​ធ្វើ​មាត្រដ្ឋាន​លើ​បន្ទាត់​ តាម​សមាមាត្រ​ដែល​បាន​ផ្តល់​ឲ្យ​ដោយ​ប្រវែង​ចម្រៀក​"
 
 #: misc/builtin_stuff.cc:426
@@ -1431,11 +1443,10 @@ msgid "Apply Similitude"
 msgstr "អនុវត្ត​ភាព​ដូច​គ្នា​"
 
 #: misc/builtin_stuff.cc:443
-#, fuzzy
 msgid ""
 "Apply a similitude to an object (the sequence of a scaling and rotation "
 "around a center)"
-msgstr "អនុវត្ត​ភាព​ដូចគ្នា​ទៅ​នឹង វត្ថុ​ ( លំដាប់​នៃ​ការធ្វើ​មាត្រដ្ឋាន​និង ​ការបង្វិល​មុំ​ជុំវិញ​ចំណុច​កណ្តាល​ )"
+msgstr "អនុវត្ត​ដំណាលៗគ្នា​ទៅ​វត្ថុ​មួយ (លំដាប់​ធ្វើមាត្រដ្ឋាន និង​បង្វិលជុំវិញ​ចំណុច​កណ្ដាល)"
 
 #: misc/builtin_stuff.cc:450
 msgid "Harmonic Homology"
@@ -1445,8 +1456,7 @@ msgstr "ភាព​ដូច​គ្នា​​ដែល​រលាយ​ច
 msgid ""
 "The harmonic homology with a given center and a given axis (this is a "
 "projective transformation)"
-msgstr ""
-"ភាពដូច​គ្នា​ដែល​រលាយ​ចូល​គ្នា​តាម​ចំណុចកណ្តាល​និង អ័ក្ស​ដែល​បាន ​ផ្តល​ឲ្យ​ នេះ​ជា​ការ​បម្លែង​ដែ​បញ្ចាំង​)"
+msgstr "ភាពដូច​គ្នា​ដែល​រលាយ​ចូល​គ្នា​តាម​ចំណុចកណ្តាល​និង អ័ក្ស​ដែល​បាន ​ផ្តល​ឲ្យ​ នេះ​ជា​ការ​បម្លែង​ដែ​បញ្ចាំង​)"
 
 #: misc/builtin_stuff.cc:466
 msgid "Draw Projective Shadow"
@@ -1532,11 +1542,11 @@ msgstr "ពិសោធ​គូស​ពហុកោណ​ដែល​បាន
 
 #: misc/builtin_stuff.cc:582
 msgid "Existence Test"
-msgstr ""
+msgstr "ការ​សាកល្បង​ដែលស្ថិតស្ថេរ"
 
 #: misc/builtin_stuff.cc:583
 msgid "Test whether a given object is constructible"
-msgstr ""
+msgstr "សាកល្បង​ថាតើ​វត្ថុដែលបានផ្ដល់​អាច​សាងសង់​​បានដែរ​ឬទេ"
 
 #: misc/builtin_stuff.cc:590
 msgid "Distance Test"
@@ -1649,6 +1659,9 @@ msgid ""
 "If you switch to another unit, the value in the edit field on the left will "
 "be converted to the new selected unit."
 msgstr ""
+"ជ្រើស​ពី​បញ្ជី​​ឯកតា​រង្វាស់​មុំ​ដែល​អ្នក​ចង់​ប្រើ​ដើម្បីកែប្រែ​ទំហំ​របស់​មុំ​នេះ ។<br />\n"
+"ប្រសិនបើ​អ្នក​ប្ដូរ​ទៅ​ឯកសារ​ផ្សេង តម្លៃ​នៅ​ក្នុង​វាល​កែសម្រួល​នៅ​ខាង​ឆ្វេង​នឹង​ត្រូវ​បានបម្លែង​ទៅ​ឯកសារ​ដែល​បាន​"
+"ជ្រើស​ថ្មី ។"
 
 #: misc/lists.cc:302 misc/lists.cc:308
 #, kde-format
@@ -1739,8 +1752,7 @@ msgid "Construct a polygon by giving its vertices"
 msgstr "សង់​ពហុកោណ​តាម​កំពូល​ដែល​វា​កំពុង​ផ្តល់​ឲ្យ​"
 
 #: misc/special_constructors.cc:591
-msgid ""
-"... with this vertex (click on the first vertex to terminate construction)"
+msgid "... with this vertex (click on the first vertex to terminate construction)"
 msgstr "... ជាមួយ​កំពូល​នេះ  (ចុចលើ​កំពូល​ដំបូង​គេ​ដើម្បី​បញ្ចប់​ដំណើរការ​ការសាងសង់​)"
 
 #: misc/special_constructors.cc:592
@@ -1833,8 +1845,7 @@ msgstr "ភាព​ដូច​គ្នា​នៃ​ប្រភេទ"
 msgid ""
 "The unique affinity that maps three points (or a triangle) onto three other "
 "points (or a triangle)"
-msgstr ""
-"មាន​ភាពដូចគ្នា​តែមួយ​គត់​ដែល​ផ្គូរផ្គង​ទៅ​នឹង ជ្រុង​ទាំងបី​ (ឬ ត្រីកោណ​) លើ​ជ្រុង​បី​ផ្សេង​ទៀត​ (ឬ ត្រីកោណ​)"
+msgstr "មាន​ភាពដូចគ្នា​តែមួយ​គត់​ដែល​ផ្គូរផ្គង​ទៅ​នឹង ជ្រុង​ទាំងបី​ (ឬ ត្រីកោណ​) លើ​ជ្រុង​បី​ផ្សេង​ទៀត​ (ឬ ត្រីកោណ​)"
 
 #: misc/special_constructors.cc:1239
 msgid "Generic Projective Transformation"
@@ -1871,9 +1882,8 @@ msgid "Arc to transport"
 msgstr "ធ្នូ​សម្រាប់​បញ្ជូន​"
 
 #: misc/special_constructors.cc:1454
-#, fuzzy
 msgid "Value to transport"
-msgstr "ធ្នូ​សម្រាប់​បញ្ជូន​"
+msgstr "តម្លៃ​ត្រូវ​បញ្ជូន"
 
 #: misc/special_constructors.cc:1456
 msgid "Transport a measure on this line"
@@ -1906,10 +1916,9 @@ msgstr "ប្រសព្វ​ជាមួយ​បន្ទាត់​នេ
 
 #: misc/special_constructors.cc:1523 objects/intersection_types.cc:155
 #: objects/intersection_types.cc:223
-#, fuzzy
 #| msgid "Intersect with this conic"
 msgid "Intersect with this cubic"
-msgstr "ប្រសព្វ​ជាមួយ​សាជី​នេះ "
+msgstr "ប្រសព្វ​ជាមួយ​គូប​នេះ"
 
 #: misc/special_constructors.cc:1532 misc/special_constructors.cc:1534
 #: objects/intersection_types.cc:471 objects/intersection_types.cc:473
@@ -1977,8 +1986,7 @@ msgid "Construct Midpoint of This Point and Another One"
 msgstr "សង់​ចំណុច​កណ្តាល​នៃ​ជ្រុង​នេះ​និង ជ្រុង​មួយ​ផ្សេងទៀត​"
 
 #: misc/special_constructors.cc:1664
-msgid ""
-"Select the first of the points of which you want to construct the midpoint..."
+msgid "Select the first of the points of which you want to construct the midpoint..."
 msgstr "ជ្រើស​ចំណុច​ដំបូង​គេ​ដែល​អ្នក​ចង់​សង់​ចំណុច​កណ្តាល​..."
 
 #: misc/special_constructors.cc:1665
@@ -2054,19 +2062,16 @@ msgid "Center of Curvature at This Point"
 msgstr "ចំណុច​កណ្តាល​នៃកំណោង​របស់​ចំណុច​នេះ"
 
 #: misc/unit.cc:121
-#, fuzzy
 msgctxt "Translators: Pixel"
 msgid "pixel"
 msgstr " ភីកសែល"
 
 #: misc/unit.cc:122
-#, fuzzy
 msgctxt "Translators: Centimeter"
 msgid "cm"
 msgstr "ស.ម."
 
 #: misc/unit.cc:123
-#, fuzzy
 msgctxt "Translators: Inch"
 msgid "in"
 msgstr "អ៊ិន្ឈ៍"
@@ -2397,8 +2402,7 @@ msgid "Construct an angle through this point"
 msgstr "សង់​មុំ​តាម​ចំណុច​នេះ​"
 
 #: objects/angle_type.cc:45
-msgid ""
-"Select a point that the first half-line of the angle should go through..."
+msgid "Select a point that the first half-line of the angle should go through..."
 msgstr "ជ្រើស​ចំណុច​ដែល​មុំ​ពាក់កណ្តាល​បន្ទាត់​ដំបូង​ត្រូវ​កាត់​តាម​..."
 
 #: objects/angle_type.cc:46
@@ -2410,8 +2414,7 @@ msgid "Select the point to construct the angle in..."
 msgstr "ជ្រើស​ចំណុច​សម្រាប់​សង់​មុំ​ក្នុង​..."
 
 #: objects/angle_type.cc:49
-msgid ""
-"Select a point that the second half-line of the angle should go through..."
+msgid "Select a point that the second half-line of the angle should go through..."
 msgstr "ជ្រើស​ចំណុច​ដែល​មុំ​ពាក់​កណ្តាល​បន្ទាត់​ទីពីរ​ត្រូវ​កាត់​តាម​..."
 
 #: objects/angle_type.cc:104
@@ -2463,44 +2466,36 @@ msgid "Select the angle of the new arc..."
 msgstr "ជ្រើស​មុំ​នៃ​ធ្នូ​ថ្មី​..."
 
 #: objects/arc_type.cc:225
-#, fuzzy
 msgid "Construct a conic arc starting at this point"
 msgstr "សង់​ធ្នូ​ដោយ​ចាប់ផ្ដើម​នៅ​ចំណុច​នេះ"
 
 #: objects/arc_type.cc:226
-#, fuzzy
 msgid "Select the start point of the new conic arc..."
-msgstr "ជ្រើស​ចំណុច​ចាប់ផ្ដើម​នៃ​ធ្នូ​ថ្មី..."
+msgstr "ជ្រើស​ចំណុច​ចាប់ផ្ដើម​របស់​ធ្នូ​ថ្មី..."
 
 #: objects/arc_type.cc:227
-#, fuzzy
 msgid "Construct a conic arc through this point"
 msgstr "សង់​សាជី​កាត់តាម​ចំណុច​នេះ​"
 
 #: objects/arc_type.cc:228
-#, fuzzy
 msgid "Select a point for the new conic arc to go through..."
-msgstr "ជ្រើស​ចំណុច​សម្រាប់​សាជី​ថ្មី​កាត់តាម​..."
+msgstr "ជ្រើស​ចំណុច​សម្រាប់​ធ្នូ​​សាជី​ថ្មី​ដែលត្រូវ​កាត់តាម...​"
 
 #: objects/arc_type.cc:229
-#, fuzzy
 msgid "Construct a conic arc ending at this point"
-msgstr "សង់​ចុង​ធ្នូ​កាត់តាម​ចំណុច​នេះ​"
+msgstr "សង់​ចុង​ធ្នូសាជី​​នៅ​ចំណុច​នេះ"
 
 #: objects/arc_type.cc:230
-#, fuzzy
 msgid "Select the end point of the new conic arc..."
-msgstr "ជ្រើស​ចុង​ចំណុច​នៃ​ធ្នូ​ថ្មី ..."
+msgstr "ជ្រើស​ចុង​ចំណុច​របស់​ធ្នូ​សាជី​ថ្មី..."
 
 #: objects/arc_type.cc:234
-#, fuzzy
 msgid "Construct an conic arc with this center"
 msgstr "សង់​ធ្នូ​ជាមួយ​ចំណុច​កណ្តាល​"
 
 #: objects/arc_type.cc:235
-#, fuzzy
 msgid "Select the center of the new conic arc..."
-msgstr "ជ្រើស​ចំណុច​កណ្តាល​នៃ​ធ្នូ​ថ្មី..."
+msgstr "ជ្រើស​ចំណុច​កណ្ដាល​របស់​ធ្នូ​សាជី​ថ្មី..."
 
 #: objects/bogus_imp.cc:338
 msgid "Test Result"
@@ -2523,7 +2518,6 @@ msgid "Radius"
 msgstr "កាំ"
 
 #: objects/circle_imp.cc:149 objects/conic_imp.cc:85 objects/other_imp.cc:377
-#, fuzzy
 msgid "Center"
 msgstr "កណ្ដាល"
 
@@ -2592,14 +2586,12 @@ msgid "Select a point for the new circle to go through..."
 msgstr "ជ្រើស​ចំណុច​សម្រាប់​រង្វង់ថ្មី​កាត់តាម​..."
 
 #: objects/circle_type.cc:195
-#, fuzzy
 msgid "With this radius"
-msgstr "ជាមួយ​ធ្នូ​នេះ​"
+msgstr "ជា​មួយកាំ​នេះ"
 
 #: objects/circle_type.cc:196
-#, fuzzy
 msgid "Select the length of the radius..."
-msgstr "ជ្រើស​មុំ​នៃ​ការ​បង្វិល..."
+msgstr "ជ្រើស​ប្រវែង​របស់​កាំ..."
 
 #: objects/conic_imp.cc:84
 msgid "Conic Type"
@@ -2626,7 +2618,6 @@ msgid "Parabola"
 msgstr "ប៉ារ៉ាបូល​"
 
 #: objects/conic_imp.cc:264
-#, fuzzy
 msgid "rho"
 msgstr "rho"
 
@@ -2980,10 +2971,9 @@ msgstr "លាក់ខ្សែកោង​"
 
 #: objects/intersection_types.cc:157 objects/intersection_types.cc:158
 #: objects/intersection_types.cc:225
-#, fuzzy
 #| msgid "Compute the inversion of this point"
 msgid "Already computed intersection point"
-msgstr "គណនា​ការរៀបបញ្ច្រាស​នៃ​ជ្រុង​នេះ​"
+msgstr "បាន​គណនា​ចំណុច​ប្រសព្វ​រួច​ហើយ"
 
 #: objects/intersection_types.cc:396
 msgid "Intersect with this cubic curve"
@@ -3002,14 +2992,12 @@ msgid "Select the circle we want to invert against..."
 msgstr "ជ្រើស​រង្វង់​ដែល​អ្នក​ចង់​ដាក់បញ្ច្រាស​ម្តងទៀត​..."
 
 #: objects/inversion_type.cc:40
-#, fuzzy
 msgid "Compute the inversion of this object"
-msgstr "គណនា​ការរៀបបញ្ច្រាស​នៃ​ជ្រុង​នេះ​"
+msgstr "គណនា​បញ្ច្រាស​របស់​វត្ថុ​នេះ"
 
 #: objects/inversion_type.cc:41
-#, fuzzy
 msgid "Select the object to invert..."
-msgstr "ជ្រើស​ជ្រុង​ដើម្បី​ដាក់​បញ្ច្រាស..."
+msgstr "ជ្រើស​វត្ថុ​ត្រូវ​បម្លែង..."
 
 #: objects/inversion_type.cc:292
 msgid "Compute the inversion of this point"
@@ -3064,14 +3052,12 @@ msgid "Length"
 msgstr "ប្រវែង"
 
 #: objects/line_imp.cc:125 objects/line_imp.cc:195
-#, fuzzy
 msgid "Support Line"
-msgstr "មិន​បាន​គាំទ្រ"
+msgstr "គាំទ្រ​បន្ទាត់"
 
 #: objects/line_imp.cc:196
-#, fuzzy
 msgid "End Point"
-msgstr "ចំណុច​កណ្តាល​"
+msgstr "ចំណុច​ចុង"
 
 #: objects/line_imp.cc:523 objects/line_imp.cc:532
 msgid "line"
@@ -3331,7 +3317,7 @@ msgstr "លាក់​ស្ថានរេខាណិត"
 
 #: objects/locus_imp.cc:570
 msgid "Possibly trascendental curve"
-msgstr ""
+msgstr "ប្រហែល​ជា​ខ្សែកោង​របស់ trascendental"
 
 #: objects/object_imp.cc:54
 msgid "Object Type"
@@ -3411,9 +3397,8 @@ msgid "Arc Length"
 msgstr "ប្រវែង​ធ្នូ"
 
 #: objects/other_imp.cc:384
-#, fuzzy
 msgid "Support Circle"
-msgstr "បង្ហាញ​រង្វង់​"
+msgstr "គាំទ្រ​រង្វង់"
 
 #: objects/other_imp.cc:573
 msgid "angle"
@@ -3636,14 +3621,12 @@ msgid "Select the segment to transport on the circle..."
 msgstr "ជ្រើស​ចម្រៀក​សម្រាប់​បញ្ជូន​លើ​រង្វង់​..."
 
 #: objects/point_type.cc:686
-#, fuzzy
 msgid "Select a number/length as x coordinate of the point..."
-msgstr "ជ្រើសចម្រៀក​ដែល​មាន​ប្រវែង​ជា​កត្តា​នៃ​ការ​ធ្វើ​មាត្រដ្ឋាន.."
+msgstr "ជ្រើស​ប្រវែង/លេខ​ជា​កូអោដោណេ x របស់​ចំណុច..."
 
 #: objects/point_type.cc:688
-#, fuzzy
 msgid "Select a number/length as y coordinate of the point..."
-msgstr "ជ្រើសចម្រៀក​ដែល​មាន​ប្រវែង​ជា​កត្តា​នៃ​ការ​ធ្វើ​មាត្រដ្ឋាន.."
+msgstr "ជ្រើស​ប្រវែង/លេខ​ជា​គូអោដោណេ​ y របស់​ចំណុច..."
 
 #: objects/polygon_imp.cc:226
 msgid "Number of sides"
@@ -3789,35 +3772,28 @@ msgid "Select the polygon of which you want the intersection with a line..."
 msgstr "ជ្រើស​ពហុកោណ​ដែល​អ្នក​ចង់​ប្រសព្វ​ជាមួយ​បន្ទាត់​..."
 
 #: objects/polygon_type.cc:395
-#, fuzzy
 msgid "Intersect this line with a polygon"
-msgstr "ប្រសព្វ​ពហុកោណ ជាមួយ​បន្ទាត់​នេះ "
+msgstr "ប្រសព្វ​ជា​មួយ​បន្ទាត់នេះ​មាន​ពហុកោណ​មួយ"
 
 #: objects/polygon_type.cc:396
-#, fuzzy
 msgid "Select the line of which you want the intersection with a polygon..."
-msgstr "ជ្រើស​ពហុកោណ​ដែល​អ្នក​ចង់​ប្រសព្វ​ជាមួយ​បន្ទាត់​..."
+msgstr "ជ្រើស​បន្ទាត់​ដែល​​អ្នក​ចង់​ឲ្យ​ប្រសព្វ​ជា​មួយ​ពហុកោណ..."
 
 #: objects/polygon_type.cc:605
-#, fuzzy
 msgid "Intersect this polygon with another polygon"
-msgstr "ប្រសព្វ​ពហុកោណ ជាមួយ​បន្ទាត់​នេះ "
+msgstr "ប្រសព្វ​​ពហុកោណ​នេះ​​ជា​មួយ​ពហុកោណ​ផ្សេង"
 
 #: objects/polygon_type.cc:606
-#, fuzzy
-msgid ""
-"Select the polygon of which you want the intersection with another polygon..."
-msgstr "ជ្រើស​ពហុកោណ​ដែល​អ្នក​ចង់​ប្រសព្វ​ជាមួយ​បន្ទាត់​..."
+msgid "Select the polygon of which you want the intersection with another polygon..."
+msgstr "ជ្រើស​ពហុកោណ​ដែល​អ្នក​ឲ្យ​ប្រសព្វ​ជា​មួយ​ពហុកោណ​​ពហុកោណ​ផ្សេង..."
 
 #: objects/polygon_type.cc:607
-#, fuzzy
 msgid "Intersect with this polygon"
-msgstr "ប្រសព្វ​ជាមួយ​បន្ទាត់​នេះ​"
+msgstr "ប្រសព្វ​ជា​មួយ​ពហុកោណ​នេះ"
 
 #: objects/polygon_type.cc:608
-#, fuzzy
 msgid "Select the second polygon for the intersection..."
-msgstr "ជ្រើស​វត្ថុ​លើក​ទី​ពីរ​ដើម្បី​ប្រសព្វ​..."
+msgstr "ជ្រើស​ពហុកោណ​ទីពីរ​សម្រាប់​ការ​ប្រសព្វ​នេះ..."
 
 #: objects/polygon_type.cc:754
 msgid "Construct the vertices of this polygon"
@@ -3996,8 +3972,7 @@ msgid "Check if this point has the same distance"
 msgstr "ពិនិត្យ​ជ្រុង​នេះ​មាន​ចម្ងាយ​ដូ​ចគ្នា​"
 
 #: objects/tests_type.cc:302
-msgid ""
-"Select the point which might have the same distance from two other points..."
+msgid "Select the point which might have the same distance from two other points..."
 msgstr "ជ្រើស​ចំណុច​ដែល​មាន​ចម្ងាយ​ដូច​គ្នា​រវាង​ចំណុច​ទាំងពី​រ​ផ្សេងគ្នា​..."
 
 #: objects/tests_type.cc:303
@@ -4049,28 +4024,24 @@ msgid "The two vectors are not the same."
 msgstr "វ៉ិចទ័រ​ទាំង​ពីរ​មិន​ដូច​គ្នា​ ។​"
 
 #: objects/tests_type.cc:388
-#, fuzzy
 #| msgid "Check whether this point is on a curve"
 msgid "Check whether this object exists"
-msgstr "ពិនិត្យ​ថា​តើ​ចំណុច​នេះស្ថិត​លើ​ខ្សែកោង​ដែរឬ​ទេ​"
+msgstr "ពិនិត្យ​មើល​ថាតើ​មាន​វត្ថុ​នេះ​ហើយ​ឬនៅ"
 
 #: objects/tests_type.cc:389
-#, fuzzy
 #| msgid "Select the object to scale..."
 msgid "Select the object for the existence check..."
-msgstr "ជ្រើស​វត្ថុ​សម្រាប់​ធ្វើ​មាត្រដ្ឋាន​..."
+msgstr "ជ្រើស​វត្ថុ​សម្រាប់​ការ​ពិនិត្យ​ភាព​ស្ថិតស្ថេរ..."
 
 #: objects/tests_type.cc:413
-#, fuzzy
 #| msgid "Object Type"
 msgid "The object exists."
-msgstr "ប្រភេទ​វត្ថុ​"
+msgstr "មាន​វត្ថុ ។"
 
 #: objects/tests_type.cc:415
-#, fuzzy
 #| msgid "The two vectors are not the same."
 msgid "The object does not exist."
-msgstr "វ៉ិចទ័រ​ទាំង​ពីរ​មិន​ដូច​គ្នា​ ។​"
+msgstr "មិនទាន់​មាន​វត្ថុ​ទេ ។"
 
 #: objects/text_imp.cc:84
 msgid "Text"
@@ -4200,9 +4171,8 @@ msgid "&Toggle Frame"
 msgstr "បិទបើក​ស៊ុម"
 
 #: objects/text_type.cc:177
-#, fuzzy
 msgid "Set &Font..."
-msgstr "កំណត់​ប្រវែង​..."
+msgstr "កំណត់​ពុម្ពអក្សរ..."
 
 #: objects/text_type.cc:206
 msgid "Toggle Label Frame"
@@ -4310,37 +4280,28 @@ msgid "Select the center point of the scaling..."
 msgstr "ជ្រើស​ចំណុច​កណ្ដាល​នៃ​ការ​ធ្វើ​មាត្រដ្ឋាន..."
 
 #: objects/transform_types.cc:188 objects/transform_types.cc:275
-#, fuzzy
 msgid "Scale by this length"
-msgstr "ធ្វើ​មាត្រដ្ឋាន​ពី​ចំណុច​កណ្ដាល​នេះ"
+msgstr "ធ្វើ​មាត្រដ្ឋាន​តាម​ប្រវែង​នេះ"
 
 #: objects/transform_types.cc:189 objects/transform_types.cc:276
-#, fuzzy
-msgid ""
-"Select a length or a segment whose length is the factor of the scaling..."
-msgstr "ជ្រើសចម្រៀក​ដែល​មាន​ប្រវែង​ជា​កត្តា​នៃ​ការ​ធ្វើ​មាត្រដ្ឋាន.."
+msgid "Select a length or a segment whose length is the factor of the scaling..."
+msgstr "ជ្រើស​ប្រវែង ឬ​ចម្រៀកល​ដែល​ប្រវែង​របស់​គឺ​ជា​កត្តា​​នៃ​កា​រធ្វើ​មាត្រដ្ឋាន..."
 
 #: objects/transform_types.cc:231 objects/transform_types.cc:314
-#, fuzzy
 msgid "Scale this length..."
-msgstr "កំណត់​ប្រវែង​..."
+msgstr "ធ្វើ​មាត្រដ្ឋាន​ប្រវែង​នេះ..."
 
 #: objects/transform_types.cc:232 objects/transform_types.cc:315
-#, fuzzy
-msgid ""
-"Select the first of two lengths whose ratio is the factor of the scaling..."
-msgstr "ជ្រើស​ចម្រៀក​ទីមួយ​នៃ​ចម្រៀក​ពីរ​ដែល​សមាមាត្រ​របស់​វា​ជា​កត្តា​នៃ​ការ​ធ្វើ​មាត្រដ្ឋាន..."
+msgid "Select the first of two lengths whose ratio is the factor of the scaling..."
+msgstr "ជ្រើស​ប្រវែង​ដំបូង​ពីរ​ដែល​កាំ​របស់វា​គឺ​ជា​កត្តា​នៃ​ការ​ធ្វើ​មាត្រដ្ឋាន..."
 
 #: objects/transform_types.cc:233 objects/transform_types.cc:316
-#, fuzzy
 msgid "...to this other length"
-msgstr "ទៅ​ជា​ត្រីកោណ​នេះ​ផ្សេង​ទៀត"
+msgstr "...ទៅ​ប្រវែង​ផ្សេង​នេះ"
 
 #: objects/transform_types.cc:234 objects/transform_types.cc:317
-#, fuzzy
-msgid ""
-"Select the second of two lengths whose ratio is the factor of the scaling..."
-msgstr "ជ្រើស​ចម្រៀក​ទី​ពីរ​នៃ​ចម្រៀក​ពីរ​ដែល​សមាមាត្រ​របស់​វា​ជា​កត្តា​នៃ​ការ​ធ្វើ​មាត្រដ្ឋាន..."
+msgid "Select the second of two lengths whose ratio is the factor of the scaling..."
+msgstr "ជ្រើស​ប្រវែង​ទី​ពីរចំនួន​ពីរ​ដែលកាំ​របស់​វា​គឺ​ជា​កត្តា​នៃ​ការ​ធ្វើ​មាត្រដ្ឋាន...."
 
 #: objects/transform_types.cc:272 objects/transform_types.cc:310
 msgid "Select the object to scale"
@@ -4435,8 +4396,7 @@ msgid "First of 3 starting points"
 msgstr "ចំណុច​ទី​មួយ​នៃ​ចំណុច​ចាប់ផ្ដើម​បី"
 
 #: objects/transform_types.cc:474
-msgid ""
-"Select the first of the three starting points of the generic affinity..."
+msgid "Select the first of the three starting points of the generic affinity..."
 msgstr "ជ្រើស​ចំណុច​ទី​មួយ​នៃ​ចំណុច​ចាប់ផ្ដើម​បីនៃ​ប្រភេទ​ដូច​គ្នា..."
 
 #: objects/transform_types.cc:475
@@ -4444,8 +4404,7 @@ msgid "Second of 3 starting points"
 msgstr "ចំណុច​ទីពីរ​នៃ​ចំណុច​ចាប់ផ្ដើម​បី"
 
 #: objects/transform_types.cc:476
-msgid ""
-"Select the second of the three starting points of the generic affinity..."
+msgid "Select the second of the three starting points of the generic affinity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់ផ្ដើម​ទីពីរ​នៃ​ចំណុច​ចាប់ផ្ដើម​បី​នៃ​ប្រភេទ​ដូចគ្នា..."
 
 #: objects/transform_types.cc:477
@@ -4453,8 +4412,7 @@ msgid "Third of 3 starting points"
 msgstr "ចំណុច​ទីបី​នៃ​ចំណុច​ចាប់ផ្ដើម ៣"
 
 #: objects/transform_types.cc:478
-msgid ""
-"Select the third of the three starting points of the generic affinity..."
+msgid "Select the third of the three starting points of the generic affinity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់ផ្ដើម​ទីបី​នៃ​ចំណុច​ចាប់ផ្ដើម​បី​នៃ​ប្រភេទ​ដូចគ្នា..."
 
 #: objects/transform_types.cc:479 objects/transform_types.cc:580
@@ -4510,8 +4468,7 @@ msgid "First of 4 starting points"
 msgstr "ចំណុច​ចាប់ផ្ដើម​ទីមួយ​នៃ​ចំណុច​ចាប់ផ្ដើម ៤"
 
 #: objects/transform_types.cc:573
-msgid ""
-"Select the first of the four starting points of the generic projectivity..."
+msgid "Select the first of the four starting points of the generic projectivity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់ផ្ដើម​ទីមួយ​នៃ​ចំណុច​ចាប់ផ្ដើម​បួន​នៃ​ប្រភេទ​លយ..."
 
 #: objects/transform_types.cc:574
@@ -4519,8 +4476,7 @@ msgid "Second of 4 starting points"
 msgstr "ចំណុច​ចាប់ផ្ដើម​ទីពីរ​នៃ​ចំណុច​ចាប់ផ្ដើម ៤"
 
 #: objects/transform_types.cc:575
-msgid ""
-"Select the second of the four starting points of the generic projectivity..."
+msgid "Select the second of the four starting points of the generic projectivity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់ផ្ដើម​ទីពីរ​នៃ​ចំណុច​ចាប់ផ្ដើម​បួន​នៃ​ប្រភេទ​ភាព​លយ..."
 
 #: objects/transform_types.cc:576
@@ -4528,8 +4484,7 @@ msgid "Third of 4 starting points"
 msgstr "ចំណុច​ចាប់ផ្ដើម​ទីបី​នៃ​ចំណុច​ចាប់ផ្ដើម ៤"
 
 #: objects/transform_types.cc:577
-msgid ""
-"Select the third of the four starting points of the generic projectivity..."
+msgid "Select the third of the four starting points of the generic projectivity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់ផ្ដើម​ទីបី​នៃ​ចំណុច​ចាប់ផ្ដើម​បួន​នៃ​ប្រភេទ​លយ..."
 
 #: objects/transform_types.cc:578
@@ -4537,8 +4492,7 @@ msgid "Fourth of 4 starting points"
 msgstr "ចំណុច​ចាប់ផ្ដើម​ទីបួន​នៃ​ចំណុច​ចាប់ផ្ដើម ៤"
 
 #: objects/transform_types.cc:579
-msgid ""
-"Select the fourth of the four starting points of the generic projectivity..."
+msgid "Select the fourth of the four starting points of the generic projectivity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់ផ្ដើម​ទីបួន​នៃ​ចំណុច​ចាប់ផ្ដើម​បួន​នៃ​ប្រភេទ​ភាព​លយ..."
 
 #: objects/transform_types.cc:581
@@ -4618,8 +4572,7 @@ msgid "Apply a similitude mapping a point onto this point"
 msgstr "អនុវត្ត​ភាព​ដូច​គ្នា​ដែល​ផ្គូផ្គង​ចំណុច​ទៅ​និង​ចំណុច​នេះ"
 
 #: objects/transform_types.cc:900
-msgid ""
-"Select the point onto which the similitude should map the first point..."
+msgid "Select the point onto which the similitude should map the first point..."
 msgstr "ជ្រើស​ជ្រុង​ដែល​ដូច​គ្នា​ត្រូវ​តែ​ផ្គួរផ្គង​ទៅ​នឹង ជ្រុង​ដំបូង​គេ​..."
 
 #: objects/vector_type.cc:26
@@ -4643,8 +4596,7 @@ msgid "Construct the vector sum of this vector and another one."
 msgstr "សង់​ផលបូក​វ៉ិចទ័រ​នៃ​វ៉ិចទ័រ​នេះ និង​មួយ​ផ្សេង​ទៀត ។"
 
 #: objects/vector_type.cc:62
-msgid ""
-"Select the first of the two vectors of which you want to construct the sum..."
+msgid "Select the first of the two vectors of which you want to construct the sum..."
 msgstr "ជ្រើស​វ៉ិចទ័រ​ទីមួយ​នៃ​វ៉ិចទ័រ​ពីរ​ដែល​អ្នក​ចង់​សង់​ផលបូក..."
 
 #: objects/vector_type.cc:63
@@ -4652,8 +4604,7 @@ msgid "Construct the vector sum of this vector and the other one."
 msgstr "សង់​ផលបូក​វ៉ិចទ័រ​នៃ​វ៉ិចទ័រ​នេះ​និង​មួយ​ផ្សេង​ទៀត ។"
 
 #: objects/vector_type.cc:64
-msgid ""
-"Select the other of the two vectors of which you want to construct the sum..."
+msgid "Select the other of the two vectors of which you want to construct the sum..."
 msgstr "ជ្រើស​វ៉ិចទ័រ​ផ្សេង​ទៀត​នៃ​វ៉ិចទ័រ​ពីរ​ដែល​អ្នក​ចង់​សង់​ផលបូក..."
 
 #: objects/vector_type.cc:65
@@ -4669,7 +4620,6 @@ msgid "New Script"
 msgstr "ស្គ្រីប​ថ្មី"
 
 #: scripting/newscriptwizard.cc:73
-#, fuzzy
 #| msgid ""
 #| "Select the argument objects ( if any )\n"
 #| "in the Kig window and press \"Next\"."
@@ -4677,8 +4627,8 @@ msgid ""
 "Select the argument objects (if any)\n"
 "in the Kig window and press \"Next\"."
 msgstr ""
-"ជ្រើស​វត្ថុ​អាគុយម៉ង់ ( ប្រសិនបើមាន​ច្រើន )\n"
-"នៅក្នុង​បង្អួច Kig ហើយចុច \"បន្ទាប់\" ។"
+"ជ្រើស​វត្ថុ​អាគុយម៉ង់ (ប្រសិនបើ​មាន)\n"
+"នៅ​ក្នុង​បង្អួច​របស់ Kig ហើយ​ចុច \"បន្ទាប់\" ។"
 
 #: scripting/newscriptwizard.cc:79
 msgid "Enter Code"
@@ -4767,7 +4717,6 @@ msgid "Save Changes?"
 msgstr "រក្សា​ទុក​ការ​ផ្លាស់ប្ដូរ ?"
 
 #: kig/kig.cpp:239
-#, fuzzy
 #| msgid ""
 #| "*.kig *.kigz *.kgeo *.seg|All Supported Files (*.kig *.kigz *.kgeo *."
 #| "seg)\n"
@@ -4787,13 +4736,14 @@ msgid ""
 "*.fgeo|Dr. Geo Documents (*.fgeo)\n"
 "*.fig *.FIG|Cabri Documents (*.fig *.FIG)"
 msgstr ""
-"*.kig *.kigz *.kgeo *.seg|All ឯកសារ​ដែល​គាំទ្រ (*.kig *.kigz *.kgeo *.seg)\n"
-"ឯកសារ *.kig|Kig  (*.kig)\n"
-"​ឯកសារ​របស់ Kig​ *.kigz|Compressed  (*.kigz)\n"
-"ឯកសារ​ *.kgeo|KGeo  (*.kgeo)\n"
-"ឯកសារ​ *.seg|KSeg  (*.seg)\n"
-"ឯកសារ *.fgeo|Dr. Geo  (*.fgeo)\n"
-"ឯកសារ​ *.fig *.FIG|Cabri ស (*.fig *.FIG)"
+"*.kig *.kigz *.seg *.fgeo *.fig *.FIG|ឯកសារ​ដែល​គាំទ្រ​ទាំងអស់ (*.kig *.kigz *.seg "
+"*.fgeo *.fig)\n"
+"ឯកសារ*.kig|Kig (*.kig)\n"
+"ឯកសារ Kig ដែល​បានបង្ហាប់*.kigz| (*.kigz)\n"
+"ឯកសារ*.kgeo|KGeo (*.kgeo)\n"
+"ឯកសារ *.seg|KSeg (*.seg)\n"
+"ឯកសារ*.fgeo|Dr. Geo (*.fgeo)\n"
+"ឯកសារ*.fig *.FIG|Cabri (*.fig *.FIG)"
 
 #: kig/kig_commands.cpp:99
 #, kde-format
@@ -4846,9 +4796,8 @@ msgid "Cancel the construction of the object being constructed"
 msgstr "បោះបង់​ការសាងសង់​នៃ​វត្ថុ​ដែល​កំពុង​ចាប់​ផ្តើម​សាងសង់​"
 
 #: kig/kig_part.cpp:246
-#, fuzzy
 msgid "Repeat Construction"
-msgstr "បោះបង់​ការ​សាងសង់​"
+msgstr "ធ្វើការ​សង់​ម្ដង​ទៀត"
 
 #: kig/kig_part.cpp:251
 msgid "Repeat the last construction (with new data)"
@@ -4931,15 +4880,14 @@ msgid "Wear Infrared Glasses"
 msgstr "ពាក់​កញ្ចក់​អ៊ីនហ្វ្រារ៉េដ"
 
 #: kig/kig_part.cpp:326
-#, fuzzy
 #| msgid "Enable/Disable hidden objects visibility."
 msgid "Enable/disable hidden objects visibility."
-msgstr "បើក​ ឬ បិទ​ភាព​មើល​ឃើញ​វត្ថុ​ដែល​លាក់"
+msgstr "បើក/បិទ​វត្ថុដែលលាក់​ឲ្យ​មើល​ឃើញ ។"
 
 #: kig/kig_part.cpp:358
-#, fuzzy, kde-format
+#, kde-format
 msgid "Repeat Construction (%1)"
-msgstr "បោះបង់​ការ​សាងសង់​"
+msgstr "ធ្វើការ​សង់​ម្ដង​ទៀត (%1)"
 
 #: kig/kig_part.cpp:360
 #, kde-format
@@ -4960,7 +4908,7 @@ msgid "File Not Found"
 msgstr "រក​មិន​ឃើញ​ឯកសារ​"
 
 #: kig/kig_part.cpp:409
-#, fuzzy, kde-format
+#, kde-format
 #| msgid ""
 #| "You tried to open a document of type \"%1\"; unfortunately, Kig does not "
 #| "support this format. If you think the format in question would be worth "
@@ -4972,9 +4920,9 @@ msgid ""
 "implementing support for, you can always ask us nicely on mailto:pino@kde."
 "org or do the work yourself and send me a patch."
 msgstr ""
-"អ្នក​ព្យាយាម​បើក​ឯកសារ​ប្រភេទ​ \"%1\" ជា​អកុសល​ Kig  មិន​បាន​គាំទ្រ​ទ្រង់ទ្រាយ​នេះ​ឡើយ​ ។ បើ​អ្នក​គិត​ថា​"
-"ទ្រង់ទ្រាយ​​ក្នុង​សំណួរ​នេះ​​មាន​តម្លៃ​គួរ​ឲ្យ​គាំទ្រ​ អ្នក​អាច​សួរ​យើងតាមរយៈ​ mailto:toscano."
-"pino@tiscali.it ឬ​ ធ្វើការ​ដោយ​ខ្លួន​អ្នក​ ហើយ​ផ្ញើរ​បំណះ​មក​កាន់​ខ្ញុំ​ ។​"
+"អ្នក​បាន​ព្យាយាម​បើក​ឯកសារ​ប្រភេទ \"%1\" ជា​អកុសល Kig មិន​គាំទ្រ​ទ្រង់ទ្រាយ​នេះ​ទេ ។ ប្រសិនបើ​​អ្នក​គិត​"
+"ថាត​ទ្រង់ទ្រាយ​នៅ​ក្នុង​សំណួរ​នឹ​ងមាន​តម្លៃ​ក្នុងការ​អនុវត្ត​ការ​គាំទ្រ​ អ្នក​តែងតែ​អាច​សួរ​យើងយ៉ាង​ល្អ​នៅ​ mailto:"
+"pino@kde.org ឬ​ធ្វើ​ដោយ​ខ្លួន​ឯង និង​ផ្ញើ​បំណះ​មក​ឲ្យ​ខ្ញុំ ។"
 
 #: kig/kig_part.cpp:415 kig/kig_part.cpp:458
 msgid "Format Not Supported"
@@ -5041,14 +4989,15 @@ msgid "Select Zoom Area"
 msgstr "ជ្រើស​ផ្ទៃ​ពង្រីក​"
 
 #: kig/kig_view.cpp:587
-#, fuzzy
 #| msgid ""
 #| "Select the zoom area by entering the coordinates of the upper left corner "
 #| "and the lower right corner."
 msgid ""
 "Select the zoom area by entering the coordinates<br />of the upper left "
 "corner and the lower right corner."
-msgstr "ជ្រើស​ផ្ទៃ​ពង្រីក​ដោយ​បញ្ចូល​កូអរដោនេ​នៃ​ជ្រុង​លើ​ខាងឆ្វេង និង ជ្រុង​ក្រោម​ខាង​ស្ដាំ ។"
+msgstr ""
+"ជ្រើស​ផ្ទៃ​ពង្រីក​ដោយ​បញ្ចូល​កូអោដោណេ<br />របស់​ជ្រុង​ខាង​ឆ្វេង​ផ្នែកខាង​លើ​ និង​ជ្រុង​ខាង​ស្ដាំ​ផ្នែក​ខាង​ក្រោម "
+"។"
 
 #: kig/main.cpp:98
 msgid "Kig"
@@ -5083,13 +5032,12 @@ msgstr ""
 " x នៅ​ទីណា​ កូអរដោនេ​ x ​នៅ​ទី​នោះ​ ហើយ​  y ជា​កូអរដោនេ​នៃ​ y  ។​"
 
 #: misc/coordinate_system.cpp:333
-#, fuzzy
 msgid ""
 "Enter coordinates in the following format: <b>\"x;y\"</b>,<br />where x is "
 "the x coordinate, and y is the y coordinate."
 msgstr ""
-"បញ្ចូល​កូអរដោនេ​តាម​ទ្រង់ទ្រាយ​ដូច​ខាងក្រោម​ ៖  <b>\"x;y\"</b>,  x ទីនេះ ជា​កូអរដោនេ​  x ហើយ  "
-"y ជា​កូអរដោនេនៃ​​  y ។​"
+"បញ្ចូល​កូអោដោណេ​នៅ​ក្នុងទ្រង់ទ្រាយ​ដូច​ខាងក្រោម ៖ <b>\"x;y\"</b>,<br />ដែល x គឺ​ជា​កូអោដោណេ x "
+"និង​ y ជា​កូអោដោណេ y ។"
 
 #: misc/coordinate_system.cpp:375
 msgid ""
@@ -5100,13 +5048,12 @@ msgstr ""
 " ទីតាំង​ r និង  θ ជា​កូអរដោនេ​នៃ​បន្ទាត់​រាង​ប៉ូល​ ។​"
 
 #: misc/coordinate_system.cpp:382
-#, fuzzy
 msgid ""
 "Enter coordinates in the following format: <b>\"r; θ°\"</b>,<br />where r "
 "and θ are the polar coordinates."
 msgstr ""
-"បញ្ចូល​កូអរដោនេ​តាម​ទ្រង់ទ្រាយ​ដូច​ខាងក្រោម​ ៖  <b>\"r; θ°\"</b> r នឹង  θ ជា​កូអរដោនេ​បន្ទាត់រាង​"
-"ប៉ូល​ ។​"
+"បញ្ចូល​កូអរដោនេ​តាម​ទ្រង់ទ្រាយ​ដូច​ខាងក្រោម​ ៖  <b>\"r; θ°\"</b> ដែល r នឹង  θ ជា​កូអរដោនេ​​របស់​​"
+"ប៉ូល​ ។​"
 
 #: misc/coordinate_system.cpp:534
 msgid "&Euclidean"
@@ -5125,12 +5072,10 @@ msgid "Set Polar Coordinate System"
 msgstr "កំណត់​ប្រព័ន្ធ​កូអរដោនេ​រាងជា​ប៉ូល​"
 
 #: modes/typesdialog.cpp:129
-#, fuzzy
 msgid "Macro"
 msgstr "ម៉ាក្រូ​"
 
 #: modes/typesdialog.cpp:312
-#, fuzzy
 msgid "Type"
 msgstr "ប្រភេទ"
 
@@ -5180,5 +5125,3 @@ msgstr ""
 msgid "More Than One Type Selected"
 msgstr "បាន​ជ្រើស​ប្រភេទ​ច្រើន​ជាង​មួយ"
 
-#~ msgid "&Help"
-#~ msgstr "ជំនួយ"
