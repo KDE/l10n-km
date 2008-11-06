@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-05 10:49+0100\n"
+"POT-Creation-Date: 2008-11-06 09:50+0100\n"
 "PO-Revision-Date: 2008-10-16 08:27+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -333,7 +333,7 @@ msgid "Page #%1"
 msgstr "កំពុង​ចាក់ ៖ %1"
 
 #: context/engines/current/CurrentEngine.cpp:110
-#: context/applets/currenttrack/CurrentTrack.cpp:120 widgets/Osd.cpp:558
+#: context/applets/currenttrack/CurrentTrack.cpp:120 widgets/Osd.cpp:556
 msgid "No track playing"
 msgstr "មិន​កំពុង​ចាក់​បទ​អ្វី​ទាំងអស់"
 
@@ -740,26 +740,26 @@ msgctxt "Error message, tried to start an invalid service"
 msgid "Invalid (null) service, can not perform any operations."
 msgstr "សេវា​មិន​ត្រឹមត្រូវ (null) មិន​អាច​អនុវត្ត​ប្រតិបត្តិការណាមួយ​ទេ ។"
 
+#. i18n: file: dialogs/tagdialogbase.ui:502
+#. i18n: ectx: property (text), widget (QLabel, scoreLabel)
 #: context/applets/currenttrack/CurrentTrack.cpp:85
-#: context/applets/currenttrack/CurrentTrack.cpp:342
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
-#: playlist/PlaylistModel.cpp:524 widgets/TrackTooltip.cpp:167
-#: widgets/SmartPlaylistEditor.cpp:189
-msgid "Score"
-msgstr "ពិន្ទុ"
+#: context/applets/currenttrack/CurrentTrack.cpp:342 dialogs/TagDialog.cpp:766
+#: rc.cpp:861
+msgid "Score:"
+msgstr "ពិន្ទុ ៖"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:86
-#: context/applets/currenttrack/CurrentTrack.cpp:343
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:256
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:700
-#: playlist/PlaylistModel.cpp:526 widgets/TrackTooltip.cpp:192
-msgid "Play Count"
-msgstr "ចំនួន​ចាក់"
+#: context/applets/currenttrack/CurrentTrack.cpp:343 dialogs/TagDialog.cpp:770
+msgid "Playcount:"
+msgstr "ចំនួន​ចាក់ ៖"
 
 #: context/applets/currenttrack/CurrentTrack.cpp:87
+#: context/applets/currenttrack/CurrentTrack.cpp:344 dialogs/TagDialog.cpp:775
+msgctxt "a single item (singular)"
+msgid "Last Played:"
+msgstr "ចាក់​ចុងក្រោយ ៖"
+
 #: context/applets/currenttrack/CurrentTrack.cpp:245
-#: context/applets/currenttrack/CurrentTrack.cpp:344
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:263
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:707
 #: widgets/TrackTooltip.cpp:197
@@ -1495,21 +1495,11 @@ msgstr "ទំហំ ៖"
 msgid "Format:"
 msgstr "ទ្រង់ទ្រាយ ៖"
 
-#. i18n: file: dialogs/tagdialogbase.ui:502
-#. i18n: ectx: property (text), widget (QLabel, scoreLabel)
-#: dialogs/TagDialog.cpp:766 rc.cpp:861
-msgid "Score:"
-msgstr "ពិន្ទុ ៖"
-
 #. i18n: file: dialogs/tagdialogbase.ui:531
 #. i18n: ectx: property (text), widget (QLabel, ratingLabel)
 #: dialogs/TagDialog.cpp:768 rc.cpp:864
 msgid "Rating:"
 msgstr "​អត្រា ៖"
-
-#: dialogs/TagDialog.cpp:770
-msgid "Playcount:"
-msgstr "ចំនួន​ចាក់ ៖"
 
 #: dialogs/TagDialog.cpp:773
 msgid "First Played:"
@@ -1519,11 +1509,6 @@ msgstr "ចាក់​ដំបូង ៖"
 msgctxt "When this track was first played"
 msgid "Never"
 msgstr "កុំ"
-
-#: dialogs/TagDialog.cpp:775
-msgctxt "a single item (singular)"
-msgid "Last Played:"
-msgstr "ចាក់​ចុងក្រោយ ៖"
 
 #: dialogs/TagDialog.cpp:776
 msgctxt "When this track was last played"
@@ -2192,24 +2177,25 @@ msgstr "បញ្ជីចាក់​ឆ្លាត"
 msgid "Already subscribed to %1."
 msgstr ""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:228
+#: podcasts/sql/SqlPodcastProvider.cpp:244
 msgid "Downloading Podcast Media"
 msgstr "ទាញយក​យក​មេឌៀ​ផតខាស់"
 
-#: podcasts/sql/SqlPodcastProvider.cpp:228
+#: podcasts/sql/SqlPodcastProvider.cpp:244
 #, kde-format
 msgid "Downloading Podcast \"%1\""
 msgstr "ទាញយក​ផតខាស់ \"%1\""
 
-#: podcasts/sql/SqlPodcastProvider.cpp:319
+#: podcasts/sql/SqlPodcastProvider.cpp:335
 #, kde-format
 msgid "Unable to save podcast episode file to %1"
 msgstr "មិន​អាច​រក្សាទុក​ឯកសារ podcast episode ទៅ​កាន់ %1"
 
 #: podcasts/sql/SqlPodcastProvider.h:45
 #: browsers/playlistbrowser/PodcastModel.cpp:365
-#: browsers/playlistbrowser/PodcastModel.cpp:440
-#: browsers/playlistbrowser/PodcastModel.cpp:478
+#: browsers/playlistbrowser/PodcastModel.cpp:450
+#: browsers/playlistbrowser/PodcastModel.cpp:477
+#: browsers/playlistbrowser/PodcastModel.cpp:515
 #: services/opmldirectory/OpmlDirectoryService.cpp:242
 msgid "Local Podcasts"
 msgstr "ផតខាស់​មូលដ្ឋាន"
@@ -2832,12 +2818,25 @@ msgstr "សមាមាត្រ ៖"
 msgid "Match:"
 msgstr "ផ្គូផ្គង ៖"
 
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:256
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:700
+#: playlist/PlaylistModel.cpp:526 widgets/TrackTooltip.cpp:192
+msgid "Play Count"
+msgstr "ចំនួន​ចាក់"
+
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:257
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:701
 #: playlist/PlaylistModel.cpp:525 widgets/TrackTooltip.cpp:185
 #: widgets/SmartPlaylistEditor.cpp:189
 msgid "Rating"
 msgstr "អត្រា"
+
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
+#: playlist/PlaylistModel.cpp:524 widgets/TrackTooltip.cpp:167
+#: widgets/SmartPlaylistEditor.cpp:189
+msgid "Score"
+msgstr "ពិន្ទុ"
 
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:259
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:703
@@ -7058,11 +7057,11 @@ msgstr "ស្ងាត់"
 msgid "OSD Preview - drag to reposition"
 msgstr "ទិដ្ឋភាព OSD - អូស​ដើម្បី​ប្ដូរ​ទីតាំង"
 
-#: widgets/Osd.cpp:579
+#: widgets/Osd.cpp:577
 msgid "No information available for this track"
 msgstr "មិន​មាន​ព័ត៌មាន សម្រាប់​បទ​នេះ​ឡើយ"
 
-#: widgets/Osd.cpp:666
+#: widgets/Osd.cpp:664
 msgid "Paused"
 msgstr "បាន​ផ្អាក"
 
