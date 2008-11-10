@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_weather\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-08 10:56+0100\n"
+"POT-Creation-Date: 2008-11-10 10:18+0100\n"
 "PO-Revision-Date: 2008-01-24 10:14+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -19,7 +19,7 @@ msgstr ""
 
 #. i18n: file: weatherAddPlace.ui:19
 #. i18n: ectx: property (windowTitle), widget (QWidget, weatherAddPlace)
-#: rc.cpp:3 weatherapplet.cpp:603 weatherapplet.cpp:617
+#: rc.cpp:3 weatherapplet.cpp:526 weatherapplet.cpp:539
 msgid "Found Places"
 msgstr "កន្លែង​ដែលរកឃើញ"
 
@@ -29,214 +29,324 @@ msgstr "កន្លែង​ដែលរកឃើញ"
 msgid "Found places"
 msgstr "កន្លែង​ដែលរកឃើញ"
 
-#. i18n: file: weatherConfig.ui:31
+#. i18n: file: weatherConfig.ui:34
 #. i18n: ectx: property (windowTitle), widget (QWidget, weatherConfig)
 #: rc.cpp:9
-msgid "Weather Applet Configuration"
+#, fuzzy
+#| msgid "Weather Applet Configuration"
+msgid "Weather Applet"
 msgstr "ការកំណត់រចនាសម្ព័ន្ធ​អាប់ភ្លេត​អាកាសធាតុ"
 
-#. i18n: file: weatherConfig.ui:45
-#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: weatherConfig.ui:50
+#. i18n: ectx: attribute (title), widget (QWidget, locationConfig)
 #: rc.cpp:12
-msgid "Select data source:"
-msgstr "ជ្រើស​ប្រភព​ទិន្នន័យ ៖"
+msgid "Location"
+msgstr ""
+
+#. i18n: file: weatherConfig.ui:62
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: rc.cpp:15
+#, fuzzy
+#| msgid "&Search"
+msgid "Search Place"
+msgstr "ស្វែង​រក"
 
 #. i18n: file: weatherConfig.ui:74
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:15
-msgid "Type in a location:"
-msgstr "វាយ​ក្នុង​ទីតាំង ៖"
-
-#. i18n: file: weatherConfig.ui:106
-#. i18n: ectx: property (text), widget (QPushButton, validateButton)
 #: rc.cpp:18
+#, fuzzy
+#| msgid "Place"
+msgid "&Place"
+msgstr "ទីកន្លែង"
+
+#. i18n: file: weatherConfig.ui:90
+#. i18n: ectx: property (text), widget (QPushButton, validateButton)
+#: rc.cpp:21
 msgid "&Search"
 msgstr "ស្វែង​រក"
 
-#. i18n: file: weatherConfig.ui:119
+#. i18n: file: weatherConfig.ui:131
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:21
-msgid "Selected places:"
+#: rc.cpp:24
+#, fuzzy
+#| msgid "Selected places:"
+msgid "Selected place"
 msgstr "កន្លែង​ដែលបាន​ជ្រើស ៖"
 
-#. i18n: file: weatherConfig.ui:186
-#. i18n: ectx: property (text), widget (QPushButton, removeButton)
-#: rc.cpp:24
-msgid "&Remove Place"
-msgstr "យក​កន្លែង​ចេញ"
-
-#. i18n: file: weatherConfig.ui:195
-#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: file: weatherConfig.ui:163
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: rc.cpp:27
-msgid "Update weather information every"
-msgstr "ធ្វើ​ឲ្យ​ព័ត៌មាន​អាកាសធាតុ​ទាន់សម័យ​រៀងរាល់"
+#, fuzzy
+#| msgid "Data Source"
+msgid "Weather Source"
+msgstr "ប្រភព​ទិន្នន័យ"
 
-#. i18n: file: weatherConfig.ui:208
-#. i18n: ectx: property (suffix), widget (QSpinBox, weatherUpdateSpin)
+#. i18n: file: weatherConfig.ui:169
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:30
+#, fuzzy
+#| msgid "Data Source"
+msgid "S&ource"
+msgstr "ប្រភព​ទិន្នន័យ"
+
+#. i18n: file: weatherConfig.ui:212
+#. i18n: ectx: attribute (title), widget (QWidget, SettingsConfig)
+#: rc.cpp:33
+msgid "Settings"
+msgstr ""
+
+#. i18n: file: weatherConfig.ui:224
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:36
+msgid "Unit Settings"
+msgstr ""
+
+#. i18n: file: weatherConfig.ui:256
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:39
+msgid "&Temperature unit"
+msgstr ""
+
+#. i18n: file: weatherConfig.ui:272
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:42
+msgid "&Wind unit"
+msgstr ""
+
+#. i18n: file: weatherConfig.ui:288
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:45
+#, fuzzy
+#| msgid "Visibility: %1%2"
+msgid "&Visibility unit"
+msgstr "ភាព​​មើលឃើញ ៖ %1%2"
+
+#. i18n: file: weatherConfig.ui:308
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:48
+#, fuzzy
+#| msgid "Pressure: %1%2"
+msgid "&Pressure unit"
+msgstr "សម្ពាធ ៖ %1%2"
+
+#. i18n: file: weatherConfig.ui:349
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:51
+msgid "Update every"
+msgstr ""
+
+#. i18n: file: weatherConfig.ui:368
+#. i18n: ectx: property (suffix), widget (QSpinBox, weatherUpdateSpin)
+#: rc.cpp:54
 msgid " minutes"
 msgstr " នាទី"
 
-#. i18n: file: weatherConfig.ui:237
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:33
-msgid "Select wind format:"
-msgstr "ជ្រើស​ទ្រង់ទ្រាយ​ខ្យល់ ៖"
-
-#: weatherapplet.cpp:498
+#: weatherapplet.cpp:425
 msgid "The applet was not able to contact the server, please try again later"
 msgstr "អាប់ភ្លេត​មិនអាច​ទាក់ទង​ម៉ាស៊ីនបម្រើបានទេ សូម​ព្យាយាម​ម្ដង​ទៀត​ពេលក្រោយ"
 
-#: weatherapplet.cpp:503
+#: weatherapplet.cpp:437
 #, kde-format
 msgid ""
 "The place '%1' is not valid. The data source is not able to find this place."
 msgstr "កន្លែង '%1' មិន​ត្រឹមត្រូវ ។ ប្រភព​ទិន្នន័យ​មិនអាច​រក​​ឃើញ​កន្លែង​នេះ​ទេ ។"
 
-#: weatherapplet.cpp:503
+#: weatherapplet.cpp:437
 msgid "Invalid Place"
 msgstr "កន្លែង​មិន​ត្រឹមត្រូវ"
 
-#: weatherapplet.cpp:520
-msgid "Data Source"
-msgstr "ប្រភព​ទិន្នន័យ"
-
-#: weatherapplet.cpp:520
-msgid "Place"
-msgstr "ទីកន្លែង"
-
-#: weatherapplet.cpp:520
-msgid "Plugin"
-msgstr "កម្មវិធី​ជំនួយ"
-
-#: weatherapplet.cpp:543
-msgid "Kilometers Per Hour"
+#: weatherapplet.cpp:466
+#, fuzzy
+#| msgid "Kilometers Per Hour"
+msgid "Kilometers Per Hour (km/h)"
 msgstr "គីឡូម៉ែត្រ/​ម៉ោង"
 
-#: weatherapplet.cpp:544
-msgid "Metres Per Second"
+#: weatherapplet.cpp:467
+#, fuzzy
+#| msgid "Metres Per Second"
+msgid "Metres Per Second (m/s)"
 msgstr "ម៉ែត្រ​/វិនាទី"
 
-#: weatherapplet.cpp:545
-msgid "Miles Per Hour"
+#: weatherapplet.cpp:468
+#, fuzzy
+#| msgid "Miles Per Hour"
+msgid "Miles Per Houri (mph)"
 msgstr "ម៉ៃល៍​/ម៉ោង"
 
-#: weatherapplet.cpp:546
-msgid "Knots"
+#: weatherapplet.cpp:469
+#, fuzzy
+#| msgid "Knots"
+msgid "Knots (kt)"
 msgstr "Knots"
 
-#: weatherapplet.cpp:547
+#: weatherapplet.cpp:470
 msgid "Beaufort Scale"
 msgstr "មាត្រដ្ឋាន Beaufort"
 
-#: weatherapplet.cpp:605
+#: weatherapplet.cpp:472
+msgid "Celsius"
+msgstr ""
+
+#: weatherapplet.cpp:473
+msgid "Fahrenheit"
+msgstr ""
+
+#: weatherapplet.cpp:474
+msgid "Kelvin"
+msgstr ""
+
+#: weatherapplet.cpp:476
+msgid "Kilopascals (kPa)"
+msgstr ""
+
+#: weatherapplet.cpp:477
+msgid "Inches of Mercury (inHg)"
+msgstr ""
+
+#: weatherapplet.cpp:478
+msgid "Millibars (mb)"
+msgstr ""
+
+#: weatherapplet.cpp:479
+msgid "Hectopascals (hPa)"
+msgstr ""
+
+#: weatherapplet.cpp:482
+#, fuzzy
+#| msgid "Kilometers Per Hour"
+msgid "Kilometers"
+msgstr "គីឡូម៉ែត្រ/​ម៉ោង"
+
+#: weatherapplet.cpp:483
+msgid "Miles"
+msgstr ""
+
+#: weatherapplet.cpp:528
 msgid "&Add"
 msgstr "បន្ថែម"
 
-#: weatherapplet.cpp:661 weatherapplet.cpp:676
+#: weatherapplet.cpp:581 weatherapplet.cpp:596
 #, kde-format
 msgid "%1"
 msgstr "%1"
 
-#: weatherapplet.cpp:668
+#: weatherapplet.cpp:588
 #, kde-format
 msgid "Low: %1%2"
 msgstr "ទាប ៖ %1%2"
 
-#: weatherapplet.cpp:670
+#: weatherapplet.cpp:590
 #, kde-format
 msgid "High: %1%2"
 msgstr "កម្ពស់ ៖ %1%2"
 
-#: weatherapplet.cpp:672
+#: weatherapplet.cpp:592
 #, fuzzy, kde-format
 #| msgid "Hi: %1%2 Lo: %3%4"
 msgid "H: %1%2 L: %3%4"
 msgstr "ខ្ពស់ ៖ %1%2 ទាប ៖ %3%4"
 
-#: weatherapplet.cpp:679
+#: weatherapplet.cpp:599
 #, kde-format
 msgid "%1%2"
 msgstr "%1%2"
 
-#: weatherapplet.cpp:830
+#: weatherapplet.cpp:750
 msgid "5 Days"
 msgstr "៥ ថ្ងៃ"
 
-#: weatherapplet.cpp:847
+#: weatherapplet.cpp:767
 #, kde-format
 msgid "Windchill: %1%2"
 msgstr "ខ្យល់​ត្រជាក់ ៖ %1%2"
 
-#: weatherapplet.cpp:853
+#: weatherapplet.cpp:773
 #, kde-format
 msgid "Humidex: %1%2"
 msgstr "Humidex ៖ %1%2"
 
-#: weatherapplet.cpp:859
+#: weatherapplet.cpp:779
 #, kde-format
 msgid "Dewpoint: %1%2"
 msgstr "ចំណុច​សើម ៖ %1%2"
 
-#: weatherapplet.cpp:865
+#: weatherapplet.cpp:785
 #, kde-format
 msgid "Pressure: %1%2"
 msgstr "សម្ពាធ ៖ %1%2"
 
-#: weatherapplet.cpp:871
+#: weatherapplet.cpp:791
 #, kde-format
 msgid "Pressure Tendency: %1"
 msgstr "និន្នាការ​សម្ពាធ ៖ %1"
 
-#: weatherapplet.cpp:877
+#: weatherapplet.cpp:797
 #, kde-format
 msgid "Visibility: %1%2"
 msgstr "ភាព​​មើលឃើញ ៖ %1%2"
 
-#: weatherapplet.cpp:883
+#: weatherapplet.cpp:803
 #, kde-format
 msgid "Humidity: %1"
 msgstr "សំណើម ៖ %1"
 
-#: weatherapplet.cpp:891 weatherapplet.cpp:895 weatherapplet.cpp:899
-#: weatherapplet.cpp:903 weatherapplet.cpp:907 weatherapplet.cpp:912
-#: weatherapplet.cpp:916 weatherapplet.cpp:920 weatherapplet.cpp:924
-#: weatherapplet.cpp:928
+#: weatherapplet.cpp:811 weatherapplet.cpp:815 weatherapplet.cpp:819
+#: weatherapplet.cpp:823 weatherapplet.cpp:827 weatherapplet.cpp:832
+#: weatherapplet.cpp:836 weatherapplet.cpp:840 weatherapplet.cpp:844
+#: weatherapplet.cpp:848
 #, kde-format
 msgid "%1 %2%3"
 msgstr "%1 %2%3"
 
-#: weatherapplet.cpp:933
+#: weatherapplet.cpp:853
 msgid "N/A"
 msgstr ""
 
-#: weatherapplet.cpp:936
+#: weatherapplet.cpp:856
 msgid "Calm"
 msgstr ""
 
-#: weatherapplet.cpp:953 weatherapplet.cpp:956 weatherapplet.cpp:959
-#: weatherapplet.cpp:962 weatherapplet.cpp:966 weatherapplet.cpp:971
-#: weatherapplet.cpp:974 weatherapplet.cpp:977 weatherapplet.cpp:980
-#: weatherapplet.cpp:983
+#: weatherapplet.cpp:873 weatherapplet.cpp:876 weatherapplet.cpp:879
+#: weatherapplet.cpp:882 weatherapplet.cpp:886 weatherapplet.cpp:891
+#: weatherapplet.cpp:894 weatherapplet.cpp:897 weatherapplet.cpp:900
+#: weatherapplet.cpp:903
 #, kde-format
 msgid "Wind Gust: %1%2"
 msgstr "សន្ទុះ​ខ្យល់ ៖ %1%2"
 
-#: weatherapplet.cpp:990
+#: weatherapplet.cpp:910
 msgid "Details"
 msgstr "សេចក្ដី​លម្អិត"
 
-#: weatherapplet.cpp:1004
+#: weatherapplet.cpp:924
 msgid "Watches Issued:"
 msgstr "អាកាសធាតុ​បានចេញ​ផ្សាយ ៖"
 
-#: weatherapplet.cpp:1033
+#: weatherapplet.cpp:953
 msgid "Warnings Issued:"
 msgstr "ការ​ព្រមាន​បានចេញផ្សាយ ៖"
 
-#: weatherapplet.cpp:1051
+#: weatherapplet.cpp:971
 msgid "Notices"
 msgstr "ចំណាំ"
+
+#~ msgid "Select data source:"
+#~ msgstr "ជ្រើស​ប្រភព​ទិន្នន័យ ៖"
+
+#~ msgid "Type in a location:"
+#~ msgstr "វាយ​ក្នុង​ទីតាំង ៖"
+
+#~ msgid "&Remove Place"
+#~ msgstr "យក​កន្លែង​ចេញ"
+
+#~ msgid "Update weather information every"
+#~ msgstr "ធ្វើ​ឲ្យ​ព័ត៌មាន​អាកាសធាតុ​ទាន់សម័យ​រៀងរាល់"
+
+#~ msgid "Select wind format:"
+#~ msgstr "ជ្រើស​ទ្រង់ទ្រាយ​ខ្យល់ ៖"
+
+#~ msgid "Plugin"
+#~ msgstr "កម្មវិធី​ជំនួយ"
 
 #~ msgid "Wind Direction: %1"
 #~ msgstr "ទិស​ខ្យល់ ៖ %1"
