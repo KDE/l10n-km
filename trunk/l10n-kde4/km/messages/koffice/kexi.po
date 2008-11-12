@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-10 10:15+0100\n"
+"POT-Creation-Date: 2008-11-12 10:51+0100\n"
 "PO-Revision-Date: 2008-09-17 14:59+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -2071,7 +2071,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, btnRemove)
 #: main/KexiMainWindow.cpp:4222 rc.cpp:317 rc.cpp:374
 #: plugins/reportspgz/kexireportdesignview.cpp:41
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1071
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1052
 msgid "Delete"
 msgstr "លុប"
 
@@ -2251,12 +2251,12 @@ msgid "Changes page size and margins."
 msgstr "ផ្លាស់ប្ដូរ​ទំហំ​ទំព័រ​ និង​រឹម ។"
 
 #: main/printing/kexisimpleprintingpagesetup.cpp:454
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:875
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:856
 msgid "Portrait"
 msgstr "បញ្ឈរ"
 
 #: main/printing/kexisimpleprintingpagesetup.cpp:454
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:875
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:856
 msgid "Landscape"
 msgstr "ផ្តេក"
 
@@ -2590,7 +2590,7 @@ msgid "None"
 msgstr "គ្មាន"
 
 #: koproperty1/koproperty/set.cpp:138 koproperty1/koproperty/set.cpp:156
-#: koproperty2/koproperty/Set.cpp:138 koproperty2/koproperty/Set.cpp:156
+#: koproperty2/koproperty/Set.cpp:249 koproperty2/koproperty/Set.cpp:267
 msgctxt "General properties"
 msgid "General"
 msgstr "ទូទៅ"
@@ -2833,14 +2833,14 @@ msgstr "ផ្លាស់ប្តូរ​ពុម្ពអក្សរ"
 msgid "%1 %2"
 msgstr "%1 : %2"
 
-#: koproperty2/koproperty/EditorDataModel.cpp:140
+#: koproperty2/koproperty/EditorDataModel.cpp:154
 #, fuzzy
 #| msgid "Name"
 msgctxt "Property name"
 msgid "Name"
 msgstr "ឈ្មោះ"
 
-#: koproperty2/koproperty/EditorDataModel.cpp:142
+#: koproperty2/koproperty/EditorDataModel.cpp:156
 #, fuzzy
 #| msgid "Value"
 msgctxt "Property value"
@@ -4587,7 +4587,7 @@ msgstr "កម្មវិធី​និពន្ធ​ផ្នែក"
 
 #. i18n: file: plugins/reportspgz/backend/wrtembed/sectioneditor.ui:60
 #. i18n: ectx: property (text), widget (QCheckBox, cbReportHeader)
-#: rc.cpp:323 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:596
+#: rc.cpp:323 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:578
 msgid "Report Header"
 msgstr "បឋមកថា​របាយការណ៍"
 
@@ -4619,7 +4619,7 @@ msgstr "ទំព័រ​ណាមួយ"
 
 #. i18n: file: plugins/reportspgz/backend/wrtembed/sectioneditor.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, cbReportFooter)
-#: rc.cpp:344 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:600
+#: rc.cpp:344 plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:582
 msgid "Report Footer"
 msgstr "បាតកថា​របាយការណ៍"
 
@@ -6308,18 +6308,18 @@ msgid "Saved OK"
 msgstr "បាន​រក្សាទុក គ្មានបញ្ហា"
 
 #: plugins/reportspgz/kexireportdesignview.cpp:35
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1063
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1044
 msgid "Cut"
 msgstr "កាត់"
 
 #: plugins/reportspgz/kexireportdesignview.cpp:37
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1064
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1045
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:68
 msgid "Copy"
 msgstr "ចម្លង"
 
 #: plugins/reportspgz/kexireportdesignview.cpp:39
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1067
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1048
 msgid "Paste"
 msgstr "បិទ​ភ្ជាប់"
 
@@ -6378,11 +6378,11 @@ msgstr "រូបរាង"
 msgid "Check"
 msgstr "គូស​ធីក"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:416
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:398
 msgid "Report Writer"
 msgstr "កម្មវិធី​សរសេរ​របាយការណ៍"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:416
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:398
 #, kde-format
 msgid ""
 "The document '%1' contains unsaved changes.\n"
@@ -6391,61 +6391,57 @@ msgstr ""
 "ឯកសារ '%1' មាន​ការ​ផ្លាស់ប្ដូរ​ដែល​មិនបាន​រក្សាទុក ។\n"
 "តើ​អ្នក​ចង់​រក្សាទុក​កា​រផ្លាស់ប្ដូរ​មុននឹង​បិទ​ដែរឬទេ ?"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:416
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:398
 msgid "Save"
 msgstr "រក្សាទុក"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:416
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:398
 msgid "Discard"
 msgstr "បោះចោល"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:416
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:398
 msgid "Cancel"
 msgstr "បោះបង់"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:556
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:538
 msgid "Page Header (Any)"
 msgstr "បឋម​កថា​ទំព័រ (គូ ឬ​សេស)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:560
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:542
 msgid "Page Header (Even)"
 msgstr "បឋម​កថា​ទំព័រ (គូ)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:564
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:546
 msgid "Page Header (Odd)"
 msgstr "បឋមកថា (សេស)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:568
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:550
 msgid "Page Header (First)"
 msgstr "បឋមកថា​ទំព័រ (​ដំបូង)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:572
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:554
 msgid "Page Header (Last)"
 msgstr "បឋមកថា​ទំព័រ (​ចុង​ក្រោយ)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:576
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:558
 msgid "Page Footer (Any)"
 msgstr "បាតកថា​ទំព័រ (គូ ឬ​សេស)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:580
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:562
 msgid "Page Footer (Even)"
 msgstr "បាតកថា​ទំព័រ (គូ)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:584
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:566
 msgid "Page Footer (Odd)"
 msgstr "បាត​កថា (​សេស)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:588
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:570
 msgid "Page Footer (First)"
 msgstr "បាតកថា​ទំព័រ (ដំបូង)"
 
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:592
+#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:574
 msgid "Page Footer (Last)"
 msgstr "បាតកថា​​ទំព័រ (ចុងក្រោយ)"
-
-#: plugins/reportspgz/backend/wrtembed/reportdesigner.cpp:1367
-msgid "Script Editor"
-msgstr "កម្មវិធី​និពន្ធ​ស្គ្រីប"
 
 #: plugins/reportspgz/backend/wrtembed/sectioneditor.cpp:286
 #: plugins/reportspgz/backend/wrtembed/sectioneditor.cpp:322
@@ -7270,6 +7266,9 @@ msgstr "​វាល​តារាង \"%1\""
 msgctxt "Empty table row"
 msgid "Empty Row"
 msgstr "ជួរ​ដេក​ទទេ"
+
+#~ msgid "Script Editor"
+#~ msgstr "កម្មវិធី​និពន្ធ​ស្គ្រីប"
 
 #, fuzzy
 #~| msgid "Horz. Size Type"
