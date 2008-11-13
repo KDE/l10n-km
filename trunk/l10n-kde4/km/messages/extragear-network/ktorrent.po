@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-12 10:53+0100\n"
+"POT-Creation-Date: 2008-11-13 10:15+0100\n"
 "PO-Revision-Date: 2008-10-06 11:01+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -3720,7 +3720,8 @@ msgid ""
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
 "right:0px; -qt-block-indent:0; text-indent:0px; font-size:9pt;\"><span style="
 "\" font-size:8pt;\">The maximum share ratio, if this value is reached "
-"seeding will be stopped.</span></p>\n"
+"seeding will be stopped. This is only applied to newly opened torrents, "
+"existing torrents will not be affected by changing this.</span></p>\n"
 "<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
 "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
 "p>\n"
@@ -3748,9 +3749,14 @@ msgstr ""
 #. i18n: file: ktorrent/qmpref.ui:258
 #. i18n: ectx: property (toolTip), widget (QDoubleSpinBox, kcfg_maxSeedTime)
 #: rc.cpp:712
+#, fuzzy
+#| msgid ""
+#| "The maximum seed time in hours. Once you reach this time, the torrent "
+#| "will be stopped."
 msgid ""
 "The maximum seed time in hours. Once you reach this time, the torrent will "
-"be stopped."
+"be stopped. This is only applied to newly opened torrents, existing torrents "
+"will not be affected by changing this."
 msgstr ""
 "ពេលវេលា​បណ្ដុះ​អតិបរមា គិត​ជា​ម៉ោង ។ នៅពេល​ដែល​អ្នក​បាន​ដល់​ពេលនេះ torrent នឹង​ត្រូវបាន​បញ្ឈប់ ។"
 
@@ -8426,7 +8432,27 @@ msgstr "កម្មវិធី​បណ្ដុះ"
 msgid "Add New Filter"
 msgstr "បន្ថែម​តម្រង​ថ្មី"
 
-#: plugins/syndication/feedlist.cpp:107
+#: plugins/syndication/feedlist.cpp:112
+#, fuzzy, kde-format
+#| msgid ""
+#| "Playing: <b>%1</b><br/>\n"
+#| "%2"
+msgid "<b>%1</b><br/>1 active filter"
+msgstr ""
+"ចាក់ ៖ <b>%1</b><br/>\n"
+"%2"
+
+#: plugins/syndication/feedlist.cpp:114
+#, fuzzy, kde-format
+#| msgid ""
+#| "Playing: <b>%1</b><br/>\n"
+#| "%2"
+msgid "<b>%1</b><br/>%2 active filters"
+msgstr ""
+"ចាក់ ៖ <b>%1</b><br/>\n"
+"%2"
+
+#: plugins/syndication/feedlist.cpp:120
 #, fuzzy, kde-format
 #| msgid ""
 #| "Playing: <b>%1</b><br/>\n"
