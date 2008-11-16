@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-11-15 11:47+0100\n"
+"POT-Creation-Date: 2008-11-16 10:01+0100\n"
 "PO-Revision-Date: 2008-08-27 09:11+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1529,15 +1529,26 @@ msgstr "បាន​នាំចូល​អត្រា"
 msgid "Dropped v3 tables"
 msgstr "បាន​ទម្លាក់​តារាង v3"
 
-#: libs/database/collectionmanager.cpp:614
-msgid "There is already an entry with the same path"
+#: libs/database/collectionmanager.cpp:684
+#: libs/database/collectionmanager.cpp:806
+msgid "The selected folder does not exist or is not readable"
+msgstr ""
+
+#: libs/database/collectionmanager.cpp:693
+#, fuzzy, kde-format
+#| msgid "There is already an entry with the same path"
+msgid "There is already a collection containing the folder \"%1\""
 msgstr "មាន​ធាតុ​ដែល​មាន​ផ្លូវ​ដូចគ្នា​រួចហើយ"
 
-#: libs/database/collectionmanager.cpp:628
+#: libs/database/collectionmanager.cpp:709
 msgid "The storage media can be uniquely identified."
 msgstr "ឧបករណ៍​ផ្ទុក​អាចត្រូវបាន​កំណត់​អត្តសញ្ញាណ​ដាច់ដោយឡែក ។"
 
-#: libs/database/collectionmanager.cpp:656
+#: libs/database/collectionmanager.cpp:716
+msgid "The collection is located on your harddisk"
+msgstr ""
+
+#: libs/database/collectionmanager.cpp:744
 msgid ""
 "This is a CD/DVD, which is identified by the label that you can set in your "
 "CD burning application. There is already another entry with the same label. "
@@ -1551,7 +1562,7 @@ msgstr ""
 "សូម​កុំ​បន្ថែម​ឯកសារ​ទៅ​ស៊ីឌី​ ឬ​វា​នឹង​មិន​ត្រូវបាន​ចាប់ផ្ដើម​ទេ ។ នៅពេល​ខាងមុខ សូម​កំណត់​ស្លាក​តែ​មួយ​គត់​នៅលើ​ស៊ីឌី "
 "និង​ឌីវីឌី ប្រសិន​បើ​អ្នក​​ចង់​ប្រើ​វា​ជាមួយ digiKam ។"
 
-#: libs/database/collectionmanager.cpp:668
+#: libs/database/collectionmanager.cpp:756
 #, kde-format
 msgid ""
 "This is a CD/DVD. It will be identified by the label (\"%1\")that you have "
@@ -1562,7 +1573,7 @@ msgstr ""
 "ស៊ីឌី​របស់​អ្នក ។ ប្រសិន​បើ​អ្នក​បង្កើត​ស៊ីឌី​បន្ថែម សម្រាប់​ប្រើ​ជាមួយ digikam នៅពេល​ក្រោយ សូម​ចាំថា​ត្រូវផ្ដល់​"
 "ស្លាក​ដែល​មាន​តែមួយ​ឲ្យ​ពួកវា ។"
 
-#: libs/database/collectionmanager.cpp:680
+#: libs/database/collectionmanager.cpp:768
 #, kde-format
 msgid ""
 "This is a removable storage media that will be identified by its label (\"%1"
@@ -1570,7 +1581,7 @@ msgid ""
 msgstr ""
 "នេះ​ជា​ឧបករណ៍​ផ្ទុក​ដែល​អាច​យកចេញ​បាន ដែល​នឹង​ត្រូវបាន​កំណត់​អត្តសញ្ញាណ​ដោយ​ស្លាក​របស់​វា (\"%1\")"
 
-#: libs/database/collectionmanager.cpp:688
+#: libs/database/collectionmanager.cpp:778
 #, kde-format
 msgid ""
 "This entry will only be identified by the path where it is found on your "
@@ -1580,13 +1591,25 @@ msgstr ""
 "ធាតុ​នេះ នឹង​កំណត់​អត្តសញ្ញាណ​​តែ​តាម​ផ្លូវ​ដែល​វា​រកឃើញ​នៅលើ​ប្រព័ន្ធ​របស់​អ្នក (\"%1\") ប៉ុណ្ណោះ ។ គ្មាន​"
 "អត្ថន័យ​បញ្ជាក់​បន្ថែម​អំពី​ការ​កំណត់​អត្តសញ្ញាណ​ទេ (UUID, ស្លាក) ។"
 
-#: libs/database/collectionmanager.cpp:697
+#: libs/database/collectionmanager.cpp:789
 msgid ""
 "There is a problem identifying the storage media of this path. It will be "
 "added using the file path as the only identifier"
 msgstr ""
 "នេះ​ជា​បញ្ហា​ក្នុង​ការ​កំណត់​អត្តសញ្ញាណ​ឧបករណ៍​ផ្ទុក​របស់​ផ្លូវ​នេះ​ទេ ។ វា​នឹង​ត្រូវបាន​បន្ថែម ដោយប្រើ​ផ្លូវ​"
 "ឯកសារ​ដូច​នឹង​អ្នក​កំណត់​អត្តសញ្ញាណ​ប័ណ្ណ"
+
+#: libs/database/collectionmanager.cpp:815
+#, fuzzy
+#| msgid "There is already an entry with the same path"
+msgid "There is already a collection for a network share with the same path"
+msgstr "មាន​ធាតុ​ដែល​មាន​ផ្លូវ​ដូចគ្នា​រួចហើយ"
+
+#: libs/database/collectionmanager.cpp:822
+msgid ""
+"The network share will be identified by the path you selected. If the path "
+"is empty, the share will be considered unavailable."
+msgstr ""
 
 #: libs/database/imagescanner.cpp:601
 #, kde-format
@@ -1947,49 +1970,49 @@ msgstr "ឯកសារ EXIF ត្រូវ​រក្សា​ទុក"
 msgid "EXIF binary Files (*.exif)"
 msgstr "ឯកសារ​ប្រព័ន្ធ​គោ​ពីរ EXIF (*.exif)"
 
-#: libs/widgets/metadata/metadatawidget.cpp:124
+#: libs/widgets/metadata/metadatawidget.cpp:123
 msgid "Switch the tags view to a simple human-readable list"
 msgstr "ប្ដូរ​ទិដ្ឋភាព​ស្លាក​ទៅ​បញ្ជី​ដែល​អាច​អាន​បាន​ដោយ​មនុស្ស"
 
-#: libs/widgets/metadata/metadatawidget.cpp:125
+#: libs/widgets/metadata/metadatawidget.cpp:124
 msgid "Simple list"
 msgstr "បញ្ជី​ធម្មតា"
 
-#: libs/widgets/metadata/metadatawidget.cpp:132
+#: libs/widgets/metadata/metadatawidget.cpp:130
 msgid "Switch the tags view to a full list"
 msgstr "ប្ដូរ​ទិដ្ឋភាព​ស្លាក​ទៅ​បញ្ជី​ពេញ"
 
-#: libs/widgets/metadata/metadatawidget.cpp:133
+#: libs/widgets/metadata/metadatawidget.cpp:131
 msgid "Full list"
 msgstr "បញ្ជី​ពេញ"
 
-#: libs/widgets/metadata/metadatawidget.cpp:148
+#: libs/widgets/metadata/metadatawidget.cpp:147
 msgid "Save metadata to a binary file"
 msgstr "រក្សា​ទុក​ទិន្នន័យ​មេតា​ទៅ​ឯកសារ​ប្រព័ន្ធ​គោល​ពីរ"
 
-#: libs/widgets/metadata/metadatawidget.cpp:149
+#: libs/widgets/metadata/metadatawidget.cpp:148
 msgid "Save metadata"
 msgstr "រក្សា​ទុក​ទិន្នន័យ​មេតា"
 
-#: libs/widgets/metadata/metadatawidget.cpp:154
+#: libs/widgets/metadata/metadatawidget.cpp:153
 msgid "Print metadata to printer"
 msgstr "បោះពុម្ព​ទិន្នន័យ​មេតា​ទៅ​ម៉ាស៊ីន​បោះពុម្ព"
 
-#: libs/widgets/metadata/metadatawidget.cpp:155
+#: libs/widgets/metadata/metadatawidget.cpp:154
 msgid "Print metadata"
 msgstr "បោះពុម្ព​ទិន្នន័យ​មេតា"
 
+#: libs/widgets/metadata/metadatawidget.cpp:159
 #: libs/widgets/metadata/metadatawidget.cpp:160
-#: libs/widgets/metadata/metadatawidget.cpp:161
 msgid "Copy metadata to clipboard"
 msgstr "ចម្លង​ទិន្នន័យ​មេតា​ទៅ​ក្ដារ​តម្បៀត​ខ្ទាស់"
 
-#: libs/widgets/metadata/metadatawidget.cpp:300
+#: libs/widgets/metadata/metadatawidget.cpp:299
 #, kde-format
 msgid "File name: %1 (%2)"
 msgstr "ឈ្មោះ​ឯកសារ ៖ %1 (%2)"
 
-#: libs/widgets/metadata/metadatawidget.cpp:342
+#: libs/widgets/metadata/metadatawidget.cpp:341
 #, kde-format
 msgid "<p><big><big><b>File name: %1 (%2)</b></big></big>"
 msgstr "<p><big><big><b>ឈ្មោះ​ឯកសារ ៖ %1 (%2)</b></big></big>"
@@ -2059,7 +2082,8 @@ msgid "No profile available..."
 msgstr "មិន​មាន​ទម្រង់..."
 
 #: libs/widgets/iccprofiles/iccprofilewidget.cpp:127
-#: showfoto/setup/setupeditor.cpp:191 utilities/setup/setupcollections.cpp:227
+#: showfoto/setup/setupeditor.cpp:191
+#: utilities/setup/setupcollectionview.cpp:765
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -2409,7 +2433,7 @@ msgid "File Properties"
 msgstr "លក្ខណៈសម្បត្តិ​​ឯកសារ"
 
 #: libs/widgets/common/thumbbar.cpp:977 digikam/imagepreviewbar.cpp:466
-#: digikam/albumfiletip.cpp:341 utilities/setup/setupcollections.cpp:251
+#: digikam/albumfiletip.cpp:341
 #, fuzzy
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
@@ -10794,6 +10818,94 @@ msgstr ""
 msgid "Show the digiKam image rating at the bottom of the screen."
 msgstr "បង្ហាញម៉ាក និង​ម៉ូដែល​របស់​ម៉ាស៊ីនថត"
 
+#: utilities/setup/setupcollectionview.cpp:465
+msgid "It was not possible to add a collection for the following paths"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:496
+msgid "Choose the folder containing your collection"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:524
+#, kde-format
+msgid ""
+"You have just previously added a collection that already contains the path "
+"\"%1\""
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:544
+msgid "Problem Adding Collection"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:623
+#, fuzzy
+msgid "Remove Collection"
+msgstr "តាម​ការ​សម្រាំង"
+
+#: utilities/setup/setupcollectionview.cpp:625
+#, kde-format
+msgid ""
+"Do you want to remove the collection \"%1\" from your list of collections?"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:626
+#, fuzzy
+msgid "Remove Collection?"
+msgstr "តាម​ការ​សម្រាំង"
+
+#: utilities/setup/setupcollectionview.cpp:652
+#, fuzzy
+msgid "Local Collections"
+msgstr "ការ​សម្រាំង"
+
+#: utilities/setup/setupcollectionview.cpp:653
+msgid "Collections on Removable Media"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:654
+msgid "Collections on Network Shares"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:666
+#, fuzzy
+msgid "Add Collection"
+msgstr "តាម​ការ​សម្រាំង"
+
+#: utilities/setup/setupcollectionview.cpp:686
+#, kde-format
+msgid "Col. %1"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:733
+#, fuzzy
+#| msgid "Geolocation using Marble not available"
+msgid "This collection is currently not available"
+msgstr "គ្មាន​ទីតាំង​ភូមិសាស្ដ្រ​ដែល​ប្រើ​ថ្ម​ម៉ាប​ទេ"
+
+#: utilities/setup/setupcollectionview.cpp:735
+msgid "No problems found: Enjoy this collection"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:737
+msgid "This collection is hidden"
+msgstr ""
+
+#: utilities/setup/setupcollectionview.cpp:746
+#, fuzzy
+msgid "Remove collection"
+msgstr "តាម​ការ​សម្រាំង"
+
+#: utilities/setup/setupcollectionview.cpp:766
+#: utilities/setup/setupcamera.cpp:103
+#, fuzzy
+msgid "Path"
+msgstr "ផ្លូវ"
+
+#: utilities/setup/setupcollectionview.cpp:767
+#, fuzzy
+msgid "Status"
+msgstr "ស្ថានភាព"
+
 #: utilities/setup/setupmime.cpp:94
 msgid ""
 "<p>digiKam attempts to support all of the image formats that digital cameras "
@@ -11171,87 +11283,36 @@ msgid ""
 "and limit strings size. Use contextual help for details.</b>"
 msgstr ""
 
-#: utilities/setup/setupcollections.cpp:207
+#: utilities/setup/setupcollections.cpp:91
 #, fuzzy
 msgid "Root Album Folders"
 msgstr "បង្កើត​ថត ?"
 
-#: utilities/setup/setupcollections.cpp:210
+#: utilities/setup/setupcollections.cpp:93
 msgid ""
 "Below are the locations of your root albums used to store your images. Write "
 "access is necessary to be able to edit images in these albums.\n"
-"Note: Removable media and remote file systems (NFS and Samba), are supported."
+"Note: removable media (such as USB drive or DVD) and remote file systems "
+"(such as NFS or Samba) are supported."
 msgstr ""
 
-#: utilities/setup/setupcollections.cpp:224
-msgid "This shows all root albums used by digiKam as collections."
-msgstr ""
-
-#: utilities/setup/setupcollections.cpp:228
-#, fuzzy
-msgid "Type"
-msgstr "ប្រភេទ"
-
-#: utilities/setup/setupcollections.cpp:229
-#, fuzzy
-msgid "Status"
-msgstr "ស្ថានភាព"
-
-#: utilities/setup/setupcollections.cpp:230
-#: utilities/setup/setupcamera.cpp:103
-#, fuzzy
-msgid "Path"
-msgstr "ផ្លូវ"
-
-#: utilities/setup/setupcollections.cpp:238
-#, fuzzy
-msgid "&New"
-msgstr "ថ្មី"
-
-#: utilities/setup/setupcollections.cpp:239
-#, fuzzy
-msgid "&Add"
-msgstr "បន្ថែម"
-
-#: utilities/setup/setupcollections.cpp:240
-#: utilities/setup/setupcamera.cpp:117 utilities/setup/setupalbumtype.cpp:101
-#, fuzzy
-msgid "&Remove"
-msgstr "យក​ចេញ"
-
-#: utilities/setup/setupcollections.cpp:241
-#: utilities/setup/setupalbumtype.cpp:102
-#, fuzzy
-msgid "&Replace"
-msgstr "ជំនួស"
-
-#: utilities/setup/setupcollections.cpp:255
-#, fuzzy
-msgid "Path:"
-msgstr "ផ្លូវ ៖"
-
-#: utilities/setup/setupcollections.cpp:277
+#: utilities/setup/setupcollections.cpp:114
 msgid "Database File Path"
 msgstr ""
 
-#: utilities/setup/setupcollections.cpp:280
+#: utilities/setup/setupcollections.cpp:117
 #, fuzzy
 msgid ""
 "The location where the database file will be stored on your system. There is "
 "one common database file for all root albums.\n"
 "Write access is required to be able to edit image properties.\n"
-"Note: A remote file system, such as NFS, cannot be used here."
+"Note: a remote file system, such as NFS, cannot be used here."
 msgstr ""
 "<p>កំណត់​ទីតាំង​ដែល​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ​របស់ digiKam ត្រូវ​រក្សា​ទុក​លើ​កុំព្យូទ័រ​របស់​អ្នក ។ សិទ្ធិ​សរសេរ​"
 "ទាមទារ​ត្រូវ​ឲ្យ​អាច​កែ​សម្រួល​លក្ខណៈ​សម្បត្តិ​របស់​រូបភាព ។\n"
 "សូម​ចំណាំ​ថា​អ្នក​មិន​អាច​ប្រើ​ប្រព័ន្ធ​ឯកសារ​ឆ្ងាយ​ដូច​ជា​ NFS នៅ​ទី​នេះ​បាន​ទេ ។"
 
-#: utilities/setup/setupcollections.cpp:439
-#, kde-format
-msgid "Col. %1"
-msgstr ""
-
-#: utilities/setup/setupcollections.cpp:522
+#: utilities/setup/setupcollections.cpp:195
 #, fuzzy
 msgid ""
 "You don't seem to have write access to this database folder.\n"
@@ -11259,30 +11320,6 @@ msgid ""
 msgstr ""
 "គ្មាន​សិទ្ធិ​សរសេរ​សម្រាប់​ផ្លូវ​ root របស់​អាល់ប៊ុម ។\n"
 "ព្រមាន: សេចក្តី​អធិប្បាយ និង​លក្ខណៈ​សម្បត្តិ​ស្លាក​នឹង​មិន​ធ្វើ​ការ ។"
-
-#: utilities/setup/setupcollections.cpp:548
-#, fuzzy
-msgid "Sorry you cannot use your home directory as the root album."
-msgstr "digiKam មិន​អាច​ប្រើ​ថត​ផ្ទះ​របស់​អ្នក​ជា​ថត​បណ្ណាល័យ​អាល់ប៊ុម​ ។"
-
-#: utilities/setup/setupcollections.cpp:556
-#, fuzzy
-msgid ""
-"You don't seem to have write access to this root album.\n"
-"Without this access, image and metadata editing will not work."
-msgstr ""
-"គ្មាន​សិទ្ធិ​សរសេរ​សម្រាប់​ផ្លូវ​ root របស់​អាល់ប៊ុម ។\n"
-"ព្រមាន: សេចក្តី​អធិប្បាយ និង​លក្ខណៈ​សម្បត្តិ​ស្លាក​នឹង​មិន​ធ្វើ​ការ ។"
-
-#: utilities/setup/setupcollections.cpp:616
-#, fuzzy, kde-format
-msgid "A root album named \"%1\" already exists."
-msgstr "ឈ្មោះ​ស្លាក​មាន​រួច​ហើយ"
-
-#: utilities/setup/setupcollections.cpp:622
-#, kde-format
-msgid "A root album in folder \"%1\" already exists."
-msgstr ""
 
 #: utilities/setup/setupeditor.cpp:93
 #, fuzzy
@@ -11355,6 +11392,11 @@ msgstr "ច្រក"
 msgid "&Add..."
 msgstr "បន្ថែម..."
 
+#: utilities/setup/setupcamera.cpp:117 utilities/setup/setupalbumtype.cpp:101
+#, fuzzy
+msgid "&Remove"
+msgstr "យក​ចេញ"
+
 #: utilities/setup/setupcamera.cpp:119
 #, fuzzy
 msgid "&Edit..."
@@ -11398,6 +11440,11 @@ msgid ""
 msgstr ""
 "<p>នៅ​ទីនេះ អ្នក​អាច​បន្ថែម​ ឬ យក​ប្រភេទ​ការ​សម្រាំង​អាល់ប៊ុមចេញ ដើម្បី​ធ្វើ​ឲ្យ​វិធី​តម្រៀប​អាល់ប៊ុម​របស់​អ្នក​នៅ​"
 "ក្នុង digiKam កាន់​តែ​ប្រសើរ​ឡើង ។"
+
+#: utilities/setup/setupalbumtype.cpp:102
+#, fuzzy
+msgid "&Replace"
+msgstr "ជំនួស"
 
 #: utilities/setup/setup.cpp:151
 #, fuzzy
@@ -14433,6 +14480,38 @@ msgid ""
 "to perform a\n"
 "Fuzzy search"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Type"
+#~ msgstr "ប្រភេទ"
+
+#, fuzzy
+#~ msgid "&New"
+#~ msgstr "ថ្មី"
+
+#, fuzzy
+#~ msgid "&Add"
+#~ msgstr "បន្ថែម"
+
+#, fuzzy
+#~ msgid "Path:"
+#~ msgstr "ផ្លូវ ៖"
+
+#, fuzzy
+#~ msgid "Sorry you cannot use your home directory as the root album."
+#~ msgstr "digiKam មិន​អាច​ប្រើ​ថត​ផ្ទះ​របស់​អ្នក​ជា​ថត​បណ្ណាល័យ​អាល់ប៊ុម​ ។"
+
+#, fuzzy
+#~ msgid ""
+#~ "You don't seem to have write access to this root album.\n"
+#~ "Without this access, image and metadata editing will not work."
+#~ msgstr ""
+#~ "គ្មាន​សិទ្ធិ​សរសេរ​សម្រាប់​ផ្លូវ​ root របស់​អាល់ប៊ុម ។\n"
+#~ "ព្រមាន: សេចក្តី​អធិប្បាយ និង​លក្ខណៈ​សម្បត្តិ​ស្លាក​នឹង​មិន​ធ្វើ​ការ ។"
+
+#, fuzzy
+#~ msgid "A root album named \"%1\" already exists."
+#~ msgstr "ឈ្មោះ​ស្លាក​មាន​រួច​ហើយ"
 
 #, fuzzy
 #~ msgid "Open in Konqueror"
