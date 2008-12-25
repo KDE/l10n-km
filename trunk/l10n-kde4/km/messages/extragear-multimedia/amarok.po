@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2008-12-23 10:24+0100\n"
+"POT-Creation-Date: 2008-12-25 09:45+0100\n"
 "PO-Revision-Date: 2008-12-24 13:57+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -287,13 +287,25 @@ msgstr ""
 msgid "Transferring: %1"
 msgstr "ផ្ទេរ ៖ %1"
 
-#: collection/sqlcollection/ScanManager.cpp:450
+#: collection/sqlcollection/ScanManager.cpp:365
+msgid ""
+"<p>Sorry, the collection scan had to be aborted.</p>Too many errors were "
+"encountered during the scan.</p>"
+msgstr ""
+
+#: collection/sqlcollection/ScanManager.cpp:366
+#, fuzzy
+#| msgid "Collection Scanner for Amarok"
+msgid "Collection Scan Error"
+msgstr "កម្មវិធី​វិភាគ​រក​សម្រាប់ Amarok"
+
+#: collection/sqlcollection/ScanManager.cpp:452
 msgid "Scanning music"
 msgstr "កំពុង​ស្កេន​តន្ត្រី"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:53
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: collection/sqlcollection/SqlMeta.cpp:288 rc.cpp:1642
+#: collection/sqlcollection/SqlMeta.cpp:288 rc.cpp:1757
 msgid "Stream"
 msgstr "ស្ទ្រីម"
 
@@ -761,7 +773,7 @@ msgid "Disc %1"
 msgstr "ថាស %1"
 
 #: context/applets/albums/AlbumItem.cpp:70 MediaDevicePluginManager.cpp:531
-#: MainWindow.cpp:1084
+#: MainWindow.cpp:1002
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
@@ -906,7 +918,7 @@ msgstr "បទ"
 msgid "&Album"
 msgstr "អាល់ប៊ុម"
 
-#: ActionClasses.cpp:351 MainWindow.cpp:928
+#: ActionClasses.cpp:351 MainWindow.cpp:853
 msgid "&Playlist"
 msgstr "បញ្ជីចាក់"
 
@@ -989,7 +1001,7 @@ msgstr "បន្ថែម​ឧបករណ៍..."
 
 #. i18n: file: amarok.kcfg:298
 #. i18n: ectx: label, entry, group (OSD)
-#: configdialog/dialogs/OsdConfig.cpp:39 rc.cpp:291 rc.cpp:1264
+#: configdialog/dialogs/OsdConfig.cpp:39 rc.cpp:291 rc.cpp:1379
 msgid "Use Growl for notifications"
 msgstr "ប្រើ​ការ​គំរាម​សម្រាប់ការ​ជូនដំណឹង"
 
@@ -1002,7 +1014,7 @@ msgstr "ទូទៅ"
 msgid "Configure General Options"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ជម្រើស​ទូទៅ"
 
-#: configdialog/ConfigDialog.cpp:55 MainWindow.cpp:278
+#: configdialog/ConfigDialog.cpp:55 MainWindow.cpp:275
 msgid "Collection"
 msgstr "សម្រាំង"
 
@@ -1180,28 +1192,33 @@ msgstr ""
 msgid "Collection root"
 msgstr "សម្រាំង root"
 
-#: dialogs/FilenameLayoutDialog.cpp:115 dialogs/EditFilterDialog.cpp:131
+#. i18n: file: dialogs/EditFilterDialog.ui:117
+#. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
+#: dialogs/FilenameLayoutDialog.cpp:115 rc.cpp:919
 #: services/jamendo/JamendoInfoParser.cpp:112 widgets/Token.cpp:63
 #: widgets/FilenameLayoutWidget.cpp:286 widgets/FilenameLayoutWidget.cpp:342
 msgid "Track"
 msgstr "បទ"
 
-#: dialogs/FilenameLayoutDialog.cpp:116 dialogs/EditFilterDialog.cpp:129
+#. i18n: file: dialogs/EditFilterDialog.ui:112
+#. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
+#: dialogs/FilenameLayoutDialog.cpp:116
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:248
-#: browsers/playlistbrowser/PodcastModel.cpp:244
+#: browsers/playlistbrowser/PodcastModel.cpp:244 rc.cpp:916
 #: playlist/PlaylistModel.cpp:554 widgets/Token.cpp:67
 #: widgets/SmartPlaylistEditor.cpp:184 widgets/FilenameLayoutWidget.cpp:288
 #: widgets/FilenameLayoutWidget.cpp:337
 msgid "Title"
 msgstr "ចំណង​ជើង"
 
-#: dialogs/FilenameLayoutDialog.cpp:117 dialogs/EditFilterDialog.cpp:123
-#: dialogs/transferdialog.cpp:89
+#. i18n: file: dialogs/EditFilterDialog.ui:97
+#. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
+#: dialogs/FilenameLayoutDialog.cpp:117 dialogs/transferdialog.cpp:89
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:683
 #: browsers/collectionbrowser/CollectionWidget.cpp:78
 #: browsers/collectionbrowser/CollectionWidget.cpp:107
 #: browsers/collectionbrowser/CollectionWidget.cpp:139
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:245
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:245 rc.cpp:907
 #: services/magnatune/MagnatuneStore.cpp:190
 #: services/jamendo/JamendoInfoParser.cpp:54 playlist/PlaylistHeader.cpp:42
 #: playlist/PlaylistModel.cpp:555 widgets/Token.cpp:71
@@ -1210,22 +1227,26 @@ msgstr "ចំណង​ជើង"
 msgid "Artist"
 msgstr "សិល្បករ"
 
-#: dialogs/FilenameLayoutDialog.cpp:118 dialogs/EditFilterDialog.cpp:125
+#. i18n: file: dialogs/EditFilterDialog.ui:102
+#. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
+#: dialogs/FilenameLayoutDialog.cpp:118
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:684
 #: browsers/collectionbrowser/CollectionWidget.cpp:87
 #: browsers/collectionbrowser/CollectionWidget.cpp:116
 #: browsers/collectionbrowser/CollectionWidget.cpp:148
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:246
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:246 rc.cpp:910
 #: playlist/PlaylistModel.cpp:557 widgets/Token.cpp:75
 #: widgets/SmartPlaylistEditor.cpp:184 widgets/SmartPlaylistEditor.cpp:198
 #: widgets/FilenameLayoutWidget.cpp:292 widgets/FilenameLayoutWidget.cpp:352
 msgid "Composer"
 msgstr "កម្មវិធី​តែង"
 
-#: dialogs/FilenameLayoutDialog.cpp:119 dialogs/EditFilterDialog.cpp:133
+#. i18n: file: dialogs/EditFilterDialog.ui:122
+#. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
+#: dialogs/FilenameLayoutDialog.cpp:119
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:686
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:250
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:694
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:694 rc.cpp:922
 #: playlist/PlaylistModel.cpp:558 widgets/Token.cpp:79
 #: widgets/SmartPlaylistEditor.cpp:185 widgets/SmartPlaylistEditor.cpp:198
 #: widgets/SmartPlaylistEditor.cpp:922 widgets/FilenameLayoutWidget.cpp:294
@@ -1233,13 +1254,14 @@ msgstr "កម្មវិធី​តែង"
 msgid "Year"
 msgstr "ឆ្នាំ"
 
-#: dialogs/FilenameLayoutDialog.cpp:120 dialogs/EditFilterDialog.cpp:121
-#: dialogs/transferdialog.cpp:90
+#. i18n: file: dialogs/EditFilterDialog.ui:92
+#. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
+#: dialogs/FilenameLayoutDialog.cpp:120 dialogs/transferdialog.cpp:90
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:682
 #: browsers/collectionbrowser/CollectionWidget.cpp:81
 #: browsers/collectionbrowser/CollectionWidget.cpp:110
 #: browsers/collectionbrowser/CollectionWidget.cpp:142
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:247
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:247 rc.cpp:904
 #: services/magnatune/MagnatuneStore.cpp:198
 #: services/jamendo/JamendoInfoParser.cpp:86 playlist/PlaylistHeader.cpp:42
 #: playlist/PlaylistModel.cpp:559 widgets/Token.cpp:83
@@ -1256,13 +1278,14 @@ msgstr "អាល់ប៊ុម"
 msgid "Comment"
 msgstr "សេចក្តី​អធិប្បាយ"
 
-#: dialogs/FilenameLayoutDialog.cpp:122 dialogs/EditFilterDialog.cpp:127
-#: dialogs/transferdialog.cpp:91
+#. i18n: file: dialogs/EditFilterDialog.ui:107
+#. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
+#: dialogs/FilenameLayoutDialog.cpp:122 dialogs/transferdialog.cpp:91
 #: browsers/collectionbrowser/CollectionTreeItemModelBase.cpp:685
 #: browsers/collectionbrowser/CollectionWidget.cpp:84
 #: browsers/collectionbrowser/CollectionWidget.cpp:113
 #: browsers/collectionbrowser/CollectionWidget.cpp:145
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:249
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:249 rc.cpp:913
 #: playlist/PlaylistModel.cpp:563 widgets/Token.cpp:91
 #: widgets/ProgressiveSearchWidget.cpp:88 widgets/SmartPlaylistEditor.cpp:184
 #: widgets/SmartPlaylistEditor.cpp:198 widgets/FilenameLayoutWidget.cpp:300
@@ -1432,7 +1455,7 @@ msgstr "សង្ខេប"
 msgid "Tags"
 msgstr "ស្លាក"
 
-#: dialogs/TagDialog.cpp:534 MainWindow.cpp:760
+#: dialogs/TagDialog.cpp:534 MainWindow.cpp:691
 msgid "Statistics"
 msgstr "ស្ថិតិ"
 
@@ -1543,7 +1566,7 @@ msgstr "ចម្រៀង​ដែលមាន​ពិន្ទុ ៖"
 msgid "Average Score:"
 msgstr "ពិន្ទុ​មធ្យម ៖"
 
-#: dialogs/EditFilterDialog.cpp:44
+#: dialogs/EditFilterDialog.cpp:42
 msgid "Edit Filter"
 msgstr "កែសម្រួល​តម្រង"
 
@@ -1601,215 +1624,7 @@ msgstr ""
 msgid "Remove last appended filter"
 msgstr "យក​តម្រង​ដែល​បាន​បន្ថែម​ខាង​ចុង ​ចុង​ក្រោយ​ចេញ"
 
-#: dialogs/EditFilterDialog.cpp:85
-msgid ""
-"<p>Edit the filter for finding tracks with specific attributes, e.g. you can "
-"look for a track that has a length of three minutes.</p>"
-msgstr ""
-"<p>កែសម្រួល​តម្រង​ដើម្បី​រក​បទ​ដែល​មាន​គុណលក្ខណៈ​ជាក់លាក់ ឧ. ​អ្នក​អាច​រក​បទ​មួយ​ដែល​មាន​ប្រវែង ៣ នាទី ។</"
-"p>"
-
-#: dialogs/EditFilterDialog.cpp:92
-msgid "Attribute:"
-msgstr "គុណលក្ខណៈ ៖"
-
-#: dialogs/EditFilterDialog.cpp:96
-msgctxt "you can translate the keyword as you will do for the combobox"
-msgid ""
-"<p>Here you can choose to <i>Simple Search</i> directly or to use some "
-"keywords to specify some attributes, such as the artist name and so on. The "
-"keywords selectable are divided by their specific value. Some keywords are "
-"numeric and others are alphanumeric. You do not need to know it directly. "
-"When a keyword is numeric it will be used to search the numeric data for "
-"each track.</p><p>The alphanumeric keywords are the following: <b>album</b>, "
-"<b>artist</b>, <b>filename</b>  (including path), <b>mountpoint</b> (e.g. /"
-"home/user1), <b>filetype</b>  (you can specify mp3, ogg, flac, ... and the "
-"file extensions will be matched), <b>genre</b>, <b>comment</b>, <b>composer</"
-"b>, <b>directory</b>, <b>lyrics</b>, <b>title</b>, and <b>label</b>.</"
-"p><p>The numeric keywords are: <b>bitrate</b>, <b>disc/discnumber</b>, "
-"<b>length</b> (expressed in seconds), <b>playcount</b>, <b>rating</b>, "
-"<b>samplerate</b>, <b>score</b>, <b>size/filesize</b> (expressed in bytes, "
-"kbytes, and megabytes as specified in the unit for the filesize keyword), "
-"<b>track</b> (i.e. the track number), and <b>year</b>.</p>"
-msgstr ""
-"<p>នៅទីនេះ អ្នក​អាច​ជ្រើស <i>ស្វែងរក​ធម្មតា</i> ដោយស្វ័យប្រវត្តិ ឬ​ដើម្បី​ប្រើពាក្យ​គន្លឹះខ្លះ​​ដើម្បី​"
-"បញ្ជាក់​គុណលក្ខណៈ​មួយ​ចំនួន ដូចជា​ឈ្មោះ​សិល្បករ ។ល ។ ពាក្យ​គន្លឹះ​ដែល​អាច​ជ្រើសបាន​ត្រូវបាន​ចែកចេញ​តាម​តម្លៃ​"
-"ជាក់លាក់​របស់​វា ។ ពាក្យ​បញ្ជា​មួយ​ចំនួន​ជា​លេខ និង​មួយ​ចំនួន​ផ្សេងទៀត​ជា​អក្សរក្រម​លេខ ។ អ្នក​មិន​ចាំបាច់​"
-"ស្គាល់វា​ដោយ​ផ្ទាល់​ទេ ។ នៅពេល​ដែល​ពាក្យ​បញ្ជា​ជា​លេខ វា​នឹង​ត្រូវបាន​ប្រើ​ដើម្បី​ស្វែងរក​ទិន្នន័យ​ជា​លេខ​"
-"សម្រាប់​បទ​នីមួយៗ ។</p><p>ពាក្យ​គន្លឹះ​ជា​អក្សរ​ក្រម​លេខ គឺ​មាន​ដូចខាងក្រោម ៖ <b>អាល់ប៊ុម</b> "
-"<b>សិល្បករ</b> <b>ឈ្មោះ​ឯកសារ</b> (ដោយ​រួមបញ្ចូល​ផ្លូវ) <b>ចំណុច​ម៉ោន</b> (ឧ. /home/user1) "
-"<b>ប្រភេទ​ឯកសារ</b>  (អ្នក​អាច​បញ្ជាក់ mp3, ogg, flac, ... ហើយ​កន្ទុយ​ឯកសារ​នឹង​ត្រូវ​បាន​"
-"ផ្គូផ្គង) <b>ចង្វាក់</b> <b>សេចក្ដី​អធិប្បាយ</b> <b>កម្មវិធី​តែង</b> <b>ថត</b> <b>អត្ថបទ​"
-"ចម្រៀង</b> <b>ចំណង​ជើង</b> និង​<b>ស្លាក</b> ។</p><p>ពាក្យ​គន្លឹះ​ជាលេខ​មាន ៖ <b>អត្រាប៊ីត</"
-"b> <b>លេខ​ឌីស</b> <b>ប្រវែង</b> (បង្ហាញ​ជា​វិនាទី) <b>ចំនួន​ចាក់</b> <b>អត្រា</b> <b>អត្រា​"
-"គំរូ</b> <b>ពិន្ទុ</b> <b>ទំហំ/​ទំហំ​ឯកសារ</b> (បង្ហាញ​ជា បៃ គីឡូបៃ និង​មេកាបៃ ដូចដែល​បាន​បញ្ជាក់​នៅ​"
-"ក្នុង​ឯកតា​សម្រាប់​ពាក្យគន្លឹះ​ទំហំ​ឯកសារ) <b>បទ</b> (មានន័យថា លេខ​បទ) និង​<b>ឆ្នាំ</b> ។</p>"
-
-#: dialogs/EditFilterDialog.cpp:116
-msgid "Select an attribute for the filter"
-msgstr "ជ្រើស​គុណលក្ខណៈ​សម្រាប់​តម្រង"
-
-#: dialogs/EditFilterDialog.cpp:119
-msgid "Simple Search"
-msgstr "ការ​ស្វែងរក​ធម្មតា"
-
-#: dialogs/EditFilterDialog.cpp:143
-msgid "<p>Type the attribute value or the text to look for here.</p>"
-msgstr "<p>វាយ​តម្លៃ​គុណលក្ខណៈ ឬ​អត្ថបទ​ដែលត្រូវ​រក​នៅ​ទីនេះ ។</p>"
-
-#: dialogs/EditFilterDialog.cpp:151
-msgid "Attribute value is"
-msgstr "តម្លៃ​គុណលក្ខណៈ​គឺ"
-
-#: dialogs/EditFilterDialog.cpp:165
-msgid "smaller than"
-msgstr "តូច​ជាង"
-
-#: dialogs/EditFilterDialog.cpp:166
-msgid "larger than"
-msgstr "ធំជាង"
-
-#: dialogs/EditFilterDialog.cpp:167
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:404
-msgid "equal to"
-msgstr "ស្មើ​នឹង"
-
-#: dialogs/EditFilterDialog.cpp:168
-msgid "between"
-msgstr "ចន្លោះ"
-
-#: dialogs/EditFilterDialog.cpp:184 widgets/SmartPlaylistEditor.cpp:935
-#: widgets/SmartPlaylistEditor.cpp:957 widgets/SmartPlaylistEditor.cpp:985
-#: widgets/SmartPlaylistEditor.cpp:1004
-msgid "and"
-msgstr "និង"
-
-#: dialogs/EditFilterDialog.cpp:203
-msgid "Unit:"
-msgstr "ឯកតា ៖"
-
-#: dialogs/EditFilterDialog.cpp:210
-msgid "B (1 Byte)"
-msgstr "បៃ (១ បៃ)"
-
-#: dialogs/EditFilterDialog.cpp:211
-msgid "KB (1024 Bytes)"
-msgstr "គីឡូបៃ (១០២៤ បៃ)"
-
-#: dialogs/EditFilterDialog.cpp:212
-msgid "MB (1024 KB)"
-msgstr "មេកាបៃ (១០២៤ គីឡូបៃ)"
-
-#: dialogs/EditFilterDialog.cpp:229
-msgid "Filter action"
-msgstr "សកម្មភាព​តម្រង"
-
-#: dialogs/EditFilterDialog.cpp:236
-msgid "Match all words"
-msgstr "ផ្គូផ្គង​ពាក្យ​ទាំងអស់"
-
-#: dialogs/EditFilterDialog.cpp:239
-msgid ""
-"<p>Check this box to look for the tracks that contain all the words you "
-"typed in the related Simple Search edit box</p>"
-msgstr ""
-"<p>គូស​ធីក​ប្រអប់នេះ​ដើម្បី​រក​បទ​ដែលមាន​ពាក្យ​ទាំងអស់​ដែលអ្នក​បាន​វាយ​នៅ​ក្នុង​ប្រអប់​កែសម្រួល​ស្វែងរក​ធម្មតា​"
-"ដែល​ទាក់ទង</p>"
-
-#: dialogs/EditFilterDialog.cpp:243
-msgid "Match any word"
-msgstr "ផ្គូផ្គង​ពាក្យ​ណា​មួយ"
-
-#: dialogs/EditFilterDialog.cpp:246
-msgid ""
-"<p>Check this box to look for the tracks that contain at least one of the "
-"words you typed in the related Simple Search edit box</p>"
-msgstr ""
-"<p>ធីក​ប្រអប់​នេះ​ដើម្បី​រក​បទ​ដែល​មាន​ពាក្យ​ដែល​អ្នក​បាន​វាយ​យ៉ាងហោច​មួយ​នៅ​ក្នុង​ប្រអប់​កែសម្រួល ស្វែងរក​"
-"ធម្មតា ​ដែល​ទាក់ទង</p>"
-
-#: dialogs/EditFilterDialog.cpp:250
-msgid "Exact match"
-msgstr "ផ្គូផ្គង​ជាក់លាក់"
-
-#: dialogs/EditFilterDialog.cpp:253
-msgid ""
-"<p>Check this box to look for all the tracks that contain exactly the words "
-"you typed in the related Simple Search edit box</p>"
-msgstr ""
-"<p>ធីក​ប្រអប់​នេះ​ដើម្បី​រក​បទ​ទាំងអស់​ដែល​មាន​ពាក្យ​ដូចគ្នា​នឹង​ពាក្យ​ដែល​អ្នក​បាន​វាយនៅ​ក្នុង​ប្រអប់​កែសម្រួល "
-"ស្វែងរក​ធម្មតា ដែល​ទាក់ទង</p>"
-
-#: dialogs/EditFilterDialog.cpp:257
-msgid "Exclude"
-msgstr "មិន​រួម​បញ្ចូល"
-
-#: dialogs/EditFilterDialog.cpp:260
-msgid ""
-"<p>Check this box to look for all the tracks that do not contain the words "
-"you typed in the related Simple Search edit box</p>"
-msgstr ""
-"<p>គូស​ធីក​ប្រអប់​នេះ ដើម្បី​រក​បទ​ទាំងអស់​ដែល​​មិនមាន​ពាក្យ​ដែល​អ្នក​បាន​វាយ​នៅ​ក្នុង​ប្រអប់​កែសម្រួល ស្វែងរក​"
-"ធម្មតា​ ដែល​ទាក់ទង</p>"
-
-#: dialogs/EditFilterDialog.cpp:286
-msgid "Appending condition"
-msgstr "លក្ខខណ្ឌ​បន្ថែម​ខាង​ចុង"
-
-#: dialogs/EditFilterDialog.cpp:294
-msgctxt "AND logic condition"
-msgid "AND"
-msgstr "AND"
-
-#: dialogs/EditFilterDialog.cpp:297
-msgid ""
-"<p>Check this box if you want to add another condition and you want that the "
-"filter to match both the previous conditions and this new one</p>"
-msgstr ""
-"<p>ធីក​ប្រអប់​នេះ ប្រសិន​បើ​អ្នក​ចង់​បន្ថែម​លក្ខខណ្ឌ​ផ្សេង​ទៀត ហើយ​អ្នក​ចង់​ឲ្យ​តម្រង​ផ្គូផ្គង​ទាំង​លក្ខខណ្ឌ​ពី​មុន និង​"
-"លក្ខខណ្ឌ​ថ្មី​មួយ</p>"
-
-#: dialogs/EditFilterDialog.cpp:301
-msgctxt "OR logic condition"
-msgid "OR"
-msgstr "OR"
-
-#: dialogs/EditFilterDialog.cpp:304
-msgid ""
-"<p>Check this box if you want to add another condition and you want that the "
-"filter to match either the previous conditions or this new one</p>"
-msgstr ""
-"<p>ធីក​ប្រអប់​នេះ ប្រសិន​បើ​អ្នក​ចង់បន្ថែម​លក្ខខណ្ឌ​ផ្សេងទៀត ហើយ​អ្នក​ចង់​ឲ្យ​តម្រង​ផ្គូផ្គង​នឹង​លក្ខខណ្ឌ​ពី​មុន ឬ​"
-"លក្ខខណ្ឌ​ថ្មី​នេះ</p>"
-
-#: dialogs/EditFilterDialog.cpp:310
-msgid "Invert condition"
-msgstr "បញ្ច្រាស​លក្ខខណ្ឌ"
-
-#: dialogs/EditFilterDialog.cpp:313
-msgid "Check this box to negate the defined filter condition"
-msgstr "ធីក​ប្រអប់​នេះ ដើម្បីបដិសេធ​លក្ខខណ្ឌ​តម្រង​ដែល​បាន​កំណត់"
-
-#: dialogs/EditFilterDialog.cpp:315
-msgid ""
-"<p>If this option is checked the defined filter condition will be negated. "
-"This means that, for example, you can define a filter that looks for all "
-"tracks that are not of a specific album, artist, and so on.</p>"
-msgstr ""
-"<p>ប្រសិន​បើ​បាន​ធីក​ជម្រើស​នេះ លក្ខខណ្ឌ​តម្រង​ដែល​បាន​កំណត់​នឹង​ត្រូ​វបាន​បដិសេធ ។ ឧទាហរណ៍ វា​មាន​ន័យ​ថា​ "
-"អ្នក​អាច​កំណត់​តម្រង​ដែល​ស្វែងរក​បទ​ទាំងអស់ដែល​មិន​នៅ​ក្នុង​អាល់ប៊ុម សិល្បករ​​ជាក់លាក់ ។ល ។</p>"
-
-#: dialogs/EditFilterDialog.cpp:463 dialogs/EditFilterDialog.cpp:466
-#: widgets/SmartPlaylistEditor.cpp:1012
-msgid "Seconds"
-msgstr "វិនាទី"
-
-#: dialogs/EditFilterDialog.cpp:509 dialogs/EditFilterDialog.cpp:510
-#: widgets/SmartPlaylistEditor.cpp:1013
-msgid "Minutes"
-msgstr "នាទី"
-
-#: dialogs/EditFilterDialog.cpp:682
+#: dialogs/EditFilterDialog.cpp:412
 msgid ""
 "<p>Sorry but the filter rule cannot be set. The text field is empty. Please "
 "type something into it and retry.</p>"
@@ -1817,7 +1632,7 @@ msgstr ""
 "<p>សូម​អភ័យទោស ដោយសារ​តែ​មិនអាច​កំណត់​ច្បាប់​តម្រង​បាន ។ វាល​អត្ថបទ​គឺ​ទទេ ។ សូម​វាយ​អ្វី​ចូល ហើយ​សាកល្បង​"
 "ម្ដងទៀត ។</p>"
 
-#: dialogs/EditFilterDialog.cpp:683
+#: dialogs/EditFilterDialog.cpp:413
 msgid "Empty Text Field"
 msgstr "វាល​អត្ថបទ​ទទេ"
 
@@ -1880,7 +1695,7 @@ msgstr "ជម្រើស​"
 msgid "Convert spaces to underscores"
 msgstr "បម្លែង​ដកឃ្លា​ទៅ​ជា​សញ្ញាគូសក្រោម"
 
-#: dialogs/ScriptManager.cpp:117 MainWindow.cpp:740
+#: dialogs/ScriptManager.cpp:117 MainWindow.cpp:671
 msgid "Script Manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​ស្គ្រីប"
 
@@ -2219,11 +2034,11 @@ msgstr "រៀប​បទ​ជា​ជួរ"
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_cancel)
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:36
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: Systray.cpp:132 rc.cpp:849 rc.cpp:1685
+#: Systray.cpp:132 rc.cpp:849 rc.cpp:1800
 msgid "&Cancel"
 msgstr "បោះបង់"
 
-#: queuemanager/QueueManager.cpp:50 MainWindow.cpp:744
+#: queuemanager/QueueManager.cpp:50 MainWindow.cpp:675
 msgid "Queue Manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​ជួរ"
 
@@ -2875,6 +2690,10 @@ msgstr "ជា​មួយ ៖"
 msgid "less than"
 msgstr "តិចជាង"
 
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:404
+msgid "equal to"
+msgstr "ស្មើ​នឹង"
+
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:405
 msgid "greater than"
 msgstr "ធំ​ជាង"
@@ -2984,7 +2803,7 @@ msgstr "មិន​អាច​សរសេរ​ជាន់​លើ​បញ
 msgid "Add Folder"
 msgstr "បន្ថែម​ថត"
 
-#: browsers/playlistbrowser/PlaylistCategory.cpp:85 MainWindow.cpp:543
+#: browsers/playlistbrowser/PlaylistCategory.cpp:85 MainWindow.cpp:515
 msgid "Add Stream"
 msgstr "បន្ថែម​ស្ទ្រីម​"
 
@@ -3140,7 +2959,7 @@ msgstr "កុំ​ដោះស្រាយ"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
-#: MediaDevicePluginManager.cpp:557 rc.cpp:1715
+#: MediaDevicePluginManager.cpp:557 rc.cpp:1830
 msgid "Remove"
 msgstr "យក​ចេញ"
 
@@ -3181,19 +3000,19 @@ msgstr ""
 "ត្រូវប្រាកដ​ថា អ្នក​មាន​សិទ្ធិ​ត្រឹមត្រូវ\n"
 "ក្នុងការ​យក​ឯកសារ​នោះចេញ ។"
 
-#: MainWindow.cpp:285
+#: MainWindow.cpp:282
 msgid "Internet"
 msgstr "អ៊ីនធឺណិត"
 
-#: MainWindow.cpp:293
+#: MainWindow.cpp:290
 msgid "Playlists"
 msgstr "បញ្ជី​ចាក់"
 
-#: MainWindow.cpp:297
+#: MainWindow.cpp:294
 msgid "Files"
 msgstr "ឯកសារ"
 
-#: MainWindow.cpp:443
+#: MainWindow.cpp:426
 msgid ""
 "<qt>Closing the main window will keep Amarok running in the System Tray. Use "
 "<B>Quit</B> from the menu, or the Amarok tray icon to exit the application.</"
@@ -3202,157 +3021,157 @@ msgstr ""
 "<qt>បិទ​បង្អួច​មេ​នឹង​​ទុក​ឲ្យ Amarok រត់​នៅ​ក្នុង​ថាស​ប្រព័ន្ធ ។ ប្រើ<B>ចេញ</B> ពី​ម៉ឺនុយ ឬ​រូបតំណាង​ថាស "
 "Amarok ដើម្បី​ចាកចេញ​ពី​កម្មវិធី ។</qt>"
 
-#: MainWindow.cpp:445
+#: MainWindow.cpp:428
 msgid "Docking in System Tray"
 msgstr "ចត​ក្នុង​ថាស​ប្រព័ន្ធ"
 
-#: MainWindow.cpp:473
+#: MainWindow.cpp:450
 msgid "Use relative path for &saving"
 msgstr "ប្រើ​ផ្លូវ​ទំនាក់ទំនង​​សម្រាប់​រក្សាទុក"
 
-#: MainWindow.cpp:478
+#: MainWindow.cpp:455
 msgid "Save As"
 msgstr "រក្សាទុក​ជា"
 
-#: MainWindow.cpp:498
+#: MainWindow.cpp:475
 msgid "Playlist"
 msgstr "បញ្ជីចាក់"
 
-#: MainWindow.cpp:528
+#: MainWindow.cpp:500
 msgid "Play Media (Files or URLs)"
 msgstr "ចាក់​មេឌៀ (ឯកសារ ឬ URL)"
 
-#: MainWindow.cpp:528
+#: MainWindow.cpp:500
 msgid "Add Media (Files or URLs)"
 msgstr "បន្ថែម​មេឌៀ (ឯកសារ ឬ URL)"
 
-#: MainWindow.cpp:543
+#: MainWindow.cpp:515
 msgid "Enter Stream URL:"
 msgstr "បញ្ចូល​ URL ស្ទ្រីម ៖"
 
-#: MainWindow.cpp:682
+#: MainWindow.cpp:627
 msgid "&Add Media..."
 msgstr "បន្ថែម​មេឌៀ..."
 
-#: MainWindow.cpp:687
+#: MainWindow.cpp:632
 msgctxt "clear playlist"
 msgid "&Clear Playlist"
 msgstr "ជម្រះ​បញ្ជី​ចាក់"
 
-#: MainWindow.cpp:691
+#: MainWindow.cpp:636
 msgid "&Add Stream..."
 msgstr "បន្ថែម​ស្ទ្រីម​..."
 
-#: MainWindow.cpp:695
+#: MainWindow.cpp:640
 msgid "&Export Playlist As..."
 msgstr "នាំចេញ​បញ្ជី​ចាក់​ជា..."
 
-#: MainWindow.cpp:699
+#: MainWindow.cpp:644
 msgid "&Save Playlist"
 msgstr "រក្សាទុក​បញ្ជី​ចាក់​ជា"
 
-#: MainWindow.cpp:710 covermanager/CoverManager.cpp:98
+#: MainWindow.cpp:648 covermanager/CoverManager.cpp:98
 msgid "Cover Manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​គម្រប"
 
-#: MainWindow.cpp:729
+#: MainWindow.cpp:660
 msgid "Play Media..."
 msgstr "ចាក់​មេឌៀ..."
 
-#: MainWindow.cpp:735
+#: MainWindow.cpp:666
 msgid "Play Audio CD"
 msgstr "ចាក់​ស៊ីឌី​អូឌីយ៉ូ"
 
-#: MainWindow.cpp:748
+#: MainWindow.cpp:679
 msgid "&Seek Forward"
 msgstr "ស្វែងរក​ទៅ​មុខ"
 
-#: MainWindow.cpp:754
+#: MainWindow.cpp:685
 msgid "&Seek Backward"
 msgstr "ស្វែងរក​ថយ​ក្រោយ"
 
-#: MainWindow.cpp:765
+#: MainWindow.cpp:696
 msgid "Update Collection"
 msgstr "ធ្វើ​ឲ្យ​សម្រាំង​ទាន់សម័យ"
 
-#: MainWindow.cpp:772
+#: MainWindow.cpp:703
 msgid "Previous Track"
 msgstr "បទ​មុន"
 
-#: MainWindow.cpp:780
+#: MainWindow.cpp:711
 msgid "Next Track"
 msgstr "បទ​បន្ទាប់"
 
-#: MainWindow.cpp:783
+#: MainWindow.cpp:714
 msgid "Toggle Focus"
 msgstr "បិទបើក​ការ​ផ្ដោត"
 
-#: MainWindow.cpp:787
+#: MainWindow.cpp:718
 msgid "Increase Volume"
 msgstr "បង្កើន​កម្រិត​សំឡេង"
 
-#: MainWindow.cpp:793
+#: MainWindow.cpp:724
 msgid "Decrease Volume"
 msgstr "បន្ថយ​កម្រិត​សំឡេង"
 
-#: MainWindow.cpp:799
+#: MainWindow.cpp:730
 msgid "Toggle Main Window"
 msgstr "បិទ/​បើក​បង្អួច​បញ្ជី​ចាក់"
 
-#: MainWindow.cpp:804
+#: MainWindow.cpp:735
 msgid "Show On Screen Display"
 msgstr "បង្ហាញលើ​ការ​បង្ហាញ​របស់​អេក្រង់"
 
-#: MainWindow.cpp:809
+#: MainWindow.cpp:740
 msgid "Mute Volume"
 msgstr "បិទ​សំឡេង"
 
-#: MainWindow.cpp:814
+#: MainWindow.cpp:745
 msgid "Love Current Track"
 msgstr "ចូលចិត្ត​បទ​បច្ចុប្បន្ន​"
 
-#: MainWindow.cpp:819
+#: MainWindow.cpp:750
 msgid "Rate Current Track: 1"
 msgstr "វាយតម្លៃ​បទ​បច្ចុប្បន្ន ៖ ១"
 
-#: MainWindow.cpp:824
+#: MainWindow.cpp:755
 msgid "Rate Current Track: 2"
 msgstr "វាយតម្លៃ​បទ​បច្ចុប្បន្ន ៖ ២"
 
-#: MainWindow.cpp:829
+#: MainWindow.cpp:760
 msgid "Rate Current Track: 3"
 msgstr "វាយតម្លៃ​បទ​បច្ចុប្បន្ន ៖ ៣"
 
-#: MainWindow.cpp:834
+#: MainWindow.cpp:765
 msgid "Rate Current Track: 4"
 msgstr "វាយតម្លៃ​បទ​បច្ចុប្បន្ន ៖ ៤"
 
-#: MainWindow.cpp:839
+#: MainWindow.cpp:770
 msgid "Rate Current Track: 5"
 msgstr "វាយតម្លៃ​បទ​បច្ចុប្បន្ន ៖ ៥"
 
-#: MainWindow.cpp:905
+#: MainWindow.cpp:830
 msgid "&Music"
 msgstr "តន្ត្រី"
 
-#: MainWindow.cpp:909
+#: MainWindow.cpp:834
 msgid "&Amarok"
 msgstr "Amarok"
 
-#: MainWindow.cpp:959
+#: MainWindow.cpp:884
 msgid "&Tools"
 msgstr "ឧបករណ៍"
 
-#: MainWindow.cpp:980
+#: MainWindow.cpp:898
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
-#: MainWindow.cpp:1070
+#: MainWindow.cpp:988
 #, kde-format
 msgid "Paused  ::  %1"
 msgstr "បាន​ផ្អាក  ::  %1"
 
-#: MainWindow.cpp:1084
+#: MainWindow.cpp:1002
 #, kde-format
 msgid "%1 - %2  ::  %3"
 msgstr "%1 - %2  ::  %3"
@@ -3387,25 +3206,25 @@ msgstr "របៀប​ទិន្នន័យ"
 
 #. i18n: file: amarok.kcfg:13
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:3 rc.cpp:976
+#: rc.cpp:3 rc.cpp:1091
 msgid "Amarok Version"
 msgstr "កំណែ Amarok"
 
 #. i18n: file: amarok.kcfg:14
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:6 rc.cpp:979
+#: rc.cpp:6 rc.cpp:1094
 msgid "Amarok version string, used to restart aRts in new installations."
 msgstr "ខ្សែ​អក្សរ​កំណែ Amarok ដែល​ត្រូវ​ប្រើ​ដើម្បី​ចាប់ផ្ដើម aRts ឡើង​វិញ នៅ​ក្នុង​ការ​ដំឡើង​ថ្មី ។"
 
 #. i18n: file: amarok.kcfg:18
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:9 rc.cpp:982
+#: rc.cpp:9 rc.cpp:1097
 msgid "Whether to follow symlinks while adding items to playlist recursively"
 msgstr "ថា​តើ​ត្រូវ​បន្ត​តាម​តំណ​និមិត្តសញ្ញា​ឬ​ទេ ខណៈ​ពេល​បន្ថែម​វត្ថុ​ទៅ​បញ្ជី​ចាក់​បន្តបន្ទាប់"
 
 #. i18n: file: amarok.kcfg:19
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:12 rc.cpp:985
+#: rc.cpp:12 rc.cpp:1100
 msgid ""
 "If set, amarok follows symlinks when adding files or directories to the "
 "playlist."
@@ -3413,13 +3232,13 @@ msgstr "បើ​កំណត់ នោះ amarok នឹង​បន្ត​ត
 
 #. i18n: file: amarok.kcfg:23
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:15 rc.cpp:988
+#: rc.cpp:15 rc.cpp:1103
 msgid "Whether to display a second, left time label."
 msgstr "ថាតើ​ត្រូវ​បង្ហាញ​វិនាទី ស្លាក​ពេលវេលា​ដែល​នៅ​សល់ ។"
 
 #. i18n: file: amarok.kcfg:24
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:18 rc.cpp:991
+#: rc.cpp:18 rc.cpp:1106
 msgid ""
 "Set this to display a second time label to the left of the seek slider in "
 "the player window."
@@ -3427,13 +3246,13 @@ msgstr "កំណត់វា​ដើម្បី​បង្ហាញ​ស្
 
 #. i18n: file: amarok.kcfg:28
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:21 rc.cpp:994
+#: rc.cpp:21 rc.cpp:1109
 msgid "Whether to display remaining track time in the left time label."
 msgstr "ថាតើ​ត្រូវ​បង្ហាញ​ពេលវេលា​បទ​ដែល​នៅ​សល់​នៅ​ក្នុង​ស្លាក​ពេលវេលា​ដែល​នៅ​សល់ ។"
 
 #. i18n: file: amarok.kcfg:29
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:24 rc.cpp:997
+#: rc.cpp:24 rc.cpp:1112
 msgid ""
 "Set this to display remaining track time instead of past track time in the "
 "player window."
@@ -3442,13 +3261,13 @@ msgstr ""
 
 #. i18n: file: amarok.kcfg:33
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:27 rc.cpp:1000
+#: rc.cpp:27 rc.cpp:1115
 msgid "Which track(s) to play repeatedly"
 msgstr "បទ​ណា​មួយ​ដែល​ត្រូវ​ចាក់​ឡើង​វិញ"
 
 #. i18n: file: amarok.kcfg:34
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:30 rc.cpp:1003
+#: rc.cpp:30 rc.cpp:1118
 msgid ""
 "Whether to repeat the current track, the current album, or the current "
 "playlist indefinitely, or neither."
@@ -3456,37 +3275,37 @@ msgstr "ថា​តើ​ត្រូវ​ចាក់​បទ​បច្ច
 
 #. i18n: file: amarok.kcfg:37
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:33 rc.cpp:1006
+#: rc.cpp:33 rc.cpp:1121
 msgid "Do not Repeat"
 msgstr "កុំ​ចាក់​ឡើងវិញ"
 
 #. i18n: file: amarok.kcfg:40
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:36 rc.cpp:1009
+#: rc.cpp:36 rc.cpp:1124
 msgid "Repeat Track"
 msgstr "ចាក់​បទ​ឡើង​វិញ"
 
 #. i18n: file: amarok.kcfg:43
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:39 rc.cpp:1012
+#: rc.cpp:39 rc.cpp:1127
 msgid "Repeat Album"
 msgstr "ចាក់​អាល់ប៊ុម​ឡើង​វិញ"
 
 #. i18n: file: amarok.kcfg:46
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:42 rc.cpp:1015
+#: rc.cpp:42 rc.cpp:1130
 msgid "Repeat Playlist"
 msgstr "ចាក់​បញ្ជីចាក់​ឡើង​វិញ"
 
 #. i18n: file: amarok.kcfg:52
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:45 rc.cpp:1018
+#: rc.cpp:45 rc.cpp:1133
 msgid "Which tracks or albums to favor in Random Mode"
 msgstr "តើ​បទ ឬ​អាល់ប៊ុម​មួយ​ណា​ពេញ​ចិត្ត​នៅ​ក្នុង​របៀប​ចៃដន្យ"
 
 #. i18n: file: amarok.kcfg:53
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:48 rc.cpp:1021
+#: rc.cpp:48 rc.cpp:1136
 msgid ""
 "Tracks or albums with the chosen property will be more likely to be chosen "
 "in Random Mode."
@@ -3494,26 +3313,26 @@ msgstr "បទ ឬ​អាល់ប៊ុម​ដែល​មាន​លក�
 
 #. i18n: file: amarok.kcfg:63
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:51 rc.cpp:1024
+#: rc.cpp:51 rc.cpp:1139
 msgid "Whether to play tracks or albums in random order"
 msgstr "ថា​តើ​ត្រូវ​ចាក់​បទ ឬ​អាល់ប៊ុម​តាម​លំដាប់​ចៃដន្យ"
 
 #. i18n: file: amarok.kcfg:64
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:54 rc.cpp:1027
+#: rc.cpp:54 rc.cpp:1142
 msgid ""
 "If set, Amarok plays the tracks or albums in the playlist in a random order."
 msgstr "បើ​បាន​កំណត់ នោះ Amarok នឹង​ចាក់​បទ ឬ​អាល់ប៊ុម​នៅ​ក្នុង​បញ្ជី​ចាក់ តាម​លំដាប់​ចៃដន្យ ។"
 
 #. i18n: file: amarok.kcfg:73
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:57 rc.cpp:1030
+#: rc.cpp:57 rc.cpp:1145
 msgid "The status of dynamic mode."
 msgstr "ស្ថានភាព​របៀប​ថាមវន្ត ។"
 
 #. i18n: file: amarok.kcfg:74
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:60 rc.cpp:1033
+#: rc.cpp:60 rc.cpp:1148
 msgid ""
 "If set, dynamic mode will be on, and tracks will be added according to the "
 "dynamic playlist specified."
@@ -3523,50 +3342,50 @@ msgstr ""
 
 #. i18n: file: amarok.kcfg:78
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:63 rc.cpp:1036
+#: rc.cpp:63 rc.cpp:1151
 msgid "The most recently used Dynamic Mode"
 msgstr "របៀប​ថាមវន្ត​ដែល​បាន​ផ្ទុក​ថ្មីៗ​បំផុត"
 
 #. i18n: file: amarok.kcfg:79
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:66 rc.cpp:1039
+#: rc.cpp:66 rc.cpp:1154
 msgid ""
 "The title of the Dynamic Mode that was most recently loaded in the playlist"
 msgstr "ចំណងជើង​របស់​របៀប​ថាមវន្ត ដែល​ត្រូវ​បាន​ផ្ទុក​ថ្មី​ៗ​បំផុត​នៅ​ក្នុង​បញ្ជី​ចាក់"
 
 #. i18n: file: amarok.kcfg:83
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:69 rc.cpp:1042
+#: rc.cpp:69 rc.cpp:1157
 msgid "The most recently used scoring script"
 msgstr "ស្គ្រីប​ដាក់​ពិន្ទុ​ដែល​បាន​ផ្ទុក​ថ្មី​ៗ​បំផុត"
 
 #. i18n: file: amarok.kcfg:84
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:72 rc.cpp:1045
+#: rc.cpp:72 rc.cpp:1160
 msgid "The name of the custom scoring script which was most recently loaded"
 msgstr "ឈ្មោះ​ស្គ្រីប​ដាក់​ពិន្ទុ​ផ្ទាល់​ខ្លួន ដែល​ត្រូវ​បាន​ផ្ទុក​ថ្មីៗ​បំផុត"
 
 #. i18n: file: amarok.kcfg:88
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:75 rc.cpp:1048
+#: rc.cpp:75 rc.cpp:1163
 msgid "Whether to show icon in system tray"
 msgstr "ថា​តើ​ត្រូវ​បង្ហាញ​រូបតំណាង​នៅ​ក្នុង​ថាស​ប្រព័ន្ធ​ឬ​អត់"
 
 #. i18n: file: amarok.kcfg:89
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:78 rc.cpp:1051
+#: rc.cpp:78 rc.cpp:1166
 msgid "Enable/Disable tray icon for Amarok."
 msgstr "បើក/បិទរូបតំណាង​ថាស​សម្រាប់ Amarok ។"
 
 #. i18n: file: amarok.kcfg:93
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:81 rc.cpp:1054
+#: rc.cpp:81 rc.cpp:1169
 msgid "Whether to animate the systray icon"
 msgstr "ថា​តើ​ត្រូវ​ធ្វើ​ឲ្យ​រូបតំណាង​នៅ​ក្នុង​ថាស​ប្រព័ន្ធ​​មាន​ចលនា​ឬអត់"
 
 #. i18n: file: amarok.kcfg:94
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:84 rc.cpp:1057
+#: rc.cpp:84 rc.cpp:1172
 msgid "Enable/Disable tray icon animation."
 msgstr "បើក/បិទ​ចលនា​របស់​រូបតំណាង​នៅ​ក្នុង​ថាស​ប្រព័ន្ធ ។"
 
@@ -3578,79 +3397,79 @@ msgstr "បើក/បិទ​ចលនា​របស់​រូបតំណ�
 #. i18n: ectx: label, entry, group (General Options)
 #. i18n: file: amarok.kcfg:99
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:87 rc.cpp:90 rc.cpp:1060 rc.cpp:1063
+#: rc.cpp:87 rc.cpp:90 rc.cpp:1175 rc.cpp:1178
 msgid "Size of the cover previews in Contextbrowser and Covermanager"
 msgstr "ទំហំ​ទិដ្ឋភាព​គម្រប​នៅ​ក្នុង​កម្មវិធី​រុករក​បរិបទ និង​កម្មវិធី​គ្រប់គ្រង​គម្រប​"
 
 #. i18n: file: amarok.kcfg:103
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:93 rc.cpp:1066
+#: rc.cpp:93 rc.cpp:1181
 msgid "Whether to add directories to playlist recursively"
 msgstr "ថា​តើ​ត្រូវ​បន្ថែម​ថត​ទៅ​បញ្ជី​ចាក់​ជា​បន្តបន្ទាប់​ឬ​អត់"
 
 #. i18n: file: amarok.kcfg:104
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:96 rc.cpp:1069
+#: rc.cpp:96 rc.cpp:1184
 msgid "Enable/Disable recursive directory adding to the playlist."
 msgstr "បើក/បិទ​ការ​បន្ថែម​ថត​ជា​បន្តបន្ទាប់​ទៅ​បញ្ជី​ចាក់ ។"
 
 #. i18n: file: amarok.kcfg:108
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:99 rc.cpp:1072
+#: rc.cpp:99 rc.cpp:1187
 msgid "Delay between tracks, in milliseconds"
 msgstr "ការ​ពន្យារពេល​រវាង​បទ​នីមួយៗ គិត​ជា​មិល្លីវិនាទី ។"
 
 #. i18n: file: amarok.kcfg:109
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:102 rc.cpp:1075
+#: rc.cpp:102 rc.cpp:1190
 msgid "Delay between tracks, in milliseconds."
 msgstr "ការ​ពន្យារពេល​រវាង​បទ​នីមួយៗ គិត​ជា​មិល្លីវិនាទី ។"
 
 #. i18n: file: amarok.kcfg:113
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:105 rc.cpp:1078
+#: rc.cpp:105 rc.cpp:1193
 msgid "Number of undo levels in playlist"
 msgstr "ចំនួន​កម្រិត​មិន​ធ្វើ​វិញ នៅ​ក្នុង​បញ្ជី​ចាក់"
 
 #. i18n: file: amarok.kcfg:114
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:108 rc.cpp:1081
+#: rc.cpp:108 rc.cpp:1196
 msgid "The number of undo levels in the playlist."
 msgstr "ចំនួន​កម្រិត​មិន​ធ្វើ​វិញ នៅ​ក្នុង​បញ្ជី​ចាក់ ។"
 
 #. i18n: file: amarok.kcfg:118
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:111 rc.cpp:1084
+#: rc.cpp:111 rc.cpp:1199
 msgid "Index of current visual analyzer"
 msgstr "លិបិក្រម​នៃ​កម្មវិធី​វិភាគ​និម្មិត​បច្ចុប្បន្ន"
 
 #. i18n: file: amarok.kcfg:119
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:114 rc.cpp:1087
+#: rc.cpp:114 rc.cpp:1202
 msgid "The ID of the visual analyzer to display."
 msgstr "លេខសម្គាល់​កម្មវិធី​វិភាគ​និម្មិត ដែល​ត្រូវ​បង្ហាញ ។"
 
 #. i18n: file: amarok.kcfg:123
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:117 rc.cpp:1090
+#: rc.cpp:117 rc.cpp:1205
 msgid "Whether a splash-screen should be displayed on startup"
 msgstr "ថា​តើ​គួរ​បង្ហាញ​អេក្រង់​ស្វាគមន៍ នៅ​ពេល​ចាប់ផ្ដើម​ឬ​អត់"
 
 #. i18n: file: amarok.kcfg:124
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:120 rc.cpp:1093
+#: rc.cpp:120 rc.cpp:1208
 msgid "Enable/Disable splashscreen during Amarok startup."
 msgstr "បើក/បិទ​អេក្រង់​ស្វាគមន៍ កំឡុង​ពេល​ចាប់ផ្ដើម Amarok ។"
 
 #. i18n: file: amarok.kcfg:128
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:123 rc.cpp:1096
+#: rc.cpp:123 rc.cpp:1211
 msgid "Whether playlists store relative path"
 msgstr "ថា​តើ​បញ្ជី​ចាក់​ទុក​ផ្លូវ​ប្រែប្រួល​ឬ​អត់"
 
 #. i18n: file: amarok.kcfg:129
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:126 rc.cpp:1099
+#: rc.cpp:126 rc.cpp:1214
 msgid ""
 "If set, Amarok's manually saved playlists will contain a relative path to "
 "each track, not an absolute path."
@@ -3660,97 +3479,97 @@ msgstr ""
 
 #. i18n: file: amarok.kcfg:133
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:129 rc.cpp:1102
+#: rc.cpp:129 rc.cpp:1217
 msgid "Whether organize files will overwrite existing files."
 msgstr "ថា​តើ​ឯកសារ​រៀបចំ​នឹង​សរសេរ​ជាន់​លើ​ឯកសារ​ដែល​មាន​ស្រាប់​ឬ​អត់ ។"
 
 #. i18n: file: amarok.kcfg:134
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:132 rc.cpp:1105
+#: rc.cpp:132 rc.cpp:1220
 msgid "If set, Organize files will overwrite any existing destination."
 msgstr "បើ​បាន​កំណត់ ឯកសារ​រៀបចំ​នឹង​សរសេរ​ជាន់​លើ​ទិសដៅ​ដែល​មាន​ស្រាប់ ។"
 
 #. i18n: file: amarok.kcfg:138
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:135 rc.cpp:1108
+#: rc.cpp:135 rc.cpp:1223
 msgid ""
 "Whether organize files will group directories according to their filetype."
 msgstr "ថា​តើ​ឯកសារ​រៀបចំ​នឹង​ដាក់​ថត​ជា​ក្រុម​ទៅ​តាម​ប្រភេទ​ឯកសារ​របស់​ពួក​វា​ឬ​អត់ ។"
 
 #. i18n: file: amarok.kcfg:139
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:138 rc.cpp:1111
+#: rc.cpp:138 rc.cpp:1226
 msgid ""
 "If set, Organize files will group directories containing the same filetype."
 msgstr "បើ​បាន​កំណត់ ឯកសារ​រៀបចំ​នឹង​ដាក់​ថត​ដែល​មាន​ប្រភេទ​ឯកសារ​ដូចគ្នា​ជា​ក្រុម ។"
 
 #. i18n: file: amarok.kcfg:143
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:141 rc.cpp:1114
+#: rc.cpp:141 rc.cpp:1229
 msgid ""
 "Whether organize files will group artist starting in the same character."
 msgstr "ថា​តើឯកសារ​រៀបចំ​នឹង​ដាក់​សិល្បករ​ដែល​មាន​ឈ្មោះ​ចាប់ផ្ដើម​ដោយ​តួអក្សរ​ដូចគ្នា​ជា​ក្រុម​ឬ​ទេ ។"
 
 #. i18n: file: amarok.kcfg:144
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:144 rc.cpp:1117
+#: rc.cpp:144 rc.cpp:1232
 msgid ""
 "If set, Organize files will group artist starting in the same character."
 msgstr "បើ​បាន​កំណត់ ឯកសារ​រៀបចំ​នឹង​ដាក់​សិល្បករ​ដែល​មាន​ឈ្មោះ​ចាប់ផ្ដើម​ដោយ​តួអក្សរ​ដូចគ្នា​ជា​ក្រុម ។"
 
 #. i18n: file: amarok.kcfg:148
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:147 rc.cpp:1120
+#: rc.cpp:147 rc.cpp:1235
 msgid "Whether organize files will ignore The in artist names."
 msgstr "ថា​តើ​ឯកសារ​រៀបចំ​នឹង​មិន​អើពើ​ពាក្យ The នៅ​ក្នុង​ឈ្មោះ​សិល្បករ​ឬ​អត់ ។"
 
 #. i18n: file: amarok.kcfg:149
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:150 rc.cpp:1123
+#: rc.cpp:150 rc.cpp:1238
 msgid "If set, Organize files will ignore The in artist names."
 msgstr "បើ​បាន​កំណត់ ឯកសារ​រៀបចំ​នឹង​មិន​អើពើ​ពាក្យ The នៅ​ក្នុង​ឈ្មោះ​សិល្បករ ។"
 
 #. i18n: file: amarok.kcfg:153
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:153 rc.cpp:1126
+#: rc.cpp:153 rc.cpp:1241
 msgid ""
 "Whether organize files will replace spaces in filenames by an underscore."
 msgstr "ថា​តើ​ឯកសារ​រៀបចំ​នឹង​ជំនួស​ដកឃ្លា​នៅ​ក្នុង​ឈ្មោះ​ឯកសារ​ដោយ​សញ្ញា​គូស​ក្រោម​ឬអត់ ។"
 
 #. i18n: file: amarok.kcfg:154
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:156 rc.cpp:1129
+#: rc.cpp:156 rc.cpp:1244
 msgid ""
 "If set, Organize files will replace spaces in filenames by an underscore."
 msgstr "បើ​បាន​កំណត់ ឯកសារ​រៀបចំ​នឹង​ជំនួស​ដកឃ្លា​នៅ​ក្នុង​ឈ្មោះ​ឯកសារ​ដោយ​សញ្ញា​គូស​ក្រោម ។"
 
 #. i18n: file: amarok.kcfg:158
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:159 rc.cpp:1132
+#: rc.cpp:159 rc.cpp:1247
 msgid "Whether organize files will use cover art as folder icons."
 msgstr "ថា​តើ​ឯកសារ​រៀបចំ​នឹង​ប្រើ​រូបភាព​គម្រប​ជា​រូបតំណាង​ថត​ឬ​អត់ ។"
 
 #. i18n: file: amarok.kcfg:159
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:162 rc.cpp:1135
+#: rc.cpp:162 rc.cpp:1250
 msgid "If set, Organize files will use cover art as folder icons."
 msgstr "បើ​​បាន​កំណត់ ឯកសារ​រៀបចំ​នឹង​ប្រើ​រូបភាព​គម្រប​ជា​រូបតំណាង​ថត ។"
 
 #. i18n: file: amarok.kcfg:163
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:165 rc.cpp:1138
+#: rc.cpp:165 rc.cpp:1253
 msgid "Index of collection folder destination for Organize files."
 msgstr "លិបិក្រម​របស់​ទិសដៅ​ថត​សម្រាំង​សម្រាប់​ឯកសារ​រៀបចំ ។"
 
 #. i18n: file: amarok.kcfg:164
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:168 rc.cpp:1141
+#: rc.cpp:168 rc.cpp:1256
 msgid "The ID of the collection folder destination for Organize files."
 msgstr "លេខសម្គាល់​ទិសដៅ​ថត​សម្រាំង សម្រាប់​ឯកសារ​រៀបចំ ។"
 
 #. i18n: file: amarok.kcfg:168
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:171 rc.cpp:1144
+#: rc.cpp:171 rc.cpp:1259
 msgid ""
 "Whether organize files will rename files in a manner compatible with vfat "
 "filesystems."
@@ -3758,7 +3577,7 @@ msgstr "ថា​តើ​ឯកសារ​រៀបចំ​នឹង​ប្
 
 #. i18n: file: amarok.kcfg:169
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:174 rc.cpp:1147
+#: rc.cpp:174 rc.cpp:1262
 msgid ""
 "If set, Organize files will replace characters that are not compatible with "
 "vfat filesystems (such as ':', '*' and '?')."
@@ -3768,7 +3587,7 @@ msgstr ""
 
 #. i18n: file: amarok.kcfg:173
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:177 rc.cpp:1150
+#: rc.cpp:177 rc.cpp:1265
 msgid ""
 "Whether organize files will rename files such that they only contain 7-bit "
 "ASCII characters."
@@ -3776,7 +3595,7 @@ msgstr "ថាតើ​ឯកសារ​រៀបចំ​នឹង​ប្ដ
 
 #. i18n: file: amarok.kcfg:174
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:180 rc.cpp:1153
+#: rc.cpp:180 rc.cpp:1268
 msgid ""
 "If set, Organize files will replace characters that are not compatible with "
 "the 7-bit ASCII character set."
@@ -3784,26 +3603,26 @@ msgstr "បើ​បាន​កំណត់ ឯកសារ​រៀបចំ�
 
 #. i18n: file: amarok.kcfg:178
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:183 rc.cpp:1156
+#: rc.cpp:183 rc.cpp:1271
 msgid "Whether organize files will use a custom file naming scheme."
 msgstr "ថា​តើ​ឯកសារ​រៀបចំ​នឹង​ប្រើ​គ្រោងការណ៍​ដាក់ឈ្មោះ​ឯកសារ​ផ្ទាល់​ខ្លួន​ឬ​ទេ ។"
 
 #. i18n: file: amarok.kcfg:179
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:186 rc.cpp:1159
+#: rc.cpp:186 rc.cpp:1274
 msgid ""
 "If set, Organize files will rename files according to a custom format string."
 msgstr "បើ​បាន​កំណត់ ឯកសារ​រៀបចំ​នឹង​ប្ដូរឈ្មោះ​ឯកសារ​ទៅ​តាម​ខ្សែអក្សរ​ទ្រង់ទ្រាយ​ផ្ទាល់ខ្លួន ។"
 
 #. i18n: file: amarok.kcfg:183
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:189 rc.cpp:1162
+#: rc.cpp:189 rc.cpp:1277
 msgid "Format string for Organize files, if a custom naming scheme is used."
 msgstr "ខ្សែអក្សរ​ទ្រង់ទ្រាយ​សម្រាប់​ឯកសារ​រៀបចំ បើ​ប្រើ​គ្រោងការណ៍​ដាក់ឈ្មោះ​ផ្ទាល់​ខ្លួន ។"
 
 #. i18n: file: amarok.kcfg:184
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:192 rc.cpp:1165
+#: rc.cpp:192 rc.cpp:1280
 msgid ""
 "If the custom filename scheme is enabled, then Organize files will rename "
 "files according to this format string."
@@ -3813,98 +3632,98 @@ msgstr ""
 
 #. i18n: file: amarok.kcfg:188
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:195 rc.cpp:1168
+#: rc.cpp:195 rc.cpp:1283
 msgid "Regular expression that is to be replaced."
 msgstr "កន្សោម​ធម្មតា​ដែល​នឹង​ត្រូវ​ជំនួស ។"
 
 #. i18n: file: amarok.kcfg:189
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:198 rc.cpp:1171
+#: rc.cpp:198 rc.cpp:1286
 msgid ""
 "Organize files will replace substrings matching this regular expression."
 msgstr "ឯកសារ​រៀបចំ​នឹង​ជំនួស​ខ្សែអក្សរ​រង​ដែល​ដូច​នឹង​កន្សោម​ធម្មតា​នេះ ។"
 
 #. i18n: file: amarok.kcfg:193
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:201 rc.cpp:1174
+#: rc.cpp:201 rc.cpp:1289
 msgid "Replacing string."
 msgstr "ខ្សែអក្សរ​ជំនួស ។"
 
 #. i18n: file: amarok.kcfg:194
 #. i18n: ectx: whatsthis, entry, group (General Options)
-#: rc.cpp:204 rc.cpp:1177
+#: rc.cpp:204 rc.cpp:1292
 msgid "Organize files will replace matching substrings with this string."
 msgstr "ឯកសារ​រៀបចំ​នឹង​ជំនួស​ខ្សែអក្សរ​រង​ដែល​ដូច​ដោយ​ខ្សែអក្សរ​នេះ ។"
 
 #. i18n: file: amarok.kcfg:198
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:207 rc.cpp:1180
+#: rc.cpp:207 rc.cpp:1295
 msgid "Filename of the external web browser to be invoked by Amarok."
 msgstr "ឈ្មោះ​របស់​កម្មវិធី​រុករក​បណ្ដាញ​ខាង​ក្រៅ​ត្រូវ​បាន​ហៅ​ដោយ Amarok ។"
 
 #. i18n: file: amarok.kcfg:202
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:210 rc.cpp:1183
+#: rc.cpp:210 rc.cpp:1298
 msgid "Whether the collection view is in the flat or tree view mode"
 msgstr "ថា​តើ​ការ​សម្រាំង​មាន​លក្ខណៈ​ជា​របៀប​ទិដ្ឋភាព​រាបស្មើ ឬ​ក៏​មែកធាង"
 
 #. i18n: file: amarok.kcfg:206
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:213 rc.cpp:1186
+#: rc.cpp:213 rc.cpp:1301
 msgid "Whether to use the CoverBling album art visualization."
 msgstr "ថាតើ​ត្រូវប្រើ​រូបភាព​អាល់ប៊ុម CoverBling ឬ​អត់ ។"
 
 #. i18n: file: amarok.kcfg:210
 #. i18n: ectx: label, entry, group (General Options)
-#: rc.cpp:216 rc.cpp:1189
+#: rc.cpp:216 rc.cpp:1304
 msgid "Whether to automatically attempt to fetch cover art as needed"
 msgstr "ថាតើ​ត្រូវ​ទៅ​យក​​សិល្បៈគម្រប​ដោយ​ស្វ័យប្រវត្តិ​តាម​ដែលត្រូវការ​ឬទេ"
 
 #. i18n: file: amarok.kcfg:217
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:219 rc.cpp:1192
+#: rc.cpp:219 rc.cpp:1307
 msgid "Master volume"
 msgstr "កម្រិត​សំឡេង​មេ"
 
 #. i18n: file: amarok.kcfg:218
 #. i18n: ectx: whatsthis, entry, group (Playback)
-#: rc.cpp:222 rc.cpp:1195
+#: rc.cpp:222 rc.cpp:1310
 msgid "The Amarok master volume, a value between 0 (muted) and 100."
 msgstr "កម្រិត​សំឡេង​មេ​របស់ Amarok តម្លៃ​ចន្លោះ ០ (ស្ងាត់) និង ១០០ ។"
 
 #. i18n: file: amarok.kcfg:224
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:225 rc.cpp:1198
+#: rc.cpp:225 rc.cpp:1313
 msgid "Whether to crossfade between tracks"
 msgstr "ថា​តើ​ត្រូវ​លេច​បន្តិច​ម្ដង​រវាង​បទ​នីមួយៗ​ឬអត់"
 
 #. i18n: file: amarok.kcfg:225
 #. i18n: ectx: whatsthis, entry, group (Playback)
-#: rc.cpp:228 rc.cpp:1201
+#: rc.cpp:228 rc.cpp:1316
 msgid "Enable/Disable crossfading between track changes."
 msgstr "បើក/បិទ​ការ​លេច​បន្តិច​ម្ដង​ពេល​ប្ដូរ​បទ ។"
 
 #. i18n: file: amarok.kcfg:229
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:231 rc.cpp:1204
+#: rc.cpp:231 rc.cpp:1319
 msgid "Length of crossfade, in milliseconds"
 msgstr "រយៈពេល​លេច​បន្តិច​ម្ដង គិត​ជា​មិល្លីវិនាទី"
 
 #. i18n: file: amarok.kcfg:230
 #. i18n: ectx: whatsthis, entry, group (Playback)
-#: rc.cpp:234 rc.cpp:1207
+#: rc.cpp:234 rc.cpp:1322
 msgid "The length of the crossfade between tracks in milliseconds."
 msgstr "រយៈពេល​ការ​លេច​បន្តិច​ម្ដង​រវាង​បទ​នីមួយៗ គិត​ជា​មិល្លីវិនាទី ។"
 
 #. i18n: file: amarok.kcfg:235
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:237 rc.cpp:1210
+#: rc.cpp:237 rc.cpp:1325
 msgid "When to Crossfade"
 msgstr "ពេល​ដែលត្រូវ​លេច​បន្តិចម្ដងៗ​"
 
 #. i18n: file: amarok.kcfg:236
 #. i18n: ectx: whatsthis, entry, group (Playback)
-#: rc.cpp:240 rc.cpp:1213
+#: rc.cpp:240 rc.cpp:1328
 msgid ""
 "Determines whether to crossfade always, or on automatic/manual track changes "
 "only."
@@ -3912,116 +3731,116 @@ msgstr "កំណត់​ថាតើ​ត្រូវ​លេចកាត់
 
 #. i18n: file: amarok.kcfg:240
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:243 rc.cpp:1216
+#: rc.cpp:243 rc.cpp:1331
 msgid "Whether to fade out tracks when pressing stop."
 msgstr "ថាតើ​ត្រូវ​​ធ្វើ​ឲ្យ​បទ​លិចបន្តិចម្ដង​ នៅ​ពេល​ចុច​បញ្ឈប់ ។"
 
 #. i18n: file: amarok.kcfg:241
 #. i18n: ectx: whatsthis, entry, group (Playback)
-#: rc.cpp:246 rc.cpp:1219
+#: rc.cpp:246 rc.cpp:1334
 msgid "Enable/Disable fadeout."
 msgstr "បិទ/បើក​លិចកាត់បន្តិចម្ដង ។"
 
 #. i18n: file: amarok.kcfg:245
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:249 rc.cpp:1222
+#: rc.cpp:249 rc.cpp:1337
 msgid "Length of fadeout, in milliseconds"
 msgstr "រយៈពេល​លិច​បន្តិចម្ដង គិត​ជា​មិល្លី​វិនាទី"
 
 #. i18n: file: amarok.kcfg:246
 #. i18n: ectx: whatsthis, entry, group (Playback)
-#: rc.cpp:252 rc.cpp:1225
+#: rc.cpp:252 rc.cpp:1340
 msgid "The length of the fadeout in milliseconds."
 msgstr "រយៈពេល​​​លិច​​បន្តិច​ម្ដង គិត​ជា​មិល្លីវិនាទី ។"
 
 #. i18n: file: amarok.kcfg:251
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:255 rc.cpp:1228
+#: rc.cpp:255 rc.cpp:1343
 msgid "Whether to fade out when exiting the program."
 msgstr "ថាតើ​ត្រូវ​លិច​បន្តិចម្ដង​នៅពេល​ចេញ​ពី​កម្មវិធី​ឬទេ ។"
 
 #. i18n: file: amarok.kcfg:255
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:258 rc.cpp:1231
+#: rc.cpp:258 rc.cpp:1346
 msgid "Enables the equalizer plugin"
 msgstr "អនុញ្ញាត​កម្មវិធី​ជំនួយ​អេហ្គុយ"
 
 #. i18n: file: amarok.kcfg:256
 #. i18n: ectx: whatsthis, entry, group (Playback)
-#: rc.cpp:261 rc.cpp:1234
+#: rc.cpp:261 rc.cpp:1349
 msgid "When enabled, an equalizer plugin filters the audio stream."
 msgstr "នៅពេល​ដែលបាន​បើក កម្មវិធី​ជំនួយ​អេហ្គុយ​មួយ​នឹង​ត្រង​ស្ទ្រីម​អូឌីយ៉ូ ។"
 
 #. i18n: file: amarok.kcfg:260
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:264 rc.cpp:1237
+#: rc.cpp:264 rc.cpp:1352
 msgid "Equalizer pre-amplification value, range -100..100, 0 is normal."
 msgstr "តម្លៃ​អាំភ្លី​ដើរ​មុន​គេ​សម្រាប់​អេហ្គុយ ។ ជួរ​ពី -100..100, 0 ធម្មតា ។"
 
 #. i18n: file: amarok.kcfg:266
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:267 rc.cpp:1240
+#: rc.cpp:267 rc.cpp:1355
 msgid "Band gains for equalizer, 10 values, range -100..100, 0 is normal."
 msgstr "Band gains សម្រាប់​អេហ្គុយ ។ តម្លៃ​គឺ 10 ជួរ​ពី -100..100, 0 ធម្មតា ។"
 
 #. i18n: file: amarok.kcfg:270
 #. i18n: ectx: label, entry, group (Playback)
-#: rc.cpp:270 rc.cpp:1243
+#: rc.cpp:270 rc.cpp:1358
 msgid "Equalizer preset name."
 msgstr "ឈ្មោះ​កំណត់​ជាមុនរបស់​អេហ្គុយ ។"
 
 #. i18n: file: amarok.kcfg:277
 #. i18n: ectx: label, entry, group (Cover Manager)
-#: rc.cpp:273 rc.cpp:1246
+#: rc.cpp:273 rc.cpp:1361
 msgid "Amazon locale for cover retrieval"
 msgstr "មូលដ្ឋាន Amazon សម្រាប់​ទៅ​យក​គម្រប"
 
 #. i18n: file: amarok.kcfg:278
 #. i18n: ectx: whatsthis, entry, group (Cover Manager)
-#: rc.cpp:276 rc.cpp:1249
+#: rc.cpp:276 rc.cpp:1364
 msgid "Determines which Amazon server cover images should be retrieved from."
 msgstr "កំណត់​ថា​តើ​ត្រូវ​ទៅ​យក​គម្រប​ពី​ម៉ាស៊ីន​បម្រើ Amazon មួយ​ណា ។"
 
 #. i18n: file: amarok.kcfg:285
 #. i18n: ectx: label, entry, group (Wikipedia)
-#: rc.cpp:279 rc.cpp:1252
+#: rc.cpp:279 rc.cpp:1367
 msgid "Wikipedia locale for information retrieval"
 msgstr "មូលដ្ឋាន​វិគីផេឌៀ សម្រាប់​ទៅ​យក​ព័ត៌មាន"
 
 #. i18n: file: amarok.kcfg:286
 #. i18n: ectx: whatsthis, entry, group (Wikipedia)
-#: rc.cpp:282 rc.cpp:1255
+#: rc.cpp:282 rc.cpp:1370
 msgid ""
 "Determines in which language the information is retrieved from Wikipedia."
 msgstr "កំណត់​ភាសា​សម្រាប់​ព័ត៌មាន​ដែល​នឹង​ត្រូវ​ទៅ​យក​ពី​វិគីផេឌៀ ។"
 
 #. i18n: file: amarok.kcfg:293
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:285 rc.cpp:1258
+#: rc.cpp:285 rc.cpp:1373
 msgid "Use On-Screen Display"
 msgstr "ប្រើ​ការ​បង្ហាញ​លើ​អេក្រង់"
 
 #. i18n: file: amarok.kcfg:294
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:288 rc.cpp:1261
+#: rc.cpp:288 rc.cpp:1376
 msgid "Enable/Disable the On-Screen Display."
 msgstr "បើក​/​បិទ​ការ​បង្ហាញ​លើ​អេក្រង់ ។"
 
 #. i18n: file: amarok.kcfg:299
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:294 rc.cpp:1267
+#: rc.cpp:294 rc.cpp:1382
 msgid "Enable/Disable use of Growl for notifications."
 msgstr "បិទ/​បើកកា​រប្រើ​​ការ​គំរាម​សម្រាប់​ការ​ជូនដំណឹង ។"
 
 #. i18n: file: amarok.kcfg:303
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:297 rc.cpp:1270
+#: rc.cpp:297 rc.cpp:1385
 msgid "Display the same information in the OSD as in the playlist columns."
 msgstr "បង្ហាញ​ព័ត៌មាន​នៅ​ក្នុង OSD ដូច​នៅ​ក្នុង​ជួរឈរ​បញ្ជី​ចាក់ ។"
 
 #. i18n: file: amarok.kcfg:304
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:300 rc.cpp:1273
+#: rc.cpp:300 rc.cpp:1388
 msgid ""
 "If enabled, the OSD will display the same information and in the same order "
 "as the columns in the playlist."
@@ -4029,61 +3848,61 @@ msgstr "បើ​អនុញ្ញាត OSD នឹង​បង្ហាញ​�
 
 #. i18n: file: amarok.kcfg:308
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:303 rc.cpp:1276
+#: rc.cpp:303 rc.cpp:1391
 msgid "The OSD text to show"
 msgstr "អត្ថបទ OSD ដែល​ត្រូវ​បង្ហាញ"
 
 #. i18n: file: amarok.kcfg:309
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:306 rc.cpp:1279
+#: rc.cpp:306 rc.cpp:1394
 msgid "Customize the OSD display text."
 msgstr "ប្ដូរ​អត្ថបទ​បង្ហាញ​ក្នុង OSD តាម​បំណង ។"
 
 #. i18n: file: amarok.kcfg:313
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:309 rc.cpp:1282
+#: rc.cpp:309 rc.cpp:1397
 msgid "Font for On-Screen Display"
 msgstr "ពុម្ពអក្សរ​សម្រាប់​ការ​បង្ហាញ​លើ​អេក្រង់"
 
 #. i18n: file: amarok.kcfg:314
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:312 rc.cpp:1285
+#: rc.cpp:312 rc.cpp:1400
 msgid "The font to use for the On-Screen Display."
 msgstr "ពុម្ពអក្សរ ដែល​ត្រូវ​ប្រើ​សម្រាប់​ការ​បង្ហាញ​លើ​អេក្រង់ ។"
 
 #. i18n: file: amarok.kcfg:318
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:315 rc.cpp:1288
+#: rc.cpp:315 rc.cpp:1403
 msgid "Translucency Toggle"
 msgstr "បិទ​បើក​ភាពល្អក់"
 
 #. i18n: file: amarok.kcfg:319
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:318 rc.cpp:1291
+#: rc.cpp:318 rc.cpp:1406
 msgid "Make the background of the OSD translucent."
 msgstr "ធ្វើ​ឲ្យ​ផ្ទៃខាងក្រោយ OSD ល្អក់ ។"
 
 #. i18n: file: amarok.kcfg:323
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:321 rc.cpp:1294
+#: rc.cpp:321 rc.cpp:1409
 msgid "Whether to use custom colors for the OSD"
 msgstr "ថា​តើ​ត្រូវ​ប្រើ​ពណ៌​ផ្ទាល់​ខ្លួន​សម្រាប់ OSD ឬ​ទេ"
 
 #. i18n: file: amarok.kcfg:324
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:324 rc.cpp:1297
+#: rc.cpp:324 rc.cpp:1412
 msgid "You can use custom colors for the OSD if you set this true."
 msgstr "អ្នក​អាច​ប្រើ​ពណ៌​ផ្ទាល់​ខ្លួន​សម្រាប់ OSD បើ​អ្នក​បាន​កំណត់​វា​ឲ្យ​ពិត ។"
 
 #. i18n: file: amarok.kcfg:328
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:327 rc.cpp:1300
+#: rc.cpp:327 rc.cpp:1415
 msgid "Font Color for On-Screen Display"
 msgstr "ពណ៌​ពុម្ពអក្សរ សម្រាប់​ការ​បង្ហាញ​លើ​អេក្រង់"
 
 #. i18n: file: amarok.kcfg:329
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:330 rc.cpp:1303
+#: rc.cpp:330 rc.cpp:1418
 msgid ""
 "The color of the OSD text. The color is specified in RGB, a comma-separated "
 "list containing three integers between 0 and 255."
@@ -4093,13 +3912,13 @@ msgstr ""
 
 #. i18n: file: amarok.kcfg:333
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:333 rc.cpp:1306
+#: rc.cpp:333 rc.cpp:1421
 msgid "How many milliseconds the text should be displayed"
 msgstr "ចំនួន​មិល្លីវិនាទី ដែល​គួរ​បង្ហាញ​អត្ថបទ"
 
 #. i18n: file: amarok.kcfg:334
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:336 rc.cpp:1309
+#: rc.cpp:336 rc.cpp:1424
 msgid ""
 "The time in milliseconds to show the OSD. A value of 0 means never hide. The "
 "default value is 5000 ms."
@@ -4109,13 +3928,13 @@ msgstr ""
 
 #. i18n: file: amarok.kcfg:339
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:339 rc.cpp:1312
+#: rc.cpp:339 rc.cpp:1427
 msgid "Y position offset"
 msgstr "អុហ្វសិត​ទីតាំង Y"
 
 #. i18n: file: amarok.kcfg:340
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:342 rc.cpp:1315
+#: rc.cpp:342 rc.cpp:1430
 msgid ""
 "The Y position of the OSD relative to the chosen screen and OSD alignment. "
 "If Top alignment is chosen the Y offset is the space between the upper part "
@@ -4129,13 +3948,13 @@ msgstr ""
 
 #. i18n: file: amarok.kcfg:346
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:345 rc.cpp:1318
+#: rc.cpp:345 rc.cpp:1433
 msgid "OSD screen"
 msgstr "អេក្រង់ OSD"
 
 #. i18n: file: amarok.kcfg:347
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:348 rc.cpp:1321
+#: rc.cpp:348 rc.cpp:1436
 msgid ""
 "The screen that should display the OSD. For single-headed environments this "
 "setting should be 0."
@@ -4143,25 +3962,25 @@ msgstr "អេក្រង់​ដែល​គួរ​បង្ហាញ OSD 
 
 #. i18n: file: amarok.kcfg:351
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:351 rc.cpp:1324
+#: rc.cpp:351 rc.cpp:1439
 msgid "Whether the album cover should be shown"
 msgstr "ថា​តើ​ត្រូវ​បង្ហាញ​គម្រប​អាល់ប៊ុម​ឬ​អត់"
 
 #. i18n: file: amarok.kcfg:352
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:354 rc.cpp:1327
+#: rc.cpp:354 rc.cpp:1442
 msgid "If enabled, shows the album cover in the OSD."
 msgstr "បើ​បាន​ធីក វា​នឹង​បង្ហាញ​គម្រប​នៅ​ក្នុង OSD ។"
 
 #. i18n: file: amarok.kcfg:356
 #. i18n: ectx: label, entry, group (OSD)
-#: rc.cpp:357 rc.cpp:1330
+#: rc.cpp:357 rc.cpp:1445
 msgid "Align OSD to"
 msgstr "តម្រឹម OSD ត្រឹម"
 
 #. i18n: file: amarok.kcfg:357
 #. i18n: ectx: whatsthis, entry, group (OSD)
-#: rc.cpp:360 rc.cpp:1333
+#: rc.cpp:360 rc.cpp:1448
 msgid ""
 "The relative position of the OSD. Possible choices are Left, Middle, Right "
 "and Center."
@@ -4171,195 +3990,195 @@ msgstr ""
 
 #. i18n: file: amarok.kcfg:371
 #. i18n: ectx: label, entry, group (Session)
-#: rc.cpp:363 rc.cpp:1336
+#: rc.cpp:363 rc.cpp:1451
 msgid "Resume playback of last played track on startup"
 msgstr "បន្ត​ចាក់​បទ​ដែល​បាន​ចាក់​ចុងក្រោយ​សារ​ថ្មី ពេល​ចាប់ផ្ដើម"
 
 #. i18n: file: amarok.kcfg:372
 #. i18n: ectx: whatsthis, entry, group (Session)
-#: rc.cpp:366 rc.cpp:1339
+#: rc.cpp:366 rc.cpp:1454
 msgid "If set, Amarok resumes playback of the last played track on startup."
 msgstr "បើ​បាន​កំណត់ Amarok នឹង​បន្ត​ចាក់​បទ​ដែល​បាន​ចាក់​ចុងក្រោយ​សារ​ថ្មី ពេល​ចាប់ផ្ដើម"
 
 #. i18n: file: amarok.kcfg:376
 #. i18n: ectx: label, entry, group (Session)
-#: rc.cpp:369 rc.cpp:1342
+#: rc.cpp:369 rc.cpp:1457
 msgid "Track URL to resume upon startup"
 msgstr "URL បទ​ដែល​ត្រូវ​បន្ត ពេល​ចាប់ផ្ដើម"
 
 #. i18n: file: amarok.kcfg:377
 #. i18n: ectx: whatsthis, entry, group (Session)
-#: rc.cpp:372 rc.cpp:1345
+#: rc.cpp:372 rc.cpp:1460
 msgid "Internal: URL of the track to resume on startup."
 msgstr "ខាង​ក្នុង ៖ URL នៃ​បទ​ដែល​ត្រូវ​បន្ត ពេល​ចាប់ផ្ដើម ។"
 
 #. i18n: file: amarok.kcfg:380
 #. i18n: ectx: label, entry, group (Session)
-#: rc.cpp:375 rc.cpp:1348
+#: rc.cpp:375 rc.cpp:1463
 msgid "Time to resume at, in milliseconds"
 msgstr "រយៈពេល​ត្រូវ​បន្ត គិត​ជា​មិល្លីវិនាទី"
 
 #. i18n: file: amarok.kcfg:381
 #. i18n: ectx: whatsthis, entry, group (Session)
-#: rc.cpp:378 rc.cpp:1351
+#: rc.cpp:378 rc.cpp:1466
 msgid "Internal: Playback position in the track to resume on startup."
 msgstr "ខាង​ក្នុង ៖ ទីតាំង​ចាក់​សារ​ថ្មី​នៅ​ក្នុង​បទ​ដើម្បី​បន្ត ពេល​ចាប់ផ្ដើម ។"
 
 #. i18n: file: amarok.kcfg:384
 #. i18n: ectx: label, entry, group (Session)
-#: rc.cpp:381 rc.cpp:1354
+#: rc.cpp:381 rc.cpp:1469
 msgid ""
 "List of bools describing which browsers are visible, from top to bottom."
 msgstr "រាយក​សេចក្ដី​ពិពណ៌​របស់ bools ដែល​កម្មវិធី​រុករក​អាច​មើល​ឃើញ ពី​កំពូល​ទៅ​បាត ។"
 
 #. i18n: file: amarok.kcfg:387
 #. i18n: ectx: label, entry, group (Session)
-#: rc.cpp:384 rc.cpp:1357
+#: rc.cpp:384 rc.cpp:1472
 msgid "Track playing on last exit. Value is -1 if no track was playing."
 msgstr "ការ​ចាក់បទ​នៅ​ពេល​ចេញ​ចុងក្រោយ ។ តម្លៃ​គឺ -1 ប្រសិន​បើ​គ្មាន​​បទ​កំពុង​ចាក់​ទេ ។"
 
 #. i18n: file: amarok.kcfg:391
 #. i18n: ectx: label, entry, group (Session)
-#: rc.cpp:387 rc.cpp:1360
+#: rc.cpp:387 rc.cpp:1475
 msgid "Number (from the top) of the last active browser."
 msgstr "ចំនួន (ពី​កំពូល) របស់​កម្មវិធី​រុករក​ដែល​សកម្ម​ចុងក្រោយ ។"
 
 #. i18n: file: amarok.kcfg:397
 #. i18n: ectx: label, entry, group (Collection)
-#: rc.cpp:390 rc.cpp:1363
+#: rc.cpp:390 rc.cpp:1478
 msgid "Whether Collections folders are scanned recursively"
 msgstr "ថា​តើ​ត្រូវ​វិភាគ​ថត​ជ្រើសរើស​ជា​បន្តបន្ទាប់​ឬ​ទេ"
 
 #. i18n: file: amarok.kcfg:401
 #. i18n: ectx: label, entry, group (Collection)
-#: rc.cpp:393 rc.cpp:1366
+#: rc.cpp:393 rc.cpp:1481
 msgid "Whether Collection folders are rescanned on change"
 msgstr "ថា​តើ​ត្រូវ​វិភាគ​ថត​ជ្រើសរើស​ឡើង​វិញ​ឬ​ទេ ពេល​មាន​ការ​ផ្លាស់ប្ដូរ"
 
 #. i18n: file: amarok.kcfg:405
 #. i18n: ectx: label, entry, group (Collection)
-#: rc.cpp:396 rc.cpp:1369
+#: rc.cpp:396 rc.cpp:1484
 msgid "List of folders in the Collection"
 msgstr "បញ្ជី​ថត​នៅ​ក្នុង 'ជ្រើសរើស'"
 
 #. i18n: file: amarok.kcfg:408
 #. i18n: ectx: label, entry, group (Collection)
-#: rc.cpp:399 rc.cpp:1372
+#: rc.cpp:399 rc.cpp:1487
 msgid "Whether track numbers are shown in the collection browser."
 msgstr "ថាតើ​លេខ​បទ​ត្រូវ​បានបង្ហាញ​នៅ​ក្នុង​កម្មវិធី​រុករក​សម្រាំង​ដែរ​ឬទេ ។"
 
 #. i18n: file: amarok.kcfg:412
 #. i18n: ectx: label, entry, group (Collection)
-#: rc.cpp:402 rc.cpp:1375
+#: rc.cpp:402 rc.cpp:1490
 msgid "Whether years are shown in the collection browser."
 msgstr "ថាតើ​ឆ្នាំ​ត្រូ​វបានបង្ហាញ​នៅ​ក្នុង​កម្មវិធី​រុករក​សម្រាំង​ដែរ​ឬទេ ។"
 
 #. i18n: file: amarok.kcfg:422
 #. i18n: ectx: label, entry, group (Scrobbler)
-#: rc.cpp:405 rc.cpp:1378
+#: rc.cpp:405 rc.cpp:1493
 msgid "Submit played songs"
 msgstr "ដាក់ស្នើ​បទ​ដែល​បាន​ចាក់"
 
 #. i18n: file: amarok.kcfg:423
 #. i18n: ectx: whatsthis, entry, group (Scrobbler)
-#: rc.cpp:408 rc.cpp:1381
+#: rc.cpp:408 rc.cpp:1496
 msgid "Whether played songs are submitted to Audioscrobbler"
 msgstr "ថា​តើ​ត្រូវ​ដាក់ស្នើ​បទ​ចម្រៀង​ដែល​បាន​ចាក់​ទៅ Audioscrobbler ឬ​ទេ"
 
 #. i18n: file: amarok.kcfg:427
 #. i18n: ectx: label, entry, group (Scrobbler)
-#: rc.cpp:411 rc.cpp:1384
+#: rc.cpp:411 rc.cpp:1499
 msgctxt "Username for audioscrobbler login"
 msgid "Username"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ"
 
 #. i18n: file: amarok.kcfg:428
 #. i18n: ectx: whatsthis, entry, group (Scrobbler)
-#: rc.cpp:414 rc.cpp:1387
+#: rc.cpp:414 rc.cpp:1502
 msgid "The username to use for connecting to Audioscrobbler"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ដែល​ប្រើ​ដើម្បី​តភ្ជាប់​ទៅ Audioscrobbler"
 
 #. i18n: file: amarok.kcfg:432
 #. i18n: ectx: label, entry, group (Scrobbler)
-#: rc.cpp:417 rc.cpp:1390
+#: rc.cpp:417 rc.cpp:1505
 msgid "Password"
 msgstr "ពាក្យ​សម្ងាត់"
 
 #. i18n: file: amarok.kcfg:433
 #. i18n: ectx: whatsthis, entry, group (Scrobbler)
-#: rc.cpp:420 rc.cpp:1393
+#: rc.cpp:420 rc.cpp:1508
 msgid "The password to use for connecting to Audioscrobbler"
 msgstr "ពាក្យសម្ងាត់ ដែល​ប្រើ​ដើម្បី​តភ្ជាប់​ទៅ Audioscrobbler"
 
 #. i18n: file: amarok.kcfg:437
 #. i18n: ectx: label, entry, group (Scrobbler)
-#: rc.cpp:423 rc.cpp:1396
+#: rc.cpp:423 rc.cpp:1511
 msgid "Retrieve similar artists"
 msgstr "ទៅ​យក​សិល្បករ​ស្រដៀង​គ្នា"
 
 #. i18n: file: amarok.kcfg:438
 #. i18n: ectx: whatsthis, entry, group (Scrobbler)
-#: rc.cpp:426 rc.cpp:1399
+#: rc.cpp:426 rc.cpp:1514
 msgid "Whether similar songs are retrieved from Audioscrobbler"
 msgstr "ថា​តើ​ត្រូវ​ទៅ​យក​បទចម្រៀង​ស្រដៀង​គ្នា​ពី Audioscrobbler ឬ​ទេ"
 
 #. i18n: file: amarok.kcfg:445
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: rc.cpp:429 rc.cpp:1402
+#: rc.cpp:429 rc.cpp:1517
 msgid "Device type"
 msgstr "ប្រភេទ​ឧបករណ៍"
 
 #. i18n: file: amarok.kcfg:446
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: rc.cpp:432 rc.cpp:1405
+#: rc.cpp:432 rc.cpp:1520
 msgid "The type of media device."
 msgstr "ប្រភេទ​ឧបករណ៍​ផ្ទុក ។"
 
 #. i18n: file: amarok.kcfg:449
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: rc.cpp:435 rc.cpp:1408
+#: rc.cpp:435 rc.cpp:1523
 msgid "Mount point"
 msgstr "ចំណុចម៉ោន"
 
 #. i18n: file: amarok.kcfg:450
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: rc.cpp:438 rc.cpp:1411
+#: rc.cpp:438 rc.cpp:1526
 msgid "The mount point used for the media device connection."
 msgstr "ចំណុចម៉ោន​ដែលប្រើ​ដើម្បី​តភ្ជាប់​ឧបករណ៍​​ផ្ទុក ។"
 
 #. i18n: file: amarok.kcfg:453
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: rc.cpp:441 rc.cpp:1414
+#: rc.cpp:441 rc.cpp:1529
 msgid "Mount command"
 msgstr "ពាក្យ​បញ្ជា​ម៉ោន"
 
 #. i18n: file: amarok.kcfg:454
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: rc.cpp:444 rc.cpp:1417
+#: rc.cpp:444 rc.cpp:1532
 msgid "The mount command used for the media device connection."
 msgstr "ពាក្យ​បញ្ជា​ម៉ោន ដែល​ប្រើ​ដើម្បី​តភ្ជាប់​ឧបករណ៍​ផ្ទុក ។"
 
 #. i18n: file: amarok.kcfg:457
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: rc.cpp:447 rc.cpp:1420
+#: rc.cpp:447 rc.cpp:1535
 msgid "UmountCommand"
 msgstr "UmountCommand"
 
 #. i18n: file: amarok.kcfg:458
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: rc.cpp:450 rc.cpp:1423
+#: rc.cpp:450 rc.cpp:1538
 msgid "The umount command used for the media device connection."
 msgstr "ពាក្យ​បញ្ជា​អាន់ម៉ោន ដែល​ប្រើ​ដើម្បី​តភ្ជាប់​ឧបករណ៍​ផ្ទុក ។"
 
 #. i18n: file: amarok.kcfg:461
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: rc.cpp:453 rc.cpp:1426
+#: rc.cpp:453 rc.cpp:1541
 msgid "Auto delete podcasts"
 msgstr "លុប​ផតខាស់​ដោយ​ស្វ័យ​ប្រវត្តិ"
 
 #. i18n: file: amarok.kcfg:462
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: rc.cpp:456 rc.cpp:1429
+#: rc.cpp:456 rc.cpp:1544
 msgid ""
 "Whether podcasts shows already played are automatically deleted when media "
 "device is connected."
@@ -4367,13 +4186,13 @@ msgstr "ថា​តើ​ត្រូវ​លុប​ផតខាស់​ដ
 
 #. i18n: file: amarok.kcfg:465
 #. i18n: ectx: label, entry, group (MediaDevice)
-#: rc.cpp:459 rc.cpp:1432
+#: rc.cpp:459 rc.cpp:1547
 msgid "Sync stats"
 msgstr "Sync stats"
 
 #. i18n: file: amarok.kcfg:466
 #. i18n: ectx: whatsthis, entry, group (MediaDevice)
-#: rc.cpp:462 rc.cpp:1435
+#: rc.cpp:462 rc.cpp:1550
 msgid ""
 "Whether Amarok statistics should be synchronized with play count/ratings on "
 "device and whether tracks played should be submitted to last.fm."
@@ -4383,61 +4202,61 @@ msgstr ""
 
 #. i18n: file: amarok.kcfg:472
 #. i18n: ectx: label, entry, group (Daap)
-#: rc.cpp:465 rc.cpp:1438
+#: rc.cpp:465 rc.cpp:1553
 msgid "Manually added servers"
 msgstr "បាន​បន្ថែម​ម៉ាស៊ីន​បម្រើ​ដោយដៃ"
 
 #. i18n: file: amarok.kcfg:473
 #. i18n: ectx: whatsthis, entry, group (Daap)
-#: rc.cpp:468 rc.cpp:1441
+#: rc.cpp:468 rc.cpp:1556
 msgid "Music Sharing servers added by the user."
 msgstr "បាន​បន្ថែម​ម៉ាស៊ីន​បម្រើ​ចែករំលែក​តន្ត្រី​ដោយ​អ្នក​ប្រើ ។"
 
 #. i18n: file: amarok.kcfg:476
 #. i18n: ectx: label, entry, group (Daap)
-#: rc.cpp:471 rc.cpp:1444
+#: rc.cpp:471 rc.cpp:1559
 msgid "Server passwords"
 msgstr "ពាក្យ​សម្ងាត់​ម៉ាស៊ីន​បម្រើ"
 
 #. i18n: file: amarok.kcfg:477
 #. i18n: ectx: whatsthis, entry, group (Daap)
-#: rc.cpp:474 rc.cpp:1447
+#: rc.cpp:474 rc.cpp:1562
 msgid "Passwords stored by hostname."
 msgstr "ពាក្យ​សម្ងាត់​បាន​ទុក​ដោយឈ្មោះ​ម៉ាស៊ីន ។"
 
 #. i18n: file: amarok.kcfg:483
 #. i18n: ectx: label, entry, group (Panel Sizes)
-#: rc.cpp:477 rc.cpp:1450
+#: rc.cpp:477 rc.cpp:1565
 msgid "State of main window splitter"
 msgstr "ស្ថានភាព​បង្អួច​មេ"
 
 #. i18n: file: amarok.kcfg:490
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: rc.cpp:480 rc.cpp:1453
+#: rc.cpp:480 rc.cpp:1568
 msgid "Include track names in matching"
 msgstr "រួមបញ្ចូល​ឈ្មោះបទ​នៅ​ក្នុងកា​រផ្គូផ្គង"
 
 #. i18n: file: amarok.kcfg:494
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: rc.cpp:483 rc.cpp:1456
+#: rc.cpp:483 rc.cpp:1571
 msgid "Include album names in matching"
 msgstr "រួម​បញ្ចូលឈ្មោះ​អាល់ប៊ុម​ក្នុងកា​រផ្គូផ្គង"
 
 #. i18n: file: amarok.kcfg:498
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: rc.cpp:486 rc.cpp:1459
+#: rc.cpp:486 rc.cpp:1574
 msgid "Include artist names in matching"
 msgstr "រួម​បញ្ចូល​ឈ្មោះ​សិល្បករ​ក្នុង​ការ​ផ្គូផ្គង"
 
 #. i18n: file: amarok.kcfg:502
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: rc.cpp:489 rc.cpp:1462
+#: rc.cpp:489 rc.cpp:1577
 msgid "Include genre names in matching"
 msgstr "រួម​បញ្ចូល​ឈ្មោះ​ប្រភេទ​ក្នុងការ​ផ្គូផ្គង"
 
 #. i18n: file: amarok.kcfg:506
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: rc.cpp:492 rc.cpp:1465
+#: rc.cpp:492 rc.cpp:1580
 msgid "Include composer names in matching"
 msgstr "រួម​បញ្ចូល​ឈ្មោះ​កម្មវិធី​តែង​ក្នុងការ​ផ្គូផ្គង"
 
@@ -4449,7 +4268,7 @@ msgstr "រួម​បញ្ចូល​ឈ្មោះ​កម្មវិធ
 #. i18n: ectx: label, entry, group (Playlist Search)
 #. i18n: file: amarok.kcfg:514
 #. i18n: ectx: label, entry, group (Playlist Search)
-#: rc.cpp:495 rc.cpp:498 rc.cpp:1468 rc.cpp:1471
+#: rc.cpp:495 rc.cpp:498 rc.cpp:1583 rc.cpp:1586
 msgid "Include years in matching"
 msgstr "រួម​បញ្ចូល​ឆ្នាំ​នៅ​ក្នុងកា​រផ្គូផ្គង"
 
@@ -5192,51 +5011,378 @@ msgstr "យក​ចន្លោះ​ខាងក្រោយ​ចេញ​ន
 msgid "Replace &underscores with spaces"
 msgstr "ជំនួស​​សញ្ញា (_) ដោយ​ចន្លោះ"
 
+#. i18n: file: dialogs/EditFilterDialog.ui:25
+#. i18n: ectx: property (windowTitle), widget (QWidget, EditFilterDialog)
+#: rc.cpp:883
+#, fuzzy
+#| msgid "Format:"
+msgid "Form"
+msgstr "ទ្រង់ទ្រាយ ៖"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:56
+#. i18n: ectx: property (text), widget (QLabel, mainLabel)
+#: rc.cpp:886
+#, fuzzy
+#| msgid ""
+#| "<p>Edit the filter for finding tracks with specific attributes, e.g. you "
+#| "can look for a track that has a length of three minutes.</p>"
+msgid ""
+"Edit the filter for finding tracks with specific attributes\n"
+"e.g. a track that has a length of three minutes."
+msgstr ""
+"<p>កែសម្រួល​តម្រង​ដើម្បី​រក​បទ​ដែល​មាន​គុណលក្ខណៈ​ជាក់លាក់ ឧ. ​អ្នក​អាច​រក​បទ​មួយ​ដែល​មាន​ប្រវែង ៣ នាទី ។</"
+"p>"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:70
+#. i18n: ectx: property (whatsThis), widget (QLabel, attributeLabel)
+#: rc.cpp:890
+#, fuzzy
+#| msgctxt "you can translate the keyword as you will do for the combobox"
+#| msgid ""
+#| "<p>Here you can choose to <i>Simple Search</i> directly or to use some "
+#| "keywords to specify some attributes, such as the artist name and so on. "
+#| "The keywords selectable are divided by their specific value. Some "
+#| "keywords are numeric and others are alphanumeric. You do not need to know "
+#| "it directly. When a keyword is numeric it will be used to search the "
+#| "numeric data for each track.</p><p>The alphanumeric keywords are the "
+#| "following: <b>album</b>, <b>artist</b>, <b>filename</b>  (including "
+#| "path), <b>mountpoint</b> (e.g. /home/user1), <b>filetype</b>  (you can "
+#| "specify mp3, ogg, flac, ... and the file extensions will be matched), "
+#| "<b>genre</b>, <b>comment</b>, <b>composer</b>, <b>directory</b>, "
+#| "<b>lyrics</b>, <b>title</b>, and <b>label</b>.</p><p>The numeric keywords "
+#| "are: <b>bitrate</b>, <b>disc/discnumber</b>, <b>length</b> (expressed in "
+#| "seconds), <b>playcount</b>, <b>rating</b>, <b>samplerate</b>, <b>score</"
+#| "b>, <b>size/filesize</b> (expressed in bytes, kbytes, and megabytes as "
+#| "specified in the unit for the filesize keyword), <b>track</b> (i.e. the "
+#| "track number), and <b>year</b>.</p>"
+msgctxt "you can translate the keyword as you will do for the combobox"
+msgid ""
+"<p>Here you can choose to <i>Simple Search</i> directly or to use some "
+"keywords to specify some attributes, such as the artist name and so on. The "
+"keywords selectable are divided by their specific value.  Some keywords are "
+"numeric and others are alphanumeric. You do not need to know it directly. "
+"When a keyword is numeric it will be used to search the numeric data for "
+"each track.</p>\n"
+"<p>The alphanumeric keywords are the following: <b>album</b>, <b>artist</b>, "
+"<b>filename</b> (including path), <b>mountpoint</b> (e.g. /home/user1), "
+"<b>filetype</b> (you can specify mp3, ogg, flac, ... and the file extensions "
+"will be matched), <b>genre</b>, <b>comment</b>, <b>composer</b>, "
+"<b>directory</b>, <b>lyrics</b>, <b>title</b>, and <b>label</b>.</p> \n"
+"<p>The numeric keywords are: <b>bitrate</b>, <b>disc/discnumber</b>, "
+"<b>length</b> (expressed in seconds), <b>playcount</b>, <b>rating</b>, "
+"<b>samplerate</b>, <b>score</b>, <b>size/filesize</b> (expressed in bytes, "
+"kbytes, and megabytes as specified in the unit for the filesize keyword), "
+"<b>track</b> (i.e. the track number), and <b>year</b>.</p>"
+msgstr ""
+"<p>នៅទីនេះ អ្នក​អាច​ជ្រើស <i>ស្វែងរក​ធម្មតា</i> ដោយស្វ័យប្រវត្តិ ឬ​ដើម្បី​ប្រើពាក្យ​គន្លឹះខ្លះ​​ដើម្បី​"
+"បញ្ជាក់​គុណលក្ខណៈ​មួយ​ចំនួន ដូចជា​ឈ្មោះ​សិល្បករ ។ល ។ ពាក្យ​គន្លឹះ​ដែល​អាច​ជ្រើសបាន​ត្រូវបាន​ចែកចេញ​តាម​តម្លៃ​"
+"ជាក់លាក់​របស់​វា ។ ពាក្យ​បញ្ជា​មួយ​ចំនួន​ជា​លេខ និង​មួយ​ចំនួន​ផ្សេងទៀត​ជា​អក្សរក្រម​លេខ ។ អ្នក​មិន​ចាំបាច់​"
+"ស្គាល់វា​ដោយ​ផ្ទាល់​ទេ ។ នៅពេល​ដែល​ពាក្យ​បញ្ជា​ជា​លេខ វា​នឹង​ត្រូវបាន​ប្រើ​ដើម្បី​ស្វែងរក​ទិន្នន័យ​ជា​លេខ​"
+"សម្រាប់​បទ​នីមួយៗ ។</p><p>ពាក្យ​គន្លឹះ​ជា​អក្សរ​ក្រម​លេខ គឺ​មាន​ដូចខាងក្រោម ៖ <b>អាល់ប៊ុម</b> "
+"<b>សិល្បករ</b> <b>ឈ្មោះ​ឯកសារ</b> (ដោយ​រួមបញ្ចូល​ផ្លូវ) <b>ចំណុច​ម៉ោន</b> (ឧ. /home/user1) "
+"<b>ប្រភេទ​ឯកសារ</b>  (អ្នក​អាច​បញ្ជាក់ mp3, ogg, flac, ... ហើយ​កន្ទុយ​ឯកសារ​នឹង​ត្រូវ​បាន​"
+"ផ្គូផ្គង) <b>ចង្វាក់</b> <b>សេចក្ដី​អធិប្បាយ</b> <b>កម្មវិធី​តែង</b> <b>ថត</b> <b>អត្ថបទ​"
+"ចម្រៀង</b> <b>ចំណង​ជើង</b> និង​<b>ស្លាក</b> ។</p><p>ពាក្យ​គន្លឹះ​ជាលេខ​មាន ៖ <b>អត្រាប៊ីត</"
+"b> <b>លេខ​ឌីស</b> <b>ប្រវែង</b> (បង្ហាញ​ជា​វិនាទី) <b>ចំនួន​ចាក់</b> <b>អត្រា</b> <b>អត្រា​"
+"គំរូ</b> <b>ពិន្ទុ</b> <b>ទំហំ/​ទំហំ​ឯកសារ</b> (បង្ហាញ​ជា បៃ គីឡូបៃ និង​មេកាបៃ ដូចដែល​បាន​បញ្ជាក់​នៅ​"
+"ក្នុង​ឯកតា​សម្រាប់​ពាក្យគន្លឹះ​ទំហំ​ឯកសារ) <b>បទ</b> (មានន័យថា លេខ​បទ) និង​<b>ឆ្នាំ</b> ។</p>"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:73
+#. i18n: ectx: property (text), widget (QLabel, attributeLabel)
+#: rc.cpp:895
+#, fuzzy
+#| msgid "Attribute:"
+msgid "Attribute"
+msgstr "គុណលក្ខណៈ ៖"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:83
+#. i18n: ectx: property (toolTip), widget (KComboBox, keywordCombo)
+#: rc.cpp:898
+msgid "Select an attribute for the filter"
+msgstr "ជ្រើស​គុណលក្ខណៈ​សម្រាប់​តម្រង"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:87
+#. i18n: ectx: property (text), item, widget (KComboBox, keywordCombo)
+#: rc.cpp:901
+msgid "Simple Search"
+msgstr "ការ​ស្វែងរក​ធម្មតា"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:130
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, editKeywordBox)
+#: rc.cpp:925
+msgid "<p>Type the attribute value or the text to look for here.</p>"
+msgstr "<p>វាយ​តម្លៃ​គុណលក្ខណៈ ឬ​អត្ថបទ​ដែលត្រូវ​រក​នៅ​ទីនេះ ។</p>"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:151
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:928
+msgid "Attribute value is"
+msgstr "តម្លៃ​គុណលក្ខណៈ​គឺ"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:170
+#. i18n: ectx: property (text), item, widget (KComboBox, conditionCombo)
+#: rc.cpp:931
+#, fuzzy
+#| msgid "smaller than"
+msgid "Smaller Than"
+msgstr "តូច​ជាង"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:175
+#. i18n: ectx: property (text), item, widget (KComboBox, conditionCombo)
+#: rc.cpp:934
+#, fuzzy
+#| msgid "larger than"
+msgid "Larger Than"
+msgstr "ធំជាង"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:180
+#. i18n: ectx: property (text), item, widget (KComboBox, conditionCombo)
+#: rc.cpp:937
+#, fuzzy
+#| msgid "equal to"
+msgid "Equal To"
+msgstr "ស្មើ​នឹង"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:185
+#. i18n: ectx: property (text), item, widget (KComboBox, conditionCombo)
+#: rc.cpp:940
+#, fuzzy
+#| msgid "between"
+msgid "Between"
+msgstr "ចន្លោះ"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:200
+#. i18n: ectx: property (text), widget (QLabel, andLabel)
+#: rc.cpp:943 widgets/SmartPlaylistEditor.cpp:935
+#: widgets/SmartPlaylistEditor.cpp:957 widgets/SmartPlaylistEditor.cpp:985
+#: widgets/SmartPlaylistEditor.cpp:1004
+msgid "and"
+msgstr "និង"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:229
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:946
+#, fuzzy
+#| msgid "Filter action"
+msgid "Filter Action"
+msgstr "សកម្មភាព​តម្រង"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:244
+#. i18n: ectx: property (toolTip), widget (QRadioButton, matchAll)
+#: rc.cpp:949
+#, fuzzy
+#| msgid ""
+#| "<p>Check this box to look for the tracks that contain all the words you "
+#| "typed in the related Simple Search edit box</p>"
+msgid ""
+"Check this box to look for the tracks that contain all the words you typed "
+"in the related Simple Search edit box"
+msgstr ""
+"<p>គូស​ធីក​ប្រអប់នេះ​ដើម្បី​រក​បទ​ដែលមាន​ពាក្យ​ទាំងអស់​ដែលអ្នក​បាន​វាយ​នៅ​ក្នុង​ប្រអប់​កែសម្រួល​ស្វែងរក​ធម្មតា​"
+"ដែល​ទាក់ទង</p>"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:247
+#. i18n: ectx: property (text), widget (QRadioButton, matchAll)
+#: rc.cpp:952
+#, fuzzy
+#| msgid "Match all words"
+msgid "Match All Words"
+msgstr "ផ្គូផ្គង​ពាក្យ​ទាំងអស់"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:255
+#. i18n: ectx: property (toolTip), widget (QRadioButton, matchAny)
+#: rc.cpp:955
+#, fuzzy
+#| msgid ""
+#| "<p>Check this box to look for the tracks that contain at least one of the "
+#| "words you typed in the related Simple Search edit box</p>"
+msgid ""
+"Check this box to look for the tracks that contain at least one of the words "
+"\"\n"
+" you typed in the related Simple Search edit box"
+msgstr ""
+"<p>ធីក​ប្រអប់​នេះ​ដើម្បី​រក​បទ​ដែល​មាន​ពាក្យ​ដែល​អ្នក​បាន​វាយ​យ៉ាងហោច​មួយ​នៅ​ក្នុង​ប្រអប់​កែសម្រួល ស្វែងរក​"
+"ធម្មតា ​ដែល​ទាក់ទង</p>"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:258
+#. i18n: ectx: property (text), widget (QRadioButton, matchAny)
+#: rc.cpp:959
+#, fuzzy
+#| msgid "Match any word"
+msgid "Match Any Word"
+msgstr "ផ្គូផ្គង​ពាក្យ​ណា​មួយ"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:265
+#. i18n: ectx: property (toolTip), widget (QRadioButton, matchLiteral)
+#: rc.cpp:962
+#, fuzzy
+#| msgid ""
+#| "<p>Check this box to look for all the tracks that contain exactly the "
+#| "words you typed in the related Simple Search edit box</p>"
+msgid ""
+"Check this box to look for all the tracks that contain exactly the words you "
+"typed in the related Simple Search edit box"
+msgstr ""
+"<p>ធីក​ប្រអប់​នេះ​ដើម្បី​រក​បទ​ទាំងអស់​ដែល​មាន​ពាក្យ​ដូចគ្នា​នឹង​ពាក្យ​ដែល​អ្នក​បាន​វាយនៅ​ក្នុង​ប្រអប់​កែសម្រួល "
+"ស្វែងរក​ធម្មតា ដែល​ទាក់ទង</p>"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:268
+#. i18n: ectx: property (text), widget (QRadioButton, matchLiteral)
+#: rc.cpp:965
+#, fuzzy
+#| msgid "Exact match"
+msgid "Exact Match"
+msgstr "ផ្គូផ្គង​ជាក់លាក់"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:275
+#. i18n: ectx: property (toolTip), widget (QRadioButton, matchNot)
+#: rc.cpp:968
+#, fuzzy
+#| msgid ""
+#| "<p>Check this box to look for all the tracks that do not contain the "
+#| "words you typed in the related Simple Search edit box</p>"
+msgid ""
+"Check this box to look for all the tracks that do not contain the words you "
+"typed in the related Simple Search edit box"
+msgstr ""
+"<p>គូស​ធីក​ប្រអប់​នេះ ដើម្បី​រក​បទ​ទាំងអស់​ដែល​​មិនមាន​ពាក្យ​ដែល​អ្នក​បាន​វាយ​នៅ​ក្នុង​ប្រអប់​កែសម្រួល ស្វែងរក​"
+"ធម្មតា​ ដែល​ទាក់ទង</p>"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:278
+#. i18n: ectx: property (text), widget (QRadioButton, matchNot)
+#: rc.cpp:971
+msgid "Exclude"
+msgstr "មិន​រួម​បញ្ចូល"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:297
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: rc.cpp:974
+#, fuzzy
+#| msgid "Appending condition"
+msgid "Appending Condition"
+msgstr "លក្ខខណ្ឌ​បន្ថែម​ខាង​ចុង"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:312
+#. i18n: ectx: property (toolTip), widget (QRadioButton, andButton)
+#: rc.cpp:977
+#, fuzzy
+#| msgid ""
+#| "<p>Check this box if you want to add another condition and you want that "
+#| "the filter to match both the previous conditions and this new one</p>"
+msgid ""
+"Check this box if you want to add another condition and you want that the "
+"filter to match both the previous conditions and this new one"
+msgstr ""
+"<p>ធីក​ប្រអប់​នេះ ប្រសិន​បើ​អ្នក​ចង់​បន្ថែម​លក្ខខណ្ឌ​ផ្សេង​ទៀត ហើយ​អ្នក​ចង់​ឲ្យ​តម្រង​ផ្គូផ្គង​ទាំង​លក្ខខណ្ឌ​ពី​មុន និង​"
+"លក្ខខណ្ឌ​ថ្មី​មួយ</p>"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:315
+#. i18n: ectx: property (text), widget (QRadioButton, andButton)
+#: rc.cpp:980
+#, fuzzy
+#| msgctxt "AND logic condition"
+#| msgid "AND"
+msgid "AND"
+msgstr "AND"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:322
+#. i18n: ectx: property (toolTip), widget (QRadioButton, orButton)
+#: rc.cpp:983
+#, fuzzy
+#| msgid ""
+#| "<p>Check this box if you want to add another condition and you want that "
+#| "the filter to match either the previous conditions or this new one</p>"
+msgid ""
+"Check this box if you want to add another condition and you want that the "
+"filter to match either the previous conditions or this new one"
+msgstr ""
+"<p>ធីក​ប្រអប់​នេះ ប្រសិន​បើ​អ្នក​ចង់បន្ថែម​លក្ខខណ្ឌ​ផ្សេងទៀត ហើយ​អ្នក​ចង់​ឲ្យ​តម្រង​ផ្គូផ្គង​នឹង​លក្ខខណ្ឌ​ពី​មុន ឬ​"
+"លក្ខខណ្ឌ​ថ្មី​នេះ</p>"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:325
+#. i18n: ectx: property (text), widget (QRadioButton, orButton)
+#: rc.cpp:986
+#, fuzzy
+#| msgctxt "OR logic condition"
+#| msgid "OR"
+msgid "OR"
+msgstr "OR"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:336
+#. i18n: ectx: property (toolTip), widget (QCheckBox, invertButton)
+#: rc.cpp:989
+msgid "Check this box to negate the defined filter condition"
+msgstr "ធីក​ប្រអប់​នេះ ដើម្បីបដិសេធ​លក្ខខណ្ឌ​តម្រង​ដែល​បាន​កំណត់"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:339
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, invertButton)
+#: rc.cpp:992
+#, fuzzy
+#| msgid ""
+#| "<p>If this option is checked the defined filter condition will be "
+#| "negated. This means that, for example, you can define a filter that looks "
+#| "for all tracks that are not of a specific album, artist, and so on.</p>"
+msgid ""
+"<p>If this option is checked the defined filter condition will be negated. "
+"This means that, for example, you can define a filter that looks for all "
+"tracks that are not of a specific album, artist, and so on.</p>\""
+msgstr ""
+"<p>ប្រសិន​បើ​បាន​ធីក​ជម្រើស​នេះ លក្ខខណ្ឌ​តម្រង​ដែល​បាន​កំណត់​នឹង​ត្រូ​វបាន​បដិសេធ ។ ឧទាហរណ៍ វា​មាន​ន័យ​ថា​ "
+"អ្នក​អាច​កំណត់​តម្រង​ដែល​ស្វែងរក​បទ​ទាំងអស់ដែល​មិន​នៅ​ក្នុង​អាល់ប៊ុម សិល្បករ​​ជាក់លាក់ ។ល ។</p>"
+
+#. i18n: file: dialogs/EditFilterDialog.ui:342
+#. i18n: ectx: property (text), widget (QCheckBox, invertButton)
+#: rc.cpp:995
+#, fuzzy
+#| msgid "Invert condition"
+msgid "Invert Condition"
+msgstr "បញ្ច្រាស​លក្ខខណ្ឌ"
+
 #. i18n: file: dialogs/ScriptManagerBase.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, ScriptManagerBase)
-#: rc.cpp:883
+#: rc.cpp:998
 msgid "DirectoryListBase"
 msgstr "DirectoryListBase"
 
 #. i18n: file: dialogs/ScriptManagerBase.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:886
+#: rc.cpp:1001
 msgid "Installed Amarok Scripts:"
 msgstr "ស្គ្រីប​របស់​ Amarok ដែល​បាន​ដំឡើង ៖"
 
 #. i18n: file: dialogs/ScriptManagerBase.ui:57
 #. i18n: ectx: property (text), widget (QPushButton, installButton)
-#: rc.cpp:889
+#: rc.cpp:1004
 msgid "&Install Script"
 msgstr "ដំឡើង​ស្គ្រីប"
 
 #. i18n: file: dialogs/ScriptManagerBase.ui:70
 #. i18n: ectx: property (text), widget (QPushButton, uninstallButton)
-#: rc.cpp:892
+#: rc.cpp:1007
 msgid "&Uninstall"
 msgstr "លុប"
 
 #. i18n: file: dialogs/ScriptManagerBase.ui:83
 #. i18n: ectx: property (text), widget (QPushButton, retrieveButton)
-#: rc.cpp:895
+#: rc.cpp:1010
 msgid "&Get More Scripts"
 msgstr "យក​ស្គ្រីប​បន្ថែម​ទៀត"
 
 #. i18n: file: dialogs/ScriptManagerBase.ui:103
 #. i18n: ectx: property (text), widget (QPushButton, okButton)
-#: rc.cpp:898
+#: rc.cpp:1013
 msgid "&OK"
 msgstr "យល់ព្រម"
 
 #. i18n: file: dialogs/PodcastSettingsBase.ui:23
 #. i18n: ectx: property (windowTitle), widget (QWidget, PodcastSettingsBase)
-#: rc.cpp:901
+#: rc.cpp:1016
 msgid "Podcast Configuration"
 msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ផតខាស់"
 
 #. i18n: file: dialogs/PodcastSettingsBase.ui:31
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:904
+#: rc.cpp:1019
 msgid "Save location:"
 msgstr "ទីតាំង​រក្សាទុក ៖"
 
@@ -5244,19 +5390,19 @@ msgstr "ទីតាំង​រក្សាទុក ៖"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, m_autoFetchCheck)
 #. i18n: file: dialogs/PodcastSettingsBase.ui:49
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_autoFetchCheck)
-#: rc.cpp:907 rc.cpp:910
+#: rc.cpp:1022 rc.cpp:1025
 msgid "When checked, Amarok will automatically scan the podcast for updates"
 msgstr "ប្រសិន​បើបាន​ធីក នោះ Amarok នឹង​វិភាគរក​ភាព​ទាន់សម័យ​សម្រាប់​ផតខាស់​ដោយ​ស្វ័យប្រវត្តិ ។"
 
 #. i18n: file: dialogs/PodcastSettingsBase.ui:52
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoFetchCheck)
-#: rc.cpp:913
+#: rc.cpp:1028
 msgid "Automatically scan for updates"
 msgstr "វិភាគរក​ភាព​ទាន់សម័យ​ដោយ​ស្វ័យប្រវត្តិ"
 
 #. i18n: file: dialogs/PodcastSettingsBase.ui:59
 #. i18n: ectx: property (title), widget (KButtonGroup, kbuttongroup)
-#: rc.cpp:916
+#: rc.cpp:1031
 msgid "Media Download"
 msgstr "ទាញយក​មេឌៀ"
 
@@ -5264,13 +5410,13 @@ msgstr "ទាញយក​មេឌៀ"
 #. i18n: ectx: property (toolTip), widget (QRadioButton, m_downloadRadio)
 #. i18n: file: dialogs/PodcastSettingsBase.ui:71
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, m_downloadRadio)
-#: rc.cpp:919 rc.cpp:922
+#: rc.cpp:1034 rc.cpp:1037
 msgid "Download media as soon as it becomes available"
 msgstr "ទាញយក​មេឌៀ នៅពេល​មាន"
 
 #. i18n: file: dialogs/PodcastSettingsBase.ui:74
 #. i18n: ectx: property (text), widget (QRadioButton, m_downloadRadio)
-#: rc.cpp:925
+#: rc.cpp:1040
 msgid "Download when a&vailable"
 msgstr "ទាញយក​ពេល​មាន"
 
@@ -5278,7 +5424,7 @@ msgstr "ទាញយក​ពេល​មាន"
 #. i18n: ectx: property (toolTip), widget (QRadioButton, m_streamRadio)
 #. i18n: file: dialogs/PodcastSettingsBase.ui:84
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, m_streamRadio)
-#: rc.cpp:928 rc.cpp:931
+#: rc.cpp:1043 rc.cpp:1046
 msgid ""
 "Media must be explicitly downloaded, otherwise the podcast will be played "
 "from the remote server."
@@ -5286,7 +5432,7 @@ msgstr "អ្នក​ត្រូវ​តែ​ទាញយក​មេឌៀ
 
 #. i18n: file: dialogs/PodcastSettingsBase.ui:87
 #. i18n: ectx: property (text), widget (QRadioButton, m_streamRadio)
-#: rc.cpp:934
+#: rc.cpp:1049
 msgid "Stream or download on re&quest"
 msgstr "ស្ទ្រីម ឬ​ការ​ទាញយក​ពេល​ត្រូវការ"
 
@@ -5294,19 +5440,19 @@ msgstr "ស្ទ្រីម ឬ​ការ​ទាញយក​ពេល​�
 #. i18n: ectx: property (toolTip), widget (QCheckBox, m_purgeCheck)
 #. i18n: file: dialogs/PodcastSettingsBase.ui:102
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, m_purgeCheck)
-#: rc.cpp:937 rc.cpp:940
+#: rc.cpp:1052 rc.cpp:1055
 msgid "If checked, Amarok will throw away old podcast episodes"
 msgstr "ប្រសិន​បើបាន​​ធីក នោះ Amarok នឹង​បោះចោល​ការ​ផ្សាយ​ផតខាស់​ចាស់ៗ"
 
 #. i18n: file: dialogs/PodcastSettingsBase.ui:105
 #. i18n: ectx: property (text), widget (QCheckBox, m_purgeCheck)
-#: rc.cpp:943
+#: rc.cpp:1058
 msgid "Limit &number of episodes"
 msgstr "កំណត់​ចំនួន​ការ​ផ្សាយ"
 
 #. i18n: file: dialogs/PodcastSettingsBase.ui:128
 #. i18n: ectx: property (text), widget (QLabel, m_purgeCountLabel)
-#: rc.cpp:946
+#: rc.cpp:1061
 msgid "Keep maximum of:"
 msgstr "រក្សា​ច្រើន​បំផុត ៖"
 
@@ -5314,31 +5460,31 @@ msgstr "រក្សា​ច្រើន​បំផុត ៖"
 #. i18n: ectx: property (toolTip), widget (QSpinBox, m_purgeCountSpinBox)
 #. i18n: file: dialogs/PodcastSettingsBase.ui:141
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, m_purgeCountSpinBox)
-#: rc.cpp:949 rc.cpp:952
+#: rc.cpp:1064 rc.cpp:1067
 msgid "The maximum number of podcast items to store"
 msgstr "ចំនួន​ធាតុ​ផតខាស់​អតិបរមា ដែល​ត្រូវ​ទុក"
 
 #. i18n: file: dialogs/PodcastSettingsBase.ui:144
 #. i18n: ectx: property (suffix), widget (QSpinBox, m_purgeCountSpinBox)
-#: rc.cpp:955
+#: rc.cpp:1070
 msgid " Items"
 msgstr " ធាតុ"
 
 #. i18n: file: browsers/playlistbrowser/PodcastCategoryBase.ui:24
 #. i18n: ectx: property (toolTip), widget (QToolButton, addPodcastButton)
-#: rc.cpp:958
+#: rc.cpp:1073
 msgid "Add Podcast..."
 msgstr "បន្ថែម​ផតខាស់..."
 
 #. i18n: file: browsers/playlistbrowser/PodcastCategoryBase.ui:27
 #. i18n: ectx: property (text), widget (QToolButton, addPodcastButton)
-#: rc.cpp:961
+#: rc.cpp:1076
 msgid "add podcast..."
 msgstr "បន្ថែម​ផតខាស់..."
 
 #. i18n: file: browsers/playlistbrowser/PodcastCategoryBase.ui:50
 #. i18n: ectx: property (text), widget (QToolButton, refreshPodcastsButton)
-#: rc.cpp:964
+#: rc.cpp:1079
 msgid "Refresh All Podcasts"
 msgstr "ធ្វើ​ឲ្យ​ផតខាស់​ទាំងអស់​ស្រស់"
 
@@ -5346,49 +5492,49 @@ msgstr "ធ្វើ​ឲ្យ​ផតខាស់​ទាំងអស់​
 #. i18n: ectx: property (toolTip), widget (QToolButton, configurePodcastsButton)
 #. i18n: file: browsers/playlistbrowser/PodcastCategoryBase.ui:76
 #. i18n: ectx: property (text), widget (QToolButton, configurePodcastsButton)
-#: rc.cpp:967 rc.cpp:970
+#: rc.cpp:1082 rc.cpp:1085
 msgid "Configure Podcasts..."
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ផតខាស់..."
 
 #. i18n: file: browsers/playlistbrowser/PodcastCategoryBase.ui:99
 #. i18n: ectx: property (text), widget (QToolButton, podcastsIntervalButton)
-#: rc.cpp:973
+#: rc.cpp:1088
 msgid "Scan Interval..."
 msgstr "ចន្លោះពេល​វិភាគ..."
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:38
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
-#: rc.cpp:1474
+#: rc.cpp:1589
 msgid "Last.fm Profile"
 msgstr "ទម្រង់ last.fm"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:44
 #. i18n: ectx: property (text), widget (QLabel, labelUsername)
-#: rc.cpp:1477
+#: rc.cpp:1592
 msgid "&Username:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:57
 #. i18n: ectx: property (text), widget (QLabel, labelPassword)
-#: rc.cpp:1480
+#: rc.cpp:1595
 msgid "&Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:86
 #. i18n: ectx: property (text), widget (QLabel, kActiveLabel1)
-#: rc.cpp:1483
+#: rc.cpp:1598
 msgid "<a href=\"http://www.last.fm:80/signup.php\">Sign up to last.fm</a>"
 msgstr "<a href=\"http://www.last.fm:80/signup.php\">ចុះឈ្មោះ to last.fm</a>"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:96
 #. i18n: ectx: property (text), widget (QPushButton, testLogin)
-#: rc.cpp:1486
+#: rc.cpp:1601
 msgid "&Test Login"
 msgstr "ការ​ចូល​ចុងក្រោយ"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:106
 #. i18n: ectx: property (text), widget (QLabel, kActiveLabel2)
-#: rc.cpp:1489
+#: rc.cpp:1604
 msgid ""
 "Why not join the <a href=\"http://www.last.fm:80/group/Amarok+Users\">Amarok "
 "last.fm group</a> and share your musical tastes with other Amarok users?"
@@ -5398,49 +5544,49 @@ msgstr ""
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:116
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:1492
+#: rc.cpp:1607
 msgid "Last.fm Services"
 msgstr "សេវា Last.fm"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SubmitPlayedSongs)
-#: rc.cpp:1495
+#: rc.cpp:1610
 msgid "&Submit tracks"
 msgstr "ដាក់​ស្នើ​បទ"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:135
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_RetrieveSimilarArtists)
-#: rc.cpp:1498
+#: rc.cpp:1613
 msgid "&Retrieve similar artists"
 msgstr "ទៅ​យក​សិល្បករ​ស្រដៀង​គ្នា"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, magnatuneDownloadDialogBase)
-#: rc.cpp:1501
+#: rc.cpp:1616
 msgid "Magnatune.com Album Download"
 msgstr "ទាញ​យក​អាល់ប៊ុមពី Magnatune.com"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:1504
+#: rc.cpp:1619
 msgid "Download options"
 msgstr "ជម្រើស​ទាញ​យក"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:25
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1507
+#: rc.cpp:1622
 msgid "Select Format:"
 msgstr "ជ្រើស​ទ្រង់ទ្រាយ ៖"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:38
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:1510
+#: rc.cpp:1625
 msgid "Download to:"
 msgstr "ទាញ​យក​ទៅ​កាន់ ៖"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:1513
+#: rc.cpp:1628
 msgid ""
 "If you download to a location that is already being monitored by Amarok, the "
 "album will automatically be added to your collection."
@@ -5450,226 +5596,226 @@ msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:67
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:1516
+#: rc.cpp:1631
 msgid "Magnatune info"
 msgstr "ព័ត៌មាន Magnatune"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:83
 #. i18n: ectx: property (text), widget (QPushButton, downloadButton)
-#: rc.cpp:1519 services/jamendo/JamendoMeta.cpp:134
+#: rc.cpp:1634 services/jamendo/JamendoMeta.cpp:134
 #: services/jamendo/JamendoMeta.cpp:361
 msgid "&Download"
 msgstr "ទាញយក"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:22
 #. i18n: ectx: property (windowTitle), widget (QDialog, magnatunePurchaseDialogBase)
-#: rc.cpp:1522
+#: rc.cpp:1637
 msgid "Purchase Album from Magnatune.com"
 msgstr "ជាវ​អាល់ប៊ុម​ពី Magnatune.com"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:28
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:1525
+#: rc.cpp:1640
 msgid "Info"
 msgstr "ព័ត៌មាន"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:34
 #. i18n: ectx: property (text), widget (QLabel, infoLabel)
-#: rc.cpp:1528
+#: rc.cpp:1643
 msgid "You have chosen to purchase the following album from Magnatune.com"
 msgstr "អ្នក​បាន​ជ្រើស​ដើម្បី​ជាវ​អាល់ប៊ុម​ដូចខាង​ក្រោម​ពី Magnatune.com"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:90
 #. i18n: ectx: property (text), widget (QLabel, textLabel13)
-#: rc.cpp:1531
+#: rc.cpp:1646
 msgid "Album:"
 msgstr "​អាល់ប៊ុម ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:110
 #. i18n: ectx: property (text), widget (QLabel, textLabel14)
-#: rc.cpp:1534
+#: rc.cpp:1649
 msgid "Artist:"
 msgstr "សិល្បករ ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:130
 #. i18n: ectx: property (text), widget (QLabel, textLabel15)
-#: rc.cpp:1537
+#: rc.cpp:1652
 msgid "Genre:"
 msgstr "ចង្វាក់ ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:150
 #. i18n: ectx: property (text), widget (QLabel, textLabel16)
-#: rc.cpp:1540
+#: rc.cpp:1655
 msgid "Launch Year:"
 msgstr "ឆ្នាំ​ប្រកាស ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:176
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:1543
+#: rc.cpp:1658
 msgid "Payment"
 msgstr "ការ​ចំណាយ"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:182
 #. i18n: ectx: property (text), widget (QLabel, textLabel8)
-#: rc.cpp:1546
+#: rc.cpp:1661
 msgctxt "The name of the person buying songs from magnatune"
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:195
 #. i18n: ectx: property (text), widget (QLabel, textLabel9)
-#: rc.cpp:1549
+#: rc.cpp:1664
 msgctxt "The e-mail address of the user"
 msgid "E-mail:"
 msgstr "អ៊ីមែល ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:208
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1552
+#: rc.cpp:1667
 msgid "Pay using:"
 msgstr "បង់ប្រាក់​ដោយប្រើ ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:231
 #. i18n: ectx: property (text), widget (QRadioButton, ccRadioButton)
-#: rc.cpp:1555
+#: rc.cpp:1670
 msgid "credit card"
 msgstr "ប័ណ្ណ​ឥណទាន"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:238
 #. i18n: ectx: property (text), widget (QRadioButton, gcRadioButton)
-#: rc.cpp:1558
+#: rc.cpp:1673
 msgid "Magnatune gift card"
 msgstr "កាត Magnatune gift"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:727
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:1561
+#: rc.cpp:1676
 msgid "VISA and Mastercard accepted."
 msgstr "ទទួល​តែ VISA និង Mastercard ។"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:737
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:1564
+#: rc.cpp:1679
 msgid "Credit card number:"
 msgstr "លេខប័ណ្ណ​ឥទាន ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:757
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:1567
+#: rc.cpp:1682
 msgid "Expiration date:"
 msgstr "កាលបរិច្ឆេទ​ផុត​កំណត់ ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:783
 #. i18n: ectx: property (text), widget (QLabel, textLabel6)
-#: rc.cpp:1570
+#: rc.cpp:1685
 msgid "Month (xx):"
 msgstr "ខែ (xx) ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:803
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:1573
+#: rc.cpp:1688
 msgid "Year (xx):"
 msgstr "ឆ្នាំ (xx) ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:835
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
-#: rc.cpp:1576
+#: rc.cpp:1691
 msgid "Gift card code:"
 msgstr "លេខកូដ​កាត Gift ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:852
 #. i18n: ectx: property (text), widget (QLabel, textLabel7)
-#: rc.cpp:1579
+#: rc.cpp:1694
 msgid "Amount to pay (USD):"
 msgstr "ចំនួន​ត្រូវ​ចំណាយ (ជា​ដុល្លារ)​ ៖"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:866
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1582
+#: rc.cpp:1697
 msgid "5"
 msgstr "៥"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:871
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1585
+#: rc.cpp:1700
 msgid "6"
 msgstr "៦"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:876
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1588
+#: rc.cpp:1703
 msgid "7"
 msgstr "៧"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:881
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1591
+#: rc.cpp:1706
 msgid "8"
 msgstr "៨"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:886
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1594
+#: rc.cpp:1709
 msgid "9"
 msgstr "៩"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:891
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1597
+#: rc.cpp:1712
 msgid "10"
 msgstr "១០"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:896
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1600
+#: rc.cpp:1715
 msgid "11"
 msgstr "១១"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:901
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1603
+#: rc.cpp:1718
 msgid "12"
 msgstr "១២"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:906
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1606
+#: rc.cpp:1721
 msgid "13"
 msgstr "១៣"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:911
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1609
+#: rc.cpp:1724
 msgid "14"
 msgstr "១៤"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:916
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1612
+#: rc.cpp:1727
 msgid "15"
 msgstr "១៥"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:921
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1615
+#: rc.cpp:1730
 msgid "16"
 msgstr "១៦"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:926
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1618
+#: rc.cpp:1733
 msgid "17"
 msgstr "១៧"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:931
 #. i18n: ectx: property (text), item, widget (QComboBox, amountComboBox)
-#: rc.cpp:1621
+#: rc.cpp:1736
 msgid "18"
 msgstr "១៨"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:939
 #. i18n: ectx: property (text), widget (QLabel, textLabel17)
-#: rc.cpp:1624
+#: rc.cpp:1739
 msgid ""
 "The amount you choose to pay will be split 50/50 between the artist and "
 "Magnatune.com. Your personal and credit card information is sent securely to "
@@ -5682,43 +5828,43 @@ msgstr ""
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:979
 #. i18n: ectx: property (text), widget (QPushButton, purchaseButton)
-#: rc.cpp:1627
+#: rc.cpp:1742
 msgid "P&urchase"
 msgstr "ជាវ"
 
 #. i18n: file: services/magnatune/MagnatunePurchaseDialogBase.ui:986
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: rc.cpp:1630
+#: rc.cpp:1745
 msgid "Ca&ncel"
 msgstr "បោះបង់"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1633
+#: rc.cpp:1748
 msgid "Membership options"
 msgstr "ជម្រើស​សមាជិក"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:22
 #. i18n: ectx: property (text), widget (QCheckBox, isMemberCheckbox)
-#: rc.cpp:1636
+#: rc.cpp:1751
 msgid "I am a member"
 msgstr "ខ្ញុំ​ជា​សមាជិក"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1639
+#: rc.cpp:1754
 msgid "Membership type:"
 msgstr "ប្រភេទ​សមាជិក ៖"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:58
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: rc.cpp:1645 services/jamendo/JamendoService.cpp:108
+#: rc.cpp:1760 services/jamendo/JamendoService.cpp:108
 msgid "Download"
 msgstr "ទាញយក"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:66
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:1648
+#: rc.cpp:1763
 msgctxt "Username for logins to Magnatune"
 msgid "Username:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
@@ -5727,13 +5873,13 @@ msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1651 rc.cpp:1703
+#: rc.cpp:1766 rc.cpp:1818
 msgid "Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:98
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:1654
+#: rc.cpp:1769
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -5766,125 +5912,125 @@ msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:120
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1661
+#: rc.cpp:1776
 msgid "Stream options"
 msgstr "ជម្រើស​ស្ទ្រីម"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:126
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1664
+#: rc.cpp:1779
 msgid "Preview stream type:"
 msgstr "មើល​ប្រភេទ​ស្ទ្រីម​ជា​មុន ៖"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:134
 #. i18n: ectx: property (text), item, widget (QComboBox, streamTypeComboBox)
-#: rc.cpp:1667
+#: rc.cpp:1782
 msgid "Ogg"
 msgstr "Ogg"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:139
 #. i18n: ectx: property (text), item, widget (QComboBox, streamTypeComboBox)
-#: rc.cpp:1670
+#: rc.cpp:1785
 msgid "High Quality Mp3"
 msgstr "Mp3 មានគុណភាព​ខ្ពស់"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:144
 #. i18n: ectx: property (text), item, widget (QComboBox, streamTypeComboBox)
-#: rc.cpp:1673
+#: rc.cpp:1788
 msgid "Low Quality Mp3"
 msgstr "Mp3 មាន​គុណភាព​ទាប"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, magnatuneReDownloadDialogBase)
-#: rc.cpp:1676
+#: rc.cpp:1791
 msgid "Redownload manager"
 msgstr "ទាញ​យក​កម្មវិធី​គ្រប់គ្រង​ម្ដ​ងទៀត"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:19
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:1679
+#: rc.cpp:1794
 msgid "These are the albums that you have previously downloaded:"
 msgstr "មាន​អាល់ប៊ុម​ដែល​អ្នក​បានទាញ​យក​ពី​មុន ៖"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:29
 #. i18n: ectx: property (text), widget (QPushButton, redownloadButton)
-#: rc.cpp:1682
+#: rc.cpp:1797
 msgid "Re&download"
 msgstr "ទាញយក​ម្ដង​ទៀត"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:60
 #. i18n: ectx: property (text), widget (QTreeWidget, redownloadListView)
-#: rc.cpp:1688
+#: rc.cpp:1803
 msgid "Artist - Album"
 msgstr "សិល្បករ - អាល់ប៊ុម"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:25
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1691
+#: rc.cpp:1806
 msgid "Server"
 msgstr "ម៉ាស៊ីន​បម្រើ"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:1694
+#: rc.cpp:1809
 msgctxt "The user-definable name of an Ampache server"
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:41
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:1697
+#: rc.cpp:1812
 msgid "Server:"
 msgstr "ម៉ាស៊ីន​បម្រើ ៖"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:51
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:1700
+#: rc.cpp:1815
 msgctxt "The username to use for logins to an Amapche server"
 msgid "Username:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:75
 #. i18n: ectx: property (text), widget (QCheckBox, activeCheckBox)
-#: rc.cpp:1706
+#: rc.cpp:1821
 msgctxt "Establish a connection to the Ampache server"
 msgid "Active"
 msgstr "សកម្ម"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:91
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:1709
+#: rc.cpp:1824
 msgid "Edit"
 msgstr "កែ​សម្រួល"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:97
 #. i18n: ectx: property (text), widget (KPushButton, addButton)
-#: rc.cpp:1712
+#: rc.cpp:1827
 msgid "Add"
 msgstr "បន្ថែម"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:111
 #. i18n: ectx: property (text), widget (KPushButton, modifyButton)
-#: rc.cpp:1718
+#: rc.cpp:1833
 msgid "Modify"
 msgstr "កែប្រែ"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1721
+#: rc.cpp:1836
 msgid "Mp3tunes Login"
 msgstr "ការ​ចូល Mp3tunes"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:1724
+#: rc.cpp:1839
 msgctxt "The e-mail address for Mp3Tunes logins"
 msgid "E-Mail:"
 msgstr "អ៊ីមែល ៖"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:1727
+#: rc.cpp:1842
 msgctxt "The Mp3Tunes password"
 msgid "Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
@@ -5893,7 +6039,7 @@ msgstr "ពាក្យ​សម្ងាត់ ៖"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enableHarmony)
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:49
 #. i18n: ectx: property (toolTip), widget (QLabel, label_3)
-#: rc.cpp:1730 rc.cpp:1733
+#: rc.cpp:1845 rc.cpp:1848
 msgid ""
 "AutoSync is a feature from MP3tunes which allows you to automatically move "
 "your music between computers and devices."
@@ -5903,7 +6049,7 @@ msgstr ""
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:52
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_3)
-#: rc.cpp:1736
+#: rc.cpp:1851
 msgid ""
 "AutoSync is a feature from MP3tunes which allows you to automatically move "
 "your music between computers and devices. You can upload music from one "
@@ -5914,20 +6060,20 @@ msgstr ""
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:1739
+#: rc.cpp:1854
 msgctxt "Enable harmony"
 msgid "Enable Auto Sync"
 msgstr "បើក​កា​រធ្វើ​សមកាលកម្ម​ដោយ​ស្វ័យ​ប្រវត្តិ"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:62
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:1742
+#: rc.cpp:1857
 msgid " PIN Code:"
 msgstr " កូដ PIN ៖"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:89
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:1745
+#: rc.cpp:1860
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -7381,6 +7527,14 @@ msgstr "ថ្ងៃ"
 msgid "Months"
 msgstr "ខែ"
 
+#: widgets/SmartPlaylistEditor.cpp:1012
+msgid "Seconds"
+msgstr "វិនាទី"
+
+#: widgets/SmartPlaylistEditor.cpp:1013
+msgid "Minutes"
+msgstr "នាទី"
+
 #: widgets/SmartPlaylistEditor.cpp:1014
 msgid "Hours"
 msgstr "ម៉ោង"
@@ -7650,3 +7804,15 @@ msgstr "រូបភាព​គម្រប"
 #: covermanager/CoverManager.cpp:889
 msgid "No Artist"
 msgstr "សិល្បករ"
+
+#~ msgid "Unit:"
+#~ msgstr "ឯកតា ៖"
+
+#~ msgid "B (1 Byte)"
+#~ msgstr "បៃ (១ បៃ)"
+
+#~ msgid "KB (1024 Bytes)"
+#~ msgstr "គីឡូបៃ (១០២៤ បៃ)"
+
+#~ msgid "MB (1024 KB)"
+#~ msgstr "មេកាបៃ (១០២៤ គីឡូបៃ)"
