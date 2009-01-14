@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-13 09:43+0100\n"
+"POT-Creation-Date: 2009-01-14 11:20+0100\n"
 "PO-Revision-Date: 2008-12-19 09:00+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -769,7 +769,7 @@ msgstr "លុប​ស្លាក​ '%1' ឬ ?"
 #: libs/imageproperties/imagedescedittab.cpp:1208
 #: digikam/tagfolderview.cpp:756 digikam/tagfilterview.cpp:1267
 #: digikam/digikamapp.cpp:592 digikam/digikamapp.cpp:641
-#: digikam/digikamapp.cpp:694 utilities/gpssearch/gpssearchfolderview.cpp:175
+#: utilities/gpssearch/gpssearchfolderview.cpp:175
 #: utilities/gpssearch/gpssearchfolderview.cpp:282
 #: utilities/searchwindow/searchfolderview.cpp:212
 #: utilities/cameragui/cameraui.cpp:1591 utilities/cameragui/cameraui.cpp:1658
@@ -1938,7 +1938,7 @@ msgstr "បញ្ចេញ​ពន្លឺ​ជាមួយ​នឹង​រ
 
 #: libs/themeengine/themeengine.cpp:93 libs/themeengine/themeengine.cpp:94
 #: libs/themeengine/themeengine.cpp:190 libs/themeengine/themeengine.cpp:204
-#: digikam/digikamapp.cpp:2315
+#: digikam/digikamapp.cpp:2314
 #: utilities/imageeditor/editor/editorwindow.cpp:1857
 #: utilities/lighttable/lighttablewindow.cpp:1603
 #: utilities/cameragui/cameraui.cpp:2049
@@ -2051,7 +2051,7 @@ msgstr "ព័ត៌មាន​រូបភាព"
 
 #: libs/widgets/metadata/mdkeylistviewitem.cpp:54
 #: showfoto/setup/setuptooltip.cpp:142 utilities/setup/setuptooltip.cpp:172
-#: utilities/searchwindow/searchgroup.cpp:147
+#: utilities/searchwindow/searchgroup.cpp:148
 msgid "Photograph Information"
 msgstr "ព័ត៌មាន​រូបថត"
 
@@ -2501,7 +2501,7 @@ msgstr "ផ្ទាល់ខ្លួន"
 msgid "Choose..."
 msgstr ""
 
-#: libs/widgets/common/dlogoaction.cpp:150
+#: libs/widgets/common/dlogoaction.cpp:168
 #, fuzzy
 msgid "Visit digiKam project website"
 msgstr "ទស្សនា​តំបន់បណ្ដាញ​របស់​គម្រោង digiKam"
@@ -2981,7 +2981,7 @@ msgstr "អាល់ប៊ុម"
 #: digikam/albummodel.cpp:606 digikam/albumfolderview.cpp:552
 #: digikam/albumfolderview.cpp:1011 digikam/albumfolderview.cpp:1103
 #: digikam/albumfolderview.cpp:1136 digikam/albumfolderview.cpp:1196
-#: digikam/albumfolderview.cpp:1250 digikam/albummanager.cpp:568
+#: digikam/albumfolderview.cpp:1250 digikam/albummanager.cpp:639
 #: digikam/albumiconview.cpp:1609 digikam/albumselectdialog.cpp:116
 #: digikam/album.cpp:354 utilities/kipiiface/kipiimagecollection.cpp:272
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:140
@@ -2991,7 +2991,7 @@ msgstr "អាល់ប៊ុម​របស់​ខ្ញុំ"
 
 #: digikam/albummodel.cpp:622 digikam/tagfolderview.cpp:539
 #: digikam/tagfolderview.cpp:845 digikam/tagfolderview.cpp:919
-#: digikam/tagfolderview.cpp:948 digikam/albummanager.cpp:571
+#: digikam/tagfolderview.cpp:948 digikam/albummanager.cpp:642
 #: digikam/album.cpp:413
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:141
 #, fuzzy
@@ -3824,7 +3824,52 @@ msgid ""
 "Database plugins installed are:"
 msgstr "គ្មាន​កម្មវិធី​ជំនួយ​មូលដ្ឋាន​ទិន្នន័យ Qt4 SQlite ។ សូម​ដំឡើង​វា!"
 
-#: digikam/albummanager.cpp:432
+#: digikam/albummanager.cpp:361 digikam/albummanager.cpp:399
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failed to copy the old database file (\"%1\")to its new location (\"%2\")."
+#| "Please make sure that the file can be copied, or delete it."
+msgid ""
+"Failed to copy the old database file (\"%1\") to its new location (\"%2\"). "
+"Starting with an empty database."
+msgstr ""
+"បរាជ័យ​ក្នុងការ​ចម្លង​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ​ចាស់ (\"%1\") ទៅ​ទីតាំង​ថ្មី (\"%2\") ។ត្រូវ​ប្រាកដ​ថា "
+"ឯកសារ​គឺ​អាច​ចម្លង និង​លុប​បាន ។"
+
+#: digikam/albummanager.cpp:370
+#, fuzzy
+#| msgid "Copied database file"
+msgid "Copy current database"
+msgstr "បាន​ចម្លង​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ"
+
+#: digikam/albummanager.cpp:371
+#, fuzzy
+msgid "Use existing file"
+msgstr "ប្រើ​ទម្រង់ sRGB ដែល​ភ្ជាប់​"
+
+#: digikam/albummanager.cpp:373
+#, kde-format
+msgid ""
+"<p>You have chosen the folder \"%1\" as the new place to store the database. "
+"There is already a database file found in this folder.</p> <p>Would you like "
+"to use this existing file as the new database, or remove it and copy the "
+"current database to this place?</p> "
+msgstr ""
+
+#: digikam/albummanager.cpp:378
+#, fuzzy
+#| msgid "Copied database file"
+msgid "New database folder"
+msgstr "បាន​ចម្លង​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ"
+
+#: digikam/albummanager.cpp:388
+#, kde-format
+msgid ""
+"Failed to backup the existing database file (\"%1\").Refusing to replace "
+"file without backup, using the existing file."
+msgstr ""
+
+#: digikam/albummanager.cpp:503
 #, fuzzy
 msgid ""
 "<p>Failed to open the database. </p><p>You cannot use digiKam without a "
@@ -3836,7 +3881,7 @@ msgstr ""
 "ទិន្នន័យ​មួយដែល​មាន​ដំណើរការ ។ digiKam នឹង​ប៉ុនប៉ង​ចាប់​ផ្តើម​ឥឡូវ ប៉ុន្តែ​វានឹង​<b>មិន</b> ដំណើរការ ។ "
 "សូម​ត្រួត​ពិនិត្យ​ការ​កំណត់​មូលដ្ឋាន​ទិន្នន័យ​ក្នុង <b>ម៉ឺនុយ​ការ​កំណត់​រចនា​សម្ព័ន្ធ</b> ។</p></qt>"
 
-#: digikam/albummanager.cpp:440
+#: digikam/albummanager.cpp:511
 #, fuzzy, kde-format
 msgid ""
 "<p>Failed to open the database.  Error message from database: %1 </p><p>You "
@@ -3848,7 +3893,7 @@ msgstr ""
 "ទិន្នន័យ​មួយដែល​មាន​ដំណើរការ ។ digiKam នឹង​ប៉ុនប៉ង​ចាប់​ផ្តើម​ឥឡូវ ប៉ុន្តែ​វានឹង​<b>មិន</b> ដំណើរការ ។ "
 "សូម​ត្រួត​ពិនិត្យ​ការ​កំណត់​មូលដ្ឋាន​ទិន្នន័យ​ក្នុង <b>ម៉ឺនុយ​ការ​កំណត់​រចនា​សម្ព័ន្ធ</b> ។</p></qt>"
 
-#: digikam/albummanager.cpp:508
+#: digikam/albummanager.cpp:579
 #, kde-format
 msgid ""
 "Your locale has changed since this album was last opened.\n"
@@ -3861,7 +3906,7 @@ msgid ""
 "digiKam."
 msgstr ""
 
-#: digikam/albummanager.cpp:574
+#: digikam/albummanager.cpp:645
 #: utilities/searchwindow/searchfolderview.cpp:118
 #: utilities/searchwindow/searchfolderview.cpp:310
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:142
@@ -3869,67 +3914,67 @@ msgstr ""
 msgid "My Searches"
 msgstr "ការស្វែងរក​របស់​ខ្ញុំ"
 
-#: digikam/albummanager.cpp:1335
+#: digikam/albummanager.cpp:1406
 msgid "The collection location supplied is invalid or currently not available."
 msgstr ""
 
-#: digikam/albummanager.cpp:1360
+#: digikam/albummanager.cpp:1431
 #, fuzzy
 msgid "No parent found for album."
 msgstr "រក​មេ​អាល់ប៊ុម​មិនឃើញ​ឡើយ ។"
 
-#: digikam/albummanager.cpp:1367
+#: digikam/albummanager.cpp:1438
 #, fuzzy
 msgid "Album name cannot be empty."
 msgstr "ឈ្មោះអាល់ប៊ុម​មិនអាច​ទទេបានឡើយ ។"
 
-#: digikam/albummanager.cpp:1373
+#: digikam/albummanager.cpp:1444
 #, fuzzy
 msgid "Album name cannot contain '/'."
 msgstr "ឈ្មោះ​អាល់ប៊ុម​មិនអាច​មាន '/'បានឡើយ ។"
 
-#: digikam/albummanager.cpp:1379
+#: digikam/albummanager.cpp:1450
 msgid "createPAlbum does not accept the root album as parent."
 msgstr ""
 
-#: digikam/albummanager.cpp:1392
+#: digikam/albummanager.cpp:1463
 #, fuzzy
 msgid "An existing album has the same name."
 msgstr "អាល់ប៊ុម​ដែល​មាន​ស្រាប់​មាន​ឈ្មោះ​ដូច​គ្នា ។"
 
-#: digikam/albummanager.cpp:1404
+#: digikam/albummanager.cpp:1475
 #, fuzzy
 msgid "Failed to create directory,"
 msgstr "ការប្តូរ​ឈ្មោះ​​អាល់ប៊ុម​បាន​បរាជ័យ"
 
-#: digikam/albummanager.cpp:1413
+#: digikam/albummanager.cpp:1484
 #, fuzzy
 msgid "Failed to add album to database"
 msgstr "ការបន្ថែម​អាល់ប៊ុម​ទៅ​កាន់​មូលដ្ឋាន​ទិន្នន័យ​បាន​បរាជ័យ"
 
-#: digikam/albummanager.cpp:1436 digikam/albummanager.cpp:1528
-#: digikam/albummanager.cpp:1630 digikam/albummanager.cpp:1664
-#: digikam/albummanager.cpp:1705
+#: digikam/albummanager.cpp:1507 digikam/albummanager.cpp:1599
+#: digikam/albummanager.cpp:1701 digikam/albummanager.cpp:1735
+#: digikam/albummanager.cpp:1776
 #, fuzzy
 msgid "No such album"
 msgstr "គ្មាន​អាល់ប៊ុម​នេះ​ឡើយ"
 
-#: digikam/albummanager.cpp:1442
+#: digikam/albummanager.cpp:1513
 #, fuzzy
 msgid "Cannot rename root album"
 msgstr "មិនអាច​​ប្តូរឈ្មោះ​អាល់ប៊ុម​ដើម​គេ​បាន​ឡើយ"
 
-#: digikam/albummanager.cpp:1448
+#: digikam/albummanager.cpp:1519
 #, fuzzy
 msgid "Cannot rename album root album"
 msgstr "មិនអាច​​ប្តូរឈ្មោះ​អាល់ប៊ុម​ដើម​គេ​បាន​ឡើយ"
 
-#: digikam/albummanager.cpp:1454
+#: digikam/albummanager.cpp:1525
 #, fuzzy
 msgid "Album name cannot contain '/'"
 msgstr "ឈ្មោះអាល់ប៊ុម​មិនអាច​មាន '/' បាន​ឡើយ"
 
-#: digikam/albummanager.cpp:1464
+#: digikam/albummanager.cpp:1535
 #, fuzzy
 msgid ""
 "Another album with same name exists\n"
@@ -3938,52 +3983,52 @@ msgstr ""
 "មាន​អាល់ប៊ុម​ផ្សេង​ទៀត​មាន​ឈ្មោះ​ដូច​គ្នា\n"
 "សូម​ជ្រើស​ឈ្មោះ​ផ្សេង​ទៀត"
 
-#: digikam/albummanager.cpp:1481
+#: digikam/albummanager.cpp:1552
 #, fuzzy
 msgid "Failed to rename Album"
 msgstr "ការប្តូរ​ឈ្មោះ​​អាល់ប៊ុម​បាន​បរាជ័យ"
 
-#: digikam/albummanager.cpp:1534
+#: digikam/albummanager.cpp:1605
 #, fuzzy
 msgid "Cannot edit root album"
 msgstr "មិនអាច​​កែសម្រួល​អាល់ប៊ុម​ដើម​គេ​បាន​ឡើយ"
 
-#: digikam/albummanager.cpp:1563
+#: digikam/albummanager.cpp:1634
 #, fuzzy
 msgid "No parent found for tag"
 msgstr "រក​មេ​ស្លាក​មិនឃើញ​ឡើយ"
 
-#: digikam/albummanager.cpp:1570
+#: digikam/albummanager.cpp:1641
 #, fuzzy
 msgid "Tag name cannot be empty"
 msgstr "ឈ្មោះ​ស្លាក​មិនអាច​ទទេ​បាន​ឡើយ"
 
-#: digikam/albummanager.cpp:1576 digikam/albummanager.cpp:1676
+#: digikam/albummanager.cpp:1647 digikam/albummanager.cpp:1747
 #, fuzzy
 msgid "Tag name cannot contain '/'"
 msgstr "ឈ្មោះ​ស្លាក​មិនអាច​មាន​ '/'​បាន​ឡើយ"
 
-#: digikam/albummanager.cpp:1586 digikam/tageditdlg.cpp:356
+#: digikam/albummanager.cpp:1657 digikam/tageditdlg.cpp:356
 #, fuzzy
 msgid "Tag name already exists"
 msgstr "ឈ្មោះ​ស្លាក​មាន​រួច​ហើយ"
 
-#: digikam/albummanager.cpp:1596
+#: digikam/albummanager.cpp:1667
 #, fuzzy
 msgid "Failed to add tag to database"
 msgstr "ការបន្ថែម​ស្លាក​ទៅកាន់​មូលដ្ឋានទិន្នន័យ​​បានបរាជ័យ"
 
-#: digikam/albummanager.cpp:1636
+#: digikam/albummanager.cpp:1707
 #, fuzzy
 msgid "Cannot delete Root Tag"
 msgstr "មិនអាច​លុប​ស្លាក​ដើម​គេ​បាន​ឡើយ"
 
-#: digikam/albummanager.cpp:1670 digikam/albummanager.cpp:1736
+#: digikam/albummanager.cpp:1741 digikam/albummanager.cpp:1807
 #, fuzzy
 msgid "Cannot edit root tag"
 msgstr "មិនអាច​កែសម្រួល​ស្លាក​ដើម​គេ​បាន​ឡើយ"
 
-#: digikam/albummanager.cpp:1686
+#: digikam/albummanager.cpp:1757
 #, fuzzy
 msgid ""
 "Another tag with same name exists\n"
@@ -3992,12 +4037,12 @@ msgstr ""
 "មាន​ស្លាក​ឈ្មោះ​នេះ​រួច​ហើយ\n"
 "សូមជ្រើស​ឈ្មោះមួយ​ទៀត"
 
-#: digikam/albummanager.cpp:1711
+#: digikam/albummanager.cpp:1782
 #, fuzzy
 msgid "Cannot move root tag"
 msgstr "មិនអាច​ផ្លាស់ទី​ស្លាក​ដើម​គេ​បាន​ឡើយ"
 
-#: digikam/albummanager.cpp:1730
+#: digikam/albummanager.cpp:1801
 #, fuzzy
 msgid "No such tag"
 msgstr "គ្មាន​ស្លាក​នេះ​ឡើយ"
@@ -4107,7 +4152,8 @@ msgid "Open With"
 msgstr "​បើក​ជាមួយ"
 
 #: digikam/albumiconview.cpp:714 digikam/imagepreviewview.cpp:413
-#: showfoto/showfoto.cpp:568 utilities/imageeditor/editor/editorwindow.cpp:319
+#: digikam/digikamapp.cpp:694 showfoto/showfoto.cpp:568
+#: utilities/imageeditor/editor/editorwindow.cpp:319
 #: utilities/lighttable/lighttablepreview.cpp:397
 #: utilities/lighttable/lighttablewindow.cpp:406
 #, fuzzy, kde-format
@@ -5043,36 +5089,36 @@ msgstr "ឧបករណ៍​អាន​កាត SD / MMC"
 msgid "xD Card Reader"
 msgstr "ឧបករណ៍​អាន​កាត"
 
-#: digikam/digikamapp.cpp:2052
+#: digikam/digikamapp.cpp:2051
 #, fuzzy
 #| msgid "General"
 msgctxt "general keyboard shortcuts"
 msgid "General"
 msgstr "ទូទៅ"
 
-#: digikam/digikamapp.cpp:2158
+#: digikam/digikamapp.cpp:2157
 #, fuzzy
 msgid "Loading Kipi Plugins"
 msgstr "កំពុង​ផ្ទុក​កម្មវិធី​ជំនួយ Kipi"
 
-#: digikam/digikamapp.cpp:2293 showfoto/showfoto.cpp:213
+#: digikam/digikamapp.cpp:2292 showfoto/showfoto.cpp:213
 #, fuzzy
 msgid "Loading themes"
 msgstr "កំពុង​ផ្ទុក​ស្បែក"
 
-#: digikam/digikamapp.cpp:2335
+#: digikam/digikamapp.cpp:2334
 msgid ""
 "Rebuilding all image thumbnails can take some time.\n"
 "Do you want to continue?"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2347
+#: digikam/digikamapp.cpp:2346
 msgid ""
 "Updating the metadata database can take some time. \n"
 "Do you want to continue?"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2358
+#: digikam/digikamapp.cpp:2357
 msgid ""
 "Image fingerprinting can take some time.\n"
 "Which would you prefer?\n"
@@ -5080,43 +5126,43 @@ msgid ""
 "- Rebuild all fingerprints (takes a long time)"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2363 showfoto/showfoto.cpp:1090
+#: digikam/digikamapp.cpp:2362 showfoto/showfoto.cpp:1090
 #: utilities/imageeditor/editor/editorwindow.cpp:1111
 #: utilities/cameragui/cameraui.cpp:1590 utilities/cameragui/cameraui.cpp:1657
 #, fuzzy
 msgid "Warning"
 msgstr "ព្រមាន"
 
-#: digikam/digikamapp.cpp:2364
+#: digikam/digikamapp.cpp:2363
 #, fuzzy
 msgid "Scan"
 msgstr "វិភាគ​រក​"
 
-#: digikam/digikamapp.cpp:2365
+#: digikam/digikamapp.cpp:2364
 #, fuzzy
 msgid "Rebuild All"
 msgstr "ស្ថាបនា​រូបភាព​តូចៗ​ទាំង​អស់​ឡើង​វិញ..."
 
-#: digikam/digikamapp.cpp:2416 utilities/cameragui/cameraui.cpp:936
+#: digikam/digikamapp.cpp:2415 utilities/cameragui/cameraui.cpp:936
 #, fuzzy, kde-format
 msgid "Size: %1"
 msgstr "ទំហំ ៖ %1"
 
-#: digikam/digikamapp.cpp:2424 utilities/lighttable/lighttablewindow.cpp:1492
+#: digikam/digikamapp.cpp:2423 utilities/lighttable/lighttablewindow.cpp:1492
 #: utilities/lighttable/lighttablewindow.cpp:1516
 #, fuzzy, kde-format
 msgid "zoom: %1%"
 msgstr "ពង្រីក: %1%"
 
-#: digikam/digikamapp.cpp:2455
+#: digikam/digikamapp.cpp:2454
 msgid "Select folder to parse"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2467
+#: digikam/digikamapp.cpp:2466
 msgid "Select folders to import into album"
 msgstr ""
 
-#: digikam/digikamapp.cpp:2479
+#: digikam/digikamapp.cpp:2478
 #, fuzzy
 msgid ""
 "<p>Please select the destination album from the digiKam library to import "
@@ -11303,6 +11349,15 @@ msgstr ""
 msgid "Problem Adding Collection"
 msgstr ""
 
+#: utilities/setup/setupcollectionview.cpp:546
+#, fuzzy
+msgid "Adding Collection"
+msgstr "តាម​ការ​សម្រាំង"
+
+#: utilities/setup/setupcollectionview.cpp:553
+msgid "Your new collection will be created with this name:"
+msgstr ""
+
 #: utilities/setup/setupcollectionview.cpp:618
 #, fuzzy
 msgid "Remove Collection"
@@ -13301,39 +13356,79 @@ msgstr "គ្មាន​ធាតុ​ដែល​បាន​ជ្រើស
 msgid "No Rating assigned"
 msgstr "មិន​មាន​ស្លាក​ដែលបាន​ផ្តល់ឲ្យ​ថ្មីៗ​ឡើយ"
 
-#: utilities/searchwindow/searchgroup.cpp:89
+#: utilities/searchwindow/searchgroup.cpp:90
 #, fuzzy
 msgid "File, Album, Tags"
 msgstr "ផ្លាស់ទី​អាល់ប៊ុម​ទៅ​ធុងសំរាម"
 
-#: utilities/searchwindow/searchgroup.cpp:107
+#: utilities/searchwindow/searchgroup.cpp:108
 #, fuzzy
 msgid "Picture Properties"
 msgstr "លក្ខណៈសម្បត្តិ​​ឯកសារ"
 
-#: utilities/searchwindow/searchgroup.cpp:130
+#: utilities/searchwindow/searchgroup.cpp:131
 msgid "Caption, Comment, Title"
 msgstr ""
 
-#: utilities/searchwindow/searchgroup.cpp:343
+#: utilities/searchwindow/searchgroup.cpp:345
 #, fuzzy
 msgid "Find Pictures"
 msgstr "រកគែម"
 
-#: utilities/searchwindow/searchgroup.cpp:346
+#: utilities/searchwindow/searchgroup.cpp:348
 #, fuzzy
-msgid "Match All of the following conditions"
+msgid "Meet All of the following conditions"
 msgstr "លក្ខខណ្ឌ​ផ្គូផ្គង"
 
-#: utilities/searchwindow/searchgroup.cpp:349
+#: utilities/searchwindow/searchgroup.cpp:351
 #, fuzzy
-msgid "Match Any of the following conditions"
+msgid "Meet Any of the following conditions"
 msgstr "លក្ខខណ្ឌ​ផ្គូផ្គង"
 
-#: utilities/searchwindow/searchgroup.cpp:371
+#: utilities/searchwindow/searchgroup.cpp:354
+msgid "None of these conditions are met"
+msgstr ""
+
+#: utilities/searchwindow/searchgroup.cpp:357
+msgid "At least one of these conditions is not met"
+msgstr ""
+
+#: utilities/searchwindow/searchgroup.cpp:387
+#, fuzzy
+msgctxt ""
+"Search your collection...for pictures meeting the following conditions"
+msgid "Search your collection"
+msgstr "សម្រាំង​អាល់ប៊ុម"
+
+#: utilities/searchwindow/searchgroup.cpp:390
+#, fuzzy
+msgctxt ""
+"Search your collection...for pictures meeting the following conditions"
+msgid "for pictures meeting the following conditions"
+msgstr "លក្ខខណ្ឌ​ផ្គូផ្គង"
+
+#: utilities/searchwindow/searchgroup.cpp:434
 #, fuzzy
 msgid "Remove Group"
 msgstr "យក​ស្លាក​​ចេញ"
+
+#: utilities/searchwindow/searchgroup.cpp:469
+#, fuzzy
+msgid "Hide Options <<"
+msgstr "ជម្រើស​ចំណុចប្រទាក់"
+
+#: utilities/searchwindow/searchgroup.cpp:479
+#, fuzzy
+msgid "Options >>"
+msgstr "ជម្រើស​ចំណុចប្រទាក់"
+
+#: utilities/searchwindow/searchgroup.cpp:539
+msgid "AND"
+msgstr ""
+
+#: utilities/searchwindow/searchgroup.cpp:541
+msgid "OR"
+msgstr ""
 
 #: utilities/searchwindow/searchfolderview.cpp:103
 #, fuzzy
@@ -13644,49 +13739,49 @@ msgstr ""
 msgid "Reset contents"
 msgstr "កំណត់​រូបតំណាង​ស្លាក​ឡើងវិញ"
 
-#: utilities/searchwindow/searchfields.cpp:1344
+#: utilities/searchwindow/searchfields.cpp:1431
 msgid "Any"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:1402
+#: utilities/searchwindow/searchfields.cpp:1489
 #, kde-format
 msgid "Any of: %1"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:1722
+#: utilities/searchwindow/searchfields.cpp:1809
 #, fuzzy
 msgid "Any Album"
 msgstr "អាល់ប៊ុម​របស់​ខ្ញុំ"
 
-#: utilities/searchwindow/searchfields.cpp:1727
+#: utilities/searchwindow/searchfields.cpp:1814
 #, fuzzy
 msgid "Any Tag"
 msgstr "​ស្លាក​របស់​ខ្ញុំ"
 
-#: utilities/searchwindow/searchfields.cpp:1772
+#: utilities/searchwindow/searchfields.cpp:1859
 #, fuzzy, kde-format
 msgid "%1 Albums selected"
 msgstr "គ្មាន​ធាតុ​ដែល​បាន​ជ្រើស"
 
-#: utilities/searchwindow/searchfields.cpp:1774
+#: utilities/searchwindow/searchfields.cpp:1861
 #, fuzzy, kde-format
 msgid "%1 Tags selected"
 msgstr "គ្មាន​ធាតុ​ដែល​បាន​ជ្រើស"
 
-#: utilities/searchwindow/searchfields.cpp:1996
+#: utilities/searchwindow/searchfields.cpp:2098
 #, fuzzy
 msgid "any color depth"
 msgstr "ជម្រៅ​ពណ៌ ៖"
 
-#: utilities/searchwindow/searchfields.cpp:1997
+#: utilities/searchwindow/searchfields.cpp:2099
 msgid "8 bits per channel"
 msgstr ""
 
-#: utilities/searchwindow/searchfields.cpp:1998
+#: utilities/searchwindow/searchfields.cpp:2100
 msgid "16 bits per channel"
 msgstr ""
 
-#: utilities/searchwindow/searchview.cpp:437
+#: utilities/searchwindow/searchview.cpp:457
 #, fuzzy
 msgid "Add Search Group"
 msgstr "ស្វែងរក​កម្រិត​ខ្ពស់"
@@ -13729,7 +13824,7 @@ msgstr ""
 msgid "Clear all"
 msgstr "ជម្រះ​ទាំងអស់"
 
-#: utilities/lighttable/lighttablebar.cpp:511
+#: utilities/lighttable/lighttablebar.cpp:509
 msgid "Drag and drop images here"
 msgstr ""
 
