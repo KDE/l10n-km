@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akregator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-26 10:21+0100\n"
+"POT-Creation-Date: 2009-01-27 08:26+0100\n"
 "PO-Revision-Date: 2008-12-19 10:11+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -20,7 +20,8 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: src/old/feedlistview.cpp:280 src/akregator_part.cpp:308
-#: plugins/onlinesync/ui/configurationwidget.cpp:45
+#: src/subscriptionlistmodel.cpp:218
+#: plugins/onlinesync/ui/configurationwidget.cpp:21
 msgid "Feeds"
 msgstr "មតិព័ត៌មាន"
 
@@ -49,11 +50,11 @@ msgstr "បាន​បោះបង់​ការ​ផ្ទុក"
 msgid "Loading completed"
 msgstr "ការ​ផ្ទុក​បាន​បញ្ចប់"
 
-#: src/articlelistview.cpp:178 src/subscriptionlistview.cpp:181
+#: src/articlelistview.cpp:198 src/subscriptionlistview.cpp:167
 msgid "Columns"
 msgstr "ជួរឈរ"
 
-#: src/articlelistview.cpp:287
+#: src/articlelistview.cpp:323
 msgid ""
 "<h2>Article list</h2>Here you can browse articles from the currently "
 "selected feed. You can also manage articles, as marking them as persistent "
@@ -66,7 +67,7 @@ msgstr ""
 "ចុច​កណ្ដុរ​ស្ដាំ ។ ដើម្បី​មើល​ទំព័រ​បណ្ដាញ​របស់​អត្ថបទ អ្នក​អាច​បើក​អត្ថបទ​នៅ​ក្នុង​ផ្ទាំង ឬ ក្នុង​បង្អួច​កម្មវិធី​"
 "រុករក​ខាង​ក្រៅ ។"
 
-#: src/articlelistview.cpp:354
+#: src/articlelistview.cpp:385
 msgid ""
 "<div align=center><h3>No matches</h3>Filter does not match any articles, "
 "please change your criteria and try again.</div>"
@@ -74,7 +75,7 @@ msgstr ""
 "<div align=center><h3>មិន​ផ្គូផ្គង</h3>តម្រង​មិន​ផ្គូផ្គង​នឹង​អត្ថបទ​ណា​មួយ​ឡើយ ។ សូម​ផ្លាស់ប្ដូរ​"
 "លក្ខណៈវិនិច្ឆ័យ​របស់​អ្នក ហើយ​ព្យាយាម​ម្ដង​ទៀត ។</div>"
 
-#: src/articlelistview.cpp:365
+#: src/articlelistview.cpp:396
 msgid ""
 "<div align=center><h3>No feed selected</h3>This area is article list. Select "
 "a feed from the feed list and you will see its articles here.</div>"
@@ -90,22 +91,24 @@ msgstr "បន្ថែម​ថត"
 msgid "Folder name:"
 msgstr "ឈ្មោះ​ថត ៖"
 
-#: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:543
+#: src/pageviewer.cpp:101 src/actionmanagerimpl.cpp:539
 msgctxt "Go back in browser history"
 msgid "Back"
 msgstr "ថយក្រោយ"
 
-#: src/pageviewer.cpp:109 src/actionmanagerimpl.cpp:536
+#: src/pageviewer.cpp:109 src/actionmanagerimpl.cpp:532
 msgctxt "Go forward in browser history"
 msgid "Forward"
 msgstr "ទៅមុខ"
 
-#: src/pageviewer.cpp:116 src/actionmanagerimpl.cpp:552
-msgctxt "Reload current page"
+#: src/pageviewer.cpp:116 src/actionmanagerimpl.cpp:548
+#, fuzzy
+#| msgctxt "Reload current page"
+#| msgid "Reload"
 msgid "Reload"
 msgstr "ផ្ទុក​ឡើងវិញ"
 
-#: src/pageviewer.cpp:119 src/actionmanagerimpl.cpp:557
+#: src/pageviewer.cpp:119 src/actionmanagerimpl.cpp:553
 msgid "Stop"
 msgstr "បញ្ឈប់"
 
@@ -169,32 +172,44 @@ msgstr ""
 "%2</i></p>"
 
 #: src/pluginmanager.cpp:171
-msgctxt "Name of the plugin"
+#, fuzzy
+#| msgctxt "Name of the plugin"
+#| msgid "Name"
 msgid "Name"
 msgstr "ឈ្មោះ"
 
 #: src/pluginmanager.cpp:172
-msgctxt "Library name"
+#, fuzzy
+#| msgctxt "Library name"
+#| msgid "Library"
 msgid "Library"
 msgstr "បណ្ណាល័យ"
 
 #: src/pluginmanager.cpp:173
-msgctxt "Plugin authors"
+#, fuzzy
+#| msgctxt "Plugin authors"
+#| msgid "Authors"
 msgid "Authors"
 msgstr "អ្នក​និពន្ធ"
 
 #: src/pluginmanager.cpp:174
-msgctxt "Plugin authors' emaila addresses"
+#, fuzzy
+#| msgctxt "Plugin authors' emaila addresses"
+#| msgid "Email"
 msgid "Email"
 msgstr "អ៊ីមែល"
 
 #: src/pluginmanager.cpp:175
-msgctxt "Plugin version"
+#, fuzzy
+#| msgctxt "Plugin version"
+#| msgid "Version"
 msgid "Version"
 msgstr "កំណែ"
 
 #: src/pluginmanager.cpp:176
-msgctxt "Framework version plugin requires"
+#, fuzzy
+#| msgctxt "Framework version plugin requires"
+#| msgid "Framework Version"
 msgid "Framework Version"
 msgstr "កំណែ​គ្រោងការណ៍"
 
@@ -210,45 +225,45 @@ msgstr "អ្នក​អាច​មើល​អត្ថបទ​ច្រើ
 msgid "Articles list."
 msgstr "បញ្ជី​អត្ថបទ ។"
 
-#: src/mainwidget.cpp:239
+#: src/mainwidget.cpp:237
 msgid "Browsing area."
 msgstr "តំបន់​រុករក ។"
 
-#: src/mainwidget.cpp:243 src/mainwidget.cpp:643
+#: src/mainwidget.cpp:241 src/mainwidget.cpp:657
 msgid "Articles"
 msgstr "អត្ថបទ"
 
-#: src/mainwidget.cpp:260
+#: src/mainwidget.cpp:258
 msgid "About"
 msgstr "អំពី"
 
-#: src/mainwidget.cpp:404 src/main.cpp:67
+#: src/mainwidget.cpp:413 src/main.cpp:67
 msgid "Imported Folder"
 msgstr "ថត​ដែល​បាន​នាំចូល"
 
-#: src/mainwidget.cpp:407
+#: src/mainwidget.cpp:416
 msgid "Add Imported Folder"
 msgstr "បន្ថែម​ថត​ដែល​បាន​នាំចូល"
 
-#: src/mainwidget.cpp:408
+#: src/mainwidget.cpp:417
 msgid "Imported folder name:"
 msgstr "ឈ្មោះ​ថត​ដែល​បាន​នាំចូល ៖"
 
-#: src/mainwidget.cpp:813
+#: src/mainwidget.cpp:822
 msgid "Fetching Feeds..."
 msgstr "កំពុង​ប្រមូល​មតិព័ត៌មាន..."
 
-#: src/mainwidget.cpp:1012
+#: src/mainwidget.cpp:1021
 #, kde-format
 msgid "<qt>Are you sure you want to delete article <b>%1</b>?</qt>"
 msgstr "<qt>តើ​អ្នក​ពិត​ជា​ចង់​លុប​អត្ថបទ <b>%1</b> ឬ ?</qt>"
 
-#: src/mainwidget.cpp:1015
+#: src/mainwidget.cpp:1024
 #, kde-format
 msgid "<qt>Are you sure you want to delete the %1 selected articles?</qt>"
 msgstr "<qt>តើ​អ្នក​ពិត​ជា​ចង់​លុប​អត្ថបទ %1 ដែល​បាន​ជ្រើស​ឬ ?</qt>"
 
-#: src/mainwidget.cpp:1019
+#: src/mainwidget.cpp:1028
 msgid "Delete Article"
 msgstr "លុប​អត្ថបទ"
 
@@ -292,7 +307,7 @@ msgstr "រមូរ​ឡើង​លើ"
 msgid "&Scroll Down"
 msgstr "រមូរ​ចុះក្រោម"
 
-#: src/articleviewer.cpp:653
+#: src/articleviewer.cpp:645
 #, kde-format
 msgctxt "%1: Akregator version; %2: homepage URL; --- end of comment ---"
 msgid ""
@@ -319,29 +334,29 @@ msgstr ""
 "<p>សូម​អរគុណ !</p>\n"
 "<p style='margin-bottom: 0px'>&nbsp; &nbsp; ក្រុម Akregator​</p>\n"
 
-#: src/articleviewer.cpp:669 src/aboutdata.cpp:35
+#: src/articleviewer.cpp:661 src/aboutdata.cpp:35
 msgid "Akregator"
 msgstr "Akregator"
 
-#: src/articleviewer.cpp:671
+#: src/articleviewer.cpp:663
 msgid "An RSS feed reader for the K Desktop Environment."
 msgstr "កម្មវិធី​អាន​មតិព័ត៌មាន RSS សម្រាប់​បរិស្ថាន​ផ្ទៃតុ K ។"
 
-#: src/articleviewer.cpp:708
-msgid "Keep Enabled"
-msgstr "បើកជា​និច្ច"
-
-#: src/articleviewer.cpp:710
-msgid "Disable"
-msgstr "បិទ"
-
-#: src/articleviewer.cpp:711
+#: src/articleviewer.cpp:699
 msgid "Are you sure you want to disable this introduction page?"
 msgstr "តើ​អ្នក​ប្រាកដ​ជា​ចង់​បិទ​ទំព័រ​ណែនាំ​នេះ​ដែរ​ឬទេ ?"
 
-#: src/articleviewer.cpp:711
+#: src/articleviewer.cpp:699
 msgid "Disable Introduction Page"
 msgstr "បិទ​ទំព័រ​ណែនាំ"
+
+#: src/articleviewer.cpp:699
+msgid "Disable"
+msgstr "បិទ"
+
+#: src/articleviewer.cpp:699
+msgid "Keep Enabled"
+msgstr "បើកជា​និច្ច"
 
 #. i18n: file: src/addfeedwidgetbase.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::AddFeedWidgetBase)
@@ -363,74 +378,57 @@ msgstr "រក​មិន​ឃើញ​មតិព័ត៌មាន​ពី
 msgid "Feed found, downloading..."
 msgstr "រក​មតិព័ត៌មាន​ឃើញ​ហើយ ! កំពុង​ទាញយក..."
 
-#: src/tabwidget.cpp:112
+#: src/tabwidget.cpp:111
 msgid "Close the current tab"
 msgstr "បិទ​ផ្ទាំង​បច្ចុប្បន្ន"
 
-#: src/articleformatter.cpp:57
-#, kde-format
-msgid "(%1, %2)"
-msgstr "(%1, %2)"
-
-#: src/articleformatter.cpp:62
-#, kde-format
-msgid "<a href=\"%1\">%2</a> %3"
-msgstr "<a href=\"%1\">%2</a> %3"
-
-#: src/articleformatter.cpp:108 src/articleformatter.cpp:150
+#: src/articleformatter.cpp:86 src/articleformatter.cpp:128
 msgid " (no unread articles)"
 msgstr " (មិន​មាន​អត្ថបទ​ដែល​មិន​ទាន់​អាន​ឡើយ)"
 
-#: src/articleformatter.cpp:110 src/articleformatter.cpp:152
+#: src/articleformatter.cpp:88 src/articleformatter.cpp:130
 #, kde-format
 msgid " (1 unread article)"
 msgid_plural " (%1 unread articles)"
 msgstr[0] " (មិនបាន​អាន​អត្ថបទ %1)"
 
-#: src/articleformatter.cpp:128
+#: src/articleformatter.cpp:106
 #, kde-format
 msgid "<b>Description:</b> %1<br /><br />"
 msgstr "<b>សេចក្ដី​​ពិពណ៌នា ៖</b> %1<br /><br />"
 
-#: src/articleformatter.cpp:135
+#: src/articleformatter.cpp:113
 #, kde-format
 msgid "<b>Homepage:</b> <a href=\"%1\">%2</a>"
 msgstr "<b>គេហទំព័រ ៖</b> <a href=\"%1\">%2</a>"
 
-#: src/articleformatter.cpp:188 src/articleformatter.cpp:189
-#: src/articleformatter.cpp:381 src/articleformatter.cpp:382
+#: src/articleformatter.cpp:165 src/articleformatter.cpp:166
+#: src/articleformatter.cpp:355 src/articleformatter.cpp:356
+#: src/articlemodel.cpp:110
 msgid "Date"
 msgstr "កាលបរិច្ឆេទ"
 
-#: src/articleformatter.cpp:196 src/articleformatter.cpp:197
-#: src/articleformatter.cpp:390 src/articleformatter.cpp:391
+#: src/articleformatter.cpp:173 src/articleformatter.cpp:174
+#: src/articleformatter.cpp:364 src/articleformatter.cpp:365
+#: src/articlemodel.cpp:112
 msgid "Author"
 msgstr "អ្នក​និពន្ធ"
 
-#: src/articleformatter.cpp:204 src/articleformatter.cpp:205
-#: src/articleformatter.cpp:398 src/articleformatter.cpp:399
-msgid "Enclosure"
-msgstr "បិទ​ជិត"
-
-#: src/articleformatter.cpp:236 src/articleformatter.cpp:430
+#: src/articleformatter.cpp:204 src/articleformatter.cpp:396
 msgid "Comments"
 msgstr "មតិយោបល់"
 
-#: src/articleformatter.cpp:245 src/articleformatter.cpp:440
-msgid "Enclosure:"
-msgstr "បិទ​ជិត ៖"
-
-#: src/articleformatter.cpp:259 src/articleformatter.cpp:454
+#: src/articleformatter.cpp:224 src/articleformatter.cpp:416
 msgid "Complete Story"
 msgstr "ខ្លឹមសារ​ទាំងស្រុង"
 
-#: src/akregator_part.cpp:135
+#: src/akregator_part.cpp:132
 #, kde-format
 msgid "Unable to load storage backend plugin \"%1\". No feeds are archived."
 msgstr ""
 "មិន​អាច​ផ្ទុក​កម្មវិធី​ជំនួយ​កម្មវិធី​ផ្ទុក \"%1\" បាន​ឡើយ ។ មិន​មាន​មតិព័ត៌មាន​ត្រូវ​បាន​ទុក​ក្នុង​ប័ណ្ណសារ​ឡើយ ។"
 
-#: src/akregator_part.cpp:135
+#: src/akregator_part.cpp:132
 msgid "Plugin error"
 msgstr "កំហុស​កម្មវិធី​ជំនួយ"
 
@@ -462,7 +460,7 @@ msgstr "រូបរាង KDE"
 msgid "Opening Feed List..."
 msgstr "កំពុង​បើក​បញ្ជី​មតិព័ត៌មាន..."
 
-#: src/akregator_part.cpp:387
+#: src/akregator_part.cpp:388
 #, kde-format
 msgid ""
 "<qt>The standard feed list is corrupted (invalid XML). A backup was created:"
@@ -471,59 +469,46 @@ msgstr ""
 "<qt>បញ្ជី​មតិព័ត៌មាន​ស្តង់ដារ​បាន​ខូច​ហើយ (XML មិន​ត្រឹមត្រូវ) ។ ព័ត៌មាន​បម្រុង​មួយ​ត្រូវ​បាន​បង្កើត​ឡើង ៖"
 "<p><b>%1</b></p></qt>"
 
-#: src/akregator_part.cpp:387 src/akregator_part.cpp:389
+#: src/akregator_part.cpp:388
 msgid "XML Parsing Error"
 msgstr "កំហុស​ក្នុង​ការ​ញែក XML"
 
-#: src/akregator_part.cpp:389
-msgid ""
-"<qt>The standard feed list is corrupted (invalid XML). Could not create a "
-"backup!</p></qt>"
-msgstr ""
-"<qt>បញ្ជី​មតិព័ត៌មាន​ស្តង់ដារ​បាន​ខូច​ហើយ (XML មិន​ត្រឹមត្រូវ) ។ ព័ត៌មាន​បម្រុង​មួយ​ត្រូវ​បាន​បង្កើត​ឡើង ៖</"
-"p></qt>"
-
 #: src/akregator_part.cpp:403
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>The standard feed list is corrupted (invalid XML). A backup was "
+#| "created:<p><b>%1</b></p></qt>"
 msgid ""
-"<qt>The standard feed list is corrupted (no valid OPML). A backup of the "
-"previous list was created:<p><b>%1</b></p></qt>"
+"<qt>The standard feed list is corrupted (no valid OPML). A backup was "
+"created:<p><b>%1</b></p></qt>"
 msgstr ""
-"<qt>បញ្ជី​មតិព័ត៌មាន​ស្តង់ដារ​ខូច​ហើយ (គ្មាន OPML ត្រឹមត្រូវ​ទេ) ។ ការ​បម្រុង​ទុក​របស់​បញ្ជី​ពីមុន​ត្រូវ​បាន​"
-"បង្កើត ​<p><b>%1</b></p></qt>"
+"<qt>បញ្ជី​មតិព័ត៌មាន​ស្តង់ដារ​បាន​ខូច​ហើយ (XML មិន​ត្រឹមត្រូវ) ។ ព័ត៌មាន​បម្រុង​មួយ​ត្រូវ​បាន​បង្កើត​ឡើង ៖"
+"<p><b>%1</b></p></qt>"
 
-#: src/akregator_part.cpp:403 src/akregator_part.cpp:405
-#: src/akregator_part.cpp:511
+#: src/akregator_part.cpp:403 src/akregator_part.cpp:532
 msgid "OPML Parsing Error"
 msgstr "កំហុស​ក្នុង​ការ​ញែក OPML"
 
-#: src/akregator_part.cpp:405
-msgid ""
-"<qt>The standard feed list is corrupted (no valid OPML). Could not create a "
-"backup!></p></qt>"
-msgstr ""
-"<qt>បញ្ជី​មតិព័ត៌មាន​ស្តង់ដារ​ខូច​ហើយ (OPML ត្រឹមត្រូវ​ទេ) ។ មិនអាច​បង្កើត​ការ​បម្រុង​ទុក​បានទេ !></p></"
-"qt>"
-
-#: src/akregator_part.cpp:452
-#, kde-format
-msgid ""
-"Access denied: Cannot save feed list to <b>%1</b>. Please check your "
-"permissions."
+#: src/akregator_part.cpp:442
+#, fuzzy, kde-format
+#| msgid ""
+#| "Access denied: Cannot save feed list to <b>%1</b>. Please check your "
+#| "permissions."
+msgid "Access denied: cannot save feed list (%1)"
 msgstr ""
 "ការ​ចូលដំណើរការ​ត្រូវ​បាន​បដិសេធ ៖ មិន​អាច​រក្សាទុក​បញ្ជី​មតិព័ត៌មាន​ទៅ​កាន់ <b>%1</b> បាន​ទេ ។ សូម​ពិនិត្យ​"
 "មើល​សិទ្ធិ​របស់​អ្នក ។"
 
-#: src/akregator_part.cpp:453
+#: src/akregator_part.cpp:442
 msgid "Write error"
 msgstr "កំហុស​សរសេរ"
 
-#: src/akregator_part.cpp:511
+#: src/akregator_part.cpp:532
 #, kde-format
 msgid "Could not import the file %1 (no valid OPML)"
 msgstr "មិន​អាច​នាំចូល​ឯកសារ %1 បាន​ឡើយ (មិន​មាន OPML ត្រឹមត្រូវ)"
 
-#: src/akregator_part.cpp:514
+#: src/akregator_part.cpp:535
 #, kde-format
 msgid ""
 "The file %1 could not be read, check if it exists or if it is readable for "
@@ -532,34 +517,40 @@ msgstr ""
 "មិន​អាច​អាន​ឯកសារ %1 បាន​ឡើយ ។ សូម​ពិនិត្យមើល​ថា​តើ​មាន​វា​ឬ​ទេ ហើយ​អ្នក​ប្រើ​បច្ចុប្បន្ន​អាច​អាន​វា​បាន​ឬ​"
 "អត់ ។"
 
-#: src/akregator_part.cpp:514
+#: src/akregator_part.cpp:535
 msgid "Read Error"
 msgstr "កំហុស​អាន"
 
-#: src/akregator_part.cpp:528
+#: src/akregator_part.cpp:549
 #, kde-format
 msgid "The file %1 already exists; do you want to overwrite it?"
 msgstr "មាន​ឯកសារ %1 រួច​ហើយ ។ តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ​ទេ ?"
 
-#: src/akregator_part.cpp:529
+#: src/akregator_part.cpp:550
 msgid "Export"
 msgstr "នាំ​ចេញ"
 
-#: src/akregator_part.cpp:535
-#, kde-format
-msgid "Access denied: cannot write to file %1. Please check your permissions."
+#: src/akregator_part.cpp:551
+msgid "Overwrite"
+msgstr ""
+
+#: src/akregator_part.cpp:557
+#, fuzzy, kde-format
+#| msgid ""
+#| "Access denied: cannot write to file %1. Please check your permissions."
+msgid "Access denied: cannot write to file %1"
 msgstr ""
 "ការ​ចូលដំណើរការ​ត្រូវ​បាន​បដិសេធ ៖ មិន​អាច​សរសេរ​ទៅ​ឯកសារ %1 បាន​ឡើយ ។ សូម​ពិនិត្យ​មើល​សិទ្ធិ​របស់​អ្នក ។"
 
-#: src/akregator_part.cpp:535
+#: src/akregator_part.cpp:557
 msgid "Write Error"
 msgstr "កំហុស​សរសេរ"
 
-#: src/akregator_part.cpp:558 src/akregator_part.cpp:568
+#: src/akregator_part.cpp:586 src/akregator_part.cpp:596
 msgid "OPML Outlines (*.opml, *.xml)"
 msgstr "គ្រោង OPML (*.opml, *.xml)"
 
-#: src/akregator_part.cpp:559 src/akregator_part.cpp:569
+#: src/akregator_part.cpp:587 src/akregator_part.cpp:597
 msgid "All Files"
 msgstr "ឯកសារ​ទាំង​អស់"
 
@@ -581,47 +572,46 @@ msgstr ""
 "បាន​បន្ថែម​មតិព័ត៌មាន ៖\n"
 " %1"
 
-#: src/subscriptionlistmodel.cpp:61
+#: src/subscriptionlistmodel.cpp:60
 msgid "Timeout on remote server"
 msgstr "អស់ពេល​នៅ​លើ​ម៉ាស៊ីន​បម្រើ​ពី​ចម្ងាយ"
 
-#: src/subscriptionlistmodel.cpp:63
+#: src/subscriptionlistmodel.cpp:62
 msgid "Unknown host"
 msgstr "មិន​ស្គាល់​ម៉ាស៊ីន"
 
-#: src/subscriptionlistmodel.cpp:65
+#: src/subscriptionlistmodel.cpp:64
 msgid "Feed file not found on remote server"
 msgstr "រក​មិនឃើញ​ឯកសារ​មតិព័ត៌មាន​នៅ​លើ​ម៉ាស៊ីន​បម្រើ​ពី​ចម្ងាយ"
 
-#: src/subscriptionlistmodel.cpp:67
+#: src/subscriptionlistmodel.cpp:66
 msgid "Could not read feed (invalid XML)"
 msgstr "មិន​អាច​អាន​មតិព័ត៌មាន (XML មិនត្រឹមត្រូវ)"
 
-#: src/subscriptionlistmodel.cpp:69
+#: src/subscriptionlistmodel.cpp:68
 msgid "Could not read feed (unknown format)"
 msgstr "មិនអាច​អាន​មតិព័ត៌មាន (មិន​ស្គាល់ទ្រង់ទ្រាយ)"
 
-#: src/subscriptionlistmodel.cpp:71
+#: src/subscriptionlistmodel.cpp:70
 msgid "Could not read feed (invalid feed)"
 msgstr "មិន​អាច​អាន​មតិព័ត៌មាន (មតិ​ព័ត៌មាន​មិន​ត្រឹមត្រូវ)"
 
-#: src/subscriptionlistmodel.cpp:167
+#: src/subscriptionlistmodel.cpp:165
 #, kde-format
 msgid "Could not fetch feed: %1"
 msgstr "មិន​អាច​ទៅ​យក​មតិព័ត៌មាន ៖ %1"
 
-#: src/subscriptionlistmodel.cpp:219
-msgctxt "Feedlist's column header"
-msgid "Feeds"
-msgstr "មតិព័ត៌មាន"
-
-#: src/subscriptionlistmodel.cpp:221
-msgctxt "Feedlist's column header"
+#: src/subscriptionlistmodel.cpp:220 src/searchbar.cpp:98
+#, fuzzy
+#| msgctxt "Feedlist's column header"
+#| msgid "Unread"
 msgid "Unread"
 msgstr "មិន​ទាន់​អាន"
 
-#: src/subscriptionlistmodel.cpp:223
-msgctxt "Feedlist's column header"
+#: src/subscriptionlistmodel.cpp:222
+#, fuzzy
+#| msgctxt "Feedlist's column header"
+#| msgid "Total"
 msgid "Total"
 msgstr "សរុប"
 
@@ -630,7 +620,9 @@ msgid "A KDE Feed Reader"
 msgstr "កម្មវិធី​អាន​មតិព័ត៌មាន​របស់ KDE"
 
 #: src/aboutdata.cpp:36
-msgid "(C) 2004-2008 Akregator developers"
+#, fuzzy
+#| msgid "(C) 2004-2008 Akregator developers"
+msgid "(C) 2004, 2005 Akregator developers"
 msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៤ ២០០8 ដោយ​អ្នក​អភិវឌ្ឍន៍ Akregator"
 
 #: src/aboutdata.cpp:40 configuration/akregator_config_advanced.cpp:53
@@ -755,19 +747,19 @@ msgstr "រក​មិន​ឃើញថត​​ថ្នាំង ឬ​ទ�
 msgid "Cannot move folder %1 to its own subfolder %2"
 msgstr "មិន​អាច​ផ្លាស់ទី​ថត %1 ទៅ​កាន់​ថតរង​ផ្ទាល់​របស់​វា %2 បាន​ទេ"
 
-#: src/actionmanagerimpl.cpp:76 src/actionmanagerimpl.cpp:264
+#: src/actionmanagerimpl.cpp:76 src/actionmanagerimpl.cpp:260
 msgid "&Fetch Feed"
 msgstr "ប្រមូល​មតិ​ព័ត៌មាន"
 
-#: src/actionmanagerimpl.cpp:77 src/actionmanagerimpl.cpp:219
+#: src/actionmanagerimpl.cpp:77 src/actionmanagerimpl.cpp:215
 msgid "&Delete Feed"
 msgstr "លុប​មតិ​ព័ត៌មាន"
 
-#: src/actionmanagerimpl.cpp:78 src/actionmanagerimpl.cpp:225
+#: src/actionmanagerimpl.cpp:78 src/actionmanagerimpl.cpp:221
 msgid "&Edit Feed..."
 msgstr "កែសម្រួល​មតិ​ព័ត៌មាន..."
 
-#: src/actionmanagerimpl.cpp:79 src/actionmanagerimpl.cpp:283
+#: src/actionmanagerimpl.cpp:79 src/actionmanagerimpl.cpp:279
 msgid "&Mark Feed as Read"
 msgstr "សម្គាល់​មតិ​ព័ត៌មាន​ថា​អាន​រួច"
 
@@ -795,53 +787,55 @@ msgstr "នាំចូល​មតិ​ព័ត៌មាន..."
 msgid "&Export Feeds..."
 msgstr "នាំចេញ​មតិ​ព័ត៌មាន..."
 
-#: src/actionmanagerimpl.cpp:180
-msgid "&Configure Akregator..."
+#: src/actionmanagerimpl.cpp:182
+#, fuzzy
+#| msgid "&Configure Akregator..."
+msgid "Configure &Akregator..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ Akregator..."
 
-#: src/actionmanagerimpl.cpp:201
+#: src/actionmanagerimpl.cpp:197
 msgid "&Open Homepage"
 msgstr "បើក​គេហទំព័រ"
 
-#: src/actionmanagerimpl.cpp:207
+#: src/actionmanagerimpl.cpp:203
 msgid "&Add Feed..."
 msgstr "បន្ថែម​មតិ​ព័ត៌មាន..."
 
-#: src/actionmanagerimpl.cpp:213
+#: src/actionmanagerimpl.cpp:209
 msgid "Ne&w Folder..."
 msgstr "ថត​ថ្មី..."
 
-#: src/actionmanagerimpl.cpp:230
+#: src/actionmanagerimpl.cpp:226
 msgid "&View Mode"
 msgstr "របៀប​មើល"
 
-#: src/actionmanagerimpl.cpp:236
+#: src/actionmanagerimpl.cpp:232
 msgid "&Normal View"
 msgstr "ទិដ្ឋភាព​ធម្មតា"
 
-#: src/actionmanagerimpl.cpp:245
+#: src/actionmanagerimpl.cpp:241
 msgid "&Widescreen View"
 msgstr "ទិដ្ឋភាព​អេក្រង់​ធំ"
 
-#: src/actionmanagerimpl.cpp:254
+#: src/actionmanagerimpl.cpp:250
 msgid "C&ombined View"
 msgstr "ទិដ្ឋភាព​ចូល​គ្នា"
 
-#: src/actionmanagerimpl.cpp:270
+#: src/actionmanagerimpl.cpp:266
 msgid "Fe&tch All Feeds"
 msgstr "ប្រមូល​មតិ​ព័ត៌មាន​ទាំងអស់"
 
-#: src/actionmanagerimpl.cpp:276
+#: src/actionmanagerimpl.cpp:272
 msgid "&Abort Fetches"
 msgstr "ឈប់​ប្រមូល"
 
-#: src/actionmanagerimpl.cpp:289
+#: src/actionmanagerimpl.cpp:285
 msgid "Ma&rk All Feeds as Read"
 msgstr "សម្គាល់​មតិ​ព័ត៌មាន​ទាំងអស់​ថា​អាន​រួច"
 
 #. i18n: file: interfaces/akregator.kcfg:9
 #. i18n: ectx: label, entry, group (View)
-#: src/actionmanagerimpl.cpp:295 rc.cpp:149
+#: src/actionmanagerimpl.cpp:291 rc.cpp:146
 msgid "Show Quick Filter"
 msgstr "បង្ហាញ​តម្រង​រហ័ស"
 
@@ -849,7 +843,7 @@ msgstr "បង្ហាញ​តម្រង​រហ័ស"
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:125
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: src/actionmanagerimpl.cpp:301 rc.cpp:433 rc.cpp:448
+#: src/actionmanagerimpl.cpp:297 rc.cpp:427 rc.cpp:442
 msgid "Open in Tab"
 msgstr "បើក​ក្នុង​ផ្ទាំង"
 
@@ -857,150 +851,154 @@ msgstr "បើក​ក្នុង​ផ្ទាំង"
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:135
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: src/actionmanagerimpl.cpp:307 rc.cpp:439 rc.cpp:454
+#: src/actionmanagerimpl.cpp:303 rc.cpp:433 rc.cpp:448
 msgid "Open in External Browser"
 msgstr "បើក​ក្នុង​កម្មវិធី​រុករក​ខាង​ក្រៅ"
 
-#: src/actionmanagerimpl.cpp:312 src/actionmanagerimpl.cpp:519
+#: src/actionmanagerimpl.cpp:308 src/actionmanagerimpl.cpp:515
 msgid "Copy Link Address"
 msgstr "ចម្លង​អាសយដ្ឋាន​តំណ"
 
-#: src/actionmanagerimpl.cpp:316
+#: src/actionmanagerimpl.cpp:312
 msgid "Pre&vious Unread Article"
 msgstr "អត្ថបទ​មិន​ទាន់​អាន​មុន"
 
-#: src/actionmanagerimpl.cpp:321
+#: src/actionmanagerimpl.cpp:317
 msgid "Ne&xt Unread Article"
 msgstr "អត្ថបទ​មិន​ទាន់​អាន​បន្ទាប់"
 
-#: src/actionmanagerimpl.cpp:327
+#: src/actionmanagerimpl.cpp:323
 msgid "&Delete"
 msgstr "លុប"
 
-#: src/actionmanagerimpl.cpp:332
+#: src/actionmanagerimpl.cpp:328
 msgid "&Mark As"
 msgstr "សម្គាល់ថា"
 
-#: src/actionmanagerimpl.cpp:346
+#: src/actionmanagerimpl.cpp:342
 msgctxt "as in: mark as read"
 msgid "&Read"
 msgstr "អាន​រួច"
 
-#: src/actionmanagerimpl.cpp:348
+#: src/actionmanagerimpl.cpp:344
 msgid "Mark selected article as read"
 msgstr "សម្គាល់​អត្ថបទ​ដែល​បាន​ជ្រើស​ថា​អាន​រួច"
 
-#: src/actionmanagerimpl.cpp:354
-msgctxt "as in: mark as new"
+#: src/actionmanagerimpl.cpp:350
+#, fuzzy
+#| msgctxt "as in: mark as new"
+#| msgid "&New"
 msgid "&New"
 msgstr "ថ្មី"
 
-#: src/actionmanagerimpl.cpp:357
+#: src/actionmanagerimpl.cpp:353
 msgid "Mark selected article as new"
 msgstr "សម្គាល់​អត្ថបទ​ដែល​បាន​ជ្រើស​ថា​ជា​អត្ថបទ​ថ្មី"
 
-#: src/actionmanagerimpl.cpp:363
-msgctxt "as in: mark as unread"
+#: src/actionmanagerimpl.cpp:359
+#, fuzzy
+#| msgctxt "as in: mark as unread"
+#| msgid "&Unread"
 msgid "&Unread"
 msgstr "មិន​ទាន់​អាន"
 
-#: src/actionmanagerimpl.cpp:365
+#: src/actionmanagerimpl.cpp:361
 msgid "Mark selected article as unread"
 msgstr "សម្គាល់​អត្ថបទ​ដែល​បាន​ជ្រើស​ថា​មិន​ទាន់​អាន"
 
-#: src/actionmanagerimpl.cpp:371
+#: src/actionmanagerimpl.cpp:367
 msgid "&Mark as Important"
 msgstr "សម្គាល់​ថា​សំខាន់"
 
-#: src/actionmanagerimpl.cpp:374
+#: src/actionmanagerimpl.cpp:370
 msgid "Remove &Important Mark"
 msgstr "យក​សម្គាល់​សំខាន់​ចេញ"
 
-#: src/actionmanagerimpl.cpp:378
+#: src/actionmanagerimpl.cpp:374
 msgid "Move Node Up"
 msgstr "ផ្លាស់ទី​ថ្នាំង​ឡើង​លើ"
 
-#: src/actionmanagerimpl.cpp:383
+#: src/actionmanagerimpl.cpp:379
 msgid "Move Node Down"
 msgstr "ផ្លាស់ទី​ថ្នាំង​ចុះ​ក្រោម"
 
-#: src/actionmanagerimpl.cpp:387 src/actionmanagerimpl.cpp:388
+#: src/actionmanagerimpl.cpp:383 src/actionmanagerimpl.cpp:384
 msgid "Move Node Left"
 msgstr "ផ្លាស់ទី​ថ្នាំង​ទៅ​ឆ្វេង"
 
-#: src/actionmanagerimpl.cpp:393
+#: src/actionmanagerimpl.cpp:389
 msgid "Move Node Right"
 msgstr "ផ្លាស់ទី​ថ្នាំង​ទៅ​ស្ដាំ"
 
-#: src/actionmanagerimpl.cpp:399
+#: src/actionmanagerimpl.cpp:395
 msgid "Send &Link Address..."
 msgstr "ផ្ញើ​អាសយដ្ឋាន​តំណ..."
 
-#: src/actionmanagerimpl.cpp:404
+#: src/actionmanagerimpl.cpp:400
 msgid "Send &File..."
 msgstr "ផ្ញើ​ឯកសារ..."
 
-#: src/actionmanagerimpl.cpp:424
+#: src/actionmanagerimpl.cpp:420
 msgid "&Previous Article"
 msgstr "អត្ថបទ​មុន"
 
-#: src/actionmanagerimpl.cpp:428
+#: src/actionmanagerimpl.cpp:424
 msgid "&Next Article"
 msgstr "អត្ថបទ​បន្ទាប់"
 
-#: src/actionmanagerimpl.cpp:443
+#: src/actionmanagerimpl.cpp:439
 msgid "&Previous Feed"
 msgstr "មតិ​ព័ត៌មាន​មុន"
 
-#: src/actionmanagerimpl.cpp:448
+#: src/actionmanagerimpl.cpp:444
 msgid "&Next Feed"
 msgstr "មតិ​ព័ត៌មាន​បន្ទាប់"
 
-#: src/actionmanagerimpl.cpp:453
+#: src/actionmanagerimpl.cpp:449
 msgid "N&ext Unread Feed"
 msgstr "មតិព័ត៌មាន​មិន​ទាន់​អាន​បន្ទាប់"
 
-#: src/actionmanagerimpl.cpp:458
+#: src/actionmanagerimpl.cpp:454
 msgid "Prev&ious Unread Feed"
 msgstr "មតិព័ត៌មាន​មិន​ទាន់​អាន​មុន"
 
-#: src/actionmanagerimpl.cpp:463
+#: src/actionmanagerimpl.cpp:459
 msgid "Go to Top of Tree"
 msgstr "ទៅ​ខាង​លើ​មែកធាង"
 
-#: src/actionmanagerimpl.cpp:468
+#: src/actionmanagerimpl.cpp:464
 msgid "Go to Bottom of Tree"
 msgstr "ទៅ​ខាង​ក្រោម​មែកធាង"
 
-#: src/actionmanagerimpl.cpp:473
+#: src/actionmanagerimpl.cpp:469
 msgid "Go Left in Tree"
 msgstr "ទៅ​ខាង​ឆ្វេង ក្នុងមែកធាង"
 
-#: src/actionmanagerimpl.cpp:478
+#: src/actionmanagerimpl.cpp:474
 msgid "Go Right in Tree"
 msgstr "ទៅ​ខាង​ស្ដាំ ក្នុងមែកធាង"
 
-#: src/actionmanagerimpl.cpp:483
+#: src/actionmanagerimpl.cpp:479
 msgid "Go Up in Tree"
 msgstr "ឡើង​លើ ក្នុង​មែកធាង"
 
-#: src/actionmanagerimpl.cpp:488
+#: src/actionmanagerimpl.cpp:484
 msgid "Go Down in Tree"
 msgstr "ចុះក្រោម ក្នុង​មែកធាង"
 
-#: src/actionmanagerimpl.cpp:503
+#: src/actionmanagerimpl.cpp:499
 msgid "Select Next Tab"
 msgstr "ជ្រើស​ផ្ទាំង​បន្ទាប់"
 
-#: src/actionmanagerimpl.cpp:508
+#: src/actionmanagerimpl.cpp:504
 msgid "Select Previous Tab"
 msgstr "ជ្រើស​ផ្ទាំង​មុន"
 
-#: src/actionmanagerimpl.cpp:514
+#: src/actionmanagerimpl.cpp:510
 msgid "Detach Tab"
 msgstr "ផ្ដាច់​ផ្ទាំង"
 
-#: src/actionmanagerimpl.cpp:524
+#: src/actionmanagerimpl.cpp:520
 msgid "&Close Tab"
 msgstr "បិទ​ផ្ទាំង"
 
@@ -1030,37 +1028,36 @@ msgid "No Archive"
 msgstr "គ្មានប័ណ្ណសារ"
 
 #: src/articlemodel.cpp:106
-msgctxt "Articlelist's column header"
+#, fuzzy
+#| msgctxt "Articlelist's column header"
+#| msgid "Title"
 msgid "Title"
 msgstr "ចំណង​ជើង"
 
 #: src/articlemodel.cpp:108
-msgctxt "Articlelist's column header"
+#, fuzzy
+#| msgctxt "Articlelist's column header"
+#| msgid "Feed"
 msgid "Feed"
 msgstr "មតិព័ត៌មាន"
 
-#: src/articlemodel.cpp:110
-msgctxt "Articlelist's column header"
-msgid "Date"
-msgstr "កាលបរិច្ឆេទ"
-
-#: src/articlemodel.cpp:112
-msgctxt "Articlelist's column header"
-msgid "Author"
-msgstr "អ្នក​និពន្ធ"
-
-#: src/articlemodel.cpp:114
-msgctxt "Articlelist's column header"
+#. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:41
+#. i18n: ectx: property (text), widget (QTreeWidget, list_readerList)
+#: src/articlemodel.cpp:114 rc.cpp:515
 msgid "Description"
 msgstr "សេចក្ដីពិពណ៌នា"
 
 #: src/articlemodel.cpp:116
-msgctxt "Articlelist's column header"
+#, fuzzy
+#| msgctxt "Articlelist's column header"
+#| msgid "Content"
 msgid "Content"
 msgstr "មាតិកា"
 
 #: src/searchbar.cpp:77
-msgctxt "Title of article searchbar"
+#, fuzzy
+#| msgctxt "Title of article searchbar"
+#| msgid "S&earch:"
 msgid "S&earch:"
 msgstr "ស្វែងរក ៖"
 
@@ -1072,18 +1069,17 @@ msgstr "ស្ថាន​ភាព ៖"
 msgid "All Articles"
 msgstr "អត្ថបទ​ទាំងអស់"
 
-#: src/searchbar.cpp:98
-msgctxt "Unread articles filter"
-msgid "Unread"
-msgstr "មិន​ទាន់​អាន"
-
 #: src/searchbar.cpp:99
-msgctxt "New articles filter"
+#, fuzzy
+#| msgctxt "New articles filter"
+#| msgid "New"
 msgid "New"
 msgstr "ថ្មី"
 
 #: src/searchbar.cpp:100
-msgctxt "Important articles filter"
+#, fuzzy
+#| msgctxt "Important articles filter"
+#| msgid "Important"
 msgid "Important"
 msgstr "សំខាន់"
 
@@ -1095,11 +1091,11 @@ msgstr "បញ្ចូល​ពាក្យ​ដែល​បំបែក​ដ
 msgid "Choose what kind of articles to show in article list"
 msgstr "ជ្រើស​ប្រភេទ​អត្ថបទ ដែល​ត្រូវ​បង្ហាញ​ក្នុង​បញ្ជី​អត្ថបទ"
 
-#: src/mainwindow.cpp:99
+#: src/mainwindow.cpp:130
 msgid "Could not find the Akregator part; please check your installation."
 msgstr "មិន​អាច​រកឃើញ​ផ្នែក​របស់ Akregator ឡើយ ។ សូម​ពិនិត្យ​មើល​ការ​ដំឡើង​របស់​អ្នក ។"
 
-#: src/mainwindow.cpp:222
+#: src/mainwindow.cpp:262
 msgid ""
 "<qt><p>Closing the main window will keep Akregator running in the system "
 "tray. Use 'Quit' from the 'File' menu to quit the application.</"
@@ -1109,17 +1105,9 @@ msgstr ""
 "ដើម្បី​ចេញ​ពី​កម្មវិធី ។</p><p><center><img source=\"systray_shot\" /></center></p></"
 "qt>"
 
-#: src/mainwindow.cpp:222 src/mainwindow.cpp:224
+#: src/mainwindow.cpp:262
 msgid "Docking in System Tray"
 msgstr "ចត​ក្នុង​ថាស​ប្រព័ន្ធ"
-
-#: src/mainwindow.cpp:224
-msgid ""
-"<qt><p>Closing the main window will keep Akregator running in the system "
-"tray. Use 'Quit' from the 'File' menu to quit the application.</p></qt>"
-msgstr ""
-"<qt><p>ការ​បិទ​បង្អួច​មេ​នឹង​ទុក​ឲ្យ​ Akregator រត់​នៅ​ក្នុង​ថាស​ប្រព័ន្ធ ។ ប្រើ​ 'ចេញ' ពី​ម៉ឺនុយ 'ឯកសារ' "
-"ដើម្បី​ចាកចេញ​ពី​កម្មវិធី ។</p></qt>"
 
 #: src/feedlist.cpp:166
 msgid "All Feeds"
@@ -1197,7 +1185,7 @@ msgstr "ទៅ"
 #. i18n: ectx: Menu (file)
 #. i18n: file: plugins/onlinesync/akregator_onlinesync_plugin.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:8 rc.cpp:542
+#: rc.cpp:8 rc.cpp:536
 msgid "&File"
 msgstr "ឯកសារ"
 
@@ -1231,35 +1219,33 @@ msgstr "មតិព័ត៌មាន"
 msgid "&Article"
 msgstr "អត្ថបទ"
 
-#. i18n: file: src/akregator_shell.rc:36
+#. i18n: file: src/akregator_shell.rc:35
 #. i18n: ectx: Menu (settings)
-#. i18n: file: src/akregator_part.rc:73
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:26 rc.cpp:137
+#: rc.cpp:26
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
-#. i18n: file: src/akregator_shell.rc:47
+#. i18n: file: src/akregator_shell.rc:48
 #. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: src/akregator_part.rc:83
+#. i18n: file: src/akregator_part.rc:82
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:29 rc.cpp:140
+#: rc.cpp:29 rc.cpp:137
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
-#. i18n: file: src/akregator_shell.rc:51
+#. i18n: file: src/akregator_shell.rc:52
 #. i18n: ectx: ToolBar (browserToolBar)
-#. i18n: file: src/akregator_part.rc:93
+#. i18n: file: src/akregator_part.rc:92
 #. i18n: ectx: ToolBar (browserToolBar)
-#: rc.cpp:32 rc.cpp:143
+#: rc.cpp:32 rc.cpp:140
 msgid "Browser Toolbar"
 msgstr "របារ​ឧបករណ៍​​កម្មវិធី​រុករក"
 
-#. i18n: file: src/akregator_shell.rc:54
+#. i18n: file: src/akregator_shell.rc:55
 #. i18n: ectx: ToolBar (textToSpeechToolBar)
-#. i18n: file: src/akregator_part.rc:101
+#. i18n: file: src/akregator_part.rc:100
 #. i18n: ectx: ToolBar (textToSpeechToolBar)
-#: rc.cpp:35 rc.cpp:146
+#: rc.cpp:35 rc.cpp:143
 msgid "Speech Toolbar"
 msgstr "របារ​ឧបករណ៍​សំដី"
 
@@ -1369,7 +1355,7 @@ msgstr "កំណត់​ប័ណ្ណសារ​ត្រឹម ៖"
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sb_maxArticleNumber)
 #. i18n: file: configuration/settings_archive.ui:70
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, kcfg_MaxArticleNumber)
-#: rc.cpp:95 rc.cpp:485
+#: rc.cpp:95 rc.cpp:479
 msgid "1 article"
 msgstr "១ អត្ថបទ"
 
@@ -1377,7 +1363,7 @@ msgstr "១ អត្ថបទ"
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sb_maxArticleNumber)
 #. i18n: file: configuration/settings_archive.ui:73
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_MaxArticleNumber)
-#: rc.cpp:98 rc.cpp:488
+#: rc.cpp:98 rc.cpp:482
 msgid " articles"
 msgstr " អត្ថបទ"
 
@@ -1391,7 +1377,7 @@ msgstr "លុប​អត្ថបទ​ដែល​ចាស់​ជាង �
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sb_maxArticleAge)
 #. i18n: file: configuration/settings_archive.ui:106
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, kcfg_MaxArticleAge)
-#: rc.cpp:104 rc.cpp:494
+#: rc.cpp:104 rc.cpp:488
 msgid "1 day"
 msgstr "១ ថ្ងៃ"
 
@@ -1399,7 +1385,7 @@ msgstr "១ ថ្ងៃ"
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sb_maxArticleAge)
 #. i18n: file: configuration/settings_archive.ui:109
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, kcfg_MaxArticleAge)
-#: rc.cpp:107 rc.cpp:497
+#: rc.cpp:107 rc.cpp:491
 msgid " days"
 msgstr " ថ្ងៃ"
 
@@ -1435,157 +1421,157 @@ msgstr "មតិព័ត៌មាន"
 
 #. i18n: file: interfaces/akregator.kcfg:10
 #. i18n: ectx: whatsthis, entry, group (View)
-#: rc.cpp:152
+#: rc.cpp:149
 msgid "Show Quick Filter Bar"
 msgstr "បង្ហាញ​របារ​តម្រង​រហ័ស"
 
 #. i18n: file: interfaces/akregator.kcfg:14
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:155
+#: rc.cpp:152
 msgid "Status Filter"
 msgstr "តម្រង​ស្ថានភាព"
 
 #. i18n: file: interfaces/akregator.kcfg:15
 #. i18n: ectx: whatsthis, entry, group (View)
-#: rc.cpp:158
+#: rc.cpp:155
 msgid "Stores the last status filter setting"
 msgstr "ទុក​ការ​កំណត់​តម្រង​ស្ថានភាព​ចុងក្រោយ"
 
 #. i18n: file: interfaces/akregator.kcfg:19
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:161
+#: rc.cpp:158
 msgid "Text Filter"
 msgstr "តម្រង​អត្ថបទ"
 
 #. i18n: file: interfaces/akregator.kcfg:20
 #. i18n: ectx: whatsthis, entry, group (View)
-#: rc.cpp:164
+#: rc.cpp:161
 msgid "Stores the last search line text"
 msgstr "ទុក​អត្ថបទ​បន្ទាត់​ស្វែងរក​ចុងក្រោយ"
 
 #. i18n: file: interfaces/akregator.kcfg:23
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:167
+#: rc.cpp:164
 msgid "View Mode"
 msgstr "របៀប​មើល"
 
 #. i18n: file: interfaces/akregator.kcfg:24
 #. i18n: ectx: whatsthis, entry, group (View)
-#: rc.cpp:170
+#: rc.cpp:167
 msgid "Article display mode."
 msgstr "របៀប​បង្ហាញ​អត្ថបទ ។"
 
 #. i18n: file: interfaces/akregator.kcfg:28
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:173
+#: rc.cpp:170
 msgid "Sizes for first splitter"
 msgstr "ទំហំ​សម្រាប់​កម្មវិធីបំបែក​ដំបូង"
 
 #. i18n: file: interfaces/akregator.kcfg:29
 #. i18n: ectx: whatsthis, entry, group (View)
-#: rc.cpp:176
+#: rc.cpp:173
 msgid "First (usually vertical) splitter widget sizes."
 msgstr "ទី ១ (តាម​ធម្មតា​បញ្ឈរ) កម្មវិធី​បំបែក​ទំហំ​ធាតុ​ក្រាហ្វិក ។"
 
 #. i18n: file: interfaces/akregator.kcfg:33
 #. i18n: ectx: label, entry, group (View)
-#: rc.cpp:179
+#: rc.cpp:176
 msgid "Sizes for second splitter"
 msgstr "ទំហំ​សម្រាប់​កម្មវិធី​បំបែក​វិនាទី"
 
 #. i18n: file: interfaces/akregator.kcfg:34
 #. i18n: ectx: whatsthis, entry, group (View)
-#: rc.cpp:182
+#: rc.cpp:179
 msgid "Second (usually horizontal) splitter widget sizes."
 msgstr "ទី ២ (តាមធម្មតា​ផ្ដេក) កម្មវិធី​បំបែក​ទំហំ​ធាតុ​ក្រាហ្វិក ។"
 
-#. i18n: file: interfaces/akregator.kcfg:64
+#. i18n: file: interfaces/akregator.kcfg:66
 #. i18n: ectx: label, entry, group (Archive)
-#: rc.cpp:185
+#: rc.cpp:182
 msgid "Archive Mode"
 msgstr "របៀប​ប័ណ្ណសារ"
 
-#. i18n: file: interfaces/akregator.kcfg:68
+#. i18n: file: interfaces/akregator.kcfg:70
 #. i18n: ectx: label, entry, group (Archive)
-#: rc.cpp:188
+#: rc.cpp:185
 msgid "Keep All Articles"
 msgstr "ទុក​អត្ថបទ​ទាំងអស់"
 
-#. i18n: file: interfaces/akregator.kcfg:69
+#. i18n: file: interfaces/akregator.kcfg:71
 #. i18n: ectx: whatsthis, entry, group (Archive)
-#: rc.cpp:191
+#: rc.cpp:188
 msgid "Save an unlimited number of articles."
 msgstr "រក្សាទុក​ចំនួន​អត្ថបទ​ដែលគ្មាន​ដែន​កំណត់ ។"
 
-#. i18n: file: interfaces/akregator.kcfg:72
+#. i18n: file: interfaces/akregator.kcfg:74
 #. i18n: ectx: label, entry, group (Archive)
-#: rc.cpp:194
+#: rc.cpp:191
 msgid "Limit Number of Articles"
 msgstr "ដែន​កំណត់​​ចំនួន​អត្ថបទ"
 
-#. i18n: file: interfaces/akregator.kcfg:73
+#. i18n: file: interfaces/akregator.kcfg:75
 #. i18n: ectx: whatsthis, entry, group (Archive)
-#: rc.cpp:197
+#: rc.cpp:194
 msgid "Limit the number of articles in a feed"
 msgstr "ដែន​កំណត់​ចំនួន​អត្ថបទ​នៅ​ក្នុង​មតិព័ត៌មាន"
 
-#. i18n: file: interfaces/akregator.kcfg:76
+#. i18n: file: interfaces/akregator.kcfg:78
 #. i18n: ectx: label, entry, group (Archive)
-#: rc.cpp:200
+#: rc.cpp:197
 msgid "Delete Expired Articles"
 msgstr "លុប​អត្ថបទ​ដែល​ផុត​កំណត់​ទាំងអស់"
 
-#. i18n: file: interfaces/akregator.kcfg:77
+#. i18n: file: interfaces/akregator.kcfg:79
 #. i18n: ectx: whatsthis, entry, group (Archive)
-#: rc.cpp:203
+#: rc.cpp:200
 msgid "Delete expired articles"
 msgstr "លុប​អត្ថបទ​ដែល​ផុត​កំណត់​"
 
-#. i18n: file: interfaces/akregator.kcfg:80
+#. i18n: file: interfaces/akregator.kcfg:82
 #. i18n: ectx: label, entry, group (Archive)
-#: rc.cpp:206
+#: rc.cpp:203
 msgid "Disable Archiving"
 msgstr "មិន​អនុញ្ញាត​ការ​ទុក​ក្នុង​ប័ណ្ណសារ"
 
-#. i18n: file: interfaces/akregator.kcfg:81
+#. i18n: file: interfaces/akregator.kcfg:83
 #. i18n: ectx: whatsthis, entry, group (Archive)
-#: rc.cpp:209
+#: rc.cpp:206
 msgid "Do not save any articles"
 msgstr "កុំ​រក្សាទុក​អត្ថបទ"
 
-#. i18n: file: interfaces/akregator.kcfg:86
+#. i18n: file: interfaces/akregator.kcfg:88
 #. i18n: ectx: label, entry, group (Archive)
-#: rc.cpp:212
+#: rc.cpp:209
 msgid "Expiry Age"
 msgstr "អាយុ​ផុត​កំណត់"
 
-#. i18n: file: interfaces/akregator.kcfg:87
+#. i18n: file: interfaces/akregator.kcfg:89
 #. i18n: ectx: whatsthis, entry, group (Archive)
-#: rc.cpp:215
+#: rc.cpp:212
 msgid "Default expiry age for articles in days."
 msgstr "អាយុ​ផុត​កំណត់​លំនាំដើម​សម្រាប់​អត្ថបទ​គិត​ជា​ថ្ងៃ ។"
 
-#. i18n: file: interfaces/akregator.kcfg:91
+#. i18n: file: interfaces/akregator.kcfg:93
 #. i18n: ectx: label, entry, group (Archive)
-#: rc.cpp:218
+#: rc.cpp:215
 msgid "Article Limit"
 msgstr "ដែន​កំណត់​អត្ថបទ"
 
-#. i18n: file: interfaces/akregator.kcfg:92
+#. i18n: file: interfaces/akregator.kcfg:94
 #. i18n: ectx: whatsthis, entry, group (Archive)
-#: rc.cpp:221
+#: rc.cpp:218
 msgid "Number of articles to keep per feed."
 msgstr "ចំនួន​អត្ថបទ​ដើម្បី​ទុក​ក្នុង​មួយ​មតិព័ត៌មាន ។"
 
-#. i18n: file: interfaces/akregator.kcfg:96
+#. i18n: file: interfaces/akregator.kcfg:98
 #. i18n: ectx: label, entry, group (Archive)
-#: rc.cpp:224
+#: rc.cpp:221
 msgid "Do Not Expire Important Articles"
 msgstr "កុំ​ធ្វើ​ឲ្យ​អត្ថបទ​សំខាន់​ផុត​កំណត់"
 
-#. i18n: file: interfaces/akregator.kcfg:97
+#. i18n: file: interfaces/akregator.kcfg:99
 #. i18n: ectx: whatsthis, entry, group (Archive)
-#: rc.cpp:227
+#: rc.cpp:224
 msgid ""
 "When this option is enabled, articles you marked as important will not be "
 "removed when limit the archive size by either age or number of the articles."
@@ -1593,27 +1579,27 @@ msgstr ""
 "នៅពេល​ជម្រើស​នេះ​ត្រូវ​បាន​បើក អត្ថបទ​ដែល​អ្នក​សម្គាល់​ថា​សំខាន់​នឹង​មិន​ត្រូវ​បានយកចេញ​ទេ នៅពេល​ដែល​កំណត់​ទំហំ​"
 "ទុក​ជា​ប័ណ្ណសារ​​ទាំង​អាយុ ឬ​ចំនួន​អត្ថបទ ។"
 
-#. i18n: file: interfaces/akregator.kcfg:103
+#. i18n: file: interfaces/akregator.kcfg:105
 #. i18n: ectx: label, entry, group (Network)
-#: rc.cpp:230
+#: rc.cpp:227
 msgid "Concurrent Fetches"
 msgstr "ការប្រមូល​ដំណាល​គ្នា"
 
-#. i18n: file: interfaces/akregator.kcfg:104
+#. i18n: file: interfaces/akregator.kcfg:106
 #. i18n: ectx: whatsthis, entry, group (Network)
-#: rc.cpp:233
+#: rc.cpp:230
 msgid "Number of concurrent fetches"
 msgstr "ចំនួន​ទៅយក​មតិព័ត៌មាន​ដែល​កើតឡើង​ដំណាល​គ្នា"
 
-#. i18n: file: interfaces/akregator.kcfg:108
+#. i18n: file: interfaces/akregator.kcfg:110
 #. i18n: ectx: label, entry, group (Network)
-#: rc.cpp:236
+#: rc.cpp:233
 msgid "Use HTML Cache"
 msgstr "ប្រើ​ឃ្លាំ​ងសម្ងាត់​របស់ HTML"
 
-#. i18n: file: interfaces/akregator.kcfg:109
+#. i18n: file: interfaces/akregator.kcfg:111
 #. i18n: ectx: whatsthis, entry, group (Network)
-#: rc.cpp:239
+#: rc.cpp:236
 msgid ""
 "Use the KDE-wide HTML cache settings when downloading feeds, to avoid "
 "unnecessary traffic. Disable only when necessary."
@@ -1621,9 +1607,9 @@ msgstr ""
 "ប្រើ​ការ​កំណត់​ឃ្លាំ​ងសម្ងាត់ HTML ទូទាំង​ KDE នៅពេល​ទាញយក​មតិព័ត៌មាន ដើម្បី​ជៀសវាង​ចរាចរណ៍​ដែល​"
 "មិនចាំបាច់ ។ បិទ​តែ​នៅ​ពេល​ដែល​ចាំបាច់ ។"
 
-#. i18n: file: interfaces/akregator.kcfg:113
+#. i18n: file: interfaces/akregator.kcfg:115
 #. i18n: ectx: whatsthis, entry, group (Network)
-#: rc.cpp:242
+#: rc.cpp:239
 msgid ""
 "This option allows user to specify custom user-agent string instead of using "
 "the default one. This is here because some proxies may interrupt the "
@@ -1632,159 +1618,161 @@ msgstr ""
 "ជម្រើស​​នេះ​អនុញ្ញាត​ឲ្យ​អ្នក​ប្រើ​បញ្ជាក់​ខ្សែអក្សរ​ភ្នាក់ងារ​អ្នក​ប្រើ​ផ្ទាល់ខ្លួន ជំនួស​ឲ្យ​ការ​ប្រើ​ខ្សែអក្សរ​លំនាំ​"
 "ដើម ។ វា​នៅ​ទីនេះ ពីព្រោះ​ប្រូកស៊ី​មួយ​ចំនួន​អាច​ផ្អាក​ការ​តភ្ជាប់​ ដោយ​សារ​តែ \"gator\" នៅ​ក្នុង​ឈ្មោះ ។"
 
-#. i18n: file: interfaces/akregator.kcfg:119
+#. i18n: file: interfaces/akregator.kcfg:121
 #. i18n: ectx: label, entry, group (General)
-#: rc.cpp:245
+#: rc.cpp:242
 msgid "Fetch on startup"
 msgstr "ប្រមូល​យក​ពេល​ចាប់ផ្ដើម"
 
-#. i18n: file: interfaces/akregator.kcfg:120
+#. i18n: file: interfaces/akregator.kcfg:122
 #. i18n: ectx: whatsthis, entry, group (General)
-#: rc.cpp:248
+#: rc.cpp:245
 msgid "Fetch feedlist on startup."
 msgstr "ទៅ​យក​បញ្ជី​មតិ​ព័ត៌មាន​នៅ​ពេល​ចាប់ផ្ដើម ។"
 
-#. i18n: file: interfaces/akregator.kcfg:124
+#. i18n: file: interfaces/akregator.kcfg:126
 #. i18n: ectx: label, entry, group (General)
-#: rc.cpp:251
+#: rc.cpp:248
 msgid "Mark all feeds as read on startup"
 msgstr "សម្គាល់​មតិព័ត៌មាន​ទាំងអស់​ថា​បានអាន​រួចពេល​ចាប់ផ្ដើម"
 
-#. i18n: file: interfaces/akregator.kcfg:125
+#. i18n: file: interfaces/akregator.kcfg:127
 #. i18n: ectx: whatsthis, entry, group (General)
-#: rc.cpp:254
+#: rc.cpp:251
 msgid "Mark all feeds as read on startup."
 msgstr "សម្គាល់​មតិព័ត៌មាន​ទាំងអស់​ថា​​បាន​អាន​នៅ​ពេល​ចាប់ផ្ដើម ។"
 
-#. i18n: file: interfaces/akregator.kcfg:129
+#. i18n: file: interfaces/akregator.kcfg:131
 #. i18n: ectx: label, entry, group (General)
-#: rc.cpp:257
+#: rc.cpp:254
 msgid "Use interval fetching"
 msgstr "ប្រើ​កា​រទៅ​យក​ចន្លោះពេល"
 
-#. i18n: file: interfaces/akregator.kcfg:130
+#. i18n: file: interfaces/akregator.kcfg:132
 #. i18n: ectx: whatsthis, entry, group (General)
-#: rc.cpp:261
+#: rc.cpp:258
 #, no-c-format, kde-format
 msgid "Fetch all feeds every %1 minutes."
 msgstr "ទៅ​យក​មតិព័ត៌មាន​ទាំងអស់​រៀងរាល់ %1 នាទី ។"
 
-#. i18n: file: interfaces/akregator.kcfg:134
+#. i18n: file: interfaces/akregator.kcfg:136
 #. i18n: ectx: label, entry, group (General)
-#: rc.cpp:264
+#: rc.cpp:261
 msgid "Interval for autofetching"
 msgstr "ចន្លោះពេល​សម្រាប់​ការ​ទៅ​យក​ស្វ័យប្រវត្តិ"
 
-#. i18n: file: interfaces/akregator.kcfg:135
+#. i18n: file: interfaces/akregator.kcfg:137
 #. i18n: ectx: whatsthis, entry, group (General)
-#: rc.cpp:267
+#: rc.cpp:264
 msgid "Interval for autofetching in minutes."
 msgstr "ចន្លោះ​សម្រាប់​ទៅ​យក​ដោយ​ស្វ័យប្រវត្តិ​គិត​ជា​នាទី ។"
 
-#. i18n: file: interfaces/akregator.kcfg:139
+#. i18n: file: interfaces/akregator.kcfg:141
 #. i18n: ectx: label, entry, group (General)
-#: rc.cpp:270
+#: rc.cpp:267
 msgid "Use notifications"
 msgstr "ប្រើ​ការ​ជូនដំណឹង"
 
-#. i18n: file: interfaces/akregator.kcfg:140
+#. i18n: file: interfaces/akregator.kcfg:142
 #. i18n: ectx: whatsthis, entry, group (General)
-#: rc.cpp:273
+#: rc.cpp:270
 msgid "Specifies if the balloon notifications are used or not."
 msgstr "បញ្ជាក់​ប្រសិន​បើ​ការ​ជូនដំណឹង​ប៉េងប៉ោង​ត្រូវ​បានប្រើ ឬ​អត់ ។"
 
-#. i18n: file: interfaces/akregator.kcfg:144
+#. i18n: file: interfaces/akregator.kcfg:146
 #. i18n: ectx: label, entry, group (General)
-#: rc.cpp:276
+#: rc.cpp:273
 msgid "Show tray icon"
 msgstr "បង្ហាញ​រូបតំណាង​ថាស​ប្រព័ន្ធ"
 
-#. i18n: file: interfaces/akregator.kcfg:145
+#. i18n: file: interfaces/akregator.kcfg:147
 #. i18n: ectx: whatsthis, entry, group (General)
-#: rc.cpp:279
+#: rc.cpp:276
 msgid "Specifies if the tray icon is shown or not."
 msgstr "បញ្ជាក់ ប្រសិន​បើ​រូបតំណាង​ថាស​ប្រព័ន្ធ​ត្រូវ​បាន​បង្ហាញ​ ឬ​អត់ ។"
 
-#. i18n: file: interfaces/akregator.kcfg:151
+#. i18n: file: interfaces/akregator.kcfg:153
 #. i18n: ectx: label, entry, group (Browser)
-#: rc.cpp:282
+#: rc.cpp:279
 msgid "Show close buttons on tabs"
 msgstr "បង្ហាញ​ប៊ូតុង​បិទ​នៅ​លើ​ផ្ទាំង"
 
-#. i18n: file: interfaces/akregator.kcfg:152
+#. i18n: file: interfaces/akregator.kcfg:154
 #. i18n: ectx: whatsthis, entry, group (Browser)
-#: rc.cpp:285
+#: rc.cpp:282
 msgid "Show close buttons on tabs instead of icons"
 msgstr "បង្ហាញ​ប៊ូតុង​បិទ​នៅ​លើ​ផ្ទាំង​ជំនួយ​ឲ្យ​នៅ​លើ​រូបតំណាង"
 
-#. i18n: file: interfaces/akregator.kcfg:157
+#. i18n: file: interfaces/akregator.kcfg:159
 #. i18n: ectx: label, entry, group (Browser)
-#: rc.cpp:288
+#. i18n: file: configuration/settings_browser.ui:174
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseKdeDefault)
+#: rc.cpp:285 rc.cpp:461
 msgid "Use default KDE web browser"
 msgstr "ប្រើ​កម្មវិធី​រុករក​បណ្ដាញ​របស់ KDE លំនាំដើម"
 
-#. i18n: file: interfaces/akregator.kcfg:158
+#. i18n: file: interfaces/akregator.kcfg:160
 #. i18n: ectx: whatsthis, entry, group (Browser)
-#: rc.cpp:291
+#: rc.cpp:288
 msgid "Use KDE web browser when opening in external browser."
 msgstr "ប្រើ​កម្មវិធីរុករក​បណ្ដាញ​របស់ KDE នៅ​ពេល​បើក​កម្មវិធី​រុករក​ខា​ងក្រៅ ។"
 
-#. i18n: file: interfaces/akregator.kcfg:162
+#. i18n: file: interfaces/akregator.kcfg:164
 #. i18n: ectx: label, entry, group (Browser)
 #. i18n: file: configuration/settings_browser.ui:167
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseCustomCommand)
-#: rc.cpp:294 rc.cpp:464
+#: rc.cpp:291 rc.cpp:458
 msgid "Use this command:"
 msgstr "ប្រើ​ពាក្យ​បញ្ជា​នេះ ៖"
 
-#. i18n: file: interfaces/akregator.kcfg:163
+#. i18n: file: interfaces/akregator.kcfg:165
 #. i18n: ectx: whatsthis, entry, group (Browser)
-#: rc.cpp:297
+#: rc.cpp:294
 msgid "Use the specified command when opening in external browser."
 msgstr "ប្រើ​ពាក្យ​បញ្ជា​ដែល​បា​ន​បញ្ជាក់ នៅពេល​បើក​កម្មវិធីរុករក​ខា​ងក្រៅ ។"
 
-#. i18n: file: interfaces/akregator.kcfg:167
+#. i18n: file: interfaces/akregator.kcfg:169
 #. i18n: ectx: whatsthis, entry, group (Browser)
-#: rc.cpp:301
+#: rc.cpp:298
 #, no-c-format
 msgid "Command to launch external browser.  URL will substitute for %u."
 msgstr "ពាក្យ​បញ្ជា​ត្រូវ​ចាប់ផ្ដើម​កម្មវិធី​រុករក​ខា​ងក្រៅ ។  URL នឹង​ជំនួស​សម្រាប់ %u ។"
 
-#. i18n: file: interfaces/akregator.kcfg:171
+#. i18n: file: interfaces/akregator.kcfg:173
 #. i18n: ectx: whatsthis, entry, group (Browser)
-#: rc.cpp:304
+#: rc.cpp:301
 msgid "What the click with left mouse button should do."
 msgstr "តើ​ចុច​ប៊ូតុង​កណ្ដុរ​ឆ្វេង​គួរ​ធ្វើ​អ្វី ។"
 
-#. i18n: file: interfaces/akregator.kcfg:180
+#. i18n: file: interfaces/akregator.kcfg:182
 #. i18n: ectx: whatsthis, entry, group (Browser)
-#: rc.cpp:307
+#: rc.cpp:304
 msgid "What the click with middle mouse button should do."
 msgstr "តើ​ចុច​ប៊ូតុង​កណ្ដុរ​កណ្ដាល​គួរ​ឲ្យ​ធ្វើ​អ្វី ។"
 
-#. i18n: file: interfaces/akregator.kcfg:205
+#. i18n: file: interfaces/akregator.kcfg:207
 #. i18n: ectx: label, entry, group (Advanced)
-#: rc.cpp:310
+#: rc.cpp:307
 msgid "Archive Backend"
 msgstr "ប័ណ្ណសារ​ផ្នែក​ខាង​ក្រោយ"
 
-#. i18n: file: interfaces/akregator.kcfg:209
+#. i18n: file: interfaces/akregator.kcfg:211
 #. i18n: ectx: whatsthis, entry (UseMarkReadDelay), group (Advanced)
-#: rc.cpp:313
+#: rc.cpp:310
 msgid "Whether to delay before marking an article as read upon selecting it."
 msgstr "ថាតើ​ត្រូវ​ពន្យារ​មុននឹង​សម្គាល់​អត្ថបទ​ថា​បាន​អាន​រួច​នៅ​ពេល​ជ្រើ​សវា​ឬទេ ។"
 
-#. i18n: file: interfaces/akregator.kcfg:213
+#. i18n: file: interfaces/akregator.kcfg:215
 #. i18n: ectx: whatsthis, entry (MarkReadDelay), group (Advanced)
-#: rc.cpp:316
+#: rc.cpp:313
 msgid ""
 "Configurable delay between selecting an article and it being marked as read."
 msgstr ""
 "ការ​ពន្យារពេល​ដែលអាច​កំណត់​រចនាសម្ព័ន្ធ​បាន រវាង​ការ​ជ្រើស​អត្ថបទ និង​វា​កំពុង​ត្រូវ​បាន​សម្គាល់​ថា​អាន​រួច ។"
 
-#. i18n: file: interfaces/akregator.kcfg:217
+#. i18n: file: interfaces/akregator.kcfg:219
 #. i18n: ectx: whatsthis, entry, group (Advanced)
-#: rc.cpp:319
+#: rc.cpp:316
 msgid "Resets the quick filter when changing feeds."
 msgstr "កំណត់​តម្រង​រហ័ស​ នៅពេលផ្លាស់ប្ដូរ​មតិព័ត៌មាន ។"
 
@@ -1792,219 +1780,213 @@ msgstr "កំណត់​តម្រង​រហ័ស​ នៅពេលផ�
 #. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::SettingsGeneral)
 #. i18n: file: configuration/settings_appearance.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::SettingsAppearance)
-#: rc.cpp:322 rc.cpp:364
+#: rc.cpp:319 rc.cpp:361
 msgid "General"
 msgstr "ទូទៅ"
 
 #. i18n: file: configuration/settings_general.ui:54
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:325
+#: rc.cpp:322
 msgid "Global"
 msgstr "សកល"
 
 #. i18n: file: configuration/settings_general.ui:78
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowTrayIcon)
-#: rc.cpp:328
+#: rc.cpp:325
 msgid "Show tra&y icon"
 msgstr "បង្ហាញ​រូបតំណាង​ថាស​ប្រព័ន្ធ"
 
 #. i18n: file: configuration/settings_general.ui:101
 #. i18n: ectx: property (text), widget (QLabel, autoFetchIntervalLabel)
-#: rc.cpp:331
+#: rc.cpp:328
 msgid "Fetch feeds every:"
 msgstr "ប្រមូល​មតិ​ព័ត៌មាន​រៀងរាល់ ៖"
 
 #. i18n: file: configuration/settings_general.ui:111
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_UseNotifications)
-#: rc.cpp:334
+#: rc.cpp:331
 msgid "Select this if you want to get notified when there are new articles."
 msgstr "ជ្រើស​វា ប្រសិន​បើ​អ្នក​ចង់​ឲ្យជូន​ដំណឹង​ នៅពេល​មាន​អត្ថបទថ្មី ។"
 
 #. i18n: file: configuration/settings_general.ui:114
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseNotifications)
-#: rc.cpp:337
+#: rc.cpp:334
 msgid "Use &notifications for all feeds"
 msgstr "ប្រើ​ការ​ជូនដំណឹង​សម្រាប់​មតិព័ត៌មាន​ទាំងអស់"
 
 #. i18n: file: configuration/settings_general.ui:121
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseIntervalFetch)
-#: rc.cpp:340
+#: rc.cpp:337
 msgid "&Use interval fetching"
 msgstr "ប្រើ​ការ​ទៅយក​ចន្លោះពេល"
 
 #. i18n: file: configuration/settings_general.ui:131
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_AutoFetchInterval)
-#: rc.cpp:343
+#: rc.cpp:340
 msgid "1 minute"
 msgstr "១ នាទី"
 
 #. i18n: file: configuration/settings_general.ui:134
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_AutoFetchInterval)
-#: rc.cpp:346
+#: rc.cpp:343
 msgid " minutes"
 msgstr " នាទី"
 
 #. i18n: file: configuration/settings_general.ui:153
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:349
+#: rc.cpp:346
 msgid "Startup"
 msgstr "ចាប់ផ្ដើម"
 
 #. i18n: file: configuration/settings_general.ui:177
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FetchOnStartup)
-#: rc.cpp:352
+#: rc.cpp:349
 msgid "Fetch all fee&ds on startup"
 msgstr "ទៅ​យក​មតិព័ត៌មាន​ទាំងអស់​ពេល​ចាប់ផ្ដើម"
 
 #. i18n: file: configuration/settings_general.ui:184
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_MarkAllFeedsReadOnStartup)
-#: rc.cpp:355
+#: rc.cpp:352
 msgid "Mark &all feeds as read on startup"
 msgstr "សម្គាល់​មតិ​ព័ត៌មាន​ទាំងអស់​ថា​អាន​រួច​នៅ​ពេល​ចាប់ផ្ដើម"
 
 #. i18n: file: configuration/settings_general.ui:194
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:358
+#: rc.cpp:355
 msgid "Network"
 msgstr "បណ្ដាញ"
 
 #. i18n: file: configuration/settings_general.ui:218
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseHTMLCache)
-#: rc.cpp:361
+#: rc.cpp:358
 msgid "Use the &browser cache (less network traffic)"
 msgstr "ប្រើ​ឃ្លាំង​សម្ងាត់​កម្មវិធី​រុករក (ចរាចរណ៍​បណ្ដាញ​តិច)"
 
 #. i18n: file: configuration/settings_appearance.ui:38
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:367
+#: rc.cpp:364
 msgid "Article List Colors"
 msgstr "ពណ៌​បញ្ជី​អត្ថបទ"
 
 #. i18n: file: configuration/settings_appearance.ui:98
 #. i18n: ectx: property (text), widget (QLabel, lbl_newArticles)
-#: rc.cpp:370
+#: rc.cpp:367
 msgid "New articles:"
 msgstr "អត្ថបទ​ថ្មី ៖"
 
 #. i18n: file: configuration/settings_appearance.ui:122
 #. i18n: ectx: property (text), widget (QLabel, lbl_unreadArticles)
-#: rc.cpp:373
+#: rc.cpp:370
 msgid "Unread articles:"
 msgstr "អត្ថបទ​មិនទាន់​អាន ៖"
 
 #. i18n: file: configuration/settings_appearance.ui:131
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseCustomColors)
-#: rc.cpp:376
+#: rc.cpp:373
 msgid "Use custom colors"
 msgstr "ប្រើ​ពណ៌​ផ្ទាល់ខ្លួន"
 
 #. i18n: file: configuration/settings_appearance.ui:141
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:379
+#: rc.cpp:376
 msgid "Font Size"
 msgstr "​ទំហំ​ពុម្ពអក្សរ"
 
 #. i18n: file: configuration/settings_appearance.ui:255
 #. i18n: ectx: property (text), widget (QLabel, lbl_MinimumFontSize)
-#: rc.cpp:382
+#: rc.cpp:379
 msgid "Minimum font size:"
 msgstr "ទំហំ​ពុម្ពអក្សរ​អប្បបរមា ៖"
 
 #. i18n: file: configuration/settings_appearance.ui:262
 #. i18n: ectx: property (text), widget (QLabel, lbl_MediumFontSize)
-#: rc.cpp:385
+#: rc.cpp:382
 msgid "Medium font size:"
 msgstr "ទំហំ​ពុម្ពអក្សរ​មធ្យម ៖"
 
 #. i18n: file: configuration/settings_appearance.ui:272
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:388
+#: rc.cpp:385
 msgid "Fonts"
 msgstr "ពុម្ពអក្សរ"
 
 #. i18n: file: configuration/settings_appearance.ui:313
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:391
+#: rc.cpp:388
 msgid "Standard font:"
 msgstr "ពុម្ពអក្សរ​ស្តង់ដារ ៖"
 
 #. i18n: file: configuration/settings_appearance.ui:320
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: rc.cpp:394
+#: rc.cpp:391
 msgid "Fixed font:"
 msgstr "ពុម្ពអក្សរ​ថេរ ៖"
 
 #. i18n: file: configuration/settings_appearance.ui:327
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:397
+#: rc.cpp:394
 msgid "Serif font:"
 msgstr "ពុម្ពអក្សរ​មាន​ជាយ ៖"
 
 #. i18n: file: configuration/settings_appearance.ui:334
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:400
+#: rc.cpp:397
 msgid "Sans serif font:"
 msgstr "ពុម្ពអក្សរ​គ្មានជាយ ៖"
 
 #. i18n: file: configuration/settings_appearance.ui:393
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UnderlineLinks)
-#: rc.cpp:403
+#: rc.cpp:400
 msgid "&Underline links"
 msgstr "គូស​បន្ទាត់​ក្រោម​តំណ"
 
-#. i18n: file: configuration/settings_advancedbase.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: file: configuration/settings_archive.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::SettingsArchive)
-#: rc.cpp:406 rc.cpp:470
-msgid "Archive"
-msgstr "ប័ណ្ណសារ"
-
-#. i18n: file: configuration/settings_advancedbase.ui:28
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:409
-msgid "Archive backend:"
-msgstr "ប័ណ្ណសារ​កម្មវិធី​ខាង​ក្រោយ ៖"
-
-#. i18n: file: configuration/settings_advancedbase.ui:38
-#. i18n: ectx: property (text), widget (QPushButton, pbBackendConfigure)
-#: rc.cpp:412
-msgid "&Configure..."
-msgstr "កំណត់​រចនាសម្ព័ន្ធ..."
-
-#. i18n: file: configuration/settings_advancedbase.ui:50
+#. i18n: file: configuration/settings_advancedbase.ui:25
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:415
+#: rc.cpp:403
 msgid "Article List"
 msgstr "បញ្ជី​អត្ថបទ"
 
-#. i18n: file: configuration/settings_advancedbase.ui:58
+#. i18n: file: configuration/settings_advancedbase.ui:45
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseMarkReadDelay)
-#: rc.cpp:418
+#: rc.cpp:406
 msgid "Mar&k selected article read after"
 msgstr "សម្គាល់​អត្ថបទ​ដែល​បាន​ជ្រើស​ថា​អាន​រួច​បន្ទាប់​ពី"
 
-#. i18n: file: configuration/settings_advancedbase.ui:71
+#. i18n: file: configuration/settings_advancedbase.ui:58
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_MarkReadDelay)
-#: rc.cpp:421
+#: rc.cpp:409
 msgid " sec"
 msgstr " វិ."
 
-#. i18n: file: configuration/settings_advancedbase.ui:99
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ResetQuickFilterOnNodeChange)
-#: rc.cpp:424
-msgid "Reset search bar when changing feeds"
-msgstr "កំណត់​របារ​ស្វែងរក​នៅពេល​ផ្លាស់ប្ដូរ​មតិព័ត៌មាន"
+#. i18n: file: configuration/settings_advancedbase.ui:89
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: file: configuration/settings_archive.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::SettingsArchive)
+#: rc.cpp:412 rc.cpp:464
+msgid "Archive"
+msgstr "ប័ណ្ណសារ"
+
+#. i18n: file: configuration/settings_advancedbase.ui:109
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:415
+msgid "Archive backend:"
+msgstr "ប័ណ្ណសារ​កម្មវិធី​ខាង​ក្រោយ ៖"
+
+#. i18n: file: configuration/settings_advancedbase.ui:119
+#. i18n: ectx: property (text), widget (QPushButton, pbBackendConfigure)
+#: rc.cpp:418
+msgid "&Configure..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ..."
 
 #. i18n: file: configuration/settings_browser.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, Akregator::SettingsBrowser)
-#: rc.cpp:427
+#: rc.cpp:421
 msgid "ExternalBrowser"
 msgstr "កម្មវិធី​រុករក​ខាង​ក្រៅ"
 
 #. i18n: file: configuration/settings_browser.ui:28
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CloseButtonOnTabs)
-#: rc.cpp:430
+#: rc.cpp:424
 msgid "Show tab close button on hover"
 msgstr "បង្ហាញ​ប៊ូតុង​បិទ​ផ្ទាំង​នៅ​ពេល​ដាក់​កណ្ដុរ​លើ"
 
@@ -2012,202 +1994,190 @@ msgstr "បង្ហាញ​ប៊ូតុង​បិទ​ផ្ទាំង
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_LMBBehaviour)
 #. i18n: file: configuration/settings_browser.ui:130
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MMBBehaviour)
-#: rc.cpp:436 rc.cpp:451
+#: rc.cpp:430 rc.cpp:445
 msgid "Open in Background Tab"
 msgstr "បើក​ក្នុង​ផ្ទាំង​ផ្ទៃខាង​ក្រោយ"
 
 #. i18n: file: configuration/settings_browser.ui:94
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:442
+#: rc.cpp:436
 msgid "Middle mouse click:"
 msgstr "ចុច​កណ្ដុរ​កណ្ដាល ៖"
 
 #. i18n: file: configuration/settings_browser.ui:109
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:445
+#: rc.cpp:439
 msgid "Left mouse click:"
 msgstr "ចុច​កណ្ដុរ​ឆ្វេង ៖"
 
 #. i18n: file: configuration/settings_browser.ui:145
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:457
+#: rc.cpp:451
 msgid "For External Browsing"
 msgstr "សម្រាប់ការ​រុករក​ខាង​ក្រៅ"
 
 #. i18n: file: configuration/settings_browser.ui:160
 #. i18n: ectx: property (text), widget (QLineEdit, kcfg_ExternalBrowserCustomCommand)
-#: rc.cpp:461
+#: rc.cpp:455
 #, no-c-format
 msgid "firefox %u"
 msgstr "firefox %u"
 
-#. i18n: file: configuration/settings_browser.ui:174
-#. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExternalBrowserUseKdeDefault)
-#: rc.cpp:467
-msgid "Use default web browser"
-msgstr "ប្រើ​កម្មវិធី​រុករក​បណ្ដាញ​លំនាំដើម"
-
 #. i18n: file: configuration/settings_archive.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:473
+#: rc.cpp:467
 msgid "Default Archive Settings"
 msgstr "​ការ​កំណត់​ប័ណ្ណសារ​លំនាំដើម"
 
 #. i18n: file: configuration/settings_archive.ui:38
 #. i18n: ectx: property (text), widget (QRadioButton, rb_DisableArchiving)
-#: rc.cpp:476
+#: rc.cpp:470
 msgid "Disable archiving"
 msgstr "មិន​អនុញ្ញាត​ការ​ទុក​ក្នុង​ប័ណ្ណសារ"
 
 #. i18n: file: configuration/settings_archive.ui:45
 #. i18n: ectx: property (text), widget (QRadioButton, rb_KeepAllArticles)
-#: rc.cpp:479
+#: rc.cpp:473
 msgid "Keep all articles"
 msgstr "ទុក​អត្ថបទ​ទាំងអស់"
 
 #. i18n: file: configuration/settings_archive.ui:60
 #. i18n: ectx: property (text), widget (QRadioButton, rb_LimitArticleNumber)
-#: rc.cpp:482
+#: rc.cpp:476
 msgid "Limit feed archive size to:"
 msgstr "កំណត់​ទំហំ​ប័ណ្ណសារ​មតិព័ត៌មាន​ទៅ ៖"
 
 #. i18n: file: configuration/settings_archive.ui:96
 #. i18n: ectx: property (text), widget (QRadioButton, rb_LimitArticleAge)
-#: rc.cpp:491
+#: rc.cpp:485
 msgid "Delete articles older than: "
 msgstr "លុប​អត្ថបទ​ចាស់ជាង ៖ "
 
 #. i18n: file: configuration/settings_archive.ui:127
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_DoNotExpireImportantArticles)
-#: rc.cpp:500
+#: rc.cpp:494
 msgid "Do not expire important articles"
 msgstr "កុំ​ធ្វើ​ឲ្យ​អត្ថបទ​សំខាន់​ៗ​ផុត​កំណត់"
 
 #. i18n: file: plugins/onlinesync/ui/configurationdialogadd.ui:27
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:503
+#: rc.cpp:497
 msgid "Type:"
 msgstr "ប្រភេទ ៖"
 
 #. i18n: file: plugins/onlinesync/ui/configurationdialogadd.ui:52
 #. i18n: ectx: property (text), widget (QLabel, lAccountGoogleReader)
-#: rc.cpp:506
+#: rc.cpp:500
 msgid "Login:"
 msgstr "ចូល ៖"
 
 #. i18n: file: plugins/onlinesync/ui/configurationdialogadd.ui:69
 #. i18n: ectx: property (text), widget (QLabel, lPasswordGoogleReader)
-#: rc.cpp:509
+#: rc.cpp:503
 msgid "Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
 #. i18n: file: plugins/onlinesync/ui/configurationdialogadd.ui:87
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:512
+#: rc.cpp:506
 msgid "File:"
 msgstr "ឯកសារ ៖"
 
 #. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:18
 #. i18n: ectx: property (text), widget (QLabel, lConfigName)
-#: rc.cpp:515
+#: rc.cpp:509
 msgid "Online reader accounts:"
 msgstr "គណនី​កម្មវិធី​អាន​លើ​បណ្ដាញ ៖"
 
 #. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:36
 #. i18n: ectx: property (text), widget (QTreeWidget, list_readerList)
-#: rc.cpp:518
+#: rc.cpp:512
 msgid "Type"
 msgstr "ប្រភេទ"
 
-#. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:41
-#. i18n: ectx: property (text), widget (QTreeWidget, list_readerList)
-#: rc.cpp:521
-msgid "Description"
-msgstr "សេចក្ដីពិពណ៌នា"
-
 #. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:51
 #. i18n: ectx: property (text), widget (QPushButton, b_add)
-#: rc.cpp:524
+#: rc.cpp:518
 msgid "Add..."
 msgstr "បន្ថែម..."
 
 #. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:58
 #. i18n: ectx: property (text), widget (QPushButton, b_update)
-#: rc.cpp:527
+#: rc.cpp:521
 msgid "Modify..."
 msgstr "កែប្រែ..."
 
 #. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:65
 #. i18n: ectx: property (text), widget (QPushButton, b_remove)
-#: rc.cpp:530
+#: rc.cpp:524
 msgid "Remove"
 msgstr "យកចេញ"
 
 #. i18n: file: plugins/onlinesync/ui/configurationwidget.ui:94
 #. i18n: ectx: property (text), widget (QLabel, lDeletePolicy)
-#: rc.cpp:533
+#: rc.cpp:527
 msgid "Delete feeds"
 msgstr "លុប​មតិព័ត៌មាន"
 
 #. i18n: file: plugins/onlinesync/onlinesyncsettings.kcfg:9
 #. i18n: ectx: label, entry, group (Foo)
-#: rc.cpp:536
+#: rc.cpp:530
 msgid "Bar Settings"
 msgstr "ការ​​កំណត់​របារ"
 
 #. i18n: file: plugins/onlinesync/onlinesyncsettings.kcfg:10
 #. i18n: ectx: whatsthis, entry, group (Foo)
-#: rc.cpp:539
+#: rc.cpp:533
 msgid "Bar!"
 msgstr "របារ !"
 
-#: plugins/onlinesync/ui/configurationwidget.cpp:43
+#: plugins/onlinesync/ui/configurationwidget.cpp:19
 msgid "Nothing"
 msgstr "គ្មាន​អ្វី​ទេ"
 
-#: plugins/onlinesync/ui/configurationwidget.cpp:44
+#: plugins/onlinesync/ui/configurationwidget.cpp:20
 msgid "Categories"
 msgstr "ប្រភេទ"
 
-#: plugins/onlinesync/ui/configurationwidget.cpp:46
+#: plugins/onlinesync/ui/configurationwidget.cpp:22
 msgid "Ask"
 msgstr "សួរ"
 
-#: plugins/onlinesync/ui/configurationdialog.cpp:37
+#: plugins/onlinesync/ui/configurationdialog.cpp:13
 msgid "Online Reader Configuration"
 msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​អាន​លើ​បណ្ដាញ"
 
-#: plugins/onlinesync/ui/configurationdialogadd.cpp:43
+#: plugins/onlinesync/ui/configurationdialogadd.cpp:19
 msgid "Modify Online Reader Account"
 msgstr "កែប្រែ​គណនី​កម្មវិធី​អាន​លើ​បណ្ដាញ"
 
-#: plugins/onlinesync/ui/configurationdialogadd.cpp:44
+#: plugins/onlinesync/ui/configurationdialogadd.cpp:20
 msgid "Google Reader"
 msgstr "កម្មវិធី​អាន Google"
 
-#: plugins/onlinesync/sync/googlereader.cpp:275
+#: plugins/onlinesync/sync/googlereader.cpp:265
 msgid "Authentication failed, synchronization aborted."
 msgstr "ការ​ផ្ទៀងផ្ទាត់​បានបរាជ័យ ការ​ធ្វើសមកាលកម្ម​បាន​បោះបង់ ។"
 
-#: plugins/onlinesync/sync/feedsync.cpp:161
+#: plugins/onlinesync/sync/feedsync.cpp:137
 msgid ""
 "Some categories and feeds have been marked for removal. Do you want to "
 "delete them?"
 msgstr "ប្រភេទ​​ និង​មតិព័ត៌មាន​មួយ​ចំនួន​ត្រូ​វបាន​សម្គាល់​សម្រាប់​ការ​យក​ចេញ ។ តើ​អ្នក​ចង់​លុប​ពួកវា​ឬ ?"
 
-#: plugins/onlinesync/sync/feedsync.cpp:163
+#: plugins/onlinesync/sync/feedsync.cpp:139
 msgid "Remove nothing"
 msgstr "មិនយក​អ្វី​ចេញ​ទេ"
 
-#: plugins/onlinesync/sync/feedsync.cpp:164
+#: plugins/onlinesync/sync/feedsync.cpp:140
 msgid "Remove only categories"
 msgstr "យក​តែ​ប្រភេទ​ចេញ​ប៉ុណ្ណោះ"
 
-#: plugins/onlinesync/sync/feedsync.cpp:165
+#: plugins/onlinesync/sync/feedsync.cpp:141
 msgid "Remove feeds"
 msgstr "យក​មតិព័ត៌មាន​ចេញ"
 
-#: plugins/onlinesync/sync/feedsync.cpp:217
+#: plugins/onlinesync/sync/feedsync.cpp:193
 msgid "An error occurred, synchronization aborted."
 msgstr "កំហុស​មួយ​បាន​កើតឡើង កា​រធ្វើ​សមកាលកម្ម​ត្រូវ​បានបោះបង់"
 
@@ -2248,3 +2218,69 @@ msgstr "គ្រប់គ្រង..."
 #: plugins/mk4storage/storagefactorymk4impl.cpp:48
 msgid "Metakit"
 msgstr "Metakit"
+
+#~ msgid "(%1, %2)"
+#~ msgstr "(%1, %2)"
+
+#~ msgid "<a href=\"%1\">%2</a> %3"
+#~ msgstr "<a href=\"%1\">%2</a> %3"
+
+#~ msgid "Enclosure"
+#~ msgstr "បិទ​ជិត"
+
+#~ msgid "Enclosure:"
+#~ msgstr "បិទ​ជិត ៖"
+
+#~ msgid ""
+#~ "<qt>The standard feed list is corrupted (invalid XML). Could not create a "
+#~ "backup!</p></qt>"
+#~ msgstr ""
+#~ "<qt>បញ្ជី​មតិព័ត៌មាន​ស្តង់ដារ​បាន​ខូច​ហើយ (XML មិន​ត្រឹមត្រូវ) ។ ព័ត៌មាន​បម្រុង​មួយ​ត្រូវ​បាន​បង្កើត​ឡើង ៖"
+#~ "</p></qt>"
+
+#~ msgid ""
+#~ "<qt>The standard feed list is corrupted (no valid OPML). A backup of the "
+#~ "previous list was created:<p><b>%1</b></p></qt>"
+#~ msgstr ""
+#~ "<qt>បញ្ជី​មតិព័ត៌មាន​ស្តង់ដារ​ខូច​ហើយ (គ្មាន OPML ត្រឹមត្រូវ​ទេ) ។ ការ​បម្រុង​ទុក​របស់​បញ្ជី​ពីមុន​ត្រូវ​បាន​"
+#~ "បង្កើត ​<p><b>%1</b></p></qt>"
+
+#~ msgid ""
+#~ "<qt>The standard feed list is corrupted (no valid OPML). Could not create "
+#~ "a backup!></p></qt>"
+#~ msgstr ""
+#~ "<qt>បញ្ជី​មតិព័ត៌មាន​ស្តង់ដារ​ខូច​ហើយ (OPML ត្រឹមត្រូវ​ទេ) ។ មិនអាច​បង្កើត​ការ​បម្រុង​ទុក​បានទេ !></"
+#~ "p></qt>"
+
+#~ msgctxt "Feedlist's column header"
+#~ msgid "Feeds"
+#~ msgstr "មតិព័ត៌មាន"
+
+#~ msgctxt "Articlelist's column header"
+#~ msgid "Date"
+#~ msgstr "កាលបរិច្ឆេទ"
+
+#~ msgctxt "Articlelist's column header"
+#~ msgid "Author"
+#~ msgstr "អ្នក​និពន្ធ"
+
+#~ msgctxt "Articlelist's column header"
+#~ msgid "Description"
+#~ msgstr "សេចក្ដីពិពណ៌នា"
+
+#~ msgctxt "Unread articles filter"
+#~ msgid "Unread"
+#~ msgstr "មិន​ទាន់​អាន"
+
+#~ msgid ""
+#~ "<qt><p>Closing the main window will keep Akregator running in the system "
+#~ "tray. Use 'Quit' from the 'File' menu to quit the application.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>ការ​បិទ​បង្អួច​មេ​នឹង​ទុក​ឲ្យ​ Akregator រត់​នៅ​ក្នុង​ថាស​ប្រព័ន្ធ ។ ប្រើ​ 'ចេញ' ពី​ម៉ឺនុយ "
+#~ "'ឯកសារ' ដើម្បី​ចាកចេញ​ពី​កម្មវិធី ។</p></qt>"
+
+#~ msgid "Reset search bar when changing feeds"
+#~ msgstr "កំណត់​របារ​ស្វែងរក​នៅពេល​ផ្លាស់ប្ដូរ​មតិព័ត៌មាន"
+
+#~ msgid "Use default web browser"
+#~ msgstr "ប្រើ​កម្មវិធី​រុករក​បណ្ដាញ​លំនាំដើម"
