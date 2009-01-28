@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-04 10:30+0100\n"
+"POT-Creation-Date: 2009-01-28 09:16+0100\n"
 "PO-Revision-Date: 2008-11-25 10:29+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -34,7 +34,7 @@ msgstr "អស់ពេល​បង្កើត​ធាតុ​ភ្នាក
 msgid "Unable to create agent instance."
 msgstr "មិន​អាច​បង្កើត​ធាតុ​ភ្នាក់ងារ ។"
 
-#: agentinstancemodel.cpp:175 collectionmodel.cpp:174
+#: agentinstancemodel.cpp:175 collectionmodel_p.h:51
 msgctxt "@title:column, name of a thing"
 msgid "Name"
 msgstr "ឈ្មោះ"
@@ -64,6 +64,16 @@ msgstr[0] "វត្ថុ %1"
 msgid "No such collection."
 msgstr "គ្មាន​ការ​ប៉ះទង្គិច​បែបនេះ ។"
 
+#: collectionrequester.cpp:74
+msgid "Open collection dialog"
+msgstr ""
+
+#: collectionrequester.cpp:134
+#, fuzzy
+#| msgid "No such collection."
+msgid "no collection"
+msgstr "គ្មាន​ការ​ប៉ះទង្គិច​បែបនេះ ។"
+
 #: collectionstatisticsmodel.cpp:144
 msgctxt "@title:column, number of unread messages"
 msgid "Unread"
@@ -74,23 +84,23 @@ msgctxt "@title:column, total number of messages"
 msgid "Total"
 msgstr "សរុប"
 
-#: collectionview.cpp:219
+#: collectionview.cpp:214
 msgid "&Move here"
 msgstr "ផ្លាស់ទិ​នៅ​ទីនេះ"
 
-#: collectionview.cpp:220
+#: collectionview.cpp:215
 msgid "&Copy here"
 msgstr "ចម្លង​ទីនេះ"
 
-#: collectionview.cpp:222
+#: collectionview.cpp:217
 msgid "Cancel"
 msgstr "បោះបង់"
 
-#: control.cpp:207
+#: control.cpp:214
 msgid "Starting Akonadi server..."
 msgstr "កំពុង​ចាប់ផ្ដើម​ម៉ាស៊ីន​បម្រើ Akonadi​..."
 
-#: control.cpp:213
+#: control.cpp:220
 msgid "Stopping Akonadi server..."
 msgstr "កំពុង​បញ្ឈប់​ម៉ាស៊ីនបម្រើ Akonadi​..."
 
@@ -337,27 +347,27 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
 
-#: resourcebase.cpp:199
+#: resourcebase.cpp:204
 msgctxt "@title, application name"
 msgid "Akonadi Resource"
 msgstr "ធនធាន​របស់ Akonadi"
 
-#: resourcebase.cpp:200
+#: resourcebase.cpp:205
 msgctxt "@title, application description"
 msgid "Akonadi Resource"
 msgstr "ធនធាន​របស់ Akonadi"
 
-#: resourcebase.cpp:204
+#: resourcebase.cpp:209
 msgctxt "@label, commandline option"
 msgid "Resource identifier"
 msgstr "ឧបករណ៍​កំណត់​អត្តសញ្ញាណ​ធនធាន"
 
-#: resourcebase.cpp:283
+#: resourcebase.cpp:326
 msgctxt "@info"
 msgid "Cannot fetch item in offline mode."
 msgstr "មិនអាច​ទៅ​យក​ធាតុ​នៅ​ក្នុង​របៀប​ក្រៅបណ្ដាញ​បាន​ទេ ។"
 
-#: resourcebase.cpp:356
+#: resourcebase.cpp:399
 #, kde-format
 msgctxt "@info:status"
 msgid "Syncing collection '%1'"
@@ -960,6 +970,10 @@ msgstr "ធ្វើសមកាលកម្ម..."
 msgctxt "@info:status"
 msgid "Error!"
 msgstr "កំហុស !"
+
+#: qtest_akonadi.h:44
+msgid "KDE Test Program"
+msgstr ""
 
 #~ msgid "TextLabel"
 #~ msgstr "ស្លាក​អត្ថបទ"
