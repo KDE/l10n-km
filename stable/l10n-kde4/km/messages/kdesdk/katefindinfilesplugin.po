@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katefindinfilesplugin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:24+0100\n"
+"POT-Creation-Date: 2009-01-29 07:20+0100\n"
 "PO-Revision-Date: 2008-12-19 10:20+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -18,11 +18,11 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
 
-#: katefindinfiles.cpp:60 kategrepdialog.cpp:54
+#: katefinddialog.cpp:50 kateresultview.cpp:51
 msgid "Find in Files"
 msgstr "រក​ក្នុង​ឯកសារ"
 
-#: kategrepdialog.cpp:82
+#: katefinddialog.cpp:80
 msgid ""
 "<p>Enter the expression you want to search for here.</p><p>If 'regular "
 "expression' is unchecked, any non-space letters in your expression will be "
@@ -56,7 +56,7 @@ msgstr ""
 "ប្រើ​បាន​តាមរយៈ​ការ​ជូន​ដំណឹង​ <code>\\#</code> ។</p><p>មើលឯកសារ​អំពី grep(1) សម្រាប់​ឯកសារ​"
 "ពេញលេញ ។</p>"
 
-#: kategrepdialog.cpp:104
+#: katefinddialog.cpp:102
 msgid ""
 "Enter the file name pattern of the files to search here.\n"
 "You may give several patterns separated by commas."
@@ -64,20 +64,51 @@ msgstr ""
 "បញ្ចូល​លំនាំ​ឈ្មោះ​ឯកសារ​របស់​ឯកសារត្រូវ​​ស្វែងរក​នៅ​ទីនេះ ។\n"
 "អ្នក​អាច​នឹង​ផ្ដល់​លំនាំ​ច្រើន ដែល​បំបែក​ដោយ​ក្បៀស ។"
 
-#: kategrepdialog.cpp:106
+#: katefinddialog.cpp:104
 msgid "Enter the folder which contains the files in which you want to search."
 msgstr "បញ្ចូល​ថត​ដែល​មាន​ឯកសារ ដែល​អ្នក​ចង់​ស្វែង​រក ។"
 
-#: kategrepdialog.cpp:107
+#: katefinddialog.cpp:105
 msgid "Check this box to search in all subfolders."
 msgstr "ធីក​ប្រអប់​នេះ ដើម្បី​ស្វែងរក​ក្នុង​ថត​រង​ទាំងអស់ ។"
 
-#: kategrepdialog.cpp:108
+#: katefinddialog.cpp:106
 msgid ""
 "If this option is enabled (the default), the search will be case sensitive."
 msgstr "បើ​ជម្រើស​នេះ​ត្រូវបាន​​អនុញ្ញាត (លំនាំដើម) នោះ​ការ​ស្វែងរក​នឹង​ប្រកាន់​តួអក្សរ​តូច​ធំ ។"
 
-#: kategrepdialog.cpp:109
+#: katefinddialog.cpp:143
+msgid "You must enter an existing local folder in the 'Folder' entry."
+msgstr "អ្នក​ត្រូវ​តែ​បញ្ចូល​ថត​មូលដ្ឋាន​ដែល​មាន​ស្រាប់​មួយ​ក្នុង​ធាតុ 'ថត' ។"
+
+#: katefinddialog.cpp:144
+msgid "Invalid Folder"
+msgstr "ថត​មិន​ត្រឹមត្រូវ"
+
+#: katefindinfiles.cpp:43
+msgid "Find In Files"
+msgstr "រក​ក្នុង​ឯកសារ"
+
+#: katefindinfiles.cpp:43
+msgid "search through files in the filesystem"
+msgstr "ស្វែងរក​តាមរយៈ​ឯកសារ​នៅ​ក្នុង​ប្រព័ន្ធ​​ឯកសារ"
+
+#: katefindinfiles.cpp:120
+msgid "&Find in Files..."
+msgstr "រក​ក្នុង​ឯកសារ..."
+
+#: kateresultview.cpp:53
+#, kde-format
+msgid "Find in Files %1"
+msgstr "រក​ក្នុង​ឯកសារ %1"
+
+#. i18n: file: resultwidget.ui:110
+#. i18n: ectx: property (text), widget (KPushButton, btnRefine)
+#: kateresultview.cpp:66 rc.cpp:42
+msgid "Refine Search..."
+msgstr "សម្អាត​ការ​ស្វែងរក..."
+
+#: kateresultview.cpp:72
 msgid ""
 "The results of the grep run are listed here. Select a\n"
 "filename/line number combination and press Enter or doubleclick\n"
@@ -87,111 +118,109 @@ msgstr ""
 "បន្សំ​ឈ្មោះ​ឯកសារ ឬ​លេខ​បន្ទាត់ ហើយ​ចុច គ្រាប់ចុច​បញ្ចូល (Enter) ឬ​ចុច​ទ្វេដង\n"
 "លើ​វត្ថុ ដើម្បី​បង្ហាញ​បន្ទាត់​រៀងៗ​ខ្លួន​ក្នុង​កម្មវិធី​និពន្ធ ។"
 
-#: kategrepdialog.cpp:122
-msgid "Click to close the current search results."
-msgstr ""
-
-#: kategrepdialog.cpp:252
-msgid "You must enter an existing local folder in the 'Folder' entry."
-msgstr "អ្នក​ត្រូវ​តែ​បញ្ចូល​ថត​មូលដ្ឋាន​ដែល​មាន​ស្រាប់​មួយ​ក្នុង​ធាតុ 'ថត' ។"
-
-#: kategrepdialog.cpp:253
-msgid "Invalid Folder"
-msgstr "ថត​មិន​ត្រឹមត្រូវ"
-
-#: kategrepdialog.cpp:273
-msgid "File"
-msgstr "ឯកសារ"
-
-#: kategrepdialog.cpp:273
-msgid "Line"
-msgstr "បន្ទាត់"
-
-#: kategrepdialog.cpp:273
-msgid "Text"
-msgstr "អត្ថបទ"
-
-#. i18n: file: findwidget.ui:30
-#. i18n: ectx: property (text), widget (QLabel, lblFolder)
+#. i18n: file: findwidget.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, gbFind)
 #: rc.cpp:3
-msgid "Folder:"
-msgstr "ថត ៖"
+msgid "Find"
+msgstr "រក"
 
-#. i18n: file: findwidget.ui:43
-#. i18n: ectx: property (text), widget (QCheckBox, cbCasesensitive)
-#: rc.cpp:6
-msgid "Case sensitive"
-msgstr "ប្រកាន់​តួ​អក្សរ​តូច​ធំ"
-
-#. i18n: file: findwidget.ui:50
-#. i18n: ectx: property (text), widget (QCheckBox, cbRecursive)
-#: rc.cpp:9
-#, fuzzy
-#| msgid "Recursive search"
-msgid "Recursive"
-msgstr "ស្វែងរក​ដោយ​ហៅ​ខ្លួនឯង"
-
-#. i18n: file: findwidget.ui:57
-#. i18n: ectx: property (text), widget (QLabel, lblFiles)
-#: rc.cpp:12
-#, fuzzy
-#| msgid "File"
-msgid "Files:"
-msgstr "ឯកសារ"
-
-#. i18n: file: findwidget.ui:124
-#. i18n: ectx: property (toolTip), widget (QToolButton, btnSync)
-#: rc.cpp:15
-msgid "Use the current document's path."
-msgstr "ប្រើ​ផ្លូវ​របស់​ឯកសារ​បច្ចុប្បន្ន ។"
-
-#. i18n: file: findwidget.ui:162
+#. i18n: file: findwidget.ui:22
 #. i18n: ectx: property (text), widget (QLabel, lblPattern)
-#: rc.cpp:18
+#: rc.cpp:6
 msgid "Pattern:"
 msgstr "លំនាំ ៖"
 
-#~ msgid "Find In Files"
-#~ msgstr "រក​ក្នុង​ឯកសារ"
+#. i18n: file: findwidget.ui:48
+#. i18n: ectx: property (text), widget (QLabel, lblFolder)
+#: rc.cpp:9
+msgid "Folder:"
+msgstr "ថត ៖"
 
-#~ msgid "search through files in the filesystem"
-#~ msgstr "ស្វែងរក​តាមរយៈ​ឯកសារ​នៅ​ក្នុង​ប្រព័ន្ធ​​ឯកសារ"
+#. i18n: file: findwidget.ui:79
+#. i18n: ectx: property (toolTip), widget (QToolButton, btnSync)
+#: rc.cpp:12
+msgid "Use the current document's path."
+msgstr "ប្រើ​ផ្លូវ​របស់​ឯកសារ​បច្ចុប្បន្ន ។"
 
-#~ msgid "&Find in Files..."
-#~ msgstr "រក​ក្នុង​ឯកសារ..."
+#. i18n: file: findwidget.ui:91
+#. i18n: ectx: property (text), widget (QLabel, lblFiles)
+#: rc.cpp:15
+msgid "Filter:"
+msgstr "តម្រង ៖"
 
-#~ msgid "Find in Files %1"
-#~ msgstr "រក​ក្នុង​ឯកសារ %1"
+#. i18n: file: findwidget.ui:120
+#. i18n: ectx: property (title), widget (QGroupBox, gbOptions)
+#: rc.cpp:18
+msgid "Options"
+msgstr "ជម្រើស"
 
-#~ msgid "Refine Search..."
-#~ msgstr "សម្អាត​ការ​ស្វែងរក..."
+#. i18n: file: findwidget.ui:126
+#. i18n: ectx: property (text), widget (QCheckBox, chkCaseSensitive)
+#: rc.cpp:21
+msgid "Case sensitive"
+msgstr "ប្រកាន់​តួ​អក្សរ​តូច​ធំ"
 
-#~ msgid "Find"
-#~ msgstr "រក"
+#. i18n: file: findwidget.ui:133
+#. i18n: ectx: property (text), widget (QCheckBox, chkRegExp)
+#: rc.cpp:24
+msgid "Regular expression"
+msgstr "កន្សោម​ធម្មតា"
 
-#~ msgid "Filter:"
-#~ msgstr "តម្រង ៖"
+#. i18n: file: findwidget.ui:140
+#. i18n: ectx: property (text), widget (QCheckBox, chkRecursive)
+#: rc.cpp:27
+#, fuzzy
+#| msgid "Recursive search"
+msgid "Recursive search"
+msgstr "ស្វែងរក​ដោយ​ហៅ​ខ្លួនឯង"
 
-#~ msgid "Options"
-#~ msgstr "ជម្រើស"
+#. i18n: file: resultwidget.ui:41
+#. i18n: ectx: property (text), widget (QTreeWidget, twResults)
+#: rc.cpp:30
+msgid "File"
+msgstr "ឯកសារ"
 
-#~ msgid "Regular expression"
-#~ msgstr "កន្សោម​ធម្មតា"
+#. i18n: file: resultwidget.ui:46
+#. i18n: ectx: property (text), widget (QTreeWidget, twResults)
+#: rc.cpp:33
+msgid "Line"
+msgstr "បន្ទាត់"
 
-#~ msgid "Searching for files..."
-#~ msgstr "កំពុង​ស្វែងរក​ឯកសារ..."
+#. i18n: file: resultwidget.ui:51
+#. i18n: ectx: property (text), widget (QTreeWidget, twResults)
+#: rc.cpp:36
+msgid "Text"
+msgstr "អត្ថបទ"
 
-#~ msgid "Remove"
-#~ msgstr "យកចេញ"
+#. i18n: file: resultwidget.ui:87
+#. i18n: ectx: property (text), widget (QLabel, lblStatus)
+#: rc.cpp:39
+msgid "Searching for files..."
+msgstr "កំពុង​ស្វែងរក​ឯកសារ..."
 
-#~ msgid "&Edit"
-#~ msgstr "កែសម្រួល"
+#. i18n: file: resultwidget.ui:117
+#. i18n: ectx: property (text), widget (KPushButton, btnRemove)
+#: rc.cpp:45
+msgid "Remove"
+msgstr "យកចេញ"
 
-#~ msgctxt "NAME OF TRANSLATORS"
-#~ msgid "Your names"
-#~ msgstr "ខឹម សុខែម, អេង វណ្ណៈ, អោក ពិសិដ្ឋ​​"
+#. i18n: file: ui.rc:4
+#. i18n: ectx: Menu (edit)
+#: rc.cpp:48
+msgid "&Edit"
+msgstr "កែសម្រួល"
 
-#~ msgctxt "EMAIL OF TRANSLATORS"
-#~ msgid "Your emails"
-#~ msgstr ""
-#~ "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
+#: rc.cpp:49
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ខឹម សុខែម, អេង វណ្ណៈ, អោក ពិសិដ្ឋ​​"
+
+#: rc.cpp:50
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
+
+#, fuzzy
+#~| msgid "File"
+#~ msgid "Files:"
+#~ msgstr "ឯកសារ"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: okular\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-01-27 08:25+0100\n"
+"POT-Creation-Date: 2009-01-29 07:20+0100\n"
 "PO-Revision-Date: 2008-12-19 09:38+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -41,47 +41,104 @@ msgstr ""
 "រក្សា​អ្វីៗ​ទាំងអស់​នៅ​ក្នុង​សតិ ។ ផ្ទុក​ទំព័រ​បន្ទាប់​ជាមុន និង ជួយ​ជ្រោមជ្រែង​ក្នុង​ការ​ស្វែងរក ។ (សម្រាប់​ប្រព័ន្ធ​"
 "ដែល​មាន​សតិ​ច្រើន​ជាង ៥១២ មេកាបៃ ។)"
 
-#: conf/preferencesdialog.cpp:35
+#: conf/dlgeditor.cpp:28
+msgctxt "Text editor"
+msgid "Custom Text Editor"
+msgstr "កម្មវិធី​និពន្ធ​អត្ថបទ​ផ្ទាល់ខ្លួន"
+
+#: conf/dlgeditor.cpp:29
+msgctxt "Text editor"
+msgid "Kate"
+msgstr "Kate"
+
+#: conf/dlgeditor.cpp:30
+msgctxt "Text editor"
+msgid "Kile"
+msgstr "Kile"
+
+#: conf/dlgeditor.cpp:31
+msgctxt "Text editor"
+msgid "SciTE"
+msgstr "SciTE"
+
+#: conf/dlgeditor.cpp:32
+msgctxt "Text editor"
+msgid "Emacs client"
+msgstr "កម្មវិធី Emacs"
+
+#: conf/dlgeditor.cpp:35
+msgctxt "@info:whatsthis"
+msgid ""
+"<qt>Set the command of a custom text editor to be launched.<br />\n"
+"You can also put few placeholders:\n"
+"<ul>\n"
+"  <li>%f - the file name</li>\n"
+"  <li>%l - the line of the file to be reached</li>\n"
+"  <li>%c - the column of the file to be reached</li>\n"
+"</ul>\n"
+"If %f is not specified, then the file name is appended to the specified "
+"command."
+msgstr ""
+"<qt>កំណត់​ពាក្យ​បញ្ជា​របស់​កម្មវិធី​និពន្ធ​អត្ថបទ​ផ្ទាល់ខ្លួន​ដើម្បី​បើក ។<br />\n"
+"អ្នក​អាច​ដាក់​កន្លែង​ដាក់​មួយ​ចំនួន ៖\n"
+"<ul>\n"
+"  <li>%f - ឈ្មោះ​ឯកសារ</li>\n"
+"  <li>%l - ចំនួន​បន្ទាត់​របស់​ឯកសារ</li>\n"
+"  <li>%c - ចំនួន​ជួរ​ឈរ​របស់​ឯកសារ</li>\n"
+"</ul>\n"
+"បើ​មិន​បាន​បញ្ជាក់ %f ដូច្នេះ​ឈ្មោះ​ឯកសារ​ត្រូវ​បាន​បន្ថែម​ទៅ​ពាក្យ​បញ្ជា​ដែល​បាន​បញ្ជាក់ ។"
+
+#: conf/preferencesdialog.cpp:37
 msgid "General"
 msgstr "ទូទៅ"
 
-#: conf/preferencesdialog.cpp:35
+#: conf/preferencesdialog.cpp:37
 msgid "General Options"
 msgstr "ជម្រើស​ទូទៅ"
 
-#: conf/preferencesdialog.cpp:36
+#: conf/preferencesdialog.cpp:38
 msgid "Accessibility"
 msgstr "មធ្យោបាយ​ងាយស្រួល"
 
-#: conf/preferencesdialog.cpp:36
+#: conf/preferencesdialog.cpp:38
 msgid "Accessibility Reading Aids"
 msgstr "ជំនួយ​​មធ្យោបាយ​ងាយស្រួល​ក្នុង​ការ​អាន"
 
-#: conf/preferencesdialog.cpp:37
+#: conf/preferencesdialog.cpp:39
 msgid "Performance"
 msgstr "ដំណើរការ"
 
-#: conf/preferencesdialog.cpp:37
+#: conf/preferencesdialog.cpp:39
 msgid "Performance Tuning"
 msgstr "ការ​លៃតម្រូវ​ដំណើរការ"
 
-#: conf/preferencesdialog.cpp:38
+#: conf/preferencesdialog.cpp:40
 msgid "Presentation"
 msgstr "ការ​បង្ហាញ"
 
-#: conf/preferencesdialog.cpp:39
+#: conf/preferencesdialog.cpp:41
 msgid "Options for Presentation Mode"
 msgstr "ជម្រើស​សម្រាប់​របៀប​បង្ហាញ"
 
 #. i18n: file: conf/dlgidentitybase.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: conf/preferencesdialog.cpp:40 rc.cpp:215
+#: conf/preferencesdialog.cpp:42 rc.cpp:215
 msgid "Identity"
 msgstr "អត្តសញ្ញាណ"
 
-#: conf/preferencesdialog.cpp:41
+#: conf/preferencesdialog.cpp:43
 msgid "Identity Settings"
 msgstr "ការ​កំណត់​អត្តសញ្ញាណ"
+
+#. i18n: file: conf/dlgeditorbase.ui:19
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: conf/preferencesdialog.cpp:44 rc.cpp:224
+msgid "Editor"
+msgstr "កម្មវិធី​និពន្ធ"
+
+#: conf/preferencesdialog.cpp:44
+msgid "Editor Options"
+msgstr "ជម្រើស​កម្មវិធី​និពន្ធ"
 
 #: conf/dlgpresentation.cpp:28
 msgctxt "@label:listbox The current screen, for the presentation mode"
@@ -99,87 +156,87 @@ msgctxt "@label:listbox %1 is the screen number (0, 1, ...)"
 msgid "Screen %1"
 msgstr "មិន​អាច​បើក %1 បាន​ឡើយ"
 
-#: core/action.cpp:79
+#: core/action.cpp:80
 #, kde-format
 msgid "Go to page %1"
 msgstr "ទៅកាន់​ទំព័រ %1"
 
-#: core/action.cpp:80
+#: core/action.cpp:81
 msgid "Open external file"
 msgstr "បើក​ឯកសារ​ខាងក្រៅ"
 
-#: core/action.cpp:132
+#: core/action.cpp:133
 #, kde-format
 msgid "Execute '%1'..."
 msgstr "ប្រតិបត្តិ '%1'..."
 
-#: core/action.cpp:225
+#: core/action.cpp:232
 msgid "First Page"
 msgstr "ទំព័រ​ទីមួយ"
 
-#: core/action.cpp:227 ui/presentationwidget.cpp:130
+#: core/action.cpp:234 ui/presentationwidget.cpp:150
 msgid "Previous Page"
 msgstr "ទំព័រ​មុន"
 
-#: core/action.cpp:229 ui/presentationwidget.cpp:146
+#: core/action.cpp:236 ui/presentationwidget.cpp:166
 msgid "Next Page"
 msgstr "ទំព័រ​បន្ទាប់"
 
-#: core/action.cpp:231
+#: core/action.cpp:238
 msgid "Last Page"
 msgstr "ទំព័រ​ចុងក្រោយ"
 
-#: core/action.cpp:233
+#: core/action.cpp:240
 msgid "Back"
 msgstr "ថយក្រោយ"
 
-#: core/action.cpp:235
+#: core/action.cpp:242
 msgid "Forward"
 msgstr "ទៅមុខ"
 
-#: core/action.cpp:237
+#: core/action.cpp:244
 msgid "Quit"
 msgstr "ចេញ"
 
-#: core/action.cpp:239
+#: core/action.cpp:246
 msgid "Start Presentation"
 msgstr "ចាប់ផ្ដើម​ការ​បង្ហាញ"
 
-#: core/action.cpp:241
+#: core/action.cpp:248
 msgid "End Presentation"
 msgstr "បញ្ចប់​ការ​បង្ហាញ"
 
-#: core/action.cpp:243
+#: core/action.cpp:250
 msgid "Find..."
 msgstr "រក..."
 
-#: core/action.cpp:245
+#: core/action.cpp:252
 msgid "Go To Page..."
 msgstr "ទៅកាន់​ទំព័រ..."
 
-#: core/action.cpp:292
+#: core/action.cpp:299
 msgid "Play sound..."
 msgstr "ចាក់​សំឡេង..."
 
-#: core/action.cpp:359
+#: core/action.cpp:366
 msgid "JavaScript Script"
 msgstr "ស្គ្រីប JavaScript"
 
-#: core/action.cpp:405
+#: core/action.cpp:412
 msgid "Play movie..."
 msgstr "ចាក់​ភាពយន្ត..."
 
-#: core/document.cpp:144
+#: core/document.cpp:162
 #, kde-format
 msgid "%1 x %2 in"
 msgstr "%1 x %2 អ៊ិន្ឈ៍"
 
-#: core/document.cpp:148
+#: core/document.cpp:166
 #, kde-format
 msgid "%1 x %2 mm"
 msgstr "%1 x %2 ម.ម."
 
-#: core/document.cpp:870
+#: core/document.cpp:1007
 msgid ""
 "End of document reached.\n"
 "Continue from the beginning?"
@@ -187,12 +244,12 @@ msgstr ""
 "បាន​មក​ដល់​ចុង​ឯកសារ ។\n"
 "បន្ត​ពី​ដើម​មក​វិញឬ ?"
 
-#: core/document.cpp:933 core/document.cpp:1034
+#: core/document.cpp:1071 core/document.cpp:1174
 #, kde-format
 msgid "No matches found for '%1'."
 msgstr "រក​មិន​ឃើញ​ដំណូច '%1' ឡើយ ។"
 
-#: core/document.cpp:971
+#: core/document.cpp:1110
 msgid ""
 "Beginning of document reached.\n"
 "Continue from the bottom?"
@@ -200,99 +257,115 @@ msgstr ""
 "បាន​មកដល់​ដើម​ឯកសារ​ហើយ ។\n"
 "បន្ត​ពី​ក្រោម​មកវិញ​ឬ ?"
 
-#: core/document.cpp:1410
+#: core/document.cpp:1562
 msgid ""
 "Can not find a plugin which is able to handle the document being passed."
 msgstr "មិនអាច​ស្វែងរក​កម្មវិធី​ជំនួយ​ដែល​អាច​ដោះស្រាយ​ឯកសារ​ដែល​បាន​ហុច​បានទេ ។"
 
-#: core/document.cpp:1822
+#: core/document.cpp:1936
 msgid "File Size"
 msgstr "ទំហំ​ឯកសារ"
 
-#: core/document.cpp:1826
+#: core/document.cpp:1940
 msgid "Page Size"
 msgstr "ទំហំ​ទំព័រ"
 
-#: core/document.cpp:2375
+#: core/document.cpp:2489
 msgid "Search in progress..."
 msgstr "កំពុង​ស្វែងរក..."
 
-#: core/document.cpp:2377
+#: core/document.cpp:2491
 #, kde-format
 msgid "Searching for %1"
 msgstr "កំពុង​រកមើល %1"
 
-#: core/document.cpp:2686 core/document.cpp:2694
+#: core/document.cpp:2801 core/document.cpp:2809
 msgid ""
 "The document is trying to execute an external application and, for your "
 "safety, Okular does not allow that."
 msgstr ""
 "ឯកសារ​កំពុង​ប្រតិបត្តិ​កម្មវិធី​ខាងក្រៅ តែដើម្បី​ឲ្យ​មាន​សុវត្ថិភាព​ Okular មិន​អនុញ្ញាត​ឲ្យ​ធ្វើ​បែបនោះ​ទេ ។"
 
-#: core/document.cpp:2707
+#: core/document.cpp:2822
 #, kde-format
 msgid "No application found for opening file of mimetype %1."
 msgstr "រក​មិនឃើញ​កម្មវិធី​សម្រាប់​បើក​ឯកសារ​ប្រភេទ mime %1 ទេ ។"
 
-#: core/document.cpp:3361
+#: core/document.cpp:3646
 msgid "Title"
 msgstr "ចំណងជើង"
 
-#: core/document.cpp:3364
+#: core/document.cpp:3649
 msgid "Subject"
 msgstr "ប្រធានបទ"
 
-#: core/document.cpp:3367 ui/embeddedfilesdialog.cpp:49
+#: core/document.cpp:3652
 msgid "Description"
 msgstr "សេចក្ដី​ពិពណ៌នា"
 
-#: core/document.cpp:3370
+#: core/document.cpp:3655
 msgid "Author"
 msgstr "អ្នក​និពន្ធ"
 
-#: core/document.cpp:3373
+#: core/document.cpp:3658
 msgid "Creator"
 msgstr "អ្នក​បង្កើត"
 
-#: core/document.cpp:3376
+#: core/document.cpp:3661
 msgid "Producer"
 msgstr "អ្នក​ផលិត"
 
-#: core/document.cpp:3379
+#: core/document.cpp:3664
 msgid "Copyright"
 msgstr "រក្សាសិទ្ធិ"
 
-#: core/document.cpp:3382
+#: core/document.cpp:3667
 msgid "Pages"
 msgstr "ទំព័រ"
 
-#: core/document.cpp:3385 ui/embeddedfilesdialog.cpp:51
+#: core/document.cpp:3670
 msgid "Created"
 msgstr "បាន​បង្កើត"
 
-#: core/document.cpp:3388 ui/embeddedfilesdialog.cpp:52
+#: core/document.cpp:3673
 msgid "Modified"
 msgstr "បាន​កែប្រែ"
 
-#: core/document.cpp:3391
+#: core/document.cpp:3676
 msgid "Mime Type"
 msgstr "ប្រភេទ Mime"
 
-#: core/document.cpp:3394
+#: core/document.cpp:3679
 msgid "Category"
 msgstr "ប្រភេទ"
 
-#: core/document.cpp:3397
+#: core/document.cpp:3682
 msgid "Keywords"
 msgstr "ពាក្យ​គន្លឹះ"
 
-#: core/generator.cpp:542
+#: core/generator.cpp:547
 msgid "Plain &Text..."
 msgstr "អត្ថបទ​ធម្មតា..."
 
-#: core/generator.cpp:545
+#: core/generator.cpp:550
 msgid "PDF"
 msgstr "PDF"
+
+#: core/generator.cpp:555
+msgctxt "This is the document format"
+msgid "OpenDocument Text"
+msgstr "អត្ថបទ OpenDocument"
+
+#: core/generator.cpp:559
+msgctxt "This is the document format"
+msgid "HTML"
+msgstr "HTML"
+
+#: core/sourcereference.cpp:91
+#, kde-format
+msgctxt "'source' is a source file"
+msgid "Source: %1"
+msgstr "ប្រភទ ៖ %1"
 
 #: core/chooseenginedialog.cpp:22
 msgid "Backend Selection"
@@ -319,23 +392,23 @@ msgstr ""
 "ចុច​ដើម្បី​ប្រើ​ឧបករណ៍​ជម្រើស​បច្ចុប្បន្ន\n"
 "ចុច ហើយ​សង្កត់ ដើម្បី​ជ្រើស​ឧបករណ៍​ជម្រើស​ផ្សេងទៀត"
 
-#: ui/pageviewannotator.cpp:158
+#: ui/pageviewannotator.cpp:159
 msgid "Text of the new note:"
 msgstr "អត្ថបទ​នៃ​ចំណាំ​ថ្មី ៖"
 
-#: ui/pageviewannotator.cpp:160
+#: ui/pageviewannotator.cpp:161
 msgid "New Text Note"
 msgstr "ចំណាំ​អត្ថបទ​ថ្មី"
 
-#: ui/pageviewannotator.cpp:689
+#: ui/pageviewannotator.cpp:700
 msgid "Please insert your name or initials:"
 msgstr "សូម​បញ្ចូល​ឈ្មោះ ឬ​អទិសង្កេត​របស់​អ្នក ៖"
 
-#: ui/pageviewannotator.cpp:690
+#: ui/pageviewannotator.cpp:701
 msgid "You must set this name:"
 msgstr "អ្នក​ត្រូវ​តែ​កំណត់​ឈ្មោះ​នេះ ៖"
 
-#: ui/pageviewannotator.cpp:691
+#: ui/pageviewannotator.cpp:702
 msgid "Annotations author"
 msgstr "អ្នកនិពន្ធ​ចំណារ​ពន្យល់"
 
@@ -382,48 +455,44 @@ msgstr "កែប្រែ​ឥរិយាបទ​ស្វែងរក"
 msgid "Case sensitive"
 msgstr "ប្រកាន់​តួ​អក្សរ​តូច​ធំ"
 
-#: ui/presentationwidget.cpp:148
-msgid "Toggle Drawing Mode"
-msgstr "បិទ​បើក​របៀប​គំនូរ"
+#: ui/findbar.cpp:66
+msgid "From current page"
+msgstr "ពី​ទំព័រ​បច្ចុប្បន្ន"
 
-#: ui/presentationwidget.cpp:151
-msgid "Erase Drawings"
-msgstr "លុប​គំនូរ"
-
-#: ui/presentationwidget.cpp:157
+#: ui/presentationwidget.cpp:180
 msgid "Switch Screen"
 msgstr "ប្ដូរ​អេក្រង់"
 
-#: ui/presentationwidget.cpp:164
+#: ui/presentationwidget.cpp:187
 #, kde-format
 msgctxt "%1 is the screen number (0, 1, ...)"
 msgid "Screen %1"
 msgstr "មិន​អាច​បើក %1 បាន​ឡើយ"
 
-#: ui/presentationwidget.cpp:171
+#: ui/presentationwidget.cpp:194
 msgid "Exit Presentation Mode"
 msgstr "ចេញ​ពី​របៀប​បង្ហាញ"
 
-#: ui/presentationwidget.cpp:264
+#: ui/presentationwidget.cpp:312
 #, kde-format
 msgid "Title: %1"
 msgstr "ចំណងជើង ៖ %1"
 
-#: ui/presentationwidget.cpp:266 ui/guiutils.cpp:128
+#: ui/presentationwidget.cpp:314 ui/guiutils.cpp:156
 #, kde-format
 msgid "Author: %1"
 msgstr "អ្នក​និពន្ធ ៖ %1"
 
-#: ui/presentationwidget.cpp:268
+#: ui/presentationwidget.cpp:316
 #, kde-format
 msgid "Pages: %1"
 msgstr "ទំព័រ ៖ %1"
 
-#: ui/presentationwidget.cpp:269
+#: ui/presentationwidget.cpp:317
 msgid "Click to begin"
 msgstr "ចុច ដើម្បី​ចាប់ផ្ដើម"
 
-#: ui/presentationwidget.cpp:1150
+#: ui/presentationwidget.cpp:1244
 msgid ""
 "There are two ways of exiting presentation mode, you can press either ESC "
 "key or click with the quit button that appears when placing the mouse in the "
@@ -432,16 +501,23 @@ msgstr ""
 "មាន​វិធី​ពីរ​យ៉ាង​នៃ​​ចេញពីរៀប​បង្ហាញ គឺ​អ្នក​អាច​ចុច​គ្រប់ចុច ESC ឬ​ចុច​ប៊ូតុង ចេញ ​ដែល​មាន​នៅ​ពេល​ដាក់​កណ្ដុរ​នៅ​"
 "ជ្រុង​កំពូល​ខាងស្ដាំ ។ តាម​ពិត អ្នក​អាច​ប្ដូរ​បង្អួច​បាន (ឆ្លាស់​(Alt)+ថេប តាម​លំនាំដើម)"
 
-#: ui/thumbnaillist.cpp:853
+#: ui/presentationwidget.cpp:1366
+msgctxt ""
+"Reason for inhibiting the screensaver activation, when the presentation mode "
+"is active"
+msgid "Giving a presentation"
+msgstr "ផ្ដល់​កា​របង្ហាញ"
+
+#: ui/thumbnaillist.cpp:869
 msgid "Show bookmarked pages only"
 msgstr "បង្ហាញ​តែ​ទំព័រ​ដែល​បាន​ចំណាំ​ប៉ុណ្ណោះ"
 
-#: ui/annotationmodel.cpp:297 part.cpp:1621
+#: ui/annotationmodel.cpp:297 part.cpp:1648
 #, kde-format
 msgid "Page %1"
 msgstr "ទំព័រ %1"
 
-#: ui/minibar.cpp:100
+#: ui/minibar.cpp:87
 msgctxt "Layouted like: '5 [pages] of 10'"
 msgid "of"
 msgstr "នៃ"
@@ -478,7 +554,7 @@ msgstr "អ្នក​និពន្ធ ៖"
 msgid "Created: %1"
 msgstr "បានបង្កើត ៖ %1"
 
-#: ui/annotationpropertiesdialog.cpp:107 ui/annotationpropertiesdialog.cpp:208
+#: ui/annotationpropertiesdialog.cpp:107 ui/annotationpropertiesdialog.cpp:211
 #, kde-format
 msgid "Modified: %1"
 msgstr "បានកែប្រែ ៖ %1"
@@ -524,76 +600,86 @@ msgid "Sound Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ​សំឡេង"
 
 #: ui/annotationpropertiesdialog.cpp:181
+msgid "Movie Properties"
+msgstr "លក្ខណៈ​សម្បត្តិ​​ភាពយន្ត"
+
+#: ui/annotationpropertiesdialog.cpp:184
 msgid "Annotation Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ​ចំណារ​ពន្យល់"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:20
-#: ui/guiutils.cpp:47 ui/annotationwidgets.cpp:218 rc.cpp:296
+#: ui/guiutils.cpp:72 ui/annotationwidgets.cpp:218 rc.cpp:308
 msgid "Note"
 msgstr "ចំណាំ"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:27
-#: ui/guiutils.cpp:49 rc.cpp:299
+#: ui/guiutils.cpp:74 rc.cpp:311
 msgid "Inline Note"
 msgstr "ចំណាំ​ក្នុង​តួ"
 
-#: ui/guiutils.cpp:52
+#: ui/guiutils.cpp:77
 msgid "Line"
 msgstr "បន្ទាត់"
 
-#: ui/guiutils.cpp:55
+#: ui/guiutils.cpp:80
 msgid "Geometry"
 msgstr "ធរណីមាត្រ"
 
-#: ui/guiutils.cpp:58 ui/annotationwidgets.cpp:400
+#: ui/guiutils.cpp:83 ui/annotationwidgets.cpp:397
 msgid "Highlight"
 msgstr "បន្លិច"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:62
-#: ui/guiutils.cpp:61 rc.cpp:314
+#: ui/guiutils.cpp:86 rc.cpp:326
 msgid "Stamp"
 msgstr "តែម"
 
-#: ui/guiutils.cpp:64
+#: ui/guiutils.cpp:89
 msgid "Ink"
 msgstr "ទឹកខ្មៅ"
 
-#: ui/guiutils.cpp:67
+#: ui/guiutils.cpp:92
 msgid "Caret"
 msgstr "សញ្ញា​បន្ថែម​ពាក្យ​រំលង"
 
-#: ui/guiutils.cpp:70
+#: ui/guiutils.cpp:95
 msgid "File Attachment"
 msgstr "ការ​ភ្ជាប់​ឯកសារ"
 
-#: ui/guiutils.cpp:73
+#: ui/guiutils.cpp:98
 msgid "Sound"
 msgstr "សំឡេង"
 
-#: ui/guiutils.cpp:85
+#: ui/guiutils.cpp:101
+msgid "Movie"
+msgstr "ភាព​យន្ដ"
+
+#: ui/guiutils.cpp:113
 msgctxt "Unknown author"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#: ui/guiutils.cpp:149
+#: ui/guiutils.cpp:202 ui/propertiesdialog.cpp:197
 #, kde-format
 msgid "Where do you want to save %1?"
 msgstr "តើ​អ្នក​ចង់​រក្សាទុក​ %1 នៅ​ទីណា ?"
 
-#: ui/guiutils.cpp:155 part.cpp:1383 part.cpp:1397 part.cpp:1433
+#: ui/guiutils.cpp:208 ui/propertiesdialog.cpp:203 part.cpp:1410 part.cpp:1424
+#: part.cpp:1460
 #, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "មាន​ឯកសារ \"%1\" រួចហើយ ។ តើ​អ្នក​ពិតជា​ចង់​សរសេរ​ជាន់លើ​វា​ឬ ?"
 
-#: ui/guiutils.cpp:155 part.cpp:1383 part.cpp:1397 part.cpp:1433
-msgid "Overwrite"
+#: ui/guiutils.cpp:208 ui/propertiesdialog.cpp:203
+msgctxt "@action:button"
+msgid "&Overwrite"
 msgstr "សរសេរ​ជាន់​លើ"
 
-#: ui/guiutils.cpp:164
+#: ui/guiutils.cpp:217 ui/propertiesdialog.cpp:212
 #, kde-format
 msgid "Could not open \"%1\" for writing. File was not saved."
 msgstr "មិនអាច​បើក \"%1\" ដើម្បី​សរសេរ​បានទេ ។ ឯកសារ​មិនត្រូវបានរក្សាទុក​ទេ ។"
@@ -658,247 +744,262 @@ msgstr "ផ្គូផ្គង​ពាក្យ​ណា​មួយ"
 msgid "Filter Options"
 msgstr "ជម្រើស​តម្រង"
 
-#: ui/sidebar.cpp:595 ui/annotationwidgets.cpp:269 shell/main.cpp:23
+#: ui/sidebar.cpp:593 ui/annotationwidgets.cpp:268 shell/main.cpp:38
 #: part.cpp:147
 msgid "Okular"
 msgstr "Okular"
 
-#: ui/sidebar.cpp:596
+#: ui/sidebar.cpp:594
 msgid "Show Text"
 msgstr "បង្ហាញ​អត្ថបទ"
 
-#: ui/sidebar.cpp:612
+#: ui/sidebar.cpp:610
 msgid "Small Icons"
 msgstr "រូបតំណាង​តូចៗ"
 
-#: ui/sidebar.cpp:613
+#: ui/sidebar.cpp:611
 msgid "Normal Icons"
 msgstr "រូបតំណាង​ធម្មតា"
 
-#: ui/sidebar.cpp:614
+#: ui/sidebar.cpp:612
 msgid "Large Icons"
 msgstr "រូបតំណាង​ធំ"
 
-#: ui/pageview.cpp:407
+#: ui/videowidget.cpp:115
+msgctxt "start the movie playback"
+msgid "Play"
+msgstr "ចាក់"
+
+#: ui/videowidget.cpp:120
+msgctxt "pause the movie playback"
+msgid "Pause"
+msgstr "ផ្អាក"
+
+#: ui/videowidget.cpp:185
+msgctxt "stop the movie playback"
+msgid "Stop"
+msgstr "បញ្ឈប់"
+
+#: ui/pageview.cpp:411
 msgid "Zoom"
 msgstr "ពង្រីក"
 
-#: ui/pageview.cpp:424
+#: ui/pageview.cpp:428
 msgid "Rotate Right"
 msgstr "បង្វិល​ទៅ​ស្ដាំ"
 
-#: ui/pageview.cpp:425
+#: ui/pageview.cpp:429
 msgctxt "Rotate right"
 msgid "Right"
 msgstr "ស្ដាំ"
 
-#: ui/pageview.cpp:429
+#: ui/pageview.cpp:433
 msgid "Rotate Left"
 msgstr "បង្វិល​ទៅ​ឆ្វេង"
 
-#: ui/pageview.cpp:430
+#: ui/pageview.cpp:434
 msgctxt "Rotate left"
 msgid "Left"
 msgstr "ឆ្វេង"
 
-#: ui/pageview.cpp:434
+#: ui/pageview.cpp:438
 msgid "Original Orientation"
 msgstr "ទិស​ដើម"
 
-#: ui/pageview.cpp:439
+#: ui/pageview.cpp:443
 msgid "&Page Size"
 msgstr "ទំហំ​ទំព័រ"
 
-#: ui/pageview.cpp:446
+#: ui/pageview.cpp:450
 #, fuzzy
 #| msgid "&Trim Margins"
-msgid "&Trim Borders"
+msgid "&Trim Margins"
 msgstr "ស៊ុម​ស៊ុម"
 
-#: ui/pageview.cpp:451
+#: ui/pageview.cpp:455
 msgid "Fit &Width"
 msgstr "សម​ទទឹង"
 
-#: ui/pageview.cpp:455
+#: ui/pageview.cpp:459
 msgid "Fit &Page"
 msgstr "សម​ទំព័រ"
 
-#: ui/pageview.cpp:466
+#: ui/pageview.cpp:470
 msgid "&View Mode"
 msgstr "របៀប​មើល"
 
-#: ui/pageview.cpp:479
+#: ui/pageview.cpp:483
 msgid "Single Page"
 msgstr "ទំព័រ​តែ​មួយ"
 
-#: ui/pageview.cpp:480
+#: ui/pageview.cpp:484
 msgid "Facing Pages"
 msgstr "ទំព័រ​ទល់មុខគ្នា"
 
-#: ui/pageview.cpp:481
+#: ui/pageview.cpp:485
 msgid "Overview"
 msgstr "ទិដ្ឋភាព​ទូទៅ"
 
-#: ui/pageview.cpp:486
+#: ui/pageview.cpp:490
 msgid "&Continuous"
 msgstr "តគ្នា"
 
-#: ui/pageview.cpp:494
+#: ui/pageview.cpp:498
 msgid "&Browse Tool"
 msgstr "ឧបករណ៍​រុករក"
 
-#: ui/pageview.cpp:497
+#: ui/pageview.cpp:501
 msgctxt "Browse Tool"
 msgid "Browse"
 msgstr "រុករក"
 
-#: ui/pageview.cpp:503
+#: ui/pageview.cpp:507
 msgid "&Zoom Tool"
 msgstr "ឧបករណ៍​ពង្រីក"
 
-#: ui/pageview.cpp:506
+#: ui/pageview.cpp:510
 msgctxt "Zoom Tool"
 msgid "Zoom"
 msgstr "ពង្រីក"
 
-#: ui/pageview.cpp:511
+#: ui/pageview.cpp:515
 msgid "&Selection Tool"
 msgstr "ឧបករណ៍​ជម្រើស"
 
-#: ui/pageview.cpp:514
+#: ui/pageview.cpp:518
 msgctxt "Select Tool"
 msgid "Selection"
 msgstr "ជម្រើស"
 
-#: ui/pageview.cpp:519
+#: ui/pageview.cpp:523
 msgid "&Text Selection Tool"
 msgstr "ឧបករណ៍​ជម្រើស​អត្ថបទ"
 
-#: ui/pageview.cpp:522
+#: ui/pageview.cpp:526
 msgctxt "Text Selection Tool"
 msgid "Text Selection"
 msgstr "ជម្រើស​អត្ថបទ"
 
-#: ui/pageview.cpp:527
+#: ui/pageview.cpp:531
 msgid "&Review"
 msgstr "ពិនិត្យ​ឡើងវិញ"
 
-#: ui/pageview.cpp:539
+#: ui/pageview.cpp:543
 msgid "Speak Whole Document"
 msgstr "និយាយ​ឯកសារ​ទាំងមូល"
 
-#: ui/pageview.cpp:544
+#: ui/pageview.cpp:548
 msgid "Speak Current Page"
 msgstr "និយាយ​ទំព័រ​បច្ចុប្បន្ន"
 
-#: ui/pageview.cpp:549
+#: ui/pageview.cpp:553
 msgid "Stop Speaking"
 msgstr "ឈប់​និយាយ"
 
-#: ui/pageview.cpp:555
+#: ui/pageview.cpp:559
 msgid "Scroll Up"
 msgstr "រមូរ​ឡើង​លើ"
 
-#: ui/pageview.cpp:561
+#: ui/pageview.cpp:565
 msgid "Scroll Down"
 msgstr "រមូរ​ចុះ​ក្រោម"
 
-#: ui/pageview.cpp:806
+#: ui/pageview.cpp:823
 #, kde-format
 msgid " Loaded a one-page document."
 msgid_plural " Loaded a %1-page document."
 msgstr[0] "បាន​ផ្ទុក​ឯកសារ​ដែល​មាន %1 ទំព័រ ។"
 
-#: ui/pageview.cpp:1844
+#: ui/pageview.cpp:1861
 msgid "Follow This Link"
 msgstr "តាម​តំណ​នេះ"
 
-#: ui/pageview.cpp:1847
+#: ui/pageview.cpp:1864
 msgid "Copy Link Address"
 msgstr "ចម្លង​អាសយដ្ឋាន​តំណ"
 
-#: ui/pageview.cpp:1989
+#: ui/pageview.cpp:2006
 #, kde-format
 msgid "Text (1 character)"
 msgid_plural "Text (%1 characters)"
 msgstr[0] "អត្ថបទ (%1 តួអក្សរ)"
 
-#: ui/pageview.cpp:1990 ui/pageview.cpp:2000
+#: ui/pageview.cpp:2007 ui/pageview.cpp:2017
 msgid "Copy to Clipboard"
 msgstr "ចម្លង​ទៅ​ក្ដារ​តម្បៀត​ខ្ទាស់"
 
-#: ui/pageview.cpp:1994 ui/pageview.cpp:2099
+#: ui/pageview.cpp:2011 ui/pageview.cpp:2116
 msgid "Copy forbidden by DRM"
 msgstr "ចម្លង​ការ​ហាមឃាត់​ដោយ DRM"
 
-#: ui/pageview.cpp:1997 ui/pageview.cpp:2095
+#: ui/pageview.cpp:2014 ui/pageview.cpp:2112
 msgid "Speak Text"
 msgstr "អាន​អត្ថបទ"
 
-#: ui/pageview.cpp:1999
+#: ui/pageview.cpp:2016
 #, kde-format
 msgid "Image (%1 by %2 pixels)"
 msgstr "រូបភាព (%1x%2 ភីកសែល)"
 
-#: ui/pageview.cpp:2001
+#: ui/pageview.cpp:2018
 msgid "Save to File..."
 msgstr "រក្សាទុក​ទៅ​ឯកសារ..."
 
-#: ui/pageview.cpp:2023
+#: ui/pageview.cpp:2040
 #, kde-format
 msgid "Image [%1x%2] copied to clipboard."
 msgstr "បាន​ចម្លង​រូបភាព [%1x%2] ទៅ​ក្ដារ​តម្បៀត​ខ្ទាស់ ។"
 
-#: ui/pageview.cpp:2030
+#: ui/pageview.cpp:2047
 msgid "File not saved."
 msgstr "ឯកសារ​មិន​ត្រូវ​បាន​រក្សាទុក​ឡើយ ។"
 
-#: ui/pageview.cpp:2040
+#: ui/pageview.cpp:2057
 #, kde-format
 msgid "Image [%1x%2] saved to %3 file."
 msgstr "បាន​រក្សាទុក​រូបភាព [%1x%2] ទៅ​កាន់​ឯកសារ %3 ។"
 
-#: ui/pageview.cpp:2092
+#: ui/pageview.cpp:2109
 msgid "Copy Text"
 msgstr "ចម្លង​អត្ថបទ"
 
-#: ui/pageview.cpp:2650 part.cpp:1627
+#: ui/pageview.cpp:2667 part.cpp:1654
 msgid "Fit Width"
 msgstr "សម​ទទឹង"
 
-#: ui/pageview.cpp:2650
+#: ui/pageview.cpp:2667
 msgid "Fit Page"
 msgstr "សម​ទំព័រ"
 
-#: ui/pageview.cpp:2773
+#: ui/pageview.cpp:2790
 msgid "Hide Forms"
 msgstr "លាក់​សំណុំបែបបទ"
 
-#: ui/pageview.cpp:2777
+#: ui/pageview.cpp:2794
 msgid "Show Forms"
 msgstr "បង្ហាញ​សំណុំបែបបទ"
 
-#: ui/pageview.cpp:3170
+#: ui/pageview.cpp:3187
 msgid "Welcome"
 msgstr "សូម​ស្វាគមន៍"
 
-#: ui/pageview.cpp:3243
+#: ui/pageview.cpp:3260
 msgid "Select zooming area. Right-click to zoom out."
 msgstr "ជ្រើស​តំបន់​ពង្រីក ។ ចុច​កណ្ដុរ​ស្ដាំ ដើម្បី​បង្រួម ។​"
 
-#: ui/pageview.cpp:3255
+#: ui/pageview.cpp:3272
 msgid "Draw a rectangle around the text/graphics to copy."
 msgstr "គូរ​ចតុកោណកែង​​ជុំ​វិញ​អត្ថបទ/​ក្រាហ្វិក ដើម្បី​ចម្លង ។"
 
-#: ui/pageview.cpp:3267
+#: ui/pageview.cpp:3284
 msgid "Select text"
 msgstr "ជ្រើស​អត្ថបទ"
 
-#: ui/pageviewutils.cpp:354
+#: ui/pageviewutils.cpp:380
 msgid "Close this message"
 msgstr "បិទ​សារនេះ"
 
-#: ui/tts.cpp:54
+#: ui/tts.cpp:52
 #, kde-format
 msgid "Starting KTTSD Failed: %1"
 msgstr "ការ​ចាប់ផ្ដើម KTTSD បាន​បរាជ័យ ៖ %1"
@@ -947,184 +1048,184 @@ msgstr "ពុម្ពអក្សរ ៖"
 msgid "Stamp Symbol"
 msgstr "និមិត្ត​សញ្ញាតែម"
 
-#: ui/annotationwidgets.cpp:270
+#: ui/annotationwidgets.cpp:269
 msgid "Bookmark"
 msgstr "ចំណាំ"
 
-#: ui/annotationwidgets.cpp:271
+#: ui/annotationwidgets.cpp:270
 msgid "KDE"
 msgstr "KDE"
 
-#: ui/annotationwidgets.cpp:272
+#: ui/annotationwidgets.cpp:271
 msgid "Information"
 msgstr "ព័ត៌មាន"
 
-#: ui/annotationwidgets.cpp:274
+#: ui/annotationwidgets.cpp:272
 msgid "Approved"
 msgstr "បាន​អនុម័ត"
 
-#: ui/annotationwidgets.cpp:275
+#: ui/annotationwidgets.cpp:273
 msgid "As Is"
 msgstr "នៅ​ដដែល"
 
-#: ui/annotationwidgets.cpp:276
+#: ui/annotationwidgets.cpp:274
 msgid "Confidential"
 msgstr "សម្ងាត់​"
 
-#: ui/annotationwidgets.cpp:277
+#: ui/annotationwidgets.cpp:275
 msgid "Departmental"
 msgstr "ផ្នែក"
 
-#: ui/annotationwidgets.cpp:278
+#: ui/annotationwidgets.cpp:276
 msgid "Draft"
 msgstr "ពង្រាង"
 
-#: ui/annotationwidgets.cpp:279
+#: ui/annotationwidgets.cpp:277
 msgid "Experimental"
 msgstr "សាកល្បង"
 
-#: ui/annotationwidgets.cpp:280
+#: ui/annotationwidgets.cpp:278
 msgid "Expired"
 msgstr "ផុត​កំណត់"
 
-#: ui/annotationwidgets.cpp:281
+#: ui/annotationwidgets.cpp:279
 msgid "Final"
 msgstr "ចុងបញ្ចប់"
 
-#: ui/annotationwidgets.cpp:282
+#: ui/annotationwidgets.cpp:280
 msgid "For Comment"
 msgstr "សម្រាប់​សេចក្ដី​អធិប្បាយ"
 
-#: ui/annotationwidgets.cpp:283
+#: ui/annotationwidgets.cpp:281
 msgid "For Public Release"
 msgstr "សម្រាប់​ការ​ចេញផ្សាយ​សាធារណៈ"
 
-#: ui/annotationwidgets.cpp:284
+#: ui/annotationwidgets.cpp:282
 msgid "Not Approved"
 msgstr "មិនបាន​អនុម័ត"
 
-#: ui/annotationwidgets.cpp:285
+#: ui/annotationwidgets.cpp:283
 msgid "Not For Public Release"
 msgstr "មិន​សម្រាប់​ការ​ចេញផ្សាយ​សាធារណៈ"
 
-#: ui/annotationwidgets.cpp:286
+#: ui/annotationwidgets.cpp:284
 msgid "Sold"
 msgstr "លក់"
 
-#: ui/annotationwidgets.cpp:287
+#: ui/annotationwidgets.cpp:285
 msgid "Top Secret"
 msgstr "សម្ងាត់​បំផុត"
 
-#: ui/annotationwidgets.cpp:325
+#: ui/annotationwidgets.cpp:322
 msgid "Line Extensions"
 msgstr "ផ្នែក​បន្ថែម​បន្ទាត់"
 
-#: ui/annotationwidgets.cpp:327
+#: ui/annotationwidgets.cpp:324
 msgid "Leader Line Length:"
 msgstr "ប្រវែង​បន្ទាត់​ដឹកនាំ ៖"
 
-#: ui/annotationwidgets.cpp:332
+#: ui/annotationwidgets.cpp:329
 msgid "Leader Line Extensions Length:"
 msgstr "ប្រែង​ផ្នែក​បន្ថែម​បន្ទាត់​ដឹកនាំ ៖"
 
-#: ui/annotationwidgets.cpp:341
+#: ui/annotationwidgets.cpp:338
 msgid "Style"
 msgstr "រចនា​ប័ទ្ម"
 
-#: ui/annotationwidgets.cpp:343 ui/annotationwidgets.cpp:438
+#: ui/annotationwidgets.cpp:340 ui/annotationwidgets.cpp:435
 msgid "&Size:"
 msgstr "ទំហំ ៖"
 
-#: ui/annotationwidgets.cpp:394 ui/annotationwidgets.cpp:429
+#: ui/annotationwidgets.cpp:391 ui/annotationwidgets.cpp:426
 msgid "Type:"
 msgstr "ប្រភេទ"
 
-#: ui/annotationwidgets.cpp:401
+#: ui/annotationwidgets.cpp:398
 msgid "Squiggly"
 msgstr "គូស​វាស"
 
-#: ui/annotationwidgets.cpp:402
+#: ui/annotationwidgets.cpp:399
 msgid "Underline"
 msgstr "គូស​បន្ទាត់​ពីក្រោម"
 
-#: ui/annotationwidgets.cpp:403
+#: ui/annotationwidgets.cpp:400
 msgid "Strike out"
 msgstr "បន្ទាត់​ឆូត"
 
-#: ui/annotationwidgets.cpp:434
+#: ui/annotationwidgets.cpp:431
 msgid "Inner color:"
 msgstr "ពណ៌​ខាងក្នុង ៖"
 
-#: ui/annotationwidgets.cpp:444
+#: ui/annotationwidgets.cpp:441
 msgid "Rectangle"
 msgstr "ចតុកោណ​កែង"
 
-#: ui/annotationwidgets.cpp:445
+#: ui/annotationwidgets.cpp:442
 msgid "Ellipse"
 msgstr "រាង​ពងក្រពើ"
 
-#: ui/annotationwidgets.cpp:497
+#: ui/annotationwidgets.cpp:494
 msgid "File Attachment Symbol"
 msgstr "និមិត្មសញ្ញា​ការ​ភ្ជាប់​ឯកសារ"
 
-#: ui/annotationwidgets.cpp:503
+#: ui/annotationwidgets.cpp:500
 msgctxt "Symbol for file attachment annotations"
 msgid "Graph"
 msgstr "ក្រាហ្វ"
 
-#: ui/annotationwidgets.cpp:504
+#: ui/annotationwidgets.cpp:501
 msgctxt "Symbol for file attachment annotations"
 msgid "Push Pin"
 msgstr "Push Pin"
 
-#: ui/annotationwidgets.cpp:505
+#: ui/annotationwidgets.cpp:502
 msgctxt "Symbol for file attachment annotations"
 msgid "Paperclip"
 msgstr "ខ្នៀប​ក្រដាស់"
 
-#: ui/annotationwidgets.cpp:506
+#: ui/annotationwidgets.cpp:503
 msgctxt "Symbol for file attachment annotations"
 msgid "Tag"
 msgstr "ស្លាក"
 
-#: ui/annotationwidgets.cpp:517
+#: ui/annotationwidgets.cpp:514
 msgctxt "'File' as normal file, that can be opened, saved, etc.."
 msgid "File"
 msgstr "ឯកសារ"
 
-#: ui/annotationwidgets.cpp:521 ui/embeddedfilesdialog.cpp:68
+#: ui/annotationwidgets.cpp:518 ui/embeddedfilesdialog.cpp:68
 msgctxt "Not available size"
 msgid "N/A"
 msgstr "គ្មាន"
 
-#: ui/annotationwidgets.cpp:522
+#: ui/annotationwidgets.cpp:519
 msgid "No description available."
 msgstr "គ្មាន​សេចក្ដី​ពិពណ៌នា​ទេ ។"
 
-#: ui/annotationwidgets.cpp:526
+#: ui/annotationwidgets.cpp:523
 #, kde-format
 msgid "Name: %1"
 msgstr "ឈ្មោះ ៖ %1"
 
-#: ui/annotationwidgets.cpp:530
+#: ui/annotationwidgets.cpp:527
 #, kde-format
 msgid "Size: %1"
 msgstr "ទំហំ ៖ %1"
 
-#: ui/annotationwidgets.cpp:534
+#: ui/annotationwidgets.cpp:531
 msgid "Description:"
 msgstr "សេចក្ដី​ពិពណ៌នា ៖"
 
-#: ui/annotationwidgets.cpp:598
+#: ui/annotationwidgets.cpp:595
 msgid "Caret Symbol"
 msgstr "និមិត្ត​សញ្ញា​បន្ថែម​ពាក្យ"
 
-#: ui/annotationwidgets.cpp:603
+#: ui/annotationwidgets.cpp:600
 msgctxt "Symbol for caret annotations"
 msgid "None"
 msgstr "គ្មាន"
 
-#: ui/annotationwidgets.cpp:604
+#: ui/annotationwidgets.cpp:601
 msgctxt "Symbol for caret annotations"
 msgid "P"
 msgstr "P"
@@ -1141,7 +1242,7 @@ msgstr "ទៅកាន់​ចំណាំ​នេះ"
 msgid "Rename Bookmark"
 msgstr "ប្ដូរ​ឈ្មោះ​ចំណាំ"
 
-#: ui/bookmarklist.cpp:201 part.cpp:1166 part.cpp:1623
+#: ui/bookmarklist.cpp:201 part.cpp:1193 part.cpp:1650
 msgid "Remove Bookmark"
 msgstr "យក​ចំណាំ​ចេញ"
 
@@ -1170,201 +1271,233 @@ msgstr "មិន​ស្គាល់"
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Embedded Files"
+msgctxt "@title:window"
 msgid "Embedded Files"
 msgstr "ឯកសារ​ដែល​បាន​បង្កប់"
 
-#: ui/embeddedfilesdialog.cpp:48 ui/propertiesdialog.cpp:332
+#: ui/embeddedfilesdialog.cpp:48
+msgctxt "@title:column"
 msgid "Name"
 msgstr "ឈ្មោះ"
+
+#: ui/embeddedfilesdialog.cpp:49
+msgctxt "@title:column"
+msgid "Description"
+msgstr "សេចក្ដី​ពិពណ៌នា"
 
 #: ui/embeddedfilesdialog.cpp:50
 #, fuzzy
 #| msgctxt "@title:column"
 #| msgid "Size"
+msgctxt "@title:column"
 msgid "Size"
 msgstr "ទំហំ"
+
+#: ui/embeddedfilesdialog.cpp:51
+msgctxt "@title:column"
+msgid "Created"
+msgstr "បាន​បង្កើត"
+
+#: ui/embeddedfilesdialog.cpp:52
+msgctxt "@title:column"
+msgid "Modified"
+msgstr "បាន​កែប្រែ"
 
 #: ui/embeddedfilesdialog.cpp:106
 #, fuzzy
 #| msgctxt "@action:inmenu"
 #| msgid "&Save As..."
-msgid "Save As..."
+msgctxt "@action:inmenu"
+msgid "&Save As..."
 msgstr "រក្សាទុក​ជា..."
 
 #: ui/annotwindow.cpp:48
 msgid "Close this note"
 msgstr "បិទ​ចំណាំ​នេះ"
 
-#: ui/formwidgets.cpp:350 shell/shell.cpp:244
+#: ui/formwidgets.cpp:350 shell/shell.cpp:243
 msgid "*|All Files"
 msgstr "*|ឯកសារ​ទាំងអស់"
 
-#: ui/propertiesdialog.cpp:35
+#: ui/propertiesdialog.cpp:42
 msgid "Unknown File"
 msgstr "មិនស្គាល់​ឯកសារ"
 
-#: ui/propertiesdialog.cpp:40 ui/annotationpopup.cpp:56 part.cpp:488
+#: ui/propertiesdialog.cpp:47 ui/annotationpopup.cpp:58 part.cpp:488
 msgid "&Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ"
 
-#: ui/propertiesdialog.cpp:49
+#: ui/propertiesdialog.cpp:56
 msgid "No document opened."
 msgstr "គ្មាន​ឯកសារ​ដែលបាន​បើក​ឡើយ ។"
 
-#: ui/propertiesdialog.cpp:55
+#: ui/propertiesdialog.cpp:62
 #, kde-format
 msgid "%1 Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ %1"
 
-#: ui/propertiesdialog.cpp:70
+#: ui/propertiesdialog.cpp:77
 #, kde-format
 msgid "%1:"
 msgstr "%1 ៖"
 
-#: ui/propertiesdialog.cpp:84
+#: ui/propertiesdialog.cpp:91
 msgid "Pages:"
 msgstr "ទំព័រ ៖"
 
-#: ui/propertiesdialog.cpp:97
+#: ui/propertiesdialog.cpp:104
 msgid "&Fonts"
 msgstr "ពុម្ពអក្សរ"
 
-#: ui/propertiesdialog.cpp:118
+#: ui/propertiesdialog.cpp:127
 msgid "Reading font information..."
 msgstr "កំពុង​ផ្ទុក​ព័ត៌មាន​ពុម្ព​អក្សរ..."
 
-#: ui/propertiesdialog.cpp:204
+#: ui/propertiesdialog.cpp:192
+msgctxt "@action:inmenu"
+msgid "&Extract Font"
+msgstr "ស្រង់​ពុម្ពអក្សរ​ចេញ"
+
+#: ui/propertiesdialog.cpp:247
 msgid "Type 1"
 msgstr "ប្រភេទ ១"
 
-#: ui/propertiesdialog.cpp:207
+#: ui/propertiesdialog.cpp:250
 msgid "Type 1C"
 msgstr "ប្រភេទ 1C"
 
-#: ui/propertiesdialog.cpp:210
+#: ui/propertiesdialog.cpp:253
 msgctxt "OT means OpenType"
 msgid "Type 1C (OT)"
 msgstr "ប្រភេទ 1C (OT)"
 
-#: ui/propertiesdialog.cpp:213
+#: ui/propertiesdialog.cpp:256
 msgid "Type 3"
 msgstr "ប្រភេទ 3"
 
-#: ui/propertiesdialog.cpp:216
+#: ui/propertiesdialog.cpp:259
 msgid "TrueType"
 msgstr "TrueType"
 
-#: ui/propertiesdialog.cpp:219
+#: ui/propertiesdialog.cpp:262
 msgctxt "OT means OpenType"
 msgid "TrueType (OT)"
 msgstr "TrueType (OT)"
 
-#: ui/propertiesdialog.cpp:222
+#: ui/propertiesdialog.cpp:265
 msgid "CID Type 0"
 msgstr "CID ប្រភេទ 0"
 
-#: ui/propertiesdialog.cpp:225
+#: ui/propertiesdialog.cpp:268
 msgid "CID Type 0C"
 msgstr "CID ប្រភេទ 0C"
 
-#: ui/propertiesdialog.cpp:228
+#: ui/propertiesdialog.cpp:271
 msgctxt "OT means OpenType"
 msgid "CID Type 0C (OT)"
 msgstr "CID ប្រភេទ 0C (OT)"
 
-#: ui/propertiesdialog.cpp:231
+#: ui/propertiesdialog.cpp:274
 msgid "CID TrueType"
 msgstr "CID TrueType"
 
-#: ui/propertiesdialog.cpp:234
+#: ui/propertiesdialog.cpp:277
 msgctxt "OT means OpenType"
 msgid "CID TrueType (OT)"
 msgstr "CID TrueType (OT)"
 
-#: ui/propertiesdialog.cpp:237
+#: ui/propertiesdialog.cpp:280
 msgctxt "Unknown font type"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#: ui/propertiesdialog.cpp:251
+#: ui/propertiesdialog.cpp:294
 msgid "Embedded (subset)"
 msgstr "បាន​បង្កប់ (សំណុំ​រង)"
 
-#: ui/propertiesdialog.cpp:254
+#: ui/propertiesdialog.cpp:297
 msgid "Fully embedded"
 msgstr "បានបង្កប់​ពេញលេញ"
 
-#: ui/propertiesdialog.cpp:265
+#: ui/propertiesdialog.cpp:308
 msgid "No"
 msgstr "ទេ"
 
-#: ui/propertiesdialog.cpp:268
+#: ui/propertiesdialog.cpp:311
 msgid "Yes (subset)"
 msgstr "បាទ​/​ចាស (សំណុំ​រង)"
 
-#: ui/propertiesdialog.cpp:271
+#: ui/propertiesdialog.cpp:314
 msgid "Yes"
 msgstr "បាទ​/​ចាស"
 
-#: ui/propertiesdialog.cpp:290
+#: ui/propertiesdialog.cpp:333
 msgctxt "font name not available (empty)"
 msgid "[n/a]"
 msgstr "[មិនមាន]"
 
-#: ui/propertiesdialog.cpp:305
+#: ui/propertiesdialog.cpp:348
 msgid "Unknown font"
 msgstr "មិន​ស្គាល់​ពុម្ពអក្សរ"
 
-#: ui/propertiesdialog.cpp:309
+#: ui/propertiesdialog.cpp:352
 #, kde-format
 msgid "Embedded: %1"
 msgstr "បាន​បង្កប់ ៖ %1"
 
-#: ui/propertiesdialog.cpp:333
+#: ui/propertiesdialog.cpp:385
+msgid "Name"
+msgstr "ឈ្មោះ"
+
+#: ui/propertiesdialog.cpp:386
 msgid "Type"
 msgstr "ប្រភេទ"
 
-#: ui/propertiesdialog.cpp:334
+#: ui/propertiesdialog.cpp:387
 msgid "File"
 msgstr "ឯកសារ"
 
-#: ui/annotationpopup.cpp:47
+#: ui/annotationpopup.cpp:49
 #, kde-format
 msgid "Annotation"
 msgid_plural "%1 Annotations"
 msgstr[0] "%1 ចំណារពន្យល់"
 
-#: ui/annotationpopup.cpp:48
+#: ui/annotationpopup.cpp:50
 msgid "&Open Pop-up Note"
 msgstr "បើក​ចំណាំ​លេចឡើង"
 
-#: ui/annotationpopup.cpp:50
+#: ui/annotationpopup.cpp:52
 msgid "&Delete"
 msgstr "លុប"
 
-#: ui/annotationpopup.cpp:63
+#: ui/annotationpopup.cpp:65
 #, kde-format
 msgctxt "%1 is the name of the file to save"
 msgid "&Save '%1'..."
 msgstr "រក្សាទុក '%1'..."
 
-#: shell/main.cpp:29
+#: shell/main.cpp:44
 msgid "Page of the document to be shown"
 msgstr "ទំព័រ​ឯកសារ​ដែលត្រូវ​បង្ហាញ"
 
-#: shell/main.cpp:30
+#: shell/main.cpp:45
 msgid "Start the document in presentation mode"
 msgstr "ចាប់ផ្ដើម​ឯកសារ​ក្នុង​របៀប​បង្ហាញ"
 
-#: shell/main.cpp:31
+#: shell/main.cpp:46
+msgid "\"Unique instance\" control"
+msgstr "វត្ថុ​បញ្ជា \"វត្ថុ​តែ​មួយ​គត់\""
+
+#: shell/main.cpp:47
 msgid "Document to open"
 msgstr "ឯកសារ​ដែលត្រូវ​បើក"
 
-#: shell/shell.cpp:88
+#: shell/shell.cpp:72
 msgid "Unable to find the Okular component."
 msgstr "មិនអាច​រក​ឃើញផ្នែក Okular ។"
 
-#: shell/shell.cpp:170
+#: shell/shell.cpp:169
 msgid ""
 "Click to open a file\n"
 "Click and hold to open a recent file"
@@ -1372,12 +1505,12 @@ msgstr ""
 "ចុច ដើម្បី​បើក​ឯកសារ\n"
 "ចុច​ឲ្យ​ជាប់ ដើម្បី​បើក​ឯកសារ​ថ្មីៗ​នេះ"
 
-#: shell/shell.cpp:171
+#: shell/shell.cpp:170
 msgid ""
 "<b>Click</b> to open a file or <b>Click and hold</b> to select a recent file"
 msgstr "<b>ចុច</b> ដើម្បី​បើក​ឯកសារ ឬ​<b>ចុច​ឲ្យ​ជាប់</b> ដើម្បី​ជ្រើស​ឯកសារ​ថ្មីៗ​នេះ"
 
-#: shell/shell.cpp:247
+#: shell/shell.cpp:246
 msgid "Open Document"
 msgstr "បើក​ឯកសារ"
 
@@ -1503,52 +1636,69 @@ msgstr "ការ​បង្ហាញ"
 msgid "E&xport As"
 msgstr "នាំចេញ​ជា"
 
-#: part.cpp:518
+#: part.cpp:517
+msgctxt "A document format, Okular-specific"
+msgid "Document Archive"
+msgstr "ប័ណ្ណសារ​ឯកសារ"
+
+#: part.cpp:523
 msgid "About Backend"
 msgstr "អំពី​កម្មវិធី​ខាងក្រោយ"
 
-#: part.cpp:523
+#: part.cpp:528
 msgid "Reloa&d"
 msgstr "ផ្ទុក​ឡើងវិញ"
 
-#: part.cpp:525
+#: part.cpp:530
 msgid "Reload the current document from disk."
 msgstr "ផ្ទុក​ឯកសារ​បច្ចុប្បន្ន​ពី​ថាស​ឡើងវិញ ។"
 
-#: part.cpp:530
+#: part.cpp:535
 msgid "Close &Find Bar"
 msgstr "បិទ​របារ​ស្វែងរក"
 
-#: part.cpp:681
+#: part.cpp:541
+msgid "Switch Blackscreen Mode"
+msgstr "ប្ដូរ​របៀប​អេក្រង់​ពណ៌ខ្មៅ"
+
+#: part.cpp:546
+msgid "Toggle Drawing Mode"
+msgstr "បិទ​បើក​របៀប​គំនូរ"
+
+#: part.cpp:550
+msgid "Erase Drawings"
+msgstr "លុប​គំនូរ"
+
+#: part.cpp:699
 #, kde-format
 msgid "Could not open %1. Reason: %2"
 msgstr "មិនអាច​បើក %1 បានទេ ។ មូលហេតុ ៖ %2"
 
-#: part.cpp:685
+#: part.cpp:703
 #, kde-format
 msgid "Could not open %1"
 msgstr "មិន​អាច​បើក %1 បាន​ឡើយ"
 
-#: part.cpp:713
+#: part.cpp:735
 msgid "Configure Backends"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ​កម្មវិធី​ខាងក្រោយ"
 
-#: part.cpp:793
+#: part.cpp:815
 msgid ""
 "The program \"ps2pdf\" was not found, so Okular can not import PS files "
 "using it."
 msgstr ""
 "រក​កម្មវិធី \"ps2pdf\" មិនឃើញ​ទេ ដូច្នេះ Okular មិនអាច​នាំចូល​ឯកសារ PS ដោយប្រើ​វា​បានទេ ។"
 
-#: part.cpp:793
+#: part.cpp:815
 msgid "ps2pdf not found"
 msgstr "រក​មិនឃើញ ps2pdf"
 
-#: part.cpp:812
+#: part.cpp:834
 msgid "Importing PS file as PDF (this may take a while)..."
 msgstr "កំពុង​នាំចូល​ឯកសារ PS ជា PDF (ចំណាយពេល​បន្តិច)..."
 
-#: part.cpp:922
+#: part.cpp:948
 msgid ""
 "The document requested to be launched in presentation mode.\n"
 "Do you want to allow it?"
@@ -1556,60 +1706,64 @@ msgstr ""
 "ឯកសារ បាន​ស្នើ​ឲ្យ​បង្ហាញជា​របៀប​បង្ហាញ ។\n"
 "តើអ្នក​ចង់​អនុញ្ញាត​វា​ឬទេ ?"
 
-#: part.cpp:924
+#: part.cpp:950
 msgid "Presentation Mode"
 msgstr "របៀប​បង្ហាញ"
 
-#: part.cpp:925
+#: part.cpp:951
 msgid "Allow"
 msgstr "អនុញ្ញាត"
 
-#: part.cpp:925
+#: part.cpp:951
 msgid "Allow the presentation mode"
 msgstr "អនុញ្ញាត​របៀប​បង្ហាញ"
 
-#: part.cpp:926
+#: part.cpp:952
 msgid "Do Not Allow"
 msgstr "កុំអនុញ្ញាត"
 
-#: part.cpp:926
+#: part.cpp:952
 msgid "Do not allow the presentation mode"
 msgstr "កុំ​អនុញ្ញាត​របៀប​បង្ហាញ"
 
-#: part.cpp:1023
+#: part.cpp:1050
 msgid ""
 "This link points to a close document action that does not work when using "
 "the embedded viewer."
 msgstr "តំណ​នេះ​ចង្អុល​ទៅ​អំពើបិទ​ឯកសារ ដែល​មិន​ដំណើរការពេល​ប្រើ​កម្មវិធី​បង្កប់ ។"
 
-#: part.cpp:1029
+#: part.cpp:1056
 msgid ""
 "This link points to a quit application action that does not work when using "
 "the embedded viewer."
 msgstr "តំណ​នេះ​ចង្អុល​ទៅ​អំពើចេញ​ពី​កម្មវិធី ដែល​មិន​ដំណើរការ​ឡើយ ពេល​ប្រើ​កម្មវិធី​បង្កប់ ។"
 
-#: part.cpp:1092
+#: part.cpp:1119
 msgid "Reloading the document..."
 msgstr "កំពុង​ផ្ទុក​ឯកសារ​ឡើង​វិញ..."
 
-#: part.cpp:1212
+#: part.cpp:1239
 msgid "Go to Page"
 msgstr "ទៅ​ទំព័រ"
 
-#: part.cpp:1227
+#: part.cpp:1254
 msgid "&Page:"
 msgstr "ទំព័រ ៖"
 
-#: part.cpp:1389 part.cpp:1413 part.cpp:1419 part.cpp:1466 part.cpp:1731
+#: part.cpp:1410 part.cpp:1424 part.cpp:1460
+msgid "Overwrite"
+msgstr "សរសេរ​ជាន់​លើ"
+
+#: part.cpp:1416 part.cpp:1440 part.cpp:1446 part.cpp:1493 part.cpp:1790
 #, kde-format
 msgid "File could not be saved in '%1'. Try to save it to another location."
 msgstr "មិន​អាច​រក្សាទុក​ឯកសារ​ក្នុង '%1' បាន​ឡើយ ។ សូម​ព្យាយាម​រក្សាទុក​វា​នៅ​ទីតាំង​មួយ​ទៀត ។"
 
-#: part.cpp:1405
+#: part.cpp:1432
 msgid "Could not open the temporary file for saving."
 msgstr "មិនអាច​បើក​រក្សាទុក​ឯកសារ​បណ្ដោះអាសន្ន​បាន​ទេ ។"
 
-#: part.cpp:1451
+#: part.cpp:1478
 #, kde-format
 msgid ""
 "Okular cannot copy %1 to the specified location.\n"
@@ -1620,31 +1774,31 @@ msgstr ""
 "\n"
 "លែង​មាន​ឯកសារ​ទៀត​ហើយ ។"
 
-#: part.cpp:1625
+#: part.cpp:1652
 msgid "Add Bookmark"
 msgstr "បន្ថែមចំណាំ"
 
-#: part.cpp:1642
+#: part.cpp:1669
 msgid "Tools"
 msgstr "ឧបករណ៍"
 
-#: part.cpp:1836
+#: part.cpp:1895
 msgid "Printing this document is not allowed."
 msgstr "មិន​អនុញ្ញាត​ឲ្យ​បោះពុម្ព​ឯកសារ​នេះ​ឡើយ ។"
 
-#: part.cpp:1842
+#: part.cpp:1901
 msgid "Could not print the document. Please report to bugs.kde.org"
 msgstr "មិន​អាច​បោះពុម្ព​ឯកសារ​បាន​ឡើយ ។ សូម​រាយការណ៍​កំហុស​ទៅ bugs.kde.org"
 
-#: part.cpp:1897
+#: part.cpp:1956
 msgid "Go to the place you were before"
 msgstr "ទៅ​កន្លែង​ដែល​អ្នក​ស្ថិត​នៅ​កាល​ពី​ពេល​មុន"
 
-#: part.cpp:1900
+#: part.cpp:1959
 msgid "Go to the place you were after"
 msgstr "ទៅ​កន្លែង​ដែល​អ្នក​ស្ថិត​នៅ​កាល​ពី​ពេល​បន្ទាប់"
 
-#: part.cpp:1924
+#: part.cpp:1983
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not create temporary file "
@@ -1653,7 +1807,7 @@ msgstr ""
 "<qt><strong>កំហុស​ឯកសារ !</strong> មិនអាច​បង្កើត​ឯកសារ​បណ្ដោះអាសន្ន <nobr><strong>%1</"
 "strong></nobr> បានឡើយ ។</qt>"
 
-#: part.cpp:1942
+#: part.cpp:2001
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not open the file <nobr><strong>%1</"
@@ -1662,7 +1816,7 @@ msgstr ""
 "<qt><strong>កំហុស​ឯកសារ !</strong> មិនអាច​បើក​ឯកសារ <nobr><strong>%1</strong></"
 "nobr> សម្រាប់​ពន្លា​បានទេ ។ ឯកសារ​នឹងមិនត្រូវ​បាន​ផ្ទុក​ឡើយ ។</qt>"
 
-#: part.cpp:1945
+#: part.cpp:2004
 msgid ""
 "<qt>This error typically occurs if you do not have enough permissions to "
 "read the file. You can check ownership and permissions if you right-click on "
@@ -1673,7 +1827,7 @@ msgstr ""
 "មើល​សិទ្ធិ ដោយ​ចុច​កណ្ដុរ​ស្ដាំ​លើ​ឯកសារ​នៅ​ក្នុង​កម្មវិធី​គ្រប់គ្រង​ឯកសារ Dolphin ហើយ​បន្ទាប់មក​ជ្រើស​ផ្ទាំង "
 "'លក្ខណៈ​សម្បត្តិ' ។</qt>"
 
-#: part.cpp:1969
+#: part.cpp:2028
 #, kde-format
 msgid ""
 "<qt><strong>File Error!</strong> Could not uncompress the file <nobr><strong>"
@@ -1682,7 +1836,7 @@ msgstr ""
 "<qt><strong>កំហុស​ឯកសារ !</strong> មិនអាចពន្លា​ឯកសារ <nobr><strong>%1</strong></"
 "nobr> បានទេ ។ ឯកសារ​នឹង​មិនត្រូវបាន​ផ្ទុក​ទេ ។</qt>"
 
-#: part.cpp:1972
+#: part.cpp:2031
 msgid ""
 "<qt>This error typically occurs if the file is corrupt. If you want to be "
 "sure, try to decompress the file manually using command-line tools.</qt>"
@@ -1690,7 +1844,7 @@ msgstr ""
 "<qt>ជា​ធម្មតា កំហុស​នេះ​កើតឡើង​នៅពេល​ដែល​ឯកសារ​ខូច ។ ប្រសិន​បើ​អ្នក​ចង់ឲ្យ​ប្រាកដ សូម​ព្យាយាម​ពន្លា​"
 "ឯកសារ​ដោយដៃ ដោយប្រើឧបករណ៍​បន្ទាត់​ពាក្យ​បញ្ជា ។</qt>"
 
-#: part.cpp:2001
+#: part.cpp:2060
 msgid "No Bookmarks"
 msgstr "គ្មាន​ចំណាំ"
 
@@ -1878,7 +2032,7 @@ msgstr "រង្វិល​ជុំ​បន្ទាប់​ពី​ទំ
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: file: conf/dlggeneralbase.ui:28
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:122 rc.cpp:224
+#: rc.cpp:122 rc.cpp:236
 msgid "Appearance"
 msgstr "រូបរាង"
 
@@ -2072,195 +2226,215 @@ msgstr ""
 "<b>ចំណាំ</b> ៖ ព័ត៌មាន​នៅ​ទីនេះ គឺ​ត្រូវបាន​ប្រើ​តែ​សម្រាប់​សេចក្ដី​អធិប្បាយ និង​ការ​ពិនិត្យ​ឡើងវិញ ។ ព័ត៌មាន​"
 "ដែលបាន​បញ្ចូល​នៅ​ទីនេះ នឹង​មិនត្រូវបាន​បញ្ជូន​ដោយ​គ្មាន​ការ​ទទួល​ស្គាល់​របស់​អ្នក​ទេ ។"
 
+#. i18n: file: conf/dlgeditorbase.ui:25
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:227
+msgid "Editor:"
+msgstr "កម្មវិធី​និពន្ធ ៖"
+
+#. i18n: file: conf/dlgeditorbase.ui:32
+#. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_ExternalEditor)
+#: rc.cpp:230
+msgctxt "@info:whatsthis"
+msgid ""
+"Choose the editor you want to launch when Okular wants to open a source file."
+msgstr "ជ្រើស​កម្មវិធី​និពន្ធ ដែល​អ្នក​ចង់​បើក ពេល Okular ចង់​បើក​ឯកសារ​ប្រភព ។"
+
+#. i18n: file: conf/dlgeditorbase.ui:70
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:233
+msgid "Command:"
+msgstr "ពាក្យ​បញ្ជា ៖"
+
 #. i18n: file: conf/dlggeneralbase.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowScrollBars)
-#: rc.cpp:227
+#: rc.cpp:239
 msgid "Show scroll&bars"
 msgstr "បង្ហាញ​របារ​រមូរ"
 
 #. i18n: file: conf/dlggeneralbase.ui:76
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SyncThumbnailsViewport)
-#: rc.cpp:230
+#: rc.cpp:242
 msgid "Link the &thumbnails with the page"
 msgstr "ភ្ជាប់​រូបភាព​តូចៗ​ជាមួយ​ទំព័រ"
 
 #. i18n: file: conf/dlggeneralbase.ui:83
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowOSD)
-#: rc.cpp:233
+#: rc.cpp:245
 msgid "Show &hints and info messages"
 msgstr "បង្ហាញ​ព័ត៌មាន​ជំនួយ និង​សារ​ព័ត៌មាន"
 
 #. i18n: file: conf/dlggeneralbase.ui:143
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:236
+#: rc.cpp:248
 msgid "Program Features"
 msgstr "លក្ខណៈ​ពិសេស​របស់​កម្មវិធី"
 
 #. i18n: file: conf/dlggeneralbase.ui:181
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ObeyDRM)
-#: rc.cpp:239
+#: rc.cpp:251
 msgid "&Obey DRM limitations"
 msgstr "គោរព​តាម​ដែន​កំណត់ DRM"
 
 #. i18n: file: conf/dlggeneralbase.ui:188
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_WatchFile)
-#: rc.cpp:242
+#: rc.cpp:254
 msgid "&Reload document on file change"
 msgstr "ផ្ទុក​ឯកសារ​ឡើងវិញ​នៅពេល​ផ្លាស់ប្ដូរ​ឯកសារ"
 
 #. i18n: file: conf/dlggeneralbase.ui:195
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ChooseGenerators)
-#: rc.cpp:245
+#: rc.cpp:257
 msgid "Show backend selection dialog"
 msgstr "បង្ហាញ​ប្រអប់​ជម្រើស​កម្មវិធី​ខាងក្រោយ"
 
 #. i18n: file: conf/dlggeneralbase.ui:255
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:248
+#: rc.cpp:260
 msgid "View Options"
 msgstr "មើល​ជម្រើស"
 
 #. i18n: file: conf/dlggeneralbase.ui:261
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_CenterFirstPageInRow)
-#: rc.cpp:251
+#: rc.cpp:263
 msgid "Center &first page"
 msgstr "ដាក់​ចំកណ្ដាល​ទំព័រ​ទីមួយ"
 
 #. i18n: file: conf/dlggeneralbase.ui:276
 #. i18n: ectx: property (text), widget (QLabel, columnLabel)
-#: rc.cpp:254
+#: rc.cpp:266
 msgid "Overview columns:"
 msgstr "ជួរ​ឈរ​ទិដ្ឋភាព​ទូទៅ ៖"
 
 #. i18n: file: conf/dlgperformancebase.ui:25
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:257
+#: rc.cpp:269
 msgid "CPU Usage"
 msgstr "ការ​ប្រើប្រាស់​ស៊ីភីយូ"
 
 #. i18n: file: conf/dlgperformancebase.ui:53
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableCompositing)
-#: rc.cpp:260
+#: rc.cpp:272
 msgid "Enable &transparency effects"
 msgstr "អនុញ្ញាត​បែបផែន​ថ្លា"
 
 #. i18n: file: conf/dlgperformancebase.ui:60
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableThreading)
-#: rc.cpp:263
+#: rc.cpp:275
 msgid "Enable &background generation"
 msgstr "បិទ​ការ​បង្កើត​ផ្ទៃ​ខាង​ក្រោយ"
 
 #. i18n: file: conf/dlgperformancebase.ui:115
 #. i18n: ectx: property (title), widget (KButtonGroup, kcfg_MemoryLevel)
-#: rc.cpp:266
+#: rc.cpp:278
 msgid "Memory Usage"
 msgstr "ការ​ប្រើប្រាស់​សតិ"
 
 #. i18n: file: conf/dlgperformancebase.ui:143
 #. i18n: ectx: property (text), widget (QRadioButton, lowRadio)
-#: rc.cpp:269
+#: rc.cpp:281
 msgid "&Low"
 msgstr "ទាប"
 
 #. i18n: file: conf/dlgperformancebase.ui:150
 #. i18n: ectx: property (text), widget (QRadioButton, normalRadio)
-#: rc.cpp:272
+#: rc.cpp:284
 msgid "&Normal (default)"
 msgstr "ធម្មតា (លំនាំដើម)"
 
 #. i18n: file: conf/dlgperformancebase.ui:157
 #. i18n: ectx: property (text), widget (QRadioButton, aggressiveRadio)
-#: rc.cpp:275
+#: rc.cpp:287
 msgid "&Aggressive"
 msgstr "បំពាន"
 
 #. i18n: file: ui/data/tools.xml:21
-#: rc.cpp:277
+#: rc.cpp:289
 msgctxt "Annotation tool"
 msgid "Text Annotation"
 msgstr "ចំណារ​អត្ថបទ"
 
 #. i18n: file: ui/data/tools.xml:28
-#: rc.cpp:279
+#: rc.cpp:291
 msgctxt "Annotation tool"
 msgid "Inline Text Annotation (drag to select a zone)"
 msgstr "ចំណារ​អត្ថបទ​ក្នុង​តួរ (អូស​ដើម្បី​ជ្រើស​តំបន់)"
 
 #. i18n: file: ui/data/tools.xml:35
-#: rc.cpp:281
+#: rc.cpp:293
 msgctxt "Annotation tool"
 msgid "Green Ink"
 msgstr "ទឹក​ថ្នាំ​បៃតង"
 
 #. i18n: file: ui/data/tools.xml:42
-#: rc.cpp:283
+#: rc.cpp:295
 msgctxt "Annotation tool"
 msgid "Yellow Highlight"
 msgstr "បន្លិច​ពណ៌​លឿង"
 
 #. i18n: file: ui/data/tools.xml:49
-#: rc.cpp:285
+#: rc.cpp:297
 msgctxt "Annotation tool"
 msgid "Straight Yellow Line"
 msgstr "បន្ទាត់​ត្រង់​ពណ៌​លឿង"
 
 #. i18n: file: ui/data/tools.xml:56
-#: rc.cpp:287
+#: rc.cpp:299
 msgctxt "Annotation tool"
 msgid "Draw a polygon (click on the first point to close it)"
 msgstr "គូរ​ពហុកោណ (ចុច​​លើ​ចំណុច​ដំបូង​ដើម្បី​បិទ​វា)"
 
 #. i18n: file: ui/data/tools.xml:63
-#: rc.cpp:289
+#: rc.cpp:301
 msgctxt "Annotation tool"
 msgid "Put a stamp symbol"
 msgstr "ដាក់​និមិត្តសញ្ញា​តែម"
 
 #. i18n: file: ui/data/tools.xml:70
-#: rc.cpp:291
+#: rc.cpp:303
 msgctxt "Annotation tool"
 msgid "Underline the text with a black line"
 msgstr "គូស​បន្ទាត់​ពីក្រោម​អត្ថបទ​ដោយ​បន្ទាត់​ខ្មៅ"
 
 #. i18n: file: ui/data/tools.xml:77
-#: rc.cpp:293
+#: rc.cpp:305
 msgctxt "Annotation tool"
 msgid "A cyan ellipse"
 msgstr "ពងក្រពើ​ពណ៌​ស៊ីយ៉ាន"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:34
-#: rc.cpp:302
+#: rc.cpp:314
 msgid "Green Highlighter"
 msgstr "ឧបករណ៍​បន្លិច​ពណ៌​បៃតង"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:41
-#: rc.cpp:305
+#: rc.cpp:317
 msgid "Yellow Highlighter"
 msgstr "ឧបករណ៍​បន្លិច​ពណ៌​លឿង"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:48
-#: rc.cpp:308
+#: rc.cpp:320
 msgid "Straight Yellow Line"
 msgstr "បន្ទាត់​ត្រង់​ពណ៌​លឿង"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:55
-#: rc.cpp:311
+#: rc.cpp:323
 msgid "Blue Polygon"
 msgstr "ពហុកោណ​ពណ៌​ខៀវ"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:69
-#: rc.cpp:317
+#: rc.cpp:329
 msgid "Black Underlining"
 msgstr "គូស​បន្ទាត់​ពីក្រោម​ពណ៌​ខ្មៅ"
 
 #. i18n: tag tool attribute name
 #. i18n: file: ui/data/tools.xml:76
-#: rc.cpp:320
+#: rc.cpp:332
 msgid "Cyan Ellipse"
 msgstr "ពងក្រពើ​ពណ៌​ស៊ីយ៉ាន"
 
@@ -2319,135 +2493,3 @@ msgstr "Enrico Ros"
 #: aboutdata.h:39
 msgid "KPDF developer"
 msgstr "អ្នក​អភិវឌ្ឍន៍ KPDF"
-
-#~ msgctxt "Text editor"
-#~ msgid "Custom Text Editor"
-#~ msgstr "កម្មវិធី​និពន្ធ​អត្ថបទ​ផ្ទាល់ខ្លួន"
-
-#~ msgctxt "Text editor"
-#~ msgid "Kate"
-#~ msgstr "Kate"
-
-#~ msgctxt "Text editor"
-#~ msgid "Kile"
-#~ msgstr "Kile"
-
-#~ msgctxt "Text editor"
-#~ msgid "SciTE"
-#~ msgstr "SciTE"
-
-#~ msgctxt "Text editor"
-#~ msgid "Emacs client"
-#~ msgstr "កម្មវិធី Emacs"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "<qt>Set the command of a custom text editor to be launched.<br />\n"
-#~ "You can also put few placeholders:\n"
-#~ "<ul>\n"
-#~ "  <li>%f - the file name</li>\n"
-#~ "  <li>%l - the line of the file to be reached</li>\n"
-#~ "  <li>%c - the column of the file to be reached</li>\n"
-#~ "</ul>\n"
-#~ "If %f is not specified, then the file name is appended to the specified "
-#~ "command."
-#~ msgstr ""
-#~ "<qt>កំណត់​ពាក្យ​បញ្ជា​របស់​កម្មវិធី​និពន្ធ​អត្ថបទ​ផ្ទាល់ខ្លួន​ដើម្បី​បើក ។<br />\n"
-#~ "អ្នក​អាច​ដាក់​កន្លែង​ដាក់​មួយ​ចំនួន ៖\n"
-#~ "<ul>\n"
-#~ "  <li>%f - ឈ្មោះ​ឯកសារ</li>\n"
-#~ "  <li>%l - ចំនួន​បន្ទាត់​របស់​ឯកសារ</li>\n"
-#~ "  <li>%c - ចំនួន​ជួរ​ឈរ​របស់​ឯកសារ</li>\n"
-#~ "</ul>\n"
-#~ "បើ​មិន​បាន​បញ្ជាក់ %f ដូច្នេះ​ឈ្មោះ​ឯកសារ​ត្រូវ​បាន​បន្ថែម​ទៅ​ពាក្យ​បញ្ជា​ដែល​បាន​បញ្ជាក់ ។"
-
-#~ msgid "Editor"
-#~ msgstr "កម្មវិធី​និពន្ធ"
-
-#~ msgid "Editor Options"
-#~ msgstr "ជម្រើស​កម្មវិធី​និពន្ធ"
-
-#~ msgctxt "This is the document format"
-#~ msgid "OpenDocument Text"
-#~ msgstr "អត្ថបទ OpenDocument"
-
-#~ msgctxt "This is the document format"
-#~ msgid "HTML"
-#~ msgstr "HTML"
-
-#~ msgctxt "'source' is a source file"
-#~ msgid "Source: %1"
-#~ msgstr "ប្រភទ ៖ %1"
-
-#~ msgid "From current page"
-#~ msgstr "ពី​ទំព័រ​បច្ចុប្បន្ន"
-
-#~ msgctxt ""
-#~ "Reason for inhibiting the screensaver activation, when the presentation "
-#~ "mode is active"
-#~ msgid "Giving a presentation"
-#~ msgstr "ផ្ដល់​កា​របង្ហាញ"
-
-#~ msgid "Movie Properties"
-#~ msgstr "លក្ខណៈ​សម្បត្តិ​​ភាពយន្ត"
-
-#~ msgid "Movie"
-#~ msgstr "ភាព​យន្ដ"
-
-#~ msgctxt "@action:button"
-#~ msgid "&Overwrite"
-#~ msgstr "សរសេរ​ជាន់​លើ"
-
-#~ msgctxt "start the movie playback"
-#~ msgid "Play"
-#~ msgstr "ចាក់"
-
-#~ msgctxt "pause the movie playback"
-#~ msgid "Pause"
-#~ msgstr "ផ្អាក"
-
-#~ msgctxt "stop the movie playback"
-#~ msgid "Stop"
-#~ msgstr "បញ្ឈប់"
-
-#~ msgctxt "@title:column"
-#~ msgid "Name"
-#~ msgstr "ឈ្មោះ"
-
-#~ msgctxt "@title:column"
-#~ msgid "Description"
-#~ msgstr "សេចក្ដី​ពិពណ៌នា"
-
-#~ msgctxt "@title:column"
-#~ msgid "Created"
-#~ msgstr "បាន​បង្កើត"
-
-#~ msgctxt "@title:column"
-#~ msgid "Modified"
-#~ msgstr "បាន​កែប្រែ"
-
-#~ msgctxt "@action:inmenu"
-#~ msgid "&Extract Font"
-#~ msgstr "ស្រង់​ពុម្ពអក្សរ​ចេញ"
-
-#~ msgid "\"Unique instance\" control"
-#~ msgstr "វត្ថុ​បញ្ជា \"វត្ថុ​តែ​មួយ​គត់\""
-
-#~ msgctxt "A document format, Okular-specific"
-#~ msgid "Document Archive"
-#~ msgstr "ប័ណ្ណសារ​ឯកសារ"
-
-#~ msgid "Switch Blackscreen Mode"
-#~ msgstr "ប្ដូរ​របៀប​អេក្រង់​ពណ៌ខ្មៅ"
-
-#~ msgid "Editor:"
-#~ msgstr "កម្មវិធី​និពន្ធ ៖"
-
-#~ msgctxt "@info:whatsthis"
-#~ msgid ""
-#~ "Choose the editor you want to launch when Okular wants to open a source "
-#~ "file."
-#~ msgstr "ជ្រើស​កម្មវិធី​និពន្ធ ដែល​អ្នក​ចង់​បើក ពេល Okular ចង់​បើក​ឯកសារ​ប្រភព ។"
-
-#~ msgid "Command:"
-#~ msgstr "ពាក្យ​បញ្ជា ៖"
