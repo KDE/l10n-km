@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-07 11:36+0100\n"
+"POT-Creation-Date: 2009-02-09 10:16+0100\n"
 "PO-Revision-Date: 2008-12-30 08:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -353,7 +353,7 @@ msgid "Kopete Avatar Selector Widget Test"
 msgstr "ការ​សាកល្បង​ធាតុ​ក្រាហ្វិក​ឧបករណ៍​ជ្រើស​រូបភាព​បង្ហាញ​របស់ Kopete"
 
 #: libkopete/tests/avatarselectortest_program.cpp:26 kopete/main.cpp:47
-#: kopete/chatwindow/krichtexteditpart.cpp:254
+#: kopete/chatwindow/chattexteditpart.cpp:528
 msgid "Michaël Larouche"
 msgstr "Michaël Larouche"
 
@@ -1293,7 +1293,7 @@ msgstr "កំណត់​ស្ថានភាព​"
 #. i18n: ectx: property (text), widget (AccountTreeWidget, mAccountList)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:42
 #. i18n: ectx: ToolBar (statusToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:68
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:62
 #. i18n: ectx: ToolBar (statusToolBar)
 #. i18n: file: plugins/otr/otrprefs.ui:206
 #. i18n: ectx: property (text), widget (QTableWidget, tbFingerprints)
@@ -1303,7 +1303,7 @@ msgstr "កំណត់​ស្ថានភាព​"
 #. i18n: ectx: property (text), widget (AccountTreeWidget, mAccountList)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:42
 #. i18n: ectx: ToolBar (statusToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:68
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:62
 #. i18n: ectx: ToolBar (statusToolBar)
 #. i18n: file: plugins/otr/otrprefs.ui:206
 #. i18n: ectx: property (text), widget (QTableWidget, tbFingerprints)
@@ -1494,7 +1494,7 @@ msgstr "អ្នក​អភិវឌ្ឍន៍ ដែល​ជា​អ្�
 msgid "Gustavo Pichorim Boiko"
 msgstr "Gustavo Pichorim Boiko"
 
-#: kopete/main.cpp:44 kopete/chatwindow/krichtexteditpart.cpp:253
+#: kopete/main.cpp:44 kopete/chatwindow/chattexteditpart.cpp:527
 msgid "Jason Keirstead"
 msgstr "Jason Keirstead"
 
@@ -2624,123 +2624,101 @@ msgstr "ជជែក"
 msgid "<qt><i>%1</i> is now %2.</qt>"
 msgstr "<qt><i>%1</i> ឥឡូវ​គឺ %2 ។</qt>"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:245
+#: kopete/chatwindow/kopetechatwindow.cpp:246
 msgctxt "@action:button"
 msgid "Send"
 msgstr "ផ្ញើ"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:256
+#: kopete/chatwindow/kopetechatwindow.cpp:257
 msgctxt "@info:status"
 msgid "Ready."
 msgstr "រួចរាល់ ។"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:356
+#: kopete/chatwindow/kopetechatwindow.cpp:357
 #: kopete/chatwindow/kopeteemailwindow.cpp:219
 msgid "&Send Message"
 msgstr "ផ្ញើ​សារ​"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:363
+#: kopete/chatwindow/kopetechatwindow.cpp:364
 msgid "Send File"
 msgstr "ផ្ញើឯកសារ"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:371
+#: kopete/chatwindow/kopetechatwindow.cpp:372
 msgid "Close All Chats"
 msgstr "បិទ​ការ​ជជែក​ទាំងអស់​"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:376
+#: kopete/chatwindow/kopetechatwindow.cpp:377
 msgid "&Activate Next Active Tab"
 msgstr "ធ្វើ​ឲ្យ​ផ្ទាំង​សកម្ម​បន្ទាប់"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:382
+#: kopete/chatwindow/kopetechatwindow.cpp:383
 msgid "&Activate Next Tab"
 msgstr "ធ្វើ​ឲ្យ​ផ្ទាំង​បន្ទាប់​សកម្ម"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:388
+#: kopete/chatwindow/kopetechatwindow.cpp:389
 msgid "&Activate Previous Tab"
 msgstr "ធ្វើ​ឲ្យ​ផ្ទាំង​មុន​សកម្ម"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:396
+#: kopete/chatwindow/kopetechatwindow.cpp:397
 msgid "Nic&k Completion"
 msgstr "ការ​បំពេញ​សម្មតិនាម"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:400
+#: kopete/chatwindow/kopetechatwindow.cpp:401
 msgid "&Detach Chat"
 msgstr "ផ្ដាច់​ការ​ជជែក"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:405
+#: kopete/chatwindow/kopetechatwindow.cpp:406
 msgid "&Move Tab to Window"
 msgstr "ផ្លាស់ទី​ផ្ទាំង​ទៅ​បង្អួច​"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:412
+#: kopete/chatwindow/kopetechatwindow.cpp:413
 msgid "&Tab Placement"
 msgstr "ការ​កំណត់​ទីតាំង​ផ្ទាំង"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:424
-msgid "Set &Font..."
-msgstr "កំណត់​ពុម្ពអក្សរ..."
-
-#: kopete/chatwindow/kopetechatwindow.cpp:428
-msgid "Reset Font And Color"
-msgstr "កំណត់​ពុម្ពអក្សរ និង​ពណ៌​ឡើង​វិញ"
-
-#: kopete/chatwindow/kopetechatwindow.cpp:432
-#: kopete/chatwindow/kopeteemailwindow.cpp:236
-msgid "Set Text &Color..."
-msgstr "កំណត់​ពណ៌អត្ថបទ..."
-
-#: kopete/chatwindow/kopetechatwindow.cpp:436
-#: kopete/chatwindow/kopeteemailwindow.cpp:240
-msgid "Set &Background Color..."
-msgstr "កំណត់​ពណ៌​ផ្ទៃ​ខាងក្រោយ..."
-
-#: kopete/chatwindow/kopetechatwindow.cpp:440
-#: kopete/chatwindow/krichtexteditpart.cpp:261
-msgid "Enable &Rich Text"
-msgstr "អនុញ្ញាត​អត្ថបទ​សម្បូរ​បែប"
-
-#: kopete/chatwindow/kopetechatwindow.cpp:444
+#: kopete/chatwindow/kopetechatwindow.cpp:426
 msgid "Previous History"
 msgstr "ប្រវត្តិមុន"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:449
+#: kopete/chatwindow/kopetechatwindow.cpp:431
 msgid "Next History"
 msgstr "ប្រវត្តិបន្ទាប់"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:461
+#: kopete/chatwindow/kopetechatwindow.cpp:443
+#: kopete/chatwindow/kopeterichtextwidget.cpp:129
 msgid "Automatic Spell Checking"
 msgstr "ពិនិត្យ​អក្ខរាវិរុទ្ធ​ដោយ​ស្វ័យប្រវត្តិ"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:467
+#: kopete/chatwindow/kopetechatwindow.cpp:449
 msgid "Show Participants"
 msgstr "បង្ហាញ​អ្នក​ចូលរួម"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:468
+#: kopete/chatwindow/kopetechatwindow.cpp:450
 msgid "Participants"
 msgstr "អ្នក​ចូលរួម"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:477
+#: kopete/chatwindow/kopetechatwindow.cpp:459
 msgid "Co&ntacts"
 msgstr "ទំនាក់ទំនង​"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:500
+#: kopete/chatwindow/kopetechatwindow.cpp:482
 #: kopete/chatwindow/kopeteemailwindow.cpp:272
 msgid "Toolbar Animation"
 msgstr "ចលនា​របារ​ឧបករណ៍"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:678
+#: kopete/chatwindow/kopetechatwindow.cpp:645
 msgctxt "@info:tooltip"
 msgid "Close the current tab"
 msgstr "បិទ​ផ្ទាំង​បច្ចុប្បន្ន​"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1111
+#: kopete/chatwindow/kopetechatwindow.cpp:1076
 msgid "More..."
 msgstr "ច្រើន​ទៀត..."
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1127
+#: kopete/chatwindow/kopetechatwindow.cpp:1092
 msgid "Top"
 msgstr "កំពូល"
 
-#: kopete/chatwindow/kopetechatwindow.cpp:1130
+#: kopete/chatwindow/kopetechatwindow.cpp:1095
 msgid "Bottom"
 msgstr "បាត"
 
@@ -2766,6 +2744,32 @@ msgstr "កំហុស​ខណៈ​ពេល​រក្សាទុក​"
 msgid "User Has Left"
 msgstr "អ្នក​ប្រើ​បាន​ចាកចេញ​ហើយ"
 
+#: kopete/chatwindow/chattexteditpart.cpp:523
+#, fuzzy
+#| msgid "KRichTextEditPart"
+msgid "ChatTextEditPart"
+msgstr "KRichTextEditPart"
+
+#: kopete/chatwindow/chattexteditpart.cpp:524
+msgid "A simple rich text editor part"
+msgstr "ផ្នែក​កម្មវិធី​និពន្ធ​អត្ថបទ​សម្បូរ​បែប​សាមញ្ញ"
+
+#: kopete/chatwindow/chattexteditpart.cpp:526
+msgid "Richard J. Moore"
+msgstr "Richard J. Moore"
+
+#: kopete/chatwindow/chattexteditpart.cpp:529
+msgid "Benson Tsai"
+msgstr ""
+
+#: kopete/chatwindow/kopeterichtextwidget.cpp:137
+msgid "Enable &Rich Text"
+msgstr "អនុញ្ញាត​អត្ថបទ​សម្បូរ​បែប"
+
+#: kopete/chatwindow/kopeterichtextwidget.cpp:144
+msgid "Reset Font And Color"
+msgstr "កំណត់​ពុម្ពអក្សរ និង​ពណ៌​ឡើង​វិញ"
+
 #: kopete/chatwindow/kopeteemailwindow.cpp:167
 msgid "<< Prev"
 msgstr "<< មុន​"
@@ -2778,6 +2782,14 @@ msgstr "(0)បន្ទាប់ >>"
 msgid "&Set Font..."
 msgstr "កំណត់​ពុម្ពអក្សរ..."
 
+#: kopete/chatwindow/kopeteemailwindow.cpp:236
+msgid "Set Text &Color..."
+msgstr "កំណត់​ពណ៌អត្ថបទ..."
+
+#: kopete/chatwindow/kopeteemailwindow.cpp:240
+msgid "Set &Background Color..."
+msgstr "កំណត់​ពណ៌​ផ្ទៃ​ខាងក្រោយ..."
+
 #: kopete/chatwindow/kopeteemailwindow.cpp:269
 msgid "Spacer for animation"
 msgstr "ចន្លោះ​សម្រាប់​ចលនា"
@@ -2788,7 +2800,7 @@ msgid "(%1) Next >>"
 msgstr "(%1) បន្ទាប់​ >>"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:458
-#: kopete/chatwindow/chatview.cpp:363
+#: kopete/chatwindow/chatview.cpp:368
 #, kde-format
 msgid ""
 "<qt>You are about to leave the groupchat session <b>%1</b>.<br />You will "
@@ -2798,7 +2810,7 @@ msgstr ""
 "សន្ទនា​នេះ​ទេ ​​។</qt>"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:459
-#: kopete/chatwindow/chatview.cpp:364
+#: kopete/chatwindow/chatview.cpp:369
 msgid "Closing Group Chat"
 msgstr "ការ​បិទ​ការ​ជជែក​ជា​ក្រុម"
 
@@ -2809,7 +2821,7 @@ msgid "Cl&ose Chat"
 msgstr "បិទ​ការ​ជជែក"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:465
-#: kopete/chatwindow/chatview.cpp:370
+#: kopete/chatwindow/chatview.cpp:375
 #, kde-format
 msgid ""
 "<qt>You have received a message from <b>%1</b> in the last second. Are you "
@@ -2819,12 +2831,12 @@ msgstr ""
 "ឬ ?</qt>"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:466
-#: kopete/chatwindow/chatview.cpp:371
+#: kopete/chatwindow/chatview.cpp:376
 msgid "Unread Message"
 msgstr "សារ​មិន​ទាន់​អាន"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:472
-#: kopete/chatwindow/chatview.cpp:377
+#: kopete/chatwindow/chatview.cpp:382
 msgid ""
 "You have a message send in progress, which will be aborted if this chat is "
 "closed. Are you sure you want to close this chat?"
@@ -2832,7 +2844,7 @@ msgstr ""
 "អ្នក​កំពុង​តែ​ផ្ញើ​សារ​មួយ ដែល​នឹង​ត្រូវ​បោះបង់ បើ​អ្នក​បិទ​ការ​ជជែក​នេះ ។ តើ​អ្នក​ពិត​ជា​ចង់​បិទ​ការ​ជជែក​នេះ​ឬ ?"
 
 #: kopete/chatwindow/kopeteemailwindow.cpp:473
-#: kopete/chatwindow/chatview.cpp:378
+#: kopete/chatwindow/chatview.cpp:383
 msgid "Message in Transit"
 msgstr "សារ​នៅ​ក្នុង​ការ​ឆ្លងកាត់"
 
@@ -2850,115 +2862,55 @@ msgstr "ឆ្លើយតប​"
 msgid "Add Smiley"
 msgstr "បន្ថែម​ស្នាម​ញញឹម"
 
-#: kopete/chatwindow/krichtexteditpart.cpp:249
-msgid "KRichTextEditPart"
-msgstr "KRichTextEditPart"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:250
-msgid "A simple rich text editor part"
-msgstr "ផ្នែក​កម្មវិធី​និពន្ធ​អត្ថបទ​សម្បូរ​បែប​សាមញ្ញ"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:252
-msgid "Richard J. Moore"
-msgstr "Richard J. Moore"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:263
-msgid "Disable &Rich Text"
-msgstr "មិន​អនុញ្ញាត​អត្ថបទ​សម្បូរ​បែប"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:267
-msgid "Check &Spelling"
-msgstr "ពិនិត្យ​​អក្ខរាវិរុទ្ធ"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:272
-msgid "Text &Color..."
-msgstr "ពណ៌​អត្ថបទ..."
-
-#: kopete/chatwindow/krichtexteditpart.cpp:280
-msgid "&Font"
-msgstr "ពុម្ពអក្សរ​"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:285
-msgid "Font &Size"
-msgstr "ទំហំ​ពុម្ពអក្សរ"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:290
-msgid "&Bold"
-msgstr "ដិត"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:295
-msgid "&Italic"
-msgstr "ទ្រេត"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:301
-msgid "&Underline"
-msgstr "គូសបន្ទាត់ក្រោម"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:313
-msgid "Align &Left"
-msgstr "តម្រឹម​ឆ្វេង​"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:318
-msgid "Align &Center"
-msgstr "តម្រឹម​កណ្តាល​"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:323
-msgid "Align &Right"
-msgstr "តម្រឹម​ស្ដាំ"
-
-#: kopete/chatwindow/krichtexteditpart.cpp:328
-msgid "&Justify"
-msgstr "តម្រឹម​សង​ខាង"
-
-#: kopete/chatwindow/chatview.cpp:365 kopete/chatwindow/chatview.cpp:372
-#: kopete/chatwindow/chatview.cpp:379
+#: kopete/chatwindow/chatview.cpp:370 kopete/chatwindow/chatview.cpp:377
+#: kopete/chatwindow/chatview.cpp:384
 msgctxt "@action:button"
 msgid "Close Chat"
 msgstr "បិទ​ការ​ជជែក"
 
-#: kopete/chatwindow/chatview.cpp:419
+#: kopete/chatwindow/chatview.cpp:424
 #, kde-format
 msgid "One other person in the chat"
 msgid_plural "%1 other people in the chat"
 msgstr[0] "មាន​មនុស្ស %1 ​នាក់ផ្សេង​ទៀត​នៅ​ក្នុង​ការ​ជជែក"
 
-#: kopete/chatwindow/chatview.cpp:461
+#: kopete/chatwindow/chatview.cpp:476
 #, kde-format
 msgid "%1 is typing a message"
 msgstr "%1 កំពុង​វាយ​សារ"
 
-#: kopete/chatwindow/chatview.cpp:465
+#: kopete/chatwindow/chatview.cpp:480
 #, kde-format
 msgctxt "%1 is a list of names"
 msgid "%1 are typing a message"
 msgstr "%1 កំពុង​វាយ​សារ"
 
-#: kopete/chatwindow/chatview.cpp:522 kopete/chatwindow/chatview.cpp:531
+#: kopete/chatwindow/chatview.cpp:537 kopete/chatwindow/chatview.cpp:546
 #, kde-format
 msgid "%1 is now known as %2"
 msgstr "ឥឡូវ %1 ត្រូវ​បាន​ស្គាល់​ជា %2"
 
-#: kopete/chatwindow/chatview.cpp:550
+#: kopete/chatwindow/chatview.cpp:565
 #, kde-format
 msgid "%1 has joined the chat."
 msgstr "%1 បាន​ចូលរួម​ជជែក ។"
 
-#: kopete/chatwindow/chatview.cpp:595
+#: kopete/chatwindow/chatview.cpp:610
 #, kde-format
 msgid "%1 has left the chat."
 msgstr "%1 បាន​ចេញ​ពី​ការ​ជជែក ។"
 
-#: kopete/chatwindow/chatview.cpp:597
+#: kopete/chatwindow/chatview.cpp:612
 #, kde-format
 msgid "%1 has left the chat (%2)."
 msgstr "%1 បាន​ចេញ​ពី​ការ​ជជែក (%2) ។"
 
-#: kopete/chatwindow/chatview.cpp:704
+#: kopete/chatwindow/chatview.cpp:719
 #, kde-format
 msgid "You are now marked as %1."
 msgstr "ពេល​នេះ អ្នក​ត្រូវ​បាន​សម្គាល់​ជា %1 ។"
 
-#: kopete/chatwindow/chatview.cpp:709
+#: kopete/chatwindow/chatview.cpp:724
 #, kde-format
 msgid "%2 is now %1."
 msgstr "ពេល​នេះ %2 ជា %1 ។"
@@ -4945,7 +4897,7 @@ msgstr "កែ​សម្រួល"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:22
 #. i18n: ectx: Menu (settings)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:41
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:34
 #. i18n: ectx: Menu (settings)
 #. i18n: file: plugins/otr/otrprefs.ui:23
 #. i18n: ectx: attribute (title), widget (QWidget, settings)
@@ -4953,7 +4905,7 @@ msgstr "កែ​សម្រួល"
 #. i18n: ectx: Menu (settings)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:22
 #. i18n: ectx: Menu (settings)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:41
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:34
 #. i18n: ectx: Menu (settings)
 #. i18n: file: plugins/otr/otrprefs.ui:23
 #. i18n: ectx: attribute (title), widget (QWidget, settings)
@@ -4967,7 +4919,7 @@ msgstr "ការ​កំណត់"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:29
 #. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:52
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:45
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: kopete/kopeteui.rc:47
 #. i18n: ectx: ToolBar (mainToolBar)
@@ -4975,7 +4927,7 @@ msgstr "ការ​កំណត់"
 #. i18n: ectx: ToolBar (mainToolBar)
 #. i18n: file: kopete/chatwindow/kopeteemailwindow.rc:29
 #. i18n: ectx: ToolBar (mainToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:52
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:45
 #. i18n: ectx: ToolBar (mainToolBar)
 #: rc.cpp:914 rc.cpp:1082 rc.cpp:1097 rc.cpp:1115
 msgid "Main Toolbar"
@@ -5320,11 +5272,11 @@ msgstr "តម្រឹម​"
 
 #. i18n: file: kopete/chatwindow/kopeterichtexteditpartfull.rc:32
 #. i18n: ectx: ToolBar (formatToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:71
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:66
 #. i18n: ectx: ToolBar (formatToolBar)
 #. i18n: file: kopete/chatwindow/kopeterichtexteditpartfull.rc:32
 #. i18n: ectx: ToolBar (formatToolBar)
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:71
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:66
 #. i18n: ectx: ToolBar (formatToolBar)
 #: rc.cpp:1085 rc.cpp:1124
 msgid "Format Toolbar"
@@ -5379,13 +5331,13 @@ msgstr "ជជែក"
 msgid "&Format"
 msgstr "ទ្រង់ទ្រាយ​"
 
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:31
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:24
 #. i18n: ectx: Menu (tabs)
 #: rc.cpp:1109
 msgid "&Tabs"
 msgstr "ផ្ទាំង"
 
-#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:56
+#. i18n: file: kopete/chatwindow/kopetechatwindow.rc:50
 #. i18n: ectx: ToolBar (chatToolBar)
 #: rc.cpp:1118
 msgid "Chat Toolbar"
@@ -22090,6 +22042,45 @@ msgid ""
 msgstr ""
 "សូម​ទោស យើង​មិនអាច​តភ្ជាប់​ទៅ​កាន់​ម៉ាស៊ីនបម្រើ mDNS មូលដ្ឋាន​បានទេ ។ សូម​ប្រាកដ​ថា ដេមិន Avahi កំពុង​"
 "តែ​រត់ ។"
+
+#~ msgid "Set &Font..."
+#~ msgstr "កំណត់​ពុម្ពអក្សរ..."
+
+#~ msgid "Disable &Rich Text"
+#~ msgstr "មិន​អនុញ្ញាត​អត្ថបទ​សម្បូរ​បែប"
+
+#~ msgid "Check &Spelling"
+#~ msgstr "ពិនិត្យ​​អក្ខរាវិរុទ្ធ"
+
+#~ msgid "Text &Color..."
+#~ msgstr "ពណ៌​អត្ថបទ..."
+
+#~ msgid "&Font"
+#~ msgstr "ពុម្ពអក្សរ​"
+
+#~ msgid "Font &Size"
+#~ msgstr "ទំហំ​ពុម្ពអក្សរ"
+
+#~ msgid "&Bold"
+#~ msgstr "ដិត"
+
+#~ msgid "&Italic"
+#~ msgstr "ទ្រេត"
+
+#~ msgid "&Underline"
+#~ msgstr "គូសបន្ទាត់ក្រោម"
+
+#~ msgid "Align &Left"
+#~ msgstr "តម្រឹម​ឆ្វេង​"
+
+#~ msgid "Align &Center"
+#~ msgstr "តម្រឹម​កណ្តាល​"
+
+#~ msgid "Align &Right"
+#~ msgstr "តម្រឹម​ស្ដាំ"
+
+#~ msgid "&Justify"
+#~ msgstr "តម្រឹម​សង​ខាង"
 
 #~ msgctxt "@info"
 #~ msgid "Question and Answer"
