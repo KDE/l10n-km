@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kttsd\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-02 11:25+0100\n"
+"POT-Creation-Date: 2009-02-10 10:23+0100\n"
 "PO-Revision-Date: 2008-12-19 09:08+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -96,7 +96,7 @@ msgstr "ជ្រើស​និយាយ​ដើម្បី​​ការន
 #. i18n: ectx: property (text), widget (QLabel, synthesizerLabel)
 #. i18n: file: libkttsd/selecttalkerwidget.ui:158
 #. i18n: ectx: property (text), widget (QLabel, synthLabel)
-#: rc.cpp:26 rc.cpp:237
+#: rc.cpp:26 rc.cpp:327
 msgid "&Synthesizer:"
 msgstr "អ្នក​សង្គ្រោះ​ ៖"
 
@@ -117,7 +117,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, languageLabel)
 #. i18n: file: libkttsd/selecttalkerwidget.ui:68
 #. i18n: ectx: property (text), widget (QLabel, languageLabelLabel)
-#: rc.cpp:32 rc.cpp:228
+#: rc.cpp:32 rc.cpp:318
 msgid "&Language:"
 msgstr "ភាសា ៖"
 
@@ -225,7 +225,7 @@ msgstr "ឡើង​លើ​"
 #. i18n: ectx: property (text), widget (KPushButton, lowerFilterPriorityButton)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:292
 #. i18n: ectx: property (text), widget (QPushButton, downButton)
-#: rc.cpp:77 rc.cpp:110 rc.cpp:441 kcmkttsmgr/kcmkttsmgr.cpp:334
+#: rc.cpp:77 rc.cpp:110 rc.cpp:531 kcmkttsmgr/kcmkttsmgr.cpp:334
 msgid "Do&wn"
 msgstr "ចុះក្រោម"
 
@@ -255,7 +255,7 @@ msgstr "ចុច ដើម្បី​យក​ឧបករណ៍​និយ�
 #. i18n: ectx: property (text), widget (KPushButton, removeFilterButton)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:334
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
-#: rc.cpp:89 rc.cpp:122 rc.cpp:453 kcmkttsmgr/kcmkttsmgr.cpp:338
+#: rc.cpp:89 rc.cpp:122 rc.cpp:543 kcmkttsmgr/kcmkttsmgr.cpp:338
 #, fuzzy
 msgid "&Remove"
 msgstr "យក​ចេញ​"
@@ -506,7 +506,7 @@ msgstr "បញ្ជាក់​ថត​ដែល​ឯកសារ​អូឌ
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, timeBox)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:382
 #. i18n: ectx: property (whatsThis), widget (QSlider, timeSlider)
-#: rc.cpp:209 rc.cpp:215 rc.cpp:222 rc.cpp:776 rc.cpp:796 rc.cpp:809
+#: rc.cpp:209 rc.cpp:215 rc.cpp:222 rc.cpp:866 rc.cpp:886 rc.cpp:899
 msgid ""
 "Sets the speed of speech.  Slide the slider to the left to slow speech down; "
 "to the right to increase talking speed.  Anything less than 75 percent is "
@@ -541,15 +541,281 @@ msgstr "ល្បឿន ៖"
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, timeBox)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:309
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, frequencyBox)
-#: rc.cpp:219 rc.cpp:673 rc.cpp:680 rc.cpp:786 rc.cpp:793 rc.cpp:800
-#: rc.cpp:906 rc.cpp:922 rc.cpp:938
+#: rc.cpp:219 rc.cpp:763 rc.cpp:770 rc.cpp:876 rc.cpp:883 rc.cpp:890
+#: rc.cpp:996 rc.cpp:1012 rc.cpp:1028
 #, no-c-format
 msgid " %"
 msgstr " %"
 
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:13
+#. i18n: ectx: property (windowTitle), widget (QWidget, kttsjobmgr)
+#: rc.cpp:225 kcmkttsmgr/kcmkttsmgr.cpp:1718
+#, fuzzy
+#| msgid "&Jobs"
+msgid "Jobs"
+msgstr "ការងារ​"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:32
+#. i18n: ectx: property (whatsThis), widget (QTreeView, m_jobListView)
+#: rc.cpp:228
+#, fuzzy
+msgid ""
+"<p>These are all the text jobs.  The <b>State</b> column may be:\n"
+"        <ul>\n"
+"        <li><b>Queued</b> - the job is waiting and will not be spoken until "
+"its state is changed to <b>Waiting</b> by clicking the <b>Resume</b> or "
+"<b>Restart</b> buttons.</li>\n"
+"        <li><b>Waiting</b> - the job is ready to be spoken.  It will be "
+"spoken when the jobs preceding it in the list have finished.</li>\n"
+"        <li><b>Speaking</b> - the job is speaking.  The <b>Position</b> "
+"column shows the current sentence of the job being spoken.  You may pause a "
+"speaking job by clicking the <b>Hold</b> button.</li>\n"
+"        <li><b>Paused</b> - the job is currently paused.  Paused jobs "
+"prevent jobs below them from speaking.  Use the <b>Resume</b> or <b>Restart</"
+"b> buttons to resume speaking the job, or click <b>Later</b> to move the job "
+"down in the list.</li>\n"
+"        <li><b>Finished</b> - the job has finished speaking.  When a second "
+"job finishes, this one will be deleted.  You may click <b>Restart</b> to "
+"repeat the job.</li>\n"
+"        </ul>\n"
+"        <em>Note</em>: Messages, Warnings, and Screen Reader Output do not "
+"appear in this list.  See the Handbook for more information.\n"
+"        </p>"
+msgstr ""
+"<p>មាន​ការងារ​អត្ថបទ​ការងារ​ជា​ច្រើន​។  <b>ជួរឈរ​រដ្ឋ</b>ប្រហែល​ជា​ ៖ <ul><li><b>នៅ​បន្ត​បន្ទាប់​"
+"</b> - ការងារ​កំពង់​រង់ចាំ​ ហើយ​មិនត្រូវ​បាន​និយាយ ដល់​រដ្ឋ​របស់​វា​បាន​ផ្លាស់ប្តូរ​ <b>កំពុង​រង់ចាំ​</"
+"b>ចុចប៊ូតុង​​ <b>ធ្វើបន្ត​</b> ឬ <b>ចាប់ផ្តើម​ឡើង​វិញ </b>  ។ </li><li><b>រង់ចាំ​</b> - ការងារ​"
+"បាននិយាយ​រួចហើយ​ ។   វា​ និងនិយាយ​ពេលការងារ​មកដល់​មុន​ក្នុង​បញ្ជី​ដែល​បាន​បញ្ចប់​ ។ </"
+"li><li><b>ការនិយាយ</b> - ការងារ​ជា​ការនិយាយ​ ។    <b>ទីតាំង​</b> ជួរឈរ​បង្ហាញ​ក្នុង​ប្រយោគ​"
+"បច្ចុប្បន្ន​នៃ​ការងារ​ដែល​កំពុង​ចាប់​ផ្តើម​និយាយ​ ។ អ្នក​ប្រហែល​ជា​ផ្អាកការងារ​និយាយដោយ​ចុច​ប៊ូតុង​ <b>រង់ចាំ</"
+"b> ។ </li><li><b>បានផ្អាក​</b> - ការងារ​បច្ចុប្បន្ន​ត្រូវ​បានផ្អាក​​។ ផ្អាក​ការងារ​ "
+"ការពារការងា​រខាងក្រោម​ពី​ការនិយាយ​​។ ចុច​ប៊ូតុង​ <b>ធ្វើ​បន្ត</b> ឬ​ <b>ចាប់ផ្តើម​ឡើង​វិញ​</b> ដើម្បី​"
+"ធ្វើ​បន្ត​ការងារ​និយាយ​ឬ​ចុច​ <b>ពេល​ក្រោយ​</b> ដើម្បី​ផ្លាស់ទី​ការងារ​ចុះក្រោម​ក្នុង​បញ្ជី ។ </"
+"li><li><b>បញ្ចប់​</b> -ការងារ​និយាយ​បាន​បញ្ចប់​ ។ ពេល​ដែល​ការងារ​ទីពីរបាន​បញ្ចប់​ ហើយ​ការងារ​មួយ​នឹង "
+"ត្រូវ​បាន​លុប​​។ អ្នក​ប្រហែល​ជា​ចុច​ <b>ចាប់ផ្តើម​ឡើង​វិញ​</b> ដើម្បីធ្វើការងារ​នេះ​ម្តង​ទៀត​ ​។ </li></"
+"ul><em>ចំណាំ​</em> ៖ សារ​ ការព្រមាន​ និង​អេក្រង់​កម្មវិធី​អាន​ទិន្នផល​មិន​បាន​លេចឡើង​ក្នុង​បញ្ជី​នេះ​ទេ ។  "
+"ព័ត៌មាន​បន្ថែម​សូម​មើល​សៀវភៅដៃ​ ។ </p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:45
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_hold)
+#: rc.cpp:240
+#, fuzzy
+msgid ""
+"<p>Changes a job to Paused state.  If currently speaking, the job stops "
+"speaking. Paused jobs prevent jobs that follow them from speaking, so either "
+"click <b>Resume</b> to make the job speakable, or click <b>Later</b> to move "
+"it down in the list.</p>"
+msgstr ""
+"<p>ផ្លាស់ប្ដូរ​ការងារ​ទៅ​សភាព​ផ្អាក ។  បើ​កំពុង​និយាយ​ថ្មីៗ ការងារ​ឈប់​និយាយ ។  ការងារ​ដែល​ផ្អាក​"
+"ការពារ​ការងារ​ដែល​ធ្វើ​តាម​ក្រោយ​ការ​និយាយ ដូច្នេះចុច <b>បន្ត</b> ដើម្បី​ធ្វើ​ឲ្យ​ការងារ​អាច​និយាយ​"
+"បាន ឬ​ចុច <b>ពេល​ក្រោយ</b> ដើម្បី​ផ្លាស់ទី​វា​ចុះ​ក្នុង​បញ្ជី ។</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:48
+#. i18n: ectx: property (text), widget (KPushButton, job_hold)
+#: rc.cpp:243
+#, fuzzy
+msgid "Hold"
+msgstr "រង់ចាំ​"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:55
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_resume)
+#: rc.cpp:246
+#, fuzzy
+msgid ""
+"<p>Resumes a paused job or changes a Queued job to Waiting.  If the job is "
+"the top speakable job in the list, it begins speaking.</p>"
+msgstr ""
+"<p>បន្ត​ការងារ​ដែល​បាន​ផ្អាក ឬ​ផ្លាស់ប្ដូរ​ការងារ​ដែល​បាន​ដាក់​ជា​ជួរ​ទៅ​រង់ចាំ ។  បើ​ការងារ​គឺ​ជា​ការងារ​"
+"ដែល​អាច​និយាយ​កំពូល​ក្នុង​បញ្ជី វា​ចាប់ផ្ដើម​និយាយ ។</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:58
+#. i18n: ectx: property (text), widget (KPushButton, job_resume)
+#: rc.cpp:249
+#, fuzzy
+msgid "Resume"
+msgstr "បន្ត"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:65
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_restart)
+#: rc.cpp:252
+#, fuzzy
+msgid ""
+"<p>Rewinds a job to the beginning and changes its state to Waiting.  If the "
+"job is the top speakable job in the list, it begins speaking.</p>"
+msgstr ""
+"<p>ខារ​ថយ​ក្រោយ​ការងារ​ទៅ​ចំណុច​ដំបូង និង​ផ្លាស់ប្ដូរ​សភាព​របស់​វា​ទៅ រង់​ចាំ ។  បើ​ការងារ​គឺ​ជា​ការងារ​ដែល​"
+"អាច​និយាយ​កំពូល​ក្នុង​បញ្ជី វា​ចាប់ផ្ដើម​និយាយ ។</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:68
+#. i18n: ectx: property (text), widget (KPushButton, job_restart)
+#: rc.cpp:255
+#, fuzzy
+msgctxt "Restart a job to the beginning"
+msgid "R&estart"
+msgstr "ចាប់ផ្ដើម​ឡើង​វិញ"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:75
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_remove)
+#: rc.cpp:258
+#, fuzzy
+msgid ""
+"<p>Deletes the job.  If it is currently speaking, it stops speaking.  The "
+"next speakable job in the list begins speaking.</p>"
+msgstr ""
+"<p>លុប​ការងារ​ ។ បើ​វា​ជាការនិយាយ​បច្ចុប្បន្ន​ វា​បញ្ឈប់​ការនិយាយ​ភ្លាម​ ។   ការងា​ដែលអាច​និយាយ​បន្ទាប់​"
+"ក្នុង​បញ្ជី​ចាប់ផ្តើម​និយាយ​ ​។​</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:78
+#. i18n: ectx: property (text), widget (KPushButton, job_remove)
+#: rc.cpp:261
+#, fuzzy
+msgid "Re&move"
+msgstr "យក​ចេញ"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:85
+#. i18n: ectx: property (text), widget (KPushButton, job_removeall)
+#: rc.cpp:264
+#, fuzzy
+msgid "Remove &All"
+msgstr "យក​ចេញ​"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:92
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_later)
+#: rc.cpp:267
+#, fuzzy
+msgid ""
+"<p>Moves a job downward in the list so that it will be spoken later.  If the "
+"job is currently speaking, its state changes to Paused.</p>"
+msgstr ""
+"<p>ផ្លាស់ទី​ការងារ​ចុះក្រោម​ក្នុង​បញ្ជី​ ដូច្នេះ​វា​នឹង​និយាយ​ពេល​ក្រោយ ។ បើ​ការងារ​ជា​ការនិយាយ​បច្ចុប្បន្ន​ "
+"សភាព​របស់​វា​ផ្លាស់ប្តូរ​ទៅ​ផ្អាក​ ។</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:95
+#. i18n: ectx: property (text), widget (KPushButton, job_later)
+#: rc.cpp:270
+#, fuzzy
+msgid "&Later"
+msgstr "ពេល​ក្រោយ"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:106
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_prevsentence)
+#: rc.cpp:273
+#, fuzzy
+msgid "<p>Rewinds a job to the previous sentence.</p>"
+msgstr "<p>ខារ​ថយ​ក្រោយ​ការងារ​ទៅកាន់​ប្រយោគ​មុន ។</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:109
+#. i18n: ectx: property (text), widget (KPushButton, job_prevsentence)
+#: rc.cpp:276
+#, fuzzy
+msgid "&Previous Sentence"
+msgstr "ប្រយោគ​មុន​"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:116
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_nextsentence)
+#: rc.cpp:279
+#, fuzzy
+msgid "<p>Advances a job to the next sentence.</p>"
+msgstr "<p>ការងារ​កម្រិត​ខ្ពស់​ទៅ​បន្ទាប់​ប្រយោគ​បន្ទាប់ ។​</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:119
+#. i18n: ectx: property (text), widget (KPushButton, job_nextsentence)
+#: rc.cpp:282
+#, fuzzy
+msgid "&Next Sentence"
+msgstr "ប្រយោគ​បន្ទាប់"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:130
+#. i18n: ectx: property (whatsThis), widget (KPushButton, speak_clipboard)
+#: rc.cpp:285
+#, fuzzy
+msgid ""
+"<p>Queues the current contents of the clipboard for speaking and sets its "
+"state to Waiting.  If the job is the topmost in the list, it begins "
+"speaking.  The job will be spoken by the topmost Talker in the <b>Talkers</"
+"b> tab.</p>"
+msgstr ""
+"<p>មាតិកា​លំដាប់​បន្តគ្នា​បច្ចុប្បន្ន​នៃ​ក្តារតម្រៀត​ខ្ទាប់​ការនិយាយ​ និង​កំណត់​ស្ថានភាព​របស់​វា​ដើម្បីរង់ចាំ​​។  "
+"បើ​ការងារ​ស្ថិត​នៅ​មុន​ដំបូង​គេ​ក្នុង​បញ្ជី​ វា​ចាប់​ផ្តើម​និយាយ​ ។  ការងារ​នឹង ត្រូវ​បាន​និយាយ​ដោយ​អ្នក​និយាយ​ខ្ពស់​"
+"ជាង​គេ​ក្នុង​<b>ផ្ទាំង​អ្នក​និយា​យ</b>  ។​</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:133
+#. i18n: ectx: property (text), widget (KPushButton, speak_clipboard)
+#: rc.cpp:288
+#, fuzzy
+msgid "&Speak Clipboard"
+msgstr "ក្ដារ​តម្បៀត​ខ្ទាស់​និយាយ"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:140
+#. i18n: ectx: property (whatsThis), widget (KPushButton, speak_file)
+#: rc.cpp:291
+#, fuzzy
+msgid ""
+"<p>Prompts you for a file name and queues the contents of the file for "
+"speaking.  You must click the <b>Resume</b> button before the job will be "
+"speakable.  The job will be spoken by the topmost Talker in the <b>Talkers</"
+"b> tab.</p>"
+msgstr ""
+"<p>ប្រអប់​បញ្ចូល​ឈ្មោះ​ឯកសារ​ និង​ឯកសារ​លំដាប់​មាតិកា​សម្រាប់​ការនិយាយ​ ។ អ្នក​ត្រូវ​តែ​ចុច​ប៊ូតុង​ <b>ធ្វើ​បន្ត​</"
+"b>មុន​ការងារ​ដែល​អាច​និយាយ​បាន​ ។   ការងារ​អាច​និយាយ​តាមអ្នកនិយាយ​មាន​លំដាប់​មុន​គេ​ក្នុង​ <b>ផ្ទាំង​អ្នក​"
+"និយាយ​</b> ​ ។​</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:143
+#. i18n: ectx: property (text), widget (KPushButton, speak_file)
+#: rc.cpp:294
+#, fuzzy
+msgid "Spea&k File"
+msgstr "ឯកសារ​និយាយ​"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:150
+#. i18n: ectx: property (whatsThis), widget (KPushButton, job_changetalker)
+#: rc.cpp:297
+#, fuzzy
+msgid ""
+"<p>Prompts you with a list of your configured Talkers from the <b>Talkers</"
+"b> tab.  The job will be spoken using the selected Talker.</p>"
+msgstr ""
+"<p>ប្រអប់​បញ្ចូល​ដែល​មាន​បញ្ជី​អ្នក​និយាយ​បានកំណត់​រចនាសម្ព័ន្ធ​របស់​អ្នក​ពី​ថេប <b>អ្នកនិយាយ​</b>  ។   "
+"ការងារ​​នឹង​បាន​ត្រូវ​និយាយ​ដោយ​ជ្រើស​អ្នក​និយាយ​ ។​</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:153
+#. i18n: ectx: property (text), widget (KPushButton, job_changetalker)
+#: rc.cpp:300
+#, fuzzy
+msgid "Change Talker"
+msgstr "ផ្លាស់ប្តូរ​អ្នក​និយាយ​"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:160
+#. i18n: ectx: property (whatsThis), widget (KPushButton, refresh)
+#: rc.cpp:303
+#, fuzzy
+msgid "<p>Refresh the list of jobs.</p>"
+msgstr "<p>ធ្វើ​ឲ្យ​ស្រស់​បញ្ជី​ការងារ ។</p>"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:163
+#. i18n: ectx: property (text), widget (KPushButton, refresh)
+#: rc.cpp:306
+#, fuzzy
+msgid "&Refresh"
+msgstr "ធ្វើ​ឲ្យ​ស្រស់"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:172
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:309
+#, fuzzy
+msgid "Current Sentence"
+msgstr "ប្រយោគ​បច្ចុប្បន្ន​"
+
+#. i18n: file: kttsjobmgr/kttsjobmgr.ui:179
+#. i18n: ectx: property (whatsThis), widget (KTextEdit, m_currentSentence)
+#: rc.cpp:312
+#, fuzzy
+msgid "<p>The text of the sentence currently speaking.</p>"
+msgstr "<p>អត្ថបទ​នៃ​ប្រយោគ​ដែល​និយាយ​បច្ចុប្បន្ន ។</p>"
+
 #. i18n: file: libkttsd/selecttalkerwidget.ui:24
 #. i18n: ectx: property (windowTitle), widget (QWidget, SelectTalkerWidget)
-#: rc.cpp:225 kttsjobmgr/kttsjobmgr.cpp:398 libkttsd/selecttalkerdlg.h:59
+#: rc.cpp:315 kttsjobmgr/kttsjobmgr.cpp:282 libkttsd/selecttalkerdlg.h:59
 #: filters/talkerchooser/talkerchooserconf.cpp:220
 #, fuzzy
 msgid "Select Talker"
@@ -569,28 +835,28 @@ msgstr "ជ្រើស​អ្នក​និយាយ"
 #. i18n: ectx: property (text), widget (KPushButton, reEditorButton)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:207
 #. i18n: ectx: property (text), widget (KPushButton, talkerButton)
-#: rc.cpp:231 rc.cpp:288 rc.cpp:324 rc.cpp:363 rc.cpp:402 rc.cpp:504
-#: rc.cpp:522
+#: rc.cpp:321 rc.cpp:378 rc.cpp:414 rc.cpp:453 rc.cpp:492 rc.cpp:594
+#: rc.cpp:612
 msgid "..."
 msgstr "..."
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:143
 #. i18n: ectx: property (text), widget (QLabel, preferredLabel)
-#: rc.cpp:234
+#: rc.cpp:324
 #, fuzzy
 msgid "Checked items are preferred over unchecked items."
 msgstr "ធាតុ​បាន​ធីក​គេ​និយម​ប្រើ​ជា​ធាតុ​ដែល​មិន​បាន​ធីក ។"
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:214
 #. i18n: ectx: property (text), widget (QLabel, rateLabel)
-#: rc.cpp:240
+#: rc.cpp:330
 #, fuzzy
 msgid "&Rate:"
 msgstr "អត្រា ៖"
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:267
 #. i18n: ectx: property (text), widget (QLabel, genderLabel)
-#: rc.cpp:243
+#: rc.cpp:333
 #, fuzzy
 msgid "&Gender:"
 msgstr "ភេទ ៖"
@@ -599,14 +865,14 @@ msgstr "ភេទ ៖"
 #. i18n: ectx: property (text), widget (QLabel, volumeLabel)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:171
 #. i18n: ectx: property (text), widget (QLabel, volumeLabel)
-#: rc.cpp:246 rc.cpp:767
+#: rc.cpp:336 rc.cpp:857
 #, fuzzy
 msgid "&Volume:"
 msgstr "កម្រិត​សំឡេង ៖"
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:429
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, useClosestMatchRadioButton)
-#: rc.cpp:249
+#: rc.cpp:339
 #, fuzzy
 msgid ""
 "When checked, will use a configured Talker most closely matching the "
@@ -619,14 +885,14 @@ msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:432
 #. i18n: ectx: property (text), widget (QRadioButton, useClosestMatchRadioButton)
-#: rc.cpp:252
+#: rc.cpp:342
 #, fuzzy
 msgid "Use closest &matching Talker having"
 msgstr "ប្រើ ប្រអប់​តូច​មួយ​ដែល​កំពុង​ផ្គូផ្គង​អ្នក​និយាយ​"
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:439
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, useDefaultRadioButton)
-#: rc.cpp:255
+#: rc.cpp:345
 #, fuzzy
 msgid ""
 "When checked, will use the default Talker, which is the topmost Talker "
@@ -635,14 +901,14 @@ msgstr "ពេល​ធីក វា​​នឹងប្រើ​អ្នក�
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:442
 #. i18n: ectx: property (text), widget (QRadioButton, useDefaultRadioButton)
-#: rc.cpp:258
+#: rc.cpp:348
 #, fuzzy
 msgid "&Use default Talker"
 msgstr "ប្រើ​អ្នក​និយាយ​លំនាំដើម​"
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:449
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, useSpecificTalkerRadioButton)
-#: rc.cpp:261
+#: rc.cpp:351
 #, fuzzy
 msgid ""
 "When checked, will use the specific Talker (if it is still configured), "
@@ -653,14 +919,14 @@ msgstr ""
 
 #. i18n: file: libkttsd/selecttalkerwidget.ui:452
 #. i18n: ectx: property (text), widget (QRadioButton, useSpecificTalkerRadioButton)
-#: rc.cpp:264
+#: rc.cpp:354
 #, fuzzy
 msgid "Use specific &Talker"
 msgstr "ប្រើ​អ្នក​និយាយ​ជាក់លាក់​"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:33
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:267
+#: rc.cpp:357
 msgid ""
 "<b>WARNING: This filter is a key component of the KTTS system. Please read "
 "the KTTS Handbook before modifying these settings.</b>"
@@ -670,7 +936,7 @@ msgstr ""
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:51
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
-#: rc.cpp:270
+#: rc.cpp:360
 #, fuzzy
 #| msgid "The name of this filter.  Enter any descriptive name you like."
 msgctxt "What's this text"
@@ -685,19 +951,19 @@ msgstr "ឈ្មោះ​របស់តម្រង ។  បញ្ចូល�
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:94
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: rc.cpp:273 rc.cpp:375 rc.cpp:474 rc.cpp:558
+#: rc.cpp:363 rc.cpp:465 rc.cpp:564 rc.cpp:648
 msgid "&Name:"
 msgstr "ឈ្មោះ​ ៖"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:67
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
-#: rc.cpp:276
+#: rc.cpp:366
 msgid "The name of this filter.  Enter any descriptive name you like."
 msgstr "ឈ្មោះ​របស់តម្រង ។  បញ្ចូល​ឈ្មោះ​ពិពណ៌នា​ដែលអ្នក​ចូលចិត្ត ។"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:84
 #. i18n: ectx: property (whatsThis), widget (QLabel, reLabel)
-#: rc.cpp:279
+#: rc.cpp:369
 #, fuzzy
 #| msgid ""
 #| "The regular expression that detects boundaries between sentences in text "
@@ -710,13 +976,13 @@ msgstr "កន្សោម​ធម្មតា​ដេល​ចាប់ព្
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:87
 #. i18n: ectx: property (text), widget (QLabel, reLabel)
-#: rc.cpp:282
+#: rc.cpp:372
 msgid "&Sentence boundary regular expression:"
 msgstr "កន្សោម​ធម្មតា​របស់​នៃ​ព្រំដែន​ប្រយោគ ៖"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:100
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, reLineEdit)
-#: rc.cpp:285
+#: rc.cpp:375
 msgid ""
 "The regular expression that detects boundaries between sentences in text "
 "jobs."
@@ -724,7 +990,7 @@ msgstr "កន្សោម​ធម្មតា​ដេល​ចាប់ព្
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:124
 #. i18n: ectx: property (whatsThis), widget (QLabel, sbLabel)
-#: rc.cpp:291
+#: rc.cpp:381
 #, fuzzy
 #| msgid ""
 #| "This string replaces the matched regular expression.  <b>Important</b>: "
@@ -739,13 +1005,13 @@ msgstr ""
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:127
 #. i18n: ectx: property (text), widget (QLabel, sbLabel)
-#: rc.cpp:294
+#: rc.cpp:384
 msgid "&Replacement sentence boundary:"
 msgstr "ការ​ជំនួស​ព្រំដែន​ប្រយោគ​  ៖"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:140
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, sbLineEdit)
-#: rc.cpp:297
+#: rc.cpp:387
 msgid ""
 "This string replaces the matched regular expression.  <b>Important</b>: must "
 "end with tab (\\t)."
@@ -761,7 +1027,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, applyGroupBox)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:141
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, applyGroupBox)
-#: rc.cpp:300 rc.cpp:381 rc.cpp:480 rc.cpp:573
+#: rc.cpp:390 rc.cpp:471 rc.cpp:570 rc.cpp:663
 msgid "These settings determines when the filter is applied to text."
 msgstr "ការ​កំណត់​ទាំង​នេះ កំណត់​នៅពេល​ដែល​តម្រង​ត្រូវ​បាន​អនុវត្ត​ទៅកាន់​អត្ថបទ ។"
 
@@ -769,7 +1035,7 @@ msgstr "ការ​កំណត់​ទាំង​នេះ កំណត់�
 #. i18n: ectx: property (title), widget (QGroupBox, applyGroupBox)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:144
 #. i18n: ectx: property (title), widget (QGroupBox, applyGroupBox)
-#: rc.cpp:303 rc.cpp:576
+#: rc.cpp:393 rc.cpp:666
 msgid "Apply This &Filter When"
 msgstr "អនុវត្ត​តម្រង​ពេល​"
 
@@ -777,7 +1043,7 @@ msgstr "អនុវត្ត​តម្រង​ពេល​"
 #. i18n: ectx: property (whatsThis), widget (QLabel, languageLabel)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:81
 #. i18n: ectx: property (whatsThis), widget (QLabel, languageLabel)
-#: rc.cpp:306 rc.cpp:384
+#: rc.cpp:396 rc.cpp:474
 #, fuzzy
 #| msgid ""
 #| "This filter is applied to text jobs of the specified language.  You may "
@@ -797,7 +1063,7 @@ msgstr ""
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:175
 #. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: rc.cpp:309
+#: rc.cpp:399
 msgid "&Language is:"
 msgstr "ភាសា​គឺ ៖"
 
@@ -805,7 +1071,7 @@ msgstr "ភាសា​គឺ ៖"
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:100
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
-#: rc.cpp:312 rc.cpp:492
+#: rc.cpp:402 rc.cpp:582
 msgid ""
 "Enter a DCOP Application ID.  This filter will only apply to text jobs "
 "queued by that application.  You may enter more than one ID separated by "
@@ -825,7 +1091,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, appIdLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:103
 #. i18n: ectx: property (text), widget (QLabel, appIdLabel)
-#: rc.cpp:315 rc.cpp:393 rc.cpp:495
+#: rc.cpp:405 rc.cpp:483 rc.cpp:585
 msgid "Application &ID contains:"
 msgstr "លេខ​សម្គាល់​កម្មវិធី មាន ៖"
 
@@ -833,7 +1099,7 @@ msgstr "លេខ​សម្គាល់​កម្មវិធី មាន 
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, languageLineEdit)
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, languageLineEdit)
-#: rc.cpp:318 rc.cpp:396
+#: rc.cpp:408 rc.cpp:486
 msgid ""
 "This filter is applied to text jobs of the specified language.  You may "
 "select more than one language by clicking the browse button and Ctrl-"
@@ -850,7 +1116,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KPushButton, languageBrowseButton)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:141
 #. i18n: ectx: property (whatsThis), widget (KPushButton, reEditorButton)
-#: rc.cpp:321 rc.cpp:399 rc.cpp:501
+#: rc.cpp:411 rc.cpp:489 rc.cpp:591
 msgid ""
 "Click to select one or more languages.  This filter will be applied to text "
 "jobs of those languages."
@@ -861,7 +1127,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:153
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
-#: rc.cpp:327 rc.cpp:507
+#: rc.cpp:417 rc.cpp:597
 #, fuzzy
 msgid ""
 "<qt>Enter a DCOP Application ID.  This filter will only apply to text jobs "
@@ -880,26 +1146,26 @@ msgstr ""
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:272
 #. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
-#: rc.cpp:330
+#: rc.cpp:420
 msgid "Click to load a Sentence Boundary Detection configuration from a file."
 msgstr "ចុច ដើម្បី​ផ្ទុក​ការកំណត់​រចនាសម្ព័ន្ធ​ការចាប់យក​ព្រំដែន​ប្រយោគ​ពីឯកសារ ។"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:275
 #. i18n: ectx: property (text), widget (KPushButton, loadButton)
-#: rc.cpp:333
+#: rc.cpp:423
 #, fuzzy
 msgid "Lo&ad..."
 msgstr "ផ្ទុក​..."
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:290
 #. i18n: ectx: property (whatsThis), widget (KPushButton, saveButton)
-#: rc.cpp:336
+#: rc.cpp:426
 msgid "Click to save this Sentence Boundary Detection configuration to a file."
 msgstr "ចុច​ដើម្បី រក្សាទុក​ការកំណត់រចនាសម្ព័ន្ធការចាប់យក​ព្រំដែន​ប្រយោគ​​ទៅកាន់​ឯកសារ ។"
 
 #. i18n: file: filters/sbd/sbdconfwidget.ui:293
 #. i18n: ectx: property (text), widget (KPushButton, saveButton)
-#: rc.cpp:339
+#: rc.cpp:429
 msgid "Sa&ve..."
 msgstr "រក្សាទុក​..."
 
@@ -907,7 +1173,7 @@ msgstr "រក្សាទុក​..."
 #. i18n: ectx: property (whatsThis), widget (KPushButton, clearButton)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:268
 #. i18n: ectx: property (whatsThis), widget (KPushButton, clearButton)
-#: rc.cpp:342 rc.cpp:537
+#: rc.cpp:432 rc.cpp:627
 msgid "Click to clear everything."
 msgstr "ចុច​ ដើម្បី​សម្អាត​អ្វី​ទាំងអស់ ។"
 
@@ -915,56 +1181,56 @@ msgstr "ចុច​ ដើម្បី​សម្អាត​អ្វី​�
 #. i18n: ectx: property (text), widget (KPushButton, clearButton)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:271
 #. i18n: ectx: property (text), widget (KPushButton, clearButton)
-#: rc.cpp:345 rc.cpp:540
+#: rc.cpp:435 rc.cpp:630
 #, fuzzy
 msgid "Cl&ear"
 msgstr "ជម្រះ"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:25
 #. i18n: ectx: property (title), widget (QGroupBox, typeGroupBox)
-#: rc.cpp:348
+#: rc.cpp:438
 #, fuzzy
 msgid "&Type"
 msgstr "ប្រភេទ"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:37
 #. i18n: ectx: property (text), widget (QRadioButton, wordRadioButton)
-#: rc.cpp:351
+#: rc.cpp:441
 #, fuzzy
 msgid "&Word"
 msgstr "ពាក្យ"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:47
 #. i18n: ectx: property (text), widget (QRadioButton, regexpRadioButton)
-#: rc.cpp:354
+#: rc.cpp:444
 #, fuzzy
 msgid "Regular &expression"
 msgstr "កន្សោម​ធម្មតា"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:65
 #. i18n: ectx: property (text), widget (QLabel, matchLabel)
-#: rc.cpp:357
+#: rc.cpp:447
 #, fuzzy
 msgid "&Match:"
 msgstr "ផ្គូផ្គង ៖"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:78
 #. i18n: ectx: property (text), widget (QLabel, substLabel)
-#: rc.cpp:360
+#: rc.cpp:450
 #, fuzzy
 msgid "&Replace with:"
 msgstr "ជំនួស​ដោយ​ ៖​"
 
 #. i18n: file: filters/stringreplacer/editreplacementwidget.ui:135
 #. i18n: ectx: property (text), widget (QCheckBox, matchCaseCheckBox)
-#: rc.cpp:366
+#: rc.cpp:456
 #, fuzzy
 msgid "Match &case"
 msgstr "ករណី​ដំណូច"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, StringReplacerConfWidget)
-#: rc.cpp:369
+#: rc.cpp:459
 #, fuzzy
 msgid "Configure String Replacer"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ​អ្នក​ជំនួស​​ខ្សែ​អក្សរ"
@@ -973,7 +1239,7 @@ msgstr "កំណត់​រចនា​សម្ព័ន្ធ​អ្នក
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:36
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
-#: rc.cpp:372 rc.cpp:471
+#: rc.cpp:462 rc.cpp:561
 #, fuzzy
 msgctxt "What's this text"
 msgid "Enter any name you like for this filter."
@@ -983,21 +1249,21 @@ msgstr "បញ្ចូល​ឈ្មោះ​ណា​មួយ​ដែល​
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:52
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
-#: rc.cpp:378 rc.cpp:477
+#: rc.cpp:468 rc.cpp:567
 #, fuzzy
 msgid "Enter any name you like for this filter."
 msgstr "បញ្ចូល​ឈ្មោះ​ណា​មួយ​ដែល​អ្នក​ចូល​ចិត្ត​សម្រាប់​តម្រង​នេះ ។"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:84
 #. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: rc.cpp:387
+#: rc.cpp:477
 #, fuzzy
 msgid "Lan&guage is:"
 msgstr "ភាសា​គឺ ៖"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
-#: rc.cpp:390
+#: rc.cpp:480
 #, fuzzy
 msgid ""
 "Enter a D-Bus Application ID.  This filter will only apply to text jobs "
@@ -1014,7 +1280,7 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:153
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
-#: rc.cpp:405
+#: rc.cpp:495
 #, fuzzy
 msgid ""
 "<qt>Enter a D-Bus Application ID.  This filter will only apply to text jobs "
@@ -1033,14 +1299,14 @@ msgstr ""
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:181
 #. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
-#: rc.cpp:408
+#: rc.cpp:498
 #, fuzzy
 msgid "Click to load a word list from a file."
 msgstr "ចុច ដើម្បី​ផ្ទុក​ការ​កំណត់​រចនា​សម្ព័ន្ធ​ការ​ចាប់​យក​ព្រំដែន​ប្រយោគ​ពី​ឯកសារ ។"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:184
 #. i18n: ectx: property (text), widget (KPushButton, loadButton)
-#: rc.cpp:411
+#: rc.cpp:501
 #, fuzzy
 msgctxt "Load a word list from a file"
 msgid "Load"
@@ -1048,28 +1314,28 @@ msgstr "ផ្ទុក"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:199
 #. i18n: ectx: property (whatsThis), widget (KPushButton, saveButton)
-#: rc.cpp:414
+#: rc.cpp:504
 #, fuzzy
 msgid "Click to save word list to a file."
 msgstr "ចុច​រក្សា​ទុក​បញ្ជី​ពាក្យ​ក្នុង​ឯកសារ​"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:202
 #. i18n: ectx: property (text), widget (KPushButton, saveButton)
-#: rc.cpp:417
+#: rc.cpp:507
 #, fuzzy
 msgid "&Save"
 msgstr "រក្សាទុក "
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:217
 #. i18n: ectx: property (whatsThis), widget (KPushButton, clearButton)
-#: rc.cpp:420
+#: rc.cpp:510
 #, fuzzy
 msgid "Click to empty the word list."
 msgstr "ចុច​ដើម្បី​ធ្វើ​ឲ្យ​បញ្ជី​ពាក្យ​ទទេ ។"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:220
 #. i18n: ectx: property (text), widget (KPushButton, clearButton)
-#: rc.cpp:423
+#: rc.cpp:513
 #, fuzzy
 msgctxt "Clear the word list"
 msgid "Clear"
@@ -1077,21 +1343,21 @@ msgstr "ជម្រះ"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:253
 #. i18n: ectx: property (whatsThis), widget (KPushButton, addButton)
-#: rc.cpp:426
+#: rc.cpp:516
 #, fuzzy
 msgid "Click to add another word or regular expression to the list."
 msgstr "ចុច​បន្ថែម​ពាក្យ​ឬ កន្សោម​ពាក្យ​ដែល​ត្រឹមត្រូវ​ទៅ​កាន់​បញ្ជី​ ។​"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:256
 #. i18n: ectx: property (text), widget (KPushButton, addButton)
-#: rc.cpp:429
+#: rc.cpp:519
 #, fuzzy
 msgid "&Add"
 msgstr "បន្ថែម"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:271
 #. i18n: ectx: property (whatsThis), widget (QPushButton, upButton)
-#: rc.cpp:432
+#: rc.cpp:522
 #, fuzzy
 msgid ""
 "Click to move selected word up in the list.  Words higher in the list are "
@@ -1100,14 +1366,14 @@ msgstr "ចុច​ផ្លាស់ទី​ពាក្យ​ដែល​ប
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:274
 #. i18n: ectx: property (text), widget (QPushButton, upButton)
-#: rc.cpp:435
+#: rc.cpp:525
 #, fuzzy
 msgid "&Up"
 msgstr "ឡើង​លើ"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:289
 #. i18n: ectx: property (whatsThis), widget (QPushButton, downButton)
-#: rc.cpp:438
+#: rc.cpp:528
 #, fuzzy
 msgid ""
 "Click to move a word down in the list.  Words lower in the list are applied "
@@ -1116,70 +1382,70 @@ msgstr "ចុច​ផ្លាស់ទី​ពាក្យ​ដែល​ប
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:310
 #. i18n: ectx: property (whatsThis), widget (KPushButton, editButton)
-#: rc.cpp:444
+#: rc.cpp:534
 #, fuzzy
 msgid "Click to modify an existing word or regular expression in the list."
 msgstr "ចុច​ដើម្បី​កែប្រែ​ពាក្យ​ដែល​មាន ឬ​កន្សោម​ធម្មតា​ក្នុង​បញ្ជី ។"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:313
 #. i18n: ectx: property (text), widget (KPushButton, editButton)
-#: rc.cpp:447
+#: rc.cpp:537
 #, fuzzy
 msgid "&Edit"
 msgstr "កែសម្រួល"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:331
 #. i18n: ectx: property (whatsThis), widget (KPushButton, removeButton)
-#: rc.cpp:450
+#: rc.cpp:540
 #, fuzzy
 msgid "Click to remove a word or regular expression from the list."
 msgstr "ចុច​ដើម្បី​យក​ចេញ​ពាក្យ ឬ​កន្សោម​ធម្មតា​ចេញ​ពី​បញ្ជី ។"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:372
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:456
+#: rc.cpp:546
 #, fuzzy
 msgid "Type"
 msgstr "ប្រភេទ"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:377
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:459
+#: rc.cpp:549
 #, fuzzy
 msgid "Match Case"
 msgstr "ករណី​ដំណូច"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:382
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:462
+#: rc.cpp:552
 #, fuzzy
 msgid "Match"
 msgstr "ផ្គូផ្គង"
 
 #. i18n: file: filters/stringreplacer/stringreplacerconfwidget.ui:387
 #. i18n: ectx: property (text), widget (QTableWidget, substLView)
-#: rc.cpp:465
+#: rc.cpp:555
 #, fuzzy
 msgid "Replace With"
 msgstr "ជំនួស​ដោយ"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, TalkerChooserConfWidget)
-#: rc.cpp:468
+#: rc.cpp:558
 #, fuzzy
 msgid "Configure Talker Chooser"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ឧបករណ៍​ជ្រើស​អ្នក​និយាយ"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:64
 #. i18n: ectx: property (title), widget (QGroupBox, applyGroupBox)
-#: rc.cpp:483
+#: rc.cpp:573
 #, fuzzy
 msgid "&Apply This Filter When"
 msgstr "អនុវត្ត​តម្រង​នេះ​ពេល"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:84
 #. i18n: ectx: property (whatsThis), widget (QLabel, reLabel)
-#: rc.cpp:486
+#: rc.cpp:576
 #, fuzzy
 msgctxt "What's this text"
 msgid ""
@@ -1194,14 +1460,14 @@ msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:87
 #. i18n: ectx: property (text), widget (QLabel, reLabel)
-#: rc.cpp:489
+#: rc.cpp:579
 #, fuzzy
 msgid "Te&xt contains:"
 msgstr "អត្ថបទ​មាន ៖"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, reLineEdit)
-#: rc.cpp:498
+#: rc.cpp:588
 #, fuzzy
 msgid ""
 "This filter is applied to text jobs of the specified language.  You may "
@@ -1217,7 +1483,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (QLabel, talkerLabel)
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:197
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, talkerLineEdit)
-#: rc.cpp:510 rc.cpp:516
+#: rc.cpp:600 rc.cpp:606
 #, fuzzy
 msgid ""
 "The new Talker that will be used when the conditions above are met.  The "
@@ -1229,55 +1495,55 @@ msgstr ""
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:184
 #. i18n: ectx: property (text), widget (QLabel, talkerLabel)
-#: rc.cpp:513
+#: rc.cpp:603
 #, fuzzy
 msgid "&Talker:"
 msgstr "អ្នក​និយាយ ៖​"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:204
 #. i18n: ectx: property (whatsThis), widget (KPushButton, talkerButton)
-#: rc.cpp:519
+#: rc.cpp:609
 #, fuzzy
 msgid "Click to select a Talker."
 msgstr "ចុច​ដើម្បី​ជ្រើស​អ្នក​និយាយ ។"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:232
 #. i18n: ectx: property (whatsThis), widget (KPushButton, loadButton)
-#: rc.cpp:525
+#: rc.cpp:615
 #, fuzzy
 msgid "Click to load a Talker Chooser configuration from a file."
 msgstr "ចុច​ដើម្បី​ផ្ទុក​ការ​កំណត់​រចនា​សម្ព័ន្ធ​ឧបករណ៍​ជ្រើស​អ្នក​និយាយ​ពី​ឯកសារ ។"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:235
 #. i18n: ectx: property (text), widget (KPushButton, loadButton)
-#: rc.cpp:528
+#: rc.cpp:618
 #, fuzzy
 msgid "&Load..."
 msgstr "ផ្ទុក..."
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:250
 #. i18n: ectx: property (whatsThis), widget (KPushButton, saveButton)
-#: rc.cpp:531
+#: rc.cpp:621
 #, fuzzy
 msgid "Click to save this Talker Chooser to a file."
 msgstr "ចុច​ដើម្បី​រក្សា​ទុក​ឧបករណ៍​ជ្រើស​អ្នក​និយាយ​ទៅ​ឯកសារ ។"
 
 #. i18n: file: filters/talkerchooser/talkerchooserconfwidget.ui:253
 #. i18n: ectx: property (text), widget (KPushButton, saveButton)
-#: rc.cpp:534
+#: rc.cpp:624
 #, fuzzy
 msgid "&Save..."
 msgstr "រក្សា​ទុក..."
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, XmlTransformerConfWidget)
-#: rc.cpp:543
+#: rc.cpp:633
 msgid "Configure XML Transformer"
 msgstr "កំណត់រចនាសម្ព័ន្ធ​អ្នក​ប្លែង​ XML"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:44
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, nameLineEdit)
-#: rc.cpp:546
+#: rc.cpp:636
 msgid "Enter any descriptive name you like for this filter."
 msgstr "បញ្ចូល​ឈ្មោះ​ពិពណ៌នា​ណាមួយ ដែលអ្នក​ចង់​ប្រើ​សម្រាប់​តម្រង​នេះ ។"
 
@@ -1285,7 +1551,7 @@ msgstr "បញ្ចូល​ឈ្មោះ​ពិពណ៌នា​ណាម
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, xsltPath)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:107
 #. i18n: ectx: property (whatsThis), widget (QLabel, xsltLabel)
-#: rc.cpp:549 rc.cpp:561
+#: rc.cpp:639 rc.cpp:651
 msgid ""
 "Enter the full path to an XML Style Language - Transforms (XSLT) stylesheet "
 "file.  XSLT files usually end with extension .xsl."
@@ -1297,7 +1563,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, xsltprocPath)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:123
 #. i18n: ectx: property (whatsThis), widget (QLabel, xsltprocLabel)
-#: rc.cpp:552 rc.cpp:567
+#: rc.cpp:642 rc.cpp:657
 msgid ""
 "Enter the path to the xsltproc executable program.  If it is in the PATH "
 "environment variable, just enter \"xsltproc\"."
@@ -1307,7 +1573,7 @@ msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:91
 #. i18n: ectx: property (whatsThis), widget (QLabel, nameLabel)
-#: rc.cpp:555
+#: rc.cpp:645
 #, fuzzy
 #| msgid "Enter any descriptive name you like for this filter."
 msgctxt "What's this text"
@@ -1316,19 +1582,19 @@ msgstr "បញ្ចូល​ឈ្មោះ​ពិពណ៌នា​ណាម
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:110
 #. i18n: ectx: property (text), widget (QLabel, xsltLabel)
-#: rc.cpp:564
+#: rc.cpp:654
 msgid "&XSLT file:"
 msgstr "ឯកសារ​XSLT  ៖"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:126
 #. i18n: ectx: property (text), widget (QLabel, xsltprocLabel)
-#: rc.cpp:570
+#: rc.cpp:660
 msgid "xsltproc &executable:"
 msgstr "xsltproc ដែលអាច​ចូល​ប្រតិបត្តិ​បាន ៖"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:172
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, rootElementLineEdit)
-#: rc.cpp:579
+#: rc.cpp:669
 #, fuzzy
 msgid ""
 "This filter will be applied only to text having the specified XML root "
@@ -1343,7 +1609,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, doctypeLineEdit)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:235
 #. i18n: ectx: property (whatsThis), widget (QLabel, doctypeLabel)
-#: rc.cpp:582 rc.cpp:594
+#: rc.cpp:672 rc.cpp:684
 #, fuzzy
 msgid ""
 "This filter will be applied only to text having the specified DOCTYPE "
@@ -1358,7 +1624,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, appIdLineEdit)
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:251
 #. i18n: ectx: property (whatsThis), widget (QLabel, appIdLabel)
-#: rc.cpp:585 rc.cpp:600
+#: rc.cpp:675 rc.cpp:690
 #, fuzzy
 msgid ""
 "<qt>Enter a D-Bus Application ID.  This filter will only apply to text "
@@ -1377,7 +1643,7 @@ msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:219
 #. i18n: ectx: property (whatsThis), widget (QLabel, rootElementLabel)
-#: rc.cpp:588
+#: rc.cpp:678
 #, fuzzy
 msgctxt "What's this text"
 msgid ""
@@ -1391,39 +1657,39 @@ msgstr ""
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:222
 #. i18n: ectx: property (text), widget (QLabel, rootElementLabel)
-#: rc.cpp:591
+#: rc.cpp:681
 msgid "&Root element is:"
 msgstr "ធាតុ Root គឺ ៖"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:238
 #. i18n: ectx: property (text), widget (QLabel, doctypeLabel)
-#: rc.cpp:597
+#: rc.cpp:687
 #, fuzzy
 msgid "or DOC&TYPE is:"
 msgstr "ឬ DOCTYPE គឺ ៖"
 
 #. i18n: file: filters/xmltransformer/xmltransformerconfwidget.ui:254
 #. i18n: ectx: property (text), widget (QLabel, appIdLabel)
-#: rc.cpp:603
+#: rc.cpp:693
 #, fuzzy
 msgid "and Application &ID contains:"
 msgstr "និង​លេខ​សម្គាល់​កម្មវិធី​មាន ៖"
 
 #. i18n: file: plugins/command/commandconfwidget.ui:25
 #. i18n: ectx: property (title), widget (QGroupBox, confiurationBox)
-#: rc.cpp:606
+#: rc.cpp:696
 msgid "Co&mmand Configuration"
 msgstr "ការកំណត់​រចនា​សម្ព័ន្ធ​ពាក្យ​បញ្ជា"
 
 #. i18n: file: plugins/command/commandconfwidget.ui:47
 #. i18n: ectx: property (text), widget (QLabel, urlLabel)
-#: rc.cpp:609
+#: rc.cpp:699
 msgid "Command &for speaking texts:"
 msgstr "ពាក្យ​បញ្ជា​សម្រាប់​អត្ថបទ​និយាយ ៖"
 
 #. i18n: file: plugins/command/commandconfwidget.ui:57
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, urlReq)
-#: rc.cpp:613
+#: rc.cpp:703
 #, no-c-format
 msgid ""
 "This field specifies both the command used for speaking texts and its "
@@ -1439,13 +1705,13 @@ msgstr ""
 
 #. i18n: file: plugins/command/commandconfwidget.ui:69
 #. i18n: ectx: property (text), widget (QCheckBox, stdInButton)
-#: rc.cpp:616
+#: rc.cpp:706
 msgid "&Send the data as standard input"
 msgstr "ផ្ញើ​ទិន្នន័យ​ជា​ព័ត៌មាន​បញ្ចូលខ្នាត​គំរូ"
 
 #. i18n: file: plugins/command/commandconfwidget.ui:72
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, stdInButton)
-#: rc.cpp:619
+#: rc.cpp:709
 msgid ""
 "This check box specifies whether the text is sent as standard input (stdin) "
 "to the speech synthesizer."
@@ -1463,7 +1729,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, fliteTest)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:499
 #. i18n: ectx: property (text), widget (KPushButton, testButton)
-#: rc.cpp:622 rc.cpp:731 rc.cpp:821 rc.cpp:857 rc.cpp:974
+#: rc.cpp:712 rc.cpp:821 rc.cpp:911 rc.cpp:947 rc.cpp:1064
 msgid "&Test"
 msgstr "សាកល្បង​"
 
@@ -1473,7 +1739,7 @@ msgstr "សាកល្បង​"
 #. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:445
 #. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
-#: rc.cpp:625 rc.cpp:651 rc.cpp:968
+#: rc.cpp:715 rc.cpp:741 rc.cpp:1058
 msgid "Character &encoding:"
 msgstr "ការអ៊ិនកូដ​តួអក្សរ ៖"
 
@@ -1481,7 +1747,7 @@ msgstr "ការអ៊ិនកូដ​តួអក្សរ ៖"
 #. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:495
 #. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
-#: rc.cpp:628 rc.cpp:830
+#: rc.cpp:718 rc.cpp:920
 msgid ""
 "This combo box specifies which character encoding is used for passing the "
 "text."
@@ -1489,7 +1755,7 @@ msgstr "ប្រអប់​បន្សំ​នេះ បញ្ជាក់�
 
 #. i18n: file: plugins/command/commandconfwidget.ui:148
 #. i18n: ectx: property (text), widget (QLabel, explanationLabel)
-#: rc.cpp:632
+#: rc.cpp:722
 #, no-c-format
 msgid ""
 "Parameters:\n"
@@ -1506,7 +1772,7 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:24
 #. i18n: ectx: property (windowTitle), widget (QWidget, EposConfWidget)
-#: rc.cpp:639
+#: rc.cpp:729
 msgid "Epos Config UI"
 msgstr "UI កំណត់​រចនាសម្ព័ន្ធ​របស់ Epos"
 
@@ -1514,7 +1780,7 @@ msgstr "UI កំណត់​រចនាសម្ព័ន្ធ​របស់
 #. i18n: ectx: property (whatsThis), widget (QWidget, EposConfWidget)
 #. i18n: file: plugins/epos/eposconfwidget.ui:47
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, eposConfigurationBox)
-#: rc.cpp:642 rc.cpp:645
+#: rc.cpp:732 rc.cpp:735
 msgid ""
 "This is the configuration dialog for the Epos Czech and Slovak speech "
 "synthesizer."
@@ -1522,13 +1788,13 @@ msgstr "នេះ​គឺ​ជាប្រអប់​កំណត់​រច
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:50
 #. i18n: ectx: property (title), widget (QGroupBox, eposConfigurationBox)
-#: rc.cpp:648
+#: rc.cpp:738
 msgid "E&pos Configuration"
 msgstr "ការកំណត់រចនាសម្ព័ន្ធ Epos"
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:96
 #. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
-#: rc.cpp:654
+#: rc.cpp:744
 msgid "Specifies which character encoding is used for passing the text."
 msgstr "បញ្ជាក់​ការអ៊ិនកូដ​តួអក្សរ​ណាមួយ​ដែលត្រូវបាន​ប្រើ​សម្រាប់​ការហុច​អត្ថបទ ។"
 
@@ -1538,7 +1804,7 @@ msgstr "បញ្ជាក់​ការអ៊ិនកូដ​តួអក្
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, timeBox)
 #. i18n: file: plugins/epos/eposconfwidget.ui:249
 #. i18n: ectx: property (whatsThis), widget (QSlider, timeSlider)
-#: rc.cpp:657 rc.cpp:669 rc.cpp:683
+#: rc.cpp:747 rc.cpp:759 rc.cpp:773
 msgid ""
 "Sets the speed of speech.  Slide the slider to the left to slow speech down; "
 "to the right to increase talking speed.  Anything less than 75 percent is "
@@ -1553,7 +1819,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, timeLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:209
 #. i18n: ectx: property (text), widget (QLabel, timeLabel)
-#: rc.cpp:660 rc.cpp:915
+#: rc.cpp:750 rc.cpp:1005
 msgid "Speed:"
 msgstr "ល្បឿន ៖"
 
@@ -1563,7 +1829,7 @@ msgstr "ល្បឿន ៖"
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, frequencyBox)
 #. i18n: file: plugins/epos/eposconfwidget.ui:277
 #. i18n: ectx: property (whatsThis), widget (QSlider, frequencySlider)
-#: rc.cpp:663 rc.cpp:676 rc.cpp:686
+#: rc.cpp:753 rc.cpp:766 rc.cpp:776
 msgid ""
 "Sets the tone (frequency) of speech.  Slide the slider to the left to lower "
 "the voice tone; to the right to increase tone.  Anything less than 75 "
@@ -1576,7 +1842,7 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:153
 #. i18n: ectx: property (text), widget (QLabel, frequencyLabel)
-#: rc.cpp:666
+#: rc.cpp:756
 msgid "Pitch:"
 msgstr "កម្ពស់​សម្លេង ៖"
 
@@ -1584,7 +1850,7 @@ msgstr "កម្ពស់​សម្លេង ៖"
 #. i18n: ectx: property (whatsThis), widget (QLabel, eposServerPathLabel)
 #. i18n: file: plugins/epos/eposconfwidget.ui:385
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, eposServerPath)
-#: rc.cpp:689 rc.cpp:701
+#: rc.cpp:779 rc.cpp:791
 msgid ""
 "If the Epos server program will be found due to your PATH environment "
 "variable, simply enter \"epos\", otherwise enter the full path to the Epos "
@@ -1595,7 +1861,7 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:330
 #. i18n: ectx: property (text), widget (QLabel, eposServerPathLabel)
-#: rc.cpp:692
+#: rc.cpp:782
 msgid "Epos server executable path:"
 msgstr "ផ្លូវ​ដែលអាច​ចូល​ប្រតិបត្តិ​ម៉ាស៊ីន​បម្រើ Epos ៖"
 
@@ -1603,7 +1869,7 @@ msgstr "ផ្លូវ​ដែលអាច​ចូល​ប្រតិបត
 #. i18n: ectx: property (whatsThis), widget (QLabel, eposClientPathLabel)
 #. i18n: file: plugins/epos/eposconfwidget.ui:400
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, eposClientPath)
-#: rc.cpp:695 rc.cpp:704
+#: rc.cpp:785 rc.cpp:794
 msgid ""
 "If the Epos client program will be found due to the PATH environment "
 "variable, simply enter \"say\" here.  Otherwise, specify the full path to "
@@ -1614,13 +1880,13 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:354
 #. i18n: ectx: property (text), widget (QLabel, eposClientPathLabel)
-#: rc.cpp:698
+#: rc.cpp:788
 msgid "Epos client executable path:"
 msgstr "ផ្លូវ​ដែលអាច​ចូល​ប្រតិបត្តិ​ម៉ាស៊ីន​ភ្ញៀវ Epos បាន ៖"
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:411
 #. i18n: ectx: property (title), widget (QGroupBox, advancedGroupBox)
-#: rc.cpp:707
+#: rc.cpp:797
 msgid "Additional Options (advanced)"
 msgstr "ជម្រើស​បន្ថែម (កម្រិត​ខ្ពស់)"
 
@@ -1628,7 +1894,7 @@ msgstr "ជម្រើស​បន្ថែម (កម្រិត​ខ្ព�
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, eposServerOptions)
 #. i18n: file: plugins/epos/eposconfwidget.ui:471
 #. i18n: ectx: property (whatsThis), widget (QLabel, eposServerOptionsLabel)
-#: rc.cpp:710 rc.cpp:716
+#: rc.cpp:800 rc.cpp:806
 msgid ""
 "Optional.  Enter any server command line options here.  To see available "
 "options, enter \"epos -h\" in a terminal.  Do not use \"-o\"."
@@ -1640,7 +1906,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, eposClientOptions)
 #. i18n: file: plugins/epos/eposconfwidget.ui:495
 #. i18n: ectx: property (whatsThis), widget (QLabel, eposClientOptionsLabel)
-#: rc.cpp:713 rc.cpp:722
+#: rc.cpp:803 rc.cpp:812
 msgid ""
 "Specify options to be passed to Epos client.  To see available options, "
 "enter \"say -h\" in a terminal.  Do not use \"-o\"."
@@ -1650,19 +1916,19 @@ msgstr ""
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:474
 #. i18n: ectx: property (text), widget (QLabel, eposServerOptionsLabel)
-#: rc.cpp:719
+#: rc.cpp:809
 msgid "Epos server:"
 msgstr "ម៉ាស៊ីន Epos ៖"
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:498
 #. i18n: ectx: property (text), widget (QLabel, eposClientOptionsLabel)
-#: rc.cpp:725
+#: rc.cpp:815
 msgid "Epos client:"
 msgstr "ម៉ាស៊ីន​ភ្ញៀវ Epos ៖"
 
 #. i18n: file: plugins/epos/eposconfwidget.ui:542
 #. i18n: ectx: property (whatsThis), widget (QPushButton, eposTest)
-#: rc.cpp:728
+#: rc.cpp:818
 msgid ""
 "Click to test the configuration.  If correct, you will hear a sentence "
 "spoken."
@@ -1670,7 +1936,7 @@ msgstr "ចុច ដើម្បី​សាកល្បង​កំណត់�
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:24
 #. i18n: ectx: property (windowTitle), widget (QWidget, FestivalIntConfWidget)
-#: rc.cpp:734
+#: rc.cpp:824
 #, fuzzy
 msgid "Festival Config UI"
 msgstr "ព្រឹត្តិការណ៍​កំណត់​រចនា​សម្ព័ន្ធ UI"
@@ -1679,7 +1945,7 @@ msgstr "ព្រឹត្តិការណ៍​កំណត់​រចនា
 #. i18n: ectx: property (whatsThis), widget (QWidget, FestivalIntConfWidget)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:44
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, festivalConfigurationBox)
-#: rc.cpp:737 rc.cpp:743
+#: rc.cpp:827 rc.cpp:833
 #, fuzzy
 msgid ""
 "This is the dialog for configuring the Festival speech synthesizer in "
@@ -1688,14 +1954,14 @@ msgstr "នេះ​គឺ​ជា​ប្រអប់​សម្រាប់
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:41
 #. i18n: ectx: property (title), widget (QGroupBox, festivalConfigurationBox)
-#: rc.cpp:740
+#: rc.cpp:830
 #, fuzzy
 msgid "Festival &Interactive Configuration"
 msgstr "ការ​កំណត់​រចនា​សម្ព័ន្ធ​អន្តសកម្ម​ព្រឹត្តិការណ៍"
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:72
 #. i18n: ectx: property (text), widget (QLabel, festivalPathLabel)
-#: rc.cpp:746
+#: rc.cpp:836
 #, fuzzy
 msgid "&Festival executable:"
 msgstr "ព្រឹត្តិការណ៍​ដែល​អាច​ប្រតិបត្តិ​បាន ៖"
@@ -1704,7 +1970,7 @@ msgstr "ព្រឹត្តិការណ៍​ដែល​អាច​ប្
 #. i18n: ectx: property (whatsThis), widget (QLabel, festivalPathLabel)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:96
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, festivalPath)
-#: rc.cpp:749 rc.cpp:752
+#: rc.cpp:839 rc.cpp:842
 #, fuzzy
 msgid ""
 "If Festival is in your PATH environment variable, just enter \"festival\", "
@@ -1715,7 +1981,7 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:113
 #. i18n: ectx: property (text), widget (QLabel, selectVoiceLabel)
-#: rc.cpp:755
+#: rc.cpp:845
 #, fuzzy
 msgid "&Select voice:"
 msgstr "ជ្រើស​សំឡេង ៖​"
@@ -1724,7 +1990,7 @@ msgstr "ជ្រើស​សំឡេង ៖​"
 #. i18n: ectx: property (whatsThis), widget (QLabel, selectVoiceLabel)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:137
 #. i18n: ectx: property (whatsThis), widget (KComboBox, selectVoiceCombo)
-#: rc.cpp:758 rc.cpp:761
+#: rc.cpp:848 rc.cpp:851
 #, fuzzy
 msgid ""
 "Select a voice to speak text with.  MultiSyn voices are high quality but are "
@@ -1740,7 +2006,7 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:144
 #. i18n: ectx: property (text), widget (KPushButton, rescan)
-#: rc.cpp:764
+#: rc.cpp:854
 #, fuzzy
 msgctxt "Rescan for voices"
 msgid "&Rescan"
@@ -1752,7 +2018,7 @@ msgstr "វិភាគ​រក​ឡើ​ង​វិញ​"
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, volumeBox)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:354
 #. i18n: ectx: property (whatsThis), widget (QSlider, volumeSlider)
-#: rc.cpp:770 rc.cpp:789 rc.cpp:806
+#: rc.cpp:860 rc.cpp:879 rc.cpp:896
 #, fuzzy
 msgid ""
 "Sets the volume (loudness) of speech.  Slide the slider to the left to lower "
@@ -1766,7 +2032,7 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:192
 #. i18n: ectx: property (text), widget (QLabel, timeLabel)
-#: rc.cpp:773
+#: rc.cpp:863
 #, fuzzy
 msgid "Sp&eed:"
 msgstr "ល្បឿន ៖"
@@ -1775,7 +2041,7 @@ msgstr "ល្បឿន ៖"
 #. i18n: ectx: property (text), widget (QLabel, frequencyLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:288
 #. i18n: ectx: property (text), widget (QLabel, frequencyLabel)
-#: rc.cpp:779 rc.cpp:931
+#: rc.cpp:869 rc.cpp:1021
 #, fuzzy
 msgid "&Pitch:"
 msgstr "កម្ពស់​សំឡេង ៖"
@@ -1786,7 +2052,7 @@ msgstr "កម្ពស់​សំឡេង ៖"
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, frequencyBox)
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:410
 #. i18n: ectx: property (whatsThis), widget (QSlider, frequencySlider)
-#: rc.cpp:782 rc.cpp:803 rc.cpp:812
+#: rc.cpp:872 rc.cpp:893 rc.cpp:902
 #, fuzzy
 msgid ""
 "Sets the tone (frequency) of speech.  Slide the slider to the left to lower "
@@ -1800,14 +2066,14 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:426
 #. i18n: ectx: property (text), widget (QCheckBox, preloadCheckBox)
-#: rc.cpp:815
+#: rc.cpp:905
 #, fuzzy
 msgid "&Load this voice when starting KTTSD"
 msgstr "ផ្ទុក​សំឡេង​នេះ​ពេល​កំពង់​ចាប់​ផ្តើម​ KTTSD"
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:429
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, preloadCheckBox)
-#: rc.cpp:818
+#: rc.cpp:908
 #, fuzzy
 msgid ""
 "If checked, Festival will be started and this voice will be loaded when the "
@@ -1821,7 +2087,7 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:455
 #. i18n: ectx: property (whatsThis), widget (QPushButton, testButton)
-#: rc.cpp:824
+#: rc.cpp:914
 #, fuzzy
 msgid ""
 "Click to test the configuration.  Festival will be started and a test "
@@ -1832,14 +2098,14 @@ msgstr ""
 
 #. i18n: file: plugins/festivalint/festivalintconfwidget.ui:477
 #. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
-#: rc.cpp:827
+#: rc.cpp:917
 #, fuzzy
 msgid "Character e&ncoding:"
 msgstr "ការ​អ៊ីនកូដ​តួ​អក្សរ ៖"
 
 #. i18n: file: plugins/flite/fliteconfwidget.ui:24
 #. i18n: ectx: property (windowTitle), widget (QWidget, FliteConfWidget)
-#: rc.cpp:833
+#: rc.cpp:923
 msgid "Flite Config UI"
 msgstr "UI កំណត់​រចនាសម្ព័ន្ធ Flite"
 
@@ -1847,7 +2113,7 @@ msgstr "UI កំណត់​រចនាសម្ព័ន្ធ Flite"
 #. i18n: ectx: property (whatsThis), widget (QWidget, FliteConfWidget)
 #. i18n: file: plugins/flite/fliteconfwidget.ui:60
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, fliteConfigurationBox)
-#: rc.cpp:836 rc.cpp:842
+#: rc.cpp:926 rc.cpp:932
 msgid ""
 "This is the configuration dialog for the Festival Lite (Flite) speech "
 "synthesis engine."
@@ -1855,13 +2121,13 @@ msgstr "នេះ​គឺ​ជា​ប្រអប់​កំណត់​រ
 
 #. i18n: file: plugins/flite/fliteconfwidget.ui:57
 #. i18n: ectx: property (title), widget (QGroupBox, fliteConfigurationBox)
-#: rc.cpp:839
+#: rc.cpp:929
 msgid "Festival &Lite (flite) Configuration"
 msgstr "ការកំណត់​រចនាសម្ព័ន្ធ Festival Lite (flite)"
 
 #. i18n: file: plugins/flite/fliteconfwidget.ui:88
 #. i18n: ectx: property (text), widget (QLabel, flitePathLabel)
-#: rc.cpp:845
+#: rc.cpp:935
 msgid "&Flite executable path:"
 msgstr "ផ្លូវ​ដែលអាច​ប្រតិបត្តិ Flite ៖"
 
@@ -1869,7 +2135,7 @@ msgstr "ផ្លូវ​ដែលអាច​ប្រតិបត្តិ Fl
 #. i18n: ectx: property (whatsThis), widget (QLabel, flitePathLabel)
 #. i18n: file: plugins/flite/fliteconfwidget.ui:115
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, flitePath)
-#: rc.cpp:848 rc.cpp:854
+#: rc.cpp:938 rc.cpp:944
 msgid ""
 "If Flite is in your PATH environment variable, simply enter \"flite\", "
 "otherwise specify the complete path to the Flite executable program."
@@ -1879,31 +2145,31 @@ msgstr ""
 
 #. i18n: file: plugins/flite/fliteconfwidget.ui:112
 #. i18n: ectx: property (url), widget (KUrlRequester, flitePath)
-#: rc.cpp:851
+#: rc.cpp:941
 msgid "flite"
 msgstr "flite"
 
 #. i18n: file: plugins/freetts/freettsconfigwidget.ui:24
 #. i18n: ectx: property (windowTitle), widget (QWidget, FreeTTSConfWidget)
-#: rc.cpp:860
+#: rc.cpp:950
 msgid "FreeTTS Config UI"
 msgstr "FreeTTS Config UI"
 
 #. i18n: file: plugins/freetts/freettsconfigwidget.ui:54
 #. i18n: ectx: property (title), widget (QGroupBox, freettsConfigurationBox)
-#: rc.cpp:863
+#: rc.cpp:953
 msgid "FreeTTS Interactive Configuration"
 msgstr "អន្តរ​កំណត់​រចនាសម្ព័ន្ធរបស់ FreeTTS"
 
 #. i18n: file: plugins/freetts/freettsconfigwidget.ui:82
 #. i18n: ectx: property (text), widget (QLabel, freettsPathLabel)
-#: rc.cpp:866
+#: rc.cpp:956
 msgid "&FreeTTS jar file:"
 msgstr "ឯកសារ FreeTTS jar ៖"
 
 #. i18n: file: plugins/freetts/freettsconfigwidget.ui:143
 #. i18n: ectx: property (text), widget (QPushButton, freettsTest)
-#: rc.cpp:869
+#: rc.cpp:959
 #, fuzzy
 #| msgid "Test"
 msgctxt "Test the settings"
@@ -1912,7 +2178,7 @@ msgstr "សាកល្បង"
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, HadifixConfigUI)
-#: rc.cpp:872
+#: rc.cpp:962
 #, fuzzy
 msgid "Hadifix Configuration"
 msgstr "ការ​កំណត់​រចនា​សម្ព័ន្ធ Hadifix"
@@ -1921,7 +2187,7 @@ msgstr "ការ​កំណត់​រចនា​សម្ព័ន្ធ Ha
 #. i18n: ectx: property (whatsThis), widget (QWidget, HadifixConfigUI)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:42
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, GroupBox4)
-#: rc.cpp:875 rc.cpp:881
+#: rc.cpp:965 rc.cpp:971
 #, fuzzy
 msgid ""
 "This is the configuration dialog for the Hadifix (txt2pho and Mbrola) speech "
@@ -1931,21 +2197,21 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:39
 #. i18n: ectx: property (title), widget (QGroupBox, GroupBox4)
-#: rc.cpp:878
+#: rc.cpp:968
 #, fuzzy
 msgid "Had&ifix Configuration"
 msgstr "ការ​កំណត់​រចនា​សម្ព័ន្ធ Hadifix"
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:62
 #. i18n: ectx: property (title), widget (QGroupBox, basicOptions)
-#: rc.cpp:884
+#: rc.cpp:974
 #, fuzzy
 msgid "&Basic Options"
 msgstr "ជម្រើស​មូលដ្ឋាន​"
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:76
 #. i18n: ectx: property (text), widget (QLabel, voiceLabel)
-#: rc.cpp:887
+#: rc.cpp:977
 #, fuzzy
 msgid "&Voice file:"
 msgstr "ឯកសារ​សំឡេង ៖"
@@ -1954,7 +2220,7 @@ msgstr "ឯកសារ​សំឡេង ៖"
 #. i18n: ectx: property (whatsThis), widget (QLabel, voiceLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:97
 #. i18n: ectx: property (whatsThis), widget (KComboBox, voiceCombo)
-#: rc.cpp:890 rc.cpp:893
+#: rc.cpp:980 rc.cpp:983
 #, fuzzy
 msgid ""
 "Select a voice for speaking text.  If no voices are listed, check your "
@@ -1965,14 +2231,14 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:112
 #. i18n: ectx: property (text), widget (KPushButton, voiceButton)
-#: rc.cpp:896
+#: rc.cpp:986
 #, fuzzy
 msgid "&Select..."
 msgstr "ជ្រើស..."
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:127
 #. i18n: ectx: property (text), widget (QLabel, volumeLabel)
-#: rc.cpp:899
+#: rc.cpp:989
 #, fuzzy
 msgid "Volume &ratio:"
 msgstr "សមាមាត្រ​កម្រិត​សំឡេង ៖​"
@@ -1983,7 +2249,7 @@ msgstr "សមាមាត្រ​កម្រិត​សំឡេង ៖​"
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, volumeBox)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:194
 #. i18n: ectx: property (whatsThis), widget (QSlider, volumeSlider)
-#: rc.cpp:902 rc.cpp:909 rc.cpp:912
+#: rc.cpp:992 rc.cpp:999 rc.cpp:1002
 msgid ""
 "Adjusts the volume of speech.  Slide to left for softer speech; to the right "
 "for louder."
@@ -1996,7 +2262,7 @@ msgstr ""
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, timeBox)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:273
 #. i18n: ectx: property (whatsThis), widget (QSlider, timeSlider)
-#: rc.cpp:918 rc.cpp:925 rc.cpp:928
+#: rc.cpp:1008 rc.cpp:1015 rc.cpp:1018
 #, fuzzy
 msgid ""
 "Adjusts the speed of speech.  Slide to left for slower speech; to the right "
@@ -2009,7 +2275,7 @@ msgstr "លៃ​តម្រូវ​ល្បឿន​សម្រាប់​
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, frequencyBox)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:346
 #. i18n: ectx: property (whatsThis), widget (QSlider, frequencySlider)
-#: rc.cpp:934 rc.cpp:941 rc.cpp:944
+#: rc.cpp:1024 rc.cpp:1031 rc.cpp:1034
 #, fuzzy
 msgid ""
 "Adjusts the pitch (tone) of speech.  Slide to left for lower speech; to the "
@@ -2020,14 +2286,14 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:364
 #. i18n: ectx: property (title), widget (QGroupBox, advancedOptions)
-#: rc.cpp:947
+#: rc.cpp:1037
 #, fuzzy
 msgid "&Advanced Options"
 msgstr "ជម្រើស​កម្រិត​ខ្ពស់​"
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:376
 #. i18n: ectx: property (text), widget (QLabel, hadifixBinLabel)
-#: rc.cpp:950
+#: rc.cpp:1040
 #, fuzzy
 msgid "txt2pho e&xecutable:"
 msgstr "txt2pho ដែល​អាច​ប្រតិបត្តិ​បាន ៖"
@@ -2036,7 +2302,7 @@ msgstr "txt2pho ដែល​អាច​ប្រតិបត្តិ​បា�
 #. i18n: ectx: property (whatsThis), widget (QLabel, hadifixBinLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:397
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, hadifixURL)
-#: rc.cpp:953 rc.cpp:956
+#: rc.cpp:1043 rc.cpp:1046
 #, fuzzy
 msgid ""
 "If the txt2pho program is in your PATH environment variable, simply enter "
@@ -2048,7 +2314,7 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:404
 #. i18n: ectx: property (text), widget (QLabel, mbrolaBinLabel)
-#: rc.cpp:959
+#: rc.cpp:1049
 #, fuzzy
 msgid "&Mbrola executable:"
 msgstr "Mbrola ដែល​អាច​ប្រតិបត្តិ​បាន ៖"
@@ -2057,7 +2323,7 @@ msgstr "Mbrola ដែល​អាច​ប្រតិបត្តិ​បា�
 #. i18n: ectx: property (whatsThis), widget (QLabel, mbrolaBinLabel)
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:425
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, mbrolaURL)
-#: rc.cpp:962 rc.cpp:965
+#: rc.cpp:1052 rc.cpp:1055
 #, fuzzy
 msgid ""
 "If the Mbrola program is in your PATH environment variable, simply enter "
@@ -2068,7 +2334,7 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:463
 #. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
-#: rc.cpp:971
+#: rc.cpp:1061
 #, fuzzy
 msgid ""
 "This combo box specifies which character encoding is used for passing the "
@@ -2080,34 +2346,34 @@ msgstr ""
 
 #. i18n: file: plugins/hadifix/hadifixconfigui.ui:502
 #. i18n: ectx: property (whatsThis), widget (KPushButton, testButton)
-#: rc.cpp:977
+#: rc.cpp:1067
 #, fuzzy
 msgid "Click to test the configuration.  You should hear a spoken sentence."
 msgstr "ចុច​ដើម្បី​សាកល្បង​ការ​កំណត់​រចនា​សម្ព័ន្ធ ។  អ្នក​អាច​នឹង​ឮ​ប្រយោគ​ដែល​និយាយ ។"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, VoiceFileWidget)
-#: rc.cpp:980
+#: rc.cpp:1070
 #, fuzzy
 msgid "Selecting Voice File"
 msgstr "ជ្រើស​ឯកសារ​សំឡេង"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:28
 #. i18n: ectx: property (text), widget (QLabel, voiceFileLabel)
-#: rc.cpp:983
+#: rc.cpp:1073
 #, fuzzy
 msgid "Path of the voice file:"
 msgstr "ផ្លូវ​នៃ​ឯកសារ​សំឡេង ៖"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:45
 #. i18n: ectx: property (title), widget (QGroupBox, genderOption)
-#: rc.cpp:986 libkttsd/talkerlistmodel.cpp:124
+#: rc.cpp:1076 libkttsd/talkerlistmodel.cpp:124
 msgid "Gender"
 msgstr "ភេទ"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:57
 #. i18n: ectx: property (text), widget (QRadioButton, femaleOption)
-#: rc.cpp:989
+#: rc.cpp:1079
 #, fuzzy
 msgctxt "Female, as option for gender"
 msgid "Female"
@@ -2115,7 +2381,7 @@ msgstr "ស្រី​"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:64
 #. i18n: ectx: property (text), widget (QRadioButton, maleOption)
-#: rc.cpp:992
+#: rc.cpp:1082
 #, fuzzy
 msgctxt "Male, as option for gender"
 msgid "Male"
@@ -2123,7 +2389,7 @@ msgstr "ប្រុស"
 
 #. i18n: file: plugins/hadifix/voicefileui.ui:71
 #. i18n: ectx: property (text), widget (KPushButton, genderButton)
-#: rc.cpp:995
+#: rc.cpp:1085
 #, fuzzy
 msgid "Try to Determine From Voice File"
 msgstr "ព្យាយាម​កំណត់​ពី​ឯកសារ​សំឡេង"
@@ -2135,15 +2401,15 @@ msgstr "ព្យាយាម​កំណត់​ពី​ឯកសារ​ស
 #. i18n: file: plugins/festivalint/voices:532
 #. i18n: file: plugins/festivalint/voices:556
 #. i18n: file: plugins/festivalint/voices:592
-#: rc.cpp:997 rc.cpp:999 rc.cpp:1075 rc.cpp:1079 rc.cpp:1083 rc.cpp:1087
-#: rc.cpp:1093
+#: rc.cpp:1087 rc.cpp:1089 rc.cpp:1165 rc.cpp:1169 rc.cpp:1173 rc.cpp:1177
+#: rc.cpp:1183
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "American Male"
 msgstr "ប្រុស អាមេរិច​"
 
 #. i18n: file: plugins/festivalint/voices:38
-#: rc.cpp:1001
+#: rc.cpp:1091
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "American Female, MBROLA"
@@ -2151,7 +2417,7 @@ msgstr "ស្រី​អាមេរិច , MBROLA"
 
 #. i18n: file: plugins/festivalint/voices:50
 #. i18n: file: plugins/festivalint/voices:62
-#: rc.cpp:1003 rc.cpp:1005
+#: rc.cpp:1093 rc.cpp:1095
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "American Male, MBROLA"
@@ -2160,14 +2426,14 @@ msgstr "ប្រុស អាមេរិច MBROLA"
 #. i18n: file: plugins/festivalint/voices:74
 #. i18n: file: plugins/festivalint/voices:86
 #. i18n: file: plugins/festivalint/voices:604
-#: rc.cpp:1007 rc.cpp:1009 rc.cpp:1095
+#: rc.cpp:1097 rc.cpp:1099 rc.cpp:1185
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "British Male"
 msgstr "ស្ត្រី ចក្រភពអង់គ្លេស​"
 
 #. i18n: file: plugins/festivalint/voices:98
-#: rc.cpp:1011
+#: rc.cpp:1101
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Castilian Spanish Male"
@@ -2176,42 +2442,42 @@ msgstr "បុរស​Castilian អេស្ប៉ាញ​"
 #. i18n: file: plugins/festivalint/voices:110
 #. i18n: file: plugins/festivalint/voices:158
 #. i18n: file: plugins/festivalint/voices:170
-#: rc.cpp:1013 rc.cpp:1021 rc.cpp:1023
+#: rc.cpp:1103 rc.cpp:1111 rc.cpp:1113
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "American Male, HTS"
 msgstr "បរុសអាមេរិច​ HTS"
 
 #. i18n: file: plugins/festivalint/voices:122
-#: rc.cpp:1015
+#: rc.cpp:1105
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "American Female, HTS"
 msgstr "ស្ត្រី​អាមេរិច​  HTS"
 
 #. i18n: file: plugins/festivalint/voices:134
-#: rc.cpp:1017
+#: rc.cpp:1107
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Canadian English Male, HTS"
 msgstr "បុរស​ជនជាតិកាណាដា​ និង អង់គ្លេស​"
 
 #. i18n: file: plugins/festivalint/voices:146
-#: rc.cpp:1019
+#: rc.cpp:1109
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Scottish Male, HTS"
 msgstr "បុរស ជនជាតិ​ស្កត​ HTS"
 
 #. i18n: file: plugins/festivalint/voices:182
-#: rc.cpp:1025
+#: rc.cpp:1115
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Canadian English Male, MultiSyn"
 msgstr "បុរស​ជនជាតិ​កាណាដា​ និង​អង់គ្លេស​ MultiSyn"
 
 #. i18n: file: plugins/festivalint/voices:194
-#: rc.cpp:1027
+#: rc.cpp:1117
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Scottish Male, MultiSyn"
@@ -2219,28 +2485,28 @@ msgstr "បុរស​ជនជាតិ​ស្កត​ MultiSyn"
 
 #. i18n: file: plugins/festivalint/voices:206
 #. i18n: file: plugins/festivalint/voices:230
-#: rc.cpp:1029 rc.cpp:1033
+#: rc.cpp:1119 rc.cpp:1123
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "German Female, Festival"
 msgstr "ស្ត្រ​ជនជាតិ​អាឡឺម៉ង់​ Festival"
 
 #. i18n: file: plugins/festivalint/voices:218
-#: rc.cpp:1031
+#: rc.cpp:1121
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "German Male, Festival"
 msgstr "បុរស​អាឡឺម៉ង់ Festival"
 
 #. i18n: file: plugins/festivalint/voices:242
-#: rc.cpp:1035
+#: rc.cpp:1125
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Mexican Spanish Male, OGC"
 msgstr "បុរស​ម៉ិចស៊ីកូ​ អេស្បាញ​ OGC"
 
 #. i18n: file: plugins/festivalint/voices:254
-#: rc.cpp:1037
+#: rc.cpp:1127
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Mexican Spanish Female, OGC"
@@ -2250,7 +2516,7 @@ msgstr "ស្ត្រី​​ម៉ិចស៊ីកូ​ អេស្ប�
 #. i18n: file: plugins/festivalint/voices:278
 #. i18n: file: plugins/festivalint/voices:290
 #. i18n: file: plugins/festivalint/voices:326
-#: rc.cpp:1039 rc.cpp:1041 rc.cpp:1043 rc.cpp:1049
+#: rc.cpp:1129 rc.cpp:1131 rc.cpp:1133 rc.cpp:1139
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "American Male, OGC"
@@ -2258,42 +2524,42 @@ msgstr "បុរស​ អាមេរិច​ OGC"
 
 #. i18n: file: plugins/festivalint/voices:302
 #. i18n: file: plugins/festivalint/voices:338
-#: rc.cpp:1045 rc.cpp:1051
+#: rc.cpp:1135 rc.cpp:1141
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "American Female, OGC"
 msgstr "ស្ត្រី​អាមេរិច​ OGC"
 
 #. i18n: file: plugins/festivalint/voices:314
-#: rc.cpp:1047
+#: rc.cpp:1137
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "British Male, OGC"
 msgstr "បុរស​ចក្រភព​អង់គ្លេស​ OGC"
 
 #. i18n: file: plugins/festivalint/voices:350
-#: rc.cpp:1053
+#: rc.cpp:1143
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Finnish Male"
 msgstr "បុរស​ហ្វាំង​ឡង់"
 
 #. i18n: file: plugins/festivalint/voices:362
-#: rc.cpp:1055
+#: rc.cpp:1145
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Czech Male, MBROLA"
 msgstr "បុរស​ឆែក  MBROLA"
 
 #. i18n: file: plugins/festivalint/voices:374
-#: rc.cpp:1057
+#: rc.cpp:1147
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Polish Male"
 msgstr "បុរស​ប៉ូឡូញ​"
 
 #. i18n: file: plugins/festivalint/voices:386
-#: rc.cpp:1059
+#: rc.cpp:1149
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Russian Male"
@@ -2301,7 +2567,7 @@ msgstr "បុរស​រុស្សី​"
 
 #. i18n: file: plugins/festivalint/voices:398
 #. i18n: file: plugins/festivalint/voices:422
-#: rc.cpp:1061 rc.cpp:1065
+#: rc.cpp:1151 rc.cpp:1155
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Italian Male"
@@ -2309,28 +2575,28 @@ msgstr "បរុស​អ៊ីតាលី​"
 
 #. i18n: file: plugins/festivalint/voices:410
 #. i18n: file: plugins/festivalint/voices:434
-#: rc.cpp:1063 rc.cpp:1067
+#: rc.cpp:1153 rc.cpp:1157
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Italian Female"
 msgstr "ស្ត្រី​អ៊ីតាលី"
 
 #. i18n: file: plugins/festivalint/voices:446
-#: rc.cpp:1069
+#: rc.cpp:1159
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Kiswahili Male"
 msgstr "Kiswahili ភេទ​ប្រុស​"
 
 #. i18n: file: plugins/festivalint/voices:460
-#: rc.cpp:1071
+#: rc.cpp:1161
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Ibibio Female"
 msgstr "Ibibio ភេទស្រី​"
 
 #. i18n: file: plugins/festivalint/voices:472
-#: rc.cpp:1073
+#: rc.cpp:1163
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Zulu Male"
@@ -2341,70 +2607,70 @@ msgstr "បរុស​ហ្ស៊ូលូ"
 #. i18n: file: plugins/festivalint/voices:544
 #. i18n: file: plugins/festivalint/voices:568
 #. i18n: file: plugins/festivalint/voices:580
-#: rc.cpp:1077 rc.cpp:1081 rc.cpp:1085 rc.cpp:1089 rc.cpp:1091
+#: rc.cpp:1167 rc.cpp:1171 rc.cpp:1175 rc.cpp:1179 rc.cpp:1181
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "American Female"
 msgstr "ស្ត្រី​អាមេរិច​"
 
 #. i18n: file: plugins/festivalint/voices:616
-#: rc.cpp:1097
+#: rc.cpp:1187
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "British Female"
 msgstr "ស្ត្រី​ចក្រភព​អង់គ្លេស​"
 
 #. i18n: file: plugins/festivalint/voices:628
-#: rc.cpp:1099
+#: rc.cpp:1189
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "French Canadian Male"
 msgstr "បុរស​បារាំង​កាណាដា​"
 
 #. i18n: file: plugins/festivalint/voices:640
-#: rc.cpp:1101
+#: rc.cpp:1191
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "French Canadian Female"
 msgstr "ស្ត្រី​បារាំង​ កាណាដា​"
 
 #. i18n: file: plugins/festivalint/voices:652
-#: rc.cpp:1103
+#: rc.cpp:1193
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "German Male"
 msgstr "បរុស​អាឡឺម៉ង់"
 
 #. i18n: file: plugins/festivalint/voices:664
-#: rc.cpp:1105
+#: rc.cpp:1195
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "German Female"
 msgstr "ស្ត្រី​អាឡឺម៉ង់"
 
 #. i18n: file: plugins/festivalint/voices:676
-#: rc.cpp:1107
+#: rc.cpp:1197
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Americas Spanish Male"
 msgstr "បុរស​អាមេរិច​ អេស្ពាញ​"
 
 #. i18n: file: plugins/festivalint/voices:688
-#: rc.cpp:1109
+#: rc.cpp:1199
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Americas Spanish Female"
 msgstr "ស្ត្រី​អេស្ពាញ​ អេស្ពាញ​"
 
 #. i18n: file: plugins/festivalint/voices:700
-#: rc.cpp:1111
+#: rc.cpp:1201
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Vietnamese Male"
 msgstr "បុរស​ហ្វាំង​ឡង់"
 
 #. i18n: file: plugins/festivalint/voices:711
-#: rc.cpp:1113
+#: rc.cpp:1203
 #, fuzzy
 msgctxt "FestivalVoiceName"
 msgid "Vietnamese Female"
@@ -2575,12 +2841,6 @@ msgstr "ជ្រើស​ភាសារ​"
 #: kcmkttsmgr/kcmkttsmgr.cpp:1303
 msgid "Select Filter"
 msgstr "ជ្រើស​តម្រង​"
-
-#: kcmkttsmgr/kcmkttsmgr.cpp:1718
-#, fuzzy
-#| msgid "&Jobs"
-msgid "Jobs"
-msgstr "ការងារ​"
 
 #: kcmkttsmgr/kcmkttsmgr.cpp:1737
 #, kde-format
@@ -2991,206 +3251,10 @@ msgctxt "Prioritylevel: unknown"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#: kttsjobmgr/kttsjobmgr.cpp:63
+#: kttsjobmgr/kttsjobmgr.cpp:64
 #, fuzzy
 msgid "KttsJobMgr"
 msgstr "KttsJobMgr"
-
-#: kttsjobmgr/kttsjobmgr.cpp:111
-#, fuzzy
-msgid ""
-"<p>These are all the text jobs.  The <b>State</b> column may be:"
-"<ul><li><b>Queued</b> - the job is waiting and will not be spoken until its "
-"state is changed to <b>Waiting</b> by clicking the <b>Resume</b> or "
-"<b>Restart</b> buttons.</li><li><b>Waiting</b> - the job is ready to be "
-"spoken.  It will be spoken when the jobs preceding it in the list have "
-"finished.</li><li><b>Speaking</b> - the job is speaking.  The <b>Position</"
-"b> column shows the current sentence of the job being spoken.  You may pause "
-"a speaking job by clicking the <b>Hold</b> button.</li><li><b>Paused</b> - "
-"the job is currently paused.  Paused jobs prevent jobs below them from "
-"speaking.  Use the <b>Resume</b> or <b>Restart</b> buttons to resume "
-"speaking the job, or click <b>Later</b> to move the job down in the list.</"
-"li><li><b>Finished</b> - the job has finished speaking.  When a second job "
-"finishes, this one will be deleted.  You may click <b>Restart</b> to repeat "
-"the job.</li></ul><em>Note</em>: Messages, Warnings, and Screen Reader "
-"Output do not appear in this list.  See the Handbook for more information.</"
-"p>"
-msgstr ""
-"<p>មាន​ការងារ​អត្ថបទ​ការងារ​ជា​ច្រើន​។  <b>ជួរឈរ​រដ្ឋ</b>ប្រហែល​ជា​ ៖ <ul><li><b>នៅ​បន្ត​បន្ទាប់​"
-"</b> - ការងារ​កំពង់​រង់ចាំ​ ហើយ​មិនត្រូវ​បាន​និយាយ ដល់​រដ្ឋ​របស់​វា​បាន​ផ្លាស់ប្តូរ​ <b>កំពុង​រង់ចាំ​</"
-"b>ចុចប៊ូតុង​​ <b>ធ្វើបន្ត​</b> ឬ <b>ចាប់ផ្តើម​ឡើង​វិញ </b>  ។ </li><li><b>រង់ចាំ​</b> - ការងារ​"
-"បាននិយាយ​រួចហើយ​ ។   វា​ និងនិយាយ​ពេលការងារ​មកដល់​មុន​ក្នុង​បញ្ជី​ដែល​បាន​បញ្ចប់​ ។ </"
-"li><li><b>ការនិយាយ</b> - ការងារ​ជា​ការនិយាយ​ ។    <b>ទីតាំង​</b> ជួរឈរ​បង្ហាញ​ក្នុង​ប្រយោគ​"
-"បច្ចុប្បន្ន​នៃ​ការងារ​ដែល​កំពុង​ចាប់​ផ្តើម​និយាយ​ ។ អ្នក​ប្រហែល​ជា​ផ្អាកការងារ​និយាយដោយ​ចុច​ប៊ូតុង​ <b>រង់ចាំ</"
-"b> ។ </li><li><b>បានផ្អាក​</b> - ការងារ​បច្ចុប្បន្ន​ត្រូវ​បានផ្អាក​​។ ផ្អាក​ការងារ​ "
-"ការពារការងា​រខាងក្រោម​ពី​ការនិយាយ​​។ ចុច​ប៊ូតុង​ <b>ធ្វើ​បន្ត</b> ឬ​ <b>ចាប់ផ្តើម​ឡើង​វិញ​</b> ដើម្បី​"
-"ធ្វើ​បន្ត​ការងារ​និយាយ​ឬ​ចុច​ <b>ពេល​ក្រោយ​</b> ដើម្បី​ផ្លាស់ទី​ការងារ​ចុះក្រោម​ក្នុង​បញ្ជី ។ </"
-"li><li><b>បញ្ចប់​</b> -ការងារ​និយាយ​បាន​បញ្ចប់​ ។ ពេល​ដែល​ការងារ​ទីពីរបាន​បញ្ចប់​ ហើយ​ការងារ​មួយ​នឹង "
-"ត្រូវ​បាន​លុប​​។ អ្នក​ប្រហែល​ជា​ចុច​ <b>ចាប់ផ្តើម​ឡើង​វិញ​</b> ដើម្បីធ្វើការងារ​នេះ​ម្តង​ទៀត​ ​។ </li></"
-"ul><em>ចំណាំ​</em> ៖ សារ​ ការព្រមាន​ និង​អេក្រង់​កម្មវិធី​អាន​ទិន្នផល​មិន​បាន​លេចឡើង​ក្នុង​បញ្ជី​នេះ​ទេ ។  "
-"ព័ត៌មាន​បន្ថែម​សូម​មើល​សៀវភៅដៃ​ ។ </p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:157
-#, fuzzy
-msgid "Hold"
-msgstr "រង់ចាំ​"
-
-#: kttsjobmgr/kttsjobmgr.cpp:160
-#, fuzzy
-msgid ""
-"<p>Changes a job to Paused state.  If currently speaking, the job stops "
-"speaking.  Paused jobs prevent jobs that follow them from speaking, so "
-"either click <b>Resume</b> to make the job speakable, or click <b>Later</b> "
-"to move it down in the list.</p>"
-msgstr ""
-"<p>ផ្លាស់ប្ដូរ​ការងារ​ទៅ​សភាព​ផ្អាក ។  បើ​កំពុង​និយាយ​ថ្មីៗ ការងារ​ឈប់​និយាយ ។  ការងារ​ដែល​ផ្អាក​"
-"ការពារ​ការងារ​ដែល​ធ្វើ​តាម​ក្រោយ​ការ​និយាយ ដូច្នេះចុច <b>បន្ត</b> ដើម្បី​ធ្វើ​ឲ្យ​ការងារ​អាច​និយាយ​"
-"បាន ឬ​ចុច <b>ពេល​ក្រោយ</b> ដើម្បី​ផ្លាស់ទី​វា​ចុះ​ក្នុង​បញ្ជី ។</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:166
-#, fuzzy
-msgid "Resume"
-msgstr "បន្ត"
-
-#: kttsjobmgr/kttsjobmgr.cpp:169
-#, fuzzy
-msgid ""
-"<p>Resumes a paused job or changes a Queued job to Waiting.  If the job is "
-"the top speakable job in the list, it begins speaking.</p>"
-msgstr ""
-"<p>បន្ត​ការងារ​ដែល​បាន​ផ្អាក ឬ​ផ្លាស់ប្ដូរ​ការងារ​ដែល​បាន​ដាក់​ជា​ជួរ​ទៅ​រង់ចាំ ។  បើ​ការងារ​គឺ​ជា​ការងារ​"
-"ដែល​អាច​និយាយ​កំពូល​ក្នុង​បញ្ជី វា​ចាប់ផ្ដើម​និយាយ ។</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:173
-#, fuzzy
-msgctxt "Restart a job to the beginning"
-msgid "R&estart"
-msgstr "ចាប់ផ្ដើម​ឡើង​វិញ"
-
-#: kttsjobmgr/kttsjobmgr.cpp:176
-#, fuzzy
-msgid ""
-"<p>Rewinds a job to the beginning and changes its state to Waiting.  If the "
-"job is the top speakable job in the list, it begins speaking.</p>"
-msgstr ""
-"<p>ខារ​ថយ​ក្រោយ​ការងារ​ទៅ​ចំណុច​ដំបូង និង​ផ្លាស់ប្ដូរ​សភាព​របស់​វា​ទៅ រង់​ចាំ ។  បើ​ការងារ​គឺ​ជា​ការងារ​ដែល​"
-"អាច​និយាយ​កំពូល​ក្នុង​បញ្ជី វា​ចាប់ផ្ដើម​និយាយ ។</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:180
-#, fuzzy
-msgid "Re&move"
-msgstr "យក​ចេញ"
-
-#: kttsjobmgr/kttsjobmgr.cpp:183
-#, fuzzy
-msgid ""
-"<p>Deletes the job.  If it is currently speaking, it stops speaking.  The "
-"next speakable job in the list begins speaking.</p>"
-msgstr ""
-"<p>លុប​ការងារ​ ។ បើ​វា​ជាការនិយាយ​បច្ចុប្បន្ន​ វា​បញ្ឈប់​ការនិយាយ​ភ្លាម​ ។   ការងា​ដែលអាច​និយាយ​បន្ទាប់​"
-"ក្នុង​បញ្ជី​ចាប់ផ្តើម​និយាយ​ ​។​</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:187
-#, fuzzy
-msgid "&Later"
-msgstr "ពេល​ក្រោយ"
-
-#: kttsjobmgr/kttsjobmgr.cpp:190
-#, fuzzy
-msgid ""
-"<p>Moves a job downward in the list so that it will be spoken later.  If the "
-"job is currently speaking, its state changes to Paused.</p>"
-msgstr ""
-"<p>ផ្លាស់ទី​ការងារ​ចុះក្រោម​ក្នុង​បញ្ជី​ ដូច្នេះ​វា​នឹង​និយាយ​ពេល​ក្រោយ ។ បើ​ការងារ​ជា​ការនិយាយ​បច្ចុប្បន្ន​ "
-"សភាព​របស់​វា​ផ្លាស់ប្តូរ​ទៅ​ផ្អាក​ ។</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:195
-#, fuzzy
-msgid "&Previous Sentence"
-msgstr "ប្រយោគ​មុន​"
-
-#: kttsjobmgr/kttsjobmgr.cpp:198
-#, fuzzy
-msgid "<p>Rewinds a job to the previous sentence.</p>"
-msgstr "<p>ខារ​ថយ​ក្រោយ​ការងារ​ទៅកាន់​ប្រយោគ​មុន ។</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:201
-#, fuzzy
-msgid "&Next Sentence"
-msgstr "ប្រយោគ​បន្ទាប់"
-
-#: kttsjobmgr/kttsjobmgr.cpp:204
-#, fuzzy
-msgid "<p>Advances a job to the next sentence.</p>"
-msgstr "<p>ការងារ​កម្រិត​ខ្ពស់​ទៅ​បន្ទាប់​ប្រយោគ​បន្ទាប់ ។​</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:208
-#, fuzzy
-msgid "&Speak Clipboard"
-msgstr "ក្ដារ​តម្បៀត​ខ្ទាស់​និយាយ"
-
-#: kttsjobmgr/kttsjobmgr.cpp:211
-#, fuzzy
-msgid ""
-"<p>Queues the current contents of the clipboard for speaking and sets its "
-"state to Waiting.  If the job is the topmost in the list, it begins "
-"speaking.  The job will be spoken by the topmost Talker in the <b>Talkers</"
-"b> tab.</p>"
-msgstr ""
-"<p>មាតិកា​លំដាប់​បន្តគ្នា​បច្ចុប្បន្ន​នៃ​ក្តារតម្រៀត​ខ្ទាប់​ការនិយាយ​ និង​កំណត់​ស្ថានភាព​របស់​វា​ដើម្បីរង់ចាំ​​។  "
-"បើ​ការងារ​ស្ថិត​នៅ​មុន​ដំបូង​គេ​ក្នុង​បញ្ជី​ វា​ចាប់​ផ្តើម​និយាយ​ ។  ការងារ​នឹង ត្រូវ​បាន​និយាយ​ដោយ​អ្នក​និយាយ​ខ្ពស់​"
-"ជាង​គេ​ក្នុង​<b>ផ្ទាំង​អ្នក​និយា​យ</b>  ។​</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:216
-#, fuzzy
-msgid "Spea&k File"
-msgstr "ឯកសារ​និយាយ​"
-
-#: kttsjobmgr/kttsjobmgr.cpp:219
-#, fuzzy
-msgid ""
-"<p>Prompts you for a file name and queues the contents of the file for "
-"speaking.  You must click the <b>Resume</b> button before the job will be "
-"speakable.  The job will be spoken by the topmost Talker in the <b>Talkers</"
-"b> tab.</p>"
-msgstr ""
-"<p>ប្រអប់​បញ្ចូល​ឈ្មោះ​ឯកសារ​ និង​ឯកសារ​លំដាប់​មាតិកា​សម្រាប់​ការនិយាយ​ ។ អ្នក​ត្រូវ​តែ​ចុច​ប៊ូតុង​ <b>ធ្វើ​បន្ត​</"
-"b>មុន​ការងារ​ដែល​អាច​និយាយ​បាន​ ។   ការងារ​អាច​និយាយ​តាមអ្នកនិយាយ​មាន​លំដាប់​មុន​គេ​ក្នុង​ <b>ផ្ទាំង​អ្នក​"
-"និយាយ​</b> ​ ។​</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:224
-#, fuzzy
-msgid "Change Talker"
-msgstr "ផ្លាស់ប្តូរ​អ្នក​និយាយ​"
-
-#: kttsjobmgr/kttsjobmgr.cpp:227
-#, fuzzy
-msgid ""
-"<p>Prompts you with a list of your configured Talkers from the <b>Talkers</"
-"b> tab.  The job will be spoken using the selected Talker.</p>"
-msgstr ""
-"<p>ប្រអប់​បញ្ចូល​ដែល​មាន​បញ្ជី​អ្នក​និយាយ​បានកំណត់​រចនាសម្ព័ន្ធ​របស់​អ្នក​ពី​ថេប <b>អ្នកនិយាយ​</b>  ។   "
-"ការងារ​​នឹង​បាន​ត្រូវ​និយាយ​ដោយ​ជ្រើស​អ្នក​និយាយ​ ។​</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:231
-#, fuzzy
-msgid "&Refresh"
-msgstr "ធ្វើ​ឲ្យ​ស្រស់"
-
-#: kttsjobmgr/kttsjobmgr.cpp:234
-#, fuzzy
-msgid "<p>Refresh the list of jobs.</p>"
-msgstr "<p>ធ្វើ​ឲ្យ​ស្រស់​បញ្ជី​ការងារ ។</p>"
-
-#: kttsjobmgr/kttsjobmgr.cpp:247
-#, fuzzy
-msgid "Current Sentence"
-msgstr "ប្រយោគ​បច្ចុប្បន្ន​"
-
-#: kttsjobmgr/kttsjobmgr.cpp:256
-#, fuzzy
-msgid "<p>The text of the sentence currently speaking.</p>"
-msgstr "<p>អត្ថបទ​នៃ​ប្រយោគ​ដែល​និយាយ​បច្ចុប្បន្ន ។</p>"
 
 #: kttsmgr/kttsmgr.cpp:54
 msgid "KTTSMgr"
