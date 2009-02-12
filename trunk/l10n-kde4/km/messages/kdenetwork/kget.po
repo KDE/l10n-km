@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-10 10:21+0100\n"
+"POT-Creation-Date: 2009-02-12 10:25+0100\n"
 "PO-Revision-Date: 2009-01-02 08:20+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -87,7 +87,9 @@ msgstr "ប្ដូរ​ឈ្មោះ"
 msgid "Select Icon"
 msgstr "ជ្រើស​​រូបតំណាង"
 
-#: conf/transfersgroupwidget.cpp:183
+#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:81
+#. i18n: ectx: property (text), widget (QPushButton, configureScriptButton)
+#: conf/transfersgroupwidget.cpp:183 rc.cpp:482
 msgid "Configure..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ..."
 
@@ -121,7 +123,7 @@ msgstr "គ្រប់គ្រង​ក្រុម"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:97
 #. i18n: ectx: property (title), widget (QGroupBox, folderGroupBox)
-#: conf/preferencesdialog.cpp:71 rc.cpp:243
+#: conf/preferencesdialog.cpp:71 rc.cpp:264
 msgid "Folders"
 msgstr "ថត"
 
@@ -131,7 +133,7 @@ msgstr "ថត​ទាញយក​លំនាំ​ដើម"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:22
 #. i18n: ectx: property (title), widget (QGroupBox, networkGroupBox)
-#: conf/preferencesdialog.cpp:72 rc.cpp:219
+#: conf/preferencesdialog.cpp:72 rc.cpp:240
 msgid "Network"
 msgstr "បណ្ដាញ"
 
@@ -215,7 +217,7 @@ msgstr "ស្ថានភាព"
 #: core/transfertreemodel.cpp:563
 #: transfer-plugins/bittorrent/advanceddetails/torrentfiletreemodel.cpp:377
 #: transfer-plugins/bittorrent/advanceddetails/torrentfilelistmodel.cpp:70
-#: rc.cpp:472
+#: rc.cpp:565
 msgid "Size"
 msgstr "ទំហំ"
 
@@ -294,9 +296,11 @@ msgstr "បញ្ឈប់"
 
 #: core/transfer.cpp:49 core/transfer.cpp:137 core/transfer.cpp:205
 #: transfer-plugins/kio/transferKio.cpp:55
-#: transfer-plugins/metalink/metalink.cpp:53
+#: transfer-plugins/mms/mmsTransfer.cpp:52
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:62
+#: transfer-plugins/metalink/metalink.cpp:53
 #: transfer-plugins/bittorrent/bttransfer.cpp:231
+#: transfer-plugins/contentfetch/contentfetch.cpp:64
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "បាន​បញ្ឈប់"
@@ -307,8 +311,8 @@ msgid "Delayed"
 msgstr "បានពន្យារ​ពេល"
 
 #: core/transfer.cpp:201 transfer-plugins/kio/transferKio.cpp:114
-#: transfer-plugins/metalink/metalink.cpp:103
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:206
+#: transfer-plugins/metalink/metalink.cpp:103
 #: transfer-plugins/bittorrent/bttransfer.cpp:228
 msgctxt "transfer state: finished"
 msgid "Finished"
@@ -343,7 +347,7 @@ msgstr "មិន​អាច​រក្សា​ទុក​ទៅ ៖ %1"
 
 #. i18n: file: ui/newtransferwidget.ui:24
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
-#: core/kget.cpp:777 ui/newtransferdialog.cpp:219 rc.cpp:410
+#: core/kget.cpp:777 ui/newtransferdialog.cpp:219 rc.cpp:503
 msgid "New Download"
 msgstr "ទាញយក​ថ្មី"
 
@@ -431,8 +435,8 @@ msgstr ""
 "ដោយ​សារ​តែ​វា​ជា​ឯកសារ​មូលដ្ឋាន ។"
 
 #: transfer-plugins/kio/transferKio.cpp:37
-#: transfer-plugins/metalink/metalink.cpp:37
 #: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:44
+#: transfer-plugins/metalink/metalink.cpp:37
 msgctxt "transfer state: connecting"
 msgid "Connecting.."
 msgstr "កំពុង​តភ្ជាប់..."
@@ -454,10 +458,39 @@ msgstr "កំពុង​ទាញយក..."
 msgid "Downloading.."
 msgstr "កំពុង​ទាញយក..."
 
+#: transfer-plugins/mms/mmsTransfer.cpp:36
+#, fuzzy
+#| msgctxt "The transfer is running"
+#| msgid "Running"
+msgctxt "transfer state: running"
+msgid "Running.."
+msgstr "កំពង់​រត់"
+
 #: transfer-plugins/metalink/metalink.cpp:112
 msgctxt "transfer state: aborted"
 msgid "Aborted"
 msgstr "បាន​បោះបង់"
+
+#: transfer-plugins/mirrorsearch/dlgmirrorsearch.cpp:23
+msgid "Insert Engine"
+msgstr ""
+
+#. i18n: file: transfer-plugins/mirrorsearch/dlgengineediting.ui:16
+#. i18n: ectx: property (text), widget (QLabel, engineNameLabel)
+#: transfer-plugins/mirrorsearch/dlgmirrorsearch.cpp:28 rc.cpp:189
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "File name"
+msgid "Engine name:"
+msgstr "ឈ្មោះ​ឯកសារ"
+
+#. i18n: file: transfer-plugins/mirrorsearch/dlgengineediting.ui:30
+#. i18n: ectx: property (text), widget (QLabel, urlLabel)
+#: transfer-plugins/mirrorsearch/dlgmirrorsearch.cpp:29 rc.cpp:192
+#, fuzzy
+#| msgid "User:"
+msgid "Url:"
+msgstr "អ្នក​ប្រើ ៖"
 
 #: transfer-plugins/bittorrent/scandlg.cpp:81
 #, kde-format
@@ -736,7 +769,7 @@ msgstr "គូរ"
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:154
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: transfer-plugins/bittorrent/advanceddetails/btadvanceddetailswidget.cpp:71
-#: rc.cpp:269 rc.cpp:359
+#: rc.cpp:290 rc.cpp:380
 msgid "Chunks"
 msgstr "ចំណិត"
 
@@ -1421,6 +1454,47 @@ msgstr "URL កម្មវិធី​តាមដាន​មិនត្រ�
 msgid "Cannot open file : %1 : %2"
 msgstr "មិនអាច​បើក​ឯកសារ ៖ %1 : %2"
 
+#: transfer-plugins/contentfetch/contentfetch.cpp:47
+msgctxt "Transfer state: processing script"
+msgid "Processing script..."
+msgstr ""
+
+#: transfer-plugins/contentfetch/contentfetch.cpp:78
+#, fuzzy
+#| msgctxt "transfer state: finished"
+#| msgid "Finished"
+msgctxt "Transfer State: Finished"
+msgid "Finished"
+msgstr "បាន​បញ្ចប់"
+
+#: transfer-plugins/contentfetch/contentfetch.cpp:87
+#, fuzzy
+#| msgid "Aborted"
+msgctxt "Transfer State: Aborted"
+msgid "Aborted"
+msgstr "បាន​បោះបង់"
+
+#: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.cpp:116
+#, fuzzy
+#| msgid "Configure..."
+msgctxt "Configure script"
+msgid "Configure script"
+msgstr "កំណត់​រចនាសម្ព័ន្ធ..."
+
+#: transfer-plugins/contentfetch/dlgscriptediting.cpp:25
+msgid "Add new script"
+msgstr ""
+
+#: transfer-plugins/contentfetch/dlgscriptediting.cpp:37
+msgid "Edit script"
+msgstr ""
+
+#: transfer-plugins/contentfetch/dlgscriptediting.cpp:48
+#, fuzzy
+#| msgid "Description"
+msgid "Set script file"
+msgstr "សេចក្ដី​ពិពណ៌នា"
+
 #: ui/tray.cpp:63
 msgid "KGet - Download Manager"
 msgstr "KGet - កម្មវិធី​គ្រប់គ្រង​កា​រទាញយក"
@@ -1582,7 +1656,7 @@ msgstr "ប្រភព ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: ui/transferdetailsfrm.ui:43
 #. i18n: ectx: property (text), widget (QLabel, destLabel)
-#: ui/transferdetails.cpp:38 rc.cpp:389 rc.cpp:425
+#: ui/transferdetails.cpp:38 rc.cpp:410 rc.cpp:518
 msgid "Saving to:"
 msgstr "រក្សា​ទុក​ទៅ ៖"
 
@@ -1590,7 +1664,7 @@ msgstr "រក្សា​ទុក​ទៅ ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: ui/transferdetailsfrm.ui:113
 #. i18n: ectx: property (text), widget (QLabel, statusLabel)
-#: ui/transferdetails.cpp:39 rc.cpp:296 rc.cpp:432
+#: ui/transferdetails.cpp:39 rc.cpp:317 rc.cpp:525
 msgid "Status:"
 msgstr "ស្ថានភាព ៖"
 
@@ -1758,7 +1832,7 @@ msgstr "បាន​ពិនិត្យ​ការ​ទាញយក"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:183
 #. i18n: ectx: property (text), widget (KPushButton, cancel)
-#: ui/linkview/kget_linkview.cpp:145 rc.cpp:216
+#: ui/linkview/kget_linkview.cpp:145 rc.cpp:237
 msgid "Cancel"
 msgstr "បោះបង់"
 
@@ -1770,7 +1844,9 @@ msgstr "បឋមកថា​ជំនួយ"
 msgid "File Name"
 msgstr "ឈ្មោះ​ឯកសារ"
 
-#: ui/linkview/kget_linkview.cpp:221
+#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:37
+#. i18n: ectx: property (text), widget (QTreeWidget, scriptTreeWidget)
+#: ui/linkview/kget_linkview.cpp:221 rc.cpp:470
 msgid "Description"
 msgstr "សេចក្ដី​ពិពណ៌នា"
 
@@ -2526,7 +2602,7 @@ msgstr "បើក​ចំណុច​ប្រទាក់​បណ្ដាញ
 #. i18n: ectx: property (text), widget (QLabel, portLabel)
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, portLabel)
-#: rc.cpp:159 rc.cpp:222
+#: rc.cpp:159 rc.cpp:243
 msgid "Port:"
 msgstr "ច្រក​ ៖"
 
@@ -2538,7 +2614,9 @@ msgstr "អ្នក​ប្រើ ៖"
 
 #. i18n: file: conf/dlgwebinterface.ui:59
 #. i18n: ectx: property (text), widget (QLabel, passwordLabel)
-#: rc.cpp:165
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:87
+#. i18n: ectx: property (text), widget (QLabel, passwordLabel)
+#: rc.cpp:165 rc.cpp:440
 msgid "Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
@@ -2580,33 +2658,73 @@ msgstr "រក្សា​ទុក​ទិន្នន័យ​រៀងរា
 msgid "Use search engines"
 msgstr "ប្រើ​ម៉ាស៊ីន​ស្វែងរក"
 
+#. i18n: file: transfer-plugins/mirrorsearch/dlgmirrorsearch.ui:16
+#. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
+#: rc.cpp:195
+#, fuzzy
+#| msgid "Use search engines"
+msgid "Search Engines"
+msgstr "ប្រើ​ម៉ាស៊ីន​ស្វែងរក"
+
+#. i18n: file: transfer-plugins/mirrorsearch/dlgmirrorsearch.ui:27
+#. i18n: ectx: property (text), widget (QTreeWidget, enginesTreeWidget)
+#: rc.cpp:198
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "File name"
+msgid "Engine name"
+msgstr "ឈ្មោះ​ឯកសារ"
+
+#. i18n: file: transfer-plugins/mirrorsearch/dlgmirrorsearch.ui:32
+#. i18n: ectx: property (text), widget (QTreeWidget, enginesTreeWidget)
+#: rc.cpp:201
+msgid "Url"
+msgstr ""
+
+#. i18n: file: transfer-plugins/mirrorsearch/dlgmirrorsearch.ui:55
+#. i18n: ectx: property (text), widget (QPushButton, newEngineBt)
+#: rc.cpp:204
+msgid "New Engine..."
+msgstr ""
+
+#. i18n: file: transfer-plugins/mirrorsearch/dlgmirrorsearch.ui:62
+#. i18n: ectx: property (text), widget (QPushButton, removeEngineBt)
+#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:67
+#. i18n: ectx: property (text), widget (QPushButton, removeScriptButton)
+#: rc.cpp:207 rc.cpp:476
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Remove"
+msgid "Remove"
+msgstr "យកចេញ"
+
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:16
 #. i18n: ectx: property (text), widget (QLabel, torrent_label)
-#: rc.cpp:189
+#: rc.cpp:210
 msgid "Scanning data of torrent :"
 msgstr "វិភាគ​ទិន្នន័យ​នៃ torrent ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:30
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:192
+#: rc.cpp:213
 msgid "Number of chunks found :"
 msgstr "ចំនួន​កំណាត់​ដែល​បាន​រកឃើញ ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:40
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:195
+#: rc.cpp:216
 msgid "Number of chunks failed :"
 msgstr "ចំនួន​កំណាត់​ដែល​បាន​បរាជ័យ ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:198
+#: rc.cpp:219
 msgid "Number of chunks not downloaded:"
 msgstr "ចំនួន​កំណាត់​ដែល​មិនបាន​ទាញយក ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:57
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:201
+#: rc.cpp:222
 msgid "Number of chunks downloaded:"
 msgstr "ចំនួន​កំណាត់​ដែល​បាន​ទាញយក ៖"
 
@@ -2618,13 +2736,13 @@ msgstr "ចំនួន​កំណាត់​ដែល​បាន​ទាញ
 #. i18n: ectx: property (text), widget (QLabel, chunks_not_downloaded)
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:137
 #. i18n: ectx: property (text), widget (QLabel, chunks_downloaded)
-#: rc.cpp:204 rc.cpp:207 rc.cpp:210 rc.cpp:213
+#: rc.cpp:225 rc.cpp:228 rc.cpp:231 rc.cpp:234
 msgid "0"
 msgstr "០"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:48
 #. i18n: ectx: property (text), widget (QLabel, uploadLimitLabel)
-#: rc.cpp:225
+#: rc.cpp:246
 msgid "Upload Limit per Transfer:"
 msgstr "ដែន​កំណត់​ផ្ទុក​ឡើង​/ផ្ទេរ ៖"
 
@@ -2632,7 +2750,7 @@ msgstr "ដែន​កំណត់​ផ្ទុក​ឡើង​/ផ្ទ�
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, uploadBox)
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:75
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, downloadBox)
-#: rc.cpp:228 rc.cpp:237
+#: rc.cpp:249 rc.cpp:258
 msgid "No Limit"
 msgstr "គ្មាន​ដែន​កំណត់"
 
@@ -2648,37 +2766,37 @@ msgstr "គ្មាន​ដែន​កំណត់"
 #. i18n: ectx: property (suffix), widget (QSpinBox, downloadBox)
 #. i18n: file: ui/groupsettingsdialog.ui:84
 #. i18n: ectx: property (suffix), widget (QSpinBox, uploadBox)
-#: rc.cpp:231 rc.cpp:240 rc.cpp:398 rc.cpp:404 rc.cpp:451 rc.cpp:457
+#: rc.cpp:252 rc.cpp:261 rc.cpp:491 rc.cpp:497 rc.cpp:544 rc.cpp:550
 msgid "KiB"
 msgstr "គីឡូបៃ"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:68
 #. i18n: ectx: property (text), widget (QLabel, downloadLabel)
-#: rc.cpp:234
+#: rc.cpp:255
 msgid "Download Limit per Transfer:"
 msgstr "ដែន​កំណត់​ទាញយក/កា​រផ្ទេរ ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:109
 #. i18n: ectx: property (text), widget (QLabel, torrentFolderLabel)
-#: rc.cpp:246
+#: rc.cpp:267
 msgid "Default Torrent-Folder:"
 msgstr "ថត Torrent លំនាំដើម ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:129
 #. i18n: ectx: property (text), widget (QLabel, tempFolderLabel)
-#: rc.cpp:249
+#: rc.cpp:270
 msgid "Default temporary folder"
 msgstr "ថត​បណ្ដោះ​អាសន្ន​លំនាំដើម"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:146
 #. i18n: ectx: property (text), widget (QCheckBox, preallocBox)
-#: rc.cpp:252
+#: rc.cpp:273
 msgid "Preallocate disk-space"
 msgstr "បម្រុង​ទុក​ទំហំ​ថាស​ជា​មុន"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/webseedstab.ui:21
 #. i18n: ectx: property (toolTip), widget (KLineEdit, m_webseed)
-#: rc.cpp:255
+#: rc.cpp:276
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -2714,25 +2832,25 @@ msgstr ""
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/webseedstab.ui:28
 #. i18n: ectx: property (text), widget (QPushButton, m_add)
-#: rc.cpp:263
+#: rc.cpp:284
 msgid "Add Webseed"
 msgstr "បន្ថែម Webseed"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/webseedstab.ui:50
 #. i18n: ectx: property (text), widget (QPushButton, m_remove)
-#: rc.cpp:266
+#: rc.cpp:287
 msgid "Remove Webseed"
 msgstr "យក Webseed ចេញ"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui:23
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:272
+#: rc.cpp:293
 msgid "Total:"
 msgstr "សរុប ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui:59
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:275
+#: rc.cpp:296
 msgid "Currently downloading:"
 msgstr "កា​រទាញ​យក​បច្ចុប្បន្ន ៖"
 
@@ -2740,7 +2858,7 @@ msgstr "កា​រទាញ​យក​បច្ចុប្បន្ន ៖"
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:163
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:278 rc.cpp:362
+#: rc.cpp:299 rc.cpp:383
 msgid "Downloaded:"
 msgstr "បានទាញ​យក ៖"
 
@@ -2748,25 +2866,25 @@ msgstr "បានទាញ​យក ៖"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:205
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:281 rc.cpp:380
+#: rc.cpp:302 rc.cpp:401
 msgid "Excluded:"
 msgstr "មិនបាន​រួម​បញ្ចូល ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui:167
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4_2)
-#: rc.cpp:284
+#: rc.cpp:305
 msgid "Left:"
 msgstr "ឆ្វេង ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui:203
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_8)
-#: rc.cpp:287
+#: rc.cpp:308
 msgid "Size:"
 msgstr "ទំហំ ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:290
+#: rc.cpp:311
 msgid "Current Tracker"
 msgstr "កម្មវិធី​​តាមដាន​បច្ចុប្បន្ន"
 
@@ -2774,7 +2892,7 @@ msgstr "កម្មវិធី​​តាមដាន​បច្ចុប្
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: file: ui/newtransferwidget.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:293 rc.cpp:413
+#: rc.cpp:314 rc.cpp:506
 msgid "URL:"
 msgstr "URL ៖"
 
@@ -2782,7 +2900,7 @@ msgstr "URL ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:299 rc.cpp:335
+#: rc.cpp:320 rc.cpp:356
 msgid "Seeders:"
 msgstr "ឧបករណ៍​បណ្ដុះ ៖"
 
@@ -2790,31 +2908,31 @@ msgstr "ឧបករណ៍​បណ្ដុះ ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:99
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:302 rc.cpp:347
+#: rc.cpp:323 rc.cpp:368
 msgid "Leechers:"
 msgstr "ឧបករណ៍​ស្រូប ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:126
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:305
+#: rc.cpp:326
 msgid "Times Downloaded:"
 msgstr "ពេលវេលា​បានទាញ​យក ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:150
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:308
+#: rc.cpp:329
 msgid "Next Update In:"
 msgstr "ភាព​ទាន់សម័យ​បន្ទាប់នៅ​ក្នុង ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:189
 #. i18n: ectx: property (text), widget (KPushButton, m_announce)
-#: rc.cpp:311
+#: rc.cpp:332
 msgid "Manual Announce"
 msgstr ""
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:196
 #. i18n: ectx: property (text), widget (QPushButton, m_scrape)
-#: rc.cpp:314
+#: rc.cpp:335
 #, fuzzy
 #| msgid "Score"
 msgid "Scrape"
@@ -2822,37 +2940,37 @@ msgstr "ពិន្ទុ"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:219
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:317
+#: rc.cpp:338
 msgid "Available Trackers"
 msgstr "កម្មវិធីតាមដាន​ដែល​អាច​ប្រើបាន"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:232
 #. i18n: ectx: property (text), widget (KPushButton, m_add_tracker)
-#: rc.cpp:320
+#: rc.cpp:341
 msgid "Add Tracker"
 msgstr "បន្ថែម​កម្មវិធី​តាមដាន"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:244
 #. i18n: ectx: property (text), widget (KPushButton, m_remove_tracker)
-#: rc.cpp:323
+#: rc.cpp:344
 msgid "Remove Tracker"
 msgstr "យក​កម្មវិធី​តាមដាន​ចេញ"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:251
 #. i18n: ectx: property (text), widget (KPushButton, m_change_tracker)
-#: rc.cpp:326
+#: rc.cpp:347
 msgid "Change Tracker"
 msgstr "ផ្លាស់ប្ដូរ​កម្មវិធី​តាមដាន"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:271
 #. i18n: ectx: property (text), widget (KPushButton, m_restore_defaults)
-#: rc.cpp:329
+#: rc.cpp:350
 msgid "Restore Defaults"
 msgstr "ស្ដារ​លំនាំ​ដើម"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:29
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:332
+#: rc.cpp:353
 msgid "Stats"
 msgstr "ស្ថានភាព"
 
@@ -2872,33 +2990,33 @@ msgstr "ស្ថានភាព"
 #. i18n: ectx: property (text), widget (QLabel, chunksAllLabel)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:212
 #. i18n: ectx: property (text), widget (QLabel, chunksExcludedLabel)
-#: rc.cpp:338 rc.cpp:344 rc.cpp:350 rc.cpp:356 rc.cpp:365 rc.cpp:371
-#: rc.cpp:377 rc.cpp:383
+#: rc.cpp:359 rc.cpp:365 rc.cpp:371 rc.cpp:377 rc.cpp:386 rc.cpp:392
+#: rc.cpp:398 rc.cpp:404
 msgid "<n>"
 msgstr "<n>"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:73
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:341
+#: rc.cpp:362
 msgid "Download-Speed:"
 msgstr "ល្បឿន​ទាញ​យក ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:125
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: rc.cpp:353
+#: rc.cpp:374
 msgid "Upload-Speed:"
 msgstr "ល្បឿន​ផ្ទុកឡើង ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:177
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:368
+#: rc.cpp:389
 msgctxt "chunks left"
 msgid "Left:"
 msgstr "ឆ្វេង ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:191
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:374
+#: rc.cpp:395
 msgctxt "all chunks"
 msgid "All:"
 msgstr "ទាំងអស់ ៖"
@@ -2907,166 +3025,302 @@ msgstr "ទាំងអស់ ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_11)
 #. i18n: file: ui/transferdetailsfrm.ui:50
 #. i18n: ectx: property (text), widget (QLabel, sourceLabel)
-#: rc.cpp:386 rc.cpp:428
+#: rc.cpp:407 rc.cpp:521
 msgctxt "source-file"
 msgid "Source:"
 msgstr "ប្រភព ៖"
 
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:16
+#. i18n: ectx: property (title), widget (QGroupBox, fileSettingGroupBox)
+#: rc.cpp:413
+#, fuzzy
+#| msgctxt "@action"
+#| msgid "Settings"
+msgid "File-Settings"
+msgstr "ការ​កំណត់"
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:25
+#. i18n: ectx: property (text), widget (QLabel, fileNameLabel)
+#: rc.cpp:416
+#, fuzzy
+#| msgctxt "@label"
+#| msgid "File name"
+msgid "Filename:"
+msgstr "ឈ្មោះ​ឯកសារ"
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:33
+#. i18n: ectx: property (text), item, widget (QComboBox, fileNameComboBox)
+#: rc.cpp:419
+msgid "Use normalized name"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:38
+#. i18n: ectx: property (text), item, widget (QComboBox, fileNameComboBox)
+#: rc.cpp:422
+msgid "Use literal name"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:46
+#. i18n: ectx: property (text), widget (QLabel, qualityLabel)
+#: rc.cpp:425
+msgid "Quality:"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:54
+#. i18n: ectx: property (text), item, widget (QComboBox, qualityComboBox)
+#: rc.cpp:428
+msgid "Best quality (.mp4)"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:59
+#. i18n: ectx: property (text), item, widget (QComboBox, qualityComboBox)
+#: rc.cpp:431
+msgid "Normal quality (.flv)"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:70
+#. i18n: ectx: property (toolTip), widget (QGroupBox, loginGroupBox)
+#: rc.cpp:434
+msgid ""
+"Provide login info of your youtube account in order to access restricted "
+"media."
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:73
+#. i18n: ectx: property (title), widget (QGroupBox, loginGroupBox)
+#: rc.cpp:437
+msgid "Login Info"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:101
+#. i18n: ectx: property (text), widget (QLabel, usernameLabel)
+#: rc.cpp:443
+#, fuzzy
+#| msgid "User:"
+msgid "Username:"
+msgstr "អ្នក​ប្រើ ៖"
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:113
+#. i18n: ectx: property (toolTip), widget (QCheckBox, useNetrcCheck)
+#: rc.cpp:446
+msgid ".netrc must have a hostname called 'youtube'."
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:116
+#. i18n: ectx: property (text), widget (QCheckBox, useNetrcCheck)
+#: rc.cpp:449
+msgid "User .netrc file"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/dlgscriptediting.ui:29
+#. i18n: ectx: property (text), widget (QLabel, scriptUrlRegexpLabel)
+#: rc.cpp:452
+msgid "Regexp:"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/dlgscriptediting.ui:36
+#. i18n: ectx: property (text), widget (QLabel, scriptPathLabel)
+#: rc.cpp:455
+#, fuzzy
+#| msgid "Port:"
+msgid "Path:"
+msgstr "ច្រក​ ៖"
+
+#. i18n: file: transfer-plugins/contentfetch/dlgscriptediting.ui:43
+#. i18n: ectx: property (text), widget (QLabel, scriptDescriptionLabel)
+#: rc.cpp:458
+#, fuzzy
+#| msgid "Description"
+msgid "Description:"
+msgstr "សេចក្ដី​ពិពណ៌នា"
+
+#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:16
+#. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
+#: rc.cpp:461
+msgid "User Scripts"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:27
+#. i18n: ectx: property (text), widget (QTreeWidget, scriptTreeWidget)
+#: rc.cpp:464
+msgid "Path"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:32
+#. i18n: ectx: property (text), widget (QTreeWidget, scriptTreeWidget)
+#: rc.cpp:467
+msgid "RegExp"
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:60
+#. i18n: ectx: property (text), widget (QPushButton, newScriptButton)
+#: rc.cpp:473
+msgid "New Script..."
+msgstr ""
+
+#. i18n: file: transfer-plugins/contentfetch/dlgcontentfetchsettingwidget.ui:74
+#. i18n: ectx: property (text), widget (QPushButton, editScriptButton)
+#: rc.cpp:479
+#, fuzzy
+#| msgid "Edit"
+msgid "Edit..."
+msgstr "កែ​សម្រួល"
+
 #. i18n: file: ui/transfersettingsdialog.ui:22
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
-#: rc.cpp:392
+#: rc.cpp:485
 msgid "Transfer-Settings"
 msgstr "កំណត់​ការ​ផ្ទេរ"
 
 #. i18n: file: ui/transfersettingsdialog.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, uploadCheck)
-#: rc.cpp:395
+#: rc.cpp:488
 msgid "Upload Limit"
 msgstr "ដែន​កំណត់​ផ្ទុក​ឡើង"
 
 #. i18n: file: ui/transfersettingsdialog.ui:51
 #. i18n: ectx: property (text), widget (QCheckBox, downloadCheck)
-#: rc.cpp:401
+#: rc.cpp:494
 msgid "Download Limit"
 msgstr "ដែន​កំណត់​ទាញ​យក"
 
 #. i18n: file: ui/transfersettingsdialog.ui:71
 #. i18n: ectx: property (text), widget (QCheckBox, ratioCheck)
-#: rc.cpp:407
+#: rc.cpp:500
 msgid "Maximum Share Ratio"
 msgstr "សមាមាត្រ​ដែល​បាន​ចែករំលែក​អតិបរមា ៖"
 
 #. i18n: file: ui/newtransferwidget.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:416
+#: rc.cpp:509
 msgid "Destination:"
 msgstr "ទិសដៅ ៖"
 
 #. i18n: file: ui/newtransferwidget.ui:53
 #. i18n: ectx: property (text), widget (QCheckBox, defaultFolderButton)
-#: rc.cpp:419
+#: rc.cpp:512
 msgid "Set as default folder"
 msgstr "កំណត់​ជា​ថត​លំនាំ​ដើម"
 
 #. i18n: file: ui/newtransferwidget.ui:60
 #. i18n: ectx: property (text), widget (QLabel, groupLabel)
-#: rc.cpp:422
+#: rc.cpp:515
 msgid "Transfer Group:"
 msgstr "ផ្ទេរ​ក្រុម ៖"
 
 #. i18n: file: ui/transferdetailsfrm.ui:164
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:438
+#: rc.cpp:531
 msgid "Remaining Time:"
 msgstr "ពេល​នៅ​សល់ ៖"
 
 #. i18n: file: ui/groupsettingsdialog.ui:19
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
-#: rc.cpp:442
+#: rc.cpp:535
 msgid "Group-Settings"
 msgstr "ការ​កំណត់​ក្រុម"
 
 #. i18n: file: ui/groupsettingsdialog.ui:28
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:445
+#: rc.cpp:538
 msgid "Default folder:"
 msgstr "ថត​លំនាំ​ដើម ៖"
 
 #. i18n: file: ui/groupsettingsdialog.ui:42
 #. i18n: ectx: property (text), widget (QCheckBox, downloadCheck)
-#: rc.cpp:448
+#: rc.cpp:541
 msgid "Maximum download speed"
 msgstr "ល្បឿន​ទាញយក​អតិបរមា"
 
 #. i18n: file: ui/groupsettingsdialog.ui:68
 #. i18n: ectx: property (text), widget (QCheckBox, uploadCheck)
-#: rc.cpp:454
+#: rc.cpp:547
 msgid "Maximum upload speed"
 msgstr "ល្បឿន​ផ្ទុកឡើង​អតិបរមា"
 
 #. i18n: file: ui/history/transferhistory.ui:26
 #. i18n: ectx: property (text), widget (QPushButton, clearButton)
-#: rc.cpp:460
+#: rc.cpp:553
 msgid "Clear History"
 msgstr "ជម្រះ​ប្រវត្តិ"
 
 #. i18n: file: ui/history/transferhistory.ui:46
 #. i18n: ectx: property (title), widget (KButtonGroup, viewmodesgroup)
-#: rc.cpp:463
+#: rc.cpp:556
 msgctxt "View modes"
 msgid "View Modes"
 msgstr "របៀប​ទិដ្ឋភាព"
 
 #. i18n: file: ui/history/transferhistory.ui:99
 #. i18n: ectx: property (title), widget (KButtonGroup, kbuttongroup_2)
-#: rc.cpp:466
+#: rc.cpp:559
 msgid "Select ranges"
 msgstr "ជ្រើស​ជួរ"
 
 #. i18n: file: ui/history/transferhistory.ui:115
 #. i18n: ectx: property (text), item, widget (KComboBox, rangeType)
-#: rc.cpp:469
+#: rc.cpp:562
 msgid "Date"
 msgstr "កាលបរិច្ឆេទ"
 
 #. i18n: file: ui/history/transferhistory.ui:125
 #. i18n: ectx: property (text), item, widget (KComboBox, rangeType)
-#: rc.cpp:475
+#: rc.cpp:568
 msgid "Host"
 msgstr "ម៉ាស៊ីន"
 
 #. i18n: file: ui/history/transferhistory.ui:136
 #. i18n: ectx: property (title), widget (KButtonGroup, kbuttongroup_3)
-#: rc.cpp:478
+#: rc.cpp:571
 msgid "Filter history"
 msgstr "ប្រវត្តិ​តម្រង"
 
 #. i18n: file: ui/history/transferhistory.ui:165
 #. i18n: ectx: property (text), widget (KLineEdit, searchBar)
-#: rc.cpp:481
+#: rc.cpp:574
 msgctxt "delete selected transfer"
 msgid "Delete Selected"
 msgstr "លុប​អ្វី​ដែល​បានជ្រើស"
 
 #. i18n: file: ui/history/transferhistory.ui:170
 #. i18n: ectx: property (text), widget (KLineEdit, searchBar)
-#: rc.cpp:484
+#: rc.cpp:577
 msgid "Download"
 msgstr "​ទាញយក"
 
 #. i18n: file: ui/kgetui.rc:4
 #. i18n: ectx: Menu (file)
-#: rc.cpp:487
+#: rc.cpp:580
 msgid "&File"
 msgstr "ឯកសារ"
 
 #. i18n: file: ui/kgetui.rc:16
 #. i18n: ectx: Menu (Downloads)
-#: rc.cpp:490
+#: rc.cpp:583
 msgid "&Downloads"
 msgstr "ទាញយក"
 
 #. i18n: file: ui/kgetui.rc:26
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:493
+#: rc.cpp:586
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: file: ui/kgetui.rc:30
 #. i18n: ectx: Menu (help)
-#: rc.cpp:496
+#: rc.cpp:589
 msgid "&Help"
 msgstr "ជំនួយ"
 
 #. i18n: file: ui/kgetui.rc:33
 #. i18n: ectx: ToolBar (kget_toolbar)
-#: rc.cpp:499
+#: rc.cpp:592
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
 #. i18n: file: extensions/konqueror/kget_plug_in.rc:4
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:502
+#: rc.cpp:595
 msgid "&Tools"
 msgstr "ឧបករណ៍"
 
