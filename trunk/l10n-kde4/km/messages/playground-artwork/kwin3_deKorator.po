@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwin3_deKorator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-10 10:27+0100\n"
+"POT-Creation-Date: 2009-02-16 09:13+0100\n"
 "PO-Revision-Date: 2009-01-16 09:28+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -18,23 +18,23 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
 
-#: config/kthemeselector.cpp:85
+#: config/kthemeselector.cpp:138
 #, fuzzy
 #| msgid "Themes"
 msgid "Filter Themes"
 msgstr "ស្បែក"
 
-#: config/kthemeselector.cpp:95
+#: config/kthemeselector.cpp:148
 #, fuzzy, kde-format
 #| msgid "About"
 msgid "About %1"
 msgstr "អំពី"
 
-#: config/kthemeselector.cpp:125 config/themes.cpp:158
+#: config/kthemeselector.cpp:193 config/themes.cpp:158
 msgid "Drag or Type Theme URL"
 msgstr "អូស ឬ​វាយ​ URL ស្បែក"
 
-#: config/kthemeselector.cpp:144 config/themes.cpp:324
+#: config/kthemeselector.cpp:212 config/themes.cpp:324
 #, kde-format
 msgid ""
 "<qt>Are you sure you want to remove the <strong>%1</strong> theme?"
@@ -43,9 +43,15 @@ msgstr ""
 "<qt>តើ​អ្នកប្រាកដ​ជា​យក​ស្បែក <strong>%1</strong> ចេញ​​ឬ ?<br><br>វា​នឹង​លុប​ឯកសា​រដែល​"
 "បានដំឡើង​ដោយ​ស្បែក​នេះ ។</qt>"
 
-#: config/kthemeselector.cpp:150 config/themes.cpp:329
+#: config/kthemeselector.cpp:218 config/themes.cpp:329
 msgid "Confirmation"
 msgstr "ការ​អះអាង"
+
+#. i18n: file: config/configdialog.ui:1269
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
+#: config/kthemeselector.cpp:523 rc.cpp:263
+msgid "Themes"
+msgstr "ស្បែក"
 
 #: config/themes.cpp:170
 #, kde-format
@@ -76,6 +82,14 @@ msgstr ""
 #, kde-format
 msgid "<qt>Installing <strong>%1</strong> theme</qt>"
 msgstr "<qt>ដំឡើង​ស្បែក <strong>%1</strong></qt>"
+
+#: config/deKoratorthemes.cpp:98
+msgid "Show Full Previews"
+msgstr ""
+
+#: config/deKoratorthemes.cpp:100
+msgid "Show Names Only"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -549,12 +563,6 @@ msgstr "ប្រើ​របាំង"
 msgid "Masks tiles path"
 msgstr "ដាក់​របាំង​ផ្លូវ​ក្រឡា​ក្បឿង"
 
-#. i18n: file: config/configdialog.ui:1269
-#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
-#: rc.cpp:263
-msgid "Themes"
-msgstr "ស្បែក"
-
 #. i18n: file: config/configdialog.ui:1281
 #. i18n: ectx: property (title), widget (QGroupBox, buttonGroup10)
 #: rc.cpp:266
@@ -883,43 +891,56 @@ msgstr ""
 "style=\" text-decoration: underline; color:#ff0000;\">christoph@maxiom.de</"
 "span></a></p></td></tr></table></body></html>"
 
-#. i18n: file: config/kthemeselectorwidgets.ui:32
+#. i18n: file: config/kthemeselectorwidgets.ui:31
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonConfigure)
 #: rc.cpp:395
 msgid "Configure Theme ..."
 msgstr ""
 
-#. i18n: file: config/kthemeselectorwidgets.ui:39
-#. i18n: ectx: property (text), widget (QPushButton, m_buttonInstall)
+#. i18n: file: config/kthemeselectorwidgets.ui:38
+#. i18n: ectx: property (text), widget (QPushButton, m_buttonCreate)
 #: rc.cpp:398
 #, fuzzy
 #| msgid "Install Ne&w Theme"
-msgid "Install Theme ..."
+msgid "Create Theme ..."
 msgstr "ដំឡើង​ស្បែក​ថ្មី"
 
-#. i18n: file: config/kthemeselectorwidgets.ui:46
-#. i18n: ectx: property (text), widget (QPushButton, m_buttonRemove)
-#: rc.cpp:401
-#, fuzzy
-#| msgid "R&emove Theme"
-msgid "Remove Theme"
-msgstr "យក​ស្បែក​ចេញ"
-
-#. i18n: file: config/kthemeselectorwidgets.ui:53
+#. i18n: file: config/kthemeselectorwidgets.ui:45
 #. i18n: ectx: property (text), widget (QPushButton, m_buttonGetNew)
-#: rc.cpp:404
+#: rc.cpp:401
 #, fuzzy
 #| msgid "Install Ne&w Theme"
 msgid "Get New Themes ..."
 msgstr "ដំឡើង​ស្បែក​ថ្មី"
 
-#. i18n: file: config/kthemeselectorwidgets.ui:73
-#. i18n: ectx: property (text), widget (QPushButton, m_buttonAbout)
+#. i18n: file: config/kthemeselectorwidgets.ui:52
+#. i18n: ectx: property (text), widget (QPushButton, m_buttonInstall)
+#: rc.cpp:404
+#, fuzzy
+#| msgid "Install Ne&w Theme"
+msgid "Install Theme File ..."
+msgstr "ដំឡើង​ស្បែក​ថ្មី"
+
+#. i18n: file: config/kthemeselectorwidgets.ui:59
+#. i18n: ectx: property (text), widget (QPushButton, m_buttonRemove)
 #: rc.cpp:407
+#, fuzzy
+#| msgid "R&emove Theme"
+msgid "Remove Theme"
+msgstr "យក​ស្បែក​ចេញ"
+
+#. i18n: file: config/kthemeselectorwidgets.ui:79
+#. i18n: ectx: property (text), widget (QPushButton, m_buttonAbout)
+#: rc.cpp:410
 #, fuzzy
 #| msgid "Themes"
 msgid "About Themes"
 msgstr "ស្បែក"
+
+#, fuzzy
+#~| msgid "Install Ne&w Theme"
+#~ msgid "Install Theme ..."
+#~ msgstr "ដំឡើង​ស្បែក​ថ្មី"
 
 #~ msgid "Install Ne&w Theme"
 #~ msgstr "ដំឡើង​ស្បែក​ថ្មី"
