@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-26 10:40+0100\n"
+"POT-Creation-Date: 2009-02-27 10:50+0100\n"
 "PO-Revision-Date: 2008-12-26 08:48+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -147,7 +147,7 @@ msgid "The clipboard is empty"
 msgstr "ក្តារ​តម្រៀត​ខ្ទាស់​គឺ​ទទេ"
 
 #: kio/paste.cpp:228 kio/renamedialog.cpp:403 kio/kdirlister.cpp:313
-#: kio/krun.cpp:1005
+#: kio/krun.cpp:1071
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -2270,7 +2270,7 @@ msgstr "កំហុស​ដែល​មិន​បាន​កត់​ត្
 msgid "Default"
 msgstr "លំនាំដើម"
 
-#: kio/krun.cpp:120
+#: kio/krun.cpp:126
 #, kde-format
 msgid ""
 "<qt>Unable to enter <b>%1</b>.\n"
@@ -2279,7 +2279,7 @@ msgstr ""
 "<qt>មិន​អាច​ចូល <b>%1</b> បានឡើយ។\n"
 "អ្នក​មិន​មាន​សិទ្ធិ​ចូលដំណើរការ​ទីតាំង​នេះ​បាន​ឡើយ ។</qt>"
 
-#: kio/krun.cpp:154
+#: kio/krun.cpp:160
 #, kde-format
 msgid ""
 "<qt>The file <b>%1</b> is an executable program. For safety it will not be "
@@ -2288,71 +2288,38 @@ msgstr ""
 "<qt>ឯកសារ <b>%1</b> គឺ​ជា​កម្មវិធី​ដែល​អាច​ប្រតិបត្តិ​បាន ។ ដើម្បី​ឲ្យមាន​សុវត្ថិភាព វា​នឹង​មិន​ចាប់ផ្តើម​"
 "ទេ ។</qt>"
 
-#: kio/krun.cpp:160
+#: kio/krun.cpp:166
 #, kde-format
 msgid "<qt>You do not have permission to run <b>%1</b>.</qt>"
 msgstr "<qt>អ្នក​មិនមានសិទ្ធិ​ក្នុងការ​រត់ <b>%1</b> ឡើយ ។</qt>"
 
-#: kio/krun.cpp:184
+#: kio/krun.cpp:190
 msgid "You are not authorized to select an application to open this file."
 msgstr "អ្នក​មិនត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​បើក​កម្មវិធី​ដើម្បី​បើក​ឯកសារ​នេះ​ឡើយ ។"
 
-#: kio/krun.cpp:195
+#: kio/krun.cpp:201
 msgid "Open with:"
 msgstr "បើក​ជាមួយ ៖"
 
-#: kio/krun.cpp:524
+#: kio/krun.cpp:530
 msgid "You are not authorized to execute this file."
 msgstr "អ្នក​មិន​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​ប្រតិបត្តិ​ឯកសារ​នេះ​ឡើយ ។"
 
-#: kio/krun.cpp:547
+#: kio/krun.cpp:553
 #, kde-format
 msgid "Launching %1"
 msgstr "បើក %1"
 
-#: kio/krun.cpp:653
+#: kio/krun.cpp:659
 #, kde-format
 msgid "Error processing Exec field in %1"
 msgstr "កំហុស​ក្នុង​ការ​ដំណើរការ​វាល​ប្រតិបត្តិ​ក្នុង %1"
 
-#: kio/krun.cpp:794
+#: kio/krun.cpp:853
 msgid "You are not authorized to execute this service."
 msgstr "អ្នកមិនត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​ប្រតិបត្តិ​សេវា​នេះ​ឡើយ ។"
 
-#: kio/krun.cpp:803
-msgctxt "@action:button"
-msgid "Make program executable and continue"
-msgstr ""
-
-#: kio/krun.cpp:806
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para><b>Warning</b>: The program you are trying to run, \"<application>%1</"
-"application>\", is not marked as an executable program.  This could be due "
-"to a mistake in the system configuration, but could also be a malicious "
-"program attempting to run.</para><para>Click <interface>%2</interface> to "
-"make the program executable and run if:</para>• You know this is a program "
-"(for example, if you created the shortcut), or<br/>• You downloaded the "
-"program and know that it is safe.<para>Click <interface>Cancel</interface> "
-"to cancel execution if:</para>• You did not know you were about to run a "
-"program, or<br/>• You downloaded or were emailed this program and are not "
-"sure it's safe"
-msgstr ""
-
-#: kio/krun.cpp:817
-#, kde-format
-msgid "This program will run the following command: %1"
-msgstr ""
-
-#: kio/krun.cpp:820
-#, kde-format
-msgid ""
-"\n"
-"The command will run in: %1"
-msgstr ""
-
-#: kio/krun.cpp:835
+#: kio/krun.cpp:865
 #, fuzzy
 #| msgctxt "@title job"
 #| msgid "Examining"
@@ -2360,12 +2327,21 @@ msgctxt "Warning about executing unknown .desktop file"
 msgid "Warning"
 msgstr "ការ​ត្រួតពិនិត្យ"
 
-#: kio/krun.cpp:860
+#: kio/krun.cpp:879
+msgctxt "program name follows in a line edit below"
+msgid "This will start the program:"
+msgstr ""
+
+#: kio/krun.cpp:893
+msgid "If you do not trust this program, click Cancel"
+msgstr ""
+
+#: kio/krun.cpp:926
 #, kde-format
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr ""
 
-#: kio/krun.cpp:1038
+#: kio/krun.cpp:1104
 #, kde-format
 msgid ""
 "<qt>Unable to run the command specified. The file or folder <b>%1</b> does "
@@ -2373,7 +2349,7 @@ msgid ""
 msgstr ""
 "<qt>មិន​អាច​រត់​ពាក្យ​បញ្ជា​ដែលបាន​បញ្ជាក់​បានឡើយ ។ មិនមាន​ឯកសារ ឬ​ថត <b>%1</b> ឡើយ ។</qt>"
 
-#: kio/krun.cpp:1658
+#: kio/krun.cpp:1724
 #, kde-format
 msgid "Could not find the program '%1'"
 msgstr "មិន​អាច​រក​ឃើញ​កម្មវិធី '%1' ឡើយ"
@@ -5471,10 +5447,15 @@ msgid "Remote files not accepted"
 msgstr "មិនបាន​ទទួល​ឯកសារ​ពី​ចម្ងាយ​ទេ"
 
 #: ../kfile/kfilewidget.cpp:914
+#, fuzzy
+#| msgid ""
+#| "More than one folder has been selected and this dialog does not accept "
+#| "folders, so it is not possible to decide in which one enter. Please "
+#| "select only one folder to list it"
 msgid ""
 "More than one folder has been selected and this dialog does not accept "
-"folders, so it is not possible to decide in which one enter. Please select "
-"only one folder to list it"
+"folders, so it is not possible to decide which one to enter. Please select "
+"only one folder to list it."
 msgstr ""
 "មានថត​ច្រើនជាង​មួយ​ត្រូវ​បាន​ជ្រើស ហើយ​ប្រអប់​នេះ​មិន​ទទួល​យក​ថត​ទេ ដូច្នេះ​វា​មិនអាច​សម្រេចចិត្ត​ថាតើ​ត្រូវ​"
 "បញ្ចូល​​ថត​មួយណាទេ ។ សូម​ជ្រើស​តែ​ថត​មួយ​ប៉ុណ្ណោះ​ដើម្បី​រាយ​វា"
@@ -5659,8 +5640,9 @@ msgid "&Eject '%1'"
 msgstr "ច្រាន '%1' ចេញ "
 
 #: ../kfile/kfileplacesmodel.cpp:756
-#, kde-format
-msgid "The device '%1' is not a disc and can't be ejected."
+#, fuzzy, kde-format
+#| msgid "The device '%1' is not a disc and can't be ejected."
+msgid "The device '%1' is not a disc and cannot be ejected."
 msgstr "ឧបករណ៍ '%1' មិនមែន​ជា​ថាស និង​មិនអាច​ត្រូវបាន​ច្រាន​ចេញ​បាន​ទេ ។"
 
 #: ../kfile/kfileplacesmodel.cpp:792
