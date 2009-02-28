@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-27 10:58+0100\n"
+"POT-Creation-Date: 2009-02-28 10:21+0100\n"
 "PO-Revision-Date: 2009-01-19 14:16+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -357,8 +357,9 @@ msgstr "ចាប់ផ្ដើម"
 msgid "Start all selected torrents in the current tab"
 msgstr "ចាប់ផ្ដើម torrents ដែល​បាន​ជ្រើស​ទាំងអស់​នៅ​ក្នុង​ផ្ទាំង​បច្ចុប្បន្ន"
 
-#: ktorrent/viewmanager.cpp:523 plugins/mediaplayer/videowidget.cpp:55
-#: plugins/mediaplayer/mediaplayerplugin.cpp:81
+#: ktorrent/viewmanager.cpp:523
+#: plugins/mediaplayer/mediaplayeractivity.cpp:106
+#: plugins/mediaplayer/videowidget.cpp:55
 msgid "Stop"
 msgstr "បញ្ឈប់"
 
@@ -387,7 +388,7 @@ msgstr "បញ្ឈប់ torrents ដែល​បាន​ជ្រើស​�
 #. i18n: file: plugins/syndication/managefiltersdlg.ui:67
 #. i18n: ectx: property (text), widget (QPushButton, m_remove)
 #: ktorrent/viewmanager.cpp:529 rc.cpp:473 rc.cpp:500 rc.cpp:509 rc.cpp:860
-#: rc.cpp:1902
+#: rc.cpp:1902 plugins/mediaplayer/playlistwidget.cpp:102
 msgid "Remove"
 msgstr "យក​ចេញ"
 
@@ -1106,7 +1107,7 @@ msgstr "មាន​បញ្ហា​ជា​មួយ​នឹង​កម្
 msgid "%1<br>Url: <b>%2</b>"
 msgstr "%1<br>Url ៖ <b>%2</b>"
 
-#: ktorrent/core.cpp:120
+#: ktorrent/core.cpp:135
 #, kde-format
 msgid ""
 "Specified port (%1) is unavailable or in use by another application. "
@@ -1114,7 +1115,7 @@ msgid ""
 msgstr ""
 "មិនមាន​ថត​ដែល​បាន​បញ្ជាក់ (%1) ឬ​កំពុង​ប្រើ​ដោយ​កម្មវិធី​ផ្សេង​ទៀត ។ KTorrent ឥឡូវ​កំពុងប្រើ​ច្រក %2 ។"
 
-#: ktorrent/core.cpp:128
+#: ktorrent/core.cpp:143
 #, kde-format
 msgid ""
 "KTorrent is unable to accept connections because the ports %1 to %2 are "
@@ -1122,16 +1123,16 @@ msgid ""
 msgstr ""
 "KTorrent មិន​អាច​ទទួល​យក​ការ​តភ្ជាប់ទេ ពីព្រោះច្រក %1 ទៅ %2 កំពុង​ប្រើ​រួច​ហើយ​ដោយ​កម្មវិធី​ផ្សេង ។"
 
-#: ktorrent/core.cpp:835
+#: ktorrent/core.cpp:850
 msgid "KTorrent is running one or more torrents"
 msgstr "KTorrent កំពុង​រត់​មួយ ឬ​ច្រើន"
 
-#: ktorrent/core.cpp:927
+#: ktorrent/core.cpp:942
 #, kde-format
 msgid "Cannot create torrent: %1"
 msgstr "មិន​អាច​បង្កើត torrent ៖ %1"
 
-#: ktorrent/core.cpp:1023
+#: ktorrent/core.cpp:1038
 #, kde-format
 msgid ""
 "Several data files of the torrent \"%1\" are missing. \n"
@@ -1140,21 +1141,21 @@ msgstr ""
 "ឯកសារ​ទិន្នន័យ​របស់ torrent \"%1\" មួយ​ចំនួន​បាត់ ។ \n"
 "តើ​អ្នក​ពិតជា​ចង់​បង្កើត​ពួកវា​ឡើងវិញ​ ឬ​អ្នក​មិន​ទាញយក​ពួកវា ?"
 
-#: ktorrent/core.cpp:1032 ktorrent/core.cpp:1044 ktorrent/core.cpp:1057
+#: ktorrent/core.cpp:1047 ktorrent/core.cpp:1059 ktorrent/core.cpp:1072
 msgid "Data files are missing"
 msgstr "បាត់​ឯកសារ​ទិន្នន័យ"
 
-#: ktorrent/core.cpp:1043
+#: ktorrent/core.cpp:1058
 #, kde-format
 msgid "Cannot deselect missing files: %1"
 msgstr "មិន​អាច​ដោះជ្រើស​ឯកសារ​ដែល​បាត់ ៖ %1"
 
-#: ktorrent/core.cpp:1056
+#: ktorrent/core.cpp:1071
 #, kde-format
 msgid "Cannot recreate missing files: %1"
 msgstr "មិន​អាច​បង្កើត​ឯកសារ​ដែល​បាត់ ៖ %1"
 
-#: ktorrent/core.cpp:1072
+#: ktorrent/core.cpp:1087
 #, kde-format
 msgid ""
 "The file where the data is saved of the torrent \"%1\" is missing. \n"
@@ -1163,27 +1164,27 @@ msgstr ""
 "បាត់​ឯកសារ​ដែល​រក្សាទុក torrent \"%1\" ។ \n"
 "តើ​អ្នក​ចង់​បង្កើត​ឡើងវិញ​ឬ​ទេ ?"
 
-#: ktorrent/core.cpp:1079 ktorrent/core.cpp:1090
+#: ktorrent/core.cpp:1094 ktorrent/core.cpp:1105
 msgid "Data file is missing"
 msgstr "បាត់​ឯកសារ​ទិន្នន័យ"
 
-#: ktorrent/core.cpp:1089
+#: ktorrent/core.cpp:1104
 #, kde-format
 msgid "Cannot recreate data file: %1"
 msgstr "មិន​អាច​បង្កើត​ឯកសារ​ទិន្នន័យ​ឡើង​វិញ ៖ %1"
 
-#: ktorrent/core.cpp:1157
+#: ktorrent/core.cpp:1172
 msgid "Checking Data Integrity"
 msgstr "កំពុង​ពិនិត្យ​ភាព​ត្រឹមត្រូវ​របស់​ទិន្នន័យ"
 
-#: ktorrent/core.cpp:1179
+#: ktorrent/core.cpp:1194
 #, kde-format
 msgid ""
 "KTorrent has found %1 torrents from the KDE3 version of KTorrent, do you "
 "want to import them ?"
 msgstr "KTorrent បាន​រកឃើញ torrent %1 ពី KTorrent កំណែ KDE3 តើ​អ្នក​ចង់​នាំចូល​ពួកវា​ទេ ?"
 
-#: ktorrent/core.cpp:1201
+#: ktorrent/core.cpp:1216
 msgid "No torrents from the KDE3 version were found !"
 msgstr "គ្មាន torrents ពី​កំណែ KDE3 ទេ !"
 
@@ -1268,7 +1269,6 @@ msgid "Torrent Files"
 msgstr "ឯកសារ Torrent "
 
 #: ktorrent/gui.cpp:220 ktorrent/gui.cpp:235
-#: plugins/mediaplayer/mediaview.cpp:72
 msgid "All Files"
 msgstr "ឯកសារ​ទាំង​អស់"
 
@@ -7558,90 +7558,121 @@ msgstr "បង្ហាញ​លទ្ធផល​កំណត់ហេតុ​
 msgid "File download order for <b>%1</b>:"
 msgstr "លំដាប់​ទាញ​យ​ក​ឯកសារសម្រាប់ <b>%1</b> ៖"
 
+#: plugins/mediaplayer/mediaplayeractivity.cpp:47
+#: plugins/mediaplayer/mediaplayeractivity.cpp:151
+#: plugins/mediaplayer/mediaplayerplugin.cpp:49
+#: plugins/mediaplayer/mediaplayerplugin.cpp:61
+msgid "Media Player"
+msgstr "កម្មវិធី​ចាក់​មេឌៀ"
+
+#: plugins/mediaplayer/mediaplayeractivity.cpp:74
+#, fuzzy
+#| msgid "Play"
+msgid "Play List"
+msgstr "ចាក់"
+
+#: plugins/mediaplayer/mediaplayeractivity.cpp:98
 #: plugins/mediaplayer/videowidget.cpp:53
-#: plugins/mediaplayer/mediaplayerplugin.cpp:73
 msgid "Play"
 msgstr "ចាក់"
 
+#: plugins/mediaplayer/mediaplayeractivity.cpp:102
 #: plugins/mediaplayer/videowidget.cpp:54
-#: plugins/mediaplayer/mediaplayerplugin.cpp:77
 msgid "Pause"
 msgstr "ផ្អាក"
+
+#: plugins/mediaplayer/mediaplayeractivity.cpp:110
+msgid "Previous"
+msgstr "មុន"
+
+#: plugins/mediaplayer/mediaplayeractivity.cpp:114
+msgid "Next"
+msgstr "បន្ទាប់"
+
+#: plugins/mediaplayer/mediaplayeractivity.cpp:118
+msgid "Show Video"
+msgstr "បង្ហាញ​វីដេអូ"
+
+#: plugins/mediaplayer/mediaplayeractivity.cpp:122
+#: plugins/mediaplayer/playlistwidget.cpp:104
+#, fuzzy
+#| msgid "Add Feed"
+msgid "Add Media"
+msgstr "បន្ថែម​មតិព័ត៌មាន"
+
+#: plugins/mediaplayer/mediaplayeractivity.cpp:126
+#: plugins/mediaplayer/playlistwidget.cpp:105
+msgid "Clear Playlist"
+msgstr ""
+
+#: plugins/mediaplayer/mediaplayeractivity.cpp:165
+#: plugins/mediaplayer/mediaplayeractivity.cpp:175
+#: plugins/mediaplayer/mediaplayeractivity.cpp:374
+msgid "Movie player"
+msgstr "កម្មវិធី​ចាក់​ភាពយន្ដ"
 
 #: plugins/mediaplayer/videowidget.cpp:56
 msgid "Toggle Fullscreen"
 msgstr "បិទ​បើក ពេញ​អេក្រង់"
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:85
-msgid "Previous"
-msgstr "មុន"
+#: plugins/mediaplayer/playlist.cpp:128
+#: plugins/syndication/feedwidgetmodel.cpp:81
+msgid "Title"
+msgstr "ចំណងជើង"
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:89
-msgid "Next"
-msgstr "បន្ទាប់"
+#: plugins/mediaplayer/playlist.cpp:129
+msgid "Artist"
+msgstr ""
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:93
-msgid "Show Video"
-msgstr "បង្ហាញ​វីដេអូ"
+#: plugins/mediaplayer/playlist.cpp:130
+msgid "Album"
+msgstr ""
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:108
-#: plugins/mediaplayer/mediaplayerplugin.cpp:114
-#: plugins/mediaplayer/mediaplayerplugin.cpp:133
-#: plugins/mediaplayer/mediaplayerplugin.cpp:164
-msgid "Media Player"
-msgstr "កម្មវិធី​ចាក់​មេឌៀ"
+#: plugins/mediaplayer/playlist.cpp:131
+#, fuzzy
+#| msgid "Left:"
+msgid "Length"
+msgstr "ឆ្វេង ៖"
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:114
-msgid "The media player allows you to play music and movies inside KTorrent"
-msgstr "កម្មវិធី​ចាក់​មេឌៀ អនុញ្ញាត​ឲ្យ​អ្នក​ចាក់​តន្ដ្រី និង​ភាពយន្ដ​នៅ​ក្នុង KTorrent បាន"
+#: plugins/mediaplayer/playlist.cpp:132
+#, fuzzy
+#| msgid "Clear"
+msgid "Year"
+msgstr "ជម្រះ"
 
-#: plugins/mediaplayer/mediaplayerplugin.cpp:171
-#: plugins/mediaplayer/mediaplayerplugin.cpp:177
-#: plugins/mediaplayer/mediaplayerplugin.cpp:367
-msgid "Movie player"
-msgstr "កម្មវិធី​ចាក់​ភាពយន្ដ"
-
-#: plugins/mediaplayer/mediaview.cpp:60 plugins/mediaplayer/mediaview.cpp:144
+#: plugins/mediaplayer/playlistwidget.cpp:66
+#: plugins/mediaplayer/playlistwidget.cpp:158
 msgid "Ready to play"
 msgstr "អាច​ចាក់​បាន​ហើយ"
 
-#: plugins/mediaplayer/mediaview.cpp:68
+#: plugins/mediaplayer/playlistwidget.cpp:80
 msgid "Mode:"
 msgstr "របៀប ៖"
 
-#: plugins/mediaplayer/mediaview.cpp:71
+#: plugins/mediaplayer/playlistwidget.cpp:82
 msgid "Single File"
 msgstr "ឯកសារ​តែ​មួយ"
 
-#: plugins/mediaplayer/mediaview.cpp:73
-msgid "Random Files"
+#: plugins/mediaplayer/playlistwidget.cpp:83
+#, fuzzy
+#| msgid "Play"
+msgid "Playlist"
+msgstr "ចាក់"
+
+#: plugins/mediaplayer/playlistwidget.cpp:84
+#, fuzzy
+#| msgid "Random Files"
+msgid "Random"
 msgstr "ឯកសារ​ចៃដន្យ"
 
-#: plugins/mediaplayer/mediaview.cpp:82
-msgid "Skip incomplete files"
-msgstr "រំលង​ឯកសារ​មិន​ពេញលេញ"
-
-#: plugins/mediaplayer/mediaview.cpp:133
-#, kde-format
-msgid "Playing: <b>%1</b>"
-msgstr "ចាក់ ៖ <b>%1</b>"
-
-#: plugins/mediaplayer/mediaview.cpp:162
+#: plugins/mediaplayer/playlistwidget.cpp:184
 #, kde-format
 msgid "Title: <b>%1</b><br/>Artist: <b>%2</b><br/>Album: <b>%3</b>"
 msgstr "ចំណងជើង ៖ <b>%1</b><br/>សិល្បករ ៖ <b>%2</b><br/>អាល់ប៊ុម ៖ <b>%3</b>"
 
-#: plugins/mediaplayer/mediaview.cpp:166
-#, kde-format
-msgid "Title: <b>%1</b><br/>Artist: <b>%2</b>"
-msgstr "ចំណងជើង ៖ <b>%1</b><br/>សិល្បករ ៖ <b>%2</b>"
-
-#: plugins/mediaplayer/mediaview.cpp:170
-#, kde-format
-msgid "Title: <b>%1</b>"
-msgstr "ចំណងជើង ៖ <b>%1</b>"
-
-#: plugins/mediaplayer/mediaview.cpp:182
+#: plugins/mediaplayer/playlistwidget.cpp:185
+#: plugins/mediaplayer/playlistwidget.cpp:190
+#: plugins/mediaplayer/playlistwidget.cpp:195
 #, kde-format
 msgid ""
 "Playing: <b>%1</b><br/>\n"
@@ -7650,18 +7681,39 @@ msgstr ""
 "ចាក់ ៖ <b>%1</b><br/>\n"
 "%2"
 
-#: plugins/mediaplayer/mediamodel.cpp:124
-#: plugins/mediaplayer/mediamodel.cpp:151
-msgid "Available"
-msgstr "មាន​"
+#: plugins/mediaplayer/playlistwidget.cpp:189
+#, kde-format
+msgid "Title: <b>%1</b><br/>Artist: <b>%2</b>"
+msgstr "ចំណងជើង ៖ <b>%1</b><br/>សិល្បករ ៖ <b>%2</b>"
 
-#: plugins/mediaplayer/mediamodel.cpp:124
-#: plugins/mediaplayer/mediamodel.cpp:151
-msgid "Pending"
-msgstr "មិន​ទាន់ចប់"
+#: plugins/mediaplayer/playlistwidget.cpp:194
+#, kde-format
+msgid "Title: <b>%1</b>"
+msgstr "ចំណងជើង ៖ <b>%1</b>"
+
+#: plugins/mediaplayer/playlistwidget.cpp:199
+#, kde-format
+msgid "Playing: <b>%1</b>"
+msgstr "ចាក់ ៖ <b>%1</b>"
+
+#: plugins/mediaplayer/mediaview.cpp:46
+#, fuzzy
+#| msgid "Connections"
+msgid "Collection:"
+msgstr "ការ​ត​ភ្ជាប់"
 
 #: plugins/mediaplayer/mediamodel.cpp:125
 #: plugins/mediaplayer/mediamodel.cpp:152
+msgid "Available"
+msgstr "មាន​"
+
+#: plugins/mediaplayer/mediamodel.cpp:125
+#: plugins/mediaplayer/mediamodel.cpp:152
+msgid "Pending"
+msgstr "មិន​ទាន់ចប់"
+
+#: plugins/mediaplayer/mediamodel.cpp:126
+#: plugins/mediaplayer/mediamodel.cpp:153
 #, kde-format
 msgid "<b>%1</b><br/>Preview: %2<br/>Downloaded: %3 %"
 msgstr "<b>%1</b><br/>មើល​ជាមុន ៖ %2<br/>បាន​ទាញយក ៖ %3 %"
@@ -7681,10 +7733,6 @@ msgstr "<b>ការ​ទាញយក​បាន​បរាជ័យ</b>"
 #: plugins/syndication/feedwidget.cpp:105
 msgid "<b>Downloading</b>"
 msgstr "<b>ការ​ទាញយក</b>"
-
-#: plugins/syndication/feedwidgetmodel.cpp:81
-msgid "Title"
-msgstr "ចំណងជើង"
 
 #: plugins/syndication/feedwidgetmodel.cpp:82
 msgid "Date Published"
@@ -8460,6 +8508,12 @@ msgstr "URL កម្មវិធី​តាមដាន​បទ​មិន�
 #, kde-format
 msgid "Cannot open file : %1 : %2"
 msgstr "មិនអាច​បើក​ឯកសារ ៖ %1 : %2"
+
+#~ msgid "The media player allows you to play music and movies inside KTorrent"
+#~ msgstr "កម្មវិធី​ចាក់​មេឌៀ អនុញ្ញាត​ឲ្យ​អ្នក​ចាក់​តន្ដ្រី និង​ភាពយន្ដ​នៅ​ក្នុង KTorrent បាន"
+
+#~ msgid "Skip incomplete files"
+#~ msgstr "រំលង​ឯកសារ​មិន​ពេញលេញ"
 
 #~ msgid "Groups"
 #~ msgstr "ក្រុម"
