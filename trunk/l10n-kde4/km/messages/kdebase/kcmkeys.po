@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkeys\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-02-27 10:50+0100\n"
+"POT-Creation-Date: 2009-03-01 10:33+0100\n"
 "PO-Revision-Date: 2008-09-23 14:32+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -16,47 +16,71 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: kglobalshortcutseditor.cpp:114
+#: globalshortcuts.cpp:67
+msgid "You are about to reset all shortcuts to their default value!"
+msgstr ""
+
+#: globalshortcuts.cpp:68
+msgid "Reset to defaults"
+msgstr ""
+
+#: globalshortcuts.cpp:69
+#, fuzzy
+#| msgid "KDE component:"
+msgid "Current Component"
+msgstr "សមាសភាគ KDE ៖"
+
+#: globalshortcuts.cpp:70
+#, fuzzy
+#| msgid "KDE component:"
+msgid "All Components"
+msgstr "សមាសភាគ KDE ៖"
+
+#: kglobalshortcutseditor.cpp:116
 #, fuzzy
 #| msgid "Import Scheme..."
 msgid "Import Scheme..."
 msgstr "នាំចូល​គ្រោងការណ៍..."
 
-#: kglobalshortcutseditor.cpp:115
+#: kglobalshortcutseditor.cpp:117
 #, fuzzy
 #| msgid "Export Scheme..."
 msgid "Export Scheme..."
 msgstr "នាំចេញ​គ្រោងការណ៍..."
 
-#: kglobalshortcutseditor.cpp:116
+#: kglobalshortcutseditor.cpp:118
+msgid "Set All Shortcuts to None"
+msgstr ""
+
+#: kglobalshortcutseditor.cpp:119
 #, fuzzy
 #| msgid "KDE component:"
 msgid "Remove Component"
 msgstr "សមាសភាគ KDE ៖"
 
-#: kglobalshortcutseditor.cpp:234
+#: kglobalshortcutseditor.cpp:282
 msgid ""
 "Your current changes will be lost if you load another scheme before saving "
 "this one"
 msgstr ""
 "ការ​ផ្លាស់ប្តូរ​បច្ចុប្បន្ន​របស់​អ្នក​នឹង​ត្រូវ​បាត់បង់ បើ​អ្នក​ផ្ទុក​គ្រោងការណ៍​មួយ​ផ្សេង​មុន​ពេល​រក្សា​ទុក​មួយ​នេះ"
 
-#: kglobalshortcutseditor.cpp:235
+#: kglobalshortcutseditor.cpp:283
 #, fuzzy
 #| msgid "Load Shortcurt Scheme"
 msgid "Load Shortcut Scheme"
 msgstr "ផ្ទុក​គ្រោងការណ៍​ផ្លូវកាត់"
 
-#: kglobalshortcutseditor.cpp:236
+#: kglobalshortcutseditor.cpp:284
 msgid "Load"
 msgstr "ផ្ទុក"
 
-#: kglobalshortcutseditor.cpp:249
+#: kglobalshortcutseditor.cpp:297
 #, kde-format
 msgid "This file (%1) does not exist. You can only select local files."
 msgstr "មិន​​ទាន់​មាន​ឯកសារ (%1) នៅ​ឡើយ​ទេ ។ អ្នក​គ្រាន់​តែ​ជ្រើស​ឯកសារ​មូលដ្ឋាន​ទៅ ។"
 
-#: kglobalshortcutseditor.cpp:278 kglobalshortcutseditor.cpp:301
+#: kglobalshortcutseditor.cpp:325 kglobalshortcutseditor.cpp:348
 #, kde-format
 msgid ""
 "Message: %1\n"
@@ -65,11 +89,11 @@ msgstr ""
 "សារ ៖ %1\n"
 "កំហុស ៖ %2"
 
-#: kglobalshortcutseditor.cpp:283 kglobalshortcutseditor.cpp:306
+#: kglobalshortcutseditor.cpp:330 kglobalshortcutseditor.cpp:353
 msgid "Failed to contact the KDE global shortcuts daemon\n"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ទាក់ទង​ដេមិន​ផ្លូវកាត់​សកល​របស់ KDE\n"
 
-#: kglobalshortcutseditor.cpp:387
+#: kglobalshortcutseditor.cpp:462
 #, kde-format
 msgid ""
 "Component '%1' is currently active. Only global shortcuts currently not "
@@ -78,13 +102,13 @@ msgid ""
 "they are next started."
 msgstr ""
 
-#: kglobalshortcutseditor.cpp:389 kglobalshortcutseditor.cpp:399
+#: kglobalshortcutseditor.cpp:464 kglobalshortcutseditor.cpp:474
 #, fuzzy
 #| msgid "KDE component:"
 msgid "Remove component"
 msgstr "សមាសភាគ KDE ៖"
 
-#: kglobalshortcutseditor.cpp:395
+#: kglobalshortcutseditor.cpp:470
 #, kde-format
 msgid ""
 "Are you sure you want to remove the registered shortcuts for component '%1'? "
@@ -92,52 +116,75 @@ msgid ""
 "settings when they are next started."
 msgstr ""
 
+#. i18n: file: export_scheme_dialog.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ExportSchemeDialog)
+#: rc.cpp:3
+msgid "Form"
+msgstr ""
+
+#. i18n: file: export_scheme_dialog.ui:20
+#. i18n: ectx: property (text), widget (QLabel, components_label)
+#: rc.cpp:6
+msgid "Select the components to export"
+msgstr ""
+
+#. i18n: file: export_scheme_dialog.ui:30
+#. i18n: ectx: property (title), widget (QGroupBox, components)
+#: rc.cpp:9
+#, fuzzy
+#| msgid "KDE component:"
+msgid "Components"
+msgstr "សមាសភាគ KDE ៖"
+
 #. i18n: file: kglobalshortcutseditor.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:3
+#: rc.cpp:12
 msgid "KDE component:"
 msgstr "សមាសភាគ KDE ៖"
 
 #. i18n: file: kglobalshortcutseditor.ui:36
 #. i18n: ectx: property (text), widget (QPushButton, menu_button)
-#: rc.cpp:6
+#: rc.cpp:15
 msgid "File"
 msgstr ""
 
 #. i18n: file: select_scheme_dialog.ui:15
 #. i18n: ectx: property (windowTitle), widget (KDialog, SelectSchemeDialog)
-#: rc.cpp:9
+#. i18n: file: select_scheme_dialog.ui:123
+#. i18n: ectx: property (clickMessage), widget (KUrlRequester, m_url)
+#: rc.cpp:18 rc.cpp:36
 msgid "Select Shortcut Scheme"
 msgstr "ជ្រើស​គ្រោងការណ៍​ផ្លូវកាត់"
 
 #. i18n: file: select_scheme_dialog.ui:39
 #. i18n: ectx: property (whatsThis), widget (QLabel, label)
-#: rc.cpp:12
+#: rc.cpp:21
 msgid "Select one of the standard KDE shortcut schemes"
 msgstr "ជ្រើស​គ្រោងការណ៍​ផ្លូវកាត់​របស់ KDE ស្តង់ដារ​មួយ"
 
 #. i18n: file: select_scheme_dialog.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:15
+#: rc.cpp:24
 msgid "&Standard scheme:"
 msgstr "គ្រោងការណ៍​ស្តង់ដារ ៖"
 
 #. i18n: file: select_scheme_dialog.ui:92
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_2)
-#: rc.cpp:18
+#: rc.cpp:27
 msgid "Select a shortcut scheme file"
 msgstr "ជ្រើស​ឯកសារ​គ្រោងការណ៍​ផ្លូវកាត់"
 
 #. i18n: file: select_scheme_dialog.ui:95
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:21
+#: rc.cpp:30
 msgid "&Path:"
 msgstr "ផ្លូវ ៖"
 
-#, fuzzy
-#~| msgid "KDE component:"
-#~ msgid "Clean component"
-#~ msgstr "សមាសភាគ KDE ៖"
+#. i18n: file: select_scheme_dialog.ui:120
+#. i18n: ectx: property (filter), widget (KUrlRequester, m_url)
+#: rc.cpp:33
+msgid "*.kksrc"
+msgstr ""
 
 #~ msgid "Shortcuts:"
 #~ msgstr "ផ្លូវ​កាត់ ៖"
