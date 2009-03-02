@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_launcher\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-01 10:33+0100\n"
+"POT-Creation-Date: 2009-03-02 09:56+0100\n"
 "PO-Revision-Date: 2008-12-19 09:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -19,7 +19,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
 
-#: ui/flipscrollview.cpp:138 simpleapplet/simpleapplet.cpp:441
+#: ui/flipscrollview.cpp:138
 msgid "All Applications"
 msgstr "កម្មវិធី​ទាំង​អស់"
 
@@ -51,12 +51,12 @@ msgstr "ច្រានចេញ​"
 msgid "Safely Remove"
 msgstr "យកចេញ​ដោយ​សុវត្ថិភាព"
 
-#: ui/launcher.cpp:159 simpleapplet/simpleapplet.cpp:197
+#: ui/launcher.cpp:159 simpleapplet/simpleapplet.cpp:164
 msgid "Leave"
 msgstr "ចាកចេញ"
 
 #: ui/launcher.cpp:170 core/favoritesmodel.cpp:44
-#: simpleapplet/simpleapplet.cpp:191
+#: simpleapplet/simpleapplet.cpp:151
 msgid "Favorites"
 msgstr "សំណព្វ"
 
@@ -69,11 +69,11 @@ msgid "Sort Alphabetically (Z to A)"
 msgstr "តម្រៀប​តាម​អក្ខរក្រម (Z ទៅ A)"
 
 #: ui/launcher.cpp:199 core/recentlyusedmodel.cpp:115 core/systemmodel.cpp:88
-#: core/searchmodel.cpp:135 simpleapplet/simpleapplet.cpp:193
+#: core/searchmodel.cpp:135 simpleapplet/simpleapplet.cpp:153
 msgid "Applications"
 msgstr "កម្មវិធី"
 
-#: ui/launcher.cpp:211 simpleapplet/simpleapplet.cpp:195
+#: ui/launcher.cpp:211 simpleapplet/simpleapplet.cpp:155
 msgid "Recently Used"
 msgstr "បាន​ប្រើ​ថ្មី​ៗ​នេះ"
 
@@ -85,7 +85,7 @@ msgstr "ជម្រះ​កម្មវិធី​ថ្មីៗ"
 msgid "Clear Recent Documents"
 msgstr "ជម្រះ​ឯកសារ​ថ្មីៗ"
 
-#: ui/launcher.cpp:231 simpleapplet/simpleapplet.cpp:194
+#: ui/launcher.cpp:231 simpleapplet/simpleapplet.cpp:154
 msgid "Computer"
 msgstr "កុំព្យូទ័រ"
 
@@ -105,7 +105,7 @@ msgstr "<b>%1 (%2)</b> នៅ​លើ <b>%3</b>"
 msgid "Search:"
 msgstr "ស្វែងរក ៖"
 
-#: core/leavemodel.cpp:49
+#: core/leavemodel.cpp:49 simpleapplet/simpleapplet.cpp:163
 msgid "Logout"
 msgstr "ចេញ"
 
@@ -121,7 +121,7 @@ msgstr "ចាក់​សោ"
 msgid "Lock the screen"
 msgstr "ចាក់សោ​អេក្រង់"
 
-#: core/leavemodel.cpp:57 simpleapplet/simpleapplet.cpp:456
+#: core/leavemodel.cpp:57 simpleapplet/simpleapplet.cpp:160
 msgid "Switch User"
 msgstr "ប្តូរ​អ្នក​ប្រើ"
 
@@ -153,7 +153,7 @@ msgstr "ចាប់ផ្តើម​ឡើង​វិញ"
 msgid "Restart computer"
 msgstr "ចាប់ផ្ដើម​កុំព្យូទ័រ​ឡើងវិញ"
 
-#: core/leavemodel.cpp:69 simpleapplet/simpleapplet.cpp:461
+#: core/leavemodel.cpp:69 simpleapplet/simpleapplet.cpp:161
 msgid "Save Session"
 msgstr "រក្សាទុក​សម័យ"
 
@@ -241,7 +241,7 @@ msgid ""
 "sessions"
 msgstr "សំណព្វ កម្មវិធី កុំព្យូទ័រ សម័យ​ផ្ទៃតុ​ និង​ធាតុ​ដែល​បាន​ប្រើ​ថ្មី"
 
-#: applet/applet.cpp:107 simpleapplet/simpleapplet.cpp:274
+#: applet/applet.cpp:107 simpleapplet/simpleapplet.cpp:267
 msgid "Menu Editor"
 msgstr "កម្មវិធី​និពន្ធ​ម៉ឺនុយ"
 
@@ -253,7 +253,7 @@ msgstr "ប្ដូរ​ទៅ​រចនាប័ទ្ម​ម៉ឺនុ
 msgid "Switch tabs on hover"
 msgstr "ប្ដូរ​ផ្ទាំង​នៅពេល​ដាក់​កណ្ដុរ​ពីលើ"
 
-#: applet/applet.cpp:154 simpleapplet/simpleapplet.cpp:362
+#: applet/applet.cpp:154
 msgid "General"
 msgstr "ទូទៅ"
 
@@ -267,98 +267,115 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
 
-#: simpleapplet/simpleapplet.cpp:190
-#, fuzzy
-#| msgctxt "@item:inlistbox View:"
-#| msgid "Standard"
-msgid "Standard"
-msgstr "ស្តង់ដារ"
-
-#: simpleapplet/simpleapplet.cpp:192
+#: simpleapplet/simpleapplet.cpp:152
 #, fuzzy
 #| msgctxt "@item:inlistbox View:"
 #| msgid "Bookmarks"
 msgid "Bookmarks"
 msgstr "ចំណាំ"
 
-#: simpleapplet/simpleapplet.cpp:196
-msgid "System Settings"
-msgstr ""
-
-#: simpleapplet/simpleapplet.cpp:217
-msgid "Traditional menu based application launcher"
-msgstr ""
-
-#: simpleapplet/simpleapplet.cpp:280
-msgid "Switch to Kickoff Menu Style"
-msgstr "ប្ដូរ​ទៅ​រចនាប័ទ្ម​ម៉ឺនុយ​ផ្ទាំង"
-
-#: simpleapplet/simpleapplet.cpp:326
-msgctxt "@label:listbox Which category of items to view in a KMenu-like menu"
-msgid "View:"
-msgstr "មើល ៖"
-
-#: simpleapplet/simpleapplet.cpp:334
-msgctxt "@label:listbox How to present applications in a KMenu-like menu"
-msgid "Format:"
-msgstr "ទ្រង់ទ្រាយ ៖"
-
-#: simpleapplet/simpleapplet.cpp:338
-msgctxt "@item:inlistbox Format:"
-msgid "Name Only"
-msgstr "តែ​ឈ្មោះ"
-
-#: simpleapplet/simpleapplet.cpp:339
-msgctxt "@item:inlistbox Format:"
-msgid "Description Only"
-msgstr "តែ​សេចក្ដី​ពិពណ៌នា"
-
-#: simpleapplet/simpleapplet.cpp:340
-msgctxt "@item:inlistbox Format:"
-msgid "Name Description"
-msgstr "សេចក្ដី​ពណ៌នា​ឈ្មោះ"
-
-#: simpleapplet/simpleapplet.cpp:341
-msgctxt "@item:inlistbox Format:"
-msgid "Description (Name)"
-msgstr "សេចក្ដី​ពិពណ៌នា (ឈ្មោះ)"
-
-#: simpleapplet/simpleapplet.cpp:342
-msgctxt "@item:inlistbox Format:"
-msgid "Name - Description"
-msgstr "ឈ្មោះ - សេចក្ដី​ពិពណ៌នា"
-
-#: simpleapplet/simpleapplet.cpp:345
-#, fuzzy
-#| msgid "Clear Recent Applications"
-msgid "Recently Used Applications:"
-msgstr "ជម្រះ​កម្មវិធី​ថ្មីៗ"
-
-#: simpleapplet/simpleapplet.cpp:436
+#: simpleapplet/simpleapplet.cpp:156
 #, fuzzy
 #| msgid "Clear Recent Applications"
 msgid "Recently Used Applications"
 msgstr "ជម្រះ​កម្មវិធី​ថ្មីៗ"
 
-#: simpleapplet/simpleapplet.cpp:452
+#: simpleapplet/simpleapplet.cpp:157
 #, fuzzy
-#| msgid "Applications"
-msgid "Actions"
-msgstr "កម្មវិធី"
+#| msgid "Recently Used"
+msgid "Recently Used Documents"
+msgstr "បាន​ប្រើ​ថ្មី​ៗ​នេះ"
 
-#: simpleapplet/simpleapplet.cpp:453
-msgid "Run Command..."
+#: simpleapplet/simpleapplet.cpp:158
+msgid "System Settings"
 msgstr ""
 
-#: simpleapplet/simpleapplet.cpp:465
+#: simpleapplet/simpleapplet.cpp:159
+msgid "Run Command"
+msgstr ""
+
+#: simpleapplet/simpleapplet.cpp:162
 #, fuzzy
 #| msgid "Lock the screen"
 msgid "Lock Screen"
 msgstr "ចាក់សោ​អេក្រង់"
 
-#: simpleapplet/simpleapplet.cpp:467
-msgid "Leave..."
-msgstr "ចាកចេញ..."
+#: simpleapplet/simpleapplet.cpp:201
+#, fuzzy
+#| msgid "Application Launcher"
+msgid "Classic Application Launcher"
+msgstr "កម្មវិធី​ចាប់ផ្ដើម​កម្មវិធី"
+
+#: simpleapplet/simpleapplet.cpp:201
+msgid "Traditional menu based application launcher"
+msgstr ""
+
+#: simpleapplet/simpleapplet.cpp:273
+msgid "Switch to Kickoff Menu Style"
+msgstr "ប្ដូរ​ទៅ​រចនាប័ទ្ម​ម៉ឺនុយ​ផ្ទាំង"
+
+#: simpleapplet/simpleapplet.cpp:331
+#, fuzzy
+#| msgctxt ""
+#| "@label:listbox Which category of items to view in a KMenu-like menu"
+#| msgid "View:"
+msgid "View"
+msgstr "មើល ៖"
+
+#: simpleapplet/simpleapplet.cpp:337
+msgid "Icon:"
+msgstr ""
+
+#: simpleapplet/simpleapplet.cpp:344
+msgctxt "@label:listbox How to present applications in a KMenu-like menu"
+msgid "Format:"
+msgstr "ទ្រង់ទ្រាយ ៖"
+
+#: simpleapplet/simpleapplet.cpp:348
+msgctxt "@item:inlistbox Format:"
+msgid "Name Only"
+msgstr "តែ​ឈ្មោះ"
+
+#: simpleapplet/simpleapplet.cpp:349
+msgctxt "@item:inlistbox Format:"
+msgid "Description Only"
+msgstr "តែ​សេចក្ដី​ពិពណ៌នា"
+
+#: simpleapplet/simpleapplet.cpp:350
+msgctxt "@item:inlistbox Format:"
+msgid "Name Description"
+msgstr "សេចក្ដី​ពណ៌នា​ឈ្មោះ"
+
+#: simpleapplet/simpleapplet.cpp:351
+msgctxt "@item:inlistbox Format:"
+msgid "Description (Name)"
+msgstr "សេចក្ដី​ពិពណ៌នា (ឈ្មោះ)"
+
+#: simpleapplet/simpleapplet.cpp:352
+msgctxt "@item:inlistbox Format:"
+msgid "Name - Description"
+msgstr "ឈ្មោះ - សេចក្ដី​ពិពណ៌នា"
+
+#: simpleapplet/simpleapplet.cpp:356
+#, fuzzy
+#| msgid "Clear Recent Applications"
+msgid "Recently Used Applications:"
+msgstr "ជម្រះ​កម្មវិធី​ថ្មីៗ"
+
+#: simpleapplet/simpleapplet.cpp:366
+#, fuzzy
+#| msgid "Applications"
+msgid "Options"
+msgstr "កម្មវិធី"
+
+#, fuzzy
+#~| msgctxt "@item:inlistbox View:"
+#~| msgid "Standard"
+#~ msgid "Standard"
+#~ msgstr "ស្តង់ដារ"
+
+#~ msgid "Leave..."
+#~ msgstr "ចាកចេញ..."
 
 #~ msgctxt "@item:inlistbox View:"
 #~ msgid "Favorites"
