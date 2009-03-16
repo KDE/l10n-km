@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-14 06:22+0100\n"
+"POT-Creation-Date: 2009-03-16 06:13+0100\n"
 "PO-Revision-Date: 2008-12-19 10:14+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1089,7 +1089,7 @@ msgid "Do you really want to cancel?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​បោះបង់​ឬ ?"
 
 #: koincidenceeditor.cpp:116 koeditorattachments.cpp:677 koeventeditor.cpp:420
-#: kotodoeditor.cpp:354
+#: kotodoeditor.cpp:356
 msgctxt "@title:window"
 msgid "KOrganizer Confirmation"
 msgstr "ការ​អះអាង KOrganizer"
@@ -1326,13 +1326,13 @@ msgstr "អ្នក​ចូល​រួម \"%1\" បាន​បន្ថែ�
 msgid "Attendee added"
 msgstr "បាន​បន្ថែម​អ្នក​ចូលរួម"
 
-#: views/agendaview/koagendaitem.cpp:911
-#: views/agendaview/koagendaitem.cpp:1014
+#: views/agendaview/koagendaitem.cpp:902
+#: views/agendaview/koagendaitem.cpp:1005
 #, kde-format
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: views/agendaview/koagendaitem.cpp:925
+#: views/agendaview/koagendaitem.cpp:916
 #, kde-format
 msgid "- %1"
 msgstr "- %1"
@@ -1669,18 +1669,18 @@ msgctxt "Date from - to"
 msgid "%1 - %2"
 msgstr "%1 - %2"
 
-#: views/timespentview/kotimespentview.cpp:88
+#: views/timespentview/kotimespentview.cpp:134
 msgid "No category"
 msgstr "គ្មាន​ប្រភេទ"
 
-#: views/timespentview/kotimespentview.cpp:128
+#: views/timespentview/kotimespentview.cpp:174
 #, kde-format
 msgctxt "number of hours spent"
 msgid "%1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "%1 ម៉ោង"
 
-#: views/timespentview/kotimespentview.cpp:129
+#: views/timespentview/kotimespentview.cpp:175
 #, kde-format
 msgctxt "percent of hours spent"
 msgid " (%1%)"
@@ -1705,7 +1705,7 @@ msgstr "ផ្ញើសារ"
 msgid "Do Not Send"
 msgstr "កុំ​ផ្ញើ"
 
-#: incidencechanger.cpp:371 kodialogmanager.cpp:126
+#: incidencechanger.cpp:372 kodialogmanager.cpp:126
 #, kde-format
 msgid "Unable to save %1 \"%2\"."
 msgstr "មិន​អាច​រក្សាទុក %1 \"%2\" បាន​ឡើយ ។"
@@ -1804,12 +1804,17 @@ msgctxt "@title:tab"
 msgid "Regional"
 msgstr "តំបន់"
 
-#: koprefsdialog.cpp:226
+#: koprefsdialog.cpp:224
+msgctxt "@title:group"
+msgid "General Time and Date"
+msgstr ""
+
+#: koprefsdialog.cpp:232
 msgctxt "@label"
 msgid "Time zone:"
 msgstr "តំបន់​ពេលវេលា ៖"
 
-#: koprefsdialog.cpp:228
+#: koprefsdialog.cpp:234
 msgctxt "@info:whatsthis"
 msgid ""
 "Select your time zone from the list of locations on this drop down box. If "
@@ -1820,32 +1825,39 @@ msgstr ""
 "ជ្រើស​ទីក្រុង​មួយ​ដែលចែករំលែក​តំបន់​ពេលវេលា​ដូចគ្នា ។ KOrganizer នឹង​លៃតម្រូវ​ការ​រក្សាទុក​ពន្លឺ​ថ្ងៃ​ដោយ​"
 "ស្វ័យប្រវត្តិ ។"
 
-#: koprefsdialog.cpp:239
+#: koprefsdialog.cpp:245
 msgctxt "@item:inlistbox unknown timezone"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#: koprefsdialog.cpp:254
+#: koprefsdialog.cpp:260
 msgctxt "@item:inlistbox no timezone selected"
 msgid "[No selection]"
 msgstr "[គ្មាន​ជម្រើស]"
 
-#: koprefsdialog.cpp:273
+#: koprefsdialog.cpp:280
+#, fuzzy
+#| msgid "Holiday"
+msgctxt "@title:group"
+msgid "Holidays"
+msgstr "ថ្ងៃ​ឈប់​សម្រាក"
+
+#: koprefsdialog.cpp:290
 msgctxt "@label"
 msgid "Use holiday region:"
 msgstr "ប្រើ​តំបន់​ថ្ងៃ​ឈប់​សម្រាក ៖"
 
-#: koprefsdialog.cpp:308
+#: koprefsdialog.cpp:325
 msgctxt "@item:inlistbox do not use holidays"
 msgid "(None)"
 msgstr "(គ្មាន)"
 
-#: koprefsdialog.cpp:325
+#: koprefsdialog.cpp:337
 msgctxt "@title:group"
 msgid "Working Hours"
 msgstr "ម៉ោង​ធ្វើការ"
 
-#: koprefsdialog.cpp:346
+#: koprefsdialog.cpp:358
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box to make KOrganizer mark the working hours for this day of the "
@@ -1855,94 +1867,110 @@ msgstr ""
 "គូស​ធីក​ប្រអប់​នេះដើម្បី​ឲ្យ KOrganizer សម្គាល់​ម៉ោង​ធ្វើ​ការ​សម្រាប់​ថ្ងៃ​នេះនៃ​សប្ដាហ៍ ។ បើ​វា​ជា​ថ្ងៃ​"
 "ធ្វើការសម្រាប់​អ្នក សូម​ធីក​ប្រអប់​នេះ ឬ​បើ​ពុំ​នោះ​ទេ ម៉ោង​ធ្វើការ​នឹង​មិន​ត្រូវ​បាន​សម្គាល់​ដោយ​ពណ៌​ឡើយ ។"
 
-#: koprefsdialog.cpp:384
+#: koprefsdialog.cpp:396
 msgctxt "@title:tab"
 msgid "Default Values"
 msgstr "តម្លៃ​លំនាំដើម"
 
-#: koprefsdialog.cpp:399
+#: koprefsdialog.cpp:401
+#, fuzzy
+#| msgctxt "incidence category: appointment"
+#| msgid "Appointment"
+msgctxt "@title:group"
+msgid "Appointments"
+msgstr "ការ​ណាត់"
+
+#: koprefsdialog.cpp:417
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Reminders"
+msgctxt "@title:group"
+msgid "Reminders"
+msgstr "កម្មវិធី​រំលឹក"
+
+#: koprefsdialog.cpp:423
 msgctxt "@item:inlistbox"
 msgid "1 minute"
 msgstr "១ នាទី"
 
-#: koprefsdialog.cpp:400
+#: koprefsdialog.cpp:424
 msgctxt "@item:inlistbox"
 msgid "5 minutes"
 msgstr "៥ នាទី"
 
-#: koprefsdialog.cpp:401
+#: koprefsdialog.cpp:425
 msgctxt "@item:inlistbox"
 msgid "10 minutes"
 msgstr "១០ នាទី"
 
-#: koprefsdialog.cpp:402
+#: koprefsdialog.cpp:426
 msgctxt "@item:inlistbox"
 msgid "15 minutes"
 msgstr "១៥ នាទី"
 
-#: koprefsdialog.cpp:403
+#: koprefsdialog.cpp:427
 msgctxt "@item:inlistbox"
 msgid "30 minutes"
 msgstr "៣០ នាទី"
 
-#: koprefsdialog.cpp:404
+#: koprefsdialog.cpp:428
 msgctxt "@label"
 msgid "Default reminder time:"
 msgstr "ពេលវេលា​របស់​កម្មវិធី​រំលឹក​លំនាំដើម ៖"
 
-#: koprefsdialog.cpp:512
+#: koprefsdialog.cpp:536
 msgctxt "@title:tab general settings"
 msgid "General"
 msgstr "ទូទៅ"
 
-#: koprefsdialog.cpp:529
+#: koprefsdialog.cpp:553
 msgctxt "@title:group"
 msgid "Date Navigator"
 msgstr "កម្មវិធី​រុករក​កាលបរិច្ឆេទ"
 
-#: koprefsdialog.cpp:541
+#: koprefsdialog.cpp:565
 msgctxt "@title:tab"
 msgid "Agenda View"
 msgstr "ទិដ្ឋភាព​របៀបវារៈ"
 
-#: koprefsdialog.cpp:546
+#: koprefsdialog.cpp:570
 #, fuzzy
 #| msgid "Display Options"
 msgctxt "@title:group"
 msgid "Display Options"
 msgstr "ជម្រើស​បង្ហាញ"
 
-#: koprefsdialog.cpp:554
+#: koprefsdialog.cpp:578
 msgctxt "@label suffix in the hour size spin box"
 msgid " pixel"
 msgstr " ភីកសែល"
 
-#: koprefsdialog.cpp:566
+#: koprefsdialog.cpp:590
 msgctxt "@label suffix in the N days spin box"
 msgid " days"
 msgstr " ថ្ងៃ"
 
-#: koprefsdialog.cpp:597
+#: koprefsdialog.cpp:621
 msgctxt "@title:tab"
 msgid "Month View"
 msgstr "ទិដ្ឋភាព​ខែ"
 
-#: koprefsdialog.cpp:616
+#: koprefsdialog.cpp:640
 msgctxt "@title:tab"
 msgid "Todo View"
 msgstr "ទិដ្ឋភាព​ការងារ​ត្រូវ​ធ្វើ"
 
-#: koprefsdialog.cpp:655
+#: koprefsdialog.cpp:679
 msgctxt "@title:tab"
 msgid "Colors"
 msgstr "ពណ៌"
 
-#: koprefsdialog.cpp:690
+#: koprefsdialog.cpp:714
 msgctxt "@title:group"
 msgid "Categories"
 msgstr "ប្រភេទ"
 
-#: koprefsdialog.cpp:700
+#: koprefsdialog.cpp:724
 msgctxt "@info:whatsthis"
 msgid ""
 "Select here the event category you want to modify. You can change the "
@@ -1951,19 +1979,19 @@ msgstr ""
 "នៅ​ទីនេះ អ្នក​អាច​ជ្រើស​ប្រភេទ​ព្រឹត្តិការណ៍​ដែល​អ្នក​ចង់​កែប្រែ ។ អ្នក​អាច​ផ្លាស់ប្ដូរ​ពណ៌​ប្រភេទ​ដែល​បាន​ជ្រើស "
 "ដោយ​ប្រើ​ប៊ូតុង​ខាង​ក្រោម ។​"
 
-#: koprefsdialog.cpp:709
+#: koprefsdialog.cpp:733
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose here the color of the event category selected using the combo box "
 "above."
 msgstr "នៅ​ទីនេះ អ្នក​អាច​ជ្រើស​ពណ៌​របស់​ប្រភេទ​ព្រឹត្តិការណ៍​ដែល​បាន​ជ្រើស ដោយ​ប្រើ​ប្រអប់បន្សំ​ខាង​លើ ។"
 
-#: koprefsdialog.cpp:717
+#: koprefsdialog.cpp:741
 msgctxt "@title:group"
 msgid "Resources"
 msgstr "ធនធាន"
 
-#: koprefsdialog.cpp:726
+#: koprefsdialog.cpp:750
 msgctxt "@info:whatsthis"
 msgid ""
 "Select here resource you want to modify. You can change the selected "
@@ -1972,38 +2000,38 @@ msgstr ""
 "នៅ​ទី​នេះ អ្នក​អាច​ជ្រើស​ធនធាន​ដែល​អ្នក​ចង់​កែប្រែ ។ អ្នក​អាច​ផ្លាស់ប្ដូរ​ពណ៌​ធនធាន​ដែល​បានជ្រើស ដោយ​ប្រើ​"
 "ប៊ូតុង​ខាង​ក្រោម ។"
 
-#: koprefsdialog.cpp:735
+#: koprefsdialog.cpp:759
 msgctxt "@info:whatsthis"
 msgid ""
 "Choose here the color of the resource selected using the combo box above."
 msgstr "នៅ​ទីនេះ អ្នក​អាច​ជ្រើស​ពណ៌​របស់​ធនធាន​បាន​ជ្រើស ដោយ​ប្រើ​ប្រអប់​បន្សំ​ខាង​លើ ។"
 
-#: koprefsdialog.cpp:746
+#: koprefsdialog.cpp:770
 msgctxt "@title:tab"
 msgid "Fonts"
 msgstr "ពុម្ព​អក្សរ"
 
-#: koprefsdialog.cpp:761 koprefsdialog.cpp:769
+#: koprefsdialog.cpp:785 koprefsdialog.cpp:793
 msgctxt "@label"
 msgid "Event text"
 msgstr "អត្ថបទ​ព្រឹត្តិការណ៍"
 
-#: koprefsdialog.cpp:919
+#: koprefsdialog.cpp:943
 msgctxt "@title"
 msgid "Scheduler Mail Client"
 msgstr "កម្មវិធី​អ៊ីមែល​កំណត់​ពេល"
 
-#: koprefsdialog.cpp:921
+#: koprefsdialog.cpp:945
 msgctxt "@option:radio"
 msgid "Mail client"
 msgstr "កម្មវិធី​អ៊ីមែល"
 
-#: koprefsdialog.cpp:927
+#: koprefsdialog.cpp:951
 msgctxt "@label"
 msgid "Additional email addresses:"
 msgstr "អាសយដ្ឋាន​អ៊ីមែល​បន្ថែម ៖"
 
-#: koprefsdialog.cpp:929
+#: koprefsdialog.cpp:953
 msgctxt "@info:whatsthis"
 msgid ""
 "Add, edit or remove additional e-mails addresses here. These email addresses "
@@ -2016,17 +2044,17 @@ msgstr ""
 "ព្រឹត្តិការណ៍​មួយ ប៉ុន្តែ​ប្រើ​អាសយដ្ឋាន​អ៊ីមែល​ផ្សេង​នៅ​ទី​នោះ អ្នក​ត្រូវ​តែ​រាយ​អាសយដ្ឋាននេះ​នៅ​ទី​នេះ ដូច្នេះ​"
 "ទើប KOrganizer អាច​ស្គាល់​វា​ថា​ជារបស់​អ្នក​ ។"
 
-#: koprefsdialog.cpp:941
+#: koprefsdialog.cpp:965
 msgctxt "@title:column email addresses"
 msgid "Email"
 msgstr "អ៊ីមែល"
 
-#: koprefsdialog.cpp:944
+#: koprefsdialog.cpp:968
 msgctxt "@label"
 msgid "Additional email address:"
 msgstr "អាសយដ្ឋាន​អ៊ីមែល​បន្ថែម ៖"
 
-#: koprefsdialog.cpp:946
+#: koprefsdialog.cpp:970
 msgctxt "@info:whatsthis"
 msgid ""
 "Edit additional e-mails addresses here. To edit an address select it from "
@@ -2037,12 +2065,12 @@ msgstr ""
 "លើ ឬ​ចុច​ប៊ូតុង \"ថ្មី\" ខាង​ក្រោម ។ អាសយដ្ឋាន​អ៊ីមែល​ទាំង​នេះ គឺ​ជា​អាសយដ្ឋាន​បន្ថែម​ពី​លើ​អាសយដ្ឋាន​មួយ​"
 "ដែល​បាន​កំណត់​ក្នុង​ចំណង់ចំណូល​ចិត្ត​ផ្ទាល់​ខ្លួន ។"
 
-#: koprefsdialog.cpp:959
+#: koprefsdialog.cpp:983
 msgctxt "@action:button add a new email address"
 msgid "New"
 msgstr "ថ្មី"
 
-#: koprefsdialog.cpp:962
+#: koprefsdialog.cpp:986
 msgctxt "@info:whatsthis"
 msgid ""
 "Press this button to add a new entry to the additional e-mail addresses "
@@ -2051,69 +2079,69 @@ msgstr ""
 "ចុច​ប៊ូតុង​នេះ ដើម្បី​បន្ថែម​ធាតុ​ថ្មី​មួយ​ទៅ​បញ្ជីអាសយដ្ឋាន​អ៊ីមែល​បន្ថែម ។ ប្រើ​ប្រអប់​កែសម្រួល​ខាង​លើ ដើម្បី​"
 "កែសម្រួល​ធាតុ​ថ្មី ។"
 
-#: koprefsdialog.cpp:967
+#: koprefsdialog.cpp:991
 msgctxt "@action:button"
 msgid "Remove"
 msgstr "យកចេញ"
 
-#: koprefsdialog.cpp:1010
+#: koprefsdialog.cpp:1034
 msgctxt "@label"
 msgid "(EmptyEmail)"
 msgstr "(អ៊ីមែល​ទទេ)"
 
-#: koprefsdialog.cpp:1230
+#: koprefsdialog.cpp:1254
 msgctxt "@title:column plugin name"
 msgid "Name"
 msgstr "ឈ្មោះ"
 
-#: koprefsdialog.cpp:1249
+#: koprefsdialog.cpp:1273
 msgctxt "@action:button"
 msgid "Configure &Plugin..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​ជំនួយ..."
 
-#: koprefsdialog.cpp:1252
+#: koprefsdialog.cpp:1276
 msgctxt "@info:whatsthis"
 msgid ""
 "This button allows you to configure the plugin that you have selected in the "
 "list above"
 msgstr "ប៊ូតុង​នេះ អនុញ្ញាត​ឲ្យ​អ្នក​កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​ជំនួយ ដែល​អ្នក​បាន​ជ្រើស​ក្នុង​បញ្ជី​ខាង​លើ​"
 
-#: koprefsdialog.cpp:1259
+#: koprefsdialog.cpp:1283
 msgctxt "@title:group"
 msgid "Position"
 msgstr "ទីតាំង"
 
-#: koprefsdialog.cpp:1261
+#: koprefsdialog.cpp:1285
 msgctxt "@option:check"
 msgid "Show in the month view"
 msgstr "បង្ហាញ​ជា​​ទិដ្ឋភាព​ខែ"
 
-#: koprefsdialog.cpp:1263
+#: koprefsdialog.cpp:1287
 msgctxt "@option:check"
 msgid "Show at the top of the agenda views"
 msgstr "បង្ហាញ​នៅ​កំពូល​ទិដ្ឋភាព​របៀបវារៈ"
 
-#: koprefsdialog.cpp:1265
+#: koprefsdialog.cpp:1289
 msgctxt "@option:check"
 msgid "Show at the bottom of the agenda views"
 msgstr "បង្ហាញ​នៅ​បាត​ទិដ្ឋភាព​របៀបវារៈ"
 
-#: koprefsdialog.cpp:1298
+#: koprefsdialog.cpp:1322
 msgctxt "@title:group"
 msgid "Calendar Decorations"
 msgstr "ការ​តុបតែង​ប្រតិទិន"
 
-#: koprefsdialog.cpp:1301
+#: koprefsdialog.cpp:1325
 msgctxt "@title:group"
 msgid "Print Plugins"
 msgstr "កម្មវិធីជំនួយ​បោះពុម្ព"
 
-#: koprefsdialog.cpp:1304
+#: koprefsdialog.cpp:1328
 msgctxt "@title:group"
 msgid "Other Plugins"
 msgstr "កម្មវិធី​ជំនួយ​ផ្សេងៗ​ទៀត"
 
-#: koprefsdialog.cpp:1372
+#: koprefsdialog.cpp:1396
 msgctxt "@info"
 msgid "Unable to configure this plugin"
 msgstr "មិន​អាច​កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​ជំនួយ​នេះ​បាន​ឡើយ"
@@ -2297,27 +2325,27 @@ msgctxt "advanced alarm settings"
 msgid "Advanced..."
 msgstr "កម្រិត​ខ្ពស់..."
 
-#: koeditorgeneral.cpp:409
+#: koeditorgeneral.cpp:411
 #, kde-format
 msgid "1 reminder configured"
 msgid_plural "%1 reminders configured"
 msgstr[0] "បានកំណត់​រចនាសម្ព័ន្ធ​កម្មវិធីរំលឹក %1"
 
-#: koeditorgeneral.cpp:436
+#: koeditorgeneral.cpp:438
 msgid "1 advanced reminder configured"
 msgstr "បាន​កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​​រំលឹក​កម្រិត​ខ្ពស់ ១"
 
-#: koeditorgeneral.cpp:577
+#: koeditorgeneral.cpp:579
 msgid "No attendees"
 msgstr "គ្មាន​អ្នក​ចូលរួម"
 
-#: koeditorgeneral.cpp:579
+#: koeditorgeneral.cpp:581
 #, kde-format
 msgid "One attendee"
 msgid_plural "%1 attendees"
 msgstr[0] "អ្នក​ចូលរួម​ %1 នាក់ ៖"
 
-#: koeditorgeneral.cpp:587
+#: koeditorgeneral.cpp:589
 msgid "Please specify a summary."
 msgstr "សូម​បញ្ជាក់​សេចក្ដី​សង្ខេប ។"
 
@@ -2966,49 +2994,49 @@ msgstr "លុប បច្ចុប្បន្ន"
 msgid "Delete &All"
 msgstr "លុប​ទាំងអស់"
 
-#: calendarview.cpp:2248
+#: calendarview.cpp:2250
 msgid "Delete all completed to-dos?"
 msgstr "លុប​ការងារ​ត្រូវ​ធ្វើ​ទាំងអស់ ដែល​បាន​ធ្វើ​រួច ?"
 
-#: calendarview.cpp:2249
+#: calendarview.cpp:2251
 msgid "Purge To-dos"
 msgstr "លុប​បំបាត់​ការងារ​ត្រូវ​ធ្វើ"
 
-#: calendarview.cpp:2250
+#: calendarview.cpp:2252
 msgid "Purge"
 msgstr "លុប​បំបាត់"
 
-#: calendarview.cpp:2254
+#: calendarview.cpp:2256
 msgid "Purging completed to-dos"
 msgstr "កំពុង​លុប​បំបាត់​ការងារ​ត្រូវ​ធ្វើដែល​បាន​ធ្វើ​រួច"
 
-#: calendarview.cpp:2271
+#: calendarview.cpp:2273
 msgid "Unable to purge to-dos with uncompleted children."
 msgstr "មិន​អាច​លុបបំបាត់​ការងារ​ត្រូវ​ធ្វើ ដែល​មាន​កូន​មិន​ទាន់​បាន​ធ្វើ​រួច"
 
-#: calendarview.cpp:2272
+#: calendarview.cpp:2274
 msgid "Delete To-do"
 msgstr "លុប​ការងារ​ត្រូវ​ធ្វើ"
 
-#: calendarview.cpp:2281
+#: calendarview.cpp:2283
 msgid "Unable to edit item: it is locked by another process."
 msgstr "មិន​អាច​កែសម្រួល​ធាតុ​បាន​ឡើយ ៖ វា​ត្រូវ​បាន​ចាក់សោ​ដោយ​ដំណើរ​ការ​ផ្សេង​ទៀត ។"
 
-#: calendarview.cpp:2314
+#: calendarview.cpp:2316
 #, kde-format
 msgid "Unable to copy the item to %1."
 msgstr "មិន​អាច​ចម្លង​ធាតុ​ទៅ %1 បាន​ឡើយ ។"
 
-#: calendarview.cpp:2315
+#: calendarview.cpp:2317
 msgid "Copying Failed"
 msgstr "ការ​ចម្លង​បាន​បរាជ័យ"
 
-#: calendarview.cpp:2359
+#: calendarview.cpp:2361
 #, kde-format
 msgid "Unable to move the item to  %1."
 msgstr "មិនអាច​ផ្លាស់ទី​ធាតុ​ទៅ  %1 ។"
 
-#: calendarview.cpp:2360
+#: calendarview.cpp:2362
 msgid "Moving Failed"
 msgstr "ការ​ផ្លាស់​ទី​បាន​បរាជ័យ"
 
@@ -8078,7 +8106,7 @@ msgid ""
 "The General tab allows you to set the most common options for the event."
 msgstr "ផ្ទាំង​ទូទៅ អនុញ្ញាត​ឲ្យ​អ្នក​កំណត់​ជម្រើស​សាមញ្ញ​បំផុតសម្រាប់​ព្រឹត្តិការណ៍ ។​"
 
-#: koeventeditor.cpp:153 kotodoeditor.cpp:120
+#: koeventeditor.cpp:153 kotodoeditor.cpp:122
 msgctxt "@title:tab"
 msgid "Details"
 msgstr "សេចក្ដី​លម្អិត"
@@ -8088,7 +8116,7 @@ msgctxt "@title:tab general event settings"
 msgid "&General"
 msgstr "ទូទៅ"
 
-#: koeventeditor.cpp:198 kotodoeditor.cpp:167
+#: koeventeditor.cpp:198 kotodoeditor.cpp:169
 msgctxt "@title:tab"
 msgid "Rec&urrence"
 msgstr "កើតឡើង​ដដែលៗ"
@@ -8139,7 +8167,7 @@ msgstr "គ្មាន​ការ​ផ្លាស់ប្ដូរ"
 msgid "My counter proposal for: %1"
 msgstr "សំណើ​កម្មវិធី​រាប់​របស់​ខ្ញុំ​សម្រាប់ ៖ %1"
 
-#: koeventeditor.cpp:419 kotodoeditor.cpp:353
+#: koeventeditor.cpp:419 kotodoeditor.cpp:355
 msgctxt "@info"
 msgid "This item will be permanently deleted."
 msgstr "ធាតុ​នេះ​នឹង​ត្រូវ​បាន​លុប​ជា​រៀង​រហូត ។"
@@ -8154,28 +8182,28 @@ msgctxt "@info"
 msgid "Template does not contain a valid event."
 msgstr "ពុម្ព​មិនមាន​ព្រឹត្តិការណ៍​ត្រឹមត្រូវ​មួយ​ឡើយ ។"
 
-#: kotodoeditor.cpp:106
+#: kotodoeditor.cpp:108
 msgctxt "@title:tab general to-do settings"
 msgid "General"
 msgstr "ទូទៅ"
 
-#: kotodoeditor.cpp:136
+#: kotodoeditor.cpp:138
 msgctxt "@title:tab general to-do settings"
 msgid "&General"
 msgstr "ទូទៅ"
 
-#: kotodoeditor.cpp:191
+#: kotodoeditor.cpp:193
 #, kde-format
 msgctxt "@title:window"
 msgid "Edit To-do: %1"
 msgstr "កែសម្រួល​ការងារ​ត្រូវ​ធ្វើ ៖ %1"
 
-#: kotodoeditor.cpp:199
+#: kotodoeditor.cpp:201
 msgctxt "@title:window"
 msgid "New To-do"
 msgstr "ការងារ​ត្រូវ​ធ្វើ​ថ្មី"
 
-#: kotodoeditor.cpp:371
+#: kotodoeditor.cpp:373
 msgctxt "@info"
 msgid "Template does not contain a valid to-do."
 msgstr "ពុម្ព​មិនមាន​ការងារ​ត្រូវ​ធ្វើ​ត្រឹមត្រូវ​មួយ​ឡើយ ។"
