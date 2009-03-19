@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-18 11:01+0100\n"
+"POT-Creation-Date: 2009-03-19 10:33+0100\n"
 "PO-Revision-Date: 2009-01-23 10:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -37,7 +37,7 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: mac/GrowlInterface.cpp:34 context/engines/current/CurrentEngine.cpp:103
+#: mac/GrowlInterface.cpp:34 context/engines/current/CurrentEngine.cpp:112
 #: context/applets/currenttrack/CurrentTrack.cpp:129 widgets/Osd.cpp:556
 msgid "No track playing"
 msgstr "មិន​កំពុង​ចាក់​បទ​អ្វី​ទាំងអស់​​"
@@ -362,7 +362,7 @@ msgstr ""
 "<p>អ្នក​អាច​កំណត់​រចនាសម្ព័ន្ធ MySQL នៅ​ក្នុង​ផ្នែក​សម្រាំង​ នៅ​ត្រង់ ការ​កំណត់ ->កំណត់​រចនាសម្ព័ន្ធ "
 "Amarok</p>"
 
-#: collection/CollectionManager.cpp:122
+#: collection/CollectionManager.cpp:123
 #, fuzzy
 #| msgid ""
 #| "<p>Amarok could not find any collection plugins. Amarok is now updating "
@@ -393,12 +393,12 @@ msgstr ""
 "$ amarok</pre>ព័ត៌មាន​បន្ថែម​គឺ​អាច​រកបាន​នៅក្នុង​ឯកសារ README ។ ចំពោះ​ជំនួយ​បន្ថែម សូម​ចូលរួម "
 "#amarok on irc.freenode.net ។</p>"
 
-#: context/engines/current/CurrentEngine.cpp:108
+#: context/engines/current/CurrentEngine.cpp:117
 #: context/applets/albums/Albums.cpp:57
 msgid "Recently added albums"
 msgstr "អាល់ប៊ុម​ដែល​បានបន្ថែម​ថ្មី"
 
-#: context/engines/current/CurrentEngine.cpp:241
+#: context/engines/current/CurrentEngine.cpp:250
 #, kde-format
 msgid "Albums by %1"
 msgstr "អាល់ប៊ុម​ដោយ %1"
@@ -484,7 +484,7 @@ msgstr "ចំនួន​ចាក់ ៖"
 
 #: context/applets/albums/AlbumsView.cpp:109 Systray.cpp:219
 #: browsers/collectionbrowser/CollectionTreeView.cpp:596
-#: browsers/filebrowser/MyDirOperator.cpp:247
+#: browsers/filebrowser/MyDirOperator.cpp:259
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:382
 #: browsers/playlistbrowser/PodcastModel.cpp:692
 #: services/lastfm/LastFmTreeView.cpp:116
@@ -493,7 +493,7 @@ msgstr "បន្ថែម​ទៅ​បញ្ជីចាក់"
 
 #: context/applets/albums/AlbumsView.cpp:110
 #: browsers/collectionbrowser/CollectionTreeView.cpp:604
-#: browsers/filebrowser/MyDirOperator.cpp:248
+#: browsers/filebrowser/MyDirOperator.cpp:260
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:388
 #: browsers/playlistbrowser/PodcastModel.cpp:705
 #: services/lastfm/LastFmTreeView.cpp:124
@@ -507,8 +507,8 @@ msgid "&Queue"
 msgstr "រៀប​បទ​ជា​ជួរ"
 
 #: context/applets/albums/AlbumsView.cpp:112
-#: browsers/filebrowser/MyDirOperator.cpp:249
-#: playlist/view/listview/PrettyListView.cpp:502
+#: browsers/filebrowser/MyDirOperator.cpp:261
+#: playlist/view/listview/PrettyListView.cpp:503
 #: playlist/view/PlaylistViewCommon.cpp:84
 msgid "Edit Track Details"
 msgstr "កែសម្រួល​សេចក្ដី​លម្អិត​បទ"
@@ -1203,8 +1203,14 @@ msgstr "ចំនួន​ចាក់"
 
 #: dialogs/PlaylistLayoutEditDialog.cpp:140
 #: dialogs/PlaylistLayoutEditDialog.cpp:178
-msgid "Can't create a layout with no name."
+#, fuzzy
+#| msgid ""
+#| "Sorry, you cannot define two devices\n"
+#| "with the same name and mountpoint!"
+msgid "Cannot create a layout with no name."
 msgstr ""
+"សូម​ទោស! អ្នក​មិនអាច​កំណត់​ឧបករណ៍​ពីរ\n"
+"ដែល​មាន​ឈ្មោះ និង​ចំណុច​ម៉ោន​ដូចគ្នា​បានទេ !"
 
 #: dialogs/PlaylistLayoutEditDialog.cpp:142
 #: dialogs/PlaylistLayoutEditDialog.cpp:180
@@ -1212,7 +1218,7 @@ msgstr ""
 #| msgid ""
 #| "Sorry, you cannot define two devices\n"
 #| "with the same name and mountpoint!"
-msgid "Can't create a layout with the same name as an existing layout."
+msgid "Cannot create a layout with the same name as an existing layout."
 msgstr ""
 "សូម​ទោស! អ្នក​មិនអាច​កំណត់​ឧបករណ៍​ពីរ\n"
 "ដែល​មាន​ឈ្មោះ និង​ចំណុច​ម៉ោន​ដូចគ្នា​បានទេ !"
@@ -1238,19 +1244,25 @@ msgstr ""
 #: dialogs/PlaylistLayoutEditDialog.cpp:223
 #, fuzzy
 #| msgid "Enter a name for the playlist:"
-msgid "Can't rename one of the default layouts."
+msgid "Cannot rename one of the default layouts."
 msgstr "បញ្ចូល​ឈ្មោះ​សម្រាប់​បញ្ជីចាក់ ៖"
 
 #: dialogs/PlaylistLayoutEditDialog.cpp:227
-msgid "Can't rename a layout with no name."
+#, fuzzy
+#| msgid ""
+#| "Sorry, you cannot define two devices\n"
+#| "with the same name and mountpoint!"
+msgid "Cannot rename a layout to have no name."
 msgstr ""
+"សូម​ទោស! អ្នក​មិនអាច​កំណត់​ឧបករណ៍​ពីរ\n"
+"ដែល​មាន​ឈ្មោះ និង​ចំណុច​ម៉ោន​ដូចគ្នា​បានទេ !"
 
 #: dialogs/PlaylistLayoutEditDialog.cpp:229
 #, fuzzy
 #| msgid ""
 #| "Sorry, you cannot define two devices\n"
 #| "with the same name and mountpoint!"
-msgid "Can't rename a layout with the same name as an existing layout."
+msgid "Cannot rename a layout to have the same name as an existing layout."
 msgstr ""
 "សូម​ទោស! អ្នក​មិនអាច​កំណត់​ឧបករណ៍​ពីរ\n"
 "ដែល​មាន​ឈ្មោះ និង​ចំណុច​ម៉ោន​ដូចគ្នា​បានទេ !"
@@ -7215,40 +7227,40 @@ msgid "1 artist."
 msgid_plural "%1 artists."
 msgstr[0] "សិល្បករ"
 
-#: playlist/view/listview/PrettyListView.cpp:462
+#: playlist/view/listview/PrettyListView.cpp:463
 #: playlist/view/PlaylistViewCommon.cpp:54
 #: playlist/view/PlaylistViewCommon.cpp:63
 msgid "&Play"
 msgstr "ចាក់"
 
-#: playlist/view/listview/PrettyListView.cpp:465
+#: playlist/view/listview/PrettyListView.cpp:466
 #: playlist/view/PlaylistViewCommon.cpp:54
 msgid "&Pause"
 msgstr "ផ្អាក"
 
-#: playlist/view/listview/PrettyListView.cpp:477
+#: playlist/view/listview/PrettyListView.cpp:478
 #, fuzzy
 #| msgid "Select Importer"
 msgid "Select Source"
 msgstr "ជ្រើស​កម្មវិធី​នាំចូល"
 
-#: playlist/view/listview/PrettyListView.cpp:482
+#: playlist/view/listview/PrettyListView.cpp:483
 #: playlist/view/PlaylistViewCommon.cpp:75
 msgid "Queue Track"
 msgstr "រៀបបទ​ជា​ជួរ"
 
-#: playlist/view/listview/PrettyListView.cpp:485
+#: playlist/view/listview/PrettyListView.cpp:486
 #: playlist/view/PlaylistViewCommon.cpp:77
 msgid "Dequeue Track"
 msgstr "មិន​រៀប​​បទ​ជា​ជួរ"
 
-#: playlist/view/listview/PrettyListView.cpp:494
+#: playlist/view/listview/PrettyListView.cpp:495
 #, fuzzy
 #| msgid "Stop Playing After Track"
 msgid "Stop Playing After This Track"
 msgstr "បញ្ឈប់​ការ​ចាក់​បន្ទាប់​ពី​បទ"
 
-#: playlist/view/listview/PrettyListView.cpp:498
+#: playlist/view/listview/PrettyListView.cpp:499
 #: playlist/view/PlaylistViewCommon.cpp:82
 msgid "Remove From Playlist"
 msgstr "យក​ចេញពី​បញ្ជីចាក់"
