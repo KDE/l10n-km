@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-16 10:31+0100\n"
+"POT-Creation-Date: 2009-03-26 10:47+0100\n"
 "PO-Revision-Date: 2008-12-19 09:22+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1063,6 +1063,21 @@ msgstr "មាន​សម័យ​ដែលមាន​ឈ្មោះ '%1' រ
 msgid "Session exists. Overwrite?"
 msgstr "មាន​សម័យ​រួចហើយ ។ សរសេរ​ជាន់លើ​ឬ ?"
 
+#: src/konqhistorymodel.cpp:132
+#: sidebar/trees/history_module/history_item.cpp:120
+#, kde-format
+msgid ""
+"<qt><center><b>%1</b></center><hr />Last visited: %2<br />First visited: %"
+"3<br />Number of times visited: %4</qt>"
+msgstr ""
+"<qt><center><b>%1</b></center><hr />បាន​មើល​ចុង​ក្រោយ​ ៖ %2<br />បាន​មើល​មុន​គេ​ ៖ %"
+"3<br />ចំនួន​ពេល​វេលា​ដែល​បាន​មើល ៖ %4</qt>"
+
+#: src/konqhistorymodel.cpp:203
+#: sidebar/trees/history_module/history_module.h:62
+msgid "Miscellaneous"
+msgstr "ផ្សេងៗ"
+
 #: src/konqview.cpp:1314
 msgid ""
 "The page you are trying to view is the result of posted form data. If you "
@@ -1253,15 +1268,6 @@ msgstr "តើ​អ្នក​ពិត​ជា​ចង់​ជម្រះ
 msgid "Clear History?"
 msgstr "ជម្រះ​ប្រវត្តិ ?"
 
-#: sidebar/trees/history_module/history_item.cpp:120
-#, kde-format
-msgid ""
-"<qt><center><b>%1</b></center><hr />Last visited: %2<br />First visited: %"
-"3<br />Number of times visited: %4</qt>"
-msgstr ""
-"<qt><center><b>%1</b></center><hr />បាន​មើល​ចុង​ក្រោយ​ ៖ %2<br />បាន​មើល​មុន​គេ​ ៖ %"
-"3<br />ចំនួន​ពេល​វេលា​ដែល​បាន​មើល ៖ %4</qt>"
-
 #: sidebar/trees/history_module/kcmhistory.cpp:76
 #: sidebar/trees/history_module/kcmhistory.cpp:81
 msgid "Minutes"
@@ -1292,10 +1298,6 @@ msgstr[0] "ថ្ងៃ"
 msgid "Minute"
 msgid_plural "Minutes"
 msgstr[0] "នាទី"
-
-#: sidebar/trees/history_module/history_module.h:62
-msgid "Miscellaneous"
-msgstr "ផ្សេងៗ"
 
 #: sidebar/trees/dirtree_module/dirtree_module.cpp:424
 #, kde-format
@@ -1797,7 +1799,7 @@ msgstr "លក្ខណៈ​ពិសេស"
 #  i18n: file sidebar/trees/history_module/history_dlg.ui line 151
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:137
 #. i18n: ectx: property (title), widget (QGroupBox, gbDetails)
-#: about/konq_aboutpage.cc:234 rc.cpp:95
+#: about/konq_aboutpage.cc:234 rc.cpp:92
 msgid "Details"
 msgstr "លម្អិត"
 
@@ -1995,18 +1997,6 @@ msgstr "មិន​អនុញ្ញាត"
 msgid "Keep"
 msgstr "រក្សា"
 
-#: remoteencodingplugin/kremoteencodingplugin.cpp:53
-msgid "Select Remote Charset"
-msgstr "ជ្រើស​សំណុំ​តួ​អក្សរ​ពី​ចម្ងាយ"
-
-#: remoteencodingplugin/kremoteencodingplugin.cpp:127
-msgid "Reload"
-msgstr "ផ្ទុក​ផ្ទាំង​ឡើង​វិញ"
-
-#: remoteencodingplugin/kremoteencodingplugin.cpp:128
-msgid "Default"
-msgstr "លំនាំ​ដើម​"
-
 #: shellcmdplugin/kshellcmdexecutor.cpp:124
 msgid "Input Required:"
 msgstr "ទាមទារ​ការ​បញ្ចូល ៖"
@@ -2121,104 +2111,102 @@ msgstr "របារ​ឧបករណ៍​ទីតាំង"
 msgid "Bookmark Toolbar"
 msgstr "របារ​ឧបករណ៍​ចំណាំ"
 
-#. i18n: file: remoteencodingplugin/kremoteencodingplugin.rc:4
-#. i18n: ectx: Menu (tools)
 #. i18n: file: shellcmdplugin/kshellcmdplugin.rc:4
 #. i18n: ectx: Menu (tools)
-#: rc.cpp:38 rc.cpp:41
+#: rc.cpp:38
 msgid "&Tools"
 msgstr "ឧបករណ៍"
 
 #. i18n: file: src/konqprofiledlg_base.ui:16
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: rc.cpp:44
+#: rc.cpp:41
 msgid "&Profile name:"
 msgstr "ឈ្មោះ​ទម្រង់ ៖"
 
 #. i18n: file: src/konqprofiledlg_base.ui:32
 #. i18n: ectx: property (text), widget (QCheckBox, m_cbSaveURLs)
-#: rc.cpp:47
+#: rc.cpp:44
 msgid "Save &URLs in profile"
 msgstr "រក្សាទុក &URLs ក្នុង​ទម្រង់"
 
 #. i18n: file: src/konqsessiondlg_base.ui:25
 #. i18n: ectx: property (text), widget (QPushButton, m_pNewButton)
-#: rc.cpp:50
+#: rc.cpp:47
 msgctxt "@action:button New session"
 msgid "New..."
 msgstr "ថ្មី..."
 
 #. i18n: file: src/konqsessiondlg_base.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, m_pSaveCurrentButton)
-#: rc.cpp:53
+#: rc.cpp:50
 msgctxt "@action:button Save current session"
 msgid "Save Current"
 msgstr "រក្សាទុក​បច្ចុប្បន្ន"
 
 #. i18n: file: src/konqsessiondlg_base.ui:39
 #. i18n: ectx: property (text), widget (QPushButton, m_pRenameButton)
-#: rc.cpp:56
+#: rc.cpp:53
 msgctxt "@action:button Rename session"
 msgid "Rename..."
 msgstr "ប្ដូរ​ឈ្មោះ..."
 
 #. i18n: file: src/konqsessiondlg_base.ui:46
 #. i18n: ectx: property (text), widget (QPushButton, m_pDeleteButton)
-#: rc.cpp:59
+#: rc.cpp:56
 msgctxt "@action:button Delete session"
 msgid "Delete"
 msgstr "លុប"
 
 #. i18n: file: src/konqsessiondlg_base.ui:72
 #. i18n: ectx: property (text), widget (QCheckBox, m_pOpenTabsInsideCurrentWindow)
-#: rc.cpp:62
+#: rc.cpp:59
 msgid "Open tabs inside current window"
 msgstr "បើក​ផ្ទាំង​ខាង​ក្នុង​បង្អួច​បច្ចុប្បន្ន"
 
 #. i18n: file: src/konqnewsessiondlg_base.ui:33
 #. i18n: ectx: property (text), widget (QLabel, lblDescription)
-#: rc.cpp:65
+#: rc.cpp:62
 msgid "Save open tabs and windows for easy retrieval"
 msgstr "រក្សាទុក​ផ្ទាំង និង​បង្អួច​ដែល​បើក ដើម្បី​ងាយស្រួល​បើក​មក​វិញ"
 
 #. i18n: file: src/konqnewsessiondlg_base.ui:48
 #. i18n: ectx: property (text), widget (QLabel, lblSessionName)
-#: rc.cpp:68
+#: rc.cpp:65
 msgid "&Session name:"
 msgstr "ឈ្មោះ​សម័យ ៖"
 
 #  i18n: file sidebar/trees/history_module/history_dlg.ui line 27
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, gbLimits)
-#: rc.cpp:71
+#: rc.cpp:68
 msgid "Limits"
 msgstr "ដែន​កំណត់"
 
 #  i18n: file sidebar/trees/history_module/history_dlg.ui line 55
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:44
 #. i18n: ectx: property (text), widget (QCheckBox, cbExpire)
-#: rc.cpp:74
+#: rc.cpp:71
 msgid "URLs e&xpire after"
 msgstr "URL ផុត​កំណត់​បន្ទាប់​ពី"
 
 #  i18n: file sidebar/trees/history_module/history_dlg.ui line 68
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:54
 #. i18n: ectx: property (text), widget (QLabel, lEntries)
-#: rc.cpp:77
+#: rc.cpp:74
 msgid "Maximum &number of URLs:"
 msgstr "ចំនួន​អតិបរមា​នៃ URLs ៖"
 
 #  i18n: file sidebar/trees/history_module/history_dlg.ui line 86
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:73
 #. i18n: ectx: property (title), widget (QGroupBox, gbFonts)
-#: rc.cpp:80
+#: rc.cpp:77
 msgid "Custom Fonts For"
 msgstr "ពុម្ព​អក្សរ​ផ្ទាល់​ខ្លួន​សម្រាប់"
 
 #  i18n: file sidebar/trees/history_module/history_dlg.ui line 112
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:91
 #. i18n: ectx: property (text), widget (QLabel, lbNewer)
-#: rc.cpp:83
+#: rc.cpp:80
 msgid "URLs newer than"
 msgstr "URLs ថ្មី​ជាង"
 
@@ -2227,21 +2215,21 @@ msgstr "URLs ថ្មី​ជាង"
 #. i18n: ectx: property (text), widget (QPushButton, btnFontOlder)
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:127
 #. i18n: ectx: property (text), widget (QPushButton, btnFontNewer)
-#: rc.cpp:86 rc.cpp:92
+#: rc.cpp:83 rc.cpp:89
 msgid "Choose Font..."
 msgstr "ជ្រើស​ពុម្ព​អក្សរ..."
 
 #  i18n: file sidebar/trees/history_module/history_dlg.ui line 133
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:114
 #. i18n: ectx: property (text), widget (QLabel, lbOlder)
-#: rc.cpp:89
+#: rc.cpp:86
 msgid "URLs older than"
 msgstr "URL ចាស់​ជាង"
 
 #  i18n: file sidebar/trees/history_module/history_dlg.ui line 165
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:146
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbDetailedTips)
-#: rc.cpp:98
+#: rc.cpp:95
 msgid ""
 "Shows the number of times visited and the dates of the first and last "
 "visits, in addition to the URL"
@@ -2251,13 +2239,22 @@ msgstr ""
 #  i18n: file sidebar/trees/history_module/history_dlg.ui line 162
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:149
 #. i18n: ectx: property (text), widget (QCheckBox, cbDetailedTips)
-#: rc.cpp:101
+#: rc.cpp:98
 msgid "Detailed tooltips"
 msgstr "ព័ត៌មាន​ជំនួយ​លម្អិត"
 
 #  i18n: file sidebar/trees/history_module/history_dlg.ui line 183
 #. i18n: file: sidebar/trees/history_module/history_dlg.ui:164
 #. i18n: ectx: property (text), widget (QPushButton, btnClearHistory)
-#: rc.cpp:104
+#: rc.cpp:101
 msgid "Clear History"
 msgstr "ជម្រះ​ប្រវត្តិ"
+
+#~ msgid "Select Remote Charset"
+#~ msgstr "ជ្រើស​សំណុំ​តួ​អក្សរ​ពី​ចម្ងាយ"
+
+#~ msgid "Reload"
+#~ msgstr "ផ្ទុក​ផ្ទាំង​ឡើង​វិញ"
+
+#~ msgid "Default"
+#~ msgstr "លំនាំ​ដើម​"
