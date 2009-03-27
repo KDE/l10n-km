@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-26 10:56+0100\n"
+"POT-Creation-Date: 2009-03-27 11:03+0100\n"
 "PO-Revision-Date: 2009-01-19 14:16+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -295,7 +295,7 @@ msgstr "ជ្រើស​ឈ្មោះ​ឯកសារ​ដែល​ត្
 msgid "Torrent files"
 msgstr "ឯកសារ Torrent"
 
-#: ktorrent/importdialog.cpp:52 plugins/scripting/scriptingplugin.cpp:197
+#: ktorrent/importdialog.cpp:52 plugins/scripting/scriptingplugin.cpp:218
 #: plugins/bwscheduler/scheduleeditor.cpp:117
 msgid "All files"
 msgstr "ឯកសារ​ទាំងអស់"
@@ -5085,7 +5085,7 @@ msgstr "ល្បឿន​ទាញក្នុង​អតិបរមា​គ
 #: rc.cpp:1237
 #, fuzzy
 #| msgid "Maximum share ratio limit reached."
-msgid "Maximum share ratio(0 = no limit)"
+msgid "Maximum share ratio (0 = no limit)"
 msgstr "បាន​ដល់​ដែន​កំណត់​សមាមាត្រ​ចែករំលែក​អតិបរមា ។"
 
 #. i18n: file: libktcore/ktorrent.kcfg:62
@@ -5238,8 +5238,8 @@ msgstr "ថត​ដែល​ត្រូវផ្លាស់ទី​ទិន
 #. i18n: ectx: label, entry (minDiskSpace), group (downloads)
 #: rc.cpp:1312
 msgid ""
-"When there's no space left to complete download and free diskspace is less "
-"than minDiskSpace, torrent will be stopped."
+"When there is no space left to complete download, and the available disk "
+"space is less than this value, the torrent will be stopped."
 msgstr ""
 
 #. i18n: file: libktcore/ktorrent.kcfg:259
@@ -7650,7 +7650,7 @@ msgstr "បន្ថែម​អសយដ្ឋាន​ចម្លងជា​
 
 #. i18n: file: plugins/scripting/scriptproperties.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, ScriptProperties)
-#: rc.cpp:2439 plugins/scripting/scriptingplugin.cpp:298
+#: rc.cpp:2439 plugins/scripting/scriptingplugin.cpp:340
 msgid "Script Properties"
 msgstr "លក្ខណៈសម្បត្តិ​ស្គ្រីប"
 
@@ -8855,7 +8855,7 @@ msgstr[0] ""
 "%2\n"
 "តម្រង​សកម្ម %1"
 
-#: plugins/syndication/feedlist.cpp:186 plugins/scripting/scriptmodel.cpp:95
+#: plugins/syndication/feedlist.cpp:186 plugins/scripting/scriptmodel.cpp:178
 #, kde-format
 msgid "<b>%1</b><br/><br/>%2"
 msgstr "<b>%1</b><br/><br/>%2"
@@ -8887,7 +8887,7 @@ msgstr ""
 #: plugins/search/searchprefpage.cpp:150
 #, fuzzy, kde-format
 #| msgid "The URL %s, does not contain {searchTerms} !"
-msgid "The URL %1, does not contain {searchTerms}."
+msgid "The URL %1 does not contain {searchTerms}."
 msgstr "URL %s មិនមាន {searchTerms} !"
 
 #: plugins/search/searchenginelist.cpp:209
@@ -8954,47 +8954,88 @@ msgstr "តើ​អ្នក​ចង់​ទាញយក ឬ​រក្ស�
 msgid "Download Torrent"
 msgstr "ទាញយក Torrent"
 
-#: plugins/scripting/scriptingplugin.cpp:71
+#: plugins/scripting/scriptingplugin.cpp:72
 msgid "Add Script"
 msgstr "បន្ថែម​ស្គ្រីប"
 
-#: plugins/scripting/scriptingplugin.cpp:75
+#: plugins/scripting/scriptingplugin.cpp:76
 msgid "Remove Script"
 msgstr "យក​ស្គ្រីប​ចេញ"
 
-#: plugins/scripting/scriptingplugin.cpp:79
+#: plugins/scripting/scriptingplugin.cpp:80
 msgid "Run Script"
 msgstr "រត់​ស្គ្រីប"
 
-#: plugins/scripting/scriptingplugin.cpp:83
+#: plugins/scripting/scriptingplugin.cpp:84
 msgid "Stop Script"
 msgstr "បញ្ឈប់​ស្គ្រីប"
 
-#: plugins/scripting/scriptingplugin.cpp:87
+#: plugins/scripting/scriptingplugin.cpp:88
 msgid "Edit Script"
 msgstr "កែសម្រួល​ស្គ្រីប"
 
-#: plugins/scripting/scriptingplugin.cpp:91
+#: plugins/scripting/scriptingplugin.cpp:92
 msgid "Properties"
 msgstr "លក្ខណៈសម្បត្តិ"
 
-#: plugins/scripting/scriptingplugin.cpp:95
+#: plugins/scripting/scriptingplugin.cpp:96
 msgid "Configure"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ"
 
-#: plugins/scripting/scriptingplugin.cpp:102
-#: plugins/scripting/scriptingplugin.cpp:122
+#: plugins/scripting/scriptingplugin.cpp:108
+#: plugins/scripting/scriptingplugin.cpp:128
 msgid "Scripting"
 msgstr "ការ​ស្គ្រីប"
 
-#: plugins/scripting/scriptingplugin.cpp:197
+#: plugins/scripting/scriptingplugin.cpp:216
+#, fuzzy
+#| msgid "KTorrent Blacklisted Peers"
+msgid "KTorrent Script Packages"
+msgstr "ម៉ាស៊ីន​ដូចគ្នា​ដែល​មាន​ក្នុង​បញ្ជី​របស់ KTorrent"
+
+#: plugins/scripting/scriptingplugin.cpp:217
 #: plugins/scripting/scriptmanager.cpp:41
 msgid "Scripts"
 msgstr "ស្គ្រីប"
 
+#: plugins/scripting/scriptingplugin.cpp:277
+#, fuzzy
+#| msgid ""
+#| "You will lose all the downloaded data. Are you sure you want to do this?"
+msgid ""
+"Removing these scripts will fully delete them from your disk. Are you sure "
+"you want to do this ?"
+msgstr "អ្នក​នឹង​បាត់បង់​ទិន្នន័យ​ដែល​បាន​ទាញយក​ទាំងអស់ ។ តើ​អ្នក​ពិតជា​ចង់​ធ្វើ​ដូចនេះ​ឬ ?"
+
 #: plugins/scripting/scriptmanager.cpp:43
 msgid "Widget to start, stop and manage scripts"
 msgstr "ធាតុ​ក្រាហ្វិក​ដែល​ត្រូវ​ចាប់ផ្ដើម បញ្ឈប់ និង​គ្រប់គ្រង​ស្គ្រីប"
+
+#: plugins/scripting/scriptmodel.cpp:112
+msgid "Cannot open archive for reading !"
+msgstr ""
+
+#: plugins/scripting/scriptmodel.cpp:116
+#, fuzzy
+#| msgid "Invalid tracker URL"
+msgid "Invalid archive !"
+msgstr "URL កម្មវិធី​តាមដាន​បទ​មិន​ត្រឹមត្រូវ"
+
+#: plugins/scripting/scriptmodel.cpp:143
+#, fuzzy, kde-format
+#| msgid "There already is a tracker named <b>%1</b> !"
+msgid "There is already a script package named %1 installed."
+msgstr "មាន​កម្មវិធី​តាមដាន​ដែល​មាន​ឈ្មោះ <b>%1</b> រួចហើយ !"
+
+#: plugins/scripting/scriptmodel.cpp:149
+msgid ""
+"Failed to load script from archive. There is something wrong with the "
+"desktop file."
+msgstr ""
+
+#: plugins/scripting/scriptmodel.cpp:154
+msgid "No script found in archive !"
+msgstr ""
 
 #: plugins/zeroconf/zeroconfplugin.cpp:51
 #: plugins/zeroconf/zeroconfplugin.cpp:68
