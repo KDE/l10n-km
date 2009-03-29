@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-24 11:03+0100\n"
+"POT-Creation-Date: 2009-03-29 11:44+0200\n"
 "PO-Revision-Date: 2008-12-19 09:04+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -66,7 +66,8 @@ msgstr ""
 "មិន​បាន​ជ្រើស​អ៊ិនកូឌ័រ​ណា​មួយ​ឡើយ ។\n"
 "សូម​ជ្រើស​អ៊ិនកូដឌ័រ​មួយ​នៅ​ក្នុង​ការ​កំណត់​រចនា​សម្ព័ន្ធ ។"
 
-#: encoder.cpp:74 encoderconfigimp.cpp:187 encoderconfigimp.cpp:228
+#: encoder.cpp:74 encoderconfigimp.cpp:144 encoderconfigimp.cpp:185
+#: encoderconfigimp.cpp:226
 msgid "No Encoder Selected"
 msgstr "មិន​បាន​ជ្រើស​អ៊ិនកូឌ័រ​ណា​មួយ​ឡើយ"
 
@@ -124,45 +125,45 @@ msgstr ""
 "ឯកសារ wav ត្រូវ​បាន​យក​ចេញ​ហើយ ។\n"
 "តើ​អ្នក​ចង់​មើល​លទ្ធផល​អ៊ិនកូឌ័រ​ទាំងស្រុង​ឬ​ទេ ?"
 
-#: encoderconfigimp.cpp:112 encoderconfigimp.cpp:166 encoderconfigimp.cpp:244
-msgid "Configure Encoder"
-msgstr "កំណត់​រចនា​សម្ព័ន្ធ​​អ៊ិនកូដឌ័រ"
-
-#: encoderconfigimp.cpp:113 encoderconfigimp.cpp:168 encoderconfigimp.cpp:245
-#: kaudiocreator.cpp:376
-msgid "Encoder Configuration"
-msgstr "ការ​កំណត់​រចនា​សម្ព័ន្ធ​​អ៊ិនកូដឌ័រ"
-
-#: encoderconfigimp.cpp:144
-msgid ""
-"An encoder with that name already exists, please choose a different one."
-msgstr ""
-
-#: encoderconfigimp.cpp:144
+#: encoderconfigimp.cpp:121
 #, fuzzy
-#| msgid "Encoder nice level"
-msgid "Encoder exists already"
-msgstr "អ៊ិនកូឌ័រ​កម្រិត​ល្អ"
+#| msgid "Encoder"
+msgid "Add Encoder"
+msgstr "អ៊ិនកូឌ័រ"
 
-#: encoderconfigimp.cpp:187 encoderconfigimp.cpp:228
+#: encoderconfigimp.cpp:144 encoderconfigimp.cpp:185 encoderconfigimp.cpp:226
 msgid "Please select an encoder."
 msgstr "សូម​ជ្រើស​អ៊ិនកូដឌ័រ ។"
 
-#: encoderconfigimp.cpp:192
+#: encoderconfigimp.cpp:168
+#, fuzzy
+#| msgid "Encoder"
+msgid "Copy Encoder"
+msgstr "អ៊ិនកូឌ័រ"
+
+#: encoderconfigimp.cpp:190
 msgid "At least one encoder must exist."
 msgstr "ត្រូវ​មាន​អ៊ិនកូឌ័រ​យ៉ាង​តិច​មួយ ។"
 
-#: encoderconfigimp.cpp:192
+#: encoderconfigimp.cpp:190
 msgid "Can Not Remove"
 msgstr "មិន​អាច​យក​ចេញ​បាន​ឡើយ"
 
-#: encoderconfigimp.cpp:196
+#: encoderconfigimp.cpp:194
 msgid "Delete encoder?"
 msgstr "លុប​អ៊ិនកូដឌ័រ ?"
 
-#: encoderconfigimp.cpp:196
+#: encoderconfigimp.cpp:194
 msgid "Delete Encoder"
 msgstr "លុប​អ៊ិនកូដឌ័រ"
+
+#: encoderconfigimp.cpp:241
+msgid "Configure Encoder"
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ​​អ៊ិនកូដឌ័រ"
+
+#: encoderconfigimp.cpp:373 kaudiocreator.cpp:379
+msgid "Encoder Configuration"
+msgstr "ការ​កំណត់​រចនា​សម្ព័ន្ធ​​អ៊ិនកូដឌ័រ"
 
 #: jobqueimp.cpp:103 jobqueimp.cpp:203 jobqueimp.cpp:261
 #, kde-format
@@ -184,7 +185,7 @@ msgstr "រក្សា"
 
 #. i18n: file: jobque.ui:28
 #. i18n: ectx: property (text), widget (QLabel, queLabel)
-#: jobqueimp.cpp:198 jobqueimp.cpp:257 rc.cpp:293
+#: jobqueimp.cpp:198 jobqueimp.cpp:257 rc.cpp:296
 msgid "No jobs are in the queue"
 msgstr "មិន​មាន​ការងារ​នៅ​ក្នុង​ជួរ​ឡើយ"
 
@@ -192,144 +193,148 @@ msgstr "មិន​មាន​ការងារ​នៅ​ក្នុង​
 msgid "KAudioCreator has not finished all of the jobs. Remove them anyway?"
 msgstr "KAudioCreator មិន​បាន​បញ្ចប់​ការងារ​ទាំងអស់​ឡើយ ។ អញ្ចឹង​យក​ពួក​វា​ចេញ ?"
 
-#: kaudiocreator.cpp:62
+#: kaudiocreator.cpp:64
 msgid "&CD Tracks"
 msgstr "បទ​ក្នុង​ស៊ីឌី"
 
-#: kaudiocreator.cpp:72
+#: kaudiocreator.cpp:74
 msgid "&Jobs"
 msgstr "ការងារ"
 
-#: kaudiocreator.cpp:101
+#: kaudiocreator.cpp:103
 msgid "&Eject CD"
 msgstr "ច្រាន​ស៊ីឌី​ចេញ"
 
-#: kaudiocreator.cpp:105
+#: kaudiocreator.cpp:107
 msgid "&Configure KAudioCreator..."
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ KAudioCreator..."
 
 #. i18n: file: tracks.ui:161
 #. i18n: ectx: property (text), widget (QPushButton, selectAllTracksButton)
-#: kaudiocreator.cpp:109 rc.cpp:438
+#: kaudiocreator.cpp:111 rc.cpp:441
 msgid "Select &All Tracks"
 msgstr "ជ្រើស​បទ​ទាំងអស់"
 
-#: kaudiocreator.cpp:114
+#: kaudiocreator.cpp:116
 msgid "Deselect &All Tracks"
 msgstr "មិន​ជ្រើស​បទ​ទាំងអស់"
 
-#: kaudiocreator.cpp:121 kaudiocreator.cpp:131
+#: kaudiocreator.cpp:123 kaudiocreator.cpp:133
 msgid "Rip &Selection"
 msgstr "ជម្រើស​ការ​ច្រៀក"
 
-#: kaudiocreator.cpp:139
+#: kaudiocreator.cpp:141
 msgid "Remove &Completed Jobs"
 msgstr "យក​ការងារ​ដែល​ចប់​ហើយ​ចេញ"
 
-#: kaudiocreator.cpp:143
+#: kaudiocreator.cpp:145
 msgid "&Edit Album..."
 msgstr "កែ​សម្រួល​អាល់ប៊ុម..."
 
-#: kaudiocreator.cpp:149
+#: kaudiocreator.cpp:151
 #, fuzzy
 #| msgid "Encode File"
 msgid "Encode &Files from disk"
 msgstr "អ៊ិនកូដ​ឯកសារ"
 
-#: kaudiocreator.cpp:153
+#: kaudiocreator.cpp:155
 msgid "&CDDB Lookup"
 msgstr "រក​មើល CDDB"
 
-#: kaudiocreator.cpp:174 kaudiocreator.cpp:269
-msgid "No Audio CD detected"
-msgstr "រក​មិន​ឃើញ​ស៊ីឌី​អូឌីយ៉ូ​ឡើយ"
+#: kaudiocreator.cpp:176
+msgid "Searching"
+msgstr ""
 
-#: kaudiocreator.cpp:196
+#: kaudiocreator.cpp:199
 msgid "WAV"
 msgstr "WAV"
 
-#: kaudiocreator.cpp:203
+#: kaudiocreator.cpp:206
 msgid "Ogg Default"
 msgstr ""
 
-#: kaudiocreator.cpp:210
+#: kaudiocreator.cpp:213
 msgid "MP3 Lame Standard"
 msgstr ""
 
-#: kaudiocreator.cpp:217
+#: kaudiocreator.cpp:220
 #, fuzzy
 #| msgid "FLAC"
 msgid "FLAC Best"
 msgstr "FLAC"
 
-#: kaudiocreator.cpp:267
+#: kaudiocreator.cpp:270
 msgid "CD Inserted"
 msgstr "បាន​បញ្ចូល​ស៊ីឌី"
 
-#: kaudiocreator.cpp:276
+#: kaudiocreator.cpp:272
+msgid "No Audio CD detected"
+msgstr "រក​មិន​ឃើញ​ស៊ីឌី​អូឌីយ៉ូ​ឡើយ"
+
+#: kaudiocreator.cpp:279
 #, kde-format
 msgid "Default encoder: %1"
 msgstr "អ៊ិនកូឌ័រ​លំនាំដើម ៖ %1"
 
-#: kaudiocreator.cpp:281
+#: kaudiocreator.cpp:284
 msgid "Idle."
 msgstr "ទំនេរ ។"
 
-#: kaudiocreator.cpp:290
+#: kaudiocreator.cpp:293
 #, kde-format
 msgid "Ripping (%1 active, %2 queued)"
 msgstr "កំពុង​ច្រៀក (%1 សកម្ម, %2 នៅ​ក្នុង​ជួរ)"
 
-#: kaudiocreator.cpp:294
+#: kaudiocreator.cpp:297
 #, kde-format
 msgid "Encoding (%1 active, %2 queued)"
 msgstr "កំពុង​អ៊ិនកូដ (%1 សកម្ម %2 នៅ​ក្នុង​ជួរ)"
 
-#: kaudiocreator.cpp:312
+#: kaudiocreator.cpp:315
 msgid "There are unfinished jobs in the queue. Would you like to quit anyway?"
 msgstr "មាន​ការងារ​មិន​ទាន់​ចប់​នៅ​ក្នុង​ជួរ ។ អញ្ចឹង​អ្នក​ចង់​បិទ​តែ​ម្ដង ?"
 
-#: kaudiocreator.cpp:312
+#: kaudiocreator.cpp:315
 msgid "Unfinished Jobs in Queue"
 msgstr "ការងារ​មិន​ទាន់​ចប់​នៅ​ក្នុង​ជួរ"
 
 #. i18n: file: general.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, General)
-#: kaudiocreator.cpp:353 rc.cpp:193
+#: kaudiocreator.cpp:356 rc.cpp:196
 msgid "General"
 msgstr "ទូទៅ"
 
-#: kaudiocreator.cpp:354
+#: kaudiocreator.cpp:357
 msgid "General Configuration"
 msgstr "ការ​កំណត់​​រចនា​សម្ព័ន្ធ​ទូទៅ"
 
-#: kaudiocreator.cpp:356
+#: kaudiocreator.cpp:359
 msgid "CD"
 msgstr "ស៊ីឌី"
 
-#: kaudiocreator.cpp:357
+#: kaudiocreator.cpp:360
 msgid "CD Configuration"
 msgstr "ការ​កំណត់​​រចនា​សម្ព័ន្ធ​ស៊ីឌី"
 
-#: kaudiocreator.cpp:367
+#: kaudiocreator.cpp:370
 msgid "CDDB"
 msgstr "CDDB"
 
-#: kaudiocreator.cpp:367
+#: kaudiocreator.cpp:370
 msgid "CDDB Configuration"
 msgstr "ការ​កំណត់​​រចនា​សម្ព័ន្ធ CDDB"
 
-#: kaudiocreator.cpp:373
+#: kaudiocreator.cpp:376
 msgid "Ripper"
 msgstr "កម្មវិធី​ច្រៀក"
 
-#: kaudiocreator.cpp:373
+#: kaudiocreator.cpp:376
 msgid "Ripper Configuration"
 msgstr "ការ​កំណត់​​រចនា​សម្ព័ន្ធ​កម្មវិធី​ច្រៀក"
 
 #. i18n: file: encodefile.ui:75
 #. i18n: ectx: property (text), widget (QTreeWidget, fileList)
-#: kaudiocreator.cpp:376 rc.cpp:33
+#: kaudiocreator.cpp:379 rc.cpp:33
 msgid "Encoder"
 msgstr "អ៊ិនកូឌ័រ"
 
@@ -381,7 +386,7 @@ msgstr "ចំណង​ជើង"
 #. i18n: ectx: property (text), widget (QTreeWidget, fileList)
 #. i18n: file: tracks.ui:135
 #. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:12 rc.cpp:435
+#: rc.cpp:12 rc.cpp:438
 msgid "Title"
 msgstr "ចំណង​ជើង"
 
@@ -397,7 +402,7 @@ msgstr "សិល្បករ ៖"
 #. i18n: ectx: property (text), widget (QTreeWidget, fileList)
 #. i18n: file: infodialog.ui:91
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:18 rc.cpp:263
+#: rc.cpp:18 rc.cpp:266
 msgid "Album"
 msgstr "អាល់ប៊ុម"
 
@@ -421,7 +426,7 @@ msgstr "ចង្វាក់ ៖"
 #. i18n: ectx: property (text), widget (QTreeWidget, fileList)
 #. i18n: file: tracks.ui:125
 #. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:27 rc.cpp:429
+#: rc.cpp:27 rc.cpp:432
 msgid "Track"
 msgstr "បទ"
 
@@ -477,7 +482,7 @@ msgstr "ជ្រើស​បទ​ទាំងអស់"
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: file: infodialog.ui:103
 #. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:51 rc.cpp:260 rc.cpp:266
+#: rc.cpp:51 rc.cpp:263 rc.cpp:269
 msgid "Artist:"
 msgstr "សិល្បករ ៖"
 
@@ -503,7 +508,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
 #. i18n: file: infodialog.ui:116
 #. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#: rc.cpp:57 rc.cpp:269
+#: rc.cpp:57 rc.cpp:272
 msgid "Album:"
 msgstr "អាល់ប៊ុម ៖"
 
@@ -513,7 +518,7 @@ msgstr "អាល់ប៊ុម ៖"
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: file: infodialog.ui:168
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:63 rc.cpp:254 rc.cpp:278
+#: rc.cpp:63 rc.cpp:257 rc.cpp:281
 msgid "Comment:"
 msgstr "សេចក្ដី​អធិប្បាយ ៖"
 
@@ -521,7 +526,7 @@ msgstr "សេចក្ដី​អធិប្បាយ ៖"
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
 #. i18n: file: infodialog.ui:152
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:69 rc.cpp:275
+#: rc.cpp:69 rc.cpp:278
 msgid "Genre:"
 msgstr "ចង្វាក់ ៖"
 
@@ -535,7 +540,7 @@ msgstr "បទ ៖"
 #. i18n: ectx: property (text), widget (QLabel, TextLabel7)
 #. i18n: file: infodialog.ui:139
 #. i18n: ectx: property (text), widget (QLabel, TextLabel7)
-#: rc.cpp:81 rc.cpp:272
+#: rc.cpp:81 rc.cpp:275
 msgid "Year:"
 msgstr "ឆ្នាំ ៖"
 
@@ -572,92 +577,98 @@ msgid "&Add..."
 msgstr "បន្ថែម..."
 
 #. i18n: file: encoderconfig.ui:71
-#. i18n: ectx: property (toolTip), widget (QPushButton, removeEncoder)
+#. i18n: ectx: property (text), widget (QPushButton, copyEncoder)
 #: rc.cpp:105
+msgid "Copy..."
+msgstr ""
+
+#. i18n: file: encoderconfig.ui:78
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeEncoder)
+#: rc.cpp:108
 msgid "Remove encoder from list."
 msgstr "យក​អ៊ិនកូឌ័រ​ចេញ​ពី​បញ្ជី ។"
 
-#. i18n: file: encoderconfig.ui:74
+#. i18n: file: encoderconfig.ui:81
 #. i18n: ectx: property (text), widget (QPushButton, removeEncoder)
-#: rc.cpp:108
+#: rc.cpp:111
 msgid "&Remove"
 msgstr "យក​ចេញ"
 
-#. i18n: file: encoderconfig.ui:81
+#. i18n: file: encoderconfig.ui:88
 #. i18n: ectx: property (toolTip), widget (QPushButton, configureEncoder)
-#: rc.cpp:111
+#: rc.cpp:114
 msgid "Set encoder details."
 msgstr "កំណត់​សេចក្ដីលម្អិត​អ៊ិនកូឌ័រ ។"
 
-#. i18n: file: encoderconfig.ui:84
+#. i18n: file: encoderconfig.ui:91
 #. i18n: ectx: property (text), widget (QPushButton, configureEncoder)
-#: rc.cpp:114
+#: rc.cpp:117
 msgid "&Configure..."
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ..."
 
-#. i18n: file: encoderconfig.ui:91
+#. i18n: file: encoderconfig.ui:98
 #. i18n: ectx: property (text), widget (QPushButton, defaultButton)
-#: rc.cpp:117
+#: rc.cpp:120
 msgid "Set as default"
 msgstr ""
 
-#. i18n: file: encoderconfig.ui:126
+#. i18n: file: encoderconfig.ui:133
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:120
+#: rc.cpp:123
 msgid "Encoded File Location"
 msgstr "ទីតាំង​ឯកសារ​ដែល​បាន​អ៊ិនកូដ"
 
-#. i18n: file: encoderconfig.ui:132
+#. i18n: file: encoderconfig.ui:139
 #. i18n: ectx: property (text), widget (QLabel, TextLabel2_2)
-#: rc.cpp:123
+#: rc.cpp:126
 msgid "Location:"
 msgstr "ទីតាំង ៖"
 
-#. i18n: file: encoderconfig.ui:145
+#. i18n: file: encoderconfig.ui:152
 #. i18n: ectx: property (text), widget (QPushButton, encoderWizardButton)
-#: rc.cpp:126
+#: rc.cpp:129
 msgid "&Wizard"
 msgstr "អ្នក​ជំនួយ​ការ​"
 
-#. i18n: file: encoderconfig.ui:155
+#. i18n: file: encoderconfig.ui:162
 #. i18n: ectx: property (text), widget (QLabel, TextLabel1_2)
-#: rc.cpp:129
+#: rc.cpp:132
 msgid "&Number of wav files to encode at a time:"
 msgstr "ចំនួន​ឯកសារ wav ដែល​ត្រូវ​អ៊ិនកូដ​ម្ដងៗ ៖"
 
-#. i18n: file: encoderconfig.ui:178
+#. i18n: file: encoderconfig.ui:185
 #. i18n: ectx: property (title), widget (QGroupBox, niceLevelBox)
-#: rc.cpp:132
+#: rc.cpp:135
 msgid "Encoder nice level"
 msgstr "អ៊ិនកូឌ័រ​កម្រិត​ល្អ"
 
-#. i18n: file: encoderconfig.ui:211
+#. i18n: file: encoderconfig.ui:218
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:135
+#: rc.cpp:138
 msgid "-19"
 msgstr "-១៩"
 
-#. i18n: file: encoderconfig.ui:237
+#. i18n: file: encoderconfig.ui:244
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:138
+#: rc.cpp:141
 msgid "Current:"
 msgstr "បច្ចុប្បន្ន ៖"
 
-#. i18n: file: encoderconfig.ui:250
+#. i18n: file: encoderconfig.ui:257
 #. i18n: ectx: property (text), widget (QLabel, niceLevelLabel)
-#: rc.cpp:141
+#: rc.cpp:144
 msgid "0"
 msgstr "០"
 
-#. i18n: file: encoderconfig.ui:276
+#. i18n: file: encoderconfig.ui:283
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:144
+#: rc.cpp:147
 msgid "19"
 msgstr "១៩"
 
 #. i18n: file: encoderedit.ui:16
 #. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:147
+#: rc.cpp:150
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
@@ -665,44 +676,44 @@ msgstr "ឈ្មោះ ៖"
 #. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_encoderName)
 #. i18n: file: encoderedit.ui:35
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, kcfg_encoderName)
-#: rc.cpp:150 rc.cpp:153
+#: rc.cpp:153 rc.cpp:156
 msgid "An unique and descriptive name for the encoder."
 msgstr ""
 
 #. i18n: file: encoderedit.ui:38
 #. i18n: ectx: property (text), widget (QLineEdit, kcfg_encoderName)
-#: rc.cpp:156
+#: rc.cpp:159
 msgid "Unknown Encoder"
 msgstr "មិន​ស្គាល់​អ៊ិនកូដឌ័រ"
 
 #. i18n: file: encoderedit.ui:45
 #. i18n: ectx: property (text), widget (QLabel, textLabel6)
-#: rc.cpp:159
+#: rc.cpp:162
 msgid "Command line:"
 msgstr "បន្ទាត់​ពាក្យ​បញ្ជា ៖"
 
 #. i18n: file: encoderedit.ui:55
 #. i18n: ectx: property (text), widget (QLineEdit, kcfg_commandLine)
-#: rc.cpp:163
+#: rc.cpp:166
 #, no-c-format
 msgid "app.exe %f %o"
 msgstr "app.exe %f %o"
 
 #. i18n: file: encoderedit.ui:62
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:166
+#: rc.cpp:169
 msgid "Extension:"
 msgstr "កន្ទុយ ៖"
 
 #. i18n: file: encoderedit.ui:72
 #. i18n: ectx: property (text), widget (QLineEdit, kcfg_extension)
-#: rc.cpp:169
+#: rc.cpp:172
 msgid "ext"
 msgstr ""
 
 #. i18n: file: encoderedit.ui:79
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:172
+#: rc.cpp:175
 #, fuzzy
 #| msgid "Input:"
 msgid "Input types:"
@@ -710,19 +721,19 @@ msgstr "បញ្ចូល ៖"
 
 #. i18n: file: encoderedit.ui:89
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:175
+#: rc.cpp:178
 msgid "Percent length"
 msgstr ""
 
 #. i18n: file: encoderedit.ui:116
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_checkOutput)
-#: rc.cpp:178
+#: rc.cpp:181
 msgid "Check if output files should be checked for existence."
 msgstr ""
 
 #. i18n: file: encoderedit.ui:119
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_checkOutput)
-#: rc.cpp:181
+#: rc.cpp:184
 msgid ""
 "Check if output files should be checked for existence, if the files are "
 "placed by the encoder itself, not kaudiocreator leave this unchecked."
@@ -732,13 +743,13 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_checkOutput)
 #. i18n: file: kaudiocreator_encoders.kcfg:32
 #. i18n: ectx: label, entry (checkOutput), group ($(encoder))
-#: rc.cpp:184 rc.cpp:387
+#: rc.cpp:187 rc.cpp:390
 msgid "Check output files"
 msgstr ""
 
 #. i18n: file: encoderoutput.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, EncoderOutput)
-#: rc.cpp:187
+#: rc.cpp:190
 msgid "Encoder Output"
 msgstr "លទ្ធផល​អ៊ិនកូឌ័រ"
 
@@ -748,13 +759,13 @@ msgstr "លទ្ធផល​អ៊ិនកូឌ័រ"
 #. i18n: ectx: property (text), widget (QPushButton, buttonOk)
 #. i18n: file: wizard.ui:270
 #. i18n: ectx: property (text), widget (QPushButton, buttonOk)
-#: rc.cpp:190 rc.cpp:287 rc.cpp:497
+#: rc.cpp:193 rc.cpp:290 rc.cpp:500
 msgid "&OK"
 msgstr "យល់​ព្រម"
 
 #. i18n: file: general.ui:19
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_removeCompletedJobs)
-#: rc.cpp:196
+#: rc.cpp:199
 msgid "&Automatically remove jobs when finished"
 msgstr "យក​ការងារ​ចេញ​ដោយ​ស្វ័យ​ប្រវត្តិ​នៅ​ពេល​ចប់"
 
@@ -762,25 +773,25 @@ msgstr "យក​ការងារ​ចេញ​ដោយ​ស្វ័យ​
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_promptIfIncompleteInfo)
 #. i18n: file: kaudiocreator.kcfg:22
 #. i18n: ectx: label, entry (promptIfIncompleteInfo), group (CD)
-#: rc.cpp:199 rc.cpp:323
+#: rc.cpp:202 rc.cpp:326
 msgid "Prompt if information is not complete"
 msgstr "ជូន​ដំណឹង​បើ​ព័ត៌មាន​មាន​លក្ខណៈ​មិន​ពេញលេញ"
 
 #. i18n: file: general.ui:33
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:202
+#: rc.cpp:205
 msgid "File Regular Expression Replacement"
 msgstr "ការ​ជំនួស​កន្សោម​ធម្មតា​នៃ​ឯកសារ"
 
 #. i18n: file: general.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:205
+#: rc.cpp:208
 msgid "Selection:"
 msgstr "ជម្រើស ៖"
 
 #. i18n: file: general.ui:62
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:208
+#: rc.cpp:211
 msgid ""
 "Regular expression used on all file names. For example using selection \" \" "
 "and replace with \"_\" would replace all the spaces with underlines.\n"
@@ -790,19 +801,19 @@ msgstr ""
 
 #. i18n: file: general.ui:75
 #. i18n: ectx: property (text), widget (QLabel, inputlabel)
-#: rc.cpp:212
+#: rc.cpp:215
 msgid "Input:"
 msgstr "បញ្ចូល ៖"
 
 #. i18n: file: general.ui:85
 #. i18n: ectx: property (text), widget (QLabel, outputLabel)
-#: rc.cpp:215
+#: rc.cpp:218
 msgid "Output:"
 msgstr "ទិន្នផល ៖"
 
 #. i18n: file: general.ui:95
 #. i18n: ectx: property (text), widget (QLabel, exampleLabel)
-#: rc.cpp:218
+#: rc.cpp:221
 msgid "Example"
 msgstr "ឧទាហរណ៍"
 
@@ -810,79 +821,79 @@ msgstr "ឧទាហរណ៍"
 #. i18n: ectx: property (text), widget (QLabel, exampleOutput)
 #. i18n: file: general.ui:115
 #. i18n: ectx: property (text), widget (QLineEdit, example)
-#: rc.cpp:221 rc.cpp:224
+#: rc.cpp:224 rc.cpp:227
 msgid "Cool artist - example audio file.wav"
 msgstr "ស៊ីន ស៊ីសាមុត - ឯណា​ទៅ​ឋានសួគ៌.wav"
 
 #. i18n: file: general.ui:128
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:227
+#: rc.cpp:230
 msgid "Replace with:"
 msgstr "ជំនួស​ដោយ ៖"
 
 #. i18n: file: general.ui:151
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_seperateMultiArtist)
-#: rc.cpp:230
+#: rc.cpp:233
 msgid "Automatically Separate Multi-Artist CDDB Entries"
 msgstr "បំបែក​ធាតុ CDDB ដែល​មាន​សិល្បករ​ច្រើន ដោយ​ស្វ័យប្រវត្តិ"
 
 #. i18n: file: general.ui:163
 #. i18n: ectx: property (title), widget (KButtonGroup, kbuttongroup)
-#: rc.cpp:233
+#: rc.cpp:236
 msgid "Format"
 msgstr "ទ្រង់ទ្រាយ"
 
 #. i18n: file: general.ui:169
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_format_titleArtist)
-#: rc.cpp:236
+#: rc.cpp:239
 msgid "Title - Artist"
 msgstr "ចំណង​ជើង - សិល្បករ"
 
 #. i18n: file: general.ui:176
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_format_artistTitle)
-#: rc.cpp:239
+#: rc.cpp:242
 msgid "Artist - Title"
 msgstr "សិល្បករ - ចំណង​ជើង"
 
 #. i18n: file: general.ui:203
 #. i18n: ectx: property (text), widget (QLabel, delimiterLabel)
-#: rc.cpp:242
+#: rc.cpp:245
 msgid "Delimiter:"
 msgstr "សញ្ញា​បំបែក ៖"
 
 #. i18n: file: general.ui:213
 #. i18n: ectx: property (text), widget (QLabel, genArtistLabel)
-#: rc.cpp:245
+#: rc.cpp:248
 msgid "Generic artist:"
 msgstr "សិល្បករ​ទូទៅ ៖"
 
 #. i18n: file: infodialog.ui:16
 #. i18n: ectx: property (windowTitle), widget (QDialog, AlbumEditor)
-#: rc.cpp:248
+#: rc.cpp:251
 msgid "Album Editor"
 msgstr "កម្មវិធី​និពន្ធ​អាល់ប៊ុម"
 
 #. i18n: file: infodialog.ui:31
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:251
+#: rc.cpp:254
 msgid "Current Track"
 msgstr "បទ​បច្ចុប្បន្ន"
 
 #. i18n: file: infodialog.ui:56
 #. i18n: ectx: property (text), widget (QLabel, trackLabel)
-#: rc.cpp:257
+#: rc.cpp:260
 msgid "Title:"
 msgstr "ចំណង​ជើង ៖"
 
 #. i18n: file: infodialog.ui:208
 #. i18n: ectx: property (text), widget (QPushButton, buttonPrevious)
-#: rc.cpp:281
+#: rc.cpp:284
 msgid "&Previous Track"
 msgstr "បទ​មុន"
 
 #. i18n: file: infodialog.ui:215
 #. i18n: ectx: property (text), widget (QPushButton, buttonNext)
-#: rc.cpp:284
+#: rc.cpp:287
 msgid "&Next Track"
 msgstr "បទ​បន្ទាប់"
 
@@ -890,91 +901,91 @@ msgstr "បទ​បន្ទាប់"
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
 #. i18n: file: wizard.ui:283
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#: rc.cpp:290 rc.cpp:500
+#: rc.cpp:293 rc.cpp:503
 msgid "&Cancel"
 msgstr "បោះបង់"
 
 #. i18n: file: jobque.ui:54
 #. i18n: ectx: property (text), widget (QTreeWidget, todoQue)
-#: rc.cpp:296
+#: rc.cpp:299
 msgid "Job"
 msgstr "ការងារ"
 
 #. i18n: file: jobque.ui:59
 #. i18n: ectx: property (text), widget (QTreeWidget, todoQue)
-#: rc.cpp:299
+#: rc.cpp:302
 msgid "Progress"
 msgstr "វឌ្ឍនភាព"
 
 #. i18n: file: jobque.ui:64
 #. i18n: ectx: property (text), widget (QTreeWidget, todoQue)
-#: rc.cpp:302
+#: rc.cpp:305
 msgid "Description"
 msgstr "សេចក្ដី​ពិពណ៌នា"
 
 #. i18n: file: jobque.ui:90
 #. i18n: ectx: property (text), widget (QPushButton, removeDoneJobs)
-#: rc.cpp:305
+#: rc.cpp:308
 msgid "Remove Completed Jobs"
 msgstr "យក​ការងារ​ដែល​ចប់​ចេញ"
 
 #. i18n: file: jobque.ui:97
 #. i18n: ectx: property (text), widget (QPushButton, removeAll)
-#: rc.cpp:308
+#: rc.cpp:311
 msgid "Remove All Jobs"
 msgstr "យក​ការងារ​ទាំងអស់​ចេញ"
 
 #. i18n: file: jobque.ui:104
 #. i18n: ectx: property (text), widget (QPushButton, removeSelected)
-#: rc.cpp:311
+#: rc.cpp:314
 msgid "Remove Selected Jobs"
 msgstr "យក​ការងារ​ដែល​បាន​ជ្រើស​ចេញ"
 
 #. i18n: file: kaudiocreator.kcfg:10
 #. i18n: ectx: label, entry (performCDDBauto), group (CD)
-#: rc.cpp:314
+#: rc.cpp:317
 msgid "Perform automatic CDDB lookups."
 msgstr "ធ្វើការ​រក​មើល CDDB ស្វ័យប្រវត្តិ ។"
 
 #. i18n: file: kaudiocreator.kcfg:14
 #. i18n: ectx: label, entry (autoRip), group (CD)
-#: rc.cpp:317
+#: rc.cpp:320
 msgid "Automatically rip all tracks upon a successful CDDB retrieval"
 msgstr "ច្រៀក​បទ​ទាំងអស់​ដោយ​ស្វ័យប្រវត្តិ ពេល​ទៅ​យក CDDB ដោយ​ជោគជ័យ"
 
 #. i18n: file: kaudiocreator.kcfg:18
 #. i18n: ectx: label, entry (lastUsedDevice), group (CD)
-#: rc.cpp:320
+#: rc.cpp:323
 msgid "Last used CD device"
 msgstr "ឧបករណ៍​ស៊ីឌី​ដែល​បាន​ប្រើ​ចុងក្រោយ"
 
 #. i18n: file: kaudiocreator.kcfg:28
 #. i18n: ectx: label, entry (removeCompletedJobs), group (General)
-#: rc.cpp:326
+#: rc.cpp:329
 msgid "Automatically remove jobs when finished"
 msgstr "យក​ការងារ​ចេញ​ដោយ​ស្វ័យប្រវត្តិ នៅ​ពេល​ចប់"
 
 #. i18n: file: kaudiocreator.kcfg:32
 #. i18n: ectx: label, entry (replaceInput), group (General)
-#: rc.cpp:329
+#: rc.cpp:332
 msgid "Regexp to match file names with"
 msgstr "កន្សោម​ធម្មតា ដែល​ត្រូវ​ផ្គូផ្គង​ឈ្មោះ​ឯកសារ​ជាមួយ"
 
 #. i18n: file: kaudiocreator.kcfg:35
 #. i18n: ectx: label, entry (replaceOutput), group (General)
-#: rc.cpp:332
+#: rc.cpp:335
 msgid "String used to replace the parts that match the selection regexp"
 msgstr "ខ្សែអក្សរ​ដែល​ត្រូវ​ប្រើ​ដើម្បី​ជំនួស​ផ្នែក​ដែល​ផ្គូផ្គង​នឹង​កន្សោម​ធម្មតា​នៃ​ជម្រើស"
 
 #. i18n: file: kaudiocreator.kcfg:55
 #. i18n: ectx: label, entry (currentEncoder), group (Encoder)
-#: rc.cpp:335
+#: rc.cpp:338
 msgid "Currently selected encoder"
 msgstr "អ៊ិនកូដឌ័រ​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន"
 
 #. i18n: file: kaudiocreator.kcfg:59
 #. i18n: ectx: label, entry (defaultEncoder), group (Encoder)
-#: rc.cpp:338
+#: rc.cpp:341
 #, fuzzy
 #| msgid "Current default encoder:"
 msgid "Current default encoder"
@@ -982,193 +993,193 @@ msgstr "អ៊ិនកូឌ័រ​លំនាំដើម​បច្ចុ
 
 #. i18n: file: kaudiocreator.kcfg:63
 #. i18n: ectx: label, entry (inputTypesList), group (Encoder)
-#: rc.cpp:341
+#: rc.cpp:344
 msgid "List of available input types"
 msgstr ""
 
 #. i18n: file: kaudiocreator.kcfg:66
 #. i18n: ectx: label, entry (numberOfCpus), group (Encoder)
-#: rc.cpp:344
+#: rc.cpp:347
 msgid "Number of files to encode at a time"
 msgstr "ចំនួន​ឯកសារ ដែល​ត្រូវ​អ៊ិនកូដ​ម្ដងៗ"
 
 #. i18n: file: kaudiocreator.kcfg:70
 #. i18n: ectx: label, entry (fileFormat), group (Encoder)
-#: rc.cpp:347
+#: rc.cpp:350
 msgid "Location pattern for encoded files"
 msgstr "លំនាំ​ទីតាំង​សម្រាប់​ឯកសារ​ដែល​បាន​អ៊ិនកូដ"
 
 #. i18n: file: kaudiocreator.kcfg:74
 #. i18n: ectx: label, entry (NiceLevel), group (Encoder)
-#: rc.cpp:350
+#: rc.cpp:353
 msgid "Encoder priority"
 msgstr "អាទិភាព​អ៊ិនកូឌ័រ"
 
 #. i18n: file: kaudiocreator.kcfg:80
 #. i18n: ectx: label, entry (FullDecoderDebug), group (Encoder)
-#: rc.cpp:353
+#: rc.cpp:356
 msgid "Enable full decoder debugging"
 msgstr "អនុញ្ញាត​ឲ្យ​មាន​ការ​បំបាត់​កំហុស​ឌីកូឌ័រ​ពេញលេញ"
 
 #. i18n: file: kaudiocreator.kcfg:86
 #. i18n: ectx: label, entry (maxWavFiles), group (Ripper)
-#: rc.cpp:356
+#: rc.cpp:359
 msgid "Number of tracks to rip at a time"
 msgstr "ចំនួន​បទ​ដែល​ត្រូវ​ច្រៀក​ម្ដង"
 
 #. i18n: file: kaudiocreator.kcfg:90
 #. i18n: ectx: label, entry (beepAfterRip), group (Ripper)
-#: rc.cpp:359
+#: rc.cpp:362
 msgid "Beep after rip"
 msgstr "បន្លឺ​សម្លេង បន្ទាប់​ពី​ច្រៀក​រួច"
 
 #. i18n: file: kaudiocreator.kcfg:94
 #. i18n: ectx: label, entry (autoEjectAfterRip), group (Ripper)
-#: rc.cpp:362
+#: rc.cpp:365
 msgid "Eject CD after last track is ripped"
 msgstr "ច្រាន​ស៊ីឌី​ចេញ បន្ទាប់​ពី​ច្រៀក​បទ​ចុង​ក្រោយ​រួច"
 
 #. i18n: file: kaudiocreator.kcfg:98
 #. i18n: ectx: label, entry (autoEjectDelay), group (Ripper)
-#: rc.cpp:365
+#: rc.cpp:368
 msgid "Auto-eject delay"
 msgstr "ពន្យារ​ពេល​ច្រាន​ចេញ​ស្វ័យ​ប្រវត្តិ"
 
 #. i18n: file: kaudiocreator.kcfg:102
 #. i18n: ectx: label, entry (enableTempDir), group (Ripper)
-#: rc.cpp:368
+#: rc.cpp:371
 msgid "Specify temporary directory"
 msgstr "បញ្ជាក់​ថត​បណ្ដោះ​អាសន្ន"
 
 #. i18n: file: kaudiocreator.kcfg:106
 #. i18n: ectx: label, entry (tempDir), group (Ripper)
-#: rc.cpp:371
+#: rc.cpp:374
 msgid "Location of temporary directory to use"
 msgstr "ទីតាំង​ថត​បណ្ដោះ​អាសន្ន​ដែល​ត្រូវ​ប្រើ"
 
 #. i18n: file: kaudiocreator_encoders.kcfg:12
 #. i18n: ectx: label, entry (encoderName), group ($(encoder))
-#: rc.cpp:374
+#: rc.cpp:377
 msgid "Name of the encoder"
 msgstr "ឈ្មោះ​អ៊ិនកូឌ័រ"
 
 #. i18n: file: kaudiocreator_encoders.kcfg:16
 #. i18n: ectx: label, entry (commandLine), group ($(encoder))
-#: rc.cpp:377
+#: rc.cpp:380
 msgid "Command line to invoke encoder"
 msgstr "បន្ទាត់​ពាក្យ​បញ្ជា ដើម្បី​ហៅ​អ៊ិនកូដឌ័រ"
 
 #. i18n: file: kaudiocreator_encoders.kcfg:20
 #. i18n: ectx: label, entry (extension), group ($(encoder))
-#: rc.cpp:380
+#: rc.cpp:383
 msgid "File extension"
 msgstr "កន្ទុយ​ឯកសារ"
 
 #. i18n: file: kaudiocreator_encoders.kcfg:24
 #. i18n: ectx: label, entry (inputTypes), group ($(encoder))
-#: rc.cpp:383
+#: rc.cpp:386
 msgid "Input Types"
 msgstr ""
 
 #. i18n: file: kaudiocreatorui.rc:15
 #. i18n: ectx: Menu (file)
-#: rc.cpp:390
+#: rc.cpp:393
 msgid "&Program"
 msgstr "កម្មវិធី"
 
 #. i18n: file: ripconfig.ui:16
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_beepAfterRip)
-#: rc.cpp:393
+#: rc.cpp:396
 msgid "&Beep after each rip is done"
 msgstr "បន្លឺ​សម្លេង ពេល​បញ្ចប់​ការ​ច្រៀក​នីមួយៗ"
 
 #. i18n: file: ripconfig.ui:40
 #. i18n: ectx: property (text), widget (QLabel, TextLabel14)
-#: rc.cpp:396
+#: rc.cpp:399
 msgid "&Number of tracks to rip at a time:"
 msgstr "ចំនួន​បទ​ដែល​ត្រូវ​ច្រៀក​ម្ដង ៖"
 
 #. i18n: file: ripconfig.ui:65
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_autoEjectAfterRip)
-#: rc.cpp:399
+#: rc.cpp:402
 msgid "&Auto-eject CD after last track is ripped"
 msgstr "ច្រាន​ស៊ីឌី​ចេញ​ដោយ​ស្វ័យប្រវត្តិ​បន្ទាប់​ពី​បទ​ចុង​ក្រោយ​ត្រួវ​បាន​ជ្រៀក"
 
 #. i18n: file: ripconfig.ui:92
 #. i18n: ectx: property (text), widget (QLabel, autoEjectLabel)
-#: rc.cpp:402
+#: rc.cpp:405
 msgid "Auto-&eject delay:"
 msgstr "ពន្យារ​ពេល​ច្រាន​ចេញ​ស្វ័យ​ប្រវត្តិ ៖"
 
 #. i18n: file: ripconfig.ui:108
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_autoEjectDelay)
-#: rc.cpp:405
+#: rc.cpp:408
 msgid " seconds"
 msgstr " វិនាទី"
 
 #. i18n: file: ripconfig.ui:120
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_enableTempDir)
-#: rc.cpp:408
+#: rc.cpp:411
 msgid "Use custom temporary directory"
 msgstr "ប្រើ​ថត​បណ្ដោះអាសន្ន​ផ្ទាល់ខ្លួន"
 
 #. i18n: file: ripconfig.ui:132
 #. i18n: ectx: property (text), widget (QLabel, temporaryDirectoryLabel)
-#: rc.cpp:411
+#: rc.cpp:414
 msgid "Temporary directory:"
 msgstr "ថត​បណ្ដោះអាសន្ន ៖"
 
 #. i18n: file: tracks.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, Tracks)
-#: rc.cpp:414
+#: rc.cpp:417
 msgid "Tracks"
 msgstr "បទ"
 
 #. i18n: file: tracks.ui:39
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:417
+#: rc.cpp:420
 msgid "Device:"
 msgstr "ឧបករណ៍ ៖"
 
 #. i18n: file: tracks.ui:59
 #. i18n: ectx: property (text), item, widget (KComboBox, deviceCombo)
-#: rc.cpp:420
+#: rc.cpp:423
 msgid "/dev/cdrom"
 msgstr "/dev/cdrom"
 
 #. i18n: file: tracks.ui:91
 #. i18n: ectx: property (text), widget (QLabel, albumName)
-#: rc.cpp:423
+#: rc.cpp:426
 msgid "Unknown Artist - Unknown Album"
 msgstr "មិន​ស្គាល់​សិល្បករ - មិន​ស្គាល់​អាល់ប៊ុម"
 
 #. i18n: file: tracks.ui:120
 #. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:426 tracksimp.cpp:380
+#: rc.cpp:429 tracksimp.cpp:380
 msgid "Rip"
 msgstr "ច្រៀក"
 
 #. i18n: file: tracks.ui:130
 #. i18n: ectx: property (text), widget (QTreeWidget, trackListing)
-#: rc.cpp:432
+#: rc.cpp:435
 msgid "Length"
 msgstr "ប្រវែង"
 
 #. i18n: file: tracks.ui:168
 #. i18n: ectx: property (text), widget (QPushButton, deselectAllTracksButton)
-#: rc.cpp:441
+#: rc.cpp:444
 msgid "&Deselect All Tracks"
 msgstr "មិន​ជ្រើស​បទ​ទាំងអស់"
 
 #. i18n: file: wizard.ui:19
 #. i18n: ectx: property (windowTitle), widget (QDialog, fileWizard)
-#: rc.cpp:444
+#: rc.cpp:447
 msgid "File Location Wizard"
 msgstr "អ្នក​ជំនួយ​ការ​ទីតាំង​ឯកសារ"
 
 #. i18n: file: wizard.ui:46
 #. i18n: ectx: property (text), widget (QLabel, TextLabel8)
-#: rc.cpp:448
+#: rc.cpp:451
 #, no-c-format
 msgid ""
 "When files have finished being processed, they are saved based upon the "
@@ -1187,101 +1198,101 @@ msgstr ""
 
 #. i18n: file: wizard.ui:95
 #. i18n: ectx: property (text), widget (QLabel, TextLabel9)
-#: rc.cpp:451
+#: rc.cpp:454
 msgid "&File location:"
 msgstr "ទីតាំង​ឯកសារ ៖"
 
 #. i18n: file: wizard.ui:108
 #. i18n: ectx: property (text), widget (QLineEdit, fileFormat)
-#: rc.cpp:455
+#: rc.cpp:458
 #, no-c-format
 msgid "~/%{extension}/%{artist}/%{album}/%{artist} - %{album}.m3u"
 msgstr "~/%{កន្ទុយ}/%{សិល្បករ}/%{អាល់ប៊ុម}/%{សិល្បករ} - %{អាល់ប៊ុម}.m3u"
 
 #. i18n: file: wizard.ui:117
 #. i18n: ectx: property (text), widget (QLabel, exampleLabel)
-#: rc.cpp:458
+#: rc.cpp:461
 msgid "Example: ~/mp3/Staind/Lost Love/Staind - Lost Love.m3u"
 msgstr "ឧទាហរណ៌ ៖ ~/mp3/ស៊ីន ស៊ីសាមុត/ឯណា​ទៅ​ឋានសួគ៌/ស៊ីន ស៊ីសាមុត - ឯណា​ទៅ​ឋានសួគ៌.m3u"
 
 #. i18n: file: wizard.ui:141
 #. i18n: ectx: property (text), widget (QPushButton, artistButton)
-#: rc.cpp:461
+#: rc.cpp:464
 msgid "&Artist"
 msgstr "សិល្បករ"
 
 #. i18n: file: wizard.ui:148
 #. i18n: ectx: property (text), widget (QPushButton, homeDirButton)
-#: rc.cpp:464
+#: rc.cpp:467
 msgid "&Home Folder"
 msgstr "ថត​ផ្ទះ"
 
 #. i18n: file: wizard.ui:155
 #. i18n: ectx: property (text), widget (QPushButton, trackNumberButton)
-#: rc.cpp:467
+#: rc.cpp:470
 msgid "&Track Number"
 msgstr "លេខ​បទ"
 
 #. i18n: file: wizard.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, extensionButton)
-#: rc.cpp:470
+#: rc.cpp:473
 msgid "&Extension"
 msgstr "កន្ទុយ"
 
 #. i18n: file: wizard.ui:169
 #. i18n: ectx: property (text), widget (QPushButton, trackTitleButton)
-#: rc.cpp:473
+#: rc.cpp:476
 msgid "Track T&itle"
 msgstr "ចំណង​ជើង​បទ"
 
 #. i18n: file: wizard.ui:176
 #. i18n: ectx: property (text), widget (QPushButton, trackCommentButton)
-#: rc.cpp:476
+#: rc.cpp:479
 msgid "T&rack Comment"
 msgstr "សេចក្តី​​អធិប្បាយ​អំពី​បទ"
 
 #. i18n: file: wizard.ui:183
 #. i18n: ectx: property (text), widget (QPushButton, genreButton)
-#: rc.cpp:479
+#: rc.cpp:482
 msgid "&Genre"
 msgstr "ចង្វាក់"
 
 #. i18n: file: wizard.ui:190
 #. i18n: ectx: property (text), widget (QPushButton, yearButton)
-#: rc.cpp:482
+#: rc.cpp:485
 msgid "&Year"
 msgstr "ឆ្នាំ"
 
 #. i18n: file: wizard.ui:197
 #. i18n: ectx: property (text), widget (QPushButton, albumButton)
-#: rc.cpp:485
+#: rc.cpp:488
 msgid "Al&bum"
 msgstr "អាល់ប៊ុម"
 
 #. i18n: file: wizard.ui:204
 #. i18n: ectx: property (text), widget (QPushButton, trackArtistButton)
-#: rc.cpp:488
+#: rc.cpp:491
 msgid "Trac&k Artist"
 msgstr "សិល្បករ​នៃ​បទ"
 
 #. i18n: file: wizard.ui:211
 #. i18n: ectx: property (text), widget (QPushButton, commentButton)
-#: rc.cpp:491
+#: rc.cpp:494
 msgid "Co&mment"
 msgstr "មតិ​យោបល់"
 
 #. i18n: file: wizard.ui:218
 #. i18n: ectx: property (text), widget (QPushButton, artistInitialButton)
-#: rc.cpp:494
+#: rc.cpp:497
 msgid "Arti&st's Initial"
 msgstr "អាទិសង្កេត​របស់​សិល្ប​ករ"
 
-#: rc.cpp:501
+#: rc.cpp:504
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "ខឹម សុខែម, ​អេង វណ្ណៈ, អោក ពិសិដ្ឋ​"
 
-#: rc.cpp:502
+#: rc.cpp:505
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
@@ -1291,7 +1302,7 @@ msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.in
 msgid "Ripping: %1 - %2"
 msgstr "កំពុង​ច្រៀក ៖ %1 - %2"
 
-#: tracksimp.cpp:91
+#: tracksimp.cpp:88
 msgid "none detected"
 msgstr "គ្មាន​អ្វី​បាន​រកឃើញ"
 
@@ -1385,6 +1396,11 @@ msgstr "ឧទាហរណ៍ ៖ %1"
 #: job.h:32
 msgid "Other"
 msgstr "ផ្សេងៗ"
+
+#, fuzzy
+#~| msgid "Encoder nice level"
+#~ msgid "Encoder exists already"
+#~ msgstr "អ៊ិនកូឌ័រ​កម្រិត​ល្អ"
 
 #~ msgid "Last encoder in the list"
 #~ msgstr "អ៊ិនកូឌ័រ​ចុងក្រោយ​នៅ​ក្នុង​បញ្ជី"

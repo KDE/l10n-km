@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-28 11:16+0100\n"
+"POT-Creation-Date: 2009-03-29 11:44+0200\n"
 "PO-Revision-Date: 2009-01-23 10:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -38,7 +38,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 
 #: mac/GrowlInterface.cpp:34 context/engines/current/CurrentEngine.cpp:112
-#: context/applets/currenttrack/CurrentTrack.cpp:129 widgets/Osd.cpp:558
+#: context/applets/currenttrack/CurrentTrack.cpp:91 widgets/Osd.cpp:558
 msgid "No track playing"
 msgstr "មិន​កំពុង​ចាក់​បទ​អ្វី​ទាំងអស់​​"
 
@@ -443,44 +443,50 @@ msgstr "បន្ថែម​អាប់ភ្លេត..."
 msgid "Lyrics data could not be parsed"
 msgstr "មិនអាច​ញែក​ទិន្នន័យ​អត្ថបទ​ចម្រៀង​បាន​ទេ"
 
-#. i18n: file: dialogs/TagDialogBase.ui:502
-#. i18n: ectx: property (text), widget (QLabel, scoreLabel)
-#: context/applets/currenttrack/CurrentTrack.cpp:86
-#: context/applets/currenttrack/CurrentTrack.cpp:90
-#: context/applets/currenttrack/CurrentTrack.cpp:400
-#: context/applets/currenttrack/CurrentTrack.cpp:404 dialogs/TagDialog.cpp:901
-#: rc.cpp:828
-msgid "Score:"
-msgstr "ពិន្ទុ ៖"
+#: context/applets/currenttrack/CurrentTrack.cpp:70
+#, fuzzy
+#| msgid "Modify"
+msgctxt "What artist is this track by"
+msgid "By"
+msgstr "កែប្រែ"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:87
-#: context/applets/currenttrack/CurrentTrack.cpp:91 dialogs/TagDialog.cpp:905
-msgid "Play Count:"
-msgstr "ចំនួន​ចាក់ ៖"
+#: context/applets/currenttrack/CurrentTrack.cpp:71
+#, fuzzy
+#| msgid "On"
+msgctxt "What album is this track on"
+msgid "On"
+msgstr "បើក"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:88
-#: context/applets/currenttrack/CurrentTrack.cpp:92
-#: context/applets/currenttrack/CurrentTrack.cpp:402
-#: context/applets/currenttrack/CurrentTrack.cpp:406 dialogs/TagDialog.cpp:910
-msgctxt "a single item (singular)"
-msgid "Last Played:"
-msgstr "ចាក់​ចុងក្រោយ ៖"
+#: context/applets/currenttrack/CurrentTrack.cpp:98
+#: playlist/PlaylistDefines.h:88
+msgid "Play count"
+msgstr "ចំនួន​ចាក់"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:139
+#: context/applets/currenttrack/CurrentTrack.cpp:99
+#: context/widgets/TrackWidget.cpp:38 Systray.cpp:147
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:253
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:697
+#: playlist/PlaylistDefines.h:91 playlist/PlaylistModel.cpp:702
+#: widgets/SmartPlaylistEditor.cpp:186
+msgid "Score"
+msgstr "ពិន្ទុ"
+
+#: context/applets/currenttrack/CurrentTrack.cpp:100 Systray.cpp:177
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
+#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
+msgid "Last Played"
+msgstr "ចាក់​ចុងក្រោយ"
+
+#: context/applets/currenttrack/CurrentTrack.cpp:106
 #: playlist/PlaylistDefines.h:85
 msgid "Last played"
 msgstr "បាន​ចាក់​ចុងក្រោយ"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:140
+#: context/applets/currenttrack/CurrentTrack.cpp:107
 #, fuzzy
 #| msgid "&Submit tracks"
 msgid "Favorite tracks"
 msgstr "ដាក់​ស្នើ​បទ"
-
-#: context/applets/currenttrack/CurrentTrack.cpp:401
-#: context/applets/currenttrack/CurrentTrack.cpp:405
-msgid "Playcount:"
-msgstr "ចំនួន​ចាក់ ៖"
 
 #: context/applets/albums/AlbumsView.cpp:109 Systray.cpp:219
 #: browsers/CollectionTreeView.cpp:589
@@ -492,7 +498,6 @@ msgid "&Append to Playlist"
 msgstr "បន្ថែម​ទៅ​បញ្ជីចាក់"
 
 #: context/applets/albums/AlbumsView.cpp:110
-#: browsers/CollectionTreeView.cpp:597
 #: browsers/filebrowser/MyDirOperator.cpp:274
 #: browsers/playlistbrowser/UserPlaylistModel.cpp:388
 #: browsers/playlistbrowser/PodcastModel.cpp:705
@@ -610,14 +615,6 @@ msgstr "លាក់​ម៉ឺនុយ"
 #| msgid "&Install Script"
 msgid "Install Applets"
 msgstr "ដំឡើង​ស្គ្រីប"
-
-#: context/widgets/TrackWidget.cpp:38 Systray.cpp:147
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:253
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:697
-#: playlist/PlaylistDefines.h:91 playlist/PlaylistModel.cpp:702
-#: widgets/SmartPlaylistEditor.cpp:186
-msgid "Score"
-msgstr "ពិន្ទុ"
 
 #: context/widgets/TrackWidget.cpp:117
 #, kde-format
@@ -1421,11 +1418,21 @@ msgstr "ទំហំ ៖"
 msgid "Format:"
 msgstr "ទ្រង់ទ្រាយ ៖"
 
+#. i18n: file: dialogs/TagDialogBase.ui:502
+#. i18n: ectx: property (text), widget (QLabel, scoreLabel)
+#: dialogs/TagDialog.cpp:901 rc.cpp:828
+msgid "Score:"
+msgstr "ពិន្ទុ ៖"
+
 #. i18n: file: dialogs/TagDialogBase.ui:531
 #. i18n: ectx: property (text), widget (QLabel, ratingLabel)
 #: dialogs/TagDialog.cpp:903 rc.cpp:831
 msgid "Rating:"
 msgstr "​អត្រា ៖"
+
+#: dialogs/TagDialog.cpp:905
+msgid "Play Count:"
+msgstr "ចំនួន​ចាក់ ៖"
 
 #: dialogs/TagDialog.cpp:908
 msgid "First Played:"
@@ -1435,6 +1442,11 @@ msgstr "ចាក់​ដំបូង ៖"
 msgctxt "When this track was first played"
 msgid "Never"
 msgstr "កុំ"
+
+#: dialogs/TagDialog.cpp:910
+msgctxt "a single item (singular)"
+msgid "Last Played:"
+msgstr "ចាក់​ចុងក្រោយ ៖"
 
 #: dialogs/TagDialog.cpp:911
 msgctxt "When this track was last played"
@@ -2040,11 +2052,6 @@ msgstr "អត្រា"
 msgid "Play Count"
 msgstr "ចំនួន​ចាក់"
 
-#: Systray.cpp:177 browsers/playlistbrowser/DynamicBiasWidgets.cpp:258
-#: browsers/playlistbrowser/DynamicBiasWidgets.cpp:702
-msgid "Last Played"
-msgstr "ចាក់​ចុងក្រោយ"
-
 #: Systray.cpp:182 browsers/playlistbrowser/DynamicBiasWidgets.cpp:254
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:698
 #: playlist/PlaylistDefines.h:86 playlist/PlaylistHeader.cpp:42
@@ -2505,6 +2512,13 @@ msgstr "ផ្លាស់ទី​ទៅ​សម្រាំង"
 #: browsers/CollectionTreeView.cpp:375 services/lastfm/LastFmTreeView.cpp:204
 msgid "More..."
 msgstr "ផ្សេងៗ​ទៀត..."
+
+#: browsers/CollectionTreeView.cpp:597
+#, fuzzy
+#| msgid "&Save Playlist"
+msgctxt "Replace the currently loaded tracks with these"
+msgid "&Overwrite Playlist"
+msgstr "រក្សាទុក​បញ្ជី​ចាក់​ជា"
 
 #: browsers/CollectionTreeView.cpp:623
 msgid "&Edit Track Details"
@@ -7337,10 +7351,6 @@ msgstr "បទ"
 msgid "Mood"
 msgstr "បែបផែន"
 
-#: playlist/PlaylistDefines.h:88
-msgid "Play count"
-msgstr "ចំនួន​ចាក់"
-
 #: playlist/PlaylistDefines.h:90
 msgid "Sample rate"
 msgstr "អត្រាគំរូ"
@@ -8316,6 +8326,9 @@ msgstr "រូបភាព​គម្រប"
 #: covermanager/CoverManager.cpp:873
 msgid "No Artist"
 msgstr "សិល្បករ"
+
+#~ msgid "Playcount:"
+#~ msgstr "ចំនួន​ចាក់ ៖"
 
 #, fuzzy
 #~| msgctxt "The amount of tracks being edited"
