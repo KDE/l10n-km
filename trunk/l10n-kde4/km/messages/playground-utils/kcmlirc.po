@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmlirc\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-24 11:05+0100\n"
+"POT-Creation-Date: 2009-03-31 10:57+0200\n"
 "PO-Revision-Date: 2008-12-19 10:47+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -40,23 +40,30 @@ msgctxt "Unknown parameter name in function"
 msgid "&lt;anonymous&gt;"
 msgstr "អនាមិក"
 
-#: editaction.cpp:169 editaction.cpp:191 kcmlirc.cpp:186
+#: editaction.cpp:74 editaction.cpp:235
+#, fuzzy
+msgid "Name"
+msgstr "ឈ្មោះ ៖"
+
+#. i18n: file: addactionbase.ui:186
+#. i18n: ectx: property (text), widget (QTreeWidget, theParameters)
+#. i18n: file: kcmlircbase.ui:316
+#. i18n: ectx: property (text), widget (QTreeWidget, theInformation)
+#: editaction.cpp:75 editaction.cpp:235 rc.cpp:48 rc.cpp:246
+#, fuzzy
+msgid "Value"
+msgstr "តម្លៃ"
+
+#: editaction.cpp:168 editaction.cpp:188 kcmlirc.cpp:186
 #, fuzzy
 msgid "[Exit current mode]"
 msgstr "[ចេញពី​របៀប​បច្ចុប្បន្ន]"
 
-#: editaction.cpp:487
-msgid "Profile argument options:"
+#: editaction.cpp:263 editaction.cpp:264 editaction.cpp:281 editaction.cpp:282
+#: editaction.cpp:305 editaction.cpp:306 editaction.cpp:320 editaction.cpp:321
+#: model.cpp:274
+msgid "A comma-separated list oft Strings"
 msgstr ""
-
-#: editaction.cpp:489
-msgid "DBus function arguments:"
-msgstr ""
-
-#: editaction.cpp:491
-#, fuzzy
-msgid "A&pplication / D-Bus options:"
-msgstr "ជម្រើស​កម្មវិធី/DCOP ៖"
 
 #: kcmlirc.cpp:80
 #, fuzzy
@@ -238,28 +245,37 @@ msgstr "ចំនួនប៊ូតុង"
 #. i18n: ectx: property (text), widget (QTreeWidget, theFunctions)
 #. i18n: file: addactionbase.ui:151
 #. i18n: ectx: property (text), widget (QTreeWidget, theProfileFunctions)
-#. i18n: file: editactionbase.ui:23
+#. i18n: file: editactionbase.ui:24
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #. i18n: file: kcmlircbase.ui:193
 #. i18n: ectx: property (text), widget (QTreeWidget, theActions)
-#: model.cpp:227 rc.cpp:21 rc.cpp:33 rc.cpp:105 rc.cpp:219
+#: model.cpp:234 rc.cpp:21 rc.cpp:33 rc.cpp:105 rc.cpp:219
 #, fuzzy
 msgid "Function"
 msgstr "អនុគមន៍"
 
 #. i18n: file: addactionbase.ui:117
 #. i18n: ectx: property (text), widget (QTreeWidget, theFunctions)
-#: model.cpp:229 rc.cpp:24
+#: model.cpp:236 rc.cpp:24
 #, fuzzy
 msgid "Parameter"
 msgstr "ប៉ារ៉ាម៉ែត្រ"
 
 #. i18n: file: addactionbase.ui:122
 #. i18n: ectx: property (text), widget (QTreeWidget, theFunctions)
-#: model.cpp:231 rc.cpp:27
+#: model.cpp:238 rc.cpp:27
 #, fuzzy
 msgid "Prototype"
 msgstr "គម្រូ​ដើម"
+
+#: model.cpp:304
+msgid "True"
+msgstr ""
+
+#: model.cpp:305
+#, fuzzy
+msgid "False"
+msgstr "តម្លៃ"
 
 #. i18n: file: addactionbase.ui:15
 #. i18n: ectx: property (windowTitle), widget (QWizard, AddActionBase)
@@ -316,7 +332,7 @@ msgstr "បង្កើត​អនុគមន៏​មួយ​នៅ​ក្
 
 #. i18n: file: addactionbase.ui:156
 #. i18n: ectx: property (text), widget (QTreeWidget, theProfileFunctions)
-#. i18n: file: editactionbase.ui:418
+#. i18n: file: editactionbase.ui:234
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #. i18n: file: kcmlircbase.ui:203
 #. i18n: ectx: property (text), widget (QTreeWidget, theActions)
@@ -345,15 +361,6 @@ msgstr "គ្រាន់តែ​ចាប់ផ្តើម​កម្មវ
 #, fuzzy
 msgid "Option Description"
 msgstr "ជម្រើស​ការពិពណ៌នា"
-
-#. i18n: file: addactionbase.ui:186
-#. i18n: ectx: property (text), widget (QTreeWidget, theParameters)
-#. i18n: file: kcmlircbase.ui:316
-#. i18n: ectx: property (text), widget (QTreeWidget, theInformation)
-#: rc.cpp:48 rc.cpp:246
-#, fuzzy
-msgid "Value"
-msgstr "តម្លៃ"
 
 #. i18n: file: addactionbase.ui:191
 #. i18n: ectx: property (text), widget (QTreeWidget, theParameters)
@@ -399,7 +406,7 @@ msgstr "អំពើ​នេះ​បណ្តាលឲ្យ​កម្មវ
 
 #. i18n: file: addactionbase.ui:432
 #. i18n: ectx: property (text), widget (QLabel, theIMTop)
-#. i18n: file: editactionbase.ui:542
+#. i18n: file: editactionbase.ui:358
 #. i18n: ectx: property (text), widget (QLabel, theIMTop)
 #: rc.cpp:69 rc.cpp:156
 #, fuzzy
@@ -408,7 +415,7 @@ msgstr "វត្ថុ​ច្រើន"
 
 #. i18n: file: addactionbase.ui:458
 #. i18n: ectx: property (text), widget (QLabel, theIMLabel)
-#. i18n: file: editactionbase.ui:568
+#. i18n: file: editactionbase.ui:384
 #. i18n: ectx: property (text), widget (QLabel, theIMLabel)
 #: rc.cpp:72 rc.cpp:159
 #, fuzzy
@@ -422,7 +429,7 @@ msgstr ""
 
 #. i18n: file: addactionbase.ui:474
 #. i18n: ectx: property (text), widget (QRadioButton, theDontSend)
-#. i18n: file: editactionbase.ui:584
+#. i18n: file: editactionbase.ui:400
 #. i18n: ectx: property (text), widget (QRadioButton, theDontSend)
 #: rc.cpp:75 rc.cpp:162
 #, fuzzy
@@ -438,7 +445,7 @@ msgstr "បញ្ជូន​អំពើ​ទៅកាន់​វត្ថុ
 
 #. i18n: file: addactionbase.ui:497
 #. i18n: ectx: property (text), widget (QRadioButton, theSendToBottom)
-#. i18n: file: editactionbase.ui:607
+#. i18n: file: editactionbase.ui:423
 #. i18n: ectx: property (text), widget (QRadioButton, theSendToBottom)
 #: rc.cpp:81 rc.cpp:168
 #, fuzzy
@@ -475,7 +482,7 @@ msgstr "<b>ជម្រើស</b>"
 
 #. i18n: file: addactionbase.ui:594
 #. i18n: ectx: property (text), widget (QCheckBox, theDoBefore)
-#. i18n: file: editactionbase.ui:497
+#. i18n: file: editactionbase.ui:313
 #. i18n: ectx: property (text), widget (QCheckBox, theDoBefore)
 #: rc.cpp:96 rc.cpp:150
 #, fuzzy
@@ -484,119 +491,119 @@ msgstr "ប្រតិបត្តិ​រាល់​អំពើផ្សេ
 
 #. i18n: file: addactionbase.ui:604
 #. i18n: ectx: property (text), widget (QCheckBox, theDoAfter)
-#. i18n: file: editactionbase.ui:510
+#. i18n: file: editactionbase.ui:326
 #. i18n: ectx: property (text), widget (QCheckBox, theDoAfter)
 #: rc.cpp:99 rc.cpp:153
 #, fuzzy
 msgid "Exec&ute all actions after mode change (in new mode)"
 msgstr "ប្រតិបត្តិ​រាល់​អំពើ​ទាំងអស់ ក្រោយ​ពេល​ប្តូរ​របៀប(ក្នុង​របៀប​ថ្មី)"
 
-#. i18n: file: editactionbase.ui:13
+#. i18n: file: editactionbase.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, EditActionBase)
 #: rc.cpp:102
 #, fuzzy
 msgid "Edit Action"
 msgstr "កែសម្រួល​អំពើ"
 
-#. i18n: file: editactionbase.ui:29
+#. i18n: file: editactionbase.ui:30
 #. i18n: ectx: property (text), widget (QRadioButton, theUseProfile)
 #: rc.cpp:108
 #, fuzzy
 msgid "&Use application:"
 msgstr "ប្រើ​កម្មវិធី ៖"
 
-#. i18n: file: editactionbase.ui:48
+#. i18n: file: editactionbase.ui:49
 #. i18n: ectx: property (text), widget (QLabel, theUseProfileAppLabel)
 #: rc.cpp:111
 #, fuzzy
 msgid "&Application:"
 msgstr "កម្មវិធី ៖"
 
-#. i18n: file: editactionbase.ui:77
+#. i18n: file: editactionbase.ui:78
 #. i18n: ectx: property (text), widget (QRadioButton, thePerformFunction)
 #: rc.cpp:114
 #, fuzzy
 msgid "&Perform function:"
 msgstr "បង្កើត​អនុគមន៏ ៖"
 
-#. i18n: file: editactionbase.ui:97
+#. i18n: file: editactionbase.ui:98
 #. i18n: ectx: property (text), widget (QRadioButton, theJustStart)
 #: rc.cpp:117
 #, fuzzy
 msgid "Just start application"
 msgstr "គ្រាន់តែ​ចាប់ផ្តើម​កម្មវិធីប៉ុណ្ណោះ"
 
-#. i18n: file: editactionbase.ui:107
+#. i18n: file: editactionbase.ui:108
 #. i18n: ectx: property (text), widget (QRadioButton, theUseDBus)
 #: rc.cpp:120
 #, fuzzy
 msgid "Use &D-Bus:"
 msgstr "ប្រើ​ DCOP ៖"
 
-#. i18n: file: editactionbase.ui:126
+#. i18n: file: editactionbase.ui:127
 #. i18n: ectx: property (text), widget (QLabel, theDBusApplicationsLabel)
 #: rc.cpp:123
 #, fuzzy
 msgid "App&lication:"
 msgstr "កម្មវិធី​ ៖"
 
-#. i18n: file: editactionbase.ui:155
+#. i18n: file: editactionbase.ui:156
 #. i18n: ectx: property (text), widget (QLabel, theDBusObjectsLabel)
 #: rc.cpp:126
 #, fuzzy
 msgid "O&bject:"
 msgstr "វត្ថុ ៖"
 
-#. i18n: file: editactionbase.ui:178
+#. i18n: file: editactionbase.ui:179
 #. i18n: ectx: property (text), widget (QLabel, theDBusFunctionsLabel)
 #: rc.cpp:129
 #, fuzzy
 msgid "Fu&nction:"
 msgstr "អនុគមន៏ ៖"
 
-#. i18n: file: editactionbase.ui:395
+#. i18n: file: editactionbase.ui:211
 #. i18n: ectx: property (text), widget (QRadioButton, theChangeMode)
 #: rc.cpp:132
 #, fuzzy
 msgid "Change &mode to:"
 msgstr "ប្តូរ​របៀប​ទៅជា ៖"
 
-#. i18n: file: editactionbase.ui:424
+#. i18n: file: editactionbase.ui:240
 #. i18n: ectx: property (text), widget (QLabel, optionsDBusAppLabel)
 #: rc.cpp:138
 #, fuzzy
 msgid "<b>D-Bus/Application Action Options</b>"
 msgstr "<b>DCOP/ជម្រើស​អំពើ​កម្មវិធី</b>"
 
-#. i18n: file: editactionbase.ui:444
+#. i18n: file: editactionbase.ui:260
 #. i18n: ectx: property (text), widget (QCheckBox, theRepeat)
 #: rc.cpp:141
 #, fuzzy
 msgid "&Action repeats if button is held down"
 msgstr "អំពើ​ធ្វើ​ម្តងទៀត​ប្រសិនបើ​ប៊ូតុងត្រូវ​បាន​ហាត់ធ្វើការ"
 
-#. i18n: file: editactionbase.ui:451
+#. i18n: file: editactionbase.ui:267
 #. i18n: ectx: property (text), widget (QCheckBox, theAutoStart)
 #: rc.cpp:144
 #, fuzzy
 msgid "&Start program/service if not already running"
 msgstr "ចាប់ផ្តើម​កម្មវិធី/សេវា ប្រសិនបើមិនទាន់​រត់​រួចរាល់"
 
-#. i18n: file: editactionbase.ui:474
+#. i18n: file: editactionbase.ui:290
 #. i18n: ectx: property (text), widget (QLabel, theMCOLabel)
 #: rc.cpp:147
 #, fuzzy
 msgid "<b>Mode Change Options</b>"
 msgstr "<b>ជម្រើស​ផ្លាស់ប្តូរ​របៀប</b>"
 
-#. i18n: file: editactionbase.ui:597
+#. i18n: file: editactionbase.ui:413
 #. i18n: ectx: property (text), widget (QRadioButton, theSendToTop)
 #: rc.cpp:165
 #, fuzzy
 msgid "Send the action to the instance hi&ghest in window stacking order"
 msgstr "បញ្ជូន​អំពើទៅកាន់​វត្ថុ​ខ្ពស់បំផុត​ក្នុង​លំដាប់​ជុង​បង្អួច"
 
-#. i18n: file: editactionbase.ui:617
+#. i18n: file: editactionbase.ui:433
 #. i18n: ectx: property (text), widget (QRadioButton, theSendToAll)
 #: rc.cpp:171
 #, fuzzy
@@ -811,6 +818,10 @@ msgstr "ខឹម សុខែម, ​អេង វណ្ណៈ, អោក ព�
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
+
+#, fuzzy
+#~ msgid "A&pplication / D-Bus options:"
+#~ msgstr "ជម្រើស​កម្មវិធី/DCOP ៖"
 
 #, fuzzy
 #~ msgid "&Help"
