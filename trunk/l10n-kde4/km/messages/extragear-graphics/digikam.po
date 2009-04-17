@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-16 11:24+0200\n"
+"POT-Creation-Date: 2009-04-17 11:10+0200\n"
 "PO-Revision-Date: 2008-12-19 09:00+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -826,6 +826,8 @@ msgstr "គ្មាន​ទីតាំង​ភូមិសាស្ដ្រ
 #: digikam/albumfolderview.cpp:1104 digikam/albumfolderview.cpp:1218
 #: digikam/tagfolderview.cpp:854 digikam/albumiconview.cpp:1306
 #: digikam/albumiconview.cpp:1335 digikam/tagfilterview.cpp:570
+#: digikam/albumdragdrop.cpp:75 digikam/albumdragdrop.cpp:170
+#: digikam/albumdragdrop.cpp:271
 msgid "&Move Here"
 msgstr "ផ្លាស់ទី​នៅ​ទី​នេះ"
 
@@ -838,7 +840,9 @@ msgstr "ផ្លាស់ទី​នៅ​ទី​នេះ"
 #: digikam/tagfolderview.cpp:961 digikam/albumiconview.cpp:1309
 #: digikam/albumiconview.cpp:1338 digikam/albumiconview.cpp:1498
 #: digikam/tagfilterview.cpp:572 digikam/tagfilterview.cpp:635
-#: utilities/cameragui/cameraiconview.cpp:808
+#: digikam/albumdragdrop.cpp:77 digikam/albumdragdrop.cpp:139
+#: digikam/albumdragdrop.cpp:176 digikam/albumdragdrop.cpp:233
+#: digikam/albumdragdrop.cpp:274 utilities/cameragui/cameraiconview.cpp:808
 msgid "C&ancel"
 msgstr "បោះបង់"
 
@@ -977,12 +981,12 @@ msgid "ICC profile"
 msgstr "ទម្រង់ ICC"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:631
-#: imageplugins/coreplugin/imageplugin_core.cpp:124
+#: imageplugins/coreplugin/imageplugin_core.cpp:164
 msgid "16 bits"
 msgstr "១៦ ប៊ីត"
 
 #: libs/imageproperties/imagepropertiescolorstab.cpp:631
-#: imageplugins/coreplugin/imageplugin_core.cpp:119
+#: imageplugins/coreplugin/imageplugin_core.cpp:159
 msgid "8 bits"
 msgstr "៨ ប៊ីត"
 
@@ -1992,6 +1996,9 @@ msgstr "បញ្ចេញ​ពន្លឺ​ជាមួយ​នឹង​រ
 #: digikam/albumfolderview.cpp:1103 digikam/albumfolderview.cpp:1163
 #: digikam/albumfolderview.cpp:1217 digikam/albummanager.cpp:716
 #: digikam/albumiconview.cpp:1492 digikam/album.cpp:354
+#: digikam/albumdragdrop.cpp:74 digikam/albumdragdrop.cpp:134
+#: digikam/albumdragdrop.cpp:169 digikam/albumdragdrop.cpp:227
+#: digikam/albumdragdrop.cpp:270
 #: utilities/kipiiface/kipiimagecollection.cpp:272
 #: utilities/kipiiface/kipiimagecollectionselector.cpp:140
 #, fuzzy
@@ -2007,7 +2014,7 @@ msgstr "អាល់ប៊ុម​របស់​ខ្ញុំ"
 msgid "My Tags"
 msgstr "​ស្លាក​របស់​ខ្ញុំ"
 
-#: libs/models/abstractalbummodel.cpp:286 digikam/contextmenuhelper.cpp:334
+#: libs/models/abstractalbummodel.cpp:310 digikam/contextmenuhelper.cpp:334
 #: utilities/searchwindow/searchfields.cpp:83
 #: utilities/searchwindow/searchfields.cpp:90
 #: utilities/searchwindow/searchfields.cpp:97
@@ -3064,7 +3071,8 @@ msgstr ""
 "វា ។ តើ​អ្នក​ចង់​ព្យាយាម​ម្តងទៀត​ទេ ?"
 
 #: digikam/contextmenuhelper.cpp:162 digikam/albumfolderview.cpp:1071
-#: digikam/albumfolderview.cpp:1108
+#: digikam/albumfolderview.cpp:1108 digikam/albumdragdrop.cpp:137
+#: digikam/albumdragdrop.cpp:174
 #, fuzzy
 msgid "Set as Album Thumbnail"
 msgstr "កំណត់ជា​រូបភាព​តូចៗ​របស់​អាល់ប៊ុម"
@@ -3602,16 +3610,19 @@ msgstr "បញ្ចូល​ឈ្មោះ​អាល់ប៊ុម​ថ្
 
 #: digikam/albumfolderview.cpp:1105 digikam/albumfolderview.cpp:1219
 #: digikam/albumiconview.cpp:1307 digikam/albumiconview.cpp:1336
+#: digikam/albumdragdrop.cpp:171 digikam/albumdragdrop.cpp:272
 #, fuzzy
 msgid "&Copy Here"
 msgstr "ចម្លង​នៅទី​នេះ"
 
 #: digikam/albumfolderview.cpp:1165 digikam/albumiconview.cpp:1494
+#: digikam/albumdragdrop.cpp:229
 #, fuzzy
 msgid "Download From Camera"
 msgstr "ទាញ​យក​ពី​ម៉ាស៊ីន​ថត"
 
 #: digikam/albumfolderview.cpp:1167 digikam/albumiconview.cpp:1496
+#: digikam/albumdragdrop.cpp:231
 #, fuzzy
 msgid "Download && Delete From Camera"
 msgstr "ទាញ​យក និង​លុប​ពី​ម៉ាស៊ីន​ថត"
@@ -6841,7 +6852,7 @@ msgid "Set here the gamma re-adjustment of the target image."
 msgstr "<p>កំណត់​ការ​លៃ​តម្រូវ​ហ្គាម៉ា​ឡើងវិញ​របស់​រូបភាព​គោលដៅ នៅ​ទីនេះ ។"
 
 #: imageplugins/lenscorrection/imageplugin_lenscorrection.cpp:60
-#: imageplugins/coreplugin/imageplugin_core.cpp:106
+#: imageplugins/coreplugin/imageplugin_core.cpp:146
 #, fuzzy
 msgid "Auto-Correction..."
 msgstr "កែខៃ​ស្វ័យប្រវត្តិ..."
@@ -7305,7 +7316,7 @@ msgid "Film Grain"
 msgstr "គ្រាប់ៗ​ហ្វីល"
 
 #: imageplugins/filmgrain/filmgraintool.cpp:81
-#: imageplugins/infrared/infraredtool.cpp:84
+#: imageplugins/infrared/infraredtool.cpp:83
 msgid "Sensitivity (ISO):"
 msgstr ""
 
@@ -8923,11 +8934,11 @@ msgid "This value controls the smoothing effect of the brush under the canvas."
 msgstr "<p>តម្លៃ​នេះ​គ្រប់គ្រង​បែប​ផែន​​រលោង​របស់​ច្រាស​​ក្រោម​ផ្ទាំង​ក្រណាត់ ។"
 
 #: imageplugins/infrared/infraredtool.cpp:72
-#: imageplugins/infrared/infraredtool.cpp:234
+#: imageplugins/infrared/infraredtool.cpp:237
 msgid "Infrared"
 msgstr "អ៊ីនហ្វ្រារ៉េដ"
 
-#: imageplugins/infrared/infraredtool.cpp:98
+#: imageplugins/infrared/infraredtool.cpp:97
 msgid ""
 "<p>Set here the ISO-sensitivity of the simulated infrared film. Increasing "
 "this value will increase the proportion of green color in the mix. It will "
@@ -8938,11 +8949,11 @@ msgid ""
 "creates a more dramatic photographic style.</p>"
 msgstr ""
 
-#: imageplugins/infrared/infraredtool.cpp:113
+#: imageplugins/infrared/infraredtool.cpp:112
 msgid "Add film grain"
 msgstr "បន្ថែម​គ្រាប់​ហ្វីល"
 
-#: imageplugins/infrared/infraredtool.cpp:115
+#: imageplugins/infrared/infraredtool.cpp:114
 msgid ""
 "This option adds infrared film grain to the image depending on ISO-"
 "sensitivity."
@@ -9230,19 +9241,19 @@ msgstr ""
 msgid "Cannot save settings to the Photograph Resizing text file."
 msgstr ""
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:69
+#: imageplugins/coreplugin/imageplugin_core.cpp:109
 msgid "Blur..."
 msgstr "ធ្វើ​ឲ្យ​ព្រិល..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:74
+#: imageplugins/coreplugin/imageplugin_core.cpp:114
 msgid "Sharpen..."
 msgstr "ធ្វើ​ឲ្យ​ច្បាស់..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:79
+#: imageplugins/coreplugin/imageplugin_core.cpp:119
 msgid "Red Eye..."
 msgstr "ភ្នែក​ក្រហម..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:80
+#: imageplugins/coreplugin/imageplugin_core.cpp:120
 msgid ""
 "This filter can be used to correct red eyes in a photo. Select a region "
 "including the eyes to use this option."
@@ -9250,59 +9261,59 @@ msgstr ""
 "អ្នក​អាច​ប្រើ​តម្រង​នេះ ដើម្បី​កែខៃ​ភ្នែក​ពណ៌​ក្រហម​​នៅក្នុង​រូបថត ។ ជ្រើស​តំបន់​មួយ​​ដោយ​​រួម​ទាំង​ភ្នែក ដើម្បី​ប្រើ​"
 "ជម្រើស​នេះ ។"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:86
+#: imageplugins/coreplugin/imageplugin_core.cpp:126
 msgid "Brightness/Contrast/Gamma..."
 msgstr "ពន្លឺ/កម្រិត​ពណ៌/ហ្គាម៉ា..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:92
+#: imageplugins/coreplugin/imageplugin_core.cpp:132
 msgid "Hue/Saturation/Lightness..."
 msgstr "ពណ៌​លាំៗ/តិត្ថិភាព/ពន្លឺ..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:99
+#: imageplugins/coreplugin/imageplugin_core.cpp:139
 msgid "Color Balance..."
 msgstr "តុល្យភាព​ពណ៌..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:113
-#: imageplugins/coreplugin/imageplugin_core.cpp:202
+#: imageplugins/coreplugin/imageplugin_core.cpp:153
+#: imageplugins/coreplugin/imageplugin_core.cpp:244
 msgid "Invert"
 msgstr "បញ្ច្រាស"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:129
+#: imageplugins/coreplugin/imageplugin_core.cpp:169
 msgid "Color Management..."
 msgstr "ការ​គ្រប់គ្រង​ពណ៌..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:137
+#: imageplugins/coreplugin/imageplugin_core.cpp:177
 msgid "Black && White..."
 msgstr "ខ្មៅ && ស..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:145
+#: imageplugins/coreplugin/imageplugin_core.cpp:185
 msgid "Aspect Ratio Crop..."
 msgstr "ច្រឹប​តាម​សមាមាត្រ..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:151
+#: imageplugins/coreplugin/imageplugin_core.cpp:191
 #, fuzzy
 msgid "&Resize..."
 msgstr "ប្តូរ​ទំហំ..."
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:214
+#: imageplugins/coreplugin/imageplugin_core.cpp:256
 msgid "This image is already using a depth of 8 bits / color / pixel."
 msgstr ""
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:221
+#: imageplugins/coreplugin/imageplugin_core.cpp:263
 msgid ""
 "Performing this operation will reduce image color quality. Do you want to "
 "continue?"
 msgstr "ការ​ដំណើ​ការ​ប្រតិបត្តិការ​នេះ​នឹង​កាត់​បន្ថយ​គុណភាព​ពណ៌​រូបភាព ។ តើ​អ្នក​ពិត​ជា​ចង់​បន្ត​ឬ?"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:239
+#: imageplugins/coreplugin/imageplugin_core.cpp:281
 msgid "This image is already using a depth of 16 bits / color / pixel."
 msgstr "រូបភាព​នេះ​កំពុង​ប្រើ ជម្រៅ ១៦ ប៊ីត / ពណ៌ / ភីកសែល រួច​ហើយ ។"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:280
+#: imageplugins/coreplugin/imageplugin_core.cpp:321
 msgid "Red-Eye Correction Tool"
 msgstr "ឧបករណ៍​កែខៃ​ភ្នែក​ក្រហម"
 
-#: imageplugins/coreplugin/imageplugin_core.cpp:281
+#: imageplugins/coreplugin/imageplugin_core.cpp:322
 #, fuzzy
 msgid ""
 "You need to select a region including the eyes to use the red-eye correction "
