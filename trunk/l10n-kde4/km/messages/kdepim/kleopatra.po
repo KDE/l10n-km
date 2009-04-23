@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-15 12:04+0200\n"
+"POT-Creation-Date: 2009-04-23 11:12+0200\n"
 "PO-Revision-Date: 2008-12-19 10:13+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -359,6 +359,84 @@ msgstr " ឯកសារ​នាំចេញ OpenPGP ៖"
 #: dialogs/exportcertificatesdialog.cpp:77
 msgid "S/MIME export file:"
 msgstr "ឯកសារ​នាំចេញ S/MIME ៖"
+
+#: dialogs/deletecertificatesdialog.cpp:94
+msgid "These are the certificates you have selected for deletion:"
+msgstr ""
+
+#: dialogs/deletecertificatesdialog.cpp:96
+msgid ""
+"These certificates will be deleted even though you did <emphasis>not</"
+"emphasis><nl> explicitly select them (<a href=\"whatsthis://\">Why?</a>):"
+msgstr ""
+
+#: dialogs/deletecertificatesdialog.cpp:117
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Why do you want to delete more certificates than I selected?</"
+"title><para>When you delete CA certificates (both root CAs and intermediate "
+"CAs), the certificates issued by them will also be deleted.</para><para>This "
+"can be nicely seen in <application>Kleopatra</application>'s hierarchical "
+"view mode: In this mode, if you delete a certificate that has children, "
+"those children will also be deleted. Think of CA certificates as folders "
+"containing other certificates: When you delete the folder, you delete its "
+"contents, too.</para>"
+msgstr ""
+
+#: dialogs/deletecertificatesdialog.cpp:129
+#, fuzzy
+#| msgid "Delete"
+msgctxt "@action:button"
+msgid "Delete"
+msgstr "លុប"
+
+#: dialogs/deletecertificatesdialog.cpp:189
+#, fuzzy
+#| msgid ""
+#| "The certificate to be deleted is your own. It contains private key "
+#| "material, which is needed to decrypt past communication encrypted to the "
+#| "certificate, and can therefore not be deleted."
+#| msgid_plural ""
+#| "All of the certificates to be deleted are your own. They contain private "
+#| "key material, which is needed to decrypt past communication encrypted to "
+#| "the certificate, and can therefore not be deleted."
+msgid ""
+"The certificate to be deleted is your own. It contains private key material, "
+"which is needed to decrypt past communication encrypted to the certificate, "
+"and should therefore not be deleted."
+msgid_plural ""
+"All of the certificates to be deleted are your own. They contain private key "
+"material, which is needed to decrypt past communication encrypted to the "
+"certificate, and should therefore not be deleted."
+msgstr[0] ""
+"វិញ្ញាបនបត្រ​ទាំងអស់​ដែល​ត្រូវ​លុប គឺ​ជា​កម្មសិទ្ធិ​របស់​អ្នក ។ ពួកវា​មាន​សម្ភារៈ​សោ​ឯកជន ដែល​ត្រូវការ​ដើម្បី​"
+"ឌិគ្រីបទំនាក់ទំនង​ពី​មុន ដែលបាន​អ៊ិនគ្រីប​ទៅ​ជា​វិញ្ញាបនបត្រ ដូច្នេះ​ហើយ មិនអាច​លុបវា​បានទេ ។"
+
+#: dialogs/deletecertificatesdialog.cpp:203
+#, fuzzy
+#| msgid ""
+#| "The certificate to be deleted is your own. It contains private key "
+#| "material, which is needed to decrypt past communication encrypted to the "
+#| "certificate, and can therefore not be deleted."
+#| msgid_plural ""
+#| "All of the certificates to be deleted are your own. They contain private "
+#| "key material, which is needed to decrypt past communication encrypted to "
+#| "the certificate, and can therefore not be deleted."
+msgid ""
+"One of the certificates to be deleted is your own. It contains private key "
+"material, which is needed to decrypt past communication encrypted to the "
+"certificate, and should therefore not be deleted."
+msgid_plural ""
+"Some of the certificates to be deleted are your own. They contain private "
+"key material, which is needed to decrypt past communication encrypted to the "
+"certificate, and should therefore not be deleted."
+msgstr[0] ""
+"វិញ្ញាបនបត្រ​ទាំងអស់​ដែល​ត្រូវ​លុប គឺ​ជា​កម្មសិទ្ធិ​របស់​អ្នក ។ ពួកវា​មាន​សម្ភារៈ​សោ​ឯកជន ដែល​ត្រូវការ​ដើម្បី​"
+"ឌិគ្រីបទំនាក់ទំនង​ពី​មុន ដែលបាន​អ៊ិនគ្រីប​ទៅ​ជា​វិញ្ញាបនបត្រ ដូច្នេះ​ហើយ មិនអាច​លុបវា​បានទេ ។"
+
+#: dialogs/deletecertificatesdialog.cpp:218
+msgid "Secret Key Deletion"
+msgstr "ការ​លុប​សោ​សម្ងាត់"
 
 #: dialogs/certificateselectiondialog.cpp:110
 msgid "Please select one or more of the following certificates:"
@@ -2669,7 +2747,14 @@ msgstr ""
 "មាន​កំហុស​កើតលើង នៅ​ខណៈ​ព្យាយាម​បោះបង់​ឃ្លាំង​សម្ងាត់ CRL ចោល ។ លទ្ធផល​ពី GpgSM គឺ ៖\n"
 "%1"
 
-#: commands/deletecertificatescommand.cpp:140
+#: commands/deletecertificatescommand.cpp:98
+#, fuzzy
+#| msgid "Deleting CA Certificates"
+msgctxt "@title:window"
+msgid "Delete Certificates"
+msgstr "ការ​លុប​វិញ្ញាបនបត្រ CA"
+
+#: commands/deletecertificatescommand.cpp:163
 msgid ""
 "Neither the OpenPGP nor the CMS backends support certificate deletion.\n"
 "Check your installation."
@@ -2677,7 +2762,7 @@ msgstr ""
 "ទាំង​ផ្នែក​ខាងក្រោយ OpenPGP ឬ CMS គឺ​មិនគាំទ្រ​ការ​លុប​វិញ្ញាបនបត្រ​ទេ ។\n"
 "ពិនិត្យ​មើល​ការ​ដំឡើង​របស់​អ្នក ។"
 
-#: commands/deletecertificatescommand.cpp:144
+#: commands/deletecertificatescommand.cpp:167
 msgid ""
 "The OpenPGP backend does not support certificate deletion.\n"
 "Check your installation.\n"
@@ -2687,8 +2772,8 @@ msgstr ""
 "ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក ។\n"
 "មាន​តែ​វិញ្ញាបនបត្រ CMS ដែល​បាន​ជ្រើស​ទេ ដែល​នឹង​ត្រូវ​លុប ។"
 
-#: commands/deletecertificatescommand.cpp:151
-#: commands/deletecertificatescommand.cpp:155
+#: commands/deletecertificatescommand.cpp:174
+#: commands/deletecertificatescommand.cpp:178
 msgid ""
 "The OpenPGP backend does not support certificate deletion.\n"
 "Check your installation."
@@ -2696,7 +2781,7 @@ msgstr ""
 "ផ្នែក​ខាងក្រោយ OpenPGP មិន​គាំទ្រ​ការ​លុប​វិញ្ញាបនបត្រ​ទេ ។\n"
 "ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក ។"
 
-#: commands/deletecertificatescommand.cpp:161
+#: commands/deletecertificatescommand.cpp:184
 msgid ""
 "The CMS backend does not support certificate deletion.\n"
 "Check your installation.\n"
@@ -2706,8 +2791,8 @@ msgstr ""
 "ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក ។\n"
 "មាន​តែ​វិញ្ញាបនបត្រ OpenPGP ដែល​បាន​ជ្រើស​ទេ ដែល​នឹង​ត្រូវ​លុប ។"
 
-#: commands/deletecertificatescommand.cpp:177
-#: commands/deletecertificatescommand.cpp:190
+#: commands/deletecertificatescommand.cpp:200
+#: commands/deletecertificatescommand.cpp:213
 msgid ""
 "The CMS backend does not support certificate deletion.\n"
 "Check your installation."
@@ -2715,126 +2800,26 @@ msgstr ""
 "ផ្នែក​ខាងក្រោយ CMS មិន​គាំទ្រ​ការ​លុប​វិញ្ញាបនបត្រ​ទេ ។\n"
 "ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក ។"
 
-#: commands/deletecertificatescommand.cpp:219
-msgid ""
-"The certificate to be deleted is your own. It contains private key material, "
-"which is needed to decrypt past communication encrypted to the certificate, "
-"and can therefore not be deleted."
-msgid_plural ""
-"All of the certificates to be deleted are your own. They contain private key "
-"material, which is needed to decrypt past communication encrypted to the "
-"certificate, and can therefore not be deleted."
-msgstr[0] ""
-"វិញ្ញាបនបត្រ​ទាំងអស់​ដែល​ត្រូវ​លុប គឺ​ជា​កម្មសិទ្ធិ​របស់​អ្នក ។ ពួកវា​មាន​សម្ភារៈ​សោ​ឯកជន ដែល​ត្រូវការ​ដើម្បី​"
-"ឌិគ្រីបទំនាក់ទំនង​ពី​មុន ដែលបាន​អ៊ិនគ្រីប​ទៅ​ជា​វិញ្ញាបនបត្រ ដូច្នេះ​ហើយ មិនអាច​លុបវា​បានទេ ។"
-
-#: commands/deletecertificatescommand.cpp:233
-#: commands/deletecertificatescommand.cpp:277
-#: commands/deletecertificatescommand.cpp:316
-msgid "Secret Key Deletion"
-msgstr "ការ​លុប​សោ​សម្ងាត់"
-
-#: commands/deletecertificatescommand.cpp:255
-msgid ""
-"All of the certificates to be deleted are either your own, or are issuers of "
-"one of your own certificates. Your own certificates contain private key "
-"material, which is needed to decrypt past communication encrypted to the "
-"certificate. They can therefore not be deleted, and neither can their "
-"issuers."
-msgstr ""
-"វិញ្ញាបនបត្រ​ដែលត្រូវ​លុប​ទាំងអស់ គឺជា​របស់​អ្នក ឬ​ជា​អ្នក​ចេញ​ផ្សាយ​វិញ្ញាបនបត្រ​របស់អ្នក​ណាមួយ ។ វិញ្ញាបនបត្រ​"
-"របស់​អ្នក មាន​សម្ភារៈ​សោ​ឯកជន ដែលត្រូវការ​ដើម្បី​ឌិគ្រីប​ទំនាក់ទំនង​ពី​ពេលមុន​ ដែលបាន​អ៊ិនគ្រីប​ជា​"
-"វិញ្ញាបនបត្រ ។ ដូច្នេះហើយ ពួកវា​មិន​អាច​លុប​បានទេ ហើយព្រមទាំអ​អ្នក​ចេញផ្សាយ​របស់​វា​ផងដែរ ។"
-
-#: commands/deletecertificatescommand.cpp:262
-msgid ""
-"The certificate to be deleted is an issuer of one of your own certificates. "
-"Your own certificates contain private key material, which is needed to "
-"decrypt past communication encrypted to the certificate. They can therefore "
-"not be deleted, and neither can their issuers."
-msgid_plural ""
-"All of the certificates to be deleted are issuers of one of your own "
-"certificates. Your own certificates contain private key material, which is "
-"needed to decrypt past communication encrypted to the certificate. They can "
-"therefore not be deleted, and neither can their issuers."
-msgstr[0] ""
-"វិញ្ញាបនបត្រ​ដែលត្រូវ​លុប​ទាំងអស់​គឺ​ជា​អ្នកចេញផ្សាយ​វិញ្ញាបនបត្រ​ណាមួយ​របស់​អ្នក ។ វិញ្ញា​បនបត្រ​របស់​អ្នក មាន​"
-"សម្ភារៈ​សោ​ឯកជន ដែល​ត្រូវការ​វា​ដើម្បី​ឌិគ្រីប​ទំនាក់ទំនង​ពី​ពេលមុន ដែលបាន​អ៊ិនគ្រីប​ជា​វិញ្ញាបនបត្រ ។ ដូច្នេះ "
-"ពួកវា​មិន​អាច​លុបបាន​ទេ ព្រមទាំង​អ្នក​ចេញផ្សាយ​វា​ផងដែរ ។"
-
-#: commands/deletecertificatescommand.cpp:290
-msgid ""
-"Some of the certificates to be deleted are your own, or are issuers of one "
-"of your own certificates. Your own certificates contain private key "
-"material, which is needed to decrypt past communication encrypted to the "
-"certificate. They can therefore not be deleted, and neither can their "
-"issuers.\n"
-"If you choose to continue, your own, as well as any issuer certificates, "
-"will be skipped from deletion."
-msgstr ""
-"វិញ្ញាបនបត្រ​ដែលត្រូវ​លុប​មួយ​ចំនួន​ជា​របស់​អ្នក ។ វិញ្ញាបនបត្រ​របស់​អ្នក ​មាន​សម្ភារៈសោ​ឯក​ជន ដែល​ត្រូវការ​"
-"ដើម្បី​ឌិគ្រីប​ទំនាក់ទំនង​ពី​ពេលមុន ដែល​បាន​អ៊ិនគ្រីប​ជា​វិញ្ញាបនបត្រ ។ ដូច្នេះ​អ្នក​មិនអាច​លុប​វា​បាន​ទេ និង​ព្រម​"
-"ទាំង​អ្នក​ចេញ​ផ្សាយ​របស់វា​ផងដែរ ។\n"
-"ប្រសិន​បើ​អ្នក​ជ្រើស​​បន្ត វិញ្ញាបនបត្រ​របស់​អ្នក នឹង​អ្នក​ចេញផ្សាយ​វិញ្ញាបនបត្រ​ណាមួយ​របស់​អ្នក នឹង​ត្រូវបាន​រំលង​ពី​"
-"ការ​លុប ។"
-
-#: commands/deletecertificatescommand.cpp:300
-msgid ""
-"Some of the certificates to be deleted are your own. They contain private "
-"key material, which is needed to decrypt past communication encrypted to the "
-"certificate. They can therefore not be deleted.\n"
-"If you choose to continue, they will be skipped from deletion."
-msgstr ""
-"វិញ្ញាបនបត្រ​ដែលត្រូវ​លុប​មួយ​ចំនួន គឺ​ជា​របស់​អ្នក ។ ពួកវា​មាន​សម្ភារៈ​សោ​ឯកជន ដែល​ត្រូវការ​ដើម្បី​ឌិគ្រីប​"
-"ទំនាក់ទំនង​ពីពេល​មុន ដែលបាន​អ៊ិនគ្រីប​ជា​វិញ្ញាបនបត្រ ។ ដូច្នេះ​មិនអាច​លុប​ពួកវា​បានទេ ។\n"
-"ប្រសិន​បើ​អ្នក​ជ្រើស​បន្ត ពួកវា​នឹង​រំលង​ពី​ការ​លុប ។"
-
-#: commands/deletecertificatescommand.cpp:308
-msgid ""
-"Some of the certificates to be deleted are issuers of one of your own "
-"certificates. Your own certificates contain private key material, which is "
-"needed to decrypt past communication encrypted to the certificate. They can "
-"therefore not be deleted, and neither can their issuers.\n"
-"If you choose to continue, they will be skipped from deletion."
-msgstr ""
-"វិញ្ញាបនបត្រ​ដែល​ត្រូវ​លុប​មួយ​ចំនួន​គឺ​ជា​អ្នក​ប្រកាស​​វិញ្ញាបនបត្រ​ណាមួយ​របស់​អ្នក ។ វិញ្ញាបនបត្រ​របស់​អ្នក មាន​"
-"សម្ភារៈ​សោ​ឯកជន ដែល​ត្រូវ​ការ​ដើម្បី​ឌិគ្រីប​ទំនាក់ទំនងពី​ពេលមុន​ដែល​បាន​អ៊ិនគ្រីប​ជា​វិញ្ញាបនបត្  ។ ពួកវា​មិនអាច​"
-"លុប​បានទេ ព្រម​ទាំង​អ្នក​ប្រកាស​របស់​វា​ផងដែរ ។nIប្រសិន​បើ​អ្នក​ជ្រើស​ធ្វើ​បន្ត ពួកវា​នឹង​រំលង​ពី​ការ​លុប ។"
-
-#: commands/deletecertificatescommand.cpp:350
-msgid ""
-"Some or all of the selected certificates are issuers (CA certificates) for "
-"other, non-selected certificates.\n"
-"Deleting a CA certificate will also delete all certificates issued by it."
-msgstr ""
-"វិញ្ញាបនបត្រ​ដែល​បាន​ជ្រើស​ទាំងអស់ ឬ​មួយចំនួន​គឺ​ជា​អ្នក​ចេញផ្សាយ (វិញ្ញាបនបត្រ CA) សម្រាប់​វិញ្ញាបនបត្រ​"
-"ផ្សេងទៀត​ដែល​មិនបាន​ជ្រើស ។\n"
-"ការ​លុប​វិញ្ញាបនបត្រ CA ក៏នឹង​លុប​វិញ្ញាបនបត្រ​ដែល​បាន​ចេញផ្សាយ​ដោយ​វា​ទាំងអស់​ដែរ ។"
-
-#: commands/deletecertificatescommand.cpp:355
-msgid "Deleting CA Certificates"
-msgstr "ការ​លុប​វិញ្ញាបនបត្រ CA"
-
-#: commands/deletecertificatescommand.cpp:373
-#: commands/deletecertificatescommand.cpp:439
+#: commands/deletecertificatescommand.cpp:281
+#: commands/deletecertificatescommand.cpp:346
 msgid "Certificate Deletion Failed"
 msgstr "ការលុប​វិញ្ញាបនបត្រ​បានបរាជ័យ"
 
-#: commands/deletecertificatescommand.cpp:374
+#: commands/deletecertificatescommand.cpp:282
 msgid "Certificate Deletion Problem"
 msgstr "បញ្ហា​ក្នុង​ការ​លុប​វិញ្ញាបនបត្រ"
 
-#: commands/deletecertificatescommand.cpp:430
+#: commands/deletecertificatescommand.cpp:337
 #, kde-format
 msgid "OpenPGP backend: %1"
 msgstr "ផ្នែក​ខាងក្រោយ ៖ %1"
 
-#: commands/deletecertificatescommand.cpp:433
+#: commands/deletecertificatescommand.cpp:340
 #, kde-format
 msgid "CMS backend: %1"
 msgstr "ផ្នែក​ខាងក្រោយ CMS ៖ %1"
 
-#: commands/deletecertificatescommand.cpp:435
+#: commands/deletecertificatescommand.cpp:342
 #, kde-format
 msgid ""
 "<qt><p>An error occurred while trying to delete the certificate:</p><p><b>%"
@@ -6076,6 +6061,78 @@ msgstr "កំហុស​កម្មវិធី​គ្រប់គ្រង
 #: crlview.cpp:145
 msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr "ដំណើរការ GpgSM បាន​បញ្ចប់​មុន ដោយសារ​កំហុស​ដោយ​មិននឹក​ស្មាន ។"
+
+#~ msgid ""
+#~ "All of the certificates to be deleted are either your own, or are issuers "
+#~ "of one of your own certificates. Your own certificates contain private "
+#~ "key material, which is needed to decrypt past communication encrypted to "
+#~ "the certificate. They can therefore not be deleted, and neither can their "
+#~ "issuers."
+#~ msgstr ""
+#~ "វិញ្ញាបនបត្រ​ដែលត្រូវ​លុប​ទាំងអស់ គឺជា​របស់​អ្នក ឬ​ជា​អ្នក​ចេញ​ផ្សាយ​វិញ្ញាបនបត្រ​របស់អ្នក​ណាមួយ ។ "
+#~ "វិញ្ញាបនបត្រ​របស់​អ្នក មាន​សម្ភារៈ​សោ​ឯកជន ដែលត្រូវការ​ដើម្បី​ឌិគ្រីប​ទំនាក់ទំនង​ពី​ពេលមុន​ ដែលបាន​អ៊ិនគ្រីប​"
+#~ "ជា​វិញ្ញាបនបត្រ ។ ដូច្នេះហើយ ពួកវា​មិន​អាច​លុប​បានទេ ហើយព្រមទាំអ​អ្នក​ចេញផ្សាយ​របស់​វា​ផងដែរ ។"
+
+#~ msgid ""
+#~ "The certificate to be deleted is an issuer of one of your own "
+#~ "certificates. Your own certificates contain private key material, which "
+#~ "is needed to decrypt past communication encrypted to the certificate. "
+#~ "They can therefore not be deleted, and neither can their issuers."
+#~ msgid_plural ""
+#~ "All of the certificates to be deleted are issuers of one of your own "
+#~ "certificates. Your own certificates contain private key material, which "
+#~ "is needed to decrypt past communication encrypted to the certificate. "
+#~ "They can therefore not be deleted, and neither can their issuers."
+#~ msgstr[0] ""
+#~ "វិញ្ញាបនបត្រ​ដែលត្រូវ​លុប​ទាំងអស់​គឺ​ជា​អ្នកចេញផ្សាយ​វិញ្ញាបនបត្រ​ណាមួយ​របស់​អ្នក ។ វិញ្ញា​បនបត្រ​របស់​អ្នក "
+#~ "មាន​សម្ភារៈ​សោ​ឯកជន ដែល​ត្រូវការ​វា​ដើម្បី​ឌិគ្រីប​ទំនាក់ទំនង​ពី​ពេលមុន ដែលបាន​អ៊ិនគ្រីប​ជា​វិញ្ញាបនបត្រ ។ "
+#~ "ដូច្នេះ ពួកវា​មិន​អាច​លុបបាន​ទេ ព្រមទាំង​អ្នក​ចេញផ្សាយ​វា​ផងដែរ ។"
+
+#~ msgid ""
+#~ "Some of the certificates to be deleted are your own, or are issuers of "
+#~ "one of your own certificates. Your own certificates contain private key "
+#~ "material, which is needed to decrypt past communication encrypted to the "
+#~ "certificate. They can therefore not be deleted, and neither can their "
+#~ "issuers.\n"
+#~ "If you choose to continue, your own, as well as any issuer certificates, "
+#~ "will be skipped from deletion."
+#~ msgstr ""
+#~ "វិញ្ញាបនបត្រ​ដែលត្រូវ​លុប​មួយ​ចំនួន​ជា​របស់​អ្នក ។ វិញ្ញាបនបត្រ​របស់​អ្នក ​មាន​សម្ភារៈសោ​ឯក​ជន ដែល​ត្រូវការ​"
+#~ "ដើម្បី​ឌិគ្រីប​ទំនាក់ទំនង​ពី​ពេលមុន ដែល​បាន​អ៊ិនគ្រីប​ជា​វិញ្ញាបនបត្រ ។ ដូច្នេះ​អ្នក​មិនអាច​លុប​វា​បាន​ទេ និង​"
+#~ "ព្រម​ទាំង​អ្នក​ចេញ​ផ្សាយ​របស់វា​ផងដែរ ។\n"
+#~ "ប្រសិន​បើ​អ្នក​ជ្រើស​​បន្ត វិញ្ញាបនបត្រ​របស់​អ្នក នឹង​អ្នក​ចេញផ្សាយ​វិញ្ញាបនបត្រ​ណាមួយ​របស់​អ្នក នឹង​ត្រូវបាន​"
+#~ "រំលង​ពី​ការ​លុប ។"
+
+#~ msgid ""
+#~ "Some of the certificates to be deleted are your own. They contain private "
+#~ "key material, which is needed to decrypt past communication encrypted to "
+#~ "the certificate. They can therefore not be deleted.\n"
+#~ "If you choose to continue, they will be skipped from deletion."
+#~ msgstr ""
+#~ "វិញ្ញាបនបត្រ​ដែលត្រូវ​លុប​មួយ​ចំនួន គឺ​ជា​របស់​អ្នក ។ ពួកវា​មាន​សម្ភារៈ​សោ​ឯកជន ដែល​ត្រូវការ​ដើម្បី​ឌិគ្រីប​"
+#~ "ទំនាក់ទំនង​ពីពេល​មុន ដែលបាន​អ៊ិនគ្រីប​ជា​វិញ្ញាបនបត្រ ។ ដូច្នេះ​មិនអាច​លុប​ពួកវា​បានទេ ។\n"
+#~ "ប្រសិន​បើ​អ្នក​ជ្រើស​បន្ត ពួកវា​នឹង​រំលង​ពី​ការ​លុប ។"
+
+#~ msgid ""
+#~ "Some of the certificates to be deleted are issuers of one of your own "
+#~ "certificates. Your own certificates contain private key material, which "
+#~ "is needed to decrypt past communication encrypted to the certificate. "
+#~ "They can therefore not be deleted, and neither can their issuers.\n"
+#~ "If you choose to continue, they will be skipped from deletion."
+#~ msgstr ""
+#~ "វិញ្ញាបនបត្រ​ដែល​ត្រូវ​លុប​មួយ​ចំនួន​គឺ​ជា​អ្នក​ប្រកាស​​វិញ្ញាបនបត្រ​ណាមួយ​របស់​អ្នក ។ វិញ្ញាបនបត្រ​របស់​អ្នក មាន​"
+#~ "សម្ភារៈ​សោ​ឯកជន ដែល​ត្រូវ​ការ​ដើម្បី​ឌិគ្រីប​ទំនាក់ទំនងពី​ពេលមុន​ដែល​បាន​អ៊ិនគ្រីប​ជា​វិញ្ញាបនបត្  ។ ពួកវា​"
+#~ "មិនអាច​លុប​បានទេ ព្រម​ទាំង​អ្នក​ប្រកាស​របស់​វា​ផងដែរ ។nIប្រសិន​បើ​អ្នក​ជ្រើស​ធ្វើ​បន្ត ពួកវា​នឹង​រំលង​ពី​ការ​"
+#~ "លុប ។"
+
+#~ msgid ""
+#~ "Some or all of the selected certificates are issuers (CA certificates) "
+#~ "for other, non-selected certificates.\n"
+#~ "Deleting a CA certificate will also delete all certificates issued by it."
+#~ msgstr ""
+#~ "វិញ្ញាបនបត្រ​ដែល​បាន​ជ្រើស​ទាំងអស់ ឬ​មួយចំនួន​គឺ​ជា​អ្នក​ចេញផ្សាយ (វិញ្ញាបនបត្រ CA) សម្រាប់​វិញ្ញាបនបត្រ​"
+#~ "ផ្សេងទៀត​ដែល​មិនបាន​ជ្រើស ។\n"
+#~ "ការ​លុប​វិញ្ញាបនបត្រ CA ក៏នឹង​លុប​វិញ្ញាបនបត្រ​ដែល​បាន​ចេញផ្សាយ​ដោយ​វា​ទាំងអស់​ដែរ ។"
 
 #~ msgid "Importing certificate..."
 #~ msgstr "កំពុង​នាំចូល​វិញ្ញាបនបត្រ..."
