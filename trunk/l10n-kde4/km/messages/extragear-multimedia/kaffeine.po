@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaffeine\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-04-25 11:52+0200\n"
+"POT-Creation-Date: 2009-04-26 11:02+0200\n"
 "PO-Revision-Date: 2009-04-07 14:38+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -275,7 +275,7 @@ msgstr ""
 msgid "Skip 1min Forward"
 msgstr ""
 
-#: mediawidget.cpp:291 dvb/dvbepg.cpp:217
+#: mediawidget.cpp:291 dvb/dvbepg.cpp:217 playlist/playlistmodel.cpp:78
 #, fuzzy
 #| msgid "&File"
 msgid "Title"
@@ -318,7 +318,8 @@ msgstr ""
 
 #. i18n: file: dvb/dvbscandialog.ui:26
 #. i18n: ectx: property (text), widget (QPushButton, removeChannelButton)
-#: rc.cpp:11 dvb/dvbrecording.cpp:427 dvb/dvbrecording.cpp:440
+#: rc.cpp:11 dvb/dvbchannelui.cpp:382 dvb/dvbrecording.cpp:427
+#: dvb/dvbrecording.cpp:440
 msgid "Remove"
 msgstr ""
 
@@ -340,7 +341,7 @@ msgstr "ឆានែល"
 
 #. i18n: file: dvb/dvbscandialog.ui:53
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:20 dvb/dvbchannelui.cpp:449 dvb/dvbconfigdialog.cpp:481
+#: rc.cpp:20 dvb/dvbchannelui.cpp:449 dvb/dvbconfigdialog.cpp:496
 msgid "Source:"
 msgstr "ប្រភពដើម ៖"
 
@@ -440,21 +441,15 @@ msgstr ""
 msgid "Name"
 msgstr "ឈ្មោះ"
 
-#: dvb/dvbchannelui.cpp:208
+#: dvb/dvbchannelui.cpp:208 playlist/playlistmodel.cpp:76
 msgid "Number"
 msgstr "លេខ"
-
-#: dvb/dvbchannelui.cpp:382
-#, fuzzy
-#| msgid "Delete all"
-msgid "Delete"
-msgstr "លុប​ទាំងអស់"
 
 #: dvb/dvbchannelui.cpp:425
 msgid "Channel Settings"
 msgstr "កា​រកំណត់​ឆានែល"
 
-#: dvb/dvbchannelui.cpp:431 dvb/dvbconfigdialog.cpp:490
+#: dvb/dvbchannelui.cpp:431 dvb/dvbconfigdialog.cpp:505
 #: dvb/dvbrecording.cpp:518
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
@@ -617,156 +612,180 @@ msgstr "ឧបករណ៍ %1"
 msgid "Downloading scan data"
 msgstr ""
 
-#: dvb/dvbconfigdialog.cpp:308 dvb/dvbconfigdialog.cpp:319
+#: dvb/dvbconfigdialog.cpp:308 dvb/dvbconfigdialog.cpp:320
 #, fuzzy
 #| msgid "Scan file update failed."
 msgid "Scan data update failed."
 msgstr "បាន​បរាជ័យ​ក្នុងការ​វិភាគរក​ឯកសារ​ទាន់សម័យ ។"
 
 #: dvb/dvbconfigdialog.cpp:317
-msgid "Scan data successfully updated."
+msgid ""
+"Scan data successfully updated. Changes take\n"
+"effect after you have closed the configuration dialog."
 msgstr ""
 
-#: dvb/dvbconfigdialog.cpp:327
+#: dvb/dvbconfigdialog.cpp:328
 #, kde-format
 msgid "Name: %1"
 msgstr "ឈ្មោះ ៖ %1"
 
-#: dvb/dvbconfigdialog.cpp:336
+#: dvb/dvbconfigdialog.cpp:337
 msgid "device not connected"
 msgstr "ឧបករណ៍​មិនបានតភ្ជាប់"
 
-#: dvb/dvbconfigdialog.cpp:450
+#: dvb/dvbconfigdialog.cpp:452
 msgid "Cable"
 msgstr "ខ្សែ"
 
-#: dvb/dvbconfigdialog.cpp:452
+#: dvb/dvbconfigdialog.cpp:455
 msgid "DVB-C"
 msgstr "DVB-C"
 
-#: dvb/dvbconfigdialog.cpp:458
+#: dvb/dvbconfigdialog.cpp:461
 msgid "Terrestrial"
 msgstr "ដែនដី"
 
-#: dvb/dvbconfigdialog.cpp:460
+#: dvb/dvbconfigdialog.cpp:469
+#, fuzzy
+#| msgid "Stop scan"
+msgid "Autoscan"
+msgstr "បញ្ឈប់​កា​រវិភាគ​រក"
+
+#: dvb/dvbconfigdialog.cpp:470
+msgid "Autoscan with 167 kHz Offsets"
+msgstr ""
+
+#: dvb/dvbconfigdialog.cpp:471
+msgid "Autoscan Australia"
+msgstr ""
+
+#: dvb/dvbconfigdialog.cpp:472
+msgid "Autoscan Italy"
+msgstr ""
+
+#: dvb/dvbconfigdialog.cpp:473
+msgid "Autoscan Taiwan"
+msgstr ""
+
+#: dvb/dvbconfigdialog.cpp:474
 msgid "DVB-T"
 msgstr "DVB-T"
 
-#: dvb/dvbconfigdialog.cpp:463
+#: dvb/dvbconfigdialog.cpp:477
 msgid "Atsc"
 msgstr "Atsc"
 
-#: dvb/dvbconfigdialog.cpp:465
+#: dvb/dvbconfigdialog.cpp:480
 msgid "ATSC"
 msgstr "ATSC"
 
-#: dvb/dvbconfigdialog.cpp:472 dvb/dvbconfigdialog.cpp:555
+#: dvb/dvbconfigdialog.cpp:487 dvb/dvbconfigdialog.cpp:590
 msgid "Tuner timeout (ms):"
 msgstr "អស់ពេល (មិល្លីវិនាទី) ៖"
 
-#: dvb/dvbconfigdialog.cpp:484 dvb/dvbconfigdialog.cpp:591
+#: dvb/dvbconfigdialog.cpp:499 dvb/dvbconfigdialog.cpp:626
 #, fuzzy
 #| msgid "No source"
 msgid "No Source"
 msgstr "គ្មាន​ប្រភព"
 
-#: dvb/dvbconfigdialog.cpp:550
+#: dvb/dvbconfigdialog.cpp:585
 msgid "DVB-S"
 msgstr "DVB-S"
 
-#: dvb/dvbconfigdialog.cpp:563
+#: dvb/dvbconfigdialog.cpp:598
 msgid "Configuration:"
 msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ ៖"
 
-#: dvb/dvbconfigdialog.cpp:566
+#: dvb/dvbconfigdialog.cpp:601
 #, fuzzy
 #| msgid "DiSEqC switch"
 msgid "DiSEqC Switch"
 msgstr "ប្ដូរ DiSEqC"
 
-#: dvb/dvbconfigdialog.cpp:567
+#: dvb/dvbconfigdialog.cpp:602
 #, fuzzy
 #| msgid "USALS rotor"
 msgid "USALS Rotor"
 msgstr "USALS rotor"
 
-#: dvb/dvbconfigdialog.cpp:568
+#: dvb/dvbconfigdialog.cpp:603
 #, fuzzy
 #| msgid "Positions rotor"
 msgid "Positions Rotor"
 msgstr "ទីតាំង rotor"
 
-#: dvb/dvbconfigdialog.cpp:585
+#: dvb/dvbconfigdialog.cpp:620
 #, fuzzy, kde-format
 #| msgid "LNB %1 settings"
 msgid "LNB %1 Settings"
 msgstr "ការ​កំណត់ LNB %1"
 
-#: dvb/dvbconfigdialog.cpp:603 dvb/dvbconfigdialog.cpp:826
+#: dvb/dvbconfigdialog.cpp:638 dvb/dvbconfigdialog.cpp:861
 #, fuzzy
 #| msgid "LNB settings"
 msgid "LNB Settings"
 msgstr "ការ​កំណត់ LNB"
 
-#: dvb/dvbconfigdialog.cpp:618 dvb/dvbconfigdialog.cpp:630
+#: dvb/dvbconfigdialog.cpp:653 dvb/dvbconfigdialog.cpp:665
 #, fuzzy
 #| msgid "Add satellite"
 msgid "Add Satellite"
 msgstr "បន្ថែម​ផ្កាយរណប"
 
-#: dvb/dvbconfigdialog.cpp:638
+#: dvb/dvbconfigdialog.cpp:673
 msgid "Satellite"
 msgstr "ផ្កាយរណប"
 
-#: dvb/dvbconfigdialog.cpp:638
+#: dvb/dvbconfigdialog.cpp:673
 msgid "Position"
 msgstr "ទីតាំង"
 
-#: dvb/dvbconfigdialog.cpp:655
+#: dvb/dvbconfigdialog.cpp:690
 #, fuzzy
 #| msgid "Remove satellite"
 msgid "Remove Satellite"
 msgstr "យក​ផ្កាយរណប​ចេញ"
 
-#: dvb/dvbconfigdialog.cpp:835
+#: dvb/dvbconfigdialog.cpp:870
 msgid "Universal LNB"
 msgstr "LNB សកល"
 
-#: dvb/dvbconfigdialog.cpp:839
+#: dvb/dvbconfigdialog.cpp:874
 msgid "C-band LNB"
 msgstr "ក្រុម C LNB"
 
-#: dvb/dvbconfigdialog.cpp:843
+#: dvb/dvbconfigdialog.cpp:878
 #, fuzzy
 #| msgid "C-band multipoint LNB"
 msgid "C-band Multipoint LNB"
 msgstr "C-band multipoint LNB"
 
-#: dvb/dvbconfigdialog.cpp:847
+#: dvb/dvbconfigdialog.cpp:882
 msgid "Custom LNB"
 msgstr "ផ្ទាល់ខ្លួន"
 
-#: dvb/dvbconfigdialog.cpp:858
+#: dvb/dvbconfigdialog.cpp:893
 msgid "Switch frequency (MHz)"
 msgstr "ប្ដូរ​ប្រេកង់ (MHz)"
 
-#: dvb/dvbconfigdialog.cpp:931
+#: dvb/dvbconfigdialog.cpp:966
 msgid "Low band LOF (MHz)"
 msgstr "ក្រុម​ទាប LOF (MHz)"
 
-#: dvb/dvbconfigdialog.cpp:936
+#: dvb/dvbconfigdialog.cpp:971
 msgid "High band LOF (MHz)"
 msgstr "ក្រុម​ខ្ពស់ LOF (MHz)"
 
-#: dvb/dvbconfigdialog.cpp:942
+#: dvb/dvbconfigdialog.cpp:977
 msgid "Horizontal LOF (MHz)"
 msgstr "LOF ផ្ដេក (MHz)"
 
-#: dvb/dvbconfigdialog.cpp:947
+#: dvb/dvbconfigdialog.cpp:982
 msgid "Vertical LOF (MHz)"
 msgstr "LOF បញ្ឈរ (MHz)"
 
-#: dvb/dvbconfigdialog.cpp:953
+#: dvb/dvbconfigdialog.cpp:988
 msgid "LOF (MHz)"
 msgstr "LOF (MHz)"
 
@@ -784,17 +803,17 @@ msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ ៖"
 msgid "Program Guide"
 msgstr ""
 
-#: dvb/dvbepg.cpp:443
+#: dvb/dvbepg.cpp:445
 #, kde-format
 msgid "<font color=#008000 size=\"+1\">%1</font><br>"
 msgstr ""
 
-#: dvb/dvbepg.cpp:446
+#: dvb/dvbepg.cpp:448
 #, kde-format
 msgid "<font color=#808000>%1</font><br>"
 msgstr ""
 
-#: dvb/dvbepg.cpp:449
+#: dvb/dvbepg.cpp:454
 #, kde-format
 msgid "<font color=#800000>%1 - %2</font><br><br>"
 msgstr ""
@@ -862,7 +881,7 @@ msgstr "SNR"
 msgid "Scan data last updated<br>on %1"
 msgstr "វិភាគរក​អ្វីដែល​បានធ្វើ​ឲ្យ​ទាន់សម័យ​ចុងក្រោយ<br>នៅ​លើ %1"
 
-#: dvb/dvbscandialog.cpp:172
+#: dvb/dvbscandialog.cpp:172 dvb/dvbscandialog.cpp:237
 #, fuzzy
 #| msgid "Start scan"
 msgid "Start Scan"
@@ -874,16 +893,14 @@ msgstr "ចាប់ផ្ដើម"
 msgid "Current Transponder"
 msgstr "ឧបករណ៍​ទទួល​ទូរស័ព្ទ​បច្ចុប្បន្ន"
 
-#: dvb/dvbscandialog.cpp:237
-msgid "Start scan"
-msgstr "ចាប់ផ្ដើម"
-
-#: dvb/dvbscandialog.cpp:265 dvb/dvbtab.cpp:487
+#: dvb/dvbscandialog.cpp:272 dvb/dvbtab.cpp:487
 msgid "No suitable device found."
 msgstr "រក​មិន​ឃើញ​ឧបករណ៍​ដែល​សមរម្យ"
 
-#: dvb/dvbscandialog.cpp:270
-msgid "Stop scan"
+#: dvb/dvbscandialog.cpp:277
+#, fuzzy
+#| msgid "Stop scan"
+msgid "Stop Scan"
 msgstr "បញ្ឈប់​កា​រវិភាគ​រក"
 
 #: dvb/dvbtab.cpp:201
@@ -893,6 +910,14 @@ msgstr ""
 #: dvb/dvbtab.cpp:236
 msgid "Search:"
 msgstr "ស្វែងរក ៖"
+
+#, fuzzy
+#~| msgid "Delete all"
+#~ msgid "Delete"
+#~ msgstr "លុប​ទាំងអស់"
+
+#~ msgid "Start scan"
+#~ msgstr "ចាប់ផ្ដើម"
 
 #~ msgid "No source"
 #~ msgstr "គ្មាន​ប្រភព"
