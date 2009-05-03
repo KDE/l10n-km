@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_networkmanager\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-01 11:21+0200\n"
+"POT-Creation-Date: 2009-05-03 11:14+0200\n"
 "PO-Revision-Date: 2009-01-20 08:16+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -43,18 +43,18 @@ msgctxt "button in general settings extender"
 msgid "Manage Connections..."
 msgstr "គ្រប់គ្រង​ការ​តភ្ជាប់..."
 
-#: interfacegroup.cpp:376
+#: interfacegroup.cpp:385
 #, kde-format
 msgctxt "Notification for hardware added"
 msgid "Network interface %1 attached"
 msgstr "បាន​ភ្ជាប់​ចំណុច​ប្រទាក់បណ្ដាញ %1"
 
-#: interfacegroup.cpp:386
+#: interfacegroup.cpp:395
 msgctxt "Notification for hardware removed"
 msgid "Network interface removed"
 msgstr "បានយក​ចំណុច​ប្រទាក់បណ្ដាញចេញ"
 
-#: interfacegroup.cpp:411 wirelessinterfaceitem.cpp:117
+#: interfacegroup.cpp:420 wirelessinterfaceitem.cpp:117
 #, kde-format
 msgctxt "Notification text when activating a connection"
 msgid "Connecting %1"
@@ -403,28 +403,59 @@ msgctxt "Network cable of interface is not plugged in"
 msgid "Not plugged in"
 msgstr "មិនបានដោត"
 
-#: wirelessinterfaceitem.cpp:171
+#: wirelessconnectionitem.cpp:150
+#, fuzzy
+#| msgctxt "Label for connection list popup"
+#| msgid "Wired Networks"
+msgctxt "no encryption in current network"
+msgid "Unencrypted network"
+msgstr "បណ្ដាញ​មានខ្សែ"
+
+#: wirelessconnectionitem.cpp:154 wirelessinterfaceitem.cpp:176
+#: wirelessnetworkitem.cpp:159
+msgctxt "tooltip of the security icon in the connection list"
+msgid "Weakly encrypted network (WEP)"
+msgstr ""
+
+#: wirelessconnectionitem.cpp:158 wirelessinterfaceitem.cpp:179
+#: wirelessnetworkitem.cpp:163 wirelessnetworkitem.cpp:167
+msgctxt "tooltip of the security icon in the connection list"
+msgid "Encrypted network (WPA-PSK)"
+msgstr ""
+
+#: wirelessconnectionitem.cpp:162 wirelessinterfaceitem.cpp:183
+#: wirelessnetworkitem.cpp:170
+msgctxt "tooltip of the security icon in the connection list"
+msgid "Encrypted network (WPA-EAP)"
+msgstr ""
+
+#: wirelessinterfaceitem.cpp:172
 msgid "Not secured"
 msgstr "គ្មាន​សុវត្ថិភាព"
 
-#: wirelessinterfaceitem.cpp:175
-msgid "WEP Encryption"
-msgstr "ការ​អ៊ីនគ្រិប WEP"
-
-#: wirelessinterfaceitem.cpp:178
-msgid "WPA-PSK Encryption"
-msgstr "ការ​អ៊ិនគ្រីប WPA-PSK"
-
-#: wirelessinterfaceitem.cpp:182
-msgid "WPA-EAP Encryption"
-msgstr "កា​អ៊ិនគ្រីប WPA-EAP"
-
-#: wirelessinterfaceitem.cpp:194
+#: wirelessinterfaceitem.cpp:195
 #, fuzzy, kde-format
 #| msgctxt "wireless interface is connected"
 #| msgid "Connected"
 msgid "Connected to \"%1\""
 msgstr "បាន​តភ្ជាប់"
+
+#: wirelessnetworkitem.cpp:155
+#, fuzzy
+#| msgctxt "Label for connection list popup"
+#| msgid "Wired Networks"
+msgctxt "wireless network is not encrypted"
+msgid "Unencrypted network"
+msgstr "បណ្ដាញ​មានខ្សែ"
+
+#~ msgid "WEP Encryption"
+#~ msgstr "ការ​អ៊ីនគ្រិប WEP"
+
+#~ msgid "WPA-PSK Encryption"
+#~ msgstr "ការ​អ៊ិនគ្រីប WPA-PSK"
+
+#~ msgid "WPA-EAP Encryption"
+#~ msgstr "កា​អ៊ិនគ្រីប WPA-EAP"
 
 #, fuzzy
 #~| msgid "Manage Connections..."
@@ -1101,10 +1132,6 @@ msgstr "បាន​តភ្ជាប់"
 #~ msgctxt "Tooltip main title text"
 #~ msgid "Networks"
 #~ msgstr "បណ្ដាញ"
-
-#~ msgctxt "Label for connection list popup"
-#~ msgid "Wired Networks"
-#~ msgstr "បណ្ដាញ​មានខ្សែ"
 
 #~ msgctxt "Button text for showing the Manage Connections KCModule"
 #~ msgid "Manage Connections..."
