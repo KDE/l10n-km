@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-05-10 11:16+0200\n"
+"POT-Creation-Date: 2009-05-11 12:57+0200\n"
 "PO-Revision-Date: 2008-12-19 09:00+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -622,6 +622,7 @@ msgstr "កំពុង​អនុវត្ត​ការ​ផ្លាស់
 
 #: libs/imageproperties/imagedescedittab.cpp:538
 #: libs/imageproperties/imagedescedittab.cpp:669
+#: digikam/metadatamanager.cpp:379
 msgid "Writing metadata to files. Please wait..."
 msgstr "កំពុង​សរសេរ​ទិន្នន័យ​មេតា​ទៅ​ឯកសារ ។ សូម​រង់ចាំ..."
 
@@ -853,8 +854,9 @@ msgstr "កំណត់​ជា​រូបភាព​តូចៗ​របស
 msgid "Assign Tag '%1' to Items"
 msgstr "ផ្ដល់​ស្លាក '%1' ទៅ​ធាតុ"
 
-#: libs/imageproperties/talbumlistview.cpp:406 digikam/tagfolderview.cpp:943
-#: digikam/albumiconview.cpp:1498 digikam/tagfilterview.cpp:663
+#: libs/imageproperties/talbumlistview.cpp:406 digikam/metadatamanager.cpp:250
+#: digikam/tagfolderview.cpp:943 digikam/albumiconview.cpp:1498
+#: digikam/tagfilterview.cpp:663
 #, fuzzy
 msgid "Assigning image tags. Please wait..."
 msgstr "កំពុង​ផ្តល់​ស្លាក​រូបភាព ។ សូម​រងចាំ..."
@@ -2025,7 +2027,7 @@ msgstr "អាល់ប៊ុម"
 #: libs/themeengine/themeengine.cpp:93 libs/themeengine/themeengine.cpp:94
 #: libs/themeengine/themeengine.cpp:190 libs/themeengine/themeengine.cpp:204
 #: digikam/digikamapp.cpp:2374
-#: utilities/imageeditor/editor/editorwindow.cpp:1874
+#: utilities/imageeditor/editor/editorwindow.cpp:1880
 #: utilities/queuemanager/queuemgrwindow.cpp:693
 #: utilities/lighttable/lighttablewindow.cpp:1587
 #: utilities/cameragui/cameraui.cpp:2103
@@ -3079,6 +3081,25 @@ msgid ""
 msgstr ""
 "ការរក​ម៉ាស៊ីនថត​ដោយស្វ័យប្រវត្តិ​បានបរាជ័យ​ហើយ ។ សូម​ប្រាកដ​ថា អ្នក​បាន​តភ្ជាប់​វា​ត្រឹមត្រូវ ហើយ​បាន​បើក​"
 "វា ។ តើ​អ្នក​ចង់​ព្យាយាម​ម្តងទៀត​ទេ ?"
+
+#: digikam/metadatamanager.cpp:256 digikam/albumiconview.cpp:1501
+#, fuzzy
+msgid "Removing image tags. Please wait..."
+msgstr "កំពុង​យក​ស្លាក​រូបភាព​ចេញ ។ សូម​រងចាំ..."
+
+#: digikam/metadatamanager.cpp:299 digikam/albumiconview.cpp:2181
+#, fuzzy
+msgid "Assigning image ratings. Please wait..."
+msgstr "កំពុង​ផ្តល់​ការ​វាយ​តម្លៃ​រូបភាព ។ សូម​រងចាំ..."
+
+#: digikam/metadatamanager.cpp:333
+#, fuzzy
+msgid "Updating orientation in database. Please wait..."
+msgstr "<b>ការ​ធ្វើ​ឲ្យ​មូលដ្ឋាន​ទិន្នន័យ​រូបភាពតូចៗទាន់​សម័យ​កំពុង​ដំណើរ​ការ ។ សូម​រង់ចាំ...</b>"
+
+#: digikam/metadatamanager.cpp:345 digikam/albumiconview.cpp:1754
+msgid "Revising Exif Orientation tags. Please wait..."
+msgstr ""
 
 #: digikam/contextmenuhelper.cpp:173 digikam/albumfolderview.cpp:1071
 #: digikam/albumfolderview.cpp:1108 digikam/albumdragdrop.cpp:140
@@ -4203,7 +4224,7 @@ msgstr "ត្រង​តាម​ប្រភេទ​ឯកសារ"
 msgid "Select the file types (mime types) that you want shown"
 msgstr "ជ្រើស​ប្រភេទ​ឯកសារ (ប្រភេទ mime) ដែល​អ្នក​ចង់​បង្ហាញ"
 
-#: digikam/albumiconview.cpp:572 digikam/digikamimageview.cpp:149
+#: digikam/albumiconview.cpp:572 digikam/digikamimageview.cpp:129
 #: utilities/cameragui/cameraui.cpp:353
 #, fuzzy
 msgctxt "View the selected image"
@@ -4221,7 +4242,6 @@ msgid "Enter new name (without extension):"
 msgstr "បញ្ចូល​ឈ្មោះ​ថ្មី (ដោយ​គ្មាន​ផ្នែក​បន្ថែម) ៖"
 
 #: digikam/albumiconview.cpp:1025 digikam/imageviewutilities.cpp:316
-#: digikam/digikamimageview.cpp:128
 #: utilities/imageeditor/editor/imagewindow.cpp:1355
 #: utilities/imageeditor/editor/imagewindow.cpp:1382
 #: utilities/imageeditor/editor/imagewindow.cpp:1413
@@ -4265,15 +4285,6 @@ msgstr "ផ្តល់​ស្លាក​ទៅ​ធាតុ​នេះ"
 msgid "Assign Tags to &All Items"
 msgstr "ផ្ដល់​ស្លាក​ទៅឲ្យ​ធាតុ​ទាំងអស់"
 
-#: digikam/albumiconview.cpp:1501
-#, fuzzy
-msgid "Removing image tags. Please wait..."
-msgstr "កំពុង​យក​ស្លាក​រូបភាព​ចេញ ។ សូម​រងចាំ..."
-
-#: digikam/albumiconview.cpp:1754
-msgid "Revising Exif Orientation tags. Please wait..."
-msgstr ""
-
 #: digikam/albumiconview.cpp:1783
 #, kde-format
 msgid "Failed to revise Exif orientation for file %1."
@@ -4282,11 +4293,6 @@ msgstr ""
 #: digikam/albumiconview.cpp:1788
 msgid "Failed to revise Exif orientation these files:"
 msgstr ""
-
-#: digikam/albumiconview.cpp:2181
-#, fuzzy
-msgid "Assigning image ratings. Please wait..."
-msgstr "កំពុង​ផ្តល់​ការ​វាយ​តម្លៃ​រូបភាព ។ សូម​រងចាំ..."
 
 #: digikam/albumiconview.cpp:2340 digikam/imageviewutilities.cpp:230
 #, fuzzy
@@ -13532,7 +13538,7 @@ msgstr "ការ​រក្សាទុក ៖ "
 
 #: utilities/imageeditor/editor/editorwindow.cpp:1345
 #: utilities/imageeditor/editor/editorwindow.cpp:1386
-#: utilities/imageeditor/editor/editorwindow.cpp:1597
+#: utilities/imageeditor/editor/editorwindow.cpp:1600
 #, fuzzy, kde-format
 msgid ""
 "Failed to save file\n"
@@ -13546,34 +13552,34 @@ msgstr ""
 "\"%2\" ។"
 
 #: utilities/imageeditor/editor/editorwindow.cpp:1464
-#: utilities/imageeditor/editor/editorwindow.cpp:1657
+#: utilities/imageeditor/editor/editorwindow.cpp:1660
 #, kde-format
 msgid "Could not open a temporary file in the folder \"%1\": %2 (%3)"
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1521
+#: utilities/imageeditor/editor/editorwindow.cpp:1524
 #, fuzzy
 msgid "New Image File Name"
 msgstr "ឈ្មោះ​ឯកសារ​រូបភាព​​ថ្មី"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1588
+#: utilities/imageeditor/editor/editorwindow.cpp:1591
 #, fuzzy, kde-format
 msgid "Target image file format \"%1\" unsupported."
 msgstr "មិនគាំទ្រ​ទ្រង់ទ្រាយ​ឯកសារ​រូបភាព​គោលដៅ \"%1\" ឡើយ ។"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1627
+#: utilities/imageeditor/editor/editorwindow.cpp:1630
 #, fuzzy, kde-format
 msgid ""
 "A file named \"%1\" already exists. Are you sure you want to overwrite it?"
 msgstr "មាន​ឯកសារឈ្មោះ \"%1\" រួច​ហើយ ។ តើ​អ្នក​ពិត​ជា​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1631
-#: utilities/imageeditor/editor/editorwindow.cpp:1691
+#: utilities/imageeditor/editor/editorwindow.cpp:1634
+#: utilities/imageeditor/editor/editorwindow.cpp:1697
 #, fuzzy
 msgid "Overwrite File?"
 msgstr "សរសេរ​ជាន់​លើ​ឯកសារឬ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1686
+#: utilities/imageeditor/editor/editorwindow.cpp:1692
 #, fuzzy, kde-format
 msgid ""
 "You do not have write permissions for the file named \"%1\". Are you sure "
@@ -13581,48 +13587,48 @@ msgid ""
 msgstr ""
 "អ្នក​គ្មាន​សិទ្ធិ​សរសេរ​សម្រាប់​ឯកសារ​ដែល​មាន​ឈ្មោះ \"%1\" ។ តើ​អ្នក​ប្រាកដ​ជា​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ ?"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1728
+#: utilities/imageeditor/editor/editorwindow.cpp:1734
 #, fuzzy
 msgid "Failed to overwrite original file"
 msgstr "ការ​សរសេរ​ជាន់លើ​ឯកសារ​ដើម​បានបរាជ័យ"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1729
+#: utilities/imageeditor/editor/editorwindow.cpp:1735
 #, fuzzy
 msgid "Error Saving File"
 msgstr "កំហុស​រក្សាទុក​ឯកសារ"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1775
+#: utilities/imageeditor/editor/editorwindow.cpp:1781
 #, fuzzy
 msgid "Color-Managed View is enabled."
 msgstr "បាន​បើក​ទិដ្ឋភាព​គ្រប់គ្រង​ពណ៌"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1777
+#: utilities/imageeditor/editor/editorwindow.cpp:1783
 #, fuzzy
 msgid "Color-Managed View is disabled."
 msgstr "បាន​បិទ​ទិដ្ឋភាព​គ្រប់គ្រង​ពណ៌"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1781
+#: utilities/imageeditor/editor/editorwindow.cpp:1787
 msgid ""
 "Color Management is not configured, so the Color-Managed View is not "
 "available."
 msgstr ""
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1803
+#: utilities/imageeditor/editor/editorwindow.cpp:1809
 #, fuzzy
 msgid "Under-Exposure indicator is enabled"
 msgstr "បាន​បើក​ ក្រោម​​​ឧបករណ៍​បង្ហាញ​ការ​ផ្សាយ​"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1804
+#: utilities/imageeditor/editor/editorwindow.cpp:1810
 #, fuzzy
 msgid "Under-Exposure indicator is disabled"
 msgstr "បាន​បិទ ក្រោម​​ឧបករណ៍​បង្ហាញ​ការ​ផ្សាយ​"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1824
+#: utilities/imageeditor/editor/editorwindow.cpp:1830
 #, fuzzy
 msgid "Over-Exposure indicator is enabled"
 msgstr "បាន​បើក លើ​ឧបករណ៍​បង្ហាញ​ការ​ផ្សាយ​"
 
-#: utilities/imageeditor/editor/editorwindow.cpp:1825
+#: utilities/imageeditor/editor/editorwindow.cpp:1831
 #, fuzzy
 msgid "Over-Exposure indicator is disabled"
 msgstr "បាន​បិទ លើ​ឧបករណ៍​បង្ហាញ​ការ​ផ្សាយ​"
