@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: libkdcraw\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
 "POT-Creation-Date: 2009-04-20 11:22+0200\n"
-"PO-Revision-Date: 2009-05-25 15:24+0700\n"
+"PO-Revision-Date: 2009-05-26 11:24+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
 "MIME-Version: 1.0\n"
@@ -116,6 +116,25 @@ msgid ""
 "interpolation. This method selects the direction of interpolation so as to "
 "maximize a homogeneity metric, thus typically minimizing color artifacts.<p>"
 msgstr ""
+"<p><b>Quality (interpolation)</b><p>Select here the demosaicing RAW images "
+"decoding interpolation method. A demosaicing algorithm is a digital image "
+"process used to interpolate a complete image from the partial raw data "
+"received from the color-filtered image sensor internal to many digital "
+"cameras in form of a matrix of colored pixels. Also known as CFA "
+"interpolation or color reconstruction, another common spelling is "
+"demosaicing. There are 4 methods to demosaicing RAW images:<p><b>Bilinear</"
+"b>: use high-speed but low-quality bilinear interpolation (default - for "
+"slow computer). In this method, the red value of a non-red pixel is computed "
+"as the average of the adjacent red pixels, and similar for blue and green."
+"<p><b>VNG</b>: use Variable Number of Gradients interpolation. This method "
+"computes gradients near the pixel of interest and uses the lower gradients "
+"(representing smoother and more similar parts of the image) to make an "
+"estimate.<p><b>PPG</b>: use Patterned Pixel Grouping interpolation. Pixel "
+"Grouping uses assumptions about natural scenery in making estimates. It has "
+"fewer color artifacts on natural images than the Variable Number of "
+"Gradients method.<p><b>AHD</b>: use Adaptive Homogeneity-Directed "
+"interpolation. This method selects the direction of interpolation so as to "
+"maximize a homogeneity metric, thus typically minimizing color artifacts.<p>"
 
 #: libkdcraw/dcrawsettingswidget.cpp:270
 msgid "Median:"
@@ -131,7 +150,7 @@ msgstr ""
 
 #: libkdcraw/dcrawsettingswidget.cpp:277
 msgid "Demosaicing"
-msgstr ""
+msgstr "ឌីម៉ូសាអ៊ិក"
 
 #: libkdcraw/dcrawsettingswidget.cpp:285
 msgid "Method"
@@ -162,6 +181,12 @@ msgid ""
 "balance averaging the entire image.<p><b>Manual</b>: Set a custom "
 "temperature and green level values."
 msgstr ""
+"<p><b>White Balance</b><p>Configure the raw white balance:<p><b>Default D65</"
+"b>: Use a standard daylight D65 white balance.<p><b>Camera</b>: Use the "
+"white balance specified by the camera. If not available, reverts to default "
+"neutral white balance.<p><b>Automatic</b>: Calculates an automatic white "
+"balance averaging the entire image.<p><b>Manual</b>: Set a custom "
+"temperature and green level values."
 
 #: libkdcraw/dcrawsettingswidget.cpp:305
 msgid "T(K):"
@@ -176,9 +201,8 @@ msgid "Green:"
 msgstr "បៃតង ៖"
 
 #: libkdcraw/dcrawsettingswidget.cpp:314
-msgid ""
-"<p>Set here the green component to set magenta color cast removal level."
-msgstr ""
+msgid "<p>Set here the green component to set magenta color cast removal level."
+msgstr "<p>នៅទីនេះ កំណត់​សមាសភាគ​ពណ៌​បៃតង​ ដើម្បី​កំណត់​ពណ៌​ស្វាយ​ចោល​ជា​ស្រមោល ។"
 
 #: libkdcraw/dcrawsettingswidget.cpp:317
 msgid "Highlights:"
@@ -233,7 +257,7 @@ msgstr "ពន្លឺ​ស្វ័យ​ប្រវត្តិ"
 msgid ""
 "<p>If disable, use a fixed white level and ignore the image histogram to "
 "adjust brightness."
-msgstr ""
+msgstr "<p>ប្រសិនបើ​បិទ ប្រើ​កម្រិត​ពណ៌​សថេរ ហើយ​មិនអើពើ​អ៊ិតូក្រាម​រូបភាព​ដើម្បី​លៃមត្រូវ​ពន្លឺ ។"
 
 #: libkdcraw/dcrawsettingswidget.cpp:347
 msgid "Brightness:"
@@ -306,8 +330,7 @@ msgid "Threshold:"
 msgstr "កម្រិត​ពន្លឺ​ ៖"
 
 #: libkdcraw/dcrawsettingswidget.cpp:431
-msgid ""
-"<p><b>Threshold</b><p>Set here the noise reduction threshold value to use."
+msgid "<p><b>Threshold</b><p>Set here the noise reduction threshold value to use."
 msgstr "<p><b>កម្រិត​ពន្លឺ</b><p>កំណត់​កម្រិត​ពន្លឺ​កាត់​បន្ថែម​ភាព​មិន​ច្បាស់​ត្រូវ​ប្រើ​នៅ​ទីនេះ ។"
 
 #: libkdcraw/dcrawsettingswidget.cpp:434
@@ -328,8 +351,7 @@ msgid "Red:"
 msgstr "ក្រហម ៖"
 
 #: libkdcraw/dcrawsettingswidget.cpp:444
-msgid ""
-"<p><b>Red multiplier</b><p>Set here the magnification factor of the red layer"
+msgid "<p><b>Red multiplier</b><p>Set here the magnification factor of the red layer"
 msgstr "<p><b>ពណ៌​ក្រហម​ទ្វេគុណ​</b><p>កំណត់​កត្តា​ពង្រីក​​ស្រទាប់​ពណ៌ក្រហម​នៅ​ទីនេះ"
 
 #: libkdcraw/dcrawsettingswidget.cpp:447
@@ -416,6 +438,18 @@ msgid ""
 "with photographic outputs in mind.<p><b>Custom</b>: use a custom output "
 "color space profile."
 msgstr ""
+"<p><b>Workspace</b><p>Select here the output color space used to decode RAW "
+"data.<p><b>Raw (linear)</b>: in this mode, no output color space is used "
+"during RAW decoding.<p><b>sRGB</b>: this is an RGB color space, created "
+"cooperatively by Hewlett-Packard and Microsoft. It is the best choice for "
+"images destined for the Web and portrait photography.<p><b>Adobe RGB</b>: "
+"this color space is an extended RGB color space, developed by Adobe. It is "
+"used for photography applications such as advertising and fine art."
+"<p><b>Wide Gamut</b>: this color space is an expanded version of the Adobe "
+"RGB color space.<p><b>Pro-Photo</b>: this color space is an RGB color space, "
+"developed by Kodak, that offers an especially large gamut designed for use "
+"with photographic outputs in mind.<p><b>Custom</b>: use a custom output "
+"color space profile."
 
 #: libkdcraw/dcrawsettingswidget.cpp:531
 msgid "Color Management"
@@ -425,3 +459,4 @@ msgstr "ការ​គ្រប់គ្រង​ពណ៌"
 #: libkdcraw/rnuminput.cpp:170
 msgid "Reset to default value"
 msgstr "កំណត់​ឡើង​វិញ​ទៅ​តម្លៃ​លំនាំ​ដើម"
+
