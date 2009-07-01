@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatowork\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-26 12:12+0200\n"
+"POT-Creation-Date: 2009-07-01 12:52+0200\n"
 "PO-Revision-Date: 2008-12-19 10:29+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -22,22 +22,28 @@ msgstr ""
 msgid "File to open"
 msgstr "ឯកសារ​ត្រូវ​បើក"
 
-#: part.cpp:167
+#: mainwindow.cpp:119
+#, fuzzy, kde-format
+#| msgid "File does not exist: %1"
+msgid "The file %1 does not exist."
+msgstr "មិនមាន​ឯកសារ ៖ %1"
+
+#: part.cpp:171
 #, kde-format
 msgid "Document is already open: %1"
 msgstr "ឯកសារ​បានបើក​រួច​ហើយ ៖​ %1"
 
-#: part.cpp:175
+#: part.cpp:179
 #, kde-format
 msgid "Could not extract file: %1"
 msgstr "មិន​អាច​ស្រង់ចេញ​ឯកសារ ៖ %1"
 
-#: part.cpp:183
+#: part.cpp:187
 #, kde-format
 msgid "Invalid url: %1"
 msgstr "url មិន​ត្រឹមត្រូវ ៖ %1"
 
-#: part.cpp:195
+#: part.cpp:199
 #, kde-format
 msgid ""
 "Document is already open:\n"
@@ -46,26 +52,50 @@ msgstr ""
 "ឯកសារ​បាន​បើក​រួច​ហើយ ៖\n"
 " %1"
 
-#: part.cpp:199
+#: part.cpp:203
 #, kde-format
 msgid "File does not exist: %1"
 msgstr "មិនមាន​ឯកសារ ៖ %1"
 
-#: part.cpp:219
+#: part.cpp:223
 msgid "Edit with:"
 msgstr "កែសម្រួល​ជា​មួយ ៖"
 
-#: part.cpp:430
+#: part.cpp:406
+#, kde-format
+msgid "Not a valid KPlatoWork file: %1"
+msgstr ""
+
+#: part.cpp:433
+#, fuzzy
+#| msgid "Invalid document. No mimetype specified."
+msgid "Invalid document: no file 'maindoc.xml'."
+msgstr "ឯកសារ​មិន​ត្រឹមត្រូវ ។ គ្មាន​ប្រភេទ mime បានបញ្ជាប់ ។"
+
+#: part.cpp:459
+#, fuzzy, kde-format
+#| msgid "Could not extract file: %1"
+msgid "Could not find %1"
+msgstr "មិន​អាច​ស្រង់ចេញ​ឯកសារ ៖ %1"
+
+#: part.cpp:471
+#, kde-format
+msgid ""
+"Parsing error in %1 at line %2, column %3\n"
+"Error message: %4"
+msgstr ""
+
+#: part.cpp:494
 msgid "Invalid document. No mimetype specified."
 msgstr "ឯកសារ​មិន​ត្រឹមត្រូវ ។ គ្មាន​ប្រភេទ mime បានបញ្ជាប់ ។"
 
-#: part.cpp:434
+#: part.cpp:498
 #, kde-format
 msgid ""
 "Invalid document. Expected mimetype application/x-vnd.kde.kplato.work, got %1"
 msgstr "ឯកសារ​មិន​ត្រឹមត្រូវ ។ បាន​រំពឹង​ថា​កម្មវិធី​ប្រភេទ mime /x-vnd.kde.kplato.work, ទទួល​ %1"
 
-#: part.cpp:441
+#: part.cpp:505
 #, kde-format
 msgid ""
 "This document was created with a newer version of KPlatoWork (syntax "
@@ -75,52 +105,38 @@ msgstr ""
 "ឯកសារ​នេះ​ត្រូវ​បាន​បង្កើត​ជាមួយ​កំណែ​ថ្មី​របស់ KPlatoWork (កំណែ​វាក្យសម្ពន្ធ ៖ %1)\n"
 "បើក​វា​​នៅ​ក្នុង​កំណែ​នេះ​របស់ KPlatoWork នឹង​បាត់បង់​ព័ត៌មាន​មួយ​ចំនួន ។"
 
-#: part.cpp:443
+#: part.cpp:507
 msgid "File-Format Mismatch"
 msgstr "មិន​ផ្គូផ្គង​ទ្រង់ទ្រាយ​ឯកសារ"
 
-#: part.cpp:443
+#: part.cpp:507
 msgid "Continue"
 msgstr "បន្ត"
 
-#: part.cpp:639
+#: part.cpp:702
 #, fuzzy
 #| msgid "KPlato WorkPackage Handler"
 msgid "No WorkPackage handles this document"
 msgstr "កម្មវិធី​គ្រប់គ្រង KPlato WorkPackage"
 
 #. i18n: file: kplatowork.rc:4
-#. i18n: ectx: Menu (edit)
-#: rc.cpp:3
-msgid "&Edit"
-msgstr "កែសម្រួល"
-
-#. i18n: file: kplatowork.rc:10
-#. i18n: ectx: Menu (view)
-#. i18n: file: kplatowork_readonly.rc:3
-#. i18n: ectx: Menu (view)
-#: rc.cpp:6 rc.cpp:15
-msgid "&View"
-msgstr "មើល"
-
-#. i18n: file: kplatowork.rc:12
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:9
+#: rc.cpp:3
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
-#. i18n: file: kplatowork.rc:16
-#. i18n: ectx: ToolBar (edit)
-#: rc.cpp:12
-msgid "Project"
-msgstr "គម្រោង"
+#. i18n: file: kplatowork_readonly.rc:3
+#. i18n: ectx: Menu (view)
+#: rc.cpp:6
+msgid "&View"
+msgstr "មើល"
 
-#: rc.cpp:16
+#: rc.cpp:7
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "ខឹម សុខែម, ​អេង វណ្ណៈ, អោក ពិសិដ្ឋ​"
 
-#: rc.cpp:17
+#: rc.cpp:8
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
@@ -142,56 +158,50 @@ msgstr ""
 msgid "Modify Actual Effort"
 msgstr ""
 
-#: view.cpp:128 view.cpp:162
+#: taskworkpackageview.cpp:285
+#, fuzzy
+#| msgid "Configure KPlatoWork..."
+msgid "Configure View..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ KPlatoWork..."
+
+#: view.cpp:120 view.cpp:144
 msgid "Progress..."
 msgstr "វឌ្ឍនភាព..."
 
-#: view.cpp:133
+#: view.cpp:125
 msgid "Configure KPlatoWork..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ KPlatoWork..."
 
-#: view.cpp:137
+#: view.cpp:129
 #, fuzzy
 #| msgid "&Edit"
 msgid "Edit..."
 msgstr "កែសម្រួល"
 
-#: view.cpp:141
+#: view.cpp:133
 #, fuzzy
 #| msgid "&View"
 msgctxt "@verb"
 msgid "View..."
 msgstr "មើល"
 
-#: view.cpp:158
+#: view.cpp:140
 msgid "Send Package..."
 msgstr ""
 
-#: view.cpp:221
-msgid "Information"
-msgstr "ព័ត៌មាន"
-
-#: view.cpp:248
-msgid "Documents"
-msgstr "ឯកសារ"
-
-#: view.cpp:514
-msgid "Not scheduled"
-msgstr "មិន​បាន​កំណត់​កាលវិភាគ"
-
-#: view.cpp:555
+#: view.cpp:353
 msgid "This file is not editable"
 msgstr "ឯកសារ​មិនអាច​កែសម្រួល​បាន"
 
-#: view.cpp:613
+#: view.cpp:368
 msgid "No node selected"
 msgstr ""
 
-#: view.cpp:619
+#: view.cpp:374
 msgid "Cannot find work package"
 msgstr ""
 
-#: view.cpp:623
+#: view.cpp:378
 #, fuzzy
 #| msgid ""
 #| "This workpackage is not in your project store:\n"
@@ -205,7 +215,7 @@ msgstr ""
 "%1\n"
 "តើ​អ្នក​ចង់​រក្សាទុក​វា​ឬទេ ?"
 
-#: view.cpp:636
+#: view.cpp:391
 #, kde-format
 msgid "Work Package: %1"
 msgstr ""
@@ -280,7 +290,9 @@ msgid "<p>Work package <b>'%1'</b></p><p>Could not extract file:</p><p>%2</p>"
 msgstr ""
 
 #: aboutdata.h:30
-msgid "KPlatoWP - Work Package handler for the KPlato Project Planning Tool"
+#, fuzzy
+#| msgid "KPlatoWP - Work Package handler for the KPlato Project Planning Tool"
+msgid "KPlatoWork - Work Package handler for the KPlato Project Planning Tool"
 msgstr "KPlatoWP - កម្មវិធី​គ្រប់គ្រង​កញ្ចប់​ការងារ​សម្រាប់​​គម្រោង KPlato"
 
 #: aboutdata.h:35
@@ -288,12 +300,29 @@ msgid "KPlato WorkPackage Handler"
 msgstr "កម្មវិធី​គ្រប់គ្រង KPlato WorkPackage"
 
 #: aboutdata.h:38
-msgid "(c) 1998-2007, The KPlato Team"
+#, fuzzy
+#| msgid "(c) 1998-2007, The KPlato Team"
+msgid "(c) 2007-2009, The KPlato Team"
 msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ១៩៩៨-២០០៧ ដោយ​ក្រុម KPlato"
 
 #: aboutdata.h:42
 msgid "Dag Andersen"
 msgstr "Dag Andersen"
+
+#~ msgid "&Edit"
+#~ msgstr "កែសម្រួល"
+
+#~ msgid "Project"
+#~ msgstr "គម្រោង"
+
+#~ msgid "Information"
+#~ msgstr "ព័ត៌មាន"
+
+#~ msgid "Documents"
+#~ msgstr "ឯកសារ"
+
+#~ msgid "Not scheduled"
+#~ msgstr "មិន​បាន​កំណត់​កាលវិភាគ"
 
 #~ msgid "No template found for: %1 "
 #~ msgstr "រក​មិន​ឃើញ​ពុម្ព​សម្រាប់ ៖ %1 "
