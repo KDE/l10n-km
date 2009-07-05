@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-20 12:15+0200\n"
+"POT-Creation-Date: 2009-07-05 11:43+0200\n"
 "PO-Revision-Date: 2009-05-25 10:35+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -33,21 +33,23 @@ msgstr "កម្មវិធី​​លាយ​បច្ចុប្បន្
 msgid "Select the channel representing the master volume:"
 msgstr "ជ្រើស​ឆានែល​ដែល​តំណាង​ឲ្យ​កម្រិត​សំឡេង​មេ ៖"
 
-#: dialogviewconfiguration.cpp:42 kmixprefdlg.cpp:41
+#: dialogviewconfiguration.cpp:152 kmixprefdlg.cpp:41
 msgid "Configure"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ"
 
-#: dialogviewconfiguration.cpp:58
+#: dialogviewconfiguration.cpp:167
 msgid "Configuration of the channels."
 msgstr "ការ​កំណត់​រចនា​សម្ព័ន្ធ​របស់​ឆានែល ។"
 
-#: dialogviewconfiguration.cpp:73
-msgid "Show/Hide"
-msgstr "បង្ហាញ/លាក់"
+#: dialogviewconfiguration.cpp:228
+#, fuzzy
+#| msgid "Available mixers:"
+msgid "Available channels"
+msgstr "ឧបករណ៍​លាយ​ដែល​មាន ៖"
 
-#: dialogviewconfiguration.cpp:75
-msgid "Split"
-msgstr "ពុះ"
+#: dialogviewconfiguration.cpp:232
+msgid "Visible channels"
+msgstr ""
 
 #: kmixapplet.cpp:94
 msgid "Configure - Mixer Applet"
@@ -91,42 +93,46 @@ msgstr "ឧបករណ៍​លាយ​ដែល​មាន ៖"
 msgid "Invalid mixer entered."
 msgstr "បាន​បញ្ចូល​ឧបករណ៍​លាយ​មិន​ត្រឹមត្រូវ ។"
 
-#: kmix.cpp:119
+#: kmix.cpp:120
 msgid "Hardware &Information"
 msgstr "ព័ត៌មាន​ផ្នែក​រឹង"
 
-#: kmix.cpp:122 kmixdockwidget.cpp:382
+#: kmix.cpp:123 kmixdockwidget.cpp:380
 msgid "Hide Mixer Window"
 msgstr "លាក់​បង្អួច​ឧបករណ៍​លាយ"
 
-#: kmix.cpp:126
+#: kmix.cpp:127
 msgid "Configure &Channels..."
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ឆានែល..."
 
-#: kmix.cpp:130 mdwslider.cpp:111
+#: kmix.cpp:130 kmixdockwidget.cpp:103
+msgid "Select Master Channel..."
+msgstr "ជ្រើស​ឆានែល​​មេ..."
+
+#: kmix.cpp:134 mdwslider.cpp:111
 msgid "Increase Volume"
 msgstr "បង្កើន​កម្រិត​សំឡេង"
 
-#: kmix.cpp:135 mdwslider.cpp:122
+#: kmix.cpp:139 mdwslider.cpp:122
 msgid "Decrease Volume"
 msgstr "បន្ថយ​កម្រិត​សំឡេង"
 
-#: kmix.cpp:140 mdwslider.cpp:365
+#: kmix.cpp:144 mdwslider.cpp:365
 msgid "Mute"
 msgstr "ស្ងាត់"
 
-#: kmix.cpp:493
+#: kmix.cpp:503
 #, kde-format
 msgid ""
 "The soundcard containing the master device was unplugged. Changing to "
 "control %1 on card %2."
 msgstr "កាត​សំឡេង​ដែល​មាន​ឧបករណ៍​មេ​មិនបាន​ដោត ។ ប្ដូរ ដើម្បី​ត្រួតពិនិត្យ %1 នៅ​លើ​កាត %2"
 
-#: kmix.cpp:502
+#: kmix.cpp:512
 msgid "The last soundcard was unplugged."
 msgstr "កាត​សំឡេង​ចុងក្រោយ​មិនបាន​ដោត ។"
 
-#: kmix.cpp:777
+#: kmix.cpp:789
 msgid "Mixer Hardware Information"
 msgstr "ព័ត៌មាន​ផ្នែករឹង​នៃ​ឧបករណ៍​លាយ"
 
@@ -158,24 +164,20 @@ msgstr "ស្ដារ​កម្រិត​សំឡេង​លំនាំ
 msgid "M&ute"
 msgstr "ស្ងាត់"
 
-#: kmixdockwidget.cpp:104
-msgid "Select Master Channel..."
-msgstr "ជ្រើស​ឆានែល​​មេ..."
-
-#: kmixdockwidget.cpp:193
+#: kmixdockwidget.cpp:191
 msgid "Mixer cannot be found"
 msgstr "មិន​អាច​រកឃើញ​ឧបករណ៍​លាយ​បាន​ឡើយ"
 
-#: kmixdockwidget.cpp:213
+#: kmixdockwidget.cpp:211
 #, kde-format
 msgid "Volume at %1%"
 msgstr "កម្រិត​សំឡេង​ត្រឹម %1%"
 
-#: kmixdockwidget.cpp:215
+#: kmixdockwidget.cpp:213
 msgid " (Muted)"
 msgstr " (ស្ងាត់)"
 
-#: kmixdockwidget.cpp:386
+#: kmixdockwidget.cpp:384
 msgid "Show Mixer Window"
 msgstr "​បង្ហាញ​បង្អួច​​ឧបករណ៍​លាយ"
 
@@ -437,6 +439,35 @@ msgstr ""
 msgid "kmix: Unknown error. Please report how you produced this error."
 msgstr "kmix ៖ មិន​ស្គាល់​កំហុស​ឡើយ ។ សូម​រាយការណ៍​ពី​របៀប​ដែល​អ្នក​បង្កើត​កំហុស​នេះ ។"
 
+#: mixer_oss4.cpp:349 mixer_oss.cpp:230
+msgid ""
+"kmix: You do not have permission to access the mixer device.\n"
+"Login as root and do a 'chmod a+rw /dev/mixer*' to allow the access."
+msgstr ""
+"kmix ៖ អ្នក​មិន​មាន​សិទ្ធិ​ដើម្បី​ចូលដំណើរការ​ឧបករណ៍​លាយ​ឡើយ ។\n"
+"សូម​ចូល​ជា root ហើយ​រត់​ពាក្យបញ្ជា 'chmod a+rw /dev/mixer*' ដើម្បី​អនុញ្ញាត​ការ​ចូលដំណើរការ ។"
+
+#: mixer_oss4.cpp:353
+#, fuzzy
+#| msgid ""
+#| "kmix: Mixer cannot be found.\n"
+#| "Please check that the soundcard is installed and the\n"
+#| "soundcard driver is loaded.\n"
+#| "On Linux you might need to use 'insmod' to load the driver.\n"
+#| "Use 'soundon' when using commercial OSS."
+msgid ""
+"kmix: Mixer cannot be found.\n"
+"Please check that the soundcard is installed and the\n"
+"soundcard driver is loaded.\n"
+"On Linux you might need to use 'insmod' to load the driver.\n"
+"Use 'soundon' when using OSS4 from 4front."
+msgstr ""
+"kmix ៖ មិន​អាច​រកឃើញ​ឧបករណ៍​លាយ​ឡើយ ។\n"
+"សូម​ពិនិត្យ​មើល​ថា បាន​ដំឡើង​កាត​សំឡេង\n"
+"ហើយ​បាន​ផ្ទុក​កម្មវិធី​បញ្ជា​សំឡេង ។\n"
+"នៅ​ក្នុង​លីនីក អ្នក​ប្រហែល​ជា​ត្រូវ​ប្រើ 'insmod' ដើម្បី​ផ្ទុក​កម្មវិធី​បញ្ជា ។\n"
+"ប្រើ 'soundon' បើ​អ្នក​ប្រើ OSS ពាណិជ្ជកម្ម ។"
+
 #: mixer_oss.cpp:58
 msgid "Volume"
 msgstr "កម្រិត​សំឡេង"
@@ -549,14 +580,6 @@ msgstr "កណ្ដាល-3D"
 msgid "unused"
 msgstr "មិន​ប្រើ"
 
-#: mixer_oss.cpp:230
-msgid ""
-"kmix: You do not have permission to access the mixer device.\n"
-"Login as root and do a 'chmod a+rw /dev/mixer*' to allow the access."
-msgstr ""
-"kmix ៖ អ្នក​មិន​មាន​សិទ្ធិ​ដើម្បី​ចូលដំណើរការ​ឧបករណ៍​លាយ​ឡើយ ។\n"
-"សូម​ចូល​ជា root ហើយ​រត់​ពាក្យបញ្ជា 'chmod a+rw /dev/mixer*' ដើម្បី​អនុញ្ញាត​ការ​ចូលដំណើរការ ។"
-
 #: mixer_oss.cpp:234
 msgid ""
 "kmix: Mixer cannot be found.\n"
@@ -604,11 +627,11 @@ msgstr ""
 "សូម​សាកសួរ​អ្នក​គ្រប់គ្រង​ប្រព័ន្ធ​របស់​អ្នក ឲ្យ​គាត់​កែប្រែ​ឯកសារ /dev/audioctl ដើម្បី​អនុញ្ញាត​ការ​ចូល​"
 "ដំណើរការ ។"
 
-#: mixertoolbox.cpp:198
+#: mixertoolbox.cpp:199
 msgid "Sound drivers supported:"
 msgstr "កម្មវិធី​បញ្ជា​សំឡេង​ដែល​គាំទ្រ ៖"
 
-#: mixertoolbox.cpp:199
+#: mixertoolbox.cpp:200
 msgid "Sound drivers used:"
 msgstr "កម្មវិធី​បញ្ជា​សំឡេង​ដែល​ប្រើ ៖"
 
@@ -672,7 +695,7 @@ msgstr "ស្ងាត់ ៖"
 msgid "&File"
 msgstr "ឯកសារ"
 
-#. i18n: file: kmixui.rc:19
+#. i18n: file: kmixui.rc:20
 #. i18n: ectx: Menu (help)
 #: rc.cpp:33
 msgid "&Help"
@@ -692,10 +715,16 @@ msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.in
 msgid "&Channels"
 msgstr "ឆានែល"
 
-#: viewbase.cpp:146
+#: viewbase.cpp:182
 msgid "Device Settings"
 msgstr "ការ​កំណត់​ឧបករណ៍"
 
-#: viewdockareapopup.cpp:112
+#: viewdockareapopup.cpp:115
 msgid "Mixer"
 msgstr "ឧបករណ៍​លាយ"
+
+#~ msgid "Show/Hide"
+#~ msgstr "បង្ហាញ/លាក់"
+
+#~ msgid "Split"
+#~ msgstr "ពុះ"

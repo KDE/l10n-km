@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_publictransport\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-06-19 11:39+0200\n"
+"POT-Creation-Date: 2009-07-05 11:50+0200\n"
 "PO-Revision-Date: 2009-06-22 10:53+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -17,218 +17,856 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: publictransport.cpp:95
-msgid "&Update timetable"
-msgstr "ភាព​ទាន់សម័យ​ដែល​អាច​កំណត់​ពេល​បាន"
-
-#: publictransport.cpp:117
-msgid "depart is in the past"
-msgstr "ការ​ចេញ​ស្ថិត​ក្នុង​អតីតកាល"
-
-#: publictransport.cpp:126
-#, kde-format
-msgid "in %1 hours and %2 minutes"
-msgstr "ក្នុងរយៈពេល %1 ម៉ោង និង %2 នាទី"
-
-#: publictransport.cpp:129
-#, kde-format
-msgid "in %1 hour"
-msgid_plural "in %1 hours"
-msgstr[0] "ក្នុងរយៈពេល %1 ម៉ោង"
-
-#: publictransport.cpp:133
-#, kde-format
-msgid "in %1 minute"
-msgid_plural "in %1 minutes"
-msgstr[0] "ក្នុង​រយៈពេល %1 នាទី"
-
-#: publictransport.cpp:136
-msgid "now"
-msgstr "ឥឡូវ"
-
-#: publictransport.cpp:171 publictransport.cpp:188
-msgid "The stop name is ambigous."
-msgstr "ឈ្មោះ​បញ្ឈប់គឺ ambigous ។"
-
-#: publictransport.cpp:195
-msgid "The stop name is valid."
-msgstr "ឈ្មោះ​បញ្ឈប់​​​ត្រឹមត្រូវ​ទេ ។"
-
-#: publictransport.cpp:221
+#: datasourcetester.cpp:60
 msgid "The stop name is invalid."
 msgstr "ឈ្មោះ​បញ្ឈប់​មិន​ត្រឹមត្រូវ​ទេ ។"
 
-#: publictransport.cpp:227
-msgid "Error parsing departure information"
+#: datasourcetester.cpp:67 publictransport.cpp:229 publictransport.cpp:308
+msgid "The stop name is ambigous."
+msgstr "ឈ្មោះ​បញ្ឈប់គឺ ambigous ។"
+
+#: departureinfo.cpp:18
+msgid "depart is in the past"
+msgstr "ការ​ចេញ​ស្ថិត​ក្នុង​អតីតកាល"
+
+#: departureinfo.cpp:30
+#, fuzzy, kde-format
+#| msgid "in %1 hours and %2 minutes"
+msgctxt "h:mm + delay in minutes"
+msgid "%1:%2h + %3 minutes"
+msgstr "ក្នុងរយៈពេល %1 ម៉ោង និង %2 នាទី"
+
+#: departureinfo.cpp:32
+#, fuzzy, kde-format
+#| msgid "in %1 hours and %2 minutes"
+msgctxt "Hour(s) + delay in minutes"
+msgid "%1 hour + %2 minutes"
+msgid_plural "in %1 hours + %2 minutes"
+msgstr[0] "ក្នុងរយៈពេល %1 ម៉ោង និង %2 នាទី"
+
+#: departureinfo.cpp:34
+#, fuzzy, kde-format
+#| msgid "in %1 hours and %2 minutes"
+msgctxt "Minute(s) + delay in minutes"
+msgid "%1 + %2 minutes"
+msgstr "ក្នុងរយៈពេល %1 ម៉ោង និង %2 នាទី"
+
+#: departureinfo.cpp:36
+#, fuzzy, kde-format
+#| msgid "in %1 minute"
+#| msgid_plural "in %1 minutes"
+msgctxt "Now + delay in minutes"
+msgid "now + %1 minutes"
+msgstr "ក្នុង​រយៈពេល %1 នាទី"
+
+#: departureinfo.cpp:38
+#, fuzzy, kde-format
+#| msgid "in %1 minute"
+#| msgid_plural "in %1 minutes"
+msgctxt "+ remaining delay in minutes"
+msgid "+ %1 minutes"
+msgstr "ក្នុង​រយៈពេល %1 នាទី"
+
+#: departureinfo.cpp:42
+#, fuzzy, kde-format
+#| msgid "in %1 hour"
+#| msgid_plural "in %1 hours"
+msgctxt "h:mm"
+msgid "%1:%2 hours"
+msgstr "ក្នុងរយៈពេល %1 ម៉ោង"
+
+#: departureinfo.cpp:44
+#, fuzzy, kde-format
+#| msgid "in %1 hour"
+#| msgid_plural "in %1 hours"
+msgid "%1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "ក្នុងរយៈពេល %1 ម៉ោង"
+
+#: departureinfo.cpp:47
+#, fuzzy, kde-format
+#| msgid "in %1 minute"
+#| msgid_plural "in %1 minutes"
+msgid "%1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "ក្នុង​រយៈពេល %1 នាទី"
+
+#. i18n: file: publicTransportConfig.ui:202
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, timeOfFirstDeparture)
+#: departureinfo.cpp:49 rc.cpp:70
+msgid "now"
+msgstr "ឥឡូវ"
+
+#: publictransport.cpp:136
+msgid "&Update timetable"
+msgstr "ភាព​ទាន់សម័យ​ដែល​អាច​កំណត់​ពេល​បាន"
+
+#: publictransport.cpp:140 publictransport.cpp:1213
+msgid "Set &alarm for this departure"
+msgstr ""
+
+#: publictransport.cpp:140 publictransport.cpp:1213
+msgid "Set &alarm for this arrival"
+msgstr ""
+
+#: publictransport.cpp:144 publictransport.cpp:1211
+msgid "Remove &alarm for this departure"
+msgstr ""
+
+#: publictransport.cpp:144 publictransport.cpp:1211
+msgid "Remove &alarm for this arrival"
+msgstr ""
+
+#: publictransport.cpp:148 publictransport.cpp:156 publictransport.cpp:160
+#: publictransport.cpp:1227 publictransport.cpp:1232 publictransport.cpp:1238
+#: publictransport.cpp:1241
+#, fuzzy
+#| msgid "Hide matching targets"
+msgid "&Hide target"
+msgstr "លាក់​គោលដៅ​ដែល​ផ្គូផ្គង"
+
+#: publictransport.cpp:148 publictransport.cpp:156 publictransport.cpp:160
+#: publictransport.cpp:1227 publictransport.cpp:1232 publictransport.cpp:1238
+#: publictransport.cpp:1241
+msgid "&Hide origin"
+msgstr ""
+
+#: publictransport.cpp:152
+msgid "Remove target from the &filter list"
+msgstr ""
+
+#: publictransport.cpp:152
+msgid "Remove origin from the &filter list"
+msgstr ""
+
+#: publictransport.cpp:164
+#, fuzzy
+#| msgid "Show all targets"
+msgid "&Show all targets"
+msgstr "បង្ហាញ​គោលដៅ​ទាំងអស់"
+
+#: publictransport.cpp:164
+#, fuzzy
+#| msgid "Show all targets"
+msgid "&Show all origins"
+msgstr "បង្ហាញ​គោលដៅ​ទាំងអស់"
+
+#: publictransport.cpp:168
+msgid "Filter out by vehicle type"
+msgstr ""
+
+#: publictransport.cpp:172
+#, fuzzy
+#| msgid "Show all targets"
+msgid "Sho&w all vehicle types"
+msgstr "បង្ហាញ​គោលដៅ​ទាំងអស់"
+
+#: publictransport.cpp:176
+msgid "&Show additional information"
+msgstr ""
+
+#: publictransport.cpp:244
+msgid "The stop name is valid."
+msgstr "ឈ្មោះ​បញ្ឈប់​​​ត្រឹមត្រូវ​ទេ ។"
+
+#: publictransport.cpp:296
+#, fuzzy
+#| msgid "Error parsing departure information"
+msgid "Error parsing departure information or currently no departures"
 msgstr "កំហុស​ក្នុងការ​ញែកព័ត៌មាន​ចេញ​ដំណើរ"
 
-#: publictransport.cpp:250
+#: publictransport.cpp:298
+#, fuzzy
+#| msgid "Error parsing departure information"
+msgid "Error parsing arrival information or currently no arrivals"
+msgstr "កំហុស​ក្នុងការ​ញែកព័ត៌មាន​ចេញ​ដំណើរ"
+
+#: publictransport.cpp:413
+#, kde-format
+msgctxt ""
+"This is displayed on the popup icon to indicate the remaining time to the "
+"next alarm, %1=hours, %2=minutes with padded 0"
+msgid "%1:%2"
+msgstr ""
+
+#: publictransport.cpp:458
 msgid "Public transport"
 msgstr "កា​រដឹក​ជញ្ជូន​សាធារណៈ"
 
-#: publictransport.cpp:252
+#: publictransport.cpp:460
 msgid "View departure times for public transport"
 msgstr "មើល​ពេល​វេលា​ចេញ​ដំណើរ​សម្រាប់​ការ​ដឹក​ជញ្ជូន​សាធារណៈ"
 
-#: publictransport.cpp:256
+#: publictransport.cpp:462
 #, kde-format
 msgctxt "%4 is the translated duration text, e.g. in 3 minutes"
 msgid "Next departure from '%1': line %2 (%3) %4"
 msgstr "ចេញ​ដំណើរ​បន្ទាប់ពី '%1' ៖ បន្ទាត់ %2 (%3) %4"
 
-#: publictransport.cpp:289
-msgid "Please set a city and a stop."
-msgstr "សូម​កំណត់​ទីក្រុង និង​កា​របញ្ឈប់ ។"
-
-#: publictransport.cpp:291
-msgid "Please set a stop."
-msgstr "សូម​កំណត់​ការ​បញ្ឈប់ ។"
-
-#: publictransport.cpp:293
-msgid "Please select a service provider."
-msgstr "សូម​ជ្រើស​ក្រុមហ៊ុន​ផ្ដល់​សេវា ។"
-
-#: publictransport.cpp:295
-msgid "The minimal shown line can't be bigger than the maximal shown line."
-msgstr "កា​របង្រួម​អប្បបរមា​បង្ហាញ​បន្ទាត់ ដែល​មិន​ធំជាង​បន្ទាត់​ដែលបង្ហាញ​អតិបរមា ។"
-
-#: publictransport.cpp:350
+#: publictransport.cpp:508 publictransport.cpp:513 publictransport.cpp:543
+#: publictransport.cpp:548
 msgctxt "A tramline or busline"
 msgid "Line"
 msgstr "បន្ទាត់"
 
-#: publictransport.cpp:351
-msgctxt "Direction of a tramline or busline"
-msgid "Direction"
-msgstr "ទិសដៅ"
+#: publictransport.cpp:509 publictransport.cpp:544
+msgctxt "Target of a tramline or busline"
+msgid "Target"
+msgstr ""
 
-#: publictransport.cpp:352
+#: publictransport.cpp:510 publictransport.cpp:545
 msgctxt "Time of departure of a tram or bus"
 msgid "Departure"
 msgstr "ចេញ​ដំណើរ"
 
-#: publictransport.cpp:430
+#: publictransport.cpp:514 publictransport.cpp:549
+msgctxt "Origin of a tramline or busline"
+msgid "Origin"
+msgstr ""
+
+#: publictransport.cpp:515 publictransport.cpp:550
+msgctxt "Time of arrival of a tram or bus"
+msgid "Arrival"
+msgstr ""
+
+#: publictransport.cpp:523
+msgid "Please set a city and a stop."
+msgstr "សូម​កំណត់​ទីក្រុង និង​កា​របញ្ឈប់ ។"
+
+#: publictransport.cpp:525
+msgid "Please set a stop."
+msgstr "សូម​កំណត់​ការ​បញ្ឈប់ ។"
+
+#: publictransport.cpp:527
+msgid "Please select a service provider."
+msgstr "សូម​ជ្រើស​ក្រុមហ៊ុន​ផ្ដល់​សេវា ។"
+
+#: publictransport.cpp:529
+msgid "The minimal shown line can't be bigger than the maximal shown line."
+msgstr "កា​របង្រួម​អប្បបរមា​បង្ហាញ​បន្ទាត់ ដែល​មិន​ធំជាង​បន្ទាត់​ដែលបង្ហាញ​អតិបរមា ។"
+
+#: publictransport.cpp:690
 msgid "General"
 msgstr "ទូទៅ"
 
-#: publictransport.cpp:431
+#: publictransport.cpp:691
 msgid "Filter"
 msgstr "តម្រង"
 
-#: publictransport.cpp:495
+#: publictransport.cpp:783 publictransport.cpp:1056
+msgid "Trams"
+msgstr ""
+
+#: publictransport.cpp:783 publictransport.cpp:1057
+msgid "Buses"
+msgstr ""
+
+#: publictransport.cpp:783 publictransport.cpp:1058
+msgid "Subways"
+msgstr ""
+
+#: publictransport.cpp:783 publictransport.cpp:1059
+msgid "Interurban trains"
+msgstr ""
+
+#: publictransport.cpp:783 publictransport.cpp:1060
+msgid "Regional trains"
+msgstr ""
+
+#: publictransport.cpp:783 publictransport.cpp:1061
+msgid "Regional express trains"
+msgstr ""
+
+#: publictransport.cpp:783 publictransport.cpp:1062
+msgid "Interregio trains"
+msgstr ""
+
+#: publictransport.cpp:783 publictransport.cpp:1063
+msgid "Intercity / Eurocity trains"
+msgstr ""
+
+#: publictransport.cpp:783 publictransport.cpp:1064
+msgid "Intercity express trains"
+msgstr ""
+
+#: publictransport.cpp:869
+#, fuzzy
+#| msgid "Service provider:"
+msgid "Service provider info"
+msgstr "ក្រុមហ៊ុន​ផ្ដល់​សេវា ៖"
+
+#: publictransport.cpp:877
+#, kde-format
+msgid "Version %1"
+msgstr ""
+
+#: publictransport.cpp:885
+#, kde-format
+msgid "Write an email to %1 <%2>"
+msgstr ""
+
+#: publictransport.cpp:901
 msgid "Checking validity of the stop name."
 msgstr "ពិនិត្យ​សុពលភាព​របស់​ឈ្មោះបញ្ឈប់ ។"
 
+#: publictransport.cpp:1204
+msgid "Hide additional &information"
+msgstr ""
+
+#: publictransport.cpp:1207
+msgid "Show additional &information"
+msgstr ""
+
+#: publictransport.cpp:1219
+msgid "&Filter out by vehicle type"
+msgstr ""
+
+#: publictransport.cpp:1223
+#, fuzzy, kde-format
+#| msgid "Filter"
+msgid "&Filter out %1"
+msgstr "តម្រង"
+
+#: publictransport.cpp:1229 publictransport.cpp:1236
+msgid "&Remove target from filter list"
+msgstr ""
+
+#: publictransport.cpp:1229 publictransport.cpp:1236
+msgid "&Remove origin from filter list"
+msgstr ""
+
+#: publictransport.cpp:1234 publictransport.cpp:1243
+msgid "&Hide target and others in the filter list"
+msgstr ""
+
+#: publictransport.cpp:1234 publictransport.cpp:1243
+msgid "&Hide origin and others in the filter list"
+msgstr ""
+
+#: publictransport.cpp:1548
+#, kde-format
+msgid "Line %2 to '%3' departs in %1 minute at %4"
+msgid_plural "Line %2 to '%3' departs in %1 minutes at %4"
+msgstr[0] ""
+
+#: publictransport.cpp:1550
+#, kde-format
+msgctxt ""
+"%2: Line string (e.g. 'U3'), %4: Vehicle type name (e.g. tram, subway)"
+msgid "The %4 %2 to '%3' departs in %1 minute at %5"
+msgid_plural "The %4 %2 to '%3' departs in %1 minutes at %5"
+msgstr[0] ""
+
+#: publictransport.cpp:1554
+#, kde-format
+msgid "Line %2 to '%3' has departed %1 minute ago at %4"
+msgid_plural "Line %2 to '%3' has departed %1 minutes ago at %4"
+msgstr[0] ""
+
+#: publictransport.cpp:1556
+#, kde-format
+msgctxt ""
+"%2: Line string (e.g. 'U3'), %4: Vehicle type name (e.g. tram, subway)"
+msgid "The %4 %2 to '%3' has departed %1 minute ago at %5"
+msgid_plural "The %4 %2 to %3 has departed %1 minutes ago at %5"
+msgstr[0] ""
+
+#: publictransport.cpp:1560
+#, kde-format
+msgid "Line %1 to '%2' departs now at %3"
+msgstr ""
+
+#: publictransport.cpp:1562
+#, kde-format
+msgctxt ""
+"%2: Line string (e.g. 'U3'), %4: Vehicle type name (e.g. tram, subway)"
+msgid "The %3 %1 to '%2' departs now at %3"
+msgstr ""
+
+#: publictransport.cpp:1621
+#, fuzzy, kde-format
+#| msgid "in %1 minute"
+#| msgid_plural "in %1 minutes"
+msgid "+ %1 minute"
+msgid_plural "+ %1 minutes"
+msgstr[0] "ក្នុង​រយៈពេល %1 នាទី"
+
+#: publictransport.cpp:1691
+msgctxt "A public transport vehicle departs on schedule"
+msgid "On schedule"
+msgstr ""
+
+#: publictransport.cpp:1702
+#, fuzzy, kde-format
+#| msgid "in %1 minute"
+#| msgid_plural "in %1 minutes"
+msgid "+%1 minute"
+msgid_plural "+%1 minutes"
+msgstr[0] "ក្នុង​រយៈពេល %1 នាទី"
+
+#: publictransport.cpp:1719 publictransport.cpp:1722
+msgid "No information available"
+msgstr ""
+
+#: publictransport.cpp:1774
+msgctxt "The platform from which a tram/bus/train departs"
+msgid "Platform:"
+msgstr ""
+
+#: publictransport.cpp:1792
+msgctxt "News for a journey with public transport, like 'platform changed'"
+msgid "News:"
+msgstr ""
+
+#: publictransport.cpp:1811
+msgctxt "Information about delays of a journey with public transport"
+msgid "Delay:"
+msgstr ""
+
+#: publictransport.cpp:2081
+#, fuzzy
+#| msgid "Show trams:"
+msgid "trams"
+msgstr "បង្ហាញ trams ៖"
+
+#: publictransport.cpp:2081
+msgid "tram"
+msgstr ""
+
+#: publictransport.cpp:2083
+#, fuzzy
+#| msgid "Show buses:"
+msgid "buses"
+msgstr "បង្ហាញ​រថយន្ត​ក្រុង ៖"
+
+#: publictransport.cpp:2083
+msgid "bus"
+msgstr ""
+
+#: publictransport.cpp:2085
+msgid "subways"
+msgstr ""
+
+#: publictransport.cpp:2085
+msgid "subway"
+msgstr ""
+
+#: publictransport.cpp:2087
+msgid "interurban trains"
+msgstr ""
+
+#: publictransport.cpp:2087
+msgid "interurban train"
+msgstr ""
+
+#: publictransport.cpp:2090
+msgid "regional trains"
+msgstr ""
+
+#: publictransport.cpp:2090
+msgid "regional train"
+msgstr ""
+
+#: publictransport.cpp:2092
+msgid "regional express trains"
+msgstr ""
+
+#: publictransport.cpp:2092
+msgid "regional express"
+msgstr ""
+
+#: publictransport.cpp:2094
+msgid "interregional trains"
+msgstr ""
+
+#: publictransport.cpp:2094
+msgid "interregional train"
+msgstr ""
+
+#: publictransport.cpp:2096
+msgid "intercity / eurocity trains"
+msgstr ""
+
+#: publictransport.cpp:2096
+msgid "intercity / eurocity"
+msgstr ""
+
+#: publictransport.cpp:2098
+msgid "intercity express trains"
+msgstr ""
+
+#: publictransport.cpp:2098
+msgid "intercity express"
+msgstr ""
+
+#: publictransport.cpp:2102
+#, fuzzy
+#| msgid "now"
+msgctxt "Unknown type of vehicle"
+msgid "Unknown"
+msgstr "ឥឡូវ"
+
+#. i18n: file: accessorInfo.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, accessorInfo)
+#: rc.cpp:3
+msgid "Form"
+msgstr ""
+
+#. i18n: file: accessorInfo.ui:42
+#. i18n: ectx: property (text), widget (QLabel, version)
+#: rc.cpp:6
+msgid "Version 1.0"
+msgstr ""
+
+#. i18n: file: accessorInfo.ui:62
+#. i18n: ectx: property (text), widget (KUrlLabel, url)
+#: rc.cpp:9
+#, fuzzy
+#| msgid "Service provider:"
+msgid "Service provider"
+msgstr "ក្រុមហ៊ុន​ផ្ដល់​សេវា ៖"
+
+#. i18n: file: accessorInfo.ui:81
+#. i18n: ectx: property (text), widget (QLabel, author)
+#: rc.cpp:12
+msgid "Author"
+msgstr ""
+
+#. i18n: file: accessorInfo.ui:97
+#. i18n: ectx: property (text), widget (QLabel, description)
+#: rc.cpp:15
+msgid "Short description of the service provider, hints for using..."
+msgstr ""
+
+#. i18n: file: accessorInfo.ui:116
+#. i18n: ectx: property (text), widget (QLabel, features)
+#: rc.cpp:18
+msgid "Journey news, delay, delay reason, stop autocompletion, ..."
+msgstr ""
+
+#. i18n: file: accessorInfo.ui:129
+#. i18n: ectx: property (text), widget (QLabel, lblUrl)
+#: rc.cpp:21
+msgid "Url:"
+msgstr ""
+
+#. i18n: file: accessorInfo.ui:139
+#. i18n: ectx: property (text), widget (QLabel, lblAuthor)
+#: rc.cpp:24
+msgid "Author:"
+msgstr ""
+
+#. i18n: file: accessorInfo.ui:149
+#. i18n: ectx: property (text), widget (QLabel, lblDescription)
+#: rc.cpp:27
+#, fuzzy
+#| msgctxt "Direction of a tramline or busline"
+#| msgid "Direction"
+msgid "Description:"
+msgstr "ទិសដៅ"
+
+#. i18n: file: accessorInfo.ui:159
+#. i18n: ectx: property (text), widget (QLabel, lblFeatures)
+#: rc.cpp:30
+#, fuzzy
+#| msgctxt "Time of departure of a tram or bus"
+#| msgid "Departure"
+msgid "Features:"
+msgstr "ចេញ​ដំណើរ"
+
+#. i18n: file: accessorInfo.ui:187
+#. i18n: ectx: property (text), widget (QLabel, serviceProviderName)
+#: rc.cpp:33
+#, fuzzy
+#| msgid "Service provider:"
+msgid "Service provider name"
+msgstr "ក្រុមហ៊ុន​ផ្ដល់​សេវា ៖"
+
 #. i18n: file: publicTransportConfig.ui:24
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:3
+#: rc.cpp:36
 msgid "Data source"
 msgstr "ប្រភព​ទិន្នន័យ"
 
 #. i18n: file: publicTransportConfig.ui:31
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:6
-msgid "Service provider:"
-msgstr "ក្រុមហ៊ុន​ផ្ដល់​សេវា ៖"
+#. i18n: ectx: property (text), widget (QToolButton, btnServiceProviderInfo)
+#: rc.cpp:39
+msgid "?"
+msgstr ""
 
-#. i18n: file: publicTransportConfig.ui:63
+#. i18n: file: publicTransportConfig.ui:38
+#. i18n: ectx: property (text), widget (QLabel, lblCity)
+#: rc.cpp:42
+#, fuzzy
+#| msgid "City:"
+msgid "&City:"
+msgstr "ទីក្រុង ៖"
+
+#. i18n: file: publicTransportConfig.ui:54
+#. i18n: ectx: property (text), widget (QLabel, lblStop)
+#: rc.cpp:45
+#, fuzzy
+#| msgid "Stop name:"
+msgid "&Stop name:"
+msgstr "ឈ្មោះ​បញ្ឈប់ ៖"
+
+#. i18n: file: publicTransportConfig.ui:68
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, stop)
+#: rc.cpp:48
+msgid ""
+"You need to fill in the stop name for that you want to see the departures.\n"
+"If the green lamp on the right shines, the stop name is valid and will give "
+"you a departure list."
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:75
+#. i18n: ectx: property (text), widget (QLabel, lblUpdateAutomatically)
+#: rc.cpp:52
+#, fuzzy
+#| msgid "Update automatically:"
+msgid "Update &automatically:"
+msgstr "ធ្វើ​ឲ្យ​ទាន់សម័យ​ដោយ​ស្វ័យ​ប្រវត្តិ​ ៖"
+
+#. i18n: file: publicTransportConfig.ui:113
+#. i18n: ectx: property (text), widget (QLabel, lblUpdateTimeout)
+#: rc.cpp:55
+#, fuzzy
+#| msgid "Update every:"
+msgid "&Update every:"
+msgstr "ធ្វើ​ឲ្យ​ទាន់សម័យ​រៀងរាល់ ៖"
+
+#. i18n: file: publicTransportConfig.ui:132
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, updateTimeout)
+#: rc.cpp:58
+#, fuzzy
+#| msgid "seconds"
+msgid " seconds"
+msgstr "វិនាទី"
+
+#. i18n: file: publicTransportConfig.ui:173
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:61
+msgid "Other settings"
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:180
+#. i18n: ectx: property (text), widget (QLabel, lblTimeOfFirstDeparture)
+#: rc.cpp:64
+msgid "Starting time of departure list:"
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:199
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, timeOfFirstDeparture)
+#: rc.cpp:67
+msgid ""
+"Here you can set the starting time of the departure list. No earlier "
+"departures will be shown."
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:205
+#. i18n: ectx: property (suffix), widget (QSpinBox, timeOfFirstDeparture)
+#: rc.cpp:73
+#, fuzzy
+#| msgid "in %1 minute"
+#| msgid_plural "in %1 minutes"
+msgid " minutes"
+msgstr "ក្នុង​រយៈពេល %1 នាទី"
+
+#. i18n: file: publicTransportConfig.ui:208
+#. i18n: ectx: property (prefix), widget (QSpinBox, timeOfFirstDeparture)
+#: rc.cpp:76
+#, fuzzy
+#| msgid "now"
+msgid "now + "
+msgstr "ឥឡូវ"
+
+#. i18n: file: publicTransportConfig.ui:228
+#. i18n: ectx: property (text), widget (QLabel, lblMaximalNumberOfDepartures)
+#: rc.cpp:79
+msgid "Maximum &number of departures:"
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:247
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, maximalNumberOfDepartures)
+#: rc.cpp:82
+msgid ""
+"Here you can set how many departures should maximally be shown. It could be "
+"less, depending on the service provider."
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:253
+#. i18n: ectx: property (suffix), widget (QSpinBox, maximalNumberOfDepartures)
+#: rc.cpp:85
+#, fuzzy
+#| msgctxt "Time of departure of a tram or bus"
+#| msgid "Departure"
+msgid " departures"
+msgstr "ចេញ​ដំណើរ"
+
+#. i18n: file: publicTransportConfig.ui:282
+#. i18n: ectx: property (text), widget (QLabel, lblAlarmTime)
+#: rc.cpp:88
+msgid "A&larm time:"
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:307
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, alarmTime)
+#: rc.cpp:91
+msgid "Here you can set when an alarm should be fired."
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:310
+#. i18n: ectx: property (specialValueText), widget (QSpinBox, alarmTime)
+#: rc.cpp:94
+msgid "on depart"
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:313
+#. i18n: ectx: property (suffix), widget (QSpinBox, alarmTime)
+#: rc.cpp:97
+msgid " minutes before departure"
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:364
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:9
+#: rc.cpp:100
 msgid "Appearance"
 msgstr "រូបរាង"
 
-#. i18n: file: publicTransportConfig.ui:76
-#. i18n: ectx: property (text), widget (QLabel, lblCity)
-#: rc.cpp:12
-msgid "City:"
-msgstr "ទីក្រុង ៖"
-
-#. i18n: file: publicTransportConfig.ui:99
-#. i18n: ectx: property (text), widget (QLabel, label_16)
-#: rc.cpp:15
-msgid "Update automatically:"
-msgstr "ធ្វើ​ឲ្យ​ទាន់សម័យ​ដោយ​ស្វ័យ​ប្រវត្តិ​ ៖"
-
-#. i18n: file: publicTransportConfig.ui:134
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:18
-msgid "seconds"
-msgstr "វិនាទី"
-
-#. i18n: file: publicTransportConfig.ui:143
-#. i18n: ectx: property (text), widget (QLabel, label_17)
-#: rc.cpp:21
-msgid "Update every:"
-msgstr "ធ្វើ​ឲ្យ​ទាន់សម័យ​រៀងរាល់ ៖"
-
-#. i18n: file: publicTransportConfig.ui:173
-#. i18n: ectx: property (text), widget (QLabel, label_18)
-#: rc.cpp:24
-msgid "Show remaining minutes:"
+#. i18n: file: publicTransportConfig.ui:371
+#. i18n: ectx: property (text), widget (QLabel, lblShowRemainingMinutes)
+#: rc.cpp:103
+#, fuzzy
+#| msgid "Show remaining minutes:"
+msgid "Show &remaining minutes:"
 msgstr "បង្ហាញ​នាទី​នៅ​ដល់ ៖"
 
-#. i18n: file: publicTransportConfig.ui:183
-#. i18n: ectx: property (text), widget (QLabel, label_19)
-#: rc.cpp:27
-msgid "Show departure time:"
+#. i18n: file: publicTransportConfig.ui:394
+#. i18n: ectx: property (text), widget (QLabel, lblShowDepartureTime)
+#: rc.cpp:106
+#, fuzzy
+#| msgid "Show departure time:"
+msgid "Show &departure time:"
 msgstr "បង្ហាញ​ពេលវេលា​ចេញ​ដំណើរ ៖"
 
-#. i18n: file: publicTransportConfig.ui:196
-#. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:30
-msgid "Stop name:"
-msgstr "ឈ្មោះ​បញ្ឈប់ ៖"
+#. i18n: file: publicTransportConfig.ui:417
+#. i18n: ectx: property (text), widget (QLabel, lblLinesPerRow)
+#: rc.cpp:109
+msgid "&Lines per row:"
+msgstr ""
 
-#. i18n: file: publicTransportFilterConfig.ui:17
-#. i18n: ectx: property (text), widget (QLabel, label_13)
-#: rc.cpp:33
-msgid "Show trams:"
-msgstr "បង្ហាញ trams ៖"
+#. i18n: file: publicTransportConfig.ui:436
+#. i18n: ectx: property (whatsThis), widget (KIntNumInput, linesPerRow)
+#: rc.cpp:112
+msgid "How many lines should be used for a single departure in the list."
+msgstr ""
 
-#. i18n: file: publicTransportFilterConfig.ui:37
-#. i18n: ectx: property (text), widget (QLabel, label_14)
-#: rc.cpp:36
-msgid "Show buses:"
-msgstr "បង្ហាញ​រថយន្ត​ក្រុង ៖"
-
-#. i18n: file: publicTransportFilterConfig.ui:57
-#. i18n: ectx: property (text), widget (QLabel, label_15)
-#: rc.cpp:39
-msgid "Show night lines:"
-msgstr "បង្ហាញ​បន្ទាត់​ពេល​យប់ ៖"
-
-#. i18n: file: publicTransportFilterConfig.ui:77
-#. i18n: ectx: property (text), widget (QLabel, label_11)
-#: rc.cpp:42
-msgid "Min. line:"
+#. i18n: file: publicTransportConfig.ui:448
+#. i18n: ectx: property (suffix), widget (KIntNumInput, linesPerRow)
+#: rc.cpp:115
+#, fuzzy
+#| msgid "Min. line:"
+msgid " lines"
 msgstr "បន្ទាត់​អប្បបរមា ៖"
 
-#. i18n: file: publicTransportFilterConfig.ui:102
+#. i18n: file: publicTransportConfig.ui:522
+#. i18n: ectx: property (text), widget (QRadioButton, showDepartures)
+#: rc.cpp:118
+#, fuzzy
+#| msgctxt "Time of departure of a tram or bus"
+#| msgid "Departure"
+msgid "Departures"
+msgstr "ចេញ​ដំណើរ"
+
+#. i18n: file: publicTransportConfig.ui:532
+#. i18n: ectx: property (text), widget (QRadioButton, showArrivals)
+#: rc.cpp:121
+msgid "Arrivals"
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:541
+#. i18n: ectx: property (text), widget (QLabel, lblTypeOfData)
+#: rc.cpp:124
+msgid "Type of data:"
+msgstr ""
+
+#. i18n: file: publicTransportConfig.ui:554
+#. i18n: ectx: property (text), widget (QLabel, lblServiceProvider)
+#: rc.cpp:127
+#, fuzzy
+#| msgid "Service provider:"
+msgid "Service &provider:"
+msgstr "ក្រុមហ៊ុន​ផ្ដល់​សេវា ៖"
+
+#. i18n: file: publicTransportConfig.ui:578
+#. i18n: ectx: property (whatsThis), widget (KComboBox, serviceProvider)
+#: rc.cpp:130
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'FreeSans'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Use this to <span style=\" "
+"font-weight:600;\">choose a service provider</span>. Different service "
+"providers can provide support for different cities or features.</p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">To see <span style=\" font-"
+"weight:600;\">full information</span> about a service provider click on the "
+"info button on the right.</p></body></html>"
+msgstr ""
+
+#. i18n: file: publicTransportFilterConfig.ui:18
+#. i18n: ectx: property (text), item, widget (KComboBox, filterTypeTarget)
+#: rc.cpp:138
+#, fuzzy
+#| msgid "Show all targets"
+msgid "Show all directions"
+msgstr "បង្ហាញ​គោលដៅ​ទាំងអស់"
+
+#. i18n: file: publicTransportFilterConfig.ui:23
+#. i18n: ectx: property (text), item, widget (KComboBox, filterTypeTarget)
+#: rc.cpp:141
+#, fuzzy
+#| msgid "Show matching targets"
+msgid "Show matching directions"
+msgstr "បង្ហាញ​គោលដៅ​ដែល​ផ្គូផ្គង"
+
+#. i18n: file: publicTransportFilterConfig.ui:28
+#. i18n: ectx: property (text), item, widget (KComboBox, filterTypeTarget)
+#: rc.cpp:144
+#, fuzzy
+#| msgid "Hide matching targets"
+msgid "Hide matching directions"
+msgstr "លាក់​គោលដៅ​ដែល​ផ្គូផ្គង"
+
+#. i18n: file: publicTransportFilterConfig.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_16)
+#: rc.cpp:147
+#, fuzzy
+#| msgid "Shown targets"
+msgid "Shown directions"
+msgstr "បង្ហាញ​គោលដៅ"
+
+#. i18n: file: publicTransportFilterConfig.ui:109
+#. i18n: ectx: property (text), widget (QCheckBox, showNightLines)
+#: rc.cpp:150
+#, fuzzy
+#| msgid "Show night lines:"
+msgid "Show night lines"
+msgstr "បង្ហាញ​បន្ទាត់​ពេល​យប់ ៖"
+
+#. i18n: file: publicTransportFilterConfig.ui:134
 #. i18n: ectx: property (text), widget (QLabel, label_12)
-#: rc.cpp:45
+#: rc.cpp:153
 msgid "Max. line:"
 msgstr "បន្ទាត់​អតិបរមា ៖"
 
-#. i18n: file: publicTransportFilterConfig.ui:144
-#. i18n: ectx: property (text), item, widget (KComboBox, filterTypeTarget)
-#: rc.cpp:48
-msgid "Show all targets"
-msgstr "បង្ហាញ​គោលដៅ​ទាំងអស់"
-
-#. i18n: file: publicTransportFilterConfig.ui:149
-#. i18n: ectx: property (text), item, widget (KComboBox, filterTypeTarget)
-#: rc.cpp:51
-msgid "Show matching targets"
-msgstr "បង្ហាញ​គោលដៅ​ដែល​ផ្គូផ្គង"
-
-#. i18n: file: publicTransportFilterConfig.ui:154
-#. i18n: ectx: property (text), item, widget (KComboBox, filterTypeTarget)
-#: rc.cpp:54
-msgid "Hide matching targets"
-msgstr "លាក់​គោលដៅ​ដែល​ផ្គូផ្គង"
-
-#. i18n: file: publicTransportFilterConfig.ui:168
-#. i18n: ectx: property (text), widget (QLabel, label_16)
-#: rc.cpp:57
-msgid "Shown targets"
-msgstr "បង្ហាញ​គោលដៅ"
+#. i18n: file: publicTransportFilterConfig.ui:177
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: rc.cpp:156
+msgid "Min. line:"
+msgstr "បន្ទាត់​អប្បបរមា ៖"
