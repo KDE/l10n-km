@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-16 11:37+0200\n"
+"POT-Creation-Date: 2009-07-31 06:20+0200\n"
 "PO-Revision-Date: 2009-05-21 09:10+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -24,7 +24,7 @@ msgctxt "Key filter without user-assigned name"
 msgid "<unnamed>"
 msgstr "<គ្មាន​ឈ្មោះ>​"
 
-#: conf/appearanceconfigwidget.cpp:278
+#: conf/appearanceconfigwidget.cpp:277
 msgid "This parameter has been locked down by the system administrator."
 msgstr "ប៉ារ៉ាម៉ែត្រ​នេះ​ត្រូវ​បាន​ចាក់សោ​ដោយ​អ្នក​គ្រប់គ្រង​ប្រព័ន្ធ ។"
 
@@ -1190,7 +1190,8 @@ msgstr "ថត (\"%1\") ជា​លទ្ធផល​ដែល​មិន​�
 msgid "Could not write to clipboard"
 msgstr "មិនអាច​សរសេរ​ទៅកាន់​ក្ដារ​តម្បៀត​ខ្ទាស់​បានទេ"
 
-#: utils/output.cpp:370 systrayicon.cpp:215
+#: utils/output.cpp:370 commands/importcertificatefromclipboardcommand.cpp:122
+#: systrayicon.cpp:198
 msgid "Clipboard"
 msgstr "ក្ដារ​តម្បៀត​ខ្ទាស់"
 
@@ -2237,6 +2238,8 @@ msgstr "មិនអាច​បើក​អាន​ឯកសារ %1 បា�
 
 #: commands/importcertificatefromfilecommand.cpp:139
 #: commands/importcertificatefromfilecommand.cpp:144
+#: commands/importcertificatefromclipboardcommand.cpp:116
+#: commands/importcertificatefromclipboardcommand.cpp:120
 #: commands/importcertificatescommand.cpp:337
 #: commands/importcertificatescommand.cpp:343
 #: commands/importcertificatescommand.cpp:406
@@ -2507,6 +2510,52 @@ msgstr ""
 msgid "CRL cache cleared successfully."
 msgstr "បាន​ជម្រះ​ឃ្លាំង​សម្ងាត់ CRL ដោយ​ជោគជ័យ ។"
 
+#: commands/learncardkeyscommand.cpp:72
+msgid "Error Learning SmartCard"
+msgstr ""
+
+#: commands/learncardkeyscommand.cpp:76
+msgid "Finished Learning SmartCard"
+msgstr ""
+
+#: commands/learncardkeyscommand.cpp:81
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<para>The GPG or GpgSM process that tried to export the secret key ended "
+#| "prematurely because of an unexpected error.</para><para>Please check the "
+#| "output of <icode>%1</icode> for details.</para>"
+msgctxt "@info"
+msgid ""
+"<para>The GPG or GpgSM process that tried to learn the smart card ended "
+"prematurely because of an unexpected error.</para><para>Please check the "
+"output of <icode>%1</icode> for details.</para>"
+msgstr ""
+"<para>ដំណើរការ GPG ឬ GpgSM ដែល​បាន​ព្យាយាម​នាំចេញ​សោ​សម្ងាត់​បាន​បញ្ចប់​មុន ដោយសារ​តែ​កំហុស​ដែល​"
+"មិនបាន​រំពឹង​ទុក ។</para><para>សូម​ពិនិត្យ​មើល​លទ្ធផល <icode>%1</icode> សម្រាប់​សេចក្ដីលម្អិត ។</"
+"para>"
+
+#: commands/learncardkeyscommand.cpp:88
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<para>An error occurred while trying to export the secret key.</para> "
+#| "<para>The output from <command>%1</command> was: <message>%2</message></"
+#| "para>"
+msgctxt "@info"
+msgid ""
+"<para>An error occurred while trying to learn the smart card's keys.</para> "
+"<para>The output from <command>%1</command> was: <message>%2</message></para>"
+msgstr ""
+"<para>កំហុស​មួយ​បានកើតឡើង​ខណៈពេល​ព្យាយាម​នាំចេញ​សោ​សម្ងាត់ ។</para> <para>លទ្ធផល​ពី <command>%"
+"1</command> គឺ ៖ <message>%2</message></para>"
+
+#: commands/learncardkeyscommand.cpp:94
+#, fuzzy
+#| msgid "Secret key successfully exported."
+msgid "Smart card keys successfully learned."
+msgstr "បាន​នាំចេញ​សោ​សម្ងាត់​ដោយ​ជោគជ័យ ។​"
+
 #: commands/adduseridcommand.cpp:212
 #, kde-format
 msgctxt "@info"
@@ -2642,6 +2691,16 @@ msgstr "បាន​នាំចេញ​សោ​សម្ងាត់​ដោ
 #: commands/encryptclipboardcommand.cpp:160
 msgid "Encrypt Clipboard Error"
 msgstr "កំហុស​ក្នុងការ​អ៊ិនគ្រីប​ក្ដារ​តម្បៀត​ខ្ទាស់"
+
+#: commands/importcertificatefromclipboardcommand.cpp:115
+msgid "Clipboard contents do not look like a certificate."
+msgstr ""
+
+#: commands/importcertificatefromclipboardcommand.cpp:120
+#, fuzzy
+#| msgid "Could not determine certificate type of %1."
+msgid "Could not determine certificate type of clipboard contents."
+msgstr "មិនអាច​កំណត់​ប្រភេទ​វិញ្ញាបនបត្រ​នៃ %1 បានទេ ។"
 
 #: commands/importcertificatescommand.cpp:212
 #, fuzzy, kde-format
@@ -3615,11 +3674,11 @@ msgstr "មើល"
 
 #. i18n: file: kleopatra.rc:34
 #. i18n: ectx: Menu (certMenu)
-#. i18n: file: kleopatra.rc:98
+#. i18n: file: kleopatra.rc:97
 #. i18n: ectx: Menu (listview_popup)
 #. i18n: file: kleopatra.rc:34
 #. i18n: ectx: Menu (certMenu)
-#. i18n: file: kleopatra.rc:98
+#. i18n: file: kleopatra.rc:97
 #. i18n: ectx: Menu (listview_popup)
 #: rc.cpp:9 rc.cpp:30 rc.cpp:535 rc.cpp:556
 msgid "&Certificates"
@@ -3657,7 +3716,7 @@ msgstr "ជំនួយ"
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
-#. i18n: file: kleopatra.rc:93
+#. i18n: file: kleopatra.rc:92
 #. i18n: ectx: ToolBar (searchToolBar)
 #: rc.cpp:27 rc.cpp:553
 msgid "Search Toolbar"
@@ -5173,60 +5232,62 @@ msgstr "បង្កើត​ការ​ចុះហត្ថលេខា​​
 msgid "Create Encryption Certificate With Same Parameters"
 msgstr "បង្កើត​វិញ្ញាបនបត្រ​អ៊ិនគ្រីប​ជា​មួយ​ប៉ារ៉ាម៉ែត្រ​ដូច​គ្នា"
 
-#: systrayicon.cpp:86
-msgid "Learn Keys"
-msgstr ""
-
-#: systrayicon.cpp:211
+#: systrayicon.cpp:194
 msgid "&Open Certificate Manager..."
 msgstr "កំហុស​កម្មវិធី​គ្រប់គ្រង​វិញ្ញាបនបត្រ..."
 
-#: systrayicon.cpp:212
+#: systrayicon.cpp:195
 #, kde-format
 msgid "&Configure %1..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ %1..."
 
-#: systrayicon.cpp:213
+#: systrayicon.cpp:196
 #, kde-format
 msgid "&About %1..."
 msgstr "អំពី %1..."
 
-#: systrayicon.cpp:214
+#: systrayicon.cpp:197
 #, fuzzy
 #| msgid "&Quit Kleopatra"
 msgid "&Shutdown Kleopatra"
 msgstr "បិទ Kleopatra"
 
-#: systrayicon.cpp:216
+#: systrayicon.cpp:199
+#, fuzzy
+#| msgid "Certificate Import Failed"
+msgid "Certificate Import"
+msgstr "ការ​នាំចូល​វិញ្ញាបនបត្រ​បាន​បរាជ័យ​"
+
+#: systrayicon.cpp:200
 msgid "Encrypt..."
 msgstr "អ៊ីនគ្រិប..."
 
-#: systrayicon.cpp:217
+#: systrayicon.cpp:201
 msgid "S/MIME-Sign..."
 msgstr "ហត្ថលេខា S/MIME..."
 
-#: systrayicon.cpp:218
+#: systrayicon.cpp:202
 msgid "OpenPGP-Sign..."
 msgstr "ហត្ថលេខា OpenPGP..."
 
-#: systrayicon.cpp:219 mainwindow.cpp:632
+#: systrayicon.cpp:203 mainwindow.cpp:632
 msgid "Decrypt/Verify..."
 msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់..."
 
-#: systrayicon.cpp:220
+#: systrayicon.cpp:204
 msgid "SmartCard"
 msgstr ""
 
-#: systrayicon.cpp:221
+#: systrayicon.cpp:205
 #, fuzzy
 #| msgid "Set &Icon..."
 msgid "Set Initial PIN..."
 msgstr "កំណត់​​រូបតំណាង..."
 
-#: systrayicon.cpp:222
+#: systrayicon.cpp:206
 #, fuzzy
 #| msgid "New Certificate..."
-msgid "Learn Card Certificates..."
+msgid "Learn Card Certificates"
 msgstr "វិញ្ញាបនបត្រ​ថ្មី..."
 
 #: selftest/gpgagentcheck.cpp:64
