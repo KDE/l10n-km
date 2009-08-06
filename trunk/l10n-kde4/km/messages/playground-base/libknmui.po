@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libknmui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-07-26 06:17+0200\n"
+"POT-Creation-Date: 2009-08-06 06:37+0200\n"
 "PO-Revision-Date: 2009-06-23 10:36+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -67,30 +67,30 @@ msgctxt "Header text for IPv4 gateway"
 msgid "Gateway"
 msgstr "ច្រក​ចេញចូល"
 
-#: ui/security/802_11_wireless_security_widget.cpp:71
-msgctxt "Label for no wireless security"
-msgid "None"
-msgstr "គ្មាន"
-
-#: ui/security/802_11_wireless_security_widget.cpp:75
-msgctxt "Label for WEP wireless security"
-msgid "WEP"
-msgstr "WEP"
-
-#: ui/security/802_11_wireless_security_widget.cpp:81
-msgctxt "Label for WPA-PSK wireless security"
-msgid "WPA-PSK"
-msgstr "WPA-PSK"
-
-#: ui/security/802_11_wireless_security_widget.cpp:87
-msgctxt "Label for WPA-EAP wireless security"
-msgid "WPA-EAP"
-msgstr "WPA-EAP"
-
 #: ui/security/security801xwidget.cpp:45
 msgctxt "Label for 8021x wired security settings"
 msgid "802.1x"
 msgstr "802.1x"
+
+#: ui/security/wirelesssecuritysettingwidget.cpp:106
+msgctxt "Label for no wireless security"
+msgid "None"
+msgstr "គ្មាន"
+
+#: ui/security/wirelesssecuritysettingwidget.cpp:113
+msgctxt "Label for WEP wireless security"
+msgid "WEP"
+msgstr "WEP"
+
+#: ui/security/wirelesssecuritysettingwidget.cpp:122
+msgctxt "Label for WPA-PSK wireless security"
+msgid "WPA-PSK"
+msgstr "WPA-PSK"
+
+#: ui/security/wirelesssecuritysettingwidget.cpp:128
+msgctxt "Label for WPA-EAP wireless security"
+msgid "WPA-EAP"
+msgstr "WPA-EAP"
 
 #: ui/wirelesspreferences.cpp:66
 msgid "New Wireless Connection"
@@ -369,7 +369,7 @@ msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: file: ui/cdma.ui:54
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:99 rc.cpp:150 rc.cpp:192 rc.cpp:210 rc.cpp:273 rc.cpp:378 rc.cpp:405
+#: rc.cpp:99 rc.cpp:150 rc.cpp:192 rc.cpp:210 rc.cpp:267 rc.cpp:378 rc.cpp:405
 #: rc.cpp:441 rc.cpp:468 rc.cpp:564
 msgid "&Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
@@ -474,7 +474,7 @@ msgstr "សេវា ៖"
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowPass)
 #. i18n: file: ui/cdma.ui:79
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowPass)
-#: rc.cpp:153 rc.cpp:216 rc.cpp:276 rc.cpp:342 rc.cpp:567
+#: rc.cpp:153 rc.cpp:216 rc.cpp:270 rc.cpp:336 rc.cpp:567
 msgid "&Show password"
 msgstr "បង្ហាញ​ពាក្យ​សម្ងាត់"
 
@@ -598,7 +598,7 @@ msgstr "CHAP"
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
 #. i18n: file: ui/security/security_ttls.ui:120
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowPassword)
-#: rc.cpp:195 rc.cpp:234 rc.cpp:270 rc.cpp:471
+#: rc.cpp:195 rc.cpp:234 rc.cpp:264 rc.cpp:471
 msgid "Show password"
 msgstr "បង្ហាញ​ពាក្យ​សម្ងាត់"
 
@@ -636,7 +636,7 @@ msgstr "ពាក្យ​សម្ងាត់​នៅ​លើ​បណ្ដ
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: file: ui/security/security.ui:62
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:219 rc.cpp:255 rc.cpp:360
+#: rc.cpp:219 rc.cpp:249 rc.cpp:360
 msgid "Identity:"
 msgstr "អត្តសញ្ញាណ ៖"
 
@@ -646,7 +646,7 @@ msgstr "អត្តសញ្ញាណ ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: ui/security/security.ui:75
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:222 rc.cpp:258 rc.cpp:363
+#: rc.cpp:222 rc.cpp:252 rc.cpp:363
 msgid "User certificate:"
 msgstr "វិញ្ញាបនបត្រ​អ្នក​ប្រើ ៖"
 
@@ -656,7 +656,7 @@ msgstr "វិញ្ញាបនបត្រ​អ្នក​ប្រើ ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: ui/security/security.ui:88
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:225 rc.cpp:261 rc.cpp:366
+#: rc.cpp:225 rc.cpp:255 rc.cpp:366
 msgid "CA certificate:"
 msgstr "វិញ្ញាបនបត្រ CA ៖"
 
@@ -666,7 +666,7 @@ msgstr "វិញ្ញាបនបត្រ CA ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: file: ui/security/security.ui:101
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:228 rc.cpp:264 rc.cpp:369
+#: rc.cpp:228 rc.cpp:258 rc.cpp:369
 msgid "Private key:"
 msgstr "សោ​ឯកជន ៖"
 
@@ -676,37 +676,25 @@ msgstr "សោ​ឯកជន ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: file: ui/security/security.ui:114
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:231 rc.cpp:267 rc.cpp:372
+#: rc.cpp:231 rc.cpp:261 rc.cpp:372
 msgid "Private key password:"
 msgstr "ពាក្យ​សម្ងាត់​សោ​ឯកជន ៖"
 
-#. i18n: file: ui/security/802_11_wireless_security.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, Wireless80211Security)
-#: rc.cpp:237
-msgid "Wireless Security"
-msgstr "សុវត្ថិភាព​ឥតខ្សែ"
-
-#. i18n: file: ui/security/802_11_wireless_security.ui:22
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:240
-msgid "&Security:"
-msgstr "សុវត្ថិភាព ៖"
-
 #. i18n: file: ui/security/wpaeap.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:243
+#: rc.cpp:237
 msgid "EAP Method:"
 msgstr "វិធីសាស្ត្រ EAP ៖"
 
 #. i18n: file: ui/security/wpaeap.ui:28
 #. i18n: ectx: property (text), item, widget (KComboBox, cboEAPMethod)
-#: rc.cpp:246
+#: rc.cpp:240
 msgid "PEAP"
 msgstr "PEAP"
 
 #. i18n: file: ui/security/wpaeap.ui:33
 #. i18n: ectx: property (text), item, widget (KComboBox, cboEAPMethod)
-#: rc.cpp:249
+#: rc.cpp:243
 msgid "TTLS"
 msgstr "TTLS"
 
@@ -716,13 +704,13 @@ msgstr "TTLS"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_4)
 #. i18n: file: ui/security/security.ui:36
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_4)
-#: rc.cpp:252 rc.cpp:291 rc.cpp:351
+#: rc.cpp:246 rc.cpp:285 rc.cpp:351
 msgid "TLS"
 msgstr "TLS"
 
 #. i18n: file: ui/security/802_1x.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, Wired8021xSecurity)
-#: rc.cpp:279
+#: rc.cpp:273
 msgid "802.1x"
 msgstr "802.1x"
 
@@ -732,13 +720,13 @@ msgstr "802.1x"
 #. i18n: ectx: property (text), widget (QLabel, authalgLabel)
 #. i18n: file: ui/security/security.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:282 rc.cpp:327 rc.cpp:345
+#: rc.cpp:276 rc.cpp:321 rc.cpp:345
 msgid "&Authentication:"
 msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ៖"
 
 #. i18n: file: ui/security/802_1x.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, checkBox)
-#: rc.cpp:285
+#: rc.cpp:279
 msgid "Use authentication:"
 msgstr "ប្រើ​កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ៖"
 
@@ -746,7 +734,7 @@ msgstr "ប្រើ​កា​រផ្ទៀងផ្ទាត់​ភាព
 #. i18n: ectx: property (toolTip), widget (KComboBox, kcombobox_4)
 #. i18n: file: ui/security/security.ui:32
 #. i18n: ectx: property (toolTip), widget (KComboBox, kcombobox_4)
-#: rc.cpp:288 rc.cpp:348
+#: rc.cpp:282 rc.cpp:348
 msgid "Authentication scheme to use"
 msgstr "គ្រោងការណ៍​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ​ត្រូ​វប្រើ"
 
@@ -754,7 +742,7 @@ msgstr "គ្រោងការណ៍​ផ្ទៀងផ្ទាត់​ភ
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_4)
 #. i18n: file: ui/security/security.ui:41
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_4)
-#: rc.cpp:294 rc.cpp:354
+#: rc.cpp:288 rc.cpp:354
 msgid "Tunneled TLS"
 msgstr "TLS ដែល​មាន​ធ្យូនែល"
 
@@ -762,87 +750,99 @@ msgstr "TLS ដែល​មាន​ធ្យូនែល"
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_4)
 #. i18n: file: ui/security/security.ui:46
 #. i18n: ectx: property (text), item, widget (KComboBox, kcombobox_4)
-#: rc.cpp:297 rc.cpp:357
+#: rc.cpp:291 rc.cpp:357
 msgid "Protected EAP (PEAP)"
 msgstr "EAP ដែល​បានការពារ (PEAP)"
 
 #. i18n: file: ui/security/802_1x.ui:62
 #. i18n: ectx: property (text), widget (QCheckBox, inUse)
-#: rc.cpp:300
+#: rc.cpp:294
 msgid "&Use 802.1x authentication"
 msgstr "ប្រើ​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ 802.1x"
 
 #. i18n: file: ui/security/wep.ui:17
 #. i18n: ectx: property (text), widget (QLabel, keyTypeLabel)
-#: rc.cpp:303
+#: rc.cpp:297
 msgid "Key type:"
 msgstr "ប្រភេទ​សោ ៖"
 
 #. i18n: file: ui/security/wep.ui:31
 #. i18n: ectx: property (text), item, widget (QComboBox, keyType)
-#: rc.cpp:306
+#: rc.cpp:300
 msgid "Passphrase (for 128 bit)"
 msgstr "ឃ្លាសម្ងាត់ (សម្រាប់ ១២៨ ប៊ីត)"
 
 #. i18n: file: ui/security/wep.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, keyType)
-#: rc.cpp:309
+#: rc.cpp:303
 msgid "Hex Key (for 64 or 128 bits)"
 msgstr "សោ​គោលដប់ប្រាំមួយ (សម្រាប់ ៦៤ ឬ ១២៨ ប៊ីត)"
 
 #. i18n: file: ui/security/wep.ui:54
 #. i18n: ectx: property (text), widget (QLabel, weptxkeyindexLabel)
-#: rc.cpp:312
+#: rc.cpp:306
 msgid "&WEP index:"
 msgstr ""
 
 #. i18n: file: ui/security/wep.ui:68
 #. i18n: ectx: property (text), item, widget (KComboBox, weptxkeyindex)
-#: rc.cpp:315
+#: rc.cpp:309
 msgid "1 (Default)"
 msgstr "១ (លំនាំដើម)"
 
 #. i18n: file: ui/security/wep.ui:73
 #. i18n: ectx: property (text), item, widget (KComboBox, weptxkeyindex)
-#: rc.cpp:318
+#: rc.cpp:312
 msgid "2"
 msgstr "២"
 
 #. i18n: file: ui/security/wep.ui:78
 #. i18n: ectx: property (text), item, widget (KComboBox, weptxkeyindex)
-#: rc.cpp:321
+#: rc.cpp:315
 msgid "3"
 msgstr "៣"
 
 #. i18n: file: ui/security/wep.ui:83
 #. i18n: ectx: property (text), item, widget (KComboBox, weptxkeyindex)
-#: rc.cpp:324
+#: rc.cpp:318
 msgid "4"
 msgstr "៤"
 
 #. i18n: file: ui/security/wep.ui:105
 #. i18n: ectx: property (text), item, widget (KComboBox, authalg)
-#: rc.cpp:330
+#: rc.cpp:324
 msgid "Open System"
 msgstr "បើក​ប្រព័ន្ធ"
 
 #. i18n: file: ui/security/wep.ui:110
 #. i18n: ectx: property (text), item, widget (KComboBox, authalg)
-#: rc.cpp:333
+#: rc.cpp:327
 msgid "Shared Key"
 msgstr "សោ​រួម"
 
 #. i18n: file: ui/security/wep.ui:118
 #. i18n: ectx: property (text), widget (QLabel, keyLabel)
-#: rc.cpp:336
+#: rc.cpp:330
 msgid "&Key:"
 msgstr "សោ ៖"
 
 #. i18n: file: ui/security/wep.ui:144
 #. i18n: ectx: property (text), widget (QLabel, passphraseLabel)
-#: rc.cpp:339
+#: rc.cpp:333
 msgid "&Passphrase:"
 msgstr "ឃ្លា​សម្ងាត់ ៖"
+
+#. i18n: file: ui/security/wirelesssecurity.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, WirelessSecurity)
+#: rc.cpp:339
+msgid "Wireless Security"
+msgstr "សុវត្ថិភាព​ឥតខ្សែ"
+
+#. i18n: file: ui/security/wirelesssecurity.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:342
+msgid "&Security:"
+msgstr "សុវត្ថិភាព ៖"
 
 #. i18n: file: ui/security/security.ui:188
 #. i18n: ectx: property (text), widget (QLabel, label_12)
