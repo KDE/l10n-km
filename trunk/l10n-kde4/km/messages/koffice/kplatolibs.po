@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-25 07:16+0200\n"
+"POT-Creation-Date: 2009-08-29 07:29+0200\n"
 "PO-Revision-Date: 2009-05-28 16:27+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -573,12 +573,12 @@ msgid "Deleted"
 msgstr "លុប"
 
 #: kernel/kptglobal.cpp:153 kernel/kptschedule.cpp:1610
-#: models/kptschedulemodel.cpp:636
+#: models/kptschedulemodel.cpp:638
 msgid "Not scheduled"
 msgstr "មិន​បាន​កំណត់​ពេល"
 
-#: kernel/kptglobal.cpp:154 models/kptschedulemodel.cpp:636
-#: models/kptschedulemodel.cpp:717
+#: kernel/kptglobal.cpp:154 models/kptschedulemodel.cpp:638
+#: models/kptschedulemodel.cpp:719
 #, fuzzy
 #| msgid "Schedule:"
 msgid "Scheduled"
@@ -614,7 +614,7 @@ msgstr "មិន​​អាច​បំពេញ​កា​របង្ខំ
 #: models/kptnodeitemmodel.cpp:504 models/kptnodeitemmodel.cpp:539
 #: models/kptnodeitemmodel.cpp:545 models/kptnodeitemmodel.cpp:555
 #: models/kptresourcemodel.cpp:186 models/kptresourcemodel.cpp:201
-#: models/kptschedulemodel.cpp:432 models/kptschedulemodel.cpp:434
+#: models/kptschedulemodel.cpp:434 models/kptschedulemodel.cpp:436
 #: ui/kptpertresult.cpp:138 ui/kptpertresult.cpp:483
 #: ui/kptresourcedialog.cpp:152 ui/kpttaskcostpanel.cpp:40
 #: ui/kpttaskgeneralpanel.cpp:72
@@ -1054,13 +1054,13 @@ msgid "Letter, lower case"
 msgstr "អក្សរ អក្សរ​តូច"
 
 #: kernel/kptcalendar.h:214 kernel/kptcalendar.h:225
-#: models/kptcalendarmodel.cpp:895 ui/kptcalendareditor.cpp:204
+#: models/kptcalendarmodel.cpp:923 ui/kptcalendareditor.cpp:204
 #: ui/kptcalendareditor.cpp:605
 msgid "Undefined"
 msgstr "មិន​បាន​កំណត់"
 
 #: kernel/kptcalendar.h:216 kernel/kptcalendar.h:225
-#: models/kptcalendarmodel.cpp:898 ui/kptcalendareditor.cpp:202
+#: models/kptcalendarmodel.cpp:926 ui/kptcalendareditor.cpp:202
 #: ui/kptcalendareditor.cpp:603
 msgid "Non-working"
 msgstr "មិន​ធ្វើការ​"
@@ -1080,13 +1080,13 @@ msgid "%1 (Default account)"
 msgstr "លុប​គណនី %1"
 
 #: models/kptaccountsmodel.cpp:121 models/kptaccountsmodel.cpp:963
-#: models/kptcalendarmodel.cpp:390 models/kptnodeitemmodel.cpp:1681
+#: models/kptcalendarmodel.cpp:418 models/kptnodeitemmodel.cpp:1681
 #: models/kptresourceallocationmodel.cpp:305
 #: models/kptresourceappointmentsmodel.cpp:901
 #: models/kptresourceappointmentsmodel.cpp:916
 #: models/kptresourceappointmentsmodel.cpp:1401
-#: models/kptresourcemodel.cpp:361 models/kptschedulemodel.cpp:708
-#: models/kptschedulemodel.cpp:935 ui/kptdoublelistviewbase.cpp:359
+#: models/kptresourcemodel.cpp:361 models/kptschedulemodel.cpp:710
+#: models/kptschedulemodel.cpp:937 ui/kptdoublelistviewbase.cpp:359
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -1136,60 +1136,80 @@ msgstr "សរុប"
 msgid "The total cost for the account shown as: Actual cost [ Planned cost ]"
 msgstr "តម្លៃ​សរុប​សម្រាប់​គណនី"
 
-#: models/kptcalendarmodel.cpp:280
+#: models/kptcalendarmodel.cpp:271
+#, fuzzy, kde-format
+#| msgid "Delete Account"
+#| msgid_plural "Delete %1 Accounts"
+msgctxt "1=calendar name"
+msgid "%1 (Default calendar)"
+msgstr "លុប​គណនី %1"
+
+#: models/kptcalendarmodel.cpp:288
 #, fuzzy
 #| msgid "Modify Calendar"
 msgid "Modify Calendar Name"
 msgstr "កែប្រែ​ប្រតិទិន"
 
-#: models/kptcalendarmodel.cpp:333
+#: models/kptcalendarmodel.cpp:296
+#, fuzzy
+#| msgid "Delete Selected Accounts"
+msgid "De-select as default calendar"
+msgstr "លុប​គណនី​ដែល​បាន​ជ្រើស"
+
+#: models/kptcalendarmodel.cpp:302
+#, fuzzy
+#| msgid "Delete Selected Accounts"
+msgid "Select as default calendar"
+msgstr "លុប​គណនី​ដែល​បាន​ជ្រើស"
+
+#: models/kptcalendarmodel.cpp:360
 #, fuzzy
 #| msgid "Modify Calendar"
 msgid "Modify Calendar Timezone"
 msgstr "កែប្រែ​ប្រតិទិន"
 
-#: models/kptcalendarmodel.cpp:391
+#: models/kptcalendarmodel.cpp:419
 msgid "Timezone"
 msgstr "តំបន់​ពេលវេលា"
 
-#: models/kptcalendarmodel.cpp:479
+#: models/kptcalendarmodel.cpp:507
 #, fuzzy
 #| msgid "Add Calendar"
 msgid "Re-parent Calendar"
 msgstr "បន្ថែម​ប្រតិទិន"
 
-#: models/kptcalendarmodel.cpp:532 ui/kptcalendareditor.cpp:582
+#: models/kptcalendarmodel.cpp:560 ui/kptcalendareditor.cpp:582
 msgid "Add Calendar"
 msgstr "បន្ថែម​ប្រតិទិន"
 
-#: models/kptcalendarmodel.cpp:555
+#: models/kptcalendarmodel.cpp:583
 #, fuzzy
 #| msgid "Delete Selected Calendar"
 msgid "Delete Calendar"
 msgstr "លុប​ប្រតិទិន​ដែល​បាន​ជ្រើស"
 
-#: models/kptcalendarmodel.cpp:719
+#: models/kptcalendarmodel.cpp:747
 msgctxt "Undefined"
 msgid "U"
 msgstr "U"
 
-#: models/kptcalendarmodel.cpp:720 models/kptcalendarmodel.cpp:936
+#: models/kptcalendarmodel.cpp:748 models/kptcalendarmodel.cpp:964
 msgctxt "NonWorking"
 msgid "NW"
 msgstr "NW"
 
-#: models/kptcalendarmodel.cpp:721
+#: models/kptcalendarmodel.cpp:749
 msgctxt "Working"
 msgid "W"
 msgstr "W"
 
-#: models/kptcalendarmodel.cpp:750
+#: models/kptcalendarmodel.cpp:778
 #, fuzzy
 #| msgid "Modify Calendar"
 msgid "Modify Calendar State"
 msgstr "កែប្រែ​ប្រតិទិន"
 
-#: models/kptcalendarmodel.cpp:771 models/kptcalendarmodel.cpp:903
+#: models/kptcalendarmodel.cpp:799 models/kptcalendarmodel.cpp:931
 #, kde-format
 msgctxt "1=time 2=The number of hours of work duration (non integer)"
 msgid "%1, %2 hours"
@@ -1821,7 +1841,7 @@ msgid "Critical"
 msgstr "ផ្លូវ​សំខាន់"
 
 #: models/kptnodeitemmodel.cpp:1759 models/kptpertcpmmodel.cpp:425
-#: ui/kptscheduleeditor.cpp:534
+#: ui/kptscheduleeditor.cpp:535
 msgid "Critical Path"
 msgstr "ផ្លូវ​សំខាន់"
 
@@ -2194,85 +2214,85 @@ msgstr "បន្ថែម​ក្រុម​ធនធាន..."
 msgid "Add resource"
 msgstr "បន្ថែម​ធនធាន..."
 
-#: models/kptschedulemodel.cpp:392 models/kptschedulemodel.cpp:394
+#: models/kptschedulemodel.cpp:394 models/kptschedulemodel.cpp:396
 msgid "Allow"
 msgstr "អនុញ្ញាត"
 
-#: models/kptschedulemodel.cpp:392 models/kptschedulemodel.cpp:394
+#: models/kptschedulemodel.cpp:394 models/kptschedulemodel.cpp:396
 msgid "Avoid"
 msgstr "ជៀសវាង"
 
-#: models/kptschedulemodel.cpp:432 models/kptschedulemodel.cpp:434
+#: models/kptschedulemodel.cpp:434 models/kptschedulemodel.cpp:436
 msgid "PERT"
 msgstr "PERT"
 
-#: models/kptschedulemodel.cpp:472 models/kptschedulemodel.cpp:474
+#: models/kptschedulemodel.cpp:474 models/kptschedulemodel.cpp:476
 msgid "All"
 msgstr "ទាំងអស់"
 
-#: models/kptschedulemodel.cpp:472 models/kptschedulemodel.cpp:474
+#: models/kptschedulemodel.cpp:474 models/kptschedulemodel.cpp:476
 msgid "Expected only"
 msgstr "សម្រាប់​តែ​ការ​រំពឹង​ទុក​ប៉ុណ្ណោះ"
 
-#: models/kptschedulemodel.cpp:557 models/kptschedulemodel.cpp:559
+#: models/kptschedulemodel.cpp:559 models/kptschedulemodel.cpp:561
 msgid "Backwards"
 msgstr "ថយក្រោយ"
 
-#: models/kptschedulemodel.cpp:557 models/kptschedulemodel.cpp:559
+#: models/kptschedulemodel.cpp:559 models/kptschedulemodel.cpp:561
 msgid "Forward"
 msgstr "ទៅ​មុខ"
 
-#: models/kptschedulemodel.cpp:709
+#: models/kptschedulemodel.cpp:711
 msgid "State"
 msgstr "ស្ថានភាព"
 
-#: models/kptschedulemodel.cpp:710
+#: models/kptschedulemodel.cpp:712
 #, fuzzy
 #| msgid "Duration"
 msgid "Direction"
 msgstr "ថិរវេលា"
 
-#: models/kptschedulemodel.cpp:711
+#: models/kptschedulemodel.cpp:713
 msgid "Overbooking"
 msgstr "លើស"
 
-#: models/kptschedulemodel.cpp:712
+#: models/kptschedulemodel.cpp:714
 #, fuzzy
 #| msgid "Description"
 msgid "Distribution"
 msgstr "ការពិពណ៌នា"
 
-#: models/kptschedulemodel.cpp:713 ui/kptscheduleeditor.cpp:233
+#: models/kptschedulemodel.cpp:715 ui/kptscheduleeditor.cpp:234
 msgid "Calculate"
 msgstr "គណនា"
 
-#: models/kptschedulemodel.cpp:714
+#: models/kptschedulemodel.cpp:716
 #, fuzzy
 #| msgid "Planned Effort"
 msgid "Planned Start"
 msgstr "កិច្ចប្រឹងប្រែង​ដែល​បាន​រៀបចំ"
 
-#: models/kptschedulemodel.cpp:715
+#: models/kptschedulemodel.cpp:717
 #, fuzzy
 #| msgid "Planned cost"
 msgid "Planned Finish"
 msgstr "តម្លៃ​ដែលបាន​គ្រោង"
 
-#: models/kptschedulemodel.cpp:716
+#: models/kptschedulemodel.cpp:718
 #, fuzzy
 #| msgid "Schedule:"
 msgid "Scheduler"
 msgstr "កាលវិភាគ ៖"
 
-#: models/kptschedulemodel.cpp:935
+#: models/kptschedulemodel.cpp:937
 msgid "Phase"
 msgstr "ដំណាក់កាល"
 
-#: models/kptschedulemodel.cpp:935
+#: models/kptschedulemodel.cpp:937
 msgid "Severity"
 msgstr "ភាព​ប៉ិនប្រសព្វ"
 
-#: models/kptschedulemodel.cpp:935
+#: models/kptschedulemodel.cpp:937
 msgid "Message"
 msgstr "សារ"
 
@@ -2319,9 +2339,10 @@ msgid "Work package sent at: %1"
 msgstr "កា​រត្រួតពិនិត្យ​កញ្ចប់​ការងារ"
 
 #: models/kptworkpackagemodel.cpp:103
-#, kde-format
-msgid "Work package transmition received at: %1"
-msgstr ""
+#, fuzzy, kde-format
+#| msgid "Work Package Control"
+msgid "Work package transmission received at: %1"
+msgstr "កា​រត្រួតពិនិត្យ​កញ្ចប់​ការងារ"
 
 #: models/kptworkpackagemodel.cpp:130
 #, fuzzy, kde-format
@@ -2387,19 +2408,19 @@ msgstr "%1 ៖ កំណត់​ទៅ​មិន​ធ្វើការ"
 msgid "Set %1 to Undefined"
 msgstr "កំណត់ %1 ទៅ​មិន​បានកំណត់"
 
-#: ui/kptdependencyeditor.cpp:1973 ui/kpttaskeditor.cpp:292
+#: ui/kptdependencyeditor.cpp:1974 ui/kpttaskeditor.cpp:292
 msgid "Add Task..."
 msgstr "បន្ថែម​ភារកិច្ច..."
 
-#: ui/kptdependencyeditor.cpp:1979 ui/kpttaskeditor.cpp:298
+#: ui/kptdependencyeditor.cpp:1980 ui/kpttaskeditor.cpp:298
 msgid "Add Sub-Task..."
 msgstr "បន្ថែម​ភារកិច្ច​រង..."
 
-#: ui/kptdependencyeditor.cpp:1985 ui/kpttaskeditor.cpp:304
+#: ui/kptdependencyeditor.cpp:1986 ui/kpttaskeditor.cpp:304
 msgid "Add Milestone..."
 msgstr "បន្ថែម​ដំណាក់កាល..."
 
-#: ui/kptdependencyeditor.cpp:1991 ui/kpttaskeditor.cpp:310
+#: ui/kptdependencyeditor.cpp:1992 ui/kpttaskeditor.cpp:310
 msgid "Delete Task"
 msgstr "លុបភារកិច្ច"
 
@@ -2625,36 +2646,36 @@ msgstr "បន្ថែម​ធនធាន..."
 msgid "Delete Selected Items"
 msgstr "លុប​ធាតុ​ដែល​បាន​ជ្រើស"
 
-#: ui/kptscheduleeditor.cpp:215
+#: ui/kptscheduleeditor.cpp:216
 msgid "Add Schedule"
 msgstr "បន្ថែម​កាលវិភាគ..."
 
-#: ui/kptscheduleeditor.cpp:221
+#: ui/kptscheduleeditor.cpp:222
 msgid "Add Sub-schedule"
 msgstr "បន្ថែម​កាលវិភាគ​រង..."
 
-#: ui/kptscheduleeditor.cpp:227
+#: ui/kptscheduleeditor.cpp:228
 msgid "Delete Selection"
 msgstr "លុប​ជម្រើស"
 
-#: ui/kptscheduleeditor.cpp:239
+#: ui/kptscheduleeditor.cpp:240
 msgid "Baseline"
 msgstr "បន្ទាត់​មូលដ្ឋាន"
 
-#: ui/kptscheduleeditor.cpp:292 ui/kptscheduleeditor.cpp:319
+#: ui/kptscheduleeditor.cpp:293 ui/kptscheduleeditor.cpp:320
 msgid "Create sub-schedule"
 msgstr "បង្កើត​កាលវិភាគ​រង"
 
-#: ui/kptscheduleeditor.cpp:302
+#: ui/kptscheduleeditor.cpp:303
 #, kde-format
 msgid "Add schedule %1"
 msgstr "បន្ថែម​កាលវិភាគ %1"
 
-#: ui/kptscheduleeditor.cpp:529
+#: ui/kptscheduleeditor.cpp:530
 msgid "Result"
 msgstr "លទ្ធផល"
 
-#: ui/kptscheduleeditor.cpp:539
+#: ui/kptscheduleeditor.cpp:540
 msgid "Scheduling Log"
 msgstr "កំណត់ហេតុ​កំណត់​ពេលវេលា"
 
@@ -2781,13 +2802,13 @@ msgstr "កែប្រែ​វឌ្ឍនភាពភារកិច្ច"
 msgid "Modify task completion"
 msgstr "កែប្រែ​ការ​បញ្ចប់​ភារកិច្ច"
 
-#: ui/kpttaskprogresspanel.cpp:410 ui/kpttaskprogresspanel.cpp:425
+#: ui/kpttaskprogresspanel.cpp:405 ui/kpttaskprogresspanel.cpp:420
 #, kde-format
 msgctxt "Week number (year)"
 msgid "Week %1 (%2)"
 msgstr "សប្ដាហ៍ %1 (%2)"
 
-#: ui/kpttaskprogresspanel.cpp:416 ui/kpttaskprogresspanel.cpp:423
+#: ui/kpttaskprogresspanel.cpp:411 ui/kpttaskprogresspanel.cpp:418
 #, kde-format
 msgctxt "Week number"
 msgid "Week %1"

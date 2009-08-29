@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: choqok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-27 07:22+0200\n"
+"POT-Creation-Date: 2009-08-29 07:31+0200\n"
 "PO-Revision-Date: 2009-01-19 13:42+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -68,7 +68,7 @@ msgid "Private messages you have sent"
 msgstr "បានប្រកាស​ស្ថានភាព​ថ្មី​ដោយជោគជ័យ"
 
 #: helperlibs/twitterapihelper/twitterapimicroblog.cpp:121
-msgid "Send Private Message"
+msgid "Send Private Message..."
 msgstr ""
 
 #: helperlibs/twitterapihelper/twitterapimicroblog.cpp:303
@@ -136,19 +136,23 @@ msgstr "ឆ្លើយតប"
 msgid "in reply to"
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:72
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:54
+msgid "Send Private Message"
+msgstr ""
+
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:74
 msgid "To:"
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:76
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:79
 msgid "Reload friends list"
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:102
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:105
 msgid "Please wait..."
 msgstr ""
 
-#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:147
+#: helperlibs/twitterapihelper/twitterapidmessagedialog.cpp:150
 #, fuzzy
 #| msgid "New status posted successfully"
 msgid "Private message sent successfully"
@@ -296,6 +300,12 @@ msgstr ""
 msgid "Appearance"
 msgstr "រូបរាង"
 
+#: choqok/config/plugins/choqokpluginconfig.cpp:60
+#, fuzzy
+#| msgid "General"
+msgid "General Plugins"
+msgstr "ទូទៅ"
+
 #: choqok/systrayicon.cpp:73
 #, fuzzy, kde-format
 #| msgid "choqoK - 1 unread status"
@@ -376,14 +386,18 @@ msgid "File"
 msgstr "ឯកសារ"
 
 #. i18n: file: choqok/choqokui.rc:11
-#. i18n: ectx: Menu (accounts)
-#: rc.cpp:8
-#, fuzzy
-#| msgid "Accounts"
-msgid "Accounts"
-msgstr "គណនី"
+#. i18n: ectx: Menu (tools)
+#. i18n: file: plugins/nowlistening/nowlisteningui.rc:4
+#. i18n: ectx: Menu (tools)
+#. i18n: file: choqok/choqokui.rc:11
+#. i18n: ectx: Menu (tools)
+#. i18n: file: plugins/nowlistening/nowlisteningui.rc:4
+#. i18n: ectx: Menu (tools)
+#: rc.cpp:8 rc.cpp:238
+msgid "Tools"
+msgstr ""
 
-#. i18n: file: choqok/choqokui.rc:14
+#. i18n: file: choqok/choqokui.rc:13
 #. i18n: ectx: Menu (settings)
 #: rc.cpp:11
 msgid "Settings"
@@ -950,6 +964,11 @@ msgstr "Twitter.com"
 msgid "Laconica MicroBlog"
 msgstr "Twitter.com"
 
+#: plugins/nowlistening/nowlistening.cpp:36
+#: plugins/nowlistening/nowlistening.cpp:42
+msgid "Now Listening"
+msgstr ""
+
 #: plugins/shorteners/digg/digg.cpp:35
 msgid "Digg.com Shortener"
 msgstr ""
@@ -974,23 +993,23 @@ msgstr "បានប្រកាស​ស្ថានភាព​ថ្មី​
 msgid "Abort"
 msgstr ""
 
-#: libchoqok/ui/postwidget.cpp:125
+#: libchoqok/ui/postwidget.cpp:131
 msgctxt "@info:tooltip"
 msgid "ReSend"
 msgstr ""
 
-#: libchoqok/ui/postwidget.cpp:129
+#: libchoqok/ui/postwidget.cpp:135
 #, fuzzy
 #| msgid "Remove"
 msgctxt "@info:tooltip"
 msgid "Remove"
 msgstr "យកចេញ"
 
-#: libchoqok/ui/postwidget.cpp:305
+#: libchoqok/ui/postwidget.cpp:308
 msgid "Just now"
 msgstr "ឥឡូវ"
 
-#: libchoqok/ui/postwidget.cpp:310
+#: libchoqok/ui/postwidget.cpp:313
 #, fuzzy, kde-format
 #| msgid "about 1 second ago"
 #| msgid_plural "about %1 seconds ago"
@@ -998,7 +1017,7 @@ msgid "1 sec ago"
 msgid_plural "%1 secs ago"
 msgstr[0] "ប្រហែល %1 វិនាទី​កន្លង​ទៅ"
 
-#: libchoqok/ui/postwidget.cpp:316
+#: libchoqok/ui/postwidget.cpp:319
 #, fuzzy, kde-format
 #| msgid "about 1 minute ago"
 #| msgid_plural "about %1 minutes ago"
@@ -1006,7 +1025,7 @@ msgid "1 min ago"
 msgid_plural "%1 mins ago"
 msgstr[0] "ប្រហែល​ %1 នាទី​កន្លង​ទៅ​ហើយ"
 
-#: libchoqok/ui/postwidget.cpp:322
+#: libchoqok/ui/postwidget.cpp:325
 #, fuzzy, kde-format
 #| msgid "about 1 hour ago"
 #| msgid_plural "about %1 hours ago"
@@ -1014,7 +1033,7 @@ msgid "1 hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] "ប្រហែល %1 កន្លង​ទៅ"
 
-#: libchoqok/ui/postwidget.cpp:327
+#: libchoqok/ui/postwidget.cpp:330
 #, fuzzy, kde-format
 #| msgid "about 1 day ago"
 #| msgid_plural "about %1 days ago"
@@ -1022,11 +1041,15 @@ msgid "1 day ago"
 msgid_plural "%1 days ago"
 msgstr[0] "ប្រហែល %1 ថ្ងៃ​កន្លង​ទៅ"
 
-#: libchoqok/ui/postwidget.cpp:332
+#: libchoqok/ui/postwidget.cpp:335
 #, fuzzy
 #| msgid "Are you sure of destroying this status?"
 msgid "Are you sure to remove this post from server?"
 msgstr "តើ​អ្នក​ប្រាកដ​ជា​ចង់​បំផ្លាញ​ស្ថានភាព​នេះ​ឬ ?"
+
+#: libchoqok/ui/postwidget.cpp:420
+msgid "Copy Post Text"
+msgstr ""
 
 #: libchoqok/ui/timelinewidget.cpp:164 libchoqok/ui/microblogwidget.cpp:209
 msgid "Mark all as read"
@@ -1121,6 +1144,11 @@ msgid ""
 "An account with this alias already exists: a unique alias has to be "
 "specified."
 msgstr ""
+
+#, fuzzy
+#~| msgid "Accounts"
+#~ msgid "Accounts"
+#~ msgstr "គណនី"
 
 #, fuzzy
 #~| msgid "Add a new account"
