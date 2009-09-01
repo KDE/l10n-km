@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-08-25 07:19+0200\n"
+"POT-Creation-Date: 2009-09-01 06:58+0200\n"
 "PO-Revision-Date: 2009-06-09 08:58+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -103,62 +103,83 @@ msgstr "មិនអាច​បើក​រន្ធ​បានទេ"
 
 #. i18n: file: src/config/ignore_configui.ui:97
 #. i18n: ectx: property (text), widget (QCheckBox, chkDCC)
-#: src/dcc/chat.cpp:178 src/dcc/chat.cpp:188 src/dcc/chat.cpp:201
-#: src/dcc/chat.cpp:219 src/dcc/chat.cpp:224 src/dcc/chat.cpp:229
-#: src/dcc/chat.cpp:373 src/dcc/chat.cpp:378 src/irc/inputfilter.cpp:368
-#: src/irc/inputfilter.cpp:383 src/irc/inputfilter.cpp:398
-#: src/irc/inputfilter.cpp:414 src/irc/inputfilter.cpp:422
-#: src/irc/server.cpp:1874 src/irc/server.cpp:1905 src/irc/server.cpp:1917
-#: src/irc/server.cpp:2017 src/irc/server.cpp:2068 src/irc/server.cpp:2125
-#: src/irc/server.cpp:2130 src/irc/server.cpp:2142 src/irc/server.cpp:2145
-#: src/irc/server.cpp:2159 src/irc/server.cpp:2166
+#: src/dcc/chat.cpp:160 src/dcc/chat.cpp:190 src/dcc/chat.cpp:200
+#: src/dcc/chat.cpp:213 src/dcc/chat.cpp:231 src/dcc/chat.cpp:236
+#: src/dcc/chat.cpp:241 src/dcc/chat.cpp:385 src/dcc/chat.cpp:390
+#: src/irc/inputfilter.cpp:368 src/irc/inputfilter.cpp:383
+#: src/irc/inputfilter.cpp:398 src/irc/inputfilter.cpp:414
+#: src/irc/inputfilter.cpp:422 src/irc/server.cpp:1874 src/irc/server.cpp:1905
+#: src/irc/server.cpp:1917 src/irc/server.cpp:2017 src/irc/server.cpp:2068
+#: src/irc/server.cpp:2125 src/irc/server.cpp:2130 src/irc/server.cpp:2142
+#: src/irc/server.cpp:2145 src/irc/server.cpp:2159 src/irc/server.cpp:2166
 #: src/config/settingsdialog.cpp:143 src/viewer/ignorelistviewitem.cpp:46
 #: rc.cpp:886
 msgid "DCC"
 msgstr "DCC"
 
-#: src/dcc/chat.cpp:178
+#: src/dcc/chat.cpp:160 src/dcc/transferrecv.cpp:479
+#: src/dcc/transferrecv.cpp:511
+msgid ""
+"Could not send Reverse DCC SEND acknowledgement to the partner via the IRC "
+"server."
+msgstr ""
+"មិនអាច​ផ្ញើ​​ការ​ទទួល​ស្គាល់ DCC SEND ដាក់​បញ្ច្រាស​ទៅ​កាន់​ដៃគូ​តាមរយៈ​ម៉ាស៊ីនបម្រើ IRC បានទេ ។"
+
+#: src/dcc/chat.cpp:171 src/dcc/transfersend.cpp:350
+#: src/dcc/transferrecv.cpp:524
+msgctxt "Universal Plug and Play"
+msgid "UPnP"
+msgstr ""
+
+#: src/dcc/chat.cpp:171 src/dcc/transfersend.cpp:350
+#: src/dcc/transferrecv.cpp:524
+#, kde-format
+msgid ""
+"Failed to forward port %1. Sending DCC request to remote user regardless."
+msgstr ""
+
+#: src/dcc/chat.cpp:190
 #, kde-format
 msgid "Could not open a socket for listening: %1"
 msgstr "មិនអាច​បើក​រន្ធ​ដើម្បី​ស្ដាប់ ៖ %1"
 
-#: src/dcc/chat.cpp:188
+#: src/dcc/chat.cpp:200
 #, kde-format
 msgid "Offering DCC Chat connection to %1 on port %2..."
 msgstr "ផ្ដល់​ការ​តភ្ជាប់​ជជែក DCC ទៅកាន់ %1 នៅ​លើ​ច្រក %2..."
 
-#: src/dcc/chat.cpp:190
+#: src/dcc/chat.cpp:202
 #, kde-format
 msgid "DCC chat with %1 on port %2."
 msgstr "DCC ជជែក​ជា​មួយ %1 នៅ​លើ​ច្រក %2 ។"
 
-#: src/dcc/chat.cpp:202
+#: src/dcc/chat.cpp:214
 #, kde-format
 msgctxt "%1 = nickname, %2 = IP, %3 = port"
 msgid "Establishing DCC Chat connection to %1 (%2:%3)..."
 msgstr "បង្កើត​ការ​តភ្ជាប់ DCC ទៅកាន់ %1 (%2:%3)..."
 
-#: src/dcc/chat.cpp:204
+#: src/dcc/chat.cpp:216
 #, kde-format
 msgctxt "%1 = nickname, %2 = IP, %3 = port"
 msgid "DCC chat with %1 on %2:%3."
 msgstr "DCC ជជែក​ជា​មួយ %1 នៅ​លើ %2:%3 ។"
 
-#: src/dcc/chat.cpp:219
+#: src/dcc/chat.cpp:231
 #, kde-format
 msgid "Looking for host %1..."
 msgstr "កំពុង​រក​មើល​ម៉ាស៊ីន %1..."
 
-#: src/dcc/chat.cpp:224
+#: src/dcc/chat.cpp:236
 msgid "Host found, connecting..."
 msgstr "រក​ឃើញ​ម៉ាស៊ីន កំពុង​តភ្ជាប់..."
 
-#: src/dcc/chat.cpp:229 src/dcc/chat.cpp:373
+#: src/dcc/chat.cpp:241 src/dcc/chat.cpp:385
 #, kde-format
 msgid "Established DCC Chat connection to %1."
 msgstr "ការ​ជជែក DCC ដែល​បានបង្កើត​តភ្ជាប់​ទៅ​កាន់ %1 ។"
 
-#: src/dcc/chat.cpp:235 src/dcc/chat.cpp:352 src/irc/outputfilter.cpp:1352
+#: src/dcc/chat.cpp:247 src/dcc/chat.cpp:364 src/irc/outputfilter.cpp:1352
 #: src/irc/outputfilter.cpp:1665 src/irc/inputfilter.cpp:1148
 #: src/irc/inputfilter.cpp:1152 src/irc/inputfilter.cpp:1165
 #: src/irc/inputfilter.cpp:1236 src/irc/inputfilter.cpp:1407
@@ -171,14 +192,14 @@ msgstr "ការ​ជជែក DCC ដែល​បានបង្កើត​�
 msgid "Error"
 msgstr "កំហុស"
 
-#: src/dcc/chat.cpp:235
+#: src/dcc/chat.cpp:247
 #, kde-format
 msgid "Connection broken, error (%1) %2."
 msgstr "ការ​តភ្ជាប់ខូច​ហើយ កំហុស (%1) %2 ។"
 
 #. i18n: file: src/config/ignore_configui.ui:83
 #. i18n: ectx: property (text), widget (QCheckBox, chkCTCP)
-#: src/dcc/chat.cpp:273 src/irc/outputfilter.cpp:762
+#: src/dcc/chat.cpp:285 src/irc/outputfilter.cpp:762
 #: src/irc/inputfilter.cpp:269 src/irc/inputfilter.cpp:276
 #: src/irc/inputfilter.cpp:292 src/irc/inputfilter.cpp:299
 #: src/irc/inputfilter.cpp:431 src/irc/inputfilter.cpp:439
@@ -187,20 +208,20 @@ msgstr "ការ​តភ្ជាប់ខូច​ហើយ កំហុស (
 msgid "CTCP"
 msgstr "CTCP"
 
-#: src/dcc/chat.cpp:273
+#: src/dcc/chat.cpp:285
 #, kde-format
 msgid "Received unknown CTCP-%1 request from %2"
 msgstr "បាន​ទទួល CTCP-%1 ដែល​មិន​ស្គាល់ ស្នើ​ពី %2"
 
-#: src/dcc/chat.cpp:352
+#: src/dcc/chat.cpp:364
 msgid "Could not accept the client."
 msgstr "មិនអាច​ទទួល​យក​ម៉ាស៊ីន​ភ្ញៀវ​បានទេ ។"
 
-#: src/dcc/chat.cpp:378
+#: src/dcc/chat.cpp:390
 msgid "Connection closed."
 msgstr "បាន​បិទ​ការ​តភ្ជាប់"
 
-#: src/dcc/chat.cpp:448
+#: src/dcc/chat.cpp:460
 #, kde-format
 msgid "Default ( %1 )"
 msgstr "លំនាំដើម ( %1 )"
@@ -253,55 +274,55 @@ msgstr "មិនអាច​ផ្ញើ​សំណើ DCC SEND ទៅ​ក�
 msgid "Awaiting remote user's acceptance"
 msgstr "រង់ចាំ​កា​រទទួល​របស់​អ្នក​ប្រើ​ពី​ចម្ងាយ"
 
-#: src/dcc/transfersend.cpp:401 src/dcc/transferrecv.cpp:620
+#: src/dcc/transfersend.cpp:404 src/dcc/transferrecv.cpp:623
 msgid "Could not accept the connection (socket error.)"
 msgstr "មិនអាច​ទទួល​យក​ការ​តភ្ជាប់បានទេ (កំហុស​របស់​រន្ធ ។)"
 
-#: src/dcc/transfersend.cpp:512
+#: src/dcc/transfersend.cpp:515
 #, kde-format
 msgid "Socket error: %1"
 msgstr "កំហុស​រន្ធ ៖ %1"
 
-#: src/dcc/transfersend.cpp:534 src/dcc/transferrecv.cpp:745
+#: src/dcc/transfersend.cpp:537 src/dcc/transferrecv.cpp:748
 msgid "Timed out"
 msgstr "អស់ពេល"
 
-#: src/dcc/transfersend.cpp:544
+#: src/dcc/transfersend.cpp:547
 msgid "The operation was successful. Should never happen in an error dialog."
 msgstr "ប្រតិបត្តិការ​ជោគជ័យ ។ មិនគួរ​កើត​ឡើង​ក្នុង​ប្រអប់កំហុស​នេះ​ទេ ។"
 
-#: src/dcc/transfersend.cpp:547
+#: src/dcc/transfersend.cpp:550
 #, kde-format
 msgid "Could not read from file \"%1\"."
 msgstr "មិនអាច​អាន​ពី​ឯកសារ \"%1\" បានទេ ។"
 
-#: src/dcc/transfersend.cpp:550
+#: src/dcc/transfersend.cpp:553
 #, kde-format
 msgid "Could not write to file \"%1\"."
 msgstr "មិនអាច​សរសេរ​ទៅ​កាន់​ឯកសារ \"%1\" បានទេ ។"
 
-#: src/dcc/transfersend.cpp:553
+#: src/dcc/transfersend.cpp:556
 msgid "A fatal unrecoverable error occurred."
 msgstr "កំហុស​ធ្ងន់ធ្ងរ​ដែល​មិន​អាច​សង្គ្រោះ​បាន​កើត​ឡើង ។"
 
-#: src/dcc/transfersend.cpp:556
+#: src/dcc/transfersend.cpp:559
 #, kde-format
 msgid "Could not open file \"%1\"."
 msgstr "មិន​អាច​បើក​ឯកសារ \"%1\" ។"
 
-#: src/dcc/transfersend.cpp:565
+#: src/dcc/transfersend.cpp:568
 msgid "The operation was unexpectedly aborted."
 msgstr "ប្រតិបត្តិការ​បាន​បោះបង់​ដោយ​មិន​រំពឹង​ទុក ។"
 
-#: src/dcc/transfersend.cpp:568
+#: src/dcc/transfersend.cpp:571
 msgid "The operation timed out."
 msgstr "ប្រតិបត្តិកា​រអះពេល ។"
 
-#: src/dcc/transfersend.cpp:571
+#: src/dcc/transfersend.cpp:574
 msgid "An unspecified error happened on close."
 msgstr "កំហុស​ដែល​មិនបាន​បញ្ជាក់​បានកើតឡើង​នៅពេល​បិទ ។"
 
-#: src/dcc/transfersend.cpp:574
+#: src/dcc/transfersend.cpp:577
 #, kde-format
 msgid "Unknown error. Code %1"
 msgstr "មិនស្គាល់​កំហុស ។ កូដ %1"
@@ -492,35 +513,28 @@ msgstr "<b>មាន​ឯកសារ​រួច​ហើយ ។</b><br>%1<br
 msgid "<b>Could not open the file.<br>Error: %1</b><br>%2<br>"
 msgstr "<b>មិន​អាច​បើក​ឯកសារ​បានទេ ។<br>កំហុស ៖ %1</b><br>%2<br>"
 
-#: src/dcc/transferrecv.cpp:479 src/dcc/transferrecv.cpp:511
-msgid ""
-"Could not send Reverse DCC SEND acknowledgement to the partner via the IRC "
-"server."
-msgstr ""
-"មិនអាច​ផ្ញើ​​ការ​ទទួល​ស្គាល់ DCC SEND ដាក់​បញ្ច្រាស​ទៅ​កាន់​ដៃគូ​តាមរយៈ​ម៉ាស៊ីនបម្រើ IRC បានទេ ។"
-
-#: src/dcc/transferrecv.cpp:524
+#: src/dcc/transferrecv.cpp:527
 msgid "Waiting for connection"
 msgstr "រង់ចាំ​ការ​តភ្ជាប់"
 
-#: src/dcc/transferrecv.cpp:533
+#: src/dcc/transferrecv.cpp:536
 msgid "Waiting for remote host's acceptance"
 msgstr "រង់ចាំ​ការ​ទទួល​របស់ម៉ាស៊ីន​ពី​ចម្ងាយ"
 
-#: src/dcc/transferrecv.cpp:543
+#: src/dcc/transferrecv.cpp:546
 msgid ""
 "Could not send DCC RECV resume request to the partner via the IRC server."
 msgstr "មិន​អាច​ផ្ញើ​​សំណើ​បន្ត DCC RECV ទៅ​ដៃគូ​តាមរយៈ​ម៉ាស៊ីន​បម្រើ  IRC បានទេ ។"
 
-#: src/dcc/transferrecv.cpp:565
+#: src/dcc/transferrecv.cpp:568
 msgid "Unexpected response from remote host"
 msgstr "ការ​ឆ្លើយតប​ដែល​មិន​រំពឹង​ទុក​ពី​ម៉ាស៊ីន​ពី​ចម្ងាយ"
 
-#: src/dcc/transferrecv.cpp:708
+#: src/dcc/transferrecv.cpp:711
 msgid "Transfer error"
 msgstr "កំហុស​ក្នុងកា​រផ្ទេរ"
 
-#: src/dcc/transferrecv.cpp:724
+#: src/dcc/transferrecv.cpp:727
 #, kde-format
 msgid "KIO error: %1"
 msgstr "កំហុស KIO ៖ %1"
