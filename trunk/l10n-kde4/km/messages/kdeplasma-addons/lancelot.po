@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lancelot\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-17 06:35+0200\n"
+"POT-Creation-Date: 2009-09-18 06:19+0200\n"
 "PO-Revision-Date: 2009-05-28 16:09+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -24,43 +24,47 @@ msgstr ""
 msgid "Remove this"
 msgstr "យក​វា​ចេញ"
 
-#: parts/LancelotPart.cpp:217 models/Places.cpp:33
+#: parts/LancelotPart.cpp:88 LancelotWindow.cpp:123
+msgid "Search"
+msgstr "ស្វែងរក"
+
+#: parts/LancelotPart.cpp:240 models/Places.cpp:33
 msgid "Places"
 msgstr "ទីកន្លែង"
 
-#: parts/LancelotPart.cpp:220 models/SystemServices.cpp:38
+#: parts/LancelotPart.cpp:243 models/SystemServices.cpp:38
 msgid "System"
 msgstr "ប្រព័ន្ធ"
 
-#: parts/LancelotPart.cpp:223
+#: parts/LancelotPart.cpp:246
 msgid "Removable devices"
 msgstr "ឧបករណ៍​ដែល​អា​ចយកចេញ​បាន"
 
-#: parts/LancelotPart.cpp:226
+#: parts/LancelotPart.cpp:249
 msgid "Fixed devices"
 msgstr "ឧបករណ៍​ថេរ"
 
-#: parts/LancelotPart.cpp:229
+#: parts/LancelotPart.cpp:252
 msgid "New Documents"
 msgstr "ឯកសារ​ថ្មី"
 
-#: parts/LancelotPart.cpp:232
+#: parts/LancelotPart.cpp:255
 msgid "Open Documents"
 msgstr "បើក​ឯកសារ"
 
-#: parts/LancelotPart.cpp:235 models/RecentDocuments.cpp:30
+#: parts/LancelotPart.cpp:258 models/RecentDocuments.cpp:30
 msgid "Recent Documents"
 msgstr "ឯកសារ​ថ្មីៗ"
 
-#: parts/LancelotPart.cpp:238 models/MessagesKmail.cpp:34
+#: parts/LancelotPart.cpp:261 models/MessagesKmail.cpp:34
 msgid "Unread messages"
 msgstr "សារ​ដែល​មិនបានអាន"
 
-#: parts/LancelotPart.cpp:241 i18n_strings.cpp:37
+#: parts/LancelotPart.cpp:264 i18n_strings.cpp:37
 msgid "Online contacts"
 msgstr "ទំនាក់ទំនង​លើ​បណ្ដាញ"
 
-#: parts/LancelotPart.cpp:245
+#: parts/LancelotPart.cpp:268
 msgid "Favorite Applications"
 msgstr "កម្មវិធី​សំណព្វ"
 
@@ -542,111 +546,127 @@ msgstr "បើក​ស្ថិតិ​ប្រើប្រាស់"
 msgid "Clear gathered data"
 msgstr "ជម្រះ​ទិន្នន័យ​ដែល​បាន​ប្រមូល"
 
-#. i18n: file: parts/LancelotPartConfigBase.ui:16
+#. i18n: file: parts/LancelotPartConfigBase.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, panelContents)
 #: rc.cpp:93
-msgid "Contents Behavior"
-msgstr "ឥរិយាបថ​មាតិកា"
+#, fuzzy
+#| msgid "Contacts"
+msgid "Contents"
+msgstr "ទំនាក់ទំនង"
 
-#. i18n: file: parts/LancelotPartConfigBase.ui:22
-#. i18n: ectx: property (text), widget (QRadioButton, radioContentsActivationClick)
+#. i18n: file: parts/LancelotPartConfigBase.ui:23
+#. i18n: ectx: property (text), widget (QCheckBox, checkShowSearchBox)
 #: rc.cpp:96
+msgid "Show the search box"
+msgstr ""
+
+#. i18n: file: parts/LancelotPartConfigBase.ui:37
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:99
+#, fuzzy
+#| msgid "Menu Activation"
+msgid "Activation:"
+msgstr "កា​រធ្វើ​ឲ្យម៉ឺនុយ​សកម្ម"
+
+#. i18n: file: parts/LancelotPartConfigBase.ui:44
+#. i18n: ectx: property (text), widget (QRadioButton, radioContentsActivationClick)
+#: rc.cpp:102
 msgid "Click to activate items"
 msgstr "ចុច​ដើម្បី​ធ្វើ​ឲ្យធាតុ​សកម្ម"
 
-#. i18n: file: parts/LancelotPartConfigBase.ui:32
+#. i18n: file: parts/LancelotPartConfigBase.ui:54
 #. i18n: ectx: property (text), widget (QRadioButton, radioContentsActivationExtender)
-#: rc.cpp:99
+#: rc.cpp:105
 msgid "Use no-click interface"
 msgstr "ប្រើ​ចំណុច​ប្រទាក់ដែលមិន​ចុច"
 
-#. i18n: file: parts/LancelotPartConfigBase.ui:42
+#. i18n: file: parts/LancelotPartConfigBase.ui:64
 #. i18n: ectx: property (title), widget (QGroupBox, panelContentsExtenderPosition)
-#: rc.cpp:102
+#: rc.cpp:108
 msgid "Extender Position"
 msgstr "ទីតាំង​ឧបករណ៍​ពង្រីក"
 
-#. i18n: file: parts/LancelotPartConfigBase.ui:48
+#. i18n: file: parts/LancelotPartConfigBase.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, radioContentsExtenderPositionLeft)
-#: rc.cpp:105
+#: rc.cpp:111
 msgid "Left"
 msgstr "ឆ្វេង"
 
-#. i18n: file: parts/LancelotPartConfigBase.ui:55
+#. i18n: file: parts/LancelotPartConfigBase.ui:77
 #. i18n: ectx: property (text), widget (QRadioButton, radioContentsExtenderPositionRight)
-#: rc.cpp:108
+#: rc.cpp:114
 msgid "Right"
 msgstr "ស្ដាំ"
 
-#. i18n: file: parts/LancelotPartConfigBase.ui:77
+#. i18n: file: parts/LancelotPartConfigBase.ui:99
 #. i18n: ectx: property (title), widget (QGroupBox, panelIcon)
-#: rc.cpp:111
+#: rc.cpp:117
 msgid "Applet Icon"
 msgstr "រូបតំណាង​អាប់ភ្លេត"
 
-#. i18n: file: parts/LancelotPartConfigBase.ui:101
+#. i18n: file: parts/LancelotPartConfigBase.ui:123
 #. i18n: ectx: property (icon), widget (KIconButton, iconChooser)
-#: rc.cpp:114
+#: rc.cpp:120
 msgid "lancelot-part"
 msgstr "lancelot-part"
 
-#. i18n: file: parts/LancelotPartConfigBase.ui:113
+#. i18n: file: parts/LancelotPartConfigBase.ui:135
 #. i18n: ectx: property (text), widget (QRadioButton, radioIconActivationClick)
-#: rc.cpp:117
+#: rc.cpp:123
 msgid "Show contents on &click"
 msgstr "បង្ហាញ​មាតិកា​​នៅ​ពេល​ចុច"
 
-#. i18n: file: parts/LancelotPartConfigBase.ui:120
+#. i18n: file: parts/LancelotPartConfigBase.ui:142
 #. i18n: ectx: property (text), widget (QRadioButton, radioIconActivationHover)
-#: rc.cpp:120
+#: rc.cpp:126
 msgid "Show contents on icon &hover (after a predefined interval of time)"
 msgstr "បង្ហាញមាតិកា​នៅ​លើ​កា​រ​សំកាំង​រូបតំណាង (បន្ទាប់​ពី​ចន្លោះពេល​ដែល​បានកំណត់​ជា​មុន)"
 
 #. i18n: file: launcher/LancelotAppletConfigBase.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, groupAppletIcons)
-#: rc.cpp:123
+#: rc.cpp:129
 msgid "Applet Icons"
 msgstr "រូបតំណាង​អាប់ភ្លេត"
 
 #. i18n: file: launcher/LancelotAppletConfigBase.ui:26
 #. i18n: ectx: property (text), widget (QRadioButton, radioShowCategories)
-#: rc.cpp:126
+#: rc.cpp:132
 msgid "Show cate&gories inside the applet"
 msgstr "បង្ហាញ​ប្រភេទ​ខាង​ក្នុង​អាប់ភ្លេត"
 
 #. i18n: file: launcher/LancelotAppletConfigBase.ui:33
 #. i18n: ectx: property (text), widget (QRadioButton, radioShowMenuIconOnly)
-#: rc.cpp:129
+#: rc.cpp:135
 msgid "Show only &menu launcher icon"
 msgstr "បង្ហាញ​តែ​រូបតំណាង​របស់​កម្មវិធី​ចាប់ផ្ដើម​ម៉ឺនុយ​ប៉ុណ្ណោះ"
 
 #. i18n: file: launcher/LancelotAppletConfigBase.ui:65
 #. i18n: ectx: property (title), widget (QGroupBox, groupAppletIconsChoose)
-#: rc.cpp:132
+#: rc.cpp:138
 msgid "Choose Icon"
 msgstr "ជ្រើស​រូបតំណាង"
 
 #. i18n: file: launcher/LancelotAppletConfigBase.ui:124
 #. i18n: ectx: property (title), widget (QGroupBox, groupCategoriesChoose)
-#: rc.cpp:135
+#: rc.cpp:141
 msgid "Choose categories to show"
 msgstr "ជ្រើស​ប្រភេទ​ត្រូ​វបង្ហាញ"
 
 #. i18n: file: launcher/LancelotAppletConfigBase.ui:180
 #. i18n: ectx: property (title), widget (QGroupBox, groupActivation)
-#: rc.cpp:138
+#: rc.cpp:144
 msgid "Menu Activation"
 msgstr "កា​រធ្វើ​ឲ្យម៉ឺនុយ​សកម្ម"
 
 #. i18n: file: launcher/LancelotAppletConfigBase.ui:186
 #. i18n: ectx: property (text), widget (QRadioButton, radioActivationHover)
-#: rc.cpp:141
+#: rc.cpp:147
 msgid "Show menu on icon &hover (after a predefined interval of time)"
 msgstr "បង្ហាញ​ម៉ឺនុយ​នៅ​លើ​ការ​សំកាំង​រូបតំណាង (បន្ទាប់​ពី​ចន្លោះពេល​ដែល​បានកំណត់​ជា​មុន)"
 
 #. i18n: file: launcher/LancelotAppletConfigBase.ui:196
 #. i18n: ectx: property (text), widget (QRadioButton, radioActivationClick)
-#: rc.cpp:144
+#: rc.cpp:150
 msgid "Show menu on &click"
 msgstr "បង្ហាញ​ម៉ឺនុយ​នៅពេល​ចុច"
 
@@ -685,10 +705,6 @@ msgstr "ចាប់ផ្ដើម %1"
 #: i18n_strings.cpp:38
 msgid "e-Mail contacts"
 msgstr "ទំនាក់ទំនង​អ៊ីមែល"
-
-#: LancelotWindow.cpp:123
-msgid "Search"
-msgstr "ស្វែងរក"
 
 #: LancelotWindow.cpp:714
 msgid "Open Lancelot menu"
@@ -745,3 +761,6 @@ msgstr "ម៉ឺនុយ"
 #: launcher/LancelotApplet.cpp:334
 msgid "Lancelot Menu"
 msgstr "ម៉ឺនុយ​របស់ Lancelot"
+
+#~ msgid "Contents Behavior"
+#~ msgstr "ឥរិយាបថ​មាតិកា"
