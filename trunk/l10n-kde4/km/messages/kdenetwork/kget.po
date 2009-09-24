@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-23 07:16+0200\n"
+"POT-Creation-Date: 2009-09-24 06:18+0200\n"
 "PO-Revision-Date: 2009-06-01 08:01+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -226,8 +226,8 @@ msgctxt "A mirror is removed when the file has the wrong download size"
 msgid "%1 removed as it did report a wrong file size."
 msgstr ""
 
-#: core/datasourcefactory.cpp:636 core/kget.cpp:529 core/kget.cpp:878
-#: core/kget.cpp:886 transfer-plugins/metalink/metalink.cpp:193
+#: core/datasourcefactory.cpp:636 core/kget.cpp:554 core/kget.cpp:902
+#: core/kget.cpp:911 transfer-plugins/metalink/metalink.cpp:193
 #: transfer-plugins/bittorrent/bttransfer.cpp:494
 #: transfer-plugins/bittorrent/bttransfer.cpp:505
 #: ui/metalinkcreator/metalinkcreator.cpp:287
@@ -257,7 +257,7 @@ msgctxt "transfer state: delayed"
 msgid "Delayed"
 msgstr "បានពន្យារ​ពេល"
 
-#: core/transfer.cpp:30 core/transfer.cpp:240 core/transfer.cpp:265
+#: core/transfer.cpp:30 core/transfer.cpp:234 core/transfer.cpp:259
 #: transfer-plugins/mms/mmsTransfer.cpp:52
 #: transfer-plugins/bittorrent/bttransfer.cpp:321
 #: transfer-plugins/contentfetch/contentfetch.cpp:64
@@ -319,11 +319,42 @@ msgstr "តើ​អ្នក​ប្រាកដ​ជា​ចង់​យក
 msgid "Remove groups"
 msgstr "យក​ក្រុម​ចេញ"
 
-#: core/kget.cpp:237
-msgid "Rename transfer"
-msgstr "ប្ដូរ​ឈ្មោះ​ការ​ផ្ទេរ"
+#: core/kget.cpp:241
+msgid ""
+"You have already downloaded that file from another location\n"
+"\n"
+"Download and delete the previous one?"
+msgstr ""
 
-#: core/kget.cpp:514
+#: core/kget.cpp:242
+#, fuzzy
+#| msgid ""
+#| "URL already saved:\n"
+#| "%1\n"
+#| "Download again?"
+msgid "File already downloaded. Download anyway?"
+msgstr ""
+"បាន​រក្សា​ទុក URL រួច​ហើយ ៖\n"
+"%1\n"
+"ទាញយក​ម្ដង​ទៀត​ឬ?"
+
+#: core/kget.cpp:251
+#, fuzzy
+#| msgid "You are already downloading the torrent %1"
+msgid "You are already downloading the same file"
+msgstr "អ្នក​កំពុង​ទាញយក torrent %1"
+
+#: core/kget.cpp:255
+#, fuzzy
+#| msgid ""
+#| "The file %1 already exists.\n"
+#| "Overwrite?"
+msgid "File already exists"
+msgstr ""
+"មាន​ឯកសារ %1 រួច​ហើយ ។\n"
+"សរសេរ​ជាន់លើ​ឬ?"
+
+#: core/kget.cpp:539
 #, kde-format
 msgid ""
 "The file %1 already exists.\n"
@@ -332,34 +363,34 @@ msgstr ""
 "មាន​ឯកសារ %1 រួច​ហើយ ។\n"
 "សរសេរ​ជាន់លើ​ឬ?"
 
-#: core/kget.cpp:515
+#: core/kget.cpp:540
 msgid "Overwrite existing file?"
 msgstr "សរសេរ​ជាន់លើ​ឯកសារ​ដែល​មាន​រួច?"
 
-#: core/kget.cpp:528 ui/metalinkcreator/metalinkcreator.cpp:306
+#: core/kget.cpp:553 ui/metalinkcreator/metalinkcreator.cpp:306
 #, kde-format
 msgid "Unable to save to: %1"
 msgstr "មិន​អាច​រក្សា​ទុក​ទៅ ៖ %1"
 
-#: core/kget.cpp:747 ui/contextmenu.cpp:135
+#: core/kget.cpp:772 ui/contextmenu.cpp:135
 msgid "My Downloads"
 msgstr "ការ​ទាញយក​របស់​ខ្ញុំ"
 
 #. i18n: file: ui/newtransferwidget.ui:25
 #. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
-#: core/kget.cpp:817 ui/newtransferdialog.cpp:254 rc.cpp:520
+#: core/kget.cpp:842 ui/newtransferdialog.cpp:254 rc.cpp:520
 msgid "New Download"
 msgstr "ទាញយក​ថ្មី"
 
-#: core/kget.cpp:817
+#: core/kget.cpp:842
 msgid "Enter URL:"
 msgstr "បញ្ចូល URL ៖"
 
-#: core/kget.cpp:849
+#: core/kget.cpp:874
 msgid "Save As"
 msgstr ""
 
-#: core/kget.cpp:877
+#: core/kget.cpp:901
 #, kde-format
 msgid ""
 "Malformed URL:\n"
@@ -368,7 +399,7 @@ msgstr ""
 "ទម្រង់ URL មិន​ត្រឹមត្រូវ ៖\n"
 "%1"
 
-#: core/kget.cpp:885
+#: core/kget.cpp:910
 #, kde-format
 msgid ""
 "Malformed URL, protocol missing:\n"
@@ -377,26 +408,43 @@ msgstr ""
 "URL មិន​ត្រឹមត្រូវ​ បាត់​ពិធីការ ៖\n"
 "%1"
 
-#: core/kget.cpp:898
+#: core/kget.cpp:922
 #, kde-format
 msgid ""
-"URL already saved:\n"
+"You have already completed a download from the location: \n"
+"\n"
 "%1\n"
-"Download again?"
+"\n"
+"Download it again?"
 msgstr ""
-"បាន​រក្សា​ទុក URL រួច​ហើយ ៖\n"
+
+#: core/kget.cpp:923
+#, fuzzy
+#| msgid "Download again"
+msgid "Download it again?"
+msgstr "ទាញយក​ម្ដង​ទៀត"
+
+#: core/kget.cpp:935
+#, kde-format
+msgid ""
+"You have a download in progress from the location: \n"
+"\n"
 "%1\n"
-"ទាញយក​ម្ដង​ទៀត​ឬ?"
+"\n"
+"Delete it and download again?"
+msgstr ""
 
-#: core/kget.cpp:899
-msgid "Download URL again?"
-msgstr "ទាញយក URL ម្ដង​ទៀត​ឬ?"
+#: core/kget.cpp:936
+#, fuzzy
+#| msgid "Download again"
+msgid "Delete it and download again?"
+msgstr "ទាញយក​ម្ដង​ទៀត"
 
-#: core/kget.cpp:927 core/kget.cpp:934
+#: core/kget.cpp:959 core/kget.cpp:966
 msgid "Directory is not writable"
 msgstr "ថត​មិន​អាច​សរសេរ​បាន​ឡើយ"
 
-#: core/kget.cpp:944
+#: core/kget.cpp:976
 #, kde-format
 msgid ""
 "Destination file \n"
@@ -409,18 +457,18 @@ msgstr ""
 "រួច​ហើយ ។\n"
 "តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ?"
 
-#: core/kget.cpp:945
+#: core/kget.cpp:977
 msgid "Overwrite destination"
 msgstr "សរសេរជាន់​លើ​ទិសដៅ"
 
-#: core/kget.cpp:1076
+#: core/kget.cpp:1108
 #, kde-format
 msgid ""
 "<html><p>Plugin loader could not load the plugin:<br/><i>%1</i></p></html>"
 msgstr ""
 "<html><p>មិន​អាច​ផ្ទុក​កម្មវិធី​ជំនួយ​របស់​កម្មវិធី​ផ្ទុក​កម្មវិធីជំនួយ​បានទេ ៖<br/><i>%1</i></p></html>"
 
-#: core/kget.cpp:1094
+#: core/kget.cpp:1126
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -431,7 +479,7 @@ msgstr ""
 "%1 ឡើយ\n"
 "ដោយ​សារ​តែ​វា​ជា​ថត ។"
 
-#: core/kget.cpp:1104
+#: core/kget.cpp:1136
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -444,15 +492,15 @@ msgstr ""
 
 #. i18n: file: conf/dlgadvanced.ui:40
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
-#: core/kget.cpp:1295 core/kget.cpp:1305 ui/droptarget.cpp:94 rc.cpp:65
+#: core/kget.cpp:1327 core/kget.cpp:1337 ui/droptarget.cpp:94 rc.cpp:65
 msgid "Quit KGet"
 msgstr "ចេញ​ពី KGet"
 
-#: core/kget.cpp:1296
+#: core/kget.cpp:1328
 msgid "KGet is now closing, as all downloads have completed."
 msgstr "ឥឡូវ KGet បាន​បិទ ព្រោះ​បាន​បញ្ចប់​ការ​ទាញយក​ទាំងអស់​ហើយ ។"
 
-#: core/kget.cpp:1306
+#: core/kget.cpp:1338
 msgid "The computer will now turn off, as all downloads have completed."
 msgstr "កុំព្យូទ័រ​នឹង​បិទ​ឥឡូវ ពីព្រោះ​ការ​ទាញយក​ទាំងអស់​​បាន​បញ្ចប់​ហើយ ។"
 
@@ -4252,6 +4300,12 @@ msgstr "បញ្ជី​សេចក្ដីពិពណ៌នា​សម្
 #: rc.cpp:1018
 msgid "List of whether the script is enabled"
 msgstr "បញ្ជី​របស់​ស្គ្រីប​ដែល​ត្រូវ​បើក"
+
+#~ msgid "Rename transfer"
+#~ msgstr "ប្ដូរ​ឈ្មោះ​ការ​ផ្ទេរ"
+
+#~ msgid "Download URL again?"
+#~ msgstr "ទាញយក URL ម្ដង​ទៀត​ឬ?"
 
 #, fuzzy
 #~| msgid "File"
