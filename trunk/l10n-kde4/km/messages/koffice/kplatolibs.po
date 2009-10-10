@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-26 06:18+0200\n"
+"POT-Creation-Date: 2009-10-10 06:45+0200\n"
 "PO-Revision-Date: 2009-05-28 16:27+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -68,7 +68,7 @@ msgstr "ផ្ញើ​ពេលវេលា"
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: ui/kpttaskcostpanel.cpp:41 ui/kpttaskgeneralpanel.cpp:70
 #: ui/kptresourcedialog.cpp:152 ui/kptpertresult.cpp:138
-#: ui/kptpertresult.cpp:483 kernel/kpttask.cpp:3377 kernel/kptnode.cpp:122
+#: ui/kptpertresult.cpp:483 kernel/kpttask.cpp:3406 kernel/kptnode.cpp:122
 #: kernel/kptnode.cpp:1438 models/kptschedulemodel.cpp:441
 #: models/kptschedulemodel.cpp:443 models/kptresourcemodel.cpp:186
 #: models/kptresourcemodel.cpp:201 models/kptnodeitemmodel.cpp:280
@@ -1723,6 +1723,10 @@ msgctxt "1=type of constraint"
 msgid "%1: Failed to meet constraint. Negative float=%2"
 msgstr "%1 ៖ បាន​បរាជ័យ​ក្នុងការ​ឈប់​នឹង​ការ​ដាក់​កម្រិត ។ Negative float=%2"
 
+#: kernel/kpttask.cpp:1651 kernel/kpttask.cpp:1975
+msgid "Failed to schedule within project target time"
+msgstr "បាន​បរាជ័យ​ក្នុងកា​រគ្រោង​ក្នុង​គម្រោង​​ក្នុង​ពេលវេលា​គោលដៅ​របស់​គម្រោង"
+
 #: kernel/kpttask.cpp:1657 kernel/kpttask.cpp:1981
 msgid "Starting earlier than early start"
 msgstr "ចាប់ផ្ដើម​លឿង​ជាង​កា​រចាប់ផ្ដើម​ពីមុន"
@@ -1736,6 +1740,12 @@ msgstr "បញ្ចប់​យឺត​ជាង​ការ​បញ្ចប
 #| msgid "Schedule:"
 msgid "Scheduled: %1 to %2"
 msgstr "កាលវិភាគ ៖"
+
+#: kernel/kpttask.cpp:1737
+#, fuzzy, kde-format
+#| msgid "Schedule from start %1"
+msgid "Schedule from end time: %1"
+msgstr "គ្រោង​ពី​ការ​ចាប់ផ្ដើម %1"
 
 #: kernel/kpttask.cpp:1751
 #, kde-format
@@ -1755,20 +1765,22 @@ msgctxt "1=type of constraint"
 msgid "%1: Failed to schedule after early start. Negative float=%2"
 msgstr "%1 ៖ បានបរាជ័យ​ក្នុងការ​គ្រោង​បន្ទាប់​ពី​ការ​ចាប់ផ្ដើម​មុន ។ Negative float=%2"
 
-#: kernel/kpttask.cpp:1975
-msgid "Failed to schedule within project target time"
-msgstr "បាន​បរាជ័យ​ក្នុងកា​រគ្រោង​ក្នុង​គម្រោង​​ក្នុង​ពេលវេលា​គោលដៅ​របស់​គម្រោង"
+#: kernel/kpttask.cpp:2048
+#, fuzzy
+#| msgid "Modify Relation"
+msgid "No resource has been allocated"
+msgstr "កែប្រែ​ទំនាក់ទំនង​"
 
 #: kernel/kpttask.cpp:2190
 #, kde-format
 msgid "Could not match work duration. Want: %1 got: %2"
 msgstr "មិនអាច​ផ្គូផ្គង​ថិរវេលា​ការងារ​ ។ ចង់បាន ៖ %1 ទទួល ៖ %2"
 
-#: kernel/kpttask.cpp:3380
+#: kernel/kpttask.cpp:3409
 msgid "Send"
 msgstr "ផ្ញើ"
 
-#: kernel/kpttask.cpp:3383
+#: kernel/kpttask.cpp:3412
 msgid "Receive"
 msgstr "ទទួល"
 
@@ -1986,7 +1998,7 @@ msgstr "ទៅ​មុខ"
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptschedulemodel.cpp:717 models/kptschedulemodel.cpp:944
 #: models/kptresourcemodel.cpp:361 models/kptaccountsmodel.cpp:121
-#: models/kptaccountsmodel.cpp:963 models/kptcalendarmodel.cpp:418
+#: models/kptaccountsmodel.cpp:961 models/kptcalendarmodel.cpp:418
 #: models/kptresourceallocationmodel.cpp:305
 #: models/kptresourceappointmentsmodel.cpp:901
 #: models/kptresourceappointmentsmodel.cpp:916
@@ -2249,7 +2261,7 @@ msgctxt "1=account name"
 msgid "%1 (Default account)"
 msgstr "លុប​គណនី %1"
 
-#: models/kptaccountsmodel.cpp:122 models/kptaccountsmodel.cpp:966
+#: models/kptaccountsmodel.cpp:122 models/kptaccountsmodel.cpp:964
 #: models/kptnodeitemmodel.cpp:1699
 msgid "Description"
 msgstr "ការពិពណ៌នា"
@@ -2279,16 +2291,16 @@ msgid "Delete Account"
 msgid_plural "Delete %1 Accounts"
 msgstr[0] "លុប​គណនី​ដែល​បាន​ជ្រើស"
 
-#: models/kptaccountsmodel.cpp:820
+#: models/kptaccountsmodel.cpp:833
 #, kde-format
 msgid "Actual total cost: %1, planned total cost: %2"
 msgstr ""
 
-#: models/kptaccountsmodel.cpp:969 models/kptresourceappointmentsmodel.cpp:902
+#: models/kptaccountsmodel.cpp:967 models/kptresourceappointmentsmodel.cpp:902
 msgid "Total"
 msgstr "សរុប"
 
-#: models/kptaccountsmodel.cpp:998
+#: models/kptaccountsmodel.cpp:996
 #, fuzzy
 #| msgid "The total cost for the account"
 msgid "The total cost for the account shown as: Actual cost [ Planned cost ]"
