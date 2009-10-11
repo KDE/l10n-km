@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: korganizer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-09-29 06:12+0200\n"
+"POT-Creation-Date: 2009-10-11 06:22+0200\n"
 "PO-Revision-Date: 2009-05-25 14:38+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1380,12 +1380,14 @@ msgstr "ពេលវេលា​បញ្ចប់"
 msgid "Categories"
 msgstr "ប្រភេទ"
 
-#: views/listview/kolistview.cpp:387
+#: views/listview/kolistview.cpp:387 views/monthview/monthitem.cpp:293
+#: views/agendaview/koagendaitem.cpp:83
 #, fuzzy, kde-format
 #| msgctxt "weekOfYear (year)"
 #| msgid "%1 (%2)"
-msgid "%1 (%2  years)"
-msgstr "%1 (%2)"
+msgid "%2 (1 year)"
+msgid_plural "%2 (%1 years)"
+msgstr[0] "%1 (%2)"
 
 #: views/monthview/monthview.cpp:66
 msgid "Go back one month"
@@ -1419,13 +1421,6 @@ msgstr "%1 %2"
 msgctxt "'Month day' for month view cells"
 msgid "%1 %2"
 msgstr "%1 %2"
-
-#: views/monthview/monthitem.cpp:293 views/agendaview/koagendaitem.cpp:83
-#, fuzzy, kde-format
-#| msgctxt "weekOfYear (year)"
-#| msgid "%1 (%2)"
-msgid "%1 (%2 years)"
-msgstr "%1 (%2)"
 
 #: views/monthview/monthitem.cpp:454 views/agendaview/koagenda.cpp:1044
 msgid ""
@@ -1835,7 +1830,7 @@ msgstr "កុំ​ផ្ញើ"
 #: incidencechanger.cpp:296
 #, fuzzy
 #| msgid "No resources found, item cannot be added."
-msgid "No calendars found. We can not add event."
+msgid "No calendars found, event cannot be added."
 msgstr "គ្មាន​ធនធាន​ទេ ធាតុ​មិន​អាច​ត្រូវបាន​បន្ថែម​បាន​ឡើយ ។"
 
 #: incidencechanger.cpp:321 kodialogmanager.cpp:120
@@ -4378,7 +4373,7 @@ msgstr "បាន​រក្សាទុកប្រតិទិន '%1' ។"
 #: actionmanager.cpp:1137
 #, fuzzy, kde-format
 #| msgid "Do you want to overwrite %1?"
-msgid "Do you want to overwrite file \"%1\""
+msgid "Do you want to overwrite file \"%1\"?"
 msgstr "តើ​អ្នក​ចង់​សរសេរ​ជាន់លើ %1 ឬ ?"
 
 #: actionmanager.cpp:1170
@@ -5159,10 +5154,14 @@ msgstr ""
 #. i18n: file: koeditoralarms_base.ui:539
 #. i18n: ectx: property (whatsThis), widget (KTextEdit, mEmailText)
 #: rc.cpp:236 rc.cpp:3287
+#, fuzzy
+#| msgid ""
+#| "Check this option if you want to have to-dos on the print, placed by "
+#| "their due date."
 msgid ""
-"Enter any text you desire for the email message that will be sent when the "
-"alarm triggers."
-msgstr ""
+"Enter the text you would like to be in the email message sent when the "
+"reminder triggers."
+msgstr "ធីក​ជម្រើស​នេះ បើ​អ្នក​ចង់​បង្ហាញ​កាលបរិច្ឆេទ​ផុតកំណត់ នៅ​ពេល​បោះពុម្ព​ការងារ​ត្រូវ​ធ្វើ ។"
 
 #. i18n: file: koeditoralarms_base.ui:546
 #. i18n: ectx: property (toolTip), widget (KPIM::AddresseeLineEdit, mEmailAddress)
@@ -5178,8 +5177,8 @@ msgstr "បញ្ជី​អាសយដ្ឋាន​ដែល​ត្រូ
 #, fuzzy
 #| msgid "The list of addressees to receive the invitation"
 msgid ""
-"Enter a list comma-sepatered addresses where an email will be sent when the "
-"reminder triggers"
+"Enter a list of comma-separated addresses to which an email should be sent "
+"when the reminder triggers."
 msgstr "បញ្ជី​អាសយដ្ឋាន​ដែល​ត្រូវ​ទទួល​សេចក្ដី​អញ្ជើញ"
 
 #. i18n: file: koeditoralarms_base.ui:556
@@ -7955,7 +7954,7 @@ msgstr ""
 #: rc.cpp:1402 rc.cpp:1732
 msgid ""
 "Check this box if you want to include Events that occur within the date "
-"range specified.  Events that don't fall completely within the date range "
+"range specified.  Events that do not fall completely within the date range "
 "will be excluded from the search results."
 msgstr ""
 
@@ -11722,6 +11721,12 @@ msgstr "បោះពុម្ព​បន្តបន្ទាប់"
 #: plugins/printing/whatsnext/whatsnextprint.h:42
 msgid "Prints a list of all upcoming events and todos."
 msgstr "បោះពុម្ព​បញ្ជី​ព្រឹត្តិការណ៍ និង​ការងារ​ត្រូវ​ធ្វើ​នា​ពេល​ខាង​មុខទាំងអស់ ។"
+
+#, fuzzy
+#~| msgctxt "weekOfYear (year)"
+#~| msgid "%1 (%2)"
+#~ msgid "%1 (%2  years)"
+#~ msgstr "%1 (%2)"
 
 #~ msgid "&Timespan"
 #~ msgstr "រយៈពេល"
