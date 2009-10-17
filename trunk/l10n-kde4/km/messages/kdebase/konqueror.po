@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-16 06:15+0200\n"
+"POT-Creation-Date: 2009-10-17 06:44+0200\n"
 "PO-Revision-Date: 2009-06-17 07:56+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -47,7 +47,7 @@ msgstr "រក្សា​សិទ្ធិ​ឆ្នាំ ១៩៩៩-២�
 msgid "http://konqueror.kde.org"
 msgstr "http://konqueror.kde.org"
 
-#: src/konqfactory.cpp:236 sidebar/konqsidebar.cpp:30
+#: src/konqfactory.cpp:236 sidebar/sidebar_part.cpp:30
 msgid "David Faure"
 msgstr "David Faure"
 
@@ -263,7 +263,7 @@ msgstr "Torben Weis"
 msgid "KFM author"
 msgstr "អ្នក​និពន្ធ KFM"
 
-#: src/konqfactory.cpp:268 sidebar/konqsidebar.cpp:29
+#: src/konqfactory.cpp:268 sidebar/sidebar_part.cpp:29
 msgid "Joseph Wenninger"
 msgstr "Joseph Wenninger"
 
@@ -366,7 +366,7 @@ msgstr "កុំ​ស្ដារ​ឡើងវិញ"
 msgid "Ask Me Later"
 msgstr "សួរ​ខ្ញុំ​នៅពេល​ក្រោយ"
 
-#: src/konqmainwindow.cpp:518
+#: src/konqmainwindow.cpp:519
 #, kde-format
 msgid ""
 "Malformed URL\n"
@@ -375,7 +375,7 @@ msgstr ""
 "URL មិន​ត្រឹមត្រូវ\n"
 "%1"
 
-#: src/konqmainwindow.cpp:523
+#: src/konqmainwindow.cpp:524
 #, kde-format
 msgid ""
 "Protocol not supported\n"
@@ -384,7 +384,7 @@ msgstr ""
 "ពិធីការ​ដែល​មិន​បាន​គាំទ្រ\n"
 "%1"
 
-#: src/konqmainwindow.cpp:562
+#: src/konqmainwindow.cpp:563
 msgctxt "@title:tab"
 msgid "Loading..."
 msgstr "កំពុង​ផ្ទុក..."
@@ -409,7 +409,7 @@ msgstr ""
 #: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2510
 #: src/konqmainwindow.cpp:2528 src/konqmainwindow.cpp:2548
 #: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:2629
-#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1387
+#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1396
 msgid "Discard Changes?"
 msgstr "មិន​រក្សា​ទុក​ការ​ផ្លាស់​ប្ដូរ​ឬ ?"
 
@@ -417,7 +417,7 @@ msgstr "មិន​រក្សា​ទុក​ការ​ផ្លាស់
 #: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2510
 #: src/konqmainwindow.cpp:2528 src/konqmainwindow.cpp:2548
 #: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:2629
-#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1387
+#: src/konqmainwindow.cpp:5075 src/konqviewmanager.cpp:1396
 msgid "&Discard Changes"
 msgstr "មិន​រក្សាទុក​ការ​ផ្លាស់ប្ដូរ"
 
@@ -970,7 +970,7 @@ msgid ""
 "You have multiple tabs open in this window, are you sure you want to quit?"
 msgstr "អ្នក​មាន​ផ្ទាំង​ច្រើន​បើក​ក្នុង​បង្អួច​នេះ តើ​អ្នក​ពិត​ជា​ចង់​ចេញ​ឬ ?"
 
-#: src/konqmainwindow.cpp:5037 src/konqviewmanager.cpp:1369
+#: src/konqmainwindow.cpp:5037 src/konqviewmanager.cpp:1378
 msgid "Confirmation"
 msgstr "ការ​អះអាង"
 
@@ -1164,7 +1164,7 @@ msgstr "មិនធ្វើ​វិញ ៖ បានបិទ​បង្អ
 msgid "Und&o"
 msgstr "មិន​ធ្វើ​វិញ"
 
-#: src/konqviewmanager.cpp:1367
+#: src/konqviewmanager.cpp:1376
 msgid ""
 "You have multiple tabs open in this window.\n"
 "Loading a view profile will close them."
@@ -1172,11 +1172,11 @@ msgstr ""
 "អ្នក​មាន​ផ្ទាំង​ច្រើន​បើក​ក្នុង​បង្អួច​នេះ ។\n"
 "ការ​ផ្ទុក​ទម្រង់​ទិដ្ឋភាព​នឹង​បិទ​ពួក​វា ។"
 
-#: src/konqviewmanager.cpp:1370
+#: src/konqviewmanager.cpp:1379
 msgid "Load View Profile"
 msgstr "ផ្ទុក​ទម្រង់​ទិដ្ឋភាព"
 
-#: src/konqviewmanager.cpp:1386
+#: src/konqviewmanager.cpp:1395
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Loading a profile will discard these changes."
@@ -1420,11 +1420,15 @@ msgstr "បង្កើត​ថត​ថ្មី"
 msgid "Enter folder name:"
 msgstr "បញ្ចូល​ឈ្មោះ​ថត ៖"
 
-#: sidebar/sidebar_widget.cpp:104
+#: sidebar/sidebar_part.cpp:28
+msgid "Extended Sidebar"
+msgstr "របារ​ចំហៀង​បន្ថែម"
+
+#: sidebar/sidebar_widget.cpp:99
 msgid "Rollback to System Default"
 msgstr "រមូរ​ថយ​ក្រោយ​ទៅ​លំនាំ​ដើម​របស់​ប្រព័ន្ធ"
 
-#: sidebar/sidebar_widget.cpp:110
+#: sidebar/sidebar_widget.cpp:105
 msgid ""
 "<qt>This removes all your entries from the sidebar and adds the system "
 "default ones.<br /><b>This procedure is irreversible</b><br />Do you want to "
@@ -1433,65 +1437,65 @@ msgstr ""
 "<qt>ទង្វើ​នេះ​នឹង​យក​ធាតុ​របស់​អ្នក​ទាំងអស់ចេញ​ពី​របារ​ចំហៀង ហើយ​បន្ថែម​លំនាំ​ដើម​របស់​ប្រព័ន្ធ​វិញ ។ <br /"
 "><b>បែបបទ​នេះ​មិន​អាច​ត្រឡប់​វិញ​បាន​ទេ</b><br />តើ​អ្នក​ចង់​បន្តឬ?</qt>"
 
-#: sidebar/sidebar_widget.cpp:240
+#: sidebar/sidebar_widget.cpp:234
 msgid "Configure Navigation Panel"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​បន្ទះ​រុករក"
 
-#: sidebar/sidebar_widget.cpp:242
+#: sidebar/sidebar_widget.cpp:236
 msgid "Add New"
 msgstr "បន្ថែម​ថ្មី"
 
-#: sidebar/sidebar_widget.cpp:244
+#: sidebar/sidebar_widget.cpp:238
 msgid "Multiple Views"
 msgstr "ទិដ្ឋភាព​ច្រើន"
 
-#: sidebar/sidebar_widget.cpp:246 sidebar/sidebar_widget.cpp:362
+#: sidebar/sidebar_widget.cpp:240 sidebar/sidebar_widget.cpp:353
 msgid "Show Tabs Left"
 msgstr "បង្ហាញ​ផ្ទាំង​នៅ​សល់"
 
-#: sidebar/sidebar_widget.cpp:247
+#: sidebar/sidebar_widget.cpp:241
 msgid "Show Configuration Button"
 msgstr "បង្ហាញ​ប៊ូតុង​កំណត់​រចនា​សម្ព័ន្ធ"
 
-#: sidebar/sidebar_widget.cpp:250
+#: sidebar/sidebar_widget.cpp:244
 msgid "Close Navigation Panel"
 msgstr "បិទ​បន្ទះ​រុករក"
 
-#: sidebar/sidebar_widget.cpp:293
+#: sidebar/sidebar_widget.cpp:287
 msgid "This entry already exists."
 msgstr "ធាតុ​នេះ​មាន​រួច​ហើយ ។"
 
-#: sidebar/sidebar_widget.cpp:307 sidebar/web_module/web_module.cpp:217
+#: sidebar/sidebar_widget.cpp:301 sidebar/web_module/web_module.cpp:217
 msgid "Web SideBar Plugin"
 msgstr "កម្មវិធី​ជំនួយ​នៃ​របារ​ចំហៀង​របស់​បណ្តាញ"
 
-#: sidebar/sidebar_widget.cpp:362
+#: sidebar/sidebar_widget.cpp:353
 msgid "Show Tabs Right"
 msgstr "បង្ហាញ​ថេប​​ទៅ​ស្ដាំ"
 
-#: sidebar/sidebar_widget.cpp:437
+#: sidebar/sidebar_widget.cpp:424
 msgid "Set Name"
 msgstr "កំណត់​ឈ្មោះ"
 
-#: sidebar/sidebar_widget.cpp:437
+#: sidebar/sidebar_widget.cpp:424
 msgid "Enter the name:"
 msgstr "បញ្ចូល​ឈ្មោះ ៖"
 
-#: sidebar/sidebar_widget.cpp:455
+#: sidebar/sidebar_widget.cpp:442
 msgid "Enter a URL:"
 msgstr "បញ្ចូល URL ៖"
 
-#: sidebar/sidebar_widget.cpp:463
+#: sidebar/sidebar_widget.cpp:450
 #, kde-format
 msgid "<qt><b>%1</b> does not exist</qt>"
 msgstr "<qt>មិនមាន <b>%1</b></qt>"
 
-#: sidebar/sidebar_widget.cpp:494
+#: sidebar/sidebar_widget.cpp:481
 #, kde-format
 msgid "<qt>Do you really want to remove the <b>%1</b> tab?</qt>"
 msgstr "<qt>តើ​អ្នក​ពិត​ជា​ចង់​យក​ផ្ទាំង <b>%1</b> ចេញ​ឬ?</qt>"
 
-#: sidebar/sidebar_widget.cpp:542
+#: sidebar/sidebar_widget.cpp:529
 msgid ""
 "You have hidden the navigation panel configuration button. To make it "
 "visible again, click the right mouse button on any of the navigation panel "
@@ -1500,23 +1504,23 @@ msgstr ""
 "អ្នក​បាន​លាក់​ប៊ូតុង​កំណត់​រចនា​សម្ព័ន្ធ​បន្ទះ​រុករក ។ ដើម្បី​ធ្វើ​ឲ្យ​វា​មើល​ឃើញ​ឡើង​វិញ ចុច​ប៊ូតុង​កណ្ដុរ​ខាង​ស្ដាំ លើ​"
 "ប៊ូតុង​បន្ទះ​រុករក​ណា​មួយ ហើយ​ជ្រើស \"បង្ហាញ​ប៊ូតុង​ការ​កំណត់​រចនាសម្ព័ន្ធ\" ។"
 
-#: sidebar/sidebar_widget.cpp:627
+#: sidebar/sidebar_widget.cpp:598
 msgid "Configure Sidebar"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ​របារ​ចំហៀង"
 
-#: sidebar/sidebar_widget.cpp:744
+#: sidebar/sidebar_widget.cpp:715
 msgid "Set Name..."
 msgstr "កំណត់​ឈ្មោះ..."
 
-#: sidebar/sidebar_widget.cpp:745
+#: sidebar/sidebar_widget.cpp:716
 msgid "Set URL..."
 msgstr "កំណត់ URL..."
 
-#: sidebar/sidebar_widget.cpp:746
+#: sidebar/sidebar_widget.cpp:717
 msgid "Set Icon..."
 msgstr "កំណត់​រូប​តំណាង..."
 
-#: sidebar/sidebar_widget.cpp:748
+#: sidebar/sidebar_widget.cpp:719
 msgid "Remove"
 msgstr "យក​ចេញ​"
 
@@ -1539,10 +1543,6 @@ msgstr "បើក​តំណ"
 #: sidebar/web_module/web_module.h:59
 msgid "Set &Automatic Reload"
 msgstr "កំណត់​ការ​ផ្ទុក​ឡើង​វិញ​ស្វ័យប្រវត្តិ"
-
-#: sidebar/konqsidebar.cpp:28
-msgid "Extended Sidebar"
-msgstr "របារ​ចំហៀង​បន្ថែម"
 
 #: about/konq_aboutpage.cc:79 about/konq_aboutpage.cc:81
 #: about/konq_aboutpage.cc:135 about/konq_aboutpage.cc:137
