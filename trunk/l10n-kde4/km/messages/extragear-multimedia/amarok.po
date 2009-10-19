@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-18 06:50+0200\n"
+"POT-Creation-Date: 2009-10-19 07:01+0200\n"
 "PO-Revision-Date: 2009-06-23 08:10+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -39,7 +39,7 @@ msgstr ""
 
 #: mac/GrowlInterface.cpp:37 context/engines/current/CurrentEngine.cpp:150
 #: context/applets/currenttrack/CurrentTrack.cpp:109
-#: context/applets/photos/PhotosApplet.cpp:132 App.cpp:969 widgets/Osd.cpp:576
+#: context/applets/photos/PhotosApplet.cpp:132 App.cpp:971 widgets/Osd.cpp:576
 msgid "No track playing"
 msgstr "មិន​កំពុង​ចាក់​បទ​អ្វី​ទាំងអស់​​​"
 
@@ -191,8 +191,8 @@ msgstr "ដំបូង"
 #: collection/ipodcollection/handler/IpodHandler.cpp:158
 #, kde-format
 msgid ""
-"Media Device: could not find iTunesDB on device mounted at %1. Should I try "
-"to initialize your iPod?"
+"Media Device: could not find iTunesDB on device mounted at %1. Attempt to "
+"initialize your iPod?"
 msgstr ""
 
 #: collection/ipodcollection/handler/IpodHandler.cpp:160
@@ -243,7 +243,7 @@ msgstr ""
 #: collection/ipodcollection/handler/IpodHandler.cpp:280
 #, fuzzy
 #| msgid "Successfully installed %1"
-msgid "The iPod was successfully initialized!"
+msgid "The iPod was successfully initialized."
 msgstr "បាន​ដំឡើង %1 ដោយ​ជោគជ័យ"
 
 #: collection/ipodcollection/handler/IpodHandler.cpp:280
@@ -265,7 +265,7 @@ msgstr ""
 
 #: collection/ipodcollection/handler/IpodHandler.cpp:365
 #: collection/ipodcollection/handler/IpodHandler.cpp:519
-msgid "Synchronise Artwork"
+msgid "Synchronize Artwork"
 msgstr ""
 
 #: collection/ipodcollection/handler/IpodHandler.cpp:381
@@ -324,12 +324,14 @@ msgstr ""
 #: collection/ipodcollection/handler/IpodHandler.cpp:528
 #, fuzzy
 #| msgid "Lyrics data could not be parsed"
-msgid "iPod artwork could not be synchronised"
+msgid "iPod artwork could not be synchronized"
 msgstr "មិនអាច​ញែក​ទិន្នន័យ​អត្ថបទ​ចម្រៀង​បាន​ទេ"
 
 #: collection/ipodcollection/handler/IpodHandler.cpp:539
-msgid "Artwork synchronised"
-msgstr ""
+#, fuzzy
+#| msgid "Lyrics data could not be parsed"
+msgid "Artwork synchronized"
+msgstr "មិនអាច​ញែក​ទិន្នន័យ​អត្ថបទ​ចម្រៀង​បាន​ទេ"
 
 #: collection/ipodcollection/handler/IpodHandler.cpp:820
 msgid ""
@@ -491,28 +493,30 @@ msgstr "មាន %1 បទ​នៅ​លើ​ឧបករណ៍​ផ្ទ�
 #: collection/mediadevicecollection/handler/MediaDeviceHandler.cpp:589
 #, fuzzy
 #| msgid "Tracks Removed"
-msgid "Tracks not deleted:"
-msgstr "បាន​យកបទ​ចេញ"
+msgid "Track not deleted:"
+msgid_plural "Tracks not deleted:"
+msgstr[0] "បាន​យកបទ​ចេញ"
 
 #: collection/mediadevicecollection/handler/MediaDeviceHandler.cpp:590
 #, fuzzy
 #| msgid "Deleting Tracks from MTP"
-msgid "Deleting Tracks Failed"
-msgstr "លុប​បទ​ពី MTP"
+msgid "Deleting Track Failed"
+msgid_plural "Deleting Tracks Failed"
+msgstr[0] "លុប​បទ​ពី MTP"
 
 #: collection/mediadevicecollection/handler/MediaDeviceHandler.cpp:594
 #, fuzzy, kde-format
 #| msgid "One track already on media device"
 #| msgid_plural "%1 tracks already on media device"
-msgid "%1 Track is already being deleted from the device"
-msgid_plural "%1 Tracks are already being deleted from the device"
-msgstr[0] "មាន %1 បទ​នៅ​លើ​ឧបករណ៍​ផ្ទុក​រួចហើយ"
+msgid "%1 tracks are already being deleted from the device."
+msgstr "មាន %1 បទ​នៅ​លើ​ឧបករណ៍​ផ្ទុក​រួចហើយ"
 
-#: collection/mediadevicecollection/handler/MediaDeviceHandler.cpp:612
+#: collection/mediadevicecollection/handler/MediaDeviceHandler.cpp:611
 #, fuzzy
 #| msgid "Deleting Tracks from iPod"
-msgid "Removing Tracks from Device"
-msgstr "លុប​បទ​ពី iPod"
+msgid "Removing Track from Device"
+msgid_plural "Removing Tracks from Device"
+msgstr[0] "លុប​បទ​ពី iPod"
 
 #: collection/mediadevicecollection/playlist/MediaDeviceUserPlaylistProvider.cpp:113
 #: playlistmanager/sql/SqlUserPlaylistProvider.cpp:87
@@ -649,19 +653,31 @@ msgid "Audio CD"
 msgstr "ចាក់​ស៊ីឌី​អូឌីយ៉ូ"
 
 #: collection/audiocd/FormatSelectionDialog.cpp:62
+#, fuzzy
+#| msgid ""
+#| "Ogg Vorbis is a fully free and unencumbered compressed audio format that "
+#| "is perfect for storing your compressed music on your computer. The sound "
+#| "quality is slightly better than Mp3 at the same bitrate. Note that not "
+#| "all mobile player support the Ogg Vorbis format"
 msgid ""
 "Ogg Vorbis is a fully free and unencumbered compressed audio format that is "
 "perfect for storing your compressed music on your computer. The sound "
 "quality is slightly better than Mp3 at the same bitrate. Note that not all "
-"mobile player support the Ogg Vorbis format"
+"mobile players support the Ogg Vorbis format."
 msgstr ""
 "Ogg Vorbis គឺ​ជា​ទ្រង់ទ្រាយ​អូឌីយ៉ូ​ដែល​បា​បង្ហាប់​ដោយ​ស៊េរី ដែល​ល្អ​ឥតខ្ចោះ​សម្រាប់​ទុក​តន្ត្រី​ដែល​បាន​បង្ហាប់​របស់​"
 "អ្នក​នៅ​ក្នុង​កុំព្យូទ័រ​របស់​អ្នក ។ គុណភាព​សំឡេង​ប្រសើរ​ជាង Mp3 នៅពេល​ដែលមានអត្រាប៊ីត​ដូច​គ្នា ។ ចំណាំ​ថា "
 "មិនមែន​កម្មវិធី​ចាក់​ចល័ត​ទាំងអស់​គាំទ្រ​ទ្រង់ទ្រាយ Ogg Vorbis នោះទេ"
 
 #: collection/audiocd/FormatSelectionDialog.cpp:68
+#, fuzzy
+#| msgid ""
+#| "Flac is a lossless compressed audio format free of any patents or licence "
+#| "fees. It maintains perfect CD audio quality while reducing file size by "
+#| "about 50%. Because the filesize is much larger than Ogg Vorbis or Mp3 it "
+#| "is not recommended if you want to transfer your music to a mobile player."
 msgid ""
-"Flac is a lossless compressed audio format free of any patents or licence "
+"Flac is a lossless compressed audio format free of any patents or license "
 "fees. It maintains perfect CD audio quality while reducing file size by "
 "about 50%. Because the filesize is much larger than Ogg Vorbis or Mp3 it is "
 "not recommended if you want to transfer your music to a mobile player."
@@ -687,9 +703,13 @@ msgstr ""
 "គុណភាព​ល្អ​ឥតខ្ចោះ ប្រើ​ Flac ជំនួស​វិញ ។"
 
 #: collection/audiocd/FormatSelectionDialog.cpp:80
+#, fuzzy
+#| msgid ""
+#| "Mp3 is the de facto standard in compressed audio compatible with almost "
+#| "all mobile players. It is however non free and generally not recommended"
 msgid ""
 "Mp3 is the de facto standard in compressed audio compatible with almost all "
-"mobile players. It is however non free and generally not recommended"
+"mobile players. It is however non free and generally not recommended."
 msgstr ""
 "Mp3 គឺ​ជា​ de facto ស្តង់ដារ​នៅ​ក្នុង​អូឌីយ៉ូ​ដែល​បានបង្ហាប់​ជា​មួយ​នឹង​កម្មវិធី​ចាក់​ចល័ត​ភាគ​ច្រើន ។ ទោះ​ជា​យ៉ាង​"
 "ណា​ក៏​ដោយវា​មិន​ត្រូវ​បាន​ផ្ដល់​អនុសាសន៍​ថា​មិនគិត​ថ្លៃ និង​ជា​ទូទៅទេ"
@@ -941,7 +961,7 @@ msgstr "ប្រតិបត្តិការ​នេះ​មិន​ត្
 msgid "print() takes one argument"
 msgstr "print() ត្រូវកា​រអាគុយម៉ង់​មួយ"
 
-#: context/toolbar/AppletItemOverlay.cpp:103
+#: context/toolbar/AppletItemOverlay.cpp:104
 #: context/toolbar/AppletToolbarAppletItem.cpp:57
 msgid "Remove Applet"
 msgstr "យក​អាប់ភ្លេត​ចេញ"
@@ -1050,7 +1070,7 @@ msgstr ""
 #| "Lyrics were not able to be downloaded. Please check your internet "
 #| "connection: %1"
 msgid ""
-"Songkick was not able to be downloaded. Please check your internet "
+"Songkick was not able to be downloaded. Please check your Internet "
 "connection: %1"
 msgstr "មិនអាច​ទាញយក​អត្ថបទ​ចម្រៀង​បានទេ ។ សូម​ពិនិត្យ​ការ​តភ្ជាប់​អ៊ីនធឺណិត​របស់​អ្នក ៖ %1"
 
@@ -1186,7 +1206,7 @@ msgstr "កំពុង​ទៅយក​អត្ថបទ​ចម្រៀង
 #| "connection: %1"
 msgid ""
 "Could not download lyrics.\n"
-"Please check your internet connection.\n"
+"Please check your Internet connection.\n"
 "Error message:\n"
 "%1"
 msgstr "មិនអាច​ទាញយក​អត្ថបទ​ចម្រៀង​បានទេ ។ សូម​ពិនិត្យ​ការ​តភ្ជាប់​អ៊ីនធឺណិត​របស់​អ្នក ៖ %1"
@@ -1579,7 +1599,7 @@ msgstr "បិទ"
 #: configdialog/dialogs/PlaybackConfig.cpp:259
 #, fuzzy
 #| msgid "Delete the preset."
-msgid "Can not delete this preset"
+msgid "Cannot delete this preset"
 msgstr "លុប​កា​រកំណត់​ជាមុន ។"
 
 #: configdialog/dialogs/PlaybackConfig.cpp:260
@@ -1595,7 +1615,7 @@ msgstr "កំហុស​ក្នុងកា​របង្កើត​ឯក
 #: configdialog/dialogs/PlaybackConfig.cpp:271
 #, fuzzy
 #| msgid "Delete the preset."
-msgid "Can not restore this preset"
+msgid "Cannot restore this preset"
 msgstr "លុប​កា​រកំណត់​ជាមុន ។"
 
 #: configdialog/dialogs/PlaybackConfig.cpp:272
@@ -1611,7 +1631,7 @@ msgstr "កំហុស​ក្នុងកា​របង្កើត​ឯក
 #: configdialog/dialogs/PlaybackConfig.cpp:290
 #, fuzzy
 #| msgid "Save the preset."
-msgid "Can not save this preset"
+msgid "Cannot save this preset"
 msgstr "រក្សាទុក​កា​រកំណត់​ជា​មុន ។"
 
 #: configdialog/dialogs/PlaybackConfig.cpp:291
@@ -2096,7 +2116,9 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid "<b><font color='red'>Error:</font></b> %1"
 msgctxt "Track has been matched ambigously, format: Url"
-msgid "Ambigous Discarded <b><font color='red'>%1</font></b>"
+msgid ""
+"Multiple ambiguous matches found for <b><font color='red'>%1</font></b>, has "
+"been discarded."
 msgstr "<b><font color='red'>កំហុស ៖</font></b> %1"
 
 #: dialogs/TagDialog.cpp:491
@@ -2533,103 +2555,103 @@ msgstr "អនុញ្ញាត​ឲ្យ​រត់​ធាតុ Amarok �
 msgid "Base for relative filenames/URLs"
 msgstr "គោល​សម្រាប់​ឈ្មោះ​ឯកសារ​/​URL ប្រែប្រួល"
 
-#: App.cpp:484
+#: App.cpp:485
 msgid ""
-"Run integrated unit tests, if your build supports it. The argument sets "
-"result output: 'log' for logfiles, 'stdout' for stdout."
+"Run integrated unit tests. Output can be 'log' for logfiles, 'stdout' for "
+"stdout."
 msgstr ""
 
-#: App.cpp:486
+#: App.cpp:488
 msgid "Subscribe to podcast feed"
 msgstr ""
 
-#: App.cpp:759
+#: App.cpp:761
 msgid "Moving files to trash"
 msgstr "កំពុង​ផ្លាស់ទី​ឯកសារ​ទៅ​ធុងសំរាម"
 
-#: App.cpp:841
+#: App.cpp:843
 #, fuzzy
 #| msgid "Unknown"
 msgctxt "When this track was last played"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#: App.cpp:846
+#: App.cpp:848
 #, kde-format
 msgctxt "monthname year"
 msgid "%1 %2"
 msgstr "%1 %2"
 
-#: App.cpp:853
+#: App.cpp:855
 #, kde-format
 msgid "One week ago"
 msgid_plural "%1 weeks ago"
 msgstr[0] "%1 ​សប្ដាហ៍​កន្លង​ទៅ"
 
-#: App.cpp:859
+#: App.cpp:861
 msgid "Yesterday"
 msgstr "ម្សិលម៉ិញ"
 
-#: App.cpp:860
+#: App.cpp:862
 #, kde-format
 msgid "One day ago"
 msgid_plural "%1 days ago"
 msgstr[0] "%1 ​ថ្ងៃ​កន្លង​ទៅ"
 
-#: App.cpp:863
+#: App.cpp:865
 #, kde-format
 msgid "One hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] "%1 ​ម៉ោង​កន្លង​ទៅ"
 
-#: App.cpp:869
+#: App.cpp:871
 #, kde-format
 msgid "One minute ago"
 msgid_plural "%1 minutes ago"
 msgstr[0] "%1 នាទី​កន្លង​ទៅ"
 
-#: App.cpp:870
+#: App.cpp:872
 msgid "Within the last minute"
 msgstr "ក្នុង​នាទី​ចុងក្រោយ"
 
-#: App.cpp:872
+#: App.cpp:874
 msgid "The future"
 msgstr "អនាគត"
 
-#: App.cpp:878
+#: App.cpp:880
 msgctxt "The amount of time since last played"
 msgid "Never"
 msgstr "កុំ"
 
-#: App.cpp:888
+#: App.cpp:890
 msgctxt "The amount of time since last played"
 msgid "0"
 msgstr "០"
 
-#: App.cpp:897
+#: App.cpp:899
 #, kde-format
 msgctxt "number of months ago"
 msgid "%1M"
 msgstr "%1M"
 
-#: App.cpp:901
+#: App.cpp:903
 #, kde-format
 msgctxt "w for weeks"
 msgid "%1w"
 msgstr "%1w"
 
-#: App.cpp:904
+#: App.cpp:906
 msgctxt "When this track was last played"
 msgid "Tomorrow"
 msgstr "ស្អែក"
 
-#: App.cpp:910
+#: App.cpp:912
 #, no-c-format, kde-format
 msgctxt "d for days"
 msgid "%1d"
 msgstr "%1d"
 
-#: App.cpp:913
+#: App.cpp:915
 #, kde-format
 msgctxt "h for hours"
 msgid "%1h"
@@ -2657,34 +2679,34 @@ msgstr "%1h"
 #. i18n: ectx: property (text), widget (QLabel, eqBand8Value)
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:1329
 #. i18n: ectx: property (text), widget (QLabel, eqBand9Value)
-#: App.cpp:922 rc.cpp:737 rc.cpp:743 rc.cpp:749 rc.cpp:755 rc.cpp:761
+#: App.cpp:924 rc.cpp:737 rc.cpp:743 rc.cpp:749 rc.cpp:755 rc.cpp:761
 #: rc.cpp:767 rc.cpp:773 rc.cpp:779 rc.cpp:785 rc.cpp:791 rc.cpp:797
 msgid "0"
 msgstr "០"
 
-#: App.cpp:939
+#: App.cpp:941
 #, kde-format
 msgctxt "track by artist on album"
 msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
 msgstr "<b>%1</b> ច្រៀង​ដោយ <b>%2</b> នៅ <b>%3</b>"
 
-#: App.cpp:942
+#: App.cpp:944
 #, kde-format
 msgctxt "track by artist"
 msgid "<b>%1</b> by <b>%2</b>"
 msgstr "<b>%1</b> ច្រៀង​ដោយ <b>%2</b>"
 
-#: App.cpp:946
+#: App.cpp:948
 #, kde-format
 msgctxt "track on album"
 msgid "<b>%1</b> on <b>%2</b>"
 msgstr "<b>%1</b> នៅ <b>%2</b>"
 
-#: App.cpp:951
+#: App.cpp:953
 msgid "Unknown track"
 msgstr "មិន​ស្គាល់​បទ"
 
-#: App.cpp:958
+#: App.cpp:960
 #, fuzzy, kde-format
 #| msgid " on <b>%1</b>"
 msgctxt "track from source"
@@ -2940,7 +2962,7 @@ msgstr ""
 #: playlistmanager/file/PlaylistFileProvider.cpp:256
 #: playlistmanager/file/PlaylistFileProvider.cpp:280
 #, kde-format
-msgid "The playlist file \"%1\" could not be loaded!"
+msgid "The playlist file \"%1\" could not be loaded."
 msgstr ""
 
 #: playlistmanager/PlaylistManager.cpp:199
@@ -2988,7 +3010,7 @@ msgstr "បញ្ជី​ចាក់ និងបាននាំចូល​�
 #| "save are also shown here."
 msgid ""
 "Create, edit, organize and load playlists. Amarok automatically adds any "
-"playlists found when scanning your collection,  and any playlists that you "
+"playlists found when scanning your collection, and any playlists that you "
 "save are also shown here."
 msgstr ""
 "បង្កើត កែសម្រួល រៀបចំ និង​ផ្ទុក​បញ្ជីចាក់ ។ Amarok បន្ថែម​បញ្ជីចាក់​​ដែល​រកឃើញ​នៅពេល​វិភាគរក​ក្នុង​សម្រាំង​"
@@ -4171,10 +4193,15 @@ msgid "Random (modified)"
 msgstr "ចៃដន្យ (បានកែប្រែ)"
 
 #: browsers/playlistbrowser/PlaylistBrowser.cpp:67
+#, fuzzy
+#| msgid ""
+#| "The playlist browser contains your list of imported and saved playlists. "
+#| "It is also where you can specify powerful dynamic playlists and manage "
+#| "your podcast  subscriptions and episodes."
 msgid ""
 "The playlist browser contains your list of imported and saved playlists. It "
 "is also where you can specify powerful dynamic playlists and manage your "
-"podcast  subscriptions and episodes."
+"podcast subscriptions and episodes."
 msgstr ""
 "កម្មវិធី​រុករក​បញ្ជីចាក់​មាន​បញ្ជី​​នាំចូល​ និង​រក្សាទុក​របស់​អ្នក ។ វា​ជា​កន្លែង​ដែល​អ្នកអាច​បញ្ជាក់​បញ្ជី​ចាក់​"
 "ឋាមវន្ត​ដ៏​មានអនុភាព​​ដែរ និង​គ្រប់គ្រង​ការ​ជាវ​​ផតខាស​ និង episodes ។"
@@ -6003,7 +6030,7 @@ msgstr ""
 #: rc.cpp:581
 #, fuzzy
 #| msgid "Additional options:"
-msgid "Additional key words :"
+msgid "Additional key words:"
 msgstr "ជម្រើស​បន្ថែម ៖"
 
 #. i18n: file: context/applets/photos/photosSettings.ui:100
@@ -6248,7 +6275,8 @@ msgstr "លុប​កា​រកំណត់​ជាមុន ។"
 #. i18n: ectx: property (toolTip), widget (QPushButton, eqPresetResetBtn)
 #: rc.cpp:716
 msgid ""
-"Reset selected preset setting to default. Available only for built-in preset."
+"Reset selected preset setting to default. Available only for built-in "
+"presets."
 msgstr ""
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:201
@@ -8052,6 +8080,36 @@ msgstr "ដាក់​ជា​ក្រុម​តាម"
 msgid "Preview"
 msgstr "មើល​​ជា​មុន"
 
+#. i18n: tag layout attribute name
+#. i18n: file: data/DefaultPlaylistLayouts.xml:3
+#: rc.cpp:2173
+#, fuzzy
+#| msgid "Playlist layouts"
+msgid "Default"
+msgstr "ប្លង់​បញ្ជី​ចាក់"
+
+#. i18n: tag layout attribute name
+#. i18n: file: data/DefaultPlaylistLayouts.xml:29
+#: rc.cpp:2176 playlist/layouts/PlaylistLayoutEditDialog.cpp:467
+#, fuzzy
+#| msgid "Groupings"
+msgid "No Grouping"
+msgstr "ដាក់​​ជា​​ក្រុម"
+
+#. i18n: tag layout attribute name
+#. i18n: file: data/DefaultPlaylistLayouts.xml:53
+#: rc.cpp:2179
+#, fuzzy
+#| msgid "Groupings"
+msgid "No Grouping (Single Line)"
+msgstr "ដាក់​​ជា​​ក្រុម"
+
+#. i18n: tag layout attribute name
+#. i18n: file: data/DefaultPlaylistLayouts.xml:70
+#: rc.cpp:2182
+msgid "Verbose"
+msgstr ""
+
 #: analyzers/blockanalyzer.cpp:446
 msgid "Framerate"
 msgstr "អត្រា​ស៊ុម"
@@ -9390,12 +9448,6 @@ msgstr ""
 msgid "Default Layout"
 msgstr "ប្លង់​បញ្ជី​ចាក់"
 
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:467
-#, fuzzy
-#| msgid "Groupings"
-msgid "No Grouping"
-msgstr "ដាក់​​ជា​​ក្រុម"
-
 #: playlist/layouts/LayoutEditDialog.cpp:75
 #, fuzzy
 #| msgid "Configuration"
@@ -9413,7 +9465,8 @@ msgid "custom"
 msgstr ""
 
 #: playlist/layouts/LayoutEditDialog.cpp:102
-msgid "A fix absolute or relative value (e.g. 128px or 12%)"
+msgid ""
+"Either a fixed (absolute) value, or a relative value (e.g. 128px or 12%.)"
 msgstr ""
 
 #: playlist/layouts/LayoutEditDialog.cpp:105
@@ -9660,10 +9713,8 @@ msgid "group"
 msgstr "ដាក់​ជា​ក្រុម​តាម"
 
 #: amarokurls/BookmarkModel.cpp:267
-#, fuzzy
-#| msgid "Url:"
-msgid "Url"
-msgstr "Url ៖"
+msgid "URL"
+msgstr ""
 
 #: amarokurls/BookmarkModel.cpp:514
 msgid "New Group"
@@ -9773,7 +9824,11 @@ msgid "Volume: 100% (muted)"
 msgstr "កម្រិត​សំឡេង ៖ 100% (ស្ងាត់)"
 
 #: widgets/Osd.cpp:441
-msgid "OSD Preview - drag to reposition"
+#, fuzzy
+#| msgid "OSD Preview - drag to reposition"
+msgid ""
+"On-Screen-Display preview\n"
+"Drag to reposition"
 msgstr "ទិដ្ឋភាព OSD - អូស​ដើម្បី​ប្ដូរ​ទីតាំង"
 
 #: widgets/Osd.cpp:687
@@ -10260,6 +10315,11 @@ msgstr "បន្ថែម​ខាង​ចុង និងចាក់"
 #: TrayIcon.cpp:223
 msgid "&Queue Track"
 msgstr "រៀប​បទ​ជា​ជួរ"
+
+#, fuzzy
+#~| msgid "Url:"
+#~ msgid "Url"
+#~ msgstr "Url ៖"
 
 #~ msgid "On Screen Display"
 #~ msgstr "បង្ហាញ​លើ​អេក្រង់​មួយ"
