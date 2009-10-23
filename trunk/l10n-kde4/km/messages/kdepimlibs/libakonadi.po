@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-10-22 06:24+0200\n"
+"POT-Creation-Date: 2009-10-23 06:10+0200\n"
 "PO-Revision-Date: 2009-06-12 08:23+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -52,6 +52,22 @@ msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "នាទី"
 
+#: collectioncreatejob.cpp:58
+msgid "Invalid parent"
+msgstr ""
+
+#: collectiondeletejob.cpp:59 collectionmodifyjob.cpp:57
+#, fuzzy
+#| msgid "no collection"
+msgid "Invalid collection"
+msgstr "គ្មាន​សម្រាំង"
+
+#: collectionfetchjob.cpp:129
+#, fuzzy
+#| msgid "no collection"
+msgid "Invalid collection given."
+msgstr "គ្មាន​សម្រាំង"
+
 #: collectiongeneralpropertiespage.cpp:36
 msgctxt "@title:tab general properties page"
 msgid "General"
@@ -76,6 +92,10 @@ msgstr "បើក​ប្រអប់​សម្រាំង"
 msgid "no collection"
 msgstr "គ្មាន​សម្រាំង"
 
+#: collectionselectjob.cpp:72
+msgid "Invalid collection specified"
+msgstr ""
+
 #: collectionstatisticsmodel.cpp:157
 msgctxt "@title:column, number of unread messages"
 msgid "Unread"
@@ -90,6 +110,22 @@ msgstr "សរុប"
 msgctxt "@title:column, total size (in bytes) of the collection"
 msgid "Size"
 msgstr "ទំហំ"
+
+#: collectionsync.cpp:172
+msgid ""
+"Inconsistent local collection tree detected! OMG, what have you done to my "
+"database?!?!"
+msgstr ""
+
+#: collectionsync.cpp:269
+msgid ""
+"Remote collection without root-terminated ancestor chain provided, fix your "
+"resource dude!"
+msgstr ""
+
+#: collectionsync.cpp:466
+msgid "Found unresolved orphan collections"
+msgstr ""
 
 #: collectionview.cpp:222 dragdropmanager.cpp:111
 msgid "&Move here"
@@ -140,6 +176,12 @@ msgstr ""
 msgid "Favorite Folders"
 msgstr "​ថត​ថ្មី"
 
+#: itemfetchjob.cpp:149
+#, fuzzy
+#| msgid "No such collection."
+msgid "Cannot list root collection."
+msgstr "គ្មាន​ការ​ប៉ះទង្គិច​បែបនេះ ។"
+
 #: itemmodel.cpp:312
 msgid "Id"
 msgstr "លេខសម្គាល់"
@@ -170,6 +212,29 @@ msgstr "អ្នក​ប្រើ​បាន​បោះបង់​ប្រ
 #: job.cpp:241
 msgid "Unknown error."
 msgstr "កំហុស​ដែល​មិន​ស្គាល់ ។"
+
+#: partfetcher.cpp:61
+msgid "Unable to fetch item for index"
+msgstr ""
+
+#: partfetcher.cpp:76
+msgid "Index is no longer available"
+msgstr ""
+
+#: partfetcher.cpp:123
+#, kde-format
+msgid "Payload part '%1' is not available for this index"
+msgstr ""
+
+#: partfetcher.cpp:132
+#, fuzzy
+#| msgid "No description available"
+msgid "No session available for this index"
+msgstr "មិន​មាន​សេចក្ដី​អធិប្បាយ"
+
+#: partfetcher.cpp:141
+msgid "No item available for this index"
+msgstr ""
 
 #: pluginloader.cpp:137
 msgid "Unnamed plugin"
@@ -1046,10 +1111,11 @@ msgstr[0] "ចម្លង​ធាតុ %1"
 
 #: standardactionmanager.cpp:82 standardactionmanager.cpp:117
 #, fuzzy, kde-format
-#| msgid "no collection"
-msgid "&Cut Collection"
-msgid_plural "&Cut %1 Collections"
-msgstr[0] "គ្មាន​សម្រាំង"
+#| msgid "&Copy Folder"
+#| msgid_plural "&Copy %1 Folders"
+msgid "&Cut Folder"
+msgid_plural "&Cut %1 Folders"
+msgstr[0] "ចម្លង​ថត %1"
 
 #: standardactionmanager.cpp:114
 #, kde-format
@@ -1221,9 +1287,25 @@ msgctxt "@info:status"
 msgid "Error."
 msgstr "កំហុស ។"
 
+#: linkjobimpl_p.h:49 movejobimpl_p.h:49
+#, fuzzy
+#| msgid "No remote identifier specified"
+msgid "No valid destination specified"
+msgstr "គ្មាន​ឧបករណ៍​កំណត់​អត្តសញ្ញាណ​ពីចម្ងាយ​បានបញ្ជាក់ទេ"
+
+#: movejobimpl_p.h:43
+msgid "No objects specified for moving"
+msgstr ""
+
 #: qtest_akonadi.h:44
 msgid "KDE Test Program"
 msgstr "កម្មវិធី​សាកល្បង​របស់របស់ KDE"
+
+#, fuzzy
+#~| msgid "no collection"
+#~ msgid "&Cut Collection"
+#~ msgid_plural "&Cut %1 Collections"
+#~ msgstr[0] "គ្មាន​សម្រាំង"
 
 #, fuzzy
 #~| msgid "Could not paste data: %1"
@@ -1235,6 +1317,3 @@ msgstr "កម្មវិធី​សាកល្បង​របស់របស
 #~| msgid_plural "&Copy %1 Folders"
 #~ msgid "Copy failed"
 #~ msgstr "ចម្លង​ថត %1"
-
-#~ msgid "No remote identifier specified"
-#~ msgstr "គ្មាន​ឧបករណ៍​កំណត់​អត្តសញ្ញាណ​ពីចម្ងាយ​បានបញ្ជាក់ទេ"
