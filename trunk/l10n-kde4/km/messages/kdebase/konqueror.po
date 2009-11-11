@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konqueror\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-10 06:08+0100\n"
+"POT-Creation-Date: 2009-11-11 06:19+0100\n"
 "PO-Revision-Date: 2009-06-17 07:56+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -413,7 +413,7 @@ msgstr ""
 #: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2510
 #: src/konqmainwindow.cpp:2528 src/konqmainwindow.cpp:2548
 #: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:2629
-#: src/konqmainwindow.cpp:5078 src/konqviewmanager.cpp:1396
+#: src/konqmainwindow.cpp:5078 src/konqviewmanager.cpp:1398
 msgid "Discard Changes?"
 msgstr "មិន​រក្សា​ទុក​ការ​ផ្លាស់​ប្ដូរ​ឬ ?"
 
@@ -421,7 +421,7 @@ msgstr "មិន​រក្សា​ទុក​ការ​ផ្លាស់
 #: src/konqmainwindow.cpp:2421 src/konqmainwindow.cpp:2510
 #: src/konqmainwindow.cpp:2528 src/konqmainwindow.cpp:2548
 #: src/konqmainwindow.cpp:2596 src/konqmainwindow.cpp:2629
-#: src/konqmainwindow.cpp:5078 src/konqviewmanager.cpp:1396
+#: src/konqmainwindow.cpp:5078 src/konqviewmanager.cpp:1398
 msgid "&Discard Changes"
 msgstr "មិន​រក្សាទុក​ការ​ផ្លាស់ប្ដូរ"
 
@@ -974,7 +974,7 @@ msgid ""
 "You have multiple tabs open in this window, are you sure you want to quit?"
 msgstr "អ្នក​មាន​ផ្ទាំង​ច្រើន​បើក​ក្នុង​បង្អួច​នេះ តើ​អ្នក​ពិត​ជា​ចង់​ចេញ​ឬ ?"
 
-#: src/konqmainwindow.cpp:5040 src/konqviewmanager.cpp:1378
+#: src/konqmainwindow.cpp:5040 src/konqviewmanager.cpp:1380
 msgid "Confirmation"
 msgstr "ការ​អះអាង"
 
@@ -1126,7 +1126,7 @@ msgstr "មិនធ្វើ​វិញ ៖ បានបិទ​បង្អ
 msgid "Und&o"
 msgstr "មិន​ធ្វើ​វិញ"
 
-#: src/konqviewmanager.cpp:1376
+#: src/konqviewmanager.cpp:1378
 msgid ""
 "You have multiple tabs open in this window.\n"
 "Loading a view profile will close them."
@@ -1134,11 +1134,11 @@ msgstr ""
 "អ្នក​មាន​ផ្ទាំង​ច្រើន​បើក​ក្នុង​បង្អួច​នេះ ។\n"
 "ការ​ផ្ទុក​ទម្រង់​ទិដ្ឋភាព​នឹង​បិទ​ពួក​វា ។"
 
-#: src/konqviewmanager.cpp:1379
+#: src/konqviewmanager.cpp:1381
 msgid "Load View Profile"
 msgstr "ផ្ទុក​ទម្រង់​ទិដ្ឋភាព"
 
-#: src/konqviewmanager.cpp:1395
+#: src/konqviewmanager.cpp:1397
 msgid ""
 "This tab contains changes that have not been submitted.\n"
 "Loading a profile will discard these changes."
@@ -1317,7 +1317,12 @@ msgstr[0] "ថ្ងៃ"
 msgid "<h1>History Sidebar</h1> You can configure the history sidebar here."
 msgstr "<h1>របារ​ចំហៀង​របស់​ប្រវត្តិ</h1> អ្នក​អាច​កំណត់​រចនា​សម្ព័ន្ធ​របារ​ចំហៀង​របស់​ប្រវត្តិ​ទីនេះ ។"
 
-#: sidebar/trees/konqsidebar_tree.cpp:173
+#: sidebar/trees/dirtree_module/dirtree_module.cpp:417
+#, kde-format
+msgid "Cannot find parent item %1 in the tree. Internal error."
+msgstr "មិន​អាច​រក​ឃើញ​ធាតុ %1 ក្នុង​មែក​ធាង ។ កំហុស​ខាង​ក្នុង ។"
+
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
 #: sidebar/web_module/web_module.cpp:251
 #, fuzzy
 #| msgid "Name:"
@@ -1325,60 +1330,55 @@ msgctxt "@label"
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
-#: sidebar/trees/konqsidebar_tree.cpp:173
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:179
 #: sidebar/web_module/web_module.cpp:251
 msgctxt "@label"
 msgid "Path or URL:"
 msgstr ""
 
-#: sidebar/trees/konqsidebar_tree.cpp:174
+#: sidebar/trees/konqsidebar_oldtreemodule.cpp:180
 msgctxt "@title:window"
 msgid "Add folder sidebar module"
 msgstr ""
 
-#: sidebar/trees/dirtree_module/dirtree_module.cpp:415
-#, kde-format
-msgid "Cannot find parent item %1 in the tree. Internal error."
-msgstr "មិន​អាច​រក​ឃើញ​ធាតុ %1 ក្នុង​មែក​ធាង ។ កំហុស​ខាង​ក្នុង ។"
-
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:73
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:74
 msgid "&Create New Folder"
 msgstr "បង្កើត​ថត​ថ្មី"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:77
-#: sidebar/trees/konq_sidebartree.cpp:204
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:78
+#: sidebar/trees/konq_sidebartree.cpp:210
 msgid "Delete Folder"
 msgstr "លុប​ថត"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:81
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:82
 msgid "Delete Bookmark"
 msgstr "លុប​ចំណាំ"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:85
-#: sidebar/trees/konq_sidebartree.cpp:220
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:86
+#: sidebar/trees/konq_sidebartree.cpp:227
 msgid "Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:89
-#: sidebar/trees/konq_sidebartree.cpp:224
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:90
+#: sidebar/trees/konq_sidebartree.cpp:231
 msgid "Open in New Window"
 msgstr "បើក​ក្នុង​បង្អួច​ថ្មី"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:93
-#: sidebar/trees/konq_sidebartree.cpp:228
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:94
+#: sidebar/trees/konq_sidebartree.cpp:235
 msgid "Open in New Tab"
 msgstr "បើក​ក្នុង​ផ្ទាំង​ថ្មី"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:97
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:98
 msgid "Open Folder in Tabs"
 msgstr "បើក​ថត​ក្នុង​ផ្ទាំង"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:101
-#: sidebar/trees/konq_sidebartree.cpp:232
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:102
+#: sidebar/trees/konq_sidebartree.cpp:239
 msgid "Copy Link Address"
 msgstr "ចម្លង​អាសយដ្ឋាន​តំណ"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:333
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:334
 #, kde-format
 msgid ""
 "Are you sure you wish to remove the bookmark folder\n"
@@ -1387,7 +1387,7 @@ msgstr ""
 "តើ​អ្នក​ពិត​ជា​ចង់​យក​ថត​ចំណាំ\n"
 "\"%1\" ចេញ​ឬ?"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:334
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:335
 #, kde-format
 msgid ""
 "Are you sure you wish to remove the bookmark\n"
@@ -1396,27 +1396,27 @@ msgstr ""
 "តើ​អ្នក​ពិត​ជា​ចង់​យក​ចំណាំ\n"
 "\"%1\" ចេញ​ឬ ?"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:335
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:336
 msgid "Bookmark Folder Deletion"
 msgstr "ការ​លុប​ថត​ចំណាំ"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:336
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:337
 msgid "Bookmark Deletion"
 msgstr "ការ​លុប​ចំណាំ"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:378
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:379
 msgid "Bookmark Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ​ចំណាំ"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:558
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:559
 msgid "&Update"
 msgstr "ធ្វើ​ឲ្យ​ទាន់​សម័យ​"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:566
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:567
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
-#: sidebar/trees/bookmark_module/bookmark_module.cpp:574
+#: sidebar/trees/bookmark_module/bookmark_module.cpp:575
 msgid "Location:"
 msgstr "ទីតាំង ៖"
 
@@ -1424,31 +1424,31 @@ msgstr "ទីតាំង ៖"
 msgid "Add Bookmark"
 msgstr "បន្ថែម​ចំណាំ"
 
-#: sidebar/trees/konq_sidebartree.cpp:200
+#: sidebar/trees/konq_sidebartree.cpp:206
 msgid "&Create New Folder..."
 msgstr "បង្កើត​ថត​ថ្មី..."
 
-#: sidebar/trees/konq_sidebartree.cpp:208
+#: sidebar/trees/konq_sidebartree.cpp:214
 msgid "Move to Trash"
 msgstr ""
 
-#: sidebar/trees/konq_sidebartree.cpp:212
+#: sidebar/trees/konq_sidebartree.cpp:218
 msgid "Rename"
 msgstr "ប្ដូរ​ឈ្មោះ"
 
-#: sidebar/trees/konq_sidebartree.cpp:216
+#: sidebar/trees/konq_sidebartree.cpp:223
 msgid "Delete Link"
 msgstr "លុប​តំណ"
 
-#: sidebar/trees/konq_sidebartree.cpp:943
+#: sidebar/trees/konq_sidebartree.cpp:954
 msgid "New Folder"
 msgstr "ថត​ថ្មី"
 
-#: sidebar/trees/konq_sidebartree.cpp:947
+#: sidebar/trees/konq_sidebartree.cpp:958
 msgid "Create New Folder"
 msgstr "បង្កើត​ថត​ថ្មី"
 
-#: sidebar/trees/konq_sidebartree.cpp:948
+#: sidebar/trees/konq_sidebartree.cpp:959
 msgid "Enter folder name:"
 msgstr "បញ្ចូល​ឈ្មោះ​ថត ៖"
 
@@ -1460,9 +1460,9 @@ msgstr "របារ​ចំហៀង​បន្ថែម"
 msgid "Rollback to System Default"
 msgstr "រមូរ​ថយ​ក្រោយ​ទៅ​លំនាំ​ដើម​របស់​ប្រព័ន្ធ"
 
-#: sidebar/sidebar_widget.cpp:152
-msgid "Configure Navigation Panel"
-msgstr "កំណត់​រចនាសម្ព័ន្ធ​បន្ទះ​រុករក"
+#: sidebar/sidebar_widget.cpp:152 sidebar/sidebar_widget.cpp:412
+msgid "Configure Sidebar"
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ​របារ​ចំហៀង"
 
 #: sidebar/sidebar_widget.cpp:154
 msgid "Add New"
@@ -1481,8 +1481,10 @@ msgid "Show Configuration Button"
 msgstr "បង្ហាញ​ប៊ូតុង​កំណត់​រចនា​សម្ព័ន្ធ"
 
 #: sidebar/sidebar_widget.cpp:164
-msgid "Close Navigation Panel"
-msgstr "បិទ​បន្ទះ​រុករក"
+#, fuzzy
+#| msgid "Web Sidebar"
+msgid "Close Sidebar"
+msgstr "របារ​ចំហៀង​បណ្ដាញ"
 
 #: sidebar/sidebar_widget.cpp:192
 msgid "This entry already exists."
@@ -1527,23 +1529,19 @@ msgstr ""
 "អ្នក​បាន​លាក់​ប៊ូតុង​កំណត់​រចនា​សម្ព័ន្ធ​បន្ទះ​រុករក ។ ដើម្បី​ធ្វើ​ឲ្យ​វា​មើល​ឃើញ​ឡើង​វិញ ចុច​ប៊ូតុង​កណ្ដុរ​ខាង​ស្ដាំ លើ​"
 "ប៊ូតុង​បន្ទះ​រុករក​ណា​មួយ ហើយ​ជ្រើស \"បង្ហាញ​ប៊ូតុង​ការ​កំណត់​រចនាសម្ព័ន្ធ\" ។"
 
-#: sidebar/sidebar_widget.cpp:421
-msgid "Configure Sidebar"
-msgstr "កំណត់​រចនា​សម្ព័ន្ធ​របារ​ចំហៀង"
-
-#: sidebar/sidebar_widget.cpp:539
+#: sidebar/sidebar_widget.cpp:530
 msgid "Set Name..."
 msgstr "កំណត់​ឈ្មោះ..."
 
-#: sidebar/sidebar_widget.cpp:540
+#: sidebar/sidebar_widget.cpp:531
 msgid "Set URL..."
 msgstr "កំណត់ URL..."
 
-#: sidebar/sidebar_widget.cpp:541
+#: sidebar/sidebar_widget.cpp:532
 msgid "Set Icon..."
 msgstr "កំណត់​រូប​តំណាង..."
 
-#: sidebar/sidebar_widget.cpp:543
+#: sidebar/sidebar_widget.cpp:534
 msgid "Remove"
 msgstr "យក​ចេញ​"
 
@@ -2462,6 +2460,12 @@ msgid ""
 "If true, when opening a session from within the sessions dialog the tabs "
 "will be opened inside current window."
 msgstr "ប្រសិនបើ​ពិត នៅពេល​បើក​សម័យ​ពី​ក្នុង​​ផ្ទាំង​ប្រអប់​​សម័យ​ នឹង​ត្រូវ​បានបើក​ខាង​ក្នុង​បង្អួច​បច្ចុប្បន្ន ។"
+
+#~ msgid "Configure Navigation Panel"
+#~ msgstr "កំណត់​រចនាសម្ព័ន្ធ​បន្ទះ​រុករក"
+
+#~ msgid "Close Navigation Panel"
+#~ msgstr "បិទ​បន្ទះ​រុករក"
 
 #~ msgid "Select Type"
 #~ msgstr "ជ្រើស​ប្រភេទ"
