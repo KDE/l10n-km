@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_networkmanagement\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-14 06:20+0100\n"
+"POT-Creation-Date: 2009-11-16 06:21+0100\n"
 "PO-Revision-Date: 2009-06-08 10:48+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -99,22 +99,22 @@ msgctxt "ip address of the network interface"
 msgid "Address: %1"
 msgstr "អាសយដ្ឋាន ៖ %1"
 
-#: networkmanager.cpp:245
+#: networkmanager.cpp:200
 msgid "Manage Connections..."
 msgstr "គ្រប់គ្រង​ការ​តភ្ជាប់..."
 
-#: networkmanager.cpp:449
+#: networkmanager.cpp:404
 msgctxt "Tooltip sub text"
 msgid "No network interfaces"
 msgstr "គ្មាន​ចំណុច​ប្រទាក់​បណ្ដាញ"
 
-#: networkmanager.cpp:474
+#: networkmanager.cpp:429
 #, kde-format
 msgctxt "Display of the IP (network) address in the tooltip"
 msgid "<font size=\"-1\">Address: %1</font>"
 msgstr ""
 
-#: networkmanager.cpp:484
+#: networkmanager.cpp:439
 #, fuzzy
 #| msgctxt "networking device is not connected"
 #| msgid "Disconnected"
@@ -122,7 +122,7 @@ msgctxt "tooltip, all interfaces are down"
 msgid "Disconnected"
 msgstr "បានផ្ដាច់"
 
-#: networkmanager.cpp:695
+#: networkmanager.cpp:650
 #, fuzzy
 #| msgctxt "Notification for hardware removed"
 #| msgid "Network interface removed"
@@ -138,7 +138,7 @@ msgctxt "Extender title"
 msgid "Network Management"
 msgstr "បានយក​ចំណុច​ប្រទាក់បណ្ដាញចេញ"
 
-#: nmextenderitem.cpp:137
+#: nmextenderitem.cpp:120
 #, fuzzy
 #| msgctxt "Label for ethernet group in popup"
 #| msgid "Wired Networking"
@@ -146,30 +146,33 @@ msgctxt "CheckBox to enable or disable networking completely"
 msgid "Enable networking"
 msgstr "បណ្ដាញ​មាន​ខ្សែ"
 
-#: nmextenderitem.cpp:146
+#: nmextenderitem.cpp:129
 msgctxt "CheckBox to enable or disable wireless interface (rfkill)"
 msgid "Enable wireless"
 msgstr "បើក​ឥតខ្សែ"
 
-#: nmextenderitem.cpp:175
+#: nmextenderitem.cpp:158
 msgctxt "button in general settings extender"
 msgid "Manage Connections..."
 msgstr "គ្រប់គ្រង​ការ​តភ្ជាប់..."
 
-#: nmextenderitem.cpp:316
-msgctxt "title of the wired tab"
-msgid "Wired"
-msgstr ""
-
-#: nmextenderitem.cpp:330
+#: nmextenderitem.cpp:305
 #, fuzzy
-#| msgctxt "CheckBox to enable or disable wireless interface (rfkill)"
-#| msgid "Enable wireless"
-msgctxt "title of the wireless tab"
-msgid "Wireless"
-msgstr "បើក​ឥតខ្សែ"
+#| msgctxt "Label for vpn connections in popup"
+#| msgid "VPN Connections"
+msgctxt "title of the connections tab"
+msgid "Connections"
+msgstr "ការ​តភ្ជាប់ VPN"
 
-#: nmextenderitem.cpp:344
+#: nmextenderitem.cpp:323
+#, fuzzy
+#| msgctxt "Label for wifi networks in popup"
+#| msgid "Wireless Networking"
+msgctxt "title of the wireless tab"
+msgid "Wireless Networks"
+msgstr "​បណ្ដាញ​ឥតខ្សែ"
+
+#: nmextenderitem.cpp:334
 msgctxt "VPN connections tab"
 msgid "VPN"
 msgstr ""
@@ -215,6 +218,35 @@ msgstr "បង្ហាញ​ការ​តភ្ជាប់ VPN"
 #: rc.cpp:21
 msgid "&Show this many wireless networks"
 msgstr "បង្ហាញ​បណ្ដាញ​ឥតខ្សែ​ជា​ច្រើន​នេះ"
+
+#: wirelessnetworkitem.cpp:224
+#, fuzzy, kde-format
+#| msgctxt "Notification text when a network interface connection succeeded"
+#| msgid "%1 connected"
+msgctxt "label on the connectabel button"
+msgid "%1 (connected)"
+msgstr "បាន​តភ្ជាប់ %1"
+
+#: wirelessnetworkitem.cpp:232
+#, fuzzy, kde-format
+#| msgid "Connecting..."
+msgctxt "label on the connectabel button"
+msgid "%1 (connecting...)"
+msgstr "កំពុង​តភ្ជាប់..."
+
+#: wirelessnetworkitem.cpp:233
+#, fuzzy
+#| msgid "Connecting..."
+msgctxt "subtext on connection button"
+msgid "Connecting..."
+msgstr "កំពុង​តភ្ជាប់..."
+
+#, fuzzy
+#~| msgctxt "CheckBox to enable or disable wireless interface (rfkill)"
+#~| msgid "Enable wireless"
+#~ msgctxt "title of the wireless tab"
+#~ msgid "Wireless"
+#~ msgstr "បើក​ឥតខ្សែ"
 
 #, fuzzy
 #~| msgctxt "Notification for hardware removed"
@@ -325,9 +357,6 @@ msgstr "បង្ហាញ​បណ្ដាញ​ឥតខ្សែ​ជា​
 #~ msgid "Connection failed"
 #~ msgstr "បាន​បរាជ័យ​ក្នុងការ​តភ្ជាប់"
 
-#~ msgid "Connecting..."
-#~ msgstr "កំពុង​តភ្ជាប់..."
-
 #~ msgid "Preparing network connection"
 #~ msgstr "រៀបចំ​កា​រតភ្ជាប់​បណ្ដាញ"
 
@@ -424,14 +453,6 @@ msgstr "បង្ហាញ​បណ្ដាញ​ឥតខ្សែ​ជា​
 #~ msgid "%1:\"%2\""
 #~ msgstr "%1:\"%2\""
 
-#~ msgctxt "Label for wifi networks in popup"
-#~ msgid "Wireless Networking"
-#~ msgstr "​បណ្ដាញ​ឥតខ្សែ"
-
-#~ msgctxt "Label for vpn connections in popup"
-#~ msgid "VPN Connections"
-#~ msgstr "ការ​តភ្ជាប់ VPN"
-
 #~ msgctxt "Notification for radio kill switch turned on"
 #~ msgid "Wireless hardware enabled"
 #~ msgstr "បាន​បើក​ផ្នែក​រឹង​ឥតខ្សែ"
@@ -443,10 +464,6 @@ msgstr "បង្ហាញ​បណ្ដាញ​ឥតខ្សែ​ជា​
 #~ msgctxt "Notification text when a network interface was disconnected"
 #~ msgid "%1 disconnected"
 #~ msgstr "បាន​ផ្ដាច់ %1"
-
-#~ msgctxt "Notification text when a network interface connection succeeded"
-#~ msgid "%1 connected"
-#~ msgstr "បាន​តភ្ជាប់ %1"
 
 #~ msgctxt "Notification for hardware added"
 #~ msgid "Network interface %1 attached"
