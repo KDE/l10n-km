@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-21 06:39+0100\n"
+"POT-Creation-Date: 2009-11-22 06:22+0100\n"
 "PO-Revision-Date: 2009-06-17 16:28+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -410,9 +410,10 @@ msgstr "ផ្លាស់ទី torrent ទៅ​បាត​លំដាប់
 msgid "Open an URL"
 msgstr "បើក URL"
 
-#: ktorrent/pastedialog.cpp:59
-msgid "Invalid URL: "
-msgstr "URL មិន​ត្រឹមត្រូវ ៖"
+#: ktorrent/pastedialog.cpp:59 ktorrent/gui.cpp:314
+#, kde-format
+msgid "Invalid URL: %1"
+msgstr "URL មិនត្រឹមត្រូវ ៖ %1"
 
 #: ktorrent/viewmanager.cpp:533
 msgid "Start"
@@ -519,8 +520,7 @@ msgstr "ប្រកាស​ដោយ​ដៃ​"
 msgid "Scrape"
 msgstr "Scrape"
 
-#: ktorrent/viewmanager.cpp:596 plugins/infowidget/iwfilelistmodel.cpp:78
-#: plugins/infowidget/iwfiletreemodel.cpp:90
+#: ktorrent/viewmanager.cpp:596
 msgid "Preview"
 msgstr "មើល​ជា​​​មុន"
 
@@ -1045,7 +1045,6 @@ msgid "Name"
 msgstr "ឈ្មោះ"
 
 #: ktorrent/viewmodel.cpp:433 ktorrent/queuemanagermodel.cpp:120
-#: plugins/infowidget/infowidgetplugin.cpp:83
 #: plugins/infowidget/trackermodel.cpp:148
 #: plugins/infowidget/webseedsmodel.cpp:127
 msgid "Status"
@@ -1442,11 +1441,6 @@ msgstr "ឯកសារ​ទាំង​អស់"
 #: ktorrent/gui.cpp:230 ktorrent/gui.cpp:245
 msgid "Open Location"
 msgstr "បើក​ទីតាំង"
-
-#: ktorrent/gui.cpp:314
-#, kde-format
-msgid "Invalid URL: %1"
-msgstr "URL មិនត្រឹមត្រូវ ៖ %1"
 
 #: ktorrent/gui.cpp:375
 msgid "Create a new torrent"
@@ -6489,7 +6483,10 @@ msgstr "ការ​ត​ភ្ជាប់"
 
 #. i18n: file: plugins/stats/Spd.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, SpdWgt)
-#: rc.cpp:1805 plugins/infowidget/webseedsmodel.cpp:125
+#: rc.cpp:1805
+#, fuzzy
+#| msgid "Speed"
+msgctxt "@title:window"
 msgid "Speed"
 msgstr "ល្បឿន"
 
@@ -8438,12 +8435,21 @@ msgstr "ថាតើ​យើង​ចាប់អារម្មណ៍​ក្
 msgid "Info Widget"
 msgstr "ធាតុ​ក្រាហ្វិក​​ព័ត៌មាន"
 
+#: plugins/infowidget/infowidgetplugin.cpp:83
+#, fuzzy
+#| msgid "Status"
+msgctxt "@title:tab"
+msgid "Status"
+msgstr "ស្ថានភាព"
+
 #: plugins/infowidget/infowidgetplugin.cpp:84
 msgid "Displays status information about a torrent"
 msgstr "បង្ហាញ​ព័ត៌មាន​ស្ថានភាព​អំពី torrent"
 
 #: plugins/infowidget/infowidgetplugin.cpp:85
-#: plugins/infowidget/chunkdownloadmodel.cpp:214
+#, fuzzy
+#| msgid "Files"
+msgctxt "@title:tab"
 msgid "Files"
 msgstr "ឯកសារ"
 
@@ -8498,6 +8504,10 @@ msgstr "ធ្វើ​ឲ្យ​​ទាន់​សម័យ​បន្ទ
 msgid "URL"
 msgstr "URL"
 
+#: plugins/infowidget/webseedsmodel.cpp:125
+msgid "Speed"
+msgstr "ល្បឿន"
+
 #: plugins/infowidget/webseedstab.cpp:96
 #, kde-format
 msgid "Cannot add the webseed %1, it is already part of the list of webseeds."
@@ -8541,6 +8551,14 @@ msgstr ""
 "<img src=\"available_color\">&nbsp; - កំណាត់​ដែល​​មាន<br><img src="
 "\"unavailable_color\">&nbsp; - កំណាត់​ដែល​មិនមាន<br><img src=\"excluded_color"
 "\">&nbsp; - កំណាត់​ដែល​មិន​រួមបញ្ចូល"
+
+#: plugins/infowidget/iwfilelistmodel.cpp:78
+#: plugins/infowidget/iwfiletreemodel.cpp:90
+#, fuzzy
+#| msgid "Preview"
+msgctxt "@title:column"
+msgid "Preview"
+msgstr "មើល​ជា​​​មុន"
 
 #: plugins/infowidget/iwfilelistmodel.cpp:80
 #: plugins/infowidget/iwfiletreemodel.cpp:92
@@ -8609,6 +8627,10 @@ msgstr "វឌ្ឍនភាព"
 #: plugins/infowidget/chunkdownloadmodel.cpp:212
 msgid "Peer"
 msgstr "ម៉ាស៊ីន​ដូចគ្នា​"
+
+#: plugins/infowidget/chunkdownloadmodel.cpp:214
+msgid "Files"
+msgstr "ឯកសារ"
 
 #: plugins/infowidget/chunkdownloadmodel.cpp:222
 msgid "Number of the chunk"
@@ -8837,7 +8859,7 @@ msgstr ""
 msgid "Shutdown Enabled"
 msgstr ""
 
-#: plugins/shutdown/shutdownplugin.cpp:49 plugins/shutdown/shutdowndlg.cpp:29
+#: plugins/shutdown/shutdownplugin.cpp:49
 #, fuzzy
 #| msgid "Configure Columns"
 msgid "Configure Shutdown"
@@ -8860,6 +8882,13 @@ msgstr ""
 #: plugins/shutdown/shutdownplugin.cpp:164 plugins/shutdown/shutdowndlg.cpp:42
 msgid "Hibernate (suspend to disk)"
 msgstr ""
+
+#: plugins/shutdown/shutdowndlg.cpp:29
+#, fuzzy
+#| msgid "Configure Columns"
+msgctxt "@title:window"
+msgid "Configure Shutdown"
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ជួរ​ឈរ"
 
 #: plugins/shutdown/shutdowndlg.cpp:44
 #, fuzzy
@@ -9856,21 +9885,21 @@ msgstr "មិនអាច​បម្រុងទុក​ទំហំថាស
 msgid "Cannot open file %1 : %2"
 msgstr "មិន​អាច​បើក​ឯកសារ %1 ៖​ %2"
 
-#: libbtcore/torrent/torrent.cpp:83 libbtcore/torrent/torrent.cpp:154
-#: libbtcore/torrent/torrent.cpp:182 libbtcore/torrent/torrent.cpp:189
-#: libbtcore/torrent/torrent.cpp:197 libbtcore/torrent/torrent.cpp:201
-#: libbtcore/torrent/torrent.cpp:222 libbtcore/torrent/torrent.cpp:293
+#: libbtcore/torrent/torrent.cpp:83 libbtcore/torrent/torrent.cpp:155
+#: libbtcore/torrent/torrent.cpp:183 libbtcore/torrent/torrent.cpp:190
+#: libbtcore/torrent/torrent.cpp:198 libbtcore/torrent/torrent.cpp:202
+#: libbtcore/torrent/torrent.cpp:223 libbtcore/torrent/torrent.cpp:294
 #, fuzzy
 #| msgid "Corrupted torrent!"
 msgid "Corrupted torrent."
 msgstr "torrent ខូច !"
 
-#: libbtcore/torrent/torrent.cpp:145
+#: libbtcore/torrent/torrent.cpp:146
 #, kde-format
 msgid " Unable to open torrent file %1 : %2"
 msgstr " មិន​អាច​បើក​ឯកសារ​ torrent %1 ៖ %2 បានទេ"
 
-#: libbtcore/torrent/torrent.cpp:275
+#: libbtcore/torrent/torrent.cpp:276
 msgid "Parse Error"
 msgstr "កំហុស​ញែក"
 
@@ -10018,6 +10047,9 @@ msgstr "URL កម្មវិធី​តាមដាន​បទ​មិន�
 #, kde-format
 msgid "Cannot open file : %1 : %2"
 msgstr "មិនអាច​បើក​ឯកសារ ៖ %1 : %2"
+
+#~ msgid "Invalid URL: "
+#~ msgstr "URL មិន​ត្រឹមត្រូវ ៖"
 
 #~ msgid "Normal priority:"
 #~ msgstr "អាទិភាព​ធម្មតា ៖"
