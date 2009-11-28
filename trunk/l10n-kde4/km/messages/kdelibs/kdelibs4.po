@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdelibs4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-11-27 06:02+0100\n"
+"POT-Creation-Date: 2009-11-28 06:12+0100\n"
 "PO-Revision-Date: 2009-07-27 11:43+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -94,7 +94,7 @@ msgstr "សហប្រតិបត្តិការ"
 #. i18n: file: knewstuff/knewstuff3/uploaddialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, UploadDialog)
 #: rc.cpp:26 rc.cpp:98 knewstuff/knewstuff2/ui/uploaddialog.cpp:58
-#: knewstuff/knewstuff3/uploaddialog.cpp:113
+#: knewstuff/knewstuff3/uploaddialog.cpp:120
 msgid "Share Hot New Stuff"
 msgstr "ចែក​រំលែក​របស់​ថ្មី​បំផុត"
 
@@ -294,7 +294,7 @@ msgstr "សូម​ផ្ដល់​ព័ត៌មាន​មួយ​ចំ
 
 #. i18n: file: knewstuff/knewstuff3/uploaddialog.ui:92
 #. i18n: ectx: property (title), widget (QGroupBox, uploadGroup)
-#: rc.cpp:113
+#: rc.cpp:113 knewstuff/knewstuff3/uploaddialog.cpp:297
 #, fuzzy
 #| msgctxt "Reload KDE configuration messagebox"
 #| msgid "Reload"
@@ -323,8 +323,8 @@ msgstr "សេចក្តី​ពិពណ៌នា ៖"
 msgid "Set a price for this item"
 msgstr "កុំ​ទុក​សម្រាប់​តំបន់​បណ្ដាញ​នេះ"
 
-#. i18n: file: knewstuff/knewstuff3/uploaddialog.ui:239
-#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: knewstuff/knewstuff3/uploaddialog.ui:242
+#. i18n: ectx: property (text), widget (QLabel, priceLabel)
 #: rc.cpp:143
 #, fuzzy
 #| msgctxt "The source url of a job"
@@ -2362,7 +2362,7 @@ msgstr "ផ្ទុក​ឡើង​វិញ"
 msgid "Do Not Reload"
 msgstr "កុំ​ផ្ទុក​ឡើង​វិញ"
 
-#: kded/kbuildsycoca.cpp:856
+#: kded/kbuildsycoca.cpp:857
 msgid "Configuration information reloaded successfully."
 msgstr "ព័ត៌មាន​អំពី​ការ​កំណត់​រចនាសម្ព័ន្ធ ត្រូវ​បាន​ផ្ទុក​ឡើង​វិញ​ដោយ​ជោគជ័យ ។"
 
@@ -7190,7 +7190,7 @@ msgid "Payload"
 msgstr "Payload"
 
 #: knewstuff/knewstuff2/ui/uploaddialog.cpp:65
-#: knewstuff/knewstuff3/uploaddialog.cpp:121
+#: knewstuff/knewstuff3/uploaddialog.cpp:128
 #, fuzzy, kde-format
 #| msgctxt "Program name followed by 'Add On Installer'"
 #| msgid "%1 Add-On Installer"
@@ -7199,7 +7199,7 @@ msgid "%1 Add-On Uploader"
 msgstr "បន្ថែម​លើ​កម្មវិធី​ដំឡើង %1"
 
 #: knewstuff/knewstuff2/ui/uploaddialog.cpp:92
-#: knewstuff/knewstuff3/uploaddialog.cpp:199
+#: knewstuff/knewstuff3/uploaddialog.cpp:216
 msgid "Please put in a name."
 msgstr "សូម​បញ្ចូល​ឈ្មោះ ។"
 
@@ -7550,67 +7550,83 @@ msgstr ""
 "<qt>មិន​អាច​ចាប់ផ្ដើម <i>gpg</i> និង​ចុះ​ហត្ថលេខា​​លើឯកសារ​បានទេ ។ ត្រូវ​​ប្រាកដ​ថាបាន​ដំឡើង "
 "<i>gpg</i> រួចហើយ បើ​ពុំ​នោះ​សោត​ទេ ការ​ចុះ​ហត្ថលេខា​ធនធាន​នឹង​មិន​អាច​ធ្វើ​ទៅ​បាន​ទេ ។</qt>"
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:95
+#: knewstuff/knewstuff3/uploaddialog.cpp:102
 #, fuzzy, kde-format
 #| msgid "Rating: %1"
 msgctxt "Label showing the file name of a file that is about to be uploaded"
 msgid "Uploading: %1"
 msgstr "ការវាយ​តម្លៃ ៖ %1"
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:117
+#: knewstuff/knewstuff3/uploaddialog.cpp:124
 #, fuzzy
 #| msgid "&Replace..."
 msgid "Upload..."
 msgstr "ជំនួស..."
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:125
+#: knewstuff/knewstuff3/uploaddialog.cpp:132
 #, fuzzy
 #| msgid "Provider information"
 msgid "Fetching provider information..."
 msgstr "ព័ត៌មាន​ក្រុមហ៊ុន​ផ្ដល់"
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:194
+#: knewstuff/knewstuff3/uploaddialog.cpp:211
 #, fuzzy
 #| msgid "The rating could not be submitted."
 msgid "Provider could not be initialized."
 msgstr "មិនអាច​ដាក់ស្នើ​ការ​វាយតម្លៃ​បានទេ ។"
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:206
+#: knewstuff/knewstuff3/uploaddialog.cpp:223
 msgid "Creating Content on Server..."
 msgstr ""
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:239
+#: knewstuff/knewstuff3/uploaddialog.cpp:264
 msgid "There was a network error."
 msgstr ""
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:239
-#: knewstuff/knewstuff3/uploaddialog.cpp:244
+#: knewstuff/knewstuff3/uploaddialog.cpp:264
+#: knewstuff/knewstuff3/uploaddialog.cpp:269
 #, fuzzy
 #| msgid "Download"
 msgid "Uploading Failed"
 msgstr "ទាញយក"
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:244
+#: knewstuff/knewstuff3/uploaddialog.cpp:269
 #, fuzzy
 #| msgid "Communication error"
 msgid "Authentication error."
 msgstr "កំហុស​ទំនាក់ទំនង ។"
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:250
+#: knewstuff/knewstuff3/uploaddialog.cpp:275
 #, fuzzy
 #| msgid "Loading Preview"
 msgid "Uploading preview and content..."
 msgstr "ផ្ទុក​ការ​មើល​ជា​មុន"
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:258
+#: knewstuff/knewstuff3/uploaddialog.cpp:284
 msgid "Uploading content..."
 msgstr ""
 
-#: knewstuff/knewstuff3/uploaddialog.cpp:262
+#: knewstuff/knewstuff3/uploaddialog.cpp:288
 #, fuzzy
 #| msgid "Loading Preview"
 msgid "Uploading preview image and content..."
 msgstr "ផ្ទុក​ការ​មើល​ជា​មុន"
+
+#: knewstuff/knewstuff3/uploaddialog.cpp:297
+#, fuzzy, kde-format
+#| msgid "File %1 not found."
+msgid "File not found: %1"
+msgstr "រក​មិន​ឃើញ %1"
+
+#: knewstuff/knewstuff3/uploaddialog.cpp:321
+msgid "Content Added"
+msgstr ""
+
+#: knewstuff/knewstuff3/uploaddialog.cpp:321
+#, fuzzy
+#| msgid "Page loaded."
+msgid "File Uploaded"
+msgstr "បាន​ផ្ទុក​ទំព័រ ។"
 
 #: knewstuff/knewstuff3/downloaddialog.cpp:163
 #, fuzzy
@@ -14126,35 +14142,35 @@ msgstr "មាន​ស្លាក​រួចហើយ"
 msgid "Changing annotations"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ការ​ជូនដំណឹង"
 
-#: nepomuk/rcgen/rcgen.cpp:45 nepomuk/rcgen/rcgen.cpp:47
+#: nepomuk/rcgen/rcgen.cpp:49 nepomuk/rcgen/rcgen.cpp:51
 msgid "Nepomuk Resource Class Generator"
 msgstr "កម្មវិធី​បង្កើត​ថ្នាក់​ធនធាន​ Nepomuk"
 
-#: nepomuk/rcgen/rcgen.cpp:49
+#: nepomuk/rcgen/rcgen.cpp:53
 msgid "(c) 2006-2009, Sebastian Trüg"
 msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៦-២០០៩ ដោយ Sebastian Trüg"
 
-#: nepomuk/rcgen/rcgen.cpp:52
+#: nepomuk/rcgen/rcgen.cpp:56
 msgid "Sebastian Trüg"
 msgstr "Sebastian Trüg"
 
-#: nepomuk/rcgen/rcgen.cpp:52
+#: nepomuk/rcgen/rcgen.cpp:56
 msgid "Maintainer"
 msgstr "អ្នក​ថែទាំ"
 
-#: nepomuk/rcgen/rcgen.cpp:53
+#: nepomuk/rcgen/rcgen.cpp:57
 msgid "Tobias Koenig"
 msgstr "Tobias Koenig"
 
-#: nepomuk/rcgen/rcgen.cpp:53
+#: nepomuk/rcgen/rcgen.cpp:57
 msgid "Major cleanup - Personal hero of maintainer"
 msgstr "ជម្រះ​ដ៏​សំខាន់ - អ្នក​ថែទាំ​វិរបុរស​ផ្ទាល់ខ្លួន"
 
-#: nepomuk/rcgen/rcgen.cpp:60
+#: nepomuk/rcgen/rcgen.cpp:64
 msgid "Verbose output debugging mode."
 msgstr "របៀប​បំបាត់​កំហុស​ដែល​មាន​លទ្ធ​ដោយ​បរិយាយ ។"
 
-#: nepomuk/rcgen/rcgen.cpp:61
+#: nepomuk/rcgen/rcgen.cpp:65
 msgid ""
 "Generate simple and fast wrapper classes not based on Nepomuk::Resource "
 "which do not provide any data integrity checking"
@@ -14162,25 +14178,25 @@ msgstr ""
 "បង្កើត​ថ្នាក់​វត្ថុ​វុំ​ដែល​លឿន ហើយ​សាមញ្ញ​ ដែល​មិនមាន​មូលដ្ឋាន​លើ Nepomuk::Resource ដែល​មិន​ផ្ដល់​ទិន្នន័យ​"
 "ត្រួតពិនិត្យ​ភាព​ត្រឹមត្រូវ​ទេ"
 
-#: nepomuk/rcgen/rcgen.cpp:62
+#: nepomuk/rcgen/rcgen.cpp:66
 msgid "Actually generate the code."
 msgstr "បង្កើត​កូដ​ពិតៗ ។"
 
-#: nepomuk/rcgen/rcgen.cpp:63
+#: nepomuk/rcgen/rcgen.cpp:67
 msgid "List all includes (deprecated)."
 msgstr "រាយ​អ្វី​ទាំង​អស់​ដែលមាន (ដែល​ងាយ) ។"
 
-#: nepomuk/rcgen/rcgen.cpp:64
+#: nepomuk/rcgen/rcgen.cpp:68
 msgid ""
 "List all header files that will be generated via the --writeall command."
 msgstr "រាយ​ឯកសារ​បឋមកថា​ទាំងអស់​ដែល​នឹង​ត្រូវ​បាន​បង្កើត​តាមរយៈ​ពាក្យ​បញ្ជា --writeall ។"
 
-#: nepomuk/rcgen/rcgen.cpp:65
+#: nepomuk/rcgen/rcgen.cpp:69
 msgid ""
 "List all source files that will be generated via the --writeall command."
 msgstr "រាយ​ឯកសារធនធាន​ទាំងអស់​ដែល​នឹង​ត្រូវ​បានបង្កើត​តាមរយៈ​ពាក្យ​បញ្ជា --writeall ។"
 
-#: nepomuk/rcgen/rcgen.cpp:66
+#: nepomuk/rcgen/rcgen.cpp:70
 msgid ""
 "The ontology files containing the ontologies to be generated, a space "
 "separated list (deprecated: use arguments instead.)"
@@ -14188,25 +14204,25 @@ msgstr ""
 "ឯកសារ ontology មាន​ ontologies ដែល​ត្រូ​វបង្កើត បញ្ជី​បំបែក​ដោយ​ចន្លោះ (វិធីងាយ ៖ ប្រើ​អាគុយម៉ង់​"
 "ជំនួស​វិញ) ។"
 
-#: nepomuk/rcgen/rcgen.cpp:67
+#: nepomuk/rcgen/rcgen.cpp:71
 msgid "Include path prefix (deprecated)"
 msgstr "រួម​បញ្ចូល​បុព្វបទ​ផ្លូវ (ដែល​ងាយ)"
 
-#: nepomuk/rcgen/rcgen.cpp:68
+#: nepomuk/rcgen/rcgen.cpp:72
 msgid "Specify the target folder to store generated files into."
 msgstr "បញ្ជាក់​ថត​គោលដៅ​ដើម្បី​ទុក​ឯកសារ​ដែលបានបង្កើត ។"
 
-#: nepomuk/rcgen/rcgen.cpp:72
+#: nepomuk/rcgen/rcgen.cpp:76
 msgid "Templates to be used (deprecated)."
 msgstr "ពុម្ព​ត្រូវ​ប្រើ (ដែល​ងាយ) ។"
 
-#: nepomuk/rcgen/rcgen.cpp:73
+#: nepomuk/rcgen/rcgen.cpp:77
 msgid ""
 "Optionally specify the classes to be generated. Use option multiple times "
 "(defaults to all classes)"
 msgstr "ជា​ជម្រើស បញ្ជាក់​ថ្នាក់​ដែល​ត្រូវ​បាន​បង្កើត ។ ប្រើ​ជម្រើស​ច្រើនដង (លំនាំដើម​គ្រប់ថ្នាក់)"
 
-#: nepomuk/rcgen/rcgen.cpp:74
+#: nepomuk/rcgen/rcgen.cpp:78
 msgid ""
 "Serialization used in the ontology files. Will default to primitive file "
 "extension detection."
@@ -14214,7 +14230,7 @@ msgstr ""
 "Serialization បានប្រើ​នៅ​ក្នុង​ឯកសារ​ ontology ។ លំនាំដើម​នឹង​ទៅ​កាន់​ការ​រក​ឃើញ​ផ្នែកបន្ថែម​ឯកសារ​"
 "ចម្បង ។"
 
-#: nepomuk/rcgen/rcgen.cpp:75
+#: nepomuk/rcgen/rcgen.cpp:79
 msgid ""
 "Set the used visibility in case the classes are to be used in public API. "
 "<visibility-name> will be used to construct the export macro name and the "
@@ -14224,7 +14240,7 @@ msgstr ""
 "name> នឹង​ត្រូវ​បាន​ប្រើ​ដើម្បី​ស្ថាបនា​ឈ្មោះម៉ាក្រូ​ និង​បឋមកថា​នាំចេញ ។ តាម​លំនាំដើម​​ថ្នាក់​មិន​ត្រូវ​បាន​"
 "នាំចេញ​ទេ ។"
 
-#: nepomuk/rcgen/rcgen.cpp:76
+#: nepomuk/rcgen/rcgen.cpp:80
 msgid "The ontology files containing the ontologies to be generated."
 msgstr "ឯកសារ ontology មាន​ ontologies ដែល​ត្រូ​វបង្កើត ។"
 
