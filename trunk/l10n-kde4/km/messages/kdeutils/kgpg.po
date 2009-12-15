@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-14 06:52+0100\n"
+"POT-Creation-Date: 2009-12-15 06:06+0100\n"
 "PO-Revision-Date: 2008-12-19 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -225,7 +225,7 @@ msgstr[0] "នាំចូល គ្រាប់​ចុច ពី"
 
 #. i18n: file: keyserver.ui:140
 #. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
-#: keyservers.cpp:197 rc.cpp:324 editor/kgpgview.cpp:381
+#: keyservers.cpp:197 rc.cpp:324 editor/kgpgtextedit.cpp:377
 #, fuzzy
 msgid "&Import"
 msgstr "នាំចូល"
@@ -725,7 +725,7 @@ msgstr ""
 msgid "Public Key Export"
 msgstr "សាធារណៈ គ្រាប់​ចុច នាំចេញ"
 
-#: keysmanager.cpp:1531 editor/kgpgeditor.cpp:488
+#: keysmanager.cpp:1531 editor/kgpgeditor.cpp:504
 #, fuzzy
 msgid "Save File"
 msgstr "រក្សា​ទុក​ឯកសារ"
@@ -1147,7 +1147,7 @@ msgid "Tar"
 msgstr ""
 
 #: kgpgexternalactions.cpp:156 kgpgexternalactions.cpp:340 kgpglibrary.cpp:112
-#: editor/kgpgeditor.cpp:509
+#: editor/kgpgeditor.cpp:525
 #, fuzzy
 msgid "File Already Exists"
 msgstr "មាន​ឯកសារ​រួច​ហើយ"
@@ -1173,7 +1173,8 @@ msgid "Decryption of this file failed:"
 msgid_plural "Decryption of these files failed:"
 msgstr[0] "បរាជ័យ​."
 
-#: kgpgexternalactions.cpp:372 editor/kgpgview.cpp:306 editor/kgpgview.cpp:345
+#: kgpgexternalactions.cpp:372 editor/kgpgtextedit.cpp:302
+#: editor/kgpgtextedit.cpp:341
 #, fuzzy
 msgid "Decryption failed."
 msgstr "បរាជ័យ​."
@@ -1686,7 +1687,7 @@ msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
 msgstr "ជា និង ជា"
 
-#: kgpgtextinterface.cpp:627 editor/kgpgview.cpp:388
+#: kgpgtextinterface.cpp:627 editor/kgpgtextedit.cpp:384
 #, fuzzy, kde-format
 msgid ""
 "<qt><b>Missing signature:</b><br />Key id: %1<br /><br />Do you want to "
@@ -2246,7 +2247,7 @@ msgstr "គ្រាប់​ចុច កម្មវិធី​គ្រប�
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftClick)
 #. i18n: file: conf_misc.ui:272
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:194 rc.cpp:197 editor/kgpgeditor.cpp:490
+#: rc.cpp:194 rc.cpp:197 editor/kgpgeditor.cpp:506
 #, fuzzy
 msgid "Editor"
 msgstr "អ្នក​​​កែ​​សម្រួល​​"
@@ -3485,120 +3486,120 @@ msgctxt "Unlimited key lifetime"
 msgid "Unlimited"
 msgstr "មិន​កំណត់"
 
-#: editor/kgpgeditor.cpp:71 editor/kgpgeditor.cpp:230
-#: editor/kgpgeditor.cpp:707 editor/kgpgeditor.cpp:736
+#: editor/kgpgeditor.cpp:89 editor/kgpgeditor.cpp:246
+#: editor/kgpgeditor.cpp:723 editor/kgpgeditor.cpp:752
 #, fuzzy
 msgid "Untitled"
 msgstr "គ្មាន​ចំណងជើង "
 
-#: editor/kgpgeditor.cpp:171
+#: editor/kgpgeditor.cpp:187
 #, fuzzy
 msgid "&Encrypt File..."
 msgstr "​អ៊ិនគ្រីប ឯកសារ."
 
-#: editor/kgpgeditor.cpp:175
+#: editor/kgpgeditor.cpp:191
 #, fuzzy
 msgid "&Decrypt File..."
 msgstr "ឯកសារ."
 
-#: editor/kgpgeditor.cpp:179
+#: editor/kgpgeditor.cpp:195
 #, fuzzy
 msgid "&Open Key Manager"
 msgstr "បើក គ្រាប់​ចុច កម្មវិធី​គ្រប់​គ្រង"
 
-#: editor/kgpgeditor.cpp:182
+#: editor/kgpgeditor.cpp:198
 #, fuzzy
 msgid "&Generate Signature..."
 msgstr "បង្កើត ហត្ថលេខា."
 
-#: editor/kgpgeditor.cpp:186
+#: editor/kgpgeditor.cpp:202
 #, fuzzy
 msgid "&Verify Signature..."
 msgstr "ហត្ថលេខា."
 
-#: editor/kgpgeditor.cpp:189
+#: editor/kgpgeditor.cpp:205
 #, fuzzy
 msgid "&Check MD5 Sum..."
 msgstr "ពិនិត្យមើល ផលបូក."
 
-#: editor/kgpgeditor.cpp:193
+#: editor/kgpgeditor.cpp:209
 #, fuzzy
 msgid "&Unicode (utf-8) Encoding"
 msgstr "យូនីកូដ ការ​អ៊ិនកូដ"
 
-#: editor/kgpgeditor.cpp:200
+#: editor/kgpgeditor.cpp:216
 #, fuzzy
 msgid "En&crypt"
 msgstr "​អ៊ិនគ្រីប"
 
-#: editor/kgpgeditor.cpp:205
+#: editor/kgpgeditor.cpp:221
 msgid "&Decrypt"
 msgstr ""
 
-#: editor/kgpgeditor.cpp:210
+#: editor/kgpgeditor.cpp:226
 #, fuzzy
 msgid "S&ign/Verify"
 msgstr "ចុះ​ហត្ថលេខា"
 
-#: editor/kgpgeditor.cpp:234
+#: editor/kgpgeditor.cpp:250
 #, fuzzy, kde-format
 msgid ""
 "The document \"%1\" has changed.\n"
 "Do you want to save it?"
 msgstr "ឯកសារ​ ដល់?"
 
-#: editor/kgpgeditor.cpp:235
+#: editor/kgpgeditor.cpp:251
 #, fuzzy
 msgid "Close the document"
 msgstr "បិទ​ ឯកសារ​"
 
-#: editor/kgpgeditor.cpp:282
+#: editor/kgpgeditor.cpp:298
 #, fuzzy
 msgid ""
 "The document could not been saved, as the selected encoding cannot encode "
 "every unicode character in it."
 msgstr "ឯកសារ​ រៀងរាល់ អ៊ិន្ឈ៍."
 
-#: editor/kgpgeditor.cpp:291 editor/kgpgeditor.cpp:310
+#: editor/kgpgeditor.cpp:307 editor/kgpgeditor.cpp:326
 #, fuzzy
 msgid ""
 "The document could not be saved, please check your permissions and disk "
 "space."
 msgstr "ឯកសារ​ និង ថាស."
 
-#: editor/kgpgeditor.cpp:336 editor/kgpgeditor.cpp:346
+#: editor/kgpgeditor.cpp:352 editor/kgpgeditor.cpp:362
 #, fuzzy, kde-format
 msgid "Overwrite existing file %1?"
 msgstr "សរសេរ​ជាន់​លើ?"
 
-#: editor/kgpgeditor.cpp:457 editor/kgpgeditor.cpp:465
-#: editor/kgpgeditor.cpp:603 editor/kgpgeditor.cpp:644
-#: editor/kgpgeditor.cpp:677
+#: editor/kgpgeditor.cpp:473 editor/kgpgeditor.cpp:481
+#: editor/kgpgeditor.cpp:619 editor/kgpgeditor.cpp:660
+#: editor/kgpgeditor.cpp:693
 #, fuzzy
 msgid "*|All Files"
 msgstr "*|ឯកសារ​ទាំង​អស់"
 
-#: editor/kgpgeditor.cpp:457
+#: editor/kgpgeditor.cpp:473
 #, fuzzy
 msgid "Open File to Encode"
 msgstr "បើក ឯកសារ ដល់"
 
-#: editor/kgpgeditor.cpp:465
+#: editor/kgpgeditor.cpp:481
 #, fuzzy
 msgid "Open File to Decode"
 msgstr "បើក ឯកសារ ដល់"
 
-#: editor/kgpgeditor.cpp:479
+#: editor/kgpgeditor.cpp:495
 #, fuzzy
 msgid "Decrypt File To"
 msgstr "ឯកសារ ទៅ"
 
-#: editor/kgpgeditor.cpp:603
+#: editor/kgpgeditor.cpp:619
 #, fuzzy
 msgid "Open File to Sign"
 msgstr "បើក ឯកសារ ដល់ ចុះ​ហត្ថលេខា"
 
-#: editor/kgpgeditor.cpp:644 editor/kgpgeditor.cpp:677
+#: editor/kgpgeditor.cpp:660 editor/kgpgeditor.cpp:693
 #, fuzzy
 msgid "Open File to Verify"
 msgstr "បើក ឯកសារ ដល់"
@@ -3637,7 +3638,7 @@ msgstr "<b> កែ​តម្រូវ</b> ជា."
 msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
 msgstr "<b> ខុស<em></em></b>"
 
-#: editor/kgpgview.cpp:89
+#: editor/kgpgtextedit.cpp:85
 #, fuzzy
 msgid ""
 "<qt><b>Remote file dropped</b>.<br />The remote file will now be copied to a "
@@ -3645,55 +3646,55 @@ msgid ""
 "deleted after operation.</qt>"
 msgstr "<qt><b> ពី​ចម្ងាយ</b><br /> ឥឡូវ ដល់ a ដល់ បាន​លុប បន្ទាប់​ពី</qt>"
 
-#: editor/kgpgview.cpp:94
+#: editor/kgpgtextedit.cpp:90
 msgid "Could not download file."
 msgstr ""
 
-#: editor/kgpgview.cpp:228
+#: editor/kgpgtextedit.cpp:224
 #, fuzzy
 msgid "Unable to read file."
 msgstr "ដល់."
 
-#: editor/kgpgview.cpp:265
+#: editor/kgpgtextedit.cpp:261
 #, fuzzy
 msgid ""
 "<qt>This file is a <b>public</b> key.\n"
 "Please use kgpg key management to import it.</qt>"
 msgstr "<qt> ជា a<b></b> ដល់</qt>"
 
-#: editor/kgpgview.cpp:268
+#: editor/kgpgtextedit.cpp:264
 #, fuzzy
 msgid ""
 "<qt>This file is a <b>private</b> key.\n"
 "Please use kgpg key management to import it.</qt>"
 msgstr "<qt> ជា a<b></b> ដល់</qt>"
 
-#: editor/kgpgview.cpp:317
+#: editor/kgpgtextedit.cpp:313
 #, fuzzy
 msgid "Encryption failed."
 msgstr "​ការ​អ៊ីនគ្រីប បរាជ័យ​."
 
-#: editor/kgpgview.cpp:353
+#: editor/kgpgtextedit.cpp:349
 #, fuzzy
 msgid "Signing not possible: bad passphrase or missing key"
 msgstr "ការចុះហត្ថលេខា ឬ"
 
-#: editor/kgpgview.cpp:382
+#: editor/kgpgtextedit.cpp:378
 #, fuzzy
 msgid "Import key in your list"
 msgstr "នាំចូល អ៊ិន្ឈ៍"
 
-#: editor/kgpgview.cpp:385
+#: editor/kgpgtextedit.cpp:381
 #, fuzzy
 msgid "Do &Not Import"
 msgstr "មិន នាំចូល"
 
-#: editor/kgpgview.cpp:386
+#: editor/kgpgtextedit.cpp:382
 #, fuzzy
 msgid "Will not import this key in your list"
 msgstr "អ៊ិន្ឈ៍"
 
-#: editor/kgpgview.cpp:388
+#: editor/kgpgtextedit.cpp:384
 #, fuzzy
 msgid "Missing Key"
 msgstr "បាត់ គ្រាប់​ចុច"
