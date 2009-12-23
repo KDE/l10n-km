@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatoui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-12 06:16+0100\n"
+"POT-Creation-Date: 2009-12-23 07:02+0100\n"
 "PO-Revision-Date: 2009-05-28 16:27+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -74,8 +74,8 @@ msgstr "ផ្ញើ​ពេលវេលា"
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: ui/kpttaskcostpanel.cpp:49 ui/kpttaskgeneralpanel.cpp:70
 #: ui/kptresourcedialog.cpp:181 ui/kptpertresult.cpp:138
-#: ui/kptpertresult.cpp:483 kernel/kpttask.cpp:3403 kernel/kptnode.cpp:122
-#: kernel/kptnode.cpp:1447 models/kptschedulemodel.cpp:444
+#: ui/kptpertresult.cpp:483 kernel/kpttask.cpp:3429 kernel/kptnode.cpp:122
+#: kernel/kptnode.cpp:1466 models/kptschedulemodel.cpp:444
 #: models/kptschedulemodel.cpp:446 models/kptresourcemodel.cpp:187
 #: models/kptresourcemodel.cpp:202 models/kptresourceallocationmodel.cpp:738
 #: models/kpttreecombobox.cpp:123 models/kptnodeitemmodel.cpp:311
@@ -534,45 +534,45 @@ msgstr "លុប"
 msgid "Modify Relation"
 msgstr "កែប្រែ​ទំនាក់ទំនង​"
 
-#: ui/kptscheduleeditor.cpp:220
+#: ui/kptscheduleeditor.cpp:229
 msgid "Add Schedule"
 msgstr "បន្ថែម​កាលវិភាគ..."
 
-#: ui/kptscheduleeditor.cpp:226
+#: ui/kptscheduleeditor.cpp:235
 msgid "Add Sub-schedule"
 msgstr "បន្ថែម​កាលវិភាគ​រង..."
 
-#: ui/kptscheduleeditor.cpp:232
+#: ui/kptscheduleeditor.cpp:241
 msgid "Delete Selection"
 msgstr "លុប​ជម្រើស"
 
-#: ui/kptscheduleeditor.cpp:238 models/kptschedulemodel.cpp:725
+#: ui/kptscheduleeditor.cpp:247 models/kptschedulemodel.cpp:725
 msgid "Calculate"
 msgstr "គណនា"
 
-#: ui/kptscheduleeditor.cpp:244
+#: ui/kptscheduleeditor.cpp:253
 msgid "Baseline"
 msgstr "បន្ទាត់​មូលដ្ឋាន"
 
-#: ui/kptscheduleeditor.cpp:297 ui/kptscheduleeditor.cpp:324
+#: ui/kptscheduleeditor.cpp:306 ui/kptscheduleeditor.cpp:333
 msgid "Create sub-schedule"
 msgstr "បង្កើត​កាលវិភាគ​រង"
 
-#: ui/kptscheduleeditor.cpp:307
+#: ui/kptscheduleeditor.cpp:316
 #, kde-format
 msgid "Add schedule %1"
 msgstr "បន្ថែម​កាលវិភាគ %1"
 
-#: ui/kptscheduleeditor.cpp:575
+#: ui/kptscheduleeditor.cpp:584
 msgid "Result"
 msgstr "លទ្ធផល"
 
-#: ui/kptscheduleeditor.cpp:580 models/kptpertcpmmodel.cpp:428
+#: ui/kptscheduleeditor.cpp:589 models/kptpertcpmmodel.cpp:428
 #: models/kptnodeitemmodel.cpp:1790
 msgid "Critical Path"
 msgstr "ផ្លូវ​សំខាន់"
 
-#: ui/kptscheduleeditor.cpp:585
+#: ui/kptscheduleeditor.cpp:594
 msgid "Scheduling Log"
 msgstr "កំណត់ហេតុ​កំណត់​ពេលវេលា"
 
@@ -840,26 +840,32 @@ msgstr "សុទិដ្ឋិនិយម​ ៖"
 msgid "Pessimistic"
 msgstr "ទុទិដ្ឋិនិយម​ ៖"
 
-#: kernel/kptschedule.cpp:1302
+#: kernel/kptschedule.cpp:1323
 msgid "Info"
 msgstr "ព័ត៌មាន"
 
-#: kernel/kptschedule.cpp:1303
+#: kernel/kptschedule.cpp:1324
 msgid "Warning"
 msgstr "ព្រមាន"
 
-#: kernel/kptschedule.cpp:1304 kernel/kptschedule.cpp:1662
-#: kernel/kptschedule.cpp:1667 kernel/kptschedule.cpp:1672
+#: kernel/kptschedule.cpp:1325 kernel/kptschedule.cpp:1694
+#: kernel/kptschedule.cpp:1699 kernel/kptschedule.cpp:1704
 msgid "Error"
 msgstr "កំហុស"
 
-#: kernel/kptschedule.cpp:1655
+#: kernel/kptschedule.cpp:1684
 #, fuzzy
 #| msgid "Baseline"
 msgid "Baselined"
 msgstr "បន្ទាត់​មូលដ្ឋាន"
 
-#: kernel/kptschedule.cpp:1658 kernel/kptglobal.cpp:30
+#: kernel/kptschedule.cpp:1687
+#, fuzzy
+#| msgid "Scheduling Log"
+msgid "Scheduling"
+msgstr "កំណត់ហេតុ​កំណត់​ពេលវេលា"
+
+#: kernel/kptschedule.cpp:1690 kernel/kptglobal.cpp:30
 #: models/kptschedulemodel.cpp:648
 msgid "Not scheduled"
 msgstr "មិន​បាន​កំណត់​ពេល"
@@ -1051,12 +1057,12 @@ msgstr "បង្កើត​ការ​ណាត់ជួប ៖ ពេលវ
 msgid "Resource %1 not available in interval: %2 to %3"
 msgstr "ធនធាន %1 មិន​អាច​ប្រើ​បាន​ក្នុង​ចន្លោះ ៖ %2 ដល់ %3"
 
-#: kernel/kptresource.cpp:2066
+#: kernel/kptresource.cpp:2074
 #, kde-format
 msgid "Could not match effort. Want: %1 got: %2"
 msgstr "មិន​អាច​ផ្គូផ្គង​កិច្ចប្រឹងប្រែង ៖ %1 បានទទួល ៖ %2"
 
-#: kernel/kptresource.cpp:2069
+#: kernel/kptresource.cpp:2077
 #, kde-format
 msgid "Resource %1 available from %2 to %3"
 msgstr "ធនធាន %1 អាច​ប្រើ​បាន​ពី %2 ដល់ %3"
@@ -1073,8 +1079,8 @@ msgstr "ការងារ"
 msgid "Account"
 msgstr "​គណនី ៖"
 
-#: kernel/kptproject.cpp:160 kernel/kptproject.cpp:274
-#: kernel/kptproject.cpp:303
+#: kernel/kptproject.cpp:160 kernel/kptproject.cpp:277
+#: kernel/kptproject.cpp:306
 #, fuzzy
 #| msgid "Initials:"
 msgid "Init"
@@ -1085,8 +1091,8 @@ msgstr "ដំបូង ៖"
 msgid "Schedule project from: %1"
 msgstr "កំណត់​ពេល​គម្រោងពី ៖ %1"
 
-#: kernel/kptproject.cpp:166 kernel/kptproject.cpp:280
-#: kernel/kptproject.cpp:312
+#: kernel/kptproject.cpp:166 kernel/kptproject.cpp:283
+#: kernel/kptproject.cpp:315
 msgctxt "Schedule project forward"
 msgid "Forward"
 msgstr "ទៅមុខ"
@@ -1097,8 +1103,8 @@ msgstr "ទៅមុខ"
 msgid "Calculate finish"
 msgstr "គណនា"
 
-#: kernel/kptproject.cpp:172 kernel/kptproject.cpp:285
-#: kernel/kptproject.cpp:307
+#: kernel/kptproject.cpp:172 kernel/kptproject.cpp:288
+#: kernel/kptproject.cpp:310
 msgctxt "Schedule project backward"
 msgid "Backward"
 msgstr "ថយក្រោយ"
@@ -1109,90 +1115,90 @@ msgstr "ថយក្រោយ"
 msgid "Calculate start"
 msgstr "គណនា"
 
-#: kernel/kptproject.cpp:176 kernel/kptproject.cpp:288
-#: kernel/kptproject.cpp:315
+#: kernel/kptproject.cpp:176 kernel/kptproject.cpp:291
+#: kernel/kptproject.cpp:318
 #, fuzzy
 #| msgid "Schedule:"
 msgid "Schedule"
 msgstr "កាលវិភាគ ៖"
 
-#: kernel/kptproject.cpp:177 kernel/kptproject.cpp:289
+#: kernel/kptproject.cpp:177 kernel/kptproject.cpp:292
 msgid "Schedule tasks forward"
 msgstr "កំណត់​ពេលភារកិច្ច​ទៅ​មុខ"
 
-#: kernel/kptproject.cpp:179 kernel/kptproject.cpp:292
+#: kernel/kptproject.cpp:179 kernel/kptproject.cpp:295
 #: models/kptnodeitemmodel.cpp:639
 #, fuzzy, kde-format
 #| msgid "Schedule:"
 msgid "Scheduled finish: %1"
 msgstr "កាលវិភាគ ៖"
 
-#: kernel/kptproject.cpp:181 kernel/kptproject.cpp:295
+#: kernel/kptproject.cpp:181 kernel/kptproject.cpp:298
 #, kde-format
 msgid "Could not finish project in time: %1"
 msgstr "មិនអាច​បញ្ចប់​គម្រោង​ឲ្យ​ទាន់​ពេលវេលា ៖ %1"
 
-#: kernel/kptproject.cpp:183 kernel/kptproject.cpp:297
+#: kernel/kptproject.cpp:183 kernel/kptproject.cpp:300
 #, kde-format
 msgid "Finished project exactly on time: %1"
 msgstr "បាន​បញ្ចប់​គម្រោង​ត្រូវ​នឹង​ពេលវេលា ៖ %1"
 
-#: kernel/kptproject.cpp:185 kernel/kptproject.cpp:299
+#: kernel/kptproject.cpp:185 kernel/kptproject.cpp:302
 #, kde-format
 msgid "Finished project before time: %1"
 msgstr "បាន​បញ្ចប់គម្រោង​មុន​ពេល ៖ %1"
 
-#: kernel/kptproject.cpp:275
+#: kernel/kptproject.cpp:278
 #, kde-format
 msgid "Schedule project forward from: %1"
 msgstr "កំណត់​ពេល​គម្រោង​ទៅ​មុខ ៖ %1"
 
-#: kernel/kptproject.cpp:281 kernel/kptproject.cpp:313
+#: kernel/kptproject.cpp:284 kernel/kptproject.cpp:316
 #, fuzzy
 #| msgid "Latest finish:"
 msgid "Calculate late finish"
 msgstr "បញ្ចប់​យឺត​បំផុត ៖"
 
-#: kernel/kptproject.cpp:286 kernel/kptproject.cpp:308
+#: kernel/kptproject.cpp:289 kernel/kptproject.cpp:311
 #, fuzzy
 #| msgid "Calculate"
 msgid "Calculate early start"
 msgstr "គណនា"
 
-#: kernel/kptproject.cpp:304
+#: kernel/kptproject.cpp:307
 #, kde-format
 msgid "Schedule project backward from: %1"
 msgstr "កំណត់​ពេល​គម្រោង​ថយក្រោយ ៖ %1"
 
-#: kernel/kptproject.cpp:316
+#: kernel/kptproject.cpp:319
 msgid "Schedule tasks backward"
 msgstr "គ្រោង​ភារកិច្ច​ថយក្រោយ"
 
-#: kernel/kptproject.cpp:329
+#: kernel/kptproject.cpp:332
 msgid "Failed to finish project within target time"
 msgstr "បាន​បរាជ័យ​ក្នុងការ​បញ្ចប់​គម្រោង​ក្នុង​ពេលវេលា​គោលដៅ"
 
-#: kernel/kptproject.cpp:332
+#: kernel/kptproject.cpp:335
 #, kde-format
 msgid "Scheduled start: %1, target time: %2"
 msgstr "បាន​គ្រោង​ចាប់ផ្ដើម ៖ %1 ពេលវេលា​គោលដៅ ៖ %2"
 
-#: kernel/kptproject.cpp:335
+#: kernel/kptproject.cpp:338
 #, kde-format
 msgid "Must start project early in order to finish in time: %1"
 msgstr "ត្រូវ​ចាប់ផ្ដើម​គម្រោង​ឲ្យ​បាន​លឿន ដើម្បី​បញ្ចប់​​ឲ្យ​ទាន់ពេល ៖ %1"
 
-#: kernel/kptproject.cpp:337
+#: kernel/kptproject.cpp:340
 #, kde-format
 msgid "Start project exactly on time: %1"
 msgstr "ចាប់ផ្ដើម​គម្រោង​ត្រូវ​នឹង​ពេល ៖ %1"
 
-#: kernel/kptproject.cpp:339
+#: kernel/kptproject.cpp:342
 #, kde-format
 msgid "Can start project later than time: %1"
 msgstr "អាច​ចាប់ផ្ដើម​គម្រោង​ក្រោយពេល​បាន ៖ %1"
 
-#: kernel/kptproject.cpp:2100
+#: kernel/kptproject.cpp:2119
 msgid "Plan"
 msgstr "ផែនការ"
 
@@ -1299,16 +1305,16 @@ msgstr "%1 ៖ បានបរាជ័យ​ក្នុងការ​គ្�
 msgid "No resource has been allocated"
 msgstr "កែប្រែ​ទំនាក់ទំនង​"
 
-#: kernel/kpttask.cpp:2260
+#: kernel/kpttask.cpp:2265
 #, kde-format
 msgid "Could not match work duration. Want: %1 got: %2"
 msgstr "មិនអាច​ផ្គូផ្គង​ថិរវេលា​ការងារ​ ។ ចង់បាន ៖ %1 ទទួល ៖ %2"
 
-#: kernel/kpttask.cpp:3406
+#: kernel/kpttask.cpp:3432
 msgid "Send"
 msgstr "ផ្ញើ"
 
-#: kernel/kpttask.cpp:3409
+#: kernel/kpttask.cpp:3435
 msgid "Receive"
 msgstr "ទទួល"
 
@@ -1347,13 +1353,13 @@ msgstr "ម្ដងម្កាល"
 msgid "Summary"
 msgstr "សេចក្ដី​សង្ខេប"
 
-#: kernel/kptnode.cpp:655
+#: kernel/kptnode.cpp:674
 #, fuzzy
 #| msgid "As Soon as Possible"
 msgid "As Soon As Possible"
 msgstr "ឆាប់ៗតាម​តែ​អាច​ធ្វើ​បាន"
 
-#: kernel/kptnode.cpp:656
+#: kernel/kptnode.cpp:675
 #, fuzzy
 #| msgid "As Late as Possible"
 msgid "As Late As Possible"
@@ -1361,23 +1367,23 @@ msgstr "យឺតតាម​តែ​អាច​ធ្វើ​បាន"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:192
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:657 rc.cpp:386
+#: kernel/kptnode.cpp:676 rc.cpp:386
 msgid "Must Start On"
 msgstr "ត្រូវ​តែ​ចាប់​ផ្តើ​ម​នៅ​ថ្ងៃ"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:197
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:658 rc.cpp:389
+#: kernel/kptnode.cpp:677 rc.cpp:389
 msgid "Must Finish On"
 msgstr "ត្រូវ​តែ​បញ្ចប់​នៅ​ថ្ងៃ"
 
-#: kernel/kptnode.cpp:659
+#: kernel/kptnode.cpp:678
 #, fuzzy
 #| msgid "Start Not Earlier Than"
 msgid "Start Not Earlier"
 msgstr "ចាប់ផ្ដើម​កុំ​ឲ្យ​មុន"
 
-#: kernel/kptnode.cpp:660
+#: kernel/kptnode.cpp:679
 #, fuzzy
 #| msgid "Finish Not Later Than"
 msgid "Finish Not Later"
@@ -1385,7 +1391,7 @@ msgstr "បញ្ចប់​កុំ​ឲ្យ​ក្រោយ"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:212
 #. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
-#: kernel/kptnode.cpp:661 rc.cpp:398
+#: kernel/kptnode.cpp:680 rc.cpp:398
 msgid "Fixed Interval"
 msgstr "ចន្លោះពេល​ថេរ"
 
@@ -1393,25 +1399,25 @@ msgstr "ចន្លោះពេល​ថេរ"
 #. i18n: ectx: property (title), widget (QGroupBox, ui_effort)
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:281
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1415 rc.cpp:320 rc.cpp:404
+#: kernel/kptnode.cpp:1434 rc.cpp:320 rc.cpp:404
 msgid "Effort"
 msgstr "កិច្ចប្រឹងប្រែង"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:286
 #. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
-#: kernel/kptnode.cpp:1416 models/kptnodeitemmodel.cpp:1753 rc.cpp:407
+#: kernel/kptnode.cpp:1435 models/kptnodeitemmodel.cpp:1753 rc.cpp:407
 msgid "Duration"
 msgstr "ថិរវេលា"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:349
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1448 rc.cpp:434
+#: kernel/kptnode.cpp:1467 rc.cpp:434
 msgid "Low"
 msgstr "ទាប"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:354
 #. i18n: ectx: property (text), item, widget (KComboBox, risk)
-#: kernel/kptnode.cpp:1449 rc.cpp:437
+#: kernel/kptnode.cpp:1468 rc.cpp:437
 msgid "High"
 msgstr "ខ្ពស់"
 
@@ -1826,7 +1832,7 @@ msgstr "ថិរវេលា​ដែល​ភារកិច្ច​ចាប
 #| "order to fullfill a timing constraint"
 msgid ""
 "The duration by which the duration of a task or path has to be reduced in "
-"order to fulfil a timing constraint"
+"order to fulfill a timing constraint"
 msgstr "ថិរវេលា​ដែល​ថិរវេលា​​របស់​ភារកិច្ច ឬ​ផ្លូវ​​ត្រូវ​បាន​បង្ហាញ ដើម្បីបំពេញ​​ការ​បង្គាប់​ពេលវេលា"
 
 #: models/kptcommonstrings.cpp:59
@@ -1837,7 +1843,7 @@ msgstr "ថិរវេលា​ដែល​ថិរវេលា​​របស
 msgctxt "@info:whatsthis"
 msgid ""
 "Negative float is the duration by which the duration of a task or path has "
-"to be reduced in order to fullfil a timing constraint."
+"to be reduced in order to fulfill a timing constraint."
 msgstr ""
 "ចំនួន​ទសភាគ​អវិជ្ជមាន​គឺ​ជា​ថិរវេលា​ ដែល​ថិរវេលា​​របស់​ភារកិច្ច​ ឬ​ផ្លូវ​ត្រូវ​បាន​កាត់បន្ថយ​ដើម្បី​បំពេញ​ការ​កំណត់​"
 "ពេលវេលា ។"
@@ -2310,6 +2316,7 @@ msgid_plural "Move %1 resources"
 msgstr[0] "ក្នុង​មួយ​ធនធាន"
 
 #: models/kptresourcemodel.cpp:1094
+#: models/kptresourceappointmentsmodel.cpp:1109
 #, fuzzy, kde-format
 #| msgid "Choose resource from addressbook"
 msgid "Add resource from address book"
@@ -2655,13 +2662,6 @@ msgstr "ចំនួន​ម៉ោង​ដែល​កក់"
 #, kde-format
 msgid "Bookings on %1"
 msgstr "កក់​នៅ %1"
-
-#: models/kptresourceappointmentsmodel.cpp:1109
-#, fuzzy, kde-format
-#| msgid "Choose resource from addressbook"
-msgid "Add resource from addressbook"
-msgid_plural "Add %1 resources from addressbook"
-msgstr[0] "ជ្រើស​ធនធាន​ពី​សៀវភៅ​អាសយដ្ឋាន"
 
 #: models/kptresourceappointmentsmodel.cpp:1265
 #, fuzzy
@@ -3272,35 +3272,35 @@ msgstr "កែប្រែ​ទំនាក់ទំនង​"
 msgid "Modify estimate"
 msgstr "កែប្រែ​ស្ថានភាព​ថ្ងៃ​ធ្វើការ"
 
-#: models/kptnodeitemmodel.cpp:2503 models/kptnodeitemmodel.cpp:3873
+#: models/kptnodeitemmodel.cpp:2503 models/kptnodeitemmodel.cpp:3874
 msgid "Modify Running Account"
 msgstr "កែប្រែ​ការ​​គណនី​កំពុង​រត់"
 
-#: models/kptnodeitemmodel.cpp:2523 models/kptnodeitemmodel.cpp:3893
+#: models/kptnodeitemmodel.cpp:2523 models/kptnodeitemmodel.cpp:3894
 #, fuzzy
 #| msgid "Modify Standard Worktime"
 msgid "Modify Startup Account"
 msgstr "កែប្រែ​រយៈពេល​ធ្វើការ​ខ្នាតគំរូ"
 
-#: models/kptnodeitemmodel.cpp:2538 models/kptnodeitemmodel.cpp:3908
+#: models/kptnodeitemmodel.cpp:2538 models/kptnodeitemmodel.cpp:3909
 #, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify Startup Cost"
 msgstr "កែប្រែ​តម្លៃ​ភារកិច្ច"
 
-#: models/kptnodeitemmodel.cpp:2556 models/kptnodeitemmodel.cpp:3926
+#: models/kptnodeitemmodel.cpp:2556 models/kptnodeitemmodel.cpp:3927
 #, fuzzy
 #| msgid "Modify Documents"
 msgid "Modify Shutdown Account"
 msgstr "កែប្រែ​ឯកសារ"
 
-#: models/kptnodeitemmodel.cpp:2571 models/kptnodeitemmodel.cpp:3941
+#: models/kptnodeitemmodel.cpp:2571 models/kptnodeitemmodel.cpp:3942
 #, fuzzy
 #| msgid "Modify Task Cost"
 msgid "Modify Shutdown Cost"
 msgstr "កែប្រែ​តម្លៃ​ភារកិច្ច"
 
-#: models/kptnodeitemmodel.cpp:2991 models/kptnodeitemmodel.cpp:4198
+#: models/kptnodeitemmodel.cpp:2991 models/kptnodeitemmodel.cpp:4199
 #, fuzzy
 #| msgid "Available tasks"
 msgid "Move tasks"
@@ -4035,7 +4035,9 @@ msgstr "បាន់ស្មាន ៖"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:303
 #. i18n: ectx: property (toolTip), widget (QLabel, textLabel3_2_3)
-#: rc.cpp:410
+#. i18n: file: ui/kpttaskgeneralpanelbase.ui:331
+#. i18n: ectx: property (toolTip), widget (KComboBox, risk)
+#: rc.cpp:410 rc.cpp:422
 #, fuzzy
 #| msgid ""
 #| "Risk controles the PERT distribution used when calculating the actual "
@@ -4080,20 +4082,6 @@ msgstr ""
 #| msgid "Risk:"
 msgid "Risk:"
 msgstr "ខូច ៖"
-
-#. i18n: file: ui/kpttaskgeneralpanelbase.ui:331
-#. i18n: ectx: property (toolTip), widget (KComboBox, risk)
-#: rc.cpp:422
-#, fuzzy
-#| msgid ""
-#| "Risk controles the PERT distribution used when calculating the actual "
-#| "estimate for this task."
-msgid ""
-"Risk controles the PERT distribution used when calculating the actual "
-"estimate for this task."
-msgstr ""
-"Risk ត្រួតពិនិត្យ​ការ​ចែកចាយ PERT ដែលបានប្រើ នៅពេល​ដែល​ធ្វើការគណនា​ការស្មាន​ជាក់លាក់​សម្រាប់​"
-"ភារកិច្ច​នេះ ។"
 
 #. i18n: file: ui/kpttaskgeneralpanelbase.ui:337
 #. i18n: ectx: property (whatsThis), widget (KComboBox, risk)
@@ -4570,6 +4558,23 @@ msgstr "មុន​"
 #: rc.cpp:798
 msgid "Next"
 msgstr "បន្ទាប់"
+
+#, fuzzy
+#~| msgid "Choose resource from addressbook"
+#~ msgid "Add resource from addressbook"
+#~ msgid_plural "Add %1 resources from addressbook"
+#~ msgstr[0] "ជ្រើស​ធនធាន​ពី​សៀវភៅ​អាសយដ្ឋាន"
+
+#, fuzzy
+#~| msgid ""
+#~| "Risk controles the PERT distribution used when calculating the actual "
+#~| "estimate for this task."
+#~ msgid ""
+#~ "Risk controles the PERT distribution used when calculating the actual "
+#~ "estimate for this task."
+#~ msgstr ""
+#~ "Risk ត្រួតពិនិត្យ​ការ​ចែកចាយ PERT ដែលបានប្រើ នៅពេល​ដែល​ធ្វើការគណនា​ការស្មាន​ជាក់លាក់​សម្រាប់​"
+#~ "ភារកិច្ច​នេះ ។"
 
 #~ msgid "Resource %1 only partially available"
 #~ msgstr "ធនធាន %1 អាច​ប្រើ​បានតែ​ដោយ​ផ្នែកប៉ុណ្ណោះ"
