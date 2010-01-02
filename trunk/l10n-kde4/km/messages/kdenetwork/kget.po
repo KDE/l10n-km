@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-01 06:21+0100\n"
+"POT-Creation-Date: 2010-01-02 06:00+0100\n"
 "PO-Revision-Date: 2009-06-01 08:01+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -191,6 +191,12 @@ msgctxt "signature of a file"
 msgid "Signature"
 msgstr ""
 
+#: core/kgetkjobadapter.cpp:43
+#, fuzzy
+#| msgid "KGet Transfer List"
+msgid "KGet Transfer"
+msgstr "បញ្ជី​ការ​ផ្ទេរ​របស់ KGet"
+
 #: core/transferhandler.cpp:135
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:27
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:28
@@ -242,14 +248,14 @@ msgctxt "stop transfergroup downloads"
 msgid "Stop"
 msgstr "បញ្ឈប់"
 
-#: core/datasourcefactory.cpp:600
+#: core/datasourcefactory.cpp:611
 #, kde-format
 msgctxt "A mirror is removed when the file has the wrong download size"
 msgid "%1 removed as it did report a wrong file size."
 msgstr ""
 
-#: core/datasourcefactory.cpp:600 core/kget.cpp:557 core/kget.cpp:939
-#: core/kget.cpp:948 transfer-plugins/metalink/metalink.cpp:204
+#: core/datasourcefactory.cpp:611 core/kget.cpp:526 core/kget.cpp:908
+#: core/kget.cpp:917 transfer-plugins/metalink/metalink.cpp:204
 #: transfer-plugins/bittorrent/bttransfer.cpp:491
 #: transfer-plugins/bittorrent/bttransfer.cpp:502
 #: ui/metalinkcreator/metalinkcreator.cpp:300
@@ -377,14 +383,114 @@ msgstr "តើ​អ្នក​ប្រាកដ​ជា​ចង់​យក
 msgid "Remove groups"
 msgstr "យក​ក្រុម​ចេញ"
 
-#: core/kget.cpp:245
+#: core/kget.cpp:511
+#, kde-format
+msgid ""
+"The file %1 already exists.\n"
+"Overwrite?"
+msgstr ""
+"មាន​ឯកសារ %1 រួច​ហើយ ។\n"
+"សរសេរ​ជាន់លើ​ឬ?"
+
+#: core/kget.cpp:512
+msgid "Overwrite existing file?"
+msgstr "សរសេរ​ជាន់លើ​ឯកសារ​ដែល​មាន​រួច?"
+
+#: core/kget.cpp:525 ui/metalinkcreator/metalinkcreator.cpp:317
+#, kde-format
+msgid "Unable to save to: %1"
+msgstr "មិន​អាច​រក្សា​ទុក​ទៅ ៖ %1"
+
+#: core/kget.cpp:754 ui/contextmenu.cpp:135
+msgid "My Downloads"
+msgstr "ការ​ទាញយក​របស់​ខ្ញុំ"
+
+#: core/kget.cpp:798
+#, fuzzy
+#| msgid "Whether we are interested in downloading from this peer"
+msgid "Unable to continue: KGet cannot download using this protocol."
+msgstr "ថាតើ​យើង​ចាប់អារម្មណ៍​ក្នុងកា​រទាញយក​ពី​គូ​នេះ"
+
+#: core/kget.cpp:799
+msgid "Protocol unsupported"
+msgstr ""
+
+#. i18n: file: ui/newtransferwidget.ui:25
+#. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
+#: core/kget.cpp:851 ui/newtransferdialog.cpp:256 rc.cpp:541
+msgid "New Download"
+msgstr "ទាញយក​ថ្មី"
+
+#: core/kget.cpp:851
+msgid "Enter URL:"
+msgstr "បញ្ចូល URL ៖"
+
+#: core/kget.cpp:884
+msgid "Save As"
+msgstr ""
+
+#: core/kget.cpp:907
+#, kde-format
+msgid ""
+"Malformed URL:\n"
+"%1"
+msgstr ""
+"ទម្រង់ URL មិន​ត្រឹមត្រូវ ៖\n"
+"%1"
+
+#: core/kget.cpp:916
+#, kde-format
+msgid ""
+"Malformed URL, protocol missing:\n"
+"%1"
+msgstr ""
+"URL មិន​ត្រឹមត្រូវ​ បាត់​ពិធីការ ៖\n"
+"%1"
+
+#: core/kget.cpp:928
+#, kde-format
+msgid ""
+"You have already completed a download from the location: \n"
+"\n"
+"%1\n"
+"\n"
+"Download it again?"
+msgstr ""
+
+#: core/kget.cpp:929
+#, fuzzy
+#| msgid "Download again"
+msgid "Download it again?"
+msgstr "ទាញយក​ម្ដង​ទៀត"
+
+#: core/kget.cpp:941
+#, kde-format
+msgid ""
+"You have a download in progress from the location: \n"
+"\n"
+"%1\n"
+"\n"
+"Delete it and download again?"
+msgstr ""
+
+#: core/kget.cpp:942
+#, fuzzy
+#| msgid "Download again"
+msgid "Delete it and download again?"
+msgstr "ទាញយក​ម្ដង​ទៀត"
+
+#: core/kget.cpp:965 core/kget.cpp:972
+msgid "Directory is not writable"
+msgstr "ថត​មិន​អាច​សរសេរ​បាន​ឡើយ"
+
+#: core/kget.cpp:1000
 msgid ""
 "You have already downloaded that file from another location.\n"
 "\n"
 "Download and delete the previous one?"
 msgstr ""
 
-#: core/kget.cpp:246
+#: core/kget.cpp:1001
 #, fuzzy
 #| msgid ""
 #| "URL already saved:\n"
@@ -396,13 +502,13 @@ msgstr ""
 "%1\n"
 "ទាញយក​ម្ដង​ទៀត​ឬ?"
 
-#: core/kget.cpp:255
+#: core/kget.cpp:1010
 #, fuzzy
 #| msgid "You are already downloading the torrent %1"
 msgid "You are already downloading the same file"
 msgstr "អ្នក​កំពុង​ទាញយក torrent %1"
 
-#: core/kget.cpp:259
+#: core/kget.cpp:1014 core/kget.cpp:1017
 #, fuzzy
 #| msgid ""
 #| "The file %1 already exists.\n"
@@ -412,131 +518,14 @@ msgstr ""
 "មាន​ឯកសារ %1 រួច​ហើយ ។\n"
 "សរសេរ​ជាន់លើ​ឬ?"
 
-#: core/kget.cpp:542
-#, kde-format
-msgid ""
-"The file %1 already exists.\n"
-"Overwrite?"
-msgstr ""
-"មាន​ឯកសារ %1 រួច​ហើយ ។\n"
-"សរសេរ​ជាន់លើ​ឬ?"
-
-#: core/kget.cpp:543
-msgid "Overwrite existing file?"
-msgstr "សរសេរ​ជាន់លើ​ឯកសារ​ដែល​មាន​រួច?"
-
-#: core/kget.cpp:556 ui/metalinkcreator/metalinkcreator.cpp:317
-#, kde-format
-msgid "Unable to save to: %1"
-msgstr "មិន​អាច​រក្សា​ទុក​ទៅ ៖ %1"
-
-#: core/kget.cpp:785 ui/contextmenu.cpp:135
-msgid "My Downloads"
-msgstr "ការ​ទាញយក​របស់​ខ្ញុំ"
-
-#: core/kget.cpp:829
-#, fuzzy
-#| msgid "Whether we are interested in downloading from this peer"
-msgid "Unable to continue: KGet cannot download using this protocol."
-msgstr "ថាតើ​យើង​ចាប់អារម្មណ៍​ក្នុងកា​រទាញយក​ពី​គូ​នេះ"
-
-#: core/kget.cpp:830
-msgid "Protocol unsupported"
-msgstr ""
-
-#. i18n: file: ui/newtransferwidget.ui:25
-#. i18n: ectx: property (text), widget (KTitleWidget, titleWidget)
-#: core/kget.cpp:882 ui/newtransferdialog.cpp:256 rc.cpp:541
-msgid "New Download"
-msgstr "ទាញយក​ថ្មី"
-
-#: core/kget.cpp:882
-msgid "Enter URL:"
-msgstr "បញ្ចូល URL ៖"
-
-#: core/kget.cpp:915
-msgid "Save As"
-msgstr ""
-
-#: core/kget.cpp:938
-#, kde-format
-msgid ""
-"Malformed URL:\n"
-"%1"
-msgstr ""
-"ទម្រង់ URL មិន​ត្រឹមត្រូវ ៖\n"
-"%1"
-
-#: core/kget.cpp:947
-#, kde-format
-msgid ""
-"Malformed URL, protocol missing:\n"
-"%1"
-msgstr ""
-"URL មិន​ត្រឹមត្រូវ​ បាត់​ពិធីការ ៖\n"
-"%1"
-
-#: core/kget.cpp:959
-#, kde-format
-msgid ""
-"You have already completed a download from the location: \n"
-"\n"
-"%1\n"
-"\n"
-"Download it again?"
-msgstr ""
-
-#: core/kget.cpp:960
-#, fuzzy
-#| msgid "Download again"
-msgid "Download it again?"
-msgstr "ទាញយក​ម្ដង​ទៀត"
-
-#: core/kget.cpp:972
-#, kde-format
-msgid ""
-"You have a download in progress from the location: \n"
-"\n"
-"%1\n"
-"\n"
-"Delete it and download again?"
-msgstr ""
-
-#: core/kget.cpp:973
-#, fuzzy
-#| msgid "Download again"
-msgid "Delete it and download again?"
-msgstr "ទាញយក​ម្ដង​ទៀត"
-
-#: core/kget.cpp:996 core/kget.cpp:1003
-msgid "Directory is not writable"
-msgstr "ថត​មិន​អាច​សរសេរ​បាន​ឡើយ"
-
-#: core/kget.cpp:1013
-#, kde-format
-msgid ""
-"Destination file \n"
-"%1\n"
-"already exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"មាន​ឯកសារ​ទិសដៅ\n"
-"%1\n"
-"រួច​ហើយ ។\n"
-"តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ?"
-
-#: core/kget.cpp:1014
-msgid "Overwrite destination"
-msgstr "សរសេរជាន់​លើ​ទិសដៅ"
-
-#: core/kget.cpp:1145
+#: core/kget.cpp:1117
 #, kde-format
 msgid ""
 "<html><p>Plugin loader could not load the plugin:<br/><i>%1</i></p></html>"
 msgstr ""
 "<html><p>មិន​អាច​ផ្ទុក​កម្មវិធី​ជំនួយ​របស់​កម្មវិធី​ផ្ទុក​កម្មវិធីជំនួយ​បានទេ ៖<br/><i>%1</i></p></html>"
 
-#: core/kget.cpp:1163
+#: core/kget.cpp:1135
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -547,7 +536,7 @@ msgstr ""
 "%1 ឡើយ\n"
 "ដោយ​សារ​តែ​វា​ជា​ថត ។"
 
-#: core/kget.cpp:1173
+#: core/kget.cpp:1145
 #, kde-format
 msgid ""
 "Not deleting\n"
@@ -560,15 +549,15 @@ msgstr ""
 
 #. i18n: file: conf/dlgadvanced.ui:40
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
-#: core/kget.cpp:1384 core/kget.cpp:1394 ui/droptarget.cpp:94 rc.cpp:65
+#: core/kget.cpp:1358 core/kget.cpp:1368 ui/droptarget.cpp:94 rc.cpp:65
 msgid "Quit KGet"
 msgstr "ចេញ​ពី KGet"
 
-#: core/kget.cpp:1385
+#: core/kget.cpp:1359
 msgid "KGet is now closing, as all downloads have completed."
 msgstr "ឥឡូវ KGet បាន​បិទ ព្រោះ​បាន​បញ្ចប់​ការ​ទាញយក​ទាំងអស់​ហើយ ។"
 
-#: core/kget.cpp:1395
+#: core/kget.cpp:1369
 msgid "The computer will now turn off, as all downloads have completed."
 msgstr "កុំព្យូទ័រ​នឹង​បិទ​ឥឡូវ ពីព្រោះ​ការ​ទាញយក​ទាំងអស់​​បាន​បញ្ចប់​ហើយ ។"
 
@@ -2175,12 +2164,12 @@ msgstr "បើក​ឯកសារ"
 msgid "Transfer Settings for %1"
 msgstr "ការ​កំណត់​ផ្ទេរ​សម្រាប់ %1"
 
-#: ui/transfersettingsdialog.cpp:131
+#: ui/transfersettingsdialog.cpp:134
 msgid ""
 "Changing the destination did not work, the destination stays unmodified."
 msgstr ""
 
-#: ui/transfersettingsdialog.cpp:131
+#: ui/transfersettingsdialog.cpp:134
 #, fuzzy
 #| msgid "Destination"
 msgid "Destination unmodified"
@@ -2201,15 +2190,15 @@ msgctxt "fix position for droptarget"
 msgid "Sticky"
 msgstr "ស្អិត"
 
-#: ui/droptarget.cpp:221 mainwindow.cpp:963
+#: ui/droptarget.cpp:221 mainwindow.cpp:968
 msgid "The dropped file is a KGet Transfer List"
 msgstr "ឯកសារ​ដែល​បានទម្លាក់​គឺ​ជា​បញ្ជី​ផ្ទេរ​របស់ KGet"
 
-#: ui/droptarget.cpp:222 mainwindow.cpp:964
+#: ui/droptarget.cpp:222 mainwindow.cpp:969
 msgid "&Download"
 msgstr "ទាញយក"
 
-#: ui/droptarget.cpp:223 mainwindow.cpp:965
+#: ui/droptarget.cpp:223 mainwindow.cpp:970
 msgid "&Load transfer list"
 msgstr "ផ្ទុក​​បញ្ជី​ផ្ទេរ"
 
@@ -2800,16 +2789,16 @@ msgstr "បញ្ចូល​ឈ្មោះ​ក្រុម"
 msgid "Group name:"
 msgstr "ឈ្មោះ​ក្រុម ៖"
 
-#: mainwindow.cpp:649
+#: mainwindow.cpp:654
 msgid "Are you sure you want to delete the selected transfer?"
 msgid_plural "Are you sure you want to delete the selected transfers?"
 msgstr[0] "តើអ្នក​ប្រាកដ​ជា​ចង់​លុប​ការ​ផ្ទេរ​ដែល​បានជ្រើស​ឬ ?"
 
-#: mainwindow.cpp:651
+#: mainwindow.cpp:656
 msgid "Confirm transfer delete"
 msgstr "អះអាង​លុប​ការ​ផ្ទេរ"
 
-#: mainwindow.cpp:842
+#: mainwindow.cpp:847
 msgid ""
 "KGet has been temporarily disabled as download manager for Konqueror. If you "
 "want to disable it forever, go to Settings->Advanced and disable \"Use as "
@@ -4693,6 +4682,20 @@ msgstr "បញ្ជី​សេចក្ដីពិពណ៌នា​សម្
 #: rc.cpp:1016
 msgid "List of whether the script is enabled"
 msgstr "បញ្ជី​របស់​ស្គ្រីប​ដែល​ត្រូវ​បើក"
+
+#~ msgid ""
+#~ "Destination file \n"
+#~ "%1\n"
+#~ "already exists.\n"
+#~ "Do you want to overwrite it?"
+#~ msgstr ""
+#~ "មាន​ឯកសារ​ទិសដៅ\n"
+#~ "%1\n"
+#~ "រួច​ហើយ ។\n"
+#~ "តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ?"
+
+#~ msgid "Overwrite destination"
+#~ msgstr "សរសេរជាន់​លើ​ទិសដៅ"
 
 #~ msgid "Cannot remove torrent default tracker."
 #~ msgstr "មិនអាច​យក​កម្មវិធី​តាមដាន​លំនាំ​ចេញ​របស់ torrent ចេញ ។"
