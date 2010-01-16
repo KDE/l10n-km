@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-10 06:16+0100\n"
+"POT-Creation-Date: 2010-01-16 06:01+0100\n"
 "PO-Revision-Date: 2009-06-01 08:01+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -311,16 +311,11 @@ msgid ""
 "settings or restart KGet and retry downloading."
 msgstr ""
 
-#: core/transfer.cpp:30
+#: core/transfer.cpp:37
 msgid "Downloading...."
 msgstr "កំពុង​ទាញយក..."
 
-#: core/transfer.cpp:30
-msgctxt "transfer state: delayed"
-msgid "Delayed"
-msgstr "បានពន្យារ​ពេល"
-
-#: core/transfer.cpp:30 core/transfer.cpp:231 core/transfer.cpp:256
+#: core/transfer.cpp:244 core/transfer.cpp:269
 #: transfer-plugins/mms/mmsTransfer.cpp:52
 #: transfer-plugins/mmsclient/mmsTransfer.cpp:48
 #: transfer-plugins/bittorrent/bttransfer.cpp:326
@@ -328,24 +323,6 @@ msgstr "បានពន្យារ​ពេល"
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "បាន​បញ្ឈប់"
-
-#: core/transfer.cpp:30
-msgctxt "transfer state: aborted"
-msgid "Aborted"
-msgstr "បាន​បោះបង់"
-
-#: core/transfer.cpp:30 transfer-plugins/bittorrent/bttransfer.cpp:240
-#: transfer-plugins/bittorrent/bttransfer.cpp:322
-msgctxt "transfer state: finished"
-msgid "Finished"
-msgstr "បាន​បញ្ចប់"
-
-#: core/transfer.cpp:30 transfer-plugins/bittorrent/bttransfer.cpp:179
-#, fuzzy
-#| msgid "Open Destination"
-msgctxt "changing the destination of the file"
-msgid "Changing destination"
-msgstr "បើក​ទិសដៅ"
 
 #: core/kgetglobaljob.cpp:56
 #, fuzzy, kde-format
@@ -550,15 +527,15 @@ msgstr ""
 
 #. i18n: file: conf/dlgadvanced.ui:40
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
-#: core/kget.cpp:1354 core/kget.cpp:1364 ui/droptarget.cpp:94 rc.cpp:65
+#: core/kget.cpp:1356 core/kget.cpp:1366 ui/droptarget.cpp:94 rc.cpp:65
 msgid "Quit KGet"
 msgstr "ចេញ​ពី KGet"
 
-#: core/kget.cpp:1355
+#: core/kget.cpp:1357
 msgid "KGet is now closing, as all downloads have completed."
 msgstr "ឥឡូវ KGet បាន​បិទ ព្រោះ​បាន​បញ្ចប់​ការ​ទាញយក​ទាំងអស់​ហើយ ។"
 
-#: core/kget.cpp:1365
+#: core/kget.cpp:1367
 msgid "The computer will now turn off, as all downloads have completed."
 msgstr "កុំព្យូទ័រ​នឹង​បិទ​ឥឡូវ ពីព្រោះ​ការ​ទាញយក​ទាំងអស់​​បាន​បញ្ចប់​ហើយ ។"
 
@@ -1150,11 +1127,24 @@ msgstr "វិភាគ​ឯកសារ"
 msgid "Downloading Torrent File...."
 msgstr "កំពុង​ទាញយក​ឯកសារ Torrent...."
 
+#: transfer-plugins/bittorrent/bttransfer.cpp:179
+#, fuzzy
+#| msgid "Open Destination"
+msgctxt "changing the destination of the file"
+msgid "Changing destination"
+msgstr "បើក​ទិសដៅ"
+
 #: transfer-plugins/bittorrent/bttransfer.cpp:196
 #: transfer-plugins/bittorrent/bttransfer.cpp:301
 msgctxt "transfer state: downloading"
 msgid "Downloading...."
 msgstr "កំពុង​ទាញយក..."
+
+#: transfer-plugins/bittorrent/bttransfer.cpp:240
+#: transfer-plugins/bittorrent/bttransfer.cpp:322
+msgctxt "transfer state: finished"
+msgid "Finished"
+msgstr "បាន​បញ្ចប់"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:274
 msgid "Cannot add a tracker to a private torrent."
@@ -4654,6 +4644,14 @@ msgstr "បញ្ជី​សេចក្ដីពិពណ៌នា​សម្
 #: rc.cpp:1001
 msgid "List of whether the script is enabled"
 msgstr "បញ្ជី​របស់​ស្គ្រីប​ដែល​ត្រូវ​បើក"
+
+#~ msgctxt "transfer state: delayed"
+#~ msgid "Delayed"
+#~ msgstr "បានពន្យារ​ពេល"
+
+#~ msgctxt "transfer state: aborted"
+#~ msgid "Aborted"
+#~ msgstr "បាន​បោះបង់"
 
 #, fuzzy
 #~| msgid "Number of the chunk"
