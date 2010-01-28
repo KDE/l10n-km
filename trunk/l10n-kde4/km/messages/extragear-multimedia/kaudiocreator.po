@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-12-27 06:14+0100\n"
+"POT-Creation-Date: 2010-01-27 07:04+0100\n"
 "PO-Revision-Date: 2009-06-12 08:06+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -52,14 +52,14 @@ msgstr "បទ %1"
 msgid "unknown"
 msgstr "មិនស្គាល់"
 
-#: encodefileimp.cpp:415 tracksimp.cpp:479
+#: encodefileimp.cpp:415 tracksimp.cpp:530
 #, kde-format
 msgid ""
 "%1 Job(s) have been started.  You can watch their progress in the jobs "
 "section."
 msgstr "បាន​ចាប់ផ្ដើម​ការងារ​ចំនួន %1 ។ អ្នក​អាច​មើល​ដំណើរ​ការ​របស់​ពួក​វា​នៅ​ក្នុង​ផ្នែក​ការងារ ។"
 
-#: encodefileimp.cpp:417 tracksimp.cpp:481
+#: encodefileimp.cpp:417 tracksimp.cpp:532
 msgid "Jobs have started"
 msgstr "បាន​ចាប់ផ្ដើម​ការងារ"
 
@@ -67,11 +67,11 @@ msgstr "បាន​ចាប់ផ្ដើម​ការងារ"
 msgid "File"
 msgstr "ឯកសារ"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 msgid "Title"
 msgstr "ចំណង​ជើង"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:29 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 msgid "Artist"
 msgstr "សិល្បករ"
 
@@ -82,7 +82,7 @@ msgctxt "@title:column"
 msgid "Album"
 msgstr "អាល់ប៊ុម"
 
-#: encodefilemodel.cpp:30 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:30 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 msgid "Comment"
 msgstr "មតិយោបល់"
 
@@ -90,7 +90,7 @@ msgstr "មតិយោបល់"
 msgid "Genre"
 msgstr "ចង្វាក់"
 
-#: encodefilemodel.cpp:31 tracksimp.cpp:49 tracksimp.cpp:550
+#: encodefilemodel.cpp:31 tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 msgid "Track"
 msgstr "បទ"
 
@@ -154,7 +154,7 @@ msgstr ""
 msgid "Configure Encoder"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ​​អ៊ិនកូដឌ័រ"
 
-#: encoderconfigimp.cpp:384 kaudiocreator.cpp:399
+#: encoderconfigimp.cpp:384 kaudiocreator.cpp:406
 msgid "Encoder Configuration"
 msgstr "ការ​កំណត់​រចនា​សម្ព័ន្ធ​​អ៊ិនកូដឌ័រ"
 
@@ -237,7 +237,7 @@ msgstr ""
 msgid "Running"
 msgstr ""
 
-#: jobdelegate.cpp:51 tracksimp.cpp:213
+#: jobdelegate.cpp:51
 msgid "Error"
 msgstr "កំហុស"
 
@@ -339,92 +339,106 @@ msgstr "រក​មើល CDDB"
 msgid "Searching"
 msgstr "ស្វែងរក"
 
-#: kaudiocreator.cpp:203 kaudiocreator.cpp:241
+#: kaudiocreator.cpp:206 kaudiocreator.cpp:244
 msgid "WAV"
 msgstr "WAV"
 
-#: kaudiocreator.cpp:211
+#: kaudiocreator.cpp:214
 msgid "Ogg Default"
 msgstr "Ogg លំនាំដើម"
 
-#: kaudiocreator.cpp:219
+#: kaudiocreator.cpp:222
 msgid "MP3 Lame Standard"
 msgstr "MP3 Lame ស្តងដារ"
 
-#: kaudiocreator.cpp:227
+#: kaudiocreator.cpp:230
 msgid "FLAC Best"
 msgstr "FLAC ល្អ​បំផុត"
 
-#: kaudiocreator.cpp:289
-msgid "CD Inserted"
+#: kaudiocreator.cpp:293
+#, fuzzy
+#| msgid "CD Inserted"
+msgid "Audio CD inserted"
 msgstr "បាន​បញ្ចូល​ស៊ីឌី"
 
-#: kaudiocreator.cpp:291
+#: kaudiocreator.cpp:295
+msgid "Disc inserted - No Audio"
+msgstr ""
+
+#: kaudiocreator.cpp:297
 msgid "No Audio CD detected"
 msgstr "រក​មិន​ឃើញ​ស៊ីឌី​អូឌីយ៉ូ​ឡើយ"
 
-#: kaudiocreator.cpp:298
+#: kaudiocreator.cpp:305
 #, kde-format
 msgid "Default encoder: %1"
 msgstr "អ៊ិនកូឌ័រ​លំនាំដើម ៖ %1"
 
-#: kaudiocreator.cpp:303
-msgid "Idle."
+#: kaudiocreator.cpp:310
+#, fuzzy
+#| msgid "Idle."
+msgid "Idle"
 msgstr "ទំនេរ ។"
 
-#: kaudiocreator.cpp:312
+#: kaudiocreator.cpp:319
 #, kde-format
 msgid "Ripping (%1 active, %2 queued)"
 msgstr "កំពុង​ច្រៀក (%1 សកម្ម, %2 នៅ​ក្នុង​ជួរ)"
 
-#: kaudiocreator.cpp:316
+#: kaudiocreator.cpp:323
 #, kde-format
 msgid "Encoding (%1 active, %2 queued)"
 msgstr "កំពុង​អ៊ិនកូដ (%1 សកម្ម %2 នៅ​ក្នុង​ជួរ)"
 
-#: kaudiocreator.cpp:334
+#: kaudiocreator.cpp:333
+#, fuzzy
+#| msgid "&Jobs"
+msgid "Jobs:"
+msgstr "ការងារ"
+
+#: kaudiocreator.cpp:341
 msgid "There are unfinished jobs in the queue. Would you like to quit anyway?"
 msgstr "មាន​ការងារ​មិន​ទាន់​ចប់​នៅ​ក្នុង​ជួរ ។ អញ្ចឹង​អ្នក​ចង់​បិទ​តែ​ម្ដង ?"
 
-#: kaudiocreator.cpp:334
+#: kaudiocreator.cpp:341
 msgid "Unfinished Jobs in Queue"
 msgstr "ការងារ​មិន​ទាន់​ចប់​នៅ​ក្នុង​ជួរ"
 
 #. i18n: file: general.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, General)
-#: kaudiocreator.cpp:376 rc.cpp:212
+#: kaudiocreator.cpp:383 rc.cpp:212
 msgid "General"
 msgstr "ទូទៅ"
 
-#: kaudiocreator.cpp:377
+#: kaudiocreator.cpp:384
 msgid "General Configuration"
 msgstr "ការ​កំណត់​​រចនា​សម្ព័ន្ធ​ទូទៅ"
 
-#: kaudiocreator.cpp:379
+#: kaudiocreator.cpp:386
 msgid "CD"
 msgstr "ស៊ីឌី"
 
-#: kaudiocreator.cpp:380
+#: kaudiocreator.cpp:387
 msgid "CD Configuration"
 msgstr "ការ​កំណត់​​រចនា​សម្ព័ន្ធ​ស៊ីឌី"
 
-#: kaudiocreator.cpp:390
+#: kaudiocreator.cpp:397
 msgid "CDDB"
 msgstr "CDDB"
 
-#: kaudiocreator.cpp:390
+#: kaudiocreator.cpp:397
 msgid "CDDB Configuration"
 msgstr "ការ​កំណត់​​រចនា​សម្ព័ន្ធ CDDB"
 
-#: kaudiocreator.cpp:396
+#: kaudiocreator.cpp:403
 msgid "Ripper"
 msgstr "កម្មវិធី​ច្រៀក"
 
-#: kaudiocreator.cpp:396
+#: kaudiocreator.cpp:403
 msgid "Ripper Configuration"
 msgstr "ការ​កំណត់​​រចនា​សម្ព័ន្ធ​កម្មវិធី​ច្រៀក"
 
-#: kaudiocreator.cpp:399
+#: kaudiocreator.cpp:406
 msgid "Encoder"
 msgstr "អ៊ិនកូឌ័រ"
 
@@ -1450,77 +1464,78 @@ msgstr "កំពុង​ច្រៀក ៖ %1 - %2"
 msgid "Track %1.wav"
 msgstr "បទ %1"
 
-#: tracksimp.cpp:49 tracksimp.cpp:550
+#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 #, fuzzy
 #| msgid "Rip"
 msgctxt "@title:column"
 msgid "Rip"
 msgstr "ច្រៀក"
 
-#: tracksimp.cpp:49 tracksimp.cpp:550
+#: tracksimp.cpp:50 tracksimp.cpp:182 tracksimp.cpp:601
 msgid "Length"
 msgstr "ប្រវែង"
 
-#: tracksimp.cpp:103
+#: tracksimp.cpp:116
 msgid "none detected"
 msgstr "គ្មាន​អ្វី​បាន​រកឃើញ"
 
-#: tracksimp.cpp:210
-#, kde-format
-msgid ""
-"CDROM read or access error (or no audio disk in drive).\n"
-"Please make sure you have access permissions to:\n"
-"%1"
-msgstr ""
-"កំហុស​ក្នុង​ការ​អាន ឬ ចូល​ដំណើរ​ការ​ស៊ីឌីរ៉ូម (ឬ មិន​មាន​ថាស​នៅ​ក្នុង​ដ្រាយ) ។\n"
-"សូម​ធ្វើ​ឲ្យ​ប្រាកដ​ថា អ្នក​មាន​សិទ្ធិ​ចូលដំណើរការ​ទៅ​កាន់ ៖\n"
-"%1"
+#: tracksimp.cpp:178
+#, fuzzy
+#| msgid "Unknown Artist - Unknown Album"
+msgid "Unknown Artist"
+msgstr "មិន​ស្គាល់​សិល្បករ - មិន​ស្គាល់​អាល់ប៊ុម"
 
-#: tracksimp.cpp:223
+#: tracksimp.cpp:178
+#, fuzzy
+#| msgid "Unknown Artist - Unknown Album"
+msgid "Unknown Album"
+msgstr "មិន​ស្គាល់​សិល្បករ - មិន​ស្គាល់​អាល់ប៊ុម"
+
+#: tracksimp.cpp:277
 msgid "Please insert a disk."
 msgstr "សូម​បញ្ចូល​ថាស​មួយ ។"
 
-#: tracksimp.cpp:224 tracksimp.cpp:250
+#: tracksimp.cpp:278 tracksimp.cpp:304
 msgid "CDDB Failed"
 msgstr "បរាជ័យ CDDB"
 
-#: tracksimp.cpp:250
+#: tracksimp.cpp:304
 msgid "Unable to retrieve CDDB information."
 msgstr "មិន​អាច​ទៅ​យក​ព័ត៌មាន CDDB បាន​ឡើយ ។"
 
-#: tracksimp.cpp:270
+#: tracksimp.cpp:325
 msgid "Select CDDB entry"
 msgstr "ជ្រើស​ធាតុ CDDB"
 
-#: tracksimp.cpp:271
+#: tracksimp.cpp:326
 msgid "Select a CDDB entry:"
 msgstr "ជ្រើស​ធាតុ CDDB មួយ ៖"
 
-#: tracksimp.cpp:361
+#: tracksimp.cpp:416
 msgid "CD Editor"
 msgstr "កម្មវិធី​និពន្ធ​ស៊ីឌី"
 
-#: tracksimp.cpp:424
+#: tracksimp.cpp:475
 msgid "No tracks have been selected.  Would you like to rip the entire CD?"
 msgstr "គ្មាន​បទ​ត្រូវ​បាន​ជ្រើស ។ តើ​អ្នក​ចង់​ច្រៀក​ស៊ីឌី​ទាំង​មូល​ឬទេ ?"
 
-#: tracksimp.cpp:425
+#: tracksimp.cpp:476
 msgid "No Tracks Selected"
 msgstr "មិន​បាន​ជ្រើស​បទ"
 
-#: tracksimp.cpp:425
+#: tracksimp.cpp:476
 msgid "Rip CD"
 msgstr "ច្រៀក​ស៊ីឌី"
 
-#: tracksimp.cpp:434
+#: tracksimp.cpp:485
 msgid "Could not find audiocd:/ protocol. Please install the audiocd ioslave"
 msgstr "មិន​អាច​រក​ឃើញ​ពិធីការ audiocd:/  ។ សូម​ដំឡើង audiocd ioslave"
 
-#: tracksimp.cpp:435
+#: tracksimp.cpp:486
 msgid "Protocol Not Found"
 msgstr "រក​មិន​ឃើញ​ពិធីការ"
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:501
 #, kde-format
 msgid ""
 "Part of the album is not set: %1.\n"
@@ -1531,19 +1546,19 @@ msgstr ""
 " (ដើម្បី​ផ្លាស់ប្ដូរ​ព័ត៌មាន​អំពី​អាល់ប៊ុម សូម​ចុច​ប៊ូតុង \"កែសម្រួល​​ព័ត៌មាន\" ។)\n"
 " យ៉ាង​ណា​ក៏​ដោយ តើ​អ្នក​ចង់​ច្រៀក​បទ​ដែល​បាន​ជ្រើស​ឬ ?"
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:501
 msgid "Album Information Incomplete"
 msgstr "ព័ត៌មាន​អាល់ប៊ុម​មិន​ពេញលេញ"
 
-#: tracksimp.cpp:450
+#: tracksimp.cpp:501
 msgid "Rip"
 msgstr "ច្រៀក"
 
-#: tracksimp.cpp:605
+#: tracksimp.cpp:656
 msgid " - "
 msgstr " - "
 
-#: tracksimp.cpp:607
+#: tracksimp.cpp:658
 msgid "No disc"
 msgstr "គ្មាន​ថាស"
 
@@ -1555,6 +1570,15 @@ msgstr "ឧទាហរណ៍ ៖ %1"
 #: job.h:35
 msgid "Other"
 msgstr "ផ្សេងៗ"
+
+#~ msgid ""
+#~ "CDROM read or access error (or no audio disk in drive).\n"
+#~ "Please make sure you have access permissions to:\n"
+#~ "%1"
+#~ msgstr ""
+#~ "កំហុស​ក្នុង​ការ​អាន ឬ ចូល​ដំណើរ​ការ​ស៊ីឌីរ៉ូម (ឬ មិន​មាន​ថាស​នៅ​ក្នុង​ដ្រាយ) ។\n"
+#~ "សូម​ធ្វើ​ឲ្យ​ប្រាកដ​ថា អ្នក​មាន​សិទ្ធិ​ចូលដំណើរការ​ទៅ​កាន់ ៖\n"
+#~ "%1"
 
 #~ msgid "Number of tracks to rip at a time"
 #~ msgstr "ចំនួន​បទ​ដែល​ត្រូវ​ច្រៀក​ម្ដង"
