@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-30 06:14+0100\n"
+"POT-Creation-Date: 2010-02-06 01:52+0100\n"
 "PO-Revision-Date: 2009-06-15 08:36+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -22,41 +22,509 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: attachmentdialog.cpp:33
+#: objecttreeparser.cpp:507
+msgid "Wrong Crypto Plug-In."
+msgstr "ខុស​កម្មវិធី​ជំនួយ Crypto ។"
+
+#: objecttreeparser.cpp:620 objecttreeparser.cpp:2180
+msgid "Different results for signatures"
+msgstr "លទ្ធផល​ផ្សេងគ្នា​ សម្រាប់​ហត្ថលេខា"
+
+#: objecttreeparser.cpp:693
+msgid "The crypto engine returned no cleartext data."
+msgstr "ម៉ាស៊ីន crypto បានត្រឡប់​ទិន្នន័យ​ដែល​មិនបាន​ជម្រះ​អត្ថបទ ។"
+
+#: objecttreeparser.cpp:696 objecttreeparser.cpp:2646
+#: objecttreeparser.cpp:2689
+msgid "Status: "
+msgstr "ស្ថានភាព ៖ "
+
+#: objecttreeparser.cpp:703
+msgctxt "Status of message unknown."
+msgid "(unknown)"
+msgstr "​(មិន​ស្គាល់)"
+
+#: objecttreeparser.cpp:714 objecttreeparser.cpp:938
+#, kde-format
+msgid "Crypto plug-in \"%1\" is not initialized."
+msgstr "កម្មវិធី​ជំនួយ Crypto \"%1\" គឺ​មិនត្រូវបាន​ចាប់ផ្ដើម​ឡើយ ។"
+
+#: objecttreeparser.cpp:718
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot verify signatures."
+msgstr "កម្មវិធី​ជំនួយ Crypto \"%1\" មិនអាច​ផ្ទៀងផ្ទាត់​ហត្ថលេខា​បានឡើយ ។"
+
+#: objecttreeparser.cpp:723 objecttreeparser.cpp:946
+msgid "No appropriate crypto plug-in was found."
+msgstr "គ្មាន​រកឃើញ​កម្មវិធី​ជំនួយ​​ដែល​សមរម្យ​ឡើយ ។"
+
+#: objecttreeparser.cpp:726
+#, kde-format
+msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
+msgid "No %1 plug-in was found."
+msgstr "រក​មិនឃើញ​​កម្មវិធី​ជំនួយ​ %1 ឡើយ ។"
+
+#: objecttreeparser.cpp:730
 #, kde-format
 msgid ""
-"Open attachment '%1'?\n"
-"Note that opening an attachment may compromise your system's security."
+"The message is signed, but the validity of the signature cannot be verified."
+"<br />Reason: %1"
 msgstr ""
-"បើកឯកសារ​ភ្ជាប់ '%1'?\n"
-"ចំណាំថាការបើក​ឯកសារភ្ជាប់​មួយ​អាច​សម្រុះ​សម្រួល​សុវត្ថិភាព​ប្រព័ន្ធ​របស់អ្នក ។"
+"សារ​ត្រូវបាន​ចុះហត្ថលេខា​ ប៉ុន្តែ​សុពលភាព​របស់​ហត្ថលេខា​​មិនអាច​ត្រូវបាន​ផ្ទៀងផ្ទាត់​បានទេ ។<br /"
+">មូលហេតុ ៖ %1"
 
-#: attachmentdialog.cpp:39
-msgid "Open Attachment?"
-msgstr "បើក​ឯកសារភ្ជាប់​ឬ ?"
+#: objecttreeparser.cpp:765
+msgid "This message is encrypted."
+msgstr "សារ​នេះ​ត្រូវ​បាន​អ៊ិនគ្រីប ។"
 
-#: attachmentdialog.cpp:46
+#: objecttreeparser.cpp:770
+msgid "Decrypt Message"
+msgstr "ឌិគ្រីប​សារ"
+
+#: objecttreeparser.cpp:795
+#, fuzzy
+#| msgid "Encryption State Icon"
+msgid "Encrypted data not shown"
+msgstr "រូបតំណាង​សភាព​ការ​អ៊ិនគ្រីប"
+
+#: objecttreeparser.cpp:835
+msgid "Could not decrypt the data."
+msgstr "មិនអាច​ឌិគ្រីប​ទិន្នន័យ​បានទេ ។"
+
+#: objecttreeparser.cpp:925
 #, kde-format
-msgid "&Open with '%1'"
-msgstr "​បើក​ជាមួយ '%1'"
+msgid "Crypto plug-in \"%1\" could not decrypt the data."
+msgstr "កម្មវិធី​ជំនួយ Crypto \"%1\" មិនអាច​ឌីគ្រីប​ទិន្នន័យ​បានឡើយ ។"
 
-#: attachmentdialog.cpp:50
-msgid "&Open With..."
-msgstr "​បើក​ជា​មួយ..."
+#: objecttreeparser.cpp:927
+#, kde-format
+msgid "Error: %1"
+msgstr "​កំហុស ៖ %1"
 
-#: attachmentdialog.cpp:69
-msgid "Do not ask again"
+#: objecttreeparser.cpp:942
+#, kde-format
+msgid "Crypto plug-in \"%1\" cannot decrypt messages."
+msgstr "កម្មវិធី​ជំនួយ Crypto \"%1\" មិនអាច​ឌិគ្រីប​សារ​បានឡើយ ។"
+
+#: objecttreeparser.cpp:1050
+msgid ""
+"<b>Note:</b> This HTML message may contain external references to images "
+"etc. For security/privacy reasons external references are not loaded. If you "
+"trust the sender of this message then you can load the external references "
+"for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
 msgstr ""
+"<b>ចំណាំ ៖</b> សារ​ HTML នេះ​អាច​មាន​សេចក្ដី​យោង​​​ខាងក្រៅដែលទៅកាន់​រូបភាព ។ល។ ចំពោះ​ហេតុផល "
+"សុវត្ថិភាព​/ភាព​ជា​ឯកជន សេចក្ដី​យោង​ខាងក្រៅគឺមិនត្រូវបាន​ផ្ទុក​ឡើយ ។ ប្រសិន​បើអ្នកទុកចិត្ត​លើអ្នក​ផ្ញើ​"
+"សារនេះ ពេលនោះ​អ្នក​អាច​ផ្ទុក​សេចក្ដី​យោង​ខាងក្រៅ​​សម្រាប់​សារ​នេះ <a href=\"kmail:loadExternal"
+"\">ដោយ​ចុច​នៅទីនេះ</a> ។"
 
-#: configurewidget.cpp:36 configurewidget.cpp:89 viewer_p.cpp:1887
-msgid "Auto"
-msgstr "ស្វ័យប្រវត្តិ"
+#: objecttreeparser.cpp:1060
+msgid ""
+"<b>Note:</b> This is an HTML message. For security reasons, only the raw "
+"HTML code is shown. If you trust the sender of this message then you can "
+"activate formatted HTML display for this message <a href=\"kmail:showHTML"
+"\">by clicking here</a>."
+msgstr ""
+"<b>ចំណាំ ៖</b> នេះ​ជា​សារ​ HTML មួយ ។ ចំពោះ​ហេតុផល​សុវត្ថិភាព គឺបាន​បង្ហាញ​តែ​កូដ​ HTML ដើម​"
+"តែប៉ុណ្ណោះ ។ ប្រសិនបើ​អ្នក​ទុកចិត្ត​លើ​អ្នក​ផ្ញើ​សារ​នេះ ពេល​នោះ​អ្នក​អាចធ្វើ​ឲ្យ​​ HTML ដែលបាន​ធ្វើ​"
+"ទ្រង់ទ្រាយ​ បង្ហាញ​សម្រាប់​សារ​នេះ <a href=\"kmail:showHTML\">ដោយចុច​នៅត្រង់នេះ</a> ។"
 
-#: editorwatcher.cpp:69
+#: objecttreeparser.cpp:1711
+#, kde-format
+msgid "Sorry, certificate could not be imported.<br />Reason: %1"
+msgstr "សូម​អភ័យ​ទោស វិញ្ញាបនបត្រ​មិន​អាច​ត្រូវ​បាន​នាំចូល​បានទេ ។<br />មូលហេតុ ៖ %1"
+
+#: objecttreeparser.cpp:1721
+msgid "Sorry, no certificates were found in this message."
+msgstr "សូម​ទោស គ្មាន​វិញ្ញាបនបត្រ​ដែល​បាន​រកឃើញ​នៅក្នុង​សារនេះ​ទេ ។"
+
+#: objecttreeparser.cpp:1724
+msgid "Certificate import status:"
+msgstr "ស្ថានភាព​នាំចូល​វិញ្ញាបនបត្រ ៖"
+
+#: objecttreeparser.cpp:1726
+#, kde-format
+msgid "1 new certificate was imported."
+msgid_plural "%1 new certificates were imported."
+msgstr[0] "វិញ្ញាបនបត្រ​ថ្មី %1 ត្រូវ​បាន​នាំចូល ។"
+
+#: objecttreeparser.cpp:1729
+#, kde-format
+msgid "1 certificate was unchanged."
+msgid_plural "%1 certificates were unchanged."
+msgstr[0] "វិញ្ញាបនបត្រ %1 មិន​ត្រូវ​បាន​ផ្លាស់ប្ដូរ ។"
+
+#: objecttreeparser.cpp:1732
+#, kde-format
+msgid "1 new secret key was imported."
+msgid_plural "%1 new secret keys were imported."
+msgstr[0] "កូនសោ​សម្ងាត់​ថ្មី %1 ត្រូវ​បាន​នាំចូល ។"
+
+#: objecttreeparser.cpp:1735
+#, kde-format
+msgid "1 secret key was unchanged."
+msgid_plural "%1 secret keys were unchanged."
+msgstr[0] "កូនសោ​សម្ងាត់ %1 មិន​ត្រូវ​បាន​ផ្លាស់ប្ដូរ ។"
+
+#: objecttreeparser.cpp:1745
+msgid "Sorry, no details on certificate import available."
+msgstr "សូម​ទោស​ មិនមាន​សេចក្ដីលម្អិត​នៅលើ​ការ​នាំចូល​វិញ្ញាបនបត្រឡើយ ។"
+
+#: objecttreeparser.cpp:1748
+msgid "Certificate import details:"
+msgstr "សេចក្ដី​លម្អិត​អំពី​ការនាំចូល​វិញ្ញាបនបត្រ ៖"
+
+#: objecttreeparser.cpp:1751
+#, kde-format
+msgctxt "Certificate import failed."
+msgid "Failed: %1 (%2)"
+msgstr "បាន​បរាជ័យ ៖ %1 (%2)"
+
+#: objecttreeparser.cpp:1755
+#, kde-format
+msgid "New or changed: %1 (secret key available)"
+msgstr "ថ្មី ឬ បាន​ផ្លាស់ប្ដូរ ៖ %1 (មាន​សោ​សម្ងាត់)"
+
+#: objecttreeparser.cpp:1757
+#, kde-format
+msgid "New or changed: %1"
+msgstr "ថ្មី​ ឬ​បាន​ផ្លាស់ប្ដូរ ៖ %1"
+
+#: objecttreeparser.cpp:1903 viewer_p.cpp:3074
+msgid ""
+"Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
+"report this bug."
+msgstr ""
+"កម្មវិធីខាងក្រោយ Chiasmus មិនផ្ដល់មុខងារ \"x-obtain-keys\" ឡើយ ។ សូមរាយការណ៍​កំហុស​នេះ ។"
+
+#: objecttreeparser.cpp:1909 viewer_p.cpp:3076 viewer_p.cpp:3081
+#: viewer_p.cpp:3090 viewer_p.cpp:3099 viewer_p.cpp:3118 viewer_p.cpp:3130
+#: viewer_p.cpp:3170
+msgid "Chiasmus Backend Error"
+msgstr "កំហុស​កម្មវិធី​ខាងក្រោយ Chiasmus"
+
+#: objecttreeparser.cpp:1915 viewer_p.cpp:3087
+msgid ""
+"Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
+"function did not return a string list. Please report this bug."
+msgstr ""
+"ត្រឡប់​តម្លៃ​ដែល​មិនបានរំពឹង​ពី​កម្មវិធីខាងក្រោយ Chiasmus ៖ អនុគមន៍ \"x-obtain-keys\" មិនបាន​ត្រឡប់​"
+"បញ្ជី​ខ្សែអក្សរ​ឡើយ ។ សូមរាយការកំហុស ។"
+
+#: objecttreeparser.cpp:1923 viewer_p.cpp:3096
+msgid ""
+"No keys have been found. Please check that a valid key path has been set in "
+"the Chiasmus configuration."
+msgstr ""
+"រកមិន​ឃើញ​កូនសោ​ឡើយ ។ សូម​ពិនិត្យ​ថា ផ្លូវសោ​ដែល​ត្រឹមត្រូវ​បាន​កំណត់​នៅក្នុង​ការកំណត់រចនាសម្ព័ន្ធ​ Chiasmus ។"
+
+#: objecttreeparser.cpp:1930 viewer_p.cpp:3104
+msgid "Chiasmus Decryption Key Selection"
+msgstr "ជម្រើស​កូនសោ​​ឌិគ្រីប​ Chiasmus"
+
+#: objecttreeparser.cpp:1941 viewer_p.cpp:3116
+msgid ""
+"Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
+"this bug."
+msgstr "កម្មវិធីខាងក្រោយ Chiasmus មិន​ផ្ដល់​អនុគមន៍ \"x-decrypt\" ឡើយ ។ សូម​រាយការណ៍​កំហុស​នេះ ។"
+
+#: objecttreeparser.cpp:1949 viewer_p.cpp:3128
+msgid ""
+"The \"x-decrypt\" function does not accept the expected parameters. Please "
+"report this bug."
+msgstr "អនុគមន៍ \"x-decrypt\" មិន​ទទួលយក​ប៉ារ៉ាម៉ែត្រ​ដែល​រំពឹង​ឡើយ ។ សូម​រាយការណ៍​កំហុស​នេះ ។"
+
+#: objecttreeparser.cpp:1955 viewer_p.cpp:3135 viewer_p.cpp:3162
+msgid "Chiasmus Decryption Error"
+msgstr "កំហុស​ការឌិគ្រីប Chiasmus"
+
+#: objecttreeparser.cpp:1961 viewer_p.cpp:3167
+msgid ""
+"Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
+"did not return a byte array. Please report this bug."
+msgstr ""
+"ត្រឡប់តម្លៃ​ដែលមិនបាន​រំពឹងពី​កម្មវិធី​ខាងក្រោយ Chiasmus ៖ មុខងារ \"x-decrypt\" មិនបានត្រឡប់​អារេ​"
+"បៃឡើយ ។ សូមរាយការណ៍​កំហុស​។"
+
+#: objecttreeparser.cpp:2099
+msgctxt "display name for an unnamed attachment"
+msgid "Unnamed"
+msgstr "គ្មានឈ្មោះ"
+
+#: objecttreeparser.cpp:2162
+msgid "Error: Signature not verified"
+msgstr "មាន​កំហុស ៖ មិនបាន​បញ្ជាក់​ហត្ថលេខាឡើយ"
+
+#: objecttreeparser.cpp:2165
+msgid "Good signature"
+msgstr "ហត្ថលេខា​ដែល​ល្អ"
+
+#: objecttreeparser.cpp:2168
+msgid "<b>Bad</b> signature"
+msgstr "ហត្ថលេខា<b>អាក្រក់</b>"
+
+#: objecttreeparser.cpp:2171
+msgid "No public key to verify the signature"
+msgstr "គ្មាន​សាធារណៈ​ដែល​ត្រូវ​ផ្ទៀងផ្ទាត់​ហត្ថលេខាឡើយ"
+
+#: objecttreeparser.cpp:2174
+msgid "No signature found"
+msgstr "គ្មាន​ហត្ថលេខា​ដែល​រកឃើញ​ឡើយ"
+
+#: objecttreeparser.cpp:2177
+msgid "Error verifying the signature"
+msgstr "មាន​កំហុស​នៅខណៈ​ពេល​ដែល​កំពុង​ផ្ទៀងផ្ទាត់​ហត្ថលេខា"
+
+#: objecttreeparser.cpp:2200
+msgid "No status information available."
+msgstr "មិនមាន​ព័ត៌មាន​ស្ថានភាពឡើយ ។"
+
+#: objecttreeparser.cpp:2207 objecttreeparser.cpp:2291
+msgid "Good signature."
+msgstr "ហត្ថលេខា​ល្អ ។"
+
+#: objecttreeparser.cpp:2228
+msgid "One key has expired."
+msgstr "សោ​មួយ​បាន​ផុតកំណត់​ហើយ ។"
+
+#: objecttreeparser.cpp:2232
+msgid "The signature has expired."
+msgstr "ហត្ថលេខា​បាន​ផុត​កំណត់​ហើយ ។"
+
+#: objecttreeparser.cpp:2237
+msgid "Unable to verify: key missing."
+msgstr "មិនអាចផ្ទៀងផ្ទាត់បាន ៖ បាត់បង់សោ ។"
+
+#: objecttreeparser.cpp:2244
+msgid "CRL not available."
+msgstr "មិនមាន CRL ។"
+
+#: objecttreeparser.cpp:2248
+msgid "Available CRL is too old."
+msgstr "CRL ដែលមាន​ គឺ​ចាង់ពេក ។"
+
+#: objecttreeparser.cpp:2252
+msgid "A policy was not met."
+msgstr "មិបានជួប​គោលការណ៍ឡើយ ។"
+
+#: objecttreeparser.cpp:2256
+msgid "A system error occurred."
+msgstr "កំហុស​ប្រព័ន្ធ​បាន​កើត​មានឡើយ ។"
+
+#: objecttreeparser.cpp:2267
+msgid "One key has been revoked."
+msgstr "សោ​មួយ​ត្រូវបាន​ដកហូតវិញ ។"
+
+#: objecttreeparser.cpp:2293
+msgid "<b>Bad</b> signature."
+msgstr "ហត្ថលេខា<b>អាក្រក់</b> ។"
+
+#: objecttreeparser.cpp:2320
+msgid "Invalid signature."
+msgstr "ហត្ថលេខា​មិន​ត្រឹមត្រូវ ។"
+
+#: objecttreeparser.cpp:2322
+msgid "Not enough information to check signature validity."
+msgstr "មិន​មាន​ព័ត៌មាន​គ្រប់គ្រាន់​ដើម្បី​ពិនិត្យ​មើល​សុពលភាព​របស់​ហត្ថលេខា ។"
+
+#: objecttreeparser.cpp:2331
+msgid "Signature is valid."
+msgstr "ហត្ថលេខា​គឺ​ត្រឹមត្រូវ ។"
+
+#: objecttreeparser.cpp:2333
+#, kde-format
+msgid "Signed by <a href=\"mailto:%1\">%2</a>."
+msgstr "បាន​ចុះហត្ថលេខា​ដោយ <a href=\"mailto:%1\">%2</a> ។"
+
+#: objecttreeparser.cpp:2337
+msgid "Unknown signature state"
+msgstr "មិន​ស្គាល់​ស្ថានភាព​ហត្ថលេខា"
+
+#: objecttreeparser.cpp:2341
+msgid "Show Details"
+msgstr "បង្ហាញសេចក្តី​​​លម្អិត"
+
+#: objecttreeparser.cpp:2358
+msgid "No Audit Log available"
+msgstr "គ្មាន​កំណត់​ត្រួតពិនិត្យ"
+
+#: objecttreeparser.cpp:2360
+#, kde-format
+msgid "Error Retrieving Audit Log: %1"
+msgstr "កំហុស​ក្នុង​ការ​ទៅយក​កំណត់​ហេតុ​ការ​ត្រួត​ពិនិត្យ ៖ %1"
+
+#: objecttreeparser.cpp:2370
+msgctxt "The Audit Log is a detailed error log from the gnupg backend"
+msgid "Show Audit Log"
+msgstr "បង្ហាញ​កំណត់ហេតុ​ត្រួតពិនិត្យ"
+
+#: objecttreeparser.cpp:2381
+msgid "Hide Details"
+msgstr "លាក់​សេចក្តី​លម្អិត"
+
+#: objecttreeparser.cpp:2407 objecttreeparser.cpp:2409
+msgid "Encapsulated message"
+msgstr "សារ​ដែល​បាន​ស្រោប"
+
+#: objecttreeparser.cpp:2418
+#, fuzzy
+#| msgid "Please wait while the message is transferred"
+#| msgid_plural "Please wait while the %1 messages are transferred"
+msgid "Please wait while the message is being decrypted..."
+msgstr "សូម​រង់ចាំ​ខណៈពេល​សារ​ចំនួន %1 ​ត្រូវ​បាន​​ផ្ទេរ"
+
+#: objecttreeparser.cpp:2420
+msgid "Encrypted message"
+msgstr "សារ​ដែល​បាន​អ៊ិនគ្រីប"
+
+#: objecttreeparser.cpp:2422
+msgid "Encrypted message (decryption not possible)"
+msgstr "សារ​ដែល​បាន​អ៊ិនគ្រីប (មិនអាច​ធ្វើការ​ឌិគ្រីប​បាន)"
+
+#: objecttreeparser.cpp:2424
+#, kde-format
+msgid "Reason: %1"
+msgstr "ហេតុផល ៖ %1"
+
+#: objecttreeparser.cpp:2434
+#, fuzzy
+#| msgid "Please wait while the message is transferred"
+#| msgid_plural "Please wait while the %1 messages are transferred"
+msgid "Please wait while the signature is being verified..."
+msgstr "សូម​រង់ចាំ​ខណៈពេល​សារ​ចំនួន %1 ​ត្រូវ​បាន​​ផ្ទេរ"
+
+#: objecttreeparser.cpp:2529 objecttreeparser.cpp:2531
+msgid "certificate"
+msgstr "​វិញ្ញាបនបត្រ"
+
+#: objecttreeparser.cpp:2537 objecttreeparser.cpp:2562
+msgctxt "Start of warning message."
+msgid "Warning:"
+msgstr "​ការព្រមាន ៖"
+
+#: objecttreeparser.cpp:2539
+#, kde-format
+msgid "Sender's mail address is not stored in the %1 used for signing."
+msgstr ""
+"អាសយដ្ឋាន​សំបុត្រ​របស់អ្នកផ្ញើ គឺ​​មិនត្រូវបាន​ទុក​នៅក្នុង​ %1 ដែលត្រូវបាន​ប្រើសម្រាប់​ការចុះហត្ថលេខាឡើយ​ ។"
+
+#: objecttreeparser.cpp:2542
+msgid "sender: "
+msgstr "អ្នកផ្ញើ ៖ "
+
+#: objecttreeparser.cpp:2545
+msgid "stored: "
+msgstr "បានទុក ៖ "
+
+#: objecttreeparser.cpp:2564
+#, kde-format
+msgid ""
+"No mail address is stored in the %1 used for signing, so we cannot compare "
+"it to the sender's address %2."
+msgstr ""
+"គ្មាន​​អាសយដ្ឋាន​សំបុត្រ​​​បាន​ទុក​នៅក្នុង %1 ដែលបានប្រើ​សម្រាប់​ការចុះហត្ថលេខាឡើយ ដូច្នេះ​យើង​មិនអាច​"
+"ប្រៀបធៀប​វា​ទៅកាន់​អាសយដ្ឋាន​របស់​អ្នក​ផ្ញើ​ %2 ទេ ។"
+
+#: objecttreeparser.cpp:2588
+#, kde-format
+msgid "Not enough information to check signature. %1"
+msgstr "គ្មាន​ព័ត៌មាន​គ្រប់គ្រាន់​ដើម្បី​ពិនិត្យ​ហត្ថលេខាទេ ។ %1"
+
+#: objecttreeparser.cpp:2605 objecttreeparser.cpp:2683
+msgid "Message was signed with unknown key."
+msgstr "សារត្រូវបាន​ចុះហត្ថលេខា​ដោយ​ប្រើ​សោ​មិនស្គាល់ ។"
+
+#: objecttreeparser.cpp:2607 objecttreeparser.cpp:2721
+#: objecttreeparser.cpp:2765
+#, kde-format
+msgid "Message was signed by %1."
+msgstr "សារត្រូវបាន​ចុះហត្ថលេខា​ដោយ %1 ។"
+
+#: objecttreeparser.cpp:2614 objecttreeparser.cpp:2623
+#: objecttreeparser.cpp:2634
+#, kde-format
+msgid "Message was signed with key %1."
+msgstr "សារ​ត្រូវបាន​ចុះហត្ថលេខា​ដោយប្រើសោ %1 ។"
+
+#: objecttreeparser.cpp:2617
+#, kde-format
+msgid "Message was signed on %1 with key %2."
+msgstr "សារ​ត្រូវបាន​ចុះហត្ថលេខា​នៅលើ %1 ដោយប្រើ​សោ %2 ។"
+
+#: objecttreeparser.cpp:2626
+#, kde-format
+msgid "Message was signed by %3 on %1 with key %2"
+msgstr "សារត្រូវបាន​ចុះហត្ថលេខា​ដោយ %3 នៅលើ %1 ដោយប្រើ​សោ %2"
+
+#: objecttreeparser.cpp:2637
+#, kde-format
+msgid "Message was signed by %2 with key %1."
+msgstr "សារត្រូវបាន​ចុះហត្ថលេខា​ដោយ %2 ដោយប្រើ %1 ។"
+
+#: objecttreeparser.cpp:2675
+#, kde-format
+msgid "Message was signed on %1 with unknown key %2."
+msgstr "សារ​ត្រូវបាន​ចុះហត្ថលេខា​នៅលើ %1 ដោយប្រើ​សោ​មិនស្គាល់ %2 ។"
+
+#: objecttreeparser.cpp:2679
+#, kde-format
+msgid "Message was signed with unknown key %1."
+msgstr "សារ​ត្រូវបាន​ចុះហត្ថលេខា​ដោយ​សោ​មិនស្គាល់ %1 ។"
+
+#: objecttreeparser.cpp:2685
+msgid "The validity of the signature cannot be verified."
+msgstr "មិនអាច​ផ្ទៀងផ្ទាត់​សុពលភាព​របស់​ហត្ថលេខា​បានឡើយ ។"
+
+#: objecttreeparser.cpp:2717 objecttreeparser.cpp:2761
+#, kde-format
+msgid "Message was signed by %2 (Key ID: %1)."
+msgstr "ហត្ថលេខាត្រូវបាន​ចុះហត្ថលេខាដោយ %2 (លេខសម្គាល់​សោ ៖ %1) ។"
+
+#: objecttreeparser.cpp:2727
+msgid "The signature is valid, but the key's validity is unknown."
+msgstr "ហត្ថលេខា​គឺ​ត្រឹមត្រូវ ប៉ុន្តែ​មិនស្គាល់​សុពលភាព​របស់​សោទេ ។"
+
+#: objecttreeparser.cpp:2731
+msgid "The signature is valid and the key is marginally trusted."
+msgstr "ហត្ថលេខា​គឺត្រឹមត្រូវ ហើយ សោ​មិនទាន់បាន​ទុកចិត្ត​គ្របគ្រាន់ទេ ។"
+
+#: objecttreeparser.cpp:2735
+msgid "The signature is valid and the key is fully trusted."
+msgstr "ហត្ថលេខា​គឺ​ត្រឹមត្រូវ​ ហើយ សោ​គឺ​ត្រូវបាន​ទុក​ចិត្ត​យ៉ាងពេញលេញ ។"
+
+#: objecttreeparser.cpp:2739
+msgid "The signature is valid and the key is ultimately trusted."
+msgstr "ហត្ថលេខា​គឺ​ត្រឹមត្រូវ ហើយ​ សោ​គឺ​ត្រូវបាន​ទុក​ចិត្ត​ជាទីបំផុត ។"
+
+#: objecttreeparser.cpp:2743
+msgid "The signature is valid, but the key is untrusted."
+msgstr "ហត្ថលេខា​គឺ​ត្រឹមត្រូវ ប៉ុន្តែ​សារ​មិនត្រូវបាន​ទុក​ចិត្តឡើយ ។"
+
+#: objecttreeparser.cpp:2767
+msgid "Warning: The signature is bad."
+msgstr "ព្រមាន ៖ ហត្ថលេខា​គឺអាក្រក់ ។"
+
+#: objecttreeparser.cpp:2791
+msgid "End of signed message"
+msgstr "ខាងចុង​សារ​ដែលបាន​ចុះហត្ថលេខា"
+
+#: objecttreeparser.cpp:2797
+msgid "End of encrypted message"
+msgstr "ខាងចុង​សារដែលបាន​អ៊ិនគ្រីប"
+
+#: objecttreeparser.cpp:2804
+msgid "End of encapsulated message"
+msgstr "ខាងចុង​សារ​ដែល​បាន​ស្រោប"
+
+#: objecttreeparser.cpp:2976
+msgid "The message could not be decrypted."
+msgstr "សារ​មិនអាច​ត្រូវបាន​ឌិគ្រីប​បានទេ ។"
+
+#: editorwatcher.cpp:70
 msgid "Edit with:"
 msgstr "កែសម្រួល​ជា​មួយ ៖"
 
-#: editorwatcher.cpp:157
+#: editorwatcher.cpp:158
 msgid ""
 "KMail is unable to detect when the chosen editor is closed. To avoid data "
 "loss, editing the attachment will be aborted."
@@ -64,33 +532,33 @@ msgstr ""
 "KMail មិនអាច​រកឃើញ​នៅពេល​បាន​បិទ​កម្មវិធី​និពន្ធ​ដែល​បាន​ជ្រើស ។ ដើម្បី​ជៀសវាង​ពី​កា​របាត់បង់​ទិន្នន័យ កា​"
 "រកែសម្រួល​ឯកសារ​ភ្ជាប់​នឹង​ត្រូវ​បាន​បោះបង់ ។"
 
-#: editorwatcher.cpp:159
+#: editorwatcher.cpp:160
 msgid "Unable to edit attachment"
 msgstr "មិន​អាច​កែសម្រួល​ឯកសារ​ភ្ជាប់"
 
-#: headerstyle.cpp:125 headerstyle.cpp:225 headerstyle.cpp:464
-#: headerstyle.cpp:607 headerstyle.cpp:751
+#: headerstyle.cpp:125 headerstyle.cpp:225 headerstyle.cpp:465
+#: headerstyle.cpp:608 headerstyle.cpp:752
 msgid "No Subject"
 msgstr "​គ្មាន​ប្រធាន​បទ"
 
-#: headerstyle.cpp:155 headerstyle.cpp:270 headerstyle.cpp:631
-#: headerstyle.cpp:841
+#: headerstyle.cpp:155 headerstyle.cpp:270 headerstyle.cpp:632
+#: headerstyle.cpp:842
 msgid "[vCard]"
 msgstr "[vCard]"
 
-#: headerstyle.cpp:160 headerstyle.cpp:284 headerstyle.cpp:651
+#: headerstyle.cpp:160 headerstyle.cpp:284 headerstyle.cpp:652
 msgid "CC: "
 msgstr "ចម្លងជូន ៖ "
 
-#: headerstyle.cpp:163 headerstyle.cpp:288 headerstyle.cpp:658
+#: headerstyle.cpp:163 headerstyle.cpp:288 headerstyle.cpp:659
 msgid "BCC: "
 msgstr "ចម្លងជាសម្ងាត់ជូន ៖ "
 
-#: headerstyle.cpp:258 headerstyle.cpp:664
+#: headerstyle.cpp:258 headerstyle.cpp:665
 msgid "Date: "
 msgstr "កាលបរិច្ឆេទ ៖ "
 
-#: headerstyle.cpp:266 headerstyle.cpp:623 headerstyle.cpp:846
+#: headerstyle.cpp:266 headerstyle.cpp:624 headerstyle.cpp:847
 msgid "From: "
 msgstr "ពី ៖ "
 
@@ -118,7 +586,7 @@ msgstr ""
 "ប្រហែល=%2\n"
 "សេចក្ដីទុកចិត្ត=%4"
 
-#: headerstyle.cpp:397
+#: headerstyle.cpp:398
 #, fuzzy, kde-format
 #| msgid ""
 #| "%1% probability of being spam.\n"
@@ -136,31 +604,31 @@ msgstr ""
 "របាយការណ៍​ពេញលេញ ៖\n"
 "%2"
 
-#: headerstyle.cpp:408
+#: headerstyle.cpp:409
 msgid "No Spam agent"
 msgstr ""
 
-#: headerstyle.cpp:411
+#: headerstyle.cpp:412
 msgid "Spam filter score not a number"
 msgstr ""
 
-#: headerstyle.cpp:414
+#: headerstyle.cpp:415
 msgid "Threshold not a valid number"
 msgstr ""
 
-#: headerstyle.cpp:417
+#: headerstyle.cpp:418
 msgid "Spam filter score could not be extracted from header"
 msgstr ""
 
-#: headerstyle.cpp:420
+#: headerstyle.cpp:421
 msgid "Threshold could not be extracted from header"
 msgstr ""
 
-#: headerstyle.cpp:423
+#: headerstyle.cpp:424
 msgid "Error evaluating spam score"
 msgstr ""
 
-#: headerstyle.cpp:427
+#: headerstyle.cpp:428
 #, kde-format
 msgid ""
 "%1.\n"
@@ -169,42 +637,239 @@ msgid ""
 "%2"
 msgstr ""
 
-#: headerstyle.cpp:626
+#: headerstyle.cpp:627
 #, kde-format
 msgid "(resent from %1)"
 msgstr "(បានផ្ញើ​ឡើងវិញ​ពី %1)"
 
-#: headerstyle.cpp:644
+#: headerstyle.cpp:645
 msgctxt "To-field of the mail header."
 msgid "To: "
 msgstr "ជូនចំពោះ ៖"
 
-#: headerstyle.cpp:672
+#: headerstyle.cpp:673
 msgid "User-Agent: "
 msgstr "ភ្នាក់ងារ​អ្នកប្រើ ៖ "
 
-#: headerstyle.cpp:681
+#: headerstyle.cpp:682
 msgid "X-Mailer: "
 msgstr "X-Mailer ៖ "
 
-#: headerstyle.cpp:692
+#: headerstyle.cpp:693
 msgid "Spam Status:"
 msgstr "ស្ថានភាព​សារ​ឥតបានការ ៖"
 
-#: headerstyle.cpp:854
+#: headerstyle.cpp:855
 msgctxt "To field of the mail header."
 msgid "To: "
 msgstr "ជូនចំពោះ ៖"
 
-#: htmlstatusbar.cpp:90
+#: attachmentdialog.cpp:34
+#, kde-format
 msgid ""
-"<qt><b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br />s<br /"
-">a<br />g<br />e</b></qt>"
+"Open attachment '%1'?\n"
+"Note that opening an attachment may compromise your system's security."
+msgstr ""
+"បើកឯកសារ​ភ្ជាប់ '%1'?\n"
+"ចំណាំថាការបើក​ឯកសារភ្ជាប់​មួយ​អាច​សម្រុះ​សម្រួល​សុវត្ថិភាព​ប្រព័ន្ធ​របស់អ្នក ។"
+
+#: attachmentdialog.cpp:40
+msgid "Open Attachment?"
+msgstr "បើក​ឯកសារភ្ជាប់​ឬ ?"
+
+#: attachmentdialog.cpp:47
+#, kde-format
+msgid "&Open with '%1'"
+msgstr "​បើក​ជាមួយ '%1'"
+
+#: attachmentdialog.cpp:51
+msgid "&Open With..."
+msgstr "​បើក​ជា​មួយ..."
+
+#: attachmentdialog.cpp:70
+msgid "Do not ask again"
+msgstr ""
+
+#: mailsourceviewer.cpp:146
+#, fuzzy
+#| msgid "&View Source"
+msgctxt "Unchanged mail message"
+msgid "Raw Source"
+msgstr "មើល​ប្រភព"
+
+#: mailsourceviewer.cpp:147
+msgid "Raw, unmodified mail as it is stored on the filesystem or on the server"
+msgstr ""
+
+#: mailsourceviewer.cpp:152
+#, fuzzy
+#| msgctxt "MDN type"
+#| msgid "Processed"
+msgctxt "Mail message after being processed, might be alterred from original"
+msgid "Processed Source"
+msgstr "បានដំណើរការ"
+
+#: mailsourceviewer.cpp:153
+msgid ""
+"Processed mail, for example after decrypting an encrypted part of the mail"
+msgstr ""
+
+#: mailsourceviewer.cpp:159
+#, fuzzy
+#| msgid "&View Source"
+msgctxt "Mail message as shown, in HTML format"
+msgid "HTML Source"
+msgstr "មើល​ប្រភព"
+
+#: mailsourceviewer.cpp:160
+msgid "HTML code for displaying the message to the user"
+msgstr ""
+
+#: urlhandlermanager.cpp:404
+msgid "Turn on HTML rendering for this message."
+msgstr "បើក​ការបង្ហាញ HTML សម្រាប់​សារ​នេះ ។"
+
+#: urlhandlermanager.cpp:406
+msgid "Load external references from the Internet for this message."
+msgstr "ផ្ទុក​សេចក្ដី​យោង​ខាងក្រៅ​ពី អ៊ីនធឺណិត​សម្រាប់សារនេះ ។"
+
+#: urlhandlermanager.cpp:408
+msgid "Work online."
+msgstr "ធ្វើការ​​លើ​បណ្ដាញ"
+
+#: urlhandlermanager.cpp:410
+msgid "Decrypt message."
+msgstr "ឌិគ្រីប​សារ"
+
+#: urlhandlermanager.cpp:412
+msgid "Show signature details."
+msgstr "បង្ហាញ​សេចក្ដី​លម្អិត​ហត្ថលេខា ។"
+
+#: urlhandlermanager.cpp:414
+msgid "Hide signature details."
+msgstr "លាក់​សេចក្ដី​លម្អិត​ហត្ថលេខា"
+
+#: urlhandlermanager.cpp:416
+msgid "Show attachment list."
+msgstr "បង្ហាញ​បញ្ជី​ឯកសារ​ភ្ជាប់ ។"
+
+#: urlhandlermanager.cpp:418
+msgid "Hide attachment list."
+msgstr "លាក់​បញ្ជី​ឯកសារ​ភ្ជាប់ ។"
+
+#: urlhandlermanager.cpp:450
+msgid "Expand all quoted text."
+msgstr "ពង្រីកអត្ថបទ​ដកស្រង់ទាំងអស់ ។"
+
+#: urlhandlermanager.cpp:453
+msgid "Collapse quoted text."
+msgstr "វេញ​អត្ថបទ​ដកស្រង់ ។"
+
+#: urlhandlermanager.cpp:517
+msgid "Could not start certificate manager. Please check your installation."
+msgstr "មិនអាច​ចាប់ផ្ដើម​កម្មវិធី​គ្រប់គ្រង​វិញ្ញាបនបត្រ​បានឡើយ ។ សូម​ពិនិត្យ្រ​មើល​កដំឡើង​របស់អ្នក ។n."
+
+#: urlhandlermanager.cpp:519
+msgid "KMail Error"
+msgstr "កំហុស KMail"
+
+#: urlhandlermanager.cpp:529
+#, kde-format
+msgid "Show certificate 0x%1"
+msgstr "បង្ហាញ​វិញ្ញាបនបត្រ 0x%1"
+
+#: urlhandlermanager.cpp:611
+#, kde-format
+msgid "Attachment: %1"
+msgstr "ឯកសារភ្ជាប់ ៖ %1"
+
+#: urlhandlermanager.cpp:612
+#, kde-format
+msgid "Attachment #%1 (unnamed)"
+msgstr "ឯកសារ​ភ្ជាប់ #%1 (មិនបាន​ដាក់ឈ្មោះ)"
+
+#: urlhandlermanager.cpp:642
+msgid "Show GnuPG Audit Log for this operation"
+msgstr "បង្ហាញ​កំណត់ហេតុ​ត្រួតពិនិត្យ​ GnuPG សម្រាប់ប្រតិបត្តិការ​នេះ"
+
+#: findbar/findbar.cpp:50
+#, fuzzy
+#| msgid "Colors"
+msgid "Close"
+msgstr "ពណ៌"
+
+#: findbar/findbar.cpp:54
+#, fuzzy
+#| msgid "Friend"
+msgctxt "Find text"
+msgid "F&ind:"
+msgstr "មិត្តភក្ដិ"
+
+#: findbar/findbar.cpp:58
+msgid "Text to search for"
+msgstr ""
+
+#: findbar/findbar.cpp:63
+#, fuzzy
+#| msgctxt "@action:inmenu Goto next unread message"
+#| msgid "Next"
+msgctxt "Find and go to the next search match"
+msgid "Next"
+msgstr "បន្ទាប់"
+
+#: findbar/findbar.cpp:64
+msgid "Jump to next match"
+msgstr ""
+
+#: findbar/findbar.cpp:68
+#, fuzzy
+#| msgctxt "@action:inmenu Goto previous unread message."
+#| msgid "Previous"
+msgctxt "Find and go to the previous search match"
+msgid "Previous"
+msgstr "មុន"
+
+#: findbar/findbar.cpp:69
+#, fuzzy
+#| msgid "Go to the previous message"
+msgid "Jump to previous match"
+msgstr "ទៅកាន់​សារ​មុន"
+
+#: findbar/findbar.cpp:74
+#, fuzzy
+#| msgid "&Options"
+msgid "Options"
+msgstr "ជម្រើស"
+
+#: findbar/findbar.cpp:75
+msgid "Modify search behavior"
+msgstr ""
+
+#: findbar/findbar.cpp:77
+msgid "Case sensitive"
+msgstr ""
+
+#: findbar/findbar.cpp:79
+msgid "Highlight all matches"
+msgstr ""
+
+#: htmlstatusbar.cpp:110
+#, fuzzy
+#| msgid ""
+#| "<qt><b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br /"
+#| ">s<br />a<br />g<br />e</b></qt>"
+msgctxt "'HTML Message' with html linebreaks between each letter."
+msgid "<br />M<br />e<br />s<br />s<br />a<br />g<br />e</b></qt>"
 msgstr ""
 "<qt><b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br />s<br /"
 ">a<br />g<br />e</b></qt>"
 
-#: htmlstatusbar.cpp:93
+#: htmlstatusbar.cpp:113
+#, fuzzy
+#| msgid ""
+#| "<qt><br />N<br />o<br /> <br />H<br />T<br />M<br />L<br /> <br />M<br /"
+#| ">e<br />s<br />s<br />a<br />g<br />e</qt>"
+msgctxt "'No HTML Message' with html linebreaks between each letter."
 msgid ""
 "<qt><br />N<br />o<br /> <br />H<br />T<br />M<br />L<br /> <br />M<br /"
 ">e<br />s<br />s<br />a<br />g<br />e</qt>"
@@ -212,661 +877,46 @@ msgstr ""
 "<qt><br />N<br />o<br /> <br />H<br />T<br />M<br />L<br /> <br />M<br /"
 ">e<br />s<br />s<br />a<br />g<br />e</qt>"
 
-#: kmmsgpartdlg.cpp:43
-msgctxt "message encoding type"
-msgid "None (7-bit text)"
-msgstr "គ្មាន (អត្ថបទ 7-ប៊ីត)"
-
-#: kmmsgpartdlg.cpp:44
-msgctxt "message encoding type"
-msgid "None (8-bit text)"
-msgstr "គ្មាន (អត្ថបទ 8-ប៊ីត)"
-
-#: kmmsgpartdlg.cpp:45
-msgctxt "message encoding type"
-msgid "Quoted Printable"
-msgstr "បានដកស្រង់​ពី​ការដែល​អាច​បោះពុម្ព​បាន"
-
-#: kmmsgpartdlg.cpp:46
-msgctxt "message encoding type"
-msgid "Base 64"
-msgstr "គោល ៦៤"
-
-#: kmmsgpartdlg.cpp:59
-msgid "Message Part Properties"
-msgstr "លក្ខណៈ​សម្បត្តិ​ផ្នែក​នៃ​សារ"
-
-#: kmmsgpartdlg.cpp:103
-#, kde-format
+#: htmlstatusbar.cpp:118
+#, fuzzy
+#| msgid ""
+#| "<qt><b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br /"
+#| ">s<br />a<br />g<br />e</b></qt>"
+msgctxt "'Plain Message' with html linebreaks between each letter."
 msgid ""
-"<qt><p>The <em>MIME type</em> of the file:</p><p>normally, you do not need "
-"to touch this setting, since the type of the file is automatically checked; "
-"but, sometimes, %1 may not detect the type correctly -- here is where you "
-"can fix that.</p></qt>"
+"<qt><br />P<br />l<br />a<br />i<br />n<br /> <br />M<br />e<br />s<br /"
+">s<br />a<br />g<br />e<br /></qt>"
 msgstr ""
-"<qt><p> <em>ប្រភេទ MIME</em> របស់​ឯកសារ ៖</p><p>ជាធម្មតា ចាប់ពី​ប្រភេទ​នៃ​ឯកសារ​​ត្រូវបាន​"
-"ពិនិត្យ​ដោយស្វ័យប្រវត្តិមក គឺ​អ្នក​មិន​ត្រូវ​ប៉ះពាល់​ការកំណត់​នេះឡើយ ។ ប៉ុន្តែ​ ជួនកាល %1 មិនអាច​រក​ប្រភេទ​បាន​"
-"ត្រឹមត្រូវឡើយ -- ទី​នេះ​ជាកន្លែង​ដែល​អ្នក​អាច​ជួសជុល​វាបាន ។</p></qt>"
+"<qt><b><br />H<br />T<br />M<br />L<br /> <br />M<br />e<br />s<br />s<br /"
+">a<br />g<br />e</b></qt>"
 
-#: kmmsgpartdlg.cpp:115
-#, kde-format
-msgid ""
-"<qt><p>The size of the part:</p><p>sometimes, %1 will only give an estimated "
-"size here, because calculating the exact size would take too much time; when "
-"this is the case, it will be made visible by adding \"(est.)\" to the size "
-"displayed.</p></qt>"
+#: htmlstatusbar.cpp:132
+msgid "Click to toggle between HTML and plain text."
 msgstr ""
-"<qt><p>ទំហំ​របស់​ផ្នែក ៖</p><p>ជួនកាល %1 នឹង​បាន​តែ​ផ្ដល់​នូវ​ទំហំ​ដែល​បាន​វាយតម្លៃនៅទីនេះ ព្រោះ​​"
-"ការគណនា​អំពី​ទំហំ​ពិតប្រាកដ​នឹង​ត្រូវ​ចំណាយ​ពេល​ច្រើន​ណាស់ ។ នៅពេល​ដែល​ដូច​នោះ វា​នឹងត្រូវ​បាន​ធ្វើ​ឲ្យ​មើល​"
-"ឃើញដោយបន្ថែម \"(est.)\" ទៅកាន់​ទំហំ​​ដែលបាន​បង្ហាញ ។</p></qt>"
 
-#: kmmsgpartdlg.cpp:126
-msgctxt "file name of the attachment."
-msgid "&Name:"
-msgstr "ឈ្មោះ ៖"
-
-#: kmmsgpartdlg.cpp:131
-msgid ""
-"<qt><p>The file name of the part:</p><p>although this defaults to the name "
-"of the attached file, it does not specify the file to be attached; rather, "
-"it suggests a file name to be used by the recipient's mail agent when saving "
-"the part to disk.</p></qt>"
-msgstr ""
-"<qt><p>ឈ្មោះ​ឯកសារ​របស់​ផ្នែក ៖</p><p>ទោះ​បី​ជា​​វា​ធ្វើ​លំនាំដើម​ទៅកាន់​ឈ្មោះ​នៃ​ឯកសារ​ភ្ជាប់ វា​មិន​"
-"បញ្ជាក់​ឯកសារ​​ដែល​ត្រូវ​បាន​ភ្ជាប់​នោះទេ ។ បែបហ្នឹង​ដែរ វា​ផ្ដល់​យោបល់​អំពី​ឈ្មោះ​ឯកសារ​ដែល​ត្រូវបាន​ប្រើ​"
-"ដោយភ្នាក់ងារ​សំបុត្រ​របស់​អ្នក​ទទួល​នៅពេល​ដែល​កំពុង​រក្សាទុក​ផ្នែក​ទៅ​កាន់​ថាស ។</p></qt>"
-
-#: kmmsgpartdlg.cpp:142
-msgid "&Description:"
-msgstr "​ការ​ពិពណ៌នា ៖"
-
-#: kmmsgpartdlg.cpp:147
-msgid ""
-"<qt><p>A description of the part:</p><p>this is just an informational "
-"description of the part, much like the Subject is for the whole message; "
-"most mail agents will show this information in their message previews "
-"alongside the attachment's icon.</p></qt>"
-msgstr ""
-"<qt><p>សេចក្ដី​ពណ៌នា​អំពី​ផ្នែក ៖</p><p>នេះ​គ្រាន់​តែ​ជា​ព័ត៌មាន​មួយ​នៃ​សេចក្ដី​ពណ៌នា​អំពី​ផ្នែក ដែលភាគច្រើន​"
-"ដូចជា ប្រធាន​បទ គឺ​សម្រាប់​សារ​ទាំងមូល ។ ភ្នាក់ងារ​សំបុត្រ​ភាគ​ច្រើន​បំផុត​នឹង​បង្ហាញ​ព័ត៌មាន​នេះ​នៅក្នុង​​ការមើល​"
-"សារ​របស់​ពួក​គេ​ជាមុន​​តាម​ផ្នែក​រូបតំណាង​របស់​ឯកសារ​ភ្ជាប់ ។</p></qt>"
-
-#: kmmsgpartdlg.cpp:159
-msgid "&Encoding:"
-msgstr "​អ៊ិនកូឌីង ៖"
-
-#: kmmsgpartdlg.cpp:164
-#, kde-format
-msgid ""
-"<qt><p>The transport encoding of this part:</p><p>normally, you do not need "
-"to change this, since %1 will use a decent default encoding, depending on "
-"the MIME type; yet, sometimes, you can significantly reduce the size of the "
-"resulting message, e.g. if a PostScript file does not contain binary data, "
-"but consists of pure text -- in this case, choosing \"quoted-printable\" "
-"over the default \"base64\" will save up to 25% in resulting message size.</"
-"p></qt>"
-msgstr ""
-"<qt><p>អ៊ិនកូឌីង​ការដឹកជញ្ជូន​របស់ផ្នែកនេះ ៖</p><p>ជាទូទៅ អ្នក​មិនត្រូវផ្លាស់ប្ដូរ​វាទេ គឺចាប់ពី​ %1 "
-"នឹងប្រើ​សំណុំតួអក្សរលំនាំដើម​ដែលសមរម្យ ដោយផ្អែក​លើប្រភេទ MIME ។ ពេលខ្លះ​ អ្នកនៅអាចកាត់បន្ថយ​ទំហំ​"
-"នៃលទ្ធផល​សារ​ដែលសំខាន់ ឧទាហរណ៍. ប្រសិនបើ​ឯកសារ PostScript មិនមាន​ទិន្នន័យគោលពីរ ប៉ុន្តែ​មាន​"
-"អត្ថបទសុទ្ធ -- ក្នុងករណីនេះ ការជ្រើស \"អត្ថបទដកស្រង់ដែលអាចបោះពុម្ពបាន\" នៅលើ​ \"គោល 64\" "
-"លំនាំដើម នឹងសន្សំបាន 25% នៅក្នុង​ទំហំសារលទ្ធផល ។</p></qt>"
-
-#: kmmsgpartdlg.cpp:177
-msgid "Suggest &automatic display"
-msgstr "ផ្ដល់​យោបល់​ឲ្យ​បង្ហាញ​ដោយស្វ័យប្រវត្តិ"
-
-#: kmmsgpartdlg.cpp:180
-msgid ""
-"<qt><p>Check this option if you want to suggest to the recipient the "
-"automatic (inline) display of this part in the message preview, instead of "
-"the default icon view;</p><p>technically, this is carried out by setting "
-"this part's <em>Content-Disposition</em> header field to \"inline\" instead "
-"of the default \"attachment\".</p></qt>"
-msgstr ""
-"<qt><p>ធីក​ជម្រើស​នេះ ប្រសិនបើ​អ្នក​ចង់​ផ្ដល់យោបល់​ទៅ​អ្នកទទួល បង្ហាញ​ (នៅក្នុង​បណ្ដាញ) នៃ​ផ្នែក​នេះ​"
-"នៅក្នុង​ការមើល​សារជាមុន ជំនួសឲ្យទិដ្ឋភ​​រូបតំណាង​លំនាំដើម ។</p><p>តាម​លក្ខណៈបច្ចេកទេស វាត្រូវបាន​"
-"អនុវត្ត​ដោយ​ការកំណត់វាល​បឋមកថា<em>Cការជូន​ដំណឹង​អំពី​មាតិកា</em> ​របស់ផ្នែក​នេះទៅ \"ក្នុងបណ្ដាញ\" "
-"ជំនួស​ឲ្យ​\"ឯកសារភ្ជាប់\"លំនាំដើម ។</p></qt>"
-
-#: kmmsgpartdlg.cpp:189
-msgid "&Sign this part"
-msgstr "ចុះហត្ថលេខា​នៅផ្នែក​នេះ"
-
-#: kmmsgpartdlg.cpp:192
-msgid ""
-"<qt><p>Check this option if you want this message part to be signed;</"
-"p><p>the signature will be made with the key that you associated with the "
-"currently-selected identity.</p></qt>"
-msgstr ""
-"<qt><p>ធីក​ជម្រើស​នេះ ប្រសិន​បើ​អ្នក​ចង់​ឲ្យផ្នែក​សារ​នេះ​ត្រូវបាន​ចុះហត្ថលេខា ។</p><p>ហត្ថលេខា "
-"នឹងត្រូវបាន​បង្កើត​ជាមួយ​សោ​ដែល​អ្នក​ភ្ជាប់​ជាមួយ​អត្តសញ្ញាណ​​ដែលបាន​ជ្រើស​បច្ចុប្បន្ន ។</p></qt>"
-
-#: kmmsgpartdlg.cpp:199
-msgid "Encr&ypt this part"
-msgstr "អ៊ិនគ្រីប​ផ្នែក​នេះ"
-
-#: kmmsgpartdlg.cpp:202
-msgid ""
-"<qt><p>Check this option if you want this message part to be encrypted;</"
-"p><p>the part will be encrypted for the recipients of this message</p></qt>"
-msgstr ""
-"<qt><p>ធីក​ជម្រើស​នេះ ប្រសិន​បើអ្នក​ចង់​ឲ្យ​ផ្នែក​សារ​នេះ​ត្រូវបាន​អ៊ិនគ្រីប ។</p><p>ផ្នែក​នឹងត្រូវ​បាន​"
-"អ៊ិនគ្រីប​សម្រាប់​អ្នកទទួល​សារ​នេះ</p></qt>"
-
-#: kmmsgpartdlg.cpp:243
-#, kde-format
-msgctxt "%1: a filesize incl. unit (e.g. \"1.3 KB\")"
-msgid "%1 (est.)"
-msgstr "%1 (est.)"
-
-#: mimetreemodel.cpp:63
+#: mimetreemodel.cpp:65
 msgid "body part"
 msgstr "ផ្នែក​តួ"
 
-#: mimetreemodel.cpp:199
+#: mimetreemodel.cpp:203
 msgid "Description"
 msgstr "សេចក្ដី​ពិពណ៌នា"
 
-#: mimetreemodel.cpp:201
+#: mimetreemodel.cpp:205
 msgid "Type"
 msgstr "ប្រភេទ"
 
-#: mimetreemodel.cpp:203
+#: mimetreemodel.cpp:207
 msgid "Size"
 msgstr "ទំហំ"
 
-#: objecttreeparser.cpp:515
-msgid "Wrong Crypto Plug-In."
-msgstr "ខុស​កម្មវិធី​ជំនួយ Crypto ។"
-
-#: objecttreeparser.cpp:626 objecttreeparser.cpp:2193
-msgid "Different results for signatures"
-msgstr "លទ្ធផល​ផ្សេងគ្នា​ សម្រាប់​ហត្ថលេខា"
-
-#: objecttreeparser.cpp:699
-msgid "The crypto engine returned no cleartext data."
-msgstr "ម៉ាស៊ីន crypto បានត្រឡប់​ទិន្នន័យ​ដែល​មិនបាន​ជម្រះ​អត្ថបទ ។"
-
-#: objecttreeparser.cpp:702 objecttreeparser.cpp:2659
-#: objecttreeparser.cpp:2702
-msgid "Status: "
-msgstr "ស្ថានភាព ៖ "
-
-#: objecttreeparser.cpp:709
-msgctxt "Status of message unknown."
-msgid "(unknown)"
-msgstr "​(មិន​ស្គាល់)"
-
-#: objecttreeparser.cpp:720 objecttreeparser.cpp:943
-#, kde-format
-msgid "Crypto plug-in \"%1\" is not initialized."
-msgstr "កម្មវិធី​ជំនួយ Crypto \"%1\" គឺ​មិនត្រូវបាន​ចាប់ផ្ដើម​ឡើយ ។"
-
-#: objecttreeparser.cpp:724
-#, kde-format
-msgid "Crypto plug-in \"%1\" cannot verify signatures."
-msgstr "កម្មវិធី​ជំនួយ Crypto \"%1\" មិនអាច​ផ្ទៀងផ្ទាត់​ហត្ថលេខា​បានឡើយ ។"
-
-#: objecttreeparser.cpp:729 objecttreeparser.cpp:951
-msgid "No appropriate crypto plug-in was found."
-msgstr "គ្មាន​រកឃើញ​កម្មវិធី​ជំនួយ​​ដែល​សមរម្យ​ឡើយ ។"
-
-#: objecttreeparser.cpp:732
-#, kde-format
-msgctxt "%1 is either 'OpenPGP' or 'S/MIME'"
-msgid "No %1 plug-in was found."
-msgstr "រក​មិនឃើញ​​កម្មវិធី​ជំនួយ​ %1 ឡើយ ។"
-
-#: objecttreeparser.cpp:736
-#, kde-format
-msgid ""
-"The message is signed, but the validity of the signature cannot be verified."
-"<br />Reason: %1"
-msgstr ""
-"សារ​ត្រូវបាន​ចុះហត្ថលេខា​ ប៉ុន្តែ​សុពលភាព​របស់​ហត្ថលេខា​​មិនអាច​ត្រូវបាន​ផ្ទៀងផ្ទាត់​បានទេ ។<br /"
-">មូលហេតុ ៖ %1"
-
-#: objecttreeparser.cpp:771
-msgid "This message is encrypted."
-msgstr "សារ​នេះ​ត្រូវ​បាន​អ៊ិនគ្រីប ។"
-
-#: objecttreeparser.cpp:776
-msgid "Decrypt Message"
-msgstr "ឌិគ្រីប​សារ"
-
-#: objecttreeparser.cpp:801
-#, fuzzy
-#| msgid "Encryption State Icon"
-msgid "Encrypted data not shown"
-msgstr "រូបតំណាង​សភាព​ការ​អ៊ិនគ្រីប"
-
-#: objecttreeparser.cpp:841
-msgid "Could not decrypt the data."
-msgstr "មិនអាច​ឌិគ្រីប​ទិន្នន័យ​បានទេ ។"
-
-#: objecttreeparser.cpp:930
-#, kde-format
-msgid "Crypto plug-in \"%1\" could not decrypt the data."
-msgstr "កម្មវិធី​ជំនួយ Crypto \"%1\" មិនអាច​ឌីគ្រីប​ទិន្នន័យ​បានឡើយ ។"
-
-#: objecttreeparser.cpp:932
-#, kde-format
-msgid "Error: %1"
-msgstr "​កំហុស ៖ %1"
-
-#: objecttreeparser.cpp:947
-#, kde-format
-msgid "Crypto plug-in \"%1\" cannot decrypt messages."
-msgstr "កម្មវិធី​ជំនួយ Crypto \"%1\" មិនអាច​ឌិគ្រីប​សារ​បានឡើយ ។"
-
-#: objecttreeparser.cpp:1080
-msgid ""
-"<b>Note:</b> This HTML message may contain external references to images "
-"etc. For security/privacy reasons external references are not loaded. If you "
-"trust the sender of this message then you can load the external references "
-"for this message <a href=\"kmail:loadExternal\">by clicking here</a>."
-msgstr ""
-"<b>ចំណាំ ៖</b> សារ​ HTML នេះ​អាច​មាន​សេចក្ដី​យោង​​​ខាងក្រៅដែលទៅកាន់​រូបភាព ។ល។ ចំពោះ​ហេតុផល "
-"សុវត្ថិភាព​/ភាព​ជា​ឯកជន សេចក្ដី​យោង​ខាងក្រៅគឺមិនត្រូវបាន​ផ្ទុក​ឡើយ ។ ប្រសិន​បើអ្នកទុកចិត្ត​លើអ្នក​ផ្ញើ​"
-"សារនេះ ពេលនោះ​អ្នក​អាច​ផ្ទុក​សេចក្ដី​យោង​ខាងក្រៅ​​សម្រាប់​សារ​នេះ <a href=\"kmail:loadExternal"
-"\">ដោយ​ចុច​នៅទីនេះ</a> ។"
-
-#: objecttreeparser.cpp:1090
-msgid ""
-"<b>Note:</b> This is an HTML message. For security reasons, only the raw "
-"HTML code is shown. If you trust the sender of this message then you can "
-"activate formatted HTML display for this message <a href=\"kmail:showHTML"
-"\">by clicking here</a>."
-msgstr ""
-"<b>ចំណាំ ៖</b> នេះ​ជា​សារ​ HTML មួយ ។ ចំពោះ​ហេតុផល​សុវត្ថិភាព គឺបាន​បង្ហាញ​តែ​កូដ​ HTML ដើម​"
-"តែប៉ុណ្ណោះ ។ ប្រសិនបើ​អ្នក​ទុកចិត្ត​លើ​អ្នក​ផ្ញើ​សារ​នេះ ពេល​នោះ​អ្នក​អាចធ្វើ​ឲ្យ​​ HTML ដែលបាន​ធ្វើ​"
-"ទ្រង់ទ្រាយ​ បង្ហាញ​សម្រាប់​សារ​នេះ <a href=\"kmail:showHTML\">ដោយចុច​នៅត្រង់នេះ</a> ។"
-
-#: objecttreeparser.cpp:1731
-#, kde-format
-msgid "Sorry, certificate could not be imported.<br />Reason: %1"
-msgstr "សូម​អភ័យ​ទោស វិញ្ញាបនបត្រ​មិន​អាច​ត្រូវ​បាន​នាំចូល​បានទេ ។<br />មូលហេតុ ៖ %1"
-
-#: objecttreeparser.cpp:1741
-msgid "Sorry, no certificates were found in this message."
-msgstr "សូម​ទោស គ្មាន​វិញ្ញាបនបត្រ​ដែល​បាន​រកឃើញ​នៅក្នុង​សារនេះ​ទេ ។"
-
-#: objecttreeparser.cpp:1744
-msgid "Certificate import status:"
-msgstr "ស្ថានភាព​នាំចូល​វិញ្ញាបនបត្រ ៖"
-
-#: objecttreeparser.cpp:1746
-#, kde-format
-msgid "1 new certificate was imported."
-msgid_plural "%1 new certificates were imported."
-msgstr[0] "វិញ្ញាបនបត្រ​ថ្មី %1 ត្រូវ​បាន​នាំចូល ។"
-
-#: objecttreeparser.cpp:1749
-#, kde-format
-msgid "1 certificate was unchanged."
-msgid_plural "%1 certificates were unchanged."
-msgstr[0] "វិញ្ញាបនបត្រ %1 មិន​ត្រូវ​បាន​ផ្លាស់ប្ដូរ ។"
-
-#: objecttreeparser.cpp:1752
-#, kde-format
-msgid "1 new secret key was imported."
-msgid_plural "%1 new secret keys were imported."
-msgstr[0] "កូនសោ​សម្ងាត់​ថ្មី %1 ត្រូវ​បាន​នាំចូល ។"
-
-#: objecttreeparser.cpp:1755
-#, kde-format
-msgid "1 secret key was unchanged."
-msgid_plural "%1 secret keys were unchanged."
-msgstr[0] "កូនសោ​សម្ងាត់ %1 មិន​ត្រូវ​បាន​ផ្លាស់ប្ដូរ ។"
-
-#: objecttreeparser.cpp:1765
-msgid "Sorry, no details on certificate import available."
-msgstr "សូម​ទោស​ មិនមាន​សេចក្ដីលម្អិត​នៅលើ​ការ​នាំចូល​វិញ្ញាបនបត្រឡើយ ។"
-
-#: objecttreeparser.cpp:1768
-msgid "Certificate import details:"
-msgstr "សេចក្ដី​លម្អិត​អំពី​ការនាំចូល​វិញ្ញាបនបត្រ ៖"
-
-#: objecttreeparser.cpp:1771
-#, kde-format
-msgctxt "Certificate import failed."
-msgid "Failed: %1 (%2)"
-msgstr "បាន​បរាជ័យ ៖ %1 (%2)"
-
-#: objecttreeparser.cpp:1775
-#, kde-format
-msgid "New or changed: %1 (secret key available)"
-msgstr "ថ្មី ឬ បាន​ផ្លាស់ប្ដូរ ៖ %1 (មាន​សោ​សម្ងាត់)"
-
-#: objecttreeparser.cpp:1777
-#, kde-format
-msgid "New or changed: %1"
-msgstr "ថ្មី​ ឬ​បាន​ផ្លាស់ប្ដូរ ៖ %1"
-
-#: objecttreeparser.cpp:1921
-msgid ""
-"Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
-"report this bug."
-msgstr ""
-"កម្មវិធីខាងក្រោយ Chiasmus មិនផ្ដល់មុខងារ \"x-obtain-keys\" ឡើយ ។ សូមរាយការណ៍​កំហុស​នេះ ។"
-
-#: objecttreeparser.cpp:1927
-msgid "Chiasmus Backend Error"
-msgstr "កំហុស​កម្មវិធី​ខាងក្រោយ Chiasmus"
-
-#: objecttreeparser.cpp:1933
-msgid ""
-"Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
-"function did not return a string list. Please report this bug."
-msgstr ""
-"ត្រឡប់​តម្លៃ​ដែល​មិនបានរំពឹង​ពី​កម្មវិធីខាងក្រោយ Chiasmus ៖ អនុគមន៍ \"x-obtain-keys\" មិនបាន​ត្រឡប់​"
-"បញ្ជី​ខ្សែអក្សរ​ឡើយ ។ សូមរាយការកំហុស ។"
-
-#: objecttreeparser.cpp:1941
-msgid ""
-"No keys have been found. Please check that a valid key path has been set in "
-"the Chiasmus configuration."
-msgstr ""
-"រកមិន​ឃើញ​កូនសោ​ឡើយ ។ សូម​ពិនិត្យ​ថា ផ្លូវសោ​ដែល​ត្រឹមត្រូវ​បាន​កំណត់​នៅក្នុង​ការកំណត់រចនាសម្ព័ន្ធ​ Chiasmus ។"
-
-#: objecttreeparser.cpp:1961
-msgid ""
-"Chiasmus backend does not offer the \"x-decrypt\" function. Please report "
-"this bug."
-msgstr "កម្មវិធីខាងក្រោយ Chiasmus មិន​ផ្ដល់​អនុគមន៍ \"x-decrypt\" ឡើយ ។ សូម​រាយការណ៍​កំហុស​នេះ ។"
-
-#: objecttreeparser.cpp:1969
-msgid ""
-"The \"x-decrypt\" function does not accept the expected parameters. Please "
-"report this bug."
-msgstr "អនុគមន៍ \"x-decrypt\" មិន​ទទួលយក​ប៉ារ៉ាម៉ែត្រ​ដែល​រំពឹង​ឡើយ ។ សូម​រាយការណ៍​កំហុស​នេះ ។"
-
-#: objecttreeparser.cpp:1975
-msgid "Chiasmus Decryption Error"
-msgstr "កំហុស​ការឌិគ្រីប Chiasmus"
-
-#: objecttreeparser.cpp:1981
-msgid ""
-"Unexpected return value from Chiasmus backend: The \"x-decrypt\" function "
-"did not return a byte array. Please report this bug."
-msgstr ""
-"ត្រឡប់តម្លៃ​ដែលមិនបាន​រំពឹងពី​កម្មវិធី​ខាងក្រោយ Chiasmus ៖ មុខងារ \"x-decrypt\" មិនបានត្រឡប់​អារេ​"
-"បៃឡើយ ។ សូមរាយការណ៍​កំហុស​។"
-
-#: objecttreeparser.cpp:2112
-msgctxt "display name for an unnamed attachment"
-msgid "Unnamed"
-msgstr "គ្មានឈ្មោះ"
-
-#: objecttreeparser.cpp:2175
-msgid "Error: Signature not verified"
-msgstr "មាន​កំហុស ៖ មិនបាន​បញ្ជាក់​ហត្ថលេខាឡើយ"
-
-#: objecttreeparser.cpp:2178
-msgid "Good signature"
-msgstr "ហត្ថលេខា​ដែល​ល្អ"
-
-#: objecttreeparser.cpp:2181
-msgid "<b>Bad</b> signature"
-msgstr "ហត្ថលេខា<b>អាក្រក់</b>"
-
-#: objecttreeparser.cpp:2184
-msgid "No public key to verify the signature"
-msgstr "គ្មាន​សាធារណៈ​ដែល​ត្រូវ​ផ្ទៀងផ្ទាត់​ហត្ថលេខាឡើយ"
-
-#: objecttreeparser.cpp:2187
-msgid "No signature found"
-msgstr "គ្មាន​ហត្ថលេខា​ដែល​រកឃើញ​ឡើយ"
-
-#: objecttreeparser.cpp:2190
-msgid "Error verifying the signature"
-msgstr "មាន​កំហុស​នៅខណៈ​ពេល​ដែល​កំពុង​ផ្ទៀងផ្ទាត់​ហត្ថលេខា"
-
-#: objecttreeparser.cpp:2213
-msgid "No status information available."
-msgstr "មិនមាន​ព័ត៌មាន​ស្ថានភាពឡើយ ។"
-
-#: objecttreeparser.cpp:2220 objecttreeparser.cpp:2304
-msgid "Good signature."
-msgstr "ហត្ថលេខា​ល្អ ។"
-
-#: objecttreeparser.cpp:2241
-msgid "One key has expired."
-msgstr "សោ​មួយ​បាន​ផុតកំណត់​ហើយ ។"
-
-#: objecttreeparser.cpp:2245
-msgid "The signature has expired."
-msgstr "ហត្ថលេខា​បាន​ផុត​កំណត់​ហើយ ។"
-
-#: objecttreeparser.cpp:2250
-msgid "Unable to verify: key missing."
-msgstr "មិនអាចផ្ទៀងផ្ទាត់បាន ៖ បាត់បង់សោ ។"
-
-#: objecttreeparser.cpp:2257
-msgid "CRL not available."
-msgstr "មិនមាន CRL ។"
-
-#: objecttreeparser.cpp:2261
-msgid "Available CRL is too old."
-msgstr "CRL ដែលមាន​ គឺ​ចាង់ពេក ។"
-
-#: objecttreeparser.cpp:2265
-msgid "A policy was not met."
-msgstr "មិបានជួប​គោលការណ៍ឡើយ ។"
-
-#: objecttreeparser.cpp:2269
-msgid "A system error occurred."
-msgstr "កំហុស​ប្រព័ន្ធ​បាន​កើត​មានឡើយ ។"
-
-#: objecttreeparser.cpp:2280
-msgid "One key has been revoked."
-msgstr "សោ​មួយ​ត្រូវបាន​ដកហូតវិញ ។"
-
-#: objecttreeparser.cpp:2306
-msgid "<b>Bad</b> signature."
-msgstr "ហត្ថលេខា<b>អាក្រក់</b> ។"
-
-#: objecttreeparser.cpp:2333
-msgid "Invalid signature."
-msgstr "ហត្ថលេខា​មិន​ត្រឹមត្រូវ ។"
-
-#: objecttreeparser.cpp:2335
-msgid "Not enough information to check signature validity."
-msgstr "មិន​មាន​ព័ត៌មាន​គ្រប់គ្រាន់​ដើម្បី​ពិនិត្យ​មើល​សុពលភាព​របស់​ហត្ថលេខា ។"
-
-#: objecttreeparser.cpp:2344
-msgid "Signature is valid."
-msgstr "ហត្ថលេខា​គឺ​ត្រឹមត្រូវ ។"
-
-#: objecttreeparser.cpp:2346
-#, kde-format
-msgid "Signed by <a href=\"mailto:%1\">%2</a>."
-msgstr "បាន​ចុះហត្ថលេខា​ដោយ <a href=\"mailto:%1\">%2</a> ។"
-
-#: objecttreeparser.cpp:2350
-msgid "Unknown signature state"
-msgstr "មិន​ស្គាល់​ស្ថានភាព​ហត្ថលេខា"
-
-#: objecttreeparser.cpp:2354
-msgid "Show Details"
-msgstr "បង្ហាញសេចក្តី​​​លម្អិត"
-
-#: objecttreeparser.cpp:2371
-msgid "No Audit Log available"
-msgstr "គ្មាន​កំណត់​ត្រួតពិនិត្យ"
-
-#: objecttreeparser.cpp:2373
-#, kde-format
-msgid "Error Retrieving Audit Log: %1"
-msgstr "កំហុស​ក្នុង​ការ​ទៅយក​កំណត់​ហេតុ​ការ​ត្រួត​ពិនិត្យ ៖ %1"
-
-#: objecttreeparser.cpp:2383
-msgctxt "The Audit Log is a detailed error log from the gnupg backend"
-msgid "Show Audit Log"
-msgstr "បង្ហាញ​កំណត់ហេតុ​ត្រួតពិនិត្យ"
-
-#: objecttreeparser.cpp:2394
-msgid "Hide Details"
-msgstr "លាក់​សេចក្តី​លម្អិត"
-
-#: objecttreeparser.cpp:2420 objecttreeparser.cpp:2422
-msgid "Encapsulated message"
-msgstr "សារ​ដែល​បាន​ស្រោប"
-
-#: objecttreeparser.cpp:2431
-#, fuzzy
-#| msgid "Please wait while the message is transferred"
-#| msgid_plural "Please wait while the %1 messages are transferred"
-msgid "Please wait while the message is being decrypted..."
-msgstr "សូម​រង់ចាំ​ខណៈពេល​សារ​ចំនួន %1 ​ត្រូវ​បាន​​ផ្ទេរ"
-
-#: objecttreeparser.cpp:2433
-msgid "Encrypted message"
-msgstr "សារ​ដែល​បាន​អ៊ិនគ្រីប"
-
-#: objecttreeparser.cpp:2435
-msgid "Encrypted message (decryption not possible)"
-msgstr "សារ​ដែល​បាន​អ៊ិនគ្រីប (មិនអាច​ធ្វើការ​ឌិគ្រីប​បាន)"
-
-#: objecttreeparser.cpp:2437
-#, kde-format
-msgid "Reason: %1"
-msgstr "ហេតុផល ៖ %1"
-
-#: objecttreeparser.cpp:2447
-#, fuzzy
-#| msgid "Please wait while the message is transferred"
-#| msgid_plural "Please wait while the %1 messages are transferred"
-msgid "Please wait while the signature is being verified..."
-msgstr "សូម​រង់ចាំ​ខណៈពេល​សារ​ចំនួន %1 ​ត្រូវ​បាន​​ផ្ទេរ"
-
-#: objecttreeparser.cpp:2542 objecttreeparser.cpp:2544
-msgid "certificate"
-msgstr "​វិញ្ញាបនបត្រ"
-
-#: objecttreeparser.cpp:2550 objecttreeparser.cpp:2575
-msgctxt "Start of warning message."
-msgid "Warning:"
-msgstr "​ការព្រមាន ៖"
-
-#: objecttreeparser.cpp:2552
-#, kde-format
-msgid "Sender's mail address is not stored in the %1 used for signing."
-msgstr ""
-"អាសយដ្ឋាន​សំបុត្រ​របស់អ្នកផ្ញើ គឺ​​មិនត្រូវបាន​ទុក​នៅក្នុង​ %1 ដែលត្រូវបាន​ប្រើសម្រាប់​ការចុះហត្ថលេខាឡើយ​ ។"
-
-#: objecttreeparser.cpp:2555
-msgid "sender: "
-msgstr "អ្នកផ្ញើ ៖ "
-
-#: objecttreeparser.cpp:2558
-msgid "stored: "
-msgstr "បានទុក ៖ "
-
-#: objecttreeparser.cpp:2577
-#, kde-format
-msgid ""
-"No mail address is stored in the %1 used for signing, so we cannot compare "
-"it to the sender's address %2."
-msgstr ""
-"គ្មាន​​អាសយដ្ឋាន​សំបុត្រ​​​បាន​ទុក​នៅក្នុង %1 ដែលបានប្រើ​សម្រាប់​ការចុះហត្ថលេខាឡើយ ដូច្នេះ​យើង​មិនអាច​"
-"ប្រៀបធៀប​វា​ទៅកាន់​អាសយដ្ឋាន​របស់​អ្នក​ផ្ញើ​ %2 ទេ ។"
-
-#: objecttreeparser.cpp:2601
-#, kde-format
-msgid "Not enough information to check signature. %1"
-msgstr "គ្មាន​ព័ត៌មាន​គ្រប់គ្រាន់​ដើម្បី​ពិនិត្យ​ហត្ថលេខាទេ ។ %1"
-
-#: objecttreeparser.cpp:2618 objecttreeparser.cpp:2696
-msgid "Message was signed with unknown key."
-msgstr "សារត្រូវបាន​ចុះហត្ថលេខា​ដោយ​ប្រើ​សោ​មិនស្គាល់ ។"
-
-#: objecttreeparser.cpp:2620 objecttreeparser.cpp:2734
-#: objecttreeparser.cpp:2778
-#, kde-format
-msgid "Message was signed by %1."
-msgstr "សារត្រូវបាន​ចុះហត្ថលេខា​ដោយ %1 ។"
-
-#: objecttreeparser.cpp:2627 objecttreeparser.cpp:2636
-#: objecttreeparser.cpp:2647
-#, kde-format
-msgid "Message was signed with key %1."
-msgstr "សារ​ត្រូវបាន​ចុះហត្ថលេខា​ដោយប្រើសោ %1 ។"
-
-#: objecttreeparser.cpp:2630
-#, kde-format
-msgid "Message was signed on %1 with key %2."
-msgstr "សារ​ត្រូវបាន​ចុះហត្ថលេខា​នៅលើ %1 ដោយប្រើ​សោ %2 ។"
-
-#: objecttreeparser.cpp:2639
-#, kde-format
-msgid "Message was signed by %3 on %1 with key %2"
-msgstr "សារត្រូវបាន​ចុះហត្ថលេខា​ដោយ %3 នៅលើ %1 ដោយប្រើ​សោ %2"
-
-#: objecttreeparser.cpp:2650
-#, kde-format
-msgid "Message was signed by %2 with key %1."
-msgstr "សារត្រូវបាន​ចុះហត្ថលេខា​ដោយ %2 ដោយប្រើ %1 ។"
-
-#: objecttreeparser.cpp:2688
-#, kde-format
-msgid "Message was signed on %1 with unknown key %2."
-msgstr "សារ​ត្រូវបាន​ចុះហត្ថលេខា​នៅលើ %1 ដោយប្រើ​សោ​មិនស្គាល់ %2 ។"
-
-#: objecttreeparser.cpp:2692
-#, kde-format
-msgid "Message was signed with unknown key %1."
-msgstr "សារ​ត្រូវបាន​ចុះហត្ថលេខា​ដោយ​សោ​មិនស្គាល់ %1 ។"
-
-#: objecttreeparser.cpp:2698
-msgid "The validity of the signature cannot be verified."
-msgstr "មិនអាច​ផ្ទៀងផ្ទាត់​សុពលភាព​របស់​ហត្ថលេខា​បានឡើយ ។"
-
-#: objecttreeparser.cpp:2730 objecttreeparser.cpp:2774
-#, kde-format
-msgid "Message was signed by %2 (Key ID: %1)."
-msgstr "ហត្ថលេខាត្រូវបាន​ចុះហត្ថលេខាដោយ %2 (លេខសម្គាល់​សោ ៖ %1) ។"
-
-#: objecttreeparser.cpp:2740
-msgid "The signature is valid, but the key's validity is unknown."
-msgstr "ហត្ថលេខា​គឺ​ត្រឹមត្រូវ ប៉ុន្តែ​មិនស្គាល់​សុពលភាព​របស់​សោទេ ។"
-
-#: objecttreeparser.cpp:2744
-msgid "The signature is valid and the key is marginally trusted."
-msgstr "ហត្ថលេខា​គឺត្រឹមត្រូវ ហើយ សោ​មិនទាន់បាន​ទុកចិត្ត​គ្របគ្រាន់ទេ ។"
-
-#: objecttreeparser.cpp:2748
-msgid "The signature is valid and the key is fully trusted."
-msgstr "ហត្ថលេខា​គឺ​ត្រឹមត្រូវ​ ហើយ សោ​គឺ​ត្រូវបាន​ទុក​ចិត្ត​យ៉ាងពេញលេញ ។"
-
-#: objecttreeparser.cpp:2752
-msgid "The signature is valid and the key is ultimately trusted."
-msgstr "ហត្ថលេខា​គឺ​ត្រឹមត្រូវ ហើយ​ សោ​គឺ​ត្រូវបាន​ទុក​ចិត្ត​ជាទីបំផុត ។"
-
-#: objecttreeparser.cpp:2756
-msgid "The signature is valid, but the key is untrusted."
-msgstr "ហត្ថលេខា​គឺ​ត្រឹមត្រូវ ប៉ុន្តែ​សារ​មិនត្រូវបាន​ទុក​ចិត្តឡើយ ។"
-
-#: objecttreeparser.cpp:2780
-msgid "Warning: The signature is bad."
-msgstr "ព្រមាន ៖ ហត្ថលេខា​គឺអាក្រក់ ។"
-
-#: objecttreeparser.cpp:2804
-msgid "End of signed message"
-msgstr "ខាងចុង​សារ​ដែលបាន​ចុះហត្ថលេខា"
-
-#: objecttreeparser.cpp:2810
-msgid "End of encrypted message"
-msgstr "ខាងចុង​សារដែលបាន​អ៊ិនគ្រីប"
-
-#: objecttreeparser.cpp:2817
-msgid "End of encapsulated message"
-msgstr "ខាងចុង​សារ​ដែល​បាន​ស្រោប"
-
-#: objecttreeparser.cpp:2989
-msgid "The message could not be decrypted."
-msgstr "សារ​មិនអាច​ត្រូវបាន​ឌិគ្រីប​បានទេ ។"
+#: chiasmuskeyselector.cpp:29
+msgid "Please select the Chiasmus key file to use:"
+msgstr "សូម​ជ្រើស​ឯកសារសោ Chiasmus ដែលត្រូវប្រើ ៖"
+
+#: chiasmuskeyselector.cpp:39
+msgid "Additional arguments for chiasmus:"
+msgstr "អាគុយម៉ង់បន្ថែម​សម្រាប់​ chiasmus ៖"
 
 #. i18n: file: messageviewer.kcfg:28
 #. i18n: ectx: whatsthis, entry (FallbackCharacterEncoding), group (Reader)
@@ -1104,189 +1154,146 @@ msgstr "ត្រឡប់​សំណុំតួអក្សរ ៖"
 msgid "&Override character encoding:"
 msgstr "បដិសេធ​សំណុំតួអក្សរ ៖"
 
-#: urlhandlermanager.cpp:409
-msgid "Turn on HTML rendering for this message."
-msgstr "បើក​ការបង្ហាញ HTML សម្រាប់​សារ​នេះ ។"
-
-#: urlhandlermanager.cpp:411
-msgid "Load external references from the Internet for this message."
-msgstr "ផ្ទុក​សេចក្ដី​យោង​ខាងក្រៅ​ពី អ៊ីនធឺណិត​សម្រាប់សារនេះ ។"
-
-#: urlhandlermanager.cpp:413
-msgid "Work online."
-msgstr "ធ្វើការ​​លើ​បណ្ដាញ"
-
-#: urlhandlermanager.cpp:415
-msgid "Decrypt message."
-msgstr "ឌិគ្រីប​សារ"
-
-#: urlhandlermanager.cpp:417
-msgid "Show signature details."
-msgstr "បង្ហាញ​សេចក្ដី​លម្អិត​ហត្ថលេខា ។"
-
-#: urlhandlermanager.cpp:419
-msgid "Hide signature details."
-msgstr "លាក់​សេចក្ដី​លម្អិត​ហត្ថលេខា"
-
-#: urlhandlermanager.cpp:421
-msgid "Show attachment list."
-msgstr "បង្ហាញ​បញ្ជី​ឯកសារ​ភ្ជាប់ ។"
-
-#: urlhandlermanager.cpp:423
-msgid "Hide attachment list."
-msgstr "លាក់​បញ្ជី​ឯកសារ​ភ្ជាប់ ។"
-
-#: urlhandlermanager.cpp:455
-msgid "Expand all quoted text."
-msgstr "ពង្រីកអត្ថបទ​ដកស្រង់ទាំងអស់ ។"
-
-#: urlhandlermanager.cpp:458
-msgid "Collapse quoted text."
-msgstr "វេញ​អត្ថបទ​ដកស្រង់ ។"
-
-#: urlhandlermanager.cpp:522
-msgid "Could not start certificate manager. Please check your installation."
-msgstr "មិនអាច​ចាប់ផ្ដើម​កម្មវិធី​គ្រប់គ្រង​វិញ្ញាបនបត្រ​បានឡើយ ។ សូម​ពិនិត្យ្រ​មើល​កដំឡើង​របស់អ្នក ។n."
-
-#: urlhandlermanager.cpp:524
-msgid "KMail Error"
-msgstr "កំហុស KMail"
-
-#: urlhandlermanager.cpp:534
-#, kde-format
-msgid "Show certificate 0x%1"
-msgstr "បង្ហាញ​វិញ្ញាបនបត្រ 0x%1"
-
-#: urlhandlermanager.cpp:616
-#, kde-format
-msgid "Attachment: %1"
-msgstr "ឯកសារភ្ជាប់ ៖ %1"
-
-#: urlhandlermanager.cpp:617
-#, kde-format
-msgid "Attachment #%1 (unnamed)"
-msgstr "ឯកសារ​ភ្ជាប់ #%1 (មិនបាន​ដាក់ឈ្មោះ)"
-
-#: urlhandlermanager.cpp:647
-msgid "Show GnuPG Audit Log for this operation"
-msgstr "បង្ហាញ​កំណត់ហេតុ​ត្រួតពិនិត្យ​ GnuPG សម្រាប់ប្រតិបត្តិការ​នេះ"
-
-#: util.cpp:56
-#, kde-format
-msgid ""
-"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
-msgstr "មាន​ឯកសារឈ្មោះ \"%1\" រួច​ហើយ ។ តើ​អ្នក​ពិត​ជា​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ ?"
-
-#: util.cpp:58
-msgid "Overwrite File?"
-msgstr "សរសេរ​ជាន់​លើ​ឯកសារឬ ?"
-
-#: vcardviewer.cpp:39
+#: vcardviewer.cpp:41
 msgid "VCard Viewer"
 msgstr "កម្មវិធីមើល VCard"
 
-#: vcardviewer.cpp:43
+#: vcardviewer.cpp:45
 msgid "&Import"
 msgstr "នាំចូល"
 
-#: vcardviewer.cpp:44
+#: vcardviewer.cpp:46
 msgid "&Next Card"
 msgstr "កាត​បន្ទាប់"
 
-#: vcardviewer.cpp:45
+#: vcardviewer.cpp:47
 msgid "&Previous Card"
 msgstr "កាត​មុន"
 
-#: vcardviewer.cpp:64
+#: vcardviewer.cpp:66
 msgid "Failed to parse vCard."
 msgstr "ការញែក vCard បាន​បរាជ័យ ។"
 
-#: viewer_p.cpp:300
+#: viewer_p.cpp:322
 msgid ""
 "Deleting an attachment might invalidate any digital signature on this "
 "message."
 msgstr "លុប​ឯកសារ​ភ្ជាប់​អាច​គ្មាន​សុពលភាព​លើ​ហត្ថលេខា​ឌីជីថល​ណាមួយ​នៅ​លើ​សារ​នេះ ។"
 
-#: viewer_p.cpp:301 viewer_p.cpp:2003
+#: viewer_p.cpp:323 viewer_p.cpp:421 viewer_p.cpp:1976
 msgid "Delete Attachment"
 msgstr "លុប​ឯកសារ​ភ្ជាប់"
 
-#: viewer_p.cpp:322
+#: viewer_p.cpp:344
 msgid ""
 "Modifying an attachment might invalidate any digital signature on this "
 "message."
 msgstr "កែប្រែ​ឯកសារ​ភ្ជាប់​អាច​គ្មាន​សុពលភាព​លើ​ហត្ថលេខា​ឌីជីថល​ណា​មួយ នៅ​លើ​សារ​នេះ ។"
 
-#: viewer_p.cpp:323 viewer_p.cpp:2006
+#: viewer_p.cpp:345 viewer_p.cpp:415 viewer_p.cpp:1979
 msgid "Edit Attachment"
 msgstr "កែសម្រួល​ឯកសារ​ភ្ជាប់"
 
-#: viewer_p.cpp:323
+#: viewer_p.cpp:345
 msgid "Edit"
 msgstr "កែសម្រួល"
 
-#: viewer_p.cpp:701
+#: viewer_p.cpp:384 viewer_p.cpp:1954
+msgctxt "to open"
+msgid "Open"
+msgstr "បើក"
+
+#: viewer_p.cpp:388 viewer_p.cpp:1956
+msgid "Open With..."
+msgstr "​បើក​ជាមួយ..."
+
+#: viewer_p.cpp:392 viewer_p.cpp:1957
+msgctxt "to view something"
+msgid "View"
+msgstr "មើល"
+
+#: viewer_p.cpp:399
+msgid "Scroll To"
+msgstr ""
+
+#: viewer_p.cpp:404
+msgid "Save As..."
+msgstr "​រក្សាទុកជា..."
+
+#: viewer_p.cpp:408 viewer_p.cpp:1973
+msgid "Copy"
+msgstr "ចម្លង"
+
+#: viewer_p.cpp:428
+msgid "Decrypt With Chiasmus..."
+msgstr "ឌិគ្រីបជាមួយ Chiasmus..."
+
+#: viewer_p.cpp:432 viewer_p.cpp:1984
+msgid "Properties"
+msgstr "​លក្ខណៈ​សម្បត្តិ"
+
+#: viewer_p.cpp:716
 #, kde-format
 msgid ""
 "The part %1 of the message is encrypted. Do you want to keep the encryption "
 "when saving?"
 msgstr "ផ្នែក %1 របស់សារ គឺត្រូវបាន​អ៊ិនគ្រីប ។ តើអ្នកចង់​ទុក​ការអ៊ិនគ្រីប ពេល​រក្សាទុក​ឬ ?"
 
-#: viewer_p.cpp:703 viewer_p.cpp:712
+#: viewer_p.cpp:718 viewer_p.cpp:727
 msgid "KMail Question"
 msgstr "សំណួរ KMail"
 
-#: viewer_p.cpp:703
+#: viewer_p.cpp:718
 msgid "Keep Encryption"
 msgstr "ទុក​ការអ៊ិនគ្រីប"
 
-#: viewer_p.cpp:703 viewer_p.cpp:712
+#: viewer_p.cpp:718 viewer_p.cpp:727
 msgid "Do Not Keep"
 msgstr "កុំទុក"
 
-#: viewer_p.cpp:710
+#: viewer_p.cpp:725
 #, kde-format
 msgid ""
 "The part %1 of the message is signed. Do you want to keep the signature when "
 "saving?"
 msgstr "ផ្នែក %1 របស់សារគឺ​ត្រូវបាន​ចុះហត្ថលេខា ។ តើអ្នក​ចង់​ទុក​ហត្ថលេខា ពេល​រក្សាទុក​ឬ ?"
 
-#: viewer_p.cpp:712
+#: viewer_p.cpp:727
 msgid "Keep Signature"
 msgstr "ទុក​ហត្ថលេខា"
 
-#: viewer_p.cpp:768 viewer_p.cpp:793 viewer_p.cpp:809 viewer_p.cpp:2871
-#: viewer_p.cpp:2899 viewer_p.cpp:2915
+#: viewer_p.cpp:783 viewer_p.cpp:806 viewer_p.cpp:822 viewer_p.cpp:2861
+#: viewer_p.cpp:2887 viewer_p.cpp:2903
 #, kde-format
 msgctxt "1 = file name, 2 = error string"
 msgid "<qt>Could not write to the file<br><filename>%1</filename><br><br>%2"
 msgstr "<qt>មិនអាច​សរសេរ​ទៅកាន់<br><filename>%1</filename><br><br>%2 បានទេ"
 
-#: viewer_p.cpp:771 viewer_p.cpp:796 viewer_p.cpp:812 viewer_p.cpp:2874
-#: viewer_p.cpp:2902 viewer_p.cpp:2918
+#: viewer_p.cpp:786 viewer_p.cpp:809 viewer_p.cpp:825 viewer_p.cpp:2864
+#: viewer_p.cpp:2890 viewer_p.cpp:2906
 msgid "Error saving attachment"
 msgstr "មាន​កំហុស​ក្នុង​ការ​រក្សាទុក​ឯកសារ​ភ្ជាប់"
 
-#: viewer_p.cpp:827
+#: viewer_p.cpp:840
 msgid "Save Attachments To"
 msgstr "រក្សាទុក​ឯកសារ​ភ្ជាប់ទៅ"
 
-#: viewer_p.cpp:841
+#: viewer_p.cpp:854
 msgctxt "filename for an unnamed attachment"
 msgid "attachment.1"
 msgstr "ឯកសារភ្ជាប់ 1"
 
-#: viewer_p.cpp:845
+#: viewer_p.cpp:858
 msgid "Save Attachment"
 msgstr "រក្សាទុក​ឯកសារភ្ជាប់"
 
-#: viewer_p.cpp:868
+#: viewer_p.cpp:881
 #, kde-format
 msgctxt "filename for the %1-th unnamed attachment"
 msgid "attachment.%1"
 msgstr "ឯកសារភ្ជាប់ ។ %1"
 
-#: viewer_p.cpp:908 viewer_p.cpp:917
+#: viewer_p.cpp:921 viewer_p.cpp:930
 #, kde-format
 msgid ""
 "A file named <br><filename>%1</filename><br>already exists.<br><br>Do you "
@@ -1295,39 +1302,39 @@ msgstr ""
 "មាន​ឯកសារ​ឈ្មោះ <br><filename>%1</filename><br> រួចហើយ ។<br><br> តើអ្នកចង់​សរសេរជាន់​"
 "លើវាឬ ?"
 
-#: viewer_p.cpp:910 viewer_p.cpp:919
+#: viewer_p.cpp:923 viewer_p.cpp:932
 msgid "File Already Exists"
 msgstr "​មាន​ឯកសារ​រួច​ហើយ"
 
-#: viewer_p.cpp:910 viewer_p.cpp:919
+#: viewer_p.cpp:923 viewer_p.cpp:932
 msgid "&Overwrite"
 msgstr "សរសេរ​ជាន់លើ"
 
-#: viewer_p.cpp:920
+#: viewer_p.cpp:933
 msgid "Overwrite &All"
 msgstr "សរសេរ​ជាន់​លើ​ទាំងអស់"
 
-#: viewer_p.cpp:1070
+#: viewer_p.cpp:1061
 #, fuzzy
 #| msgctxt "type of folder storage"
 #| msgid "Maildir"
 msgid "Mailreader"
 msgstr "Maildir"
 
-#: viewer_p.cpp:1072
+#: viewer_p.cpp:1063
 msgid "The email client for the K Desktop Environment."
 msgstr "កម្មវិធី​ផ្ញើ​អ៊ីមែល សម្រាប់​បរិស្ថាន​ផ្ទៃតុ K ។"
 
-#: viewer_p.cpp:1131
+#: viewer_p.cpp:1129
 msgid "( body part )"
 msgstr "( ផ្នែក​តួ )"
 
-#: viewer_p.cpp:1620 viewer_p.cpp:1655 viewer_p.cpp:1675
+#: viewer_p.cpp:1587 viewer_p.cpp:1622 viewer_p.cpp:1642
 #, kde-format
 msgid "View Attachment: %1"
 msgstr "មើល​ឯកសារ​ភ្ជាប់ ៖ %1"
 
-#: viewer_p.cpp:1667
+#: viewer_p.cpp:1634
 #, kde-format
 msgid ""
 "[KMail: Attachment contains binary data. Trying to show first character.]"
@@ -1335,208 +1342,341 @@ msgid_plural ""
 "[KMail: Attachment contains binary data. Trying to show first %1 characters.]"
 msgstr[0] "[KMail ៖ ឯកសារ​ភ្ជាប់​មាន​ទិន្នន័យ​គោលពីរ ។ ព្យាយាម​បង្ហាញ​តួអក្សរ %1 ​ដំបូង ។]"
 
-#: viewer_p.cpp:1794
+#: viewer_p.cpp:1756
 msgctxt "View->"
 msgid "&Headers"
 msgstr "បឋមកថា"
 
-#: viewer_p.cpp:1796
+#: viewer_p.cpp:1758
 msgid "Choose display style of message headers"
 msgstr "ជ្រើស​រចនាប័ទ្ម​បង្ហាញ​នៃ​បឋមកថា​របស់សារ"
 
-#: viewer_p.cpp:1802
+#: viewer_p.cpp:1764
 msgctxt "View->headers->"
 msgid "&Enterprise Headers"
 msgstr "បឋមកថា​​សហគ្រាស"
 
-#: viewer_p.cpp:1805
+#: viewer_p.cpp:1767
 msgid "Show the list of headers in Enterprise style"
 msgstr "បង្ហាញ​បញ្ជី​បឋមកថា​នៅ​ក្នុង​រចនាប័ទ្ម​សហគ្រាស"
 
-#: viewer_p.cpp:1809
+#: viewer_p.cpp:1771
 msgctxt "View->headers->"
 msgid "&Fancy Headers"
 msgstr "បឋមកថា​ដែល​ល្អ"
 
-#: viewer_p.cpp:1812
+#: viewer_p.cpp:1774
 msgid "Show the list of headers in a fancy format"
 msgstr "បង្ហាញ​បញ្ជី​នៃ​បឋមកថា​​នៅក្នុង​ទ្រង់ទ្រាយ​ដែល​ល្អ"
 
-#: viewer_p.cpp:1816
+#: viewer_p.cpp:1778
 msgctxt "View->headers->"
 msgid "&Brief Headers"
 msgstr "បឋមកថា​សង្ខេប"
 
-#: viewer_p.cpp:1819
+#: viewer_p.cpp:1781
 msgid "Show brief list of message headers"
 msgstr "បង្ហាញ​បញ្ជី​សង្ខេប​នៃ​បឋមកថា​សារ"
 
-#: viewer_p.cpp:1823
+#: viewer_p.cpp:1785
 msgctxt "View->headers->"
 msgid "&Standard Headers"
 msgstr "បឋមកថា​ខ្នាត​គំរូ"
 
-#: viewer_p.cpp:1826
+#: viewer_p.cpp:1788
 msgid "Show standard list of message headers"
 msgstr "បង្ហាញ​បញ្ជី​​ខ្នាត​គំរូ​នៃ​បឋមកថា​សារ"
 
-#: viewer_p.cpp:1830
+#: viewer_p.cpp:1792
 msgctxt "View->headers->"
 msgid "&Long Headers"
 msgstr "បឋមកថា​វែង"
 
-#: viewer_p.cpp:1833
+#: viewer_p.cpp:1795
 msgid "Show long list of message headers"
 msgstr "បង្ហាញ​បញ្ជី​ដែល​វែង​នៃ​បឋមកថា​សារ"
 
-#: viewer_p.cpp:1837
+#: viewer_p.cpp:1799
 msgctxt "View->headers->"
 msgid "&All Headers"
 msgstr "បឋមកថា​ទាំងអស់"
 
-#: viewer_p.cpp:1840
+#: viewer_p.cpp:1802
 msgid "Show all message headers"
 msgstr "បង្ហាញ​បឋមកថា​សារទាំងអស់"
 
-#: viewer_p.cpp:1845
+#: viewer_p.cpp:1807
 msgctxt "View->"
 msgid "&Attachments"
 msgstr "ឯកសារ​ភ្ជាប់"
 
-#: viewer_p.cpp:1847
+#: viewer_p.cpp:1809
 msgid "Choose display style of attachments"
 msgstr "ជ្រើស​រចនាប័ទ្ម​បង្ហាញ​នៃ​ឯកសារ​ភ្ជាប់"
 
-#: viewer_p.cpp:1852
+#: viewer_p.cpp:1814
 msgctxt "View->attachments->"
 msgid "&As Icons"
 msgstr "ជា​រូបតំណាង"
 
-#: viewer_p.cpp:1855
+#: viewer_p.cpp:1817
 msgid "Show all attachments as icons. Click to see them."
 msgstr "បង្ហាញ​ឯកសារ​ភ្ជាប់ទាំងអស់​ជា​រូបតំណាង ។ ចុច​ដើម្បី​មើល​ពួកវា ។"
 
-#: viewer_p.cpp:1859
+#: viewer_p.cpp:1821
 msgctxt "View->attachments->"
 msgid "&Smart"
 msgstr "ឆ្លាត"
 
-#: viewer_p.cpp:1862
+#: viewer_p.cpp:1824
 msgid "Show attachments as suggested by sender."
 msgstr "បង្ហាញ​ឯកសារ​ភ្ជាប់​ថា​បាន​ផ្ដល់យោបល់​ដោល​អ្នកផ្ញើ ។"
 
-#: viewer_p.cpp:1866
+#: viewer_p.cpp:1828
 msgctxt "View->attachments->"
 msgid "&Inline"
 msgstr "នៅក្នុង​បណ្ដាញ"
 
-#: viewer_p.cpp:1869
+#: viewer_p.cpp:1831
 msgid "Show all attachments inline (if possible)"
 msgstr "បង្ហាញ​ឯកសារភ្ជាប់​ទាំងអស់​នៅក្នុង​បណ្ដាញ (ប្រសិន​បើ​អាច​ធ្វើ​ទៅ​បាន)"
 
-#: viewer_p.cpp:1873
+#: viewer_p.cpp:1835
 msgctxt "View->attachments->"
 msgid "&Hide"
 msgstr "លាក់"
 
-#: viewer_p.cpp:1876
+#: viewer_p.cpp:1838
 msgid "Do not show attachments in the message viewer"
 msgstr "កុំ​បង្ហាញ​ឯកសារ​ភ្ជាប់​នៅក្នុង​កម្មវិធី​មើល​សារ"
 
-#: viewer_p.cpp:1881
+#: viewer_p.cpp:1843
 msgid "&Set Encoding"
 msgstr "កំណត់​អ៊ិនកូឌីង"
 
-#: viewer_p.cpp:1900
+#: viewer_p.cpp:1849 configurewidget.cpp:39 configurewidget.cpp:92
+msgid "Auto"
+msgstr "ស្វ័យប្រវត្តិ"
+
+#: viewer_p.cpp:1862
 msgid "Select All Text"
 msgstr "ជ្រើស​អត្ថបទ​ទាំងអស់"
 
-#: viewer_p.cpp:1907
+#: viewer_p.cpp:1869
 msgid "Copy Link Address"
 msgstr "ចម្លង​អាសយដ្ឋាន​តំណ"
 
-#: viewer_p.cpp:1912
+#: viewer_p.cpp:1874
 msgid "Open URL"
 msgstr "​បើក URL"
 
-#: viewer_p.cpp:1917
+#: viewer_p.cpp:1879
 msgid "Use Fi&xed Font"
 msgstr "ប្រើពុម្ពអក្សរថេរ"
 
-#: viewer_p.cpp:1923
+#: viewer_p.cpp:1885
 #, fuzzy
 #| msgid "Message Structure Viewer"
 msgid "Show Message Structure"
 msgstr "កម្មវិធី​មើល​រចនាសម្ព័ន្ធ​សារ"
 
-#: viewer_p.cpp:1928
+#: viewer_p.cpp:1890
 msgid "&View Source"
 msgstr "មើល​ប្រភព"
 
-#: viewer_p.cpp:1933
+#: viewer_p.cpp:1895
 #, fuzzy
 #| msgid " message"
 #| msgid_plural " messages"
 msgid "&Save message"
 msgstr " សារ"
 
-#: viewer_p.cpp:1941
+#: viewer_p.cpp:1903
 msgid "Scroll Message Up"
 msgstr "រមូរ​សារ​ឡើងលើ"
 
-#: viewer_p.cpp:1947
+#: viewer_p.cpp:1909
 msgid "Scroll Message Down"
 msgstr "រមូរ​សារ​ចុះក្រោម"
 
-#: viewer_p.cpp:1953
+#: viewer_p.cpp:1915
 msgid "Scroll Message Up (More)"
 msgstr "រមូរ​សា​រ​ឡើង​លើ​ (បន្ថែម​ទៀត)"
 
-#: viewer_p.cpp:1959
+#: viewer_p.cpp:1921
 msgid "Scroll Message Down (More)"
 msgstr "រមូរ​សារ​ចុះក្រោម (បន្ថែម​ទៀត)"
 
-#: viewer_p.cpp:1977
+#: viewer_p.cpp:1932
+msgid "Toggle HTML Display Mode"
+msgstr ""
+
+#: viewer_p.cpp:1936
+msgid "Toggle display mode between HTML and plain text"
+msgstr ""
+
+#: viewer_p.cpp:1950
 msgid "Save &As..."
 msgstr "​រក្សាទុកជា..."
 
-#: viewer_p.cpp:1981
-msgctxt "to open"
-msgid "Open"
-msgstr "បើក"
-
-#: viewer_p.cpp:1983
-msgid "Open With..."
-msgstr "​បើក​ជាមួយ..."
-
-#: viewer_p.cpp:1984
-msgctxt "to view something"
-msgid "View"
-msgstr "មើល"
-
-#: viewer_p.cpp:1994
+#: viewer_p.cpp:1967
 msgid "Save All Attachments..."
 msgstr "រក្សាទុក​ឯកសារភ្ជាប់​ទាំងអស់..."
 
-#: viewer_p.cpp:2000
-msgid "Copy"
-msgstr "ចម្លង"
-
-#: viewer_p.cpp:2011
-msgid "Properties"
-msgstr "​លក្ខណៈ​សម្បត្តិ"
-
-#: viewer_p.cpp:2292
+#: viewer_p.cpp:2272
 msgid "Message as Plain Text"
 msgstr "សារ​ជា​អត្ថបទ​ធម្មតា"
 
-#: viewer_p.cpp:2556
+#: viewer_p.cpp:2552
 msgid "Attachments:"
 msgstr "ឯកសារ​ភ្ជាប់ ៖"
 
-#: viewer_p.cpp:2643
+#: viewer_p.cpp:2611 viewer_p.cpp:2641
 msgid "Found no attachments to save."
 msgstr "រក​មិន​ឃើញ​ឯកសារភ្ជាប់ ដើម្បី​រក្សាទុក ។"
+
+#: viewer_p.cpp:2828
+msgid "Address copied to clipboard."
+msgstr "បាន​ចម្លង​អាសយដ្ឋាន​ទៅ​ក្ដារតម្បៀតខ្ទាស់ ។"
+
+#: viewer_p.cpp:2833
+msgid "URL copied to clipboard."
+msgstr "បាន​ចម្លង URL ទៅ​ក្ដារតម្បៀតខ្ទាស់ ។"
+
+#: util.cpp:60
+#, kde-format
+msgid ""
+"A file named \"%1\" already exists. Are you sure you want to overwrite it?"
+msgstr "មាន​ឯកសារឈ្មោះ \"%1\" រួច​ហើយ ។ តើ​អ្នក​ពិត​ជា​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ ?"
+
+#: util.cpp:62
+msgid "Overwrite File?"
+msgstr "សរសេរ​ជាន់​លើ​ឯកសារឬ ?"
+
+#~ msgctxt "message encoding type"
+#~ msgid "None (7-bit text)"
+#~ msgstr "គ្មាន (អត្ថបទ 7-ប៊ីត)"
+
+#~ msgctxt "message encoding type"
+#~ msgid "None (8-bit text)"
+#~ msgstr "គ្មាន (អត្ថបទ 8-ប៊ីត)"
+
+#~ msgctxt "message encoding type"
+#~ msgid "Quoted Printable"
+#~ msgstr "បានដកស្រង់​ពី​ការដែល​អាច​បោះពុម្ព​បាន"
+
+#~ msgctxt "message encoding type"
+#~ msgid "Base 64"
+#~ msgstr "គោល ៦៤"
+
+#~ msgid "Message Part Properties"
+#~ msgstr "លក្ខណៈ​សម្បត្តិ​ផ្នែក​នៃ​សារ"
+
+#~ msgid ""
+#~ "<qt><p>The <em>MIME type</em> of the file:</p><p>normally, you do not "
+#~ "need to touch this setting, since the type of the file is automatically "
+#~ "checked; but, sometimes, %1 may not detect the type correctly -- here is "
+#~ "where you can fix that.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p> <em>ប្រភេទ MIME</em> របស់​ឯកសារ ៖</p><p>ជាធម្មតា ចាប់ពី​ប្រភេទ​នៃ​ឯកសារ​​"
+#~ "ត្រូវបាន​ពិនិត្យ​ដោយស្វ័យប្រវត្តិមក គឺ​អ្នក​មិន​ត្រូវ​ប៉ះពាល់​ការកំណត់​នេះឡើយ ។ ប៉ុន្តែ​ ជួនកាល %1 មិនអាច​រក​"
+#~ "ប្រភេទ​បាន​ត្រឹមត្រូវឡើយ -- ទី​នេះ​ជាកន្លែង​ដែល​អ្នក​អាច​ជួសជុល​វាបាន ។</p></qt>"
+
+#~ msgid ""
+#~ "<qt><p>The size of the part:</p><p>sometimes, %1 will only give an "
+#~ "estimated size here, because calculating the exact size would take too "
+#~ "much time; when this is the case, it will be made visible by adding "
+#~ "\"(est.)\" to the size displayed.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>ទំហំ​របស់​ផ្នែក ៖</p><p>ជួនកាល %1 នឹង​បាន​តែ​ផ្ដល់​នូវ​ទំហំ​ដែល​បាន​វាយតម្លៃនៅទីនេះ ព្រោះ​​"
+#~ "ការគណនា​អំពី​ទំហំ​ពិតប្រាកដ​នឹង​ត្រូវ​ចំណាយ​ពេល​ច្រើន​ណាស់ ។ នៅពេល​ដែល​ដូច​នោះ វា​នឹងត្រូវ​បាន​ធ្វើ​ឲ្យ​មើល​"
+#~ "ឃើញដោយបន្ថែម \"(est.)\" ទៅកាន់​ទំហំ​​ដែលបាន​បង្ហាញ ។</p></qt>"
+
+#~ msgctxt "file name of the attachment."
+#~ msgid "&Name:"
+#~ msgstr "ឈ្មោះ ៖"
+
+#~ msgid ""
+#~ "<qt><p>The file name of the part:</p><p>although this defaults to the "
+#~ "name of the attached file, it does not specify the file to be attached; "
+#~ "rather, it suggests a file name to be used by the recipient's mail agent "
+#~ "when saving the part to disk.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>ឈ្មោះ​ឯកសារ​របស់​ផ្នែក ៖</p><p>ទោះ​បី​ជា​​វា​ធ្វើ​លំនាំដើម​ទៅកាន់​ឈ្មោះ​នៃ​ឯកសារ​ភ្ជាប់ វា​មិន​"
+#~ "បញ្ជាក់​ឯកសារ​​ដែល​ត្រូវ​បាន​ភ្ជាប់​នោះទេ ។ បែបហ្នឹង​ដែរ វា​ផ្ដល់​យោបល់​អំពី​ឈ្មោះ​ឯកសារ​ដែល​ត្រូវបាន​ប្រើ​"
+#~ "ដោយភ្នាក់ងារ​សំបុត្រ​របស់​អ្នក​ទទួល​នៅពេល​ដែល​កំពុង​រក្សាទុក​ផ្នែក​ទៅ​កាន់​ថាស ។</p></qt>"
+
+#~ msgid "&Description:"
+#~ msgstr "​ការ​ពិពណ៌នា ៖"
+
+#~ msgid ""
+#~ "<qt><p>A description of the part:</p><p>this is just an informational "
+#~ "description of the part, much like the Subject is for the whole message; "
+#~ "most mail agents will show this information in their message previews "
+#~ "alongside the attachment's icon.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>សេចក្ដី​ពណ៌នា​អំពី​ផ្នែក ៖</p><p>នេះ​គ្រាន់​តែ​ជា​ព័ត៌មាន​មួយ​នៃ​សេចក្ដី​ពណ៌នា​អំពី​ផ្នែក "
+#~ "ដែលភាគច្រើន​ដូចជា ប្រធាន​បទ គឺ​សម្រាប់​សារ​ទាំងមូល ។ ភ្នាក់ងារ​សំបុត្រ​ភាគ​ច្រើន​បំផុត​នឹង​បង្ហាញ​ព័ត៌មាន​"
+#~ "នេះ​នៅក្នុង​​ការមើល​សារ​របស់​ពួក​គេ​ជាមុន​​តាម​ផ្នែក​រូបតំណាង​របស់​ឯកសារ​ភ្ជាប់ ។</p></qt>"
+
+#~ msgid "&Encoding:"
+#~ msgstr "​អ៊ិនកូឌីង ៖"
+
+#~ msgid ""
+#~ "<qt><p>The transport encoding of this part:</p><p>normally, you do not "
+#~ "need to change this, since %1 will use a decent default encoding, "
+#~ "depending on the MIME type; yet, sometimes, you can significantly reduce "
+#~ "the size of the resulting message, e.g. if a PostScript file does not "
+#~ "contain binary data, but consists of pure text -- in this case, choosing "
+#~ "\"quoted-printable\" over the default \"base64\" will save up to 25% in "
+#~ "resulting message size.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>អ៊ិនកូឌីង​ការដឹកជញ្ជូន​របស់ផ្នែកនេះ ៖</p><p>ជាទូទៅ អ្នក​មិនត្រូវផ្លាស់ប្ដូរ​វាទេ គឺចាប់ពី​ %"
+#~ "1 នឹងប្រើ​សំណុំតួអក្សរលំនាំដើម​ដែលសមរម្យ ដោយផ្អែក​លើប្រភេទ MIME ។ ពេលខ្លះ​ អ្នកនៅអាចកាត់បន្ថយ​"
+#~ "ទំហំ​នៃលទ្ធផល​សារ​ដែលសំខាន់ ឧទាហរណ៍. ប្រសិនបើ​ឯកសារ PostScript មិនមាន​ទិន្នន័យគោលពីរ ប៉ុន្តែ​មាន​"
+#~ "អត្ថបទសុទ្ធ -- ក្នុងករណីនេះ ការជ្រើស \"អត្ថបទដកស្រង់ដែលអាចបោះពុម្ពបាន\" នៅលើ​ \"គោល 64"
+#~ "\" លំនាំដើម នឹងសន្សំបាន 25% នៅក្នុង​ទំហំសារលទ្ធផល ។</p></qt>"
+
+#~ msgid "Suggest &automatic display"
+#~ msgstr "ផ្ដល់​យោបល់​ឲ្យ​បង្ហាញ​ដោយស្វ័យប្រវត្តិ"
+
+#~ msgid ""
+#~ "<qt><p>Check this option if you want to suggest to the recipient the "
+#~ "automatic (inline) display of this part in the message preview, instead "
+#~ "of the default icon view;</p><p>technically, this is carried out by "
+#~ "setting this part's <em>Content-Disposition</em> header field to \"inline"
+#~ "\" instead of the default \"attachment\".</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>ធីក​ជម្រើស​នេះ ប្រសិនបើ​អ្នក​ចង់​ផ្ដល់យោបល់​ទៅ​អ្នកទទួល បង្ហាញ​ (នៅក្នុង​បណ្ដាញ) នៃ​ផ្នែក​នេះ​"
+#~ "នៅក្នុង​ការមើល​សារជាមុន ជំនួសឲ្យទិដ្ឋភ​​រូបតំណាង​លំនាំដើម ។</p><p>តាម​លក្ខណៈបច្ចេកទេស វាត្រូវបាន​"
+#~ "អនុវត្ត​ដោយ​ការកំណត់វាល​បឋមកថា<em>Cការជូន​ដំណឹង​អំពី​មាតិកា</em> ​របស់ផ្នែក​នេះទៅ \"ក្នុងបណ្ដាញ"
+#~ "\" ជំនួស​ឲ្យ​\"ឯកសារភ្ជាប់\"លំនាំដើម ។</p></qt>"
+
+#~ msgid "&Sign this part"
+#~ msgstr "ចុះហត្ថលេខា​នៅផ្នែក​នេះ"
+
+#~ msgid ""
+#~ "<qt><p>Check this option if you want this message part to be signed;</"
+#~ "p><p>the signature will be made with the key that you associated with the "
+#~ "currently-selected identity.</p></qt>"
+#~ msgstr ""
+#~ "<qt><p>ធីក​ជម្រើស​នេះ ប្រសិន​បើ​អ្នក​ចង់​ឲ្យផ្នែក​សារ​នេះ​ត្រូវបាន​ចុះហត្ថលេខា ។</p><p>ហត្ថលេខា "
+#~ "នឹងត្រូវបាន​បង្កើត​ជាមួយ​សោ​ដែល​អ្នក​ភ្ជាប់​ជាមួយ​អត្តសញ្ញាណ​​ដែលបាន​ជ្រើស​បច្ចុប្បន្ន ។</p></qt>"
+
+#~ msgid "Encr&ypt this part"
+#~ msgstr "អ៊ិនគ្រីប​ផ្នែក​នេះ"
+
+#~ msgid ""
+#~ "<qt><p>Check this option if you want this message part to be encrypted;</"
+#~ "p><p>the part will be encrypted for the recipients of this message</p></"
+#~ "qt>"
+#~ msgstr ""
+#~ "<qt><p>ធីក​ជម្រើស​នេះ ប្រសិន​បើអ្នក​ចង់​ឲ្យ​ផ្នែក​សារ​នេះ​ត្រូវបាន​អ៊ិនគ្រីប ។</p><p>ផ្នែក​នឹងត្រូវ​បាន​"
+#~ "អ៊ិនគ្រីប​សម្រាប់​អ្នកទទួល​សារ​នេះ</p></qt>"
+
+#~ msgctxt "%1: a filesize incl. unit (e.g. \"1.3 KB\")"
+#~ msgid "%1 (est.)"
+#~ msgstr "%1 (est.)"
 
 #, fuzzy
 #~| msgid "Name"
@@ -2237,17 +2377,11 @@ msgstr "រក​មិន​ឃើញ​ឯកសារភ្ជាប់ ដ�
 #~ "មិនអាច​សរសេរ​ឯកសារ %1 បានឡើយ​ ៖\n"
 #~ "\"%2\" គឺ​ជា​សេចក្ដីពណ៌នា​លម្អិត​អំពី​កំហុស ។"
 
-#~ msgid "Friend"
-#~ msgstr "មិត្តភក្ដិ"
-
 #~ msgid "Business"
 #~ msgstr "ជំនួញ"
 
 #~ msgid "Later"
 #~ msgstr "ពេលក្រោយ"
-
-#~ msgid "Chiasmus Decryption Key Selection"
-#~ msgstr "ជម្រើស​កូនសោ​​ឌិគ្រីប​ Chiasmus"
 
 #~ msgid ""
 #~ "KWallet is not available. It is strongly recommended to use KWallet for "
@@ -3809,25 +3943,14 @@ msgstr "រក​មិន​ឃើញ​ឯកសារភ្ជាប់ ដ�
 #~ msgid "Next &Unread Message"
 #~ msgstr "សារ​មិន​ទាន់អាន​បន្ទាប់"
 
-#~ msgctxt "@action:inmenu Goto next unread message"
-#~ msgid "Next"
-#~ msgstr "បន្ទាប់"
-
 #~ msgid "Go to the next unread message"
 #~ msgstr "ទៅកាន់​សារ​មិនទាន់អាន​បន្ទាប់"
 
 #~ msgid "&Previous Message"
 #~ msgstr "សារ​មុន"
 
-#~ msgid "Go to the previous message"
-#~ msgstr "ទៅកាន់​សារ​មុន"
-
 #~ msgid "Previous Unread &Message"
 #~ msgstr "សារ​មិនទាន់​អាន​មុន"
-
-#~ msgctxt "@action:inmenu Goto previous unread message."
-#~ msgid "Previous"
-#~ msgstr "មុន"
 
 #~ msgid "Go to the previous unread message"
 #~ msgstr "ទៅកាន់​សារ​មិន​ទាន់អាន​មុន"
@@ -4022,9 +4145,6 @@ msgstr "រក​មិន​ឃើញ​ឯកសារភ្ជាប់ ដ�
 
 #~ msgid "Fonts"
 #~ msgstr "ពុម្ពអក្សរ"
-
-#~ msgid "Colors"
-#~ msgstr "ពណ៌"
 
 #~ msgid "Layout"
 #~ msgstr "ប្លង់"
@@ -5032,10 +5152,6 @@ msgstr "រក​មិន​ឃើញ​ឯកសារភ្ជាប់ ដ�
 #~ msgctxt "MDN type"
 #~ msgid "Dispatched"
 #~ msgstr "បាន​បញ្ជូន"
-
-#~ msgctxt "MDN type"
-#~ msgid "Processed"
-#~ msgstr "បានដំណើរការ"
 
 #~ msgctxt "MDN type"
 #~ msgid "Denied"
@@ -6550,12 +6666,6 @@ msgstr "រក​មិន​ឃើញ​ឯកសារភ្ជាប់ ដ�
 
 #~ msgid "(no custom templates)"
 #~ msgstr "(គ្មាន​ពុម្ព​ផ្ទាល់ខ្លួន)"
-
-#~ msgid "Please select the Chiasmus key file to use:"
-#~ msgstr "សូម​ជ្រើស​ឯកសារសោ Chiasmus ដែលត្រូវប្រើ ៖"
-
-#~ msgid "Additional arguments for chiasmus:"
-#~ msgstr "អាគុយម៉ង់បន្ថែម​សម្រាប់​ chiasmus ៖"
 
 #~ msgctxt "Message->"
 #~ msgid "Universal"
@@ -8315,11 +8425,6 @@ msgstr "រក​មិន​ឃើញ​ឯកសារភ្ជាប់ ដ�
 #~ msgid "&Automatic invitation sending"
 #~ msgstr "ផ្ញើការអញ្ជើញ​ដោយ​ស្វ័យប្រវត្តិ"
 
-#, fuzzy
-#~| msgid "&Options"
-#~ msgid "Options"
-#~ msgstr "ជម្រើស"
-
 #~ msgid "Delete invitation emails after the reply to them has been sent"
 #~ msgstr "លុប​អ៊ីមែល​ការ​អញ្ជើញ បន្ទាប់​ពី​ការ​ឆ្លើយតប​ទៅកាន់​ពួកគេ​ត្រូវ​បាន​ផ្ញើ"
 
@@ -9764,24 +9869,12 @@ msgstr "រក​មិន​ឃើញ​ឯកសារភ្ជាប់ ដ�
 #~ msgid "Could not send MDN."
 #~ msgstr "មិន​អាច​ផ្ញើ​ MDN បាន​ឡើយ ។"
 
-#~ msgid "Save As..."
-#~ msgstr "​រក្សាទុកជា..."
-
-#~ msgid "Decrypt With Chiasmus..."
-#~ msgstr "ឌិគ្រីបជាមួយ Chiasmus..."
-
 #~ msgid "Please wait"
 #~ msgstr "សូមរង់ចាំ"
 
 #~ msgid "Please wait while the message is transferred"
 #~ msgid_plural "Please wait while the %1 messages are transferred"
 #~ msgstr[0] "សូម​រង់ចាំ​ខណៈពេល​សារ​ចំនួន %1 ​ត្រូវ​បាន​​ផ្ទេរ"
-
-#~ msgid "Address copied to clipboard."
-#~ msgstr "បាន​ចម្លង​អាសយដ្ឋាន​ទៅ​ក្ដារតម្បៀតខ្ទាស់ ។"
-
-#~ msgid "URL copied to clipboard."
-#~ msgstr "បាន​ចម្លង URL ទៅ​ក្ដារតម្បៀតខ្ទាស់ ។"
 
 #~ msgctxt "@info"
 #~ msgid "File <filename>%1</filename> exists.<nl/>Do you want to replace it?"

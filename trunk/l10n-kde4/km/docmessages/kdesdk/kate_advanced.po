@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_advanced\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-08 18:23+0000\n"
+"POT-Creation-Date: 2010-02-05 15:22+0000\n"
 "PO-Revision-Date: 2008-08-20 14:38+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -3735,6 +3735,8 @@ msgid ""
 "int document.toVirtualColumn(<parameter>int <replaceable>line</replaceable></"
 "parameter>, <parameter>int <replaceable>column</replaceable></parameter>);\n"
 "int document.toVirtualColumn(<parameter>Cursor <replaceable>cursor</"
+"replaceable></parameter>);\n"
+"Cursor document.toVirtualCursor(<parameter>Cursor <replaceable>cursor</"
 "replaceable></parameter>);"
 msgstr ""
 "document.attribute( <parameter><replaceable>line</replaceable> </parameter>, "
@@ -3745,11 +3747,11 @@ msgstr ""
 #, no-c-format
 msgid ""
 "Converts the given <quote>real</quote> cursor position to a virtual cursor "
-"position."
+"position, either returning an int or a Cursor object."
 msgstr ""
 
 #. Tag: synopsis
-#: advanced.docbook:1721
+#: advanced.docbook:1722
 #, fuzzy, no-c-format
 #| msgid ""
 #| "document.attribute( <parameter><replaceable>line</replaceable> </"
@@ -3760,21 +3762,23 @@ msgid ""
 "replaceable></parameter>, <parameter>int <replaceable>virtualColumn</"
 "replaceable></parameter>);\n"
 "int document.fromVirtualColumn(<parameter>Cursor <replaceable>virtualCursor</"
-"replaceable></parameter>);"
+"replaceable></parameter>);\n"
+"Cursor document.fromVirtualCursor(<parameter>Cursor "
+"<replaceable>virtualCursor</replaceable></parameter>);"
 msgstr ""
 "document.attribute( <parameter><replaceable>line</replaceable> </parameter>, "
 "<parameter><replaceable>column</replaceable></parameter> ); [function]"
 
 #. Tag: para
-#: advanced.docbook:1722
+#: advanced.docbook:1723
 #, no-c-format
 msgid ""
 "Converts the given virtual cursor position to a <quote>real</quote> cursor "
-"position."
+"position, either returning an int or a Cursor object."
 msgstr ""
 
 #. Tag: synopsis
-#: advanced.docbook:1729
+#: advanced.docbook:1731
 #, no-c-format
 msgid ""
 "Cursor document.anchor(<parameter>int <replaceable>line</replaceable></"
@@ -3786,7 +3790,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: advanced.docbook:1730
+#: advanced.docbook:1732
 #, no-c-format
 msgid ""
 "Searches backward for the given character starting from the given cursor. As "
@@ -3796,7 +3800,7 @@ msgid ""
 msgstr ""
 
 #. Tag: synopsis
-#: advanced.docbook:1740
+#: advanced.docbook:1742
 #, no-c-format
 msgid ""
 "Cursor document.rfind(<parameter>int <replaceable>line</replaceable></"
@@ -3809,7 +3813,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: advanced.docbook:1741
+#: advanced.docbook:1743
 #, no-c-format
 msgid ""
 "Find backward the given text with the appropriate <replaceable>attribute</"
@@ -3819,7 +3823,7 @@ msgid ""
 msgstr ""
 
 #. Tag: synopsis
-#: advanced.docbook:1750
+#: advanced.docbook:1752
 #, fuzzy, no-c-format
 #| msgid ""
 #| "document.attribute( <parameter><replaceable>line</replaceable> </"
@@ -3835,13 +3839,13 @@ msgstr ""
 "<parameter><replaceable>column</replaceable></parameter> ); [function]"
 
 #. Tag: para
-#: advanced.docbook:1751
+#: advanced.docbook:1753
 #, no-c-format
 msgid "Returns the default style used at the given cursor position."
 msgstr ""
 
 #. Tag: synopsis
-#: advanced.docbook:1758
+#: advanced.docbook:1760
 #, fuzzy, no-c-format
 #| msgid ""
 #| "document.attribute( <parameter><replaceable>line</replaceable> </"
@@ -3857,7 +3861,7 @@ msgstr ""
 "<parameter><replaceable>column</replaceable></parameter> ); [function]"
 
 #. Tag: para
-#: advanced.docbook:1759
+#: advanced.docbook:1761
 #, no-c-format
 msgid ""
 "Returns <literal>true</literal>, if the attribute at the given cursor "
@@ -3867,7 +3871,7 @@ msgid ""
 msgstr ""
 
 #. Tag: synopsis
-#: advanced.docbook:1770
+#: advanced.docbook:1772
 #, fuzzy, no-c-format
 #| msgid ""
 #| "document.attribute( <parameter><replaceable>line</replaceable> </"
@@ -3883,7 +3887,7 @@ msgstr ""
 "<parameter><replaceable>column</replaceable></parameter> ); [function]"
 
 #. Tag: para
-#: advanced.docbook:1771
+#: advanced.docbook:1773
 #, no-c-format
 msgid ""
 "Returns <literal>true</literal>, if the attribute of the character at the "
@@ -3892,7 +3896,7 @@ msgid ""
 msgstr ""
 
 #. Tag: synopsis
-#: advanced.docbook:1779
+#: advanced.docbook:1781
 #, fuzzy, no-c-format
 #| msgid ""
 #| "document.attribute( <parameter><replaceable>line</replaceable> </"
@@ -3908,7 +3912,7 @@ msgstr ""
 "<parameter><replaceable>column</replaceable></parameter> ); [function]"
 
 #. Tag: para
-#: advanced.docbook:1780
+#: advanced.docbook:1782
 #, no-c-format
 msgid ""
 "Returns <literal>true</literal>, if the attribute of the character at the "
@@ -3917,7 +3921,7 @@ msgid ""
 msgstr ""
 
 #. Tag: synopsis
-#: advanced.docbook:1788
+#: advanced.docbook:1790
 #, fuzzy, no-c-format
 #| msgid ""
 #| "document.attribute( <parameter><replaceable>line</replaceable> </"
@@ -3933,7 +3937,7 @@ msgstr ""
 "<parameter><replaceable>column</replaceable></parameter> ); [function]"
 
 #. Tag: para
-#: advanced.docbook:1789
+#: advanced.docbook:1791
 #, no-c-format
 msgid ""
 "Returns <literal>true</literal>, if the attribute of the character at the "
@@ -3942,7 +3946,7 @@ msgid ""
 msgstr ""
 
 #. Tag: synopsis
-#: advanced.docbook:1797
+#: advanced.docbook:1799
 #, fuzzy, no-c-format
 #| msgid ""
 #| "document.attribute( <parameter><replaceable>line</replaceable> </"
@@ -3958,7 +3962,7 @@ msgstr ""
 "<parameter><replaceable>column</replaceable></parameter> ); [function]"
 
 #. Tag: para
-#: advanced.docbook:1798
+#: advanced.docbook:1800
 #, no-c-format
 msgid ""
 "Returns <literal>true</literal>, if the attribute of the character at the "
@@ -3967,7 +3971,7 @@ msgid ""
 msgstr ""
 
 #. Tag: synopsis
-#: advanced.docbook:1806
+#: advanced.docbook:1808
 #, fuzzy, no-c-format
 #| msgid ""
 #| "document.attribute( <parameter><replaceable>line</replaceable> </"
@@ -3983,7 +3987,7 @@ msgstr ""
 "<parameter><replaceable>column</replaceable></parameter> ); [function]"
 
 #. Tag: para
-#: advanced.docbook:1807
+#: advanced.docbook:1809
 #, no-c-format
 msgid ""
 "Returns <literal>true</literal>, if the attribute of the character at the "

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nepomuk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-01-29 06:07+0100\n"
+"POT-Creation-Date: 2010-02-05 02:25+0100\n"
 "PO-Revision-Date: 2009-05-06 10:23+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -138,7 +138,15 @@ msgstr ""
 msgid "Delete Resource"
 msgstr ""
 
-#: kioslaves/nepomuk/kio_nepomuk.cpp:614
+#: kioslaves/nepomuk/kio_nepomuk.cpp:411
+#, kde-format
+msgctxt ""
+"%1 is a filename of a file on a removable device, %2 is the name of the "
+"removable medium which often is something like 'X GiB Removable Media."
+msgid "%1 (on unmounted medium <resource>%2</resource>)"
+msgstr ""
+
+#: kioslaves/nepomuk/kio_nepomuk.cpp:631
 #: kioslaves/search/kio_nepomuksearch.cpp:125
 msgid ""
 "The Nepomuk system is not activated. Unable to answer queries without it."
@@ -439,23 +447,31 @@ msgstr ""
 msgid "Parsing of file %1 failed (%2)"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ញែក​ឯកសារ %1 (%2)"
 
-#: services/strigi/strigiservice.cpp:169
+#: services/strigi/strigiservice.cpp:178
 msgctxt "@info:status"
 msgid "File indexer is suspended"
 msgstr "កម្មវិធី​បង្កើត​លិបិក្រម​ឯកសារ​ត្រូវ​បាន​ផ្អាក"
 
-#: services/strigi/strigiservice.cpp:171
+#: services/strigi/strigiservice.cpp:182
+#, fuzzy
+#| msgctxt "@info:status"
+#| msgid "Strigi is currently indexing files in folder %1"
+msgctxt "@info:status"
+msgid "Strigi is currently indexing files"
+msgstr "Strigi បច្ចុប្បន្ន​កំពុង​បង្កើត​ឯកសារ​នៅ​ក្នុង​ថត %1"
+
+#: services/strigi/strigiservice.cpp:184
 #, kde-format
 msgctxt "@info:status"
 msgid "Strigi is currently indexing files in folder %1"
 msgstr "Strigi បច្ចុប្បន្ន​កំពុង​បង្កើត​ឯកសារ​នៅ​ក្នុង​ថត %1"
 
-#: services/strigi/strigiservice.cpp:173
+#: services/strigi/strigiservice.cpp:187
 msgctxt "@info:status"
 msgid "Checking file system for new files"
 msgstr "ពិនិត្យ​មើល​ប្រព័ន្ធ​ឯកសារ​សម្រាប់​ឯកសារ​ថ្មី"
 
-#: services/strigi/strigiservice.cpp:175
+#: services/strigi/strigiservice.cpp:190
 msgctxt "@info:status"
 msgid "File indexer is idle"
 msgstr "កម្មវិធី​បង្កើត​លិបិក្រម​ឯកសារ​គឺ​ទំនេរ"
@@ -529,7 +545,7 @@ msgstr "ទំហំ​ថាស​មូលដ្ឋាន​កំពុង​
 #, fuzzy, kde-format
 #| msgctxt "@info %1 is a duration formatted using KLocale::formatDuration"
 #| msgid "Initial Desktop Search file indexing finished in %1"
-msgctxt "@info %1 is a duration formatted using KLocale::formatDuration"
+msgctxt "@info %1 is a duration formatted using KLocale::prettyFormatDuration"
 msgid "Initial indexing of files for fast searching finished in %1"
 msgstr "បាន​បញ្ចប់​ការ​បង្កើត​លិបិក្រម​ឯកសារ Strigi  ។ ពេលវេលា​បានកន្លង ៖ %1"
 
