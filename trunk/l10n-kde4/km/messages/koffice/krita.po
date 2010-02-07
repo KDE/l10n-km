@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-06 01:57+0100\n"
+"POT-Creation-Date: 2010-02-07 07:49+0100\n"
 "PO-Revision-Date: 2009-06-22 08:49+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -3128,7 +3128,7 @@ msgstr "ច្រឹប"
 
 #. i18n: file: plugins/tools/tool_star/wdg_tool_star.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolStar)
-#: rc.cpp:848 plugins/tools/tool_star/kis_tool_star.cc:121
+#: rc.cpp:848 plugins/tools/tool_star/kis_tool_star.cc:134
 msgid "Star"
 msgstr "ផ្កាយ​"
 
@@ -3392,8 +3392,8 @@ msgstr "រូបរាង​ ៖"
 #. i18n: file: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: rc.cpp:956 rc.cpp:1242 rc.cpp:1566
-#: image/recorder/kis_recorded_ellipse_paint_action.cpp:52
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:67
+#: image/recorder/kis_recorded_shape_paint_action.cpp:54
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:68
 msgid "Ellipse"
 msgstr "ពង​ក្រពើ"
 
@@ -3414,7 +3414,8 @@ msgstr "ពង​ក្រពើ"
 #. i18n: file: plugins/filters/blur/wdgblur.ui:130
 #. i18n: ectx: property (text), item, widget (KComboBox, cbShape)
 #: rc.cpp:959 rc.cpp:1245 rc.cpp:1569 rc.cpp:1650
-#: plugins/tools/defaulttools/kis_tool_rectangle.cc:70
+#: image/recorder/kis_recorded_shape_paint_action.cpp:56
+#: plugins/tools/defaulttools/kis_tool_rectangle.cc:80
 msgid "Rectangle"
 msgstr "ចតុកោណកែង"
 
@@ -3468,6 +3469,7 @@ msgstr "ទំហំ​ចៃដន្យ"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: rc.cpp:983 rc.cpp:1269
 #: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:27
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
 msgid "Rotation"
 msgstr "​បង្វិល"
 
@@ -4242,7 +4244,7 @@ msgstr "បង្កើន​"
 
 #. i18n: file: plugins/paintops/libpaintop/wdgcustombrush.ui:62
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: rc.cpp:1374 plugins/paintops/libpaintop/kis_dynamic_sensor.h:39
+#: rc.cpp:1374 plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
 msgid "Pressure"
 msgstr "សម្ពាធ"
 
@@ -4580,7 +4582,7 @@ msgstr "ចំនួន​បន្ទាត់"
 
 #. i18n: file: plugins/paintops/dynadraw/wdgdynaoptions.ui:271
 #. i18n: ectx: property (text), widget (QRadioButton, polygonRBox)
-#: rc.cpp:1557 plugins/tools/tool_polygon/kis_tool_polygon.cc:78
+#: rc.cpp:1557 plugins/tools/tool_polygon/kis_tool_polygon.cc:77
 msgid "Polygon"
 msgstr "ពហុកោណ"
 
@@ -6560,7 +6562,7 @@ msgstr "មើល ៖"
 
 #. i18n: file: plugins/extensions/shearimage/wdg_shearimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: rc.cpp:2657 image/kis_image.cc:568
+#: rc.cpp:2657 image/kis_image.cc:566
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:90
 msgid "Shear Image"
@@ -6916,7 +6918,7 @@ msgstr "ដោះ​ជម្រើស"
 
 #. i18n: file: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
-#: rc.cpp:2910 image/kis_image.cc:516
+#: rc.cpp:2910 image/kis_image.cc:514
 #: plugins/extensions/rotateimage/rotateimage.cc:117
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
 msgid "Rotate Image"
@@ -8931,7 +8933,7 @@ msgstr "កាត់​ស្រទាប់​"
 msgid "The image contains hidden layers that will be lost."
 msgstr "រូបភាព​មាន​ស្រទាប់​ដែល​លាក់​ ដែល​នឹង​ត្រូវ​បាត់បង់ ។"
 
-#: ui/kis_layer_manager.cc:795 image/kis_image.cc:765
+#: ui/kis_layer_manager.cc:795 image/kis_image.cc:768
 msgid "Flatten Image"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
@@ -9076,8 +9078,8 @@ msgstr "មើល​ឃើញ"
 msgid "Locked"
 msgstr "ចាក់សោ"
 
-#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:146
-#: image/kis_paint_layer.cc:153
+#: ui/kis_node_model.cpp:297 image/kis_paint_layer.cc:139
+#: image/kis_paint_layer.cc:146
 #, fuzzy
 #| msgid "Locked"
 msgid "Alpha Locked"
@@ -9395,12 +9397,12 @@ msgstr ""
 msgid "Matthew Woehlke"
 msgstr ""
 
-#: image/kis_adjustment_layer.cc:88
+#: image/kis_adjustment_layer.cc:124
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:51
 msgid "Filter"
 msgstr "តម្រង"
 
-#: image/kis_transformation_mask.cpp:110
+#: image/kis_transformation_mask.cpp:111
 msgid "Transformation Mask Settings"
 msgstr "ការ​កំណត់​របាំង​ប្លែង"
 
@@ -9436,7 +9438,7 @@ msgstr "Lanczos3"
 msgid "Mitchell"
 msgstr "Mitchell"
 
-#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:394
+#: image/commands/kis_image_resize_command.cpp:38 image/kis_image.cc:392
 msgid "Resize Image"
 msgstr "ប្តូរ​ទំហំ​រូបភាព"
 
@@ -9461,7 +9463,7 @@ msgstr "ភាព​ផ្លាស់ប្ដូរ​របស់​លក្
 msgid "Raise"
 msgstr "លើកឡើង"
 
-#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:603
+#: image/commands/kis_image_convert_type_command.cpp:38 image/kis_image.cc:601
 msgid "Convert Image Type"
 msgstr "បម្លែង ប្រភេទ​រូបភាព"
 
@@ -9548,32 +9550,32 @@ msgstr "លំនាំដើម"
 msgid "Rotate Node"
 msgstr "បង្វិល​ថ្នាំង"
 
-#: image/kis_image.cc:285
+#: image/kis_image.cc:283
 msgid "background"
 msgstr "ផ្ទៃ​ខាងក្រោយ​"
 
-#: image/kis_image.cc:288
+#: image/kis_image.cc:286
 #, kde-format
 msgid "Layer %1"
 msgstr "ស្រទាប់ %1"
 
-#: image/kis_image.cc:392
+#: image/kis_image.cc:390
 msgid "Crop Image"
 msgstr "​ច្រឹប​រូបភាព"
 
-#: image/kis_image.cc:426
+#: image/kis_image.cc:424
 msgid "Size Canvas"
 msgstr "ខ្សែ​កោង​ទំហំ"
 
-#: image/kis_image.cc:475
+#: image/kis_image.cc:473
 msgid "Scale Image"
 msgstr "ធ្វើ​​មាត្រដ្ឋាន រូបភាព"
 
-#: image/kis_image.cc:801
+#: image/kis_image.cc:798
 msgid "Merge with Layer Below"
 msgstr "បញ្ចូល​ស្រទាប់​ខាងក្រោម​ចូលគ្នា "
 
-#: image/kis_image.cc:841
+#: image/kis_image.cc:835
 msgid "Flatten Layer"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
@@ -9581,23 +9583,16 @@ msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 msgid "Last used"
 msgstr "បាន​ប្រើ​ចុងក្រោយ"
 
+#: image/recorder/kis_recorded_path_paint_action.cpp:62
+#: plugins/tools/defaulttools/kis_tool_path.cc:124
+msgid "Path"
+msgstr "ផ្លូវ"
+
 #: image/recorder/kis_macro.cc:96
 msgid "Play macro"
 msgstr "ចាក់​ម៉ាក្រូ​"
 
-#: image/recorder/kis_recorded_polyline_paint_action.cpp:50
-#, fuzzy
-#| msgid "Polyline"
-msgid "Poly line"
-msgstr "ពហុ​បន្ទាត់​"
-
-#: image/recorder/kis_recorded_bezier_curve_paint_action.cpp:56
-#, fuzzy
-#| msgid "Bezier Curve"
-msgid "Bezier curve"
-msgstr "ខ្សែ​កោង Bezier"
-
-#: image/kis_clone_layer.cpp:199
+#: image/kis_clone_layer.cpp:192
 msgid "Copy From"
 msgstr "ចម្លង​ពី"
 
@@ -9645,51 +9640,35 @@ msgstr "ច្រឹប​រូបភាព​ទៅ​តាម​ផ្ទៃ
 msgid "Dyna"
 msgstr "Dyna"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:223
-#: plugins/tools/defaulttools/kis_tool_brush.cc:142
-msgctxt "smooth out the curves while drawing"
-msgid "Smoothness"
-msgstr "ភាព​រលោង"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:236
-#: plugins/tools/defaulttools/kis_tool_brush.cc:165
-msgid "Assistant:"
-msgstr "អ្នក​ជំនួយ​ការ ៖"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:238
-#: plugins/tools/defaulttools/kis_tool_brush.cc:167
-msgid "Magnetism:"
-msgstr "មេ​ដែក ៖"
-
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:248
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:211
 msgid "Initial width:"
 msgstr "ទទឹង​ដំបូង ៖"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:249
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:212
 msgid "Mass:"
 msgstr "របាំង ៖"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:250
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:213
 msgid "Drag:"
 msgstr "អូស ៖"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:251
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:214
 msgid "X angle:"
 msgstr "មុំ X ៖"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:252
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:215
 msgid "Y angle:"
 msgstr "​មុំ Y ៖"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:253
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:216
 msgid "Width range:"
 msgstr "ជួរ​ទទឹង ៖​"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:255
+#: plugins/tools/tool_dyna/kis_tool_dyna.cpp:218
 msgid "Fixed angle:"
 msgstr "មុំ​ថេរ ៖"
 
-#: plugins/tools/tool_dyna/kis_tool_dyna.h:170
+#: plugins/tools/tool_dyna/kis_tool_dyna.h:164
 msgid "Paint with brushes using dynamic movements"
 msgstr "គូរ​ដោយ​ប្រើជក់ ដោយ​ប្រើ​កា​រផ្លាស់ទីអថេរ"
 
@@ -9731,11 +9710,24 @@ msgstr "ជ្រើស​ពី​ពី​រូបភាព ឬ​ស្រ�
 msgid "ms"
 msgstr "មិល្លីវិនាទី"
 
+#: plugins/tools/defaulttools/kis_tool_brush.cc:142
+msgctxt "smooth out the curves while drawing"
+msgid "Smoothness"
+msgstr "ភាព​រលោង"
+
 #: plugins/tools/defaulttools/kis_tool_brush.cc:147
 msgid "Rate:"
 msgstr "អត្រា ៖​"
 
-#: plugins/tools/defaulttools/kis_tool_line.cc:155
+#: plugins/tools/defaulttools/kis_tool_brush.cc:165
+msgid "Assistant:"
+msgstr "អ្នក​ជំនួយ​ការ ៖"
+
+#: plugins/tools/defaulttools/kis_tool_brush.cc:167
+msgid "Magnetism:"
+msgstr "មេ​ដែក ៖"
+
+#: plugins/tools/defaulttools/kis_tool_line.cc:156
 msgctxt "a straight drawn line"
 msgid "Line"
 msgstr "បន្ទាត់"
@@ -9805,10 +9797,6 @@ msgstr "នៅ​ពេល​បាន​គូស​ធីក កុំ​ម�
 #: plugins/tools/defaulttools/kis_tool_ellipse.h:55
 msgid "Draw an ellipse"
 msgstr "គូស​រង្វង់​ពង​ក្រពើ"
-
-#: plugins/tools/defaulttools/kis_tool_path.cc:72
-msgid "Path"
-msgstr "ផ្លូវ"
 
 #: plugins/tools/defaulttools/kis_tool_gradient.h:124
 msgid "Draw a gradient."
@@ -9909,7 +9897,7 @@ msgstr "ការ​ប្លែង​យថាទស្សន៍"
 msgid "Draw a polygon. Shift-mouseclick ends the polygon."
 msgstr "គូស​ពហុកោណ ។ ប្ដូរ (Shift) និង​ចុច​កណ្ដុរ​បញ្ចប់​ពហុកោណ ។"
 
-#: plugins/tools/tool_polyline/kis_tool_polyline.cc:66
+#: plugins/tools/tool_polyline/kis_tool_polyline.cc:65
 msgid "Polyline"
 msgstr "ពហុ​បន្ទាត់​"
 
@@ -10196,11 +10184,11 @@ msgstr "ពេលវេលា"
 msgid "Drawing angle"
 msgstr "គូស​មុំ"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
 msgid "X-Tilt"
 msgstr "X-Tilt"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:41
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:42
 msgid "Y-Tilt"
 msgstr "Y-Tilt"
 
@@ -11370,23 +11358,23 @@ msgstr "ការ​ដំឡើង​ជោគជ័យ​ហើយ អ្ន�
 msgid "Success"
 msgstr "ជោគជ័យ"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:60
+#: plugins/extensions/bigbrother/bigbrother.cc:81
 msgid "Open and play..."
 msgstr "បើក និង​ចាក់..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:64
+#: plugins/extensions/bigbrother/bigbrother.cc:85
 msgid "Open and edit..."
 msgstr "បើក​ ហើយ​កែសម្រួល..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:68
+#: plugins/extensions/bigbrother/bigbrother.cc:89
 msgid "Save all actions"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ការ​ជ្រើស"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:72
+#: plugins/extensions/bigbrother/bigbrother.cc:93
 msgid "Start recording macro"
 msgstr "ចាប់ផ្ដើម​ថត​ម៉ាក្រូ"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:76
+#: plugins/extensions/bigbrother/bigbrother.cc:97
 msgid "Stop recording actions"
 msgstr "បញ្ឈប់​សកម្មភាព​ថត"
 
@@ -11915,6 +11903,16 @@ msgstr "ទៀតទាត់"
 #: plugins/assistants/RulerAssistant/kis_ruler_assistant_tool.h:68
 msgid "Ruler assistant editor tool"
 msgstr "ឧបករណ៍​កម្មវិធី​និពន្ធ​ជំនួយ​ការ​បន្ទាត់"
+
+#, fuzzy
+#~| msgid "Polyline"
+#~ msgid "Poly line"
+#~ msgstr "ពហុ​បន្ទាត់​"
+
+#, fuzzy
+#~| msgid "Bezier Curve"
+#~ msgid "Bezier curve"
+#~ msgstr "ខ្សែ​កោង Bezier"
 
 #~ msgid "Form"
 #~ msgstr "សំណុំ​បែបបទ"
