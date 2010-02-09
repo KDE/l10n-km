@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-05 02:33+0100\n"
+"POT-Creation-Date: 2010-02-09 06:29+0100\n"
 "PO-Revision-Date: 2010-02-03 15:55+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -177,9 +177,13 @@ msgid ""
 msgstr "អាគុយម៉ង់​ទិសដៅ​នឹង​ត្រូវ​បានផ្ញើ​ទៅ​ផ្លូវ​របស់​ឯកសារ​ដែល​បានផ្ដល់​ដំបូង ។"
 
 #: app/main.cpp:105
+#, fuzzy
+#| msgid ""
+#| "Archive contents will be read, and if detected to not be a single folder "
+#| "archive, a subfolder by the name of the archive will be created."
 msgid ""
 "Archive contents will be read, and if detected to not be a single folder "
-"archive, a subfolder by the name of the archive will be created."
+"archive, a subfolder with the name of the archive will be created."
 msgstr ""
 "មាតិកា​ប័ណ្ណសារ​នឹង​ត្រូវ​បាន​អាន និង​ប្រសិន​បើ​រក​ឃើញ​មិនមែន​ជា​ប័ណ្ណសារ​ថត​តែ​មួយ​ទេ ថតរង​​តាម​ឈ្មោះ​របស់​"
 "ប័ណ្ណសារ​នឹង​ត្រូវ​បាន​បង្កើត ។"
@@ -222,9 +226,13 @@ msgstr ""
 "អ្នក​ត្រូវតែ​ផ្ដល់​ឈ្មោះ​ឯកសារ​សម្រាប់​ប័ណ្ណសារ ឬ​បច្ច័យ (ដូចជា rar, tar.tz) ជាមួយ​នឹង​អាគុយម៉ង់ --"
 "autofilename ។"
 
-#: kerfuffle/addtoarchive.cpp:174
+#: kerfuffle/addtoarchive.cpp:173
 msgid "Failed to create the new archive. Permissions might not be sufficient."
 msgstr "បាន​បរាជ័យ​ក្នុងកា​របង្កើត​ប័ណ្ណសារ​ថ្មី ។ សិទ្ធិ​អាច​មិន​គ្រប់គ្រាន់ ។"
+
+#: kerfuffle/addtoarchive.cpp:176
+msgid "It is not possible to create archives of this type."
+msgstr ""
 
 #: kerfuffle/batchextract.cpp:134 kerfuffle/batchextract.cpp:187
 msgid "Extracting file..."
@@ -484,6 +492,7 @@ msgstr "បានបញ្ចប់​ប្រតិបត្តិការ �
 #: part/part.cpp:211
 #, fuzzy
 #| msgid "Information Panel"
+msgctxt "@action:inmenu"
 msgid "Show information panel"
 msgstr "បន្ទះ​ព័ត៌មាន"
 
@@ -549,6 +558,9 @@ msgid "The file '%1' already exists. Would you like to open it instead?"
 msgstr "មាន​ឯកសារ '%1' រួច​ហើយ ។ តើ​អ្នក​ចង់​បើក​វា​ជំនួស​វិញ​ទេ ?"
 
 #: part/part.cpp:343
+#, fuzzy
+#| msgid "File Exists"
+msgctxt "@title:window"
 msgid "File Exists"
 msgstr "មាន​ឯកសារ​រួច​ហើយ"
 
@@ -562,10 +574,16 @@ msgid "Error opening archive: the file '%1' was not found."
 msgstr "កំហុស​ក្នុងកា​របើក​ប័ណ្ណសារ ៖​ រក​មិន​ឃើញ​​ឯកសារ '%1' ។"
 
 #: part/part.cpp:350 part/part.cpp:394 part/part.cpp:430
+#, fuzzy
+#| msgid "Error Opening Archive"
+msgctxt "@title:window"
 msgid "Error Opening Archive"
 msgstr "កំហុស​ក្នុងការ​បើក​ប័ណ្ណសារ"
 
 #: part/part.cpp:380
+#, fuzzy
+#| msgid "Unable to Determine Archive Type"
+msgctxt "@title:window"
 msgid "Unable to Determine Archive Type"
 msgstr "មិនអាច​កំណត់​ប្រភេទ​ប័ណ្ណសារ​បាន​ទេ"
 
@@ -593,16 +611,29 @@ msgid "Reading the archive '%1' failed with the error '%2'"
 msgstr "បាន​បរាជ័យ​ក្នុងកា​រអាន​ប័ណ្ណសារ '%1' ដោយ​មាន​កំហុស '%2'"
 
 #: part/part.cpp:690
+#, fuzzy
+#| msgid "Add Files"
+msgctxt "@title:window"
 msgid "Add Files"
 msgstr "បន្ថែម​ឯកសារ"
 
 #: part/part.cpp:698
+#, fuzzy
+#| msgid "Add Folder"
+msgctxt "@title:window"
 msgid "Add Folder"
 msgstr "បន្ថែម​ថត"
 
 #: part/part.cpp:725
 msgid "Deleting these files is not undoable. Are you sure you want to do this?"
 msgstr "លុប​ឯកសារ​ទាំង​នេះ​មិនអាច​ធ្វើវិញ​បានទេ ។ តើអ្នកប្រាកដ​ជា​ចង់​ធ្វើ​ដូច្នេះ​ឬ ?"
+
+#: part/part.cpp:725
+#, fuzzy
+#| msgid "Delete files"
+msgctxt "@title:window"
+msgid "Delete files"
+msgstr "លុប​ឯកសារ"
 
 #: part/part.cpp:725
 msgid "Delete files"
