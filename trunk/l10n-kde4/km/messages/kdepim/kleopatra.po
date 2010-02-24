@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-22 07:04+0100\n"
+"POT-Creation-Date: 2010-02-24 07:18+0100\n"
 "PO-Revision-Date: 2009-05-21 09:10+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -178,7 +178,7 @@ msgid "<b>Step 1:</b> Please select the user IDs you wish to certify."
 msgstr "<b>ជំហាន ១ ៖</b> សូម​ជ្រើស​លេខសម្គាល់​អ្នក​ប្រើ ដែល​អ្នក​ចង់​បញ្ជាក់ ។"
 
 #: dialogs/certifycertificatedialog.cpp:172
-#: newcertificatewizard/newcertificatewizard.cpp:1175
+#: newcertificatewizard/newcertificatewizard.cpp:1231
 msgid "Certify"
 msgstr "បញ្ជាក់"
 
@@ -767,27 +767,31 @@ msgstr "វិញ្ញាបនបត្រ X.509 ត្រូវ​រក​�
 msgid "qttest"
 msgstr "qttest"
 
-#: tests/test_keylistmodels.cpp:90
+#: tests/test_keylistmodels.cpp:97
 msgid "FlatKeyListModel Test"
 msgstr "ការ​សាកល្បង FlatKeyListModel"
 
-#: tests/test_keylistmodels.cpp:94
+#: tests/test_keylistmodels.cpp:101
 #, fuzzy
 #| msgid "Perform flat key listing"
 msgid "Perform flat certificate listing"
 msgstr "Perform flat key listing"
 
-#: tests/test_keylistmodels.cpp:95
+#: tests/test_keylistmodels.cpp:102
 #, fuzzy
 #| msgid "Perform hierarchical key listing"
 msgid "Perform hierarchical certificate listing"
 msgstr "ប្រតិបត្តិ​បញ្ជី​សោ​តាម​ឋានានុក្រម"
 
-#: tests/test_keylistmodels.cpp:96
+#: tests/test_keylistmodels.cpp:103
 #, fuzzy
 #| msgid "Do not list SMIME keys"
 msgid "Do not list SMIME certificates"
 msgstr "កុំ​រាយ​កូនសោ SMIME"
+
+#: tests/test_keylistmodels.cpp:104
+msgid "List secret keys only"
+msgstr ""
 
 #: utils/formatting.cpp:205 utils/formatting.cpp:208
 #, kde-format
@@ -849,234 +853,255 @@ msgstr "វិញ្ញាបនបត្រ​នេះ​បច្ចុប្
 msgid "The validity of this certificate cannot be checked at the moment."
 msgstr "សុពលភាព​របស់​វិញ្ញាបនបត្រ​នេះ​មិនអាច​ពិនិត្យ​នៅពេល​ឥឡូវ​បានទេ ។"
 
-#: utils/formatting.cpp:277
+#: utils/formatting.cpp:276
 msgid "Serial number"
 msgstr "លេខ​សៀរៀល"
 
-#: utils/formatting.cpp:279
+#: utils/formatting.cpp:278
 msgid "Issuer"
 msgstr "អ្នក​ចេញផ្សាយ"
 
-#: utils/formatting.cpp:285
+#: utils/formatting.cpp:284
 msgid "Subject"
 msgstr "ប្រធាន​បទ"
 
-#: utils/formatting.cpp:286
+#: utils/formatting.cpp:285
 msgid "User-ID"
 msgstr "លេខ​សម្គាល់​អ្នកប្រើ"
 
-#: utils/formatting.cpp:290
+#: utils/formatting.cpp:289
 msgid "a.k.a."
 msgstr "a.k.a."
 
-#: utils/formatting.cpp:293
+#: utils/formatting.cpp:292
 msgid "Validity"
 msgstr "ភាព​ត្រឹមត្រូវ"
 
-#: utils/formatting.cpp:295
+#: utils/formatting.cpp:294
 #, kde-format
 msgid "from %1 until forever"
 msgstr "ចាប់​ពី %1 តទៅ"
 
-#: utils/formatting.cpp:296
+#: utils/formatting.cpp:295
 #, kde-format
 msgid "from %1 through %2"
 msgstr "ពី %1 តាម %2"
 
-#: utils/formatting.cpp:298
+#: utils/formatting.cpp:297
 msgid "Certificate type"
 msgstr "ប្រភេទ​វិញ្ញាបនបត្រ"
 
-#: utils/formatting.cpp:300
+#: utils/formatting.cpp:299
 msgid "Certificate usage"
 msgstr "ការ​ប្រើប្រាស់​វិញ្ញាបនបត្រ"
 
-#: utils/formatting.cpp:302 models/keylistmodel.cpp:252
+#: utils/formatting.cpp:301
+#, fuzzy
+#| msgid "User-ID"
+msgid "Key-ID"
+msgstr "លេខ​សម្គាល់​អ្នកប្រើ"
+
+#: utils/formatting.cpp:303 models/keylistmodel.cpp:252
 msgid "Fingerprint"
 msgstr "ស្នាម​ម្រាមដៃ"
 
-#: utils/formatting.cpp:393
+#: utils/formatting.cpp:306 utils/formatting.cpp:308
+msgid "Stored"
+msgstr ""
+
+#: utils/formatting.cpp:306
+#, kde-format
+msgctxt "stored..."
+msgid "on SmartCard with serial no. %1"
+msgstr ""
+
+#: utils/formatting.cpp:308
+msgctxt "stored..."
+msgid "on this computer"
+msgstr ""
+
+#: utils/formatting.cpp:399
 msgctxt "X.509/CMS encryption standard"
 msgid "X.509"
 msgstr "X.509"
 
-#: utils/formatting.cpp:395 crypto/gui/resolverecipientspage.cpp:431
+#: utils/formatting.cpp:401 crypto/gui/resolverecipientspage.cpp:431
 #: crypto/gui/signencryptemailconflictdialog.cpp:518
 msgid "OpenPGP"
 msgstr "OpenPGP"
 
-#: utils/formatting.cpp:396
+#: utils/formatting.cpp:402
 msgctxt "Unknown encryption protocol"
 msgid "Unknown"
 msgstr "មិនស្គាល់"
 
-#: utils/formatting.cpp:414 utils/formatting.cpp:445
+#: utils/formatting.cpp:420 utils/formatting.cpp:451
 msgctxt "unknown trust level"
 msgid "unknown"
 msgstr "មិនស្គាល់"
 
-#: utils/formatting.cpp:415 utils/formatting.cpp:447
+#: utils/formatting.cpp:421 utils/formatting.cpp:453
 msgid "untrusted"
 msgstr "មិនបាន​ទុកចិត្ត"
 
-#: utils/formatting.cpp:416 utils/formatting.cpp:448
+#: utils/formatting.cpp:422 utils/formatting.cpp:454
 msgctxt "marginal trust"
 msgid "marginal"
 msgstr "នៃ​រឹម​ទំព័រ"
 
-#: utils/formatting.cpp:417 utils/formatting.cpp:449
+#: utils/formatting.cpp:423 utils/formatting.cpp:455
 msgctxt "full trust"
 msgid "full"
 msgstr "ទាំងស្រុង"
 
-#: utils/formatting.cpp:418 utils/formatting.cpp:450
+#: utils/formatting.cpp:424 utils/formatting.cpp:456
 msgctxt "ultimate trust"
 msgid "ultimate"
 msgstr "ជា​ទី​បំផុត"
 
-#: utils/formatting.cpp:419 utils/formatting.cpp:446
+#: utils/formatting.cpp:425 utils/formatting.cpp:452
 msgctxt "undefined trust"
 msgid "undefined"
 msgstr "មិនបាន​កំណត់"
 
-#: utils/formatting.cpp:429 utils/formatting.cpp:441
+#: utils/formatting.cpp:435 utils/formatting.cpp:447
 #: models/useridlistmodel.cpp:304
 msgid "revoked"
 msgstr "ដកហូត​វិញ"
 
-#: utils/formatting.cpp:431 utils/formatting.cpp:467
+#: utils/formatting.cpp:437 utils/formatting.cpp:473
 #: models/useridlistmodel.cpp:306
 msgid "expired"
 msgstr "ផុត​កំណត់"
 
-#: utils/formatting.cpp:433 models/useridlistmodel.cpp:308
+#: utils/formatting.cpp:439 models/useridlistmodel.cpp:308
 msgid "disabled"
 msgstr "បានបិទ"
 
-#: utils/formatting.cpp:435 utils/formatting.cpp:443 utils/formatting.cpp:466
+#: utils/formatting.cpp:441 utils/formatting.cpp:449 utils/formatting.cpp:472
 #: models/useridlistmodel.cpp:310
 msgid "invalid"
 msgstr "ត្រឹមត្រូវ"
 
-#: utils/formatting.cpp:436
+#: utils/formatting.cpp:442
 msgctxt "as in good/valid signature"
 msgid "good"
 msgstr "ល្អ"
 
-#: utils/formatting.cpp:460
+#: utils/formatting.cpp:466
 #, kde-format
 msgid "class %1"
 msgstr "ថ្នាក់ %1"
 
-#: utils/formatting.cpp:462
+#: utils/formatting.cpp:468
 msgctxt "good/valid signature"
 msgid "good"
 msgstr "ល្អ"
 
-#: utils/formatting.cpp:468
+#: utils/formatting.cpp:474
 #, fuzzy
 #| msgid "Signing certificate expired"
 msgid "certificate expired"
 msgstr "ការ​ចុះហត្ថលេខា​បាន​ផុត​កំណត់"
 
-#: utils/formatting.cpp:469
+#: utils/formatting.cpp:475
 msgctxt "fake/invalid signature"
 msgid "bad"
 msgstr "មិនល្អ"
 
-#: utils/formatting.cpp:486
+#: utils/formatting.cpp:492
 #, kde-format
 msgctxt "name, email, key id"
 msgid "%1 %2 (%3)"
 msgstr "%1 %2 (%3)"
 
-#: utils/formatting.cpp:528
+#: utils/formatting.cpp:534
 #, fuzzy, kde-format
 #| msgid "Bad signature by unknown key %1: %2"
 msgid "Bad signature by unknown certificate %1: %2"
 msgstr "ហត្ថលេខា​មិនល្អ ដោយ​មាន​គ្រាប់ចុច​មិនស្គាល់ %1: %2"
 
-#: utils/formatting.cpp:530
+#: utils/formatting.cpp:536
 #, fuzzy, kde-format
 #| msgid "Bad signature by an unknown key: %1"
 msgid "Bad signature by an unknown certificate: %1"
 msgstr "ហត្ថលេខា​មិនល្អ ដោយមាន​គ្រាប់ចុច​មិនស្គាល់ ៖ %1"
 
-#: utils/formatting.cpp:532
+#: utils/formatting.cpp:538
 #, kde-format
 msgid "Bad signature by %1: %2"
 msgstr "ហត្ថលេខា​មិនល្អ​ដោយ %1: %2"
 
-#: utils/formatting.cpp:537
+#: utils/formatting.cpp:543
 #, fuzzy, kde-format
 #| msgid "Good signature by unknown key %1."
 msgid "Good signature by unknown certificate %1."
 msgstr "ហត្ថលេខា​ល្អ ដោយ​មាន​គ្រាប់ចុច​មិនស្គាល់ %1 ។"
 
-#: utils/formatting.cpp:539
+#: utils/formatting.cpp:545
 #, fuzzy
 #| msgid "Good signature by an unknown key."
 msgid "Good signature by an unknown certificate."
 msgstr "ហត្ថលេខា​ល្អ ដោយ​មាន​គ្រាប់ចុច​មិនស្គាល់ ។"
 
-#: utils/formatting.cpp:541
+#: utils/formatting.cpp:547
 #, kde-format
 msgid "Good signature by %1."
 msgstr "ហត្ថលេខា​ល្អ​ដោយ %1 ។"
 
-#: utils/formatting.cpp:546
+#: utils/formatting.cpp:552
 #, fuzzy, kde-format
 #| msgid "Invalid signature by unknown key %1: %2"
 msgid "Invalid signature by unknown certificate %1: %2"
 msgstr "ហត្ថលេខា​មិនត្រឹមត្រូវ ដោយមាន​គ្រាប់ចុច​មិនស្គាល់ %1: %2"
 
-#: utils/formatting.cpp:548
+#: utils/formatting.cpp:554
 #, fuzzy, kde-format
 #| msgid "Invalid signature by an unknown key: %1"
 msgid "Invalid signature by an unknown certificate: %1"
 msgstr "ហត្ថលេខា​មិនត្រឹមត្រូវ ដោយមាន​គ្រាប់ចុច​មិនស្គាល់ ៖ %1"
 
-#: utils/formatting.cpp:550
+#: utils/formatting.cpp:556
 #, kde-format
 msgid "Invalid signature by %1: %2"
 msgstr "ហត្ថលេខា​មិនត្រឹមត្រូវ ដោយ %1: %2"
 
-#: utils/formatting.cpp:563
+#: utils/formatting.cpp:569
 #, fuzzy
 #| msgid "Please select one or more of the following certificates:"
 msgid "This certificate was imported from the following sources:"
 msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​ខាងក្រោម​មួយ ឬ​ច្រើន ៖"
 
-#: utils/formatting.cpp:573
+#: utils/formatting.cpp:579
 msgid "The import of this certificate was canceled."
 msgstr "ការ​នាំចូល​វិញ្ញាបនបត្រ​នេះ ត្រូវបាន​បោះបង់ ។"
 
-#: utils/formatting.cpp:575
+#: utils/formatting.cpp:581
 #, kde-format
 msgid "An error occurred importing this certificate: %1"
 msgstr "កំហុស​បាន​កើតឡើង នៅពេល​នាំចូល​វិញ្ញាបនបត្រ​នេះ ៖ %1"
 
-#: utils/formatting.cpp:581
+#: utils/formatting.cpp:587
 msgid "This certificate was new to your keystore. The secret key is available."
 msgstr "វិញ្ញាបនបត្រ​នេះ គឺ​ថ្មី​សម្រាប់ keystore របស់​អ្នក ។ សោ​សម្ងាត់​គឺ​មាន ។"
 
-#: utils/formatting.cpp:582
+#: utils/formatting.cpp:588
 msgid "This certificate is new to your keystore."
 msgstr "វិញ្ញាបនបត្រ​នេះ គឺ​ថ្មី​សម្រាប់ keystore របស់​អ្នក ។"
 
-#: utils/formatting.cpp:586
+#: utils/formatting.cpp:592
 msgid "New user-ids were added to this certificate by the import."
 msgstr "លេខ​សម្គាល់​អ្នកប្រើ​ថ្មី​ត្រូវបាន​បន្ថែម​ទៅ​វិញ្ញាបនបត្រ​នេះ​តាម​ការ​នាំចូល ។"
 
-#: utils/formatting.cpp:588
+#: utils/formatting.cpp:594
 msgid "New signatures were added to this certificate by the import."
 msgstr "ហត្ថលេខា​ថ្មី ត្រូវបាន​បន្ថែម​ទៅ​វិញ្ញាបនបត្រ​នេះ​តាម​ការ​នាំចូល ។"
 
-#: utils/formatting.cpp:590
+#: utils/formatting.cpp:596
 msgid "New subkeys were added to this certificate by the import."
 msgstr "សោ​រង​ថ្មី​ត្រូវបាន​បន្ថែម​ទៅ​វិញ្ញាបនបត្រ​​នេះ​តាម​ការ​នាំចូល ។"
 
-#: utils/formatting.cpp:593
+#: utils/formatting.cpp:599
 msgid "The import contained no new data for this certificate. It is unchanged."
 msgstr "ការ​នាំចូល​មិនមាន​ទិន្នន័យ​ថ្មី​សម្រាប់​វិញ្ញាបនបត្រ​នេះ ។ វា​មិនត្រូវ​បាន​ផ្លាស់ប្ដូរ​ទេ ។"
 
@@ -1321,6 +1346,12 @@ msgid ""
 "Cannot find common base directory for these files:\n"
 "%1"
 msgstr ""
+
+#: utils/archivedefinition.cpp:184
+#, fuzzy, kde-format
+#| msgid "Caught unknown exception"
+msgid "Caught unknown exception in group %1"
+msgstr "ករណី​លើកលែង​ដែល​មិនស្គាល់​ដែលបាន​ទទួល"
 
 #: utils/hex.cpp:55
 #, kde-format
@@ -1679,13 +1710,13 @@ msgid "Sign and Encrypt (OpenPGP only)"
 msgstr "ចុះហត្ថលេខា និង​អ៊ិនគ្រីប (តែ OpenPGP)"
 
 #: crypto/gui/newsignencryptfileswizard.cpp:350
-#: newcertificatewizard/newcertificatewizard.cpp:1172
-#: newcertificatewizard/newcertificatewizard.cpp:1196
+#: newcertificatewizard/newcertificatewizard.cpp:1228
+#: newcertificatewizard/newcertificatewizard.cpp:1252
 msgid "Encrypt"
 msgstr "អ៊ីនគ្រិប"
 
 #: crypto/gui/newsignencryptfileswizard.cpp:351
-#: newcertificatewizard/newcertificatewizard.cpp:1170
+#: newcertificatewizard/newcertificatewizard.cpp:1226
 msgid "Sign"
 msgstr "​ចុះហត្ថលេខា"
 
@@ -2372,17 +2403,35 @@ msgctxt "label: result example: foo.sig: Verification failed. "
 msgid "%1: %2"
 msgstr "%1 ៖ %2"
 
-#: crypto/decryptverifytask.cpp:829 crypto/decryptverifytask.cpp:958
+#: crypto/decryptverifytask.cpp:827
+msgid ""
+"Could not determine whether this is an S/MIME or an OpenPGP signature/"
+"ciphertext - maybe it is neither ciphertext nor a signature?"
+msgstr ""
+
+#: crypto/decryptverifytask.cpp:833 crypto/decryptverifytask.cpp:966
 #, kde-format
 msgid "Decrypting: %1..."
 msgstr "ឌិគ្រីប ៖ %1..."
 
-#: crypto/decryptverifytask.cpp:1089
+#: crypto/decryptverifytask.cpp:960
+msgid ""
+"Could not determine whether this was S/MIME- or OpenPGP-encrypted - maybe it "
+"is not ciphertext at all?"
+msgstr ""
+
+#: crypto/decryptverifytask.cpp:1095 crypto/decryptverifytask.cpp:1221
+msgid ""
+"Could not determine whether this is an S/MIME or an OpenPGP signature - "
+"maybe it is not a signature at all?"
+msgstr ""
+
+#: crypto/decryptverifytask.cpp:1101
 #, kde-format
 msgid "Verifying: %1..."
 msgstr "ផ្ទៀងផ្ទាត់ ៖ %1..."
 
-#: crypto/decryptverifytask.cpp:1216
+#: crypto/decryptverifytask.cpp:1232
 #, kde-format
 msgid "Verifying signature: %1..."
 msgstr "ហត្ថលេខា​ផ្ទៀងផ្ទាត់ ៖ %1..."
@@ -3104,6 +3153,12 @@ msgid ""
 msgstr "ប្រភេទ​វិញ្ញាបនបត្រ (%1) ​នេះ មិន​ត្រូវ​បានគាំទ្រ​ដោយ​ការ​ដំឡើង Kleopatra ។"
 
 #: commands/certifycertificatecommand.cpp:183
+#, fuzzy
+#| msgid ""
+#| "To certify other certificates, you first need to create an OpenPGP "
+#| "certificate for yourself. Choose <interface>File->New Certificate...</"
+#| "interface> to create one."
+msgctxt "@info"
 msgid ""
 "To certify other certificates, you first need to create an OpenPGP "
 "certificate for yourself. Choose <interface>File->New Certificate...</"
@@ -3902,7 +3957,7 @@ msgid "Listing private OpenPGP certificates"
 msgstr "រាយ​សោ​ OpenPGP ឯកជន"
 
 #: models/keylistmodel.cpp:247 models/useridlistmodel.cpp:249
-#: newcertificatewizard/newcertificatewizard.cpp:898
+#: newcertificatewizard/newcertificatewizard.cpp:910
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -3929,7 +3984,7 @@ msgid "ID"
 msgstr "លេខ​សម្គាល់"
 
 #: models/useridlistmodel.cpp:250
-#: newcertificatewizard/newcertificatewizard.cpp:902
+#: newcertificatewizard/newcertificatewizard.cpp:914
 msgid "EMail"
 msgstr "អ៊ីមែល"
 
@@ -5052,9 +5107,9 @@ msgstr "វិញ្ញាបនបត្រ​"
 
 #. i18n: file: dialogs/certificatedetailsdialog.ui:287
 #. i18n: ectx: attribute (title), widget (QWidget, detailsTab)
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:75
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:20
 #. i18n: ectx: attribute (title), widget (QWidget, technicalTab)
-#: rc.cpp:493 rc.cpp:658
+#: rc.cpp:493 rc.cpp:643
 msgid "Technical Details"
 msgstr "សេចក្ដី​លម្អិត​បច្ចេកទេស"
 
@@ -5284,7 +5339,7 @@ msgstr "លេខ​​ពិត ៖"
 #. i18n: ectx: property (text), widget (QLabel, nameRequiredLB)
 #. i18n: file: newcertificatewizard/enterdetailspage.ui:43
 #. i18n: ectx: property (text), widget (QLabel, emailRequiredLB)
-#: rc.cpp:619 rc.cpp:625 newcertificatewizard/newcertificatewizard.cpp:996
+#: rc.cpp:619 rc.cpp:625 newcertificatewizard/newcertificatewizard.cpp:1016
 msgid "(required)"
 msgstr "(ត្រូវការ)"
 
@@ -5296,13 +5351,13 @@ msgstr "អាសយដ្ឋាន​អ៊ីមែល ៖"
 
 #. i18n: file: newcertificatewizard/enterdetailspage.ui:50
 #. i18n: ectx: property (text), widget (QLabel, commentLB)
-#: rc.cpp:628 newcertificatewizard/newcertificatewizard.cpp:1252
+#: rc.cpp:628 newcertificatewizard/newcertificatewizard.cpp:1308
 msgid "Comment:"
 msgstr "សេចក្ដី​អធិប្បាយ ៖"
 
 #. i18n: file: newcertificatewizard/enterdetailspage.ui:60
 #. i18n: ectx: property (text), widget (QLabel, commentRequiredLB)
-#: rc.cpp:631 newcertificatewizard/newcertificatewizard.cpp:996
+#: rc.cpp:631 newcertificatewizard/newcertificatewizard.cpp:1016
 msgid "(optional)"
 msgstr "(ជម្រើស)"
 
@@ -5312,7 +5367,7 @@ msgstr "(ជម្រើស)"
 msgid "Add email address to DN (only needed for broken CAs)"
 msgstr "បន្ថែម​អាសយដ្ឋាន​អ៊ីមែល​ទៅ DN (ត្រូវ​កា​រសម្រាប់​តែ CAs ដែល​ខូច​ប៉ុណ្ណោះ)"
 
-#. i18n: file: newcertificatewizard/enterdetailspage.ui:117
+#. i18n: file: newcertificatewizard/enterdetailspage.ui:154
 #. i18n: ectx: property (text), widget (QPushButton, advancedPB)
 #: rc.cpp:637
 msgid "Advanced Settings..."
@@ -5324,97 +5379,97 @@ msgstr "កា​រកំណត់​កម្រិត​ខ្ពស់..."
 msgid "Advanced Settings"
 msgstr "កា​រកំណត់​កម្រិត​ខ្ពស់"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:20
-#. i18n: ectx: attribute (title), widget (QWidget, personalTab)
-#: rc.cpp:643
-msgid "Personal Details"
-msgstr "សេចក្ដី​លម្អិត​ផ្ទាល់ខ្លួន"
-
 #. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:26
-#. i18n: ectx: property (title), widget (QGroupBox, uidGB)
-#: rc.cpp:646
-msgid "Additional User-IDs"
-msgstr "លេខ​សម្គាល់​អ្នក​ប្រើ​បន្ថែម"
-
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:38
-#. i18n: ectx: property (title), widget (QGroupBox, emailGB)
-#: rc.cpp:649
-msgid "EMail Addresses"
-msgstr "អាសយដ្ឋាន​អ៊ីមែល"
-
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:50
-#. i18n: ectx: property (title), widget (QGroupBox, dnsGB)
-#: rc.cpp:652
-msgid "DNS Names"
-msgstr "ឈ្មោះ DNS"
-
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:62
-#. i18n: ectx: property (title), widget (QGroupBox, uriGB)
-#: rc.cpp:655
-msgid "URIs"
-msgstr "URIs"
-
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:81
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:661
+#: rc.cpp:646
 msgid "Key Material"
 msgstr "សម្ភារៈសោ"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:87
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:32
 #. i18n: ectx: property (text), widget (QRadioButton, rsaRB)
-#: rc.cpp:664
+#: rc.cpp:649
 msgid "RSA"
 msgstr "RSA"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:110
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:55
 #. i18n: ectx: property (text), widget (QRadioButton, dsaRB)
-#: rc.cpp:667
+#: rc.cpp:652
 msgid "DSA"
 msgstr "DSA"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:120
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:65
 #. i18n: ectx: property (text), widget (QCheckBox, elgCB)
-#: rc.cpp:670
+#: rc.cpp:655
 #, fuzzy
 #| msgid "+ ElGamal"
 msgid "+ Elgamal"
 msgstr "+ ElGamal"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:163
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:108
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:673
+#: rc.cpp:658
 msgid "Certificate Usage"
 msgstr "ការ​ប្រើប្រាស់​វិញ្ញាបនបត្រ"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:171
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:116
 #. i18n: ectx: property (text), widget (QCheckBox, expiryCB)
-#: rc.cpp:676
+#: rc.cpp:661
 msgid "Valid until:"
 msgstr "មាន​សុពលភាព​រហូត​ដល់ ៖"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:196
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:141
 #. i18n: ectx: property (text), widget (QCheckBox, certificationCB)
-#: rc.cpp:679
+#: rc.cpp:664
 msgid "Certification"
 msgstr "វិញ្ញាបនបត្រ​"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:203
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:148
 #. i18n: ectx: property (text), widget (QCheckBox, signingCB)
-#: rc.cpp:682
+#: rc.cpp:667
 msgid "Signing"
 msgstr "ការ​ចុះហត្ថលេខា"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:213
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:158
 #. i18n: ectx: property (text), widget (QCheckBox, encryptionCB)
-#: rc.cpp:685
+#: rc.cpp:670
 msgid "Encryption"
 msgstr "ការ​​អ៊ិនគ្រីប​"
 
-#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:223
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:168
 #. i18n: ectx: property (text), widget (QCheckBox, authenticationCB)
-#: rc.cpp:688
+#: rc.cpp:673
 msgid "Authentication"
 msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
+
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:192
+#. i18n: ectx: attribute (title), widget (QWidget, personalTab)
+#: rc.cpp:676 newcertificatewizard/newcertificatewizard.cpp:1438
+msgid "Personal Details"
+msgstr "សេចក្ដី​លម្អិត​ផ្ទាល់ខ្លួន"
+
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:198
+#. i18n: ectx: property (title), widget (QGroupBox, uidGB)
+#: rc.cpp:679
+msgid "Additional User-IDs"
+msgstr "លេខ​សម្គាល់​អ្នក​ប្រើ​បន្ថែម"
+
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:210
+#. i18n: ectx: property (title), widget (QGroupBox, emailGB)
+#: rc.cpp:682
+msgid "EMail Addresses"
+msgstr "អាសយដ្ឋាន​អ៊ីមែល"
+
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:222
+#. i18n: ectx: property (title), widget (QGroupBox, dnsGB)
+#: rc.cpp:685
+msgid "DNS Names"
+msgstr "ឈ្មោះ DNS"
+
+#. i18n: file: newcertificatewizard/advancedsettingsdialog.ui:234
+#. i18n: ectx: property (title), widget (QGroupBox, uriGB)
+#: rc.cpp:688
+msgid "URIs"
+msgstr "URIs"
 
 #. i18n: file: newcertificatewizard/resultpage.ui:28
 #. i18n: ectx: property (toolTip), widget (Kleo::DragQueen, dragQueen)
@@ -5541,6 +5596,23 @@ msgstr "កំណត់​​រូបតំណាង..."
 #| msgid "New Certificate..."
 msgid "Learn NetKey v3 Card Certificates"
 msgstr "វិញ្ញាបនបត្រ​ថ្មី..."
+
+#: selftest/libkleopatrarccheck.cpp:59
+msgctxt "@title"
+msgid "Config File 'libkleopatrarc'"
+msgstr ""
+
+#: selftest/libkleopatrarccheck.cpp:72
+msgid "Errors found"
+msgstr ""
+
+#: selftest/libkleopatrarccheck.cpp:76
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>Kleopatra detected the following errors in the libkleopatrarc "
+"configuration:</para>%1"
+msgstr ""
 
 #: selftest/gpgagentcheck.cpp:64
 #, fuzzy
@@ -5903,26 +5975,26 @@ msgstr "ឈ្មោះ dns ថ្មី"
 msgid "new uri"
 msgstr "uri ថ្មី"
 
-#: newcertificatewizard/newcertificatewizard.cpp:498
+#: newcertificatewizard/newcertificatewizard.cpp:510
 msgctxt "@action"
 msgid "Create Key"
 msgstr "បង្កើត​សោ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:549
+#: newcertificatewizard/newcertificatewizard.cpp:561
 #, kde-format
 msgid "Could not start certificate creation: %1"
 msgstr "មិន​អាច​ចាប់ផ្ដើម​បង្កើត​វិញ្ញាបនបត្រ ៖ %1"
 
-#: newcertificatewizard/newcertificatewizard.cpp:562
+#: newcertificatewizard/newcertificatewizard.cpp:574
 msgid "Operation canceled."
 msgstr "បាន​បោះបង់ប្រតិបត្តិការ ។"
 
-#: newcertificatewizard/newcertificatewizard.cpp:563
+#: newcertificatewizard/newcertificatewizard.cpp:575
 #, kde-format
 msgid "Could not create certificate: %1"
 msgstr "មិន​អាច​បង្កើត​វិញ្ញាបនបត្រ ៖ %1 បាន​ទេ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:570
+#: newcertificatewizard/newcertificatewizard.cpp:582
 #, kde-format
 msgid ""
 "Certificate created successfully.\n"
@@ -5931,30 +6003,30 @@ msgstr ""
 "បាន​បង្កើត​វិញ្ញាបនបត្រដោយ​ជោគជ័យ ។\n"
 "ស្នាមម្រាមដៃ ៖ %1"
 
-#: newcertificatewizard/newcertificatewizard.cpp:576
+#: newcertificatewizard/newcertificatewizard.cpp:588
 #, kde-format
 msgid "Could not write output file %1: %2"
 msgstr "មិន​អាច​សរសេរ​​ឯកសារ​លទ្ធផល %1 ៖ %2"
 
-#: newcertificatewizard/newcertificatewizard.cpp:584
+#: newcertificatewizard/newcertificatewizard.cpp:596
 msgid "Certificate created successfully."
 msgstr "បាន​បង្កើត​វិញ្ញាបនបត្រ​ដោយ​ជោគជ័យ ។"
 
-#: newcertificatewizard/newcertificatewizard.cpp:623
+#: newcertificatewizard/newcertificatewizard.cpp:635
 msgctxt "@title"
 msgid "Key Creation Failed"
 msgstr "បានបរាជ័យ​ក្នុងការ​បង្កើត​សោ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:624
+#: newcertificatewizard/newcertificatewizard.cpp:636
 msgid "Key pair creation failed. Please find details about the failure below."
 msgstr "បាន​បរាជ័យ​ក្នុងកា​របង្កើត​គូសោ ។ សូម​រក​សេចក្ដី​លម្អិត​អំពី​បរាជ័យ​ដូច​ខាង​ក្រោម ។"
 
-#: newcertificatewizard/newcertificatewizard.cpp:626
+#: newcertificatewizard/newcertificatewizard.cpp:638
 msgctxt "@title"
 msgid "Key Pair Successfully Created"
 msgstr "បាន​បង្កើត​គូសោ​ដោយ​ជោគជ័យ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:627
+#: newcertificatewizard/newcertificatewizard.cpp:639
 msgid ""
 "Your new key pair was created successfully. Please find details on the "
 "result and some suggested next steps below."
@@ -5962,16 +6034,16 @@ msgstr ""
 "គូ​សោ​ថ្មី​​របស់​អ្នក​ត្រូវ​បាន​បង្កើត​ដោយជោគជ័យ ។ សូម​រក​សេចក្ដីលម្អិត​ខាង​ក្រោម​អំពីលទ្ធផល​ និង​ជំហាន​បន្ទាប់​ដែល​"
 "បាន​ស្នើ ។"
 
-#: newcertificatewizard/newcertificatewizard.cpp:681
+#: newcertificatewizard/newcertificatewizard.cpp:693
 msgctxt "@title"
 msgid "Save Request"
 msgstr "រក្សាទុក​សំណើ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:682
+#: newcertificatewizard/newcertificatewizard.cpp:694
 msgid "PKCS#10 Requests (*.p10)"
 msgstr "សំណើ PKCS#10 (*.p10)"
 
-#: newcertificatewizard/newcertificatewizard.cpp:691
+#: newcertificatewizard/newcertificatewizard.cpp:703
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -5981,12 +6053,12 @@ msgstr ""
 "មិន​អាច​ម្លង​ឯកសារ​បណ្ដោះអាសន្ន <filename>%1</filename> ទៅ​ឯកសារ <filename>%2</"
 "filename> ៖ <message>%3</message>"
 
-#: newcertificatewizard/newcertificatewizard.cpp:694
+#: newcertificatewizard/newcertificatewizard.cpp:706
 msgctxt "@title"
 msgid "Error Saving Request"
 msgstr "កំហុស​ក្នុងកា​ររក្សាទុក​សំណើ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:698
+#: newcertificatewizard/newcertificatewizard.cpp:710
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -5996,16 +6068,16 @@ msgstr ""
 "<para>បាន​សរសេរ​សំណើរ​ដោយជោគជ័យទៅ​កាន់ <filename>%1</filename> ។</para><para>អ្នក​គួរ​"
 "ផ្ញើ​សំណើ​ឥឡូវ​ទៅ​កាន់ Certification Authority (CA) ។</para>"
 
-#: newcertificatewizard/newcertificatewizard.cpp:701
+#: newcertificatewizard/newcertificatewizard.cpp:713
 msgctxt "@title"
 msgid "Request Saved"
 msgstr "បាន​រក្សាទុក​សំណើ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:709
+#: newcertificatewizard/newcertificatewizard.cpp:721
 msgid "Please process this certificate."
 msgstr "សូម​ដំណើរការ​វិញ្ញាបនបត្រ​នេះ ។"
 
-#: newcertificatewizard/newcertificatewizard.cpp:710
+#: newcertificatewizard/newcertificatewizard.cpp:722
 msgid ""
 "Please process this certificate and inform the sender about the location to "
 "fetch the resulting certificate.\n"
@@ -6016,15 +6088,15 @@ msgstr ""
 "\n"
 "សូម​អរគុណ\n"
 
-#: newcertificatewizard/newcertificatewizard.cpp:734
+#: newcertificatewizard/newcertificatewizard.cpp:746
 msgid "My new OpenPGP certificate"
 msgstr "វិញ្ញាបនបត្រ OpenPGP ថ្មី​របស់​ខ្ញុំ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:735
+#: newcertificatewizard/newcertificatewizard.cpp:747
 msgid "Please find attached my new OpenPGP certificate."
 msgstr "សូម​រក​វិញ្ញាបនបត្រ OpenPGP ថ្មី​របស់​ខ្ញុំ​ដែល​បានភ្ជាប់ជា​មួយ ។"
 
-#: newcertificatewizard/newcertificatewizard.cpp:766
+#: newcertificatewizard/newcertificatewizard.cpp:778
 msgctxt "@info"
 msgid ""
 "<para><application>Kleopatra</application> tried to send a mail via your "
@@ -6041,120 +6113,177 @@ msgstr ""
 "<application>Kleopatra</application> នៅ​លើ​បង្អួច​កម្មវិធី​តែងសារ​របស់​កម្មវិធី​អ៊ីមែល​របស់​អ្នក ។"
 "</para><para>ប្រសិន​បើ​វា​មិន​ធ្វើការ រក្សាទុក​សំណើ​​ទៅ​ឯកសារ និង​បន្ទាប់​មក​ភ្ជាប់​វា ។</para>"
 
-#: newcertificatewizard/newcertificatewizard.cpp:770
+#: newcertificatewizard/newcertificatewizard.cpp:782
 msgctxt "@title"
 msgid "Sending Mail"
 msgstr "ផ្ញើ​អ៊ីមែល"
 
-#: newcertificatewizard/newcertificatewizard.cpp:806
+#: newcertificatewizard/newcertificatewizard.cpp:818
 msgctxt "@info"
 msgid ""
 "This operation will delete the certification request. Please make sure that "
 "you have sent or saved it before proceeding."
 msgstr "ប្រតិបត្តិការនេះ​នឹង​លុប​សំណើ​បញ្ជាក់ ។ សូម​ប្រាកដ​ថា អ្នក​បាន​ផ្ញើ ឬ​រក្សា​វា​ទុក​មុននឹង​បន្ត ។"
 
-#: newcertificatewizard/newcertificatewizard.cpp:808
+#: newcertificatewizard/newcertificatewizard.cpp:820
 msgctxt "@title"
 msgid "Certification Request About To Be Deleted"
 msgstr "សំណើ​វិញ្ញាបនបត្រ​រៀបនឹង​ត្រូវ​បាន​លុប"
 
-#: newcertificatewizard/newcertificatewizard.cpp:839
+#: newcertificatewizard/newcertificatewizard.cpp:851
 msgctxt "@title"
 msgid "Certificate Creation Wizard"
 msgstr "អ្នក​ជំនួយការ​បង្កើត​វិញ្ញាបនបត្រ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:900
+#: newcertificatewizard/newcertificatewizard.cpp:912
 msgid "Comment"
 msgstr "សេចក្ដី​អធិប្បាយ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:915
-#, kde-format
+#: newcertificatewizard/newcertificatewizard.cpp:927
+#, fuzzy, kde-format
+#| msgctxt "Format string for the labels in the \"Your Personal Data\" page"
+#| msgid "%1 (%2):"
 msgctxt "Format string for the labels in the \"Your Personal Data\" page"
-msgid "%1 (%2):"
+msgid "%1 (%2)"
 msgstr "%1 (%2) ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1177
+#: newcertificatewizard/newcertificatewizard.cpp:1014
+#, fuzzy, kde-format
+#| msgctxt "tag( \"OpenPGP\" or \"CMS\"),  operation description"
+#| msgid "%1: %2"
+msgctxt "interpunctation for labels"
+msgid "%1:"
+msgstr "%1 ៖ %2"
+
+#: newcertificatewizard/newcertificatewizard.cpp:1172
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "<interface>Real name</interface> is required, but missing."
+msgctxt "@info"
+msgid "<interface>%1</interface> is required, but empty."
+msgstr "ត្រូវការ <interface>ឈ្មោះ​ពិត</interface> ប៉ុន្តែ​មិនមាន ។"
+
+#: newcertificatewizard/newcertificatewizard.cpp:1174
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<interface>%1</interface> is required, but empty.<nl/>Local Admin rule: "
+"<icode>%2</icode>"
+msgstr ""
+
+#: newcertificatewizard/newcertificatewizard.cpp:1180
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "<interface>EMail address</interface> is incomplete."
+msgctxt "@info"
+msgid "<interface>%1</interface> is incomplete."
+msgstr "<interface>អាសយដ្ឋាន​អ៊ីមែល</interface> គឺ​មិន​ពេញលេញ ។"
+
+#: newcertificatewizard/newcertificatewizard.cpp:1182
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<interface>%1</interface> is incomplete.<nl/>Local Admin rule: <icode>%2</"
+"icode>"
+msgstr ""
+
+#: newcertificatewizard/newcertificatewizard.cpp:1187
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "<interface>EMail address</interface> is invalid."
+msgctxt "@info"
+msgid "<interface>%1</interface> is invalid."
+msgstr "<interface>អាសយដ្ឋាន​អ៊ីមែល</interface> គឺ​មិន​ត្រឹមត្រូវ ។"
+
+#: newcertificatewizard/newcertificatewizard.cpp:1189
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<interface>%1</interface> is invalid.<nl/>Local Admin rule: <icode>%2</icode>"
+msgstr ""
+
+#: newcertificatewizard/newcertificatewizard.cpp:1233
 msgid "Authenticate"
 msgstr "ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1227
+#: newcertificatewizard/newcertificatewizard.cpp:1283
 msgid "Key Type:"
 msgstr "ប្រភេទ​សោ ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1229
-#: newcertificatewizard/newcertificatewizard.cpp:1231
+#: newcertificatewizard/newcertificatewizard.cpp:1285
+#: newcertificatewizard/newcertificatewizard.cpp:1287
 msgid "Key Strength:"
 msgstr "កម្លាំង​សោ ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1231
-#: newcertificatewizard/newcertificatewizard.cpp:1243
+#: newcertificatewizard/newcertificatewizard.cpp:1287
+#: newcertificatewizard/newcertificatewizard.cpp:1299
 msgid "default"
 msgstr "លំនាំដើម"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1234
+#: newcertificatewizard/newcertificatewizard.cpp:1290
 msgid "Key Usage:"
 msgstr "កា​រប្រើប្រាស់​សោ ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1234
-#: newcertificatewizard/newcertificatewizard.cpp:1236
-#: newcertificatewizard/newcertificatewizard.cpp:1244
+#: newcertificatewizard/newcertificatewizard.cpp:1290
+#: newcertificatewizard/newcertificatewizard.cpp:1292
+#: newcertificatewizard/newcertificatewizard.cpp:1300
 msgctxt "separator for key usages"
 msgid ",&nbsp;"
 msgstr ",&nbsp;"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1236
+#: newcertificatewizard/newcertificatewizard.cpp:1292
 msgid "Certificate Usage:"
 msgstr "ការ​ប្រើប្រាស់​វិញ្ញាបនបត្រ ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1239
+#: newcertificatewizard/newcertificatewizard.cpp:1295
 msgid "Subkey Type:"
 msgstr "ប្រភេទ​សោរង ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1241
-#: newcertificatewizard/newcertificatewizard.cpp:1243
+#: newcertificatewizard/newcertificatewizard.cpp:1297
+#: newcertificatewizard/newcertificatewizard.cpp:1299
 msgid "Subkey Strength:"
 msgstr "កម្លាំង​សោ​រង ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1244
+#: newcertificatewizard/newcertificatewizard.cpp:1300
 msgid "Subkey Usage:"
 msgstr "កា​រប្រើប្រាស់​សោ​រង ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1247
+#: newcertificatewizard/newcertificatewizard.cpp:1303
 msgid "Valid Until:"
 msgstr "មាន​សុពលភាព​ដល់ ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1248
+#: newcertificatewizard/newcertificatewizard.cpp:1304
 msgid "Email Address:"
 msgstr "អាសយដ្ឋាន​អ៊ីមែល ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1250
+#: newcertificatewizard/newcertificatewizard.cpp:1306
 msgid "Real Name:"
 msgstr "ឈ្មោះពិត ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1254
+#: newcertificatewizard/newcertificatewizard.cpp:1310
 msgid "Subject-DN:"
 msgstr "ប្រធាន​បទ DN ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1256
+#: newcertificatewizard/newcertificatewizard.cpp:1312
 msgid "Add. Email Address:"
 msgstr "បន្ថែម​អាសយដ្ឋាន​អ៊ីមែល ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1258
+#: newcertificatewizard/newcertificatewizard.cpp:1314
 msgid "DNS Name:"
 msgstr "ឈ្មោះ DNS ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1260
+#: newcertificatewizard/newcertificatewizard.cpp:1316
 msgid "URI:"
 msgstr "URI ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1318
+#: newcertificatewizard/newcertificatewizard.cpp:1374
 #, kde-format
 msgctxt "%2: some admin-supplied text, %1: key size in bits"
 msgid "%2 (1 bit; default)"
 msgid_plural "%2 (%1 bits; default)"
 msgstr[0] ""
 
-#: newcertificatewizard/newcertificatewizard.cpp:1319
+#: newcertificatewizard/newcertificatewizard.cpp:1375
 #, fuzzy, kde-format
 #| msgctxt "Format string for the labels in the \"Your Personal Data\" page"
 #| msgid "%1 (%2):"
@@ -6163,7 +6292,7 @@ msgid "%2 (1 bit)"
 msgid_plural "%2 (%1 bits)"
 msgstr[0] "%1 (%2) ៖"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1321
+#: newcertificatewizard/newcertificatewizard.cpp:1377
 #, fuzzy, kde-format
 #| msgid "default"
 msgctxt "%1: key size in bits"
@@ -6171,7 +6300,7 @@ msgid "1 bit (default)"
 msgid_plural "%1 bits (default)"
 msgstr[0] "លំនាំដើម"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1322
+#: newcertificatewizard/newcertificatewizard.cpp:1378
 #, fuzzy, kde-format
 #| msgid "%1-bit %2"
 msgctxt "%1: key size in bits"
@@ -6179,7 +6308,7 @@ msgid "1 bit"
 msgid_plural "%1 bits"
 msgstr[0] "%1-ប៊ីត %2"
 
-#: newcertificatewizard/newcertificatewizard.cpp:1379
+#: newcertificatewizard/newcertificatewizard.cpp:1442
 #, fuzzy
 #| msgid "Importing more than one file at a time is not yet implemented."
 msgctxt "@info:tooltip"
