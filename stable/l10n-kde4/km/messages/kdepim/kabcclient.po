@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kabcclient\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2009-03-03 10:24+0100\n"
+"POT-Creation-Date: 2010-02-26 20:29+0100\n"
 "PO-Revision-Date: 2009-05-19 16:17+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -18,6 +18,71 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
+
+#: src/kabcclient.cpp:48
+msgid "Saving modifications to address book failed"
+msgstr "បានបរាជ័យ​ក្នុងការ​​រក្សាទុក​ការ​កែប្រែ​ទៅ​សៀវភៅ​អាសយដ្ឋាន"
+
+#: src/kabcclient.cpp:49
+#, kde-format
+msgid ""
+"Input number %1 matches more than one contact. Skipping it to avoid "
+"undesired results"
+msgstr "លេខ​បញ្ចូល %1 ផ្គូផ្គង​ទំនាក់ទំនង​ច្រើនជាង​មួយ ។ រំលង​វា​ដើម្បីជៀសវាង​លទ្ធផល​ដែល​មិន​ចង់​បាន"
+
+#: src/kabcclient.cpp:92
+#, kde-format
+msgid "Input format '%1' not usable with operation '%2'"
+msgstr "ទ្រង់ទ្រាយ​បញ្ចូល '%1' មិនអាច​ប្រើ​បាន​ជា​មួយ​ប្រតិបត្តិការ '%2' ទេ"
+
+#: src/inputformatimpls.cpp:46
+msgid "Interprets input as a unique KABC contact identifier"
+msgstr "បកប្រែ​ការ​បញ្ចូលជា​ឧបករណ៍​កំណត់​អត្តសញ្ញាណ​ទំនាក់ទំនង​តែ​មួយគត់ KABC"
+
+#: src/inputformatimpls.cpp:104
+msgid "Interprets input as VCard data"
+msgstr "បកប្រែ​ការ​បញ្ចូល​ជា​ទិន្នន័យ VCard"
+
+#: src/inputformatimpls.cpp:134
+#, kde-format
+msgid ""
+"Warning: using codec '%1' with input format vcard, but vCards are usually "
+"expected to be in UTF-8."
+msgstr ""
+"ការ​ព្រមាន ៖ ប្រើ​កូឌិក '%1' ជា​មួយ​នឹង​ទ្រង់ទ្រាយ​បញ្ចូល vcard ប៉ុន្តែ​ vCards តាមធម្មតា​ត្រូវ​បានរំពឹង​"
+"ថា​ស្ថិត​ក្នុង​ទ្រង់ទ្រាយ UTF-8 ។"
+
+#: src/inputformatimpls.cpp:180
+msgid "Interprets input as email and optional name"
+msgstr "បកប្រែ​ការ​បញ្ចូល​ជា​អ៊ីមែល និង​​ឈ្មោះ​ជម្រើស"
+
+#: src/inputformatimpls.cpp:244
+msgid ""
+"Tries to get email and name from input,\n"
+"\t\totherwise sets input text for both"
+msgstr ""
+"ព្យាយាម​ទទួល​សំបុត្រ​ និងឈ្មោះ​ពី​កា​របញ្ចូល\n"
+"\t\tបើ​ដូច្នេះ​ទេ​កំណត់​អត្ថបទ​បញ្ចូល​សម្រាប់​ទាំងពីរ"
+
+#: src/inputformatimpls.cpp:317
+msgid ""
+"Interprets the input as a name.\n"
+"\t\tRecommended format is 'lastname, firstname middlename'"
+msgstr ""
+"បកប្រែ​ការ​បញ្ចូល​ជា​ឈ្មោះ ។\n"
+"\t\tទ្រង់ទ្រាយ​ដែល​បានផ្ដល់​អនុសាសន៍គឺ​ 'lastname, firstname middlename'"
+
+#: src/inputformatimpls.cpp:381
+msgid "Interprets the input as a delimiter separated list of fields."
+msgstr "បកប្រែ​ការ​បញ្ចូល​ជា​សញ្ញា​កំណត់ព្រំដែន​ដែលបានបំបែក​បញ្ជី​វាល ។"
+
+#: src/inputformatimpls.cpp:401 src/outputformatimpls.cpp:631
+msgid "Specify one of the following CSV templates:"
+msgstr "បញ្ជាក់​ពុម្ព CSV ក្នុង​ចំណោមពុម្ព CSV ដូច​ខាង​ក្រោម ៖"
+
+#: src/inputformatimpls.cpp:569
+msgid "Select contacts in a dialog instead of reading input text"
+msgstr "ជ្រើស​ទំនាក់ទំនង​នៅ​ក្នុង​ប្រអប់​ជំនួស​ឲ្យ​ការ​អាន​អត្ថបទ​បញ្ចូល"
 
 #: src/outputformatimpls.cpp:54
 msgid "Writes the unique KABC contact identifier"
@@ -111,26 +176,6 @@ msgstr "ដែល​ចូលចិត្ត​ជាង"
 #: src/outputformatimpls.cpp:611
 msgid "Writes the data as a delimiter separated list of values"
 msgstr "សរសេរ​ទិន្នន័យ​ជា​ដែន​កំណត់​ដែលបានបំបែក​ដោយ​បញ្ជី​តម្លៃ"
-
-#: src/outputformatimpls.cpp:631 src/inputformatimpls.cpp:401
-msgid "Specify one of the following CSV templates:"
-msgstr "បញ្ជាក់​ពុម្ព CSV ក្នុង​ចំណោមពុម្ព CSV ដូច​ខាង​ក្រោម ៖"
-
-#: src/kabcclient.cpp:48
-msgid "Saving modifications to address book failed"
-msgstr "បានបរាជ័យ​ក្នុងការ​​រក្សាទុក​ការ​កែប្រែ​ទៅ​សៀវភៅ​អាសយដ្ឋាន"
-
-#: src/kabcclient.cpp:49
-#, kde-format
-msgid ""
-"Input number %1 matches more than one contact. Skipping it to avoid "
-"undesired results"
-msgstr "លេខ​បញ្ចូល %1 ផ្គូផ្គង​ទំនាក់ទំនង​ច្រើនជាង​មួយ ។ រំលង​វា​ដើម្បីជៀសវាង​លទ្ធផល​ដែល​មិន​ចង់​បាន"
-
-#: src/kabcclient.cpp:92
-#, kde-format
-msgid "Input format '%1' not usable with operation '%2'"
-msgstr "ទ្រង់ទ្រាយ​បញ្ចូល '%1' មិនអាច​ប្រើ​បាន​ជា​មួយ​ប្រតិបត្តិការ '%2' ទេ"
 
 #: src/main.cpp:64
 msgid "KABC client"
@@ -370,51 +415,6 @@ msgstr "ស្វែងរក​សៀវភៅ​អាសយដ្ឋាន​
 #: src/main.cpp:503
 msgid "No matches in KDE address book"
 msgstr "គ្មានការ​ផ្គូផ្គង​សៀវភៅ​​អាសយដ្ឋាន​នៅ​ក្នុង KDE"
-
-#: src/inputformatimpls.cpp:46
-msgid "Interprets input as a unique KABC contact identifier"
-msgstr "បកប្រែ​ការ​បញ្ចូលជា​ឧបករណ៍​កំណត់​អត្តសញ្ញាណ​ទំនាក់ទំនង​តែ​មួយគត់ KABC"
-
-#: src/inputformatimpls.cpp:104
-msgid "Interprets input as VCard data"
-msgstr "បកប្រែ​ការ​បញ្ចូល​ជា​ទិន្នន័យ VCard"
-
-#: src/inputformatimpls.cpp:134
-#, kde-format
-msgid ""
-"Warning: using codec '%1' with input format vcard, but vCards are usually "
-"expected to be in UTF-8."
-msgstr ""
-"ការ​ព្រមាន ៖ ប្រើ​កូឌិក '%1' ជា​មួយ​នឹង​ទ្រង់ទ្រាយ​បញ្ចូល vcard ប៉ុន្តែ​ vCards តាមធម្មតា​ត្រូវ​បានរំពឹង​"
-"ថា​ស្ថិត​ក្នុង​ទ្រង់ទ្រាយ UTF-8 ។"
-
-#: src/inputformatimpls.cpp:180
-msgid "Interprets input as email and optional name"
-msgstr "បកប្រែ​ការ​បញ្ចូល​ជា​អ៊ីមែល និង​​ឈ្មោះ​ជម្រើស"
-
-#: src/inputformatimpls.cpp:244
-msgid ""
-"Tries to get email and name from input,\n"
-"\t\totherwise sets input text for both"
-msgstr ""
-"ព្យាយាម​ទទួល​សំបុត្រ​ និងឈ្មោះ​ពី​កា​របញ្ចូល\n"
-"\t\tបើ​ដូច្នេះ​ទេ​កំណត់​អត្ថបទ​បញ្ចូល​សម្រាប់​ទាំងពីរ"
-
-#: src/inputformatimpls.cpp:317
-msgid ""
-"Interprets the input as a name.\n"
-"\t\tRecommended format is 'lastname, firstname middlename'"
-msgstr ""
-"បកប្រែ​ការ​បញ្ចូល​ជា​ឈ្មោះ ។\n"
-"\t\tទ្រង់ទ្រាយ​ដែល​បានផ្ដល់​អនុសាសន៍គឺ​ 'lastname, firstname middlename'"
-
-#: src/inputformatimpls.cpp:381
-msgid "Interprets the input as a delimiter separated list of fields."
-msgstr "បកប្រែ​ការ​បញ្ចូល​ជា​សញ្ញា​កំណត់ព្រំដែន​ដែលបានបំបែក​បញ្ជី​វាល ។"
-
-#: src/inputformatimpls.cpp:569
-msgid "Select contacts in a dialog instead of reading input text"
-msgstr "ជ្រើស​ទំនាក់ទំនង​នៅ​ក្នុង​ប្រអប់​ជំនួស​ឲ្យ​ការ​អាន​អត្ថបទ​បញ្ចូល"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
