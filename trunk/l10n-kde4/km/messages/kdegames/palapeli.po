@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: palapeli\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-02-28 14:12+0100\n"
+"POT-Creation-Date: 2010-03-30 04:27+0200\n"
 "PO-Revision-Date: 2009-10-24 23:01+0700\n"
 "Last-Translator: Morn Met\n"
 "Language-Team: Khmer <kde-i18n-doc@kde.org>\n"
@@ -174,12 +174,17 @@ msgid ""
 msgstr ""
 "មិន​អាច​បង្កើត​ល្បែង​ផ្គុំ​រូប​បាន​ទេ​ ៖ បាន​​បរាជ័យ​ក្នុង​ការ​ចិត​ចំណិត​ដោយ​សារ​តែ​មាន​បញ្ហាដែល​ពុំ​ត្រូវ​បាន​កំណត់​ ។"
 
-#: src/engine/view.cpp:150
+#: src/engine/texturehelper.cpp:66
+msgctxt "@item:inlistbox"
+msgid "Single color"
+msgstr ""
+
+#: src/engine/view.cpp:161
 #, fuzzy
 msgid "Your progress is saved automatically while you play."
 msgstr "វឌ្ឍន​ភាព​របស់​អ្នក​ត្រូវ​បាន​រក្សា​ទុក​ខណៈ​ពេល​ដែល​អ្ន​ក​កំពុង​តែ​លេង​ ។"
 
-#: src/engine/view.cpp:150
+#: src/engine/view.cpp:161
 #, fuzzy
 msgctxt "used as caption for a dialog that explains the autosave feature"
 msgid "Automatic saving"
@@ -278,14 +283,12 @@ msgstr "%1% បាន​បញ្ចប់ "
 msgid "Show statusbar of puzzle table"
 msgstr "បង្ហាញ​របារ​ស្ថាន​ភាព​របស់​តារាង​ល្បែងផ្គុំ​រូប​"
 
-#. i18n: file: src/settings.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: src/window/mainwindow.cpp:67 rc.cpp:23
+#: src/window/mainwindow.cpp:67
 #, fuzzy
 msgid "Puzzle table"
 msgstr "តារាង​ល្បែង​ផ្គុំ​រូប"
 
-#: src/window/mainwindow.cpp:187
+#: src/window/mainwindow.cpp:191
 #, fuzzy
 msgid "General settings"
 msgstr "ការ​កំណត់​ទូទៅ"
@@ -380,15 +383,31 @@ msgid "Precision of snapping (as a percentage of piece size)."
 msgstr "ចំនួន​ខ្ទង់​នៃ​ការ​ខ្ទាស់​ (ជា​ភាគ​​រយ​នៃ​ទំហំ​ចំណិត) ។"
 
 #. i18n: file: src/palapeli.kcfg:12
-#. i18n: ectx: label, entry (ViewBackground), group (Appearance)
+#. i18n: ectx: label, entry (ViewBackgroundStyle), group (Appearance)
 #: rc.cpp:14
+msgid ""
+"The type of background to use for the view. Possible values are \"texture"
+"\" (use image from \"ViewBackground\" key) or \"color\" (use color from "
+"\"ViewBackgroundColor\" key)."
+msgstr ""
+
+#. i18n: file: src/palapeli.kcfg:16
+#. i18n: ectx: label, entry (ViewBackground), group (Appearance)
+#: rc.cpp:17
 #, fuzzy
 msgid "The background image to use for the View."
 msgstr "រូប​ភាព​ផ្ទៃ​ខាង​ក្រោយ​ដែល​ត្រូវ​ប្រើ​សម្រាប់​ទិដ្ឋភាព​ ។"
 
-#. i18n: file: src/palapeli.kcfg:16
+#. i18n: file: src/palapeli.kcfg:20
+#. i18n: ectx: label, entry (ViewBackgroundColor), group (Appearance)
+#: rc.cpp:20
+#, fuzzy
+msgid "The background color to use for the View."
+msgstr "រូប​ភាព​ផ្ទៃ​ខាង​ក្រោយ​ដែល​ត្រូវ​ប្រើ​សម្រាប់​ទិដ្ឋភាព​ ។"
+
+#. i18n: file: src/palapeli.kcfg:24
 #. i18n: ectx: label, entry (ShowStatusBar), group (Appearance)
-#: rc.cpp:17
+#: rc.cpp:23
 #, fuzzy
 msgid ""
 "Whether to show the status bar on the puzzle table. (It is not a real status "
@@ -397,35 +416,39 @@ msgstr ""
 "ថា​តើ​ត្រូវ​បង្ហាញ​របារ​ស្ថាន​ភាព​នៅ​លើ​តារាង​ល្បែង​ផ្គុំ​រូប​ឬ​អត់​ ។ (វា​មិន​មែន​ជា​របារ​ស្ថាន​ភាព​ ពិត​ទេ​ ប៉ុន្តែ​"
 "ទី​តាំង​ និង​មុខ​​ងារដែល​បាន​ផ្តល់​ឲ្យ​ស្រដៀង​គ្នា ។)"
 
-#. i18n: file: src/palapeli.kcfg:20
-#. i18n: ectx: label, entry (LeftMouseButtonMovesView), group (Appearance)
-#: rc.cpp:20
+#. i18n: file: src/settings.ui:17
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:26
 #, fuzzy
-msgid ""
-"Whether dragging with the left mouse button down will move the viewport."
-msgstr "ថា​តើ​នឹង​អូស​ចុះ​ក្រោម​ជា​មួយ​ប៊ូតុង​កណ្តុរ​ឆ្វេង​ដែល​នឹង​ផ្លាស់​ទីច្រក​ទិដ្ឋ​ភាព​ឬ​អត់​ ។"
+msgctxt "@title:group"
+msgid "Puzzle table"
+msgstr "តារាង​ល្បែង​ផ្គុំ​រូប"
 
 #. i18n: file: src/settings.ui:23
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:26
+#: rc.cpp:29
 #, fuzzy
+msgctxt "@label:chooser for different types of background textures"
 msgid "Background:"
 msgstr "ផ្ទៃ​ខាង​ក្រោយ​ ៖"
 
-#. i18n: file: src/settings.ui:65
+#. i18n: file: src/settings.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_1)
-#: rc.cpp:29
+#: rc.cpp:32
 #, fuzzy
 #| msgid "Piece snapping precision"
+msgctxt "@label:slider"
 msgid "Snapping precision:"
 msgstr "ចំនួន​ខ្ទង់​ដែល​បាន​ខ្ទាស់​ ៖"
 
-#. i18n: file: src/settings.ui:79
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:32
 #, fuzzy
-msgid "Dragging with the left mouse button moves viewport"
-msgstr "អូស​ជា​មួយ​ប៊ូតុង​កណ្តុរ​ឆ្វេង​នឹង​ផ្លាស់​ទី​ច្រក​ទិដ្ឋ​ភាព​"
+#~ msgid ""
+#~ "Whether dragging with the left mouse button down will move the viewport."
+#~ msgstr "ថា​តើ​នឹង​អូស​ចុះ​ក្រោម​ជា​មួយ​ប៊ូតុង​កណ្តុរ​ឆ្វេង​ដែល​នឹង​ផ្លាស់​ទីច្រក​ទិដ្ឋ​ភាព​ឬ​អត់​ ។"
+
+#, fuzzy
+#~ msgid "Dragging with the left mouse button moves viewport"
+#~ msgstr "អូស​ជា​មួយ​ប៊ូតុង​កណ្តុរ​ឆ្វេង​នឹង​ផ្លាស់​ទី​ច្រក​ទិដ្ឋ​ភាព​"
 
 #, fuzzy
 #~| msgid "Main toolbar"
