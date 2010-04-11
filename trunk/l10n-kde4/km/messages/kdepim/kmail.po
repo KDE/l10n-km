@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-04-10 04:42+0200\n"
+"POT-Creation-Date: 2010-04-11 05:14+0200\n"
 "PO-Revision-Date: 2010-02-02 15:27+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -307,7 +307,7 @@ msgstr "លុប"
 
 #: kmfilterdlg.cpp:771 collectiongeneralpage.cpp:146
 #: managesievescriptsdialog.cpp:366 attachmentcontroller.cpp:606
-#: kmcomposewin.cpp:2914
+#: kmcomposewin.cpp:2915
 msgid "unnamed"
 msgstr "​គ្មាន​ឈ្មោះ"
 
@@ -1024,6 +1024,14 @@ msgstr "ការផ្លាស់ទី​សារចាស់ៗពីថត
 msgid "There is nothing to undo."
 msgstr "គ្មាន​អ្វី​ដែល​មិនត្រូវ​ធ្វើ​វិញ​ទេ ។"
 
+#: kmmainwin.cpp:57
+msgid "New &Window"
+msgstr "​បង្អួច​ថ្មី"
+
+#: kmmainwin.cpp:205
+msgid "Starting..."
+msgstr "កំពុង​ចាប់ផ្ដើម..."
+
 #. i18n: file: tips:2
 #. i18n: ectx: @info:tipoftheday
 #: tips.cpp:3
@@ -1148,14 +1156,6 @@ msgstr ""
 "<em>សារ-&gt;ឆ្លើយតប​ដោយ​គ្មាន​ការដកស្រង់</em> ។</p>\n"
 "<p align=\"right\"><em>បានចែកចាយ​ដោយ David F. Newman</em></p>\n"
 
-#: kmmainwin.cpp:57
-msgid "New &Window"
-msgstr "​បង្អួច​ថ្មី"
-
-#: kmmainwin.cpp:205
-msgid "Starting..."
-msgstr "កំពុង​ចាប់ផ្ដើម..."
-
 #: kmsearchpattern.h:249
 msgctxt "message status"
 msgid "Important"
@@ -1248,22 +1248,13 @@ msgstr "មិនស្គាល់ថត '%1'"
 msgid "Please select a folder"
 msgstr "សូមជ្រើស​ថត​មួយ"
 
-#: util.cpp:69
-#, kde-format
-msgid "Distribution list \"%1\" is empty, it cannot be used."
-msgstr "បញ្ជី​ចែកចាយ \"%1\" ទទេ វា​មិនអាច​ត្រូវ​បានប្រើ​នោះទេ ។"
-
-#: util.cpp:70 util.cpp:79 identitydialog.cpp:536
-msgid "Invalid Email Address"
-msgstr "អាសយដ្ឋាន​អ៊ីមែល​មិនត្រឹមត្រូវ"
-
-#: util.cpp:182
+#: util.cpp:154
 #, fuzzy
 #| msgid "Could not start certificate manager. Please check your installation."
 msgid "Could not start the account wizard. Please check your installation."
 msgstr "មិនអាច​ចាប់ផ្ដើម​កម្មវិធី​គ្រប់គ្រង​វិញ្ញាបនបត្រ​បានឡើយ ។ សូម​ពិនិត្យ្រ​មើល​កដំឡើង​របស់អ្នក ។n."
 
-#: util.cpp:184
+#: util.cpp:156
 #, fuzzy
 #| msgid "Unable to create account"
 msgid "Unable to start account wizard"
@@ -1569,7 +1560,7 @@ msgstr "KMail ត្រូវបាន​កំណត់​ឲ្យនៅលើ
 msgid "KMail is currently in offline mode. How do you want to proceed?"
 msgstr "បច្ចុប្បន្ន KMail នៅក្នុង​របៀប​ក្រៅបណ្ដាញ ។ តើអ្នក​ចង់​បន្ត​ដោយ​របៀបណា ?"
 
-#: kmkernel.cpp:887 kmcomposewin.cpp:3100
+#: kmkernel.cpp:887 kmcomposewin.cpp:3101
 msgid "Online/Offline"
 msgstr "លើបណ្ដាញ/ក្រៅបណ្ដាញ"
 
@@ -1880,12 +1871,12 @@ msgid ""
 msgstr ""
 "ប៊ូតុង​នេះ​បើក​ប្រអប់​ដែល​ផ្សេងពីគ្នា​ ដែលអ្នក​អាច​ជ្រើស​អ្នកទទួល​នៅខាងក្រៅ​​អាសយដ្ឋាន​ដែលមាន​ទាំងអស់ ។"
 
-#: redirectdialog.cpp:87 kmcomposewin.cpp:3369
+#: redirectdialog.cpp:87 kmcomposewin.cpp:3392
 msgid "&Send Now"
 msgstr "ផ្ញើ​ឥឡូវ"
 
-#: redirectdialog.cpp:88 kmcomposewin.cpp:1133 kmcomposewin.cpp:1142
-#: kmcomposewin.cpp:3370
+#: redirectdialog.cpp:88 kmcomposewin.cpp:1134 kmcomposewin.cpp:1143
+#: kmcomposewin.cpp:3393
 msgid "Send &Later"
 msgstr "ផ្ញើពេលក្រោយ"
 
@@ -1896,6 +1887,16 @@ msgstr "អ្នក​មិនអាច​ប្ដូរទិស​សារ
 #: redirectdialog.cpp:123
 msgid "Empty Redirection Address"
 msgstr "អាសយដ្ឋាន​ប្ដូរទិស​ទទេ"
+
+#: addressvalidationjob.cpp:288
+#, kde-format
+msgid "Distribution list \"%1\" is empty, it cannot be used."
+msgstr "បញ្ជី​ចែកចាយ \"%1\" ទទេ វា​មិនអាច​ត្រូវ​បានប្រើ​នោះទេ ។"
+
+#: addressvalidationjob.cpp:290 addressvalidationjob.cpp:299
+#: identitydialog.cpp:536
+msgid "Invalid Email Address"
+msgstr "អាសយដ្ឋាន​អ៊ីមែល​មិនត្រឹមត្រូវ"
 
 #: rulewidgethandlermanager.cpp:406 rulewidgethandlermanager.cpp:726
 #: rulewidgethandlermanager.cpp:1233
@@ -5885,7 +5886,7 @@ msgstr "ស្ថានភាព​នៅ​លើ​បណ្ដាញ (មិ�
 msgid "Send Queued Messages Via"
 msgstr "ផ្ញើសារ​ជាជួរ​តាមរយៈ"
 
-#: kmmainwidget.cpp:3006 kmcomposewin.cpp:1201
+#: kmmainwidget.cpp:3006 kmcomposewin.cpp:1202
 msgid "&Address Book"
 msgstr "​សៀវភៅ​អាសយដ្ឋាន​"
 
@@ -6455,7 +6456,7 @@ msgstr "ភ្ជាប់​កូនសោ​សាធារណៈ..."
 msgid "Attach &My Public Key"
 msgstr "ភ្ជាប់​កូនសោសាធារណៈ​របស់ខ្ញុំ"
 
-#: attachmentcontroller.cpp:404 kmcomposewin.cpp:1993
+#: attachmentcontroller.cpp:404 kmcomposewin.cpp:1994
 msgid "&Attach File..."
 msgstr "ភ្ជាប់​ឯកសារ..."
 
@@ -7762,7 +7763,7 @@ msgstr "​ហត្ថលេខា"
 msgid "Picture"
 msgstr "រូបភាព"
 
-#: identitydialog.cpp:561
+#: identitydialog.cpp:571
 #, kde-format
 msgid ""
 "One of the configured OpenPGP signing keys does not contain any user ID with "
@@ -7775,7 +7776,7 @@ msgstr ""
 "ការនេះ​អាច​មានលទ្ធផល​នៅក្នុង​សារព្រមាន​នៅលើ​ផ្នែក​ការទទួល​នៅពេល​ដែលកំពុង​ព្យាយាមផ្ទៀងផ្ទាត់​ហត្ថលេខា​"
 "ដែលបានធ្វើ​ដោយ​ការកំណត់​រចនាសម្ព័ន្ធ​នេះ ។"
 
-#: identitydialog.cpp:569
+#: identitydialog.cpp:579
 #, kde-format
 msgid ""
 "One of the configured OpenPGP encryption keys does not contain any user ID "
@@ -7784,7 +7785,7 @@ msgstr ""
 "កូនសោ​អ៊ិនគ្រីប​ OpenPGP ដែលបាន​កំណត់​រចនាសម្ព័ន្ធ​មិនមាន​លេខសម្គាល់​របស់អ្នកប្រើ​ណាមួយ​ដែល​បានភ្ជាប់ជាមួយ​​"
 "អាសយដ្ឋាន​អ៊ីមែល​ដែលបាន​កំណត់​រចនា​សម្ព័ន្ធ​សម្រាប់​អត្តសញ្ញាណ (%1) នេះ​ឡើយ ។"
 
-#: identitydialog.cpp:575
+#: identitydialog.cpp:585
 #, kde-format
 msgid ""
 "One of the configured S/MIME signing certificates does not contain the "
@@ -7797,7 +7798,7 @@ msgstr ""
 "ការនេះ​អាចមានលទ្ធផល​នៅក្នុង​សារព្រមាន​នៅលើ​ផ្នែក​ទទួល​ នៅពេល​ដែលកំពុង​ព្យាយាម​ផ្ទៀងផ្ទាត់​ហត្ថលេខា​"
 "ដែលបានធ្វើ​ដោយ​ការកំណត់រចនា​សម្ព័ន្ធ​នេះ ។"
 
-#: identitydialog.cpp:583
+#: identitydialog.cpp:593
 #, kde-format
 msgid ""
 "One of the configured S/MIME encryption certificates does not contain the "
@@ -7806,20 +7807,20 @@ msgstr ""
 "វិញ្ញាបនបត្រ​អ៊ិនគ្រីប​ S/MIME ដែលបានកំណត់​រចនាសម្ព័ន្ធ​មួយ មិនមាន​អាសយដ្ឋាន​អ៊ីមែល​ដែលបាន​កំណត់​​"
 "រចនាសម្ព័ន្ធ​សម្រាប់​អ្តសញ្ញាណ (%1) នេះ ។"
 
-#: identitydialog.cpp:591
+#: identitydialog.cpp:601
 msgid "Email Address Not Found in Key/Certificates"
 msgstr "រក​អាសយដ្ឋាន​អ៊ីមែល​នៅក្នុង សោ/វិញ្ញាបនបត្រ​មិឃើញឡើយ"
 
-#: identitydialog.cpp:606
+#: identitydialog.cpp:616
 msgid "The signature file is not valid"
 msgstr "ឯកសារ​ហត្ថលេខា​មិនត្រឹមត្រូវ"
 
-#: identitydialog.cpp:626
+#: identitydialog.cpp:636
 #, kde-format
 msgid "Edit Identity \"%1\""
 msgstr "កែសម្រួល​អត្តសញ្ញាណ \"%1\""
 
-#: identitydialog.cpp:656
+#: identitydialog.cpp:666
 #, kde-format
 msgid ""
 "The custom sent-mail folder for identity \"%1\" does not exist (anymore); "
@@ -7828,7 +7829,7 @@ msgstr ""
 "មិនមានថត​សំបុត្រ​ដែលបានផ្ញើ​ផ្ទាល់ខ្លួន​សម្រាប់​អត្តសញ្ញាណ \"%1\" (តទៅទៀតឡើយ) ។ ដូច្នេះ​ ថត​សំបុត្រ​​"
 "ដែលបាន​ផ្ញើ​លំនាំដើម​នឹងត្រូវបាន​ប្រើ ។"
 
-#: identitydialog.cpp:668
+#: identitydialog.cpp:678
 #, kde-format
 msgid ""
 "The custom drafts folder for identity \"%1\" does not exist (anymore); "
@@ -7837,7 +7838,7 @@ msgstr ""
 "មិនមាន​ថត​សេចក្ដីព្រាង​ផ្ទាល់ខ្លួន​សម្រាប់​អត្តសញ្ញាណ \"%1\" (តទៅទៀតឡើយ) ។ ដូច្នេះ ថត​សេចក្ដីព្រាង​"
 "លំនាំដើម​នឹងត្រូវបានប្រើ ។"
 
-#: identitydialog.cpp:680
+#: identitydialog.cpp:690
 #, kde-format
 msgid ""
 "The custom templates folder for identity \"%1\" does not exist (anymore); "
@@ -8096,116 +8097,116 @@ msgstr ""
 "<p>វា​កំណត់​សៀវភៅ​អាសយដ្ឋាន​ដែល​ពេញចិត្ត ។<br />ប្រសិនបើ​វា​មិនអាច​ចូលដំណើរការ​បានទេ តម្រង​នឹង​ត្រឡប់​"
 "ទៅ​កាន់​សៀវភៅ​លំនាំដើម​វិញ ។</p>"
 
-#: kmcomposewin.cpp:222
+#: kmcomposewin.cpp:223
 #, fuzzy
 #| msgid "Select the KMail identity used for this account"
 msgid "Select an identity for this message"
 msgstr "ជ្រើស​អត្តសញ្ញាណ KMail ដែល​បាន​ប្រើ​សម្រាប់​គណនី​នេះ"
 
-#: kmcomposewin.cpp:225
+#: kmcomposewin.cpp:226
 msgid "Select the dictionary to use when spell-checking this message"
 msgstr ""
 
-#: kmcomposewin.cpp:229
+#: kmcomposewin.cpp:230
 msgid "Select the sent-mail folder where a copy of this message will be saved"
 msgstr ""
 
-#: kmcomposewin.cpp:236
+#: kmcomposewin.cpp:237
 msgid "Select the outgoing account to use for sending this message"
 msgstr ""
 
-#: kmcomposewin.cpp:238
+#: kmcomposewin.cpp:239
 msgid "Set the \"From:\" email address for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:240
+#: kmcomposewin.cpp:241
 msgid "Set the \"Reply-To:\" email address for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:251
+#: kmcomposewin.cpp:252
 #, fuzzy
 #| msgid "Set subject of message"
 msgid "Set a subject for this message"
 msgstr "កំណត់​ប្រធាន​បទ​សារ"
 
-#: kmcomposewin.cpp:252
+#: kmcomposewin.cpp:253
 msgid "&Identity:"
 msgstr "អត្តសញ្ញាណ ៖"
 
-#: kmcomposewin.cpp:253
+#: kmcomposewin.cpp:254
 msgid "&Dictionary:"
 msgstr "​វចនានុក្រម ៖ "
 
-#: kmcomposewin.cpp:254
+#: kmcomposewin.cpp:255
 msgid "&Sent-Mail folder:"
 msgstr "ថត សំបុត្រផ្ញើចេញ ៖"
 
-#: kmcomposewin.cpp:255
+#: kmcomposewin.cpp:256
 msgid "&Mail transport:"
 msgstr "ដឹកជញ្ជូន​សំបុត្រ ៖"
 
-#: kmcomposewin.cpp:256
+#: kmcomposewin.cpp:257
 msgctxt "sender address field"
 msgid "&From:"
 msgstr "ពី ៖"
 
-#: kmcomposewin.cpp:257
+#: kmcomposewin.cpp:258
 msgid "&Reply to:"
 msgstr "ឆ្លើយតបទៅ ៖"
 
-#: kmcomposewin.cpp:258
+#: kmcomposewin.cpp:259
 msgctxt "@label:textbox Subject of email."
 msgid "S&ubject:"
 msgstr "ប្រធានបទ ៖"
 
-#: kmcomposewin.cpp:259
+#: kmcomposewin.cpp:260
 msgctxt "@option:check Sticky identity."
 msgid "Sticky"
 msgstr "​ស្អិត"
 
-#: kmcomposewin.cpp:261
+#: kmcomposewin.cpp:262
 #, fuzzy
 #| msgid "Use the selected identity by default"
 msgid "Use the selected value as your identity for future messages"
 msgstr "ប្រើ​អត្តសញ្ញាណ​ដែល​បាន​ជ្រើស​តាម​លំនាំដើម"
 
-#: kmcomposewin.cpp:263
+#: kmcomposewin.cpp:264
 msgid "Use the selected value as your sent-mail folder for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:265
+#: kmcomposewin.cpp:266
 msgid "Use the selected value as your outgoing account for future messages"
 msgstr ""
 
-#: kmcomposewin.cpp:267
+#: kmcomposewin.cpp:268
 #, fuzzy
 #| msgid "Use the selected identity by default"
 msgid "Use the selected value as your dictionary for future messages"
 msgstr "ប្រើ​អត្តសញ្ញាណ​ដែល​បាន​ជ្រើស​តាម​លំនាំដើម"
 
-#: kmcomposewin.cpp:350 kmcomposewin.cpp:2278 configuredialog.cpp:925
+#: kmcomposewin.cpp:351 kmcomposewin.cpp:2279 configuredialog.cpp:925
 msgid "Composer"
 msgstr "កម្មវិធី​តែង"
 
-#: kmcomposewin.cpp:677
+#: kmcomposewin.cpp:678
 #, fuzzy
 #| msgid "Could not decrypt the data."
 msgid "Could not write all data to file."
 msgstr "មិនអាច​ឌិគ្រីប​ទិន្នន័យ​បានទេ ។"
 
-#: kmcomposewin.cpp:681
+#: kmcomposewin.cpp:682
 #, fuzzy
 #| msgid "Unable to finalize the archive file."
 msgid "Could not finalize the file."
 msgstr "មិនអាច​បញ្ចប់​ឯកសារ​ប័ណ្ណសារ​បាន​ទេ ។"
 
-#: kmcomposewin.cpp:686
+#: kmcomposewin.cpp:687
 #, fuzzy
 #| msgid "Cannot open file:"
 msgid "Could not open file."
 msgstr "មិនអាច​បើក​ឯកសារ ៖"
 
-#: kmcomposewin.cpp:692
+#: kmcomposewin.cpp:693
 #, fuzzy, kde-format
 #| msgid ""
 #| "Autosaving the message as %1 failed.\n"
@@ -8218,247 +8219,247 @@ msgstr ""
 "ការរក្សាទុក​សារ​ជា %1 ដោយស្វ័យប្រវត្តិ​បាន​បរាជ័យ ។\n"
 "មូលហេតុ ៖ %2"
 
-#: kmcomposewin.cpp:698
+#: kmcomposewin.cpp:699
 #, fuzzy
 #| msgid "Autosaving Failed"
 msgid "Autosaving Message Failed"
 msgstr "ការរក្សាទុក​ដោយស្វ័យ​​ប្រវត្តិ​បាន​បរាជ័យ"
 
-#: kmcomposewin.cpp:1123 kmcomposewin.cpp:1149
+#: kmcomposewin.cpp:1124 kmcomposewin.cpp:1150
 msgid "&Send Mail"
 msgstr "ផ្ញើ​សំបុត្រ"
 
-#: kmcomposewin.cpp:1129 kmcomposewin.cpp:1154
+#: kmcomposewin.cpp:1130 kmcomposewin.cpp:1155
 msgid "&Send Mail Via"
 msgstr "ផ្ញើសំបុត្រ​តាម​រយៈ"
 
-#: kmcomposewin.cpp:1130
+#: kmcomposewin.cpp:1131
 msgid "Send"
 msgstr "ផ្ញើ"
 
-#: kmcomposewin.cpp:1136 kmcomposewin.cpp:1146
+#: kmcomposewin.cpp:1137 kmcomposewin.cpp:1147
 msgid "Send &Later Via"
 msgstr "ផ្ញើពេលក្រោយតាមរយៈ"
 
-#: kmcomposewin.cpp:1137
+#: kmcomposewin.cpp:1138
 #, fuzzy
 #| msgid "Queue"
 msgctxt "Queue the message for sending at a later date"
 msgid "Queue"
 msgstr "ជួរ"
 
-#: kmcomposewin.cpp:1181
+#: kmcomposewin.cpp:1182
 msgid "Save as &Draft"
 msgstr "រក្សាទុក​ជា​សេចក្ដី​ព្រាង"
 
-#: kmcomposewin.cpp:1185
+#: kmcomposewin.cpp:1186
 msgid "Save as &Template"
 msgstr "រក្សាទុក​ជា​ពុម្ព"
 
-#: kmcomposewin.cpp:1189
+#: kmcomposewin.cpp:1190
 msgid "&Insert File..."
 msgstr "​បញ្ចួល​​ឯកសារ..."
 
-#: kmcomposewin.cpp:1193
+#: kmcomposewin.cpp:1194
 msgid "&Insert File Recent"
 msgstr "បញ្ចូល​ឯកសារ​ថ្មីៗ"
 
-#: kmcomposewin.cpp:1204
+#: kmcomposewin.cpp:1205
 msgid "&New Composer"
 msgstr "កម្មវិធីតែង​ថ្មី"
 
-#: kmcomposewin.cpp:1208
+#: kmcomposewin.cpp:1209
 msgid "New Main &Window"
 msgstr "បង្អួច​ចម្បង​ថ្មី"
 
-#: kmcomposewin.cpp:1212
+#: kmcomposewin.cpp:1213
 msgid "Select &Recipients..."
 msgstr "ជ្រើស​អ្នកទទួល..."
 
-#: kmcomposewin.cpp:1216
+#: kmcomposewin.cpp:1217
 msgid "Save &Distribution List..."
 msgstr "រក្សាទុក​បញ្ជី​​ចែកចាយ..."
 
-#: kmcomposewin.cpp:1238
+#: kmcomposewin.cpp:1239
 msgid "Paste as Attac&hment"
 msgstr "បិទភ្ជាប់​ជា​ឯកសារ​ភ្ជាប់"
 
-#: kmcomposewin.cpp:1242
+#: kmcomposewin.cpp:1243
 msgid "Cl&ean Spaces"
 msgstr "សម្អាតកន្លែង"
 
-#: kmcomposewin.cpp:1246
+#: kmcomposewin.cpp:1247
 msgid "Use Fi&xed Font"
 msgstr "ប្រើពុម្ពអក្សរថេរ"
 
-#: kmcomposewin.cpp:1253
+#: kmcomposewin.cpp:1254
 msgctxt "@action:inmenu Mark the email as urgent."
 msgid "&Urgent"
 msgstr "បន្ទាន់"
 
-#: kmcomposewin.cpp:1255
+#: kmcomposewin.cpp:1256
 msgid "&Request Disposition Notification"
 msgstr "ការជូន​ដំណឹង​ពី​ការ​រៀបចំ​សំណើ"
 
-#: kmcomposewin.cpp:1261
+#: kmcomposewin.cpp:1262
 msgid "&Wordwrap"
 msgstr "រុំពាក្យ"
 
-#: kmcomposewin.cpp:1266
+#: kmcomposewin.cpp:1267
 msgid "&Snippets"
 msgstr "Snippet"
 
-#: kmcomposewin.cpp:1273
+#: kmcomposewin.cpp:1274
 msgid "&Automatic Spellchecking"
 msgstr "ការ​ពិនិត្យ​​អក្ខរាវិរុទ្ធ​ដោយស្វ័យប្រវត្តិ"
 
-#: kmcomposewin.cpp:1290
+#: kmcomposewin.cpp:1291
 msgid "Formatting (HTML)"
 msgstr "ការធ្វើទ្រង់ទ្រាយ (HTML)"
 
-#: kmcomposewin.cpp:1291
+#: kmcomposewin.cpp:1292
 msgid "HTML"
 msgstr "HTML"
 
-#: kmcomposewin.cpp:1295
+#: kmcomposewin.cpp:1296
 msgid "&All Fields"
 msgstr "វាលទាំងអស់"
 
-#: kmcomposewin.cpp:1298
+#: kmcomposewin.cpp:1299
 msgid "&Identity"
 msgstr "​អត្តសញ្ញាណ"
 
-#: kmcomposewin.cpp:1301
+#: kmcomposewin.cpp:1302
 msgid "&Dictionary"
 msgstr "វចនានុក្រម"
 
-#: kmcomposewin.cpp:1304
+#: kmcomposewin.cpp:1305
 msgid "&Sent-Mail Folder"
 msgstr "ថត សំបុត្រផ្ញើចេញ"
 
-#: kmcomposewin.cpp:1307
+#: kmcomposewin.cpp:1308
 msgid "&Mail Transport"
 msgstr "ដឹកជញ្ជូន​សំបុត្រ"
 
-#: kmcomposewin.cpp:1310
+#: kmcomposewin.cpp:1311
 msgid "&From"
 msgstr "ពី"
 
-#: kmcomposewin.cpp:1313
+#: kmcomposewin.cpp:1314
 msgid "&Reply To"
 msgstr "ឆ្លើយតបទៅ"
 
-#: kmcomposewin.cpp:1317
+#: kmcomposewin.cpp:1318
 msgctxt "@action:inmenu Show the subject in the composer window."
 msgid "S&ubject"
 msgstr "ប្រធានបទ"
 
-#: kmcomposewin.cpp:1322
+#: kmcomposewin.cpp:1323
 msgid "Append S&ignature"
 msgstr "បន្ថែម​ហត្ថលេខា​នៅ​ខាង​ចុង"
 
-#: kmcomposewin.cpp:1325
+#: kmcomposewin.cpp:1326
 msgid "Pr&epend Signature"
 msgstr "បន្ថែម​ហត្ថលេខា​នៅ​ខាងដើម"
 
-#: kmcomposewin.cpp:1328
+#: kmcomposewin.cpp:1329
 msgid "Insert Signature At C&ursor Position"
 msgstr "បញ្ចូល​ហត្ថលេខា​នៅ​ទីតាំង​​ទស្សន៍​ទ្រនិច"
 
-#: kmcomposewin.cpp:1346
+#: kmcomposewin.cpp:1347
 msgid "&Spellchecker..."
 msgstr "កម្មវិធី​ពិនិត្យ​​អក្ខរាវិរុទ្ធ..."
 
-#: kmcomposewin.cpp:1347
+#: kmcomposewin.cpp:1348
 msgid "Spellchecker"
 msgstr "កម្មវិធី​ពិនិត្យ​​អក្ខរាវិរុទ្ធ"
 
-#: kmcomposewin.cpp:1352 kmcomposewin.cpp:1354
+#: kmcomposewin.cpp:1353 kmcomposewin.cpp:1355
 msgid "Encrypt Message with Chiasmus..."
 msgstr "អ៊ិនគ្រីប​សារដោយប្រើ Chiasmus..."
 
-#: kmcomposewin.cpp:1362
+#: kmcomposewin.cpp:1363
 msgid "&Encrypt Message"
 msgstr "អ៊ិនគ្រីបសារ"
 
-#: kmcomposewin.cpp:1363
+#: kmcomposewin.cpp:1364
 msgid "Encrypt"
 msgstr "​អ៊ិនគ្រីប"
 
-#: kmcomposewin.cpp:1365
+#: kmcomposewin.cpp:1366
 msgid "&Sign Message"
 msgstr "ចុះហត្ថលេខា​លើសារ"
 
-#: kmcomposewin.cpp:1366
+#: kmcomposewin.cpp:1367
 msgid "Sign"
 msgstr "​ចុះ​ហត្ថលេខា"
 
-#: kmcomposewin.cpp:1404
+#: kmcomposewin.cpp:1405
 msgid "&Cryptographic Message Format"
 msgstr "​ទ្រង់ទ្រាយ​សារ​គ្រីប"
 
-#: kmcomposewin.cpp:1410
+#: kmcomposewin.cpp:1411
 msgid "Select a cryptographic format for this message"
 msgstr ""
 
-#: kmcomposewin.cpp:1413
+#: kmcomposewin.cpp:1414
 msgid "Reset Font Settings"
 msgstr "កំណត់​ការកំណត់​ពុម្ព​អក្សរ​ឡើងវិញ"
 
-#: kmcomposewin.cpp:1414
+#: kmcomposewin.cpp:1415
 msgid "Reset Font"
 msgstr "កំណត់​ពុម្ពអក្សរ​ឡើងវិញ"
 
-#: kmcomposewin.cpp:1436
+#: kmcomposewin.cpp:1437
 msgid "Configure KMail..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ KMail..."
 
-#: kmcomposewin.cpp:1446
+#: kmcomposewin.cpp:1447
 #, kde-format
 msgid " Spellcheck: %1 "
 msgstr " ពិនិត្យ​​អក្ខរាវិរុទ្ធ ៖ %1 "
 
-#: kmcomposewin.cpp:1447 kmcomposewin.cpp:3857
+#: kmcomposewin.cpp:1448 kmcomposewin.cpp:3880
 #, kde-format
 msgid " Column: %1 "
 msgstr " ជួរឈរ ៖ %1 "
 
-#: kmcomposewin.cpp:1449 kmcomposewin.cpp:3855
+#: kmcomposewin.cpp:1450 kmcomposewin.cpp:3878
 #, kde-format
 msgctxt "Shows the linenumber of the cursor position."
 msgid " Line: %1 "
 msgstr " បន្ទាត់ ៖ %1 "
 
-#: kmcomposewin.cpp:1915
+#: kmcomposewin.cpp:1916
 msgid "Re&save as Template"
 msgstr "រក្សាទុក​ជា​ពុម្ព​ម្ដង​ទៀត"
 
-#: kmcomposewin.cpp:1916
+#: kmcomposewin.cpp:1917
 msgid "&Save as Draft"
 msgstr "រក្សាទុក​ជា​សេចក្ដី​ព្រាង"
 
-#: kmcomposewin.cpp:1918
+#: kmcomposewin.cpp:1919
 msgid ""
 "Resave this message in the Templates folder. It can then be used at a later "
 "time."
 msgstr "រក្សាទុក​សារ​នេះ​នៅ​ក្នុង​ថត​ពុម្ព​ម្ដង​ទៀត ។ បន្ទាប់​មក​វា​អាច​ត្រូវ​បាន​ប្រើ​នៅ​ពេល​ក្រោយ ។"
 
-#: kmcomposewin.cpp:1920
+#: kmcomposewin.cpp:1921
 msgid ""
 "Save this message in the Drafts folder. It can then be edited and sent at a "
 "later time."
 msgstr ""
 "រក្សាទុក​សារនេះ​នៅក្នុង​ថត​សេចក្ដីព្រាង ។ នៅពេលនោះ​វាអាច​ត្រូវបាន​កែសម្រួល​ និង​ ផ្ញើ​នៅពេល​ក្រោយទៀត ។"
 
-#: kmcomposewin.cpp:1924
+#: kmcomposewin.cpp:1925
 msgid "Do you want to save the message for later or discard it?"
 msgstr "តើអ្នកចង់​រក្សាទុក​សារ​សម្រាប់​ពេល​ក្រោយ ឬ បោះបង់វាចោល ?"
 
-#: kmcomposewin.cpp:1925
+#: kmcomposewin.cpp:1926
 msgid "Close Composer"
 msgstr "បិទ​កម្មវិធី​តែង"
 
-#: kmcomposewin.cpp:1989
+#: kmcomposewin.cpp:1990
 msgid ""
 "The message you have composed seems to refer to an attached file but you "
 "have not attached anything.\n"
@@ -8467,15 +8468,15 @@ msgstr ""
 "សារដែលអ្នកបាន​តែង មើល​ទៅហាក់ដូចជា​សំដៅ​ទៅ​ឯកសារដែល​បាន​ភ្ជាប់មួយ ប៉ុន្តែ​អ្នក​មិនបាន​ភ្ជាប់​អ្វីទេ ។\n"
 "តើអ្នកចង់​ភ្ជាប់​ឯកសារ​ទៅ​សាររបស់អ្នក​ទេ ?"
 
-#: kmcomposewin.cpp:1992
+#: kmcomposewin.cpp:1993
 msgid "File Attachment Reminder"
 msgstr "ឧបករណ៍​រំលឹក​ការ​ភ្ជាប់​ឯកសារ"
 
-#: kmcomposewin.cpp:1994 kmcomposewin.cpp:3390
+#: kmcomposewin.cpp:1995 kmcomposewin.cpp:3413
 msgid "&Send as Is"
 msgstr "ផ្ញើអញ្ចឹង"
 
-#: kmcomposewin.cpp:2273
+#: kmcomposewin.cpp:2274
 #, kde-format
 msgid ""
 "Error composing message:\n"
@@ -8485,7 +8486,7 @@ msgid ""
 "Please report this bug."
 msgstr ""
 
-#: kmcomposewin.cpp:2275
+#: kmcomposewin.cpp:2276
 #, fuzzy, kde-format
 #| msgid "Error while copying messages."
 msgid ""
@@ -8494,15 +8495,15 @@ msgid ""
 "%1"
 msgstr "មាន​កំហុស ខណៈពេល​ចម្លង​សារ ។"
 
-#: kmcomposewin.cpp:2773
+#: kmcomposewin.cpp:2774
 msgid "Insert clipboard text as attachment"
 msgstr "បញ្ចូល​អត្ថបទ​ក្ដារ​តម្បៀត​ខ្ទាស់​ជា​ឯកសារ​ភ្ជាប់"
 
-#: kmcomposewin.cpp:2774 kmcomposereditor.cpp:190
+#: kmcomposewin.cpp:2775 kmcomposereditor.cpp:190
 msgid "Name of the attachment:"
 msgstr "ឈ្មោះ​ឯកសារ​ភ្ជាប់ ៖"
 
-#: kmcomposewin.cpp:2942
+#: kmcomposewin.cpp:2943
 msgid ""
 "<qt><p>You have requested that messages be encrypted to yourself, but the "
 "currently selected identity does not define an (OpenPGP or S/MIME) "
@@ -8513,11 +8514,11 @@ msgstr ""
 "បច្ចុប្បន្ន​ មិនកំណត់​សោការអ៊ិនគ្រីប (OpenPGP or S/MIME) ដែលត្រូវប្រើ​សម្រាប់​វាឡើយ ។</"
 "p><p>សូមជ្រើស​សោ​ដើម្បី​ប្រើ​នៅក្នុង​ការកំណត់រចនាសម្ព័ន្ធ​អត្តសញ្ញាណ​ ។</p></qt>"
 
-#: kmcomposewin.cpp:2949
+#: kmcomposewin.cpp:2950
 msgid "Undefined Encryption Key"
 msgstr "កូនសោ​អ៊ិនគ្រីប​មិន​បាន​កំណត់"
 
-#: kmcomposewin.cpp:2993
+#: kmcomposewin.cpp:2994
 msgid ""
 "<qt><p>In order to be able to sign this message you first have to define the "
 "(OpenPGP or S/MIME) signing key to use.</p><p>Please select the key to use "
@@ -8527,11 +8528,11 @@ msgstr ""
 "MIME) ដែលត្រូវប្រើសិន ។</p><p>សូមជ្រើស​សោ​ដើម្បី​ប្រើ​នៅក្នុង​ការកំណត់​រចនា​សម្ព័ន្ធ​អត្តសញ្ញាណ ។</p></"
 "qt>"
 
-#: kmcomposewin.cpp:3000
+#: kmcomposewin.cpp:3001
 msgid "Undefined Signing Key"
 msgstr "កូនសោ​ចុះហត្ថលេខា​មិន​បាន​កំណត់"
 
-#: kmcomposewin.cpp:3098
+#: kmcomposewin.cpp:3099
 msgid ""
 "KMail is currently in offline mode. Your messages will be kept in the outbox "
 "until you go online."
@@ -8539,7 +8540,7 @@ msgstr ""
 "ឥឡូវ KMail នៅក្នុង​របៀប​ក្រៅ​បណ្ដាញ សារ​របស់អ្នកនឹងត្រូវបាន​រក្សាទុក​​នៅក្នុង​ប្រអប់ចេញរហូត​ដល់អ្នក​នៅលើ​​"
 "បណ្ដាញ​វិញ ។"
 
-#: kmcomposewin.cpp:3115
+#: kmcomposewin.cpp:3116
 msgid ""
 "You must enter your email address in the From: field. You should also set "
 "your email address for all identities, so that you do not have to enter it "
@@ -8548,7 +8549,7 @@ msgstr ""
 "អ្នកត្រូវតែ​បញ្ចូល​​​អាសយដ្ឋាន​អ៊ីមែល​របស់អ្នក​នៅក្នុងវាល ពី ៖ ។ អ្នក​ក៏គួរតែកំណត់​អាសយដ្ឋាន​អ៊ីមែល​​របស់អ្នក​"
 "សម្រាប់​អត្តសញ្ញាណ​ទាំងអស់ ដូចច្នេះ​អ្នក​​មិនត្រូវ​បញ្ចូល​វា​នៅគ្រប់​សារទាំងអស់​នោះទេ ។"
 
-#: kmcomposewin.cpp:3124
+#: kmcomposewin.cpp:3125
 msgid ""
 "You must specify at least one receiver,either in the To: field or as CC or "
 "as BCC."
@@ -8556,55 +8557,55 @@ msgstr ""
 "អ្នកត្រូវ​តែ​បញ្ជាក់​អ្នកទទួល​យ៉ាងហោចណាស់​ម្នាក់ នៅក្នុង​វាល ជូនចំពោះ ឬ វាល​ចម្លងជូន ឬក៏​វាល​ចម្លងសម្ងាត់​"
 "ជូន ។"
 
-#: kmcomposewin.cpp:3130
+#: kmcomposewin.cpp:3131
 msgid "To: field is empty. Send message anyway?"
 msgstr "ជូន​ចំពោះ ៖ វាល​គឺ​ទទេ ។ អញ្ចឹង​ផ្ញើសារដែរ​​ឬទេ ?"
 
-#: kmcomposewin.cpp:3132
+#: kmcomposewin.cpp:3133
 msgid "No To: specified"
 msgstr "គ្មាន​ ជូន​ចំពោះ ៖ បាន​បញ្ជាក់"
 
-#: kmcomposewin.cpp:3159
+#: kmcomposewin.cpp:3147
 msgid "You did not specify a subject. Send message anyway?"
 msgstr "អ្នក​មិនបាន​បញ្ជាក់ប្រធានបទ​ឡើយ ។ អញ្ចឹង​ផ្ញើសារ​ឬ ?"
 
-#: kmcomposewin.cpp:3161
+#: kmcomposewin.cpp:3149
 msgid "No Subject Specified"
 msgstr "មិន​បាន​បញ្ជាក់​ប្រធានបទ​ឡើយ"
 
-#: kmcomposewin.cpp:3162
+#: kmcomposewin.cpp:3150
 msgid "S&end as Is"
 msgstr "ផ្ញើអញ្ចឹង"
 
-#: kmcomposewin.cpp:3163
+#: kmcomposewin.cpp:3151
 msgid "&Specify the Subject"
 msgstr "បញ្ជាក់​ប្រធានបទ"
 
-#: kmcomposewin.cpp:3200
+#: kmcomposewin.cpp:3223
 msgid "&Keep markup, do not sign/encrypt"
 msgstr "ទុក​ការសម្គាល់ កុំ​ចុះហត្ថលេខា/អ៊ិនគ្រីប"
 
-#: kmcomposewin.cpp:3201
+#: kmcomposewin.cpp:3224
 msgid "&Keep markup, do not encrypt"
 msgstr "ទុក​ការសម្គាល់ កុំ​អ៊ិនគ្រីប"
 
-#: kmcomposewin.cpp:3202
+#: kmcomposewin.cpp:3225
 msgid "&Keep markup, do not sign"
 msgstr "ទុក​ការសម្គាល់ កុំ​ចុះហត្ថលេខា"
 
-#: kmcomposewin.cpp:3204
+#: kmcomposewin.cpp:3227
 msgid "Sign/Encrypt (delete markup)"
 msgstr "ចុះហត្ថលេខា​/​អ៊ិនគ្រីប (លុប​ការសម្គាល់)"
 
-#: kmcomposewin.cpp:3205
+#: kmcomposewin.cpp:3228
 msgid "Encrypt (delete markup)"
 msgstr "អ៊ិនគ្រីប (លុប​ការសម្គាល់)"
 
-#: kmcomposewin.cpp:3206
+#: kmcomposewin.cpp:3229
 msgid "Sign (delete markup)"
 msgstr "ចុះហត្ថលេខា (លុប​ការសម្គាល់)"
 
-#: kmcomposewin.cpp:3208
+#: kmcomposewin.cpp:3231
 msgid ""
 "<qt><p>Inline signing/encrypting of HTML messages is not possible;</p><p>do "
 "you want to delete your markup?</p></qt>"
@@ -8612,11 +8613,11 @@ msgstr ""
 "<qt><p>ការចុះហត្ថលេខា​/អ៊ិនគ្រីប​ក្នុងបណ្ដាញ​នៃ​សារ​ HTML គឺ​មិនអាច​ធ្វើទៅបានទេ ។</p><p>តើអ្នកចង់​"
 "លុប​ការសម្គាល់របស់អ្នកឬ ?</p></qt>"
 
-#: kmcomposewin.cpp:3210
+#: kmcomposewin.cpp:3233
 msgid "Sign/Encrypt Message?"
 msgstr "ចុះហត្ថលេខា​/​អ៊ិនគ្រីប​សារ ?"
 
-#: kmcomposewin.cpp:3262
+#: kmcomposewin.cpp:3285
 #, kde-format
 msgid ""
 "The custom drafts or templates folder for identify \"%1\" does not exist "
@@ -8625,52 +8626,52 @@ msgstr ""
 "ថត​ពុម្ព ឬ​សេចក្ដីព្រាង​ផ្ទាល់ខ្លួន​សម្រាប់​អត្តសញ្ញាណ \"%1\" មិនមាន (ទៀតទេ) ដូច្នេះ ថត​ពុម្ព ឬ​សេចក្ដី​"
 "ព្រាង​នឹង​ត្រូវ​បាន​ប្រើ ។"
 
-#: kmcomposewin.cpp:3367
+#: kmcomposewin.cpp:3390
 msgid "About to send email..."
 msgstr "ប្រុង​នឹង​ផ្ញើ​សំបុត្រ​ហើយ..."
 
-#: kmcomposewin.cpp:3368
+#: kmcomposewin.cpp:3391
 msgid "Send Confirmation"
 msgstr "​ផ្ញើ​ការ​អះអាង"
 
-#: kmcomposewin.cpp:3388
+#: kmcomposewin.cpp:3411
 #, kde-format
 msgid ""
 "You are trying to send the mail to more than %1 recipients. Send message "
 "anyway?"
 msgstr "អ្នក​កំពុង​ព្យាយាម​ផ្ញើ​សំបុត្រ​ទៅ​អ្នក​ទទួល​ច្រើនជាង %1 ។ អញ្ចឹង​ផ្ញើសារ​ទេ ?"
 
-#: kmcomposewin.cpp:3389
+#: kmcomposewin.cpp:3412
 msgid "Too many recipients"
 msgstr "មាន​អ្នក​ទទួលច្រើន​ពេក"
 
-#: kmcomposewin.cpp:3391
+#: kmcomposewin.cpp:3414
 msgid "&Edit Recipients"
 msgstr "កែសម្រួល​អ្នក​ទទួល"
 
-#: kmcomposewin.cpp:3479
+#: kmcomposewin.cpp:3502
 msgid ""
 "Turning HTML mode off will cause the text to lose the formatting. Are you "
 "sure?"
 msgstr "បិទ​របៀប HTML នឹង​ធ្វើ​ឲ្យ​​អត្ថបទ​បាត់​ការ​ធ្វើទ្រង់ទ្រាយ ។ តើ​អ្នក​ប្រាកដ​ដែរឬទេ ?"
 
-#: kmcomposewin.cpp:3481
+#: kmcomposewin.cpp:3504
 msgid "Lose the formatting?"
 msgstr "បាត់បង់កា​រធ្វើទ្រង់ទ្រាយ ?"
 
-#: kmcomposewin.cpp:3481
+#: kmcomposewin.cpp:3504
 msgid "Lose Formatting"
 msgstr "បាត់បង់​ការ​ធ្វើ​ទ្រង់ទ្រាយ"
 
-#: kmcomposewin.cpp:3535
+#: kmcomposewin.cpp:3558
 msgid "Spellcheck: on"
 msgstr "​ពិនិត្យ​​អក្ខរាវិរុទ្ធ ៖ បើក"
 
-#: kmcomposewin.cpp:3537
+#: kmcomposewin.cpp:3560
 msgid "Spellcheck: off"
 msgstr "​ពិនិត្យ​​អក្ខរាវិរុទ្ធ ៖ បិទ"
 
-#: kmcomposewin.cpp:3903
+#: kmcomposewin.cpp:3926
 msgid ""
 "Please configure a Crypto Backend to use for Chiasmus encryption first.\n"
 "You can do this in the Crypto Backends tab of the configure dialog's "
@@ -8679,7 +8680,7 @@ msgstr ""
 "សូម​កំណត់​រចនា​សម្ព័ន្ធ​​កម្មវិធី​ខាងក្រោយ​គ្រីប ដើម្បី​ប្រើ​សម្រាប់ការអ៊ិនគ្រីប Chiasmus មុនគេ ។\n"
 "អ្នកអាច​ធ្វើ​ការនេះ​នៅក្នុង​ថេប​កម្មវិធី​ខាងក្រោយគ្រីប​នៃ​ទំព័រ​​កំណត់រចនាសម្ព័ន្ធ​​សុវត្ថិភាព​របស់​ប្រអប់ ។"
 
-#: kmcomposewin.cpp:3907
+#: kmcomposewin.cpp:3930
 msgid ""
 "It looks as though libkleopatra was compiled without Chiasmus support. You "
 "might want to recompile libkleopatra with --enable-chiasmus."
@@ -8687,22 +8688,22 @@ msgstr ""
 "តាមមើលទៅ libkleopatra ត្រូវបាន​ចងក្រង​ដោយគ្មាន​ការគាំទ្រ Chiasmus ។ អ្នក​ប្រហែល​ជា​ចង់ចងក្រង​ "
 "libkleopatra ឡើងវិញ​ដោយ--enable-chiasmus ។"
 
-#: kmcomposewin.cpp:3910
+#: kmcomposewin.cpp:3933
 msgid "No Chiasmus Backend Configured"
 msgstr "មិន​បាន​កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​ខាង​ក្រោយ Chiasmus ឡើយ"
 
-#: kmcomposewin.cpp:3916
+#: kmcomposewin.cpp:3939
 msgid ""
 "Chiasmus backend does not offer the \"x-obtain-keys\" function. Please "
 "report this bug."
 msgstr ""
 "កម្មវិធីខាងក្រោយ Chiasmus មិនផ្ដល់មុខងារ \"x-obtain-keys\" ឡើយ ។ សូមរាយការណ៍​កំហុស​នេះ ។"
 
-#: kmcomposewin.cpp:3918 kmcomposewin.cpp:3923 kmcomposewin.cpp:3932
+#: kmcomposewin.cpp:3941 kmcomposewin.cpp:3946 kmcomposewin.cpp:3955
 msgid "Chiasmus Backend Error"
 msgstr "កំហុស​កម្មវិធី​ខាងក្រោយ Chiasmus"
 
-#: kmcomposewin.cpp:3929
+#: kmcomposewin.cpp:3952
 msgid ""
 "Unexpected return value from Chiasmus backend: The \"x-obtain-keys\" "
 "function did not return a string list. Please report this bug."
@@ -8710,34 +8711,34 @@ msgstr ""
 "ត្រឡប់​តម្លៃ​ដែល​មិនបានរំពឹង​ពី​កម្មវិធីខាងក្រោយ Chiasmus ៖ អនុគមន៍ \"x-obtain-keys\" មិនបាន​ត្រឡប់​"
 "បញ្ជី​ខ្សែអក្សរ​ឡើយ ។ សូមរាយការកំហុស ។"
 
-#: kmcomposewin.cpp:3938
+#: kmcomposewin.cpp:3961
 msgid ""
 "No keys have been found. Please check that a valid key path has been set in "
 "the Chiasmus configuration."
 msgstr ""
 "រកមិន​ឃើញ​កូនសោ​ឡើយ ។ សូម​ពិនិត្យ​ថា ផ្លូវសោ​ដែល​ត្រឹមត្រូវ​បាន​កំណត់​នៅក្នុង​ការកំណត់រចនាសម្ព័ន្ធ​ Chiasmus ។"
 
-#: kmcomposewin.cpp:3941
+#: kmcomposewin.cpp:3964
 msgid "No Chiasmus Keys Found"
 msgstr "រក​មិន​ឃើញ​កូនសោ Chiasmus ឡើយ"
 
-#: kmcomposewin.cpp:3945
+#: kmcomposewin.cpp:3968
 msgid "Chiasmus Encryption Key Selection"
 msgstr "ការ​ជ្រើស​កូនសោ​អ៊ិនគ្រីប Chiasmus"
 
-#: kmcomposewin.cpp:3974
+#: kmcomposewin.cpp:3997
 msgid "Message will be signed"
 msgstr "សារ​នឹង​ត្រូវ​បានចុះហត្ថលេខា"
 
-#: kmcomposewin.cpp:3975
+#: kmcomposewin.cpp:3998
 msgid "Message will not be signed"
 msgstr "សារ​នឹង​មិន​ត្រូវ​បានចុះហត្ថលេខា​ទេ"
 
-#: kmcomposewin.cpp:3977
+#: kmcomposewin.cpp:4000
 msgid "Message will be encrypted"
 msgstr "សារ​នឹង​ត្រូវ​បានអ៊ិនគ្រីប"
 
-#: kmcomposewin.cpp:3978
+#: kmcomposewin.cpp:4001
 msgid "Message will not be encrypted"
 msgstr "សារ​នឹង​មិន​ត្រូវ​បាន​អ៊ិនគ្រីប​ទេ"
 
