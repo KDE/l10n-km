@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-17 05:52+0200\n"
+"POT-Creation-Date: 2010-05-20 04:55+0200\n"
 "PO-Revision-Date: 2010-05-07 03:10+0700\n"
 "Last-Translator: Seng Sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <kde-i18n-doc@kde.org>\n"
@@ -207,9 +207,9 @@ msgstr "ជំនួស​​ស្វ័យ​ប្រវត្តិ"
 
 #: src/config/settingsdialog.cpp:140 src/config/warnings_config.cpp:137
 #: src/irc/query.cpp:88 src/irc/query.cpp:394 src/irc/query.cpp:395
-#: src/irc/outputfilter.cpp:1492 src/irc/outputfilter.cpp:1563
 #: src/irc/channel.cpp:667 src/irc/channel.cpp:668
-#: src/irc/nicklistview.cpp:158 src/viewer/ircview.cpp:1333
+#: src/irc/nicklistview.cpp:158 src/irc/outputfilter.cpp:1498
+#: src/irc/outputfilter.cpp:1569 src/viewer/ircview.cpp:1333
 msgid "Ignore"
 msgstr "មិនអើពើ"
 
@@ -1032,7 +1032,7 @@ msgctxt "%1=Encoding"
 msgid "Default ( %1 )"
 msgstr "លំនាំដើម ( %1 )"
 
-#: src/dcc/chatcontainer.cpp:309 src/irc/outputfilter.cpp:1943
+#: src/dcc/chatcontainer.cpp:309 src/irc/outputfilter.cpp:1949
 msgid "Usage"
 msgstr "ការ​ប្រើ​"
 
@@ -1041,8 +1041,7 @@ msgstr "ការ​ប្រើ​"
 msgid "Usage: %1ME text"
 msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1ME "
 
-#: src/dcc/chatcontainer.cpp:323 src/irc/outputfilter.cpp:1571
-#: src/irc/outputfilter.cpp:1961 src/irc/inputfilter.cpp:1163
+#: src/dcc/chatcontainer.cpp:323 src/irc/inputfilter.cpp:1163
 #: src/irc/inputfilter.cpp:1167 src/irc/inputfilter.cpp:1180
 #: src/irc/inputfilter.cpp:1251 src/irc/inputfilter.cpp:1430
 #: src/irc/inputfilter.cpp:2000 src/irc/inputfilter.cpp:2009
@@ -1051,7 +1050,8 @@ msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1ME "
 #: src/irc/server.cpp:1989 src/irc/server.cpp:2162 src/irc/server.cpp:2198
 #: src/irc/server.cpp:2249 src/irc/server.cpp:2317 src/irc/server.cpp:2336
 #: src/irc/server.cpp:2352 src/irc/server.cpp:3833 src/irc/server.cpp:3861
-#: src/irc/server.cpp:3892 src/linkaddressbook/addressbook.cpp:113
+#: src/irc/server.cpp:3892 src/irc/outputfilter.cpp:1577
+#: src/irc/outputfilter.cpp:1967 src/linkaddressbook/addressbook.cpp:113
 #: src/connectionmanager.cpp:279
 msgid "Error"
 msgstr "កំហុស"
@@ -1063,12 +1063,13 @@ msgstr "មិនស្គាល់​ពាក្យ​បញ្ជា​ ។"
 
 #. i18n: file: src/config/ignore_configui.ui:83
 #. i18n: ectx: property (text), widget (QCheckBox, chkCTCP)
-#: src/dcc/chatcontainer.cpp:371 src/irc/outputfilter.cpp:830
-#: src/irc/inputfilter.cpp:269 src/irc/inputfilter.cpp:276
-#: src/irc/inputfilter.cpp:292 src/irc/inputfilter.cpp:299
-#: src/irc/inputfilter.cpp:445 src/irc/inputfilter.cpp:453
-#: src/irc/inputfilter.cpp:473 src/irc/inputfilter.cpp:524
-#: src/irc/inputfilter.cpp:552 src/viewer/ignorelistviewitem.cpp:45 rc.cpp:522
+#: src/dcc/chatcontainer.cpp:371 src/irc/inputfilter.cpp:269
+#: src/irc/inputfilter.cpp:276 src/irc/inputfilter.cpp:292
+#: src/irc/inputfilter.cpp:299 src/irc/inputfilter.cpp:445
+#: src/irc/inputfilter.cpp:453 src/irc/inputfilter.cpp:473
+#: src/irc/inputfilter.cpp:524 src/irc/inputfilter.cpp:552
+#: src/irc/outputfilter.cpp:830 src/viewer/ignorelistviewitem.cpp:45
+#: rc.cpp:522
 msgid "CTCP"
 msgstr "CTCP"
 
@@ -1085,7 +1086,7 @@ msgstr "គ្មាន​ច្រក​ទំនេរ"
 msgid "Could not open a socket"
 msgstr "មិនអាច​បើក​រន្ធ​បានទេ"
 
-#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2124
+#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2162
 msgid "DCC Status"
 msgstr "ស្ថានភាព DCC"
 
@@ -1287,7 +1288,7 @@ msgstr "(មិន​ស្គាល់​)"
 msgid "Online Since:"
 msgstr "ចាប់​តាំង​ពី​លើ​បណ្តាញ​ ៖"
 
-#: src/irc/nicksonline.cpp:42 src/viewer/viewcontainer.cpp:2496
+#: src/irc/nicksonline.cpp:42 src/viewer/viewcontainer.cpp:2534
 #, fuzzy
 msgid "Watched Nicks Online"
 msgstr "បាន​មើល​សម្មតិនាម​លើ​បណ្តាញ​"
@@ -1795,433 +1796,6 @@ msgstr "%1 បាន​ចេញ​ពី​ម៉ាស៊ីន​បម្រ
 msgid "%1 has left this server (%2)."
 msgstr "%1 បានចេញ​ពីម៉ាស៊ីនបម្រើ​នេះហើយ​ (%2) ។"
 
-#: src/irc/outputfilter.cpp:209
-#, fuzzy
-msgid ""
-"The message you are sending includes characters that do not exist in your "
-"current encoding. If you choose to continue anyway those characters will be "
-"replaced by a '?'."
-msgstr ""
-"សារ​ដែល​អ្នក​កំពុង​ផ្ញើ​រួម​បញ្ចូលតួអក្សរ​ដែល​មិន​មាន​ក្នុង​ការអ៊ិន​កូដ​របស់​អ្នក​បច្ចុប្បន្ន​ ។  ប្រ​សិន​បើ​ អ្នក​ជ្រើស​​ទៅ​"
-"បន្ត​ទៀត​នោះ​តួអក្សរ​ នឹង​ត្រូវ​បានជំនួស​ដោយ​ a '?' ។"
-
-#: src/irc/outputfilter.cpp:213
-#, fuzzy
-msgid "Encoding Conflict Warning"
-msgstr "ការ​ព្រមាន​ប៉ះ​ទង្គិចការ​អ៊ិន​កូដ​"
-
-#: src/irc/outputfilter.cpp:317
-msgid "Raw"
-msgstr "មិន​ទាន់​ច្នៃ"
-
-#: src/irc/outputfilter.cpp:374
-#, fuzzy, kde-format
-msgid "Usage: %1JOIN <channel> [password]"
-msgstr "ការ​ប្រើ​ ៖ %1JOIN​ <channel> [ពាក្យ​សម្ងាត់​]"
-
-#: src/irc/outputfilter.cpp:413
-#, fuzzy, kde-format
-msgid "Usage: %1KICK <nick> [reason]"
-msgstr "ការ​ប្រើ​ ៖ %1KICK <nick> [ហេតុផល​]"
-
-#: src/irc/outputfilter.cpp:427
-#, fuzzy, kde-format
-msgid "%1KICK only works from within channels."
-msgstr "%1KICK កិច្ច​ការ​តែ​មួយ​ ពីខាង​ក្នុង​ឆានែល​ ។"
-
-#: src/irc/outputfilter.cpp:447
-#, fuzzy, kde-format
-msgid ""
-"%1PART and %1LEAVE without parameters only work from within a channel or a "
-"query."
-msgstr "​​ %1PART និង LEAVE​ %1 ដោយ​មិន​ចាំ​បាច់កិច្ច​ការ​​ប៉ារ៉ាម៉ែត្រ​តែ​មួយ ​ពី​ខាងក្នុង​ឆា​នែល​ ឬ​សំណួរ​ ។"
-
-#: src/irc/outputfilter.cpp:472
-#, fuzzy, kde-format
-msgid "%1PART without channel name only works from within a channel."
-msgstr " %1PART ដោយ​មិន​ចាំបាច់​កិច្ច​ការ ​ឈ្មោះ​ឆានែល​តែមួយ ​​ពី​ខាង​ក្នុង​ឆានែល​ ។"
-
-#: src/irc/outputfilter.cpp:496
-#, fuzzy, kde-format
-msgid "%1TOPIC without parameters only works from within a channel."
-msgstr "%1TOPIC ដោយ​មិនចាំបាច់​កិច្ច​ការ​ប៉ារ៉ាម៉ែត្រ​តែមួយ​​ ពី​ខាង​ក្នុង​ឆានែល​ ។"
-
-#: src/irc/outputfilter.cpp:533
-#, fuzzy, kde-format
-msgid "%1TOPIC without channel name only works from within a channel."
-msgstr "%1TOPIC កិច្ច​ការ​ឈ្មោះឆានែល​តែ​មួយ​ ពី​ខាង​ក្នុ​ងឆានែល​ ។"
-
-#: src/irc/outputfilter.cpp:591
-#, fuzzy, kde-format
-msgid ""
-"%1NAMES with no target may disconnect you from the server. Specify '*' if "
-"you really want this."
-msgstr ""
-" %1NAME ​គ្មាន​គោលដៅ​អាច​មិន​តភ្ជាប់​ជាមួយអ្នក​ពី​ម៉ាស៊ីន​បម្រើ​ ។ បញ្ជាក់​​ '*' ប្រ​សិន​បើ​ អ្នក​ពិត​ជា​ចង់​​ ។"
-
-#: src/irc/outputfilter.cpp:614
-#, fuzzy, c-format, kde-format
-msgid ""
-"Usage: %1close [window] closes the named channel or query tab, or the "
-"current tab if none specified."
-msgstr ""
-"ការប្រើ​ ៖ បិទ​ %1​ [បង្អួច​​] ដាក់​ឈ្មោះ​ឆានែល​ ឬ​ផ្ទាំង​សំណួរ​ ឬ​ផ្ទាំង​បច្ចុប្បន្ន​ ប្រសិន​បើ​ មិន​បាន​បញ្ជាក់​ ។"
-
-#: src/irc/outputfilter.cpp:643
-#, fuzzy, kde-format
-msgid "Usage: %1NOTICE <recipient> <message>"
-msgstr "ការប្រើ​ ៖ %1NOTICE <recipient> <message>"
-
-#. i18n: file: src/config/ignore_configui.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, chkNotice)
-#: src/irc/outputfilter.cpp:647 src/irc/outputfilter.cpp:875
-#: src/irc/inputfilter.cpp:498 src/irc/inputfilter.cpp:566
-#: src/irc/inputfilter.cpp:571 src/irc/inputfilter.cpp:594
-#: src/irc/inputfilter.cpp:762 src/irc/inputfilter.cpp:1304
-#: src/irc/server.cpp:3867 src/irc/server.cpp:3888
-#: src/viewer/ignorelistviewitem.cpp:44 rc.cpp:531
-msgid "Notice"
-msgstr "សម្គាល់​"
-
-#: src/irc/outputfilter.cpp:650
-#, fuzzy, kde-format
-msgctxt "%1 is the message, %2 the recipient nickname"
-msgid "Sending notice \"%1\" to %2."
-msgstr "សម្គាល់​ការ​ផ្ញើ​ \"%1\" ទៅកាន់​ %2 ។"
-
-#: src/irc/outputfilter.cpp:728
-#, fuzzy
-msgid "Error: You need to specify a recipient."
-msgstr "កំហុស​ ៖​ អ្នក​ត្រូវ​ការ​បញ្ជាក់អ្នក​ទទួល​ ។"
-
-#: src/irc/outputfilter.cpp:733
-#, fuzzy
-msgid "Error: You cannot open queries to channels."
-msgstr "កំហុស​ ៖ អ្នក​មិន​អាច​បើក​សំណួរ​ទៅកាន់​ឆានែល​បាន​ឡើយ​ ។"
-
-#: src/irc/outputfilter.cpp:739
-#, fuzzy
-msgid "Error: You need to specify a message."
-msgstr "កំហុស​ ៖​ អ្នក​ត្រូវ​ការ​ទៅ​បញ្ជាក់​សារ​ ។"
-
-#: src/irc/outputfilter.cpp:822 src/irc/outputfilter.cpp:827
-#, fuzzy, kde-format
-msgid "Sending CTCP-%1 request to %2."
-msgstr " ​សំណើ​ការ​ផ្ញើ​ CTCP-%1 ទៅកាន់​ %2 ។"
-
-#: src/irc/outputfilter.cpp:839
-#, fuzzy, c-format, kde-format
-msgid "Usage: %1AME text"
-msgstr "ការ​ប្រើ​ ៖​ អត្ថបទ​ %1AME"
-
-#: src/irc/outputfilter.cpp:849
-#, fuzzy, c-format, kde-format
-msgid "Usage: %1AMSG text"
-msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1AMSG "
-
-#: src/irc/outputfilter.cpp:859
-#, fuzzy, kde-format
-msgid "Usage: %1OMSG text"
-msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1OMSG"
-
-#: src/irc/outputfilter.cpp:877
-#, fuzzy, kde-format
-msgid "Sending notice \"%1\" to %2."
-msgstr "សម្គាល់​ការ​ផ្ញើ \"%1\" ទៅ %2 ។"
-
-#: src/irc/outputfilter.cpp:880
-#, fuzzy, kde-format
-msgid "Usage: %1ONOTICE text"
-msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1ONOTICE"
-
-#: src/irc/outputfilter.cpp:890
-#, fuzzy, kde-format
-msgid "Usage: %1QUOTE command list"
-msgstr "ការ​ប្រើ​ ៖​ បញ្ជី​ពាក្យ​បញ្ជា​ %1QUOTE "
-
-#: src/irc/outputfilter.cpp:902
-#, fuzzy, c-format, kde-format
-msgid "Usage: %1SAY text"
-msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1SAY"
-
-#: src/irc/outputfilter.cpp:958
-#, fuzzy, kde-format
-msgid "File \"%1\" does not exist."
-msgstr "មិន​មាន​ឯកសារ​ \"%1\" ឡើយ​ ។"
-
-#: src/irc/outputfilter.cpp:962
-#, fuzzy, kde-format
-msgid "Usage: %1DCC [SEND [nickname [filename]]]"
-msgstr "ការ​ប្រើ​ ៖ %1DCC [SEND [nickname [filename]]]"
-
-#: src/irc/outputfilter.cpp:980
-#, fuzzy, kde-format
-msgid "Usage: %1DCC [GET [nickname [filename]]]"
-msgstr "ការ​ប្រើ​ ៖ %1DCC [GET [nickname [filename]]]"
-
-#: src/irc/outputfilter.cpp:996
-#, fuzzy, kde-format
-msgid "Usage: %1DCC [CHAT [nickname]]"
-msgstr "ការ​ប្រើ​ ៖ %1DCC [CHAT [nickname]]"
-
-#: src/irc/outputfilter.cpp:1012
-#, fuzzy, kde-format
-msgid "Usage: %1DCC [WHITEBOARD [nickname]]"
-msgstr "ការ​ប្រើ​ ៖ %1DCC [WHITEBOARD [nickname]]"
-
-#: src/irc/outputfilter.cpp:1017
-#, fuzzy, kde-format
-msgid ""
-"Unrecognized command %1DCC %2. Possible commands are SEND, CHAT, CLOSE, GET, "
-"WHITEBOARD."
-msgstr ""
-"មិន​ទទួល​ស្គាល់​ពាក្យ​បញ្ជា​​ %1DCC %2 ។ ពាក្យ​បញ្ជា​អាច​ធ្វើ​បាន​ ផ្ញើ​ ជជែក​កំសាន្ត​ បិទ​ ទទួល​ផ្ទាំង​ ។"
-
-#: src/irc/outputfilter.cpp:1160
-#, fuzzy, kde-format
-msgid "Usage: %1INVITE <nick> [channel]"
-msgstr "ការ​ប្រើ​ ៖ %1INVITE <nick> [ឆានែល​]"
-
-#: src/irc/outputfilter.cpp:1171
-#, fuzzy, kde-format
-msgid "%1INVITE without channel name works only from within channels."
-msgstr "%1INVITE ដោយ​មិន​ចាំបាច់​ឈ្មោះ​​ឆានែលដំណើរការពី​ខាង​ក្នុងឆានែលតែ​ប៉ុណ្ណោះ​​ ។"
-
-#: src/irc/outputfilter.cpp:1180
-#, fuzzy, kde-format
-msgid "%1 is not a channel."
-msgstr "%1 មិន​មែន​ឆានែល​ ។"
-
-#: src/irc/outputfilter.cpp:1192
-#, fuzzy, c-format, kde-format
-msgid "Usage: %1EXEC <script> [parameter list]"
-msgstr "ការ​ប្រើ​ ៖ %1EXEC <script> [បញ្ជី​ប៉ារ៉ាម៉ែត្រ]"
-
-#: src/irc/outputfilter.cpp:1201
-#, fuzzy
-msgid "Script name may not contain \"../\"."
-msgstr "ឈ្មោះស្គ្រីប​អាច​មិន​មាន \"../\" ។"
-
-#: src/irc/outputfilter.cpp:1216
-#, fuzzy, kde-format
-msgid "Usage: %1RAW [OPEN | CLOSE]"
-msgstr "ការ​ប្រើ​ ៖​ %1RAW​ [បើក​​ | បិទ​]"
-
-#: src/irc/outputfilter.cpp:1254 src/irc/server.cpp:2728
-#: src/irc/server.cpp:2746 src/viewer/ircview.cpp:811
-msgid "Notify"
-msgstr "ជូន​ដំណឹង​"
-
-#: src/irc/outputfilter.cpp:1257
-#, fuzzy
-msgid "Current notify list is empty."
-msgstr "បញ្ជី​ជូន​ដំណឹង​បច្ចុប្បន្ន​ទទេ​ ។"
-
-#: src/irc/outputfilter.cpp:1259
-#, fuzzy, kde-format
-msgid "Current notify list: %1"
-msgstr "បញ្ជី​ជូន​ដំណឹង​​បច្ចុប្បន្ន​ ៖ %1"
-
-#: src/irc/outputfilter.cpp:1283
-#, fuzzy
-msgid "Enter username and password for IRC operator privileges:"
-msgstr "បញ្ចូល​ឈ្មោះ​អ្នក​ប្រើ​ និង​ពាក្យ​សម្ងាត់​សម្រាប់​សិទ្ធិ​ការី​ការ​​ IRC ៖"
-
-#: src/irc/outputfilter.cpp:1285
-#, fuzzy
-msgid "IRC Operator Password"
-msgstr "ពាក្យ​សម្ងាត់​របស់​ការរី​ IRC"
-
-#: src/irc/outputfilter.cpp:1349
-#, fuzzy, kde-format
-msgid "%1BAN without channel name works only from inside a channel."
-msgstr "%1BAN ដោយ​មិន​ចាំបាច់​ឈ្មោះ​ឆានែលដំណើរការ​ពី​ខាងក្នុងឆានែលតែ​ប៉ុណ្តោះ​​ ។"
-
-#: src/irc/outputfilter.cpp:1352
-#, fuzzy, kde-format
-msgid "%1KICKBAN without channel name works only from inside a channel."
-msgstr "%1KICKBAN ដោយ​មិន​ចាំបាច់​ឈ្មោះ​ឆានែល​ដំណើរ​ការ​ពី​ខាង​ក្នុង​ឆានែល​ ។"
-
-#: src/irc/outputfilter.cpp:1384
-#, fuzzy, kde-format
-msgid ""
-"Usage: %1BAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] <user|"
-"mask>"
-msgstr ""
-"ការ​ប្រើ​ ៖ %1BAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] <user|"
-"mask>"
-
-#: src/irc/outputfilter.cpp:1387
-#, fuzzy, kde-format
-msgid ""
-"Usage: %1KICKBAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] <user|"
-"mask> [reason]"
-msgstr ""
-"ការ​ប្រើ​ ៖ %1KICKBAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] "
-"<user|mask> [reason]"
-
-#: src/irc/outputfilter.cpp:1430
-#, fuzzy, kde-format
-msgid "%1UNBAN without channel name works only from inside a channel."
-msgstr "%1UNBAN ដោយ​មិន​ចាំបាច់​ឈ្មោះ​ឆានែល​ដំណើរការ​ពី​ខាង​ក្នុង​ឆានែល​តែប៉ុណ្ណោះ​ ។"
-
-#: src/irc/outputfilter.cpp:1445
-#, fuzzy, kde-format
-msgid "Usage: %1UNBAN [channel] pattern"
-msgstr "ការ​ប្រើ​ ៖ %1UNBAN លំនាំ [ឆានែល​] "
-
-#: src/irc/outputfilter.cpp:1491
-#, fuzzy, kde-format
-msgid "Added %1 to your ignore list."
-msgstr "ដែល​បាន​បន្ថែម​ %1 ទៅកាន់​បញ្ជីមិន​អើពើ​របស់​អ្នក​ ។"
-
-#: src/irc/outputfilter.cpp:1501
-#, fuzzy, kde-format
-msgid "Usage: %1IGNORE [ -ALL ] <user 1> <user 2> ... <user n>"
-msgstr "ការ​ប្រើ​ ៖ %1IGNORE [ -ALL ] <user 1> <user 2> ... <user n>"
-
-#: src/irc/outputfilter.cpp:1512
-#, fuzzy, kde-format
-msgid "Usage: %1UNIGNORE <user 1> <user 2> ... <user n>"
-msgstr "ការ​ប្រើ​ ៖ %1UNIGNORE <user 1> <user 2> ... <user n>"
-
-#: src/irc/outputfilter.cpp:1563
-#, fuzzy, kde-format
-msgid "Removed %1 from your ignore list."
-msgstr "បាន​យក​ %1 ចេញ​ពី​បញ្ជី​មិនអើពើ​របស់​អ្នក​ ។"
-
-#: src/irc/outputfilter.cpp:1571
-#, fuzzy, kde-format
-msgid "No such ignore: %2"
-msgid_plural "No such ignores: %2"
-msgstr[0] "អើពើ​ ៖ %2"
-
-#: src/irc/outputfilter.cpp:1623
-#, fuzzy, kde-format
-msgid "Current encoding is: %1"
-msgstr "បច្ចុប្បន្ន​កំពុង​អ៊ិន​កូដ​ ៖ %1"
-
-#: src/irc/outputfilter.cpp:1634
-#, fuzzy, kde-format
-msgid "Switched to %1 encoding."
-msgstr "បានប្តូរ​​ទៅកាន់​ការ​អ៊ិនកូដ​ %1 ។"
-
-#: src/irc/outputfilter.cpp:1637
-#, fuzzy, kde-format
-msgid "%1 is not a valid encoding."
-msgstr "%1 មិន​ត្រឹមត្រូវការ​អ៊ិន​កូដ​ឡើយ​ ។"
-
-#: src/irc/outputfilter.cpp:1657
-#, fuzzy, c-format, kde-format
-msgid ""
-"Usage: %1setkey <nick|channel> <key> sets the encryption key for nick or "
-"channel. %1setkey <key> when in a channel or query tab sets the key for it. "
-"The key field recognizes \"cbc:\" and \"ecb:\" prefixes to set the block "
-"cipher mode of operation to either Cipher-Block Chaining or Electronic "
-"Codebook. The mode it defaults to when no prefix is given can be changed in "
-"the configuration dialog under Behavior -> Connection -> Encryption -> "
-"Default Encryption Type, with the default for that setting being Electronic "
-"Codebook (ECB)."
-msgstr ""
-"ការ​ប្រើ​ ៖ កំណត់សោ​ %1 <nick|channel> <key> កំណត់កូន​​សោ​​ សម្រាប់​សម្មតិនាម​ ឬ​ឆានែល​ ។ កំណត់​សោ %"
-"1 <key> នៅពេល​ដែល​ នៅក្នុង​ឆានែល​ ឬ​កំណត់​ផ្ទាំង​សំនួរសោ​សម្រាប់​វា​ ។ បុព្វបទ​ទទួល​ស្គាល់​វាល​សោ \"cbc:"
-"\" និង​ \"ecb:\" ដើម្បី​​កំណត់​របៀបសរសេរ​សម្ងាត់ប្លុក របស់​​ការី​ទៅកាន់​មួយណា​ ចំណង​សរសេរ​សម្ងាត់​ប្លុក​ ឬ​"
-"សៀវភៅកូដអេឡិច​ត្រូនិច ។ រ​បៀប​ វា​លំនាំដើម នៅពេល​ដែល​គ្មានបុព្វបទ​ត្រូវ​បាន​ផ្តល់​អាច​ត្រូវ​បាន​ប្តូរ​ នៅ​ក្នុង​"
-"ការ​កំណត់​រចនា​សម្ព័ន្ធ​ប្រអប់នៅក្រោម​ ប្រភេទ​ការ​អ៊ិន​ស្គ្រីប​លំនាំដើម​ ឥរិយា​បទ -> ការ​តភ្ជាប់​ -> ការ​អ៊ិន​"
-"ស្គ្រីប​ -> ជាមួយ​លំនាំដើម​សម្រាប់​​ការ​កំណត់​ការចាប់ផ្តើម​សៀវ​ភៅកូដ​អេឡិច​ត្រូនិច​(ECB) ។"
-
-#: src/irc/outputfilter.cpp:1675
-#, fuzzy, kde-format
-msgid "The key for %1 has been set."
-msgstr "សោ​សម្រាប់​ %1 ត្រូវ​បានកំណត់​ ។"
-
-#: src/irc/outputfilter.cpp:1677 src/irc/outputfilter.cpp:1703
-#, fuzzy
-msgid ""
-"Setting an encryption key requires Konversation to have been built with "
-"support for the Qt Cryptographic Architecture (QCA) library. Contact your "
-"distributor about a Konversation package with QCA support, or rebuild "
-"Konversation with QCA present."
-msgstr ""
-"ការ​កំណត់​ Konversation ទាមទារ​កូន​សោ​ដើម្បី​បង្កើត​ជាមួយ​ការ​គាំទ្រ​សម្រាប់​ បណ្ណាល័យ  Qt "
-"Cryptographic Architecture (QCA) ។ ទាក់​ទងអ្នកចែក​ចាយ​របស់​អ្នក​អំពី​កញ្ចប់​​របស់​ "
-"Konversation ជាមួយ​ការ​គាំទ្រ​ QCA ឬ​ បង្កើត​ Konversation ឡើងវិញ​ជាមួយ​ QCA បច្ចុប្បន្ន ។"
-
-#: src/irc/outputfilter.cpp:1696
-#, fuzzy, kde-format
-msgid ""
-"Usage: %1keyx <nick|channel> triggers DH1080 key exchange with the target."
-msgstr "ការ​ប្រើ​ ៖​ %1keyx <nick|channel> ប្តូរ​សោ​គន្លឹះ​របស់​​ DH1080 ជាមួយ​គោលដៅ ។"
-
-#: src/irc/outputfilter.cpp:1701
-#, fuzzy, kde-format
-msgid "Beginning DH1080 key exchange with %1."
-msgstr "ការ​ចាប់​ផ្តើមប្តូរ​សោ​របស់​ DH1080 ជាមួយ​ %1 ។"
-
-#: src/irc/outputfilter.cpp:1721
-#, fuzzy, c-format, kde-format
-msgid ""
-"Usage: %1delkey <nick> or <channel> deletes the encryption key for nick or "
-"channel"
-msgstr "ការប្រើ​ ៖​ %1delkey <nick> ឬ <channel> លុប​កូន​សោ​សម្រាប់​សម្មតិនាម​ ឬ​​ឆានែល​"
-
-#: src/irc/outputfilter.cpp:1733
-#, fuzzy, kde-format
-msgid "The key for %1 has been deleted."
-msgstr "សោសម្រាប់​​ %1 ត្រូវ​បាន​លុប​ ។"
-
-#: src/irc/outputfilter.cpp:1736 src/irc/outputfilter.cpp:1756
-#, fuzzy, kde-format
-msgid "No key has been set for %1."
-msgstr "គ្មាន​សោ​ដែលត្រូវ​​បាន​កំណត់​សម្រាប់​ %1 ឡើយ​ ។"
-
-#: src/irc/outputfilter.cpp:1753
-#, fuzzy, kde-format
-msgid "The key for %1 is \"%2\"."
-msgstr "សោ​សម្រាប់​ %1 ជា​ \"%2\" ។"
-
-#: src/irc/outputfilter.cpp:1754
-msgid "Blowfish"
-msgstr "Blowfish"
-
-#: src/irc/outputfilter.cpp:1766
-#, fuzzy, kde-format
-msgid "Usage: %1KILL <nick> [comment]"
-msgstr "ការ​ប្រើ​ ៖ %1KILL <nick> [ពាក្យ​បញ្ជា​]"
-
-#: src/irc/outputfilter.cpp:1782
-#, fuzzy, kde-format
-msgid "Usage: %1DNS <nick>"
-msgstr "ការ​ប្រើ​ ៖ %1DNS <nick>"
-
-#: src/irc/outputfilter.cpp:1797 src/irc/outputfilter.cpp:1816
-#: src/irc/inputfilter.cpp:1421
-msgid "DNS"
-msgstr "DNS"
-
-#: src/irc/outputfilter.cpp:1798 src/irc/outputfilter.cpp:1817
-#, fuzzy, kde-format
-msgid "Resolved %1 to: %2"
-msgstr "បាន​ដោះស្រាយ​ %1 ទៅកាន់​ ៖ %2"
-
-#: src/irc/outputfilter.cpp:1802 src/irc/outputfilter.cpp:1821
-#, fuzzy, kde-format
-msgid "Unable to resolve %1"
-msgstr "មិនអាច​ទៅដោះស្រាយ​​ %1 បាន​ឡើយ​"
-
-#: src/irc/outputfilter.cpp:1855
-#, fuzzy, c-format, kde-format
-msgid "Usage: %1queuetuner [on | off]"
-msgstr "ការប្រើ​ ៖​ %1queuetuner [បើក​ | បិទ]"
-
-#: src/irc/outputfilter.cpp:1952 src/irc/inputfilter.cpp:1312
-#: src/irc/server.cpp:219 src/irc/server.cpp:361 src/irc/server.cpp:429
-#: src/irc/server.cpp:572 src/irc/server.cpp:583 src/irc/server.cpp:785
-#: src/irc/server.cpp:3610 src/connectionmanager.cpp:221
-#: src/connectionmanager.cpp:254 src/connectionmanager.cpp:264
-msgid "Info"
-msgstr "ព័ត៌មាន"
-
 #: src/irc/inputfilter.cpp:270
 #, fuzzy, kde-format
 msgid "Received CTCP-PING request from %1 to channel %2, sending answer."
@@ -2277,6 +1851,17 @@ msgstr "បានទទួល​សំណើ​ CTCP-%1 ដែល​មិនស
 #, fuzzy, kde-format
 msgid "Received unknown CTCP-%1 request from %2."
 msgstr "បាន​ទទួល​សំណើ​ CTCP-%1 ដែល​មិន​ស្គាល់​ពី​​ %2 ។"
+
+#. i18n: file: src/config/ignore_configui.ui:104
+#. i18n: ectx: property (text), widget (QCheckBox, chkNotice)
+#: src/irc/inputfilter.cpp:498 src/irc/inputfilter.cpp:566
+#: src/irc/inputfilter.cpp:571 src/irc/inputfilter.cpp:594
+#: src/irc/inputfilter.cpp:762 src/irc/inputfilter.cpp:1304
+#: src/irc/server.cpp:3867 src/irc/server.cpp:3888
+#: src/irc/outputfilter.cpp:647 src/irc/outputfilter.cpp:881
+#: src/viewer/ignorelistviewitem.cpp:44 rc.cpp:531
+msgid "Notice"
+msgstr "សម្គាល់​"
 
 #: src/irc/inputfilter.cpp:499
 #, fuzzy, kde-format
@@ -2486,6 +2071,14 @@ msgstr "ចុង​សារ​នៃ​ថ្ងៃ​"
 msgid "You are now an IRC operator on this server."
 msgstr "ឥឡូវ​នេះ អ្នក​ជាការី​​ IRC ​លើ​ម៉ាស៊ីន​បម្រើ​នេះ​ ។"
 
+#: src/irc/inputfilter.cpp:1312 src/irc/server.cpp:219 src/irc/server.cpp:361
+#: src/irc/server.cpp:429 src/irc/server.cpp:572 src/irc/server.cpp:583
+#: src/irc/server.cpp:785 src/irc/server.cpp:3610
+#: src/irc/outputfilter.cpp:1958 src/connectionmanager.cpp:221
+#: src/connectionmanager.cpp:254 src/connectionmanager.cpp:264
+msgid "Info"
+msgstr "ព័ត៌មាន"
+
 #: src/irc/inputfilter.cpp:1312
 #, fuzzy, kde-format
 msgid "'%1' is now your hidden host (set by services)."
@@ -2525,6 +2118,11 @@ msgstr "%1@%2"
 #, kde-format
 msgid "%1 is %2@%3 (%4)"
 msgstr "%1 ជា​ %2@%3 (%4)"
+
+#: src/irc/inputfilter.cpp:1421 src/irc/outputfilter.cpp:1803
+#: src/irc/outputfilter.cpp:1822
+msgid "DNS"
+msgstr "DNS"
 
 #: src/irc/inputfilter.cpp:1422
 #, fuzzy, kde-format
@@ -2981,6 +2579,11 @@ msgstr "កំពុង​ផ្ញើ​​ \"%1\" ទៅកាន់​ %2..."
 msgctxt "%1 = file name, %2 = file size, %3 = nickname of sender"
 msgid "Downloading \"%1\" (%2) from %3..."
 msgstr "កំពុង​ទាញ​យក​​ \"%1\" (%2) ពី​ %3..."
+
+#: src/irc/server.cpp:2728 src/irc/server.cpp:2746
+#: src/irc/outputfilter.cpp:1260 src/viewer/ircview.cpp:811
+msgid "Notify"
+msgstr "ជូន​ដំណឹង​"
 
 #: src/irc/server.cpp:2729 src/notificationhandler.cpp:260
 #, kde-format
@@ -3837,8 +3440,8 @@ msgstr "ប្រ​ធាន​បទ​របស់​ឆានែល​"
 
 #. i18n: file: src/irc/channellistpanelui.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ChannelListWidgetUI)
-#: src/irc/channellistpanel.cpp:145 src/viewer/viewcontainer.cpp:2428
-#: src/viewer/viewcontainer.cpp:2486 rc.cpp:1513
+#: src/irc/channellistpanel.cpp:145 src/viewer/viewcontainer.cpp:2466
+#: src/viewer/viewcontainer.cpp:2524 rc.cpp:1513
 msgid "Channel List"
 msgstr "បញ្ជី​ឆានែល​"
 
@@ -4136,8 +3739,406 @@ msgstr "បង្កើត​ការ​ទាក់​ទង​​ថ្មី
 msgid "Delete Association"
 msgstr "លុប​ការ​តភ្ជាប់​"
 
-#: src/konsolepanel.cpp:27 src/viewer/viewcontainer.cpp:2072
-#: src/viewer/viewcontainer.cpp:2073
+#: src/irc/outputfilter.cpp:209
+#, fuzzy
+msgid ""
+"The message you are sending includes characters that do not exist in your "
+"current encoding. If you choose to continue anyway those characters will be "
+"replaced by a '?'."
+msgstr ""
+"សារ​ដែល​អ្នក​កំពុង​ផ្ញើ​រួម​បញ្ចូលតួអក្សរ​ដែល​មិន​មាន​ក្នុង​ការអ៊ិន​កូដ​របស់​អ្នក​បច្ចុប្បន្ន​ ។  ប្រ​សិន​បើ​ អ្នក​ជ្រើស​​ទៅ​"
+"បន្ត​ទៀត​នោះ​តួអក្សរ​ នឹង​ត្រូវ​បានជំនួស​ដោយ​ a '?' ។"
+
+#: src/irc/outputfilter.cpp:213
+#, fuzzy
+msgid "Encoding Conflict Warning"
+msgstr "ការ​ព្រមាន​ប៉ះ​ទង្គិចការ​អ៊ិន​កូដ​"
+
+#: src/irc/outputfilter.cpp:317
+msgid "Raw"
+msgstr "មិន​ទាន់​ច្នៃ"
+
+#: src/irc/outputfilter.cpp:374
+#, fuzzy, kde-format
+msgid "Usage: %1JOIN <channel> [password]"
+msgstr "ការ​ប្រើ​ ៖ %1JOIN​ <channel> [ពាក្យ​សម្ងាត់​]"
+
+#: src/irc/outputfilter.cpp:413
+#, fuzzy, kde-format
+msgid "Usage: %1KICK <nick> [reason]"
+msgstr "ការ​ប្រើ​ ៖ %1KICK <nick> [ហេតុផល​]"
+
+#: src/irc/outputfilter.cpp:427
+#, fuzzy, kde-format
+msgid "%1KICK only works from within channels."
+msgstr "%1KICK កិច្ច​ការ​តែ​មួយ​ ពីខាង​ក្នុង​ឆានែល​ ។"
+
+#: src/irc/outputfilter.cpp:447
+#, fuzzy, kde-format
+msgid ""
+"%1PART and %1LEAVE without parameters only work from within a channel or a "
+"query."
+msgstr "​​ %1PART និង LEAVE​ %1 ដោយ​មិន​ចាំ​បាច់កិច្ច​ការ​​ប៉ារ៉ាម៉ែត្រ​តែ​មួយ ​ពី​ខាងក្នុង​ឆា​នែល​ ឬ​សំណួរ​ ។"
+
+#: src/irc/outputfilter.cpp:472
+#, fuzzy, kde-format
+msgid "%1PART without channel name only works from within a channel."
+msgstr " %1PART ដោយ​មិន​ចាំបាច់​កិច្ច​ការ ​ឈ្មោះ​ឆានែល​តែមួយ ​​ពី​ខាង​ក្នុង​ឆានែល​ ។"
+
+#: src/irc/outputfilter.cpp:496
+#, fuzzy, kde-format
+msgid "%1TOPIC without parameters only works from within a channel."
+msgstr "%1TOPIC ដោយ​មិនចាំបាច់​កិច្ច​ការ​ប៉ារ៉ាម៉ែត្រ​តែមួយ​​ ពី​ខាង​ក្នុង​ឆានែល​ ។"
+
+#: src/irc/outputfilter.cpp:533
+#, fuzzy, kde-format
+msgid "%1TOPIC without channel name only works from within a channel."
+msgstr "%1TOPIC កិច្ច​ការ​ឈ្មោះឆានែល​តែ​មួយ​ ពី​ខាង​ក្នុ​ងឆានែល​ ។"
+
+#: src/irc/outputfilter.cpp:591
+#, fuzzy, kde-format
+msgid ""
+"%1NAMES with no target may disconnect you from the server. Specify '*' if "
+"you really want this."
+msgstr ""
+" %1NAME ​គ្មាន​គោលដៅ​អាច​មិន​តភ្ជាប់​ជាមួយអ្នក​ពី​ម៉ាស៊ីន​បម្រើ​ ។ បញ្ជាក់​​ '*' ប្រ​សិន​បើ​ អ្នក​ពិត​ជា​ចង់​​ ។"
+
+#: src/irc/outputfilter.cpp:614
+#, fuzzy, c-format, kde-format
+msgid ""
+"Usage: %1close [window] closes the named channel or query tab, or the "
+"current tab if none specified."
+msgstr ""
+"ការប្រើ​ ៖ បិទ​ %1​ [បង្អួច​​] ដាក់​ឈ្មោះ​ឆានែល​ ឬ​ផ្ទាំង​សំណួរ​ ឬ​ផ្ទាំង​បច្ចុប្បន្ន​ ប្រសិន​បើ​ មិន​បាន​បញ្ជាក់​ ។"
+
+#: src/irc/outputfilter.cpp:643
+#, fuzzy, kde-format
+msgid "Usage: %1NOTICE <recipient> <message>"
+msgstr "ការប្រើ​ ៖ %1NOTICE <recipient> <message>"
+
+#: src/irc/outputfilter.cpp:650
+#, fuzzy, kde-format
+msgctxt "%1 is the message, %2 the recipient nickname"
+msgid "Sending notice \"%1\" to %2."
+msgstr "សម្គាល់​ការ​ផ្ញើ​ \"%1\" ទៅកាន់​ %2 ។"
+
+#: src/irc/outputfilter.cpp:728
+#, fuzzy
+msgid "Error: You need to specify a recipient."
+msgstr "កំហុស​ ៖​ អ្នក​ត្រូវ​ការ​បញ្ជាក់អ្នក​ទទួល​ ។"
+
+#: src/irc/outputfilter.cpp:733
+#, fuzzy
+msgid "Error: You cannot open queries to channels."
+msgstr "កំហុស​ ៖ អ្នក​មិន​អាច​បើក​សំណួរ​ទៅកាន់​ឆានែល​បាន​ឡើយ​ ។"
+
+#: src/irc/outputfilter.cpp:739
+#, fuzzy
+msgid "Error: You need to specify a message."
+msgstr "កំហុស​ ៖​ អ្នក​ត្រូវ​ការ​ទៅ​បញ្ជាក់​សារ​ ។"
+
+#: src/irc/outputfilter.cpp:822 src/irc/outputfilter.cpp:827
+#, fuzzy, kde-format
+msgid "Sending CTCP-%1 request to %2."
+msgstr " ​សំណើ​ការ​ផ្ញើ​ CTCP-%1 ទៅកាន់​ %2 ។"
+
+#: src/irc/outputfilter.cpp:839
+#, fuzzy, c-format, kde-format
+msgid "Usage: %1AME [-LOCAL] text"
+msgstr "ការ​ប្រើ​ ៖​ អត្ថបទ​ %1AME"
+
+#: src/irc/outputfilter.cpp:852
+#, fuzzy, c-format, kde-format
+msgid "Usage: %1AMSG [-LOCAL] text"
+msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1AMSG "
+
+#: src/irc/outputfilter.cpp:865
+#, fuzzy, kde-format
+msgid "Usage: %1OMSG text"
+msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1OMSG"
+
+#: src/irc/outputfilter.cpp:883
+#, fuzzy, kde-format
+msgid "Sending notice \"%1\" to %2."
+msgstr "សម្គាល់​ការ​ផ្ញើ \"%1\" ទៅ %2 ។"
+
+#: src/irc/outputfilter.cpp:886
+#, fuzzy, kde-format
+msgid "Usage: %1ONOTICE text"
+msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1ONOTICE"
+
+#: src/irc/outputfilter.cpp:896
+#, fuzzy, kde-format
+msgid "Usage: %1QUOTE command list"
+msgstr "ការ​ប្រើ​ ៖​ បញ្ជី​ពាក្យ​បញ្ជា​ %1QUOTE "
+
+#: src/irc/outputfilter.cpp:908
+#, fuzzy, c-format, kde-format
+msgid "Usage: %1SAY text"
+msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1SAY"
+
+#: src/irc/outputfilter.cpp:964
+#, fuzzy, kde-format
+msgid "File \"%1\" does not exist."
+msgstr "មិន​មាន​ឯកសារ​ \"%1\" ឡើយ​ ។"
+
+#: src/irc/outputfilter.cpp:968
+#, fuzzy, kde-format
+msgid "Usage: %1DCC [SEND [nickname [filename]]]"
+msgstr "ការ​ប្រើ​ ៖ %1DCC [SEND [nickname [filename]]]"
+
+#: src/irc/outputfilter.cpp:986
+#, fuzzy, kde-format
+msgid "Usage: %1DCC [GET [nickname [filename]]]"
+msgstr "ការ​ប្រើ​ ៖ %1DCC [GET [nickname [filename]]]"
+
+#: src/irc/outputfilter.cpp:1002
+#, fuzzy, kde-format
+msgid "Usage: %1DCC [CHAT [nickname]]"
+msgstr "ការ​ប្រើ​ ៖ %1DCC [CHAT [nickname]]"
+
+#: src/irc/outputfilter.cpp:1018
+#, fuzzy, kde-format
+msgid "Usage: %1DCC [WHITEBOARD [nickname]]"
+msgstr "ការ​ប្រើ​ ៖ %1DCC [WHITEBOARD [nickname]]"
+
+#: src/irc/outputfilter.cpp:1023
+#, fuzzy, kde-format
+msgid ""
+"Unrecognized command %1DCC %2. Possible commands are SEND, CHAT, CLOSE, GET, "
+"WHITEBOARD."
+msgstr ""
+"មិន​ទទួល​ស្គាល់​ពាក្យ​បញ្ជា​​ %1DCC %2 ។ ពាក្យ​បញ្ជា​អាច​ធ្វើ​បាន​ ផ្ញើ​ ជជែក​កំសាន្ត​ បិទ​ ទទួល​ផ្ទាំង​ ។"
+
+#: src/irc/outputfilter.cpp:1166
+#, fuzzy, kde-format
+msgid "Usage: %1INVITE <nick> [channel]"
+msgstr "ការ​ប្រើ​ ៖ %1INVITE <nick> [ឆានែល​]"
+
+#: src/irc/outputfilter.cpp:1177
+#, fuzzy, kde-format
+msgid "%1INVITE without channel name works only from within channels."
+msgstr "%1INVITE ដោយ​មិន​ចាំបាច់​ឈ្មោះ​​ឆានែលដំណើរការពី​ខាង​ក្នុងឆានែលតែ​ប៉ុណ្ណោះ​​ ។"
+
+#: src/irc/outputfilter.cpp:1186
+#, fuzzy, kde-format
+msgid "%1 is not a channel."
+msgstr "%1 មិន​មែន​ឆានែល​ ។"
+
+#: src/irc/outputfilter.cpp:1198
+#, fuzzy, c-format, kde-format
+msgid "Usage: %1EXEC <script> [parameter list]"
+msgstr "ការ​ប្រើ​ ៖ %1EXEC <script> [បញ្ជី​ប៉ារ៉ាម៉ែត្រ]"
+
+#: src/irc/outputfilter.cpp:1207
+#, fuzzy
+msgid "Script name may not contain \"../\"."
+msgstr "ឈ្មោះស្គ្រីប​អាច​មិន​មាន \"../\" ។"
+
+#: src/irc/outputfilter.cpp:1222
+#, fuzzy, kde-format
+msgid "Usage: %1RAW [OPEN | CLOSE]"
+msgstr "ការ​ប្រើ​ ៖​ %1RAW​ [បើក​​ | បិទ​]"
+
+#: src/irc/outputfilter.cpp:1263
+#, fuzzy
+msgid "Current notify list is empty."
+msgstr "បញ្ជី​ជូន​ដំណឹង​បច្ចុប្បន្ន​ទទេ​ ។"
+
+#: src/irc/outputfilter.cpp:1265
+#, fuzzy, kde-format
+msgid "Current notify list: %1"
+msgstr "បញ្ជី​ជូន​ដំណឹង​​បច្ចុប្បន្ន​ ៖ %1"
+
+#: src/irc/outputfilter.cpp:1289
+#, fuzzy
+msgid "Enter username and password for IRC operator privileges:"
+msgstr "បញ្ចូល​ឈ្មោះ​អ្នក​ប្រើ​ និង​ពាក្យ​សម្ងាត់​សម្រាប់​សិទ្ធិ​ការី​ការ​​ IRC ៖"
+
+#: src/irc/outputfilter.cpp:1291
+#, fuzzy
+msgid "IRC Operator Password"
+msgstr "ពាក្យ​សម្ងាត់​របស់​ការរី​ IRC"
+
+#: src/irc/outputfilter.cpp:1355
+#, fuzzy, kde-format
+msgid "%1BAN without channel name works only from inside a channel."
+msgstr "%1BAN ដោយ​មិន​ចាំបាច់​ឈ្មោះ​ឆានែលដំណើរការ​ពី​ខាងក្នុងឆានែលតែ​ប៉ុណ្តោះ​​ ។"
+
+#: src/irc/outputfilter.cpp:1358
+#, fuzzy, kde-format
+msgid "%1KICKBAN without channel name works only from inside a channel."
+msgstr "%1KICKBAN ដោយ​មិន​ចាំបាច់​ឈ្មោះ​ឆានែល​ដំណើរ​ការ​ពី​ខាង​ក្នុង​ឆានែល​ ។"
+
+#: src/irc/outputfilter.cpp:1390
+#, fuzzy, kde-format
+msgid ""
+"Usage: %1BAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] <user|"
+"mask>"
+msgstr ""
+"ការ​ប្រើ​ ៖ %1BAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] <user|"
+"mask>"
+
+#: src/irc/outputfilter.cpp:1393
+#, fuzzy, kde-format
+msgid ""
+"Usage: %1KICKBAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] <user|"
+"mask> [reason]"
+msgstr ""
+"ការ​ប្រើ​ ៖ %1KICKBAN [-HOST | -DOMAIN | -USERHOST | -USERDOMAIN] [channel] "
+"<user|mask> [reason]"
+
+#: src/irc/outputfilter.cpp:1436
+#, fuzzy, kde-format
+msgid "%1UNBAN without channel name works only from inside a channel."
+msgstr "%1UNBAN ដោយ​មិន​ចាំបាច់​ឈ្មោះ​ឆានែល​ដំណើរការ​ពី​ខាង​ក្នុង​ឆានែល​តែប៉ុណ្ណោះ​ ។"
+
+#: src/irc/outputfilter.cpp:1451
+#, fuzzy, kde-format
+msgid "Usage: %1UNBAN [channel] pattern"
+msgstr "ការ​ប្រើ​ ៖ %1UNBAN លំនាំ [ឆានែល​] "
+
+#: src/irc/outputfilter.cpp:1497
+#, fuzzy, kde-format
+msgid "Added %1 to your ignore list."
+msgstr "ដែល​បាន​បន្ថែម​ %1 ទៅកាន់​បញ្ជីមិន​អើពើ​របស់​អ្នក​ ។"
+
+#: src/irc/outputfilter.cpp:1507
+#, fuzzy, kde-format
+msgid "Usage: %1IGNORE [ -ALL ] <user 1> <user 2> ... <user n>"
+msgstr "ការ​ប្រើ​ ៖ %1IGNORE [ -ALL ] <user 1> <user 2> ... <user n>"
+
+#: src/irc/outputfilter.cpp:1518
+#, fuzzy, kde-format
+msgid "Usage: %1UNIGNORE <user 1> <user 2> ... <user n>"
+msgstr "ការ​ប្រើ​ ៖ %1UNIGNORE <user 1> <user 2> ... <user n>"
+
+#: src/irc/outputfilter.cpp:1569
+#, fuzzy, kde-format
+msgid "Removed %1 from your ignore list."
+msgstr "បាន​យក​ %1 ចេញ​ពី​បញ្ជី​មិនអើពើ​របស់​អ្នក​ ។"
+
+#: src/irc/outputfilter.cpp:1577
+#, fuzzy, kde-format
+msgid "No such ignore: %2"
+msgid_plural "No such ignores: %2"
+msgstr[0] "អើពើ​ ៖ %2"
+
+#: src/irc/outputfilter.cpp:1629
+#, fuzzy, kde-format
+msgid "Current encoding is: %1"
+msgstr "បច្ចុប្បន្ន​កំពុង​អ៊ិន​កូដ​ ៖ %1"
+
+#: src/irc/outputfilter.cpp:1640
+#, fuzzy, kde-format
+msgid "Switched to %1 encoding."
+msgstr "បានប្តូរ​​ទៅកាន់​ការ​អ៊ិនកូដ​ %1 ។"
+
+#: src/irc/outputfilter.cpp:1643
+#, fuzzy, kde-format
+msgid "%1 is not a valid encoding."
+msgstr "%1 មិន​ត្រឹមត្រូវការ​អ៊ិន​កូដ​ឡើយ​ ។"
+
+#: src/irc/outputfilter.cpp:1663
+#, fuzzy, c-format, kde-format
+msgid ""
+"Usage: %1setkey <nick|channel> <key> sets the encryption key for nick or "
+"channel. %1setkey <key> when in a channel or query tab sets the key for it. "
+"The key field recognizes \"cbc:\" and \"ecb:\" prefixes to set the block "
+"cipher mode of operation to either Cipher-Block Chaining or Electronic "
+"Codebook. The mode it defaults to when no prefix is given can be changed in "
+"the configuration dialog under Behavior -> Connection -> Encryption -> "
+"Default Encryption Type, with the default for that setting being Electronic "
+"Codebook (ECB)."
+msgstr ""
+"ការ​ប្រើ​ ៖ កំណត់សោ​ %1 <nick|channel> <key> កំណត់កូន​​សោ​​ សម្រាប់​សម្មតិនាម​ ឬ​ឆានែល​ ។ កំណត់​សោ %"
+"1 <key> នៅពេល​ដែល​ នៅក្នុង​ឆានែល​ ឬ​កំណត់​ផ្ទាំង​សំនួរសោ​សម្រាប់​វា​ ។ បុព្វបទ​ទទួល​ស្គាល់​វាល​សោ \"cbc:"
+"\" និង​ \"ecb:\" ដើម្បី​​កំណត់​របៀបសរសេរ​សម្ងាត់ប្លុក របស់​​ការី​ទៅកាន់​មួយណា​ ចំណង​សរសេរ​សម្ងាត់​ប្លុក​ ឬ​"
+"សៀវភៅកូដអេឡិច​ត្រូនិច ។ រ​បៀប​ វា​លំនាំដើម នៅពេល​ដែល​គ្មានបុព្វបទ​ត្រូវ​បាន​ផ្តល់​អាច​ត្រូវ​បាន​ប្តូរ​ នៅ​ក្នុង​"
+"ការ​កំណត់​រចនា​សម្ព័ន្ធ​ប្រអប់នៅក្រោម​ ប្រភេទ​ការ​អ៊ិន​ស្គ្រីប​លំនាំដើម​ ឥរិយា​បទ -> ការ​តភ្ជាប់​ -> ការ​អ៊ិន​"
+"ស្គ្រីប​ -> ជាមួយ​លំនាំដើម​សម្រាប់​​ការ​កំណត់​ការចាប់ផ្តើម​សៀវ​ភៅកូដ​អេឡិច​ត្រូនិច​(ECB) ។"
+
+#: src/irc/outputfilter.cpp:1681
+#, fuzzy, kde-format
+msgid "The key for %1 has been set."
+msgstr "សោ​សម្រាប់​ %1 ត្រូវ​បានកំណត់​ ។"
+
+#: src/irc/outputfilter.cpp:1683 src/irc/outputfilter.cpp:1709
+#, fuzzy
+msgid ""
+"Setting an encryption key requires Konversation to have been built with "
+"support for the Qt Cryptographic Architecture (QCA) library. Contact your "
+"distributor about a Konversation package with QCA support, or rebuild "
+"Konversation with QCA present."
+msgstr ""
+"ការ​កំណត់​ Konversation ទាមទារ​កូន​សោ​ដើម្បី​បង្កើត​ជាមួយ​ការ​គាំទ្រ​សម្រាប់​ បណ្ណាល័យ  Qt "
+"Cryptographic Architecture (QCA) ។ ទាក់​ទងអ្នកចែក​ចាយ​របស់​អ្នក​អំពី​កញ្ចប់​​របស់​ "
+"Konversation ជាមួយ​ការ​គាំទ្រ​ QCA ឬ​ បង្កើត​ Konversation ឡើងវិញ​ជាមួយ​ QCA បច្ចុប្បន្ន ។"
+
+#: src/irc/outputfilter.cpp:1702
+#, fuzzy, kde-format
+msgid ""
+"Usage: %1keyx <nick|channel> triggers DH1080 key exchange with the target."
+msgstr "ការ​ប្រើ​ ៖​ %1keyx <nick|channel> ប្តូរ​សោ​គន្លឹះ​របស់​​ DH1080 ជាមួយ​គោលដៅ ។"
+
+#: src/irc/outputfilter.cpp:1707
+#, fuzzy, kde-format
+msgid "Beginning DH1080 key exchange with %1."
+msgstr "ការ​ចាប់​ផ្តើមប្តូរ​សោ​របស់​ DH1080 ជាមួយ​ %1 ។"
+
+#: src/irc/outputfilter.cpp:1727
+#, fuzzy, c-format, kde-format
+msgid ""
+"Usage: %1delkey <nick> or <channel> deletes the encryption key for nick or "
+"channel"
+msgstr "ការប្រើ​ ៖​ %1delkey <nick> ឬ <channel> លុប​កូន​សោ​សម្រាប់​សម្មតិនាម​ ឬ​​ឆានែល​"
+
+#: src/irc/outputfilter.cpp:1739
+#, fuzzy, kde-format
+msgid "The key for %1 has been deleted."
+msgstr "សោសម្រាប់​​ %1 ត្រូវ​បាន​លុប​ ។"
+
+#: src/irc/outputfilter.cpp:1742 src/irc/outputfilter.cpp:1762
+#, fuzzy, kde-format
+msgid "No key has been set for %1."
+msgstr "គ្មាន​សោ​ដែលត្រូវ​​បាន​កំណត់​សម្រាប់​ %1 ឡើយ​ ។"
+
+#: src/irc/outputfilter.cpp:1759
+#, fuzzy, kde-format
+msgid "The key for %1 is \"%2\"."
+msgstr "សោ​សម្រាប់​ %1 ជា​ \"%2\" ។"
+
+#: src/irc/outputfilter.cpp:1760
+msgid "Blowfish"
+msgstr "Blowfish"
+
+#: src/irc/outputfilter.cpp:1772
+#, fuzzy, kde-format
+msgid "Usage: %1KILL <nick> [comment]"
+msgstr "ការ​ប្រើ​ ៖ %1KILL <nick> [ពាក្យ​បញ្ជា​]"
+
+#: src/irc/outputfilter.cpp:1788
+#, fuzzy, kde-format
+msgid "Usage: %1DNS <nick>"
+msgstr "ការ​ប្រើ​ ៖ %1DNS <nick>"
+
+#: src/irc/outputfilter.cpp:1804 src/irc/outputfilter.cpp:1823
+#, fuzzy, kde-format
+msgid "Resolved %1 to: %2"
+msgstr "បាន​ដោះស្រាយ​ %1 ទៅកាន់​ ៖ %2"
+
+#: src/irc/outputfilter.cpp:1808 src/irc/outputfilter.cpp:1827
+#, fuzzy, kde-format
+msgid "Unable to resolve %1"
+msgstr "មិនអាច​ទៅដោះស្រាយ​​ %1 បាន​ឡើយ​"
+
+#: src/irc/outputfilter.cpp:1861
+#, fuzzy, c-format, kde-format
+msgid "Usage: %1queuetuner [on | off]"
+msgstr "ការប្រើ​ ៖​ %1queuetuner [បើក​ | បិទ]"
+
+#: src/konsolepanel.cpp:27 src/viewer/viewcontainer.cpp:2110
+#: src/viewer/viewcontainer.cpp:2111
 msgid "Konsole"
 msgstr "Konsole"
 
@@ -4681,7 +4682,7 @@ msgstr "រក្សាទុក​ឯកសារ​កំណត់​ហេត
 msgid "Choose Destination Folder"
 msgstr "ជ្រើស​ថតទិស​ដៅ​"
 
-#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2210
+#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2248
 #, fuzzy
 msgid "Raw Log"
 msgstr "កំណត់​ហេតុ​ដើម​"
@@ -4871,7 +4872,7 @@ msgid "Open Query"
 msgstr "បើក​សំណួរ​"
 
 #: src/viewer/ircview.cpp:1388 src/viewer/topiclabel.cpp:128
-#: src/mainwindow.cpp:422
+#: src/mainwindow.cpp:429
 msgid "&Join Channel..."
 msgstr "ត​ឆានែល​..."
 
@@ -4905,24 +4906,24 @@ msgstr "ត​ឆានែល %1"
 msgid "Edit Multiline Paste"
 msgstr "កែ​សម្រួល​បិទ​ភ្ជាប់ជួរ​ច្រើន"
 
-#: src/viewer/viewcontainer.cpp:212 src/mainwindow.cpp:281
+#: src/viewer/viewcontainer.cpp:212 src/mainwindow.cpp:288
 #, fuzzy
 msgid "Move Tab Up"
 msgstr "ផ្លាស់​ទី​​ផ្ទាំងទៅ​​លើ​"
 
-#: src/viewer/viewcontainer.cpp:220 src/mainwindow.cpp:292
+#: src/viewer/viewcontainer.cpp:220 src/mainwindow.cpp:299
 #, fuzzy
 msgid "Move Tab Down"
 msgstr "ផ្លាស់​ទី​​ផ្ទាំងចុះ​​ក្រោម​"
 
-#: src/viewer/viewcontainer.cpp:313 src/mainwindow.cpp:312
-#: src/mainwindow.cpp:324
+#: src/viewer/viewcontainer.cpp:313 src/mainwindow.cpp:319
+#: src/mainwindow.cpp:331
 #, fuzzy
 msgid "Move Tab Left"
 msgstr "ផ្លាស់​ទី​ផ្ទាំង​ទៅ​ឆ្វេង​"
 
-#: src/viewer/viewcontainer.cpp:321 src/mainwindow.cpp:303
-#: src/mainwindow.cpp:333
+#: src/viewer/viewcontainer.cpp:321 src/mainwindow.cpp:310
+#: src/mainwindow.cpp:340
 #, fuzzy
 msgid "Move Tab Right"
 msgstr "ផ្លាស់​ទី​​ផ្ទាំង​ទៅស្តាំ"
@@ -4943,7 +4944,7 @@ msgid "Channel &List"
 msgstr "បញ្ជី និង​ឆានែល"
 
 #: src/viewer/viewcontainer.cpp:581 src/mainwindow.cpp:184
-#: src/mainwindow.cpp:734
+#: src/mainwindow.cpp:741
 #, fuzzy
 msgid "&Open Logfile"
 msgstr "បើក​ឯកសារ​កំណត់ហេតុ"
@@ -4963,49 +4964,49 @@ msgstr "កំពុង​កំណត់​ឆានែល​សម្រាប
 msgid "&Channel Settings..."
 msgstr "កំពុង​កំណត់​ឆានែល​..."
 
-#: src/viewer/viewcontainer.cpp:1605
+#: src/viewer/viewcontainer.cpp:1643
 msgid "Rename Tab"
 msgstr "ប្ដូរ​ឈ្មោះផ្ទាំង​"
 
-#: src/viewer/viewcontainer.cpp:1606
+#: src/viewer/viewcontainer.cpp:1644
 #, fuzzy
 msgid "Enter new tab name:"
 msgstr "បញ្ចូលឈ្មោះ​របស់​ផ្ទាំង​ថ្មី​ ៖"
 
-#: src/viewer/viewcontainer.cpp:1678
+#: src/viewer/viewcontainer.cpp:1716
 #, kde-format
 msgctxt "Default encoding"
 msgid "Default ( %1 )"
 msgstr "លំនាំដើម​ ( %1 )"
 
-#: src/viewer/viewcontainer.cpp:1712
+#: src/viewer/viewcontainer.cpp:1750
 #, fuzzy
 msgid "&Rename Tab..."
 msgstr "ប្តូរ​ឈ្មោះ​ផ្ទាំង​..."
 
-#: src/viewer/viewcontainer.cpp:1868
+#: src/viewer/viewcontainer.cpp:1906
 #, fuzzy
 msgid "You can only search in text fields."
 msgstr "អ្នក​អាច​ស្វែង​រក​នៅក្នុង​វាល​អត្ថបទ​តែប៉ុណ្ណោះ ។"
 
-#: src/viewer/viewcontainer.cpp:1869
+#: src/viewer/viewcontainer.cpp:1907
 #, fuzzy
 msgid "Find Text Information"
 msgstr "ស្វែង​រក​ព័ត៌មាន​អត្ថបទ​"
 
-#: src/viewer/viewcontainer.cpp:2063
+#: src/viewer/viewcontainer.cpp:2101
 #, fuzzy, kde-format
 msgid "Logfile of %1"
 msgstr "ឯកសារ​កំណត់ហេតុរបស់​ %1"
 
 #. i18n: file: src/urlcatcherui.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, URLCatcherUI)
-#: src/viewer/viewcontainer.cpp:2084 src/urlcatcher.cpp:148 rc.cpp:1891
+#: src/viewer/viewcontainer.cpp:2122 src/urlcatcher.cpp:148 rc.cpp:1891
 #, fuzzy
 msgid "URL Catcher"
 msgstr "អ្នក​ចាប់​របស់​ URL "
 
-#: src/viewer/viewcontainer.cpp:2454
+#: src/viewer/viewcontainer.cpp:2492
 #, fuzzy
 msgid ""
 "Using this function may result in a lot of network traffic. If your "
@@ -5015,12 +5016,12 @@ msgstr ""
 "ការ​ប្រើ​មុខងារ​នេះ​អាចមាន​លទ្ធផល​នៅក្នុងចរាចរ​របស់​បណ្តាញ​ជាច្រើន​ ។ ប្រសិន​បើ​ ការតភ្ជាប់​របស់​អ្នក​"
 "មិនលឿន​គ្រប់​គ្រាន់​ វា​អាច​ធ្វើ​ទៅ​បានដែល​​ម៉ាស៊ីន​ភ្ញៀវរបស់​អ្នកនឹង​ត្រូវ​បានផ្តាច់​ដោយ​ម៉ាស៊ីន​បម្រើ​ ។"
 
-#: src/viewer/viewcontainer.cpp:2458
+#: src/viewer/viewcontainer.cpp:2496
 #, fuzzy
 msgid "Channel List Warning"
 msgstr "ការ​ព្រមាន​បញ្ជី​ឆានែល​"
 
-#: src/viewer/viewcontainer.cpp:2482
+#: src/viewer/viewcontainer.cpp:2520
 #, fuzzy
 msgid ""
 "To know which server to display the channel list for, the list can only be "
@@ -5787,6 +5788,82 @@ msgstr "អ្នក​ត្រូវ​តែ​បន្ថែម​យ៉ា
 msgid "Please enter a real name."
 msgstr "សូម​បញ្ចូល​ឈ្មោះ​ពិត​ ។"
 
+#: src/notificationhandler.cpp:89 src/notificationhandler.cpp:335
+#, fuzzy, kde-format
+msgid "[HighLight] (%1) &lt;%2&gt; %3"
+msgstr "[បន្លិច​​] (%1) &lt;%2&gt; %3"
+
+#: src/notificationhandler.cpp:114
+#, fuzzy, kde-format
+msgid "[Query] &lt;%1&gt; %2"
+msgstr "[សំណួរ​​] &lt;%1&gt; %2"
+
+#: src/notificationhandler.cpp:139 src/notificationhandler.cpp:146
+#, kde-format
+msgid "%1 joined %2"
+msgstr "%1 បាន​ត​​ %2"
+
+#: src/notificationhandler.cpp:158 src/notificationhandler.cpp:165
+#, fuzzy, kde-format
+msgid "%1 parted %2"
+msgstr "%1 បាន​ចែក​ %2"
+
+#: src/notificationhandler.cpp:177
+#, kde-format
+msgid "%1 quit %2"
+msgstr "%1 បោះបង់​ %2"
+
+#: src/notificationhandler.cpp:188
+#, kde-format
+msgid "%1 changed nickname to %2"
+msgstr "%1 បាន​ប្តូរ​សម្មតិនាម​ទៅ %2"
+
+#: src/notificationhandler.cpp:199
+#, fuzzy, kde-format
+msgid "%1 wants to send a file to you"
+msgstr "%1 ចង់​ផ្ញើ​ឯកសារ​ទៅអ្នក"
+
+#: src/notificationhandler.cpp:210
+#, fuzzy, kde-format
+msgid "An Error has occurred in a DCC transfer: %1"
+msgstr "កំហុស​បាន​កើត​ឡើង​​ក្នុងការ​ផ្ទេរ​​ DCC ៖ %1"
+
+#: src/notificationhandler.cpp:221
+#, fuzzy, kde-format
+msgctxt "%1 - filename"
+msgid "%1 File Transfer is complete"
+msgstr "ផ្ទេរ​ឯកសារ​ %1 រួច​ហើយ​"
+
+#: src/notificationhandler.cpp:247
+#, fuzzy, kde-format
+msgid "%1 has started a conversation (query) with you."
+msgstr "%1 បាន​ចាប់​ផ្តើមការ​សន្ទនា​​ (សំណួរ​​) ជាមួយ​អ្នក​ ។"
+
+#: src/notificationhandler.cpp:288
+#, fuzzy, kde-format
+msgid "You are kicked by %1 from %2"
+msgstr "អ្នក​ត្រូវ​បាន​ទាត់​ដោយ​​ %1 ចេញ​ពី​ %2"
+
+#: src/notificationhandler.cpp:302
+#, fuzzy, kde-format
+msgid "%1 started a dcc chat with you"
+msgstr "%1 បានចាប់​ផ្តើម​ការ​ជជែកំសាន្ត​ dcc ជាមួយ​អ្នក​​"
+
+#: src/notificationhandler.cpp:332
+#, fuzzy, kde-format
+msgid "[HighLight] (%1) *** %2"
+msgstr "[បន្លិច​​] (%1) *** %2"
+
+#: src/notificationhandler.cpp:345
+#, kde-format
+msgid "Failed to connect to %1"
+msgstr "បាន​បរាជ័យ​តភ្ជាប់​ទៅកាន់​ %1"
+
+#: src/notificationhandler.cpp:358
+#, kde-format
+msgid "You have joined %1."
+msgstr "អ្នក​បាន​ត​ %1 ។"
+
 #: src/mainwindow.cpp:126
 #, fuzzy
 msgid "&Server List..."
@@ -5898,121 +5975,125 @@ msgid "Close &Tab"
 msgstr "បិទ​ផ្ទាំង​"
 
 #: src/mainwindow.cpp:272
+msgid "Last Focused Tab"
+msgstr ""
+
+#: src/mainwindow.cpp:279
 #, fuzzy
 msgid "Next Active Tab"
 msgstr "ផ្ទាំង​សកម្ម​បន្ទាប់​"
 
-#: src/mainwindow.cpp:347
+#: src/mainwindow.cpp:354
 #, fuzzy
 msgid "Rejoin Channel"
 msgstr "តឆានែល​ឡើង​វិញ​"
 
-#: src/mainwindow.cpp:353 src/mainwindow.cpp:740
+#: src/mainwindow.cpp:360 src/mainwindow.cpp:747
 #, fuzzy
 msgid "Enable Notifications"
 msgstr "បើក​ការ​ជូន​ដំណឹង​"
 
-#: src/mainwindow.cpp:359
+#: src/mainwindow.cpp:366
 #, fuzzy
 msgid "Join on Connect"
 msgstr "ត​លើ​ការ​តភ្ជាប់​"
 
-#: src/mainwindow.cpp:364
+#: src/mainwindow.cpp:371
 #, fuzzy
 msgid "Default"
 msgstr "លំនាំដើម​"
 
-#: src/mainwindow.cpp:369
+#: src/mainwindow.cpp:376
 #, fuzzy
 msgid "Set Encoding"
 msgstr "កំណត់​ការ​អ៊ិន​កូដ​"
 
-#: src/mainwindow.cpp:381
+#: src/mainwindow.cpp:388
 #, fuzzy, kde-format
 msgid "Go to Tab %1"
 msgstr "ទៅផ្ទាំង​ %1"
 
-#: src/mainwindow.cpp:390
+#: src/mainwindow.cpp:397
 #, fuzzy
 msgid "Clear &Marker Lines"
 msgstr "ជម្រះ​​បន្ទាត់​របស់​អ្នក​គូស​សម្គាល់​"
 
-#: src/mainwindow.cpp:393
+#: src/mainwindow.cpp:400
 #, fuzzy
 msgid "Clear marker lines in the current tab"
 msgstr "ជម្រះ​បន្ទាត់​របស់​អ្នក​គូស​សម្គាល់​នៅក្នុង​ផ្ទាំង​បច្ចុប្បន្ន"
 
-#: src/mainwindow.cpp:398
+#: src/mainwindow.cpp:405
 #, fuzzy
 msgid "&Clear Window"
 msgstr "ជម្រះ​បង្អួច​"
 
-#: src/mainwindow.cpp:401
+#: src/mainwindow.cpp:408
 #, fuzzy
 msgid "Clear the contents of the current tab"
 msgstr "ជម្រះ​មាតិការបស់​ផ្ទាំង​បច្ចុប្បន្ន"
 
-#: src/mainwindow.cpp:406
+#: src/mainwindow.cpp:413
 #, fuzzy
 msgid "Clear &All Windows"
 msgstr "ជម្រះ​បង្អួច​ទាំងអស់"
 
-#: src/mainwindow.cpp:409
+#: src/mainwindow.cpp:416
 #, fuzzy
 msgid "Clear the contents of all open tabs"
 msgstr "ជម្រះ​មាតិកា​រ​នៃ​ការ​បើក​ផ្ទាំង​ទាំង​អស់"
 
-#: src/mainwindow.cpp:414
+#: src/mainwindow.cpp:421
 #, fuzzy
 msgid "Global Away"
 msgstr "ឆ្ងាយ​សកល"
 
-#: src/mainwindow.cpp:438 src/mainwindow.cpp:742
+#: src/mainwindow.cpp:445 src/mainwindow.cpp:749
 #, fuzzy
 msgid "&IRC Color..."
 msgstr "ពណ៌ ​IRC..."
 
-#: src/mainwindow.cpp:442
+#: src/mainwindow.cpp:449
 #, fuzzy
 msgid "Set the color of your current IRC message"
 msgstr "កំណត់​ពណ៌​របស់​សារ​ជជែល​កំសាន្ត​តាមអ៊ីន​ធឺណិត​របស់​អ្នក​បច្ចុប្បន្ន​​"
 
-#: src/mainwindow.cpp:447 src/mainwindow.cpp:744
+#: src/mainwindow.cpp:454 src/mainwindow.cpp:751
 #, fuzzy
 msgid "&Marker Line"
 msgstr "បន្ទាត់​របស់​អ្នកគូស​សម្គាល់​"
 
-#: src/mainwindow.cpp:450
+#: src/mainwindow.cpp:457
 #, fuzzy
 msgid "Insert a horizontal line into the current tab that only you can see"
 msgstr "បញ្ជូល​ជួរផ្តេកទៅក្នុង​ផ្ទាំង​បច្ចុប្បន្ន​ ដែល​អ្នក​អាច​មើល​ឃើញ​តែមួយ​"
 
-#: src/mainwindow.cpp:455 src/mainwindow.cpp:743
+#: src/mainwindow.cpp:462 src/mainwindow.cpp:750
 #, fuzzy
 msgid "Special &Character..."
 msgstr "តួអក្សរពិសេស..."
 
-#: src/mainwindow.cpp:459
+#: src/mainwindow.cpp:466
 #, fuzzy
 msgid "Insert any character into your current IRC message"
 msgstr "បញ្ចូល​តួអក្សរ​ខ្លះ​ទៅក្នុង​សារ​ជជែកកំសាន្ត​របស់​អ្នក​បច្ចុប្បន្ន​"
 
-#: src/mainwindow.cpp:464
+#: src/mainwindow.cpp:471
 #, fuzzy
 msgid "Close &All Open Queries"
 msgstr "បិត និង​បើក​សំណួរ​ទាំង​អស់​"
 
-#: src/mainwindow.cpp:473
+#: src/mainwindow.cpp:480
 #, fuzzy
 msgid "Show Nicklist"
 msgstr "បង្ហាញ​បញ្ជី​សម្មតិនាម​"
 
-#: src/mainwindow.cpp:479
+#: src/mainwindow.cpp:486
 #, fuzzy
 msgid "Bookmarks"
 msgstr "ចំណាំ"
 
-#: src/mainwindow.cpp:530
+#: src/mainwindow.cpp:537
 #, fuzzy
 msgid ""
 "<qt>You have active DCC file transfers. Are you sure you want to quit "
@@ -6021,17 +6102,17 @@ msgstr ""
 "<qt>អ្នក​បាន​ផ្ទេរ​​ឯកសារ​របស់ DCC សកម្ម​ ។ តើ​អ្នកប្រាកដ​ជាចង់បោះបង់​ <b>Konversation</b> ឬ ?"
 "</qt>"
 
-#: src/mainwindow.cpp:531 src/mainwindow.cpp:541
+#: src/mainwindow.cpp:538 src/mainwindow.cpp:548
 #, fuzzy
 msgid "Confirm Quit"
 msgstr "បោះបង់​ការ​អះអាង​"
 
-#: src/mainwindow.cpp:540
+#: src/mainwindow.cpp:547
 #, fuzzy
 msgid "<qt>Are you sure you want to quit <b>Konversation</b>?</qt>"
 msgstr "<qt>តើ​អ្នកប្រាកដជា​ចង់​បោះបង់​ <b>Konversation</b> ឬ ?</qt>"
 
-#: src/mainwindow.cpp:573
+#: src/mainwindow.cpp:580
 #, fuzzy
 msgid ""
 "<p>Closing the main window will keep Konversation running in the system "
@@ -6041,12 +6122,12 @@ msgstr ""
 "<p>ការ​បិទបង្អួច​សំខាន់​ នឹង​រក្សាទុក​ការដំណើរការ​របស់​ Konversation នៅក្នុងថាស​ប្រព័ន្ធ​ ។  ប្រើ​ "
 "<b>បោះបង់​​</b> ពី​ <b>Konversation</b> ម៉ឺនុយ​ទៅបោះបង់​កម្មវិធី ។</p>"
 
-#: src/mainwindow.cpp:575
+#: src/mainwindow.cpp:582
 #, fuzzy
 msgid "Docking in System Tray"
 msgstr "ការចត​ក្នុងថាស​​ប្រព័ន្ធ​"
 
-#: src/mainwindow.cpp:691
+#: src/mainwindow.cpp:698
 #, fuzzy, kde-format
 msgid ""
 "<qt>This will hide the menu bar completely. You can show it again by typing %"
@@ -6054,121 +6135,45 @@ msgid ""
 msgstr ""
 "<qt>វានឹងលាក់របារ​​ម៉ឺនុយ​ដោយ​បញ្ចប់​ទាំងស្រុង​ ។ អ្នក​អាច​បង្ហាញ​វា​ម្តង​ទៀត​ដោយការ​វាយ​ %1 ។</qt>"
 
-#: src/mainwindow.cpp:726
+#: src/mainwindow.cpp:733
 #, fuzzy
 msgid "Toggle Notifications"
 msgstr "បិទ/បើក ការ​​ជូនដំណឹង​"
 
-#: src/mainwindow.cpp:727
+#: src/mainwindow.cpp:734
 #, fuzzy
 msgid "Toggle Away Globally"
 msgstr "បិទ/​បើក​​ ឆ្ងាយ​ជា​​សកល​"
 
-#: src/mainwindow.cpp:728
+#: src/mainwindow.cpp:735
 #, fuzzy
 msgid "Insert &IRC Color..."
 msgstr "បញ្ចូល​​ពណ៌របស់​ IRC..."
 
-#: src/mainwindow.cpp:729
+#: src/mainwindow.cpp:736
 #, fuzzy
 msgid "Insert Special &Character..."
 msgstr "បញ្ចូល​តួអក្សរ​ពិសេស..."
 
-#: src/mainwindow.cpp:730
+#: src/mainwindow.cpp:737
 #, fuzzy
 msgid "Insert &Marker Line"
 msgstr "បញ្ចូលបន្ទាត់​អ្នកគូស​សម្គាល់​"
 
-#: src/mainwindow.cpp:732
+#: src/mainwindow.cpp:739
 #, fuzzy
 msgid "&Channel List"
 msgstr "បញ្ជី​របស់​ឆានែល​"
 
-#: src/mainwindow.cpp:741
+#: src/mainwindow.cpp:748
 #, fuzzy
 msgid "Set &Away Globally"
 msgstr "កំណត់​ឆ្ងាយ​ជាសកល"
 
-#: src/mainwindow.cpp:753
+#: src/mainwindow.cpp:760
 #, fuzzy
 msgid "Server List"
 msgstr "បញ្ជី​របស់​​ម៉ាស៊ីន​បម្រើ​"
-
-#: src/notificationhandler.cpp:89 src/notificationhandler.cpp:335
-#, fuzzy, kde-format
-msgid "[HighLight] (%1) &lt;%2&gt; %3"
-msgstr "[បន្លិច​​] (%1) &lt;%2&gt; %3"
-
-#: src/notificationhandler.cpp:114
-#, fuzzy, kde-format
-msgid "[Query] &lt;%1&gt; %2"
-msgstr "[សំណួរ​​] &lt;%1&gt; %2"
-
-#: src/notificationhandler.cpp:139 src/notificationhandler.cpp:146
-#, kde-format
-msgid "%1 joined %2"
-msgstr "%1 បាន​ត​​ %2"
-
-#: src/notificationhandler.cpp:158 src/notificationhandler.cpp:165
-#, fuzzy, kde-format
-msgid "%1 parted %2"
-msgstr "%1 បាន​ចែក​ %2"
-
-#: src/notificationhandler.cpp:177
-#, kde-format
-msgid "%1 quit %2"
-msgstr "%1 បោះបង់​ %2"
-
-#: src/notificationhandler.cpp:188
-#, kde-format
-msgid "%1 changed nickname to %2"
-msgstr "%1 បាន​ប្តូរ​សម្មតិនាម​ទៅ %2"
-
-#: src/notificationhandler.cpp:199
-#, fuzzy, kde-format
-msgid "%1 wants to send a file to you"
-msgstr "%1 ចង់​ផ្ញើ​ឯកសារ​ទៅអ្នក"
-
-#: src/notificationhandler.cpp:210
-#, fuzzy, kde-format
-msgid "An Error has occurred in a DCC transfer: %1"
-msgstr "កំហុស​បាន​កើត​ឡើង​​ក្នុងការ​ផ្ទេរ​​ DCC ៖ %1"
-
-#: src/notificationhandler.cpp:221
-#, fuzzy, kde-format
-msgctxt "%1 - filename"
-msgid "%1 File Transfer is complete"
-msgstr "ផ្ទេរ​ឯកសារ​ %1 រួច​ហើយ​"
-
-#: src/notificationhandler.cpp:247
-#, fuzzy, kde-format
-msgid "%1 has started a conversation (query) with you."
-msgstr "%1 បាន​ចាប់​ផ្តើមការ​សន្ទនា​​ (សំណួរ​​) ជាមួយ​អ្នក​ ។"
-
-#: src/notificationhandler.cpp:288
-#, fuzzy, kde-format
-msgid "You are kicked by %1 from %2"
-msgstr "អ្នក​ត្រូវ​បាន​ទាត់​ដោយ​​ %1 ចេញ​ពី​ %2"
-
-#: src/notificationhandler.cpp:302
-#, fuzzy, kde-format
-msgid "%1 started a dcc chat with you"
-msgstr "%1 បានចាប់​ផ្តើម​ការ​ជជែកំសាន្ត​ dcc ជាមួយ​អ្នក​​"
-
-#: src/notificationhandler.cpp:332
-#, fuzzy, kde-format
-msgid "[HighLight] (%1) *** %2"
-msgstr "[បន្លិច​​] (%1) *** %2"
-
-#: src/notificationhandler.cpp:345
-#, kde-format
-msgid "Failed to connect to %1"
-msgstr "បាន​បរាជ័យ​តភ្ជាប់​ទៅកាន់​ %1"
-
-#: src/notificationhandler.cpp:358
-#, kde-format
-msgid "You have joined %1."
-msgstr "អ្នក​បាន​ត​ %1 ។"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
