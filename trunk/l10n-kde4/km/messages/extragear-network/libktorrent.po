@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-13 04:51+0200\n"
+"POT-Creation-Date: 2010-06-15 05:59+0200\n"
 "PO-Revision-Date: 2009-12-21 14:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -278,7 +278,11 @@ msgstr " មិន​អាច​បើក​ឯកសារ​ torrent %1 ៖ 
 msgid "Parse Error"
 msgstr "កំហុស​ញែក"
 
-#: src/torrent/torrentcontrol.cpp:533
+#: src/torrent/torrentcontrol.cpp:304
+msgid "Error writing to disk, do you have enough diskspace ?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:541
 #, fuzzy, kde-format
 #| msgid ""
 #| "An error occurred while loading the torrent <b>%1</b>\n"
@@ -290,7 +294,7 @@ msgstr ""
 "កំហុស​មួយ​កើតឡើង​នៅពេល​ផ្ទុក torrent <b>%1</b> ។\n"
 "torrent ប្រហែល​ជា​ខូច ឬ​មិនមែន​ជា​ឯកសារ torrent ។"
 
-#: src/torrent/torrentcontrol.cpp:563
+#: src/torrent/torrentcontrol.cpp:571
 #, fuzzy, kde-format
 #| msgid ""
 #| "An error occurred while loading the torrent <b>%1</b>\n"
@@ -302,12 +306,12 @@ msgstr ""
 "កំហុស​មួយ​កើតឡើង​នៅពេល​ផ្ទុក torrent <b>%1</b> ។\n"
 "torrent ប្រហែល​ជា​ខូច ឬ​មិនមែន​ជា​ឯកសារ torrent ។"
 
-#: src/torrent/torrentcontrol.cpp:574
+#: src/torrent/torrentcontrol.cpp:582
 #, kde-format
 msgid "Unable to create %1 : %2"
 msgstr "មិន​អាច​បង្កើត %1 ៖ %2"
 
-#: src/torrent/torrentcontrol.cpp:589
+#: src/torrent/torrentcontrol.cpp:597
 #, fuzzy, kde-format
 #| msgid ""
 #| "You are already downloading this torrent %1, the list of trackers of both "
@@ -319,7 +323,7 @@ msgstr ""
 "អ្នក​កំពុង​តែ​ទាញ​យក torrent %1 នេះ​រួ​ចហើយ បញ្ជី​របស់​កម្មវិធី​តាមដាន​របស់​ torrents ទាំងពីរ​ត្រូវ​បាន​"
 "បញ្ចូលចូល​គ្នា ។"
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:602
 #, fuzzy, kde-format
 #| msgid "You are already downloading the torrent %1"
 msgid "You are already downloading the torrent <b>%1</b>."
@@ -388,7 +392,13 @@ msgstr "កំហុស ៖ សំណើ​អស់​ពេល"
 msgid "Redirected without a new location."
 msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
 
-#: src/download/chunkdownload.cpp:373
+#: src/download/chunkdownload.cpp:118
+#, fuzzy
+#| msgid "Insufficient disk space for %1"
+msgid "Not enough diskspace"
+msgstr "ទំហំថាស​មិនគ្រប់គ្រាន់​សម្រាប់ %1"
+
+#: src/download/chunkdownload.cpp:376
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
@@ -502,10 +512,15 @@ msgstr "ការ​ចេញ/ចូល​របស់​ថាស"
 msgid "µTP"
 msgstr ""
 
+#: src/util/signalcatcher.cpp:56
+msgid "Error when writing to disk"
+msgstr ""
+
+#: src/util/signalcatcher.cpp:56
 #, fuzzy
-#~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
-#~ msgstr "ទំហំថាស​មិនគ្រប់គ្រាន់​សម្រាប់ %1"
+#| msgid "Error reading from %1"
+msgid "Error when reading from disk"
+msgstr "កំហុស​ក្នុងការ​អាន​ពី %1"
 
 #, fuzzy
 #~| msgid "UDP"
