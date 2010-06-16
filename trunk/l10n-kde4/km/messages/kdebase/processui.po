@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-27 04:52+0200\n"
+"POT-Creation-Date: 2010-06-16 04:53+0200\n"
 "PO-Revision-Date: 2010-06-08 14:10+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -88,7 +88,11 @@ msgid ""
 "any time."
 msgstr ""
 
-#: ksysguardprocesslist.cpp:411 ksysguardprocesslist.cpp:1249
+#: ksysguardprocesslist.cpp:411
+#, fuzzy
+#| msgid "End Process"
+#| msgid_plural "End Processes"
+msgctxt "Context menu"
 msgid "End Process"
 msgid_plural "End Processes"
 msgstr[0] "បញ្ចប់​ដំណើរ​ការ"
@@ -240,6 +244,15 @@ msgid_plural ""
 "Are you sure you want to end these %1 processes?  Any unsaved work may be "
 "lost"
 msgstr[0] "តើ​អ្នក​ប្រាកដ​ហើយ​ឬថា​ចង់​បញ្ចប់​ដំណើរការ​ %1 នេះ ? ការងារ​ដែល​មិន​បាន​រក្សាទុក​អាច​បាត់បង់"
+
+#: ksysguardprocesslist.cpp:1249
+#, fuzzy, kde-format
+#| msgid "End Process"
+#| msgid_plural "End Processes"
+msgctxt "Dialog title"
+msgid "End Process"
+msgid_plural "End %1 Processes"
+msgstr[0] "បញ្ចប់​ដំណើរ​ការ"
 
 #: ksysguardprocesslist.cpp:1250
 msgid "End"
@@ -1419,52 +1432,57 @@ msgstr ""
 "<b>%1</b><br />លេខ​សម្គាល់​ដំណើរការ ៖ <numid>%2</numid><br />លេខ​សម្គាល់​របស់​មេ ៖ "
 "<numid>%3</numid>"
 
-#: ProcessModel.cc:1322
+#: ProcessModel.cc:1322 ProcessModel.cc:1386
+#, kde-format
+msgid "<br/>Number of threads: %1"
+msgstr ""
+
+#: ProcessModel.cc:1324
 #, kde-format
 msgid "<br/>Command: %1"
 msgstr "<br/>ពាក្យ​បញ្ជា ៖ %1"
 
-#: ProcessModel.cc:1325
+#: ProcessModel.cc:1327
 #, kde-format
 msgid "<br />Running on: %1"
 msgstr "<br />រត់​នៅលើ ៖ %1"
 
-#: ProcessModel.cc:1333
+#: ProcessModel.cc:1335
 #, kde-format
 msgid "<qt>This process was run with the following command:<br />%1"
 msgstr "<qt>ដំណើរការ​នេះ​ត្រូវបាន​រត់​ជាមួយ​ពាក្យបញ្ជា​ដូចខាងក្រោម ៖<br />%1"
 
-#: ProcessModel.cc:1335
+#: ProcessModel.cc:1337
 #, kde-format
 msgid "<br /><br />Running on: %1"
 msgstr "<br /><br />រត់​នៅលើ ៖ %1"
 
-#: ProcessModel.cc:1350
+#: ProcessModel.cc:1352
 #, kde-format
 msgid "Nice level: %1 (%2)"
 msgstr "កម្រិត​ល្អ ៖ %1 (%2)"
 
-#: ProcessModel.cc:1354
+#: ProcessModel.cc:1356
 #, kde-format
 msgid "This is a real time process.<br>Scheduler priority: %1"
 msgstr ""
 
-#: ProcessModel.cc:1360
+#: ProcessModel.cc:1362
 #, kde-format
 msgid "<br/>Scheduler: %1"
 msgstr "<br/>កម្មវិធី​កំណត់​ពេល ៖ %1"
 
-#: ProcessModel.cc:1364 ProcessModel.cc:1404
+#: ProcessModel.cc:1366 ProcessModel.cc:1408
 #, kde-format
 msgid "<br/>I/O Nice level: %1 (%2)"
 msgstr "<br/>កម្រិត​ល្អ I/O ៖ %1 (%2)"
 
-#: ProcessModel.cc:1365 ProcessModel.cc:1405
+#: ProcessModel.cc:1367 ProcessModel.cc:1409
 #, kde-format
 msgid "<br/>I/O Class: %1"
 msgstr "<br/>ថ្នាក់ I/O ៖ %1"
 
-#: ProcessModel.cc:1373
+#: ProcessModel.cc:1375
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt><p style='white-space:pre'>Process status: %1 %2<br />User CPU "
@@ -1476,7 +1494,7 @@ msgstr ""
 "<qt><p style='white-space:pre'>ស្ថានភាព​ដំណើរការ ៖ %1 %2<br />ការប្រើ​ស៊ីភីយូ​របស់​អ្នក​"
 "ប្រើ ៖ %3%​<br />ការ​ប្រើ​ស៊ីភីយូ​របស់​ប្រព័ន្ធ ៖ %4%</qt>"
 
-#: ProcessModel.cc:1384
+#: ProcessModel.cc:1388
 #, kde-format
 msgid ""
 "<br />Number of children: %1<br />Total User CPU usage: %2%<br />Total "
@@ -1485,42 +1503,42 @@ msgstr ""
 "<br />ចំនួន​កូន ៖ %1<br />ការ​ប្រើប្រាស់ CPU អ្នកប្រើ​សរុប ៖ %2%<br />ការប្រើប្រាស់ CPU "
 "ប្រព័ន្ធ​សរុប ៖ %3%<br />ការប្រើប្រាស់ CPU សរុប ៖ %4%"
 
-#: ProcessModel.cc:1393
+#: ProcessModel.cc:1397
 #, kde-format
 msgid "<br /><br />CPU time spent running as user: %1 seconds"
 msgstr "<br /><br />ពេលវេលា CPU ដែល​ចំណាយ​សម្រាប់​រត់​ជា​អ្នកប្រើ ៖ %1 វិនាទី"
 
-#: ProcessModel.cc:1397
+#: ProcessModel.cc:1401
 #, kde-format
 msgid "<br />CPU time spent running in kernel: %1 seconds"
 msgstr "<br />ពេលវេលា CPU ដែល​ចំណាយ​ដើម្បី​រត់​ក្នុង​ខឺណែល ៖ %1 វិនាទី"
 
-#: ProcessModel.cc:1401
+#: ProcessModel.cc:1405
 #, kde-format
 msgid "<br />Nice level: %1 (%2)"
 msgstr "<br />កម្រិត​ល្អ ៖ %1 (%2)"
 
-#: ProcessModel.cc:1420
+#: ProcessModel.cc:1424
 #, kde-format
 msgid "Memory usage: %1 out of %2  (%3 %)<br />"
 msgstr "ការ​ប្រើប្រាស់​សតិ ៖ %1 នៃ %2  (%3 %)<br />"
 
-#: ProcessModel.cc:1422
+#: ProcessModel.cc:1426
 #, kde-format
 msgid "Memory usage: %1<br />"
 msgstr "ការប្រើប្រាស់​សតិ ៖ %1<br />"
 
-#: ProcessModel.cc:1425
+#: ProcessModel.cc:1429
 #, kde-format
 msgid "RSS Memory usage: %1 out of %2  (%3 %)"
 msgstr "ការ​ប្រើប្រាស់​សតិ RSS ៖ %1 នៃ %2  (%3 %)"
 
-#: ProcessModel.cc:1427
+#: ProcessModel.cc:1431
 #, kde-format
 msgid "RSS Memory usage: %1"
 msgstr "ការប្រើប្រាស់​សតិ RSS ៖ %1"
 
-#: ProcessModel.cc:1433
+#: ProcessModel.cc:1437
 #, fuzzy
 #| msgid ""
 #| "<qt>Your system does not seem to have this information available to be "
@@ -1529,17 +1547,17 @@ msgid ""
 "Your system does not seem to have this information available to be read."
 msgstr "<qt>ប្រព័ន្ធ​របស់​អ្នក ហាក់ដូចជា​មិនមាន​ព័ត៌មាន​នេះ​សម្រាប់​អាន​ទេ ។</qt>"
 
-#: ProcessModel.cc:1437
+#: ProcessModel.cc:1441
 #, kde-format
 msgid "Shared library memory usage: %1 out of %2  (%3 %)"
 msgstr "ការប្រើប្រាស់​សតិបណ្ណាល័យ​ដែលបាន​ចែករំលែក ៖ %1 នៃ %2  (%3 %)"
 
-#: ProcessModel.cc:1439
+#: ProcessModel.cc:1443
 #, kde-format
 msgid "Shared library memory usage: %1"
 msgstr "ការប្រើប្រាស់​សតិ​បណ្ណាល័យ​ដែលបាន​ចែករំលែក ៖ %1"
 
-#: ProcessModel.cc:1447
+#: ProcessModel.cc:1451
 #, kde-format
 msgid ""
 "Characters read: %1 (%2 KiB/s)<br>Characters written: %3 (%4 KiB/s)<br>Read "
@@ -1547,38 +1565,38 @@ msgid ""
 "9 (%10 KiB/s)<br>Actual bytes written: %11 (%12 KiB/s)"
 msgstr ""
 
-#: ProcessModel.cc:1712
+#: ProcessModel.cc:1716
 msgctxt "process heading"
 msgid "Name"
 msgstr "ឈ្មោះ"
 
-#: ProcessModel.cc:1713
+#: ProcessModel.cc:1717
 msgctxt "process heading"
 msgid "Username"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ"
 
-#: ProcessModel.cc:1714
+#: ProcessModel.cc:1718
 msgctxt "process heading"
 msgid "PID"
 msgstr "PID"
 
-#: ProcessModel.cc:1715
+#: ProcessModel.cc:1719
 msgctxt "process heading"
 msgid "TTY"
 msgstr "TTY"
 
-#: ProcessModel.cc:1716
+#: ProcessModel.cc:1720
 msgctxt "process heading"
 msgid "Niceness"
 msgstr "ភាព​ស្អាត"
 
-#: ProcessModel.cc:1718
+#: ProcessModel.cc:1722
 #, no-c-format
 msgctxt "process heading"
 msgid "CPU %"
 msgstr "CPU %"
 
-#: ProcessModel.cc:1719
+#: ProcessModel.cc:1723
 #, fuzzy
 #| msgctxt "process heading"
 #| msgid "CPU %"
@@ -1586,37 +1604,37 @@ msgctxt "process heading"
 msgid "CPU Time"
 msgstr "CPU %"
 
-#: ProcessModel.cc:1720
+#: ProcessModel.cc:1724
 msgctxt "process heading"
 msgid "IO Read"
 msgstr ""
 
-#: ProcessModel.cc:1721
+#: ProcessModel.cc:1725
 msgctxt "process heading"
 msgid "IO Write"
 msgstr ""
 
-#: ProcessModel.cc:1722
+#: ProcessModel.cc:1726
 msgctxt "process heading"
 msgid "Virtual Size"
 msgstr "ទំហំ​និម្មិត"
 
-#: ProcessModel.cc:1723
+#: ProcessModel.cc:1727
 msgctxt "process heading"
 msgid "Memory"
 msgstr "សតិ"
 
-#: ProcessModel.cc:1724
+#: ProcessModel.cc:1728
 msgctxt "process heading"
 msgid "Shared Mem"
 msgstr "សតិ​ដែលបាន​ចែករំលែក"
 
-#: ProcessModel.cc:1725
+#: ProcessModel.cc:1729
 msgctxt "process heading"
 msgid "Command"
 msgstr "ពាក្យ​បញ្ជា"
 
-#: ProcessModel.cc:1727
+#: ProcessModel.cc:1731
 #, fuzzy
 #| msgctxt "process heading"
 #| msgid "Memory"
@@ -1624,27 +1642,27 @@ msgctxt "process heading"
 msgid "X11 Memory"
 msgstr "សតិ"
 
-#: ProcessModel.cc:1728
+#: ProcessModel.cc:1732
 msgctxt "process heading"
 msgid "Window Title"
 msgstr "ចំណងជើង​បង្អួច"
 
-#: ProcessModel.cc:1846
+#: ProcessModel.cc:1850
 #, kde-format
 msgid "%1 K"
 msgstr "%1 K"
 
-#: ProcessModel.cc:1847
+#: ProcessModel.cc:1851
 #, kde-format
 msgid "%1 M"
 msgstr "%1 M"
 
-#: ProcessModel.cc:1848
+#: ProcessModel.cc:1852
 #, kde-format
 msgid "%1 G"
 msgstr "%1 G"
 
-#: ProcessModel.cc:1849
+#: ProcessModel.cc:1853
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
