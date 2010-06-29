@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-06-26 01:27+0200\n"
+"POT-Creation-Date: 2010-06-29 02:51+0200\n"
 "PO-Revision-Date: 2009-12-21 14:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -49,8 +49,8 @@ msgstr "មិនអាច​បម្លែង %1 ទៅ​ចំនួន​�
 msgid "Torrent is incomplete."
 msgstr "Torrent មិន​ទាន់​បាន​បញ្ចប់​នូវឡើយ​ទេ !"
 
-#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:325
-#: src/util/fileops.cpp:367
+#: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:327
+#: src/util/fileops.cpp:369
 #, kde-format
 msgid "Cannot open %1 : %2"
 msgstr "មិនអាច​បើក​ %1 ៖​ %2"
@@ -145,7 +145,7 @@ msgstr "យល់​​ព្រម​"
 msgid "Announcing"
 msgstr "ការ​ប្រកាស"
 
-#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:85
+#: src/interfaces/trackerinterface.cpp:60 src/torrent/torrentstats.cpp:86
 #, fuzzy, kde-format
 #| msgid "Error: "
 msgid "Error: %1"
@@ -190,64 +190,70 @@ msgstr "ទិន្នន័យ​មិនត្រឹមត្រូវ​ព
 msgid "Invalid tracker URL"
 msgstr "URL កម្មវិធី​តាមដាន​បទ​មិន​ត្រឹមត្រូវ"
 
-#: src/torrent/torrentstats.cpp:71
+#: src/torrent/torrentstats.cpp:72
 msgid "Not started"
 msgstr "មិន​បាន​ចាប់ផ្ដើម"
 
-#: src/torrent/torrentstats.cpp:73
+#: src/torrent/torrentstats.cpp:74
 msgid "Download completed"
 msgstr "បាន​បញ្ចប់​ការ​ទាញយក​ទាំងស្រុង"
 
-#: src/torrent/torrentstats.cpp:75
+#: src/torrent/torrentstats.cpp:76
 msgid "Seeding completed"
 msgstr "បាន​បញ្ចប់​ការ​បណ្ដុះ"
 
-#: src/torrent/torrentstats.cpp:77
+#: src/torrent/torrentstats.cpp:78
 #, fuzzy
 #| msgid "Seeding"
 msgctxt "Status of a torrent file"
 msgid "Seeding"
 msgstr "បណ្ដុះ"
 
-#: src/torrent/torrentstats.cpp:79
+#: src/torrent/torrentstats.cpp:80
 msgid "Downloading"
 msgstr "ការ​ទាញយក"
 
-#: src/torrent/torrentstats.cpp:81
+#: src/torrent/torrentstats.cpp:82
 msgid "Stalled"
 msgstr "អាក់"
 
-#: src/torrent/torrentstats.cpp:83
+#: src/torrent/torrentstats.cpp:84
 msgid "Stopped"
 msgstr "បាន​បញ្ឈប់"
 
-#: src/torrent/torrentstats.cpp:87
+#: src/torrent/torrentstats.cpp:88
 msgid "Allocating diskspace"
 msgstr "បម្រុងទុក​ទំហំ​ថាស"
 
-#: src/torrent/torrentstats.cpp:89
+#: src/torrent/torrentstats.cpp:90
 #, fuzzy
 #| msgid "Currently downloading:"
 msgid "Queued for seeding"
 msgstr "ការ​ទាញយក​បច្ចុប្បន្ន​ ៖"
 
-#: src/torrent/torrentstats.cpp:89
+#: src/torrent/torrentstats.cpp:90
 #, fuzzy
 #| msgid "Currently downloading:"
 msgid "Queued for downloading"
 msgstr "ការ​ទាញយក​បច្ចុប្បន្ន​ ៖"
 
-#: src/torrent/torrentstats.cpp:91
+#: src/torrent/torrentstats.cpp:92
 msgid "Checking data"
 msgstr "ពិនិត្យ​ទិន្នន័យ​"
 
-#: src/torrent/torrentstats.cpp:93
+#: src/torrent/torrentstats.cpp:94
 msgid "Stopped. No space left on device."
 msgstr "បាន​បញ្ឈប់ ដោយ​សារ​ឧបករណ៍​មិនមាន​នៅ​សល់​ទំហំ ។"
 
-#: src/torrent/torrentstats.cpp:95
+#: src/torrent/torrentstats.cpp:96
 msgid "Paused"
 msgstr "បាន​ផ្អាក"
+
+#: src/torrent/torrentstats.cpp:98
+#, fuzzy
+#| msgid "Seeding"
+msgid "Superseeding"
+msgstr "បណ្ដុះ"
 
 #: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
 #: src/torrent/torrentcreator.cpp:292
@@ -278,7 +284,11 @@ msgstr " មិន​អាច​បើក​ឯកសារ​ torrent %1 ៖ 
 msgid "Parse Error"
 msgstr "កំហុស​ញែក"
 
-#: src/torrent/torrentcontrol.cpp:533
+#: src/torrent/torrentcontrol.cpp:307
+msgid "Error writing to disk, do you have enough diskspace ?"
+msgstr ""
+
+#: src/torrent/torrentcontrol.cpp:545
 #, fuzzy, kde-format
 #| msgid ""
 #| "An error occurred while loading the torrent <b>%1</b>\n"
@@ -290,7 +300,7 @@ msgstr ""
 "កំហុស​មួយ​កើតឡើង​នៅពេល​ផ្ទុក torrent <b>%1</b> ។\n"
 "torrent ប្រហែល​ជា​ខូច ឬ​មិនមែន​ជា​ឯកសារ torrent ។"
 
-#: src/torrent/torrentcontrol.cpp:563
+#: src/torrent/torrentcontrol.cpp:575
 #, fuzzy, kde-format
 #| msgid ""
 #| "An error occurred while loading the torrent <b>%1</b>\n"
@@ -302,12 +312,12 @@ msgstr ""
 "កំហុស​មួយ​កើតឡើង​នៅពេល​ផ្ទុក torrent <b>%1</b> ។\n"
 "torrent ប្រហែល​ជា​ខូច ឬ​មិនមែន​ជា​ឯកសារ torrent ។"
 
-#: src/torrent/torrentcontrol.cpp:574
+#: src/torrent/torrentcontrol.cpp:586
 #, kde-format
 msgid "Unable to create %1 : %2"
 msgstr "មិន​អាច​បង្កើត %1 ៖ %2"
 
-#: src/torrent/torrentcontrol.cpp:589
+#: src/torrent/torrentcontrol.cpp:601
 #, fuzzy, kde-format
 #| msgid ""
 #| "You are already downloading this torrent %1, the list of trackers of both "
@@ -319,7 +329,7 @@ msgstr ""
 "អ្នក​កំពុង​តែ​ទាញ​យក torrent %1 នេះ​រួ​ចហើយ បញ្ជី​របស់​កម្មវិធី​តាមដាន​របស់​ torrents ទាំងពីរ​ត្រូវ​បាន​"
 "បញ្ចូលចូល​គ្នា ។"
 
-#: src/torrent/torrentcontrol.cpp:594
+#: src/torrent/torrentcontrol.cpp:606
 #, fuzzy, kde-format
 #| msgid "You are already downloading the torrent %1"
 msgid "You are already downloading the torrent <b>%1</b>."
@@ -388,7 +398,13 @@ msgstr "កំហុស ៖ សំណើ​អស់​ពេល"
 msgid "Redirected without a new location."
 msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
 
-#: src/download/chunkdownload.cpp:373
+#: src/download/chunkdownload.cpp:118
+#, fuzzy
+#| msgid "Insufficient disk space for %1"
+msgid "Not enough diskspace"
+msgstr "ទំហំថាស​មិនគ្រប់គ្រាន់​សម្រាប់ %1"
+
+#: src/download/chunkdownload.cpp:376
 #, kde-format
 msgid "1 peer"
 msgid_plural "%1 peers"
@@ -415,54 +431,54 @@ msgstr "មិន​អាច​អាន​ពី %1 បានទេ"
 msgid "Cannot open log file %1 : %2"
 msgstr "មិន​អាច​បើក​ឯកសារ​កំណត់​ហេតុ​ %1 ៖​ %2"
 
-#: src/util/fileops.cpp:92
+#: src/util/fileops.cpp:94
 #, fuzzy, kde-format
 #| msgid "Cannot create directory %1: %2"
 msgid "Cannot create directory %1"
 msgstr "មិន​អាច​បង្កើត​ថត​ %1 ៖ %2"
 
-#: src/util/fileops.cpp:133
+#: src/util/fileops.cpp:135
 #, kde-format
 msgid "Cannot symlink %1 to %2: %3"
 msgstr "មិនអាច​តភ្ជាប់​ %1 ទៅ %2 ៖ %3"
 
-#: src/util/fileops.cpp:150
+#: src/util/fileops.cpp:152
 #, kde-format
 msgid "Cannot move %1 to %2: %3"
 msgstr "មិន​អាច​ផ្លាស់ទី​ %1 ទៅ​កាន់​ %2 ៖​ %3"
 
-#: src/util/fileops.cpp:166 src/util/fileops.cpp:182
+#: src/util/fileops.cpp:168 src/util/fileops.cpp:184
 #, kde-format
 msgid "Cannot copy %1 to %2: %3"
 msgstr "មិន​អាច​ចម្លង​ %1 ទៅ​កាន់​ %2 ៖ %3"
 
-#: src/util/fileops.cpp:247
+#: src/util/fileops.cpp:249
 #, kde-format
 msgid "Cannot delete %1: %2"
 msgstr "មិន​អាច​លុប​ %1 ៖ %2"
 
-#: src/util/fileops.cpp:264
+#: src/util/fileops.cpp:266
 #, kde-format
 msgid "Cannot create %1: %2"
 msgstr "មិនអាច​បង្កើត​ %1 ៖ %2"
 
-#: src/util/fileops.cpp:282
+#: src/util/fileops.cpp:284
 #, kde-format
 msgid "Cannot calculate the filesize of %1: %2"
 msgstr "មិន​អាច​គណនា​ទំហំ​ឯកសារ​%1 ៖ %2"
 
-#: src/util/fileops.cpp:298
+#: src/util/fileops.cpp:300
 #, kde-format
 msgid "Cannot calculate the filesize : %1"
 msgstr "មិនអាច​គណនា​ទំហំ​ឯកសារ ៖ %1"
 
-#: src/util/fileops.cpp:346 src/util/fileops.cpp:352 src/util/fileops.cpp:355
-#: src/util/fileops.cpp:358
+#: src/util/fileops.cpp:348 src/util/fileops.cpp:354 src/util/fileops.cpp:357
+#: src/util/fileops.cpp:360
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "មិន​អាច​ពង្រីក​​ឯកសារ​ ៖​ %1"
 
-#: src/util/fileops.cpp:388
+#: src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot seek in file : %1"
 msgstr "មិន​អាច​ស្វែងរក​ក្នុង​ឯកសារ​ ៖​ %1"
@@ -502,10 +518,70 @@ msgstr "ការ​ចេញ/ចូល​របស់​ថាស"
 msgid "µTP"
 msgstr ""
 
+#: src/util/signalcatcher.cpp:56
+msgid "Error when writing to disk"
+msgstr ""
+
+#: src/util/signalcatcher.cpp:56
 #, fuzzy
-#~| msgid "Insufficient disk space for %1"
-#~ msgid "Not enough free disk space for %1"
-#~ msgstr "ទំហំថាស​មិនគ្រប់គ្រាន់​សម្រាប់ %1"
+#| msgid "Error reading from %1"
+msgid "Error when reading from disk"
+msgstr "កំហុស​ក្នុងការ​អាន​ពី %1"
+
+#: src/upnp/upnprouter.cpp:164
+#, kde-format
+msgid "Failed to download %1 : %2"
+msgstr "បាន​បរាជ័យ​ក្នុងការ​ទាញ​យក %1 ៖ %2"
+
+#: src/upnp/upnprouter.cpp:175
+#, fuzzy
+#| msgid "Error parsing router description !"
+msgid "Error parsing router description."
+msgstr "កំហុស​ក្នុងការ​ញែក​សេចក្ដី​ពិពណ៌នា​អ្នក​នាំផ្លូវ !"
+
+#: src/upnp/upnprouter.cpp:212
+#, fuzzy
+#| msgid ""
+#| "Forwarding failed: \n"
+#| "Device does not have a WANIPConnection or WANPPPConnection !"
+msgid ""
+"Forwarding failed: \n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"បាន​បរាជ័យ​ក្នុងកា​របញ្ជូន​បន្ត ៖ \n"
+"ឧបករណ៍​មិនមានការ​តភ្ជាប់​ WANIP ឬ​ការ​តភ្ជាប់ WANPPP !"
+
+#: src/upnp/upnprouter.cpp:283 src/upnp/upnprouter.cpp:296
+#, fuzzy
+#| msgid "Cannot find port forwarding service in the device's description!"
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "មិន​អាច​រក​ច្រក​ដែល​បញ្ជូន​បន្ត​សេវា​ក្នុង​ការ​ពិពណ៌នា​របស់​ឧបករណ៍ !"
+
+#: src/upnp/httprequest.cpp:79
+#, fuzzy
+#| msgid "Connection closed unexpectedly !"
+msgid "Connection closed unexpectedly."
+msgstr "ការ​តភ្ជាប់​បាន​បិទ​ដោយ​មិន​រំពឹង​ទុក !"
+
+#: src/upnp/httprequest.cpp:121
+msgid "Timeout occurred"
+msgstr "អស់ពេល"
+
+#: examples/ktcli/main.cpp:40
+#, fuzzy
+#| msgid "Document to open"
+msgid "Torrent to open"
+msgstr "ឯកសារ​ត្រូវ​បើក"
+
+#: examples/ktcli/main.cpp:41 examples/ktcli/main.cpp:42
+#, fuzzy
+#| msgid "Notice"
+msgid "Port to use"
+msgstr "ចំណាំ"
+
+#: examples/ktcli/main.cpp:44
+msgid "ktcli"
+msgstr ""
 
 #, fuzzy
 #~| msgid "UDP"
@@ -1705,41 +1781,6 @@ msgstr ""
 #~| msgid "Joris Guisson"
 #~ msgid "(C) 2009 Joris Guisson"
 #~ msgstr "Joris Guisson"
-
-#~ msgid "Document to open"
-#~ msgstr "ឯកសារ​ត្រូវ​បើក"
-
-#~ msgid "Failed to download %1 : %2"
-#~ msgstr "បាន​បរាជ័យ​ក្នុងការ​ទាញ​យក %1 ៖ %2"
-
-#, fuzzy
-#~| msgid "Error parsing router description !"
-#~ msgid "Error parsing router description."
-#~ msgstr "កំហុស​ក្នុងការ​ញែក​សេចក្ដី​ពិពណ៌នា​អ្នក​នាំផ្លូវ !"
-
-#, fuzzy
-#~| msgid ""
-#~| "Forwarding failed: \n"
-#~| "Device does not have a WANIPConnection or WANPPPConnection !"
-#~ msgid ""
-#~ "Forwarding failed: \n"
-#~ "Device does not have a WANIPConnection or WANPPPConnection."
-#~ msgstr ""
-#~ "បាន​បរាជ័យ​ក្នុងកា​របញ្ជូន​បន្ត ៖ \n"
-#~ "ឧបករណ៍​មិនមានការ​តភ្ជាប់​ WANIP ឬ​ការ​តភ្ជាប់ WANPPP !"
-
-#, fuzzy
-#~| msgid "Cannot find port forwarding service in the device's description!"
-#~ msgid "Cannot find port forwarding service in the device's description."
-#~ msgstr "មិន​អាច​រក​ច្រក​ដែល​បញ្ជូន​បន្ត​សេវា​ក្នុង​ការ​ពិពណ៌នា​របស់​ឧបករណ៍ !"
-
-#, fuzzy
-#~| msgid "Connection closed unexpectedly !"
-#~ msgid "Connection closed unexpectedly."
-#~ msgstr "ការ​តភ្ជាប់​បាន​បិទ​ដោយ​មិន​រំពឹង​ទុក !"
-
-#~ msgid "Timeout occurred"
-#~ msgstr "អស់ពេល"
 
 #~ msgid "Proxy"
 #~ msgstr "ប្រូកស៊ី"
