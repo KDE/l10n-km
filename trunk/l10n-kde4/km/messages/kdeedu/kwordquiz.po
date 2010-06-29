@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kwordquiz\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-22 04:47+0200\n"
+"POT-Creation-Date: 2010-06-29 08:11+0200\n"
 "PO-Revision-Date: 2010-06-08 16:05+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -18,9 +18,9 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
 
-#: kwqtablemodel.cpp:223 kwordquiz.cpp:673 kwordquiz.cpp:730 kwordquiz.cpp:852
-msgid "Untitled"
-msgstr "គ្មាន​ចំណងជើង"
+#: kwqcleardialog.cpp:27
+msgid "Clear Contents"
+msgstr ""
 
 #: kwqtableview.cpp:189
 msgid "Name:_____________________________ Date:__________"
@@ -53,6 +53,14 @@ msgstr ""
 #| msgid "&Select"
 msgid "Select Sound"
 msgstr "ជ្រើស"
+
+#: flashview.cpp:66 multipleview.cpp:112 qaview.cpp:146
+msgid "Your answer was correct!"
+msgstr "ចម្លើយ​របស់អ្នក​គឺ​ត្រឹមត្រូវ !"
+
+#: flashview.cpp:71 multipleview.cpp:121 qaview.cpp:157
+msgid "Your answer was incorrect."
+msgstr "ចម្លើយ​របស់អ្នក​មិនត្រឹមត្រូវ​ទេ !"
 
 #: prefcardappearance.cpp:80
 msgctxt "Back of the flashcard"
@@ -126,6 +134,48 @@ msgctxt "@item:inmenu undo link sound"
 msgid "Link Sound"
 msgstr ""
 
+#: kwqtutor.cpp:40
+msgid ""
+"<qt>KWordQuiz Tutor displays flashcards on your screen in a way that allows "
+"you to set a certain time interval at which flashcards will pop up.<br /"
+"><br />The flashcards pop up in a non-intrusive way allowing you to carry on "
+"working without stealing the focus from other programs you might be working "
+"with.<br /><br />Be sure to right-click KWordQuiz Tutor icon on the panel "
+"and select Preferences. There you can assign keyboard shortcuts.</qt>"
+msgstr ""
+
+#: kwqtutor.cpp:46
+msgid "Tutor"
+msgstr ""
+
+#: kwqtutor.cpp:56 kwqtutor.cpp:128
+msgid "Start Exercise"
+msgstr ""
+
+#: kwqtutor.cpp:65
+msgid "Configure KWordQuiz Tutor..."
+msgstr ""
+
+#: kwqtutor.cpp:70
+#, fuzzy
+#| msgid "Flashcard"
+msgid "Close Flash Card"
+msgstr "បណ្ណ​បង្ហាញ"
+
+#: kwqtutor.cpp:75
+#, fuzzy
+#| msgid "&Flip Card"
+msgid "Flip Flash Card"
+msgstr "ត្រឡប់​កាត"
+
+#: kwqtutor.cpp:120
+msgid "Stop Exercise"
+msgstr ""
+
+#: kwqtutor.cpp:142 kwordquiz.cpp:786
+msgid "Open Vocabulary Document"
+msgstr "បើក​ឯកសារ​វាក្យសព្ទ"
+
 #: kwordquizprefs.cpp:36
 msgctxt "@title:group general settings"
 msgid "General"
@@ -184,9 +234,31 @@ msgctxt "@title:group special character settings"
 msgid "Special Characters"
 msgstr "តួអក្សរ​ពិសេស"
 
-#: multipleview.cpp:112 qaview.cpp:146 flashview.cpp:66
-msgid "Your answer was correct!"
-msgstr "ចម្លើយ​របស់អ្នក​គឺ​ត្រឹមត្រូវ !"
+#: kwqtutorprefs.cpp:31
+msgctxt "@title:group tutor settings"
+msgid "Tutor"
+msgstr ""
+
+#: kwqtutorprefs.cpp:31
+#, fuzzy
+#| msgctxt "@title:group editor settings"
+#| msgid "Editor Settings"
+msgctxt "@title:group tutor settings"
+msgid "Tutor Settings"
+msgstr "ការកំណត់​កម្មវិធី​កែសម្រួល"
+
+#: kwqtutorprefs.cpp:34
+#, fuzzy
+#| msgid "Shortcut"
+msgctxt "Shortcuts Config"
+msgid "Shortcuts"
+msgstr "ផ្លូវកាត់"
+
+#: kwqtutorprefs.cpp:34
+#, fuzzy
+#| msgid "Column Settings"
+msgid "Shortcuts Settings"
+msgstr "ការកំណត់​ជួរឈរ"
 
 #. i18n: file: multipleviewbase.ui:558
 #. i18n: ectx: property (text), widget (QLabel, lblCorrectHeader)
@@ -199,10 +271,6 @@ msgstr "ចម្លើយ​របស់អ្នក​គឺ​ត្រឹម
 #: multipleview.cpp:119 qaview.cpp:155 rc.cpp:420 rc.cpp:858
 msgid "Correct Answer"
 msgstr "ចម្លើយ​ត្រឹមត្រូវ"
-
-#: multipleview.cpp:121 qaview.cpp:157 flashview.cpp:71
-msgid "Your answer was incorrect."
-msgstr "ចម្លើយ​របស់អ្នក​មិនត្រឹមត្រូវ​ទេ !"
 
 #. i18n: file: multipleviewbase.ui:353
 #. i18n: ectx: property (text), widget (QLabel, lblPreviousQuestionHeader)
@@ -231,10 +299,6 @@ msgstr "ចម្លើយ​របស់អ្នក"
 #: multipleview.cpp:147 qaview.cpp:184
 msgid "Summary"
 msgstr "សង្ខេប"
-
-#: dlglanguage.cpp:31
-msgid "Column Settings"
-msgstr "ការកំណត់​ជួរឈរ"
 
 #: kwqcommands.h:106
 msgid "Font"
@@ -610,6 +674,10 @@ msgctxt "@info:status ready"
 msgid "Ready"
 msgstr "រួចរាល់​ហើយ"
 
+#: kwordquiz.cpp:673 kwordquiz.cpp:730 kwordquiz.cpp:852 kwqtablemodel.cpp:223
+msgid "Untitled"
+msgstr "គ្មាន​ចំណងជើង"
+
 #: kwordquiz.cpp:722
 msgid ""
 "The current document has been modified.\n"
@@ -625,10 +693,6 @@ msgstr "កំពុង​បើក​បង្អួច​ឯកសារ​ថ
 #: kwordquiz.cpp:778
 msgid "&Merge selected files with the current document"
 msgstr "បញ្ចូល​​ឯកសារ​ដែលបាន​ជ្រើស​ជាមួយ​នឹង​ឯកសារ​បច្ចុប្បន្ន"
-
-#: kwordquiz.cpp:786 kwqtutor.cpp:142
-msgid "Open Vocabulary Document"
-msgstr "បើក​ឯកសារ​វាក្យសព្ទ"
 
 #: kwordquiz.cpp:851
 msgid "Saving file..."
@@ -795,70 +859,6 @@ msgstr "%1 -> %2 ដោយ​ចៃដន្យ"
 msgid "%1 &lt;-&gt; %2 Randomly"
 msgstr "%1 &lt;-&gt; %2 ដោយ​ចៃដន្យ"
 
-#: kwqtutor.cpp:40
-msgid ""
-"<qt>KWordQuiz Tutor displays flashcards on your screen in a way that allows "
-"you to set a certain time interval at which flashcards will pop up.<br /"
-"><br />The flashcards pop up in a non-intrusive way allowing you to carry on "
-"working without stealing the focus from other programs you might be working "
-"with.<br /><br />Be sure to right-click KWordQuiz Tutor icon on the panel "
-"and select Preferences. There you can assign keyboard shortcuts.</qt>"
-msgstr ""
-
-#: kwqtutor.cpp:46
-msgid "Tutor"
-msgstr ""
-
-#: kwqtutor.cpp:56 kwqtutor.cpp:128
-msgid "Start Exercise"
-msgstr ""
-
-#: kwqtutor.cpp:65
-msgid "Configure KWordQuiz Tutor..."
-msgstr ""
-
-#: kwqtutor.cpp:70
-#, fuzzy
-#| msgid "Flashcard"
-msgid "Close Flash Card"
-msgstr "បណ្ណ​បង្ហាញ"
-
-#: kwqtutor.cpp:75
-#, fuzzy
-#| msgid "&Flip Card"
-msgid "Flip Flash Card"
-msgstr "ត្រឡប់​កាត"
-
-#: kwqtutor.cpp:120
-msgid "Stop Exercise"
-msgstr ""
-
-#: kwqtutorprefs.cpp:31
-msgctxt "@title:group tutor settings"
-msgid "Tutor"
-msgstr ""
-
-#: kwqtutorprefs.cpp:31
-#, fuzzy
-#| msgctxt "@title:group editor settings"
-#| msgid "Editor Settings"
-msgctxt "@title:group tutor settings"
-msgid "Tutor Settings"
-msgstr "ការកំណត់​កម្មវិធី​កែសម្រួល"
-
-#: kwqtutorprefs.cpp:34
-#, fuzzy
-#| msgid "Shortcut"
-msgctxt "Shortcuts Config"
-msgid "Shortcuts"
-msgstr "ផ្លូវកាត់"
-
-#: kwqtutorprefs.cpp:34
-#, fuzzy
-#| msgid "Column Settings"
-msgid "Shortcuts Settings"
-msgstr "ការកំណត់​ជួរឈរ"
-
 #: prefcharacter.cpp:44
 msgid "Action"
 msgstr "អំពើ"
@@ -875,21 +875,6 @@ msgstr "តួអក្សរ"
 #, kde-format
 msgid "Special Character %1"
 msgstr "តួអក្សរ​ពិសេស %1"
-
-#: dlgspecchar.cpp:24
-msgctxt "@title:window select character dialog"
-msgid "Select Character"
-msgstr "ជ្រើស​តួអក្សរ"
-
-#: dlgspecchar.cpp:31
-msgctxt "@action:button select"
-msgid "&Select"
-msgstr "ជ្រើស"
-
-#: dlgspecchar.cpp:32
-msgctxt "@info:tooltip select this character"
-msgid "Select this character"
-msgstr "ជ្រើស​តួអក្សរ​នេះ"
 
 #: wqprintdialogpage.cpp:30
 msgid "Vocabulary Options"
@@ -988,9 +973,24 @@ msgstr ""
 msgid "File to open"
 msgstr "ឯកសារ​ដែល​ត្រូវ​បើក"
 
-#: kwqcleardialog.cpp:27
-msgid "Clear Contents"
-msgstr ""
+#: dlglanguage.cpp:31
+msgid "Column Settings"
+msgstr "ការកំណត់​ជួរឈរ"
+
+#: dlgspecchar.cpp:24
+msgctxt "@title:window select character dialog"
+msgid "Select Character"
+msgstr "ជ្រើស​តួអក្សរ"
+
+#: dlgspecchar.cpp:31
+msgctxt "@action:button select"
+msgid "&Select"
+msgstr "ជ្រើស"
+
+#: dlgspecchar.cpp:32
+msgctxt "@info:tooltip select this character"
+msgid "Select this character"
+msgstr "ជ្រើស​តួអក្សរ​នេះ"
 
 #. i18n: file: cleardialogbase.ui:21
 #. i18n: ectx: property (title), widget (KButtonGroup, clearButtonGroup)

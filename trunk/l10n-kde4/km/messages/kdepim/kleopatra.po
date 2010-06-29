@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-05-22 04:50+0200\n"
+"POT-Creation-Date: 2010-06-29 08:15+0200\n"
 "PO-Revision-Date: 2010-06-08 14:45+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -192,10 +192,6 @@ msgstr "កំណត់​គ្មាន​កំណត់"
 msgid "Enable &word wrapping"
 msgstr "អនុញ្ញាត​ការ​រុំ​ពាក្យ"
 
-#: conf/configuredialog.cpp:52
-msgid "Configure"
-msgstr "កំណត់​រចនា​សម្ព័ន្ធ"
-
 #: conf/dirservconfigpage.cpp:171
 msgid "LDAP &timeout (minutes:seconds):"
 msgstr "អស់ពេល LDAP (នាទី:វិនាទី) ៖"
@@ -218,13 +214,17 @@ msgstr "កំហុស​កម្មវិធី​ខាង​ក្រោយ
 msgid "Backend error: gpgconf has wrong type for %1/%2/%3: %4 %5"
 msgstr "កំហុស​កម្មវិធី​ខាង​ក្រោយ ៖ gpgconf មាន​ប្រភេទ​ខុស​សម្រាប់ %1/%2/%3: %4 %5"
 
+#: conf/configuredialog.cpp:52
+msgid "Configure"
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ"
+
 #: conf/smimevalidationconfigurationwidget.cpp:132
 msgid "This option requires dirmngr >= 0.9.0"
 msgstr "ជម្រើស​នេះ​ត្រូវការ dirmngr >= ០.៩.០"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:217
 #. i18n: ectx: property (text), widget (QLabel, systemHTTPProxy)
-#: conf/smimevalidationconfigurationwidget.cpp:264 rc.cpp:159
+#: conf/smimevalidationconfigurationwidget.cpp:264 rc.cpp:128
 msgid "no proxy"
 msgstr "គ្មានប្រូកស៊ី"
 
@@ -655,13 +655,6 @@ msgid ""
 "bug."
 msgstr "មិនអាច​ចម្លង​រន្ធ​ទៅ Qt: %1 ។ វា​មិនគួរ​កើត​ឡើង​ទេ សូម​រាយការណ៍​កំហុស​នេះ ។"
 
-#: uiserver/verifychecksumscommand.cpp:78
-#: uiserver/signencryptfilescommand.cpp:83
-#: uiserver/createchecksumscommand.cpp:78
-#: uiserver/decryptverifycommandfilesbase.cpp:165
-msgid "At least one FILE must be present"
-msgstr "ត្រូវ​បង្ហាញ​យ៉ាងហោច FILE មួយ"
-
 #: uiserver/prepencryptcommand.cpp:81
 msgid "INPUT/OUTPUT/MESSAGE may only be given after PREP_ENCRYPT"
 msgstr "INPUT/OUTPUT/MESSAGE ត្រូវ​បាន​ផ្ដល់​ឲ្យ​តែ​បន្ទាប់ពី PREP_ENCRYPT ប៉ុណ្ណោះ"
@@ -697,54 +690,12 @@ msgstr ""
 "បាន​ទទួល​ករណី​លើកលែង​ដែល​មិន​ស្គាល់​នៅ​ក្នុង PrepEncryptCommand::Private::"
 "slotRecipientsResolved"
 
-#: uiserver/prepsigncommand.cpp:84
-#, fuzzy
-#| msgid "INPUT/OUTPUT/MESSAGE may only be given after PREP_ENCRYPT"
-msgid "INPUT/OUTPUT/MESSAGE may only be given after PREP_SIGN"
-msgstr "សារ​​/ទិន្នផល​​/​បញ្ចូល​​ អាច​ត្រូវ​បាន​ផ្ដល់​ឲ្យ​តែ​បន្ទាប់ពី PREP_SIGN ប៉ុណ្ណោះ"
-
-#: uiserver/prepsigncommand.cpp:88
-#, fuzzy
-#| msgid ""
-#| "SIGN is an email mode command, connection seems to be in filemanager mode"
-msgid ""
-"PREP_SIGN is an email mode command, connection seems to be in filemanager "
-"mode"
-msgstr "PREP_SIGN គឺ​ជា​​ពាក្យ​បញ្ជា​របៀប​អ៊ីមែល ដែល​ការ​តភ្ជាប់​ហាក់ដូចជា​របៀប​កម្មវិធី​គ្រប់គ្រង​ឯកសារ"
-
-#: uiserver/prepsigncommand.cpp:92
-#, fuzzy
-msgid "No SENDER given"
-msgstr "មិនបាន​ផ្តល់​កម្មវិធី​ផ្ញើ​ឡើយ​"
-
-#: uiserver/prepsigncommand.cpp:101 uiserver/signcommand.cpp:114
-#, fuzzy
-#| msgid "Protocol given conflicts with protocol determined by PREP_ENCRYPT"
-msgid ""
-"Protocol given conflicts with protocol determined by PREP_ENCRYPT in this "
-"session"
-msgstr "ពិធីការ​ដែល​បាន​ផ្ដល់ គឺ​ប៉ះទង្គិច​ជាមួយ​នឹង​ពិធីការ​ដែល​បាន​កំណត់​ដោយ PREP_ENCRYPT ក្នុង​សម័យនេះ​"
-
-#: uiserver/prepsigncommand.cpp:169
-#, fuzzy, kde-format
-#| msgid ""
-#| "Caught unexpected exception in SignCommand::Private::"
-#| "slotRecipientsResolved: %1"
-msgid ""
-"Caught unexpected exception in PrepSignCommand::Private::"
-"slotRecipientsResolved: %1"
-msgstr ""
-"បាន​ទទួល​ករណីលើកលែង​ដែលមិនរំពឹង​ក្នុង​ PrepSignCommand::Private::slotRecipientsResolved: "
-"%1"
-
-#: uiserver/prepsigncommand.cpp:173
-#, fuzzy
-#| msgid ""
-#| "Caught unknown exception in SignCommand::Private::slotRecipientsResolved"
-msgid ""
-"Caught unknown exception in PrepSignCommand::Private::slotRecipientsResolved"
-msgstr ""
-"បាន​ទទួលករណីលើកលែងដែលមិនស្គាល់​ក្នុង​ PrepSignCommand::Private::slotRecipientsResolved"
+#: uiserver/signencryptfilescommand.cpp:83
+#: uiserver/decryptverifycommandfilesbase.cpp:165
+#: uiserver/createchecksumscommand.cpp:78
+#: uiserver/verifychecksumscommand.cpp:78
+msgid "At least one FILE must be present"
+msgstr "ត្រូវ​បង្ហាញ​យ៉ាងហោច FILE មួយ"
 
 #: uiserver/signencryptfilescommand.cpp:88
 #: uiserver/signencryptfilescommand.cpp:93
@@ -779,6 +730,14 @@ msgstr "ចំនួន INPUT/OUTPUT មិន​ត្រូវ​គ្នា"
 #: uiserver/signcommand.cpp:106
 msgid "MESSAGE command is not allowed before SIGN"
 msgstr "ពាក្យបញ្ជា MESSAGE មិនអនុញ្ញាត​ឲ្យ​នៅ​ពីមុខ SIGN ទេ"
+
+#: uiserver/signcommand.cpp:114 uiserver/prepsigncommand.cpp:101
+#, fuzzy
+#| msgid "Protocol given conflicts with protocol determined by PREP_ENCRYPT"
+msgid ""
+"Protocol given conflicts with protocol determined by PREP_ENCRYPT in this "
+"session"
+msgstr "ពិធីការ​ដែល​បាន​ផ្ដល់ គឺ​ប៉ះទង្គិច​ជាមួយ​នឹង​ពិធីការ​ដែល​បាន​កំណត់​ដោយ PREP_ENCRYPT ក្នុង​សម័យនេះ​"
 
 #: uiserver/signcommand.cpp:127
 #, fuzzy
@@ -938,6 +897,47 @@ msgstr ""
 msgid ""
 "Caught unknown exception in EncryptCommand::Private::slotRecipientsResolved"
 msgstr "បាន​ទទួល​ករណី​លើកលែង EncryptCommand::Private::slotRecipientsResolved"
+
+#: uiserver/prepsigncommand.cpp:84
+#, fuzzy
+#| msgid "INPUT/OUTPUT/MESSAGE may only be given after PREP_ENCRYPT"
+msgid "INPUT/OUTPUT/MESSAGE may only be given after PREP_SIGN"
+msgstr "សារ​​/ទិន្នផល​​/​បញ្ចូល​​ អាច​ត្រូវ​បាន​ផ្ដល់​ឲ្យ​តែ​បន្ទាប់ពី PREP_SIGN ប៉ុណ្ណោះ"
+
+#: uiserver/prepsigncommand.cpp:88
+#, fuzzy
+#| msgid ""
+#| "SIGN is an email mode command, connection seems to be in filemanager mode"
+msgid ""
+"PREP_SIGN is an email mode command, connection seems to be in filemanager "
+"mode"
+msgstr "PREP_SIGN គឺ​ជា​​ពាក្យ​បញ្ជា​របៀប​អ៊ីមែល ដែល​ការ​តភ្ជាប់​ហាក់ដូចជា​របៀប​កម្មវិធី​គ្រប់គ្រង​ឯកសារ"
+
+#: uiserver/prepsigncommand.cpp:92
+#, fuzzy
+msgid "No SENDER given"
+msgstr "មិនបាន​ផ្តល់​កម្មវិធី​ផ្ញើ​ឡើយ​"
+
+#: uiserver/prepsigncommand.cpp:169
+#, fuzzy, kde-format
+#| msgid ""
+#| "Caught unexpected exception in SignCommand::Private::"
+#| "slotRecipientsResolved: %1"
+msgid ""
+"Caught unexpected exception in PrepSignCommand::Private::"
+"slotRecipientsResolved: %1"
+msgstr ""
+"បាន​ទទួល​ករណីលើកលែង​ដែលមិនរំពឹង​ក្នុង​ PrepSignCommand::Private::slotRecipientsResolved: "
+"%1"
+
+#: uiserver/prepsigncommand.cpp:173
+#, fuzzy
+#| msgid ""
+#| "Caught unknown exception in SignCommand::Private::slotRecipientsResolved"
+msgid ""
+"Caught unknown exception in PrepSignCommand::Private::slotRecipientsResolved"
+msgstr ""
+"បាន​ទទួលករណីលើកលែងដែលមិនស្គាល់​ក្នុង​ PrepSignCommand::Private::slotRecipientsResolved"
 
 #: view/searchbar.cpp:90
 msgid "&Find:"
@@ -1956,22 +1956,22 @@ msgctxt "@title"
 msgid "Please choose an identity with which to sign the data."
 msgstr "សូមជ្រើស​អត្តសញ្ញាណ​ជាមួយ​ទិន្នន័យ​ចុះហត្ថលេខាណាមួយ ។"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:837
+#: crypto/gui/newsignencryptfileswizard.cpp:838
 msgctxt "@action"
 msgid "Sign"
 msgstr "​ចុះហត្ថលេខា​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:853
+#: crypto/gui/newsignencryptfileswizard.cpp:854
 msgctxt "@action"
 msgid "Sign && Encrypt"
 msgstr "ចុះហត្ថលេខា និង​អ៊ិនគ្រីប​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:896
+#: crypto/gui/newsignencryptfileswizard.cpp:897
 msgctxt "@title"
 msgid "Results"
 msgstr "លទ្ធផល​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:898
+#: crypto/gui/newsignencryptfileswizard.cpp:899
 msgctxt "@title"
 msgid "Status and progress of the crypto operations is shown here."
 msgstr "ស្ថានភាព និង​វឌ្ឍនភាព​របស់​ការប្រតិបត្តិការ​សម្ងាត់​ត្រូវបាន​បង្ហាញ​នៅទីនេះ​ ។"
@@ -2048,94 +2048,6 @@ msgstr "មិនស្គាល់​ករណី​លើកលែង​នៅ
 msgid "User cancel"
 msgstr "អ្នកប្រើ​បោះបង់"
 
-#: crypto/createchecksumscontroller.cpp:203
-#, fuzzy
-msgid ""
-"Create Checksums: input files must be either all checksum files or all files "
-"to be checksummed, not a mixture of both."
-msgstr ""
-"បង្កើត​ឆេកសាំ​ ៖​ ឯកសារបញ្ចូលត្រូវតែជាឯកសារឆេកសាំមួយណាក៏បាន​ ឬ​គ្រប់​ឯកសារ​ត្រូវបាន​ឆេកសាំ​ "
-"មិនបញ្ចូលទាំងពីរឡើយ​  ។"
-
-#: crypto/createchecksumscontroller.cpp:224
-msgid "Initializing..."
-msgstr "កំពុងចាប់ផ្តើម​..."
-
-#: crypto/createchecksumscontroller.cpp:224 mainwindow.cpp:661
-msgid "Cancel"
-msgstr "​បោះបង់"
-
-#: crypto/createchecksumscontroller.cpp:227
-#, fuzzy
-msgctxt "@title:window"
-msgid "Create Checksum Progress"
-msgstr "បង្កើតវឌ្ឍនភាពឆេកសាំ​"
-
-#: crypto/createchecksumscontroller.cpp:431
-#, fuzzy, kde-format
-#| msgid "Could not open file \"%1\" for reading"
-msgid "Failed to open file \"%1\" for reading and writing: %2"
-msgstr "បាន​បរាជ័យបើកឯកសារ​​ \"%1\" សម្រាប់​ការអាន និងការសរសេរ ៖​ %2"
-
-#: crypto/createchecksumscontroller.cpp:449
-#: crypto/verifychecksumscontroller.cpp:529
-#, fuzzy, kde-format
-#| msgid "Error while writing to file %1."
-msgid "Error while running %1: %2"
-msgstr "កំហុស​ខណៈពេល​កំពុងដំណើរការ​​ %1 ៖ %2"
-
-#: crypto/createchecksumscontroller.cpp:452
-#: crypto/verifychecksumscontroller.cpp:532
-#, kde-format
-msgid "Failed to execute %1: %2"
-msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
-
-#: crypto/createchecksumscontroller.cpp:456
-#: commands/changeroottrustcommand.cpp:318
-#, fuzzy, kde-format
-msgid "Failed to move file %1 to its final destination, %2: %3"
-msgstr "បាន​បរាជ័យ​យកឯកសារចេញ​​ %1 ទិ​សដៅចុងក្រោយ​របស់​វា​ %2 ៖ %3"
-
-#: crypto/createchecksumscontroller.cpp:482
-#, fuzzy
-msgid "No checksum programs defined."
-msgstr "គ្មានកម្មវិធីឆេកសាំដែលបាន​កំណត់ ។"
-
-#: crypto/createchecksumscontroller.cpp:494
-#: crypto/verifychecksumscontroller.cpp:565
-msgid "Scanning directories..."
-msgstr "កំពុងវិភាគរក​ថត​​..."
-
-#: crypto/createchecksumscontroller.cpp:509
-#: crypto/verifychecksumscontroller.cpp:578
-msgid "Calculating total size..."
-msgstr "កំពុងគណនាទំហំ​សរុប​​..."
-
-#: crypto/createchecksumscontroller.cpp:526
-#, fuzzy, kde-format
-msgid "Checksumming (%2) in %1"
-msgstr "ការឆេកសាំង (%2) ក្នុង​​ %1"
-
-#: crypto/createchecksumscontroller.cpp:535
-#: crypto/verifychecksumscontroller.cpp:606
-msgid "Done."
-msgstr "ធ្វើ​រួច​ ។"
-
-#: crypto/verifychecksumscontroller.cpp:218
-msgctxt "@title:window"
-msgid "Verify Checksum Results"
-msgstr "ផ្ទៀងផ្ទាត់​លទ្ធផលឆេកសាំ​"
-
-#: crypto/verifychecksumscontroller.cpp:427
-#, fuzzy, kde-format
-msgid "Cannot find checksums file for file %1"
-msgstr "មិន​អាច​ស្វែងរក​ឯកសារឆេកសាំសម្រាប់​ឯកសារ​​ %1 ឡើយ​"
-
-#: crypto/verifychecksumscontroller.cpp:597
-#, kde-format
-msgid "Verifying checksums (%2) in %1"
-msgstr "ការផ្ទៀងផ្ទាត់ឆេកសាំង​​ (%2) ក្នុង​ %1"
-
 #: crypto/signemailtask.cpp:85 crypto/signencryptfilestask.cpp:133
 msgid "Signing canceled."
 msgstr "បាន​បោះបង់​ការ​ចុះហត្ថលេខា ។"
@@ -2188,49 +2100,6 @@ msgstr ""
 msgid "Call to EncryptEMailController::protocolAsString() is ambiguous."
 msgstr "ហៅ​ទៅ EncryptEMailController::protocolAsString() គឺ​មិន​ប្រាកដ ។"
 
-#: crypto/decryptverifyemailcontroller.cpp:83
-#, fuzzy
-msgid "Status and progress of the crypto operations is shown here."
-msgstr "ស្ថានភាព​ និង​វឌ្ឍនភាព​​នៃ​ការប្រតិបត្តិការ​សម្ងាត់​ត្រូវបាន​បង្ហាញ​ទីនេះ​ ។ "
-
-#: crypto/decryptverifyemailcontroller.cpp:163
-#: crypto/decryptverifyfilescontroller.cpp:197
-msgid "User canceled"
-msgstr "អ្នកប្រើ​បោះបង់"
-
-#: crypto/decryptverifyemailcontroller.cpp:251
-msgid "Decrypt/Verify E-Mail"
-msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់អ៊ីមែល"
-
-#: crypto/decryptverifyemailcontroller.cpp:273
-msgid "At least one input needs to be provided"
-msgstr "ត្រូវផ្ដល់ INPUT យ៉ាងហោចណាស់​​មួយ"
-
-#: crypto/decryptverifyemailcontroller.cpp:277
-msgid "Informative sender/signed data count mismatch"
-msgstr "ចំនួន​ហត្ថលេខា/ទិន្នន័យ​ដែល​បាន​ចុះហត្ថលេខា​មិន​ត្រូវ​គ្នា"
-
-#: crypto/decryptverifyemailcontroller.cpp:282
-msgid "Signature/signed data count mismatch"
-msgstr "ចំនួន​ហត្ថលេខា/ទិន្នន័យ​ដែល​បាន​ចុះហត្ថលេខា​មិន​ត្រូវ​គ្នា"
-
-#: crypto/decryptverifyemailcontroller.cpp:285
-msgid "Signed data can only be given for detached signature verification"
-msgstr "ទិន្នន័យ​ដែល​បាន​ចុះហត្ថលេខា​អាច​ត្រូវ​បាន​ត្រូវ​ឲ្យ​តែ​សម្រាប់​កា​រផ្ទៀងផ្ទាត់​ហត្ថលេខា​ដែល​បាន​ផ្ដាច់"
-
-#: crypto/decryptverifyemailcontroller.cpp:291
-msgid "Input/Output count mismatch"
-msgstr "ចំនួន INPUT/OUTPUT មិន​ត្រូវ​គ្នា"
-
-#: crypto/decryptverifyemailcontroller.cpp:294
-msgid "Cannot use output and signed data simultaneously"
-msgstr "មិន​អាច​ប្រើលទ្ធផល និង​ទិន្នន័យ​ដែល​បាន​ចុះហត្ថលេខា​ដំណាល​គ្នា​បាន​ទេ"
-
-#: crypto/decryptverifyemailcontroller.cpp:301
-#, kde-format
-msgid "No backend support for %1"
-msgstr "គ្មាន​កា​រគាំទ្រ​ផ្នែក​ខាង​ក្រោយ​​សម្រាប់ %1"
-
 #: crypto/signencryptfilestask.cpp:73 crypto/decryptverifytask.cpp:290
 #, kde-format
 msgctxt "Input file --> Output file (rarr is arrow"
@@ -2280,6 +2149,49 @@ msgstr "%1 ៖ <b>%2</b>"
 #: crypto/signencryptfilestask.cpp:341
 msgid "Cannot determine protocol for task"
 msgstr "មិនអាច​កំណត់​ពិធីការ​សម្រាប់​ភារកិច្ច"
+
+#: crypto/decryptverifyemailcontroller.cpp:83
+#, fuzzy
+msgid "Status and progress of the crypto operations is shown here."
+msgstr "ស្ថានភាព​ និង​វឌ្ឍនភាព​​នៃ​ការប្រតិបត្តិការ​សម្ងាត់​ត្រូវបាន​បង្ហាញ​ទីនេះ​ ។ "
+
+#: crypto/decryptverifyemailcontroller.cpp:163
+#: crypto/decryptverifyfilescontroller.cpp:197
+msgid "User canceled"
+msgstr "អ្នកប្រើ​បោះបង់"
+
+#: crypto/decryptverifyemailcontroller.cpp:251
+msgid "Decrypt/Verify E-Mail"
+msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់អ៊ីមែល"
+
+#: crypto/decryptverifyemailcontroller.cpp:273
+msgid "At least one input needs to be provided"
+msgstr "ត្រូវផ្ដល់ INPUT យ៉ាងហោចណាស់​​មួយ"
+
+#: crypto/decryptverifyemailcontroller.cpp:277
+msgid "Informative sender/signed data count mismatch"
+msgstr "ចំនួន​ហត្ថលេខា/ទិន្នន័យ​ដែល​បាន​ចុះហត្ថលេខា​មិន​ត្រូវ​គ្នា"
+
+#: crypto/decryptverifyemailcontroller.cpp:282
+msgid "Signature/signed data count mismatch"
+msgstr "ចំនួន​ហត្ថលេខា/ទិន្នន័យ​ដែល​បាន​ចុះហត្ថលេខា​មិន​ត្រូវ​គ្នា"
+
+#: crypto/decryptverifyemailcontroller.cpp:285
+msgid "Signed data can only be given for detached signature verification"
+msgstr "ទិន្នន័យ​ដែល​បាន​ចុះហត្ថលេខា​អាច​ត្រូវ​បាន​ត្រូវ​ឲ្យ​តែ​សម្រាប់​កា​រផ្ទៀងផ្ទាត់​ហត្ថលេខា​ដែល​បាន​ផ្ដាច់"
+
+#: crypto/decryptverifyemailcontroller.cpp:291
+msgid "Input/Output count mismatch"
+msgstr "ចំនួន INPUT/OUTPUT មិន​ត្រូវ​គ្នា"
+
+#: crypto/decryptverifyemailcontroller.cpp:294
+msgid "Cannot use output and signed data simultaneously"
+msgstr "មិន​អាច​ប្រើលទ្ធផល និង​ទិន្នន័យ​ដែល​បាន​ចុះហត្ថលេខា​ដំណាល​គ្នា​បាន​ទេ"
+
+#: crypto/decryptverifyemailcontroller.cpp:301
+#, kde-format
+msgid "No backend support for %1"
+msgstr "គ្មាន​កា​រគាំទ្រ​ផ្នែក​ខាង​ក្រោយ​​សម្រាប់ %1"
 
 #: crypto/encryptemailtask.cpp:88
 #, kde-format
@@ -2614,6 +2526,94 @@ msgctxt "@title:window"
 msgid "Error"
 msgstr "កំហុស​"
 
+#: crypto/createchecksumscontroller.cpp:203
+#, fuzzy
+msgid ""
+"Create Checksums: input files must be either all checksum files or all files "
+"to be checksummed, not a mixture of both."
+msgstr ""
+"បង្កើត​ឆេកសាំ​ ៖​ ឯកសារបញ្ចូលត្រូវតែជាឯកសារឆេកសាំមួយណាក៏បាន​ ឬ​គ្រប់​ឯកសារ​ត្រូវបាន​ឆេកសាំ​ "
+"មិនបញ្ចូលទាំងពីរឡើយ​  ។"
+
+#: crypto/createchecksumscontroller.cpp:224
+msgid "Initializing..."
+msgstr "កំពុងចាប់ផ្តើម​..."
+
+#: crypto/createchecksumscontroller.cpp:224 mainwindow.cpp:661
+msgid "Cancel"
+msgstr "​បោះបង់"
+
+#: crypto/createchecksumscontroller.cpp:227
+#, fuzzy
+msgctxt "@title:window"
+msgid "Create Checksum Progress"
+msgstr "បង្កើតវឌ្ឍនភាពឆេកសាំ​"
+
+#: crypto/createchecksumscontroller.cpp:454
+#, fuzzy, kde-format
+#| msgid "Could not open file \"%1\" for reading"
+msgid "Failed to open file \"%1\" for reading and writing: %2"
+msgstr "បាន​បរាជ័យបើកឯកសារ​​ \"%1\" សម្រាប់​ការអាន និងការសរសេរ ៖​ %2"
+
+#: crypto/createchecksumscontroller.cpp:472
+#: crypto/verifychecksumscontroller.cpp:554
+#, fuzzy, kde-format
+#| msgid "Error while writing to file %1."
+msgid "Error while running %1: %2"
+msgstr "កំហុស​ខណៈពេល​កំពុងដំណើរការ​​ %1 ៖ %2"
+
+#: crypto/createchecksumscontroller.cpp:475
+#: crypto/verifychecksumscontroller.cpp:557
+#, kde-format
+msgid "Failed to execute %1: %2"
+msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
+
+#: crypto/createchecksumscontroller.cpp:479
+#: commands/changeroottrustcommand.cpp:318
+#, fuzzy, kde-format
+msgid "Failed to move file %1 to its final destination, %2: %3"
+msgstr "បាន​បរាជ័យ​យកឯកសារចេញ​​ %1 ទិ​សដៅចុងក្រោយ​របស់​វា​ %2 ៖ %3"
+
+#: crypto/createchecksumscontroller.cpp:505
+#, fuzzy
+msgid "No checksum programs defined."
+msgstr "គ្មានកម្មវិធីឆេកសាំដែលបាន​កំណត់ ។"
+
+#: crypto/createchecksumscontroller.cpp:517
+#: crypto/verifychecksumscontroller.cpp:590
+msgid "Scanning directories..."
+msgstr "កំពុងវិភាគរក​ថត​​..."
+
+#: crypto/createchecksumscontroller.cpp:532
+#: crypto/verifychecksumscontroller.cpp:603
+msgid "Calculating total size..."
+msgstr "កំពុងគណនាទំហំ​សរុប​​..."
+
+#: crypto/createchecksumscontroller.cpp:549
+#, fuzzy, kde-format
+msgid "Checksumming (%2) in %1"
+msgstr "ការឆេកសាំង (%2) ក្នុង​​ %1"
+
+#: crypto/createchecksumscontroller.cpp:558
+#: crypto/verifychecksumscontroller.cpp:631
+msgid "Done."
+msgstr "ធ្វើ​រួច​ ។"
+
+#: crypto/verifychecksumscontroller.cpp:218
+msgctxt "@title:window"
+msgid "Verify Checksum Results"
+msgstr "ផ្ទៀងផ្ទាត់​លទ្ធផលឆេកសាំ​"
+
+#: crypto/verifychecksumscontroller.cpp:450
+#, fuzzy, kde-format
+msgid "Cannot find checksums file for file %1"
+msgstr "មិន​អាច​ស្វែងរក​ឯកសារឆេកសាំសម្រាប់​ឯកសារ​​ %1 ឡើយ​"
+
+#: crypto/verifychecksumscontroller.cpp:622
+#, kde-format
+msgid "Verifying checksums (%2) in %1"
+msgstr "ការផ្ទៀងផ្ទាត់ឆេកសាំង​​ (%2) ក្នុង​ %1"
+
 #: dialogs/selftestdialog.cpp:95
 msgid "Skipped"
 msgstr "បាន​រំលង"
@@ -2666,6 +2666,80 @@ msgstr ""
 #: dialogs/lookupcertificatesdialog.cpp:120
 msgid "Import"
 msgstr "នាំចូល"
+
+#: dialogs/certificatedetailsdialog.cpp:230
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>An error occurred while loading the certifications: <message>%1</"
+"message></para>"
+msgstr "<para>កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ផ្ទុក​វិញ្ញាបនបត្រ ៖ <message>%1</message></para>"
+
+#: dialogs/certificatedetailsdialog.cpp:233
+msgctxt "@title"
+msgid "Certifications Loading Failed"
+msgstr "បាន​បរាជ័យ​ក្នុងការ​ផ្ទុក​វិញ្ញាបនបត្រ"
+
+#: dialogs/certificatedetailsdialog.cpp:256
+msgid "Please wait while generating the dump..."
+msgstr "សូម​រង់ចាំ​ខណៈពេល​បង្កើត​សារឥតបានការ..."
+
+#: dialogs/certificatedetailsdialog.cpp:334
+msgid "(please wait while certifications are being loaded)"
+msgstr "(សូម​រង់ចាំ​ខណៈពេល​ការ​បញ្ជាក់​កំពុង​ត្រូវ​បាន​ផ្ទុក)"
+
+#: dialogs/certificatedetailsdialog.cpp:335
+msgid "Load Certifications (may take a while)"
+msgstr "ផ្ទុក​ការ​បញ្ជាក់ (អាច​ចំណាយ​ពេល​មួយ​រយៈ)"
+
+#: dialogs/certificatedetailsdialog.cpp:361
+#, kde-format
+msgid "Issuer Certificate Not Found (%1)"
+msgstr "រក​មិនឃើញ​វិញ្ញាបនបត្រ​របស់​អ្នក​ចេញ​ផ្សាយ (%1)"
+
+#: dialogs/certificatedetailsdialog.cpp:417
+msgctxt "@title"
+msgid "Subkeys"
+msgstr "សោ​រង​"
+
+#: dialogs/certificateselectiondialog.cpp:110
+msgid "Please select one or more of the following certificates:"
+msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​ខាងក្រោម​មួយ ឬ​ច្រើន ៖"
+
+#: dialogs/certificateselectiondialog.cpp:111
+msgid "Please select one of the following certificates:"
+msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​ខាងក្រោម​មួយ ៖"
+
+#: dialogs/certificateselectiondialog.cpp:148
+msgid "Reload"
+msgstr "ផ្ទុកឡើងវិញ"
+
+#: dialogs/certificateselectiondialog.cpp:149
+msgid "Lookup..."
+msgstr "រក​មើល..."
+
+#: dialogs/certificateselectiondialog.cpp:150
+msgid "New..."
+msgstr "ថ្មី..."
+
+#: dialogs/certificateselectiondialog.cpp:152
+msgctxt "@info:tooltip"
+msgid "Lookup certificates on server"
+msgstr "រកមើល​វិញ្ញាបនបត្រ​លើ​ម៉ាស៊ីន​បម្រើ"
+
+#: dialogs/certificateselectiondialog.cpp:153
+msgctxt "@info:tooltip"
+msgid "Refresh certificate list"
+msgstr "ធ្វើ​ឲ្យ​បញ្ជី​​​វិញ្ញាបនបត្រ​ស្រស់"
+
+#: dialogs/certificateselectiondialog.cpp:154
+msgctxt "@info:tooltip"
+msgid "Create a new certificate"
+msgstr "បង្កើត​វិញ្ញាបនបត្រ​ថ្មី​មួយ​"
+
+#: dialogs/certificateselectiondialog.cpp:180
+msgid "Certificate Selection"
+msgstr "ជម្រើស​វិញ្ញាបនបត្រ"
 
 #: dialogs/deletecertificatesdialog.cpp:94
 msgid "These are the certificates you have selected for deletion:"
@@ -2738,80 +2812,6 @@ msgstr[0] ""
 #| msgid "Certificate Selection"
 msgid "Secret Certificate Deletion"
 msgstr "ការលុប​វិញ្ញាបនបត្រ​សម្ងាត់​"
-
-#: dialogs/certificateselectiondialog.cpp:110
-msgid "Please select one or more of the following certificates:"
-msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​ខាងក្រោម​មួយ ឬ​ច្រើន ៖"
-
-#: dialogs/certificateselectiondialog.cpp:111
-msgid "Please select one of the following certificates:"
-msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​ខាងក្រោម​មួយ ៖"
-
-#: dialogs/certificateselectiondialog.cpp:148
-msgid "Reload"
-msgstr "ផ្ទុកឡើងវិញ"
-
-#: dialogs/certificateselectiondialog.cpp:149
-msgid "Lookup..."
-msgstr "រក​មើល..."
-
-#: dialogs/certificateselectiondialog.cpp:150
-msgid "New..."
-msgstr "ថ្មី..."
-
-#: dialogs/certificateselectiondialog.cpp:152
-msgctxt "@info:tooltip"
-msgid "Lookup certificates on server"
-msgstr "រកមើល​វិញ្ញាបនបត្រ​លើ​ម៉ាស៊ីន​បម្រើ"
-
-#: dialogs/certificateselectiondialog.cpp:153
-msgctxt "@info:tooltip"
-msgid "Refresh certificate list"
-msgstr "ធ្វើ​ឲ្យ​បញ្ជី​​​វិញ្ញាបនបត្រ​ស្រស់"
-
-#: dialogs/certificateselectiondialog.cpp:154
-msgctxt "@info:tooltip"
-msgid "Create a new certificate"
-msgstr "បង្កើត​វិញ្ញាបនបត្រ​ថ្មី​មួយ​"
-
-#: dialogs/certificateselectiondialog.cpp:180
-msgid "Certificate Selection"
-msgstr "ជម្រើស​វិញ្ញាបនបត្រ"
-
-#: dialogs/certificatedetailsdialog.cpp:230
-#, kde-format
-msgctxt "@info"
-msgid ""
-"<para>An error occurred while loading the certifications: <message>%1</"
-"message></para>"
-msgstr "<para>កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ផ្ទុក​វិញ្ញាបនបត្រ ៖ <message>%1</message></para>"
-
-#: dialogs/certificatedetailsdialog.cpp:233
-msgctxt "@title"
-msgid "Certifications Loading Failed"
-msgstr "បាន​បរាជ័យ​ក្នុងការ​ផ្ទុក​វិញ្ញាបនបត្រ"
-
-#: dialogs/certificatedetailsdialog.cpp:256
-msgid "Please wait while generating the dump..."
-msgstr "សូម​រង់ចាំ​ខណៈពេល​បង្កើត​សារឥតបានការ..."
-
-#: dialogs/certificatedetailsdialog.cpp:334
-msgid "(please wait while certifications are being loaded)"
-msgstr "(សូម​រង់ចាំ​ខណៈពេល​ការ​បញ្ជាក់​កំពុង​ត្រូវ​បាន​ផ្ទុក)"
-
-#: dialogs/certificatedetailsdialog.cpp:335
-msgid "Load Certifications (may take a while)"
-msgstr "ផ្ទុក​ការ​បញ្ជាក់ (អាច​ចំណាយ​ពេល​មួយ​រយៈ)"
-
-#: dialogs/certificatedetailsdialog.cpp:361
-#, kde-format
-msgid "Issuer Certificate Not Found (%1)"
-msgstr "រក​មិនឃើញ​វិញ្ញាបនបត្រ​របស់​អ្នក​ចេញ​ផ្សាយ (%1)"
-
-#: dialogs/certificatedetailsdialog.cpp:417
-msgctxt "@title"
-msgid "Subkeys"
-msgstr "សោ​រង​"
 
 #: dialogs/exportsecretkeydialog.cpp:103
 msgid "Secret Key Files"
@@ -3920,22 +3920,6 @@ msgstr "ជម្រើស"
 msgid "Could not find clipboard"
 msgstr "មិនអាច​រក​ក្ដារ​តម្បៀត​ខ្ទាស់​បានទេ"
 
-#: utils/auditlog.cpp:62
-msgid "No Audit Log available"
-msgstr "មិនមាន​កំណត់​ហេតុ​ត្រួតពិនិត្យ"
-
-#: utils/auditlog.cpp:64
-#, fuzzy, kde-format
-msgid "Error Retrieving Audit Log: %1"
-msgstr "កំហុសការទៅយក​កំណត់ហេតុពិនិត្យ​បញ្ជី​ ៖​ %1"
-
-#: utils/auditlog.cpp:71
-#, fuzzy
-#| msgid "Show Audit Log"
-msgctxt "The Audit Log is a detailed error log from the gnupg backend"
-msgid "Show Audit Log"
-msgstr "បង្ហាញ​កំណត់ហេតុ​ពិនិត្យ​បញ្ជី​"
-
 #: utils/path-helper.cpp:103
 #, fuzzy, kde-format
 #| msgid "Could not create GnuPG home directory %1: %2"
@@ -4006,6 +3990,22 @@ msgstr ""
 msgid "Caught unknown exception in group %1"
 msgstr "បាន​ទទួល​ករណីលើកលែងដែលមិនស្គាល់​ក្នុង​ក្រុម​ %1"
 
+#: utils/auditlog.cpp:62
+msgid "No Audit Log available"
+msgstr "មិនមាន​កំណត់​ហេតុ​ត្រួតពិនិត្យ"
+
+#: utils/auditlog.cpp:64
+#, fuzzy, kde-format
+msgid "Error Retrieving Audit Log: %1"
+msgstr "កំហុសការទៅយក​កំណត់ហេតុពិនិត្យ​បញ្ជី​ ៖​ %1"
+
+#: utils/auditlog.cpp:71
+#, fuzzy
+#| msgid "Show Audit Log"
+msgctxt "The Audit Log is a detailed error log from the gnupg backend"
+msgid "Show Audit Log"
+msgstr "បង្ហាញ​កំណត់ហេតុ​ពិនិត្យ​បញ្ជី​"
+
 #: commands/lookupcertificatescommand.cpp:276
 #: commands/lookupcertificatescommand.cpp:281
 #, kde-format
@@ -4062,55 +4062,23 @@ msgctxt "@title"
 msgid "No Directory Servers Configured"
 msgstr "គ្មាន​ម៉ាស៊ីន​បម្រើ​ថត​បានកំណត់​រចនាសម្ព័ន្ធ"
 
-#: commands/importcrlcommand.cpp:69
-#, fuzzy
-#| msgid "Certificate Revocation Lists (*.crl *.arl *-crl.der *-arl.der)"
-msgid ""
-"Certificate Revocation Lists, DER encoded (*.crl *.arl *-crl.der *-arl.der)"
-msgstr "ការដកហូត​បញ្ជីវិញ្ញាបនបត្រវិញ​​ បាន​អ៊ិនកូដ ​DER ​ (*.crl *.arl *-crl.der *-arl.der)"
-
-#: commands/importcrlcommand.cpp:70
-msgid "Select CRL File to Import"
-msgstr "ជ្រើសឯកសារ​ CRL ដែលត្រូវ​នាំចូល"
-
-#: commands/importcrlcommand.cpp:157
-msgid "Unable to start process dirmngr. Please check your installation."
-msgstr "មិនអាច​ចាប់ផ្ដើម​ដំណើរការ dirmngr ។ សូម​ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក ។"
-
-#: commands/importcrlcommand.cpp:159 commands/clearcrlcachecommand.cpp:62
-msgid "Clear CRL Cache Error"
-msgstr "ជម្រះ​កំហុស​របស់​ឃ្លាំង​សម្ងាត់ CRL"
-
-#: commands/importcrlcommand.cpp:175
-msgid ""
-"The GpgSM process that tried to import the CRL file ended prematurely "
-"because of an unexpected error. Please check the output of gpgsm --call-"
-"dirmngr loadcrl &lt;filename&gt; for details."
-msgstr ""
-"ដំណើរការ GpgSM ដែល​បាន​នាំចូល​ឯកសារ CRL បាន​បញ្ចប់​មុន​ពេល ដោយ​សារ​មាន​កំហុស​ដោយ​មិន​នឹក​ស្មាន ។ ចំពោះ​"
-"ព័ត៌មាន​លម្អិត សូម​ពិនិត្យ​មើល​លទ្ធផល gpgsm --call-dirmngr loadcrl &lt;ឈ្មោះ​ឯកសារ&gt; ។"
-
-#: commands/importcrlcommand.cpp:178 commands/importcrlcommand.cpp:182
-msgid "Import CRL Error"
-msgstr "កំហុស​នាំចូល CRL"
-
-#: commands/importcrlcommand.cpp:180
+#: commands/decryptverifyfilescommand.cpp:161
+#: commands/decryptverifyclipboardcommand.cpp:157
+#: commands/signclipboardcommand.cpp:146 commands/signclipboardcommand.cpp:159
+#: commands/signencryptfilescommand.cpp:231
+#: commands/encryptclipboardcommand.cpp:143
+#: commands/encryptclipboardcommand.cpp:156
 #, kde-format
-msgid ""
-"An error occurred while trying to import the CRL file. The output from gpgsm "
-"was:\n"
-"%1"
-msgstr ""
-"មាន​កំហុស​កើតឡើង​នៅពេល​នាំចូល​ឯកសារ CRL ។ លទ្ធផល​ពី gpgsm គឺ ៖\n"
-"%1"
+msgid "An error occurred: %1"
+msgstr "កំហុស​មួយ​បាន​កើតឡើង ៖ %1"
 
-#: commands/importcrlcommand.cpp:184
-msgid "CRL file imported successfully."
-msgstr "បាននាំចូល​ឯកសារ​ CRL ដោយ​ជោគជ័យ​ ។"
+#: commands/decryptverifyfilescommand.cpp:163
+msgid "Decrypt/Verify Files Error"
+msgstr "កំហុស​ក្នុងការ​ឌិគ្រីប​/បញ្ជាក់​ឯកសារ"
 
-#: commands/importcrlcommand.cpp:185
-msgid "Import CRL Finished"
-msgstr "បាន​បញ្ចប់​ការ​នាំចូល CRL"
+#: commands/decryptverifyfilescommand.cpp:174
+msgid "Select One or More Files to Decrypt and/or Verify"
+msgstr "ជ្រើស​ឯកសារ​មួយ ឬ​ច្រើន​ដើម្បី​ឌិគ្រីប និង/​ឬ​បញ្ជាក់"
 
 #: commands/importcertificatescommand.cpp:212
 #, kde-format
@@ -4319,24 +4287,6 @@ msgstr ""
 msgid "Certification Not Possible"
 msgstr "មិនមាន​វិញ្ញាបនបត្រ"
 
-#: commands/decryptverifyfilescommand.cpp:161
-#: commands/decryptverifyclipboardcommand.cpp:157
-#: commands/signclipboardcommand.cpp:146 commands/signclipboardcommand.cpp:159
-#: commands/signencryptfilescommand.cpp:231
-#: commands/encryptclipboardcommand.cpp:143
-#: commands/encryptclipboardcommand.cpp:156
-#, kde-format
-msgid "An error occurred: %1"
-msgstr "កំហុស​មួយ​បាន​កើតឡើង ៖ %1"
-
-#: commands/decryptverifyfilescommand.cpp:163
-msgid "Decrypt/Verify Files Error"
-msgstr "កំហុស​ក្នុងការ​ឌិគ្រីប​/បញ្ជាក់​ឯកសារ"
-
-#: commands/decryptverifyfilescommand.cpp:174
-msgid "Select One or More Files to Decrypt and/or Verify"
-msgstr "ជ្រើស​ឯកសារ​មួយ ឬ​ច្រើន​ដើម្បី​ឌិគ្រីប និង/​ឬ​បញ្ជាក់"
-
 #: commands/refreshopenpgpcertscommand.cpp:74
 msgctxt "@info"
 msgid ""
@@ -4446,39 +4396,9 @@ msgstr "ឯកសារ​មួយចំនួន"
 msgid "Select Certificate File"
 msgstr "ជ្រើស​ឯកសារ​វិញ្ញាបនបត្រ​"
 
-#: commands/exportcertificatecommand.cpp:212
-msgid "Export Certificates"
-msgstr "នាំចេញ​វិញ្ញាបនបត្រ​"
-
-#: commands/exportcertificatecommand.cpp:216
-msgid "OpenPGP Certificates"
-msgstr "វិញ្ញាបនបត្រ OpenPGP"
-
-#: commands/exportcertificatecommand.cpp:217
-msgid "S/MIME Certificates"
-msgstr "វិញ្ញាបនបត្រ S/MIME"
-
-#: commands/exportcertificatecommand.cpp:251
-msgid "Exporting certificates..."
-msgstr "កំពុង​នាំចេញ​វិញ្ញាបនបត្រ​..."
-
-#: commands/exportcertificatecommand.cpp:262
-#, kde-format
-msgid ""
-"<qt><p>An error occurred while trying to export the certificate:</p><p><b>%"
-"1</b></p></qt>"
-msgstr ""
-"<qt><p>កំហុស​បាន​កើតឡើង ខណៈ​ដែល​កំពុង​ព្យាយាម​នាំចេញ​វិញ្ញាបនបត្រ ៖</p><p><b>%1</b></p></qt>"
-
-#: commands/exportcertificatecommand.cpp:266
-#: commands/exportcertificatecommand.cpp:309
-msgid "Certificate Export Failed"
-msgstr "ការ​នាំចេញ​វិញ្ញាបនបត្រ​បានបរាជ័យ"
-
-#: commands/exportcertificatecommand.cpp:308
-#, kde-format
-msgid "Could not write to file %1."
-msgstr "មិនអាច​សរសេរ​ទៅ​ឯកសារ %1 បានទេ ។"
+#: commands/clearcrlcachecommand.cpp:62 commands/importcrlcommand.cpp:159
+msgid "Clear CRL Cache Error"
+msgstr "ជម្រះ​កំហុស​របស់​ឃ្លាំង​សម្ងាត់ CRL"
 
 #: commands/clearcrlcachecommand.cpp:66
 msgid "Clear CRL Cache Finished"
@@ -4688,47 +4608,39 @@ msgctxt "@info"
 msgid "OpenPGP certificates exported successfully."
 msgstr "បាន​នាំវិញ្ញាបនបត្រ​ OpenPGP ចេញ​ដោយជោគជ័យ​ ។"
 
-#: commands/changeroottrustcommand.cpp:94
+#: commands/exportcertificatecommand.cpp:212
+msgid "Export Certificates"
+msgstr "នាំចេញ​វិញ្ញាបនបត្រ​"
+
+#: commands/exportcertificatecommand.cpp:216
+msgid "OpenPGP Certificates"
+msgstr "វិញ្ញាបនបត្រ OpenPGP"
+
+#: commands/exportcertificatecommand.cpp:217
+msgid "S/MIME Certificates"
+msgstr "វិញ្ញាបនបត្រ S/MIME"
+
+#: commands/exportcertificatecommand.cpp:251
+msgid "Exporting certificates..."
+msgstr "កំពុង​នាំចេញ​វិញ្ញាបនបត្រ​..."
+
+#: commands/exportcertificatecommand.cpp:262
 #, kde-format
 msgid ""
-"Failed to update the trust database:\n"
-"%1"
+"<qt><p>An error occurred while trying to export the certificate:</p><p><b>%"
+"1</b></p></qt>"
 msgstr ""
-"បាន​បរាជ័យ​ធ្វើ​បច្ចុប្បន្នភាព​មូលដ្ឋានទិន្នន័យ​​ជឿទុកចិត្ត​ ៖​\n"
-"%1"
+"<qt><p>កំហុស​បាន​កើតឡើង ខណៈ​ដែល​កំពុង​ព្យាយាម​នាំចេញ​វិញ្ញាបនបត្រ ៖</p><p><b>%1</b></p></qt>"
 
-#: commands/changeroottrustcommand.cpp:96
-msgid "Root Trust Update Failed"
-msgstr "បាន​បរាជ័យ​ក្នុង​ធ្វើបច្ចុប្បន្នភាពដែល​​ជឿទុកចិត្ត​ Root ​"
+#: commands/exportcertificatecommand.cpp:266
+#: commands/exportcertificatecommand.cpp:309
+msgid "Certificate Export Failed"
+msgstr "ការ​នាំចេញ​វិញ្ញាបនបត្រ​បានបរាជ័យ"
 
-#: commands/changeroottrustcommand.cpp:256
-#, fuzzy, kde-format
-#| msgid "Could not open file \"%1\" for reading"
-msgid "Cannot open existing file \"%1\" for reading: %2"
-msgstr "មិនអាចបើក​ឯកសារ​ដែលមាន​ស្រាប់​​ \"%1\" សម្រាប់​ការអាន​ ៖​ %2 បាន​ទេ​"
-
-#: commands/changeroottrustcommand.cpp:264
-#, fuzzy, kde-format
-#| msgid "Could not open file \"%1\" for reading"
-msgid "Cannot open file \"%1\" for reading and writing: %2"
-msgstr "មិន​អាចបើក​ឯកសារ​​ \"%1\" សម្រាប់​ការអាន​ និង​ការសរសេរ​​ %2 បាន​ទេ​"
-
-#: commands/changeroottrustcommand.cpp:268
-#, fuzzy, kde-format
-#| msgid "Could not save file %1: %2"
-msgid "Cannot set restrictive permissions on file %1: %2"
-msgstr "មិន​អាចកំណត់សិទ្ធដែលបន្ថយ​លើ​ឯកសារ​​ %1 ៖ %2 បាន​ទេ​"
-
-#: commands/changeroottrustcommand.cpp:329
-#, fuzzy
-#| msgid "Could not find clipboard"
-msgid "Could not find gpgconf executable"
-msgstr "មិន​អាច​ស្វែងរក​ឯកសារប្រតិបត្តិ​ gpgconf បាន​ឡើយ​"
-
-#: commands/changeroottrustcommand.cpp:339
-#, fuzzy, kde-format
-msgid "\"gpgconf --reload gpg-agent\" failed: %1"
-msgstr "\"gpgconf --reload gpg-agent\" បាន​បរាជ័យ​ ៖​ %1"
+#: commands/exportcertificatecommand.cpp:308
+#, kde-format
+msgid "Could not write to file %1."
+msgstr "មិនអាច​សរសេរ​ទៅ​ឯកសារ %1 បានទេ ។"
 
 #: commands/dumpcertificatecommand.cpp:90 commands/dumpcrlcachecommand.cpp:87
 msgctxt "@action:button Update the log text widget"
@@ -4776,57 +4688,10 @@ msgctxt "@title"
 msgid "Set Initial Pin"
 msgstr "កំណត់​ Pin ដំបូង​"
 
-#: commands/decryptverifyclipboardcommand.cpp:143
-msgid "The clipboard does not appear to contain a signature or encrypted text."
-msgstr ""
-
-#: commands/decryptverifyclipboardcommand.cpp:145
-#: commands/decryptverifyclipboardcommand.cpp:159
-msgid "Decrypt/Verify Clipboard Error"
-msgstr "កំហុស​ក្នុង​ការ​ឌិគ្រីប​/​បញ្ជាក់​ក្ដារ​តម្បៀត​ខ្ទាស់"
-
-#: commands/changepassphrasecommand.cpp:188
-#, kde-format
-msgid ""
-"<p>An error occurred while trying to change the passphrase for <b>%1</b>:</"
-"p><p>%2</p>"
-msgstr ""
-
-#: commands/changepassphrasecommand.cpp:192
-#, fuzzy
-#| msgid "Passphrase Change Error"
-msgid "Passphrase Change Error"
-msgstr "កំហុស​ក្នុងកា​រផ្លាស់ប្ដូរ​ឃ្លា​សម្ងាត់"
-
-#: commands/changepassphrasecommand.cpp:196
-msgid "Passphrase changed successfully."
-msgstr ""
-
-#: commands/changepassphrasecommand.cpp:197
-#, fuzzy
-#| msgid "Expiry Date Change Succeeded"
-msgid "Passphrase Change Succeeded"
-msgstr "ផ្លាស់​ប្តូរ​ឃ្លាសម្ងាត់​ដែលជោគជ័យ​"
-
 #: commands/gnupgprocesscommand.cpp:142
 #, kde-format
 msgid "Unable to start process %1. Please check your installation."
 msgstr "មិនអាច​ចាប់ផ្ដើម​ដំណើរការ %1 បានទេ ។ សូម​ពិនិត្យ​មើល​ការ​ដំឡើង​របស់​អ្នក ។"
-
-#: commands/signclipboardcommand.cpp:148 commands/signclipboardcommand.cpp:161
-msgid "Sign Clipboard Error"
-msgstr "កំហុស​ក្នុង​ការ​ចុះហត្ថលេខា​ក្ដារ​តម្បៀត​ខ្ទាស់"
-
-#: commands/importcertificatefromclipboardcommand.cpp:115
-#, fuzzy
-msgid "Clipboard contents do not look like a certificate."
-msgstr "មាតិកា​ក្តារតម្បៀតខ្ទាស់​មិនដូចជា​វិញ្ញាបនបត្រឡើយ​​ ។"
-
-#: commands/importcertificatefromclipboardcommand.cpp:120
-#, fuzzy
-#| msgid "Could not determine certificate type of %1."
-msgid "Could not determine certificate type of clipboard contents."
-msgstr "មិនអាច​កំណត់​ប្រភេទ​វិញ្ញាបនបត្រ​នៃមាតិកា​ក្តារតម្បៀតខ្ទាស់​​ ។"
 
 #: commands/refreshx509certscommand.cpp:62
 msgctxt "@info"
@@ -4889,6 +4754,15 @@ msgctxt "@info"
 msgid "X.509 certificates refreshed successfully."
 msgstr "បាន​ធ្វើ​ឲ្យ​វិញ្ញាបនបត្រ X.509 ស្រស់​ដោយ​ជោគជ័យ ។"
 
+#: commands/decryptverifyclipboardcommand.cpp:143
+msgid "The clipboard does not appear to contain a signature or encrypted text."
+msgstr ""
+
+#: commands/decryptverifyclipboardcommand.cpp:145
+#: commands/decryptverifyclipboardcommand.cpp:159
+msgid "Decrypt/Verify Clipboard Error"
+msgstr "កំហុស​ក្នុង​ការ​ឌិគ្រីប​/​បញ្ជាក់​ក្ដារ​តម្បៀត​ខ្ទាស់"
+
 #: commands/deletecertificatescommand.cpp:99
 msgctxt "@title:window"
 msgid "Delete Certificates"
@@ -4941,7 +4815,7 @@ msgstr ""
 "ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក ។"
 
 #: commands/deletecertificatescommand.cpp:281
-#: commands/deletecertificatescommand.cpp:346
+#: commands/deletecertificatescommand.cpp:350
 msgid "Certificate Deletion Failed"
 msgstr "ការលុប​វិញ្ញាបនបត្រ​បានបរាជ័យ"
 
@@ -4949,17 +4823,17 @@ msgstr "ការលុប​វិញ្ញាបនបត្រ​បានប
 msgid "Certificate Deletion Problem"
 msgstr "បញ្ហា​ក្នុង​ការ​លុប​វិញ្ញាបនបត្រ"
 
-#: commands/deletecertificatescommand.cpp:337
+#: commands/deletecertificatescommand.cpp:341
 #, kde-format
 msgid "OpenPGP backend: %1"
 msgstr "ផ្នែក​ខាងក្រោយ ៖ %1"
 
-#: commands/deletecertificatescommand.cpp:340
+#: commands/deletecertificatescommand.cpp:344
 #, kde-format
 msgid "CMS backend: %1"
 msgstr "ផ្នែក​ខាងក្រោយ CMS ៖ %1"
 
-#: commands/deletecertificatescommand.cpp:342
+#: commands/deletecertificatescommand.cpp:346
 #, kde-format
 msgid ""
 "<qt><p>An error occurred while trying to delete the certificate:</p><p><b>%"
@@ -4967,13 +4841,43 @@ msgid ""
 msgstr ""
 "<qt><p>កំហុស​បាន​កើតឡើង ខណៈ​ដែល​កំពុង​ព្យាយាម​លុប​វិញ្ញាបនបត្រ ៖</p><p><b>%1</b></p></qt>"
 
-#: commands/signencryptfilescommand.cpp:233
-msgid "Sign/Encrypt Files Error"
-msgstr "កំហុស​ចុះហត្ថលេខា/អ៊ីនគ្រិប​ឯកសារ"
+#: commands/changepassphrasecommand.cpp:188
+#, kde-format
+msgid ""
+"<p>An error occurred while trying to change the passphrase for <b>%1</b>:</"
+"p><p>%2</p>"
+msgstr ""
 
-#: commands/signencryptfilescommand.cpp:244
-msgid "Select One or More Files to Sign and/or Encrypt"
-msgstr "ជ្រើស​ឯកសារ​មួយ ឬ​ច្រើន ដើម្បី​ចុះហត្ថលេខា និង​/​ឬ​អ៊ិនគ្រីប"
+#: commands/changepassphrasecommand.cpp:192
+#, fuzzy
+#| msgid "Passphrase Change Error"
+msgid "Passphrase Change Error"
+msgstr "កំហុស​ក្នុងកា​រផ្លាស់ប្ដូរ​ឃ្លា​សម្ងាត់"
+
+#: commands/changepassphrasecommand.cpp:196
+msgid "Passphrase changed successfully."
+msgstr ""
+
+#: commands/changepassphrasecommand.cpp:197
+#, fuzzy
+#| msgid "Expiry Date Change Succeeded"
+msgid "Passphrase Change Succeeded"
+msgstr "ផ្លាស់​ប្តូរ​ឃ្លាសម្ងាត់​ដែលជោគជ័យ​"
+
+#: commands/signclipboardcommand.cpp:148 commands/signclipboardcommand.cpp:161
+msgid "Sign Clipboard Error"
+msgstr "កំហុស​ក្នុង​ការ​ចុះហត្ថលេខា​ក្ដារ​តម្បៀត​ខ្ទាស់"
+
+#: commands/importcertificatefromclipboardcommand.cpp:115
+#, fuzzy
+msgid "Clipboard contents do not look like a certificate."
+msgstr "មាតិកា​ក្តារតម្បៀតខ្ទាស់​មិនដូចជា​វិញ្ញាបនបត្រឡើយ​​ ។"
+
+#: commands/importcertificatefromclipboardcommand.cpp:120
+#, fuzzy
+#| msgid "Could not determine certificate type of %1."
+msgid "Could not determine certificate type of clipboard contents."
+msgstr "មិនអាច​កំណត់​ប្រភេទ​វិញ្ញាបនបត្រ​នៃមាតិកា​ក្តារតម្បៀតខ្ទាស់​​ ។"
 
 #: commands/dumpcrlcachecommand.cpp:226
 msgid "CRL Cache Dump"
@@ -5003,6 +4907,14 @@ msgstr ""
 "មាន​កំហុស​កើតលើង នៅ​ខណៈ​ព្យាយាម​បោះបង់​ឃ្លាំង​សម្ងាត់ CRL ចោល ។ លទ្ធផល​ពី GpgSM គឺ ៖\n"
 "%1"
 
+#: commands/signencryptfilescommand.cpp:233
+msgid "Sign/Encrypt Files Error"
+msgstr "កំហុស​ចុះហត្ថលេខា/អ៊ីនគ្រិប​ឯកសារ"
+
+#: commands/signencryptfilescommand.cpp:244
+msgid "Select One or More Files to Sign and/or Encrypt"
+msgstr "ជ្រើស​ឯកសារ​មួយ ឬ​ច្រើន ដើម្បី​ចុះហត្ថលេខា និង​/​ឬ​អ៊ិនគ្រីប"
+
 #: commands/changeownertrustcommand.cpp:221
 #, kde-format
 msgid ""
@@ -5024,10 +4936,98 @@ msgstr "បាន​ផ្លាស់ប្ដូរ​ការ​ជឿជា
 msgid "Owner Trust Change Succeeded"
 msgstr "បាន​ជោគជ័យ​ក្នុងកា​រផ្លាស់ប្ដូរ​ការ​ជឿជាក់​ម្ចាស់"
 
+#: commands/changeroottrustcommand.cpp:94
+#, kde-format
+msgid ""
+"Failed to update the trust database:\n"
+"%1"
+msgstr ""
+"បាន​បរាជ័យ​ធ្វើ​បច្ចុប្បន្នភាព​មូលដ្ឋានទិន្នន័យ​​ជឿទុកចិត្ត​ ៖​\n"
+"%1"
+
+#: commands/changeroottrustcommand.cpp:96
+msgid "Root Trust Update Failed"
+msgstr "បាន​បរាជ័យ​ក្នុង​ធ្វើបច្ចុប្បន្នភាពដែល​​ជឿទុកចិត្ត​ Root ​"
+
+#: commands/changeroottrustcommand.cpp:256
+#, fuzzy, kde-format
+#| msgid "Could not open file \"%1\" for reading"
+msgid "Cannot open existing file \"%1\" for reading: %2"
+msgstr "មិនអាចបើក​ឯកសារ​ដែលមាន​ស្រាប់​​ \"%1\" សម្រាប់​ការអាន​ ៖​ %2 បាន​ទេ​"
+
+#: commands/changeroottrustcommand.cpp:264
+#, fuzzy, kde-format
+#| msgid "Could not open file \"%1\" for reading"
+msgid "Cannot open file \"%1\" for reading and writing: %2"
+msgstr "មិន​អាចបើក​ឯកសារ​​ \"%1\" សម្រាប់​ការអាន​ និង​ការសរសេរ​​ %2 បាន​ទេ​"
+
+#: commands/changeroottrustcommand.cpp:268
+#, fuzzy, kde-format
+#| msgid "Could not save file %1: %2"
+msgid "Cannot set restrictive permissions on file %1: %2"
+msgstr "មិន​អាចកំណត់សិទ្ធដែលបន្ថយ​លើ​ឯកសារ​​ %1 ៖ %2 បាន​ទេ​"
+
+#: commands/changeroottrustcommand.cpp:329
+#, fuzzy
+#| msgid "Could not find clipboard"
+msgid "Could not find gpgconf executable"
+msgstr "មិន​អាច​ស្វែងរក​ឯកសារប្រតិបត្តិ​ gpgconf បាន​ឡើយ​"
+
+#: commands/changeroottrustcommand.cpp:339
+#, fuzzy, kde-format
+msgid "\"gpgconf --reload gpg-agent\" failed: %1"
+msgstr "\"gpgconf --reload gpg-agent\" បាន​បរាជ័យ​ ៖​ %1"
+
 #: commands/encryptclipboardcommand.cpp:145
 #: commands/encryptclipboardcommand.cpp:158
 msgid "Encrypt Clipboard Error"
 msgstr "កំហុស​ក្នុងការ​អ៊ិនគ្រីប​ក្ដារ​តម្បៀត​ខ្ទាស់"
+
+#: commands/importcrlcommand.cpp:69
+#, fuzzy
+#| msgid "Certificate Revocation Lists (*.crl *.arl *-crl.der *-arl.der)"
+msgid ""
+"Certificate Revocation Lists, DER encoded (*.crl *.arl *-crl.der *-arl.der)"
+msgstr "ការដកហូត​បញ្ជីវិញ្ញាបនបត្រវិញ​​ បាន​អ៊ិនកូដ ​DER ​ (*.crl *.arl *-crl.der *-arl.der)"
+
+#: commands/importcrlcommand.cpp:70
+msgid "Select CRL File to Import"
+msgstr "ជ្រើសឯកសារ​ CRL ដែលត្រូវ​នាំចូល"
+
+#: commands/importcrlcommand.cpp:157
+msgid "Unable to start process dirmngr. Please check your installation."
+msgstr "មិនអាច​ចាប់ផ្ដើម​ដំណើរការ dirmngr ។ សូម​ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក ។"
+
+#: commands/importcrlcommand.cpp:175
+msgid ""
+"The GpgSM process that tried to import the CRL file ended prematurely "
+"because of an unexpected error. Please check the output of gpgsm --call-"
+"dirmngr loadcrl &lt;filename&gt; for details."
+msgstr ""
+"ដំណើរការ GpgSM ដែល​បាន​នាំចូល​ឯកសារ CRL បាន​បញ្ចប់​មុន​ពេល ដោយ​សារ​មាន​កំហុស​ដោយ​មិន​នឹក​ស្មាន ។ ចំពោះ​"
+"ព័ត៌មាន​លម្អិត សូម​ពិនិត្យ​មើល​លទ្ធផល gpgsm --call-dirmngr loadcrl &lt;ឈ្មោះ​ឯកសារ&gt; ។"
+
+#: commands/importcrlcommand.cpp:178 commands/importcrlcommand.cpp:182
+msgid "Import CRL Error"
+msgstr "កំហុស​នាំចូល CRL"
+
+#: commands/importcrlcommand.cpp:180
+#, kde-format
+msgid ""
+"An error occurred while trying to import the CRL file. The output from gpgsm "
+"was:\n"
+"%1"
+msgstr ""
+"មាន​កំហុស​កើតឡើង​នៅពេល​នាំចូល​ឯកសារ CRL ។ លទ្ធផល​ពី gpgsm គឺ ៖\n"
+"%1"
+
+#: commands/importcrlcommand.cpp:184
+msgid "CRL file imported successfully."
+msgstr "បាននាំចូល​ឯកសារ​ CRL ដោយ​ជោគជ័យ​ ។"
+
+#: commands/importcrlcommand.cpp:185
+msgid "Import CRL Finished"
+msgstr "បាន​បញ្ចប់​ការ​នាំចូល CRL"
 
 #: aboutdata.cpp:53
 msgid "Certificate Manager and Unified Crypto GUI"
@@ -5597,79 +5597,13 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
 
-#. i18n: file: conf/cryptooperationsconfigwidget.ui:18
-#. i18n: ectx: attribute (title), widget (QWidget, emailOperationsTab)
-#: rc.cpp:41
-msgid "EMail Operations"
-msgstr "​ប្រតិបត្តិ​ការ​អ៊ីមែល​ "
-
-#. i18n: file: conf/cryptooperationsconfigwidget.ui:24
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, quickSignCB)
-#. i18n: file: conf/cryptooperationsconfigwidget.ui:34
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, quickEncryptCB)
-#: rc.cpp:44 rc.cpp:50
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"When 'Quick Mode' is enabled, no dialog is shown when signing (encrypting) "
-"emails, respectively, unless there is a conflict that needs manual "
-"resolution."
-msgstr ""
-"នៅពេល​ដែល​​ 'របៀប​រហ័ស​​' ត្រូវបាន​បើក​​​ គ្មាន​ប្រអប់​ត្រូវបានបង្ហាញ​​នៅពេលដែល​ចុះហត្ថលេខា​ (ការអ៊ិនគ្រីប​​) "
-"អ៊ីមែល នីមួយ​ៗ​  លុះត្រាតែ​មាន​ការប៉ះទង្គិចដែលត្រូវការ​គុណភាព​បង្ហាញ​​​សៀវភៅដៃ​​​​ ។​"
-
-#. i18n: file: conf/cryptooperationsconfigwidget.ui:27
-#. i18n: ectx: property (text), widget (QCheckBox, quickSignCB)
-#: rc.cpp:47
-#, fuzzy
-msgid "Use 'Quick Mode' when signing"
-msgstr "ប្រើ​​ '​​របៀប​រហ័ស​​' នៅពេលដែល​​ចុះហត្ថលេខា"
-
-#. i18n: file: conf/cryptooperationsconfigwidget.ui:37
-#. i18n: ectx: property (text), widget (QCheckBox, quickEncryptCB)
-#: rc.cpp:53
-#, fuzzy
-msgid "Use 'Quick Mode' when encrypting"
-msgstr "ប្រើ​​ '​របៀបរហ័ស​​' នៅពេលដែល​ការ​អ៊ិនគ្រីប​"
-
-#. i18n: file: conf/cryptooperationsconfigwidget.ui:58
-#. i18n: ectx: attribute (title), widget (QWidget, checksumOperationsTab)
-#: rc.cpp:56
-msgid "Checksum Operations"
-msgstr "ប្រតិបត្តិការ​ឆេកសាំ​​"
-
-#. i18n: file: conf/cryptooperationsconfigwidget.ui:66
-#. i18n: ectx: property (whatsThis), widget (QLabel, label)
-#. i18n: file: conf/cryptooperationsconfigwidget.ui:78
-#. i18n: ectx: property (whatsThis), widget (QComboBox, checksumDefinitionCB)
-#: rc.cpp:59 rc.cpp:67
-#, fuzzy
-msgctxt "@info:whatsthis"
-msgid ""
-"<p>Choose here which of the configured checksum programs should be used when "
-"creating checksum files.</p>\n"
-"<p>When verifying checksums, the program to use is automatically found, "
-"based on the checksum files found.</p>\n"
-msgstr ""
-"<p>ជ្រើស​មួយណា​​នៃ​កម្មវិធីឆេកសាំដែលបាន​កំណត់​រចនាសម្ព័ន្ធ​គួរតែត្រូវបាន​ប្រើ​ នៅពេលដែល​បង្កើត​"
-"ឯកសារឆេកសាំ ។​</p>\n"
-"<p>នៅពេលដែល​ការផ្ទៀងផ្ទាត់​ឆេកសាំ​ កម្មវិធី​ត្រូវប្រើ​ត្រូវបាន​រកឃើញ​ដោយ​ស្វ័យ​ប្រវត្តិ​​ សំអាងលើ​"
-"ឯកសារឆេកសាំ​ដែលរកឃើញ​ ។​</p>\n"
-
-#. i18n: file: conf/cryptooperationsconfigwidget.ui:69
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:64
-#, fuzzy
-msgid "Checksum program to use:"
-msgstr "កម្មវិធី​ឆេកសាំ​ត្រូវប្រើ​ ៖"
-
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, intervalRefreshCB)
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:31
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, intervalRefreshSB)
 #. i18n: file: kcfg/smimevalidationpreferences.kcfg:7
 #. i18n: ectx: whatsthis, entry (RefreshInterval), group (SMime Validation)
-#: rc.cpp:72 rc.cpp:78 rc.cpp:692
+#: rc.cpp:41 rc.cpp:47 rc.cpp:692
 msgid ""
 "This option enables interval checking of certificate validity. You can also "
 "choose the checking interval (in hours). Note that validation is perfomed "
@@ -5682,25 +5616,25 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:21
 #. i18n: ectx: property (text), widget (QCheckBox, intervalRefreshCB)
-#: rc.cpp:75
+#: rc.cpp:44
 msgid "Check certificate validity every"
 msgstr "ពិនិត្យ​មើល​សុពលភាព​របស់​វិញ្ញាបនបត្រ​រៀងរាល់"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:37
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, intervalRefreshSB)
-#: rc.cpp:81
+#: rc.cpp:50
 msgid "hour"
 msgstr "ម៉ោង"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:40
 #. i18n: ectx: property (suffix), widget (QSpinBox, intervalRefreshSB)
-#: rc.cpp:84
+#: rc.cpp:53
 msgid " hours"
 msgstr " ម៉ោង"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:68
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, CRLRB)
-#: rc.cpp:87
+#: rc.cpp:56
 msgid ""
 "If this option is selected, S/MIME certificates are validated using "
 "Certificate Revocation Lists (CRLs)."
@@ -5710,13 +5644,13 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:71
 #. i18n: ectx: property (text), widget (QRadioButton, CRLRB)
-#: rc.cpp:90
+#: rc.cpp:59
 msgid "Validate certificates using CRLs"
 msgstr "ធ្វើ​ឲ្យ​វិញ្ញាបនបត្រ​មាន​សុពលភាព​ដោយ​ប្រើ CRLs"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:81
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, OCSPRB)
-#: rc.cpp:93
+#: rc.cpp:62
 msgid ""
 "If this option is selected, S/MIME certificates are validated online using "
 "the Online Certificates Status Protocol (OCSP). Fill in the URL of the OCSP "
@@ -5728,25 +5662,25 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:84
 #. i18n: ectx: property (text), widget (QRadioButton, OCSPRB)
-#: rc.cpp:96
+#: rc.cpp:65
 msgid "Validate certificates online (OCSP)"
 msgstr "ធ្វើ​ឲ្យ​វិញ្ញាបនបត្រ​មាន​សុពលភាព​លើ​បណ្ដាញ (OCSP)"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:94
 #. i18n: ectx: property (title), widget (QGroupBox, OCSPGroupBox)
-#: rc.cpp:99
+#: rc.cpp:68
 msgid "Online Certificate Validation"
 msgstr "ការ​ធ្វើ​ឲ្យ​វិញ្ញាបនបត្រ​លើ​បណ្ដាញ​មាន​សុពលភាព​"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:100
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:102
+#: rc.cpp:71
 msgid "OCSP responder URL:"
 msgstr "អ្នក​ឆ្លើយតប OCSP URL ៖"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:110
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, OCSPResponderURL)
-#: rc.cpp:105
+#: rc.cpp:74
 msgid ""
 "Enter here the address of the server for online validation of certificates "
 "(OCSP responder). The URL is usually starting with http://."
@@ -5756,19 +5690,19 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:117
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:108
+#: rc.cpp:77
 msgid "OCSP responder signature:"
 msgstr "ហត្ថលេខា​​របស់អ្នក​ឆ្លើយ​តប OCSP ៖"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:127
 #. i18n: ectx: property (text), widget (QCheckBox, ignoreServiceURLCB)
-#: rc.cpp:111
+#: rc.cpp:80
 msgid "Ignore service URL of certificates"
 msgstr "មិនអើពើ​សេវា URL របស់​វិញ្ញាបនបត្រ"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:140
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, doNotCheckCertPolicyCB)
-#: rc.cpp:114
+#: rc.cpp:83
 msgid ""
 "By default GnuPG uses the file ~/.gnupg/policies.txt to check if a "
 "certificate policy is allowed. If this option is selected, policies are not "
@@ -5779,13 +5713,13 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:143
 #. i18n: ectx: property (text), widget (QCheckBox, doNotCheckCertPolicyCB)
-#: rc.cpp:117
+#: rc.cpp:86
 msgid "Do not check certificate policies"
 msgstr "កុំ​គូស​ធីក​គោលនយោបាយ​វិញ្ញាបនបត្រ"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:150
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, neverConsultCB)
-#: rc.cpp:120
+#: rc.cpp:89
 msgid ""
 "If this option is checked, Certificate Revocation Lists are never used to "
 "validate S/MIME certificates."
@@ -5795,13 +5729,13 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, neverConsultCB)
-#: rc.cpp:123
+#: rc.cpp:92
 msgid "Never consult a CRL"
 msgstr "កុំ​ពិភាក្សា CRL"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:160
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, allowMarkTrustedCB)
-#: rc.cpp:126
+#: rc.cpp:95
 #, fuzzy
 msgid ""
 "If this option is checked while a root CA certificate is being imported, you "
@@ -5819,14 +5753,14 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:163
 #. i18n: ectx: property (text), widget (QCheckBox, allowMarkTrustedCB)
-#: rc.cpp:129
+#: rc.cpp:98
 #, fuzzy
 msgid "Allow to mark root certificates as trusted"
 msgstr "អនុញ្ញាត​ដើម្បី​សម្គាល់វិ​ញ្ញាបនបត្រ​​ root ដូច​ដែលជឿទុកចិត្ត​"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:170
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, fetchMissingCB)
-#: rc.cpp:132
+#: rc.cpp:101
 msgid ""
 "If this option is checked, missing issuer certificates are fetched when "
 "necessary (this applies to both validation methods, CRLs and OCSP)."
@@ -5836,31 +5770,31 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:173
 #. i18n: ectx: property (text), widget (QCheckBox, fetchMissingCB)
-#: rc.cpp:135
+#: rc.cpp:104
 msgid "Fetch missing issuer certificates"
 msgstr "ទៅ​យក​វិញ្ញាបនបត្រ​របស់​អ្នក​ចេញផ្សាយ​ដែល​បាត់"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:181
 #. i18n: ectx: attribute (title), widget (QWidget, tabHTTP)
-#: rc.cpp:138
+#: rc.cpp:107
 msgid "&HTTP Requests"
 msgstr "សំណើ HTTP"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:187
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, disableHTTPCB)
-#: rc.cpp:141
+#: rc.cpp:110
 msgid "Entirely disables the use of HTTP for S/MIME."
 msgstr "ប្រើ​ការ​ប្រើ​ទាំងស្រុង​របស់ HTTP សម្រាប់ S/MIME ។"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:190
 #. i18n: ectx: property (text), widget (QCheckBox, disableHTTPCB)
-#: rc.cpp:144
+#: rc.cpp:113
 msgid "Do not perform any HTTP requests"
 msgstr "កុំ​អនុវត្ត​សំណើ​​របស់ HTTP"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:197
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreHTTPDPCB)
-#: rc.cpp:147
+#: rc.cpp:116
 msgid ""
 "When looking for the location of a CRL, the to-be-tested certificate usually "
 "contains what are known as \"CRL Distribution Point\" (DP) entries, which "
@@ -5875,13 +5809,13 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:200
 #. i18n: ectx: property (text), widget (QCheckBox, ignoreHTTPDPCB)
-#: rc.cpp:150
+#: rc.cpp:119
 msgid "Ignore HTTP CRL distribution point of certificates"
 msgstr "មិនអើពើចំណុច​ចែកចាយ​របស់ HTTP CRL នៃ​វិញ្ញាបនបត្រ"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:207
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, honorHTTPProxyRB)
-#: rc.cpp:153
+#: rc.cpp:122
 msgid ""
 "If this option is selected, the value of the HTTP proxy shown on the right "
 "(which comes from the environment variable http_proxy) will be used for any "
@@ -5892,19 +5826,19 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:210
 #. i18n: ectx: property (text), widget (QRadioButton, honorHTTPProxyRB)
-#: rc.cpp:156
+#: rc.cpp:125
 msgid "Use system HTTP proxy:"
 msgstr "ប្រើ​ប្រព័ន្ធ​ប្រូកស៊ី HTTP ៖"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:227
 #. i18n: ectx: property (text), widget (QRadioButton, useCustomHTTPProxyRB)
-#: rc.cpp:162
+#: rc.cpp:131
 msgid "Use this proxy for HTTP requests: "
 msgstr "ប្រើ​ប្រូកស៊ី​នេះ​សម្រាប់​សំណើ HTTP ៖"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:234
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, customHTTPProxy)
-#: rc.cpp:165
+#: rc.cpp:134
 msgid ""
 "Enter here the location of your HTTP Proxy, which will be used for all HTTP "
 "requests relating to S/MIME. The syntax is host:port, for instance myproxy."
@@ -5915,25 +5849,25 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:255
 #. i18n: ectx: attribute (title), widget (QWidget, tabLDAP)
-#: rc.cpp:168
+#: rc.cpp:137
 msgid "&LDAP Requests"
 msgstr "សំណើ LDAP"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:261
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, disableLDAPCB)
-#: rc.cpp:171
+#: rc.cpp:140
 msgid "Entirely disables the use of LDAP for S/MIME."
 msgstr "បិទ​កា​រប្រើ​ទាំងមូល​របស់ LDAP សម្រាប់ S/MIME ។"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:264
 #. i18n: ectx: property (text), widget (QCheckBox, disableLDAPCB)
-#: rc.cpp:174
+#: rc.cpp:143
 msgid "Do not perform any LDAP requests"
 msgstr "មិនអនុវត្ត​សំណើ LDAP"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:271
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, ignoreLDAPDPCB)
-#: rc.cpp:177
+#: rc.cpp:146
 msgid ""
 "When looking for the location of a CRL, the to-be-tested certificate usually "
 "contains what are known as \"CRL Distribution Point\" (DP) entries, which "
@@ -5948,19 +5882,19 @@ msgstr ""
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:274
 #. i18n: ectx: property (text), widget (QCheckBox, ignoreLDAPDPCB)
-#: rc.cpp:180
+#: rc.cpp:149
 msgid "Ignore LDAP CRL distribution point of certificates"
 msgstr "មិន​អើពើ​ចំណុច​ចែកចាយ LDAP CRL នៃ​វិញ្ញាបនបត្រ"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:281
 #. i18n: ectx: property (text), widget (QLabel, customLDAPLabel)
-#: rc.cpp:183
+#: rc.cpp:152
 msgid "Primary host for LDAP requests:"
 msgstr "ម៉ាស៊ីន​ចម្បង​សម្រាប់​សំណើ LDAP ៖"
 
 #. i18n: file: conf/smimevalidationconfigurationwidget.ui:292
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, customLDAPProxy)
-#: rc.cpp:186
+#: rc.cpp:155
 msgid ""
 "Entering a LDAP server here will make all LDAP requests go to that server "
 "first. More precisely, this setting overrides any specified host and port "
@@ -5979,31 +5913,31 @@ msgstr ""
 
 #. i18n: file: conf/appearanceconfigwidget.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, AppearanceConfigWidget)
-#: rc.cpp:190
+#: rc.cpp:159
 msgid "Color && Font Configuration"
 msgstr "ការកំណត់​រចនាសម្ព័ន្ធ​ពណ៌​ និង​ពុម្ពអក្សរ"
 
 #. i18n: file: conf/appearanceconfigwidget.ui:28
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:193
+#: rc.cpp:162
 msgid "General"
 msgstr "ទូទៅ"
 
 #. i18n: file: conf/appearanceconfigwidget.ui:34
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:196
+#: rc.cpp:165
 msgid "Tooltips"
 msgstr "ព័ត៌មាន​ជំនួយ"
 
 #. i18n: file: conf/appearanceconfigwidget.ui:40
 #. i18n: ectx: property (text), widget (QCheckBox, tooltipValidityCheckBox)
-#: rc.cpp:199
+#: rc.cpp:168
 msgid "Show validity"
 msgstr "បង្ហាញ​សុពលភាព"
 
 #. i18n: file: conf/appearanceconfigwidget.ui:47
 #. i18n: ectx: property (text), widget (QCheckBox, tooltipOwnerCheckBox)
-#: rc.cpp:202
+#: rc.cpp:171
 msgid "Show owner information"
 msgstr "បង្ហាញ​ព័ត៌មាន​របស់​ម្ចាស់"
 
@@ -6011,63 +5945,129 @@ msgstr "បង្ហាញ​ព័ត៌មាន​របស់​ម្ចា
 #. i18n: ectx: property (text), widget (QCheckBox, tooltipDetailsCheckBox)
 #. i18n: file: kcfg/tooltippreferences.kcfg:19
 #. i18n: ectx: label, entry (ShowCertificateDetails), group (Tooltip)
-#: rc.cpp:205 rc.cpp:707
+#: rc.cpp:174 rc.cpp:707
 msgid "Show certificate details"
 msgstr "បង្ហាញ​វិញ្ញាបនបត្រ​លម្អិត"
 
 #. i18n: file: conf/appearanceconfigwidget.ui:99
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: rc.cpp:208
+#: rc.cpp:177
 msgid "Certificate Filters"
 msgstr "តម្រង​វិញ្ញាបនបត្រ"
 
 #. i18n: file: conf/appearanceconfigwidget.ui:113
 #. i18n: ectx: property (text), widget (QPushButton, iconButton)
-#: rc.cpp:211
+#: rc.cpp:180
 msgid "Set &Icon..."
 msgstr "កំណត់​​រូបតំណាង..."
 
 #. i18n: file: conf/appearanceconfigwidget.ui:123
 #. i18n: ectx: property (text), widget (QPushButton, foregroundButton)
-#: rc.cpp:214
+#: rc.cpp:183
 msgid "Set &Text Color..."
 msgstr "កំណត់​ពណ៌​អត្ថបទ​..."
 
 #. i18n: file: conf/appearanceconfigwidget.ui:133
 #. i18n: ectx: property (text), widget (QPushButton, backgroundButton)
-#: rc.cpp:217
+#: rc.cpp:186
 msgid "Set &Background Color..."
 msgstr "កំណត់​ពណ៌​ផ្ទៃ​ខាងក្រោយ..."
 
 #. i18n: file: conf/appearanceconfigwidget.ui:143
 #. i18n: ectx: property (text), widget (QPushButton, fontButton)
-#: rc.cpp:220
+#: rc.cpp:189
 msgid "Set F&ont..."
 msgstr "កំណត់​ពុម្ពអក្សរ​..."
 
 #. i18n: file: conf/appearanceconfigwidget.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, italicCB)
-#: rc.cpp:223
+#: rc.cpp:192
 msgid "Italic"
 msgstr "ទ្រេត"
 
 #. i18n: file: conf/appearanceconfigwidget.ui:163
 #. i18n: ectx: property (text), widget (QCheckBox, boldCB)
-#: rc.cpp:226
+#: rc.cpp:195
 msgid "Bold"
 msgstr "ដិត"
 
 #. i18n: file: conf/appearanceconfigwidget.ui:173
 #. i18n: ectx: property (text), widget (QCheckBox, strikeoutCB)
-#: rc.cpp:229
+#: rc.cpp:198
 msgid "Strikeout"
 msgstr "ឆូត​"
 
 #. i18n: file: conf/appearanceconfigwidget.ui:199
 #. i18n: ectx: property (text), widget (QPushButton, defaultLookPB)
-#: rc.cpp:232
+#: rc.cpp:201
 msgid "Default Appearance"
 msgstr "រូបរាង​លំនាំដើម​"
+
+#. i18n: file: conf/cryptooperationsconfigwidget.ui:18
+#. i18n: ectx: attribute (title), widget (QWidget, emailOperationsTab)
+#: rc.cpp:204
+msgid "EMail Operations"
+msgstr "​ប្រតិបត្តិ​ការ​អ៊ីមែល​ "
+
+#. i18n: file: conf/cryptooperationsconfigwidget.ui:24
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, quickSignCB)
+#. i18n: file: conf/cryptooperationsconfigwidget.ui:34
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, quickEncryptCB)
+#: rc.cpp:207 rc.cpp:213
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"When 'Quick Mode' is enabled, no dialog is shown when signing (encrypting) "
+"emails, respectively, unless there is a conflict that needs manual "
+"resolution."
+msgstr ""
+"នៅពេល​ដែល​​ 'របៀប​រហ័ស​​' ត្រូវបាន​បើក​​​ គ្មាន​ប្រអប់​ត្រូវបានបង្ហាញ​​នៅពេលដែល​ចុះហត្ថលេខា​ (ការអ៊ិនគ្រីប​​) "
+"អ៊ីមែល នីមួយ​ៗ​  លុះត្រាតែ​មាន​ការប៉ះទង្គិចដែលត្រូវការ​គុណភាព​បង្ហាញ​​​សៀវភៅដៃ​​​​ ។​"
+
+#. i18n: file: conf/cryptooperationsconfigwidget.ui:27
+#. i18n: ectx: property (text), widget (QCheckBox, quickSignCB)
+#: rc.cpp:210
+#, fuzzy
+msgid "Use 'Quick Mode' when signing"
+msgstr "ប្រើ​​ '​​របៀប​រហ័ស​​' នៅពេលដែល​​ចុះហត្ថលេខា"
+
+#. i18n: file: conf/cryptooperationsconfigwidget.ui:37
+#. i18n: ectx: property (text), widget (QCheckBox, quickEncryptCB)
+#: rc.cpp:216
+#, fuzzy
+msgid "Use 'Quick Mode' when encrypting"
+msgstr "ប្រើ​​ '​របៀបរហ័ស​​' នៅពេលដែល​ការ​អ៊ិនគ្រីប​"
+
+#. i18n: file: conf/cryptooperationsconfigwidget.ui:58
+#. i18n: ectx: attribute (title), widget (QWidget, checksumOperationsTab)
+#: rc.cpp:219
+msgid "Checksum Operations"
+msgstr "ប្រតិបត្តិការ​ឆេកសាំ​​"
+
+#. i18n: file: conf/cryptooperationsconfigwidget.ui:66
+#. i18n: ectx: property (whatsThis), widget (QLabel, label)
+#. i18n: file: conf/cryptooperationsconfigwidget.ui:78
+#. i18n: ectx: property (whatsThis), widget (QComboBox, checksumDefinitionCB)
+#: rc.cpp:222 rc.cpp:230
+#, fuzzy
+msgctxt "@info:whatsthis"
+msgid ""
+"<p>Choose here which of the configured checksum programs should be used when "
+"creating checksum files.</p>\n"
+"<p>When verifying checksums, the program to use is automatically found, "
+"based on the checksum files found.</p>\n"
+msgstr ""
+"<p>ជ្រើស​មួយណា​​នៃ​កម្មវិធីឆេកសាំដែលបាន​កំណត់​រចនាសម្ព័ន្ធ​គួរតែត្រូវបាន​ប្រើ​ នៅពេលដែល​បង្កើត​"
+"ឯកសារឆេកសាំ ។​</p>\n"
+"<p>នៅពេលដែល​ការផ្ទៀងផ្ទាត់​ឆេកសាំ​ កម្មវិធី​ត្រូវប្រើ​ត្រូវបាន​រកឃើញ​ដោយ​ស្វ័យ​ប្រវត្តិ​​ សំអាងលើ​"
+"ឯកសារឆេកសាំ​ដែលរកឃើញ​ ។​</p>\n"
+
+#. i18n: file: conf/cryptooperationsconfigwidget.ui:69
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:227
+#, fuzzy
+msgid "Checksum program to use:"
+msgstr "កម្មវិធី​ឆេកសាំ​ត្រូវប្រើ​ ៖"
 
 #. i18n: file: kgpgconf/mainwidget.ui:17
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
