@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-01 05:14+0200\n"
+"POT-Creation-Date: 2010-08-02 05:05+0200\n"
 "PO-Revision-Date: 2010-06-08 16:12+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -27,7 +27,7 @@ msgstr "អ្នក​កែសម្រួល​ចំណាំ​របស់
 #. i18n: ectx: property (text), widget (QPushButton, newButton)
 #: src/config/alias_config.cpp:162 src/config/highlight_config.cpp:246
 #: src/config/watchednicknames_config.cpp:218
-#: src/config/quickbuttons_config.cpp:201 rc.cpp:940
+#: src/config/quickbuttons_config.cpp:201 src/urlcatcher.cpp:305 rc.cpp:940
 msgid "New"
 msgstr "ថ្មី​"
 
@@ -134,11 +134,6 @@ msgstr "ការ​គ្រប់គ្រងឆានែល (+p)"
 #, fuzzy
 msgid "Channel Owners (+q)"
 msgstr "ម្ចាស់​កម្មសិទ្ធិ​ឆានែល​ (+q)"
-
-#: src/config/preferences.cpp:50
-#, fuzzy
-msgid "Default Identity"
-msgstr "អត្ត​សញ្ញាណ​លំនាំដើម​"
 
 #: src/config/settingsdialog.cpp:46
 msgid "Interface"
@@ -402,6 +397,11 @@ msgstr "ព្រមាន​មុន​ពេល​ការ​បោះបង
 #, fuzzy
 msgid "Warn when sending characters incompatible with your current encoding"
 msgstr "ព្រមាន​នៅពេលផ្ញើតួអក្សរដែល​មិន​ឆប​គ្នា​ជាមួយ​ការ​អ៊ិន​កូដរបស់​អ្នកបច្ចុប្បន្ន​ "
+
+#: src/config/preferences.cpp:50
+#, fuzzy
+msgid "Default Identity"
+msgstr "អត្ត​សញ្ញាណ​លំនាំដើម​"
 
 #: src/dbus.cpp:144
 #, fuzzy, kde-format
@@ -788,7 +788,7 @@ msgstr "ផ្ទេរ​ចូល"
 msgid "Outgoing Transfers"
 msgstr "ផ្ទេរចេញ"
 
-#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2163
+#: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2153
 msgid "DCC Status"
 msgstr "ស្ថានភាព DCC"
 
@@ -1318,8 +1318,8 @@ msgstr "ប្រ​ធាន​បទ​របស់​ឆានែល​"
 
 #. i18n: file: src/irc/channellistpanelui.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, ChannelListWidgetUI)
-#: src/irc/channellistpanel.cpp:145 src/viewer/viewcontainer.cpp:2467
-#: src/viewer/viewcontainer.cpp:2525 rc.cpp:1630
+#: src/irc/channellistpanel.cpp:145 src/viewer/viewcontainer.cpp:2457
+#: src/viewer/viewcontainer.cpp:2515 rc.cpp:1630
 msgid "Channel List"
 msgstr "បញ្ជី​ឆានែល​"
 
@@ -1414,145 +1414,12 @@ msgstr "មាន​សំឡេង​"
 
 #. i18n: file: src/config/nicklistbehavior_configui.ui:98
 #. i18n: ectx: property (text), widget (QTreeWidget, sortOrder)
-#: src/irc/channelnick.cpp:208 src/irc/channeloptionsdialog.cpp:296
-#: src/irc/inputfilter.cpp:983 src/irc/inputfilter.cpp:987
-#: src/irc/inputfilter.cpp:2112 src/irc/inputfilter.cpp:2166
-#: src/irc/channel.cpp:2146 rc.cpp:880
+#: src/irc/channelnick.cpp:208 src/irc/inputfilter.cpp:983
+#: src/irc/inputfilter.cpp:987 src/irc/inputfilter.cpp:2112
+#: src/irc/inputfilter.cpp:2166 src/irc/channel.cpp:2146
+#: src/irc/channeloptionsdialog.cpp:299 rc.cpp:880
 msgid "Mode"
 msgstr "របៀប"
-
-#: src/irc/channeloptionsdialog.cpp:32
-#, kde-format
-msgid "Channel Settings for %1"
-msgstr "កា​រកំណត់​ឆានែល​សម្រាប់ %1"
-
-#: src/irc/channeloptionsdialog.cpp:156
-msgid "&Hide Advanced Modes &lt;&lt;"
-msgstr "លាក់​របៀប​កម្រិត​ខ្ពស់ &lt;&lt;"
-
-#: src/irc/channeloptionsdialog.cpp:160
-msgid "&Show Advanced Modes &gt;&gt;"
-msgstr "បង្ហាញ​របៀប​កម្រិត​ខ្ពស់ &gt;&gt;"
-
-#: src/irc/channeloptionsdialog.cpp:296
-msgid "Parameter"
-msgstr "ប៉ារ៉ាម៉ែត្រ"
-
-#: src/irc/channeloptionsdialog.cpp:304
-#, kde-format
-msgctxt "<mode character> (<mode description>)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: src/irc/channeloptionsdialog.cpp:631
-#, fuzzy
-msgid "Timestamp"
-msgstr "ត្រា​ពេលវេលា​"
-
-#: src/irc/channeloptionsdialog.cpp:633
-msgid "Author"
-msgstr "អ្នក​និពន្ធ​"
-
-#: src/irc/channeloptionsdialog.cpp:694
-#, fuzzy
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>The <b>T</b>opic mode means that only the channel "
-"operator can change the topic for the channel.</p></qt>"
-msgstr ""
-"<qt><p>​ទាំង​នេះត្រួត​ពិនិត្យ <em>របៀប</em> ឆានែល ។  មាន​តែ​ការី​ប៉ុណ្ណោះ​អាច​ផ្លាស់ប្ដូរ​ ។</p><p> "
-"<b>ប្រធាន​បទ</b>មាន​ន័យ​មានតែ​ការីឆានែល​អាច​ផ្លាស់ប្ដូរ​ប្រធាន​បទ​សម្រាប់​ឆានែលបាន​ ។</p></qt>"
-
-#: src/irc/channeloptionsdialog.cpp:696
-#, fuzzy
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p><b>N</b>o messages from outside means users who are not "
-"in the channel cannot send messages for everybody in the channel to see.  "
-"Almost all channels have this set to prevent nuisance messages.</p></qt>"
-msgstr ""
-"<qt><p>ទាំង​នេះ​ត្រួត​ពិនិត្យ​ <em>របៀប​</em> របស់​ឆានែល​ ។  ការីតែមួយ​ប៉ុណ្ណោះអាច​ប្តូរ​ទាំងនេះ​បាន​ ។​ "
-"</p><p><b>គ្មាន​</b>សារ​ពី​ខាង​ក្រៅ​ មាន​ន័យ​ថាអ្នក​ប្រើ​ដែល​មិន​នៅក្នុង​ឆានែល​មិន​អាច​ផ្ញើ​សារ​សម្រាប់​អ្នក​"
-"រាល់​គ្នា​​ក្នុ​ងឆានែល​ដើម្បីមើលបាន​ឡើយ​​ ។  គ្រប់​ឆានែល​ភាគ​ច្រើន​មាន​ការ​កំណត់​នេះ​ដើម្បី​ការការ​ពារ​សារដែល​"
-"រំខាន​ ។</p></qt>"
-
-#: src/irc/channeloptionsdialog.cpp:698
-#, fuzzy
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>A <b>S</b>ecret channel will not show up in the channel "
-"list, nor will any user be able to see that you are in the channel with the "
-"<em>WHOIS</em> command or anything similar.  Only the people that are in the "
-"same channel will know that you are in this channel, if this mode is set.</"
-"p></qt>"
-msgstr ""
-"<qt><p>ទាំង​នេះ​ត្រួតពិនិត្យ​ <em>របៀប​</em> នៃ​ឆានែល​ ។  ការីតែ​មួយ​ប៉ុណ្ណោះ​អាច​ប្តូរ​ទាំង​នេះ​បាន​ ។ "
-"</p><p>ឆានែល​ <b>សម្ងាត់​</b> នឹង​មិន​បង្ហាញ​ក្នុង​​បញ្ជី​ឆានែល​ នឹង​គ្មាន​អ្នក​ប្រើ​អាចដឹងថា ​អ្នក​នៅក្នុង​"
-"ឆានែល​ជាមួយ​ ​<em>ជាអ្នក​​ណា​​</em>ពាក្យ​បញ្ជា ឬប្រហាក់​ប្រហែល​វត្ថុអ្វី​មួយ​ ។  មាន​មនុស្សតែម្នាក់​ប៉ុណ្ណោះ​"
-"ដែលមាន​ក្នុង​ឆានែល​ដូច​គ្នា​ នឹង​ដឹង​ថា​អ្នក​នៅក្នុង​ឆានែល​នេះ​ ប្រ​សិន​បើ​ របៀប​នេះ​ត្រូវ​បាន​កំណត់​ ។</p></qt>"
-
-#: src/irc/channeloptionsdialog.cpp:700
-#, fuzzy
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>An <b>I</b>nvite only channel means that people can only "
-"join the channel if they are invited.  To invite someone, a channel operator "
-"needs to issue the command <em>/invite nick</em> from within the channel.</"
-"p></qt>"
-msgstr ""
-"<qt><p>ទាំង​នេះត្រួតពិនិត្យ​ <em>របៀប​</em> នៃឆានែល​ ។  ការី​តែមួយ​ប៉ុណ្ណោះ​អាចប្តូរ​ទាំង​នេះ​បាន​ ។ "
-"</p><p>អញ្ជើញ​ <b>ឆានែល</b>តែមួយប៉ុណ្ណោះ​ មាន​ន័យថា​អ្នក​អាច​ត​បានតែ​ឆានែល​ ប្រ​សិន​បើ​ ពួកវា​ត្រូវ​បាន​"
-"អញ្ជើញ ។  ដើម្បី​អញ្ជើញ​អ្នក​ណាម្នាក់​ ត្រូវ​ការ​ការី​ឆានែល​ដើម្បី​ ចេញ​ពាក្យ​បញ្ជា​ <em>/អញ្ជើញ​សម្មតិនាម​"
-"</em> ពី​ខាងក្រៅ​ឆានែល​ ។</p></qt>"
-
-#: src/irc/channeloptionsdialog.cpp:702
-#, fuzzy
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>A <b>P</b>rivate channel is shown in a listing of all "
-"channels, but the topic is not shown.  A user's <em>WHOIS</em> may or may "
-"not show them as being in a private channel depending on the IRC server.</"
-"p></qt>"
-msgstr ""
-"<qt><p>ទាំងនេះ​ត្រួត​ពិនិត្យ​ <em>របៀប​</em> នៃ​ឆានែល ។  ការី​តែមួយ​ប៉ុណ្តោះ​អាច​ប្តូរ​ទាំង​នេះ​ ។ </"
-"p><p>ឆានែល​ <b>ឯកជន​</b> ត្រូវ​បាន​បង្ហាញ​ក្នុង​បញ្ជី​របស់​ឆានែល​ទាំង​អស់​ ប៉ុន្តែ​ប្រធាន​បទមិន​ត្រូវ​បាន​"
-"បង្ហាញ​ឡើយ​ ។  អ្នក​ប្រើ​ <em>ជាអ្នក​ណា​</em> អាច​ ឬ​មិន​អាច​ បង្ហាញ​វា​ក្នុង​ឆានែល​ឯកជន​ផ្អែក​ទៅ​លើ​"
-"ម៉ាស៊ីន​បម្រើ​ជជែក​កំសាន្ត​តាម​អ៊ិន​ធឺណិត​ ។</p></qt>"
-
-#: src/irc/channeloptionsdialog.cpp:704
-#, fuzzy
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>A <b>M</b>oderated channel is one where only operators, "
-"half-operators and those with voice can talk.</p></qt>"
-msgstr ""
-"<qt><p>ទាំង​នេះ​​ត្រួត​ពិនិត្យ​​ <em>របៀប​</em> នៃ​ឆានែល​ ។  ការី​តែមួយ​ប៉ុណ្ណោះ​អាច​ប្តូរ​ទាំងនេះ​ ។ </"
-"p><p>បន្ថយ​ <b>ឆានែល​</b> មួយ​ដែល​ការីតែមួយ​ប៉ុណ្ណោះ​ ពាក្យ​កណ្តាល​ការី​ និង​ជាមួយ​សំឡេង​អាច​និយាយបាន​ទាំង​"
-"នោះ​​ ។</p></qt>"
-
-#: src/irc/channeloptionsdialog.cpp:706
-#, fuzzy
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>A protected channel requires users to enter a password "
-"in order to join.</p></qt>"
-msgstr ""
-"<qt><p>ទាំង​នេះត្រួត​ពិនិត្យ​​<em>របៀប​​</em> នៃ​ឆានែល​ ។  ការី​តែមួយ​ប៉ុណ្ណោះ​អាច​ប្តូរ​ទាំង​នេះ​ ។​ </"
-"p><p>អ្នក​ប្រើ​ទាមទារ​ឆានែល​ដែលបាន​ការ​ពារ​​ដើម្បី​បញ្ចូល​ពាក្យ​សម្ងាត់​​នៅក្នុង​លំដាប់​ត​ ។</p></qt>"
-
-#: src/irc/channeloptionsdialog.cpp:708
-#, fuzzy
-msgid ""
-"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
-"change these.</p><p>A channel that has a user <b>L</b>imit means that only "
-"that many users can be in the channel at any one time.  Some channels have a "
-"bot that sits in the channel and changes this automatically depending on how "
-"busy the channel is.</p></qt>"
-msgstr ""
-"<qt><p>ទាំងនេះ​ត្រួតពិនិត្យ​ <em>របៀប</em> នៃឆានែល​ ។  ការី​តែមួយ​ប៉ុណ្ណោះ​អា​ច​ប្តូរ​ទាំងនេះ​ ។ </"
-"p><p>ឆានែល​ដែលអ្នក​ប្រើ​ <b>កំណត់​</b> ដែល​មាន​ន័យ​ថា​ អ្នក​ប្រើ​ជាច្រើន​អាច​នៅក្នុង​ឆានែល​ពេល​តែមួយ​"
-" ។  ឆានែល​មួយ​ចំនួយ​មាន​អ្នក​លេង​លើ​បណ្តាញ​ដែលចូល​ក្នុង​ឆានែល​ និង​ប្តូរ​វា​ដោយ​ស្វ័យ​ប្រវត្តិ​អាស្រ័យ​ទៅលើ​ ភាព​​"
-"រវល់ឆានែលរបៀបណា​​ ។</p></qt>"
 
 #: src/irc/invitedialog.cpp:31
 #, fuzzy
@@ -1585,7 +1452,7 @@ msgctxt "network (nickname)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: src/irc/nicksonline.cpp:42 src/viewer/viewcontainer.cpp:2535
+#: src/irc/nicksonline.cpp:42 src/viewer/viewcontainer.cpp:2525
 #, fuzzy
 msgid "Watched Nicks Online"
 msgstr "បាន​មើល​សម្មតិនាម​លើ​បណ្តាញ​"
@@ -1887,7 +1754,7 @@ msgid "limited to %1 user"
 msgid_plural "limited to %1 users"
 msgstr[0] "ដែល​មាន​ព្រំ​ដែល​ទៅកាន់​អ្នក​ប្រើ​ %1 "
 
-#: src/irc/inputfilter.cpp:998 src/urlcatcher.cpp:138
+#: src/irc/inputfilter.cpp:998 src/urlcatcher.cpp:173
 msgid "URL"
 msgstr "URL"
 
@@ -4060,7 +3927,7 @@ msgid "Nickname error"
 msgstr "កំហុស​សម្មតិនាម"
 
 #: src/irc/server.cpp:1499 src/irc/server.cpp:3471 src/irc/server.cpp:3476
-#: src/application.cpp:370
+#: src/application.cpp:374
 msgid "D-Bus"
 msgstr "D-Bus"
 
@@ -4267,6 +4134,139 @@ msgstr ""
 #, fuzzy, kde-format
 msgid "Failed to parse DH1080_FINISH sent by %1. Key exchange failed."
 msgstr "បាន​បរាជ័យ​​ទៅ​ញែក​ DH1080_FINISH ដែល​បាន​ផ្ញើដោយ​​ %1។ បាន​បរាជ័យ​ផ្លាស់​ប្តូរ​សោរ ។"
+
+#: src/irc/channeloptionsdialog.cpp:32
+#, kde-format
+msgid "Channel Settings for %1"
+msgstr "កា​រកំណត់​ឆានែល​សម្រាប់ %1"
+
+#: src/irc/channeloptionsdialog.cpp:159
+msgid "&Hide Advanced Modes &lt;&lt;"
+msgstr "លាក់​របៀប​កម្រិត​ខ្ពស់ &lt;&lt;"
+
+#: src/irc/channeloptionsdialog.cpp:163
+msgid "&Show Advanced Modes &gt;&gt;"
+msgstr "បង្ហាញ​របៀប​កម្រិត​ខ្ពស់ &gt;&gt;"
+
+#: src/irc/channeloptionsdialog.cpp:299
+msgid "Parameter"
+msgstr "ប៉ារ៉ាម៉ែត្រ"
+
+#: src/irc/channeloptionsdialog.cpp:307
+#, kde-format
+msgctxt "<mode character> (<mode description>)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: src/irc/channeloptionsdialog.cpp:634
+#, fuzzy
+msgid "Timestamp"
+msgstr "ត្រា​ពេលវេលា​"
+
+#: src/irc/channeloptionsdialog.cpp:636
+msgid "Author"
+msgstr "អ្នក​និពន្ធ​"
+
+#: src/irc/channeloptionsdialog.cpp:697
+#, fuzzy
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>The <b>T</b>opic mode means that only the channel "
+"operator can change the topic for the channel.</p></qt>"
+msgstr ""
+"<qt><p>​ទាំង​នេះត្រួត​ពិនិត្យ <em>របៀប</em> ឆានែល ។  មាន​តែ​ការី​ប៉ុណ្ណោះ​អាច​ផ្លាស់ប្ដូរ​ ។</p><p> "
+"<b>ប្រធាន​បទ</b>មាន​ន័យ​មានតែ​ការីឆានែល​អាច​ផ្លាស់ប្ដូរ​ប្រធាន​បទ​សម្រាប់​ឆានែលបាន​ ។</p></qt>"
+
+#: src/irc/channeloptionsdialog.cpp:699
+#, fuzzy
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p><b>N</b>o messages from outside means users who are not "
+"in the channel cannot send messages for everybody in the channel to see.  "
+"Almost all channels have this set to prevent nuisance messages.</p></qt>"
+msgstr ""
+"<qt><p>ទាំង​នេះ​ត្រួត​ពិនិត្យ​ <em>របៀប​</em> របស់​ឆានែល​ ។  ការីតែមួយ​ប៉ុណ្ណោះអាច​ប្តូរ​ទាំងនេះ​បាន​ ។​ "
+"</p><p><b>គ្មាន​</b>សារ​ពី​ខាង​ក្រៅ​ មាន​ន័យ​ថាអ្នក​ប្រើ​ដែល​មិន​នៅក្នុង​ឆានែល​មិន​អាច​ផ្ញើ​សារ​សម្រាប់​អ្នក​"
+"រាល់​គ្នា​​ក្នុ​ងឆានែល​ដើម្បីមើលបាន​ឡើយ​​ ។  គ្រប់​ឆានែល​ភាគ​ច្រើន​មាន​ការ​កំណត់​នេះ​ដើម្បី​ការការ​ពារ​សារដែល​"
+"រំខាន​ ។</p></qt>"
+
+#: src/irc/channeloptionsdialog.cpp:701
+#, fuzzy
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>A <b>S</b>ecret channel will not show up in the channel "
+"list, nor will any user be able to see that you are in the channel with the "
+"<em>WHOIS</em> command or anything similar.  Only the people that are in the "
+"same channel will know that you are in this channel, if this mode is set.</"
+"p></qt>"
+msgstr ""
+"<qt><p>ទាំង​នេះ​ត្រួតពិនិត្យ​ <em>របៀប​</em> នៃ​ឆានែល​ ។  ការីតែ​មួយ​ប៉ុណ្ណោះ​អាច​ប្តូរ​ទាំង​នេះ​បាន​ ។ "
+"</p><p>ឆានែល​ <b>សម្ងាត់​</b> នឹង​មិន​បង្ហាញ​ក្នុង​​បញ្ជី​ឆានែល​ នឹង​គ្មាន​អ្នក​ប្រើ​អាចដឹងថា ​អ្នក​នៅក្នុង​"
+"ឆានែល​ជាមួយ​ ​<em>ជាអ្នក​​ណា​​</em>ពាក្យ​បញ្ជា ឬប្រហាក់​ប្រហែល​វត្ថុអ្វី​មួយ​ ។  មាន​មនុស្សតែម្នាក់​ប៉ុណ្ណោះ​"
+"ដែលមាន​ក្នុង​ឆានែល​ដូច​គ្នា​ នឹង​ដឹង​ថា​អ្នក​នៅក្នុង​ឆានែល​នេះ​ ប្រ​សិន​បើ​ របៀប​នេះ​ត្រូវ​បាន​កំណត់​ ។</p></qt>"
+
+#: src/irc/channeloptionsdialog.cpp:703
+#, fuzzy
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>An <b>I</b>nvite only channel means that people can only "
+"join the channel if they are invited.  To invite someone, a channel operator "
+"needs to issue the command <em>/invite nick</em> from within the channel.</"
+"p></qt>"
+msgstr ""
+"<qt><p>ទាំង​នេះត្រួតពិនិត្យ​ <em>របៀប​</em> នៃឆានែល​ ។  ការី​តែមួយ​ប៉ុណ្ណោះ​អាចប្តូរ​ទាំង​នេះ​បាន​ ។ "
+"</p><p>អញ្ជើញ​ <b>ឆានែល</b>តែមួយប៉ុណ្ណោះ​ មាន​ន័យថា​អ្នក​អាច​ត​បានតែ​ឆានែល​ ប្រ​សិន​បើ​ ពួកវា​ត្រូវ​បាន​"
+"អញ្ជើញ ។  ដើម្បី​អញ្ជើញ​អ្នក​ណាម្នាក់​ ត្រូវ​ការ​ការី​ឆានែល​ដើម្បី​ ចេញ​ពាក្យ​បញ្ជា​ <em>/អញ្ជើញ​សម្មតិនាម​"
+"</em> ពី​ខាងក្រៅ​ឆានែល​ ។</p></qt>"
+
+#: src/irc/channeloptionsdialog.cpp:705
+#, fuzzy
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>A <b>P</b>rivate channel is shown in a listing of all "
+"channels, but the topic is not shown.  A user's <em>WHOIS</em> may or may "
+"not show them as being in a private channel depending on the IRC server.</"
+"p></qt>"
+msgstr ""
+"<qt><p>ទាំងនេះ​ត្រួត​ពិនិត្យ​ <em>របៀប​</em> នៃ​ឆានែល ។  ការី​តែមួយ​ប៉ុណ្តោះ​អាច​ប្តូរ​ទាំង​នេះ​ ។ </"
+"p><p>ឆានែល​ <b>ឯកជន​</b> ត្រូវ​បាន​បង្ហាញ​ក្នុង​បញ្ជី​របស់​ឆានែល​ទាំង​អស់​ ប៉ុន្តែ​ប្រធាន​បទមិន​ត្រូវ​បាន​"
+"បង្ហាញ​ឡើយ​ ។  អ្នក​ប្រើ​ <em>ជាអ្នក​ណា​</em> អាច​ ឬ​មិន​អាច​ បង្ហាញ​វា​ក្នុង​ឆានែល​ឯកជន​ផ្អែក​ទៅ​លើ​"
+"ម៉ាស៊ីន​បម្រើ​ជជែក​កំសាន្ត​តាម​អ៊ិន​ធឺណិត​ ។</p></qt>"
+
+#: src/irc/channeloptionsdialog.cpp:707
+#, fuzzy
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>A <b>M</b>oderated channel is one where only operators, "
+"half-operators and those with voice can talk.</p></qt>"
+msgstr ""
+"<qt><p>ទាំង​នេះ​​ត្រួត​ពិនិត្យ​​ <em>របៀប​</em> នៃ​ឆានែល​ ។  ការី​តែមួយ​ប៉ុណ្ណោះ​អាច​ប្តូរ​ទាំងនេះ​ ។ </"
+"p><p>បន្ថយ​ <b>ឆានែល​</b> មួយ​ដែល​ការីតែមួយ​ប៉ុណ្ណោះ​ ពាក្យ​កណ្តាល​ការី​ និង​ជាមួយ​សំឡេង​អាច​និយាយបាន​ទាំង​"
+"នោះ​​ ។</p></qt>"
+
+#: src/irc/channeloptionsdialog.cpp:709
+#, fuzzy
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>A protected channel requires users to enter a password "
+"in order to join.</p></qt>"
+msgstr ""
+"<qt><p>ទាំង​នេះត្រួត​ពិនិត្យ​​<em>របៀប​​</em> នៃ​ឆានែល​ ។  ការី​តែមួយ​ប៉ុណ្ណោះ​អាច​ប្តូរ​ទាំង​នេះ​ ។​ </"
+"p><p>អ្នក​ប្រើ​ទាមទារ​ឆានែល​ដែលបាន​ការ​ពារ​​ដើម្បី​បញ្ចូល​ពាក្យ​សម្ងាត់​​នៅក្នុង​លំដាប់​ត​ ។</p></qt>"
+
+#: src/irc/channeloptionsdialog.cpp:711
+#, fuzzy
+msgid ""
+"<qt><p>These control the <em>mode</em> of the channel.  Only an operator can "
+"change these.</p><p>A channel that has a user <b>L</b>imit means that only "
+"that many users can be in the channel at any one time.  Some channels have a "
+"bot that sits in the channel and changes this automatically depending on how "
+"busy the channel is.</p></qt>"
+msgstr ""
+"<qt><p>ទាំងនេះ​ត្រួតពិនិត្យ​ <em>របៀប</em> នៃឆានែល​ ។  ការី​តែមួយ​ប៉ុណ្ណោះ​អា​ច​ប្តូរ​ទាំងនេះ​ ។ </"
+"p><p>ឆានែល​ដែលអ្នក​ប្រើ​ <b>កំណត់​</b> ដែល​មាន​ន័យ​ថា​ អ្នក​ប្រើ​ជាច្រើន​អាច​នៅក្នុង​ឆានែល​ពេល​តែមួយ​"
+" ។  ឆានែល​មួយ​ចំនួយ​មាន​អ្នក​លេង​លើ​បណ្តាញ​ដែលចូល​ក្នុង​ឆានែល​ និង​ប្តូរ​វា​ដោយ​ស្វ័យ​ប្រវត្តិ​អាស្រ័យ​ទៅលើ​ ភាព​​"
+"រវល់ឆានែលរបៀបណា​​ ។</p></qt>"
 
 #: src/konsolepanel.cpp:27 src/viewer/viewcontainer.cpp:2111
 #: src/viewer/viewcontainer.cpp:2112
@@ -4786,7 +4786,7 @@ msgstr "មើល​​ OSD ជាមុន​ - អូស​ទៅឃ្លា�
 msgid "Edit Multiline Paste"
 msgstr "កែ​សម្រួល​បិទ​ភ្ជាប់ជួរ​ច្រើន"
 
-#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2249
+#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2239
 #, fuzzy
 msgid "Raw Log"
 msgstr "កំណត់​ហេតុ​ដើម​"
@@ -4931,6 +4931,113 @@ msgstr "ប្តូរ​ព័ត៌មាន​ជួន​ដំណឹង​
 msgid "Konversation"
 msgstr "Konversation"
 
+#: src/viewer/statuspanel.cpp:232
+#, fuzzy, kde-format
+msgid ""
+"Do you really want to close '%1'?\n"
+"\n"
+" All associated tabs will be closed as well."
+msgstr ""
+"តើ​អ្នក​ពិត​ជាចង់​បិទ '%1' ឬ ?\n"
+"\n"
+" គ្រប់​ផ្ទាំង​​ដែល​បាន​ភ្ជាប់​នឹង​ត្រូវ​បាន​បិទដូច​គ្នា​ ។"
+
+#: src/viewer/statuspanel.cpp:233
+msgid "Close Tab"
+msgstr "បិទ​ផ្ទាំង​"
+
+#: src/viewer/statuspanel.cpp:242
+#, fuzzy, kde-format
+msgid ""
+"Do you want to disconnect from '%1'?\n"
+"\n"
+" All associated tabs will be closed as well."
+msgstr ""
+"តើ​អ្នក​ពិត​ជា​ចង់ផ្តាច់​ចេញ​ពី​​ '%1' ឬ ?\n"
+"\n"
+" គ្រប់​ផ្ទាំង​ដែល​បាន​ភ្ជាប់​នឹង​ត្រូ​វ​បាន​បិទ​ដូច​គ្នា​ ។"
+
+#: src/viewer/statuspanel.cpp:243
+msgid "Disconnect From Server"
+msgstr "ផ្តាច់​ចេញ​ពី​ម៉ាស៊ីន​បម្រើ​"
+
+#: src/viewer/statuspanel.cpp:244
+msgid "Disconnect"
+msgstr "ផ្តាច់​"
+
+#: src/viewer/chatwindow.cpp:423
+#, fuzzy, kde-format
+msgid ""
+"\n"
+"*** Logfile started\n"
+"*** on %1\n"
+"\n"
+msgstr ""
+"\n"
+"*** បានចាប់​ផ្តើម​ឯកសារកំណត់​ហេតុ​​\n"
+"*** លើ​ %1\n"
+"\n"
+
+#: src/viewer/ircview.cpp:194 src/viewer/topiclabel.cpp:139
+#, fuzzy
+msgid "Copy Link Address"
+msgstr "ចម្លង​អាសយ​ដ្ឋានដំណ"
+
+#: src/viewer/ircview.cpp:201 src/viewer/topiclabel.cpp:140
+#, fuzzy
+msgid "Add to Bookmarks"
+msgstr "បន្ថែមដើម្បី​ចំណាំ​"
+
+#: src/viewer/ircview.cpp:208 src/viewer/topiclabel.cpp:141
+msgid "Save Link As..."
+msgstr "រក្សាទុក​ដំណ​ជា​..."
+
+#: src/viewer/ircview.cpp:220
+msgid "&Copy"
+msgstr "ចម្លង​"
+
+#: src/viewer/ircview.cpp:227
+msgid "Select All"
+msgstr "ជ្រើស​ទាំង​អស់​"
+
+#: src/viewer/ircview.cpp:233 src/viewer/viewcontainer.cpp:546
+msgid "Find Text..."
+msgstr "ស្វែង​រក​អត្ថបទ​..."
+
+#: src/viewer/ircview.cpp:1347
+msgid "Open Query"
+msgstr "បើក​សំណួរ​"
+
+#: src/viewer/ircview.cpp:1394 src/viewer/topiclabel.cpp:128
+#: src/mainwindow.cpp:433
+msgid "&Join Channel..."
+msgstr "ត​ឆានែល​..."
+
+#: src/viewer/ircview.cpp:1397 src/viewer/topiclabel.cpp:130
+#, fuzzy
+msgid "Get &user list"
+msgstr "យក​​បញ្ជី​អ្នក​ប្រើ​"
+
+#: src/viewer/ircview.cpp:1399 src/viewer/topiclabel.cpp:131
+#, fuzzy
+msgid "Get &topic"
+msgstr "យក​ប្រធាន​បទ​"
+
+#: src/viewer/ircview.cpp:1542 src/viewer/topiclabel.cpp:328
+#: src/urlcatcher.cpp:277
+msgid "Save link as"
+msgstr "រក្សា​ទុក​ដំណ​ជា​"
+
+#: src/viewer/ircview.cpp:1613
+#, kde-format
+msgid "Open a query with %1"
+msgstr "បើក​សំណួរ​ជាមួយ​ %1"
+
+#: src/viewer/ircview.cpp:1634 src/viewer/topiclabel.cpp:273
+#, fuzzy, kde-format
+msgid "Join the channel %1"
+msgstr "ត​ឆានែល %1"
+
 #: src/viewer/viewcontainer.cpp:212 src/mainwindow.cpp:292
 #, fuzzy
 msgid "Move Tab Up"
@@ -4952,10 +5059,6 @@ msgstr "ផ្លាស់​ទី​ផ្ទាំង​ទៅ​ឆ្វេ
 #, fuzzy
 msgid "Move Tab Right"
 msgstr "ផ្លាស់​ទី​​ផ្ទាំង​ទៅស្តាំ"
-
-#: src/viewer/viewcontainer.cpp:546 src/viewer/ircview.cpp:233
-msgid "Find Text..."
-msgstr "ស្វែង​រក​អត្ថបទ​..."
 
 #: src/viewer/viewcontainer.cpp:548
 #, fuzzy
@@ -5028,14 +5131,12 @@ msgstr "ស្វែង​រក​ព័ត៌មាន​អត្ថបទ​
 msgid "Logfile of %1"
 msgstr "ឯកសារ​កំណត់ហេតុរបស់​ %1"
 
-#. i18n: file: src/urlcatcherui.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, URLCatcherUI)
-#: src/viewer/viewcontainer.cpp:2123 src/urlcatcher.cpp:148 rc.cpp:1951
+#: src/viewer/viewcontainer.cpp:2122 src/urlcatcher.cpp:79
 #, fuzzy
 msgid "URL Catcher"
 msgstr "អ្នក​ចាប់​របស់​ URL "
 
-#: src/viewer/viewcontainer.cpp:2493
+#: src/viewer/viewcontainer.cpp:2483
 #, fuzzy
 msgid ""
 "Using this function may result in a lot of network traffic. If your "
@@ -5045,12 +5146,12 @@ msgstr ""
 "ការ​ប្រើ​មុខងារ​នេះ​អាចមាន​លទ្ធផល​នៅក្នុងចរាចរ​របស់​បណ្តាញ​ជាច្រើន​ ។ ប្រសិន​បើ​ ការតភ្ជាប់​របស់​អ្នក​"
 "មិនលឿន​គ្រប់​គ្រាន់​ វា​អាច​ធ្វើ​ទៅ​បានដែល​​ម៉ាស៊ីន​ភ្ញៀវរបស់​អ្នកនឹង​ត្រូវ​បានផ្តាច់​ដោយ​ម៉ាស៊ីន​បម្រើ​ ។"
 
-#: src/viewer/viewcontainer.cpp:2497
+#: src/viewer/viewcontainer.cpp:2487
 #, fuzzy
 msgid "Channel List Warning"
 msgstr "ការ​ព្រមាន​បញ្ជី​ឆានែល​"
 
-#: src/viewer/viewcontainer.cpp:2521
+#: src/viewer/viewcontainer.cpp:2511
 #, fuzzy
 msgid ""
 "To know which server to display the channel list for, the list can only be "
@@ -5058,229 +5159,6 @@ msgid ""
 msgstr ""
 "ដឹង​ម៉ាស៊ីន​បម្រើ​ណាមួយ​​ត្រូវ​បង្ហាញ​បញ្ជី​ឆានែល​សម្រាប់​ បញ្ជី​​អាច​ត្រូវ​បាន​បើក​ចេញ​ពីសំណួរ​ ឆានែល​ ឬ​បង្អួច​ស្ថាន​ភាព​​"
 " ។"
-
-#: src/viewer/statuspanel.cpp:232
-#, fuzzy, kde-format
-msgid ""
-"Do you really want to close '%1'?\n"
-"\n"
-" All associated tabs will be closed as well."
-msgstr ""
-"តើ​អ្នក​ពិត​ជាចង់​បិទ '%1' ឬ ?\n"
-"\n"
-" គ្រប់​ផ្ទាំង​​ដែល​បាន​ភ្ជាប់​នឹង​ត្រូវ​បាន​បិទដូច​គ្នា​ ។"
-
-#: src/viewer/statuspanel.cpp:233
-msgid "Close Tab"
-msgstr "បិទ​ផ្ទាំង​"
-
-#: src/viewer/statuspanel.cpp:242
-#, fuzzy, kde-format
-msgid ""
-"Do you want to disconnect from '%1'?\n"
-"\n"
-" All associated tabs will be closed as well."
-msgstr ""
-"តើ​អ្នក​ពិត​ជា​ចង់ផ្តាច់​ចេញ​ពី​​ '%1' ឬ ?\n"
-"\n"
-" គ្រប់​ផ្ទាំង​ដែល​បាន​ភ្ជាប់​នឹង​ត្រូ​វ​បាន​បិទ​ដូច​គ្នា​ ។"
-
-#: src/viewer/statuspanel.cpp:243
-msgid "Disconnect From Server"
-msgstr "ផ្តាច់​ចេញ​ពី​ម៉ាស៊ីន​បម្រើ​"
-
-#: src/viewer/statuspanel.cpp:244
-msgid "Disconnect"
-msgstr "ផ្តាច់​"
-
-#: src/viewer/chatwindow.cpp:423
-#, fuzzy, kde-format
-msgid ""
-"\n"
-"*** Logfile started\n"
-"*** on %1\n"
-"\n"
-msgstr ""
-"\n"
-"*** បានចាប់​ផ្តើម​ឯកសារកំណត់​ហេតុ​​\n"
-"*** លើ​ %1\n"
-"\n"
-
-#: src/viewer/ircview.cpp:194 src/viewer/topiclabel.cpp:139
-#, fuzzy
-msgid "Copy Link Address"
-msgstr "ចម្លង​អាសយ​ដ្ឋានដំណ"
-
-#: src/viewer/ircview.cpp:201 src/viewer/topiclabel.cpp:140
-#, fuzzy
-msgid "Add to Bookmarks"
-msgstr "បន្ថែមដើម្បី​ចំណាំ​"
-
-#: src/viewer/ircview.cpp:208 src/viewer/topiclabel.cpp:141
-msgid "Save Link As..."
-msgstr "រក្សាទុក​ដំណ​ជា​..."
-
-#: src/viewer/ircview.cpp:220
-msgid "&Copy"
-msgstr "ចម្លង​"
-
-#: src/viewer/ircview.cpp:227
-msgid "Select All"
-msgstr "ជ្រើស​ទាំង​អស់​"
-
-#: src/viewer/ircview.cpp:1347
-msgid "Open Query"
-msgstr "បើក​សំណួរ​"
-
-#: src/viewer/ircview.cpp:1394 src/viewer/topiclabel.cpp:128
-#: src/mainwindow.cpp:433
-msgid "&Join Channel..."
-msgstr "ត​ឆានែល​..."
-
-#: src/viewer/ircview.cpp:1397 src/viewer/topiclabel.cpp:130
-#, fuzzy
-msgid "Get &user list"
-msgstr "យក​​បញ្ជី​អ្នក​ប្រើ​"
-
-#: src/viewer/ircview.cpp:1399 src/viewer/topiclabel.cpp:131
-#, fuzzy
-msgid "Get &topic"
-msgstr "យក​ប្រធាន​បទ​"
-
-#: src/viewer/ircview.cpp:1542 src/viewer/topiclabel.cpp:328
-#: src/urlcatcher.cpp:464
-msgid "Save link as"
-msgstr "រក្សា​ទុក​ដំណ​ជា​"
-
-#: src/viewer/ircview.cpp:1613
-#, kde-format
-msgid "Open a query with %1"
-msgstr "បើក​សំណួរ​ជាមួយ​ %1"
-
-#: src/viewer/ircview.cpp:1634 src/viewer/topiclabel.cpp:273
-#, fuzzy, kde-format
-msgid "Join the channel %1"
-msgstr "ត​ឆានែល %1"
-
-#: src/urlcatcher.cpp:136
-msgid "From"
-msgstr "ពី​"
-
-#: src/urlcatcher.cpp:140
-msgid "Date"
-msgstr "ការ​បរិច្ឆេទ​"
-
-#: src/urlcatcher.cpp:154
-msgctxt "open url"
-msgid "&Open"
-msgstr "បើក​"
-
-#: src/urlcatcher.cpp:155
-#, fuzzy
-msgid "Open link in external browser."
-msgstr "បើក​ដំណនៅក្នុង​កម្មវិធី​រុករកខាង​​ក្រៅ ។"
-
-#: src/urlcatcher.cpp:156
-#, fuzzy
-msgid ""
-"<p>Select a <b>URL</b> above, then click this button to launch the "
-"application associated with the mimetype of the URL.</p>-<p>In the "
-"<b>Settings</b>, under <b>Behavior</b> | <b>General</b>, you can specify a "
-"custom web browser for web URLs.</p>"
-msgstr ""
-"<p>ជ្រើស​​ <b>URL</b> ខាង​លើ​​ បន្ទាប់​​មក​ ចុច​ប៉ូតុង​នេះ​ដើម្បី​ចាប់​ផ្តើម​ ​​​កម្ម​វិធីដែល​បាន​ភ្ជាប់​​ជាមួយប្រ​"
-"ភេទត្រាប់​របស់​ URL ។</p>-<p>ក្នុង​ <b>ការ​កំណត់​</b> នៅក្រោម​ <b>ឥរិយាបថ</b> ខ្ញុំ <b>ជាទូទៅ​</"
-"b> អ្នក​អាចបញ្ជាក់​ កម្មវិធី​រុករក​បណ្តាញអតិថិជន​សម្រាប់​ URL បណ្តាញ​ ។</p>"
-
-#: src/urlcatcher.cpp:158
-msgid "&Save..."
-msgstr "រក្សាទុក​..."
-
-#: src/urlcatcher.cpp:159
-#, fuzzy
-msgid "Save selected link to the disk."
-msgstr "រក្សាទុក​ដំណ​ដែល​បាន​ជ្រើសទៅកាន់ថាស​ ។"
-
-#: src/urlcatcher.cpp:162
-msgctxt "copy url"
-msgid "&Copy"
-msgstr "ចម្លង​"
-
-#: src/urlcatcher.cpp:163
-#, fuzzy
-msgid "Copy link address to the clipboard."
-msgstr "ចម្លង​អាសយ​ដ្ឋាន​ដំណ​ទៅកាន់ក្ដារ​តម្បៀត​ខ្ទាស់ ។"
-
-#: src/urlcatcher.cpp:164
-#, fuzzy
-msgid ""
-"Select a <b>URL</b> above, then click this button to copy the URL to the "
-"clipboard."
-msgstr ""
-"ជ្រើស​​ <b>URL</b> ខាង​លើ បន្ទាប់​មក​ ចុច​ប៊ូតុង​​នេះ​ដើម្បី​ចម្លង​​ URL ទៅកាន់​ ក្ដារ​តម្បៀត​ខ្ទាស់ ។"
-
-#: src/urlcatcher.cpp:166
-msgctxt "delete url"
-msgid "&Delete"
-msgstr "លុប​"
-
-#: src/urlcatcher.cpp:167
-#, fuzzy
-msgid ""
-"Select a <b>URL</b> above, then click this button to delete the URL from the "
-"list."
-msgstr "ជ្រើស​​ <b>URL</b> ខាង​​លើ​ បន្ទាប់​មក​ចុច​ប៊ូតុង​នេះ​ដើម្បី​លុប​ URL ចេញ​ពី​បញ្ជី​ ។"
-
-#: src/urlcatcher.cpp:168
-#, fuzzy
-msgid "Delete selected link."
-msgstr "លុប​ដំណ​ដែល​បាន​ជ្រើស​ ។"
-
-#: src/urlcatcher.cpp:171
-msgctxt "save url list"
-msgid "&Save List..."
-msgstr "រក្សា​ទុក​បញ្ជី​..."
-
-#: src/urlcatcher.cpp:172
-msgid "Save list."
-msgstr "រក្សាទុក​បញ្ជី​ ។"
-
-#: src/urlcatcher.cpp:173
-#, fuzzy
-msgid "Click to save the entire list to a file."
-msgstr "ចុច​រក្សាទុក​បញ្ជីទាំងមូលទៅកាន់​ឯកសារ ។"
-
-#: src/urlcatcher.cpp:175
-msgctxt "clear url list"
-msgid "&Clear List"
-msgstr "ជម្រះ​បញ្ជី​"
-
-#: src/urlcatcher.cpp:176
-msgid "Clear list."
-msgstr "ជម្រះ​បញ្ជី​ ។​"
-
-#: src/urlcatcher.cpp:177
-#, fuzzy
-msgid "Click to erase the entire list."
-msgstr "ចុចលុប​បញ្ជី​ទាំងមូល​ ។"
-
-#: src/urlcatcher.cpp:180
-#, fuzzy
-msgid "Add Bookmark..."
-msgstr "បន្ថែមចំណាំ..."
-
-#: src/urlcatcher.cpp:376
-msgid "Save URL List"
-msgstr "រក្សាទុក​បញ្ជី​របស់​ URL"
-
-#: src/urlcatcher.cpp:400
-#, fuzzy, kde-format
-msgid ""
-"Konversation URL List: %1\n"
-"\n"
-msgstr ""
-"បញ្ជី​ URL Konversation ៖ %1\n"
-"\n"
 
 #: src/main.cpp:39
 #, fuzzy
@@ -6242,6 +6120,150 @@ msgstr "ការ​កំណត់​អត្តសញ្ញាណ"
 #, fuzzy
 msgid "Edit Identity..."
 msgstr "កែសម្រួល​អត្តសញ្ញាណ​..."
+
+#: src/urlcatcher.cpp:100
+msgctxt "open url"
+msgid "&Open"
+msgstr "បើក​"
+
+#: src/urlcatcher.cpp:103
+#, fuzzy
+msgid "Open URLs in external browser."
+msgstr "បើក​ដំណនៅក្នុង​កម្មវិធី​រុករកខាង​​ក្រៅ ។"
+
+#: src/urlcatcher.cpp:104
+#, fuzzy
+msgid ""
+"<p>Select one or several <b>URLs</b> below, then click this button to launch "
+"the application associated with the mimetype of the URL.</p>-<p>In the "
+"<b>Settings</b>, under <b>Behavior</b> | <b>General</b>, you can specify a "
+"custom web browser for web URLs.</p>"
+msgstr ""
+"<p>ជ្រើស​​ <b>URL</b> ខាង​លើ​​ បន្ទាប់​​មក​ ចុច​ប៉ូតុង​នេះ​ដើម្បី​ចាប់​ផ្តើម​ ​​​កម្ម​វិធីដែល​បាន​ភ្ជាប់​​ជាមួយប្រ​"
+"ភេទត្រាប់​របស់​ URL ។</p>-<p>ក្នុង​ <b>ការ​កំណត់​</b> នៅក្រោម​ <b>ឥរិយាបថ</b> ខ្ញុំ <b>ជាទូទៅ​</"
+"b> អ្នក​អាចបញ្ជាក់​ កម្មវិធី​រុករក​បណ្តាញអតិថិជន​សម្រាប់​ URL បណ្តាញ​ ។</p>"
+
+#: src/urlcatcher.cpp:107
+msgid "&Save..."
+msgstr "រក្សាទុក​..."
+
+#: src/urlcatcher.cpp:110
+#, fuzzy
+msgid "Save selected URLs to the disk."
+msgstr "រក្សាទុក​ដំណ​ដែល​បាន​ជ្រើសទៅកាន់ថាស​ ។"
+
+#: src/urlcatcher.cpp:113
+#, fuzzy
+msgid "Add Bookmark..."
+msgstr "បន្ថែមចំណាំ..."
+
+#: src/urlcatcher.cpp:121
+msgctxt "copy url"
+msgid "&Copy"
+msgstr "ចម្លង​"
+
+#: src/urlcatcher.cpp:124
+#, fuzzy
+msgid "Copy URLs to the clipboard."
+msgstr "ចម្លង​អាសយ​ដ្ឋាន​ដំណ​ទៅកាន់ក្ដារ​តម្បៀត​ខ្ទាស់ ។"
+
+#: src/urlcatcher.cpp:125
+#, fuzzy
+msgid ""
+"Select one or several <b>URLs</b> above, then click this button to copy them "
+"to the clipboard."
+msgstr ""
+"ជ្រើស​​ <b>URL</b> ខាង​លើ បន្ទាប់​មក​ ចុច​ប៊ូតុង​​នេះ​ដើម្បី​ចម្លង​​ URL ទៅកាន់​ ក្ដារ​តម្បៀត​ខ្ទាស់ ។"
+
+#: src/urlcatcher.cpp:128
+msgctxt "delete url"
+msgid "&Delete"
+msgstr "លុប​"
+
+#: src/urlcatcher.cpp:131
+#, fuzzy
+msgid ""
+"Select one or several <b>URLs</b> above, then click this button to delete "
+"them from the list."
+msgstr "ជ្រើស​​ <b>URL</b> ខាង​​លើ​ បន្ទាប់​មក​ចុច​ប៊ូតុង​នេះ​ដើម្បី​លុប​ URL ចេញ​ពី​បញ្ជី​ ។"
+
+#: src/urlcatcher.cpp:132
+#, fuzzy
+msgid "Delete selected link."
+msgstr "លុប​ដំណ​ដែល​បាន​ជ្រើស​ ។"
+
+#: src/urlcatcher.cpp:138
+msgctxt "save url list"
+msgid "&Save List..."
+msgstr "រក្សា​ទុក​បញ្ជី​..."
+
+#: src/urlcatcher.cpp:140
+msgid "Save list."
+msgstr "រក្សាទុក​បញ្ជី​ ។"
+
+#: src/urlcatcher.cpp:141
+#, fuzzy
+msgid "Click to save the entire list to a file."
+msgstr "ចុច​រក្សាទុក​បញ្ជីទាំងមូលទៅកាន់​ឯកសារ ។"
+
+#: src/urlcatcher.cpp:144
+msgctxt "clear url list"
+msgid "&Clear List"
+msgstr "ជម្រះ​បញ្ជី​"
+
+#: src/urlcatcher.cpp:146
+msgid "Clear list."
+msgstr "ជម្រះ​បញ្ជី​ ។​"
+
+#: src/urlcatcher.cpp:147
+#, fuzzy
+msgid "Click to erase the entire list."
+msgstr "ចុចលុប​បញ្ជី​ទាំងមូល​ ។"
+
+#: src/urlcatcher.cpp:158
+#, fuzzy
+msgid ""
+"List of Uniform Resource Locators mentioned in any of the Konversation "
+"windows during this session."
+msgstr ""
+"បញ្ជីរបស់អ្នក​រកឃើញ​ធនធាន​ឯកសណ្ឋានដែល​រៀបរាប់​ក្នុងអំឡុងពេល​វីនដូ​របស់​ Konversation សម័យ​នេះ​ ។"
+
+#: src/urlcatcher.cpp:171
+msgid "From"
+msgstr "ពី​"
+
+#: src/urlcatcher.cpp:175
+msgid "Date"
+msgstr "ការ​បរិច្ឆេទ​"
+
+#: src/urlcatcher.cpp:234
+msgid ""
+"You have selected more than one URL. Do you really want to open several URLs "
+"at once?"
+msgstr ""
+
+#: src/urlcatcher.cpp:235 src/urlcatcher.cpp:261
+msgid "Open URLs"
+msgstr ""
+
+#: src/urlcatcher.cpp:259
+msgid ""
+"You have selected more than one URL. A file dialog to set the destination "
+"will open for each. Do you really want to save several URLs at once?"
+msgstr ""
+
+#: src/urlcatcher.cpp:371
+msgid "Save URL List"
+msgstr "រក្សាទុក​បញ្ជី​របស់​ URL"
+
+#: src/urlcatcher.cpp:398
+#, fuzzy, kde-format
+msgid ""
+"Konversation URL List: %1\n"
+"\n"
+msgstr ""
+"បញ្ជី​ URL Konversation ៖ %1\n"
+"\n"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -9673,16 +9695,6 @@ msgstr "មុន"
 #: rc.cpp:1948
 msgid "&Options"
 msgstr "ជម្រើស​"
-
-#. i18n: file: src/urlcatcherui.ui:32
-#. i18n: ectx: property (whatsThis), widget (QTreeView, m_urlListView)
-#: rc.cpp:1954
-#, fuzzy
-msgid ""
-"List of Uniform Resource Locators mentioned in any of the Konversation "
-"windows during this session."
-msgstr ""
-"បញ្ជីរបស់អ្នក​រកឃើញ​ធនធាន​ឯកសណ្ឋានដែល​រៀបរាប់​ក្នុងអំឡុងពេល​វីនដូ​របស់​ Konversation សម័យ​នេះ​ ។"
 
 #, fuzzy
 #~ msgid "Show raw mode characters"
