@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi_imap_resource\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-09 05:28+0200\n"
+"POT-Creation-Date: 2010-08-11 05:11+0200\n"
 "PO-Revision-Date: 2009-06-15 08:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -29,8 +29,8 @@ msgstr "មិនអាច​បន្ថែម​ថត IMAP '%1' សម្រ�
 #| "Failed to mark the message from '%1' for deletion on the IMAP server. It "
 #| "will reappear on next sync."
 msgid ""
-"Failed to subscribe to the collection '%1' on the IMAP server. It will "
-"disappear on next sync. Use the subscription dialog to overcome that"
+"Failed to subscribe to the folder '%1' on the IMAP server. It will disappear "
+"on next sync. Use the subscription dialog to overcome that"
 msgstr ""
 "បាន​បរាជ័យ​ក្នុងការ​សម្គាល់​សារ​ពី '%1' សម្រាប់​លុប​នៅ​លើ​ម៉ាស៊ីន​បម្រើ IMAP ។ វា​នឹង​បង្ហាញ​ឡើង​វិញ​នៅ​​ពេល​"
 "ធ្វើសមកាលកម្ម​បន្ទាប់ ។"
@@ -39,12 +39,12 @@ msgstr ""
 msgid "Could not determine the UID for the newly created message on the server"
 msgstr ""
 
-#: changecollectiontask.cpp:47
+#: changecollectiontask.cpp:48
 #, kde-format
 msgid "Cannot modify IMAP folder '%1', it does not exist on the server."
 msgstr "មិន​អាច​កែប្រែ​ថត IMAP '%1' បាន​ទេ វា​មិនទាន់មាន​នៅ​លើម៉ាស៊ីនបម្រើ​ទេ ។"
 
-#: changecollectiontask.cpp:60
+#: changecollectiontask.cpp:61
 #, kde-format
 msgid ""
 "ACLs for '%1' need to be retrieved from the IMAP server first. Skipping ACL "
@@ -55,13 +55,25 @@ msgstr "ACLs សម្រាប់ '%1' តម្រូវ​ឲ្យ​ទៅ�
 msgid "Failed to rename the folder, restoring folder list."
 msgstr "បរាជ័យ​ក្នុង​ការ​ប្ដូរ​ឈ្មោះ​ថត ដោយ​ស្ដារ​បញ្ជី​ថត​ឡើងវិញ ។"
 
-#: changecollectiontask.cpp:251
+#: changecollectiontask.cpp:258
+#, fuzzy, kde-format
+#| msgid ""
+#| "Failed to mark the message from '%1' for deletion on the IMAP server. It "
+#| "will reappear on next sync."
+msgid ""
+"Failed to subscribe to the renamed folder '%1' on the IMAP server. It will "
+"disappear on next sync. Use the subscription dialog to overcome that"
+msgstr ""
+"បាន​បរាជ័យ​ក្នុងការ​សម្គាល់​សារ​ពី '%1' សម្រាប់​លុប​នៅ​លើ​ម៉ាស៊ីន​បម្រើ IMAP ។ វា​នឹង​បង្ហាញ​ឡើង​វិញ​នៅ​​ពេល​"
+"ធ្វើសមកាលកម្ម​បន្ទាប់ ។"
+
+#: changecollectiontask.cpp:269
 #, fuzzy, kde-format
 #| msgid "Failed to write the new ACLs for '%1' on the IMAP server. %2"
 msgid "Failed to write some ACLs for '%1' on the IMAP server. %2"
 msgstr "បានបរាជ័យ​ក្នុងការ​សរសេរ​ ACLs ថ្មី​សម្រាប់ '%1' នៅ​លើ​ម៉ាស៊ីន​បម្រើ IMAP ។ %2"
 
-#: changecollectiontask.cpp:261
+#: changecollectiontask.cpp:279
 #, fuzzy, kde-format
 #| msgid "Failed to write the new annotations for '%1' on the IMAP server. %2"
 msgid "Failed to write some annotations for '%1' on the IMAP server. %2"
@@ -777,7 +789,7 @@ msgstr "ថត​រួម"
 msgid "No message retrieved, server reply was empty."
 msgstr "មិន​ទទួល​បាន​សារ​ទេ ចម្លើយ​ម៉ាស៊ីន​បម្រើ​គឺ​ទទេ ។"
 
-#: sessionpool.cpp:205 sessionpool.cpp:325
+#: sessionpool.cpp:205 sessionpool.cpp:331
 #, kde-format
 msgid ""
 "Could not connect to the IMAP-server %1.\n"
@@ -792,19 +804,19 @@ msgstr ""
 msgid "Could not create another extra connection to the IMAP-server %1."
 msgstr "មិនអាច​តភ្ជាប់​ទៅកាន់​ម៉ាស៊ីន​បម្រើ IMAP %1 ទេ ។"
 
-#: sessionpool.cpp:261
+#: sessionpool.cpp:267
 #, fuzzy
 #| msgid "Could not read the password: user rejected wallet access."
 msgid "Could not read the password: user rejected wallet access"
 msgstr "មិនអាច​អាន​ពាក្យ​សម្ងាត់​បាន​ទេ ៖ អ្នកប្រើបាន​ច្រាន​ការ​ចូល​ដំណើរការ​កាបូប​ចោល ។"
 
-#: sessionpool.cpp:269
+#: sessionpool.cpp:275
 #, fuzzy
 #| msgid "The password."
 msgid "Empty password"
 msgstr "ពាក្យ​សម្ងាត់ ។"
 
-#: sessionpool.cpp:282
+#: sessionpool.cpp:288
 #, kde-format
 msgid ""
 "You requested TLS/SSL to connect to %1, but your system does not seem to be "
@@ -813,12 +825,12 @@ msgstr ""
 "អ្នក​បាន​ស្នើ​ឲ្យ TLS/SSL តភ្ជាប់​ទៅកាន់ %1 ប៉ុន្តែ​ប្រព័ន្ធ​របស់​អ្នក​មិន​ត្រូវបាន​ដំឡើង​សម្រាប់​ធ្វើ​ដូចនោះ​"
 "ទេ ។"
 
-#: sessionpool.cpp:342
+#: sessionpool.cpp:348
 #, kde-format
 msgid "Could not test the capabilities supported by the IMAP server %1."
 msgstr "មិនអាច​សាកល្បង​ភាព​ឆប​គ្នា​ដែល​បាន​គាំទ្រ​ដោយ​ម៉ាស៊ីន​បម្រើ IMAP %1 ។"
 
-#: sessionpool.cpp:362
+#: sessionpool.cpp:368
 #, kde-format
 msgid ""
 "Cannot use the IMAP server %1, some mandatory capabilities are missing: %2. "
