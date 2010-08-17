@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_lionmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-10 06:22+0200\n"
+"POT-Creation-Date: 2010-08-17 06:12+0200\n"
 "PO-Revision-Date: 2010-06-21 14:49+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -96,7 +96,7 @@ msgstr "<h3>បានបរាជ័យ​ក្នុងកា​រទៅយ�
 msgid "<h3>Could not find Email with id: <p /></h3><pre>%1</pre>"
 msgstr "<h3>មិនអាច​រក​អ៊ីមែល​ដែល​មាន​លេខសម្គាល់ ៖ <p /></h3><pre>%1</pre>"
 
-#: emailmessage/emailwidget.cpp:952 emailnotifier/emailwidget.cpp:885
+#: emailmessage/emailwidget.cpp:952 emailnotifier/emailwidget.cpp:890
 msgid "<i>Sender unkown</i>"
 msgstr "<i>មិន​ស្គាល់​អ្នក​ផ្ញើ</i>"
 
@@ -144,7 +144,7 @@ msgstr "គ្មាន​អ្វីត្រូវ​បង្ហាញ​ទ
 msgid "Please select an Email Folder"
 msgstr "សូម​ជ្រើស​ថត​អ៊ីមែល​"
 
-#: lionmail.cpp:125 emailnotifier/emailnotifier.cpp:161
+#: lionmail.cpp:125 emailnotifier/emailnotifier.cpp:160
 msgid "Collections"
 msgstr "កា​រប្រមូលផ្ដុំ"
 
@@ -218,7 +218,7 @@ msgctxt "sync status error"
 msgid "Error checking email in %1"
 msgstr ""
 
-#: emailnotifier/emaillist.cpp:318 emailnotifier/emailnotifier.cpp:264
+#: emailnotifier/emaillist.cpp:322 emailnotifier/emailnotifier.cpp:299
 #, fuzzy, kde-format
 #| msgid "1 email"
 #| msgid_plural "%1 emails"
@@ -226,7 +226,7 @@ msgid "%1 new email"
 msgid_plural "%1 new emails"
 msgstr[0] "អ៊ីមែល %1"
 
-#: emailnotifier/emailnotifier.cpp:151
+#: emailnotifier/emailnotifier.cpp:150
 #, fuzzy
 #| msgid "1 email"
 #| msgid_plural "%1 emails"
@@ -234,7 +234,7 @@ msgctxt "tooltip on startup"
 msgid "No new email"
 msgstr "អ៊ីមែល %1"
 
-#: emailnotifier/emailnotifier.cpp:269
+#: emailnotifier/emailnotifier.cpp:304
 #, fuzzy
 #| msgid "1 email"
 #| msgid_plural "%1 emails"
@@ -242,7 +242,7 @@ msgctxt "tooltip: no new emails"
 msgid "No new email"
 msgstr "អ៊ីមែល %1"
 
-#: emailnotifier/emailnotifier.cpp:278
+#: emailnotifier/emailnotifier.cpp:313
 #, fuzzy
 #| msgctxt "Tooltip sub text"
 #| msgid "Click on the icon to monitor your emails"
@@ -260,13 +260,13 @@ msgctxt "empty subject label"
 msgid "(No Subject)"
 msgstr ""
 
-#: emailnotifier/emailwidget.cpp:879
+#: emailnotifier/emailwidget.cpp:884
 #, kde-format
 msgctxt "sender"
 msgid "%1"
 msgstr ""
 
-#: emailnotifier/emailwidget.cpp:881
+#: emailnotifier/emailwidget.cpp:886
 #, kde-format
 msgctxt "sender and date"
 msgid "%1, %2"
@@ -300,17 +300,15 @@ msgstr ""
 
 #. i18n: file: lionmailConfig.ui:46
 #. i18n: ectx: property (text), widget (QCheckBox, allowHtml)
-#. i18n: file: emailnotifier/emailnotifierConfig.ui:39
+#. i18n: file: emailnotifier/emailnotifierConfig.ui:118
 #. i18n: ectx: property (text), widget (QCheckBox, allowHtml)
-#: rc.cpp:10 rc.cpp:57 rc.cpp:100
+#: rc.cpp:10 rc.cpp:57 rc.cpp:118
 msgid "Allow HTML"
 msgstr "អនុញ្ញាត HTML"
 
 #. i18n: file: lionmailConfig.ui:53
 #. i18n: ectx: property (text), widget (QLabel, selectcollectionslabel)
-#. i18n: file: emailnotifier/emailnotifierConfig.ui:46
-#. i18n: ectx: property (text), widget (QLabel, selectcollectionslabel)
-#: rc.cpp:13 rc.cpp:60 rc.cpp:103
+#: rc.cpp:13 rc.cpp:60
 msgid "<b>Select Collections</b>"
 msgstr "<b>ជ្រើស​ការ​ប្រមូល​ផ្ដុំ</b>"
 
@@ -395,9 +393,56 @@ msgid "Email Size"
 msgstr "ទំហំ​អ៊ីមែល"
 
 #. i18n: file: emailnotifier/emailnotifierConfig.ui:29
-#. i18n: ectx: property (text), widget (QLabel, generallabel)
+#. i18n: ectx: property (text), widget (QLabel, selectcollectionslabel)
 #: rc.cpp:97
+msgid "<b>Mail Folders</b>"
+msgstr ""
+
+#. i18n: file: emailnotifier/emailnotifierConfig.ui:52
+#. i18n: ectx: property (toolTip), widget (QTreeView, collectionsTreeView)
+#: rc.cpp:100
+msgid "Mark the folders you want to monitor for new and important emails"
+msgstr ""
+
+#. i18n: file: emailnotifier/emailnotifierConfig.ui:59
+#. i18n: ectx: property (text), widget (QLabel, selectcollectionslabel_2)
+#: rc.cpp:103
+msgid "<b>Filtering</b>"
+msgstr ""
+
+#. i18n: file: emailnotifier/emailnotifierConfig.ui:84
+#. i18n: ectx: property (text), widget (QRadioButton, showImportantNone)
+#: rc.cpp:106
 #, fuzzy
-#| msgid "<b>Select Collections</b>"
-msgid "<b>General Options</b>"
-msgstr "<b>ជ្រើស​ការ​ប្រមូល​ផ្ដុំ</b>"
+#| msgctxt "flag important"
+#| msgid "Click to mark message as Important"
+msgid "Do not show emails marked as Important"
+msgstr "ចុច​ដើម្បី​សម្គាល់​សារ​ថា​សំខាន់"
+
+#. i18n: file: emailnotifier/emailnotifierConfig.ui:91
+#. i18n: ectx: property (text), widget (QRadioButton, showImportantMerged)
+#: rc.cpp:109
+#, fuzzy
+#| msgctxt "flag important"
+#| msgid "Click to mark message as Important"
+msgid "Show emails marked as Important"
+msgstr "ចុច​ដើម្បី​សម្គាល់​សារ​ថា​សំខាន់"
+
+#. i18n: file: emailnotifier/emailnotifierConfig.ui:98
+#. i18n: ectx: property (text), widget (QRadioButton, showImportantSeparately)
+#: rc.cpp:112
+msgid "Show Important emails in a separate tab"
+msgstr ""
+
+#. i18n: file: emailnotifier/emailnotifierConfig.ui:108
+#. i18n: ectx: property (text), widget (QLabel, generallabel)
+#: rc.cpp:115
+#, fuzzy
+#| msgid "Display"
+msgid "<b>Display</b>"
+msgstr "បង្ហាញ"
+
+#, fuzzy
+#~| msgid "<b>Select Collections</b>"
+#~ msgid "<b>General Options</b>"
+#~ msgstr "<b>ជ្រើស​ការ​ប្រមូល​ផ្ដុំ</b>"
