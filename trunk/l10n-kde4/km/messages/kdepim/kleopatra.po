@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-01 05:09+0200\n"
+"POT-Creation-Date: 2010-08-18 05:19+0200\n"
 "PO-Revision-Date: 2010-06-08 14:45+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -673,7 +673,7 @@ msgstr "SENDER អាច​មិន​ត្រូវ​បាន​ផ្ដ�
 msgid "No recipients given, or only with --info"
 msgstr "គ្មាន​ឈ្មោះ​អ្នកទទួល​បាន​ផ្ដល់​ទេ ឬ​តែ​ជា​មួយ --info"
 
-#: uiserver/prepencryptcommand.cpp:142
+#: uiserver/prepencryptcommand.cpp:141
 #, kde-format
 msgid ""
 "Caught unexpected exception in PrepEncryptCommand::Private::"
@@ -682,7 +682,7 @@ msgstr ""
 "បាន​ទទួល​ករណី​លើកលែង​ដែល​មិនបាន​រំពឹង​ទុក​នៅ​ក្នុង PrepEncryptCommand::Private::"
 "slotRecipientsResolved ៖ %1"
 
-#: uiserver/prepencryptcommand.cpp:146
+#: uiserver/prepencryptcommand.cpp:145
 msgid ""
 "Caught unknown exception in PrepEncryptCommand::Private::"
 "slotRecipientsResolved"
@@ -1313,13 +1313,13 @@ msgstr ""
 "<interface>%1</interface> មិនត្រឹមត្រូវ ។​<nl/>ច្បាប់គ្រប់គ្រងមូលដ្ឋាន​ ៖​ <icode>%2</icode>"
 
 #: newcertificatewizard/newcertificatewizard.cpp:1227
-#: crypto/gui/newsignencryptfileswizard.cpp:351
+#: crypto/gui/newsignencryptfileswizard.cpp:355
 msgid "Sign"
 msgstr "​ចុះហត្ថលេខា"
 
 #: newcertificatewizard/newcertificatewizard.cpp:1229
 #: newcertificatewizard/newcertificatewizard.cpp:1253
-#: crypto/gui/newsignencryptfileswizard.cpp:350
+#: crypto/gui/newsignencryptfileswizard.cpp:354
 msgid "Encrypt"
 msgstr "អ៊ីនគ្រិប"
 
@@ -1561,7 +1561,7 @@ msgstr "សូមជ្រើស​ការអ៊ិនគ្រីបវិញ
 msgid "Please select a signing certificate for sender \"%1\""
 msgstr "សូមជ្រើសវិញ្ញាបនបត្រចុះហត្ថលេខា​សម្រាប់​អ្នក​​ផ្ញើ​​ \"%1\""
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:555
+#: crypto/gui/signencryptemailconflictdialog.cpp:385
 #, fuzzy
 msgid ""
 "Kleopatra cannot unambiguously determine matching certificates for all "
@@ -1571,7 +1571,27 @@ msgstr ""
 "Kleopatra មិនអាច​កំណត់​ច្បាស់លាស់​ការផ្គូផ្គងវិញ្ញាបនបត្រ​សម្រាប់​គ្រប់​ អ្នក​ផ្ញើ​​/​អ្នក​ទទួល​​ នៃសារ​ ។​\n"
 "សូមជ្រើស​វិញ្ញាបនបត្រត្រឹមត្រូវ​សម្រាប់​អ្នក​ទទួលម្នាក់​ ៖​"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:559
+#: crypto/gui/signencryptemailconflictdialog.cpp:388
+#, fuzzy
+msgid ""
+"Kleopatra cannot unambiguously determine matching certificates for the "
+"sender of the message.\n"
+"Please select the correct certificates for the sender:"
+msgstr ""
+"Kleopatra មិនអាច​កំណត់​ច្បាស់លាស់​ការផ្គូផ្គងវិញ្ញាបនបត្រ​សម្រាប់​គ្រប់​ អ្នក​ផ្ញើ​​/​អ្នក​ទទួល​​ នៃសារ​ ។​\n"
+"សូមជ្រើស​វិញ្ញាបនបត្រត្រឹមត្រូវ​សម្រាប់​អ្នក​ទទួលម្នាក់​ ៖​"
+
+#: crypto/gui/signencryptemailconflictdialog.cpp:391
+#, fuzzy
+msgid ""
+"Kleopatra cannot unambiguously determine matching certificates for all "
+"recipients of the message.\n"
+"Please select the correct certificates for each recipient:"
+msgstr ""
+"Kleopatra មិនអាច​កំណត់​ច្បាស់លាស់​ការផ្គូផ្គងវិញ្ញាបនបត្រ​សម្រាប់​គ្រប់​ អ្នក​ផ្ញើ​​/​អ្នក​ទទួល​​ នៃសារ​ ។​\n"
+"សូមជ្រើស​វិញ្ញាបនបត្រត្រឹមត្រូវ​សម្រាប់​អ្នក​ទទួលម្នាក់​ ៖​"
+
+#: crypto/gui/signencryptemailconflictdialog.cpp:399
 #, fuzzy
 #| msgid "These are the certificates you have selected for deletion:"
 msgid ""
@@ -1579,50 +1599,57 @@ msgid ""
 "recipient:"
 msgstr "សូមផ្ទៀងផ្ទាត់ថា​វិញ្ញាបនបត្រ​ត្រឹមត្រូវ​ដែលបាន​ជ្រើស​សម្រាប់​អ្នកទទួល​ម្នាក់ៗ​ ៖"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:560
+#: crypto/gui/signencryptemailconflictdialog.cpp:400
+#, fuzzy
+#| msgid "These are the certificates you have selected for deletion:"
+msgid ""
+"Please verify that the correct certificate has been selected for the sender:"
+msgstr "សូមផ្ទៀងផ្ទាត់ថា​វិញ្ញាបនបត្រ​ត្រឹមត្រូវ​ដែលបាន​ជ្រើស​សម្រាប់​អ្នកទទួល​ម្នាក់ៗ​ ៖"
+
+#: crypto/gui/signencryptemailconflictdialog.cpp:578
 msgid "Show all recipients"
 msgstr "បង្ហាញ​អ្នក​​ទទួល​ទាំងអស់​"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:561
+#: crypto/gui/signencryptemailconflictdialog.cpp:579
 #: crypto/gui/resolverecipientspage.cpp:431 utils/formatting.cpp:408
 msgid "OpenPGP"
 msgstr "OpenPGP"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:562
+#: crypto/gui/signencryptemailconflictdialog.cpp:580
 #: crypto/gui/resolverecipientspage.cpp:435
 msgid "S/MIME"
 msgstr "S/MIME"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:563
+#: crypto/gui/signencryptemailconflictdialog.cpp:581
 #, fuzzy
 #| msgid "Select Signing Certificates"
 msgid "Select Signing Certificate"
 msgstr "ជ្រើស​វិញ្ញាបនបត្រ​​​ចុះហត្ថលេខា"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:564
+#: crypto/gui/signencryptemailconflictdialog.cpp:582
 #, fuzzy
 #| msgid "Select Signing Certificates"
 msgid "Select Encryption Certificate"
 msgstr "ជ្រើស​ការអ៊ិនគ្រីបវិញ្ញាបនបត្រ​"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:565
+#: crypto/gui/signencryptemailconflictdialog.cpp:583
 #, fuzzy
 msgid "Only show this dialog in case of conflicts (experimental)"
 msgstr "បង្ហាញ​ប្រអប់នេះ​ក្នុង​ករណី​នៃការប៉ះទង្កិចតែប៉ុណ្ណោះ​​ (ពិសោធ​​ន៍​)"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:586
+#: crypto/gui/signencryptemailconflictdialog.cpp:604
 msgid "Select Certificates For Message"
 msgstr "ជ្រើស​វិញ្ញាបនបត្រ​សម្រាប់​សារ​"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:650
+#: crypto/gui/signencryptemailconflictdialog.cpp:668
 msgid "From:"
 msgstr "ពី ៖"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:658
+#: crypto/gui/signencryptemailconflictdialog.cpp:676
 msgid "To:"
 msgstr "ទៅ​ ៖"
 
-#: crypto/gui/signencryptemailconflictdialog.cpp:696
+#: crypto/gui/signencryptemailconflictdialog.cpp:714
 #, kde-format
 msgid "Select Certificates For Message \"%1\""
 msgstr "ជ្រើសវិញ្ញាបនបត្រសម្រាប់សារ​ \"%1\""
@@ -1654,12 +1681,12 @@ msgid "Encryption Options"
 msgstr "ជម្រើស​ការ​អ៊ិនគ្រីប"
 
 #: crypto/gui/signerresolvepage.cpp:301
-#: crypto/gui/newsignencryptfileswizard.cpp:352
+#: crypto/gui/newsignencryptfileswizard.cpp:356
 msgid "Text output (ASCII armor)"
 msgstr "លទ្ធផល​អត្ថបទ (ASCII ស្រោប)"
 
 #: crypto/gui/signerresolvepage.cpp:304
-#: crypto/gui/newsignencryptfileswizard.cpp:353
+#: crypto/gui/newsignencryptfileswizard.cpp:357
 msgid "Remove unencrypted original file when done"
 msgstr "យក​ឯកសារ​ដើម​ដែលបាន​អ៊ិនគ្រីប​ចេញ នៅពេល​ធ្វើរួច"
 
@@ -1679,17 +1706,23 @@ msgstr "ប្ដូរ​វិញ្ញាបនបត្រ​ការ​ច
 msgid "<b>Choose Operation to be Performed</b>"
 msgstr "<b>ជ្រើស​ប្រតិបត្តិការ​ដែល​ត្រូវ​ធ្វើ</b>"
 
-#: crypto/gui/decryptverifyoperationwidget.cpp:79
+#: crypto/gui/decryptverifyoperationwidget.cpp:94
 msgid "Input file:"
 msgstr "ឯកសារ​នាំចូល ៖"
 
-#: crypto/gui/decryptverifyoperationwidget.cpp:83
+#: crypto/gui/decryptverifyoperationwidget.cpp:98
 msgid "&Input file is a detached signature"
 msgstr "ឯកសារ​បញ្ចូល ជា​ហត្ថលេខា​ដែលបាន​ផ្ដាច់"
 
-#: crypto/gui/decryptverifyoperationwidget.cpp:84
+#: crypto/gui/decryptverifyoperationwidget.cpp:99
 msgid "&Signed data:"
 msgstr "ទិន្នន័យ​ដែល​បាន​ចុះហត្ថលេខា ៖"
+
+#: crypto/gui/decryptverifyoperationwidget.cpp:103
+#, fuzzy
+#| msgid "&Input file is a detached signature"
+msgid "&Input file is an archive; unpack with:"
+msgstr "ឯកសារ​បញ្ចូល ជា​ហត្ថលេខា​ដែលបាន​ផ្ដាច់"
 
 #: crypto/gui/newresultpage.cpp:101 crypto/gui/resultpage.cpp:104
 msgid "Keep open after operation completed"
@@ -1797,57 +1830,65 @@ msgstr "បង្កើត​ឯកសារ​លទ្ធផល​ទាំង
 msgid "&Output folder:"
 msgstr "ថត​លទ្ធផល ៖"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:136
+#: crypto/gui/newsignencryptfileswizard.cpp:134
 msgctxt "@title:window"
 msgid "Selected Files"
 msgstr "បាន​ជ្រើសឯកសារ"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:215
+#: crypto/gui/newsignencryptfileswizard.cpp:213
 msgid "No files selected."
 msgstr "គ្មានឯកសារដែលបាន​ជ្រើសទេ ។"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:216
+#: crypto/gui/newsignencryptfileswizard.cpp:214
 msgid "Selected file:"
 msgid_plural "Selected files:"
 msgstr[0] "ឯកសារ​ដែលបាន​ជ្រើស​ ៖"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:219
+#: crypto/gui/newsignencryptfileswizard.cpp:217
 msgctxt "@action"
 msgid "More..."
 msgstr "ច្រើនជាង​..."
 
-#: crypto/gui/newsignencryptfileswizard.cpp:345
+#: crypto/gui/newsignencryptfileswizard.cpp:347
 #, fuzzy
 msgid "Archive files with:"
 msgstr "ឯកសារប័ណ្ណសារជាមួយ ៖"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:347
-msgid "Archive name:"
+#: crypto/gui/newsignencryptfileswizard.cpp:349
+#, fuzzy
+#| msgid "Archive name:"
+msgid "Archive name (OpenPGP):"
 msgstr "ឈ្មោះប័ណ្ណសារ​ ៖"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:349
+#: crypto/gui/newsignencryptfileswizard.cpp:351
+#, fuzzy
+#| msgid "Archive name:"
+msgid "Archive name (S/MIME):"
+msgstr "ឈ្មោះប័ណ្ណសារ​ ៖"
+
+#: crypto/gui/newsignencryptfileswizard.cpp:353
 #, fuzzy
 #| msgid "Sign and encrypt (OpenPGP only)"
 msgid "Sign and Encrypt (OpenPGP only)"
 msgstr "ចុះហត្ថលេខា និង​អ៊ិនគ្រីប (តែ OpenPGP)"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:361
+#: crypto/gui/newsignencryptfileswizard.cpp:365
 msgctxt "@title"
 msgid "What do you want to do?"
 msgstr "តើអ្នក​ចង់ធ្វើអ្វី ?"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:363
+#: crypto/gui/newsignencryptfileswizard.cpp:367
 #, fuzzy
 msgctxt "@title"
 msgid "Please select here whether you want to sign or encrypt files."
 msgstr "សូមជ្រើស ​ថាតើ​អ្នក​ចង់​ចុះហត្ថលេខា ឬអ៊ិនគ្រីប​ឯកសារ​ ។"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:450
+#: crypto/gui/newsignencryptfileswizard.cpp:469
 msgctxt "base name of an archive file, e.g. archive.zip or archive.tar.gz"
 msgid "archive"
 msgstr "ប័ណ្ណសារ​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:502
+#: crypto/gui/newsignencryptfileswizard.cpp:523
 #, fuzzy
 msgctxt "@info"
 msgid ""
@@ -1864,32 +1905,32 @@ msgstr ""
 "ចុះហត្ថលេខា​ទុកក្នុង​ប័ណ្ណសារ​ជា​ឯកសារមួយ​​ដោយ​​ Kleopatra ។</para><para>កំណែរបស់​ Kleopatra "
 "ត្រូវបាន​រំពឹង​ដើម្បីបាន​ផ្តាច់​ការ​គាំទ្រហត្ថលេខា​ក្នុង​ករណីនេះ​​ ។​</para>"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:507
+#: crypto/gui/newsignencryptfileswizard.cpp:528
 #, fuzzy
 msgctxt "@title:window"
 msgid "Unusual Signature Warning"
 msgstr "ការព្រមានហត្ថលេខាខុសធម្មតា​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:565
+#: crypto/gui/newsignencryptfileswizard.cpp:588
 #, fuzzy
 msgid "This operation is not available for S/MIME"
 msgstr "ប្រតិបត្តិការនេះ​មិនអាចរកបាន​សម្រាប់​​ S/MIME ឡើយ​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:590
+#: crypto/gui/newsignencryptfileswizard.cpp:615
 msgid "Add"
 msgstr "បន្ថែម​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:591
+#: crypto/gui/newsignencryptfileswizard.cpp:616
 msgid "Remove"
 msgstr "យកចេញ​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:594
+#: crypto/gui/newsignencryptfileswizard.cpp:619
 #, fuzzy
 msgctxt "@title"
 msgid "For whom do you want to encrypt?"
 msgstr "សម្រាប់​អ្នក​ណាដែលអ្នក​ចង់អ៊ិនគ្រីប​ ?"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:596
+#: crypto/gui/newsignencryptfileswizard.cpp:621
 #, fuzzy
 msgctxt "@title"
 msgid ""
@@ -1899,12 +1940,12 @@ msgstr ""
 "សូម​ជ្រើស​សម្រាប់​អ្នក​ណា​ដែលអ្នកចង់ឲ្យ​​ឯកសារ​ត្រូវបាន​អ៊ិនគ្រីប​ ។​ កុំភ្លេច​យកមួយ​"
 "នៃវិញ្ញាបនបត្រផ្ទាល់ខ្លួនរបស់អ្នក​ ។​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:599
+#: crypto/gui/newsignencryptfileswizard.cpp:624
 msgctxt "@action"
 msgid "Encrypt"
 msgstr "អ៊ីនគ្រិប​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:693
+#: crypto/gui/newsignencryptfileswizard.cpp:718
 #, fuzzy
 msgctxt "@info"
 msgid ""
@@ -1917,14 +1958,14 @@ msgstr ""
 "មិនអាច​ឌិគ្រីប​ទិន្នន័យ​ទៀតទេ​  ពេលមួយដែលបាន​អ៊ិនគ្រីប​ ។​</para><para>តើអ្នក​ចង់បន្ត ឬបោះបង់ប្តូរជម្រើស​"
 "អ្នក​ទទួល ?</para>"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:696
-#: crypto/gui/newsignencryptfileswizard.cpp:707
+#: crypto/gui/newsignencryptfileswizard.cpp:721
+#: crypto/gui/newsignencryptfileswizard.cpp:732
 #, fuzzy
 msgctxt "@title:window"
 msgid "Encrypt-To-Self Warning"
 msgstr "ការព្រមានអ៊ិនគ្រីបខ្លួន​ឯង​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:705
+#: crypto/gui/newsignencryptfileswizard.cpp:730
 #, fuzzy
 msgctxt "@info"
 msgid ""
@@ -1936,42 +1977,42 @@ msgstr ""
 "para><para>តើអ្នក​ពិត​ជាប្រាកដហើយថា​អ្នក​មិនត្រូវការ​ដំណើរការទិន្នន័យទៅ​ទៀតក្នុងសំណុំបែបបទដែលបាន​"
 "ឌិគ្រីប​ ?</para>"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:756
+#: crypto/gui/newsignencryptfileswizard.cpp:781
 msgid "Sign with OpenPGP"
 msgstr "ចុះហត្ថលេខា​ដោយ​​​ OpenPGP"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:757
+#: crypto/gui/newsignencryptfileswizard.cpp:782
 msgid "Sign with S/MIME"
 msgstr "ចុះហត្ថលេខាដោយ​ S/MIME"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:760
+#: crypto/gui/newsignencryptfileswizard.cpp:785
 #, fuzzy
 msgctxt "@title"
 msgid "Who do you want to sign as?"
 msgstr "អ្នក​ណាដែលអ្នក​ចុះហត្ថលេខាជា​ ?"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:762
+#: crypto/gui/newsignencryptfileswizard.cpp:787
 #, fuzzy
 msgctxt "@title"
 msgid "Please choose an identity with which to sign the data."
 msgstr "សូមជ្រើស​អត្តសញ្ញាណ​ជាមួយ​ទិន្នន័យ​ចុះហត្ថលេខាណាមួយ ។"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:838
+#: crypto/gui/newsignencryptfileswizard.cpp:863
 msgctxt "@action"
 msgid "Sign"
 msgstr "​ចុះហត្ថលេខា​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:854
+#: crypto/gui/newsignencryptfileswizard.cpp:879
 msgctxt "@action"
 msgid "Sign && Encrypt"
 msgstr "ចុះហត្ថលេខា និង​អ៊ិនគ្រីប​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:897
+#: crypto/gui/newsignencryptfileswizard.cpp:922
 msgctxt "@title"
 msgid "Results"
 msgstr "លទ្ធផល​"
 
-#: crypto/gui/newsignencryptfileswizard.cpp:899
+#: crypto/gui/newsignencryptfileswizard.cpp:924
 msgctxt "@title"
 msgid "Status and progress of the crypto operations is shown here."
 msgstr "ស្ថានភាព និង​វឌ្ឍនភាព​របស់​ការប្រតិបត្តិការ​សម្ងាត់​ត្រូវបាន​បង្ហាញ​នៅទីនេះ​ ។"
@@ -2044,7 +2085,7 @@ msgstr "មិនស្គាល់​ករណី​លើកលែង​នៅ
 #: crypto/signemailcontroller.cpp:179
 #: crypto/signencryptfilescontroller.cpp:278
 #: crypto/encryptemailcontroller.cpp:169
-#: crypto/newsignencryptemailcontroller.cpp:262
+#: crypto/newsignencryptemailcontroller.cpp:382
 msgid "User cancel"
 msgstr "អ្នកប្រើ​បោះបង់"
 
@@ -2079,7 +2120,7 @@ msgstr "អ៊ិនគ្រីបឯកសារ​ និង​ប័ណ្�
 msgid "Archive and Sign/Encrypt Files"
 msgstr "ប័ណ្ណសារ និង​ចុះហត្ថលេខា​/អ៊ិនគ្រីប​ឯកសារ"
 
-#: crypto/signencryptfilescontroller.cpp:474
+#: crypto/signencryptfilescontroller.cpp:477
 #, kde-format
 msgid ""
 "Caught unexpected exception in SignEncryptFilesController::Private::"
@@ -2088,7 +2129,7 @@ msgstr ""
 "បាន​ទទួល​ករណី​លើកលែង​ដែល​មិនបាន​រំពឹងទុក​នៅ​ក្នុង SignEncryptFilesController::Private::"
 "slotWizardOperationPrepared ៖ %1"
 
-#: crypto/signencryptfilescontroller.cpp:478
+#: crypto/signencryptfilescontroller.cpp:481
 msgid ""
 "Caught unknown exception in SignEncryptFilesController::Private::"
 "slotWizardOperationPrepared"
@@ -2156,7 +2197,7 @@ msgid "Status and progress of the crypto operations is shown here."
 msgstr "ស្ថានភាព​ និង​វឌ្ឍនភាព​​នៃ​ការប្រតិបត្តិការ​សម្ងាត់​ត្រូវបាន​បង្ហាញ​ទីនេះ​ ។ "
 
 #: crypto/decryptverifyemailcontroller.cpp:163
-#: crypto/decryptverifyfilescontroller.cpp:197
+#: crypto/decryptverifyfilescontroller.cpp:208
 msgid "User canceled"
 msgstr "អ្នកប្រើ​បោះបង់"
 
@@ -2489,7 +2530,11 @@ msgstr "ផ្ទៀងផ្ទាត់ ៖ %1..."
 msgid "Verifying signature: %1..."
 msgstr "ហត្ថលេខា​ផ្ទៀងផ្ទាត់ ៖ %1..."
 
-#: crypto/decryptverifyfilescontroller.cpp:186
+#: crypto/decryptverifyfilescontroller.cpp:141
+msgid "Cannot determine whether input data is OpenPGP or CMS"
+msgstr ""
+
+#: crypto/decryptverifyfilescontroller.cpp:197
 #, kde-format
 msgid ""
 "Caught unexpected exception in DecryptVerifyFilesController::Private::"
@@ -2498,7 +2543,7 @@ msgstr ""
 "បាន​ទទួល​ករណី​លើកលែង​ដែល​មិនបាន​រំពឹងទុក​នៅ​ក្នុង SignEncryptFilesController::Private::"
 "slotWizardOperationPrepared ៖ %1"
 
-#: crypto/decryptverifyfilescontroller.cpp:190
+#: crypto/decryptverifyfilescontroller.cpp:201
 msgid ""
 "Caught unknown exception in DecryptVerifyFilesController::Private::"
 "slotWizardOperationPrepared"
@@ -2506,22 +2551,22 @@ msgstr ""
 "បាន​ទទួល​ករណី​លើកលែង​ដែល​មិន​​ស្គាល់​នៅ​ក្នុង SignEncryptFilesController::Private::"
 "slotWizardOperationPrepared"
 
-#: crypto/decryptverifyfilescontroller.cpp:241
+#: crypto/decryptverifyfilescontroller.cpp:252
 msgid "Decrypt/Verify Files"
 msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់​ឯកសារ"
 
-#: crypto/decryptverifyfilescontroller.cpp:322
+#: crypto/decryptverifyfilescontroller.cpp:380
 msgid "No usable inputs found"
 msgstr "រក​មិនឃើញ​ព័ត៌មាន​បញ្ចូល​ដែល​អាច​ប្រើបាន​ទេ"
 
-#: crypto/newsignencryptemailcontroller.cpp:179
+#: crypto/newsignencryptemailcontroller.cpp:297
 #, fuzzy
 #| msgid "Call to EncryptEMailController::protocolAsString() is ambiguous."
 msgid "Call to NewSignEncryptEMailController::protocolAsString() is ambiguous."
 msgstr "ហៅទៅ​​ NewSignEncryptEMailController::protocolAsString()  មិនច្បាស់លាស់​​ ។"
 
-#: crypto/newsignencryptemailcontroller.cpp:397
-#: crypto/newsignencryptemailcontroller.cpp:402
+#: crypto/newsignencryptemailcontroller.cpp:517
+#: crypto/newsignencryptemailcontroller.cpp:522
 msgctxt "@title:window"
 msgid "Error"
 msgstr "កំហុស​"
@@ -3065,25 +3110,25 @@ msgstr "ត្រឹមត្រូវ"
 msgid "good"
 msgstr "ល្អ"
 
-#: models/keycache.cpp:961
+#: models/keycache.cpp:988
 #, fuzzy
 #| msgid "Listing public X.509 keys"
 msgid "Listing public X.509 certificates"
 msgstr "រាយ​​​​វិញ្ញាបនបត្រ​​ X.509 សាធារណៈ​"
 
-#: models/keycache.cpp:961
+#: models/keycache.cpp:988
 #, fuzzy
 #| msgid "Listing private X.509 keys"
 msgid "Listing private X.509 certificates"
 msgstr "រាយ​វិញ្ញាបនបត្រ​​ X.509 ផ្ទាល់ខ្លួន​"
 
-#: models/keycache.cpp:962
+#: models/keycache.cpp:989
 #, fuzzy
 #| msgid "Listing public OpenPGP keys"
 msgid "Listing public OpenPGP certificates"
 msgstr "រាយ​វិញ្ញាបនបត្រ​​ OpenPGP សាធារណៈ"
 
-#: models/keycache.cpp:962
+#: models/keycache.cpp:989
 #, fuzzy
 #| msgid "Listing private OpenPGP keys"
 msgid "Listing private OpenPGP certificates"
@@ -3481,7 +3526,7 @@ msgstr "មិនអាច​បើក​អាន​ឯកសារ \"%1\" ប�
 msgid "File \"%1\" is already open, but not for reading"
 msgstr "ឯកសារ \"%1\" គឺ​បើក​រួចហើយ ប៉ុន្តែ​មិនមែន​សម្រាប់​អាន​ទេ"
 
-#: utils/input.cpp:261
+#: utils/input.cpp:261 utils/output.cpp:416
 #, fuzzy, kde-format
 #| msgid "Could not start zip process"
 msgid "Could not start %1 process: %2"
@@ -3905,17 +3950,17 @@ msgstr "បើក"
 msgid "Icon Files (*.png *.xpm *.svg *.svgz)"
 msgstr "ឯកសារ​រូបតំណាង (*.png *.xpm *.svg *.svgz)"
 
-#: utils/output.cpp:253
+#: utils/output.cpp:295
 #, kde-format
 msgid "Could not open FD %1 for writing"
 msgstr "មិនអាច​បើក​ FD %1 ដើម្បី​សរសេរ​បាន​ទេ"
 
-#: utils/output.cpp:278
+#: utils/output.cpp:320
 #, kde-format
 msgid "Could not create temporary file for output \"%1\""
 msgstr "មិនអាច​បង្កើត​ឯកសារ​បណ្ដោះអាសន្ន​សម្រាប់​លទ្ធផល \"%1\""
 
-#: utils/output.cpp:284
+#: utils/output.cpp:326
 #, kde-format
 msgid ""
 "The file <b>%1</b> already exists.\n"
@@ -3924,46 +3969,62 @@ msgstr ""
 "មាន​ឯកសារ <b>%1</b> រួចហើយ ។\n"
 "សរសេរ​ជាន់លើ​ឬ ?"
 
-#: utils/output.cpp:286
+#: utils/output.cpp:328
 msgid "Overwrite Existing File?"
 msgstr "សរសេរ​ជាន់លើ​ឯកសារ​ដែល​មាន​ឬ ?"
 
-#: utils/output.cpp:288
+#: utils/output.cpp:330
 msgid "Overwrite All"
 msgstr "សរសេរ​ជាន់​លើ​ទាំងអស់"
 
-#: utils/output.cpp:326
+#: utils/output.cpp:368
 msgid "Overwriting declined"
 msgstr "បាន​បដិសេធ​ការ​សរសេរ​ជាន់លើ"
 
-#: utils/output.cpp:332
+#: utils/output.cpp:374
 #, kde-format
 msgid "Could not remove file \"%1\" for overwriting."
 msgstr "មិនអាច​យក​ឯកសារ \"%1\" ចេញ​សម្រាប់​​សរសេរ​ជាន់លើ​ទេ ។"
 
-#: utils/output.cpp:344
+#: utils/output.cpp:386
 #, kde-format
 msgid "Could not rename file \"%1\" to \"%2\""
 msgstr "មិនអាច​ប្ដូរ​ឈ្មោះ​ឯកសារ \"%1\" ទៅ \"%2\" បានទេ"
 
-#: utils/output.cpp:360
+#: utils/output.cpp:425
+#, fuzzy, kde-format
+#| msgctxt "e.g. \"Output of tar xf - file1 ...\""
+#| msgid "Output of %1 ..."
+msgctxt "e.g. \"Input to tar xf - file1 ...\""
+msgid "Input to %1 ..."
+msgstr "ទិន្នផល​របស់​​ %1 ..."
+
+#: utils/output.cpp:427
+#, fuzzy, kde-format
+#| msgctxt "e.g. \"Output of tar xf - file\""
+#| msgid "Output of %1"
+msgctxt "e.g. \"Input to tar xf - file\""
+msgid "Input to %1"
+msgstr "ទិន្នផលរបស់​​ %1"
+
+#: utils/output.cpp:442
 msgid "Could not write to clipboard"
 msgstr "មិនអាច​សរសេរ​ទៅកាន់​ក្ដារ​តម្បៀត​ខ្ទាស់​បានទេ"
 
-#: utils/output.cpp:366 commands/importcertificatefromclipboardcommand.cpp:122
+#: utils/output.cpp:448 commands/importcertificatefromclipboardcommand.cpp:122
 #: systrayicon.cpp:202
 msgid "Clipboard"
 msgstr "ក្ដារ​តម្បៀត​ខ្ទាស់"
 
-#: utils/output.cpp:368
+#: utils/output.cpp:450
 msgid "Find buffer"
 msgstr "រក​សតិបណ្ដោះ​អាសន្ន"
 
-#: utils/output.cpp:370
+#: utils/output.cpp:452
 msgid "Selection"
 msgstr "ជម្រើស"
 
-#: utils/output.cpp:382
+#: utils/output.cpp:464
 msgid "Could not find clipboard"
 msgstr "មិនអាច​រក​ក្ដារ​តម្បៀត​ខ្ទាស់​បានទេ"
 
@@ -3988,46 +4049,43 @@ msgstr "តួអក្សរ​គោល​ដប់ប្រាំមួយ '%
 msgid "Premature end of hex-encoded char in input stream"
 msgstr "ការ​បញ្ចប់​មុនពេល​របស់​តួអក្សរ​ដែល​បាន​ឌិកូដ​ជា​គោល​ដប់ប្រាំមួយ​នៅ​ក្នុង​ស្ទ្រីម​ព័ត៌មាន​បញ្ចូល"
 
-#: utils/archivedefinition.cpp:75
+#: utils/archivedefinition.cpp:107
 #, fuzzy, kde-format
 msgid "Error in archive definition %1: %2"
 msgstr "កំហុស​ក្នុង​ការកំណត់​​ប័ណ្ណសារ​​ %1 ៖ %2"
 
-#: utils/archivedefinition.cpp:93
-#, fuzzy
-msgid "'extensions' entry is empty/missing"
-msgstr "'ផ្នែកបន្ថែម​​' ធាតុ​ ទទេ​/បាត់​"
-
-#: utils/archivedefinition.cpp:104
-#, c-format
-msgid "Cannot use both %f and |"
+#: utils/archivedefinition.cpp:152
+#, kde-format
+msgid "Cannot use both %f and | in '%1'"
 msgstr ""
 
-#: utils/archivedefinition.cpp:109
-msgid "Quoting error"
+#: utils/archivedefinition.cpp:160
+#, fuzzy, kde-format
+#| msgid "Quoting error"
+msgid "Quoting error in '%1' entry"
 msgstr "កំហុស​ការដកស្រង់​"
 
-#: utils/archivedefinition.cpp:111
-#, fuzzy
-msgid "Command too complex (would need shell)"
+#: utils/archivedefinition.cpp:162
+#, fuzzy, kde-format
+msgid "'%1' too complex (would need shell)"
 msgstr "ពាកក្យបញ្ជា​ស្មុគស្មាញពេក​​ (គួរតែ​ត្រូវការសែល​​)"
 
-#: utils/archivedefinition.cpp:114
-#, fuzzy
-msgid "'command' entry is empty/missing"
+#: utils/archivedefinition.cpp:165 utils/archivedefinition.cpp:210
+#: utils/archivedefinition.cpp:222 utils/archivedefinition.cpp:232
+#, fuzzy, kde-format
+msgid "'%1' entry is empty/missing"
 msgstr "ពាក្យ​បញ្ជា​​' ធាតុ​ ទទេ​/​បាត់​"
 
-#: utils/archivedefinition.cpp:118
-#, fuzzy
-msgid "Command not found in filesystem"
-msgstr "ពាក្យ​បញ្ជា​​ស្វែងរកមិនឃើញ​ក្នុង​ប្រព័ន្ធ​ឯកសារ​"
-
-#: utils/archivedefinition.cpp:124
-#, fuzzy
-msgid "Command empty or not found"
+#: utils/archivedefinition.cpp:172
+#, fuzzy, kde-format
+msgid "'%1' empty or not found"
 msgstr "ពាក្យ​បញ្ជា​ទទេ​ ឬ​ស្វែងរកមិនឃើញ​"
 
-#: utils/archivedefinition.cpp:180
+#: utils/archivedefinition.cpp:265 utils/archivedefinition.cpp:275
+msgid "cannot use argument passing on standard input for unpack-command"
+msgstr ""
+
+#: utils/archivedefinition.cpp:320
 #, fuzzy, kde-format
 msgid ""
 "Cannot find common base directory for these files:\n"
@@ -4036,7 +4094,7 @@ msgstr ""
 "មិនអាច​ស្វែងរក​ថតគោលទូទៅ​សម្រាប់​ឯកសារទាំងនេះ​បាន​ទេ​ ៖​\n"
 "%1"
 
-#: utils/archivedefinition.cpp:225
+#: utils/archivedefinition.cpp:373
 #, fuzzy, kde-format
 #| msgid "Caught unknown exception"
 msgid "Caught unknown exception in group %1"
@@ -5230,28 +5288,28 @@ msgstr "កំហុស​កម្មវិធី​គ្រប់គ្រង
 msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr "ដំណើរការ GpgSM បាន​បញ្ចប់​មុន ដោយសារ​កំហុស​ដោយ​មិននឹក​ស្មាន ។"
 
-#: main.cpp:136
+#: main.cpp:137
 msgid "Performing Self-Check..."
 msgstr "កំពុ​ងអនុវត្ត​កា​រពិនិត្យ​មើល​ដោយ​ខ្លួន​ឯង..."
 
-#: main.cpp:147
+#: main.cpp:148
 msgctxt "did not pass"
 msgid "Self-Check Failed"
 msgstr "បានបរាជ័យ​ក្នុងការ​ពិនិត្យ​ដោយ​ខ្លួន​ឯង"
 
-#: main.cpp:150
+#: main.cpp:151
 msgid "Self-Check Passed"
 msgstr "បាន​ចម្លង​កា​រពិនិត្យ​ផ្ទាល់ខ្លួន"
 
-#: main.cpp:165
+#: main.cpp:166
 msgid "Loading certificate cache..."
 msgstr "កំពុង​ឃ្លាំង​សម្ងាត់​វិញ្ញាបនបត្រ​..."
 
-#: main.cpp:168
+#: main.cpp:169
 msgid "Certificate cache loaded."
 msgstr "បាន​ផ្ទុក​ឃ្លាំង​សម្ងាត់​វិញ្ញាបនបត្រ ។"
 
-#: main.cpp:199
+#: main.cpp:200
 #, fuzzy
 msgctxt "@info"
 msgid ""
@@ -5266,17 +5324,17 @@ msgstr ""
 "para><para><application>Kleopatra</application> នឹង​​គ្មាន​​មុខ​ងារ​ក្នុង​ការកំណត់​នេះ​ទេ​ ។​</"
 "para><para>សូម​សួរ​អ្នក​គ្រប់​គ្រងរបស់អ្នក​សម្រាប់​ជំនួយ​ក្នុង​ការ​ដោះស្រាយបញ្ហានេះ​ ។​</para>"
 
-#: main.cpp:203
+#: main.cpp:204
 #, fuzzy
 msgctxt "@title"
 msgid "GpgME Too Old"
 msgstr "GpgME ចាស់​ពេក​"
 
-#: main.cpp:286
+#: main.cpp:289
 msgid "GPG UI Server Error"
 msgstr "កំហុស​ម៉ាស៊ីន​បម្រើ UI GPG"
 
-#: main.cpp:287
+#: main.cpp:290
 #, kde-format
 msgid ""
 "<qt>The Kleopatra GPG UI Server Module could not be initialized.<br/>The "
@@ -7247,6 +7305,14 @@ msgid ""
 msgstr ""
 "ទីតាំង និង​ទំហំ​​ដែល​បាន​ចងចាំ​នៃ​ ឌិគ្រីប/​បញ្ជាក់​ការ​លេចឡើង​លទ្ធផល ត្រូវបាន​ប្រើ​ដោយ​ម៉ាស៊ីន​ភ្ញៀវ​ដែល​មិន​គាំទ្រ​"
 "ការ​បង្ហាញ​ក្នុង​តួ​នៃ​លទ្ធផល​ឌិគ្រីប/បញ្ជាក់ ដូចជា MS Outlook ។"
+
+#, fuzzy
+#~ msgid "'extensions' entry is empty/missing"
+#~ msgstr "'ផ្នែកបន្ថែម​​' ធាតុ​ ទទេ​/បាត់​"
+
+#, fuzzy
+#~ msgid "Command not found in filesystem"
+#~ msgstr "ពាក្យ​បញ្ជា​​ស្វែងរកមិនឃើញ​ក្នុង​ប្រព័ន្ធ​ឯកសារ​"
 
 #~ msgid "Intevation GmbH (Project Management)"
 #~ msgstr "Intevation GmbH (ការ​គ្រប់គ្រង​គម្រោង)"
