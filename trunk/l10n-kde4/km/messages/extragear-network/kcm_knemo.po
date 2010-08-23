@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_knemo\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:51+0200\n"
+"POT-Creation-Date: 2010-08-23 05:36+0200\n"
 "PO-Revision-Date: 2010-06-08 16:11+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -444,14 +444,18 @@ msgstr "ការ​កំណត់​ស្បែក​"
 
 #. i18n: file: configdlg.ui:267
 #. i18n: ectx: property (text), widget (QLabel, colorIncomingLabel)
-#: rc.cpp:67
+#. i18n: file: themecfg.ui:90
+#. i18n: ectx: property (text), widget (QLabel, inMaxText)
+#: rc.cpp:67 rc.cpp:298
 #, fuzzy
 msgid "Incoming traffic:"
 msgstr "ចរាចរ​ចូល ​៖"
 
 #. i18n: file: configdlg.ui:274
 #. i18n: ectx: property (text), widget (QLabel, colorOutgoingLabel)
-#: rc.cpp:70
+#. i18n: file: themecfg.ui:137
+#. i18n: ectx: property (text), widget (QLabel, outMaxText)
+#: rc.cpp:70 rc.cpp:310
 #, fuzzy
 msgid "Outgoing traffic:"
 msgstr "ចរាចរ​ចេញ ​៖"
@@ -771,6 +775,330 @@ msgstr "ថត​ស្ថិតិ ​៖"
 msgid "KNemo will log interface statistics in this directory."
 msgstr "KNemo នឹង​ចូល​ស្ថិតិ​ចំណុច​ប្រទាក់​ក្នុង​ថត​នេះ ។"
 
+#. i18n: file: statscfg.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, StatsCfg)
+#. i18n: file: warncfg.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, WarnCfg)
+#: rc.cpp:220 rc.cpp:322
+msgid "Form"
+msgstr ""
+
+#. i18n: file: statscfg.ui:24
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: rc.cpp:223
+#, fuzzy
+msgid "Billing Period Rules"
+msgstr "រយៈ​ពេល​ផ្ញើ​​វិក្កយ​បត្រ"
+
+#. i18n: file: statscfg.ui:48
+#. i18n: ectx: property (text), widget (QLabel, billingStartLabel)
+#: rc.cpp:226
+#, fuzzy
+msgid "Start date:"
+msgstr "កាល​បរិច្ឆេទ​ចាប់​ផ្តើម​ចេញ​វិក្កយ​បត្រ ​៖"
+
+#. i18n: file: statscfg.ui:55
+#. i18n: ectx: property (whatsThis), widget (KDateEdit, startDate)
+#: rc.cpp:229
+#, fuzzy
+msgid ""
+"<p>By default, this shows the start date of the current month or billing "
+"period. If you change the date, KNemo will recalculate billing periods from "
+"that date forward. Any billing periods before that date will remain "
+"unmodified.</p><p>If you set an erroneous date, just select an earlier good "
+"billing date, and KNemo will repair it.</p>"
+msgstr ""
+"<p>តាម​លំនាំ​ដើម​ វា​បង្ហាញ​កាល​បរិច្ឆេទចាប់ផ្តើម​នៃ​ខែ​បច្ចុប្បន្ន ឬ​រយៈ​ពេល​ចេញ​វិក្កយ​បត្រ ។ បើ​អ្នក​ផ្លាស់​"
+"ប្តូរ​​កាល​បរិច្ឆេទ​ KNemo នឹង​គណនា​រយៈ​ពេល​ចេញ​វិក្កយបត្រ​ឡើង​វិញ​​ចាប់​ពី​ថ្ងៃ​នោះ​តទៅ​ ។ រយៈ​ពេល​ចេញ​វិក្កយ​"
+"បត្រ​មុន​កាល​បរិច្ឆេទ​ដែល​នឹង​មិន​កែ​ប្រែ​ទេ​ ។</p><p>បើ​សិន​អ្នក​កំណត់​កាល​បរិច្ឆេទ​​ដែល​មាន​កំហុស​ គ្រាន់​តែ​ជ្រើស​"
+"កាលបរិច្ឆេទ​ចេញ​វិក្កយបត្រ​ដែល​ល្អ​ពីមុន​នេះ​សិន  ហើយ​ KNemo នឹង​ជួស​ជុល​វា ។</p>"
+
+#. i18n: file: statscfg.ui:82
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:232
+#, fuzzy
+msgid "Billing period length:"
+msgstr "រយៈ​ពេល​ផ្ញើ​​វិក្កយ​បត្រ"
+
+#. i18n: file: statscfg.ui:118
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: rc.cpp:235
+msgid "Off-Peak Rules"
+msgstr ""
+
+#. i18n: file: statscfg.ui:124
+#. i18n: ectx: property (text), widget (QCheckBox, logOffpeak)
+#: rc.cpp:238
+#, fuzzy
+msgid "Log off-peak traffic"
+msgstr "ចរាចរ​សរុប"
+
+#. i18n: file: statscfg.ui:152
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:241
+msgid "Off-peak start time:"
+msgstr ""
+
+#. i18n: file: statscfg.ui:162
+#. i18n: ectx: property (displayFormat), widget (QTimeEdit, startTime)
+#. i18n: file: statscfg.ui:202
+#. i18n: ectx: property (displayFormat), widget (QTimeEdit, stopTime)
+#. i18n: file: statscfg.ui:279
+#. i18n: ectx: property (displayFormat), widget (QTimeEdit, weekendStartTime)
+#. i18n: file: statscfg.ui:326
+#. i18n: ectx: property (displayFormat), widget (QTimeEdit, weekendStopTime)
+#: rc.cpp:244 rc.cpp:250 rc.cpp:259 rc.cpp:265
+msgid "h:00 AP"
+msgstr ""
+
+#. i18n: file: statscfg.ui:192
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:247
+msgid "Off-peak end time:"
+msgstr ""
+
+#. i18n: file: statscfg.ui:232
+#. i18n: ectx: property (text), widget (QCheckBox, doWeekend)
+#: rc.cpp:253
+msgid "Weekends count as off-peak"
+msgstr ""
+
+#. i18n: file: statscfg.ui:262
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: rc.cpp:256
+msgid "Weekend starts:"
+msgstr ""
+
+#. i18n: file: statscfg.ui:309
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: rc.cpp:262
+msgid "Weekend ends:"
+msgstr ""
+
+#. i18n: file: themecfg.ui:17
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:268
+msgid "Traffic"
+msgstr "ចរាចរ"
+
+#. i18n: file: themecfg.ui:25
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:271
+#, fuzzy
+msgid "Traffic activity threshold:"
+msgstr "កម្រិត​ពន្លឺ​សកម្មភាព​ចរាចរ ៖"
+
+#. i18n: file: themecfg.ui:32
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, spinBoxTrafficThreshold)
+#: rc.cpp:274
+#, fuzzy
+msgid ""
+"If you are on a network with a lot of low-level traffic, you can increase "
+"this value so the tray icon does not constantly report activity."
+msgstr ""
+"បើ​សិន​អ្នក​ស្ថិត​នៅ​លើ​បណ្តាញ​ជាមួយ​នឹង​ចរាចរ​ជា​ច្រើន​កម្រិត អ្នក​អាច​បង្កើន​តម្លៃ​នេះ​ ដូច្នេះ​រូប​តំណាង​ថាស​"
+"នឹងមិន​រាយ​ការណ៍សកម្មភាព​ជាប្រចាំ​ទេ ។"
+
+#. i18n: file: themecfg.ui:35
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, spinBoxTrafficThreshold)
+#: rc.cpp:277
+#, fuzzy
+msgid " packets/sec"
+msgstr " កញ្ចប់​ព័ត៌មាន​/វិនាទី"
+
+#. i18n: file: themecfg.ui:50
+#. i18n: ectx: property (title), widget (QGroupBox, rateGroup)
+#: rc.cpp:280
+#, fuzzy
+msgid "Traffic Rate Visualization"
+msgstr "ការ​ធ្វើ​ឲ្យ​​អត្រា​ចរាចរ​មើល​ឃើញ"
+
+#. i18n: file: themecfg.ui:56
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, checkDynColor)
+#: rc.cpp:283
+#, fuzzy
+msgid ""
+"If checked, the transmit and receive colors will change according to the "
+"traffic rate.  As the traffic rate increases, the color will change from the "
+"default color, to the max rate color."
+msgstr ""
+"បើ​សិន​ធីក​ ពណ៌បញ្ជូន​ និង​ទទួល​នឹង​ផ្លាស់​ប្តូរ​យោង​​ទៅ​តាម​អត្រា​ចរាចរ​ ។ ដោយ​សារ​អត្រា​ចរាចរ​កើន​ឡើង​ ពណ៌​នឹង​"
+"ផ្លាស់​ប្តូរ​ពី​ពណ៌​លំនាំ​ដើម​ ទៅ​ជា​ពណ៌​អត្រា​អតិបរមា ។"
+
+#. i18n: file: themecfg.ui:59
+#. i18n: ectx: property (text), widget (QCheckBox, checkDynColor)
+#: rc.cpp:286
+#, fuzzy
+msgid "Change color according to max visual rate"
+msgstr "ផ្លាស់​ប្តូរ​ពណ៌​យោង​ទៅ​តាម​អត្រា​មើល​ឃើញ​រូប​ជា​អតិបរមា"
+
+#. i18n: file: themecfg.ui:66
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, checkBarScale)
+#: rc.cpp:289
+#, fuzzy
+msgid ""
+"If this is checked, the Netload bar graphs will use a constant scale based "
+"on the maximum rates below.  If unchecked, the bar graphs will change scale "
+"according to recent traffic rates."
+msgstr ""
+"ប្រសិន​បើ​វា​ត្រូវ​បាន​ធីក ក្រាហ្វ​របារ​ផ្ទុក​បណ្តាញ​នឹង​ប្រើ​មាត្រ​ដ្ឋាន​ជា​ប្រចាំ​ដោយ​ផ្អែក​លើ​អត្រា​អតិបរមា​ខាង​"
+"ក្រោម ។ បើ​សិន​ត្រូវ​បាន​ដោះធីក ក្រាហ្វ​របារ​នឹង​ផ្លាស់​ប្តូរ​មាត្រដ្ឋាន​យោង​ទៅ​តាម​អត្រា​ចរាចរ​បច្ចុប្បន្ន ។"
+
+#. i18n: file: themecfg.ui:69
+#. i18n: ectx: property (text), widget (QCheckBox, checkBarScale)
+#: rc.cpp:292
+#, fuzzy
+msgid "Always scale bar graphs to max visual rate"
+msgstr "តែង​តែ​ដាក់មាត្រដ្ឋាន​ក្រាហ្វ​របារ​ទៅ​អត្រា​មើល​ឃើញ​អតិបរមា"
+
+#. i18n: file: themecfg.ui:82
+#. i18n: ectx: property (title), widget (QGroupBox, maxRateGroup)
+#: rc.cpp:295
+#, fuzzy
+msgid "Max Visual Rate"
+msgstr "អត្រា​មើល​ឃើញ​អតិបរមា"
+
+#. i18n: file: themecfg.ui:97
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, rxMaxRate)
+#: rc.cpp:301
+#, fuzzy
+msgid ""
+"<p>The maximum incoming rate for this connection.</p><p>This does <b>not</b> "
+"affect the actual traffic rate, only how KNemo displays it.</p>"
+msgstr ""
+"<p>អត្រា​ចូល​អតិបរមា​សម្រាប់​ការ​តភ្ជាប់​នេះ ។</p><p>វា <b>មិន</b> ប៉ះ​ពាល់​អត្រា​ចរាចរ​ជាក់ស្តែង​​ទេ "
+"បើ​ត្រឹម​តែ​របៀប​ដែល​ KNemo បង្ហាញ​វា​នោះ ។</p>"
+
+#. i18n: file: themecfg.ui:100
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, rxMaxRate)
+#. i18n: file: themecfg.ui:147
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, txMaxRate)
+#: rc.cpp:304 rc.cpp:316
+msgid " KiB/sec"
+msgstr "គីឡូ​បៃ/វិនាទី"
+
+#. i18n: file: themecfg.ui:119
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: themecfg.ui:166
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:307 rc.cpp:319
+msgid "Color:"
+msgstr "ពណ៌ ៖"
+
+#. i18n: file: themecfg.ui:144
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, txMaxRate)
+#: rc.cpp:313
+#, fuzzy
+msgid ""
+"<p>The maximum outgoing rate for this connection.</p><p>This does <b>not</b> "
+"affect the actual traffic rate, only how KNemo displays it.</p>"
+msgstr ""
+"<p>អត្រា​ចេញ​អតិបរមា​សម្រាប់ការ​តភ្ជាប់​នេះ​ឬ ?</p><p>វា​ <b>មិន</b> ប៉ះពាល់​អត្រាចរាចរ​ជាក់​ស្តែង​"
+"ទេ ​របៀប​ដែល​ KNemo បង្ហាញ​វា​នោះ ។</p>"
+
+#. i18n: file: warncfg.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:325
+#, fuzzy
+#| msgid "Notifications"
+msgid "Notification Rules"
+msgstr "ការ​ជូន​ដំណឹង"
+
+#. i18n: file: warncfg.ui:28
+#. i18n: ectx: property (text), widget (QLabel, trafficTypeLabel)
+#: rc.cpp:328
+#, fuzzy
+#| msgid "Traffic"
+msgid "Traffic type:"
+msgstr "ចរាចរ"
+
+#. i18n: file: warncfg.ui:36
+#. i18n: ectx: property (text), item, widget (QComboBox, trafficType)
+#: rc.cpp:331
+msgid "Peak"
+msgstr ""
+
+#. i18n: file: warncfg.ui:41
+#. i18n: ectx: property (text), item, widget (QComboBox, trafficType)
+#: rc.cpp:334
+msgid "Offpeak"
+msgstr ""
+
+#. i18n: file: warncfg.ui:46
+#. i18n: ectx: property (text), item, widget (QComboBox, trafficType)
+#: rc.cpp:337
+msgid "Peak and offpeak"
+msgstr ""
+
+#. i18n: file: warncfg.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:340
+#, fuzzy
+msgid "Traffic direction:"
+msgstr "ការ​ជូន​ដំណឹង​ចរាចរ"
+
+#. i18n: file: warncfg.ui:66
+#. i18n: ectx: property (text), item, widget (QComboBox, trafficDirection)
+#: rc.cpp:343
+#, fuzzy
+msgid "Incoming"
+msgstr "ចរាចរ​ចូល"
+
+#. i18n: file: warncfg.ui:71
+#. i18n: ectx: property (text), item, widget (QComboBox, trafficDirection)
+#: rc.cpp:346
+#, fuzzy
+#| msgid "Outgoing traffic"
+msgid "Outgoing"
+msgstr "ចរាចរ​ចេញ"
+
+#. i18n: file: warncfg.ui:76
+#. i18n: ectx: property (text), item, widget (QComboBox, trafficDirection)
+#: rc.cpp:349
+#, fuzzy
+msgid "Incoming and outgoing"
+msgstr "ចរាចរ​ចូល និងចេញ"
+
+#. i18n: file: warncfg.ui:98
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:352
+#, fuzzy
+msgid "Notify when traffic exceeds:"
+msgstr "ជូន​ដំណឹង​នៅ​ពេល​ចរាចរ​ប្រចាំ​ខែ​លើស​ ៖"
+
+#. i18n: file: warncfg.ui:105
+#. i18n: ectx: property (text), widget (QLabel, warnPer)
+#: rc.cpp:355
+msgid "within:"
+msgstr ""
+
+#. i18n: file: warncfg.ui:142
+#. i18n: ectx: property (whatsThis), widget (KDoubleNumInput, threshold)
+#: rc.cpp:358
+#, fuzzy
+msgid ""
+"When traffic for a month or billing period exceeds this limit, KNemo will "
+"emit a notification. The notification will appear once per session."
+msgstr ""
+"នៅ​ពេល​ចរាចរ​សម្រាប់​ខែ​ ឬ​រយៈ​ពេល​ចេញ​វិក្កយបត្រ​លើស​ដែន​កំណត់​នេះ  KNemo នឹងបង្ហាញការ​ជូន​ដំណឹង ។ ​ការ​"
+"ជូន​ដំណឹង​នឹង​បង្ហាញ​ម្តង​ក្នុង​មួយ​សម័យ ។"
+
+#. i18n: file: warncfg.ui:207
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:361
+#, fuzzy
+#| msgid "Notifications"
+msgid "Notification Text"
+msgstr "ការ​ជូន​ដំណឹង"
+
+#. i18n: file: warncfg.ui:213
+#. i18n: ectx: property (text), widget (QCheckBox, customTextCheck)
+#: rc.cpp:364
+#, fuzzy
+#| msgid "Notifications"
+msgid "Custom notification text"
+msgstr "ការ​ជូន​ដំណឹង"
+
 #: statsconfig.cpp:41 warnconfig.cpp:53
 #, fuzzy
 #| msgid "Day"
@@ -826,155 +1154,6 @@ msgstr ""
 #: warnconfig.cpp:128
 msgid "This traffic notification rule already exists."
 msgstr ""
-
-#, fuzzy
-#~ msgid "Billing Period Rules"
-#~ msgstr "រយៈ​ពេល​ផ្ញើ​​វិក្កយ​បត្រ"
-
-#, fuzzy
-#~ msgid "Start date:"
-#~ msgstr "កាល​បរិច្ឆេទ​ចាប់​ផ្តើម​ចេញ​វិក្កយ​បត្រ ​៖"
-
-#, fuzzy
-#~ msgid ""
-#~ "<p>By default, this shows the start date of the current month or billing "
-#~ "period. If you change the date, KNemo will recalculate billing periods "
-#~ "from that date forward. Any billing periods before that date will remain "
-#~ "unmodified.</p><p>If you set an erroneous date, just select an earlier "
-#~ "good billing date, and KNemo will repair it.</p>"
-#~ msgstr ""
-#~ "<p>តាម​លំនាំ​ដើម​ វា​បង្ហាញ​កាល​បរិច្ឆេទចាប់ផ្តើម​នៃ​ខែ​បច្ចុប្បន្ន ឬ​រយៈ​ពេល​ចេញ​វិក្កយ​បត្រ ។ បើ​អ្នក​"
-#~ "ផ្លាស់​ប្តូរ​​កាល​បរិច្ឆេទ​ KNemo នឹង​គណនា​រយៈ​ពេល​ចេញ​វិក្កយបត្រ​ឡើង​វិញ​​ចាប់​ពី​ថ្ងៃ​នោះ​តទៅ​ ។ រយៈ​ពេល​"
-#~ "ចេញ​វិក្កយ​បត្រ​មុន​កាល​បរិច្ឆេទ​ដែល​នឹង​មិន​កែ​ប្រែ​ទេ​ ។</p><p>បើ​សិន​អ្នក​កំណត់​កាល​បរិច្ឆេទ​​ដែល​មាន​កំហុស​ "
-#~ "គ្រាន់​តែ​ជ្រើស​កាលបរិច្ឆេទ​ចេញ​វិក្កយបត្រ​ដែល​ល្អ​ពីមុន​នេះ​សិន  ហើយ​ KNemo នឹង​ជួស​ជុល​វា ។</p>"
-
-#, fuzzy
-#~ msgid "Billing period length:"
-#~ msgstr "រយៈ​ពេល​ផ្ញើ​​វិក្កយ​បត្រ"
-
-#, fuzzy
-#~ msgid "Log off-peak traffic"
-#~ msgstr "ចរាចរ​សរុប"
-
-#~ msgid "Traffic"
-#~ msgstr "ចរាចរ"
-
-#, fuzzy
-#~ msgid "Traffic activity threshold:"
-#~ msgstr "កម្រិត​ពន្លឺ​សកម្មភាព​ចរាចរ ៖"
-
-#, fuzzy
-#~ msgid ""
-#~ "If you are on a network with a lot of low-level traffic, you can increase "
-#~ "this value so the tray icon does not constantly report activity."
-#~ msgstr ""
-#~ "បើ​សិន​អ្នក​ស្ថិត​នៅ​លើ​បណ្តាញ​ជាមួយ​នឹង​ចរាចរ​ជា​ច្រើន​កម្រិត អ្នក​អាច​បង្កើន​តម្លៃ​នេះ​ ដូច្នេះ​រូប​តំណាង​ថាស​"
-#~ "នឹងមិន​រាយ​ការណ៍សកម្មភាព​ជាប្រចាំ​ទេ ។"
-
-#, fuzzy
-#~ msgid " packets/sec"
-#~ msgstr " កញ្ចប់​ព័ត៌មាន​/វិនាទី"
-
-#, fuzzy
-#~ msgid "Traffic Rate Visualization"
-#~ msgstr "ការ​ធ្វើ​ឲ្យ​​អត្រា​ចរាចរ​មើល​ឃើញ"
-
-#, fuzzy
-#~ msgid ""
-#~ "If checked, the transmit and receive colors will change according to the "
-#~ "traffic rate.  As the traffic rate increases, the color will change from "
-#~ "the default color, to the max rate color."
-#~ msgstr ""
-#~ "បើ​សិន​ធីក​ ពណ៌បញ្ជូន​ និង​ទទួល​នឹង​ផ្លាស់​ប្តូរ​យោង​​ទៅ​តាម​អត្រា​ចរាចរ​ ។ ដោយ​សារ​អត្រា​ចរាចរ​កើន​ឡើង​ ពណ៌​នឹង​"
-#~ "ផ្លាស់​ប្តូរ​ពី​ពណ៌​លំនាំ​ដើម​ ទៅ​ជា​ពណ៌​អត្រា​អតិបរមា ។"
-
-#, fuzzy
-#~ msgid "Change color according to max visual rate"
-#~ msgstr "ផ្លាស់​ប្តូរ​ពណ៌​យោង​ទៅ​តាម​អត្រា​មើល​ឃើញ​រូប​ជា​អតិបរមា"
-
-#, fuzzy
-#~ msgid ""
-#~ "If this is checked, the Netload bar graphs will use a constant scale "
-#~ "based on the maximum rates below.  If unchecked, the bar graphs will "
-#~ "change scale according to recent traffic rates."
-#~ msgstr ""
-#~ "ប្រសិន​បើ​វា​ត្រូវ​បាន​ធីក ក្រាហ្វ​របារ​ផ្ទុក​បណ្តាញ​នឹង​ប្រើ​មាត្រ​ដ្ឋាន​ជា​ប្រចាំ​ដោយ​ផ្អែក​លើ​អត្រា​អតិបរមា​"
-#~ "ខាង​ក្រោម ។ បើ​សិន​ត្រូវ​បាន​ដោះធីក ក្រាហ្វ​របារ​នឹង​ផ្លាស់​ប្តូរ​មាត្រដ្ឋាន​យោង​ទៅ​តាម​អត្រា​ចរាចរ​"
-#~ "បច្ចុប្បន្ន ។"
-
-#, fuzzy
-#~ msgid "Always scale bar graphs to max visual rate"
-#~ msgstr "តែង​តែ​ដាក់មាត្រដ្ឋាន​ក្រាហ្វ​របារ​ទៅ​អត្រា​មើល​ឃើញ​អតិបរមា"
-
-#, fuzzy
-#~ msgid "Max Visual Rate"
-#~ msgstr "អត្រា​មើល​ឃើញ​អតិបរមា"
-
-#, fuzzy
-#~ msgid ""
-#~ "<p>The maximum incoming rate for this connection.</p><p>This does <b>not</"
-#~ "b> affect the actual traffic rate, only how KNemo displays it.</p>"
-#~ msgstr ""
-#~ "<p>អត្រា​ចូល​អតិបរមា​សម្រាប់​ការ​តភ្ជាប់​នេះ ។</p><p>វា <b>មិន</b> ប៉ះ​ពាល់​អត្រា​ចរាចរ​ជាក់ស្តែង​​"
-#~ "ទេ បើ​ត្រឹម​តែ​របៀប​ដែល​ KNemo បង្ហាញ​វា​នោះ ។</p>"
-
-#~ msgid " KiB/sec"
-#~ msgstr "គីឡូ​បៃ/វិនាទី"
-
-#~ msgid "Color:"
-#~ msgstr "ពណ៌ ៖"
-
-#, fuzzy
-#~ msgid ""
-#~ "<p>The maximum outgoing rate for this connection.</p><p>This does <b>not</"
-#~ "b> affect the actual traffic rate, only how KNemo displays it.</p>"
-#~ msgstr ""
-#~ "<p>អត្រា​ចេញ​អតិបរមា​សម្រាប់ការ​តភ្ជាប់​នេះ​ឬ ?</p><p>វា​ <b>មិន</b> ប៉ះពាល់​អត្រាចរាចរ​ជាក់​"
-#~ "ស្តែង​ទេ ​របៀប​ដែល​ KNemo បង្ហាញ​វា​នោះ ។</p>"
-
-#, fuzzy
-#~| msgid "Notifications"
-#~ msgid "Notification Rules"
-#~ msgstr "ការ​ជូន​ដំណឹង"
-
-#, fuzzy
-#~| msgid "Traffic"
-#~ msgid "Traffic type:"
-#~ msgstr "ចរាចរ"
-
-#, fuzzy
-#~ msgid "Traffic direction:"
-#~ msgstr "ការ​ជូន​ដំណឹង​ចរាចរ"
-
-#, fuzzy
-#~ msgid "Incoming"
-#~ msgstr "ចរាចរ​ចូល"
-
-#, fuzzy
-#~| msgid "Outgoing traffic"
-#~ msgid "Outgoing"
-#~ msgstr "ចរាចរ​ចេញ"
-
-#, fuzzy
-#~ msgid "Incoming and outgoing"
-#~ msgstr "ចរាចរ​ចូល និងចេញ"
-
-#, fuzzy
-#~ msgid "Notify when traffic exceeds:"
-#~ msgstr "ជូន​ដំណឹង​នៅ​ពេល​ចរាចរ​ប្រចាំ​ខែ​លើស​ ៖"
-
-#, fuzzy
-#~ msgid ""
-#~ "When traffic for a month or billing period exceeds this limit, KNemo will "
-#~ "emit a notification. The notification will appear once per session."
-#~ msgstr ""
-#~ "នៅ​ពេល​ចរាចរ​សម្រាប់​ខែ​ ឬ​រយៈ​ពេល​ចេញ​វិក្កយបត្រ​លើស​ដែន​កំណត់​នេះ  KNemo នឹងបង្ហាញការ​ជូន​ដំណឹង ។ ​"
-#~ "ការ​ជូន​ដំណឹង​នឹង​បង្ហាញ​ម្តង​ក្នុង​មួយ​សម័យ ។"
-
-#, fuzzy
-#~| msgid "Notifications"
-#~ msgid "Notification Text"
-#~ msgstr "ការ​ជូន​ដំណឹង"
 
 #, fuzzy
 #~ msgid "Rolling 24 hours"
