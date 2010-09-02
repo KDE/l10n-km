@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-30 05:26+0200\n"
+"POT-Creation-Date: 2010-09-02 07:05+0200\n"
 "PO-Revision-Date: 2010-06-29 10:05+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -2882,7 +2882,7 @@ msgstr "(វាល​ទាំងអស់)"
 msgid "(Current field)"
 msgstr "(វាល​​បច្ចុប្បន្ន)"
 
-#: main/kexifinddialog.cpp:229 core/kexiproject.cpp:1023
+#: main/kexifinddialog.cpp:229 core/kexiproject.cpp:1027
 msgid "Replace"
 msgstr "ជំនួស"
 
@@ -3630,7 +3630,7 @@ msgstr "លុប"
 msgid "Could not remove object."
 msgstr "មិនអាច​យក​វត្ថុ​ចេញ​បាន​ទេ ។"
 
-#: main/KexiMainWindow.cpp:4435 core/kexiproject.cpp:872
+#: main/KexiMainWindow.cpp:4435 core/kexiproject.cpp:876
 msgid "Could not set empty name for this object."
 msgstr "មិន​អាច​កំណត់​ឈ្មោះទទេ​សម្រាប់​វត្ថុ​នេះ​បាន​ទេ ។"
 
@@ -4226,51 +4226,63 @@ msgstr "ជំនួយ​បរិបទ"
 msgid "Could not open project \"%1\"."
 msgstr "មិន​អាច​បើក​គម្រោង \"%1\" ។"
 
-#: core/kexiproject.cpp:240
+#: core/kexiproject.cpp:221
+#, fuzzy, kde-format
+#| msgid ""
+#| "<qt>Database project %1 does not appear to have been created using Kexi."
+#| "<br><br>Do you want to import it as a new Kexi project?</qt>"
+msgid ""
+"Database project %1 does not appear to have been created using Kexi and "
+"cannot be opened.<br><br>It is an SQLite file created using other tools.</qt>"
+msgstr ""
+"<qt>គម្រោង​មូលដ្ឋាន​ទិន្នន័យ %1 មិន​បង្ហាញ​ថា​ត្រូវ​បាន​បង្កើត​ដោយ​ប្រើ Kexi នោះ​ទេ ។<br><br>តើអ្នក​"
+"ចង់​នាំចូល​វា​ជា​គម្រោង Kexi ថ្មី​ឬ ?</qt>"
+
+#: core/kexiproject.cpp:244
 #, kde-format
 msgid "Could not create project \"%1\"."
 msgstr "មិន​អាច​បង្កើត​គម្រោង \"%1\" ។"
 
-#: core/kexiproject.cpp:283 core/kexiproject.cpp:348
+#: core/kexiproject.cpp:287 core/kexiproject.cpp:352
 msgid "Project major version"
 msgstr "កំណែ​ចម្បង​របស់​​គម្រោង"
 
-#: core/kexiproject.cpp:285 core/kexiproject.cpp:350
+#: core/kexiproject.cpp:289 core/kexiproject.cpp:354
 msgid "Project minor version"
 msgstr "កំណែ​តូចរបស់​​​គម្រោង"
 
-#: core/kexiproject.cpp:287
+#: core/kexiproject.cpp:291
 msgid "Project caption"
 msgstr "ចំណង​ជើង​គម្រោង"
 
-#: core/kexiproject.cpp:289
+#: core/kexiproject.cpp:293
 msgid "Project description"
 msgstr "សេចក្តី​ពិពណ៌នា​គម្រោង"
 
-#: core/kexiproject.cpp:796
+#: core/kexiproject.cpp:800
 #, kde-format
 msgid "Opening object \"%1\" failed."
 msgstr "បាន​បរាជ័យ​ក្នុងកា​របើក​វត្ថុ \"%1\" ។"
 
-#: core/kexiproject.cpp:815
+#: core/kexiproject.cpp:819
 msgid "This project is opened as read only."
 msgstr "គម្រោង​នេះ​ត្រូវ​បាន​បើក​បានតែ​អាន​ប៉ុណ្ណោះ ។"
 
-#: core/kexiproject.cpp:876
+#: core/kexiproject.cpp:880
 #, kde-format
 msgid "Could not use this name. Object with name \"%1\" already exists."
 msgstr "មិន​អាច​ប្រើ​ឈ្មោះ​នេះ​បាន​ទេ ។ មាន​វត្ថុ​ដែល​មាន​ឈ្មោះ \"%1\" រួច​ហើយ ។"
 
-#: core/kexiproject.cpp:883
+#: core/kexiproject.cpp:887
 #, kde-format
 msgid "Could not rename object \"%1\"."
 msgstr "មិនអាច​ប្ដូរ​ឈ្មោះ​វត្ថុ \"%1\" បាន​ទេ ។"
 
-#: core/kexiproject.cpp:1006
+#: core/kexiproject.cpp:1010
 msgid "Warning: entire project's data will be removed."
 msgstr "ព្រមាន ៖ ទិន្នន័យ​របស់​គម្រោង​ទាំងមូល​នឹង​ត្រូវ​បាន​យក​ចេញ ។"
 
-#: core/kexiproject.cpp:1020
+#: core/kexiproject.cpp:1024
 #, kde-format
 msgid ""
 "The project %1 already exists.\n"
@@ -4279,12 +4291,12 @@ msgstr ""
 "មាន​គម្រោង %1 រួច​ហើយ ។\n"
 "តើអ្នក​ចង់​ជំនួស​វា​ដោយគម្រោង​ថ្មី​មួយ គម្រោង​មួយ​ដែល​ទទេ ?"
 
-#: core/kexiproject.cpp:1047
+#: core/kexiproject.cpp:1051
 #, kde-format
 msgid "Do you want to drop the project \"%1\"?"
 msgstr "តើអ្នក​ចង់​ទម្លាក់​គម្រោង \"%1\"?"
 
-#: core/kexiproject.cpp:1057
+#: core/kexiproject.cpp:1061
 msgid ""
 "Could not drop this project. Database connection for this project has been "
 "opened as read only."
