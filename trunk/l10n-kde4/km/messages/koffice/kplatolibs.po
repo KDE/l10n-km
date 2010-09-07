@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatolibs\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-02 07:05+0200\n"
+"POT-Creation-Date: 2010-09-07 02:37+0200\n"
 "PO-Revision-Date: 2010-03-09 09:17+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -357,15 +357,15 @@ msgid "Receive"
 msgstr "ទទួល"
 
 #: kernel/kptcalendar.h:259 kernel/kptcalendar.h:270
-#: models/kptcalendarmodel.cpp:1012 ui/kptcalendareditor.cpp:205
-#: ui/kptcalendareditor.cpp:643
+#: models/kptcalendarmodel.cpp:1012 ui/kptcalendareditor.cpp:206
+#: ui/kptcalendareditor.cpp:644
 #, fuzzy
 msgid "Undefined"
 msgstr "មិន​បាន​កំណត់"
 
 #: kernel/kptcalendar.h:261 kernel/kptcalendar.h:270
-#: models/kptcalendarmodel.cpp:1015 ui/kptcalendareditor.cpp:203
-#: ui/kptcalendareditor.cpp:641
+#: models/kptcalendarmodel.cpp:1015 ui/kptcalendareditor.cpp:204
+#: ui/kptcalendareditor.cpp:642
 #, fuzzy
 msgid "Non-working"
 msgstr "មិន​ធ្វើ​ការ"
@@ -805,7 +805,7 @@ msgstr ""
 msgid "Path"
 msgstr "ផ្លូវ"
 
-#: models/kptpertcpmmodel.cpp:430 ui/kptscheduleeditor.cpp:626
+#: models/kptpertcpmmodel.cpp:430 ui/kptscheduleeditor.cpp:663
 #, fuzzy
 msgid "Critical Path"
 msgstr "ផ្លូវ​សំខាន់​បំផុត"
@@ -3355,9 +3355,12 @@ msgid "Add Sub-Milestone..."
 msgstr "បន្ថែម​ដំណាក់​កាល​រង​..."
 
 #: ui/kptdependencyeditor.cpp:2140 ui/kpttaskeditor.cpp:514
+#: ui/kptcalendareditor.cpp:631 ui/kptaccountseditor.cpp:236
+#: ui/kptscheduleeditor.cpp:282 ui/kptresourceeditor.cpp:278
 #, fuzzy
-msgid "Delete Task"
-msgstr "លុប​ភារកិច្ច"
+msgctxt "@action"
+msgid "Delete"
+msgstr "លុប"
 
 #: ui/kptwbsdefinitiondialog.cpp:35
 #, fuzzy
@@ -3515,17 +3518,17 @@ msgstr "គ្មាន​​គុណ​លក្ខណៈ​ភារកិច
 msgid "No resource attributed"
 msgstr "គ្មាន​គុណ​លក្ខណៈ​ធន​ធាន"
 
-#: ui/kptcalendareditor.cpp:201 ui/kptcalendareditor.cpp:639
+#: ui/kptcalendareditor.cpp:202 ui/kptcalendareditor.cpp:640
 #, fuzzy
 msgid "Work..."
 msgstr "ការងារ..."
 
-#: ui/kptcalendareditor.cpp:277 ui/kptcalendareditor.cpp:307
+#: ui/kptcalendareditor.cpp:278 ui/kptcalendareditor.cpp:308
 #, fuzzy
 msgid "Modify Weekday State"
 msgstr "កែប្រែ​ស្ថាន​ភាពថ្ងៃ​ធ្វើការ"
 
-#: ui/kptcalendareditor.cpp:394
+#: ui/kptcalendareditor.cpp:395
 #, fuzzy
 #| msgctxt "@info:whatsthis"
 #| msgid ""
@@ -3564,32 +3567,27 @@ msgstr ""
 "emphasis> បើសិន​ត្រូវ​បាន​ប្រើ​ដោយ​ធន​ធាន​ ឬ​ <emphasis>ថ្ងៃ​ធ្វើ​ការ​ទាំង​អស់​ដែល​មាន​</emphasis> "
 "បើ​សិន​ត្រូវ​បាន​ប្រើ​ដោយ​ភារកិច្ច ។ </para>"
 
-#: ui/kptcalendareditor.cpp:620
+#: ui/kptcalendareditor.cpp:621
 #, fuzzy
 msgid "Add Calendar"
 msgstr "បន្ថែម​ប្រតិទិន"
 
-#: ui/kptcalendareditor.cpp:625
+#: ui/kptcalendareditor.cpp:626
 #, fuzzy
 msgid "Add Subcalendar"
 msgstr "បន្ថែម​ប្រតិទិន​រង"
 
-#: ui/kptcalendareditor.cpp:630
-#, fuzzy
-msgid "Delete Selected Calendar"
-msgstr "លុប​ប្រតិទិន​ដែល​បាន​ជ្រើស"
-
-#: ui/kptcalendareditor.cpp:786 ui/kptcalendareditor.cpp:820
+#: ui/kptcalendareditor.cpp:787 ui/kptcalendareditor.cpp:821
 #, fuzzy
 msgid "Modify Calendar"
 msgstr "កែប្រែ​ប្រតិទិន"
 
-#: ui/kptcalendareditor.cpp:795 ui/kptcalendareditor.cpp:801
+#: ui/kptcalendareditor.cpp:796 ui/kptcalendareditor.cpp:802
 #, fuzzy, kde-format
 msgid "%1: Set to Non-Working"
 msgstr "%1 ៖ កំណត់​ទៅ​ជា​ថ្ងៃ​មិន​ធ្វើ​ការ"
 
-#: ui/kptcalendareditor.cpp:827
+#: ui/kptcalendareditor.cpp:828
 #, fuzzy, kde-format
 msgid "Set %1 to Undefined"
 msgstr "កំណត់​ %1 ​ទៅ​ជា​មិន​កំណត់"
@@ -3624,20 +3622,15 @@ msgstr "កែប្រែ​សេចក្តី​ពិពណ៌នា​អ
 msgid "Task Description"
 msgstr "សេចក្តី​ពិពណ៌នា​អំពី​ភារកិច្ច"
 
-#: ui/kptaccountseditor.cpp:222
+#: ui/kptaccountseditor.cpp:224
 #, fuzzy
 msgid "Add Account"
 msgstr "បន្ថែម​គណនី"
 
-#: ui/kptaccountseditor.cpp:228
+#: ui/kptaccountseditor.cpp:230
 #, fuzzy
 msgid "Add Subaccount"
 msgstr "បន្ថែម​គណនី​រង"
-
-#: ui/kptaccountseditor.cpp:234
-#, fuzzy
-msgid "Delete Selected Accounts"
-msgstr "លុប​គណនី​ដែល​បាន​ជ្រើស"
 
 #: ui/kptresourceappointmentsview.cpp:94 ui/kpttaskstatusview.cpp:415
 #, fuzzy
@@ -3709,53 +3702,48 @@ msgstr "ការកំណត់​គំនូស​តាង​ Gantt"
 msgid "Options"
 msgstr "ជម្រើស"
 
-#: ui/kptscheduleeditor.cpp:244
+#: ui/kptscheduleeditor.cpp:270
 #, fuzzy
 msgid "Add Schedule"
 msgstr "បន្ថែម​កាល​វិភាគ"
 
-#: ui/kptscheduleeditor.cpp:250
+#: ui/kptscheduleeditor.cpp:276
 #, fuzzy
 msgid "Add Sub-schedule"
 msgstr "បន្ថែម​កាល​វិភាគ​រង"
 
-#: ui/kptscheduleeditor.cpp:256
-#, fuzzy
-msgid "Delete Selection"
-msgstr "លុប​ជម្រើស"
-
-#: ui/kptscheduleeditor.cpp:262
+#: ui/kptscheduleeditor.cpp:288
 #, fuzzy
 msgid "Calculate"
 msgstr "គណនា"
 
-#: ui/kptscheduleeditor.cpp:268
+#: ui/kptscheduleeditor.cpp:294
 #, fuzzy
 msgid "Baseline"
 msgstr "បន្ទាត់​គោល"
 
-#: ui/kptscheduleeditor.cpp:322 ui/kptscheduleeditor.cpp:351
+#: ui/kptscheduleeditor.cpp:355 ui/kptscheduleeditor.cpp:388
 #, fuzzy
 msgid "Create sub-schedule"
 msgstr "បង្កើត​កាល​វិភាគ​រង"
 
-#: ui/kptscheduleeditor.cpp:333
+#: ui/kptscheduleeditor.cpp:366
 #, fuzzy, kde-format
 msgid "Add schedule %1"
 msgstr "បន្ថែម​កាល​វិភាគ​ %1"
 
-#: ui/kptscheduleeditor.cpp:419
+#: ui/kptscheduleeditor.cpp:456
 #, fuzzy
 msgctxt "@action"
 msgid "Show Debug Information"
 msgstr "បង្ហាញ​ព័ត៌មាន​អំពី​ការបំបាត់​កំហុស"
 
-#: ui/kptscheduleeditor.cpp:621
+#: ui/kptscheduleeditor.cpp:658
 #, fuzzy
 msgid "Result"
 msgstr "លទ្ធផល"
 
-#: ui/kptscheduleeditor.cpp:631
+#: ui/kptscheduleeditor.cpp:668
 #, fuzzy
 msgid "Scheduling Log"
 msgstr "កំណត់​ហេតុ​កំណត់​ពេល​"
@@ -3972,11 +3960,6 @@ msgstr "បន្ថែម​ក្រុម​ធន​ធាន​..."
 #, fuzzy
 msgid "Add Resource..."
 msgstr "បន្ថែម​ធន​ធាន..."
-
-#: ui/kptresourceeditor.cpp:278
-#, fuzzy
-msgid "Delete Selected Items"
-msgstr "លុប​ធាតុ​ដែល​បាន​ជ្រើស"
 
 #: ui/kptmilestoneprogressdialog.cpp:39
 #, fuzzy
@@ -5502,6 +5485,26 @@ msgstr "អត្រាគិត​ជា​ម៉ោង ៖"
 #, fuzzy
 msgid "Overtime rate:"
 msgstr "អត្រា​ម៉ោង​លើស ៖"
+
+#, fuzzy
+#~ msgid "Delete Task"
+#~ msgstr "លុប​ភារកិច្ច"
+
+#, fuzzy
+#~ msgid "Delete Selected Calendar"
+#~ msgstr "លុប​ប្រតិទិន​ដែល​បាន​ជ្រើស"
+
+#, fuzzy
+#~ msgid "Delete Selected Accounts"
+#~ msgstr "លុប​គណនី​ដែល​បាន​ជ្រើស"
+
+#, fuzzy
+#~ msgid "Delete Selection"
+#~ msgstr "លុប​ជម្រើស"
+
+#, fuzzy
+#~ msgid "Delete Selected Items"
+#~ msgstr "លុប​ធាតុ​ដែល​បាន​ជ្រើស"
 
 #, fuzzy
 #~ msgid "Make appointments: Invalid interval %1 to %2"
