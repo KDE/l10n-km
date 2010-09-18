@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-17 06:10+0200\n"
+"POT-Creation-Date: 2010-09-18 06:08+0200\n"
 "PO-Revision-Date: 2010-05-19 03:04+0700\n"
 "Last-Translator: Seng Sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <kde-i18n-doc@kde.org>\n"
@@ -102,7 +102,7 @@ msgstr "រៀប​បទ​ជា​ជួរ"
 #. i18n: ectx: property (text), widget (QPushButton, pushButton_cancel)
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:36
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
-#: TrayIconLegacy.cpp:224 rc.cpp:1600 rc.cpp:2279
+#: TrayIconLegacy.cpp:224 rc.cpp:1600 rc.cpp:2316
 msgid "&Cancel"
 msgstr "បោះបង់"
 
@@ -1148,8 +1148,6 @@ msgstr "សមាមាត្រ ៖"
 
 #. i18n: file: playlistgenerator/constraints/CheckpointEditWidget.ui:113
 #. i18n: ectx: property (text), widget (QLabel, label_Strictness)
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:100
-#. i18n: ectx: property (text), widget (QLabel, label_Strictness)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:164
 #. i18n: ectx: property (text), widget (QLabel, label_StrictnessInt)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:343
@@ -1158,10 +1156,14 @@ msgstr "សមាមាត្រ ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_StrictnessTime)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:658
 #. i18n: ectx: property (text), widget (QLabel, label_StrictnessRating)
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:100
+#. i18n: ectx: property (text), widget (QLabel, label_Strictness)
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:96
+#. i18n: ectx: property (text), widget (QLabel, label_Strictness)
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:282
 #: browsers/playlistbrowser/DynamicBiasWidgets.cpp:920
-#: dynamic/biases/EchoNest.cpp:110 rc.cpp:1886 rc.cpp:1951 rc.cpp:2014
-#: rc.cpp:2050 rc.cpp:2101 rc.cpp:2131
+#: dynamic/biases/EchoNest.cpp:110 rc.cpp:1886 rc.cpp:1974 rc.cpp:2010
+#: rc.cpp:2061 rc.cpp:2091 rc.cpp:2131 rc.cpp:2168
 msgid "Match:"
 msgstr "ផ្គូផ្គង ៖"
 
@@ -1671,7 +1673,7 @@ msgstr "អត្ថបទ​ចម្រៀង"
 #. i18n: file: services/magnatune/MagnatuneSignupDialogBase.ui:45
 #. i18n: ectx: property (text), widget (QPushButton, closeButton)
 #: context/applets/lyrics/LyricsApplet.cpp:102
-#: firstruntutorial/FirstRunTutorialPage.cpp:56 rc.cpp:2304
+#: firstruntutorial/FirstRunTutorialPage.cpp:56 rc.cpp:2341
 msgid "Close"
 msgstr "បិទ"
 
@@ -2906,7 +2908,7 @@ msgstr "បង្ហាញ​នៅ​ក្រោម​សិល្បករ​
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:90
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: core-impl/collections/sqlcollection/SqlMeta.cpp:233 rc.cpp:2215
+#: core-impl/collections/sqlcollection/SqlMeta.cpp:233 rc.cpp:2252
 msgid "Stream"
 msgstr "ស្ទ្រីម"
 
@@ -3936,10 +3938,10 @@ msgstr ""
 
 #: databaseimporter/amarok14/FastForwardImporterConfig.cpp:94
 msgid ""
-"If enabled, tracks from old collection that do not exist anymore in "
-"filesystem are searched by metadata in current collection. If a match is "
-"found, statistics for matched track are updated even if file locations "
-"differ."
+"If enabled, tracks from the old collection that do not exist anymore in the "
+"file system are searched for (by metadata) in the current collection. If a "
+"match is found, statistics for the matched track are updated, even if the "
+"file locations differ."
 msgstr ""
 
 #: databaseimporter/amarok14/FastForwardImporterConfig.cpp:100
@@ -3971,52 +3973,73 @@ msgstr "មិនអាចប្រតិបត្តិ %1 បាន​ឡើ�
 
 #: databaseimporter/amarok14/FastForwardWorker.cpp:237
 msgid ""
-"(track exists, but does not belong into any of your configured collection "
+"(track exists, but does not belong in any of your configured collection "
 "folders)"
 msgstr ""
 
 #: databaseimporter/amarok14/FastForwardWorker.cpp:272
 #, kde-format
-msgid "Adding <b>%1 new tracks</b> to Amarok collection <b>%2</b>."
-msgstr ""
+msgid "Adding <b>1 new track</b> to Amarok collection <b>%2</b>."
+msgid_plural "Adding <b>%1 new tracks</b> to Amarok collection <b>%2</b>."
+msgstr[0] ""
 
-#: databaseimporter/amarok14/FastForwardWorker.cpp:385
+#: databaseimporter/amarok14/FastForwardWorker.cpp:386
 #, fuzzy, kde-format
 msgid "Cannot import statistics for %1"
 msgstr "ស្ថិតិ"
 
-#: databaseimporter/amarok14/FastForwardWorker.cpp:415
+#: databaseimporter/amarok14/FastForwardWorker.cpp:416
 #, fuzzy, kde-format
 msgid "Could not execute labels import query: %1; query was: %2"
 msgstr "មិនអាចប្រតិបត្តិ %1 បាន​ឡើយ"
 
-#: databaseimporter/amarok14/FastForwardWorker.cpp:438
+#: databaseimporter/amarok14/FastForwardWorker.cpp:439
 #, kde-format
-msgid "Updating cached lyrics and labels for %1 tracks..."
-msgstr ""
+msgid "Updating cached lyrics and labels for 1 track..."
+msgid_plural "Updating cached lyrics and labels for %1 tracks..."
+msgstr[0] ""
 
-#: databaseimporter/amarok14/FastForwardWorker.cpp:453
+#: databaseimporter/amarok14/FastForwardWorker.cpp:455
 #, kde-format
 msgid "Failed to update lyrics/labels for track %1"
 msgstr ""
 
-#: databaseimporter/amarok14/FastForwardWorker.cpp:473
-#, kde-format
-msgid "Cached lyrics updated for %1 tracks, labels added to %2 tracks."
-msgstr ""
+#: databaseimporter/amarok14/FastForwardWorker.cpp:475
+#, fuzzy, kde-format
+#| msgid "There were no lyrics found for this track"
+msgid "Cached lyrics updated for 1 track"
+msgid_plural "Cached lyrics updated for %1 tracks"
+msgstr[0] "រក​មិនឃើញ​អត្ថបទ​ចម្រៀង​សម្រាប់​បទ​នេះ"
 
-#: databaseimporter/amarok14/FastForwardWorker.cpp:480
+#: databaseimporter/amarok14/FastForwardWorker.cpp:479
+#, kde-format
+msgid "labels added to 1 track"
+msgid_plural "labels added to %1 tracks"
+msgstr[0] ""
+
+#: databaseimporter/amarok14/FastForwardWorker.cpp:485
+#, fuzzy, kde-format
+#| msgctxt "monthname year"
+#| msgid "%1 %2"
+msgctxt ""
+"%1 is e.g. Cached lyrics updated for 2 tracks, %2 is e.g. labels added to 3 "
+"tracks"
+msgid "%1, %2."
+msgstr "%1 %2"
+
+#: databaseimporter/amarok14/FastForwardWorker.cpp:492
 #, fuzzy
 #| msgid "Importing downloaded album art"
 msgid "Importing downloaded album art..."
 msgstr "នាំចូល​​សិល្បះ​អាល់ប៊ុម​ដែល​បាន​ទាញ​យក"
 
-#: databaseimporter/amarok14/FastForwardWorker.cpp:514
+#: databaseimporter/amarok14/FastForwardWorker.cpp:526
 #, fuzzy, kde-format
 #| msgctxt "'Cover image' playlist column name and token for playlist layouts"
 #| msgid "Cover image"
-msgid "Copied %1 cover images."
-msgstr "រូបភាព​គម្រប"
+msgid "Copied 1 cover image."
+msgid_plural "Copied %1 cover images."
+msgstr[0] "រូបភាព​គម្រប"
 
 #: dialogs/DatabaseImporterDialog.cpp:37
 msgid "Import Collection"
@@ -6342,7 +6365,7 @@ msgstr "ប្លង់​បញ្ជី​ចាក់"
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:36
-#: playlist/layouts/PlaylistLayoutEditDialog.cpp:524 rc.cpp:2341
+#: playlist/layouts/PlaylistLayoutEditDialog.cpp:524 rc.cpp:2378
 #, fuzzy
 msgid "No Grouping"
 msgstr "មិនដាក់​ជាក្រុម​"
@@ -6530,39 +6553,6 @@ msgstr "បែបផែន"
 msgid "Too many errors encountered in playlist. Playback stopped."
 msgstr "បាន​ជួប​ប្រទះ​កំហុស​​ច្រើន​ពេក​នៅ​ក្នុង​បញ្ជី​ចាក់ ។ បាន​បញ្ឈប់​ការ​ចាក់​ឡើង​វិញ ។"
 
-#: playlistgenerator/ConstraintSolver.cpp:230
-msgid "The playlist generator failed to load any tracks from the collection."
-msgstr ""
-
-#: playlistgenerator/ConstraintSolver.cpp:237
-msgid ""
-"There are no tracks that match all constraints.  The playlist generator will "
-"find the tracks that match best, but you may want to consider loosening the "
-"constraints to find more tracks."
-msgstr ""
-
-#: playlistgenerator/Preset.cpp:41 playlistgenerator/Preset.cpp:54
-#, fuzzy
-msgid "New playlist preset"
-msgstr "ប្លង់​បញ្ជី​ចាក់​ថ្មី"
-
-#: playlistgenerator/Preset.cpp:44 playlistgenerator/Preset.cpp:66
-#, fuzzy
-msgid "Unnamed playlist preset"
-msgstr "រក្សាទុក​បញ្ជី​ចាក់​ជា"
-
-#: playlistgenerator/Preset.cpp:128
-#, fuzzy
-msgid "Generating a new playlist"
-msgstr "កំពុង​បង្កើត​បញ្ជី​ចាក់..."
-
-#: playlistgenerator/Preset.cpp:148
-msgid ""
-"The playlist generator created a playlist which does not meet all of your "
-"constraints.  If you are not satisfied with the results, try loosening or "
-"removing some constraints and then generating a new playlist."
-msgstr ""
-
 #: playlistgenerator/constraints/TagMatchSupport.cpp:86
 msgid "url"
 msgstr ""
@@ -6658,48 +6648,6 @@ msgstr "%1 អាល់ប៊ុម"
 msgid "\"%1\" (artist)"
 msgstr "សិល្បករ %1"
 
-#: playlistgenerator/constraints/PlaylistLength.cpp:58
-#, fuzzy
-#| msgid "Playlist Options"
-msgid "Playlist Duration"
-msgstr "ជម្រើស​បញ្ជី​ចាក់"
-
-#: playlistgenerator/constraints/PlaylistLength.cpp:59
-#, fuzzy
-msgid "Sets the preferred duration of the playlist"
-msgstr "បញ្ជី​ចាក់ និងបាននាំចូល​ដោយ​អ្នកប្រើ"
-
-#: playlistgenerator/constraints/PlaylistLength.cpp:118
-#, fuzzy, kde-format
-msgid "Playlist duration %1 %2"
-msgstr "បញ្ជីចាក់ %1"
-
-#: playlistgenerator/constraints/PlaylistLength.cpp:260
-#, fuzzy
-msgctxt "duration of playlist equals some time"
-msgid "equals"
-msgstr "ស្មើ​"
-
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:52
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
-#: playlistgenerator/constraints/PlaylistLength.cpp:262 rc.cpp:1939
-#, fuzzy
-msgid "longer than"
-msgstr "វែងជាង​"
-
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:42
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
-#: playlistgenerator/constraints/PlaylistLength.cpp:264 rc.cpp:1933
-#, fuzzy
-msgid "shorter than"
-msgstr "ខ្លី​ជាង​"
-
-#: playlistgenerator/constraints/PlaylistLength.cpp:266
-#: playlistgenerator/constraints/TagMatch.cpp:486
-#, fuzzy
-msgid "unknown comparison"
-msgstr "មិន​ស្គាល់​សិល្បករ"
-
 #: playlistgenerator/constraints/PreventDuplicates.cpp:53
 #, fuzzy
 msgid "Prevent Duplicates"
@@ -6733,6 +6681,89 @@ msgstr "សិល្បករ​"
 #: playlistgenerator/constraints/PreventDuplicates.cpp:108 rc.cpp:1917
 msgid "albums"
 msgstr "អាល់ប៊ុម​"
+
+#: playlistgenerator/constraints/PlaylistDuration.cpp:58
+#, fuzzy
+#| msgid "Playlist Options"
+msgid "Playlist Duration"
+msgstr "ជម្រើស​បញ្ជី​ចាក់"
+
+#: playlistgenerator/constraints/PlaylistDuration.cpp:59
+#, fuzzy
+msgid "Sets the preferred duration of the playlist"
+msgstr "បញ្ជី​ចាក់ និងបាននាំចូល​ដោយ​អ្នកប្រើ"
+
+#: playlistgenerator/constraints/PlaylistDuration.cpp:118
+#, fuzzy, kde-format
+msgid "Playlist duration: %1 %2"
+msgstr "បញ្ជីចាក់ %1"
+
+#: playlistgenerator/constraints/PlaylistDuration.cpp:260
+#, fuzzy
+msgctxt "duration of playlist equals some time"
+msgid "equals"
+msgstr "ស្មើ​"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:52
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
+#: playlistgenerator/constraints/PlaylistDuration.cpp:262 rc.cpp:2119
+#, fuzzy
+msgid "longer than"
+msgstr "វែងជាង​"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:42
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
+#: playlistgenerator/constraints/PlaylistDuration.cpp:264 rc.cpp:2113
+#, fuzzy
+msgid "shorter than"
+msgstr "ខ្លី​ជាង​"
+
+#: playlistgenerator/constraints/PlaylistDuration.cpp:266
+#: playlistgenerator/constraints/PlaylistLength.cpp:204
+#: playlistgenerator/constraints/TagMatch.cpp:472
+#, fuzzy
+msgid "unknown comparison"
+msgstr "មិន​ស្គាល់​សិល្បករ"
+
+#: playlistgenerator/constraints/PlaylistLength.cpp:58
+#, fuzzy
+msgid "Playlist Length"
+msgstr "បញ្ជីចាក់"
+
+#: playlistgenerator/constraints/PlaylistLength.cpp:59
+#, fuzzy
+msgid "Sets the preferred number of tracks in the playlist"
+msgstr "បញ្ជី​ចាក់ និងបាននាំចូល​ដោយ​អ្នកប្រើ"
+
+#: playlistgenerator/constraints/PlaylistLength.cpp:119
+#, fuzzy, kde-format
+msgid "Playlist length: %1 %2 tracks"
+msgstr "បញ្ជីចាក់ %1"
+
+#: playlistgenerator/constraints/PlaylistLength.cpp:198
+#, fuzzy
+msgctxt "number of tracks in playlist equals some number"
+msgid "equals"
+msgstr "ស្មើ​"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:52
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
+#: playlistgenerator/constraints/PlaylistLength.cpp:200 rc.cpp:2159
+#, fuzzy
+msgid "more than"
+msgstr "ខ្លី​ជាង​"
+
+#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:116
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonInt)
+#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:470
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonTime)
+#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:607
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
+#: playlistgenerator/constraints/PlaylistLength.cpp:202
+#: playlistgenerator/constraints/TagMatch.cpp:447 rc.cpp:1959 rc.cpp:2043
+#: rc.cpp:2076
+msgid "less than"
+msgstr "តិចជាង"
 
 #: playlistgenerator/constraints/TagMatch.cpp:56
 #, fuzzy
@@ -6781,39 +6812,28 @@ msgstr "ស្មើ​"
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonTime)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:617
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
-#: playlistgenerator/constraints/TagMatch.cpp:445 rc.cpp:2005 rc.cpp:2089
-#: rc.cpp:2122
+#: playlistgenerator/constraints/TagMatch.cpp:445 rc.cpp:1965 rc.cpp:2049
+#: rc.cpp:2082
 #, fuzzy
 msgid "greater than"
 msgstr "ច្រើន​​ជាង"
 
-#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:116
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonInt)
-#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:470
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonTime)
-#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:607
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
-#: playlistgenerator/constraints/TagMatch.cpp:447 rc.cpp:1999 rc.cpp:2083
-#: rc.cpp:2116
-msgid "less than"
-msgstr "តិចជាង"
-
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:236
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonDate)
-#: playlistgenerator/constraints/TagMatch.cpp:451 rc.cpp:2029
+#: playlistgenerator/constraints/TagMatch.cpp:451 rc.cpp:1989
 #, fuzzy
 msgid "before"
 msgstr "មុន"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:241
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonDate)
-#: playlistgenerator/constraints/TagMatch.cpp:453 rc.cpp:2032
+#: playlistgenerator/constraints/TagMatch.cpp:453 rc.cpp:1992
 msgid "on"
 msgstr "លើ​"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:246
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonDate)
-#: playlistgenerator/constraints/TagMatch.cpp:455 rc.cpp:2035
+#: playlistgenerator/constraints/TagMatch.cpp:455 rc.cpp:1995
 #, fuzzy
 msgid "after"
 msgstr "បន្ទាប់​ពី"
@@ -6823,14 +6843,13 @@ msgstr "បន្ទាប់​ពី"
 msgid "within"
 msgstr "ដោយ"
 
-#: playlistgenerator/constraints/TagMatch.cpp:463
-#: playlistgenerator/constraints/TagMatch.cpp:475
+#: playlistgenerator/constraints/TagMatch.cpp:461
 #, fuzzy
 msgctxt "an alphabetical tag (like title or artist name) equals some string"
 msgid "equals"
 msgstr "ស្មើ​"
 
-#: playlistgenerator/constraints/TagMatch.cpp:465
+#: playlistgenerator/constraints/TagMatch.cpp:463
 #, fuzzy
 #| msgid "starts with"
 msgctxt ""
@@ -6838,51 +6857,26 @@ msgctxt ""
 msgid "starts with"
 msgstr "ចាប់ផ្ដើម​ដោយ"
 
-#: playlistgenerator/constraints/TagMatch.cpp:467
+#: playlistgenerator/constraints/TagMatch.cpp:465
 #, fuzzy
 #| msgid "ends with"
 msgctxt "an alphabetical tag (like title or artist name) ends with some string"
 msgid "ends with"
 msgstr "បញ្ចប់​ដោយ"
 
-#: playlistgenerator/constraints/TagMatch.cpp:469
+#: playlistgenerator/constraints/TagMatch.cpp:467
 #, fuzzy
 #| msgid "contains"
 msgctxt "an alphabetical tag (like title or artist name) contains some string"
 msgid "contains"
 msgstr "មាន"
 
-#: playlistgenerator/constraints/TagMatch.cpp:471
-#: playlistgenerator/constraints/TagMatch.cpp:483
+#: playlistgenerator/constraints/TagMatch.cpp:469
 msgid "regexp"
 msgstr ""
 
-#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:417
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonString)
-#: playlistgenerator/constraints/TagMatch.cpp:477
-#: widgets/SmartPlaylistEditor.cpp:737 widgets/SmartPlaylistEditor.cpp:1034
-#: rc.cpp:2068
-msgid "starts with"
-msgstr "ចាប់ផ្ដើម​ដោយ"
-
-#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:422
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonString)
-#: playlistgenerator/constraints/TagMatch.cpp:479
-#: widgets/SmartPlaylistEditor.cpp:759 widgets/SmartPlaylistEditor.cpp:1035
-#: rc.cpp:2071
-msgid "ends with"
-msgstr "បញ្ចប់​ដោយ"
-
-#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:427
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonString)
-#: playlistgenerator/constraints/TagMatch.cpp:481
-#: widgets/SmartPlaylistEditor.cpp:715 widgets/SmartPlaylistEditor.cpp:1033
-#: rc.cpp:2074
-msgid "contains"
-msgstr "មាន"
-
-#: playlistgenerator/constraints/TagMatch.cpp:656
-#: playlistgenerator/constraints/TagMatch.cpp:873
+#: playlistgenerator/constraints/TagMatch.cpp:642
+#: playlistgenerator/constraints/TagMatch.cpp:859
 #, fuzzy
 #| msgid "days"
 msgctxt "within the last %1 days"
@@ -6890,8 +6884,8 @@ msgid "day"
 msgid_plural "days"
 msgstr[0] "ថ្ងៃ​"
 
-#: playlistgenerator/constraints/TagMatch.cpp:657
-#: playlistgenerator/constraints/TagMatch.cpp:874
+#: playlistgenerator/constraints/TagMatch.cpp:643
+#: playlistgenerator/constraints/TagMatch.cpp:860
 #, fuzzy
 #| msgid "months"
 msgctxt "within the last %1 months"
@@ -6899,8 +6893,8 @@ msgid "month"
 msgid_plural "months"
 msgstr[0] "ខែ​"
 
-#: playlistgenerator/constraints/TagMatch.cpp:658
-#: playlistgenerator/constraints/TagMatch.cpp:875
+#: playlistgenerator/constraints/TagMatch.cpp:644
+#: playlistgenerator/constraints/TagMatch.cpp:861
 #, fuzzy
 #| msgid "year"
 msgctxt "within the last %1 years"
@@ -6943,6 +6937,39 @@ msgstr "ផ្គូផ្គង​ពាក្យ​ទាំងអស់"
 msgctxt "name of a type of constraint group"
 msgid "Unknown match group"
 msgstr "មិន​ស្គាល់​បទ"
+
+#: playlistgenerator/ConstraintSolver.cpp:236
+msgid "The playlist generator failed to load any tracks from the collection."
+msgstr ""
+
+#: playlistgenerator/ConstraintSolver.cpp:243
+msgid ""
+"There are no tracks that match all constraints.  The playlist generator will "
+"find the tracks that match best, but you may want to consider loosening the "
+"constraints to find more tracks."
+msgstr ""
+
+#: playlistgenerator/Preset.cpp:41 playlistgenerator/Preset.cpp:54
+#, fuzzy
+msgid "New playlist preset"
+msgstr "ប្លង់​បញ្ជី​ចាក់​ថ្មី"
+
+#: playlistgenerator/Preset.cpp:44 playlistgenerator/Preset.cpp:66
+#, fuzzy
+msgid "Unnamed playlist preset"
+msgstr "រក្សាទុក​បញ្ជី​ចាក់​ជា"
+
+#: playlistgenerator/Preset.cpp:128
+#, fuzzy
+msgid "Generating a new playlist"
+msgstr "កំពុង​បង្កើត​បញ្ជី​ចាក់..."
+
+#: playlistgenerator/Preset.cpp:148
+msgid ""
+"The playlist generator created a playlist which does not meet all of your "
+"constraints.  If you are not satisfied with the results, try loosening or "
+"removing some constraints and then generating a new playlist."
+msgstr ""
 
 #: playlistgenerator/PresetModel.cpp:157 playlistgenerator/PresetModel.cpp:283
 msgid "Preset files (*.xml)"
@@ -7038,7 +7065,7 @@ msgstr "យក​ចេញពី​បញ្ជីចាក់"
 #. i18n: ectx: property (text), widget (QPushButton, removeButton)
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:98
 #. i18n: ectx: property (text), widget (KPushButton, removeButton)
-#: playlistmanager/file/PlaylistFileProvider.cpp:198 rc.cpp:1582 rc.cpp:2164
+#: playlistmanager/file/PlaylistFileProvider.cpp:198 rc.cpp:1582 rc.cpp:2201
 msgid "Remove"
 msgstr "យក​ចេញ"
 
@@ -7173,7 +7200,7 @@ msgstr "ពី Jamendo.com"
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:83
 #. i18n: ectx: property (text), widget (QPushButton, downloadButton)
 #: services/jamendo/JamendoMeta.cpp:135 services/jamendo/JamendoMeta.cpp:371
-#: rc.cpp:2267
+#: rc.cpp:2304
 msgid "&Download"
 msgstr "ទាញយក"
 
@@ -7236,7 +7263,7 @@ msgstr "ធ្វើ​ឲ្យ​ទាន់​សម័យ"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:95
 #. i18n: ectx: property (text), item, widget (QComboBox, typeComboBox)
-#: services/jamendo/JamendoService.cpp:124 rc.cpp:2218
+#: services/jamendo/JamendoService.cpp:124 rc.cpp:2255
 msgid "Download"
 msgstr "ទាញយក"
 
@@ -7565,7 +7592,7 @@ msgstr "ការ​ចូលចុងក្រោយ"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:96
 #. i18n: ectx: property (text), widget (QPushButton, testLogin)
-#: services/lastfm/LastFmServiceSettings.cpp:196 rc.cpp:2182
+#: services/lastfm/LastFmServiceSettings.cpp:196 rc.cpp:2219
 msgid "&Test Login"
 msgstr "ការ​ចូល​ចុងក្រោយ"
 
@@ -8226,6 +8253,13 @@ msgstr "នៅ​ចុងក្រោយ"
 msgid "is not in the last"
 msgstr "មិន​នៅ​ចុងក្រោយ"
 
+#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:427
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonString)
+#: widgets/SmartPlaylistEditor.cpp:715 widgets/SmartPlaylistEditor.cpp:1033
+#: rc.cpp:2034
+msgid "contains"
+msgstr "មាន"
+
 #: widgets/SmartPlaylistEditor.cpp:717 widgets/SmartPlaylistEditor.cpp:1033
 msgid "does not contain"
 msgstr "មិន​មាន"
@@ -8240,9 +8274,23 @@ msgstr "ជា"
 msgid "is not"
 msgstr "មិន​មែន"
 
+#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:417
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonString)
+#: widgets/SmartPlaylistEditor.cpp:737 widgets/SmartPlaylistEditor.cpp:1034
+#: rc.cpp:2028
+msgid "starts with"
+msgstr "ចាប់ផ្ដើម​ដោយ"
+
 #: widgets/SmartPlaylistEditor.cpp:748 widgets/SmartPlaylistEditor.cpp:1034
 msgid "does not start with"
 msgstr "មិន​ចាប់ផ្ដើម​ដោយ"
+
+#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:422
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonString)
+#: widgets/SmartPlaylistEditor.cpp:759 widgets/SmartPlaylistEditor.cpp:1035
+#: rc.cpp:2031
+msgid "ends with"
+msgstr "បញ្ចប់​ដោយ"
 
 #: widgets/SmartPlaylistEditor.cpp:761 widgets/SmartPlaylistEditor.cpp:1035
 msgid "does not end with"
@@ -10352,267 +10400,11 @@ msgstr "ការ​រៀបចំ​សម្រាំង"
 msgid "Collection Folders"
 msgstr "ថត​សម្រាំង"
 
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:17
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_UseServer)
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:20
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_UseServer)
-#: rc.cpp:647 rc.cpp:650
-msgid ""
-"Check to enable the use of an external database. Default there already is an "
-"embedded MySQL database running."
-msgstr ""
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:23
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseServer)
-#: rc.cpp:653
-#, fuzzy
-msgid "Use &external MySQL database"
-msgstr "ប្រើ​មូលដ្ឋានទិន្នន័យ MySQL ខាងក្រៅ"
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:30
-#. i18n: ectx: property (title), widget (QGroupBox, group_Connection)
-#: rc.cpp:656
-#, fuzzy
-msgid "Connection Settings"
-msgstr "កំណត់​ការតភ្ជាប់​"
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:38
-#. i18n: ectx: property (text), widget (QLabel, label_Host)
-#: rc.cpp:659
-msgid "&Server:"
-msgstr "ម៉ាស៊ីន​បម្រើ ៖"
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:55
-#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_Host)
-#: rc.cpp:662
-msgid "Enter the name of the existing MySQL server\n"
-msgstr ""
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:71
-#. i18n: ectx: property (text), widget (QLabel, label_Port)
-#: rc.cpp:666
-msgid "P&ort:"
-msgstr "ច្រក​ ៖"
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:91
-#. i18n: ectx: property (toolTip), widget (QSpinBox, kcfg_Port)
-#: rc.cpp:669
-msgid "Enter the port number to access the server. Default is port 3306.\n"
-msgstr ""
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:101
-#. i18n: ectx: property (text), widget (QLabel, label_User)
-#. i18n: file: services/lastfm/LastFmConfigWidget.ui:44
-#. i18n: ectx: property (text), widget (QLabel, labelUsername)
-#: rc.cpp:673 rc.cpp:2173
-msgid "&Username:"
-msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:118
-#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_Password)
-#: rc.cpp:676
-#, fuzzy
-msgid "Enter the password for the default user.\n"
-msgstr "ពាក្យ​សម្ងាត់​សម្រាប់​អ្នក​ប្រើ​​មូល​ដ្ឋាន​ទិន្នន័យ​ខាង​ក្រៅ ។"
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:134
-#. i18n: ectx: property (text), widget (QLabel, label_Password)
-#. i18n: file: services/lastfm/LastFmConfigWidget.ui:57
-#. i18n: ectx: property (text), widget (QLabel, labelPassword)
-#: rc.cpp:680 rc.cpp:2176
-msgid "&Password:"
-msgstr "ពាក្យ​សម្ងាត់ ៖"
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:151
-#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_User)
-#: rc.cpp:683
-msgid ""
-"Enter the username to access the database with full access privileges.\n"
-msgstr ""
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:161
-#. i18n: ectx: property (text), widget (QLabel, label_Database)
-#: rc.cpp:687
-msgid "&Database:"
-msgstr "មូលដ្ឋាន​ទិន្នន័យ "
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:178
-#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_Database)
-#: rc.cpp:690
-msgid "Enter the name of the database. Default preset is amarokdb.\n"
-msgstr ""
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:199
-#. i18n: ectx: property (text), widget (QLabel, label_Info)
-#: rc.cpp:694
-#, fuzzy
-msgid ""
-"Amarok expects the above database and user account to already exist. This "
-"user also requires full access to the database. You MUST restart Amarok "
-"after changing these settings."
-msgstr ""
-"រំពឹង Amarok មូល​ដ្ឋាន​ទិន្ន​ន័យ​ខាង​លើ​ហើយគណនី​អ្នក​ប្រើ​មាន​រួច​​ហើយ​ ។ តំរូវការ​អ្នក​ប្រើ​នេះ​ចូល​ដំ​ណើរ​ការ​ពេញ​"
-"លេញ​ទៅ​មូល​ដ្ឋាន​ទិន្ន​ន័យ ។ អ្នក​ត្រូវ​តែចាប់​ផ្តើម​ Amarok ឡើង​វិញ​ក្រោយ​ពេល​ផ្លាស់​ប្តូរ​ការ​កំ​ណត់​នេះ ។ "
-
-#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:209
-#. i18n: ectx: property (text), widget (QLabel, label_SQL)
-#: rc.cpp:697
-#, fuzzy
-msgid ""
-"If your database is not already set up, you can use the following S&QL "
-"commands (after replacing the password with the correct one):"
-msgstr ""
-"ប្រសិន​បើ​មូលដ្ឋានទិន្នន័យ​មិនទាន់​រៀបចំរួចទេ អ្នក​អាច​ប្រើ​​ការ​បំ​ពេញ​ពាក្យ​បញ្ជា SQL ( ក្រោយ​ពេល​ការ​ជំនួល​"
-"ពាក្យ​សម្ងាត់​ត្រឹម​ត្រូវ ) ៖"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:23
-#. i18n: ectx: property (title), widget (QGroupBox, generalBox)
-#: rc.cpp:700
-msgid "General Options"
-msgstr "ជម្រើស​ទូទៅ"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:29
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowSplashscreen)
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:32
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShowSplashscreen)
-#: rc.cpp:703 rc.cpp:706
-msgid "Check to enable the splashscreen during Amarok startup."
-msgstr "គូស​ធីក​ដើម្បី​អនុញ្ញាត​អេក្រង់​ស្វាគមន៍​កំឡុង​ពេល​ដំឡើង Amarok ។"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:35
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowSplashscreen)
-#: rc.cpp:709
-msgid "Sho&w splash-screen on startup"
-msgstr "បង្ហាញ​អេក្រង់​ស្វាគមន៍​ពេល​ចាប់ផ្ដើម​"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:42
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowTrayIcon)
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:45
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShowTrayIcon)
-#: rc.cpp:712 rc.cpp:715
-msgid "Check to enable the Amarok system tray icon."
-msgstr "គូស​ធីក​ដើម្បី​អនុញ្ញាត​រូបតំណាង​ថាស​ប្រព័ន្ធ​របស់ Amarok ។"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:48
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowTrayIcon)
-#: rc.cpp:718
-msgid "Show tray &icon"
-msgstr "បង្ហាញ​រូបតំណាង​ក្នុង​ថាស​ប្រព័ន្ធ​"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:55
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoGetCoverArt)
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:58
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoGetCoverArt)
-#: rc.cpp:721 rc.cpp:724
-msgid "Check to enable the automatic retrieval of cover art from the internet"
-msgstr ""
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:61
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoGetCoverArt)
-#: rc.cpp:727
-msgid "Automatically retrieve cover art"
-msgstr "ទៅ​យក​គម្រោង​សិល្បៈ​ដោយ​ស្វ័យប្រវត្តិ"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:71
-#. i18n: ectx: property (title), widget (QGroupBox, playlistBox)
-#: rc.cpp:730
-msgid "Playlist Options"
-msgstr "ជម្រើស​បញ្ជី​ចាក់"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:77
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoScrollPlaylist)
-#: rc.cpp:733
-#, fuzzy
-#| msgid ""
-#| "Automatically scroll the playlist to make the currently playing song "
-#| "visible"
-msgid ""
-"Check to make the playlist scroll so the current track is always visible."
-msgstr "រមូរ​បញ្ជី​ចាក់​ដោយ​ស្វ័យ​ប្រវត្តិ​ ដើម្បី​ធ្វើ​ឲ្យ​ចម្រៀង​ដែល​កំពុង​ចាក់​មើល​ឃើញ"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:80
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoScrollPlaylist)
-#: rc.cpp:736
-msgid "Automatically scroll playlist to current track"
-msgstr "រមូរ​បញ្ជីចាក់​ដោយ​ស្វ័យ​ប្រវត្តិ​ទៅ​បទ​បច្ចុប្បន្ន"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:90
-#. i18n: ectx: property (title), widget (QGroupBox, moodbarBox)
-#: rc.cpp:739
-#, fuzzy
-msgid "Moodbar Options"
-msgstr "ជម្រើស​ Moodbar "
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:97
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowMoodbarInSlider)
-#: rc.cpp:742
-#, fuzzy
-msgid ""
-"The Moodbar makes it possible to navigate in your music visually.\n"
-"Please note that this feature requires the external \"Moodbar Generator\" "
-"tool."
-msgstr ""
-"បង្កើត​ Moodbar វា​អាច​ត្រូវរុករក​ក្នុងតន្ត្រី​ដោយ​ចក្ខុរបស់​អ្នក​ ។\n"
-"សូម​សម្គាល់​ថា​វាទាមទារលក្ខណ​ពិសេសខាងក្រៅ​ឧបករណ៍ \"កម្ម​វិធី​បង្កើត​ Moodbar \" ។"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:100
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowMoodbarInSlider)
-#: rc.cpp:746
-#, fuzzy
-msgid "Show Moodbar in Progress Slider"
-msgstr "បង្ហាញ Moodbar កំពុង​ដំណើរ​ការ​គ្រាប់​រំ​កិល "
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:107
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:749
-#, fuzzy
-msgid "Moodbar style"
-msgstr "រចនាប័ទ្ម Moodbar "
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:114
-#. i18n: ectx: property (toolTip), widget (QComboBox, kcfg_MoodbarPaintStyle)
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:117
-#. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_MoodbarPaintStyle)
-#: rc.cpp:752 rc.cpp:755
-#, fuzzy
-#| msgid "Customize the OSD display text."
-msgid "Choose the mood display style"
-msgstr "ប្ដូរ​អត្ថបទ​បង្ហាញ​ក្នុង OSD តាម​បំណង ។"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:121
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
-#. i18n: tag layout attribute name
-#. i18n: file: data/DefaultPlaylistLayouts.xml:3
-#: rc.cpp:758 rc.cpp:2338
-msgid "Default"
-msgstr "លំនាំដើម"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:126
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
-#: rc.cpp:761
-#, fuzzy
-msgid "Angry"
-msgstr "ខឹង"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:131
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
-#: rc.cpp:764
-#, fuzzy
-msgid "Frozen"
-msgstr "កក"
-
-#. i18n: file: configdialog/dialogs/GeneralConfig.ui:136
-#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
-#: rc.cpp:767
-#, fuzzy
-msgid "Happy"
-msgstr "សប្បាយ"
-
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:770 rc.cpp:839
+#: rc.cpp:647 rc.cpp:716
 msgid "General"
 msgstr "​ទូទៅ"
 
@@ -10620,7 +10412,7 @@ msgstr "​ទូទៅ"
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_OsdEnabled)
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:26
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, kcfg_OsdEnabled)
-#: rc.cpp:773 rc.cpp:776
+#: rc.cpp:650 rc.cpp:653
 msgid ""
 "Check to enable the On-Screen-Display. The OSD briefly displays track data "
 "when a new track is played."
@@ -10630,14 +10422,14 @@ msgstr ""
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:29
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_OsdEnabled)
-#: rc.cpp:779
+#: rc.cpp:656
 #, fuzzy
 msgid "Use &On-Screen-Display"
 msgstr "ប្រើ​ការ​បង្ហាញ​លើ​អេក្រង់"
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:43
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:782
+#: rc.cpp:659
 msgid "&Duration:"
 msgstr "ថិរវេលា ៖"
 
@@ -10645,7 +10437,7 @@ msgstr "ថិរវេលា ៖"
 #. i18n: ectx: property (toolTip), widget (QSpinBox, kcfg_OsdDuration)
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:65
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_OsdDuration)
-#: rc.cpp:785 rc.cpp:788
+#: rc.cpp:662 rc.cpp:665
 msgid ""
 "The time in milliseconds for which to show the OSD. The value must be "
 "between 500 ms and 10000 ms."
@@ -10655,7 +10447,7 @@ msgstr ""
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:71
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_OsdDuration)
-#: rc.cpp:791
+#: rc.cpp:668
 msgid "Forever"
 msgstr "រហូត"
 
@@ -10663,13 +10455,13 @@ msgstr "រហូត"
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_OsdDuration)
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:80
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_FadeoutLength)
-#: rc.cpp:794 rc.cpp:867
+#: rc.cpp:671 rc.cpp:744
 msgid " ms"
 msgstr " មិ.វិ."
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:93
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_3)
-#: rc.cpp:797
+#: rc.cpp:674
 msgid "Sc&reen:"
 msgstr "អេក្រង់ ៖"
 
@@ -10677,7 +10469,7 @@ msgstr "អេក្រង់ ៖"
 #. i18n: ectx: property (toolTip), widget (KComboBox, kcfg_OsdScreen)
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:115
 #. i18n: ectx: property (whatsThis), widget (KComboBox, kcfg_OsdScreen)
-#: rc.cpp:800 rc.cpp:803
+#: rc.cpp:677 rc.cpp:680
 msgid "The screen that should display the OSD."
 msgstr "អេក្រង់​ដែល​គួរ​បង្ហាញ OSD ។"
 
@@ -10685,13 +10477,13 @@ msgstr "អេក្រង់​ដែល​គួរ​បង្ហាញ OSD 
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_OsdUseCustomColors)
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:136
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, kcfg_OsdUseCustomColors)
-#: rc.cpp:806 rc.cpp:809
+#: rc.cpp:683 rc.cpp:686
 msgid "Check to enable custom colors for the On-Screen-Display."
 msgstr "ធីក ដើម្បី​អនុញ្ញាត​ពណ៌​ផ្ទាល់​ខ្លួន​សម្រាប់​ការ​បង្ហាញ​លើ​អេក្រង់ ។"
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:139
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_OsdUseCustomColors)
-#: rc.cpp:812
+#: rc.cpp:689
 msgid "Use &custom colors"
 msgstr "ប្រើ​ពណ៌ផ្ទាល់ខ្លួន"
 
@@ -10699,38 +10491,38 @@ msgstr "ប្រើ​ពណ៌ផ្ទាល់ខ្លួន"
 #. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:191
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_OsdTextColor)
-#: rc.cpp:815 rc.cpp:824
+#: rc.cpp:692 rc.cpp:701
 msgid "The color of the OSD text."
 msgstr "ពណ៌​អត្ថបទ OSD ។"
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:166
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:818
+#: rc.cpp:695
 msgid "Text color:"
 msgstr "ពណ៌​អត្ថបទ ៖"
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:188
 #. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_OsdTextColor)
-#: rc.cpp:821
+#: rc.cpp:698
 msgid "Click to select the color of the OSD text."
 msgstr "ចុច ដើម្បី​ជ្រើស​ពណ៌​អត្ថបទ OSD ។"
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:211
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_OsdUseTranslucency)
-#: rc.cpp:827
+#: rc.cpp:704
 msgid "If checked, enables translucency if supported by your desktop system."
 msgstr ""
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:214
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_OsdUseTranslucency)
-#: rc.cpp:830
+#: rc.cpp:707
 #, fuzzy
 msgid "&Translucent"
 msgstr "ល្អក់"
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:224
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_KNotifyEnabled)
-#: rc.cpp:833
+#: rc.cpp:710
 #, fuzzy
 #| msgid "Use Growl for notifications"
 msgid "Check to use the system notification."
@@ -10738,7 +10530,7 @@ msgstr "ប្រើ​ការ​គំរាម​សម្រាប់កា
 
 #. i18n: file: configdialog/dialogs/NotificationsConfig.ui:227
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_KNotifyEnabled)
-#: rc.cpp:836
+#: rc.cpp:713
 #, fuzzy
 #| msgid "Use Growl for notifications"
 msgid "Use &system notifications"
@@ -10746,20 +10538,20 @@ msgstr "ប្រើ​ការ​គំរាម​សម្រាប់កា
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:23
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_FadeoutOnExit)
-#: rc.cpp:842
+#: rc.cpp:719
 msgid "If checked, Amarok will fade out the music on program exit."
 msgstr "ប្រសិន​បើ​បាន​ធីក Amarok នឹងធ្វើ​ឲ្យតន្ត្រី​​លេចបន្តិចម្ដងនៅ​ពេល​ចេញ​ពី​កម្មវិធី ។"
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:26
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_FadeoutOnExit)
-#: rc.cpp:845
+#: rc.cpp:722
 #, fuzzy
 msgid "Fadeout on e&xit"
 msgstr "លិចបន្តិចម្ដងនៅ​ពេល​ចេញ"
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:36
 #. i18n: ectx: property (toolTip), widget (QGroupBox, kcfg_Fadeout)
-#: rc.cpp:848
+#: rc.cpp:725
 #, fuzzy
 #| msgid ""
 #| "<b>Quit Behavior</b>\n"
@@ -10775,7 +10567,7 @@ msgstr ""
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:40
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, kcfg_Fadeout)
-#: rc.cpp:851
+#: rc.cpp:728
 msgid ""
 "<b>Quit Behavior</b>\n"
 "<p>On exit, Amarok can slowly fade the volume of the playing track (which is "
@@ -10787,14 +10579,14 @@ msgstr ""
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:43
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_Fadeout)
-#: rc.cpp:855
+#: rc.cpp:732
 #, fuzzy
 msgid "&Fadeout on stop"
 msgstr "លិចបន្តិចម្ដង​នៅ​ពេលបញ្ឈប់​"
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:61
 #. i18n: ectx: property (text), widget (QLabel, fadeoutLengthLabel)
-#: rc.cpp:858
+#: rc.cpp:735
 msgid "Fadeout &duration:"
 msgstr "ថិរវេលា​លេចបន្តិចម្ដង ៖"
 
@@ -10802,7 +10594,7 @@ msgstr "ថិរវេលា​លេចបន្តិចម្ដង ៖"
 #. i18n: ectx: property (toolTip), widget (QSpinBox, kcfg_FadeoutLength)
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:77
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, kcfg_FadeoutLength)
-#: rc.cpp:861 rc.cpp:864
+#: rc.cpp:738 rc.cpp:741
 msgid "The length of the fadeout, in milliseconds."
 msgstr "រយៈពេល​នៃ​ការ​លេច​បន្តិច​ម្ដង គិត​ជា​មិល្លីវិនាទី ។"
 
@@ -10810,7 +10602,7 @@ msgstr "រយៈពេល​នៃ​ការ​លេច​បន្តិច
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ResumePlayback)
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:105
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ResumePlayback)
-#: rc.cpp:870 rc.cpp:873
+#: rc.cpp:747 rc.cpp:750
 msgid ""
 "If checked, Amarok will<br>resume playback from where you left it the "
 "previous session -- just like a tape-player."
@@ -10820,13 +10612,13 @@ msgstr ""
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:108
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ResumePlayback)
-#: rc.cpp:876
+#: rc.cpp:753
 msgid "&Resume playback on start"
 msgstr "បន្ត​ចាក់​សារ​ថ្មី ពេល​ចាប់ផ្ដើម"
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:118
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:879
+#: rc.cpp:756
 #, fuzzy
 msgid "Sound System Configuration"
 msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ប្រព័ន្ធ​សំឡេង"
@@ -10835,17 +10627,273 @@ msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ប
 #. i18n: ectx: property (toolTip), widget (QPushButton, pushButtonPhonon)
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:148
 #. i18n: ectx: property (whatsThis), widget (QPushButton, pushButtonPhonon)
-#: rc.cpp:882 rc.cpp:885
+#: rc.cpp:759 rc.cpp:762
 #, fuzzy
 msgid "Phonon is the audio system used by Amarok."
 msgstr "Phonon ជាប្រព័ន្ធ​អូឌីយ៉ូ​ដែល​បាន​ប្រើ​ដោយ​ Amarok ។"
 
 #. i18n: file: configdialog/dialogs/PlaybackConfig.ui:151
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonPhonon)
-#: rc.cpp:888
+#: rc.cpp:765
 #, fuzzy
 msgid "Configure Phonon"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ ​Phonon"
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:17
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_UseServer)
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:20
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_UseServer)
+#: rc.cpp:768 rc.cpp:771
+msgid ""
+"Check to enable the use of an external database. By default there is already "
+"an embedded MySQL database running."
+msgstr ""
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:23
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseServer)
+#: rc.cpp:774
+#, fuzzy
+msgid "Use &external MySQL database"
+msgstr "ប្រើ​មូលដ្ឋានទិន្នន័យ MySQL ខាងក្រៅ"
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:30
+#. i18n: ectx: property (title), widget (QGroupBox, group_Connection)
+#: rc.cpp:777
+#, fuzzy
+msgid "Connection Settings"
+msgstr "កំណត់​ការតភ្ជាប់​"
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:38
+#. i18n: ectx: property (text), widget (QLabel, label_Host)
+#: rc.cpp:780
+msgid "&Server:"
+msgstr "ម៉ាស៊ីន​បម្រើ ៖"
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:55
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_Host)
+#: rc.cpp:783
+msgid "Enter the name of the existing MySQL server\n"
+msgstr ""
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:71
+#. i18n: ectx: property (text), widget (QLabel, label_Port)
+#: rc.cpp:787
+msgid "P&ort:"
+msgstr "ច្រក​ ៖"
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:91
+#. i18n: ectx: property (toolTip), widget (QSpinBox, kcfg_Port)
+#: rc.cpp:790
+msgid "Enter the port number to access the server. Default is port 3306.\n"
+msgstr ""
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:101
+#. i18n: ectx: property (text), widget (QLabel, label_User)
+#. i18n: file: services/lastfm/LastFmConfigWidget.ui:44
+#. i18n: ectx: property (text), widget (QLabel, labelUsername)
+#: rc.cpp:794 rc.cpp:2210
+msgid "&Username:"
+msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:118
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_Password)
+#: rc.cpp:797
+#, fuzzy
+msgid "Enter the password for the default user.\n"
+msgstr "ពាក្យ​សម្ងាត់​សម្រាប់​អ្នក​ប្រើ​​មូល​ដ្ឋាន​ទិន្នន័យ​ខាង​ក្រៅ ។"
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:134
+#. i18n: ectx: property (text), widget (QLabel, label_Password)
+#. i18n: file: services/lastfm/LastFmConfigWidget.ui:57
+#. i18n: ectx: property (text), widget (QLabel, labelPassword)
+#: rc.cpp:801 rc.cpp:2213
+msgid "&Password:"
+msgstr "ពាក្យ​សម្ងាត់ ៖"
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:151
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_User)
+#: rc.cpp:804
+msgid ""
+"Enter the username to access the database with full access privileges.\n"
+msgstr ""
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:161
+#. i18n: ectx: property (text), widget (QLabel, label_Database)
+#: rc.cpp:808
+msgid "&Database:"
+msgstr "មូលដ្ឋាន​ទិន្នន័យ "
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:178
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_Database)
+#: rc.cpp:811
+msgid "Enter the name of the database. Default preset is amarokdb.\n"
+msgstr ""
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:199
+#. i18n: ectx: property (text), widget (QLabel, label_Info)
+#: rc.cpp:815
+#, fuzzy
+msgid ""
+"Amarok expects the above database and user account to already exist. This "
+"user also requires full access to the database. You MUST restart Amarok "
+"after changing these settings."
+msgstr ""
+"រំពឹង Amarok មូល​ដ្ឋាន​ទិន្ន​ន័យ​ខាង​លើ​ហើយគណនី​អ្នក​ប្រើ​មាន​រួច​​ហើយ​ ។ តំរូវការ​អ្នក​ប្រើ​នេះ​ចូល​ដំ​ណើរ​ការ​ពេញ​"
+"លេញ​ទៅ​មូល​ដ្ឋាន​ទិន្ន​ន័យ ។ អ្នក​ត្រូវ​តែចាប់​ផ្តើម​ Amarok ឡើង​វិញ​ក្រោយ​ពេល​ផ្លាស់​ប្តូរ​ការ​កំ​ណត់​នេះ ។ "
+
+#. i18n: file: configdialog/dialogs/DatabaseConfig.ui:209
+#. i18n: ectx: property (text), widget (QLabel, label_SQL)
+#: rc.cpp:818
+#, fuzzy
+msgid ""
+"If your database is not already set up, you can use the following S&QL "
+"commands (after replacing the password with the correct one):"
+msgstr ""
+"ប្រសិន​បើ​មូលដ្ឋានទិន្នន័យ​មិនទាន់​រៀបចំរួចទេ អ្នក​អាច​ប្រើ​​ការ​បំ​ពេញ​ពាក្យ​បញ្ជា SQL ( ក្រោយ​ពេល​ការ​ជំនួល​"
+"ពាក្យ​សម្ងាត់​ត្រឹម​ត្រូវ ) ៖"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:23
+#. i18n: ectx: property (title), widget (QGroupBox, generalBox)
+#: rc.cpp:821
+msgid "General Options"
+msgstr "ជម្រើស​ទូទៅ"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:29
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowSplashscreen)
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:32
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShowSplashscreen)
+#: rc.cpp:824 rc.cpp:827
+msgid "Check to enable the splashscreen during Amarok startup."
+msgstr "គូស​ធីក​ដើម្បី​អនុញ្ញាត​អេក្រង់​ស្វាគមន៍​កំឡុង​ពេល​ដំឡើង Amarok ។"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:35
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowSplashscreen)
+#: rc.cpp:830
+msgid "Sho&w splash-screen on startup"
+msgstr "បង្ហាញ​អេក្រង់​ស្វាគមន៍​ពេល​ចាប់ផ្ដើម​"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:42
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowTrayIcon)
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:45
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShowTrayIcon)
+#: rc.cpp:833 rc.cpp:836
+msgid "Check to enable the Amarok system tray icon."
+msgstr "គូស​ធីក​ដើម្បី​អនុញ្ញាត​រូបតំណាង​ថាស​ប្រព័ន្ធ​របស់ Amarok ។"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:48
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowTrayIcon)
+#: rc.cpp:839
+msgid "Show tray &icon"
+msgstr "បង្ហាញ​រូបតំណាង​ក្នុង​ថាស​ប្រព័ន្ធ​"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:55
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoGetCoverArt)
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:58
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoGetCoverArt)
+#: rc.cpp:842 rc.cpp:845
+msgid "Check to enable the automatic retrieval of cover art from the Internet."
+msgstr ""
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:61
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoGetCoverArt)
+#: rc.cpp:848
+msgid "Automatically retrieve cover art"
+msgstr "ទៅ​យក​គម្រោង​សិល្បៈ​ដោយ​ស្វ័យប្រវត្តិ"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:71
+#. i18n: ectx: property (title), widget (QGroupBox, playlistBox)
+#: rc.cpp:851
+msgid "Playlist Options"
+msgstr "ជម្រើស​បញ្ជី​ចាក់"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:77
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoScrollPlaylist)
+#: rc.cpp:854
+#, fuzzy
+#| msgid ""
+#| "Automatically scroll the playlist to make the currently playing song "
+#| "visible"
+msgid ""
+"Check to make the playlist scroll so the current track is always visible."
+msgstr "រមូរ​បញ្ជី​ចាក់​ដោយ​ស្វ័យ​ប្រវត្តិ​ ដើម្បី​ធ្វើ​ឲ្យ​ចម្រៀង​ដែល​កំពុង​ចាក់​មើល​ឃើញ"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:80
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoScrollPlaylist)
+#: rc.cpp:857
+msgid "Automatically scroll playlist to current track"
+msgstr "រមូរ​បញ្ជីចាក់​ដោយ​ស្វ័យ​ប្រវត្តិ​ទៅ​បទ​បច្ចុប្បន្ន"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:90
+#. i18n: ectx: property (title), widget (QGroupBox, moodbarBox)
+#: rc.cpp:860
+#, fuzzy
+msgid "Moodbar Options"
+msgstr "ជម្រើស​ Moodbar "
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:97
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_ShowMoodbarInSlider)
+#: rc.cpp:863
+#, fuzzy
+msgid ""
+"The Moodbar makes it possible to navigate in your music visually.\n"
+"Please note that this feature requires the external \"Moodbar Generator\" "
+"tool."
+msgstr ""
+"បង្កើត​ Moodbar វា​អាច​ត្រូវរុករក​ក្នុងតន្ត្រី​ដោយ​ចក្ខុរបស់​អ្នក​ ។\n"
+"សូម​សម្គាល់​ថា​វាទាមទារលក្ខណ​ពិសេសខាងក្រៅ​ឧបករណ៍ \"កម្ម​វិធី​បង្កើត​ Moodbar \" ។"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:100
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowMoodbarInSlider)
+#: rc.cpp:867
+#, fuzzy
+msgid "Show Moodbar in Progress Slider"
+msgstr "បង្ហាញ Moodbar កំពុង​ដំណើរ​ការ​គ្រាប់​រំ​កិល "
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:107
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:870
+#, fuzzy
+msgid "Moodbar style"
+msgstr "រចនាប័ទ្ម Moodbar "
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:114
+#. i18n: ectx: property (toolTip), widget (QComboBox, kcfg_MoodbarPaintStyle)
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:117
+#. i18n: ectx: property (whatsThis), widget (QComboBox, kcfg_MoodbarPaintStyle)
+#: rc.cpp:873 rc.cpp:876
+#, fuzzy
+#| msgid "Customize the OSD display text."
+msgid "Choose the mood display style"
+msgstr "ប្ដូរ​អត្ថបទ​បង្ហាញ​ក្នុង OSD តាម​បំណង ។"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:121
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
+#. i18n: tag layout attribute name
+#. i18n: file: data/DefaultPlaylistLayouts.xml:3
+#: rc.cpp:879 rc.cpp:2375
+msgid "Default"
+msgstr "លំនាំដើម"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:126
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
+#: rc.cpp:882
+#, fuzzy
+msgid "Angry"
+msgstr "ខឹង"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:131
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
+#: rc.cpp:885
+#, fuzzy
+msgid "Frozen"
+msgstr "កក"
+
+#. i18n: file: configdialog/dialogs/GeneralConfig.ui:136
+#. i18n: ectx: property (text), item, widget (QComboBox, kcfg_MoodbarPaintStyle)
+#: rc.cpp:888
+#, fuzzy
+msgid "Happy"
+msgstr "សប្បាយ"
 
 #. i18n: file: context/applets/photos/photosSettings.ui:20
 #. i18n: ectx: property (text), widget (QLabel, animationLabel)
@@ -10961,7 +11009,7 @@ msgstr "បញ្ជីចាក់"
 #: rc.cpp:1007
 #, fuzzy
 #| msgid "You can use the following tokens:"
-msgid "Don't show following labels:"
+msgid "Do not show the following labels:"
 msgstr "អ្នក​អាច​ប្រើ​ថូខឹន​ដូច​ខាង​ក្រោម ៖"
 
 #. i18n: file: core-impl/collections/audiocd/FormatSelectionDialog.ui:26
@@ -12099,7 +12147,7 @@ msgstr "ស្លាក​ផ្ទាល់​ខ្លួន​សម្រា
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:91
 #. i18n: ectx: property (text), widget (KPushButton, addButton)
-#: rc.cpp:1579 rc.cpp:2161
+#: rc.cpp:1579 rc.cpp:2198
 msgid "Add"
 msgstr "បន្ថែម"
 
@@ -12571,11 +12619,11 @@ msgstr ""
 
 #. i18n: file: playlistgenerator/constraints/CheckpointEditWidget.ui:75
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, timeEdit_Position)
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:68
-#. i18n: ectx: property (displayFormat), widget (QTimeEdit, timeEdit_Duration)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:503
 #. i18n: ectx: property (displayFormat), widget (QTimeEdit, timeEdit_TimeValue)
-#: rc.cpp:1880 rc.cpp:1945 rc.cpp:2095
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:68
+#. i18n: ectx: property (displayFormat), widget (QTimeEdit, timeEdit_Duration)
+#: rc.cpp:1880 rc.cpp:2055 rc.cpp:2125
 #, fuzzy
 msgid "h:mm:ss"
 msgstr "h:mm:ss"
@@ -12593,8 +12641,6 @@ msgstr "របៀបតឹងរ៉ឹងដែល​​​ APG គូរតែ�
 
 #. i18n: file: playlistgenerator/constraints/CheckpointEditWidget.ui:125
 #. i18n: ectx: property (text), widget (QLabel, label_FuzzyPos)
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:112
-#. i18n: ectx: property (text), widget (QLabel, label_Fuzzy)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:176
 #. i18n: ectx: property (text), widget (QLabel, label_FuzzyInt)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:355
@@ -12603,15 +12649,18 @@ msgstr "របៀបតឹងរ៉ឹងដែល​​​ APG គូរតែ�
 #. i18n: ectx: property (text), widget (QLabel, label_FuzzyTime)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:670
 #. i18n: ectx: property (text), widget (QLabel, label_FuzzyRating)
-#: rc.cpp:1889 rc.cpp:1954 rc.cpp:2017 rc.cpp:2053 rc.cpp:2104 rc.cpp:2134
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:112
+#. i18n: ectx: property (text), widget (QLabel, label_Fuzzy)
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:108
+#. i18n: ectx: property (text), widget (QLabel, label_Fuzzy)
+#: rc.cpp:1889 rc.cpp:1977 rc.cpp:2013 rc.cpp:2064 rc.cpp:2094 rc.cpp:2134
+#: rc.cpp:2171
 #, fuzzy
 msgid "fuzzy"
 msgstr "ស្រពិចស្រពិល​"
 
 #. i18n: file: playlistgenerator/constraints/CheckpointEditWidget.ui:157
 #. i18n: ectx: property (text), widget (QLabel, label_ExactPos)
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:138
-#. i18n: ectx: property (text), widget (QLabel, label_Exact)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:199
 #. i18n: ectx: property (text), widget (QLabel, label_ExactInt)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:378
@@ -12620,7 +12669,12 @@ msgstr "ស្រពិចស្រពិល​"
 #. i18n: ectx: property (text), widget (QLabel, label_ExactTime)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:693
 #. i18n: ectx: property (text), widget (QLabel, label_ExactRating)
-#: rc.cpp:1895 rc.cpp:1960 rc.cpp:2023 rc.cpp:2059 rc.cpp:2110 rc.cpp:2140
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:138
+#. i18n: ectx: property (text), widget (QLabel, label_Exact)
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:137
+#. i18n: ectx: property (text), widget (QLabel, label_Exact)
+#: rc.cpp:1895 rc.cpp:1983 rc.cpp:2019 rc.cpp:2070 rc.cpp:2100 rc.cpp:2140
+#: rc.cpp:2177
 #, fuzzy
 msgid "exact"
 msgstr "ទៀងទាត់​"
@@ -12667,74 +12721,9 @@ msgstr ""
 msgid "Prevent duplicate"
 msgstr "ការពារ​ស្ទួន​"
 
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:18
-#. i18n: ectx: property (whatsThis), widget (QWidget, PlaylistLengthEditWidget)
-#: rc.cpp:1924
-#, fuzzy
-msgid ""
-"An editor for a PlaylistLength constraint.  The user can set the name of the "
-"constraint; the target duration and whether the playlist should be less "
-"than, equal to, or greater than that duration; and the strictness with which "
-"the APG should match that duration."
-msgstr ""
-"កម្មវិធីកែសម្រួល​សម្រាប់​កម្រិត​ PlaylistLength ។  អ្នក​ប្រើ​អាច​កំណត់​ឈ្មោះ​នៃ​កម្រិត​ ថិរវេលាគោលដៅ និង​"
-"ថាតើ​បញ្ជីចាក់គួរតែ​តិចជាង ស្មើ​ ឬ ​ធំជាង​ថិរវេលា​ និងតឹងរ៉ឹងជាមួយ APG ដែលគួរតែ​ផ្គូផ្គងថិរវេលា ។"
-
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:24
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1927
-#, fuzzy
-msgid "Playlist Duration Constraint Settings"
-msgstr "ការ​​កំណត់​​កម្រិត​របស់​ PlaylistLength "
-
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:35
-#. i18n: ectx: property (whatsThis), widget (QComboBox, comboBox_Comparison)
-#: rc.cpp:1930
-#, fuzzy
-msgid ""
-"Whether the duration of the generated playlist should be shorter than, equal "
-"to, or longer than the specified value."
-msgstr "ថាតើ​ថិរវេលា​របស់​បញ្ជីចាក់​ដែល​បាន​បង្កើត​​គួរតែ​ខ្លីជាង​ ស្មើ​ ឬ វែងជាង​តម្លៃ​ដែល​បាន​បញ្ជាក់ ។"
-
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:47
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
-#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:121
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonInt)
-#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:475
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonTime)
-#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:612
-#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
-#: rc.cpp:1936 rc.cpp:2002 rc.cpp:2086 rc.cpp:2119
-#, fuzzy
-msgid "equal to"
-msgstr "ស្មើ​"
-
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:65
-#. i18n: ectx: property (whatsThis), widget (QTimeEdit, timeEdit_Duration)
-#: rc.cpp:1942
-#, fuzzy
-msgid ""
-"The desired duration of the playlist, in hours, minutes, and seconds.  Note: "
-"because of Qt limitations, the maximum playlist duration that you can "
-"specify is 24 hours."
-msgstr ""
-"ថរិវេលាដែល​អ្នក​ចង់​ឲ្យ​បញ្ជី​ចាក់​ គិតជាម៉ោង​ នាទី​ វិនាទី​ ។  សម្គាល់​ ៖ ដោយ​សារតែ​ការកំណត់ Qt \n"
-" ថិរវេលាបញ្ជីចាក់​អតិបរមា​ដែលអ្នកអាច​បញ្ជាក់​ ២៤ ម៉ោង​ ។"
-
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:97
-#. i18n: ectx: property (whatsThis), widget (QLabel, label_Strictness)
-#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:122
-#. i18n: ectx: property (whatsThis), widget (QSlider, slider_Strictness)
-#: rc.cpp:1948 rc.cpp:1957
-#, fuzzy
-msgid ""
-"How strict the APG should be about matching the playlist duration to the "
-"specified time."
-msgstr "របៀបតឹងរ៉ឹងដែល​​ APG គួរតែ​ថិរវេលាបញ្ជីចាក់​ផ្គូផ្គងទៅកាន់​ពេលវាលាដែល​បាន​បញ្ជាក់​ ។"
-
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QWidget, TagMatchEditWidget)
-#: rc.cpp:1964
+#: rc.cpp:1924
 #, fuzzy
 msgid ""
 "An editor for a TagMatch constraint.  The user can specify a track "
@@ -12748,7 +12737,7 @@ msgstr ""
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:24
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:1967
+#: rc.cpp:1927
 #, fuzzy
 msgid "Match Tag Constraint Settings"
 msgstr "ការ​កំណត់​កម្រិត​ផ្គូផ្គងស្លាក​"
@@ -12757,14 +12746,14 @@ msgstr "ការ​កំណត់​កម្រិត​ផ្គូផ្គ
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_Match)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:47
 #. i18n: ectx: property (whatsThis), widget (QComboBox, comboBox_Field)
-#: rc.cpp:1970 rc.cpp:1976
+#: rc.cpp:1930 rc.cpp:1936
 #, fuzzy
 msgid "Selects which track characteristic you want to match."
 msgstr "ជ្រើស​លក្ខណៈបទ​ដែលអ្នក​ចង់​ផ្គូផ្គង​ ។"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label_Match)
-#: rc.cpp:1973
+#: rc.cpp:1933
 msgid "Field:"
 msgstr "វាល​ ៖"
 
@@ -12772,7 +12761,7 @@ msgstr "វាល​ ៖"
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, checkBox_Invert)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_Invert)
-#: rc.cpp:1979 rc.cpp:1986
+#: rc.cpp:1939 rc.cpp:1946
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -12801,22 +12790,37 @@ msgstr ""
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:90
 #. i18n: ectx: property (text), widget (QLabel, label_Invert)
-#: rc.cpp:1993
+#: rc.cpp:1953
 msgid "Invert:"
 msgstr "ដាក់​បញ្ច្រាស​ ៖"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:109
 #. i18n: ectx: property (whatsThis), widget (QComboBox, comboBox_ComparisonInt)
-#: rc.cpp:1996
+#: rc.cpp:1956
 #, fuzzy
 msgid ""
 "Whether the APG should choose tracks that are less than, equal to, or "
 "greater than the specified value."
 msgstr "ថា​តើ​ APG គួរតែ​ជ្រើស​បទ​ដែល​តិចជាង​ ស្មើ​ ឬ ច្រើនជាង​តម្លៃ​ដែលបាន​បញ្ជាក់​ ។"
 
+#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:121
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonInt)
+#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:475
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonTime)
+#. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:612
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:47
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:47
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
+#: rc.cpp:1962 rc.cpp:2046 rc.cpp:2079 rc.cpp:2116 rc.cpp:2156
+#, fuzzy
+msgid "equal to"
+msgstr "ស្មើ​"
+
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, spinBox_ValueInt)
-#: rc.cpp:2008
+#: rc.cpp:1968
 #, fuzzy
 msgid "The numerical value that the track characteristic should match."
 msgstr "តម្លៃ​ជាលេខ​ដែល​លក្ខណៈ​បទ​គួរតែ​ផ្គូផ្គង​ ។"
@@ -12825,14 +12829,14 @@ msgstr "តម្លៃ​ជាលេខ​ដែល​លក្ខណៈ​ប
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_StrictnessInt)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:183
 #. i18n: ectx: property (whatsThis), widget (QSlider, slider_StrictnessInt)
-#: rc.cpp:2011 rc.cpp:2020
+#: rc.cpp:1971 rc.cpp:1980
 msgid ""
 "How strict the APG should be about matching tracks to the specified value."
 msgstr "របៀប​​តឹងរ៉ឹង​ដែល​ APG គួរតែបទ​ផ្គូផ្គងទៅកាន់​តម្លៃ​ដែលបាន​បញ្ជាក់​ ។"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:229
 #. i18n: ectx: property (whatsThis), widget (QComboBox, comboBox_ComparisonDate)
-#: rc.cpp:2026
+#: rc.cpp:1986
 #, fuzzy
 msgid ""
 "Whether the APG should choose tracks that are before, on, or after a "
@@ -12844,21 +12848,21 @@ msgstr ""
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:251
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonDate)
-#: rc.cpp:2038
+#: rc.cpp:1998
 #, fuzzy
 msgid "within the last"
 msgstr "នៅ​ចុងក្រោយ"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:269
 #. i18n: ectx: property (whatsThis), widget (QWidget, page_DateSpecific)
-#: rc.cpp:2041
+#: rc.cpp:2001
 #, fuzzy
 msgid "The specific date that the APG should use for matching."
 msgstr "កាលបរិច្ឆេទ​ជាក់លាក់​ដែល​ APG គួរតែ​ប្រើ​សម្រាប់​ការផ្គូផ្គង​ ។"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:303
 #. i18n: ectx: property (whatsThis), widget (QWidget, page_DateRange)
-#: rc.cpp:2044
+#: rc.cpp:2004
 #, fuzzy
 msgid "The relative time period that the APG should try to match."
 msgstr "ខណៈពេលវេលា​ដែល​ទាក់ទង​ APG គួរតែ​សាកល្បង​ទៅផ្គូផ្គង​ ។"
@@ -12867,14 +12871,14 @@ msgstr "ខណៈពេលវេលា​ដែល​ទាក់ទង​ APG �
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_strictnessDate)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:362
 #. i18n: ectx: property (whatsThis), widget (QSlider, slider_StrictnessDate)
-#: rc.cpp:2047 rc.cpp:2056
+#: rc.cpp:2007 rc.cpp:2016
 msgid ""
 "How strict the APG should be about matching tracks to the specified date."
 msgstr "របៀប​តឹងរ៉ឹងដែល​ APG គួរតែ​បទផ្គូផ្គងទៅកាន់​កាលបរិច្ឆេទ​ដែល​បាន​បញ្ជាក់​ ។"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:408
 #. i18n: ectx: property (whatsThis), widget (QComboBox, comboBox_ComparisonString)
-#: rc.cpp:2062
+#: rc.cpp:2022
 #, fuzzy
 msgid ""
 "Whether the APG should match tracks that equal, start with, end with, or "
@@ -12884,21 +12888,21 @@ msgstr ""
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:412
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonString)
-#: rc.cpp:2065
+#: rc.cpp:2025
 #, fuzzy
 msgid "equals"
 msgstr "ស្មើ​"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:435
 #. i18n: ectx: property (whatsThis), widget (QLineEdit, lineEdit_StringValue)
-#: rc.cpp:2077
+#: rc.cpp:2037
 #, fuzzy
 msgid "The string that the APG should use when matching tracks."
 msgstr "ខ្សែអក្សរ​ដែល​ APG គួរតែ​ប្រើ​នៅពេលដែល​ផ្គូផ្គងបទ​ ។"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:463
 #. i18n: ectx: property (whatsThis), widget (QComboBox, comboBox_ComparisonTime)
-#: rc.cpp:2080
+#: rc.cpp:2040
 #, fuzzy
 msgid ""
 "Whether the APG should choose tracks that are less than, equal to, or "
@@ -12907,7 +12911,7 @@ msgstr "ថាតើ​​ APG គួរតែ​ជ្រើស​បទ​ដ�
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:490
 #. i18n: ectx: property (whatsThis), widget (QTimeEdit, timeEdit_TimeValue)
-#: rc.cpp:2092
+#: rc.cpp:2052
 #, fuzzy
 msgid "The time that the APG should try to match."
 msgstr "ពេលវេលាដែល​ APG គួរតែ​សាកល្បង​ទៅផ្គូផ្គង​ ។"
@@ -12916,14 +12920,14 @@ msgstr "ពេលវេលាដែល​ APG គួរតែ​សាកល្�
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_StrictnessTime)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:554
 #. i18n: ectx: property (whatsThis), widget (QSlider, slider_StrictnessTime)
-#: rc.cpp:2098 rc.cpp:2107
+#: rc.cpp:2058 rc.cpp:2067
 msgid ""
 "How strict the APG should be about matching tracks to the specified time."
 msgstr "របៀប​តឹងរ៉ឹង​ដែល​ APG គួរតែ​បទផ្គូផ្គង​ទៅកាន់​ពេលវេលា​ដែល​បាន​បញ្ជាក់​ ។"
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:600
 #. i18n: ectx: property (whatsThis), widget (QComboBox, comboBox_ComparisonRating)
-#: rc.cpp:2113
+#: rc.cpp:2073
 #, fuzzy
 msgid ""
 "Whether the APG should choose tracks that are less than, equal to, or "
@@ -12932,7 +12936,7 @@ msgstr "ថាតើ​​ APG គួរតែ​ជ្រើស​បទ​ដ�
 
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:627
 #. i18n: ectx: property (whatsThis), widget (Amarok::KRatingWidget, rating_RatingValue)
-#: rc.cpp:2125
+#: rc.cpp:2085
 #, fuzzy
 msgid "The rating that the APG should try to match."
 msgstr "កម្រិត​គុណភាព​ដែល​ APG គួរតែ​សាកល្បងទៅផ្គូផ្គង​ ។"
@@ -12941,33 +12945,140 @@ msgstr "កម្រិត​គុណភាព​ដែល​ APG គួរត�
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_StrictnessRating)
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:677
 #. i18n: ectx: property (whatsThis), widget (QSlider, slider_StrictnessRating)
-#: rc.cpp:2128 rc.cpp:2137
+#: rc.cpp:2088 rc.cpp:2097
 msgid ""
 "How strict the APG should be about matching tracks to the specified rating."
 msgstr "របៀប​តឹងរ៉ឹង​ដែល​​ APG គួរតែ​បទផ្គូផ្គង​ទៅកាន់​កម្រិត​គុណភាព​ដែល​បាន​បញ្ជាក់​ ។"
 
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:18
+#. i18n: ectx: property (whatsThis), widget (QWidget, PlaylistDurationEditWidget)
+#: rc.cpp:2104
+#, fuzzy
+msgid ""
+"An editor for a PlaylistDuration constraint.  The user can set the name of "
+"the constraint; the target duration and whether the playlist should be less "
+"than, equal to, or greater than that duration; and the strictness with which "
+"the APG should match that duration."
+msgstr ""
+"កម្មវិធីកែសម្រួល​សម្រាប់​កម្រិត​ PlaylistLength ។  អ្នក​ប្រើ​អាច​កំណត់​ឈ្មោះ​នៃ​កម្រិត​ ថិរវេលាគោលដៅ និង​"
+"ថាតើ​បញ្ជីចាក់គួរតែ​តិចជាង ស្មើ​ ឬ ​ធំជាង​ថិរវេលា​ និងតឹងរ៉ឹងជាមួយ APG ដែលគួរតែ​ផ្គូផ្គងថិរវេលា ។"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:24
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:2107
+#, fuzzy
+msgid "Playlist Duration Constraint Settings"
+msgstr "ការ​​កំណត់​​កម្រិត​របស់​ PlaylistLength "
+
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:35
+#. i18n: ectx: property (whatsThis), widget (QComboBox, comboBox_Comparison)
+#: rc.cpp:2110
+#, fuzzy
+msgid ""
+"Whether the duration of the generated playlist should be shorter than, equal "
+"to, or longer than the specified value."
+msgstr "ថាតើ​ថិរវេលា​របស់​បញ្ជីចាក់​ដែល​បាន​បង្កើត​​គួរតែ​ខ្លីជាង​ ស្មើ​ ឬ វែងជាង​តម្លៃ​ដែល​បាន​បញ្ជាក់ ។"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:65
+#. i18n: ectx: property (whatsThis), widget (QTimeEdit, timeEdit_Duration)
+#: rc.cpp:2122
+#, fuzzy
+msgid ""
+"The desired duration of the playlist, in hours, minutes, and seconds.  Note: "
+"because of Qt limitations, the maximum playlist duration that you can "
+"specify is 24 hours."
+msgstr ""
+"ថរិវេលាដែល​អ្នក​ចង់​ឲ្យ​បញ្ជី​ចាក់​ គិតជាម៉ោង​ នាទី​ វិនាទី​ ។  សម្គាល់​ ៖ ដោយ​សារតែ​ការកំណត់ Qt \n"
+" ថិរវេលាបញ្ជីចាក់​អតិបរមា​ដែលអ្នកអាច​បញ្ជាក់​ ២៤ ម៉ោង​ ។"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:97
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_Strictness)
+#. i18n: file: playlistgenerator/constraints/PlaylistDurationEditWidget.ui:122
+#. i18n: ectx: property (whatsThis), widget (QSlider, slider_Strictness)
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:93
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_Strictness)
+#: rc.cpp:2128 rc.cpp:2137 rc.cpp:2165
+#, fuzzy
+msgid ""
+"How strict the APG should be about matching the playlist duration to the "
+"specified time."
+msgstr "របៀបតឹងរ៉ឹងដែល​​ APG គួរតែ​ថិរវេលាបញ្ជីចាក់​ផ្គូផ្គងទៅកាន់​ពេលវាលាដែល​បាន​បញ្ជាក់​ ។"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:18
+#. i18n: ectx: property (whatsThis), widget (QWidget, PlaylistLengthEditWidget)
+#: rc.cpp:2144
+#, fuzzy
+msgid ""
+"An editor for a Playlist Length constraint.  The user can the target number "
+"of tracks and whether the playlist contain fewer than, equal to, or more "
+"than that number of tracks; and the strictness with which the APG should "
+"match the target number of tracks."
+msgstr ""
+"កម្មវិធីកែសម្រួល​សម្រាប់​កម្រិត​ PlaylistLength ។  អ្នក​ប្រើ​អាច​កំណត់​ឈ្មោះ​នៃ​កម្រិត​ ថិរវេលាគោលដៅ និង​"
+"ថាតើ​បញ្ជីចាក់គួរតែ​តិចជាង ស្មើ​ ឬ ​ធំជាង​ថិរវេលា​ និងតឹងរ៉ឹងជាមួយ APG ដែលគួរតែ​ផ្គូផ្គងថិរវេលា ។"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:24
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:2147
+#, fuzzy
+msgid "Playlist Length Constraint Settings"
+msgstr "ការ​​កំណត់​​កម្រិត​របស់​ PlaylistLength "
+
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:35
+#. i18n: ectx: property (whatsThis), widget (QComboBox, comboBox_Comparison)
+#: rc.cpp:2150
+#, fuzzy
+msgid ""
+"Whether the number of tracks in the generated playlist should be less than, "
+"equal to, or more than the specified value."
+msgstr "ថាតើ​ថិរវេលា​របស់​បញ្ជីចាក់​ដែល​បាន​បង្កើត​​គួរតែ​ខ្លីជាង​ ស្មើ​ ឬ វែងជាង​តម្លៃ​ដែល​បាន​បញ្ជាក់ ។"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:42
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBox_Comparison)
+#: rc.cpp:2153
+#, fuzzy
+msgid "fewer than"
+msgstr "ច្រើន​​ជាង"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:62
+#. i18n: ectx: property (whatsThis), widget (QSpinBox, spinBox_Length)
+#: rc.cpp:2162
+#, fuzzy
+#| msgid "The number of undo levels in the playlist."
+msgid "The target number of tracks for the generated playlist."
+msgstr "ចំនួន​កម្រិត​មិន​ធ្វើ​វិញ នៅ​ក្នុង​បញ្ជី​ចាក់ ។"
+
+#. i18n: file: playlistgenerator/constraints/PlaylistLengthEditWidget.ui:121
+#. i18n: ectx: property (whatsThis), widget (QSlider, slider_Strictness)
+#: rc.cpp:2174
+#, fuzzy
+msgid ""
+"How strict the APG should be about matching the playlist length to the "
+"specified number of tracks."
+msgstr "របៀបតឹងរ៉ឹងដែល​​ APG គួរតែ​ថិរវេលាបញ្ជីចាក់​ផ្គូផ្គងទៅកាន់​ពេលវាលាដែល​បាន​បញ្ជាក់​ ។"
+
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:2143
+#: rc.cpp:2180
 msgid "Server"
 msgstr "ម៉ាស៊ីន​បម្រើ"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:2146
+#: rc.cpp:2183
 msgctxt "The user-definable name of an Ampache server"
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:2149
+#: rc.cpp:2186
 msgid "Server:"
 msgstr "ម៉ាស៊ីន​បម្រើ ៖"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:2152
+#: rc.cpp:2189
 msgctxt "The username to use for logins to an Ampache server"
 msgid "Username:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
@@ -12976,37 +13087,37 @@ msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_5)
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:117
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:2155 rc.cpp:2224
+#: rc.cpp:2192 rc.cpp:2261
 msgid "Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:85
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:2158
+#: rc.cpp:2195
 msgid "Edit"
 msgstr "កែ​សម្រួល"
 
 #. i18n: file: services/ampache/AmpacheConfigWidget.ui:105
 #. i18n: ectx: property (text), widget (KPushButton, modifyButton)
-#: rc.cpp:2167
+#: rc.cpp:2204
 msgid "Modify"
 msgstr "កែប្រែ"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:38
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
-#: rc.cpp:2170
+#: rc.cpp:2207
 msgid "Last.fm Profile"
 msgstr "ទម្រង់ last.fm"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:86
 #. i18n: ectx: property (text), widget (QLabel, kActiveLabel1)
-#: rc.cpp:2179
+#: rc.cpp:2216
 msgid "<a href=\"http://www.last.fm:80/signup.php\">Sign up to last.fm</a>"
 msgstr "<a href=\"http://www.last.fm:80/signup.php\">ចុះឈ្មោះ to last.fm</a>"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:106
 #. i18n: ectx: property (text), widget (QLabel, kActiveLabel2)
-#: rc.cpp:2185
+#: rc.cpp:2222
 msgid ""
 "Why not join the <a href=\"http://www.last.fm:80/group/Amarok+Users\">Amarok "
 "last.fm group</a> and share your musical tastes with other Amarok users?"
@@ -13016,32 +13127,32 @@ msgstr ""
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:116
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:2188
+#: rc.cpp:2225
 msgid "Last.fm Services"
 msgstr "សេវា Last.fm"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_SubmitPlayedSongs)
-#: rc.cpp:2191
+#: rc.cpp:2228
 msgid "&Submit tracks"
 msgstr "ដាក់​ស្នើ​បទ"
 
 #. i18n: file: services/lastfm/LastFmConfigWidget.ui:135
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_RetrieveSimilarArtists)
-#: rc.cpp:2194
+#: rc.cpp:2231
 msgid "&Retrieve similar artists"
 msgstr "ទៅ​យក​សិល្បករ​ស្រដៀង​គ្នា"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:2197
+#: rc.cpp:2234
 #, fuzzy
 msgid "Redownloads"
 msgstr "ទាញយក​ម្ដង​ទៀត"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:23
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:2200
+#: rc.cpp:2237
 #, fuzzy
 msgid ""
 "Enter your e-mail here to be able to redownload any previous purchase from "
@@ -13050,40 +13161,40 @@ msgstr "បញ្ចូល​អ៊ីមែល​របស់​អ្នក​
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:2203
+#: rc.cpp:2240
 msgctxt "Username for logins to Magnatune"
 msgid "E-mail:"
 msgstr "អ៊ីមែល ៖​"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:53
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:2206
+#: rc.cpp:2243
 #, fuzzy
 msgid "Membership Options"
 msgstr "ជម្រើស​សមាជិក"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:59
 #. i18n: ectx: property (text), widget (QCheckBox, isMemberCheckbox)
-#: rc.cpp:2209
+#: rc.cpp:2246
 msgid "I am a member"
 msgstr "ខ្ញុំ​ជា​សមាជិក"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:79
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:2212
+#: rc.cpp:2249
 msgid "Membership type:"
 msgstr "ប្រភេទ​សមាជិក ៖"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:103
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:2221
+#: rc.cpp:2258
 msgctxt "Username for logins to Magnatune"
 msgid "Username:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:135
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:2227
+#: rc.cpp:2264
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -13118,62 +13229,62 @@ msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:157
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:2234
+#: rc.cpp:2271
 #, fuzzy
 msgid "Stream Options"
 msgstr "ជម្រើស​ស្ទ្រីម"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:163
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:2237
+#: rc.cpp:2274
 msgid "Preview stream type:"
 msgstr "មើល​ប្រភេទ​ស្ទ្រីម​ជា​មុន ៖"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:171
 #. i18n: ectx: property (text), item, widget (QComboBox, streamTypeComboBox)
-#: rc.cpp:2240
+#: rc.cpp:2277
 msgid "Ogg"
 msgstr "Ogg"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:176
 #. i18n: ectx: property (text), item, widget (QComboBox, streamTypeComboBox)
-#: rc.cpp:2243
+#: rc.cpp:2280
 msgid "High Quality Mp3"
 msgstr "Mp3 មានគុណភាព​ខ្ពស់"
 
 #. i18n: file: services/magnatune/MagnatuneConfigWidget.ui:181
 #. i18n: ectx: property (text), item, widget (QComboBox, streamTypeComboBox)
-#: rc.cpp:2246
+#: rc.cpp:2283
 msgid "Low Quality Mp3"
 msgstr "Mp3 មាន​គុណភាព​ទាប"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, magnatuneDownloadDialogBase)
-#: rc.cpp:2249
+#: rc.cpp:2286
 msgid "Magnatune.com Album Download"
 msgstr "ទាញ​យក​អាល់ប៊ុមពី Magnatune.com"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:2252
+#: rc.cpp:2289
 msgid "Download options"
 msgstr "ជម្រើស​ទាញ​យក"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:25
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:2255
+#: rc.cpp:2292
 msgid "Select Format:"
 msgstr "ជ្រើស​ទ្រង់ទ្រាយ ៖"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:38
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:2258
+#: rc.cpp:2295
 msgid "Download to:"
 msgstr "ទាញ​យក​ទៅ​កាន់ ៖"
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:51
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:2261
+#: rc.cpp:2298
 msgid ""
 "If you download to a location that is already being monitored by Amarok, the "
 "album will automatically be added to your collection."
@@ -13183,44 +13294,44 @@ msgstr ""
 
 #. i18n: file: services/magnatune/MagnatuneDownloadDialogBase.ui:67
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:2264
+#: rc.cpp:2301
 msgid "Magnatune info"
 msgstr "ព័ត៌មាន Magnatune"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:13
 #. i18n: ectx: property (windowTitle), widget (QDialog, magnatuneReDownloadDialogBase)
-#: rc.cpp:2270
+#: rc.cpp:2307
 msgid "Redownload manager"
 msgstr "ទាញ​យក​កម្មវិធី​គ្រប់គ្រង​ម្ដ​ងទៀត"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:19
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:2273
+#: rc.cpp:2310
 msgid "These are the albums that you have previously downloaded:"
 msgstr "មាន​អាល់ប៊ុម​ដែល​អ្នក​បានទាញ​យក​ពី​មុន ៖"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:29
 #. i18n: ectx: property (text), widget (QPushButton, redownloadButton)
-#: rc.cpp:2276
+#: rc.cpp:2313
 msgid "Re&download"
 msgstr "ទាញយក​ម្ដង​ទៀត"
 
 #. i18n: file: services/magnatune/MagnatuneRedownloadDialogBase.ui:60
 #. i18n: ectx: property (text), widget (QTreeWidget, redownloadListView)
-#: rc.cpp:2282
+#: rc.cpp:2319
 msgid "Artist - Album"
 msgstr "សិល្បករ - អាល់ប៊ុម"
 
 #. i18n: file: services/magnatune/MagnatuneSignupDialogBase.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, SignupDialog)
-#: rc.cpp:2285
+#: rc.cpp:2322
 #, fuzzy
 msgid "Magnatune.com member signup"
 msgstr "ចុះឈ្មោះ​ជាសាមាជិក Magnatune.com "
 
 #. i18n: file: services/magnatune/MagnatuneSignupDialogBase.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:2289
+#: rc.cpp:2326
 #, fuzzy, no-c-format
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -13306,21 +13417,21 @@ msgstr ""
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:16
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:2307
+#: rc.cpp:2344
 #, fuzzy
 msgid "MP3tunes Login"
 msgstr "ការ​ចូល Mp3tunes"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:2310
+#: rc.cpp:2347
 msgctxt "The e-mail address for Mp3Tunes logins"
 msgid "E-Mail:"
 msgstr "អ៊ីមែល ៖"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:32
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:2313
+#: rc.cpp:2350
 msgctxt "The MP3Tunes password"
 msgid "Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖​"
@@ -13329,7 +13440,7 @@ msgstr "ពាក្យ​សម្ងាត់ ៖​"
 #. i18n: ectx: property (toolTip), widget (QCheckBox, enableHarmony)
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:49
 #. i18n: ectx: property (toolTip), widget (QLabel, label_3)
-#: rc.cpp:2316 rc.cpp:2319
+#: rc.cpp:2353 rc.cpp:2356
 msgid ""
 "AutoSync is a feature from MP3tunes which allows you to automatically move "
 "your music between computers and devices."
@@ -13339,7 +13450,7 @@ msgstr ""
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:52
 #. i18n: ectx: property (whatsThis), widget (QLabel, label_3)
-#: rc.cpp:2322
+#: rc.cpp:2359
 msgid ""
 "AutoSync is a feature from MP3tunes which allows you to automatically move "
 "your music between computers and devices. You can upload music from one "
@@ -13350,7 +13461,7 @@ msgstr ""
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:2325
+#: rc.cpp:2362
 #, fuzzy
 msgctxt "Enable harmony"
 msgid "Enable AutoSync"
@@ -13358,14 +13469,14 @@ msgstr "ធ្វើ​សមកាលកម្ម​ដោយ​ស្វ័យ
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:62
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:2328
+#: rc.cpp:2365
 #, fuzzy
 msgid "PIN Code:"
 msgstr " កូដ PIN ៖"
 
 #. i18n: file: services/mp3tunes/Mp3tunesConfigWidget.ui:89
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:2331
+#: rc.cpp:2368
 #, fuzzy
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
@@ -13396,14 +13507,14 @@ msgstr ""
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:60
-#: rc.cpp:2344
+#: rc.cpp:2381
 #, fuzzy
 msgid "No Grouping (Single Line)"
 msgstr "ដាក់​ជា​ក្រុម (Single Line)"
 
 #. i18n: tag layout attribute name
 #. i18n: file: data/DefaultPlaylistLayouts.xml:77
-#: rc.cpp:2347
+#: rc.cpp:2384
 #, fuzzy
 msgid "Verbose"
 msgstr "បរិយាយ"
@@ -13435,10 +13546,6 @@ msgstr "បរិយាយ"
 #, fuzzy
 #~ msgid "Use &KNotify"
 #~ msgstr "ប្រើ​ KNotify"
-
-#, fuzzy
-#~ msgid "PlaylistLength"
-#~ msgstr "បញ្ជីចាក់"
 
 #, fuzzy
 #~ msgid "TagMatch"
