@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-21 07:14+0200\n"
+"POT-Creation-Date: 2010-09-22 06:07+0200\n"
 "PO-Revision-Date: 2010-06-08 14:28+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -149,7 +149,7 @@ msgid "1 Item"
 msgid_plural "%1 Items"
 msgstr[0] "ធាតុ %1"
 
-#: core/transfergrouphandler.cpp:113 core/transferhandler.cpp:148
+#: core/transfergrouphandler.cpp:113 core/transferhandler.cpp:150
 #: ui/transferdetails.cpp:100
 #, kde-format
 msgid "%1/s"
@@ -410,47 +410,73 @@ msgstr ""
 msgid "Download started"
 msgstr "បាន​ចាប់ផ្ដើម​កា​រទាញយក"
 
-#: core/kget.cpp:1374
+#: core/kget.cpp:1331 core/datasourcefactory.cpp:269
+#: core/datasourcefactory.cpp:595 transfer-plugins/metalink/metalink.cpp:201
+#: ui/metalinkcreator/metalinkcreator.cpp:156
+#: ui/metalinkcreator/metalinkcreator.cpp:173
+msgid "Error"
+msgstr "កំហុស"
+
+#: core/kget.cpp:1331
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>The following transfer has been added to the download list:</p><p "
+#| "style=\"font-size: small;\">\\%1</p>"
+msgid ""
+"<p>There has been an error in the following transfer:</p><p style=\"font-"
+"size: small;\">\\%1</p><p>The error message is:</p><p style=\"font-size: "
+"small;\">\\%2</p>"
+msgstr ""
+"<p>កា​រផ្ទេរ​ដូច​ខាងក្រោម​ត្រូវ​បានបន្ថែម​ទៅ​ក្នុង​បញ្ជី​ទាញយក ៖</p><p style=\"font-size: small;"
+"\">\\%1</p>"
+
+#: core/kget.cpp:1336
+#, fuzzy
+#| msgid "Remove"
+msgid "Resolve"
+msgstr "យកចេញ"
+
+#: core/kget.cpp:1384
 msgid "KGet is now closing, as all downloads have completed."
 msgstr "ឥឡូវ KGet បាន​បិទ ព្រោះ​បាន​បញ្ចប់​ការ​ទាញយក​ទាំងអស់​ហើយ ។"
 
-#: core/kget.cpp:1378
+#: core/kget.cpp:1388
 msgid "The computer will now turn off, as all downloads have completed."
 msgstr "កុំព្យូទ័រ​នឹង​បិទ​ឥឡូវ ពីព្រោះ​ការ​ទាញយក​ទាំងអស់​​បាន​បញ្ចប់​ហើយ ។"
 
-#: core/kget.cpp:1378
+#: core/kget.cpp:1388
 msgctxt "Shutting down computer"
 msgid "Shutdown"
 msgstr "បិទ"
 
-#: core/kget.cpp:1381
+#: core/kget.cpp:1391
 msgid "The computer will now suspend to disk, as all downloads have completed."
 msgstr "កុំព្យូទ័រ​នឹង​ផ្អាក​ទៅ​ថាស​ឥឡូវ ព្រោះ​ថា​ការ​ទាញយក​ទាំងអស់​បាន​បញ្ចប់​ហើយ ។"
 
-#: core/kget.cpp:1381
+#: core/kget.cpp:1391
 msgctxt "Hibernating computer"
 msgid "Hibernating"
 msgstr "សម្ងំ"
 
-#: core/kget.cpp:1384
+#: core/kget.cpp:1394
 msgid "The computer will now suspend to RAM, as all downloads have completed."
 msgstr "កុំព្យូទ័រ​នឹង​ផ្អាក​ទៅសតិ​ឥឡូវ ព្រោះថា​ការ​ទាញយក​ទាំងអស់​បាន​បញ្ចប់​ហើយ ។ "
 
-#: core/kget.cpp:1384
+#: core/kget.cpp:1394
 msgctxt "Suspending computer"
 msgid "Suspending"
 msgstr "ផ្អាក"
 
-#: core/kget.cpp:1392
+#: core/kget.cpp:1402
 msgctxt "abort the proposed action"
 msgid "Abort"
 msgstr "​បោះបង់"
 
-#: core/kget.cpp:1402
+#: core/kget.cpp:1412
 msgid "<p>All transfers have been finished.</p>"
 msgstr "<p>ការ​ផ្ទេរ​ទាំងអស់​បាន​ចប់​ហើយ ។</p>"
 
-#: core/kget.cpp:1403
+#: core/kget.cpp:1413
 msgid "Downloads completed"
 msgstr "ការ​ទាញយក​បាន​បញ្ចប់"
 
@@ -536,22 +562,13 @@ msgstr ""
 msgid "Filesize is larger than maximum file size supported by VFAT."
 msgstr ""
 
-#: core/datasourcefactory.cpp:269 core/datasourcefactory.cpp:595
-#: transfer-plugins/metalink/metalink.cpp:201
-#: transfer-plugins/bittorrent/bttransfer.cpp:469
-#: transfer-plugins/bittorrent/bttransfer.cpp:480
-#: ui/metalinkcreator/metalinkcreator.cpp:156
-#: ui/metalinkcreator/metalinkcreator.cpp:173
-msgid "Error"
-msgstr "កំហុស"
-
 #: core/datasourcefactory.cpp:595
 #, kde-format
 msgctxt "A mirror is removed when the file has the wrong download size"
 msgid "%1 removed as it did report a wrong file size."
 msgstr "បាន​យក %1 ចេញ ព្រោះ​ថា​វា​បាន​រាយការណ៍​​ទំហំ​ឯកសារ​មិន​ត្រឹមត្រូវ ។"
 
-#: core/transferhandler.cpp:135
+#: core/transferhandler.cpp:137
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:27
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:28
 #: transfer-plugins/bittorrent/btdetailswidget.cpp:29
@@ -573,7 +590,7 @@ msgctxt "not available"
 msgid "n/a"
 msgstr "គ្មាន"
 
-#: core/transferhandler.cpp:143 ui/transferdetails.cpp:95
+#: core/transferhandler.cpp:145 ui/transferdetails.cpp:95
 msgid "Stalled"
 msgstr "អាក់"
 
@@ -1243,17 +1260,18 @@ msgid "Cannot add a tracker to a private torrent."
 msgstr "មិនអាច​បន្ថែម​កម្មវិធី​តាមដាន​ទៅ​ torrent ឯកជន ។"
 
 #: transfer-plugins/bittorrent/bttransfer.cpp:406
-#: transfer-plugins/bittorrent/bttransfer.cpp:422
-#: transfer-plugins/bittorrent/bttransfer.cpp:468
-#: transfer-plugins/bittorrent/bttransfer.cpp:479
-msgid "An error occurred...."
-msgstr "កំហុស​បានកើត​ឡើង..."
+msgid "Torrent file does not exist"
+msgstr ""
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:410
+#: transfer-plugins/bittorrent/bttransfer.cpp:411
 msgid "Analyzing torrent...."
 msgstr "កំពុង​វិភាគ torrent..."
 
-#: transfer-plugins/bittorrent/bttransfer.cpp:489
+#: transfer-plugins/bittorrent/bttransfer.cpp:423
+msgid "Cannot initialize port..."
+msgstr ""
+
+#: transfer-plugins/bittorrent/bttransfer.cpp:492
 msgctxt "Transfer status: seeding"
 msgid "Seeding...."
 msgstr "កំពុង​បណ្ដុះ..."
@@ -4082,6 +4100,9 @@ msgstr "បញ្ជី​សេចក្ដីពិពណ៌នា​សម្
 #: rc.cpp:977
 msgid "List of whether the script is enabled"
 msgstr "បញ្ជី​របស់​ស្គ្រីប​ដែល​ត្រូវ​បើក"
+
+#~ msgid "An error occurred...."
+#~ msgstr "កំហុស​បានកើត​ឡើង..."
 
 #~ msgid "Remove Tag"
 #~ msgstr "យក​ស្លាក​​ចេញ"
