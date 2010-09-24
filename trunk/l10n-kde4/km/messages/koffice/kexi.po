@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-16 06:21+0200\n"
+"POT-Creation-Date: 2010-09-24 06:05+0200\n"
 "PO-Revision-Date: 2010-06-29 10:05+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -59,7 +59,7 @@ msgid "(unbound)"
 msgstr "(គ្មាន​ព្រំដែន)"
 
 #: plugins/forms/kexidbfactory.cpp:81 plugins/forms/kexiformpart.cpp:90
-#: formeditor/factories/stdwidgetfactory.cpp:186 formeditor/form.cpp:726
+#: formeditor/factories/stdwidgetfactory.cpp:186 formeditor/form.cpp:729
 msgid "Form"
 msgstr "សំណុំ​បែបបទ"
 
@@ -75,12 +75,12 @@ msgid "A data-aware form widget"
 msgstr "ធាតុ​ក្រាហ្វិក​សំណុំ​បែបបទ​ទិន្នន័យ"
 
 #: plugins/forms/kexidbfactory.cpp:95
-#: formeditor/factories/containerfactory.cpp:682
+#: formeditor/factories/containerfactory.cpp:602
 msgid "Sub Form"
 msgstr "សំណុំ​បែបបទ​រង"
 
 #: plugins/forms/kexidbfactory.cpp:98
-#: formeditor/factories/containerfactory.cpp:684
+#: formeditor/factories/containerfactory.cpp:604
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
@@ -88,7 +88,7 @@ msgid "subForm"
 msgstr "សំណុំ​បែបបទ​រង"
 
 #: plugins/forms/kexidbfactory.cpp:99
-#: formeditor/factories/containerfactory.cpp:685
+#: formeditor/factories/containerfactory.cpp:605
 msgid "A form widget included in another Form"
 msgstr "ធាតុ​ក្រាហ្វិក​សំណុំ​បែបបទ​ដែល​រួម​បញ្ចូល​ក្នុង​សំណុំ​បែបបទ​ផ្សេង​ទៀត"
 
@@ -125,12 +125,12 @@ msgid "A multiline text editor"
 msgstr "កម្មវិធី​និពន្ធ​អត្ថបទ​ពហុ​បន្ទាត់"
 
 #: plugins/forms/kexidbfactory.cpp:151
-#: formeditor/factories/containerfactory.cpp:602 formeditor/form.cpp:439
+#: formeditor/factories/containerfactory.cpp:522 formeditor/form.cpp:442
 msgid "Frame"
 msgstr "ស៊ុម"
 
 #: plugins/forms/kexidbfactory.cpp:154
-#: formeditor/factories/containerfactory.cpp:604
+#: formeditor/factories/containerfactory.cpp:524
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
@@ -796,8 +796,8 @@ msgstr "វាល​តារាង"
 
 #. i18n: file: main/startup/KexiConnSelector.ui:78
 #. i18n: ectx: property (text), widget (Q3ListView, list)
-#: plugins/tables/kexitabledesignerview.cpp:351 formeditor/form.cpp:414
-#: formeditor/form.cpp:415 rc.cpp:107
+#: plugins/tables/kexitabledesignerview.cpp:351 formeditor/form.cpp:417
+#: formeditor/form.cpp:418 rc.cpp:107
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -821,7 +821,7 @@ msgid "Image"
 msgstr "រូបភាព"
 
 #: plugins/tables/kexitabledesignerview.cpp:390
-#: plugins/queries/kexiquerydesignerguieditor.cpp:1689 formeditor/form.cpp:416
+#: plugins/queries/kexiquerydesignerguieditor.cpp:1689 formeditor/form.cpp:419
 #: formeditor/editlistviewdialog.cpp:120
 msgid "Caption"
 msgstr "ចំណងជើង"
@@ -2372,8 +2372,8 @@ msgstr "រឹម ៖"
 msgid "Could not load data from table or query."
 msgstr "មិន​អាច​ផ្ទុក​ទិន្នន័យ​ពី​តារាង ឬ​សំណួរ​បាន​ទេ ។"
 
-#: main/printing/kexisimpleprintingengine.cpp:326
-#: formeditor/factories/containerfactory.cpp:281
+#: main/printing/kexisimpleprintingengine.cpp:326 formeditor/commands.cpp:2218
+#: formeditor/WidgetTreeWidget.cpp:96
 #, kde-format
 msgid "Page %1"
 msgstr "ទំព័រ​ទី %1"
@@ -5615,7 +5615,7 @@ msgstr "លេខ​ចំនួន​ខ្ទង់​តែ​មួយ"
 msgid "Double Precision Number"
 msgstr "លេខ​ចំនួន​ខ្ទង់​ទ្វេ"
 
-#: kexidb/field.cpp:716 kexidb/field.cpp:737 formeditor/form.cpp:418
+#: kexidb/field.cpp:716 kexidb/field.cpp:737 formeditor/form.cpp:421
 msgid "Text"
 msgstr "អត្ថបទ"
 
@@ -6171,7 +6171,7 @@ msgid "Default"
 msgstr "លំនាំដើម"
 
 #: formeditor/factories/stdwidgetfactory.cpp:421
-#: formeditor/factories/containerfactory.cpp:692
+#: formeditor/factories/containerfactory.cpp:612
 msgid "Flat"
 msgstr "រាបស្មើ"
 
@@ -6356,258 +6356,254 @@ msgctxt "default indent value"
 msgid "default"
 msgstr "លំនាំដើម"
 
-#: formeditor/factories/containerfactory.cpp:258
-msgid "Add Page"
-msgstr "បន្ថែម​ទំព័រ"
-
-#: formeditor/factories/containerfactory.cpp:372
+#: formeditor/factories/containerfactory.cpp:297
 msgctxt "Add page to tab widget"
 msgid "Add Page"
 msgstr "បន្ថែម​ទំព័រ"
 
-#: formeditor/factories/containerfactory.cpp:396
+#: formeditor/factories/containerfactory.cpp:321
 msgctxt "Remove tab widget's page"
 msgid "Remove Page"
 msgstr "យក​​ទំព័រ​​ចេញ"
 
-#: formeditor/factories/containerfactory.cpp:422
+#: formeditor/factories/containerfactory.cpp:342
 msgctxt "Rename tab widget's page"
 msgid "Rename Page..."
 msgstr "ប្តូរ​ឈ្មោះ​ទំព័រ..."
 
-#: formeditor/factories/containerfactory.cpp:436
-#: formeditor/factories/containerfactory.cpp:1065
+#: formeditor/factories/containerfactory.cpp:356
+#: formeditor/factories/containerfactory.cpp:985
 msgid "New Page Title"
 msgstr "ចំណង​ជើង​ទំព័រ​ថ្មី"
 
-#: formeditor/factories/containerfactory.cpp:437
-#: formeditor/factories/containerfactory.cpp:1066
+#: formeditor/factories/containerfactory.cpp:357
+#: formeditor/factories/containerfactory.cpp:986
 msgid "Enter a new title for the current page:"
 msgstr "បញ្ចូល​ចំណងជើងថ្មី​សម្រាប់​ទំព័រ​​​បច្ចុប្បន្ន ៖"
 
-#: formeditor/factories/containerfactory.cpp:445
+#: formeditor/factories/containerfactory.cpp:365
 msgctxt "Add page to a stacked widget"
 msgid "Add Page..."
 msgstr "បន្ថែមទំព័រ​..."
 
-#: formeditor/factories/containerfactory.cpp:472
+#: formeditor/factories/containerfactory.cpp:392
 msgctxt "Remove page from a stacked widget"
 msgid "Remove Page"
 msgstr "យក​​ទំព័រ​ចេញ"
 
-#: formeditor/factories/containerfactory.cpp:519
+#: formeditor/factories/containerfactory.cpp:439
 msgctxt "Go to Previous Page of a Stacked Widget"
 msgid "Go to Previous Page"
 msgstr "ទៅ​ទំព័រ​មុន"
 
-#: formeditor/factories/containerfactory.cpp:520
+#: formeditor/factories/containerfactory.cpp:440
 msgctxt "Go to Next Page of a Stacked Widget"
 msgid "Go to Next Page"
 msgstr "ទៅ​ទំព័រ​បន្ទាប់"
 
-#: formeditor/factories/containerfactory.cpp:558
+#: formeditor/factories/containerfactory.cpp:478
 msgid "Button Group"
 msgstr "ក្រុម​ប៊ូតុង"
 
-#: formeditor/factories/containerfactory.cpp:560
+#: formeditor/factories/containerfactory.cpp:480
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "buttonGroup"
 msgstr "ក្រុម​ប៊ូតុង"
 
-#: formeditor/factories/containerfactory.cpp:561
+#: formeditor/factories/containerfactory.cpp:481
 msgid "A simple container to group buttons"
 msgstr "ឧបករណ៍​ផ្ទុក​ធម្មតា​សម្រាប់​ប៊ូតុង​ក្រុម​"
 
-#: formeditor/factories/containerfactory.cpp:573
+#: formeditor/factories/containerfactory.cpp:493
 msgid "Tab Widget"
 msgstr "ធាតុ​ក្រាហ្វិក​ថេប"
 
-#: formeditor/factories/containerfactory.cpp:575
+#: formeditor/factories/containerfactory.cpp:495
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "tabWidget"
 msgstr "ធាតុ​ក្រាហ្វិកថេប"
 
-#: formeditor/factories/containerfactory.cpp:576
+#: formeditor/factories/containerfactory.cpp:496
 msgid "A widget to display multiple pages using tabs"
 msgstr "ធាតុក្រាហ្វិក​សម្រាប់​បង្ហាញ​ទំព័រ​ជា​ច្រើន​ដោយ​ការ​ប្រើ​ថេប"
 
-#: formeditor/factories/containerfactory.cpp:583
+#: formeditor/factories/containerfactory.cpp:503
 msgid "Basic container"
 msgstr "ឧបករណ៍​ផ្ទុក​ជា​មូលដ្ឋាន"
 
-#: formeditor/factories/containerfactory.cpp:585
+#: formeditor/factories/containerfactory.cpp:505
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "container"
 msgstr "ឧបករណ៍​ផ្ទុក"
 
-#: formeditor/factories/containerfactory.cpp:586
+#: formeditor/factories/containerfactory.cpp:506
 msgid "An empty container with no frame"
 msgstr "ឧបករណ៍​ផ្ទុកទទេ​ដោយ​មិន​មានស៊ុម"
 
-#: formeditor/factories/containerfactory.cpp:593
+#: formeditor/factories/containerfactory.cpp:513
 msgid "Group Box"
 msgstr "ប្រអប់​ក្រុម​"
 
-#: formeditor/factories/containerfactory.cpp:595
+#: formeditor/factories/containerfactory.cpp:515
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "groupBox"
 msgstr "ប្រអប់​ក្រុម​"
 
-#: formeditor/factories/containerfactory.cpp:596
+#: formeditor/factories/containerfactory.cpp:516
 msgid "A container to group some widgets"
 msgstr "ឧបករណ៍​ផ្ទុក​​​សម្រាប់​ដាក់​ធាតុ​ក្រាហ្វិក​មួយ​ចំនួន​ជា​ក្រុម"
 
-#: formeditor/factories/containerfactory.cpp:605
+#: formeditor/factories/containerfactory.cpp:525
 msgid "A simple frame container"
 msgstr "ឧបករណ៍​ផ្ទុក​​ស៊ុម​ធម្មតា"
 
-#: formeditor/factories/containerfactory.cpp:612
+#: formeditor/factories/containerfactory.cpp:532
 msgid "Widget Stack"
 msgstr "ជង់​ធាតុ​ក្រាហ្វិក"
 
-#: formeditor/factories/containerfactory.cpp:614
+#: formeditor/factories/containerfactory.cpp:534
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "widgetStack"
 msgstr "ជង់​ធាតុ​ក្រាហ្វិក"
 
-#: formeditor/factories/containerfactory.cpp:615
+#: formeditor/factories/containerfactory.cpp:535
 msgid "A container with multiple pages"
 msgstr "ឧបករណ៍​ផ្ទុក​​​ដោយ​ទំព័រ​ច្រើន"
 
-#: formeditor/factories/containerfactory.cpp:621
+#: formeditor/factories/containerfactory.cpp:541
 msgid "Horizontal Box"
 msgstr "ប្រអប់​ផ្តេក"
 
-#: formeditor/factories/containerfactory.cpp:623
+#: formeditor/factories/containerfactory.cpp:543
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "horizontalBox"
 msgstr "ប្រអប់​ផ្តេក"
 
-#: formeditor/factories/containerfactory.cpp:624
+#: formeditor/factories/containerfactory.cpp:544
 msgid "A simple container to group widgets horizontally"
 msgstr "ឧបករណ៍​ផ្ទុក​ធម្មតា​សម្រាប់​ដាក់​ធាតុ​ក្រាហ្វិក​ជា​ក្រុម​​ផ្តេក​"
 
-#: formeditor/factories/containerfactory.cpp:630
+#: formeditor/factories/containerfactory.cpp:550
 msgid "Vertical Box"
 msgstr "ប្រអប់​បញ្ឈរ"
 
-#: formeditor/factories/containerfactory.cpp:632
+#: formeditor/factories/containerfactory.cpp:552
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "verticalBox"
 msgstr "ប្រអប់​បញ្ឈរ"
 
-#: formeditor/factories/containerfactory.cpp:633
+#: formeditor/factories/containerfactory.cpp:553
 msgid "A simple container to group widgets vertically"
 msgstr "ឧបករណ៍​ផ្ទុក​សម្រាប់​ដាក់​ធាតុ​ក្រាហ្វិក​ជាក្រុម​បញ្ឈរ"
 
-#: formeditor/factories/containerfactory.cpp:639
+#: formeditor/factories/containerfactory.cpp:559
 msgid "Grid Box"
 msgstr "ប្រអប់ក្រឡា​ចត្រង្គ"
 
-#: formeditor/factories/containerfactory.cpp:641
+#: formeditor/factories/containerfactory.cpp:561
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "gridBox"
 msgstr "ប្រអប់ក្រឡា​ចត្រង្គ"
 
-#: formeditor/factories/containerfactory.cpp:642
+#: formeditor/factories/containerfactory.cpp:562
 msgid "A simple container to group widgets in a grid"
 msgstr "ឧបករណ៍​ផ្ទុក​ធម្មតា​សម្រាប់​ដាក់​ធាតុ​ក្រាហ្វិក​ជា​ក្រុម​នៅ​ក្នុង​ក្រឡាចត្រង្គ"
 
-#: formeditor/factories/containerfactory.cpp:650
+#: formeditor/factories/containerfactory.cpp:570
 msgid "Splitter"
 msgstr "កម្ម​វិធី​ពុះ"
 
-#: formeditor/factories/containerfactory.cpp:652
+#: formeditor/factories/containerfactory.cpp:572
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "splitter"
 msgstr "កម្ម​វិធី​ពុះ"
 
-#: formeditor/factories/containerfactory.cpp:653
+#: formeditor/factories/containerfactory.cpp:573
 msgid "A container that enables user to resize its children"
 msgstr "ឧបករណ៍​ផ្ទុក​ដែល​អនុញ្ញាត​ឲ្យ​អ្ន​ក​ប្រើ​ប្តូរ​ទំហំ​កូវ​របស់​វា"
 
-#: formeditor/factories/containerfactory.cpp:661
+#: formeditor/factories/containerfactory.cpp:581
 msgid "Row Layout"
 msgstr "ប្លង់​ជួរ​ដេក"
 
-#: formeditor/factories/containerfactory.cpp:663
+#: formeditor/factories/containerfactory.cpp:583
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "rowLayout"
 msgstr "ប្លង់​ជួរដេក"
 
-#: formeditor/factories/containerfactory.cpp:664
+#: formeditor/factories/containerfactory.cpp:584
 msgid "A simple container to group widgets by rows"
 msgstr "ឧបករណ៍​ផ្ទុក​ធម្មតា​សម្រាប់​ដាក់​ធាតុ​ក្រាហ្វិក​ជា​ក្រុម​តាម​ជួរ​ដេក"
 
-#: formeditor/factories/containerfactory.cpp:671
+#: formeditor/factories/containerfactory.cpp:591
 msgid "Column Layout"
 msgstr "ប្លង់​ជួរ​ឈរ"
 
-#: formeditor/factories/containerfactory.cpp:673
+#: formeditor/factories/containerfactory.cpp:593
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "columnLayout"
 msgstr "ប្លង់​ជួរ​ឈរ"
 
-#: formeditor/factories/containerfactory.cpp:674
+#: formeditor/factories/containerfactory.cpp:594
 msgid "A simple container to group widgets by columns"
 msgstr "ឧបករណ៍​ផ្ទុក​ធម្មតា​សម្រាប់​ដាក់​ធាតុក្រាហ្វិក​ជាក្រុម​តាម​ជួរ​ឈរ"
 
-#: formeditor/factories/containerfactory.cpp:691
+#: formeditor/factories/containerfactory.cpp:611
 msgid "Title"
 msgstr "ចំណងជើង"
 
-#: formeditor/factories/containerfactory.cpp:695
-#: formeditor/factories/containerfactory.cpp:701
-#: formeditor/factories/containerfactory.cpp:702
+#: formeditor/factories/containerfactory.cpp:615
+#: formeditor/factories/containerfactory.cpp:621
+#: formeditor/factories/containerfactory.cpp:622
 msgid "Tab Position"
 msgstr "ទីតាំង​ថេប"
 
-#: formeditor/factories/containerfactory.cpp:696
+#: formeditor/factories/containerfactory.cpp:616
 msgid "Current Page"
 msgstr "ទំព័រ​បច្ចុប្បន្ន"
 
-#: formeditor/factories/containerfactory.cpp:697
+#: formeditor/factories/containerfactory.cpp:617
 msgid "Tab Shape"
 msgstr "រាង​ថេប"
 
-#: formeditor/factories/containerfactory.cpp:698
+#: formeditor/factories/containerfactory.cpp:618
 msgctxt "Tab Widget's Elide Mode"
 msgid "Elide Mode"
 msgstr "របៀប​កាត់​ចេញ"
 
-#: formeditor/factories/containerfactory.cpp:699
+#: formeditor/factories/containerfactory.cpp:619
 msgctxt "Tab Widget uses scroll buttons"
 msgid "Scroll Buttons"
 msgstr "ប៊ូតុង​រមូរ"
 
-#: formeditor/factories/containerfactory.cpp:704
+#: formeditor/factories/containerfactory.cpp:624
 msgctxt "for Tab Shape"
 msgid "Rounded"
 msgstr "រាង​មូល"
 
-#: formeditor/factories/containerfactory.cpp:705
+#: formeditor/factories/containerfactory.cpp:625
 msgctxt "for Tab Shape"
 msgid "Triangular"
 msgstr "រាង​ជា​ត្រីកោណ"
@@ -6640,7 +6636,7 @@ msgstr "កែសម្រួល​បញ្ជី​ធាតុ"
 msgid "Contents of %1"
 msgstr "មាតិកា %1"
 
-#: formeditor/container.cpp:1485 formeditor/commands.cpp:327
+#: formeditor/container.cpp:1485 formeditor/commands.cpp:328
 msgid "Move multiple widgets"
 msgstr "ផ្លាស់ទី​ធាតុ​ក្រាហ្វិក​ច្រើន"
 
@@ -6648,75 +6644,75 @@ msgstr "ផ្លាស់ទី​ធាតុ​ក្រាហ្វិក​
 msgid "*.ui|Qt Designer UI Files"
 msgstr "ឯកសារ​ចំណុច​ប្រទាក់​អ្នក​ប្រើ​របស់​កម្មវិធី​រចនា *.ui|Qt "
 
-#: formeditor/commands.cpp:155
+#: formeditor/commands.cpp:156
 #, kde-format
 msgid "Change \"%1\" property for multiple widgets"
 msgstr "ផ្លាស់ប្ដូ​រលក្ខណ​សម្បត្តិ \"%1\" សម្រាប់​ធាតុ​ក្រាហ្វិកច្រើន"
 
-#: formeditor/commands.cpp:158
+#: formeditor/commands.cpp:159
 #, kde-format
 msgid "Change \"%1\" property for widget \"%2\""
 msgstr "ផ្លាស់​ប្តូរ​លក្ខណ​សម្បត្តិ \"%1\" សម្រាប់ធាតុ​ក្រាហ្វិក \"%2\""
 
-#: formeditor/commands.cpp:421
+#: formeditor/commands.cpp:422
 msgid "Align Widgets to Grid"
 msgstr "តម្រឹម​​​ធាតុក្រាហ្វិកទៅក្រឡា​ចត្រង្គ"
 
-#: formeditor/commands.cpp:424
+#: formeditor/commands.cpp:425
 msgid "Align Widgets to Left"
 msgstr "តម្រឹម​​ធាតុក្រាហ្វិក​ទៅ​ឆ្វេង"
 
-#: formeditor/commands.cpp:427
+#: formeditor/commands.cpp:428
 msgid "Align Widgets to Right"
 msgstr "តម្រឹម​​​ធាតុក្រាហ្វិកទៅ​ស្តាំ"
 
-#: formeditor/commands.cpp:430
+#: formeditor/commands.cpp:431
 msgid "Align Widgets to Top"
 msgstr "តម្រឹម​​ធាតុក្រាហ្វិកទៅ​​កំពូល"
 
-#: formeditor/commands.cpp:433
+#: formeditor/commands.cpp:434
 msgid "Align Widgets to Bottom"
 msgstr "តម្រឹម​​ធាតុក្រាហ្វិកទៅ​បាត"
 
-#: formeditor/commands.cpp:584
+#: formeditor/commands.cpp:585
 msgid "Resize Widgets to Grid"
 msgstr "ប្ដូរ​ទំហំ​ធាតុក្រាហ្វិក​ទៅ​ក្រឡា​ចត្រង្គ"
 
-#: formeditor/commands.cpp:587
+#: formeditor/commands.cpp:588
 msgid "Resize Widgets to Fit Contents"
 msgstr "ប្តូរទំហំ​​​​ធាតុក្រាហ្វិក​ឲ្យ​​សមនឹង​​មាតិកា"
 
-#: formeditor/commands.cpp:590
+#: formeditor/commands.cpp:591
 msgid "Resize Widgets to Narrowest"
 msgstr "ប្តូរ​ទំហំ​ធាតុក្រាហ្វិកឲ្យ​តូច​បំផុត"
 
-#: formeditor/commands.cpp:593
+#: formeditor/commands.cpp:594
 msgid "Resize Widgets to Widest"
 msgstr "ប្តូរ​ទំហំធាតុ​ក្រាហ្វិកឲ្យ​ធំ​បំផុត"
 
-#: formeditor/commands.cpp:596
+#: formeditor/commands.cpp:597
 msgid "Resize Widgets to Shortest"
 msgstr "ប្តូរទំហំ​​ធាតុ​ក្រាហ្វិក​​ឲ្យ​ខ្លី​បំផុត"
 
-#: formeditor/commands.cpp:599
+#: formeditor/commands.cpp:600
 msgid "Resize Widgets to Tallest"
 msgstr "ប្តូរទំហំ​ធាតុ​ក្រាហ្វិក​ឲ្យ​វែង​​បំផុត"
 
-#: formeditor/commands.cpp:814
+#: formeditor/commands.cpp:815
 #, kde-format
 msgid "Change layout of widget \"%1\""
 msgstr "ផ្លាស់​ប្តូរ​ប្លង់​ធាតុ​ក្រាហ្វិក​ \"%1\""
 
-#: formeditor/commands.cpp:920
+#: formeditor/commands.cpp:921
 #, kde-format
 msgid "Insert widget \"%1\""
 msgstr "បញ្ចូល​​ធាតុ​ក្រាហ្វិក​ \"%1\""
 
-#: formeditor/commands.cpp:923
+#: formeditor/commands.cpp:924
 msgid "Insert widget"
 msgstr "បញ្ចូល​ធាតុ​ក្រាហ្វិក​"
 
-#: formeditor/commands.cpp:964
+#: formeditor/commands.cpp:965
 #, kde-format
 msgid ""
 "Could not insert widget of type \"%1\". A problem with widget's creation "
@@ -6725,353 +6721,364 @@ msgstr ""
 "មិន​អាច​បញ្ចូល​ធាតុ​ក្រាហ្វិក​ប្រភេទ​ \"%1\"  បាន​ទេ ។ បាន​ជួប​ប្រទះ​បញ្ហា​ជា​មួយ​ការ​បង្កើត​របស់​"
 "ធាតុក្រាហ្វិក ។"
 
-#: formeditor/commands.cpp:1152
+#: formeditor/commands.cpp:1153
 msgid "Group Widgets Horizontally"
 msgstr "ដាក់​ធាតុ​ក្រាហ្វិក​ជា​ក្រុម​ផ្តេក"
 
-#: formeditor/commands.cpp:1155
+#: formeditor/commands.cpp:1156
 msgid "Group Widgets Vertically"
 msgstr "ដាក់​ធាតុក្រាហ្វិក​ជា​ក្រុម​បញ្ឈរ"
 
-#: formeditor/commands.cpp:1158
+#: formeditor/commands.cpp:1159
 msgid "Group Widgets in a Grid"
 msgstr "ដាក់​ធាតុ​ក្រាហ្វិក​ជា​ក្រុម​នៅ​ក្នុង​ក្រឡាចត្រង្គ"
 
-#: formeditor/commands.cpp:1161
+#: formeditor/commands.cpp:1162
 msgid "Group Widgets Horizontally in a Splitter"
 msgstr "ដាក់​ធាតុ​ក្រាហ្វិក​ជា​ក្រុមផ្តេក​​នៅក្នុង​កម្មវិធី​ពុះ"
 
-#: formeditor/commands.cpp:1164
+#: formeditor/commands.cpp:1165
 msgid "Group Widgets Vertically in a Splitter"
 msgstr "ដាក់​ធាតុ​ក្រាហ្វិក​ជា​ក្រុម​បញ្ឈរ​នៅ​ក្នុង​កម្មវិធី​ពុះ"
 
-#: formeditor/commands.cpp:1167
+#: formeditor/commands.cpp:1168
 msgid "Group Widgets By Rows"
 msgstr "ដាក់​ធាតុក្រាហ្វិក​ជា​ក្រុម​តាម​ជួរ​ដេក"
 
-#: formeditor/commands.cpp:1170
+#: formeditor/commands.cpp:1171
 msgid "Group Widgets Vertically By Columns"
 msgstr "ដាក់​ធាតុ​ក្រាហ្វិក​ជា​ក្រុម​បញ្ឈរ​តាម​ជួរ​ឈរ"
 
-#: formeditor/commands.cpp:1173
+#: formeditor/commands.cpp:1174
 msgid "Group widgets"
 msgstr "ដាក់​ធាតុ​ជា​ក្រុម"
 
-#: formeditor/commands.cpp:1303
+#: formeditor/commands.cpp:1304
 #, kde-format
 msgid "Break Layout: \"%1\""
 msgstr "ប្លង់​សញ្ញា​បំបែក​​ ៖ \"%1\""
 
-#: formeditor/commands.cpp:1385
+#: formeditor/commands.cpp:1386
 msgid "Paste"
 msgstr "បិទ​ភ្ជាប់"
 
-#: formeditor/commands.cpp:1712
+#: formeditor/commands.cpp:1713
 msgid "Delete widget"
 msgstr "លុប​ធាតុ​ក្រាហ្វិក"
 
-#: formeditor/commands.cpp:1843
+#: formeditor/commands.cpp:1844
 msgid "Duplicate widget"
 msgstr "ស្ទួន​ធាតុ​ក្រាហ្វិក"
 
-#: formeditor/commands.cpp:1892
+#: formeditor/commands.cpp:1893
 msgid "Cut"
 msgstr "កាត់"
 
-#: formeditor/form.cpp:417
+#: formeditor/commands.cpp:2180
+msgid "Add Page"
+msgstr "បន្ថែម​ទំព័រ"
+
+#: formeditor/commands.cpp:2304
+#, fuzzy
+#| msgctxt "Remove tab widget's page"
+#| msgid "Remove Page"
+msgid "Remove Page"
+msgstr "យក​​ទំព័រ​​ចេញ"
+
+#: formeditor/form.cpp:420
 msgid "Window title"
 msgstr "ចំណងជើង​បង្អួច"
 
-#: formeditor/form.cpp:419
+#: formeditor/form.cpp:422
 msgid "Background Pixmap"
 msgstr "ផែនទី​ចំណុច​ផ្ទៃ​ខាង​ក្រោយ"
 
-#: formeditor/form.cpp:420
+#: formeditor/form.cpp:423
 msgid "Enabled"
 msgstr "ដែល​បាន​អនុញ្ញាត​"
 
-#: formeditor/form.cpp:421
+#: formeditor/form.cpp:424
 msgid "Geometry"
 msgstr "ធរណីមាត្រ"
 
-#: formeditor/form.cpp:422
+#: formeditor/form.cpp:425
 msgid "Size Policy"
 msgstr "គោល​ការណ៍​ទំហំ"
 
-#: formeditor/form.cpp:423
+#: formeditor/form.cpp:426
 msgid "Minimum Size"
 msgstr "ទំហំ​អប្បបរមា"
 
-#: formeditor/form.cpp:424
+#: formeditor/form.cpp:427
 msgid "Maximum Size"
 msgstr "ទំហំ​អតិបរមា"
 
-#: formeditor/form.cpp:425
+#: formeditor/form.cpp:428
 msgid "Font"
 msgstr "ពុម្ព​អក្សរ"
 
-#: formeditor/form.cpp:426
+#: formeditor/form.cpp:429
 msgid "Cursor"
 msgstr "ទស្សន៍​ទ្រនិច"
 
-#: formeditor/form.cpp:427
+#: formeditor/form.cpp:430
 msgid "Foreground Color"
 msgstr "​ពណ៌​ផ្ទៃ​ខាង​មុខ"
 
-#: formeditor/form.cpp:428
+#: formeditor/form.cpp:431
 msgid "Background Color"
 msgstr "ពណ៌​​​​ផ្ទៃ​ខាង​ក្រោយ"
 
-#: formeditor/form.cpp:429
+#: formeditor/form.cpp:432
 msgid "Focus Policy"
 msgstr "គោល​ការណ៍ផ្តោត"
 
-#: formeditor/form.cpp:430
+#: formeditor/form.cpp:433
 msgid "Margin"
 msgstr "រឹម "
 
-#: formeditor/form.cpp:431
+#: formeditor/form.cpp:434
 msgid "Read Only"
 msgstr "បាន​តែ​អាន"
 
-#: formeditor/form.cpp:432
+#: formeditor/form.cpp:435
 msgid "Style Sheet"
 msgstr "សន្លឹក​រចនាប័ទ្ម"
 
-#: formeditor/form.cpp:433
+#: formeditor/form.cpp:436
 msgctxt "Widget's Tooltip"
 msgid "Tooltip"
 msgstr "ព័ត៌មាន​ជំនួយឧបករណ៍"
 
-#: formeditor/form.cpp:434
+#: formeditor/form.cpp:437
 msgctxt "Widget's Whats This"
 msgid "What's This"
 msgstr "តើនេះ​ជា​អ្វី"
 
-#: formeditor/form.cpp:435
+#: formeditor/form.cpp:438
 msgid "Layout direction"
 msgstr "ទិស​ប្លង់"
 
-#: formeditor/form.cpp:436
+#: formeditor/form.cpp:439
 msgid "Icon Size"
 msgstr "ទំហំ​រូបតំណាង"
 
-#: formeditor/form.cpp:440
+#: formeditor/form.cpp:443
 msgid "Frame Width"
 msgstr "ទទឹង​ស៊ុម"
 
-#: formeditor/form.cpp:441
+#: formeditor/form.cpp:444
 msgid "Mid Frame Width"
 msgstr "ទទឹង​ស៊ុម​កណ្ដាល"
 
-#: formeditor/form.cpp:442
+#: formeditor/form.cpp:445
 msgid "Frame Shape"
 msgstr "រាង​ស៊ុម"
 
-#: formeditor/form.cpp:443
+#: formeditor/form.cpp:446
 msgid "Frame Shadow"
 msgstr "ស្រមោលស៊ុម"
 
-#: formeditor/form.cpp:445
+#: formeditor/form.cpp:448
 msgid "Vertical Scrollbar"
 msgstr "របារ​រមូរ​បញ្ឈរ"
 
-#: formeditor/form.cpp:446
+#: formeditor/form.cpp:449
 msgid "Horizontal Scrollbar"
 msgstr "របារ​រមូរ​​​ផ្ដេក"
 
-#: formeditor/form.cpp:448
+#: formeditor/form.cpp:451
 msgid "No Background"
 msgstr "មិន​មាន​ផ្ទៃ​ខាង​ក្រោយ"
 
-#: formeditor/form.cpp:449
+#: formeditor/form.cpp:452
 msgid "Palette Foreground"
 msgstr "ផ្ទៃ​ខាង​មុខ​ក្តារ​លាយ"
 
-#: formeditor/form.cpp:450
+#: formeditor/form.cpp:453
 msgctxt "Auto (HINT: for AutoText)"
 msgid "Auto"
 msgstr "ស្វ័យប្រវត្តិ"
 
-#: formeditor/form.cpp:452
+#: formeditor/form.cpp:455
 msgctxt "Auto (HINT: for Align)"
 msgid "Auto"
 msgstr "ស្វ័យប្រវត្តិ"
 
-#: formeditor/form.cpp:453
+#: formeditor/form.cpp:456
 msgctxt "Left (HINT: for Align)"
 msgid "Left"
 msgstr "ខាងឆ្វេង"
 
-#: formeditor/form.cpp:454
+#: formeditor/form.cpp:457
 msgctxt "Right (HINT: for Align)"
 msgid "Right"
 msgstr "ខាង​ស្តាំ"
 
-#: formeditor/form.cpp:455 formeditor/form.cpp:457
+#: formeditor/form.cpp:458 formeditor/form.cpp:460
 msgctxt "Center (HINT: for Align)"
 msgid "Center"
 msgstr "កណ្ដាល"
 
-#: formeditor/form.cpp:456
+#: formeditor/form.cpp:459
 msgctxt "Justify (HINT: for Align)"
 msgid "Justify"
 msgstr "តម្រឹម​សង​ខាង"
 
-#: formeditor/form.cpp:458
+#: formeditor/form.cpp:461
 msgctxt "Top (HINT: for Align)"
 msgid "Top"
 msgstr "ខាង​លើ"
 
-#: formeditor/form.cpp:459
+#: formeditor/form.cpp:462
 msgctxt "Bottom (HINT: for Align)"
 msgid "Bottom"
 msgstr "ខាង​ក្រោម"
 
-#: formeditor/form.cpp:461
+#: formeditor/form.cpp:464
 msgctxt "No Frame (HINT: for Frame Shape)"
 msgid "No Frame"
 msgstr "មិន​មាន​ស៊ុម"
 
-#: formeditor/form.cpp:462
+#: formeditor/form.cpp:465
 msgctxt "Box (HINT: for Frame Shape)"
 msgid "Box"
 msgstr "ប្រអប់​"
 
-#: formeditor/form.cpp:463
+#: formeditor/form.cpp:466
 msgctxt "Panel (HINT: for Frame Shape)"
 msgid "Panel"
 msgstr "ផ្ទាំង"
 
-#: formeditor/form.cpp:464
+#: formeditor/form.cpp:467
 msgctxt "Windows Panel (HINT: for Frame Shape)"
 msgid "Windows Panel"
 msgstr "ផ្ទាំង​វីនដូ"
 
-#: formeditor/form.cpp:465
+#: formeditor/form.cpp:468
 msgctxt "Horiz. Line (HINT: for Frame Shape)"
 msgid "Horiz. Line"
 msgstr "បន្ទាត់​ផ្តេក"
 
-#: formeditor/form.cpp:466
+#: formeditor/form.cpp:469
 msgctxt "Vertical Line (HINT: for Frame Shape)"
 msgid "Vertical Line"
 msgstr "បន្ទាត់​បញ្ឈរ"
 
-#: formeditor/form.cpp:467
+#: formeditor/form.cpp:470
 msgctxt "Styled (HINT: for Frame Shape)"
 msgid "Styled"
 msgstr "ជា​រចនាប័ទ្ម"
 
-#: formeditor/form.cpp:468
+#: formeditor/form.cpp:471
 msgctxt "Popup (HINT: for Frame Shape)"
 msgid "Popup"
 msgstr "​លេចឡើង"
 
-#: formeditor/form.cpp:469
+#: formeditor/form.cpp:472
 msgctxt "Menu Bar (HINT: for Frame Shape)"
 msgid "Menu Bar"
 msgstr "របារ​ម៉ឺនុយ"
 
-#: formeditor/form.cpp:470
+#: formeditor/form.cpp:473
 msgctxt "Toolbar (HINT: for Frame Shape)"
 msgid "Toolbar"
 msgstr "របារ​ឧបករណ៍"
 
-#: formeditor/form.cpp:471
+#: formeditor/form.cpp:474
 msgctxt "Text Box (HINT: for Frame Shape)"
 msgid "Text Box"
 msgstr "ប្រអប់​អត្ថបទ"
 
-#: formeditor/form.cpp:472
+#: formeditor/form.cpp:475
 msgctxt "Tab Widget (HINT: for Frame Shape)"
 msgid "Tab Widget"
 msgstr "ធាតុ​ក្រាហ្វិក​ថេប"
 
-#: formeditor/form.cpp:473
+#: formeditor/form.cpp:476
 msgctxt "Group Box (HINT: for Frame Shape)"
 msgid "Group Box"
 msgstr "ប្រអប់​ក្រុម"
 
-#: formeditor/form.cpp:475
+#: formeditor/form.cpp:478
 msgctxt "Plain (HINT: for Frame Shadow)"
 msgid "Plain"
 msgstr "ធម្មតា"
 
-#: formeditor/form.cpp:476
+#: formeditor/form.cpp:479
 msgctxt "Raised (HINT: for Frame Shadow)"
 msgid "Raised"
 msgstr "លើក​ឡើង​លើ"
 
-#: formeditor/form.cpp:477
+#: formeditor/form.cpp:480
 msgctxt "Sunken (HINT: for Frame Shadow)"
 msgid "Sunken"
 msgstr "ធ្លាក់​ចុះ"
 
-#: formeditor/form.cpp:478
+#: formeditor/form.cpp:481
 msgctxt "for Frame Shadow"
 msgid "Internal"
 msgstr "ខាង​ក្នុង"
 
-#: formeditor/form.cpp:480
+#: formeditor/form.cpp:483
 msgctxt "No Focus (HINT: for Focus)"
 msgid "No Focus"
 msgstr "មិន​ផ្ដោត"
 
-#: formeditor/form.cpp:481
+#: formeditor/form.cpp:484
 msgctxt "Tab (HINT: for Focus)"
 msgid "Tab"
 msgstr "ថេប"
 
-#: formeditor/form.cpp:482
+#: formeditor/form.cpp:485
 msgctxt "Click (HINT: for Focus)"
 msgid "Click"
 msgstr "ចុច"
 
-#: formeditor/form.cpp:483
+#: formeditor/form.cpp:486
 msgctxt "Tab/Click (HINT: for Focus)"
 msgid "Tab/Click"
 msgstr "ថេប​​/​ចុច"
 
-#: formeditor/form.cpp:484
+#: formeditor/form.cpp:487
 msgctxt "Tab/Click/MouseWheel (HINT: for Focus)"
 msgid "Tab/Click/MouseWheel"
 msgstr "ថេប​​/​​ចុច​/​កង់​កណ្តុរ"
 
-#: formeditor/form.cpp:486
+#: formeditor/form.cpp:489
 msgid "Auto"
 msgstr "ស្វ័យប្រវត្តិ"
 
-#: formeditor/form.cpp:487
+#: formeditor/form.cpp:490
 msgid "Always Off"
 msgstr "បិទ​ជានិច្"
 
-#: formeditor/form.cpp:488
+#: formeditor/form.cpp:491
 msgid "Always On"
 msgstr "បើក​ជានិច្ច"
 
-#: formeditor/form.cpp:491
+#: formeditor/form.cpp:494
 msgid "Horizontal"
 msgstr "ផ្ដេក"
 
-#: formeditor/form.cpp:492
+#: formeditor/form.cpp:495
 msgid "Vertical"
 msgstr "បញ្ឈរ"
 
-#: formeditor/form.cpp:495
+#: formeditor/form.cpp:498
 msgid "Left to Right"
 msgstr "ឆ្វេង​ទៅ​​ស្តាំ"
 
-#: formeditor/form.cpp:496
+#: formeditor/form.cpp:499
 msgid "Right to Left"
 msgstr "ស្តាំ​ទៅ​​​ឆ្វេង"
 
-#: formeditor/form.cpp:1289
+#: formeditor/form.cpp:1298
 #, kde-format
 msgid "Renaming widget \"%1\" to \"%2\" failed."
 msgstr "បានបរាជ័យ​ក្នុង​ការ​ប្តូរ​ឈ្មោះ​ធាតុ​ \"%1\" ​​​ជា​ \"%2\" ​។"
 
-#: formeditor/form.cpp:1921
+#: formeditor/form.cpp:1942
 #, kde-format
 msgid ""
 "Could not rename widget \"%1\" to \"%2\" because \"%3\" is not a valid name "
@@ -7080,7 +7087,7 @@ msgstr ""
 "មិន​អាច​ប្តូរ​ឈ្មោះ​ធាតុ​ក្រាហ្វិក​ \"%1\" ​ជា \"%2\" បាន​ទេ ពីព្រោះ​ \"%3\" មិន​មែន​ជាឈ្មោះ​ដែលត្រឹម​"
 "ត្រូវ​ (គ្រឿង​សម្គាល់​) សម្រាប់​ធាតុ​ក្រាហ្វិក​ ។\n"
 
-#: formeditor/form.cpp:1932
+#: formeditor/form.cpp:1953
 #, kde-format
 msgid ""
 "Could not rename widget \"%1\" to \"%2\" because a widget with the name \"%3"
@@ -7089,25 +7096,25 @@ msgstr ""
 "មិន​អាច​ប្តូរ​ឈ្មោះ​ធាតុ​ក្រាហ្វិក​ \"%1\" ​ជា​ \"%2\" បាន​ទេ ពី​ព្រោះ​ធាតុ​ក្រាហ្វិក​មាន​ឈ្មោះ​ \"%3\" រួច​"
 "ហើយ​ ។\n"
 
-#: formeditor/form.cpp:2030 formeditor/form.cpp:2354
+#: formeditor/form.cpp:2079 formeditor/form.cpp:2403
 #, kde-format
 msgid "Multiple Widgets (%1)"
 msgstr "ធាតុ​ក្រាហ្វិក​ច្រើន​ (%1)"
 
-#: formeditor/form.cpp:2196 formeditor/form.cpp:2450
+#: formeditor/form.cpp:2245 formeditor/form.cpp:2499
 msgid "Events"
 msgstr "ព្រឹត្តិការណ៍"
 
-#: formeditor/form.cpp:2344
+#: formeditor/form.cpp:2393
 #, kde-format
 msgid "%1 : Form"
 msgstr "%1 ៖ ទម្រង់"
 
-#: formeditor/form.cpp:2406
+#: formeditor/form.cpp:2455
 msgid "No Buddy"
 msgstr "មិន​មាន​មិត្ត​ជិត​ស្និទ្ធ"
 
-#: formeditor/form.cpp:2933
+#: formeditor/form.cpp:2982
 msgid ""
 "<b>Cannot create the layout.</b>\n"
 "All selected widgets must have the same parent."
@@ -7115,37 +7122,37 @@ msgstr ""
 "<b>មិន​អាច​បង្កើត​ប្លង់​ ។</b>\n"
 "ធាតុ​ក្រាហ្វិកដែល​បាន​ជ្រើស​ទាំង​អស់​ត្រូវ​តែ​មាន​មេ​ដូច​គ្នា​ ។"
 
-#: formeditor/form.cpp:3001
+#: formeditor/form.cpp:3050
 msgctxt "Translators: please keep this string short (less than 20 chars)"
 msgid "Hor. Alignment"
 msgstr "ការ​តម្រឹមផ្តេក"
 
-#: formeditor/form.cpp:3002
+#: formeditor/form.cpp:3051
 msgid "Horizontal Alignment"
 msgstr "ការ​តម្រឹមផ្តេក"
 
-#: formeditor/form.cpp:3024
+#: formeditor/form.cpp:3073
 msgctxt "Translators: please keep this string short (less than 20 chars)"
 msgid "Ver. Alignment"
 msgstr "ការ​តម្រឹម​​បញ្ឈរ​"
 
-#: formeditor/form.cpp:3025
+#: formeditor/form.cpp:3074
 msgid "Vertical Alignment"
 msgstr "ការ​តម្រឹម​​បញ្ឈរ"
 
-#: formeditor/form.cpp:3040
+#: formeditor/form.cpp:3089
 msgid "Word Break"
 msgstr "ការ​បំបែក​ពាក្យ"
 
-#: formeditor/form.cpp:3109
+#: formeditor/form.cpp:3158
 msgid "Container's Layout"
 msgstr "ប្លង់​របស់​ឧបករណ៍​ផ្ទុក"
 
-#: formeditor/form.cpp:3116
+#: formeditor/form.cpp:3165
 msgid "Layout Margin"
 msgstr "រឹម​ប្លង់"
 
-#: formeditor/form.cpp:3123
+#: formeditor/form.cpp:3172
 msgid "Layout Spacing"
 msgstr "គម្លាត​ប្លង់"
 
@@ -7352,25 +7359,18 @@ msgstr "សកម្មភាព​ត្រូវ​ប្រតិបត្ត
 msgid "&Select action to be executed after clicking \"%1\" button:"
 msgstr "ជ្រើស​សកម្មភាព​ដែល​ត្រូវ​ប្រតិបត្តិ​បន្ទាប់​ពី​ចុច​ប៊ូតុង​ \"%1\" ​៖"
 
-#: formeditor/WidgetTreeWidget.cpp:79
-#, fuzzy, kde-format
-#| msgctxt "Tab (HINT: for Focus)"
-#| msgid "Tab"
-msgid "Tab %1"
-msgstr "ថេប"
-
-#: formeditor/WidgetTreeWidget.cpp:84
+#: formeditor/WidgetTreeWidget.cpp:104
 #, fuzzy
 #| msgid "Last Page"
 msgctxt "Tab widget's page"
 msgid "Tab Page"
 msgstr "ទំព័រ​ចុង​ក្រោយ"
 
-#: formeditor/WidgetTreeWidget.cpp:249
+#: formeditor/WidgetTreeWidget.cpp:269
 msgid "Widget name"
 msgstr "ឈ្មោះ​ធាតុ​ក្រាហ្វិក"
 
-#: formeditor/WidgetTreeWidget.cpp:249
+#: formeditor/WidgetTreeWidget.cpp:269
 msgctxt "Widget's type"
 msgid "Type"
 msgstr "ប្រភេទ"
@@ -7834,6 +7834,12 @@ msgstr "តែ​ពាក្យ​ទាំងមូល"
 #: rc.cpp:213
 msgid "Prompt on replace"
 msgstr "សួរ​នៅពេល​ជំនួស"
+
+#, fuzzy
+#~| msgctxt "Tab (HINT: for Focus)"
+#~| msgid "Tab"
+#~ msgid "Tab %1"
+#~ msgstr "ថេប"
 
 #, fuzzy
 #~| msgctxt "Tab (HINT: for Focus)"
