@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_configuring\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-09-02 00:00+0000\n"
+"POT-Creation-Date: 2010-10-06 00:07+0000\n"
 "PO-Revision-Date: 2008-08-22 09:41+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -1517,7 +1517,7 @@ msgid "Misc"
 msgstr ""
 
 #. Tag: guilabel
-#: configuring.docbook:808 configuring.docbook:1181
+#: configuring.docbook:808 configuring.docbook:1201
 #, no-c-format
 msgid "Remove trailing spaces"
 msgstr "យក​ស្នាម​ចន្លោះ​ចេញ​"
@@ -2094,41 +2094,66 @@ msgid "File Format"
 msgstr "ទ្រង់ទ្រាយ​ឯកសារ"
 
 #. Tag: guilabel
-#: configuring.docbook:1133
+#: configuring.docbook:1134
 #, no-c-format
 msgid "Encoding:"
 msgstr "ការអ៊ិនកូដ ៖​"
 
 #. Tag: para
-#: configuring.docbook:1135
+#: configuring.docbook:1136
 #, no-c-format
-msgid "This sets the default character encoding for your files."
-msgstr "ការកំណត់​ការអ៊ិនកូដ​តួអក្សរ​លំនាំដើម​សម្រាប់​ឯកសារ​របស់​អ្នក​ ។"
+msgid ""
+"This defines the standard encoding to use to open/save files, if not changed "
+"in the open/save dialog or by using a command line option."
+msgstr ""
 
 #. Tag: guilabel
-#: configuring.docbook:1139
+#: configuring.docbook:1142
 #, no-c-format
-msgid "Encoding autodetection"
+msgid "Encoding Detection"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1141
+#: configuring.docbook:1144
 #, no-c-format
 msgid ""
 "Select an item from the drop down box, either to disable autodetection or "
 "use <guilabel>Universal</guilabel> to enable autodetection for all "
 "encodings. But as this may probably only detect utf-8/utf-16, selecting a "
-"region will use custom heuristics for better results."
+"region will use custom heuristics for better results. If neither the "
+"encoding chosen as standard above, nor the encoding specified in the open/"
+"save dialog, nor the encoding specified on command line match the content of "
+"the file, this detection will be run."
 msgstr ""
 
 #. Tag: guilabel
-#: configuring.docbook:1148
+#: configuring.docbook:1155
+#, fuzzy, no-c-format
+#| msgid "Encoding:"
+msgid "Fallback Encoding"
+msgstr "ការអ៊ិនកូដ ៖​"
+
+#. Tag: para
+#: configuring.docbook:1157
+#, no-c-format
+msgid ""
+"This defines the fallback encoding to try for opening files if neither the "
+"encoding chosen as standard above, nor the encoding specified in the open/ "
+"save dialog, nor the encoding specified on command line match the content of "
+"the file. Before this is used, an attempt will be made to determine the "
+"encoding to use by looking for a byte order marker at start of file: if one "
+"is found, the right unicode encoding will be chosen; otherwise encoding "
+"detection will run, if both fail fallback encoding will be tried."
+msgstr ""
+
+#. Tag: guilabel
+#: configuring.docbook:1168
 #, no-c-format
 msgid "End of line:"
 msgstr "ចុង​បន្ទាត់​ ៖​"
 
 #. Tag: para
-#: configuring.docbook:1150
+#: configuring.docbook:1170
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Choose your prefered end of line mode for your active document. You have "
@@ -2141,13 +2166,13 @@ msgstr ""
 "វ៉ិនដូ​ ឬ Macintosh ។​"
 
 #. Tag: guilabel
-#: configuring.docbook:1155
+#: configuring.docbook:1175
 #, no-c-format
 msgid "Automatic end of line detection"
 msgstr "ការរកឃើះ​ចុង​បន្ទាត់​ដោយស្វ័យប្រវត្តិ​"
 
 #. Tag: para
-#: configuring.docbook:1157
+#: configuring.docbook:1177
 #, no-c-format
 msgid ""
 "Check this if you want the editor to autodetect the end of line type. The "
@@ -2157,13 +2182,13 @@ msgstr ""
 "ត្រូវ​បាន​ប្រើ​សម្រាប់​ឯកសារទាំងមូល​ ។"
 
 #. Tag: guilabel
-#: configuring.docbook:1163
+#: configuring.docbook:1183
 #, no-c-format
 msgid "Enable byte order marker"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1165
+#: configuring.docbook:1185
 #, no-c-format
 msgid ""
 "The byte order mark is a special sequence at the beginning of unicode "
@@ -2173,13 +2198,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configuring.docbook:1177
+#: configuring.docbook:1197
 #, no-c-format
 msgid "Automatic Cleanups on Load/Save"
 msgstr "ជម្រះ​ផ្ទុក ឬ​រក្សាទុក​ដោយស្វ័យប្រវត្តិ "
 
 #. Tag: para
-#: configuring.docbook:1183
+#: configuring.docbook:1203
 #, no-c-format
 msgid ""
 "The editor will automatically eliminate extra spaces at the ends of lines of "
@@ -2189,25 +2214,25 @@ msgstr ""
 "ផ្ទុក​ ឬ​រក្សាទុក​ឯកសារ​ ។"
 
 #. Tag: title
-#: configuring.docbook:1195
+#: configuring.docbook:1215
 #, no-c-format
 msgid "<title>Advanced</title>"
 msgstr ""
 
 #. Tag: guilabel
-#: configuring.docbook:1198
+#: configuring.docbook:1218
 #, no-c-format
 msgid "Folder Config File"
 msgstr "ឯកសារ​កំណត់រចនាសម្ព័ន្ធ​ថត​"
 
 #. Tag: guilabel
-#: configuring.docbook:1202
+#: configuring.docbook:1222
 #, no-c-format
 msgid "Search depth for config file:"
 msgstr "ស្វែងរក​កម្រិត​ខ្ពស់​សម្រាប់​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ​ ៖"
 
 #. Tag: para
-#: configuring.docbook:1204
+#: configuring.docbook:1224
 #, fuzzy, no-c-format
 #| msgid ""
 #| "The editor will search the given number of folder levels upwards for "
@@ -2222,13 +2247,13 @@ msgstr ""
 "កម្មវិធី​និពន្ធ​ នឹង​ស្វែងរកចំនួន​កម្រិត​ថត​ខាងលើសម្រាប់​ឯកសារ​កំណត់រចនាសម្ព័ន្ធ​ និង​ការកំណត់​បន្ទាត់​ពី​​ kate ។​"
 
 #. Tag: guilabel
-#: configuring.docbook:1216
+#: configuring.docbook:1236
 #, no-c-format
 msgid "Backup on Save"
 msgstr "រក្សាព័ត៌មានបម្រុង​ទុក​"
 
 #. Tag: para
-#: configuring.docbook:1217
+#: configuring.docbook:1237
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Backing up on save will cause &kate; to copy the disk file to &lt;"
@@ -2246,62 +2271,93 @@ msgstr ""
 "\">~</emphasis> និង​បុព្វបទ​លំនាំដើម​ទទេ ។​"
 
 #. Tag: guilabel
-#: configuring.docbook:1223
+#: configuring.docbook:1243
 #, no-c-format
 msgid "Local files"
 msgstr "ឯកសារ​មូលដ្ឋាន​"
 
 #. Tag: para
-#: configuring.docbook:1225
+#: configuring.docbook:1245
 #, no-c-format
 msgid "Check this if you want backups of local files when saving."
 msgstr "ធីក​​​ទីនេះ បើ​អ្នក​ចង់​បាន​ព័ត៌មាន​បម្រុងទុក​របស់​ឯកសារ​មូលដ្ឋាន​ពេល​រក្សាទុក​ ។​"
 
 #. Tag: guilabel
-#: configuring.docbook:1230
+#: configuring.docbook:1250
 #, no-c-format
 msgid "Remote files"
 msgstr "ឯកសារ​ពី​ចម្ងាយ"
 
 #. Tag: para
-#: configuring.docbook:1232
+#: configuring.docbook:1252
 #, no-c-format
 msgid "Check this if you want backups of remote files when saving."
 msgstr "ធីក​ទីនេះ បើ​អ្នកចង់​បាន​ព័ត៌មាន​បម្រុង​ទុក​របស់​ឯកសារ​ពី​ចម្ងាយ​ពេល​រក្សាទុក​ ។"
 
 #. Tag: guilabel
-#: configuring.docbook:1236
+#: configuring.docbook:1256
 #, no-c-format
 msgid "Prefix"
 msgstr "បុព្វបទ"
 
 #. Tag: para
-#: configuring.docbook:1238
+#: configuring.docbook:1258
 #, no-c-format
 msgid "Enter the prefix to prepend to the backup file names."
 msgstr "បញ្ចូល​បុព្វបទ​ដើម្បី​បន្ថែម​ខាងដើម​ឈ្មោះ​ឯកសារ​ព័ត៌មាន​បម្រុង​ទុក​ ។"
 
 #. Tag: guilabel
-#: configuring.docbook:1242
+#: configuring.docbook:1262
 #, no-c-format
 msgid "Suffix"
 msgstr "បច្ច័យ​"
 
 #. Tag: para
-#: configuring.docbook:1244
+#: configuring.docbook:1264
 #, no-c-format
 msgid "Enter the suffix to add to the backup file names."
 msgstr "បញ្ចូលបច្ច័យដើម្បី​បន្ថែម​ទៅ​ក្នុង​ឈ្មោះ​ឯកសារព័ត៌មាន​បម្រុង ​ទុក​ ។​​"
 
+#. Tag: guilabel
+#: configuring.docbook:1268
+#, no-c-format
+msgid "Disable swap file syncing"
+msgstr ""
+
+#. Tag: para
+#: configuring.docbook:1270
+#, no-c-format
+msgid ""
+"Kate is able to recover (most of) what was written after last save in case "
+"of a crash or power failure. A swap file (.swp.&lt;filename&gt;) is created "
+"after the first editing action on a document. If the user doesn’t save the "
+"changes and Kate crashes, the swap file remains on the disk. When opening a "
+"file, Kate checks if there is a swap file for the document and if it is, it "
+"asks the user whether he wants to recover the lost data or not. The user has "
+"the possibility to view the differences between the original file and the "
+"recovered one, too. The swap file is deleted after every save and on normal "
+"exit."
+msgstr ""
+
+#. Tag: para
+#: configuring.docbook:1278
+#, no-c-format
+msgid ""
+"Kate syncs the swap files on the disk every 15 seconds, but only if they "
+"have changed since the last sync. The user can disable the swap files "
+"syncing if he wants, by checking the <guilabel>Disable swap file syncing</"
+"guilabel> box, but this can lead to more data loss."
+msgstr ""
+
 #. Tag: title
-#: configuring.docbook:1256
+#: configuring.docbook:1293
 #, fuzzy, no-c-format
 #| msgid "Filetypes"
 msgid "Modes &amp; Filetypes"
 msgstr "ប្រភេទ​ឯកសារ​"
 
 #. Tag: para
-#: configuring.docbook:1257
+#: configuring.docbook:1294
 #, no-c-format
 msgid ""
 "This page allows you to override the default configuration for documents of "
@@ -2316,13 +2372,13 @@ msgstr ""
 "មួយ​ដែល​មាន​អាទិភាព​ខ្ពស់​ជាង​គេ​សម្រាប់​ប្រើ​ ។"
 
 #. Tag: guilabel
-#: configuring.docbook:1265
+#: configuring.docbook:1302
 #, no-c-format
 msgid "Filetype:"
 msgstr "ប្រភេទ​ឯកសារ​ ៖​"
 
 #. Tag: para
-#: configuring.docbook:1266 configuring.docbook:1286
+#: configuring.docbook:1303 configuring.docbook:1323
 #, no-c-format
 msgid ""
 "The filetype with the highest priority is the one displayed in the first "
@@ -2332,13 +2388,13 @@ msgstr ""
 "ជាច្រើន​បាន​រក​ឃើញ​ ពួក​វា​ត្រូវ​បាន​រាយ​បញ្ជី​ ។​"
 
 #. Tag: guilabel
-#: configuring.docbook:1271
+#: configuring.docbook:1308
 #, no-c-format
 msgid "<guilabel>New</guilabel>"
 msgstr "<guilabel> ថ្មី​ </guilabel>"
 
 #. Tag: para
-#: configuring.docbook:1272
+#: configuring.docbook:1309
 #, no-c-format
 msgid ""
 "This is used to create a new filetype. After you click on this button, the "
@@ -2349,13 +2405,13 @@ msgstr ""
 "តាម​លក្ខណៈសម្បត្តិ​​​ប្រភេទ​ឯកសារ​ថ្មី​ដែល​អ្នក​ចង់បាន​ ។"
 
 #. Tag: guilabel
-#: configuring.docbook:1277
+#: configuring.docbook:1314
 #, no-c-format
 msgid "Delete"
 msgstr "លុប​"
 
 #. Tag: para
-#: configuring.docbook:1278
+#: configuring.docbook:1315
 #, no-c-format
 msgid ""
 "To remove an existing filetype, select it from the drop down box and press "
@@ -2364,20 +2420,20 @@ msgstr ""
 "ដើម្បី​ផ្លាស់ទី​ប្រភេទ​ឯកសារ​ដែល​មាន​រួច​ហើយ​ ជ្រើស​វា​ពីប្រអប់​ធ្លាក់ចុះ​ ហើយ​ចុច​ប៊ូតុង​លុប​ជាការស្រេចចិត្ត​ ។"
 
 #. Tag: guilabel
-#: configuring.docbook:1285
+#: configuring.docbook:1322
 #, fuzzy, no-c-format
 #| msgid "Properties of current filetype"
 msgid "Properties of <replaceable>current filetype</replaceable>"
 msgstr "លក្ខណៈពិសេស​របស់​ប្រភេទ​ឯកសារ​បច្ចុប្បន្ន​ "
 
 #. Tag: guilabel
-#: configuring.docbook:1291
+#: configuring.docbook:1328
 #, no-c-format
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
 #. Tag: para
-#: configuring.docbook:1292
+#: configuring.docbook:1329
 #, no-c-format
 msgid ""
 "The name of the filetype will be the text of the corresponding menu item. "
@@ -2389,13 +2445,13 @@ msgstr ""
 "guimenuitem> </menuchoice>"
 
 #. Tag: guilabel
-#: configuring.docbook:1298
+#: configuring.docbook:1335
 #, no-c-format
 msgid "Section:"
 msgstr "ភាគ ៖​"
 
 #. Tag: para
-#: configuring.docbook:1299
+#: configuring.docbook:1336
 #, no-c-format
 msgid ""
 "The section name is used to organize the file types in menus. This is also "
@@ -2407,13 +2463,13 @@ msgstr ""
 "</menuchoice> ។"
 
 #. Tag: guilabel
-#: configuring.docbook:1305
+#: configuring.docbook:1342
 #, no-c-format
 msgid "Variables:"
 msgstr "អថេរ​ ៖​"
 
 #. Tag: para
-#: configuring.docbook:1306
+#: configuring.docbook:1343
 #, fuzzy, no-c-format
 #| msgid ""
 #| "This string allows you to configure &kate;'s settings for the files "
@@ -2429,20 +2485,20 @@ msgstr ""
 "អ៊ិនកូដឌីង​ ។ល។​"
 
 #. Tag: para
-#: configuring.docbook:1309
+#: configuring.docbook:1346
 #, no-c-format
 msgid "For a full list of known variables, see the manual."
 msgstr "មើល​ក្នុង​សៀវភៅដៃ​ក្នុង​បញ្ជី​អថេរ​ដែល​អ្នក​បាន​ស្គាល់​ ។​"
 
 #. Tag: guilabel
-#: configuring.docbook:1313
+#: configuring.docbook:1350
 #, fuzzy, no-c-format
 #| msgid "Highlighting"
 msgid "Highlighting:"
 msgstr "ការបន្លិច​"
 
 #. Tag: para
-#: configuring.docbook:1314
+#: configuring.docbook:1351
 #, no-c-format
 msgid ""
 "If you create a new file type, this drop down box allows you to select a "
@@ -2450,26 +2506,26 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configuring.docbook:1319
+#: configuring.docbook:1356
 #, fuzzy, no-c-format
 #| msgid "Indentation mode:"
 msgid "Indentation Mode:"
 msgstr "របៀប​ការចូលបន្ទាត់​ ៖"
 
 #. Tag: para
-#: configuring.docbook:1320
+#: configuring.docbook:1357
 #, no-c-format
 msgid "The drop down box specifies the indentation mode for new documents."
 msgstr ""
 
 #. Tag: guilabel
-#: configuring.docbook:1325
+#: configuring.docbook:1362
 #, no-c-format
 msgid "File extensions:"
 msgstr "​ផ្នែក​បន្ថែម​ឯកសារ​ ៖"
 
 #. Tag: para
-#: configuring.docbook:1326
+#: configuring.docbook:1363
 #, no-c-format
 msgid ""
 "The wildcards mask allows you to select files by filename. A typical mask "
@@ -2481,25 +2537,25 @@ msgstr ""
 "ក្បៀស ។​"
 
 #. Tag: guilabel
-#: configuring.docbook:1332
+#: configuring.docbook:1369
 #, no-c-format
 msgid "MIME types:"
 msgstr "ប្រភេទ MIME ៖"
 
 #. Tag: para
-#: configuring.docbook:1333
+#: configuring.docbook:1370
 #, no-c-format
 msgid "Displays a wizard that helps you easily select mimetypes."
 msgstr "បង្ហាញ​អ្នកជំនួយ​ការ​ដែល​ជួយ​អ្នក​យ៉ាងងាយស្រួល​ក្នុង​ការ ជ្រើស mimetypes​។​"
 
 #. Tag: guilabel
-#: configuring.docbook:1337
+#: configuring.docbook:1374
 #, no-c-format
 msgid "Priority:"
 msgstr "អាទិភាព ៖"
 
 #. Tag: para
-#: configuring.docbook:1338
+#: configuring.docbook:1375
 #, no-c-format
 msgid ""
 "Sets a priority for this file type. If more than one file type selects the "
@@ -2509,13 +2565,13 @@ msgstr ""
 "មានអាទិភាព​ខ្ពស់​ជាង​គេត្រូវ​ប្រើ​​។​"
 
 #. Tag: guibutton
-#: configuring.docbook:1345
+#: configuring.docbook:1382
 #, no-c-format
 msgid "Download Highlighting Files..."
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1347
+#: configuring.docbook:1384
 #, no-c-format
 msgid ""
 "Click this button to download new or updated syntax highlight descriptions "
@@ -2523,14 +2579,14 @@ msgid ""
 msgstr "ចុច​ប៊ូតុង​នេះ​ដើម្បី​ទាញ​យក​ការពិពណ៌នា​បន្លិច​វាក្យស័ព្ទ​ដែល​បាន​ធ្វើ​ឲ្យ​ទាន់សម័យ​ពីតំបន់​បណ្តាញ kate ។"
 
 #. Tag: title
-#: configuring.docbook:1360
+#: configuring.docbook:1397
 #, fuzzy, no-c-format
 #| msgid "File extensions:"
 msgid "Extensions"
 msgstr "​ផ្នែក​បន្ថែម​ឯកសារ​ ៖"
 
 #. Tag: para
-#: configuring.docbook:1361
+#: configuring.docbook:1398
 #, fuzzy, no-c-format
 #| msgid ""
 #| "This tab lists all available plugins and you can check those you want to "
@@ -2547,7 +2603,7 @@ msgstr ""
 "អ្នកអាច​ចុច​វា​ក្នុង​គោល​បំណង​ដើម្បី​កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​ជំនួយ​ដែល​បាន ​បន្លិច​ ។​"
 
 #. Tag: para
-#: configuring.docbook:1364
+#: configuring.docbook:1401
 #, no-c-format
 msgid ""
 "Once a configurable plugin is checked, the <guibutton>Configure</guibutton> "
@@ -2556,21 +2612,21 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: configuring.docbook:1368
+#: configuring.docbook:1405
 #, fuzzy, no-c-format
 #| msgid "Editor component configuration"
 msgid "Editor Component Plugins"
 msgstr "ការកំណត់​រចនាសម្ព័ន្ធ​សមាសភាគ​កម្មវិធី​និពន្ធ​"
 
 #. Tag: guilabel
-#: configuring.docbook:1370
+#: configuring.docbook:1407
 #, fuzzy, no-c-format
 #| msgid "Auto Brackets"
 msgid "AutoBrace"
 msgstr "តង្កៀប​ស្វ័យប្រវត្តិ​"
 
 #. Tag: para
-#: configuring.docbook:1371
+#: configuring.docbook:1408
 #, no-c-format
 msgid ""
 "The autobrace plugin supersedes the &kate; internal <quote>Auto Brackets</"
@@ -2580,14 +2636,14 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configuring.docbook:1383
+#: configuring.docbook:1420
 #, fuzzy, no-c-format
 #| msgid "External Tools"
-msgid "DataTools"
+msgid "Data Tools"
 msgstr "ឧបករណ៍​ខាង​ក្រៅ​"
 
 #. Tag: para
-#: configuring.docbook:1384
+#: configuring.docbook:1421
 #, no-c-format
 msgid ""
 "Enables data tools like thesaurus and spell check (if installed). Data tools "
@@ -2599,13 +2655,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configuring.docbook:1393
+#: configuring.docbook:1430
 #, no-c-format
 msgid "Exporter"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1394
+#: configuring.docbook:1431
 #, no-c-format
 msgid ""
 "This command allows you to export the current document with all highlighting "
@@ -2617,13 +2673,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: configuring.docbook:1401
+#: configuring.docbook:1443
 #, no-c-format
 msgid "Insert File"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1402
+#: configuring.docbook:1444
 #, no-c-format
 msgid ""
 "This plugin allows you to insert any readable file at the cursor position. "
@@ -2632,13 +2688,13 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: configuring.docbook:1407
+#: configuring.docbook:1449
 #, no-c-format
 msgid "Python Encoding check"
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1408
+#: configuring.docbook:1450
 #, no-c-format
 msgid ""
 "This plugin is always enabled. If you are trying to save a python file as "
@@ -2649,13 +2705,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: configuring.docbook:1430
+#: configuring.docbook:1472
 #, no-c-format
 msgid "Configuring With Document Variables"
 msgstr "កំណត់រចនាសម្ព័ន្ថ​ជាមួយ​អថេរ​ឯកសារ "
 
 #. Tag: para
-#: configuring.docbook:1432
+#: configuring.docbook:1474
 #, no-c-format
 msgid ""
 "Kate variables is kateparts implementation of document variables, similar to "
@@ -2672,7 +2728,7 @@ msgstr ""
 "នៅ​បន្ទាត់​សញ្ញាក្បៀស​គឺ​ ជា​តម្លៃ, ។ ទាមទាឲ្យ​មាន​សញ្ញាក្បៀស​។​."
 
 #. Tag: para
-#: configuring.docbook:1441
+#: configuring.docbook:1483
 #, no-c-format
 msgid ""
 "Here is an example variable line, forcing indentation settings for a C++, "
@@ -2681,7 +2737,7 @@ msgstr ""
 "ទីនេះជា​ឧទាហរណ៍​អថេរ​បន្ទាត់​ ការកំណត់​ការចូល​បន្ទាត់​ចំពោះឯកសារ C++, java ឬ​ javascript ៖"
 
 #. Tag: programlisting
-#: configuring.docbook:1444
+#: configuring.docbook:1486
 #, no-c-format
 msgid ""
 "// kate: space-indent on; indent-width 4; mixedindent off; indent-mode "
@@ -2691,13 +2747,13 @@ msgstr ""
 "cstyle;"
 
 #. Tag: para
-#: configuring.docbook:1447
+#: configuring.docbook:1489
 #, no-c-format
 msgid "Only the first and last 10 lines are searched for variable lines."
 msgstr "បាន​តែ​បន្ទាត់​១០​ដំបូង​ និង​ចុង​ក្រោយ​ត្រូវ​បា​ន​ស្វែងរក​​​អថេរ​បន្ទាត់​ ។​"
 
 #. Tag: para
-#: configuring.docbook:1449
+#: configuring.docbook:1491
 #, fuzzy, no-c-format
 #| msgid ""
 #| "There are variables to support almost all configurations in katepart, and "
@@ -2712,14 +2768,14 @@ msgstr ""
 "កម្មវិធី​ជំនួយ​​ដែល​អាច​ប្រើអថេរ​ ក្នុង​ករណី​ណា​មួយ​វា​ត្រូវ​តែ​ជាឯការ​របស់​កម្មវិធី​ជំនួយ ។"
 
 #. Tag: title
-#: configuring.docbook:1454
+#: configuring.docbook:1496
 #, fuzzy, no-c-format
 #| msgid "How kate uses variables"
 msgid "How &kate; uses Variables"
 msgstr "kate ប្រើប្រាស់​អថេរ​ដោយ​របៀប​ណា​ "
 
 #. Tag: para
-#: configuring.docbook:1456
+#: configuring.docbook:1498
 #, no-c-format
 msgid ""
 "When reading configuration, katepart looks in the following places (in that "
@@ -2743,7 +2799,7 @@ msgstr ""
 "ជាន់ពីលើ​ផ្លាស់ប្តូរ​ការប្រើ​ធាតុ​ម៉ឺនុយ​ ឬ​បន្ទាត់​ពាក្យ​បញ្ជា​ ។​"
 
 #. Tag: para
-#: configuring.docbook:1471
+#: configuring.docbook:1513
 #, no-c-format
 msgid ""
 "Any variable not listed below is stored in the document and can be queried "
@@ -2756,7 +2812,7 @@ msgstr ""
 "ការកំណត់រចនាសម្ព័ន្ធ​របស់​វា​ ។"
 
 #. Tag: para
-#: configuring.docbook:1476
+#: configuring.docbook:1518
 #, no-c-format
 msgid ""
 "The variables listed here documents &kate; version 2.4. More variables may "
@@ -2767,61 +2823,61 @@ msgstr ""
 "បាន​បន្ថែម​នាពេល​អនាគត់​ ។ តម្លៃ​អថេរ​មាន​បីប្រភេទ​ដែល​អាច​ធ្វើ​បាន​ជា​មួយ​កន្សោម​ត្រឹមត្រូវ​ដូចតទៅនេះ ៖"
 
 #. Tag: para
-#: configuring.docbook:1480
+#: configuring.docbook:1522
 #, no-c-format
 msgid "BOOL - on|off|true|false|1|0"
 msgstr "BOOL - on|off|true|false|1|0"
 
 #. Tag: para
-#: configuring.docbook:1481
+#: configuring.docbook:1523
 #, no-c-format
 msgid "INTEGER - any integer number"
 msgstr "INTEGER - ជា​ចំនួន​គត់​"
 
 #. Tag: para
-#: configuring.docbook:1482
+#: configuring.docbook:1524
 #, no-c-format
 msgid "STRING - anything else"
 msgstr "STRING - មាន​អ្វីទៀត​ទេ​"
 
 #. Tag: title
-#: configuring.docbook:1487
+#: configuring.docbook:1529
 #, no-c-format
 msgid "Available Variables"
 msgstr "អថេរ​ដែល​អាច​រក​បាន​ "
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1490
+#: configuring.docbook:1532
 #, no-c-format
 msgid "<command>auto-brackets</command><arg>BOOL</arg>"
 msgstr "<command>auto-brackets</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1491
+#: configuring.docbook:1533
 #, no-c-format
 msgid "Set auto insertion of brackets on or off."
 msgstr "កំណត់​ការបញ្ចូល​តង្កៀប​បិទ បើក​ដោយ​ស្វ័យប្រវត្តិ​ ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1495
+#: configuring.docbook:1537
 #, no-c-format
 msgid "<command>auto-center-lines</command><arg>INT</arg>"
 msgstr "<command>auto-center-lines</command><arg>INT</arg>"
 
 #. Tag: para
-#: configuring.docbook:1496
+#: configuring.docbook:1538
 #, no-c-format
 msgid "Set the number of autocenter lines."
 msgstr "កំណត់​ចំនួន​របស់​បន្ទាត់​ចំកណ្តាល​ស្វ័យប្រវត្តិ​ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1500
+#: configuring.docbook:1542
 #, no-c-format
 msgid "<command>auto-insert-doxygen</command><arg>BOOL</arg>"
 msgstr "<command>auto-insert-doxygen</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1501
+#: configuring.docbook:1543
 #, no-c-format
 msgid ""
 "Turn insertion of the leading asterisk in doxygen comments on or off. This "
@@ -2831,13 +2887,13 @@ msgstr ""
 "លុះត្រាតែ​អ្នកប្រើ​កម្មវិធី​លិបិក្រម​ cstyle ដោយ​ស្វ័យប្រវត្តិ​ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1506
+#: configuring.docbook:1548
 #, no-c-format
 msgid "<command>background-color</command><arg>STRING</arg>"
 msgstr "<command>background-color</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1507
+#: configuring.docbook:1549
 #, no-c-format
 msgid ""
 "Set the document background color. The value must be something that can be "
@@ -2846,38 +2902,38 @@ msgstr ""
 "កំណត់​ពណ៌​​ផ្ទៃខាងក្រោយ​ឯកសារ ។ តម្លៃ​ត្រូវអាច​វាយ​តម្លៃ​ជា​ពណ៌​ដែល​ត្រឹមត្រូវ​ឧទាហរណ៍  \"#ff0000\" ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1512
+#: configuring.docbook:1554
 #, no-c-format
 msgid "<command>backspace-indents</command><arg>BOOL</arg>"
 msgstr "<command>backspace-indents</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1513
+#: configuring.docbook:1555
 #, no-c-format
 msgid "Turn backspace indenting on or off."
 msgstr "បើក ឬ​បិទលុបថយក្រោយ​ដកឃ្លា​ដើម​បន្ទាត់​ ។ "
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1517
+#: configuring.docbook:1559
 #, no-c-format
 msgid "<command>block-selection</command><arg>BOOL</arg>"
 msgstr "<command>block-selection</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1518
+#: configuring.docbook:1560
 #, no-c-format
 msgid "Turn block selection on or off."
 msgstr "បើក ឬ​បិទ​ការជ្រើស​ប្លុក​ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1522
+#: configuring.docbook:1564
 #, fuzzy, no-c-format
 #| msgid "<command>icon-border</command><arg>BOOL</arg>"
 msgid "<command>bom | byte-order-marker</command><arg>BOOL</arg>"
 msgstr "<command>icon-border</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1523
+#: configuring.docbook:1565
 #, no-c-format
 msgid ""
 "Enable/disable the byte order marker when saving files in unicode format "
@@ -2885,19 +2941,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: configuring.docbook:1524 configuring.docbook:1542
+#: configuring.docbook:1566 configuring.docbook:1584
 #, no-c-format
 msgid "Since: Kate 3.4 (KDE 4.4)"
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1528
+#: configuring.docbook:1570
 #, no-c-format
 msgid "<command>bracket-highlight-color</command><arg>STRING</arg>"
 msgstr "<command>bracket-highlight-color</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1529
+#: configuring.docbook:1571
 #, no-c-format
 msgid ""
 "Set the color for the bracket highlight. The value must be something that "
@@ -2907,13 +2963,13 @@ msgstr ""
 "ឧទាហរណ៍   \"#ff0000\""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1534
+#: configuring.docbook:1576
 #, no-c-format
 msgid "<command>current-line-color</command><arg>STRING</arg>"
 msgstr "<command>current-line-color</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1535
+#: configuring.docbook:1577
 #, no-c-format
 msgid ""
 "Set the color for the current line. The value must be something that can be "
@@ -2922,38 +2978,38 @@ msgstr ""
 "កំណត់​ពណ៌​សម្រាប់​បន្ទាត់​បច្ចុប្បន្ន​ ។ តម្លៃ​ត្រូវអាច​វាយ​តម្លៃ​ជា​ពណ៌​ដែល​ត្រឹមត្រូវ​ឧទាហរណ៍  \"#ff0000\" ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1540
+#: configuring.docbook:1582
 #, fuzzy, no-c-format
 #| msgid "<command>selection-color</command><arg>STRING</arg>"
 msgid "<command>default-dictionary</command><arg>STRING</arg>"
 msgstr "<command>selection-color</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1541
+#: configuring.docbook:1583
 #, no-c-format
 msgid "Sets the default dictionary used for spell checking."
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1546
+#: configuring.docbook:1588
 #, no-c-format
 msgid "<command>dynamic-word-wrap</command><arg>BOOL</arg>"
 msgstr "<command>dynamic-word-wrap</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1547
+#: configuring.docbook:1589
 #, no-c-format
 msgid "Turns dynamic word wrap on or off."
 msgstr "បើក ឬ​បិទ​ការរុំពាក្យ​ថាមវន្ត ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1551
+#: configuring.docbook:1593
 #, no-c-format
 msgid "<command>eol | end-of-line</command><arg>STRING</arg>"
 msgstr "<command>eol | end-of-line</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1552
+#: configuring.docbook:1594
 #, no-c-format
 msgid ""
 "Set the end of line mode. Valid settings are <quote>unix</quote>, "
@@ -2963,13 +3019,13 @@ msgstr ""
 "<quote>dos</quote>"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1557
+#: configuring.docbook:1599
 #, no-c-format
 msgid "<command>encoding</command><arg>STRING</arg>"
 msgstr "<command>encoding</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1558
+#: configuring.docbook:1600
 #, no-c-format
 msgid ""
 "Set the document encoding. The value must be a valid encoding name, like "
@@ -2978,37 +3034,37 @@ msgstr ""
 "កំណត់​ការអ៊ិន​កូដ​ឯកសារ ។ តម្លៃ​ត្រូវ​តែ​ជា​ឈ្មោះ​អ៊ិនកូដ​ដែល​ត្រឹមត្រូវ​ដូចជា​ <quote>utf-8</quote>."
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1563
+#: configuring.docbook:1605
 #, no-c-format
 msgid "<command>folding-markers</command><arg>BOOL</arg>"
 msgstr "<command>folding-markers</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1564
+#: configuring.docbook:1606
 #, no-c-format
 msgid "Set the display of folding markers on or off."
 msgstr "កំណត់បង្ហាញកម្មវិធី​សម្គាល់​​បិទ ឬ​បើក​ ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1568
+#: configuring.docbook:1610
 #, no-c-format
 msgid "<command>font-size</command><arg>INT</arg>"
 msgstr "<command>font-size</command><arg>INT</arg>"
 
 #. Tag: para
-#: configuring.docbook:1569
+#: configuring.docbook:1611
 #, no-c-format
 msgid "Set the point size of the document font."
 msgstr "កំណត់​ទំហំ​ចំណុច​នៃ​ពុម្ពអក្សរ​ឯកសារ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1573
+#: configuring.docbook:1615
 #, no-c-format
 msgid "<command>font</command><arg>STRING</arg>"
 msgstr "<command>font</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1574
+#: configuring.docbook:1616
 #, no-c-format
 msgid ""
 "Set the font of the document. The value should be a valid font name, for "
@@ -3018,14 +3074,14 @@ msgstr ""
 "quote> ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1579
+#: configuring.docbook:1621
 #, fuzzy, no-c-format
 #| msgid "<command>font</command><arg>STRING</arg>"
 msgid "<command>hl | syntax</command><arg>STRING</arg>"
 msgstr "<command>font</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1580
+#: configuring.docbook:1622
 #, no-c-format
 msgid ""
 "Set the syntax highlighting. Valid strings are all the names available in "
@@ -3033,13 +3089,13 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1584
+#: configuring.docbook:1626
 #, no-c-format
 msgid "<command>icon-bar-color</command><arg>STRING</arg>"
 msgstr "<command>icon-bar-color</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1585
+#: configuring.docbook:1627
 #, no-c-format
 msgid ""
 "Set the icon bar color. The value must be something that can be evaluated to "
@@ -3049,25 +3105,25 @@ msgstr ""
 "literal> ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1590
+#: configuring.docbook:1632
 #, no-c-format
 msgid "<command>icon-border</command><arg>BOOL</arg>"
 msgstr "<command>icon-border</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1591
+#: configuring.docbook:1633
 #, no-c-format
 msgid "Set the display of the icon border on or off."
 msgstr "កំណត់​បង្ហាញ​ស៊ុម​រូបតំណាង​បិទ ឬ​បើក​ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1595
+#: configuring.docbook:1637
 #, no-c-format
 msgid "<command>indent-mode</command><arg>STRING</arg>"
 msgstr "<command>indent-mode</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1596
+#: configuring.docbook:1638
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Set the auto-indentation mode. The options <quote>none</quote>, "
@@ -3087,25 +3143,25 @@ msgstr ""
 "autoindent\"/> សម្រាប់​ព័ត៌មាន​លម្អិត​​។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1604
+#: configuring.docbook:1646
 #, no-c-format
 msgid "<command>indent-width</command><arg>INT</arg>"
 msgstr "<command>indent-width</command><arg>INT</arg>"
 
 #. Tag: para
-#: configuring.docbook:1605
+#: configuring.docbook:1647
 #, no-c-format
 msgid "Set the indentation width."
 msgstr "កំណត់​ទទឹង​ការចូលបន្ទាត់ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1609
+#: configuring.docbook:1651
 #, no-c-format
 msgid "<command>keep-extra-spaces</command><arg>BOOL</arg>"
 msgstr "<command>keep-extra-spaces</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1610
+#: configuring.docbook:1652
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Set wheather to keep extra spaces when calculating indentation width."
@@ -3113,13 +3169,13 @@ msgid "Set whether to keep extra spaces when calculating indentation width."
 msgstr "កំណត់ដើម្បី​រក្សា​ចន្លោះ​ខាងក្រៅ​ពេល​គណនា​ទទឹង​ការចូល​បន្ទាត់​ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1614
+#: configuring.docbook:1656
 #, no-c-format
 msgid "<command>keep-indent-profile</command><arg>BOOL</arg>"
 msgstr "<command>keep-indent-profile</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1615
+#: configuring.docbook:1657
 #, no-c-format
 msgid ""
 "If enabled, prevents unindenting a block if at least one line has no "
@@ -3128,37 +3184,37 @@ msgstr ""
 "បើ​អនុញ្ញាត ការការពា​រ​ប្លុក​​ការ​​មិន​ដកឃ្លា​ដើម​បន្ទាត់ បើ​មានតែ​បន្ទាត់​តែ​មួយ​មិនចាំបាច់​ចូល​បន្ទាត់​ទេ​ ។​"
 
 #. Tag: para
-#: configuring.docbook:1617
+#: configuring.docbook:1659
 #, no-c-format
 msgid "Note: Removed in Kate 3 (KDE 4)"
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1621
+#: configuring.docbook:1663
 #, no-c-format
 msgid "<command>line-numbers</command><arg>BOOL</arg>"
 msgstr "<command>line-numbers</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1622
+#: configuring.docbook:1664
 #, no-c-format
 msgid "Set the display of line numbers on or off."
 msgstr "កំណត់​បង្ហាញ​ចំនួន​បន្ទាត់​បិត ឬបើក​​។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1626
+#: configuring.docbook:1668
 #, no-c-format
 msgid "<command>mixed-indent</command><arg>BOOL</arg>"
 msgstr "<command>mixed-indent</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1627
+#: configuring.docbook:1669
 #, no-c-format
 msgid "Set mixed indentation ala Emacs on or off."
 msgstr "កំណត់​ការចូល​បន្ទាត់​ ala Emacs ដែល​បានលាយ​បិទ ឬ​បើក​​។​"
 
 #. Tag: para
-#: configuring.docbook:1628
+#: configuring.docbook:1670
 #, no-c-format
 msgid ""
 "Note: Deprecated since Kate 3 in KDE4. This variable is ignored, set "
@@ -3166,85 +3222,85 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1632
+#: configuring.docbook:1674
 #, no-c-format
 msgid "<command>overwrite-mode</command><arg>BOOL</arg>"
 msgstr "<command>overwrite-mode</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1633
+#: configuring.docbook:1675
 #, no-c-format
 msgid "Set overwrite mode on or off."
 msgstr "កំណត់​របៀប​បិទ ឬបើក​សរសេរជាន់​ពី​លើ​ ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1637
+#: configuring.docbook:1679
 #, no-c-format
 msgid "<command>persistent-selection</command><arg>BOOL</arg>"
 msgstr "<command>persistent-selection</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1638
+#: configuring.docbook:1680
 #, no-c-format
 msgid "Set persistent selection on or off."
 msgstr "កំណត់ការជ្រើស​បិទ ឬ​បើក​​។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1642
+#: configuring.docbook:1684
 #, no-c-format
 msgid "<command>remove-trailing-space</command><arg>BOOL</arg>"
 msgstr "<command>remove-trailing-space</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1643
+#: configuring.docbook:1685
 #, no-c-format
 msgid "Set dynamic end of line cleanup on or off."
 msgstr "កំណត់​បិទ បើក​ជម្រះ​ចុង​បន្ទាត់ថាមវន្ត​។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1647
+#: configuring.docbook:1689
 #, no-c-format
 msgid "<command>replace-tabs-save</command><arg>BOOL</arg>"
 msgstr "<command>replace-tabs-save</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1648
+#: configuring.docbook:1690
 #, no-c-format
 msgid "Set tab-&gt;space conversion on save on or off."
 msgstr "កំណត់រក្សាទុក​ ​បិទ បើក​ការបម្លែង​ ថេប-&gt; ចន្លោះ​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1652
+#: configuring.docbook:1694
 #, no-c-format
 msgid "<command>replace-tabs</command><arg>BOOL</arg>"
 msgstr "<command>replace-tabs</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1653
+#: configuring.docbook:1695
 #, no-c-format
 msgid "Set dynamic tab-&gt;space conversion on or off."
 msgstr "កំណត់​បើក ឬបិទ​ឋាមវន្ត​ ថេប-&gt; ចន្លោះ​ ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1657
+#: configuring.docbook:1699
 #, no-c-format
 msgid "<command>replace-trailing-space-save</command><arg>BOOL</arg>"
 msgstr "<command>replace-trailing-space-save</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1658
+#: configuring.docbook:1700
 #, no-c-format
 msgid "Set end of line cleanup on save on or off."
 msgstr "កំណត់​បិទ បើក​រក្សាទុក​ជម្រអះ​ចុង​បន្ទាត់ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1662
+#: configuring.docbook:1704
 #, no-c-format
 msgid "<command>scheme</command><arg>STRING</arg>"
 msgstr "<command>scheme</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1663
+#: configuring.docbook:1705
 #, no-c-format
 msgid ""
 "Set the color scheme. The string must be the name of a color scheme that "
@@ -3254,13 +3310,13 @@ msgstr ""
 "ការកំណត់រចនាសម្ព័ន្ធ​របស់​អ្នក​ ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1668
+#: configuring.docbook:1710
 #, no-c-format
 msgid "<command>selection-color</command><arg>STRING</arg>"
 msgstr "<command>selection-color</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1669
+#: configuring.docbook:1711
 #, no-c-format
 msgid ""
 "Set the selection color. The value must be something that can be evaluated "
@@ -3268,43 +3324,43 @@ msgid ""
 msgstr "កំណត់​ការជ្រើសរើស​ពណ៌ ។ តម្លៃ​ត្រូវ​តែ​វាយ​តម្លៃ​ជា​ពណ៌​ដែល​ត្រឹមត្រូវ​ ឧទាហរណ៍ \"#ff0000\" ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1674
+#: configuring.docbook:1716
 #, no-c-format
 msgid "<command>show-tabs</command><arg>BOOL</arg>"
 msgstr "<command>show-tabs</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1675
+#: configuring.docbook:1717
 #, no-c-format
 msgid "Set the visual TAB character on or off."
 msgstr "កំណត់​បិទ ឬ​បើក​តួអក្សរ​ TAB និមិត្ត ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1679
+#: configuring.docbook:1721
 #, no-c-format
 msgid "<command>smart-home</command><arg>BOOL</arg>"
 msgstr "<command>smart-home</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1680
+#: configuring.docbook:1722
 #, no-c-format
 msgid "Set smart home navigation on or off."
 msgstr "កំណត់​បិទ ឬ​បើក​ការរុករក​ផ្ទះ​ឆ្លាត​ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1684
+#: configuring.docbook:1726
 #, no-c-format
 msgid "<command>space-indent</command><arg>BOOL</arg>"
 msgstr "<command>space-indent</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1685
+#: configuring.docbook:1727
 #, no-c-format
 msgid "Set indentation with spaces on or off."
 msgstr "កំណត់​បិទ ឬ​បើក​ការចូល​បន្ទាត់​ដែល​មាន​ចន្លោះ​ ។"
 
 #. Tag: para
-#: configuring.docbook:1686
+#: configuring.docbook:1728
 #, no-c-format
 msgid ""
 "Note: Deprecated since Kate 3 in KDE4. Mixed indentation is the default "
@@ -3313,43 +3369,43 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1690
+#: configuring.docbook:1732
 #, no-c-format
 msgid "<command>tab-indents</command><arg>BOOL</arg>"
 msgstr "<command>tab-indents</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1691
+#: configuring.docbook:1733
 #, no-c-format
 msgid "Set the TAB key indentation on or off."
 msgstr "កំណត់​បិទ ឬ​បើក​ការចូល​បន្ទាត់​ដោយ​គ្រាប់​ចុច​ TAB ​។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1695
+#: configuring.docbook:1737
 #, no-c-format
 msgid "<command>tab-width</command><arg>INT</arg>"
 msgstr "<command>tab-width</command><arg>INT</arg>"
 
 #. Tag: para
-#: configuring.docbook:1696
+#: configuring.docbook:1738
 #, no-c-format
 msgid "Set the tab display width."
 msgstr "កំណត់​បង្ហាញ​ទទឹង​ថេប​ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1700
+#: configuring.docbook:1742
 #, no-c-format
 msgid "<command>undo-steps</command><arg>INT</arg>"
 msgstr "<command>undo-steps</command><arg>INT</arg>"
 
 #. Tag: para
-#: configuring.docbook:1701
+#: configuring.docbook:1743
 #, no-c-format
 msgid "Set the number of undo steps to remember."
 msgstr "កំណត់​ចំនួន​ជំហានមិនធ្វើវិញ​ដើម្បីចងចាំ​ ។"
 
 #. Tag: para
-#: configuring.docbook:1702
+#: configuring.docbook:1744
 #, no-c-format
 msgid ""
 "Note: Deprecated since Kate 3 in KDE4. This variable is ignored. The maximal "
@@ -3357,25 +3413,25 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1706
+#: configuring.docbook:1748
 #, no-c-format
 msgid "<command>word-wrap-column</command><arg>INT</arg>"
 msgstr "<command>word-wrap-column</command><arg>INT</arg>"
 
 #. Tag: para
-#: configuring.docbook:1707
+#: configuring.docbook:1749
 #, no-c-format
 msgid "Set the hard word wrap width."
 msgstr "កំណត់​ទទឹង​ការរុំពាក្យ​​។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1711
+#: configuring.docbook:1753
 #, no-c-format
 msgid "<command>word-wrap-marker-color</command><arg>STRING</arg>"
 msgstr "<command>word-wrap-marker-color</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:1712
+#: configuring.docbook:1754
 #, no-c-format
 msgid ""
 "Set the word wrap marker color. The value must be something that can be "
@@ -3385,28 +3441,31 @@ msgstr ""
 "\" ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1717
+#: configuring.docbook:1759
 #, no-c-format
 msgid "<command>word-wrap</command><arg>BOOL</arg>"
 msgstr "<command>word-wrap</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1718
+#: configuring.docbook:1760
 #, no-c-format
 msgid "Set hard word wrapping on or off."
 msgstr "កំណត់​បិត ឬបើក​ការរុំពាក្យ​ដែល​ពិបាក​​។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:1722
+#: configuring.docbook:1764
 #, no-c-format
 msgid "<command>wrap-cursor</command><arg>BOOL</arg>"
 msgstr "<command>wrap-cursor</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:1723
+#: configuring.docbook:1765
 #, no-c-format
 msgid "Set cursor wrapping on or off."
 msgstr "កំណត់​បិទ ឬ​បើក​ការរុំពាក្យ​ទស្សន៍ទ្រនិច​។"
+
+#~ msgid "This sets the default character encoding for your files."
+#~ msgstr "ការកំណត់​ការអ៊ិនកូដ​តួអក្សរ​លំនាំដើម​សម្រាប់​ឯកសារ​របស់​អ្នក​ ។"
 
 #, fuzzy
 #~| msgid ""
