@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-08-22 05:46+0200\n"
+"POT-Creation-Date: 2010-10-24 06:22+0200\n"
 "PO-Revision-Date: 2010-06-08 14:30+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -19,25 +19,21 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
 
-#: connectioncontroller.cpp:112
-#, kde-format
-msgid "Refused uninvited connection attempt from %1"
-msgstr "បានបដិសេធ​​ការ​តភ្ជាប់​ដែល​មិន​បាន​អញ្ជើញ​ពី %1"
+#: abstractrfbserver.cpp:221
+msgid "Address already in use"
+msgstr "អាសយដ្ឋាន​កំពុង​ប្រើ​រួច​ហើយ"
 
-#: connectioncontroller.cpp:123
-#, kde-format
-msgid "Accepted uninvited connection from %1"
-msgstr "បាន​ទទួល​ការ​តភ្ជាប់​ដែល​មិន​បាន​អញ្ជើញ​ពី %1"
+#: abstractrfbserver.cpp:306
+msgid ""
+"Your X11 Server does not support the required XTest extension version 2.2. "
+"Sharing your desktop is not possible."
+msgstr ""
+"ម៉ាស៊ីន​បម្រើ X11 របស់​អ្នក​មិន​គាំទ្រ​ផ្នែក​បន្ថែម XTest កំណែ ២.២ ​ដែល​ទាមទារ​ទេ ។ មិន​អាច​ធ្វើការ​ចែក​"
+"រំលែក​ផ្ទៃតុ​របស់​អ្នក​បាន​ទេ ។"
 
-#: connectioncontroller.cpp:131
-#, kde-format
-msgid "Received connection from %1, on hold (waiting for confirmation)"
-msgstr "បាន​ទទួលយក​ការតភ្ជាប់​ពី %1 រង់ចាំ (រង់ចាំ​ការ​អះអាង)"
-
-#: connectioncontroller.cpp:174 connectioncontroller.cpp:178
-#, kde-format
-msgid "Failed login attempt from %1: wrong password"
-msgstr "ប៉ុនប៉ង​ចូល​ពី %1 បាន​បរាជ័យ ៖ ពាក្យ​សម្ងាត់​ខុស"
+#: abstractrfbserver.cpp:307
+msgid "Desktop Sharing Error"
+msgstr "កំហុស​ចែក​រំលែក​ផ្ទៃតុ"
 
 #: connectiondialog.cpp:32
 msgid "New Connection"
@@ -51,7 +47,7 @@ msgstr "ទទួល​យក​ការ​តភ្ជាប់"
 msgid "Refuse Connection"
 msgstr "បដិសេធ​ការ​តភ្ជាប់"
 
-#: invitedialog.cpp:34 manageinvitationsdialog.cpp:57
+#: invitedialog.cpp:34 manageinvitationsdialog.cpp:55
 msgid "Invitation"
 msgstr "ការ​អញ្ជើញ"
 
@@ -90,26 +86,30 @@ msgstr ""
 "អញ្ជើញ' \n"
 "ក្នុង​ការ​កំណត់​រចនា​សម្ព័ន្ធ ។"
 
-#: krfbserver.cpp:194 krfbserver.cpp:214
+#: krfbconnectioncontroller.cpp:97
+#, kde-format
+msgid "Refused uninvited connection attempt from %1"
+msgstr "បានបដិសេធ​​ការ​តភ្ជាប់​ដែល​មិន​បាន​អញ្ជើញ​ពី %1"
+
+#: krfbconnectioncontroller.cpp:108
+#, kde-format
+msgid "Accepted uninvited connection from %1"
+msgstr "បាន​ទទួល​ការ​តភ្ជាប់​ដែល​មិន​បាន​អញ្ជើញ​ពី %1"
+
+#: krfbconnectioncontroller.cpp:116
+#, kde-format
+msgid "Received connection from %1, on hold (waiting for confirmation)"
+msgstr "បាន​ទទួលយក​ការតភ្ជាប់​ពី %1 រង់ចាំ (រង់ចាំ​ការ​អះអាង)"
+
+#: krfbconnectioncontroller.cpp:159 krfbconnectioncontroller.cpp:163
+#, kde-format
+msgid "Failed login attempt from %1: wrong password"
+msgstr "ប៉ុនប៉ង​ចូល​ពី %1 បាន​បរាជ័យ ៖ ពាក្យ​សម្ងាត់​ខុស"
+
+#: krfbserver.cpp:60 krfbserver.cpp:65
 #, kde-format
 msgid "%1@%2 (shared desktop)"
 msgstr "%1@%2 (​ផ្ទៃតុ​ដែល​បាន​ចែក​រំលែក)"
-
-#: krfbserver.cpp:207
-msgid "Address already in use"
-msgstr "អាសយដ្ឋាន​កំពុង​ប្រើ​រួច​ហើយ"
-
-#: krfbserver.cpp:302
-msgid ""
-"Your X11 Server does not support the required XTest extension version 2.2. "
-"Sharing your desktop is not possible."
-msgstr ""
-"ម៉ាស៊ីន​បម្រើ X11 របស់​អ្នក​មិន​គាំទ្រ​ផ្នែក​បន្ថែម XTest កំណែ ២.២ ​ដែល​ទាមទារ​ទេ ។ មិន​អាច​ធ្វើការ​ចែក​"
-"រំលែក​ផ្ទៃតុ​របស់​អ្នក​បាន​ទេ ។"
-
-#: krfbserver.cpp:303
-msgid "Desktop Sharing Error"
-msgstr "កំហុស​ចែក​រំលែក​ផ្ទៃតុ"
 
 #: main.cpp:40
 msgid "VNC-compatible server to share KDE desktops"
@@ -217,7 +217,7 @@ msgstr "​​ការធ្វើឲ្យ​ផ្ទៃ​ខាងក្រ
 msgid "Do not show the invitations management dialog at startup"
 msgstr "កុំ​បង្ហាញ​ប្រអប់​គ្រប់គ្រង​ការ​អញ្ជើញ​នៅពេល​ចាប់ផ្ដើម"
 
-#: manageinvitationsdialog.cpp:95
+#: manageinvitationsdialog.cpp:93
 msgid ""
 "An invitation creates a one-time password that allows the receiver to "
 "connect to your desktop.\n"
@@ -244,7 +244,7 @@ msgstr ""
 "អញ្ជើញ' \n"
 "ក្នុង​ការ​កំណត់​រចនា​សម្ព័ន្ធ ។"
 
-#: manageinvitationsdialog.cpp:117
+#: manageinvitationsdialog.cpp:115
 msgid ""
 "When sending an invitation by email, note that everybody who reads this "
 "email will be able to connect to your computer for one hour, or until the "
@@ -258,15 +258,15 @@ msgstr ""
 "អ្នក​គួរ​តែ​អ៊ិនគ្រីប​អ៊ីមែល ឬ​យ៉ាង​ហោច​ណាស់​ផ្ញើ​វា​តែ​ក្នុង​​​បណ្ដាញ​ដែល​មាន​សុវត្ថិ​ភាព​ប៉ុណ្ណោះ ប៉ុន្តែ​មិន​នៅ​លើ​អ៊ិនធឺណិត​"
 "ទេ ។"
 
-#: manageinvitationsdialog.cpp:122
+#: manageinvitationsdialog.cpp:120
 msgid "Send Invitation via Email"
 msgstr "ផ្ញើ​ការ​អញ្ជើញ​តាម​រយៈ​អ៊ីមែល"
 
-#: manageinvitationsdialog.cpp:143
+#: manageinvitationsdialog.cpp:141
 msgid "Desktop Sharing (VNC) invitation"
 msgstr "ការ​អញ្ជើញ​ការ​ចែក​រំលែក​ផ្ទៃតុ (VNC)"
 
-#: manageinvitationsdialog.cpp:144
+#: manageinvitationsdialog.cpp:142
 #, kde-format
 msgid ""
 "You have been invited to a VNC session. If you have the KDE Remote Desktop "
@@ -293,23 +293,23 @@ msgstr ""
 "\n"
 "ដើម្បី​សុវត្ថិភាព​ កា​រអញ្ជើញ​នេះ​នឹង​ផុត​កំណត់​នៅ %5 (%6) ។"
 
-#: manageinvitationsdialog.cpp:182
+#: manageinvitationsdialog.cpp:180
 msgid "Network"
 msgstr "បណ្ដាញ"
 
-#: manageinvitationsdialog.cpp:183
+#: manageinvitationsdialog.cpp:181
 msgid "Security"
 msgstr "សុវត្ថិភាព"
 
-#: manageinvitationsdialog.cpp:192
+#: manageinvitationsdialog.cpp:190
 msgid "<qt>Are you sure you want to delete all invitations?</qt>"
 msgstr "<qt>តើ​អ្នក​ប្រាកដ​ជា​ចង់​លុប​ការ​អញ្ជើញ​ទាំងអស់​ឬ?</qt>"
 
-#: manageinvitationsdialog.cpp:193 manageinvitationsdialog.cpp:209
+#: manageinvitationsdialog.cpp:191 manageinvitationsdialog.cpp:207
 msgid "Confirm delete Invitations"
 msgstr "អះអាង​លុប​ការ​អញ្ជើញ​ទាំងអស់"
 
-#: manageinvitationsdialog.cpp:208
+#: manageinvitationsdialog.cpp:206
 msgid "<qt>Are you sure you want to delete this invitation?</qt>"
 msgstr "<qt>តើ​អ្នក​ប្រាកដ​ជា​ចង់​លុប​ការ​អញ្ជើញ​នេះ​ឬ?</qt>"
 
@@ -732,28 +732,28 @@ msgstr "ពាក្យ​សម្ងាត់​សម្រាប់​កា
 msgid "Preferred Frame Buffer Plugin"
 msgstr "កម្មវិធី​ជំនួយ​សតិ​បណ្តោះ​អាសន្ននៃ​ស៊ុម​ដែល​ពេញ​ចិត្ត"
 
-#: trayicon.cpp:39 trayicon.cpp:91
+#: trayicon.cpp:38 trayicon.cpp:90
 msgid "Desktop Sharing - disconnected"
 msgstr "ការ​ចែក​រំលែក​ផ្ទៃតុ - ​បាន​ផ្តាច់"
 
-#: trayicon.cpp:48
+#: trayicon.cpp:47
 msgid "Enable Remote Control"
 msgstr "អនុញ្ញាត​ការ​បញ្ជា​ពី​ចម្ងាយ"
 
-#: trayicon.cpp:49
+#: trayicon.cpp:48
 msgid "Disable Remote Control"
 msgstr "បិទ​ការ​បញ្ជា​ពី​ចម្ងាយ"
 
-#: trayicon.cpp:79
+#: trayicon.cpp:78
 #, kde-format
 msgid "The remote user %1 is now connected."
 msgstr "អ្នក​ប្រើពី​ចម្ងាយ %1 ឥឡូវ​ត្រូវ​បាន​តភ្ជាប់ ។"
 
-#: trayicon.cpp:81
+#: trayicon.cpp:80
 #, kde-format
 msgid "Desktop Sharing - connected with %1"
 msgstr "ការ​ចែក​រំលែក​​ផ្ទៃតុ - បាន​ភ្ជាប់​ជាមួយ %1"
 
-#: trayicon.cpp:93
+#: trayicon.cpp:92
 msgid "The remote user has closed the connection."
 msgstr "អ្នក​ប្រើ​ពី​ចម្ងាយ​បាន​បិទ​ការ​តភ្ជាប់ ។"
