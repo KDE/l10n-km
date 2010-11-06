@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_devicenotifier\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-10-26 06:48+0200\n"
+"POT-Creation-Date: 2010-11-06 06:32+0100\n"
 "PO-Revision-Date: 2010-05-18 15:11+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -18,15 +18,21 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: deviceitem.cpp:286
+#: deviceitem.cpp:292
 msgid "Click to eject this disc."
 msgstr "ចុច​ដើម្បី​ច្រាន​ថាស​នេះ​ចេញ ។"
 
-#: deviceitem.cpp:288
+#: deviceitem.cpp:295
 msgid "Click to safely remove this device."
 msgstr "ចុច​ដើម្បី​យក​ឧបករណ៍​នេះ​ចេញ​ដោយ​សុវត្ថិភាព ។"
 
-#: deviceitem.cpp:290
+#: deviceitem.cpp:297
+#, fuzzy
+#| msgid "Click to safely remove this device."
+msgid "Click to unmount this device."
+msgstr "ចុច​ដើម្បី​យក​ឧបករណ៍​នេះ​ចេញ​ដោយ​សុវត្ថិភាព ។"
+
+#: deviceitem.cpp:301
 msgid ""
 "It is currently <b>not safe</b> to remove this device: applications may be "
 "accessing it. Click the eject button to safely remove this device."
@@ -34,15 +40,19 @@ msgstr ""
 "ឥឡូវ​នេះ <b>មិនមាន​សុវត្ថិភាព</b> ដើម្បី​យក​ឧបករណ៍​នេះ​ចេញ​ទេ ៖ កម្មវិធី​ប្រហែល​ជា​ចូល​ដំណើរការ​វា ។ ចុច​"
 "ប៊ូតុង​ច្រាន​ចេញ ដើម្បី​យក​ឧបករណ៍​នេះ​ចេញ​​ដោយ​សុវត្ថិភាព ។"
 
-#: deviceitem.cpp:292
+#: deviceitem.cpp:303
+msgid "This device is currently accessible."
+msgstr ""
+
+#: deviceitem.cpp:306
 msgid "Click to access this device from other applications."
 msgstr "ចុច​ដើម្បី​ចូលដំណើរការ​ឧបករណ៍​នេះ​ពី​កម្មវិធី​ផ្សេង ។"
 
-#: deviceitem.cpp:294
+#: deviceitem.cpp:309
 msgid "It is currently safe to remove this device."
 msgstr "ឥឡូវ​នេះ​មាន​សុវត្ថិភាព​ដើម្បី​យក​ឧបករណ៍​នេះ​ចេញ ។"
 
-#: deviceitem.cpp:296
+#: deviceitem.cpp:311
 msgid ""
 "It is currently <b>not safe</b> to remove this device: applications may be "
 "accessing other volumes on this device. Click the eject button on these "
@@ -51,20 +61,24 @@ msgstr ""
 "ឧបករណ៍​ត្រូវ​បាន​ដោ​តចូល ហើយ​កម្រិត​សំឡេង​មិន​ត្រូវបាន​ម៉ោន​សម្រាប់​ចូលដំណើរការ​នៅ​ឡើយ​ទេ ។ កម្រិត​សំឡេង​ផ្សេង​"
 "ទៀត​អាច​ចូល​ដំណើរការ​​​​​​បាននៅ​លើ​ឧបករណ៍​ដូច​គ្នា ដែល​មិនអាច​ត្រូវ​បាន​យកចេញ​ដោយ​សុវត្ថិភាព​នោះ​ទេ ។"
 
-#: deviceitem.cpp:389
+#: deviceitem.cpp:314
+msgid "This device is currently not accessible."
+msgstr ""
+
+#: deviceitem.cpp:407
 #, kde-format
 msgctxt "@info:status Free disk space"
 msgid "%1 free"
 msgstr "ទំនេរ %1"
 
-#: deviceitem.cpp:443
+#: deviceitem.cpp:461
 msgctxt ""
 "Accessing is a less technical word for Mounting; translation should be short "
 "and mean 'Currently mounting this device'"
 msgid "Accessing..."
 msgstr "កំពុង​ចូល​ដំណើរការ..."
 
-#: deviceitem.cpp:446
+#: deviceitem.cpp:464
 msgctxt ""
 "Removing is a less technical word for Unmounting; translation shoud be short "
 "and mean 'Currently unmounting this device'"
@@ -82,15 +96,16 @@ msgid "No devices available."
 msgstr "មិនមាន​ឧបករណ៍​ទេ"
 
 #: devicenotifier.cpp:307
-#, kde-format
-msgid "Most recent device: %1"
+#, fuzzy
+#| msgid "Most recent device: %1"
+msgid "Most recent device"
 msgstr "ឧបករណ៍​ថ្មី​បំផុត ៖ %1"
 
-#: devicenotifier.cpp:436
+#: devicenotifier.cpp:437
 msgid "Display"
 msgstr "បង្ហាញ"
 
-#: devicenotifier.cpp:439
+#: devicenotifier.cpp:440
 msgid "Automounting"
 msgstr "ម៉ោន​ដោយ​ស្វ័យ​ប្រវត្តិ"
 
@@ -98,17 +113,17 @@ msgstr "ម៉ោន​ដោយ​ស្វ័យ​ប្រវត្តិ"
 msgid "Show hidden devices"
 msgstr "បង្ហាញ​ឧបករណ៍​ដែលបាន​លាក់"
 
-#: notifierdialog.cpp:954
+#: notifierdialog.cpp:960
 #, kde-format
 msgctxt "Hide a device"
 msgid "Hide %1"
 msgstr "លាក់ %1"
 
-#: notifierdialog.cpp:1018
+#: notifierdialog.cpp:1024
 msgid "Available Devices"
 msgstr "ឧបករណ៍​ដែល​អាច​ប្រើបាន"
 
-#: notifierdialog.cpp:1020
+#: notifierdialog.cpp:1026
 msgid "No Devices Available"
 msgstr "មិនមាន​ឧបករណ៍​ទេ"
 
