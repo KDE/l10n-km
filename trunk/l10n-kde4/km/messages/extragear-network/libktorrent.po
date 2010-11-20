@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-09 07:13+0100\n"
+"POT-Creation-Date: 2010-11-20 06:38+0100\n"
 "PO-Revision-Date: 2009-12-21 14:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -24,6 +24,40 @@ msgstr ""
 "\n"
 "\n"
 "X-Generator: KBabel 1.11.4\n"
+
+#: examples/ktcli/main.cpp:46
+#, fuzzy
+#| msgid "Document to open"
+msgid "Torrent to open"
+msgstr "ឯកសារ​ត្រូវ​បើក"
+
+#: examples/ktcli/main.cpp:47 examples/ktcli/main.cpp:48
+#, fuzzy
+#| msgid "Notice"
+msgid "Port to use"
+msgstr "ចំណាំ"
+
+#: examples/ktcli/main.cpp:49
+#, fuzzy
+#| msgid "Whether or not to enable a custom download order."
+msgid "Whether or not to enable encryption"
+msgstr "ថាតើ​ត្រូវ​បើក​ឬ​ក៏​បិទ​លំដាប់ទាញ​យក​ផ្ទាល់ខ្លួន ។"
+
+#: examples/ktcli/main.cpp:50
+#, fuzzy
+#| msgid "Whether or not to use µTorrent compatible peer exchange."
+msgid "Whether or not to enable peer exchange"
+msgstr "ថាតើ​ត្រូវ​ប្រើ ឬ​មិន​ប្រើ​ µTorrent ឆប​ជា​មួយ​នឹង​ការ​ផ្លាស់ប្ដូរ ។"
+
+#: examples/ktcli/main.cpp:51
+#, fuzzy
+#| msgid "Whether or not to enable a custom download order."
+msgid "Whether or not to use utp"
+msgstr "ថាតើ​ត្រូវ​បើក​ឬ​ក៏​បិទ​លំដាប់ទាញ​យក​ផ្ទាល់ខ្លួន ។"
+
+#: examples/ktcli/main.cpp:53
+msgid "ktcli"
+msgstr ""
 
 #: src/bcodec/bdecoder.cpp:62
 #, kde-format
@@ -48,6 +82,21 @@ msgstr "មិនអាច​បម្លែង %1 ទៅ​ចំនួន​�
 #| msgid "Torrent is incomplete!"
 msgid "Torrent is incomplete."
 msgstr "Torrent មិន​ទាន់​បាន​បញ្ចប់​នូវឡើយ​ទេ !"
+
+#: src/datachecker/datacheckerjob.cpp:68
+#: src/datachecker/datacheckerjob.cpp:120
+#, fuzzy
+#| msgid "Checking data"
+msgid "Checking Data"
+msgstr "ពិនិត្យ​ទិន្នន័យ​"
+
+#: src/datachecker/multidatachecker.cpp:62
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
+#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "មិន​អាច​បើក​ឯកសារ %1 ៖​ %2 បានទេ"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
@@ -115,18 +164,6 @@ msgstr "មិនអាច​បម្រុងទុក​ទំហំថាស
 msgid "Cannot open index file %1: %2"
 msgstr "មិន​អាច​បើក​ឯកសារ​លិបិក្រម %1 ៖ %2"
 
-#: src/diskio/singlefilecache.cpp:79 src/diskio/multifilecache.cpp:93
-#, fuzzy, kde-format
-#| msgid "Failed to open %1 : %2"
-msgid "Failed to open %1: %2"
-msgstr "បរាជ័យ​ក្នុងការ​បើក %1 ៖ %2"
-
-#: src/diskio/singlefilecache.cpp:90 src/diskio/multifilecache.cpp:120
-#, fuzzy, kde-format
-#| msgid "Failed to create %1 : %2"
-msgid "Failed to create %1: %2"
-msgstr "បរាជ័យ​ក្នុង​ការ​បង្កើត %1 ៖ %2"
-
 #: src/diskio/dndfile.cpp:89
 #, fuzzy, kde-format
 #| msgid "Cannot create file %1 : %2"
@@ -166,17 +203,91 @@ msgctxt "The destination of a file operation"
 msgid "Destination"
 msgstr "ទិសដៅ"
 
-#: src/diskio/multifilecache.cpp:722 src/diskio/multifilecache.cpp:761
-#: src/torrent/torrentcreator.cpp:124 src/torrent/torrentcreator.cpp:255
-#: src/torrent/torrentcreator.cpp:292 src/datachecker/singledatachecker.cpp:49
-#: src/datachecker/multidatachecker.cpp:62
-#, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "មិន​អាច​បើក​ឯកសារ %1 ៖​ %2 បានទេ"
+#: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
+#, fuzzy, kde-format
+#| msgid "Failed to open %1 : %2"
+msgid "Failed to open %1: %2"
+msgstr "បរាជ័យ​ក្នុងការ​បើក %1 ៖ %2"
+
+#: src/diskio/multifilecache.cpp:120 src/diskio/singlefilecache.cpp:90
+#, fuzzy, kde-format
+#| msgid "Failed to create %1 : %2"
+msgid "Failed to create %1: %2"
+msgstr "បរាជ័យ​ក្នុង​ការ​បង្កើត %1 ៖ %2"
 
 #: src/diskio/piecedata.cpp:64 src/diskio/piecedata.cpp:103
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
+
+#: src/download/chunkdownload.cpp:382
+#, kde-format
+msgid "1 peer"
+msgid_plural "%1 peers"
+msgstr[0] "ម៉ាស៊ីន​ដូចគ្នា %1"
+
+#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
+#: src/download/webseed.cpp:93
+msgid "Not connected"
+msgstr "មិនបាន​តភ្ជាប់"
+
+#: src/download/httpconnection.cpp:103
+#, kde-format
+msgid "Resolving proxy %1:%2"
+msgstr "ដោះស្រាយ​ប្រូកស៊ី %1 ៖ %2"
+
+#: src/download/httpconnection.cpp:112
+#, kde-format
+msgid "Resolving hostname %1"
+msgstr "ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1"
+
+#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
+msgid "Connection closed"
+msgstr "បាន​បិទ​ការ​តភ្ជាប់"
+
+#: src/download/httpconnection.cpp:132
+#, kde-format
+msgid "Error: request failed: %1"
+msgstr "កំហុស ៖ សំណើរ​បាន​បរាជ័យ ៖ %1"
+
+#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
+msgid "Connected"
+msgstr "បាន​ត​ភ្ជាប់"
+
+#: src/download/httpconnection.cpp:155
+msgid "Error: Failed to connect to webseed"
+msgstr "កំហុស ៖ បរាជ័យ​ក្នុងការ​តភ្ជាប់​ទៅ webseed"
+
+#: src/download/httpconnection.cpp:220
+msgid "Connecting"
+msgstr "ការ​ត​ភ្ជាប់"
+
+#: src/download/httpconnection.cpp:231
+msgid "Failed to connect to webseed"
+msgstr "បរាជ័យ​ក្នុងការ​តភ្ជាប់​ទៅ webseed"
+
+#: src/download/httpconnection.cpp:238
+msgid "Failed to resolve hostname of webseed"
+msgstr "បរាជ័យ​ក្នុងការ​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន​របស់ webseed"
+
+#: src/download/httpconnection.cpp:318
+msgid "Error: failed to connect, server not responding"
+msgstr "កំហុស ៖ បរាជ័យ​ក្នុងការ​តភ្ជាប់ ម៉ាស៊ីន​បម្រើ​មិន​ឆ្លើយតប"
+
+#: src/download/httpconnection.cpp:327
+msgid "Error: request timed out"
+msgstr "កំហុស ៖ សំណើ​អស់​ពេល"
+
+#: src/download/httpconnection.cpp:391
+#, fuzzy
+#| msgid "Redirected without a new location !"
+msgid "Redirected without a new location."
+msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
+
+#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
+#, fuzzy
+#| msgid "Notice"
+msgid "Not in use"
+msgstr "ចំណាំ"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
@@ -207,35 +318,74 @@ msgstr "ថត ​%1 មិន​ទាន់​មាន​នូវ​ឡើ�
 msgid "Unknown client"
 msgstr "មិន​ស្គាល់​ម៉ាស៊ីន​ភ្ញៀវ"
 
-#: src/tracker/httpannouncejob.cpp:142
+#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
+#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
+#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
+#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
 #, fuzzy
-#| msgid "Redirected without a new location !"
-msgid "Redirect without a redirect location"
-msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
+#| msgid "Corrupted torrent!"
+msgid "Corrupted torrent."
+msgstr "torrent ខូច !"
 
-#: src/tracker/udptracker.cpp:371 src/tracker/udptracker.cpp:381
-#: src/tracker/httptracker.cpp:557
-#, kde-format
-msgid "Timeout contacting tracker %1"
+#: src/torrent/torrent.cpp:165
+#, fuzzy, kde-format
+#| msgid " Unable to open torrent file %1 : %2"
+msgid "Unable to open torrent file %1: %2"
+msgstr " មិន​អាច​បើក​ឯកសារ​ torrent %1 ៖ %2 បានទេ"
+
+#: src/torrent/torrent.cpp:295
+msgid "Parse Error"
+msgstr "កំហុស​ញែក"
+
+#: src/torrent/torrentcontrol.cpp:307
+msgid "Error writing to disk, do you have enough diskspace?"
 msgstr ""
 
-#: src/tracker/udptracker.cpp:408
+#: src/torrent/torrentcontrol.cpp:545
+#, fuzzy, kde-format
+#| msgid ""
+#| "An error occurred while loading the torrent <b>%1</b>\n"
+#| "The torrent is probably corrupt or is not a torrent file."
+msgid ""
+"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
+"torrent is probably corrupt or is not a valid torrent file."
+msgstr ""
+"កំហុស​មួយ​កើតឡើង​នៅពេល​ផ្ទុក torrent <b>%1</b> ។\n"
+"torrent ប្រហែល​ជា​ខូច ឬ​មិនមែន​ជា​ឯកសារ torrent ។"
+
+#: src/torrent/torrentcontrol.cpp:575
 #, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "មិនអាច​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1 បានទេ"
+msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
+msgstr ""
 
-#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
-#: src/tracker/httptracker.cpp:462
-msgid "Invalid response from tracker"
-msgstr "ការ​ឆ្លើយ​តប​មិន​ត្រឹមត្រូវ​ពី​កម្មវិធី​តាមដាន"
+#: src/torrent/torrentcontrol.cpp:585
+#, fuzzy, kde-format
+#| msgid "Unable to create %1 : %2"
+msgid "Unable to create %1: %2"
+msgstr "មិន​អាច​បង្កើត %1 ៖ %2"
 
-#: src/tracker/httptracker.cpp:293
-msgid "Invalid data from tracker"
-msgstr "ទិន្នន័យ​មិនត្រឹមត្រូវ​ពី​កម្មវិធី​តាមដាន"
+#: src/torrent/torrentcontrol.cpp:600
+#, fuzzy, kde-format
+#| msgid ""
+#| "You are already downloading this torrent %1, the list of trackers of both "
+#| "torrents has been merged."
+msgid ""
+"You are already downloading the torrent <b>%1</b>. The tracker lists from "
+"both torrents have been merged."
+msgstr ""
+"អ្នក​កំពុង​តែ​ទាញ​យក torrent %1 នេះ​រួ​ចហើយ បញ្ជី​របស់​កម្មវិធី​តាមដាន​របស់​ torrents ទាំងពីរ​ត្រូវ​បាន​"
+"បញ្ចូលចូល​គ្នា ។"
 
-#: src/tracker/httptracker.cpp:479
-msgid "Invalid tracker URL"
-msgstr "URL កម្មវិធី​តាមដាន​បទ​មិន​ត្រឹមត្រូវ"
+#: src/torrent/torrentcontrol.cpp:605
+#, fuzzy, kde-format
+#| msgid "You are already downloading the torrent %1"
+msgid "You are already downloading the torrent <b>%1</b>."
+msgstr "អ្នក​កំពុង​ទាញយក torrent %1 រួចហើយ"
+
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "មិនអាច​បង្កើត​ឯកសារ​លិបិក្រម ៖ %1"
 
 #: src/torrent/torrentstats.cpp:72
 msgid "Not started"
@@ -302,151 +452,75 @@ msgstr "បាន​ផ្អាក"
 msgid "Superseeding"
 msgstr "បណ្ដុះ"
 
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "មិនអាច​បង្កើត​ឯកសារ​លិបិក្រម ៖ %1"
-
-#: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
-#: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
-#: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
-#: src/torrent/torrent.cpp:242 src/torrent/torrent.cpp:313
-#, fuzzy
-#| msgid "Corrupted torrent!"
-msgid "Corrupted torrent."
-msgstr "torrent ខូច !"
-
-#: src/torrent/torrent.cpp:165
-#, fuzzy, kde-format
-#| msgid " Unable to open torrent file %1 : %2"
-msgid "Unable to open torrent file %1: %2"
-msgstr " មិន​អាច​បើក​ឯកសារ​ torrent %1 ៖ %2 បានទេ"
-
-#: src/torrent/torrent.cpp:295
-msgid "Parse Error"
-msgstr "កំហុស​ញែក"
-
-#: src/torrent/torrentcontrol.cpp:307
-msgid "Error writing to disk, do you have enough diskspace?"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:545
-#, fuzzy, kde-format
-#| msgid ""
-#| "An error occurred while loading the torrent <b>%1</b>\n"
-#| "The torrent is probably corrupt or is not a torrent file."
-msgid ""
-"An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
-"torrent is probably corrupt or is not a valid torrent file."
-msgstr ""
-"កំហុស​មួយ​កើតឡើង​នៅពេល​ផ្ទុក torrent <b>%1</b> ។\n"
-"torrent ប្រហែល​ជា​ខូច ឬ​មិនមែន​ជា​ឯកសារ torrent ។"
-
-#: src/torrent/torrentcontrol.cpp:575
-#, kde-format
-msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
-msgstr ""
-
-#: src/torrent/torrentcontrol.cpp:585
-#, fuzzy, kde-format
-#| msgid "Unable to create %1 : %2"
-msgid "Unable to create %1: %2"
-msgstr "មិន​អាច​បង្កើត %1 ៖ %2"
-
-#: src/torrent/torrentcontrol.cpp:600
-#, fuzzy, kde-format
-#| msgid ""
-#| "You are already downloading this torrent %1, the list of trackers of both "
-#| "torrents has been merged."
-msgid ""
-"You are already downloading the torrent <b>%1</b>. The tracker lists from "
-"both torrents have been merged."
-msgstr ""
-"អ្នក​កំពុង​តែ​ទាញ​យក torrent %1 នេះ​រួ​ចហើយ បញ្ជី​របស់​កម្មវិធី​តាមដាន​របស់​ torrents ទាំងពីរ​ត្រូវ​បាន​"
-"បញ្ចូលចូល​គ្នា ។"
-
-#: src/torrent/torrentcontrol.cpp:605
-#, fuzzy, kde-format
-#| msgid "You are already downloading the torrent %1"
-msgid "You are already downloading the torrent <b>%1</b>."
-msgstr "អ្នក​កំពុង​ទាញយក torrent %1 រួចហើយ"
-
-#: src/datachecker/datacheckerjob.cpp:68
-#: src/datachecker/datacheckerjob.cpp:120
-#, fuzzy
-#| msgid "Checking data"
-msgid "Checking Data"
-msgstr "ពិនិត្យ​ទិន្នន័យ​"
-
-#: src/download/httpconnection.cpp:37 src/download/webseed.cpp:49
-#: src/download/webseed.cpp:93
-msgid "Not connected"
-msgstr "មិនបាន​តភ្ជាប់"
-
-#: src/download/httpconnection.cpp:103
-#, kde-format
-msgid "Resolving proxy %1:%2"
-msgstr "ដោះស្រាយ​ប្រូកស៊ី %1 ៖ %2"
-
-#: src/download/httpconnection.cpp:112
-#, kde-format
-msgid "Resolving hostname %1"
-msgstr "ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1"
-
-#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:321
-msgid "Connection closed"
-msgstr "បាន​បិទ​ការ​តភ្ជាប់"
-
-#: src/download/httpconnection.cpp:132
-#, kde-format
-msgid "Error: request failed: %1"
-msgstr "កំហុស ៖ សំណើរ​បាន​បរាជ័យ ៖ %1"
-
-#: src/download/httpconnection.cpp:149 src/download/httpconnection.cpp:213
-msgid "Connected"
-msgstr "បាន​ត​ភ្ជាប់"
-
-#: src/download/httpconnection.cpp:155
-msgid "Error: Failed to connect to webseed"
-msgstr "កំហុស ៖ បរាជ័យ​ក្នុងការ​តភ្ជាប់​ទៅ webseed"
-
-#: src/download/httpconnection.cpp:220
-msgid "Connecting"
-msgstr "ការ​ត​ភ្ជាប់"
-
-#: src/download/httpconnection.cpp:231
-msgid "Failed to connect to webseed"
-msgstr "បរាជ័យ​ក្នុងការ​តភ្ជាប់​ទៅ webseed"
-
-#: src/download/httpconnection.cpp:238
-msgid "Failed to resolve hostname of webseed"
-msgstr "បរាជ័យ​ក្នុងការ​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន​របស់ webseed"
-
-#: src/download/httpconnection.cpp:318
-msgid "Error: failed to connect, server not responding"
-msgstr "កំហុស ៖ បរាជ័យ​ក្នុងការ​តភ្ជាប់ ម៉ាស៊ីន​បម្រើ​មិន​ឆ្លើយតប"
-
-#: src/download/httpconnection.cpp:327
-msgid "Error: request timed out"
-msgstr "កំហុស ៖ សំណើ​អស់​ពេល"
-
-#: src/download/httpconnection.cpp:391
+#: src/tracker/httpannouncejob.cpp:142
 #, fuzzy
 #| msgid "Redirected without a new location !"
-msgid "Redirected without a new location."
+msgid "Redirect without a redirect location"
 msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
 
-#: src/download/chunkdownload.cpp:382
-#, kde-format
-msgid "1 peer"
-msgid_plural "%1 peers"
-msgstr[0] "ម៉ាស៊ីន​ដូចគ្នា %1"
+#: src/tracker/httptracker.cpp:280 src/tracker/httptracker.cpp:300
+#: src/tracker/httptracker.cpp:462
+msgid "Invalid response from tracker"
+msgstr "ការ​ឆ្លើយ​តប​មិន​ត្រឹមត្រូវ​ពី​កម្មវិធី​តាមដាន"
 
-#: src/download/webseed.cpp:303 src/download/webseed.cpp:517
+#: src/tracker/httptracker.cpp:293
+msgid "Invalid data from tracker"
+msgstr "ទិន្នន័យ​មិនត្រឹមត្រូវ​ពី​កម្មវិធី​តាមដាន"
+
+#: src/tracker/httptracker.cpp:479
+msgid "Invalid tracker URL"
+msgstr "URL កម្មវិធី​តាមដាន​បទ​មិន​ត្រឹមត្រូវ"
+
+#: src/tracker/httptracker.cpp:557 src/tracker/udptracker.cpp:371
+#: src/tracker/udptracker.cpp:381
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr ""
+
+#: src/tracker/udptracker.cpp:408
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "មិនអាច​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1 បានទេ"
+
+#: src/upnp/httprequest.cpp:96
 #, fuzzy
-#| msgid "Notice"
-msgid "Not in use"
-msgstr "ចំណាំ"
+#| msgid "Connection closed unexpectedly !"
+msgid "Connection closed unexpectedly"
+msgstr "ការ​តភ្ជាប់​បាន​បិទ​ដោយ​មិន​រំពឹង​ទុក !"
+
+#: src/upnp/httprequest.cpp:155
+msgid "Operation timed out"
+msgstr ""
+
+#: src/upnp/upnprouter.cpp:167
+#, fuzzy, kde-format
+#| msgid "Failed to download %1 : %2"
+msgid "Failed to download %1: %2"
+msgstr "បាន​បរាជ័យ​ក្នុងការ​ទាញ​យក %1 ៖ %2"
+
+#: src/upnp/upnprouter.cpp:178
+#, fuzzy
+#| msgid "Error parsing router description !"
+msgid "Error parsing router description."
+msgstr "កំហុស​ក្នុងការ​ញែក​សេចក្ដី​ពិពណ៌នា​អ្នក​នាំផ្លូវ !"
+
+#: src/upnp/upnprouter.cpp:216
+#, fuzzy
+#| msgid ""
+#| "Forwarding failed: \n"
+#| "Device does not have a WANIPConnection or WANPPPConnection !"
+msgid ""
+"Forwarding failed:\n"
+"Device does not have a WANIPConnection or WANPPPConnection."
+msgstr ""
+"បាន​បរាជ័យ​ក្នុងកា​របញ្ជូន​បន្ត ៖ \n"
+"ឧបករណ៍​មិនមានការ​តភ្ជាប់​ WANIP ឬ​ការ​តភ្ជាប់ WANPPP !"
+
+#: src/upnp/upnprouter.cpp:314
+#, fuzzy
+#| msgid "Cannot find port forwarding service in the device's description!"
+msgid "Cannot find port forwarding service in the device's description."
+msgstr "មិន​អាច​រក​ច្រក​ដែល​បញ្ជូន​បន្ត​សេវា​ក្នុង​ការ​ពិពណ៌នា​របស់​ឧបករណ៍ !"
 
 #: src/util/file.cpp:84
 #, fuzzy, kde-format
@@ -557,80 +631,6 @@ msgstr ""
 #| msgid "Error reading from %1"
 msgid "Error when reading from disk"
 msgstr "កំហុស​ក្នុងការ​អាន​ពី %1"
-
-#: src/upnp/upnprouter.cpp:167
-#, fuzzy, kde-format
-#| msgid "Failed to download %1 : %2"
-msgid "Failed to download %1: %2"
-msgstr "បាន​បរាជ័យ​ក្នុងការ​ទាញ​យក %1 ៖ %2"
-
-#: src/upnp/upnprouter.cpp:178
-#, fuzzy
-#| msgid "Error parsing router description !"
-msgid "Error parsing router description."
-msgstr "កំហុស​ក្នុងការ​ញែក​សេចក្ដី​ពិពណ៌នា​អ្នក​នាំផ្លូវ !"
-
-#: src/upnp/upnprouter.cpp:216
-#, fuzzy
-#| msgid ""
-#| "Forwarding failed: \n"
-#| "Device does not have a WANIPConnection or WANPPPConnection !"
-msgid ""
-"Forwarding failed:\n"
-"Device does not have a WANIPConnection or WANPPPConnection."
-msgstr ""
-"បាន​បរាជ័យ​ក្នុងកា​របញ្ជូន​បន្ត ៖ \n"
-"ឧបករណ៍​មិនមានការ​តភ្ជាប់​ WANIP ឬ​ការ​តភ្ជាប់ WANPPP !"
-
-#: src/upnp/upnprouter.cpp:314
-#, fuzzy
-#| msgid "Cannot find port forwarding service in the device's description!"
-msgid "Cannot find port forwarding service in the device's description."
-msgstr "មិន​អាច​រក​ច្រក​ដែល​បញ្ជូន​បន្ត​សេវា​ក្នុង​ការ​ពិពណ៌នា​របស់​ឧបករណ៍ !"
-
-#: src/upnp/httprequest.cpp:96
-#, fuzzy
-#| msgid "Connection closed unexpectedly !"
-msgid "Connection closed unexpectedly"
-msgstr "ការ​តភ្ជាប់​បាន​បិទ​ដោយ​មិន​រំពឹង​ទុក !"
-
-#: src/upnp/httprequest.cpp:155
-msgid "Operation timed out"
-msgstr ""
-
-#: examples/ktcli/main.cpp:46
-#, fuzzy
-#| msgid "Document to open"
-msgid "Torrent to open"
-msgstr "ឯកសារ​ត្រូវ​បើក"
-
-#: examples/ktcli/main.cpp:47 examples/ktcli/main.cpp:48
-#, fuzzy
-#| msgid "Notice"
-msgid "Port to use"
-msgstr "ចំណាំ"
-
-#: examples/ktcli/main.cpp:49
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
-msgid "Whether or not to enable encryption"
-msgstr "ថាតើ​ត្រូវ​បើក​ឬ​ក៏​បិទ​លំដាប់ទាញ​យក​ផ្ទាល់ខ្លួន ។"
-
-#: examples/ktcli/main.cpp:50
-#, fuzzy
-#| msgid "Whether or not to use µTorrent compatible peer exchange."
-msgid "Whether or not to enable peer exchange"
-msgstr "ថាតើ​ត្រូវ​ប្រើ ឬ​មិន​ប្រើ​ µTorrent ឆប​ជា​មួយ​នឹង​ការ​ផ្លាស់ប្ដូរ ។"
-
-#: examples/ktcli/main.cpp:51
-#, fuzzy
-#| msgid "Whether or not to enable a custom download order."
-msgid "Whether or not to use utp"
-msgstr "ថាតើ​ត្រូវ​បើក​ឬ​ក៏​បិទ​លំដាប់ទាញ​យក​ផ្ទាល់ខ្លួន ។"
-
-#: examples/ktcli/main.cpp:53
-msgid "ktcli"
-msgstr ""
 
 #, fuzzy
 #~| msgid "Insufficient disk space for %1"
