@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-20 06:37+0100\n"
+"POT-Creation-Date: 2010-11-21 06:20+0100\n"
 "PO-Revision-Date: 2010-11-16 14:03+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -406,7 +406,7 @@ msgstr " ដោយ <b>%1</b>"
 
 #: EngineController.cpp:1398 context/applets/labels/LabelsApplet.cpp:179
 #: context/applets/photos/PhotosApplet.cpp:146
-#: context/engines/current/CurrentEngine.cpp:131 mac/GrowlInterface.cpp:43
+#: context/engines/current/CurrentEngine.cpp:125 mac/GrowlInterface.cpp:43
 #: widgets/Osd.cpp:604
 msgid "No track playing"
 msgstr "មិន​កំពុង​ចាក់​បទ​អ្វី​ទាំងអស់​​​"
@@ -1707,14 +1707,27 @@ msgid "%1 track"
 msgid_plural "%1 tracks"
 msgstr[0] "%1 បទ"
 
+#: context/applets/albums/AlbumsView.cpp:216
+#: context/applets/videoclip/VideoItemButton.cpp:97
+msgid "&Queue"
+msgstr "ជួរ"
+
+#. i18n: file: context/applets/currenttrack/currentTrackSettings.ui:38
+#. i18n: ectx: property (text), widget (QCheckBox, editTrackDetailsCheckBox)
+#: context/applets/albums/AlbumsView.cpp:217
+#: context/applets/currenttrack/CurrentTrack.cpp:803
+#: playlist/view/PlaylistViewCommon.cpp:231 rc.cpp:289
+msgid "Edit Track Details"
+msgstr "កែសម្រួល​សេចក្ដី​លម្អិត​បទ"
+
 #: context/applets/albums/Albums.cpp:69
-#: context/engines/current/CurrentEngine.cpp:139
+#: context/engines/current/CurrentEngine.cpp:133
 msgid "Recently added albums"
 msgstr "អាល់ប៊ុម​ដែល​បាន​បន្ថែម​ថ្មី​ៗ​"
 
 #: context/applets/albums/Albums.cpp:76
 #: context/applets/labels/LabelsApplet.cpp:111
-#: context/applets/lyrics/LyricsApplet.cpp:528
+#: context/applets/lyrics/LyricsApplet.cpp:521
 #: context/applets/photos/PhotosApplet.cpp:84
 #: context/applets/similarartists/SimilarArtistsApplet.cpp:89
 #: context/applets/upcomingevents/UpcomingEventsApplet.cpp:80
@@ -1724,7 +1737,13 @@ msgstr "អាល់ប៊ុម​ដែល​បាន​បន្ថែម​
 msgid "Settings"
 msgstr "ការ​កំណត់"
 
-#: context/applets/albums/Albums.cpp:182
+#: context/applets/albums/Albums.cpp:117
+#: context/applets/currenttrack/CurrentTrack.cpp:468
+#: playlist/ProgressiveSearchWidget.cpp:85
+msgid "Albums"
+msgstr "អាល់ប៊ុម"
+
+#: context/applets/albums/Albums.cpp:183
 #, kde-format
 msgid "Disc %1"
 msgstr "ថាស %1"
@@ -1733,83 +1752,65 @@ msgstr "ថាស %1"
 #. i18n: ectx: property (text), widget (QCheckBox, groupVenueCheckBox)
 #. i18n: file: core-impl/collections/umscollection/UmsConfiguration.ui:46
 #. i18n: ectx: property (text), widget (QCheckBox, m_autoConnect)
-#: context/applets/albums/Albums.cpp:219 rc.cpp:415 rc.cpp:514
+#: context/applets/albums/Albums.cpp:220 rc.cpp:415 rc.cpp:514
 #, fuzzy
 msgid "Enabled"
 msgstr "បើក​"
 
-#: context/applets/albums/Albums.cpp:224
+#: context/applets/albums/Albums.cpp:225
 msgid "Number of recently added albums:"
 msgstr "ចំនួន​អាល់ប៊ុម​ដែល​បាន​បន្ថែម​ថ្មី​ៗ ៖"
 
-#: context/applets/albums/Albums.cpp:225
+#: context/applets/albums/Albums.cpp:226
 msgid "Right align track lengths:"
 msgstr "តម្រឹម​ថិរវេលា​បទ​ទៅ​ស្ដាំ ៖"
 
-#: context/applets/albums/Albums.cpp:230
+#: context/applets/albums/Albums.cpp:231
 msgid "Albums Applet Settings"
 msgstr "ការ​កំណត់​អាប់ភ្លេត​អាល់ប៊ុម"
 
-#: context/applets/albums/AlbumsView.cpp:216
-#: context/applets/videoclip/VideoItemButton.cpp:97
-msgid "&Queue"
-msgstr "ជួរ"
-
-#. i18n: file: context/applets/currenttrack/currentTrackSettings.ui:38
-#. i18n: ectx: property (text), widget (QCheckBox, editTrackDetailsCheckBox)
-#: context/applets/albums/AlbumsView.cpp:217
-#: context/applets/currenttrack/CurrentTrack.cpp:815
-#: playlist/view/PlaylistViewCommon.cpp:231 rc.cpp:289
-msgid "Edit Track Details"
-msgstr "កែសម្រួល​សេចក្ដី​លម្អិត​បទ"
-
-#: context/applets/currenttrack/CurrentTrack.cpp:102
+#: context/applets/currenttrack/CurrentTrack.cpp:103
 #: core-impl/collections/db/sql/SqlCollectionLocation.cpp:68
 #: core-impl/collections/db/sql/mysqlecollection/MySqlEmbeddedCollection.cpp:35
 #: core-impl/collections/db/sql/mysqlservercollection/MySqlServerCollection.cpp:41
 msgid "Local Collection"
 msgstr "សម្រាំង​មូលដ្ឋាន"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:111
+#: context/applets/currenttrack/CurrentTrack.cpp:112
 msgctxt "What artist is this track by"
 msgid "By"
 msgstr "តាម"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:112
+#: context/applets/currenttrack/CurrentTrack.cpp:113
 msgctxt "What album is this track on"
 msgid "On"
 msgstr "បើក"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:287
+#: context/applets/currenttrack/CurrentTrack.cpp:283
 msgid "Recently Played Tracks"
 msgstr "បទ​ដែល​បាន​ចាក់​​ថ្មីៗ​"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:480
+#: context/applets/currenttrack/CurrentTrack.cpp:467
 #: playlist/ProgressiveSearchWidget.cpp:78
 #: services/lastfm/biases/LastFmBias.cpp:128
 msgid "Tracks"
 msgstr "បទ"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:480
+#: context/applets/currenttrack/CurrentTrack.cpp:467
 msgid "Play count"
 msgstr "ចំនួន​ចាក់"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:481
-#: playlist/ProgressiveSearchWidget.cpp:85
-msgid "Albums"
-msgstr "អាល់ប៊ុម"
-
-#: context/applets/currenttrack/CurrentTrack.cpp:481
+#: context/applets/currenttrack/CurrentTrack.cpp:468
 #: playlist/PlaylistModel.cpp:841 widgets/MetaQueryWidget.cpp:231
 #: widgets/SmartPlaylistEditor.cpp:185 TrayIcon.cpp:152
 msgid "Score"
 msgstr "ពិន្ទុ"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:482
+#: context/applets/currenttrack/CurrentTrack.cpp:469
 msgid "Genres"
 msgstr "ចង្វាក់"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:482
+#: context/applets/currenttrack/CurrentTrack.cpp:469
 #: widgets/MetaQueryWidget.cpp:234
 msgid "Last Played"
 msgstr "ចាក់​ចុងក្រោយ"
@@ -1818,37 +1819,37 @@ msgstr "ចាក់​ចុងក្រោយ"
 #. i18n: ectx: property (windowTitle), widget (QWidget, currentTrackSettings)
 #. i18n: file: context/applets/tabs/TabsSettings.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, TabsSettings)
-#: context/applets/currenttrack/CurrentTrack.cpp:710 rc.cpp:283 rc.cpp:457
+#: context/applets/currenttrack/CurrentTrack.cpp:698 rc.cpp:283 rc.cpp:457
 #, fuzzy
 msgid "Current Track Settings"
 msgstr "ការ​កំណត់​បទ​បច្ចុប្បន្ន​"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:838
+#: context/applets/currenttrack/CurrentTrack.cpp:826
 msgid "Show Album In Media Sources"
 msgstr "កន្ទុយ​ឯកសារ​របស់​ប្រភព"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:845
+#: context/applets/currenttrack/CurrentTrack.cpp:833
 #, fuzzy
 msgid "Show Artist In Media Sources"
 msgstr "កន្ទុយ​ឯកសារ​របស់​ប្រភព"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:850 core/meta/Meta.cpp:552
+#: context/applets/currenttrack/CurrentTrack.cpp:838 core/meta/Meta.cpp:552
 #, fuzzy
 #| msgid "Unknown Genre"
 msgid "Unknown Composer"
 msgstr "មិន​ស្គាល់​ចង្វាក់"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:852
+#: context/applets/currenttrack/CurrentTrack.cpp:840
 #, fuzzy
 msgid "Show Composer In Media Sources"
 msgstr "កន្ទុយ​ឯកសារ​របស់​ប្រភព"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:859
+#: context/applets/currenttrack/CurrentTrack.cpp:847
 #, fuzzy
 msgid "Show Genre In Media Sources"
 msgstr "កន្ទុយ​ឯកសារ​របស់​ប្រភព"
 
-#: context/applets/currenttrack/CurrentTrack.cpp:866
+#: context/applets/currenttrack/CurrentTrack.cpp:854
 #, fuzzy
 msgid "Show Year In Media Sources"
 msgstr "កន្ទុយ​ឯកសារ​របស់​ប្រភព"
@@ -1916,7 +1917,7 @@ msgid "Labels Settings"
 msgstr "ការ​កំណត់អត្ថបទ​"
 
 #: context/applets/lyrics/LyricsApplet.cpp:54
-#: context/applets/lyrics/LyricsApplet.cpp:484
+#: context/applets/lyrics/LyricsApplet.cpp:477
 #: context/applets/lyrics/LyricsApplet.cpp:641
 #: context/applets/lyrics/LyricsApplet.cpp:675
 #: context/applets/lyrics/LyricsApplet.cpp:687 dialogs/ScriptManager.cpp:698
@@ -1945,22 +1946,22 @@ msgid ""
 "want to save your changes?"
 msgstr ""
 
-#: context/applets/lyrics/LyricsApplet.cpp:492
+#: context/applets/lyrics/LyricsApplet.cpp:485
 msgid "Edit Lyrics"
 msgstr "Edit Lyrics"
 
 #. i18n: file: services/magnatune/MagnatuneSignupDialogBase.ui:45
 #. i18n: ectx: property (text), widget (QPushButton, closeButton)
-#: context/applets/lyrics/LyricsApplet.cpp:501
+#: context/applets/lyrics/LyricsApplet.cpp:494
 #: firstruntutorial/FirstRunTutorialPage.cpp:56 rc.cpp:1785
 msgid "Close"
 msgstr "បិទ"
 
-#: context/applets/lyrics/LyricsApplet.cpp:510
+#: context/applets/lyrics/LyricsApplet.cpp:503
 msgid "Save Lyrics"
 msgstr "Save Lyrics"
 
-#: context/applets/lyrics/LyricsApplet.cpp:519
+#: context/applets/lyrics/LyricsApplet.cpp:512
 msgid "Reload Lyrics"
 msgstr "ផ្ទុក​អត្ថបទ​ចម្រៀង"
 
@@ -2018,7 +2019,7 @@ msgstr "រក​មិនឃើញ %1"
 msgid "There were no lyrics found for this track"
 msgstr "រក​មិនឃើញ​អត្ថបទ​ចម្រៀង​សម្រាប់​បទ​នេះ"
 
-#: context/applets/lyrics/LyricsApplet.cpp:743
+#: context/applets/lyrics/LyricsApplet.cpp:746
 #, fuzzy
 msgctxt "@info"
 msgid ""
@@ -2029,7 +2030,7 @@ msgstr ""
 
 #. i18n: file: context/applets/lyrics/lyricsSettings.ui:26
 #. i18n: ectx: property (windowTitle), widget (QWidget, lyricsSettings)
-#: context/applets/lyrics/LyricsApplet.cpp:764 rc.cpp:350
+#: context/applets/lyrics/LyricsApplet.cpp:767 rc.cpp:350
 #, fuzzy
 msgid "Lyrics Settings"
 msgstr "ការ​កំណត់អត្ថបទ​"
@@ -2603,7 +2604,7 @@ msgid ""
 "Please add some applets from the toolbar at the bottom of the context view."
 msgstr "សូម​បន្ថែម​អាប់ភ្លេត​មួយ​ចំនួន​ពី​របារ​ឧបករណ៍​នៅ​ខាងក្រោម​ទិដ្ឋភាព​បរិបទ ។"
 
-#: context/engines/current/CurrentEngine.cpp:212
+#: context/engines/current/CurrentEngine.cpp:207
 #, kde-format
 msgid "Albums by %1"
 msgstr "អាល់ប៊ុម​ដោយ %1"
@@ -5218,113 +5219,6 @@ msgstr "​ទូទៅ"
 msgid "Scriptable Service"
 msgstr "ការ​ស្វែងរក​ធម្មតា"
 
-#: dialogs/FilenameLayoutDialog.cpp:122
-msgid "Collection root"
-msgstr "សម្រាំង root"
-
-#: dialogs/FilenameLayoutDialog.cpp:180
-#, fuzzy
-msgid "File Type"
-msgstr "ប្រភេទ​ឯកសារ"
-
-#: dialogs/FilenameLayoutDialog.cpp:241 dialogs/FilenameLayoutDialog.cpp:610
-#: playlist/PlaylistModel.cpp:835 widgets/MetaQueryWidget.cpp:220
-#: widgets/SmartPlaylistEditor.cpp:184
-msgid "Comment"
-msgstr "សេចក្តី​អធិប្បាយ"
-
-#: dialogs/FilenameLayoutDialog.cpp:258 dialogs/FilenameLayoutDialog.cpp:629
-msgid "Ignore"
-msgstr "មិនអើពើ"
-
-#: dialogs/FilenameLayoutDialog.cpp:261
-#, fuzzy, no-c-format, kde-format
-msgctxt ""
-"Please do not translate the %foo words as they define a syntax used "
-"internally by a parser to describe a filename."
-msgid ""
-"The following tokens can be used to define a filename scheme:"
-"<br>                                      <font color=\"%1\">%track</font>, "
-"<font color=\"%2\">%title</font>,                                      <font "
-"color=\"%3\">%artist</font>, <font color=\"%4\">%composer</"
-"font>,                                      <font color=\"%5\">%year</font>, "
-"<font color=\"%6\">%album</font>,                                      <font "
-"color=\"%7\">%albumartist</font>, <font color=\"%8\">%comment</"
-"font>,                                      <font color=\"%9\">%genre</"
-"font>, %ignore."
-msgstr ""
-"ការ​បំ​ពេញ​ថូខឹង​អាច​ប្រើ​បាន​ដើម្បី​កំនត់ឲ្យ​ច្បាស់​​លាស់គ្រោង​ការណ៍​ឯក​សារ ៖"
-"<br>                                      <font color=\"%1\">%track</font>, "
-"<font color=\"%2\">%title</font>,                                      <font "
-"color=\"%3\">%artist</font>, <font color=\"%4\">%composer</"
-"font>,                                      <font color=\"%5\">%year</font>, "
-"<font color=\"%6\">%album</font>,                                      <font "
-"color=\"%7\">%comment</font>, <font color=\"%8\">%genre</"
-"font>,                                      %ignore."
-
-#: dialogs/FilenameLayoutDialog.cpp:274 dialogs/FilenameLayoutDialog.cpp:639
-#, fuzzy
-#| msgid "Initial"
-msgctxt "Artist's Initial"
-msgid "Initial"
-msgstr "ដំបូង"
-
-#: dialogs/FilenameLayoutDialog.cpp:275 dialogs/FilenameLayoutDialog.cpp:624
-msgid "File type"
-msgstr "ប្រភេទ​ឯកសារ"
-
-#: dialogs/FilenameLayoutDialog.cpp:277 dialogs/FilenameLayoutDialog.cpp:644
-msgid "Disc number"
-msgstr "លេខ​ថាស"
-
-#: dialogs/FilenameLayoutDialog.cpp:280
-#, fuzzy, no-c-format
-#| msgctxt ""
-#| "Please do not translate the %foo words as they define a syntax used "
-#| "internally by a parser to describe a filename."
-#| msgid ""
-#| "The following tokens can be used to define a filename "
-#| "scheme:                                      <br>%track, %title, %artist, "
-#| "%composer, %year, %album, %comment, %genre, %initial, %folder, %filetype, "
-#| "%discnumber."
-msgctxt ""
-"Please do not translate the %foo words as they define a syntax used "
-"internally by a parser to describe a filename."
-msgid ""
-"The following tokens can be used to define a filename "
-"scheme:                                      <br>%track, %title, %artist, %"
-"composer, %year, %album, %albumartist %comment, %genre, %initial, %folder, %"
-"filetype, %discnumber."
-msgstr ""
-"ថូខឹន​ដូចខាង​ក្រោម​អាច​ត្រូវ​បាន​ប្រើ​ដើម្បី​កំណត់​គ្រោងការណ៍​ឈ្មោះ​"
-"ឯកសារ ៖                                      <br>%track, %title, %artist, %"
-"composer, %year, %album, %comment, %genre, %initial, %folder, %filetype, %"
-"discnumber ។"
-
-#: dialogs/FilenameLayoutDialog.cpp:379 dialogs/FilenameLayoutDialog.cpp:384
-#: dialogs/FilenameLayoutDialog.cpp:389 dialogs/FilenameLayoutDialog.cpp:394
-#: dialogs/FilenameLayoutDialog.cpp:399 dialogs/FilenameLayoutDialog.cpp:404
-#: dialogs/FilenameLayoutDialog.cpp:409 dialogs/FilenameLayoutDialog.cpp:414
-#: dialogs/FilenameLayoutDialog.cpp:419
-msgctxt ""
-"Text to represent an empty tag. Braces (<>) are only to clarify emptiness."
-msgid "&lt;empty&gt;"
-msgstr ""
-
-#: dialogs/FilenameLayoutDialog.cpp:500
-msgid "&Basic..."
-msgstr "មូលដ្ឋាន..."
-
-#. i18n: file: dialogs/FilenameLayoutDialog.ui:263
-#. i18n: ectx: property (text), widget (KPushButton, kpbAdvanced)
-#: dialogs/FilenameLayoutDialog.cpp:510 rc.cpp:972
-msgid "&Advanced..."
-msgstr "កម្រិត​ខ្ពស់..."
-
-#: dialogs/FilenameLayoutDialog.cpp:634
-msgid "Folder"
-msgstr "ថត"
-
 #: dialogs/TagDialog.cpp:605
 msgid "Filename Layout Chooser"
 msgstr "កម្មវិធី​ជ្រើស​ប្លង់​ឈ្មោះ​ឯកសារ"
@@ -5475,6 +5369,113 @@ msgstr "បានបរាជ័យ​ក្នុងការ​សរសរ​
 #: dialogs/TagDialog.cpp:1900 rc.cpp:821
 msgid "MusicBrainz Tagger"
 msgstr ""
+
+#: dialogs/FilenameLayoutDialog.cpp:122
+msgid "Collection root"
+msgstr "សម្រាំង root"
+
+#: dialogs/FilenameLayoutDialog.cpp:180
+#, fuzzy
+msgid "File Type"
+msgstr "ប្រភេទ​ឯកសារ"
+
+#: dialogs/FilenameLayoutDialog.cpp:241 dialogs/FilenameLayoutDialog.cpp:610
+#: playlist/PlaylistModel.cpp:835 widgets/MetaQueryWidget.cpp:220
+#: widgets/SmartPlaylistEditor.cpp:184
+msgid "Comment"
+msgstr "សេចក្តី​អធិប្បាយ"
+
+#: dialogs/FilenameLayoutDialog.cpp:258 dialogs/FilenameLayoutDialog.cpp:629
+msgid "Ignore"
+msgstr "មិនអើពើ"
+
+#: dialogs/FilenameLayoutDialog.cpp:261
+#, fuzzy, no-c-format, kde-format
+msgctxt ""
+"Please do not translate the %foo words as they define a syntax used "
+"internally by a parser to describe a filename."
+msgid ""
+"The following tokens can be used to define a filename scheme:"
+"<br>                                      <font color=\"%1\">%track</font>, "
+"<font color=\"%2\">%title</font>,                                      <font "
+"color=\"%3\">%artist</font>, <font color=\"%4\">%composer</"
+"font>,                                      <font color=\"%5\">%year</font>, "
+"<font color=\"%6\">%album</font>,                                      <font "
+"color=\"%7\">%albumartist</font>, <font color=\"%8\">%comment</"
+"font>,                                      <font color=\"%9\">%genre</"
+"font>, %ignore."
+msgstr ""
+"ការ​បំ​ពេញ​ថូខឹង​អាច​ប្រើ​បាន​ដើម្បី​កំនត់ឲ្យ​ច្បាស់​​លាស់គ្រោង​ការណ៍​ឯក​សារ ៖"
+"<br>                                      <font color=\"%1\">%track</font>, "
+"<font color=\"%2\">%title</font>,                                      <font "
+"color=\"%3\">%artist</font>, <font color=\"%4\">%composer</"
+"font>,                                      <font color=\"%5\">%year</font>, "
+"<font color=\"%6\">%album</font>,                                      <font "
+"color=\"%7\">%comment</font>, <font color=\"%8\">%genre</"
+"font>,                                      %ignore."
+
+#: dialogs/FilenameLayoutDialog.cpp:274 dialogs/FilenameLayoutDialog.cpp:639
+#, fuzzy
+#| msgid "Initial"
+msgctxt "Artist's Initial"
+msgid "Initial"
+msgstr "ដំបូង"
+
+#: dialogs/FilenameLayoutDialog.cpp:275 dialogs/FilenameLayoutDialog.cpp:624
+msgid "File type"
+msgstr "ប្រភេទ​ឯកសារ"
+
+#: dialogs/FilenameLayoutDialog.cpp:277 dialogs/FilenameLayoutDialog.cpp:644
+msgid "Disc number"
+msgstr "លេខ​ថាស"
+
+#: dialogs/FilenameLayoutDialog.cpp:280
+#, fuzzy, no-c-format
+#| msgctxt ""
+#| "Please do not translate the %foo words as they define a syntax used "
+#| "internally by a parser to describe a filename."
+#| msgid ""
+#| "The following tokens can be used to define a filename "
+#| "scheme:                                      <br>%track, %title, %artist, "
+#| "%composer, %year, %album, %comment, %genre, %initial, %folder, %filetype, "
+#| "%discnumber."
+msgctxt ""
+"Please do not translate the %foo words as they define a syntax used "
+"internally by a parser to describe a filename."
+msgid ""
+"The following tokens can be used to define a filename "
+"scheme:                                      <br>%track, %title, %artist, %"
+"composer, %year, %album, %albumartist, %comment, %genre, %initial, %folder, %"
+"filetype, %discnumber."
+msgstr ""
+"ថូខឹន​ដូចខាង​ក្រោម​អាច​ត្រូវ​បាន​ប្រើ​ដើម្បី​កំណត់​គ្រោងការណ៍​ឈ្មោះ​"
+"ឯកសារ ៖                                      <br>%track, %title, %artist, %"
+"composer, %year, %album, %comment, %genre, %initial, %folder, %filetype, %"
+"discnumber ។"
+
+#: dialogs/FilenameLayoutDialog.cpp:379 dialogs/FilenameLayoutDialog.cpp:384
+#: dialogs/FilenameLayoutDialog.cpp:389 dialogs/FilenameLayoutDialog.cpp:394
+#: dialogs/FilenameLayoutDialog.cpp:399 dialogs/FilenameLayoutDialog.cpp:404
+#: dialogs/FilenameLayoutDialog.cpp:409 dialogs/FilenameLayoutDialog.cpp:414
+#: dialogs/FilenameLayoutDialog.cpp:419
+msgctxt ""
+"Text to represent an empty tag. Braces (<>) are only to clarify emptiness."
+msgid "&lt;empty&gt;"
+msgstr ""
+
+#: dialogs/FilenameLayoutDialog.cpp:500
+msgid "&Basic..."
+msgstr "មូលដ្ឋាន..."
+
+#. i18n: file: dialogs/FilenameLayoutDialog.ui:263
+#. i18n: ectx: property (text), widget (KPushButton, kpbAdvanced)
+#: dialogs/FilenameLayoutDialog.cpp:510 rc.cpp:972
+msgid "&Advanced..."
+msgstr "កម្រិត​ខ្ពស់..."
+
+#: dialogs/FilenameLayoutDialog.cpp:634
+msgid "Folder"
+msgstr "ថត"
 
 #: dynamic/biases/EchoNest.cpp:50
 msgid "Echo Nest Similar Artists"
