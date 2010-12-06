@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: choqok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-05 02:26+0100\n"
+"POT-Creation-Date: 2010-12-06 02:33+0100\n"
 "PO-Revision-Date: 2010-06-08 16:10+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -53,18 +53,13 @@ msgid ""
 msgstr ""
 "អ្នក​ត្រូវ​ការ​ចាប់​ផ្តើម​ Choqok ​ឡើង​វិញ​សម្រាប់​ការ​ផ្លាស់​ប្តូរ​អាទិ​ភាព​គណនី​ដើម្បី​ឲ្យ​មាន​ប្រសិទ្ធិ​ភាព​ ។"
 
-#: choqok/config/accounts/addaccountdialog.cpp:40
+#: choqok/config/accounts/editaccountdialog.cpp:41
 #, fuzzy
-msgid "Add New Account"
-msgstr "បន្ថែម​គណនី​ថ្មី"
+msgid "Edit Account"
+msgstr "កែសម្រួល​គណនី​"
 
-#: choqok/config/accounts/addaccountdialog.cpp:60
-#, fuzzy
-msgid "The Account registration failed."
-msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ចុះឈ្មោះ​គណនី ។"
-
-#: choqok/config/accounts/addaccountdialog.cpp:66
 #: choqok/config/accounts/editaccountdialog.cpp:63
+#: choqok/config/accounts/addaccountdialog.cpp:66
 #, fuzzy
 msgid ""
 "Cannot validate your input information.\n"
@@ -75,10 +70,15 @@ msgstr ""
 "សូម​ពិនិត្យមើល​ទិន្នន័យ​របស់​វាល​ ។\n"
 " ​ប្រហែល​ជា​វាល​ដែល​ទាម​ទារ​ទទេ​ឬ ?"
 
-#: choqok/config/accounts/editaccountdialog.cpp:41
+#: choqok/config/accounts/addaccountdialog.cpp:40
 #, fuzzy
-msgid "Edit Account"
-msgstr "កែសម្រួល​គណនី​"
+msgid "Add New Account"
+msgstr "បន្ថែម​គណនី​ថ្មី"
+
+#: choqok/config/accounts/addaccountdialog.cpp:60
+#, fuzzy
+msgid "The Account registration failed."
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ចុះឈ្មោះ​គណនី ។"
 
 #: choqok/config/appearance/appearanceconfig.cpp:73
 msgid "Appearance"
@@ -701,18 +701,6 @@ msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ទប់
 msgid "Could not parse the data that has been received from the server."
 msgstr "មិន​អាចញែក​ទិន្នន័យ​ដែល​បាន​ទទួល​ពី​ម៉ាស៊ីន​បម្រើ​ឡើយ​ ។"
 
-#: libchoqok/accountmanager.cpp:111 libchoqok/accountmanager.cpp:142
-#, fuzzy, kde-format
-msgid "There is no account with alias %1."
-msgstr "មិន​មាន​គណនី​ជា​មួយ​ឈ្មោះ​ក្លែង​ក្លាយ %1​ ឡើយ​។"
-
-#: libchoqok/accountmanager.cpp:159
-#, fuzzy
-msgid ""
-"An account with this alias already exists: a unique alias has to be "
-"specified."
-msgstr "គណនី​ជា​មួយ​ឈ្មោះ​ក្លែង​ក្លាយ​នេះ​មាន​រួច​ហើយ ​៖ ​ឈ្មោះ​ក្លែង​ក្លាយ​តែ​មួយ​ត្រូវ​បាន​បញ្ជាក់​ ។"
-
 #: libchoqok/choqoktools.cpp:50
 #, fuzzy
 #| msgid "Error"
@@ -972,6 +960,18 @@ msgstr "ការ​កាត់​ URL​ ឲ្យ​ខ្លី"
 msgctxt "Show Choqok MainWindow"
 msgid "Show Choqok"
 msgstr "choqoK"
+
+#: libchoqok/accountmanager.cpp:111 libchoqok/accountmanager.cpp:142
+#, fuzzy, kde-format
+msgid "There is no account with alias %1."
+msgstr "មិន​មាន​គណនី​ជា​មួយ​ឈ្មោះ​ក្លែង​ក្លាយ %1​ ឡើយ​។"
+
+#: libchoqok/accountmanager.cpp:159
+#, fuzzy
+msgid ""
+"An account with this alias already exists: a unique alias has to be "
+"specified."
+msgstr "គណនី​ជា​មួយ​ឈ្មោះ​ក្លែង​ក្លាយ​នេះ​មាន​រួច​ហើយ ​៖ ​ឈ្មោះ​ក្លែង​ក្លាយ​តែ​មួយ​ត្រូវ​បាន​បញ្ជាក់​ ។"
 
 #: microblogs/laconica/laconicacomposerwidget.cpp:134
 #, fuzzy
@@ -1290,23 +1290,23 @@ msgstr "លេខ​ទំព័រ"
 msgid "Enter PIN number received from Twitter:"
 msgstr ""
 
-#: microblogs/twitter/twitterlistdialog.cpp:51
+#: microblogs/twitter/twitterlistdialog.cpp:50
 msgid "Add List"
 msgstr ""
 
 #. i18n: file: plugins/filter/filterprefs.ui:73
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnAdd)
-#: microblogs/twitter/twitterlistdialog.cpp:62 rc.cpp:364
+#: microblogs/twitter/twitterlistdialog.cpp:61 rc.cpp:364
 #, fuzzy
 #| msgid "&Add..."
 msgid "Add"
 msgstr "បន្ថែម..."
 
-#: microblogs/twitter/twitterlistdialog.cpp:78
+#: microblogs/twitter/twitterlistdialog.cpp:83
 msgid "You should provide both list author username and list name."
 msgstr ""
 
-#: microblogs/twitter/twitterlistdialog.cpp:100
+#: microblogs/twitter/twitterlistdialog.cpp:106
 msgid "No User!"
 msgstr ""
 
@@ -2353,33 +2353,33 @@ msgstr ""
 msgid "&Authenticate with Twitter service"
 msgstr ""
 
-#. i18n: file: microblogs/twitter/twitterlistdialog_base.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: microblogs/twitter/twitterlistdialog_base.ui:23
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:306
+#, fuzzy
+#| msgid "Username:"
+msgid "List name:"
+msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
+
+#. i18n: file: microblogs/twitter/twitterlistdialog_base.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:309
 #, fuzzy
 #| msgid "Username:"
 msgid "User name:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
-#. i18n: file: microblogs/twitter/twitterlistdialog_base.ui:32
+#. i18n: file: microblogs/twitter/twitterlistdialog_base.ui:75
 #. i18n: ectx: property (toolTip), widget (KPushButton, loadUserLists)
-#: rc.cpp:309
+#: rc.cpp:312
 msgid "Load User Lists"
 msgstr ""
 
-#. i18n: file: microblogs/twitter/twitterlistdialog_base.ui:35
+#. i18n: file: microblogs/twitter/twitterlistdialog_base.ui:78
 #. i18n: ectx: property (text), widget (KPushButton, loadUserLists)
-#: rc.cpp:312
+#: rc.cpp:315
 msgid "Load lists"
 msgstr ""
-
-#. i18n: file: microblogs/twitter/twitterlistdialog_base.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:315
-#, fuzzy
-#| msgid "Username:"
-msgid "List name:"
-msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
 #. i18n: file: microblogs/ocs/ocsconfigurebase.ui:67
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
