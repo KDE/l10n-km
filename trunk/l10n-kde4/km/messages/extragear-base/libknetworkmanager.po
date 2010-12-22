@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: networkmanagement_openvpnui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-21 02:30+0100\n"
+"POT-Creation-Date: 2010-12-22 02:28+0100\n"
 "PO-Revision-Date: 2009-06-22 16:27+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -987,12 +987,6 @@ msgctxt "Add connection dialog caption"
 msgid "Add Network Connection"
 msgstr "បន្ថែម​ការ​ត​ភ្ជាប់​បណ្ដាញ​"
 
-#: libs/ui/connectionsecretsjob.cpp:168
-#, fuzzy, kde-format
-msgctxt "@title:window for network secrets request"
-msgid "Secrets for %1"
-msgstr "សម្ងាត់​​ %1"
-
 #: libs/ui/connectionwidget.cpp:48
 msgctxt "@info:tooltip user action"
 msgid "Choose a connection icon"
@@ -1210,6 +1204,12 @@ msgstr "ការ​តភ្ជាប់ VPN ​ថ្មី​​ "
 #| msgid "Use TCP connection"
 msgid "New Wired Connection"
 msgstr "ការ​តភ្ជាប់​ដាក់​ខ្សែ​ថ្មី​"
+
+#: libs/ui/connectionsecretsjob.cpp:169
+#, fuzzy, kde-format
+msgctxt "@title:window for network secrets request"
+msgid "Secrets for %1"
+msgstr "សម្ងាត់​​ %1"
 
 #: settings/config/addeditdeletebuttonset.cpp:37
 msgid "Add..."
@@ -1852,7 +1852,7 @@ msgstr "X.509"
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: file: libs/ui/security/leap.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:173 rc.cpp:466 rc.cpp:565 rc.cpp:664 rc.cpp:694 rc.cpp:886
+#: rc.cpp:173 rc.cpp:466 rc.cpp:556 rc.cpp:664 rc.cpp:694 rc.cpp:886
 #: rc.cpp:907 rc.cpp:940 rc.cpp:976
 msgid "&Username:"
 msgstr "ឈ្មោះ​អ្នកប្រើ ៖​"
@@ -1950,8 +1950,6 @@ msgstr "សោ​បាន​ចែករំលែក​ជា​មុន"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: file: vpnplugins/pptp/pptpauth.ui:30
 #. i18n: ectx: property (text), widget (QLabel)
-#. i18n: file: vpnplugins/vpnc/vpncauth.ui:30
-#. i18n: ectx: property (text), widget (QLabel)
 #. i18n: file: libs/internals/schemas/802-1x.kcfg:102
 #. i18n: ectx: label, entry (password), group (802-1x)
 #. i18n: file: libs/internals/schemas/cdma.kcfg:17
@@ -1960,8 +1958,8 @@ msgstr "សោ​បាន​ចែករំលែក​ជា​មុន"
 #. i18n: ectx: label, entry (password), group (gsm)
 #. i18n: file: libs/internals/schemas/pppoe.kcfg:17
 #. i18n: ectx: label, entry (password), group (pppoe)
-#: rc.cpp:221 rc.cpp:260 rc.cpp:401 rc.cpp:509 rc.cpp:1271 rc.cpp:1349
-#: rc.cpp:1390 rc.cpp:1547
+#: rc.cpp:221 rc.cpp:260 rc.cpp:401 rc.cpp:1271 rc.cpp:1349 rc.cpp:1390
+#: rc.cpp:1547
 msgid "Password"
 msgstr "ពាក្យ​សម្ងាត់"
 
@@ -2156,7 +2154,7 @@ msgstr "​លំនាំដើម​"
 #. i18n: ectx: property (text), item, widget (KComboBox, cboDirection)
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:222
 #. i18n: ectx: property (text), item, widget (QComboBox, cboEncryptionMethod)
-#: rc.cpp:308 rc.cpp:329 rc.cpp:580
+#: rc.cpp:308 rc.cpp:329 rc.cpp:571
 msgid "None"
 msgstr "គ្មាន​"
 
@@ -2354,17 +2352,17 @@ msgstr "ផ្ញើ​កញ្ចប់ PPP echo"
 
 #. i18n: file: vpnplugins/pptp/pptpauth.ui:16
 #. i18n: ectx: property (caption), widget (QWidget)
-#. i18n: file: vpnplugins/vpnc/vpncauth.ui:16
-#. i18n: ectx: property (caption), widget (QWidget)
-#: rc.cpp:398 rc.cpp:506
+#. i18n: file: vpnplugins/vpnc/vpncauth.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, VpncAuth)
+#: rc.cpp:398 rc.cpp:589
 msgid "VPNCAuthentication"
 msgstr "VPNCAuthentication"
 
 #. i18n: file: vpnplugins/pptp/pptpauth.ui:38
 #. i18n: ectx: property (text), widget (QLabel)
-#. i18n: file: vpnplugins/vpnc/vpncauth.ui:38
-#. i18n: ectx: property (text), widget (QLabel)
-#: rc.cpp:404 rc.cpp:512
+#. i18n: file: vpnplugins/vpnc/vpncauth.ui:36
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:404 rc.cpp:595
 msgid "Group Password"
 msgstr "ពាក្យ​សម្ងាត់​ក្រុម​"
 
@@ -2450,7 +2448,7 @@ msgstr "Swan VPN មាំមួន​"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:65
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:437 rc.cpp:469 rc.cpp:531
+#: rc.cpp:437 rc.cpp:469 rc.cpp:522
 #, fuzzy
 msgid "User &Password"
 msgstr "ពាក្យ​សម្ងាត់​អ្នក​ប្រើ​"
@@ -2461,7 +2459,7 @@ msgstr "ពាក្យ​សម្ងាត់​អ្នក​ប្រើ​
 #. i18n: ectx: property (text), widget (QCheckBox, cbShowPasswords)
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:151
 #. i18n: ectx: property (text), widget (QCheckBox, cbShowPasswords)
-#: rc.cpp:440 rc.cpp:481 rc.cpp:555
+#: rc.cpp:440 rc.cpp:481 rc.cpp:546
 msgid "&Hide passwords"
 msgstr "លាក់​ពាក្យ​សម្ងាត់​​"
 
@@ -2495,7 +2493,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:33
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:453 rc.cpp:525
+#: rc.cpp:453 rc.cpp:516
 msgid "Gateway:"
 msgstr "ផ្លូវ​ចេញ​ចូល​ ៖​"
 
@@ -2531,7 +2529,7 @@ msgstr ""
 #. i18n: ectx: property (text), item, widget (QComboBox, cboUserPassOptions)
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:131
 #. i18n: ectx: property (text), item, widget (QComboBox, cboGroupPassOptions)
-#: rc.cpp:472 rc.cpp:534 rc.cpp:546
+#: rc.cpp:472 rc.cpp:525 rc.cpp:537
 #, fuzzy
 msgid "Always Ask"
 msgstr "សួរ​ជានិច្ច​​"
@@ -2542,7 +2540,7 @@ msgstr "សួរ​ជានិច្ច​​"
 #. i18n: ectx: property (text), item, widget (QComboBox, cboUserPassOptions)
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:136
 #. i18n: ectx: property (text), item, widget (QComboBox, cboGroupPassOptions)
-#: rc.cpp:475 rc.cpp:537 rc.cpp:549
+#: rc.cpp:475 rc.cpp:528 rc.cpp:540
 msgid "Store"
 msgstr "ទុក​"
 
@@ -2552,7 +2550,7 @@ msgstr "ទុក​"
 #. i18n: ectx: property (text), item, widget (QComboBox, cboUserPassOptions)
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:141
 #. i18n: ectx: property (text), item, widget (QComboBox, cboGroupPassOptions)
-#: rc.cpp:478 rc.cpp:540 rc.cpp:552
+#: rc.cpp:478 rc.cpp:531 rc.cpp:543
 msgid "Not Required"
 msgstr "មិន​បាន​ទាមទារ​​"
 
@@ -2612,13 +2610,13 @@ msgstr "ប្រើ​​ការ​បង្ហាប់​ IP "
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, VpncProp)
-#: rc.cpp:515
+#: rc.cpp:506
 msgid "Cisco VPN"
 msgstr "Cisco VPN"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:518
+#: rc.cpp:509
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -2644,19 +2642,19 @@ msgstr ""
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:49
 #. i18n: ectx: property (text), widget (QLabel, labelGroup)
-#: rc.cpp:528
+#: rc.cpp:519
 msgid "Group name:"
 msgstr "ឈ្មោះ​ក្រុម​ ៖​"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:108
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:543
+#: rc.cpp:534
 msgid "&Group Password:"
 msgstr "ពាក្យ​សម្ងាត់​ក្រុម​ ៖​"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:165
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:558
+#: rc.cpp:549
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -2682,61 +2680,68 @@ msgstr ""
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:188
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:568
+#: rc.cpp:559
 msgid "&Domain:"
 msgstr "ដែន ៖​"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:201
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:571
+#: rc.cpp:562
 #, fuzzy
 msgid "&Encryption Method:"
 msgstr "វិធីសាស្ត្រ​​អ៊ិនគ្រីប​ ៖"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:212
 #. i18n: ectx: property (text), item, widget (QComboBox, cboEncryptionMethod)
-#: rc.cpp:574
+#: rc.cpp:565
 msgid "Secure"
 msgstr "ដែល​មាន​សុវត្ថិភាព​"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:217
 #. i18n: ectx: property (text), item, widget (QComboBox, cboEncryptionMethod)
-#: rc.cpp:577
+#: rc.cpp:568
 msgid "Weak"
 msgstr "ខ្សោយ​​"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:230
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:583
+#: rc.cpp:574
 msgid "&NAT Traversal:"
 msgstr "&NAT Traversal:"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:241
 #. i18n: ectx: property (text), item, widget (QComboBox, cboNatTraversal)
-#: rc.cpp:586
+#: rc.cpp:577
 msgid "Cisco UDP"
 msgstr "Cisco UDP"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:246
 #. i18n: ectx: property (text), item, widget (QComboBox, cboNatTraversal)
-#: rc.cpp:589
+#: rc.cpp:580
 msgid "NAT-T"
 msgstr "NAT-T"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:251
 #. i18n: ectx: property (text), item, widget (QComboBox, cboNatTraversal)
-#: rc.cpp:592
+#: rc.cpp:583
 #, fuzzy
 msgid "Disabled"
 msgstr "បិទ​"
 
 #. i18n: file: vpnplugins/vpnc/vpncprop.ui:259
 #. i18n: ectx: property (text), widget (QCheckBox, chkDeadPeerDetection)
-#: rc.cpp:595
+#: rc.cpp:586
 #, fuzzy
 #| msgid "Enable weak single DES encryption"
 msgid "Enable Dead &Peer Detection"
 msgstr "បិទ​​ការ​រក​ឃើញ​​ម៉ាស៊ីន​ដូចគ្នា​ខូច​"
+
+#. i18n: file: vpnplugins/vpnc/vpncauth.ui:23
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:592
+#, fuzzy
+msgid "User Password"
+msgstr "ពាក្យ​សម្ងាត់​អ្នក​ប្រើ​"
 
 #. i18n: file: libs/ui/802-11-wireless.ui:23
 #. i18n: ectx: property (text), widget (QLabel, label)
