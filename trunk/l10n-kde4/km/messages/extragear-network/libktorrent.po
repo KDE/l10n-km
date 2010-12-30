@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-12-29 02:38+0100\n"
+"POT-Creation-Date: 2010-12-30 02:34+0100\n"
 "PO-Revision-Date: 2009-12-21 14:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -222,7 +222,7 @@ msgstr "បរាជ័យ​ក្នុងការ​បើក %1 ៖ %2"
 msgid "Failed to create %1: %2"
 msgstr "បរាជ័យ​ក្នុង​ការ​បង្កើត %1 ៖ %2"
 
-#: src/diskio/piecedata.cpp:64 src/diskio/piecedata.cpp:103
+#: src/diskio/piecedata.cpp:65 src/diskio/piecedata.cpp:104
 msgid "Unable to write to a piece mapped read only"
 msgstr ""
 
@@ -247,7 +247,7 @@ msgstr "ដោះស្រាយ​ប្រូកស៊ី %1 ៖ %2"
 msgid "Resolving hostname %1"
 msgstr "ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1"
 
-#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:327
+#: src/download/httpconnection.cpp:125 src/download/webseed.cpp:336
 msgid "Connection closed"
 msgstr "បាន​បិទ​ការ​តភ្ជាប់"
 
@@ -290,7 +290,13 @@ msgstr "កំហុស ៖ សំណើ​អស់​ពេល"
 msgid "Redirected without a new location."
 msgstr "បាន​បញ្ជូន​បន្ត​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
 
-#: src/download/webseed.cpp:530
+#: src/download/downloader.cpp:810
+#, fuzzy
+#| msgid "Displays all the webseeds of a torrent"
+msgid "Disabled because webseed does not match torrent"
+msgstr "បង្ហាញ​ webseeds ទាំងអស់​របស់ torrent"
+
+#: src/download/webseed.cpp:544
 #, kde-format
 msgid "Unused for %1 seconds (Too many connection failures)"
 msgstr ""
@@ -589,17 +595,6 @@ msgstr "មិន​អាច​ពង្រីក​​ឯកសារ​ ៖�
 msgid "Cannot seek in file: %1"
 msgstr "មិន​អាច​ស្វែងរក​ក្នុង​ឯកសារ​ ៖​ %1"
 
-#: src/util/functions.cpp:280
-#, kde-format
-msgid "%1/s"
-msgstr "%1/វិ."
-
-#: src/util/functions.cpp:291
-#, kde-format
-msgid "1 day "
-msgid_plural "%1 days "
-msgstr[0] "%1 ថ្ងៃ "
-
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
 msgstr "ទូទៅ"
@@ -623,6 +618,17 @@ msgstr "ការ​ចេញ/ចូល​របស់​ថាស"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr ""
+
+#: src/util/functions.cpp:280
+#, kde-format
+msgid "%1/s"
+msgstr "%1/វិ."
+
+#: src/util/functions.cpp:291
+#, kde-format
+msgid "1 day "
+msgid_plural "%1 days "
+msgstr[0] "%1 ថ្ងៃ "
 
 #: src/util/signalcatcher.cpp:57
 msgid "Error when writing to disk"
@@ -1233,9 +1239,6 @@ msgstr "កំហុស​ក្នុងការ​អាន​ពី %1"
 
 #~ msgid "Webseeds"
 #~ msgstr "Webseed"
-
-#~ msgid "Displays all the webseeds of a torrent"
-#~ msgstr "បង្ហាញ​ webseeds ទាំងអស់​របស់ torrent"
 
 #~ msgid "Chunk"
 #~ msgstr "កំណាត់"
