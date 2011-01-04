@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-03 02:32+0100\n"
+"POT-Creation-Date: 2011-01-04 02:39+0100\n"
 "PO-Revision-Date: 2010-12-22 23:32+0700\n"
 "Last-Translator:  Seng Sutha <Sutha@khmeros.info>\n"
 "Language-Team: Khmer [km] <Support@khmeros.info>\n"
@@ -5055,7 +5055,7 @@ msgid ""
 "will open for each. Do you really want to save several URLs at once?"
 msgstr ""
 
-#: src/urlcatcher.cpp:272 src/viewer/irccontextmenus.cpp:956
+#: src/urlcatcher.cpp:272 src/viewer/irccontextmenus.cpp:959
 msgid "Save link as"
 msgstr "រក្សា​ទុក​ដំណ​ជា​"
 
@@ -5122,6 +5122,366 @@ msgstr "អ្នកជ្រើស​ពណ៌របស់​ IRC "
 #: src/viewer/irccolorchooser.cpp:33
 msgid "None"
 msgstr "គ្មាន​"
+
+#: src/viewer/ircinput.cpp:59
+#, fuzzy
+msgid ""
+"<qt><p>The input line is where you type messages to be sent the channel, "
+"query, or server.  A message sent to a channel is seen by everyone on the "
+"channel, whereas a message in a query is sent only to the person in the "
+"query with you.</p><p>To automatically complete the nickname you began "
+"typing, press Tab. If you have not begun typing, the last successfully "
+"completed nickname will be used.</p><p>You can also send special commands:</"
+"p><table><tr><th>/me <i>action</i></th><td>shows up as an action in the "
+"channel or query.  For example:  <em>/me sings a song</em> will show up in "
+"the channel as 'Nick sings a song'.</td></tr><tr><th>/whois <i>nickname</i></"
+"th><td>shows information about this person, including what channels they are "
+"in.</td></tr></table><p>For more commands, see the Konversation Handbook.</"
+"p><p>A message cannot contain multiple lines.</p></qt>"
+msgstr ""
+"<qt><p>ជួរ​បញ្ចូលជាកន្លែង​​ដែល​អ្នកត្រូវ​វាយ​ឲ្យ​ផ្ញើ​ទៅឆានែល​ សំណួរ​ ឬ​ម៉ាស៊ីន​បម្រើ​ ។  សារ​បាន​ផ្ញើ​ទៅកាន់​"
+"ឆានែល​ត្រូវបាន​មើល​ដោយ​អ្នក​គ្រប់​គ្នា​លើ​ឆានែល​ ចំណែក​ឯ សារ​នៅក្នុ​ងសំណួរត្រូវ​បាន​ផ្ញើ​ទៅកាន់​​មនុស្ស​ក្នុង​សំណួរ​"
+"ជាមួយ​អ្នក​តែ​ប៉ុណ្ណោះ​ ។ </p><p>​បំពេញ​សម្មតិនាមដោយ​ស្វ័យ​ប្រវត្តិ​​ដែល​អ្នកបាន​​ចាប់​ផ្តើម​វាយ​ ចុច​ថេប​ ។ប្រសិន​"
+"បើ អ្នក​មិន​បាន​​ចាប់​ផ្តើម​វាយសម្មតិនាម​ដែល​បានបញ្ចប់​ទាំង​ស្រុង​ដោយ​ជោគជ័យ​ចុង​ក្រោយ​ នឹងត្រូវ​បាន​ប្រើ​ ។</"
+"p><p>អ្នក​អាច​ផ្ញើ​ពាក្យ​បញ្ជា​ពិសេសផងដែរ ៖</p><table><tr><th>/me​ <i>សកម្មភាព​</i></"
+"th><td>បង្ហាញ​​ជា​សកម្ម​ភាព​ក្នុង​ឆានែល​ ឬ​សំណួរ​ ។ ឧទាហរណ៍​ ៖  <em>/me sings  a song </em> នឹង​"
+"បង្ហាញ​លើ​ឆានែល​ជា​ 'ចម្រៀង​សម្មតិនាម'​ ។</td></tr><tr><th>/whois <i>សម្មតិនាម​​</i></"
+"th><td>បង្ហាញ​ព័ត៌មាន​អំពី​មនុស្សនេះ រួមបញ្ជូល​ឆានែល​ដែល​ពួក​គេ​មាន​ក្នុង​ ។ </td></tr></"
+"table><p>សម្រាប់​ពាក្យ​បញ្ជា​បន្ថែម​ មើល​សៀវភៅ​ដៃ​របស់​ Konversation ។</p><p>សារមិន​អាចមាន​ជួរ​"
+"ច្រើន​ឡើយ ។</p></qt>"
+
+#: src/viewer/ircinput.cpp:501
+#, kde-format
+msgid "1 byte"
+msgid_plural "%1 bytes"
+msgstr[0] " %1 បៃ"
+
+#: src/viewer/ircinput.cpp:502
+#, fuzzy, kde-format
+msgid "1 line"
+msgid_plural "%1 lines"
+msgstr[0] " %1 បន្ទាត់​"
+
+#: src/viewer/ircinput.cpp:508
+#, fuzzy, kde-format
+msgctxt ""
+"%1 is, for instance, '200 bytes'.  %2 is, for instance, '7 lines'.  Both are "
+"localised (see the two previous messages)."
+msgid ""
+"<qt>You are attempting to paste a large portion of text (%1 or %2) into the "
+"chat. This can cause connection resets or flood kills. Do you really want to "
+"continue?</qt>"
+msgstr ""
+"<qt>អ្នក​កំពុង​តែប៉ុនប៉ង​​​ទៅ​​បិទភ្ជាប់ចំណែក​របស់​អត្ថបទ​​ (%1 ឬ %2) នៅក្នុង​ការ​ជជែកកំសាន្ត ។ វា​"
+"អាចជាមូលហេតុ​ការ​កំណត់​ការ​តភ្ជាប់​ឡើងវិញ​ ឬ​ បញ្ចប់​​ ។ តើ​អ្នក​ពិត​ជាចង់​បន្ត ឬ​ ?</qt>"
+
+#: src/viewer/ircinput.cpp:511
+#, fuzzy
+msgid "Large Paste Warning"
+msgstr "បិទភ្ជាប់​ការ​ព្រមាន​ទូលាយ​"
+
+#: src/viewer/ircinput.cpp:512
+msgid "Paste"
+msgstr "បិទ​ភ្ជាប់​"
+
+#. i18n: file: src/irc/servergroupdialogui.ui:71
+#. i18n: ectx: property (text), widget (KPushButton, m_editIdentityButton)
+#. i18n: file: src/irc/serverlistdialogui.ui:162
+#. i18n: ectx: property (text), widget (QPushButton, m_editButton)
+#: src/viewer/ircinput.cpp:513 rc.cpp:1513 rc.cpp:1585
+msgid "&Edit..."
+msgstr "កែសម្រួល​​..."
+
+#: src/viewer/osd.cpp:338
+#, fuzzy
+msgid "OSD Preview - drag to reposition"
+msgstr "មើល​​ OSD ជាមុន​ - អូស​ទៅឃ្លាំង​"
+
+#: src/viewer/pasteeditor.cpp:29
+#, fuzzy
+msgid "Edit Multiline Paste"
+msgstr "កែ​សម្រួល​បិទ​ភ្ជាប់ជួរ​ច្រើន"
+
+#: src/viewer/pasteeditor.cpp:32
+#, fuzzy
+#| msgid "Sending"
+msgid "&Send"
+msgstr "ការ​ផ្ញើ"
+
+#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2254
+#, fuzzy
+msgid "Raw Log"
+msgstr "កំណត់​ហេតុ​ដើម​"
+
+#: src/viewer/statuspanel.cpp:230
+#, fuzzy, kde-format
+msgid ""
+"Do you really want to close '%1'?\n"
+"\n"
+" All associated tabs will be closed as well."
+msgstr ""
+"តើ​អ្នក​ពិត​ជាចង់​បិទ '%1' ឬ ?\n"
+"\n"
+" គ្រប់​ផ្ទាំង​​ដែល​បាន​ភ្ជាប់​នឹង​ត្រូវ​បាន​បិទដូច​គ្នា​ ។"
+
+#: src/viewer/statuspanel.cpp:231
+msgid "Close Tab"
+msgstr "បិទ​ផ្ទាំង​"
+
+#: src/viewer/statuspanel.cpp:240
+#, fuzzy, kde-format
+msgid ""
+"Do you want to disconnect from '%1'?\n"
+"\n"
+" All associated tabs will be closed as well."
+msgstr ""
+"តើ​អ្នក​ពិត​ជា​ចង់ផ្តាច់​ចេញ​ពី​​ '%1' ឬ ?\n"
+"\n"
+" គ្រប់​ផ្ទាំង​ដែល​បាន​ភ្ជាប់​នឹង​ត្រូ​វ​បាន​បិទ​ដូច​គ្នា​ ។"
+
+#: src/viewer/statuspanel.cpp:241
+msgid "Disconnect From Server"
+msgstr "ផ្តាច់​ចេញ​ពី​ម៉ាស៊ីន​បម្រើ​"
+
+#: src/viewer/statuspanel.cpp:242
+msgid "Disconnect"
+msgstr "ផ្តាច់​"
+
+#: src/viewer/trayiconkstatusnotifieritem.cpp:24
+#: src/viewer/trayiconksystemtray.cpp:34
+#, fuzzy
+msgid "Konversation - IRC Client"
+msgstr "Konversation - ម៉ាស៊ីន​ភ្ញៀវ​របស់​ IRC "
+
+#: src/viewer/chatwindow.cpp:438
+#, fuzzy, kde-format
+msgid ""
+"\n"
+"*** Logfile started\n"
+"*** on %1\n"
+"\n"
+msgstr ""
+"\n"
+"*** បានចាប់​ផ្តើម​ឯកសារកំណត់​ហេតុ​​\n"
+"*** លើ​ %1\n"
+"\n"
+
+#: src/viewer/logfilereader.cpp:46
+msgid "Save As..."
+msgstr "រក្សាទុកជា​..."
+
+#: src/viewer/logfilereader.cpp:47
+msgid "Reload"
+msgstr "ផ្ទុក​ឡើង​វិញ"
+
+#: src/viewer/logfilereader.cpp:48 src/viewer/logfilereader.cpp:145
+#, fuzzy
+msgid "Clear Logfile"
+msgstr "ជម្រះ​ឯកសារ​កំណត់​ហេតុ​"
+
+#: src/viewer/logfilereader.cpp:50
+#, fuzzy
+msgid "Show last:"
+msgstr "បង្ហាញ​ចុង​ក្រោយ​ ៖"
+
+#: src/viewer/logfilereader.cpp:56
+#, fuzzy
+msgid ""
+"Use this box to set the maximum size of the log file. This setting does not "
+"take effect until you restart Konversation. Each log file may have a "
+"separate setting."
+msgstr ""
+"ប្រើ​ប្រអប់​នេះ ​ទៅកំណត់​ទំហំអតិបរមា​របស់​ឯកសារ​កំណត់​ហេតុ​ ។​ ការ​កំណត់​នេះមិន​មាន​ការ​ប៉ះពាល់​រហូតដល់​អ្នក​​​ចាប់​"
+"ផ្តើម​  Konversation ឡើងវិញ​ ។ ឯកសារ​កំណត់​ហេតុ​នីមួយ​ៗ​អាច​មាន​ការ​កំណត់បំបែក​ ។"
+
+#: src/viewer/logfilereader.cpp:58
+msgid " KB"
+msgstr "គីឡូបៃ​"
+
+#: src/viewer/logfilereader.cpp:65
+#, fuzzy
+msgid ""
+"The messages in the log file are displayed here. The oldest messages are at "
+"the top and the most recent are at the bottom."
+msgstr "សារ​នៅក្នុង​ឯកសារ​កំណត់​ហេតុ​ត្រូង​បាន​បង្ហាញ​នៅទីនេះ​ ។ សារចាស់​បំផុត​នៅ​កំពូល និងថ្មី​បំផុតនៅ​បាត​ ។"
+
+#: src/viewer/logfilereader.cpp:144
+msgid ""
+"Do you really want to permanently discard all log information of this file?"
+msgstr "តើ​អ្នក​ពិត​ជាចង់​បោះចោលពត៌មាន​កំណត់​ហេតុទាំង​អស់​​របស់​ឯកសារ​នេះជានិច្ច​​ ឬ ?"
+
+#: src/viewer/logfilereader.cpp:158
+#, fuzzy
+msgid ""
+"Note: By saving the logfile you will save all data in the file, not only the "
+"part you can see in this viewer."
+msgstr ""
+"សម្គាល់​ ៖ដោយ​ការ​រក្សាទុក​ឯកសារកំណត់​ហេតុ​ អ្នក​នឹងរក្សាទុក​ទិន្នន័យ​ទាំងអស់​ក្នុង​ឯកសារ​ មិន​មែន​ជា​ចំណែក​"
+"តែប៉ុណ្ណោះ​ទេ​​  អ្នក​អាច​មើល​ក្នុ​ងកម្មវិធី​មើល​នេះ​បាន​ ៖"
+
+#: src/viewer/logfilereader.cpp:159
+msgid "Save Logfile"
+msgstr "រក្សាទុក​ឯកសារ​កំណត់​ហេតុ​"
+
+#: src/viewer/logfilereader.cpp:165
+#, fuzzy
+msgid "Choose Destination Folder"
+msgstr "ជ្រើស​ថតទិស​ដៅ​"
+
+#: src/viewer/searchbar.cpp:64
+#, fuzzy
+msgid "Find Forward"
+msgstr "ស្វែង​រក​ទៅមុខ​"
+
+#: src/viewer/searchbar.cpp:67
+#, fuzzy
+msgid "Match Case"
+msgstr "ករណី​ដំណូច"
+
+#: src/viewer/searchbar.cpp:70
+#, fuzzy
+msgid "Whole Words Only"
+msgstr "ពាក្យ​ទាំង​អស់​តែ​ប៉ុណ្ណោះ"
+
+#: src/viewer/searchbar.cpp:73
+#, fuzzy
+msgid "From Cursor"
+msgstr "ពី​ទស្សន៍​ទ្រនិច"
+
+#: src/viewer/insertchardialog.cpp:29
+#, fuzzy
+msgid "Insert Character"
+msgstr "បញ្ចូល​តួអក្សរ​"
+
+#: src/viewer/insertchardialog.cpp:30
+msgid "&Insert"
+msgstr "បញ្ចូល​"
+
+#: src/viewer/insertchardialog.cpp:30
+#, fuzzy
+msgid "Insert a character"
+msgstr "បញ្ចូល​តួអក្សរមួយ​"
+
+#: src/viewer/viewcontainer.cpp:221 src/mainwindow.cpp:290
+#, fuzzy
+msgid "Move Tab Up"
+msgstr "ផ្លាស់​ទី​​ផ្ទាំងទៅ​​លើ​"
+
+#: src/viewer/viewcontainer.cpp:229 src/mainwindow.cpp:301
+#, fuzzy
+msgid "Move Tab Down"
+msgstr "ផ្លាស់​ទី​​ផ្ទាំងចុះ​​ក្រោម​"
+
+#: src/viewer/viewcontainer.cpp:322 src/mainwindow.cpp:321
+#: src/mainwindow.cpp:333
+#, fuzzy
+msgid "Move Tab Left"
+msgstr "ផ្លាស់​ទី​ផ្ទាំង​ទៅ​ឆ្វេង​"
+
+#: src/viewer/viewcontainer.cpp:330 src/mainwindow.cpp:312
+#: src/mainwindow.cpp:342
+#, fuzzy
+msgid "Move Tab Right"
+msgstr "ផ្លាស់​ទី​​ផ្ទាំង​ទៅស្តាំ"
+
+#: src/viewer/viewcontainer.cpp:558
+msgid "Find Text..."
+msgstr "ស្វែង​រក​អត្ថបទ​..."
+
+#: src/viewer/viewcontainer.cpp:560
+#, fuzzy
+msgid "Search for text in the current tab"
+msgstr "ស្វែង​រក​សម្រាប់​អត្ថបទ​ក្នុង​ផ្ទាំង​បច្ចុប្បន្ន​"
+
+#: src/viewer/viewcontainer.cpp:578
+#, fuzzy, kde-format
+msgid "Channel &List for %1"
+msgstr "ឆានែល​ និង​បញ្ជី​សម្រាប់​ %1"
+
+#: src/viewer/viewcontainer.cpp:584 src/mainwindow.cpp:203
+#, fuzzy
+msgid "Channel &List"
+msgstr "បញ្ជី និង​ឆានែល"
+
+#: src/viewer/viewcontainer.cpp:593 src/mainwindow.cpp:186
+#: src/mainwindow.cpp:770
+#, fuzzy
+msgid "&Open Logfile"
+msgstr "បើក​ឯកសារ​កំណត់ហេតុ"
+
+#: src/viewer/viewcontainer.cpp:598
+#, fuzzy, kde-format
+msgid "&Open Logfile for %1"
+msgstr "បើកឯកសារ​កំណត់ហេតុសម្រាប់​ %1"
+
+#: src/viewer/viewcontainer.cpp:609
+#, fuzzy, kde-format
+msgid "&Channel Settings for %1..."
+msgstr "កំពុង​កំណត់​ឆានែល​សម្រាប់​ %1..."
+
+#: src/viewer/viewcontainer.cpp:614 src/mainwindow.cpp:195
+#, fuzzy
+msgid "&Channel Settings..."
+msgstr "កំពុង​កំណត់​ឆានែល​..."
+
+#: src/viewer/viewcontainer.cpp:1658
+msgid "Rename Tab"
+msgstr "ប្ដូរ​ឈ្មោះផ្ទាំង​"
+
+#: src/viewer/viewcontainer.cpp:1659
+#, fuzzy
+msgid "Enter new tab name:"
+msgstr "បញ្ចូលឈ្មោះ​របស់​ផ្ទាំង​ថ្មី​ ៖"
+
+#: src/viewer/viewcontainer.cpp:1728
+#, kde-format
+msgctxt "Default encoding"
+msgid "Default ( %1 )"
+msgstr "លំនាំដើម​ ( %1 )"
+
+#: src/viewer/viewcontainer.cpp:1763
+#, fuzzy
+msgid "&Rename Tab..."
+msgstr "ប្តូរ​ឈ្មោះ​ផ្ទាំង​..."
+
+#: src/viewer/viewcontainer.cpp:1919
+#, fuzzy
+msgid "You can only search in text fields."
+msgstr "អ្នក​អាច​ស្វែង​រក​នៅក្នុង​វាល​អត្ថបទ​តែប៉ុណ្ណោះ ។"
+
+#: src/viewer/viewcontainer.cpp:1920
+#, fuzzy
+msgid "Find Text Information"
+msgstr "ស្វែង​រក​ព័ត៌មាន​អត្ថបទ​"
+
+#: src/viewer/viewcontainer.cpp:2117
+#, fuzzy, kde-format
+msgid "Logfile of %1"
+msgstr "ឯកសារ​កំណត់ហេតុរបស់​ %1"
+
+#: src/viewer/viewcontainer.cpp:2489
+#, fuzzy
+msgid ""
+"To know which server to display the channel list for, the list can only be "
+"opened from a query, channel or status window."
+msgstr ""
+"ដឹង​ម៉ាស៊ីន​បម្រើ​ណាមួយ​​ត្រូវ​បង្ហាញ​បញ្ជី​ឆានែល​សម្រាប់​ បញ្ជី​​អាច​ត្រូវ​បាន​បើក​ចេញ​ពីសំណួរ​ ឆានែល​ ឬ​បង្អួច​ស្ថាន​ភាព​​"
+" ។"
+
+#: src/viewer/viewcontainer.cpp:2519
+#, fuzzy
+msgid ""
+"Using this function may result in a lot of network traffic. If your "
+"connection is not fast enough, it is possible that your client will be "
+"disconnected by the server."
+msgstr ""
+"ការ​ប្រើ​មុខងារ​នេះ​អាចមាន​លទ្ធផល​នៅក្នុងចរាចរ​របស់​បណ្តាញ​ជាច្រើន​ ។ ប្រសិន​បើ​ ការតភ្ជាប់​របស់​អ្នក​"
+"មិនលឿន​គ្រប់​គ្រាន់​ វា​អាច​ធ្វើ​ទៅ​បានដែល​​ម៉ាស៊ីន​ភ្ញៀវរបស់​អ្នកនឹង​ត្រូវ​បានផ្តាច់​ដោយ​ម៉ាស៊ីន​បម្រើ​ ។"
+
+#: src/viewer/viewcontainer.cpp:2523
+#, fuzzy
+msgid "Channel List Warning"
+msgstr "ការ​ព្រមាន​បញ្ជី​ឆានែល​"
 
 #: src/viewer/irccontextmenus.cpp:111
 #, fuzzy
@@ -5350,375 +5710,15 @@ msgid "Delete Association"
 msgid_plural "Delete Associations"
 msgstr[0] "លុប​ការ​តភ្ជាប់​"
 
-#: src/viewer/ircinput.cpp:59
-#, fuzzy
-msgid ""
-"<qt><p>The input line is where you type messages to be sent the channel, "
-"query, or server.  A message sent to a channel is seen by everyone on the "
-"channel, whereas a message in a query is sent only to the person in the "
-"query with you.</p><p>To automatically complete the nickname you began "
-"typing, press Tab. If you have not begun typing, the last successfully "
-"completed nickname will be used.</p><p>You can also send special commands:</"
-"p><table><tr><th>/me <i>action</i></th><td>shows up as an action in the "
-"channel or query.  For example:  <em>/me sings a song</em> will show up in "
-"the channel as 'Nick sings a song'.</td></tr><tr><th>/whois <i>nickname</i></"
-"th><td>shows information about this person, including what channels they are "
-"in.</td></tr></table><p>For more commands, see the Konversation Handbook.</"
-"p><p>A message cannot contain multiple lines.</p></qt>"
-msgstr ""
-"<qt><p>ជួរ​បញ្ចូលជាកន្លែង​​ដែល​អ្នកត្រូវ​វាយ​ឲ្យ​ផ្ញើ​ទៅឆានែល​ សំណួរ​ ឬ​ម៉ាស៊ីន​បម្រើ​ ។  សារ​បាន​ផ្ញើ​ទៅកាន់​"
-"ឆានែល​ត្រូវបាន​មើល​ដោយ​អ្នក​គ្រប់​គ្នា​លើ​ឆានែល​ ចំណែក​ឯ សារ​នៅក្នុ​ងសំណួរត្រូវ​បាន​ផ្ញើ​ទៅកាន់​​មនុស្ស​ក្នុង​សំណួរ​"
-"ជាមួយ​អ្នក​តែ​ប៉ុណ្ណោះ​ ។ </p><p>​បំពេញ​សម្មតិនាមដោយ​ស្វ័យ​ប្រវត្តិ​​ដែល​អ្នកបាន​​ចាប់​ផ្តើម​វាយ​ ចុច​ថេប​ ។ប្រសិន​"
-"បើ អ្នក​មិន​បាន​​ចាប់​ផ្តើម​វាយសម្មតិនាម​ដែល​បានបញ្ចប់​ទាំង​ស្រុង​ដោយ​ជោគជ័យ​ចុង​ក្រោយ​ នឹងត្រូវ​បាន​ប្រើ​ ។</"
-"p><p>អ្នក​អាច​ផ្ញើ​ពាក្យ​បញ្ជា​ពិសេសផងដែរ ៖</p><table><tr><th>/me​ <i>សកម្មភាព​</i></"
-"th><td>បង្ហាញ​​ជា​សកម្ម​ភាព​ក្នុង​ឆានែល​ ឬ​សំណួរ​ ។ ឧទាហរណ៍​ ៖  <em>/me sings  a song </em> នឹង​"
-"បង្ហាញ​លើ​ឆានែល​ជា​ 'ចម្រៀង​សម្មតិនាម'​ ។</td></tr><tr><th>/whois <i>សម្មតិនាម​​</i></"
-"th><td>បង្ហាញ​ព័ត៌មាន​អំពី​មនុស្សនេះ រួមបញ្ជូល​ឆានែល​ដែល​ពួក​គេ​មាន​ក្នុង​ ។ </td></tr></"
-"table><p>សម្រាប់​ពាក្យ​បញ្ជា​បន្ថែម​ មើល​សៀវភៅ​ដៃ​របស់​ Konversation ។</p><p>សារមិន​អាចមាន​ជួរ​"
-"ច្រើន​ឡើយ ។</p></qt>"
-
-#: src/viewer/ircinput.cpp:501
-#, kde-format
-msgid "1 byte"
-msgid_plural "%1 bytes"
-msgstr[0] " %1 បៃ"
-
-#: src/viewer/ircinput.cpp:502
-#, fuzzy, kde-format
-msgid "1 line"
-msgid_plural "%1 lines"
-msgstr[0] " %1 បន្ទាត់​"
-
-#: src/viewer/ircinput.cpp:508
-#, fuzzy, kde-format
-msgctxt ""
-"%1 is, for instance, '200 bytes'.  %2 is, for instance, '7 lines'.  Both are "
-"localised (see the two previous messages)."
-msgid ""
-"<qt>You are attempting to paste a large portion of text (%1 or %2) into the "
-"chat. This can cause connection resets or flood kills. Do you really want to "
-"continue?</qt>"
-msgstr ""
-"<qt>អ្នក​កំពុង​តែប៉ុនប៉ង​​​ទៅ​​បិទភ្ជាប់ចំណែក​របស់​អត្ថបទ​​ (%1 ឬ %2) នៅក្នុង​ការ​ជជែកកំសាន្ត ។ វា​"
-"អាចជាមូលហេតុ​ការ​កំណត់​ការ​តភ្ជាប់​ឡើងវិញ​ ឬ​ បញ្ចប់​​ ។ តើ​អ្នក​ពិត​ជាចង់​បន្ត ឬ​ ?</qt>"
-
-#: src/viewer/ircinput.cpp:511
-#, fuzzy
-msgid "Large Paste Warning"
-msgstr "បិទភ្ជាប់​ការ​ព្រមាន​ទូលាយ​"
-
-#: src/viewer/ircinput.cpp:512
-msgid "Paste"
-msgstr "បិទ​ភ្ជាប់​"
-
-#. i18n: file: src/irc/servergroupdialogui.ui:71
-#. i18n: ectx: property (text), widget (KPushButton, m_editIdentityButton)
-#. i18n: file: src/irc/serverlistdialogui.ui:162
-#. i18n: ectx: property (text), widget (QPushButton, m_editButton)
-#: src/viewer/ircinput.cpp:513 rc.cpp:1513 rc.cpp:1585
-msgid "&Edit..."
-msgstr "កែសម្រួល​​..."
-
-#: src/viewer/osd.cpp:338
-#, fuzzy
-msgid "OSD Preview - drag to reposition"
-msgstr "មើល​​ OSD ជាមុន​ - អូស​ទៅឃ្លាំង​"
-
-#: src/viewer/pasteeditor.cpp:29
-#, fuzzy
-msgid "Edit Multiline Paste"
-msgstr "កែ​សម្រួល​បិទ​ភ្ជាប់ជួរ​ច្រើន"
-
-#: src/viewer/pasteeditor.cpp:32
-#, fuzzy
-#| msgid "Sending"
-msgid "&Send"
-msgstr "ការ​ផ្ញើ"
-
-#: src/viewer/rawlog.cpp:25 src/viewer/viewcontainer.cpp:2254
-#, fuzzy
-msgid "Raw Log"
-msgstr "កំណត់​ហេតុ​ដើម​"
-
-#: src/viewer/statuspanel.cpp:230
-#, fuzzy, kde-format
-msgid ""
-"Do you really want to close '%1'?\n"
-"\n"
-" All associated tabs will be closed as well."
-msgstr ""
-"តើ​អ្នក​ពិត​ជាចង់​បិទ '%1' ឬ ?\n"
-"\n"
-" គ្រប់​ផ្ទាំង​​ដែល​បាន​ភ្ជាប់​នឹង​ត្រូវ​បាន​បិទដូច​គ្នា​ ។"
-
-#: src/viewer/statuspanel.cpp:231
-msgid "Close Tab"
-msgstr "បិទ​ផ្ទាំង​"
-
-#: src/viewer/statuspanel.cpp:240
-#, fuzzy, kde-format
-msgid ""
-"Do you want to disconnect from '%1'?\n"
-"\n"
-" All associated tabs will be closed as well."
-msgstr ""
-"តើ​អ្នក​ពិត​ជា​ចង់ផ្តាច់​ចេញ​ពី​​ '%1' ឬ ?\n"
-"\n"
-" គ្រប់​ផ្ទាំង​ដែល​បាន​ភ្ជាប់​នឹង​ត្រូ​វ​បាន​បិទ​ដូច​គ្នា​ ។"
-
-#: src/viewer/statuspanel.cpp:241
-msgid "Disconnect From Server"
-msgstr "ផ្តាច់​ចេញ​ពី​ម៉ាស៊ីន​បម្រើ​"
-
-#: src/viewer/statuspanel.cpp:242
-msgid "Disconnect"
-msgstr "ផ្តាច់​"
-
-#: src/viewer/topiclabel.cpp:263 src/viewer/ircview.cpp:2026
-#, fuzzy, kde-format
-msgid "Join the channel %1"
-msgstr "ត​ឆានែល %1"
-
-#: src/viewer/trayiconkstatusnotifieritem.cpp:24
-#: src/viewer/trayiconksystemtray.cpp:34
-#, fuzzy
-msgid "Konversation - IRC Client"
-msgstr "Konversation - ម៉ាស៊ីន​ភ្ញៀវ​របស់​ IRC "
-
-#: src/viewer/chatwindow.cpp:438
-#, fuzzy, kde-format
-msgid ""
-"\n"
-"*** Logfile started\n"
-"*** on %1\n"
-"\n"
-msgstr ""
-"\n"
-"*** បានចាប់​ផ្តើម​ឯកសារកំណត់​ហេតុ​​\n"
-"*** លើ​ %1\n"
-"\n"
-
-#: src/viewer/logfilereader.cpp:46
-msgid "Save As..."
-msgstr "រក្សាទុកជា​..."
-
-#: src/viewer/logfilereader.cpp:47
-msgid "Reload"
-msgstr "ផ្ទុក​ឡើង​វិញ"
-
-#: src/viewer/logfilereader.cpp:48 src/viewer/logfilereader.cpp:145
-#, fuzzy
-msgid "Clear Logfile"
-msgstr "ជម្រះ​ឯកសារ​កំណត់​ហេតុ​"
-
-#: src/viewer/logfilereader.cpp:50
-#, fuzzy
-msgid "Show last:"
-msgstr "បង្ហាញ​ចុង​ក្រោយ​ ៖"
-
-#: src/viewer/logfilereader.cpp:56
-#, fuzzy
-msgid ""
-"Use this box to set the maximum size of the log file. This setting does not "
-"take effect until you restart Konversation. Each log file may have a "
-"separate setting."
-msgstr ""
-"ប្រើ​ប្រអប់​នេះ ​ទៅកំណត់​ទំហំអតិបរមា​របស់​ឯកសារ​កំណត់​ហេតុ​ ។​ ការ​កំណត់​នេះមិន​មាន​ការ​ប៉ះពាល់​រហូតដល់​អ្នក​​​ចាប់​"
-"ផ្តើម​  Konversation ឡើងវិញ​ ។ ឯកសារ​កំណត់​ហេតុ​នីមួយ​ៗ​អាច​មាន​ការ​កំណត់បំបែក​ ។"
-
-#: src/viewer/logfilereader.cpp:58
-msgid " KB"
-msgstr "គីឡូបៃ​"
-
-#: src/viewer/logfilereader.cpp:65
-#, fuzzy
-msgid ""
-"The messages in the log file are displayed here. The oldest messages are at "
-"the top and the most recent are at the bottom."
-msgstr "សារ​នៅក្នុង​ឯកសារ​កំណត់​ហេតុ​ត្រូង​បាន​បង្ហាញ​នៅទីនេះ​ ។ សារចាស់​បំផុត​នៅ​កំពូល និងថ្មី​បំផុតនៅ​បាត​ ។"
-
-#: src/viewer/logfilereader.cpp:144
-msgid ""
-"Do you really want to permanently discard all log information of this file?"
-msgstr "តើ​អ្នក​ពិត​ជាចង់​បោះចោលពត៌មាន​កំណត់​ហេតុទាំង​អស់​​របស់​ឯកសារ​នេះជានិច្ច​​ ឬ ?"
-
-#: src/viewer/logfilereader.cpp:158
-#, fuzzy
-msgid ""
-"Note: By saving the logfile you will save all data in the file, not only the "
-"part you can see in this viewer."
-msgstr ""
-"សម្គាល់​ ៖ដោយ​ការ​រក្សាទុក​ឯកសារកំណត់​ហេតុ​ អ្នក​នឹងរក្សាទុក​ទិន្នន័យ​ទាំងអស់​ក្នុង​ឯកសារ​ មិន​មែន​ជា​ចំណែក​"
-"តែប៉ុណ្ណោះ​ទេ​​  អ្នក​អាច​មើល​ក្នុ​ងកម្មវិធី​មើល​នេះ​បាន​ ៖"
-
-#: src/viewer/logfilereader.cpp:159
-msgid "Save Logfile"
-msgstr "រក្សាទុក​ឯកសារ​កំណត់​ហេតុ​"
-
-#: src/viewer/logfilereader.cpp:165
-#, fuzzy
-msgid "Choose Destination Folder"
-msgstr "ជ្រើស​ថតទិស​ដៅ​"
-
-#: src/viewer/searchbar.cpp:64
-#, fuzzy
-msgid "Find Forward"
-msgstr "ស្វែង​រក​ទៅមុខ​"
-
-#: src/viewer/searchbar.cpp:67
-#, fuzzy
-msgid "Match Case"
-msgstr "ករណី​ដំណូច"
-
-#: src/viewer/searchbar.cpp:70
-#, fuzzy
-msgid "Whole Words Only"
-msgstr "ពាក្យ​ទាំង​អស់​តែ​ប៉ុណ្ណោះ"
-
-#: src/viewer/searchbar.cpp:73
-#, fuzzy
-msgid "From Cursor"
-msgstr "ពី​ទស្សន៍​ទ្រនិច"
-
 #: src/viewer/ircview.cpp:2017
 #, kde-format
 msgid "Open a query with %1"
 msgstr "បើក​សំណួរ​ជាមួយ​ %1"
 
-#: src/viewer/insertchardialog.cpp:29
-#, fuzzy
-msgid "Insert Character"
-msgstr "បញ្ចូល​តួអក្សរ​"
-
-#: src/viewer/insertchardialog.cpp:30
-msgid "&Insert"
-msgstr "បញ្ចូល​"
-
-#: src/viewer/insertchardialog.cpp:30
-#, fuzzy
-msgid "Insert a character"
-msgstr "បញ្ចូល​តួអក្សរមួយ​"
-
-#: src/viewer/viewcontainer.cpp:221 src/mainwindow.cpp:290
-#, fuzzy
-msgid "Move Tab Up"
-msgstr "ផ្លាស់​ទី​​ផ្ទាំងទៅ​​លើ​"
-
-#: src/viewer/viewcontainer.cpp:229 src/mainwindow.cpp:301
-#, fuzzy
-msgid "Move Tab Down"
-msgstr "ផ្លាស់​ទី​​ផ្ទាំងចុះ​​ក្រោម​"
-
-#: src/viewer/viewcontainer.cpp:322 src/mainwindow.cpp:321
-#: src/mainwindow.cpp:333
-#, fuzzy
-msgid "Move Tab Left"
-msgstr "ផ្លាស់​ទី​ផ្ទាំង​ទៅ​ឆ្វេង​"
-
-#: src/viewer/viewcontainer.cpp:330 src/mainwindow.cpp:312
-#: src/mainwindow.cpp:342
-#, fuzzy
-msgid "Move Tab Right"
-msgstr "ផ្លាស់​ទី​​ផ្ទាំង​ទៅស្តាំ"
-
-#: src/viewer/viewcontainer.cpp:558
-msgid "Find Text..."
-msgstr "ស្វែង​រក​អត្ថបទ​..."
-
-#: src/viewer/viewcontainer.cpp:560
-#, fuzzy
-msgid "Search for text in the current tab"
-msgstr "ស្វែង​រក​សម្រាប់​អត្ថបទ​ក្នុង​ផ្ទាំង​បច្ចុប្បន្ន​"
-
-#: src/viewer/viewcontainer.cpp:578
+#: src/viewer/ircview.cpp:2026 src/viewer/topiclabel.cpp:301
 #, fuzzy, kde-format
-msgid "Channel &List for %1"
-msgstr "ឆានែល​ និង​បញ្ជី​សម្រាប់​ %1"
-
-#: src/viewer/viewcontainer.cpp:584 src/mainwindow.cpp:203
-#, fuzzy
-msgid "Channel &List"
-msgstr "បញ្ជី និង​ឆានែល"
-
-#: src/viewer/viewcontainer.cpp:593 src/mainwindow.cpp:186
-#: src/mainwindow.cpp:770
-#, fuzzy
-msgid "&Open Logfile"
-msgstr "បើក​ឯកសារ​កំណត់ហេតុ"
-
-#: src/viewer/viewcontainer.cpp:598
-#, fuzzy, kde-format
-msgid "&Open Logfile for %1"
-msgstr "បើកឯកសារ​កំណត់ហេតុសម្រាប់​ %1"
-
-#: src/viewer/viewcontainer.cpp:609
-#, fuzzy, kde-format
-msgid "&Channel Settings for %1..."
-msgstr "កំពុង​កំណត់​ឆានែល​សម្រាប់​ %1..."
-
-#: src/viewer/viewcontainer.cpp:614 src/mainwindow.cpp:195
-#, fuzzy
-msgid "&Channel Settings..."
-msgstr "កំពុង​កំណត់​ឆានែល​..."
-
-#: src/viewer/viewcontainer.cpp:1658
-msgid "Rename Tab"
-msgstr "ប្ដូរ​ឈ្មោះផ្ទាំង​"
-
-#: src/viewer/viewcontainer.cpp:1659
-#, fuzzy
-msgid "Enter new tab name:"
-msgstr "បញ្ចូលឈ្មោះ​របស់​ផ្ទាំង​ថ្មី​ ៖"
-
-#: src/viewer/viewcontainer.cpp:1728
-#, kde-format
-msgctxt "Default encoding"
-msgid "Default ( %1 )"
-msgstr "លំនាំដើម​ ( %1 )"
-
-#: src/viewer/viewcontainer.cpp:1763
-#, fuzzy
-msgid "&Rename Tab..."
-msgstr "ប្តូរ​ឈ្មោះ​ផ្ទាំង​..."
-
-#: src/viewer/viewcontainer.cpp:1919
-#, fuzzy
-msgid "You can only search in text fields."
-msgstr "អ្នក​អាច​ស្វែង​រក​នៅក្នុង​វាល​អត្ថបទ​តែប៉ុណ្ណោះ ។"
-
-#: src/viewer/viewcontainer.cpp:1920
-#, fuzzy
-msgid "Find Text Information"
-msgstr "ស្វែង​រក​ព័ត៌មាន​អត្ថបទ​"
-
-#: src/viewer/viewcontainer.cpp:2117
-#, fuzzy, kde-format
-msgid "Logfile of %1"
-msgstr "ឯកសារ​កំណត់ហេតុរបស់​ %1"
-
-#: src/viewer/viewcontainer.cpp:2489
-#, fuzzy
-msgid ""
-"To know which server to display the channel list for, the list can only be "
-"opened from a query, channel or status window."
-msgstr ""
-"ដឹង​ម៉ាស៊ីន​បម្រើ​ណាមួយ​​ត្រូវ​បង្ហាញ​បញ្ជី​ឆានែល​សម្រាប់​ បញ្ជី​​អាច​ត្រូវ​បាន​បើក​ចេញ​ពីសំណួរ​ ឆានែល​ ឬ​បង្អួច​ស្ថាន​ភាព​​"
-" ។"
-
-#: src/viewer/viewcontainer.cpp:2519
-#, fuzzy
-msgid ""
-"Using this function may result in a lot of network traffic. If your "
-"connection is not fast enough, it is possible that your client will be "
-"disconnected by the server."
-msgstr ""
-"ការ​ប្រើ​មុខងារ​នេះ​អាចមាន​លទ្ធផល​នៅក្នុងចរាចរ​របស់​បណ្តាញ​ជាច្រើន​ ។ ប្រសិន​បើ​ ការតភ្ជាប់​របស់​អ្នក​"
-"មិនលឿន​គ្រប់​គ្រាន់​ វា​អាច​ធ្វើ​ទៅ​បានដែល​​ម៉ាស៊ីន​ភ្ញៀវរបស់​អ្នកនឹង​ត្រូវ​បានផ្តាច់​ដោយ​ម៉ាស៊ីន​បម្រើ​ ។"
-
-#: src/viewer/viewcontainer.cpp:2523
-#, fuzzy
-msgid "Channel List Warning"
-msgstr "ការ​ព្រមាន​បញ្ជី​ឆានែល​"
+msgid "Join the channel %1"
+msgstr "ត​ឆានែល %1"
 
 #: src/dbus.cpp:144
 #, fuzzy, kde-format
