@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-08 02:34+0100\n"
+"POT-Creation-Date: 2011-01-09 02:33+0100\n"
 "PO-Revision-Date: 2010-11-16 14:03+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -3414,6 +3414,17 @@ msgstr ""
 msgid "Removing: %1"
 msgstr "កំពុង​ចាក់ ៖ %1"
 
+#: core-impl/collections/support/TrashCollectionLocation.cpp:46
+#, fuzzy
+#| msgid "Tracks"
+msgid "Trash"
+msgstr "បទ"
+
+#: core-impl/collections/support/TrashCollectionLocation.cpp:100
+#, fuzzy, kde-format
+msgid "Moving to trash: %1"
+msgstr "កំពុង​ផ្លាស់ទី​ឯកសារ​ទៅ​ធុងសំរាម"
+
 #: core-impl/collections/support/CollectionManager.cpp:162
 msgid ""
 "<p>Amarok could not find any collection plugins. It is possible that Amarok "
@@ -3431,17 +3442,6 @@ msgstr ""
 "prefix=`kde-config --prefix` && su -c \"make install\"<br>$ kbuildsycoca<br>"
 "$ amarok</pre>ព័ត៌មាន​បន្ថែម​គឺ​អាច​រកបាន​នៅក្នុង​ឯកសារ README ។ ចំពោះ​ជំនួយ​បន្ថែម សូម​ចូលរួម "
 "#amarok on irc.freenode.net ។</p>"
-
-#: core-impl/collections/support/TrashCollectionLocation.cpp:46
-#, fuzzy
-#| msgid "Tracks"
-msgid "Trash"
-msgstr "បទ"
-
-#: core-impl/collections/support/TrashCollectionLocation.cpp:100
-#, fuzzy, kde-format
-msgid "Moving to trash: %1"
-msgstr "កំពុង​ផ្លាស់ទី​ឯកសារ​ទៅ​ធុងសំរាម"
 
 #: core-impl/collections/umscollection/handler/UmsHandler.cpp:474
 #, fuzzy
@@ -4861,35 +4861,6 @@ msgstr "រូបភាព​គម្រប"
 msgid "No Artist"
 msgstr "សិល្បករ"
 
-#: covermanager/CoverFetcher.cpp:169
-msgid "Fetching Cover"
-msgstr "ទៅ​ប្រមូលយក​គម្រប"
-
-#: covermanager/CoverFetcher.cpp:191
-#, fuzzy, kde-format
-msgid "There was an error communicating with cover provider: %1"
-msgstr "មាន​កំហុស នៅពេល​ទាក់ទង​ទៅកាន់ Amazon ។"
-
-#: covermanager/CoverFetcher.cpp:379
-#, fuzzy, kde-format
-msgid "Retrieved cover successfully for '%1'."
-msgstr "បាន​ទៅ​យក​គម្រប​ដោយ​ជោគជ័យ"
-
-#: covermanager/CoverFetcher.cpp:390
-#, fuzzy, kde-format
-msgid "Fetching cover for '%1' failed."
-msgstr "កំពុង​ទៅ​ប្រមូល​យក​គម្រប​របស់ %1..."
-
-#: covermanager/CoverFetcher.cpp:403
-#, fuzzy, kde-format
-msgid "Canceled fetching cover for '%1'."
-msgstr "កំពុង​ទៅ​ប្រមូល​យក​គម្រប​របស់ %1..."
-
-#: covermanager/CoverFetcher.cpp:412
-#, fuzzy, kde-format
-msgid "Unable to find a cover for '%1'."
-msgstr "កំពុង​ទៅ​ប្រមូល​យក​គម្រប​របស់ %1..."
-
 #: covermanager/CoverViewDialog.cpp:32 covermanager/CoverViewDialog.cpp:43
 msgid "Cover View"
 msgstr "រូបភាព​គម្រប"
@@ -5067,6 +5038,35 @@ msgstr "ធម្មតា"
 msgctxt "@item::intable"
 msgid "URL"
 msgstr "URL"
+
+#: covermanager/CoverFetcher.cpp:172 covermanager/CoverFetcher.cpp:339
+msgid "Fetching Cover"
+msgstr "ទៅ​ប្រមូលយក​គម្រប"
+
+#: covermanager/CoverFetcher.cpp:194
+#, fuzzy, kde-format
+msgid "There was an error communicating with cover provider: %1"
+msgstr "មាន​កំហុស នៅពេល​ទាក់ទង​ទៅកាន់ Amazon ។"
+
+#: covermanager/CoverFetcher.cpp:408
+#, fuzzy, kde-format
+msgid "Retrieved cover successfully for '%1'."
+msgstr "បាន​ទៅ​យក​គម្រប​ដោយ​ជោគជ័យ"
+
+#: covermanager/CoverFetcher.cpp:419
+#, fuzzy, kde-format
+msgid "Fetching cover for '%1' failed."
+msgstr "កំពុង​ទៅ​ប្រមូល​យក​គម្រប​របស់ %1..."
+
+#: covermanager/CoverFetcher.cpp:432
+#, fuzzy, kde-format
+msgid "Canceled fetching cover for '%1'."
+msgstr "កំពុង​ទៅ​ប្រមូល​យក​គម្រប​របស់ %1..."
+
+#: covermanager/CoverFetcher.cpp:441
+#, fuzzy, kde-format
+msgid "Unable to find a cover for '%1'."
+msgstr "កំពុង​ទៅ​ប្រមូល​យក​គម្រប​របស់ %1..."
 
 #: databaseimporter/amarok14/FastForwardImporterConfig.cpp:39
 msgid "Connection"
@@ -7271,14 +7271,14 @@ msgstr "ខ្លី​ជាង​"
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
 #: playlistgenerator/constraints/PlaylistLength.cpp:208
 #: playlistgenerator/constraints/TagMatch.cpp:447
-#: widgets/MetaQueryWidget.cpp:903 rc.cpp:1506 rc.cpp:1590 rc.cpp:1623
+#: widgets/MetaQueryWidget.cpp:902 rc.cpp:1506 rc.cpp:1590 rc.cpp:1623
 msgid "less than"
 msgstr "តិចជាង"
 
 #: playlistgenerator/constraints/PlaylistLength.cpp:210
 #: playlistgenerator/constraints/PlaylistDuration.cpp:273
 #: playlistgenerator/constraints/TagMatch.cpp:472
-#: widgets/MetaQueryWidget.cpp:922
+#: widgets/MetaQueryWidget.cpp:921
 #, fuzzy
 msgid "unknown comparison"
 msgstr "មិន​ស្គាល់​សិល្បករ"
@@ -7356,7 +7356,7 @@ msgid "\"%1\""
 msgstr ""
 
 #: playlistgenerator/constraints/TagMatch.cpp:443
-#: widgets/MetaQueryWidget.cpp:905
+#: widgets/MetaQueryWidget.cpp:904
 #, fuzzy
 msgctxt "a numerical tag (like year or track number) equals a value"
 msgid "equals"
@@ -7369,7 +7369,7 @@ msgstr "ស្មើ​"
 #. i18n: file: playlistgenerator/constraints/TagMatchEditWidget.ui:614
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox_ComparisonRating)
 #: playlistgenerator/constraints/TagMatch.cpp:445
-#: widgets/MetaQueryWidget.cpp:907 rc.cpp:1512 rc.cpp:1596 rc.cpp:1629
+#: widgets/MetaQueryWidget.cpp:906 rc.cpp:1512 rc.cpp:1596 rc.cpp:1629
 #, fuzzy
 msgid "greater than"
 msgstr "ច្រើន​​ជាង"
@@ -7408,7 +7408,7 @@ msgid "equals"
 msgstr "ស្មើ​"
 
 #: playlistgenerator/constraints/TagMatch.cpp:463
-#: widgets/MetaQueryWidget.cpp:915
+#: widgets/MetaQueryWidget.cpp:914
 #, fuzzy
 #| msgid "starts with"
 msgctxt ""
@@ -7417,7 +7417,7 @@ msgid "starts with"
 msgstr "ចាប់ផ្ដើម​ដោយ"
 
 #: playlistgenerator/constraints/TagMatch.cpp:465
-#: widgets/MetaQueryWidget.cpp:917
+#: widgets/MetaQueryWidget.cpp:916
 #, fuzzy
 #| msgid "ends with"
 msgctxt "an alphabetical tag (like title or artist name) ends with some string"
@@ -7425,7 +7425,7 @@ msgid "ends with"
 msgstr "បញ្ចប់​ដោយ"
 
 #: playlistgenerator/constraints/TagMatch.cpp:467
-#: widgets/MetaQueryWidget.cpp:911
+#: widgets/MetaQueryWidget.cpp:910
 #, fuzzy
 #| msgid "contains"
 msgctxt "an alphabetical tag (like title or artist name) contains some string"
@@ -8744,114 +8744,114 @@ msgstr "ចំនួន​ពេលវេលា​សរុប​ដែល​ក
 msgid "The amount of time remaining in current song"
 msgstr "ចំនួន​ពេល​សរុប​ដែល​នៅ​សល់​ក្នុង​បទ​បច្ចុប្បន្ន"
 
-#: widgets/MetaQueryWidget.cpp:58 widgets/MetaQueryWidget.cpp:125
+#: widgets/MetaQueryWidget.cpp:124
 #, fuzzy
 #| msgid "Seconds"
 msgid "second"
 msgid_plural "seconds"
 msgstr[0] "វិនាទី"
 
-#: widgets/MetaQueryWidget.cpp:59 widgets/MetaQueryWidget.cpp:126
+#: widgets/MetaQueryWidget.cpp:125
 #, fuzzy
 msgid "minute"
 msgid_plural "minutes"
 msgstr[0] "នាទី"
 
-#: widgets/MetaQueryWidget.cpp:60 widgets/MetaQueryWidget.cpp:127
+#: widgets/MetaQueryWidget.cpp:126
 #, fuzzy
 #| msgid "Hours"
 msgid "hour"
 msgid_plural "hours"
 msgstr[0] "ម៉ោង"
 
-#: widgets/MetaQueryWidget.cpp:61 widgets/MetaQueryWidget.cpp:128
+#: widgets/MetaQueryWidget.cpp:127
 #, fuzzy
 #| msgid "days"
 msgid "day"
 msgid_plural "days"
 msgstr[0] "ថ្ងៃ​"
 
-#: widgets/MetaQueryWidget.cpp:62 widgets/MetaQueryWidget.cpp:129
+#: widgets/MetaQueryWidget.cpp:128
 #, fuzzy
 #| msgid "months"
 msgid "month"
 msgid_plural "months"
 msgstr[0] "ខែ​"
 
-#: widgets/MetaQueryWidget.cpp:230
+#: widgets/MetaQueryWidget.cpp:229
 msgid "Simple Search"
 msgstr "ការ​ស្វែងរក​ធម្មតា"
 
-#: widgets/MetaQueryWidget.cpp:446 widgets/SmartPlaylistEditor.cpp:934
+#: widgets/MetaQueryWidget.cpp:445 widgets/SmartPlaylistEditor.cpp:934
 #: widgets/SmartPlaylistEditor.cpp:956 widgets/SmartPlaylistEditor.cpp:984
 #: widgets/SmartPlaylistEditor.cpp:1003
 msgid "and"
 msgstr "និង"
 
-#: widgets/MetaQueryWidget.cpp:555
+#: widgets/MetaQueryWidget.cpp:554
 msgctxt "Unit for data rate kilo bit per seconds"
 msgid "kbps"
 msgstr ""
 
-#: widgets/MetaQueryWidget.cpp:557
+#: widgets/MetaQueryWidget.cpp:556
 #, fuzzy
 #| msgid "Hz"
 msgctxt "Unit for sample rate"
 msgid "Hz"
 msgstr "​Hz"
 
-#: widgets/MetaQueryWidget.cpp:559
+#: widgets/MetaQueryWidget.cpp:558
 msgctxt "Unit for file size in mega byte"
 msgid "MiB"
 msgstr ""
 
-#: widgets/MetaQueryWidget.cpp:883
+#: widgets/MetaQueryWidget.cpp:882
 #, fuzzy
 msgctxt "The date lies before the given fixed date"
 msgid "before"
 msgstr "មុន"
 
-#: widgets/MetaQueryWidget.cpp:885
+#: widgets/MetaQueryWidget.cpp:884
 #, fuzzy
 #| msgid "on"
 msgctxt "The date is the same as the given fixed date"
 msgid "on"
 msgstr "លើ​"
 
-#: widgets/MetaQueryWidget.cpp:887
+#: widgets/MetaQueryWidget.cpp:886
 #, fuzzy
 msgctxt "The date is after the given fixed date"
 msgid "after"
 msgstr "បន្ទាប់​ពី"
 
-#: widgets/MetaQueryWidget.cpp:889
+#: widgets/MetaQueryWidget.cpp:888
 #, fuzzy
 #| msgid "Between"
 msgctxt "The date is between the given fixed dates"
 msgid "between"
 msgstr "ចន្លោះ"
 
-#: widgets/MetaQueryWidget.cpp:891
+#: widgets/MetaQueryWidget.cpp:890
 #, fuzzy
 #| msgid "Smaller Than"
 msgctxt "The date lies before the given time interval"
 msgid "older than"
 msgstr "តូច​ជាង"
 
-#: widgets/MetaQueryWidget.cpp:893
+#: widgets/MetaQueryWidget.cpp:892
 #, fuzzy
 msgctxt "The date lies after the given time interval"
 msgid "within"
 msgstr "ដោយ"
 
-#: widgets/MetaQueryWidget.cpp:909
+#: widgets/MetaQueryWidget.cpp:908
 #, fuzzy
 #| msgid "Between"
 msgctxt "a numerical tag (like year or track number) is between two values"
 msgid "between"
 msgstr "ចន្លោះ"
 
-#: widgets/MetaQueryWidget.cpp:913
+#: widgets/MetaQueryWidget.cpp:912
 #, fuzzy
 msgctxt "an alphabetical tag (like title or artist name) equals some string"
 msgid "matches"
