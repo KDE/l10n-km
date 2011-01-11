@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-08 02:25+0100\n"
+"POT-Creation-Date: 2011-01-11 02:42+0100\n"
 "PO-Revision-Date: 2010-12-06 09:51+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -16,9 +16,10 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: kio/kimageio.cpp:43
-msgid "All Pictures"
-msgstr "រូបភាព​ទាំងអស់"
+#: kio/connection.cpp:211
+#, kde-format
+msgid "Unable to create io-slave: %1"
+msgstr "មិន​អាច​បង្កើត io-slave ៖ %1"
 
 #: kio/kscan.cpp:50
 msgid "Acquire Image"
@@ -27,23 +28,6 @@ msgstr "យករូបភាព"
 #: kio/kscan.cpp:99
 msgid "OCR Image"
 msgstr "រូបភាព OCR"
-
-#: kio/kfileitemdelegate.cpp:236
-#, kde-format
-msgctxt "Items in a folder"
-msgid "1 item"
-msgid_plural "%1 items"
-msgstr[0] "ធាតុ %1"
-
-#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
-msgctxt "@info mimetype"
-msgid "Unknown"
-msgstr "មិន​ស្គាល់"
-
-#: kio/connection.cpp:211
-#, kde-format
-msgid "Unable to create io-slave: %1"
-msgstr "មិន​អាច​បង្កើត io-slave ៖ %1"
 
 #: kio/global.cpp:89
 #, kde-format
@@ -951,8 +935,8 @@ msgstr "មិនមាន​ឯកសារ ឬ​ថត​ឡើយ"
 msgid "The specified file or folder <strong>%1</strong> does not exist."
 msgstr "មិនមាន​ឯកសារ ឬ​ថត <strong>%1</strong> ដែល​បាន​បញ្ជាក់​ឡើយ ។"
 
-#: kio/global.cpp:666 kio/job.cpp:2110 kio/copyjob.cpp:1337
-#: kio/copyjob.cpp:1908 kio/paste.cpp:64
+#: kio/global.cpp:666 kio/job.cpp:2071 kio/paste.cpp:64 kio/copyjob.cpp:1337
+#: kio/copyjob.cpp:1908
 msgid "File Already Exists"
 msgstr "មាន​ឯកសារ​រួច​ហើយ"
 
@@ -1798,79 +1782,129 @@ msgstr "ជ្រើស​ឈ្មោះ​ឯកសារ​ផ្សេងឲ
 msgid "Undocumented Error"
 msgstr "កំហុស​ដែល​មិន​បាន​កត់​ត្រា"
 
-#: kio/fileundomanager.cpp:116
-msgid "Creating directory"
-msgstr "បង្កើត​ថត"
+#: kio/renamedialog.cpp:124
+msgid "Appl&y to All"
+msgstr "អនុវត្ត​ទាំងអស់"
 
-#: kio/fileundomanager.cpp:117 kio/job.cpp:171
-msgid "Directory"
-msgstr "ថត"
+#: kio/renamedialog.cpp:125
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"folder conflicts for the remainder of the current job.\n"
+"Unless you press Skip you will still be prompted in case of a conflict with "
+"an existing file in the directory."
+msgstr ""
+"នៅពេល​វា​ត្រូវ​បានគូស​ធីគ ការ​ចុច​ប៊ូតុង​នឹង​ត្រូវ​បានអនុវត្ត​ទៅ​ការ​ប៉ះទង្គិច​ថត​ជា​បន្តបន្ទាប់​ ដើម្បីរំលឹក​អំពី​ការ​"
+"ងារ​បច្ចុប្បន្ន ។\n"
+"លុះត្រា​តែ​អ្នកចុច​រំលង អ្នកនឹង​នៅ​តែ​ត្រូវ​បាន​សួរ​ ក្នុងករណី​ដែល​ប៉ះទង្គិច​ជា​មួយ​នឹង​ឯកសារ​ដែល​មាន​​នៅ​ក្នុង ។"
 
-#: kio/fileundomanager.cpp:119
-msgid "Moving"
-msgstr "ផ្លាស់ទី"
+#: kio/renamedialog.cpp:126
+msgid ""
+"When this is checked the button pressed will be applied to all subsequent "
+"conflicts for the remainder of the current job."
+msgstr ""
+"នៅពេល​ដែល​វា​ត្រូវ​បានគូស​ធីក ការ​ចុច​ប៊ូតុង​នឹង​ត្រូវ​បាន​អនុវត្ត​ទៅលើ​ការ​ប៉ះទង្គិច​​ជា​លំដាប់​ទាំងអស់​ ដើម្បី​រំលឹក​"
+"អំពីការងារ​បច្ចុប្បន្ន ។"
 
-#: kio/fileundomanager.cpp:120 kio/job.cpp:157 kio/job.cpp:164 kio/job.cpp:189
-msgctxt "The source of a file operation"
+#: kio/renamedialog.cpp:131
+msgid "&Rename"
+msgstr "ប្តូរឈ្មោះ "
+
+#: kio/renamedialog.cpp:133
+msgid "Suggest New &Name"
+msgstr "ស្នើ​ឈ្មោះ​ថ្មី "
+
+#: kio/renamedialog.cpp:139
+msgid "&Skip"
+msgstr "រំលង "
+
+#: kio/renamedialog.cpp:140
+msgid "Do not copy or move this folder, skip to the next item instead"
+msgstr "កុំ​ចម្លង​ ឬ​​ផ្លាស់ទី​ថត​នេះ រំលង​ទៅ​ធាតុ​បន្ទាប់​ជំនួស​វិញ"
+
+#: kio/renamedialog.cpp:141
+msgid "Do not copy or move this file, skip to the next item instead"
+msgstr "កុំ​ចម្លង​ ឬ​ផ្លាស់ទី​ឯកសារ​នេះ រំលង​ទៅ​ធាតុ​បន្ទាប់ជំនួស​វិញ"
+
+#: kio/renamedialog.cpp:146
+msgctxt "Write files into an existing folder"
+msgid "&Write Into"
+msgstr "សរសេរ​ទៅ​កាន់"
+
+#: kio/renamedialog.cpp:146
+msgid "&Overwrite"
+msgstr "សរសេរ​ជាន់​លើ "
+
+#: kio/renamedialog.cpp:148
+msgid ""
+"Files and folders will be copied into the existing directory, alongside its "
+"existing contents.\n"
+"You will be prompted again in case of a conflict with an existing file in "
+"the directory."
+msgstr ""
+"ឯកសារ​ និង​ថត​នឹង​ត្រូវ​បាន​ចម្លង​ទៅ​ក្នុងថត​ដែល​មាន​ស្រាប់ រួម​មាតិកា​ដែល​មាន​ស្រាប់ ។\n"
+"អ្នក​នឹង​ត្រូវ​បាន​សួរ​ម្ដង​ទៀត ក្នុងករណី​ដែលមាន​កា​រប៉ះទង្គិច​ជា​មួយ​​​ឯកសារ​ដែល​មាន​ស្រាប់​នៅ​ក្នុង ។"
+
+#: kio/renamedialog.cpp:153
+msgid "&Resume"
+msgstr "ធ្វើ​បន្ត "
+
+#: kio/renamedialog.cpp:162
+#, kde-format
+msgid ""
+"This action would overwrite '%1' with itself.\n"
+"Please enter a new file name:"
+msgstr ""
+"អំពើ​នេះ​នឹង​សរសេរ​ជាន់​លើ '%1' ដោយ​ខ្លួន​វា ។\n"
+"សូម​បញ្ចូល​ឈ្មោះ​ឯកសារ​ថ្មី​មួយ ៖"
+
+#: kio/renamedialog.cpp:166
+msgid "C&ontinue"
+msgstr "បន្ត "
+
+#: kio/renamedialog.cpp:238
+msgid "This action will overwrite the destination."
+msgstr "សកម្មភាព​នឹង​សរសេរ​ជាន់​លើទិសដៅ ។"
+
+#: kio/renamedialog.cpp:240
 msgid "Source"
 msgstr "ប្រភព"
 
-#: kio/fileundomanager.cpp:121 kio/job.cpp:158 kio/job.cpp:165
-msgctxt "The destination of a file operation"
+#: kio/renamedialog.cpp:241
 msgid "Destination"
 msgstr "ទិសដៅ"
 
-#: kio/fileundomanager.cpp:123
-msgid "Deleting"
-msgstr "លុប"
+#: kio/renamedialog.cpp:247
+msgid "Warning, the destination is newer."
+msgstr "ការ​ព្រមាន ទិសដៅ​ថ្មី​ជាង ។"
 
-#: kio/fileundomanager.cpp:124 kio/job.cpp:177 kio/job.cpp:183
-msgid "File"
-msgstr "ឯកសារ"
+#: kio/renamedialog.cpp:278
+#, kde-format
+msgid "An older item named '%1' already exists."
+msgstr "មាន​វត្ថុ​ចាស់មួយ​ឈ្មោះ '%1' រួច​ហើយ ។"
 
-#: kio/fileundomanager.cpp:284
-msgid "Und&o"
-msgstr "មិនធ្វើវិញ"
+#: kio/renamedialog.cpp:280
+#, kde-format
+msgid "A similar file named '%1' already exists."
+msgstr "មាន​ឯកសារ​ស្រដៀងគ្នា​ដែល​មាន​ឈ្មោះ '%1' រួច​ហើយ ។"
 
-#: kio/fileundomanager.cpp:288
-msgid "Und&o: Copy"
-msgstr "មិនធ្វើ​វិញ ៖ ចម្លង"
+#: kio/renamedialog.cpp:282
+#, kde-format
+msgid "A newer item named '%1' already exists."
+msgstr "មាន​វត្ថុ​ថ្មី​ជាង​មួយ​ឈ្មោះ '%1' រួច​ហើយ ។"
 
-#: kio/fileundomanager.cpp:290
-msgid "Und&o: Link"
-msgstr "មិនធ្វើ​វិញ ៖ តំណ"
+#: kio/renamedialog.cpp:293
+msgid "Rename:"
+msgstr "ប្តូរឈ្មោះ ៖"
 
-#: kio/fileundomanager.cpp:292
-msgid "Und&o: Move"
-msgstr "មិនធ្វើ​វិញ ៖ ផ្លាស់ទី"
-
-#: kio/fileundomanager.cpp:294
-msgid "Und&o: Rename"
-msgstr "មិនធ្វើ​វិញ ៖ ប្ដូរ​ឈ្មោះ"
-
-#: kio/fileundomanager.cpp:296
-msgid "Und&o: Trash"
-msgstr "មិន​ធ្វើវិញ ៖ លុប"
-
-#: kio/fileundomanager.cpp:298
-msgid "Und&o: Create Folder"
-msgstr "មិនធ្វើ​វិញ ៖ បង្កើត​ថត"
-
-#: kio/fileundomanager.cpp:764
+#: kio/renamedialog.cpp:422 kio/paste.cpp:242 kio/krun.cpp:1125
+#: kio/kdirlister.cpp:331
 #, kde-format
 msgid ""
-"The file %1 was copied from %2, but since then it has apparently been "
-"modified at %3.\n"
-"Undoing the copy will delete the file, and all modifications will be lost.\n"
-"Are you sure you want to delete %4?"
+"Malformed URL\n"
+"%1"
 msgstr ""
-"ឯកសារ %1 ត្រូវបាន​ចម្លង​ពី %2 ប៉ុន្តែ​ចាប់​ពី​ពេល​នោះមក វា​ត្រូវបាន​កែប្រែ​នៅ %3 យ៉ាង​ច្បាស់ ។\n"
-"ការ​មិនធ្វើ​ការ​ចម្លង​វិញ នឹង​លុប​ឯកសារ ហើយ​ការ​កែប្រែ​ទាំងអស់​នឹង​ត្រូវបាត់ ។\n"
-"តើ​អ្នក​ពិតជា​ចង់​លុប %4 ឬ ?"
-
-#: kio/fileundomanager.cpp:767
-msgid "Undo File Copy Confirmation"
-msgstr "មិនធ្វើ​ការ​អះអាង​ចម្លង​ឯកសារ​ទេ"
+"URL មិន​ត្រឹមត្រូវ\n"
+"%1"
 
 #: kio/kdesktopfileactions.cpp:65
 #, kde-format
@@ -1922,54 +1956,6 @@ msgstr "ច្រានចេញ"
 #: kio/kdesktopfileactions.cpp:221
 msgid "Unmount"
 msgstr "អាន់ម៉ោន"
-
-#: kio/job.cpp:156
-msgctxt "@title job"
-msgid "Moving"
-msgstr "ផ្លាស់ទី"
-
-#: kio/job.cpp:163
-msgctxt "@title job"
-msgid "Copying"
-msgstr "ចម្លង"
-
-#: kio/job.cpp:170
-msgctxt "@title job"
-msgid "Creating directory"
-msgstr "បង្កើត​ថត"
-
-#: kio/job.cpp:176
-msgctxt "@title job"
-msgid "Deleting"
-msgstr "លុប"
-
-#: kio/job.cpp:182
-msgctxt "@title job"
-msgid "Examining"
-msgstr "ការ​ត្រួតពិនិត្យ"
-
-#: kio/job.cpp:188
-msgctxt "@title job"
-msgid "Transferring"
-msgstr "ការ​ផ្ទេរ"
-
-#: kio/job.cpp:194
-msgctxt "@title job"
-msgid "Mounting"
-msgstr "ការ​ម៉ោន"
-
-#: kio/job.cpp:195
-msgid "Device"
-msgstr "ឧបករណ៍"
-
-#: kio/job.cpp:196 kio/job.cpp:202
-msgid "Mountpoint"
-msgstr "ចំណុច​ម៉ោន"
-
-#: kio/job.cpp:201
-msgctxt "@title job"
-msgid "Unmounting"
-msgstr "ការ​អាន់ម៉ោន"
 
 #: kio/slave.cpp:442
 #, kde-format
@@ -2106,38 +2092,147 @@ msgid ""
 msgstr ""
 "វិញ្ញាបនបត្រ SSL កំពុង​ត្រូ​វបាន​បដិសេធ​តាម​ការ​ស្នើ ។ អ្នក​អាច​បិទ​វា​នៅ​ក្នុង​ការ​កំណត់​ប្រព័ន្ធ KDE ។"
 
-#: kio/slavebase.h:266 kio/slavebase.h:286
-msgid "&Yes"
-msgstr "បាទ/ចាស "
+#: kio/kfileitemdelegate.cpp:236
+#, kde-format
+msgctxt "Items in a folder"
+msgid "1 item"
+msgid_plural "%1 items"
+msgstr[0] "ធាតុ %1"
 
-#: kio/slavebase.h:267 kio/slavebase.h:287
-msgid "&No"
-msgstr "ទេ "
+#: kio/kfileitemdelegate.cpp:292 kio/kfileitemdelegate.cpp:296
+msgctxt "@info mimetype"
+msgid "Unknown"
+msgstr "មិន​ស្គាល់"
 
 #: kio/passworddialog.cpp:62
 msgid "Authorization Dialog"
 msgstr "ប្រអប់​អនុញ្ញាត​"
 
-#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
-#: kio/kemailsettings.cpp:261
-msgid "Default"
-msgstr "លំនាំដើម"
+#: kio/job.cpp:125
+msgctxt "@title job"
+msgid "Moving"
+msgstr "ផ្លាស់ទី"
+
+#: kio/job.cpp:126 kio/job.cpp:133 kio/job.cpp:158 kio/fileundomanager.cpp:120
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "ប្រភព"
+
+#: kio/job.cpp:127 kio/job.cpp:134 kio/fileundomanager.cpp:121
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "ទិសដៅ"
+
+#: kio/job.cpp:132
+msgctxt "@title job"
+msgid "Copying"
+msgstr "ចម្លង"
+
+#: kio/job.cpp:139
+msgctxt "@title job"
+msgid "Creating directory"
+msgstr "បង្កើត​ថត"
+
+#: kio/job.cpp:140 kio/fileundomanager.cpp:117
+msgid "Directory"
+msgstr "ថត"
+
+#: kio/job.cpp:145
+msgctxt "@title job"
+msgid "Deleting"
+msgstr "លុប"
+
+#: kio/job.cpp:146 kio/job.cpp:152 kio/fileundomanager.cpp:124
+msgid "File"
+msgstr "ឯកសារ"
+
+#: kio/job.cpp:151
+msgctxt "@title job"
+msgid "Examining"
+msgstr "ការ​ត្រួតពិនិត្យ"
+
+#: kio/job.cpp:157
+msgctxt "@title job"
+msgid "Transferring"
+msgstr "ការ​ផ្ទេរ"
+
+#: kio/job.cpp:163
+msgctxt "@title job"
+msgid "Mounting"
+msgstr "ការ​ម៉ោន"
+
+#: kio/job.cpp:164
+msgid "Device"
+msgstr "ឧបករណ៍"
+
+#: kio/job.cpp:165 kio/job.cpp:171
+msgid "Mountpoint"
+msgstr "ចំណុច​ម៉ោន"
+
+#: kio/job.cpp:170
+msgctxt "@title job"
+msgid "Unmounting"
+msgstr "ការ​អាន់ម៉ោន"
+
+#: kio/fileundomanager.cpp:116
+msgid "Creating directory"
+msgstr "បង្កើត​ថត"
+
+#: kio/fileundomanager.cpp:119
+msgid "Moving"
+msgstr "ផ្លាស់ទី"
+
+#: kio/fileundomanager.cpp:123
+msgid "Deleting"
+msgstr "លុប"
+
+#: kio/fileundomanager.cpp:284
+msgid "Und&o"
+msgstr "មិនធ្វើវិញ"
+
+#: kio/fileundomanager.cpp:288
+msgid "Und&o: Copy"
+msgstr "មិនធ្វើ​វិញ ៖ ចម្លង"
+
+#: kio/fileundomanager.cpp:290
+msgid "Und&o: Link"
+msgstr "មិនធ្វើ​វិញ ៖ តំណ"
+
+#: kio/fileundomanager.cpp:292
+msgid "Und&o: Move"
+msgstr "មិនធ្វើ​វិញ ៖ ផ្លាស់ទី"
+
+#: kio/fileundomanager.cpp:294
+msgid "Und&o: Rename"
+msgstr "មិនធ្វើ​វិញ ៖ ប្ដូរ​ឈ្មោះ"
+
+#: kio/fileundomanager.cpp:296
+msgid "Und&o: Trash"
+msgstr "មិន​ធ្វើវិញ ៖ លុប"
+
+#: kio/fileundomanager.cpp:298
+msgid "Und&o: Create Folder"
+msgstr "មិនធ្វើ​វិញ ៖ បង្កើត​ថត"
+
+#: kio/fileundomanager.cpp:764
+#, kde-format
+msgid ""
+"The file %1 was copied from %2, but since then it has apparently been "
+"modified at %3.\n"
+"Undoing the copy will delete the file, and all modifications will be lost.\n"
+"Are you sure you want to delete %4?"
+msgstr ""
+"ឯកសារ %1 ត្រូវបាន​ចម្លង​ពី %2 ប៉ុន្តែ​ចាប់​ពី​ពេល​នោះមក វា​ត្រូវបាន​កែប្រែ​នៅ %3 យ៉ាង​ច្បាស់ ។\n"
+"ការ​មិនធ្វើ​ការ​ចម្លង​វិញ នឹង​លុប​ឯកសារ ហើយ​ការ​កែប្រែ​ទាំងអស់​នឹង​ត្រូវបាត់ ។\n"
+"តើ​អ្នក​ពិតជា​ចង់​លុប %4 ឬ ?"
+
+#: kio/fileundomanager.cpp:767
+msgid "Undo File Copy Confirmation"
+msgstr "មិនធ្វើ​ការ​អះអាង​ចម្លង​ឯកសារ​ទេ"
 
 #: kio/pastedialog.cpp:55
 msgid "Data format:"
 msgstr "ទ្រង់ទ្រាយ​ទិន្នន័យ ៖"
-
-#: kio/skipdialog.cpp:40
-msgid "Information"
-msgstr "ព័ត៌មាន"
-
-#: kio/skipdialog.cpp:47
-msgid "Skip"
-msgstr "រំលង"
-
-#: kio/skipdialog.cpp:50
-msgid "AutoSkip"
-msgstr "រំលង​ស្វ័យ​ប្រវត្តិ"
 
 #: kio/jobuidelegate.cpp:149 ../kfile/kdiroperator.cpp:812
 #, kde-format
@@ -2157,7 +2252,7 @@ msgid ""
 msgstr ""
 "តើ​អ្នកពិត​ជា​ចង់​លុប​ធាតុ​ទាំង​អស់​ពី​ធុង​សំរាម​ជា​អចិន្ត្រៃយ៍​ដែរ​ឬទេ ? សកម្មភាព​នេះ​មិនអាច​ធ្វើ​វិញ​បានទេ ។"
 
-#: kio/jobuidelegate.cpp:161 ../kfile/kfileplacesview.cpp:638
+#: kio/jobuidelegate.cpp:161 ../kfile/kfileplacesview.cpp:640
 msgctxt "@action:button"
 msgid "Empty Trash"
 msgstr "សម្អាត​ធុងសំរាម"
@@ -2220,6 +2315,80 @@ msgstr "ម្ចាស់ ៖"
 #: kio/kfileitem.cpp:1105
 msgid "Permissions:"
 msgstr "សិទ្ធិ ៖"
+
+#: kio/paste.cpp:48 kio/paste.cpp:131
+msgid "Filename for clipboard content:"
+msgstr "ឈ្មោះ​ឯកសារ​សម្រាប់​មាតិកា​ក្តារ​តម្បៀត​ខ្ទាស់ ៖"
+
+#: kio/paste.cpp:124
+#, kde-format
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: kio/paste.cpp:140
+msgid ""
+"The clipboard has changed since you used 'paste': the chosen data format is "
+"no longer applicable. Please copy again what you wanted to paste."
+msgstr ""
+"ក្ដារ​តម្បៀត​ខ្ទាស់​បាន​ផ្លាស់​ប្ដូរ​តាំង​ពី​អ្នក​បាន​ប្រើ 'បិទភ្ជាប់' ៖ ទ្រង់ទ្រាយ​ទិន្នន័យ​ដែល​បាន​ជ្រើស​មិន​អាច​"
+"អនុវត្ត​បាន​ទៀត​ទេ ។ សូម​ចម្លង​ម្ដង​ទៀត​នូវ​អ្វី​ដែល​អ្នក​ចង់បិទ​ភ្ជាប់ ។"
+
+#: kio/paste.cpp:218 kio/paste.cpp:291
+msgid "The clipboard is empty"
+msgstr "ក្តារ​តម្រៀត​ខ្ទាស់​គឺ​ទទេ"
+
+#: kio/paste.cpp:339
+#, kde-format
+msgid "&Paste File"
+msgid_plural "&Paste %1 Files"
+msgstr[0] "បិទភ្ជាប់​ឯកសារ %1"
+
+#: kio/paste.cpp:341
+#, kde-format
+msgid "&Paste URL"
+msgid_plural "&Paste %1 URLs"
+msgstr[0] "បិទភ្ជាប់ URL %1"
+
+#: kio/paste.cpp:343
+msgid "&Paste Clipboard Contents"
+msgstr "បិទភ្ជាប់​មាតិកា​ក្ដារ​តម្បៀត​ខ្ទាស់ "
+
+#: kio/slavebase.h:266 kio/slavebase.h:286
+msgid "&Yes"
+msgstr "បាទ/ចាស "
+
+#: kio/slavebase.h:267 kio/slavebase.h:287
+msgid "&No"
+msgstr "ទេ "
+
+#: kio/kbuildsycocaprogressdialog.cpp:45
+msgid "Updating System Configuration"
+msgstr "ធ្វើ​បច្ចុប្បន្នភាព​​ការ​កំណត់​រចនាសម្ព័ន្ធ​ប្រព័ន្ធ​"
+
+#: kio/kbuildsycocaprogressdialog.cpp:46
+msgid "Updating system configuration."
+msgstr "ធ្វើ​បច្ចុប្បន្នភាព​​ការ​កំណត់​រចនាសម្ព័ន្ធ​របស់​ប្រព័ន្ធ ។"
+
+#: kio/kstatusbarofflineindicator.cpp:52
+msgid "The desktop is offline"
+msgstr "ផ្ទៃតុ​គឺ​ក្រៅ​បណ្ដាញ"
+
+#: kio/kemailsettings.cpp:251 kio/kemailsettings.cpp:254
+#: kio/kemailsettings.cpp:261
+msgid "Default"
+msgstr "លំនាំដើម"
+
+#: kio/skipdialog.cpp:40
+msgid "Information"
+msgstr "ព័ត៌មាន"
+
+#: kio/skipdialog.cpp:47
+msgid "Skip"
+msgstr "រំលង"
+
+#: kio/skipdialog.cpp:50
+msgid "AutoSkip"
+msgstr "រំលង​ស្វ័យ​ប្រវត្តិ"
 
 #: kio/krun.cpp:126
 #, kde-format
@@ -2289,16 +2458,6 @@ msgstr "ប្រសិន​បើ​មិនជឿជាក់​លើ​ក
 msgid "Unable to make the service %1 executable, aborting execution"
 msgstr "មិនអាច​ធ្វើ​ឲ្យ​សេវា %1 ប្រតិបត្តិបាន​បានទេ បោះបង់បង់​កា​រប្រតិបត្តិ"
 
-#: kio/krun.cpp:1125 kio/renamedialog.cpp:422 kio/paste.cpp:242
-#: kio/kdirlister.cpp:331
-#, kde-format
-msgid ""
-"Malformed URL\n"
-"%1"
-msgstr ""
-"URL មិន​ត្រឹមត្រូវ\n"
-"%1"
-
 #: kio/krun.cpp:1158
 #, kde-format
 msgid ""
@@ -2312,172 +2471,14 @@ msgstr ""
 msgid "Could not find the program '%1'"
 msgstr "មិន​អាច​រក​ឃើញ​កម្មវិធី '%1' ឡើយ"
 
-#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
-msgid "Already Exists as Folder"
-msgstr "មាន​ជា​ថត​រួច​ហើយ"
+#: kio/kimageio.cpp:43
+msgid "All Pictures"
+msgstr "រូបភាព​ទាំងអស់"
 
-#: kio/kbuildsycocaprogressdialog.cpp:45
-msgid "Updating System Configuration"
-msgstr "ធ្វើ​បច្ចុប្បន្នភាព​​ការ​កំណត់​រចនាសម្ព័ន្ធ​ប្រព័ន្ធ​"
-
-#: kio/kbuildsycocaprogressdialog.cpp:46
-msgid "Updating system configuration."
-msgstr "ធ្វើ​បច្ចុប្បន្នភាព​​ការ​កំណត់​រចនាសម្ព័ន្ធ​របស់​ប្រព័ន្ធ ។"
-
-#: kio/kstatusbarofflineindicator.cpp:52
-msgid "The desktop is offline"
-msgstr "ផ្ទៃតុ​គឺ​ក្រៅ​បណ្ដាញ"
-
-#: kio/renamedialog.cpp:124
-msgid "Appl&y to All"
-msgstr "អនុវត្ត​ទាំងអស់"
-
-#: kio/renamedialog.cpp:125
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"folder conflicts for the remainder of the current job.\n"
-"Unless you press Skip you will still be prompted in case of a conflict with "
-"an existing file in the directory."
-msgstr ""
-"នៅពេល​វា​ត្រូវ​បានគូស​ធីគ ការ​ចុច​ប៊ូតុង​នឹង​ត្រូវ​បានអនុវត្ត​ទៅ​ការ​ប៉ះទង្គិច​ថត​ជា​បន្តបន្ទាប់​ ដើម្បីរំលឹក​អំពី​ការ​"
-"ងារ​បច្ចុប្បន្ន ។\n"
-"លុះត្រា​តែ​អ្នកចុច​រំលង អ្នកនឹង​នៅ​តែ​ត្រូវ​បាន​សួរ​ ក្នុងករណី​ដែល​ប៉ះទង្គិច​ជា​មួយ​នឹង​ឯកសារ​ដែល​មាន​​នៅ​ក្នុង ។"
-
-#: kio/renamedialog.cpp:126
-msgid ""
-"When this is checked the button pressed will be applied to all subsequent "
-"conflicts for the remainder of the current job."
-msgstr ""
-"នៅពេល​ដែល​វា​ត្រូវ​បានគូស​ធីក ការ​ចុច​ប៊ូតុង​នឹង​ត្រូវ​បាន​អនុវត្ត​ទៅលើ​ការ​ប៉ះទង្គិច​​ជា​លំដាប់​ទាំងអស់​ ដើម្បី​រំលឹក​"
-"អំពីការងារ​បច្ចុប្បន្ន ។"
-
-#: kio/renamedialog.cpp:131
-msgid "&Rename"
-msgstr "ប្តូរឈ្មោះ "
-
-#: kio/renamedialog.cpp:133
-msgid "Suggest New &Name"
-msgstr "ស្នើ​ឈ្មោះ​ថ្មី "
-
-#: kio/renamedialog.cpp:139
-msgid "&Skip"
-msgstr "រំលង "
-
-#: kio/renamedialog.cpp:140
-msgid "Do not copy or move this folder, skip to the next item instead"
-msgstr "កុំ​ចម្លង​ ឬ​​ផ្លាស់ទី​ថត​នេះ រំលង​ទៅ​ធាតុ​បន្ទាប់​ជំនួស​វិញ"
-
-#: kio/renamedialog.cpp:141
-msgid "Do not copy or move this file, skip to the next item instead"
-msgstr "កុំ​ចម្លង​ ឬ​ផ្លាស់ទី​ឯកសារ​នេះ រំលង​ទៅ​ធាតុ​បន្ទាប់ជំនួស​វិញ"
-
-#: kio/renamedialog.cpp:146
-msgctxt "Write files into an existing folder"
-msgid "&Write Into"
-msgstr "សរសេរ​ទៅ​កាន់"
-
-#: kio/renamedialog.cpp:146
-msgid "&Overwrite"
-msgstr "សរសេរ​ជាន់​លើ "
-
-#: kio/renamedialog.cpp:148
-msgid ""
-"Files and folders will be copied into the existing directory, alongside its "
-"existing contents.\n"
-"You will be prompted again in case of a conflict with an existing file in "
-"the directory."
-msgstr ""
-"ឯកសារ​ និង​ថត​នឹង​ត្រូវ​បាន​ចម្លង​ទៅ​ក្នុងថត​ដែល​មាន​ស្រាប់ រួម​មាតិកា​ដែល​មាន​ស្រាប់ ។\n"
-"អ្នក​នឹង​ត្រូវ​បាន​សួរ​ម្ដង​ទៀត ក្នុងករណី​ដែលមាន​កា​រប៉ះទង្គិច​ជា​មួយ​​​ឯកសារ​ដែល​មាន​ស្រាប់​នៅ​ក្នុង ។"
-
-#: kio/renamedialog.cpp:153
-msgid "&Resume"
-msgstr "ធ្វើ​បន្ត "
-
-#: kio/renamedialog.cpp:162
+#: kio/kdbusservicestarter.cpp:76
 #, kde-format
-msgid ""
-"This action would overwrite '%1' with itself.\n"
-"Please enter a new file name:"
-msgstr ""
-"អំពើ​នេះ​នឹង​សរសេរ​ជាន់​លើ '%1' ដោយ​ខ្លួន​វា ។\n"
-"សូម​បញ្ចូល​ឈ្មោះ​ឯកសារ​ថ្មី​មួយ ៖"
-
-#: kio/renamedialog.cpp:166
-msgid "C&ontinue"
-msgstr "បន្ត "
-
-#: kio/renamedialog.cpp:238
-msgid "This action will overwrite the destination."
-msgstr "សកម្មភាព​នឹង​សរសេរ​ជាន់​លើទិសដៅ ។"
-
-#: kio/renamedialog.cpp:240
-msgid "Source"
-msgstr "ប្រភព"
-
-#: kio/renamedialog.cpp:241
-msgid "Destination"
-msgstr "ទិសដៅ"
-
-#: kio/renamedialog.cpp:247
-msgid "Warning, the destination is newer."
-msgstr "ការ​ព្រមាន ទិសដៅ​ថ្មី​ជាង ។"
-
-#: kio/renamedialog.cpp:278
-#, kde-format
-msgid "An older item named '%1' already exists."
-msgstr "មាន​វត្ថុ​ចាស់មួយ​ឈ្មោះ '%1' រួច​ហើយ ។"
-
-#: kio/renamedialog.cpp:280
-#, kde-format
-msgid "A similar file named '%1' already exists."
-msgstr "មាន​ឯកសារ​ស្រដៀងគ្នា​ដែល​មាន​ឈ្មោះ '%1' រួច​ហើយ ។"
-
-#: kio/renamedialog.cpp:282
-#, kde-format
-msgid "A newer item named '%1' already exists."
-msgstr "មាន​វត្ថុ​ថ្មី​ជាង​មួយ​ឈ្មោះ '%1' រួច​ហើយ ។"
-
-#: kio/renamedialog.cpp:293
-msgid "Rename:"
-msgstr "ប្តូរឈ្មោះ ៖"
-
-#: kio/paste.cpp:48 kio/paste.cpp:131
-msgid "Filename for clipboard content:"
-msgstr "ឈ្មោះ​ឯកសារ​សម្រាប់​មាតិកា​ក្តារ​តម្បៀត​ខ្ទាស់ ៖"
-
-#: kio/paste.cpp:124
-#, kde-format
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: kio/paste.cpp:140
-msgid ""
-"The clipboard has changed since you used 'paste': the chosen data format is "
-"no longer applicable. Please copy again what you wanted to paste."
-msgstr ""
-"ក្ដារ​តម្បៀត​ខ្ទាស់​បាន​ផ្លាស់​ប្ដូរ​តាំង​ពី​អ្នក​បាន​ប្រើ 'បិទភ្ជាប់' ៖ ទ្រង់ទ្រាយ​ទិន្នន័យ​ដែល​បាន​ជ្រើស​មិន​អាច​"
-"អនុវត្ត​បាន​ទៀត​ទេ ។ សូម​ចម្លង​ម្ដង​ទៀត​នូវ​អ្វី​ដែល​អ្នក​ចង់បិទ​ភ្ជាប់ ។"
-
-#: kio/paste.cpp:218 kio/paste.cpp:291
-msgid "The clipboard is empty"
-msgstr "ក្តារ​តម្រៀត​ខ្ទាស់​គឺ​ទទេ"
-
-#: kio/paste.cpp:339
-#, kde-format
-msgid "&Paste File"
-msgid_plural "&Paste %1 Files"
-msgstr[0] "បិទភ្ជាប់​ឯកសារ %1"
-
-#: kio/paste.cpp:341
-#, kde-format
-msgid "&Paste URL"
-msgid_plural "&Paste %1 URLs"
-msgstr[0] "បិទភ្ជាប់ URL %1"
-
-#: kio/paste.cpp:343
-msgid "&Paste Clipboard Contents"
-msgstr "បិទភ្ជាប់​មាតិកា​ក្ដារ​តម្បៀត​ខ្ទាស់ "
+msgid "No service implementing %1"
+msgstr "គ្មាន​ការ​ប្រតិបត្តិ​សេវា %1"
 
 #: kio/kdirlister.cpp:341
 #, kde-format
@@ -2488,10 +2489,9 @@ msgstr ""
 "មិន​អាច​រាយ URL \n"
 "%1"
 
-#: kio/kdbusservicestarter.cpp:76
-#, kde-format
-msgid "No service implementing %1"
-msgstr "គ្មាន​ការ​ប្រតិបត្តិ​សេវា %1"
+#: kio/copyjob.cpp:1337 kio/copyjob.cpp:1908
+msgid "Already Exists as Folder"
+msgstr "មាន​ជា​ថត​រួច​ហើយ"
 
 #: kio/chmodjob.cpp:214
 #, kde-format
@@ -2836,102 +2836,6 @@ msgstr "បើក​ក្នុង​ផ្ទាំងថ្មី"
 msgid "*.adr|Opera Bookmark Files (*.adr)"
 msgstr "*.adr|ឯកសារ​ចំណាំរបស់ Opera (*.adr)"
 
-#: kfile/kopenwithdialog.cpp:269
-msgid "Known Applications"
-msgstr "កម្មវិធី​ដែល​ស្គាល់"
-
-#: kfile/kopenwithdialog.cpp:482
-msgid "Open With"
-msgstr "បើក​ជាមួយ"
-
-#: kfile/kopenwithdialog.cpp:487
-#, kde-format
-msgid ""
-"<qt>Select the program that should be used to open <b>%1</b>. If the program "
-"is not listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>ជ្រើស​កម្មវិធី​ដែល​គួរ​ប្រើ​សម្រាប់​បើក <b>%1</b> ។ ប្រសិនបើ​កម្មវិធី​មិន​មាន​នៅ​ក្នុង​បញ្ជី សូម​បញ្ចូល​"
-"ឈ្មោះ ឬ​ចុច​ប៊ូតុង រកមើល ។</qt>"
-
-#: kfile/kopenwithdialog.cpp:493
-msgid "Choose the name of the program with which to open the selected files."
-msgstr "ជ្រើស​ឈ្មោះ​កម្មវិធី​ដែល​ប្រើ​សម្រាប់​បើក​ឯកសារ​ដែល​បានជ្រើស ។"
-
-#: kfile/kopenwithdialog.cpp:520
-#, kde-format
-msgid "Choose Application for %1"
-msgstr "ជ្រើស​កម្មវិធី​សម្រាប់ %1"
-
-#: kfile/kopenwithdialog.cpp:521
-#, kde-format
-msgid ""
-"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
-"listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>ជ្រើស​កម្មវិធី​សម្រាប់​ប្រភេទ​ឯកសារ ៖ <b>%1</b> ។ ប្រសិន​បើ​កម្មវិធី​មិន​បាន​រាយ​នោះ​ទេ សូម​បញ្ចូល​"
-"ឈ្មោះ ឬ​ចុច​ប៊ូតុង​រកមើល ។</qt>"
-
-#: kfile/kopenwithdialog.cpp:536
-msgid "Choose Application"
-msgstr "ជ្រើស​កម្មវិធី"
-
-#: kfile/kopenwithdialog.cpp:537
-msgid ""
-"<qt>Select a program. If the program is not listed, enter the name or click "
-"the browse button.</qt>"
-msgstr "<qt>ជ្រើស​កម្មវិធី ។ ប្រសិនបើ​កម្មវិធី​នោះ​មិន​បាន​រាយ សូម​បញ្ចូលឈ្មោះ ឬ​ចុច​ប៊ូតុង​រកមើល ។</qt>"
-
-#: kfile/kopenwithdialog.cpp:600
-msgid ""
-"Following the command, you can have several place holders which will be "
-"replaced with the actual values when the actual program is run:\n"
-"%f - a single file name\n"
-"%F - a list of files; use for applications that can open several local files "
-"at once\n"
-"%u - a single URL\n"
-"%U - a list of URLs\n"
-"%d - the directory of the file to open\n"
-"%D - a list of directories\n"
-"%i - the icon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-msgstr ""
-"ដោយ​ធ្វើតាម​ពាក្យ​បញ្ជា អ្នក​អាច​មាន​កន្លែង​ដាក់​ជា​ច្រើន ​ដែល​នឹង​ត្រូវ​បាន​ជំនួស​ដោយ​តម្លៃ​ពិត​ប្រាកដ នៅ​ពេល​"
-"កម្មវិធី​ពិត​ប្រាកដ​មួយ​ត្រូវ​បាន​រត់ ៖\n"
-"%f - ឈ្មោះ​ឯកសារ​តែ​មួយ\n"
-"%F - បញ្ជី​ឯកសារ ដែល​ប្រើ​សម្រាប់​កម្មវិធី​ដែល​អាច​បើក​ឯកសារ​មូលដ្ឋាន​ជា​ច្រើនបាន​នៅ​ពេល​តែ​មួយ ។\n"
-"%u - URL តែ​មួយ\n"
-"%U - បញ្ជី URLs\n"
-"%d - ថត​របស់​ឯកសារ​ដែលត្រូវ​បើក\n"
-"%D - បញ្ជី​ថត\n"
-"%i - រូបតំណាង\n"
-"%m - រូបតំណាង​តូច\n"
-"%c - មតិយោបល់"
-
-#: kfile/kopenwithdialog.cpp:634
-msgid "Run in &terminal"
-msgstr "រត់​ក្នុង​ស្ថានីយ"
-
-#: kfile/kopenwithdialog.cpp:651
-msgid "&Do not close when command exits"
-msgstr "កុំ​បិទ ពេល​ពាក្យ​បញ្ជា​ឈប់ "
-
-#: kfile/kopenwithdialog.cpp:668
-msgid "&Remember application association for this type of file"
-msgstr "ចងចាំ​កម្មវិធី​ដែល​ចងភ្ជាប់​សម្រាប់​ប្រភេទ​ឯកសារ​នេះ "
-
-#: kfile/kopenwithdialog.cpp:806
-#, kde-format
-msgid ""
-"Could not extract executable name from '%1', please type a valid program "
-"name."
-msgstr "មិនអាច​ស្រង់​ឈ្មោះ​ដែល​អាច​ប្រតិបត្តិ​បាន​ពី '%1' បានទេ សូម​វាយ​ឈ្មោះ​កម្មវិធី​ឲ្យ​ត្រឹមត្រូវ ។"
-
-#: kfile/kopenwithdialog.cpp:852
-#, kde-format
-msgid "'%1' not found, please type a valid program name."
-msgstr "រក​មិនឃើញ '%1' សូម​វាយ​ឈ្មោះ​កម្មវិធី​ដែល​ត្រឹមត្រូវ ។"
-
 #: kfile/kfiledialog.cpp:129
 msgid "*|All files"
 msgstr "*|ឯកសារ​ទាំងអស់"
@@ -2956,33 +2860,9 @@ msgstr "បើក"
 msgid "Save As"
 msgstr "រក្សាទុក​ជា"
 
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<កំហុស>"
-
 #: kfile/kurlrequester.cpp:246
 msgid "Open file dialog"
 msgstr "បើក​ប្រអប់​ឯកសារ"
-
-#: kfile/kmetaprops.cpp:57
-msgctxt "@title:window"
-msgid "Configure Shown Data"
-msgstr "កំណត់​រចនាសម្ព័ន្ធ​ទិន្នន័យ​ដែល​បានបង្ហាញ"
-
-#: kfile/kmetaprops.cpp:62
-msgctxt "@label::textbox"
-msgid "Select which data should be shown:"
-msgstr "កំណត់​ទិន្នន័យ​មួយ​គួរ​ត្រូវ​បានបង្ហាញ ៖"
-
-#: kfile/kmetaprops.cpp:120
-msgctxt "@action:button"
-msgid "Configure..."
-msgstr "កំណត់​រចនាសម្ព័ន្ធ..."
-
-#: kfile/kmetaprops.cpp:130
-msgctxt "@title:tab"
-msgid "Information"
-msgstr "ព័ត៌មាន"
 
 #: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
 msgid "Owner"
@@ -3081,9 +2961,33 @@ msgstr "x"
 msgid "Effective"
 msgstr "ប្រសិទ្ធិភាព"
 
+#: kfile/kmetaprops.cpp:57
+msgctxt "@title:window"
+msgid "Configure Shown Data"
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​ទិន្នន័យ​ដែល​បានបង្ហាញ"
+
+#: kfile/kmetaprops.cpp:62
+msgctxt "@label::textbox"
+msgid "Select which data should be shown:"
+msgstr "កំណត់​ទិន្នន័យ​មួយ​គួរ​ត្រូវ​បានបង្ហាញ ៖"
+
+#: kfile/kmetaprops.cpp:120
+msgctxt "@action:button"
+msgid "Configure..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ..."
+
+#: kfile/kmetaprops.cpp:130
+msgctxt "@title:tab"
+msgid "Information"
+msgstr "ព័ត៌មាន"
+
 #: kfile/kdevicelistmodel.cpp:116
 msgid "Device name"
 msgstr "ឈ្មោះ​ឧបករណ៍"
+
+#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
+msgid "Location:"
+msgstr "ទីតាំង ៖"
 
 #: kfile/kfilesharedialog.cpp:59
 msgid "&Share"
@@ -3157,33 +3061,281 @@ msgstr ""
 "កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ព្យាយាម​មិន​ចែក​រំលែក​ថត '%1 ។ សូម​ប្រាកដ​ថាស្គ្រីប Perl "
 "'fileshareset' ត្រូវ​បាន​កំណត់​ជា suid root ។"
 
-#: kfile/kurlrequesterdialog.cpp:59 kfile/kpropertiesdialog.cpp:993
-msgid "Location:"
-msgstr "ទីតាំង ៖"
-
 #: kfile/kpreviewprops.cpp:50
 msgid "P&review"
 msgstr "មើល​ជា​មុន"
 
-#: kfile/kcommentwidget.cpp:65
+#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
 msgctxt "@label"
-msgid "Add Comment..."
-msgstr "បន្ថែម​មតិយោបល់..."
+msgid "Comment"
+msgstr "មតិយោបល់"
 
-#: kfile/kcommentwidget.cpp:71
+#: kfile/knfotranslator.cpp:41
+msgctxt "@label creation date"
+msgid "Created"
+msgstr "បាន​បង្កើត"
+
+#: kfile/knfotranslator.cpp:42
+msgctxt "@label file content size"
+msgid "Size"
+msgstr "ទំហំ"
+
+#: kfile/knfotranslator.cpp:43
+msgctxt "@label file depends from"
+msgid "Depends"
+msgstr "អាស្រ័យ"
+
+#: kfile/knfotranslator.cpp:44
+msgctxt "@label Software used to generate content"
+msgid "Generator"
+msgstr "កម្មវិធី​បង្កើត"
+
+#: kfile/knfotranslator.cpp:45
+msgctxt ""
+"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
+"nie#hasLogicalPart"
+msgid "Has Logical Part"
+msgstr "មាន​ផ្នែក​ឡូជីខល"
+
+#: kfile/knfotranslator.cpp:46
+msgctxt "@label parent directory"
+msgid "Part of"
+msgstr "ផ្នែក​របស់"
+
+#: kfile/knfotranslator.cpp:47
 msgctxt "@label"
-msgid "Change..."
-msgstr "ផ្លាស់ប្ដូរ..."
+msgid "Keyword"
+msgstr "ពាក្យ​គន្លឹះ"
 
-#: kfile/kcommentwidget.cpp:124
-msgctxt "@title:window"
-msgid "Change Comment"
-msgstr "ផ្លាស់ប្ដូរ​មតិយោបល់"
+#: kfile/knfotranslator.cpp:48
+msgctxt "@label modified date of file"
+msgid "Modified"
+msgstr "បាន​កែប្រែ"
 
-#: kfile/kcommentwidget.cpp:125
-msgctxt "@title:window"
-msgid "Add Comment"
-msgstr "បន្ថែម​មតិយោបល់"
+#: kfile/knfotranslator.cpp:49
+msgctxt "@label"
+msgid "MIME Type"
+msgstr "ប្រភេទ MIME"
+
+#: kfile/knfotranslator.cpp:50
+msgctxt "@label"
+msgid "Content"
+msgstr "មាតិកា"
+
+#: kfile/knfotranslator.cpp:51
+msgctxt "@label"
+msgid "Subject"
+msgstr "ប្រធានបទ"
+
+#: kfile/knfotranslator.cpp:52
+msgctxt "@label music title"
+msgid "Title"
+msgstr "ចំណង​ជើង"
+
+#: kfile/knfotranslator.cpp:53
+msgctxt "@label file URL"
+msgid "Location"
+msgstr "ទីតាំង"
+
+#: kfile/knfotranslator.cpp:54
+msgctxt "@label"
+msgid "Creator"
+msgstr "អ្នកបង្កើត"
+
+#: kfile/knfotranslator.cpp:55
+msgctxt "@label"
+msgid "Average Bitrate"
+msgstr "អត្រាប៊ីត​មធ្យម"
+
+#: kfile/knfotranslator.cpp:56
+msgctxt "@label"
+msgid "Channels"
+msgstr "ឆានែល"
+
+#: kfile/knfotranslator.cpp:57
+msgctxt "@label number of characters"
+msgid "Characters"
+msgstr "តួអក្សរ"
+
+#: kfile/knfotranslator.cpp:58
+msgctxt "@label"
+msgid "Codec"
+msgstr "កូដិក"
+
+#: kfile/knfotranslator.cpp:59
+msgctxt "@label"
+msgid "Color Depth"
+msgstr "ជម្រៅពណ៌"
+
+#: kfile/knfotranslator.cpp:60
+msgctxt "@label"
+msgid "Duration"
+msgstr "ថិរវេលា"
+
+#: kfile/knfotranslator.cpp:61
+msgctxt "@label"
+msgid "Filename"
+msgstr "ឈ្មោះ​ឯកសារ"
+
+#: kfile/knfotranslator.cpp:62
+msgctxt "@label"
+msgid "Height"
+msgstr "កម្ពស់"
+
+#: kfile/knfotranslator.cpp:63
+msgctxt "@label"
+msgid "Interlace Mode"
+msgstr "របៀបត្របាញ់"
+
+#: kfile/knfotranslator.cpp:64
+msgctxt "@label number of lines"
+msgid "Lines"
+msgstr "បន្ទាត់"
+
+#: kfile/knfotranslator.cpp:65
+msgctxt "@label"
+msgid "Programming Language"
+msgstr "ភាសា​កម្មវិធី"
+
+#: kfile/knfotranslator.cpp:66
+msgctxt "@label"
+msgid "Sample Rate"
+msgstr "អត្រា​គំរូ"
+
+#: kfile/knfotranslator.cpp:67
+msgctxt "@label"
+msgid "Width"
+msgstr "ទទឹង"
+
+#: kfile/knfotranslator.cpp:68
+msgctxt "@label number of words"
+msgid "Words"
+msgstr "ពាក្យ"
+
+#: kfile/knfotranslator.cpp:69
+msgctxt "@label EXIF aperture value"
+msgid "Aperture"
+msgstr "លំហ"
+
+#: kfile/knfotranslator.cpp:70
+msgctxt "@label EXIF"
+msgid "Exposure Bias Value"
+msgstr "តម្លៃលំអៀង​ក្នុងការ​បង្ហាញ"
+
+#: kfile/knfotranslator.cpp:71
+msgctxt "@label EXIF"
+msgid "Exposure Time"
+msgstr "ពេលវេលា​បង្ហាញ"
+
+#: kfile/knfotranslator.cpp:72
+msgctxt "@label EXIF"
+msgid "Flash"
+msgstr "ពន្លឺ"
+
+#: kfile/knfotranslator.cpp:73
+msgctxt "@label EXIF"
+msgid "Focal Length"
+msgstr "ប្រវែង​ប្រសព្វ​គ្នា​"
+
+#: kfile/knfotranslator.cpp:74
+msgctxt "@label EXIF"
+msgid "Focal Length 35 mm"
+msgstr "ប្រវែង​ប្រសព្វ​គ្នា ៣៥ ម.ម."
+
+#: kfile/knfotranslator.cpp:75
+msgctxt "@label EXIF"
+msgid "ISO Speed Ratings"
+msgstr "អត្រា​ល្បឿន ISO"
+
+#: kfile/knfotranslator.cpp:76
+msgctxt "@label EXIF"
+msgid "Make"
+msgstr "បង្កើត"
+
+#: kfile/knfotranslator.cpp:77
+msgctxt "@label EXIF"
+msgid "Metering Mode"
+msgstr "របៀប​ម៉ែត្រ"
+
+#: kfile/knfotranslator.cpp:78
+msgctxt "@label EXIF"
+msgid "Model"
+msgstr "គំរូ"
+
+#: kfile/knfotranslator.cpp:79
+msgctxt "@label EXIF"
+msgid "Orientation"
+msgstr "ទិស"
+
+#: kfile/knfotranslator.cpp:80
+msgctxt "@label EXIF"
+msgid "White Balance"
+msgstr "តុល្យភាព​ពណ៌​ស"
+
+#: kfile/knfotranslator.cpp:81
+msgctxt "@label music genre"
+msgid "Genre"
+msgstr "ប្រភេទ"
+
+#: kfile/knfotranslator.cpp:82
+msgctxt "@label music album"
+msgid "Album"
+msgstr "អាល់ប៊ុម"
+
+#: kfile/knfotranslator.cpp:83
+msgctxt "@label"
+msgid "Performer"
+msgstr "អ្នក​អនុវត្ត"
+
+#: kfile/knfotranslator.cpp:84
+msgctxt "@label music track number"
+msgid "Track"
+msgstr "តាមដាន"
+
+#: kfile/knfotranslator.cpp:85
+msgctxt "@label file type"
+msgid "Type"
+msgstr "ប្រភេទ"
+
+#: kfile/knfotranslator.cpp:86
+msgctxt "@label Number of fuzzy translations"
+msgid "Fuzzy Translations"
+msgstr "ការ​បកប្រែ​ស្រពិចស្រពិល"
+
+#: kfile/knfotranslator.cpp:87
+msgctxt "@label Name of last translator"
+msgid "Last Translator"
+msgstr "អ្នក​បកប្រែ​ចុងក្រោយ"
+
+#: kfile/knfotranslator.cpp:88
+msgctxt "@label Number of obsolete translations"
+msgid "Obsolete Translations"
+msgstr "ការ​បកប្រែ​ដែល​លែង​ប្រើ"
+
+#: kfile/knfotranslator.cpp:89
+msgctxt "@label"
+msgid "Translation Source Date"
+msgstr "កាលបរិច្ឆេទ​ប្រភព​បកប្រែ"
+
+#: kfile/knfotranslator.cpp:90
+msgctxt "@label Number of total translations"
+msgid "Total Translations"
+msgstr "កា​របកប្រែ​សរុប"
+
+#: kfile/knfotranslator.cpp:91
+msgctxt "@label Number of translated strings"
+msgid "Translated"
+msgstr "បានបកប្រែ"
+
+#: kfile/knfotranslator.cpp:92
+msgctxt "@label"
+msgid "Translation Date"
+msgstr "កាលបរិច្ឆេទ​បកប្រែ"
+
+#: kfile/knfotranslator.cpp:93
+msgctxt "@label Number of untranslated strings"
+msgid "Untranslated"
+msgstr "មិន​បានបកប្រែ"
 
 #: kfile/kencodingfiledialog.cpp:50
 msgid "Encoding:"
@@ -3725,278 +3877,6 @@ msgstr "គាំទ្រ​តែ​ការ​ប្រតិបត្តិ
 msgid "Advanced Options for %1"
 msgstr "ជម្រើស​កម្រិត​ខ្ពស់សម្រាប់ %1"
 
-#: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:413
-msgctxt "@label"
-msgid "Comment"
-msgstr "មតិយោបល់"
-
-#: kfile/knfotranslator.cpp:41
-msgctxt "@label creation date"
-msgid "Created"
-msgstr "បាន​បង្កើត"
-
-#: kfile/knfotranslator.cpp:42
-msgctxt "@label file content size"
-msgid "Size"
-msgstr "ទំហំ"
-
-#: kfile/knfotranslator.cpp:43
-msgctxt "@label file depends from"
-msgid "Depends"
-msgstr "អាស្រ័យ"
-
-#: kfile/knfotranslator.cpp:44
-msgctxt "@label Software used to generate content"
-msgid "Generator"
-msgstr "កម្មវិធី​បង្កើត"
-
-#: kfile/knfotranslator.cpp:45
-msgctxt ""
-"@label see http://www.semanticdesktop.org/ontologies/2007/01/19/"
-"nie#hasLogicalPart"
-msgid "Has Logical Part"
-msgstr "មាន​ផ្នែក​ឡូជីខល"
-
-#: kfile/knfotranslator.cpp:46
-msgctxt "@label parent directory"
-msgid "Part of"
-msgstr "ផ្នែក​របស់"
-
-#: kfile/knfotranslator.cpp:47
-msgctxt "@label"
-msgid "Keyword"
-msgstr "ពាក្យ​គន្លឹះ"
-
-#: kfile/knfotranslator.cpp:48
-msgctxt "@label modified date of file"
-msgid "Modified"
-msgstr "បាន​កែប្រែ"
-
-#: kfile/knfotranslator.cpp:49
-msgctxt "@label"
-msgid "MIME Type"
-msgstr "ប្រភេទ MIME"
-
-#: kfile/knfotranslator.cpp:50
-msgctxt "@label"
-msgid "Content"
-msgstr "មាតិកា"
-
-#: kfile/knfotranslator.cpp:51
-msgctxt "@label"
-msgid "Subject"
-msgstr "ប្រធានបទ"
-
-#: kfile/knfotranslator.cpp:52
-msgctxt "@label music title"
-msgid "Title"
-msgstr "ចំណង​ជើង"
-
-#: kfile/knfotranslator.cpp:53
-msgctxt "@label file URL"
-msgid "Location"
-msgstr "ទីតាំង"
-
-#: kfile/knfotranslator.cpp:54
-msgctxt "@label"
-msgid "Creator"
-msgstr "អ្នកបង្កើត"
-
-#: kfile/knfotranslator.cpp:55
-msgctxt "@label"
-msgid "Average Bitrate"
-msgstr "អត្រាប៊ីត​មធ្យម"
-
-#: kfile/knfotranslator.cpp:56
-msgctxt "@label"
-msgid "Channels"
-msgstr "ឆានែល"
-
-#: kfile/knfotranslator.cpp:57
-msgctxt "@label number of characters"
-msgid "Characters"
-msgstr "តួអក្សរ"
-
-#: kfile/knfotranslator.cpp:58
-msgctxt "@label"
-msgid "Codec"
-msgstr "កូដិក"
-
-#: kfile/knfotranslator.cpp:59
-msgctxt "@label"
-msgid "Color Depth"
-msgstr "ជម្រៅពណ៌"
-
-#: kfile/knfotranslator.cpp:60
-msgctxt "@label"
-msgid "Duration"
-msgstr "ថិរវេលា"
-
-#: kfile/knfotranslator.cpp:61
-msgctxt "@label"
-msgid "Filename"
-msgstr "ឈ្មោះ​ឯកសារ"
-
-#: kfile/knfotranslator.cpp:62
-msgctxt "@label"
-msgid "Height"
-msgstr "កម្ពស់"
-
-#: kfile/knfotranslator.cpp:63
-msgctxt "@label"
-msgid "Interlace Mode"
-msgstr "របៀបត្របាញ់"
-
-#: kfile/knfotranslator.cpp:64
-msgctxt "@label number of lines"
-msgid "Lines"
-msgstr "បន្ទាត់"
-
-#: kfile/knfotranslator.cpp:65
-msgctxt "@label"
-msgid "Programming Language"
-msgstr "ភាសា​កម្មវិធី"
-
-#: kfile/knfotranslator.cpp:66
-msgctxt "@label"
-msgid "Sample Rate"
-msgstr "អត្រា​គំរូ"
-
-#: kfile/knfotranslator.cpp:67
-msgctxt "@label"
-msgid "Width"
-msgstr "ទទឹង"
-
-#: kfile/knfotranslator.cpp:68
-msgctxt "@label number of words"
-msgid "Words"
-msgstr "ពាក្យ"
-
-#: kfile/knfotranslator.cpp:69
-msgctxt "@label EXIF aperture value"
-msgid "Aperture"
-msgstr "លំហ"
-
-#: kfile/knfotranslator.cpp:70
-msgctxt "@label EXIF"
-msgid "Exposure Bias Value"
-msgstr "តម្លៃលំអៀង​ក្នុងការ​បង្ហាញ"
-
-#: kfile/knfotranslator.cpp:71
-msgctxt "@label EXIF"
-msgid "Exposure Time"
-msgstr "ពេលវេលា​បង្ហាញ"
-
-#: kfile/knfotranslator.cpp:72
-msgctxt "@label EXIF"
-msgid "Flash"
-msgstr "ពន្លឺ"
-
-#: kfile/knfotranslator.cpp:73
-msgctxt "@label EXIF"
-msgid "Focal Length"
-msgstr "ប្រវែង​ប្រសព្វ​គ្នា​"
-
-#: kfile/knfotranslator.cpp:74
-msgctxt "@label EXIF"
-msgid "Focal Length 35 mm"
-msgstr "ប្រវែង​ប្រសព្វ​គ្នា ៣៥ ម.ម."
-
-#: kfile/knfotranslator.cpp:75
-msgctxt "@label EXIF"
-msgid "ISO Speed Ratings"
-msgstr "អត្រា​ល្បឿន ISO"
-
-#: kfile/knfotranslator.cpp:76
-msgctxt "@label EXIF"
-msgid "Make"
-msgstr "បង្កើត"
-
-#: kfile/knfotranslator.cpp:77
-msgctxt "@label EXIF"
-msgid "Metering Mode"
-msgstr "របៀប​ម៉ែត្រ"
-
-#: kfile/knfotranslator.cpp:78
-msgctxt "@label EXIF"
-msgid "Model"
-msgstr "គំរូ"
-
-#: kfile/knfotranslator.cpp:79
-msgctxt "@label EXIF"
-msgid "Orientation"
-msgstr "ទិស"
-
-#: kfile/knfotranslator.cpp:80
-msgctxt "@label EXIF"
-msgid "White Balance"
-msgstr "តុល្យភាព​ពណ៌​ស"
-
-#: kfile/knfotranslator.cpp:81
-msgctxt "@label music genre"
-msgid "Genre"
-msgstr "ប្រភេទ"
-
-#: kfile/knfotranslator.cpp:82
-msgctxt "@label music album"
-msgid "Album"
-msgstr "អាល់ប៊ុម"
-
-#: kfile/knfotranslator.cpp:83
-msgctxt "@label"
-msgid "Performer"
-msgstr "អ្នក​អនុវត្ត"
-
-#: kfile/knfotranslator.cpp:84
-msgctxt "@label music track number"
-msgid "Track"
-msgstr "តាមដាន"
-
-#: kfile/knfotranslator.cpp:85
-msgctxt "@label file type"
-msgid "Type"
-msgstr "ប្រភេទ"
-
-#: kfile/knfotranslator.cpp:86
-msgctxt "@label Number of fuzzy translations"
-msgid "Fuzzy Translations"
-msgstr "ការ​បកប្រែ​ស្រពិចស្រពិល"
-
-#: kfile/knfotranslator.cpp:87
-msgctxt "@label Name of last translator"
-msgid "Last Translator"
-msgstr "អ្នក​បកប្រែ​ចុងក្រោយ"
-
-#: kfile/knfotranslator.cpp:88
-msgctxt "@label Number of obsolete translations"
-msgid "Obsolete Translations"
-msgstr "ការ​បកប្រែ​ដែល​លែង​ប្រើ"
-
-#: kfile/knfotranslator.cpp:89
-msgctxt "@label"
-msgid "Translation Source Date"
-msgstr "កាលបរិច្ឆេទ​ប្រភព​បកប្រែ"
-
-#: kfile/knfotranslator.cpp:90
-msgctxt "@label Number of total translations"
-msgid "Total Translations"
-msgstr "កា​របកប្រែ​សរុប"
-
-#: kfile/knfotranslator.cpp:91
-msgctxt "@label Number of translated strings"
-msgid "Translated"
-msgstr "បានបកប្រែ"
-
-#: kfile/knfotranslator.cpp:92
-msgctxt "@label"
-msgid "Translation Date"
-msgstr "កាលបរិច្ឆេទ​បកប្រែ"
-
-#: kfile/knfotranslator.cpp:93
-msgctxt "@label Number of untranslated strings"
-msgid "Untranslated"
-msgstr "មិន​បានបកប្រែ"
-
 #: kfile/kfilemetadataprovider.cpp:414
 msgctxt "@label"
 msgid "Modified"
@@ -4036,6 +3916,126 @@ msgstr "ទំហំ​សរុប"
 msgctxt "@label"
 msgid "Type"
 msgstr "ប្រភេទ"
+
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<កំហុស>"
+
+#: kfile/kopenwithdialog.cpp:269
+msgid "Known Applications"
+msgstr "កម្មវិធី​ដែល​ស្គាល់"
+
+#: kfile/kopenwithdialog.cpp:482
+msgid "Open With"
+msgstr "បើក​ជាមួយ"
+
+#: kfile/kopenwithdialog.cpp:487
+#, kde-format
+msgid ""
+"<qt>Select the program that should be used to open <b>%1</b>. If the program "
+"is not listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>ជ្រើស​កម្មវិធី​ដែល​គួរ​ប្រើ​សម្រាប់​បើក <b>%1</b> ។ ប្រសិនបើ​កម្មវិធី​មិន​មាន​នៅ​ក្នុង​បញ្ជី សូម​បញ្ចូល​"
+"ឈ្មោះ ឬ​ចុច​ប៊ូតុង រកមើល ។</qt>"
+
+#: kfile/kopenwithdialog.cpp:493
+msgid "Choose the name of the program with which to open the selected files."
+msgstr "ជ្រើស​ឈ្មោះ​កម្មវិធី​ដែល​ប្រើ​សម្រាប់​បើក​ឯកសារ​ដែល​បានជ្រើស ។"
+
+#: kfile/kopenwithdialog.cpp:520
+#, kde-format
+msgid "Choose Application for %1"
+msgstr "ជ្រើស​កម្មវិធី​សម្រាប់ %1"
+
+#: kfile/kopenwithdialog.cpp:521
+#, kde-format
+msgid ""
+"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
+"listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>ជ្រើស​កម្មវិធី​សម្រាប់​ប្រភេទ​ឯកសារ ៖ <b>%1</b> ។ ប្រសិន​បើ​កម្មវិធី​មិន​បាន​រាយ​នោះ​ទេ សូម​បញ្ចូល​"
+"ឈ្មោះ ឬ​ចុច​ប៊ូតុង​រកមើល ។</qt>"
+
+#: kfile/kopenwithdialog.cpp:536
+msgid "Choose Application"
+msgstr "ជ្រើស​កម្មវិធី"
+
+#: kfile/kopenwithdialog.cpp:537
+msgid ""
+"<qt>Select a program. If the program is not listed, enter the name or click "
+"the browse button.</qt>"
+msgstr "<qt>ជ្រើស​កម្មវិធី ។ ប្រសិនបើ​កម្មវិធី​នោះ​មិន​បាន​រាយ សូម​បញ្ចូលឈ្មោះ ឬ​ចុច​ប៊ូតុង​រកមើល ។</qt>"
+
+#: kfile/kopenwithdialog.cpp:600
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with the actual values when the actual program is run:\n"
+"%f - a single file name\n"
+"%F - a list of files; use for applications that can open several local files "
+"at once\n"
+"%u - a single URL\n"
+"%U - a list of URLs\n"
+"%d - the directory of the file to open\n"
+"%D - a list of directories\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
+msgstr ""
+"ដោយ​ធ្វើតាម​ពាក្យ​បញ្ជា អ្នក​អាច​មាន​កន្លែង​ដាក់​ជា​ច្រើន ​ដែល​នឹង​ត្រូវ​បាន​ជំនួស​ដោយ​តម្លៃ​ពិត​ប្រាកដ នៅ​ពេល​"
+"កម្មវិធី​ពិត​ប្រាកដ​មួយ​ត្រូវ​បាន​រត់ ៖\n"
+"%f - ឈ្មោះ​ឯកសារ​តែ​មួយ\n"
+"%F - បញ្ជី​ឯកសារ ដែល​ប្រើ​សម្រាប់​កម្មវិធី​ដែល​អាច​បើក​ឯកសារ​មូលដ្ឋាន​ជា​ច្រើនបាន​នៅ​ពេល​តែ​មួយ ។\n"
+"%u - URL តែ​មួយ\n"
+"%U - បញ្ជី URLs\n"
+"%d - ថត​របស់​ឯកសារ​ដែលត្រូវ​បើក\n"
+"%D - បញ្ជី​ថត\n"
+"%i - រូបតំណាង\n"
+"%m - រូបតំណាង​តូច\n"
+"%c - មតិយោបល់"
+
+#: kfile/kopenwithdialog.cpp:634
+msgid "Run in &terminal"
+msgstr "រត់​ក្នុង​ស្ថានីយ"
+
+#: kfile/kopenwithdialog.cpp:651
+msgid "&Do not close when command exits"
+msgstr "កុំ​បិទ ពេល​ពាក្យ​បញ្ជា​ឈប់ "
+
+#: kfile/kopenwithdialog.cpp:668
+msgid "&Remember application association for this type of file"
+msgstr "ចងចាំ​កម្មវិធី​ដែល​ចងភ្ជាប់​សម្រាប់​ប្រភេទ​ឯកសារ​នេះ "
+
+#: kfile/kopenwithdialog.cpp:806
+#, kde-format
+msgid ""
+"Could not extract executable name from '%1', please type a valid program "
+"name."
+msgstr "មិនអាច​ស្រង់​ឈ្មោះ​ដែល​អាច​ប្រតិបត្តិ​បាន​ពី '%1' បានទេ សូម​វាយ​ឈ្មោះ​កម្មវិធី​ឲ្យ​ត្រឹមត្រូវ ។"
+
+#: kfile/kopenwithdialog.cpp:852
+#, kde-format
+msgid "'%1' not found, please type a valid program name."
+msgstr "រក​មិនឃើញ '%1' សូម​វាយ​ឈ្មោះ​កម្មវិធី​ដែល​ត្រឹមត្រូវ ។"
+
+#: kfile/kcommentwidget.cpp:65
+msgctxt "@label"
+msgid "Add Comment..."
+msgstr "បន្ថែម​មតិយោបល់..."
+
+#: kfile/kcommentwidget.cpp:71
+msgctxt "@label"
+msgid "Change..."
+msgstr "ផ្លាស់ប្ដូរ..."
+
+#: kfile/kcommentwidget.cpp:124
+msgctxt "@title:window"
+msgid "Change Comment"
+msgstr "ផ្លាស់ប្ដូរ​មតិយោបល់"
+
+#: kfile/kcommentwidget.cpp:125
+msgctxt "@title:window"
+msgid "Add Comment"
+msgstr "បន្ថែម​មតិយោបល់"
 
 #: misc/ksendbugmail/main.cpp:43
 msgid "Error connecting to server."
@@ -4141,40 +4141,6 @@ msgstr "កម្មវិធី​ដោះស្រាយ​ពិធីកា
 #, kde-format
 msgid "You do not have permission to access the %1 protocol."
 msgstr "អ្នក​មិន​មាន​សិទ្ធិ​ចូល​ដំណើរការពិធីការ %1 ឡើយ ។"
-
-#: kssl/kcm/displaycertdialog.cpp:54 kssl/ksslinfodialog.cpp:225
-#, kde-format
-msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
-msgid "%1 to %2"
-msgstr "%1 ទៅ %2"
-
-#: kssl/kcm/cacertificatespage.cpp:131
-msgid "System certificates"
-msgstr "​វិញ្ញាបនបត្រ​ប្រព័ន្ធ"
-
-#: kssl/kcm/cacertificatespage.cpp:138
-msgid "User-added certificates"
-msgstr "​វិញ្ញាបនបត្រ​ដែល​បន្ថែម​ដោយ​អ្នក​ប្រើ"
-
-#: kssl/kcm/cacertificatespage.cpp:295
-msgid "Pick Certificates"
-msgstr "យក​វិញ្ញាបនបត្រ"
-
-#: kssl/kcm/kcmssl.cpp:40
-msgid "SSL Configuration Module"
-msgstr "ម៉ូឌុល​កំណត់​រចនាសម្ព័ន្ធ SSL"
-
-#: kssl/kcm/kcmssl.cpp:42
-msgid "Copyright 2010 Andreas Hartmetz"
-msgstr "រក្សាសិទ្ធិ ២០១០ ដោយ Andreas Hartmetz"
-
-#: kssl/kcm/kcmssl.cpp:43
-msgid "Andreas Hartmetz"
-msgstr "Andreas Hartmetz"
-
-#: kssl/kcm/kcmssl.cpp:55
-msgid "SSL Signers"
-msgstr "អ្នក​ចុះហត្ថលេខា SSL"
 
 #: kssl/ksslcertificate.cpp:204
 msgid "Signature Algorithm: "
@@ -4563,6 +4529,12 @@ msgctxt "The certificate is trusted"
 msgid "Yes"
 msgstr "បាទ/ចាស"
 
+#: kssl/ksslinfodialog.cpp:225 kssl/kcm/displaycertdialog.cpp:54
+#, kde-format
+msgctxt "%1 is the effective date of the certificate, %2 is the expiry date"
+msgid "%1 to %2"
+msgstr "%1 ទៅ %2"
+
 #: kssl/ksslcertdialog.cpp:61
 msgid "Certificate"
 msgstr "វិញ្ញាបនបត្រ"
@@ -4655,6 +4627,34 @@ msgstr ""
 #: kssl/ksslutils.cpp:78
 msgid "GMT"
 msgstr "GMT"
+
+#: kssl/kcm/cacertificatespage.cpp:131
+msgid "System certificates"
+msgstr "​វិញ្ញាបនបត្រ​ប្រព័ន្ធ"
+
+#: kssl/kcm/cacertificatespage.cpp:138
+msgid "User-added certificates"
+msgstr "​វិញ្ញាបនបត្រ​ដែល​បន្ថែម​ដោយ​អ្នក​ប្រើ"
+
+#: kssl/kcm/cacertificatespage.cpp:295
+msgid "Pick Certificates"
+msgstr "យក​វិញ្ញាបនបត្រ"
+
+#: kssl/kcm/kcmssl.cpp:40
+msgid "SSL Configuration Module"
+msgstr "ម៉ូឌុល​កំណត់​រចនាសម្ព័ន្ធ SSL"
+
+#: kssl/kcm/kcmssl.cpp:42
+msgid "Copyright 2010 Andreas Hartmetz"
+msgstr "រក្សាសិទ្ធិ ២០១០ ដោយ Andreas Hartmetz"
+
+#: kssl/kcm/kcmssl.cpp:43
+msgid "Andreas Hartmetz"
+msgstr "Andreas Hartmetz"
+
+#: kssl/kcm/kcmssl.cpp:55
+msgid "SSL Signers"
+msgstr "អ្នក​ចុះហត្ថលេខា SSL"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -5010,7 +5010,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, addFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:111
 #. i18n: ectx: property (text), widget (KPushButton, add)
-#: rc.cpp:168 rc.cpp:234
+#: rc.cpp:168 rc.cpp:327
 msgid "Add..."
 msgstr "បន្ថែម..."
 
@@ -5028,7 +5028,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, delFiletypeButton)
 #. i18n: file: kssl/kcm/cacertificates.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, removeSelection)
-#: rc.cpp:174 rc.cpp:231
+#: rc.cpp:174 rc.cpp:324
 msgid "Remove"
 msgstr "យកចេញ"
 
@@ -5048,27 +5048,205 @@ msgstr ""
 msgid "Ad&vanced Options"
 msgstr "ជម្រើស​កម្រិត​ខ្ពស់ "
 
+#. i18n: file: kssl/sslinfo.ui:16
+#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
+#: rc.cpp:183
+msgid "[padlock]"
+msgstr "[padlock]"
+
+#. i18n: file: kssl/sslinfo.ui:30
+#. i18n: ectx: property (text), widget (QLabel, addressTag)
+#: rc.cpp:187
+msgctxt "Web page address"
+msgid "Address:"
+msgstr "អាសយដ្ឋាន ៖"
+
+#. i18n: file: kssl/sslinfo.ui:47
+#. i18n: ectx: property (text), widget (QLabel, ipTag)
+#: rc.cpp:191
+msgid "IP address:"
+msgstr "អាសយដ្ឋាន IP ៖"
+
+#. i18n: file: kssl/sslinfo.ui:64
+#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
+#: rc.cpp:195
+msgid "Encryption:"
+msgstr "ការ​អ៊ិនគ្រីប ៖"
+
+#. i18n: file: kssl/sslinfo.ui:81
+#. i18n: ectx: property (text), widget (QLabel, detailsTag)
+#: rc.cpp:199
+msgid "Details:"
+msgstr "សេចក្ដី​លម្អិត ៖"
+
+#. i18n: file: kssl/sslinfo.ui:98
+#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
+#: rc.cpp:203
+msgid "SSL version:"
+msgstr "កំណែ SSL ៖"
+
+#. i18n: file: kssl/sslinfo.ui:115
+#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
+#: rc.cpp:207
+msgid "Certificate chain:"
+msgstr "ខ្សែ​វិញ្ញាបនបត្រ ៖"
+
+#. i18n: file: kssl/sslinfo.ui:144
+#. i18n: ectx: property (text), widget (QLabel, trustedTag)
+#: rc.cpp:210
+msgid "Trusted:"
+msgstr "ទុកចិត្ត ៖"
+
+#. i18n: file: kssl/sslinfo.ui:161
+#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
+#: rc.cpp:214
+msgid "Validity period:"
+msgstr "ថិរវេលា​​មាន​សុពលភាព ៖"
+
+#. i18n: file: kssl/sslinfo.ui:178
+#. i18n: ectx: property (text), widget (QLabel, serialTag)
+#: rc.cpp:218
+msgid "Serial number:"
+msgstr "លេខ​សៀរៀល ៖"
+
+#. i18n: file: kssl/sslinfo.ui:195
+#. i18n: ectx: property (text), widget (QLabel, digestTag)
+#: rc.cpp:222
+msgid "MD5 digest:"
+msgstr "MD5 digest ៖"
+
+#. i18n: file: kssl/sslinfo.ui:211
+#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
+#: rc.cpp:225
+msgid "SHA1 digest:"
+msgstr "SHA1 digest ៖"
+
+#. i18n: file: kssl/keygenwizard2.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
+#: rc.cpp:228
+msgid ""
+"You must now provide a password for the certificate request. Please choose a "
+"very secure password as this will be used to encrypt your private key."
+msgstr ""
+"ឥឡូវ អ្នក​ត្រូវ​ផ្តល់​ពាក្យ​សម្ងាត់ សម្រាប់​ការ​ស្នើសុំ​វិញ្ញាបនបត្រ ។ សូម​ជ្រើស​ពាក្យ​សម្ងាត់​ដែល​មាន​សុវត្ថិភាព​"
+"ខ្លាំង ព្រោះ​វា​នឹង​ត្រូវ​បាន​ប្រើ​ដើម្បី​អ៊ិនគ្រីប​កូនសោ​ឯកជន​របស់​អ្នក ។"
+
+#. i18n: file: kssl/keygenwizard2.ui:48
+#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
+#: rc.cpp:231
+msgid "&Repeat password:"
+msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់​ឡើង​វិញ ៖ "
+
+#. i18n: file: kssl/keygenwizard2.ui:58
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: rc.cpp:234
+msgid "&Choose password:"
+msgstr "ជ្រើស​ពាក្យ​សម្ងាត់ ៖ "
+
+#. i18n: file: kssl/keygenwizard.ui:35
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: rc.cpp:237
+msgid ""
+"You have indicated that you wish to obtain or purchase a secure certificate. "
+"This wizard is intended to guide you through the procedure. You may cancel "
+"at any time, and this will abort the transaction."
+msgstr ""
+"អ្នក​បាន​បង្ហាញ​ថា អ្នក​ចង់​ទទួលយក ឬ​ទិញ​វិញ្ញាបនបត្រ​សុវត្ថិភាព​មួយ ។ អ្នក​ជំនួយការ​នេះ​នឹង​នាំ​អ្នក​​តាមរយៈ​"
+"បែបបទ ។ អ្នក​អាច​បោះបង់​វាចោល​​នៅ​ពេល​ណា​ក៏​បាន ហើយ​វា​នឹងបញ្ឈប់​កិច្ចការ ។"
+
+#. i18n: file: kssl/certificateparty.ui:27
+#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
+#: rc.cpp:240
+msgid "Common name:"
+msgstr "ឈ្មោះ​ទូទៅ ៖"
+
+#. i18n: file: kssl/certificateparty.ui:37
+#. i18n: ectx: property (text), widget (QLabel, commonName)
+#: rc.cpp:243
+msgid "Acme Co."
+msgstr "Acme Co."
+
+#. i18n: file: kssl/certificateparty.ui:44
+#. i18n: ectx: property (text), widget (QLabel, organizationTag)
+#: rc.cpp:246
+msgid "Organization:"
+msgstr "ការ​រៀបចំ ៖"
+
+#. i18n: file: kssl/certificateparty.ui:54
+#. i18n: ectx: property (text), widget (QLabel, organization)
+#: rc.cpp:249
+msgid "Acme Sundry Products Company"
+msgstr "Acme Sundry Products Company"
+
+#. i18n: file: kssl/certificateparty.ui:61
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
+#: rc.cpp:252
+msgid "Organizational unit:"
+msgstr "ផ្នែក​នៃ​ការ​រៀបចំ ៖"
+
+#. i18n: file: kssl/certificateparty.ui:71
+#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
+#: rc.cpp:255
+msgid "Fraud Department"
+msgstr "ផ្នែក​ពិនិត្យ​មើល​ការ​បោក​បន្លំ"
+
+#. i18n: file: kssl/certificateparty.ui:78
+#. i18n: ectx: property (text), widget (QLabel, countryTag)
+#: rc.cpp:258
+msgid "Country:"
+msgstr "ប្រទេស ៖"
+
+#. i18n: file: kssl/certificateparty.ui:88
+#. i18n: ectx: property (text), widget (QLabel, country)
+#: rc.cpp:261
+msgid "Canada"
+msgstr "កាណាដា"
+
+#. i18n: file: kssl/certificateparty.ui:95
+#. i18n: ectx: property (text), widget (QLabel, stateTag)
+#: rc.cpp:264
+msgid "State:"
+msgstr "រដ្ឋ ៖"
+
+#. i18n: file: kssl/certificateparty.ui:105
+#. i18n: ectx: property (text), widget (QLabel, state)
+#: rc.cpp:267
+msgid "Quebec"
+msgstr "ឃ្វីបិខ"
+
+#. i18n: file: kssl/certificateparty.ui:112
+#. i18n: ectx: property (text), widget (QLabel, cityTag)
+#: rc.cpp:270
+msgid "City:"
+msgstr "ទីក្រុង ៖"
+
+#. i18n: file: kssl/certificateparty.ui:122
+#. i18n: ectx: property (text), widget (QLabel, city)
+#: rc.cpp:273
+msgid "Lakeridge Meadows"
+msgstr "ឡេឃឺរីជ មីដូវ"
+
 #. i18n: file: kssl/kcm/displaycert.ui:23
 #. i18n: ectx: property (text), widget (QLabel, subjectHeading)
-#: rc.cpp:183
+#: rc.cpp:276
 msgid "<b>Subject Information</b>"
 msgstr "<b>ព័ត៌មាន​ប្រធានបទ</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:39
 #. i18n: ectx: property (text), widget (QLabel, issuerHeading)
-#: rc.cpp:186
+#: rc.cpp:279
 msgid "<b>Issuer Information</b>"
 msgstr "<b>ព័ត៌មាន​​អ្នក​ចេញ​ផ្សាយ</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:55
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:189
+#: rc.cpp:282
 msgid "<b>Other</b>"
 msgstr "<b>ផ្សេងៗ</b>"
 
 #. i18n: file: kssl/kcm/displaycert.ui:64
 #. i18n: ectx: property (text), widget (QLabel, validityPeriodLabel)
-#: rc.cpp:192
+#: rc.cpp:285
 msgid "Validity period"
 msgstr "ថិរវេលា​​មាន​សុពលភាព"
 
@@ -5080,235 +5258,57 @@ msgstr "ថិរវេលា​​មាន​សុពលភាព"
 #. i18n: ectx: property (text), widget (QLabel, md5Digest)
 #. i18n: file: kssl/kcm/displaycert.ui:113
 #. i18n: ectx: property (text), widget (QLabel, sha1Digest)
-#: rc.cpp:195 rc.cpp:201 rc.cpp:207 rc.cpp:213
+#: rc.cpp:288 rc.cpp:294 rc.cpp:300 rc.cpp:306
 msgid "TextLabel"
 msgstr "ស្លាក​អត្ថបទ"
 
 #. i18n: file: kssl/kcm/displaycert.ui:78
 #. i18n: ectx: property (text), widget (QLabel, serialNumberLabel)
-#: rc.cpp:198
+#: rc.cpp:291
 msgid "Serial number"
 msgstr "លេខ​សៀរៀល"
 
 #. i18n: file: kssl/kcm/displaycert.ui:92
 #. i18n: ectx: property (text), widget (QLabel, md5DigestLabel)
-#: rc.cpp:204
+#: rc.cpp:297
 msgid "MD5 digest"
 msgstr "MD5 digest"
 
 #. i18n: file: kssl/kcm/displaycert.ui:106
 #. i18n: ectx: property (text), widget (QLabel, sha1DigestLabel)
-#: rc.cpp:210
+#: rc.cpp:303
 msgid "SHA1 digest"
 msgstr "SHA1 digest"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:24
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:216
+#: rc.cpp:309
 msgid "Organization / Common Name"
 msgstr "ការ​រៀបចំ/​ឈ្មោះ​ធម្មតា"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:29
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
-#: rc.cpp:219
+#: rc.cpp:312
 msgid "Organizational Unit"
 msgstr "ផ្នែក​នៃ​ការ​រៀបចំ"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, displaySelection)
-#: rc.cpp:222
+#: rc.cpp:315
 msgid "Display..."
 msgstr "បង្ហាញ..."
 
 #. i18n: file: kssl/kcm/cacertificates.ui:68
 #. i18n: ectx: property (text), widget (KPushButton, disableSelection)
-#: rc.cpp:225
+#: rc.cpp:318
 msgid "Disable"
 msgstr "បិទ"
 
 #. i18n: file: kssl/kcm/cacertificates.ui:78
 #. i18n: ectx: property (text), widget (QPushButton, enableSelection)
-#: rc.cpp:228
+#: rc.cpp:321
 msgid "Enable"
 msgstr "បើក"
-
-#. i18n: file: kssl/sslinfo.ui:16
-#. i18n: ectx: property (text), widget (QLabel, encryptionIndicator)
-#: rc.cpp:237
-msgid "[padlock]"
-msgstr "[padlock]"
-
-#. i18n: file: kssl/sslinfo.ui:30
-#. i18n: ectx: property (text), widget (QLabel, addressTag)
-#: rc.cpp:241
-msgctxt "Web page address"
-msgid "Address:"
-msgstr "អាសយដ្ឋាន ៖"
-
-#. i18n: file: kssl/sslinfo.ui:47
-#. i18n: ectx: property (text), widget (QLabel, ipTag)
-#: rc.cpp:245
-msgid "IP address:"
-msgstr "អាសយដ្ឋាន IP ៖"
-
-#. i18n: file: kssl/sslinfo.ui:64
-#. i18n: ectx: property (text), widget (QLabel, encryptionTag)
-#: rc.cpp:249
-msgid "Encryption:"
-msgstr "ការ​អ៊ិនគ្រីប ៖"
-
-#. i18n: file: kssl/sslinfo.ui:81
-#. i18n: ectx: property (text), widget (QLabel, detailsTag)
-#: rc.cpp:253
-msgid "Details:"
-msgstr "សេចក្ដី​លម្អិត ៖"
-
-#. i18n: file: kssl/sslinfo.ui:98
-#. i18n: ectx: property (text), widget (QLabel, sslVersionTag)
-#: rc.cpp:257
-msgid "SSL version:"
-msgstr "កំណែ SSL ៖"
-
-#. i18n: file: kssl/sslinfo.ui:115
-#. i18n: ectx: property (text), widget (QLabel, certSelectorTag)
-#: rc.cpp:261
-msgid "Certificate chain:"
-msgstr "ខ្សែ​វិញ្ញាបនបត្រ ៖"
-
-#. i18n: file: kssl/sslinfo.ui:144
-#. i18n: ectx: property (text), widget (QLabel, trustedTag)
-#: rc.cpp:264
-msgid "Trusted:"
-msgstr "ទុកចិត្ត ៖"
-
-#. i18n: file: kssl/sslinfo.ui:161
-#. i18n: ectx: property (text), widget (QLabel, validityPeriodTag)
-#: rc.cpp:268
-msgid "Validity period:"
-msgstr "ថិរវេលា​​មាន​សុពលភាព ៖"
-
-#. i18n: file: kssl/sslinfo.ui:178
-#. i18n: ectx: property (text), widget (QLabel, serialTag)
-#: rc.cpp:272
-msgid "Serial number:"
-msgstr "លេខ​សៀរៀល ៖"
-
-#. i18n: file: kssl/sslinfo.ui:195
-#. i18n: ectx: property (text), widget (QLabel, digestTag)
-#: rc.cpp:276
-msgid "MD5 digest:"
-msgstr "MD5 digest ៖"
-
-#. i18n: file: kssl/sslinfo.ui:211
-#. i18n: ectx: property (text), widget (QLabel, sha1DigestTag)
-#: rc.cpp:279
-msgid "SHA1 digest:"
-msgstr "SHA1 digest ៖"
-
-#. i18n: file: kssl/keygenwizard2.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel4)
-#: rc.cpp:282
-msgid ""
-"You must now provide a password for the certificate request. Please choose a "
-"very secure password as this will be used to encrypt your private key."
-msgstr ""
-"ឥឡូវ អ្នក​ត្រូវ​ផ្តល់​ពាក្យ​សម្ងាត់ សម្រាប់​ការ​ស្នើសុំ​វិញ្ញាបនបត្រ ។ សូម​ជ្រើស​ពាក្យ​សម្ងាត់​ដែល​មាន​សុវត្ថិភាព​"
-"ខ្លាំង ព្រោះ​វា​នឹង​ត្រូវ​បាន​ប្រើ​ដើម្បី​អ៊ិនគ្រីប​កូនសោ​ឯកជន​របស់​អ្នក ។"
-
-#. i18n: file: kssl/keygenwizard2.ui:48
-#. i18n: ectx: property (text), widget (QLabel, TextLabel6)
-#: rc.cpp:285
-msgid "&Repeat password:"
-msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់​ឡើង​វិញ ៖ "
-
-#. i18n: file: kssl/keygenwizard2.ui:58
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:288
-msgid "&Choose password:"
-msgstr "ជ្រើស​ពាក្យ​សម្ងាត់ ៖ "
-
-#. i18n: file: kssl/keygenwizard.ui:35
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:291
-msgid ""
-"You have indicated that you wish to obtain or purchase a secure certificate. "
-"This wizard is intended to guide you through the procedure. You may cancel "
-"at any time, and this will abort the transaction."
-msgstr ""
-"អ្នក​បាន​បង្ហាញ​ថា អ្នក​ចង់​ទទួលយក ឬ​ទិញ​វិញ្ញាបនបត្រ​សុវត្ថិភាព​មួយ ។ អ្នក​ជំនួយការ​នេះ​នឹង​នាំ​អ្នក​​តាមរយៈ​"
-"បែបបទ ។ អ្នក​អាច​បោះបង់​វាចោល​​នៅ​ពេល​ណា​ក៏​បាន ហើយ​វា​នឹងបញ្ឈប់​កិច្ចការ ។"
-
-#. i18n: file: kssl/certificateparty.ui:27
-#. i18n: ectx: property (text), widget (QLabel, commonNameTag)
-#: rc.cpp:294
-msgid "Common name:"
-msgstr "ឈ្មោះ​ទូទៅ ៖"
-
-#. i18n: file: kssl/certificateparty.ui:37
-#. i18n: ectx: property (text), widget (QLabel, commonName)
-#: rc.cpp:297
-msgid "Acme Co."
-msgstr "Acme Co."
-
-#. i18n: file: kssl/certificateparty.ui:44
-#. i18n: ectx: property (text), widget (QLabel, organizationTag)
-#: rc.cpp:300
-msgid "Organization:"
-msgstr "ការ​រៀបចំ ៖"
-
-#. i18n: file: kssl/certificateparty.ui:54
-#. i18n: ectx: property (text), widget (QLabel, organization)
-#: rc.cpp:303
-msgid "Acme Sundry Products Company"
-msgstr "Acme Sundry Products Company"
-
-#. i18n: file: kssl/certificateparty.ui:61
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnitTag)
-#: rc.cpp:306
-msgid "Organizational unit:"
-msgstr "ផ្នែក​នៃ​ការ​រៀបចំ ៖"
-
-#. i18n: file: kssl/certificateparty.ui:71
-#. i18n: ectx: property (text), widget (QLabel, organizationalUnit)
-#: rc.cpp:309
-msgid "Fraud Department"
-msgstr "ផ្នែក​ពិនិត្យ​មើល​ការ​បោក​បន្លំ"
-
-#. i18n: file: kssl/certificateparty.ui:78
-#. i18n: ectx: property (text), widget (QLabel, countryTag)
-#: rc.cpp:312
-msgid "Country:"
-msgstr "ប្រទេស ៖"
-
-#. i18n: file: kssl/certificateparty.ui:88
-#. i18n: ectx: property (text), widget (QLabel, country)
-#: rc.cpp:315
-msgid "Canada"
-msgstr "កាណាដា"
-
-#. i18n: file: kssl/certificateparty.ui:95
-#. i18n: ectx: property (text), widget (QLabel, stateTag)
-#: rc.cpp:318
-msgid "State:"
-msgstr "រដ្ឋ ៖"
-
-#. i18n: file: kssl/certificateparty.ui:105
-#. i18n: ectx: property (text), widget (QLabel, state)
-#: rc.cpp:321
-msgid "Quebec"
-msgstr "ឃ្វីបិខ"
-
-#. i18n: file: kssl/certificateparty.ui:112
-#. i18n: ectx: property (text), widget (QLabel, cityTag)
-#: rc.cpp:324
-msgid "City:"
-msgstr "ទីក្រុង ៖"
-
-#. i18n: file: kssl/certificateparty.ui:122
-#. i18n: ectx: property (text), widget (QLabel, city)
-#: rc.cpp:327
-msgid "Lakeridge Meadows"
-msgstr "ឡេឃឺរីជ មីដូវ"
 
 #: ../kioslave/file/file.cpp:209
 #, kde-format
@@ -6108,6 +6108,14 @@ msgstr ""
 "បន្ថែម កែសម្រួល ឬ​ជ្រើស​ចំណាំ​បាន ។<br /><br />ចំណាំ​ទាំងនេះ គឺ​ជាក់លាក់​ចំពោះ​ប្រអប់​ឯកសារ ប៉ុន្តែ​បើ​"
 "មិនដូចនោះ​ទេ វា​​ប្រតិបត្តិ​ដូច​ចំណាំ​នៅ​កន្លែង​ផ្សេងទៀត​នៅ​ក្នុង KDE អញ្ចឹង ។</qt>"
 
+#: ../kfile/kurlnavigatortogglebutton.cpp:93
+msgid "Click for Location Navigation"
+msgstr "ចុច​ដើម្បី​បង្ហាញ​ការ​រុករក​ទីតាំង"
+
+#: ../kfile/kurlnavigatortogglebutton.cpp:95
+msgid "Click to Edit Location"
+msgstr "ចុច​ដើម្បី​កែសម្រួល​ទីតាំង"
+
 #: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:156
 #, kde-format
 msgid "A file or folder named %1 already exists."
@@ -6278,6 +6286,21 @@ msgstr "បើក​កម្មវិធី​គ្រប់គ្រង​ឯ
 msgid "&View"
 msgstr "ទិដ្ឋភាព "
 
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "ឧបករណ៍"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr "Subversion"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:176
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "ផ្សេងទៀត"
+
 #: ../kfile/kdirselectdialog.cpp:128
 msgctxt "folder name"
 msgid "New Folder"
@@ -6323,14 +6346,6 @@ msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ"
 
-#: ../kfile/kurlnavigatortogglebutton.cpp:90
-msgid "Click for Location Navigation"
-msgstr "ចុច​ដើម្បី​បង្ហាញ​ការ​រុករក​ទីតាំង"
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:92
-msgid "Click to Edit Location"
-msgstr "ចុច​ដើម្បី​កែសម្រួល​ទីតាំង"
-
 #: ../kfile/kfileplacesview.cpp:575
 msgctxt "@action:inmenu"
 msgid "Empty Trash"
@@ -6355,12 +6370,12 @@ msgstr "បង្ហាញ​ធាតុ​ទាំងអស់ "
 msgid "&Remove Entry '%1'"
 msgstr "យក​ធាតុ '%1' ចេញ"
 
-#: ../kfile/kfileplacesview.cpp:634
+#: ../kfile/kfileplacesview.cpp:636
 msgctxt "@info"
 msgid "Do you really want to empty the Trash? All items will be deleted."
 msgstr "តើ​អ្នក​ពិតជា​ចង់​​សម្អាត​ធុង​សំរាម​ឬ ? ធាតុ​ទាំងអស់​នឹង​ត្រូវបាន​លុប ។"
 
-#: ../kfile/kurlnavigatorbutton.cpp:596
+#: ../kfile/kurlnavigatorbutton.cpp:599
 msgctxt "@action:inmenu"
 msgid "More"
 msgstr "ផ្សេង​ទៀត"
@@ -6434,27 +6449,27 @@ msgstr ""
 "<qt>ជ្រើស​ការ​កំណត់​នេះ ប្រសិន​បើ​អ្នក​ចង់​បង្ហាញ​ធាតុ​នេះ​តែ​នៅពេល​ដែល​ប្រើ​កម្មវិធី​បច្ចុប្បន្ន (%1) ។<br /"
 "><br />ប្រសិន​បើ​ការ​កំណត់​មិនត្រូវ​បាន​ជ្រើស ធាតុ​នឹង​មាន​នៅ​ក្នុង​គ្រប់​កម្មវិធី​ទាំងអស់ ។</qt>"
 
-#: ../kfile/kurlnavigator.cpp:427
+#: ../kfile/kurlnavigator.cpp:429
 msgid "Copy"
 msgstr "​ចម្លង"
 
-#: ../kfile/kurlnavigator.cpp:431
+#: ../kfile/kurlnavigator.cpp:433
 msgid "Paste"
 msgstr "បិទភ្ជាប់"
 
-#: ../kfile/kurlnavigator.cpp:438
+#: ../kfile/kurlnavigator.cpp:440
 msgid "Edit"
 msgstr "កែសម្រួល"
 
-#: ../kfile/kurlnavigator.cpp:441
+#: ../kfile/kurlnavigator.cpp:443
 msgid "Navigate"
 msgstr "រុករក"
 
-#: ../kfile/kurlnavigator.cpp:456
+#: ../kfile/kurlnavigator.cpp:458
 msgid "Show Full Path"
 msgstr "បង្ហាញ​ផ្លូវពេញលេញ"
 
-#: ../kfile/kurlnavigator.cpp:688
+#: ../kfile/kurlnavigator.cpp:690
 msgid "Custom Path"
 msgstr "ផ្លូវ​ផ្ទាល់ខ្លួន"
 
@@ -6592,18 +6607,3 @@ msgstr "មាន​កំហុស​បាន​កើតឡើង ខណៈ�
 #: ../kfile/kfiletreeview.cpp:187
 msgid "Show Hidden Folders"
 msgstr "បង្ហាញ​ថត​ដែល​លាក់"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:164
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "ឧបករណ៍"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:168
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr "Subversion"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:172
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "ផ្សេងទៀត"
