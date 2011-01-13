@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail-mobile\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-11 02:44+0100\n"
+"POT-Creation-Date: 2011-01-13 02:26+0100\n"
 "PO-Revision-Date: 2010-12-30 15:48+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -446,11 +446,11 @@ msgstr "គ្មាន​អ៊ីមែល​ត្រូវ​បាននា
 msgid "The MBox does not contain any emails."
 msgstr "MBox មិនមាន​អ៊ីមែល​ទេ ។"
 
-#: mailactionmanager.cpp:42
+#: mailactionmanager.cpp:42 mainview.cpp:1245 mainview.cpp:1299
 msgid "Important"
 msgstr "សំខាន់"
 
-#: mailactionmanager.cpp:47
+#: mailactionmanager.cpp:47 mainview.cpp:1246 mainview.cpp:1307
 msgid "Action Item"
 msgstr "ធាតុ​សកម្មភាព"
 
@@ -526,7 +526,7 @@ msgstr "ផ្ទុក​សេចក្ដីយោង​ខាង​ក្រ
 msgid "Expiration Properties"
 msgstr "លក្ខណសម្បត្តិ​ផុត​កំណត់"
 
-#: mailactionmanager.cpp:125 mainview.cpp:1240 mainview.cpp:1491
+#: mailactionmanager.cpp:125 mainview.cpp:1240 mainview.cpp:1544
 msgid "Move Displayed Emails To Trash"
 msgstr "ផ្លាស់ទី​អ៊ីមែល​ដែលបាន​បង្ហាញ​​ទៅ​ធុង​សំរាម"
 
@@ -546,33 +546,33 @@ msgstr "អនុវត្ត​តម្រង"
 msgid "New Filter"
 msgstr "តម្រង​ថ្មី"
 
-#: main.cpp:60
-msgid "KMail Mobile"
-msgstr "KMail Mobile"
-
-#: messagelistproxy.cpp:113
+#: mailthreadgroupercomparator.cpp:232 messagelistproxy.cpp:113
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#: messagelistproxy.cpp:115
+#: mailthreadgroupercomparator.cpp:234 messagelistproxy.cpp:115
 msgid "Today"
 msgstr "ថ្ងៃ​នេះ"
 
-#: messagelistproxy.cpp:117
+#: mailthreadgroupercomparator.cpp:236 messagelistproxy.cpp:117
 msgid "Yesterday"
 msgstr "ម្សិលមិញ"
 
-#: messagelistproxy.cpp:127
+#: mailthreadgroupercomparator.cpp:246 messagelistproxy.cpp:127
 #, kde-format
 msgid "One Week Ago"
 msgid_plural "%1 Weeks Ago"
 msgstr[0] "%1 កន្លង​ទៅ"
 
-#: messagelistproxy.cpp:140
+#: mailthreadgroupercomparator.cpp:259 messagelistproxy.cpp:140
 #, kde-format
 msgctxt "Message Aggregation Group Header: Month name and Year number"
 msgid "%1 %2"
 msgstr "%1 %2"
+
+#: main.cpp:60
+msgid "KMail Mobile"
+msgstr "KMail Mobile"
 
 #: mainview.cpp:357
 msgid "Messagelist Display Format"
@@ -679,95 +679,121 @@ msgid "Mark Displayed Emails As Read"
 msgstr "សម្គាល់​អ៊ីមែល​ដែល​បាន​បង្ហាញ​ថា​អាន​រួច"
 
 #: mainview.cpp:1241
-msgid "Move Email To Trash"
+#, fuzzy
+#| msgid "Move Email To Trash"
+msgid "Move To Trash"
 msgstr "ផ្លាស់ទី​អ៊ីមែល​ទៅ​ធុង​សំរាម"
 
 #: mainview.cpp:1242
 msgid "Remove Duplicate Emails"
 msgstr "យក​អ៊ីមែល​ស្ទួន​ចេញ"
 
-#: mainview.cpp:1244
-msgid "Copy Email To"
+#: mainview.cpp:1243 mainview.cpp:1291
+msgid "Read"
+msgstr ""
+
+#: mainview.cpp:1244 mainview.cpp:1289
+msgid "Unread"
+msgstr ""
+
+#: mainview.cpp:1248
+#, fuzzy
+#| msgid "Copy Email To"
+msgid "Copy To"
 msgstr "ចម្លង​អ៊ីមែល​ទៅកាន់"
 
-#: mainview.cpp:1245
-msgid "Move Email To"
+#: mainview.cpp:1249
+#, fuzzy
+#| msgid "Move Email To"
+msgid "Move To"
 msgstr "ផ្លាស់ទី​អ៊ីមែល​ទៅ​កាន់"
 
-#: mainview.cpp:1247
+#: mainview.cpp:1251
 msgid "New Subfolder"
 msgstr "ថត​រង​ថ្មី"
 
-#: mainview.cpp:1248
+#: mainview.cpp:1252
 msgid "Synchronize This Folder"
 msgid_plural "Synchronize These Folders"
 msgstr[0] "ធ្វើ​សមកាលកម្ម​ថត​ទាំង​នេះ"
 
-#: mainview.cpp:1249
+#: mainview.cpp:1253
 msgid "Folder Properties"
 msgstr "លក្ខណសម្បត្តិ​ថត"
 
-#: mainview.cpp:1250
+#: mainview.cpp:1254
 msgid "Delete Folder"
 msgid_plural "Delete Folders"
 msgstr[0] "លុប​ថត"
 
-#: mainview.cpp:1251
+#: mainview.cpp:1255
 msgid "Move Folder To"
 msgstr "ផ្លាស់ទី​ថត​ទៅ​កាន់"
 
-#: mainview.cpp:1252
+#: mainview.cpp:1256
 msgid "Copy Folder To"
 msgstr "ចម្លង​ថត​ទៅ​កាន់"
 
-#: mainview.cpp:1254
+#: mainview.cpp:1260
 msgid "Synchronize All Accounts"
 msgstr "ធ្វើសមកាលកម្ម​គណនី​ទាំងអស់"
 
-#: mainview.cpp:1266
+#: mainview.cpp:1297
+#, fuzzy
+#| msgid "Important"
+msgid "Unimportant"
+msgstr "សំខាន់"
+
+#: mainview.cpp:1305
+#, fuzzy
+#| msgid "Action Item"
+msgid "No Action Item"
+msgstr "ធាតុ​សកម្មភាព"
+
+#: mainview.cpp:1319
 msgid "Add"
 msgstr "បន្ថែម"
 
-#: mainview.cpp:1267
+#: mainview.cpp:1320
 msgid "Delete"
 msgstr "លុប"
 
-#: mainview.cpp:1268 rc.cpp:215 rc.cpp:230 rc.cpp:235
+#: mainview.cpp:1321 rc.cpp:215 rc.cpp:230 rc.cpp:235
 msgid "Edit"
 msgstr "កែសម្រួល"
 
-#: mainview.cpp:1276
+#: mainview.cpp:1329
 msgctxt "@title:window"
 msgid "New Account"
 msgstr "គនណី​ថ្មី"
 
-#: mainview.cpp:1278
+#: mainview.cpp:1331
 #, kde-format
 msgid "Could not create account: %1"
 msgstr "មិនអាច​បង្កើត​គណនី ៖ %1"
 
-#: mainview.cpp:1280
+#: mainview.cpp:1333
 msgid "Account creation failed"
 msgstr "បានបរាជ័យ​ក្នុងការ​បង្កើត​គណនី"
 
-#: mainview.cpp:1283
+#: mainview.cpp:1336
 msgctxt "@title:window"
 msgid "Delete Account?"
 msgstr "លុបគណនី ?"
 
-#: mainview.cpp:1285
+#: mainview.cpp:1338
 msgid "Do you really want to delete the selected account?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​គណនី​ដែលបានជ្រើស​ឬ ?"
 
-#: mainview.cpp:1498
+#: mainview.cpp:1551
 msgid "Empty Trash"
 msgstr "សម្អាត​ធុង​សំរាម"
 
-#: mainview.cpp:1595
+#: mainview.cpp:1648
 msgid "Could not fetch template."
 msgstr "មិនអាច​ទៅ​យក​ពុម្ព​បាន​ទេ ។"
 
-#: mainview.cpp:1596
+#: mainview.cpp:1649
 msgid "Template Fetching Error"
 msgstr "កំហុស​ក្នុងការ​ទៅ​យក​ពុម្ព"
 
