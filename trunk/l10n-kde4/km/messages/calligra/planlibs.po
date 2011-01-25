@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatolibs\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-23 03:22+0100\n"
+"POT-Creation-Date: 2011-01-25 03:40+0100\n"
 "PO-Revision-Date: 2010-03-09 09:17+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -47,7 +47,7 @@ msgctxt "@item Send the reference (url) of the document"
 msgid "Reference"
 msgstr "សេចក្តី​យោង"
 
-#: kernel/kptdocuments.cpp:211
+#: kernel/kptdocuments.cpp:211 kernel/KPlatoXmlLoaderBase.cpp:1108
 #, fuzzy, kde-format
 msgid "Document loaded, URL=%1"
 msgstr "ឯកសារ​ត្រូវ​បាន​ផ្ទុក​ URL=%1"
@@ -462,50 +462,6 @@ msgstr ""
 msgid "Plan"
 msgstr "គម្រោង"
 
-#: kernel/kptschedule.cpp:135 kernel/kptschedule.cpp:140
-#, fuzzy
-msgid "Expected"
-msgstr "ដែលរំពឹង​"
-
-#: kernel/kptschedule.cpp:137
-#, fuzzy
-msgid "Optimistic"
-msgstr "សុទិដ្ឋិនិយម"
-
-#: kernel/kptschedule.cpp:139
-#, fuzzy
-msgid "Pessimistic"
-msgstr "ទុទិដ្ឋិនិយម"
-
-#: kernel/kptschedule.cpp:1389
-#, fuzzy
-msgid "Info"
-msgstr "ព័ត៌មាន"
-
-#: kernel/kptschedule.cpp:1390
-#, fuzzy
-msgid "Warning"
-msgstr "ព្រមាន"
-
-#: kernel/kptschedule.cpp:1391 kernel/kptschedule.cpp:1805
-#: kernel/kptschedule.cpp:1810 kernel/kptschedule.cpp:1815
-#: models/kptnodeitemmodel.cpp:1468 models/kptnodeitemmodel.cpp:1490
-#: models/kptnodeitemmodel.cpp:1512 models/kptnodeitemmodel.cpp:1534
-#: models/kptnodeitemmodel.cpp:1556 models/kptnodeitemmodel.cpp:1578
-#, fuzzy
-msgid "Error"
-msgstr "កំហុស"
-
-#: kernel/kptschedule.cpp:1795
-#, fuzzy
-msgid "Baselined"
-msgstr "ជាបន្ទាត់​គោល"
-
-#: kernel/kptschedule.cpp:1798
-#, fuzzy
-msgid "Scheduling"
-msgstr "ការកំណត់​ពេល"
-
 #: kernel/kpttask.cpp:1088
 #, fuzzy
 msgid "Calculate early finish "
@@ -676,7 +632,7 @@ msgid "Make appointments: Invalid time"
 msgstr "ធ្វើ​ការ​ណាត់​ជួប ៖ ពេល​វេលា​មិន​ត្រឹម​ត្រូវ"
 
 #: kernel/kptresource.cpp:799 kernel/kptresource.cpp:858
-#: kernel/kptresource.cpp:1088 kernel/kptresource.cpp:1152
+#: kernel/kptresource.cpp:1085 kernel/kptresource.cpp:1149
 #, fuzzy, kde-format
 msgid "Resource %1 has no calendar defined"
 msgstr "ធន​ធាន​ %1 ​គ្មាន​ធន​ធាន​ដែល​បាន​កំណត់​ទេ"
@@ -696,15 +652,59 @@ msgstr "ធ្វើ​ការ​ណាត់​ជួប ៖ ពេល​វ�
 msgid "Resource %1 not available in interval: %2 to %3"
 msgstr "ធន​ធាន​ %1 ​មិន​មាន​នៅ​ក្នុង​ចន្លោះ​ពេល​ ៖ %2 ដល់​ %3"
 
-#: kernel/kptresource.cpp:2413
+#: kernel/kptresource.cpp:2410
 #, fuzzy, kde-format
 msgid "Could not match effort. Want: %1 got: %2"
 msgstr "មិន​អាច​ផ្គូផ្គង​ទំហំ​ការងារ​​ ។ ត្រូវ​ការ ៖ %1 ទទួល​បាន​ %2"
 
-#: kernel/kptresource.cpp:2416
+#: kernel/kptresource.cpp:2413
 #, fuzzy, kde-format
 msgid "Resource %1 available from %2 to %3"
 msgstr "ធន​ធាន​ %1 មាន​ចាប់​ពី​ %2 ដល់​ %3"
+
+#: kernel/kptschedule.cpp:135 kernel/kptschedule.cpp:140
+#, fuzzy
+msgid "Expected"
+msgstr "ដែលរំពឹង​"
+
+#: kernel/kptschedule.cpp:137
+#, fuzzy
+msgid "Optimistic"
+msgstr "សុទិដ្ឋិនិយម"
+
+#: kernel/kptschedule.cpp:139
+#, fuzzy
+msgid "Pessimistic"
+msgstr "ទុទិដ្ឋិនិយម"
+
+#: kernel/kptschedule.cpp:1389
+#, fuzzy
+msgid "Info"
+msgstr "ព័ត៌មាន"
+
+#: kernel/kptschedule.cpp:1390
+#, fuzzy
+msgid "Warning"
+msgstr "ព្រមាន"
+
+#: kernel/kptschedule.cpp:1391 kernel/kptschedule.cpp:1805
+#: kernel/kptschedule.cpp:1810 kernel/kptschedule.cpp:1815
+#: models/kptnodeitemmodel.cpp:1468 models/kptnodeitemmodel.cpp:1490
+#: models/kptnodeitemmodel.cpp:1512 models/kptnodeitemmodel.cpp:1534
+#: models/kptnodeitemmodel.cpp:1556 models/kptnodeitemmodel.cpp:1578
+#, fuzzy
+msgid "Error"
+msgstr "កំហុស"
+
+#: kernel/kptschedule.cpp:1795
+#, fuzzy
+msgid "Baselined"
+msgstr "ជាបន្ទាត់​គោល"
+
+#: kernel/kptschedule.cpp:1798
+#, fuzzy
+msgid "Scheduling"
+msgstr "ការកំណត់​ពេល"
 
 #: models/kcalendar/kdatepicker.cpp:116
 #, fuzzy, kde-format
