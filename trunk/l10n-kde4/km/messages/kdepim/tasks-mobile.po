@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadicontact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-01-14 02:26+0100\n"
+"POT-Creation-Date: 2011-01-27 02:48+0100\n"
 "PO-Revision-Date: 2010-11-29 09:44+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -57,21 +57,6 @@ msgstr ""
 msgid "Archive Old Tasks"
 msgstr ""
 
-#: tasksexporthandler.cpp:31
-msgid "Which tasks shall be exported?"
-msgstr ""
-
-#: tasksexporthandler.cpp:36
-#, fuzzy
-#| msgctxt "@title:column all email addresses of a person"
-#| msgid "All EMails"
-msgid "All Tasks"
-msgstr "គ្រប់​អ៊ីមែល​"
-
-#: tasksexporthandler.cpp:41
-msgid "Tasks in current folder"
-msgstr ""
-
 #: tasksimporthandler.cpp:36
 msgid "Select iCal to Import"
 msgstr ""
@@ -112,7 +97,7 @@ msgstr ""
 msgid "The iCal does not contain any tasks."
 msgstr ""
 
-#: mainview.cpp:99 rc.cpp:91
+#: mainview.cpp:99 TaskActions.qml:143
 msgid "Tasks"
 msgstr ""
 
@@ -172,7 +157,7 @@ msgstr "ផ្លាស់​ទី​ទំនាក់ទំនង​ទៅក
 msgid "Copy Task List To"
 msgstr "ចម្លង​ទំនាក់ទំនង​ទៅកាន់​"
 
-#: mainview.cpp:340 rc.cpp:100
+#: mainview.cpp:340 tasks.qml:177
 msgid "New Task"
 msgstr ""
 
@@ -301,7 +286,7 @@ msgstr "បន្ថែម​"
 msgid "Delete"
 msgstr "លុប​"
 
-#: mainview.cpp:385 rc.cpp:79 rc.cpp:90
+#: mainview.cpp:385 TaskActions.qml:79 TaskActions.qml:133
 #, fuzzy
 #| msgid "Edit..."
 msgid "Edit"
@@ -352,6 +337,21 @@ msgstr ""
 msgid "No item selected."
 msgstr ""
 
+#: tasksexporthandler.cpp:31
+msgid "Which tasks shall be exported?"
+msgstr ""
+
+#: tasksexporthandler.cpp:36
+#, fuzzy
+#| msgctxt "@title:column all email addresses of a person"
+#| msgid "All EMails"
+msgid "All Tasks"
+msgstr "គ្រប់​អ៊ីមែល​"
+
+#: tasksexporthandler.cpp:41
+msgid "Tasks in current folder"
+msgstr ""
+
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
@@ -400,7 +400,7 @@ msgstr ""
 
 #. i18n: file: configwidget.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:23 rc.cpp:80 rc.cpp:84
+#: rc.cpp:23 TaskActions.qml:90 TaskActions.qml:108
 msgid "View"
 msgstr ""
 
@@ -506,134 +506,99 @@ msgstr ""
 msgid "only in folder"
 msgstr ""
 
-#: rc.cpp:69 rc.cpp:96
-#, kde-format
+#: BulkActionComponent.qml:31 tasks.qml:133
 msgid "1 folder"
 msgid_plural "%1 folders"
 msgstr[0] ""
 
-#: rc.cpp:70
+#: ConfigDialog.qml:60
 msgid "Ok"
 msgstr ""
 
-#: rc.cpp:71
+#: ConfigDialog.qml:72
 #, fuzzy
 #| msgctxt "@action:button"
 #| msgid "Cancel"
 msgid "Cancel"
 msgstr "បោះ​បង់​"
 
-#: rc.cpp:72
-#, kde-format
+#: TaskListView.qml:48
 msgid "Task: %1"
 msgstr ""
 
-#: rc.cpp:73
-#, kde-format
+#: TaskListView.qml:61
 msgid "Details: %1"
 msgstr ""
 
-#: rc.cpp:74
+#: TaskActions.qml:37
 #, fuzzy
 #| msgctxt "@title:column home address of a person"
 #| msgid "Home"
 msgid "Home"
 msgstr "ផ្ទះ​"
 
-#: rc.cpp:75
+#: TaskActions.qml:39
 msgid "Select Multiple Task Lists"
 msgstr ""
 
-#: rc.cpp:76
+#: TaskActions.qml:50
 msgid "Accounts"
 msgstr ""
 
-#: rc.cpp:77
+#: TaskActions.qml:58
 msgid "Account"
 msgstr ""
 
-#: rc.cpp:78
+#: TaskActions.qml:69
 msgid "Folder"
 msgstr ""
 
-#: rc.cpp:81 rc.cpp:85
+#: TaskActions.qml:91 TaskActions.qml:109
 msgid "Add View As Favorite"
 msgstr ""
 
-#: rc.cpp:82 rc.cpp:87
+#: TaskActions.qml:92 TaskActions.qml:111
 msgid "Switch To Editing Mode"
 msgstr ""
 
-#: rc.cpp:83
+#: TaskActions.qml:98
 msgid "Folders"
 msgstr ""
 
-#: rc.cpp:86
+#: TaskActions.qml:110
 msgid "Select Task Lists"
 msgstr ""
 
-#: rc.cpp:88
+#: TaskActions.qml:117
 msgid "Task"
 msgstr ""
 
-#: rc.cpp:89
+#: TaskActions.qml:126
 msgid "Attachments"
 msgstr ""
 
-#: rc.cpp:92
+#: TaskActions.qml:148
 msgid "Search For Tasks"
 msgstr ""
 
-#: rc.cpp:93
+#: TaskActions.qml:149
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Change Tags"
 msgid "Configure Tasks"
 msgstr "ប្តូរ​ស្លាក​"
 
-#: rc.cpp:97
-#, kde-format
+#: tasks.qml:134
 msgid "from 1 account"
 msgid_plural "from %1 accounts"
 msgstr[0] ""
 
-#: rc.cpp:98
-#, kde-format
+#: tasks.qml:135
 msgid "1 task"
 msgid_plural "%1 tasks"
 msgstr[0] ""
 
-#: rc.cpp:99
-#, fuzzy
-#| msgctxt "street/postal"
-#| msgid "Delete"
-msgid "Select"
-msgstr "លុប​"
-
-#: rc.cpp:99
-#, fuzzy
-msgid "Change Selection"
-msgstr "ការ​ជ្រើស​កូអរ​ដោនេ​"
-
-#: rc.cpp:101
-msgid "No tasks in this folder"
-msgstr ""
-
-#: rc.cpp:102
-#, fuzzy
-#| msgctxt "@title:tab"
-#| msgid "Location"
-msgid "Actions"
-msgstr "ទី​តាំង​"
-
-#: rc.cpp:103
-#, kde-format
-msgid "One task found"
-msgid_plural "%1 tasks found"
-msgstr[0] ""
-
-#: rc.cpp:95
-#, kde-format
+#: tasks.qml:132
 msgctxt "%1 is e.g. 3 folders, %2 is e.g. from 2 accounts, %3 is e.g. 9 tasks"
 msgid ""
 "You have selected \n"
@@ -641,6 +606,34 @@ msgid ""
 "%2\n"
 "%3"
 msgstr ""
+
+#: tasks.qml:151
+#, fuzzy
+#| msgctxt "street/postal"
+#| msgid "Delete"
+msgid "Select"
+msgstr "លុប​"
+
+#: tasks.qml:151
+#, fuzzy
+msgid "Change Selection"
+msgstr "ការ​ជ្រើស​កូអរ​ដោនេ​"
+
+#: tasks.qml:196
+msgid "No tasks in this folder"
+msgstr ""
+
+#: tasks.qml:262
+#, fuzzy
+#| msgctxt "@title:tab"
+#| msgid "Location"
+msgid "Actions"
+msgstr "ទី​តាំង​"
+
+#: tasks.qml:379
+msgid "One task found"
+msgid_plural "%1 tasks found"
+msgstr[0] ""
 
 #~ msgid ""
 #~ "The contact has been changed by someone else.\n"
