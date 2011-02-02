@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krunner\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2010-11-29 02:13+0100\n"
+"POT-Creation-Date: 2011-02-02 03:07+0100\n"
 "PO-Revision-Date: 2010-11-08 16:19+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -19,20 +19,45 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: interfaces/quicksand/qs_dialog.cpp:59 interfaces/quicksand/qs_dialog.cpp:60
+#: configdialog.cpp:52
+msgid "Plugins"
+msgstr "កម្មវិធី​ជំនួយ"
+
+#: configdialog.cpp:81
+msgid "User Interface"
+msgstr "ចំណុច​ប្រទាក់​អ្នក​ប្រើ"
+
+#: configdialog.cpp:87
+msgid "Available Features"
+msgstr "លក្ខណៈពិសេស​ដែល​អាច​ប្រើបាន"
+
 #: interfaces/default/interface.cpp:85 interfaces/default/interface.cpp:86
+#: interfaces/quicksand/qs_dialog.cpp:59 interfaces/quicksand/qs_dialog.cpp:60
 msgid "Settings"
 msgstr "ការ​កំណត់"
 
-#: interfaces/quicksand/qs_dialog.cpp:108
-msgid "Actions"
-msgstr "សកម្មភាព"
+#: interfaces/default/interface.cpp:107
+msgid "Help"
+msgstr "ជំនួយ"
 
-#: interfaces/quicksand/qs_dialog.cpp:317 interfaces/default/interface.cpp:259
+#: interfaces/default/interface.cpp:108
+msgid "Information on using this application"
+msgstr "ព័ត៌មាន​នៅពេល​ប្រើ​កម្មវិធី​នេះ"
+
+#: interfaces/default/interface.cpp:259 interfaces/quicksand/qs_dialog.cpp:317
 #, kde-format
 msgctxt "tooltip, shortcut"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
+
+#: interfaces/default/interface.cpp:409
+#, kde-format
+msgid "(From %1, %2)"
+msgstr "(ពី %1, %2)"
+
+#: interfaces/quicksand/qs_dialog.cpp:108
+msgid "Actions"
+msgstr "សកម្មភាព"
 
 #: interfaces/quicksand/qs_matchview.cpp:193
 msgid "Type to search."
@@ -64,18 +89,56 @@ msgctxt "%1 current item number, %2 total number of items"
 msgid "%1 of %2"
 msgstr "%1 នៃ %2"
 
-#: interfaces/default/interface.cpp:107
-msgid "Help"
-msgstr "ជំនួយ"
+#: krunnerapp.cpp:128 krunnerdialog.cpp:69
+msgid "Run Command"
+msgstr "រត់​ពាក្យ​បញ្ជា"
 
-#: interfaces/default/interface.cpp:108
-msgid "Information on using this application"
-msgstr "ព័ត៌មាន​នៅពេល​ប្រើ​កម្មវិធី​នេះ"
+#: krunnerapp.cpp:133
+msgid "Run Command on clipboard contents"
+msgstr "រត់ពាក្យ​បញ្ជា នៅលើ​មាតិកា​ក្ដារ​តម្បៀតខ្ទាស់"
 
-#: interfaces/default/interface.cpp:409
+#: krunnerapp.cpp:139
+msgid "Show System Activity"
+msgstr "បង្ហាញ​សកម្មភាព​ប្រព័ន្ធ"
+
+#: krunnerapp.cpp:145
+msgid "Switch User"
+msgstr "ប្តូរ​អ្នក​ប្រើ"
+
+#: krunnerapp.cpp:155
+msgid "Lock Session"
+msgstr "ចាក់សោ​សម័យ"
+
+#: krunnerapp.cpp:195
 #, kde-format
-msgid "(From %1, %2)"
-msgstr "(ពី %1, %2)"
+msgctxt "Run krunner restricting the search only to runner %1"
+msgid "Run Command (runner \"%1\" only)"
+msgstr "រត់​ពាក្យ​បញ្ជា (សម្រាប់តែ​កម្មវិធី​រត់ \"%1\" ប៉ុណ្ណោះ)"
+
+#: ksystemactivitydialog.cpp:39
+msgid "System Activity"
+msgstr "សកម្មភាព​ប្រព័ន្ធ"
+
+#: lock/autologout.cc:38
+msgid "<qt><nobr><b>Automatic Log Out</b></nobr></qt>"
+msgstr "<qt><nobr><b>ចេញ​ដោយ​ស្វ័យប្រវត្តិ</b></nobr></qt>​​​"
+
+#: lock/autologout.cc:39
+msgid ""
+"<qt>To prevent being logged out, resume using this session by moving the "
+"mouse or pressing a key.</qt>"
+msgstr "<qt>ដើម្បី​ទប់ស្កាត់​ការ​ចេញ បន្ដ​ប្រើ​សម័យ​ដោយ​ផ្លាស់​ទី​កណ្ដុរ ឬ​ចុច​គ្រាប់​ចុច​មួយ ។</qt>"
+
+#: lock/autologout.cc:44
+msgid "Time Remaining:"
+msgstr "ពេល​នៅសល់ ៖"
+
+#: lock/autologout.cc:77
+#, kde-format
+msgid "<qt><nobr>You will be automatically logged out in 1 second</nobr></qt>"
+msgid_plural ""
+"<qt><nobr>You will be automatically logged out in %1 seconds</nobr></qt>"
+msgstr[0] "<qt><nobr>អ្នកនឹង​ត្រូវ​បាន​ចេញ​ដោយ​ស្វ័យប្រវត្តិ​ក្នុង​រយៈពេល %1 វិនាទី</nobr></qt>"
 
 #: lock/lockdlg.cc:100
 msgid "<nobr><b>The session is locked</b></nobr><br />"
@@ -156,26 +219,21 @@ msgstr "ធ្វើឲ្យសកម្ម"
 msgid "Start &New Session"
 msgstr "ចាប់​ផ្ដើម​សម័យ​ថ្មី"
 
-#: lock/autologout.cc:38
-msgid "<qt><nobr><b>Automatic Log Out</b></nobr></qt>"
-msgstr "<qt><nobr><b>ចេញ​ដោយ​ស្វ័យប្រវត្តិ</b></nobr></qt>​​​"
+#: lock/lockprocess.cc:830
+msgid "Will not lock the session, as unlocking would be impossible:\n"
+msgstr "នឹង​មិន​ចាក់​សោ​សម័យ ព្រោះថា​ការ​ដោះសោ​នឹង​មិន​អាច​ធ្វើ​ទៅបាន ៖\n"
 
-#: lock/autologout.cc:39
-msgid ""
-"<qt>To prevent being logged out, resume using this session by moving the "
-"mouse or pressing a key.</qt>"
-msgstr "<qt>ដើម្បី​ទប់ស្កាត់​ការ​ចេញ បន្ដ​ប្រើ​សម័យ​ដោយ​ផ្លាស់​ទី​កណ្ដុរ ឬ​ចុច​គ្រាប់​ចុច​មួយ ។</qt>"
+#: lock/lockprocess.cc:834
+msgid "Cannot start <i>kcheckpass</i>."
+msgstr "មិន​អាច​ចាប់​ផ្ដើម <i>kcheckpass</i> ។"
 
-#: lock/autologout.cc:44
-msgid "Time Remaining:"
-msgstr "ពេល​នៅសល់ ៖"
+#: lock/lockprocess.cc:835
+msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
+msgstr "<i>kcheckpass</i> មិន​អាច​ប្រតិបត្តិ ។ ប្រហែល​ជា​វា​មិន​មែន​ជា SetUID root ។"
 
-#: lock/autologout.cc:77
-#, kde-format
-msgid "<qt><nobr>You will be automatically logged out in 1 second</nobr></qt>"
-msgid_plural ""
-"<qt><nobr>You will be automatically logged out in %1 seconds</nobr></qt>"
-msgstr[0] "<qt><nobr>អ្នកនឹង​ត្រូវ​បាន​ចេញ​ដោយ​ស្វ័យប្រវត្តិ​ក្នុង​រយៈពេល %1 វិនាទី</nobr></qt>"
+#: lock/lockprocess.cc:898
+msgid "No appropriate greeter plugin configured."
+msgstr "គ្មាន​កម្មវិធី​ជំនួយ​វន្ទនាការសមរម្យ ត្រូវបាន​កំណត់​រចនាសម្ព័ន្ធ ។"
 
 #: lock/main.cc:61
 msgid "KDE Screen Locker"
@@ -209,26 +267,6 @@ msgstr "ចាប់ផ្ដើម​ជា​មួយ​ប្លាស្ម
 msgid "Fork into the background after starting up"
 msgstr "បំបែក​ជា​ផ្ទៃ​ខាងក្រោយ​បន្ទាប់​ពីចាប់ផ្ដើម"
 
-#: lock/lockprocess.cc:830
-msgid "Will not lock the session, as unlocking would be impossible:\n"
-msgstr "នឹង​មិន​ចាក់​សោ​សម័យ ព្រោះថា​ការ​ដោះសោ​នឹង​មិន​អាច​ធ្វើ​ទៅបាន ៖\n"
-
-#: lock/lockprocess.cc:834
-msgid "Cannot start <i>kcheckpass</i>."
-msgstr "មិន​អាច​ចាប់​ផ្ដើម <i>kcheckpass</i> ។"
-
-#: lock/lockprocess.cc:835
-msgid "<i>kcheckpass</i> is unable to operate. Possibly it is not setuid root."
-msgstr "<i>kcheckpass</i> មិន​អាច​ប្រតិបត្តិ ។ ប្រហែល​ជា​វា​មិន​មែន​ជា SetUID root ។"
-
-#: lock/lockprocess.cc:898
-msgid "No appropriate greeter plugin configured."
-msgstr "គ្មាន​កម្មវិធី​ជំនួយ​វន្ទនាការសមរម្យ ត្រូវបាន​កំណត់​រចនាសម្ព័ន្ធ ។"
-
-#: krunnerdialog.cpp:69 krunnerapp.cpp:128
-msgid "Run Command"
-msgstr "រត់​ពាក្យ​បញ្ជា"
-
 #: main.cpp:38
 msgid "KDE run command interface"
 msgstr "ចំណុច​ប្រទាក់​ពាក្យ​បញ្ជា​រត់ KDE"
@@ -248,44 +286,6 @@ msgstr "Aaron J. Seigo"
 #: main.cpp:54
 msgid "Author and maintainer"
 msgstr "​អ្នក​និពន្ធ និង​អ្នក​ថែទាំ​"
-
-#: krunnerapp.cpp:133
-msgid "Run Command on clipboard contents"
-msgstr "រត់ពាក្យ​បញ្ជា នៅលើ​មាតិកា​ក្ដារ​តម្បៀតខ្ទាស់"
-
-#: krunnerapp.cpp:139
-msgid "Show System Activity"
-msgstr "បង្ហាញ​សកម្មភាព​ប្រព័ន្ធ"
-
-#: krunnerapp.cpp:145
-msgid "Switch User"
-msgstr "ប្តូរ​អ្នក​ប្រើ"
-
-#: krunnerapp.cpp:155
-msgid "Lock Session"
-msgstr "ចាក់សោ​សម័យ"
-
-#: krunnerapp.cpp:195
-#, kde-format
-msgctxt "Run krunner restricting the search only to runner %1"
-msgid "Run Command (runner \"%1\" only)"
-msgstr "រត់​ពាក្យ​បញ្ជា (សម្រាប់តែ​កម្មវិធី​រត់ \"%1\" ប៉ុណ្ណោះ)"
-
-#: configdialog.cpp:52
-msgid "Plugins"
-msgstr "កម្មវិធី​ជំនួយ"
-
-#: configdialog.cpp:81
-msgid "User Interface"
-msgstr "ចំណុច​ប្រទាក់​អ្នក​ប្រើ"
-
-#: configdialog.cpp:87
-msgid "Available Features"
-msgstr "លក្ខណៈពិសេស​ដែល​អាច​ប្រើបាន"
-
-#: ksystemactivitydialog.cpp:39
-msgid "System Activity"
-msgstr "សកម្មភាព​ប្រព័ន្ធ"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
