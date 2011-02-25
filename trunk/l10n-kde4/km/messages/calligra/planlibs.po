@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatolibs\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-02-22 03:21+0100\n"
+"POT-Creation-Date: 2011-02-25 03:09+0100\n"
 "PO-Revision-Date: 2010-03-09 09:17+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -318,7 +318,7 @@ msgstr "គ្មាន"
 #. i18n: file: ui/kptscheduleeditor.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
 #: kernel/kptnode.cpp:137 models/kptpertcpmmodel.cpp:425
-#: models/kptresourceappointmentsmodel.cpp:1263 rc.cpp:328
+#: models/kptresourceappointmentsmodel.cpp:1271 rc.cpp:328
 msgid "Project"
 msgstr "គម្រោង"
 
@@ -787,10 +787,9 @@ msgstr "%1 (គណនី​លំនាំ​ដើម)"
 #: models/kptaccountsmodel.cpp:131 models/kptaccountsmodel.cpp:1037
 #: models/kptresourceallocationmodel.cpp:332 models/kptresourcemodel.cpp:433
 #: models/kptschedulemodel.cpp:759 models/kptschedulemodel.cpp:1017
-#: models/kptresourceappointmentsmodel.cpp:908
+#: models/kptcalendarmodel.cpp:424 models/kptresourceappointmentsmodel.cpp:908
 #: models/kptresourceappointmentsmodel.cpp:923
-#: models/kptresourceappointmentsmodel.cpp:1500
-#: models/kptcalendarmodel.cpp:424 rc.cpp:316
+#: models/kptresourceappointmentsmodel.cpp:1519 rc.cpp:316
 #, fuzzy
 msgid "Name"
 msgstr "ឈ្មោះ​"
@@ -846,7 +845,7 @@ msgstr "Url"
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptdocumentmodel.cpp:172 models/kptrelationmodel.cpp:148
 #: models/kptresourceallocationmodel.cpp:333 models/kptresourcemodel.cpp:434
-#: models/kptresourceappointmentsmodel.cpp:1501 rc.cpp:319
+#: models/kptresourceappointmentsmodel.cpp:1520 rc.cpp:319
 #, fuzzy
 msgid "Type"
 msgstr "ប្រភេទ"
@@ -1356,67 +1355,6 @@ msgstr "ការបញ្ជូន​កញ្ចប់​ការងារ​
 #, fuzzy, kde-format
 msgid "Task reported %1% completed"
 msgstr "ការរាយការណ៍​ភារកិច្ច​ %1% ​បាន​បញ្ចប់"
-
-#: models/kptresourceappointmentsmodel.cpp:581
-#, fuzzy, kde-format
-msgid "External project: %1"
-msgstr "គម្រោង​ខាង​ក្រៅ​ ៖ %1"
-
-#: models/kptresourceappointmentsmodel.cpp:657
-#, fuzzy, kde-format
-msgid "The total booking on %1, along with the maximum hours for the resource"
-msgstr "ការប្រើ​ប្រាស់​សរុប​នៅ​ %1 ព្រម​ទាំង​ម៉ោង​អតិបរមា​សម្រាប់​ធន​ធាន"
-
-#: models/kptresourceappointmentsmodel.cpp:689
-#, fuzzy
-msgid "Total booking by this task"
-msgstr "ការ​ប្រើ​ប្រាស់​សរុប​ដោយ​ភារកិច្ច​នេះ"
-
-#: models/kptresourceappointmentsmodel.cpp:691
-#, fuzzy
-msgid "Total booking by the external project"
-msgstr "ការប្រើ​ប្រាស់​សរុប​ដោយ​គម្រោង​ខាង​ក្រៅ"
-
-#: models/kptresourceappointmentsmodel.cpp:734
-#, fuzzy, kde-format
-msgid "Booking by this task on %1"
-msgstr "ការ​ប្រើ​ប្រាស់​ដោយ​ភារកិច្ច​​នេះ​នៅ​ %1"
-
-#: models/kptresourceappointmentsmodel.cpp:736
-#, fuzzy, kde-format
-msgid "Booking by external project on %1"
-msgstr "ការ​ប្រើ​ប្រាស់​ដោយ​គម្រោង​ខាង​ក្រៅ​នៅ​ %1"
-
-#: models/kptresourceappointmentsmodel.cpp:924
-#, fuzzy
-msgid "The total hours booked"
-msgstr "ម៉ោង​សរុប​ដែល​បាន​ប្រើ"
-
-#: models/kptresourceappointmentsmodel.cpp:928
-#, fuzzy, kde-format
-msgid "Bookings on %1"
-msgstr "ប្រើ​នៅ​ %1"
-
-#: models/kptresourceappointmentsmodel.cpp:1298
-#, fuzzy
-msgid "Interval"
-msgstr "ចន្លោះ​ពេល"
-
-#: models/kptresourceappointmentsmodel.cpp:1502
-#, fuzzy
-msgid "Start Time"
-msgstr "ពេល​វេលា​ចាប់​ផ្តើម​"
-
-#: models/kptresourceappointmentsmodel.cpp:1503
-#, fuzzy
-msgid "End Time"
-msgstr "ពេល​វេលា​បញ្ចប់"
-
-#: models/kptresourceappointmentsmodel.cpp:1504
-#, fuzzy
-msgctxt "@title:column noun"
-msgid "Load"
-msgstr "ផ្ទុក"
 
 #: models/kptnodechartmodel.cpp:157
 #, fuzzy
@@ -3117,6 +3055,79 @@ msgctxt "@info:tooltip"
 msgid "Working"
 msgstr "ធ្វើការ"
 
+#: models/kptresourceappointmentsmodel.cpp:581
+#, fuzzy, kde-format
+msgid "External project: %1"
+msgstr "គម្រោង​ខាង​ក្រៅ​ ៖ %1"
+
+#: models/kptresourceappointmentsmodel.cpp:657
+#, fuzzy, kde-format
+msgid "The total booking on %1, along with the maximum hours for the resource"
+msgstr "ការប្រើ​ប្រាស់​សរុប​នៅ​ %1 ព្រម​ទាំង​ម៉ោង​អតិបរមា​សម្រាប់​ធន​ធាន"
+
+#: models/kptresourceappointmentsmodel.cpp:689
+#, fuzzy
+msgid "Total booking by this task"
+msgstr "ការ​ប្រើ​ប្រាស់​សរុប​ដោយ​ភារកិច្ច​នេះ"
+
+#: models/kptresourceappointmentsmodel.cpp:691
+#, fuzzy
+msgid "Total booking by the external project"
+msgstr "ការប្រើ​ប្រាស់​សរុប​ដោយ​គម្រោង​ខាង​ក្រៅ"
+
+#: models/kptresourceappointmentsmodel.cpp:734
+#, fuzzy, kde-format
+msgid "Booking by this task on %1"
+msgstr "ការ​ប្រើ​ប្រាស់​ដោយ​ភារកិច្ច​​នេះ​នៅ​ %1"
+
+#: models/kptresourceappointmentsmodel.cpp:736
+#, fuzzy, kde-format
+msgid "Booking by external project on %1"
+msgstr "ការ​ប្រើ​ប្រាស់​ដោយ​គម្រោង​ខាង​ក្រៅ​នៅ​ %1"
+
+#: models/kptresourceappointmentsmodel.cpp:924
+#, fuzzy
+msgid "The total hours booked"
+msgstr "ម៉ោង​សរុប​ដែល​បាន​ប្រើ"
+
+#: models/kptresourceappointmentsmodel.cpp:928
+#, fuzzy, kde-format
+msgid "Bookings on %1"
+msgstr "ប្រើ​នៅ​ %1"
+
+#: models/kptresourceappointmentsmodel.cpp:1253
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "%1: %2<nl/>%3: %4"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:1306
+#, fuzzy
+msgid "Interval"
+msgstr "ចន្លោះ​ពេល"
+
+#: models/kptresourceappointmentsmodel.cpp:1314
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "%1: %2<nl/>%3: %4<nl/>Assigned: %5<nl/>Available: %6"
+msgstr ""
+
+#: models/kptresourceappointmentsmodel.cpp:1521
+#, fuzzy
+msgid "Start Time"
+msgstr "ពេល​វេលា​ចាប់​ផ្តើម​"
+
+#: models/kptresourceappointmentsmodel.cpp:1522
+#, fuzzy
+msgid "End Time"
+msgstr "ពេល​វេលា​បញ្ចប់"
+
+#: models/kptresourceappointmentsmodel.cpp:1523
+#, fuzzy
+msgctxt "@title:column noun"
+msgid "Load"
+msgstr "ផ្ទុក"
+
 #: ui/kptaccountseditor.cpp:227
 #, fuzzy
 msgid "Add Account"
@@ -3128,7 +3139,7 @@ msgid "Add Subaccount"
 msgstr "បន្ថែម​គណនី​រង"
 
 #: ui/kptaccountseditor.cpp:239 ui/kptcalendareditor.cpp:631
-#: ui/kptdependencyeditor.cpp:2228 ui/kptresourceeditor.cpp:295
+#: ui/kptdependencyeditor.cpp:2239 ui/kptresourceeditor.cpp:295
 #: ui/kptscheduleeditor.cpp:287 ui/kpttaskeditor.cpp:590
 #, fuzzy
 msgctxt "@action"
@@ -3214,34 +3225,34 @@ msgstr "%1 ៖ កំណត់​ទៅ​ជា​ថ្ងៃ​មិន​�
 msgid "Set %1 to Undefined"
 msgstr "កំណត់​ %1 ​ទៅ​ជា​មិន​កំណត់"
 
-#: ui/kptdependencyeditor.cpp:2197 ui/kpttaskeditor.cpp:559
+#: ui/kptdependencyeditor.cpp:2208 ui/kpttaskeditor.cpp:559
 #: ui/kpttaskeditor.cpp:564
 #, fuzzy
 msgid "Add Task"
 msgstr "បន្ថែម​ភារកិច្ច"
 
-#: ui/kptdependencyeditor.cpp:2202
+#: ui/kptdependencyeditor.cpp:2213
 #, fuzzy
 msgid "Add Task..."
 msgstr "បន្ថែមភារកិច្ច..."
 
-#: ui/kptdependencyeditor.cpp:2207
+#: ui/kptdependencyeditor.cpp:2218
 #, fuzzy
 msgid "Add Milestone..."
 msgstr "បន្ថែម​ដំណាក់​កាល..."
 
-#: ui/kptdependencyeditor.cpp:2213 ui/kpttaskeditor.cpp:575
+#: ui/kptdependencyeditor.cpp:2224 ui/kpttaskeditor.cpp:575
 #: ui/kpttaskeditor.cpp:580
 #, fuzzy
 msgid "Add Sub-Task"
 msgstr "បន្ថែម​ភារកិច្ច​រង..."
 
-#: ui/kptdependencyeditor.cpp:2218
+#: ui/kptdependencyeditor.cpp:2229
 #, fuzzy
 msgid "Add Sub-Task..."
 msgstr "បន្ថែម​ភារកិច្ច​រង..."
 
-#: ui/kptdependencyeditor.cpp:2223
+#: ui/kptdependencyeditor.cpp:2234
 #, fuzzy
 msgid "Add Sub-Milestone..."
 msgstr "បន្ថែម​ដំណាក់​កាល​រង​..."
@@ -3366,8 +3377,8 @@ msgctxt "@infot:tooltip"
 msgid "Name: %1<nl/>Planned: %2 - %3"
 msgstr ""
 
-#: ui/kptganttview.cpp:131 ui/kpttaskstatusview.cpp:1186
-#: ui/kpttaskstatusview.cpp:1199
+#: ui/kptganttview.cpp:131 ui/kpttaskstatusview.cpp:1255
+#: ui/kpttaskstatusview.cpp:1268
 #, fuzzy
 msgid "Chart"
 msgstr "គំនូស​តាង"
@@ -3383,7 +3394,7 @@ msgctxt "@title:tab"
 msgid "Chart"
 msgstr "គំនូស​តាង"
 
-#: ui/kptganttview.cpp:546 ui/kpttaskeditor.cpp:619 ui/kpttaskeditor.cpp:1047
+#: ui/kptganttview.cpp:555 ui/kpttaskeditor.cpp:619 ui/kpttaskeditor.cpp:1047
 #, fuzzy
 msgid "Show Project"
 msgstr "បង្ហាញ​គម្រោង"
@@ -3861,25 +3872,25 @@ msgstr "សប្តាហ៍​ %1"
 msgid "General Settings"
 msgstr "ការកំណត់​ទូទៅ​"
 
-#: ui/kpttaskstatusview.cpp:511
+#: ui/kpttaskstatusview.cpp:563
 #, fuzzy
 msgctxt "@info:tooltip"
 msgid "Cost performance index (BCWP/ACWP)"
 msgstr "លិបិក្រម​អនុវត្ត​តម្លៃ​ (BCWP/ACWP)"
 
-#: ui/kpttaskstatusview.cpp:847 ui/kpttaskstatusview.cpp:850
+#: ui/kpttaskstatusview.cpp:899 ui/kpttaskstatusview.cpp:902
 #, fuzzy, kde-format
 msgctxt "Chart axis title 1=currency symbol"
 msgid "Cost (%1)"
 msgstr "ថ្លៃ​ចំណាយ"
 
-#: ui/kpttaskstatusview.cpp:848 ui/kpttaskstatusview.cpp:851
+#: ui/kpttaskstatusview.cpp:900 ui/kpttaskstatusview.cpp:903
 #, fuzzy
 msgctxt "Chart axis title"
 msgid "Effort (hours)"
 msgstr "ទំហំ​ការងារ"
 
-#: ui/kpttaskstatusview.cpp:1186 ui/kpttaskstatusview.cpp:1200
+#: ui/kpttaskstatusview.cpp:1255 ui/kpttaskstatusview.cpp:1269
 #, fuzzy
 msgid "Chart Settings"
 msgstr "ការកំណត់​គំនូស​តាង"
