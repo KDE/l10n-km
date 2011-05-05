@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-04 04:05+0200\n"
+"POT-Creation-Date: 2011-05-05 04:05+0200\n"
 "PO-Revision-Date: 2010-12-06 09:53+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -160,10 +160,44 @@ msgid "KGet is downloading %1 file"
 msgid_plural "KGet is downloading %1 files"
 msgstr[0] "KGet កំពុង​ទាញយក​ឯកសារ %1"
 
+#: core/signature.cpp:217
+msgid "The key to verify the signature is missing, do you want to download it?"
+msgstr "​បាត់​សោ​ត្រូវ​ផ្ទៀងផ្ទាត់​ហត្ថលេខា​​ហើយ តើ​អ្នក​​អ្នក​ចង់​ទាញយក​វា​ដែរឬទេ ?"
+
+#: core/signature.cpp:235
+#, kde-format
+msgid ""
+"The signature could not be verified for %1. See transfer settings for more "
+"information."
+msgstr ""
+"ហត្ថលេខា​មិន​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​សម្រាប់ %1 នោះ​ទេ ។ ចំពោះ​ព័ត៌មាន​បន្ថែម​ សូម​មើល​កា​រកំណត់​ផ្ទេរ​ ។"
+
+#: core/signature.cpp:236
+msgid "Signature not verified"
+msgstr "ហត្ថលេខា​​មិន​បាន​ផ្ទៀងផ្ទាត់"
+
 #: core/linkimporter.cpp:90
 #, kde-format
 msgid "Error trying to get %1"
 msgstr "មាន​កំហុស​ក្នុង​ការ​យក %1"
+
+#: core/keydownloader.cpp:73
+msgid ""
+"No server for downloading keys is specified in settings. Downloading aborted."
+msgstr ""
+"គ្មាន​ម៉ាស៊ីន​បម្រើ​សម្រាប់​ទាញយក​សោ​ ត្រូវ​បាន​បញ្ជាក់​នៅ​ក្នុង​ការ​កំណត់​នោះ​ទេ ។ ការ​ទាញយក​បានបោះបង់ចោល ។"
+
+#: core/keydownloader.cpp:74 core/keydownloader.cpp:94
+msgid "No key server"
+msgstr "គ្មាន​ម៉ាស៊ីន​បម្រើ​សោ​ទេ"
+
+#: core/keydownloader.cpp:93
+msgid ""
+"No useful key server found, key not downloaded. Add more servers to the "
+"settings or restart KGet and retry downloading."
+msgstr ""
+"រក​មិនឃើញ​សោ​ដែលមានប្រយោជន៍​ទេ សោ​មិន​បានទាញយក​ទេ ។ បន្ថែម​ម៉ាស៊ីនបម្រើ​ផ្សេង​ទៀត​ទៅការ​កំណត់ ឬ​"
+"ចាប់ផ្ដើម KGet ឡើងវិញ ហើយ​ព្យាយាម​ទាញយក​ម្ដង​ទៀត ។"
 
 #: core/kget.cpp:121
 #, kde-format
@@ -331,7 +365,7 @@ msgid "You are already downloading the same file"
 msgstr "កំពុង​កំពុង​ទាញយក​ឯកសារ​ដូច​គ្នា​រួច​ហើយ"
 
 #: core/kget.cpp:1116 core/kget.cpp:1119 core/urlchecker.cpp:606
-#: core/urlchecker.cpp:713 transfer-plugins/metalink/metalink.cpp:737
+#: core/urlchecker.cpp:713 transfer-plugins/metalink/metalink.cpp:738
 msgid "File already exists"
 msgstr "មាន​ឯកសារ​រួច​ហើយ"
 
@@ -387,8 +421,8 @@ msgstr ""
 msgid "Download started"
 msgstr "បាន​ចាប់ផ្ដើម​កា​រទាញយក"
 
-#: core/kget.cpp:1355 core/datasourcefactory.cpp:286
-#: core/datasourcefactory.cpp:613 transfer-plugins/metalink/metalink.cpp:201
+#: core/kget.cpp:1355 core/datasourcefactory.cpp:287
+#: core/datasourcefactory.cpp:614 transfer-plugins/metalink/metalink.cpp:202
 #: ui/metalinkcreator/metalinkcreator.cpp:161
 #: ui/metalinkcreator/metalinkcreator.cpp:178
 msgid "Error"
@@ -452,89 +486,55 @@ msgstr "<p>ការ​ផ្ទេរ​ទាំងអស់​បាន​ច
 msgid "Downloads completed"
 msgstr "ការ​ទាញយក​បាន​បញ្ចប់"
 
-#: core/filemodel.cpp:280
+#: core/filemodel.cpp:281
 msgctxt "file in a filesystem"
 msgid "File"
 msgstr "ឯកសារ"
 
-#: core/filemodel.cpp:280
+#: core/filemodel.cpp:281
 msgctxt "status of the download"
 msgid "Status"
 msgstr "ស្ថានភាព"
 
-#: core/filemodel.cpp:280
+#: core/filemodel.cpp:281
 msgctxt "size of the download"
 msgid "Size"
 msgstr "ទំហំ"
 
-#: core/filemodel.cpp:280
+#: core/filemodel.cpp:281
 msgctxt "checksum of a file"
 msgid "Checksum"
 msgstr "ឆេកសាំ"
 
-#: core/filemodel.cpp:280
+#: core/filemodel.cpp:281
 msgctxt "signature of a file"
 msgid "Signature"
 msgstr "ហត្ថលេខា"
+
+#: core/verificationmodel.cpp:151
+msgctxt "the type of the hash, e.g. MD5"
+msgid "Type"
+msgstr "ប្រភេទ​"
+
+#: core/verificationmodel.cpp:153
+msgctxt "the used hash for verification"
+msgid "Hash"
+msgstr "Hash"
+
+#: core/verificationmodel.cpp:155
+msgctxt "verification-result of a file, can be true/false"
+msgid "Verified"
+msgstr "បាន​ផ្ទៀងផ្ទាត់"
 
 #: core/kgetkjobadapter.cpp:45
 msgid "KGet Transfer"
 msgstr "ការ​ផ្ទេរ​របស់ KGet"
 
-#: core/verifier.cpp:412
-msgctxt "the type of the hash, e.g. MD5"
-msgid "Type"
-msgstr "ប្រភេទ​"
-
-#: core/verifier.cpp:414
-msgctxt "the used hash for verification"
-msgid "Hash"
-msgstr "Hash"
-
-#: core/verifier.cpp:416
-msgctxt "verification-result of a file, can be true/false"
-msgid "Verified"
-msgstr "បាន​ផ្ទៀងផ្ទាត់"
-
-#: core/verifier.cpp:1210
-msgid "The key to verify the signature is missing, do you want to download it?"
-msgstr "​បាត់​សោ​ត្រូវ​ផ្ទៀងផ្ទាត់​ហត្ថលេខា​​ហើយ តើ​អ្នក​​អ្នក​ចង់​ទាញយក​វា​ដែរឬទេ ?"
-
-#: core/verifier.cpp:1228
-#, kde-format
-msgid ""
-"The signature could not be verified for %1. See transfer settings for more "
-"information."
-msgstr ""
-"ហត្ថលេខា​មិន​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​សម្រាប់ %1 នោះ​ទេ ។ ចំពោះ​ព័ត៌មាន​បន្ថែម​ សូម​មើល​កា​រកំណត់​ផ្ទេរ​ ។"
-
-#: core/verifier.cpp:1229
-msgid "Signature not verified"
-msgstr "ហត្ថលេខា​​មិន​បាន​ផ្ទៀងផ្ទាត់"
-
-#: core/verifier.cpp:1334
-msgid ""
-"No server for downloading keys is specified in settings. Downloading aborted."
-msgstr ""
-"គ្មាន​ម៉ាស៊ីន​បម្រើ​សម្រាប់​ទាញយក​សោ​ ត្រូវ​បាន​បញ្ជាក់​នៅ​ក្នុង​ការ​កំណត់​នោះ​ទេ ។ ការ​ទាញយក​បានបោះបង់ចោល ។"
-
-#: core/verifier.cpp:1335 core/verifier.cpp:1355
-msgid "No key server"
-msgstr "គ្មាន​ម៉ាស៊ីន​បម្រើ​សោ​ទេ"
-
-#: core/verifier.cpp:1354
-msgid ""
-"No useful key server found, key not downloaded. Add more servers to the "
-"settings or restart KGet and retry downloading."
-msgstr ""
-"រក​មិនឃើញ​សោ​ដែលមានប្រយោជន៍​ទេ សោ​មិន​បានទាញយក​ទេ ។ បន្ថែម​ម៉ាស៊ីនបម្រើ​ផ្សេង​ទៀត​ទៅការ​កំណត់ ឬ​"
-"ចាប់ផ្ដើម KGet ឡើងវិញ ហើយ​ព្យាយាម​ទាញយក​ម្ដង​ទៀត ។"
-
-#: core/datasourcefactory.cpp:286
+#: core/datasourcefactory.cpp:287
 msgid "Filesize is larger than maximum file size supported by VFAT."
 msgstr "ទំហំ​ឯកសារ​ធំជាង​ទំហំ​ឯកសារ​អតិបរមា​ដែលបានគាំទ្រ​ដោយ VFAT ។"
 
-#: core/datasourcefactory.cpp:613
+#: core/datasourcefactory.cpp:614
 #, kde-format
 msgctxt "A mirror is removed when the file has the wrong download size"
 msgid "%1 removed as it did report a wrong file size."
@@ -948,20 +948,20 @@ msgstr "ឈ្មោះ​ម៉ាស៊ីន ៖"
 msgid "URL:"
 msgstr "URL ៖"
 
-#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:227
-#: transfer-plugins/kio/transferKio.cpp:264
+#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:228
+#: transfer-plugins/kio/transferKio.cpp:265
 #, kde-format
 msgid "The download (%1) could not be verified. Do you want to repair it?"
 msgstr "ការ​ទាញយក (%1) មិនអាច​ត្រូ​វបាន​ផ្ទៀងផ្ទាត់​ទេ ។ តើ​អ្នក​ចង់​ជួសជុល​វា​ដែរឬទេ ?"
 
-#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:230
-#: transfer-plugins/kio/transferKio.cpp:267
+#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:231
+#: transfer-plugins/kio/transferKio.cpp:268
 #, kde-format
 msgid "The download (%1) could not be verified. Do you want to redownload it?"
 msgstr "ការ​ទាញយក (%1) មិនអាច​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​ទេ ។ តើ​អ្នក​ចង់​ទាញយក​វា​ម្ដង​ទៀត​ដែរឬទេ ?"
 
-#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:234
-#: transfer-plugins/kio/transferKio.cpp:271
+#: transfer-plugins/multisegmentkio/transfermultisegkio.cpp:235
+#: transfer-plugins/kio/transferKio.cpp:272
 msgid "Verification failed."
 msgstr "បានបរាជ័យ​ក្នុង​កា​រផ្ទៀងផ្ទាត់"
 
@@ -969,7 +969,7 @@ msgstr "បានបរាជ័យ​ក្នុង​កា​រផ្ទៀ
 msgid "Failed to write to the file."
 msgstr ""
 
-#: transfer-plugins/kio/transferKio.cpp:93
+#: transfer-plugins/kio/transferKio.cpp:94
 msgctxt "transfer state: connecting"
 msgid "Connecting...."
 msgstr "កំពុង​តភ្ជាប់..."
@@ -1006,24 +1006,24 @@ msgctxt "Transfer State: Aborted"
 msgid "Aborted"
 msgstr "បាន​បោះបង់"
 
-#: transfer-plugins/metalink/metalink.cpp:82
+#: transfer-plugins/metalink/metalink.cpp:83
 msgid "Downloading Metalink File...."
 msgstr "កំពុង​ទាញយក​ឯកសារ​តំណ​មេតា...."
 
-#: transfer-plugins/metalink/metalink.cpp:116
+#: transfer-plugins/metalink/metalink.cpp:117
 msgid ""
 "A newer version of this Metalink might exist, do you want to download it?"
 msgstr "មាន​កំណែ​ថ្មីជាង​របស់​តំណមេតា​​នេះ តើ​អ្នក​ចង់ទាញយក​វា​ដែរឬទេ ?"
 
-#: transfer-plugins/metalink/metalink.cpp:117
+#: transfer-plugins/metalink/metalink.cpp:118
 msgid "Redownload Metalink"
 msgstr "ទាញយក​តំណ​មេតា​ឡើងវិញ"
 
-#: transfer-plugins/metalink/metalink.cpp:201
+#: transfer-plugins/metalink/metalink.cpp:202
 msgid "Download failed, no working URLs were found."
 msgstr "បាន​បរាជ័យ​ក្នុងកា​រទាញយក រក​មិនឃើញ URLs ដំណើរការ ។"
 
-#: transfer-plugins/metalink/metalink.cpp:510
+#: transfer-plugins/metalink/metalink.cpp:511
 msgid ""
 "The download could not be verified, do you want to repair (if repairing does "
 "not work the download would be restarted) it?"
@@ -1568,25 +1568,25 @@ msgstr "ជ្រើស​ថត​បណ្ដោះអាសន្ន​លំ
 msgid "Import dropped files"
 msgstr "នាំចូល​ឯកសារ​ដែល​បាន​ទម្លាក់"
 
-#: ui/metalinkcreator/dragdlg.cpp:90 ui/metalinkcreator/filedlg.cpp:64
-#: ui/metalinkcreator/filedlg.cpp:172
+#: ui/metalinkcreator/dragdlg.cpp:90 ui/metalinkcreator/filedlg.cpp:66
+#: ui/metalinkcreator/filedlg.cpp:174
 msgctxt "comma, to seperate members of a list"
 msgid ","
 msgstr ","
 
-#: ui/metalinkcreator/filedlg.cpp:113
+#: ui/metalinkcreator/filedlg.cpp:115
 msgid "File Properties"
 msgstr "លក្ខណសម្បត្តិ​ឯកសារ"
 
-#: ui/metalinkcreator/filedlg.cpp:125
+#: ui/metalinkcreator/filedlg.cpp:127
 msgid "Enter a filename."
 msgstr "បញ្ចូល​ឈ្មោះ​ឯកសារ ។"
 
-#: ui/metalinkcreator/filedlg.cpp:128
+#: ui/metalinkcreator/filedlg.cpp:130
 msgid "The filename exists already, choose a different one."
 msgstr "មាន​ឈ្មោះ​ឯកសារ​រួច​ហើយ ជ្រើ​សឈ្មោះ​ឯកសារ​ផ្សេង ។"
 
-#: ui/metalinkcreator/filedlg.cpp:131
+#: ui/metalinkcreator/filedlg.cpp:133
 msgid "Enter at least one URL."
 msgstr "បញ្ចូល​ URL យ៉ាង​ហោចណាស់​មួយ ។"
 
@@ -2029,21 +2029,21 @@ msgstr "ជ្រើស​ជួរឈរ"
 msgid "Transfer Details"
 msgstr "សេចក្ដី​លម្អិត​នៃ​ការ​ផ្ទេរ"
 
-#: ui/verificationdialog.cpp:37
+#: ui/verificationdialog.cpp:39
 msgid "Add checksum"
 msgstr "បន្ថែម​ឆេកសាំ"
 
-#: ui/verificationdialog.cpp:86
+#: ui/verificationdialog.cpp:88
 #, kde-format
 msgid "Transfer Verification for %1"
 msgstr "ការ​ផ្ទៀងផ្ទាត់​ការ​ផ្ទេរ​សម្រាប់ %1"
 
-#: ui/verificationdialog.cpp:199
+#: ui/verificationdialog.cpp:201
 #, kde-format
 msgid "%1 was successfully verified."
 msgstr "%1 ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​ដោយ​ជោគជ័យ ។"
 
-#: ui/verificationdialog.cpp:200
+#: ui/verificationdialog.cpp:202
 msgid "Verification successful"
 msgstr "ការ​ផ្ទៀងផ្ទាត់​បាន​ជោគជ័យ"
 
