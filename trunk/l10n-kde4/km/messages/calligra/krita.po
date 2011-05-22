@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-21 03:33+0200\n"
+"POT-Creation-Date: 2011-05-22 03:34+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1375,7 +1375,7 @@ msgstr "ទម្រង់​ស្រទាប់ ៖"
 
 #. i18n: file: plugins/extensions/compose/wdg_compose.ui:52
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:207 ui/tool/kis_tool_paint.cc:247
+#: rc.cpp:207 ui/kis_paintop_box.cc:154
 msgid "Opacity: "
 msgstr "ភាព​ស្រអាប់ ៖"
 
@@ -4125,7 +4125,7 @@ msgstr "អដ្ឋកោណ (៨)"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:1418 rc.cpp:3094
 #: plugins/filters/roundcorners/kis_round_corners_filter.cpp:136
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:965
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:954
 msgid "Radius"
 msgstr "កាំ"
 
@@ -7213,7 +7213,7 @@ msgstr "កំណត់​ស្រទាប់​បច្ចុប្បន្
 #. i18n: file: plugins/tools/tool_crop/wdg_tool_crop.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
 #: rc.cpp:3127 image/kis_crop_visitor.h:121
-#: plugins/tools/tool_crop/kis_tool_crop.cc:442
+#: plugins/tools/tool_crop/kis_tool_crop.cc:451
 msgid "Crop"
 msgstr "​ច្រឹប"
 
@@ -7484,8 +7484,8 @@ msgstr "ប្រភេទ​កោង"
 
 #. i18n: file: plugins/tools/tool_transform2/wdg_tool_transform.ui:1062
 #. i18n: ectx: property (text), widget (QPushButton, lockUnlockPointsButton)
-#: rc.cpp:3303 plugins/tools/tool_transform2/kis_tool_transform.cc:2502
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2893
+#: rc.cpp:3303 plugins/tools/tool_transform2/kis_tool_transform.cc:2509
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2900
 msgid "Lock Points"
 msgstr "ចំណុច​ចាក់​សោ"
 
@@ -9265,17 +9265,17 @@ msgstr "ការ​បំពេញ​ច្រើន"
 msgid "Gradient Fill"
 msgstr "បំពេញ​ជម្រាល​"
 
-#: image/brushengine/kis_paintop_factory.cpp:45
+#: image/brushengine/kis_paintop_factory.cpp:61
 msgctxt "Category of brush engines"
 msgid "Experimental"
 msgstr "ពិសោធន៍​"
 
-#: image/brushengine/kis_paintop_factory.cpp:50
+#: image/brushengine/kis_paintop_factory.cpp:66
 msgctxt "Category of brush engines"
 msgid "Stable"
 msgstr "មាន​លំនឹង​"
 
-#: image/brushengine/kis_paintop_registry.cc:113
+#: image/brushengine/kis_paintop_registry.cc:117
 msgid "default"
 msgstr "លំនាំដើម"
 
@@ -9816,25 +9816,13 @@ msgstr "ស្រទាប់​តែង..."
 msgid "Compose Layer"
 msgstr "ស្រទាប់​តែង"
 
-#: plugins/extensions/dockers/channeldocker/channeldocker_dock.cpp:33
-msgid "Channels"
-msgstr "ឆានែល​​"
-
 #: plugins/extensions/dockers/channeldocker/channelmodel.cpp:61
 msgid "Enabled"
 msgstr "បាន​បើក​"
 
-#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:44
-#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:102
-#: plugins/extensions/histogram/dlg_histogram.cc:47
-#: plugins/extensions/histogram/dlg_histogram.cc:54
-msgid "Histogram"
-msgstr "អ៊ីស្តូក្រាម"
-
-#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:115
-#, kde-format
-msgid "Histograms are not supported for images in the %1 colorspace."
-msgstr "អ៊ីស្តូក្រាម​មិន​ត្រូវ​បាន​គាំ​ទ្រ​សម្រាប់​រូបភាព​នៅ​ក្នុង​គំរូ​ពណ៌ %1 ទេ ។"
+#: plugins/extensions/dockers/channeldocker/channeldocker_dock.cpp:33
+msgid "Channels"
+msgstr "ឆានែល​​"
 
 #: plugins/extensions/dockers/defaultdockers/kis_birdeye_box.cc:62
 #, fuzzy
@@ -9844,6 +9832,18 @@ msgstr "ជ្រើស​ពន្លឺ​ (បញ្ឈប់) សម្រ�
 #: plugins/extensions/dockers/defaultdockers/kis_palette_docker.cc:32
 msgid "Palettes"
 msgstr "ក្តារលាយ​"
+
+#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:44
+#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:106
+#: plugins/extensions/histogram/dlg_histogram.cc:47
+#: plugins/extensions/histogram/dlg_histogram.cc:54
+msgid "Histogram"
+msgstr "អ៊ីស្តូក្រាម"
+
+#: plugins/extensions/dockers/defaultdockers/histogramdock.cpp:119
+#, kde-format
+msgid "Histograms are not supported for images in the %1 colorspace."
+msgstr "អ៊ីស្តូក្រាម​មិន​ត្រូវ​បាន​គាំ​ទ្រ​សម្រាប់​រូបភាព​នៅ​ក្នុង​គំរូ​ពណ៌ %1 ទេ ។"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:76
 msgid "Layers"
@@ -9928,7 +9928,7 @@ msgstr "ស្ទួន​ស្រទាប់ ឬ​របាំង"
 msgid "&Effect Mask..."
 msgstr "របាំង​បែបផែន..."
 
-#: plugins/extensions/dockers/digitalmixer/digitalmixer_dock.cc:42
+#: plugins/extensions/dockers/digitalmixer/digitalmixer_dock.cc:43
 msgid "Digital Colors Mixer"
 msgstr "ឧបករណ៍​លាយ​ពណ៌ឌីជីថល"
 
@@ -9945,10 +9945,6 @@ msgstr "ប្រវត្តិ​មិន​ធ្វើ​វិញ"
 msgid "Small Color Selector"
 msgstr "ជម្រើស​ស្រដៀងគ្នា"
 
-#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:30
-msgid "Specific Color Selector"
-msgstr "កម្មវិធីជ្រើស​ពណ៌​ជាក់លាក់"
-
 #: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:47
 #, kde-format
 msgid "%1:"
@@ -9960,7 +9956,11 @@ msgstr "%1 ៖"
 msgid "Color name:"
 msgstr "គំរូ​ពណ៌ ៖"
 
-#: plugins/extensions/dockers/trianglecolorselector/kis_triangle_color_selector_dock.cc:28
+#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
+msgid "Specific Color Selector"
+msgstr "កម្មវិធីជ្រើស​ពណ៌​ជាក់លាក់"
+
+#: plugins/extensions/dockers/trianglecolorselector/kis_triangle_color_selector_dock.cc:29
 msgid "Triangle Color Selector"
 msgstr "កម្មវិធី​ជ្រើស​ពណ៌​ត្រីកោណ"
 
@@ -10165,10 +10165,6 @@ msgstr "ការ​ជ្រើស​សណ្ឋាន​ពិសេស..."
 msgid "KS%1 Engine"
 msgstr "ម៉ាស៊ីន KS%1"
 
-#: plugins/extensions/painterlyframework/kis_painterlymixerdocker.cpp:36
-msgid "Painterly Color Mixer"
-msgstr "ឧបករណ៍​លាយ​ពណ៌​តាម​កម្មវិធីគូរ"
-
 #: plugins/extensions/painterlyframework/kis_ks_colorspace.h:77
 #, kde-format
 msgid "Painterly Color Space, %1 wavelengths"
@@ -10189,6 +10185,10 @@ msgstr "ការ​ជ្រាប"
 #: plugins/extensions/painterlyframework/kis_ks_colorspace.h:135
 msgid "Scattering"
 msgstr "ចេញ"
+
+#: plugins/extensions/painterlyframework/kis_painterlymixerdocker.cpp:36
+msgid "Painterly Color Mixer"
+msgstr "ឧបករណ៍​លាយ​ពណ៌​តាម​កម្មវិធីគូរ"
 
 #: plugins/extensions/rotateimage/rotateimage.cc:67
 msgid "&Rotate Image..."
@@ -10741,7 +10741,7 @@ msgstr ""
 " គ្រប់​រូបភាព​របស់ Krita ទាំង​អស់​ជា​ពណ៌​ពិត ។ នឹង​មានការ​ផ្លាស់​ប្តូរ​នៅ​ក្នុង​ពណ៌​ និង​បែប​ផែន​ចលនា (បើ​"
 "មាន) ។"
 
-#: plugins/formats/gif/gif_export.cpp:64 ui/dialogs/kis_dlg_preferences.cc:657
+#: plugins/formats/gif/gif_export.cpp:64 ui/dialogs/kis_dlg_preferences.cc:654
 #: ui/kis_aboutdata.h:31 ui/kis_clipboard.cc:154
 msgid "Krita"
 msgstr "កម្មវិធី​ krita "
@@ -11023,7 +11023,7 @@ msgid "Darken"
 msgstr "ធ្វើ​ឲ្យ​ងងឹត​"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:31
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:925
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:914
 msgid "Mirror"
 msgstr "ឆ្លុះ"
 
@@ -11036,12 +11036,12 @@ msgid "Mirrored"
 msgstr "ឆ្លុះMirrored"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:35
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:945
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:934
 msgid "Horizontally"
 msgstr "ផ្ដេក"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:37
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:947
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:936
 msgid "Vertically"
 msgstr "បញ្ឈរ"
 
@@ -11845,23 +11845,23 @@ msgid "Color Rate"
 msgstr "អត្រា​ពណ៌"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:137
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:889
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:878
 msgctxt "smooth out the curves while drawing"
 msgid "Smoothness:"
 msgstr "ភាព​រលោង ៖"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:152
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:904
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:893
 msgid "Assistant:"
 msgstr "អ្នក​ជំនួយ​ការ ៖"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:153
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:905
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:894
 msgid "You need to add Ruler Assistants before this tool will work."
 msgstr "អ្នក​ត្រូវ​តែ​បន្ថែម​អ្នក​ជំនួយ​ការ​បន្ទាត់​មុន​ពេល​ឧបករណ៍​នេះ​នឹង​ធ្វើ​ការ ។"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:156
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:908
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:897
 msgid "Assistant Magnetism"
 msgstr "មេដែក​ជំនួយ"
 
@@ -12068,23 +12068,23 @@ msgstr "បង្កើន​ទំហំ​ជក់"
 msgid "Decrease Brush Size"
 msgstr "បន្ថយ​ទំហំ​ជក់"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:917
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:906
 #, fuzzy
 #| msgid "Axis X"
 msgid "Axis point"
 msgstr "អ័ក្ស X"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:924
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:913
 msgid "Symmetry"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:926
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:915
 #, fuzzy
 #| msgid "Triangle"
 msgid "Translate"
 msgstr "ត្រីកោណ"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:930
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:919
 #, fuzzy
 #| msgid "Brush tip"
 msgid "Brush count"
@@ -12186,7 +12186,7 @@ msgstr "ភាព​ស្រពិចស្រពិល​ ៖ "
 msgid "Similar Selection"
 msgstr "ជម្រើស​ស្រដៀងគ្នា"
 
-#: plugins/tools/tool_crop/kis_tool_crop.h:147
+#: plugins/tools/tool_crop/kis_tool_crop.h:148
 msgid "Crop the image to an area"
 msgstr "ច្រឹប​រូបភាព​ទៅ​តាម​ផ្ទៃ"
 
@@ -12344,30 +12344,30 @@ msgstr "ការ​នុវត្ត​ការ​ប្លែង​ភាព
 msgid "Transform"
 msgstr "ប្លែង​"
 
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2099
-msgid "Apply Transformation"
-msgstr "អនុវត្ត​ការ​ប្លែងភាព"
-
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2356
-msgid "Affine"
-msgstr "ជាប់​ទាក់ទង"
-
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2357
-msgid "Similitude"
-msgstr "ភាព​ដូច​គ្នា​"
-
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2358
-msgid "Rigid"
-msgstr "មិន​ចេះ​ប្រែប្រួល"
-
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2504
-#: plugins/tools/tool_transform2/kis_tool_transform.cc:2889
-msgid "Unlock Points"
-msgstr "ចំណុះ​មិន​ចាក់សោ"
-
 #: plugins/tools/tool_transform2/kis_tool_transform.h:435
 msgid "Transform a layer or a selection"
 msgstr "ប្លែង​ស្រទាប់ ឬ​ការ​ជ្រើស"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2106
+msgid "Apply Transformation"
+msgstr "អនុវត្ត​ការ​ប្លែងភាព"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2363
+msgid "Affine"
+msgstr "ជាប់​ទាក់ទង"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2364
+msgid "Similitude"
+msgstr "ភាព​ដូច​គ្នា​"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2365
+msgid "Rigid"
+msgstr "មិន​ចេះ​ប្រែប្រួល"
+
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2511
+#: plugins/tools/tool_transform2/kis_tool_transform.cc:2896
+msgid "Unlock Points"
+msgstr "ចំណុះ​មិន​ចាក់សោ"
 
 #: ui/kis_filter_handler.cc:110
 #, kde-format
@@ -12449,6 +12449,10 @@ msgstr "លក្ខណៈសម្បត្តិ​រូបភាព"
 msgid "Layer Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ​ស្រទាប់"
 
+#: ui/dialogs/kis_dlg_transformation_effect.cpp:38
+msgid "New Transformation Mask"
+msgstr "របាំង​បម្លែង​ថ្មី"
+
 #: ui/dialogs/kis_dlg_preferences.cc:190
 msgid "Monitor profile: "
 msgstr "ទម្រង់​ម៉ូនីទ័រ ៖ "
@@ -12477,7 +12481,7 @@ msgstr "ការ​កំណត់​បន្ទះ"
 msgid "Tablet"
 msgstr "បន្ទះ"
 
-#: ui/dialogs/kis_dlg_preferences.cc:654
+#: ui/dialogs/kis_dlg_preferences.cc:651
 msgid ""
 "You are trying to enable OpenGL\n"
 "\n"
@@ -12492,10 +12496,6 @@ msgstr ""
 "​ឬ​អាច​ដោយ​សារ​តែ​បញ្ហា​កម្មវិធី​បញ្ជា ឬ​ដោយ​សារ​បញ្ហា​ជាមួយ​បែប​ផែន​បង្អួច​ ។\n"
 "\n"
 " តើ​អ្នក​ពិត​ជា​ចង់​បើក​ OpenGL ឬ​?\n"
-
-#: ui/dialogs/kis_dlg_transformation_effect.cpp:38
-msgid "New Transformation Mask"
-msgstr "របាំង​បម្លែង​ថ្មី"
 
 #: ui/flake/kis_shape_controller.cpp:229
 #, kde-format
@@ -12719,39 +12719,39 @@ msgstr "Andreas Lundin"
 msgid "New configuration %1"
 msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ថ្មី %1"
 
-#: ui/kis_paintop_box.cc:98
+#: ui/kis_paintop_box.cc:99
 msgid "Painter's Toolchest"
 msgstr "ប្រអប់​ឧបករណ៍​របស់​កម្មវិធី​គូរ"
 
-#: ui/kis_paintop_box.cc:102
+#: ui/kis_paintop_box.cc:103
 msgid "Edit brush settings"
 msgstr "កែសម្រួល​ការ​កំណត់​ជក់"
 
-#: ui/kis_paintop_box.cc:108
+#: ui/kis_paintop_box.cc:109
 msgid "Choose brush preset"
 msgstr "ជ្រើស​ការកំណត់​ជក់​ជា​មុន"
 
-#: ui/kis_paintop_box.cc:115
+#: ui/kis_paintop_box.cc:116
 msgid "Set eraser mode"
 msgstr "របៀបវាស់ ៖​"
 
-#: ui/kis_paintop_box.cc:125
+#: ui/kis_paintop_box.cc:126
 msgid "Set horizontal mirror mode"
 msgstr "កំណត់​របៀប​ឆ្លុះ​​ផ្តេក"
 
-#: ui/kis_paintop_box.cc:135
+#: ui/kis_paintop_box.cc:136
 msgid "Set vertical mirror mode"
 msgstr "កំណត់​របៀប​​ឆ្លុះ​បញ្ឈរ"
 
-#: ui/kis_paintop_box.cc:146
+#: ui/kis_paintop_box.cc:147
 msgid "Mode: "
 msgstr "របៀប​ ៖ "
 
-#: ui/kis_paintop_box.cc:157
+#: ui/kis_paintop_box.cc:166
 msgid "Save to Palette"
 msgstr "រក្សា​ទុក​ទៅ​ក្តារលាយ​ពណ៌"
 
-#: ui/kis_paintop_box.cc:165
+#: ui/kis_paintop_box.cc:174
 msgid "Choose workspace"
 msgstr "ជ្រើស​តំបន់​ធ្វើ​ការ​"
 
@@ -13297,14 +13297,6 @@ msgstr "ជ្រើស​យុទ្ធសាស្ត្រ​បញ្ជូ
 msgid "x%1"
 msgstr "x%1"
 
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:46
-msgid "Thumbnails"
-msgstr "Thumbnails"
-
-#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:51
-msgid "Details"
-msgstr "​សេចក្ដី​លម្អិត"
-
 #: ui/widgets/kis_wdg_generator.cpp:150 ui/widgets/kis_wdg_generator.cpp:164
 msgid "No configuration options."
 msgstr "គ្មាន​ជម្រើស​កំណត់​រចនាសម្ព័ន្ធ ។"
@@ -13341,3 +13333,11 @@ msgstr "ភ្ជាប់​ទៅ​របារ​ឧបករណ៍"
 #: ui/widgets/kis_paintop_presets_popup.cpp:233
 msgid "Detach from Toolbar"
 msgstr "ផ្តាច់​ពី​របារ​ឧបករណ៍"
+
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:47
+msgid "Thumbnails"
+msgstr "Thumbnails"
+
+#: ui/widgets/kis_paintop_presets_chooser_popup.cpp:52
+msgid "Details"
+msgstr "​សេចក្ដី​លម្អិត"
