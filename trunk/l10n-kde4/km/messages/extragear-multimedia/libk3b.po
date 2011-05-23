@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libk3b\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-02 03:40+0200\n"
+"POT-Creation-Date: 2011-05-23 03:46+0200\n"
 "PO-Revision-Date: 2010-06-09 09:13+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -19,10 +19,6 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: km_KH\n"
 
-#: core/k3bglobals.cpp:360
-msgid "Auto"
-msgstr "ស្វ័យប្រវត្តិ"
-
 #: core/k3bkjobbridge.cpp:105
 msgid "Source"
 msgstr ""
@@ -30,6 +26,10 @@ msgstr ""
 #: core/k3bkjobbridge.cpp:106
 msgid "Target"
 msgstr ""
+
+#: core/k3bglobals.cpp:360
+msgid "Auto"
+msgstr "ស្វ័យប្រវត្តិ"
 
 #: jobs/k3baudiosessionreadingjob.cpp:142
 msgid "Could not load libcdparanoia."
@@ -84,9 +84,9 @@ msgstr "ធ្វើ​ទ្រង់ទ្រាយ​រហ័ស"
 #: jobs/k3bcdda2wavreader.cpp:97 jobs/k3bdvdbooktypejob.cpp:288
 #: jobs/k3bdvdformattingjob.cpp:464 jobs/k3breadcdreader.cpp:106
 #: jobs/k3bclonejob.cpp:89 projects/datacd/k3bmsinfofetcher.cpp:56
-#: projects/datacd/k3bmsinfofetcher.cpp:92 projects/k3bcdrdaowriter.cpp:447
-#: projects/k3bcdrecordwriter.cpp:214 projects/k3bgrowisofswriter.cpp:156
-#: projects/videocd/k3bvcdjob.cpp:204
+#: projects/datacd/k3bmsinfofetcher.cpp:92 projects/videocd/k3bvcdjob.cpp:204
+#: projects/k3bcdrdaowriter.cpp:447 projects/k3bcdrecordwriter.cpp:214
+#: projects/k3bgrowisofswriter.cpp:156
 #, kde-format
 msgid "Could not find %1 executable."
 msgstr "មិន​អាច​ស្វែងរក​​ឯកសារ​ប្រតិបត្តិ %1 ឡើយ ។"
@@ -96,8 +96,8 @@ msgstr "មិន​អាច​ស្វែងរក​​ឯកសារ​ប
 #: jobs/k3bvideodvdtitledetectclippingjob.cpp:181
 #: jobs/k3bvideodvdtitletranscodingjob.cpp:384
 #: projects/datacd/k3bisoimager.cpp:307 projects/datacd/k3bisoimager.cpp:449
-#: projects/k3bcdrdaowriter.cpp:549 projects/k3bcdrecordwriter.cpp:455
-#: projects/k3bgrowisofswriter.cpp:367 projects/videocd/k3bvcdjob.cpp:258
+#: projects/videocd/k3bvcdjob.cpp:258 projects/k3bcdrdaowriter.cpp:549
+#: projects/k3bcdrecordwriter.cpp:455 projects/k3bgrowisofswriter.cpp:367
 #, kde-format
 msgid "Could not start %1."
 msgstr "មិន​អាច​ចាប់ផ្ដើម %1 បាន​ឡើយ ។"
@@ -107,8 +107,8 @@ msgstr "មិន​អាច​ចាប់ផ្ដើម %1 បាន​ឡ�
 #: jobs/k3bvideodvdtitledetectclippingjob.cpp:278
 #: jobs/k3bvideodvdtitletranscodingjob.cpp:480
 #: projects/audiocd/k3baudionormalizejob.cpp:186
-#: projects/datacd/k3bisoimager.cpp:171 projects/k3bcdrdaowriter.cpp:753
-#: projects/k3bcdrecordwriter.cpp:913 projects/videocd/k3bvcdjob.cpp:358
+#: projects/datacd/k3bisoimager.cpp:171 projects/videocd/k3bvcdjob.cpp:358
+#: projects/k3bcdrdaowriter.cpp:753 projects/k3bcdrecordwriter.cpp:913
 #, kde-format
 msgid "%1 returned an unknown error (code %2)."
 msgstr "%1 បាន​ត្រឡប់​កំហុស​មិន​ស្គាល់​មួយ (កូដ %2) ។"
@@ -329,9 +329,9 @@ msgstr "មិន​អាច​កំណត់​ស្ថានភាព​ធ
 #: jobs/k3bvideodvdtitledetectclippingjob.cpp:106
 #: jobs/k3bvideodvdtitletranscodingjob.cpp:143
 #: projects/audiocd/k3baudionormalizejob.cpp:62
-#: projects/datacd/k3bmkisofshandler.cpp:62 projects/k3bcdrdaowriter.cpp:455
-#: projects/k3bcdrecordwriter.cpp:417 projects/k3bgrowisofswriter.cpp:170
-#: projects/videocd/k3bvcdjob.cpp:222
+#: projects/datacd/k3bmkisofshandler.cpp:62 projects/videocd/k3bvcdjob.cpp:222
+#: projects/k3bcdrdaowriter.cpp:455 projects/k3bcdrecordwriter.cpp:417
+#: projects/k3bgrowisofswriter.cpp:170
 #, kde-format
 msgid "Using %1 %2 – Copyright © %3"
 msgstr "ប្រើ​ %1 %2 – រក្សា​សិទ្ធិ​ %3"
@@ -573,7 +573,7 @@ msgid "Internal Error: Verification job improperly initialized (%1)"
 msgstr "កំហុស​ខាង​ក្នុង ៖ បាន​ចាប់ផ្ដើម​ការ​ផ្ទៀតផ្ទាត់​ការងារ​មិន​ប្រក្រតី (%1)"
 
 #: jobs/k3bverificationjob.cpp:269 jobs/k3bcdcopyjob.cpp:1102
-#: projects/k3bcdrecordwriter.cpp:750 projects/mixedcd/k3bmixedjob.cpp:564
+#: projects/mixedcd/k3bmixedjob.cpp:564 projects/k3bcdrecordwriter.cpp:750
 msgid "Please reload the medium and press 'ok'"
 msgstr "សូម​ផ្ទុក​មេឌៀ​ឡើង​វិញ ហើយ​ចុច 'យល់ព្រម'"
 
@@ -599,198 +599,6 @@ msgstr "ទិន្នន័យ​ដែល​បាន​សរសេរ​ន
 #: jobs/k3bverificationjob.cpp:403
 msgid "Written data verified."
 msgstr "បាន​ផ្ទៀងផ្ទាត់​ទិន្នន័យ​ដែល​បាន​សរសេរ ។"
-
-#: jobs/k3bvideodvdtitledetectclippingjob.cpp:90
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:127
-#, kde-format
-msgid "%1 executable could not be found."
-msgstr "រក​មិន​ឃើញ %1 ដែល​អាច​ប្រតិបត្តិ​បាន ។"
-
-#: jobs/k3bvideodvdtitledetectclippingjob.cpp:96
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:133
-#, kde-format
-msgid "%1 version %2 is too old."
-msgstr "%1 កំណែ %2 ចាស់​ពេក ។"
-
-#: jobs/k3bvideodvdtitledetectclippingjob.cpp:111
-#, kde-format
-msgid "Analysing Title %1 of Video DVD %2"
-msgstr "កំពុង​វិភាគ​ចំណង​ជើង %1 នៃ​ឌីវីឌី​វីដេអូ %2"
-
-#: jobs/k3bvideodvdtitledetectclippingjob.cpp:185
-#, kde-format
-msgid "Analysing Chapter %1 of %2"
-msgstr "កំពុង​វិភាគ​ជំពូក %1 នៃ %2"
-
-#: jobs/k3bvideodvdtitledetectclippingjob.cpp:262
-msgid ""
-"Ignoring clipping values of last chapter due to its short playback time."
-msgstr "មិន​អើពើ​តម្លៃ​ឈុត​របស់​ជំពូក​ចុង​ក្រោយ ដោយ​សារ​តែ​ពេល​វេលា​ចាក់​ឡើងវិញ​របស់​វា​ខ្លី ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:159
-#, kde-format
-msgid "Unable to create folder '%1'"
-msgstr "មិន​អាច​បង្កើត​ថត '%1'"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:165
-#, kde-format
-msgid "Invalid filename: '%1'"
-msgstr "ឈ្មោះ​ឯកសារ​មិន​ត្រឹមត្រូវ ៖ '%1'"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:177
-#, kde-format
-msgid "Transcoding title %1 from Video DVD %2"
-msgstr "ការ​បម្លែង​ចំណង​ជើង %1 ពី​ឌីវីឌី​វីដេអូ %2"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:202
-#, kde-format
-msgid "Invalid video codec set: %1"
-msgstr "សំណុំ​កូដិក​វីដេអូ​មិន​ត្រឹមត្រូវ ៖ %1"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:225
-#, kde-format
-msgid "Invalid audio codec set: %1"
-msgstr "សំណុំ​កូដិក​អូឌីយ៉ូ​មិន​ត្រឹមត្រូវ ៖ %1"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:366
-#, kde-format
-msgid "Resizing picture of title %1 to %2x%3"
-msgstr "ការ​ផ្លាស់ប្ដូរ​ទំហំ​រូបភាព​របស់​ចំណង​ជើង %1 ទៅ​ជា %2x%3"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:389
-msgid "Single-pass Encoding"
-msgstr "ការ​អ៊ិនកូដ​ឆ្លង​មួយ​ដង"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:391
-msgid "Two-pass Encoding: First Pass"
-msgstr "ការ​អ៊ិនកូដ​ឆ្លង​ពីរ​ដង ៖ ឆ្លង​ទីមួយ"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:393
-msgid "Two-pass Encoding: Second Pass"
-msgstr "ការ​អ៊ិនកូដ​ឆ្លង​ពីរ​ដង ៖ ឆ្លង​ទីពីរ"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:417
-#, kde-format
-msgid "Removing incomplete video file '%1'"
-msgstr "ការ​យក​ឯកសារ​វីដេអូ​​ចេញ​មិន​បាន​បញ្ចប់ '%1'"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:491
-#, kde-format
-msgid "Execution of %1 failed."
-msgstr "ការ​ប្រតិបត្តិ %1 បាន​បរាជ័យ ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:492
-msgid "Please consult the debugging output for details."
-msgstr "សូម​ប្រឹក្សា​លទ្ធផល​បំបាត់​កំហុស​សម្រាប់​សេចក្ដី​លម្អិត ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:523
-msgid "AC3 (Stereo)"
-msgstr "AC3 (ស្តេរ៉េអូ)"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:525
-msgid "AC3 (Pass-through)"
-msgstr "AC3 (កាត់​តាម)"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:527
-msgid "MPEG1 Layer III"
-msgstr "MPEG1 ស្រទាប់ III"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:538
-msgid "MPEG4 (FFMPEG)"
-msgstr "MPEG4 (FFMPEG)"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:540
-msgid "XviD"
-msgstr "XviD"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:551
-msgid ""
-"FFmpeg is an open-source project trying to support most video and audio "
-"codecs used these days. Its subproject libavcodec forms the basis for "
-"multimedia players such as xine or mplayer."
-msgstr ""
-"FFmpeg គឺ​ជា​គម្រោង​កម្មវិធី​ប្រភព​បើក​ចំហ​ដែល​ព្យាយាម​គាំទ្រ​នូវ​កូឌិក​អូឌីយ៉ូ និង​វីដេអូ​ភាគច្រើន​ដែល​បានប្រើ​សព្វ​"
-"ថ្ងៃ ។ គម្រោង​រង​របស់​វា គឺ libavcodec បង្កើត​មូលដ្ឋាន​សម្រាប់​កម្មវិធី​ចាក់​ពហុព័ត៌មាន ដូចជា xine ឬ "
-"mplayer ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:555
-msgid ""
-"FFmpeg contains an implementation of the MPEG-4 video encoding standard "
-"which produces high quality results."
-msgstr ""
-"FFmpeg មាន​ការ​ប្រតិបត្តិ​នៃ​ស្តង់ដារ​អ៊ីនកូដ​វីដេអូ MPEG-4 ​ដែល​បង្កើត​នូវ​លទ្ធផល​ដែល​មាន​គុណភាព​ខ្ពស់ ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:558
-msgid ""
-"XviD is a free and open source MPEG-4 video codec. XviD was created by a "
-"group of volunteer programmers after the OpenDivX source was closed in July "
-"2001."
-msgstr ""
-"XviD គឺ​ជាកូឌិក​វីដេអូ MPEG-4 កម្មវិធី​ប្រភព​បើក​ចំហ និង​ឥត​គិត​ថ្លៃ ។ XviD គឺ​ត្រូវ​បាន​បង្កើត​ឡើង​ដោយ​ក្រុម​"
-"អ្នក​សរសេរ​កម្មវិធី​ស្ម័គ្រ​ចិត្ត បន្ទាប់​ពី​កម្មវិធី​ប្រភព​ OpenDivX ត្រូវ​បាន​បិទ​ក្នុងខែ កក្កដា ឆ្នាំ ២០០១ ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:561
-msgid ""
-"XviD features MPEG-4 Advanced Profile settings such as b-frames, global and "
-"quarter pixel motion compensation, lumi masking, trellis quantization, and "
-"H.263, MPEG and custom quantization matrices."
-msgstr ""
-"XviD សម្ដែង​លក្ខណៈ​ការ​កំណត់​ទម្រង់​កម្រិត​ខ្ពស់ MPEG-4 ដូចជា ស៊ុម-b, ការ​ជួសជុល​ចលនា​ភីកសែល​សកល និង​"
-"ភីកសែល​ភាគ ការលាក់ lumi ការ​កំណត់​បរិមាណ trellis និង H.263 MPEG និង​រង្វាស់​ការ​កំណត់​បរិមាណ​"
-"ផ្ទាល់ខ្លួន ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:565
-msgid ""
-"XviD is a primary competitor of DivX (XviD being DivX spelled backwards). "
-"While DivX is closed source and may only run on Windows, Mac OS and Linux, "
-"XviD is open source and can potentially run on any platform."
-msgstr ""
-"XviD គឺ​ជា​គូ​ប្រកួត​ប្រជែង​យ៉ាង​ចម្បង​របស់ DivX (XviD គឺ​បាន​មក​ពីការ​ប្រកប​បញ្ច្រាស​របស់ DivX) ។ នៅ​ខណៈ​"
-"ដែល DivX គឺ​ជា​ប្រភព​កម្មវិធី​គិត​ថ្លៃ ហើយ​អាច​រត់​បាន​តែ​លើ វីនដូ ប្រព័ន្ធ​ប្រតិបត្តិការ​មេក និង​លីនុច តែ​"
-"ប៉ុណ្ណោះ ចំណែក​ឯ XviD គឺ​ជា​កម្មវិធី​​ប្រភព​កូដ​បើក​ចំហ ហើយ​អាច​រត់​លើ​គ្រប់​វេទិកា​យ៉ាង​មាន​សក្តានុពល ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:569
-msgid "(Description taken from the Wikipedia article)"
-msgstr "(សេចក្ដី​ពណ៌នា គឺ​បាន​មក​ពី​អត្ថបទ​របស់ Wikipedia)"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:579
-msgid ""
-"AC3, better known as Dolby Digital is standardized as ATSC A/52. It contains "
-"up to 6 total channels of sound."
-msgstr ""
-"AC3 ដែល​ត្រូវ​បាន​ស្គាល់​ថាជា ឌីជីថល Dolby គឺ​ត្រូវ​បាន​ធ្វើ​បមាណីយកម្ម​ជា ATSC A/52 ។ វា​មាន​ជា​សរុប​"
-"រហូត​ដល់ ៦ ឆានែល​សំឡេង ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:584
-msgid ""
-"With this setting K3b will create a two-channel stereo Dolby Digital audio "
-"stream."
-msgstr "ជាមួយ​នឹង​ការ​កំណត់​នេះ K3b នឹង​បង្កើត​ស្ទ្រីម​អូឌីយ៉ូ​ឌីជីថល Dolby ស្តេរ៉េអូ​ដែល​មាន​ឆានែល​ពីរ ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:588
-msgid ""
-"With this setting K3b will use the Dolby Digital audio stream from the "
-"source DVD without changing it."
-msgstr ""
-"ជាមួយ​នឹង​ការ​កំណត់​នេះ K3b នឹង​ប្រើ​ស្ទ្រីម​អូឌីយ៉ូ​ឌីជីថល Dolby ពី​ឌីវីឌី​ប្រភព​ដោយ​គ្មាន​ការ​ផ្លាស់ប្ដូរ​វា ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:590
-msgid "Use this setting to preserve 5.1 channel sound from the DVD."
-msgstr "ប្រើ​ការ​កំណត់​នេះ​ដើម្បី​ការពារ​សំឡេង​ឆានែល ៥.១ ពី​ឌីវីឌី ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:592
-msgid ""
-"MPEG1 Layer III is better known as MP3 and is the most used lossy audio "
-"format."
-msgstr ""
-"MPEG1 ស្រទាប់ III គឺ​ត្រូវ​បាន​ស្គាល់​ថា​ជា MP3 ហើយ​​គឺ​ជា​ទ្រង់ទ្រាយ​អូឌីយ៉ូ​បាត់បង់​ដែល​ត្រូវ​បាន​ប្រើប្រាស់​ជា​"
-"ញឹកញាប់​បំផុត ។"
-
-#: jobs/k3bvideodvdtitletranscodingjob.cpp:593
-msgid ""
-"With this setting K3b will create a two-channel stereo MPEG1 Layer III audio "
-"stream."
-msgstr "ជាមួយ​ការ​កំណត់​នេះ K3b នឹង​បង្កើត​ស្ទ្រីម​អូឌីយ៉ូ MPEG1 ស្រទាប់ III ស្តេរ៉េអូ​ដែល​មាន​ឆានែល​ពីរ ។"
 
 #: jobs/k3baudiocuefilewritingjob.cpp:114
 msgid "Writing Audio Cue File"
@@ -1044,9 +852,9 @@ msgid "Writing Copy (Session %1)"
 msgstr "កំពុង​សរសេរ​ច្បាប់​ចម្លង (សម័យ %1)"
 
 #: jobs/k3bcdcopyjob.cpp:716 projects/audiocd/k3baudiojob.cpp:652
-#: projects/datacd/k3bdatajob.cpp:440 projects/k3bcdrdaowriter.cpp:562
-#: projects/k3bcdrdaowriter.cpp:580 projects/k3bcdrecordwriter.cpp:463
-#: projects/k3bgrowisofswriter.cpp:372 projects/mixedcd/k3bmixedjob.cpp:1013
+#: projects/datacd/k3bdatajob.cpp:440 projects/mixedcd/k3bmixedjob.cpp:1013
+#: projects/k3bcdrdaowriter.cpp:562 projects/k3bcdrdaowriter.cpp:580
+#: projects/k3bcdrecordwriter.cpp:463 projects/k3bgrowisofswriter.cpp:372
 msgid "Simulating"
 msgstr "កំពុង​ក្លែង​ធ្វើ"
 
@@ -1392,6 +1200,198 @@ msgstr "កំពុង​ក្លែង​ធ្វើ​រូបភាព IS
 #: jobs/k3biso9660imagewritingjob.cpp:345
 msgid "Burning ISO9660 Image"
 msgstr "កំពុង​ដុត​រូបភាព ISO9660"
+
+#: jobs/k3bvideodvdtitledetectclippingjob.cpp:90
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:127
+#, kde-format
+msgid "%1 executable could not be found."
+msgstr "រក​មិន​ឃើញ %1 ដែល​អាច​ប្រតិបត្តិ​បាន ។"
+
+#: jobs/k3bvideodvdtitledetectclippingjob.cpp:96
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:133
+#, kde-format
+msgid "%1 version %2 is too old."
+msgstr "%1 កំណែ %2 ចាស់​ពេក ។"
+
+#: jobs/k3bvideodvdtitledetectclippingjob.cpp:111
+#, kde-format
+msgid "Analysing Title %1 of Video DVD %2"
+msgstr "កំពុង​វិភាគ​ចំណង​ជើង %1 នៃ​ឌីវីឌី​វីដេអូ %2"
+
+#: jobs/k3bvideodvdtitledetectclippingjob.cpp:185
+#, kde-format
+msgid "Analysing Chapter %1 of %2"
+msgstr "កំពុង​វិភាគ​ជំពូក %1 នៃ %2"
+
+#: jobs/k3bvideodvdtitledetectclippingjob.cpp:262
+msgid ""
+"Ignoring clipping values of last chapter due to its short playback time."
+msgstr "មិន​អើពើ​តម្លៃ​ឈុត​របស់​ជំពូក​ចុង​ក្រោយ ដោយ​សារ​តែ​ពេល​វេលា​ចាក់​ឡើងវិញ​របស់​វា​ខ្លី ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:159
+#, kde-format
+msgid "Unable to create folder '%1'"
+msgstr "មិន​អាច​បង្កើត​ថត '%1'"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:165
+#, kde-format
+msgid "Invalid filename: '%1'"
+msgstr "ឈ្មោះ​ឯកសារ​មិន​ត្រឹមត្រូវ ៖ '%1'"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:177
+#, kde-format
+msgid "Transcoding title %1 from Video DVD %2"
+msgstr "ការ​បម្លែង​ចំណង​ជើង %1 ពី​ឌីវីឌី​វីដេអូ %2"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:202
+#, kde-format
+msgid "Invalid video codec set: %1"
+msgstr "សំណុំ​កូដិក​វីដេអូ​មិន​ត្រឹមត្រូវ ៖ %1"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:225
+#, kde-format
+msgid "Invalid audio codec set: %1"
+msgstr "សំណុំ​កូដិក​អូឌីយ៉ូ​មិន​ត្រឹមត្រូវ ៖ %1"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:366
+#, kde-format
+msgid "Resizing picture of title %1 to %2x%3"
+msgstr "ការ​ផ្លាស់ប្ដូរ​ទំហំ​រូបភាព​របស់​ចំណង​ជើង %1 ទៅ​ជា %2x%3"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:389
+msgid "Single-pass Encoding"
+msgstr "ការ​អ៊ិនកូដ​ឆ្លង​មួយ​ដង"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:391
+msgid "Two-pass Encoding: First Pass"
+msgstr "ការ​អ៊ិនកូដ​ឆ្លង​ពីរ​ដង ៖ ឆ្លង​ទីមួយ"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:393
+msgid "Two-pass Encoding: Second Pass"
+msgstr "ការ​អ៊ិនកូដ​ឆ្លង​ពីរ​ដង ៖ ឆ្លង​ទីពីរ"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:417
+#, kde-format
+msgid "Removing incomplete video file '%1'"
+msgstr "ការ​យក​ឯកសារ​វីដេអូ​​ចេញ​មិន​បាន​បញ្ចប់ '%1'"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:491
+#, kde-format
+msgid "Execution of %1 failed."
+msgstr "ការ​ប្រតិបត្តិ %1 បាន​បរាជ័យ ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:492
+msgid "Please consult the debugging output for details."
+msgstr "សូម​ប្រឹក្សា​លទ្ធផល​បំបាត់​កំហុស​សម្រាប់​សេចក្ដី​លម្អិត ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:523
+msgid "AC3 (Stereo)"
+msgstr "AC3 (ស្តេរ៉េអូ)"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:525
+msgid "AC3 (Pass-through)"
+msgstr "AC3 (កាត់​តាម)"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:527
+msgid "MPEG1 Layer III"
+msgstr "MPEG1 ស្រទាប់ III"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:538
+msgid "MPEG4 (FFMPEG)"
+msgstr "MPEG4 (FFMPEG)"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:540
+msgid "XviD"
+msgstr "XviD"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:551
+msgid ""
+"FFmpeg is an open-source project trying to support most video and audio "
+"codecs used these days. Its subproject libavcodec forms the basis for "
+"multimedia players such as xine or mplayer."
+msgstr ""
+"FFmpeg គឺ​ជា​គម្រោង​កម្មវិធី​ប្រភព​បើក​ចំហ​ដែល​ព្យាយាម​គាំទ្រ​នូវ​កូឌិក​អូឌីយ៉ូ និង​វីដេអូ​ភាគច្រើន​ដែល​បានប្រើ​សព្វ​"
+"ថ្ងៃ ។ គម្រោង​រង​របស់​វា គឺ libavcodec បង្កើត​មូលដ្ឋាន​សម្រាប់​កម្មវិធី​ចាក់​ពហុព័ត៌មាន ដូចជា xine ឬ "
+"mplayer ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:555
+msgid ""
+"FFmpeg contains an implementation of the MPEG-4 video encoding standard "
+"which produces high quality results."
+msgstr ""
+"FFmpeg មាន​ការ​ប្រតិបត្តិ​នៃ​ស្តង់ដារ​អ៊ីនកូដ​វីដេអូ MPEG-4 ​ដែល​បង្កើត​នូវ​លទ្ធផល​ដែល​មាន​គុណភាព​ខ្ពស់ ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:558
+msgid ""
+"XviD is a free and open source MPEG-4 video codec. XviD was created by a "
+"group of volunteer programmers after the OpenDivX source was closed in July "
+"2001."
+msgstr ""
+"XviD គឺ​ជាកូឌិក​វីដេអូ MPEG-4 កម្មវិធី​ប្រភព​បើក​ចំហ និង​ឥត​គិត​ថ្លៃ ។ XviD គឺ​ត្រូវ​បាន​បង្កើត​ឡើង​ដោយ​ក្រុម​"
+"អ្នក​សរសេរ​កម្មវិធី​ស្ម័គ្រ​ចិត្ត បន្ទាប់​ពី​កម្មវិធី​ប្រភព​ OpenDivX ត្រូវ​បាន​បិទ​ក្នុងខែ កក្កដា ឆ្នាំ ២០០១ ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:561
+msgid ""
+"XviD features MPEG-4 Advanced Profile settings such as b-frames, global and "
+"quarter pixel motion compensation, lumi masking, trellis quantization, and "
+"H.263, MPEG and custom quantization matrices."
+msgstr ""
+"XviD សម្ដែង​លក្ខណៈ​ការ​កំណត់​ទម្រង់​កម្រិត​ខ្ពស់ MPEG-4 ដូចជា ស៊ុម-b, ការ​ជួសជុល​ចលនា​ភីកសែល​សកល និង​"
+"ភីកសែល​ភាគ ការលាក់ lumi ការ​កំណត់​បរិមាណ trellis និង H.263 MPEG និង​រង្វាស់​ការ​កំណត់​បរិមាណ​"
+"ផ្ទាល់ខ្លួន ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:565
+msgid ""
+"XviD is a primary competitor of DivX (XviD being DivX spelled backwards). "
+"While DivX is closed source and may only run on Windows, Mac OS and Linux, "
+"XviD is open source and can potentially run on any platform."
+msgstr ""
+"XviD គឺ​ជា​គូ​ប្រកួត​ប្រជែង​យ៉ាង​ចម្បង​របស់ DivX (XviD គឺ​បាន​មក​ពីការ​ប្រកប​បញ្ច្រាស​របស់ DivX) ។ នៅ​ខណៈ​"
+"ដែល DivX គឺ​ជា​ប្រភព​កម្មវិធី​គិត​ថ្លៃ ហើយ​អាច​រត់​បាន​តែ​លើ វីនដូ ប្រព័ន្ធ​ប្រតិបត្តិការ​មេក និង​លីនុច តែ​"
+"ប៉ុណ្ណោះ ចំណែក​ឯ XviD គឺ​ជា​កម្មវិធី​​ប្រភព​កូដ​បើក​ចំហ ហើយ​អាច​រត់​លើ​គ្រប់​វេទិកា​យ៉ាង​មាន​សក្តានុពល ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:569
+msgid "(Description taken from the Wikipedia article)"
+msgstr "(សេចក្ដី​ពណ៌នា គឺ​បាន​មក​ពី​អត្ថបទ​របស់ Wikipedia)"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:579
+msgid ""
+"AC3, better known as Dolby Digital is standardized as ATSC A/52. It contains "
+"up to 6 total channels of sound."
+msgstr ""
+"AC3 ដែល​ត្រូវ​បាន​ស្គាល់​ថាជា ឌីជីថល Dolby គឺ​ត្រូវ​បាន​ធ្វើ​បមាណីយកម្ម​ជា ATSC A/52 ។ វា​មាន​ជា​សរុប​"
+"រហូត​ដល់ ៦ ឆានែល​សំឡេង ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:584
+msgid ""
+"With this setting K3b will create a two-channel stereo Dolby Digital audio "
+"stream."
+msgstr "ជាមួយ​នឹង​ការ​កំណត់​នេះ K3b នឹង​បង្កើត​ស្ទ្រីម​អូឌីយ៉ូ​ឌីជីថល Dolby ស្តេរ៉េអូ​ដែល​មាន​ឆានែល​ពីរ ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:588
+msgid ""
+"With this setting K3b will use the Dolby Digital audio stream from the "
+"source DVD without changing it."
+msgstr ""
+"ជាមួយ​នឹង​ការ​កំណត់​នេះ K3b នឹង​ប្រើ​ស្ទ្រីម​អូឌីយ៉ូ​ឌីជីថល Dolby ពី​ឌីវីឌី​ប្រភព​ដោយ​គ្មាន​ការ​ផ្លាស់ប្ដូរ​វា ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:590
+msgid "Use this setting to preserve 5.1 channel sound from the DVD."
+msgstr "ប្រើ​ការ​កំណត់​នេះ​ដើម្បី​ការពារ​សំឡេង​ឆានែល ៥.១ ពី​ឌីវីឌី ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:592
+msgid ""
+"MPEG1 Layer III is better known as MP3 and is the most used lossy audio "
+"format."
+msgstr ""
+"MPEG1 ស្រទាប់ III គឺ​ត្រូវ​បាន​ស្គាល់​ថា​ជា MP3 ហើយ​​គឺ​ជា​ទ្រង់ទ្រាយ​អូឌីយ៉ូ​បាត់បង់​ដែល​ត្រូវ​បាន​ប្រើប្រាស់​ជា​"
+"ញឹកញាប់​បំផុត ។"
+
+#: jobs/k3bvideodvdtitletranscodingjob.cpp:593
+msgid ""
+"With this setting K3b will create a two-channel stereo MPEG1 Layer III audio "
+"stream."
+msgstr "ជាមួយ​ការ​កំណត់​នេះ K3b នឹង​បង្កើត​ស្ទ្រីម​អូឌីយ៉ូ MPEG1 ស្រទាប់ III ស្តេរ៉េអូ​ដែល​មាន​ឆានែល​ពីរ ។"
 
 #: plugin/k3baudiodecoder.cpp:597
 msgctxt "plugin type"
@@ -1786,6 +1786,78 @@ msgstr ""
 msgid "Discard symbolic links to folders"
 msgstr "មិន​រក្សា​ទុក​តំណ​និមិត្ត​សញ្ញា​ទៅ​កាន់​ថត"
 
+#: projects/datacd/k3bmkisofshandler.cpp:73
+msgid "Mkisofs executable not found."
+msgstr "រក​មិន​ឃើញ​ឯកសារ​ប្រតិបត្តិ Mkisofs ។"
+
+#: projects/datacd/k3bmkisofshandler.cpp:87
+#, kde-format
+msgid "Read error from file '%1'"
+msgstr "អាន​កំហុស​ពី​ឯកសារ​ '%1'"
+
+#: projects/datacd/k3bmkisofshandler.cpp:92
+msgid "Used version of mkisofs does not have large file support."
+msgstr "កំណែ​របស់ mkisofs ដែល​បាន​ប្រើ​មិន​គាំទ្រ​ឯកសារ​ធំ​ៗ ។"
+
+#: projects/datacd/k3bmkisofshandler.cpp:93
+msgid "Files bigger than 2 GB cannot be handled."
+msgstr "មិន​អាច​គ្រប់គ្រង​ឯកសារ​ដែល​មាន​ទំហំ​ធំ​ជាង ២ ជ.ប. បាន​ទេ ។"
+
+#: projects/datacd/k3bmkisofshandler.cpp:97
+#, kde-format
+msgid "No such file or directory '%1'."
+msgstr "គ្មាន​ឯកសារ ឬ​ថត​ '%1' នេះ​ទេ ។"
+
+#: projects/datacd/k3bmkisofshandler.cpp:111
+#, kde-format
+msgid "Encountered an incorrectly encoded filename '%1'"
+msgstr "បាន​ជួបប្រទះ​ឈ្មោះ​ឯកសារ​ដែល​បាន​អ៊ិនកូដ​មិន​ត្រឹមត្រូវ '%1'"
+
+#: projects/datacd/k3bmkisofshandler.cpp:113
+msgid ""
+"This may be caused by a system update which changed the local character set."
+msgstr "វា​​អាច​បណ្ដាល​មក​ពី​ការ​ធ្វើ​បច្ចុប្បន្នភាព​​ប្រព័ន្ធ​ ដែល​បាន​ផ្លាស់ប្ដូរ​សំណុំ​តួ​អក្សរ​មូលដ្ឋាន ។"
+
+#: projects/datacd/k3bmkisofshandler.cpp:114
+msgid ""
+"You may use convmv (http://j3e.de/linux/convmv/) to fix the filename "
+"encoding."
+msgstr ""
+"អ្នក​អាច​ប្រើ convmv (http://j3e.de/linux/convmv/) ដើម្បី​កែ​ការ​អ៊ិនកូដ​ឈ្មោះ​ឯកសារ ។"
+
+#: projects/datacd/k3bmkisofshandler.cpp:118
+msgid "The boot image has an invalid size."
+msgstr "រូបភាព​ចាប់ផ្ដើម​មាន​ទំហំ​មិន​ត្រឹមត្រូវ ។"
+
+#: projects/datacd/k3bmkisofshandler.cpp:122
+msgid "The boot image contains multiple partitions.."
+msgstr "រូបភាព​ចាប់ផ្ដើម​មាន​ភាគ​ថាស​ច្រើន..."
+
+#: projects/datacd/k3bmkisofshandler.cpp:123
+msgid "A hard-disk boot image has to contain a single partition."
+msgstr "រូបភាព​ចាប់ផ្ដើម​ថាស​រឹង​ត្រូវ​តែ​មាន​ភាគ​ថាស​តែ​មួយ ។"
+
+#: projects/datacd/k3bmsinfofetcher.cpp:52
+msgid "Searching previous session"
+msgstr "កំពុង​ស្វែងរក​សម័យ​មុន"
+
+#: projects/datacd/k3bmsinfofetcher.cpp:164
+msgid "Could not determine next writable address."
+msgstr "មិន​អាច​កំណត់​​អាសយដ្ឋាន ដែល​អាច​សរសេរ​បន្ទាប់ ។"
+
+#: projects/datacd/k3bmsinfofetcher.cpp:180
+#, kde-format
+msgid "Could not start %1"
+msgstr "មិន​អាច​ចាប់ផ្ដើម %1 បាន​ទេ"
+
+#: projects/datacd/k3bmsinfofetcher.cpp:210
+msgid "Could not retrieve multisession information from disk."
+msgstr "មិន​អាច​ទៅ​យក​ព័ត៌មាន​ពហុ​សម័យ​ ពី​ថាស​បាន​ឡើយ ។"
+
+#: projects/datacd/k3bmsinfofetcher.cpp:211
+msgid "The disk is either empty or not appendable."
+msgstr "ថាស​អាច​នឹង​ទទេ ឬ​មិន​អាច​បន្ថែម​ខាង​ចុង​បាន ។"
+
 #: projects/datacd/k3bisoimager.cpp:162
 msgid ""
 "Due to a bug in mkisofs <= 1.15a40, K3b is unable to handle filenames that "
@@ -1864,78 +1936,6 @@ msgstr "មិន​អាច​សរសេរ​ឯកសារ​បណ្ដ
 msgid "No files to be written."
 msgstr "គ្មាន​ឯកសារ​ត្រូវ​បាន​សរសេរ​ទេ ។"
 
-#: projects/datacd/k3bmkisofshandler.cpp:73
-msgid "Mkisofs executable not found."
-msgstr "រក​មិន​ឃើញ​ឯកសារ​ប្រតិបត្តិ Mkisofs ។"
-
-#: projects/datacd/k3bmkisofshandler.cpp:87
-#, kde-format
-msgid "Read error from file '%1'"
-msgstr "អាន​កំហុស​ពី​ឯកសារ​ '%1'"
-
-#: projects/datacd/k3bmkisofshandler.cpp:92
-msgid "Used version of mkisofs does not have large file support."
-msgstr "កំណែ​របស់ mkisofs ដែល​បាន​ប្រើ​មិន​គាំទ្រ​ឯកសារ​ធំ​ៗ ។"
-
-#: projects/datacd/k3bmkisofshandler.cpp:93
-msgid "Files bigger than 2 GB cannot be handled."
-msgstr "មិន​អាច​គ្រប់គ្រង​ឯកសារ​ដែល​មាន​ទំហំ​ធំ​ជាង ២ ជ.ប. បាន​ទេ ។"
-
-#: projects/datacd/k3bmkisofshandler.cpp:97
-#, kde-format
-msgid "No such file or directory '%1'."
-msgstr "គ្មាន​ឯកសារ ឬ​ថត​ '%1' នេះ​ទេ ។"
-
-#: projects/datacd/k3bmkisofshandler.cpp:111
-#, kde-format
-msgid "Encountered an incorrectly encoded filename '%1'"
-msgstr "បាន​ជួបប្រទះ​ឈ្មោះ​ឯកសារ​ដែល​បាន​អ៊ិនកូដ​មិន​ត្រឹមត្រូវ '%1'"
-
-#: projects/datacd/k3bmkisofshandler.cpp:113
-msgid ""
-"This may be caused by a system update which changed the local character set."
-msgstr "វា​​អាច​បណ្ដាល​មក​ពី​ការ​ធ្វើ​បច្ចុប្បន្នភាព​​ប្រព័ន្ធ​ ដែល​បាន​ផ្លាស់ប្ដូរ​សំណុំ​តួ​អក្សរ​មូលដ្ឋាន ។"
-
-#: projects/datacd/k3bmkisofshandler.cpp:114
-msgid ""
-"You may use convmv (http://j3e.de/linux/convmv/) to fix the filename "
-"encoding."
-msgstr ""
-"អ្នក​អាច​ប្រើ convmv (http://j3e.de/linux/convmv/) ដើម្បី​កែ​ការ​អ៊ិនកូដ​ឈ្មោះ​ឯកសារ ។"
-
-#: projects/datacd/k3bmkisofshandler.cpp:118
-msgid "The boot image has an invalid size."
-msgstr "រូបភាព​ចាប់ផ្ដើម​មាន​ទំហំ​មិន​ត្រឹមត្រូវ ។"
-
-#: projects/datacd/k3bmkisofshandler.cpp:122
-msgid "The boot image contains multiple partitions.."
-msgstr "រូបភាព​ចាប់ផ្ដើម​មាន​ភាគ​ថាស​ច្រើន..."
-
-#: projects/datacd/k3bmkisofshandler.cpp:123
-msgid "A hard-disk boot image has to contain a single partition."
-msgstr "រូបភាព​ចាប់ផ្ដើម​ថាស​រឹង​ត្រូវ​តែ​មាន​ភាគ​ថាស​តែ​មួយ ។"
-
-#: projects/datacd/k3bmsinfofetcher.cpp:52
-msgid "Searching previous session"
-msgstr "កំពុង​ស្វែងរក​សម័យ​មុន"
-
-#: projects/datacd/k3bmsinfofetcher.cpp:164
-msgid "Could not determine next writable address."
-msgstr "មិន​អាច​កំណត់​​អាសយដ្ឋាន ដែល​អាច​សរសេរ​បន្ទាប់ ។"
-
-#: projects/datacd/k3bmsinfofetcher.cpp:180
-#, kde-format
-msgid "Could not start %1"
-msgstr "មិន​អាច​ចាប់ផ្ដើម %1 បាន​ទេ"
-
-#: projects/datacd/k3bmsinfofetcher.cpp:210
-msgid "Could not retrieve multisession information from disk."
-msgstr "មិន​អាច​ទៅ​យក​ព័ត៌មាន​ពហុ​សម័យ​ ពី​ថាស​បាន​ឡើយ ។"
-
-#: projects/datacd/k3bmsinfofetcher.cpp:211
-msgid "The disk is either empty or not appendable."
-msgstr "ថាស​អាច​នឹង​ទទេ ឬ​មិន​អាច​បន្ថែម​ខាង​ចុង​បាន ។"
-
 #: projects/k3babstractwriter.cpp:56
 msgid "Unlocking drive..."
 msgstr "កំពុង​ដោះ​សោ​ដ្រាយ..."
@@ -1948,491 +1948,6 @@ msgstr "មិនអាច​ដោះសោ​ដ្រាយ​បាន​ទ
 msgid "Ejecting Medium"
 msgstr "ច្រាន​ឧបករណ៍​ផ្ទុក​ចេញ"
 
-#: projects/k3bcdrdaowriter.cpp:266
-#, kde-format
-msgid "Cdrdao %1 does not support disabling burnfree."
-msgstr "Cdrdao %1 មិន​គាំទ្រ​ការ​បិទ​ការ​ដុត​ដោយ​សេរី​ឡើយ ។"
-
-#: projects/k3bcdrdaowriter.cpp:271 projects/k3bcdrecordwriter.cpp:317
-msgid "'Force unsafe operations' enabled."
-msgstr "បាន​បិទ 'បង្ខំ​ប្រតិបត្តិ​ការ​គ្មាន​សុវត្ថិភាព' ។"
-
-#: projects/k3bcdrdaowriter.cpp:290
-#, kde-format
-msgid "Cdrdao %1 does not support overburning."
-msgstr "Cdrdao %1 មិន​គាំទ្រ​ការ​ដុត​លើស​ចំណុំ​ឡើយ ។"
-
-#: projects/k3bcdrdaowriter.cpp:491
-msgid "Could not backup tocfile."
-msgstr "មិន​អាច​ចម្លងឯកសារ​តារាង​មាតិកា​បាន​ឡើយ ។"
-
-#: projects/k3bcdrdaowriter.cpp:517
-msgid "Preparing read process..."
-msgstr "កំពុង​រៀបចំ​ដំណើរ​ការ​អាន..."
-
-#: projects/k3bcdrdaowriter.cpp:523
-msgid "Preparing copy process..."
-msgstr "កំពុង​រៀបចំ​ដំណើរ​ការ​ចម្លង..."
-
-#: projects/k3bcdrdaowriter.cpp:526
-msgid "Preparing blanking process..."
-msgstr "កំពុង​រៀបចំ​ដំណើរ​ការ​ធ្វើ​ឲ្យ​ទទេ..."
-
-#: projects/k3bcdrdaowriter.cpp:560
-#, no-c-format, kde-format
-msgid "Starting DAO simulation at %1x speed..."
-msgstr "កំពុង​ចាប់ផ្ដើម​​ក្លែង​ធ្វើ​ម្ដង​មួយ​ថាស នៅ​ត្រឹម​ល្បឿន %1x..."
-
-#: projects/k3bcdrdaowriter.cpp:567
-#, no-c-format, kde-format
-msgid "Starting DAO writing at %1x speed..."
-msgstr "កំពុង​ចាប់ផ្ដើម​សរសេរ​ម្ដង​មួយ​ថាស នៅ​ត្រឹម​ល្បឿន %1x..."
-
-#: projects/k3bcdrdaowriter.cpp:572
-msgid "Starting reading..."
-msgstr "កំពុង​ចាប់ផ្ដើម​អាន..."
-
-#: projects/k3bcdrdaowriter.cpp:573
-msgid "Reading"
-msgstr "កំពុង​អាន"
-
-#: projects/k3bcdrdaowriter.cpp:579
-#, no-c-format, kde-format
-msgid "Starting simulation copy at %1x speed..."
-msgstr "កំពុង​ចាប់ផ្ដើម​ក្លែង​ធ្វើ​ការ​ចម្លង​​ត្រឹម​ល្បឿន %1x..."
-
-#: projects/k3bcdrdaowriter.cpp:585
-#, no-c-format, kde-format
-msgid "Starting copy at %1x speed..."
-msgstr "កំពុង​ចាប់ផ្ដើម​ចម្លង​ត្រឹម​ល្បឿន %1x..."
-
-#: projects/k3bcdrdaowriter.cpp:586
-msgid "Copying"
-msgstr "កំពុង​ចម្លង"
-
-#: projects/k3bcdrdaowriter.cpp:590
-msgid "Starting blanking..."
-msgstr "កំពុង​ចាប់ផ្ដើម​ធ្វើ​ឲ្យ​ទទេ..."
-
-#: projects/k3bcdrdaowriter.cpp:591
-msgid "Blanking"
-msgstr "កំពុង​ធ្វើ​ឲ្យ​ទទេ"
-
-#: projects/k3bcdrdaowriter.cpp:702
-#, kde-format
-msgid ""
-"Due to a bug in cdrdao the toc/cue file %1 has been deleted. K3b was unable "
-"to restore it from the backup %2."
-msgstr ""
-"ដោយ​សារ​តែ​កំហុស​មួយ​នៅ​ក្នុង cdrdao ឯកសារ toc/cue %1 ត្រូវ​បាន​បង្កើត ។ K3b មិន​អាច​ស្ដារ​វា​ពី​"
-"ព័ត៌មានបម្រុង %2 បាន​ឡើយ ។"
-
-#: projects/k3bcdrdaowriter.cpp:725 projects/k3bcdrecordwriter.cpp:808
-#: projects/k3bgrowisofswriter.cpp:527
-msgid "Simulation successfully completed"
-msgstr "ការ​ក្លែង​ធ្វើ​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
-
-#: projects/k3bcdrdaowriter.cpp:730
-msgid "Reading successfully completed"
-msgstr "ការ​អាន​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
-
-#: projects/k3bcdrdaowriter.cpp:733 projects/k3bcdrecordwriter.cpp:810
-#: projects/k3bgrowisofswriter.cpp:529
-msgid "Writing successfully completed"
-msgstr "ការ​សរសេរ​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
-
-#: projects/k3bcdrdaowriter.cpp:736
-msgid "Copying successfully completed"
-msgstr "ការ​ចម្លង​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
-
-#: projects/k3bcdrdaowriter.cpp:739
-msgid "Blanking successfully completed"
-msgstr "ការ​ធ្វើ​ឲ្យ​ទទេ​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
-
-#: projects/k3bcdrdaowriter.cpp:745 projects/k3bcdrecordwriter.cpp:814
-#: projects/k3bgrowisofswriter.cpp:522
-#, kde-format
-msgid "Average overall write speed: %1 KB/s (%2x)"
-msgstr "ល្បឿន​សរសេរ​ទូទៅ​ជា​មធ្យម ៖ %1 គីឡូបៃ/វិ. (%2x)"
-
-#: projects/k3bcdrdaowriter.cpp:755
-msgid "Please include the debugging output in your problem report."
-msgstr "សូម​រួម​បញ្ចូល​លទ្ធផល​កំហុស​នេះ ក្នុង​របាយការណ៍​កំហុស​របស់​អ្នក ។"
-
-#: projects/k3bcdrdaowriter.cpp:781 projects/k3bcdrecordwriter.cpp:688
-#, no-c-format, kde-format
-msgid "Medium or burner does not support writing at %1x speed"
-msgstr "ឧបករណ៍​ផ្ទុក ឬ​កម្មវិធី​ដុត​ដែល​មិន​គាំទ្រ​ការ​សរសេរ​ក្នុង​ល្បឿន %1x"
-
-#: projects/k3bcdrdaowriter.cpp:783
-#, no-c-format, kde-format
-msgid "Switching down burn speed to %1x"
-msgstr "បន្ថយ​ល្បឿន​ដុត​មក​ត្រឹម %1x"
-
-#: projects/k3bcdrdaowriter.cpp:813
-msgid "Executing Power calibration"
-msgstr "កំពុង​ប្រតិបត្តិ​ការ​ក្រិត​ថាមពល"
-
-#: projects/k3bcdrdaowriter.cpp:817
-msgid "Power calibration successful"
-msgstr "ក្រិត​ថាមពល​ដោយ​ជោគជ័យ"
-
-#: projects/k3bcdrdaowriter.cpp:818
-msgid "Preparing burn process..."
-msgstr "កំពុង​រៀបចំ​ដំណើរ​ការ​ដុត..."
-
-#: projects/k3bcdrdaowriter.cpp:822
-msgid "Flushing cache"
-msgstr "កំពុង​លាង​ឃ្លាំង​សម្ងាត់"
-
-#: projects/k3bcdrdaowriter.cpp:826
-msgid "Writing CD-Text lead-in..."
-msgstr "កំពុង​សរសេរ​តំបន់​ដំបូង​របស់​អត្ថបទ​ស៊ីឌី..."
-
-#: projects/k3bcdrdaowriter.cpp:830
-msgid "Turning BURN-Proof on"
-msgstr "បើក BURN-Proof"
-
-#: projects/k3bcdrdaowriter.cpp:838
-msgid "Found ISRC code"
-msgstr "បាន​រក​ឃើញ​កូដ ISRC"
-
-#: projects/k3bcdrdaowriter.cpp:842
-#, kde-format
-msgid "Found pregap: %1"
-msgstr "បាន​រក​ឃើញ​ចន្លោះបទ ៖ %1"
-
-#: projects/k3bcdrdaowriter.cpp:855
-msgid "No cdrdao driver found."
-msgstr "រក​មិន​ឃើញ​កម្មវិធី​បញ្ជា cdrdao ។"
-
-#: projects/k3bcdrdaowriter.cpp:856
-msgid "Please select one manually in the device settings."
-msgstr "សូម​ជ្រើស​កម្មវិធី​បញ្ជា​មួយ​ដោយ​ដៃ នៅ​ក្នុង​ការ​កំណត់​ឧបករណ៍ ។"
-
-#: projects/k3bcdrdaowriter.cpp:857
-msgid "For most current drives this would be 'generic-mmc'."
-msgstr "សម្រាប់​ដ្រាយ​ថ្មី​បំផុត វា​នឹង​ជា 'generic-mmc' ។"
-
-#: projects/k3bcdrdaowriter.cpp:866
-msgid "Device not ready, waiting."
-msgstr "ឧបករណ៍​មិន​ទាន់​រួចរាល់​នៅ​ឡើយ​ទេ កំពុង​តែ​រង់ចាំ ។"
-
-#: projects/k3bcdrdaowriter.cpp:870
-msgid "Cue sheet not accepted."
-msgstr "មិន​ទទួល​យក​សន្លឹក Cue ឡើយ ។"
-
-#: projects/k3bcdrdaowriter.cpp:875 projects/k3bcdrecordwriter.cpp:632
-#, kde-format
-msgid "No valid %1 option: %2"
-msgstr "មិន​មាន​ជម្រើស %1 ត្រឹមត្រូវ ៖ %2"
-
-#: projects/k3bcdrdaowriter.cpp:880 projects/k3bcdrecordwriter.cpp:835
-#: projects/k3bgrowisofshandler.cpp:238 projects/mixedcd/k3bmixedjob.cpp:1041
-msgid "Data does not fit on disk."
-msgstr "ទិន្នន័យ​មិន​សម​និង​ថាស ។"
-
-#: projects/k3bcdrdaowriter.cpp:882 projects/k3bcdrecordwriter.cpp:837
-msgid "Enable overburning in the advanced K3b settings to burn anyway."
-msgstr "អនុញ្ញាត​ឲ្យ​ដុត​ហួស នៅ​ក្នុង​ការ​កំណត់ K3b កម្រិត​ខ្ពស់​ដើម្បី​ដុត ទោះ​បី​ជា​មាន​អ្វី​កើតឡើង​ក៏​ដោយ ។"
-
-#: projects/k3bcdrdaowriter.cpp:967
-msgid "Writing leadin "
-msgstr "កំពុង​សរសេរ​តំបន់​ដំបូង "
-
-#: projects/k3bcdrdaowriter.cpp:973
-msgid "Writing leadout "
-msgstr "កំពុង​សរសេរ​តំបន់​ចុងក្រោយ "
-
-#: projects/k3bcdrecordwriter.cpp:248
-#, kde-format
-msgid "Cdrecord version %1 does not support Blu-ray writing."
-msgstr "Cdrecord កំណែ %1 មិន​គាំទ្រ​ការ​សរសេរ Blu-ray ទេ ។"
-
-#: projects/k3bcdrecordwriter.cpp:272
-msgid "Writer does not support disk at once (DAO) recording"
-msgstr "ក្បាល​សរសេរ​មិន​គាំទ្រ​ការ​ថត​ម្ដង​មួយ​ថាស (DAO) ឡើយ"
-
-#: projects/k3bcdrecordwriter.cpp:283
-msgid "Writer does not support raw writing."
-msgstr "ក្បាល​សរសេរ​មិន​គាំទ្រ​ការ​សរសេរ​ឆៅ​ឡើយ ។"
-
-#: projects/k3bcdrecordwriter.cpp:292
-#, kde-format
-msgid "Cdrecord does not support writing %1 media."
-msgstr "Cdrecord មិន​គាំទ្រ​ការ​សរសេរ​មេឌៀ %1 ។"
-
-#: projects/k3bcdrecordwriter.cpp:312
-msgid "Writer does not support buffer underrun free recording (Burnfree)"
-msgstr "ក្បាល​សរសេរ​មិន​គាំទ្រ​ការ​ថត​ដោយ​សេរី​រត់​នៅ​ក្រោម​សតិ​បណ្ដោះអាសន្ន (ដុត​ដោយ​សេរី) ឡើយ"
-
-#: projects/k3bcdrecordwriter.cpp:351
-#, kde-format
-msgid "Failed to write temporary file '%1'"
-msgstr "បរាជ័យ​ក្នុងការ​សរសេរ​ឯកសារ​បណ្ដោះ​អាសន្ន '%1'"
-
-#: projects/k3bcdrecordwriter.cpp:371
-#, kde-format
-msgid "Cdrecord %1 does not support overburning."
-msgstr "ការ​ថត​ស៊ីឌី %1 មិន​គាំទ្រ​ការ​ដុត​លើស​ទេ ។"
-
-#: projects/k3bcdrecordwriter.cpp:466
-#, no-c-format, kde-format
-msgid "Starting simulation at %1x speed..."
-msgstr "កំពុង​ចាប់ផ្ដើម​ការ​ត្រាប់តាម​នៅល្បឿន %1x..."
-
-#: projects/k3bcdrecordwriter.cpp:468
-#, kde-format
-msgid "Starting %1 simulation at %2x speed..."
-msgstr "កំពុង​ចាប់ផ្ដើម​ក្លែង​ធ្វើ %1 ត្រឹម​ល្បឿន %2x..."
-
-#: projects/k3bcdrecordwriter.cpp:474
-#, no-c-format, kde-format
-msgid "Starting writing at %1x speed..."
-msgstr "កំពុង​ចាប់ផ្ដើម​សរសេរ​នៅ​ល្បឿន %1x..."
-
-#: projects/k3bcdrecordwriter.cpp:476
-#, kde-format
-msgid "Starting %1 writing at %2x speed..."
-msgstr "កំពុង​ចាប់ផ្ដើម​សរសេរ %1 ត្រឹម​ល្បឿន %2x..."
-
-#: projects/k3bcdrecordwriter.cpp:570 projects/k3bgrowisofswriter.cpp:441
-msgid "Writing data"
-msgstr "កំពុង​សរសេរ​ទិន្នន័យ"
-
-#: projects/k3bcdrecordwriter.cpp:599
-msgid "DAO (Disk At Once) recording not supported with this writer"
-msgstr "ការ​ថត​ម្ដង​មួយ​ថាស មិន​ត្រូវ​បាន​គាំទ្រ​ដោយ​ក្បាល​សរសេរ​នេះ​ឡើយ"
-
-#: projects/k3bcdrecordwriter.cpp:600
-msgid "Please choose TAO (Track At Once) and try again"
-msgstr "សូម​ជ្រើស​របៀប​ម្ដង​មួយ​បទ ហើយ​សាកល្បង​ម្ដង​ទៀត"
-
-#: projects/k3bcdrecordwriter.cpp:603
-msgid "RAW recording not supported with this writer"
-msgstr "ការ​ថត​ឆៅ មិន​ត្រូវ​បាន​គាំទ្រ​ដោយ​ក្បាល​សរសេរ​នេះ​ឡើយ"
-
-#: projects/k3bcdrecordwriter.cpp:606
-msgid "Input/output error. Not necessarily serious."
-msgstr "កំហុស​បញ្ចេញ/បញ្ចូល ។ មិន​សូវ​ជា​ធ្ងន់ធ្ងរ​ប៉ុន្មាន​ឡើយ ។"
-
-#: projects/k3bcdrecordwriter.cpp:615
-msgid "Reloading of medium required"
-msgstr "កំពុង​ផ្ទុក​ឧបករណ៍​ដែល​ទាមទារ​ឡើង​វិញ"
-
-#: projects/k3bcdrecordwriter.cpp:624 projects/k3bgrowisofshandler.cpp:101
-#: projects/mixedcd/k3bmixedjob.cpp:1038
-msgid "Trying to write more than the official disk capacity"
-msgstr "ព្យាយាម​សសេរ​​ច្រើន​ជាង​ចំណុះ​ថាស​ដើម ។"
-
-#: projects/k3bcdrecordwriter.cpp:659
-msgid "Only session 1 will be cloned."
-msgstr "មាន​តែ​សម័យ ១ ប៉ុណ្ណោះ​ដែល​នឹង​ត្រូវ​បាន​ក្លូន ។"
-
-#: projects/k3bcdrecordwriter.cpp:662
-msgid "Unable to fixate the disk."
-msgstr "មិន​អាច​ភ្ជាប់​ថាស​បាន​ឡើយ ។"
-
-#: projects/k3bcdrecordwriter.cpp:692
-#, no-c-format, kde-format
-msgid "Switching burn speed up to %1x"
-msgstr "កំពុង​បង្កើន​ល្បឿន​ដុត​រហូត​ដល់ %1x"
-
-#: projects/k3bcdrecordwriter.cpp:695
-#, no-c-format, kde-format
-msgid "Switching burn speed down to %1x"
-msgstr "កំពុង​បន្ថយ​ល្បឿន​ដុត​មក​ត្រឹម %1x"
-
-#: projects/k3bcdrecordwriter.cpp:707
-msgid "Starting disc write"
-msgstr "កំពុង​ចាប់ផ្ដើម​សរសេរ​ថាស"
-
-#: projects/k3bcdrecordwriter.cpp:723 projects/k3bgrowisofshandler.cpp:140
-#: projects/k3bgrowisofshandler.cpp:147 projects/k3bgrowisofshandler.cpp:148
-msgid "Closing Session"
-msgstr "បិទ​សម័យ"
-
-#: projects/k3bcdrecordwriter.cpp:727
-msgid "Writing Leadin"
-msgstr "កំពុង​សរសេរ​តំបន់​ដំបូង"
-
-#: projects/k3bcdrecordwriter.cpp:730
-msgid "Writing Leadout"
-msgstr "កំពុង​សរសេរ​តំបន់​ចុងក្រោយ"
-
-#: projects/k3bcdrecordwriter.cpp:733
-msgid "Writing pregap"
-msgstr "កំពុង​សរសេរ​ចន្លោះ​បទ"
-
-#: projects/k3bcdrecordwriter.cpp:736
-msgid "Performing Optimum Power Calibration"
-msgstr "កំពុង​អនុវត្ត​ការ​ក្រិត​ថាមពល​ដ៏​ប្រសើរ​បំផុត"
-
-#: projects/k3bcdrecordwriter.cpp:739
-msgid "Sending CUE sheet"
-msgstr "កំពុង​ផ្ញើ​សន្លឹក CUE"
-
-#: projects/k3bcdrecordwriter.cpp:742
-msgid "Enabled Burnfree"
-msgstr "បាន​អនុញ្ញាត ដុត​ដោយ​សេរី"
-
-#: projects/k3bcdrecordwriter.cpp:745
-msgid "Disabled Burnfree"
-msgstr "បាន​បិទ ដុត​ដោយ​សេរី"
-
-#: projects/k3bcdrecordwriter.cpp:751 projects/mixedcd/k3bmixedjob.cpp:565
-msgid "Unable to close the tray"
-msgstr "មិន​អាច​បិទ​ថាស​បាន​ឡើយ"
-
-#: projects/k3bcdrecordwriter.cpp:761
-#, kde-format
-msgid "Burnfree was used once."
-msgid_plural "Burnfree was used %1 times."
-msgstr[0] "ដុត​ដោយសេរី​ត្រូវ​បាន​ប្រើ​ %1 ដង ។"
-
-#: projects/k3bcdrecordwriter.cpp:767
-#, kde-format
-msgid "Buffer was low once."
-msgid_plural "Buffer was low %1 times."
-msgstr[0] "សតិបណ្ដោះអាសន្ន​ទាបជាង %1 ដង ។"
-
-#: projects/k3bcdrecordwriter.cpp:806
-msgid "Erasing successfully completed"
-msgstr "ការ​លុប​​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
-
-#: projects/k3bcdrecordwriter.cpp:833 projects/k3bgrowisofshandler.cpp:236
-msgid "Data did not fit on disk."
-msgstr "ទិន្នន័យ​មិន​សម​នឹង​ថាស ។"
-
-#: projects/k3bcdrecordwriter.cpp:844
-#, kde-format
-msgid "%1 could not reserve shared memory segment of requested size."
-msgstr "%1 មិន​អាច​បម្រុង​ចម្រៀក​សតិ​រួម​របស់​ទំហំ​ដែល​បាន​ស្នើ​ឡើយ ។"
-
-#: projects/k3bcdrecordwriter.cpp:845
-msgid "Probably you chose a too large buffer size."
-msgstr "ប្រហែល​ជា​អ្នក​បាន​ជ្រើស​ទំហំ​សតិ​បណ្ដោះ​អាសន្ន​ធំ​ពេក ។"
-
-#: projects/k3bcdrecordwriter.cpp:848
-msgid "OPC failed. Probably the writer does not like the medium."
-msgstr "OPC បាន​បរាជ័យ​ហើយ ។ ប្រហែល​ជា​ក្បាល​សរសេរ​មិន​ស្គាល់​ឧបករណ៍​ផ្ទុក ។"
-
-#: projects/k3bcdrecordwriter.cpp:851
-#, kde-format
-msgid "Unable to set write speed to %1."
-msgstr "មិន​អាច​កំណត់​ល្បឿន​សរសេរ​ត្រឹម %1 ឡើយ ។"
-
-#: projects/k3bcdrecordwriter.cpp:852
-msgid "Probably this is lower than your writer's lowest writing speed."
-msgstr "ប្រហែល​វា​គឺ​ជា​ល្បឿន ដែល​ទាប​ជាង​ល្បឿន​សរសេរ ដែល​ទាប​បំផុត​របស់​ក្បាល​សរសេរ​របស់​អ្នក​ទៅ​ទៀត ។"
-
-#: projects/k3bcdrecordwriter.cpp:855
-msgid "Unable to send CUE sheet."
-msgstr "មិន​អាច​ផ្ញើ​សន្លឹក CUE បាន​ឡើយ ។"
-
-#: projects/k3bcdrecordwriter.cpp:857 projects/k3bcdrecordwriter.cpp:898
-#: projects/k3bcdrecordwriter.cpp:918
-msgid "Sometimes using TAO writing mode solves this issue."
-msgstr "ជួន​កាល ការ​ប្រើ​របៀប​សរសេរ​ម្ដង​មួយ​បទ អាច​នឹង​ដោះស្រាយ​បញ្ហា​នេះ​បាន ។"
-
-#: projects/k3bcdrecordwriter.cpp:860
-msgid "Unable to open new session."
-msgstr "មិន​អាច​បើក​សម័យ​ថ្មី​បាន​ឡើយ ។"
-
-#: projects/k3bcdrecordwriter.cpp:861
-msgid "Probably a problem with the medium."
-msgstr "ប្រហែល​ជា​មាន​បញ្ហា​ជាមួយ​មេឌៀ ។"
-
-#: projects/k3bcdrecordwriter.cpp:864
-msgid "The disk might still be readable."
-msgstr "ថាស​ប្រហែល​ជា​នៅ​តែ​អាច​អាន​បាន ។"
-
-#: projects/k3bcdrecordwriter.cpp:866
-msgid "Try DAO writing mode."
-msgstr "សាកល្បង​របៀប​សរសេរ​ម្ដង​មួយ​ថាស ។"
-
-#: projects/k3bcdrecordwriter.cpp:869
-#, kde-format
-msgid "%1 has no permission to open the device."
-msgstr "%1 មិន​មាន​សិទ្ធិ​បើក​ឧបករណ៍​ឡើយ ។"
-
-#: projects/k3bcdrecordwriter.cpp:871
-msgid "You may use K3bsetup to solve this problem."
-msgstr "អ្នក​អាច​នឹង​ប្រើ K3bsetup ដើម្បី​ដោះស្រាយ​បញ្ហា​នេះ ។"
-
-#: projects/k3bcdrecordwriter.cpp:875
-msgid "Probably a buffer underrun occurred."
-msgstr "ប្រហែល​ជា​ការ​រត់​នៅ​ក្រោម​សតិ​បណ្ដោះ​អាសន្ន បាន​កើតឡើង​ហើយ ។"
-
-#: projects/k3bcdrecordwriter.cpp:877
-msgid "Please enable Burnfree or choose a lower burning speed."
-msgstr "សូម​អនុញ្ញាត​ការ​ដុត​ដោយ​សេរី ឬ​ជ្រើស​ល្បឿន​ដុត​ទាប​ជាង​នេះ ។"
-
-#: projects/k3bcdrecordwriter.cpp:879
-msgid "Please choose a lower burning speed."
-msgstr "សូម​ជ្រើស​ល្បឿន​ដុត​ទាប​ជាង​នេះ ។"
-
-#: projects/k3bcdrecordwriter.cpp:882
-msgid "Found a high-speed medium not suitable for the writer being used."
-msgstr "បាន​រកឃើញ​មេឌៀ​ល្បឿន​លឿន​មួយ ដែល​មិន​សមស្រប​សម្រាប់​ក្បាល​សរសេរ​ដែល​កំពុង​ប្រើ ។"
-
-#: projects/k3bcdrecordwriter.cpp:883 projects/k3bcdrecordwriter.cpp:887
-msgid "Use the 'force unsafe operations' option to ignore this."
-msgstr "ប្រើ​ជម្រើស 'បង្ខំ​ប្រតិបត្តិ​ការ​គ្មាន​សុវត្ថិភាព' ដើម្បី​មិន​អើពើ​វា ។"
-
-#: projects/k3bcdrecordwriter.cpp:886
-msgid "Found a low-speed medium not suitable for the writer being used."
-msgstr "បាន​រកឃើញ​មេឌៀ​ល្បឿន​យឺត​មួយ ដែល​មិន​សមស្រប​សម្រាប់​ក្បាល​សរសេរ​ដែល​កំពុង​ប្រើ ។"
-
-#: projects/k3bcdrecordwriter.cpp:890
-msgid "Most likely the burning failed due to low-quality media."
-msgstr "ការ​ដុត​ហាក់​ដូច​ជា​បរាជ័យ ដោយ​សារ​តែ​មេឌៀ​គុណភាព​អន់ ។"
-
-#: projects/k3bcdrecordwriter.cpp:893
-msgid "Another application is blocking the device (most likely automounting)."
-msgstr "មាន​កម្មវិធី​មួយ​ទៀត កំពុង​តែ​ទប់ស្កាត់​ឧបករណ៍ (ប្រហែល​ជា​ឧបករណ៍​ដែល​បាន​ម៉ោន​ស្វ័យប្រវត្តិ) ។"
-
-#: projects/k3bcdrecordwriter.cpp:896
-msgid "A write error occurred."
-msgstr "កំហុស​សរសេរ​បាន​កើតឡើង ។"
-
-#: projects/k3bcdrecordwriter.cpp:901
-msgid "Some drives do not support all erase types."
-msgstr "ដ្រាយ​មួយ​ចំនួន​មិន​គាំទ្រ​ប្រភេទ​លុប​ទាំងអស់​ទេ ។"
-
-#: projects/k3bcdrecordwriter.cpp:902
-msgid "Try again using 'Complete' erasing."
-msgstr "ព្យាយាម​ម្ដងទៀត​ដោយ​ប្រើ​ការ​លុប 'ពេញលេញ' ។"
-
-#: projects/k3bcdrecordwriter.cpp:909
-msgid ""
-"Since kernel version 2.6.8 cdrecord cannot use SCSI transport when running "
-"suid root anymore."
-msgstr ""
-"តាំង​ពី​ខឺណែល​កំណែ 2.6.8 មក​ម្លេះ cdrecord មិន​អាច​ប្រើ​ការ​ជញ្ជូន SCSI បាន​ឡើយ ពេល​រត់ suid "
-"root ។"
-
-#: projects/k3bcdrecordwriter.cpp:910
-msgid ""
-"You may use K3b::Setup to solve this problem or remove the suid bit manually."
-msgstr "អ្នក​អាច​នឹង​ប្រើ K3b::Setup ដើម្បី​ដោះស្រាយ​បញ្ហា​នេះ ឬ​យក​ប៊ីត suid ចេញ​ដោយ​ដៃ ។"
-
-#: projects/k3bcdrecordwriter.cpp:921
-msgid "If you are running an unpatched cdrecord version..."
-msgstr "បើ​អ្នក​កំពុង​រត់​កំណែ cdrecord ដែល​មិន​បាន​ប៉ះ..."
-
-#: projects/k3bcdrecordwriter.cpp:922
-msgid "...and this error also occurs with high quality media..."
-msgstr "...ហើយ​កំហុស​នេះ ក៏​កើត​ឡើង​ផង​ដែរ​ជាមួយ​មេឌៀ​ដែល​មាន​គុណភាព​ខ្ពស់..."
-
-#: projects/k3bcdrecordwriter.cpp:923
-msgid "...and the K3b FAQ does not help you..."
-msgstr "...ហើយ​សំណួរ K3b ដែល​សួរ​រឿយៗ មិន​អាច​ជួយ​អ្នក​បាន..."
-
-#: projects/k3bcdrecordwriter.cpp:924
-msgid "...please include the debugging output in your problem report."
-msgstr "...សូម​រួមបញ្ចូល​លទ្ធផល​កំហុស​នេះ នៅ​ក្នុង​របាយការណ៍​កំហុស​របស់​អ្នក ។"
-
 #: projects/k3bgrowisofshandler.cpp:83
 msgid "OPC failed. Please try writing speed 1x."
 msgstr "OPC បរាជ័យ ។ សូម​ព្យាយាម​សសេរ​ល្បឿន 1x ។"
@@ -2440,6 +1955,11 @@ msgstr "OPC បរាជ័យ ។ សូម​ព្យាយាម​សស�
 #: projects/k3bgrowisofshandler.cpp:88
 msgid "Please try again with writing mode DAO."
 msgstr "សូម​ព្យាយាម​ម្ដង​ទៀត​ជាមួយ​របៀប​សសេរ DAO ។"
+
+#: projects/k3bgrowisofshandler.cpp:101 projects/mixedcd/k3bmixedjob.cpp:1038
+#: projects/k3bcdrecordwriter.cpp:624
+msgid "Trying to write more than the official disk capacity"
+msgstr "ព្យាយាម​សសេរ​​ច្រើន​ជាង​ចំណុះ​ថាស​ដើម ។"
 
 #: projects/k3bgrowisofshandler.cpp:124
 msgid "Flushing Cache"
@@ -2456,6 +1976,11 @@ msgstr "បិទ​បទ"
 #: projects/k3bgrowisofshandler.cpp:137
 msgid "Closing Disk"
 msgstr "បិទ​ថាស"
+
+#: projects/k3bgrowisofshandler.cpp:140 projects/k3bgrowisofshandler.cpp:147
+#: projects/k3bgrowisofshandler.cpp:148 projects/k3bcdrecordwriter.cpp:723
+msgid "Closing Session"
+msgstr "បិទ​សម័យ"
 
 #: projects/k3bgrowisofshandler.cpp:143 projects/k3bgrowisofshandler.cpp:144
 msgid "Updating RMA"
@@ -2503,6 +2028,15 @@ msgstr "សូម​សាកល្បង​មេឌៀ​ម៉ាក​ផ្
 #: projects/k3bgrowisofshandler.cpp:231
 msgid "Report the problem if it persists anyway."
 msgstr "សូម​រាយការណ៍​កំហុស បើ​វា​នៅ​មាន ។"
+
+#: projects/k3bgrowisofshandler.cpp:236 projects/k3bcdrecordwriter.cpp:833
+msgid "Data did not fit on disk."
+msgstr "ទិន្នន័យ​មិន​សម​នឹង​ថាស ។"
+
+#: projects/k3bgrowisofshandler.cpp:238 projects/mixedcd/k3bmixedjob.cpp:1041
+#: projects/k3bcdrdaowriter.cpp:880 projects/k3bcdrecordwriter.cpp:835
+msgid "Data does not fit on disk."
+msgstr "ទិន្នន័យ​មិន​សម​និង​ថាស ។"
 
 #: projects/k3bgrowisofshandler.cpp:242
 msgid "Unable to set writing speed."
@@ -2563,33 +2097,6 @@ msgstr "mkisofs ទំនង​ជា​បរាជ័យ​ហើយ​មើ�
 msgid "Fatal error during recording: %1"
 msgstr "មាន​កំហុស​ធ្ងន់ធ្ងរ កំឡុង​ពេល​ថត ៖ %1"
 
-#: projects/k3bgrowisofswriter.cpp:161
-#, kde-format
-msgid "Growisofs version %1 is too old. K3b needs at least version 5.10."
-msgstr "Growisofs កំណែ %1 ចាស់​ពេក​ហើយ ។ K3b ត្រូវការ​យ៉ាងហោច​កំណែ 5.10 ។"
-
-#: projects/k3bgrowisofswriter.cpp:175
-#, kde-format
-msgid ""
-"Growisofs version %1 does not feature a software buffer which may result in "
-"an unstable burn process."
-msgstr ""
-"កំណែ Growisofs %1 មិន​ដើរ​តួ​ជា​សតិបណ្ដោះ​អាសន្ន​របស់​កម្មវិធី​ទេ ដែល​អាច​បង្ហាញ​នៅ​ក្នុង​ដំណើរការ​ដុត​ដែល​"
-"មិនមាន​ស្ថេរភាព ។"
-
-#: projects/k3bgrowisofswriter.cpp:228
-#, kde-format
-msgid "Could not open file %1."
-msgstr "មិន​អាច​បើក​ឯកសារ %1 បាន​ឡើយ ។"
-
-#: projects/k3bgrowisofswriter.cpp:373
-msgid "Starting simulation..."
-msgstr "កំពុង​ចាប់ផ្ដើម​ការ​ក្លែង..."
-
-#: projects/k3bgrowisofswriter.cpp:378
-msgid "Starting disc write..."
-msgstr "កំពុង​ចាប់ផ្ដើម​សរសេរ​ថាស..."
-
 #: projects/mixedcd/k3bmixedjob.cpp:277
 #, kde-format
 msgid "Creating audio image files in %1"
@@ -2606,6 +2113,10 @@ msgstr "កំហុស​ខណៈ​ពេល​បង្កើត​រូប
 #: projects/mixedcd/k3bmixedjob.cpp:493
 msgid "ISO image successfully created."
 msgstr "បាន​បង្កើត​រូបភាព ISO ដោយ​ជោគជ័យ ។"
+
+#: projects/mixedcd/k3bmixedjob.cpp:565 projects/k3bcdrecordwriter.cpp:751
+msgid "Unable to close the tray"
+msgstr "មិន​អាច​បិទ​ថាស​បាន​ឡើយ"
 
 #: projects/mixedcd/k3bmixedjob.cpp:594
 msgid "Audio images successfully created."
@@ -3064,6 +2575,495 @@ msgstr "កំពុង​សរសេរ​ឌីវីឌី​វីដេអ
 #, kde-format
 msgid "ISO9660/Udf Filesystem (Size: %1)"
 msgstr "ប្រព័ន្ធ​ឯកសារ ISO9660/Udf (ទំហំ ៖ %1)"
+
+#: projects/k3bcdrdaowriter.cpp:266
+#, kde-format
+msgid "Cdrdao %1 does not support disabling burnfree."
+msgstr "Cdrdao %1 មិន​គាំទ្រ​ការ​បិទ​ការ​ដុត​ដោយ​សេរី​ឡើយ ។"
+
+#: projects/k3bcdrdaowriter.cpp:271 projects/k3bcdrecordwriter.cpp:317
+msgid "'Force unsafe operations' enabled."
+msgstr "បាន​បិទ 'បង្ខំ​ប្រតិបត្តិ​ការ​គ្មាន​សុវត្ថិភាព' ។"
+
+#: projects/k3bcdrdaowriter.cpp:290
+#, kde-format
+msgid "Cdrdao %1 does not support overburning."
+msgstr "Cdrdao %1 មិន​គាំទ្រ​ការ​ដុត​លើស​ចំណុំ​ឡើយ ។"
+
+#: projects/k3bcdrdaowriter.cpp:491
+msgid "Could not backup tocfile."
+msgstr "មិន​អាច​ចម្លងឯកសារ​តារាង​មាតិកា​បាន​ឡើយ ។"
+
+#: projects/k3bcdrdaowriter.cpp:517
+msgid "Preparing read process..."
+msgstr "កំពុង​រៀបចំ​ដំណើរ​ការ​អាន..."
+
+#: projects/k3bcdrdaowriter.cpp:523
+msgid "Preparing copy process..."
+msgstr "កំពុង​រៀបចំ​ដំណើរ​ការ​ចម្លង..."
+
+#: projects/k3bcdrdaowriter.cpp:526
+msgid "Preparing blanking process..."
+msgstr "កំពុង​រៀបចំ​ដំណើរ​ការ​ធ្វើ​ឲ្យ​ទទេ..."
+
+#: projects/k3bcdrdaowriter.cpp:560
+#, no-c-format, kde-format
+msgid "Starting DAO simulation at %1x speed..."
+msgstr "កំពុង​ចាប់ផ្ដើម​​ក្លែង​ធ្វើ​ម្ដង​មួយ​ថាស នៅ​ត្រឹម​ល្បឿន %1x..."
+
+#: projects/k3bcdrdaowriter.cpp:567
+#, no-c-format, kde-format
+msgid "Starting DAO writing at %1x speed..."
+msgstr "កំពុង​ចាប់ផ្ដើម​សរសេរ​ម្ដង​មួយ​ថាស នៅ​ត្រឹម​ល្បឿន %1x..."
+
+#: projects/k3bcdrdaowriter.cpp:572
+msgid "Starting reading..."
+msgstr "កំពុង​ចាប់ផ្ដើម​អាន..."
+
+#: projects/k3bcdrdaowriter.cpp:573
+msgid "Reading"
+msgstr "កំពុង​អាន"
+
+#: projects/k3bcdrdaowriter.cpp:579
+#, no-c-format, kde-format
+msgid "Starting simulation copy at %1x speed..."
+msgstr "កំពុង​ចាប់ផ្ដើម​ក្លែង​ធ្វើ​ការ​ចម្លង​​ត្រឹម​ល្បឿន %1x..."
+
+#: projects/k3bcdrdaowriter.cpp:585
+#, no-c-format, kde-format
+msgid "Starting copy at %1x speed..."
+msgstr "កំពុង​ចាប់ផ្ដើម​ចម្លង​ត្រឹម​ល្បឿន %1x..."
+
+#: projects/k3bcdrdaowriter.cpp:586
+msgid "Copying"
+msgstr "កំពុង​ចម្លង"
+
+#: projects/k3bcdrdaowriter.cpp:590
+msgid "Starting blanking..."
+msgstr "កំពុង​ចាប់ផ្ដើម​ធ្វើ​ឲ្យ​ទទេ..."
+
+#: projects/k3bcdrdaowriter.cpp:591
+msgid "Blanking"
+msgstr "កំពុង​ធ្វើ​ឲ្យ​ទទេ"
+
+#: projects/k3bcdrdaowriter.cpp:702
+#, kde-format
+msgid ""
+"Due to a bug in cdrdao the toc/cue file %1 has been deleted. K3b was unable "
+"to restore it from the backup %2."
+msgstr ""
+"ដោយ​សារ​តែ​កំហុស​មួយ​នៅ​ក្នុង cdrdao ឯកសារ toc/cue %1 ត្រូវ​បាន​បង្កើត ។ K3b មិន​អាច​ស្ដារ​វា​ពី​"
+"ព័ត៌មានបម្រុង %2 បាន​ឡើយ ។"
+
+#: projects/k3bcdrdaowriter.cpp:725 projects/k3bcdrecordwriter.cpp:808
+#: projects/k3bgrowisofswriter.cpp:527
+msgid "Simulation successfully completed"
+msgstr "ការ​ក្លែង​ធ្វើ​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
+
+#: projects/k3bcdrdaowriter.cpp:730
+msgid "Reading successfully completed"
+msgstr "ការ​អាន​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
+
+#: projects/k3bcdrdaowriter.cpp:733 projects/k3bcdrecordwriter.cpp:810
+#: projects/k3bgrowisofswriter.cpp:529
+msgid "Writing successfully completed"
+msgstr "ការ​សរសេរ​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
+
+#: projects/k3bcdrdaowriter.cpp:736
+msgid "Copying successfully completed"
+msgstr "ការ​ចម្លង​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
+
+#: projects/k3bcdrdaowriter.cpp:739
+msgid "Blanking successfully completed"
+msgstr "ការ​ធ្វើ​ឲ្យ​ទទេ​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
+
+#: projects/k3bcdrdaowriter.cpp:745 projects/k3bcdrecordwriter.cpp:814
+#: projects/k3bgrowisofswriter.cpp:522
+#, kde-format
+msgid "Average overall write speed: %1 KB/s (%2x)"
+msgstr "ល្បឿន​សរសេរ​ទូទៅ​ជា​មធ្យម ៖ %1 គីឡូបៃ/វិ. (%2x)"
+
+#: projects/k3bcdrdaowriter.cpp:755
+msgid "Please include the debugging output in your problem report."
+msgstr "សូម​រួម​បញ្ចូល​លទ្ធផល​កំហុស​នេះ ក្នុង​របាយការណ៍​កំហុស​របស់​អ្នក ។"
+
+#: projects/k3bcdrdaowriter.cpp:781 projects/k3bcdrecordwriter.cpp:688
+#, no-c-format, kde-format
+msgid "Medium or burner does not support writing at %1x speed"
+msgstr "ឧបករណ៍​ផ្ទុក ឬ​កម្មវិធី​ដុត​ដែល​មិន​គាំទ្រ​ការ​សរសេរ​ក្នុង​ល្បឿន %1x"
+
+#: projects/k3bcdrdaowriter.cpp:783
+#, no-c-format, kde-format
+msgid "Switching down burn speed to %1x"
+msgstr "បន្ថយ​ល្បឿន​ដុត​មក​ត្រឹម %1x"
+
+#: projects/k3bcdrdaowriter.cpp:813
+msgid "Executing Power calibration"
+msgstr "កំពុង​ប្រតិបត្តិ​ការ​ក្រិត​ថាមពល"
+
+#: projects/k3bcdrdaowriter.cpp:817
+msgid "Power calibration successful"
+msgstr "ក្រិត​ថាមពល​ដោយ​ជោគជ័យ"
+
+#: projects/k3bcdrdaowriter.cpp:818
+msgid "Preparing burn process..."
+msgstr "កំពុង​រៀបចំ​ដំណើរ​ការ​ដុត..."
+
+#: projects/k3bcdrdaowriter.cpp:822
+msgid "Flushing cache"
+msgstr "កំពុង​លាង​ឃ្លាំង​សម្ងាត់"
+
+#: projects/k3bcdrdaowriter.cpp:826
+msgid "Writing CD-Text lead-in..."
+msgstr "កំពុង​សរសេរ​តំបន់​ដំបូង​របស់​អត្ថបទ​ស៊ីឌី..."
+
+#: projects/k3bcdrdaowriter.cpp:830
+msgid "Turning BURN-Proof on"
+msgstr "បើក BURN-Proof"
+
+#: projects/k3bcdrdaowriter.cpp:838
+msgid "Found ISRC code"
+msgstr "បាន​រក​ឃើញ​កូដ ISRC"
+
+#: projects/k3bcdrdaowriter.cpp:842
+#, kde-format
+msgid "Found pregap: %1"
+msgstr "បាន​រក​ឃើញ​ចន្លោះបទ ៖ %1"
+
+#: projects/k3bcdrdaowriter.cpp:855
+msgid "No cdrdao driver found."
+msgstr "រក​មិន​ឃើញ​កម្មវិធី​បញ្ជា cdrdao ។"
+
+#: projects/k3bcdrdaowriter.cpp:856
+msgid "Please select one manually in the device settings."
+msgstr "សូម​ជ្រើស​កម្មវិធី​បញ្ជា​មួយ​ដោយ​ដៃ នៅ​ក្នុង​ការ​កំណត់​ឧបករណ៍ ។"
+
+#: projects/k3bcdrdaowriter.cpp:857
+msgid "For most current drives this would be 'generic-mmc'."
+msgstr "សម្រាប់​ដ្រាយ​ថ្មី​បំផុត វា​នឹង​ជា 'generic-mmc' ។"
+
+#: projects/k3bcdrdaowriter.cpp:866
+msgid "Device not ready, waiting."
+msgstr "ឧបករណ៍​មិន​ទាន់​រួចរាល់​នៅ​ឡើយ​ទេ កំពុង​តែ​រង់ចាំ ។"
+
+#: projects/k3bcdrdaowriter.cpp:870
+msgid "Cue sheet not accepted."
+msgstr "មិន​ទទួល​យក​សន្លឹក Cue ឡើយ ។"
+
+#: projects/k3bcdrdaowriter.cpp:875 projects/k3bcdrecordwriter.cpp:632
+#, kde-format
+msgid "No valid %1 option: %2"
+msgstr "មិន​មាន​ជម្រើស %1 ត្រឹមត្រូវ ៖ %2"
+
+#: projects/k3bcdrdaowriter.cpp:882 projects/k3bcdrecordwriter.cpp:837
+msgid "Enable overburning in the advanced K3b settings to burn anyway."
+msgstr "អនុញ្ញាត​ឲ្យ​ដុត​ហួស នៅ​ក្នុង​ការ​កំណត់ K3b កម្រិត​ខ្ពស់​ដើម្បី​ដុត ទោះ​បី​ជា​មាន​អ្វី​កើតឡើង​ក៏​ដោយ ។"
+
+#: projects/k3bcdrdaowriter.cpp:967
+msgid "Writing leadin "
+msgstr "កំពុង​សរសេរ​តំបន់​ដំបូង "
+
+#: projects/k3bcdrdaowriter.cpp:973
+msgid "Writing leadout "
+msgstr "កំពុង​សរសេរ​តំបន់​ចុងក្រោយ "
+
+#: projects/k3bcdrecordwriter.cpp:248
+#, kde-format
+msgid "Cdrecord version %1 does not support Blu-ray writing."
+msgstr "Cdrecord កំណែ %1 មិន​គាំទ្រ​ការ​សរសេរ Blu-ray ទេ ។"
+
+#: projects/k3bcdrecordwriter.cpp:272
+msgid "Writer does not support disk at once (DAO) recording"
+msgstr "ក្បាល​សរសេរ​មិន​គាំទ្រ​ការ​ថត​ម្ដង​មួយ​ថាស (DAO) ឡើយ"
+
+#: projects/k3bcdrecordwriter.cpp:283
+msgid "Writer does not support raw writing."
+msgstr "ក្បាល​សរសេរ​មិន​គាំទ្រ​ការ​សរសេរ​ឆៅ​ឡើយ ។"
+
+#: projects/k3bcdrecordwriter.cpp:292
+#, kde-format
+msgid "Cdrecord does not support writing %1 media."
+msgstr "Cdrecord មិន​គាំទ្រ​ការ​សរសេរ​មេឌៀ %1 ។"
+
+#: projects/k3bcdrecordwriter.cpp:312
+msgid "Writer does not support buffer underrun free recording (Burnfree)"
+msgstr "ក្បាល​សរសេរ​មិន​គាំទ្រ​ការ​ថត​ដោយ​សេរី​រត់​នៅ​ក្រោម​សតិ​បណ្ដោះអាសន្ន (ដុត​ដោយ​សេរី) ឡើយ"
+
+#: projects/k3bcdrecordwriter.cpp:351
+#, kde-format
+msgid "Failed to write temporary file '%1'"
+msgstr "បរាជ័យ​ក្នុងការ​សរសេរ​ឯកសារ​បណ្ដោះ​អាសន្ន '%1'"
+
+#: projects/k3bcdrecordwriter.cpp:371
+#, kde-format
+msgid "Cdrecord %1 does not support overburning."
+msgstr "ការ​ថត​ស៊ីឌី %1 មិន​គាំទ្រ​ការ​ដុត​លើស​ទេ ។"
+
+#: projects/k3bcdrecordwriter.cpp:466
+#, no-c-format, kde-format
+msgid "Starting simulation at %1x speed..."
+msgstr "កំពុង​ចាប់ផ្ដើម​ការ​ត្រាប់តាម​នៅល្បឿន %1x..."
+
+#: projects/k3bcdrecordwriter.cpp:468
+#, kde-format
+msgid "Starting %1 simulation at %2x speed..."
+msgstr "កំពុង​ចាប់ផ្ដើម​ក្លែង​ធ្វើ %1 ត្រឹម​ល្បឿន %2x..."
+
+#: projects/k3bcdrecordwriter.cpp:474
+#, no-c-format, kde-format
+msgid "Starting writing at %1x speed..."
+msgstr "កំពុង​ចាប់ផ្ដើម​សរសេរ​នៅ​ល្បឿន %1x..."
+
+#: projects/k3bcdrecordwriter.cpp:476
+#, kde-format
+msgid "Starting %1 writing at %2x speed..."
+msgstr "កំពុង​ចាប់ផ្ដើម​សរសេរ %1 ត្រឹម​ល្បឿន %2x..."
+
+#: projects/k3bcdrecordwriter.cpp:570 projects/k3bgrowisofswriter.cpp:441
+msgid "Writing data"
+msgstr "កំពុង​សរសេរ​ទិន្នន័យ"
+
+#: projects/k3bcdrecordwriter.cpp:599
+msgid "DAO (Disk At Once) recording not supported with this writer"
+msgstr "ការ​ថត​ម្ដង​មួយ​ថាស មិន​ត្រូវ​បាន​គាំទ្រ​ដោយ​ក្បាល​សរសេរ​នេះ​ឡើយ"
+
+#: projects/k3bcdrecordwriter.cpp:600
+msgid "Please choose TAO (Track At Once) and try again"
+msgstr "សូម​ជ្រើស​របៀប​ម្ដង​មួយ​បទ ហើយ​សាកល្បង​ម្ដង​ទៀត"
+
+#: projects/k3bcdrecordwriter.cpp:603
+msgid "RAW recording not supported with this writer"
+msgstr "ការ​ថត​ឆៅ មិន​ត្រូវ​បាន​គាំទ្រ​ដោយ​ក្បាល​សរសេរ​នេះ​ឡើយ"
+
+#: projects/k3bcdrecordwriter.cpp:606
+msgid "Input/output error. Not necessarily serious."
+msgstr "កំហុស​បញ្ចេញ/បញ្ចូល ។ មិន​សូវ​ជា​ធ្ងន់ធ្ងរ​ប៉ុន្មាន​ឡើយ ។"
+
+#: projects/k3bcdrecordwriter.cpp:615
+msgid "Reloading of medium required"
+msgstr "កំពុង​ផ្ទុក​ឧបករណ៍​ដែល​ទាមទារ​ឡើង​វិញ"
+
+#: projects/k3bcdrecordwriter.cpp:659
+msgid "Only session 1 will be cloned."
+msgstr "មាន​តែ​សម័យ ១ ប៉ុណ្ណោះ​ដែល​នឹង​ត្រូវ​បាន​ក្លូន ។"
+
+#: projects/k3bcdrecordwriter.cpp:662
+msgid "Unable to fixate the disk."
+msgstr "មិន​អាច​ភ្ជាប់​ថាស​បាន​ឡើយ ។"
+
+#: projects/k3bcdrecordwriter.cpp:692
+#, no-c-format, kde-format
+msgid "Switching burn speed up to %1x"
+msgstr "កំពុង​បង្កើន​ល្បឿន​ដុត​រហូត​ដល់ %1x"
+
+#: projects/k3bcdrecordwriter.cpp:695
+#, no-c-format, kde-format
+msgid "Switching burn speed down to %1x"
+msgstr "កំពុង​បន្ថយ​ល្បឿន​ដុត​មក​ត្រឹម %1x"
+
+#: projects/k3bcdrecordwriter.cpp:707
+msgid "Starting disc write"
+msgstr "កំពុង​ចាប់ផ្ដើម​សរសេរ​ថាស"
+
+#: projects/k3bcdrecordwriter.cpp:727
+msgid "Writing Leadin"
+msgstr "កំពុង​សរសេរ​តំបន់​ដំបូង"
+
+#: projects/k3bcdrecordwriter.cpp:730
+msgid "Writing Leadout"
+msgstr "កំពុង​សរសេរ​តំបន់​ចុងក្រោយ"
+
+#: projects/k3bcdrecordwriter.cpp:733
+msgid "Writing pregap"
+msgstr "កំពុង​សរសេរ​ចន្លោះ​បទ"
+
+#: projects/k3bcdrecordwriter.cpp:736
+msgid "Performing Optimum Power Calibration"
+msgstr "កំពុង​អនុវត្ត​ការ​ក្រិត​ថាមពល​ដ៏​ប្រសើរ​បំផុត"
+
+#: projects/k3bcdrecordwriter.cpp:739
+msgid "Sending CUE sheet"
+msgstr "កំពុង​ផ្ញើ​សន្លឹក CUE"
+
+#: projects/k3bcdrecordwriter.cpp:742
+msgid "Enabled Burnfree"
+msgstr "បាន​អនុញ្ញាត ដុត​ដោយ​សេរី"
+
+#: projects/k3bcdrecordwriter.cpp:745
+msgid "Disabled Burnfree"
+msgstr "បាន​បិទ ដុត​ដោយ​សេរី"
+
+#: projects/k3bcdrecordwriter.cpp:761
+#, kde-format
+msgid "Burnfree was used once."
+msgid_plural "Burnfree was used %1 times."
+msgstr[0] "ដុត​ដោយសេរី​ត្រូវ​បាន​ប្រើ​ %1 ដង ។"
+
+#: projects/k3bcdrecordwriter.cpp:767
+#, kde-format
+msgid "Buffer was low once."
+msgid_plural "Buffer was low %1 times."
+msgstr[0] "សតិបណ្ដោះអាសន្ន​ទាបជាង %1 ដង ។"
+
+#: projects/k3bcdrecordwriter.cpp:806
+msgid "Erasing successfully completed"
+msgstr "ការ​លុប​​បាន​បញ្ចប់​ដោយ​ជោគជ័យ"
+
+#: projects/k3bcdrecordwriter.cpp:844
+#, kde-format
+msgid "%1 could not reserve shared memory segment of requested size."
+msgstr "%1 មិន​អាច​បម្រុង​ចម្រៀក​សតិ​រួម​របស់​ទំហំ​ដែល​បាន​ស្នើ​ឡើយ ។"
+
+#: projects/k3bcdrecordwriter.cpp:845
+msgid "Probably you chose a too large buffer size."
+msgstr "ប្រហែល​ជា​អ្នក​បាន​ជ្រើស​ទំហំ​សតិ​បណ្ដោះ​អាសន្ន​ធំ​ពេក ។"
+
+#: projects/k3bcdrecordwriter.cpp:848
+msgid "OPC failed. Probably the writer does not like the medium."
+msgstr "OPC បាន​បរាជ័យ​ហើយ ។ ប្រហែល​ជា​ក្បាល​សរសេរ​មិន​ស្គាល់​ឧបករណ៍​ផ្ទុក ។"
+
+#: projects/k3bcdrecordwriter.cpp:851
+#, kde-format
+msgid "Unable to set write speed to %1."
+msgstr "មិន​អាច​កំណត់​ល្បឿន​សរសេរ​ត្រឹម %1 ឡើយ ។"
+
+#: projects/k3bcdrecordwriter.cpp:852
+msgid "Probably this is lower than your writer's lowest writing speed."
+msgstr "ប្រហែល​វា​គឺ​ជា​ល្បឿន ដែល​ទាប​ជាង​ល្បឿន​សរសេរ ដែល​ទាប​បំផុត​របស់​ក្បាល​សរសេរ​របស់​អ្នក​ទៅ​ទៀត ។"
+
+#: projects/k3bcdrecordwriter.cpp:855
+msgid "Unable to send CUE sheet."
+msgstr "មិន​អាច​ផ្ញើ​សន្លឹក CUE បាន​ឡើយ ។"
+
+#: projects/k3bcdrecordwriter.cpp:857 projects/k3bcdrecordwriter.cpp:898
+#: projects/k3bcdrecordwriter.cpp:918
+msgid "Sometimes using TAO writing mode solves this issue."
+msgstr "ជួន​កាល ការ​ប្រើ​របៀប​សរសេរ​ម្ដង​មួយ​បទ អាច​នឹង​ដោះស្រាយ​បញ្ហា​នេះ​បាន ។"
+
+#: projects/k3bcdrecordwriter.cpp:860
+msgid "Unable to open new session."
+msgstr "មិន​អាច​បើក​សម័យ​ថ្មី​បាន​ឡើយ ។"
+
+#: projects/k3bcdrecordwriter.cpp:861
+msgid "Probably a problem with the medium."
+msgstr "ប្រហែល​ជា​មាន​បញ្ហា​ជាមួយ​មេឌៀ ។"
+
+#: projects/k3bcdrecordwriter.cpp:864
+msgid "The disk might still be readable."
+msgstr "ថាស​ប្រហែល​ជា​នៅ​តែ​អាច​អាន​បាន ។"
+
+#: projects/k3bcdrecordwriter.cpp:866
+msgid "Try DAO writing mode."
+msgstr "សាកល្បង​របៀប​សរសេរ​ម្ដង​មួយ​ថាស ។"
+
+#: projects/k3bcdrecordwriter.cpp:869
+#, kde-format
+msgid "%1 has no permission to open the device."
+msgstr "%1 មិន​មាន​សិទ្ធិ​បើក​ឧបករណ៍​ឡើយ ។"
+
+#: projects/k3bcdrecordwriter.cpp:871
+msgid "You may use K3bsetup to solve this problem."
+msgstr "អ្នក​អាច​នឹង​ប្រើ K3bsetup ដើម្បី​ដោះស្រាយ​បញ្ហា​នេះ ។"
+
+#: projects/k3bcdrecordwriter.cpp:875
+msgid "Probably a buffer underrun occurred."
+msgstr "ប្រហែល​ជា​ការ​រត់​នៅ​ក្រោម​សតិ​បណ្ដោះ​អាសន្ន បាន​កើតឡើង​ហើយ ។"
+
+#: projects/k3bcdrecordwriter.cpp:877
+msgid "Please enable Burnfree or choose a lower burning speed."
+msgstr "សូម​អនុញ្ញាត​ការ​ដុត​ដោយ​សេរី ឬ​ជ្រើស​ល្បឿន​ដុត​ទាប​ជាង​នេះ ។"
+
+#: projects/k3bcdrecordwriter.cpp:879
+msgid "Please choose a lower burning speed."
+msgstr "សូម​ជ្រើស​ល្បឿន​ដុត​ទាប​ជាង​នេះ ។"
+
+#: projects/k3bcdrecordwriter.cpp:882
+msgid "Found a high-speed medium not suitable for the writer being used."
+msgstr "បាន​រកឃើញ​មេឌៀ​ល្បឿន​លឿន​មួយ ដែល​មិន​សមស្រប​សម្រាប់​ក្បាល​សរសេរ​ដែល​កំពុង​ប្រើ ។"
+
+#: projects/k3bcdrecordwriter.cpp:883 projects/k3bcdrecordwriter.cpp:887
+msgid "Use the 'force unsafe operations' option to ignore this."
+msgstr "ប្រើ​ជម្រើស 'បង្ខំ​ប្រតិបត្តិ​ការ​គ្មាន​សុវត្ថិភាព' ដើម្បី​មិន​អើពើ​វា ។"
+
+#: projects/k3bcdrecordwriter.cpp:886
+msgid "Found a low-speed medium not suitable for the writer being used."
+msgstr "បាន​រកឃើញ​មេឌៀ​ល្បឿន​យឺត​មួយ ដែល​មិន​សមស្រប​សម្រាប់​ក្បាល​សរសេរ​ដែល​កំពុង​ប្រើ ។"
+
+#: projects/k3bcdrecordwriter.cpp:890
+msgid "Most likely the burning failed due to low-quality media."
+msgstr "ការ​ដុត​ហាក់​ដូច​ជា​បរាជ័យ ដោយ​សារ​តែ​មេឌៀ​គុណភាព​អន់ ។"
+
+#: projects/k3bcdrecordwriter.cpp:893
+msgid "Another application is blocking the device (most likely automounting)."
+msgstr "មាន​កម្មវិធី​មួយ​ទៀត កំពុង​តែ​ទប់ស្កាត់​ឧបករណ៍ (ប្រហែល​ជា​ឧបករណ៍​ដែល​បាន​ម៉ោន​ស្វ័យប្រវត្តិ) ។"
+
+#: projects/k3bcdrecordwriter.cpp:896
+msgid "A write error occurred."
+msgstr "កំហុស​សរសេរ​បាន​កើតឡើង ។"
+
+#: projects/k3bcdrecordwriter.cpp:901
+msgid "Some drives do not support all erase types."
+msgstr "ដ្រាយ​មួយ​ចំនួន​មិន​គាំទ្រ​ប្រភេទ​លុប​ទាំងអស់​ទេ ។"
+
+#: projects/k3bcdrecordwriter.cpp:902
+msgid "Try again using 'Complete' erasing."
+msgstr "ព្យាយាម​ម្ដងទៀត​ដោយ​ប្រើ​ការ​លុប 'ពេញលេញ' ។"
+
+#: projects/k3bcdrecordwriter.cpp:909
+msgid ""
+"Since kernel version 2.6.8 cdrecord cannot use SCSI transport when running "
+"suid root anymore."
+msgstr ""
+"តាំង​ពី​ខឺណែល​កំណែ 2.6.8 មក​ម្លេះ cdrecord មិន​អាច​ប្រើ​ការ​ជញ្ជូន SCSI បាន​ឡើយ ពេល​រត់ suid "
+"root ។"
+
+#: projects/k3bcdrecordwriter.cpp:910
+msgid ""
+"You may use K3b::Setup to solve this problem or remove the suid bit manually."
+msgstr "អ្នក​អាច​នឹង​ប្រើ K3b::Setup ដើម្បី​ដោះស្រាយ​បញ្ហា​នេះ ឬ​យក​ប៊ីត suid ចេញ​ដោយ​ដៃ ។"
+
+#: projects/k3bcdrecordwriter.cpp:921
+msgid "If you are running an unpatched cdrecord version..."
+msgstr "បើ​អ្នក​កំពុង​រត់​កំណែ cdrecord ដែល​មិន​បាន​ប៉ះ..."
+
+#: projects/k3bcdrecordwriter.cpp:922
+msgid "...and this error also occurs with high quality media..."
+msgstr "...ហើយ​កំហុស​នេះ ក៏​កើត​ឡើង​ផង​ដែរ​ជាមួយ​មេឌៀ​ដែល​មាន​គុណភាព​ខ្ពស់..."
+
+#: projects/k3bcdrecordwriter.cpp:923
+msgid "...and the K3b FAQ does not help you..."
+msgstr "...ហើយ​សំណួរ K3b ដែល​សួរ​រឿយៗ មិន​អាច​ជួយ​អ្នក​បាន..."
+
+#: projects/k3bcdrecordwriter.cpp:924
+msgid "...please include the debugging output in your problem report."
+msgstr "...សូម​រួមបញ្ចូល​លទ្ធផល​កំហុស​នេះ នៅ​ក្នុង​របាយការណ៍​កំហុស​របស់​អ្នក ។"
+
+#: projects/k3bgrowisofswriter.cpp:161
+#, kde-format
+msgid "Growisofs version %1 is too old. K3b needs at least version 5.10."
+msgstr "Growisofs កំណែ %1 ចាស់​ពេក​ហើយ ។ K3b ត្រូវការ​យ៉ាងហោច​កំណែ 5.10 ។"
+
+#: projects/k3bgrowisofswriter.cpp:175
+#, kde-format
+msgid ""
+"Growisofs version %1 does not feature a software buffer which may result in "
+"an unstable burn process."
+msgstr ""
+"កំណែ Growisofs %1 មិន​ដើរ​តួ​ជា​សតិបណ្ដោះ​អាសន្ន​របស់​កម្មវិធី​ទេ ដែល​អាច​បង្ហាញ​នៅ​ក្នុង​ដំណើរការ​ដុត​ដែល​"
+"មិនមាន​ស្ថេរភាព ។"
+
+#: projects/k3bgrowisofswriter.cpp:228
+#, kde-format
+msgid "Could not open file %1."
+msgstr "មិន​អាច​បើក​ឯកសារ %1 បាន​ឡើយ ។"
+
+#: projects/k3bgrowisofswriter.cpp:373
+msgid "Starting simulation..."
+msgstr "កំពុង​ចាប់ផ្ដើម​ការ​ក្លែង..."
+
+#: projects/k3bgrowisofswriter.cpp:378
+msgid "Starting disc write..."
+msgstr "កំពុង​ចាប់ផ្ដើម​សរសេរ​ថាស..."
 
 #: tools/k3bdevicemodel.cpp:138
 msgid "Analyzing medium..."
