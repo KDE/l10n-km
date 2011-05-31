@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-28 03:48+0200\n"
+"POT-Creation-Date: 2011-05-31 04:03+0200\n"
 "PO-Revision-Date: 2010-12-22 23:32+0700\n"
 "Last-Translator:  Seng Sutha <Sutha@khmeros.info>\n"
 "Language-Team: Khmer [km] <Support@khmeros.info>\n"
@@ -645,7 +645,7 @@ msgctxt "%1=Encoding"
 msgid "Default ( %1 )"
 msgstr "លំនាំដើម ( %1 )"
 
-#: src/dcc/chatcontainer.cpp:269 src/irc/outputfilter.cpp:1985
+#: src/dcc/chatcontainer.cpp:269 src/irc/outputfilter.cpp:1987
 msgid "Usage"
 msgstr "ការ​ប្រើ​"
 
@@ -661,12 +661,12 @@ msgstr "ការ​ប្រើ​ ៖ អត្ថបទ​ %1ME "
 #: src/irc/inputfilter.cpp:2027 src/irc/inputfilter.cpp:2048
 #: src/irc/inputfilter.cpp:2056 src/irc/inputfilter.cpp:2064
 #: src/irc/inputfilter.cpp:2088 src/irc/outputfilterresolvejob.cpp:85
-#: src/irc/outputfilter.cpp:2003 src/irc/server.cpp:692
-#: src/irc/server.cpp:2038 src/irc/server.cpp:2109 src/irc/server.cpp:2282
-#: src/irc/server.cpp:2318 src/irc/server.cpp:2369 src/irc/server.cpp:2437
-#: src/irc/server.cpp:2456 src/irc/server.cpp:2472 src/irc/server.cpp:3914
-#: src/irc/server.cpp:3926 src/irc/server.cpp:3950 src/irc/server.cpp:3973
-#: src/irc/server.cpp:3989 src/linkaddressbook/addressbook.cpp:113
+#: src/irc/server.cpp:692 src/irc/server.cpp:2038 src/irc/server.cpp:2109
+#: src/irc/server.cpp:2282 src/irc/server.cpp:2318 src/irc/server.cpp:2369
+#: src/irc/server.cpp:2437 src/irc/server.cpp:2456 src/irc/server.cpp:2472
+#: src/irc/server.cpp:3914 src/irc/server.cpp:3926 src/irc/server.cpp:3950
+#: src/irc/server.cpp:3973 src/irc/server.cpp:3989
+#: src/irc/outputfilter.cpp:2005 src/linkaddressbook/addressbook.cpp:113
 #: src/connectionmanager.cpp:282
 msgid "Error"
 msgstr "កំហុស"
@@ -1542,8 +1542,8 @@ msgstr "បាន​ទទួល​សំណើ​ CTCP-%1 ដែល​មិន
 #: src/irc/inputfilter.cpp:504 src/irc/inputfilter.cpp:569
 #: src/irc/inputfilter.cpp:574 src/irc/inputfilter.cpp:597
 #: src/irc/inputfilter.cpp:763 src/irc/inputfilter.cpp:1313
-#: src/irc/outputfilter.cpp:659 src/irc/outputfilter.cpp:895
 #: src/irc/server.cpp:3956 src/irc/server.cpp:3985
+#: src/irc/outputfilter.cpp:659 src/irc/outputfilter.cpp:895
 #: src/viewer/ignorelistviewitem.cpp:44 rc.cpp:394
 msgid "Notice"
 msgstr "សម្គាល់​"
@@ -1771,11 +1771,11 @@ msgstr "អ្នក​បាន​ក្លាយ​ជាការី​​ដ
 msgid "You are now an IRC operator on this server."
 msgstr "ឥឡូវ​នេះ អ្នក​ជាការី​​ IRC ​លើ​ម៉ាស៊ីន​បម្រើ​នេះ​ ។"
 
-#: src/irc/inputfilter.cpp:1321 src/irc/outputfilter.cpp:1994
-#: src/irc/server.cpp:253 src/irc/server.cpp:399 src/irc/server.cpp:451
-#: src/irc/server.cpp:613 src/irc/server.cpp:624 src/irc/server.cpp:861
-#: src/irc/server.cpp:891 src/connectionmanager.cpp:224
-#: src/connectionmanager.cpp:257 src/connectionmanager.cpp:267
+#: src/irc/inputfilter.cpp:1321 src/irc/server.cpp:253 src/irc/server.cpp:399
+#: src/irc/server.cpp:451 src/irc/server.cpp:613 src/irc/server.cpp:624
+#: src/irc/server.cpp:861 src/irc/server.cpp:891 src/irc/outputfilter.cpp:1996
+#: src/connectionmanager.cpp:224 src/connectionmanager.cpp:257
+#: src/connectionmanager.cpp:267
 msgid "Info"
 msgstr "ព័ត៌មាន"
 
@@ -3226,6 +3226,434 @@ msgstr "ឆានែល​ចាកចេញ​"
 msgid "Leave"
 msgstr "ចាកចេញ"
 
+#: src/irc/server.cpp:401 src/irc/server.cpp:411
+msgid "Warning"
+msgstr "ការ​ព្រមាន​"
+
+#: src/irc/server.cpp:451
+#, fuzzy, kde-format
+msgid "Looking for server %1 (port <numid>%2</numid>)..."
+msgstr "កំពុង​ស្វែង​រក​ម៉ាស៊ីន​បម្រើ​ %1 (ច្រក​ <numid>%2</numid>) ..."
+
+#: src/irc/server.cpp:613
+#, fuzzy
+msgid "Server found, connecting..."
+msgstr "ម៉ាស៊ីន​បម្រើ​ដែល​បាន​ស្វែង​រ​ក​ កំពុង​តភ្ជាប់​..."
+
+#: src/irc/server.cpp:624
+#, fuzzy
+msgid "Connected; logging in..."
+msgstr "បានតភ្ជាប់​  កំពុង​ចូល​..."
+
+#: src/irc/server.cpp:687
+#, fuzzy, kde-format
+msgid "Connection to server %1 (port <numid>%2</numid>) lost: %3."
+msgstr "ការ​តភ្ជាប់​ទៅកាន់​ម៉ាស៊ីន​បម្រើ​​ %1 (ច្រក​ <numid>%2</numid>) បាន​បាត់​បង់​ ៖ %3 ។"
+
+#: src/irc/server.cpp:731
+#, fuzzy, kde-format
+msgid ""
+"The SSL certificate for the server %1 (port <numid>%2</numid>) failed the "
+"authenticity check."
+msgstr "ការ​តភ្ជាប់​ទៅកាន់​ម៉ាស៊ីន​បម្រើ​​ %1 (ច្រក​ <numid>%2</numid>) បាន​បាត់​បង់​ ៖ %3 ។"
+
+#: src/irc/server.cpp:735
+#, fuzzy
+msgid "SSL Connection Warning"
+msgstr "ការ​ព្រមាន​ការ​តភ្ជាប់​របស់​ SSL "
+
+#: src/irc/server.cpp:746
+#, fuzzy, kde-format
+msgid ""
+"Could not connect to %1 (port <numid>%2</numid>) using SSL encryption. "
+"Either the server does not support SSL (did you use the correct port?) or "
+"you rejected the certificate. %3"
+msgstr ""
+" មិន​អាច​តភ្ជាប់​ទៅកាន់​​ %1 (ច្រក​ <numid>%2</numid>) ការ​ប្រើការ​អ៊ិន​គ្រីប​របស់​ SSL ។ ប្រ​ហែល​ "
+"ម៉ាស៊ីន​បម្រើ​មិន​គាំទ្រ​ SSL ( តើអ្នក​ប្រើ​ច្រកត្រឹមត្រូវ​ហើយ​ ឬ ? ) ឬអ្នកបានច្រាន​ចោលវិញ្ញាបនបត្រ​ ។ %3 "
+
+#: src/irc/server.cpp:751
+#, fuzzy
+msgid "SSL Connection Error"
+msgstr "កំហុសការ​តភ្ជាប់​របស់​ SSL "
+
+#: src/irc/server.cpp:861
+#, fuzzy
+msgid "Delayed connect aborted."
+msgstr "បាន​បោះបង់តភ្ជាប់យឺត ។"
+
+#: src/irc/server.cpp:891
+#, fuzzy, kde-format
+msgid "Disconnected from %1 (port <numid>%2</numid>)."
+msgstr "ផ្តាច់​​​ពី​ %1 (ច្រក​ <numid>%2</numid>) ។"
+
+#: src/irc/server.cpp:1063
+#, fuzzy, kde-format
+msgid ""
+"No nicknames from the \"%1\" identity were accepted by the connection \"%2"
+"\".\n"
+"Please enter a new one or press Cancel to disconnect:"
+msgstr ""
+"គ្មាន​សម្មតិនាម​ពី​ \"%1\" អត្ត​សញ្ញាណ​ត្រូវ​បានទទួល​ដោយ​ការ​តភ្ជាប់​ \"%2\" ។\n"
+"សូម​បញ្ចូល​មួយ​ថ្មី​ ឬ​ចុច​បោះបង់​​ដើម្បីផ្តាច់​ ៖"
+
+#: src/irc/server.cpp:1064
+msgid "Nickname error"
+msgstr "កំហុស​សម្មតិនាម"
+
+#: src/irc/server.cpp:1520 src/irc/server.cpp:3489 src/irc/server.cpp:3494
+#: src/application.cpp:371
+msgid "D-Bus"
+msgstr "D-Bus"
+
+#: src/irc/server.cpp:1866
+#, fuzzy, kde-format
+msgid "Select File(s) to Send to %1"
+msgstr "ជ្រើស​ឯកសារ​​​ដើម្បី​ផ្ញើ​ទៅកាន់​ %1"
+
+#: src/irc/server.cpp:2039
+#, fuzzy, kde-format
+msgctxt "%1=nickname"
+msgid "Received invalid DCC SEND request from %1."
+msgstr "បានទទួល​សំណើ​ផ្ញើ​ DCC SEND មិន​ត្រឹមត្រូវ​ពី​ %1 ។"
+
+#: src/irc/server.cpp:2074 src/irc/server.cpp:2204 src/irc/server.cpp:2216
+#: src/irc/server.cpp:2365 src/irc/server.cpp:2421 src/irc/server.cpp:2530
+msgid "unknown size"
+msgstr "មិន​ដឹង​​ទំហំ​"
+
+#: src/irc/server.cpp:2071
+#, fuzzy, kde-format
+msgid "%1 offers to send you \"%2\" (%3)..."
+msgstr "%1 ផ្តល់​ដើម្បី​ផ្ញើ​ទៅឲ្យ​អ្នក​ \"%2\" (%3)..."
+
+#: src/irc/server.cpp:2110
+#, fuzzy, kde-format
+msgctxt "%1=nickname"
+msgid "Received invalid DCC CHAT request from %1."
+msgstr "បាន​ទទួលសំណើ​ DCC CHAT មិន​ត្រឹមត្រូវ​ ​ពី​ %1 ។"
+
+#: src/irc/server.cpp:2201
+#, fuzzy, kde-format
+msgid "Asking %1 to accept upload of \"%2\" (%3)..."
+msgstr "កំពុង​សួរ​ %1 ដើម្បីព្រម​ទទួល​យកផ្ទុក​ឡើង​នៃ​ \"%2\" (%3)..."
+
+#: src/irc/server.cpp:2213
+#, fuzzy, kde-format
+msgid "Asking %1 to accept passive upload of \"%2\" (%3)..."
+msgstr "កំពុង​សួរ​ %1 ដើម្បី​ព្រម​ទទួល​យកផ្ទុក​ឡើង​អកម្ម​របស់​ \"%2\" (%3)..."
+
+#: src/irc/server.cpp:2225
+#, fuzzy, kde-format
+msgctxt "%1=name, %2=dcc extension, chat or wboard for example"
+msgid "Asking %1 to accept %2..."
+msgstr "កំពុង​សួរ​​ %1 ដើម្បី​ព្រម​ទទួល​យក​ %2..."
+
+#: src/irc/server.cpp:2284
+#, fuzzy, kde-format
+msgctxt "%1 = nickname"
+msgid "Received invalid passive DCC chat acceptance message from %1."
+msgstr "បាន​ទទួល​​សារការ​ព្រម​ទទួ​លយក​ការ​ជជែក​កំសាន្ត​​ DCC អកម្ម​មិន​ត្រឹមត្រូវ​​ពី​ %1 ។"
+
+#: src/irc/server.cpp:2320
+#, fuzzy, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid ""
+"Received invalid passive DCC send acceptance message for \"%1\" from %2."
+msgstr "បាន​ទទួល​សារ​ការ​ព្រម​ទទួល​ផ្ញើ​ DCC អកម្ម​មិន​ត្រឹម​ត្រូវ​សម្រាប់​ \"%1\" ពី​​ %2 ។"
+
+#: src/irc/server.cpp:2361
+#, fuzzy, kde-format
+msgctxt ""
+"%1 = file name, %2 = nickname of sender, %3 = percentage of file size, %4 = "
+"file size"
+msgid "Resuming download of \"%1\" from %2 starting at %3% of %4..."
+msgstr "កំពុង​​ធ្វើ​បន្តការ​ទាញ​យក​របស់​​ \"%1\" ពី​​ %2 ដោយ​​ចាប់​ផ្តើមនៅ​ %3% នៃ​ %4..."
+
+#: src/irc/server.cpp:2371
+#, fuzzy, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid "Received invalid resume acceptance message for \"%1\" from %2."
+msgstr "បាន​ទទួល​សារ​ការ​ព្រម​ទទួលធ្វើ​បន្ត​មិន​ត្រឹមត្រូវ​សម្រាប់ \"%1\" ពី​ %2 ។"
+
+#: src/irc/server.cpp:2417
+#, fuzzy, kde-format
+msgctxt ""
+"%1 = file name, %2 = nickname of recipient, %3 = percentage of file size, %4 "
+"= file size"
+msgid "Resuming upload of \"%1\" to %2 starting at %3% of %4..."
+msgstr "កំពុង​ធ្វើ​បន្ត​ផ្ទុក​ឡើង​របស់​ \"%1\" ទៅកាន់​ %2 ដោយ​ចាប់​ផ្តើម​​នៅ​ %3% នៃ %4..."
+
+#: src/irc/server.cpp:2439
+#, fuzzy, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid "Received invalid resume request for \"%1\" from %2."
+msgstr "បានទទួល​សំណើ​ធ្វើ​បន្ត​មិន​ត្រឹមត្រូវសម្រាប់​ \"%1\" ពី​ %2 ។"
+
+#: src/irc/server.cpp:2458
+#, fuzzy, kde-format
+msgctxt "%1 = file name, %2 = nickname"
+msgid "Received invalid reject request for \"%1\" from %2."
+msgstr "បាន​ទទួល​សំណើ​ច្រាន​ចោល​​មិន​ត្រឹមត្រូវសម្រាប់​​ \"%1\" ពី​ %2 ។"
+
+#: src/irc/server.cpp:2474
+#, fuzzy, kde-format
+msgctxt "%1 = nickname"
+msgid "Received invalid reject request from %1."
+msgstr "បាន​ទទួល​សំណើ​ច្រាន​ចោល​មិន​ត្រឹមត្រូវ​ពី​ %1 ។"
+
+#: src/irc/server.cpp:2487
+#, fuzzy, kde-format
+msgctxt "%1 = file name, %2 = nickname of sender"
+msgid "Download of \"%1\" from %2 finished."
+msgstr "បាន​បញ្ចាប់ការ​ទាញយក​នៃ​ \"%1\" ពី​ %2 ។"
+
+#: src/irc/server.cpp:2492
+#, fuzzy, kde-format
+msgctxt "%1 = file name, %2 = nickname of sender"
+msgid "Download of \"%1\" from %2 failed. Reason: %3."
+msgstr "បាន​បរាជ័យ​ការទាញ​យក​នៃ​ \"%1\" ពី​ %2 ។ ហេតុផល ៖ %3 ។"
+
+#: src/irc/server.cpp:2504
+#, fuzzy, kde-format
+msgctxt "%1 = file name, %2 = nickname of recipient"
+msgid "Upload of \"%1\" to %2 finished."
+msgstr "បាន​បញ្ចាប់​ផ្ទុក​ឡើង​នៃ​ \"%1\" ទៅកាន់​ %2 ​។"
+
+#: src/irc/server.cpp:2507
+#, fuzzy, kde-format
+msgctxt "%1 = file name, %2 = nickname of recipient"
+msgid "Upload of \"%1\" to %2 failed. Reason: %3."
+msgstr "បាន​បរាជ័យ​ផ្ទុក​ឡើង​នៃ​ \"%1\" ទៅកាន់​ %2 ​។​ ហេតុផល​ ៖ %3 ។"
+
+#: src/irc/server.cpp:2521
+#, kde-format
+msgctxt "%1 = file name, %2 nickname of recipient"
+msgid "Sending \"%1\" to %2..."
+msgstr "កំពុង​ផ្ញើ​​ \"%1\" ទៅកាន់​ %2..."
+
+#: src/irc/server.cpp:2528
+#, kde-format
+msgctxt "%1 = file name, %2 = file size, %3 = nickname of sender"
+msgid "Downloading \"%1\" (%2) from %3..."
+msgstr "កំពុង​ទាញ​យក​​ \"%1\" (%2) ពី​ %3..."
+
+#: src/irc/server.cpp:2835 src/irc/server.cpp:2852
+#: src/irc/outputfilter.cpp:1311
+msgid "Notify"
+msgstr "ជូន​ដំណឹង​"
+
+#: src/irc/server.cpp:2835 src/notificationhandler.cpp:307
+#, kde-format
+msgid "%1 is online (%2)."
+msgstr "%1 លើ​បណ្តាញ​ (%2) ។"
+
+#: src/irc/server.cpp:2852 src/notificationhandler.cpp:321
+#, fuzzy, kde-format
+msgid "%1 went offline (%2)."
+msgstr "%1 នៅលើ​បណ្តា​ញ (%2) ។"
+
+#: src/irc/server.cpp:3489
+#, fuzzy, kde-format
+msgid "Error: Could not find script \"%1\"."
+msgstr "កំហុស​ ៖ មិន​អាច​ស្វែងរក​​ស្គ្រីប \"%1\" ។"
+
+#: src/irc/server.cpp:3494
+#, fuzzy, kde-format
+msgid "Error: Could not execute script \"%1\". Check file permissions."
+msgstr "កំហុស​ ៖​ មិន​​អាចប្រ​តិបត្តិស្គ្រីប​ \"%1\" ។ ពិនិត្យ​​មើ​ល​សិទ្ធិ​ឯកសារ​ ។"
+
+#: src/irc/server.cpp:3696
+#, fuzzy
+msgid "Gone away for now"
+msgstr "ឥឡូវនេះ បានឃ្លាត​​ឆ្ងាយ​"
+
+#: src/irc/server.cpp:3727
+#, fuzzy, kde-format
+msgid "You are now marked as being away (reason: %1)."
+msgstr "ឥឡូវ​នេះ​ អ្នកសម្គាល់​ថា​ឃ្លាត​​​ឆ្ងាយ​ ។"
+
+#: src/irc/server.cpp:3729
+#, fuzzy
+msgid "You are now marked as being away."
+msgstr "អ្នក​មិន​បាន​សម្គាល់​ថា​ឃ្លាត​​ឆ្ងាយ​ឡើយ​ ។"
+
+#: src/irc/server.cpp:3754
+#, fuzzy
+msgid "You are no longer marked as being away."
+msgstr "អ្នក​មិន​បាន​សម្គាល់ថាឃ្លាត​​ឆ្ងាយ​ទៀត​ទេ​ ។"
+
+#: src/irc/server.cpp:3763
+#, fuzzy
+msgid "You are not marked as being away."
+msgstr "អ្នក​មិន​បាន​សម្គាល់​ថា​ឃ្លាត​​ឆ្ងាយ​ឡើយ​ ។"
+
+#: src/irc/server.cpp:3914
+#, fuzzy, kde-format
+msgid "Failed to initiate key exchange with %1."
+msgstr "បាន​បរាជ័យ​ទៅផ្តើមផ្លាស់​ប្តូរ​​សោ​ថ្មី​ជាមួយ​ %1 ។"
+
+#: src/irc/server.cpp:3926
+#, fuzzy, kde-format
+msgid "Unable to perform key exchange with %1."
+msgstr "បាន​បរាជ័យ​ទៅផ្តើមផ្លាស់​ប្តូរ​​សោ​ថ្មី​ជាមួយ​ %1 ។"
+
+#: src/irc/server.cpp:3950
+#, fuzzy, kde-format
+msgid "Failed to parse the DH1080_INIT of %1. Key exchange failed."
+msgstr "បាន​បរាជ័យទៅញែក​ DH1080_INIT នៃ​ %1 ។ បាន​បរាជ័យ​ផ្លាស់​ប្តូរ​សោ ។"
+
+#: src/irc/server.cpp:3956
+#, fuzzy, kde-format
+msgid ""
+"Your key is set and your messages will now be encrypted, sending "
+"DH1080_FINISH to %1."
+msgstr ""
+"សោ​របស់អ្នក​​ត្រូវ​បាន​កំណត់​ និង​សារ​របស់​អ្នក​ នឹង​ត្រូវ​បាន​អ៊ិន​ស្គ្រីប ការ​ផ្ញើ​ DH1080_FINISH ទៅកាន់​ %1 ។"
+
+#: src/irc/server.cpp:3973
+#, fuzzy, kde-format
+msgid "Unable to complete key exchange with %1."
+msgstr "បាន​បរាជ័យ​ទៅផ្តើមផ្លាស់​ប្តូរ​​សោ​ថ្មី​ជាមួយ​ %1 ។"
+
+#: src/irc/server.cpp:3985
+#, fuzzy, kde-format
+msgid ""
+"Successfully parsed DH1080_FINISH sent by %1. Your key is set and your "
+"messages will now be encrypted."
+msgstr ""
+"បាន​ញែក​ DH1080_FINISH ដែល​បានផ្ញើ​ដោយ​ %1 ដោយ​ជោគជ័យ​ ។ សោ​របស់​អ្នក​ត្រូវ​បាន​កំណត់​ និង​សារ​"
+"របស់អ្នក​​ នឹង​ត្រូវ​បាន​អ៊ិនស្គ្រីប​ឥឡូវ​នេះ​ ។"
+
+#: src/irc/server.cpp:3989
+#, fuzzy, kde-format
+msgid "Failed to parse DH1080_FINISH sent by %1. Key exchange failed."
+msgstr "បាន​បរាជ័យ​​ទៅ​ញែក​ DH1080_FINISH ដែល​បាន​ផ្ញើដោយ​​ %1។ បាន​បរាជ័យ​ផ្លាស់​ប្តូរ​សោរ ។"
+
+#: src/irc/channellistpanel.cpp:87
+msgid "Channel Name"
+msgstr "ឈ្មោះ​ឆានែល​"
+
+#: src/irc/channellistpanel.cpp:91
+msgid "Channel Topic"
+msgstr "ប្រ​ធាន​បទ​របស់​ឆានែល​"
+
+#. i18n: file: src/irc/channellistpanelui.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ChannelListWidgetUI)
+#: src/irc/channellistpanel.cpp:146 src/viewer/viewcontainer.cpp:2485
+#: src/viewer/viewcontainer.cpp:2506 rc.cpp:1214
+msgid "Channel List"
+msgstr "បញ្ជី​ឆានែល​"
+
+#: src/irc/channellistpanel.cpp:163
+msgctxt "save list"
+msgid "Save &List..."
+msgstr "រក្សា​ទុក​បញ្ជី​..."
+
+#: src/irc/channellistpanel.cpp:164
+#, fuzzy
+msgid "Click here to save the channel list."
+msgstr "ចុច​ទីនេះ​ដើម្បី​រក្សាទុកបញ្ជី​ឆានែល​ ។"
+
+#: src/irc/channellistpanel.cpp:165
+#, fuzzy
+msgctxt "refresh list"
+msgid "&Refresh List"
+msgstr "ធ្វើ​ឲ្យបញ្ជី​ស្រស់​"
+
+#: src/irc/channellistpanel.cpp:166
+#, fuzzy
+msgid "Click here to refresh the channel list."
+msgstr "ចុច​ទីនេះ​ដើម្បី​ធ្វើឲ្យ​បញ្ជី​ឆានែល​ស្រស់​ ។"
+
+#: src/irc/channellistpanel.cpp:168
+msgctxt "join channel"
+msgid "&Join Channel"
+msgstr "ត​ឆានែល​"
+
+#: src/irc/channellistpanel.cpp:169
+#, fuzzy
+msgid "Click here to join the channel. A new tab is created for the channel."
+msgstr "ចុច​ទីនេះ​ដើម្បី​ត​ឆានែល​ ។ ផ្ទាំង​ថ្មី​ត្រូវ​បាន​បង្កើត​សម្រាប់​ឆានែល​ ។"
+
+#: src/irc/channellistpanel.cpp:239 src/irc/channellistpanel.cpp:336
+msgid "Refreshing."
+msgstr "ការ​ធ្វើ​ឲ្យ​ស្រស់​ ។"
+
+#: src/irc/channellistpanel.cpp:353
+#, fuzzy, kde-format
+msgid "Channels: %1 (%2 shown)"
+msgstr "ឆានែល​ ៖​ %1 (បាន​បង្ហាញ​ %2 )"
+
+#: src/irc/channellistpanel.cpp:354
+#, fuzzy, kde-format
+msgid " Non-unique users: %1 (%2 shown)"
+msgstr " មិន​មានអ្នក​ប្រើ​តែមួយ​ឡើយ​ ៖ %1 (បាន​បង្ហាញ​ %2)"
+
+#: src/irc/channellistpanel.cpp:364
+#, fuzzy
+msgid "Save Channel List"
+msgstr "រក្សា​ទុក​បញ្ជី​ឆានែល​"
+
+#: src/irc/channellistpanel.cpp:396
+#, fuzzy, kde-format
+msgid ""
+"Konversation Channel List: %1 - %2\n"
+"\n"
+msgstr ""
+"បញ្ជី​ឆានែល​របស់​ Konversation ៖ %1 - %2\n"
+"\n"
+
+#: src/irc/channellistpanel.cpp:534
+#, fuzzy, kde-format
+msgid "Channel List for %1"
+msgstr "បញ្ជី​ឆានែល​សម្រាប់​ %1"
+
+#: src/irc/nicklistview.cpp:145
+#, fuzzy
+msgid ""
+"<qt><p>This shows all the people in the channel.  The nick for each person "
+"is shown.<br />Usually an icon is shown showing the status of each person, "
+"but you do not seem to have any icon theme installed.  See the Konversation "
+"settings - <i>Configure Konversation</i> under the <i>Settings</i> menu.  "
+"Then view the page for <i>Themes</i> under <i>Appearance</i>.</p></qt>"
+msgstr ""
+"<qt><p>បង្ហាញ​អ្នក​​ទាំង​អស់​គ្នា​នេះ​ក្នុង​ឆានែល​ ។  សម្មតិនាម​ម្នាក់​ៗ​ត្រូវ​បាន​បង្ហាញ​ ។ <br />ជា​ធម្ម​តា​"
+"រូប​តំណាង​ត្រូវ​បាន​​បង្ហាញ​នៃ​ការ​បង្ហាញ​ស្ថានភាពសម្រាប់​​​ម្នាក់​ៗ ប៉ុន្តែ​អ្នក​ហាក់​បី​ជា​មិនមានស្បែក​រូប​"
+"តំណាងខ្លះដែល​បាន​តំឡើង​ទេ​ ។​  មើល​ការកំណត់​ Konversation​  - <i>កំណត់​រចនា​សម្ព័ន្ធ​ Konversation​​"
+"</i> នៅ​ក្រោម​​ <i>ការ​កំណត់​​</i> ម៉ឺនុយ​​ ។  បន្ទាប់​មក​ មើល​ទំព័រ​សម្រាប់​​ <i>ស្បែក​​</i> នៅ​ក្រោម​​ <i>រូប​"
+"រាង​</i>។</p></qt>"
+
+#: src/irc/nicklistview.cpp:149
+#, fuzzy
+msgid ""
+"<qt><p>This shows all the people in the channel.  The nick for each person "
+"is shown, with a picture showing their status.</p><table><tr><th><img src="
+"\"admin\"/></th><td>This person has administrator privileges.</td></"
+"tr><tr><th><img src=\"owner\"/></th><td>This person is a channel owner.</"
+"td></tr><tr><th><img src=\"op\"/></th><td>This person is a channel operator."
+"</td></tr><tr><th><img src=\"halfop\"/></th><td>This person is a channel "
+"half-operator.</td></tr><tr><th><img src=\"voice\"/></th><td>This person has "
+"voice, and can therefore talk in a moderated channel.</td></tr><tr><th><img "
+"src=\"normal\"/></th><td>This person does not have any special privileges.</"
+"td></tr><tr><th><img src=\"normalaway\"/></th><td>This indicates that this "
+"person is currently away.</td></tr></table><p>The meaning of admin, owner "
+"and halfop varies between different IRC servers.</p><p>Hovering over any "
+"nick shows their current status. See the Konversation Handbook for more "
+"information.</p></qt>"
+msgstr ""
+"<qt><p>ប​​ង្ហាញ​អ្នក​ទាំង​​អស់​គ្នា​នេះ​​ក្នុង​ឆានែល​ ។​  សម្មតិនាម​សម្រាប់​ម្នាក់​ៗ​ ត្រូវ​បាន​បង្ហាញ​​ ជាមួយ​រូប​ភាព​"
+"នៃ​ការ​បង្ហាញ​ស្ថាន​ភាព​របស់​ពួកគេ​ ។</p><table><tr><th><img src=\"admin\"/></th><td>អ្នក​"
+"នេះ​មានសិទ្ធិ​គ្រប់​គ្រង​ ។</td></tr><tr><th><img src=\"owner\"/></th><td>អ្នក​នេះ​ជា​ម្ចាស់​"
+"ឆានែល​ ។</td></tr><tr><th><img src=\"op\"/></th><td>អ្នក​នេះ​​ជាការីឆានែល​ ។</td></"
+"tr><tr><th><img src=\"halfop\"/></th><td>អ្ន​​​ក​នេះ​ជា​ការី​ពាក់​កណ្តាល​ឆានែល​ ។ </td></"
+"tr><tr><th><img src=\"voice\"/></th><td>អ្នក​នេះ​មាន​សំឡេង​  ដូច្នេះ​ និង​អាចនិយាយ​ក្នុង​"
+"ឆានែលបាន​ ។</td></tr><tr><th><img src=\"normal\"/></th><td>អ្នក​នេះ​មិនមាន​សិទ្ធិជា​​"
+"ពិសេស​ទេ​ ។​</td></tr><tr><th><img src=\"normalaway\"/></th><td>នេះ​បង្ហាញ​ប្រាប់​ថា​ "
+"អ្នក​បច្ចុប្បន្ន​ឃ្លា​ឆ្ងាយ​ ។​</td></tr></table><p>អត្ថន័យ​របស់​អ្នក​គ្រប់​គ្រង​​ ម្ចាស់​ និ​ងភាព​ខុស​គ្នា​រ​វាង​"
+"ការ​ប្រែប្រួល​ការី​​ពាក់​កណ្តាល​​​ម៉ាស៊ីន​បម្រើ​ IRC​ ។ </p><p>ហោះហើរពាសពេញ​ សម្មតិនាម​​មួយ​ចំនួនបង្ហាញ​​ស្ថាន​"
+"ភាព​បច្ចុប្បន្ន​របស់​គេ​ ។ មើល​សៀវភៅដៃ​របស់​ Konversation សម្រាប់​ព័ត៌​មាន​បន្ថែម​ ។</p></qt>"
+
 #: src/irc/outputfilter.cpp:215
 #, fuzzy
 msgid ""
@@ -3473,11 +3901,6 @@ msgctxt "%1 = Comma-separated list of nicknames"
 msgid "Current notify list: %1."
 msgstr "បញ្ជី​ជូន​ដំណឹង​​បច្ចុប្បន្ន​ ៖ %1"
 
-#: src/irc/outputfilter.cpp:1311 src/irc/server.cpp:2835
-#: src/irc/server.cpp:2852
-msgid "Notify"
-msgstr "ជូន​ដំណឹង​"
-
 #: src/irc/outputfilter.cpp:1333
 #, fuzzy
 msgid "Enter username and password for IRC operator privileges:"
@@ -3596,7 +4019,7 @@ msgstr "អ្នកកំណត់ករណី​​លើកលែង​បម
 msgid "The key for %1 has been set."
 msgstr "សោ​សម្រាប់​ %1 ត្រូវ​បានកំណត់​ ។"
 
-#: src/irc/outputfilter.cpp:1711 src/irc/outputfilter.cpp:1735
+#: src/irc/outputfilter.cpp:1712 src/irc/outputfilter.cpp:1737
 #, fuzzy
 msgid ""
 "Setting an encryption key requires Konversation to have been built with "
@@ -3608,490 +4031,67 @@ msgstr ""
 "Cryptographic Architecture (QCA) ។ ទាក់​ទងអ្នកចែក​ចាយ​របស់​អ្នក​អំពី​កញ្ចប់​​របស់​ "
 "Konversation ជាមួយ​ការ​គាំទ្រ​ QCA ឬ​ បង្កើត​ Konversation ឡើងវិញ​ជាមួយ​ QCA បច្ចុប្បន្ន ។"
 
-#: src/irc/outputfilter.cpp:1726
+#: src/irc/outputfilter.cpp:1727
 #, fuzzy, kde-format
 msgid ""
 "Usage: %1keyx <nick|channel> triggers DH1080 key exchange with the target."
 msgstr "ការ​ប្រើ​ ៖​ %1keyx <nick|channel> ប្តូរ​សោ​គន្លឹះ​របស់​​ DH1080 ជាមួយ​គោលដៅ ។"
 
-#: src/irc/outputfilter.cpp:1729
+#: src/irc/outputfilter.cpp:1730
 #, fuzzy, kde-format
 msgid "Unable to request a key exchange from %1."
 msgstr "បាន​បរាជ័យ​ទៅផ្តើមផ្លាស់​ប្តូរ​​សោ​ថ្មី​ជាមួយ​ %1 ។"
 
-#: src/irc/outputfilter.cpp:1733
+#: src/irc/outputfilter.cpp:1734
 #, fuzzy, kde-format
 msgid "Beginning DH1080 key exchange with %1."
 msgstr "ការ​ចាប់​ផ្តើមប្តូរ​សោ​របស់​ DH1080 ជាមួយ​ %1 ។"
 
-#: src/irc/outputfilter.cpp:1751
+#: src/irc/outputfilter.cpp:1753
 #, fuzzy, c-format, kde-format
 msgid ""
 "Usage: %1delkey <nick> or <channel> deletes the encryption key for nick or "
 "channel"
 msgstr "ការប្រើ​ ៖​ %1delkey <nick> ឬ <channel> លុប​កូន​សោ​សម្រាប់​សម្មតិនាម​ ឬ​​ឆានែល​"
 
-#: src/irc/outputfilter.cpp:1763
+#: src/irc/outputfilter.cpp:1765
 #, fuzzy, kde-format
 msgid "The key for %1 has been deleted."
 msgstr "សោសម្រាប់​​ %1 ត្រូវ​បាន​លុប​ ។"
 
-#: src/irc/outputfilter.cpp:1766 src/irc/outputfilter.cpp:1786
+#: src/irc/outputfilter.cpp:1768 src/irc/outputfilter.cpp:1788
 #, fuzzy, kde-format
 msgid "No key has been set for %1."
 msgstr "គ្មាន​សោ​ដែលត្រូវ​​បាន​កំណត់​សម្រាប់​ %1 ឡើយ​ ។"
 
-#: src/irc/outputfilter.cpp:1783
+#: src/irc/outputfilter.cpp:1785
 #, fuzzy, kde-format
 msgid "The key for %1 is \"%2\"."
 msgstr "សោ​សម្រាប់​ %1 ជា​ \"%2\" ។"
 
-#: src/irc/outputfilter.cpp:1784
+#: src/irc/outputfilter.cpp:1786
 msgid "Blowfish"
 msgstr "Blowfish"
 
-#: src/irc/outputfilter.cpp:1796
+#: src/irc/outputfilter.cpp:1798
 #, fuzzy, kde-format
 msgid "Usage: %1KILL <nick> [comment]"
 msgstr "ការ​ប្រើ​ ៖ %1KILL <nick> [ពាក្យ​បញ្ជា​]"
 
-#: src/irc/outputfilter.cpp:1810
+#: src/irc/outputfilter.cpp:1812
 #, fuzzy, kde-format
 msgid "Usage: %1DNS <nick>"
 msgstr "ការ​ប្រើ​ ៖ %1DNS <nick>"
 
-#: src/irc/outputfilter.cpp:1840
+#: src/irc/outputfilter.cpp:1842
 #, fuzzy, c-format, kde-format
 msgid "Usage: %1queuetuner [on | off]"
 msgstr "ការប្រើ​ ៖​ %1queuetuner [បើក​ | បិទ]"
 
-#: src/irc/outputfilter.cpp:1909
+#: src/irc/outputfilter.cpp:1911
 #, c-format, kde-format
 msgid "%1CYCLE [-APP | -SERVER] [channel | nickname]"
 msgstr ""
-
-#: src/irc/server.cpp:401 src/irc/server.cpp:411
-msgid "Warning"
-msgstr "ការ​ព្រមាន​"
-
-#: src/irc/server.cpp:451
-#, fuzzy, kde-format
-msgid "Looking for server %1 (port <numid>%2</numid>)..."
-msgstr "កំពុង​ស្វែង​រក​ម៉ាស៊ីន​បម្រើ​ %1 (ច្រក​ <numid>%2</numid>) ..."
-
-#: src/irc/server.cpp:613
-#, fuzzy
-msgid "Server found, connecting..."
-msgstr "ម៉ាស៊ីន​បម្រើ​ដែល​បាន​ស្វែង​រ​ក​ កំពុង​តភ្ជាប់​..."
-
-#: src/irc/server.cpp:624
-#, fuzzy
-msgid "Connected; logging in..."
-msgstr "បានតភ្ជាប់​  កំពុង​ចូល​..."
-
-#: src/irc/server.cpp:687
-#, fuzzy, kde-format
-msgid "Connection to server %1 (port <numid>%2</numid>) lost: %3."
-msgstr "ការ​តភ្ជាប់​ទៅកាន់​ម៉ាស៊ីន​បម្រើ​​ %1 (ច្រក​ <numid>%2</numid>) បាន​បាត់​បង់​ ៖ %3 ។"
-
-#: src/irc/server.cpp:731
-#, fuzzy, kde-format
-msgid ""
-"The SSL certificate for the server %1 (port <numid>%2</numid>) failed the "
-"authenticity check."
-msgstr "ការ​តភ្ជាប់​ទៅកាន់​ម៉ាស៊ីន​បម្រើ​​ %1 (ច្រក​ <numid>%2</numid>) បាន​បាត់​បង់​ ៖ %3 ។"
-
-#: src/irc/server.cpp:735
-#, fuzzy
-msgid "SSL Connection Warning"
-msgstr "ការ​ព្រមាន​ការ​តភ្ជាប់​របស់​ SSL "
-
-#: src/irc/server.cpp:746
-#, fuzzy, kde-format
-msgid ""
-"Could not connect to %1 (port <numid>%2</numid>) using SSL encryption. "
-"Either the server does not support SSL (did you use the correct port?) or "
-"you rejected the certificate. %3"
-msgstr ""
-" មិន​អាច​តភ្ជាប់​ទៅកាន់​​ %1 (ច្រក​ <numid>%2</numid>) ការ​ប្រើការ​អ៊ិន​គ្រីប​របស់​ SSL ។ ប្រ​ហែល​ "
-"ម៉ាស៊ីន​បម្រើ​មិន​គាំទ្រ​ SSL ( តើអ្នក​ប្រើ​ច្រកត្រឹមត្រូវ​ហើយ​ ឬ ? ) ឬអ្នកបានច្រាន​ចោលវិញ្ញាបនបត្រ​ ។ %3 "
-
-#: src/irc/server.cpp:751
-#, fuzzy
-msgid "SSL Connection Error"
-msgstr "កំហុសការ​តភ្ជាប់​របស់​ SSL "
-
-#: src/irc/server.cpp:861
-#, fuzzy
-msgid "Delayed connect aborted."
-msgstr "បាន​បោះបង់តភ្ជាប់យឺត ។"
-
-#: src/irc/server.cpp:891
-#, fuzzy, kde-format
-msgid "Disconnected from %1 (port <numid>%2</numid>)."
-msgstr "ផ្តាច់​​​ពី​ %1 (ច្រក​ <numid>%2</numid>) ។"
-
-#: src/irc/server.cpp:1063
-#, fuzzy, kde-format
-msgid ""
-"No nicknames from the \"%1\" identity were accepted by the connection \"%2"
-"\".\n"
-"Please enter a new one or press Cancel to disconnect:"
-msgstr ""
-"គ្មាន​សម្មតិនាម​ពី​ \"%1\" អត្ត​សញ្ញាណ​ត្រូវ​បានទទួល​ដោយ​ការ​តភ្ជាប់​ \"%2\" ។\n"
-"សូម​បញ្ចូល​មួយ​ថ្មី​ ឬ​ចុច​បោះបង់​​ដើម្បីផ្តាច់​ ៖"
-
-#: src/irc/server.cpp:1064
-msgid "Nickname error"
-msgstr "កំហុស​សម្មតិនាម"
-
-#: src/irc/server.cpp:1520 src/irc/server.cpp:3489 src/irc/server.cpp:3494
-#: src/application.cpp:371
-msgid "D-Bus"
-msgstr "D-Bus"
-
-#: src/irc/server.cpp:1866
-#, fuzzy, kde-format
-msgid "Select File(s) to Send to %1"
-msgstr "ជ្រើស​ឯកសារ​​​ដើម្បី​ផ្ញើ​ទៅកាន់​ %1"
-
-#: src/irc/server.cpp:2039
-#, fuzzy, kde-format
-msgctxt "%1=nickname"
-msgid "Received invalid DCC SEND request from %1."
-msgstr "បានទទួល​សំណើ​ផ្ញើ​ DCC SEND មិន​ត្រឹមត្រូវ​ពី​ %1 ។"
-
-#: src/irc/server.cpp:2074 src/irc/server.cpp:2204 src/irc/server.cpp:2216
-#: src/irc/server.cpp:2365 src/irc/server.cpp:2421 src/irc/server.cpp:2530
-msgid "unknown size"
-msgstr "មិន​ដឹង​​ទំហំ​"
-
-#: src/irc/server.cpp:2071
-#, fuzzy, kde-format
-msgid "%1 offers to send you \"%2\" (%3)..."
-msgstr "%1 ផ្តល់​ដើម្បី​ផ្ញើ​ទៅឲ្យ​អ្នក​ \"%2\" (%3)..."
-
-#: src/irc/server.cpp:2110
-#, fuzzy, kde-format
-msgctxt "%1=nickname"
-msgid "Received invalid DCC CHAT request from %1."
-msgstr "បាន​ទទួលសំណើ​ DCC CHAT មិន​ត្រឹមត្រូវ​ ​ពី​ %1 ។"
-
-#: src/irc/server.cpp:2201
-#, fuzzy, kde-format
-msgid "Asking %1 to accept upload of \"%2\" (%3)..."
-msgstr "កំពុង​សួរ​ %1 ដើម្បីព្រម​ទទួល​យកផ្ទុក​ឡើង​នៃ​ \"%2\" (%3)..."
-
-#: src/irc/server.cpp:2213
-#, fuzzy, kde-format
-msgid "Asking %1 to accept passive upload of \"%2\" (%3)..."
-msgstr "កំពុង​សួរ​ %1 ដើម្បី​ព្រម​ទទួល​យកផ្ទុក​ឡើង​អកម្ម​របស់​ \"%2\" (%3)..."
-
-#: src/irc/server.cpp:2225
-#, fuzzy, kde-format
-msgctxt "%1=name, %2=dcc extension, chat or wboard for example"
-msgid "Asking %1 to accept %2..."
-msgstr "កំពុង​សួរ​​ %1 ដើម្បី​ព្រម​ទទួល​យក​ %2..."
-
-#: src/irc/server.cpp:2284
-#, fuzzy, kde-format
-msgctxt "%1 = nickname"
-msgid "Received invalid passive DCC chat acceptance message from %1."
-msgstr "បាន​ទទួល​​សារការ​ព្រម​ទទួ​លយក​ការ​ជជែក​កំសាន្ត​​ DCC អកម្ម​មិន​ត្រឹមត្រូវ​​ពី​ %1 ។"
-
-#: src/irc/server.cpp:2320
-#, fuzzy, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid ""
-"Received invalid passive DCC send acceptance message for \"%1\" from %2."
-msgstr "បាន​ទទួល​សារ​ការ​ព្រម​ទទួល​ផ្ញើ​ DCC អកម្ម​មិន​ត្រឹម​ត្រូវ​សម្រាប់​ \"%1\" ពី​​ %2 ។"
-
-#: src/irc/server.cpp:2361
-#, fuzzy, kde-format
-msgctxt ""
-"%1 = file name, %2 = nickname of sender, %3 = percentage of file size, %4 = "
-"file size"
-msgid "Resuming download of \"%1\" from %2 starting at %3% of %4..."
-msgstr "កំពុង​​ធ្វើ​បន្តការ​ទាញ​យក​របស់​​ \"%1\" ពី​​ %2 ដោយ​​ចាប់​ផ្តើមនៅ​ %3% នៃ​ %4..."
-
-#: src/irc/server.cpp:2371
-#, fuzzy, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid "Received invalid resume acceptance message for \"%1\" from %2."
-msgstr "បាន​ទទួល​សារ​ការ​ព្រម​ទទួលធ្វើ​បន្ត​មិន​ត្រឹមត្រូវ​សម្រាប់ \"%1\" ពី​ %2 ។"
-
-#: src/irc/server.cpp:2417
-#, fuzzy, kde-format
-msgctxt ""
-"%1 = file name, %2 = nickname of recipient, %3 = percentage of file size, %4 "
-"= file size"
-msgid "Resuming upload of \"%1\" to %2 starting at %3% of %4..."
-msgstr "កំពុង​ធ្វើ​បន្ត​ផ្ទុក​ឡើង​របស់​ \"%1\" ទៅកាន់​ %2 ដោយ​ចាប់​ផ្តើម​​នៅ​ %3% នៃ %4..."
-
-#: src/irc/server.cpp:2439
-#, fuzzy, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid "Received invalid resume request for \"%1\" from %2."
-msgstr "បានទទួល​សំណើ​ធ្វើ​បន្ត​មិន​ត្រឹមត្រូវសម្រាប់​ \"%1\" ពី​ %2 ។"
-
-#: src/irc/server.cpp:2458
-#, fuzzy, kde-format
-msgctxt "%1 = file name, %2 = nickname"
-msgid "Received invalid reject request for \"%1\" from %2."
-msgstr "បាន​ទទួល​សំណើ​ច្រាន​ចោល​​មិន​ត្រឹមត្រូវសម្រាប់​​ \"%1\" ពី​ %2 ។"
-
-#: src/irc/server.cpp:2474
-#, fuzzy, kde-format
-msgctxt "%1 = nickname"
-msgid "Received invalid reject request from %1."
-msgstr "បាន​ទទួល​សំណើ​ច្រាន​ចោល​មិន​ត្រឹមត្រូវ​ពី​ %1 ។"
-
-#: src/irc/server.cpp:2487
-#, fuzzy, kde-format
-msgctxt "%1 = file name, %2 = nickname of sender"
-msgid "Download of \"%1\" from %2 finished."
-msgstr "បាន​បញ្ចាប់ការ​ទាញយក​នៃ​ \"%1\" ពី​ %2 ។"
-
-#: src/irc/server.cpp:2492
-#, fuzzy, kde-format
-msgctxt "%1 = file name, %2 = nickname of sender"
-msgid "Download of \"%1\" from %2 failed. Reason: %3."
-msgstr "បាន​បរាជ័យ​ការទាញ​យក​នៃ​ \"%1\" ពី​ %2 ។ ហេតុផល ៖ %3 ។"
-
-#: src/irc/server.cpp:2504
-#, fuzzy, kde-format
-msgctxt "%1 = file name, %2 = nickname of recipient"
-msgid "Upload of \"%1\" to %2 finished."
-msgstr "បាន​បញ្ចាប់​ផ្ទុក​ឡើង​នៃ​ \"%1\" ទៅកាន់​ %2 ​។"
-
-#: src/irc/server.cpp:2507
-#, fuzzy, kde-format
-msgctxt "%1 = file name, %2 = nickname of recipient"
-msgid "Upload of \"%1\" to %2 failed. Reason: %3."
-msgstr "បាន​បរាជ័យ​ផ្ទុក​ឡើង​នៃ​ \"%1\" ទៅកាន់​ %2 ​។​ ហេតុផល​ ៖ %3 ។"
-
-#: src/irc/server.cpp:2521
-#, kde-format
-msgctxt "%1 = file name, %2 nickname of recipient"
-msgid "Sending \"%1\" to %2..."
-msgstr "កំពុង​ផ្ញើ​​ \"%1\" ទៅកាន់​ %2..."
-
-#: src/irc/server.cpp:2528
-#, kde-format
-msgctxt "%1 = file name, %2 = file size, %3 = nickname of sender"
-msgid "Downloading \"%1\" (%2) from %3..."
-msgstr "កំពុង​ទាញ​យក​​ \"%1\" (%2) ពី​ %3..."
-
-#: src/irc/server.cpp:2835 src/notificationhandler.cpp:307
-#, kde-format
-msgid "%1 is online (%2)."
-msgstr "%1 លើ​បណ្តាញ​ (%2) ។"
-
-#: src/irc/server.cpp:2852 src/notificationhandler.cpp:321
-#, fuzzy, kde-format
-msgid "%1 went offline (%2)."
-msgstr "%1 នៅលើ​បណ្តា​ញ (%2) ។"
-
-#: src/irc/server.cpp:3489
-#, fuzzy, kde-format
-msgid "Error: Could not find script \"%1\"."
-msgstr "កំហុស​ ៖ មិន​អាច​ស្វែងរក​​ស្គ្រីប \"%1\" ។"
-
-#: src/irc/server.cpp:3494
-#, fuzzy, kde-format
-msgid "Error: Could not execute script \"%1\". Check file permissions."
-msgstr "កំហុស​ ៖​ មិន​​អាចប្រ​តិបត្តិស្គ្រីប​ \"%1\" ។ ពិនិត្យ​​មើ​ល​សិទ្ធិ​ឯកសារ​ ។"
-
-#: src/irc/server.cpp:3696
-#, fuzzy
-msgid "Gone away for now"
-msgstr "ឥឡូវនេះ បានឃ្លាត​​ឆ្ងាយ​"
-
-#: src/irc/server.cpp:3727
-#, fuzzy, kde-format
-msgid "You are now marked as being away (reason: %1)."
-msgstr "ឥឡូវ​នេះ​ អ្នកសម្គាល់​ថា​ឃ្លាត​​​ឆ្ងាយ​ ។"
-
-#: src/irc/server.cpp:3729
-#, fuzzy
-msgid "You are now marked as being away."
-msgstr "អ្នក​មិន​បាន​សម្គាល់​ថា​ឃ្លាត​​ឆ្ងាយ​ឡើយ​ ។"
-
-#: src/irc/server.cpp:3754
-#, fuzzy
-msgid "You are no longer marked as being away."
-msgstr "អ្នក​មិន​បាន​សម្គាល់ថាឃ្លាត​​ឆ្ងាយ​ទៀត​ទេ​ ។"
-
-#: src/irc/server.cpp:3763
-#, fuzzy
-msgid "You are not marked as being away."
-msgstr "អ្នក​មិន​បាន​សម្គាល់​ថា​ឃ្លាត​​ឆ្ងាយ​ឡើយ​ ។"
-
-#: src/irc/server.cpp:3914
-#, fuzzy, kde-format
-msgid "Failed to initiate key exchange with %1."
-msgstr "បាន​បរាជ័យ​ទៅផ្តើមផ្លាស់​ប្តូរ​​សោ​ថ្មី​ជាមួយ​ %1 ។"
-
-#: src/irc/server.cpp:3926
-#, fuzzy, kde-format
-msgid "Unable to perform key exchange with %1."
-msgstr "បាន​បរាជ័យ​ទៅផ្តើមផ្លាស់​ប្តូរ​​សោ​ថ្មី​ជាមួយ​ %1 ។"
-
-#: src/irc/server.cpp:3950
-#, fuzzy, kde-format
-msgid "Failed to parse the DH1080_INIT of %1. Key exchange failed."
-msgstr "បាន​បរាជ័យទៅញែក​ DH1080_INIT នៃ​ %1 ។ បាន​បរាជ័យ​ផ្លាស់​ប្តូរ​សោ ។"
-
-#: src/irc/server.cpp:3956
-#, fuzzy, kde-format
-msgid ""
-"Your key is set and your messages will now be encrypted, sending "
-"DH1080_FINISH to %1."
-msgstr ""
-"សោ​របស់អ្នក​​ត្រូវ​បាន​កំណត់​ និង​សារ​របស់​អ្នក​ នឹង​ត្រូវ​បាន​អ៊ិន​ស្គ្រីប ការ​ផ្ញើ​ DH1080_FINISH ទៅកាន់​ %1 ។"
-
-#: src/irc/server.cpp:3973
-#, fuzzy, kde-format
-msgid "Unable to complete key exchange with %1."
-msgstr "បាន​បរាជ័យ​ទៅផ្តើមផ្លាស់​ប្តូរ​​សោ​ថ្មី​ជាមួយ​ %1 ។"
-
-#: src/irc/server.cpp:3985
-#, fuzzy, kde-format
-msgid ""
-"Successfully parsed DH1080_FINISH sent by %1. Your key is set and your "
-"messages will now be encrypted."
-msgstr ""
-"បាន​ញែក​ DH1080_FINISH ដែល​បានផ្ញើ​ដោយ​ %1 ដោយ​ជោគជ័យ​ ។ សោ​របស់​អ្នក​ត្រូវ​បាន​កំណត់​ និង​សារ​"
-"របស់អ្នក​​ នឹង​ត្រូវ​បាន​អ៊ិនស្គ្រីប​ឥឡូវ​នេះ​ ។"
-
-#: src/irc/server.cpp:3989
-#, fuzzy, kde-format
-msgid "Failed to parse DH1080_FINISH sent by %1. Key exchange failed."
-msgstr "បាន​បរាជ័យ​​ទៅ​ញែក​ DH1080_FINISH ដែល​បាន​ផ្ញើដោយ​​ %1។ បាន​បរាជ័យ​ផ្លាស់​ប្តូរ​សោរ ។"
-
-#: src/irc/channellistpanel.cpp:87
-msgid "Channel Name"
-msgstr "ឈ្មោះ​ឆានែល​"
-
-#: src/irc/channellistpanel.cpp:91
-msgid "Channel Topic"
-msgstr "ប្រ​ធាន​បទ​របស់​ឆានែល​"
-
-#. i18n: file: src/irc/channellistpanelui.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, ChannelListWidgetUI)
-#: src/irc/channellistpanel.cpp:146 src/viewer/viewcontainer.cpp:2485
-#: src/viewer/viewcontainer.cpp:2506 rc.cpp:1214
-msgid "Channel List"
-msgstr "បញ្ជី​ឆានែល​"
-
-#: src/irc/channellistpanel.cpp:163
-msgctxt "save list"
-msgid "Save &List..."
-msgstr "រក្សា​ទុក​បញ្ជី​..."
-
-#: src/irc/channellistpanel.cpp:164
-#, fuzzy
-msgid "Click here to save the channel list."
-msgstr "ចុច​ទីនេះ​ដើម្បី​រក្សាទុកបញ្ជី​ឆានែល​ ។"
-
-#: src/irc/channellistpanel.cpp:165
-#, fuzzy
-msgctxt "refresh list"
-msgid "&Refresh List"
-msgstr "ធ្វើ​ឲ្យបញ្ជី​ស្រស់​"
-
-#: src/irc/channellistpanel.cpp:166
-#, fuzzy
-msgid "Click here to refresh the channel list."
-msgstr "ចុច​ទីនេះ​ដើម្បី​ធ្វើឲ្យ​បញ្ជី​ឆានែល​ស្រស់​ ។"
-
-#: src/irc/channellistpanel.cpp:168
-msgctxt "join channel"
-msgid "&Join Channel"
-msgstr "ត​ឆានែល​"
-
-#: src/irc/channellistpanel.cpp:169
-#, fuzzy
-msgid "Click here to join the channel. A new tab is created for the channel."
-msgstr "ចុច​ទីនេះ​ដើម្បី​ត​ឆានែល​ ។ ផ្ទាំង​ថ្មី​ត្រូវ​បាន​បង្កើត​សម្រាប់​ឆានែល​ ។"
-
-#: src/irc/channellistpanel.cpp:239 src/irc/channellistpanel.cpp:336
-msgid "Refreshing."
-msgstr "ការ​ធ្វើ​ឲ្យ​ស្រស់​ ។"
-
-#: src/irc/channellistpanel.cpp:353
-#, fuzzy, kde-format
-msgid "Channels: %1 (%2 shown)"
-msgstr "ឆានែល​ ៖​ %1 (បាន​បង្ហាញ​ %2 )"
-
-#: src/irc/channellistpanel.cpp:354
-#, fuzzy, kde-format
-msgid " Non-unique users: %1 (%2 shown)"
-msgstr " មិន​មានអ្នក​ប្រើ​តែមួយ​ឡើយ​ ៖ %1 (បាន​បង្ហាញ​ %2)"
-
-#: src/irc/channellistpanel.cpp:364
-#, fuzzy
-msgid "Save Channel List"
-msgstr "រក្សា​ទុក​បញ្ជី​ឆានែល​"
-
-#: src/irc/channellistpanel.cpp:396
-#, fuzzy, kde-format
-msgid ""
-"Konversation Channel List: %1 - %2\n"
-"\n"
-msgstr ""
-"បញ្ជី​ឆានែល​របស់​ Konversation ៖ %1 - %2\n"
-"\n"
-
-#: src/irc/channellistpanel.cpp:534
-#, fuzzy, kde-format
-msgid "Channel List for %1"
-msgstr "បញ្ជី​ឆានែល​សម្រាប់​ %1"
-
-#: src/irc/nicklistview.cpp:145
-#, fuzzy
-msgid ""
-"<qt><p>This shows all the people in the channel.  The nick for each person "
-"is shown.<br />Usually an icon is shown showing the status of each person, "
-"but you do not seem to have any icon theme installed.  See the Konversation "
-"settings - <i>Configure Konversation</i> under the <i>Settings</i> menu.  "
-"Then view the page for <i>Themes</i> under <i>Appearance</i>.</p></qt>"
-msgstr ""
-"<qt><p>បង្ហាញ​អ្នក​​ទាំង​អស់​គ្នា​នេះ​ក្នុង​ឆានែល​ ។  សម្មតិនាម​ម្នាក់​ៗ​ត្រូវ​បាន​បង្ហាញ​ ។ <br />ជា​ធម្ម​តា​"
-"រូប​តំណាង​ត្រូវ​បាន​​បង្ហាញ​នៃ​ការ​បង្ហាញ​ស្ថានភាពសម្រាប់​​​ម្នាក់​ៗ ប៉ុន្តែ​អ្នក​ហាក់​បី​ជា​មិនមានស្បែក​រូប​"
-"តំណាងខ្លះដែល​បាន​តំឡើង​ទេ​ ។​  មើល​ការកំណត់​ Konversation​  - <i>កំណត់​រចនា​សម្ព័ន្ធ​ Konversation​​"
-"</i> នៅ​ក្រោម​​ <i>ការ​កំណត់​​</i> ម៉ឺនុយ​​ ។  បន្ទាប់​មក​ មើល​ទំព័រ​សម្រាប់​​ <i>ស្បែក​​</i> នៅ​ក្រោម​​ <i>រូប​"
-"រាង​</i>។</p></qt>"
-
-#: src/irc/nicklistview.cpp:149
-#, fuzzy
-msgid ""
-"<qt><p>This shows all the people in the channel.  The nick for each person "
-"is shown, with a picture showing their status.</p><table><tr><th><img src="
-"\"admin\"/></th><td>This person has administrator privileges.</td></"
-"tr><tr><th><img src=\"owner\"/></th><td>This person is a channel owner.</"
-"td></tr><tr><th><img src=\"op\"/></th><td>This person is a channel operator."
-"</td></tr><tr><th><img src=\"halfop\"/></th><td>This person is a channel "
-"half-operator.</td></tr><tr><th><img src=\"voice\"/></th><td>This person has "
-"voice, and can therefore talk in a moderated channel.</td></tr><tr><th><img "
-"src=\"normal\"/></th><td>This person does not have any special privileges.</"
-"td></tr><tr><th><img src=\"normalaway\"/></th><td>This indicates that this "
-"person is currently away.</td></tr></table><p>The meaning of admin, owner "
-"and halfop varies between different IRC servers.</p><p>Hovering over any "
-"nick shows their current status. See the Konversation Handbook for more "
-"information.</p></qt>"
-msgstr ""
-"<qt><p>ប​​ង្ហាញ​អ្នក​ទាំង​​អស់​គ្នា​នេះ​​ក្នុង​ឆានែល​ ។​  សម្មតិនាម​សម្រាប់​ម្នាក់​ៗ​ ត្រូវ​បាន​បង្ហាញ​​ ជាមួយ​រូប​ភាព​"
-"នៃ​ការ​បង្ហាញ​ស្ថាន​ភាព​របស់​ពួកគេ​ ។</p><table><tr><th><img src=\"admin\"/></th><td>អ្នក​"
-"នេះ​មានសិទ្ធិ​គ្រប់​គ្រង​ ។</td></tr><tr><th><img src=\"owner\"/></th><td>អ្នក​នេះ​ជា​ម្ចាស់​"
-"ឆានែល​ ។</td></tr><tr><th><img src=\"op\"/></th><td>អ្នក​នេះ​​ជាការីឆានែល​ ។</td></"
-"tr><tr><th><img src=\"halfop\"/></th><td>អ្ន​​​ក​នេះ​ជា​ការី​ពាក់​កណ្តាល​ឆានែល​ ។ </td></"
-"tr><tr><th><img src=\"voice\"/></th><td>អ្នក​នេះ​មាន​សំឡេង​  ដូច្នេះ​ និង​អាចនិយាយ​ក្នុង​"
-"ឆានែលបាន​ ។</td></tr><tr><th><img src=\"normal\"/></th><td>អ្នក​នេះ​មិនមាន​សិទ្ធិជា​​"
-"ពិសេស​ទេ​ ។​</td></tr><tr><th><img src=\"normalaway\"/></th><td>នេះ​បង្ហាញ​ប្រាប់​ថា​ "
-"អ្នក​បច្ចុប្បន្ន​ឃ្លា​ឆ្ងាយ​ ។​</td></tr></table><p>អត្ថន័យ​របស់​អ្នក​គ្រប់​គ្រង​​ ម្ចាស់​ និ​ងភាព​ខុស​គ្នា​រ​វាង​"
-"ការ​ប្រែប្រួល​ការី​​ពាក់​កណ្តាល​​​ម៉ាស៊ីន​បម្រើ​ IRC​ ។ </p><p>ហោះហើរពាសពេញ​ សម្មតិនាម​​មួយ​ចំនួនបង្ហាញ​​ស្ថាន​"
-"ភាព​បច្ចុប្បន្ន​របស់​គេ​ ។ មើល​សៀវភៅដៃ​របស់​ Konversation សម្រាប់​ព័ត៌​មាន​បន្ថែម​ ។</p></qt>"
 
 #: src/konsolepanel.cpp:27 src/viewer/viewcontainer.cpp:2139
 #: src/viewer/viewcontainer.cpp:2140
@@ -5851,11 +5851,6 @@ msgstr "បាន​បរាជ័យ​តភ្ជាប់​ទៅកាន
 msgid "You have joined %1."
 msgstr "អ្នក​បាន​ត​ %1 ។"
 
-#: src/dbus.cpp:144
-#, fuzzy, kde-format
-msgid "getNickname: Server %1 is not found."
-msgstr "មាន​ឈ្មោះ​សម្មតិនាម ៖ ម៉ាស៊ីន​បម្រើ​ %1 មិន​ត្រូវ​បាន​ស្វែង​រក​ឡើយ​ ។"
-
 #: src/identitydialog.cpp:28
 msgid "Identities"
 msgstr "អត្ត​សញ្ញាណ"
@@ -6393,6 +6388,23 @@ msgstr "កំណត់​ឆ្ងាយ​ជាសកល"
 #, fuzzy
 msgid "Server List"
 msgstr "បញ្ជី​របស់​​ម៉ាស៊ីន​បម្រើ​"
+
+#: src/dbus.cpp:118
+#, fuzzy, kde-format
+#| msgid "Debug"
+msgid "Debug: %1"
+msgstr "បំបាត់កំហុស"
+
+#: src/dbus.cpp:124
+#, fuzzy, kde-format
+#| msgid "KIO error: %1"
+msgid "Error: %1"
+msgstr "កំហុស KIO ៖ %1"
+
+#: src/dbus.cpp:144
+#, fuzzy, kde-format
+msgid "getNickname: Server %1 is not found."
+msgstr "មាន​ឈ្មោះ​សម្មតិនាម ៖ ម៉ាស៊ីន​បម្រើ​ %1 មិន​ត្រូវ​បាន​ស្វែង​រក​ឡើយ​ ។"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
