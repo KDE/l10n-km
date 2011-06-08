@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: networkmanagement_openvpnui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-06-05 03:47+0200\n"
+"POT-Creation-Date: 2011-06-08 03:40+0200\n"
 "PO-Revision-Date: 2009-06-22 16:27+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -38,6 +38,33 @@ msgstr "លំនាំដើម​"
 msgctxt "@item:inlist Item added when OpenVPN cipher lookup failed"
 msgid "No OpenVPN ciphers found"
 msgstr "រក​មិន​ឃើញ​​សរសេរ​សម្ងាត់​ OpenVPN ​ឡើយ​"
+
+#: vpnplugins/vpnc/vpnc.cpp:71
+msgid "Error decrypting the obfuscated password"
+msgstr ""
+
+#: vpnplugins/vpnc/vpnc.cpp:71 libs/service/networkinterfacemonitor.cpp:188
+#: settings/config/manageconnectionwidget.cpp:530
+#: settings/config/manageconnectionwidget.cpp:574
+#: settings/config/manageconnectionwidget.cpp:689
+msgid "Error"
+msgstr "កំហុស"
+
+#: vpnplugins/vpnc/vpnc.cpp:227
+#, kde-format
+msgid ""
+"The VPN settings file '%1' specifies that VPN traffic should be tunneled "
+"through TCP which is currently not supported in the vpnc software.\n"
+"\n"
+"The connection can still be created, with TCP tunneling disabled, however it "
+"may not work as expected."
+msgstr ""
+
+#: vpnplugins/vpnc/vpnc.cpp:227
+#, fuzzy
+#| msgid "Not Required"
+msgid "Not supported"
+msgstr "មិន​បាន​ទាមទារ​​"
 
 #: libs/internals/connection.cpp:115
 #, fuzzy
@@ -1064,10 +1091,9 @@ msgstr "ក្រុម​ហ៊ុន​ផ្ដល់​របស់​អ្
 msgid "Unlock failed. Error code is %1/%2 (%3)."
 msgstr "បាន​បរាជ័យ​ដោះ​សោ​ ។​ លេខ​កំហុស​​​គឺ​ %1/%2 (%3) ។ "
 
-#: libs/service/networkinterfacemonitor.cpp:188
-#: settings/config/manageconnectionwidget.cpp:602
-msgid "Error"
-msgstr "កំហុស"
+#: libs/ui/vpnpreferences.cpp:51 libs/ui/vpnpreferences.cpp:104
+msgid "New VPN Connection"
+msgstr "ការ​តភ្ជាប់ VPN ​ថ្មី​​ "
 
 #: libs/ui/connectioneditor.cpp:70 libs/ui/connectioneditor.cpp:98
 msgctxt "Edit connection dialog caption"
@@ -1443,18 +1469,6 @@ msgstr "ម៉ែត្រ​"
 msgid "New PPPoE Connection"
 msgstr "ការ​តភ្ជាប់​​ PPPoE ​ថ្មី​ "
 
-#: libs/ui/vpnpreferences.cpp:50 libs/ui/vpnpreferences.cpp:84
-msgid "New VPN Connection"
-msgstr "ការ​តភ្ជាប់ VPN ​ថ្មី​​ "
-
-#: settings/config/addeditdeletebuttonset.cpp:37
-msgid "Add..."
-msgstr "បន្ថែម...​"
-
-#: settings/config/addeditdeletebuttonset.cpp:39
-msgid "Edit..."
-msgstr "កែសម្រួល...​"
-
 #: settings/config/mobileconnectionwizard.cpp:51
 msgctxt "Mobile Connection Wizard"
 msgid "New Mobile Broadband Connection"
@@ -1618,7 +1632,27 @@ msgctxt "Mobile Connection Wizard"
 msgid "Your Plan:"
 msgstr "គម្រោង​របស់​អ្នក​ ៖​"
 
-#: settings/config/manageconnectionwidget.cpp:181
+#: settings/config/addeditdeletebuttonset.cpp:40
+msgid "Add..."
+msgstr "បន្ថែម...​"
+
+#: settings/config/addeditdeletebuttonset.cpp:42
+msgid "Edit..."
+msgstr "កែសម្រួល...​"
+
+#: settings/config/addeditdeletebuttonset.cpp:48
+#, fuzzy
+#| msgid "Port"
+msgid "Import"
+msgstr "ច្រក "
+
+#: settings/config/addeditdeletebuttonset.cpp:49
+#, fuzzy
+#| msgid "Port"
+msgid "Export"
+msgstr "ច្រក "
+
+#: settings/config/manageconnectionwidget.cpp:188
 #, kde-format
 msgctxt ""
 "Label for last used time for a network connection used in the last hour, as "
@@ -1627,7 +1661,7 @@ msgid "One minute ago"
 msgid_plural "%1 minutes ago"
 msgstr[0] "%1 នាទី​កន្លងទៅ​​"
 
-#: settings/config/manageconnectionwidget.cpp:188
+#: settings/config/manageconnectionwidget.cpp:195
 #, kde-format
 msgctxt ""
 "Label for last used time for a network connection used in the last day, as "
@@ -1636,45 +1670,77 @@ msgid "One hour ago"
 msgid_plural "%1 hours ago"
 msgstr[0] "%1 ម៉ោង​កន្លង​ទៅ"
 
-#: settings/config/manageconnectionwidget.cpp:193
+#: settings/config/manageconnectionwidget.cpp:200
 msgctxt ""
 "Label for last used time for a network connection used the previous day"
 msgid "Yesterday"
 msgstr "ម្សិល​មិញ"
 
-#: settings/config/manageconnectionwidget.cpp:199
+#: settings/config/manageconnectionwidget.cpp:206
 msgctxt ""
 "Label for last used time for a network connection that has never been used"
 msgid "Never"
 msgstr "មិន​ដែល​​"
 
-#: settings/config/manageconnectionwidget.cpp:435
+#: settings/config/manageconnectionwidget.cpp:442
 msgctxt "Tooltip for disabled tab when no VPN plugins are installed"
 msgid "No VPN plugins were found"
 msgstr "រក​មិន​ឃើញ​កម្មវិធី​ជំនួយ VPN"
 
-#: settings/config/manageconnectionwidget.cpp:575
+#: settings/config/manageconnectionwidget.cpp:495
+#, fuzzy
+#| msgid "&Store connection secrets: "
+msgctxt "File chooser dialog title for importing VPN"
+msgid "Import VPN connection settings"
+msgstr "ទុក​​ការ​តភ្ជាប់​សម្ងាត់​ ៖​"
+
+#: settings/config/manageconnectionwidget.cpp:530
+msgid "Could not import VPN connection settings"
+msgstr ""
+
+#: settings/config/manageconnectionwidget.cpp:564
+msgctxt "File chooser dialog title for exporting VPN"
+msgid "Export VPN"
+msgstr ""
+
+#: settings/config/manageconnectionwidget.cpp:572
+msgid "VPN connection successfully exported"
+msgstr ""
+
+#: settings/config/manageconnectionwidget.cpp:572
+msgid "Success"
+msgstr ""
+
+#: settings/config/manageconnectionwidget.cpp:572
+msgid "Do not show again"
+msgstr ""
+
+#: settings/config/manageconnectionwidget.cpp:574
+msgid "Could not export VPN connection settings"
+msgstr ""
+
+#: settings/config/manageconnectionwidget.cpp:665
 #, fuzzy
 msgid ""
 "Connection edit option failed, make sure that NetworkManager is properly "
 "running."
 msgstr "បាន​បរាជ័យ​ជម្រើស​កែសម្រួល​ការ​តភ្ជាប់​ ​សូម​ប្រាកដ​ថា​​កម្មវិធី​គ្រប់គ្រង​បណ្ដាញ​កំពុង​រត់​យ៉ាង​ត្រឹមត្រូវ ។"
 
-#: settings/config/manageconnectionwidget.cpp:657
+#: settings/config/manageconnectionwidget.cpp:742
 msgid "Connection create operation failed."
 msgstr "បាន​បរាជ័យ​ប្រតិបត្តិការ​បង្កើត​ការ​តភ្ជាប់ ។​"
 
-#: settings/config/manageconnectionwidget.cpp:724
+#: settings/config/manageconnectionwidget.cpp:809
 #, kde-format
 msgctxt "Warning message on attempting to delete a connection"
 msgid "Do you really want to delete the connection '%1'?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​ការ​តភ្ជាប់ '%1' ឬ ?"
 
-#: settings/config/manageconnectionwidget.cpp:725
+#: settings/config/manageconnectionwidget.cpp:810
 msgid "Confirm Delete"
 msgstr "អះអាង​ការ​លុប"
 
-#: settings/config/manageconnectionwidget.cpp:888
+#: settings/config/manageconnectionwidget.cpp:976
 msgctxt "Text for connection list entry that is currently in used"
 msgid "Now"
 msgstr "ឥឡូវ"
