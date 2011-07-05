@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kolourpaint\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-07 04:02+0200\n"
+"POT-Creation-Date: 2011-07-05 04:35+0200\n"
 "PO-Revision-Date: 2011-05-31 16:14+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -58,11 +58,6 @@ msgstr "រាបស្មើ"
 msgid "Reduce to Grayscale"
 msgstr "បន្ថយ​ទៅ​មាត្រដ្ឋាន​ប្រផេះ"
 
-#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
-msgid "Hue, Saturation, Value"
-msgstr "ភាព​លាំៗ​នៃ​ពណ៌ តិត្ថិភាព តម្លៃ"
-
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:50
 #: commands/imagelib/effects/kpEffectInvertCommand.cpp:58
 msgid "Invert Colors"
@@ -72,6 +67,16 @@ msgstr "បញ្ច្រាស​ពណ៌"
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:117
 msgid "Invert"
 msgstr "ដាក់​បញ្ច្រាស"
+
+#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
+msgid "Histogram Equalizer"
+msgstr "អ៊ីស្តូក្រាម​ស្មើ​គ្នា"
+
+#: commands/imagelib/effects/kpEffectHSVCommand.cpp:37
+#: dialogs/imagelib/effects/kpEffectsDialog.cpp:116
+msgid "Hue, Saturation, Value"
+msgstr "ភាព​លាំៗ​នៃ​ពណ៌ តិត្ថិភាព តម្លៃ"
 
 #: commands/imagelib/effects/kpEffectReduceColorsCommand.cpp:57
 msgid "Reduce to Monochrome (Dithered)"
@@ -89,11 +94,6 @@ msgstr "បន្ថយ​ត្រឹម ២៥៦ ពណ៌ (ច្របល�
 msgid "Reduce to 256 Color"
 msgstr "បន្ថយ​​ត្រឹម ២៥៦ ពណ៌"
 
-#: commands/imagelib/effects/kpEffectToneEnhanceCommand.cpp:41
-#: dialogs/imagelib/effects/kpEffectsDialog.cpp:115
-msgid "Histogram Equalizer"
-msgstr "អ៊ីស្តូក្រាម​ស្មើ​គ្នា"
-
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:69
 msgid "Flip"
 msgstr "ត្រឡប់"
@@ -109,6 +109,14 @@ msgstr "ត្រឡប់​ផ្ដេក"
 #: commands/imagelib/transforms/kpTransformFlipCommand.cpp:76
 msgid "Flip vertically"
 msgstr "ត្រឡប់​បញ្ឈរ"
+
+#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
+msgid "Rotate"
+msgstr "បង្វិល"
+
+#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
+msgid "Skew"
+msgstr "ឆៀង"
 
 #: commands/imagelib/transforms/kpTransformResizeScaleCommand.cpp:110
 #: commands/tools/selection/kpToolSelectionResizeScaleCommand.cpp:62
@@ -136,13 +144,14 @@ msgstr "មាត្រដ្ឋាន"
 msgid "Smooth Scale"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​រលូន"
 
-#: commands/imagelib/transforms/kpTransformRotateCommand.cpp:72
-msgid "Rotate"
-msgstr "បង្វិល"
+#: commands/tools/kpToolColorPickerCommand.cpp:61
+#: tools/kpToolColorPicker.cpp:47
+msgid "Color Picker"
+msgstr "ឧបករណ៍​ជ្រើស​ពណ៌"
 
-#: commands/imagelib/transforms/kpTransformSkewCommand.cpp:75
-msgid "Skew"
-msgstr "ឆៀង"
+#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
+msgid "Flood Fill"
+msgstr "បំពេញ​ទាំងមូល"
 
 #: commands/kpCommandHistoryBase.cpp:454
 #, kde-format
@@ -190,15 +199,6 @@ msgstr "%1 ៖ %2"
 msgid "%1 more item"
 msgid_plural "%1 more items"
 msgstr[0] "%1 ធាតុ​បន្ថែម​ទៀត"
-
-#: commands/tools/kpToolColorPickerCommand.cpp:61
-#: tools/kpToolColorPicker.cpp:47
-msgid "Color Picker"
-msgstr "ឧបករណ៍​ជ្រើស​ពណ៌"
-
-#: commands/tools/kpToolFloodFillCommand.cpp:78 tools/kpToolFloodFill.cpp:55
-msgid "Flood Fill"
-msgstr "បំពេញ​ទាំងមូល"
 
 #: dialogs/imagelib/effects/kpEffectsDialog.cpp:91
 msgctxt "@title:window"
@@ -877,12 +877,6 @@ msgstr "មិន​អាច​រក្សាទុក​រូបភាព​
 msgid "Set as Image"
 msgstr "កំណត់​ជា​រូបភាព"
 
-#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:248
-#: mainWindow/kpMainWindow_Image.cpp:314 mainWindow/kpMainWindow_Edit.cpp:367
-#: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
-msgid "Selection: Create"
-msgstr "ជម្រើស ៖ បង្កើត"
-
 #: imagelib/transforms/kpTransformAutoCrop.cpp:386
 msgid "Remove Internal B&order"
 msgstr "យក​ស៊ុម​ខាង​ក្នុង​ចេញ"
@@ -922,94 +916,11 @@ msgctxt "@title:window"
 msgid "Cannot Autocrop"
 msgstr "មិន​អាច​ច្រិប​ស្វ័យប្រវត្តិ​បាន​ឡើយ"
 
-#: kolourpaint.cpp:49
-msgid "KolourPaint"
-msgstr "KolourPaint"
-
-#: kolourpaint.cpp:51
-msgid "Paint Program for KDE"
-msgstr "កម្មវិធី​គំនូរ​របស់ KDE"
-
-#: kolourpaint.cpp:54
-msgid "To obtain support, please visit the website."
-msgstr "ដើម្បី​ទទួល​បាន​ការ​គាំទ្រ សូម​ចូល​ទៅកាន់​តំបន់​បណ្ដាញ ។"
-
-#: kolourpaint.cpp:65
-msgid "Clarence Dang"
-msgstr "Clarence Dang"
-
-#: kolourpaint.cpp:65
-msgid "Project Founder"
-msgstr "អ្នក​បង្កើត​គម្រោង"
-
-#: kolourpaint.cpp:66
-msgid "Thurston Dang"
-msgstr "Thurston Dang"
-
-#: kolourpaint.cpp:66
-msgid "Chief Investigator"
-msgstr "ប្រធាន​អ្នក​បង្កើត"
-
-#: kolourpaint.cpp:68
-msgid "Martin Koller"
-msgstr "Martin Koller"
-
-#: kolourpaint.cpp:68
-msgid "Scanning Support, Alpha Support, Current Maintainer"
-msgstr "គាំទ្រ​ការ​ស្កេន គាំទ្រ​អាល់ហ្វា អ្នក​ថែទាំ​បច្ចុប្បន្ន"
-
-#: kolourpaint.cpp:69
-msgid "Kristof Borrey"
-msgstr "Kristof Borrey"
-
-#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
-msgid "Icons"
-msgstr "រូបតំណាង"
-
-#: kolourpaint.cpp:70
-msgid "Tasuku Suzuki"
-msgstr "Tasuku Suzuki"
-
-#: kolourpaint.cpp:70 kolourpaint.cpp:71
-msgid "InputMethod Support"
-msgstr "គាំទ្រ​វិធីសាស្ដ្រ​បញ្ចូល"
-
-#: kolourpaint.cpp:71
-msgid "Kazuki Ohta"
-msgstr "Kazuki Ohta"
-
-#: kolourpaint.cpp:72
-msgid "Nuno Pinheiro"
-msgstr "Nuno Pinheiro"
-
-#: kolourpaint.cpp:73
-msgid "Danny Allen"
-msgstr "Danny Allen"
-
-#: kolourpaint.cpp:74
-msgid "Mike Gashler"
-msgstr "Mike Gashler"
-
-#: kolourpaint.cpp:74
-msgid "Image Effects"
-msgstr "បែបផែន​រូបភាព"
-
-#: kolourpaint.cpp:76
-msgid "Laurent Montel"
-msgstr "Laurent Montel"
-
-#: kolourpaint.cpp:76
-msgid "KDE 4 Porting"
-msgstr "រួមបញ្ចូល​ក្នុង KDE 4"
-
-#: kolourpaint.cpp:80
-msgid ""
-"Thanks to the many others who have helped to make this program possible."
-msgstr "សូម​ថ្លែង​អំណរគុណ​ចំពោះ​អ្នក​ចូល​រួម​ផ្សេងទៀត ដែល​បាន​ជួយ​ធ្វើ​ឲ្យ​កម្មវិធី​នេះ​ដំណើរការ​បាន ។"
-
-#: kolourpaint.cpp:85
-msgid "Image file to open"
-msgstr "ឯកសារ​រូបភាព​ដែល​ត្រូវ​បើក"
+#: imagelib/transforms/kpTransformCrop_ImageSelection.cpp:248
+#: mainWindow/kpMainWindow_Edit.cpp:367 mainWindow/kpMainWindow_Image.cpp:314
+#: tools/selection/image/kpAbstractImageSelectionTool.cpp:81
+msgid "Selection: Create"
+msgstr "ជម្រើស ៖ បង្កើត"
 
 #: layers/selections/text/kpTextSelection.cpp:136
 #: tools/selection/text/kpToolText.cpp:59
@@ -1054,79 +965,6 @@ msgstr ""
 msgid "Untitled"
 msgstr "គ្មាន​ចំណង​ជើង"
 
-#: mainWindow/kpMainWindow_Image.cpp:119
-msgid "R&esize / Scale..."
-msgstr "ប្ដូរ​ទំហំ / ធ្វើ​មាត្រដ្ឋាន..."
-
-#: mainWindow/kpMainWindow_Image.cpp:124
-msgid "Se&t as Image (Crop)"
-msgstr "កំណត់​ជា​រូបភាព (ច្រឹប)"
-
-#: mainWindow/kpMainWindow_Image.cpp:134
-#| msgid "&Vertical (upside-down)"
-msgid "&Flip (upside down)"
-msgstr "ត្រឡប់ (ត្រឡប់​ចុះក្រោម)"
-
-#: mainWindow/kpMainWindow_Image.cpp:139
-#| msgid "Flip horizontally"
-msgid "Mirror (horizontally)"
-msgstr "កញ្ចក់ (ត្រឡប់​ផ្ដេក)"
-
-#: mainWindow/kpMainWindow_Image.cpp:144
-msgid "&Rotate..."
-msgstr "បង្វិល..."
-
-#: mainWindow/kpMainWindow_Image.cpp:150
-msgid "Rotate &Left"
-msgstr "បង្វិល​ឆ្វេង"
-
-#: mainWindow/kpMainWindow_Image.cpp:156
-msgid "Rotate Righ&t"
-msgstr "បង្វិល​ស្ដាំ"
-
-#: mainWindow/kpMainWindow_Image.cpp:162
-msgid "S&kew..."
-msgstr "បញ្ឆៀង..."
-
-#: mainWindow/kpMainWindow_Image.cpp:167
-msgid "Reduce to Mo&nochrome (Dithered)"
-msgstr "បន្ថយ​ត្រឹម​មួយ​ពណ៌ (ច្របល់)"
-
-#: mainWindow/kpMainWindow_Image.cpp:171
-msgid "Reduce to &Grayscale"
-msgstr "បន្ថយ​ជា​មាត្រដ្ឋាន​ប្រផេះ"
-
-#: mainWindow/kpMainWindow_Image.cpp:175
-msgid "&Invert Colors"
-msgstr "បញ្ច្រាស​ពណ៌"
-
-#: mainWindow/kpMainWindow_Image.cpp:180
-msgid "C&lear"
-msgstr "ជម្រះ"
-
-#: mainWindow/kpMainWindow_Image.cpp:185
-msgid "&More Effects..."
-msgstr "បែបផែន​ផ្សេត​ទៀត..."
-
-#: mainWindow/kpMainWindow_Image.cpp:225
-msgctxt ""
-"Image/Selection Menu caption - make sure the translation has the same accel "
-"as the Select&ion translation"
-msgid "&Image"
-msgstr "រូបភាព"
-
-#: mainWindow/kpMainWindow_Image.cpp:229
-msgctxt ""
-"Image/Selection Menu caption - make sure that translation has the same accel "
-"as the &Image translation"
-msgid "Select&ion"
-msgstr "ជម្រើស"
-
-#: mainWindow/kpMainWindow_Image.cpp:316 mainWindow/kpMainWindow_Edit.cpp:366
-#: mainWindow/kpMainWindow_Edit.cpp:441 tools/selection/text/kpToolText.cpp:93
-msgid "Text: Create Box"
-msgstr "អត្ថបទ ៖ បង្កើត​ប្រអប់"
-
 #: mainWindow/kpMainWindow_Text.cpp:60
 msgid "Font Family"
 msgstr "គ្រួសារ​ពុម្ពអក្សរ"
@@ -1162,62 +1000,6 @@ msgstr "របៀប​រូបភាព​តូច​ពង្រីក"
 #: mainWindow/kpMainWindow_View_Thumbnail.cpp:90
 msgid "Enable Thumbnail &Rectangle"
 msgstr "អនុញ្ញាត​ឲ្យ​មាន​ចតុកោណកែង​រូបភាព​តូច"
-
-#: mainWindow/kpMainWindow_View.cpp:76
-msgid "Show &Grid"
-msgstr "បង្ហាញ​ក្រឡាចត្រង្គ"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:91
-#: mainWindow/kpMainWindow_StatusBar.cpp:284
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:113
-msgid "&Zoom"
-msgstr "ពង្រីក"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:194
-#, kde-format
-msgid ""
-"Setting the zoom level to a value that is not a multiple of 100% results in "
-"imprecise editing and redraw glitches.\n"
-"Do you really want to set to zoom level to %1%?"
-msgstr ""
-"ការ​កំណត់​កម្រិត​ពង្រីក​ទៅ​ជា​តម្លៃ​មួយ ដែល​មិន​មែន​ជា​ពហុគុណ​នៃ 100% អាច​នឹង​បណ្ដាល​ឲ្យ​ការ​កែសម្រួល​មាន​ភាព​មិន​"
-"ជាក់លាក់ ហើយនឹងគូរ glitch ឡើង​វិញ ។\n"
-"តើ​អ្នក​ពិត​ជា​ចង់​កំណត់​កម្រិត​ពង្រីក​ទៅ​ជា %1% ឬ ?"
-
-#: mainWindow/kpMainWindow_View_Zoom.cpp:199
-#, kde-format
-msgid "Set Zoom Level to %1%"
-msgstr "កំណត់​កម្រិត​ពង្រីក​ត្រឹម %1%"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:149
-#, kde-format
-msgid "%1,%2"
-msgstr "%1,%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:156
-#, kde-format
-msgid "%1,%2 - %3,%4"
-msgstr "%1,%2 - %3,%4"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:199
-#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
-#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
-#, kde-format
-msgid "%1x%2"
-msgstr "%1x%2"
-
-#: mainWindow/kpMainWindow_StatusBar.cpp:258
-#, kde-format
-msgid "%1bpp"
-msgstr "%1bpp"
-
-#: mainWindow/kpMainWindow_Settings.cpp:67
-msgid "Show &Path"
-msgstr "បង្ហាញ​ផ្លូវ"
 
 #: mainWindow/kpMainWindow_Colors.cpp:59
 msgid "Use KolourPaint Defaults"
@@ -1289,7 +1071,6 @@ msgstr ""
 "តើ​អ្នក​ចង់​រក្សាទុក​វា​ទៅ​ឯកសារ​ឬ ?"
 
 #: mainWindow/kpMainWindow_Colors.cpp:317
-#| msgid "Open Color Palette"
 msgctxt "@title:window"
 msgid "Open Color Palette"
 msgstr "បើក​ក្ដារ​លាយ​ពណ៌"
@@ -1353,6 +1134,12 @@ msgstr "ចម្លង​ទៅ​ឯកសារ..."
 msgid "Paste &From File..."
 msgstr "បិទភ្ជាប់​ពី​ឯកសារ..."
 
+#: mainWindow/kpMainWindow_Edit.cpp:366 mainWindow/kpMainWindow_Edit.cpp:441
+#: mainWindow/kpMainWindow_Image.cpp:316
+#: tools/selection/text/kpToolText.cpp:93
+msgid "Text: Create Box"
+msgstr "អត្ថបទ ៖ បង្កើត​ប្រអប់"
+
 #: mainWindow/kpMainWindow_Edit.cpp:447
 msgid "Text: Paste"
 msgstr "អត្ថបទ ៖ បិទភ្ជាប់"
@@ -1388,13 +1175,11 @@ msgid "Selection: Deselect"
 msgstr "ជម្រើស ៖ ដោះ​ជម្រើស"
 
 #: mainWindow/kpMainWindow_Edit.cpp:882
-#| msgid "Copy to File"
 msgctxt "@title:window"
 msgid "Copy to File"
 msgstr "ចម្លង​ទៅ​ឯកសារ"
 
 #: mainWindow/kpMainWindow_Edit.cpp:930
-#| msgid "Paste From File"
 msgctxt "@title:window"
 msgid "Paste From File"
 msgstr "បិទភ្ជាប់​ពី​ឯកសារ"
@@ -1408,7 +1193,6 @@ msgid "Scan..."
 msgstr "ស្កេន..."
 
 #: mainWindow/kpMainWindow_File.cpp:114
-#| msgid "Acquiring Screenshots"
 msgid "Acquire Screenshot"
 msgstr "ទទួល​រូបថត​អេក្រង់"
 
@@ -1421,7 +1205,6 @@ msgid "Reloa&d"
 msgstr "ផ្ទុក​ឡើង​វិញ"
 
 #: mainWindow/kpMainWindow_File.cpp:464
-#| msgid "Open Image"
 msgctxt "@title:window"
 msgid "Open Image"
 msgstr "បើក​រូបភាព"
@@ -1448,7 +1231,6 @@ msgid "No delay"
 msgstr "គ្មាន​ការ​ពន្យារ"
 
 #: mainWindow/kpMainWindow_File.cpp:658
-#| msgid "Paste in &New Window"
 msgid "Hide Main Window"
 msgstr "បិទភ្ជាប់​ក្នុង​បង្អួច​ថ្មី"
 
@@ -1457,13 +1239,11 @@ msgid "Document Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ​ឯកសារ"
 
 #: mainWindow/kpMainWindow_File.cpp:954
-#| msgid "Save Image As"
 msgctxt "@title:window"
 msgid "Save Image As"
 msgstr "រក្សាទុក​រូបភាព​ជា"
 
 #: mainWindow/kpMainWindow_File.cpp:1003
-#| msgid "Export"
 msgctxt "@title:window"
 msgid "Export"
 msgstr "នាំចេញ"
@@ -1491,7 +1271,6 @@ msgstr ""
 "តើ​អ្នក​ច្បាស់​ហើយ​ឬ ?"
 
 #: mainWindow/kpMainWindow_File.cpp:1320
-#| msgid "Print Image"
 msgctxt "@title:window"
 msgid "Print Image"
 msgstr "បោះពុម្ព​រូបភាព"
@@ -1512,6 +1291,104 @@ msgid ""
 msgstr ""
 "ឯកសារ \"%1\" ត្រូវ​បាន​កែប្រែ ។\n"
 "តើ​អ្នក​ចង់​រក្សាទុក​វា​ឬ​ទេ ?"
+
+#: mainWindow/kpMainWindow_Image.cpp:119
+msgid "R&esize / Scale..."
+msgstr "ប្ដូរ​ទំហំ / ធ្វើ​មាត្រដ្ឋាន..."
+
+#: mainWindow/kpMainWindow_Image.cpp:124
+msgid "Se&t as Image (Crop)"
+msgstr "កំណត់​ជា​រូបភាព (ច្រឹប)"
+
+#: mainWindow/kpMainWindow_Image.cpp:134
+msgid "&Flip (upside down)"
+msgstr "ត្រឡប់ (ត្រឡប់​ចុះក្រោម)"
+
+#: mainWindow/kpMainWindow_Image.cpp:139
+msgid "Mirror (horizontally)"
+msgstr "កញ្ចក់ (ត្រឡប់​ផ្ដេក)"
+
+#: mainWindow/kpMainWindow_Image.cpp:144
+msgid "&Rotate..."
+msgstr "បង្វិល..."
+
+#: mainWindow/kpMainWindow_Image.cpp:150
+msgid "Rotate &Left"
+msgstr "បង្វិល​ឆ្វេង"
+
+#: mainWindow/kpMainWindow_Image.cpp:156
+msgid "Rotate Righ&t"
+msgstr "បង្វិល​ស្ដាំ"
+
+#: mainWindow/kpMainWindow_Image.cpp:162
+msgid "S&kew..."
+msgstr "បញ្ឆៀង..."
+
+#: mainWindow/kpMainWindow_Image.cpp:167
+msgid "Reduce to Mo&nochrome (Dithered)"
+msgstr "បន្ថយ​ត្រឹម​មួយ​ពណ៌ (ច្របល់)"
+
+#: mainWindow/kpMainWindow_Image.cpp:171
+msgid "Reduce to &Grayscale"
+msgstr "បន្ថយ​ជា​មាត្រដ្ឋាន​ប្រផេះ"
+
+#: mainWindow/kpMainWindow_Image.cpp:175
+msgid "&Invert Colors"
+msgstr "បញ្ច្រាស​ពណ៌"
+
+#: mainWindow/kpMainWindow_Image.cpp:180
+msgid "C&lear"
+msgstr "ជម្រះ"
+
+#: mainWindow/kpMainWindow_Image.cpp:185
+msgid "&More Effects..."
+msgstr "បែបផែន​ផ្សេត​ទៀត..."
+
+#: mainWindow/kpMainWindow_Image.cpp:225
+msgctxt ""
+"Image/Selection Menu caption - make sure the translation has the same accel "
+"as the Select&ion translation"
+msgid "&Image"
+msgstr "រូបភាព"
+
+#: mainWindow/kpMainWindow_Image.cpp:229
+msgctxt ""
+"Image/Selection Menu caption - make sure that translation has the same accel "
+"as the &Image translation"
+msgid "Select&ion"
+msgstr "ជម្រើស"
+
+#: mainWindow/kpMainWindow_Settings.cpp:67
+msgid "Show &Path"
+msgstr "បង្ហាញ​ផ្លូវ"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:149
+#, kde-format
+msgid "%1,%2"
+msgstr "%1,%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:156
+#, kde-format
+msgid "%1,%2 - %3,%4"
+msgstr "%1,%2 - %3,%4"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:199
+#: widgets/toolbars/options/kpToolWidgetEraserSize.cpp:115
+#: widgets/toolbars/options/kpToolWidgetSpraycanSize.cpp:92
+#, kde-format
+msgid "%1x%2"
+msgstr "%1x%2"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:258
+#, kde-format
+msgid "%1bpp"
+msgstr "%1bpp"
+
+#: mainWindow/kpMainWindow_StatusBar.cpp:284
+#: mainWindow/kpMainWindow_View_Zoom.cpp:91
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
 
 #: mainWindow/kpMainWindow_Tools.cpp:136
 msgid "Previous Tool Option (Group #1)"
@@ -1552,6 +1429,30 @@ msgstr ""
 "ខុសត្រូវ​របស់​ប្រព័ន្ធ​ថយចុះ ហើយ​អាច​នឹង​បណ្ដាល​ឲ្យ​មាន​បញ្ហា​ជាមួយ​ធនធាន​របស់​កម្មវិធី​ផ្សេង​ទៀត ។</p><p>តើ​"
 "អ្នក​ពិត​ជា​ចង់​ប្ដូរ​ទំហំ​រូបភាព​ឬ ?</p></qt>"
 
+#: mainWindow/kpMainWindow_View.cpp:76
+msgid "Show &Grid"
+msgstr "បង្ហាញ​ក្រឡាចត្រង្គ"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:113
+msgid "&Zoom"
+msgstr "ពង្រីក"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:194
+#, kde-format
+msgid ""
+"Setting the zoom level to a value that is not a multiple of 100% results in "
+"imprecise editing and redraw glitches.\n"
+"Do you really want to set to zoom level to %1%?"
+msgstr ""
+"ការ​កំណត់​កម្រិត​ពង្រីក​ទៅ​ជា​តម្លៃ​មួយ ដែល​មិន​មែន​ជា​ពហុគុណ​នៃ 100% អាច​នឹង​បណ្ដាល​ឲ្យ​ការ​កែសម្រួល​មាន​ភាព​មិន​"
+"ជាក់លាក់ ហើយនឹងគូរ glitch ឡើង​វិញ ។\n"
+"តើ​អ្នក​ពិត​ជា​ចង់​កំណត់​កម្រិត​ពង្រីក​ទៅ​ជា %1% ឬ ?"
+
+#: mainWindow/kpMainWindow_View_Zoom.cpp:199
+#, kde-format
+msgid "Set Zoom Level to %1%"
+msgstr "កំណត់​កម្រិត​ពង្រីក​ត្រឹម %1%"
+
 #: tools/flow/kpToolBrush.cpp:35
 msgid "Brush"
 msgstr "ជក់"
@@ -1589,11 +1490,11 @@ msgid "Click or drag to erase."
 msgstr "ចុច ឬ​អូស​ដើម្បី​លុប ។"
 
 #: tools/flow/kpToolFlowBase.cpp:302 tools/kpToolColorPicker.cpp:112
-#: tools/kpToolFloodFill.cpp:144 tools/kpToolZoom.cpp:207
-#: tools/polygonal/kpToolPolygonalBase.cpp:437
+#: tools/kpToolZoom.cpp:207 tools/polygonal/kpToolPolygonalBase.cpp:437
 #: tools/rectangular/kpToolRectangularBase.cpp:356
 #: tools/selection/kpAbstractSelectionTool.cpp:260
 #: tools/selection/kpAbstractSelectionTool.cpp:518
+#: tools/kpToolFloodFill.cpp:144
 msgid "Let go of all the mouse buttons."
 msgstr "ប្រើ​ប៊ូតុង​កណ្ដុរ​ទាំងអស់ ។"
 
@@ -1625,14 +1526,6 @@ msgstr "អនុញ្ញាត​ឲ្យ​អ្នក​ជ្រើស​
 msgid "Click to select a color."
 msgstr "ចុច​ដើម្បី​ជ្រើស​ពណ៌ ។"
 
-#: tools/kpToolFloodFill.cpp:55
-msgid "Fills regions in the image"
-msgstr "បំពេញ​តំបន់​នៅ​ក្នុង​រូបភាព"
-
-#: tools/kpToolFloodFill.cpp:75
-msgid "Click to fill a region."
-msgstr "ចុច ដើម្បី​បំពេញ​តំបន់​មួយ ។"
-
 #: tools/kpToolZoom.cpp:73
 msgid "Zoom"
 msgstr "ពង្រីក"
@@ -1644,19 +1537,6 @@ msgstr "ពង្រីក និង​បង្រួម​រូបភាព"
 #: tools/kpToolZoom.cpp:120
 msgid "Click to zoom in/out or left drag to zoom into a specific area."
 msgstr "ចុច​ដើម្បី​ពង្រីក/​បង្រួម ឬ​ចុច​អូស​កណ្ដុរ​ខាងឆ្វេង​ដើម្បី​ពង្រីក ឬ​បង្រួម​ទៅ​ផ្ទៃ​ជាក់លាក់ ។"
-
-#: tools/kpTool_UserNotifications.cpp:42
-msgid "Right click to cancel."
-msgstr "ចុច​កណ្ដុរ​ស្ដាំ ដើម្បី​បោះបង់ ។"
-
-#: tools/kpTool_UserNotifications.cpp:44
-msgid "Left click to cancel."
-msgstr "ចុច​កណ្ដុរ​ឆ្វេង ដើម្បី​បោះបង់ ។"
-
-#: tools/kpTool_UserNotifications.cpp:73
-#, kde-format
-msgid "%1: "
-msgstr "%1 ៖ "
 
 #: tools/polygonal/kpToolCurve.cpp:86
 msgid "Curve"
@@ -1765,22 +1645,6 @@ msgstr "ចុច​កណ្ដុរ​ខាងឆ្វេង ដើម្�
 msgid "Left drag to scale selection."
 msgstr "ចុច​កណ្ដុរ​ខាងឆ្វេង ដើម្បី​ធ្វើ​មាត្រដ្ឋាន​ជម្រើស ។"
 
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
-msgid "Selection: Opaque"
-msgstr "ជម្រើស ៖ ស្រអាប់"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
-msgid "Selection: Transparent"
-msgstr "ជម្រើស ៖ ថ្លា"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
-msgid "Selection: Transparency Color"
-msgstr "ជម្រើស ៖ ពណ៌​ថ្លា"
-
-#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
-msgid "Selection: Transparency Color Similarity"
-msgstr "ជម្រើស ៖ ភាព​ស្រដៀង​ពណ៌​ថ្លា"
-
 #: tools/selection/image/kpToolEllipticalSelection.cpp:43
 msgid "Selection (Elliptical)"
 msgstr "ជម្រើស (រាង​ពងក្រពើ)"
@@ -1805,18 +1669,21 @@ msgstr "ជម្រើស (រាង​ចតុកោណកែង)"
 msgid "Makes a rectangular selection"
 msgstr "បង្កើត​ជម្រើស​រាង​ចតុកោណកែង"
 
-#: tools/selection/kpAbstractSelectionTool_Move.cpp:319
-msgid "Selection: Move"
-msgstr "ជម្រើស ៖ ផ្លាស់ទី"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:169
+msgid "Selection: Opaque"
+msgstr "ជម្រើស ៖ ស្រអាប់"
 
-#: tools/selection/kpAbstractSelectionTool_Move.cpp:341
-#, kde-format
-msgid "%1: Smear"
-msgstr "%1 ៖ លាប"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:170
+msgid "Selection: Transparent"
+msgstr "ជម្រើស ៖ ថ្លា"
 
-#: tools/selection/text/kpToolText.cpp:59
-msgid "Writes text"
-msgstr "សរសេរ​អត្ថបទ"
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:190
+msgid "Selection: Transparency Color"
+msgstr "ជម្រើស ៖ ពណ៌​ថ្លា"
+
+#: tools/selection/image/kpAbstractImageSelectionTool_Transparency.cpp:210
+msgid "Selection: Transparency Color Similarity"
+msgstr "ជម្រើស ៖ ភាព​ស្រដៀង​ពណ៌​ថ្លា"
 
 #: tools/selection/text/kpToolText_Commands.cpp:70
 msgid "Text: Backspace"
@@ -1853,6 +1720,10 @@ msgstr "ចុច​អូស​កណ្ដុរ​ខាងឆ្វេង �
 #: tools/selection/text/kpToolText_SelectText.cpp:56
 msgid "Left click to change cursor position."
 msgstr "ចុច​កណ្ដុរ​ឆ្វេង ដើម្បី​ផ្លាស់ប្ដូរ​ទីតាំង​ទស្សន៍​ទ្រនិច ។"
+
+#: tools/selection/text/kpToolText.cpp:59
+msgid "Writes text"
+msgstr "សរសេរ​អត្ថបទ"
 
 #: tools/selection/text/kpToolText_TextStyle.cpp:117
 msgid "Text: Opaque Background"
@@ -1898,11 +1769,41 @@ msgstr "អត្ថបទ ៖ គូស​បន្ទាត់​ពីក្
 msgid "Text: Strike Through"
 msgstr "អត្ថបទ ៖ បន្ទាត់​ឆូត"
 
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:319
+msgid "Selection: Move"
+msgstr "ជម្រើស ៖ ផ្លាស់ទី"
+
+#: tools/selection/kpAbstractSelectionTool_Move.cpp:341
+#, kde-format
+msgid "%1: Smear"
+msgstr "%1 ៖ លាប"
+
 #: tools/kpTool.cpp:155
 #, kde-format
 msgctxt "<Tool Name> (<Single Accel Key>)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
+
+#: tools/kpToolFloodFill.cpp:55
+msgid "Fills regions in the image"
+msgstr "បំពេញ​តំបន់​នៅ​ក្នុង​រូបភាព"
+
+#: tools/kpToolFloodFill.cpp:75
+msgid "Click to fill a region."
+msgstr "ចុច ដើម្បី​បំពេញ​តំបន់​មួយ ។"
+
+#: tools/kpTool_UserNotifications.cpp:42
+msgid "Right click to cancel."
+msgstr "ចុច​កណ្ដុរ​ស្ដាំ ដើម្បី​បោះបង់ ។"
+
+#: tools/kpTool_UserNotifications.cpp:44
+msgid "Left click to cancel."
+msgstr "ចុច​កណ្ដុរ​ឆ្វេង ដើម្បី​បោះបង់ ។"
+
+#: tools/kpTool_UserNotifications.cpp:73
+#, kde-format
+msgid "%1: "
+msgstr "%1 ៖ "
 
 #: views/kpZoomedThumbnailView.cpp:66
 #, kde-format
@@ -2137,38 +2038,6 @@ msgstr "បន្ថយ​ត្រឹម"
 msgid "&Granularity:"
 msgstr "គ្រាប់ៗ"
 
-#: widgets/kpDocumentSaveOptionsWidget.cpp:93
-msgid "Convert &to:"
-msgstr "បម្លែង​ជា ៖"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:98
-msgid "Quali&ty:"
-msgstr "គុណភាព ៖"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:106
-msgid "&Preview"
-msgstr "មើល​ជា​មុន"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:228
-msgid "Monochrome"
-msgstr "មួយ​ពណ៌"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:229
-msgid "Monochrome (Dithered)"
-msgstr "មួយ​ពណ៌ (ច្របល់)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:233
-msgid "256 Color"
-msgstr "២៥៦ ពណ៌"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:234
-msgid "256 Color (Dithered)"
-msgstr "២៥៦ ពណ៌ (ច្របល់)"
-
-#: widgets/kpDocumentSaveOptionsWidget.cpp:239
-msgid "24-bit Color"
-msgstr "ពណ៌ ២៤ ប៊ីត"
-
 #: widgets/kpTransparentColorCell.cpp:65
 #: widgets/toolbars/options/kpToolWidgetOpaqueOrTransparent.cpp:45
 msgid "Transparent"
@@ -2247,8 +2116,39 @@ msgstr ""
 "ដែរ ។ ហើយ ប្រសិន​បើ​អ្នក​សង្កត់​គ្រាប់​ចុច <b>បញ្ជា</b> ឲ្យ​នោះ​ពណ៌​របស់​ក្រឡា​ទិសដៅ នឹង​ត្រូវ​បាន​សរសេរ​"
 "ជាន់ គឺ​ជំនួស​ការប្ដូរ​ពណ៌​ក្រឡា​ប្រភព ។</p></qt>"
 
+#: widgets/kpDocumentSaveOptionsWidget.cpp:93
+msgid "Convert &to:"
+msgstr "បម្លែង​ជា ៖"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:98
+msgid "Quali&ty:"
+msgstr "គុណភាព ៖"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:106
+msgid "&Preview"
+msgstr "មើល​ជា​មុន"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:228
+msgid "Monochrome"
+msgstr "មួយ​ពណ៌"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:229
+msgid "Monochrome (Dithered)"
+msgstr "មួយ​ពណ៌ (ច្របល់)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:233
+msgid "256 Color"
+msgstr "២៥៦ ពណ៌"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:234
+msgid "256 Color (Dithered)"
+msgstr "២៥៦ ពណ៌ (ច្របល់)"
+
+#: widgets/kpDocumentSaveOptionsWidget.cpp:239
+msgid "24-bit Color"
+msgstr "ពណ៌ ២៤ ប៊ីត"
+
 #: widgets/kpPrintDialogPage.cpp:60
-#| msgid "I&mage Position"
 msgctxt "@title:tab"
 msgid "I&mage Position"
 msgstr "ទីតាំង​រូបភាព"
@@ -2260,6 +2160,100 @@ msgstr "កណ្ដាល​ទំព័រ"
 #: widgets/kpPrintDialogPage.cpp:67
 msgid "Top-&left of the page"
 msgstr "លើ​ខាង​ឆ្វេង​ទំព័រ"
+
+#: kolourpaint.cpp:49
+msgid "KolourPaint"
+msgstr "KolourPaint"
+
+#: kolourpaint.cpp:51
+msgid "Paint Program for KDE"
+msgstr "កម្មវិធី​គំនូរ​របស់ KDE"
+
+#: kolourpaint.cpp:54
+msgid "To obtain support, please visit the website."
+msgstr "ដើម្បី​ទទួល​បាន​ការ​គាំទ្រ សូម​ចូល​ទៅកាន់​តំបន់​បណ្ដាញ ។"
+
+#: kolourpaint.cpp:65
+msgid "Clarence Dang"
+msgstr "Clarence Dang"
+
+#: kolourpaint.cpp:65
+msgid "Project Founder"
+msgstr "អ្នក​បង្កើត​គម្រោង"
+
+#: kolourpaint.cpp:66
+msgid "Thurston Dang"
+msgstr "Thurston Dang"
+
+#: kolourpaint.cpp:66
+msgid "Chief Investigator"
+msgstr "ប្រធាន​អ្នក​បង្កើត"
+
+#: kolourpaint.cpp:68
+msgid "Martin Koller"
+msgstr "Martin Koller"
+
+#: kolourpaint.cpp:68
+msgid "Scanning Support, Alpha Support, Current Maintainer"
+msgstr "គាំទ្រ​ការ​ស្កេន គាំទ្រ​អាល់ហ្វា អ្នក​ថែទាំ​បច្ចុប្បន្ន"
+
+#: kolourpaint.cpp:69
+msgid "Kristof Borrey"
+msgstr "Kristof Borrey"
+
+#: kolourpaint.cpp:69 kolourpaint.cpp:72 kolourpaint.cpp:73
+msgid "Icons"
+msgstr "រូបតំណាង"
+
+#: kolourpaint.cpp:70
+msgid "Tasuku Suzuki"
+msgstr "Tasuku Suzuki"
+
+#: kolourpaint.cpp:70 kolourpaint.cpp:71
+msgid "InputMethod Support"
+msgstr "គាំទ្រ​វិធីសាស្ដ្រ​បញ្ចូល"
+
+#: kolourpaint.cpp:71
+msgid "Kazuki Ohta"
+msgstr "Kazuki Ohta"
+
+#: kolourpaint.cpp:72
+msgid "Nuno Pinheiro"
+msgstr "Nuno Pinheiro"
+
+#: kolourpaint.cpp:73
+msgid "Danny Allen"
+msgstr "Danny Allen"
+
+#: kolourpaint.cpp:74
+msgid "Mike Gashler"
+msgstr "Mike Gashler"
+
+#: kolourpaint.cpp:74
+msgid "Image Effects"
+msgstr "បែបផែន​រូបភាព"
+
+#: kolourpaint.cpp:76
+msgid "Laurent Montel"
+msgstr "Laurent Montel"
+
+#: kolourpaint.cpp:76
+msgid "KDE 4 Porting"
+msgstr "រួមបញ្ចូល​ក្នុង KDE 4"
+
+#: kolourpaint.cpp:80
+msgid ""
+"Thanks to the many others who have helped to make this program possible."
+msgstr "សូម​ថ្លែង​អំណរគុណ​ចំពោះ​អ្នក​ចូល​រួម​ផ្សេងទៀត ដែល​បាន​ជួយ​ធ្វើ​ឲ្យ​កម្មវិធី​នេះ​ដំណើរការ​បាន ។"
+
+#: kolourpaint.cpp:85
+msgid "Image file to open"
+msgstr "ឯកសារ​រូបភាព​ដែល​ត្រូវ​បើក"
+
+#: kpThumbnail.cpp:126
+msgctxt "@title:window"
+msgid "Thumbnail"
+msgstr "រូបភាព​តូច"
 
 #: kpViewScrollableContainer.cpp:160 kpViewScrollableContainer.cpp:826
 #: kpViewScrollableContainer.cpp:830 kpViewScrollableContainer.cpp:834
@@ -2273,12 +2267,6 @@ msgstr "ប្ដូរ​ទំហំ​រូបភាព ៖ ប្រើ​
 #: kpViewScrollableContainer.cpp:231
 msgid "Resize Image: Right click to cancel."
 msgstr "ប្ដូរ​ទំហំ​រូបភាព ៖ ចុច​កណ្ដុរ​ស្ដាំ ដើម្បី​បោះបង់ ។"
-
-#: kpThumbnail.cpp:126
-#| msgid "Thumbnail"
-msgctxt "@title:window"
-msgid "Thumbnail"
-msgstr "រូបភាព​តូច"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
