@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: nepomuk-system-tray\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-05-27 04:23+0200\n"
+"POT-Creation-Date: 2011-07-06 04:46+0200\n"
 "PO-Revision-Date: 2011-06-28 07:55+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -16,39 +16,58 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: km-KH\n"
 
-#: lib/systrayplugin.cpp:334
+#: lib/systrayplugin.cpp:118
+#, fuzzy
+#| msgid "Show all services"
+msgctxt "@action:inmenu"
+msgid "Start service"
+msgstr "បង្ហាញ​សេវា​កម្ម​ទាំងអស់"
+
+#: lib/systrayplugin.cpp:120
+#, fuzzy
+#| msgid "Show all services"
+msgctxt "@action:inmenu"
+msgid "Stop service"
+msgstr "បង្ហាញ​សេវា​កម្ម​ទាំងអស់"
+
+#: lib/systrayplugin.cpp:122
+msgctxt "@info:tooltip"
+msgid "Start/Stop service manually"
+msgstr ""
+
+#: lib/systrayplugin.cpp:440
 msgctxt "@info:status Launching"
 msgid "Launching"
 msgstr " ចាប់ផ្ដើម"
 
-#: lib/systrayplugin.cpp:335
+#: lib/systrayplugin.cpp:441
 msgctxt "@info:status Running"
 msgid "Running"
 msgstr "ដំណើរការ"
 
-#: lib/systrayplugin.cpp:336
+#: lib/systrayplugin.cpp:442
 msgctxt "@info:status Idle"
 msgid "Idle"
 msgstr "ទំនេរ"
 
-#: lib/systrayplugin.cpp:337
+#: lib/systrayplugin.cpp:443
 msgctxt "@info:status Suspended"
 msgid "Suspended"
 msgstr "ផ្អាក"
 
-#: lib/systrayplugin.cpp:338
+#: lib/systrayplugin.cpp:444
 msgctxt "@info:status Service is not working cause it should not"
 msgid "Not started"
 msgstr "មិនបាន​ចាប់ផ្ដើម​ទេ"
 
-#: lib/systrayplugin.cpp:339
+#: lib/systrayplugin.cpp:445
 msgctxt ""
 "@info:status Service is not working because it met some error and crashed/"
 "not work as intended "
 msgid "Failed"
 msgstr "បានបរាជ័យ"
 
-#: lib/systrayplugin.cpp:340
+#: lib/systrayplugin.cpp:446
 msgctxt "@info:status Status unknown"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
@@ -68,6 +87,13 @@ msgstr "ផ្អាក​ការ​ដាក់​លិបិក្រម​
 #: plugins/strigi/strigiplugin.cpp:63
 msgid "Suspend or resume the file indexer manually"
 msgstr "ផ្អាក ឬ​បន្ត​ការ​ដាក់​លិបិក្រម​ឯកសារ​ដោយដៃ"
+
+#: plugins/backup/nepomukbackupsyncplugin.cpp:66
+#, fuzzy
+#| msgid "Nepomuk"
+msgctxt "@action:inmenu"
+msgid "Backup Nepomuk"
+msgstr "Nepomuk"
 
 #: runtime/systemtray/main.cpp:33
 msgid "Nepomuk Controller"
@@ -93,6 +119,11 @@ msgstr "អ្នក​ថែទាំ"
 msgid "Serebriyskiy Artem"
 msgstr "Serebriyskiy Artem"
 
+#: runtime/systemtray/servicewidget.cpp:133
+msgctxt "@info:status Plugin has not initialize yet."
+msgid "Plugin has not initialize yet. Try few miliseconds later"
+msgstr ""
+
 #: runtime/systemtray/systray.cpp:51
 msgid "Nepomuk Services"
 msgstr "សេវា​កម្ម Nepomuk"
@@ -101,9 +132,30 @@ msgstr "សេវា​កម្ម Nepomuk"
 msgid "Configure Nepomuk"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ Nepomuk"
 
-#: runtime/systemtray/systray.cpp:81
+#: runtime/systemtray/systray.cpp:87
 msgid "Nepomuk"
 msgstr "Nepomuk"
+
+#: runtime/systemtray/systray.cpp:244
+#, kde-format
+msgctxt ""
+"@info:tooltip Summary of service statuses in tooltip.Not running means "
+"failed with error or didn't start at allRunning means service successfully "
+"launched"
+msgid "Not Running: %1 Running: %2"
+msgstr ""
+
+#: runtime/systemtray/systray.cpp:253
+#, fuzzy
+#| msgid "Nepomuk Services"
+msgctxt "@info:tooltip All services are not running( failed or not started"
+msgid "No running services"
+msgstr "សេវា​កម្ម Nepomuk"
+
+#: runtime/systemtray/systray.cpp:259
+msgctxt "@info:tooltip All services started and none failed"
+msgid "All services running"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -114,23 +166,23 @@ msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត�
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
-"khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,ratanak@k"
-"hmeros.info,sophea@khmeros.info"
-
-#. i18n: file: runtime/systemtray/mainWidget.ui:20
-#. i18n: ectx: property (windowTitle), widget (QWidget, mainWidget)
-#: rc.cpp:5
-msgid "Nepomuk status"
-msgstr "ស្ថានភាព Nepomuk"
-
-#. i18n: file: runtime/systemtray/mainWidget.ui:26
-#. i18n: ectx: property (text), widget (QCheckBox, showAllCheckBox)
-#: rc.cpp:8
-msgid "Show all services"
-msgstr "បង្ហាញ​សេវា​កម្ម​ទាំងអស់"
+"khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
+"ratanak@khmeros.info,sophea@khmeros.info"
 
 #. i18n: file: runtime/systemtray/serviceWidget.ui:43
 #. i18n: ectx: property (text), widget (QPushButton, actionsButton)
-#: rc.cpp:11
+#: rc.cpp:5
 msgid "Actions"
 msgstr "សកម្មភាព"
+
+#. i18n: file: runtime/systemtray/mainWidget.ui:20
+#. i18n: ectx: property (windowTitle), widget (QWidget, mainWidget)
+#: rc.cpp:8
+msgid "Nepomuk status"
+msgstr "ស្ថានភាព Nepomuk"
+
+#. i18n: file: runtime/systemtray/mainWidget.ui:35
+#. i18n: ectx: property (text), widget (QCheckBox, showAllCheckBox)
+#: rc.cpp:11
+msgid "Show all services"
+msgstr "បង្ហាញ​សេវា​កម្ម​ទាំងអស់"
