@@ -44,17 +44,27 @@ msgid ""
 "hexagons (Point(0,0), Point(1,0), 5)\n"
 "</pre></code>\n"
 msgstr ""
-"<p>អ្នក​អាច​ត្រួតពិនិត្យ​កា​រ​សង់ kig ​តាម​មធ្យោបាយ​របស់​ស្គ្រីប python "
-"\"pykig\" "
-"\nដែល​អាច​ត្រូវ​បាន​ប្រតិបត្តិ​ជា​មួយ​នឹង​ពាក្យ​បញ្ជា\n<code>pykig.py</code> "
-"។ នេះ​ជា​ឧទាហរណ៍​ដ៏​ល្អ​មួយ\n(<code>hexagons.kpy</code>) "
-"ដែល​អ្នក​អាច​សាកល្បង​បាន ៖\n<code><pre>\nkigdocument.hideobjects()\ndef "
-"hexagons (c, v, n):\n  hexagon = PolygonBCV (c, v, 6)\n  if n &lt;= 0:\n    "
-"hexagon.show()\n    for i in range(6): \n      PolygonSide (hexagon, i, "
-"True)\n    return\n  cnew = MidPoints (c, v)\n  hexagons (cnew, v, n-1)\n  "
-"for k in [2,4]:\n    v1 = PolygonVertex (hexagon, k)\n    cnew = MidPoints "
-"(c, v1)\n    hexagons (cnew, v1, n-1)\nhexagons (Point(0,0), Point(1,0), "
-"5)\n</pre></code>\n"
+"<p>អ្នក​អាច​ត្រួតពិនិត្យ​កា​រ​សង់ kig ​តាម​មធ្យោបាយ​របស់​ស្គ្រីប python \"pykig\" \n"
+"ដែល​អាច​ត្រូវ​បាន​ប្រតិបត្តិ​ជា​មួយ​នឹង​ពាក្យ​បញ្ជា\n"
+"<code>pykig.py</code> ។ នេះ​ជា​ឧទាហរណ៍​ដ៏​ល្អ​មួយ\n"
+"(<code>hexagons.kpy</code>) ដែល​អ្នក​អាច​សាកល្បង​បាន ៖\n"
+"<code><pre>\n"
+"kigdocument.hideobjects()\n"
+"def hexagons (c, v, n):\n"
+"  hexagon = PolygonBCV (c, v, 6)\n"
+"  if n &lt;= 0:\n"
+"    hexagon.show()\n"
+"    for i in range(6): \n"
+"      PolygonSide (hexagon, i, True)\n"
+"    return\n"
+"  cnew = MidPoints (c, v)\n"
+"  hexagons (cnew, v, n-1)\n"
+"  for k in [2,4]:\n"
+"    v1 = PolygonVertex (hexagon, k)\n"
+"    cnew = MidPoints (c, v1)\n"
+"    hexagons (cnew, v1, n-1)\n"
+"hexagons (Point(0,0), Point(1,0), 5)\n"
+"</pre></code>\n"
 
 #. i18n: file: tips:28
 #. i18n: ectx: @info:tipoftheday
@@ -65,10 +75,9 @@ msgid ""
 "of objects with the same construction, especially if there is\n"
 "no shortcut for that construction.</p>\n"
 msgstr ""
-"<p>អ្នក​អាច​ធ្វើ​ការ​ស្ថាបនា​ចុងក្រោយ​ឡើង​វិញ​តាមធម្មតា "
-"ដោយ​ចុច​គ្រាប់​ចុច\n'Z'; វា​កើត​ឡើង​​យ៉ាង​ងាយស្រួល​ "
-"ប្រសិនបើ​អ្នក​ត្រូវ​ការ​សង់​​លំដាប់​វត្ថុ​ដែល​មាន​ការ​ស្ថាបនា​ដូច​គ្នា "
-"ជា​ពិសេស​មិន​មានផ្លូវ​កាត់​សម្រាប់​ការ​ស្ថាបនា​នោះ​ទេ ។</p>\n"
+"<p>អ្នក​អាច​ធ្វើ​ការ​ស្ថាបនា​ចុងក្រោយ​ឡើង​វិញ​តាមធម្មតា ដោយ​ចុច​គ្រាប់​ចុច\n"
+"'Z'; វា​កើត​ឡើង​​យ៉ាង​ងាយស្រួល​ ប្រសិនបើ​អ្នក​ត្រូវ​ការ​សង់​​លំដាប់​វត្ថុ​ដែល​មាន​ការ​ស្ថាបនា​ដូច​គ្នា ជា​ពិសេស​មិន​"
+"មានផ្លូវ​កាត់​សម្រាប់​ការ​ស្ថាបនា​នោះ​ទេ ។</p>\n"
 
 #. i18n: file: tips:37
 #. i18n: ectx: @info:tipoftheday
@@ -79,11 +88,10 @@ msgid ""
 "document.  You can use them to give objects names, change their colors\n"
 "and line styles, and lots of other interesting things.</p>\n"
 msgstr ""
-"<p>ឧបករណ៍​ដែល​មាន​ឥទ្ធិពល​បំផុត​មួយ​នៅ​ក្នុង​កម្មវិធី Kig "
-"គឺ​​ជា​ម៉ឺនុយ​ជា​ច្រើន ដែល​អ្នក​អាច\nបញ្ចូល​បាន​ដោយ​ចុច​លើ វត្ថុ​មួយ ឬ "
-"នៅ​លើ​ចន្លោះ​ទំនេរ​ណា​មួយ​នៅ​ក្នុង\nឯកសារ ។  អ្នក​អាច​ប្រើ​ពួកវា​ ដើម្បី "
-"ផ្ដល់​ឈ្មោះ​ឲ្យ​វត្ថុ ប្ដូរ​ពណ៌​វត្ថុ\nនិង រចនាប័ទ្ម​បន្ទាត់ ហើយ​និង "
-"វត្ថុ​ដែល​គួរ​ឲ្យ​ចាប់​អារម្មណ៍​ជាច្រើនទៀត ។</p>\n"
+"<p>ឧបករណ៍​ដែល​មាន​ឥទ្ធិពល​បំផុត​មួយ​នៅ​ក្នុង​កម្មវិធី Kig គឺ​​ជា​ម៉ឺនុយ​ជា​ច្រើន ដែល​អ្នក​អាច\n"
+"បញ្ចូល​បាន​ដោយ​ចុច​លើ វត្ថុ​មួយ ឬ នៅ​លើ​ចន្លោះ​ទំនេរ​ណា​មួយ​នៅ​ក្នុង\n"
+"ឯកសារ ។  អ្នក​អាច​ប្រើ​ពួកវា​ ដើម្បី ផ្ដល់​ឈ្មោះ​ឲ្យ​វត្ថុ ប្ដូរ​ពណ៌​វត្ថុ\n"
+"និង រចនាប័ទ្ម​បន្ទាត់ ហើយ​និង វត្ថុ​ដែល​គួរ​ឲ្យ​ចាប់​អារម្មណ៍​ជាច្រើនទៀត ។</p>\n"
 
 #. i18n: file: tips:46
 #. i18n: ectx: @info:tipoftheday
@@ -94,9 +102,9 @@ msgid ""
 "clicking somewhere on the Kig document with the <em>middle mouse\n"
 "button</em>.</p>\n"
 msgstr ""
-"<p>អ្នក​អាច​សង់​ចំណុច​ថ្មី​ ដោយ​មិន​ចាំបាច់​ប្រើ​ម៉ឺនុយ ឬ "
-"របារ​ឧបករណ៍​ក៏​បាន​ដែរ​\nគឺ​គ្រាន់តែ​ចុច​នៅ​​កន្លែង​ណា​មួយ​នៅ​លើ​ឯកសារ Kig "
-"ដោយ​ប្រើ <em>ប៊ូតុង​កណ្ដុរ\nកណ្ដាល</em> ។</p>\n"
+"<p>អ្នក​អាច​សង់​ចំណុច​ថ្មី​ ដោយ​មិន​ចាំបាច់​ប្រើ​ម៉ឺនុយ ឬ របារ​ឧបករណ៍​ក៏​បាន​ដែរ​\n"
+"គឺ​គ្រាន់តែ​ចុច​នៅ​​កន្លែង​ណា​មួយ​នៅ​លើ​ឯកសារ Kig ដោយ​ប្រើ <em>ប៊ូតុង​កណ្ដុរ\n"
+"កណ្ដាល</em> ។</p>\n"
 
 #. i18n: file: tips:54
 #. i18n: ectx: @info:tipoftheday
@@ -118,10 +126,9 @@ msgid ""
 "constructions you can use in your documents: open the <em>Objects</em> \n"
 "menu to see them all.</p>\n"
 msgstr ""
-"<p>Kig មាន​វត្ថុ​ច្រើនជាង ២​០ និង​ ការ​បម្លែង​ច្រើន​ជាង​ ១​០ "
-"ជា​មួយ​នឹង​ការ​​សាង​សង់​​ច្រើនជាង ៨​០ "
-"ដែល​អ្នក​អាច​​ប្រើ​នៅ​ក្នុង​ឯកសារ​របស់​អ្នក ៖ បើក​ម៉ឺនុយ <em>វត្ថុ</em> "
-"\nដើម្បី​មើល​ពួកវា​ទាំងអស់ ។</p>\n"
+"<p>Kig មាន​វត្ថុ​ច្រើនជាង ២​០ និង​ ការ​បម្លែង​ច្រើន​ជាង​ ១​០ ជា​មួយ​នឹង​ការ​​សាង​សង់​​ច្រើនជាង ៨​០ ដែល​អ្នក​"
+"អាច​​ប្រើ​នៅ​ក្នុង​ឯកសារ​របស់​អ្នក ៖ បើក​ម៉ឺនុយ <em>វត្ថុ</em> \n"
+"ដើម្បី​មើល​ពួកវា​ទាំងអស់ ។</p>\n"
 
 #. i18n: file: tips:70
 #. i18n: ectx: @info:tipoftheday
@@ -165,11 +172,10 @@ msgid ""
 "which\n"
 "you can then select from.</p>\n"
 msgstr ""
-"<p>ប្រសិន​បើ​អ្នក​ដាក់​កណ្ដុរ​នៅ​លើ​វត្ថុ​ពីរ ឬ​ច្រើន "
-"ហើយ​អ្នក​ចង់​ជ្រើស​វត្ថុ​ណា​មួយ\nអ្នក​អាច​ចុច​គ្រាប់ចុច <em>ប្ដូរ "
-"(shift)</em> និង​\nចុច​<em>ប៊ូតុង​កណ្ដុរ​ខាងឆ្វេង</em> "
-"ដើម្បី​យក​បញ្ជី​វត្ថុ​ដែល​នៅ​ក្រោម​ទស្សន៍ទ្រនិច​កណ្ដុរ​ដែល\nនៅ​ពេល​នោះ "
-"អ្នក​អាច​ជ្រើស​វា​បាន ។</p>\n"
+"<p>ប្រសិន​បើ​អ្នក​ដាក់​កណ្ដុរ​នៅ​លើ​វត្ថុ​ពីរ ឬ​ច្រើន ហើយ​អ្នក​ចង់​ជ្រើស​វត្ថុ​ណា​មួយ\n"
+"អ្នក​អាច​ចុច​គ្រាប់ចុច <em>ប្ដូរ (shift)</em> និង​\n"
+"ចុច​<em>ប៊ូតុង​កណ្ដុរ​ខាងឆ្វេង</em> ដើម្បី​យក​បញ្ជី​វត្ថុ​ដែល​នៅ​ក្រោម​ទស្សន៍ទ្រនិច​កណ្ដុរ​ដែល\n"
+"នៅ​ពេល​នោះ អ្នក​អាច​ជ្រើស​វា​បាន ។</p>\n"
 
 #. i18n: file: tips:96
 #. i18n: ectx: @info:tipoftheday
@@ -181,10 +187,9 @@ msgid ""
 "equation, \n"
 "whenever it is an algebraic curve of low degree.</p>\n"
 msgstr ""
-"<p>នៅ​ពេល​អ្នកសង់ locus អ្នក​អាច​ចុច​លើ​វា​ដោយ​ប្រើ​ប៊ូតុង​កណ្ដុរ​​ "
-"<em>ស្ដាំ</em> \nនិង​ជ្រើស <em>សមីការ cartesian​</em> ដើម្បី​មើល​សមីការ "
-"cartesian របស់​វា\nនៅ​ពេល​ណា​ដែល​វា​ជា​ខ្សែ​កោង​​គណិត​ដែល​មាន​​ដឺក្រេ​ទាប "
-"។</p>\n"
+"<p>នៅ​ពេល​អ្នកសង់ locus អ្នក​អាច​ចុច​លើ​វា​ដោយ​ប្រើ​ប៊ូតុង​កណ្ដុរ​​ <em>ស្ដាំ</em> \n"
+"និង​ជ្រើស <em>សមីការ cartesian​</em> ដើម្បី​មើល​សមីការ cartesian របស់​វា\n"
+"នៅ​ពេល​ណា​ដែល​វា​ជា​ខ្សែ​កោង​​គណិត​ដែល​មាន​​ដឺក្រេ​ទាប ។</p>\n"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -195,8 +200,8 @@ msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត�
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
-"khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,ratanak@k"
-"hmeros.info,sophea@khmeros.info"
+"khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
+"ratanak@khmeros.info,sophea@khmeros.info"
 
 #. i18n: file: kig/kigpartui.rc:5
 #. i18n: ectx: Menu (file)
@@ -516,9 +521,7 @@ msgstr "ឯកសារ​ឈរ​តែ​ឯង"
 msgid ""
 "Here you can modify the name, the description and the icon of this macro "
 "type."
-msgstr ""
-"នៅ​ទី​នេះ​អ្នក​អាច​កែប្រែ​ឈ្មោះ សេចក្ដី​ពិពណ៌នា និង "
-"រូបតំណាង​របស់​ប្រភេទ​ម៉ាក្រូ ។​"
+msgstr "នៅ​ទី​នេះ​អ្នក​អាច​កែប្រែ​ឈ្មោះ សេចក្ដី​ពិពណ៌នា និង រូបតំណាង​របស់​ប្រភេទ​ម៉ាក្រូ ។​"
 
 #. i18n: file: modes/edittypewidget.ui:73
 #. i18n: ectx: property (text), widget (QLabel, label_2_3)
@@ -581,8 +584,7 @@ msgid ""
 "This is a list of the current macro types... You can select, edit, delete, "
 "export and import them..."
 msgstr ""
-"នេះ​ជា​បញ្ជី​ប្រភេទ​ម៉ាក្រូ​បច្ចុប្បន្ន... អ្នក​អាច​ជ្រើស កែសម្រួល លុប "
-"នាំ​ចេញ និង នាំ​ចូល​ពួក​វា​បាន...​"
+"នេះ​ជា​បញ្ជី​ប្រភេទ​ម៉ាក្រូ​បច្ចុប្បន្ន... អ្នក​អាច​ជ្រើស កែសម្រួល លុប នាំ​ចេញ និង នាំ​ចូល​ពួក​វា​បាន...​"
 
 #. i18n: file: modes/typeswidget.ui:99
 #. i18n: ectx: property (whatsThis), widget (KPushButton, buttonEdit)
@@ -638,9 +640,7 @@ msgstr "គូស​រង្វង់​​តាម​ផ្ចិត​ ន�
 
 #: rc.cpp:241
 msgid "A circle constructed by its center and tangent to a given line"
-msgstr ""
-"រង្វង់​ត្រូវ​បាន​សង់​តាម​ផ្ចិត​​របស់​វា "
-"ហើយ​ប៉ះ​ទៅ​នឹង​បន្ទាត់​ដែល​បាន​ផ្ដល់ឲ្យ"
+msgstr "រង្វង់​ត្រូវ​បាន​សង់​តាម​ផ្ចិត​​របស់​វា ហើយ​ប៉ះ​ទៅ​នឹង​បន្ទាត់​ដែល​បាន​ផ្ដល់ឲ្យ"
 
 #: rc.cpp:242
 msgid "Construct a circle tangent to this line"
@@ -663,22 +663,18 @@ msgid "Circle by Point && Segment (as the Diameter)"
 msgstr "គូរ​រង្វង់​តាម​​ចំណុច និង​អង្កត់​បន្ទាត់​ (ជា​អង្កត់​ផ្ចិត)"
 
 #: rc.cpp:247
-msgid "A circle defined by its center and the length of a segment as the diameter"
-msgstr ""
-"រង្វង់​ត្រូវ​បាន​កំណត់​តាម​ផ្ចិត​របស់​វា "
-"និង​ប្រវែង​នៃ​អង្កត់​បន្ទាត់​ជា​អង្កត់​ផ្ចិត"
+msgid ""
+"A circle defined by its center and the length of a segment as the diameter"
+msgstr "រង្វង់​ត្រូវ​បាន​កំណត់​តាម​ផ្ចិត​របស់​វា និង​ប្រវែង​នៃ​អង្កត់​បន្ទាត់​ជា​អង្កត់​ផ្ចិត"
 
 #: rc.cpp:249
-msgid "Construct a circle with the diameter given by the length of this segment"
-msgstr ""
-"សង់​រង្វង់​​​តាម​ប្រវែង​នៃ​អង្កត់​បន្ទាត់ជា​មួយ​​​អង្កត់​ផ្ចិត​ដែល​បាន​ផ្ដល់"
-"​ឲ្យ"
+msgid ""
+"Construct a circle with the diameter given by the length of this segment"
+msgstr "សង់​រង្វង់​​​តាម​ប្រវែង​នៃ​អង្កត់​បន្ទាត់ជា​មួយ​​​អង្កត់​ផ្ចិត​ដែល​បាន​ផ្ដល់​ឲ្យ"
 
 #: rc.cpp:251
 msgid "Select the segment whose length gives the diameter of the new circle..."
-msgstr ""
-"ជ្រើស​​​អង្កត់​បន្ទាត់​​ដែល​ប្រវែង​​​របស់​វា​ផ្ដល់​ជា​អង្កត់​ផ្ចិត​នៃ​រង្វង់"
-"​ថ្មី..."
+msgstr "ជ្រើស​​​អង្កត់​បន្ទាត់​​ដែល​ប្រវែង​​​របស់​វា​ផ្ដល់​ជា​អង្កត់​ផ្ចិត​នៃ​រង្វង់​ថ្មី..."
 
 #: rc.cpp:252
 msgid "Equilateral Triangle"
@@ -816,8 +812,7 @@ msgid ""
 "Did a lot of important work all around Kig, including, but not limited to "
 "conics, cubics, transformations and property tests support."
 msgstr ""
-"ធ្វើ​ការងារ​សំខាន់​ៗ​ជាច្រើន​ដែល​ទាក់ទង​នឹង Kig ដែល​រួម​បញ្ចូល​វា "
-"ប៉ុន្តែ​មិន​កំណត់​ជា​សាជី គូប ការ​បម្លែង និង "
+"ធ្វើ​ការងារ​សំខាន់​ៗ​ជាច្រើន​ដែល​ទាក់ទង​នឹង Kig ដែល​រួម​បញ្ចូល​វា ប៉ុន្តែ​មិន​កំណត់​ជា​សាជី គូប ការ​បម្លែង និង "
 "ការ​គាំទ្រ​ការ​ពិសោធ​លក្ខណៈសម្បត្តិ​ឡើយ ។​"
 
 #: kig/aboutdata.h:45
@@ -829,8 +824,8 @@ msgid ""
 "Actual maintainer, Dr. Geo import filter, point and line styles, Italian "
 "translation, miscellaneous stuff here and there."
 msgstr ""
-"អ្នក​ថែទាំ​ពិតប្រាកដ, តម្រង​នាំចូល Dr. Geo, រចនាប័ទ្ម​ចំណុច និង បន្ទាត់, "
-"ការ​បកប្រែ​ជា​ភាសា​អ៊ីតាលី, ដាក់​វត្ថុ​ផ្សេងៗ​នៅ​ទីនេះ និង ទីនោះ ។​"
+"អ្នក​ថែទាំ​ពិតប្រាកដ, តម្រង​នាំចូល Dr. Geo, រចនាប័ទ្ម​ចំណុច និង បន្ទាត់, ការ​បកប្រែ​ជា​ភាសា​អ៊ីតាលី, "
+"ដាក់​វត្ថុ​ផ្សេងៗ​នៅ​ទីនេះ និង ទីនោះ ។​"
 
 #: kig/aboutdata.h:51
 msgid "Franco Pasquarelli"
@@ -841,9 +836,8 @@ msgid ""
 "Helped a lot with the implementation of the Locus object, there's quite some "
 "math involved in doing it right, and Franco wrote the most difficult parts."
 msgstr ""
-"បាន​ជួយ​យ៉ាង​ច្រើន​ជាមួយ​និង​ការ​ប្រតិបត្តិ​នៃ​វត្ថុ​ស្ថានរេខា​គណិត "
-"មានការ​គណនា​ដែល​ជាប់​ទាក់ទង​ក្នុង​ការ​ធ្វើ​ឲ្យ​វា​ត្រឹមត្រូវ ហើយ Franco "
-"សរសេរ​ផ្នែក​ដែល​ពិបាក​បំផុត ។​"
+"បាន​ជួយ​យ៉ាង​ច្រើន​ជាមួយ​និង​ការ​ប្រតិបត្តិ​នៃ​វត្ថុ​ស្ថានរេខា​គណិត មានការ​គណនា​ដែល​ជាប់​ទាក់ទង​ក្នុង​ការ​ធ្វើ​ឲ្យ​"
+"វា​ត្រឹមត្រូវ ហើយ Franco សរសេរ​ផ្នែក​ដែល​ពិបាក​បំផុត ។​"
 
 #: kig/aboutdata.h:57
 msgid "Francesca Gatti"
@@ -878,9 +872,8 @@ msgid ""
 "The French translator, who also sent me some useful feedback, like feature "
 "requests and bug reports."
 msgstr ""
-"អ្នក​បកប្រែ​ភាសា​បារាំង "
-"ដែល​បាន​​ផ្ញើ​​នូវ​មតិ​មាន​ប្រយោជន៍​មួយ​ចំនួន​ដល់​ខ្ញុំ​​ "
-"ដូច​ជា​ការ​សំណូម​អំពី​​​លក្ខណ​ពិសេស និង របាយការណ៍​កំហុស ។​"
+"អ្នក​បកប្រែ​ភាសា​បារាំង ដែល​បាន​​ផ្ញើ​​នូវ​មតិ​មាន​ប្រយោជន៍​មួយ​ចំនួន​ដល់​ខ្ញុំ​​ ដូច​ជា​ការ​សំណូម​អំពី​​​លក្ខណ​ពិសេស និង "
+"របាយការណ៍​កំហុស ។​"
 
 #: kig/aboutdata.h:75
 msgid "Marc Bartsch"
@@ -890,9 +883,7 @@ msgstr "Marc Bartsch"
 msgid ""
 "Author of KGeo, where I got inspiration, some source, and most of the "
 "artwork from."
-msgstr ""
-"អ្នក​និពន្ធ​របស់ KGeo ដែល​ខ្ញុំ​ទទួល​បាន​ការ​ផ្ដល់​ទឹកចិត្ត​ ប្រភព​ខ្លះ និង "
-"ការងារ​សិល្បៈ​ភាគ​ច្រើន ។"
+msgstr "អ្នក​និពន្ធ​របស់ KGeo ដែល​ខ្ញុំ​ទទួល​បាន​ការ​ផ្ដល់​ទឹកចិត្ត​ ប្រភព​ខ្លះ និង ការងារ​សិល្បៈ​ភាគ​ច្រើន ។"
 
 #: kig/aboutdata.h:80
 msgid "Christophe Devriese"
@@ -902,9 +893,7 @@ msgstr "Christophe Devriese"
 msgid ""
 "Domi's brother, who he got to write the algorithm for calculating the center "
 "of the circle with three points given."
-msgstr ""
-"បង​ប្រុស​របស់ ដូមី ដែល​គាត់​បាន​សរសេរ​ក្បួន​ដោះស្រាយ​​​ក្នុង​ការ​គណនា​​ផ្ចិត"
-"​​នៃ​រង្វង់​ដែល​មាន​ជ្រុង​បី​ ។​"
+msgstr "បង​ប្រុស​របស់ ដូមី ដែល​គាត់​បាន​សរសេរ​ក្បួន​ដោះស្រាយ​​​ក្នុង​ការ​គណនា​​ផ្ចិត​​នៃ​រង្វង់​ដែល​មាន​ជ្រុង​បី​ ។​"
 
 #: kig/aboutdata.h:86
 msgid "Christophe Prud'homme"
@@ -923,10 +912,8 @@ msgid ""
 "Gave me some good feedback on Kig, some feature requests, cleanups and style "
 "fixes, and someone to chat with on irc :)"
 msgstr ""
-"​​ផ្ដល់​ឲ្យ​ខ្ញុំ​នូវ​មតិ​​អ្នកប្រើ​ល្អ​ៗ​​អំពី​ Kig​  "
-"សំណូម​ពរ​ទាក់​ទង​នឹង​លក្ខណ​ពិសេស ការ​សំអាត​ និង "
-"ការ​ជួសជុល​រចនាប័ទ្ម​មួយ​ចំនួន​ "
-"ហើយ​និង​ផ្ដល់​នូវ​មនុស្ស​ម្នាក់​ដើម្បី​ជជែក​ជា​មួយ​ខ្ញុំ​តាម​រយះ ​irc ៖)"
+"​​ផ្ដល់​ឲ្យ​ខ្ញុំ​នូវ​មតិ​​អ្នកប្រើ​ល្អ​ៗ​​អំពី​ Kig​  សំណូម​ពរ​ទាក់​ទង​នឹង​លក្ខណ​ពិសេស ការ​សំអាត​ និង ការ​ជួសជុល​រចនាប័ទ្ម​មួយ​"
+"ចំនួន​ ហើយ​និង​ផ្ដល់​នូវ​មនុស្ស​ម្នាក់​ដើម្បី​ជជែក​ជា​មួយ​ខ្ញុំ​តាម​រយះ ​irc ៖)"
 
 #: kig/aboutdata.h:96
 msgid "David Vignoni"
@@ -972,8 +959,7 @@ msgid ""
 "The file \"%1\" could not be opened. Please check if the file permissions "
 "are set correctly."
 msgstr ""
-"មិន​អាច​បើក​ឯកសារ \"%1\" បាន​ទេ​ ។ សូម​ពិនិត្យ​ថា​តើ "
-"​សិទ្ធិ​ឯកសារ​ត្រូវ​បាន​កំណត់​យ៉ាង​ត្រឹមត្រូវ​ដែរ​ឬ​ទេ ។"
+"មិន​អាច​បើក​ឯកសារ \"%1\" បាន​ទេ​ ។ សូម​ពិនិត្យ​ថា​តើ ​សិទ្ធិ​ឯកសារ​ត្រូវ​បាន​កំណត់​យ៉ាង​ត្រឹមត្រូវ​ដែរ​ឬ​ទេ ។"
 
 #: filters/cabri-filter.cc:157
 msgid "This is an XFig file, not a Cabri figure."
@@ -985,8 +971,8 @@ msgid ""
 "This Cabri version (%1) is not supported yet.\n"
 "Please contact the Kig authors to help supporting this Cabri version."
 msgstr ""
-"កំណែ​​របស់ Cabri (%1) នេះ​មិន​​ទាន់​ត្រូវ​បាន​គាំទ្រ​នៅ​ឡើយ​ទេ "
-"។\nសូម​ទាក់ទង​អ្នក​និពន្ធ Kig ដើម្បី​ជួយ​គាំទ្រ​កំណែ​របស់ Cabri នេះ ។"
+"កំណែ​​របស់ Cabri (%1) នេះ​មិន​​ទាន់​ត្រូវ​បាន​គាំទ្រ​នៅ​ឡើយ​ទេ ។\n"
+"សូម​ទាក់ទង​អ្នក​និពន្ធ Kig ដើម្បី​ជួយ​គាំទ្រ​កំណែ​របស់ Cabri នេះ ។"
 
 #: filters/cabri-filter.cc:659
 #, kde-format
@@ -1014,8 +1000,8 @@ msgid ""
 "The current Dr. Geo file contains more than one figure.\n"
 "Please select which to import:"
 msgstr ""
-"ឯកសារ Dr. Geo បច្ចុប្បន្ន​មាន​​រូបភាព​ពន្យល់​ច្រើនជាងមួយ "
-"។\nសូម​ជ្រើសរើស​រូប​ពន្យល់​​មួយ​ដើម្បី​នាំ​ចូល​ ៖"
+"ឯកសារ Dr. Geo បច្ចុប្បន្ន​មាន​​រូបភាព​ពន្យល់​ច្រើនជាងមួយ ។\n"
+"សូម​ជ្រើសរើស​រូប​ពន្យល់​​មួយ​ដើម្បី​នាំ​ចូល​ ៖"
 
 #: filters/drgeo-filter.cc:339 filters/drgeo-filter.cc:397
 #: filters/drgeo-filter.cc:429 filters/drgeo-filter.cc:442
@@ -1070,12 +1056,13 @@ msgid ""
 "The file \"%1\" could not be opened.  This probably means that it does not "
 "exist, or that it cannot be opened due to its permissions"
 msgstr ""
-"មិន​អាច​បើក​ឯកសារ \"%1\" បាន​ទេ​ ។  វា​ទំនង​ជា​ថា មិន​មាន​ឯកសារ​នេះ​ "
-"ឬ​ថា​មិន​អាច​បើក​វា​បាន​ ​ដោយ​សារ​តែ​​សិទ្ធិ​របស់​វា"
+"មិន​អាច​បើក​ឯកសារ \"%1\" បាន​ទេ​ ។  វា​ទំនង​ជា​ថា មិន​មាន​ឯកសារ​នេះ​ ឬ​ថា​មិន​អាច​បើក​វា​បាន​ ​ដោយ​សារ​"
+"តែ​​សិទ្ធិ​របស់​វា"
 
 #: filters/filter.cc:82
 #, kde-format
-msgid "An error was encountered while parsing the file \"%1\".  It cannot be opened."
+msgid ""
+"An error was encountered while parsing the file \"%1\".  It cannot be opened."
 msgstr "បាន​ជួប​កំហុស​ខណៈ​ពេល​ញែក​ឯកសារ \"%1\" ។  មិន​អាច​បើក​វា​បាន​ទេ ។​"
 
 #: filters/filter.cc:84
@@ -1095,27 +1082,23 @@ msgstr "មិន​ត្រូវ​បាន​​គាំទ្រ"
 msgid ""
 "This KSeg document uses a scaling transformation, which Kig currently cannot "
 "import."
-msgstr ""
-"ឯកសារ​ KSeg នេះ​ប្រើ​ការ​បម្លែង​មាត្រដ្ឋាន​ ដែល​បច្ចុប្បន្ន​នេះ​ ​Kig  "
-"មិន​អាច​នាំចូល​បាន​ទេ​ ។"
+msgstr "ឯកសារ​ KSeg នេះ​ប្រើ​ការ​បម្លែង​មាត្រដ្ឋាន​ ដែល​បច្ចុប្បន្ន​នេះ​ ​Kig  មិន​អាច​នាំចូល​បាន​ទេ​ ។"
 
 #: filters/kseg-filter.cc:561
 msgid ""
 "This KSeg file contains a filled circle, which Kig does not currently "
 "support."
-msgstr ""
-"​ឯកសារ​ KSeg នេះ​​មាន​រង្វង់​ដែល​បាន​បំពេញ​​ ដែល​បច្ចុប្បន្ន​នេះ​ Kig "
-"​​មិន​​​គាំទ្រ​វា​ទេ​​ ។"
+msgstr "​ឯកសារ​ KSeg នេះ​​មាន​រង្វង់​ដែល​បាន​បំពេញ​​ ដែល​បច្ចុប្បន្ន​នេះ​ Kig ​​មិន​​​គាំទ្រ​វា​ទេ​​ ។"
 
 #: filters/kseg-filter.cc:567
-msgid "This KSeg file contains an arc sector, which Kig does not currently support."
+msgid ""
+"This KSeg file contains an arc sector, which Kig does not currently support."
 msgstr "ឯកសារ​ KSeg នេះ​មាន​ចម្រៀក​ធ្នូ ដែល​បច្ចុប្បន្ន​នេះ ​Kig មិន​​​គាំទ្រ​ទេ ។"
 
 #: filters/kseg-filter.cc:573
-msgid "This KSeg file contains an arc segment, which Kig does not currently support."
-msgstr ""
-"ឯកសារ​ KSeg នេះ​មាន​អង្កត់​ធ្នូ​​ ដែល​​បច្ចុប្បន្ន​នេះ Kig មិន​​​គាំទ្រ​ទេ​ "
-"។"
+msgid ""
+"This KSeg file contains an arc segment, which Kig does not currently support."
+msgstr "ឯកសារ​ KSeg នេះ​មាន​អង្កត់​ធ្នូ​​ ដែល​​បច្ចុប្បន្ន​នេះ Kig មិន​​​គាំទ្រ​ទេ​ ។"
 
 #: filters/latexexporter.cc:74
 msgid "Export to &Latex..."
@@ -1139,10 +1122,9 @@ msgstr "ជម្រើស Latex"
 
 #: filters/native-filter.cc:194
 #, kde-format
-msgid "This file was created by Kig version \"%1\", which this version cannot open."
-msgstr ""
-"ឯកសារ​នេះ​ត្រូវ​បាន​បង្កើត​ដោយ​កំណែ Kig \"%1\" "
-"ដែល​កំណែ​នេះ​មិន​អាច​​​បើកបាន​​ទេ ។"
+msgid ""
+"This file was created by Kig version \"%1\", which this version cannot open."
+msgstr "ឯកសារ​នេះ​ត្រូវ​បាន​បង្កើត​ដោយ​កំណែ Kig \"%1\" ដែល​កំណែ​នេះ​មិន​អាច​​​បើកបាន​​ទេ ។"
 
 #: filters/native-filter.cc:200
 #, kde-format
@@ -1152,11 +1134,10 @@ msgid ""
 "You can try to open this file with an older Kig version (0.4 to 0.6),\n"
 "and then save it again, which will save it in the new format."
 msgstr ""
-"ឯកសារ​នេះ​ត្រូវ​បាន​បង្កើត​ដោយ​កំណែ Kig \"%1\" "
-"។\nការ​គាំទ្រ​ទ្រង់ទ្រាយ​ចាស់​របស់ Kig (មុន 0.4) ត្រូវ​បាន​យក​ចេញ​ពី Kig "
-"។\nអ្នក​អាច​សាកល្បង​បើក​ឯកសារ​នេះ​ជាមួយ​នឹង​កំណែ​ចាស់​របស់ Kig  (0.4 ដល់​ "
-"0.6) \nហើយ​រក្សា​ទុក​វា​ម្ដង​ទៀត ដែល​នឹង​រក្សា​ទុក​វា​ក្នុង​ទ្រង់ទ្រាយ​ថ្មី "
-"។"
+"ឯកសារ​នេះ​ត្រូវ​បាន​បង្កើត​ដោយ​កំណែ Kig \"%1\" ។\n"
+"ការ​គាំទ្រ​ទ្រង់ទ្រាយ​ចាស់​របស់ Kig (មុន 0.4) ត្រូវ​បាន​យក​ចេញ​ពី Kig ។\n"
+"អ្នក​អាច​សាកល្បង​បើក​ឯកសារ​នេះ​ជាមួយ​នឹង​កំណែ​ចាស់​របស់ Kig  (0.4 ដល់​ 0.6) \n"
+"ហើយ​រក្សា​ទុក​វា​ម្ដង​ទៀត ដែល​នឹង​រក្សា​ទុក​វា​ក្នុង​ទ្រង់ទ្រាយ​ថ្មី ។"
 
 #: filters/native-filter.cc:231 filters/native-filter.cc:425
 msgid ""
@@ -1164,8 +1145,8 @@ msgid ""
 "support.\n"
 "A standard coordinate system will be used instead."
 msgstr ""
-"ឯកសារ Kig នេះ​​មាន​​ប្រព័ន្ធ​កូអរដោនេ​ដែល​កំណែ Kig នេះ​មិន​គាំទ្រ "
-"។\n​ប្រព័ន្ធ​​​កូអរដោនេ​ស្តង់ដារ​នឹង​ត្រូវ​បាន​ប្រើ​ជំនួស ។"
+"ឯកសារ Kig នេះ​​មាន​​ប្រព័ន្ធ​កូអរដោនេ​ដែល​កំណែ Kig នេះ​មិន​គាំទ្រ ។\n"
+"​ប្រព័ន្ធ​​​កូអរដោនេ​ស្តង់ដារ​នឹង​ត្រូវ​បាន​ប្រើ​ជំនួស ។"
 
 #: filters/native-filter.cc:336 filters/native-filter.cc:529
 #: objects/object_imp_factory.cc:505
@@ -1175,9 +1156,8 @@ msgid ""
 "support.Perhaps you have compiled Kig without support for this object type,"
 "or perhaps you are using an older Kig version."
 msgstr ""
-"ឯកសារ Kig នេះ​ប្រើ​​វត្ថុ​ប្រភេទ \"%1\" ដែល​កំណែ Kig នេះ​មិន​គាំទ្រ ។ "
-"ប្រហែល​ជា​អ្នក​បាន​ចងក្រង Kig ដោយ​គ្មាន​ការ​​គាំទ្រ​ចំពោះ​ប្រភេទ​វត្ថុ​នេះ "
-"ឬ​ប្រហែល​ជា​អ្នក​កំពុង​ប្រើ​កំណែ​​មុន​របស់ Kig ។​"
+"ឯកសារ Kig នេះ​ប្រើ​​វត្ថុ​ប្រភេទ \"%1\" ដែល​កំណែ Kig នេះ​មិន​គាំទ្រ ។ ប្រហែល​ជា​អ្នក​បាន​ចងក្រង "
+"Kig ដោយ​គ្មាន​ការ​​គាំទ្រ​ចំពោះ​ប្រភេទ​វត្ថុ​នេះ ឬ​ប្រហែល​ជា​អ្នក​កំពុង​ប្រើ​កំណែ​​មុន​របស់ Kig ។​"
 
 #: filters/native-filter.cc:389
 #, kde-format
@@ -1186,9 +1166,8 @@ msgid ""
 "save the construction with a different name and check that it works as "
 "expected."
 msgstr ""
-"ឯកសារ​របស់ Kig នេះ​ប្រើ​វត្ថុ​ប្រភេទ \"%1\" ដែល​វា​​ហួស​សម័យ​ "
-"អ្នក​គួរ​រក្សាទុក​ការសាងសង់​​​ដោយ​ដាក់​ឈ្មោះ​ផ្សេង "
-"និង​ពិនិត្យ​ថា​តើ​វា​ដំណើរការ​​ទៅ​តាម​​អ្វី​ដែល​រំពឹង​ទុក​ដែរ​ឬ​ទេ ។​"
+"ឯកសារ​របស់ Kig នេះ​ប្រើ​វត្ថុ​ប្រភេទ \"%1\" ដែល​វា​​ហួស​សម័យ​ អ្នក​គួរ​រក្សាទុក​ការសាងសង់​​​ដោយ​ដាក់​ឈ្មោះ​"
+"ផ្សេង និង​ពិនិត្យ​ថា​តើ​វា​ដំណើរការ​​ទៅ​តាម​​អ្វី​ដែល​រំពឹង​ទុក​ដែរ​ឬ​ទេ ។​"
 
 #: filters/svgexporter.cc:45
 msgid "&Export to SVG..."
@@ -1261,29 +1240,25 @@ msgstr "កន្លះ​បន្ទាត់"
 
 #: misc/builtin_stuff.cc:84
 msgid "A half-line by its start point, and another point somewhere on it."
-msgstr ""
-"កន្លះ​បន្ទាត់​ត្រឹម​ចំណុច​ចាប់​ផ្ដើម​របស់​វា "
-"និង​ចំណុច​មួយ​ទៀត​ស្ថិតនៅ​កន្លែង​ណាមួយ​លើ​វា ។"
+msgstr "កន្លះ​បន្ទាត់​ត្រឹម​ចំណុច​ចាប់​ផ្ដើម​របស់​វា និង​ចំណុច​មួយ​ទៀត​ស្ថិតនៅ​កន្លែង​ណាមួយ​លើ​វា ។"
 
 #: misc/builtin_stuff.cc:91
 msgid "Perpendicular"
 msgstr "កែង"
 
 #: misc/builtin_stuff.cc:92
-msgid "A line constructed through a point, perpendicular to another line or segment."
-msgstr ""
-"បន្ទាត់​ត្រូវ​បាន​សង់​តាម​ចំណុច​ដែល​កែង​នឹង​បន្ទាត់​ "
-"ឬ​អង្កត់​បន្ទាត់​មួយ​ផ្សេង​ទៀត ។"
+msgid ""
+"A line constructed through a point, perpendicular to another line or segment."
+msgstr "បន្ទាត់​ត្រូវ​បាន​សង់​តាម​ចំណុច​ដែល​កែង​នឹង​បន្ទាត់​ ឬ​អង្កត់​បន្ទាត់​មួយ​ផ្សេង​ទៀត ។"
 
 #: misc/builtin_stuff.cc:99
 msgid "Parallel"
 msgstr "ស្រប"
 
 #: misc/builtin_stuff.cc:100
-msgid "A line constructed through a point, and parallel to another line or segment"
-msgstr ""
-"បន្ទាត់​ត្រូវ​បាន​សង់​តាម​ចំណុច ហើយ​វា​ស្រប​ទៅ​នឹង​បន្ទាត់ "
-"ឬ​អង្កត់​បន្ទាត់​មួយ​ផ្សេង​ទៀត"
+msgid ""
+"A line constructed through a point, and parallel to another line or segment"
+msgstr "បន្ទាត់​ត្រូវ​បាន​សង់​តាម​ចំណុច ហើយ​វា​ស្រប​ទៅ​នឹង​បន្ទាត់ ឬ​អង្កត់​បន្ទាត់​មួយ​ផ្សេង​ទៀត"
 
 #: misc/builtin_stuff.cc:107
 msgid "Circle by Center && Point"
@@ -1347,9 +1322,7 @@ msgstr "គូរ​​រាង​ពងក្រពើ​តាម​ចំណ
 
 #: misc/builtin_stuff.cc:164
 msgid "An ellipse constructed by its focuses and a point that pertains to it"
-msgstr ""
-"រាងពងក្រពើ​ត្រូវ​បាន​សង់​តាម​ចំណុច​រួម​ "
-"និង​តាម​ចំណុច​ដែល​ជាប់​ទាក់ទង​នឹង​វា​"
+msgstr "រាងពងក្រពើ​ត្រូវ​បាន​សង់​តាម​ចំណុច​រួម​ និង​តាម​ចំណុច​ដែល​ជាប់​ទាក់ទង​នឹង​វា​"
 
 #: misc/builtin_stuff.cc:171
 msgid "Hyperbola by Focuses && Point"
@@ -1405,9 +1378,7 @@ msgstr "គូរ​ខ្សែ​កោង​ដឺក្រេ​ទី​ប
 
 #: misc/builtin_stuff.cc:220
 msgid "A cubic curve with a nodal point at the origin through six points"
-msgstr ""
-"​ខ្សែ​កោង​ដឺក្រេ​ទី​បី​​មាន​ចំណុច​ថ្នាំង​នៅ​ខាង​ដើម​កាត់តាម​​ចំណុច​ប្រាំ​មួយ"
-"​"
+msgstr "​ខ្សែ​កោង​ដឺក្រេ​ទី​បី​​មាន​ចំណុច​ថ្នាំង​នៅ​ខាង​ដើម​កាត់តាម​​ចំណុច​ប្រាំ​មួយ​"
 
 #: misc/builtin_stuff.cc:227
 msgid "Cubic Curve with Cusp by Four Points"
@@ -1522,10 +1493,9 @@ msgid "Arc by Center, Angle && Point"
 msgstr "គូរ​​ធ្នូ​តាម​ផ្ចិត​ មុំ និង​ចំណុច"
 
 #: misc/builtin_stuff.cc:350
-msgid "Construct an arc by its center and a given angle, starting at a given point"
-msgstr ""
-"សង់​ធ្នូ​តាម​ផ្ចិត "
-"និង​មុំ​ដែល​បាន​ផ្ដល់​ដោយ​ចាប់​ផ្ដើម​នៅ​ត្រង់​ចំណុច​ដែល​បាន​បញ្ជាក់"
+msgid ""
+"Construct an arc by its center and a given angle, starting at a given point"
+msgstr "សង់​ធ្នូ​តាម​ផ្ចិត និង​មុំ​ដែល​បាន​ផ្ដល់​ដោយ​ចាប់​ផ្ដើម​នៅ​ត្រង់​ចំណុច​ដែល​បាន​បញ្ជាក់"
 
 #: misc/builtin_stuff.cc:358
 msgid "Parabola by Directrix && Focus"
@@ -1572,20 +1542,18 @@ msgid "Scale"
 msgstr "មាត្រដ្ឋាន"
 
 #: misc/builtin_stuff.cc:412
-msgid "Scale an object over a point, by the ratio given by the length of a segment"
-msgstr ""
-"ធ្វើ​មាត្រដ្ឋាន​វត្ថុ​លើ​ចំណុច​​ "
-"តាម​ផល​ធៀប​ដែល​បាន​ផ្ដល់​​​ដោយ​​ប្រវែង​នៃ​អង្កត់​បន្ទាត់​"
+msgid ""
+"Scale an object over a point, by the ratio given by the length of a segment"
+msgstr "ធ្វើ​មាត្រដ្ឋាន​វត្ថុ​លើ​ចំណុច​​ តាម​ផល​ធៀប​ដែល​បាន​ផ្ដល់​​​ដោយ​​ប្រវែង​នៃ​អង្កត់​បន្ទាត់​"
 
 #: misc/builtin_stuff.cc:419
 msgid "Scale over Line"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​លើ​បន្ទាត់​"
 
 #: misc/builtin_stuff.cc:420
-msgid "An object scaled over a line, by the ratio given by the length of a segment"
-msgstr ""
-"វត្ថុ​ត្រូវ​បាន​ធ្វើ​មាត្រដ្ឋាន​លើ​បន្ទាត់​ "
-"តាម​​ផល​ធៀប​​ដែល​បាន​ផ្ដល់​​ដោយ​ប្រវែង​នៃ​អង្កត់​បន្ទាត់​"
+msgid ""
+"An object scaled over a line, by the ratio given by the length of a segment"
+msgstr "វត្ថុ​ត្រូវ​បាន​ធ្វើ​មាត្រដ្ឋាន​លើ​បន្ទាត់​ តាម​​ផល​ធៀប​​ដែល​បាន​ផ្ដល់​​ដោយ​ប្រវែង​នៃ​អង្កត់​បន្ទាត់​"
 
 #: misc/builtin_stuff.cc:427
 msgid "Scale (ratio given by two segments)"
@@ -1595,23 +1563,17 @@ msgstr "មាត្រដ្ឋាន​ (ផល​ធៀប​ដែល​ប�
 msgid ""
 "Scale an object over a point, by the ratio given by the length of two "
 "segments"
-msgstr ""
-"ធ្វើ​មាត្រដ្ឋាន​វត្ថុ​លើ​ចំណុច​​ "
-"តាម​ផល​ធៀប​​ដែល​បាន​ផ្ដល់​​ដោយ​ប្រវែង​នៃ​អង្កត់​បន្ទាត់​ពីរ"
+msgstr "ធ្វើ​មាត្រដ្ឋាន​វត្ថុ​លើ​ចំណុច​​ តាម​ផល​ធៀប​​ដែល​បាន​ផ្ដល់​​ដោយ​ប្រវែង​នៃ​អង្កត់​បន្ទាត់​ពីរ"
 
 #: misc/builtin_stuff.cc:435
 msgid "Scale over Line (ratio given by two segments)"
-msgstr ""
-"ធ្វើ​មាត្រដ្ឋាន​លើ​បន្ទាត់​  "
-"(ផល​ធៀប​​ដែល​បាន​ផ្ដល់​​ដោយ​អង្កត់​បន្ទាត់​​ពីរ​)"
+msgstr "ធ្វើ​មាត្រដ្ឋាន​លើ​បន្ទាត់​  (ផល​ធៀប​​ដែល​បាន​ផ្ដល់​​ដោយ​អង្កត់​បន្ទាត់​​ពីរ​)"
 
 #: misc/builtin_stuff.cc:436
 msgid ""
 "An object scaled over a line, by the ratio given by the length of two "
 "segments"
-msgstr ""
-"វត្ថុ​ដែល​​ត្រូវ​បាន​ធ្វើ​មាត្រដ្ឋាន​លើ​បន្ទាត់​ "
-"តាម​ផ​ល​ធៀប​​​ដែល​បាន​​ផ្ដល់​ដោយ​អង្កត់​បន្ទាត់​ពីរ"
+msgstr "វត្ថុ​ដែល​​ត្រូវ​បាន​ធ្វើ​មាត្រដ្ឋាន​លើ​បន្ទាត់​ តាម​ផ​ល​ធៀប​​​ដែល​បាន​​ផ្ដល់​ដោយ​អង្កត់​បន្ទាត់​ពីរ"
 
 #: misc/builtin_stuff.cc:443
 msgid "Apply Similitude"
@@ -1621,9 +1583,7 @@ msgstr "អនុវត្ត​ដំណូច"
 msgid ""
 "Apply a similitude to an object (the sequence of a scaling and rotation "
 "around a center)"
-msgstr ""
-"អនុវត្ត​ដំណូច​​ទៅ​លើ​វត្ថុ​ (លំដាប់​នៃ​ការ​ធ្វើ​មាត្រដ្ឋាន "
-"និង​រង្វិល​ជុំ​វិញ​ផ្ចិត​)"
+msgstr "អនុវត្ត​ដំណូច​​ទៅ​លើ​វត្ថុ​ (លំដាប់​នៃ​ការ​ធ្វើ​មាត្រដ្ឋាន និង​រង្វិល​ជុំ​វិញ​ផ្ចិត​)"
 
 #: misc/builtin_stuff.cc:451
 msgid "Harmonic Homology"
@@ -1633,9 +1593,7 @@ msgstr "អូម៉ូឡូស៊ីអាម៉ូនិច"
 msgid ""
 "The harmonic homology with a given center and a given axis (this is a "
 "projective transformation)"
-msgstr ""
-"អូម៉ូឡូស៊ី​អាម៉ូនិច​ដែល​មាន​ផ្ចិត និង​អ័ក្ស​ដែល​បាន​ផ្ដល់​​ឲ្យ​វា "
-"(​នេះ​​គឺ​ជា​បម្លែង​ដែល​​មាន​ចំណោល​)"
+msgstr "អូម៉ូឡូស៊ី​អាម៉ូនិច​ដែល​មាន​ផ្ចិត និង​អ័ក្ស​ដែល​បាន​ផ្ដល់​​ឲ្យ​វា (​នេះ​​គឺ​ជា​បម្លែង​ដែល​​មាន​ចំណោល​)"
 
 #: misc/builtin_stuff.cc:467
 msgid "Draw Projective Shadow"
@@ -1767,9 +1725,7 @@ msgstr "ពិសោធ​ចម្ងាយ​"
 msgid ""
 "Test whether a given point have the same distance from a given point and "
 "from another given point"
-msgstr ""
-"ពិសោធ​ថា​តើ "
-"ចំណុច​ដែល​បញ្ជាក់​មាន​ចម្ងាយ​ដូច​គ្នា​ពី​ចំណុច​មួយ​ទៅ​ចំណុច​មួយ​ទៀត​ដែរ​ឬទេ"
+msgstr "ពិសោធ​ថា​តើ ចំណុច​ដែល​បញ្ជាក់​មាន​ចម្ងាយ​ដូច​គ្នា​ពី​ចំណុច​មួយ​ទៅ​ចំណុច​មួយ​ទៀត​ដែរ​ឬទេ"
 
 #: misc/builtin_stuff.cc:649
 msgid "Vector Equality Test"
@@ -1806,9 +1762,7 @@ msgstr "Grad"
 msgid ""
 "A normal point, i.e. one that is either independent or attached to a line, "
 "circle, segment."
-msgstr ""
-"ចំណុច​ធម្មតា មាន​ន័យ​ថា ចំណុច​មួយ​ដែល​នៅ​តែ​ឯង ឬ ភ្ជាប់​ទៅ​និង​បន្ទាត់ "
-"រង្វង់ អង្កត់​​ ។"
+msgstr "ចំណុច​ធម្មតា មាន​ន័យ​ថា ចំណុច​មួយ​ដែល​នៅ​តែ​ឯង ឬ ភ្ជាប់​ទៅ​និង​បន្ទាត់ រង្វង់ អង្កត់​​ ។"
 
 #: misc/guiaction.cc:133
 msgid "Point"
@@ -1874,10 +1828,9 @@ msgid ""
 "If you switch to another unit, the value in the edit field on the left will "
 "be converted to the new selected unit."
 msgstr ""
-"ជ្រើស​ពី​បញ្ជី​​នេះ​នូវ​ខ្នាត​​រង្វាស់​មុំ​ដែល​អ្នក​ចង់​ប្រើ​ដើម្បី​កែប្រែ​ទ"
-"ំហំ​របស់​មុំ​នេះ ។<br />\nប្រសិនបើ​អ្នក​ប្ដូរ​ទៅ​ខ្នាត​ផ្សេង តម្លៃ​នៅ​ក្នុង​"
-"វាល​កែសម្រួល​នៅ​ខាង​ឆ្វេង​នឹង​ត្រូវ​បាន​បម្លែង​ទៅ​ជា​ខ្នាត​​ដែល​បាន​ជ្រើស​ថ្"
-"មី​ផង​ដែរ​ ។"
+"ជ្រើស​ពី​បញ្ជី​​នេះ​នូវ​ខ្នាត​​រង្វាស់​មុំ​ដែល​អ្នក​ចង់​ប្រើ​ដើម្បី​កែប្រែ​ទំហំ​របស់​មុំ​នេះ ។<br />\n"
+"ប្រសិនបើ​អ្នក​ប្ដូរ​ទៅ​ខ្នាត​ផ្សេង តម្លៃ​នៅ​ក្នុង​វាល​កែសម្រួល​នៅ​ខាង​ឆ្វេង​នឹង​ត្រូវ​បាន​បម្លែង​ទៅ​ជា​ខ្នាត​​ដែល​បាន​"
+"ជ្រើស​ថ្មី​ផង​ដែរ​ ។"
 
 #: misc/lists.cc:303 misc/lists.cc:309
 #, kde-format
@@ -1896,11 +1849,9 @@ msgid ""
 "macro using a previous Kig version (0.4 to 0.6) and then export it again in "
 "the new format."
 msgstr ""
-"ឯកសារ​នេះ​ត្រូវ​បាន​បង្កើត​ដោយ​កម្មវិធី​ Kig កំណែ​ (មុន​ 0.​4) "
-"ដែល​ជា​កំណែ​ចាស់​បំផុត​​ ។ កំណែ​ Kig បច្ចុប្បន្ន​ "
-"ដែល​គាំទ្រ​ទ្រង់ទ្រាយ​នេះ​ត្រូវ​បាន​យក​ចេញ​ ។ "
-"អ្នក​អាច​​សាក​ល្បង​​នាំចូល​ម៉ាក្រូ​ដោយ​ប្រើ​កំណែ​ Kig ពីមុន (0.4 ដល់​​ 0. 6) "
-"ហើយ​បន្ទាប់​មក​នាំ​​ចេញ​វា​ម្ដង​ទៀត​​ទៅ​ជា​ទ្រង់ទ្រាយ​ថ្មី​​​ ។"
+"ឯកសារ​នេះ​ត្រូវ​បាន​បង្កើត​ដោយ​កម្មវិធី​ Kig កំណែ​ (មុន​ 0.​4) ដែល​ជា​កំណែ​ចាស់​បំផុត​​ ។ កំណែ​ Kig "
+"បច្ចុប្បន្ន​ ដែល​គាំទ្រ​ទ្រង់ទ្រាយ​នេះ​ត្រូវ​បាន​យក​ចេញ​ ។ អ្នក​អាច​​សាក​ល្បង​​នាំចូល​ម៉ាក្រូ​ដោយ​ប្រើ​កំណែ​ Kig ពីមុន "
+"(0.4 ដល់​​ 0. 6) ហើយ​បន្ទាប់​មក​នាំ​​ចេញ​វា​ម្ដង​ទៀត​​ទៅ​ជា​ទ្រង់ទ្រាយ​ថ្មី​​​ ។"
 
 #: misc/lists.cc:377
 #, kde-format
@@ -1914,9 +1865,8 @@ msgid ""
 "support. Perhaps you have compiled Kig without support for this object type, "
 "or perhaps you are using an older Kig version."
 msgstr ""
-"ឯកសារ Kig នេះ​ប្រើ​វត្ថុ​​​ប្រភេទ \"%1\" ដែល​កំណែ Kig នេះ​មិន​គាំទ្រ ។ "
-"ប្រហែល​ជា​អ្នក​បាន​ចងក្រង Kig ដែល​មិន​គាំទ្រ​ចំពោះ​ប្រភេទ​វត្ថុ​នេះ "
-"ឬ​ប្រហែល​ជា​អ្នក​កំពុង​ប្រើ​កំណែ​​របស់​ Kig ដែល​ចាស់​ជាង​នេះ ។"
+"ឯកសារ Kig នេះ​ប្រើ​វត្ថុ​​​ប្រភេទ \"%1\" ដែល​កំណែ Kig នេះ​មិន​គាំទ្រ ។ ប្រហែល​ជា​អ្នក​បាន​ចងក្រង "
+"Kig ដែល​មិន​គាំទ្រ​ចំពោះ​ប្រភេទ​វត្ថុ​នេះ ឬ​ប្រហែល​ជា​អ្នក​កំពុង​ប្រើ​កំណែ​​របស់​ Kig ដែល​ចាស់​ជាង​នេះ ។"
 
 #: misc/special_constructors.cc:325
 msgid "Radical Lines for Conics"
@@ -1927,8 +1877,8 @@ msgid ""
 "The lines constructed through the intersections of two conics.  This is also "
 "defined for non-intersecting conics."
 msgstr ""
-"បន្ទាត់​ជា​ច្រើន​ត្រូវ​បាន​សង់​តាម​ចំណុច​ប្រសព្វ​​នៃ​សាជី​ពីរ ។ "
-"វា​ក៏​ត្រូវ​បាន​កំណត់​សម្រាប់​សាជី​ដែល​មិន​ប្រសព្វ​គ្នា​ផង​ដែរ ។"
+"បន្ទាត់​ជា​ច្រើន​ត្រូវ​បាន​សង់​តាម​ចំណុច​ប្រសព្វ​​នៃ​សាជី​ពីរ ។ វា​ក៏​ត្រូវ​បាន​កំណត់​សម្រាប់​សាជី​ដែល​មិន​ប្រសព្វ​គ្នា​ផង​"
+"ដែរ ។"
 
 #: misc/special_constructors.cc:384 misc/special_constructors.cc:480
 msgid "Moving Point"
@@ -1948,9 +1898,7 @@ msgstr "ចំណុច​តាម"
 msgid ""
 "Select the following point, whose locations the locus will be drawn "
 "through..."
-msgstr ""
-"ជ្រើស​ចំណុច​តាម​​ "
-"ដែល​ទីតាំង​របស់​វា​​នឹង​ត្រូវ​បាន​គូរ​កាត់​ដោយ​ស្ថាន​​រេខា​គណិត..."
+msgstr "ជ្រើស​ចំណុច​តាម​​ ដែល​ទីតាំង​របស់​វា​​នឹង​ត្រូវ​បាន​គូរ​កាត់​ដោយ​ស្ថាន​​រេខា​គណិត..."
 
 #: misc/special_constructors.cc:391
 msgid "Locus"
@@ -1973,7 +1921,8 @@ msgid "Construct a polygon by giving its vertices"
 msgstr "សង់​ពហុកោណ​​ដោយ​​មាន​កំពូល​"
 
 #: misc/special_constructors.cc:636
-msgid "... with this vertex (click on the first vertex to terminate construction)"
+msgid ""
+"... with this vertex (click on the first vertex to terminate construction)"
 msgstr "... ជាមួយ​កំពូល​នេះ  (ចុចលើ​កំពូល​ដំបូង​គេ​ដើម្បី​បញ្ចប់​ដំណើរការ​ការសាងសង់​)"
 
 #: misc/special_constructors.cc:637
@@ -2084,9 +2033,7 @@ msgstr "សង់​ខ្សែ​កោង​ Bézier ដោយ​មាន​
 msgid ""
 "... with this control point (click again on the last control point to "
 "terminate construction)"
-msgstr ""
-"... ជា​មួយ​​ចំណុច​គ្រប់គ្រង​នេះ​ "
-"(ចុច​ម្ដង​ទៀត​លើ​ចំណុច​គ្រប់​គ្រង​ចុង​ក្រោយ​ ដើម្បី​បញ្ចប់​សំណង់​)"
+msgstr "... ជា​មួយ​​ចំណុច​គ្រប់គ្រង​នេះ​ (ចុច​ម្ដង​ទៀត​លើ​ចំណុច​គ្រប់​គ្រង​ចុង​ក្រោយ​ ដើម្បី​បញ្ចប់​សំណង់​)"
 
 #: misc/special_constructors.cc:1228
 msgid "Construct a Bézier curve with this control point"
@@ -2101,7 +2048,8 @@ msgid "Rational Bézier Curve by its Control Points"
 msgstr "គូរ​ខ្សែ​កោង​ Bézier សនិទាន​តាម​ចំណុច​គ្រប់​គ្រង​របស់​វា"
 
 #: misc/special_constructors.cc:1277
-msgid "Construct a Bézier curve by giving its control points and positive weights"
+msgid ""
+"Construct a Bézier curve by giving its control points and positive weights"
 msgstr "សង់​ខ្សែ​កោង​ Bézier ដោយ​​មាន​​ចំណុច​គ្រប់​គ្រង និង​កម្រាស់​វិជ្ជមាន"
 
 #: misc/special_constructors.cc:1342
@@ -2112,16 +2060,15 @@ msgstr "... ផ្ដល់​កម្រាស់​នេះ​ទៅ​ដ�
 msgid ""
 "... with this control point (click again on the last control point or weight "
 "to terminate construction)"
-msgstr ""
-"... ជា​មួយ​ចំណុច​នេះ​ (ចុច​ម្ដង​ទៀត​លើ​ចំណុច​គ្រប់​គ្រង​ "
-"ឬ​កម្រាស់​ចុង​ក្រោយ​ ដើម្បី​បញ្ចប់​​សំណង់​)"
+msgstr "... ជា​មួយ​ចំណុច​នេះ​ (ចុច​ម្ដង​ទៀត​លើ​ចំណុច​គ្រប់​គ្រង​ ឬ​កម្រាស់​ចុង​ក្រោយ​ ដើម្បី​បញ្ចប់​​សំណង់​)"
 
 #: misc/special_constructors.cc:1346
 msgid "Construct a rational Bézier curve with this control point"
 msgstr "សង់​ខ្សែ​កោង​ Bézier សនិទាន​តាម​ចំណុច​គ្រប់​គ្រង​នេះ"
 
 #: misc/special_constructors.cc:1354
-msgid "Select a point to be a control point of the new rational Bézier curve..."
+msgid ""
+"Select a point to be a control point of the new rational Bézier curve..."
 msgstr "ជ្រើស​ចំណុច​ដែល​ជា​ចំណុច​គ្រប់​គ្រង​នៃ​ខ្សែ​កោង​ Bézier សនិទាន​ថ្មី..."
 
 #: misc/special_constructors.cc:1356
@@ -2144,9 +2091,7 @@ msgstr "សម្ព័ន្ធ​ទូទៅ"
 msgid ""
 "The unique affinity that maps three points (or a triangle) onto three other "
 "points (or a triangle)"
-msgstr ""
-"សម្ព័ន្ធ​តែ​មួយ​ដែល​ផ្គូផ្គង​ចំណុច​បី​ (ឬ​ត្រីកោណ​) "
-"ទៅ​លើ​​​ចំណុច​បី​ផ្សេង​ទៀត​ (ឬ​ត្រីកោណ​)"
+msgstr "សម្ព័ន្ធ​តែ​មួយ​ដែល​ផ្គូផ្គង​ចំណុច​បី​ (ឬ​ត្រីកោណ​) ទៅ​លើ​​​ចំណុច​បី​ផ្សេង​ទៀត​ (ឬ​ត្រីកោណ​)"
 
 #: misc/special_constructors.cc:1590
 msgid "Generic Projective Transformation"
@@ -2156,9 +2101,7 @@ msgstr "ការ​បម្លែង​ចំណោល​ទូទៅ"
 msgid ""
 "The unique projective transformation that maps four points (or a "
 "quadrilateral) onto four other points (or a quadrilateral)"
-msgstr ""
-"ការ​បម្លែង​ចំណោល​តែ​មួយ​ដែល​ផ្គូផ្គង​ចំណុច​បួន​ (ឬ​ចតុកោណ​) "
-"ទៅ​លើ​ចំណុច​បួន​ផ្សេង​ទៀត​ (ឬ​ចតុកោណ)"
+msgstr "ការ​បម្លែង​ចំណោល​តែ​មួយ​ដែល​ផ្គូផ្គង​ចំណុច​បួន​ (ឬ​ចតុកោណ​) ទៅ​លើ​ចំណុច​បួន​ផ្សេង​ទៀត​ (ឬ​ចតុកោណ)"
 
 #: misc/special_constructors.cc:1618
 msgid "Inversion of Point, Line or Circle"
@@ -2312,7 +2255,8 @@ msgid "Construct Midpoint of This Point and Another One"
 msgstr "សង់​ចំណុច​កណ្ដាល​នៃ​ចំណុច​នេះ ជា​មួយ​ចំណុច​មួយ​ផ្សេង​ទៀត"
 
 #: misc/special_constructors.cc:2041
-msgid "Select the first of the points of which you want to construct the midpoint..."
+msgid ""
+"Select the first of the points of which you want to construct the midpoint..."
 msgstr "ជ្រើស​ចំណុច​ដំបូង​គេ​ដែល​អ្នក​ចង់​សង់​ចំណុច​កណ្ដាល​..."
 
 #: misc/special_constructors.cc:2042
@@ -2410,9 +2354,7 @@ msgstr "វត្ថុ​មួយ​ណា​?"
 msgid ""
 "Click the location where you want to place the new point, or the curve that "
 "you want to attach it to..."
-msgstr ""
-"ចុច​លើ​ទីតាំង​មួយ​ណា​ដែល​អ្នក​ចង់​ដាក់​ចំណុច​ថ្មី​ ឬ "
-"ខ្សែ​កោង​ដែល​អ្នក​ចង់​ភ្ជាប់​​វា​​ទៅ​កាន់..."
+msgstr "ចុច​លើ​ទីតាំង​មួយ​ណា​ដែល​អ្នក​ចង់​ដាក់​ចំណុច​ថ្មី​ ឬ ខ្សែ​កោង​ដែល​អ្នក​ចង់​ភ្ជាប់​​វា​​ទៅ​កាន់..."
 
 #: modes/construct_mode.cc:478
 msgid "Now select the location for the result label."
@@ -2432,11 +2374,9 @@ msgid ""
 "optional, so you can also leave this empty: if you do so, then your macro "
 "type will have no description."
 msgstr ""
-"នៅ​ត្រង់​នេះ​​ "
-"អ្នក​អាច​កែសម្រួល​សេចក្ដី​ពិពណ៌នា​​អំពី​ប្រភេទ​ម៉ាក្រូ​បច្ចុប្បន្ន​បាន ។ "
-"វាល​នេះ​គឺ​ជា​ជម្រើស ដូច្នេះ អ្នក​​មិន​ចាំ​បាច់​បំពេញ​វា​ក៏​បាន​ដែរ ៖ "
-"ប្រសិន​បើ​អ្នក​ធ្វើ​ដូច្នេះ ពេល​នោះ​ "
-"ប្រភេទ​ម៉ាក្រូ​របស់​អ្នក​នឹង​មិន​មាន​​សេចក្ដី​ពិពណ៌នា ។​"
+"នៅ​ត្រង់​នេះ​​ អ្នក​អាច​កែសម្រួល​សេចក្ដី​ពិពណ៌នា​​អំពី​ប្រភេទ​ម៉ាក្រូ​បច្ចុប្បន្ន​បាន ។ វាល​នេះ​គឺ​ជា​ជម្រើស ដូច្នេះ "
+"អ្នក​​មិន​ចាំ​បាច់​បំពេញ​វា​ក៏​បាន​ដែរ ៖ ប្រសិន​បើ​អ្នក​ធ្វើ​ដូច្នេះ ពេល​នោះ​ ប្រភេទ​ម៉ាក្រូ​របស់​អ្នក​នឹង​មិន​មាន​​"
+"សេចក្ដី​ពិពណ៌នា ។​"
 
 #: modes/edittype.cc:57
 msgid "Use this button to change the icon of the current macro type."
@@ -2468,8 +2408,8 @@ msgid ""
 "There are '%n' parts in the text that you have not selected a value for. "
 "Please remove them or select enough arguments."
 msgstr ""
-"មាន​ផ្នែក​ '%n' ​ក្នុង​អត្ថបទ​ដែល​អ្នក​មិនទាន់​បាន​ជ្រើស​តម្លៃ​​​ ។ "
-"សូម​យក​ពួក​វា​ចេញ​ ឬ យក​អាគុយម៉ង់​មួយ​គ្រប់គ្រាន់​ហើយ​​ ។"
+"មាន​ផ្នែក​ '%n' ​ក្នុង​អត្ថបទ​ដែល​អ្នក​មិនទាន់​បាន​ជ្រើស​តម្លៃ​​​ ។ សូម​យក​ពួក​វា​ចេញ​ ឬ យក​អាគុយម៉ង់​មួយ​គ្រប់គ្រាន់​"
+"ហើយ​​ ។"
 
 #: modes/label.cc:411
 #, kde-format
@@ -2503,10 +2443,8 @@ msgid ""
 "objects. Kig cannot calculate this macro because of this. Please press Back, "
 "and construct the objects in the correct order..."
 msgstr ""
-"លទ្ធផល​មួយ​នៃ​​វត្ថុ​ជា​ច្រើន​​ដែល​អ្នក​បាន​ជ្រើស​មិន​អាច​ត្រូវ​បាន​គណនា​ពី​"
-"វត្ថុ​ដែល​បាន​ផ្ដល់​ឲ្យ​ឡើយ​ ។  Kig "
-"មិន​អាច​គណនា​ម៉ាក្រូ​នេះ​បាន​ឡើយ​​ដោយ​សារ​តែ​​បញ្ហា​នេះ​ ។ សូម​ចុច ត្រឡប់​ "
-"បន្ទាប់​មក​សង់​​វត្ថុ​ដែល​ត្រឹមត្រូវ​មួយ​..."
+"លទ្ធផល​មួយ​នៃ​​វត្ថុ​ជា​ច្រើន​​ដែល​អ្នក​បាន​ជ្រើស​មិន​អាច​ត្រូវ​បាន​គណនា​ពី​វត្ថុ​ដែល​បាន​ផ្ដល់​ឲ្យ​ឡើយ​ ។  Kig មិន​អាច​"
+"គណនា​ម៉ាក្រូ​នេះ​បាន​ឡើយ​​ដោយ​សារ​តែ​​បញ្ហា​នេះ​ ។ សូម​ចុច ត្រឡប់​ បន្ទាប់​មក​សង់​​វត្ថុ​ដែល​ត្រឹមត្រូវ​មួយ​..."
 
 #: modes/macro.cc:102
 msgid ""
@@ -2514,9 +2452,8 @@ msgid ""
 "objects.  This probably means you are expecting Kig to do something "
 "impossible.  Please check the macro and try again."
 msgstr ""
-"វត្ថុ​មួយ​ក្នុង​ចំណោម​វត្ថុ​ដែល​បាន​ផ្ដល់​ឲ្យ​មិន​ត្រូវ​បាន​ប្រើ​ក្នុង​ការ​គ"
-"ណនា​នៃ​វត្ថុ​លទ្ធ​ផល​ទេ ។  វា​ប្រហែល​ជា​មាន​ន័យ​ថា​អ្នក​កំពុង​រំពឹង​ឲ្យ Kig "
-"ធ្វើ​អ្វី​ដែល​មិន​អាច​ទៅ​រួច ។  សូម​ពិនិត្យ​ម៉ាក្រូ និង​ព្យាយាម​ម្ដង​ទៀត ។​"
+"វត្ថុ​មួយ​ក្នុង​ចំណោម​វត្ថុ​ដែល​បាន​ផ្ដល់​ឲ្យ​មិន​ត្រូវ​បាន​ប្រើ​ក្នុង​ការ​គណនា​នៃ​វត្ថុ​លទ្ធ​ផល​ទេ ។  វា​ប្រហែល​ជា​មាន​ន័យ​"
+"ថា​អ្នក​កំពុង​រំពឹង​ឲ្យ Kig ធ្វើ​អ្វី​ដែល​មិន​អាច​ទៅ​រួច ។  សូម​ពិនិត្យ​ម៉ាក្រូ និង​ព្យាយាម​ម្ដង​ទៀត ។​"
 
 #: modes/macrowizard.cc:50
 msgid "Given Objects"
@@ -2524,9 +2461,7 @@ msgstr "វត្ថុ​ដែល​បាន​ផ្ដល់​ឲ្យ​
 
 #: modes/macrowizard.cc:57
 msgid "Select the \"given\" objects for your new macro and press \"Next\"."
-msgstr ""
-"ជ្រើស​វត្ថុ\"ដែល​បាន​ផ្ដល់​ឲ្យ\" សម្រាប់​ម៉ាក្រូ​ថ្មីរបស់​អ្នក ហើយ ចុច "
-"\"បន្ទាប់\" ។​"
+msgstr "ជ្រើស​វត្ថុ\"ដែល​បាន​ផ្ដល់​ឲ្យ\" សម្រាប់​ម៉ាក្រូ​ថ្មីរបស់​អ្នក ហើយ ចុច \"បន្ទាប់\" ។​"
 
 #: modes/macrowizard.cc:90
 msgid "Final Object"
@@ -2708,9 +2643,9 @@ msgid ""
 "If you want to show variable parts, then put %1, %2, ... at the appropriate "
 "places (e.g. \"This segment is %1 units long.\")."
 msgstr ""
-"បញ្ចូល​អត្ថបទ​សម្រាប់​ស្លាក​របស់​អ្នក​នៅ​ទីនេះ ហើយ​ចុច \"បន្ទាប់\" "
-"។\nប្រសិន​បើ​អ្នក​ចង់​បង្ហាញ​ផ្នែក​ដែល​ប្រែ​ប្រួល​ អញ្ចឹង​សូម​បញ្ចូល​ %1 %2 "
-"... នៅ​ទី​ដែល​សមស្រប (ឧ. \"អង្កត់​បន្ទាត់​​នេះ​​មានប្រវែងខ្នាត​ %1 ​\") ។"
+"បញ្ចូល​អត្ថបទ​សម្រាប់​ស្លាក​របស់​អ្នក​នៅ​ទីនេះ ហើយ​ចុច \"បន្ទាប់\" ។\n"
+"ប្រសិន​បើ​អ្នក​ចង់​បង្ហាញ​ផ្នែក​ដែល​ប្រែ​ប្រួល​ អញ្ចឹង​សូម​បញ្ចូល​ %1 %2 ... នៅ​ទី​ដែល​សមស្រប (ឧ. \"អង្កត់​"
+"បន្ទាត់​​នេះ​​មានប្រវែងខ្នាត​ %1 ​\") ។"
 
 #: modes/textlabelwizard.cc:69
 msgid "Show text in a frame"
@@ -2726,10 +2661,8 @@ msgid ""
 "select an object and a property in the Kig window, and click finish when you "
 "are done..."
 msgstr ""
-"ឥឡូវ ​សូម​ជ្រើស​អាគុយម៉ង់​ដែល​អ្នក​ត្រូវការ ។  ចំពោះ​អាគុយម៉ង់​ទាំងអស់ "
-"គឺ​ត្រូវ​ចុច​លើ​វា រួច​ជ្រើស​វត្ថុ​មួយ និង "
-"លក្ខណ​សម្បត្តិ​មួយ​នៅ​ក្នុង​បង្អួច Kig  រួច​ហើយ​ចុច​ បញ្ចប់ "
-"នៅ​ពេល​ដែល​អ្នក​បាន​ធ្វើ​រួច..."
+"ឥឡូវ ​សូម​ជ្រើស​អាគុយម៉ង់​ដែល​អ្នក​ត្រូវការ ។  ចំពោះ​អាគុយម៉ង់​ទាំងអស់ គឺ​ត្រូវ​ចុច​លើ​វា រួច​ជ្រើស​វត្ថុ​មួយ និង "
+"លក្ខណ​សម្បត្តិ​មួយ​នៅ​ក្នុង​បង្អួច Kig  រួច​ហើយ​ចុច​ បញ្ចប់ នៅ​ពេល​ដែល​អ្នក​បាន​ធ្វើ​រួច..."
 
 #: modes/textlabelwizard.cc:123
 msgid "Construct Label"
@@ -2740,7 +2673,8 @@ msgid "Construct an angle through this point"
 msgstr "សង់​មុំ​តាម​ចំណុច​នេះ​​"
 
 #: objects/angle_type.cc:45
-msgid "Select a point that the first half-line of the angle should go through..."
+msgid ""
+"Select a point that the first half-line of the angle should go through..."
 msgstr "ជ្រើស​ចំណុច​ដែល​មាន​កន្លះ​បន្ទាត់​នៃ​មុំ​​ទីមួយ​​កាត់​តាម​..."
 
 #: objects/angle_type.cc:46
@@ -2752,7 +2686,8 @@ msgid "Select the point to construct the angle in..."
 msgstr "ជ្រើស​ចំណុច​សម្រាប់​សង់​មុំ​ក្នុង​..."
 
 #: objects/angle_type.cc:49
-msgid "Select a point that the second half-line of the angle should go through..."
+msgid ""
+"Select a point that the second half-line of the angle should go through..."
 msgstr "ជ្រើស​ចំណុច​ដែល​មាន​កន្លះ​បន្ទាត់​នៃ​មុំ​ទី​ពីរ​កាត់​តាម​..."
 
 #: objects/angle_type.cc:104
@@ -3076,7 +3011,8 @@ msgid "Construct a quadratic Bézier curve with this control point"
 msgstr "សង់​ខ្សែ​កោង​ Bézier ដឺក្រេ​ទី​ពីរ​តាម​​ចំណុច​គ្រប់​គ្រង​នេះ"
 
 #: objects/bezier_type.cc:41
-msgid "Select a point to be a control point of the new quadratic Bézier curve..."
+msgid ""
+"Select a point to be a control point of the new quadratic Bézier curve..."
 msgstr "ជ្រើស​ចំណុច​ដែល​ជា​ចំណុច​គ្រប់​គ្រង​នៃ​ខ្សែ​កោង​ Bézier ដឺក្រេ​ទី​ពីរ​ថ្មី​..."
 
 #: objects/bezier_type.cc:140
@@ -3479,9 +3415,7 @@ msgstr "សង់​បន្ទាត់​រ៉ាឌីកាល់​សម
 msgid ""
 "Select the first of the two conics of which you want to construct the "
 "radical line..."
-msgstr ""
-"ជ្រើស​សាជី​ទី​មួយ​ក្នុង​ចំណោម​សាជី​ទាំងពីរ​ដែល​អ្នក​ចង់​សង់​បន្ទាត់​រ៉ាឌីកាល"
-"់...​"
+msgstr "ជ្រើស​សាជី​ទី​មួយ​ក្នុង​ចំណោម​សាជី​ទាំងពីរ​ដែល​អ្នក​ចង់​សង់​បន្ទាត់​រ៉ាឌីកាល់...​"
 
 #: objects/conic_types.cc:550
 msgid ""
@@ -4504,7 +4438,8 @@ msgid "Intersect this polygon with another polygon"
 msgstr "ប្រសព្វ​​ពហុកោណ​នេះ​​ជា​មួយ​ពហុកោណ​ផ្សេង"
 
 #: objects/polygon_type.cc:829
-msgid "Select the polygon of which you want the intersection with another polygon..."
+msgid ""
+"Select the polygon of which you want the intersection with another polygon..."
 msgstr "ជ្រើស​ពហុកោណ​ដែល​អ្នក​​​ប្រសព្វ​ជា​មួយ​ពហុកោណ​​ពហុកោណ​ផ្សេង..."
 
 #: objects/polygon_type.cc:830
@@ -4692,7 +4627,8 @@ msgid "Check if this point has the same distance"
 msgstr "ពិនិត្យ​មើល​ថា​តើ ចំណុច​នេះ​មាន​ចម្ងាយ​ដូច​គ្នា​ដែរ​ឬទេ​"
 
 #: objects/tests_type.cc:302
-msgid "Select the point which might have the same distance from two other points..."
+msgid ""
+"Select the point which might have the same distance from two other points..."
 msgstr "ជ្រើស​ចំណុច​ដែល​​អាច​មាន​ចម្ងាយ​ដូច​គ្នា​​ពី​​ចំណុច​​ពី​រ​ផ្សេងទៀត​..."
 
 #: objects/tests_type.cc:303
@@ -5000,30 +4936,27 @@ msgid "Scale by this length"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​តាម​ប្រវែង​នេះ"
 
 #: objects/transform_types.cc:189 objects/transform_types.cc:276
-msgid "Select a length or a segment whose length is the factor of the scaling..."
-msgstr ""
-"ជ្រើស​ប្រវែង ឬ​អង្កត់​បន្ទាត់​​ដែល​​មាន​​ប្រវែង​​ជា​កត្តា​​សម្រាប់​​កា​រ​ធ្វ"
-"ើ​មាត្រដ្ឋាន..."
+msgid ""
+"Select a length or a segment whose length is the factor of the scaling..."
+msgstr "ជ្រើស​ប្រវែង ឬ​អង្កត់​បន្ទាត់​​ដែល​​មាន​​ប្រវែង​​ជា​កត្តា​​សម្រាប់​​កា​រ​ធ្វើ​មាត្រដ្ឋាន..."
 
 #: objects/transform_types.cc:231 objects/transform_types.cc:314
 msgid "Scale this length..."
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ប្រវែង​នេះ..."
 
 #: objects/transform_types.cc:232 objects/transform_types.cc:315
-msgid "Select the first of two lengths whose ratio is the factor of the scaling..."
-msgstr ""
-"ជ្រើស​ប្រវែង​​ពីរ​ដំបូង​​ដែល​មាន​ផល​ធៀប​​​​​ជា​កត្តា​​សម្រាប់​​ការ​ធ្វើ​មាត្"
-"រដ្ឋាន..."
+msgid ""
+"Select the first of two lengths whose ratio is the factor of the scaling..."
+msgstr "ជ្រើស​ប្រវែង​​ពីរ​ដំបូង​​ដែល​មាន​ផល​ធៀប​​​​​ជា​កត្តា​​សម្រាប់​​ការ​ធ្វើ​មាត្រដ្ឋាន..."
 
 #: objects/transform_types.cc:233 objects/transform_types.cc:316
 msgid "...to this other length"
 msgstr "...ជា​មួយ​​ប្រវែង​ផ្សេង​នេះ"
 
 #: objects/transform_types.cc:234 objects/transform_types.cc:317
-msgid "Select the second of two lengths whose ratio is the factor of the scaling..."
-msgstr ""
-"ជ្រើស​ប្រវែង​ទី​ពីរ​ចំនួន​ពីរ​ដែល​មាន​ផល​ធៀប​​របស់​វា​​​ជា​កត្តា​​សម្រាប់​​ក"
-"ារ​ធ្វើ​មាត្រដ្ឋាន...."
+msgid ""
+"Select the second of two lengths whose ratio is the factor of the scaling..."
+msgstr "ជ្រើស​ប្រវែង​ទី​ពីរ​ចំនួន​ពីរ​ដែល​មាន​ផល​ធៀប​​របស់​វា​​​ជា​កត្តា​​សម្រាប់​​ការ​ធ្វើ​មាត្រដ្ឋាន...."
 
 #: objects/transform_types.cc:272 objects/transform_types.cc:310
 msgid "Select the object to scale"
@@ -5118,7 +5051,8 @@ msgid "First of 3 starting points"
 msgstr "ចំណុច​ចាប់​ផ្ដើម​ ៣ ដំបូង"
 
 #: objects/transform_types.cc:474
-msgid "Select the first of the three starting points of the generic affinity..."
+msgid ""
+"Select the first of the three starting points of the generic affinity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់​ផ្ដើម​បី​ដំបូង​នៃ​សម្ព័ន្ធ​ទូទៅ..."
 
 #: objects/transform_types.cc:475
@@ -5126,7 +5060,8 @@ msgid "Second of 3 starting points"
 msgstr "ចំណុច​ចាប់​ផ្ដើម​ ៣ ទី​ពីរ"
 
 #: objects/transform_types.cc:476
-msgid "Select the second of the three starting points of the generic affinity..."
+msgid ""
+"Select the second of the three starting points of the generic affinity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់​ផ្ដើម​បី​ទីពីរ​នៃ​សម្ព័ន្ធ​ទូទៅ​..."
 
 #: objects/transform_types.cc:477
@@ -5134,7 +5069,8 @@ msgid "Third of 3 starting points"
 msgstr "ចំណុច​ចាប់​ផ្ដើម​ ៣ ទីបី"
 
 #: objects/transform_types.cc:478
-msgid "Select the third of the three starting points of the generic affinity..."
+msgid ""
+"Select the third of the three starting points of the generic affinity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់​ផ្ដើម​បី​ទី​បី​នៃ​សម្ព័ន្ធ​ទូទៅ​..."
 
 #: objects/transform_types.cc:479 objects/transform_types.cc:580
@@ -5190,7 +5126,8 @@ msgid "First of 4 starting points"
 msgstr "ចំណុច​ចាប់​ផ្ដើម​ ៤ ដំបូង"
 
 #: objects/transform_types.cc:573
-msgid "Select the first of the four starting points of the generic projectivity..."
+msgid ""
+"Select the first of the four starting points of the generic projectivity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់​ផ្ដើម​បួន​ដំបូង​សម្រាប់​​ចំណោល​ទូទៅ​..."
 
 #: objects/transform_types.cc:574
@@ -5198,7 +5135,8 @@ msgid "Second of 4 starting points"
 msgstr "ចំណុច​ចាប់​ផ្ដើម​ ៤ ទី​ពីរ"
 
 #: objects/transform_types.cc:575
-msgid "Select the second of the four starting points of the generic projectivity..."
+msgid ""
+"Select the second of the four starting points of the generic projectivity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់​ផ្ដើម​បួន​ទី​ពីរ​សម្រាប់​ចំណោល​ទូទៅ..."
 
 #: objects/transform_types.cc:576
@@ -5206,7 +5144,8 @@ msgid "Third of 4 starting points"
 msgstr "ចំណុច​ចាប់​ផ្ដើម​ ៤ ទីបី"
 
 #: objects/transform_types.cc:577
-msgid "Select the third of the four starting points of the generic projectivity..."
+msgid ""
+"Select the third of the four starting points of the generic projectivity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់​ផ្ដើម​បួន​ទី​បី​សម្រាប់​ចំណោល​ទូទៅ..."
 
 #: objects/transform_types.cc:578
@@ -5214,7 +5153,8 @@ msgid "Fourth of 4 starting points"
 msgstr "ចំណុច​ចាប់​ផ្ដើម​ ៤ ទី​បួន"
 
 #: objects/transform_types.cc:579
-msgid "Select the fourth of the four starting points of the generic projectivity..."
+msgid ""
+"Select the fourth of the four starting points of the generic projectivity..."
 msgstr "ជ្រើស​ចំណុច​ចាប់​ផ្ដើម​បួន​ទី​បួន​សម្រាប់​ចំណោល​ទូទៅ​..."
 
 #: objects/transform_types.cc:581
@@ -5294,7 +5234,8 @@ msgid "Apply a similitude mapping a point onto this point"
 msgstr "អនុវត្ត​ដំណូច​ដោយ​ផ្គូផ្គង​ចំណុច​ទៅ​លើ​ចំណុច​នេះ"
 
 #: objects/transform_types.cc:900
-msgid "Select the point onto which the similitude should map the first point..."
+msgid ""
+"Select the point onto which the similitude should map the first point..."
 msgstr "ជ្រើស​ចំណុច​ដែល​នឹង​ត្រូវ​ផ្គូផ្គង​ដំណូច​ទៅ​​ជា​មួយ​ចំណុច​ដំបូង​..."
 
 #: objects/vector_type.cc:26
@@ -5318,7 +5259,8 @@ msgid "Construct the vector sum of this vector and another one."
 msgstr "​សង់​ផលបូក​វ៉ិចទ័រ​សម្រាប់​​វ៉ិចទ័រ​នេះ និង​វ៉ិចទ័រ​​ផ្សេង​ទៀត ។"
 
 #: objects/vector_type.cc:62
-msgid "Select the first of the two vectors of which you want to construct the sum..."
+msgid ""
+"Select the first of the two vectors of which you want to construct the sum..."
 msgstr "ជ្រើស​វ៉ិចទ័រ​ពី​ដំបូង​ដែល​អ្នក​ចង់​សង​ផល​បូក​..."
 
 #: objects/vector_type.cc:63
@@ -5326,7 +5268,8 @@ msgid "Construct the vector sum of this vector and the other one."
 msgstr "សង់​ផលបូក​វ៉ិចទ័រ​សម្រាប់​វ៉ិចទ័រ​នេះ ​និង​វ៉ិចទ័រ​​ផ្សេង​ទៀត ។"
 
 #: objects/vector_type.cc:64
-msgid "Select the other of the two vectors of which you want to construct the sum..."
+msgid ""
+"Select the other of the two vectors of which you want to construct the sum..."
 msgstr "ជ្រើស​វ៉ិចទ័រ​ពីរ​ផ្សេង​ទៀត​ដែល​អ្នក​ចង់​សង់​ផល​បូក​..."
 
 #: objects/vector_type.cc:65
@@ -5346,8 +5289,8 @@ msgid ""
 "Select the argument objects (if any)\n"
 "in the Kig window and press \"Next\"."
 msgstr ""
-"ជ្រើស​វត្ថុ​អាគុយម៉ង់ (ប្រសិនបើ​មាន)\nនៅ​ក្នុង​បង្អួច​របស់ Kig ហើយ​ចុច "
-"\"បន្ទាប់\" ។​​"
+"ជ្រើស​វត្ថុ​អាគុយម៉ង់ (ប្រសិនបើ​មាន)\n"
+"នៅ​ក្នុង​បង្អួច​របស់ Kig ហើយ​ចុច \"បន្ទាប់\" ។​​"
 
 #: scripting/newscriptwizard.cc:79
 msgid "Enter Code"
@@ -5375,9 +5318,8 @@ msgid ""
 "The Python interpreter caught an error during the execution of your script. "
 "Please fix the script and click the Finish button again."
 msgstr ""
-"កម្មវិធី​បកប្រែ​ Python "
-"បាន​ចាប់​យក​កំហុស​កំឡុង​ពេល​ប្រតិបត្តិ​​ស្គ្រីប​របស់​អ្នក​ "
-"។​សូម​ជួសជុល​ស្គ្រីប​ហើយ ចុច​លើ​ប៊ូតុង​បញ្ចប់​ម្តង​ទៀត​ ។"
+"កម្មវិធី​បកប្រែ​ Python បាន​ចាប់​យក​កំហុស​កំឡុង​ពេល​ប្រតិបត្តិ​​ស្គ្រីប​របស់​អ្នក​ ។​សូម​ជួសជុល​ស្គ្រីប​ហើយ ចុច​លើ​ប៊ូតុង​"
+"បញ្ចប់​ម្តង​ទៀត​ ។"
 
 #: scripting/script_mode.cc:209 scripting/script_mode.cc:351
 #, kde-format
@@ -5385,8 +5327,8 @@ msgid ""
 "The Python Interpreter generated the following error output:\n"
 "%1"
 msgstr ""
-"កម្មវិធី​បកប្រែ​ Python  ត្រូវ​បាន​បង្កើត​តាម​ទិន្នផល​កំហុស​ដូច​ខាងក្រោម​ "
-"៖​\n%1​"
+"កម្មវិធី​បកប្រែ​ Python  ត្រូវ​បាន​បង្កើត​តាម​ទិន្នផល​កំហុស​ដូច​ខាងក្រោម​ ៖​\n"
+"%1​"
 
 #: scripting/script_mode.cc:214
 msgid ""
@@ -5394,10 +5336,8 @@ msgid ""
 "no errors, but the script does not generate a valid object. Please fix the "
 "script, and click the Finish button again."
 msgstr ""
-"ស្គ្រីប​របស់​អ្នក​ហាក់​បី​ដូចជា​មាន​កំហុស ។ កម្មវិធី​បកប្រែ​ Python "
-"បាន​រាយការណ៍​ថា​គ្មាន​កំហុស​ "
-"ប៉ុន្តែ​ស្គ្រីប​មិន​បាន​បង្កើត​វត្ថុ​ដែល​ត្រឹមត្រូវ​​ឡើយ​​ ។ "
-"សូម​ជួសជុល​ស្គ្រីប​ ហើយ​ចុច​លើ​ប៊ូតុង​បញ្ចប់​ម្ដងទៀត​ ។​"
+"ស្គ្រីប​របស់​អ្នក​ហាក់​បី​ដូចជា​មាន​កំហុស ។ កម្មវិធី​បកប្រែ​ Python បាន​រាយការណ៍​ថា​គ្មាន​កំហុស​ ប៉ុន្តែ​ស្គ្រីប​មិន​"
+"បាន​បង្កើត​វត្ថុ​ដែល​ត្រឹមត្រូវ​​ឡើយ​​ ។ សូម​ជួសជុល​ស្គ្រីប​ ហើយ​ចុច​លើ​ប៊ូតុង​បញ្ចប់​ម្ដងទៀត​ ។​"
 
 #: scripting/script_mode.cc:317
 msgctxt "'Edit' is a verb"
@@ -5413,9 +5353,8 @@ msgid ""
 "The Python interpreter caught an error during the execution of your script. "
 "Please fix the script."
 msgstr ""
-"កម្មវិធី​បកប្រែ​ Python "
-"បាន​ចាប់​យក​កំហុស​កំឡុង​ពេល​ប្រតិបត្តិ​​ស្គ្រីប​របស់​អ្នក​ ។​ "
-"សូម​ជួសជុល​ស្គ្រីប​ហើយ ចុច​លើ​ប៊ូតុង​បញ្ចប់​ម្ដងទៀត​ ។"
+"កម្មវិធី​បកប្រែ​ Python បាន​ចាប់​យក​កំហុស​កំឡុង​ពេល​ប្រតិបត្តិ​​ស្គ្រីប​របស់​អ្នក​ ។​ សូម​ជួសជុល​ស្គ្រីប​ហើយ ចុច​លើ​ប៊ូតុង​"
+"បញ្ចប់​ម្ដងទៀត​ ។"
 
 #: scripting/script_mode.cc:356
 msgid ""
@@ -5423,10 +5362,8 @@ msgid ""
 "no errors, but the script does not generate a valid object. Please fix the "
 "script."
 msgstr ""
-"ស្គ្រីប​របស់​អ្នក​ហាក់​បី​ដូចជា​មាន​កំហុស ។ កម្មវិធី​បកប្រែ​ Python "
-"បាន​រាយការណ៍​ថា​គ្មាន​កំហុស​ "
-"ប៉ុន្តែ​ស្គ្រីប​មិន​បាន​បង្កើត​វត្ថុ​ដែល​ត្រឹមត្រូវ​​​ឡើយ​​ ។ "
-"សូម​ជួសជុល​ស្គ្រីប​ ហើយ​ចុច​លើ​ប៊ូតុង​បញ្ចប់​ម្ដងទៀត​ ។​"
+"ស្គ្រីប​របស់​អ្នក​ហាក់​បី​ដូចជា​មាន​កំហុស ។ កម្មវិធី​បកប្រែ​ Python បាន​រាយការណ៍​ថា​គ្មាន​កំហុស​ ប៉ុន្តែ​ស្គ្រីប​មិន​"
+"បាន​បង្កើត​វត្ថុ​ដែល​ត្រឹមត្រូវ​​​ឡើយ​​ ។ សូម​ជួសជុល​ស្គ្រីប​ ហើយ​ចុច​លើ​ប៊ូតុង​បញ្ចប់​ម្ដងទៀត​ ។​"
 
 #: kig/kig_commands.cpp:100
 #, kde-format
@@ -5442,9 +5379,7 @@ msgstr[0] "បន្ថែម​វត្ថុ %1"
 
 #: kig/kig.cpp:90
 msgid "Could not find the necessary Kig library, check your installation."
-msgstr ""
-"រក​មិន​ឃើញ​​បណ្ណាល័យ​ចាំបាច់​របស់​ Kig ​ទេ​​ សូម​ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក "
-"។​"
+msgstr "រក​មិន​ឃើញ​​បណ្ណាល័យ​ចាំបាច់​របស់​ Kig ​ទេ​​ សូម​ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក ។​"
 
 #: kig/kig.cpp:203
 #, kde-format
@@ -5619,8 +5554,8 @@ msgid ""
 "The file \"%1\" you tried to open does not exist. Please verify that you "
 "entered the correct path."
 msgstr ""
-"ឯកសារ​ \"%1\" ដែល​អ្នក​ព្យាយាម​បើក​មិន​ទាន់​មាន​​នៅ​ឡើយ​ទេ​ ។ "
-"សូម​ផ្ទៀងផ្ទាត់​ថា​អ្នក​បាន​បញ្ចូល​ផ្លូវ​ត្រឹមត្រូវ​  ។​"
+"ឯកសារ​ \"%1\" ដែល​អ្នក​ព្យាយាម​បើក​មិន​ទាន់​មាន​​នៅ​ឡើយ​ទេ​ ។ សូម​ផ្ទៀងផ្ទាត់​ថា​អ្នក​បាន​បញ្ចូល​ផ្លូវ​"
+"ត្រឹមត្រូវ​  ។​"
 
 #: kig/kig_part.cpp:392
 msgid "File Not Found"
@@ -5634,11 +5569,9 @@ msgid ""
 "implementing support for, you can always ask us nicely on mailto:pino@kde."
 "org or do the work yourself and send me a patch."
 msgstr ""
-"អ្នក​បាន​ព្យាយាម​បើក​ឯកសារ​ប្រភេទ \"%1\" ជា​អកុសល Kig "
-"មិន​គាំទ្រ​ទ្រង់ទ្រាយ​នេះ​ទេ ។ ប្រសិនបើ​​អ្នក​គិត​ថា​ទ្រង់ទ្រាយ​នៅ​ក្នុង​សំណ"
-"ួរ​នឹង​មាន​តម្លៃ​ក្នុង​ការ​អនុវត្ត​ការ​គាំទ្រ​ "
-"អ្នក​អាច​សួរ​យើង​បាន​ជានិច្ច​តាម​រយៈ​​ mailto:pino@kde.org "
-"ឬ​ធ្វើ​ដោយ​ខ្លួន​ឯង និង​ផ្ញើ​បំណះ​មក​ឲ្យ​ខ្ញុំ ។​"
+"អ្នក​បាន​ព្យាយាម​បើក​ឯកសារ​ប្រភេទ \"%1\" ជា​អកុសល Kig មិន​គាំទ្រ​ទ្រង់ទ្រាយ​នេះ​ទេ ។ ប្រសិនបើ​​អ្នក​គិត​"
+"ថា​ទ្រង់ទ្រាយ​នៅ​ក្នុង​សំណួរ​នឹង​មាន​តម្លៃ​ក្នុង​ការ​អនុវត្ត​ការ​គាំទ្រ​ អ្នក​អាច​សួរ​យើង​បាន​ជានិច្ច​តាម​រយៈ​​ "
+"mailto:pino@kde.org ឬ​ធ្វើ​ដោយ​ខ្លួន​ឯង និង​ផ្ញើ​បំណះ​មក​ឲ្យ​ខ្ញុំ ។​"
 
 #: kig/kig_part.cpp:416 kig/kig_part.cpp:459
 msgid "Format Not Supported"
@@ -5649,8 +5582,8 @@ msgid ""
 "Kig does not support saving to any other file format than its own. Save to "
 "Kig's format instead?"
 msgstr ""
-"Kig មិន​គាំទ្រ​ការ​រក្សាទុក​ជា​ទ្រង់ទ្រាយ​ឯកសារ​ផ្សេង​ទៀត​​ក្រៅ​ពី​ទ្រង់ទ្រា"
-"យ​ផ្ទាល់​របស់​វា​ឡើយ​ ។ រក្សា​ទុក​ទៅ​ទ្រង់ទ្រាយ​របស់  Kig ​​ឬ?"
+"Kig មិន​គាំទ្រ​ការ​រក្សាទុក​ជា​ទ្រង់ទ្រាយ​ឯកសារ​ផ្សេង​ទៀត​​ក្រៅ​ពី​ទ្រង់ទ្រាយ​ផ្ទាល់​របស់​វា​ឡើយ​ ។ រក្សា​ទុក​ទៅ​"
+"ទ្រង់ទ្រាយ​របស់  Kig ​​ឬ?"
 
 #: kig/kig_part.cpp:459
 msgid "Save Kig Format"
@@ -5709,8 +5642,8 @@ msgid ""
 "Select the zoom area by entering the coordinates<br />of the upper left "
 "corner and the lower right corner."
 msgstr ""
-"ជ្រើស​ផ្ទៃ​ពង្រីក​ដោយ​បញ្ចូល​កូអរដោនេ​<br "
-"/>របស់​ជ្រុង​ខាង​ឆ្វេង​ផ្នែក​ខាង​លើ​ និង​ជ្រុង​ខាង​ស្ដាំ​ផ្នែក​ខាង​ក្រោម ។"
+"ជ្រើស​ផ្ទៃ​ពង្រីក​ដោយ​បញ្ចូល​កូអរដោនេ​<br />របស់​ជ្រុង​ខាង​ឆ្វេង​ផ្នែក​ខាង​លើ​ និង​ជ្រុង​ខាង​ស្ដាំ​ផ្នែក​ខាង​ក្រោម "
+"។"
 
 #: kig/main.cpp:98
 msgid "Kig"
@@ -5721,18 +5654,16 @@ msgid ""
 "Do not show a GUI. Convert the specified file to the native Kig format. "
 "Output goes to stdout unless --outfile is specified."
 msgstr ""
-"កុំ​បង្ហាញ​ GUI ។​ "
-"បម្លែង​ឯកសារ​ដែល​បាន​បញ្ជាក់​ទៅ​ជា​ទ្រង់ទ្រាយ​ដើម​របស់​Kig  ។  "
-"លទ្ធផល​នឹង​បញ្ជូន​​ទៅ​កាន់ stdout លុះ​ត្រា​តែ​ --outfile ត្រូវ​​បាន​បញ្ជាក់ "
-"។​"
+"កុំ​បង្ហាញ​ GUI ។​ បម្លែង​ឯកសារ​ដែល​បាន​បញ្ជាក់​ទៅ​ជា​ទ្រង់ទ្រាយ​ដើម​របស់​Kig  ។  លទ្ធផល​នឹង​បញ្ជូន​​ទៅ​កាន់ "
+"stdout លុះ​ត្រា​តែ​ --outfile ត្រូវ​​បាន​បញ្ជាក់ ។​"
 
 #: kig/main.cpp:106
 msgid ""
 "File to output the created native file to. '-' means output to stdout. "
 "Default is stdout as well."
 msgstr ""
-"ឯកសារ​​សម្រាប់​បង្ហាញ​​ឯកសារ​ដើម​ដែល​បាន​បង្កើត ។ '-' មាន​ន័យ​ថា​បង្ហាញ​​ទៅ​ "
-"stdout ។ លំនាំ​ដើម​គឺ stdout ផង​ដែរ ។"
+"ឯកសារ​​សម្រាប់​បង្ហាញ​​ឯកសារ​ដើម​ដែល​បាន​បង្កើត ។ '-' មាន​ន័យ​ថា​បង្ហាញ​​ទៅ​ stdout ។ លំនាំ​ដើម​គឺ "
+"stdout ផង​ដែរ ។"
 
 #: kig/main.cpp:107
 msgid "Document to open"
@@ -5743,32 +5674,32 @@ msgid ""
 "Enter coordinates in the following format: \"x;y\",\n"
 "where x is the x coordinate, and y is the y coordinate."
 msgstr ""
-"បញ្ចូល​កូអរដោនេ​​ក្នុង​ទ្រង់ទ្រាយ​ដូច​ខាងក្រោម​ ៖  \"x;y\"\nដែល​ x ​ "
-"ជា​កូអរដោនេ​ x ​ ហើយ​  y ជា​កូអរដោនេ​នៃ​ y  ។​"
+"បញ្ចូល​កូអរដោនេ​​ក្នុង​ទ្រង់ទ្រាយ​ដូច​ខាងក្រោម​ ៖  \"x;y\"\n"
+"ដែល​ x ​ ជា​កូអរដោនេ​ x ​ ហើយ​  y ជា​កូអរដោនេ​នៃ​ y  ។​"
 
 #: misc/coordinate_system.cpp:333
 msgid ""
 "Enter coordinates in the following format: <b>\"x;y\"</b>,<br />where x is "
 "the x coordinate, and y is the y coordinate."
 msgstr ""
-"បញ្ចូល​កូអរដោនេ​នៅ​ក្នុង​ទ្រង់​ទ្រាយ​ដូច​ខាង​ក្រោម​ ៖ <b>\"x;y\"</b><br />ដែល​ "
-"x គឺ​ជា​កូអរដោនេ​ x ហើយ​ y គឺ​ជា​កូអរដោនេ​ y ។"
+"បញ្ចូល​កូអរដោនេ​នៅ​ក្នុង​ទ្រង់​ទ្រាយ​ដូច​ខាង​ក្រោម​ ៖ <b>\"x;y\"</b><br />ដែល​ x គឺ​ជា​កូអរដោនេ​ x "
+"ហើយ​ y គឺ​ជា​កូអរដោនេ​ y ។"
 
 #: misc/coordinate_system.cpp:375
 msgid ""
 "Enter coordinates in the following format: \"r; θ°\",\n"
 "where r and θ are the polar coordinates."
 msgstr ""
-"បញ្ចូល​កូអរដោនេ​នៅ​ក្នុង​ទ្រង់​ទ្រាយ​ដូច​ខាង​ក្រោម​ ៖ \"r; θ°\"\nដែល​ r និង​ θ "
-"គឺ​ជា​កូអរដោនេ​ប៉ូលែ ។"
+"បញ្ចូល​កូអរដោនេ​នៅ​ក្នុង​ទ្រង់​ទ្រាយ​ដូច​ខាង​ក្រោម​ ៖ \"r; θ°\"\n"
+"ដែល​ r និង​ θ គឺ​ជា​កូអរដោនេ​ប៉ូលែ ។"
 
 #: misc/coordinate_system.cpp:382
 msgid ""
 "Enter coordinates in the following format: <b>\"r; θ°\"</b>,<br />where r "
 "and θ are the polar coordinates."
 msgstr ""
-"បញ្ចូល​កូអរដោនេ​នៅ​ក្នុង​ទ្រង់ទ្រាយ​ដូច​ខាងក្រោម​ ៖  <b>\"r; θ°\"</b> ដែល r "
-"នឹង  θ ជា​កូអរដោនេ​​ប៉ូលែ​​ ។​"
+"បញ្ចូល​កូអរដោនេ​នៅ​ក្នុង​ទ្រង់ទ្រាយ​ដូច​ខាងក្រោម​ ៖  <b>\"r; θ°\"</b> ដែល r នឹង  θ ជា​កូអរដោនេ​​"
+"ប៉ូលែ​​ ។​"
 
 #: misc/coordinate_system.cpp:534
 msgid "&Euclidean"
@@ -5833,11 +5764,9 @@ msgid ""
 "There is more than one type selected. You can only edit one type at a time. "
 "Please select only the type you want to edit and try again."
 msgstr ""
-"មាន​ប្រភេទ​ច្រើន​ជាង​មួយ​ដែល​ត្រូវ​បាន​ជ្រើស​ ។  "
-"អ្នក​អាច​កែសម្រួល​ប្រភេទ​មួយ​ក្នុង​ពេល​តែ​មួយបាន​​ ។ "
-"សូម​ជ្រើស​​តែ​ប្រភេទ​​ណា​មួយ​ដែល​អ្នក​ចង់​កែសម្រួល​​​ រួច​ព្យាយាម​ម្ដងទៀត​ ។"
+"មាន​ប្រភេទ​ច្រើន​ជាង​មួយ​ដែល​ត្រូវ​បាន​ជ្រើស​ ។  អ្នក​អាច​កែសម្រួល​ប្រភេទ​មួយ​ក្នុង​ពេល​តែ​មួយបាន​​ ។ សូម​ជ្រើស​​តែ​"
+"ប្រភេទ​​ណា​មួយ​ដែល​អ្នក​ចង់​កែសម្រួល​​​ រួច​ព្យាយាម​ម្ដងទៀត​ ។"
 
 #: modes/typesdialog.cpp:497
 msgid "More Than One Type Selected"
 msgstr "មាន​ប្រភេទ​ច្រើន​ជាង​មួយ​ត្រូវ​បាន​ជ្រើស"
-
