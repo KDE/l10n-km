@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-25 03:57+0200\n"
+"POT-Creation-Date: 2011-07-26 04:06+0200\n"
 "PO-Revision-Date: 2010-11-16 14:03+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -3089,7 +3089,7 @@ msgstr "រាយការណ៍​កំហុស​..."
 #: dialogs/transferdialog.cpp:88 dialogs/FilenameLayoutDialog.cpp:230
 #: dialogs/FilenameLayoutDialog.cpp:591 musicbrainz/MusicBrainzTags.cpp:359
 #: playlist/PlaylistModel.cpp:902 services/jamendo/JamendoInfoParser.cpp:51
-#: services/lastfm/LastFmService.cpp:524
+#: services/lastfm/LastFmService.cpp:507
 #: services/magnatune/MagnatuneStore.cpp:218
 #: widgets/SmartPlaylistEditor.cpp:183 widgets/SmartPlaylistEditor.cpp:197
 msgid "Artist"
@@ -9600,15 +9600,14 @@ msgctxt ""
 msgid "m:ss"
 msgstr "h:mm:ss"
 
-#: core/meta/support/MetaUtility.cpp:401
-#, fuzzy
-msgctxt ""
-"the time format for a time length when the time is 1 day or above see "
-"QDateTime documentation."
-msgid "d:hh:mm:ss"
-msgstr "h:mm:ss"
+#: core/meta/support/MetaUtility.cpp:406
+#, fuzzy, kde-format
+msgctxt "number of days with spacing for the pretty time"
+msgid "%1 day, "
+msgid_plural "%1 days, "
+msgstr[0] "ប្លង់ %1 "
 
-#: core/meta/support/MetaUtility.cpp:403
+#: core/meta/support/MetaUtility.cpp:407
 #, fuzzy
 msgctxt ""
 "the time format for a time length when the time is 1 hour or above see QTime "
@@ -9616,7 +9615,7 @@ msgctxt ""
 msgid "h:mm:ss"
 msgstr "h:mm:ss"
 
-#: core/meta/support/MetaUtility.cpp:416
+#: core/meta/support/MetaUtility.cpp:421
 #, fuzzy, kde-format
 #| msgid "year"
 msgctxt "number of years for the pretty time"
@@ -9624,7 +9623,7 @@ msgid "%1 year"
 msgid_plural "%1 years"
 msgstr[0] "ឆ្នាំ"
 
-#: core/meta/support/MetaUtility.cpp:418
+#: core/meta/support/MetaUtility.cpp:423
 #, fuzzy, kde-format
 #| msgid "months"
 msgctxt "number of months for the pretty time"
@@ -9632,14 +9631,14 @@ msgid "%1 month"
 msgid_plural "%1 months"
 msgstr[0] "ខែ​"
 
-#: core/meta/support/MetaUtility.cpp:420
+#: core/meta/support/MetaUtility.cpp:425
 #, fuzzy, kde-format
 msgctxt "number of days for the pretty time"
 msgid "%1 day"
 msgid_plural "%1 days"
 msgstr[0] "ប្លង់ %1 "
 
-#: core/meta/support/MetaUtility.cpp:422
+#: core/meta/support/MetaUtility.cpp:427
 #, fuzzy, kde-format
 #| msgid "Hours"
 msgctxt "number of hours for the pretty time"
@@ -9647,14 +9646,14 @@ msgid "%1 hour"
 msgid_plural "%1 hours"
 msgstr[0] "ម៉ោង"
 
-#: core/meta/support/MetaUtility.cpp:424
+#: core/meta/support/MetaUtility.cpp:429
 #, fuzzy, kde-format
 msgctxt "number of minutes for the pretty time"
 msgid "%1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] "នាទី"
 
-#: core/meta/support/MetaUtility.cpp:426
+#: core/meta/support/MetaUtility.cpp:431
 #, fuzzy, kde-format
 #| msgid "Seconds"
 msgctxt "number of seconds for the pretty time"
@@ -13565,6 +13564,13 @@ msgstr "វិទ្យុ​ផ្ទាល់ខ្លួន​របស់​
 msgid "Play Similar Artists from Last.fm"
 msgstr "ចាក់​សិល្បករ​ដែល​ស្រដៀង​គ្នា​ពី Last.fm"
 
+#: services/lastfm/ScrobblerAdapter.cpp:236
+#: services/lastfm/LastFmService.cpp:543
+#, kde-format
+msgctxt "As in, lastfm"
+msgid "Loved Track: %1"
+msgstr "បទ​ដែល​ជា​ទី​ពេញចិត្ត ៖ %1"
+
 #: services/lastfm/LastFmService.cpp:195
 msgid "Last.fm: The social music revolution"
 msgstr "Last.fm ៖ បដិវត្តន៍​តន្ត្រី​សង្គម ។"
@@ -13633,28 +13639,17 @@ msgid "Play Count: %1 play"
 msgid_plural "Play Count: %1 plays"
 msgstr[0] "ចំនួន​ចាក់ ៖ "
 
-#: services/lastfm/LastFmService.cpp:465
-msgid "Enter login information for Last.fm"
-msgstr "បញ្ចូលព័ត៌មាន​ចូល​ពី Last.fm"
-
-#: services/lastfm/LastFmService.cpp:521
+#: services/lastfm/LastFmService.cpp:504
 msgid "Create a Custom Last.fm Station"
 msgstr "បង្កើត​ស្ថានីយ​ Last.fm ផ្ទាល់​មួយ"
 
-#: services/lastfm/LastFmService.cpp:524
+#: services/lastfm/LastFmService.cpp:507
 msgid "Tag"
 msgstr "ស្លាក"
 
-#: services/lastfm/LastFmService.cpp:524
+#: services/lastfm/LastFmService.cpp:507
 msgid "User"
 msgstr "អ្នក​ប្រើ"
-
-#: services/lastfm/LastFmService.cpp:560
-#: services/lastfm/ScrobblerAdapter.cpp:236
-#, kde-format
-msgctxt "As in, lastfm"
-msgid "Loved Track: %1"
-msgstr "បទ​ដែល​ជា​ទី​ពេញចិត្ត ៖ %1"
 
 #: services/magnatune/MagnatuneCollectionLocation.cpp:42
 msgid "Preview Tracks"
@@ -15513,6 +15508,16 @@ msgstr "ចំនួន​ចាក់"
 #| msgid "Last played"
 msgid "Last played: %1"
 msgstr "បាន​ចាក់​ចុងក្រោយ"
+
+#, fuzzy
+#~ msgctxt ""
+#~ "the time format for a time length when the time is 1 day or above see "
+#~ "QDateTime documentation."
+#~ msgid "d:hh:mm:ss"
+#~ msgstr "h:mm:ss"
+
+#~ msgid "Enter login information for Last.fm"
+#~ msgstr "បញ្ចូលព័ត៌មាន​ចូល​ពី Last.fm"
 
 #, fuzzy
 #~ msgid "Multiple background tasks running"
