@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-07-26 03:52+0200\n"
+"POT-Creation-Date: 2011-07-27 03:41+0200\n"
 "PO-Revision-Date: 2010-06-29 10:05+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -132,6 +132,24 @@ msgstr "មិន​អាច​ផ្ទុក​កម្មវិធី​ជ
 msgctxt "database connection"
 msgid "(connection %1)"
 msgstr "(ការ​តភ្ជាប់ %1)"
+
+#: core/KexiWindow.cpp:612
+msgid ""
+"Design has been changed. You must save it before switching to other view."
+msgstr "ការ​រចនា​ត្រូវ​បាន​ផ្លាស់ប្ដូរ ។ អ្នក​ត្រូវ​តែ​រក្សាទុក​វា​មុន​នឹង​ប្ដូរ​ទៅ​ទិដ្ឋភាព​ផ្សេង ។"
+
+#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
+#, kde-format
+msgid "Switching to other view failed (%1)."
+msgstr "បាន​បរាជ័យ​ក្នុងការ​ទៅ​ទិដ្ឋភាព​ផ្សេង (%1) ។"
+
+#: core/KexiWindow.cpp:859
+msgid "Saving object's definition failed."
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​​រក្សា​ទុក​ការ​កំណត់​របស់​វត្ថុ ។"
+
+#: core/KexiWindow.cpp:943
+msgid "Saving object's data failed."
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រក្សាទុក​ទិន្នន័យ​របស់​វត្ថុ ។"
 
 #: core/kexicmdlineargs.h:32
 msgid "Options related to entire projects:"
@@ -878,24 +896,6 @@ msgstr ""
 "evannak@khmeros.info,piseth_dv@khmeros.info,ratana@khmeros.info,"
 "sophea@khmeros.info"
 
-#: core/KexiWindow.cpp:612
-msgid ""
-"Design has been changed. You must save it before switching to other view."
-msgstr "ការ​រចនា​ត្រូវ​បាន​ផ្លាស់ប្ដូរ ។ អ្នក​ត្រូវ​តែ​រក្សាទុក​វា​មុន​នឹង​ប្ដូរ​ទៅ​ទិដ្ឋភាព​ផ្សេង ។"
-
-#: core/KexiWindow.cpp:677 main/KexiMainWindow.cpp:3582
-#, kde-format
-msgid "Switching to other view failed (%1)."
-msgstr "បាន​បរាជ័យ​ក្នុងការ​ទៅ​ទិដ្ឋភាព​ផ្សេង (%1) ។"
-
-#: core/KexiWindow.cpp:859
-msgid "Saving object's definition failed."
-msgstr "បាន​បរាជ័យ​ក្នុង​ការ​​រក្សា​ទុក​ការ​កំណត់​របស់​វត្ថុ ។"
-
-#: core/KexiWindow.cpp:943
-msgid "Saving object's data failed."
-msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រក្សាទុក​ទិន្នន័យ​របស់​វត្ថុ ។"
-
 #: core/kexi.cpp:122
 msgid "&No View"
 msgstr "គ្មាន​ទិដ្ឋភាព"
@@ -933,7 +933,8 @@ msgstr "state_sql"
 #| msgid ""
 #| "You can correct data in this row or use \"Cancel row changes\" function."
 msgid ""
-"You can correct data in this row or use \"Cancel record changes\" function."
+"You can correct data in this record or use \"Cancel record changes\" "
+"function."
 msgstr "អ្នក​អាច​កែ​ទិន្នន័យ​នៅ​ក្នុងជួរដេក​នេះ ឬ​ប្រើអនុគមន៍ \"បោះបោះង់​ការ​ផ្លាស់ប្ដូរ​ជួរដេក\" ។"
 
 #: core/kexi.cpp:313
@@ -2768,22 +2769,6 @@ msgstr "យក​​ទំព័រ​​ចេញ​"
 msgid "file"
 msgstr "ឯកសារ"
 
-#: kexidb/cursor.cpp:145
-msgid "No query statement or schema defined."
-msgstr "គ្មាន​សេចក្ដី​ថ្លែងការណ៍​សំណួរ ឬ​គ្រោងការណ៍​បាន​កំណត់ ។"
-
-#: kexidb/cursor.cpp:155
-msgid "Query statement is empty."
-msgstr "សេចក្ដី​ថ្លែងការណ៍​សំណួរ​គឺ​ទទេ ។"
-
-#: kexidb/cursor.cpp:165
-msgid "Error opening database cursor."
-msgstr "កំហុស​ក្នុងការ​បើក​ទស្សន៍ទ្រនិច​មូលដ្ឋាន​ទិន្នន័យ ។"
-
-#: kexidb/cursor.cpp:410 kexidb/cursor.cpp:433
-msgid "Cannot fetch next record."
-msgstr "មិនអាច​ទៅ​យក​កំណត់​ត្រា​បន្ទាប់​បាន​ទេ ។"
-
 #: kexidb/dbobjectnamevalidator.cpp:46
 #, kde-format
 msgid ""
@@ -3660,6 +3645,22 @@ msgstr "បាន​បរាជ័យ​ក្នុង​ការ​លុប
 msgctxt "short for 'expression' word, e.g. 'expr' (only latin letters, please)"
 msgid "expr"
 msgstr "expr"
+
+#: kexidb/cursor.cpp:145
+msgid "No query statement or schema defined."
+msgstr "គ្មាន​សេចក្ដី​ថ្លែងការណ៍​សំណួរ ឬ​គ្រោងការណ៍​បាន​កំណត់ ។"
+
+#: kexidb/cursor.cpp:155
+msgid "Query statement is empty."
+msgstr "សេចក្ដី​ថ្លែងការណ៍​សំណួរ​គឺ​ទទេ ។"
+
+#: kexidb/cursor.cpp:165
+msgid "Error opening database cursor."
+msgstr "កំហុស​ក្នុងការ​បើក​ទស្សន៍ទ្រនិច​មូលដ្ឋាន​ទិន្នន័យ ។"
+
+#: kexidb/cursor.cpp:410 kexidb/cursor.cpp:433
+msgid "Cannot fetch next record."
+msgstr "មិនអាច​ទៅ​យក​កំណត់​ត្រា​បន្ទាប់​បាន​ទេ ។"
 
 #: kexiutils/identifier.cpp:92
 #, kde-format
@@ -7342,26 +7343,6 @@ msgstr "ការ​ផ្លាស់ប្ដូរ​ត្រឹមត្រ
 msgid "Discard Changes"
 msgstr "បោះបង់​ការ​ផ្លាស់ប្ដូរ"
 
-#: widget/tableview/kexitableview.cpp:120
-#, fuzzy
-#| msgid "Contains a pointer to the currently selected row"
-msgid "Contains a pointer to the currently selected record"
-msgstr "មាន​ទ្រនិច​ទៅ​​ជួរដេក​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន"
-
-#: widget/tableview/kexitableview.cpp:122
-#, fuzzy
-#| msgid "Row navigator"
-msgid "Record navigator"
-msgstr "កម្មវិធី​រុករក​ជួរដេក"
-
-#: widget/tableview/kexitableview.cpp:242
-msgid "Add Record"
-msgstr "បន្ថែម​កំណត់​ត្រា"
-
-#: widget/tableview/kexitableview.cpp:245
-msgid "Remove Record"
-msgstr "យក​កំណត់​ត្រា​ចេញ"
-
 #: widget/tableview/kexitableviewdata.cpp:596
 #: widget/tableview/kexitableviewdata.cpp:607
 #, kde-format
@@ -7385,6 +7366,26 @@ msgstr "បាន​បរាជ័យ​ក្នុងកា​រផ្លា
 #| msgid "Row deleting failed."
 msgid "Record deleting failed."
 msgstr "បាន​បរាជ័យ​ក្នុងការ​លុប​ជួរដេក ។"
+
+#: widget/tableview/kexitableview.cpp:120
+#, fuzzy
+#| msgid "Contains a pointer to the currently selected row"
+msgid "Contains a pointer to the currently selected record"
+msgstr "មាន​ទ្រនិច​ទៅ​​ជួរដេក​ដែល​បាន​ជ្រើស​បច្ចុប្បន្ន"
+
+#: widget/tableview/kexitableview.cpp:122
+#, fuzzy
+#| msgid "Row navigator"
+msgid "Record navigator"
+msgstr "កម្មវិធី​រុករក​ជួរដេក"
+
+#: widget/tableview/kexitableview.cpp:242
+msgid "Add Record"
+msgstr "បន្ថែម​កំណត់​ត្រា"
+
+#: widget/tableview/kexitableview.cpp:245
+msgid "Remove Record"
+msgstr "យក​កំណត់​ត្រា​ចេញ"
 
 #: widget/utils/kexidatetimeformatter.cpp:303
 msgid "pm"
