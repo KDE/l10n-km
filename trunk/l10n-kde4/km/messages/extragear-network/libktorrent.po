@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-02 05:00+0200\n"
+"POT-Creation-Date: 2011-08-20 02:37+0200\n"
 "PO-Revision-Date: 2011-06-14 10:06+0700\n"
 "Last-Translator: Chan Sambathratanak <ratanak@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -68,6 +68,14 @@ msgstr "មិន​អាច​បង្កើត​​ %1 ទៅជា​ច�
 msgid "Torrent is incomplete."
 msgstr "Torrent មិន​ពេញ​លេញ​ ។"
 
+#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
+#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
+#: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "មិន​អាច​បើក​ឯកសារ %1 ៖​ %2 បានទេ"
+
 #: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr "រង់ចាំ​ការ​ពិនិត្យ​មើល​ទិន្នន័យ​ផ្សេង​ៗ​ទៀត​ត្រូវ​បញ្ចប់​"
@@ -79,14 +87,6 @@ msgstr "ពិនិត្យ​ទិន្នន័យ​"
 #: src/datachecker/datacheckerjob.cpp:141
 msgid "Checking Data"
 msgstr "ពិនិត្យ​ទិន្នន័យ​​"
-
-#: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:722
-#: src/diskio/multifilecache.cpp:761 src/torrent/torrentcreator.cpp:124
-#: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
-#, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "មិន​អាច​បើក​ឯកសារ %1 ៖​ %2 បានទេ"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:396
@@ -156,25 +156,6 @@ msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​ក
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​កំណាត់​ចុងក្រោយ​ទៅ​ឯកសារ DND ៖ %1​"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr "រង់ចាំ​ការ​បញ្ចប់​នៃ​ការងារ​ផ្លាស់ទី​ផ្សេងទៀត"
-
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "ប្រភព​  "
-
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "ទិសដៅ​"
-
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
-msgstr "ការ​ផ្លាស់ទី"
-
 #: src/diskio/multifilecache.cpp:93 src/diskio/singlefilecache.cpp:79
 #, kde-format
 msgid "Failed to open %1: %2"
@@ -193,6 +174,25 @@ msgstr "មិន​អាច​សរសេរ​ទៅ​កាន់​ផ្
 #, kde-format
 msgid "Cannot open index file %1: %2"
 msgstr "មិន​អាច​បើក​ឯកសារ​លិបិក្រម %1 ៖ %2"
+
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr "រង់ចាំ​ការ​បញ្ចប់​នៃ​ការងារ​ផ្លាស់ទី​ផ្សេងទៀត"
+
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "ប្រភព​  "
+
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "ទិសដៅ​"
+
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "ការ​ផ្លាស់ទី"
 
 #: src/download/httpconnection.cpp:37 src/download/webseed.cpp:51
 #: src/download/webseed.cpp:98
@@ -403,17 +403,6 @@ msgstr "អ្នក​កំពុងតែ​ទាញ​យក torrent <b>%1<
 msgid "Redirect without a redirect location"
 msgstr "ប្ដូរ​ទិស​ដោយ​គ្មាន​ទីតាំង​ប្ដូរ​ទិស"
 
-#: src/tracker/udptracker.cpp:372 src/tracker/udptracker.cpp:382
-#: src/tracker/httptracker.cpp:561
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "អស់​ពេល​ក្នុង​ការ​ទាក់ទង​កម្មវិធី​តាមដាន %1"
-
-#: src/tracker/udptracker.cpp:409
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "មិន​អាច​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1 បានទេ"
-
 #: src/tracker/httptracker.cpp:284 src/tracker/httptracker.cpp:304
 #: src/tracker/httptracker.cpp:466
 msgid "Invalid response from tracker"
@@ -426,6 +415,17 @@ msgstr "ទិន្នន័យ​មិន​ត្រឹម​ត្រូវ
 #: src/tracker/httptracker.cpp:483
 msgid "Invalid tracker URL"
 msgstr "URL កម្មវិធី​តាមដាន​បទ​មិន​ត្រឹមត្រូវ"
+
+#: src/tracker/httptracker.cpp:561 src/tracker/udptracker.cpp:372
+#: src/tracker/udptracker.cpp:382
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "អស់​ពេល​ក្នុង​ការ​ទាក់ទង​កម្មវិធី​តាមដាន %1"
+
+#: src/tracker/udptracker.cpp:409
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "មិន​អាច​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1 បានទេ"
 
 #: src/upnp/httprequest.cpp:96
 msgid "Connection closed unexpectedly"
