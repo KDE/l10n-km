@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libmessagelist\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:53+0200\n"
+"POT-Creation-Date: 2011-09-01 10:35+0200\n"
 "PO-Revision-Date: 2010-06-08 14:47+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -515,10 +515,141 @@ msgid "<b>%1</b> message (<b>%2</b> unread)"
 msgid_plural "<b>%1</b> messages (<b>%2</b> unread)"
 msgstr[0] "<b>%1</b> សារ​​ (<b>%2</b> មិនទាន់​អាន​​)​"
 
-#: core/manager.cpp:98 core/model.cpp:293
+#: core/item.cpp:228
+msgctxt "Status of an item"
+msgid "Read"
+msgstr "បាន​អាន"
+
+#: core/item.cpp:230
+msgctxt "Status of an item"
+msgid "Unread"
+msgstr "មិនទាន់​អាន"
+
+#: core/item.cpp:233
+msgctxt "Status of an item"
+msgid "Has Attachment"
+msgstr "មាន​ឯកសារ​ភ្ជាប់"
+
+#: core/item.cpp:236
+msgctxt "Status of an item"
+msgid "Replied"
+msgstr "បាន​ឆ្លើយ​តប"
+
+#: core/item.cpp:239
+msgctxt "Status of an item"
+msgid "Forwarded"
+msgstr "បាន​បញ្ជូនបន្ត"
+
+#: core/item.cpp:242
+msgctxt "Status of an item"
+msgid "Sent"
+msgstr "បាន​ផ្ញើ"
+
+#: core/item.cpp:245
+msgctxt "Status of an item"
+msgid "Important"
+msgstr "សំខាន់"
+
+#: core/item.cpp:248
+msgctxt "Status of an item"
+msgid "Action Item"
+msgstr "ធាតុ​សកម្មភាព"
+
+#: core/item.cpp:251
+msgctxt "Status of an item"
+msgid "Spam"
+msgstr "​សារ​ឥត​បាន​ការ"
+
+#: core/item.cpp:254
+msgctxt "Status of an item"
+msgid "Ham"
+msgstr "សារ​បន្លំ"
+
+#: core/item.cpp:257
+msgctxt "Status of an item"
+msgid "Watched"
+msgstr "បានឃ្លាំមើល"
+
+#: core/item.cpp:260
+msgctxt "Status of an item"
+msgid "Ignored"
+msgstr "បាន​មិន​អើពើ"
+
+#: core/model.cpp:290
+msgid "Today"
+msgstr "ថ្ងៃ​នេះ"
+
+#: core/model.cpp:291
+msgid "Yesterday"
+msgstr "ម្សិលម៉ិញ"
+
+#: core/model.cpp:293 core/manager.cpp:98
 msgctxt "Unknown date"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
+
+#: core/model.cpp:294
+msgid "Last Week"
+msgstr "សប្ដាហ៍​មុន"
+
+#: core/model.cpp:295
+msgid "Two Weeks Ago"
+msgstr "២ សប្ដាហ៍​កន្លង​ទៅ"
+
+#: core/model.cpp:296
+msgid "Three Weeks Ago"
+msgstr "៣ សប្ដាហ៍​កន្លង​ទៅ"
+
+#: core/model.cpp:297
+msgid "Four Weeks Ago"
+msgstr "៤ សប្ដាហ៍​កន្លង​ទៅ"
+
+#: core/model.cpp:298
+msgid "Five Weeks Ago"
+msgstr "៥ សប្ដាហ៍​កន្លង​ទៅ"
+
+#: core/model.cpp:512 utils/themeeditor.cpp:204
+msgid "Receiver"
+msgstr "អ្នកទទួល"
+
+#: core/model.cpp:513 utils/themeeditor.cpp:203
+msgid "Sender"
+msgstr "​អ្នក​ផ្ញើ"
+
+#: core/model.cpp:1335
+#, kde-format
+msgctxt "Message Aggregation Group Header: Month name and Year number"
+msgid "%1 %2"
+msgstr "%1 %2"
+
+#: core/model.cpp:3764
+#, kde-format
+msgid "Processed 1 Message of %2"
+msgid_plural "Processed %1 Messages of %2"
+msgstr[0] "បាន​ចូល​ដំណើរការ​សារ %1 នៃ %2"
+
+#: core/model.cpp:3770 core/model.cpp:3776
+#, kde-format
+msgid "Threaded 1 Message of %2"
+msgid_plural "Threaded %1 Messages of %2"
+msgstr[0] "បាន​ក្រង​ខ្សែស្រឡាយ​សារ %1 នៃ %2"
+
+#: core/model.cpp:3782
+#, kde-format
+msgid "Grouped 1 Thread of %2"
+msgid_plural "Grouped %1 Threads of %2"
+msgstr[0] "បាន​ដាក់ក្រុម​ខ្សែស្រឡាយ %1 នៃ %2"
+
+#: core/model.cpp:3788
+#, kde-format
+msgid "Updated 1 Group of %2"
+msgid_plural "Updated %1 Groups of %2"
+msgstr[0] "បាន​ធ្វើ​​បច្ចុប្បន្នភាព​ក្រុម %1 នៃ %2 "
+
+#: core/model.cpp:3884
+msgctxt "@info:status Finished view fill"
+msgid "Ready"
+msgstr "រួចរាល់"
 
 #: core/manager.cpp:320
 msgid "Current Activity, Threaded"
@@ -803,170 +934,6 @@ msgstr "ទិស​តម្រៀប​ក្រុម"
 msgid "Folder Always Uses This Sort Order"
 msgstr "ថត​ប្រើ​លំដាប់​តម្រៀប​នេះ​ជានិច្ច"
 
-#: core/item.cpp:228
-msgctxt "Status of an item"
-msgid "Read"
-msgstr "បាន​អាន"
-
-#: core/item.cpp:230
-msgctxt "Status of an item"
-msgid "Unread"
-msgstr "មិនទាន់​អាន"
-
-#: core/item.cpp:233
-msgctxt "Status of an item"
-msgid "Has Attachment"
-msgstr "មាន​ឯកសារ​ភ្ជាប់"
-
-#: core/item.cpp:236
-msgctxt "Status of an item"
-msgid "Replied"
-msgstr "បាន​ឆ្លើយ​តប"
-
-#: core/item.cpp:239
-msgctxt "Status of an item"
-msgid "Forwarded"
-msgstr "បាន​បញ្ជូនបន្ត"
-
-#: core/item.cpp:242
-msgctxt "Status of an item"
-msgid "Sent"
-msgstr "បាន​ផ្ញើ"
-
-#: core/item.cpp:245
-msgctxt "Status of an item"
-msgid "Important"
-msgstr "សំខាន់"
-
-#: core/item.cpp:248
-msgctxt "Status of an item"
-msgid "Action Item"
-msgstr "ធាតុ​សកម្មភាព"
-
-#: core/item.cpp:251
-msgctxt "Status of an item"
-msgid "Spam"
-msgstr "​សារ​ឥត​បាន​ការ"
-
-#: core/item.cpp:254
-msgctxt "Status of an item"
-msgid "Ham"
-msgstr "សារ​បន្លំ"
-
-#: core/item.cpp:257
-msgctxt "Status of an item"
-msgid "Watched"
-msgstr "បានឃ្លាំមើល"
-
-#: core/item.cpp:260
-msgctxt "Status of an item"
-msgid "Ignored"
-msgstr "បាន​មិន​អើពើ"
-
-#: core/model.cpp:290
-msgid "Today"
-msgstr "ថ្ងៃ​នេះ"
-
-#: core/model.cpp:291
-msgid "Yesterday"
-msgstr "ម្សិលម៉ិញ"
-
-#: core/model.cpp:294
-msgid "Last Week"
-msgstr "សប្ដាហ៍​មុន"
-
-#: core/model.cpp:295
-msgid "Two Weeks Ago"
-msgstr "២ សប្ដាហ៍​កន្លង​ទៅ"
-
-#: core/model.cpp:296
-msgid "Three Weeks Ago"
-msgstr "៣ សប្ដាហ៍​កន្លង​ទៅ"
-
-#: core/model.cpp:297
-msgid "Four Weeks Ago"
-msgstr "៤ សប្ដាហ៍​កន្លង​ទៅ"
-
-#: core/model.cpp:298
-msgid "Five Weeks Ago"
-msgstr "៥ សប្ដាហ៍​កន្លង​ទៅ"
-
-#: core/model.cpp:512 utils/themeeditor.cpp:204
-msgid "Receiver"
-msgstr "អ្នកទទួល"
-
-#: core/model.cpp:513 utils/themeeditor.cpp:203
-msgid "Sender"
-msgstr "​អ្នក​ផ្ញើ"
-
-#: core/model.cpp:1335
-#, kde-format
-msgctxt "Message Aggregation Group Header: Month name and Year number"
-msgid "%1 %2"
-msgstr "%1 %2"
-
-#: core/model.cpp:3764
-#, kde-format
-msgid "Processed 1 Message of %2"
-msgid_plural "Processed %1 Messages of %2"
-msgstr[0] "បាន​ចូល​ដំណើរការ​សារ %1 នៃ %2"
-
-#: core/model.cpp:3770 core/model.cpp:3776
-#, kde-format
-msgid "Threaded 1 Message of %2"
-msgid_plural "Threaded %1 Messages of %2"
-msgstr[0] "បាន​ក្រង​ខ្សែស្រឡាយ​សារ %1 នៃ %2"
-
-#: core/model.cpp:3782
-#, kde-format
-msgid "Grouped 1 Thread of %2"
-msgid_plural "Grouped %1 Threads of %2"
-msgstr[0] "បាន​ដាក់ក្រុម​ខ្សែស្រឡាយ %1 នៃ %2"
-
-#: core/model.cpp:3788
-#, kde-format
-msgid "Updated 1 Group of %2"
-msgid_plural "Updated %1 Groups of %2"
-msgstr[0] "បាន​ធ្វើ​​បច្ចុប្បន្នភាព​ក្រុម %1 នៃ %2 "
-
-#: core/model.cpp:3884
-msgctxt "@info:status Finished view fill"
-msgid "Ready"
-msgstr "រួចរាល់"
-
-#: utils/aggregationeditor.cpp:47
-msgid "Groups && Threading"
-msgstr "ដាក់​ក្រុម និង​ក្រង​ជា​ខ្សែ​ស្រឡាយ"
-
-#: utils/aggregationeditor.cpp:51
-msgid "Grouping:"
-msgstr "ដាក់ក្រុម ៖"
-
-#: utils/aggregationeditor.cpp:58
-msgid "Group expand policy:"
-msgstr "គោលការណ៍​ពន្លា​ក្រុម ៖"
-
-#: utils/aggregationeditor.cpp:62
-msgid "Threading:"
-msgstr "ការ​ចង​ខ្សែ​ស្រឡាយ "
-
-#: utils/aggregationeditor.cpp:69
-msgid "Thread leader:"
-msgstr "ក្បាល​ខ្សែ​ស្រឡាយ ៖"
-
-#: utils/aggregationeditor.cpp:73
-msgid "Thread expand policy:"
-msgstr "គោលការណ៍​ពន្លា​ខ្សែ​ស្រឡាយ ៖"
-
-#: utils/aggregationeditor.cpp:82
-msgctxt "@title:tab Advanced settings tab for aggregation mode"
-msgid "Advanced"
-msgstr "​កម្រិត​ខ្ពស់"
-
-#: utils/aggregationeditor.cpp:86
-msgid "Fill view strategy:"
-msgstr "បំពេញ​យុទ្ធសាស្ដ្រ​ទិដ្ឋភាព ៖"
-
 #: utils/configureaggregationsdialog.cpp:98
 msgid "Customize Message Aggregation Modes"
 msgstr "ប្ដូរ​របៀប​រួមបញ្ចូល​សារ​តាម​បំណង"
@@ -1011,6 +978,39 @@ msgstr "ស្បែក​គ្មាន​ឈ្មោះ"
 #: utils/configurethemesdialog.cpp:323 utils/themeeditor.cpp:1226
 msgid "New Column"
 msgstr "ជួរ​ឈរ​ថ្មី"
+
+#: utils/aggregationeditor.cpp:47
+msgid "Groups && Threading"
+msgstr "ដាក់​ក្រុម និង​ក្រង​ជា​ខ្សែ​ស្រឡាយ"
+
+#: utils/aggregationeditor.cpp:51
+msgid "Grouping:"
+msgstr "ដាក់ក្រុម ៖"
+
+#: utils/aggregationeditor.cpp:58
+msgid "Group expand policy:"
+msgstr "គោលការណ៍​ពន្លា​ក្រុម ៖"
+
+#: utils/aggregationeditor.cpp:62
+msgid "Threading:"
+msgstr "ការ​ចង​ខ្សែ​ស្រឡាយ "
+
+#: utils/aggregationeditor.cpp:69
+msgid "Thread leader:"
+msgstr "ក្បាល​ខ្សែ​ស្រឡាយ ៖"
+
+#: utils/aggregationeditor.cpp:73
+msgid "Thread expand policy:"
+msgstr "គោលការណ៍​ពន្លា​ខ្សែ​ស្រឡាយ ៖"
+
+#: utils/aggregationeditor.cpp:82
+msgctxt "@title:tab Advanced settings tab for aggregation mode"
+msgid "Advanced"
+msgstr "​កម្រិត​ខ្ពស់"
+
+#: utils/aggregationeditor.cpp:86
+msgid "Fill view strategy:"
+msgstr "បំពេញ​យុទ្ធសាស្ដ្រ​ទិដ្ឋភាព ៖"
 
 #: utils/optionseteditor.cpp:40
 msgctxt "@title:tab General options of a view mode"
@@ -1232,30 +1232,6 @@ msgid " pixel"
 msgid_plural " pixels"
 msgstr[0] "ភីកសែល​"
 
-#: widget.cpp:97
-msgid "Show Quick Search Bar"
-msgstr "បង្ហាញ​របារ​ស្វែងរក​រហ័ស​"
-
-#: widget.cpp:312
-msgid "Expand All Groups"
-msgstr "ពន្លា​ក្រុម​ទាំងអស់"
-
-#: widget.cpp:316
-msgid "Collapse All Groups"
-msgstr "វេញ​ក្រុម​ទាំងអស់"
-
-#: widget.cpp:380
-msgid "&Move Here"
-msgstr "​ផ្លាស់ទី​មក​ទីនេះ"
-
-#: widget.cpp:381
-msgid "&Copy Here"
-msgstr "​ចម្លង​មក​ទីនេះ"
-
-#: widget.cpp:383
-msgid "C&ancel"
-msgstr "​បោះបង់"
-
 #: pane.cpp:112
 msgctxt "@info:tooltip"
 msgid "Open a new tab"
@@ -1298,6 +1274,30 @@ msgstr "​គ្មាន​ប្រធាន​បទ"
 msgctxt "displayed when a mail has unknown sender, receiver or date"
 msgid "Unknown"
 msgstr "មិនស្គាល់"
+
+#: widget.cpp:97
+msgid "Show Quick Search Bar"
+msgstr "បង្ហាញ​របារ​ស្វែងរក​រហ័ស​"
+
+#: widget.cpp:312
+msgid "Expand All Groups"
+msgstr "ពន្លា​ក្រុម​ទាំងអស់"
+
+#: widget.cpp:316
+msgid "Collapse All Groups"
+msgstr "វេញ​ក្រុម​ទាំងអស់"
+
+#: widget.cpp:380
+msgid "&Move Here"
+msgstr "​ផ្លាស់ទី​មក​ទីនេះ"
+
+#: widget.cpp:381
+msgid "&Copy Here"
+msgstr "​ចម្លង​មក​ទីនេះ"
+
+#: widget.cpp:383
+msgid "C&ancel"
+msgstr "​បោះបង់"
 
 #. i18n: file: core/settings.kcfg:10
 #. i18n: ectx: label, entry (MessageToolTipEnabled), group (MessageListView)
