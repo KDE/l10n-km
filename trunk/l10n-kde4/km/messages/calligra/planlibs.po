@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatolibs\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-24 02:15+0200\n"
+"POT-Creation-Date: 2011-09-02 02:21+0200\n"
 "PO-Revision-Date: 2010-03-09 09:17+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -109,12 +109,12 @@ msgid "Deleted"
 msgstr "បាន​លុប​"
 
 #: kernel/kptglobal.cpp:43 kernel/kptnode.cpp:602 kernel/kptschedule.cpp:1859
-#: models/kptschedulemodel.cpp:687
+#: models/kptschedulemodel.cpp:713
 msgid "Not scheduled"
 msgstr "មិន​បាន​កំណត់​ពេល​"
 
-#: kernel/kptglobal.cpp:45 models/kptschedulemodel.cpp:687
-#: models/kptschedulemodel.cpp:771
+#: kernel/kptglobal.cpp:45 models/kptschedulemodel.cpp:713
+#: models/kptschedulemodel.cpp:797
 msgid "Scheduled"
 msgstr "បាន​កំណត់​ពេល​"
 
@@ -2365,7 +2365,7 @@ msgstr "គណនី ៖ %1​"
 #: models/kptresourceappointmentsmodel.cpp:911
 #: models/kptresourceappointmentsmodel.cpp:926
 #: models/kptresourceappointmentsmodel.cpp:1525
-#: models/kptschedulemodel.cpp:762 models/kptschedulemodel.cpp:1018 rc.cpp:316
+#: models/kptschedulemodel.cpp:788 models/kptschedulemodel.cpp:1044 rc.cpp:316
 msgid "Name"
 msgstr "ឈ្មោះ​​"
 
@@ -2869,69 +2869,96 @@ msgstr "ទាំង​អស់​"
 msgid "Expected only"
 msgstr "តែ​រំពឹង​ទុក​ប៉ុណ្ណោះ​"
 
-#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
+#: models/kptschedulemodel.cpp:572
+#, fuzzy, kde-format
+#| msgid "Scheduled start: %1, target time: %2"
+msgctxt "@info:tooltip"
+msgid "Planned start: %1<nl/>Target start: %2"
+msgstr "បាន​កំណត់​ពេល​ចាប់ផ្តើម​ ៖ %1  ពេល​វេលា​គោល​ដៅ ៖ %2​"
+
+#: models/kptschedulemodel.cpp:574
+#, fuzzy, kde-format
+#| msgid "Earliest start:"
+msgctxt "@info:tooltip"
+msgid "Target start: %1"
+msgstr "ចាប់​ផ្តើម​មុន​គេ ៖​"
+
+#: models/kptschedulemodel.cpp:608
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Planned finish: %1<nl/>Target finish: %2"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:610
+#, fuzzy, kde-format
+#| msgid "Latest finish:"
+msgctxt "@info:tooltip"
+msgid "Target finish: %1"
+msgstr "បញ្ចប់​ក្រោយ​គេ ៖​"
+
+#: models/kptschedulemodel.cpp:633 models/kptschedulemodel.cpp:635
 msgid "Backwards"
 msgstr "ថយ​ក្រោយ​​"
 
-#: models/kptschedulemodel.cpp:607 models/kptschedulemodel.cpp:609
+#: models/kptschedulemodel.cpp:633 models/kptschedulemodel.cpp:635
 msgid "Forward"
 msgstr "ទៅ​មុខ​"
 
-#: models/kptschedulemodel.cpp:629
+#: models/kptschedulemodel.cpp:655
 #, fuzzy
 #| msgid "Modify scheduling direction"
 msgctxt "(qtundo-format)"
 msgid "Modify scheduling direction"
 msgstr "កែប្រែ​ទិស​កំណត់​ពេល​"
 
-#: models/kptschedulemodel.cpp:647
+#: models/kptschedulemodel.cpp:673
 msgid "Unknown"
 msgstr "មិន​ស្គាល់​"
 
-#: models/kptschedulemodel.cpp:669
+#: models/kptschedulemodel.cpp:695
 #, fuzzy
 #| msgid "Modify scheduler"
 msgctxt "(qtundo-format)"
 msgid "Modify scheduler"
 msgstr "កែប្រែ​កម្មវិធី​កំណត់​ពេល​​"
 
-#: models/kptschedulemodel.cpp:763
+#: models/kptschedulemodel.cpp:789
 msgid "State"
 msgstr "ស្ថានភាព​"
 
-#: models/kptschedulemodel.cpp:764
+#: models/kptschedulemodel.cpp:790
 msgid "Direction"
 msgstr "ទិស​"
 
-#: models/kptschedulemodel.cpp:765
+#: models/kptschedulemodel.cpp:791
 msgid "Overbooking"
 msgstr "ការ​កក់​លើស​"
 
-#: models/kptschedulemodel.cpp:766
+#: models/kptschedulemodel.cpp:792
 msgid "Distribution"
 msgstr "ការចែក​ចាយ​"
 
-#: models/kptschedulemodel.cpp:768
+#: models/kptschedulemodel.cpp:794
 msgid "Planned Start"
 msgstr "ការ​​ចាប់ផ្ដើម​​ដែល​បាន​គ្រោង​"
 
-#: models/kptschedulemodel.cpp:769
+#: models/kptschedulemodel.cpp:795
 msgid "Planned Finish"
 msgstr "ការ​បញ្ចប់​ដែល​បាន​គ្រោង​"
 
-#: models/kptschedulemodel.cpp:770
+#: models/kptschedulemodel.cpp:796
 msgid "Scheduler"
 msgstr "កម្មវិធី​កំណត់​ពេល​"
 
-#: models/kptschedulemodel.cpp:1018
+#: models/kptschedulemodel.cpp:1044
 msgid "Phase"
 msgstr "ដំណាក់កាល​"
 
-#: models/kptschedulemodel.cpp:1018
+#: models/kptschedulemodel.cpp:1044
 msgid "Severity"
 msgstr "ភាព​ធ្ងន់​ធ្ងរ​"
 
-#: models/kptschedulemodel.cpp:1018
+#: models/kptschedulemodel.cpp:1044
 msgid "Message"
 msgstr "សារ "
 
