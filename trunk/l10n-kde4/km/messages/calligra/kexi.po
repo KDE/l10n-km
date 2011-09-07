@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-06 02:29+0200\n"
+"POT-Creation-Date: 2011-09-07 02:17+0200\n"
 "PO-Revision-Date: 2010-06-29 10:05+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -2145,7 +2145,7 @@ msgstr "គោល​ការណ៍ផ្តោត"
 msgid "Margin"
 msgstr "រឹម "
 
-#: formeditor/form.cpp:455
+#: formeditor/form.cpp:455 plugins/forms/kexidbfactorybase.cpp:66
 msgid "Read Only"
 msgstr "បាន​តែ​អាន"
 
@@ -3256,7 +3256,7 @@ msgstr ""
 msgid "Number"
 msgstr "លេខ"
 
-#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:346
+#: kexidb/utils.cpp:1251 plugins/forms/kexidbfactory.cpp:345
 #: widget/utils/kexicontextmenuutils.cpp:293
 msgid "Image"
 msgstr "រូបភាព"
@@ -5978,34 +5978,60 @@ msgctxt "Unbound Image Box"
 msgid "(unbound)"
 msgstr "(គ្មាន​ព្រំដែន)"
 
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:41
+#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:40
 msgid "Map Browser"
 msgstr ""
 
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:43
+#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:42
 msgctxt ""
 "This string will be used to name widgets of this class. It must _not_ "
 "contain white spaces and non latin1 characters."
 msgid "mapBrowser"
 msgstr ""
 
-#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:44
+#: plugins/forms/widgets/mapbrowser/MapBrowserFactory.cpp:43
 msgid "Displays an interactive map."
 msgstr ""
 
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:41
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:39
 msgid "Web Browser"
 msgstr ""
 
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:43
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:41
 msgctxt ""
 "This string will be used to name widgets of this class. It must _not_ "
 "contain white spaces and non latin1 characters."
 msgid "webBrowser"
 msgstr ""
 
-#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:44
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:42
 msgid "Web widget with browsing features."
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:46
+#, fuzzy
+#| msgid "Zoom Out"
+msgid "Zoom Factor"
+msgstr "បង្រួម"
+
+#: plugins/forms/widgets/webbrowser/WebBrowserFactory.cpp:47
+msgid "Url"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:43
+msgid "Back"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:44
+msgid "Forward"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:45
+msgid "Reload"
+msgstr ""
+
+#: plugins/forms/widgets/webbrowser/WebBrowserWidget.cpp:46
+msgid "Stop"
 msgstr ""
 
 #: plugins/forms/kexiformpart.cpp:85
@@ -6137,7 +6163,7 @@ msgstr "ការ​រចនា​សំណុំ​បែបបទ \"%1\" ត�
 msgid "Form \"%1\" already exists."
 msgstr "មាន​សំណុំ​បែបបទ \"%1\" រួច​ហើយ ។"
 
-#: plugins/forms/kexiformpart.cpp:489 plugins/forms/kexidbfactory.cpp:312
+#: plugins/forms/kexiformpart.cpp:489 plugins/forms/kexidbfactorybase.cpp:61
 msgid "Data Source"
 msgstr "ប្រភព​ទិន្នន័យ"
 
@@ -6145,12 +6171,62 @@ msgstr "ប្រភព​ទិន្នន័យ"
 msgid "Widgets"
 msgstr "ធាតុ​ក្រាហ្វិក"
 
-#: plugins/forms/kexidbfactory.cpp:84 plugins/forms/kexiformview.cpp:252
+#: plugins/forms/kexiformview.cpp:252 plugins/forms/kexidbfactory.cpp:84
 msgctxt ""
 "Widget name. This string will be used to name widgets of this class. It must "
 "_not_ contain white spaces and non latin1 characters."
 msgid "form"
 msgstr "សំណុំ​បែបបទ"
+
+#: plugins/forms/kexiformview.cpp:1250
+msgid "Insert AutoField widget"
+msgstr "បញ្ចូល​ធាតុ​ក្រាហ្វិក​វាល​ស្វ័យ​ប្រវត្តិ"
+
+#: plugins/forms/kexiformview.cpp:1250
+#, kde-format
+msgid "Insert %1 AutoField widgets"
+msgstr "បញ្ចូល​ធាតុ​ក្រាហ្វិក​វាល​ស្វ័យប្រវត្តិ %1"
+
+#: plugins/forms/kexiformmanager.cpp:164
+msgid "Connect Signals/Slots"
+msgstr "តភ្ជាប់​សញ្ញា/រន្ធ"
+
+#: plugins/forms/kexiformmanager.cpp:174
+msgid "Pointer"
+msgstr "ឧបករណ៍​ដាក់ចំណុច"
+
+#: plugins/forms/kexiformmanager.cpp:182
+msgid "Snap to Grid"
+msgstr "ខ្ទាស់​ទៅ​ក្រឡាចត្រង្គ"
+
+#: plugins/forms/kexiformmanager.cpp:190
+msgid "Style"
+msgstr "រចនាប័ទ្ម"
+
+#: plugins/forms/kexiformmanager.cpp:210
+msgid "Set the current view style."
+msgstr "កំណត់​រចនាប័ទ្ម​ទិដ្ឋភាព​បច្ចុប្បន្ន ។"
+
+#: plugins/forms/kexiformmanager.cpp:219
+msgid "Show Form UI Code"
+msgstr "បង្ហាញ​កូដ​របស់​ចំណុច​ប្រទាក់​សំណុំ​បែបបទ"
+
+#: plugins/forms/kexiformmanager.cpp:404
+#, kde-format
+msgid "Set Form's Data Source to \"%1\""
+msgstr "កំណត់​ប្រភព​ទិន្នន័យ​របស់​សំណុំ​បែបបទ​ទៅ \"%1\""
+
+#: plugins/forms/kexiformmanager.cpp:484
+msgid "Form's UI Code"
+msgstr "កូដ​របស់​ចំណុច​ប្រទាក់​សំណុំ​បែបបទ"
+
+#: plugins/forms/kexiformmanager.cpp:488
+msgid "Current"
+msgstr "ថ្មីៗ"
+
+#: plugins/forms/kexiformmanager.cpp:495
+msgid "Original"
+msgstr "ដើម"
 
 #: plugins/forms/kexidbfactory.cpp:85
 msgid "A data-aware form widget"
@@ -6234,64 +6310,64 @@ msgstr "ប៊ូតុង​"
 msgid "A button for executing actions"
 msgstr "ប៊ូតុង​ពាក្យ​បញ្ជា​ត្រូវ​ប្រតិបត្តិ​សកម្មភាព​"
 
-#: plugins/forms/kexidbfactory.cpp:313
+#: plugins/forms/kexidbfactory.cpp:312
 msgid "Form Name"
 msgstr "ឈ្មោះ​សំណុំបែបបទ"
 
-#: plugins/forms/kexidbfactory.cpp:314
+#: plugins/forms/kexidbfactory.cpp:313
 msgid "On Click"
 msgstr "នៅ​បេល​ចុច"
 
-#: plugins/forms/kexidbfactory.cpp:315
+#: plugins/forms/kexidbfactory.cpp:314
 msgid "On Click Option"
 msgstr "ជម្រើស​នៅ​ពេល​ចុច"
 
-#: plugins/forms/kexidbfactory.cpp:316
+#: plugins/forms/kexidbfactory.cpp:315
 msgid "Auto Tab Order"
 msgstr "លំដាប់​ផ្ទាំង​ដោយ​ស្វ័យប្រវត្តិ"
 
-#: plugins/forms/kexidbfactory.cpp:317
+#: plugins/forms/kexidbfactory.cpp:316
 msgid "Shadow Enabled"
 msgstr "បាន​បើក​ស្រមោល"
 
-#: plugins/forms/kexidbfactory.cpp:318
+#: plugins/forms/kexidbfactory.cpp:317
 msgctxt "On: button"
 msgid "On"
 msgstr "លើ"
 
-#: plugins/forms/kexidbfactory.cpp:320
+#: plugins/forms/kexidbfactory.cpp:319
 msgid "Editor Type"
 msgstr "ប្រភេទ​កម្មវិធី​និពន្ធ"
 
-#: plugins/forms/kexidbfactory.cpp:322
+#: plugins/forms/kexidbfactory.cpp:321
 msgctxt "AutoField editor's type"
 msgid "Auto"
 msgstr "ស្វ័យប្រវត្តិ"
 
-#: plugins/forms/kexidbfactory.cpp:330
+#: plugins/forms/kexidbfactory.cpp:329
 msgctxt "AutoField editor's type"
 msgid "Multiline Text"
 msgstr "អត្ថបទ​ច្រើនជួរ"
 
-#: plugins/forms/kexidbfactory.cpp:331
+#: plugins/forms/kexidbfactory.cpp:330
 msgctxt "AutoField editor's type"
 msgid "Drop-Down List"
 msgstr "បញ្ជី​ទម្លាក់​ចុះ"
 
-#: plugins/forms/kexidbfactory.cpp:332
+#: plugins/forms/kexidbfactory.cpp:331
 msgctxt "AutoField editor's type"
 msgid "Image"
 msgstr "រូបភាព"
 
-#: plugins/forms/kexidbfactory.cpp:335
+#: plugins/forms/kexidbfactory.cpp:334
 msgid "Auto Label"
 msgstr "ស្លាក​ស្វ័យប្រវត្តិ"
 
-#: plugins/forms/kexidbfactory.cpp:336
+#: plugins/forms/kexidbfactory.cpp:335
 msgid "Label Text Color"
 msgstr "ស្លាក​ពណ៌​អត្ថបទ"
 
-#: plugins/forms/kexidbfactory.cpp:338
+#: plugins/forms/kexidbfactory.cpp:337
 msgctxt "(a property name, keep the text narrow!)"
 msgid ""
 "Label Background\n"
@@ -6300,48 +6376,44 @@ msgstr ""
 "ពណ៌​ស្លាក​\n"
 "ផ្ទៃ​ខាង​ក្រោយ"
 
-#: plugins/forms/kexidbfactory.cpp:340
+#: plugins/forms/kexidbfactory.cpp:339
 msgid "Label Position"
 msgstr "ទីតាំង​ស្លាក"
 
-#: plugins/forms/kexidbfactory.cpp:341
+#: plugins/forms/kexidbfactory.cpp:340
 msgctxt "Label Position"
 msgid "Left"
 msgstr "ឆ្វេង"
 
-#: plugins/forms/kexidbfactory.cpp:342
+#: plugins/forms/kexidbfactory.cpp:341
 msgctxt "Label Position"
 msgid "Top"
 msgstr "កំពូល"
 
-#: plugins/forms/kexidbfactory.cpp:343
+#: plugins/forms/kexidbfactory.cpp:342
 msgctxt "Label Position"
 msgid "No Label"
 msgstr "គ្មាន​ស្លាក"
 
-#: plugins/forms/kexidbfactory.cpp:345
+#: plugins/forms/kexidbfactory.cpp:344
 msgid "Size"
 msgstr "ទំហំ"
 
-#: plugins/forms/kexidbfactory.cpp:347
+#: plugins/forms/kexidbfactory.cpp:346
 msgid "Scaled Contents"
 msgstr "មាតិកា​ដែល​បាន​ធ្វើ​មាត្រដ្ឋាន"
 
-#: plugins/forms/kexidbfactory.cpp:348
+#: plugins/forms/kexidbfactory.cpp:347
 msgctxt "Smoothing when contents are scaled"
 msgid "Smoothing"
 msgstr "ដែល​រលោង"
 
-#: plugins/forms/kexidbfactory.cpp:349
+#: plugins/forms/kexidbfactory.cpp:348
 msgctxt "Keep Aspect Ratio (short)"
 msgid "Keep Ratio"
 msgstr "រក្សា​សមាមាត្រ"
 
-#: plugins/forms/kexidbfactory.cpp:356
-msgid "Frame Color"
-msgstr "ពណ៌​ស៊ុម"
-
-#: plugins/forms/kexidbfactory.cpp:359
+#: plugins/forms/kexidbfactory.cpp:357
 msgctxt ""
 "Drop-Down Button for Image Box Visible (a property name, keep the text "
 "narrow!)"
@@ -6352,83 +6424,37 @@ msgstr ""
 "ទម្លាក់ចុះ\n"
 "ប៊ូតុង​មើល​ឃើញ"
 
-#: plugins/forms/kexidbfactory.cpp:362
+#: plugins/forms/kexidbfactory.cpp:360
 msgctxt "Tristate checkbox, default"
 msgid "Default"
 msgstr "លំនាំដើម"
 
-#: plugins/forms/kexidbfactory.cpp:363
+#: plugins/forms/kexidbfactory.cpp:361
 msgctxt "Tristate checkbox, yes"
 msgid "Yes"
 msgstr "បាទ​/ចាស"
 
-#: plugins/forms/kexidbfactory.cpp:364
+#: plugins/forms/kexidbfactory.cpp:362
 msgctxt "Tristate checkbox, no"
 msgid "No"
 msgstr "ទេ"
 
-#: plugins/forms/kexidbfactory.cpp:367
+#: plugins/forms/kexidbfactory.cpp:365
 msgctxt "Editable combobox"
 msgid "Editable"
 msgstr "អាច​កែ​សម្រួល​បាន"
 
-#: plugins/forms/kexidbfactory.cpp:452
+#: plugins/forms/kexidbfactory.cpp:450
 msgid "&Image"
 msgstr "រូបភាព"
 
-#: plugins/forms/kexidbfactory.cpp:474
+#: plugins/forms/kexidbfactory.cpp:472
 msgid "&Assign Action..."
 msgstr "ផ្តល់​អំពើ..."
 
-#: plugins/forms/kexiformview.cpp:1250
-msgid "Insert AutoField widget"
-msgstr "បញ្ចូល​ធាតុ​ក្រាហ្វិក​វាល​ស្វ័យ​ប្រវត្តិ"
-
-#: plugins/forms/kexiformview.cpp:1250
-#, kde-format
-msgid "Insert %1 AutoField widgets"
-msgstr "បញ្ចូល​ធាតុ​ក្រាហ្វិក​វាល​ស្វ័យប្រវត្តិ %1"
-
-#: plugins/forms/kexiformmanager.cpp:164
-msgid "Connect Signals/Slots"
-msgstr "តភ្ជាប់​សញ្ញា/រន្ធ"
-
-#: plugins/forms/kexiformmanager.cpp:174
-msgid "Pointer"
-msgstr "ឧបករណ៍​ដាក់ចំណុច"
-
-#: plugins/forms/kexiformmanager.cpp:182
-msgid "Snap to Grid"
-msgstr "ខ្ទាស់​ទៅ​ក្រឡាចត្រង្គ"
-
-#: plugins/forms/kexiformmanager.cpp:190
-msgid "Style"
-msgstr "រចនាប័ទ្ម"
-
-#: plugins/forms/kexiformmanager.cpp:210
-msgid "Set the current view style."
-msgstr "កំណត់​រចនាប័ទ្ម​ទិដ្ឋភាព​បច្ចុប្បន្ន ។"
-
-#: plugins/forms/kexiformmanager.cpp:219
-msgid "Show Form UI Code"
-msgstr "បង្ហាញ​កូដ​របស់​ចំណុច​ប្រទាក់​សំណុំ​បែបបទ"
-
-#: plugins/forms/kexiformmanager.cpp:404
-#, kde-format
-msgid "Set Form's Data Source to \"%1\""
-msgstr "កំណត់​ប្រភព​ទិន្នន័យ​របស់​សំណុំ​បែបបទ​ទៅ \"%1\""
-
-#: plugins/forms/kexiformmanager.cpp:484
-msgid "Form's UI Code"
-msgstr "កូដ​របស់​ចំណុច​ប្រទាក់​សំណុំ​បែបបទ"
-
-#: plugins/forms/kexiformmanager.cpp:488
-msgid "Current"
-msgstr "ថ្មីៗ"
-
-#: plugins/forms/kexiformmanager.cpp:495
-msgid "Original"
-msgstr "ដើម"
+#: plugins/forms/kexidbfactorybase.cpp:64
+msgid "Frame Color"
+msgstr "ពណ៌​ស៊ុម"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:65
 msgid "Copy"
