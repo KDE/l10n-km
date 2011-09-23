@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatolibs\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-21 02:19+0200\n"
+"POT-Creation-Date: 2011-09-23 02:30+0200\n"
 "PO-Revision-Date: 2010-03-09 09:17+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -109,12 +109,12 @@ msgid "Deleted"
 msgstr "បាន​លុប​"
 
 #: kernel/kptglobal.cpp:43 kernel/kptnode.cpp:602 kernel/kptschedule.cpp:1859
-#: models/kptschedulemodel.cpp:713
+#: models/kptschedulemodel.cpp:790
 msgid "Not scheduled"
 msgstr "មិន​បាន​កំណត់​ពេល​"
 
-#: kernel/kptglobal.cpp:45 models/kptschedulemodel.cpp:713
-#: models/kptschedulemodel.cpp:797
+#: kernel/kptglobal.cpp:45 models/kptschedulemodel.cpp:790
+#: models/kptschedulemodel.cpp:874
 msgid "Scheduled"
 msgstr "បាន​កំណត់​ពេល​"
 
@@ -149,17 +149,17 @@ msgstr "កំហុស​កំណត់​ពេល"
 #: models/kpttreecombobox.cpp:124 models/kptresourcemodel.cpp:199
 #: models/kptresourcemodel.cpp:231 models/kptresourcemodel.cpp:352
 #: models/kptresourcemodel.cpp:356 models/kptresourcemodel.cpp:365
-#: models/kptresourceallocationmodel.cpp:743 models/kptschedulemodel.cpp:481
-#: models/kptschedulemodel.cpp:483 models/kptnodeitemmodel.cpp:380
+#: models/kptresourceallocationmodel.cpp:743 models/kptnodeitemmodel.cpp:380
 #: models/kptnodeitemmodel.cpp:391 models/kptnodeitemmodel.cpp:396
 #: models/kptnodeitemmodel.cpp:406 models/kptnodeitemmodel.cpp:580
 #: models/kptnodeitemmodel.cpp:586 models/kptnodeitemmodel.cpp:596
 #: models/kptnodeitemmodel.cpp:614 models/kptnodeitemmodel.cpp:621
 #: models/kptnodeitemmodel.cpp:631 models/kptnodeitemmodel.cpp:666
 #: models/kptnodeitemmodel.cpp:672 models/kptnodeitemmodel.cpp:682
-#: ui/kptpertresult.cpp:138 ui/kptpertresult.cpp:489
-#: ui/kptresourcedialog.cpp:266 ui/kptresourcedialog.cpp:292
-#: ui/kpttaskcostpanel.cpp:50 ui/kpttaskgeneralpanel.cpp:74 rc.cpp:536
+#: models/kptschedulemodel.cpp:521 ui/kptpertresult.cpp:138
+#: ui/kptpertresult.cpp:489 ui/kptresourcedialog.cpp:266
+#: ui/kptresourcedialog.cpp:292 ui/kpttaskcostpanel.cpp:50
+#: ui/kpttaskgeneralpanel.cpp:74 rc.cpp:536
 msgid "None"
 msgstr "គ្មាន​"
 
@@ -1459,7 +1459,7 @@ msgstr "គណនី ៖ %1​"
 #: models/kptresourceappointmentsmodel.cpp:911
 #: models/kptresourceappointmentsmodel.cpp:926
 #: models/kptresourceappointmentsmodel.cpp:1525
-#: models/kptschedulemodel.cpp:788 models/kptschedulemodel.cpp:1044 rc.cpp:316
+#: models/kptschedulemodel.cpp:865 models/kptschedulemodel.cpp:1121 rc.cpp:316
 msgid "Name"
 msgstr "ឈ្មោះ​​"
 
@@ -1990,140 +1990,6 @@ msgstr "ពេល​វេលា​បញ្ចប់​​"
 msgctxt "@title:column noun"
 msgid "Load"
 msgstr "ផ្ទុក​"
-
-#: models/kptschedulemodel.cpp:374
-#, fuzzy
-#| msgid "Modify schedule name"
-msgctxt "(qtundo-format)"
-msgid "Modify schedule name"
-msgstr "កែប្រែ​ឈ្មោះ​កាល​វិភាគ​"
-
-#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
-msgid "Allow"
-msgstr "អនុញ្ញាត​"
-
-#: models/kptschedulemodel.cpp:441 models/kptschedulemodel.cpp:443
-msgid "Avoid"
-msgstr "ជៀស​វាង​"
-
-#: models/kptschedulemodel.cpp:463
-#, fuzzy
-#| msgid "Modify allow overbooking"
-msgctxt "(qtundo-format)"
-msgid "Modify allow overbooking"
-msgstr "កែប្រែ​ការ​កក់​លើស​ដែល​អនុញ្ញាត​​"
-
-#: models/kptschedulemodel.cpp:481 models/kptschedulemodel.cpp:483
-msgid "PERT"
-msgstr "PERT"
-
-#: models/kptschedulemodel.cpp:503
-#, fuzzy
-#| msgid "Modify scheduling distribution"
-msgctxt "(qtundo-format)"
-msgid "Modify scheduling distribution"
-msgstr "កែ​ប្រែ​ការចែក​ចាយ​ដែល​បាន​កំណត់​ពេល​"
-
-#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
-msgid "All"
-msgstr "ទាំង​អស់​"
-
-#: models/kptschedulemodel.cpp:521 models/kptschedulemodel.cpp:523
-msgid "Expected only"
-msgstr "តែ​រំពឹង​ទុក​ប៉ុណ្ណោះ​"
-
-#: models/kptschedulemodel.cpp:572
-#, fuzzy, kde-format
-#| msgid "Scheduled start: %1, target time: %2"
-msgctxt "@info:tooltip"
-msgid "Planned start: %1<nl/>Target start: %2"
-msgstr "បាន​កំណត់​ពេល​ចាប់ផ្តើម​ ៖ %1  ពេល​វេលា​គោល​ដៅ ៖ %2​"
-
-#: models/kptschedulemodel.cpp:574
-#, fuzzy, kde-format
-#| msgid "Earliest start:"
-msgctxt "@info:tooltip"
-msgid "Target start: %1"
-msgstr "ចាប់​ផ្តើម​មុន​គេ ៖​"
-
-#: models/kptschedulemodel.cpp:608
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "Planned finish: %1<nl/>Target finish: %2"
-msgstr ""
-
-#: models/kptschedulemodel.cpp:610
-#, fuzzy, kde-format
-#| msgid "Latest finish:"
-msgctxt "@info:tooltip"
-msgid "Target finish: %1"
-msgstr "បញ្ចប់​ក្រោយ​គេ ៖​"
-
-#: models/kptschedulemodel.cpp:633 models/kptschedulemodel.cpp:635
-msgid "Backwards"
-msgstr "ថយ​ក្រោយ​​"
-
-#: models/kptschedulemodel.cpp:633 models/kptschedulemodel.cpp:635
-msgid "Forward"
-msgstr "ទៅ​មុខ​"
-
-#: models/kptschedulemodel.cpp:655
-#, fuzzy
-#| msgid "Modify scheduling direction"
-msgctxt "(qtundo-format)"
-msgid "Modify scheduling direction"
-msgstr "កែប្រែ​ទិស​កំណត់​ពេល​"
-
-#: models/kptschedulemodel.cpp:673
-msgid "Unknown"
-msgstr "មិន​ស្គាល់​"
-
-#: models/kptschedulemodel.cpp:695
-#, fuzzy
-#| msgid "Modify scheduler"
-msgctxt "(qtundo-format)"
-msgid "Modify scheduler"
-msgstr "កែប្រែ​កម្មវិធី​កំណត់​ពេល​​"
-
-#: models/kptschedulemodel.cpp:789
-msgid "State"
-msgstr "ស្ថានភាព​"
-
-#: models/kptschedulemodel.cpp:790
-msgid "Direction"
-msgstr "ទិស​"
-
-#: models/kptschedulemodel.cpp:791
-msgid "Overbooking"
-msgstr "ការ​កក់​លើស​"
-
-#: models/kptschedulemodel.cpp:792
-msgid "Distribution"
-msgstr "ការចែក​ចាយ​"
-
-#: models/kptschedulemodel.cpp:794
-msgid "Planned Start"
-msgstr "ការ​​ចាប់ផ្ដើម​​ដែល​បាន​គ្រោង​"
-
-#: models/kptschedulemodel.cpp:795
-msgid "Planned Finish"
-msgstr "ការ​បញ្ចប់​ដែល​បាន​គ្រោង​"
-
-#: models/kptschedulemodel.cpp:796
-msgid "Scheduler"
-msgstr "កម្មវិធី​កំណត់​ពេល​"
-
-#: models/kptschedulemodel.cpp:1044
-msgid "Phase"
-msgstr "ដំណាក់កាល​"
-
-#: models/kptschedulemodel.cpp:1044
-msgid "Severity"
-msgstr "ភាព​ធ្ងន់​ធ្ងរ​"
-
-#: models/kptschedulemodel.cpp:1044
-msgid "Message"
-msgstr "សារ "
 
 #: models/kptnodeitemmodel.cpp:148
 msgctxt "@info:tooltip"
@@ -2963,6 +2829,279 @@ msgstr "បន្ថែម​ភារកិច្ច​"
 msgctxt "(qtundo-format)"
 msgid "Add sub-task"
 msgstr "បន្ថែម​ភារកិច្ច​រង​"
+
+#: models/kptschedulemodel.cpp:385
+#, fuzzy
+#| msgid "Modify schedule name"
+msgctxt "(qtundo-format)"
+msgid "Modify schedule name"
+msgstr "កែប្រែ​ឈ្មោះ​កាល​វិភាគ​"
+
+#: models/kptschedulemodel.cpp:455 models/kptschedulemodel.cpp:458
+msgid "Allow"
+msgstr "អនុញ្ញាត​"
+
+#: models/kptschedulemodel.cpp:455 models/kptschedulemodel.cpp:461
+msgid "Avoid"
+msgstr "ជៀស​វាង​"
+
+#: models/kptschedulemodel.cpp:458
+#, fuzzy
+#| msgid "Avoid"
+msgid "(Avoid)"
+msgstr "ជៀស​វាង​"
+
+#: models/kptschedulemodel.cpp:461
+#, fuzzy
+#| msgid "Allow"
+msgid "(Allow)"
+msgstr "អនុញ្ញាត​"
+
+#: models/kptschedulemodel.cpp:469
+#, fuzzy
+#| msgid "Modify allow overbooking"
+msgctxt "@info:tooltip"
+msgid "Allow overbooking resources"
+msgstr "កែប្រែ​ការ​កក់​លើស​ដែល​អនុញ្ញាត​​"
+
+#: models/kptschedulemodel.cpp:470 models/kptschedulemodel.cpp:480
+#, fuzzy
+#| msgid "Move resource"
+#| msgid_plural "Move %1 resources"
+msgctxt "@info:tooltip"
+msgid "Avoid overbooking resources"
+msgstr "ផ្លាស់​ទី​ធនធាន %1"
+
+#: models/kptschedulemodel.cpp:474
+msgctxt "@info:tooltip"
+msgid "Allow overbooking of resources"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:475
+#, kde-format
+msgctxt "@info:tooltip 1=scheduler name"
+msgid "%1 allways allows overbooking of resources"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:479
+#, kde-format
+msgctxt "@info:tooltip 1=scheduler name"
+msgid "%1 allways avoids overbooking of resources"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:484
+#, fuzzy
+#| msgid "Avoid"
+msgctxt "@label:listbox"
+msgid "Avoid"
+msgstr "ជៀស​វាង​"
+
+#: models/kptschedulemodel.cpp:484
+#, fuzzy
+#| msgid "Allow"
+msgctxt "@label:listbox"
+msgid "Allow"
+msgstr "អនុញ្ញាត​"
+
+#: models/kptschedulemodel.cpp:504
+#, fuzzy
+#| msgid "Modify allow overbooking"
+msgctxt "(qtundo-format)"
+msgid "Modify allow overbooking"
+msgstr "កែប្រែ​ការ​កក់​លើស​ដែល​អនុញ្ញាត​​"
+
+#: models/kptschedulemodel.cpp:521
+msgid "PERT"
+msgstr "PERT"
+
+#: models/kptschedulemodel.cpp:524
+#, fuzzy
+msgctxt "@info:tooltip"
+msgid "Use PERT distribution to calculate expected estimate for the tasks"
+msgstr ""
+"ហានិភ័យ​គ្រប់​គ្រង​ច្បាប់​ PERT ​ដែល​ត្រូវ​ប្រើ​ នៅ​ពេល​គណនា​ការ​ប៉ាន់​ស្មាន​ជាក់ស្តែង​សម្រាប់​ភារកិច្ច​នេះ​"
+
+#: models/kptschedulemodel.cpp:525
+msgctxt "@info:tooltip"
+msgid "Use the tasks expected estimate directly"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:527
+#, fuzzy
+#| msgid "None"
+msgctxt "@label:listbox"
+msgid "None"
+msgstr "គ្មាន​"
+
+#: models/kptschedulemodel.cpp:527
+#, fuzzy
+#| msgid "PERT"
+msgctxt "@label:listbox"
+msgid "PERT"
+msgstr "PERT"
+
+#: models/kptschedulemodel.cpp:547
+#, fuzzy
+#| msgid "Modify scheduling distribution"
+msgctxt "(qtundo-format)"
+msgid "Modify scheduling distribution"
+msgstr "កែ​ប្រែ​ការចែក​ចាយ​ដែល​បាន​កំណត់​ពេល​"
+
+#: models/kptschedulemodel.cpp:565 models/kptschedulemodel.cpp:567
+msgid "All"
+msgstr "ទាំង​អស់​"
+
+#: models/kptschedulemodel.cpp:565 models/kptschedulemodel.cpp:567
+msgid "Expected only"
+msgstr "តែ​រំពឹង​ទុក​ប៉ុណ្ណោះ​"
+
+#: models/kptschedulemodel.cpp:616
+#, fuzzy, kde-format
+#| msgid "Scheduled start: %1, target time: %2"
+msgctxt "@info:tooltip"
+msgid "Planned start: %1<nl/>Target start: %2"
+msgstr "បាន​កំណត់​ពេល​ចាប់ផ្តើម​ ៖ %1  ពេល​វេលា​គោល​ដៅ ៖ %2​"
+
+#: models/kptschedulemodel.cpp:618
+#, fuzzy, kde-format
+#| msgid "Earliest start:"
+msgctxt "@info:tooltip"
+msgid "Target start: %1"
+msgstr "ចាប់​ផ្តើម​មុន​គេ ៖​"
+
+#: models/kptschedulemodel.cpp:652
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "Planned finish: %1<nl/>Target finish: %2"
+msgstr ""
+
+#: models/kptschedulemodel.cpp:654
+#, fuzzy, kde-format
+#| msgid "Latest finish:"
+msgctxt "@info:tooltip"
+msgid "Target finish: %1"
+msgstr "បញ្ចប់​ក្រោយ​គេ ៖​"
+
+#: models/kptschedulemodel.cpp:680 models/kptschedulemodel.cpp:686
+msgid "Backwards"
+msgstr "ថយ​ក្រោយ​​"
+
+#: models/kptschedulemodel.cpp:680 models/kptschedulemodel.cpp:683
+msgid "Forward"
+msgstr "ទៅ​មុខ​"
+
+#: models/kptschedulemodel.cpp:683
+#, fuzzy
+#| msgid "Backwards"
+msgid "(Backwards)"
+msgstr "ថយ​ក្រោយ​​"
+
+#: models/kptschedulemodel.cpp:686
+#, fuzzy
+#| msgid "Forward"
+msgid "(Forward)"
+msgstr "ទៅ​មុខ​"
+
+#: models/kptschedulemodel.cpp:694 models/kptschedulemodel.cpp:704
+#, fuzzy
+#| msgid "Schedule project from: %1"
+msgctxt "@info:tooltip"
+msgid "Schedule project from target end time"
+msgstr "កំណត់​ពេល​​គម្រោង​ពី ៖ %1​"
+
+#: models/kptschedulemodel.cpp:695 models/kptschedulemodel.cpp:700
+#, fuzzy
+#| msgid "Schedule project from: %1"
+msgctxt "@info:tooltip"
+msgid "Schedule project from target start time"
+msgstr "កំណត់​ពេល​​គម្រោង​ពី ៖ %1​"
+
+#: models/kptschedulemodel.cpp:699
+#, fuzzy, kde-format
+#| msgctxt "infor:tooltip"
+#| msgid "Available from project target start time: %1"
+msgctxt "@info:tooltip 1=scheduler name"
+msgid "%1 allways schedules from target start time"
+msgstr "អាច​មាន​ពី​ពេលវេលា​ចាប់ផ្ដើម​គោលដៅ​គម្រោង ៖ %1"
+
+#: models/kptschedulemodel.cpp:705
+#, fuzzy, kde-format
+#| msgid "Schedule from end time: %1"
+msgctxt "@info:tooltip 1=scheduler name"
+msgid "%1 allways schedules from target end time"
+msgstr "កំណត់​ពេល​ចាប់​ពី​ពេល​​បញ្ចប់ ៖ %1​"
+
+#: models/kptschedulemodel.cpp:709
+#, fuzzy
+#| msgid "Forward"
+msgctxt "@label:listbox"
+msgid "Forward"
+msgstr "ទៅ​មុខ​"
+
+#: models/kptschedulemodel.cpp:709
+#, fuzzy
+#| msgid "Backwards"
+msgctxt "@label:listbox"
+msgid "Backwards"
+msgstr "ថយ​ក្រោយ​​"
+
+#: models/kptschedulemodel.cpp:729
+#, fuzzy
+#| msgid "Modify scheduling direction"
+msgctxt "(qtundo-format)"
+msgid "Modify scheduling direction"
+msgstr "កែប្រែ​ទិស​កំណត់​ពេល​"
+
+#: models/kptschedulemodel.cpp:747
+msgid "Unknown"
+msgstr "មិន​ស្គាល់​"
+
+#: models/kptschedulemodel.cpp:772
+#, fuzzy
+#| msgid "Modify scheduler"
+msgctxt "(qtundo-format)"
+msgid "Modify scheduler"
+msgstr "កែប្រែ​កម្មវិធី​កំណត់​ពេល​​"
+
+#: models/kptschedulemodel.cpp:866
+msgid "State"
+msgstr "ស្ថានភាព​"
+
+#: models/kptschedulemodel.cpp:867
+msgid "Direction"
+msgstr "ទិស​"
+
+#: models/kptschedulemodel.cpp:868
+msgid "Overbooking"
+msgstr "ការ​កក់​លើស​"
+
+#: models/kptschedulemodel.cpp:869
+msgid "Distribution"
+msgstr "ការចែក​ចាយ​"
+
+#: models/kptschedulemodel.cpp:871
+msgid "Planned Start"
+msgstr "ការ​​ចាប់ផ្ដើម​​ដែល​បាន​គ្រោង​"
+
+#: models/kptschedulemodel.cpp:872
+msgid "Planned Finish"
+msgstr "ការ​បញ្ចប់​ដែល​បាន​គ្រោង​"
+
+#: models/kptschedulemodel.cpp:873
+msgid "Scheduler"
+msgstr "កម្មវិធី​កំណត់​ពេល​"
+
+#: models/kptschedulemodel.cpp:1121
+msgid "Phase"
+msgstr "ដំណាក់កាល​"
+
+#: models/kptschedulemodel.cpp:1121
+msgid "Severity"
+msgstr "ភាព​ធ្ងន់​ធ្ងរ​"
+
+#: models/kptschedulemodel.cpp:1121
+msgid "Message"
+msgstr "សារ "
 
 #: ui/kptaccountseditor.cpp:227
 msgid "Add Account"
