@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktimetracker\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-09-29 04:15+0200\n"
+"POT-Creation-Date: 2011-09-30 04:09+0200\n"
 "PO-Revision-Date: 2010-06-08 14:46+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -31,20 +31,20 @@ msgstr "នាំចេញ​ទៅ​ក្ដារតម្បៀតខ្ទ
 
 #. i18n: file: csvexportdialog_base.ui:176
 #. i18n: ectx: property (text), item, widget (QComboBox, combodecimalminutes)
-#: csvexportdialog.cpp:93 rc.cpp:163
+#: csvexportdialog.cpp:93 rc.cpp:166
 msgctxt "format to display times"
 msgid "Decimal"
 msgstr "គោលដប់​"
 
 #. i18n: file: csvexportdialog_base.ui:203
 #. i18n: ectx: property (text), item, widget (QComboBox, combosessiontimes)
-#: csvexportdialog.cpp:108 rc.cpp:172
+#: csvexportdialog.cpp:108 rc.cpp:175
 msgid "Session Times"
 msgstr "ពេលវេលា​សម័យ"
 
 #. i18n: file: csvexportdialog_base.ui:220
 #. i18n: ectx: property (text), item, widget (QComboBox, comboalltasks)
-#: csvexportdialog.cpp:109 rc.cpp:175
+#: csvexportdialog.cpp:109 rc.cpp:178
 msgid "All Tasks"
 msgstr "ភារកិច្ច​ទាំងអស់"
 
@@ -75,6 +75,11 @@ msgstr "នេះ​មិន​មែន​ជា​កាលបរិច្ឆ
 #: historydialog.cpp:260
 msgid "Please select a task to delete."
 msgstr "សូម​ជ្រើស​ភារកិច្ច​ត្រូវ​លុប​ ។"
+
+#: idletimedetector.cpp:113
+#, kde-format
+msgid "Desktop has been idle since %1. What do you want to do ?"
+msgstr ""
 
 #: idletimedetector.cpp:118
 #, kde-format
@@ -416,8 +421,10 @@ msgstr "រក្សាទុក​ភារកិច្ច​នូវ​រា
 #. i18n: file: edittaskdialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, EditTaskDialog)
 #: rc.cpp:68
-msgid "Dialog"
-msgstr "ប្រអប់​"
+#, fuzzy
+#| msgid "Edit Task"
+msgid "Add/Edit a task"
+msgstr "កែសម្រួល​ភារកិច្ច"
 
 #. i18n: file: edittaskdialog.ui:26
 #. i18n: ectx: property (text), widget (QLabel, tasknamelabel)
@@ -458,34 +465,40 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-style:"
 "italic;\">ឧទាហរណ៍​ ៖​​</span> និយាយ​ទូរស័ព្ទ​ជាមួយ​ម្ដាយ​</p></body></html>"
 
-#. i18n: file: edittaskdialog.ui:57
-#. i18n: ectx: property (whatsThis), widget (QPushButton, edittimespushbutton)
+#. i18n: file: edittaskdialog.ui:51
+#. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:82
+msgid "Description:"
+msgstr ""
+
+#. i18n: file: edittaskdialog.ui:74
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:85
+msgid "Change time (in minutes, e.g. -60)"
+msgstr "ផ្លាស់ប្ដូរ​ពេលវេលា​​ (​គិតជា​នាទី​​ ឧ. -៦០)​"
+
+#. i18n: file: edittaskdialog.ui:103
+#. i18n: ectx: property (title), widget (QGroupBox, autotrackinggroupbox)
+#: rc.cpp:88
+msgid "Auto Tracking"
+msgstr "តាមដាន​ដោយ​ស្វ័យ​ប្រវត្តិ​"
+
+#. i18n: file: edittaskdialog.ui:133
+#. i18n: ectx: property (whatsThis), widget (QPushButton, edittimespushbutton)
+#: rc.cpp:91
 #, fuzzy
 msgid "To change this task's time, you have to edit its event history."
 msgstr "ដើម្បី​ប្ដូរ​ពេលវេលា​ភារកិច្ច​នេះ​​ អ្នក​ត្រូវ​កែសម្រួល​ប្រវត្តិ​ព្រឹត្តិការណ៍​របស់​វា​ ។"
 
-#. i18n: file: edittaskdialog.ui:60
+#. i18n: file: edittaskdialog.ui:136
 #. i18n: ectx: property (text), widget (QPushButton, edittimespushbutton)
-#: rc.cpp:85
+#: rc.cpp:94
 msgid "Edit Times"
 msgstr "កែសម្រួល​ពេលវេលា​"
 
-#. i18n: file: edittaskdialog.ui:73
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:88
-msgid "Change time (in minutes, e.g. -60)"
-msgstr "ផ្លាស់ប្ដូរ​ពេលវេលា​​ (​គិតជា​នាទី​​ ឧ. -៦០)​"
-
-#. i18n: file: edittaskdialog.ui:90
-#. i18n: ectx: property (title), widget (QGroupBox, autotrackinggroupbox)
-#: rc.cpp:91
-msgid "Auto Tracking"
-msgstr "តាមដាន​ដោយ​ស្វ័យ​ប្រវត្តិ​"
-
 #. i18n: file: new/mainwindow.ui:50
 #. i18n: ectx: property (title), widget (QMenu, menuFile)
-#: rc.cpp:94
+#: rc.cpp:97
 msgid "File"
 msgstr "ឯកសារ​"
 
@@ -493,55 +506,55 @@ msgstr "ឯកសារ​"
 #. i18n: ectx: property (title), widget (QMenu, menuHelp)
 #. i18n: file: new/mainwindow.ui:104
 #. i18n: ectx: property (text), widget (QToolBar, toolBar)
-#: rc.cpp:97 rc.cpp:115
+#: rc.cpp:100 rc.cpp:118
 msgid "Help"
 msgstr "ជំនួយ​"
 
 #. i18n: file: new/mainwindow.ui:64
 #. i18n: ectx: property (title), widget (QMenu, menuConfigure)
-#: rc.cpp:100
+#: rc.cpp:103
 msgid "Configure"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​"
 
 #. i18n: file: new/mainwindow.ui:75
 #. i18n: ectx: property (windowTitle), widget (QToolBar, toolBar)
-#: rc.cpp:103
+#: rc.cpp:106
 msgid "toolBar"
 msgstr "របារ​ឧបករណ៍​"
 
 #. i18n: file: new/mainwindow.ui:89
 #. i18n: ectx: property (text), widget (QToolBar, toolBar)
-#: rc.cpp:106
+#: rc.cpp:109
 msgid "Load"
 msgstr "ផ្ទុក​"
 
 #. i18n: file: new/mainwindow.ui:94
 #. i18n: ectx: property (text), widget (QToolBar, toolBar)
-#: rc.cpp:109
+#: rc.cpp:112
 msgid "Save"
 msgstr "រក្សាទុក​"
 
 #. i18n: file: new/mainwindow.ui:99
 #. i18n: ectx: property (text), widget (QToolBar, toolBar)
-#: rc.cpp:112
+#: rc.cpp:115
 msgid "Quit"
 msgstr "បោះបង់​"
 
 #. i18n: file: new/mainwindow.ui:109
 #. i18n: ectx: property (text), widget (QToolBar, toolBar)
-#: rc.cpp:118
+#: rc.cpp:121
 msgid "Configure ktimetracker"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​​ ktimetracker"
 
 #. i18n: file: historydialog.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, historydialog)
-#: rc.cpp:121
+#: rc.cpp:124
 msgid "Edit History"
 msgstr "កែសម្រួល​ប្រវត្តិ"
 
 #. i18n: file: historydialog.ui:23
 #. i18n: ectx: property (text), widget (QPushButton, deletepushbutton)
-#: rc.cpp:124
+#: rc.cpp:127
 #, fuzzy
 #| msgid "&Delete"
 msgid "Delete"
@@ -549,25 +562,25 @@ msgstr "លុប"
 
 #. i18n: file: historydialog.ui:33
 #. i18n: ectx: property (text), widget (QPushButton, okpushbutton)
-#: rc.cpp:127
+#: rc.cpp:130
 msgid "Close"
 msgstr ""
 
 #. i18n: file: csvexportdialog_base.ui:13
 #. i18n: ectx: property (windowTitle), widget (KDialog, CSVExportDialogBase)
-#: rc.cpp:130
+#: rc.cpp:133
 msgid "CSV Export"
 msgstr "នាំចេញ​ឯកសារ CSV"
 
 #. i18n: file: csvexportdialog_base.ui:36
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:133
+#: rc.cpp:136
 msgid "Export to:"
 msgstr "នាំចេញ​ទៅ​កាន់ ៖​"
 
 #. i18n: file: csvexportdialog_base.ui:46
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, urlExportTo)
-#: rc.cpp:136
+#: rc.cpp:139
 #, fuzzy
 #| msgid "The file where Karm will write the data."
 msgid "The file where KTimeTracker will write the data."
@@ -575,37 +588,37 @@ msgstr "ឯកសារ ដែល​ KTimeTracker នឹង​សរសេរ​
 
 #. i18n: file: csvexportdialog_base.ui:64
 #. i18n: ectx: property (text), widget (QLabel, quotesLabel)
-#: rc.cpp:139
+#: rc.cpp:142
 msgid "Quotes:"
 msgstr "ដកស្រង់ ៖​"
 
 #. i18n: file: csvexportdialog_base.ui:85
 #. i18n: ectx: property (whatsThis), widget (QComboBox, cboQuote)
-#: rc.cpp:142
+#: rc.cpp:145
 msgid "All fields are quoted in the output."
 msgstr "វាល​ទាំងអស់​ត្រូវបាន​ដក​ស្រង់​នៅក្នុង​កាង​បង្ហាញ ។"
 
 #. i18n: file: csvexportdialog_base.ui:89
 #. i18n: ectx: property (text), item, widget (QComboBox, cboQuote)
-#: rc.cpp:145
+#: rc.cpp:148
 msgid "\""
 msgstr "\""
 
 #. i18n: file: csvexportdialog_base.ui:94
 #. i18n: ectx: property (text), item, widget (QComboBox, cboQuote)
-#: rc.cpp:148
+#: rc.cpp:151
 msgid "'"
 msgstr "'"
 
 #. i18n: file: csvexportdialog_base.ui:105
 #. i18n: ectx: property (title), widget (QGroupBox, grpDateRange)
-#: rc.cpp:151
+#: rc.cpp:154
 msgid "Date Range"
 msgstr "ជួរ​កាលបរិច្ឆេទ"
 
 #. i18n: file: csvexportdialog_base.ui:108
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, grpDateRange)
-#: rc.cpp:154
+#: rc.cpp:157
 msgid ""
 "<p>An inclusive date range for reporting on time card history.  Not enabled "
 "when reporting on totals.</p>"
@@ -615,123 +628,123 @@ msgstr ""
 
 #. i18n: file: csvexportdialog_base.ui:114
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:157
+#: rc.cpp:160
 msgid "From:"
 msgstr "ពី ៖"
 
 #. i18n: file: csvexportdialog_base.ui:139
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:160
+#: rc.cpp:163
 msgid "To:"
 msgstr "ជូន​ចំពោះ ៖"
 
 #. i18n: file: csvexportdialog_base.ui:181
 #. i18n: ectx: property (text), item, widget (QComboBox, combodecimalminutes)
-#: rc.cpp:166
+#: rc.cpp:169
 msgid "Hours:Minutes"
 msgstr "ម៉ោង:នាទី"
 
 #. i18n: file: csvexportdialog_base.ui:198
 #. i18n: ectx: property (text), item, widget (QComboBox, combosessiontimes)
-#: rc.cpp:169
+#: rc.cpp:172
 msgid "All Times"
 msgstr "ពេលវេលា​ទាំងអស់"
 
 #. i18n: file: csvexportdialog_base.ui:225
 #. i18n: ectx: property (text), item, widget (QComboBox, comboalltasks)
-#: rc.cpp:178
+#: rc.cpp:181
 msgid "Only Selected"
 msgstr "តែ​បាន​ជ្រើស​ប៉ុណ្ណោះ​"
 
 #. i18n: file: csvexportdialog_base.ui:241
 #. i18n: ectx: property (title), widget (QGroupBox, grpDelimiter)
-#: rc.cpp:181
+#: rc.cpp:184
 msgid "Delimiter"
 msgstr "អ្នក​កំណត់​ព្រំដែន"
 
 #. i18n: file: csvexportdialog_base.ui:244
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, grpDelimiter)
-#: rc.cpp:184
+#: rc.cpp:187
 msgid "The character used to separate one field from another in the output."
 msgstr "តួអក្សរ​បាន​ប្រើ​ដើម្បី​បំបែក​វាល​មួយ​ពី​វាល​មួយ​ផ្សេង​ទៀត​នៅ​ក្នុង​លទ្ធផល ។"
 
 #. i18n: file: csvexportdialog_base.ui:256
 #. i18n: ectx: property (text), widget (QRadioButton, radioTab)
-#: rc.cpp:187
+#: rc.cpp:190
 msgctxt "tabulator delimiter"
 msgid "Tab"
 msgstr "ផ្ទាំង"
 
 #. i18n: file: csvexportdialog_base.ui:263
 #. i18n: ectx: property (text), widget (QRadioButton, radioOther)
-#: rc.cpp:190
+#: rc.cpp:193
 msgctxt "user can set an user defined delimiter"
 msgid "Other:"
 msgstr "ផ្សេងៗ ៖"
 
 #. i18n: file: csvexportdialog_base.ui:270
 #. i18n: ectx: property (text), widget (QRadioButton, radioSpace)
-#: rc.cpp:193
+#: rc.cpp:196
 msgid "Space"
 msgstr "ចន្លោះ"
 
 #. i18n: file: csvexportdialog_base.ui:277
 #. i18n: ectx: property (text), widget (QRadioButton, radioComma)
-#: rc.cpp:196
+#: rc.cpp:199
 msgid "Comma"
 msgstr "សញ្ញាក្បៀស ','"
 
 #. i18n: file: csvexportdialog_base.ui:314
 #. i18n: ectx: property (text), widget (QRadioButton, radioSemicolon)
-#: rc.cpp:199
+#: rc.cpp:202
 msgid "Semicolon"
 msgstr "សញ្ញា​ចំណុច​ក្បៀស​ ';'"
 
 #. i18n: file: ktimetrackerui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:202
+#: rc.cpp:205
 msgid "&File"
 msgstr "ឯកសារ"
 
 #. i18n: file: ktimetrackerui.rc:14
 #. i18n: ectx: Menu (import)
-#: rc.cpp:205
+#: rc.cpp:208
 msgid "&Import"
 msgstr "នាំចូល"
 
 #. i18n: file: ktimetrackerui.rc:18
 #. i18n: ectx: Menu (export)
-#: rc.cpp:208
+#: rc.cpp:211
 msgid "&Export"
 msgstr "នាំចេញ"
 
 #. i18n: file: ktimetrackerui.rc:27
 #. i18n: ectx: Menu (clock)
-#: rc.cpp:211
+#: rc.cpp:214
 msgid "&Clock"
 msgstr "នាឡិកា"
 
 #. i18n: file: ktimetrackerui.rc:34
 #. i18n: ectx: Menu (task)
-#: rc.cpp:214
+#: rc.cpp:217
 msgid "&Task"
 msgstr "ភារកិច្ច​"
 
 #. i18n: file: ktimetrackerui.rc:45
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:217
+#: rc.cpp:220
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: file: ktimetrackerui.rc:50
 #. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:220
+#: rc.cpp:223
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
 #. i18n: file: ktimetrackerui.rc:59
 #. i18n: ectx: ToolBar (taskToolBar)
-#: rc.cpp:223
+#: rc.cpp:226
 msgid "Tasks"
 msgstr "ភារកិច្ច"
 
@@ -808,7 +821,7 @@ msgctxt "combox entry for lowest priority"
 msgid "9 (lowest)"
 msgstr "៩ (ទាប​បំផុត)"
 
-#: taskview.cpp:300 taskview.cpp:887
+#: taskview.cpp:300 taskview.cpp:888
 msgid ""
 "Error storing new task. Your changes were not saved. Make sure you can edit "
 "your iCalendar file. Also quit all applications using this file and remove "
@@ -834,23 +847,23 @@ msgstr "មិនអាច​រក្សាទុក ។"
 msgid "New Task"
 msgstr "ភារកិច្ច​ថ្មី"
 
-#: taskview.cpp:872 taskview.cpp:944
+#: taskview.cpp:872 taskview.cpp:946
 msgid "Unnamed Task"
 msgstr "ភារកិច្ច​មិន​ទាន់មានឈ្មោះ​"
 
-#: taskview.cpp:926
+#: taskview.cpp:927
 msgid "New Sub Task"
 msgstr "ភារកិច្ច​រង​ថ្មី"
 
-#: taskview.cpp:939
+#: taskview.cpp:940
 msgid "Edit Task"
 msgstr "កែសម្រួល​ភារកិច្ច"
 
-#: taskview.cpp:977 taskview.cpp:1018 taskview.cpp:1040
+#: taskview.cpp:979 taskview.cpp:1020 taskview.cpp:1042
 msgid "No task selected."
 msgstr "គ្មាន​ភារកិច្ច​ដែល​បាន​ជ្រើស​ទេ ។​ "
 
-#: taskview.cpp:1026
+#: taskview.cpp:1028
 #, fuzzy
 #| msgid ""
 #| "Are you sure you want to delete the selected task(s) and their entire "
@@ -863,7 +876,7 @@ msgstr ""
 "តើ​អ្នក​ពិតជា​ចង់​លុប​ភារកិច្ច​ដែល​បាន​ជ្រើស និង​ប្រវត្តិ​របស់​វា​ទាំង​អស់​ឬ ?\n"
 "ចំណាំ ៖ ភារកិច្ច​រង​ទាំងអស់ ព្រមទាំង​ប្រវត្តិ​របស់​វា​ក៏​នឹង​ត្រូវ​បាន​លុប​ ។"
 
-#: taskview.cpp:1030
+#: taskview.cpp:1032
 msgid "Deleting Task"
 msgstr "លុប​ភារកិច្ច​"
 
@@ -1204,6 +1217,9 @@ msgstr "បង្ហាញ"
 #: treeviewheadercontextmenu.cpp:141
 msgid "Hide"
 msgstr "លាក់"
+
+#~ msgid "Dialog"
+#~ msgstr "ប្រអប់​"
 
 #~ msgid "This document has not been saved yet. Do you want to save it?"
 #~ msgstr "ឯកសារ​នេះ​មិន​ទាន់​ត្រូវ​បាន​រក្សាទុក​នៅ​ឡើយ​​ទេ ។ តើ​អ្នក​ចង់​រក្សាទុក​វា​ដែរឬទេ ?"
