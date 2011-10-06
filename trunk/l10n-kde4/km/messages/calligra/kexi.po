@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-03 02:36+0200\n"
+"POT-Creation-Date: 2011-10-06 02:38+0200\n"
 "PO-Revision-Date: 2010-06-29 10:05+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -50,12 +50,6 @@ msgid ""
 msgstr ""
 "តម្រៀប​ទិន្នន័យ​តាម​លំដាប់​ចុះ (ពី Z ទៅ A និង​ពី 9 ទៅ 0) ។ ប្រើ​ទិន្នន័យ​ពី​ជួរ​ឈរ​ដែល​បាន​ជ្រើស​សម្រាប់​​"
 "តម្រៀប ។"
-
-#: core/kexiprojectdata.cpp:192
-#, kde-format
-msgctxt "database connection"
-msgid "(connection %1)"
-msgstr "(ការ​តភ្ជាប់ %1)"
 
 #: core/kexicontexthelp.cpp:34 core/KoContextHelp.cpp:518
 #: core/KoContextHelp.cpp:550 core/KoContextHelp.cpp:560
@@ -669,6 +663,12 @@ msgid ""
 msgstr ""
 "មិនអាច​ទម្លាក់​គម្រោង​នេះ​បានទេ ។ ការ​តភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​សម្រាប់​គម្រោង​នេះ​ត្រូវ​បាន​បើក​បាន​​តែ​អាន​"
 "ប៉ុណ្ណោះ ។"
+
+#: core/kexiprojectdata.cpp:192
+#, kde-format
+msgctxt "database connection"
+msgid "(connection %1)"
+msgstr "(ការ​តភ្ជាប់ %1)"
 
 #: core/kexipart.cpp:69
 msgid "Details:"
@@ -1953,10 +1953,10 @@ msgstr "បោះបង់"
 msgid "*.ui|Qt Designer UI Files"
 msgstr "ឯកសារ​ចំណុច​ប្រទាក់​អ្នក​ប្រើ​របស់​កម្មវិធី​រចនា *.ui|Qt "
 
-#. i18n: file: main/startup/KexiConnSelector.ui:91
+#. i18n: file: widget/KexiConnectionSelector.ui:91
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
 #: formeditor/form.cpp:438 formeditor/form.cpp:439
-#: plugins/tables/kexitabledesignerview.cpp:351 rc.cpp:71
+#: plugins/tables/kexitabledesignerview.cpp:351 rc.cpp:89
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -3819,364 +3819,78 @@ msgstr "​ បន្ទាត់ ៖ %1 ជួរ​ឈរ ៖ %2 "
 msgid "Read only"
 msgstr "បាន​តែ​អាន"
 
-#: main/startup/KexiStartupFileWidget.cpp:260
-#: main/startup/KexiStartupFileHandler.cpp:294
-#, kde-format
-msgid "All Supported Files (%1)"
-msgstr "ឯកសារ​ដែល​បាន​​​គាំទ្រ​ទាំងអស់ (%1)"
-
-#: main/startup/KexiStartupFileWidget.cpp:367
-#: main/startup/KexiStartupFileWidget.cpp:409
-#: main/startup/KexiStartupFileHandler.cpp:410
-#: main/startup/KexiStartupFileHandler.cpp:454
-msgid "Enter a filename."
-msgstr "បញ្ចូល​ឈ្មោះ​ឯកសារ ។"
-
-#: main/startup/KexiStartupFileWidget.cpp:404
-#: main/startup/KexiStartupFileHandler.cpp:448
-#, kde-format
-msgid "The file \"%1\" does not exist."
-msgstr "មិន​ទាន់​មាន​ឯកសារ \"%1\" នៅ​ឡើយ​ទេ ។"
-
-#: main/startup/KexiStartupFileWidget.cpp:412
-#: main/startup/KexiStartupFileHandler.cpp:458
-#, kde-format
-msgid "The file \"%1\" is not readable."
-msgstr "ឯកសារ \"%1\" មិនអាច​អាន​បានទេ ។"
-
-#: main/startup/KexiStartupFileWidget.cpp:431
-#, kde-format
-msgid ""
-"The file \"%1\" already exists.\n"
-"Do you want to overwrite it?"
-msgstr ""
-"មាន​ឯកសារ \"%1\" រួច​ហើយ ។\n"
-"តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬទេ ?"
-
-#: main/startup/KexiStartupFileWidget.cpp:433
-#: main/startup/KexiStartupFileHandler.cpp:489
-#: plugins/reports/kexireportview.cpp:171
-#: plugins/reports/kexireportview.cpp:199
-#: plugins/reports/kexireportview.cpp:225
-msgid "Overwrite"
-msgstr "សរសេរ​ជាន់​លើ"
-
 #: main/startup/KexiStartup_p.cpp:75
 #, kde-format
 msgid "Saving \"%1\" project file to a new \"%2\" database format..."
 msgstr "រក្សាទុក​ឯកសារ​​គម្រោង \"%1\" ទៅ​ទ្រង់ទ្រាយ​មូលដ្ឋាន​ទិន្នន័យ \"%2\" ថ្មី..."
 
-#: main/startup/KexiConnSelector.cpp:78
-#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:123
-msgid "File"
-msgstr "ឯកសារ"
-
-#: main/startup/KexiConnSelector.cpp:166
-msgid "Add a new database connection"
-msgstr "បន្ថែម​ការ​ត​ភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​ថ្មី"
-
-#: main/startup/KexiConnSelector.cpp:167
-msgid "Edit selected database connection"
-msgstr "កែសម្រួល​ការតភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​ដែល​បាន​ជ្រើស"
-
-#: main/startup/KexiConnSelector.cpp:168
-msgid "Remove selected database connections"
-msgstr "យក​ការ​តភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​ដែល​បាន​ជ្រើស​ចេញ"
-
-#: main/startup/KexiConnSelector.cpp:397
-msgid "&Add"
-msgstr "បន្ថែម"
-
-#: main/startup/KexiConnSelector.cpp:397
-msgid "Add database connection"
-msgstr "បន្ថែម​កា​រតភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ"
-
-#: main/startup/KexiConnSelector.cpp:398
-msgid "Add New Database Connection"
-msgstr "បន្ថែម​កា​រតភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ"
-
-#: main/startup/KexiConnSelector.cpp:426
-msgid "&Save"
-msgstr "រក្សា​ទុក"
-
-#: main/startup/KexiConnSelector.cpp:427
-msgid "Save changes made to this database connection"
-msgstr "រក្សាទុក​ការ​ផ្លាស់ប្ដូរ​ដែលបាន​ធ្វើ​ទៅ​លើ​កា​រតភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​នេះ"
-
-#: main/startup/KexiConnSelector.cpp:428
-msgid "Edit Database Connection"
-msgstr "កែសម្រួល​ការ​ត​ភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ"
-
-#: main/startup/KexiConnSelector.cpp:453
-#, kde-format
-msgid ""
-"Do you want to remove database connection \"%1\" from the list of available "
-"connections?"
-msgstr "តើ​អ្នក​ចង់​យក​ការ​តភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​ \"%1\" ចេញ​ពី​បញ្ជី​ការ​តភ្ជាប់​ដែល​អាច​ប្រើ​បាន​ឬ ។"
-
-#: main/startup/KexiProjectSelector.cpp:75
-#, fuzzy, kde-format
-#| msgid "File"
-msgid "File (%1)"
-msgstr "ឯកសារ"
-
-#: main/startup/KexiProjectSelector.cpp:85
-#, fuzzy, kde-format
-#| msgctxt "Object name : Object type"
-#| msgid "%1 : %2"
-msgctxt "caption: server_info"
-msgid "%1: %2"
-msgstr "%1 : %2"
-
-#: main/startup/KexiProjectSelector.cpp:296
-#: main/startup/KexiStartupDialog.cpp:150
-#: main/startup/KexiStartupDialog.cpp:709
-msgid "Open Recent Project"
-msgstr "បើក​គម្រោង​ថ្មីៗ"
-
-#: main/startup/KexiProjectSelector.cpp:305
-#: main/startup/KexiOpenProjectAssistant.cpp:37
-msgid "Open Project"
-msgstr "បើក​គម្រោង"
-
-#: main/startup/KexiProjectSelector.cpp:309 main/startup/KexiStartup.cpp:171
-#: widget/kexidbconnectionwidget.cpp:400
-#: widget/navigator/KexiProjectListView.cpp:130
-#: widget/navigator/KexiProjectNavigator.cpp:110
-msgid "&Open"
-msgstr "បើក"
-
-#: main/startup/KexiProjectSelector.cpp:310
-#: widget/kexidbconnectionwidget.cpp:400
-msgid "Open Database Connection"
-msgstr "បើក​ការ​ត​ភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ"
-
-#: main/startup/KexiProjectSelector.cpp:312
-#, kde-format
-msgid "Select a project on <b>%1</b> database server to open:"
-msgstr "ជ្រើស​គម្រោង​លើ​ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ <b>%1</b>ដើម្បើ​បើក ៖"
-
-#: main/startup/KexiStartup.cpp:145
-msgid "Opening database"
-msgstr "បើក​មូលដ្ឋាន​ទិន្នន័យ"
-
-#: main/startup/KexiStartup.cpp:146
-msgid "Please enter the password."
-msgstr "សូម​បញ្ចូល​ពាក្យ​សម្ងាត់ ។"
-
-#: main/startup/KexiStartup.cpp:153
-msgid "local database server"
-msgstr "ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ​មូលដ្ឋាន"
-
-#: main/startup/KexiStartup.cpp:155
-#, kde-format
-msgid "Database server: %1"
-msgstr "ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ ៖ %1"
-
-#: main/startup/KexiStartup.cpp:159
-msgctxt "unspecified user"
-msgid "(unspecified)"
-msgstr "(មិន​បាន​បញ្ជាក់)"
-
-#: main/startup/KexiStartup.cpp:163
-#, kde-format
-msgid "Username: %1"
-msgstr "ឈ្មោះ​អ្នកប្រើ ៖ %1"
-
-#: main/startup/KexiStartup.cpp:169
-msgid "&Details"
-msgstr "សេចក្តី​លម្អិត"
-
-#: main/startup/KexiStartup.cpp:294
-#, kde-format
-msgid ""
-"Could not read connection information from connection shortcut file <nobr>"
-"\"%1\"</nobr>.<br><br>Check whether the file has valid contents."
+#: main/startup/KexiRecentProjectsModel.cpp:66
+msgid "Opened less than minute ago"
 msgstr ""
-"មិនអាច​អាន​ព័ត៌មាន​ការតភ្ជាប់​ពី​​ឯកសារ​ផ្លូវកាត់​ការ​តភ្ជាប់ <nobr>\"%1\"</nobr> ។<br><br>ពិនិត្យ​"
-"មើល​ថាតើ​ឯកសារ​មាន​មាតិកា​ត្រឹមត្រូវ ។"
 
-#: main/startup/KexiStartup.cpp:307
+#: main/startup/KexiRecentProjectsModel.cpp:68
 #, kde-format
-msgid ""
-"You have specified invalid argument (\"%1\") for \"type\" command-line "
-"option."
-msgstr "អ្នក​បាន​បញ្ជាក់​អាគុយម៉ង់​មិនត្រឹមត្រូវ (\"%1\") សម្រាប់​ជម្រើស​បន្ទាត់​ពាក្យ​បញ្ចា \"type\" ។"
+msgid "Opened 1 minute ago"
+msgid_plural "Opened %1 minutes ago"
+msgstr[0] ""
 
-#: main/startup/KexiStartup.cpp:362
+#: main/startup/KexiRecentProjectsModel.cpp:70
 #, kde-format
-msgid "You have specified invalid port number \"%1\"."
-msgstr "អ្នក​បាន​បញ្ជាក់​លេខ​ច្រក​មិន​ត្រឹមត្រូវ \"%1\" ។"
+msgid "Opened 1 hour ago"
+msgid_plural "Opened %1 hours ago"
+msgstr[0] ""
 
-#: main/startup/KexiStartup.cpp:379
-msgid "Could not start Kexi application this way."
-msgstr "មិនអាច​ចាប់ផ្ដើម​កម្មវិធី Kexi តាម​វិធី​នេះ​បាន​ទេ ។"
-
-#: main/startup/KexiStartup.cpp:383
-msgid "You have used both \"createdb\" and \"dropdb\" startup options."
-msgstr "អ្នកបាន​ប្រើ​ជម្រើស​ចាប់ផ្ដើម​ទាំងពីរ​គឺ \"createdb\" និង \"dropdb\" ។"
-
-#: main/startup/KexiStartup.cpp:389
-msgid "No project name specified."
-msgstr "មិនមាន​ឈ្មោះ​គម្រោង​បានបញ្ជាក់​ទេ ។"
-
-#: main/startup/KexiStartup.cpp:424
-msgid "You have used both \"user-mode\" and \"design-mode\" startup options."
-msgstr "អ្នក​បានប្រើ​ជម្រើស​ចាប់ផ្ដើម​ទាំងពីរ \"user-mode\" និង \"design-mode\" ។"
-
-#: main/startup/KexiStartup.cpp:446
+#: main/startup/KexiRecentProjectsModel.cpp:74
 #, kde-format
-msgid ""
-"Could not remove project.\n"
-"The file \"%1\" does not exist."
-msgstr ""
-"មិនអាច​យក​គម្រោង​ចេញ​បានទេ ។\n"
-"មិន​ទាន់មាន​ឯកសារ \"%1\" ទេ ។"
+msgid "Opened yesterday"
+msgid_plural "Opened %1 days ago"
+msgstr[0] ""
 
-#: main/startup/KexiStartup.cpp:487
+#: main/startup/KexiRecentProjectsModel.cpp:76
 #, kde-format
-msgid ""
-"Could not open shortcut file\n"
-"\"%1\"."
-msgstr ""
-"មិន​អាច​បើក​ឯកសារ​ផ្លូវកាត់\n"
-"\"%1\" ។"
+msgid "Opened over a month ago"
+msgid_plural "Opened %1 months ago"
+msgstr[0] ""
 
-#: main/startup/KexiStartup.cpp:515
+#: main/startup/KexiRecentProjectsModel.cpp:77
 #, kde-format
-msgid ""
-"Could not open connection data file\n"
-"\"%1\"."
-msgstr ""
-"មិន​អាច​បើក​ការ​តភ្ជាប់​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ​\n"
-"\"%1\" ។"
+msgid "Opened one year ago"
+msgid_plural "Opened %1 years ago"
+msgstr[0] ""
 
-#: main/startup/KexiStartup.cpp:599
-msgid ""
-"You have specified a few database objects to be opened automatically, using "
-"startup options.\n"
-"These options will be ignored because it is not available while creating or "
-"dropping projects."
-msgstr ""
-"អ្នក​បាន​បញ្ជាក់​វត្ថុ​មូលដ្ឋាន​ទិន្នន័យ​មួយ​ចំនួន​ឲ្យ​បើក​ដោយ​ស្វ័យ​ប្រវត្តិ ដោយ​ប្រើ​ជម្រើស​ចាប់ផ្ដើម ។\n"
-"ជម្រើស​ទាំងនេះ​នឹង​ត្រូវ​បាន​មិនអើពើ​ ពីព្រោះ​វា​មិនអាច​ប្រើ​បាន​ខណៈពេល​បង្កើត ឬ​ទម្លាក់​​គម្រោង ។"
-
-#: main/startup/KexiStartup.cpp:615
-#, kde-format
-msgid "Project \"%1\" created successfully."
-msgstr "បាន​បង្កើត​គម្រោង \"%1\" ដោយ​ជោគជ័យ ។"
-
-#: main/startup/KexiStartup.cpp:624
-#, kde-format
-msgid "Project \"%1\" dropped successfully."
-msgstr "បាន​ទម្លាក់​គម្រោង \"%1\" ដោយ​ជោគជ័យ ។"
-
-#: main/startup/KexiStartup.cpp:753 main/startup/KexiStartup.cpp:785
-msgid "<p>Could not open project.</p>"
-msgstr "<p>មិនអាច​បើក​គម្រោង​បានទេ ។</p>"
-
-#: main/startup/KexiStartup.cpp:754
-#, kde-format
-msgid "<p>The file <nobr>\"%1\"</nobr> does not exist or is not readable.</p>"
-msgstr "<p>មិនទាន់មាន​ឯកសារ <nobr>\"%1\"</nobr> នៅ​ឡើយ​ទេ ឬ​មិនអាច​អាន​បាន ។</p>"
-
-#: main/startup/KexiStartup.cpp:786
-#, kde-format
-msgid "<p>The file <nobr>\"%1\"</nobr> is not readable.</p>"
-msgstr "<p>ឯកសារ <nobr>\"%1\"</nobr> មិនអាច​អាន​បាន​ទេ ។</p>"
-
-#: main/startup/KexiStartup.cpp:808
-#, kde-format
-msgid ""
-"\"%1\" is an external file of type:\n"
-"\"%2\".\n"
-"Do you want to import the file as a Kexi project?"
-msgstr ""
-"\"%1\" គឺ​ជា​ប្រភេទ​ឯកសារ​ខាង​ក្រៅ ៖\n"
-"\"%2\".\n"
-"តើអ្នក​ចង់​នាំចូល​ឯកសារ​ជា​គម្រោង​របស់ Kexi ឬ ?"
-
-#: main/startup/KexiStartup.cpp:811
-msgid "Open External File"
-msgstr "បើក​ឯកសារ​ខាង​ក្រៅ"
-
-#: main/startup/KexiStartup.cpp:811
-msgid "Import..."
-msgstr "នាំចូល..."
-
-#: main/startup/KexiStartup.cpp:832
-#, kde-format
-msgid ""
-"The project file \"%1\" is recognized as compatible with \"%2\" database "
-"driver, while you have asked for \"%3\" database driver to be used.\n"
-"Do you want to use \"%4\" database driver?"
-msgstr ""
-"ឯកសារ​គម្រោង \"%1\" ត្រូវ​បាន​រៀប​ឆប​គ្នា​ជា​មួយ​នឹង​កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ \"%2\" ខណៈពេល​"
-"ដែលអ្នក​បាន​សួរ​រក​កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ \"%3\" ត្រូវ​បាន​ប្រើ ។\n"
-"តើ​អ្នក​ចង់​ប្រើ​កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ \"%4\" ឬ ?"
-
-#: main/startup/KexiStartup.cpp:855
-#, kde-format
-msgid ""
-"Previous version of database file format (\"%1\") is detected in the \"%2\" "
-"project file.\n"
-"Do you want to convert the project to a new \"%3\" format (recommended)?"
-msgstr ""
-"កំណែ​មុន​របស់​ទ្រង់ទ្រាយ​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ (\"%1\") ត្រូវ​បាន​រកឃើញ​នៅ​ក្នុង​ឯកសារ​គម្រោង \"%2\" "
-" ។\n"
-"តើ​អ្នក​ចង់​បម្លែង​គម្រោង​ទៅជា​ទ្រង់ទ្រាយ \"%3\" ថ្មី​ឬ (បាន​ផ្ដល់​អនុសាសន៍)?"
-
-#: main/startup/KexiStartup.cpp:864
-#, kde-format
-msgid ""
-"Failed to convert project file \"%1\" to a new \"%2\" format.\n"
-"The file format remains unchanged."
-msgstr ""
-"បាន​បរាជ័យ​ក្នុងកា​របម្លែង​ឯកសារ​គម្រោង \"%1\" ទៅជា​ទ្រង់ទ្រាយ \"%2\" ថ្មី ។\n"
-"ទ្រង់ទ្រាយ​ឯកសារ​នៅ​តែ​មិនបាន​ផ្លាស់ប្ដូរ ។"
-
-#: main/startup/KexiStartup.cpp:877
-msgid "Possible problems:"
-msgstr "បញ្ហា​ដែល​អាច​កើត​មាន ៖"
-
-#: main/startup/KexiStartup.cpp:882
-#, kde-format
-msgid "The file \"%1\" is not recognized as being supported by Kexi."
-msgstr "ឯកសារ \"%1\" មិនត្រូវ​បាន​ទទួលស្គាល់​​ថា​កំពុង​ត្រូវ​បានគាំទ្រ​ដោយ Kexi ទេ ។"
-
-#: main/startup/KexiStartup.cpp:885
-#, kde-format
-msgid ""
-"Database driver for this file type not found.\n"
-"Detected MIME type: %1"
-msgstr ""
-"រក​មិន​ឃើញ​​កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ​សម្រាប់​​ប្រភេទ​ឯកសារ​នេះ​ទេ ។\n"
-"បាន​រកឃើញ​ប្រភេទ MIME ៖ %1"
-
-#: main/startup/KexiStartup.cpp:921 main/startup/KexiStartup.cpp:925
-#, kde-format
-msgid ""
-"Could not load list of available projects for <b>%1</b> database server."
-msgstr "មិន​អាច​ផ្ទុក​បញ្ជី​គម្រោង​ដែលអាច​ប្រើ​បាន​សម្រាប់​ម៉ាស៊ីនបម្រើ​មូលដ្ឋាន​ទិន្នន័យ <b>%1</b> បាន​ទេ ។"
-
-#: main/startup/KexiStartup.cpp:962
-#, kde-format
-msgid ""
-"Failed saving connection data to\n"
-"\"%1\" file."
-msgstr ""
-"បាន​បរាជ័យ​ក្នុងការ​រក្សាទុក​ការ​តភ្ជាប់​ទិន្នន័យ​ទៅ​កាន់​\n"
-"ឯកសារ \"%1\" ។"
-
-#: main/startup/KexiStartupFileHandler.cpp:488
+#: main/startup/KexiRecentProjectsModel.cpp:110
 #, fuzzy
-#| msgid ""
-#| "The file \"%1\" already exists.\n"
-#| "Do you want to overwrite it?"
-msgid "This file already exists. Do you want to overwrite it?"
+#| msgid "Local server"
+msgid "on local server"
+msgstr "ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន"
+
+#: main/startup/KexiRecentProjectsModel.cpp:113
+#, fuzzy, kde-format
+#| msgid "Local server"
+msgid "on \"%1\" server"
+msgstr "ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន"
+
+#: main/startup/KexiRecentProjectsModel.cpp:121
+#, fuzzy, kde-format
+#| msgid "New database"
+msgctxt "File database <file>"
+msgid "File database %1"
+msgstr "មូលដ្ឋាន​ទិន្នន័យ​ថ្មី"
+
+#: main/startup/KexiRecentProjectsModel.cpp:126
+#, fuzzy, kde-format
+#| msgid "New database"
+msgctxt "<type> database"
+msgid "%1 database"
+msgstr "មូលដ្ឋាន​ទិន្នន័យ​ថ្មី"
+
+#: main/startup/KexiWelcomeAssistant.cpp:62
+msgid "Welcome to Kexi"
 msgstr ""
-"មាន​ឯកសារ \"%1\" រួច​ហើយ ។\n"
-"តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬទេ ?"
+
+#: main/startup/KexiWelcomeAssistant.cpp:63
+msgid "Select one of the recently used projects to open."
+msgstr ""
 
 #: main/startup/KexiNewProjectAssistant.cpp:86
 #, fuzzy
@@ -4359,6 +4073,11 @@ msgstr ""
 msgid "Try Again"
 msgstr ""
 
+#: main/startup/KexiOpenProjectAssistant.cpp:37
+#: widget/KexiProjectSelectorWidget.cpp:305
+msgid "Open Project"
+msgstr "បើក​គម្រោង"
+
 #: main/startup/KexiOpenProjectAssistant.cpp:38
 msgid ""
 "Select project to open. You can choose project stored in file or on database "
@@ -4408,65 +4127,224 @@ msgstr "បើក"
 msgid "Select project on database server <b>%1 (%2)</b> to open."
 msgstr "ជ្រើស​គម្រោង​លើ​ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ <b>%1</b>ដើម្បើ​បើក ៖"
 
-#: main/startup/KexiRecentProjectsModel.cpp:66
-msgid "Opened less than minute ago"
+#: main/startup/KexiStartup.cpp:145
+msgid "Opening database"
+msgstr "បើក​មូលដ្ឋាន​ទិន្នន័យ"
+
+#: main/startup/KexiStartup.cpp:146
+msgid "Please enter the password."
+msgstr "សូម​បញ្ចូល​ពាក្យ​សម្ងាត់ ។"
+
+#: main/startup/KexiStartup.cpp:153
+msgid "local database server"
+msgstr "ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ​មូលដ្ឋាន"
+
+#: main/startup/KexiStartup.cpp:155
+#, kde-format
+msgid "Database server: %1"
+msgstr "ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ ៖ %1"
+
+#: main/startup/KexiStartup.cpp:159
+msgctxt "unspecified user"
+msgid "(unspecified)"
+msgstr "(មិន​បាន​បញ្ជាក់)"
+
+#: main/startup/KexiStartup.cpp:163
+#, kde-format
+msgid "Username: %1"
+msgstr "ឈ្មោះ​អ្នកប្រើ ៖ %1"
+
+#: main/startup/KexiStartup.cpp:169
+msgid "&Details"
+msgstr "សេចក្តី​លម្អិត"
+
+#: main/startup/KexiStartup.cpp:171 widget/kexidbconnectionwidget.cpp:400
+#: widget/navigator/KexiProjectListView.cpp:130
+#: widget/navigator/KexiProjectNavigator.cpp:110
+#: widget/KexiProjectSelectorWidget.cpp:309
+msgid "&Open"
+msgstr "បើក"
+
+#: main/startup/KexiStartup.cpp:294
+#, kde-format
+msgid ""
+"Could not read connection information from connection shortcut file <nobr>"
+"\"%1\"</nobr>.<br><br>Check whether the file has valid contents."
 msgstr ""
+"មិនអាច​អាន​ព័ត៌មាន​ការតភ្ជាប់​ពី​​ឯកសារ​ផ្លូវកាត់​ការ​តភ្ជាប់ <nobr>\"%1\"</nobr> ។<br><br>ពិនិត្យ​"
+"មើល​ថាតើ​ឯកសារ​មាន​មាតិកា​ត្រឹមត្រូវ ។"
 
-#: main/startup/KexiRecentProjectsModel.cpp:68
+#: main/startup/KexiStartup.cpp:307
 #, kde-format
-msgid "Opened 1 minute ago"
-msgid_plural "Opened %1 minutes ago"
-msgstr[0] ""
+msgid ""
+"You have specified invalid argument (\"%1\") for \"type\" command-line "
+"option."
+msgstr "អ្នក​បាន​បញ្ជាក់​អាគុយម៉ង់​មិនត្រឹមត្រូវ (\"%1\") សម្រាប់​ជម្រើស​បន្ទាត់​ពាក្យ​បញ្ចា \"type\" ។"
 
-#: main/startup/KexiRecentProjectsModel.cpp:70
+#: main/startup/KexiStartup.cpp:362
 #, kde-format
-msgid "Opened 1 hour ago"
-msgid_plural "Opened %1 hours ago"
-msgstr[0] ""
+msgid "You have specified invalid port number \"%1\"."
+msgstr "អ្នក​បាន​បញ្ជាក់​លេខ​ច្រក​មិន​ត្រឹមត្រូវ \"%1\" ។"
 
-#: main/startup/KexiRecentProjectsModel.cpp:74
+#: main/startup/KexiStartup.cpp:379
+msgid "Could not start Kexi application this way."
+msgstr "មិនអាច​ចាប់ផ្ដើម​កម្មវិធី Kexi តាម​វិធី​នេះ​បាន​ទេ ។"
+
+#: main/startup/KexiStartup.cpp:383
+msgid "You have used both \"createdb\" and \"dropdb\" startup options."
+msgstr "អ្នកបាន​ប្រើ​ជម្រើស​ចាប់ផ្ដើម​ទាំងពីរ​គឺ \"createdb\" និង \"dropdb\" ។"
+
+#: main/startup/KexiStartup.cpp:389
+msgid "No project name specified."
+msgstr "មិនមាន​ឈ្មោះ​គម្រោង​បានបញ្ជាក់​ទេ ។"
+
+#: main/startup/KexiStartup.cpp:424
+msgid "You have used both \"user-mode\" and \"design-mode\" startup options."
+msgstr "អ្នក​បានប្រើ​ជម្រើស​ចាប់ផ្ដើម​ទាំងពីរ \"user-mode\" និង \"design-mode\" ។"
+
+#: main/startup/KexiStartup.cpp:446
 #, kde-format
-msgid "Opened yesterday"
-msgid_plural "Opened %1 days ago"
-msgstr[0] ""
+msgid ""
+"Could not remove project.\n"
+"The file \"%1\" does not exist."
+msgstr ""
+"មិនអាច​យក​គម្រោង​ចេញ​បានទេ ។\n"
+"មិន​ទាន់មាន​ឯកសារ \"%1\" ទេ ។"
 
-#: main/startup/KexiRecentProjectsModel.cpp:76
+#: main/startup/KexiStartup.cpp:487
 #, kde-format
-msgid "Opened over a month ago"
-msgid_plural "Opened %1 months ago"
-msgstr[0] ""
+msgid ""
+"Could not open shortcut file\n"
+"\"%1\"."
+msgstr ""
+"មិន​អាច​បើក​ឯកសារ​ផ្លូវកាត់\n"
+"\"%1\" ។"
 
-#: main/startup/KexiRecentProjectsModel.cpp:77
+#: main/startup/KexiStartup.cpp:515
 #, kde-format
-msgid "Opened one year ago"
-msgid_plural "Opened %1 years ago"
-msgstr[0] ""
+msgid ""
+"Could not open connection data file\n"
+"\"%1\"."
+msgstr ""
+"មិន​អាច​បើក​ការ​តភ្ជាប់​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ​\n"
+"\"%1\" ។"
 
-#: main/startup/KexiRecentProjectsModel.cpp:110
-#, fuzzy
-#| msgid "Local server"
-msgid "on local server"
-msgstr "ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន"
+#: main/startup/KexiStartup.cpp:599
+msgid ""
+"You have specified a few database objects to be opened automatically, using "
+"startup options.\n"
+"These options will be ignored because it is not available while creating or "
+"dropping projects."
+msgstr ""
+"អ្នក​បាន​បញ្ជាក់​វត្ថុ​មូលដ្ឋាន​ទិន្នន័យ​មួយ​ចំនួន​ឲ្យ​បើក​ដោយ​ស្វ័យ​ប្រវត្តិ ដោយ​ប្រើ​ជម្រើស​ចាប់ផ្ដើម ។\n"
+"ជម្រើស​ទាំងនេះ​នឹង​ត្រូវ​បាន​មិនអើពើ​ ពីព្រោះ​វា​មិនអាច​ប្រើ​បាន​ខណៈពេល​បង្កើត ឬ​ទម្លាក់​​គម្រោង ។"
 
-#: main/startup/KexiRecentProjectsModel.cpp:113
-#, fuzzy, kde-format
-#| msgid "Local server"
-msgid "on \"%1\" server"
-msgstr "ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន"
+#: main/startup/KexiStartup.cpp:615
+#, kde-format
+msgid "Project \"%1\" created successfully."
+msgstr "បាន​បង្កើត​គម្រោង \"%1\" ដោយ​ជោគជ័យ ។"
 
-#: main/startup/KexiRecentProjectsModel.cpp:121
-#, fuzzy, kde-format
-#| msgid "New database"
-msgctxt "File database <file>"
-msgid "File database %1"
-msgstr "មូលដ្ឋាន​ទិន្នន័យ​ថ្មី"
+#: main/startup/KexiStartup.cpp:624
+#, kde-format
+msgid "Project \"%1\" dropped successfully."
+msgstr "បាន​ទម្លាក់​គម្រោង \"%1\" ដោយ​ជោគជ័យ ។"
 
-#: main/startup/KexiRecentProjectsModel.cpp:126
-#, fuzzy, kde-format
-#| msgid "New database"
-msgctxt "<type> database"
-msgid "%1 database"
-msgstr "មូលដ្ឋាន​ទិន្នន័យ​ថ្មី"
+#: main/startup/KexiStartup.cpp:753 main/startup/KexiStartup.cpp:785
+msgid "<p>Could not open project.</p>"
+msgstr "<p>មិនអាច​បើក​គម្រោង​បានទេ ។</p>"
+
+#: main/startup/KexiStartup.cpp:754
+#, kde-format
+msgid "<p>The file <nobr>\"%1\"</nobr> does not exist or is not readable.</p>"
+msgstr "<p>មិនទាន់មាន​ឯកសារ <nobr>\"%1\"</nobr> នៅ​ឡើយ​ទេ ឬ​មិនអាច​អាន​បាន ។</p>"
+
+#: main/startup/KexiStartup.cpp:786
+#, kde-format
+msgid "<p>The file <nobr>\"%1\"</nobr> is not readable.</p>"
+msgstr "<p>ឯកសារ <nobr>\"%1\"</nobr> មិនអាច​អាន​បាន​ទេ ។</p>"
+
+#: main/startup/KexiStartup.cpp:808
+#, kde-format
+msgid ""
+"\"%1\" is an external file of type:\n"
+"\"%2\".\n"
+"Do you want to import the file as a Kexi project?"
+msgstr ""
+"\"%1\" គឺ​ជា​ប្រភេទ​ឯកសារ​ខាង​ក្រៅ ៖\n"
+"\"%2\".\n"
+"តើអ្នក​ចង់​នាំចូល​ឯកសារ​ជា​គម្រោង​របស់ Kexi ឬ ?"
+
+#: main/startup/KexiStartup.cpp:811
+msgid "Open External File"
+msgstr "បើក​ឯកសារ​ខាង​ក្រៅ"
+
+#: main/startup/KexiStartup.cpp:811
+msgid "Import..."
+msgstr "នាំចូល..."
+
+#: main/startup/KexiStartup.cpp:832
+#, kde-format
+msgid ""
+"The project file \"%1\" is recognized as compatible with \"%2\" database "
+"driver, while you have asked for \"%3\" database driver to be used.\n"
+"Do you want to use \"%4\" database driver?"
+msgstr ""
+"ឯកសារ​គម្រោង \"%1\" ត្រូវ​បាន​រៀប​ឆប​គ្នា​ជា​មួយ​នឹង​កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ \"%2\" ខណៈពេល​"
+"ដែលអ្នក​បាន​សួរ​រក​កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ \"%3\" ត្រូវ​បាន​ប្រើ ។\n"
+"តើ​អ្នក​ចង់​ប្រើ​កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ \"%4\" ឬ ?"
+
+#: main/startup/KexiStartup.cpp:855
+#, kde-format
+msgid ""
+"Previous version of database file format (\"%1\") is detected in the \"%2\" "
+"project file.\n"
+"Do you want to convert the project to a new \"%3\" format (recommended)?"
+msgstr ""
+"កំណែ​មុន​របស់​ទ្រង់ទ្រាយ​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ (\"%1\") ត្រូវ​បាន​រកឃើញ​នៅ​ក្នុង​ឯកសារ​គម្រោង \"%2\" "
+" ។\n"
+"តើ​អ្នក​ចង់​បម្លែង​គម្រោង​ទៅជា​ទ្រង់ទ្រាយ \"%3\" ថ្មី​ឬ (បាន​ផ្ដល់​អនុសាសន៍)?"
+
+#: main/startup/KexiStartup.cpp:864
+#, kde-format
+msgid ""
+"Failed to convert project file \"%1\" to a new \"%2\" format.\n"
+"The file format remains unchanged."
+msgstr ""
+"បាន​បរាជ័យ​ក្នុងកា​របម្លែង​ឯកសារ​គម្រោង \"%1\" ទៅជា​ទ្រង់ទ្រាយ \"%2\" ថ្មី ។\n"
+"ទ្រង់ទ្រាយ​ឯកសារ​នៅ​តែ​មិនបាន​ផ្លាស់ប្ដូរ ។"
+
+#: main/startup/KexiStartup.cpp:877
+msgid "Possible problems:"
+msgstr "បញ្ហា​ដែល​អាច​កើត​មាន ៖"
+
+#: main/startup/KexiStartup.cpp:882
+#, kde-format
+msgid "The file \"%1\" is not recognized as being supported by Kexi."
+msgstr "ឯកសារ \"%1\" មិនត្រូវ​បាន​ទទួលស្គាល់​​ថា​កំពុង​ត្រូវ​បានគាំទ្រ​ដោយ Kexi ទេ ។"
+
+#: main/startup/KexiStartup.cpp:885
+#, kde-format
+msgid ""
+"Database driver for this file type not found.\n"
+"Detected MIME type: %1"
+msgstr ""
+"រក​មិន​ឃើញ​​កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ​សម្រាប់​​ប្រភេទ​ឯកសារ​នេះ​ទេ ។\n"
+"បាន​រកឃើញ​ប្រភេទ MIME ៖ %1"
+
+#: main/startup/KexiStartup.cpp:921 main/startup/KexiStartup.cpp:925
+#, kde-format
+msgid ""
+"Could not load list of available projects for <b>%1</b> database server."
+msgstr "មិន​អាច​ផ្ទុក​បញ្ជី​គម្រោង​ដែលអាច​ប្រើ​បាន​សម្រាប់​ម៉ាស៊ីនបម្រើ​មូលដ្ឋាន​ទិន្នន័យ <b>%1</b> បាន​ទេ ។"
+
+#: main/startup/KexiStartup.cpp:962
+#, kde-format
+msgid ""
+"Failed saving connection data to\n"
+"\"%1\" file."
+msgstr ""
+"បាន​បរាជ័យ​ក្នុងការ​រក្សាទុក​ការ​តភ្ជាប់​ទិន្នន័យ​ទៅ​កាន់​\n"
+"ឯកសារ \"%1\" ។"
 
 #: main/startup/KexiStartupDialog.cpp:146
 #: main/startup/KexiStartupDialog.cpp:313
@@ -4477,6 +4355,12 @@ msgstr "បង្កើត​គម្រោង"
 #: main/startup/KexiStartupDialog.cpp:598
 msgid "Open Existing Project"
 msgstr "បើក​គម្រោង​ដែល​មាន​ស្រាប់"
+
+#: main/startup/KexiStartupDialog.cpp:150
+#: main/startup/KexiStartupDialog.cpp:709
+#: widget/KexiProjectSelectorWidget.cpp:296
+msgid "Open Recent Project"
+msgstr "បើក​គម្រោង​ថ្មីៗ"
 
 #: main/startup/KexiStartupDialog.cpp:152
 msgid "Choose Project"
@@ -4549,13 +4433,132 @@ msgid ""
 "database project."
 msgstr "Kexi នឹង​នាំចូល​រចនាសម្ព័ន្ធ និង​ទិន្នន័យ​​របស់​មូលដ្ឋាន​ទិន្នន័យ​ដែល​មាន​ស្រាប់ ជា​គម្រោង​ទិន្នន័យ​ថ្មី ។"
 
-#: main/startup/KexiWelcomeAssistant.cpp:62
-msgid "Welcome to Kexi"
+#: main/startup/KexiStartupFileHandler.cpp:294 widget/KexiFileWidget.cpp:260
+#, kde-format
+msgid "All Supported Files (%1)"
+msgstr "ឯកសារ​ដែល​បាន​​​គាំទ្រ​ទាំងអស់ (%1)"
+
+#: main/startup/KexiStartupFileHandler.cpp:410
+#: main/startup/KexiStartupFileHandler.cpp:454 widget/KexiFileWidget.cpp:367
+#: widget/KexiFileWidget.cpp:409
+msgid "Enter a filename."
+msgstr "បញ្ចូល​ឈ្មោះ​ឯកសារ ។"
+
+#: main/startup/KexiStartupFileHandler.cpp:448 widget/KexiFileWidget.cpp:404
+#, kde-format
+msgid "The file \"%1\" does not exist."
+msgstr "មិន​ទាន់​មាន​ឯកសារ \"%1\" នៅ​ឡើយ​ទេ ។"
+
+#: main/startup/KexiStartupFileHandler.cpp:458 widget/KexiFileWidget.cpp:412
+#, kde-format
+msgid "The file \"%1\" is not readable."
+msgstr "ឯកសារ \"%1\" មិនអាច​អាន​បានទេ ។"
+
+#: main/startup/KexiStartupFileHandler.cpp:488
+#, fuzzy
+#| msgid ""
+#| "The file \"%1\" already exists.\n"
+#| "Do you want to overwrite it?"
+msgid "This file already exists. Do you want to overwrite it?"
+msgstr ""
+"មាន​ឯកសារ \"%1\" រួច​ហើយ ។\n"
+"តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬទេ ?"
+
+#: main/startup/KexiStartupFileHandler.cpp:489
+#: plugins/reports/kexireportview.cpp:171
+#: plugins/reports/kexireportview.cpp:199
+#: plugins/reports/kexireportview.cpp:225 widget/KexiFileWidget.cpp:433
+msgid "Overwrite"
+msgstr "សរសេរ​ជាន់​លើ"
+
+#: main/KexiMainWindow_p.h:867
+msgid "Task-based tabbed toolbar groups commands for application using tabs."
+msgstr "ភារកិច្ច​មាន​មូលដ្ឋាន​លើ​ពាក្យ​បញ្ជា​ក្រុម​របារ​ឧបករណ៍​សម្រាប់​កម្មវិធី​ដោយ​ប្រើ​ផ្ទាំង ។"
+
+#: main/KexiMainWindow_p.h:904
+msgid "Shows bug reporting tool for Kexi application."
+msgstr "បង្ហាញ​កម្មវិធី​រាយការណ៍​កំហុស​សម្រាប់​កម្មវិធី Kexi ។"
+
+#: main/KexiMainWindow_p.h:906
+#, fuzzy
+#| msgid "Shows \"What's This\" tool."
+msgid "Activates \"What's This\" tool."
+msgstr "បង្ហាញ​ឧបករណ៍ \"នេះ​ជា​អ្វី\" ។"
+
+#: main/KexiMainWindow_p.h:908 migration/importwizard.cpp:967
+#: migration/importwizard.cpp:974 migration/importwizard.cpp:976
+#: migration/importwizard.cpp:978 migration/importwizard.cpp:980
+#: migration/importwizard.cpp:982
+msgid "Help"
+msgstr "ជំនួយ"
+
+#: main/KexiMainWindow_p.h:909
+msgid "Shows Kexi Handbook."
+msgstr "បង្ហាញ​សៀវភៅ​ដៃ​ Kexi ។"
+
+#: main/KexiMainWindow_p.h:911
+msgid "Shows information about Kexi application."
+msgstr "បង្ហាញ​ព័ត៌មាន​អំពី​កម្មវិធី Kexi ។"
+
+#: main/KexiMainWindow_p.h:913
+msgid "Shows information about K Desktop Environment."
+msgstr "បង្ហាញ​ព័ត៌មាន​អំពី​បរិស្ថាន​ផ្ទៃតុ K ។"
+
+#: main/KexiMainWindow_p.h:918
+#, fuzzy
+#| msgid "Show view menu"
+msgid "Show Help menu"
+msgstr "បង្ហាញ​ទិដ្ឋភាព​ម៉ឺនុយ"
+
+#: main/KexiMainWindow_p.h:919
+#, fuzzy
+#| msgid "Show view menu"
+msgid "Shows Help menu"
+msgstr "បង្ហាញ​ទិដ្ឋភាព​ម៉ឺនុយ"
+
+#: main/KexiMainWindow_p.h:930
+msgctxt "Help shortcut"
+msgid "Alt+H"
 msgstr ""
 
-#: main/startup/KexiWelcomeAssistant.cpp:63
-msgid "Select one of the recently used projects to open."
-msgstr ""
+#: main/KexiMainWindow_p.h:937
+#, fuzzy
+#| msgid "&Search:"
+msgid "Search"
+msgstr "ស្វែងរក ៖"
+
+#: main/KexiMainWindow_p.h:944
+#, fuzzy
+#| msgid "File"
+msgctxt "File menu"
+msgid "&File"
+msgstr "ឯកសារ"
+
+#: main/KexiMainWindow_p.h:966
+msgid "External Data"
+msgstr "ទិន្នន័យ​ខាងក្រៅ"
+
+#: main/KexiMainWindow_p.h:994
+msgid "Tools"
+msgstr "ឧបករណ៍"
+
+#: main/KexiMainWindow_p.h:999
+msgid "Form Design"
+msgstr "រចនាសំណុំ​បែបបទ"
+
+#: main/KexiMainWindow_p.h:1002
+msgid "Report Design"
+msgstr "រចនា​របាយការណ៍"
+
+#: main/KexiMainWindow_p.h:1664
+#, kde-format
+msgid "Could not start %1 application."
+msgstr "មិន​អាច​ចាប់ផ្ដើម​កម្មវិធី​ %1 បាន​ទេ ។"
+
+#: main/KexiMainWindow_p.h:1665
+#, kde-format
+msgid "Command \"%1\" failed."
+msgstr "បាន​បរាជ័យ​ពាក្យ​បញ្ជា \"%1\" ។"
 
 #: main/KexiMainWindow.cpp:181
 msgid "&Close Tab"
@@ -5353,95 +5356,6 @@ msgstr "តើ​អ្នក​ចង់​រក្សាទុក​ការ
 msgid "Do you want to save changes before showing page setup?"
 msgstr "តើ​អ្នក​ចង់​រក្សាទុក​ការ​ផ្លាស់ប្ដូរ​មុន​នឹង​បង្ហាញ​ការ​រៀបចំ​ទំព័រ​ឬ ?"
 
-#: main/KexiMainWindow_p.h:867
-msgid "Task-based tabbed toolbar groups commands for application using tabs."
-msgstr "ភារកិច្ច​មាន​មូលដ្ឋាន​លើ​ពាក្យ​បញ្ជា​ក្រុម​របារ​ឧបករណ៍​សម្រាប់​កម្មវិធី​ដោយ​ប្រើ​ផ្ទាំង ។"
-
-#: main/KexiMainWindow_p.h:904
-msgid "Shows bug reporting tool for Kexi application."
-msgstr "បង្ហាញ​កម្មវិធី​រាយការណ៍​កំហុស​សម្រាប់​កម្មវិធី Kexi ។"
-
-#: main/KexiMainWindow_p.h:906
-#, fuzzy
-#| msgid "Shows \"What's This\" tool."
-msgid "Activates \"What's This\" tool."
-msgstr "បង្ហាញ​ឧបករណ៍ \"នេះ​ជា​អ្វី\" ។"
-
-#: main/KexiMainWindow_p.h:908 migration/importwizard.cpp:967
-#: migration/importwizard.cpp:974 migration/importwizard.cpp:976
-#: migration/importwizard.cpp:978 migration/importwizard.cpp:980
-#: migration/importwizard.cpp:982
-msgid "Help"
-msgstr "ជំនួយ"
-
-#: main/KexiMainWindow_p.h:909
-msgid "Shows Kexi Handbook."
-msgstr "បង្ហាញ​សៀវភៅ​ដៃ​ Kexi ។"
-
-#: main/KexiMainWindow_p.h:911
-msgid "Shows information about Kexi application."
-msgstr "បង្ហាញ​ព័ត៌មាន​អំពី​កម្មវិធី Kexi ។"
-
-#: main/KexiMainWindow_p.h:913
-msgid "Shows information about K Desktop Environment."
-msgstr "បង្ហាញ​ព័ត៌មាន​អំពី​បរិស្ថាន​ផ្ទៃតុ K ។"
-
-#: main/KexiMainWindow_p.h:918
-#, fuzzy
-#| msgid "Show view menu"
-msgid "Show Help menu"
-msgstr "បង្ហាញ​ទិដ្ឋភាព​ម៉ឺនុយ"
-
-#: main/KexiMainWindow_p.h:919
-#, fuzzy
-#| msgid "Show view menu"
-msgid "Shows Help menu"
-msgstr "បង្ហាញ​ទិដ្ឋភាព​ម៉ឺនុយ"
-
-#: main/KexiMainWindow_p.h:930
-msgctxt "Help shortcut"
-msgid "Alt+H"
-msgstr ""
-
-#: main/KexiMainWindow_p.h:937
-#, fuzzy
-#| msgid "&Search:"
-msgid "Search"
-msgstr "ស្វែងរក ៖"
-
-#: main/KexiMainWindow_p.h:944
-#, fuzzy
-#| msgid "File"
-msgctxt "File menu"
-msgid "&File"
-msgstr "ឯកសារ"
-
-#: main/KexiMainWindow_p.h:966
-msgid "External Data"
-msgstr "ទិន្នន័យ​ខាងក្រៅ"
-
-#: main/KexiMainWindow_p.h:994
-msgid "Tools"
-msgstr "ឧបករណ៍"
-
-#: main/KexiMainWindow_p.h:999
-msgid "Form Design"
-msgstr "រចនាសំណុំ​បែបបទ"
-
-#: main/KexiMainWindow_p.h:1002
-msgid "Report Design"
-msgstr "រចនា​របាយការណ៍"
-
-#: main/KexiMainWindow_p.h:1664
-#, kde-format
-msgid "Could not start %1 application."
-msgstr "មិន​អាច​ចាប់ផ្ដើម​កម្មវិធី​ %1 បាន​ទេ ។"
-
-#: main/KexiMainWindow_p.h:1665
-#, kde-format
-msgid "Command \"%1\" failed."
-msgstr "បាន​បរាជ័យ​ពាក្យ​បញ្ជា \"%1\" ។"
-
 #: migration/importoptionsdlg.cpp:45
 msgid "Advanced Import Options"
 msgstr "ជម្រើស​នាំចូល​កម្រិត​ខ្ពស់"
@@ -5509,12 +5423,12 @@ msgstr "មិនអាច​ផ្ទុក​កម្មវិធី​បញ
 msgid "Column %1"
 msgstr "ជួរ​ឈរ %1"
 
-#. i18n: file: main/startup/KexiConnSelector.ui:96
+#. i18n: file: widget/KexiConnectionSelector.ui:96
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#. i18n: file: main/startup/KexiProjectSelector.ui:99
+#. i18n: file: widget/KexiProjectSelector.ui:99
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
 #: migration/AlterSchemaWidget.cpp:43
-#: plugins/tables/kexitabledesignerview.cpp:356 rc.cpp:74 rc.cpp:108
+#: plugins/tables/kexitabledesignerview.cpp:356 rc.cpp:92 rc.cpp:120
 msgid "Type"
 msgstr "ប្រភេទ"
 
@@ -5523,6 +5437,51 @@ msgstr "ប្រភេទ"
 #: plugins/tables/kexitabledesignerview.cpp:430
 msgid "Primary Key"
 msgstr "កូនសោ​សំខាន់"
+
+#: migration/keximigrate.cpp:78 migration/keximigrate.cpp:128
+#: migration/keximigrate.cpp:234 migration/keximigrate.cpp:304
+#, kde-format
+msgid "Could not create database \"%1\"."
+msgstr "មិនអាច​បង្កើត​មូលដ្ឋាន​ទិន្នន័យ \"%1\" បាន​ទេ ។"
+
+#: migration/keximigrate.cpp:151
+#, kde-format
+msgid "Could not get a list of table names for data source \"%1\"."
+msgstr "មិនអាច​ទទួល​បញ្ជី​ឈ្មោះ​តារាង​សម្រាប់​ប្រភព​ទិន្នន័យ \"%1\" ។"
+
+#: migration/keximigrate.cpp:161
+#, kde-format
+msgid "No tables to import found in data source \"%1\"."
+msgstr "រក​មិនឃើញ​តារាង​ត្រូវ​នាំចូល​នៅ​ក្នុង​ប្រភព​ទិន្នន័យ \"%1\" ។"
+
+#: migration/keximigrate.cpp:205
+#, kde-format
+msgid ""
+"Could not import project from data source \"%1\". Error reading table \"%2\"."
+msgstr "មិនអាច​នាំចូល​គម្រោង​ពី​ប្រភព​ទិន្នន័យ \"%1\" ។ កំហុស​ក្នុងការ​អាន​តារាង \"%2\" ។"
+
+#: migration/keximigrate.cpp:332
+#, kde-format
+msgid "Could not import project from data source \"%1\"."
+msgstr "មិនអាច​នាំចូល​គម្រោង​ពី​ប្រភព​ទិន្នន័យ \"%1\" ។"
+
+#: migration/keximigrate.cpp:408
+#, kde-format
+msgid "Could not import data from data source \"%1\"."
+msgstr "មិនអាច​នាំចូល​ទិន្នន័យ​ពី​ប្រភព​ទិន្នន័យ \"%1\" ។"
+
+#: migration/keximigrate.cpp:488
+msgid "Field Type"
+msgstr "ប្រភេទ​វាល"
+
+#: migration/keximigrate.cpp:489
+#, kde-format
+msgid ""
+"The data type for %1 could not be determined. Please select one of the "
+"following data types"
+msgstr ""
+"ប្រភេទ​ទិន្នន័យ​សម្រាប់ %1 មិនអាច​ត្រូវ​បាន​កំណត់ ។ សូម​ជ្រើស​ប្រភេទ​ទិន្នន័យ​ក្នុង​ចំណោម​ប្រភេទ​ទិន្នន័យ​ដូច​ខាង​"
+"ក្រោម"
 
 #: migration/importtablewizard.cpp:124
 msgid ""
@@ -5607,51 +5566,6 @@ msgstr "គ្មាន​តារាង​ត្រូវ​បាន​ជ្
 #, kde-format
 msgid "Unable to create table [%1]"
 msgstr "មិន​អាច​បង្កើត​មូលដ្ឋាន​ទិន្នន័យ \"%1\" បាន​ទេ ។​"
-
-#: migration/keximigrate.cpp:78 migration/keximigrate.cpp:128
-#: migration/keximigrate.cpp:234 migration/keximigrate.cpp:304
-#, kde-format
-msgid "Could not create database \"%1\"."
-msgstr "មិនអាច​បង្កើត​មូលដ្ឋាន​ទិន្នន័យ \"%1\" បាន​ទេ ។"
-
-#: migration/keximigrate.cpp:151
-#, kde-format
-msgid "Could not get a list of table names for data source \"%1\"."
-msgstr "មិនអាច​ទទួល​បញ្ជី​ឈ្មោះ​តារាង​សម្រាប់​ប្រភព​ទិន្នន័យ \"%1\" ។"
-
-#: migration/keximigrate.cpp:161
-#, kde-format
-msgid "No tables to import found in data source \"%1\"."
-msgstr "រក​មិនឃើញ​តារាង​ត្រូវ​នាំចូល​នៅ​ក្នុង​ប្រភព​ទិន្នន័យ \"%1\" ។"
-
-#: migration/keximigrate.cpp:205
-#, kde-format
-msgid ""
-"Could not import project from data source \"%1\". Error reading table \"%2\"."
-msgstr "មិនអាច​នាំចូល​គម្រោង​ពី​ប្រភព​ទិន្នន័យ \"%1\" ។ កំហុស​ក្នុងការ​អាន​តារាង \"%2\" ។"
-
-#: migration/keximigrate.cpp:332
-#, kde-format
-msgid "Could not import project from data source \"%1\"."
-msgstr "មិនអាច​នាំចូល​គម្រោង​ពី​ប្រភព​ទិន្នន័យ \"%1\" ។"
-
-#: migration/keximigrate.cpp:408
-#, kde-format
-msgid "Could not import data from data source \"%1\"."
-msgstr "មិនអាច​នាំចូល​ទិន្នន័យ​ពី​ប្រភព​ទិន្នន័យ \"%1\" ។"
-
-#: migration/keximigrate.cpp:488
-msgid "Field Type"
-msgstr "ប្រភេទ​វាល"
-
-#: migration/keximigrate.cpp:489
-#, kde-format
-msgid ""
-"The data type for %1 could not be determined. Please select one of the "
-"following data types"
-msgstr ""
-"ប្រភេទ​ទិន្នន័យ​សម្រាប់ %1 មិនអាច​ត្រូវ​បាន​កំណត់ ។ សូម​ជ្រើស​ប្រភេទ​ទិន្នន័យ​ក្នុង​ចំណោម​ប្រភេទ​ទិន្នន័យ​ដូច​ខាង​"
-"ក្រោម"
 
 #: migration/importwizard.cpp:68
 msgid "Import Database"
@@ -6336,114 +6250,6 @@ msgstr "មាន​សំណុំ​បែបបទ \"%1\" រួច​ហើ�
 msgid "Widgets"
 msgstr "ធាតុ​ក្រាហ្វិក"
 
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:65
-msgid "Copy"
-msgstr "ចម្លង"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:68
-#: widget/navigator/KexiProjectListView.cpp:202
-#: widget/navigator/KexiProjectNavigator.cpp:173
-msgid "Export"
-msgstr "នាំចេញ"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:78
-msgid "Copy Data From Table to Clipboard"
-msgstr "ចម្លង​ទិន្នន័យ​ពី​តារាង​ទៅ​ក្ដារ​តម្បៀតខ្ទាស់"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:79
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:87
-msgid "Copying data from table:"
-msgstr "ចម្លង​ទិន្នន័យ​ពី​តារាង ៖"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:81
-msgid "Export Data From Table to CSV File"
-msgstr "នាំចេញ​ទិន្នន័យ​ពី​តារាង​ទៅ​ឯកសារ CSV"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:82
-msgid "Exporting data from table:"
-msgstr "នាំចេញ​ទិន្នន័យ​ពី​តារាង ៖"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:86
-msgid "Copy Data From Query to Clipboard"
-msgstr "ចម្លង​ទិន្នន័យ​ពី​សំណួរ​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:89
-msgid "Export Data From Query to CSV File"
-msgstr "នាំចេញ​ទិន្នន័យ​ពីសំណួរ​ទៅ​ឯកសារ CSV"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:90
-msgid "Exporting data from query:"
-msgstr "នាំចេញ​ទិន្នន័យ​ពី​សំណួរ ៖"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:94
-msgid "Could not open data for exporting."
-msgstr "មិនអាច​បើក​ទិន្នន័យ​ដើម្បី​នាំចេញ​បាន​ទេ ។"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:115
-msgid "Enter Name of File You Want to Save Data To"
-msgstr "បញ្ចូល​ឈ្មោះ​របស់​ឯកសារ​ដែល​​អ្នក​ចង់​រក្សាទុក​ទិន្នន័យ"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:143
-msgid "To CSV file:"
-msgstr "ទៅ​ឯកសារ CSV ៖"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:143
-msgid "To clipboard:"
-msgstr "ទៅ​ក្តារ​តម្បៀត​ខ្ទាស់ ៖"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:156
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:367
-msgid "Show Options >>"
-msgstr "បង្ហាញ​ជម្រើស>>"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:178
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:224
-msgid "Delimiter:"
-msgstr "សញ្ញា​កំណត់​ព្រំដែន ៖"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:187
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:264
-msgid "Text quote:"
-msgstr "សម្រង់​អត្ថបទ ៖"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:211
-msgid "Add column names as the first row"
-msgstr "បន្ថែម​ឈ្មោះ​ជួរឈរ​ជា​ជួរដេក​ទីមួយ"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:217
-msgid "Always use above options for copying"
-msgstr "តែងតែ​ប្រើ​ជម្រើស​ខាង​លើ​សម្រាប់​ចម្លង​"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:218
-msgid "Always use above options for exporting"
-msgstr "តែងតែ​ប្រើ​ជម្រើស​ខាង​លើ​សម្រាប់​នាំចេញ"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:225
-msgid "Copying"
-msgstr "​ចម្លង"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:225
-msgid "Exporting"
-msgstr "​នាំចេញ"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:284
-#, kde-format
-msgid "(rows: %1, columns: %2)"
-msgstr "(ជួរដេក ៖ %1 ជួរឈរ ៖ %2)"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:286
-#, kde-format
-msgid "(columns: %1)"
-msgstr "(ជួរឈរ ៖ %1)"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:373
-msgid "Hide Options <<"
-msgstr "លាក់​ជម្រើស <<"
-
-#: plugins/importexport/csv/kexicsvexportwizard.cpp:389
-msgid "Defaults"
-msgstr "លំនាំ​ដើម"
-
 #: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:100
 msgid "CSV Import Options"
 msgstr "ជម្រើស​នាំចូល CVS"
@@ -6541,9 +6347,19 @@ msgstr "មើល​ទិន្នន័យ​ជា​មុន​ពី​ឯ
 msgid "Preview of data from clipboard"
 msgstr "មើល​ទិន្នន័យ​ជា​មុន​ពី​ក្ដារតម្បៀតខ្ទាស់"
 
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:224
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:178
+msgid "Delimiter:"
+msgstr "សញ្ញា​កំណត់​ព្រំដែន ៖"
+
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:256
 msgid "Primary key"
 msgstr "កូនសោ​ចម្បង"
+
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:264
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:187
+msgid "Text quote:"
+msgstr "សម្រង់​អត្ថបទ ៖"
 
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:288
 msgid "Ignore duplicated delimiters"
@@ -6671,6 +6487,104 @@ msgstr "(ជួរ​ដេក ៖ ច្រើន​ជាង %1)"
 #: plugins/importexport/csv/kexicsvimportdialog.cpp:1729
 msgid "Not all rows are visible on this preview"
 msgstr "មិន​អាច​មើល​ឃើញ​ជួរ​ដេក​ទាំង​អស់​លើ​ការ​មើល​ជា​មុន​នេះ​ទេ"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:65
+msgid "Copy"
+msgstr "ចម្លង"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:68
+#: widget/navigator/KexiProjectListView.cpp:202
+#: widget/navigator/KexiProjectNavigator.cpp:173
+msgid "Export"
+msgstr "នាំចេញ"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:78
+msgid "Copy Data From Table to Clipboard"
+msgstr "ចម្លង​ទិន្នន័យ​ពី​តារាង​ទៅ​ក្ដារ​តម្បៀតខ្ទាស់"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:79
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:87
+msgid "Copying data from table:"
+msgstr "ចម្លង​ទិន្នន័យ​ពី​តារាង ៖"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:81
+msgid "Export Data From Table to CSV File"
+msgstr "នាំចេញ​ទិន្នន័យ​ពី​តារាង​ទៅ​ឯកសារ CSV"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:82
+msgid "Exporting data from table:"
+msgstr "នាំចេញ​ទិន្នន័យ​ពី​តារាង ៖"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:86
+msgid "Copy Data From Query to Clipboard"
+msgstr "ចម្លង​ទិន្នន័យ​ពី​សំណួរ​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:89
+msgid "Export Data From Query to CSV File"
+msgstr "នាំចេញ​ទិន្នន័យ​ពីសំណួរ​ទៅ​ឯកសារ CSV"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:90
+msgid "Exporting data from query:"
+msgstr "នាំចេញ​ទិន្នន័យ​ពី​សំណួរ ៖"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:94
+msgid "Could not open data for exporting."
+msgstr "មិនអាច​បើក​ទិន្នន័យ​ដើម្បី​នាំចេញ​បាន​ទេ ។"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:115
+msgid "Enter Name of File You Want to Save Data To"
+msgstr "បញ្ចូល​ឈ្មោះ​របស់​ឯកសារ​ដែល​​អ្នក​ចង់​រក្សាទុក​ទិន្នន័យ"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:143
+msgid "To CSV file:"
+msgstr "ទៅ​ឯកសារ CSV ៖"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:143
+msgid "To clipboard:"
+msgstr "ទៅ​ក្តារ​តម្បៀត​ខ្ទាស់ ៖"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:156
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:367
+msgid "Show Options >>"
+msgstr "បង្ហាញ​ជម្រើស>>"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:211
+msgid "Add column names as the first row"
+msgstr "បន្ថែម​ឈ្មោះ​ជួរឈរ​ជា​ជួរដេក​ទីមួយ"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:217
+msgid "Always use above options for copying"
+msgstr "តែងតែ​ប្រើ​ជម្រើស​ខាង​លើ​សម្រាប់​ចម្លង​"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:218
+msgid "Always use above options for exporting"
+msgstr "តែងតែ​ប្រើ​ជម្រើស​ខាង​លើ​សម្រាប់​នាំចេញ"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:225
+msgid "Copying"
+msgstr "​ចម្លង"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:225
+msgid "Exporting"
+msgstr "​នាំចេញ"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:284
+#, kde-format
+msgid "(rows: %1, columns: %2)"
+msgstr "(ជួរដេក ៖ %1 ជួរឈរ ៖ %2)"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:286
+#, kde-format
+msgid "(columns: %1)"
+msgstr "(ជួរឈរ ៖ %1)"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:373
+msgid "Hide Options <<"
+msgstr "លាក់​ជម្រើស <<"
+
+#: plugins/importexport/csv/kexicsvexportwizard.cpp:389
+msgid "Defaults"
+msgstr "លំនាំ​ដើម"
 
 #: plugins/queries/kexiquerydesignersql.cpp:117
 msgid "SQL Query Text"
@@ -7269,6 +7183,11 @@ msgstr "ការ​រចនា​សំណុំ​បែបបទ \"%1\" ត�
 msgid "Script \"%1\" already exists."
 msgstr "មាន​សំណុំ​បែបបទ \"%1\" រួច​ហើយ ។"
 
+#: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:123
+#: widget/KexiConnectionSelectorWidget.cpp:88
+msgid "File"
+msgstr "ឯកសារ"
+
 #: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:125
 #: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:126
 #, fuzzy
@@ -7727,11 +7646,6 @@ msgstr "បង្កើត​សំណុំ​បែបបទ​ថ្មី �
 msgid "Record"
 msgstr "បន្ថែម​កំណត់​ត្រា"
 
-#: shapes/relationdesign/kexirelationdesigntool.cpp:95
-#: widget/kexidbconnectionwidget.cpp:373
-msgid "Open Database"
-msgstr "បើក​មូលដ្ឋាន​ទិន្នន័យ"
-
 #: shapes/relationdesign/kexirelationdesigntoolfactory.cpp:26
 #, fuzzy
 #| msgid "Relationship"
@@ -7747,6 +7661,11 @@ msgstr "ទំនាក់​ទំនង"
 #: shapes/relationdesign/kexirelationdesignfactory.cpp:28
 msgid "A kexi relation design shape"
 msgstr ""
+
+#: shapes/relationdesign/kexirelationdesigntool.cpp:100
+#: widget/kexidbconnectionwidget.cpp:373
+msgid "Open Database"
+msgstr "បើក​មូលដ្ឋាន​ទិន្នន័យ"
 
 #: widget/KexiObjectInfoLabel.cpp:106
 #, kde-format
@@ -7887,11 +7806,11 @@ msgid ""
 msgstr ""
 "សាកល្បង​ការ​តភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ ។ អ្នក​អាច​ប្រាកដ​ថា ព័ត៌មាន​តភ្ជាប់​ដែល​ត្រឹមត្រូវ​ត្រូវ​បាន​ផ្ដល់ ។"
 
-#. i18n: file: main/startup/KexiProjectSelector.ui:88
+#. i18n: file: widget/KexiProjectSelector.ui:88
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
 #. i18n: file: widget/kexidbconnectionwidget.ui:289
 #. i18n: ectx: property (title), widget (Q3GroupBox, dbGroupBox)
-#: widget/kexidbconnectionwidget.cpp:146 rc.cpp:105 rc.cpp:165
+#: widget/kexidbconnectionwidget.cpp:146 rc.cpp:117 rc.cpp:159
 msgid "Database"
 msgstr "មូលដ្ឋាន​ទិន្នន័យ"
 
@@ -7906,6 +7825,11 @@ msgstr "សេចក្តី​លម្អិត"
 #: widget/kexidbconnectionwidget.cpp:384
 msgid "Connect to a Database Server"
 msgstr "តភ្ជាប់​ទៅ​កាន់​ម៉ាស៊ីនបម្រើ​មូលដ្ឋាន​ទិន្នន័យ"
+
+#: widget/kexidbconnectionwidget.cpp:400
+#: widget/KexiProjectSelectorWidget.cpp:310
+msgid "Open Database Connection"
+msgstr "បើក​ការ​ត​ភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ"
 
 #: widget/kexiscrollview.cpp:362
 msgid "Outer Area"
@@ -7925,7 +7849,7 @@ msgstr "ផ្ទុក​រូបតំណាង​របស់ KDE តាម�
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:295
 #. i18n: ectx: property (text), widget (QLabel, nameLabel)
-#: widget/pixmapcollection.cpp:156 rc.cpp:168
+#: widget/pixmapcollection.cpp:156 rc.cpp:162
 msgid "&Name:"
 msgstr "ឈ្មោះ ៖"
 
@@ -8381,6 +8305,25 @@ msgstr "រចនា​​វត្ថុ​នៅ​ក្នុង​ទិដ
 msgid "Starts designing of the object in the list in text view."
 msgstr "ចាប់ផ្ដើម​កា​រចនា​វត្ថុ​​នៅ​ក្នុង​បញ្ជី​ទិដ្ឋភាព​អត្ថបទ ។"
 
+#: widget/KexiProjectSelectorWidget.cpp:75
+#, fuzzy, kde-format
+#| msgid "File"
+msgid "File (%1)"
+msgstr "ឯកសារ"
+
+#: widget/KexiProjectSelectorWidget.cpp:85
+#, fuzzy, kde-format
+#| msgctxt "Object name : Object type"
+#| msgid "%1 : %2"
+msgctxt "caption: server_info"
+msgid "%1: %2"
+msgstr "%1 : %2"
+
+#: widget/KexiProjectSelectorWidget.cpp:312
+#, kde-format
+msgid "Select a project on <b>%1</b> database server to open:"
+msgstr "ជ្រើស​គម្រោង​លើ​ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ <b>%1</b>ដើម្បើ​បើក ៖"
+
 #: widget/kexiqueryparameters.cpp:40
 msgctxt "Enter Query Parameter Value"
 msgid "Enter Parameter Value"
@@ -8395,6 +8338,58 @@ msgstr "បាទ/ចាស"
 msgctxt "Boolean False - No"
 msgid "No"
 msgstr "ទេ"
+
+#: widget/KexiConnectionSelectorWidget.cpp:62
+msgid "Add a new database connection"
+msgstr "បន្ថែម​ការ​ត​ភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​ថ្មី"
+
+#: widget/KexiConnectionSelectorWidget.cpp:63
+msgid "Edit selected database connection"
+msgstr "កែសម្រួល​ការតភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​ដែល​បាន​ជ្រើស"
+
+#: widget/KexiConnectionSelectorWidget.cpp:64
+msgid "Remove selected database connections"
+msgstr "យក​ការ​តភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​ដែល​បាន​ជ្រើស​ចេញ"
+
+#: widget/KexiConnectionSelectorWidget.cpp:394
+msgid "&Add"
+msgstr "បន្ថែម"
+
+#: widget/KexiConnectionSelectorWidget.cpp:394
+msgid "Add database connection"
+msgstr "បន្ថែម​កា​រតភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ"
+
+#: widget/KexiConnectionSelectorWidget.cpp:395
+msgid "Add New Database Connection"
+msgstr "បន្ថែម​កា​រតភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ"
+
+#: widget/KexiConnectionSelectorWidget.cpp:423
+msgid "&Save"
+msgstr "រក្សា​ទុក"
+
+#: widget/KexiConnectionSelectorWidget.cpp:424
+msgid "Save changes made to this database connection"
+msgstr "រក្សាទុក​ការ​ផ្លាស់ប្ដូរ​ដែលបាន​ធ្វើ​ទៅ​លើ​កា​រតភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​នេះ"
+
+#: widget/KexiConnectionSelectorWidget.cpp:425
+msgid "Edit Database Connection"
+msgstr "កែសម្រួល​ការ​ត​ភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ"
+
+#: widget/KexiConnectionSelectorWidget.cpp:450
+#, kde-format
+msgid ""
+"Do you want to remove database connection \"%1\" from the list of available "
+"connections?"
+msgstr "តើ​អ្នក​ចង់​យក​ការ​តភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ​ \"%1\" ចេញ​ពី​បញ្ជី​ការ​តភ្ជាប់​ដែល​អាច​ប្រើ​បាន​ឬ ។"
+
+#: widget/KexiFileWidget.cpp:431
+#, kde-format
+msgid ""
+"The file \"%1\" already exists.\n"
+"Do you want to overwrite it?"
+msgstr ""
+"មាន​ឯកសារ \"%1\" រួច​ហើយ ។\n"
+"តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬទេ ?"
 
 #. i18n: file: main/kexifinddialog.ui:19
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
@@ -8507,9 +8502,55 @@ msgid ""
 msgstr ""
 "ចុច​ប៊ូតុង \"កម្រិត​ខ្ពស់\" ប្រសិន​បើ​អ្នក​ចង់​រក​គម្រោង​ដែល​មាន​ស្រាប់​នៅ​លើ​ម៉ាស៊ីនបម្រើ​ជា​ជាង​នៅ​ក្នុង​ឯកសារ ។"
 
-#. i18n: file: main/startup/KexiConnSelector.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:22
+#. i18n: ectx: property (text), widget (KexiCommandLinkButton, btn_file)
 #: rc.cpp:66
+#, fuzzy
+#| msgid "File"
+msgctxt "New Project Stored in File"
+msgid "File"
+msgstr "ឯកសារ"
+
+#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:25
+#. i18n: ectx: property (description), widget (KexiCommandLinkButton, btn_file)
+#: rc.cpp:69
+msgid "New Project Stored in File"
+msgstr "គម្រោង​ថ្មី​បាន​ទុក​នៅ​ក្នុង​ឯកសារ"
+
+#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:32
+#. i18n: ectx: property (text), widget (KexiCommandLinkButton, btn_server)
+#: rc.cpp:72
+#, fuzzy
+#| msgid "Server result:"
+msgctxt "New Project Stored on Database Server"
+msgid "Server"
+msgstr "​លទ្ធផល​ម៉ាស៊ីន​បម្រើ ៖"
+
+#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:35
+#. i18n: ectx: property (description), widget (KexiCommandLinkButton, btn_server)
+#: rc.cpp:75
+msgid "New Project Stored on Database Server"
+msgstr "គម្រោង​ថ្មី​បាន​ទុក​នៅ​លើ​ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ"
+
+#. i18n: file: main/startup/KexiServerDBNamePage.ui:22
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rc.cpp:78
+#, fuzzy
+#| msgid "Page title:"
+msgid "Project title:"
+msgstr "ទំព័រ​ចំណង​ជើង ៖"
+
+#. i18n: file: main/startup/KexiServerDBNamePage.ui:51
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: rc.cpp:81
+#, fuzzy
+#| msgid "Project's database name: "
+msgid "Project's database name:"
+msgstr "ឈ្មោះ​មូលដ្ឋាន​ទិន្នន័យ​របស់​គម្រោង ៖"
+
+#. i18n: file: widget/KexiConnectionSelector.ui:50
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:84
 msgid ""
 "<b>Select Existing Database Server's Connection From the List Below</b>\n"
 "<p>You will see existing Kexi projects available for the selected "
@@ -8520,222 +8561,176 @@ msgstr ""
 "<p>អ្នក​នឹង​ឃើញ​គម្រោង​ Kexi ដែល​មាន​ស្រាប់​សម្រាប់​ការ​តភ្ជាប់​ដែលបាន​ជ្រើស ។ នៅ​ទីនេះ​អ្នក​ក៏​អាច​បន្ថែម "
 "កែសម្រួល ឬ​យក​ការ​តភ្ជាប់​ចេញ​ពី​បញ្ជី​បានដែរ ។\n"
 
-#. i18n: file: main/startup/KexiConnSelector.ui:101
+#. i18n: file: widget/KexiConnectionSelector.ui:101
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: rc.cpp:77
+#: rc.cpp:95
 msgid "Server Information"
 msgstr "ព័ត៌មាន​​ម៉ាស៊ីន​បម្រើ"
 
-#. i18n: file: main/startup/KexiConnSelector.ui:115
+#. i18n: file: widget/KexiConnectionSelector.ui:115
 #. i18n: ectx: property (title), widget (QGroupBox, descGroupBox)
-#: rc.cpp:80
+#: rc.cpp:98
 msgid "Description"
 msgstr "សេចក្តី​ពិពណ៌នា"
 
-#. i18n: file: main/startup/KexiConnSelector.ui:152
+#. i18n: file: widget/KexiConnectionSelector.ui:152
 #. i18n: ectx: property (text), widget (QPushButton, btn_add)
-#: rc.cpp:83
+#: rc.cpp:101
 msgid "&Add..."
 msgstr "បន្ថែម..."
 
-#. i18n: file: main/startup/KexiConnSelector.ui:165
+#. i18n: file: widget/KexiConnectionSelector.ui:165
 #. i18n: ectx: property (text), widget (QPushButton, btn_edit)
-#: rc.cpp:86
+#: rc.cpp:104
 msgid "&Edit..."
 msgstr "កែសម្រួល..."
 
-#. i18n: file: main/startup/KexiConnSelector.ui:178
+#. i18n: file: widget/KexiConnectionSelector.ui:178
 #. i18n: ectx: property (text), widget (QPushButton, btn_remove)
-#: rc.cpp:89
+#: rc.cpp:107
 msgid "&Remove"
 msgstr "យក​ចេញ"
 
-#. i18n: file: main/startup/KexiDBTitlePage.ui:22
+#. i18n: file: widget/KexiProjectSelector.ui:36
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:92
-#, fuzzy
-#| msgid "Project caption: "
-msgid "Project title: "
-msgstr "ចំណង​ជើង​គម្រោង ៖"
-
-#. i18n: file: main/startup/KexiDBTitlePage.ui:54
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:95
-#, fuzzy
-#| msgid "Project Name"
-msgid "Project filename:"
-msgstr "ឈ្មោះ​គម្រោង"
-
-#. i18n: file: main/startup/KexiProjectSelector.ui:36
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:98
+#: rc.cpp:110
 msgid ""
 "<b>There are Kexi projects you have recently opened.</b> Select one you wish "
 "to open:\n"
 msgstr ""
 "<b>មានគម្រោង​ Kexi ដែល​អ្នក​បានបើក​បច្ចុប្បន្ន​នេះ ។</b> ជ្រើស​គម្រោង​មួយ​ដែល​អ្នក​ចង់​បើក ៖\n"
 
-#. i18n: file: main/startup/KexiProjectSelector.ui:77
+#. i18n: file: widget/KexiProjectSelector.ui:77
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: rc.cpp:102
+#: rc.cpp:114
 msgid "Project Name"
 msgstr "ឈ្មោះ​គម្រោង"
 
-#. i18n: file: main/startup/KexiProjectSelector.ui:110
+#. i18n: file: widget/KexiProjectSelector.ui:110
 #. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: rc.cpp:111
+#: rc.cpp:123
 msgid "Connection"
 msgstr "ការ​តភ្ជាប់"
 
-#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:22
-#. i18n: ectx: property (text), widget (KexiCommandLinkButton, btn_file)
-#: rc.cpp:114
-#, fuzzy
-#| msgid "File"
-msgctxt "New Project Stored in File"
-msgid "File"
-msgstr "ឯកសារ"
-
-#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:25
-#. i18n: ectx: property (description), widget (KexiCommandLinkButton, btn_file)
-#: rc.cpp:117
-msgid "New Project Stored in File"
-msgstr "គម្រោង​ថ្មី​បាន​ទុក​នៅ​ក្នុង​ឯកសារ"
-
-#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:32
-#. i18n: ectx: property (text), widget (KexiCommandLinkButton, btn_server)
-#: rc.cpp:120
-#, fuzzy
-#| msgid "Server result:"
-msgctxt "New Project Stored on Database Server"
-msgid "Server"
-msgstr "​លទ្ធផល​ម៉ាស៊ីន​បម្រើ ៖"
-
-#. i18n: file: main/startup/KexiProjectStorageTypeSelectionPage.ui:35
-#. i18n: ectx: property (description), widget (KexiCommandLinkButton, btn_server)
-#: rc.cpp:123
-msgid "New Project Stored on Database Server"
-msgstr "គម្រោង​ថ្មី​បាន​ទុក​នៅ​លើ​ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ"
-
-#. i18n: file: main/startup/KexiServerDBNamePage.ui:22
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:126
-#, fuzzy
-#| msgid "Page title:"
-msgid "Project title:"
-msgstr "ទំព័រ​ចំណង​ជើង ៖"
-
-#. i18n: file: main/startup/KexiServerDBNamePage.ui:51
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:129
-#, fuzzy
-#| msgid "Project's database name: "
-msgid "Project's database name:"
-msgstr "ឈ្មោះ​មូលដ្ឋាន​ទិន្នន័យ​របស់​គម្រោង ៖"
-
 #. i18n: file: widget/kexidbconnectionwidget.ui:89
 #. i18n: ectx: property (title), widget (Q3ButtonGroup, locationBGrp)
-#: rc.cpp:132
+#: rc.cpp:126
 msgid "Database Server"
 msgstr "ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:118
 #. i18n: ectx: property (text), widget (QLabel, portLbl)
-#: rc.cpp:135
+#: rc.cpp:129
 msgid "Port:"
 msgstr "ច្រក ៖"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:131
 #. i18n: ectx: property (text), widget (QRadioButton, localhostRBtn)
-#: rc.cpp:138
+#: rc.cpp:132
 msgid "Local server"
 msgstr "ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:160
 #. i18n: ectx: property (text), widget (QLabel, hostLbl)
-#: rc.cpp:141
+#: rc.cpp:135
 msgid "&Hostname:"
 msgstr "ឈ្មោះ​ម៉ាស៊ីន ៖"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:173
 #. i18n: ectx: property (text), widget (QCheckBox, chkPortDefault)
-#: rc.cpp:144
+#: rc.cpp:138
 msgctxt "port: default"
 msgid "Default"
 msgstr "លំនាំដើម"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:183
 #. i18n: ectx: property (text), widget (QRadioButton, remotehostRBtn)
-#: rc.cpp:147
+#: rc.cpp:141
 msgid "Remote server"
 msgstr "ម៉ាស៊ីន​បម្រើ​ពី​ចម្ងាយ"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:196
 #. i18n: ectx: property (text), widget (QLabel, lblEngine)
-#: rc.cpp:150
+#: rc.cpp:144
 msgid "&Engine:"
 msgstr "ម៉ាស៊ីន ៖"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:231
 #. i18n: ectx: property (title), widget (Q3GroupBox, authenticationGBox)
-#: rc.cpp:153
+#: rc.cpp:147
 msgid "Authentication"
 msgstr "ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:237
 #. i18n: ectx: property (text), widget (QLabel, userLbl)
-#: rc.cpp:156
+#: rc.cpp:150
 msgid "&Username:"
 msgstr "ឈ្មោះ​អ្នកប្រើ ៖"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:253
 #. i18n: ectx: property (text), widget (QLabel, passwordLbl)
-#: rc.cpp:159
+#: rc.cpp:153
 msgid "&Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:273
 #. i18n: ectx: property (text), widget (QCheckBox, chkSavePassword)
-#: rc.cpp:162
+#: rc.cpp:156
 msgid "Save password in the shortcut file"
 msgstr "រក្សាទុក​ពាក្យ​សម្ងាត់​ក្នុង​ឯកសារ​ផ្លូវកាត់"
 
 #. i18n: file: widget/kexidbconnectionwidget.ui:311
 #. i18n: ectx: property (text), widget (QLabel, titleLabel)
-#: rc.cpp:171
+#: rc.cpp:165
 msgid "&Title (optional):"
 msgstr "ចំណង​ជើង (ជម្រើស) ៖"
 
 #. i18n: file: widget/kexidbconnectionwidgetdetails.ui:27
 #. i18n: ectx: property (text), widget (QCheckBox, chkUseSocket)
-#: rc.cpp:174
+#: rc.cpp:168
 msgid "Use socket &file instead of TCP/IP port:"
 msgstr "ប្រើរន្ធ​ឯកសារ​ជំនួស​ឲ្យ​ច្រក TCP/IP ៖"
 
 #. i18n: file: widget/kexidbconnectionwidgetdetails.ui:66
 #. i18n: ectx: property (text), widget (QCheckBox, chkSocketDefault)
-#: rc.cpp:177
+#: rc.cpp:171
 msgctxt "socket: default"
 msgid "Default"
 msgstr "លំនាំដើម"
 
 #. i18n: file: widget/kexidbconnectionwidgetdetails.ui:119
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:180
+#: rc.cpp:174
 msgid "&Description:"
 msgstr "សេចក្តី​ពិពណ៌នា ៖"
 
 #. i18n: file: widget/kexiprjtypeselector.ui:43
 #. i18n: ectx: property (text), widget (QRadioButton, option_server)
-#: rc.cpp:183
+#: rc.cpp:177
 msgid "Projects stored on a database server"
 msgstr "គម្រោង​បាន​ទុក​នៅ​ក្នុង​ម៉ាស៊ីន​បម្រើ​មូលដ្ឋាន​ទិន្នន័យ"
 
 #. i18n: file: widget/kexiprjtypeselector.ui:53
 #. i18n: ectx: property (text), widget (QRadioButton, option_file)
-#: rc.cpp:186
+#: rc.cpp:180
 msgid "Projects stored in a file"
 msgstr "គម្រោង​បាន​ទុក​នៅ​ក្នុង​ឯកសារ"
+
+#. i18n: file: widget/KexiDBTitlePage.ui:22
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:183
+#, fuzzy
+#| msgid "Project caption: "
+msgid "Project title: "
+msgstr "ចំណង​ជើង​គម្រោង ៖"
+
+#. i18n: file: widget/KexiDBTitlePage.ui:54
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:186
+#, fuzzy
+#| msgid "Project Name"
+msgid "Project filename:"
+msgstr "ឈ្មោះ​គម្រោង"
 
 #~ msgid "Could not load data from table or query."
 #~ msgstr "មិន​អាច​ផ្ទុក​ទិន្នន័យ​ពី​តារាង ឬ​សំណួរ​បាន​ទេ ។"
