@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-10-28 03:54+0200\n"
+"POT-Creation-Date: 2011-10-30 03:15+0100\n"
 "PO-Revision-Date: 2011-05-31 16:14+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -440,6 +440,18 @@ msgstr "ទៅ​កាន់​វា"
 msgid "Save All"
 msgstr "រក្សា​ទុក​ទាំង​អស់"
 
+#: app/configdialog.cpp:68
+msgid "General"
+msgstr "ទូទៅ"
+
+#: app/configdialog.cpp:90
+msgid "Image View"
+msgstr "មើល​រូបភាព"
+
+#: app/configdialog.cpp:95
+msgid "Advanced"
+msgstr "កម្រិតខ្ពស់"
+
 #: app/mainwindow.cpp:321
 msgctxt "@action reload the currently viewed image"
 msgid "Reload"
@@ -594,18 +606,6 @@ msgctxt "Slideshow interval in seconds"
 msgid "%1 sec"
 msgid_plural "%1 secs"
 msgstr[0] "%1 វិនាទី"
-
-#: app/configdialog.cpp:68
-msgid "General"
-msgstr "ទូទៅ"
-
-#: app/configdialog.cpp:90
-msgid "Image View"
-msgstr "មើល​រូបភាព"
-
-#: app/configdialog.cpp:95
-msgid "Advanced"
-msgstr "កម្រិតខ្ពស់"
 
 #: app/gvcore.cpp:83
 msgctxt "@info"
@@ -774,7 +774,7 @@ msgstr "ប្ដូរ​ទំហំ​"
 #. i18n: file: lib/crop/cropwidget.ui:20
 #. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
 #: app/imageopscontextmanageritem.cpp:103 lib/crop/cropimageoperation.cpp:68
-#: lib/crop/cropwidget.cpp:166 rc.cpp:202
+#: lib/crop/cropwidget.cpp:166 rc.cpp:174
 msgid "Crop"
 msgstr "ច្រឹប"
 
@@ -1036,19 +1036,19 @@ msgstr "100%"
 msgid "No document selected"
 msgstr "គ្មាន​ឯកសារ​ត្រូវ​បាន​ជ្រើស"
 
-#: lib/documentview/documentview.cpp:181
+#: lib/documentview/documentview.cpp:175
 msgid "Trash"
 msgstr "សំរាម"
 
-#: lib/documentview/documentview.cpp:182
+#: lib/documentview/documentview.cpp:176
 msgid "Deselect"
 msgstr "ដោះ​ជម្រើស"
 
-#: lib/documentview/documentview.cpp:362
+#: lib/documentview/documentview.cpp:356
 msgid "Gwenview does not know how to display this kind of document"
 msgstr "Gwenview មិន​ដឹង​អំពី​វិធី​បង្ហាញ​ឯកសារ​ប្រភេទ​នេះ​ទេ"
 
-#: lib/documentview/documentview.cpp:467
+#: lib/documentview/documentview.cpp:461
 #, kde-format
 msgid "Loading <filename>%1</filename> failed"
 msgstr "ការ​ផ្ទុក​ <filename>%1</filename> បាន​បរាជ័យ"
@@ -1342,7 +1342,7 @@ msgstr "រក​មើល"
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnlargeSmallerImages)
 #. i18n: file: lib/print/printoptionspage.ui:98
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintEnlargeSmallerImages)
-#: rc.cpp:72 rc.cpp:232
+#: rc.cpp:72 rc.cpp:204
 msgid "Enlarge smaller images"
 msgstr "ពង្រីក​រូបភាព​តូច​ៗ"
 
@@ -1550,9 +1550,142 @@ msgstr "មើល​ជា​មុន ៖"
 msgid "<i>Type text or click the items below to customize the format</i>"
 msgstr "<i>វាយ​អត្ថបទ​ ឬ​ចុច​លើ​ធាតុ​ខាង​ក្រោម ដើម្បី​ប្ដូរ​ទ្រង់​ទ្រាយ​តាម​បំណង</i>"
 
+#. i18n: file: lib/crop/cropwidget.ui:42
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: rc.cpp:177
+msgid "Ratio:"
+msgstr "សមាមាត្រ ៖"
+
+#. i18n: file: lib/crop/cropwidget.ui:68
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:180
+msgid "Position:"
+msgstr "ទីតាំង ៖"
+
+#. i18n: file: lib/crop/cropwidget.ui:101
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:183
+msgid "Size:"
+msgstr "ទំហំ ៖"
+
+#. i18n: file: lib/crop/cropwidget.ui:140
+#. i18n: ectx: property (text), widget (QCheckBox, advancedCheckBox)
+#: rc.cpp:186
+msgid "Advanced settings"
+msgstr "ការ​កំណត់​កម្រិត​ខ្ពស់"
+
+#. i18n: file: lib/print/printoptionspage.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
+#: rc.cpp:189
+msgid "Image Settings"
+msgstr "ការ​កំណត់​រូបភាព"
+
+#. i18n: file: lib/print/printoptionspage.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: rc.cpp:192
+msgid "Image Position"
+msgstr "ទី​តាំង​រូបភាព"
+
+#. i18n: file: lib/print/printoptionspage.ui:45
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: rc.cpp:195
+msgid "Scaling"
+msgstr "ការ​ធ្វើ​មាត្រដ្ឋាន"
+
+#. i18n: file: lib/print/printoptionspage.ui:51
+#. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
+#: rc.cpp:198
+msgid "&No scaling"
+msgstr "គ្មាន​មាត្រដ្ឋាន"
+
+#. i18n: file: lib/print/printoptionspage.ui:61
+#. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
+#: rc.cpp:201
+msgid "&Fit image to page"
+msgstr "ធ្វើ​ឲ្យ​រូបភាព​សម​នឹង​ទំព័រ"
+
+#. i18n: file: lib/print/printoptionspage.ui:123
+#. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
+#: rc.cpp:207
+msgid "&Scale to:"
+msgstr "ធ្វើ​មាត្រដ្ឋាន ៖"
+
+#. i18n: file: lib/print/printoptionspage.ui:158
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rc.cpp:210
+msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
+msgid "x"
+msgstr "x"
+
+#. i18n: file: lib/print/printoptionspage.ui:185
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
+#: rc.cpp:213
+msgid "Millimeters"
+msgstr "មិល្លីម៉ែត្រ​"
+
+#. i18n: file: lib/print/printoptionspage.ui:190
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
+#: rc.cpp:216
+msgid "Centimeters"
+msgstr "សង់ទីម៉ែត្រ"
+
+#. i18n: file: lib/print/printoptionspage.ui:195
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
+#: rc.cpp:219
+msgid "Inches"
+msgstr "អ៊ិន្ឈ៍"
+
+#. i18n: file: lib/print/printoptionspage.ui:224
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
+#: rc.cpp:222
+msgid "Keep ratio"
+msgstr "រក្សា​សមាមាត្រ"
+
+#. i18n: file: lib/redeyereduction/redeyereductionhud.ui:16
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:225
+msgid "Size"
+msgstr "ទំហំ"
+
+#. i18n: file: lib/redeyereduction/redeyereductionhud.ui:43
+#. i18n: ectx: property (text), widget (QToolButton, applyButton)
+#: rc.cpp:228
+msgid "Apply"
+msgstr "អនុវត្ត"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, ResizeImageWidget)
+#: rc.cpp:231
+msgid "Image Resizing"
+msgstr "ការ​ប្ដូរ​ទំហំ​រូបភាព"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:20
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: rc.cpp:234
+msgid "Enter the new size for this image."
+msgstr "បញ្ចូល​ទំហំ​ថ្មី​សម្រាប់​រូបភាព ។"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:32
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:237
+msgid "Current size:"
+msgstr "ទំហំ​បច្ចុប្បន្ន ៖"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:88
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:240
+msgid "New Size:"
+msgstr "ទំហំថ្មី ៖"
+
+#. i18n: file: lib/resize/resizeimagewidget.ui:135
+#. i18n: ectx: property (text), widget (QCheckBox, mKeepAspectCheckBox)
+#: rc.cpp:243
+msgid "Keep aspect ratio"
+msgstr "រក្សា​សមាមាត្រ"
+
 #. i18n: file: lib/gwenviewconfig.kcfg:30
 #. i18n: ectx: whatsthis, entry (PercentageOfMemoryUsageWarning), group (General)
-#: rc.cpp:174
+#: rc.cpp:246
 msgid ""
 "The percentage of memory used by Gwenview before it\n"
 "\t\t\twarns the user and suggest saving changes."
@@ -1562,7 +1695,7 @@ msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:38
 #. i18n: ectx: whatsthis, entry (BlackListedExtensions), group (General)
-#: rc.cpp:178
+#: rc.cpp:250
 msgid ""
 "A list of filename extensions Gwenview should not try to\n"
 "\t\t\tload. This is useful to exclude raw files which are recognized as\n"
@@ -1576,166 +1709,33 @@ msgstr ""
 
 #. i18n: file: lib/gwenviewconfig.kcfg:194
 #. i18n: ectx: label, entry (random), group (slide show)
-#: rc.cpp:184
+#: rc.cpp:256
 msgid "Display slide show images in random order"
 msgstr "បង្ហាញ​រូបភាព​បញ្ចាំង​ស្លាយ​តាម​លំដាប់​ចៃដន្យ"
 
 #. i18n: file: lib/gwenviewconfig.kcfg:198
 #. i18n: ectx: label, entry (fullscreen), group (slide show)
-#: rc.cpp:187
+#: rc.cpp:259
 msgid "Show slideshow in fullscreen mode"
 msgstr "បង្ហាញ​ការ​បញ្ចាំង​ស្លាយ​តាម​របៀប​ពេញ​អេក្រង់"
 
 #. i18n: file: lib/gwenviewconfig.kcfg:202
 #. i18n: ectx: label, entry (loop), group (slide show)
-#: rc.cpp:190
+#: rc.cpp:262
 msgid "Loop on images"
 msgstr "រង្វិល​ជុំ​លើ​រូបភាព"
 
 #. i18n: file: lib/gwenviewconfig.kcfg:206
 #. i18n: ectx: label, entry (stopAtEnd), group (slide show)
-#: rc.cpp:193
+#: rc.cpp:265
 msgid "Stop at last image of folder"
 msgstr "បញ្ឈប់​ត្រឹម​រូបភាព​របស់​ថត​ចុង​ក្រោយ"
 
 #. i18n: file: lib/gwenviewconfig.kcfg:210
 #. i18n: ectx: label, entry (interval), group (slide show)
-#: rc.cpp:196
+#: rc.cpp:268
 msgid "Interval between images (in seconds)"
 msgstr "ចន្លោះ​ពេល​រវាង​រូបភាព​ (គិត​ជា​វិនាទី)"
-
-#. i18n: file: lib/crop/cropwidget.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:205
-msgid "Ratio:"
-msgstr "សមាមាត្រ ៖"
-
-#. i18n: file: lib/crop/cropwidget.ui:68
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:208
-msgid "Position:"
-msgstr "ទីតាំង ៖"
-
-#. i18n: file: lib/crop/cropwidget.ui:101
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:211
-msgid "Size:"
-msgstr "ទំហំ ៖"
-
-#. i18n: file: lib/crop/cropwidget.ui:140
-#. i18n: ectx: property (text), widget (QCheckBox, advancedCheckBox)
-#: rc.cpp:214
-msgid "Advanced settings"
-msgstr "ការ​កំណត់​កម្រិត​ខ្ពស់"
-
-#. i18n: file: lib/print/printoptionspage.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, PrintOptionsPage)
-#: rc.cpp:217
-msgid "Image Settings"
-msgstr "ការ​កំណត់​រូបភាព"
-
-#. i18n: file: lib/print/printoptionspage.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:220
-msgid "Image Position"
-msgstr "ទី​តាំង​រូបភាព"
-
-#. i18n: file: lib/print/printoptionspage.ui:45
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:223
-msgid "Scaling"
-msgstr "ការ​ធ្វើ​មាត្រដ្ឋាន"
-
-#. i18n: file: lib/print/printoptionspage.ui:51
-#. i18n: ectx: property (text), widget (QRadioButton, mNoScale)
-#: rc.cpp:226
-msgid "&No scaling"
-msgstr "គ្មាន​មាត្រដ្ឋាន"
-
-#. i18n: file: lib/print/printoptionspage.ui:61
-#. i18n: ectx: property (text), widget (QRadioButton, mScaleToPage)
-#: rc.cpp:229
-msgid "&Fit image to page"
-msgstr "ធ្វើ​ឲ្យ​រូបភាព​សម​នឹង​ទំព័រ"
-
-#. i18n: file: lib/print/printoptionspage.ui:123
-#. i18n: ectx: property (text), widget (QRadioButton, mScaleTo)
-#: rc.cpp:235
-msgid "&Scale to:"
-msgstr "ធ្វើ​មាត្រដ្ឋាន ៖"
-
-#. i18n: file: lib/print/printoptionspage.ui:158
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:238
-msgctxt "Dimension separator, as in: '15 x 10 centimeters'"
-msgid "x"
-msgstr "x"
-
-#. i18n: file: lib/print/printoptionspage.ui:185
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:241
-msgid "Millimeters"
-msgstr "មិល្លីម៉ែត្រ​"
-
-#. i18n: file: lib/print/printoptionspage.ui:190
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:244
-msgid "Centimeters"
-msgstr "សង់ទីម៉ែត្រ"
-
-#. i18n: file: lib/print/printoptionspage.ui:195
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_PrintUnit)
-#: rc.cpp:247
-msgid "Inches"
-msgstr "អ៊ិន្ឈ៍"
-
-#. i18n: file: lib/print/printoptionspage.ui:224
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PrintKeepRatio)
-#: rc.cpp:250
-msgid "Keep ratio"
-msgstr "រក្សា​សមាមាត្រ"
-
-#. i18n: file: lib/redeyereduction/redeyereductionhud.ui:16
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:253
-msgid "Size"
-msgstr "ទំហំ"
-
-#. i18n: file: lib/redeyereduction/redeyereductionhud.ui:43
-#. i18n: ectx: property (text), widget (QToolButton, applyButton)
-#: rc.cpp:256
-msgid "Apply"
-msgstr "អនុវត្ត"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, ResizeImageWidget)
-#: rc.cpp:259
-msgid "Image Resizing"
-msgstr "ការ​ប្ដូរ​ទំហំ​រូបភាព"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:20
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:262
-msgid "Enter the new size for this image."
-msgstr "បញ្ចូល​ទំហំ​ថ្មី​សម្រាប់​រូបភាព ។"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:32
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:265
-msgid "Current size:"
-msgstr "ទំហំ​បច្ចុប្បន្ន ៖"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:88
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:268
-msgid "New Size:"
-msgstr "ទំហំថ្មី ៖"
-
-#. i18n: file: lib/resize/resizeimagewidget.ui:135
-#. i18n: ectx: property (text), widget (QCheckBox, mKeepAspectCheckBox)
-#: rc.cpp:271
-msgid "Keep aspect ratio"
-msgstr "រក្សា​សមាមាត្រ"
 
 #. i18n: file: part/gvpart.rc:4
 #. i18n: ectx: Menu (file)
