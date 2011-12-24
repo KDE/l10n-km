@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-01 04:08+0100\n"
+"POT-Creation-Date: 2011-12-21 04:43+0100\n"
 "PO-Revision-Date: 2011-12-21 14:50+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -21,23 +21,37 @@ msgstr ""
 msgid "Plugins"
 msgstr "កម្មវិធី​ជំនួយ "
 
-#: conf/transfersgrouptree.cpp:110 conf/transfersgrouptree.cpp:115
-msgid "New Group"
-msgstr "ក្រុម​ថ្មី​"
-
 #. i18n: file: conf/dlgintegration.ui:100
 #. i18n: ectx: property (text), widget (KPushButton, increase)
-#: conf/verificationpreferences.cpp:35 rc.cpp:155
-#| msgid "Increase Priority"
+#: conf/verificationpreferences.cpp:35 rc.cpp:53
 msgid "&Increase Priority"
 msgstr "បង្កើន​អាទិភាព​"
 
 #. i18n: file: conf/dlgintegration.ui:107
 #. i18n: ectx: property (text), widget (KPushButton, decrease)
-#: conf/verificationpreferences.cpp:36 rc.cpp:158
-#| msgid "Decrease Priority"
+#: conf/verificationpreferences.cpp:36 rc.cpp:56
 msgid "&Decrease Priority"
 msgstr "បន្ថយ​អាទិភាព​"
+
+#: conf/transfersgrouptree.cpp:110 conf/transfersgrouptree.cpp:115
+msgid "New Group"
+msgstr "ក្រុម​ថ្មី​"
+
+#: conf/integrationpreferences.cpp:32
+msgid "Include"
+msgstr "​រួម​បញ្ចូល"
+
+#: conf/integrationpreferences.cpp:33
+msgid "Exclude"
+msgstr "មិន​រាប់បញ្ចូល"
+
+#: conf/integrationpreferences.cpp:35 conf/autopastemodel.cpp:209
+msgid "Escape sequences"
+msgstr "លំដាប់​គេច"
+
+#: conf/integrationpreferences.cpp:36 conf/autopastemodel.cpp:209
+msgid "Regular expression"
+msgstr "កន្សោម​ធម្មតា"
 
 #: conf/preferencesdialog.cpp:51
 msgid "Xml"
@@ -81,7 +95,7 @@ msgstr "គ្រប់គ្រង​ក្រុម"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:23
 #. i18n: ectx: property (title), widget (QGroupBox, networkGroupBox)
-#: conf/preferencesdialog.cpp:76 rc.cpp:430
+#: conf/preferencesdialog.cpp:76 rc.cpp:433
 msgid "Network"
 msgstr "បណ្ដាញ"
 
@@ -123,22 +137,6 @@ msgstr "កម្មវិធី​ជំនួយ​ការ​ផ្ទេរ
 msgid "Could not open KWallet"
 msgstr "មិន​អាច​បើក KWallet បាន​ទេ"
 
-#: conf/integrationpreferences.cpp:32
-msgid "Include"
-msgstr "​រួម​បញ្ចូល"
-
-#: conf/integrationpreferences.cpp:33
-msgid "Exclude"
-msgstr "មិន​រាប់បញ្ចូល"
-
-#: conf/integrationpreferences.cpp:35 conf/autopastemodel.cpp:209
-msgid "Escape sequences"
-msgstr "លំដាប់​គេច"
-
-#: conf/integrationpreferences.cpp:36 conf/autopastemodel.cpp:209
-msgid "Regular expression"
-msgstr "កន្សោម​ធម្មតា"
-
 #: conf/autopastemodel.cpp:174
 msgid "Pattern"
 msgstr "លំនាំ"
@@ -146,11 +144,6 @@ msgstr "លំនាំ"
 #: conf/autopastemodel.cpp:176
 msgid "Syntax"
 msgstr "វាក្យសម្ព័ន្ធ"
-
-#: core/kget.h:371 ui/tray.cpp:41 main.cpp:104 mainwindow.cpp:92
-#: mainwindow.cpp:521
-msgid "KGet"
-msgstr "KGet"
 
 #: core/transfergrouphandler.cpp:97
 #, kde-format
@@ -180,41 +173,10 @@ msgid "KGet is downloading %1 file"
 msgid_plural "KGet is downloading %1 files"
 msgstr[0] "KGet កំពុង​ទាញយក​ឯកសារ %1"
 
-#: core/signature.cpp:228
-msgid "The key to verify the signature is missing, do you want to download it?"
-msgstr "​បាត់​សោ​ត្រូវ​ផ្ទៀងផ្ទាត់​ហត្ថលេខា​​ហើយ តើ​អ្នក​​អ្នក​ចង់​ទាញយក​វា​ដែរឬទេ ?"
-
-#: core/signature.cpp:250
-#, kde-format
-msgid ""
-"The signature could not be verified for %1. See transfer settings for more "
-"information."
-msgstr "ហត្ថលេខា​មិន​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​សម្រាប់ %1 នោះ​ទេ ។ ចំពោះ​ព័ត៌មាន​បន្ថែម​ សូម​មើល​កា​រកំណត់​ផ្ទេរ​ ។"
-
-#: core/signature.cpp:251
-msgid "Signature not verified"
-msgstr "ហត្ថលេខា​​មិន​បាន​ផ្ទៀងផ្ទាត់"
-
 #: core/linkimporter.cpp:90
 #, kde-format
 msgid "Error trying to get %1"
 msgstr "មាន​កំហុស​ក្នុង​ការ​យក %1"
-
-#: core/keydownloader.cpp:73
-msgid "No server for downloading keys is specified in settings. Downloading aborted."
-msgstr "គ្មាន​ម៉ាស៊ីន​បម្រើ​សម្រាប់​ទាញយក​សោ​ ត្រូវ​បាន​បញ្ជាក់​នៅ​ក្នុង​ការ​កំណត់​នោះ​ទេ ។ ការ​ទាញយក​បានបោះបង់ចោល ។"
-
-#: core/keydownloader.cpp:74 core/keydownloader.cpp:94
-msgid "No key server"
-msgstr "គ្មាន​ម៉ាស៊ីន​បម្រើ​សោ​ទេ"
-
-#: core/keydownloader.cpp:93
-msgid ""
-"No useful key server found, key not downloaded. Add more servers to the "
-"settings or restart KGet and retry downloading."
-msgstr ""
-"រក​មិនឃើញ​សោ​ដែលមានប្រយោជន៍​ទេ សោ​មិន​បានទាញយក​ទេ ។ បន្ថែម​ម៉ាស៊ីនបម្រើ​ផ្សេង​ទៀត​ទៅការ​កំណត់ ឬ​"
-"ចាប់ផ្ដើម KGet ឡើងវិញ ហើយ​ព្យាយាម​ទាញយក​ម្ដង​ទៀត ។"
 
 #: core/kget.cpp:121
 #, kde-format
@@ -426,7 +388,9 @@ msgstr ""
 msgid ""
 "<p>The following file has finished downloading:</p><p style=\"font-size: "
 "small;\">\\%1</p>"
-msgstr "<p>ឯកសារ​ដូច​ខាងក្រោម​បាន​បញ្ចប់​កា​រទាញយក​ហើយ ៖</p><p style=\"font-size: small;\">\\%1</p>"
+msgstr ""
+"<p>ឯកសារ​ដូច​ខាងក្រោម​បាន​បញ្ចប់​កា​រទាញយក​ហើយ ៖</p><p style=\"font-size: small;\">\\"
+"%1</p>"
 
 #: core/kget.cpp:1397
 msgid "Download completed"
@@ -437,7 +401,8 @@ msgstr "បាន​បញ្ចប់​ការ​ទាញយក"
 msgid ""
 "<p>The following transfer has been started:</p><p style=\"font-size: small;"
 "\">\\%1</p>"
-msgstr "<p>ការ​ផ្ទេរ​ដូច​ខាងក្រោម​ត្រូ​វបាន​ចាប់ផ្ដើម ៖</p><p style=\"font-size: small;\">\\%1</p>"
+msgstr ""
+"<p>ការ​ផ្ទេរ​ដូច​ខាងក្រោម​ត្រូ​វបាន​ចាប់ផ្ដើម ៖</p><p style=\"font-size: small;\">\\%1</p>"
 
 #: core/kget.cpp:1401
 msgid "Download started"
@@ -508,49 +473,39 @@ msgstr "<p>ការ​ផ្ទេរ​ទាំងអស់​បាន​ច
 msgid "Downloads completed"
 msgstr "ការ​ទាញយក​បាន​បញ្ចប់"
 
-#: core/filemodel.cpp:283
-msgctxt "file in a filesystem"
-msgid "File"
-msgstr "ឯកសារ"
+#: core/signature.cpp:228
+msgid "The key to verify the signature is missing, do you want to download it?"
+msgstr "​បាត់​សោ​ត្រូវ​ផ្ទៀងផ្ទាត់​ហត្ថលេខា​​ហើយ តើ​អ្នក​​អ្នក​ចង់​ទាញយក​វា​ដែរឬទេ ?"
 
-#: core/filemodel.cpp:283
-msgctxt "status of the download"
-msgid "Status"
-msgstr "ស្ថានភាព"
+#: core/signature.cpp:250
+#, kde-format
+msgid ""
+"The signature could not be verified for %1. See transfer settings for more "
+"information."
+msgstr ""
+"ហត្ថលេខា​មិន​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​សម្រាប់ %1 នោះ​ទេ ។ ចំពោះ​ព័ត៌មាន​បន្ថែម​ សូម​មើល​កា​រកំណត់​ផ្ទេរ​ ។"
 
-#: core/filemodel.cpp:283
-msgctxt "size of the download"
-msgid "Size"
-msgstr "ទំហំ"
+#: core/signature.cpp:251
+msgid "Signature not verified"
+msgstr "ហត្ថលេខា​​មិន​បាន​ផ្ទៀងផ្ទាត់"
 
-#: core/filemodel.cpp:283
-msgctxt "checksum of a file"
-msgid "Checksum"
-msgstr "ឆេកសាំ"
+#: core/keydownloader.cpp:73
+msgid ""
+"No server for downloading keys is specified in settings. Downloading aborted."
+msgstr ""
+"គ្មាន​ម៉ាស៊ីន​បម្រើ​សម្រាប់​ទាញយក​សោ​ ត្រូវ​បាន​បញ្ជាក់​នៅ​ក្នុង​ការ​កំណត់​នោះ​ទេ ។ ការ​ទាញយក​បានបោះបង់ចោល ។"
 
-#: core/filemodel.cpp:283
-msgctxt "signature of a file"
-msgid "Signature"
-msgstr "ហត្ថលេខា"
+#: core/keydownloader.cpp:74 core/keydownloader.cpp:94
+msgid "No key server"
+msgstr "គ្មាន​ម៉ាស៊ីន​បម្រើ​សោ​ទេ"
 
-#: core/verificationmodel.cpp:151
-msgctxt "the type of the hash, e.g. MD5"
-msgid "Type"
-msgstr "ប្រភេទ​"
-
-#: core/verificationmodel.cpp:153
-msgctxt "the used hash for verification"
-msgid "Hash"
-msgstr "Hash"
-
-#: core/verificationmodel.cpp:155
-msgctxt "verification-result of a file, can be true/false"
-msgid "Verified"
-msgstr "បាន​ផ្ទៀងផ្ទាត់"
-
-#: core/kgetkjobadapter.cpp:45
-msgid "KGet Transfer"
-msgstr "ការ​ផ្ទេរ​របស់ KGet"
+#: core/keydownloader.cpp:93
+msgid ""
+"No useful key server found, key not downloaded. Add more servers to the "
+"settings or restart KGet and retry downloading."
+msgstr ""
+"រក​មិនឃើញ​សោ​ដែលមានប្រយោជន៍​ទេ សោ​មិន​បានទាញយក​ទេ ។ បន្ថែម​ម៉ាស៊ីនបម្រើ​ផ្សេង​ទៀត​ទៅការ​កំណត់ ឬ​"
+"ចាប់ផ្ដើម KGet ឡើងវិញ ហើយ​ព្យាយាម​ទាញយក​ម្ដង​ទៀត ។"
 
 #: core/datasourcefactory.cpp:287
 msgid "Filesize is larger than maximum file size supported by VFAT."
@@ -599,8 +554,8 @@ msgstr "បាន​ពន្យារ"
 
 #: core/transfer.cpp:39 core/transfer.cpp:252 core/transfer.cpp:271
 #: transfer-plugins/contentfetch/contentfetch.cpp:69
-#: transfer-plugins/bittorrent/bttransfer.cpp:304
 #: transfer-plugins/mmsthreads/mmstransfer.cpp:85
+#: transfer-plugins/bittorrent/bttransfer.cpp:304
 msgctxt "transfer state: stopped"
 msgid "Stopped"
 msgstr "បាន​បញ្ឈប់"
@@ -620,6 +575,55 @@ msgstr "បាន​បញ្ចប់"
 msgctxt "changing the destination of the file"
 msgid "Changing destination"
 msgstr "ផ្លាស់ប្ដូរ​ទិសដៅ"
+
+#: core/kget.h:371 ui/tray.cpp:41 main.cpp:104 mainwindow.cpp:92
+#: mainwindow.cpp:521
+msgid "KGet"
+msgstr "KGet"
+
+#: core/filemodel.cpp:283
+msgctxt "file in a filesystem"
+msgid "File"
+msgstr "ឯកសារ"
+
+#: core/filemodel.cpp:283
+msgctxt "status of the download"
+msgid "Status"
+msgstr "ស្ថានភាព"
+
+#: core/filemodel.cpp:283
+msgctxt "size of the download"
+msgid "Size"
+msgstr "ទំហំ"
+
+#: core/filemodel.cpp:283
+msgctxt "checksum of a file"
+msgid "Checksum"
+msgstr "ឆេកសាំ"
+
+#: core/filemodel.cpp:283
+msgctxt "signature of a file"
+msgid "Signature"
+msgstr "ហត្ថលេខា"
+
+#: core/kgetkjobadapter.cpp:45
+msgid "KGet Transfer"
+msgstr "ការ​ផ្ទេរ​របស់ KGet"
+
+#: core/verificationmodel.cpp:151
+msgctxt "the type of the hash, e.g. MD5"
+msgid "Type"
+msgstr "ប្រភេទ​"
+
+#: core/verificationmodel.cpp:153
+msgctxt "the used hash for verification"
+msgid "Hash"
+msgstr "Hash"
+
+#: core/verificationmodel.cpp:155
+msgctxt "verification-result of a file, can be true/false"
+msgid "Verified"
+msgstr "បាន​ផ្ទៀងផ្ទាត់"
 
 #: core/transfertreemodel.cpp:643
 msgctxt "name of download"
@@ -768,7 +772,8 @@ msgstr ""
 "ទាញយក ហើយ​លុប​ឯកសារ​មួយ​មុន​ដែរឬទេ ?"
 
 #: core/urlchecker.cpp:396
-msgid "You have already completed a download from that location. Download it again?"
+msgid ""
+"You have already completed a download from that location. Download it again?"
 msgstr "អ្នកបាន​បញ្ចប់​ការ​ទាញយក​ពី​ទីតាំង ។ ទាញយក​វា​ម្ដងទៀត ?"
 
 #: core/urlchecker.cpp:398
@@ -1025,7 +1030,8 @@ msgid "Downloading Metalink File...."
 msgstr "កំពុង​ទាញយក​ឯកសារ​តំណ​មេតា...."
 
 #: transfer-plugins/metalink/metalink.cpp:117
-msgid "A newer version of this Metalink might exist, do you want to download it?"
+msgid ""
+"A newer version of this Metalink might exist, do you want to download it?"
 msgstr "មាន​កំណែ​ថ្មីជាង​របស់​តំណមេតា​​នេះ តើ​អ្នក​ចង់ទាញយក​វា​ដែរឬទេ ?"
 
 #: transfer-plugins/metalink/metalink.cpp:118
@@ -1047,6 +1053,28 @@ msgstr ""
 #: transfer-plugins/metalink/fileselectiondlg.cpp:31
 msgid "File Selection"
 msgstr "ការ​ជ្រើស​ឯកសារ"
+
+#: transfer-plugins/mmsthreads/mmstransfer.cpp:50
+msgctxt "transfer state: running"
+msgid "Running...."
+msgstr "កំពង់​រត់..."
+
+#: transfer-plugins/mmsthreads/mmstransfer.cpp:113
+msgctxt "Transfer State:Finished"
+msgid "Finished"
+msgstr "បាន​បញ្ចប់"
+
+#: transfer-plugins/mmsthreads/mmstransfer.cpp:156
+msgid "Download failed, could not access this URL."
+msgstr "បាន​បរាជ័យ​ក្នុងកា​រទាញយក មិនអាច​ចូល​ដំណើរការ​ URL នេះ​បាន​ទេ ។"
+
+#: transfer-plugins/mmsthreads/mmstransfer.cpp:166
+msgid ""
+"This URL does not allow multiple connections,\n"
+"the download will take longer."
+msgstr ""
+"URL នេះ​មិន​អនុញ្ញាត​ឲ្យ​មាន​ការ​តភ្ជាប់​ច្រើន​ទេ\n"
+"ការ​ទាញយក​នឹង​ចំណាយ​ពេល​ច្រើន ។"
 
 #: transfer-plugins/checksumsearch/dlgchecksumsearch.cpp:42
 msgid "Add item"
@@ -1206,7 +1234,8 @@ msgstr "ល្បឿន​ផ្ទុក​ឡើង"
 msgid ""
 "Whether or not the peer has choked us.  If we are choked, the peer will not "
 "send us any data."
-msgstr "ថាតើ​គូរ​បាន​បាន​បង្អាក់​យើង ។ ប្រសិន​​បើ​យើង​ត្រូវ​បានបង្អាក់​ គូរ​នឹង​មិន​ត្រូ​វបានផ្ញើ​ទិន្នន័យ​​ឲ្យ​យើងទេ ។"
+msgstr ""
+"ថាតើ​គូរ​បាន​បាន​បង្អាក់​យើង ។ ប្រសិន​​បើ​យើង​ត្រូវ​បានបង្អាក់​ គូរ​នឹង​មិន​ត្រូ​វបានផ្ញើ​ទិន្នន័យ​​ឲ្យ​យើងទេ ។"
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:334
 msgid "Snubbed means the peer has not sent us any data in the last 2 minutes"
@@ -1221,7 +1250,8 @@ msgid "Whether or not the peer has DHT enabled"
 msgstr "ថាតើ​គូ​បានបើក DHT ដែរ​ឬទេ"
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:337
-msgid "The score of the peer. KTorrent uses this to determine who to upload to."
+msgid ""
+"The score of the peer. KTorrent uses this to determine who to upload to."
 msgstr "ពិន្ទុ​របស់គូ ។ KTorrent ប្រើ​វា​ដើម្បី​កំណត់​ដែល​ត្រូវ​ផ្ទុកឡើង ។"
 
 #: transfer-plugins/bittorrent/advanceddetails/peerviewmodel.cpp:338
@@ -1386,7 +1416,8 @@ msgstr "ពង្រីក​មែកធាង​ថត"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:266
 msgid "You will lose all data in this file, are you sure you want to do this?"
-msgid_plural "You will lose all data in these files, are you sure you want to do this?"
+msgid_plural ""
+"You will lose all data in these files, are you sure you want to do this?"
 msgstr[0] "អ្នក​នឹង​បាត់បង់​ទិន្នន័យ​ទាំងអស់​នៅ​ក្នុង​ឯកសារទាំង​នេះ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ធ្វើ​ដូចនេះ​ឬ ?"
 
 #: transfer-plugins/bittorrent/advanceddetails/fileview.cpp:281
@@ -1487,7 +1518,7 @@ msgstr "មាន"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:21
 #. i18n: ectx: property (text), widget (KPushButton, m_add_tracker)
-#: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:86 rc.cpp:290
+#: transfer-plugins/bittorrent/advanceddetails/trackerview.cpp:86 rc.cpp:293
 msgid "Add Tracker"
 msgstr "បន្ថែម​កម្មវិធី​តាមដាន"
 
@@ -1568,28 +1599,6 @@ msgstr "ជ្រើស​ថត torrent លំនាំដើម"
 msgid "Select a default temporary folder"
 msgstr "ជ្រើស​ថត​បណ្ដោះអាសន្ន​លំនាំដើម"
 
-#: transfer-plugins/mmsthreads/mmstransfer.cpp:50
-msgctxt "transfer state: running"
-msgid "Running...."
-msgstr "កំពង់​រត់..."
-
-#: transfer-plugins/mmsthreads/mmstransfer.cpp:113
-msgctxt "Transfer State:Finished"
-msgid "Finished"
-msgstr "បាន​បញ្ចប់"
-
-#: transfer-plugins/mmsthreads/mmstransfer.cpp:156
-msgid "Download failed, could not access this URL."
-msgstr "បាន​បរាជ័យ​ក្នុងកា​រទាញយក មិនអាច​ចូល​ដំណើរការ​ URL នេះ​បាន​ទេ ។"
-
-#: transfer-plugins/mmsthreads/mmstransfer.cpp:166
-msgid ""
-"This URL does not allow multiple connections,\n"
-"the download will take longer."
-msgstr ""
-"URL នេះ​មិន​អនុញ្ញាត​ឲ្យ​មាន​ការ​តភ្ជាប់​ច្រើន​ទេ\n"
-"ការ​ទាញយក​នឹង​ចំណាយ​ពេល​ច្រើន ។"
-
 #: ui/metalinkcreator/dragdlg.cpp:67
 msgid "Import dropped files"
 msgstr "នាំចូល​ឯកសារ​ដែល​បាន​ទម្លាក់"
@@ -1667,13 +1676,10 @@ msgid "Does Not Contain"
 msgstr "មិនមាន"
 
 #: ui/linkview/kget_linkview.cpp:67
-#| msgctxt "all chunks"
-#| msgid "All:"
 msgid "All"
 msgstr "ទាំងអស់"
 
 #: ui/linkview/kget_linkview.cpp:68
-#| msgid "&Videos"
 msgid "Videos"
 msgstr "វីដេអូ"
 
@@ -1682,12 +1688,10 @@ msgid "Images"
 msgstr "រូបភាព"
 
 #: ui/linkview/kget_linkview.cpp:70
-#| msgid "A&udio"
 msgid "Audio"
 msgstr "អូឌីយ៉ូ​"
 
 #: ui/linkview/kget_linkview.cpp:71
-#| msgid "A&rchives"
 msgid "Archives"
 msgstr "ប័ណ្ណសារ​"
 
@@ -1705,14 +1709,11 @@ msgid "Regular Expression"
 msgstr "កន្សោម​ធម្មតា"
 
 #: ui/linkview/kget_linkview.cpp:91
-#| msgctxt "name of download"
-#| msgid "Name"
 msgctxt "name of a file"
 msgid "Name"
 msgstr "ឈ្មោះ"
 
 #: ui/linkview/kget_linkview.cpp:121
-#| msgid "&Download"
 msgctxt "Download the items which have been selected"
 msgid "&Download"
 msgstr "ទាញ​យក"
@@ -1800,7 +1801,6 @@ msgid "Add mirror"
 msgstr "បន្ថែម​កញ្ចក់"
 
 #: ui/mirror/mirrorsettings.cpp:149
-#| msgid "Modify the used mirrors."
 msgid "Modify the used mirrors"
 msgstr "កែប្រែ​កញ្ចក់​ដែល​បានប្រើ ។"
 
@@ -1969,7 +1969,8 @@ msgstr "ចុងក្រោយ"
 
 #: ui/signaturedlg.cpp:44
 #, kde-format
-msgctxt "Signature here is meant in cryptographic terms, so the signature of a file."
+msgctxt ""
+"Signature here is meant in cryptographic terms, so the signature of a file."
 msgid "Signature of %1."
 msgstr "ហត្ថលេខា​ %1 ។"
 
@@ -2045,7 +2046,8 @@ msgstr "បានបរាជ័យ"
 msgid ""
 "Caution: Verification failed. Either you entered the wrong signature, or the "
 "data has been modified."
-msgstr "ប្រយ័ត្ន ៖ ការ​ផ្ទៀងផ្ទាត់​បានបរាជ័យ ។ អ្នក​បាន​បញ្ចូល​ហត្ថលេខា​មិន​ត្រឹមត្រូវ ឬ​ទិន្នន័យ​ត្រូវ​បានកែប្រែ ។"
+msgstr ""
+"ប្រយ័ត្ន ៖ ការ​ផ្ទៀងផ្ទាត់​បានបរាជ័យ ។ អ្នក​បាន​បញ្ចូល​ហត្ថលេខា​មិន​ត្រឹមត្រូវ ឬ​ទិន្នន័យ​ត្រូវ​បានកែប្រែ ។"
 
 #: ui/signaturedlg.cpp:289
 msgid ""
@@ -2060,14 +2062,6 @@ msgid "Feature is not supported, as KGet is not compiled with QPGME support."
 msgstr ""
 "លក្ខណពិសេស​នេះ​មិនត្រូវ​បានគាំទ្រ​ទេ ព្រោះ​ថា KGet មិន​ត្រូវ​បានចងក្រង​​​​ដោយ​មាន​ការ​គាំទ្រ​ QPGME "
 "នោះទេ ។"
-
-#: ui/transfersview.cpp:126
-msgid "Select columns"
-msgstr "ជ្រើស​ជួរឈរ"
-
-#: ui/transfersview.cpp:314
-msgid "Transfer Details"
-msgstr "សេចក្ដី​លម្អិត​នៃ​ការ​ផ្ទេរ"
 
 #: ui/verificationdialog.cpp:39
 msgid "Add checksum"
@@ -2086,6 +2080,14 @@ msgstr "%1 ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​ដ
 #: ui/verificationdialog.cpp:210
 msgid "Verification successful"
 msgstr "ការ​ផ្ទៀងផ្ទាត់​បាន​ជោគជ័យ"
+
+#: ui/transfersview.cpp:126
+msgid "Select columns"
+msgstr "ជ្រើស​ជួរឈរ"
+
+#: ui/transfersview.cpp:314
+msgid "Transfer Details"
+msgstr "សេចក្ដី​លម្អិត​នៃ​ការ​ផ្ទេរ"
 
 #: ui/renamefile.cpp:32
 msgid "Rename File"
@@ -2121,7 +2123,7 @@ msgstr "ស្អិត"
 
 #. i18n: file: conf/dlgadvanced.ui:34
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_AfterFinishAction)
-#: ui/droptarget.cpp:91 mainwindow.cpp:361 rc.cpp:107
+#: ui/droptarget.cpp:91 mainwindow.cpp:361 rc.cpp:122
 msgid "Quit KGet"
 msgstr "ចេញ​ពី KGet"
 
@@ -2183,7 +2185,8 @@ msgid "Transfer Settings for %1"
 msgstr "ការ​កំណត់​ផ្ទេរ​សម្រាប់ %1"
 
 #: ui/transfersettingsdialog.cpp:164
-msgid "Changing the destination did not work, the destination stays unmodified."
+msgid ""
+"Changing the destination did not work, the destination stays unmodified."
 msgstr "ការ​ផ្លាស់ប្ដូ​រទិសដៅ​មិន​ដំណើរការ​ទេ ទិសដៅ​មិន​ត្រូ​វបាន​កែប្រែ​ទេ ។"
 
 #: ui/transfersettingsdialog.cpp:164
@@ -2212,8 +2215,6 @@ msgstr "មិន​អាច​​ចាប់ផ្ដើម WebInterface ៖ 
 
 #: extensions/webinterface/httpserver.cpp:63
 #, kde-format
-#| msgctxt "@info"
-#| msgid "Unable to start the server: %1."
 msgctxt "@info"
 msgid "Unable to start WebInterface: %1"
 msgstr "មិន​អាច​ចាប់ផ្ដើម WebInterface: %1 បាន​ទេ"
@@ -2462,7 +2463,6 @@ msgid "&Import Transfers..."
 msgstr "នាំចូល​ការ​ផ្ទេរ..."
 
 #: mainwindow.cpp:152
-#| msgid "Upload limit per transfer:"
 msgid "Imports a list of transfers"
 msgstr "នាំចូល​បញ្ជី​ក្នុង​ការផ្ទេរ"
 
@@ -2475,7 +2475,6 @@ msgid "Exports the current transfers into a file"
 msgstr "នាំចេញ​ការ​ផ្ទេរ​បច្ចុប្បន្ន​ទៅ​ក្នុង​ឯកសារ"
 
 #: mainwindow.cpp:163
-#| msgid "&Create a Metalink"
 msgid "&Create a Metalink..."
 msgstr "&​បង្កើត​តំណ​មេតា..."
 
@@ -2488,7 +2487,6 @@ msgid "Top Priority"
 msgstr "អាទិភាព​ខ្ពស់​"
 
 #: mainwindow.cpp:172
-#| msgid "Download limit per transfer:"
 msgid "Download selected transfer first"
 msgstr "ទាញ​យក​ការ​ផ្ទេរ​ដំបូង​ដែល​បាន​ជ្រើស"
 
@@ -2497,7 +2495,6 @@ msgid "Least Priority"
 msgstr "អាទិភាពទាប"
 
 #: mainwindow.cpp:179
-#| msgid "Download limit per transfer:"
 msgid "Download selected transfer last"
 msgstr "ទាញ​យក​ការ​ផ្ទេរ​ចុង​ក្រោយ​ដែល​បាន​ជ្រើស"
 
@@ -2518,8 +2515,6 @@ msgid "Decrease priority for selected transfer"
 msgstr "បន្ថយ​អាទិភាព​សម្រាប់​ការ​ផ្ទេរ​ដែល​បាន​ជ្រើស"
 
 #: mainwindow.cpp:200
-#| msgctxt "Delete selected history-item"
-#| msgid "Delete selected"
 msgid "Delete selected group"
 msgstr "លុប​ក្រុម​ដែល​បាន​ជ្រើស"
 
@@ -2555,10 +2550,9 @@ msgid "Remove Selected"
 msgstr "យកអ្វី​ដែលបានជ្រើស​ចេញ"
 
 #: mainwindow.cpp:247
-msgid "Removes selected transfer and deletes files from disk if it's not finished"
-msgstr ""
-"យក​ការ​ផ្ទេរ​ដែល​បាន​ជ្រើស​ចេញ ហើយ​លុប​ឯកសារ​ពី​ថាស "
-"ប្រសិនបើ​វា​មិន​ត្រូវ​បាន​បញ្ចប់​"
+msgid ""
+"Removes selected transfer and deletes files from disk if it's not finished"
+msgstr "យក​ការ​ផ្ទេរ​ដែល​បាន​ជ្រើស​ចេញ ហើយ​លុប​ឯកសារ​ពី​ថាស ប្រសិនបើ​វា​មិន​ត្រូវ​បាន​បញ្ចប់​"
 
 #: mainwindow.cpp:251
 msgctxt "delete all finished transfers"
@@ -2570,17 +2564,13 @@ msgid "Removes all finished transfers and leaves all files on disk"
 msgstr "យក​ការ​ផ្ទេរ​ដែល​បាន​បញ្ចប់​ទាំងអស់​ចេញ ហើយ​ទុក​​ឯកសារ​ទាំងអស់​លើ​ថាស"
 
 #: mainwindow.cpp:257
-#| msgctxt "delete selected transfer item"
-#| msgid "Remove Selected"
 msgctxt "delete selected transfer item and files"
 msgid "Remove Selected and Delete Files"
 msgstr "យក​ឯកសារ​ដែល​បាន​ជ្រើស និង​លុប​ចេញ"
 
 #: mainwindow.cpp:259
 msgid "Removes selected transfer and deletes files from disk in any case"
-msgstr ""
-"យក​ការ​ផ្ទេរ​ដែល​បាន​ជ្រើស​ និង​ឯកសារ​ដែល​បាន​លុប​ចេញ​ពី​ថាស​ "
-"ក្នុង​ករណី​ណា​ក៏ដោយ"
+msgstr "យក​ការ​ផ្ទេរ​ដែល​បាន​ជ្រើស​ និង​ឯកសារ​ដែល​បាន​លុប​ចេញ​ពី​ថាស​ ក្នុង​ករណី​ណា​ក៏ដោយ"
 
 #: mainwindow.cpp:263
 msgctxt "redownload selected transfer item"
@@ -2588,23 +2578,18 @@ msgid "Redownload Selected"
 msgstr "ទាញ​យក​អ្វី​ដែលបាន​ជ្រើស​ម្ដង​ទៀត"
 
 #: mainwindow.cpp:268
-#| msgctxt "start transfergroup downloads"
-#| msgid "Start"
 msgid "Start All"
 msgstr "ចាប់ផ្ដើម​ទាំងអស់"
 
 #: mainwindow.cpp:271
-#| msgid "Start / Resume All"
 msgid "Starts / resumes all transfers"
 msgstr "ចាប់ផ្ដើម / ធ្វើ​​បន្ត​ការ​ផ្ទេរ​ទាំងអស់"
 
 #: mainwindow.cpp:275
-#| msgid "Stop Selected"
 msgid "Start Selected"
 msgstr "​ចាប់ផ្ដើម​អ្វី​ដែល​បាន​ជ្រើស"
 
 #: mainwindow.cpp:277
-#| msgid "Start / Resume Selected"
 msgid "Starts / resumes selected transfer"
 msgstr "ចាប់ផ្ដើម / ធ្វើ​បន្ត​ការ​ផ្ទេរ​ដែល​បាន​ជ្រើស"
 
@@ -2613,7 +2598,6 @@ msgid "Pause All"
 msgstr "ផ្អាក​ទាំងអស់"
 
 #: mainwindow.cpp:284
-#| msgid "Per transfer:"
 msgid "Pauses all transfers"
 msgstr "ផ្អាក​ការ​ផ្ទេរ​ទាំងអស់"
 
@@ -2626,8 +2610,6 @@ msgid "Pauses selected transfer"
 msgstr "ផ្អាក​ការផ្ទេរ​ដែល​បាន​ជ្រើស"
 
 #: mainwindow.cpp:293
-#| msgctxt "start transfergroup downloads"
-#| msgid "Start"
 msgid "Start"
 msgstr "ចាប់ផ្ដើម"
 
@@ -2672,15 +2654,11 @@ msgid "After downloads finished action"
 msgstr "បន្ទាប់ពី​​ទាញ​យក​សកម្មភាព​​ដែល​បាន​បញ្ចប់"
 
 #: mainwindow.cpp:355
-#| msgid "Execute action after all downloads have been finished:"
-msgid "Choose an action that is executed after all downloads have been finished."
-msgstr ""
-"ជ្រើស​សកម្មភាព​ដែល​​ត្រូវ​បាន​ប្រតិបត្តិ "
-"បន្ទាប់ពី​ការ​ទាញ​យក​ទាំងអស់​ត្រូវ​បាន​បញ្ចប់ ។"
+msgid ""
+"Choose an action that is executed after all downloads have been finished."
+msgstr "ជ្រើស​សកម្មភាព​ដែល​​ត្រូវ​បាន​ប្រតិបត្តិ បន្ទាប់ពី​ការ​ទាញ​យក​ទាំងអស់​ត្រូវ​បាន​បញ្ចប់ ។"
 
 #: mainwindow.cpp:357
-#| msgctxt "Location = country"
-#| msgid "Location"
 msgid "No Action"
 msgstr "គ្មាន​សកម្មភាព"
 
@@ -2731,7 +2709,6 @@ msgid "KGet Transfer List"
 msgstr "បញ្ជី​ការ​ផ្ទេរ​របស់ KGet"
 
 #: mainwindow.cpp:598
-#| msgid "Move File"
 msgid "Text File"
 msgstr "ឯកសារ​អត្ថបទ"
 
@@ -2757,10 +2734,9 @@ msgid "Confirm transfer delete"
 msgstr "អះអាង​លុប​ការ​ផ្ទេរ"
 
 #: mainwindow.cpp:749
-#| msgid "Are you sure you want to delete the selected transfer?"
-#| msgid_plural "Are you sure you want to delete the selected transfers?"
 msgid "Are you sure you want to delete the selected transfer including files?"
-msgid_plural "Are you sure you want to delete the selected transfers including files?"
+msgid_plural ""
+"Are you sure you want to delete the selected transfers including files?"
 msgstr[0] "តើអ្នក​ប្រាកដ​ជា​ចង់​លុប​ការ​ផ្ទេរ​ដែល​បានជ្រើស​​រួម​នឹង​ឯកសារ​ឬ ?"
 
 #: mainwindow.cpp:1092
@@ -2782,13 +2758,12 @@ msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត�
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
-"khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,ratanak@k"
-"hmeros.info,sophea@khmeros.info"
+"khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
+"ratanak@khmeros.info,sophea@khmeros.info"
 
 #. i18n: file: conf/verificationpreferences.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_ChecksumAutomaticVerification)
 #: rc.cpp:5
-#| msgid "Automatic verification"
 msgid "Automatic checksums verification"
 msgstr "ការ​ផ្ទៀងផ្ទាត់​ឆេកសាំ​ដោយ​ស្វ័យ​ប្រវត្តិ"
 
@@ -2870,31 +2845,46 @@ msgstr "ប្ដូរ​ឈ្មោះ"
 msgid "Select Icon..."
 msgstr "ជ្រើស​​រូបតំណាង..."
 
+#. i18n: file: conf/dlgintegration.ui:17
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: rc.cpp:44
+msgid "Use as download manager for Konqueror:"
+msgstr "ប្រើ​ជា​កម្មវិធី​គ្រប់គ្រង​ការ​ទាញយក​សម្រាប់ Konqueror ។"
+
+#. i18n: file: conf/dlgintegration.ui:31
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_AutoPaste)
+#: rc.cpp:47
+msgid "Monitor Clipboard for Files to Download"
+msgstr "គ្រប់គ្រង​ក្ដារ​តម្បៀត​ខ្ទាស់​សម្រាប់​ឯកសារ​ដែល​ត្រូវ​ទាញ​យក"
+
+#. i18n: file: conf/dlgintegration.ui:43
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:50
+msgid "Case sensitive:"
+msgstr "ប្រកាន់​អក្សរតូចធំ ៖"
+
 #. i18n: file: conf/dlgnetwork.ui:19
 #. i18n: ectx: property (text), widget (QLabel, lbl_maxnum)
-#: rc.cpp:44
-#| msgid "Limit Maximum Downloads Per Group"
+#: rc.cpp:59
 msgid "Maximum downloads per group:"
 msgstr "ទាញ​យក​អតិបរមា​ជា​ក្រុម ៖"
 
 #. i18n: file: conf/dlgnetwork.ui:26
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, kcfg_MaxConnections)
-#: rc.cpp:47
-#| msgid "No Limit"
+#: rc.cpp:62
 msgctxt "no limit for maximum downloads has been set"
 msgid "No limit"
 msgstr "គ្មាន​ដែន​កំណត់​"
 
 #. i18n: file: conf/dlgnetwork.ui:35
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_SpeedLimit)
-#: rc.cpp:50
+#: rc.cpp:65
 msgid "Speed Limit"
 msgstr "ល្បឿន​កំណត់"
 
 #. i18n: file: conf/dlgnetwork.ui:44
 #. i18n: ectx: property (text), widget (QLabel, dllimitlb)
-#: rc.cpp:53
-#| msgid "Global download limit:"
+#: rc.cpp:68
 msgid "Global &download limit:"
 msgstr "ដែន​កំណត់​ទាញ​យក​សកល ៖"
 
@@ -2912,51 +2902,49 @@ msgstr "ដែន​កំណត់​ទាញ​យក​សកល ៖"
 #. i18n: ectx: property (suffix), widget (QSpinBox, downloadBox)
 #. i18n: file: ui/groupsettingsdialog.ui:109
 #. i18n: ectx: property (suffix), widget (QSpinBox, uploadBox)
-#: rc.cpp:56 rc.cpp:62 rc.cpp:68 rc.cpp:748 rc.cpp:754 rc.cpp:844 rc.cpp:850
+#: rc.cpp:71 rc.cpp:77 rc.cpp:83 rc.cpp:748 rc.cpp:754 rc.cpp:844 rc.cpp:850
 msgid " KiB/s"
 msgstr " គីឡូបីត/វិ."
 
 #. i18n: file: conf/dlgnetwork.ui:70
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:59
-#| msgid "Global upload limit:"
+#: rc.cpp:74
 msgid "Global &upload limit:"
 msgstr "ដែន​កំណត់​ផ្ទុក​​​សកល ៖"
 
 #. i18n: file: conf/dlgnetwork.ui:96
 #. i18n: ectx: property (text), widget (QLabel, lb_per_transfer)
-#: rc.cpp:65
+#: rc.cpp:80
 msgid "Per transfer:"
 msgstr "ក្នុង​មួយ​ការ​ផ្ទេរ ៖"
 
 #. i18n: file: conf/dlgnetwork.ui:119
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_ReconnectOnBroken)
-#: rc.cpp:71
-#| msgid "Reconnect on Error or Broken Connection"
+#: rc.cpp:86
 msgid "Reconnect on Broken Connection"
 msgstr "តភ្ជាប់​ឡើងវិញ​នៅ​ពេល​ការ​តភ្ជាប់​បរាជ័យ"
 
 #. i18n: file: conf/dlgnetwork.ui:128
 #. i18n: ectx: property (text), widget (QLabel, lb_retries_2)
-#: rc.cpp:74
+#: rc.cpp:89
 msgid "Number of retries:"
 msgstr "ចំនួន​ការ​ព្យាយាម​ឡើងវិញ ៖"
 
 #. i18n: file: conf/dlgnetwork.ui:142
 #. i18n: ectx: property (text), widget (QLabel, lb_after_2)
-#: rc.cpp:77
+#: rc.cpp:92
 msgid "Retry after:"
 msgstr "ព្យាយាម​ឡើងវិញ​បន្ទាប់​ពី ៖"
 
 #. i18n: file: conf/dlgnetwork.ui:149
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_ReconnectDelay)
-#: rc.cpp:80
+#: rc.cpp:95
 msgid " sec"
 msgstr " វិ."
 
 #. i18n: file: conf/dlgwebinterface.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_WebinterfaceEnabled)
-#: rc.cpp:83
+#: rc.cpp:98
 msgid "Enable Web Interface"
 msgstr "បើក​ចំណុច​ប្រទាក់​បណ្ដាញ"
 
@@ -2964,13 +2952,13 @@ msgstr "បើក​ចំណុច​ប្រទាក់​បណ្ដាញ
 #. i18n: ectx: property (text), widget (QLabel, portLabel)
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:32
 #. i18n: ectx: property (text), widget (QLabel, portLabel)
-#: rc.cpp:86 rc.cpp:433
+#: rc.cpp:101 rc.cpp:436
 msgid "Port:"
 msgstr "ច្រក​ ៖"
 
 #. i18n: file: conf/dlgwebinterface.ui:46
 #. i18n: ectx: property (text), widget (QLabel, userLabel)
-#: rc.cpp:89
+#: rc.cpp:104
 msgid "User:"
 msgstr "អ្នក​ប្រើ ៖"
 
@@ -2978,128 +2966,105 @@ msgstr "អ្នក​ប្រើ ៖"
 #. i18n: ectx: property (text), widget (QLabel, passwordLabel)
 #. i18n: file: transfer-plugins/contentfetch/scripts/youtubedl/youtube_option.ui:87
 #. i18n: ectx: property (text), widget (QLabel, passwordLabel)
-#: rc.cpp:92 rc.cpp:218
+#: rc.cpp:107 rc.cpp:218
 msgid "Password:"
 msgstr "ពាក្យ​សម្ងាត់ ៖"
 
 #. i18n: file: conf/dlgappearance.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_ShowDropTarget)
-#: rc.cpp:95
-#| msgid "Drop Target"
+#: rc.cpp:110
 msgid "Use Drop Target"
 msgstr "ប្រើ​គោលដៅ​ទម្លាក់"
 
 #. i18n: file: conf/dlgappearance.ui:29
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AnimateDropTarget)
-#: rc.cpp:98
+#: rc.cpp:113
 msgid "Enable animations"
 msgstr "អនុញ្ញាត​​ចលនា"
 
 #. i18n: file: conf/dlgadvanced.ui:17
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableSystemTray)
-#: rc.cpp:101
+#: rc.cpp:116
 msgid "Enable system tray icon"
 msgstr "អនុញ្ញាត​រូប​តំណាង​ថាស​ប្រព័ន្ធ"
 
 #. i18n: file: conf/dlgadvanced.ui:26
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AfterFinishActionEnabled)
-#: rc.cpp:104
+#: rc.cpp:119
 msgid "Execute action after all downloads have been finished:"
 msgstr "ប្រតិបត្តិ​សកម្មភាព​បន្ទាប់​ពី​ការ​ទាញយក​ទាំងអស់​ត្រូវ​បាន​បញ្ចប់ ៖"
 
 #. i18n: file: conf/dlgadvanced.ui:42
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:110
+#: rc.cpp:125
 msgid "At startup:"
 msgstr "នៅ​ពេល​ចាប់ផ្ដើម ៖"
 
 #. i18n: file: conf/dlgadvanced.ui:50
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartupAction)
-#: rc.cpp:113
+#: rc.cpp:128
 msgid "Restore Download State"
 msgstr "ស្ដារ​ស្ថានភាព​ទាញយក​ឡើង​វិញ"
 
 #. i18n: file: conf/dlgadvanced.ui:55
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartupAction)
-#: rc.cpp:116
+#: rc.cpp:131
 msgid "Start All Downloads"
 msgstr "ចាប់ផ្ដើម​ការ​ទាញយក​ទាំងអស់"
 
 #. i18n: file: conf/dlgadvanced.ui:60
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartupAction)
-#: rc.cpp:119
+#: rc.cpp:134
 msgid "Stop All Downloads"
 msgstr "បញ្ឈប់​ការ​ទាញយក​ទាំងអស់"
 
 #. i18n: file: conf/dlgadvanced.ui:71
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:122
+#: rc.cpp:137
 msgid "History backend:"
 msgstr "ប្រវត្តិ​កម្មវិធី​ផ្នែក​ខាង​ក្រោយ ៖"
 
 #. i18n: file: conf/dlgadvanced.ui:80
 #. i18n: ectx: property (title), widget (QGroupBox, kcfg_EnableKUIServerIntegration)
-#: rc.cpp:125
-#| msgid "Enable KDE global progress tracking"
+#: rc.cpp:140
 msgid "Enable KDE Global Progress Tracking"
 msgstr "បើក​ការ​តាមដាន​វឌ្ឍនភាព​សកល​របស់ KDE"
 
 #. i18n: file: conf/dlgadvanced.ui:92
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExportSingleTransfer)
-#: rc.cpp:128
+#: rc.cpp:143
 msgid "Show every single download "
 msgstr "បង្ហាញ​រាល់​ការ​​ទាញយក​តែ​មួយ​"
 
 #. i18n: file: conf/dlgadvanced.ui:99
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_ExportGlobalJob)
-#: rc.cpp:131
+#: rc.cpp:146
 msgid "Show overall progress"
 msgstr "បង្ហាញ​វឌ្ឍនភាព​ទាំងអស់"
 
 #. i18n: file: conf/dlgadvanced.ui:109
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:134
-#| msgid "Handle existing files/transfers"
+#: rc.cpp:149
 msgid "Handle existing Files/Transfers"
 msgstr "គ្រប់គ្រង​ការ​ផ្ទេរ/ឯកសារ​ដែល​មាន​ស្រាប់"
 
 #. i18n: file: conf/dlgadvanced.ui:115
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_FilesAlwaysAsk)
-#: rc.cpp:137
+#: rc.cpp:152
 msgid "Always ask"
 msgstr "សួរ​ជា​និច្ច"
 
 #. i18n: file: conf/dlgadvanced.ui:122
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_FilesAutomaticRename)
-#: rc.cpp:140
+#: rc.cpp:155
 msgid "Automatic rename"
 msgstr "ប្ដូរ​ឈ្មោះ​ដោយ​ស្វ័យ​ប្រវត្តិ"
 
 #. i18n: file: conf/dlgadvanced.ui:129
 #. i18n: ectx: property (text), widget (QRadioButton, kcfg_FilesOverwrite)
-#: rc.cpp:143
+#: rc.cpp:158
 msgid "Overwrite"
 msgstr "សរសេរ​ជាន់​លើ"
-
-#. i18n: file: conf/dlgintegration.ui:17
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:146
-msgid "Use as download manager for Konqueror:"
-msgstr "ប្រើ​ជា​កម្មវិធី​គ្រប់គ្រង​ការ​ទាញយក​សម្រាប់ Konqueror ។"
-
-#. i18n: file: conf/dlgintegration.ui:31
-#. i18n: ectx: property (title), widget (QGroupBox, kcfg_AutoPaste)
-#: rc.cpp:149
-#| msgid "Monitor clipboard for files to download"
-msgid "Monitor Clipboard for Files to Download"
-msgstr "គ្រប់គ្រង​ក្ដារ​តម្បៀត​ខ្ទាស់​សម្រាប់​ឯកសារ​ដែល​ត្រូវ​ទាញ​យក"
-
-#. i18n: file: conf/dlgintegration.ui:43
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:152
-#| msgid "Case insensitive:"
-msgid "Case sensitive:"
-msgstr "ប្រកាន់​អក្សរតូចធំ ៖"
 
 #. i18n: file: transfer-plugins/mirrorsearch/dlgmirrorsearch.ui:16
 #. i18n: ectx: property (text), widget (KTitleWidget, ktitlewidget)
@@ -3133,7 +3098,7 @@ msgstr "យកចេញ"
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #. i18n: file: transfer-plugins/mmsthreads/dlgmms.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:182 rc.cpp:272 rc.cpp:469
+#: rc.cpp:182 rc.cpp:272 rc.cpp:275
 msgid "Number of connections per URL:"
 msgstr "ចំនួន​តភ្ជាប់​ក្នុង​មួយ URL ៖"
 
@@ -3301,61 +3266,61 @@ msgstr "ចំនួន​កញ្ចក់​ក្នុង​មួយ​ឯ
 
 #. i18n: file: transfer-plugins/checksumsearch/checksumsearchadddlg.ui:19
 #. i18n: ectx: property (text), widget (QLabel, label_1)
-#: rc.cpp:275
+#: rc.cpp:278
 msgid "Change string:"
 msgstr "ផ្លាស់ប្ដូរ​​ខ្សែអក្សរ ៖"
 
 #. i18n: file: transfer-plugins/checksumsearch/checksumsearchadddlg.ui:33
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:278
+#: rc.cpp:281
 msgid "Mode:"
 msgstr "របៀប ៖"
 
 #. i18n: file: transfer-plugins/checksumsearch/checksumsearchadddlg.ui:43
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:281
+#: rc.cpp:284
 msgid "Checksum type:"
 msgstr "ប្រភេទ​ឆេកសាំ  ៖"
 
 #. i18n: file: transfer-plugins/checksumsearch/checksumsearchadddlg.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:284
+#: rc.cpp:287
 msgid "Result:"
 msgstr "លទ្ធផល ៖"
 
 #. i18n: file: transfer-plugins/checksumsearch/checksumsearchadddlg.ui:84
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:287
+#: rc.cpp:290
 msgid "label"
 msgstr "ស្លាក"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:28
 #. i18n: ectx: property (text), widget (KPushButton, m_remove_tracker)
-#: rc.cpp:293
+#: rc.cpp:296
 msgid "Remove Tracker"
 msgstr "យក​កម្មវិធី​តាមដាន​ចេញ"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:35
 #. i18n: ectx: property (text), widget (KPushButton, m_change_tracker)
-#: rc.cpp:296
+#: rc.cpp:299
 msgid "Change Tracker"
 msgstr "ផ្លាស់ប្ដូរ​កម្មវិធី​តាមដាន"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:42
 #. i18n: ectx: property (text), widget (QPushButton, m_scrape)
-#: rc.cpp:299
+#: rc.cpp:302
 msgid "Update Trackers"
 msgstr "ធ្វើ​​បច្ចុប្បន្នភាព​កម្មវិធីតាមដាន"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/trackerview.ui:62
 #. i18n: ectx: property (text), widget (KPushButton, m_restore_defaults)
-#: rc.cpp:302
+#: rc.cpp:305
 msgid "Restore Defaults"
 msgstr "ស្ដារ​លំនាំ​ដើម"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/webseedstab.ui:21
 #. i18n: ectx: property (toolTip), widget (KLineEdit, m_webseed)
-#: rc.cpp:305
+#: rc.cpp:308
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -3391,13 +3356,13 @@ msgstr ""
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/webseedstab.ui:28
 #. i18n: ectx: property (text), widget (QPushButton, m_add)
-#: rc.cpp:313
+#: rc.cpp:316
 msgid "Add Webseed"
 msgstr "បន្ថែម Webseed"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/webseedstab.ui:50
 #. i18n: ectx: property (text), widget (QPushButton, m_remove)
-#: rc.cpp:316
+#: rc.cpp:319
 msgid "Remove Webseed"
 msgstr "យក Webseed ចេញ"
 
@@ -3405,19 +3370,19 @@ msgstr "យក Webseed ចេញ"
 #. i18n: ectx: property (windowTitle), widget (QWidget, ChunkDownloadView)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:154
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:319 rc.cpp:397
+#: rc.cpp:322 rc.cpp:400
 msgid "Chunks"
 msgstr "ចំណិត"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui:23
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:322
+#: rc.cpp:325
 msgid "Total:"
 msgstr "សរុប ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui:59
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:325
+#: rc.cpp:328
 msgid "Currently downloading:"
 msgstr "កា​រទាញ​យក​បច្ចុប្បន្ន ៖"
 
@@ -3425,7 +3390,7 @@ msgstr "កា​រទាញ​យក​បច្ចុប្បន្ន ៖"
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:163
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:328 rc.cpp:400
+#: rc.cpp:331 rc.cpp:403
 msgid "Downloaded:"
 msgstr "បានទាញ​យក ៖"
 
@@ -3433,49 +3398,49 @@ msgstr "បានទាញ​យក ៖"
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:205
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:331 rc.cpp:418
+#: rc.cpp:334 rc.cpp:421
 msgid "Excluded:"
 msgstr "មិនបាន​រួម​បញ្ចូល ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui:167
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_4_2)
-#: rc.cpp:334
+#: rc.cpp:337
 msgid "Left:"
 msgstr "ឆ្វេង ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/advanceddetails/chunkdownloadview.ui:203
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_8)
-#: rc.cpp:337
+#: rc.cpp:340
 msgid "Size:"
 msgstr "ទំហំ ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:16
 #. i18n: ectx: property (text), widget (QLabel, torrent_label)
-#: rc.cpp:340
+#: rc.cpp:343
 msgid "Scanning data of torrent:"
 msgstr "វិភាគរក​ទិន្នន័យ​របស់ torrent ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:30
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:343
+#: rc.cpp:346
 msgid "Number of chunks found:"
 msgstr "ចំនួន​កំណាត់​ដែល​បាន​រកឃើញ ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:40
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:346
+#: rc.cpp:349
 msgid "Number of chunks failed:"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រក​ចំនួន​កំណាត់ ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:50
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:349
+#: rc.cpp:352
 msgid "Number of chunks not downloaded:"
 msgstr "ចំនួន​កំណាត់​ដែល​មិនបាន​ទាញយក ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:57
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:352
+#: rc.cpp:355
 msgid "Number of chunks downloaded:"
 msgstr "ចំនួន​កំណាត់​ដែល​បាន​ទាញយក ៖"
 
@@ -3487,25 +3452,25 @@ msgstr "ចំនួន​កំណាត់​ដែល​បាន​ទាញ
 #. i18n: ectx: property (text), widget (QLabel, chunks_not_downloaded)
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:137
 #. i18n: ectx: property (text), widget (QLabel, chunks_downloaded)
-#: rc.cpp:355 rc.cpp:358 rc.cpp:361 rc.cpp:364
+#: rc.cpp:358 rc.cpp:361 rc.cpp:364 rc.cpp:367
 msgid "0"
 msgstr "០"
 
 #. i18n: file: transfer-plugins/bittorrent/scandlg.ui:183
 #. i18n: ectx: property (text), widget (KPushButton, cancel)
-#: rc.cpp:367
+#: rc.cpp:370
 msgid "Cancel"
 msgstr "បោះបង់"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:29
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: rc.cpp:370
+#: rc.cpp:373
 msgid "Stats"
 msgstr "ស្ថានភាព"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:373
+#: rc.cpp:376
 msgid "Seeders:"
 msgstr "ឧបករណ៍​បណ្ដុះ ៖"
 
@@ -3525,46 +3490,46 @@ msgstr "ឧបករណ៍​បណ្ដុះ ៖"
 #. i18n: ectx: property (text), widget (QLabel, chunksAllLabel)
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:212
 #. i18n: ectx: property (text), widget (QLabel, chunksExcludedLabel)
-#: rc.cpp:376 rc.cpp:382 rc.cpp:388 rc.cpp:394 rc.cpp:403 rc.cpp:409
-#: rc.cpp:415 rc.cpp:421
+#: rc.cpp:379 rc.cpp:385 rc.cpp:391 rc.cpp:397 rc.cpp:406 rc.cpp:412
+#: rc.cpp:418 rc.cpp:424
 msgid "<n>"
 msgstr "<n>"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:73
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:379
+#: rc.cpp:382
 msgid "Download speed:"
 msgstr "ល្បឿន​ទាញយក ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:99
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:385
+#: rc.cpp:388
 msgid "Leechers:"
 msgstr "ឧបករណ៍​ស្រូប ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:125
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: rc.cpp:391
+#: rc.cpp:394
 msgid "Upload speed:"
 msgstr "ល្បឿន​ផ្ទុក​ឡើង ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:177
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:406
+#: rc.cpp:409
 msgctxt "chunks left"
 msgid "Left:"
 msgstr "ឆ្វេង ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:191
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:412
+#: rc.cpp:415
 msgctxt "all chunks"
 msgid "All:"
 msgstr "ទាំងអស់ ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btdetailswidgetfrm.ui:240
 #. i18n: ectx: property (text), widget (QLabel, label_11)
-#: rc.cpp:424
+#: rc.cpp:427
 msgctxt "source-file"
 msgid "Source:"
 msgstr "ប្រភព ៖"
@@ -3573,13 +3538,13 @@ msgstr "ប្រភព ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: file: ui/transferdetailsfrm.ui:44
 #. i18n: ectx: property (text), widget (QLabel, destLabel)
-#: rc.cpp:427 rc.cpp:727
+#: rc.cpp:430 rc.cpp:727
 msgid "Saving to:"
 msgstr "រក្សា​ទុក​ទៅ ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:49
 #. i18n: ectx: property (text), widget (QLabel, uploadLimitLabel)
-#: rc.cpp:436
+#: rc.cpp:439
 msgid "Upload limit per transfer:"
 msgstr "ដែន​កំណត់​ផ្ទុក​ឡើង​/ផ្ទេរ ៖"
 
@@ -3587,7 +3552,7 @@ msgstr "ដែន​កំណត់​ផ្ទុក​ឡើង​/ផ្ទ�
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, uploadBox)
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:76
 #. i18n: ectx: property (specialValueText), widget (QSpinBox, downloadBox)
-#: rc.cpp:439 rc.cpp:448
+#: rc.cpp:442 rc.cpp:451
 msgid "No Limit"
 msgstr "គ្មាន​ដែន​កំណត់"
 
@@ -3595,43 +3560,43 @@ msgstr "គ្មាន​ដែន​កំណត់"
 #. i18n: ectx: property (suffix), widget (QSpinBox, uploadBox)
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:79
 #. i18n: ectx: property (suffix), widget (QSpinBox, downloadBox)
-#: rc.cpp:442 rc.cpp:451
+#: rc.cpp:445 rc.cpp:454
 msgid "KiB"
 msgstr "គីឡូបៃ"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:69
 #. i18n: ectx: property (text), widget (QLabel, downloadLabel)
-#: rc.cpp:445
+#: rc.cpp:448
 msgid "Download limit per transfer:"
 msgstr "ដែន​កំណត់​ទាញយក/កា​រផ្ទេរ ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:89
 #. i18n: ectx: property (text), widget (QCheckBox, utpBox)
-#: rc.cpp:454
+#: rc.cpp:457
 msgid "Enable UTP protocol"
 msgstr "បើក​ពិធីការ UTP"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:105
 #. i18n: ectx: property (title), widget (QGroupBox, folderGroupBox)
-#: rc.cpp:457
+#: rc.cpp:460
 msgid "Folders"
 msgstr "ថត"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:117
 #. i18n: ectx: property (text), widget (QLabel, torrentFolderLabel)
-#: rc.cpp:460
+#: rc.cpp:463
 msgid "Default torrent folder:"
 msgstr "ថត torrent លំនាំដើម ៖"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:137
 #. i18n: ectx: property (text), widget (QLabel, tempFolderLabel)
-#: rc.cpp:463
+#: rc.cpp:466
 msgid "Default temporary folder"
 msgstr "ថត​បណ្ដោះ​អាសន្ន​លំនាំដើម"
 
 #. i18n: file: transfer-plugins/bittorrent/btsettingswidget.ui:154
 #. i18n: ectx: property (text), widget (QCheckBox, preallocBox)
-#: rc.cpp:466
+#: rc.cpp:469
 msgid "Pre-allocate disk space"
 msgstr "បម្រុង​ទុក​ទំហំ​ថាស​ជា​មុន"
 
@@ -3748,9 +3713,81 @@ msgstr "កា​រផ្ទៀងផ្ទាត់​ ៖"
 msgid "Optional"
 msgstr "ជា​ជម្រើស"
 
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:23
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: rc.cpp:526
+msgid "General information:"
+msgstr "ព័ត៌មាន​ទូទៅ ៖"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:30
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:529
+msgid "Here you can enter optional general information on the metalink."
+msgstr "នៅទីនេះ អ្នកអាច​បញ្ចូល​ព័ត៌មាន​ទូទៅ​ជា​ជម្រើស​នៅ​លើ​តំណ​មេតា ។"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:61
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: rc.cpp:532
+msgid "Origin:"
+msgstr "ដើម ៖"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:68
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, origin)
+#: rc.cpp:535
+msgid "Web URL to the metalink"
+msgstr "URL បណ្ដាញ​ទៅ​កាន់​តំណ​មេតា"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:75
+#. i18n: ectx: property (toolTip), widget (QLabel, labelDynamic)
+#: rc.cpp:538
+msgid "Dynamic means that updated metalinks can be found at \"Origin\"."
+msgstr "ថាមវន្ត មាន​ន័យ​ថា​តំណ​មេតា​ដែលបាន​ធ្វើ​បច្ចុប្បន្នភាព​ដែល​​អាច​រក​បាននៅ​ \"Origin\" ។"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:78
+#. i18n: ectx: property (text), widget (QLabel, labelDynamic)
+#: rc.cpp:541
+msgid "Dynamic:"
+msgstr "ថាមវន្ត ៖"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:110
+#. i18n: ectx: property (title), widget (QGroupBox, publishedGroupBox)
+#: rc.cpp:544
+msgid "Metalink published"
+msgstr "បានបោះពុម្ពផ្សាយ​តំណ​មេតា"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:122
+#. i18n: ectx: property (text), widget (QLabel, label_30)
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:223
+#. i18n: ectx: property (text), widget (QLabel, label_29)
+#: rc.cpp:547 rc.cpp:565
+msgid "Date and time:"
+msgstr "កាលបរិច្ឆេទ និង​ពេលវេលា ៖"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:132
+#. i18n: ectx: property (text), widget (QCheckBox, use_publishedtimeoffset)
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:213
+#. i18n: ectx: property (text), widget (QCheckBox, use_updatedtimeoffset)
+#: rc.cpp:550 rc.cpp:562
+msgid "Timezone offset:"
+msgstr "អុហ្វសិត​តំបន់​ពេលវេលា ៖"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:149
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:206
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:553 rc.cpp:559
+msgid "Negative offset:"
+msgstr "អុហ្វសិត​អវិជ្ជមាន ៖"
+
+#. i18n: file: ui/metalinkcreator/generalwidget.ui:178
+#. i18n: ectx: property (title), widget (QGroupBox, updatedGroupBox)
+#: rc.cpp:556
+msgid "Metalink updated"
+msgstr "បាន​ធ្វើ​បច្ចុប្បន្នភាព​​តំណមេតា​"
+
 #. i18n: file: ui/metalinkcreator/introduction.ui:17
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:526
+#: rc.cpp:568
 msgid ""
 "This assistant allows you to create metalinks from scratch or base them on "
 "existing metalinks. A lot of the fields are optional or recommended, so "
@@ -3763,99 +3800,27 @@ msgstr ""
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:48
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:529
+#: rc.cpp:571
 msgid "Save created Metalink at:"
 msgstr "រក្សាទុកតំណ​មេតា​ដែល​បានបង្កើត​នៅ ៖"
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:78
 #. i18n: ectx: property (text), widget (QRadioButton, createButton)
-#: rc.cpp:532
+#: rc.cpp:574
 msgid "Create new Metalink"
 msgstr "បង្កើត​តំណ​មេ​តា​ថ្មី"
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:88
 #. i18n: ectx: property (text), widget (QRadioButton, loadButton)
-#: rc.cpp:535
+#: rc.cpp:577
 msgid "Load existing Metalink:"
 msgstr "ផ្ទុកតំណ​មេតា​ដែលមាន​ស្រាប់ ៖"
 
 #. i18n: file: ui/metalinkcreator/introduction.ui:98
 #. i18n: ectx: property (filter), widget (KUrlRequester, load)
-#: rc.cpp:538
+#: rc.cpp:580
 msgid "*.metalink *.meta4|Metalink file (*.metalink *.meta4)"
 msgstr "*.metalink *.meta4|Metalink file (*.metalink *.meta4)"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:23
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:541
-msgid "General information:"
-msgstr "ព័ត៌មាន​ទូទៅ ៖"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:30
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:544
-msgid "Here you can enter optional general information on the metalink."
-msgstr "នៅទីនេះ អ្នកអាច​បញ្ចូល​ព័ត៌មាន​ទូទៅ​ជា​ជម្រើស​នៅ​លើ​តំណ​មេតា ។"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:61
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:547
-msgid "Origin:"
-msgstr "ដើម ៖"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:68
-#. i18n: ectx: property (clickMessage), widget (KLineEdit, origin)
-#: rc.cpp:550
-msgid "Web URL to the metalink"
-msgstr "URL បណ្ដាញ​ទៅ​កាន់​តំណ​មេតា"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:75
-#. i18n: ectx: property (toolTip), widget (QLabel, labelDynamic)
-#: rc.cpp:553
-msgid "Dynamic means that updated metalinks can be found at \"Origin\"."
-msgstr "ថាមវន្ត មាន​ន័យ​ថា​តំណ​មេតា​ដែលបាន​ធ្វើ​បច្ចុប្បន្នភាព​ដែល​​អាច​រក​បាននៅ​ \"Origin\" ។"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:78
-#. i18n: ectx: property (text), widget (QLabel, labelDynamic)
-#: rc.cpp:556
-msgid "Dynamic:"
-msgstr "ថាមវន្ត ៖"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:110
-#. i18n: ectx: property (title), widget (QGroupBox, publishedGroupBox)
-#: rc.cpp:559
-msgid "Metalink published"
-msgstr "បានបោះពុម្ពផ្សាយ​តំណ​មេតា"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:122
-#. i18n: ectx: property (text), widget (QLabel, label_30)
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:223
-#. i18n: ectx: property (text), widget (QLabel, label_29)
-#: rc.cpp:562 rc.cpp:580
-msgid "Date and time:"
-msgstr "កាលបរិច្ឆេទ និង​ពេលវេលា ៖"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:132
-#. i18n: ectx: property (text), widget (QCheckBox, use_publishedtimeoffset)
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:213
-#. i18n: ectx: property (text), widget (QCheckBox, use_updatedtimeoffset)
-#: rc.cpp:565 rc.cpp:577
-msgid "Timezone offset:"
-msgstr "អុហ្វសិត​តំបន់​ពេលវេលា ៖"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:149
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:206
-#. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:568 rc.cpp:574
-msgid "Negative offset:"
-msgstr "អុហ្វសិត​អវិជ្ជមាន ៖"
-
-#. i18n: file: ui/metalinkcreator/generalwidget.ui:178
-#. i18n: ectx: property (title), widget (QGroupBox, updatedGroupBox)
-#: rc.cpp:571
-msgid "Metalink updated"
-msgstr "បាន​ធ្វើ​បច្ចុប្បន្នភាព​​តំណមេតា​"
 
 #. i18n: file: ui/metalinkcreator/commondata.ui:22
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -4048,15 +4013,12 @@ msgstr "ជម្រះ​ប្រវត្តិ"
 #. i18n: file: ui/history/transferhistory.ui:47
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:694
-#| msgctxt "View modes"
-#| msgid "View Modes"
 msgid "View Modes:"
 msgstr "របៀប​ទិដ្ឋភាព​"
 
 #. i18n: file: ui/history/transferhistory.ui:77
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:697
-#| msgid "Select Ranges"
 msgid "Select Ranges:"
 msgstr "ជ្រើស​ជួរ ៖"
 
@@ -4075,7 +4037,6 @@ msgstr "ម៉ាស៊ីន"
 #. i18n: file: ui/history/transferhistory.ui:106
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, searchBar)
 #: rc.cpp:709
-#| msgid "Filter History"
 msgid "Filter history"
 msgstr "ប្រវត្តិ​តម្រង"
 
@@ -4140,7 +4101,6 @@ msgstr "កំណត់​ការ​ផ្ទេរ"
 #. i18n: file: ui/transfersettingsdialog.ui:35
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:742
-#| msgid "Download Destination:"
 msgid "Download des&tination:"
 msgstr "ទិសដៅ​ទាញយក ៖"
 
@@ -4162,21 +4122,18 @@ msgstr "មិន​កំណត់"
 #. i18n: file: ui/transfersettingsdialog.ui:94
 #. i18n: ectx: property (text), widget (QLabel, labelUpload)
 #: rc.cpp:760
-#| msgid "Upload Limit:"
 msgid "&Upload limit:"
 msgstr "ដែន​កំណត់​ផ្ទុក ៖"
 
 #. i18n: file: ui/transfersettingsdialog.ui:104
 #. i18n: ectx: property (text), widget (QLabel, labelDownload)
 #: rc.cpp:763
-#| msgid "Download Limit:"
 msgid "&Download limit:"
 msgstr "ដែន​កំណត់​ទាញយក ៖​"
 
 #. i18n: file: ui/transfersettingsdialog.ui:114
 #. i18n: ectx: property (text), widget (QLabel, labelShareRatio)
 #: rc.cpp:766
-#| msgid "Maximum Share Ratio:"
 msgid "Maximum &share ratio:"
 msgstr "សមាមាត្រ​​​ចែករំលែក​អតិបរមា ៖"
 
@@ -4281,7 +4238,6 @@ msgstr "ការ​កំណត់​ក្រុម"
 #. i18n: file: ui/groupsettingsdialog.ui:44
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:829
-#| msgid "Default folder:"
 msgid "Default &folder:"
 msgstr "ថត​លំនាំ​ដើម ៖"
 
@@ -4294,7 +4250,6 @@ msgstr "ផ្លាស់ទី​ការ​ផ្ទេរ​ទាំង​
 #. i18n: file: ui/groupsettingsdialog.ui:64
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: rc.cpp:835
-#| msgid "Regular expression:"
 msgid "Regular &expression:"
 msgstr "កន្សោម​ធម្មតា ៖"
 
@@ -4307,14 +4262,12 @@ msgstr "*ភាពយន្ត*"
 #. i18n: file: ui/groupsettingsdialog.ui:119
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: rc.cpp:853
-#| msgid "Maximum download speed:"
 msgid "Maximum &download speed:"
 msgstr "ល្បឿន​ទាញ​យក​អតិបរមា ៖"
 
 #. i18n: file: ui/groupsettingsdialog.ui:129
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:856
-#| msgid "Maximum upload speed:"
 msgid "Maximum &upload speed:"
 msgstr "ល្បឿន​ផ្ទុក​ឡើង​អតិបរមា ៖"
 
@@ -4421,4 +4374,3 @@ msgstr "បញ្ជី​សេចក្ដីពិពណ៌នា​សម្
 #: rc.cpp:914
 msgid "List of whether the script is enabled"
 msgstr "បញ្ជី​របស់​ស្គ្រីប​ដែល​ត្រូវ​បើក"
-
