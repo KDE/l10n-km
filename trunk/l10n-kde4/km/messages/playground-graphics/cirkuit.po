@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: cirkuit\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-11-18 05:01+0100\n"
+"POT-Creation-Date: 2012-01-03 07:31+0100\n"
 "PO-Revision-Date: 2011-06-28 07:39+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -22,7 +22,20 @@ msgstr ""
 msgid "Zoom to fit"
 msgstr "ពង្រីក​ឲ្យ​សម"
 
-#: widgets/templatechoosedialog.cpp:103 mainwindow.cpp:174
+#: widgets/backendchoosedialog.cpp:26
+#, kde-format
+msgid ""
+"<h1>%1</h1><div>%2</div><br/><div>See <a href=\"%3\">%3</a> for more "
+"information</div>"
+msgstr ""
+"<h1>%1</h1><div>%2</div><br/><div>មើល <a href=\"%3\">%3</a> សម្រាប់​ព័ត៌មាន​បន្ថែម</"
+"div>"
+
+#: widgets/backendchoosedialog.cpp:33
+msgid "Backend selection"
+msgstr "ការ​ជ្រើស​កម្មវិធី​ខាងក្រោយ"
+
+#: widgets/templatechoosedialog.cpp:103 mainwindow.cpp:184
 msgid "Template manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​ពុម្ព"
 
@@ -41,19 +54,6 @@ msgstr "តើ​អ្នក​ពិតជា​ចង់​លុប​ពុ
 #: widgets/templatechoosedialog.cpp:218
 msgid "Confirm deletion"
 msgstr "អះអាង​ការ​លុប"
-
-#: widgets/backendchoosedialog.cpp:26
-#, kde-format
-msgid ""
-"<h1>%1</h1><div>%2</div><br/><div>See <a href=\"%3\">%3</a> for more "
-"information</div>"
-msgstr ""
-"<h1>%1</h1><div>%2</div><br/><div>មើល <a href=\"%3\">%3</a> សម្រាប់​ព័ត៌មាន​បន្ថែម</"
-"div>"
-
-#: widgets/backendchoosedialog.cpp:33
-msgid "Backend selection"
-msgstr "ការ​ជ្រើស​កម្មវិធី​ខាងក្រោយ"
 
 #: main.cpp:30
 msgid "Cirkuit"
@@ -94,7 +94,7 @@ msgstr "ឯកសារ​ដែល​ត្រូវ​បើក"
 msgid "No backend could be selected!"
 msgstr "គ្មាន​កម្មវិធី​ខាងក្រោយ​ត្រូវ​បាន​ជ្រើស​ទេ !"
 
-#: mainwindow.cpp:81
+#: mainwindow.cpp:87
 msgid ""
 "A KDE text-editor component could not be found;\n"
 "please check your KDE installation."
@@ -104,72 +104,86 @@ msgstr ""
 
 #. i18n: file: cirkuit_general_settings.ui:65
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: mainwindow.cpp:90 rc.cpp:121
+#: mainwindow.cpp:96 rc.cpp:121
 msgid "Preview"
 msgstr "មើល​ជាមុន"
 
-#: mainwindow.cpp:96
+#: mainwindow.cpp:103
+msgid "Ready"
+msgstr "រួចហើយ"
+
+#: mainwindow.cpp:106
 msgid "Log"
 msgstr "ចុះ​កំណត់ហេតុ"
 
-#: mainwindow.cpp:158
+#: mainwindow.cpp:168
 msgid "Export..."
 msgstr "នាំចេញ..."
 
-#: mainwindow.cpp:162
+#: mainwindow.cpp:172
 msgid "Build preview"
 msgstr "ស្ថាបនា​ការ​មើល​ជាមុន"
 
-#: mainwindow.cpp:168
+#: mainwindow.cpp:178
 msgid "Open preview"
 msgstr "បើក​ការ​មើល​ជាមុន"
 
-#: mainwindow.cpp:178
+#: mainwindow.cpp:188
 msgid "Show manual"
 msgstr "បង្ហាញ​សៀវភៅ​ដៃ"
 
-#: mainwindow.cpp:182
+#: mainwindow.cpp:192
 msgid "Show examples"
 msgstr "បង្ហាញ​ឧទាហរណ៍"
 
-#: mainwindow.cpp:190
+#: mainwindow.cpp:200
 msgid "Download Examples"
 msgstr "ទាញ​យក​ឧទាហរណ៍"
 
-#: mainwindow.cpp:195
+#: mainwindow.cpp:205
 msgid "Upload Example"
 msgstr "ផ្ទុក​ឧទាហរណ៍​ឡើង"
 
-#: mainwindow.cpp:200
+#: mainwindow.cpp:210
 msgid "&Open Example"
 msgstr "បើក​ឧទាហរណ៍"
 
-#: mainwindow.cpp:238
+#: mainwindow.cpp:248
 msgid "Open file - Cirkuit"
 msgstr "បើក​ឯកសារ Cirkuit"
 
-#: mainwindow.cpp:281
+#: mainwindow.cpp:291
 msgid "Save file - Cirkuit"
 msgstr "រក្សាទុក​ឯកសារ Cirkuit"
 
-#: mainwindow.cpp:313
+#: mainwindow.cpp:323
 msgid "Export image - Cirkuit"
 msgstr "នាំចេញ​រូបភាព Cirkuit"
 
-#: mainwindow.cpp:402
+#: mainwindow.cpp:369
+#, fuzzy
+#| msgid "Open preview"
+msgid "Generating preview"
+msgstr "បើក​ការ​មើល​ជាមុន"
+
+#: mainwindow.cpp:411
+msgid "Preview built"
+msgstr "មើល​ការ​ស្ថាបនា​ជាមុន"
+
+#: mainwindow.cpp:420
 #, kde-format
 msgid "Backend %1 not found"
 msgstr "រក​មិន​ឃើញ​កម្មវិធី​ខាងក្រោយ %1"
 
-#: mainwindow.cpp:411
+#: mainwindow.cpp:429
 msgid "No valid backend selected."
 msgstr "មិន​បាន​ជ្រើស​កម្មវិធី​ខាងក្រោយ​ដែល​ត្រឹមត្រូវ​ទេ ។"
 
-#: mainwindow.cpp:460
+#: mainwindow.cpp:478
 msgid "General"
 msgstr "ទូទៅ"
 
-#: mainwindow.cpp:519
+#: mainwindow.cpp:537
 msgid ""
 "Circuit Macros could not be found on your system. The application will not "
 "work if the macros are not installed. Do you want to proceed with the "
@@ -178,52 +192,52 @@ msgstr ""
 "មិន​អាច​រក​ឃើញ ​Circuit​ ម៉ាក្រូ​​នៅ​លើ​ប្រព័ន្ធ​របស់​អ្នក ។ កម្មវិធី​នឹង​មិន​ដំណើរការ​ទេ ប្រសិនបើ​មិន​បាន​ដំឡើង​"
 "ម៉ាក្រូ​ ។ តើ​អ្នក​ចង់​បន្ត​ការ​ដំឡើង​ដែរ ឬ​ទេ ?"
 
-#: mainwindow.cpp:519
+#: mainwindow.cpp:537
 msgid "Installation needed"
 msgstr "តម្រូវ​ឲ្យ​មាន​ការ​ដំឡើង"
 
-#: mainwindow.cpp:524
+#: mainwindow.cpp:543
 #, fuzzy
 #| msgid "Download Circuit Macros. Please wait..."
 msgid "Downloading Circuit Macros. Please wait..."
 msgstr "កំពុង​ទាញ​យក​ Circuit ​ម៉ាក្រូ ។ សូម​រង់ចាំ..."
 
-#: mainwindow.cpp:532
+#: mainwindow.cpp:552
 #, kde-format
 msgid ""
 "A new version of Circuit Macros (version %1) is available. Do you want to "
 "upgrade?"
 msgstr "មាន​កំណែ​ថ្មី​របស់​ Circuit ​ម៉ាក្រូ (កំណែ %1) ។ តើ​អ្នក​ចង់​ធ្វើ​ឲ្យ​ប្រសើរ​ដែរ ឬ​ទេ ?"
 
-#: mainwindow.cpp:532
+#: mainwindow.cpp:552
 msgid "Upgrade"
 msgstr "ធ្វើ​ឲ្យ​ប្រសើរ"
 
-#: mainwindow.cpp:550
+#: mainwindow.cpp:569
 msgid "Unable to generate a preview for the current input"
 msgstr "មិន​អាច​បង្កើត​ការ​មើល​ជាមុន​សម្រាប់​ការ​បញ្ចូល​បច្ចុប្បន្ន"
 
-#: mainwindow.cpp:577
+#: mainwindow.cpp:604
 msgid ""
 "No working backend has been found. Cirkuit is unable to generate any figure."
 msgstr ""
 "រក​មិន​ឃើញ​កម្មវិធី​​ខាងក្រោយ​ដែល​កំពុង​ធ្វើការ​ទេ ។ Cirkuit មិន​អាច​បង្កើត​រូបភាព​ពន្យល់​ណាមួយ​ឡើយ ។"
 
-#: mainwindow.cpp:577
+#: mainwindow.cpp:604
 msgid "No backends found"
 msgstr "រក​មិន​ឃើញ​កម្មវិធី​ខាងក្រោយ"
 
-#: mainwindow.cpp:610
+#: mainwindow.cpp:637
 #, kde-format
 msgid "%1 manual"
 msgstr "សៀវភៅ​ដៃ %1"
 
-#: mainwindow.cpp:611
+#: mainwindow.cpp:638
 #, kde-format
 msgid "%1 examples"
 msgstr "ឧទាហរណ៍ %1"
 
-#: mainwindow.cpp:630
+#: mainwindow.cpp:657
 msgid "Save the current document before uploading it"
 msgstr "រក្សាទុក​ឯកសារ​បច្ចុប្បន្ន​មុន​ពេល​ផ្ទុក​វា​ឡើង"
 
@@ -482,9 +496,3 @@ msgstr "ជំនួយ"
 #: rc.cpp:148
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
-
-#~ msgid "Ready"
-#~ msgstr "រួចហើយ"
-
-#~ msgid "Preview built"
-#~ msgstr "មើល​ការ​ស្ថាបនា​ជាមុន"
