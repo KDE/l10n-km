@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_magnet\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-08-03 07:44+0200\n"
+"POT-Creation-Date: 2012-01-09 10:06+0100\n"
 "PO-Revision-Date: 2011-07-12 08:03+0700\n"
 "Last-Translator: \n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: km-KH\n"
 
-#: dbushandler.cpp:90
+#: dbushandler.cpp:87
 msgid ""
 "The Web share for magnet-links is disabled.         You can set it up at "
 "settings:/network-and-connectivity/sharing"
@@ -26,7 +26,7 @@ msgstr ""
 "បណ្ដាញ​ចែក​រំលែក​សម្រាប់​បណ្ដាញ​មេដែក​ត្រូវ​បាន​បិទ ។         អ្នក​អាច​កំណត់​វា​នៅ​ឯ settings:/"
 "network-and-connectivity/sharing"
 
-#: dbushandler.cpp:110
+#: dbushandler.cpp:106
 msgid ""
 "Cannot start process for KTorrent.                           This should not "
 "happen, even if KTorrent is not installed.                           Check "
@@ -36,7 +36,7 @@ msgstr ""
 "ទោះបីជា KTorrent មិន​ត្រូវ​បាន​ដំឡើង​ក៏ដោយ ។                           ពិនិត្យមើល​ធនធាន​"
 "ម៉ាស៊ីន​ និង​ដែន​កំណត់​របស់​អ្នក ។"
 
-#: dbushandler.cpp:137
+#: dbushandler.cpp:133
 #, kde-format
 msgid ""
 "Could not connect to KTorrent via DBus                                     "
@@ -45,34 +45,27 @@ msgstr ""
 "មិន​អាច​តភ្ជាប់​ទៅ​កាន់ KTorrent តាម DBus បាន​ទេ                                    "
 "បន្ទាប់ពី %1 វិនាទី ។ តើ​វា​ខូច​ឬ ?"
 
-#: dbushandler.cpp:156
+#: dbushandler.cpp:151
 msgid ""
 "Could not get the group list, do you have a compatible KTorrent version "
 "running?"
 msgstr "មិន​អាច​ទទួល​យក​បញ្ជី​ក្រុម តើ​អ្នក​មាន​ដំណើរការ​​កំណែ KTorrent ដែល​ឆប​គ្នា​ដែរ ឬទេ ?"
 
-#: dbushandler.cpp:277
+#: dbushandler.cpp:278
 #, kde-format
 msgid "The link for %1 does not contain the required btih hash-parameter."
 msgstr "តំណ​សម្រាប់ %1 មិន​មាន​សញ្ញា​ប៉ារ៉ាម៉ែត្រ btih ដែល​បាន​ទាមទារ​ទេ ។"
 
-#: dbushandler.cpp:337
-msgid "(no name given)"
-msgstr "(គ្មាន​ឈ្មោះ​បាន​ផ្ដល់​ទេ)"
+#: dbushandler.cpp:288
+#, kde-format
+msgid "The found value (%1) for the hash is neither 32 nor 40 chars long."
+msgstr ""
 
-#: dbushandler.cpp:340
-msgid "(no path given)"
-msgstr "(គ្មាន​ផ្លូវ​បាន​ផ្ដល់​ទេ)"
-
-#: dbushandler.cpp:343
-msgid "(magnet dht)"
-msgstr "(magnet dht)"
-
-#: dbushandler.cpp:558
+#: dbushandler.cpp:520
 msgid "Torrent has been removed from KTorrent."
 msgstr "Torrent ត្រូវ​បាន​យក​ចេញពី KTorrent​ ។"
 
-#: kio_magnet.cpp:242 kio_magnet.cpp:322 kio_magnet.cpp:352
+#: kio_magnet.cpp:235 kio_magnet.cpp:310 kio_magnet.cpp:336
 #, kde-format
 msgid ""
 "File exists in KTorrent, but cannot open it on disk at path \"%1\". Have you "
@@ -81,11 +74,13 @@ msgstr ""
 "ឯកសារ​មាន​នៅ​ក្នុង​ KTorrent ប៉ុន្តែ​មិន​អាច​បើក​វា​នៅ​លើ​ថាស​នៅ​ឯ​ផ្លូវ \"%1\" បាន​ទេ ។ តើ​អ្នក​បាន​យក​"
 "ឯកសារ​ចេញ​ដោយ​ដៃ​ដែរ ឬទេ ?"
 
-#: kio_magnet.cpp:306
-msgid "You cannot write to magnet ressources."
+#: kio_magnet.cpp:295
+#, fuzzy
+#| msgid "You cannot write to magnet ressources."
+msgid "You cannot write to magnet resources."
 msgstr "អ្នក​មិន​អាច​សរសេរ​​ទៅ​កាន់​ធនធាន​មេដែក​បាន​ទេ ។"
 
-#: kio_magnet.cpp:329
+#: kio_magnet.cpp:316
 #, kde-format
 msgid "File \"%1\" is a directory. This should not happen. Please file a bug."
 msgstr "ឯកសារ​ \"%1\" គឺជា​ថត ។ វា​មិន​គួរ​កើត​មាន​ទេ ។ សូម​សរសេរ​​ជា​ឯកសារ​កហុស ។"
@@ -111,7 +106,9 @@ msgstr "បញ្ជី​ម៉ាស៊ីន​ដែល​បាន​ទទ
 #. i18n: file: magnetsettings.kcfg:21
 #. i18n: ectx: label, entry (ManagedTorrents), group (Magnet)
 #: rc.cpp:12
-msgid "Torrents inside KTorrent which are managed by this modules."
+#, fuzzy
+#| msgid "Torrents inside KTorrent which are managed by this modules."
+msgid "Torrents inside KTorrent which are managed by these modules."
 msgstr "Torrents នៅ​ផ្នែក​ខាង​ក្នុង​ KTorrent ដែល​ត្រូវ​បាន​គ្រប់គ្រង​ដោយ​ម៉ូឌុល​នេះ ។"
 
 #. i18n: file: magnetsettings.kcfg:24
@@ -125,3 +122,12 @@ msgstr "បច្ចុប្បន្ន Torrents ត្រូវ​បាន�
 #: rc.cpp:18
 msgid "The maximum share ratio which should be targeted for each torrent."
 msgstr "សមាមាត្រ​ចែករំលែក​អតិបរមា​ដែល​គួរតែ​ត្រូវ​បាន​ដល់​គោលដៅ​សម្រាប់​ torrent នីមួយៗ ។"
+
+#~ msgid "(no name given)"
+#~ msgstr "(គ្មាន​ឈ្មោះ​បាន​ផ្ដល់​ទេ)"
+
+#~ msgid "(no path given)"
+#~ msgstr "(គ្មាន​ផ្លូវ​បាន​ផ្ដល់​ទេ)"
+
+#~ msgid "(magnet dht)"
+#~ msgstr "(magnet dht)"
