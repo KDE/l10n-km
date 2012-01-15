@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-09 03:22+0100\n"
+"POT-Creation-Date: 2012-01-15 03:24+0100\n"
 "PO-Revision-Date: 2011-06-24 08:56+0700\n"
 "Last-Translator: Chan Sambathratanak <ratanak@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -115,27 +115,9 @@ msgstr "មិន​អាច​បើក​ %1 ៖​ %2"
 msgid "Failed to create %1: %2"
 msgstr "បរាជ័យ​ក្នុង​ការ​បង្កើត %1 ៖ %2"
 
-#. i18n: file: ktorrent/dialogs/pastedlgbase.ui:14
-#. i18n: ectx: property (windowTitle), widget (QWidget, PasteDlgBase)
-#: ktorrent/dialogs/pastedialog.cpp:38 rc.cpp:112
-msgid "Open an URL"
-msgstr "បើក URL"
-
-#: ktorrent/dialogs/pastedialog.cpp:62
-#: ktorrent/dialogs/torrentcreatordlg.cpp:118
-#: ktorrent/dialogs/fileselectdlg.cpp:430 libktcore/groups/allgroup.cpp:26
-msgid "All Torrents"
-msgstr "គ្រប់​ Torrents"
-
-#: ktorrent/dialogs/pastedialog.cpp:105
-#: ktorrent/dialogs/torrentcreatordlg.cpp:251 ktorrent/gui.cpp:337
-#, kde-format
-msgid "Invalid URL: %1"
-msgstr "URL មិនត្រឹមត្រូវ ៖ %1"
-
 #. i18n: file: ktorrent/dialogs/speedlimitsdlg.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, SpeedLimitsDlg)
-#: ktorrent/dialogs/speedlimitsdlg.cpp:50 ktorrent/view/view.cpp:251
+#: ktorrent/dialogs/speedlimitsdlg.cpp:50 ktorrent/view/view.cpp:254
 #: rc.cpp:124
 msgid "Speed Limits"
 msgstr "ល្បឿន​កំណត់"
@@ -337,31 +319,6 @@ msgstr "គ្មាន​ល្បឿន​ដែល​បាន​អះអា
 msgid " KiB/s"
 msgstr " គ.ប./វិ."
 
-#: ktorrent/dialogs/torrentcreatordlg.cpp:44
-msgid "Create A Torrent"
-msgstr "បង្កើត Torrent"
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:257
-msgid "Only HTTP is supported for webseeding."
-msgstr "មានតែ HTTP ប៉ុណ្ណោះ​ត្រូវ​បាន​គាំទ្រ ​សម្រាប់​ការ​បណ្ដុះ​បណ្ដាញ ។"
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:289
-msgid "You must select a file or a folder."
-msgstr "អ្នក​ត្រូវ​តែ​ជ្រើស​ឯកសារ ឬ​ថត​ ។​"
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:295
-msgid ""
-"You have not added a tracker, are you sure you want to create this torrent?"
-msgstr "អ្នក​មិន​បាន​បន្ថែម​ឧបករណ៍​តាមដាន​ទេ តើ​អ្នក​ពិតជា​ចង់​បង្កើត torrent នេះ​ឬ ?"
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:303
-msgid "You must add at least one node."
-msgstr "អ្នក​ត្រូវ​បន្ថែម​ថ្នាំង​​យ៉ាង​ហោច​មួយ​ ។​"
-
-#: ktorrent/dialogs/torrentcreatordlg.cpp:369
-msgid "Choose a file to save the torrent"
-msgstr "ជ្រើស​ឯកសារ ដើម្បី​រក្សាទុក torrent"
-
 #: ktorrent/dialogs/torrentmigratordlg.cpp:97
 #, kde-format
 msgid "Importing 1 torrent ..."
@@ -501,76 +458,118 @@ msgstr ""
 "ការ​បើក​ torrent <b>%1</b> នឹង​ចែករំលែក​ឯកសារ​មួយ​ ឬ​ច្រើន​ជាមួយ​​ torrents ដូច​ខាង​ក្រោម​ ។​ "
 "Torrents មិន​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​​សរសេរ​ទៅកាន់​ឯកសារ​ដូច​គ្នា​ឡើយ​ ។​ សូម​ជ្រើស​ទីតាំង​ផ្សេង​មួយ​ទៀត ។"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:504
+#: ktorrent/dialogs/fileselectdlg.cpp:430 ktorrent/dialogs/pastedialog.cpp:62
+#: ktorrent/dialogs/torrentcreatordlg.cpp:118 libktcore/groups/allgroup.cpp:26
+msgid "All Torrents"
+msgstr "គ្រប់​ Torrents"
+
+#: ktorrent/dialogs/fileselectdlg.cpp:507
 msgid "<b>Unable to determine free space</b>"
 msgstr "<b>មិន​អាច​កំណត់​ទំហំ​ទំនេរ​បាន​ឡើយ​​</b>"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:514
+#: ktorrent/dialogs/fileselectdlg.cpp:517
 #, kde-format
 msgid "%1 (%2 in use by existing files)"
 msgstr "%1 (%2 កំពុង​ត្រូវ​បាន​ប្រើ​ដោយ​ឯកសារ​ដែល​មាន​ស្រាប់)"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:523
+#: ktorrent/dialogs/fileselectdlg.cpp:526
 #, kde-format
 msgctxt "We are %1 bytes short of what we need"
 msgid "%1 short"
 msgstr "%1 ខ្លី ​"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:555
+#: ktorrent/dialogs/fileselectdlg.cpp:558
 msgid "Existing files: <b>None</b>"
 msgstr "ឯកសារ​ដែល​មានស្រាប់​ ៖​​ <b>គ្មាន​​</b>"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:557
+#: ktorrent/dialogs/fileselectdlg.cpp:560
 msgid "Existing files: <b>All</b>"
 msgstr "ឯកសារ​ដែល​មាន​ស្រាប់​ ៖ <b>គ្រប់​</b>​"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:559
+#: ktorrent/dialogs/fileselectdlg.cpp:562
 #, kde-format
 msgid "Existing files: <b>%1</b> of <b>%2</b>"
 msgstr "ឯកសារ​ដែល​មាន​ស្រាប់​​ ៖​​ <b>%1</b> ​របស់​​ <b>%2</b>​"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:566
+#: ktorrent/dialogs/fileselectdlg.cpp:569
 msgid "Existing file: <b>No</b>"
 msgstr "ឯកសារ​ដែល​មាន​ស្រាប់​ ៖​​ <b>ទេ​​​</b>"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:571
+#: ktorrent/dialogs/fileselectdlg.cpp:574
 msgid "Existing file: <b>Yes</b>"
 msgstr "ឯកសារ​ដែល​មាន​ស្រាប់​ ៖ <b>បាទ/ចាស</b>​"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:651
+#: ktorrent/dialogs/fileselectdlg.cpp:654
 msgid "Clear History"
 msgstr "ជម្រះ​ប្រវត្តិ​"
+
+#. i18n: file: ktorrent/dialogs/pastedlgbase.ui:14
+#. i18n: ectx: property (windowTitle), widget (QWidget, PasteDlgBase)
+#: ktorrent/dialogs/pastedialog.cpp:38 rc.cpp:112
+msgid "Open an URL"
+msgstr "បើក URL"
+
+#: ktorrent/dialogs/pastedialog.cpp:106
+#: ktorrent/dialogs/torrentcreatordlg.cpp:252 ktorrent/gui.cpp:337
+#, kde-format
+msgid "Invalid URL: %1"
+msgstr "URL មិនត្រឹមត្រូវ ៖ %1"
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:44
+msgid "Create A Torrent"
+msgstr "បង្កើត Torrent"
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:258
+msgid "Only HTTP is supported for webseeding."
+msgstr "មានតែ HTTP ប៉ុណ្ណោះ​ត្រូវ​បាន​គាំទ្រ ​សម្រាប់​ការ​បណ្ដុះ​បណ្ដាញ ។"
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:290
+msgid "You must select a file or a folder."
+msgstr "អ្នក​ត្រូវ​តែ​ជ្រើស​ឯកសារ ឬ​ថត​ ។​"
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:296
+msgid ""
+"You have not added a tracker, are you sure you want to create this torrent?"
+msgstr "អ្នក​មិន​បាន​បន្ថែម​ឧបករណ៍​តាមដាន​ទេ តើ​អ្នក​ពិតជា​ចង់​បង្កើត torrent នេះ​ឬ ?"
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:304
+msgid "You must add at least one node."
+msgstr "អ្នក​ត្រូវ​បន្ថែម​ថ្នាំង​​យ៉ាង​ហោច​មួយ​ ។​"
+
+#: ktorrent/dialogs/torrentcreatordlg.cpp:370
+msgid "Choose a file to save the torrent"
+msgstr "ជ្រើស​ឯកសារ ដើម្បី​រក្សាទុក torrent"
 
 #: ktorrent/groups/grouppolicydlg.cpp:31
 #, kde-format
 msgid "Policy for the %1 group"
 msgstr "គោលការណ៍​សម្រាប់​ក្រុម %1"
 
-#: ktorrent/groups/groupview.cpp:117
+#: ktorrent/groups/groupview.cpp:116
 msgid "Custom Groups"
 msgstr "ក្រុម​ផ្ទាល់ខ្លួន"
 
-#: ktorrent/groups/groupview.cpp:139 ktorrent/view/view.cpp:219
+#: ktorrent/groups/groupview.cpp:142 ktorrent/view/view.cpp:219
 msgid "New Group"
 msgstr "ក្រុម​ថ្មី"
 
-#: ktorrent/groups/groupview.cpp:143
+#: ktorrent/groups/groupview.cpp:146
 msgid "Edit Name"
 msgstr "កែសម្រួល​ឈ្មោះ"
 
-#: ktorrent/groups/groupview.cpp:147
+#: ktorrent/groups/groupview.cpp:150
 msgid "Remove Group"
 msgstr "យក​​ក្រុម​ចេញ​"
 
-#: ktorrent/groups/groupview.cpp:151
+#: ktorrent/groups/groupview.cpp:154
 msgid "Group Policy"
 msgstr "គោលការណ៍​ក្រុម"
 
-#: ktorrent/groups/groupview.cpp:317
+#: ktorrent/groups/groupview.cpp:321
 msgid "Please enter the group name."
 msgstr "សូម​បញ្ចូល​ឈ្មោះ​ក្រុម ។"
 
-#: ktorrent/groups/groupview.cpp:324 ktorrent/groups/groupview.cpp:445
+#: ktorrent/groups/groupview.cpp:328 ktorrent/groups/groupview.cpp:449
 #, kde-format
 msgid "The group %1 already exists."
 msgstr "មាន​ក្រុម %1 រួច​ហើយ ។"
@@ -613,7 +612,7 @@ msgstr "ប្រូកស៊ី"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #. i18n: file: ktorrent/pref/qmpref.ui:27
 #. i18n: ectx: property (title), widget (QGroupBox, m_qm_group_box)
-#: ktorrent/pref/qmpref.cpp:25 ktorrent/torrentactivity.cpp:89 rc.cpp:990
+#: ktorrent/pref/qmpref.cpp:25 ktorrent/torrentactivity.cpp:95 rc.cpp:990
 #: rc.cpp:1008
 msgid "Queue Manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​ជួរ"
@@ -1138,29 +1137,29 @@ msgstr "ពិនិត្យ​មើល​ទិន្នន័យទាំង
 
 #. i18n: file: ktorrent/kttorrentactivityui.rc:60
 #. i18n: ectx: Menu (OpenDirMenu)
-#: ktorrent/view/view.cpp:237 rc.cpp:1303
+#: ktorrent/view/view.cpp:240 rc.cpp:1303
 msgid "Open Directory"
 msgstr "បើក​ថត"
 
 #. i18n: file: ktorrent/kttorrentactivityui.rc:66
 #. i18n: ectx: Menu (GroupsSubMenu)
-#: ktorrent/view/view.cpp:240 rc.cpp:1306
+#: ktorrent/view/view.cpp:243 rc.cpp:1306
 msgid "Add to Group"
 msgstr "បន្ថែម​ទៅ​ក្រុម"
 
-#: ktorrent/view/view.cpp:243
+#: ktorrent/view/view.cpp:246
 msgid "Copy Torrent URL"
 msgstr "ចម្លង URL របស់ Torrent"
 
-#: ktorrent/view/view.cpp:247
+#: ktorrent/view/view.cpp:250
 msgid "Export Torrent"
 msgstr "Torrent នាំចេញ"
 
-#: ktorrent/view/view.cpp:252
+#: ktorrent/view/view.cpp:255
 msgid "Set the speed limits of individual torrents"
 msgstr "កំណត់​ល្បឿន​កំណត់​របស់ torrent នីមួយៗ"
 
-#: ktorrent/view/view.cpp:461
+#: ktorrent/view/view.cpp:464
 #, kde-format
 msgid ""
 "The torrent <b>%1</b> has not finished downloading, do you want to delete "
@@ -1169,19 +1168,19 @@ msgstr ""
 "torrent <b>%1</b> មិនទាន់​បាន​បញ្ចាប់​ការ​ទាញយក​នៅឡើយ​ទេ តើ​អ្នក​ពិតជា​ចង់​លុប​ទិន្នន័យ​ដែល​មិនទាន់​"
 "ចប់សព្វ​គ្រប់​នោះ​ឬ ?"
 
-#: ktorrent/view/view.cpp:466
+#: ktorrent/view/view.cpp:469
 msgid "Remove Download"
 msgstr "យក​ការ​ទាញយក​ចេញ"
 
-#: ktorrent/view/view.cpp:467
+#: ktorrent/view/view.cpp:470
 msgid "Delete Data"
 msgstr "លុប​ទិន្នន័យ"
 
-#: ktorrent/view/view.cpp:468
+#: ktorrent/view/view.cpp:471
 msgid "Keep Data"
 msgstr "ទុក​ទិន្នន័យ"
 
-#: ktorrent/view/view.cpp:493
+#: ktorrent/view/view.cpp:496
 #, fuzzy
 #| msgid ""
 #| "You will lose all the downloaded data. Are you sure you want to do this?"
@@ -1190,11 +1189,11 @@ msgid ""
 "sure you want to do this?"
 msgstr "អ្នក​នឹង​បាត់បង់​ទិន្នន័យ​ដែល​បាន​ទាញយក​ទាំងអស់ ។ តើ​អ្នក​ពិតជា​ចង់​ធ្វើ​ដូចនេះ​ឬ ?"
 
-#: ktorrent/view/view.cpp:494
+#: ktorrent/view/view.cpp:497
 msgid "Remove Torrent"
 msgstr "យក Torrent ចេញ"
 
-#: ktorrent/view/view.cpp:590 plugins/infowidget/fileview.cpp:348
+#: ktorrent/view/view.cpp:593 plugins/infowidget/fileview.cpp:348
 #: plugins/infowidget/fileview.cpp:369
 msgid "Select a directory to move the data to."
 msgstr "ជ្រើស​​ថត ដែល​ត្រូវ​ផ្លាស់ទី​ទិន្នន័យ​ទៅ ។"
@@ -1648,76 +1647,6 @@ msgstr "ជ្រើស​ឯកសារt"
 msgid "Choose a filename to save under"
 msgstr "ជ្រើស​ឈ្មោះ​ឯកសារ​ដែល​ត្រូវប្រើ​ដើម្បី​រក្សាទុក"
 
-#. i18n: file: ktorrent/kttorrentactivityui.rc:7
-#. i18n: ectx: Menu (Torrents)
-#. i18n: file: ktorrent/kttorrentactivityui.rc:81
-#. i18n: ectx: ToolBar (TorrentsToolBar)
-#. i18n: file: ktorrent/kttorrentactivityui.rc:7
-#. i18n: ectx: Menu (Torrents)
-#. i18n: file: ktorrent/kttorrentactivityui.rc:81
-#. i18n: ectx: ToolBar (TorrentsToolBar)
-#: ktorrent/torrentactivity.cpp:48 libktcore/interfaces/functions.cpp:179
-#: rc.cpp:1291 rc.cpp:1315
-msgid "Torrents"
-msgstr "Torrent"
-
-#: ktorrent/torrentactivity.cpp:89
-msgid "Widget to manage the torrent queue"
-msgstr "ធាតុ​ក្រាហ្វិក​ដែល​ត្រូវ​គ្រប់គ្រង​ជួរ torrent"
-
-#: ktorrent/torrentactivity.cpp:92
-#: plugins/magnetgenerator/magnetgeneratorplugin.cpp:143
-msgid "Magnet"
-msgstr "Magnet"
-
-#: ktorrent/torrentactivity.cpp:93
-msgid "Displays the currently downloading magnet links"
-msgstr "បង្ហាញ​ការ​ទាញ​យក​តំណ magnet បច្ចុប្បន្ន​"
-
-#: ktorrent/torrentactivity.cpp:108
-msgid "Start All"
-msgstr "ចាប់ផ្ដើម​ទាំងអស់"
-
-#: ktorrent/torrentactivity.cpp:109
-msgid "Start all torrents"
-msgstr "ចាប់ផ្ដើម torrents ទាំង​​អស់"
-
-#: ktorrent/torrentactivity.cpp:113
-msgid "Stop All"
-msgstr "បញ្ឈប់​ទាំងអស់"
-
-#: ktorrent/torrentactivity.cpp:114
-msgid "Stop all torrents"
-msgstr "បញ្ឈប់ torrents ទាំងអស់"
-
-#: ktorrent/torrentactivity.cpp:118
-msgid "Suspend Torrents"
-msgstr "ផ្អាក KTorrent"
-
-#. i18n: file: plugins/bwscheduler/edititemdlg.ui:109
-#. i18n: ectx: property (text), widget (QCheckBox, m_suspended)
-#: ktorrent/torrentactivity.cpp:120 rc.cpp:1565
-msgid "Suspend all running torrents"
-msgstr "ផ្អាក torrent ដែល​កំពុង​ដំណើរការ​ទាំងអស់"
-
-#: ktorrent/torrentactivity.cpp:125
-msgid "Group View Visible"
-msgstr "ទិដ្ឋភាព​ក្រុម​ដែល​អាច​មើល​ឃើញ"
-
-#: ktorrent/torrentactivity.cpp:126
-msgid "Show or hide the group view"
-msgstr "បង្ហាញ​ ឬ​លាក់​ទិដ្ឋភាព​ក្រុម​"
-
-#: ktorrent/torrentactivity.cpp:130
-#, fuzzy
-#| msgid "All Torrents"
-msgid "Filter Torrents"
-msgstr "គ្រប់​ Torrents"
-
-#: ktorrent/torrentactivity.cpp:131
-msgid "Filter torrents based on filter string"
-msgstr ""
-
 #: ktorrent/trayicon.cpp:111
 msgid "Set max upload speed"
 msgstr "កំណត់​ល្បឿន​ផ្ទុកឡើង​អតិបរមា"
@@ -1942,6 +1871,82 @@ msgid ""
 msgstr ""
 "អ្នក​កំពុង​ប៉ុនប៉ង​ទាញ​យក​តំណ​ magnet ហើយ​ DHT មិន​ត្រូវ​បាន​បើក ។ សម្រាប់​លទ្ធផល​ប្រសើរ​បំផុត សូម​បើក DHT ។"
 
+#. i18n: file: ktorrent/kttorrentactivityui.rc:7
+#. i18n: ectx: Menu (Torrents)
+#. i18n: file: ktorrent/kttorrentactivityui.rc:81
+#. i18n: ectx: ToolBar (TorrentsToolBar)
+#. i18n: file: ktorrent/kttorrentactivityui.rc:7
+#. i18n: ectx: Menu (Torrents)
+#. i18n: file: ktorrent/kttorrentactivityui.rc:81
+#. i18n: ectx: ToolBar (TorrentsToolBar)
+#: ktorrent/torrentactivity.cpp:51 libktcore/interfaces/functions.cpp:179
+#: rc.cpp:1291 rc.cpp:1315
+msgid "Torrents"
+msgstr "Torrent"
+
+#: ktorrent/torrentactivity.cpp:95
+msgid "Widget to manage the torrent queue"
+msgstr "ធាតុ​ក្រាហ្វិក​ដែល​ត្រូវ​គ្រប់គ្រង​ជួរ torrent"
+
+#: ktorrent/torrentactivity.cpp:98
+#: plugins/magnetgenerator/magnetgeneratorplugin.cpp:143
+msgid "Magnet"
+msgstr "Magnet"
+
+#: ktorrent/torrentactivity.cpp:99
+msgid "Displays the currently downloading magnet links"
+msgstr "បង្ហាញ​ការ​ទាញ​យក​តំណ magnet បច្ចុប្បន្ន​"
+
+#: ktorrent/torrentactivity.cpp:114
+msgid "Start All"
+msgstr "ចាប់ផ្ដើម​ទាំងអស់"
+
+#: ktorrent/torrentactivity.cpp:115
+msgid "Start all torrents"
+msgstr "ចាប់ផ្ដើម torrents ទាំង​​អស់"
+
+#: ktorrent/torrentactivity.cpp:119
+msgid "Stop All"
+msgstr "បញ្ឈប់​ទាំងអស់"
+
+#: ktorrent/torrentactivity.cpp:120
+msgid "Stop all torrents"
+msgstr "បញ្ឈប់ torrents ទាំងអស់"
+
+#: ktorrent/torrentactivity.cpp:124
+msgid "Suspend Torrents"
+msgstr "ផ្អាក KTorrent"
+
+#. i18n: file: plugins/bwscheduler/edititemdlg.ui:109
+#. i18n: ectx: property (text), widget (QCheckBox, m_suspended)
+#: ktorrent/torrentactivity.cpp:126 rc.cpp:1565
+msgid "Suspend all running torrents"
+msgstr "ផ្អាក torrent ដែល​កំពុង​ដំណើរការ​ទាំងអស់"
+
+#: ktorrent/torrentactivity.cpp:131
+msgid "Group View Visible"
+msgstr "ទិដ្ឋភាព​ក្រុម​ដែល​អាច​មើល​ឃើញ"
+
+#: ktorrent/torrentactivity.cpp:132
+msgid "Show or hide the group view"
+msgstr "បង្ហាញ​ ឬ​លាក់​ទិដ្ឋភាព​ក្រុម​"
+
+#: ktorrent/torrentactivity.cpp:136
+#, fuzzy
+#| msgid "All Torrents"
+msgid "Filter Torrents"
+msgstr "គ្រប់​ Torrents"
+
+#: ktorrent/torrentactivity.cpp:137
+msgid "Filter torrents based on filter string"
+msgstr ""
+
+#: ktorrent/torrentactivity.cpp:142
+#, fuzzy
+#| msgid "Tracker"
+msgid "Switch To View"
+msgstr "កម្មវិធី​តាម​ដាន​"
+
 #: ktupnptest/main.cpp:40
 msgid "KTUPnPTest"
 msgstr "KTUPnPTest"
@@ -1962,57 +1967,57 @@ msgstr "បាន​ដល់​ដែន​កំណត់​សមាមាត
 msgid "Maximum seed time reached."
 msgstr "បាន​ដល់​ពេលវេលា​បណ្ដុះ​អតិបរមា​ហើយ ។"
 
-#: libktcore/groups/ungroupedgroup.cpp:27
-msgid "Ungrouped Torrents"
-msgstr "Torrent មិនបាន​ដាក់​ជា​ក្រុម"
-
-#: libktcore/groups/groupmanager.cpp:100
+#: libktcore/groups/groupmanager.cpp:102
 msgid "Uploads"
 msgstr "ផ្ទុក​ឡើង​"
 
-#: libktcore/groups/groupmanager.cpp:102
+#: libktcore/groups/groupmanager.cpp:104
 msgid "Running Uploads"
 msgstr "ការ​ផ្ទុក​ឡើង​កំពុង​រត់"
 
-#: libktcore/groups/groupmanager.cpp:104
+#: libktcore/groups/groupmanager.cpp:106
 msgid "Not Running Uploads"
 msgstr "កា​រផ្ទុក​ឡើង​មិនកំពុង​រត់​ទេ"
 
-#: libktcore/groups/groupmanager.cpp:108
+#: libktcore/groups/groupmanager.cpp:110
 msgid "Downloads"
 msgstr "ការ​ទាញយក"
 
-#: libktcore/groups/groupmanager.cpp:110
+#: libktcore/groups/groupmanager.cpp:112
 msgid "Running Downloads"
 msgstr "រត់​ការ​ទាញយក"
 
-#: libktcore/groups/groupmanager.cpp:112
+#: libktcore/groups/groupmanager.cpp:114
 msgid "Not Running Downloads"
 msgstr "ការ​ទាញយក​មិនកំពុង​រត់​ទេ"
 
-#: libktcore/groups/groupmanager.cpp:116
+#: libktcore/groups/groupmanager.cpp:118
 msgid "Active Torrents"
 msgstr "Torrents សកម្ម"
 
-#: libktcore/groups/groupmanager.cpp:118
+#: libktcore/groups/groupmanager.cpp:120
 msgid "Active Downloads"
 msgstr "ការ​ទាញយក​សកម្ម"
 
-#: libktcore/groups/groupmanager.cpp:120
+#: libktcore/groups/groupmanager.cpp:122
 msgid "Active Uploads"
 msgstr "កា​រផ្ទុកឡើង​សកម្ម"
 
-#: libktcore/groups/groupmanager.cpp:122
+#: libktcore/groups/groupmanager.cpp:124
 msgid "Passive Torrents"
 msgstr "Torrents អសកម្ម"
 
-#: libktcore/groups/groupmanager.cpp:124
+#: libktcore/groups/groupmanager.cpp:126
 msgid "Passive Downloads"
 msgstr "ការ​ទាញយក​អសកម្ម"
 
-#: libktcore/groups/groupmanager.cpp:126
+#: libktcore/groups/groupmanager.cpp:128
 msgid "Passive Uploads"
 msgstr "ការ​ផ្ទុកឡើង​អសកម្ម"
+
+#: libktcore/groups/ungroupedgroup.cpp:27
+msgid "Ungrouped Torrents"
+msgstr "Torrent មិនបាន​ដាក់​ជា​ក្រុម"
 
 #: libktcore/interfaces/functions.cpp:181
 #: plugins/bwscheduler/scheduleeditor.cpp:141
@@ -3126,9 +3131,9 @@ msgstr "ស្វែងរក​ឯកសារ​មេឌៀ"
 msgid "Search media files"
 msgstr "ស្វែងរក​ឯកសារ​មេឌៀ"
 
-#: plugins/scanfolder/scanfolderprefpage.cpp:37
 #: plugins/scanfolder/scanfolderplugin.cpp:64
 #: plugins/scanfolder/scanfolderplugin.cpp:77
+#: plugins/scanfolder/scanfolderprefpage.cpp:37
 msgctxt "plugin name"
 msgid "Scan Folder"
 msgstr "វិភាគ​រក​ថត"
