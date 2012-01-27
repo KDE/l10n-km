@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-15 10:27+0100\n"
+"POT-Creation-Date: 2012-01-27 11:02+0100\n"
 "PO-Revision-Date: 2012-01-12 11:04+0700\n"
 "Last-Translator: Sok Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -669,7 +669,7 @@ msgstr ""
 
 #: ktorrent/tools/queuemanagerwidget.cpp:57
 #: plugins/search/searchactivity.cpp:81 plugins/search/searchtoolbar.cpp:70
-#: plugins/search/webview.cpp:161
+#: plugins/search/webview.cpp:178
 msgid "Search"
 msgstr "ស្វែងរក"
 
@@ -752,15 +752,6 @@ msgstr "បង្ហាញ​ដែល​មិនបាន​ដាក់​ជ
 #: ktorrent/tools/queuemanagerwidget.cpp:94
 msgid "Show all not queued torrents"
 msgstr "បង្ហាញ torrents ដែល​មិនបាន​ដាក់​ជាជួរ​ទាំងអស់"
-
-#: ktorrent/view/scanextender.cpp:46
-msgid "Checked %v of %m chunks"
-msgstr "បានពិនិត្យ​  %v នៃ​កំណាត់​ %m "
-
-#: ktorrent/view/scanextender.cpp:127
-#, kde-format
-msgid "<font color=\"red\">%1</font>"
-msgstr "<font color=\"red\">%1</font>"
 
 #: ktorrent/view/propertiesdlg.cpp:34
 msgid "Torrent Settings"
@@ -911,6 +902,15 @@ msgstr "%1<br>Url ៖ <b>%2</b>"
 #: ktorrent/view/viewmodel.cpp:581
 msgid "<br/><br/>Unable to contact a tracker."
 msgstr "<br/><br/>មិន​អាច​ទាក់ទង​អ្នក​តាម​ដាន​បាន​ទេ ។"
+
+#: ktorrent/view/scanextender.cpp:46
+msgid "Checked %v of %m chunks"
+msgstr "បានពិនិត្យ​  %v នៃ​កំណាត់​ %m "
+
+#: ktorrent/view/scanextender.cpp:128
+#, kde-format
+msgid "<font color=\"red\">%1</font>"
+msgstr "<font color=\"red\">%1</font>"
 
 #. i18n: file: ktorrent/kttorrentactivityui.rc:75
 #. i18n: ectx: Menu (ColumnsMenu)
@@ -1302,7 +1302,7 @@ msgstr "ជ្រើស​ឈ្មោះ​ឯកសារ​ដែល​ត្
 
 #. i18n: file: ktorrent/pref/advancedpref.ui:174
 #. i18n: ectx: property (text), item, widget (QComboBox, kcfg_eta)
-#: ktorrent/main.cpp:94 plugins/search/webview.cpp:158 rc.cpp:515
+#: ktorrent/main.cpp:94 plugins/search/webview.cpp:175 rc.cpp:515
 msgid "KTorrent"
 msgstr "KTorrent"
 
@@ -3218,38 +3218,21 @@ msgstr "ស្លាក​ម៉ាស៊ីន​ស្វែងរក"
 msgid " Engine: "
 msgstr " ម៉ាស៊ីន ៖ "
 
-#: plugins/search/webview.cpp:157
-msgid "Home"
-msgstr "ផ្ទះ​"
-
-#: plugins/search/webview.cpp:159
-msgctxt "KDE 4 tag line, see http://kde.org/img/kde40.png"
-msgid "Be free."
-msgstr "ឥតគិតថ្លៃ​ ។​"
-
-#: plugins/search/webview.cpp:160
-msgid "Search the web for torrents."
-msgstr "ស្វែង​រក​បណ្តាញ​សម្រាប់​ torrents ។​"
-
-#: plugins/search/webview.cpp:188
-#, kde-format
-msgid "Save %1 to"
-msgstr "រក្សាទុក​ %1 ទៅកាន់​"
-
-#: plugins/search/webview.cpp:205
-#, kde-format
-msgid "Cannot open <b>%1</b>: %2"
-msgstr "មិន​អាច​បើក​ <b>%1</b> ៖ %2"
-
-#: plugins/search/searchwidget.cpp:75
+#: plugins/search/searchwidget.cpp:77
 msgid " Engine:"
 msgstr " ម៉ាស៊ីន ៖"
 
-#: plugins/search/searchwidget.cpp:228
+#: plugins/search/searchwidget.cpp:203
+#, fuzzy, kde-format
+#| msgid "<b>Downloading</b>"
+msgid "Downloading:<br/><b>%1</b>"
+msgstr "<b>ការ​ទាញយក</b>"
+
+#: plugins/search/searchwidget.cpp:243
 msgid "Do you want to download or save the torrent?"
 msgstr "តើ​អ្នក​ចង់​ទាញយក ឬ​រក្សាទុក torrent ឬ ?"
 
-#: plugins/search/searchwidget.cpp:229
+#: plugins/search/searchwidget.cpp:244
 msgid "Download Torrent"
 msgstr "ទាញយក Torrent"
 
@@ -3273,10 +3256,33 @@ msgstr "ទាញយក Torrent"
 #. i18n: ectx: property (title), widget (QGroupBox, DlSpdGbw)
 #. i18n: file: plugins/syndication/feedwidget.ui:121
 #. i18n: ectx: property (text), widget (KPushButton, m_download)
-#: plugins/search/searchwidget.cpp:230 rc.cpp:2253 rc.cpp:2256 rc.cpp:2373
+#: plugins/search/searchwidget.cpp:245 rc.cpp:2253 rc.cpp:2256 rc.cpp:2373
 #: rc.cpp:2412 rc.cpp:2565
 msgid "Download"
 msgstr "ទាញយក"
+
+#: plugins/search/webview.cpp:174
+msgid "Home"
+msgstr "ផ្ទះ​"
+
+#: plugins/search/webview.cpp:176
+msgctxt "KDE 4 tag line, see http://kde.org/img/kde40.png"
+msgid "Be free."
+msgstr "ឥតគិតថ្លៃ​ ។​"
+
+#: plugins/search/webview.cpp:177
+msgid "Search the web for torrents."
+msgstr "ស្វែង​រក​បណ្តាញ​សម្រាប់​ torrents ។​"
+
+#: plugins/search/webview.cpp:205
+#, kde-format
+msgid "Save %1 to"
+msgstr "រក្សាទុក​ %1 ទៅកាន់​"
+
+#: plugins/search/webview.cpp:225
+#, kde-format
+msgid "Cannot open <b>%1</b>: %2"
+msgstr "មិន​អាច​បើក​ <b>%1</b> ៖ %2"
 
 #: plugins/shutdown/shutdowntorrentmodel.cpp:92
 #: plugins/shutdown/shutdowntorrentmodel.cpp:235
@@ -3784,6 +3790,25 @@ msgstr "មិន​បាន​គាំទ្រ​វិធីសាស្ត
 msgid "ZeroConf"
 msgstr "ZeroConf"
 
+#: kio-magnet/kio_magnet.cpp:235 kio-magnet/kio_magnet.cpp:310
+#: kio-magnet/kio_magnet.cpp:336
+#, kde-format
+msgid ""
+"File exists in KTorrent, but cannot open it on disk at path \"%1\". Have you "
+"removed the file manually?"
+msgstr ""
+"ឯកសារ​មាន​នៅ​ក្នុង KTorrent ប៉ុន្តែ​មិន​អាច​បើក​វា​នៅ​លើ​ថាស​នៃ​ផ្លូវ \"%1\" បាន​ទេ ។ តើ​អ្នក​បាន​យក​"
+"ឯកសារ​ចេញ​ដោយ​ដៃ​ឬ ?"
+
+#: kio-magnet/kio_magnet.cpp:295
+msgid "You cannot write to magnet resources."
+msgstr "អ្នក​មិន​អាច​សរសេរ​ទៅកាន់​ធនធាន​មេដែក​បាន​ទេ ។"
+
+#: kio-magnet/kio_magnet.cpp:316
+#, kde-format
+msgid "File \"%1\" is a directory. This should not happen. Please file a bug."
+msgstr "ឯកសារ \"%1\" គឺជា​ថត ។ វា​មិន​គួរ​កើតឡើង​ទេ ។ សូម​កំណត់​វា​​ជា​ឯកសារ​កំហុស ។"
+
 #: kio-magnet/dbushandler.cpp:87
 msgid ""
 "The Web share for magnet-links is disabled.         You can set it up at "
@@ -3817,38 +3842,19 @@ msgid ""
 "running?"
 msgstr "មិន​អាច​ទទួល​បាន​បញ្ជី​ក្រុម​ទេ តើ​អ្នក​មាន​កំណែ KTorrent ឆបគ្នា​ ដែល​កំពុង​ដំណើរការ​ទេ ?"
 
-#: kio-magnet/dbushandler.cpp:278
+#: kio-magnet/dbushandler.cpp:288
 #, kde-format
 msgid "The link for %1 does not contain the required btih hash-parameter."
 msgstr "តំណ​សម្រាប់ %1 មិន​មាន​សញ្ញា​ប៉ារ៉ាម៉ែត្រ btih ដែល​បាន​ទាមទារ​ទេ ។"
 
-#: kio-magnet/dbushandler.cpp:288
+#: kio-magnet/dbushandler.cpp:299
 #, kde-format
 msgid "The found value (%1) for the hash is neither 32 nor 40 chars long."
 msgstr "តម្លៃ (%1) ដែល​បាន​រក​ឃើញ​សម្រាប់​សញ្ញា​គឺ​មិន​មែន​ប្រវែង​តួអក្សរ ៣២ ឬ ៤០ ទេ ។"
 
-#: kio-magnet/dbushandler.cpp:520
+#: kio-magnet/dbushandler.cpp:563
 msgid "Torrent has been removed from KTorrent."
 msgstr "បាន​យក Torrent ចេញពី KTorrent ។"
-
-#: kio-magnet/kio_magnet.cpp:235 kio-magnet/kio_magnet.cpp:310
-#: kio-magnet/kio_magnet.cpp:336
-#, kde-format
-msgid ""
-"File exists in KTorrent, but cannot open it on disk at path \"%1\". Have you "
-"removed the file manually?"
-msgstr ""
-"ឯកសារ​មាន​នៅ​ក្នុង KTorrent ប៉ុន្តែ​មិន​អាច​បើក​វា​នៅ​លើ​ថាស​នៃ​ផ្លូវ \"%1\" បាន​ទេ ។ តើ​អ្នក​បាន​យក​"
-"ឯកសារ​ចេញ​ដោយ​ដៃ​ឬ ?"
-
-#: kio-magnet/kio_magnet.cpp:295
-msgid "You cannot write to magnet resources."
-msgstr "អ្នក​មិន​អាច​សរសេរ​ទៅកាន់​ធនធាន​មេដែក​បាន​ទេ ។"
-
-#: kio-magnet/kio_magnet.cpp:316
-#, kde-format
-msgid "File \"%1\" is a directory. This should not happen. Please file a bug."
-msgstr "ឯកសារ \"%1\" គឺជា​ថត ។ វា​មិន​គួរ​កើតឡើង​ទេ ។ សូម​កំណត់​វា​​ជា​ឯកសារ​កំហុស ។"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
