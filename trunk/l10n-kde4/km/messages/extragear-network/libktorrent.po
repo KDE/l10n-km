@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2011-12-19 10:09+0100\n"
+"POT-Creation-Date: 2012-02-07 05:14+0100\n"
 "PO-Revision-Date: 2011-06-14 10:06+0700\n"
 "Last-Translator: Chan Sambathratanak <ratanak@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -142,7 +142,7 @@ msgid "Cannot open index file %1: %2"
 msgstr "មិន​អាច​បើក​ឯកសារ​លិបិក្រម %1 ៖ %2"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
-#: src/util/fileops.cpp:396
+#: src/util/fileops.cpp:399
 #, kde-format
 msgid "Cannot open %1: %2"
 msgstr "មិន​អាច​បើក​ %1 ៖​ %2"
@@ -199,10 +199,6 @@ msgstr "មិន​អាច​ទុក​ទំហំ​ថាស​ដោយ
 msgid "1 peer"
 msgid_plural "%1 peers"
 msgstr[0] "ម៉ាស៊ីន​ដូចគ្នា %1"
-
-#: src/download/downloader.cpp:808
-msgid "Disabled because webseed does not match torrent"
-msgstr "បាន​បិទ​ពីព្រោះ webseed មិន​ផ្គូផ្គង​នឹង torrent"
 
 #: src/download/webseed.cpp:51 src/download/webseed.cpp:98
 #: src/download/httpconnection.cpp:44
@@ -268,6 +264,10 @@ msgstr "កំហុស ៖ សំណើ​អស់​ពេល"
 #: src/download/httpconnection.cpp:402
 msgid "Redirected without a new location."
 msgstr "បាន​ប្ដូរ​ទិស​​ដោយ​គ្មាន​ទីតាំង​ថ្មី !"
+
+#: src/download/downloader.cpp:808
+msgid "Disabled because webseed does not match torrent"
+msgstr "បាន​បិទ​ពីព្រោះ webseed មិន​ផ្គូផ្គង​នឹង torrent"
 
 #: src/interfaces/trackerinterface.cpp:58
 msgid "OK"
@@ -366,11 +366,11 @@ msgstr "បាន​ផ្អាក"
 msgid "Superseeding"
 msgstr "ការ​បណ្ដុះ​ពិសេស​"
 
-#: src/torrent/torrentcontrol.cpp:308
+#: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
 msgstr "កំហុស​ក្នុង​ការ​សរសេរ​ទៅកាន់​ថាស តើ​អ្នក​មាន​ទំហំ​ថាស​គ្រប់គ្រាន់​ដែរ​ឬទេ ?"
 
-#: src/torrent/torrentcontrol.cpp:554
+#: src/torrent/torrentcontrol.cpp:548
 #, kde-format
 msgid ""
 "An error occurred while loading the torrent <b>%1</b>:<br/><b>%2</b><br/>The "
@@ -379,17 +379,17 @@ msgstr ""
 "កំហុស​មួយ​កើតឡើង​នៅ​ពេល​ផ្ទុក torrent <b>%1</b> ៖<br/><b>%2</b><br/>torrent ប្រហែល​ជា​ខូច ឬ​"
 "មិនមែន​ជា​ឯកសារ torrent ដែល​ត្រឹមត្រូវ ។"
 
-#: src/torrent/torrentcontrol.cpp:584
+#: src/torrent/torrentcontrol.cpp:578
 #, kde-format
 msgid "An error occurred while loading <b>%1</b>:<br/><b>%2</b>"
 msgstr "កំហុស​មួយ​បាន​កើតឡើង​អំឡុង​ពេល​ផ្ទុក <b>%1</b> ៖<br/><b>%2</b>"
 
-#: src/torrent/torrentcontrol.cpp:595
+#: src/torrent/torrentcontrol.cpp:589
 #, kde-format
 msgid "Unable to create %1: %2"
 msgstr "មិន​អាច​បង្កើត %1 ៖ %2"
 
-#: src/torrent/torrentcontrol.cpp:610
+#: src/torrent/torrentcontrol.cpp:604
 #, kde-format
 msgid ""
 "You are already downloading the torrent <b>%1</b>. The tracker lists from "
@@ -398,7 +398,7 @@ msgstr ""
 "អ្នក​កំពុង​តែ​ទាញ​យក torrent <b>%1</b> រួច​ហើយ ។ បញ្ជី​កម្មវិធី​តាមដាន​របស់​ torrents ទាំងពីរ​ត្រូវ​"
 "បាន​បញ្ចូល​ចូល​គ្នា ។"
 
-#: src/torrent/torrentcontrol.cpp:615
+#: src/torrent/torrentcontrol.cpp:609
 #, kde-format
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "អ្នក​កំពុងតែ​ទាញ​យក torrent <b>%1</b> ហើយ ។"
@@ -470,6 +470,38 @@ msgstr "មិន​អាច​សរសេរ​ទៅ​កាន់ %1 ៖ %
 msgid "Cannot read from %1"
 msgstr "មិន​អាច​អាន​ពី %1 បានទេ"
 
+#: src/util/logsystemmanager.cpp:33
+msgid "General"
+msgstr "ទូទៅ"
+
+#: src/util/logsystemmanager.cpp:34
+msgid "Connections"
+msgstr "ការ​ត​ភ្ជាប់"
+
+#: src/util/logsystemmanager.cpp:35
+msgid "Tracker"
+msgstr "កម្មវិធី​តាម​ដាន​"
+
+#: src/util/logsystemmanager.cpp:36
+msgid "DHT"
+msgstr "DHT"
+
+#: src/util/logsystemmanager.cpp:37
+msgid "Disk Input/Output"
+msgstr "ការ​ចេញ/ចូល​របស់​ថាស"
+
+#: src/util/logsystemmanager.cpp:38
+msgid "µTP"
+msgstr "µTP"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when writing to disk"
+msgstr "កំហុស​នៅ​ពេល​សរសេរ​ទៅកាន់​ថាស​"
+
+#: src/util/signalcatcher.cpp:78
+msgid "Error when reading from disk"
+msgstr "កំហុស​នៅ​ពេល​អាន​ពី​ថាស"
+
 #: src/util/fileops.cpp:94
 #, kde-format
 msgid "Cannot create directory %1"
@@ -511,54 +543,22 @@ msgid "Cannot calculate the filesize: %1"
 msgstr "មិន​អាច​គណនា​ទំហំ​ឯកសារ ៖ %1"
 
 #: src/util/fileops.cpp:375 src/util/fileops.cpp:381 src/util/fileops.cpp:384
-#: src/util/fileops.cpp:387
+#: src/util/fileops.cpp:387 src/util/fileops.cpp:390
 #, kde-format
 msgid "Cannot expand file: %1"
 msgstr "មិន​អាច​ពង្រីក​​ឯកសារ​ ៖​ %1"
 
-#: src/util/fileops.cpp:417
+#: src/util/fileops.cpp:420
 #, kde-format
 msgid "Cannot seek in file: %1"
 msgstr "មិន​អាច​ស្វែងរក​ក្នុង​ឯកសារ​ ៖​ %1​"
 
-#: src/util/logsystemmanager.cpp:33
-msgid "General"
-msgstr "ទូទៅ"
-
-#: src/util/logsystemmanager.cpp:34
-msgid "Connections"
-msgstr "ការ​ត​ភ្ជាប់"
-
-#: src/util/logsystemmanager.cpp:35
-msgid "Tracker"
-msgstr "កម្មវិធី​តាម​ដាន​"
-
-#: src/util/logsystemmanager.cpp:36
-msgid "DHT"
-msgstr "DHT"
-
-#: src/util/logsystemmanager.cpp:37
-msgid "Disk Input/Output"
-msgstr "ការ​ចេញ/ចូល​របស់​ថាស"
-
-#: src/util/logsystemmanager.cpp:38
-msgid "µTP"
-msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when writing to disk"
-msgstr "កំហុស​នៅ​ពេល​សរសេរ​ទៅកាន់​ថាស​"
-
-#: src/util/signalcatcher.cpp:78
-msgid "Error when reading from disk"
-msgstr "កំហុស​នៅ​ពេល​អាន​ពី​ថាស"
-
-#: src/util/functions.cpp:242
+#: src/util/functions.cpp:234
 #, kde-format
 msgid "%1/s"
 msgstr "%1/វិ."
 
-#: src/util/functions.cpp:253
+#: src/util/functions.cpp:245
 #, kde-format
 msgid "1 day "
 msgid_plural "%1 days "
