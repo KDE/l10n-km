@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-02-10 11:32+0100\n"
+"POT-Creation-Date: 2012-02-14 18:12+0100\n"
 "PO-Revision-Date: 2011-12-26 14:34+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -230,9 +230,77 @@ msgstr "បង្កើត​ថត​ចំណាំ​ថ្មី​ក្ន
 msgid "Receiving corrupt data."
 msgstr "ទទួល​យក​ទិន្នន័យ​ខូច ។"
 
-#: kfile/kdevicelistmodel.cpp:116
-msgid "Device name"
-msgstr "ឈ្មោះ​ឧបករណ៍"
+#: kfile/kfilesharedialog.cpp:53
+msgid "&Share"
+msgstr "ចែករំលែក "
+
+#: kfile/kfilesharedialog.cpp:127
+msgid "Only folders in your home folder can be shared."
+msgstr "មាន​តែ​ថត​ក្នុង​ថត​ផ្ទះ​របស់​អ្នក​ប៉ុណ្ណោះ​ដែល​អាច​ចែក​រំលែក​បាន ។"
+
+#: kfile/kfilesharedialog.cpp:134
+msgid "Not shared"
+msgstr "មិន​បាន​ចែក​រំលែក"
+
+#: kfile/kfilesharedialog.cpp:139
+msgid "Shared"
+msgstr "បាន​ចែករំលែក"
+
+#: kfile/kfilesharedialog.cpp:151
+msgid ""
+"Sharing this folder makes it available under Linux/UNIX (NFS) and Windows "
+"(Samba)."
+msgstr "ការ​ចែក​រំលែក​ថត​នេះ ធ្វើ​ឲ្យ​វា​អាច​ប្រើ​បាន​ក្រោម​ លីនុច/យូនីក (NFS) និង វីនដូ (Samba) ។"
+
+#: kfile/kfilesharedialog.cpp:158
+msgid "You can also reconfigure file sharing authorization."
+msgstr "អ្នក​អាច​កំណត់​រចនា​សម្ព័ន្ធ​ការ​អនុញ្ញាត​ចែក​រំលែក​ឯកសារ​ឡើង​វិញ ។"
+
+#: kfile/kfilesharedialog.cpp:162 kfile/kfilesharedialog.cpp:186
+msgid "Configure File Sharing..."
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ការ​ចែក​រំលែក​ឯកសារ​..."
+
+#: kfile/kfilesharedialog.cpp:171
+msgid ""
+"Error running 'filesharelist'. Check if installed and in $PATH or /usr/sbin."
+msgstr ""
+"កំហុស​ក្នុងការ​រត់ 'filesharelist' ។ ពិនិត្យ​ថា​បាន​ដំឡើង ហើយ​នៅក្នុង $PATH ឬ /usr/sbin ។"
+
+#: kfile/kfilesharedialog.cpp:178
+msgid "You need to be authorized to share folders."
+msgstr "អ្នក​ចាំបាច់​ត្រូវ​មាន​ការ​អនុញ្ញាត ដើម្បី​ចែក​រំលែក​ឯកសារ ។"
+
+#: kfile/kfilesharedialog.cpp:181
+msgid "File sharing is disabled."
+msgstr "ការ​ចែក​រំលែក​ឯកសារ គឺ​បាន​បិទ ។"
+
+#: kfile/kfilesharedialog.cpp:248
+#, kde-format
+msgid "Sharing folder '%1' failed."
+msgstr "បរាជ័យ​ក្នុង​ការ​ចែក​រំលែកថត '%1' ។"
+
+#: kfile/kfilesharedialog.cpp:249
+#, kde-format
+msgid ""
+"An error occurred while trying to share folder '%1'. Make sure that the Perl "
+"script 'fileshareset' is set suid root."
+msgstr ""
+"កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ព្យាយាម​ចែក​រំលែក​ថត '%1' ។ សូម​ប្រាកដ​ថាស្គ្រីប Perl "
+"'fileshareset' គឺ​ត្រូវ​បាន​កំណត់​ជា suid root ។"
+
+#: kfile/kfilesharedialog.cpp:254
+#, kde-format
+msgid "Unsharing folder '%1' failed."
+msgstr "ការ​មិន​ចែក​រំលែកថត '%1' បាន​បរាជ័យ ។"
+
+#: kfile/kfilesharedialog.cpp:255
+#, kde-format
+msgid ""
+"An error occurred while trying to unshare folder '%1'. Make sure that the "
+"Perl script 'fileshareset' is set suid root."
+msgstr ""
+"កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ព្យាយាម​មិន​ចែក​រំលែក​ថត '%1 ។ សូម​ប្រាកដ​ថាស្គ្រីប Perl "
+"'fileshareset' ត្រូវ​បាន​កំណត់​ជា suid root ។"
 
 #: kfile/kfiledialog.cpp:126
 msgid "*|All files"
@@ -246,7 +314,7 @@ msgstr "ឯកសារ​ដែល​គាំទ្រ​ទាំងអស់
 #: kfile/kfiledialog.cpp:511 kfile/kfiledialog.cpp:535
 #: kfile/kfiledialog.cpp:545 kfile/kfiledialog.cpp:571
 #: kfile/kfiledialog.cpp:603 kfile/kfiledialog.cpp:658
-#: kfile/kurlrequesterdialog.cpp:128 kfile/kicondialog.cpp:693
+#: kfile/kicondialog.cpp:693 kfile/kurlrequesterdialog.cpp:128
 #: kfile/kencodingfiledialog.cpp:106 kfile/kencodingfiledialog.cpp:124
 #: kfile/kencodingfiledialog.cpp:139 kfile/kencodingfiledialog.cpp:157
 msgid "Open"
@@ -258,110 +326,191 @@ msgstr "បើក"
 msgid "Save As"
 msgstr "រក្សាទុក​ជា"
 
+#: kfile/kicondialog.cpp:336 kfile/kicondialog.cpp:348
+msgid "Select Icon"
+msgstr "ជ្រើស​រូបតំណាង"
+
+#: kfile/kicondialog.cpp:369
+msgid "Icon Source"
+msgstr "ប្រភព​រូបតំណាង"
+
+#: kfile/kicondialog.cpp:378
+msgid "S&ystem icons:"
+msgstr "រូបតំណាង​ប្រព័ន្ធ ៖ "
+
+#: kfile/kicondialog.cpp:385
+msgid "O&ther icons:"
+msgstr "រូបតំណាង​ផ្សេងៗ ៖ "
+
+#. i18n: file: kfile/kpropertiesdesktopbase.ui:121
+#. i18n: ectx: property (text), widget (QPushButton, browseButton)
+#: kfile/kicondialog.cpp:388 rc.cpp:134
+msgid "&Browse..."
+msgstr "រកមើល... "
+
+#: kfile/kicondialog.cpp:399
+msgid "&Search:"
+msgstr "ស្វែងរក ៖ "
+
+#: kfile/kicondialog.cpp:406
+msgid "Search interactively for icon names (e.g. folder)."
+msgstr "ស្វែង​រក​ឈ្មោះ​របស់​រូបតំណាង​យ៉ាង​រស់​រវើក (ឧ. ថត) ។"
+
+#: kfile/kicondialog.cpp:437
+msgid "Actions"
+msgstr "អំពើ"
+
+#: kfile/kicondialog.cpp:438
+msgid "Animations"
+msgstr "ចលនា"
+
+#: kfile/kicondialog.cpp:439
+msgid "Applications"
+msgstr "កម្មវិធី"
+
+#: kfile/kicondialog.cpp:440
+msgid "Categories"
+msgstr "ប្រភេទ"
+
+#: kfile/kicondialog.cpp:441
+msgid "Devices"
+msgstr "ឧបករណ៍"
+
+#: kfile/kicondialog.cpp:442
+msgid "Emblems"
+msgstr "បដិរូប"
+
+#: kfile/kicondialog.cpp:443
+msgid "Emotes"
+msgstr "សញ្ញា​អារម្មណ៍"
+
+#: kfile/kicondialog.cpp:444
+msgid "Filesystems"
+msgstr "ប្រព័ន្ធ​ឯកសារ"
+
+#: kfile/kicondialog.cpp:445
+msgid "International"
+msgstr "អន្តរជាតិ"
+
+#: kfile/kicondialog.cpp:446
+msgid "Mimetypes"
+msgstr "ប្រភេទ Mime"
+
+#: kfile/kicondialog.cpp:447
+msgid "Places"
+msgstr "ទីកន្លែង"
+
+#: kfile/kicondialog.cpp:448
+msgid "Status"
+msgstr "ស្ថាន​ភាព"
+
+#: kfile/kicondialog.cpp:691
+msgid "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
+msgstr "*.png *.xpm *.svg *.svgz|ឯកសារ​រូបតំណាង (*.png *.xpm *.svg *.svgz)"
+
 #: kfile/kurlrequesterdialog.cpp:58 kfile/kpropertiesdialog.cpp:984
 msgid "Location:"
 msgstr "ទីតាំង ៖"
 
-#: kfile/kfilemetainfowidget.cpp:163
-msgid "<Error>"
-msgstr "<កំហុស>"
+#: kfile/kdevicelistmodel.cpp:116
+msgid "Device name"
+msgstr "ឈ្មោះ​ឧបករណ៍"
 
-#: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
-msgid "Owner"
-msgstr "ម្ចាស់"
+#: kfile/kopenwithdialog.cpp:269
+msgid "Known Applications"
+msgstr "កម្មវិធី​ដែល​ស្គាល់"
 
-#: kfile/kacleditwidget.cpp:62 kfile/kacleditwidget.cpp:459
-msgid "Owning Group"
-msgstr "ក្រុមកាន់កាប់"
+#: kfile/kopenwithdialog.cpp:483
+msgid "Open With"
+msgstr "បើក​ជាមួយ"
 
-#: kfile/kacleditwidget.cpp:63 kfile/kacleditwidget.cpp:464
-#: kfile/kpropertiesdialog.cpp:2001
-msgid "Others"
-msgstr "ផ្សេងទៀត"
+#: kfile/kopenwithdialog.cpp:488
+#, kde-format
+msgid ""
+"<qt>Select the program that should be used to open <b>%1</b>. If the program "
+"is not listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>ជ្រើស​កម្មវិធី​ដែល​គួរ​ប្រើ​សម្រាប់​បើក <b>%1</b> ។ ប្រសិនបើ​កម្មវិធី​មិន​មាន​នៅ​ក្នុង​បញ្ជី សូម​បញ្ចូល​"
+"ឈ្មោះ ឬ​ចុច​ប៊ូតុង រកមើល ។</qt>"
 
-#: kfile/kacleditwidget.cpp:64 kfile/kacleditwidget.cpp:469
-msgid "Mask"
-msgstr "របាំង"
+#: kfile/kopenwithdialog.cpp:494
+msgid "Choose the name of the program with which to open the selected files."
+msgstr "ជ្រើស​ឈ្មោះ​កម្មវិធី​ដែល​ប្រើ​សម្រាប់​បើក​ឯកសារ​ដែល​បានជ្រើស ។"
 
-#: kfile/kacleditwidget.cpp:65
-msgid "Named User"
-msgstr "​អ្នក​ប្រើ​ដែលមាន​ឈ្មោះ"
+#: kfile/kopenwithdialog.cpp:521
+#, kde-format
+msgid "Choose Application for %1"
+msgstr "ជ្រើស​កម្មវិធី​សម្រាប់ %1"
 
-#: kfile/kacleditwidget.cpp:66
-msgid "Named Group"
-msgstr "ក្រុម​ដែល​មាន​ឈ្មោះ"
+#: kfile/kopenwithdialog.cpp:522
+#, kde-format
+msgid ""
+"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
+"listed, enter the name or click the browse button.</qt>"
+msgstr ""
+"<qt>ជ្រើស​កម្មវិធី​សម្រាប់​ប្រភេទ​ឯកសារ ៖ <b>%1</b> ។ ប្រសិន​បើ​កម្មវិធី​មិន​បាន​រាយ​នោះ​ទេ សូម​បញ្ចូល​"
+"ឈ្មោះ ឬ​ចុច​ប៊ូតុង​រកមើល ។</qt>"
 
-#: kfile/kacleditwidget.cpp:98 ../kfile/kfileplacesview.cpp:580
-#: ../kfile/kfileplacesview.cpp:601 ../kfile/kfileplacesview.cpp:608
-msgid "Add Entry..."
-msgstr "បន្ថែម​ធាតុ..."
+#: kfile/kopenwithdialog.cpp:537
+msgid "Choose Application"
+msgstr "ជ្រើស​កម្មវិធី"
 
-#: kfile/kacleditwidget.cpp:102
-msgid "Edit Entry..."
-msgstr "កែសម្រួល​ធាតុបញ្ចូល..."
+#: kfile/kopenwithdialog.cpp:538
+msgid ""
+"<qt>Select a program. If the program is not listed, enter the name or click "
+"the browse button.</qt>"
+msgstr "<qt>ជ្រើស​កម្មវិធី ។ ប្រសិនបើ​កម្មវិធី​នោះ​មិន​បាន​រាយ សូម​បញ្ចូលឈ្មោះ ឬ​ចុច​ប៊ូតុង​រកមើល ។</qt>"
 
-#: kfile/kacleditwidget.cpp:106
-msgid "Delete Entry"
-msgstr "លុប​ធាតុ"
+#: kfile/kopenwithdialog.cpp:601
+msgid ""
+"Following the command, you can have several place holders which will be "
+"replaced with the actual values when the actual program is run:\n"
+"%f - a single file name\n"
+"%F - a list of files; use for applications that can open several local files "
+"at once\n"
+"%u - a single URL\n"
+"%U - a list of URLs\n"
+"%d - the directory of the file to open\n"
+"%D - a list of directories\n"
+"%i - the icon\n"
+"%m - the mini-icon\n"
+"%c - the comment"
+msgstr ""
+"ដោយ​ធ្វើតាម​ពាក្យ​បញ្ជា អ្នក​អាច​មាន​កន្លែង​ដាក់​ជា​ច្រើន ​ដែល​នឹង​ត្រូវ​បាន​ជំនួស​ដោយ​តម្លៃ​ពិត​ប្រាកដ នៅ​ពេល​"
+"កម្មវិធី​ពិត​ប្រាកដ​មួយ​ត្រូវ​បាន​រត់ ៖\n"
+"%f - ឈ្មោះ​ឯកសារ​តែ​មួយ\n"
+"%F - បញ្ជី​ឯកសារ ដែល​ប្រើ​សម្រាប់​កម្មវិធី​ដែល​អាច​បើក​ឯកសារ​មូលដ្ឋាន​ជា​ច្រើនបាន​នៅ​ពេល​តែ​មួយ ។\n"
+"%u - URL តែ​មួយ\n"
+"%U - បញ្ជី URLs\n"
+"%d - ថត​របស់​ឯកសារ​ដែលត្រូវ​បើក\n"
+"%D - បញ្ជី​ថត\n"
+"%i - រូបតំណាង\n"
+"%m - រូបតំណាង​តូច\n"
+"%c - មតិយោបល់"
 
-#: kfile/kacleditwidget.cpp:307
-msgid " (Default)"
-msgstr " (លំនាំដើម)"
+#: kfile/kopenwithdialog.cpp:636
+msgid "Run in &terminal"
+msgstr "រត់​ក្នុង​ស្ថានីយ"
 
-#: kfile/kacleditwidget.cpp:431
-msgid "Edit ACL Entry"
-msgstr "កែសម្រួល​ធាតុ ACL"
+#: kfile/kopenwithdialog.cpp:653
+msgid "&Do not close when command exits"
+msgstr "កុំ​បិទ ពេល​ពាក្យ​បញ្ជា​ឈប់ "
 
-#: kfile/kacleditwidget.cpp:439
-msgid "Entry Type"
-msgstr "ប្រភេទធាតុ"
+#: kfile/kopenwithdialog.cpp:670
+msgid "&Remember application association for this type of file"
+msgstr "ចងចាំ​កម្មវិធី​ដែល​ចងភ្ជាប់​សម្រាប់​ប្រភេទ​ឯកសារ​នេះ "
 
-#: kfile/kacleditwidget.cpp:445
-msgid "Default for new files in this folder"
-msgstr "លំនាំដើម​សម្រាប់​ឯកសារ​ថ្មី​ក្នុង​ថត​នេះ"
+#: kfile/kopenwithdialog.cpp:814
+#, kde-format
+msgid ""
+"Could not extract executable name from '%1', please type a valid program "
+"name."
+msgstr "មិនអាច​ស្រង់​ឈ្មោះ​ដែល​អាច​ប្រតិបត្តិ​បាន​ពី '%1' បានទេ សូម​វាយ​ឈ្មោះ​កម្មវិធី​ឲ្យ​ត្រឹមត្រូវ ។"
 
-#: kfile/kacleditwidget.cpp:474
-msgid "Named user"
-msgstr "​អ្នក​ប្រើ​ដែលមាន​ឈ្មោះ"
-
-#: kfile/kacleditwidget.cpp:479
-msgid "Named group"
-msgstr "ក្រុម​ដែល​មាន​ឈ្មោះ"
-
-#: kfile/kacleditwidget.cpp:499
-msgid "User: "
-msgstr "អ្នកប្រើ ៖ "
-
-#: kfile/kacleditwidget.cpp:505
-msgid "Group: "
-msgstr "ក្រុម ៖ "
-
-#: kfile/kacleditwidget.cpp:625
-msgid "Type"
-msgstr "ប្រភេទ"
-
-#: kfile/kacleditwidget.cpp:626
-msgid "Name"
-msgstr "ឈ្មោះ"
-
-#: kfile/kacleditwidget.cpp:627
-msgctxt "read permission"
-msgid "r"
-msgstr "r"
-
-#: kfile/kacleditwidget.cpp:628
-msgctxt "write permission"
-msgid "w"
-msgstr "w"
-
-#: kfile/kacleditwidget.cpp:629
-msgctxt "execute permission"
-msgid "x"
-msgstr "x"
-
-#: kfile/kacleditwidget.cpp:630
-msgid "Effective"
-msgstr "ប្រសិទ្ធិភាព"
+#: kfile/kopenwithdialog.cpp:860
+#, kde-format
+msgid "'%1' not found, please type a valid program name."
+msgstr "រក​មិនឃើញ '%1' សូម​វាយ​ឈ្មោះ​កម្មវិធី​ដែល​ត្រឹមត្រូវ ។"
 
 #: kfile/knfotranslator.cpp:40 kfile/kfilemetadataprovider.cpp:422
 msgctxt "@label"
@@ -741,95 +890,102 @@ msgctxt "@title:tab"
 msgid "Information"
 msgstr "ព័ត៌មាន"
 
-#: kfile/kpreviewprops.cpp:50
-msgid "P&review"
-msgstr "មើល​ជា​មុន"
+#: kfile/kacleditwidget.cpp:61 kfile/kacleditwidget.cpp:454
+msgid "Owner"
+msgstr "ម្ចាស់"
 
-#: kfile/kicondialog.cpp:336 kfile/kicondialog.cpp:348
-msgid "Select Icon"
-msgstr "ជ្រើស​រូបតំណាង"
+#: kfile/kacleditwidget.cpp:62 kfile/kacleditwidget.cpp:459
+msgid "Owning Group"
+msgstr "ក្រុមកាន់កាប់"
 
-#: kfile/kicondialog.cpp:369
-msgid "Icon Source"
-msgstr "ប្រភព​រូបតំណាង"
+#: kfile/kacleditwidget.cpp:63 kfile/kacleditwidget.cpp:464
+#: kfile/kpropertiesdialog.cpp:2001
+msgid "Others"
+msgstr "ផ្សេងទៀត"
 
-#: kfile/kicondialog.cpp:378
-msgid "S&ystem icons:"
-msgstr "រូបតំណាង​ប្រព័ន្ធ ៖ "
+#: kfile/kacleditwidget.cpp:64 kfile/kacleditwidget.cpp:469
+msgid "Mask"
+msgstr "របាំង"
 
-#: kfile/kicondialog.cpp:385
-msgid "O&ther icons:"
-msgstr "រូបតំណាង​ផ្សេងៗ ៖ "
+#: kfile/kacleditwidget.cpp:65
+msgid "Named User"
+msgstr "​អ្នក​ប្រើ​ដែលមាន​ឈ្មោះ"
 
-#. i18n: file: kfile/kpropertiesdesktopbase.ui:121
-#. i18n: ectx: property (text), widget (QPushButton, browseButton)
-#: kfile/kicondialog.cpp:388 rc.cpp:134
-msgid "&Browse..."
-msgstr "រកមើល... "
+#: kfile/kacleditwidget.cpp:66
+msgid "Named Group"
+msgstr "ក្រុម​ដែល​មាន​ឈ្មោះ"
 
-#: kfile/kicondialog.cpp:399
-msgid "&Search:"
-msgstr "ស្វែងរក ៖ "
+#: kfile/kacleditwidget.cpp:98 ../kfile/kfileplacesview.cpp:580
+#: ../kfile/kfileplacesview.cpp:601 ../kfile/kfileplacesview.cpp:608
+msgid "Add Entry..."
+msgstr "បន្ថែម​ធាតុ..."
 
-#: kfile/kicondialog.cpp:406
-msgid "Search interactively for icon names (e.g. folder)."
-msgstr "ស្វែង​រក​ឈ្មោះ​របស់​រូបតំណាង​យ៉ាង​រស់​រវើក (ឧ. ថត) ។"
+#: kfile/kacleditwidget.cpp:102
+msgid "Edit Entry..."
+msgstr "កែសម្រួល​ធាតុបញ្ចូល..."
 
-#: kfile/kicondialog.cpp:437
-msgid "Actions"
-msgstr "អំពើ"
+#: kfile/kacleditwidget.cpp:106
+msgid "Delete Entry"
+msgstr "លុប​ធាតុ"
 
-#: kfile/kicondialog.cpp:438
-msgid "Animations"
-msgstr "ចលនា"
+#: kfile/kacleditwidget.cpp:307
+msgid " (Default)"
+msgstr " (លំនាំដើម)"
 
-#: kfile/kicondialog.cpp:439
-msgid "Applications"
-msgstr "កម្មវិធី"
+#: kfile/kacleditwidget.cpp:431
+msgid "Edit ACL Entry"
+msgstr "កែសម្រួល​ធាតុ ACL"
 
-#: kfile/kicondialog.cpp:440
-msgid "Categories"
+#: kfile/kacleditwidget.cpp:439
+msgid "Entry Type"
+msgstr "ប្រភេទធាតុ"
+
+#: kfile/kacleditwidget.cpp:445
+msgid "Default for new files in this folder"
+msgstr "លំនាំដើម​សម្រាប់​ឯកសារ​ថ្មី​ក្នុង​ថត​នេះ"
+
+#: kfile/kacleditwidget.cpp:474
+msgid "Named user"
+msgstr "​អ្នក​ប្រើ​ដែលមាន​ឈ្មោះ"
+
+#: kfile/kacleditwidget.cpp:479
+msgid "Named group"
+msgstr "ក្រុម​ដែល​មាន​ឈ្មោះ"
+
+#: kfile/kacleditwidget.cpp:499
+msgid "User: "
+msgstr "អ្នកប្រើ ៖ "
+
+#: kfile/kacleditwidget.cpp:505
+msgid "Group: "
+msgstr "ក្រុម ៖ "
+
+#: kfile/kacleditwidget.cpp:625
+msgid "Type"
 msgstr "ប្រភេទ"
 
-#: kfile/kicondialog.cpp:441
-msgid "Devices"
-msgstr "ឧបករណ៍"
+#: kfile/kacleditwidget.cpp:626
+msgid "Name"
+msgstr "ឈ្មោះ"
 
-#: kfile/kicondialog.cpp:442
-msgid "Emblems"
-msgstr "បដិរូប"
+#: kfile/kacleditwidget.cpp:627
+msgctxt "read permission"
+msgid "r"
+msgstr "r"
 
-#: kfile/kicondialog.cpp:443
-msgid "Emotes"
-msgstr "សញ្ញា​អារម្មណ៍"
+#: kfile/kacleditwidget.cpp:628
+msgctxt "write permission"
+msgid "w"
+msgstr "w"
 
-#: kfile/kicondialog.cpp:444
-msgid "Filesystems"
-msgstr "ប្រព័ន្ធ​ឯកសារ"
+#: kfile/kacleditwidget.cpp:629
+msgctxt "execute permission"
+msgid "x"
+msgstr "x"
 
-#: kfile/kicondialog.cpp:445
-msgid "International"
-msgstr "អន្តរជាតិ"
-
-#: kfile/kicondialog.cpp:446
-msgid "Mimetypes"
-msgstr "ប្រភេទ Mime"
-
-#: kfile/kicondialog.cpp:447
-msgid "Places"
-msgstr "ទីកន្លែង"
-
-#: kfile/kicondialog.cpp:448
-msgid "Status"
-msgstr "ស្ថាន​ភាព"
-
-#: kfile/kicondialog.cpp:691
-msgid "*.png *.xpm *.svg *.svgz|Icon Files (*.png *.xpm *.svg *.svgz)"
-msgstr "*.png *.xpm *.svg *.svgz|ឯកសារ​រូបតំណាង (*.png *.xpm *.svg *.svgz)"
-
-#: kfile/kurlrequester.cpp:246
-msgid "Open file dialog"
-msgstr "បើក​ប្រអប់​ឯកសារ"
+#: kfile/kacleditwidget.cpp:630
+msgid "Effective"
+msgstr "ប្រសិទ្ធិភាព"
 
 #: kfile/kfilemetadataprovider.cpp:223
 #, kde-format
@@ -898,177 +1054,21 @@ msgctxt "@title:window"
 msgid "Add Comment"
 msgstr "បន្ថែម​មតិយោបល់"
 
+#: kfile/kpreviewprops.cpp:50
+msgid "P&review"
+msgstr "មើល​ជា​មុន"
+
 #: kfile/kencodingfiledialog.cpp:49
 msgid "Encoding:"
 msgstr "ការ​អ៊ិនកូដ ៖"
 
-#: kfile/kfilesharedialog.cpp:53
-msgid "&Share"
-msgstr "ចែករំលែក "
+#: kfile/kurlrequester.cpp:246
+msgid "Open file dialog"
+msgstr "បើក​ប្រអប់​ឯកសារ"
 
-#: kfile/kfilesharedialog.cpp:127
-msgid "Only folders in your home folder can be shared."
-msgstr "មាន​តែ​ថត​ក្នុង​ថត​ផ្ទះ​របស់​អ្នក​ប៉ុណ្ណោះ​ដែល​អាច​ចែក​រំលែក​បាន ។"
-
-#: kfile/kfilesharedialog.cpp:134
-msgid "Not shared"
-msgstr "មិន​បាន​ចែក​រំលែក"
-
-#: kfile/kfilesharedialog.cpp:139
-msgid "Shared"
-msgstr "បាន​ចែករំលែក"
-
-#: kfile/kfilesharedialog.cpp:151
-msgid ""
-"Sharing this folder makes it available under Linux/UNIX (NFS) and Windows "
-"(Samba)."
-msgstr "ការ​ចែក​រំលែក​ថត​នេះ ធ្វើ​ឲ្យ​វា​អាច​ប្រើ​បាន​ក្រោម​ លីនុច/យូនីក (NFS) និង វីនដូ (Samba) ។"
-
-#: kfile/kfilesharedialog.cpp:158
-msgid "You can also reconfigure file sharing authorization."
-msgstr "អ្នក​អាច​កំណត់​រចនា​សម្ព័ន្ធ​ការ​អនុញ្ញាត​ចែក​រំលែក​ឯកសារ​ឡើង​វិញ ។"
-
-#: kfile/kfilesharedialog.cpp:162 kfile/kfilesharedialog.cpp:186
-msgid "Configure File Sharing..."
-msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ការ​ចែក​រំលែក​ឯកសារ​..."
-
-#: kfile/kfilesharedialog.cpp:171
-msgid ""
-"Error running 'filesharelist'. Check if installed and in $PATH or /usr/sbin."
-msgstr ""
-"កំហុស​ក្នុងការ​រត់ 'filesharelist' ។ ពិនិត្យ​ថា​បាន​ដំឡើង ហើយ​នៅក្នុង $PATH ឬ /usr/sbin ។"
-
-#: kfile/kfilesharedialog.cpp:178
-msgid "You need to be authorized to share folders."
-msgstr "អ្នក​ចាំបាច់​ត្រូវ​មាន​ការ​អនុញ្ញាត ដើម្បី​ចែក​រំលែក​ឯកសារ ។"
-
-#: kfile/kfilesharedialog.cpp:181
-msgid "File sharing is disabled."
-msgstr "ការ​ចែក​រំលែក​ឯកសារ គឺ​បាន​បិទ ។"
-
-#: kfile/kfilesharedialog.cpp:248
-#, kde-format
-msgid "Sharing folder '%1' failed."
-msgstr "បរាជ័យ​ក្នុង​ការ​ចែក​រំលែកថត '%1' ។"
-
-#: kfile/kfilesharedialog.cpp:249
-#, kde-format
-msgid ""
-"An error occurred while trying to share folder '%1'. Make sure that the Perl "
-"script 'fileshareset' is set suid root."
-msgstr ""
-"កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ព្យាយាម​ចែក​រំលែក​ថត '%1' ។ សូម​ប្រាកដ​ថាស្គ្រីប Perl "
-"'fileshareset' គឺ​ត្រូវ​បាន​កំណត់​ជា suid root ។"
-
-#: kfile/kfilesharedialog.cpp:254
-#, kde-format
-msgid "Unsharing folder '%1' failed."
-msgstr "ការ​មិន​ចែក​រំលែកថត '%1' បាន​បរាជ័យ ។"
-
-#: kfile/kfilesharedialog.cpp:255
-#, kde-format
-msgid ""
-"An error occurred while trying to unshare folder '%1'. Make sure that the "
-"Perl script 'fileshareset' is set suid root."
-msgstr ""
-"កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ព្យាយាម​មិន​ចែក​រំលែក​ថត '%1 ។ សូម​ប្រាកដ​ថាស្គ្រីប Perl "
-"'fileshareset' ត្រូវ​បាន​កំណត់​ជា suid root ។"
-
-#: kfile/kopenwithdialog.cpp:269
-msgid "Known Applications"
-msgstr "កម្មវិធី​ដែល​ស្គាល់"
-
-#: kfile/kopenwithdialog.cpp:483
-msgid "Open With"
-msgstr "បើក​ជាមួយ"
-
-#: kfile/kopenwithdialog.cpp:488
-#, kde-format
-msgid ""
-"<qt>Select the program that should be used to open <b>%1</b>. If the program "
-"is not listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>ជ្រើស​កម្មវិធី​ដែល​គួរ​ប្រើ​សម្រាប់​បើក <b>%1</b> ។ ប្រសិនបើ​កម្មវិធី​មិន​មាន​នៅ​ក្នុង​បញ្ជី សូម​បញ្ចូល​"
-"ឈ្មោះ ឬ​ចុច​ប៊ូតុង រកមើល ។</qt>"
-
-#: kfile/kopenwithdialog.cpp:494
-msgid "Choose the name of the program with which to open the selected files."
-msgstr "ជ្រើស​ឈ្មោះ​កម្មវិធី​ដែល​ប្រើ​សម្រាប់​បើក​ឯកសារ​ដែល​បានជ្រើស ។"
-
-#: kfile/kopenwithdialog.cpp:521
-#, kde-format
-msgid "Choose Application for %1"
-msgstr "ជ្រើស​កម្មវិធី​សម្រាប់ %1"
-
-#: kfile/kopenwithdialog.cpp:522
-#, kde-format
-msgid ""
-"<qt>Select the program for the file type: <b>%1</b>. If the program is not "
-"listed, enter the name or click the browse button.</qt>"
-msgstr ""
-"<qt>ជ្រើស​កម្មវិធី​សម្រាប់​ប្រភេទ​ឯកសារ ៖ <b>%1</b> ។ ប្រសិន​បើ​កម្មវិធី​មិន​បាន​រាយ​នោះ​ទេ សូម​បញ្ចូល​"
-"ឈ្មោះ ឬ​ចុច​ប៊ូតុង​រកមើល ។</qt>"
-
-#: kfile/kopenwithdialog.cpp:537
-msgid "Choose Application"
-msgstr "ជ្រើស​កម្មវិធី"
-
-#: kfile/kopenwithdialog.cpp:538
-msgid ""
-"<qt>Select a program. If the program is not listed, enter the name or click "
-"the browse button.</qt>"
-msgstr "<qt>ជ្រើស​កម្មវិធី ។ ប្រសិនបើ​កម្មវិធី​នោះ​មិន​បាន​រាយ សូម​បញ្ចូលឈ្មោះ ឬ​ចុច​ប៊ូតុង​រកមើល ។</qt>"
-
-#: kfile/kopenwithdialog.cpp:601
-msgid ""
-"Following the command, you can have several place holders which will be "
-"replaced with the actual values when the actual program is run:\n"
-"%f - a single file name\n"
-"%F - a list of files; use for applications that can open several local files "
-"at once\n"
-"%u - a single URL\n"
-"%U - a list of URLs\n"
-"%d - the directory of the file to open\n"
-"%D - a list of directories\n"
-"%i - the icon\n"
-"%m - the mini-icon\n"
-"%c - the comment"
-msgstr ""
-"ដោយ​ធ្វើតាម​ពាក្យ​បញ្ជា អ្នក​អាច​មាន​កន្លែង​ដាក់​ជា​ច្រើន ​ដែល​នឹង​ត្រូវ​បាន​ជំនួស​ដោយ​តម្លៃ​ពិត​ប្រាកដ នៅ​ពេល​"
-"កម្មវិធី​ពិត​ប្រាកដ​មួយ​ត្រូវ​បាន​រត់ ៖\n"
-"%f - ឈ្មោះ​ឯកសារ​តែ​មួយ\n"
-"%F - បញ្ជី​ឯកសារ ដែល​ប្រើ​សម្រាប់​កម្មវិធី​ដែល​អាច​បើក​ឯកសារ​មូលដ្ឋាន​ជា​ច្រើនបាន​នៅ​ពេល​តែ​មួយ ។\n"
-"%u - URL តែ​មួយ\n"
-"%U - បញ្ជី URLs\n"
-"%d - ថត​របស់​ឯកសារ​ដែលត្រូវ​បើក\n"
-"%D - បញ្ជី​ថត\n"
-"%i - រូបតំណាង\n"
-"%m - រូបតំណាង​តូច\n"
-"%c - មតិយោបល់"
-
-#: kfile/kopenwithdialog.cpp:636
-msgid "Run in &terminal"
-msgstr "រត់​ក្នុង​ស្ថានីយ"
-
-#: kfile/kopenwithdialog.cpp:653
-msgid "&Do not close when command exits"
-msgstr "កុំ​បិទ ពេល​ពាក្យ​បញ្ជា​ឈប់ "
-
-#: kfile/kopenwithdialog.cpp:670
-msgid "&Remember application association for this type of file"
-msgstr "ចងចាំ​កម្មវិធី​ដែល​ចងភ្ជាប់​សម្រាប់​ប្រភេទ​ឯកសារ​នេះ "
-
-#: kfile/kopenwithdialog.cpp:814
-#, kde-format
-msgid ""
-"Could not extract executable name from '%1', please type a valid program "
-"name."
-msgstr "មិនអាច​ស្រង់​ឈ្មោះ​ដែល​អាច​ប្រតិបត្តិ​បាន​ពី '%1' បានទេ សូម​វាយ​ឈ្មោះ​កម្មវិធី​ឲ្យ​ត្រឹមត្រូវ ។"
-
-#: kfile/kopenwithdialog.cpp:860
-#, kde-format
-msgid "'%1' not found, please type a valid program name."
-msgstr "រក​មិនឃើញ '%1' សូម​វាយ​ឈ្មោះ​កម្មវិធី​ដែល​ត្រឹមត្រូវ ។"
+#: kfile/kfilemetainfowidget.cpp:163
+msgid "<Error>"
+msgstr "<កំហុស>"
 
 #: kfile/kpropertiesdialog.cpp:212 kfile/kpropertiesdialog.cpp:227
 #: kfile/kpropertiesdialog.cpp:239 kfile/kpropertiesdialog.cpp:254
@@ -3844,20 +3844,6 @@ msgstr "រូបភាព OCR"
 msgid "The desktop is offline"
 msgstr "ផ្ទៃតុ​គឺ​ក្រៅ​បណ្ដាញ"
 
-#: kio/pastedialog.cpp:55
-msgid "Data format:"
-msgstr "ទ្រង់ទ្រាយ​ទិន្នន័យ ៖"
-
-#: kio/netaccess.cpp:104
-#, kde-format
-msgid "File '%1' is not readable"
-msgstr "ឯកសារ '%1' គឺ​មិន​អាច​អាន​បាន​ឡើយ"
-
-#: kio/netaccess.cpp:453
-#, kde-format
-msgid "ERROR: Unknown protocol '%1'"
-msgstr "កំហុស ៖ មិន​ស្គាល់​ពិធីការ '%1'"
-
 #: kio/passworddialog.cpp:57
 msgid "Authorization Dialog"
 msgstr "ប្រអប់​អនុញ្ញាត​"
@@ -3898,18 +3884,6 @@ msgstr[0] "បិទភ្ជាប់ URL %1"
 #: kio/paste.cpp:391
 msgid "&Paste Clipboard Contents"
 msgstr "បិទភ្ជាប់​មាតិកា​ក្ដារ​តម្បៀត​ខ្ទាស់ "
-
-#: kio/skipdialog.cpp:37
-msgid "Information"
-msgstr "ព័ត៌មាន"
-
-#: kio/skipdialog.cpp:44
-msgid "Skip"
-msgstr "រំលង"
-
-#: kio/skipdialog.cpp:47
-msgid "AutoSkip"
-msgstr "រំលង​ស្វ័យ​ប្រវត្តិ"
 
 #: kio/slave.cpp:438
 #, kde-format
@@ -3966,6 +3940,111 @@ msgstr "ខ្សែ​វិញ្ញាបនបត្រ SSL ស្មើ​�
 #: kio/slaveinterface.cpp:485 kio/tcpslavebase.cpp:776
 msgid "SSL"
 msgstr "SSL"
+
+#: kio/tcpslavebase.cpp:328
+msgid ""
+"You are about to leave secure mode. Transmissions will no longer be "
+"encrypted.\n"
+"This means that a third party could observe your data in transit."
+msgstr ""
+"អ្នក​រៀប​នឹង​ចាកចេញ​ពី​របៀប​សុវត្ថិភាព ។ ការ​បញ្ជូន​នឹង​មិន​ត្រូវ​បាន​អ៊ិនគ្រីប​តទៅ​ទៀត​ទេ ។\n"
+"មាន​ន័យ​ថា ភាគីទីបី​អាច​នឹង​ឃ្លាំ​មើល​ទិន្នន័យរបស់​អ្នក​នៅ​ពេល​ឆ្លងកាត់ ។"
+
+#: kio/tcpslavebase.cpp:334 kio/tcpslavebase.cpp:609
+msgid "Security Information"
+msgstr "ព័ត៌មាន​សុវត្ថិភាព"
+
+#: kio/tcpslavebase.cpp:335
+msgid "C&ontinue Loading"
+msgstr "បន្ត​ផ្ទុក "
+
+#: kio/tcpslavebase.cpp:391
+#, kde-format
+msgctxt "%1 is a host name"
+msgid "%1: SSL negotiation failed"
+msgstr "%1 ៖ ការ​ចរចា SSL បាន​បរាជ័យ"
+
+#: kio/tcpslavebase.cpp:603
+msgid ""
+"You are about to enter secure mode. All transmissions will be encrypted "
+"unless otherwise noted.\n"
+"This means that no third party will be able to easily observe your data in "
+"transit."
+msgstr ""
+"អ្នក​ទំនង​ជា​ចូល​ជា​របៀប​សុវត្ថិភាព ។ ការ​បញ្ជូន​ទាំងអស់​នឹង​ត្រូវ​បាន​អ៊ិនគ្រីប លុះត្រាតែ​បាន​ចំណាំ ។\n"
+"មាន​ន័យ​ថាភាគី​ទី ៣ មិន​អាច​ឃ្លាំមើល​ទិន្នន័យ​របស់​ក្នុង​ពេលបញ្ជូន​​បាន​ងាយស្រួល​ឡើយ ។​"
+
+#: kio/tcpslavebase.cpp:610
+msgid "Display SSL &Information"
+msgstr "បង្ហាញ​ព័ត៌មាន SSL "
+
+#: kio/tcpslavebase.cpp:611
+msgid "C&onnect"
+msgstr "តភ្ជាប់"
+
+#: kio/tcpslavebase.cpp:747
+msgid "Enter the certificate password:"
+msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់​វិញ្ញាបនបត្រ ៖"
+
+#: kio/tcpslavebase.cpp:748
+msgid "SSL Certificate Password"
+msgstr "ពាក្យ​សម្ងាត់​វិញ្ញាបនបត្រ SSL"
+
+#: kio/tcpslavebase.cpp:761
+msgid "Unable to open the certificate. Try a new password?"
+msgstr "មិន​អាច​បើក​វិញ្ញាបនបត្រ​បានឡើយ ។ សាកល្បង​ពាក្យ​សម្ងាត់​ថ្មី​ ?"
+
+#: kio/tcpslavebase.cpp:774
+msgid "The procedure to set the client certificate for the session failed."
+msgstr "បែប​បទ​កំណត់​វិញ្ញាបនបត្រ​ម៉ាស៊ីន​ភ្ញៀវ​សម្រាប់​សម័យ បាន​បរាជ័យ ។"
+
+#: kio/tcpslavebase.cpp:820 kssl/sslui.cpp:71
+#, kde-format
+msgid ""
+"The server failed the authenticity check (%1).\n"
+"\n"
+msgstr ""
+"ម៉ាស៊ីន​បម្រើ​បានបរាជ័យ​ក្នុងការ​ពិនិត្យ (%1) តាម​យថា​ភាព ។\n"
+"\n"
+
+#: kio/tcpslavebase.cpp:830 kio/tcpslavebase.cpp:847 kio/tcpslavebase.cpp:949
+#: kio/tcpslavebase.cpp:961 kssl/sslui.cpp:80 kssl/sslui.cpp:119
+msgid "Server Authentication"
+msgstr "ការផ្ទៀង​ផ្ទាត់​ភាព​ត្រឹមត្រូវ​ម៉ាស៊ីន​បម្រើ"
+
+#: kio/tcpslavebase.cpp:844 kssl/sslui.cpp:116
+msgid ""
+"Would you like to accept this certificate forever without being prompted?"
+msgstr "តើ​អ្នក​ចង់​ទទួល​យក​វិញ្ញាបនបត្រ​នេះ​ជា​រៀង​រហូត ដោយ​មិន​ចាំបាច់​មាន​ការ​សួរ​បញ្ជាក់​ឬ ?"
+
+#: kio/tcpslavebase.cpp:948
+msgid ""
+"You have indicated that you wish to accept this certificate, but it is not "
+"issued to the server who is presenting it. Do you wish to continue loading?"
+msgstr ""
+"អ្នក​បាន​បង្ហាញ​ថា អ្នក​ចង់​ទទួល​យក​វិញ្ញាបនបត្រ​នេះ ប៉ុន្តែ​វិញ្ញាបនបត្រ​នេះ​មិនអាច​ចេញផ្សាយ​ទៅ​ម៉ាស៊ីន​បម្រើ​"
+"ដែល​កំពុង​បង្ហាញ​វា​ទេ ។ តើ​អ្នក​ចង់​បន្ត​ផ្ទុក​វា​ឬទេ ?"
+
+#: kio/tcpslavebase.cpp:960
+msgid ""
+"SSL certificate is being rejected as requested. You can disable this in the "
+"KDE System Settings."
+msgstr ""
+"វិញ្ញាបនបត្រ SSL កំពុង​ត្រូ​វបាន​បដិសេធ​តាម​ការ​ស្នើ ។ អ្នក​អាច​បិទ​វា​នៅ​ក្នុង​ការ​កំណត់​ប្រព័ន្ធ KDE ។"
+
+#: kio/netaccess.cpp:104
+#, kde-format
+msgid "File '%1' is not readable"
+msgstr "ឯកសារ '%1' គឺ​មិន​អាច​អាន​បាន​ឡើយ"
+
+#: kio/netaccess.cpp:453
+#, kde-format
+msgid "ERROR: Unknown protocol '%1'"
+msgstr "កំហុស ៖ មិន​ស្គាល់​ពិធីការ '%1'"
+
+#: kio/pastedialog.cpp:55
+msgid "Data format:"
+msgstr "ទ្រង់ទ្រាយ​ទិន្នន័យ ៖"
 
 #: kio/renamedialog.cpp:131
 msgid "Appl&y to All"
@@ -4081,96 +4160,17 @@ msgstr "មាន​ធាតុ​​ថ្មីៗ​ដែល​មាន​
 msgid "Rename:"
 msgstr "ប្តូរឈ្មោះ ៖"
 
-#: kio/tcpslavebase.cpp:328
-msgid ""
-"You are about to leave secure mode. Transmissions will no longer be "
-"encrypted.\n"
-"This means that a third party could observe your data in transit."
-msgstr ""
-"អ្នក​រៀប​នឹង​ចាកចេញ​ពី​របៀប​សុវត្ថិភាព ។ ការ​បញ្ជូន​នឹង​មិន​ត្រូវ​បាន​អ៊ិនគ្រីប​តទៅ​ទៀត​ទេ ។\n"
-"មាន​ន័យ​ថា ភាគីទីបី​អាច​នឹង​ឃ្លាំ​មើល​ទិន្នន័យរបស់​អ្នក​នៅ​ពេល​ឆ្លងកាត់ ។"
+#: kio/skipdialog.cpp:37
+msgid "Information"
+msgstr "ព័ត៌មាន"
 
-#: kio/tcpslavebase.cpp:334 kio/tcpslavebase.cpp:609
-msgid "Security Information"
-msgstr "ព័ត៌មាន​សុវត្ថិភាព"
+#: kio/skipdialog.cpp:44
+msgid "Skip"
+msgstr "រំលង"
 
-#: kio/tcpslavebase.cpp:335
-msgid "C&ontinue Loading"
-msgstr "បន្ត​ផ្ទុក "
-
-#: kio/tcpslavebase.cpp:391
-#, kde-format
-msgctxt "%1 is a host name"
-msgid "%1: SSL negotiation failed"
-msgstr "%1 ៖ ការ​ចរចា SSL បាន​បរាជ័យ"
-
-#: kio/tcpslavebase.cpp:603
-msgid ""
-"You are about to enter secure mode. All transmissions will be encrypted "
-"unless otherwise noted.\n"
-"This means that no third party will be able to easily observe your data in "
-"transit."
-msgstr ""
-"អ្នក​ទំនង​ជា​ចូល​ជា​របៀប​សុវត្ថិភាព ។ ការ​បញ្ជូន​ទាំងអស់​នឹង​ត្រូវ​បាន​អ៊ិនគ្រីប លុះត្រាតែ​បាន​ចំណាំ ។\n"
-"មាន​ន័យ​ថាភាគី​ទី ៣ មិន​អាច​ឃ្លាំមើល​ទិន្នន័យ​របស់​ក្នុង​ពេលបញ្ជូន​​បាន​ងាយស្រួល​ឡើយ ។​"
-
-#: kio/tcpslavebase.cpp:610
-msgid "Display SSL &Information"
-msgstr "បង្ហាញ​ព័ត៌មាន SSL "
-
-#: kio/tcpslavebase.cpp:611
-msgid "C&onnect"
-msgstr "តភ្ជាប់"
-
-#: kio/tcpslavebase.cpp:747
-msgid "Enter the certificate password:"
-msgstr "បញ្ចូល​ពាក្យ​សម្ងាត់​វិញ្ញាបនបត្រ ៖"
-
-#: kio/tcpslavebase.cpp:748
-msgid "SSL Certificate Password"
-msgstr "ពាក្យ​សម្ងាត់​វិញ្ញាបនបត្រ SSL"
-
-#: kio/tcpslavebase.cpp:761
-msgid "Unable to open the certificate. Try a new password?"
-msgstr "មិន​អាច​បើក​វិញ្ញាបនបត្រ​បានឡើយ ។ សាកល្បង​ពាក្យ​សម្ងាត់​ថ្មី​ ?"
-
-#: kio/tcpslavebase.cpp:774
-msgid "The procedure to set the client certificate for the session failed."
-msgstr "បែប​បទ​កំណត់​វិញ្ញាបនបត្រ​ម៉ាស៊ីន​ភ្ញៀវ​សម្រាប់​សម័យ បាន​បរាជ័យ ។"
-
-#: kio/tcpslavebase.cpp:820 kssl/sslui.cpp:71
-#, kde-format
-msgid ""
-"The server failed the authenticity check (%1).\n"
-"\n"
-msgstr ""
-"ម៉ាស៊ីន​បម្រើ​បានបរាជ័យ​ក្នុងការ​ពិនិត្យ (%1) តាម​យថា​ភាព ។\n"
-"\n"
-
-#: kio/tcpslavebase.cpp:830 kio/tcpslavebase.cpp:847 kio/tcpslavebase.cpp:949
-#: kio/tcpslavebase.cpp:961 kssl/sslui.cpp:80 kssl/sslui.cpp:119
-msgid "Server Authentication"
-msgstr "ការផ្ទៀង​ផ្ទាត់​ភាព​ត្រឹមត្រូវ​ម៉ាស៊ីន​បម្រើ"
-
-#: kio/tcpslavebase.cpp:844 kssl/sslui.cpp:116
-msgid ""
-"Would you like to accept this certificate forever without being prompted?"
-msgstr "តើ​អ្នក​ចង់​ទទួល​យក​វិញ្ញាបនបត្រ​នេះ​ជា​រៀង​រហូត ដោយ​មិន​ចាំបាច់​មាន​ការ​សួរ​បញ្ជាក់​ឬ ?"
-
-#: kio/tcpslavebase.cpp:948
-msgid ""
-"You have indicated that you wish to accept this certificate, but it is not "
-"issued to the server who is presenting it. Do you wish to continue loading?"
-msgstr ""
-"អ្នក​បាន​បង្ហាញ​ថា អ្នក​ចង់​ទទួល​យក​វិញ្ញាបនបត្រ​នេះ ប៉ុន្តែ​វិញ្ញាបនបត្រ​នេះ​មិនអាច​ចេញផ្សាយ​ទៅ​ម៉ាស៊ីន​បម្រើ​"
-"ដែល​កំពុង​បង្ហាញ​វា​ទេ ។ តើ​អ្នក​ចង់​បន្ត​ផ្ទុក​វា​ឬទេ ?"
-
-#: kio/tcpslavebase.cpp:960
-msgid ""
-"SSL certificate is being rejected as requested. You can disable this in the "
-"KDE System Settings."
-msgstr ""
-"វិញ្ញាបនបត្រ SSL កំពុង​ត្រូ​វបាន​បដិសេធ​តាម​ការ​ស្នើ ។ អ្នក​អាច​បិទ​វា​នៅ​ក្នុង​ការ​កំណត់​ប្រព័ន្ធ KDE ។"
+#: kio/skipdialog.cpp:47
+msgid "AutoSkip"
+msgstr "រំលង​ស្វ័យ​ប្រវត្តិ"
 
 #: kssl/kcm/displaycertdialog.cpp:54 kssl/ksslinfodialog.cpp:217
 #, kde-format
@@ -4694,23 +4694,6 @@ msgstr "KMailService"
 msgid "Mail service"
 msgstr "សេវា​សំបុត្រ"
 
-#: misc/kpac/discovery.cpp:111
-msgid "Could not find a usable proxy configuration script"
-msgstr "មិន​អាច​រក​ស្គ្រីប​កំណត់​រចនា​សម្ព័ន្ធ​ប្រូកស៊ី​ដែល​អាច​ប្រើ​បាន​ទេ"
-
-#: misc/kpac/downloader.cpp:87
-#, kde-format
-msgid ""
-"Could not download the proxy configuration script:\n"
-"%1"
-msgstr ""
-"មិន​អាច​ទាញ​យក​ស្គ្រីប​កំណត់​រចនា​សម្ព័ន្ធ​ប្រូកស៊ី ៖\n"
-"%1"
-
-#: misc/kpac/downloader.cpp:89
-msgid "Could not download the proxy configuration script"
-msgstr "មិន​អាច​ទាញ​យក​ស្គ្រីប​កំណត់​រចនា​សម្ព័ន្ធ​ប្រូកស៊ី"
-
 #: misc/kpac/script.cpp:752
 msgid "Could not find 'FindProxyForURL' or 'FindProxyForURLEx'"
 msgstr "រក​មិន​ឃើញ 'FindProxyForURL' ឬ 'FindProxyForURLEx'"
@@ -4737,6 +4720,23 @@ msgid ""
 msgstr ""
 "ស្គ្រីប​កំណត់​រចនា​សម្ព័ន្ធ​ប្រូកស៊ី​បាន​ត្រឡប់​កំហុស​មួយ ៖\n"
 "%1"
+
+#: misc/kpac/discovery.cpp:111
+msgid "Could not find a usable proxy configuration script"
+msgstr "មិន​អាច​រក​ស្គ្រីប​កំណត់​រចនា​សម្ព័ន្ធ​ប្រូកស៊ី​ដែល​អាច​ប្រើ​បាន​ទេ"
+
+#: misc/kpac/downloader.cpp:87
+#, kde-format
+msgid ""
+"Could not download the proxy configuration script:\n"
+"%1"
+msgstr ""
+"មិន​អាច​ទាញ​យក​ស្គ្រីប​កំណត់​រចនា​សម្ព័ន្ធ​ប្រូកស៊ី ៖\n"
+"%1"
+
+#: misc/kpac/downloader.cpp:89
+msgid "Could not download the proxy configuration script"
+msgstr "មិន​អាច​ទាញ​យក​ស្គ្រីប​កំណត់​រចនា​សម្ព័ន្ធ​ប្រូកស៊ី"
 
 #: misc/ksendbugmail/main.cpp:43
 msgid "Error connecting to server."
@@ -5547,11 +5547,11 @@ msgstr ""
 "%2\n"
 "\n"
 
-#: ../kioslave/ftp/ftp.cpp:576 ../kioslave/http/http.cpp:3491
+#: ../kioslave/ftp/ftp.cpp:576 ../kioslave/http/http.cpp:3493
 msgid "You need to supply a username and a password to access this site."
 msgstr "អ្នក​ត្រូវ​ផ្តល់​ឈ្មោះ​អ្នកប្រើ និង​ពាក្យ​សម្ងាត់​មួយ ដើម្បី​ចូល​ដំណើរការ​តំបន់​បណ្ដាញ​នេះ ។"
 
-#: ../kioslave/ftp/ftp.cpp:578 ../kioslave/http/http.cpp:3493
+#: ../kioslave/ftp/ftp.cpp:578 ../kioslave/http/http.cpp:3495
 msgid "Site:"
 msgstr "តំបន់បណ្ដាញ ៖"
 
@@ -5569,8 +5569,8 @@ msgstr "ចូល​បាន​ហើយ"
 msgid "Could not login to %1."
 msgstr "មិន​អាច​ចូល​ %1 បានឡើយ ។"
 
-#: ../kioslave/ftp/ftp.cpp:2561 ../kioslave/http/http.cpp:3503
-#: ../kioslave/http/http.cpp:5408
+#: ../kioslave/ftp/ftp.cpp:2561 ../kioslave/http/http.cpp:3505
+#: ../kioslave/http/http.cpp:5410
 msgid ""
 "You need to supply a username and a password for the proxy server listed "
 "below before you are allowed to access any sites."
@@ -5578,19 +5578,19 @@ msgstr ""
 "អ្នក​ត្រូវ​ផ្តល់​ឈ្មោះ​អ្នកប្រើ និង​ពាក្យ​សម្ងាត់ ឲ្យ​ម៉ាស៊ីន​បម្រើ​ប្រូកស៊ី​ដែល​បាន​រាយ​ខាងក្រោម មុន​ពេល​អ្នក​អាច​ចូល​"
 "ដំណើរការ​តំបន់បណ្ដាញ​ណាមួយ ។"
 
-#: ../kioslave/ftp/ftp.cpp:2565 ../kioslave/http/http.cpp:3506
-#: ../kioslave/http/http.cpp:5412
+#: ../kioslave/ftp/ftp.cpp:2565 ../kioslave/http/http.cpp:3508
+#: ../kioslave/http/http.cpp:5414
 msgid "Proxy:"
 msgstr "ប្រូកស៊ី ៖"
 
-#: ../kioslave/ftp/ftp.cpp:2566 ../kioslave/http/http.cpp:3580
-#: ../kioslave/http/http.cpp:5413
+#: ../kioslave/ftp/ftp.cpp:2566 ../kioslave/http/http.cpp:3582
+#: ../kioslave/http/http.cpp:5415
 #, kde-format
 msgid "<b>%1</b> at <b>%2</b>"
 msgstr "<b>%1</b> នៅ <b>%2</b>"
 
-#: ../kioslave/ftp/ftp.cpp:2567 ../kioslave/http/http.cpp:3570
-#: ../kioslave/http/http.cpp:5414
+#: ../kioslave/ftp/ftp.cpp:2567 ../kioslave/http/http.cpp:3572
+#: ../kioslave/http/http.cpp:5416
 msgid "Proxy Authentication Failed."
 msgstr "ការផ្ទៀងផ្ទាត់ភាព​ត្រឹមត្រូវ​ប្រូកស៊ី​បាន​បរាជ័យ ។"
 
@@ -5768,85 +5768,85 @@ msgstr "យក​ខូគី​ទាំងអស់​ចេញ"
 msgid "Reload configuration file"
 msgstr "ផ្ទុក​ឯកសារ​កំណត់​រចនា​សម្ព័ន្ធ​ឡើង​វិញ"
 
-#: ../kioslave/http/http.cpp:599
+#: ../kioslave/http/http.cpp:601
 msgid "No host specified."
 msgstr "គ្មាន​ម៉ាស៊ីន​ដែលបាន​បញ្ជាក់​ឡើយ ។"
 
-#: ../kioslave/http/http.cpp:1592
+#: ../kioslave/http/http.cpp:1594
 msgid "Otherwise, the request would have succeeded."
 msgstr "ផ្សេង​ពី​នេះ ការ​ស្នើ​សុំ​នឹង​បាន​ជោគជ័យ ។"
 
-#: ../kioslave/http/http.cpp:1596
+#: ../kioslave/http/http.cpp:1598
 msgctxt "request type"
 msgid "retrieve property values"
 msgstr "ទៅ​យក​តម្លៃ​ដែល​សមរម្យ"
 
-#: ../kioslave/http/http.cpp:1599
+#: ../kioslave/http/http.cpp:1601
 msgctxt "request type"
 msgid "set property values"
 msgstr "កំណត់​តម្លៃ​លក្ខណៈ​សម្បត្តិ"
 
-#: ../kioslave/http/http.cpp:1602
+#: ../kioslave/http/http.cpp:1604
 msgctxt "request type"
 msgid "create the requested folder"
 msgstr "បង្កើត​ថត​ដែល​បាន​ស្នើ"
 
-#: ../kioslave/http/http.cpp:1605
+#: ../kioslave/http/http.cpp:1607
 msgctxt "request type"
 msgid "copy the specified file or folder"
 msgstr "ចម្លង​ឯកសារ ឬ​ថត​ដែល​បាន​បញ្ជាក់"
 
-#: ../kioslave/http/http.cpp:1608
+#: ../kioslave/http/http.cpp:1610
 msgctxt "request type"
 msgid "move the specified file or folder"
 msgstr "ផ្លាស់ទី​ឯកសារ ឬ​ថត​ដែល​បានបញ្ជាក់"
 
-#: ../kioslave/http/http.cpp:1611
+#: ../kioslave/http/http.cpp:1613
 msgctxt "request type"
 msgid "search in the specified folder"
 msgstr "ស្វែងរក​ក្នុង​ថត​ដែល​បាន​បញ្ជាក់"
 
-#: ../kioslave/http/http.cpp:1614
+#: ../kioslave/http/http.cpp:1616
 msgctxt "request type"
 msgid "lock the specified file or folder"
 msgstr "ចាក់​សោ​ឯកសារ ឬ​ថត​ដែលបាន​បញ្ជាក់"
 
-#: ../kioslave/http/http.cpp:1617
+#: ../kioslave/http/http.cpp:1619
 msgctxt "request type"
 msgid "unlock the specified file or folder"
 msgstr "ដោះសោ​ឯកសារ ឬ​ថត​ដែល​បាន​បញ្ជាក់"
 
-#: ../kioslave/http/http.cpp:1620
+#: ../kioslave/http/http.cpp:1622
 msgctxt "request type"
 msgid "delete the specified file or folder"
 msgstr "លុប​ឯកសារ ឬ​ថត​ដែល​បាន​បញ្ជាក់"
 
-#: ../kioslave/http/http.cpp:1623
+#: ../kioslave/http/http.cpp:1625
 msgctxt "request type"
 msgid "query the server's capabilities"
 msgstr "សួរ​សមត្ថភាព​របស់​ម៉ាស៊ីន​បម្រើ"
 
-#: ../kioslave/http/http.cpp:1626
+#: ../kioslave/http/http.cpp:1628
 msgctxt "request type"
 msgid "retrieve the contents of the specified file or folder"
 msgstr "ទាញយក​មាតិកា​របស់​ឯកសារ ឬ​ថត​ដែល​បាន​បញ្ជាក់"
 
-#: ../kioslave/http/http.cpp:1629
+#: ../kioslave/http/http.cpp:1631
 msgctxt "request type"
 msgid "run a report in the specified folder"
 msgstr "រត់​​របាយការណ៍​នៅ​ក្នុង​ថត​ដែល​បាន​បញ្ជាក់"
 
-#: ../kioslave/http/http.cpp:1640
+#: ../kioslave/http/http.cpp:1642
 #, kde-format
 msgctxt "%1: code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "កំហុស​ដែល​មិន​រំពឹង​ទុក​ (%1) បាន​កើតឡើង​ខណៈពេល​ប៉ុនប៉ង​ទៅ​កាន់ %2 ។"
 
-#: ../kioslave/http/http.cpp:1648
+#: ../kioslave/http/http.cpp:1650
 msgid "The server does not support the WebDAV protocol."
 msgstr "ម៉ាស៊ីន​បម្រើ​មិន​គាំទ្រ​ពិធីការ WebDAV ទេ ។"
 
-#: ../kioslave/http/http.cpp:1690
+#: ../kioslave/http/http.cpp:1692
 #, kde-format
 msgctxt "%1: request type, %2: url"
 msgid ""
@@ -5854,20 +5854,20 @@ msgid ""
 "below."
 msgstr "កំហុស​មួយ​បានកើតឡើង ខណៈ​ប៉ុនប៉ង %1 %2 ។ សេចក្ដី​សង្ខេប​នៃ​មូលហេតុ​គឺ​នៅ​ខាងក្រោម ។"
 
-#: ../kioslave/http/http.cpp:1704 ../kioslave/http/http.cpp:1836
+#: ../kioslave/http/http.cpp:1706 ../kioslave/http/http.cpp:1838
 #, kde-format
 msgctxt "%1: request type"
 msgid "Access was denied while attempting to %1."
 msgstr "ការចូលដំណើរការ​ត្រូវ​បាន​បដិសេធ ខណៈពេល​កំពុង​ប៉ុន​ប៉ង %1 ។"
 
-#: ../kioslave/http/http.cpp:1717 ../kioslave/http/http.cpp:1842
+#: ../kioslave/http/http.cpp:1719 ../kioslave/http/http.cpp:1844
 msgid ""
 "A resource cannot be created at the destination until one or more "
 "intermediate collections (folders) have been created."
 msgstr ""
 "មិនអាច​បង្កើត​​ធនធាន​នៅ​ទិសដៅ​បានឡើយ គឺ​រហូតដល់​ការប្រមូលផ្តុំ (ថត) មធ្យម​មួយ ឬ​ច្រើន​ត្រូវ​បាន​បង្កើត ។"
 
-#: ../kioslave/http/http.cpp:1725
+#: ../kioslave/http/http.cpp:1727
 #, kde-format
 msgid ""
 "The server was unable to maintain the liveness of the properties listed in "
@@ -5878,26 +5878,26 @@ msgstr ""
 "បានទេ ឬ​អ្នក​បាន​ប៉ុនប៉ង​សរសេរ​ជាន់​លើ​ឯកសារ​មួយ ខណៈពេល​កំពុង​ស្នើ​ថា ឯកសារ​មិន​ត្រូវ​បាន​សរសេរ​ជាន់​សលើ ។ "
 "%1​"
 
-#: ../kioslave/http/http.cpp:1733
+#: ../kioslave/http/http.cpp:1735
 #, kde-format
 msgid "The requested lock could not be granted. %1"
 msgstr "មិនអាច​បង្កើត​ការ​ចាក់សោ​ដែលបាន​ស្នើ​បាន​ឡើយ ។ %1"
 
-#: ../kioslave/http/http.cpp:1739
+#: ../kioslave/http/http.cpp:1741
 msgid "The server does not support the request type of the body."
 msgstr "ម៉ាស៊ីន​បម្រើ​មិន​គាំទ្រ​សំណើ​ប្រភេទ​តួ​បានទេ ។"
 
-#: ../kioslave/http/http.cpp:1744 ../kioslave/http/http.cpp:1850
+#: ../kioslave/http/http.cpp:1746 ../kioslave/http/http.cpp:1852
 #, kde-format
 msgctxt "%1: request type"
 msgid "Unable to %1 because the resource is locked."
 msgstr "មិ​នអាច​តភ្ជាប់​ទៅ %1 បានទេ ពីព្រោះ​ធនធាន​ជាប់​សោ ។"
 
-#: ../kioslave/http/http.cpp:1748
+#: ../kioslave/http/http.cpp:1750
 msgid "This action was prevented by another error."
 msgstr "អំពើ​នេះ​ត្រូវ​បាន​រារាំង​ដោយ​កំហុស​មួយ​ផ្សេង​ទៀត ។"
 
-#: ../kioslave/http/http.cpp:1754 ../kioslave/http/http.cpp:1856
+#: ../kioslave/http/http.cpp:1756 ../kioslave/http/http.cpp:1858
 #, kde-format
 msgctxt "%1: request type"
 msgid ""
@@ -5905,35 +5905,35 @@ msgid ""
 "folder."
 msgstr "មិន​អាច​​បានទេ %1 ពីព្រោះ​ម៉ាស៊ីន​បម្រើ​ទិសដៅ​បដិសេធ​ការ​ទទួល​យក​ឯកសារ ឬ​ថត ។"
 
-#: ../kioslave/http/http.cpp:1761 ../kioslave/http/http.cpp:1863
+#: ../kioslave/http/http.cpp:1763 ../kioslave/http/http.cpp:1865
 msgid ""
 "The destination resource does not have sufficient space to record the state "
 "of the resource after the execution of this method."
 msgstr ""
 "ធនធាន​ទិសដៅ​មិន​មាន​ទំហំ​គ្រប់គ្រាន់ ដើម្បី​កត់​ត្រា​សភាព​របស់​ធនធាន បន្ទាប់ពី​ការ​ប្រតិបត្តិ​វិធីសាស្ត្រ​នេះ​ទេ ។"
 
-#: ../kioslave/http/http.cpp:1814
+#: ../kioslave/http/http.cpp:1816
 msgid "The resource cannot be deleted."
 msgstr "ធនធាន​មិន​អាច​ត្រូ​វបានលុប​ទេ ។"
 
-#: ../kioslave/http/http.cpp:1827
+#: ../kioslave/http/http.cpp:1829
 #, kde-format
 msgctxt "request type"
 msgid "upload %1"
 msgstr "ផ្ទុក %1 ឡើង"
 
-#: ../kioslave/http/http.cpp:1877
+#: ../kioslave/http/http.cpp:1879
 #, kde-format
 msgctxt "%1: response code, %2: request type"
 msgid "An unexpected error (%1) occurred while attempting to %2."
 msgstr "កំហុស​ដែល​មិន​រំពឹង (%1) បាន​កើត​ឡើង ខណៈពេល​ប៉ុនប៉ង %2 ។"
 
-#: ../kioslave/http/http.cpp:2703
+#: ../kioslave/http/http.cpp:2705
 #, kde-format
 msgid "%1 contacted. Waiting for reply..."
 msgstr "%1 ត្រូវ​បាន​ទាក់ទង ។ កំពុង​រង់ចាំ​ការ​ឆ្លើយ​តប..."
 
-#: ../kioslave/http/http.cpp:3035
+#: ../kioslave/http/http.cpp:3037
 #, kde-format
 msgctxt "@warning: Security check on url being accessed"
 msgid ""
@@ -5945,33 +5945,33 @@ msgstr ""
 "ផ្ទៀងផ្ទាត់​ទេ ។ វា​អាច​ជា​ការ​ប៉ុនប៉ង​បញ្ជោត​អ្នក​ ។<p>តើតំបន់​ប​ណ្ដាញ \"%1\" ជា​តំបន់​បណ្ដាញ​ដែល​អ្នក​ចង់​"
 "មើល​ឬ ?"
 
-#: ../kioslave/http/http.cpp:3042
+#: ../kioslave/http/http.cpp:3044
 msgctxt "@title:window"
 msgid "Confirm Website Access"
 msgstr "បញ្ជាក់​ការ​ចូល​ដំណើរការ​តំបន់​បណ្ដាញ"
 
-#: ../kioslave/http/http.cpp:3119
+#: ../kioslave/http/http.cpp:3121
 msgid "Server processing request, please wait..."
 msgstr "ម៉ាស៊ីន​បម្រើ​កំពុង​ដំណើរការ​សំណើ សូម​រង់ចាំ..."
 
-#: ../kioslave/http/http.cpp:3567
+#: ../kioslave/http/http.cpp:3569
 msgid "Authentication Failed."
 msgstr "ការ​ផ្ទៀង​ផ្ទាត់​ភាព​ត្រឹមត្រូវ​បាន​បរាជ័យ ។"
 
-#: ../kioslave/http/http.cpp:3613
+#: ../kioslave/http/http.cpp:3615
 msgid "Authorization failed."
 msgstr "ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​បានបរាជ័យ ។​"
 
-#: ../kioslave/http/http.cpp:3630
+#: ../kioslave/http/http.cpp:3632
 msgid "Unknown Authorization method."
 msgstr "មិន​ស្គាល់​វិធីសាស្ត្រ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ។​"
 
-#: ../kioslave/http/http.cpp:4012 ../kioslave/http/http.cpp:4066
+#: ../kioslave/http/http.cpp:4014 ../kioslave/http/http.cpp:4068
 #, kde-format
 msgid "Sending data to %1"
 msgstr "ផ្ញើ​ទិន្នន័យ​ទៅ %1"
 
-#: ../kioslave/http/http.cpp:4532
+#: ../kioslave/http/http.cpp:4534
 #, kde-format
 msgid "Retrieving %1 from %2..."
 msgstr "កំពុង​ទាញយក %1 ពី %2..."
@@ -5984,18 +5984,6 @@ msgstr "kio_metainfo"
 #, kde-format
 msgid "No metainfo for %1"
 msgstr "គ្មាន​ព័ត៌មាន​មេ​តា​សម្រាប់ %1"
-
-#: ../kfile/kfiletreeview.cpp:187
-msgid "Show Hidden Folders"
-msgstr "បង្ហាញ​ថត​ដែល​លាក់"
-
-#: ../kfile/kfilefiltercombo.cpp:36 ../kfile/kfilewidget.cpp:1802
-msgid "*|All Files"
-msgstr "*|ឯកសារ​ទាំងអស់"
-
-#: ../kfile/kfilefiltercombo.cpp:194
-msgid "All Files"
-msgstr "ឯកសារ​ទាំងអស់"
 
 #: ../kfile/kfileplacesmodel.cpp:117
 msgctxt "KFile System Bookmarks"
@@ -6076,257 +6064,10 @@ msgstr "បង្ហាញ​ផ្លូវពេញលេញ"
 msgid "Custom Path"
 msgstr "ផ្លូវ​ផ្ទាល់ខ្លួន"
 
-#: ../kfile/kfileplaceeditdialog.cpp:90
-msgid "Add Places Entry"
-msgstr "បន្ថែម​កន្លែង​ដាក់"
-
-#: ../kfile/kfileplaceeditdialog.cpp:92
-msgid "Edit Places Entry"
-msgstr "កែសម្រួល​ធាតុ​ទី​កន្លែង"
-
-#: ../kfile/kfileplaceeditdialog.cpp:103
-msgid ""
-"<qt>This is the text that will appear in the Places panel.<br /><br />The "
-"label should consist of one or two words that will help you remember what "
-"this entry refers to. If you do not enter a label, it will be derived from "
-"the location's URL.</qt>"
-msgstr ""
-"<qt>នេះ​គឺ​ជា​អត្ថបទ​ដែល​នឹង​បង្ហាញ​នៅ​ក្នុង​បន្ទះ​ទី​កន្លែង ។<br /><br />ស្លាក​គួ​រមាន​ពាក្យ​មួយ ឬពីរ​ដែល​"
-"នឹង​ជួយ​ឲ្យ​អ្នក​ចាំ​អ្វី​ដែល​អ្នក​បញ្ចូល ។ ប្រសិនបើ​មិន​បញ្ចូល​ស្លាក​ទេ វា​នឹង​ត្រូវ​បាន​យក​ពី​ URL របស់​ទីតាំង ។</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:109
-msgid "L&abel:"
-msgstr "ស្លាក ៖"
-
-#: ../kfile/kfileplaceeditdialog.cpp:111
-msgid "Enter descriptive label here"
-msgstr "បញ្ចូល​ស្លាក​ពិពណ៌នា​នៅ​ទីនេះ"
-
-#: ../kfile/kfileplaceeditdialog.cpp:115
-#, kde-format
-msgid ""
-"<qt>This is the location associated with the entry. Any valid URL may be "
-"used. For example:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde."
-"org/pub/kde/stable<br /><br />By clicking on the button next to the text "
-"edit box you can browse to an appropriate URL.</qt>"
-msgstr ""
-"<qt>នេះ​ជាទីតាំង​ដែលភ្ជាប់​ជាមួយ​ធាតុ ។ URL ដែលត្រឹមត្រូវ​គឺ​ត្រូវបាន​ប្រើ ។ ឧទាហរណ៍ ៖<br /><br />"
-"%1<br />http://www.kde.org<br />ftp://ftp.kde.org/pub/kde/stable<br /><br /"
-">ដោយ​ចុច​លើ​ប៊ូតុង​ដែលនៅ​ជាប់​នឹង​ប្រអប់​កែសម្រួល​អត្ថបទ អ្នកអាច​រកមើល​ URL ដែល​ត្រឹមត្រូវ​បាន ។</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:121
-msgid "&Location:"
-msgstr "ទីតាំង ៖ "
-
-#: ../kfile/kfileplaceeditdialog.cpp:127
-msgid ""
-"<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
-"on the button to select a different icon.</qt>"
-msgstr ""
-"<qt>នេះ​ជា​រូបតំណាង ដែល​នឹង​លេចឡើង​នៅ​ក្នុង​បន្ទះ​ទីតាំង ។<br /><br />ចុច​លើ​ប៊ូតុង ដើម្បី​ជ្រើស​រូបតំណាង​"
-"ផ្សេងទៀត ។</qt>"
-
-#: ../kfile/kfileplaceeditdialog.cpp:130
-msgid "Choose an &icon:"
-msgstr "ជ្រើស​រូបតំណាង ៖ "
-
-#: ../kfile/kfileplaceeditdialog.cpp:147
-#, kde-format
-msgid "&Only show when using this application (%1)"
-msgstr "បង្ហាញ​តែនៅពេល​ដែលប្រើ​កម្មវិធី​នេះ (%1) ប៉ុណ្ណោះ "
-
-#: ../kfile/kfileplaceeditdialog.cpp:149
-#, kde-format
-msgid ""
-"<qt>Select this setting if you want this entry to show only when using the "
-"current application (%1).<br /><br />If this setting is not selected, the "
-"entry will be available in all applications.</qt>"
-msgstr ""
-"<qt>ជ្រើស​ការ​កំណត់​នេះ ប្រសិន​បើ​អ្នក​ចង់​បង្ហាញ​ធាតុ​នេះ​តែ​នៅពេល​ដែល​ប្រើ​កម្មវិធី​បច្ចុប្បន្ន (%1) ។<br /"
-"><br />ប្រសិន​បើ​ការ​កំណត់​មិនត្រូវ​បាន​ជ្រើស ធាតុ​នឹង​មាន​នៅ​ក្នុង​គ្រប់​កម្មវិធី​ទាំងអស់ ។</qt>"
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:93
-msgid "Click for Location Navigation"
-msgstr "ចុច​ដើម្បី​បង្ហាញ​ការ​រុករក​ទីតាំង"
-
-#: ../kfile/kurlnavigatortogglebutton.cpp:95
-msgid "Click to Edit Location"
-msgstr "ចុច​ដើម្បី​កែសម្រួល​ទីតាំង"
-
 #: ../kfile/kurlnavigatorbutton.cpp:675
 msgctxt "@action:inmenu"
 msgid "More"
 msgstr "ផ្សេង​ទៀត"
-
-#: ../kfile/kdiroperator.cpp:766 ../kfile/kdirselectdialog.cpp:159
-#, kde-format
-msgid "A file or folder named %1 already exists."
-msgstr "មាន​ឯកសារ ឬ​ថត​ដែលមាន​ឈ្មោះ %1 រួច​ហើយ ។"
-
-#: ../kfile/kdiroperator.cpp:768 ../kfile/kdirselectdialog.cpp:163
-msgid "You do not have permission to create that folder."
-msgstr "អ្នក​មិន​មាន​សិទ្ធិ​ក្នុង​ការ​បង្កើត​ថត​នោះឡើយ ។"
-
-#: ../kfile/kdiroperator.cpp:783
-msgid "You did not select a file to delete."
-msgstr "អ្នក​មិន​បាន​ជ្រើស​ឯកសារ​ដែល​ត្រូវ​លុប​ទេ ។"
-
-#: ../kfile/kdiroperator.cpp:784
-msgid "Nothing to Delete"
-msgstr "គ្មាន​អ្វី​ដែល​ត្រូវ​លុប"
-
-#: ../kfile/kdiroperator.cpp:805
-#, kde-format
-msgid ""
-"<qt>Do you really want to delete\n"
-" <b>'%1'</b>?</qt>"
-msgstr ""
-"<qt>តើ​អ្នក​ពិត​ជា​ចង់​លុប\n"
-" <b>'%1'</b> ឬ ?</qt>"
-
-#: ../kfile/kdiroperator.cpp:807
-msgid "Delete File"
-msgstr "លុប​ឯកសារ"
-
-#: ../kfile/kdiroperator.cpp:845
-msgid "You did not select a file to trash."
-msgstr "អ្នកមិនបាន​ជ្រើស​ឯកសារ​ដែលត្រូវ​ចោល​ទេ ។"
-
-#: ../kfile/kdiroperator.cpp:846
-msgid "Nothing to Trash"
-msgstr "គ្មានអ្វី​ដែល​ត្រូវ​ចោល"
-
-#: ../kfile/kdiroperator.cpp:863
-#, kde-format
-msgid ""
-"<qt>Do you really want to trash\n"
-" <b>'%1'</b>?</qt>"
-msgstr ""
-"<qt>តើ​អ្នក​ពិតជា​ចង់​ចោល\n"
-" <b>'%1'</b> ឬ ?</qt>"
-
-#: ../kfile/kdiroperator.cpp:865
-msgid "Trash File"
-msgstr "ចោល​ឯកសារ"
-
-#: ../kfile/kdiroperator.cpp:866 ../kfile/kdiroperator.cpp:873
-msgctxt "to trash"
-msgid "&Trash"
-msgstr "ចោល "
-
-#: ../kfile/kdiroperator.cpp:870
-#, kde-format
-msgid "translators: not called for n == 1"
-msgid_plural "Do you really want to trash these %1 items?"
-msgstr[0] "តើ​អ្នក​ពិត​ជា​ចង់​លុប​ធាតុ %1 ?"
-
-#: ../kfile/kdiroperator.cpp:872
-msgid "Trash Files"
-msgstr "ចោល​ឯកសារ"
-
-#: ../kfile/kdiroperator.cpp:1064 ../kfile/kdiroperator.cpp:1201
-msgid "The specified folder does not exist or was not readable."
-msgstr "មិនមាន​ថត​ដែលបាន​បញ្ជាក់​ទេ ឬ​មិនអាច​អានបាន ។"
-
-#: ../kfile/kdiroperator.cpp:1852
-msgid "Menu"
-msgstr "ម៉ឺនុយ"
-
-#: ../kfile/kdiroperator.cpp:1856
-msgid "Parent Folder"
-msgstr "ថត​មេ"
-
-#: ../kfile/kdiroperator.cpp:1863
-msgid "Home Folder"
-msgstr "ថត​ផ្ទះ"
-
-#: ../kfile/kdiroperator.cpp:1866
-msgid "Reload"
-msgstr "ផ្ទុក​ឡើងវិញ"
-
-#: ../kfile/kdiroperator.cpp:1869
-msgid "New Folder..."
-msgstr "ថត​ថ្មី..."
-
-#: ../kfile/kdiroperator.cpp:1880
-msgid "Delete"
-msgstr "លុប"
-
-#: ../kfile/kdiroperator.cpp:1887
-msgid "Sorting"
-msgstr "តម្រៀប"
-
-#: ../kfile/kdiroperator.cpp:1890
-msgid "By Name"
-msgstr "តាម​ឈ្មោះ"
-
-#: ../kfile/kdiroperator.cpp:1894
-msgid "By Size"
-msgstr "តាម​ទំហំ"
-
-#: ../kfile/kdiroperator.cpp:1898
-msgid "By Date"
-msgstr "តាម​កាលបរិច្ឆេទ"
-
-#: ../kfile/kdiroperator.cpp:1902
-msgid "By Type"
-msgstr "តាម​ប្រភេទ"
-
-#: ../kfile/kdiroperator.cpp:1906
-msgid "Descending"
-msgstr "លំដាប់​ចុះ"
-
-#: ../kfile/kdiroperator.cpp:1910
-msgid "Folders First"
-msgstr "ថត​មុន"
-
-#: ../kfile/kdiroperator.cpp:1920
-msgid "Icon Position"
-msgstr "ទីតាំង​រូបតំណាង"
-
-#: ../kfile/kdiroperator.cpp:1923
-msgid "Next to File Name"
-msgstr "ជាប់​នឹង​ឈ្មោះ​ឯកសារ"
-
-#: ../kfile/kdiroperator.cpp:1927
-msgid "Above File Name"
-msgstr "ខាង​លើ​ឈ្មោះ​ឯកសារ"
-
-#: ../kfile/kdiroperator.cpp:1938
-msgid "Short View"
-msgstr "ទិដ្ឋភាព​ខ្លី"
-
-#: ../kfile/kdiroperator.cpp:1943
-msgid "Detailed View"
-msgstr "ទិដ្ឋភាព​លម្អិត"
-
-#: ../kfile/kdiroperator.cpp:1948
-msgid "Tree View"
-msgstr "ទិដ្ឋភាព​មែកធាង"
-
-#: ../kfile/kdiroperator.cpp:1953
-msgid "Detailed Tree View"
-msgstr "ទិដ្ឋភាព​មែកធាង​លម្អិត"
-
-#: ../kfile/kdiroperator.cpp:1964
-msgid "Show Hidden Files"
-msgstr "បង្ហាញ​ឯកសារ​ដែល​លាក់"
-
-#: ../kfile/kdiroperator.cpp:1968
-msgid "Show Aside Preview"
-msgstr "បង្ហាញ​ការ​មើល​ផ្នែក​ជា​មុន"
-
-#: ../kfile/kdiroperator.cpp:1974
-msgid "Show Preview"
-msgstr "បង្ហាញ​ការ​មើល​ជាមុន"
-
-#: ../kfile/kdiroperator.cpp:1978
-msgid "Open File Manager"
-msgstr "បើក​កម្មវិធី​គ្រប់គ្រង​ឯកសារ"
-
-#: ../kfile/kdiroperator.cpp:1990
-msgid "&View"
-msgstr "ទិដ្ឋភាព "
 
 #: ../kfile/kdirselectdialog.cpp:131
 msgctxt "folder name"
@@ -6342,6 +6083,15 @@ msgid ""
 msgstr ""
 "បង្កើត​ថត​ថ្មី​ក្នុង ៖\n"
 "%1"
+
+#: ../kfile/kdirselectdialog.cpp:159 ../kfile/kdiroperator.cpp:766
+#, kde-format
+msgid "A file or folder named %1 already exists."
+msgstr "មាន​ឯកសារ ឬ​ថត​ដែលមាន​ឈ្មោះ %1 រួច​ហើយ ។"
+
+#: ../kfile/kdirselectdialog.cpp:163 ../kfile/kdiroperator.cpp:768
+msgid "You do not have permission to create that folder."
+msgstr "អ្នក​មិន​មាន​សិទ្ធិ​ក្នុង​ការ​បង្កើត​ថត​នោះឡើយ ។"
 
 #: ../kfile/kdirselectdialog.cpp:283
 msgctxt "@action:button"
@@ -6373,131 +6123,17 @@ msgctxt "@action:inmenu"
 msgid "Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ"
 
-#: ../kfile/knewfilemenu.cpp:369 ../kfile/knewfilemenu.cpp:878
-msgid "Sorry"
-msgstr "សូម​ទោស"
+#: ../kfile/kfiletreeview.cpp:187
+msgid "Show Hidden Folders"
+msgstr "បង្ហាញ​ថត​ដែល​លាក់"
 
-#: ../kfile/knewfilemenu.cpp:378
-#, kde-format
-msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
-msgstr "<qt>មិន​ទាន់​មាន​ឯកសារ​ពុម្ព <b>%1</b> នៅ​ឡើយទេ ។</qt>"
+#: ../kfile/kurlnavigatortogglebutton.cpp:93
+msgid "Click for Location Navigation"
+msgstr "ចុច​ដើម្បី​បង្ហាញ​ការ​រុករក​ទីតាំង"
 
-#: ../kfile/knewfilemenu.cpp:397
-msgctxt "@action:button"
-msgid "Create directory"
-msgstr "បង្កើត​ថត"
-
-#: ../kfile/knewfilemenu.cpp:399
-msgctxt "@action:button"
-msgid "Enter a different name"
-msgstr "បញ្ចូល​ឈ្មោះ​ផ្សេង"
-
-#: ../kfile/knewfilemenu.cpp:402
-msgid "Create hidden directory?"
-msgstr "បង្កើត​ថត​ដែល​បានលាក់ ?"
-
-#: ../kfile/knewfilemenu.cpp:406
-#, kde-format
-msgid ""
-"The name \"%1\" starts with a dot, so the directory will be hidden by "
-"default."
-msgstr "ឈ្មោះ \"%1\" ចាប់ផ្ដើម​ដោយ ដូច្នេះ​ថត​នឹង​ត្រូវ​បានលាក់​​តាម​លំនាំដើម ។"
-
-#: ../kfile/knewfilemenu.cpp:408
-msgid "Do not ask again"
-msgstr "កុំ​សួរ​ម្ដង​ទៀត"
-
-#: ../kfile/knewfilemenu.cpp:501 ../kfile/knewfilemenu.cpp:564
-msgid "File name:"
-msgstr "ឈ្មោះ​ឯកសារ ៖"
-
-#: ../kfile/knewfilemenu.cpp:504
-msgid "Create Symlink"
-msgstr "​បង្កើត​តំណ​និមិត្ត​សញ្ញា"
-
-#: ../kfile/knewfilemenu.cpp:568
-msgid "Create link to URL"
-msgstr "បង្កើត​តំណ​ទៅ​កាន់ URL"
-
-#: ../kfile/knewfilemenu.cpp:614 ../kfile/knewfilemenu.cpp:662
-#, kde-format
-msgctxt "@item:inmenu Create New"
-msgid "%1"
-msgstr "%1"
-
-#: ../kfile/knewfilemenu.cpp:888
-msgid ""
-"Basic links can only point to local files or directories.\n"
-"Please use \"Link to Location\" for remote URLs."
-msgstr ""
-"តំណ​មូលដ្ឋាន​អាច​ង្អុល​តែ​ឯកសារ ឬ​ថត​​មូលដ្ឋាន​ប៉ុណ្ណោះ ។\n"
-"សុម​ប្រើ \"តំណ​ទីតាំង\" សម្រាប់ URLs ពី​ចម្ងាយ ។"
-
-#: ../kfile/knewfilemenu.cpp:964
-msgid "Create New"
-msgstr "បង្កើត​ថ្មី"
-
-#: ../kfile/knewfilemenu.cpp:977
-msgid "Link to Device"
-msgstr "តភ្ជាប់​ទៅ​ឧបករណ៍"
-
-#: ../kfile/knewfilemenu.cpp:1022
-msgctxt "Default name for a new folder"
-msgid "New Folder"
-msgstr "ថត​ថ្មី"
-
-#: ../kfile/knewfilemenu.cpp:1036
-#, kde-format
-msgid ""
-"Create new folder in:\n"
-"%1"
-msgstr ""
-"បង្កើត​ថត​ថ្មី​ក្នុង ៖\n"
-"%1"
-
-#: ../kfile/kfileplacesview.cpp:575
-msgctxt "@action:inmenu"
-msgid "Empty Trash"
-msgstr "សម្អាត​ធុងសំរាម"
-
-#: ../kfile/kfileplacesview.cpp:582
-#, kde-format
-msgid "&Edit Entry '%1'..."
-msgstr "កែសម្រួល​ធាតុ '%1'..."
-
-#: ../kfile/kfileplacesview.cpp:604
-#, kde-format
-msgid "&Hide Entry '%1'"
-msgstr "លាក់​ធាតុ '%1'"
-
-#: ../kfile/kfileplacesview.cpp:613
-msgid "&Show All Entries"
-msgstr "បង្ហាញ​ធាតុ​ទាំងអស់ "
-
-#: ../kfile/kfileplacesview.cpp:624
-#, kde-format
-msgid "&Remove Entry '%1'"
-msgstr "យក​ធាតុ '%1' ចេញ"
-
-#: ../kfile/kfileplacesview.cpp:636
-msgctxt "@info"
-msgid "Do you really want to empty the Trash? All items will be deleted."
-msgstr "តើ​អ្នក​ពិតជា​ចង់​​សម្អាត​ធុង​សំរាម​ឬ ? ធាតុ​ទាំងអស់​នឹង​ត្រូវបាន​លុប ។"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:173
-msgctxt "@item:inmenu"
-msgid "Devices"
-msgstr "ឧបករណ៍"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:177
-msgctxt "@item:inmenu"
-msgid "Subversion"
-msgstr "Subversion"
-
-#: ../kfile/kurlnavigatorprotocolcombo.cpp:181
-msgctxt "@item:inmenu"
-msgid "Other"
-msgstr "ផ្សេងទៀត"
+#: ../kfile/kurlnavigatortogglebutton.cpp:95
+msgid "Click to Edit Location"
+msgstr "ចុច​ដើម្បី​កែសម្រួល​ទីតាំង"
 
 #: ../kfile/kfilewidget.cpp:286
 msgid ""
@@ -6694,6 +6330,10 @@ msgstr "មិន​ទទួល​យក​ឯកសារ​ពី​ចម្
 msgid "*|All Folders"
 msgstr "*|ថត​ទាំងអស់"
 
+#: ../kfile/kfilewidget.cpp:1802 ../kfile/kfilefiltercombo.cpp:36
+msgid "*|All Files"
+msgstr "*|ឯកសារ​ទាំងអស់"
+
 #: ../kfile/kfilewidget.cpp:2051
 #, kde-format
 msgid "Icon size: %1 pixels (standard size)"
@@ -6757,3 +6397,363 @@ msgstr ""
 "<qt>ប៊ូតុង​នេះ​អនុញ្ញាត​ឲ្យ​អ្នក​ចំណាំ​ទីតាំង​ជាក់លាក់​បាន ។ ចុច​លើ​ប៊ូតុង​នេះ ដើម្បី​បើក​ម៉ឺនុយ​ចំណាំ ដែល​អ្នក​អាច​"
 "បន្ថែម កែសម្រួល ឬ​ជ្រើស​ចំណាំ​បាន ។<br /><br />ចំណាំ​ទាំងនេះ គឺ​ជាក់លាក់​ចំពោះ​ប្រអប់​ឯកសារ ប៉ុន្តែ​បើ​"
 "មិនដូចនោះ​ទេ វា​​ប្រតិបត្តិ​ដូច​ចំណាំ​នៅ​កន្លែង​ផ្សេងទៀត​នៅ​ក្នុង KDE អញ្ចឹង ។</qt>"
+
+#: ../kfile/knewfilemenu.cpp:369 ../kfile/knewfilemenu.cpp:878
+msgid "Sorry"
+msgstr "សូម​ទោស"
+
+#: ../kfile/knewfilemenu.cpp:378
+#, kde-format
+msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
+msgstr "<qt>មិន​ទាន់​មាន​ឯកសារ​ពុម្ព <b>%1</b> នៅ​ឡើយទេ ។</qt>"
+
+#: ../kfile/knewfilemenu.cpp:397
+msgctxt "@action:button"
+msgid "Create directory"
+msgstr "បង្កើត​ថត"
+
+#: ../kfile/knewfilemenu.cpp:399
+msgctxt "@action:button"
+msgid "Enter a different name"
+msgstr "បញ្ចូល​ឈ្មោះ​ផ្សេង"
+
+#: ../kfile/knewfilemenu.cpp:402
+msgid "Create hidden directory?"
+msgstr "បង្កើត​ថត​ដែល​បានលាក់ ?"
+
+#: ../kfile/knewfilemenu.cpp:406
+#, kde-format
+msgid ""
+"The name \"%1\" starts with a dot, so the directory will be hidden by "
+"default."
+msgstr "ឈ្មោះ \"%1\" ចាប់ផ្ដើម​ដោយ ដូច្នេះ​ថត​នឹង​ត្រូវ​បានលាក់​​តាម​លំនាំដើម ។"
+
+#: ../kfile/knewfilemenu.cpp:408
+msgid "Do not ask again"
+msgstr "កុំ​សួរ​ម្ដង​ទៀត"
+
+#: ../kfile/knewfilemenu.cpp:501 ../kfile/knewfilemenu.cpp:564
+msgid "File name:"
+msgstr "ឈ្មោះ​ឯកសារ ៖"
+
+#: ../kfile/knewfilemenu.cpp:504
+msgid "Create Symlink"
+msgstr "​បង្កើត​តំណ​និមិត្ត​សញ្ញា"
+
+#: ../kfile/knewfilemenu.cpp:568
+msgid "Create link to URL"
+msgstr "បង្កើត​តំណ​ទៅ​កាន់ URL"
+
+#: ../kfile/knewfilemenu.cpp:614 ../kfile/knewfilemenu.cpp:662
+#, kde-format
+msgctxt "@item:inmenu Create New"
+msgid "%1"
+msgstr "%1"
+
+#: ../kfile/knewfilemenu.cpp:888
+msgid ""
+"Basic links can only point to local files or directories.\n"
+"Please use \"Link to Location\" for remote URLs."
+msgstr ""
+"តំណ​មូលដ្ឋាន​អាច​ង្អុល​តែ​ឯកសារ ឬ​ថត​​មូលដ្ឋាន​ប៉ុណ្ណោះ ។\n"
+"សុម​ប្រើ \"តំណ​ទីតាំង\" សម្រាប់ URLs ពី​ចម្ងាយ ។"
+
+#: ../kfile/knewfilemenu.cpp:964
+msgid "Create New"
+msgstr "បង្កើត​ថ្មី"
+
+#: ../kfile/knewfilemenu.cpp:977
+msgid "Link to Device"
+msgstr "តភ្ជាប់​ទៅ​ឧបករណ៍"
+
+#: ../kfile/knewfilemenu.cpp:1022
+msgctxt "Default name for a new folder"
+msgid "New Folder"
+msgstr "ថត​ថ្មី"
+
+#: ../kfile/knewfilemenu.cpp:1036
+#, kde-format
+msgid ""
+"Create new folder in:\n"
+"%1"
+msgstr ""
+"បង្កើត​ថត​ថ្មី​ក្នុង ៖\n"
+"%1"
+
+#: ../kfile/kfilefiltercombo.cpp:194
+msgid "All Files"
+msgstr "ឯកសារ​ទាំងអស់"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:173
+msgctxt "@item:inmenu"
+msgid "Devices"
+msgstr "ឧបករណ៍"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:177
+msgctxt "@item:inmenu"
+msgid "Subversion"
+msgstr "Subversion"
+
+#: ../kfile/kurlnavigatorprotocolcombo.cpp:181
+msgctxt "@item:inmenu"
+msgid "Other"
+msgstr "ផ្សេងទៀត"
+
+#: ../kfile/kfileplaceeditdialog.cpp:90
+msgid "Add Places Entry"
+msgstr "បន្ថែម​កន្លែង​ដាក់"
+
+#: ../kfile/kfileplaceeditdialog.cpp:92
+msgid "Edit Places Entry"
+msgstr "កែសម្រួល​ធាតុ​ទី​កន្លែង"
+
+#: ../kfile/kfileplaceeditdialog.cpp:103
+msgid ""
+"<qt>This is the text that will appear in the Places panel.<br /><br />The "
+"label should consist of one or two words that will help you remember what "
+"this entry refers to. If you do not enter a label, it will be derived from "
+"the location's URL.</qt>"
+msgstr ""
+"<qt>នេះ​គឺ​ជា​អត្ថបទ​ដែល​នឹង​បង្ហាញ​នៅ​ក្នុង​បន្ទះ​ទី​កន្លែង ។<br /><br />ស្លាក​គួ​រមាន​ពាក្យ​មួយ ឬពីរ​ដែល​"
+"នឹង​ជួយ​ឲ្យ​អ្នក​ចាំ​អ្វី​ដែល​អ្នក​បញ្ចូល ។ ប្រសិនបើ​មិន​បញ្ចូល​ស្លាក​ទេ វា​នឹង​ត្រូវ​បាន​យក​ពី​ URL របស់​ទីតាំង ។</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:109
+msgid "L&abel:"
+msgstr "ស្លាក ៖"
+
+#: ../kfile/kfileplaceeditdialog.cpp:111
+msgid "Enter descriptive label here"
+msgstr "បញ្ចូល​ស្លាក​ពិពណ៌នា​នៅ​ទីនេះ"
+
+#: ../kfile/kfileplaceeditdialog.cpp:115
+#, kde-format
+msgid ""
+"<qt>This is the location associated with the entry. Any valid URL may be "
+"used. For example:<br /><br />%1<br />http://www.kde.org<br />ftp://ftp.kde."
+"org/pub/kde/stable<br /><br />By clicking on the button next to the text "
+"edit box you can browse to an appropriate URL.</qt>"
+msgstr ""
+"<qt>នេះ​ជាទីតាំង​ដែលភ្ជាប់​ជាមួយ​ធាតុ ។ URL ដែលត្រឹមត្រូវ​គឺ​ត្រូវបាន​ប្រើ ។ ឧទាហរណ៍ ៖<br /><br />"
+"%1<br />http://www.kde.org<br />ftp://ftp.kde.org/pub/kde/stable<br /><br /"
+">ដោយ​ចុច​លើ​ប៊ូតុង​ដែលនៅ​ជាប់​នឹង​ប្រអប់​កែសម្រួល​អត្ថបទ អ្នកអាច​រកមើល​ URL ដែល​ត្រឹមត្រូវ​បាន ។</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:121
+msgid "&Location:"
+msgstr "ទីតាំង ៖ "
+
+#: ../kfile/kfileplaceeditdialog.cpp:127
+msgid ""
+"<qt>This is the icon that will appear in the Places panel.<br /><br />Click "
+"on the button to select a different icon.</qt>"
+msgstr ""
+"<qt>នេះ​ជា​រូបតំណាង ដែល​នឹង​លេចឡើង​នៅ​ក្នុង​បន្ទះ​ទីតាំង ។<br /><br />ចុច​លើ​ប៊ូតុង ដើម្បី​ជ្រើស​រូបតំណាង​"
+"ផ្សេងទៀត ។</qt>"
+
+#: ../kfile/kfileplaceeditdialog.cpp:130
+msgid "Choose an &icon:"
+msgstr "ជ្រើស​រូបតំណាង ៖ "
+
+#: ../kfile/kfileplaceeditdialog.cpp:147
+#, kde-format
+msgid "&Only show when using this application (%1)"
+msgstr "បង្ហាញ​តែនៅពេល​ដែលប្រើ​កម្មវិធី​នេះ (%1) ប៉ុណ្ណោះ "
+
+#: ../kfile/kfileplaceeditdialog.cpp:149
+#, kde-format
+msgid ""
+"<qt>Select this setting if you want this entry to show only when using the "
+"current application (%1).<br /><br />If this setting is not selected, the "
+"entry will be available in all applications.</qt>"
+msgstr ""
+"<qt>ជ្រើស​ការ​កំណត់​នេះ ប្រសិន​បើ​អ្នក​ចង់​បង្ហាញ​ធាតុ​នេះ​តែ​នៅពេល​ដែល​ប្រើ​កម្មវិធី​បច្ចុប្បន្ន (%1) ។<br /"
+"><br />ប្រសិន​បើ​ការ​កំណត់​មិនត្រូវ​បាន​ជ្រើស ធាតុ​នឹង​មាន​នៅ​ក្នុង​គ្រប់​កម្មវិធី​ទាំងអស់ ។</qt>"
+
+#: ../kfile/kdiroperator.cpp:783
+msgid "You did not select a file to delete."
+msgstr "អ្នក​មិន​បាន​ជ្រើស​ឯកសារ​ដែល​ត្រូវ​លុប​ទេ ។"
+
+#: ../kfile/kdiroperator.cpp:784
+msgid "Nothing to Delete"
+msgstr "គ្មាន​អ្វី​ដែល​ត្រូវ​លុប"
+
+#: ../kfile/kdiroperator.cpp:805
+#, kde-format
+msgid ""
+"<qt>Do you really want to delete\n"
+" <b>'%1'</b>?</qt>"
+msgstr ""
+"<qt>តើ​អ្នក​ពិត​ជា​ចង់​លុប\n"
+" <b>'%1'</b> ឬ ?</qt>"
+
+#: ../kfile/kdiroperator.cpp:807
+msgid "Delete File"
+msgstr "លុប​ឯកសារ"
+
+#: ../kfile/kdiroperator.cpp:845
+msgid "You did not select a file to trash."
+msgstr "អ្នកមិនបាន​ជ្រើស​ឯកសារ​ដែលត្រូវ​ចោល​ទេ ។"
+
+#: ../kfile/kdiroperator.cpp:846
+msgid "Nothing to Trash"
+msgstr "គ្មានអ្វី​ដែល​ត្រូវ​ចោល"
+
+#: ../kfile/kdiroperator.cpp:863
+#, kde-format
+msgid ""
+"<qt>Do you really want to trash\n"
+" <b>'%1'</b>?</qt>"
+msgstr ""
+"<qt>តើ​អ្នក​ពិតជា​ចង់​ចោល\n"
+" <b>'%1'</b> ឬ ?</qt>"
+
+#: ../kfile/kdiroperator.cpp:865
+msgid "Trash File"
+msgstr "ចោល​ឯកសារ"
+
+#: ../kfile/kdiroperator.cpp:866 ../kfile/kdiroperator.cpp:873
+msgctxt "to trash"
+msgid "&Trash"
+msgstr "ចោល "
+
+#: ../kfile/kdiroperator.cpp:870
+#, kde-format
+msgid "translators: not called for n == 1"
+msgid_plural "Do you really want to trash these %1 items?"
+msgstr[0] "តើ​អ្នក​ពិត​ជា​ចង់​លុប​ធាតុ %1 ?"
+
+#: ../kfile/kdiroperator.cpp:872
+msgid "Trash Files"
+msgstr "ចោល​ឯកសារ"
+
+#: ../kfile/kdiroperator.cpp:1064 ../kfile/kdiroperator.cpp:1201
+msgid "The specified folder does not exist or was not readable."
+msgstr "មិនមាន​ថត​ដែលបាន​បញ្ជាក់​ទេ ឬ​មិនអាច​អានបាន ។"
+
+#: ../kfile/kdiroperator.cpp:1852
+msgid "Menu"
+msgstr "ម៉ឺនុយ"
+
+#: ../kfile/kdiroperator.cpp:1856
+msgid "Parent Folder"
+msgstr "ថត​មេ"
+
+#: ../kfile/kdiroperator.cpp:1863
+msgid "Home Folder"
+msgstr "ថត​ផ្ទះ"
+
+#: ../kfile/kdiroperator.cpp:1866
+msgid "Reload"
+msgstr "ផ្ទុក​ឡើងវិញ"
+
+#: ../kfile/kdiroperator.cpp:1869
+msgid "New Folder..."
+msgstr "ថត​ថ្មី..."
+
+#: ../kfile/kdiroperator.cpp:1880
+msgid "Delete"
+msgstr "លុប"
+
+#: ../kfile/kdiroperator.cpp:1887
+msgid "Sorting"
+msgstr "តម្រៀប"
+
+#: ../kfile/kdiroperator.cpp:1890
+msgid "By Name"
+msgstr "តាម​ឈ្មោះ"
+
+#: ../kfile/kdiroperator.cpp:1894
+msgid "By Size"
+msgstr "តាម​ទំហំ"
+
+#: ../kfile/kdiroperator.cpp:1898
+msgid "By Date"
+msgstr "តាម​កាលបរិច្ឆេទ"
+
+#: ../kfile/kdiroperator.cpp:1902
+msgid "By Type"
+msgstr "តាម​ប្រភេទ"
+
+#: ../kfile/kdiroperator.cpp:1906
+msgid "Descending"
+msgstr "លំដាប់​ចុះ"
+
+#: ../kfile/kdiroperator.cpp:1910
+msgid "Folders First"
+msgstr "ថត​មុន"
+
+#: ../kfile/kdiroperator.cpp:1920
+msgid "Icon Position"
+msgstr "ទីតាំង​រូបតំណាង"
+
+#: ../kfile/kdiroperator.cpp:1923
+msgid "Next to File Name"
+msgstr "ជាប់​នឹង​ឈ្មោះ​ឯកសារ"
+
+#: ../kfile/kdiroperator.cpp:1927
+msgid "Above File Name"
+msgstr "ខាង​លើ​ឈ្មោះ​ឯកសារ"
+
+#: ../kfile/kdiroperator.cpp:1938
+msgid "Short View"
+msgstr "ទិដ្ឋភាព​ខ្លី"
+
+#: ../kfile/kdiroperator.cpp:1943
+msgid "Detailed View"
+msgstr "ទិដ្ឋភាព​លម្អិត"
+
+#: ../kfile/kdiroperator.cpp:1948
+msgid "Tree View"
+msgstr "ទិដ្ឋភាព​មែកធាង"
+
+#: ../kfile/kdiroperator.cpp:1953
+msgid "Detailed Tree View"
+msgstr "ទិដ្ឋភាព​មែកធាង​លម្អិត"
+
+#: ../kfile/kdiroperator.cpp:1964
+msgid "Show Hidden Files"
+msgstr "បង្ហាញ​ឯកសារ​ដែល​លាក់"
+
+#: ../kfile/kdiroperator.cpp:1968
+msgid "Show Aside Preview"
+msgstr "បង្ហាញ​ការ​មើល​ផ្នែក​ជា​មុន"
+
+#: ../kfile/kdiroperator.cpp:1974
+msgid "Show Preview"
+msgstr "បង្ហាញ​ការ​មើល​ជាមុន"
+
+#: ../kfile/kdiroperator.cpp:1978
+msgid "Open File Manager"
+msgstr "បើក​កម្មវិធី​គ្រប់គ្រង​ឯកសារ"
+
+#: ../kfile/kdiroperator.cpp:1990
+msgid "&View"
+msgstr "ទិដ្ឋភាព "
+
+#: ../kfile/kfileplacesview.cpp:575
+msgctxt "@action:inmenu"
+msgid "Empty Trash"
+msgstr "សម្អាត​ធុងសំរាម"
+
+#: ../kfile/kfileplacesview.cpp:582
+#, kde-format
+msgid "&Edit Entry '%1'..."
+msgstr "កែសម្រួល​ធាតុ '%1'..."
+
+#: ../kfile/kfileplacesview.cpp:604
+#, kde-format
+msgid "&Hide Entry '%1'"
+msgstr "លាក់​ធាតុ '%1'"
+
+#: ../kfile/kfileplacesview.cpp:613
+msgid "&Show All Entries"
+msgstr "បង្ហាញ​ធាតុ​ទាំងអស់ "
+
+#: ../kfile/kfileplacesview.cpp:624
+#, kde-format
+msgid "&Remove Entry '%1'"
+msgstr "យក​ធាតុ '%1' ចេញ"
+
+#: ../kfile/kfileplacesview.cpp:636
+msgctxt "@info"
+msgid "Do you really want to empty the Trash? All items will be deleted."
+msgstr "តើ​អ្នក​ពិតជា​ចង់​​សម្អាត​ធុង​សំរាម​ឬ ? ធាតុ​ទាំងអស់​នឹង​ត្រូវបាន​លុប ។"
