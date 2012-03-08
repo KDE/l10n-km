@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kgpg\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-07 04:55+0100\n"
+"POT-Creation-Date: 2012-03-08 04:50+0100\n"
 "PO-Revision-Date: 2008-12-19 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -93,12 +93,12 @@ msgctxt "Status message 'Encrypting <filename>' (operation starts)"
 msgid "Encrypting %1"
 msgstr "១"
 
-#: foldercompressjob.cpp:110 editor/kgpgtextedit.cpp:284
+#: foldercompressjob.cpp:110 editor/kgpgtextedit.cpp:273
 #, kde-format
 msgid "The encryption failed with error code %1"
 msgstr ""
 
-#: foldercompressjob.cpp:111 editor/kgpgtextedit.cpp:285
+#: foldercompressjob.cpp:111 editor/kgpgtextedit.cpp:274
 #, fuzzy
 msgid "Encryption failed."
 msgstr "​ការ​អ៊ីនគ្រីប បរាជ័យ​."
@@ -247,7 +247,7 @@ msgstr[0] "នាំចូល គ្រាប់​ចុច ពី"
 
 #. i18n: file: keyserver.ui:144
 #. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
-#: keyservers.cpp:211 rc.cpp:476 editor/kgpgtextedit.cpp:328
+#: keyservers.cpp:211 rc.cpp:476 editor/kgpgtextedit.cpp:327
 #, fuzzy
 msgid "&Import"
 msgstr "នាំចូល"
@@ -1203,7 +1203,7 @@ msgid "Decryption of this file failed:"
 msgid_plural "Decryption of these files failed:"
 msgstr[0] "បរាជ័យ​."
 
-#: kgpgexternalactions.cpp:389 editor/kgpgtextedit.cpp:269
+#: kgpgexternalactions.cpp:389 editor/kgpgtextedit.cpp:258
 #, fuzzy
 msgid "Decryption failed."
 msgstr "បរាជ័យ​."
@@ -1613,67 +1613,68 @@ msgstr "(លំនាំដើម)"
 msgid "Create Revocation Certificate"
 msgstr "បង្កើត វិញ្ញាបនបត្រ"
 
-#: kgpgtextinterface.cpp:109
+#: kgpgtextinterface.cpp:77
 #, fuzzy
 msgid "Enter passphrase (symmetrical encryption)"
 msgstr "បញ្ចូល (Enter)"
 
-#: kgpgtextinterface.cpp:123 core/KGpgRefNode.cpp:128
+#: kgpgtextinterface.cpp:91 core/KGpgRefNode.cpp:128
 #: transactions/kgpgtransaction.cpp:426
 #, fuzzy
 msgid "[No user id found]"
 msgstr "ទេ"
 
-#: kgpgtextinterface.cpp:125 transactions/kgpgtransaction.cpp:350
+#: kgpgtextinterface.cpp:93 transactions/kgpgtransaction.cpp:350
 #, fuzzy
 msgid " or "
 msgstr "ឬ "
 
-#: kgpgtextinterface.cpp:129
+#: kgpgtextinterface.cpp:97
 #, fuzzy
 msgid "<p><b>No user id found</b>. Trying all secret keys.</p>"
 msgstr "<p><b> ទេ</b> ទាំងអស់</p>"
 
-#: kgpgtextinterface.cpp:131 transactions/kgpgtransaction.cpp:431
+#: kgpgtextinterface.cpp:99 transactions/kgpgtransaction.cpp:431
 #, fuzzy, kde-format
 msgid "<p><b>Bad passphrase</b>. You have 1 try left.</p>"
 msgid_plural "<p><b>Bad passphrase</b>. You have %1 tries left.</p>"
 msgstr[0] "<p><b> មិន​ល្អ</b> អ្នក ឆ្វេង</p>"
 
-#: kgpgtextinterface.cpp:134
+#: kgpgtextinterface.cpp:102
 #, fuzzy
 msgid "Enter passphrase"
 msgstr "បញ្ចូល (Enter) សម្រាប់<b></b>"
 
-#: kgpgtextinterface.cpp:136 transactions/kgpgtransaction.cpp:433
+#: kgpgtextinterface.cpp:104 transactions/kgpgtransaction.cpp:433
 #, fuzzy, kde-format
 msgid "Enter passphrase for <b>%1</b>"
 msgstr "បញ្ចូល (Enter) សម្រាប់<b></b>"
 
-#: kgpgtextinterface.cpp:216 kgpgtextinterface.cpp:252
-#: editor/kgpgeditor.cpp:724
+#: kgpgtextinterface.cpp:172 editor/kgpgeditor.cpp:724
+#: transactions/kgpgverify.cpp:143
 #, fuzzy
 msgid "No signature found."
 msgstr "ទេ."
 
-#: kgpgtextinterface.cpp:255
+#: kgpgtextinterface.cpp:175 transactions/kgpgverify.cpp:126
+#: transactions/kgpgverify.cpp:160
 #, fuzzy, kde-format
 msgid "<qt>Good signature from:<br /><b>%1</b><br />Key ID: %2<br /></qt>"
 msgstr "<qt> ល្អ ពី<br /><b></b><br /> គ្រាប់​ចុច លេខ​សម្គាល់</qt>"
 
-#: kgpgtextinterface.cpp:260
+#: kgpgtextinterface.cpp:180 transactions/kgpgverify.cpp:176
 #, fuzzy, kde-format
 msgid ""
 "<qt><b>BAD signature</b> from:<br /> %1<br />Key id: %2<br /><br /><b>The "
 "file is corrupted</b><br /></qt>"
 msgstr "<qt><b></b> ពី<br /><br /> គ្រាប់​ចុច<br /><br /><b> ជា</b></qt>"
 
-#: kgpgtextinterface.cpp:266
+#: kgpgtextinterface.cpp:186 transactions/kgpgverify.cpp:180
 #, fuzzy
 msgid "<qt>The signature is valid, but the key is untrusted<br /></qt>"
 msgstr "ជា ជា"
 
-#: kgpgtextinterface.cpp:268
+#: kgpgtextinterface.cpp:188 transactions/kgpgverify.cpp:182
 #, fuzzy
 msgid ""
 "<qt>The signature is valid, and the key is ultimately trusted<br /></qt>"
@@ -3845,14 +3846,14 @@ msgstr "បើក ឯកសារ ដល់ ចុះ​ហត្ថលេខា
 msgid "Open File to Verify"
 msgstr "បើក ឯកសារ ដល់"
 
-#: editor/kgpgeditor.cpp:697 editor/kgpgtextedit.cpp:335
+#: editor/kgpgeditor.cpp:697 editor/kgpgtextedit.cpp:334
 #, fuzzy, kde-format
 msgid ""
 "<qt><b>Missing signature:</b><br />Key id: %1<br /><br />Do you want to "
 "import this key from a keyserver?</qt>"
 msgstr "<qt><b> បាត់</b><br /> គ្រាប់​ចុច<br /><br /> ដល់ ពី a</qt>"
 
-#: editor/kgpgeditor.cpp:729 editor/kgpgtextedit.cpp:320
+#: editor/kgpgeditor.cpp:729 editor/kgpgtextedit.cpp:321
 msgctxt "Caption of message box"
 msgid "Verification Finished"
 msgstr ""
@@ -3891,7 +3892,7 @@ msgstr "<b> កែ​តម្រូវ</b> ជា."
 msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
 msgstr "<b> ខុស<em></em></b>"
 
-#: editor/kgpgtextedit.cpp:90
+#: editor/kgpgtextedit.cpp:91
 #, fuzzy
 msgid ""
 "<qt><b>Remote file dropped</b>.<br />The remote file will now be copied to a "
@@ -3899,49 +3900,49 @@ msgid ""
 "deleted after operation.</qt>"
 msgstr "<qt><b> ពី​ចម្ងាយ</b><br /> ឥឡូវ ដល់ a ដល់ បាន​លុប បន្ទាប់​ពី</qt>"
 
-#: editor/kgpgtextedit.cpp:94
+#: editor/kgpgtextedit.cpp:95
 msgid "Could not download file."
 msgstr ""
 
-#: editor/kgpgtextedit.cpp:127
+#: editor/kgpgtextedit.cpp:128
 #, fuzzy
 msgid ""
 "<qt>This file is a <b>public</b> key.<br />Do you want to import it instead "
 "of opening it in editor?</qt>"
 msgstr "<p> ជា a<br /> ដល់</p>"
 
-#: editor/kgpgtextedit.cpp:130
+#: editor/kgpgtextedit.cpp:131
 #, fuzzy
 msgid ""
 "<qt>This file is a <b>private</b> key.<br />Do you want to import it instead "
 "of opening it in editor?</qt>"
 msgstr "<qt> ជា a<b></b> ដល់</qt>"
 
-#: editor/kgpgtextedit.cpp:135
+#: editor/kgpgtextedit.cpp:136
 msgid "Key file dropped on Editor"
 msgstr ""
 
-#: editor/kgpgtextedit.cpp:298
+#: editor/kgpgtextedit.cpp:287
 #, fuzzy
 msgid "Signing not possible: bad passphrase or missing key"
 msgstr "ការចុះហត្ថលេខា ឬ"
 
-#: editor/kgpgtextedit.cpp:329
+#: editor/kgpgtextedit.cpp:328
 #, fuzzy
 msgid "Import key in your list"
 msgstr "នាំចូល អ៊ិន្ឈ៍"
 
-#: editor/kgpgtextedit.cpp:332
+#: editor/kgpgtextedit.cpp:331
 #, fuzzy
 msgid "Do &Not Import"
 msgstr "មិន នាំចូល"
 
-#: editor/kgpgtextedit.cpp:333
+#: editor/kgpgtextedit.cpp:332
 #, fuzzy
 msgid "Will not import this key in your list"
 msgstr "អ៊ិន្ឈ៍"
 
-#: editor/kgpgtextedit.cpp:335
+#: editor/kgpgtextedit.cpp:334
 #, fuzzy
 msgid "Missing Key"
 msgstr "បាត់ គ្រាប់​ចុច"
@@ -4266,6 +4267,19 @@ msgstr "<b> កំពុង​តភ្ជាប់ ដល់ ម៉ាស៊ី
 #, fuzzy
 msgid "Requesting Passphrase"
 msgstr "ផ្លាស់​ប្តូរ."
+
+#: transactions/kgpgverify.cpp:90
+#, kde-format
+msgctxt "first argument is formatted date, second argument is formatted time"
+msgid "The signature was created at %1 %2"
+msgstr ""
+
+#: transactions/kgpgverify.cpp:130 transactions/kgpgverify.cpp:164
+#, fuzzy, kde-format
+msgctxt "Good signature from: NAME <EMAIL>, Key ID: HEXID"
+msgid ""
+"<qt>Good signature from:<br /><b>%1 &lt;%2&gt;</b><br />Key ID: %3<br /></qt>"
+msgstr "<qt> ល្អ ពី<br /><b></b><br /> គ្រាប់​ចុច លេខ​សម្គាល់</qt>"
 
 #, fuzzy
 #~ msgid "GPG groups"
