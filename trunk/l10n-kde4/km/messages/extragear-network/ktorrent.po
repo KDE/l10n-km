@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-13 04:31+0100\n"
+"POT-Creation-Date: 2012-03-25 04:33+0200\n"
 "PO-Revision-Date: 2011-06-24 08:56+0700\n"
 "Last-Translator: Chan Sambathratanak <ratanak@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -673,6 +673,7 @@ msgid "Order"
 msgstr "លំដាប់"
 
 #: ktorrent/tools/queuemanagermodel.cpp:192 ktorrent/view/viewmodel.cpp:489
+#: plugins/downloadorder/downloadorderdialog.cpp:80
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -742,13 +743,7 @@ msgstr "ផ្លាស់ទី torrent ទៅ​កំពូល​លំដា
 
 #. i18n: file: ktorrent/dialogs/torrentcreatordlg.ui:188
 #. i18n: ectx: property (text), widget (KPushButton, m_move_up)
-#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:50
-#. i18n: ectx: property (text), widget (KPushButton, m_move_up)
-#. i18n: file: ktorrent/dialogs/torrentcreatordlg.ui:188
-#. i18n: ectx: property (text), widget (KPushButton, m_move_up)
-#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:50
-#. i18n: ectx: property (text), widget (KPushButton, m_move_up)
-#: ktorrent/tools/queuemanagerwidget.cpp:74 rc.cpp:214 rc.cpp:1640
+#: ktorrent/tools/queuemanagerwidget.cpp:74 rc.cpp:214
 msgid "Move Up"
 msgstr "ផ្លាស់​ទី​ឡើង​លើ​"
 
@@ -758,13 +753,7 @@ msgstr "ផ្លាស់ទី​ torrent ឡើង​ក្នុង​ជួ
 
 #. i18n: file: ktorrent/dialogs/torrentcreatordlg.ui:195
 #. i18n: ectx: property (text), widget (KPushButton, m_move_down)
-#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:57
-#. i18n: ectx: property (text), widget (KPushButton, m_move_down)
-#. i18n: file: ktorrent/dialogs/torrentcreatordlg.ui:195
-#. i18n: ectx: property (text), widget (KPushButton, m_move_down)
-#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:57
-#. i18n: ectx: property (text), widget (KPushButton, m_move_down)
-#: ktorrent/tools/queuemanagerwidget.cpp:77 rc.cpp:217 rc.cpp:1643
+#: ktorrent/tools/queuemanagerwidget.cpp:77 rc.cpp:217
 msgid "Move Down"
 msgstr "ផ្លាស់​ទី​ចុះ​ក្រោម"
 
@@ -2324,17 +2313,29 @@ msgstr " (បាន​បិទ​កម្មវិធី​រៀបចំ​�
 msgid "Current schedule:"
 msgstr "តារាង​កំណត់​បច្ចុប្បន្ន"
 
-#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:13
+#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:14
 #. i18n: ectx: property (windowTitle), widget (QWidget, DownloadOrderWidget)
-#: plugins/downloadorder/downloadorderdialog.cpp:38
+#: plugins/downloadorder/downloadorderdialog.cpp:39
 #: plugins/downloadorder/downloadorderplugin.cpp:46 rc.cpp:1625
 msgid "File Download Order"
 msgstr "លំដាប់​ទាញយក​ឯកសារ"
 
-#: plugins/downloadorder/downloadorderdialog.cpp:39
+#: plugins/downloadorder/downloadorderdialog.cpp:40
 #, kde-format
 msgid "File download order for <b>%1</b>:"
 msgstr "លំដាប់​ទាញ​យ​ក​ឯកសារសម្រាប់ <b>%1</b> ៖"
+
+#: plugins/downloadorder/downloadorderdialog.cpp:81
+#, fuzzy
+#| msgid "Seasons && Episodes"
+msgid "Seasons and Epsiodes"
+msgstr "រដូវ និង​ភាគ"
+
+#: plugins/downloadorder/downloadorderdialog.cpp:82
+#, fuzzy
+#| msgid "Add Trackers"
+msgid "Album Track Order"
+msgstr "បន្ថែម​កម្មវិធី​តាមដាន"
 
 #: plugins/infowidget/availabilitychunkbar.cpp:33
 msgid ""
@@ -7688,27 +7689,41 @@ msgstr "ដែន​កំណត់​ការ​តភ្ជាប់"
 msgid "Set connection limits"
 msgstr "កំណត់​ដែន​កំណត់​ការ​តភ្ជាប់"
 
-#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:22
+#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:20
 #. i18n: ectx: property (text), widget (QLabel, m_top_label)
 #: rc.cpp:1628
 msgid "File download order for:"
 msgstr "លំដាប់​ទាញ​យក​ឯកសារ​សម្រាប់ ៖"
 
-#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:29
+#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:27
 #. i18n: ectx: property (toolTip), widget (QCheckBox, m_custom_order_enabled)
 #: rc.cpp:1631
 msgid "Whether or not to enable a custom download order."
 msgstr "ថាតើ​ត្រូវ​បើក​ឬ​ក៏​បិទ​លំដាប់ទាញ​យក​ផ្ទាល់ខ្លួន ។"
 
-#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:32
+#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:30
 #. i18n: ectx: property (text), widget (QCheckBox, m_custom_order_enabled)
 #: rc.cpp:1634
 msgid "Custom file download order enabled"
 msgstr "បានបើក​លំដាប់​ទាញយក​ឯកសារ​ផ្ទាល់ខ្លួន"
 
-#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:41
-#. i18n: ectx: property (toolTip), widget (QListView, m_order)
+#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:42
+#. i18n: ectx: property (text), widget (QToolButton, m_sort_by)
 #: rc.cpp:1637
+msgid "Sort By"
+msgstr ""
+
+#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:52
+#. i18n: ectx: property (placeholderText), widget (KLineEdit, m_search_files)
+#: rc.cpp:1640
+#, fuzzy
+#| msgid "Search media files"
+msgid "Search files"
+msgstr "ស្វែងរក​ឯកសារ​មេឌៀ"
+
+#. i18n: file: plugins/downloadorder/downloadorderwidget.ui:66
+#. i18n: ectx: property (toolTip), widget (QListView, m_order)
+#: rc.cpp:1643
 msgid ""
 "Order in which to download the files of a torrent. The file at the top will "
 "be downloaded first, followed by the second, then the third ..."
