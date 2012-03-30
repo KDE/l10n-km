@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-29 02:52+0200\n"
+"POT-Creation-Date: 2012-03-30 03:08+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1339,7 +1339,7 @@ msgstr "បង្កើត​ស្រទាប់ HDR"
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:507
+#: rc.cpp:80 ui/kis_view2.cpp:505
 msgid "Cancel"
 msgstr "បោះបង់​"
 
@@ -3425,6 +3425,7 @@ msgstr "ចំណុច​ច្រើន"
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbFill)
 #: rc.cpp:977 rc.cpp:3308 rc.cpp:4130
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:61
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:118
 msgid "Pattern"
 msgstr "លំនាំ"
 
@@ -4012,7 +4013,7 @@ msgstr "W ៖ 88% V ៖ 888 PC ៖ 88%"
 #. i18n: file: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgRotateImage)
 #: rc.cpp:1275 plugins/extensions/rotateimage/dlg_rotateimage.cc:31
-#: plugins/extensions/rotateimage/rotateimage.cc:117
+#: plugins/extensions/rotateimage/rotateimage.cc:115
 msgid "Rotate Image"
 msgstr "បង្វិល​រូបភាព"
 
@@ -4225,7 +4226,7 @@ msgstr "បង្ហាញ​ជា​ពណ៌ មិនមែន​ជាម�
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
 #: rc.cpp:1371 image/kis_image.cc:690
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
-#: plugins/extensions/shearimage/shearimage.cc:90
+#: plugins/extensions/shearimage/shearimage.cc:88
 msgid "Shear Image"
 msgstr "កាត់​រូបភាព​"
 
@@ -4641,7 +4642,7 @@ msgstr "កាំ​បញ្ឈរ ៖"
 
 #. i18n: file: plugins/filters/blur/wdgblur.ui:65
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:1527
+#: rc.cpp:1527 plugins/paintops/libpaintop/kis_texture_option.cpp:84
 msgid "Strength:"
 msgstr "កម្លាំង ៖"
 
@@ -6578,6 +6579,7 @@ msgstr "ធ្វើ​តាម​ទស្សន៍​ទ្រនិច"
 #. i18n: file: plugins/paintops/spray/wdgshapeoptions.ui:221
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:2516 rc.cpp:3112
+#: plugins/paintops/libpaintop/kis_paintop_option.cpp:36
 msgid "Texture"
 msgstr "វាយន​ភាព"
 
@@ -10250,7 +10252,7 @@ msgstr "ប្តូរ​ទំហំ​រូបភាព"
 msgid "Crop Node"
 msgstr "​ច្រឹប​រូបភាព"
 
-#: image/kis_image.cc:617 plugins/extensions/rotateimage/rotateimage.cc:151
+#: image/kis_image.cc:617 plugins/extensions/rotateimage/rotateimage.cc:149
 msgid "Rotate Layer"
 msgstr "បង្វិល​ស្រទាប់"
 
@@ -10504,10 +10506,6 @@ msgstr "ខ្លី"
 msgid "Float32 Histogram"
 msgstr "អ៊ីស្តូក្រាម"
 
-#: plugins/extensions/backgrounds/backgrounds.cpp:51
-msgid "Select Image Background..."
-msgstr "ជ្រើស​ផ្ទៃ​ខាងក្រោយ​រូបភាព..."
-
 #: plugins/extensions/backgrounds/dlg_backgrounds.cpp:35
 msgid "Select a Background"
 msgstr "ជ្រើស​ផ្ទៃ​ខាងក្រោយ​"
@@ -10523,6 +10521,10 @@ msgstr "យក​ផ្ទៃ​ខាងក្រោយ​ដែល​បាន
 #: plugins/extensions/backgrounds/wdg_backgrounds.cpp:76
 msgid "Reset to default"
 msgstr "កំណត់​ទៅលំនាំដើម​ឡើង​វិញ"
+
+#: plugins/extensions/backgrounds/backgrounds.cpp:49
+msgid "Select Image Background..."
+msgstr "ជ្រើស​ផ្ទៃ​ខាងក្រោយ​រូបភាព..."
 
 #: plugins/extensions/bigbrother/actionseditor/kis_actions_editor.cpp:105
 msgid "Failed to create an action."
@@ -10544,74 +10546,74 @@ msgstr "រក្សាទុក​ម៉ាក្រូ​"
 msgid "Discard changes"
 msgstr "បោះបង់​កា​រផ្លាស់ប្ដូរ​"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:87
+#: plugins/extensions/bigbrother/bigbrother.cc:85
 msgid "Open and play..."
 msgstr "បើក និង​ចាក់..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:91
+#: plugins/extensions/bigbrother/bigbrother.cc:89
 msgid "Open and edit..."
 msgstr "បើក​ ហើយ​កែសម្រួល..."
 
-#: plugins/extensions/bigbrother/bigbrother.cc:95
+#: plugins/extensions/bigbrother/bigbrother.cc:93
 msgid "Save all actions"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ការ​ជ្រើស"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:99
+#: plugins/extensions/bigbrother/bigbrother.cc:97
 msgid "Start recording macro"
 msgstr "ចាប់ផ្ដើម​ថត​ម៉ាក្រូ"
 
-#: plugins/extensions/bigbrother/bigbrother.cc:103
+#: plugins/extensions/bigbrother/bigbrother.cc:101
 msgid "Stop recording actions"
 msgstr "បញ្ឈប់​សកម្មភាព​ថត"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:85
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:83
 msgid "HDR Layer from bracketing"
 msgstr "ស្រទាប់​របស់ HDR ពី​ការ​ដាក់​វង់ក្រចក"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:180
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:374
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:178
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:372
 msgid "HDR colorspace RGBAF32 not found, please check your installation."
 msgstr "មិនមាន​ចន្លោះពណ៌ %0 សូម​ពិនិត្យ​មើល​ការ​ដំឡើង​របស់​អ្នក ។"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:180
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:178
 msgid "Layer Creation Error"
 msgstr "កំហុស​ស្រទាប់​"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:183
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:181
 #: plugins/formats/exr/exr_converter.cc:313
 msgid "HDR Layer"
 msgstr "ស្រទាប់"
 
-#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:374
+#: plugins/extensions/bracketing2hdr/bracketing2hdr.cc:372
 msgid "Compute Camera Response Error"
 msgstr "គណនា​កំហុស​ឆ្លើយ​តប​របស់​ម៉ាស៊ីនថត"
 
-#: plugins/extensions/colorrange/colorrange.cc:66
+#: plugins/extensions/colorrange/colorrange.cc:64
 msgid "Select from Color Range..."
 msgstr "ជ្រើស​​ពី​ជួរ​ពណ៌..."
 
-#: plugins/extensions/colorrange/colorrange.cc:71
-#: plugins/extensions/colorrange/colorrange.cc:103
+#: plugins/extensions/colorrange/colorrange.cc:69
+#: plugins/extensions/colorrange/colorrange.cc:101
 msgid "Select Opaque"
 msgstr "ជ្រើស​ស្រអាប់"
 
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:78
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:75
 msgid "&Convert Image Type..."
 msgstr "បម្លែង​ប្រភេទ​រូបភាព​..."
 
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:81
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:78
 msgid "&Convert Layer Type..."
 msgstr "បម្លែង​ប្រភេទ​រួបភាព​..."
 
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:102
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:99
 msgid "Convert All Layers From "
 msgstr "បម្លែង​ស្រទាប់​ទាំងអស់​ពី "
 
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:127
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:124
 msgid "Convert Current Layer From"
 msgstr "បម្លែង​ស្រទាប់​បច្ចុប្បន្ន​ពី "
 
-#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:135
+#: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:132
 msgid "Convert Layer Type"
 msgstr "បម្លែង​ប្រភេទ​ស្រទាប់"
 
@@ -10619,11 +10621,11 @@ msgstr "បម្លែង​ប្រភេទ​ស្រទាប់"
 msgid "compose Layer"
 msgstr "ស្រទាប់​តែង"
 
-#: plugins/extensions/compose/kis_layer_compose_plugin.cpp:51
+#: plugins/extensions/compose/kis_layer_compose_plugin.cpp:49
 msgid "Compose Layer..."
 msgstr "ស្រទាប់​តែង..."
 
-#: plugins/extensions/compose/kis_layer_compose_plugin.cpp:68
+#: plugins/extensions/compose/kis_layer_compose_plugin.cpp:66
 msgid "Compose Layer"
 msgstr "ស្រទាប់​តែង"
 
@@ -10863,7 +10865,7 @@ msgstr "រក្សា​ទុក​ទៅ​ក្តារលាយ​ពណ
 
 #: plugins/extensions/dropshadow/dlg_dropshadow.cc:42
 #: plugins/extensions/dropshadow/kis_dropshadow.cc:130
-#: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:83
+#: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:80
 msgid "Drop Shadow"
 msgstr "ទម្លាក់​ស្រមោល"
 
@@ -10871,7 +10873,7 @@ msgstr "ទម្លាក់​ស្រមោល"
 msgid "Add Drop Shadow"
 msgstr "បន្ថែម​ស្រមោល​ទម្លាក់"
 
-#: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:60
+#: plugins/extensions/dropshadow/kis_dropshadow_plugin.cc:57
 msgid "Add Drop Shadow..."
 msgstr "បន្ថែម​ស្រមោល​ទម្លាក់..."
 
@@ -10900,10 +10902,6 @@ msgstr "បាន​ព័ត៌មាន​នៅ​ក្នុង 'manifest.x
 msgid "Continue"
 msgstr "បន្ត"
 
-#: plugins/extensions/extensionsmanager/ExtensionsManagerPlugin.cc:50
-msgid "Extensions manager..."
-msgstr "កម្មវិធី​គ្រប់គ្រង​ផ្នែក​បន្ថែម..."
-
 #: plugins/extensions/extensionsmanager/ExtensionsManagerWindow.cpp:43
 msgid ""
 "The installation was successful, you will need to restart Krita to use the "
@@ -10914,37 +10912,41 @@ msgstr "ការ​ដំឡើង​ជោគជ័យ​ហើយ អ្ន�
 msgid "Success"
 msgstr "ជោគជ័យ"
 
-#: plugins/extensions/histogram/histogram.cc:67
-msgid "&Histogram..."
-msgstr "អ៊ីស្តូក្រាម"
+#: plugins/extensions/extensionsmanager/ExtensionsManagerPlugin.cc:47
+msgid "Extensions manager..."
+msgstr "កម្មវិធី​គ្រប់គ្រង​ផ្នែក​បន្ថែម..."
 
 #: plugins/extensions/histogram/dlg_histogram.cc:46
 #: plugins/extensions/histogram/dlg_histogram.cc:53
 msgid "Histogram"
 msgstr "អ៊ីស្តូក្រាម"
 
-#: plugins/extensions/imagesize/imagesize.cc:77
+#: plugins/extensions/histogram/histogram.cc:64
+msgid "&Histogram..."
+msgstr "អ៊ីស្តូក្រាម"
+
+#: plugins/extensions/imagesize/imagesize.cc:75
 msgid "Scale To New Size..."
 msgstr "រក្សា​ទុក​ស្រទាប់​ជា​រូបភាព..."
 
-#: plugins/extensions/imagesize/imagesize.cc:81
+#: plugins/extensions/imagesize/imagesize.cc:79
 msgid "Size Canvas..."
 msgstr "ខ្សែកោង​ទំហំ..."
 
-#: plugins/extensions/imagesize/imagesize.cc:85
+#: plugins/extensions/imagesize/imagesize.cc:83
 msgid "Scale &Layer..."
 msgstr "​មាត្រដ្ឋាន​ស្រទាប់​..."
 
-#: plugins/extensions/imagesize/imagesize.cc:91
+#: plugins/extensions/imagesize/imagesize.cc:89
 msgid "&Scale..."
 msgstr "មាត្រដ្ឋាន..."
 
-#: plugins/extensions/imagesize/imagesize.cc:160
+#: plugins/extensions/imagesize/imagesize.cc:158
 msgid "Layer Size"
 msgstr "ទំហំ​ស្រទាប់​"
 
-#: plugins/extensions/imagesize/imagesize.cc:199
-#: plugins/extensions/imagesize/imagesize.cc:213
+#: plugins/extensions/imagesize/imagesize.cc:197
+#: plugins/extensions/imagesize/imagesize.cc:211
 msgid "Scale Selection"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ការ​ជ្រើស"
 
@@ -10952,11 +10954,11 @@ msgstr "ធ្វើ​មាត្រដ្ឋាន​ការ​ជ្រើ
 msgid "Image Split"
 msgstr "ពុះរូបភាព"
 
-#: plugins/extensions/imagesplit/imagesplit.cpp:60
+#: plugins/extensions/imagesplit/imagesplit.cpp:59
 msgid "Image Split "
 msgstr "ពុះ​រូបភាព​"
 
-#: plugins/extensions/imagesplit/imagesplit.cpp:145
+#: plugins/extensions/imagesplit/imagesplit.cpp:144
 msgid "Save Image on Split"
 msgstr "រក្សាទុក​រូបភាព​លើ​ពុះ"
 
@@ -11010,51 +11012,51 @@ msgstr "សនិ​ទាន"
 msgid "Key"
 msgstr "គ្រាប់ចុច"
 
-#: plugins/extensions/metadataeditor/metadataeditor.cc:63
-msgid "&Edit metadata..."
-msgstr "កែ​សម្រួល​ទិន្នន័យ​មេតា..."
-
 #: plugins/extensions/metadataeditor/kis_meta_data_editor.cc:141
 msgid "List"
 msgstr "បញ្ជី"
 
+#: plugins/extensions/metadataeditor/metadataeditor.cc:61
+msgid "&Edit metadata..."
+msgstr "កែ​សម្រួល​ទិន្នន័យ​មេតា..."
+
 #: plugins/extensions/modify_selection/dlg_border_selection.cc:31
-#: plugins/extensions/modify_selection/modify_selection.cc:176
+#: plugins/extensions/modify_selection/modify_selection.cc:174
 #: ui/kis_selection_manager_p.h:237
 msgid "Border Selection"
 msgstr "ការ​ជ្រើស​ស៊ុម"
 
 #: plugins/extensions/modify_selection/dlg_feather_selection.cc:32
-#: plugins/extensions/modify_selection/modify_selection.cc:199
+#: plugins/extensions/modify_selection/modify_selection.cc:197
 #: ui/kis_selection_manager_p.h:458
 msgid "Feather Selection"
 msgstr "ការជ្រើស​សណ្ឋាន​ពិសេស"
 
 #: plugins/extensions/modify_selection/dlg_grow_selection.cc:30
-#: plugins/extensions/modify_selection/modify_selection.cc:128
+#: plugins/extensions/modify_selection/modify_selection.cc:126
 #: ui/kis_selection_manager_p.h:507
 msgid "Grow Selection"
 msgstr "បង្កើន​ការ​ជ្រើស​រើស"
 
 #: plugins/extensions/modify_selection/dlg_shrink_selection.cc:30
-#: plugins/extensions/modify_selection/modify_selection.cc:151
+#: plugins/extensions/modify_selection/modify_selection.cc:149
 #: ui/kis_selection_manager_p.h:636
 msgid "Shrink Selection"
 msgstr "បង្រួញ​ជម្រើស​"
 
-#: plugins/extensions/modify_selection/modify_selection.cc:72
+#: plugins/extensions/modify_selection/modify_selection.cc:70
 msgid "Grow Selection..."
 msgstr "បង្កើន​ការ​ជ្រើស..."
 
-#: plugins/extensions/modify_selection/modify_selection.cc:75
+#: plugins/extensions/modify_selection/modify_selection.cc:73
 msgid "Shrink Selection..."
 msgstr "បង្រួញ​ការ​ជ្រើស..."
 
-#: plugins/extensions/modify_selection/modify_selection.cc:78
+#: plugins/extensions/modify_selection/modify_selection.cc:76
 msgid "Border Selection..."
 msgstr "ការ​ជ្រើស​ស៊ុម..."
 
-#: plugins/extensions/modify_selection/modify_selection.cc:81
+#: plugins/extensions/modify_selection/modify_selection.cc:79
 msgid "Feather Selection..."
 msgstr "ការ​ជ្រើស​សណ្ឋាន​ពិសេស..."
 
@@ -11088,11 +11090,11 @@ msgstr "ម៉ាស៊ីន KS%1"
 msgid "Painterly Color Mixer"
 msgstr "ឧបករណ៍​លាយ​ពណ៌​តាម​កម្មវិធីគូរ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:67
+#: plugins/extensions/rotateimage/rotateimage.cc:65
 msgid "&Rotate Image..."
 msgstr "បង្វិល​រូបភាព..."
 
-#: plugins/extensions/rotateimage/rotateimage.cc:71
+#: plugins/extensions/rotateimage/rotateimage.cc:69
 #, fuzzy
 #| msgctxt "rotate image 90 degrees to the right"
 #| msgid "Rotate Image of 90° to the Right"
@@ -11100,7 +11102,7 @@ msgctxt "rotate image 90 degrees to the right"
 msgid "Rotate Image 90° to the Right"
 msgstr "បង្វិល​រូបភាព​ត្រឹម​ ៩០ ដឺក្រេ​ ទៅ​ស្តាំ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:75
+#: plugins/extensions/rotateimage/rotateimage.cc:73
 #, fuzzy
 #| msgctxt "rotate image 180 degrees to the right"
 #| msgid "Rotate Image of 180°"
@@ -11108,7 +11110,7 @@ msgctxt "rotate image 180 degrees to the right"
 msgid "Rotate Image 180°"
 msgstr "បង្វិល​រូបភាព​ត្រឹម​ ១៨០ ដឺក្រេ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:79
+#: plugins/extensions/rotateimage/rotateimage.cc:77
 #, fuzzy
 #| msgctxt "rotate image 90 degrees to the left"
 #| msgid "Rotate Image of 90° to the Left"
@@ -11116,11 +11118,11 @@ msgctxt "rotate image 90 degrees to the left"
 msgid "Rotate Image 90° to the Left"
 msgstr "បង្វិល​រូបភាព​ត្រឹម​ ៩០ ដឺក្រេ​ទៅ​ឆ្វេង"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:83
+#: plugins/extensions/rotateimage/rotateimage.cc:81
 msgid "&Rotate Layer..."
 msgstr "បង្វិល ស្រទាប់..."
 
-#: plugins/extensions/rotateimage/rotateimage.cc:87
+#: plugins/extensions/rotateimage/rotateimage.cc:85
 #, fuzzy
 #| msgctxt "rotate the layer 180 degrees"
 #| msgid "Rotate Layer of 180°"
@@ -11128,7 +11130,7 @@ msgctxt "rotate the layer 180 degrees"
 msgid "Rotate Layer 180°"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ១៨០ ដឺក្រេ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:91
+#: plugins/extensions/rotateimage/rotateimage.cc:89
 #, fuzzy
 #| msgctxt "rotate the layer 90 degrees to the right"
 #| msgid "Rotate Layer of 90° to the Right"
@@ -11136,7 +11138,7 @@ msgctxt "rotate the layer 90 degrees to the right"
 msgid "Rotate Layer 90° to the Right"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ៩០ ដឺក្រេ​ទៅ​ស្តាំ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:95
+#: plugins/extensions/rotateimage/rotateimage.cc:93
 #, fuzzy
 #| msgctxt "rotate the layer 90 degrees to the left"
 #| msgid "Rotate Layer of 90° to the Left"
@@ -11183,15 +11185,15 @@ msgstr "ColorSpace %1 %2 មិន​អាច​ប្រើបានទេ ស
 msgid "Index out of bound"
 msgstr "លិបិក្រម​ក្រៅ​ព្រំដែន"
 
-#: plugins/extensions/scripting/scriptingpart.cpp:138
+#: plugins/extensions/scripting/scriptingpart.cpp:136
 #, kde-format
 msgid "&Show %1"
 msgstr "បង្ហាញ %1"
 
 #: plugins/extensions/separate_channels/dlg_separate.cc:40
 #: plugins/extensions/separate_channels/kis_channel_separator.cc:211
-#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:86
-#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:97
+#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:84
+#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:95
 msgid "Separate Image"
 msgstr "បំបែក​រូបភាព"
 
@@ -11200,19 +11202,19 @@ msgstr "បំបែក​រូបភាព"
 msgid "Export Layer"
 msgstr "នាំ​ស្រទាប់​ចេញ"
 
-#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:61
+#: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:59
 msgid "Separate Image..."
 msgstr "បំបែក​រូបភាព​..."
 
-#: plugins/extensions/shearimage/shearimage.cc:64
+#: plugins/extensions/shearimage/shearimage.cc:62
 msgid "&Shear Image..."
 msgstr "កាត់​រូបភាព​..."
 
-#: plugins/extensions/shearimage/shearimage.cc:68
+#: plugins/extensions/shearimage/shearimage.cc:66
 msgid "&Shear Layer..."
 msgstr "កាត់​ស្រទាប់..."
 
-#: plugins/extensions/shearimage/shearimage.cc:109
+#: plugins/extensions/shearimage/shearimage.cc:107
 msgid "Shear Layer"
 msgstr "កាត់​ស្រទាប់"
 
@@ -11241,7 +11243,7 @@ msgstr "Reinhard 05"
 msgid "Trilateral"
 msgstr "តម្រង"
 
-#: plugins/extensions/tonemapping/tonemapping.cc:53
+#: plugins/extensions/tonemapping/tonemapping.cc:51
 msgid "Tonemapping..."
 msgstr "កំពុងផ្គូផ្គង​សំឡេង..."
 
@@ -11766,13 +11768,13 @@ msgstr "ច្បាប់​ចម្លង"
 msgid "Painting Mode"
 msgstr "របៀប​គូរ​"
 
-#: plugins/paintops/deform/kis_deform_option.cpp:34
-msgid "Deform Options"
-msgstr "ជម្រើសបង្ខូច​ទ្រង់​ទ្រាយ​"
-
 #: plugins/paintops/deform/kis_deform_paintop_factory.h:45
 msgid "Deform brush"
 msgstr "ជក់​​បង្ខូច​ទ្រង់ទ្រាយ"
+
+#: plugins/paintops/deform/kis_deform_option.cpp:34
+msgid "Deform Options"
+msgstr "ជម្រើសបង្ខូច​ទ្រង់​ទ្រាយ​"
 
 #: plugins/paintops/dynadraw/dyna_paintop_plugin.cpp:41
 msgid "Dyna brush"
@@ -11956,7 +11958,7 @@ msgstr "ធ្វើ​ឲ្យ​ងងឹត​"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:31
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:203
-#: ui/kis_paintop_box.cc:202
+#: ui/kis_paintop_box.cc:207
 msgid "Mirror"
 msgstr "ឆ្លុះ"
 
@@ -12095,6 +12097,60 @@ msgstr "ឆ្ងាយ"
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensors.cc:92
 msgid "Near"
 msgstr "ជិត"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:70
+#, fuzzy
+#| msgid "Scale: "
+msgid "Scale:"
+msgstr "មាត្រដ្ឋាន ៖"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:74
+#, fuzzy
+#| msgid "Horizontal:"
+msgid "Horizontal Offset:"
+msgstr "ផ្ដេក ៖​"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:78
+#, fuzzy
+#| msgid "Vertical:"
+msgid "Vertical Offset:"
+msgstr "បញ្ឈរ ៖"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:89
+msgid "Disregard Cutoff"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:89
+#, fuzzy
+#| msgid "Mask Source"
+msgid "Mask Out"
+msgstr "ប្រភព​របាំង"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:89
+#, fuzzy
+#| msgid "use as &Pattern"
+msgid "Disregard Pattern"
+msgstr "ប្រើ​ជា​លំនាំ​"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:91
+msgid "Cutoff Policy"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:97
+msgid ""
+"When pattern texture values are outside the range specified by the slider, "
+"the cut-off policy will be applied."
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:99
+msgid "Cutoff"
+msgstr ""
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:103
+#, fuzzy
+#| msgid "Texture"
+msgid "Invert Texture:"
+msgstr "វាយន​ភាព"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:81
 msgid ""
@@ -12718,7 +12774,7 @@ msgstr "ជក់​បាញ់"
 msgid "WateryMix options"
 msgstr "ជម្រើស WateryMix"
 
-#: plugins/paintops/waterymixbrush/waterymix_paintop_plugin.cpp:46
+#: plugins/paintops/waterymixbrush/waterymix_paintop_plugin.cpp:44
 #, fuzzy
 #| msgid "Hairy brush"
 msgid "Watery Mixbrush"
@@ -13379,7 +13435,6 @@ msgstr ""
 " តើ​អ្នក​ពិត​ជា​ចង់​បើក​ OpenGL ឬ​?\n"
 
 #: ui/dialogs/kis_dlg_preferences.cc:712 ui/kis_aboutdata.h:31
-#: ui/kis_clipboard.cc:155
 msgid "Krita"
 msgstr "កម្មវិធី​ krita "
 
@@ -13615,15 +13670,6 @@ msgstr ""
 #, kde-format
 msgid "New configuration %1"
 msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ថ្មី %1"
-
-#: ui/kis_clipboard.cc:153
-#, fuzzy
-msgid ""
-"You are putting more than 10 megapixels on the clipboard. Do you want to "
-"make this data available to other applications as well?"
-msgstr ""
-"អ្នក​កំពុង​ដាក់​ច្រើន​ជាង​ ១០​ មីកា​ភីកសែល​លើ​ក្ដារ​តម្បៀត​ខ្ទាស់ ។ ​តើ​អ្នក​ចង់​បង្កើត​ទិន្នន័យ​នេះ​មាន​​ទៅកាន់​"
-"កម្មវិធី​ផ្សេង​ទៀត​​ដែរ​ឬ​ទេ ?"
 
 #: ui/kis_clipboard.cc:268
 msgid "Pasting data from simple source"
@@ -13956,39 +14002,39 @@ msgstr "យឺត​"
 msgid "Mode: "
 msgstr "របៀប​ ៖ "
 
-#: ui/kis_paintop_box.cc:161
+#: ui/kis_paintop_box.cc:164
 msgid "Save to Palette"
 msgstr "រក្សា​ទុក​ទៅ​ក្តារលាយ​ពណ៌"
 
-#: ui/kis_paintop_box.cc:164
+#: ui/kis_paintop_box.cc:169
 msgid "Choose workspace"
 msgstr "ជ្រើស​តំបន់​ធ្វើ​ការ​"
 
-#: ui/kis_paintop_box.cc:185
+#: ui/kis_paintop_box.cc:190
 #, fuzzy
 #| msgid "Brush size"
 msgid "Brush composite"
 msgstr "ទំហំ​ជក់"
 
-#: ui/kis_paintop_box.cc:189
+#: ui/kis_paintop_box.cc:194
 #, fuzzy
 #| msgid "Bristle options"
 msgid "Brush option slider 1"
 msgstr "ជម្រើស​សរសៃ"
 
-#: ui/kis_paintop_box.cc:193
+#: ui/kis_paintop_box.cc:198
 #, fuzzy
 #| msgid "Bristle options"
 msgid "Brush option slider 2"
 msgstr "ជម្រើស​សរសៃ"
 
-#: ui/kis_paintop_box.cc:206
+#: ui/kis_paintop_box.cc:211
 #, fuzzy
 #| msgid "Add to palette:"
 msgid "Add to palette"
 msgstr "បន្ថែម​ទៅ​ក្ដារ​លាយ ៖"
 
-#: ui/kis_paintop_box.cc:210
+#: ui/kis_paintop_box.cc:215
 #, fuzzy
 #| msgid "Workspace"
 msgid "Workspaces"
@@ -14145,109 +14191,109 @@ msgstr "គ្មាន​ជម្រើស"
 msgid "No profile"
 msgstr "គ្មាន​ទម្រង់​"
 
-#: ui/kis_view2.cpp:272
+#: ui/kis_view2.cpp:270
 #, fuzzy
 #| msgid "Incremental"
 msgid "Save Incremental &Version"
 msgstr "បង្កើន​"
 
-#: ui/kis_view2.cpp:277
+#: ui/kis_view2.cpp:275
 #, fuzzy
 #| msgid "Incremental"
 msgid "Save Incremental Backup"
 msgstr "បង្កើន​"
 
-#: ui/kis_view2.cpp:289
+#: ui/kis_view2.cpp:287
 msgid "Total Refresh"
 msgstr "ធ្វើ​ឲ្យ​ស្រស់​សរុប"
 
-#: ui/kis_view2.cpp:294
+#: ui/kis_view2.cpp:292
 msgid "&Create Template From Image..."
 msgstr "បង្វិល​រូបភាព..."
 
-#: ui/kis_view2.cpp:298
+#: ui/kis_view2.cpp:296
 msgid "Load Tutorial"
 msgstr "ផ្ទុក​មេរៀន"
 
-#: ui/kis_view2.cpp:302
+#: ui/kis_view2.cpp:300
 msgid "Mirror Image"
 msgstr "រូប​ភាព​ឆ្លុះ"
 
-#: ui/kis_view2.cpp:308
+#: ui/kis_view2.cpp:306
 msgid "Rotate Canvas Right"
 msgstr "បង្វើល​ផ្ទាំង​គំនូរ​ទៅ​ស្ដាំ​​"
 
-#: ui/kis_view2.cpp:313
+#: ui/kis_view2.cpp:311
 msgid "Rotate Canvas Left"
 msgstr "បង្វើល​ផ្ទាំង​គំនូរ​ទៅ​ឆ្វេង​"
 
-#: ui/kis_view2.cpp:318
+#: ui/kis_view2.cpp:316
 msgid "Reset Canvas Transformations"
 msgstr "កំណត់​ការ​ប្លែង​ផ្ទាំង​​គំនូរឡើងវិញ​"
 
-#: ui/kis_view2.cpp:323
+#: ui/kis_view2.cpp:321
 #, fuzzy
 #| msgid "Show root layer"
 msgid "Show Status Bar"
 msgstr "បង្ហាញ​ស្រទាប់ root"
 
-#: ui/kis_view2.cpp:324
+#: ui/kis_view2.cpp:322
 msgid "Hide Status Bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:326
+#: ui/kis_view2.cpp:324
 msgid "Shows or hides the status bar"
 msgstr ""
 
-#: ui/kis_view2.cpp:330
+#: ui/kis_view2.cpp:328
 #, fuzzy
 #| msgid "Canvas color:"
 msgid "Show Canvas Only"
 msgstr "ពណ៌​ផ្ទាំង​កំណាត់ ៖"
 
-#: ui/kis_view2.cpp:331
+#: ui/kis_view2.cpp:329
 msgid "Return to Window"
 msgstr ""
 
-#: ui/kis_view2.cpp:332
+#: ui/kis_view2.cpp:330
 msgid "Shows just the canvas or the whole window"
 msgstr ""
 
-#: ui/kis_view2.cpp:461
+#: ui/kis_view2.cpp:459
 #, fuzzy
 #| msgid "&Paint Layer"
 msgid "Pasted Layer"
 msgstr "ស្រទាប់​គូរ"
 
-#: ui/kis_view2.cpp:499
+#: ui/kis_view2.cpp:497
 msgid "Insert as New Layer"
 msgstr "បញ្ចូល​ជា​ស្រទាប់​ថ្មី"
 
-#: ui/kis_view2.cpp:500
+#: ui/kis_view2.cpp:498
 msgid "Insert as New Layers"
 msgstr "បញ្ចូល​ជា​ស្រទាប់​ថ្មី"
 
-#: ui/kis_view2.cpp:502
+#: ui/kis_view2.cpp:500
 msgid "Open in New Document"
 msgstr "បើក​នៅ​ក្នុង​ឯកសារ​ថ្មី"
 
-#: ui/kis_view2.cpp:503
+#: ui/kis_view2.cpp:501
 msgid "Open in New Documents"
 msgstr "បើក​នៅ​ក្នុង​ឯកសារ​ថ្មី"
 
-#: ui/kis_view2.cpp:505
+#: ui/kis_view2.cpp:503
 msgid "Replace Current Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:723
+#: ui/kis_view2.cpp:721
 msgid "Edit Palette..."
 msgstr "កែសម្រួល​ក្តារលាយ​..."
 
-#: ui/kis_view2.cpp:728
+#: ui/kis_view2.cpp:726
 msgid "&Themes"
 msgstr ""
 
-#: ui/kis_view2.cpp:859 ui/kis_view2.cpp:862
+#: ui/kis_view2.cpp:857 ui/kis_view2.cpp:860
 msgid "Edit Palette"
 msgstr "កែសម្រួល​ក្ដារលាយ"
 
@@ -14374,7 +14420,7 @@ msgstr "យក​ចម្រៀក​ចេញ"
 msgid "Choose meta data merge strategy"
 msgstr "ជ្រើស​យុទ្ធសាស្ត្រ​បញ្ជូន​ទិន្នន័យ​មេតា​ចូល​គ្នា"
 
-#: ui/widgets/kis_multipliers_double_slider_spinbox.cpp:60
+#: ui/widgets/kis_multipliers_double_slider_spinbox.cpp:62
 #, kde-format
 msgid "x%1"
 msgstr "x%1"
@@ -14454,6 +14500,14 @@ msgstr ""
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "ឯកសារ ឬ URL ដែលត្រូវ់​បើក​"
+
+#, fuzzy
+#~ msgid ""
+#~ "You are putting more than 10 megapixels on the clipboard. Do you want to "
+#~ "make this data available to other applications as well?"
+#~ msgstr ""
+#~ "អ្នក​កំពុង​ដាក់​ច្រើន​ជាង​ ១០​ មីកា​ភីកសែល​លើ​ក្ដារ​តម្បៀត​ខ្ទាស់ ។ ​តើ​អ្នក​ចង់​បង្កើត​ទិន្នន័យ​នេះ​មាន​​ទៅកាន់​"
+#~ "កម្មវិធី​ផ្សេង​ទៀត​​ដែរ​ឬ​ទេ ?"
 
 #~ msgid "Tool Options"
 #~ msgstr "ជម្រើស​ឧបករណ៍"
