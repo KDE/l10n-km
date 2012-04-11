@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-06 02:46+0200\n"
+"POT-Creation-Date: 2012-04-11 02:34+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1339,7 +1339,7 @@ msgstr "បង្កើត​ស្រទាប់ HDR"
 
 #. i18n: file: plugins/extensions/bracketing2hdr/wdgbracketing2hdr.ui:162
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonCancel)
-#: rc.cpp:80 ui/kis_view2.cpp:519
+#: rc.cpp:80 ui/kis_view2.cpp:521
 msgid "Cancel"
 msgstr "បោះបង់​"
 
@@ -10795,9 +10795,13 @@ msgstr "ប្រវត្តិ​មិន​ធ្វើ​វិញ"
 msgid "Image Docker"
 msgstr "ឧបករណ៍​ចូលផែ​សម្រាប់​ក្តារ​លាយពណ៌"
 
-#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:38
+#: plugins/extensions/dockers/smallcolorselector/smallcolorselector_dock.cc:45
 msgid "Small Color Selector"
 msgstr "ជម្រើស​ស្រដៀងគ្នា"
+
+#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
+msgid "Specific Color Selector"
+msgstr "កម្មវិធីជ្រើស​ពណ៌​ជាក់លាក់"
 
 #: plugins/extensions/dockers/specificcolorselector/kis_color_input.cc:47
 #, kde-format
@@ -10810,9 +10814,11 @@ msgstr "%1 ៖"
 msgid "Color name:"
 msgstr "គំរូ​ពណ៌ ៖"
 
-#: plugins/extensions/dockers/specificcolorselector/specificcolorselector_dock.cc:31
-msgid "Specific Color Selector"
-msgstr "កម្មវិធីជ្រើស​ពណ៌​ជាក់លាក់"
+#: plugins/extensions/dockers/specificcolorselector/kis_specific_color_selector_widget.cc:53
+#, fuzzy
+#| msgid "Color Selector"
+msgid "Show Colorspace Selector"
+msgstr "ឧបករណ៍​ជ្រើស​ពណ៌"
 
 #: plugins/extensions/dockers/tasksetdocker/tasksetdocker_dock.cpp:81
 #, fuzzy
@@ -11958,7 +11964,7 @@ msgstr "ធ្វើ​ឲ្យ​ងងឹត​"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:31
 #: plugins/tools/defaulttools/kis_tool_multihand.cpp:203
-#: ui/kis_paintop_box.cc:207
+#: ui/kis_paintop_box.cc:208
 msgid "Mirror"
 msgstr "ឆ្លុះ"
 
@@ -12841,10 +12847,6 @@ msgstr "វាស់​ចម្ងាយ​រវាង​ចំណុច​ព
 msgid "Paint with multibrushes"
 msgstr "គូស​ដោយ​ប្រើ​ជក់"
 
-#: plugins/tools/defaulttools/kis_tool_path.h:75
-msgid "Draw a path."
-msgstr "គូស​ផ្លូវ"
-
 #: plugins/tools/defaulttools/kis_tool_rectangle.h:61
 msgid "Draw a rectangle"
 msgstr "គូស​ចតុកោណកែង​"
@@ -13030,6 +13032,12 @@ msgid ""
 msgstr ""
 "ជំនួស Alt+អូស នឹង​ផ្លាស់ទី​ច្បាប់​ដើម​នៃ​បន្ទាត់​ដែល​បង្ហាញ​បច្ចុប្បន្ន​ជុំវិញ ប្ដូរ Shift+អូស នឹង​បង្ខំ​អ្នក​ឲ្យ​គូរ​"
 "បន្ទាត់​ត្រង់"
+
+#: plugins/tools/defaulttools/kis_tool_path.h:75
+#, fuzzy
+#| msgid "Draw a polygon. Shift-mouseclick ends the polygon."
+msgid "Draw a path. Shift-mouseclick ends the path."
+msgstr "គូស​ពហុកោណ ។ ប្ដូរ (Shift) និង​ចុច​កណ្ដុរ​បញ្ចប់​ពហុកោណ ។"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.h:62
 msgid "Select a contiguous area of colors"
@@ -13719,7 +13727,7 @@ msgid "&Patterns"
 msgstr "លំនាំ"
 
 #: ui/kis_control_frame.cpp:87 ui/kis_control_frame.cpp:88
-#: ui/kis_control_frame.cpp:193
+#: ui/kis_control_frame.cpp:191
 msgid "Gradients"
 msgstr "ជម្រាល​"
 
@@ -13731,15 +13739,15 @@ msgstr "ជម្រាល​"
 msgid "&Color"
 msgstr "ពណ៌"
 
-#: ui/kis_control_frame.cpp:118
+#: ui/kis_control_frame.cpp:116
 msgid "&Painter's Tools"
 msgstr "ឧបករណ៍​របស់​កម្មវិធី​គូរ"
 
-#: ui/kis_control_frame.cpp:153
+#: ui/kis_control_frame.cpp:151
 msgid "Patterns"
 msgstr "លំនាំ"
 
-#: ui/kis_control_frame.cpp:156 ui/kis_control_frame.cpp:158
+#: ui/kis_control_frame.cpp:154 ui/kis_control_frame.cpp:156
 msgid "Custom Pattern"
 msgstr "លំនាំ​ផ្ទាល់ខ្លួន"
 
@@ -13998,43 +14006,43 @@ msgstr "កំណត់​របៀប​​ឆ្លុះ​បញ្ឈរ"
 msgid "Flow:"
 msgstr "យឺត​"
 
-#: ui/kis_paintop_box.cc:158
+#: ui/kis_paintop_box.cc:159
 msgid "Mode: "
 msgstr "របៀប​ ៖ "
 
-#: ui/kis_paintop_box.cc:164
+#: ui/kis_paintop_box.cc:165
 msgid "Save to Palette"
 msgstr "រក្សា​ទុក​ទៅ​ក្តារលាយ​ពណ៌"
 
-#: ui/kis_paintop_box.cc:169
+#: ui/kis_paintop_box.cc:170
 msgid "Choose workspace"
 msgstr "ជ្រើស​តំបន់​ធ្វើ​ការ​"
 
-#: ui/kis_paintop_box.cc:190
+#: ui/kis_paintop_box.cc:191
 #, fuzzy
 #| msgid "Brush size"
 msgid "Brush composite"
 msgstr "ទំហំ​ជក់"
 
-#: ui/kis_paintop_box.cc:194
+#: ui/kis_paintop_box.cc:195
 #, fuzzy
 #| msgid "Bristle options"
 msgid "Brush option slider 1"
 msgstr "ជម្រើស​សរសៃ"
 
-#: ui/kis_paintop_box.cc:198
+#: ui/kis_paintop_box.cc:199
 #, fuzzy
 #| msgid "Bristle options"
 msgid "Brush option slider 2"
 msgstr "ជម្រើស​សរសៃ"
 
-#: ui/kis_paintop_box.cc:211
+#: ui/kis_paintop_box.cc:212
 #, fuzzy
 #| msgid "Add to palette:"
 msgid "Add to palette"
 msgstr "បន្ថែម​ទៅ​ក្ដារ​លាយ ៖"
 
-#: ui/kis_paintop_box.cc:215
+#: ui/kis_paintop_box.cc:216
 #, fuzzy
 #| msgid "Workspace"
 msgid "Workspaces"
@@ -14259,35 +14267,35 @@ msgstr ""
 msgid "Shows just the canvas or the whole window"
 msgstr ""
 
-#: ui/kis_view2.cpp:511
+#: ui/kis_view2.cpp:513
 msgid "Insert as New Layer"
 msgstr "បញ្ចូល​ជា​ស្រទាប់​ថ្មី"
 
-#: ui/kis_view2.cpp:512
+#: ui/kis_view2.cpp:514
 msgid "Insert as New Layers"
 msgstr "បញ្ចូល​ជា​ស្រទាប់​ថ្មី"
 
-#: ui/kis_view2.cpp:514
+#: ui/kis_view2.cpp:516
 msgid "Open in New Document"
 msgstr "បើក​នៅ​ក្នុង​ឯកសារ​ថ្មី"
 
-#: ui/kis_view2.cpp:515
+#: ui/kis_view2.cpp:517
 msgid "Open in New Documents"
 msgstr "បើក​នៅ​ក្នុង​ឯកសារ​ថ្មី"
 
-#: ui/kis_view2.cpp:517
+#: ui/kis_view2.cpp:519
 msgid "Replace Current Document"
 msgstr ""
 
-#: ui/kis_view2.cpp:735
+#: ui/kis_view2.cpp:737
 msgid "Edit Palette..."
 msgstr "កែសម្រួល​ក្តារលាយ​..."
 
-#: ui/kis_view2.cpp:740
+#: ui/kis_view2.cpp:742
 msgid "&Themes"
 msgstr ""
 
-#: ui/kis_view2.cpp:871 ui/kis_view2.cpp:874
+#: ui/kis_view2.cpp:873 ui/kis_view2.cpp:876
 msgid "Edit Palette"
 msgstr "កែសម្រួល​ក្ដារលាយ"
 
@@ -14494,6 +14502,9 @@ msgstr ""
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "ឯកសារ ឬ URL ដែលត្រូវ់​បើក​"
+
+#~ msgid "Draw a path."
+#~ msgstr "គូស​ផ្លូវ"
 
 #, fuzzy
 #~| msgid "&Paint Layer"
