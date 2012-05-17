@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatolibs\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-04-23 02:34+0200\n"
+"POT-Creation-Date: 2012-05-17 02:34+0200\n"
 "PO-Revision-Date: 2010-03-09 09:17+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -135,10 +135,10 @@ msgstr "មិន​អាច​ផ្គូផ្គង​ថិរវេលា
 #: models/kptnodeitemmodel.cpp:620 models/kptnodeitemmodel.cpp:637
 #: models/kptnodeitemmodel.cpp:655 models/kptnodeitemmodel.cpp:673
 #: models/kptnodeitemmodel.cpp:708 models/kptnodeitemmodel.cpp:725
-#: models/kptresourceallocationmodel.cpp:741 models/kptresourcemodel.cpp:205
-#: models/kptresourcemodel.cpp:237 models/kptresourcemodel.cpp:358
-#: models/kptresourcemodel.cpp:362 models/kptresourcemodel.cpp:371
-#: models/kptschedulemodel.cpp:523 ui/kptpertresult.cpp:140
+#: models/kptresourcemodel.cpp:205 models/kptresourcemodel.cpp:237
+#: models/kptresourcemodel.cpp:358 models/kptresourcemodel.cpp:362
+#: models/kptresourcemodel.cpp:371 models/kptschedulemodel.cpp:523
+#: models/kptresourceallocationmodel.cpp:841 ui/kptpertresult.cpp:140
 #: ui/kptpertresult.cpp:491 ui/kptresourcedialog.cpp:300
 #: ui/kptresourcedialog.cpp:326 ui/kpttaskcostpanel.cpp:50
 #: ui/kpttaskgeneralpanel.cpp:80 rc.cpp:536
@@ -176,6 +176,11 @@ msgstr "អក្សរ អក្សរធំ"
 #, fuzzy
 msgid "Letter, lower case"
 msgstr "អក្សរ​ អក្សរ​តូច"
+
+#: kernel/KPlatoXmlLoaderBase.cpp:1098 kernel/kptdocuments.cpp:292
+#, kde-format
+msgid "Document loaded, URL=%1"
+msgstr "ឯកសារ​ត្រូវ​បាន​ផ្ទុក​ URL=%1​"
 
 #. i18n: file: ui/resourcedialogbase.ui:169
 #. i18n: ectx: property (text), item, widget (QComboBox, type)
@@ -230,20 +235,15 @@ msgstr "ធ្វើ​ការ​ណាត់​ជួប ៖ ពេល​វ�
 msgid "Resource %1 not available in interval: %2 to %3"
 msgstr "ធន​ធាន​ %1 ​មិន​មាន​នៅ​ក្នុង​ចន្លោះ​ពេល​ ៖ %2 ដល់​ %3​"
 
-#: kernel/kptresource.cpp:2520
+#: kernel/kptresource.cpp:2533
 #, kde-format
 msgid "Could not match effort. Want: %1 got: %2"
 msgstr "មិន​អាច​ផ្គូផ្គង​ទំហំ​ការងារ​​ ។ ត្រូវ​ការ ៖ %1 ទទួល​បាន​ %2​"
 
-#: kernel/kptresource.cpp:2523
+#: kernel/kptresource.cpp:2536
 #, kde-format
 msgid "Resource %1 available from %2 to %3"
 msgstr "ធន​ធាន​ %1 មាន​ចាប់​ពី​ %2 ដល់​ %3​"
-
-#: kernel/KPlatoXmlLoaderBase.cpp:1098 kernel/kptdocuments.cpp:292
-#, kde-format
-msgid "Document loaded, URL=%1"
-msgstr "ឯកសារ​ត្រូវ​បាន​ផ្ទុក​ URL=%1​"
 
 #: kernel/kptcalendar.h:260 kernel/kptcalendar.h:271
 #: ui/kptcalendareditor.cpp:204 ui/kptcalendareditor.cpp:642
@@ -1322,12 +1322,12 @@ msgstr "%1 (គណនី​លំនាំ​ដើម)​"
 #. i18n: file: ui/kptresourceassignmentview.ui:27
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptaccountsmodel.cpp:128 models/kptaccountsmodel.cpp:1030
-#: models/kptdocumentmodel.cpp:200 models/kptresourceallocationmodel.cpp:330
-#: models/kptresourceappointmentsmodel.cpp:907
+#: models/kptdocumentmodel.cpp:200 models/kptresourceappointmentsmodel.cpp:907
 #: models/kptresourceappointmentsmodel.cpp:922
 #: models/kptresourceappointmentsmodel.cpp:1483
 #: models/kptresourcemodel.cpp:441 models/kptschedulemodel.cpp:826
-#: models/kptschedulemodel.cpp:1104 rc.cpp:316
+#: models/kptschedulemodel.cpp:1104 models/kptresourceallocationmodel.cpp:336
+#: rc.cpp:316
 msgid "Name"
 msgstr "ឈ្មោះ​​"
 
@@ -1547,9 +1547,9 @@ msgstr "Url"
 #. i18n: file: ui/kptresourceassignmentview.ui:32
 #. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptdocumentmodel.cpp:201 models/kptrelationmodel.cpp:150
-#: models/kptresourceallocationmodel.cpp:331
 #: models/kptresourceappointmentsmodel.cpp:1484
-#: models/kptresourcemodel.cpp:442 rc.cpp:319
+#: models/kptresourcemodel.cpp:442 models/kptresourceallocationmodel.cpp:337
+#: rc.cpp:319
 msgid "Type"
 msgstr "ប្រភេទ​"
 
@@ -2772,92 +2772,6 @@ msgctxt "(qtundo-format)"
 msgid "Modify relation time lag"
 msgstr "កែប្រែរយៈ​ពេល​ខុស​គ្នានៃ​ពេល​វេលា​ទំនាក់​ទំនង​​"
 
-#: models/kptresourceallocationmodel.cpp:168
-#: models/kptresourceallocationmodel.cpp:226
-#: models/kptresourceallocationmodel.cpp:648
-#, no-c-format, kde-format
-msgctxt "<value>%"
-msgid "%1%"
-msgstr "%1%​"
-
-#: models/kptresourceallocationmodel.cpp:175
-#: models/kptresourceallocationmodel.cpp:654
-msgctxt "@info:tooltip"
-msgid "Not allocated"
-msgstr "មិន​បាន​បម្រុង​ទុក​"
-
-#: models/kptresourceallocationmodel.cpp:178
-#, no-c-format, kde-format
-msgctxt "@info:tooltip"
-msgid "Allocated units: %1%"
-msgstr "ឯកតា​បម្រុង​ទុក​ ៖ %1%​"
-
-#: models/kptresourceallocationmodel.cpp:231
-#, no-c-format, kde-format
-msgid "Maximum units available: %1%"
-msgstr "ឯកតា​អតិបរមា​ដែល​មាន​ ៖ %1%"
-
-#: models/kptresourceallocationmodel.cpp:271
-#, kde-format
-msgid "There is %1 resource available in this group"
-msgid_plural "There are %1 resources available in this group"
-msgstr[0] "មាន​ធន​ធាន​ %1 ​នៅ​ក្នុង​ក្រុម​នេះ​"
-
-#: models/kptresourceallocationmodel.cpp:332
-msgid "Allocation"
-msgstr "ការ​បម្រុង​ទុក​"
-
-#: models/kptresourceallocationmodel.cpp:333
-msgctxt "@title:column"
-msgid "Available"
-msgstr "មាន​"
-
-#: models/kptresourceallocationmodel.cpp:334
-msgctxt "@title:column"
-msgid "Required Resources"
-msgstr "ធន​ធាន​ដែល​ត្រូវ​ការ​"
-
-#: models/kptresourceallocationmodel.cpp:346
-msgid "Resource allocation"
-msgstr "ការបម្រុង​ទុក​ធន​ធាន​"
-
-#: models/kptresourceallocationmodel.cpp:347
-msgctxt "@info:tootip"
-msgid "Available resources or resource units"
-msgstr "ធន​ធាន ឬ​ឯកតា​ធន​ធាន​ដែល​មាន​"
-
-#: models/kptresourceallocationmodel.cpp:348
-msgctxt "@info:tootip"
-msgid "Required Resources"
-msgstr "ធន​ធាន​ដែល​ត្រូវ​ការ​"
-
-#: models/kptresourceallocationmodel.cpp:656
-#, kde-format
-msgctxt "@info:tooltip"
-msgid "%1 allocated out of %2 available"
-msgstr "%1 ត្រូវ​បាន​បម្រុង​ទុក​ចេញ​ពី​ %2 ​មាន​​"
-
-#: models/kptresourceallocationmodel.cpp:679
-#, kde-format
-msgid "%1 resource allocated"
-msgid_plural "%1 resources allocated"
-msgstr[0] "%1 ធន​ធាន​ត្រូវ​បាន​បម្រុង​ទុក​​​"
-
-#: models/kptresourceallocationmodel.cpp:755
-msgctxt "@info:tooltip"
-msgid "No required resources"
-msgstr "ធន​ធាន​ដែល​មិន​​ទាម​ទារ ៖"
-
-#: models/kptresourceallocationmodel.cpp:758
-msgctxt "@info:tooltip"
-msgid "Material resources cannot have required resources"
-msgstr "ធនធាន​សម្ភារៈ​មិន​មាន​ធនធាន​ដែល​ទាមទារ​ឡើយ"
-
-#: models/kptresourceallocationmodel.cpp:760
-msgctxt "@info:tooltip"
-msgid "Team resources cannot have required resources"
-msgstr "ធនធាន​ក្រុម​មិន​មាន​ធនធាន​ដែល​ទាមទារ​ឡើយ"
-
 #: models/kptresourceappointmentsmodel.cpp:577
 #, kde-format
 msgid "External project: %1"
@@ -3430,6 +3344,164 @@ msgstr "រយៈ​ពេល​​បន្ទាប់​"
 #: models/kpttaskstatusmodel.cpp:65
 msgid "Tasks that are scheduled to start next period"
 msgstr "ភារកិច្ច​ដែល​នឹង​ត្រូវ​កំណត់​ពេល​​ចាប់ផ្ដើម​​អំឡុង​ពេល​បន្ទាប់​"
+
+#: models/kptresourceallocationmodel.cpp:168
+#: models/kptresourceallocationmodel.cpp:226
+#: models/kptresourceallocationmodel.cpp:683
+#, no-c-format, kde-format
+msgctxt "<value>%"
+msgid "%1%"
+msgstr "%1%​"
+
+#: models/kptresourceallocationmodel.cpp:175
+#: models/kptresourceallocationmodel.cpp:689
+msgctxt "@info:tooltip"
+msgid "Not allocated"
+msgstr "មិន​បាន​បម្រុង​ទុក​"
+
+#: models/kptresourceallocationmodel.cpp:178
+#, no-c-format, kde-format
+msgctxt "@info:tooltip"
+msgid "Allocated units: %1%"
+msgstr "ឯកតា​បម្រុង​ទុក​ ៖ %1%​"
+
+#: models/kptresourceallocationmodel.cpp:231
+#, no-c-format, kde-format
+msgid "Maximum units available: %1%"
+msgstr "ឯកតា​អតិបរមា​ដែល​មាន​ ៖ %1%"
+
+#: models/kptresourceallocationmodel.cpp:260
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Required Resources</title><para>A working resource can be assigned "
+"one or more required resource. A required resource is a material resource "
+"that the working resource depends on in order to do the work.</para><para>To "
+"be able to use a material resource as a required resource, the material "
+"resource must be part of a group of type <emphasis>Material</emphasis>.</"
+"para>"
+msgstr ""
+
+#: models/kptresourceallocationmodel.cpp:277
+#, kde-format
+msgid "There is %1 resource available in this group"
+msgid_plural "There are %1 resources available in this group"
+msgstr[0] "មាន​ធន​ធាន​ %1 ​នៅ​ក្នុង​ក្រុម​នេះ​"
+
+#: models/kptresourceallocationmodel.cpp:338
+msgid "Allocation"
+msgstr "ការ​បម្រុង​ទុក​"
+
+#: models/kptresourceallocationmodel.cpp:339
+msgctxt "@title:column"
+msgid "Available"
+msgstr "មាន​"
+
+#: models/kptresourceallocationmodel.cpp:340
+msgctxt "@title:column"
+msgid "Required Resources"
+msgstr "ធន​ធាន​ដែល​ត្រូវ​ការ​"
+
+#: models/kptresourceallocationmodel.cpp:352
+msgid "Resource allocation"
+msgstr "ការបម្រុង​ទុក​ធន​ធាន​"
+
+#: models/kptresourceallocationmodel.cpp:353
+msgctxt "@info:tootip"
+msgid "Available resources or resource units"
+msgstr "ធន​ធាន ឬ​ឯកតា​ធន​ធាន​ដែល​មាន​"
+
+#: models/kptresourceallocationmodel.cpp:354
+#, fuzzy
+#| msgid "Required resources:"
+msgctxt "@info:tootip"
+msgid "Required material resources"
+msgstr "ធន​ធាន​ដែល​ទាម​ទារ ៖​"
+
+#: models/kptresourceallocationmodel.cpp:360
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Required Resources</title><para>A working resource can be assigned "
+"one or more required resource. A required resource is a material resource "
+"that the working resource depends on in order to do the work.</para><para>To "
+"be able to use a material resource as a required resource, the material "
+"resource must be part of a group of type Material.</para>"
+msgstr ""
+
+#: models/kptresourceallocationmodel.cpp:691
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "%1 allocated out of %2 available"
+msgstr "%1 ត្រូវ​បាន​បម្រុង​ទុក​ចេញ​ពី​ %2 ​មាន​​"
+
+#: models/kptresourceallocationmodel.cpp:729
+#, kde-format
+msgctxt "@info:tooltip"
+msgid "%1 resource requested for dynamic allocation"
+msgid_plural "%1 resources requested for dynamic allocation"
+msgstr[0] ""
+
+#: models/kptresourceallocationmodel.cpp:733
+#, fuzzy, kde-format
+#| msgid "%1 resource allocated"
+#| msgid_plural "%1 resources allocated"
+msgctxt "@info:tooltip"
+msgid "%1 resource allocated"
+msgid_plural "%1 resources allocated"
+msgstr[0] "%1 ធន​ធាន​ត្រូវ​បាន​បម្រុង​ទុក​​​"
+
+#: models/kptresourceallocationmodel.cpp:737
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip"
+#| msgid "%1: %2<nl/>%3: %4"
+msgctxt "@info:tooltip"
+msgid "%1<nl/>%2"
+msgstr "%1: %2<nl/>%3: %4"
+
+#: models/kptresourceallocationmodel.cpp:741
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Group allocations</title><para>You can allocate a number of resources "
+"from a group and let the scheduler select from the available resources at "
+"the time of scheduling.</para> These dynamically allocated resources will be "
+"in addition to any resource you have allocated specifically."
+msgstr ""
+
+#: models/kptresourceallocationmodel.cpp:813
+#, kde-format
+msgctxt "1: free resources, 2: number of resources"
+msgid "%1 of %2"
+msgstr ""
+
+#: models/kptresourceallocationmodel.cpp:816
+#, fuzzy, kde-format
+#| msgid "There is %1 resource available in this group"
+#| msgid_plural "There are %1 resources available in this group"
+msgctxt "@info:tooltip"
+msgid "There is %1 resource available in this group"
+msgid_plural "There are %1 resources available in this group"
+msgstr[0] "មាន​ធន​ធាន​ %1 ​នៅ​ក្នុង​ក្រុម​នេះ​"
+
+#: models/kptresourceallocationmodel.cpp:850
+#, fuzzy
+#| msgid "Modify resource allocations"
+msgctxt "@info:tooltip"
+msgid "No material resources available"
+msgstr "ការ​ប្រែ​ការ​បម្រុងទុក​ធនធាន​​"
+
+#: models/kptresourceallocationmodel.cpp:858
+msgctxt "@info:tooltip"
+msgid "No required resources"
+msgstr "ធន​ធាន​ដែល​មិន​​ទាម​ទារ ៖"
+
+#: models/kptresourceallocationmodel.cpp:861
+msgctxt "@info:tooltip"
+msgid "Material resources cannot have required resources"
+msgstr "ធនធាន​សម្ភារៈ​មិន​មាន​ធនធាន​ដែល​ទាមទារ​ឡើយ"
+
+#: models/kptresourceallocationmodel.cpp:863
+msgctxt "@info:tooltip"
+msgid "Team resources cannot have required resources"
+msgstr "ធនធាន​ក្រុម​មិន​មាន​ធនធាន​ដែល​ទាមទារ​ឡើយ"
 
 #: ui/kptaccountseditor.cpp:227
 msgid "Add Account"
@@ -5850,6 +5922,10 @@ msgstr ""
 #: rc.cpp:831
 msgid "Hours per day:"
 msgstr "ម៉ោង​ក្នុង​មួយ​ថ្ងៃ ៖​"
+
+#~ msgctxt "@info:tootip"
+#~ msgid "Required Resources"
+#~ msgstr "ធន​ធាន​ដែល​ត្រូវ​ការ​"
 
 #, fuzzy
 #~| msgid "Modify Task Name"
