@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-08 07:17+0200\n"
+"POT-Creation-Date: 2012-06-11 04:35+0200\n"
 "PO-Revision-Date: 2010-12-22 23:32+0700\n"
 "Last-Translator: Seng Sutha <Sutha@khmeros.info>\n"
 "Language-Team: Khmer [km] <Support@khmeros.info>\n"
@@ -1201,11 +1201,72 @@ msgstr "ផ្ទេរ​ចូល"
 msgid "Outgoing Transfers"
 msgstr "ផ្ទេរចេញ"
 
-#: src/dcc/transferpanel.h:51
+#: src/dcc/dcccommon.cpp:154
+msgid "No vacant port"
+msgstr "គ្មាន​ច្រក​ទំនេរ"
+
+#: src/dcc/dcccommon.cpp:165
+msgid "Could not open a socket"
+msgstr "មិន​អាច​បើក​រន្ធ​បានទេ"
+
+#: src/dcc/transferdetailedinfopanel.cpp:38
+msgid "Details"
+msgstr "សេចក្ដី​លម្អិត"
+
+#: src/dcc/transferdetailedinfopanel.cpp:133
+msgid "DCC Send"
+msgstr "ផ្ញើ DCC"
+
+#: src/dcc/transferdetailedinfopanel.cpp:133
+msgid "DCC Receive"
+msgstr "ទទួល DCC"
+
+#: src/dcc/transferdetailedinfopanel.cpp:136
+msgid " (Reverse DCC)"
+msgstr " (ដាក់​បញ្ច្រាស DCC)"
+
+#: src/dcc/transferdetailedinfopanel.cpp:153
+#: src/dcc/transferdetailedinfopanel.cpp:157
+msgid "Unknown server"
+msgstr "មិន​ស្គាល់​ម៉ាស៊ីន​បម្រើ"
+
+#: src/dcc/transferdetailedinfopanel.cpp:162
 #, kde-format
-msgctxt "%1=filename"
-msgid "File Information for %1"
-msgstr "ព័ត៌មាន​អំពី​ឯកសារ​សម្រាប់ %1"
+msgctxt "%1=partnerNick, %2=IRC Servername, %3=partnerIP, %4=partnerPort"
+msgid "%1 on %2, %3 (port <numid>%4</numid>)"
+msgstr "%1 លើ %2, %3 (ច្រក <numid>%4</numid>)"
+
+#: src/dcc/transferdetailedinfopanel.cpp:168
+#, kde-format
+msgctxt "%1 = PartnerNick, %2 = Partner IRC Servername"
+msgid "%1 on %2"
+msgstr "%1 ​លើ %2"
+
+#: src/dcc/transferdetailedinfopanel.cpp:175
+#, kde-format
+msgctxt "%1=ownIP, %2=ownPort"
+msgid "%1 (port <numid>%2</numid>)"
+msgstr "%1 (ច្រក​ <numid>%2</numid>)"
+
+#: src/dcc/transferdetailedinfopanel.cpp:183
+#, kde-format
+msgctxt "%1=Transferstartposition"
+msgid "Yes, %1"
+msgstr "បាទ/ចាស %1"
+
+#: src/dcc/transferdetailedinfopanel.cpp:185
+msgctxt "no - not a resumed transfer"
+msgid "No"
+msgstr "ទេ"
+
+#: src/dcc/transferdetailedinfopanel.cpp:251
+msgctxt "less than 1 sec"
+msgid "&lt; 1sec"
+msgstr "&lt; ១ វិនាទី"
+
+#: src/dcc/transferview.cpp:315
+msgid "Columns"
+msgstr "ជួរឈរ"
 
 #: src/dcc/transferpanel.cpp:45 src/viewer/viewcontainer.cpp:2182
 msgid "DCC Status"
@@ -1290,72 +1351,11 @@ msgid "Execute %1 file"
 msgid_plural "Execute %1 files"
 msgstr[0] "ប្រតិបត្តិ​ឯកសារ %1"
 
-#: src/dcc/dcccommon.cpp:154
-msgid "No vacant port"
-msgstr "គ្មាន​ច្រក​ទំនេរ"
-
-#: src/dcc/dcccommon.cpp:165
-msgid "Could not open a socket"
-msgstr "មិន​អាច​បើក​រន្ធ​បានទេ"
-
-#: src/dcc/transferdetailedinfopanel.cpp:38
-msgid "Details"
-msgstr "សេចក្ដី​លម្អិត"
-
-#: src/dcc/transferdetailedinfopanel.cpp:133
-msgid "DCC Send"
-msgstr "ផ្ញើ DCC"
-
-#: src/dcc/transferdetailedinfopanel.cpp:133
-msgid "DCC Receive"
-msgstr "ទទួល DCC"
-
-#: src/dcc/transferdetailedinfopanel.cpp:136
-msgid " (Reverse DCC)"
-msgstr " (ដាក់​បញ្ច្រាស DCC)"
-
-#: src/dcc/transferdetailedinfopanel.cpp:153
-#: src/dcc/transferdetailedinfopanel.cpp:157
-msgid "Unknown server"
-msgstr "មិន​ស្គាល់​ម៉ាស៊ីន​បម្រើ"
-
-#: src/dcc/transferdetailedinfopanel.cpp:162
+#: src/dcc/transferpanel.h:51
 #, kde-format
-msgctxt "%1=partnerNick, %2=IRC Servername, %3=partnerIP, %4=partnerPort"
-msgid "%1 on %2, %3 (port <numid>%4</numid>)"
-msgstr "%1 លើ %2, %3 (ច្រក <numid>%4</numid>)"
-
-#: src/dcc/transferdetailedinfopanel.cpp:168
-#, kde-format
-msgctxt "%1 = PartnerNick, %2 = Partner IRC Servername"
-msgid "%1 on %2"
-msgstr "%1 ​លើ %2"
-
-#: src/dcc/transferdetailedinfopanel.cpp:175
-#, kde-format
-msgctxt "%1=ownIP, %2=ownPort"
-msgid "%1 (port <numid>%2</numid>)"
-msgstr "%1 (ច្រក​ <numid>%2</numid>)"
-
-#: src/dcc/transferdetailedinfopanel.cpp:183
-#, kde-format
-msgctxt "%1=Transferstartposition"
-msgid "Yes, %1"
-msgstr "បាទ/ចាស %1"
-
-#: src/dcc/transferdetailedinfopanel.cpp:185
-msgctxt "no - not a resumed transfer"
-msgid "No"
-msgstr "ទេ"
-
-#: src/dcc/transferdetailedinfopanel.cpp:251
-msgctxt "less than 1 sec"
-msgid "&lt; 1sec"
-msgstr "&lt; ១ វិនាទី"
-
-#: src/dcc/transferview.cpp:315
-msgid "Columns"
-msgstr "ជួរឈរ"
+msgctxt "%1=filename"
+msgid "File Information for %1"
+msgstr "ព័ត៌មាន​អំពី​ឯកសារ​សម្រាប់ %1"
 
 #: src/main.cpp:37 src/viewer/trayicon.cpp:24
 msgid "Konversation"
@@ -2075,12 +2075,12 @@ msgstr "កំពុង​ទាញ​យក​​ \"%1\" (%2) ពី​ %3..."
 msgid "Notify"
 msgstr "ជូន​ដំណឹង​"
 
-#: src/irc/server.cpp:2997 src/notificationhandler.cpp:308
+#: src/irc/server.cpp:2997 src/notificationhandler.cpp:321
 #, kde-format
 msgid "%1 is online (%2)."
 msgstr "%1 លើ​បណ្តាញ​ (%2) ។"
 
-#: src/irc/server.cpp:3014 src/notificationhandler.cpp:322
+#: src/irc/server.cpp:3014 src/notificationhandler.cpp:335
 #, fuzzy, kde-format
 msgid "%1 went offline (%2)."
 msgstr "%1 នៅលើ​បណ្តា​ញ (%2) ។"
@@ -6081,94 +6081,101 @@ msgstr ""
 "*** លើ​ %1\n"
 "\n"
 
-#: src/notificationhandler.cpp:103
+#: src/notificationhandler.cpp:104
 #, fuzzy, kde-format
 msgid "[HighLight] (%1) &lt;%2&gt;"
 msgstr "[បន្លិច​​] (%1) &lt;%2&gt; %3"
 
-#: src/notificationhandler.cpp:117 src/notificationhandler.cpp:383
+#: src/notificationhandler.cpp:118 src/notificationhandler.cpp:396
 #, fuzzy, kde-format
 msgid "[HighLight] (%1) &lt;%2&gt; %3"
 msgstr "[បន្លិច​​] (%1) &lt;%2&gt; %3"
 
-#: src/notificationhandler.cpp:144
+#: src/notificationhandler.cpp:145
 #, fuzzy, kde-format
 msgid "[Query] &lt;%1&gt;"
 msgstr "[សំណួរ​​] &lt;%1&gt; %2"
 
-#: src/notificationhandler.cpp:158
+#: src/notificationhandler.cpp:159
 #, fuzzy, kde-format
 msgid "[Query] &lt;%1&gt; %2"
 msgstr "[សំណួរ​​] &lt;%1&gt; %2"
 
-#: src/notificationhandler.cpp:186 src/notificationhandler.cpp:193
+#: src/notificationhandler.cpp:187 src/notificationhandler.cpp:194
 #, kde-format
 msgid "%1 joined %2"
 msgstr "%1 បាន​ត​​ %2"
 
-#: src/notificationhandler.cpp:205 src/notificationhandler.cpp:212
+#: src/notificationhandler.cpp:206 src/notificationhandler.cpp:213
 #, fuzzy, kde-format
 msgid "%1 parted %2"
 msgstr "%1 បាន​ចែក​ %2"
 
-#: src/notificationhandler.cpp:224
+#: src/notificationhandler.cpp:225
 #, kde-format
 msgid "%1 quit %2"
 msgstr "%1 បោះបង់​ %2"
 
-#: src/notificationhandler.cpp:235
+#: src/notificationhandler.cpp:236
 #, kde-format
 msgid "%1 changed nickname to %2"
 msgstr "%1 បាន​ប្តូរ​សម្មតិនាម​ទៅ %2"
 
-#: src/notificationhandler.cpp:246
+#: src/notificationhandler.cpp:247
 #, fuzzy, kde-format
 msgid "%1 wants to send a file to you"
 msgstr "%1 ចង់​ផ្ញើ​ឯកសារ​ទៅអ្នក"
 
-#: src/notificationhandler.cpp:257
+#: src/notificationhandler.cpp:258
 #, fuzzy, kde-format
 msgid "An error has occurred in a DCC transfer: %1"
 msgstr "កំហុស​បាន​កើត​ឡើង​​ក្នុងការ​ផ្ទេរ​​ DCC ៖ %1"
 
-#: src/notificationhandler.cpp:268
+#: src/notificationhandler.cpp:271 src/notificationhandler.cpp:276
 #, fuzzy, kde-format
 msgctxt "%1 - filename"
 msgid "%1 File Transfer is complete"
 msgstr "ផ្ទេរ​ឯកសារ​ %1 រួច​ហើយ​"
 
-#: src/notificationhandler.cpp:280
+#: src/notificationhandler.cpp:278
+#, fuzzy
+#| msgid "Open"
+msgctxt "Opens the file from the finished dcc transfer"
+msgid "Open"
+msgstr "បើក"
+
+#: src/notificationhandler.cpp:293
 #, fuzzy, kde-format
 #| msgid "%1 changed nickname to %2"
 msgid "%1 changed modes in %2: %3"
 msgstr "%1 បាន​ប្តូរ​សម្មតិនាម​ទៅ %2"
 
-#: src/notificationhandler.cpp:295
+#: src/notificationhandler.cpp:308
 #, fuzzy, kde-format
 msgid "%1 has started a conversation (query) with you."
 msgstr "%1 បាន​ចាប់​ផ្តើមការ​សន្ទនា​​ (សំណួរ​​) ជាមួយ​អ្នក​ ។"
 
-#: src/notificationhandler.cpp:336
+#: src/notificationhandler.cpp:349
 #, fuzzy, kde-format
 msgid "You are kicked by %1 from %2"
 msgstr "អ្នក​ត្រូវ​បាន​ទាត់​ដោយ​​ %1 ចេញ​ពី​ %2"
 
-#: src/notificationhandler.cpp:350
+#: src/notificationhandler.cpp:363
 #, fuzzy, kde-format
 msgid "%1 started a DCC chat with you"
 msgstr "%1 បានចាប់​ផ្តើម​ការ​ជជែកំសាន្ត​ dcc ជាមួយ​អ្នក​​"
 
-#: src/notificationhandler.cpp:380
+#: src/notificationhandler.cpp:393
 #, fuzzy, kde-format
 msgid "[HighLight] (%1) *** %2"
 msgstr "[បន្លិច​​] (%1) *** %2"
 
-#: src/notificationhandler.cpp:393
+#: src/notificationhandler.cpp:406
 #, kde-format
 msgid "Failed to connect to %1"
 msgstr "បាន​បរាជ័យ​តភ្ជាប់​ទៅកាន់​ %1"
 
-#: src/notificationhandler.cpp:406
+#: src/notificationhandler.cpp:419
 #, kde-format
 msgid "You have joined %1."
 msgstr "អ្នក​បាន​ត​ %1 ។"

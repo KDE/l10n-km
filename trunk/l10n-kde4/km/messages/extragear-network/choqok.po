@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: choqok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-10 04:23+0200\n"
+"POT-Creation-Date: 2012-06-11 04:32+0200\n"
 "PO-Revision-Date: 2011-07-01 11:56+0700\n"
 "Last-Translator: Chan Sambathratanak <ratanak@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -70,7 +70,9 @@ msgstr ""
 msgid "Edit Account"
 msgstr "កែសម្រួល​គណនី​"
 
-#: choqok/config/appearance/appearanceconfig.cpp:73
+#. i18n: file: plugins/betternotify/notifyprefs.ui:21
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: choqok/config/appearance/appearanceconfig.cpp:73 rc.cpp:577
 msgid "Appearance"
 msgstr "រូបរាង"
 
@@ -107,6 +109,7 @@ msgstr "កម្ម​វិធី​ជំនួយ​ទូ​ទៅ"
 #: choqok/systrayicon.cpp:116 choqok/systrayicon.cpp:122 choqok/main.cpp:40
 #: choqok/mainwindow.cpp:85 choqok/mainwindow.cpp:508
 #: choqok/mainwindow.cpp:577 choqok/mainwindow.cpp:628
+#: plugins/betternotify/dummynotification.cpp:47
 msgid "Choqok"
 msgstr "Choqok"
 
@@ -773,48 +776,6 @@ msgstr "ច្រើន​ទៀត"
 msgid "Latest update:"
 msgstr "ការ​ធ្វើ​បច្ចុប្បន្នភាព​ចុងក្រោយ ៖"
 
-#: libchoqok/ui/postwidget.cpp:198
-msgctxt "@info:tooltip"
-msgid "Remove"
-msgstr "យកចេញ"
-
-#: libchoqok/ui/postwidget.cpp:202
-msgctxt "@info:tooltip"
-msgid "ReSend"
-msgstr "ផ្ញើ​ឡើង​វិញ"
-
-#: libchoqok/ui/postwidget.cpp:427
-msgid "Just now"
-msgstr "ឥឡូវ"
-
-#: libchoqok/ui/postwidget.cpp:432
-#, kde-format
-msgid "1 sec ago"
-msgid_plural "%1 secs ago"
-msgstr[0] "%1 វិនាទី​កន្លង​ទៅ"
-
-#: libchoqok/ui/postwidget.cpp:438
-#, kde-format
-msgid "1 min ago"
-msgid_plural "%1 mins ago"
-msgstr[0] "%1 នាទី​កន្លង​ទៅ"
-
-#: libchoqok/ui/postwidget.cpp:444
-#, kde-format
-msgid "1 hour ago"
-msgid_plural "%1 hours ago"
-msgstr[0] "%1 ម៉ោង​កន្លង​ទៅ"
-
-#: libchoqok/ui/postwidget.cpp:449
-#, kde-format
-msgid "1 day ago"
-msgid_plural "%1 days ago"
-msgstr[0] "%1 ថ្ងៃ​កន្លង​ទៅ"
-
-#: libchoqok/ui/postwidget.cpp:454
-msgid "Are you sure you want to remove this post from the server?"
-msgstr "តើ​អ្នក​ប្រាកដ​ជា​ចង់​យក​ការ​ប្រកាស​នេះ​ចេញ​ពី​ម៉ាស៊ីន​បម្រើ​ឬ​ ?"
-
 #: libchoqok/ui/choqoktextedit.cpp:60
 msgid ""
 "<strong>Note:</strong><br/><em>Ctrl+S</em> to enable/disable auto spell "
@@ -832,17 +793,47 @@ msgctxt "Replace URLs by a shortened URL"
 msgid "Shorten URLs"
 msgstr "URLs ដែល​បាន​កាត់​ឲ្យ​ខ្លី"
 
-#: libchoqok/accountmanager.cpp:111 libchoqok/accountmanager.cpp:142
-#, kde-format
-msgid "There is no account with alias %1."
-msgstr "មិន​មាន​គណនី​ដែល​មាន​ឈ្មោះ​ក្លែង​ក្លាយ %1​ ឡើយ ។"
+#: libchoqok/ui/postwidget.cpp:198
+msgctxt "@info:tooltip"
+msgid "Remove"
+msgstr "យកចេញ"
 
-#: libchoqok/accountmanager.cpp:159
-msgid ""
-"An account with this alias already exists: a unique alias has to be "
-"specified."
-msgstr ""
-"គណនី​ដែល​មាន​ឈ្មោះ​ក្លែង​ក្លាយ​នេះ​មាន​រួច​ហើយ ​៖ ​ឈ្មោះ​ក្លែង​ក្លាយ​ដែល​ប្លែក​ពី​គេ ត្រូវតែ​បាន​បញ្ជាក់ ។"
+#: libchoqok/ui/postwidget.cpp:202
+msgctxt "@info:tooltip"
+msgid "ReSend"
+msgstr "ផ្ញើ​ឡើង​វិញ"
+
+#: libchoqok/ui/postwidget.cpp:421
+msgid "Just now"
+msgstr "ឥឡូវ"
+
+#: libchoqok/ui/postwidget.cpp:426
+#, kde-format
+msgid "1 sec ago"
+msgid_plural "%1 secs ago"
+msgstr[0] "%1 វិនាទី​កន្លង​ទៅ"
+
+#: libchoqok/ui/postwidget.cpp:432
+#, kde-format
+msgid "1 min ago"
+msgid_plural "%1 mins ago"
+msgstr[0] "%1 នាទី​កន្លង​ទៅ"
+
+#: libchoqok/ui/postwidget.cpp:438
+#, kde-format
+msgid "1 hour ago"
+msgid_plural "%1 hours ago"
+msgstr[0] "%1 ម៉ោង​កន្លង​ទៅ"
+
+#: libchoqok/ui/postwidget.cpp:443
+#, kde-format
+msgid "1 day ago"
+msgid_plural "%1 days ago"
+msgstr[0] "%1 ថ្ងៃ​កន្លង​ទៅ"
+
+#: libchoqok/ui/postwidget.cpp:448
+msgid "Are you sure you want to remove this post from the server?"
+msgstr "តើ​អ្នក​ប្រាកដ​ជា​ចង់​យក​ការ​ប្រកាស​នេះ​ចេញ​ពី​ម៉ាស៊ីន​បម្រើ​ឬ​ ?"
 
 #: libchoqok/choqoktools.cpp:50
 msgid "No Error"
@@ -876,6 +867,18 @@ msgstr "កំហុស​ខាង​ក្នុង"
 #: libchoqok/choqoktools.cpp:68
 msgid "Unknown Error"
 msgstr "កំហុស​ដែល​មិន​ស្គាល់"
+
+#: libchoqok/accountmanager.cpp:111 libchoqok/accountmanager.cpp:142
+#, kde-format
+msgid "There is no account with alias %1."
+msgstr "មិន​មាន​គណនី​ដែល​មាន​ឈ្មោះ​ក្លែង​ក្លាយ %1​ ឡើយ ។"
+
+#: libchoqok/accountmanager.cpp:159
+msgid ""
+"An account with this alias already exists: a unique alias has to be "
+"specified."
+msgstr ""
+"គណនី​ដែល​មាន​ឈ្មោះ​ក្លែង​ក្លាយ​នេះ​មាន​រួច​ហើយ ​៖ ​ឈ្មោះ​ក្លែង​ក្លាយ​ដែល​ប្លែក​ពី​គេ ត្រូវតែ​បាន​បញ្ជាក់ ។"
 
 #: libchoqok/mediamanager.cpp:107
 msgid "Cannot create a KDE Job. Please check your installation."
@@ -1049,6 +1052,37 @@ msgstr "ធ្វើ​កំណត់​ចំណាំ​នេះ​ម្ដ
 msgid "Fetching conversation failed. %1"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ទៅ​ប្រមូល​យក​ការ​ប្រកាស​​ថ្មី ។ %1"
 
+#: microblogs/laconica/laconicasearch.cpp:45
+msgctxt "Dents are Identica posts"
+msgid "Dents Including This Hashtag"
+msgstr "Dents រួមបញ្ចូល​ Hashtag​ នេះ"
+
+#: microblogs/laconica/laconicasearch.cpp:48
+msgctxt "Dents are Identica posts"
+msgid "Dents Including This Group"
+msgstr "Dents រួមបញ្ចូល​ក្រុម​នេះ"
+
+#: microblogs/laconica/laconicasearch.cpp:51
+msgctxt "Dents are Identica posts"
+msgid "Dents From This User"
+msgstr "Dents ពី​អ្នក​ប្រើ​នេះ"
+
+#: microblogs/laconica/laconicasearch.cpp:54
+msgctxt "Dents are Identica posts"
+msgid "Dents To This User"
+msgstr "Dents ទៅ​អ្នក​ប្រើ​នេះ"
+
+#: microblogs/laconica/laconicasearch.cpp:133
+#: microblogs/twitter/twittersearch.cpp:90
+msgid "Unable to fetch search results."
+msgstr "មិន​អាច​ទៅ​ប្រមូល​យក​លទ្ធផល​ស្វែង​រក​បាន​ទេ​ ។"
+
+#: microblogs/laconica/laconicasearch.cpp:141
+#: microblogs/twitter/twittersearch.cpp:98
+#, kde-format
+msgid "Unable to fetch search results: %1"
+msgstr "មិន​អាច​ទៅ​ប្រមូល​យក​​លទ្ធផល​ស្វែង​រក​បាន​ទេ​ ៖ %1"
+
 #: microblogs/laconica/laconicapostwidget.cpp:84
 #: microblogs/twitter/twitterpostwidget.cpp:52
 msgid "Manual ReSend"
@@ -1137,43 +1171,12 @@ msgctxt "Subscribe to user"
 msgid "Subscribe to %1"
 msgstr "ជាវ​ប្រចាំ​ទៅ %1"
 
-#: microblogs/laconica/laconicapostwidget.cpp:235
+#: microblogs/laconica/laconicapostwidget.cpp:234
 #: microblogs/twitter/twitterpostwidget.cpp:158
 #, kde-format
 msgctxt "Block user"
 msgid "Block %1"
 msgstr "ទប់ស្កាត់ %1"
-
-#: microblogs/laconica/laconicasearch.cpp:45
-msgctxt "Dents are Identica posts"
-msgid "Dents Including This Hashtag"
-msgstr "Dents រួមបញ្ចូល​ Hashtag​ នេះ"
-
-#: microblogs/laconica/laconicasearch.cpp:48
-msgctxt "Dents are Identica posts"
-msgid "Dents Including This Group"
-msgstr "Dents រួមបញ្ចូល​ក្រុម​នេះ"
-
-#: microblogs/laconica/laconicasearch.cpp:51
-msgctxt "Dents are Identica posts"
-msgid "Dents From This User"
-msgstr "Dents ពី​អ្នក​ប្រើ​នេះ"
-
-#: microblogs/laconica/laconicasearch.cpp:54
-msgctxt "Dents are Identica posts"
-msgid "Dents To This User"
-msgstr "Dents ទៅ​អ្នក​ប្រើ​នេះ"
-
-#: microblogs/laconica/laconicasearch.cpp:133
-#: microblogs/twitter/twittersearch.cpp:90
-msgid "Unable to fetch search results."
-msgstr "មិន​អាច​ទៅ​ប្រមូល​យក​លទ្ធផល​ស្វែង​រក​បាន​ទេ​ ។"
-
-#: microblogs/laconica/laconicasearch.cpp:141
-#: microblogs/twitter/twittersearch.cpp:98
-#, kde-format
-msgid "Unable to fetch search results: %1"
-msgstr "មិន​អាច​ទៅ​ប្រមូល​យក​​លទ្ធផល​ស្វែង​រក​បាន​ទេ​ ៖ %1"
 
 #: microblogs/ocs/ocsconfigurewidget.cpp:36
 msgid "Loading..."
@@ -1692,9 +1695,17 @@ msgstr "អ្នក​និពន្ធ"
 msgid "Text"
 msgstr "អត្ថបទ"
 
-#: plugins/betternotify/notification.cpp:34
-msgid "Ignore notifications"
-msgstr "មិន​អើពើ​ការ​ជូន​ដំណឹង"
+#: plugins/betternotify/dummynotification.cpp:47
+msgid "KDE Rocks! :)"
+msgstr ""
+
+#: plugins/betternotify/dummynotification.cpp:47
+msgid "Ok"
+msgstr ""
+
+#: plugins/betternotify/notification.cpp:94
+msgid "Ignore"
+msgstr ""
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -2907,49 +2918,92 @@ msgstr "គណនី Twitter ៖"
 msgid "Get direct link to file"
 msgstr "យក​តំណ​ផ្ទាល់​ទៅ​ឯកសារ"
 
-#. i18n: file: plugins/betternotify/notifyprefs.ui:19
+#. i18n: file: plugins/betternotify/notifyprefs.ui:29
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: rc.cpp:580
+#, fuzzy
+#| msgid "Foreground"
+msgid "Foreground Color:"
+msgstr "ផ្ទៃ​ខាង​មុខ"
+
+#. i18n: file: plugins/betternotify/notifyprefs.ui:39
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: rc.cpp:583
+#, fuzzy
+#| msgid "Background"
+msgid "Background Color:"
+msgstr "ផ្ទៃ​ខាងក្រោយ"
+
+#. i18n: file: plugins/betternotify/notifyprefs.ui:49
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: rc.cpp:586
+#, fuzzy
+#| msgid "Post Text"
+msgid "Font:"
+msgstr "ប្រកាស​អត្ថបទ"
+
+#. i18n: file: plugins/betternotify/notifyprefs.ui:59
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:577
+#: rc.cpp:589
 #, fuzzy
 #| msgid "&Update interval:"
 msgid "Notify Interval:"
 msgstr "ចន្លោះ​ពេល​ធ្វើ​បច្ចុប្បន្នភាព ៖"
 
-#. i18n: file: plugins/betternotify/notifyprefs.ui:36
+#. i18n: file: plugins/betternotify/notifyprefs.ui:78
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:580
+#: rc.cpp:592
 #, fuzzy
 #| msgid " Second"
 #| msgid_plural " Seconds"
 msgid "seconds"
 msgstr "វិនាទី"
 
-#. i18n: file: plugins/betternotify/notifyprefs.ui:51
+#. i18n: file: plugins/betternotify/notifyprefs.ui:123
+#. i18n: ectx: property (text), widget (KPushButton, adjustPosition)
+#: rc.cpp:595
+#, fuzzy
+#| msgid "New post notifications"
+msgid "Adjust notification's position"
+msgstr "ការ​ជូន​ដំណឹង​ពី​ប្រកាស​ថ្មី"
+
+#. i18n: file: plugins/betternotify/notifyprefs.ui:159
+#. i18n: ectx: attribute (title), widget (QWidget, tab_2)
+#: rc.cpp:598
+#, fuzzy
+#| msgid "Timelines Options"
+msgid "Timeline Selection"
+msgstr "ជម្រើស​បន្ទាត់​ពេលវេលា"
+
+#. i18n: file: plugins/betternotify/notifyprefs.ui:171
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:583
+#: rc.cpp:601
 msgid "Select Timelines"
 msgstr "ជ្រើស​បន្ទាត់​ពេលវេលា"
 
-#. i18n: file: plugins/betternotify/notifyprefs.ui:61
+#. i18n: file: plugins/betternotify/notifyprefs.ui:181
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:586
+#: rc.cpp:604
 msgid "Accounts"
 msgstr "គណនី"
 
-#. i18n: file: plugins/betternotify/notifyprefs.ui:106
+#. i18n: file: plugins/betternotify/notifyprefs.ui:226
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:589
+#: rc.cpp:607
 msgid "Select timelines you wish to see notifications for their new posts:"
 msgstr "ជ្រើស​បន្ទាត់​ពេលវេលា​ដែល​អ្នក​ចង់​ឃើញ​ការ​ជូន​ដំណឹង​សម្រាប់​ប្រកាស​ថ្មីៗ​របស់​ពួកគេ ៖"
 
-#. i18n: file: plugins/betternotify/notifyprefs.ui:135
+#. i18n: file: plugins/betternotify/notifyprefs.ui:249
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:592
+#: rc.cpp:610
 msgid ""
 "<html><head/><body><p><span style=\" font-weight:600;\">Note:</span> Any "
 "change, needs plugin re-load (disable/enable) to take effect.</p></body></"
 "html>"
 msgstr ""
+
+#~ msgid "Ignore notifications"
+#~ msgstr "មិន​អើពើ​ការ​ជូន​ដំណឹង"
 
 #~ msgctxt "Close a timeline"
 #~ msgid "Close Timeline"
