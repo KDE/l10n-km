@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-13 02:26+0200\n"
+"POT-Creation-Date: 2012-06-16 03:15+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -7638,13 +7638,13 @@ msgstr "បង្ហាញ​ស្រទាប់​ដើម"
 
 #. i18n: file: ui/forms/kis_previewwidgetbase.ui:122
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomOut)
-#: rc.cpp:3201
+#: rc.cpp:3201 ui/input/kis_zoom_action.cpp:49
 msgid "Zoom Out"
 msgstr "បង្រួម"
 
 #. i18n: file: ui/forms/kis_previewwidgetbase.ui:135
 #. i18n: ectx: property (toolTip), widget (KPushButton, btnZoomIn)
-#: rc.cpp:3204
+#: rc.cpp:3204 ui/input/kis_zoom_action.cpp:48
 msgid "Zoom In"
 msgstr "ពង្រីក"
 
@@ -9183,22 +9183,14 @@ msgid "Brushes and Stuff"
 msgstr "ជក់ និង ឧបករណ៍"
 
 #. i18n: tag info attribute name
-#. i18n: file: plugins/colorspaces/ctlcs/ctlcolorspaces/gray16f.ctlcs:3
-#: rc.cpp:4102
-#, fuzzy
-#| msgid "RGB (16-bit float/channel) for High Dynamic Range imaging"
-msgid "Gray (16-bit float/channel) for High Dynamic Range imaging"
-msgstr "RGB (លំហូរ​/ឆានែល​ ១៦ ប៊ីត) សម្រាប់​រូបភាព​នៅ​ក្នុង​ជួរ​ថាមវន្ត​​​កម្រិត​ខ្ពស់"
-
-#. i18n: tag info attribute name
 #. i18n: file: plugins/colorspaces/ctlcs/ctlcolorspaces/rgba16f.ctlcs:3
-#: rc.cpp:4105
+#: rc.cpp:4102
 msgid "RGB (16-bit float/channel) for High Dynamic Range imaging"
 msgstr "RGB (លំហូរ​/ឆានែល​ ១៦ ប៊ីត) សម្រាប់​រូបភាព​នៅ​ក្នុង​ជួរ​ថាមវន្ត​​​កម្រិត​ខ្ពស់"
 
 #. i18n: tag info attribute name
 #. i18n: file: plugins/colorspaces/ctlcs/ctlcolorspaces/xyza16f.ctlcs:3
-#: rc.cpp:4108
+#: rc.cpp:4105
 msgid "XYZ (16-bit float/channel) for High Dynamic Range imaging"
 msgstr "XYZ (លំហូរ​/ឆានែល ១៦ ប៊ីត) ​សម្រាប់​រូបភាព​នៅ​ក្នុង​ជួរ​ថាមវន្ត​កម្រិត​ខ្ពស់"
 
@@ -12179,6 +12171,10 @@ msgctxt "(qtundo-format)"
 msgid "Transform"
 msgstr "ប្លែង​"
 
+#: plugins/tools/tool_transform2/kis_tool_transform.h:438
+msgid "Transform a layer or a selection"
+msgstr "ប្លែង​ស្រទាប់ ឬ​ការ​ជ្រើស"
+
 #: plugins/tools/tool_transform2/kis_tool_transform.cc:2157
 msgid "Apply Transformation"
 msgstr "អនុវត្ត​ការ​ប្លែងភាព"
@@ -12199,10 +12195,6 @@ msgstr "មិន​ចេះ​ប្រែប្រួល"
 #: plugins/tools/tool_transform2/kis_tool_transform.cc:2923
 msgid "Unlock Points"
 msgstr "ចំណុះ​មិន​ចាក់សោ"
-
-#: plugins/tools/tool_transform2/kis_tool_transform.h:438
-msgid "Transform a layer or a selection"
-msgstr "ប្លែង​ស្រទាប់ ឬ​ការ​ជ្រើស"
 
 #: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:607
 #: ui/dialogs/kis_dlg_preferences.cc:608
@@ -13245,6 +13237,34 @@ msgstr ""
 "<i>../1</i> បង្ហាញ​ស្រទាប់​ទីពីរ​ ពី​​ផ្នែក​ខាង​ក្រោម​នៃ​មេ​ស្រទាប់​បច្ចុប្បន្ន​<br/>\n"
 "<i>./0</i> បង្ហាញ​​កូន​ដំបូង​នៃ​ស្រទាប់​បច្ចុប្បន្ន"
 
+#: ui/tool/kis_tool_freehand_helper.cpp:127
+msgid "Freehand Stroke"
+msgstr ""
+
+#: ui/tool/kis_tool_freehand.cc:90
+msgid "Increase Brush Size"
+msgstr "បង្កើន​ទំហំ​ជក់"
+
+#: ui/tool/kis_tool_freehand.cc:96
+msgid "Decrease Brush Size"
+msgstr "បន្ថយ​ទំហំ​ជក់"
+
+#: ui/tool/kis_tool.cc:111
+msgid "Swap Foreground and Background Color"
+msgstr "ដូរ​ពណ៌​ផ្ទៃ​ខាង​មុខ និង​ផ្ទៃ​ខាង​ក្រោយ"
+
+#: ui/tool/kis_tool.cc:117
+msgid "Reset Foreground and Background Color"
+msgstr "កំណត់​ឡើង​វិញ​នូវ​ពណ៌​ផ្ទៃ​ខាង​មុខ និង​ផ្ទៃ​ខាង​ក្រោយ"
+
+#: ui/tool/kis_tool.cc:519
+msgid "Clear"
+msgstr "ជម្រះ"
+
+#: ui/tool/kis_tool.cc:547
+msgid "No options"
+msgstr "គ្មាន​ជម្រើស"
+
 #: ui/tool/kis_tool_paint.cc:92
 msgid "Make brush color lighter"
 msgstr ""
@@ -13264,34 +13284,6 @@ msgstr "មើល​ជា​មុន ៖ "
 #| msgid "Preview opacity:"
 msgid "Decrease opacity"
 msgstr "មើល​ជា​មុន ៖ "
-
-#: ui/tool/kis_tool_freehand_helper.cpp:127
-msgid "Freehand Stroke"
-msgstr ""
-
-#: ui/tool/kis_tool.cc:111
-msgid "Swap Foreground and Background Color"
-msgstr "ដូរ​ពណ៌​ផ្ទៃ​ខាង​មុខ និង​ផ្ទៃ​ខាង​ក្រោយ"
-
-#: ui/tool/kis_tool.cc:117
-msgid "Reset Foreground and Background Color"
-msgstr "កំណត់​ឡើង​វិញ​នូវ​ពណ៌​ផ្ទៃ​ខាង​មុខ និង​ផ្ទៃ​ខាង​ក្រោយ"
-
-#: ui/tool/kis_tool.cc:595
-msgid "Clear"
-msgstr "ជម្រះ"
-
-#: ui/tool/kis_tool.cc:623
-msgid "No options"
-msgstr "គ្មាន​ជម្រើស"
-
-#: ui/tool/kis_tool_freehand.cc:90
-msgid "Increase Brush Size"
-msgstr "បង្កើន​ទំហំ​ជក់"
-
-#: ui/tool/kis_tool_freehand.cc:96
-msgid "Decrease Brush Size"
-msgstr "បន្ថយ​ទំហំ​ជក់"
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 msgid ""
@@ -13406,9 +13398,145 @@ msgid ""
 "your system..."
 msgstr ""
 
+#: ui/input/kis_abstract_input_action.cpp:36
+#, fuzzy
+#| msgid "Active"
+msgid "Activate"
+msgstr "សកម្ម"
+
+#: ui/input/kis_alternate_invocation_action.cpp:33
+#, fuzzy
+#| msgctxt "The gradient will repeat alternatingly"
+#| msgid "Alternating"
+msgid "Alternate Invocation"
+msgstr "ជំនួស​"
+
+#: ui/input/kis_alternate_invocation_action.cpp:34
+msgid ""
+"Alternate Invocation performs an alternate action with the current tool. For "
+"example, using the brush tool it picks a color from the canvas."
+msgstr ""
+
+#: ui/input/kis_change_primary_setting_action.cpp:29
+msgid "Change Tool Primary Setting"
+msgstr ""
+
+#: ui/input/kis_change_primary_setting_action.cpp:30
+msgid ""
+"Changes a tool's \"Primary Setting\", for example the brush size for the "
+"brush tool."
+msgstr ""
+
+#: ui/input/kis_input_manager.cpp:100
+msgid "Set Mirror Axis"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:47
+#, fuzzy
+#| msgid "Canvas Size"
+msgid "Pan Canvas"
+msgstr "ទំហំ​ខ្សែកោង"
+
+#: ui/input/kis_pan_action.cpp:50
+msgid "Toggle Pan Mode"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:51
+#, fuzzy
+#| msgid "Left"
+msgid "Pan Left"
+msgstr "ឆ្វេង"
+
+#: ui/input/kis_pan_action.cpp:52
+#, fuzzy
+#| msgid "Right"
+msgid "Pan Right"
+msgstr "ស្ដាំ"
+
+#: ui/input/kis_pan_action.cpp:53
+msgid "Pan Up"
+msgstr ""
+
+#: ui/input/kis_pan_action.cpp:54
+msgid "Pan Down"
+msgstr ""
+
+#: ui/input/kis_rotate_canvas_action.cpp:44
+#, fuzzy
+#| msgid "Rotate Canvas Left"
+msgid "Rotate Canvas"
+msgstr "បង្វើល​ផ្ទាំង​គំនូរ​ទៅ​ឆ្វេង​"
+
+#: ui/input/kis_rotate_canvas_action.cpp:46
+#, fuzzy
+#| msgid "Rotate Node"
+msgid "Toggle Rotate Mode"
+msgstr "បង្វិល​ថ្នាំង"
+
+#: ui/input/kis_rotate_canvas_action.cpp:47
+#, fuzzy
+#| msgid "Rotate Layer"
+msgid "Rotate Left"
+msgstr "បង្វិល​ស្រទាប់"
+
+#: ui/input/kis_rotate_canvas_action.cpp:48
+#, fuzzy
+#| msgid "Rotate Canvas Right"
+msgid "Rotate Right"
+msgstr "បង្វើល​ផ្ទាំង​គំនូរ​ទៅ​ស្ដាំ​​"
+
+#: ui/input/kis_rotate_canvas_action.cpp:49
+#, fuzzy
+#| msgid "Rotation"
+msgid "Reset Rotation"
+msgstr "​បង្វិល"
+
+#: ui/input/kis_show_palette_action.cpp:31
+#, fuzzy
+#| msgid "Choose Palette"
+msgid "Show Popup Palette"
+msgstr "ជ្រើស​ក្ដារ​លាយ"
+
+#: ui/input/kis_tool_invocation_action.cpp:49
+#, fuzzy
+#| msgid "Tool information"
+msgid "Tool Invocation"
+msgstr "ព័ត៌មាន​ឧបករណ៍"
+
+#: ui/input/kis_tool_invocation_action.cpp:50
+msgid ""
+"Tool Invocation invokes the current tool, for example, using the brush tool, "
+"it will start painting."
+msgstr ""
+
+#: ui/input/kis_zoom_action.cpp:44
+#, fuzzy
+#| msgid "Zoom In"
+msgid "Zoom Canvas"
+msgstr "ពង្រីក"
+
+#: ui/input/kis_zoom_action.cpp:47
+msgid "Toggle Zoom Mode"
+msgstr ""
+
+#: ui/input/kis_zoom_action.cpp:50
+#, fuzzy
+#| msgid "Reselect"
+msgid "Reset Zoom to 100%"
+msgstr "ជ្រើស​ឡើង​វិញ"
+
+#: ui/input/kis_zoom_action.cpp:51
+msgid "Fit to Page"
+msgstr ""
+
 #: main.cc:50
 msgid "File(s) or URL(s) to open"
 msgstr "ឯកសារ ឬ URL ដែលត្រូវ់​បើក​"
+
+#, fuzzy
+#~| msgid "RGB (16-bit float/channel) for High Dynamic Range imaging"
+#~ msgid "Gray (16-bit float/channel) for High Dynamic Range imaging"
+#~ msgstr "RGB (លំហូរ​/ឆានែល​ ១៦ ប៊ីត) សម្រាប់​រូបភាព​នៅ​ក្នុង​ជួរ​ថាមវន្ត​​​កម្រិត​ខ្ពស់"
 
 #~ msgid ""
 #~ "Gray (without transparency, 32bit float channel) for High Dynamic Range "
@@ -14525,9 +14653,6 @@ msgstr "ឯកសារ ឬ URL ដែលត្រូវ់​បើក​"
 
 #~ msgid "Resize Image to Size of Selection"
 #~ msgstr "ប្ដូរ​រូបភាព​ទៅ​ទំហំ​ស្រទាប់​បច្ចុប្បន្ន"
-
-#~ msgid "Choose Palette"
-#~ msgstr "ជ្រើស​ក្ដារ​លាយ"
 
 #~ msgid "Ok"
 #~ msgstr "យល់ព្រម"
