@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-11 04:35+0200\n"
+"POT-Creation-Date: 2012-06-17 04:01+0200\n"
 "PO-Revision-Date: 2010-12-22 23:32+0700\n"
 "Last-Translator: Seng Sutha <Sutha@khmeros.info>\n"
 "Language-Team: Khmer [km] <Support@khmeros.info>\n"
@@ -1014,7 +1014,7 @@ msgctxt "%1=extension like Chat or Whiteboard"
 msgid "Close DCC %1"
 msgstr "បិទ DCC %1"
 
-#: src/dcc/chatcontainer.cpp:206 src/irc/query.cpp:507
+#: src/dcc/chatcontainer.cpp:206 src/irc/query.cpp:498
 msgid "Talking to yourself"
 msgstr "និយាយ​ទៅកាន់​ខ្លួន​ឯង"
 
@@ -2466,8 +2466,8 @@ msgstr "%1 ៖ គ្មាន​ឆានែល​ ។"
 
 #: src/irc/inputfilter.cpp:1232 src/irc/inputfilter.cpp:1250
 #: src/irc/inputfilter.cpp:1264 src/irc/inputfilter.cpp:1279
-#: src/irc/inputfilter.cpp:2078 src/irc/query.cpp:173 src/irc/query.cpp:357
-#: src/irc/channel.cpp:1052 src/irc/channel.cpp:1057
+#: src/irc/inputfilter.cpp:2078 src/irc/query.cpp:173 src/irc/channel.cpp:1052
+#: src/irc/channel.cpp:1057
 msgid "Nick"
 msgstr "សម្មតិនាម​"
 
@@ -2871,12 +2871,11 @@ msgid ""
 "operator.</td></tr><tr><th><img src=\"%5\"/></th><td>This person has voice, "
 "and can therefore talk in a moderated channel.</td></tr><tr><th><img src="
 "\"%6\"/></th><td>This person does not have any special privileges.</td></"
-"tr><tr><th><img src=\"%7\"/ style=\"background-image:url(%8)\"></"
-"th><td>This, overlaid on any of the above, indicates that this person is "
-"currently away.</td></tr></table><p>The meaning of admin, owner and halfop "
-"varies between different IRC servers.</p><p>Hovering over any nick shows "
-"their current status. See the Konversation Handbook for more information.</"
-"p></qt>"
+"tr><tr><th><img src=\"%7\"/></th><td>This, overlaid on any of the above, "
+"indicates that this person is currently away.</td></tr></table><p>The "
+"meaning of admin, owner and halfop varies between different IRC servers.</"
+"p><p>Hovering over any nick shows their current status. See the Konversation "
+"Handbook for more information.</p></qt>"
 msgstr ""
 "<qt><p>ប​​ង្ហាញ​អ្នក​ទាំង​​អស់​គ្នា​នេះ​​ក្នុង​ឆានែល​ ។​  សម្មតិនាម​សម្រាប់​ម្នាក់​ៗ​ ត្រូវ​បាន​បង្ហាញ​​ ជាមួយ​រូប​ភាព​"
 "នៃ​ការ​បង្ហាញ​ស្ថាន​ភាព​របស់​ពួកគេ​ ។</p><table><tr><th><img src=\"admin\"/></th><td>អ្នក​"
@@ -3401,6 +3400,58 @@ msgstr ""
 msgid "%1CLEAR [-ALL] [channel | nickname]"
 msgstr ""
 
+#: src/irc/query.cpp:63
+#, fuzzy
+msgid ""
+"<qt><p>Some details of the person you are talking to in this query is shown "
+"in this bar.  The full name and hostmask is shown, along with any image or "
+"logo this person has associated with them in the KDE Address Book.</p><p>See "
+"the <i>Konversation Handbook</i> for information on associating a nick with "
+"a contact in the address book, and for an explanation of what the hostmask "
+"is.</p></qt>"
+msgstr ""
+"<qt><p>សេចក្តី​លម្អិត​មួយ​ចំនួន​នៃ​មនុស្ស​ដែល​អ្ន​កកំពុង​និយាយ​​ក្នុង​សំណួរ​នេះ​ត្រូវ​បាន​បង្ហាញ​ក្នុងរបារ ។  ឈ្មោះ​"
+"ពេញ​ និង​របាំង​ម៉ាស៊ីន​​ត្រូវ​បាន​បង្ហាញ តាម​រយៈរូប​ភាព​មួយ​ចំនួន​ ឬ​ រូបសញ្ញា​អ្នក​ដែល​បាន​តភ្ជាប់​នេះ​ជាមួយវា​ក្នុង​"
+"សៀវ​ភៅ​អាសយ​ដ្ឋាន​របស់​ KDE ។</p><p>មើល​  <i>សៀវភៅ​ដៃ​របស់​ Konversation ​</i> សម្រាប់​ព័ត៌មាន​"
+"លើ​ការ​តភ្ជាប់​សម្មតិនាម​ជាមួយ​ការទាក់​ទងក្នុង​​សៀវភៅ​អាសយដ្ឋាន​ និង​សម្រាប់​ការ​ពន្យល់​​នៃ​អ្វី​ទៅ​ជា​របាំង​ម៉ាស៊ីន​"
+" ។</p></qt>"
+
+#: src/irc/query.cpp:173 src/irc/channel.cpp:1057
+#, fuzzy, kde-format
+msgid "%1 is now known as %2."
+msgstr "%1 ឥឡូវនេះ​ ត្រូវ​បាន​ស្គាល់​ជា​ %2 ។"
+
+#: src/irc/query.cpp:461 src/irc/channel.cpp:2526
+#: src/viewer/statuspanel.cpp:304
+#, fuzzy, kde-format
+msgid "Identity Default ( %1 )"
+msgstr "លំនាំដើម​អត្ត​សញ្ញាណ​ ( %1 )"
+
+#: src/irc/query.cpp:471
+#, fuzzy, kde-format
+msgid "Do you want to close your query with %1?"
+msgstr "តើ​អ្នក​ចង់​ទៅបិទ​សំណួរ​របស់​អ្នក​ជាមួយ​ %1 ឬ ?"
+
+#: src/irc/query.cpp:472
+msgid "Close Query"
+msgstr "បិទ​សំណួរ​"
+
+#: src/irc/query.cpp:514 src/irc/query.cpp:521 src/irc/channel.cpp:1131
+#: src/irc/channel.cpp:1133 src/irc/channel.cpp:1154 src/irc/channel.cpp:1156
+#: src/viewer/ircview.cpp:774
+msgid "Quit"
+msgstr "បោះបង់​"
+
+#: src/irc/query.cpp:514 src/irc/channel.cpp:1154
+#, fuzzy, kde-format
+msgid "%1 has left this server."
+msgstr "%1 បាន​ចេញ​ពី​ម៉ាស៊ីន​បម្រើ​នេះ​ហើយ​ ។"
+
+#: src/irc/query.cpp:521
+#, fuzzy, kde-format
+msgid "%1 has left this server (%2)."
+msgstr "%1 បានចេញ​ពីម៉ាស៊ីនបម្រើ​នេះហើយ​ (%2) ។"
+
 #: src/irc/channellistpanel.cpp:87
 msgid "Channel Name"
 msgstr "ឈ្មោះ​ឆានែល​"
@@ -3683,64 +3734,6 @@ msgstr "អាសយដ្ឋាន​ម៉ាស៊ីន​បម្រើ​
 #, fuzzy
 msgid "The channel name is required."
 msgstr "ឈ្មោះ​ឆានែល​ត្រូវ​បាន​ទាមទារ​ ។"
-
-#: src/irc/query.cpp:63
-#, fuzzy
-msgid ""
-"<qt><p>Some details of the person you are talking to in this query is shown "
-"in this bar.  The full name and hostmask is shown, along with any image or "
-"logo this person has associated with them in the KDE Address Book.</p><p>See "
-"the <i>Konversation Handbook</i> for information on associating a nick with "
-"a contact in the address book, and for an explanation of what the hostmask "
-"is.</p></qt>"
-msgstr ""
-"<qt><p>សេចក្តី​លម្អិត​មួយ​ចំនួន​នៃ​មនុស្ស​ដែល​អ្ន​កកំពុង​និយាយ​​ក្នុង​សំណួរ​នេះ​ត្រូវ​បាន​បង្ហាញ​ក្នុងរបារ ។  ឈ្មោះ​"
-"ពេញ​ និង​របាំង​ម៉ាស៊ីន​​ត្រូវ​បាន​បង្ហាញ តាម​រយៈរូប​ភាព​មួយ​ចំនួន​ ឬ​ រូបសញ្ញា​អ្នក​ដែល​បាន​តភ្ជាប់​នេះ​ជាមួយវា​ក្នុង​"
-"សៀវ​ភៅ​អាសយ​ដ្ឋាន​របស់​ KDE ។</p><p>មើល​  <i>សៀវភៅ​ដៃ​របស់​ Konversation ​</i> សម្រាប់​ព័ត៌មាន​"
-"លើ​ការ​តភ្ជាប់​សម្មតិនាម​ជាមួយ​ការទាក់​ទងក្នុង​​សៀវភៅ​អាសយដ្ឋាន​ និង​សម្រាប់​ការ​ពន្យល់​​នៃ​អ្វី​ទៅ​ជា​របាំង​ម៉ាស៊ីន​"
-" ។</p></qt>"
-
-#: src/irc/query.cpp:173 src/irc/channel.cpp:1057
-#, fuzzy, kde-format
-msgid "%1 is now known as %2."
-msgstr "%1 ឥឡូវនេះ​ ត្រូវ​បាន​ស្គាល់​ជា​ %2 ។"
-
-#: src/irc/query.cpp:358
-#, kde-format
-msgctxt "%1 = nickname, %2 = comma-separated list of channels"
-msgid "Channels you have in common with %1: %2"
-msgstr ""
-
-#: src/irc/query.cpp:470 src/irc/channel.cpp:2526
-#: src/viewer/statuspanel.cpp:304
-#, fuzzy, kde-format
-msgid "Identity Default ( %1 )"
-msgstr "លំនាំដើម​អត្ត​សញ្ញាណ​ ( %1 )"
-
-#: src/irc/query.cpp:480
-#, fuzzy, kde-format
-msgid "Do you want to close your query with %1?"
-msgstr "តើ​អ្នក​ចង់​ទៅបិទ​សំណួរ​របស់​អ្នក​ជាមួយ​ %1 ឬ ?"
-
-#: src/irc/query.cpp:481
-msgid "Close Query"
-msgstr "បិទ​សំណួរ​"
-
-#: src/irc/query.cpp:523 src/irc/query.cpp:530 src/irc/channel.cpp:1131
-#: src/irc/channel.cpp:1133 src/irc/channel.cpp:1154 src/irc/channel.cpp:1156
-#: src/viewer/ircview.cpp:774
-msgid "Quit"
-msgstr "បោះបង់​"
-
-#: src/irc/query.cpp:523 src/irc/channel.cpp:1154
-#, fuzzy, kde-format
-msgid "%1 has left this server."
-msgstr "%1 បាន​ចេញ​ពី​ម៉ាស៊ីន​បម្រើ​នេះ​ហើយ​ ។"
-
-#: src/irc/query.cpp:530
-#, fuzzy, kde-format
-msgid "%1 has left this server (%2)."
-msgstr "%1 បានចេញ​ពីម៉ាស៊ីនបម្រើ​នេះហើយ​ (%2) ។"
 
 #: src/irc/channel.cpp:127
 msgid "Edit Channel Settings"
