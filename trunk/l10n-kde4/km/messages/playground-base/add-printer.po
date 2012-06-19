@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: add-printer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-17 06:03+0200\n"
+"POT-Creation-Date: 2012-06-19 09:40+0200\n"
 "PO-Revision-Date: 2012-06-13 09:29+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -20,10 +20,10 @@ msgstr ""
 "X-Language: km-KH\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
-#: ChooseLpd.cpp:37 ChooseSerial.cpp:36 PageAddPrinter.cpp:37
-#: ChoosePrinters.cpp:37 ChooseSamba.cpp:37 ChooseSocket.cpp:35
-#: ChooseUri.cpp:35 AddPrinterAssistant.cpp:66 PageChoosePPD.cpp:38
-#: PageDestinations.cpp:73
+#: ChooseSerial.cpp:36 PageAddPrinter.cpp:37 ChoosePrinters.cpp:37
+#: AddPrinterAssistant.cpp:66 ChooseSamba.cpp:38 ChooseUri.cpp:35
+#: ChooseLpd.cpp:37 PageChoosePPD.cpp:38 PageDestinations.cpp:73
+#: ChooseSocket.cpp:35
 msgctxt "@title:window"
 msgid "Select a Printer to Add"
 msgstr "ជ្រើស​ម៉ាស៊ីន​បោះពុម្ព​ដើម្បី​បន្ថែម​​"
@@ -123,7 +123,7 @@ msgid "Add a New Printer"
 msgstr "ម៉ាស៊ីន​បោះពុម្ព"
 
 #: AddPrinterAssistant.cpp:70 AddPrinterAssistant.cpp:77
-#: AddPrinterAssistant.cpp:122
+#: AddPrinterAssistant.cpp:119
 msgctxt "@title:window"
 msgid "Pick a Driver"
 msgstr "ជ្រើស​កម្មវិធី​បញ្ជា"
@@ -138,12 +138,12 @@ msgctxt "@title:window"
 msgid "Configure your connection"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ការ​តភ្ជាប់​របស់​អ្នក"
 
-#: AddPrinterAssistant.cpp:220
+#: AddPrinterAssistant.cpp:217
 msgctxt "@info"
 msgid "Failed to add class"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បន្ថែម class"
 
-#: AddPrinterAssistant.cpp:221
+#: AddPrinterAssistant.cpp:218
 #, fuzzy
 #| msgctxt "@info"
 #| msgid "Failed to add printer"
@@ -151,7 +151,7 @@ msgctxt "@info"
 msgid "Failed to configure printer"
 msgstr "បាន​បរាជ័យ​ក្នុង​បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព"
 
-#: AddPrinterAssistant.cpp:223
+#: AddPrinterAssistant.cpp:220
 msgctxt "@title:window"
 msgid "Failed"
 msgstr "បាន​បរាជ័យ"
@@ -343,18 +343,18 @@ msgctxt "@option:check"
 msgid "Share this printer"
 msgstr "ចែករំលែក​ម៉ាស៊ីន​បោះពុម្ព​នេះ"
 
-#. i18n: file: PageDestinations.ui:67
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:73
-msgid "Please choose an item on the list"
-msgstr ""
-
 #. i18n: file: ChoosePrinters.ui:84
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:76
+#: rc.cpp:73
 msgctxt "@label:listbox"
 msgid "Members:"
 msgstr "សមាជិក ៖"
+
+#. i18n: file: PageDestinations.ui:72
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: rc.cpp:76
+msgid "Please choose an item on the list"
+msgstr ""
 
 #. i18n: file: ChooseSamba.ui:26
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
@@ -363,58 +363,63 @@ msgctxt "@title:group"
 msgid "Windows Printer via SAMBA"
 msgstr "ម៉ាស៊ីន​បោះពុម្ព​វីនដូ​តាម SAMBA"
 
-#. i18n: file: ChooseSamba.ui:50
-#. i18n: ectx: property (text), widget (QPushButton, browsePB)
+#. i18n: file: ChooseSamba.ui:32
+#. i18n: ectx: property (text), widget (QLabel, label_6)
 #: rc.cpp:82
+#, fuzzy
+#| msgctxt ""
+#| "@label samba URL markup example, this is preceded by a label containing "
+#| "smb://"
+#| msgid "[workgroup/]server[:port]/printer"
+msgctxt ""
+"@label samba URL markup example, this is preceded by a label containing "
+"smb://"
+msgid "smb://[workgroup/]server[:port]/printer"
+msgstr "[workgroup/]server[:port]/printer"
+
+#. i18n: file: ChooseSamba.ui:42
+#. i18n: ectx: property (text), widget (QPushButton, browsePB)
+#: rc.cpp:85
 msgctxt "@action:button"
 msgid "Browse"
 msgstr "រកមើល"
 
-#. i18n: file: ChooseSamba.ui:66
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:85
-msgctxt ""
-"@label samba URL markup example, this is preceded by a label containing "
-"smb://"
-msgid "[workgroup/]server[:port]/printer"
-msgstr "[workgroup/]server[:port]/printer"
-
-#. i18n: file: ChooseSamba.ui:76
+#. i18n: file: ChooseSamba.ui:52
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
 #: rc.cpp:88
 msgctxt "@title:group"
 msgid "Authentication"
 msgstr "ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#. i18n: file: ChooseSamba.ui:85
+#. i18n: file: ChooseSamba.ui:61
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: rc.cpp:91
 msgctxt "@label:textbox"
 msgid "Username:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
-#. i18n: file: ChooseSamba.ui:98
+#. i18n: file: ChooseSamba.ui:74
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: rc.cpp:94
 msgctxt "@label:textbox"
 msgid "Password"
 msgstr "ពាក្យសម្ងាត់"
 
-#. i18n: file: ChooseSamba.ui:122
+#. i18n: file: ChooseSamba.ui:98
 #. i18n: ectx: property (text), widget (QRadioButton, radioButton)
 #: rc.cpp:97
 msgctxt "@option:radio"
 msgid "Prompt user if password is required"
 msgstr "អ្នក​ប្រើ​ប្រអប់​បញ្ចូល​ ប្រសិនបើ​ពាក្យ​សម្ងាត់​ត្រូវ​បាន​ទាមទារ"
 
-#. i18n: file: ChooseSamba.ui:132
+#. i18n: file: ChooseSamba.ui:108
 #. i18n: ectx: property (text), widget (QRadioButton, authenticationCB)
 #: rc.cpp:100
 msgctxt "@option:radio"
 msgid "Set authentication details now"
 msgstr "កំណត់​សេចក្ដី​លម្អិត​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​ឥឡូវ​នោះ"
 
-#. i18n: file: ChooseSamba.ui:148
+#. i18n: file: ChooseSamba.ui:124
 #. i18n: ectx: property (text), widget (QPushButton, verifyPB)
 #: rc.cpp:103
 msgctxt "@action:button"
