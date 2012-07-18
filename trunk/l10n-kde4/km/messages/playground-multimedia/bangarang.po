@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bangarang\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-06-10 05:21+0200\n"
+"POT-Creation-Date: 2012-07-18 05:00+0200\n"
 "PO-Revision-Date: 2012-07-06 11:41+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -111,6 +111,22 @@ msgstr "រក​មិន​ឃើញ​​ស៊ីឌី"
 #: platform/utilities/mediaitems.cpp:1447
 msgid "Audio CD"
 msgstr "ស៊ីឌី​អូឌីយ៉ូ"
+
+#: app/common/mediaview.cpp:162
+msgid "Add to playlist/Remove from playlist"
+msgstr "បន្ថែម​ទៅកាន់​បញ្ជី​ចាក់​/​យក​ចេញ​ពី​បញ្ជី​ចាក់"
+
+#: app/common/mediaview.cpp:165
+msgid "Show Songs"
+msgstr "បន្ថែម​​​ចម្រៀង"
+
+#: app/common/mediaview.cpp:167
+msgid "Show Albums"
+msgstr "បង្ហាញ​អាល់ប៊ុម"
+
+#: app/common/mediaview.cpp:169
+msgid "Show Artists"
+msgstr "បង្ហាញ​សិល្បករ"
 
 #: app/common/actionsmanager.cpp:64
 msgid "Quit"
@@ -343,22 +359,6 @@ msgstr "បង្ហាញ​បញ្ជី​អូឌីយ៉ូ"
 msgid "Show Video Lists"
 msgstr "បង្ហាញ​បញ្ជី​វីដេអូ"
 
-#: app/common/mediaview.cpp:162
-msgid "Add to playlist/Remove from playlist"
-msgstr "បន្ថែម​ទៅកាន់​បញ្ជី​ចាក់​/​យក​ចេញ​ពី​បញ្ជី​ចាក់"
-
-#: app/common/mediaview.cpp:165
-msgid "Show Songs"
-msgstr "បន្ថែម​​​ចម្រៀង"
-
-#: app/common/mediaview.cpp:167
-msgid "Show Albums"
-msgstr "បង្ហាញ​អាល់ប៊ុម"
-
-#: app/common/mediaview.cpp:169
-msgid "Show Artists"
-msgstr "បង្ហាញ​សិល្បករ"
-
 #: app/main.cpp:30
 msgid "A media player for your KDE desktop"
 msgstr "កម្មវិធី​ចាក់​មេឌៀ​សម្រាប់​ផ្ទៃតុ​ KDE របស់​អ្នក"
@@ -483,14 +483,6 @@ msgstr "បើក​ឯកសារ​ការងារ​សិល្បៈ"
 msgid "Press <Tab> to finish editing."
 msgstr "ចុច <Tab> ដើម្បី​បញ្ចប់​ការ​កែសម្រួល ។"
 
-#: app/medialists/infomanager.cpp:296
-msgid "Click to hide"
-msgstr "ចុច​ដើម្បី​លាក់"
-
-#: app/medialists/infomanager.cpp:298
-msgid "Additional information may be available. <br> Click to show more..."
-msgstr "ព័ត៌មាន​បន្ថែម​អាច​រក​បាន ។ <br> ចុច​ដើម្បី​បង្ហាញ​បន្ថែម..."
-
 #. i18n: file: app/ui/audiolistsstack.ui:729
 #. i18n: ectx: property (text), widget (QLabel, semAMoreVerb)
 #. i18n: file: app/ui/videolistsstack.ui:596
@@ -506,6 +498,14 @@ msgstr "បាន​ចាក់"
 #: app/medialists/medialistsettings.cpp:129
 msgid "rated"
 msgstr "បាន​វាយ​តម្លៃ"
+
+#: app/medialists/infomanager.cpp:296
+msgid "Click to hide"
+msgstr "ចុច​ដើម្បី​លាក់"
+
+#: app/medialists/infomanager.cpp:298
+msgid "Additional information may be available. <br> Click to show more..."
+msgstr "ព័ត៌មាន​បន្ថែម​អាច​រក​បាន ។ <br> ចុច​ដើម្បី​បង្ហាញ​បន្ថែម..."
 
 #. i18n: file: app/ui/mainwindow.ui:263
 #. i18n: ectx: property (clickMessage), widget (KLineEdit, Filter)
@@ -649,6 +649,10 @@ msgstr[0] "%1 ធាតុ"
 #: app/nowplaying/playlistview.cpp:119
 msgid "<b>Playlist</b> (Upcoming)"
 msgstr "<b>បញ្ជី​ចាក់</b> (ដែល​មកដល់)"
+
+#: app/nowplaying/videosettings.cpp:246 app/nowplaying/videosettings.cpp:265
+msgid "Disable"
+msgstr "បិទ"
 
 #: app/nowplaying/audiosettings.cpp:88
 msgid "No effect"
@@ -794,10 +798,6 @@ msgstr "សម្អាត​បញ្ជី​ចាក់"
 msgid "Are you sure you want to clear the current playlist?"
 msgstr "តើ​អ្នក​ប្រាកដ​ជា​ចង់​សម្អាត​បញ្ជី​ចាក់​បច្ចុប្បន្ន​ដែរ​ឬ​ទេ ?"
 
-#: app/nowplaying/videosettings.cpp:246 app/nowplaying/videosettings.cpp:265
-msgid "Disable"
-msgstr "បិទ"
-
 #: platform/infofetchers/feedinfofetcher.cpp:35
 msgid "Feed Info"
 msgstr "មតិ​ព័ត៌មាន "
@@ -873,239 +873,6 @@ msgstr ""
 "កម្មវិធី​ប្រមូល​យក​នេះ​​ប្រើ​ការ​ប៉ាន់ស្មាន និង​ចំនួន​ឧបកថា​ផ្អែកលើ​លំនាំ​ឈ្មោះ​ឯកសារ ។ ឧ.  2x23 or "
 "S02E23 or 2.23"
 
-#: platform/infoitemmodel.cpp:79 platform/infoitemmodel.cpp:90
-msgid "Type"
-msgstr "ប្រភេទ"
-
-#: platform/infoitemmodel.cpp:80
-msgid "Artwork"
-msgstr "ការងារ​សិល្បៈ"
-
-#: platform/infoitemmodel.cpp:81
-msgid "Title"
-msgstr "ចំណងជើង"
-
-#: platform/infoitemmodel.cpp:82
-msgid "Artist"
-msgstr "សិល្បករ"
-
-#: platform/infoitemmodel.cpp:83
-msgid "Composer"
-msgstr "អ្នក​និពន្ធ​បទភ្លេទ"
-
-#: platform/infoitemmodel.cpp:84
-msgid "Album"
-msgstr "អាល់ប៊ុម"
-
-#: platform/infoitemmodel.cpp:85
-msgid "Track"
-msgstr "បទ"
-
-#: platform/infoitemmodel.cpp:86
-msgid "Year"
-msgstr "ឆ្នាំ"
-
-#: platform/infoitemmodel.cpp:87
-msgid "Genre"
-msgstr "ចង្វាក់"
-
-#: platform/infoitemmodel.cpp:88 platform/listengines/medialistsengine.cpp:172
-#: platform/listengines/medialistsengine.cpp:363
-#: platform/listengines/taglistengine.cpp:115
-msgid "Tags"
-msgstr "ស្លាក"
-
-#: platform/infoitemmodel.cpp:89 platform/infoitemmodel.cpp:602
-msgid "Location"
-msgstr "ទីតាំង"
-
-#: platform/infoitemmodel.cpp:91
-msgid "Actor"
-msgstr "តួ​សម្ដែង"
-
-#: platform/infoitemmodel.cpp:92
-msgid "Director"
-msgstr "នាយក/នាយិកា"
-
-#: platform/infoitemmodel.cpp:93
-msgid "Writer"
-msgstr "អ្នក​សរសេរ"
-
-#: platform/infoitemmodel.cpp:94
-msgid "Producer"
-msgstr "អ្នក​ផលិត"
-
-#: platform/infoitemmodel.cpp:95
-msgid "Series"
-msgstr "ស៊េរី"
-
-#: platform/infoitemmodel.cpp:96
-msgid "Season"
-msgstr "រយៈពេល​បញ្ចាំង​ភាព​យន្ត"
-
-#: platform/infoitemmodel.cpp:97
-msgid "Episode"
-msgstr "ផ្នែក​នៃ​ការ​ផ្សាយ​របស់​ទូរទស្សន៍"
-
-#: platform/infoitemmodel.cpp:98
-msgid "Links"
-msgstr "តំណ"
-
-#: platform/infoitemmodel.cpp:99
-msgid "Play Count"
-msgstr "ចំនួន​ចាក់"
-
-#: platform/infoitemmodel.cpp:100
-msgid "Last Played"
-msgstr "​បាន​ចាក់​ចុងក្រោយ"
-
-#: platform/infoitemmodel.cpp:368 platform/infoitemmodel.cpp:379
-#, kde-format
-msgid "Fetching info for %1 item..."
-msgid_plural "Fetching info for %1 items..."
-msgstr[0] "ទៅ​យក​ព័ត៌មាន​ពី​ធាតុ %1 ..."
-
-#: platform/infoitemmodel.cpp:539
-#, kde-format
-msgid "Fetched info for %2 of 1 item..."
-msgid_plural "Fetched info for %2 of %1 items..."
-msgstr[0] "បាន​ទៅ​យក​ព័ត៌មាន​សម្រាប់​ធាតុ %2 នៃ %1 ..."
-
-#: platform/infoitemmodel.cpp:563
-msgid "No Results"
-msgstr "គ្មាន​លទ្ធផល"
-
-#: platform/infoitemmodel.cpp:1154
-#: platform/listengines/musiclistengine.cpp:127
-#: platform/listengines/musiclistengine.cpp:163
-#: platform/listengines/musiclistengine.cpp:232
-#: platform/listengines/musiclistengine.cpp:262
-#: platform/listengines/musiclistengine.cpp:327
-#: platform/utilities/mediaitems.cpp:783 platform/utilities/mediaitems.cpp:796
-#: platform/utilities/mediaitems.cpp:899 platform/utilities/mediaitems.cpp:918
-#: platform/utilities/mediaitems.cpp:937
-msgid "Recently Played Songs"
-msgstr "បទ​ចម្រៀង​ដែល​បាន​ចាក់​​នៅ​កាល​ពី​​ពេល​ថ្មីៗ​នេះ"
-
-#: platform/infoitemmodel.cpp:1155
-#: platform/listengines/musiclistengine.cpp:128
-#: platform/listengines/musiclistengine.cpp:164
-#: platform/listengines/musiclistengine.cpp:233
-#: platform/listengines/musiclistengine.cpp:263
-#: platform/listengines/musiclistengine.cpp:328
-#: platform/utilities/mediaitems.cpp:784 platform/utilities/mediaitems.cpp:797
-#: platform/utilities/mediaitems.cpp:900 platform/utilities/mediaitems.cpp:919
-#: platform/utilities/mediaitems.cpp:938
-msgid "Highest Rated Songs"
-msgstr "បទចម្រៀង​ដែល​បាន​វាយ​តម្លៃ​ខ្ពស់​បំផុត"
-
-#: platform/infoitemmodel.cpp:1156
-#: platform/listengines/musiclistengine.cpp:129
-#: platform/listengines/musiclistengine.cpp:165
-#: platform/listengines/musiclistengine.cpp:234
-#: platform/listengines/musiclistengine.cpp:264
-#: platform/listengines/musiclistengine.cpp:329
-#: platform/utilities/mediaitems.cpp:785 platform/utilities/mediaitems.cpp:798
-#: platform/utilities/mediaitems.cpp:901 platform/utilities/mediaitems.cpp:920
-#: platform/utilities/mediaitems.cpp:939
-msgid "Frequently Played Songs"
-msgstr "បទ​ចម្រៀង​ដែល​បាន​ចាក់​ជា​ញឹកញាប់"
-
-#: platform/infoitemmodel.cpp:1158 platform/infoitemmodel.cpp:1170
-#: platform/infoitemmodel.cpp:1174
-#: platform/listengines/medialistsengine.cpp:64
-#: platform/listengines/medialistsengine.cpp:107
-#: platform/listengines/medialistsengine.cpp:117
-#: platform/listengines/medialistsengine.cpp:127
-#: platform/listengines/medialistsengine.cpp:138
-#: platform/listengines/medialistsengine.cpp:149
-#: platform/listengines/medialistsengine.cpp:160
-#: platform/listengines/medialistsengine.cpp:178
-#: platform/listengines/medialistsengine.cpp:258
-#: platform/listengines/semanticslistengine.cpp:282
-#: platform/listengines/taglistengine.cpp:109
-#: platform/listengines/videolistengine.cpp:241
-#: platform/listengines/videolistengine.cpp:352
-#: platform/listengines/videolistengine.cpp:515
-#: platform/listengines/videolistengine.cpp:576
-#: platform/listengines/videolistengine.cpp:645
-#: platform/utilities/mediaitems.cpp:815 platform/utilities/mediaitems.cpp:833
-#: platform/utilities/mediaitems.cpp:851 platform/utilities/mediaitems.cpp:949
-#: platform/utilities/mediaitems.cpp:967 platform/utilities/mediaitems.cpp:986
-#: platform/utilities/mediaitems.cpp:995
-#: platform/utilities/mediaitems.cpp:1004
-#: platform/utilities/mediaitems.cpp:1013
-#: platform/utilities/mediaitems.cpp:1025
-msgid "Recently Played"
-msgstr "បាន​ចាក់​កាល​ពី​ពេល​​ថ្មីៗ​នេះ"
-
-#: platform/infoitemmodel.cpp:1159 platform/infoitemmodel.cpp:1171
-#: platform/infoitemmodel.cpp:1175
-#: platform/listengines/medialistsengine.cpp:74
-#: platform/listengines/medialistsengine.cpp:108
-#: platform/listengines/medialistsengine.cpp:118
-#: platform/listengines/medialistsengine.cpp:128
-#: platform/listengines/medialistsengine.cpp:139
-#: platform/listengines/medialistsengine.cpp:150
-#: platform/listengines/medialistsengine.cpp:161
-#: platform/listengines/medialistsengine.cpp:179
-#: platform/listengines/medialistsengine.cpp:268
-#: platform/listengines/medialistsengine.cpp:302
-#: platform/listengines/medialistsengine.cpp:312
-#: platform/listengines/medialistsengine.cpp:322
-#: platform/listengines/medialistsengine.cpp:332
-#: platform/listengines/medialistsengine.cpp:342
-#: platform/listengines/medialistsengine.cpp:352
-#: platform/listengines/medialistsengine.cpp:369
-#: platform/listengines/semanticslistengine.cpp:363
-#: platform/listengines/taglistengine.cpp:110
-#: platform/listengines/videolistengine.cpp:242
-#: platform/listengines/videolistengine.cpp:353
-#: platform/listengines/videolistengine.cpp:516
-#: platform/listengines/videolistengine.cpp:577
-#: platform/listengines/videolistengine.cpp:646
-#: platform/utilities/mediaitems.cpp:816 platform/utilities/mediaitems.cpp:834
-#: platform/utilities/mediaitems.cpp:852 platform/utilities/mediaitems.cpp:950
-#: platform/utilities/mediaitems.cpp:968 platform/utilities/mediaitems.cpp:987
-#: platform/utilities/mediaitems.cpp:996
-#: platform/utilities/mediaitems.cpp:1005
-#: platform/utilities/mediaitems.cpp:1014
-#: platform/utilities/mediaitems.cpp:1026
-msgid "Highest Rated"
-msgstr "បាន​វាយ​តម្លៃ​ខ្ពស់​បំផុត"
-
-#: platform/infoitemmodel.cpp:1160 platform/infoitemmodel.cpp:1172
-#: platform/infoitemmodel.cpp:1176
-#: platform/listengines/medialistsengine.cpp:84
-#: platform/listengines/medialistsengine.cpp:109
-#: platform/listengines/medialistsengine.cpp:119
-#: platform/listengines/medialistsengine.cpp:129
-#: platform/listengines/medialistsengine.cpp:140
-#: platform/listengines/medialistsengine.cpp:151
-#: platform/listengines/medialistsengine.cpp:162
-#: platform/listengines/medialistsengine.cpp:180
-#: platform/listengines/medialistsengine.cpp:278
-#: platform/listengines/semanticslistengine.cpp:215
-#: platform/listengines/taglistengine.cpp:111
-#: platform/listengines/videolistengine.cpp:243
-#: platform/listengines/videolistengine.cpp:354
-#: platform/listengines/videolistengine.cpp:517
-#: platform/listengines/videolistengine.cpp:578
-#: platform/listengines/videolistengine.cpp:647
-#: platform/utilities/mediaitems.cpp:817 platform/utilities/mediaitems.cpp:835
-#: platform/utilities/mediaitems.cpp:853 platform/utilities/mediaitems.cpp:951
-#: platform/utilities/mediaitems.cpp:969 platform/utilities/mediaitems.cpp:988
-#: platform/utilities/mediaitems.cpp:997
-#: platform/utilities/mediaitems.cpp:1006
-#: platform/utilities/mediaitems.cpp:1015
-#: platform/utilities/mediaitems.cpp:1027
-msgid "Frequently Played"
-msgstr "បាន​ចាក់​ជា​ញឹកញាប់"
-
-#: platform/infoitemmodel.cpp:1191
-msgid "Fetch Canceled"
-msgstr "បាន​បោះបង់​ការ​ទៅ​ប្រមូល​យក"
-
 #: platform/listengines/ampachelistengine.cpp:137
 #: platform/listengines/medialistsengine.cpp:69
 #: platform/listengines/medialistsengine.cpp:79
@@ -1178,30 +945,6 @@ msgid "1 song"
 msgid_plural "%1 songs"
 msgstr[0] "%1 បទ​ចម្រៀង"
 
-#: platform/listengines/cdlistengine.cpp:88
-#, kde-format
-msgctxt "%1=Total number of tracks on the CD"
-msgid "Audio CD - %1 Tracks"
-msgstr "ស៊ីឌី​អូឌីយ៉ូ  %1 បទ"
-
-#: platform/listengines/cdlistengine.cpp:92
-#, kde-format
-msgid "1 track"
-msgid_plural "%1 tracks"
-msgstr[0] "%1 បទ"
-
-#: platform/listengines/dvdlistengine.cpp:91
-#, kde-format
-msgctxt "%1=Total number of tracks on the DVD"
-msgid "DVD Video - %1 Titles"
-msgstr "វីដេអូ​ឌីវីឌី  %1 ចំណងជើង"
-
-#: platform/listengines/dvdlistengine.cpp:97
-#, kde-format
-msgid "1 title"
-msgid_plural "%1 titles"
-msgstr[0] "%1 ចំណងជើង"
-
 #: platform/listengines/filelistengine.cpp:70
 msgid "Collecting file info..."
 msgstr "កំពុង​ប្រមូល​ព័ត៌មាន​ឯកសារ..."
@@ -1257,6 +1000,94 @@ msgstr "ស្ទ្រីម​អូឌីយ៉ូ​ថ្មី"
 msgid "Edit info to create new audio stream"
 msgstr "កែសម្រួល​ព័ត៌មាន ដើម្បី​បង្កើត​ស្ទ្រីម​អូឌីយ៉ូ​ថ្មី"
 
+#: platform/listengines/medialistsengine.cpp:64
+#: platform/listengines/medialistsengine.cpp:107
+#: platform/listengines/medialistsengine.cpp:117
+#: platform/listengines/medialistsengine.cpp:127
+#: platform/listengines/medialistsengine.cpp:138
+#: platform/listengines/medialistsengine.cpp:149
+#: platform/listengines/medialistsengine.cpp:160
+#: platform/listengines/medialistsengine.cpp:178
+#: platform/listengines/medialistsengine.cpp:258
+#: platform/listengines/semanticslistengine.cpp:282
+#: platform/listengines/taglistengine.cpp:109
+#: platform/listengines/videolistengine.cpp:241
+#: platform/listengines/videolistengine.cpp:352
+#: platform/listengines/videolistengine.cpp:515
+#: platform/listengines/videolistengine.cpp:576
+#: platform/listengines/videolistengine.cpp:645
+#: platform/utilities/mediaitems.cpp:815 platform/utilities/mediaitems.cpp:833
+#: platform/utilities/mediaitems.cpp:851 platform/utilities/mediaitems.cpp:949
+#: platform/utilities/mediaitems.cpp:967 platform/utilities/mediaitems.cpp:986
+#: platform/utilities/mediaitems.cpp:995
+#: platform/utilities/mediaitems.cpp:1004
+#: platform/utilities/mediaitems.cpp:1013
+#: platform/utilities/mediaitems.cpp:1025 platform/infoitemmodel.cpp:1158
+#: platform/infoitemmodel.cpp:1170 platform/infoitemmodel.cpp:1174
+msgid "Recently Played"
+msgstr "បាន​ចាក់​កាល​ពី​ពេល​​ថ្មីៗ​នេះ"
+
+#: platform/listengines/medialistsengine.cpp:74
+#: platform/listengines/medialistsengine.cpp:108
+#: platform/listengines/medialistsengine.cpp:118
+#: platform/listengines/medialistsengine.cpp:128
+#: platform/listengines/medialistsengine.cpp:139
+#: platform/listengines/medialistsengine.cpp:150
+#: platform/listengines/medialistsengine.cpp:161
+#: platform/listengines/medialistsengine.cpp:179
+#: platform/listengines/medialistsengine.cpp:268
+#: platform/listengines/medialistsengine.cpp:302
+#: platform/listengines/medialistsengine.cpp:312
+#: platform/listengines/medialistsengine.cpp:322
+#: platform/listengines/medialistsengine.cpp:332
+#: platform/listengines/medialistsengine.cpp:342
+#: platform/listengines/medialistsengine.cpp:352
+#: platform/listengines/medialistsengine.cpp:369
+#: platform/listengines/semanticslistengine.cpp:363
+#: platform/listengines/taglistengine.cpp:110
+#: platform/listengines/videolistengine.cpp:242
+#: platform/listengines/videolistengine.cpp:353
+#: platform/listengines/videolistengine.cpp:516
+#: platform/listengines/videolistengine.cpp:577
+#: platform/listengines/videolistengine.cpp:646
+#: platform/utilities/mediaitems.cpp:816 platform/utilities/mediaitems.cpp:834
+#: platform/utilities/mediaitems.cpp:852 platform/utilities/mediaitems.cpp:950
+#: platform/utilities/mediaitems.cpp:968 platform/utilities/mediaitems.cpp:987
+#: platform/utilities/mediaitems.cpp:996
+#: platform/utilities/mediaitems.cpp:1005
+#: platform/utilities/mediaitems.cpp:1014
+#: platform/utilities/mediaitems.cpp:1026 platform/infoitemmodel.cpp:1159
+#: platform/infoitemmodel.cpp:1171 platform/infoitemmodel.cpp:1175
+msgid "Highest Rated"
+msgstr "បាន​វាយ​តម្លៃ​ខ្ពស់​បំផុត"
+
+#: platform/listengines/medialistsengine.cpp:84
+#: platform/listengines/medialistsengine.cpp:109
+#: platform/listengines/medialistsengine.cpp:119
+#: platform/listengines/medialistsengine.cpp:129
+#: platform/listengines/medialistsengine.cpp:140
+#: platform/listengines/medialistsengine.cpp:151
+#: platform/listengines/medialistsengine.cpp:162
+#: platform/listengines/medialistsengine.cpp:180
+#: platform/listengines/medialistsengine.cpp:278
+#: platform/listengines/semanticslistengine.cpp:215
+#: platform/listengines/taglistengine.cpp:111
+#: platform/listengines/videolistengine.cpp:243
+#: platform/listengines/videolistengine.cpp:354
+#: platform/listengines/videolistengine.cpp:517
+#: platform/listengines/videolistengine.cpp:578
+#: platform/listengines/videolistengine.cpp:647
+#: platform/utilities/mediaitems.cpp:817 platform/utilities/mediaitems.cpp:835
+#: platform/utilities/mediaitems.cpp:853 platform/utilities/mediaitems.cpp:951
+#: platform/utilities/mediaitems.cpp:969 platform/utilities/mediaitems.cpp:988
+#: platform/utilities/mediaitems.cpp:997
+#: platform/utilities/mediaitems.cpp:1006
+#: platform/utilities/mediaitems.cpp:1015
+#: platform/utilities/mediaitems.cpp:1027 platform/infoitemmodel.cpp:1160
+#: platform/infoitemmodel.cpp:1172 platform/infoitemmodel.cpp:1176
+msgid "Frequently Played"
+msgstr "បាន​ចាក់​ជា​ញឹកញាប់"
+
 #: platform/listengines/medialistsengine.cpp:94
 #: platform/listengines/medialistsengine.cpp:288
 #: platform/listengines/semanticslistengine.cpp:408
@@ -1279,6 +1110,12 @@ msgstr "ស្ទ្រីម​អូឌីយ៉ូ"
 #: platform/listengines/medialistsengine.cpp:165
 msgid "Audio Feeds"
 msgstr "មតិ​ព័ត៌មាន​អូឌីយ៉ូ"
+
+#: platform/listengines/medialistsengine.cpp:172
+#: platform/listengines/medialistsengine.cpp:363
+#: platform/listengines/taglistengine.cpp:115 platform/infoitemmodel.cpp:88
+msgid "Tags"
+msgstr "ស្លាក"
 
 #: platform/listengines/medialistsengine.cpp:185
 #: platform/listengines/medialistsengine.cpp:375
@@ -1339,6 +1176,39 @@ msgstr "ឈុត​វីដេអូ"
 #: platform/listengines/medialistsengine.cpp:356
 msgid "Video Feeds"
 msgstr "មតិយោបល់​វីដេអូ"
+
+#: platform/listengines/musiclistengine.cpp:127
+#: platform/listengines/musiclistengine.cpp:163
+#: platform/listengines/musiclistengine.cpp:232
+#: platform/listengines/musiclistengine.cpp:262
+#: platform/listengines/musiclistengine.cpp:327
+#: platform/utilities/mediaitems.cpp:783 platform/utilities/mediaitems.cpp:796
+#: platform/utilities/mediaitems.cpp:899 platform/utilities/mediaitems.cpp:918
+#: platform/utilities/mediaitems.cpp:937 platform/infoitemmodel.cpp:1154
+msgid "Recently Played Songs"
+msgstr "បទ​ចម្រៀង​ដែល​បាន​ចាក់​​នៅ​កាល​ពី​​ពេល​ថ្មីៗ​នេះ"
+
+#: platform/listengines/musiclistengine.cpp:128
+#: platform/listengines/musiclistengine.cpp:164
+#: platform/listengines/musiclistengine.cpp:233
+#: platform/listengines/musiclistengine.cpp:263
+#: platform/listengines/musiclistengine.cpp:328
+#: platform/utilities/mediaitems.cpp:784 platform/utilities/mediaitems.cpp:797
+#: platform/utilities/mediaitems.cpp:900 platform/utilities/mediaitems.cpp:919
+#: platform/utilities/mediaitems.cpp:938 platform/infoitemmodel.cpp:1155
+msgid "Highest Rated Songs"
+msgstr "បទចម្រៀង​ដែល​បាន​វាយ​តម្លៃ​ខ្ពស់​បំផុត"
+
+#: platform/listengines/musiclistengine.cpp:129
+#: platform/listengines/musiclistengine.cpp:165
+#: platform/listengines/musiclistengine.cpp:234
+#: platform/listengines/musiclistengine.cpp:264
+#: platform/listengines/musiclistengine.cpp:329
+#: platform/utilities/mediaitems.cpp:785 platform/utilities/mediaitems.cpp:798
+#: platform/utilities/mediaitems.cpp:901 platform/utilities/mediaitems.cpp:920
+#: platform/utilities/mediaitems.cpp:939 platform/infoitemmodel.cpp:1156
+msgid "Frequently Played Songs"
+msgstr "បទ​ចម្រៀង​ដែល​បាន​ចាក់​ជា​ញឹកញាប់"
 
 #: platform/listengines/musiclistengine.cpp:149
 #, kde-format
@@ -1452,6 +1322,30 @@ msgid "1 director"
 msgid_plural "%1 directors"
 msgstr[0] "%1 នាយក/នាយិកា"
 
+#: platform/listengines/cdlistengine.cpp:88
+#, kde-format
+msgctxt "%1=Total number of tracks on the CD"
+msgid "Audio CD - %1 Tracks"
+msgstr "ស៊ីឌី​អូឌីយ៉ូ  %1 បទ"
+
+#: platform/listengines/cdlistengine.cpp:92
+#, kde-format
+msgid "1 track"
+msgid_plural "%1 tracks"
+msgstr[0] "%1 បទ"
+
+#: platform/listengines/dvdlistengine.cpp:91
+#, kde-format
+msgctxt "%1=Total number of tracks on the DVD"
+msgid "DVD Video - %1 Titles"
+msgstr "វីដេអូ​ឌីវីឌី  %1 ចំណងជើង"
+
+#: platform/listengines/dvdlistengine.cpp:97
+#, kde-format
+msgid "1 title"
+msgid_plural "%1 titles"
+msgstr[0] "%1 ចំណងជើង"
+
 #: platform/nepomukwriter/main.cpp:45
 msgid "File directive"
 msgstr "ឯកសារ​ដែល​ផ្ដល់​ការ​ណែនាំ"
@@ -1538,36 +1432,6 @@ msgctxt "%1=Number of the Season"
 msgid "Season %1"
 msgstr "រយៈ​ពេល​បញ្ចាំង​ភាពយន្ត %1"
 
-#: platform/playlist.cpp:691
-msgid "Video Playback"
-msgstr "ចាក់​វីដេអូ​សារថ្មី"
-
-#: platform/mediaindexer.cpp:87 platform/mediaindexer.cpp:122
-msgid "Starting update..."
-msgstr "កំពុង​ចាប់ផ្ដើម​ធ្វើ​បច្ចុប្បន្នភាព..."
-
-#: platform/mediaindexer.cpp:288
-#, kde-format
-msgid "Updated: %1 - %2"
-msgstr "បាន​ធ្វើ​បច្ចុប្បន្នភាព ៖ %1 - %2"
-
-#: platform/mediaindexer.cpp:293
-msgid "Removing info..."
-msgstr "កំពុង​យក​ព័ត៌មាន​ចេញ..."
-
-#: platform/mediaitemmodel.cpp:456 platform/mediaitemmodel.cpp:476
-msgid "Multiple"
-msgstr "ច្រើន"
-
-#: platform/mediaitemmodel.cpp:457 platform/mediaitemmodel.cpp:477
-#, kde-format
-msgid "Multiple %1"
-msgstr "ច្រើន %1"
-
-#: platform/mediaitemmodel.cpp:666
-msgid "No results"
-msgstr "គ្មាន​លទ្ធផល"
-
 #: platform/ontologyupdater.cpp:90 platform/ontologyupdater.cpp:211
 #: platform/ontologyupdater.cpp:390 platform/ontologyupdater.cpp:418
 msgid "<b>Updating audio types and properties</b><br>0 items updated..."
@@ -1601,6 +1465,136 @@ msgstr "<b>ការ​ធ្វើ​បច្ចុប្បន្នភាព
 #: platform/ontologyupdater.cpp:439
 msgid "<b>Update stopped.</b>"
 msgstr "<b>បាន​បញ្ឈប់​ការ​ធ្វើ​បច្ចុប្បន្នភាព</b>"
+
+#: platform/infoitemmodel.cpp:79 platform/infoitemmodel.cpp:90
+msgid "Type"
+msgstr "ប្រភេទ"
+
+#: platform/infoitemmodel.cpp:80
+msgid "Artwork"
+msgstr "ការងារ​សិល្បៈ"
+
+#: platform/infoitemmodel.cpp:81
+msgid "Title"
+msgstr "ចំណងជើង"
+
+#: platform/infoitemmodel.cpp:82
+msgid "Artist"
+msgstr "សិល្បករ"
+
+#: platform/infoitemmodel.cpp:83
+msgid "Composer"
+msgstr "អ្នក​និពន្ធ​បទភ្លេទ"
+
+#: platform/infoitemmodel.cpp:84
+msgid "Album"
+msgstr "អាល់ប៊ុម"
+
+#: platform/infoitemmodel.cpp:85
+msgid "Track"
+msgstr "បទ"
+
+#: platform/infoitemmodel.cpp:86
+msgid "Year"
+msgstr "ឆ្នាំ"
+
+#: platform/infoitemmodel.cpp:87
+msgid "Genre"
+msgstr "ចង្វាក់"
+
+#: platform/infoitemmodel.cpp:89 platform/infoitemmodel.cpp:602
+msgid "Location"
+msgstr "ទីតាំង"
+
+#: platform/infoitemmodel.cpp:91
+msgid "Actor"
+msgstr "តួ​សម្ដែង"
+
+#: platform/infoitemmodel.cpp:92
+msgid "Director"
+msgstr "នាយក/នាយិកា"
+
+#: platform/infoitemmodel.cpp:93
+msgid "Writer"
+msgstr "អ្នក​សរសេរ"
+
+#: platform/infoitemmodel.cpp:94
+msgid "Producer"
+msgstr "អ្នក​ផលិត"
+
+#: platform/infoitemmodel.cpp:95
+msgid "Series"
+msgstr "ស៊េរី"
+
+#: platform/infoitemmodel.cpp:96
+msgid "Season"
+msgstr "រយៈពេល​បញ្ចាំង​ភាព​យន្ត"
+
+#: platform/infoitemmodel.cpp:97
+msgid "Episode"
+msgstr "ផ្នែក​នៃ​ការ​ផ្សាយ​របស់​ទូរទស្សន៍"
+
+#: platform/infoitemmodel.cpp:98
+msgid "Links"
+msgstr "តំណ"
+
+#: platform/infoitemmodel.cpp:99
+msgid "Play Count"
+msgstr "ចំនួន​ចាក់"
+
+#: platform/infoitemmodel.cpp:100
+msgid "Last Played"
+msgstr "​បាន​ចាក់​ចុងក្រោយ"
+
+#: platform/infoitemmodel.cpp:368 platform/infoitemmodel.cpp:379
+#, kde-format
+msgid "Fetching info for %1 item..."
+msgid_plural "Fetching info for %1 items..."
+msgstr[0] "ទៅ​យក​ព័ត៌មាន​ពី​ធាតុ %1 ..."
+
+#: platform/infoitemmodel.cpp:539
+#, kde-format
+msgid "Fetched info for %2 of 1 item..."
+msgid_plural "Fetched info for %2 of %1 items..."
+msgstr[0] "បាន​ទៅ​យក​ព័ត៌មាន​សម្រាប់​ធាតុ %2 នៃ %1 ..."
+
+#: platform/infoitemmodel.cpp:563
+msgid "No Results"
+msgstr "គ្មាន​លទ្ធផល"
+
+#: platform/infoitemmodel.cpp:1191
+msgid "Fetch Canceled"
+msgstr "បាន​បោះបង់​ការ​ទៅ​ប្រមូល​យក"
+
+#: platform/mediaindexer.cpp:87 platform/mediaindexer.cpp:122
+msgid "Starting update..."
+msgstr "កំពុង​ចាប់ផ្ដើម​ធ្វើ​បច្ចុប្បន្នភាព..."
+
+#: platform/mediaindexer.cpp:288
+#, kde-format
+msgid "Updated: %1 - %2"
+msgstr "បាន​ធ្វើ​បច្ចុប្បន្នភាព ៖ %1 - %2"
+
+#: platform/mediaindexer.cpp:293
+msgid "Removing info..."
+msgstr "កំពុង​យក​ព័ត៌មាន​ចេញ..."
+
+#: platform/mediaitemmodel.cpp:456 platform/mediaitemmodel.cpp:476
+msgid "Multiple"
+msgstr "ច្រើន"
+
+#: platform/mediaitemmodel.cpp:457 platform/mediaitemmodel.cpp:477
+#, kde-format
+msgid "Multiple %1"
+msgstr "ច្រើន %1"
+
+#: platform/mediaitemmodel.cpp:666
+msgid "No results"
+msgstr "គ្មាន​លទ្ធផល"
+
+#: platform/playlist.cpp:691
+msgid "Video Playback"
+msgstr "ចាក់​វីដេអូ​សារថ្មី"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
