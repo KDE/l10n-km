@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-24 12:05+0200\n"
+"POT-Creation-Date: 2012-08-07 07:34+0200\n"
 "PO-Revision-Date: 2012-06-20 14:07+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -29,18 +29,6 @@ msgstr "លាក់​របារ​តម្រង"
 msgctxt "@label:textbox"
 msgid "Filter:"
 msgstr "តម្រង ៖"
-
-#: kitemviews/kfileitemlistwidget.cpp:54
-msgctxt "@item:intable"
-msgid "Unknown"
-msgstr "មិន​ស្គាល់"
-
-#: kitemviews/kfileitemlistwidget.cpp:56
-#, kde-format
-msgctxt "@item:intable"
-msgid "%1 item"
-msgid_plural "%1 items"
-msgstr[0] "ធាតុ %1"
 
 #: kitemviews/kfileitemmodel.cpp:1559
 msgctxt "@title:group Groups that start with a digit"
@@ -314,6 +302,18 @@ msgstr "ម្ចាស់"
 msgctxt "@label"
 msgid "User Group"
 msgstr "ក្រុម​អ្នក​ប្រើ"
+
+#: kitemviews/kfileitemlistwidget.cpp:53
+msgctxt "@item:intable"
+msgid "Unknown"
+msgstr "មិន​ស្គាល់"
+
+#: kitemviews/kfileitemlistwidget.cpp:55
+#, kde-format
+msgctxt "@item:intable"
+msgid "%1 item"
+msgid_plural "%1 items"
+msgstr[0] "ធាតុ %1"
 
 #: kitemviews/private/knepomukrolesprovider.cpp:176
 msgctxt "@item:intable Image orientation"
@@ -1355,6 +1355,17 @@ msgstr "ផ្ទុក​ឡើង​វិញ"
 msgid "Default"
 msgstr "លំនាំដើម"
 
+#: views/draganddrophelper.cpp:34
+#, kde-format
+msgctxt "@info:status"
+msgid "Access denied. Could not write to <filename>%1</filename>"
+msgstr "បាន​បដិសេធ ។ មិន​អាច​សរសេរ​ទៅកាន់ <filename>%1</filename> បាន​ទេ ។"
+
+#: views/draganddrophelper.cpp:49
+msgctxt "@info:status"
+msgid "A folder cannot be dropped into itself"
+msgstr "ថត​មិនអាច​ត្រូវ​បាន​ទម្លាក់​នៅ​ក្នុង​ខ្លួន​វា​ផ្ទាល់​បានទេ"
+
 #: views/dolphinview.cpp:536
 #, kde-format
 msgctxt "@info:status"
@@ -1406,42 +1417,69 @@ msgctxt "@info:status"
 msgid "0 Folders, 0 Files"
 msgstr "ថត ០ ឯកសារ ០"
 
-#: views/dolphinview.cpp:856
+#: views/dolphinview.cpp:864
 msgctxt "@action:inmenu"
 msgid "Automatic Column Widths"
 msgstr "ទទឹង​ជួរឈរ​ស្វ័យប្រវត្តិ"
 
-#: views/dolphinview.cpp:861
+#: views/dolphinview.cpp:869
 msgctxt "@action:inmenu"
 msgid "Custom Column Widths"
 msgstr "ទទឹង​ជួរឈរ​ផ្ទាល់​ខ្លួន"
 
-#: views/dolphinview.cpp:1250
+#: views/dolphinview.cpp:1258
 msgctxt "@info:status"
 msgid "Delete operation completed."
 msgstr "បាន​បញ្ចប់​ការ​លុប ។"
 
-#: views/dolphinview.cpp:1344
+#: views/dolphinview.cpp:1352
 msgctxt "@info:status"
 msgid "The location is empty."
 msgstr "ទីតាំង​គឺ​ទទេ ។"
 
-#: views/dolphinview.cpp:1346
+#: views/dolphinview.cpp:1354
 #, kde-format
 msgctxt "@info:status"
 msgid "The location '%1' is invalid."
 msgstr "ទីតាំង '%1' មិនត្រឹមត្រូវ ។"
 
-#: views/draganddrophelper.cpp:34
-#, kde-format
-msgctxt "@info:status"
-msgid "Access denied. Could not write to <filename>%1</filename>"
-msgstr "បាន​បដិសេធ ។ មិន​អាច​សរសេរ​ទៅកាន់ <filename>%1</filename> បាន​ទេ ។"
+#: views/renamedialog.cpp:58
+msgctxt "@title:window"
+msgid "Rename Item"
+msgstr "ប្ដូរ​ឈ្មោះ​ធាតុ"
 
-#: views/draganddrophelper.cpp:49
+#: views/renamedialog.cpp:59
+msgctxt "@title:window"
+msgid "Rename Items"
+msgstr "ប្ដូរ​ឈ្មោះ​ធាតុ"
+
+#: views/renamedialog.cpp:63
+msgctxt "@action:button"
+msgid "&Rename"
+msgstr "ប្តូរ​​ឈ្មោះ​"
+
+#: views/renamedialog.cpp:73
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Rename the item <filename>%1</filename> to:"
+msgstr "ប្ដូរ​ឈ្មោះ​ធាតុ <filename>%1</filename> ទៅ ៖"
+
+#: views/renamedialog.cpp:76
 msgctxt "@info:status"
-msgid "A folder cannot be dropped into itself"
-msgstr "ថត​មិនអាច​ត្រូវ​បាន​ទម្លាក់​នៅ​ក្នុង​ខ្លួន​វា​ផ្ទាល់​បានទេ"
+msgid "New name #"
+msgstr "ឈ្មោះ​ថ្មី #"
+
+#: views/renamedialog.cpp:78
+#, kde-format
+msgctxt "@label:textbox"
+msgid "Rename the %1 selected item to:"
+msgid_plural "Rename the %1 selected items to:"
+msgstr[0] "ប្ដូរ​ឈ្មោះ​ធាតុ​ដែលបាន​ជ្រើស %1 ៖"
+
+#: views/renamedialog.cpp:107
+msgctxt "@info"
+msgid "# will be replaced by ascending numbers starting with:"
+msgstr "# នឹង​ត្រូវ​បាន​ជំនួស​ដោយ​លេខ​លំដាប់​ឡើង ដែល​ចាប់ផ្ដើម​ដោយ ៖"
 
 #: views/dolphinviewactionhandler.cpp:99
 msgctxt "@action"
@@ -1552,44 +1590,6 @@ msgstr "សេចក្ដី​លម្អិត"
 msgctxt "@info"
 msgid "Details view mode"
 msgstr "របៀប​មើល​ជា​សេចក្ដី​លម្អិត"
-
-#: views/renamedialog.cpp:58
-msgctxt "@title:window"
-msgid "Rename Item"
-msgstr "ប្ដូរ​ឈ្មោះ​ធាតុ"
-
-#: views/renamedialog.cpp:59
-msgctxt "@title:window"
-msgid "Rename Items"
-msgstr "ប្ដូរ​ឈ្មោះ​ធាតុ"
-
-#: views/renamedialog.cpp:63
-msgctxt "@action:button"
-msgid "&Rename"
-msgstr "ប្តូរ​​ឈ្មោះ​"
-
-#: views/renamedialog.cpp:73
-#, kde-format
-msgctxt "@label:textbox"
-msgid "Rename the item <filename>%1</filename> to:"
-msgstr "ប្ដូរ​ឈ្មោះ​ធាតុ <filename>%1</filename> ទៅ ៖"
-
-#: views/renamedialog.cpp:76
-msgctxt "@info:status"
-msgid "New name #"
-msgstr "ឈ្មោះ​ថ្មី #"
-
-#: views/renamedialog.cpp:78
-#, kde-format
-msgctxt "@label:textbox"
-msgid "Rename the %1 selected item to:"
-msgid_plural "Rename the %1 selected items to:"
-msgstr[0] "ប្ដូរ​ឈ្មោះ​ធាតុ​ដែលបាន​ជ្រើស %1 ៖"
-
-#: views/renamedialog.cpp:109
-msgctxt "@info"
-msgid "# will be replaced by ascending numbers starting with:"
-msgstr "# នឹង​ត្រូវ​បាន​ជំនួស​ដោយ​លេខ​លំដាប់​ឡើង ដែល​ចាប់ផ្ដើម​ដោយ ៖"
 
 #: dolphinpart.cpp:146
 msgctxt "@action:inmenu Edit"
@@ -1765,35 +1765,49 @@ msgid "File Manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​ឯកសារ"
 
 #: main.cpp:39
+#, fuzzy
+#| msgctxt "@info:credit"
+#| msgid "(C) 2006-2012 Peter Penz"
 msgctxt "@info:credit"
-msgid "(C) 2006-2012 Peter Penz"
+msgid "(C) 2006-2012 Peter Penz and Frank Reininghaus"
 msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៦-២០១២ ដោយ Peter Penz"
 
 #: main.cpp:41
 msgctxt "@info:credit"
-msgid "Peter Penz"
-msgstr "Peter Penz"
+msgid "Frank Reininghaus"
+msgstr "Frank Reininghaus"
 
 #: main.cpp:42
+#, fuzzy
+#| msgctxt "@info:credit"
+#| msgid "Maintainer and developer"
 msgctxt "@info:credit"
-msgid "Maintainer and developer"
+msgid "Maintainer (since 2012) and developer"
 msgstr "អ្នក​ថែទាំ និង​អ្នក​​អភិវឌ្ឍន៍"
 
 #: main.cpp:44
 msgctxt "@info:credit"
-msgid "Frank Reininghaus"
-msgstr "Frank Reininghaus"
+msgid "Peter Penz"
+msgstr "Peter Penz"
 
-#: main.cpp:45 main.cpp:48 main.cpp:51 main.cpp:54 main.cpp:57 main.cpp:60
-#: main.cpp:63 main.cpp:66
+#: main.cpp:45
+#, fuzzy
+#| msgctxt "@info:credit"
+#| msgid "Maintainer and developer"
 msgctxt "@info:credit"
-msgid "Developer"
-msgstr "អ្នក​អភិវឌ្ឍន៍"
+msgid "Maintainer and developer (2006-2012)"
+msgstr "អ្នក​ថែទាំ និង​អ្នក​​អភិវឌ្ឍន៍"
 
 #: main.cpp:47
 msgctxt "@info:credit"
 msgid "Sebastian Trüg"
 msgstr "Sebastian Trüg"
+
+#: main.cpp:48 main.cpp:51 main.cpp:54 main.cpp:57 main.cpp:60 main.cpp:63
+#: main.cpp:66
+msgctxt "@info:credit"
+msgid "Developer"
+msgstr "អ្នក​អភិវឌ្ឍន៍"
 
 #: main.cpp:50
 msgctxt "@info:credit"
@@ -1849,267 +1863,6 @@ msgstr "Dolphin នឹង​ចាប់ផ្ដើម​មើល​ការ�
 msgctxt "@info:shell"
 msgid "Document to open"
 msgstr "ឯកសារ​ដែល​ត្រូវ​បើក"
-
-#: dolphinmainwindow.cpp:318
-msgctxt "@info:status"
-msgid "Successfully copied."
-msgstr "បាន​ចម្លង​ដោយ​​ជោគជ័យ ។"
-
-#: dolphinmainwindow.cpp:321
-msgctxt "@info:status"
-msgid "Successfully moved."
-msgstr "បាន​ផ្លាស់ទី​ដោយ​ជោគជ័យ ។"
-
-#: dolphinmainwindow.cpp:324
-msgctxt "@info:status"
-msgid "Successfully linked."
-msgstr "បាន​តភ្ជាប់​ដោយ​ជោគជ័យ ។"
-
-#: dolphinmainwindow.cpp:327
-msgctxt "@info:status"
-msgid "Successfully moved to trash."
-msgstr "បាន​ផ្លាស់ទី​ទៅ​ធុង​សំរាប​ដោយ​ជោគជ័យ ។"
-
-#: dolphinmainwindow.cpp:330
-msgctxt "@info:status"
-msgid "Successfully renamed."
-msgstr "បាន​ប្ដូរ​ឈ្មោះ​ដោយ​ជោគជ័យ"
-
-#: dolphinmainwindow.cpp:334
-msgctxt "@info:status"
-msgid "Created folder."
-msgstr "បាន​បង្កើតថត ។"
-
-#: dolphinmainwindow.cpp:418
-msgctxt "@info"
-msgid "Go back"
-msgstr "ថយក្រោយ"
-
-#: dolphinmainwindow.cpp:424
-msgctxt "@info"
-msgid "Go forward"
-msgstr "ទៅ​មុខ"
-
-#: dolphinmainwindow.cpp:592
-msgctxt "@title:window"
-msgid "Confirmation"
-msgstr "កា​រអះអាង"
-
-#: dolphinmainwindow.cpp:596
-msgid "C&lose Current Tab"
-msgstr "បិទ​ផ្ទាំង​បច្ចុប្បន្ន"
-
-#: dolphinmainwindow.cpp:604
-msgid ""
-"You have multiple tabs open in this window, are you sure you want to quit?"
-msgstr "អ្នក​មាន​ផ្ទាំង​ជា​ច្រើន​បានបើក​នៅ​ក្នុង​បង្អួច​នេះ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ចេញ​ដែរឬទេ ?"
-
-#: dolphinmainwindow.cpp:606
-msgid "Do not ask again"
-msgstr "កុំ​សួរ​ម្ដង​ទៀត"
-
-#: dolphinmainwindow.cpp:1182
-msgctxt "@action:inmenu"
-msgid "New Tab"
-msgstr "ផ្ទាំង​ថ្មី"
-
-#: dolphinmainwindow.cpp:1185
-msgctxt "@action:inmenu"
-msgid "Detach Tab"
-msgstr "ផ្ដាច់​ផ្ទាំង"
-
-#: dolphinmainwindow.cpp:1187
-msgctxt "@action:inmenu"
-msgid "Close Other Tabs"
-msgstr "បិទ​ផ្ទាំង​ផ្សេងទៀត"
-
-#: dolphinmainwindow.cpp:1189
-msgctxt "@action:inmenu"
-msgid "Close Tab"
-msgstr "បិទ​​ផ្ទាំង"
-
-#: dolphinmainwindow.cpp:1365
-msgctxt "@action:inmenu"
-msgid "Location Bar"
-msgstr "របារ​ទីតាំង"
-
-#: dolphinmainwindow.cpp:1373
-msgctxt "@action:inmenu"
-msgid "Go"
-msgstr "ទៅ"
-
-#: dolphinmainwindow.cpp:1383
-msgctxt "@action:inmenu"
-msgid "Tools"
-msgstr "ឧបករណ៍​"
-
-#: dolphinmainwindow.cpp:1397
-msgctxt "@action:inmenu"
-msgid "Help"
-msgstr "ជំនួយ"
-
-#: dolphinmainwindow.cpp:1492
-msgctxt "@action:inmenu File"
-msgid "New &Window"
-msgstr "បង្អួច​ថ្មី"
-
-#: dolphinmainwindow.cpp:1498
-msgctxt "@action:inmenu File"
-msgid "New Tab"
-msgstr "ផ្ទាំង​ថ្មី"
-
-#: dolphinmainwindow.cpp:1504
-msgctxt "@action:inmenu File"
-msgid "Close Tab"
-msgstr "បិទ​​ផ្ទាំង"
-
-#: dolphinmainwindow.cpp:1527
-msgctxt "@action:inmenu Edit"
-msgid "Paste"
-msgstr "បិទភ្ជាប់"
-
-#: dolphinmainwindow.cpp:1532
-msgctxt "@action:inmenu Edit"
-msgid "Select All"
-msgstr "ជ្រើស​ទាំងអស់"
-
-#: dolphinmainwindow.cpp:1550
-msgctxt "@action:inmenu View"
-msgid "Reload"
-msgstr "ផ្ទុក​ឡើង​វិញ"
-
-#: dolphinmainwindow.cpp:1556
-msgctxt "@action:inmenu View"
-msgid "Stop"
-msgstr "បញ្ឈប់"
-
-#: dolphinmainwindow.cpp:1557
-msgctxt "@info"
-msgid "Stop loading"
-msgstr "បញ្ឈប់​ការ​ផ្ទុក"
-
-#: dolphinmainwindow.cpp:1562
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Editable Location"
-msgstr "ទីតាំង​ដែល​អាច​កែសម្រួល​បាន"
-
-#: dolphinmainwindow.cpp:1567
-msgctxt "@action:inmenu Navigation Bar"
-msgid "Replace Location"
-msgstr "ទីតាំង​ជំនួស"
-
-#: dolphinmainwindow.cpp:1578
-msgid "Recently Closed Tabs"
-msgstr "ផ្ទាំង​ដែល​បាន​បិទ​ថ្មី"
-
-#: dolphinmainwindow.cpp:1584
-msgid "Empty Recently Closed Tabs"
-msgstr "ផ្ទាំង​ដែល​បាន​បិទ​ថ្មី​ទទេ"
-
-#: dolphinmainwindow.cpp:1602
-msgctxt "@action:inmenu Tools"
-msgid "Show Filter Bar"
-msgstr "បង្ហាញ​របារ​តម្រង"
-
-#: dolphinmainwindow.cpp:1608
-msgctxt "@action:inmenu Tools"
-msgid "Compare Files"
-msgstr "ប្រៀបធៀប​ឯកសារ"
-
-#: dolphinmainwindow.cpp:1614
-msgctxt "@action:inmenu Tools"
-msgid "Open Terminal"
-msgstr "បើក​ស្ថានីយ"
-
-#: dolphinmainwindow.cpp:1635
-msgctxt "@action:inmenu"
-msgid "Activate Next Tab"
-msgstr "ធ្វើ​ឲ្យ​ផ្ទាំង​បន្ទាប់​សកម្ម"
-
-#: dolphinmainwindow.cpp:1640
-msgctxt "@action:inmenu"
-msgid "Activate Previous Tab"
-msgstr "ធ្វើ​ឲ្យ​ផ្ទាំង​មុន​សកម្ម"
-
-#: dolphinmainwindow.cpp:1646
-msgctxt "@action:inmenu"
-msgid "Open in New Tab"
-msgstr "បើក​នៅ​ក្នុង​ផ្ទាំង​ថ្មី"
-
-#: dolphinmainwindow.cpp:1651
-msgctxt "@action:inmenu"
-msgid "Open in New Window"
-msgstr "បើក​នៅ​ក្នុង​បង្អួច​ថ្មី"
-
-#: dolphinmainwindow.cpp:1661
-msgctxt "@action:inmenu Panels"
-msgid "Unlock Panels"
-msgstr "បន្ទះ​​មិន​ជាប់​សោ"
-
-#: dolphinmainwindow.cpp:1663
-msgctxt "@action:inmenu Panels"
-msgid "Lock Panels"
-msgstr "ចាក់​សោ​បន្ទះ"
-
-#: dolphinmainwindow.cpp:1669
-msgctxt "@title:window"
-msgid "Information"
-msgstr "ព័ត៌មាន"
-
-#: dolphinmainwindow.cpp:1690
-msgctxt "@title:window"
-msgid "Folders"
-msgstr "ថត"
-
-#: dolphinmainwindow.cpp:1713
-msgctxt "@title:window Shell terminal"
-msgid "Terminal"
-msgstr "ស្ថានីយ"
-
-#: dolphinmainwindow.cpp:1743
-msgctxt "@title:window"
-msgid "Places"
-msgstr "ទីកន្លែង"
-
-#: dolphinmainwindow.cpp:1768
-msgctxt "@action:inmenu View"
-msgid "Panels"
-msgstr "បន្ទះ"
-
-#: dolphinmainwindow.cpp:1839
-msgctxt "@action"
-msgid "Control"
-msgstr "វត្ថុ​បញ្ជា"
-
-#: dolphinmainwindow.cpp:2006
-msgctxt "@action:intoolbar Close right view"
-msgid "Close"
-msgstr "បិទ​"
-
-#: dolphinmainwindow.cpp:2007
-msgctxt "@info"
-msgid "Close right view"
-msgstr "បិទ​ទិដ្ឋភាព​ខាង​ស្ដាំ"
-
-#: dolphinmainwindow.cpp:2010
-msgctxt "@action:intoolbar Close left view"
-msgid "Close"
-msgstr "បិទ​"
-
-#: dolphinmainwindow.cpp:2011
-msgctxt "@info"
-msgid "Close left view"
-msgstr "បិទ​ទិដ្ឋភាព​ខាង​ឆ្វេង"
-
-#: dolphinmainwindow.cpp:2015
-msgctxt "@action:intoolbar Split view"
-msgid "Split"
-msgstr "ពុះ"
-
-#: dolphinmainwindow.cpp:2016
-msgctxt "@info"
-msgid "Split view"
-msgstr "ពុះ​ទិដ្ឋភាព"
 
 #: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
@@ -2586,3 +2339,264 @@ msgstr "ឧបករណ៍"
 msgctxt "@title:menu"
 msgid "Dolphin Toolbar"
 msgstr "របារ​ឧបករណ៍ Dolphin"
+
+#: dolphinmainwindow.cpp:318
+msgctxt "@info:status"
+msgid "Successfully copied."
+msgstr "បាន​ចម្លង​ដោយ​​ជោគជ័យ ។"
+
+#: dolphinmainwindow.cpp:321
+msgctxt "@info:status"
+msgid "Successfully moved."
+msgstr "បាន​ផ្លាស់ទី​ដោយ​ជោគជ័យ ។"
+
+#: dolphinmainwindow.cpp:324
+msgctxt "@info:status"
+msgid "Successfully linked."
+msgstr "បាន​តភ្ជាប់​ដោយ​ជោគជ័យ ។"
+
+#: dolphinmainwindow.cpp:327
+msgctxt "@info:status"
+msgid "Successfully moved to trash."
+msgstr "បាន​ផ្លាស់ទី​ទៅ​ធុង​សំរាប​ដោយ​ជោគជ័យ ។"
+
+#: dolphinmainwindow.cpp:330
+msgctxt "@info:status"
+msgid "Successfully renamed."
+msgstr "បាន​ប្ដូរ​ឈ្មោះ​ដោយ​ជោគជ័យ"
+
+#: dolphinmainwindow.cpp:334
+msgctxt "@info:status"
+msgid "Created folder."
+msgstr "បាន​បង្កើតថត ។"
+
+#: dolphinmainwindow.cpp:418
+msgctxt "@info"
+msgid "Go back"
+msgstr "ថយក្រោយ"
+
+#: dolphinmainwindow.cpp:424
+msgctxt "@info"
+msgid "Go forward"
+msgstr "ទៅ​មុខ"
+
+#: dolphinmainwindow.cpp:592
+msgctxt "@title:window"
+msgid "Confirmation"
+msgstr "កា​រអះអាង"
+
+#: dolphinmainwindow.cpp:596
+msgid "C&lose Current Tab"
+msgstr "បិទ​ផ្ទាំង​បច្ចុប្បន្ន"
+
+#: dolphinmainwindow.cpp:604
+msgid ""
+"You have multiple tabs open in this window, are you sure you want to quit?"
+msgstr "អ្នក​មាន​ផ្ទាំង​ជា​ច្រើន​បានបើក​នៅ​ក្នុង​បង្អួច​នេះ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ចេញ​ដែរឬទេ ?"
+
+#: dolphinmainwindow.cpp:606
+msgid "Do not ask again"
+msgstr "កុំ​សួរ​ម្ដង​ទៀត"
+
+#: dolphinmainwindow.cpp:1182
+msgctxt "@action:inmenu"
+msgid "New Tab"
+msgstr "ផ្ទាំង​ថ្មី"
+
+#: dolphinmainwindow.cpp:1185
+msgctxt "@action:inmenu"
+msgid "Detach Tab"
+msgstr "ផ្ដាច់​ផ្ទាំង"
+
+#: dolphinmainwindow.cpp:1187
+msgctxt "@action:inmenu"
+msgid "Close Other Tabs"
+msgstr "បិទ​ផ្ទាំង​ផ្សេងទៀត"
+
+#: dolphinmainwindow.cpp:1189
+msgctxt "@action:inmenu"
+msgid "Close Tab"
+msgstr "បិទ​​ផ្ទាំង"
+
+#: dolphinmainwindow.cpp:1365
+msgctxt "@action:inmenu"
+msgid "Location Bar"
+msgstr "របារ​ទីតាំង"
+
+#: dolphinmainwindow.cpp:1373
+msgctxt "@action:inmenu"
+msgid "Go"
+msgstr "ទៅ"
+
+#: dolphinmainwindow.cpp:1383
+msgctxt "@action:inmenu"
+msgid "Tools"
+msgstr "ឧបករណ៍​"
+
+#: dolphinmainwindow.cpp:1397
+msgctxt "@action:inmenu"
+msgid "Help"
+msgstr "ជំនួយ"
+
+#: dolphinmainwindow.cpp:1492
+msgctxt "@action:inmenu File"
+msgid "New &Window"
+msgstr "បង្អួច​ថ្មី"
+
+#: dolphinmainwindow.cpp:1498
+msgctxt "@action:inmenu File"
+msgid "New Tab"
+msgstr "ផ្ទាំង​ថ្មី"
+
+#: dolphinmainwindow.cpp:1504
+msgctxt "@action:inmenu File"
+msgid "Close Tab"
+msgstr "បិទ​​ផ្ទាំង"
+
+#: dolphinmainwindow.cpp:1527
+msgctxt "@action:inmenu Edit"
+msgid "Paste"
+msgstr "បិទភ្ជាប់"
+
+#: dolphinmainwindow.cpp:1532
+msgctxt "@action:inmenu Edit"
+msgid "Select All"
+msgstr "ជ្រើស​ទាំងអស់"
+
+#: dolphinmainwindow.cpp:1550
+msgctxt "@action:inmenu View"
+msgid "Reload"
+msgstr "ផ្ទុក​ឡើង​វិញ"
+
+#: dolphinmainwindow.cpp:1556
+msgctxt "@action:inmenu View"
+msgid "Stop"
+msgstr "បញ្ឈប់"
+
+#: dolphinmainwindow.cpp:1557
+msgctxt "@info"
+msgid "Stop loading"
+msgstr "បញ្ឈប់​ការ​ផ្ទុក"
+
+#: dolphinmainwindow.cpp:1562
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Editable Location"
+msgstr "ទីតាំង​ដែល​អាច​កែសម្រួល​បាន"
+
+#: dolphinmainwindow.cpp:1567
+msgctxt "@action:inmenu Navigation Bar"
+msgid "Replace Location"
+msgstr "ទីតាំង​ជំនួស"
+
+#: dolphinmainwindow.cpp:1578
+msgid "Recently Closed Tabs"
+msgstr "ផ្ទាំង​ដែល​បាន​បិទ​ថ្មី"
+
+#: dolphinmainwindow.cpp:1584
+msgid "Empty Recently Closed Tabs"
+msgstr "ផ្ទាំង​ដែល​បាន​បិទ​ថ្មី​ទទេ"
+
+#: dolphinmainwindow.cpp:1602
+msgctxt "@action:inmenu Tools"
+msgid "Show Filter Bar"
+msgstr "បង្ហាញ​របារ​តម្រង"
+
+#: dolphinmainwindow.cpp:1608
+msgctxt "@action:inmenu Tools"
+msgid "Compare Files"
+msgstr "ប្រៀបធៀប​ឯកសារ"
+
+#: dolphinmainwindow.cpp:1614
+msgctxt "@action:inmenu Tools"
+msgid "Open Terminal"
+msgstr "បើក​ស្ថានីយ"
+
+#: dolphinmainwindow.cpp:1635
+msgctxt "@action:inmenu"
+msgid "Activate Next Tab"
+msgstr "ធ្វើ​ឲ្យ​ផ្ទាំង​បន្ទាប់​សកម្ម"
+
+#: dolphinmainwindow.cpp:1640
+msgctxt "@action:inmenu"
+msgid "Activate Previous Tab"
+msgstr "ធ្វើ​ឲ្យ​ផ្ទាំង​មុន​សកម្ម"
+
+#: dolphinmainwindow.cpp:1646
+msgctxt "@action:inmenu"
+msgid "Open in New Tab"
+msgstr "បើក​នៅ​ក្នុង​ផ្ទាំង​ថ្មី"
+
+#: dolphinmainwindow.cpp:1651
+msgctxt "@action:inmenu"
+msgid "Open in New Window"
+msgstr "បើក​នៅ​ក្នុង​បង្អួច​ថ្មី"
+
+#: dolphinmainwindow.cpp:1661
+msgctxt "@action:inmenu Panels"
+msgid "Unlock Panels"
+msgstr "បន្ទះ​​មិន​ជាប់​សោ"
+
+#: dolphinmainwindow.cpp:1663
+msgctxt "@action:inmenu Panels"
+msgid "Lock Panels"
+msgstr "ចាក់​សោ​បន្ទះ"
+
+#: dolphinmainwindow.cpp:1669
+msgctxt "@title:window"
+msgid "Information"
+msgstr "ព័ត៌មាន"
+
+#: dolphinmainwindow.cpp:1690
+msgctxt "@title:window"
+msgid "Folders"
+msgstr "ថត"
+
+#: dolphinmainwindow.cpp:1713
+msgctxt "@title:window Shell terminal"
+msgid "Terminal"
+msgstr "ស្ថានីយ"
+
+#: dolphinmainwindow.cpp:1743
+msgctxt "@title:window"
+msgid "Places"
+msgstr "ទីកន្លែង"
+
+#: dolphinmainwindow.cpp:1768
+msgctxt "@action:inmenu View"
+msgid "Panels"
+msgstr "បន្ទះ"
+
+#: dolphinmainwindow.cpp:1839
+msgctxt "@action"
+msgid "Control"
+msgstr "វត្ថុ​បញ្ជា"
+
+#: dolphinmainwindow.cpp:2006
+msgctxt "@action:intoolbar Close right view"
+msgid "Close"
+msgstr "បិទ​"
+
+#: dolphinmainwindow.cpp:2007
+msgctxt "@info"
+msgid "Close right view"
+msgstr "បិទ​ទិដ្ឋភាព​ខាង​ស្ដាំ"
+
+#: dolphinmainwindow.cpp:2010
+msgctxt "@action:intoolbar Close left view"
+msgid "Close"
+msgstr "បិទ​"
+
+#: dolphinmainwindow.cpp:2011
+msgctxt "@info"
+msgid "Close left view"
+msgstr "បិទ​ទិដ្ឋភាព​ខាង​ឆ្វេង"
+
+#: dolphinmainwindow.cpp:2015
+msgctxt "@action:intoolbar Split view"
+msgid "Split"
+msgstr "ពុះ"
+
+#: dolphinmainwindow.cpp:2016
+msgctxt "@info"
+msgid "Split view"
+msgstr "ពុះ​ទិដ្ឋភាព"
