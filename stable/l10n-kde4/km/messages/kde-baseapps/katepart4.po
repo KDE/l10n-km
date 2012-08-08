@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-27 04:18+0200\n"
+"POT-Creation-Date: 2012-08-07 21:36+0200\n"
 "PO-Revision-Date: 2012-06-13 09:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -224,7 +224,7 @@ msgstr[0] " តួអក្សរ"
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:12
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
 #: dialogs/katedialogs.cpp:679 dialogs/katedialogs.cpp:756
-#: dialogs/katedialogs.cpp:923 rc.cpp:92 rc.cpp:610
+#: dialogs/katedialogs.cpp:923 rc.cpp:92 rc.cpp:499
 msgid "General"
 msgstr "ទូទៅ"
 
@@ -280,7 +280,7 @@ msgstr "បានផ្លាស់ប្ដូរ​របៀប​អ្នក
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:110
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/katedialogs.cpp:924 rc.cpp:589
+#: dialogs/katedialogs.cpp:924 rc.cpp:478
 msgid "Advanced"
 msgstr "កម្រិត​ខ្ពស់"
 
@@ -655,7 +655,7 @@ msgstr "លក្ខណៈ​សម្បត្តិ​របស់ %1"
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:66
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: mode/katemodeconfigpage.cpp:284 rc.cpp:308
+#: mode/katemodeconfigpage.cpp:284 rc.cpp:614
 msgid "Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ"
 
@@ -849,6 +849,16 @@ msgstr "កំហុស​ក្នុង​ផ្ទុក​ស្គ្រី
 msgid "Error loading script %1"
 msgstr "កំហុស​ក្នុងកា​រផ្ទុក​ស្គ្រីប %1"
 
+#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
+#, kde-format
+msgid "Command not found: %1"
+msgstr "ពាក្យ​បញ្ជា​រក​មិនឃើញ ៖ %1"
+
+#: script/katescriptmanager.cpp:349
+msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
+msgstr ""
+"ផ្ទុក​ឯកសារ​ JavaScript ទាំងអស់​ឡើង​វិញ (indenters, command line scripts, etc) ។"
+
 #: script/katescriptconsole.cpp:61
 msgid "Error: can't open utils.js"
 msgstr "កំហុស ៖ មិន​អាច​បើក utils.js"
@@ -868,16 +878,6 @@ msgstr "​ប្រតិបត្តិ"
 #: script/katescriptconsole.cpp:147
 msgid "There's no code to execute"
 msgstr "មិន​មាន​កូដ​ដើម្បី​ប្រតិបត្តិ​ឡើយ"
-
-#: script/katescriptmanager.cpp:339 script/katescriptmanager.cpp:352
-#, kde-format
-msgid "Command not found: %1"
-msgstr "ពាក្យ​បញ្ជា​រក​មិនឃើញ ៖ %1"
-
-#: script/katescriptmanager.cpp:349
-msgid "Reload all JavaScript files (indenters, command line scripts, etc)."
-msgstr ""
-"ផ្ទុក​ឯកសារ​ JavaScript ទាំងអស់​ឡើង​វិញ (indenters, command line scripts, etc) ។"
 
 #: search/katesearchbar.cpp:77
 msgid "Add..."
@@ -1099,6 +1099,59 @@ msgstr "កំហុស !"
 msgid "Error: %1"
 msgstr "កំហុស ៖ %1"
 
+#: syntax/katehighlight.cpp:83
+msgctxt "Syntax highlighting"
+msgid "None"
+msgstr "គ្មាន"
+
+#: syntax/katehighlight.cpp:737
+msgid "Normal Text"
+msgstr "អត្ថបទ​ធម្មតា"
+
+#: syntax/katehighlight.cpp:899
+#, kde-format
+msgid ""
+"<b>%1</b>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
+"name<br />"
+msgstr ""
+"<b>%1</b> ៖ វាក្យសម្ពន្ធ​ដែល​នឹង​លែង​ប្រើ​ក្នុង​ពេល​អនាគត​ ។ គុណ​​​លក្ខណៈ (%2) ដែល​មិន​បង្ហាញ​ដោយ​ឈ្មោះ​"
+"និមិត្ត​សញ្ញា<br />"
+
+#: syntax/katehighlight.cpp:1422
+#, kde-format
+msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
+msgstr "<b>%1</b> ៖ វាក្យ​សម្ពន្ធ​មិន​ល្អ ។ បរិបទ %2 គ្មាន​ឈ្មោះ​និមិត្ត​សញ្ញា​ទេ<br />"
+
+#: syntax/katehighlight.cpp:1508
+#, kde-format
+msgid ""
+"<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
+msgstr "<B>%1</B> ៖ វាក្យ​សម្ពន្ធ​មិន​ល្អ ។ បរិបទ %2 មិន​បាន​ចុះអាសយដ្ឋាន​ដោយ​ឈ្មោះ​និមិត្ត​សញ្ញា​ទេ"
+
+#: syntax/katehighlight.cpp:1652
+msgid ""
+"There were warning(s) and/or error(s) while parsing the syntax highlighting "
+"configuration."
+msgstr "មាន​ការ​ព្រមាន និង​/ឬ​កំហុស​នៅ​ខណៈ​ពេល​ញែក​ការ​កំណត់​រចនា​សម្ព័ន្ធ​រំលេច​​វាក្យ​សម្ពន្ធ ។"
+
+#: syntax/katehighlight.cpp:1654
+msgid "Kate Syntax Highlighting Parser"
+msgstr "ឧបករណ៍​ញែក​ការ​​រំលេច​វាក្យសម្ពន្ធ​របស់ Kate"
+
+#: syntax/katehighlight.cpp:1816
+msgid ""
+"Since there has been an error parsing the highlighting description, this "
+"highlighting will be disabled"
+msgstr "ដោយ​សារ​តែ​មាន​កំហុស​មួយ​ក្នុង​ការ​ញែក​សេចក្ដី​អធិប្បាយ​​រំលេច ការ​រំលេច​​នេះ​នឹង​ត្រូវ​បាន​បិទ ។"
+
+#: syntax/katehighlight.cpp:2042
+#, kde-format
+msgid ""
+"<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
+">"
+msgstr ""
+"<b>%1</b> ៖ តំបន់​សេចក្ដី​អធិប្បាយ​​ពហុ​បន្ទាត់​​ដែល​បាន​បញ្ជាក់ (%2) មិន​អាច​ត្រូវ​បាន​ដោះ​ស្រាយ​ឡើយ<br />"
+
 #: syntax/katesyntaxmanager.cpp:156
 msgctxt "@item:intable Text context"
 msgid "Normal"
@@ -1169,59 +1222,6 @@ msgctxt "@item:intable Text context"
 msgid "Error"
 msgstr "កំហុស"
 
-#: syntax/katehighlight.cpp:83
-msgctxt "Syntax highlighting"
-msgid "None"
-msgstr "គ្មាន"
-
-#: syntax/katehighlight.cpp:737
-msgid "Normal Text"
-msgstr "អត្ថបទ​ធម្មតា"
-
-#: syntax/katehighlight.cpp:899
-#, kde-format
-msgid ""
-"<b>%1</b>: Deprecated syntax. Attribute (%2) not addressed by symbolic "
-"name<br />"
-msgstr ""
-"<b>%1</b> ៖ វាក្យសម្ពន្ធ​ដែល​នឹង​លែង​ប្រើ​ក្នុង​ពេល​អនាគត​ ។ គុណ​​​លក្ខណៈ (%2) ដែល​មិន​បង្ហាញ​ដោយ​ឈ្មោះ​"
-"និមិត្ត​សញ្ញា<br />"
-
-#: syntax/katehighlight.cpp:1422
-#, kde-format
-msgid "<b>%1</b>: Deprecated syntax. Context %2 has no symbolic name<br />"
-msgstr "<b>%1</b> ៖ វាក្យ​សម្ពន្ធ​មិន​ល្អ ។ បរិបទ %2 គ្មាន​ឈ្មោះ​និមិត្ត​សញ្ញា​ទេ<br />"
-
-#: syntax/katehighlight.cpp:1508
-#, kde-format
-msgid ""
-"<B>%1</B>:Deprecated syntax. Context %2 not addressed by a symbolic name"
-msgstr "<B>%1</B> ៖ វាក្យ​សម្ពន្ធ​មិន​ល្អ ។ បរិបទ %2 មិន​បាន​ចុះអាសយដ្ឋាន​ដោយ​ឈ្មោះ​និមិត្ត​សញ្ញា​ទេ"
-
-#: syntax/katehighlight.cpp:1652
-msgid ""
-"There were warning(s) and/or error(s) while parsing the syntax highlighting "
-"configuration."
-msgstr "មាន​ការ​ព្រមាន និង​/ឬ​កំហុស​នៅ​ខណៈ​ពេល​ញែក​ការ​កំណត់​រចនា​សម្ព័ន្ធ​រំលេច​​វាក្យ​សម្ពន្ធ ។"
-
-#: syntax/katehighlight.cpp:1654
-msgid "Kate Syntax Highlighting Parser"
-msgstr "ឧបករណ៍​ញែក​ការ​​រំលេច​វាក្យសម្ពន្ធ​របស់ Kate"
-
-#: syntax/katehighlight.cpp:1816
-msgid ""
-"Since there has been an error parsing the highlighting description, this "
-"highlighting will be disabled"
-msgstr "ដោយ​សារ​តែ​មាន​កំហុស​មួយ​ក្នុង​ការ​ញែក​សេចក្ដី​អធិប្បាយ​​រំលេច ការ​រំលេច​​នេះ​នឹង​ត្រូវ​បាន​បិទ ។"
-
-#: syntax/katehighlight.cpp:2042
-#, kde-format
-msgid ""
-"<b>%1</b>: Specified multiline comment region (%2) could not be resolved<br /"
-">"
-msgstr ""
-"<b>%1</b> ៖ តំបន់​សេចក្ដី​អធិប្បាយ​​ពហុ​បន្ទាត់​​ដែល​បាន​បញ្ជាក់ (%2) មិន​អាច​ត្រូវ​បាន​ដោះ​ស្រាយ​ឡើយ<br />"
-
 #: utils/kateautoindent.cpp:75
 msgctxt "Autoindent mode"
 msgid "None"
@@ -1278,230 +1278,89 @@ msgstr "បន្ទាប់ ៖ %1 - \"%2\""
 msgid "&Previous: %1 - \"%2\""
 msgstr "មុន ៖ %1 - \"%2\""
 
-#: utils/kateprinter.cpp:246
-msgid "(Selection of) "
-msgstr "(ជម្រើស) "
-
-#: utils/kateprinter.cpp:528
+#: utils/katecmds.cpp:203 utils/katecmds.cpp:236
 #, kde-format
-msgid "Typographical Conventions for %1"
-msgstr "ការ​សន្មត​ទូទៅ​នៃ​មុទ្ទវិទ្យា​សម្រាប់ %1"
+msgid "Missing argument. Usage: %1 <value>"
+msgstr "បាត់​អាគុយម៉ង់ ។ ការ​ប្រើ ៖ %1 <value>"
 
-#: utils/kateprinter.cpp:558
-msgid "text"
-msgstr "អត្ថបទ"
+#: utils/katecmds.cpp:218
+#, kde-format
+msgid "No such highlighting '%1'"
+msgstr "គ្មាន​ការ​រំលេច '%1' បែប​នេះ​ទេ"
 
-#: utils/kateprinter.cpp:682
-msgid "Te&xt Settings"
-msgstr "ការ​កំណត់​អត្ថបទ"
+#: utils/katecmds.cpp:225
+#, kde-format
+msgid "No such mode '%1'"
+msgstr "គ្មាន​របៀប '%1' ដូចនោះ​ទេ"
 
-#: utils/kateprinter.cpp:686
-msgid "Print line &numbers"
-msgstr "បោះពុម្ព​លេខ​បន្ទាត់"
+#: utils/katecmds.cpp:240
+#, kde-format
+msgid "Failed to convert argument '%1' to integer."
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បម្លែង​អាគុយ​ម៉ង់ '%1' ទៅ​ជា​ចំនួន​គត់ ។"
 
-#: utils/kateprinter.cpp:689
-msgid "Print &legend"
-msgstr "បោះពុម្ព​តាង"
+#: utils/katecmds.cpp:246 utils/katecmds.cpp:252
+msgid "Width must be at least 1."
+msgstr "ទទឹង​យ៉ាង​ហោច​ណាស់​ស្មើ ១ ។"
 
-#: utils/kateprinter.cpp:698
-msgid ""
-"<p>If enabled, line numbers will be printed on the left side of the page(s)."
-"</p>"
-msgstr "<p>ប្រសិន​បើ​​បើក នោះ​លេខ​បន្ទាត់​នឹង​ត្រូវ​បាន​បោះពុម្ព​នៅ​លើ​ចំហៀង​ខាងឆ្វេង​នៃ​ទំព័រ ។</p>"
+#: utils/katecmds.cpp:258
+msgid "Column must be at least 1."
+msgstr "ជួរឈរ​យ៉ាង​ហោច​ណាស់​ស្មើ ១ ។"
 
-#: utils/kateprinter.cpp:700
-msgid ""
-"<p>Print a box displaying typographical conventions for the document type, "
-"as defined by the syntax highlighting being used.</p>"
-msgstr ""
-"<p>បោះពុម្ព​ប្រអប់​មួយ​ដែល​បង្ហាញ​ការ​កំណត់​ទូទៅ​នៃ​មុទ្ទវិទ្យា ​សម្រាប់​ប្រភេទ​ឯកសារ ដូច​ដែល​បាន​កំណត់​ដោយ​ការ​"
-"រំលេច​វាក្យ​សម្ពន្ធ​ដែល​កំពុង​ប្រើ ។</p>"
+#: utils/katecmds.cpp:297
+#, kde-format
+msgid "Usage: %1 on|off|1|0|true|false"
+msgstr "ប្រើ ៖ %1 on|off|1|0|true|false"
 
-#: utils/kateprinter.cpp:752
-msgid "Hea&der && Footer"
-msgstr "បឋមកថា និង​បាតកថា"
+#: utils/katecmds.cpp:328
+#, kde-format
+msgid "Bad argument '%1'. Usage: %2 on|off|1|0|true|false"
+msgstr "អាគុយ​ម៉ង់ '%1' មិន​ត្រឹមត្រូវ ។ ប្រើ ៖ %2 on|off|1|0|true|false"
 
-#: utils/kateprinter.cpp:759
-msgid "Pr&int header"
-msgstr "បោះពុម្ព​បឋមកថា"
+#: utils/katecmds.cpp:333 utils/katecmds.cpp:498
+#, kde-format
+msgid "Unknown command '%1'"
+msgstr "មិន​ស្គាល់​ពាក្យ​បញ្ជា '%1'"
 
-#: utils/kateprinter.cpp:761
-msgid "Pri&nt footer"
-msgstr "បោះពុម្ព​បាតកថា"
+#: utils/katecmds.cpp:409
+#, kde-format
+msgid "No mapping found for \"%1\""
+msgstr "រក​មិនឃើញ​ការ​ផ្គូផ្គង​សម្រាប់ \"%1\""
 
-#: utils/kateprinter.cpp:767
-msgid "Header/footer font:"
-msgstr "ពុម្ពអក្សរ​បឋមកថា​/​បាតកថា ៖"
+#: utils/katecmds.cpp:412
+#, kde-format
+msgid "\"%1\" is mapped to \"%2\""
+msgstr "\"%1\" ត្រូវ​បានផ្គូផ្គង​ទៅ \"%2\""
 
-#: utils/kateprinter.cpp:772
-msgid "Choo&se Font..."
-msgstr "ជ្រើស​ពុម្ពអក្សរ​​..."
+#: utils/katecmds.cpp:417
+#, kde-format
+msgid "Missing argument(s). Usage: %1 <from> [<to>]"
+msgstr "បាត់​អាគុយម៉ង់ ។ ការ​ប្រើ ៖ %1 <from> [<to>]"
 
-#: utils/kateprinter.cpp:778
-msgid "Header Properties"
-msgstr "លក្ខណៈ​សម្បត្តិ​បឋមកថា"
+#: utils/katecmds.cpp:475 utils/katecmds.cpp:491
+msgid "Wrong arguments"
+msgstr "អាគុយម៉ង់​មិន​ត្រឹមត្រូវ"
 
-#: utils/kateprinter.cpp:782
-msgid "&Format:"
-msgstr "ទ្រង់ទ្រាយ ៖"
+#: utils/katecmds.cpp:575
+msgid "Document written to disk"
+msgstr "បាន​សរសេរ​ឯកសារ​ទៅ​ថាស"
 
-#: utils/kateprinter.cpp:800 utils/kateprinter.cpp:837
-msgid "Colors:"
-msgstr "ពណ៌ ៖"
+#: utils/katecmds.cpp:807
+msgid "Sorry, but Kate is not able to replace newlines, yet"
+msgstr "សូម​អភ័យទោស Kate មិនអាច​ជំនួស​បន្ទាត់​ថ្មីបាន​នៅឡើយទេ"
 
-#: utils/kateprinter.cpp:806 utils/kateprinter.cpp:843
-msgid "Foreground:"
-msgstr "ផ្ទៃ​ខាងមុខ ៖"
+#: utils/katecmds.cpp:846
+#, kde-format
+msgctxt "substituted into the previous message"
+msgid "1 line"
+msgid_plural "%1 lines"
+msgstr[0] "%1 បន្ទាត់"
 
-#: utils/kateprinter.cpp:809
-msgid "Bac&kground"
-msgstr "ផ្ទៃ​ខាងក្រោយ"
-
-#: utils/kateprinter.cpp:813
-msgid "Footer Properties"
-msgstr "លក្ខណៈ​សម្បត្តិ​បាតកថា​"
-
-#: utils/kateprinter.cpp:818
-msgid "For&mat:"
-msgstr "ទ្រង់ទ្រាយ ៖"
-
-#: utils/kateprinter.cpp:846
-msgid "&Background"
-msgstr "ផ្ទៃ​ខាងក្រោយ"
-
-#: utils/kateprinter.cpp:873
-msgid "<p>Format of the page header. The following tags are supported:</p>"
-msgstr "<p>ទ្រង់ទ្រាយ​បឋមកថា​ទំព័រ ។ ស្លាក​ខាងក្រោម​គឺ​ត្រូវ​បាន​គាំទ្រ ៖</p>"
-
-#: utils/kateprinter.cpp:875
-msgid ""
-"<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
-"time in short format</li><li><tt>%D</tt>: complete date/time in long format</"
-"li><li><tt>%h</tt>: current time</li><li><tt>%y</tt>: current date in short "
-"format</li><li><tt>%Y</tt>: current date in long format</li><li><tt>%f</tt>: "
-"file name</li><li><tt>%U</tt>: full URL of the document</li><li><tt>%p</tt>: "
-"page number</li><li><tt>%P</tt>: total amount of pages</li></ul><br />"
-msgstr ""
-"<ul><li><tt>%u</tt> ៖ ឈ្មោះ​អ្នកប្រើ​បច្ចុប្បន្ន</li><li><tt>%d</tt> ៖ កាលបរិច្ឆេទ/"
-"ពេលវេលា ពេញលេញ​ក្នុង​ទ្រង់ទ្រាយ​ខ្លី</li><li><tt>%D</tt> ៖ កាលបរិច្ឆេទ/ពេលវេលា ពេញលេញ​ក្នុង​"
-"ទ្រង់ទ្រាយ​វែង</li><li><tt>%h</tt> ៖ ពេលវេលា​បច្ចុប្បន្ន</li><li><tt>%y</tt> ៖ "
-"កាលបរិច្ឆេទ​បច្ចុប្បន្ន​ក្នុង​ទ្រង់ទ្រាយ​ខ្លី</li><li><tt>%Y</tt> ៖ កាលបរិច្ឆេទ​បច្ចុប្បន្ន​ក្នុង​ទ្រង់ទ្រាយ​"
-"វែង</li><li><tt>%f</tt> ៖ ឈ្មោះ​ឯកសារ</li><li><tt>%U</tt> ៖ URL ពេញលេញ​របស់​"
-"ឯកសារ</li><li><tt>%p</tt> ៖ លេខ​ទំព័រ</li><li><tt>%P</tt> ៖ ចំនួន​ទំព័រ​សរុប</li></"
-"ul><br />"
-
-#: utils/kateprinter.cpp:889
-msgid "<p>Format of the page footer. The following tags are supported:</p>"
-msgstr "<p>ទ្រង់ទ្រាយ​នៃ​បាតកថា​ទំព័រ ។ ស្លាក​ខាងក្រោម​ត្រូវ​បាន​គាំទ្រ ៖</p>"
-
-#: utils/kateprinter.cpp:987
-msgid "Add Placeholder..."
-msgstr "បន្ថែម​កន្លែង​ដាក់..."
-
-#: utils/kateprinter.cpp:989
-msgid "Current User Name"
-msgstr "ឈ្មោះ​អ្នកប្រើ​បច្ចុប្បន្ន"
-
-#: utils/kateprinter.cpp:991
-msgid "Complete Date/Time (short format)"
-msgstr "កាលបរិច្ឆេទ/ពេលវេលា ពេញលេញ (ទ្រង់ទ្រាយ​ខ្លី)"
-
-#: utils/kateprinter.cpp:993
-msgid "Complete Date/Time (long format)"
-msgstr "កាលបរិច្ឆេទ/ពេលវេលា ពេញលេញ (ទ្រង់ទ្រាយ​វែង)"
-
-#: utils/kateprinter.cpp:995
-msgid "Current Time"
-msgstr "ពេលវេលា​បច្ចុប្បន្ន"
-
-#: utils/kateprinter.cpp:997
-msgid "Current Date (short format)"
-msgstr "ពេលវេលា​បច្ចុប្បន្ន (ទ្រង់ទ្រាយ​ខ្លី)"
-
-#: utils/kateprinter.cpp:999
-msgid "Current Date (long format)"
-msgstr "ពេលវេលា​បច្ចុប្បន្ន (ទ្រង់ទ្រាយ​វែង)"
-
-#: utils/kateprinter.cpp:1001
-msgid "File Name"
-msgstr "ឈ្មោះ​ឯកសារ"
-
-#: utils/kateprinter.cpp:1003
-msgid "Full document URL"
-msgstr "URL ឯកសារ​ពេញលេញ"
-
-#: utils/kateprinter.cpp:1005
-msgid "Page Number"
-msgstr "លេខ​ទំព័រ"
-
-#: utils/kateprinter.cpp:1007
-msgid "Total Amount of Pages"
-msgstr "ចំនួន​ទំព័រ​សរុប"
-
-#: utils/kateprinter.cpp:1116
-msgid "L&ayout"
-msgstr "ប្លង់"
-
-#: utils/kateprinter.cpp:1122 schema/kateschemaconfig.cpp:960
-msgid "&Schema:"
-msgstr "គ្រោងការណ៍ ៖"
-
-#: utils/kateprinter.cpp:1127
-msgid "Draw bac&kground color"
-msgstr "គូរ​ពណ៌​ផ្ទៃខាងក្រោយ"
-
-#: utils/kateprinter.cpp:1130
-msgid "Draw &boxes"
-msgstr "គូរ​ប្រអប់"
-
-#: utils/kateprinter.cpp:1134
-msgid "Box Properties"
-msgstr "លក្ខណៈ​សម្បត្តិ​ប្រអប់"
-
-#: utils/kateprinter.cpp:1138
-msgid "W&idth:"
-msgstr "ទទឹង ៖"
-
-#: utils/kateprinter.cpp:1146
-msgid "&Margin:"
-msgstr "រឹម ៖"
-
-#: utils/kateprinter.cpp:1154
-msgid "Co&lor:"
-msgstr "ពណ៌ ៖"
-
-#: utils/kateprinter.cpp:1171
-msgid "Select the color scheme to use for the print."
-msgstr "ជ្រើស​គ្រោងការណ៍​ពណ៌​ត្រូវ​ប្រើ​សម្រាប់​បោះពុម្ព ។"
-
-#: utils/kateprinter.cpp:1173
-msgid ""
-"<p>If enabled, the background color of the editor will be used.</p><p>This "
-"may be useful if your color scheme is designed for a dark background.</p>"
-msgstr ""
-"<p>ប្រសិន​បើ​បាន​បើក ពណ៌​ផ្ទៃ​ខាងក្រោយ​របស់​កម្មវិធី​និពន្ធ​នឹង​ត្រូវ​បាន​ប្រើ ។</p><p>វា​មាន​ប្រយោជន៍ នៅ​ពេល​"
-"ដែល​ពណ៌​ចម្រុះ​របស់​អ្នក​ត្រូវ​បាន​រចនា​សម្រាប់​ផ្ទៃខាងក្រោយខ្មៅ ។</p>"
-
-#: utils/kateprinter.cpp:1176
-msgid ""
-"<p>If enabled, a box as defined in the properties below will be drawn around "
-"the contents of each page. The Header and Footer will be separated from the "
-"contents with a line as well.</p>"
-msgstr ""
-"<p>ប្រសិន​បើ​បាន​បើក ប្រអប់​ដែល​បាន​កំណត់​ក្នុង​លក្ខណៈសម្បត្តិ​ខាងក្រោម នឹង​ត្រូវ​បាន​គូរ​ជុំវិញ​មាតិកា​របស់​ទំព័រ​"
-"នីមួយៗ ។​</p><p>បឋមកថា និង​បាតកថា​នឹង​ត្រូវ​បាន​បំបែក​ពី​មាតិកា​ដោយ​បន្ទាត់​ផងដែរ ។</p>"
-
-#: utils/kateprinter.cpp:1180
-msgid "The width of the box outline"
-msgstr "ទទឹង​របស់​គ្រោង​ប្រអប់"
-
-#: utils/kateprinter.cpp:1182
-msgid "The margin inside boxes, in pixels"
-msgstr "រឹម​ខាង​ក្នុង​ប្រអប់ ជា​ភីកសែល"
-
-#: utils/kateprinter.cpp:1184
-msgid "The line color to use for boxes"
-msgstr "ពណ៌​បន្ទាត់​ដែល​ត្រូវ​ប្រើ​សម្រាប់​ប្រអប់"
+#: utils/katecmds.cpp:844
+#, kde-format
+msgctxt "%2 is the translation of the next message"
+msgid "1 replacement done on %2"
+msgid_plural "%1 replacements done on %2"
+msgstr[0] "បាន​ជំនួស %1 នៅ​លើ %2"
 
 #: utils/kateglobal.cpp:65
 msgid "Kate Part"
@@ -1844,325 +1703,230 @@ msgstr "ការបើក និង​រក្សាទុក​ឯកសា�
 msgid "Extensions Manager"
 msgstr "កម្មវិធី​​គ្រប់គ្រង​ផ្នែក​បន្ថែម"
 
-#: utils/katecmds.cpp:203 utils/katecmds.cpp:236
+#: utils/kateprinter.cpp:246
+msgid "(Selection of) "
+msgstr "(ជម្រើស) "
+
+#: utils/kateprinter.cpp:528
 #, kde-format
-msgid "Missing argument. Usage: %1 <value>"
-msgstr "បាត់​អាគុយម៉ង់ ។ ការ​ប្រើ ៖ %1 <value>"
-
-#: utils/katecmds.cpp:218
-#, kde-format
-msgid "No such highlighting '%1'"
-msgstr "គ្មាន​ការ​រំលេច '%1' បែប​នេះ​ទេ"
-
-#: utils/katecmds.cpp:225
-#, kde-format
-msgid "No such mode '%1'"
-msgstr "គ្មាន​របៀប '%1' ដូចនោះ​ទេ"
-
-#: utils/katecmds.cpp:240
-#, kde-format
-msgid "Failed to convert argument '%1' to integer."
-msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បម្លែង​អាគុយ​ម៉ង់ '%1' ទៅ​ជា​ចំនួន​គត់ ។"
-
-#: utils/katecmds.cpp:246 utils/katecmds.cpp:252
-msgid "Width must be at least 1."
-msgstr "ទទឹង​យ៉ាង​ហោច​ណាស់​ស្មើ ១ ។"
-
-#: utils/katecmds.cpp:258
-msgid "Column must be at least 1."
-msgstr "ជួរឈរ​យ៉ាង​ហោច​ណាស់​ស្មើ ១ ។"
-
-#: utils/katecmds.cpp:297
-#, kde-format
-msgid "Usage: %1 on|off|1|0|true|false"
-msgstr "ប្រើ ៖ %1 on|off|1|0|true|false"
-
-#: utils/katecmds.cpp:328
-#, kde-format
-msgid "Bad argument '%1'. Usage: %2 on|off|1|0|true|false"
-msgstr "អាគុយ​ម៉ង់ '%1' មិន​ត្រឹមត្រូវ ។ ប្រើ ៖ %2 on|off|1|0|true|false"
-
-#: utils/katecmds.cpp:333 utils/katecmds.cpp:498
-#, kde-format
-msgid "Unknown command '%1'"
-msgstr "មិន​ស្គាល់​ពាក្យ​បញ្ជា '%1'"
-
-#: utils/katecmds.cpp:409
-#, kde-format
-msgid "No mapping found for \"%1\""
-msgstr "រក​មិនឃើញ​ការ​ផ្គូផ្គង​សម្រាប់ \"%1\""
-
-#: utils/katecmds.cpp:412
-#, kde-format
-msgid "\"%1\" is mapped to \"%2\""
-msgstr "\"%1\" ត្រូវ​បានផ្គូផ្គង​ទៅ \"%2\""
-
-#: utils/katecmds.cpp:417
-#, kde-format
-msgid "Missing argument(s). Usage: %1 <from> [<to>]"
-msgstr "បាត់​អាគុយម៉ង់ ។ ការ​ប្រើ ៖ %1 <from> [<to>]"
-
-#: utils/katecmds.cpp:475 utils/katecmds.cpp:491
-msgid "Wrong arguments"
-msgstr "អាគុយម៉ង់​មិន​ត្រឹមត្រូវ"
-
-#: utils/katecmds.cpp:575
-msgid "Document written to disk"
-msgstr "បាន​សរសេរ​ឯកសារ​ទៅ​ថាស"
-
-#: utils/katecmds.cpp:807
-msgid "Sorry, but Kate is not able to replace newlines, yet"
-msgstr "សូម​អភ័យទោស Kate មិនអាច​ជំនួស​បន្ទាត់​ថ្មីបាន​នៅឡើយទេ"
-
-#: utils/katecmds.cpp:846
-#, kde-format
-msgctxt "substituted into the previous message"
-msgid "1 line"
-msgid_plural "%1 lines"
-msgstr[0] "%1 បន្ទាត់"
-
-#: utils/katecmds.cpp:844
-#, kde-format
-msgctxt "%2 is the translation of the next message"
-msgid "1 replacement done on %2"
-msgid_plural "%1 replacements done on %2"
-msgstr[0] "បាន​ជំនួស %1 នៅ​លើ %2"
-
-#: variableeditor/katehelpbutton.cpp:32
-msgid "Kate Handbook."
-msgstr "សៀវភៅ​ដៃ Kate ។"
-
-#: variableeditor/variableeditor.cpp:194
-msgid "true"
-msgstr "ពិត"
-
-#: variableeditor/variableeditor.cpp:195
-msgid "false"
-msgstr "មិន​ពិត"
-
-#: variableeditor/variablelineedit.cpp:59
-msgid "Show list of valid variables."
-msgstr "បង្ហាញ​បញ្ជី​នៃ​អថេរ​ត្រឹមត្រូវ ។"
-
-#: variableeditor/variablelineedit.cpp:140
-msgctxt "short translation please"
-msgid "Set auto insertion of brackets on or off."
-msgstr "បើក ឬ​បិទ​ការ​បញ្ចូល​តង្កៀប​ស្វ័យប្រវត្តិ ។"
-
-#: variableeditor/variablelineedit.cpp:146
-msgctxt "short translation please"
-msgid "Set the number of autocenter lines."
-msgstr "កំណត់​ចំនួន​ជួរ​ចំកណ្ដាល​ស្វ័យប្រវត្តិ ។"
-
-#: variableeditor/variablelineedit.cpp:151
-msgctxt "short translation please"
-msgid "Auto insert asterisk in doxygen comments."
-msgstr "បញ្ចូល​សញ្ញា​ផ្កាយ​ស្វ័យប្រវត្តិ​ក្នុង​មតិ​យោបល់ doxygen ។"
-
-#: variableeditor/variablelineedit.cpp:156
-msgctxt "short translation please"
-msgid "Set the document background color."
-msgstr "កំណត់​ពណ៌​ផ្ទៃ​ខាងក្រោយ​របស់​ឯកសារ ។"
-
-#: variableeditor/variablelineedit.cpp:161
-msgctxt "short translation please"
-msgid "Pressing backspace in leading whitespace unindents."
-msgstr "ការ​ចុច​គ្រាប់ចុច​លុប​ថយក្រោយ​ក្នុង​ចន្លោះ​ទទេ​ខាងមុខ​ដែល​មិន​ចូល​បន្ទាត់ ។"
-
-#: variableeditor/variablelineedit.cpp:167
-msgctxt "short translation please"
-msgid "Enable block selection mode."
-msgstr "បើក​របៀប​ជ្រើស​ប្លុក ។"
-
-#: variableeditor/variablelineedit.cpp:172
-msgctxt "short translation please"
-msgid "Enable the byte order marker when saving unicode files."
-msgstr "បើក​ឧបករណ៍​សម្គាល់​លំដាប់​បៃ​នៅ​ពេល​រក្សាទុក​ឯកសារ​យូនីកូដ ។"
-
-#: variableeditor/variablelineedit.cpp:177
-msgctxt "short translation please"
-msgid "Set the color for the bracket highlight."
-msgstr "កំណត់​ពណ៌​សម្រាប់​ផ្នែក​សំខាន់​តង្កៀប( [ ]) ។"
-
-#: variableeditor/variablelineedit.cpp:182
-msgctxt "short translation please"
-msgid "Set the background color for the current line."
-msgstr "កំណត់​ពណ៌​ផ្ទៃ​ខាងក្រោយ​សម្រាប់​ជួរ​បច្ចុប្បន្ន ។"
-
-#: variableeditor/variablelineedit.cpp:188
-msgctxt "short translation please"
-msgid "Set the default dictionary used for spell checking."
-msgstr "កំណត់​វចនានុក្រម​លំនាំ​ដើម​ដែល​ប្រើ​សម្រាប់​ការ​ពិនិត្យ​អក្ខរាវិរុទ្ធ ។"
-
-#: variableeditor/variablelineedit.cpp:193
-msgctxt "short translation please"
-msgid "Enable dynamic word wrap of long lines."
-msgstr "អនុញ្ញាត​ការ​រុំ​ពាក្យ​ជា​ថាមវន្ត​នៃ​ជួរ​វែង ។"
-
-#: variableeditor/variablelineedit.cpp:198
-msgctxt "short translation please"
-msgid "Sets the end of line mode."
-msgstr "កំណត់​ចុង​នៃ​របៀប​បន្ទាត់ ។"
-
-#: variableeditor/variablelineedit.cpp:203
-msgctxt "short translation please"
-msgid "Enable folding markers in the editor border."
-msgstr "បើក​ឧបករណ៍​សម្គាល់​របត់​នៅ​ក្នុង​ស៊ុម​កម្មវិធី​និពន្ធ ។"
-
-#: variableeditor/variablelineedit.cpp:209
-msgctxt "short translation please"
-msgid "Set the point size of the document font."
-msgstr "កំណត់​ទំហំ​ចំណុច​នៃ​ពុម្ពអក្សរ​ឯកសារ ។"
-
-#: variableeditor/variablelineedit.cpp:214
-msgctxt "short translation please"
-msgid "Set the font of the document."
-msgstr "កំណត់​ពុម្ពអក្សរ​​របស់​​ឯកសារ ។"
-
-#: variableeditor/variablelineedit.cpp:226
-msgctxt "short translation please"
-msgid "Set the syntax highlighting."
-msgstr "កំណត់​ការ​រំលេច​​វាក្យសម្ពន្ធ ។"
-
-#: variableeditor/variablelineedit.cpp:231
-msgctxt "short translation please"
-msgid "Set the icon bar color."
-msgstr "កំណត់​ពណ៌​របស់​របារ​រូបតំណាង ។"
-
-#: variableeditor/variablelineedit.cpp:236
-msgctxt "short translation please"
-msgid "Enable the icon border in the editor view."
-msgstr "បើក​ស៊ុម​រូបតំណាង​ក្នុង​ទិដ្ឋភាព​កម្មវិធី​កែស្រួល ។"
-
-#: variableeditor/variablelineedit.cpp:241
-msgctxt "short translation please"
-msgid "Set the auto indentation style."
-msgstr "កំណត់​រចនាប័ទ្ម​ការ​ចូល​បន្ទាត់​ស្វ័យប្រវត្តិ ។"
-
-#: variableeditor/variablelineedit.cpp:247
-msgctxt "short translation please"
-msgid "Set the indentation depth for each indent level."
-msgstr "កំណត់​​ការ​ចូល​បន្ទាត់​សម្រាប់​កម្រិត​ចូល​បន្ទាត់​នីមួយៗ ។"
-
-#: variableeditor/variablelineedit.cpp:252
-msgctxt "short translation please"
-msgid "Allow odd indentation level (no multiple of indent width)."
-msgstr "អនុញ្ញាត​កម្រិត​ចូល​បន្ទាត់​សេស (គ្មាន​ពហុ​បន្ទាត់​​​ទទឹង​ចូល​បន្ទាត់) ។"
-
-#: variableeditor/variablelineedit.cpp:257
-msgctxt "short translation please"
-msgid "Show line numbers."
-msgstr "បង្ហាញ​​ចំនួន​ជួរ ។"
-
-#: variableeditor/variablelineedit.cpp:262
-msgctxt "short translation please"
-msgid "Insert newline at end of file on save."
-msgstr "បញ្ចូល​បន្ទាត់​ថ្មី​នៅ​ចុង​ឯកសារ​ពេល​ដែល​​រក្សាទុក ។"
-
-#: variableeditor/variablelineedit.cpp:267
-msgctxt "short translation please"
-msgid "Enable overwrite mode in the document."
-msgstr "បើក​របៀប​សរសេរ​ជាន់​លើ​នៅ​ក្នុង​ឯកសារ ។"
-
-#: variableeditor/variablelineedit.cpp:272
-msgctxt "short translation please"
-msgid "Enable persistent text selection."
-msgstr "បើក​ការ​ជ្រើស​អត្ថបទ​អចិន្ត្រៃយ៍ ។"
-
-#: variableeditor/variablelineedit.cpp:277
-msgctxt "short translation please"
-msgid "Remove trailing spaces when editing a line."
-msgstr "យក​ចន្លោះ​​ចេញ នៅ​ពេល​កែសម្រួល​ជួរ ។"
-
-#: variableeditor/variablelineedit.cpp:282
-msgctxt "short translation please"
-msgid "Replace tabs with spaces when saving the document."
-msgstr "ជំនួស​ថេប​ដោយ​ចន្លោះ នៅ​ពេល​រក្សាទុក​ឯកសារ ។"
-
-#: variableeditor/variablelineedit.cpp:287
-msgctxt "short translation please"
-msgid "Replace tabs with spaces."
-msgstr "ជំនួស​ថេប​ដោយ​ចន្លោះ ។"
-
-#: variableeditor/variablelineedit.cpp:292
-msgctxt "short translation please"
-msgid "Remove trailing spaces when saving the document."
-msgstr "យក​ចន្លោះ​ពីក្រោយ​ចេញ នៅ​ពេល​រក្សាទុក​ឯកសារ ។"
-
-#: variableeditor/variablelineedit.cpp:298
-msgctxt "short translation please"
-msgid "Set the color scheme."
-msgstr "កំណត់​ពណ៌​ចម្រុះ ។"
-
-#: variableeditor/variablelineedit.cpp:303
-msgctxt "short translation please"
-msgid "Set the text selection color."
-msgstr "កំណត់​ពណ៌​នៃ​ការ​ជ្រើស​អត្ថបទ ។"
-
-#: variableeditor/variablelineedit.cpp:308
-msgctxt "short translation please"
-msgid "Visualize tabs and trailing spaces."
-msgstr "ធ្វើ​ឲ្យ​មើល​ឃើញ​ថេប និង​ចន្លោះ​ពីក្រោយ ។"
-
-#: variableeditor/variablelineedit.cpp:313
-msgctxt "short translation please"
-msgid "Enable smart home navigation."
-msgstr "បើក​ការ​រុករក​ទៅ​ដើម​ដែល​ឆ្លាតវៃ ។"
-
-#: variableeditor/variablelineedit.cpp:318
-msgctxt "short translation please"
-msgid "Pressing TAB key indents."
-msgstr "​ចុច​គ្រាប់ចុច ថេប (TAB) នឹង​ចូល​បន្ទាត់ ។"
-
-#: variableeditor/variablelineedit.cpp:324
-msgctxt "short translation please"
-msgid "Set the tab display width."
-msgstr "កំណត់​ទទឹង​ការ​បង្ហាញ​ថេប ។"
-
-#: variableeditor/variablelineedit.cpp:330
-msgctxt "short translation please"
-msgid "Set the number of undo steps to remember (0 equals infinity)."
-msgstr "កំណត់​ចំនួន​ជំហាន​មិន​ធ្វើ​វិញ​ឲ្យ​ចងចាំ (០ អនន្ត​ភាព​ស្មើ) ។"
-
-#: variableeditor/variablelineedit.cpp:336
-msgctxt "short translation please"
-msgid "Set the word wrap column."
-msgstr "កំណត់​ជួរឈរ​នៃ​ការ​រុំ​ពាក្យ ។"
-
-#: variableeditor/variablelineedit.cpp:341
-msgctxt "short translation please"
-msgid "Set the word wrap marker color."
-msgstr "កំណត់​ពណ៌​របស់​ឧបករណ៍​សម្គាល់​ការ​រុំ​ពាក្យ ។"
-
-#: variableeditor/variablelineedit.cpp:346
-msgctxt "short translation please"
-msgid "Enable word wrap while typing text."
-msgstr "បើក​ការ​រុំ​ពាក្យ​អំឡុង​ពេល​វាយ​អត្ថបទ ។"
-
-#: variableeditor/variablelineedit.cpp:351
-msgctxt "short translation please"
-msgid "Wrap the text cursor at the end of a line."
-msgstr "រុំ​ទស្សន៍ទ្រនិច​អត្ថបទ​នៅ​ចុង​បន្ទាត់ ។"
-
-#: view/kateviewaccessible.h:80
-msgid "Move To..."
-msgstr "ផ្លាស់ទី​ទៅកាន់..."
-
-#: view/kateviewaccessible.h:81
-msgid "Move Left"
-msgstr "ផ្លាស់​ទី​ទៅ​ឆ្វេង"
-
-#: view/kateviewaccessible.h:82
-msgid "Move Right"
-msgstr "ផ្លាស់ទី​ទៅ​ស្ដាំ"
-
-#: view/kateviewaccessible.h:83
-msgid "Move Up"
-msgstr "ផ្លាស់ទី​​ឡើងលើ"
-
-#: view/kateviewaccessible.h:84
-msgid "Move Down"
-msgstr "ផ្លាស់ទី​ចុះក្រោម"
+msgid "Typographical Conventions for %1"
+msgstr "ការ​សន្មត​ទូទៅ​នៃ​មុទ្ទវិទ្យា​សម្រាប់ %1"
+
+#: utils/kateprinter.cpp:558
+msgid "text"
+msgstr "អត្ថបទ"
+
+#: utils/kateprinter.cpp:682
+msgid "Te&xt Settings"
+msgstr "ការ​កំណត់​អត្ថបទ"
+
+#: utils/kateprinter.cpp:686
+msgid "Print line &numbers"
+msgstr "បោះពុម្ព​លេខ​បន្ទាត់"
+
+#: utils/kateprinter.cpp:689
+msgid "Print &legend"
+msgstr "បោះពុម្ព​តាង"
+
+#: utils/kateprinter.cpp:698
+msgid ""
+"<p>If enabled, line numbers will be printed on the left side of the page(s)."
+"</p>"
+msgstr "<p>ប្រសិន​បើ​​បើក នោះ​លេខ​បន្ទាត់​នឹង​ត្រូវ​បាន​បោះពុម្ព​នៅ​លើ​ចំហៀង​ខាងឆ្វេង​នៃ​ទំព័រ ។</p>"
+
+#: utils/kateprinter.cpp:700
+msgid ""
+"<p>Print a box displaying typographical conventions for the document type, "
+"as defined by the syntax highlighting being used.</p>"
+msgstr ""
+"<p>បោះពុម្ព​ប្រអប់​មួយ​ដែល​បង្ហាញ​ការ​កំណត់​ទូទៅ​នៃ​មុទ្ទវិទ្យា ​សម្រាប់​ប្រភេទ​ឯកសារ ដូច​ដែល​បាន​កំណត់​ដោយ​ការ​"
+"រំលេច​វាក្យ​សម្ពន្ធ​ដែល​កំពុង​ប្រើ ។</p>"
+
+#: utils/kateprinter.cpp:752
+msgid "Hea&der && Footer"
+msgstr "បឋមកថា និង​បាតកថា"
+
+#: utils/kateprinter.cpp:759
+msgid "Pr&int header"
+msgstr "បោះពុម្ព​បឋមកថា"
+
+#: utils/kateprinter.cpp:761
+msgid "Pri&nt footer"
+msgstr "បោះពុម្ព​បាតកថា"
+
+#: utils/kateprinter.cpp:767
+msgid "Header/footer font:"
+msgstr "ពុម្ពអក្សរ​បឋមកថា​/​បាតកថា ៖"
+
+#: utils/kateprinter.cpp:772
+msgid "Choo&se Font..."
+msgstr "ជ្រើស​ពុម្ពអក្សរ​​..."
+
+#: utils/kateprinter.cpp:778
+msgid "Header Properties"
+msgstr "លក្ខណៈ​សម្បត្តិ​បឋមកថា"
+
+#: utils/kateprinter.cpp:782
+msgid "&Format:"
+msgstr "ទ្រង់ទ្រាយ ៖"
+
+#: utils/kateprinter.cpp:800 utils/kateprinter.cpp:837
+msgid "Colors:"
+msgstr "ពណ៌ ៖"
+
+#: utils/kateprinter.cpp:806 utils/kateprinter.cpp:843
+msgid "Foreground:"
+msgstr "ផ្ទៃ​ខាងមុខ ៖"
+
+#: utils/kateprinter.cpp:809
+msgid "Bac&kground"
+msgstr "ផ្ទៃ​ខាងក្រោយ"
+
+#: utils/kateprinter.cpp:813
+msgid "Footer Properties"
+msgstr "លក្ខណៈ​សម្បត្តិ​បាតកថា​"
+
+#: utils/kateprinter.cpp:818
+msgid "For&mat:"
+msgstr "ទ្រង់ទ្រាយ ៖"
+
+#: utils/kateprinter.cpp:846
+msgid "&Background"
+msgstr "ផ្ទៃ​ខាងក្រោយ"
+
+#: utils/kateprinter.cpp:873
+msgid "<p>Format of the page header. The following tags are supported:</p>"
+msgstr "<p>ទ្រង់ទ្រាយ​បឋមកថា​ទំព័រ ។ ស្លាក​ខាងក្រោម​គឺ​ត្រូវ​បាន​គាំទ្រ ៖</p>"
+
+#: utils/kateprinter.cpp:875
+msgid ""
+"<ul><li><tt>%u</tt>: current user name</li><li><tt>%d</tt>: complete date/"
+"time in short format</li><li><tt>%D</tt>: complete date/time in long format</"
+"li><li><tt>%h</tt>: current time</li><li><tt>%y</tt>: current date in short "
+"format</li><li><tt>%Y</tt>: current date in long format</li><li><tt>%f</tt>: "
+"file name</li><li><tt>%U</tt>: full URL of the document</li><li><tt>%p</tt>: "
+"page number</li><li><tt>%P</tt>: total amount of pages</li></ul><br />"
+msgstr ""
+"<ul><li><tt>%u</tt> ៖ ឈ្មោះ​អ្នកប្រើ​បច្ចុប្បន្ន</li><li><tt>%d</tt> ៖ កាលបរិច្ឆេទ/"
+"ពេលវេលា ពេញលេញ​ក្នុង​ទ្រង់ទ្រាយ​ខ្លី</li><li><tt>%D</tt> ៖ កាលបរិច្ឆេទ/ពេលវេលា ពេញលេញ​ក្នុង​"
+"ទ្រង់ទ្រាយ​វែង</li><li><tt>%h</tt> ៖ ពេលវេលា​បច្ចុប្បន្ន</li><li><tt>%y</tt> ៖ "
+"កាលបរិច្ឆេទ​បច្ចុប្បន្ន​ក្នុង​ទ្រង់ទ្រាយ​ខ្លី</li><li><tt>%Y</tt> ៖ កាលបរិច្ឆេទ​បច្ចុប្បន្ន​ក្នុង​ទ្រង់ទ្រាយ​"
+"វែង</li><li><tt>%f</tt> ៖ ឈ្មោះ​ឯកសារ</li><li><tt>%U</tt> ៖ URL ពេញលេញ​របស់​"
+"ឯកសារ</li><li><tt>%p</tt> ៖ លេខ​ទំព័រ</li><li><tt>%P</tt> ៖ ចំនួន​ទំព័រ​សរុប</li></"
+"ul><br />"
+
+#: utils/kateprinter.cpp:889
+msgid "<p>Format of the page footer. The following tags are supported:</p>"
+msgstr "<p>ទ្រង់ទ្រាយ​នៃ​បាតកថា​ទំព័រ ។ ស្លាក​ខាងក្រោម​ត្រូវ​បាន​គាំទ្រ ៖</p>"
+
+#: utils/kateprinter.cpp:987
+msgid "Add Placeholder..."
+msgstr "បន្ថែម​កន្លែង​ដាក់..."
+
+#: utils/kateprinter.cpp:989
+msgid "Current User Name"
+msgstr "ឈ្មោះ​អ្នកប្រើ​បច្ចុប្បន្ន"
+
+#: utils/kateprinter.cpp:991
+msgid "Complete Date/Time (short format)"
+msgstr "កាលបរិច្ឆេទ/ពេលវេលា ពេញលេញ (ទ្រង់ទ្រាយ​ខ្លី)"
+
+#: utils/kateprinter.cpp:993
+msgid "Complete Date/Time (long format)"
+msgstr "កាលបរិច្ឆេទ/ពេលវេលា ពេញលេញ (ទ្រង់ទ្រាយ​វែង)"
+
+#: utils/kateprinter.cpp:995
+msgid "Current Time"
+msgstr "ពេលវេលា​បច្ចុប្បន្ន"
+
+#: utils/kateprinter.cpp:997
+msgid "Current Date (short format)"
+msgstr "ពេលវេលា​បច្ចុប្បន្ន (ទ្រង់ទ្រាយ​ខ្លី)"
+
+#: utils/kateprinter.cpp:999
+msgid "Current Date (long format)"
+msgstr "ពេលវេលា​បច្ចុប្បន្ន (ទ្រង់ទ្រាយ​វែង)"
+
+#: utils/kateprinter.cpp:1001
+msgid "File Name"
+msgstr "ឈ្មោះ​ឯកសារ"
+
+#: utils/kateprinter.cpp:1003
+msgid "Full document URL"
+msgstr "URL ឯកសារ​ពេញលេញ"
+
+#: utils/kateprinter.cpp:1005
+msgid "Page Number"
+msgstr "លេខ​ទំព័រ"
+
+#: utils/kateprinter.cpp:1007
+msgid "Total Amount of Pages"
+msgstr "ចំនួន​ទំព័រ​សរុប"
+
+#: utils/kateprinter.cpp:1116
+msgid "L&ayout"
+msgstr "ប្លង់"
+
+#: utils/kateprinter.cpp:1122 schema/kateschemaconfig.cpp:960
+msgid "&Schema:"
+msgstr "គ្រោងការណ៍ ៖"
+
+#: utils/kateprinter.cpp:1127
+msgid "Draw bac&kground color"
+msgstr "គូរ​ពណ៌​ផ្ទៃខាងក្រោយ"
+
+#: utils/kateprinter.cpp:1130
+msgid "Draw &boxes"
+msgstr "គូរ​ប្រអប់"
+
+#: utils/kateprinter.cpp:1134
+msgid "Box Properties"
+msgstr "លក្ខណៈ​សម្បត្តិ​ប្រអប់"
+
+#: utils/kateprinter.cpp:1138
+msgid "W&idth:"
+msgstr "ទទឹង ៖"
+
+#: utils/kateprinter.cpp:1146
+msgid "&Margin:"
+msgstr "រឹម ៖"
+
+#: utils/kateprinter.cpp:1154
+msgid "Co&lor:"
+msgstr "ពណ៌ ៖"
+
+#: utils/kateprinter.cpp:1171
+msgid "Select the color scheme to use for the print."
+msgstr "ជ្រើស​គ្រោងការណ៍​ពណ៌​ត្រូវ​ប្រើ​សម្រាប់​បោះពុម្ព ។"
+
+#: utils/kateprinter.cpp:1173
+msgid ""
+"<p>If enabled, the background color of the editor will be used.</p><p>This "
+"may be useful if your color scheme is designed for a dark background.</p>"
+msgstr ""
+"<p>ប្រសិន​បើ​បាន​បើក ពណ៌​ផ្ទៃ​ខាងក្រោយ​របស់​កម្មវិធី​និពន្ធ​នឹង​ត្រូវ​បាន​ប្រើ ។</p><p>វា​មាន​ប្រយោជន៍ នៅ​ពេល​"
+"ដែល​ពណ៌​ចម្រុះ​របស់​អ្នក​ត្រូវ​បាន​រចនា​សម្រាប់​ផ្ទៃខាងក្រោយខ្មៅ ។</p>"
+
+#: utils/kateprinter.cpp:1176
+msgid ""
+"<p>If enabled, a box as defined in the properties below will be drawn around "
+"the contents of each page. The Header and Footer will be separated from the "
+"contents with a line as well.</p>"
+msgstr ""
+"<p>ប្រសិន​បើ​បាន​បើក ប្រអប់​ដែល​បាន​កំណត់​ក្នុង​លក្ខណៈសម្បត្តិ​ខាងក្រោម នឹង​ត្រូវ​បាន​គូរ​ជុំវិញ​មាតិកា​របស់​ទំព័រ​"
+"នីមួយៗ ។​</p><p>បឋមកថា និង​បាតកថា​នឹង​ត្រូវ​បាន​បំបែក​ពី​មាតិកា​ដោយ​បន្ទាត់​ផងដែរ ។</p>"
+
+#: utils/kateprinter.cpp:1180
+msgid "The width of the box outline"
+msgstr "ទទឹង​របស់​គ្រោង​ប្រអប់"
+
+#: utils/kateprinter.cpp:1182
+msgid "The margin inside boxes, in pixels"
+msgstr "រឹម​ខាង​ក្នុង​ប្រអប់ ជា​ភីកសែល"
+
+#: utils/kateprinter.cpp:1184
+msgid "The line color to use for boxes"
+msgstr "ពណ៌​បន្ទាត់​ដែល​ត្រូវ​ប្រើ​សម្រាប់​ប្រអប់"
 
 #: view/kateview.cpp:330
 msgid "Cut the selected text and move it to the clipboard"
@@ -2420,13 +2184,13 @@ msgstr "ជ្រើស​ថាតើអ្នក​ចង់​បញ្ចូ
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:508 rc.cpp:554
+#: view/kateview.cpp:508 rc.cpp:443
 msgid "&Dynamic Word Wrap"
 msgstr "រុំ​ពាក្យ​ថាមវន្ត"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:17
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbWordWrap)
-#: view/kateview.cpp:511 rc.cpp:551
+#: view/kateview.cpp:511 rc.cpp:440
 msgid ""
 "If this option is checked, the text lines will be wrapped at the view border "
 "on the screen."
@@ -2842,6 +2606,26 @@ msgstr "លើ"
 msgid "INS"
 msgstr "បញ្ចូល"
 
+#: view/kateviewaccessible.h:80
+msgid "Move To..."
+msgstr "ផ្លាស់ទី​ទៅកាន់..."
+
+#: view/kateviewaccessible.h:81
+msgid "Move Left"
+msgstr "ផ្លាស់​ទី​ទៅ​ឆ្វេង"
+
+#: view/kateviewaccessible.h:82
+msgid "Move Right"
+msgstr "ផ្លាស់ទី​ទៅ​ស្ដាំ"
+
+#: view/kateviewaccessible.h:83
+msgid "Move Up"
+msgstr "ផ្លាស់ទី​​ឡើងលើ"
+
+#: view/kateviewaccessible.h:84
+msgid "Move Down"
+msgstr "ផ្លាស់ទី​ចុះក្រោម"
+
 #: view/kateviewhelpers.cpp:363
 msgid "Available Commands"
 msgstr "ពាក្យ​បញ្ជា​ដែល​អាច​ប្រើ​បាន"
@@ -2951,99 +2735,225 @@ msgstr "'%1' %2,  គោល​ដប់​ប្រាំមួយ %3  គោល
 msgid "Mark not set: %1"
 msgstr "សញ្ញា​សម្គាល់​មិន​បានកំណត់ ៖ %1"
 
+#: variableeditor/katehelpbutton.cpp:32
+msgid "Kate Handbook."
+msgstr "សៀវភៅ​ដៃ Kate ។"
+
+#: variableeditor/variableeditor.cpp:194
+msgid "true"
+msgstr "ពិត"
+
+#: variableeditor/variableeditor.cpp:195
+msgid "false"
+msgstr "មិន​ពិត"
+
+#: variableeditor/variablelineedit.cpp:59
+msgid "Show list of valid variables."
+msgstr "បង្ហាញ​បញ្ជី​នៃ​អថេរ​ត្រឹមត្រូវ ។"
+
+#: variableeditor/variablelineedit.cpp:140
+msgctxt "short translation please"
+msgid "Set auto insertion of brackets on or off."
+msgstr "បើក ឬ​បិទ​ការ​បញ្ចូល​តង្កៀប​ស្វ័យប្រវត្តិ ។"
+
+#: variableeditor/variablelineedit.cpp:146
+msgctxt "short translation please"
+msgid "Set the number of autocenter lines."
+msgstr "កំណត់​ចំនួន​ជួរ​ចំកណ្ដាល​ស្វ័យប្រវត្តិ ។"
+
+#: variableeditor/variablelineedit.cpp:151
+msgctxt "short translation please"
+msgid "Auto insert asterisk in doxygen comments."
+msgstr "បញ្ចូល​សញ្ញា​ផ្កាយ​ស្វ័យប្រវត្តិ​ក្នុង​មតិ​យោបល់ doxygen ។"
+
+#: variableeditor/variablelineedit.cpp:156
+msgctxt "short translation please"
+msgid "Set the document background color."
+msgstr "កំណត់​ពណ៌​ផ្ទៃ​ខាងក្រោយ​របស់​ឯកសារ ។"
+
+#: variableeditor/variablelineedit.cpp:161
+msgctxt "short translation please"
+msgid "Pressing backspace in leading whitespace unindents."
+msgstr "ការ​ចុច​គ្រាប់ចុច​លុប​ថយក្រោយ​ក្នុង​ចន្លោះ​ទទេ​ខាងមុខ​ដែល​មិន​ចូល​បន្ទាត់ ។"
+
+#: variableeditor/variablelineedit.cpp:167
+msgctxt "short translation please"
+msgid "Enable block selection mode."
+msgstr "បើក​របៀប​ជ្រើស​ប្លុក ។"
+
+#: variableeditor/variablelineedit.cpp:172
+msgctxt "short translation please"
+msgid "Enable the byte order marker when saving unicode files."
+msgstr "បើក​ឧបករណ៍​សម្គាល់​លំដាប់​បៃ​នៅ​ពេល​រក្សាទុក​ឯកសារ​យូនីកូដ ។"
+
+#: variableeditor/variablelineedit.cpp:177
+msgctxt "short translation please"
+msgid "Set the color for the bracket highlight."
+msgstr "កំណត់​ពណ៌​សម្រាប់​ផ្នែក​សំខាន់​តង្កៀប( [ ]) ។"
+
+#: variableeditor/variablelineedit.cpp:182
+msgctxt "short translation please"
+msgid "Set the background color for the current line."
+msgstr "កំណត់​ពណ៌​ផ្ទៃ​ខាងក្រោយ​សម្រាប់​ជួរ​បច្ចុប្បន្ន ។"
+
+#: variableeditor/variablelineedit.cpp:188
+msgctxt "short translation please"
+msgid "Set the default dictionary used for spell checking."
+msgstr "កំណត់​វចនានុក្រម​លំនាំ​ដើម​ដែល​ប្រើ​សម្រាប់​ការ​ពិនិត្យ​អក្ខរាវិរុទ្ធ ។"
+
+#: variableeditor/variablelineedit.cpp:193
+msgctxt "short translation please"
+msgid "Enable dynamic word wrap of long lines."
+msgstr "អនុញ្ញាត​ការ​រុំ​ពាក្យ​ជា​ថាមវន្ត​នៃ​ជួរ​វែង ។"
+
+#: variableeditor/variablelineedit.cpp:198
+msgctxt "short translation please"
+msgid "Sets the end of line mode."
+msgstr "កំណត់​ចុង​នៃ​របៀប​បន្ទាត់ ។"
+
+#: variableeditor/variablelineedit.cpp:203
+msgctxt "short translation please"
+msgid "Enable folding markers in the editor border."
+msgstr "បើក​ឧបករណ៍​សម្គាល់​របត់​នៅ​ក្នុង​ស៊ុម​កម្មវិធី​និពន្ធ ។"
+
+#: variableeditor/variablelineedit.cpp:209
+msgctxt "short translation please"
+msgid "Set the point size of the document font."
+msgstr "កំណត់​ទំហំ​ចំណុច​នៃ​ពុម្ពអក្សរ​ឯកសារ ។"
+
+#: variableeditor/variablelineedit.cpp:214
+msgctxt "short translation please"
+msgid "Set the font of the document."
+msgstr "កំណត់​ពុម្ពអក្សរ​​របស់​​ឯកសារ ។"
+
+#: variableeditor/variablelineedit.cpp:226
+msgctxt "short translation please"
+msgid "Set the syntax highlighting."
+msgstr "កំណត់​ការ​រំលេច​​វាក្យសម្ពន្ធ ។"
+
+#: variableeditor/variablelineedit.cpp:231
+msgctxt "short translation please"
+msgid "Set the icon bar color."
+msgstr "កំណត់​ពណ៌​របស់​របារ​រូបតំណាង ។"
+
+#: variableeditor/variablelineedit.cpp:236
+msgctxt "short translation please"
+msgid "Enable the icon border in the editor view."
+msgstr "បើក​ស៊ុម​រូបតំណាង​ក្នុង​ទិដ្ឋភាព​កម្មវិធី​កែស្រួល ។"
+
+#: variableeditor/variablelineedit.cpp:241
+msgctxt "short translation please"
+msgid "Set the auto indentation style."
+msgstr "កំណត់​រចនាប័ទ្ម​ការ​ចូល​បន្ទាត់​ស្វ័យប្រវត្តិ ។"
+
+#: variableeditor/variablelineedit.cpp:247
+msgctxt "short translation please"
+msgid "Set the indentation depth for each indent level."
+msgstr "កំណត់​​ការ​ចូល​បន្ទាត់​សម្រាប់​កម្រិត​ចូល​បន្ទាត់​នីមួយៗ ។"
+
+#: variableeditor/variablelineedit.cpp:252
+msgctxt "short translation please"
+msgid "Allow odd indentation level (no multiple of indent width)."
+msgstr "អនុញ្ញាត​កម្រិត​ចូល​បន្ទាត់​សេស (គ្មាន​ពហុ​បន្ទាត់​​​ទទឹង​ចូល​បន្ទាត់) ។"
+
+#: variableeditor/variablelineedit.cpp:257
+msgctxt "short translation please"
+msgid "Show line numbers."
+msgstr "បង្ហាញ​​ចំនួន​ជួរ ។"
+
+#: variableeditor/variablelineedit.cpp:262
+msgctxt "short translation please"
+msgid "Insert newline at end of file on save."
+msgstr "បញ្ចូល​បន្ទាត់​ថ្មី​នៅ​ចុង​ឯកសារ​ពេល​ដែល​​រក្សាទុក ។"
+
+#: variableeditor/variablelineedit.cpp:267
+msgctxt "short translation please"
+msgid "Enable overwrite mode in the document."
+msgstr "បើក​របៀប​សរសេរ​ជាន់​លើ​នៅ​ក្នុង​ឯកសារ ។"
+
+#: variableeditor/variablelineedit.cpp:272
+msgctxt "short translation please"
+msgid "Enable persistent text selection."
+msgstr "បើក​ការ​ជ្រើស​អត្ថបទ​អចិន្ត្រៃយ៍ ។"
+
+#: variableeditor/variablelineedit.cpp:277
+msgctxt "short translation please"
+msgid "Remove trailing spaces when editing a line."
+msgstr "យក​ចន្លោះ​​ចេញ នៅ​ពេល​កែសម្រួល​ជួរ ។"
+
+#: variableeditor/variablelineedit.cpp:282
+msgctxt "short translation please"
+msgid "Replace tabs with spaces when saving the document."
+msgstr "ជំនួស​ថេប​ដោយ​ចន្លោះ នៅ​ពេល​រក្សាទុក​ឯកសារ ។"
+
+#: variableeditor/variablelineedit.cpp:287
+msgctxt "short translation please"
+msgid "Replace tabs with spaces."
+msgstr "ជំនួស​ថេប​ដោយ​ចន្លោះ ។"
+
+#: variableeditor/variablelineedit.cpp:292
+msgctxt "short translation please"
+msgid "Remove trailing spaces when saving the document."
+msgstr "យក​ចន្លោះ​ពីក្រោយ​ចេញ នៅ​ពេល​រក្សាទុក​ឯកសារ ។"
+
+#: variableeditor/variablelineedit.cpp:298
+msgctxt "short translation please"
+msgid "Set the color scheme."
+msgstr "កំណត់​ពណ៌​ចម្រុះ ។"
+
+#: variableeditor/variablelineedit.cpp:303
+msgctxt "short translation please"
+msgid "Set the text selection color."
+msgstr "កំណត់​ពណ៌​នៃ​ការ​ជ្រើស​អត្ថបទ ។"
+
+#: variableeditor/variablelineedit.cpp:308
+msgctxt "short translation please"
+msgid "Visualize tabs and trailing spaces."
+msgstr "ធ្វើ​ឲ្យ​មើល​ឃើញ​ថេប និង​ចន្លោះ​ពីក្រោយ ។"
+
+#: variableeditor/variablelineedit.cpp:313
+msgctxt "short translation please"
+msgid "Enable smart home navigation."
+msgstr "បើក​ការ​រុករក​ទៅ​ដើម​ដែល​ឆ្លាតវៃ ។"
+
+#: variableeditor/variablelineedit.cpp:318
+msgctxt "short translation please"
+msgid "Pressing TAB key indents."
+msgstr "​ចុច​គ្រាប់ចុច ថេប (TAB) នឹង​ចូល​បន្ទាត់ ។"
+
+#: variableeditor/variablelineedit.cpp:324
+msgctxt "short translation please"
+msgid "Set the tab display width."
+msgstr "កំណត់​ទទឹង​ការ​បង្ហាញ​ថេប ។"
+
+#: variableeditor/variablelineedit.cpp:330
+msgctxt "short translation please"
+msgid "Set the number of undo steps to remember (0 equals infinity)."
+msgstr "កំណត់​ចំនួន​ជំហាន​មិន​ធ្វើ​វិញ​ឲ្យ​ចងចាំ (០ អនន្ត​ភាព​ស្មើ) ។"
+
+#: variableeditor/variablelineedit.cpp:336
+msgctxt "short translation please"
+msgid "Set the word wrap column."
+msgstr "កំណត់​ជួរឈរ​នៃ​ការ​រុំ​ពាក្យ ។"
+
+#: variableeditor/variablelineedit.cpp:341
+msgctxt "short translation please"
+msgid "Set the word wrap marker color."
+msgstr "កំណត់​ពណ៌​របស់​ឧបករណ៍​សម្គាល់​ការ​រុំ​ពាក្យ ។"
+
+#: variableeditor/variablelineedit.cpp:346
+msgctxt "short translation please"
+msgid "Enable word wrap while typing text."
+msgstr "បើក​ការ​រុំ​ពាក្យ​អំឡុង​ពេល​វាយ​អត្ថបទ ។"
+
+#: variableeditor/variablelineedit.cpp:351
+msgctxt "short translation please"
+msgid "Wrap the text cursor at the end of a line."
+msgstr "រុំ​ទស្សន៍ទ្រនិច​អត្ថបទ​នៅ​ចុង​បន្ទាត់ ។"
+
 #: schema/katecolortreewidget.cpp:51 schema/katecolortreewidget.cpp:73
 msgid "Use default color from the KDE color scheme"
 msgstr "ប្រើ​ពណ៌​លំនាំដើម​ពី​ពណ៌​ចម្រុះ​របស់ KDE"
-
-#: schema/katestyletreewidget.cpp:133
-msgctxt "@title:column Meaning of text in editor"
-msgid "Context"
-msgstr "បរិបទ"
-
-#: schema/katestyletreewidget.cpp:133
-msgctxt "@title:column Text style"
-msgid "Normal"
-msgstr "ធម្មតា"
-
-#: schema/katestyletreewidget.cpp:133
-msgctxt "@title:column Text style"
-msgid "Selected"
-msgstr "បាន​ជ្រើស"
-
-#: schema/katestyletreewidget.cpp:133
-msgctxt "@title:column Text style"
-msgid "Background"
-msgstr "ផ្ទៃ​ខាង​ក្រោយ"
-
-#: schema/katestyletreewidget.cpp:133
-msgctxt "@title:column Text style"
-msgid "Background Selected"
-msgstr "បាន​ជ្រើស​ផ្ទៃ​ខាង​ក្រោយ"
-
-#: schema/katestyletreewidget.cpp:135
-msgid "Use Default Style"
-msgstr "ប្រើ​រចនា​ប័ទ្ម​លំនាំដើម"
-
-#: schema/katestyletreewidget.cpp:223
-msgid "&Bold"
-msgstr "ដិត"
-
-#: schema/katestyletreewidget.cpp:228
-msgid "&Italic"
-msgstr "ទ្រេត"
-
-#: schema/katestyletreewidget.cpp:233
-msgid "&Underline"
-msgstr "គូស​បន្ទាត់​ពី​ក្រោម"
-
-#: schema/katestyletreewidget.cpp:238
-msgid "S&trikeout"
-msgstr "ឆូត"
-
-#: schema/katestyletreewidget.cpp:245
-msgid "Normal &Color..."
-msgstr "ពណ៌​ធម្មតា..."
-
-#: schema/katestyletreewidget.cpp:248
-msgid "&Selected Color..."
-msgstr "ពណ៌​ដែល​បាន​ជ្រើស..."
-
-#: schema/katestyletreewidget.cpp:251
-msgid "&Background Color..."
-msgstr "ពណ៌​ផ្ទៃ​ខាង​ក្រោយ..."
-
-#: schema/katestyletreewidget.cpp:254
-msgid "S&elected Background Color..."
-msgstr "ពណ៌​ផ្ទៃ​ខាង​ក្រោយ​ដែលបាន​ជ្រើស..."
-
-#: schema/katestyletreewidget.cpp:266
-msgid "Unset Background Color"
-msgstr "ពណ៌​ផ្ទៃខាងក្រោយ​ដែល​មិនបាន​កំណត់"
-
-#: schema/katestyletreewidget.cpp:270
-msgid "Unset Selected Background Color"
-msgstr "ពណ៌​ផ្ទៃខាងក្រោយ​ដែល​មិនបាន​ជ្រើស​​មិន​បាន​កំណត់"
-
-#: schema/katestyletreewidget.cpp:277
-msgid "Use &Default Style"
-msgstr "ប្រើ​រចនាប័ទ្ម​លំនាំដើម"
-
-#: schema/katestyletreewidget.cpp:389
-msgctxt "No text or background color set"
-msgid "None set"
-msgstr "គ្មាន​អ្វី​បានកំណត់​ទេ"
-
-#: schema/katestyletreewidget.cpp:603
-msgid ""
-"\"Use Default Style\" will be automatically unset when you change any style "
-"properties."
-msgstr ""
-"\"ប្រើ​រចនាប័ទ្ម​លំនាំដើម\" នឹង​មិន​កំណត់​ដោយ​ស្វ័យ​ប្រវត្តិ នៅ​ពេល​ដែល​អ្នក​ផ្លាស់​ប្ដូរ​លក្ខណៈ​សម្បត្តិ​រចនាប័ទ្ម​ណា​"
-"មួយ ។"
-
-#: schema/katestyletreewidget.cpp:604
-msgid "Kate Styles"
-msgstr "រចនាប័ទ្ម Kate"
 
 #: schema/kateschemaconfig.cpp:58
 msgid "Use KDE Color Scheme"
@@ -3059,7 +2969,7 @@ msgstr "ផ្ទៃ​អត្ថបទ"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:33
 #. i18n: ectx: property (whatsThis), widget (KColorButton, back)
-#: schema/kateschemaconfig.cpp:89 rc.cpp:494
+#: schema/kateschemaconfig.cpp:89 rc.cpp:383
 msgid "<p>Sets the background color of the editing area.</p>"
 msgstr "<p>កំណត់​ពណ៌​ផ្ទៃខាង​ក្រោយ​របស់ផ្ទៃ​កែសម្រួល ។</p>"
 
@@ -3082,7 +2992,7 @@ msgstr "បន្ទាត់​បច្ចុប្បន្ន ៖"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:61
 #. i18n: ectx: property (whatsThis), widget (KColorButton, current)
-#: schema/kateschemaconfig.cpp:101 rc.cpp:506
+#: schema/kateschemaconfig.cpp:101 rc.cpp:395
 msgid ""
 "<p>Sets the background color of the currently active line, which means the "
 "line where your cursor is positioned.</p>"
@@ -3123,7 +3033,7 @@ msgstr "លេខ​បន្ទាត់"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:111
 #. i18n: ectx: property (whatsThis), widget (KColorButton, linenumber)
-#: schema/kateschemaconfig.cpp:131 rc.cpp:524
+#: schema/kateschemaconfig.cpp:131 rc.cpp:413
 msgid ""
 "<p>This color will be used to draw the line numbers (if enabled) and the "
 "lines in the code-folding pane.</p>"
@@ -3137,7 +3047,7 @@ msgstr "សញ្ញា​​សម្គាល់​ការ​រុំ​ព
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:139
 #. i18n: ectx: property (whatsThis), widget (KColorButton, wwmarker)
-#: schema/kateschemaconfig.cpp:137 rc.cpp:536
+#: schema/kateschemaconfig.cpp:137 rc.cpp:425
 msgid ""
 "<p>Sets the color of Word Wrap-related markers:</p><dl><dt>Static Word Wrap</"
 "dt><dd>A vertical line which shows the column where text is going to be "
@@ -3183,7 +3093,7 @@ msgstr "ជួរ​ដែល​មាន​កំហុស​អក្ខរា
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:167
 #. i18n: ectx: property (whatsThis), widget (KColorButton, spellingmistakeline)
-#: schema/kateschemaconfig.cpp:169 rc.cpp:548
+#: schema/kateschemaconfig.cpp:169 rc.cpp:437
 msgid ""
 "<p>Sets the color of the line that is used to indicate spelling mistakes.</p>"
 msgstr "<p>កំណត់​ពណ៌​​បន្ទាត់​ដែល​ត្រូវ​បានប្រើ​ដើម្បី​បង្ហាញ​កំហុស​អក្ខរាវិរុទ្ធ ។</p>"
@@ -3194,7 +3104,7 @@ msgstr "សញ្ញា​​សម្គាល់​​ថេប និង​�
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:153
 #. i18n: ectx: property (whatsThis), widget (KColorButton, tmarker)
-#: schema/kateschemaconfig.cpp:175 rc.cpp:542
+#: schema/kateschemaconfig.cpp:175 rc.cpp:431
 msgid "<p>Sets the color of the tabulator marks.</p>"
 msgstr "<p>កំណត់​ពណ៌នៃ​ការ​សម្គាល់ថេប ៖</p>"
 
@@ -3212,7 +3122,7 @@ msgstr "បន្លិច​វង់​តង្កៀប ៖"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:125
 #. i18n: ectx: property (whatsThis), widget (KColorButton, bracket)
-#: schema/kateschemaconfig.cpp:187 rc.cpp:530
+#: schema/kateschemaconfig.cpp:187 rc.cpp:419
 msgid ""
 "<p>Sets the bracket matching color. This means, if you place the cursor e.g. "
 "at a <b>(</b>, the matching <b>)</b> will be highlighted with this color.</p>"
@@ -3368,7 +3278,7 @@ msgstr "ថ្មី..."
 
 #. i18n: file: dialogs/filetypeconfigwidget.ui:44
 #. i18n: ectx: property (text), widget (QPushButton, btnDelete)
-#: schema/kateschemaconfig.cpp:970 rc.cpp:305
+#: schema/kateschemaconfig.cpp:970 rc.cpp:611
 msgid "&Delete"
 msgstr "លុប"
 
@@ -3443,6 +3353,96 @@ msgid ""
 "<p>The schema %1 already exists, or was just deleted.</p><p>Please choose a "
 "different schema name.</p>"
 msgstr "<p>ឌីយ៉ាក្រាម %1 បាន​រួចហើយ ឬ​​គ្រាន់​តែ​លុប</p><p>សូម​ជ្រើស​ឈ្មោះ​ឌីយ៉ាក្រាម​ផ្សេង​ទៀត ។</p>"
+
+#: schema/katestyletreewidget.cpp:133
+msgctxt "@title:column Meaning of text in editor"
+msgid "Context"
+msgstr "បរិបទ"
+
+#: schema/katestyletreewidget.cpp:133
+msgctxt "@title:column Text style"
+msgid "Normal"
+msgstr "ធម្មតា"
+
+#: schema/katestyletreewidget.cpp:133
+msgctxt "@title:column Text style"
+msgid "Selected"
+msgstr "បាន​ជ្រើស"
+
+#: schema/katestyletreewidget.cpp:133
+msgctxt "@title:column Text style"
+msgid "Background"
+msgstr "ផ្ទៃ​ខាង​ក្រោយ"
+
+#: schema/katestyletreewidget.cpp:133
+msgctxt "@title:column Text style"
+msgid "Background Selected"
+msgstr "បាន​ជ្រើស​ផ្ទៃ​ខាង​ក្រោយ"
+
+#: schema/katestyletreewidget.cpp:135
+msgid "Use Default Style"
+msgstr "ប្រើ​រចនា​ប័ទ្ម​លំនាំដើម"
+
+#: schema/katestyletreewidget.cpp:223
+msgid "&Bold"
+msgstr "ដិត"
+
+#: schema/katestyletreewidget.cpp:228
+msgid "&Italic"
+msgstr "ទ្រេត"
+
+#: schema/katestyletreewidget.cpp:233
+msgid "&Underline"
+msgstr "គូស​បន្ទាត់​ពី​ក្រោម"
+
+#: schema/katestyletreewidget.cpp:238
+msgid "S&trikeout"
+msgstr "ឆូត"
+
+#: schema/katestyletreewidget.cpp:245
+msgid "Normal &Color..."
+msgstr "ពណ៌​ធម្មតា..."
+
+#: schema/katestyletreewidget.cpp:248
+msgid "&Selected Color..."
+msgstr "ពណ៌​ដែល​បាន​ជ្រើស..."
+
+#: schema/katestyletreewidget.cpp:251
+msgid "&Background Color..."
+msgstr "ពណ៌​ផ្ទៃ​ខាង​ក្រោយ..."
+
+#: schema/katestyletreewidget.cpp:254
+msgid "S&elected Background Color..."
+msgstr "ពណ៌​ផ្ទៃ​ខាង​ក្រោយ​ដែលបាន​ជ្រើស..."
+
+#: schema/katestyletreewidget.cpp:266
+msgid "Unset Background Color"
+msgstr "ពណ៌​ផ្ទៃខាងក្រោយ​ដែល​មិនបាន​កំណត់"
+
+#: schema/katestyletreewidget.cpp:270
+msgid "Unset Selected Background Color"
+msgstr "ពណ៌​ផ្ទៃខាងក្រោយ​ដែល​មិនបាន​ជ្រើស​​មិន​បាន​កំណត់"
+
+#: schema/katestyletreewidget.cpp:277
+msgid "Use &Default Style"
+msgstr "ប្រើ​រចនាប័ទ្ម​លំនាំដើម"
+
+#: schema/katestyletreewidget.cpp:389
+msgctxt "No text or background color set"
+msgid "None set"
+msgstr "គ្មាន​អ្វី​បានកំណត់​ទេ"
+
+#: schema/katestyletreewidget.cpp:603
+msgid ""
+"\"Use Default Style\" will be automatically unset when you change any style "
+"properties."
+msgstr ""
+"\"ប្រើ​រចនាប័ទ្ម​លំនាំដើម\" នឹង​មិន​កំណត់​ដោយ​ស្វ័យ​ប្រវត្តិ នៅ​ពេល​ដែល​អ្នក​ផ្លាស់​ប្ដូរ​លក្ខណៈ​សម្បត្តិ​រចនាប័ទ្ម​ណា​"
+"មួយ ។"
+
+#: schema/katestyletreewidget.cpp:604
+msgid "Kate Styles"
+msgstr "រចនាប័ទ្ម Kate"
 
 #. i18n: file: data/katepartsimpleui.rc:4
 #. i18n: ectx: Menu (file)
@@ -3522,7 +3522,7 @@ msgstr "ការ​បំពេញ​ពាក្យ"
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:90
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:50 rc.cpp:647
+#: rc.cpp:50 rc.cpp:536
 msgid "Command"
 msgstr "ពាក្យ​បញ្ជា"
 
@@ -3584,7 +3584,7 @@ msgstr "ពាក្យ​បញ្ជា​ដែល​បាន​ភ្ជា
 #. i18n: ectx: property (text), widget (QLabel, lblName)
 #. i18n: file: dialogs/filetypeconfigwidget.ui:72
 #. i18n: ectx: property (text), widget (QLabel, lblName)
-#: rc.cpp:77 rc.cpp:311
+#: rc.cpp:77 rc.cpp:617
 msgid "&Name:"
 msgstr "ឈ្មោះ ៖"
 
@@ -3884,7 +3884,7 @@ msgstr "កំណត់​ចំនួន​បន្ទាត់​ដែល​
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbAutoCenterCursor)
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:65
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:230 rc.cpp:570
+#: rc.cpp:230 rc.cpp:459
 msgid "Disabled"
 msgstr "បិទ"
 
@@ -3921,271 +3921,15 @@ msgstr "ជម្រើស​នឹង​នៅ​ដដែល ទោះបី�
 msgid "P&ersistent"
 msgstr "អចិន្ត្រៃយ៍"
 
-#. i18n: file: dialogs/editconfigwidget.ui:20
-#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
-#: rc.cpp:248
-msgid "Static Word Wrap"
-msgstr "ការ​រុំ​ពាក្យឋិតិវន្ត"
-
-#. i18n: file: dialogs/editconfigwidget.ui:26
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:251
-msgid ""
-"<p>Automatically start a new line of text when the current line exceeds the "
-"length specified by the <b>Wrap words at:</b> option.</p><p>This option does "
-"not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
-"option in the <b>Tools</b> menu for that purpose.</p><p>If you want lines to "
-"be <i>visually wrapped</i> instead, according to the width of the view, "
-"enable <b>Dynamic Word Wrap</b> in the <b>Appearance</b> config page.</p>"
-msgstr ""
-"<p>ចាប់ផ្ដើម​ជួរ​អត្ថបទ​ថ្មី​ដោយ​ស្វ័យប្រវត្តិ នៅ​ពេល​ជួរ​បច្ចុប្បន្ន​លើស​ពី​ប្រវែង​ដែល​បាន​បញ្ជាក់​ដោយ​ជម្រើស "
-"<b>រុំ​ពាក្យ​ត្រង់ ៖</b> ។</p><p>ជម្រើស​នេះ​មិន​រុំ​ជួរ​អត្ថបទ​ដែល​មាន​ស្រាប់​ឡើយ - ប្រើ​ជម្រើស <b>អនុវត្ត​"
-"ការ​រុំ​ពាក្យ​ឋិតិវន្ត</b> ក្នុង​ម៉ឺនុយ <b>ឧបករណ៍</b> សម្រាប់​គោលបំណង​នោះ ។</p><p>ប្រសិនបើ​អ្នក​ចង់​ឲ្យ​ជួរ​"
-"ត្រូវ​បាន <i>រុំ​ដោយ​អាច​មើល​ឃើញ</i> ជំនួស​វិញ អាស្រ័យ​លើ​ទទឹង​របស់​ទិដ្ឋភាព បើក <b>ការ​រុំ​ពាក្យ​ថាមវន្ត</"
-"b> ក្នុង​ទំព័រ​កំណត់​រចនាសម្ព័ន្ធ <b>រូបរាង</b> ។</p>"
-
-#. i18n: file: dialogs/editconfigwidget.ui:29
-#. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
-#: rc.cpp:254
-msgid "Enable static &word wrap"
-msgstr "អនុញ្ញាត​ការ​រុំ​ពាក្យ​ឋិតិវន្ត"
-
-#. i18n: file: dialogs/editconfigwidget.ui:36
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:257
-msgid ""
-"<p>If this option is checked, a vertical line will be drawn at the word wrap "
-"column as defined in the <strong>Editing</strong> properties.</p><p>Note "
-"that the word wrap marker is only drawn if you use a fixed pitch font.</p>"
-msgstr ""
-"<p>ប្រសិន​បើ​បាន​ធីក​ជម្រើសនេះ នោះ​បន្ទាត់​បញ្ឈរ​នឹង​ត្រូវ​បានគូរ​នៅ​ជួរឈរ​រុំពាក្យ ដូច​ដែល​បាន​កំណត់​ក្នុង​លក្ខណៈ​"
-"សម្បត្តិ​<strong>កែសម្រួល</strong> ។</p><p>សូម​ចំណាំថា សញ្ញា​​សម្គាល់​រុំពាក្យ​នឹង​ត្រូវ​បានគូរ ​តែ​ក្នុង​"
-"ករណី​ដែល​អ្នក​ប្រើ​ពុម្ពអក្សរ​ជម្រាល​ថេរ ។</p>"
-
-#. i18n: file: dialogs/editconfigwidget.ui:39
-#. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
-#: rc.cpp:260
-msgid "Show static word wra&p marker (if applicable)"
-msgstr "បង្ហាញ​សញ្ញា​​សម្គាល់​រុំពាក្យ​ឋិតិវន្ត (​ប្រសិន​បើ​អាច​អនុវត្ត)"
-
-#. i18n: file: dialogs/editconfigwidget.ui:51
-#. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
-#: rc.cpp:263
-msgid "W&rap words at:"
-msgstr "រុំ​ពាក្យត្រង់ ៖"
-
-#. i18n: file: dialogs/editconfigwidget.ui:61
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
-#: rc.cpp:266
-msgid ""
-"If the Word Wrap option is selected this entry determines the length (in "
-"characters) at which the editor will automatically start a new line."
-msgstr ""
-"ប្រសិន​បើ​បាន​ជ្រើស​ជម្រើស​រុំពាក្យ ធាតុ​នេះ​កំណត់​ប្រវែង (ជា​តួអក្សរ) ដែល​កម្មវិធី​និពន្ធ​នឹង​ចាប់ផ្ដើម​បន្ទាត់​ថ្មី​"
-"ដោយ​ស្វ័យប្រវត្តិ ។"
-
-#. i18n: file: dialogs/editconfigwidget.ui:95
-#. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
-#: rc.cpp:269
-msgid "Misc"
-msgstr "ផ្សេងៗ"
-
-#. i18n: file: dialogs/editconfigwidget.ui:101
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:272
-msgid ""
-"If this is enabled, the editor will remove any trailing whitespace on lines "
-"that are changed through editing."
-msgstr ""
-"ប្រសិន​បើ​បាន​បើក​វា កម្មវិធី​និពន្ធ​នឹង​យកចន្លោះមិនឃើញ​ដែល​តាម​ពីក្រោយចេញ​ពី​បន្ទាត់ នៅ​ពេល​ដែល​ពួក​វា​ត្រូវ​បាន​"
-"បន្សល់ទុកដោយទស្សន៍​ទ្រនិច​បញ្ចូល ។"
-
-#. i18n: file: dialogs/editconfigwidget.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
-#: rc.cpp:275
-msgid "Remove &trailing spaces while editing"
-msgstr "យក​ចន្លោះ​មិន​ឃើញ​នៅ​ពី​ក្រោយ​ចេញ​នៅខណៈពេល​កែសម្រួល"
-
-#. i18n: file: dialogs/editconfigwidget.ui:111
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:278
-msgid ""
-"When the user types a left bracket ([,(, or {) KateView automatically enters "
-"the right bracket (}, ), or ]) to the right of the cursor."
-msgstr ""
-"ពេល​ដែល​អ្នក​ប្រើ​វាយ​តង្កៀប​ខាង​ឆ្វេង ([,(, ឬ {) នោះ KateView នឹង​បញ្ចូល​តង្កៀប​ខាង​ស្តាំ  "
-"(}, ), ឬ ]) ​ដោយ​ស្វ័យ​​ប្រវត្តិ​ទៅ​ខាង​ស្តាំទស្សន៍​ទ្រនិច ។"
-
-#. i18n: file: dialogs/editconfigwidget.ui:114
-#. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
-#: rc.cpp:281
-msgid "Auto &brackets"
-msgstr "តង្កៀប​ស្វ័យ​ប្រវត្តិ"
-
-#. i18n: file: dialogs/editconfigwidget.ui:121
-#. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
-#: rc.cpp:284
-msgid "Copy/Cut the current line if no selection"
-msgstr "ចម្លង/កាត់​បន្ទាត់​បច្ចុប្បន្ន ប្រសិនបើ​គ្មាន​ជម្រើស"
-
-#. i18n: file: dialogs/editconfigwidget.ui:128
-#. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
-#: rc.cpp:287
-msgid "Allow scrolling past the end of the document"
-msgstr "អនុញ្ញាត​ឲ្យ​បិទភ្ជាប់​រមូរ​នៅ​ចុង​ឯកសារ"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:14
-#. i18n: ectx: property (text), widget (QLabel, lblFiletype)
-#: rc.cpp:290
-msgid "&Filetype:"
-msgstr "ប្រភេទ​ឯកសារ ៖"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:24
-#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
-#: rc.cpp:293
-msgid "Select the filetype you want to change."
-msgstr "ជ្រើស​ប្រភេទ​​ឯកសារ​ដែល​អ្នក​ចង់​ផ្លាស់ប្ដូរ ។"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:31
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
-#: rc.cpp:296
-msgid "Create a new file type."
-msgstr "បង្កើត​ប្រភេទ​ឯកសារ​ថ្មី​មួយ ។"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:34
-#. i18n: ectx: property (text), widget (QPushButton, btnNew)
-#: rc.cpp:299
-msgid "&New"
-msgstr "ថ្មី"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:41
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
-#: rc.cpp:302
-msgid "Delete the current file type."
-msgstr "លុប​ប្រភេទ​ឯកសារ​បច្ចុប្បន្ន ។"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:82
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
-#: rc.cpp:314
-msgid ""
-"The name of the filetype will be the text of the corresponding menu item."
-msgstr "ឈ្មោះ​ប្រភេទ​ឯកសារ​នឹងជា​​អត្ថបទ​របស់​ធាតុ​ម៉ឺនុយ​ដែល​ត្រូវ​គ្នា ។"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:89
-#. i18n: ectx: property (text), widget (QLabel, lblSection)
-#: rc.cpp:317
-msgid "&Section:"
-msgstr "ផ្នែក ៖"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:99
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
-#: rc.cpp:320
-msgid "The section name is used to organize the file types in menus."
-msgstr "ឈ្មោះ​ផ្នែក​ត្រូវ​បាន​ប្រើ​ដើម្បី​រៀបចំ​ប្រភេទ​ឯកសារ​ក្នុង​ម៉ឺនុយ ។"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:106
-#. i18n: ectx: property (text), widget (QLabel, lblVariables)
-#: rc.cpp:323
-msgid "&Variables:"
-msgstr "អថេរ ៖"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:116
-#. i18n: ectx: property (whatsThis), widget (VariableLineEdit, edtVariables)
-#: rc.cpp:326
-msgid ""
-"<p>This string allows to configure Kate's settings for the files selected by "
-"this mimetype using Kate variables. Almost any configuration option can be "
-"set, such as highlight, indent-mode, encoding, etc.</p><p>For a full list of "
-"known variables, see the manual.</p>"
-msgstr ""
-"<p>ខ្សែអក្សរ​នេះ​អនុញ្ញាត​ឲ្យ​កំណត់​រចនាសម្ព័ន្ធ​ការ​កំណត់​របស់ Kate សម្រាប់​ឯកសារ​ដែល​បាន​ជ្រើស​ដោយប្រភេទ "
-"mime ដោយប្រើ​អថេរ Kate ។ ជម្រើស​កំណត់រចនា​សម្ព័ន្ធ​ស្ទើរតែ​ទាំងអស់​គឺ​អាច​កំណត់​បាន ដូចជា​ រំលេច​ របៀប​"
-"ចូល​បន្ទាត់ ការ​អ៊ិនកូដ ។ល។</p><p>ចំពោះ​បញ្ជី​អថេរ​ដែល​ស្គាល់​ទាំងអស់ គឺ​សូម​មើល​សៀវភៅ​ដៃ ។</p>"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:123
-#. i18n: ectx: property (text), widget (QLabel, lblHl)
-#: rc.cpp:329
-msgid "&Highlighting:"
-msgstr "ការ​បន្លិច ៖"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:136
-#. i18n: ectx: property (text), widget (QLabel, lblIndenter)
-#: rc.cpp:332
-msgid "&Indentation Mode:"
-msgstr "ការ​ចូល​បន្ទាត់ ៖"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:149
-#. i18n: ectx: property (text), widget (QLabel, lblExtensions)
-#: rc.cpp:335
-msgid "File e&xtensions:"
-msgstr "កន្ទុយ​ឯកសារ ៖"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:159
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
-#: rc.cpp:338
-msgid ""
-"The wildcards mask allows to select files by filename. A typical mask uses "
-"an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
-"The string is a semicolon-separated list of masks."
-msgstr ""
-"របាំង​ជំនួស​អនុញ្ញាត​ឲ្យ​អ្នក​ជ្រើស​ឯកសារ​តាម​ឈ្មោះ​ឯកសារ ។ របាំង​ធម្មតា​ប្រើសញ្ញា​ផ្កាយ និង​​កន្ទុយឯកសារ "
-"ឧទាហរណ៍ <code>*.txt; *.text</code> ។ ខ្សែ​អក្សរ​គឺបញ្ជី​របាំង​ដែលបាន​បំបែក​ដោយ​សញ្ញា​ចំណុច​ក្បៀស "
-"(;) ។"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:166
-#. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
-#: rc.cpp:341
-msgid "MIME &types:"
-msgstr "ប្រភេទ MIME ៖"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:181
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
-#: rc.cpp:344
-msgid ""
-"The mime type mask allows to select files by mimetype. The string is a "
-"semicolon-separated list of mimetypes, for example <code>text/plain; text/"
-"english</code>."
-msgstr ""
-"របាំង​ប្រភេទ mime អនុញ្ញាត​ឲ្យ​អ្នក​ជ្រើស​ឯកសារ​តាមប្រភេទ mime ។ ខ្សែ​អក្សរ​គឺ​ជា​បញ្ជី​ប្រភេទ mime "
-"ដែល​បាន​បំបែក​ដោយ​សញ្ញា​ចំណុច​ក្បៀស (;) ឧទាហរណ៍ <code>text/plain; text/english</code> ។"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:188
-#. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
-#: rc.cpp:347
-msgid "Displays a wizard that helps you easily select mimetypes."
-msgstr "បង្ហាញ​អ្នក​ជំនួយ​ការ​ដែល​ជួយ​អ្នក​ឲ្យ​ជ្រើស​ប្រភេទ mime បាន​ងាយ​ស្រួល ។"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:197
-#. i18n: ectx: property (text), widget (QLabel, lblPriority)
-#: rc.cpp:350
-msgid "P&riority:"
-msgstr "អាទិភាព ៖"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:207
-#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
-#: rc.cpp:353
-msgid ""
-"Sets priority for this file type. If more than one file type selects the "
-"same file, the one with the highest priority will be used."
-msgstr ""
-"កំណត់​អាទិភាព​សម្រាប់​ប្រភេទ​ឯកសារ​នេះ ។ ប្រសិន​បើ​ប្រភេទ​ឯកសារ​ច្រើន​​ជ្រើស​ឯកសារ​ដូច​គ្នា នោះ​ឯកសារ​ដែល​"
-"មាន​អាទិភាព​ខ្ពស់​ជាង​គេ ​នឹង​ត្រូវ​បាន​ប្រើ ។​"
-
-#. i18n: file: dialogs/filetypeconfigwidget.ui:232
-#. i18n: ectx: property (text), widget (QPushButton, btnDownload)
-#: rc.cpp:356
-msgid "Download Highlighting Files..."
-msgstr "ទាញ​យក​ឯកសារ​បន្លិច..."
-
 #. i18n: file: dialogs/indentationconfigwidget.ui:25
 #. i18n: ectx: property (text), widget (QLabel, lblMode)
-#: rc.cpp:359
+#: rc.cpp:248
 msgid "Default indentation mode:"
 msgstr "របៀប​ចូល​បន្ទាត់​លំនាំដើម ៖"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:35
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbMode)
-#: rc.cpp:362
+#: rc.cpp:251
 msgid ""
 "This is a list of available indentation modes. The specified indentation "
 "mode will be used for all new documents. Be aware that it is also possible "
@@ -4197,31 +3941,31 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:57
 #. i18n: ectx: property (title), widget (QGroupBox, gbIndentationMode)
-#: rc.cpp:365
+#: rc.cpp:254
 msgid "Indent using"
 msgstr "ប្រើ​ការ​ចូល​បន្ទាត់"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:63
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithTabs)
-#: rc.cpp:368
+#: rc.cpp:257
 msgid "&Tabulators"
 msgstr "ថេប"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:70
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentWithSpaces)
-#: rc.cpp:371
+#: rc.cpp:260
 msgid "&Spaces"
 msgstr "ចន្លោះ"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:77
 #. i18n: ectx: property (text), widget (QLabel, lblIndentWidth)
-#: rc.cpp:374
+#: rc.cpp:263
 msgid "&Indentation width:"
 msgstr "ទំហំ​នៃ​ការ​ចូល​បន្ទាត់ ៖"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbIndentWidth)
-#: rc.cpp:377
+#: rc.cpp:266
 msgid ""
 "The indentation width is the number of spaces which is used to indent a "
 "line. If the option <b>Insert spaces instead of tabulators</b> in the "
@@ -4234,25 +3978,25 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:103
 #. i18n: ectx: property (text), widget (QRadioButton, rbIndentMixed)
-#: rc.cpp:380
+#: rc.cpp:269
 msgid "Tabulators &and Spaces"
 msgstr "ថេប និង​ចន្លោះ"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:123
 #. i18n: ectx: property (text), widget (QLabel, lblTabWidth)
-#: rc.cpp:383
+#: rc.cpp:272
 msgid "Tab wi&dth:"
 msgstr "ទទឹង​ថេប ៖"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:152
 #. i18n: ectx: property (title), widget (QGroupBox, gbProperties)
-#: rc.cpp:386
+#: rc.cpp:275
 msgid "Indentation Properties"
 msgstr "លក្ខណៈ​សម្បត្តិ​ការ​ចូលបន្ទាត់"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:158
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:389
+#: rc.cpp:278
 msgid ""
 "If this option is disabled, changing the indentation level aligns a line to "
 "a multiple of the width specified in <b>Indentation width</b>."
@@ -4262,13 +4006,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:161
 #. i18n: ectx: property (text), widget (QCheckBox, chkKeepExtraSpaces)
-#: rc.cpp:392
+#: rc.cpp:281
 msgid "&Keep extra spaces"
 msgstr "ទុក​ចន្លោះ​បន្ថែម"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:168
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:395
+#: rc.cpp:284
 msgid ""
 "If this option is selected, pasted code from the clipboard is indented. "
 "Triggering the <b>undo</b>-action removes the indentation."
@@ -4278,19 +4022,19 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:171
 #. i18n: ectx: property (text), widget (QCheckBox, chkIndentPaste)
-#: rc.cpp:398
+#: rc.cpp:287
 msgid "Adjust indentation of code &pasted from the clipboard"
 msgstr "លៃតម្រូវ​ការចូល​បន្ទាត់​របស់​កូដ​ដែលបាន​បិទភ្ជាប់​ពី​ក្ដារតម្បៀតខ្ទាស់"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:181
 #. i18n: ectx: property (title), widget (QGroupBox, gbKeys)
-#: rc.cpp:401
+#: rc.cpp:290
 msgid "Indentation Actions"
 msgstr "អំពើ​នៃ​ការ​ចូល​បន្ទាត់"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:187
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:404
+#: rc.cpp:293
 msgid ""
 "If this option is selected, the <b>Backspace</b> key decreases the "
 "indentation level if the cursor is located in the leading blank space of a "
@@ -4301,13 +4045,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:190
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackspaceUnindents)
-#: rc.cpp:407
+#: rc.cpp:296
 msgid "&Backspace key in leading blank space unindents"
 msgstr "គ្រាប់ចុច​លុបថយ​ក្រោយ​ក្នុង​​​ចន្លោះ​ទទេ​នៅ​ខាង​មុខ នឹង​ចេញ​បន្ទាត់"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:200
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:410
+#: rc.cpp:299
 msgid ""
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
 "\">\n"
@@ -4329,7 +4073,7 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:233
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:416
+#: rc.cpp:305
 msgid ""
 "If this option is selected, the <b>Tab</b> key always inserts white space so "
 "that the next tab position is reached. If the option <b>Insert spaces "
@@ -4342,13 +4086,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:236
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabAdvances)
-#: rc.cpp:419
+#: rc.cpp:308
 msgid "Always advance to the &next tab position"
 msgstr "ចូល​ទៅកាន់​ទីតាំង​ថេប​បន្ទាប់​ជានិច្ច"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:243
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:422
+#: rc.cpp:311
 msgid ""
 "If this option is selected, the <b>Tab</b> key always indents the current "
 "line by the number of character positions specified in <b>Indentation width</"
@@ -4359,13 +4103,13 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:246
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabIndents)
-#: rc.cpp:425
+#: rc.cpp:314
 msgid "Always increase indentation &level"
 msgstr "បង្កើន​កម្រិត​ការ​ចូល​បន្ទាត់​ជានិច្ច"
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:253
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:428
+#: rc.cpp:317
 msgid ""
 "If this option is selected, the <b>Tab</b> key either indents the current "
 "line or advances to the next tab position.<p> If the insertion point is at "
@@ -4388,19 +4132,19 @@ msgstr ""
 
 #. i18n: file: dialogs/indentationconfigwidget.ui:256
 #. i18n: ectx: property (text), widget (QRadioButton, rbTabSmart)
-#: rc.cpp:431
+#: rc.cpp:320
 msgid "Increase indentation level if in l&eading blank space"
 msgstr "បង្កើន​កម្រិត​​ចូល​បន្ទាត់ នៅពេល​ដែល​មាន​ចន្លោះ​នៅ​ពីមុខ"
 
 #. i18n: file: dialogs/modonhdwidget.ui:22
 #. i18n: ectx: property (text), widget (QCheckBox, chkIgnoreWhiteSpaces)
-#: rc.cpp:434
+#: rc.cpp:323
 msgid "Ignore white space changes"
 msgstr "មិន​អើពើ​ការ​ផ្លាស់ប្ដូរ​ចន្លោះ​មិនឃើញ"
 
 #. i18n: file: dialogs/modonhdwidget.ui:29
 #. i18n: ectx: property (whatsThis), widget (QPushButton, btnDiff)
-#: rc.cpp:437
+#: rc.cpp:326
 msgid ""
 "Calculates the difference between the editor contents and the disk file "
 "using diff(1)."
@@ -4408,25 +4152,25 @@ msgstr "គណនា​ភាព​ខុសគ្នា​រវាង​មា
 
 #. i18n: file: dialogs/modonhdwidget.ui:32
 #. i18n: ectx: property (text), widget (QPushButton, btnDiff)
-#: rc.cpp:440
+#: rc.cpp:329
 msgid "&View Difference"
 msgstr "មើល​ភាព​ខុស​គ្នា"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:20
 #. i18n: ectx: property (title), widget (QGroupBox, gbConfigFile)
-#: rc.cpp:443
+#: rc.cpp:332
 msgid "Folder Config File"
 msgstr "ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ​ថត"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:31
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:446
+#: rc.cpp:335
 msgid "Search &depth for config file:"
 msgstr "ជម្រៅ​ការ​ស្វែងរក​សម្រាប់ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ ៖"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:41
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:449
+#: rc.cpp:338
 msgid ""
 "The editor will search the given number of folder levels upwards for a ."
 "kateconfig file and load the settings line from it."
@@ -4436,13 +4180,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:44
 #. i18n: ectx: property (specialValueText), widget (KIntSpinBox, sbConfigFileSearchDepth)
-#: rc.cpp:452
+#: rc.cpp:341
 msgid "Do not use config file"
 msgstr "កុំ​ប្រើ​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:75
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, gbBackup)
-#: rc.cpp:455
+#: rc.cpp:344
 msgid ""
 "<p>Backing up on save will cause Kate to copy the disk file to '&lt;"
 "prefix&gt;&lt;filename&gt;&lt;suffix&gt;' before saving changes.<p>The "
@@ -4454,13 +4198,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:78
 #. i18n: ectx: property (title), widget (QGroupBox, gbBackup)
-#: rc.cpp:458
+#: rc.cpp:347
 msgid "Backup on Save"
 msgstr "បម្រុង​ទុក​នៅ​ពេល​រក្សាទុក"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:87
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:461
+#: rc.cpp:350
 msgid ""
 "If this option is enabled, backups for local files will be created when "
 "saving."
@@ -4469,13 +4213,13 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:90
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupLocalFiles)
-#: rc.cpp:464
+#: rc.cpp:353
 msgid "&Local files"
 msgstr "ឯកសារ​មូលដ្ឋាន"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:97
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:467
+#: rc.cpp:356
 msgid ""
 "If this option is enabled, backups for remote files will be created when "
 "saving."
@@ -4484,61 +4228,61 @@ msgstr ""
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkBackupRemoteFiles)
-#: rc.cpp:470
+#: rc.cpp:359
 msgid "&Remote files"
 msgstr "ឯកសារ​ពី​ចម្ងាយ"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:107
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:473
+#: rc.cpp:362
 msgid "&Prefix:"
 msgstr "បុព្វបទ ៖"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:117
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupPrefix)
-#: rc.cpp:476
+#: rc.cpp:365
 msgid "Enter the prefix to prepend to the backup file names."
 msgstr "បញ្ចូល​បុព្វបទ​ដែល​ត្រូវ​បន្ថែម​ទៅ​ខាងដើម​ឈ្មោះ​ឯកសារ​បម្រុង​ទុក ។"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:124
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:479
+#: rc.cpp:368
 msgid "&Suffix:"
 msgstr "បច្ច័យ ៖"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:134
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, edtBackupSuffix)
-#: rc.cpp:482
+#: rc.cpp:371
 msgid "Enter the suffix to append to the backup file names."
 msgstr "បញ្ចូល​បច្ច័យ​ដែលត្រូវ​បន្ថែម​ទៅ​ខាង​ចុង​ឈ្មោះ​ឯកសារបម្រុងទុក ។"
 
 #. i18n: file: dialogs/opensaveconfigadvwidget.ui:167
 #. i18n: ectx: property (text), widget (QCheckBox, chkNoSync)
-#: rc.cpp:485
+#: rc.cpp:374
 msgid "Disable swap files syncing"
 msgstr "បិទ​ការ​ធ្វើ​សមកាលកម្ម​ឯកសារ​ប្ដូរ"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:488
+#: rc.cpp:377
 msgid "Text Area Background"
 msgstr "ផ្ទៃ​ខាង​ក្រោយ​ផ្ទៃ​អត្ថបទ"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:26
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:491
+#: rc.cpp:380
 msgid "Normal text:"
 msgstr "អត្ថបទ​ធម្មតា ៖"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:40
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:497
+#: rc.cpp:386
 msgid "Selected text:"
 msgstr "អត្ថបទ​ដែល​បាន​ជ្រើស ៖"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:47
 #. i18n: ectx: property (whatsThis), widget (KColorButton, selected)
-#: rc.cpp:500
+#: rc.cpp:389
 msgid ""
 "<p>Sets the background color of the selection.</p><p>To set the text color "
 "for selected text, use the \"<b>Configure Highlighting</b>\" dialog.</p>"
@@ -4548,19 +4292,19 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:54
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:503
+#: rc.cpp:392
 msgid "Current line:"
 msgstr "បន្ទាត់​បច្ចុប្បន្ន ៖"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:68
 #. i18n: ectx: property (whatsThis), widget (KComboBox, combobox)
-#: rc.cpp:509
+#: rc.cpp:398
 msgid "<p>Select the marker type you want to change.</p>"
 msgstr "<p>ជ្រើស​ប្រភេទ​សញ្ញា​​សម្គាល់​ដែល​អ្នក​ចង់​ផ្លាស់​ប្ដូរ ។</p>"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:75
 #. i18n: ectx: property (whatsThis), widget (KColorButton, markers)
-#: rc.cpp:512
+#: rc.cpp:401
 msgid ""
 "<p>Sets the background color of the selected marker type.</p><p><b>Note</b>: "
 "The marker color is displayed lightly because of transparency.</p>"
@@ -4570,67 +4314,67 @@ msgstr ""
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:85
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: rc.cpp:515
+#: rc.cpp:404
 msgid "Additional Elements"
 msgstr "ធាតុ​បន្ថែម"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:94
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: rc.cpp:518
+#: rc.cpp:407
 msgid "Left border background:"
 msgstr "ផ្ទៃ​ខាង​ក្រោយ​ស៊ុម​ខាង​ឆ្វេង ៖"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:104
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:521
+#: rc.cpp:410
 msgid "Line numbers:"
 msgstr "លេខ​បន្ទាត់ ៖"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:118
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:527
+#: rc.cpp:416
 msgid "Bracket highlight:"
 msgstr "បន្លិច​វង់​តង្កៀប ៖"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:132
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:533
+#: rc.cpp:422
 msgid "Word wrap markers:"
 msgstr "សញ្ញា​​សម្គាល់​ការ​រុំ​ពាក្យ ៖"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:146
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: rc.cpp:539
+#: rc.cpp:428
 msgid "Tab and space markers:"
 msgstr "សញ្ញា​​សម្គាល់​​ថេប និង​ដកឃ្លា ៖"
 
 #. i18n: file: dialogs/schemaconfigcolortab.ui:160
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: rc.cpp:545
+#: rc.cpp:434
 msgid "Spelling mistake line:"
 msgstr "បន្ទាត់មាន​កំហុស​អក្ខរាវិរុទ្ធ ៖"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:29
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators)
-#: rc.cpp:557
+#: rc.cpp:446
 msgid "Dynamic &word wrap indicators (if applicable):"
 msgstr "ទ្រនិចបង្ហាញ​រុំ​ពាក្យ​ថាមវន្ត (ប្រសិន​បើ​អាច​អនុវត្ត) ៖"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:39
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbDynamicWordWrapIndicator)
-#: rc.cpp:560
+#: rc.cpp:449
 msgid "Choose when the Dynamic Word Wrap Indicators should be displayed."
 msgstr "ជ្រើស ពេល​ដែល​ដែលត្រូវ​បង្ហាញ​ទ្រនិច​ចង្អុលបង្ហាញ​ការ​រុំ​ពាក្យ​ថាមវន្ត ។"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:46
 #. i18n: ectx: property (text), widget (QLabel, lblDynamicWordWrapIndicators_2)
-#: rc.cpp:563
+#: rc.cpp:452
 msgid "Align dynamically wrapped lines to indentation depth:"
 msgstr "តម្រឹម​បន្ទាត់​ដែល​បាន​រុំ​ជា​ថាមវន្ត​ទៅ​ជម្រៅ​ការ​ចូល​បន្ទាត់ ៖"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:62
 #. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:567
+#: rc.cpp:456
 #, no-c-format
 msgid ""
 "<p>Enables the start of dynamically wrapped lines to be aligned vertically "
@@ -4649,20 +4393,20 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:68
 #. i18n: ectx: property (suffix), widget (KIntSpinBox, sbDynamicWordWrapDepth)
-#: rc.cpp:574
+#: rc.cpp:463
 #, no-c-format
 msgid "% of View Width"
 msgstr "% នៃ​ទទឹង​ទិដ្ឋភាព"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:84
 #. i18n: ectx: property (title), widget (QGroupBox, gbWhitespaceHighlighting)
-#: rc.cpp:577
+#: rc.cpp:466
 msgid "Whitespace Highlighting"
 msgstr "ការ​រំលេច"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:90
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:580
+#: rc.cpp:469
 msgid ""
 "The editor will display a symbol to indicate the presence of a tab in the "
 "text."
@@ -4670,19 +4414,19 @@ msgstr "កម្មវិធី​និពន្ធ​នឹង​បង្ហ
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:93
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowTabs)
-#: rc.cpp:583
+#: rc.cpp:472
 msgid "&Highlight tabulators"
 msgstr "រំលេច​​​ការ​រៀប​ជា​តារាង"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:100
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowSpaces)
-#: rc.cpp:586
+#: rc.cpp:475
 msgid "Highlight trailing &spaces"
 msgstr "បន្លិច​ចន្លោះ​នៅ​ពីក្រោយ"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:116
 #. i18n: ectx: property (toolTip), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:592
+#: rc.cpp:481
 msgid ""
 "Changing this mode affects only newly opened / created documents. In KWrite "
 "a restart is recommended."
@@ -4692,13 +4436,13 @@ msgstr ""
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:119
 #. i18n: ectx: property (text), widget (QCheckBox, chkDeveloperMode)
-#: rc.cpp:595
+#: rc.cpp:484
 msgid "Enable power user mode (KDE 3 mode)"
 msgstr "អនុញ្ញាត​របៀប​អ្នកប្រើជាន់ខ្ពស់ (របៀប KDE 3)"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:126
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:598
+#: rc.cpp:487
 msgid ""
 "If this is enabled, the editor will display vertical lines to help identify "
 "indent lines."
@@ -4706,13 +4450,13 @@ msgstr "ប្រសិន​បើ​បាន​បើក នោះ​កម�
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:129
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowIndentationLines)
-#: rc.cpp:601
+#: rc.cpp:490
 msgid "Show i&ndentation lines"
 msgstr "បង្ហាញ​បន្ទាត់​ចូល"
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:604
+#: rc.cpp:493
 msgid ""
 "If this is enabled, the range between the selected matching brackets will be "
 "highlighted."
@@ -4720,13 +4464,13 @@ msgstr "ប្រសិន​បើ​បាន​អនុញ្ញាត ជ�
 
 #. i18n: file: dialogs/textareaappearanceconfigwidget.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowWholeBracketExpression)
-#: rc.cpp:607
+#: rc.cpp:496
 msgid "Highlight range between selected brackets"
 msgstr "ជួរ​​រំលេច​រវាង​វង់ក្រចក​ដែល​បាន​ជ្រើស"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:18
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:613
+#: rc.cpp:502
 msgid ""
 "When selected, the vi input mode will be enabled when opening a new view. "
 "You can still toggle the vi input mode on/off for a particular view in the "
@@ -4737,13 +4481,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:21
 #. i18n: ectx: property (text), widget (QCheckBox, chkViInputModeDefault)
-#: rc.cpp:616
+#: rc.cpp:505
 msgid "Use Vi input mode"
 msgstr "ប្រើ​របៀប​បញ្ចូល Vi"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:28
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:619
+#: rc.cpp:508
 msgid ""
 "When selected, vi commands will override Kate's built-in commands. For "
 "example: Ctrl+R will redo, and override the standard action (showing the "
@@ -4754,13 +4498,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:31
 #. i18n: ectx: property (text), widget (QCheckBox, chkViCommandsOverride)
-#: rc.cpp:622
+#: rc.cpp:511
 msgid "Let Vi commands override Kate shortcuts"
 msgstr "ឲ្យ​ពាក្យ​បញ្ជា Vi បដិសេធ​ផ្លូវកាត់​របស់ Kate"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:40
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:625
+#: rc.cpp:514
 msgid ""
 "By default, an extra status bar will be used when the Vi input mode is "
 "enabled. This status bar shows commands while they are being typed and "
@@ -4776,13 +4520,13 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:43
 #. i18n: ectx: property (text), widget (QCheckBox, chkViStatusBarHide)
-#: rc.cpp:630
+#: rc.cpp:519
 msgid "Hide the Vi mode status bar"
 msgstr "លាក់​របារ​ស្ថានភាព​របៀប Vi"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:58
 #. i18n: ectx: property (whatsThis), widget (QGroupBox, groupBox)
-#: rc.cpp:633
+#: rc.cpp:522
 msgid ""
 "Key mapping is used to change the meaning of typed keys. This allows you to "
 "move commands to other keys or make special keypresses for doing a series of "
@@ -4803,37 +4547,37 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:61
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:641
+#: rc.cpp:530
 msgid "Key Mapping"
 msgstr "កា​រផ្គូផ្គង​សោ"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:71
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:644
+#: rc.cpp:533
 msgid "Normal mode"
 msgstr "របៀប​ធម្មតា"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:95
 #. i18n: ectx: property (text), widget (QTableWidget, tblNormalModeMappings)
-#: rc.cpp:650
+#: rc.cpp:539
 msgid "Replacement"
 msgstr "ការ​ជំនួស"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:105
 #. i18n: ectx: property (text), widget (QPushButton, btnRemoveSelectedNormal)
-#: rc.cpp:653
+#: rc.cpp:542
 msgid "Remove selected"
 msgstr "យក​អ្វី​ដែលបានជ្រើស​ចេញ"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:112
 #. i18n: ectx: property (text), widget (QPushButton, btnAddNewNormal)
-#: rc.cpp:656
+#: rc.cpp:545
 msgid "Add new mapping"
 msgstr "បន្ថែម​កា​រ​ផ្គូផ្គ​ងថ្មី"
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:119
 #. i18n: ectx: property (toolTip), widget (QPushButton, btnImportNormal)
-#: rc.cpp:659
+#: rc.cpp:548
 msgid ""
 "Read a vimrc file and attempt to import mappings specified with the \"[n]"
 "noremap\" command."
@@ -4842,9 +4586,265 @@ msgstr ""
 
 #. i18n: file: dialogs/viinputmodeconfigwidget.ui:122
 #. i18n: ectx: property (text), widget (QPushButton, btnImportNormal)
-#: rc.cpp:662
+#: rc.cpp:551
 msgid "Import from vimrc file"
 msgstr "នាំចូល​ពី​ឯកសារ vimrc "
+
+#. i18n: file: dialogs/editconfigwidget.ui:20
+#. i18n: ectx: property (title), widget (QGroupBox, gbStaticWordWrap)
+#: rc.cpp:554
+msgid "Static Word Wrap"
+msgstr "ការ​រុំ​ពាក្យឋិតិវន្ត"
+
+#. i18n: file: dialogs/editconfigwidget.ui:26
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkStaticWordWrap)
+#: rc.cpp:557
+msgid ""
+"<p>Automatically start a new line of text when the current line exceeds the "
+"length specified by the <b>Wrap words at:</b> option.</p><p>This option does "
+"not wrap existing lines of text - use the <b>Apply Static Word Wrap</b> "
+"option in the <b>Tools</b> menu for that purpose.</p><p>If you want lines to "
+"be <i>visually wrapped</i> instead, according to the width of the view, "
+"enable <b>Dynamic Word Wrap</b> in the <b>Appearance</b> config page.</p>"
+msgstr ""
+"<p>ចាប់ផ្ដើម​ជួរ​អត្ថបទ​ថ្មី​ដោយ​ស្វ័យប្រវត្តិ នៅ​ពេល​ជួរ​បច្ចុប្បន្ន​លើស​ពី​ប្រវែង​ដែល​បាន​បញ្ជាក់​ដោយ​ជម្រើស "
+"<b>រុំ​ពាក្យ​ត្រង់ ៖</b> ។</p><p>ជម្រើស​នេះ​មិន​រុំ​ជួរ​អត្ថបទ​ដែល​មាន​ស្រាប់​ឡើយ - ប្រើ​ជម្រើស <b>អនុវត្ត​"
+"ការ​រុំ​ពាក្យ​ឋិតិវន្ត</b> ក្នុង​ម៉ឺនុយ <b>ឧបករណ៍</b> សម្រាប់​គោលបំណង​នោះ ។</p><p>ប្រសិនបើ​អ្នក​ចង់​ឲ្យ​ជួរ​"
+"ត្រូវ​បាន <i>រុំ​ដោយ​អាច​មើល​ឃើញ</i> ជំនួស​វិញ អាស្រ័យ​លើ​ទទឹង​របស់​ទិដ្ឋភាព បើក <b>ការ​រុំ​ពាក្យ​ថាមវន្ត</"
+"b> ក្នុង​ទំព័រ​កំណត់​រចនាសម្ព័ន្ធ <b>រូបរាង</b> ។</p>"
+
+#. i18n: file: dialogs/editconfigwidget.ui:29
+#. i18n: ectx: property (text), widget (QCheckBox, chkStaticWordWrap)
+#: rc.cpp:560
+msgid "Enable static &word wrap"
+msgstr "អនុញ្ញាត​ការ​រុំ​ពាក្យ​ឋិតិវន្ត"
+
+#. i18n: file: dialogs/editconfigwidget.ui:36
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowStaticWordWrapMarker)
+#: rc.cpp:563
+msgid ""
+"<p>If this option is checked, a vertical line will be drawn at the word wrap "
+"column as defined in the <strong>Editing</strong> properties.</p><p>Note "
+"that the word wrap marker is only drawn if you use a fixed pitch font.</p>"
+msgstr ""
+"<p>ប្រសិន​បើ​បាន​ធីក​ជម្រើសនេះ នោះ​បន្ទាត់​បញ្ឈរ​នឹង​ត្រូវ​បានគូរ​នៅ​ជួរឈរ​រុំពាក្យ ដូច​ដែល​បាន​កំណត់​ក្នុង​លក្ខណៈ​"
+"សម្បត្តិ​<strong>កែសម្រួល</strong> ។</p><p>សូម​ចំណាំថា សញ្ញា​​សម្គាល់​រុំពាក្យ​នឹង​ត្រូវ​បានគូរ ​តែ​ក្នុង​"
+"ករណី​ដែល​អ្នក​ប្រើ​ពុម្ពអក្សរ​ជម្រាល​ថេរ ។</p>"
+
+#. i18n: file: dialogs/editconfigwidget.ui:39
+#. i18n: ectx: property (text), widget (QCheckBox, chkShowStaticWordWrapMarker)
+#: rc.cpp:566
+msgid "Show static word wra&p marker (if applicable)"
+msgstr "បង្ហាញ​សញ្ញា​​សម្គាល់​រុំពាក្យ​ឋិតិវន្ត (​ប្រសិន​បើ​អាច​អនុវត្ត)"
+
+#. i18n: file: dialogs/editconfigwidget.ui:51
+#. i18n: ectx: property (text), widget (QLabel, lblWordWrap)
+#: rc.cpp:569
+msgid "W&rap words at:"
+msgstr "រុំ​ពាក្យត្រង់ ៖"
+
+#. i18n: file: dialogs/editconfigwidget.ui:61
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbWordWrap)
+#: rc.cpp:572
+msgid ""
+"If the Word Wrap option is selected this entry determines the length (in "
+"characters) at which the editor will automatically start a new line."
+msgstr ""
+"ប្រសិន​បើ​បាន​ជ្រើស​ជម្រើស​រុំពាក្យ ធាតុ​នេះ​កំណត់​ប្រវែង (ជា​តួអក្សរ) ដែល​កម្មវិធី​និពន្ធ​នឹង​ចាប់ផ្ដើម​បន្ទាត់​ថ្មី​"
+"ដោយ​ស្វ័យប្រវត្តិ ។"
+
+#. i18n: file: dialogs/editconfigwidget.ui:95
+#. i18n: ectx: property (title), widget (QGroupBox, gbMisc)
+#: rc.cpp:575
+msgid "Misc"
+msgstr "ផ្សេងៗ"
+
+#. i18n: file: dialogs/editconfigwidget.ui:101
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:578
+msgid ""
+"If this is enabled, the editor will remove any trailing whitespace on lines "
+"that are changed through editing."
+msgstr ""
+"ប្រសិន​បើ​បាន​បើក​វា កម្មវិធី​និពន្ធ​នឹង​យកចន្លោះមិនឃើញ​ដែល​តាម​ពីក្រោយចេញ​ពី​បន្ទាត់ នៅ​ពេល​ដែល​ពួក​វា​ត្រូវ​បាន​"
+"បន្សល់ទុកដោយទស្សន៍​ទ្រនិច​បញ្ចូល ។"
+
+#. i18n: file: dialogs/editconfigwidget.ui:104
+#. i18n: ectx: property (text), widget (QCheckBox, chkRemoveTrailingSpaces)
+#: rc.cpp:581
+msgid "Remove &trailing spaces while editing"
+msgstr "យក​ចន្លោះ​មិន​ឃើញ​នៅ​ពី​ក្រោយ​ចេញ​នៅខណៈពេល​កែសម្រួល"
+
+#. i18n: file: dialogs/editconfigwidget.ui:111
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAutoBrackets)
+#: rc.cpp:584
+msgid ""
+"When the user types a left bracket ([,(, or {) KateView automatically enters "
+"the right bracket (}, ), or ]) to the right of the cursor."
+msgstr ""
+"ពេល​ដែល​អ្នក​ប្រើ​វាយ​តង្កៀប​ខាង​ឆ្វេង ([,(, ឬ {) នោះ KateView នឹង​បញ្ចូល​តង្កៀប​ខាង​ស្តាំ  "
+"(}, ), ឬ ]) ​ដោយ​ស្វ័យ​​ប្រវត្តិ​ទៅ​ខាង​ស្តាំទស្សន៍​ទ្រនិច ។"
+
+#. i18n: file: dialogs/editconfigwidget.ui:114
+#. i18n: ectx: property (text), widget (QCheckBox, chkAutoBrackets)
+#: rc.cpp:587
+msgid "Auto &brackets"
+msgstr "តង្កៀប​ស្វ័យ​ប្រវត្តិ"
+
+#. i18n: file: dialogs/editconfigwidget.ui:121
+#. i18n: ectx: property (text), widget (QCheckBox, chkSmartCopyCut)
+#: rc.cpp:590
+msgid "Copy/Cut the current line if no selection"
+msgstr "ចម្លង/កាត់​បន្ទាត់​បច្ចុប្បន្ន ប្រសិនបើ​គ្មាន​ជម្រើស"
+
+#. i18n: file: dialogs/editconfigwidget.ui:128
+#. i18n: ectx: property (text), widget (QCheckBox, chkScrollPastEnd)
+#: rc.cpp:593
+msgid "Allow scrolling past the end of the document"
+msgstr "អនុញ្ញាត​ឲ្យ​បិទភ្ជាប់​រមូរ​នៅ​ចុង​ឯកសារ"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:14
+#. i18n: ectx: property (text), widget (QLabel, lblFiletype)
+#: rc.cpp:596
+msgid "&Filetype:"
+msgstr "ប្រភេទ​ឯកសារ ៖"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:24
+#. i18n: ectx: property (whatsThis), widget (KComboBox, cmbFiletypes)
+#: rc.cpp:599
+msgid "Select the filetype you want to change."
+msgstr "ជ្រើស​ប្រភេទ​​ឯកសារ​ដែល​អ្នក​ចង់​ផ្លាស់ប្ដូរ ។"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:31
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnNew)
+#: rc.cpp:602
+msgid "Create a new file type."
+msgstr "បង្កើត​ប្រភេទ​ឯកសារ​ថ្មី​មួយ ។"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:34
+#. i18n: ectx: property (text), widget (QPushButton, btnNew)
+#: rc.cpp:605
+msgid "&New"
+msgstr "ថ្មី"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:41
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnDelete)
+#: rc.cpp:608
+msgid "Delete the current file type."
+msgstr "លុប​ប្រភេទ​ឯកសារ​បច្ចុប្បន្ន ។"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:82
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtName)
+#: rc.cpp:620
+msgid ""
+"The name of the filetype will be the text of the corresponding menu item."
+msgstr "ឈ្មោះ​ប្រភេទ​ឯកសារ​នឹងជា​​អត្ថបទ​របស់​ធាតុ​ម៉ឺនុយ​ដែល​ត្រូវ​គ្នា ។"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:89
+#. i18n: ectx: property (text), widget (QLabel, lblSection)
+#: rc.cpp:623
+msgid "&Section:"
+msgstr "ផ្នែក ៖"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:99
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtSection)
+#: rc.cpp:626
+msgid "The section name is used to organize the file types in menus."
+msgstr "ឈ្មោះ​ផ្នែក​ត្រូវ​បាន​ប្រើ​ដើម្បី​រៀបចំ​ប្រភេទ​ឯកសារ​ក្នុង​ម៉ឺនុយ ។"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:106
+#. i18n: ectx: property (text), widget (QLabel, lblVariables)
+#: rc.cpp:629
+msgid "&Variables:"
+msgstr "អថេរ ៖"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:116
+#. i18n: ectx: property (whatsThis), widget (VariableLineEdit, edtVariables)
+#: rc.cpp:632
+msgid ""
+"<p>This string allows to configure Kate's settings for the files selected by "
+"this mimetype using Kate variables. Almost any configuration option can be "
+"set, such as highlight, indent-mode, encoding, etc.</p><p>For a full list of "
+"known variables, see the manual.</p>"
+msgstr ""
+"<p>ខ្សែអក្សរ​នេះ​អនុញ្ញាត​ឲ្យ​កំណត់​រចនាសម្ព័ន្ធ​ការ​កំណត់​របស់ Kate សម្រាប់​ឯកសារ​ដែល​បាន​ជ្រើស​ដោយប្រភេទ "
+"mime ដោយប្រើ​អថេរ Kate ។ ជម្រើស​កំណត់រចនា​សម្ព័ន្ធ​ស្ទើរតែ​ទាំងអស់​គឺ​អាច​កំណត់​បាន ដូចជា​ រំលេច​ របៀប​"
+"ចូល​បន្ទាត់ ការ​អ៊ិនកូដ ។ល។</p><p>ចំពោះ​បញ្ជី​អថេរ​ដែល​ស្គាល់​ទាំងអស់ គឺ​សូម​មើល​សៀវភៅ​ដៃ ។</p>"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:123
+#. i18n: ectx: property (text), widget (QLabel, lblHl)
+#: rc.cpp:635
+msgid "&Highlighting:"
+msgstr "ការ​បន្លិច ៖"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:136
+#. i18n: ectx: property (text), widget (QLabel, lblIndenter)
+#: rc.cpp:638
+msgid "&Indentation Mode:"
+msgstr "ការ​ចូល​បន្ទាត់ ៖"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:149
+#. i18n: ectx: property (text), widget (QLabel, lblExtensions)
+#: rc.cpp:641
+msgid "File e&xtensions:"
+msgstr "កន្ទុយ​ឯកសារ ៖"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:159
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtFileExtensions)
+#: rc.cpp:644
+msgid ""
+"The wildcards mask allows to select files by filename. A typical mask uses "
+"an asterisk and the file extension, for example <code>*.txt; *.text</code>. "
+"The string is a semicolon-separated list of masks."
+msgstr ""
+"របាំង​ជំនួស​អនុញ្ញាត​ឲ្យ​អ្នក​ជ្រើស​ឯកសារ​តាម​ឈ្មោះ​ឯកសារ ។ របាំង​ធម្មតា​ប្រើសញ្ញា​ផ្កាយ និង​​កន្ទុយឯកសារ "
+"ឧទាហរណ៍ <code>*.txt; *.text</code> ។ ខ្សែ​អក្សរ​គឺបញ្ជី​របាំង​ដែលបាន​បំបែក​ដោយ​សញ្ញា​ចំណុច​ក្បៀស "
+"(;) ។"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:166
+#. i18n: ectx: property (text), widget (QLabel, lblMimeTypes)
+#: rc.cpp:647
+msgid "MIME &types:"
+msgstr "ប្រភេទ MIME ៖"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:181
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, edtMimeTypes)
+#: rc.cpp:650
+msgid ""
+"The mime type mask allows to select files by mimetype. The string is a "
+"semicolon-separated list of mimetypes, for example <code>text/plain; text/"
+"english</code>."
+msgstr ""
+"របាំង​ប្រភេទ mime អនុញ្ញាត​ឲ្យ​អ្នក​ជ្រើស​ឯកសារ​តាមប្រភេទ mime ។ ខ្សែ​អក្សរ​គឺ​ជា​បញ្ជី​ប្រភេទ mime "
+"ដែល​បាន​បំបែក​ដោយ​សញ្ញា​ចំណុច​ក្បៀស (;) ឧទាហរណ៍ <code>text/plain; text/english</code> ។"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:188
+#. i18n: ectx: property (whatsThis), widget (QToolButton, btnMimeTypes)
+#: rc.cpp:653
+msgid "Displays a wizard that helps you easily select mimetypes."
+msgstr "បង្ហាញ​អ្នក​ជំនួយ​ការ​ដែល​ជួយ​អ្នក​ឲ្យ​ជ្រើស​ប្រភេទ mime បាន​ងាយ​ស្រួល ។"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:197
+#. i18n: ectx: property (text), widget (QLabel, lblPriority)
+#: rc.cpp:656
+msgid "P&riority:"
+msgstr "អាទិភាព ៖"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:207
+#. i18n: ectx: property (whatsThis), widget (KIntSpinBox, sbPriority)
+#: rc.cpp:659
+msgid ""
+"Sets priority for this file type. If more than one file type selects the "
+"same file, the one with the highest priority will be used."
+msgstr ""
+"កំណត់​អាទិភាព​សម្រាប់​ប្រភេទ​ឯកសារ​នេះ ។ ប្រសិន​បើ​ប្រភេទ​ឯកសារ​ច្រើន​​ជ្រើស​ឯកសារ​ដូច​គ្នា នោះ​ឯកសារ​ដែល​"
+"មាន​អាទិភាព​ខ្ពស់​ជាង​គេ ​នឹង​ត្រូវ​បាន​ប្រើ ។​"
+
+#. i18n: file: dialogs/filetypeconfigwidget.ui:232
+#. i18n: ectx: property (text), widget (QPushButton, btnDownload)
+#: rc.cpp:662
+msgid "Download Highlighting Files..."
+msgstr "ទាញ​យក​ឯកសារ​បន្លិច..."
 
 #. i18n: file: dialogs/bordersappearanceconfigwidget.ui:23
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkShowFoldingMarkers)
