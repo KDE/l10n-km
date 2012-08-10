@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konsole\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-07 07:39+0200\n"
+"POT-Creation-Date: 2012-08-10 04:55+0200\n"
 "PO-Revision-Date: 2012-06-11 14:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -1152,7 +1152,9 @@ msgstr "រក្សាទុក​ទំហំ​ និង​ទីតាំ�
 
 #. i18n: file: EditProfileDialog.ui:230
 #. i18n: ectx: property (toolTip), widget (QCheckBox, showTerminalSizeHintButton)
-#: rc.cpp:134
+#. i18n: file: settings/konsole.kcfg:25
+#. i18n: ectx: tooltip, entry (ShowTerminalSizeHint), group (KonsoleWindow)
+#: rc.cpp:134 rc.cpp:509
 msgid ""
 "Show terminal size in columns and lines in the center of window after "
 "resizing"
@@ -1162,7 +1164,9 @@ msgstr "បង្ហាញ​ទំហំ​ស្ថានីយ​នៅ​ក
 #. i18n: ectx: property (text), widget (QCheckBox, showTerminalSizeHintButton)
 #. i18n: file: settings/GeneralSettings.ui:53
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowTerminalSizeHint)
-#: rc.cpp:137 rc.cpp:401
+#. i18n: file: settings/konsole.kcfg:24
+#. i18n: ectx: label, entry (ShowTerminalSizeHint), group (KonsoleWindow)
+#: rc.cpp:137 rc.cpp:401 rc.cpp:506
 msgid "Show hint for terminal size after resizing"
 msgstr "បង្ហាញ​តម្រុយ​សម្រាប់​ទំហំ​ស្ថានីយ​បន្ទាប់ពី​ប្ដូរ​ទំហំ"
 
@@ -1689,19 +1693,25 @@ msgstr "បង្អួច​ Konsole"
 
 #. i18n: file: settings/GeneralSettings.ui:40
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowMenuBarByDefault)
-#: rc.cpp:398
+#. i18n: file: settings/konsole.kcfg:9
+#. i18n: ectx: label, entry (ShowMenuBarByDefault), group (KonsoleWindow)
+#: rc.cpp:398 rc.cpp:488
 msgid "Show menubar by default"
 msgstr "បង្ហាញ​របារ​​ម៉ឺនុយ​​ជា​លំនាំដើម"
 
 #. i18n: file: settings/GeneralSettings.ui:79
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowMenuAccelerators)
-#: rc.cpp:407
+#. i18n: file: settings/konsole.kcfg:19
+#. i18n: ectx: label, entry (AllowMenuAccelerators), group (KonsoleWindow)
+#: rc.cpp:407 rc.cpp:500
 msgid "Enable menu accelerators"
 msgstr "បើក​ការ​បង្កើន​ល្បឿន​ម៉ឺនុយ"
 
 #. i18n: file: settings/GeneralSettings.ui:92
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowWindowTitleOnTitleBar)
-#: rc.cpp:410
+#. i18n: file: settings/konsole.kcfg:14
+#. i18n: ectx: label, entry (ShowWindowTitleOnTitleBar), group (KonsoleWindow)
+#: rc.cpp:410 rc.cpp:494
 msgid "Show window title on the titlebar"
 msgstr "បង្ហាញ​ចំណងជើង​បង្អួច​នៅ​លើ​របារ​ចំណងជើង"
 
@@ -1841,45 +1851,113 @@ msgstr "កែសម្រួល​ផ្លូវ​រូបភាព​ផ្
 msgid "Choose the background image"
 msgstr "ជ្រើស​រូបភាព​ផ្ទៃខាងក្រោយ"
 
+#. i18n: file: settings/konsole.kcfg:10
+#. i18n: ectx: tooltip, entry (ShowMenuBarByDefault), group (KonsoleWindow)
+#: rc.cpp:491
+#, fuzzy
+#| msgid "Show menubar by default"
+msgid "Show menubar by default in each Konsole window"
+msgstr "បង្ហាញ​របារ​​ម៉ឺនុយ​​ជា​លំនាំដើម"
+
+#. i18n: file: settings/konsole.kcfg:15
+#. i18n: ectx: tooltip, entry (ShowWindowTitleOnTitleBar), group (KonsoleWindow)
+#: rc.cpp:497
+#, fuzzy
+#| msgid "Show window title on the titlebar"
+msgid "Show window title set by escape sequence on the titlebar"
+msgstr "បង្ហាញ​ចំណងជើង​បង្អួច​នៅ​លើ​របារ​ចំណងជើង"
+
+#. i18n: file: settings/konsole.kcfg:20
+#. i18n: ectx: tooltip, entry (AllowMenuAccelerators), group (KonsoleWindow)
+#: rc.cpp:503
+msgid "Allow users to access top menu through Alt+Key combination"
+msgstr ""
+
+#. i18n: file: settings/konsole.kcfg:29
+#. i18n: ectx: label, entry (SaveGeometryOnExit), group (KonsoleWindow)
+#: rc.cpp:512
+#, fuzzy
+#| msgid "Save window size and position on exit"
+msgid "Save window size on exit"
+msgstr "រក្សាទុក​ទំហំ​ និង​ទីតាំង​បង្អួច​នៅ​ពេល​ចាកចេញ"
+
+#. i18n: file: settings/konsole.kcfg:30
+#. i18n: ectx: tooltip, entry (SaveGeometryOnExit), group (KonsoleWindow)
+#: rc.cpp:515
+#, fuzzy
+#| msgid "Save window size and position on exit"
+msgid "The window size will be saved upon exiting Konsole"
+msgstr "រក្សាទុក​ទំហំ​ និង​ទីតាំង​បង្អួច​នៅ​ពេល​ចាកចេញ"
+
+#. i18n: file: settings/konsole.kcfg:36
+#. i18n: ectx: label, entry (TabBarVisibility), group (TabBar)
+#: rc.cpp:518
+msgid "Control the visibility of the whole tab bar"
+msgstr ""
+
+#. i18n: file: settings/konsole.kcfg:45
+#. i18n: ectx: label, entry (TabBarPosition), group (TabBar)
+#: rc.cpp:521
+msgid "Control the position of the tab bar"
+msgstr ""
+
+#. i18n: file: settings/konsole.kcfg:53
+#. i18n: ectx: label, entry (TabBarStyleSheet), group (TabBar)
+#: rc.cpp:524
+msgid "Control the visual style of the tab bar"
+msgstr ""
+
+#. i18n: file: settings/konsole.kcfg:57
+#. i18n: ectx: label, entry (ShowQuickButtons), group (TabBar)
+#: rc.cpp:527
+msgid "Control the visibility of quick buttons on the tab bar"
+msgstr ""
+
+#. i18n: file: settings/konsole.kcfg:61
+#. i18n: ectx: label, entry (NewTabBehavior), group (TabBar)
+#: rc.cpp:530
+msgid "Control where to put the new tab"
+msgstr ""
+
 #. i18n: file: ../desktop/konsoleui.rc:5
 #. i18n: ectx: Menu (file)
-#: rc.cpp:488
+#: rc.cpp:533
 msgid "File"
 msgstr "ឯកសារ​"
 
 #. i18n: file: ../desktop/konsoleui.rc:15
 #. i18n: ectx: Menu (edit)
-#: rc.cpp:491
+#: rc.cpp:536
 msgid "Edit"
 msgstr "កែ​សម្រួល"
 
 #. i18n: file: ../desktop/konsoleui.rc:18
 #. i18n: ectx: Menu (view)
-#: rc.cpp:494
+#: rc.cpp:539
 msgid "View"
 msgstr "មើល​"
 
 #. i18n: file: ../desktop/konsoleui.rc:19
 #. i18n: ectx: Menu (view-split)
-#: rc.cpp:497
+#: rc.cpp:542
 msgid "Split View"
 msgstr "ពុះ​ទិដ្ឋភាព"
 
 #. i18n: file: ../desktop/konsoleui.rc:33
 #. i18n: ectx: Menu (settings)
-#: rc.cpp:500
+#: rc.cpp:545
 msgid "Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: file: ../desktop/konsoleui.rc:44
 #. i18n: ectx: Menu (help)
-#: rc.cpp:503
+#: rc.cpp:548
 msgid "Help"
 msgstr "ជំនួយ"
 
 #. i18n: file: ../desktop/partui.rc:11
 #. i18n: ectx: Menu (history)
-#: rc.cpp:506
+#: rc.cpp:551
 msgid "S&crollback"
 msgstr "រមូរ​ថយក្រោយ​"
 
@@ -2117,11 +2195,11 @@ msgid ""
 msgstr ""
 "កម្មវិធី '%1' ដែល​មាន​នៅ​ក្នុង​សម័យ​នេះ​មិន​គួរ​ត្រូវ​បាន​បិទ​ទេ ។ តើ​អ្នក​ពិតជា​ចង់​បិទ​វា​ដោយ​បង្ខំ​មែន​ឬ ?"
 
-#: SessionController.cpp:1422
+#: SessionController.cpp:1430
 msgid "Save ZModem Download to..."
 msgstr "រក្សាទុក​ការទាញយក ZModem ទៅ​​ក្នុង..."
 
-#: SessionController.cpp:1430
+#: SessionController.cpp:1438
 msgid ""
 "<p>A ZModem file transfer attempt has been detected, but no suitable ZModem "
 "software was found on this system.</p><p>You may wish to install the 'rzsz' "
@@ -2130,12 +2208,12 @@ msgstr ""
 "<p>ការ​ប៉ុនប៉ង​ផ្ទេរ​ឯកសារ​របស់ ZModem ត្រូវ​បាន​រក​ឃើញ ប៉ុន្តែ​រក​ឃើញ​កម្មវិធី ZModem មិន​សមរម្យ​នៅ​ក្នុង​"
 "ប្រព័ន្ធ​នេះ ។</p><p>អ្នក​អាច​ដំឡើង​កញ្ចប់ 'rzsz' ឬ 'lrzsz' ។</p>"
 
-#: SessionController.cpp:1442
+#: SessionController.cpp:1450
 msgid ""
 "<p>The current session already has a ZModem file transfer in progress.</p>"
 msgstr "<p>សម័យ​បច្ចុប្បន្ន​មាន​ការ​ផ្ទេរឯកសារ ZModem កំពុង​ដំណើរការ​រួច​ហើយ ។</p>"
 
-#: SessionController.cpp:1451
+#: SessionController.cpp:1459
 msgid ""
 "<p>No suitable ZModem software was found on this system.</p><p>You may wish "
 "to install the 'rzsz' or 'lrzsz' package.</p>"
@@ -2143,21 +2221,21 @@ msgstr ""
 "<p>រក​មិនឃើញ​កម្មវិធី ZModem ដែល​សមរម្យ​នៅ​ក្នុង​ប្រព័ន្ធ​នេះ​ទេ ។</p><p>អ្នក​អាច​ដំឡើង​​កញ្ចប់  "
 "'rzsz' ឬ 'lrzsz' ។</p>"
 
-#: SessionController.cpp:1457
+#: SessionController.cpp:1465
 msgid "Select Files for ZModem Upload"
 msgstr "ជ្រើស​ឯកសារ​សម្រាប់​ផ្ទុក ZModem ឡើង"
 
-#: SessionController.cpp:1524
+#: SessionController.cpp:1532
 #, kde-format
 msgid "Save Output From %1"
 msgstr "រក្សា​ទុក​លទ្ធផល​ពី %1"
 
-#: SessionController.cpp:1535
+#: SessionController.cpp:1543
 #, kde-format
 msgid "%1 is an invalid URL, the output could not be saved."
 msgstr "%1 ជា​ URL មិន​ត្រឹមត្រូវ លទ្ធផល​មិន​អាច​រក្សា​ទុក​បាន​ទេ"
 
-#: SessionController.cpp:1610
+#: SessionController.cpp:1618
 #, kde-format
 msgid ""
 "A problem occurred when saving the output.\n"
