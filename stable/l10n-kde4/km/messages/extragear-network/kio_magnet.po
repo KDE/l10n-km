@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio_magnet\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-01-27 11:02+0100\n"
+"POT-Creation-Date: 2012-08-14 19:51+0200\n"
 "PO-Revision-Date: 2012-01-12 10:59+0700\n"
 "Last-Translator: Sok Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -19,15 +19,19 @@ msgstr ""
 "X-Generator: WordForge 0.8 RC1\n"
 "X-Language: km-KH\n"
 
-#: dbushandler.cpp:87
+#: dbushandler.cpp:96
+#, fuzzy
+#| msgid ""
+#| "The Web share for magnet-links is disabled.         You can set it up at "
+#| "settings:/network-and-connectivity/sharing"
 msgid ""
-"The Web share for magnet-links is disabled.         You can set it up at "
-"settings:/network-and-connectivity/sharing"
+"The Web share for magnet-links is disabled. You can set it up at settings:/"
+"network-and-connectivity/sharing"
 msgstr ""
 "បណ្ដាញ​ចែក​រំលែក​សម្រាប់​បណ្ដាញ​មេដែក​ត្រូវ​បាន​បិទ ។         អ្នក​អាច​កំណត់​វា​នៅ​ឯ settings:/"
 "network-and-connectivity/sharing"
 
-#: dbushandler.cpp:106
+#: dbushandler.cpp:120
 msgid ""
 "Cannot start process for KTorrent.                           This should not "
 "happen, even if KTorrent is not installed.                           Check "
@@ -37,7 +41,7 @@ msgstr ""
 "ទោះបីជា KTorrent មិន​ត្រូវ​បាន​ដំឡើង​ក៏ដោយ ។                           ពិនិត្យមើល​ធនធាន​"
 "ម៉ាស៊ីន​ និង​ដែន​កំណត់​របស់​អ្នក ។"
 
-#: dbushandler.cpp:133
+#: dbushandler.cpp:158
 #, kde-format
 msgid ""
 "Could not connect to KTorrent via DBus                                     "
@@ -46,27 +50,48 @@ msgstr ""
 "មិន​អាច​តភ្ជាប់​ទៅ​កាន់ KTorrent តាម DBus បាន​ទេ                                    "
 "បន្ទាប់ពី %1 វិនាទី ។ តើ​វា​ខូច​ឬ ?"
 
-#: dbushandler.cpp:151
+#: dbushandler.cpp:180
 msgid ""
 "Could not get the group list, do you have a compatible KTorrent version "
 "running?"
 msgstr "មិន​អាច​ទទួល​យក​បញ្ជី​ក្រុម តើ​អ្នក​មាន​ដំណើរការ​​កំណែ KTorrent ដែល​ឆប​គ្នា​ដែរ ឬទេ ?"
 
-#: dbushandler.cpp:288
+#: dbushandler.cpp:333
 #, kde-format
 msgid "The link for %1 does not contain the required btih hash-parameter."
 msgstr "តំណ​សម្រាប់ %1 មិន​មាន​សញ្ញា​ប៉ារ៉ាម៉ែត្រ btih ដែល​បាន​ទាមទារ​ទេ ។"
 
-#: dbushandler.cpp:299
+#: dbushandler.cpp:345
 #, kde-format
 msgid "The found value (%1) for the hash is neither 32 nor 40 chars long."
 msgstr "តម្លៃ (%1) ដែល​បាន​រក​ឃើញ​សម្រាប់​សញ្ញា​គឺ​មិន​មែន​ប្រវែង​តួអក្សរ ៣២ ឬ ៤០ ទេ ។"
 
-#: dbushandler.cpp:563
+#: dbushandler.cpp:624
 msgid "Torrent has been removed from KTorrent."
 msgstr "Torrent ត្រូវ​បាន​យក​ចេញពី KTorrent​ ។"
 
-#: kio_magnet.cpp:235 kio_magnet.cpp:310 kio_magnet.cpp:336
+#: kio_magnet.cpp:294 kio_magnet.cpp:395
+#, fuzzy, kde-format
+#| msgid ""
+#| "File exists in KTorrent, but cannot open it on disk at path \"%1\". Have "
+#| "you removed the file manually?"
+msgid ""
+"File exists in KTorrent, but cannot open it on disk at path\"%1\". Have you "
+"removed the file manually?"
+msgstr ""
+"ឯកសារ​មាន​នៅ​ក្នុង​ KTorrent ប៉ុន្តែ​មិន​អាច​បើក​វា​នៅ​លើ​ថាស​នៅ​ឯ​ផ្លូវ \"%1\" បាន​ទេ ។ តើ​អ្នក​បាន​យក​"
+"ឯកសារ​ចេញ​ដោយ​ដៃ​ដែរ ឬទេ ?"
+
+#: kio_magnet.cpp:375
+msgid "You cannot write to magnet resources."
+msgstr "អ្នក​មិន​អាច​សរសេរ​​ទៅ​កាន់​ធនធាន​មេដែក​បាន​ទេ ។"
+
+#: kio_magnet.cpp:403
+#, kde-format
+msgid "File \"%1\" is a directory. This should not happen. Please file a bug."
+msgstr "ឯកសារ​ \"%1\" គឺជា​ថត ។ វា​មិន​គួរ​កើត​មាន​ទេ ។ សូម​សរសេរ​​ជា​ឯកសារ​កហុស ។"
+
+#: kio_magnet.cpp:429
 #, kde-format
 msgid ""
 "File exists in KTorrent, but cannot open it on disk at path \"%1\". Have you "
@@ -74,15 +99,6 @@ msgid ""
 msgstr ""
 "ឯកសារ​មាន​នៅ​ក្នុង​ KTorrent ប៉ុន្តែ​មិន​អាច​បើក​វា​នៅ​លើ​ថាស​នៅ​ឯ​ផ្លូវ \"%1\" បាន​ទេ ។ តើ​អ្នក​បាន​យក​"
 "ឯកសារ​ចេញ​ដោយ​ដៃ​ដែរ ឬទេ ?"
-
-#: kio_magnet.cpp:295
-msgid "You cannot write to magnet resources."
-msgstr "អ្នក​មិន​អាច​សរសេរ​​ទៅ​កាន់​ធនធាន​មេដែក​បាន​ទេ ។"
-
-#: kio_magnet.cpp:316
-#, kde-format
-msgid "File \"%1\" is a directory. This should not happen. Please file a bug."
-msgstr "ឯកសារ​ \"%1\" គឺជា​ថត ។ វា​មិន​គួរ​កើត​មាន​ទេ ។ សូម​សរសេរ​​ជា​ឯកសារ​កហុស ។"
 
 #. i18n: file: magnetsettings.kcfg:10
 #. i18n: ectx: label, entry (Enabled), group (Magnet)
