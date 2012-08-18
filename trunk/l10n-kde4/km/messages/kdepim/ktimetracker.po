@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktimetracker\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-16 04:42+0200\n"
+"POT-Creation-Date: 2012-08-18 04:21+0200\n"
 "PO-Revision-Date: 2012-06-15 10:36+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -19,16 +19,6 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: WordForge 0.8 RC1\n"
 "X-Language: km-KH\n"
-
-#: csvexportdialog.h:37
-msgctxt "@action:button"
-msgid "&Export"
-msgstr "នាំចេញ"
-
-#: csvexportdialog.h:38
-msgctxt "@action:button"
-msgid "E&xport to Clipboard"
-msgstr "នាំចេញ​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
 
 #. i18n: file: csvexportdialog_base.ui:176
 #. i18n: ectx: property (text), item, widget (QComboBox, combodecimalminutes)
@@ -49,17 +39,27 @@ msgstr "ពេលវេលា​សម័យ"
 msgid "All Tasks"
 msgstr "ភារកិច្ច​ទាំងអស់"
 
-#: historydialog.cpp:81 timekard.cpp:65
-msgid "Task"
-msgstr "ភារកិច្ច"
+#: csvexportdialog.h:37
+msgctxt "@action:button"
+msgid "&Export"
+msgstr "នាំចេញ"
+
+#: csvexportdialog.h:38
+msgctxt "@action:button"
+msgid "E&xport to Clipboard"
+msgstr "នាំចេញ​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
+
+#: historydialog.cpp:81
+msgid "EndTime"
+msgstr "ពេលវេលា​បញ្ចប់"
 
 #: historydialog.cpp:81
 msgid "StartTime"
 msgstr "ពេលវេលា​ចាប់ផ្ដើម"
 
-#: historydialog.cpp:81
-msgid "EndTime"
-msgstr "ពេលវេលា​បញ្ចប់"
+#: historydialog.cpp:81 timekard.cpp:65
+msgid "Task"
+msgstr "ភារកិច្ច"
 
 #: historydialog.cpp:82
 msgid "Comment"
@@ -129,6 +129,10 @@ msgid ""
 msgstr "សូម​រៀន​ហៅ ktimetracker ជា​កម្ម​វិធី​រំលឹក​នេះ អាច​ត្រូវ​បាន​យក​ចេញ​នៅ​ពេល​អនាគត ។\n"
 
 #: karm.cpp:55
+msgid "KArm is now ktimetracker"
+msgstr "KArm ឥឡូវ​ជា ktimetracker"
+
+#: karm.cpp:55
 msgid ""
 "Someone, probably you, has called karm. KArm has been renamed to "
 "KTimeTracker. This makes it easier to recognize. Compatibility advice: Do "
@@ -140,10 +144,6 @@ msgstr ""
 "នេះ​ធ្វើ​ឲ្យ​វា​កាន់តែ​ងាយស្រួល​ក្នុង​ការ​រៀបចំ ។ ឧបករណ៍​ឆបគ្នា ៖ កុំ​ឲ្យ​ឯកសារ​របស់ ktimetracker ទៅ​អ្នក​"
 "ប្រើ​របស់ karm ។ ដោយ​ប្រើ​ឯកសារ​របស់ karm ជា​មួយ​នឹង ktimetracker បើ​អាច ។ សូម​រៀន​ហៅ "
 "ktimetracker ជា​កម្មវិធី​រំលឹក​នេះ​អាច​ត្រូវ​បាន​យក​ចេញ​នៅ​ពេលអនាគត ។."
-
-#: karm.cpp:55
-msgid "KArm is now ktimetracker"
-msgstr "KArm ឥឡូវ​ជា ktimetracker"
 
 #: ktimetrackerpart.cpp:74
 msgid "ktimetracker"
@@ -175,20 +175,20 @@ msgid "Copyright © 1997-2012 KDE PIM authors"
 msgstr "រក្សាសិទ្ធិ​​ឆ្នាំ​ ១៩៩៧​-២០១២ ដោយ​អ្នក​និពន្ធ​របស់​ KDE PIM "
 
 #: main.cpp:90
-msgid "Thorsten Stärk"
-msgstr "Thorsten Stärk"
-
-#: main.cpp:90
 msgid "Current Maintainer"
 msgstr "អ្នក​ថែទាំ​បច្ចុប្បន្ន"
 
-#: main.cpp:92
-msgid "Sirtaj Singh Kang"
-msgstr "Sirtaj Singh Kang"
+#: main.cpp:90
+msgid "Thorsten Stärk"
+msgstr "Thorsten Stärk"
 
 #: main.cpp:92
 msgid "Original Author"
 msgstr "អ្នក​និពន្ធ​ដើម"
+
+#: main.cpp:92
+msgid "Sirtaj Singh Kang"
+msgstr "Sirtaj Singh Kang"
 
 #: main.cpp:94
 msgid "Allen Winter"
@@ -734,12 +734,12 @@ msgid "Tasks"
 msgstr "ភារកិច្ច"
 
 #: taskview.cpp:181
-msgid "Task Name"
-msgstr "ឈ្មោះ​ភារកិច្ច"
-
-#: taskview.cpp:181
 msgid "Session Time"
 msgstr "ពេល​សម័យ"
+
+#: taskview.cpp:181
+msgid "Task Name"
+msgstr "ឈ្មោះ​ភារកិច្ច"
 
 #: taskview.cpp:181 timekard.cpp:64
 msgid "Time"
@@ -924,16 +924,16 @@ msgid "Edit History..."
 msgstr "កែសម្រួល​ប្រវត្តិ..."
 
 #: timetrackerwidget.cpp:214
-msgid "Edits history of all tasks of the current document"
-msgstr "កែសម្រួល​ប្រវត្តិ​​នៃ​ភារកិច្ច​ទាំងអស់​របស់​​ឯកសារ​បច្ចុប្បន្ន"
-
-#: timetrackerwidget.cpp:214
 msgid ""
 "A window will be opened where you can change start and stop times of tasks "
 "or add a comment to them."
 msgstr ""
 "បង្អួច​នឹង​ត្រូវ​បាន​បើក នៅ​កន្លែង​ដែលអ្នក​អាច​ផ្លាស់ប្ដូរ​ពេលវេលា​ចាប់ផ្ដើម និង​បញ្ឈប់​របស់​ភារកិច្ច ឬ​បន្ថែម​"
 "សេចក្ដី​អធិប្បាយ​ឲ្យ​ពួកវា ។"
+
+#: timetrackerwidget.cpp:214
+msgid "Edits history of all tasks of the current document"
+msgstr "កែសម្រួល​ប្រវត្តិ​​នៃ​ភារកិច្ច​ទាំងអស់​របស់​​ឯកសារ​បច្ចុប្បន្ន"
 
 #: timetrackerwidget.cpp:218
 msgid "&Reset All Times"
@@ -1183,12 +1183,12 @@ msgid "Columns"
 msgstr "ជួរឈរ"
 
 #: treeviewheadercontextmenu.cpp:141
-msgid "Show"
-msgstr "បង្ហាញ"
-
-#: treeviewheadercontextmenu.cpp:141
 msgid "Hide"
 msgstr "លាក់"
+
+#: treeviewheadercontextmenu.cpp:141
+msgid "Show"
+msgstr "បង្ហាញ"
 
 #~ msgid "Dialog"
 #~ msgstr "ប្រអប់​"
