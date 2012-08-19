@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krfb\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-03-07 04:51+0100\n"
+"POT-Creation-Date: 2012-08-19 15:40+0200\n"
 "PO-Revision-Date: 2010-11-30 10:42+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -15,6 +15,14 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ខឹម សុខែម, អេង វណ្ណៈ, អោក ពិសិដ្ឋ​​"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
 
 #: connectiondialog.cpp:35
 msgid "New Connection"
@@ -74,9 +82,8 @@ msgstr "%1@%2 (​ផ្ទៃតុ​ដែល​បាន​ចែក​រ�
 msgid "Invitation"
 msgstr "ការ​អញ្ជើញ"
 
-#. i18n: file: ui/invitewidget.ui:125
 #. i18n: ectx: property (text), widget (QPushButton, btnManageInvite)
-#: invitedialog.cpp:72 rc.cpp:63
+#: invitedialog.cpp:72 ui/invitewidget.ui:125
 #, no-c-format, kde-format
 msgid "&Manage Invitations (%1)..."
 msgstr "គ្រប់គ្រង​ការ​អញ្ជើញ​ (%1)..."
@@ -108,6 +115,47 @@ msgstr ""
 "បើ​អ្នក​ចង់​បង្កើត​ពាក្យ​សម្ងាត់​អចិន្ត្រៃយ៍​សម្រាប់​ការ​ចែក​រំលែក​ផ្ទៃតុ អនុញ្ញាត 'ការ​តភ្ជាប់​ដែល​មិន​បាន​"
 "អញ្ជើញ' \n"
 "ក្នុង​ការ​កំណត់​រចនា​សម្ព័ន្ធ ។"
+
+#. i18n: ectx: label, entry (useDefaultPort), group (TCP)
+#: krfb.kcfg:8
+msgid "Use the default port for VNC (5900)"
+msgstr "ប្រើ​ច្រក​លំនាំ​ដើម​សម្រាប់ VNC (5900)"
+
+#. i18n: ectx: label, entry (port), group (TCP)
+#: krfb.kcfg:12
+msgid "This is the port on which krfb will listen."
+msgstr "នេះ​គឺ​ជា​ច្រក​ដែល krfb នឹង​ស្ដាប់ ។"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_publishService)
+#. i18n: ectx: label, entry (publishService), group (TCP)
+#: krfb.kcfg:16 ui/configtcp.ui:22
+msgid "Announce the service on the local network"
+msgstr "ប្រកាស​សេវា​នៅ​លើ​បណ្ដាញ​មូលដ្ឋាន"
+
+#. i18n: ectx: label, entry (allowDesktopControl), group (Security)
+#: krfb.kcfg:22
+msgid "Allow remote connections to manage the desktop."
+msgstr "អនុញ្ញាត​ការ​តភ្ជាប់​ពី​ចម្ងាយ​ដើម្បី​គ្រប់គ្រង​ផ្ទៃតុ ។"
+
+#. i18n: ectx: label, entry (askOnConnect), group (Security)
+#: krfb.kcfg:26
+msgid "Ask before allowing a remote connection."
+msgstr "សួរ មុន​ពេល​អនុញ្ញាត​ការ​តភ្ជាប់​ពី​ចម្ងាយ ។"
+
+#. i18n: ectx: label, entry (allowUninvitedConnections), group (Security)
+#: krfb.kcfg:30
+msgid "Allow connections without an invitation."
+msgstr "អនុញ្ញាត​ការ​តភ្ជាប់​ដោយ​គ្មាន​ការ​អញ្ជើញ ។"
+
+#. i18n: ectx: label, entry (uninvitedConnectionPassword), group (Security)
+#: krfb.kcfg:34
+msgid "Password for uninvited connections."
+msgstr "ពាក្យ​សម្ងាត់​សម្រាប់​ការ​តភ្ជាប់​ដែល​មិន​បាន​អញ្ជើញ ។"
+
+#. i18n: ectx: label, entry (preferredFrameBufferPlugin), group (FrameBuffer)
+#: krfb.kcfg:39
+msgid "Preferred Frame Buffer Plugin"
+msgstr "កម្មវិធី​ជំនួយ​សតិ​បណ្តោះ​អាសន្ននៃ​ស៊ុម​ដែល​ពេញ​ចិត្ត"
 
 #: main.cpp:42
 msgid "VNC-compatible server to share KDE desktops"
@@ -342,400 +390,6 @@ msgstr ""
 "ក្នុង​ការ​ធ្វើ​ដូច​នោះ​ទេ ។ បើ​កុំព្យូទ័រ​របស់​អ្នក​នៅ​ពី​ក្រោយ​ជញ្ជាំង​ភ្លើង វា​អាច​មាន​អាសយដ្ឋាន\n"
 "ផ្សេង ឬ​មិន​អាច​ទៅ​ដល់​សម្រាប់​កុំព្យូទ័រ​ផ្សេង​ទៀត ។"
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "ខឹម សុខែម, អេង វណ្ណៈ, អោក ពិសិដ្ឋ​​"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
-
-#. i18n: file: ui/configsecurity.ui:20
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
-#: rc.cpp:5
-msgid "Ask before accepting connections"
-msgstr "សួរ​ មុន​នឹង​ទទួល​ការ​ត​ភ្ជាប់"
-
-#. i18n: file: ui/configsecurity.ui:30
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
-#: rc.cpp:8
-msgid "Allow remote connections to control your desktop"
-msgstr "អនុញ្ញាត​ការ​តភ្ជាប់​ពី​ចម្ងាយ​ដើម្បី​បញ្ជា​ផ្ទៃតុ​របស់​អ្នក"
-
-#. i18n: file: ui/configsecurity.ui:40
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
-#: rc.cpp:11
-msgid "Allow uninvited connections"
-msgstr "អនុញ្ញាត​ការ​តភ្ជាប់​មិន​បាន​អញ្ជើញ"
-
-#. i18n: file: ui/configsecurity.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:14
-msgid "Uninvited connections password:"
-msgstr "ពាក្យ​សម្ងាត់​ការ​តភ្ជាប់​មិន​បាន​អញ្ជើញ ៖"
-
-#. i18n: file: ui/configtcp.ui:22
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_publishService)
-#. i18n: file: krfb.kcfg:16
-#. i18n: ectx: label, entry (publishService), group (TCP)
-#: rc.cpp:17 rc.cpp:157
-msgid "Announce the service on the local network"
-msgstr "ប្រកាស​សេវា​នៅ​លើ​បណ្ដាញ​មូលដ្ឋាន"
-
-#. i18n: file: ui/configtcp.ui:32
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useDefaultPort)
-#: rc.cpp:20
-msgid "Use default port"
-msgstr "ប្រើ​ច្រក​លំនាំ​ដើម"
-
-#. i18n: file: ui/configtcp.ui:50
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:23
-msgid "Listening port:"
-msgstr "ច្រក​ស្ដាប់ ៖"
-
-#. i18n: file: ui/connectionwidget.ui:47
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:26
-msgid "Attention"
-msgstr "ប្រុងប្រយ័ត្ន​"
-
-#. i18n: file: ui/connectionwidget.ui:72
-#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
-#: rc.cpp:29
-msgid ""
-"Somebody is requesting a connection to your computer. Granting this will "
-"allow the remote user to watch your desktop. "
-msgstr ""
-"នរណា​ម្នាក់​កំពុង​តែ​ស្នើ​ការ​តភ្ជាប់​ទៅ​កុំព្យូទ័រ​របស់​អ្នក ។ ការ​អនុញ្ញាត​នេះ នឹង​អនុញ្ញាត​អ្នក​ប្រើ​ពី​ចម្ងាយ​ឲ្យ​"
-"មើល​ផ្ទៃតុ​របស់​អ្នក ។"
-
-#. i18n: file: ui/connectionwidget.ui:102
-#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
-#: rc.cpp:32
-msgid "Remote system:"
-msgstr "ប្រព័ន្ធ​ពី​ចម្ងាយ ៖"
-
-#. i18n: file: ui/connectionwidget.ui:118
-#. i18n: ectx: property (text), widget (QLabel, remoteHost)
-#: rc.cpp:35
-msgid "123.234.123.234"
-msgstr "123.234.123.234"
-
-#. i18n: file: ui/connectionwidget.ui:136
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
-#. i18n: file: ui/tubesconnectionwidget.ui:101
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
-#: rc.cpp:38 rc.cpp:145
-msgid ""
-"If you turn this option on, the remote user can enter keystrokes and use "
-"your mouse pointer. This gives them full control over your computer, so be "
-"careful. When the option is disabled the remote user can only watch your "
-"screen."
-msgstr ""
-"បើ​អ្នក​បើក​ជម្រើស​នេះ អ្នក​ប្រើ​ពីចម្ងាយ​អាច​​សង្កត់​គ្រាប់ចុច និង​ប្រើ​ព្រួញ​កណ្តុរ​របស់​អ្នក​បាន ។​ នេះ​ផ្តល់​ឲ្យ​"
-"ពួកគេ​ត្រួតត្រា​ទាំងស្រុង​លើ​កុំព្យូទ័រ​របស់​អ្នក ដូច្នេះ​សូម​ប្រយ័ត្ន ។ នៅ​ពេល​ដែល​ជម្រើស​ត្រូវ​បាន​បិទ​ អ្នក​ប្រើ​ពី​"
-"ចំងាយ​អាច​មើល​បាន​តែ​អេក្រង់​របស់អ្នកប៉ុណ្ណោះ ។​​"
-
-#. i18n: file: ui/connectionwidget.ui:139
-#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
-#. i18n: file: ui/tubesconnectionwidget.ui:104
-#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
-#: rc.cpp:41 rc.cpp:148
-msgid "Allow remote user to &control keyboard and mouse"
-msgstr "អនុញ្ញាត​​ឲ្យ​អ្នក​ប្រើ​ពី​ចម្ងាយ​បញ្ជា​ក្តារចុច និង​កណ្តុរ"
-
-#. i18n: file: ui/invitewidget.ui:40
-#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
-#. i18n: file: ui/manageinvitations.ui:25
-#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
-#: rc.cpp:44 rc.cpp:69
-msgid "Welcome to KDE Desktop Sharing"
-msgstr "សូម​ស្វាគមន៍​មក​កាន់​ការ​ចែក​រំលែក​ផ្ទៃតុ​របស់​ KDE"
-
-#. i18n: file: ui/invitewidget.ui:50
-#. i18n: ectx: property (text), widget (QLabel, helpLabel)
-#: rc.cpp:47
-msgid ""
-"KDE Desktop Sharing allows you to invite somebody at a remote location to "
-"watch and possibly control your desktop. <a href=\"whatsthis\">More about "
-"invitations...</a>"
-msgstr ""
-"ការ​ចែករំលែក​ផ្ទៃតុ KDE អនុញ្ញាត​ឲ្យ​អ្នក​អញ្ជើញ​នរណាម្នាក់​នៅទីតាំង​ពីចម្ងាយ ឲ្យ​មើល និង​អាច​ត្រួតពិនិត្យ​"
-"ផ្ទៃតុ​របស់​អ្នក​បាន ។ <a href=\"whatsthis\">ព័ត៌មាន​បន្ថែម​អំពី​ការ​អញ្ជើញ...</a>"
-
-#. i18n: file: ui/invitewidget.ui:105
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnCreateInvite)
-#: rc.cpp:50
-msgid ""
-"Create a new invitation and display the connection data. Use this option if "
-"you want to invite somebody personally, for example, to give the connection "
-"data over the phone."
-msgstr ""
-"បង្កើត​ការ​អញ្ជើញ​ថ្មី និង​បង្ហាញ​ទិន្នន័យ​ការ​តភ្ជាប់ ។ ប្រើ​ជម្រើស​នេះ ​ប្រសិន​​បើ​អ្នក​ចង់​អញ្ជើញ​អ្នក​ណា​ម្នាក់​"
-"ជា​លក្ខណៈ​ផ្ទាល់​ខ្លួន ឧទាហរណ៍ ត្រូវ​ផ្ដល់​ទិន្នន័យ​តភ្ជាប់​តាម​រយៈ​ទូរស័ព្ទ ។"
-
-#. i18n: file: ui/invitewidget.ui:108
-#. i18n: ectx: property (text), widget (QPushButton, btnCreateInvite)
-#: rc.cpp:53
-msgid "Create &Personal Invitation..."
-msgstr "បង្កើត​ការ​អញ្ជើញ​ផ្ទាល់ខ្លួន..."
-
-#. i18n: file: ui/invitewidget.ui:115
-#. i18n: ectx: property (whatsThis), widget (QPushButton, btnEmailInvite)
-#: rc.cpp:56
-msgid ""
-"This button will start your email application with a pre-configured text "
-"that explains to the recipient how to connect to your computer. "
-msgstr ""
-"ប៊ូតុង​នេះ​នឹង​ចាប់ផ្តើម​កម្មវិធី​អ៊ីមែល​របស់​អ្នក​ជាមួយ​នឹង​​អត្ថបទ ដែល​បាន​កំណត់​រចនាសម្ព័ន្ធ​ជាមុន ដែល​ពន្យល់​​​​អ្នក​"
-"ទទួល​នូវ​របៀប​តភ្ជាប់​ទៅ​កុំព្យូទ័រ​របស់​អ្នក ។"
-
-#. i18n: file: ui/invitewidget.ui:118
-#. i18n: ectx: property (text), widget (QPushButton, btnEmailInvite)
-#: rc.cpp:59
-msgid "Invite via &Email..."
-msgstr "អញ្ជើញ​តាម​រយៈ​អ៊ីមែល..."
-
-#. i18n: file: ui/manageinvitations.ui:13
-#. i18n: ectx: property (windowTitle), widget (QWidget, ManageInvitationsDialog)
-#: rc.cpp:66
-msgid "Manage Invitations - Desktop Sharing"
-msgstr "គ្រប់គ្រង​ការអញ្ជើញ - ការ​ចែក​រំលែក​ផ្ទៃតុ"
-
-#. i18n: file: ui/manageinvitations.ui:38
-#. i18n: ectx: property (text), widget (QLabel, helpLabel)
-#: rc.cpp:72
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">KDE Desktop Sharing allows "
-"you to invite somebody at a remote location to watch and possibly control "
-"your desktop. <a href=\"whatsthis\">More about invitations...</a></p></"
-"body></html>"
-msgstr ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">ការ​ចែក​រំលែក​ផ្ទៃតុ​របស់ KDE "
-"អនុញ្ញាត​ឲ្យ​អ្នក​អញ្ជើញ​នរណា​ម្នាក់​នៅ​ទីតាំង​ពី​ចម្ងាយ​ឲ្យ​មើល និង​ប្រហែល​ជា​អាច​បញ្ជា​ផ្ទៃតុ​របស់​អ្នក ។ <a "
-"href=\"whatsthis\">បន្ថែម​អីពី​ការ​អញ្ជើញ...</a></p></body></html>"
-
-#. i18n: file: ui/manageinvitations.ui:95
-#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
-#: rc.cpp:78
-msgid "Creation Time"
-msgstr "ពេលវេលា​បង្កើត"
-
-#. i18n: file: ui/manageinvitations.ui:100
-#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
-#: rc.cpp:81
-msgid "Expire Time"
-msgstr "ពេល​វេលា​ផុត​កំណត់"
-
-#. i18n: file: ui/manageinvitations.ui:124
-#. i18n: ectx: property (toolTip), widget (QPushButton, newPersonalInvitationButton)
-#: rc.cpp:84
-msgid "Create a new personal invitation..."
-msgstr "បង្កើត​ការ​អញ្ជើញ​ផ្ទាល់ខ្លួន​ថ្មី..."
-
-#. i18n: file: ui/manageinvitations.ui:127
-#. i18n: ectx: property (whatsThis), widget (QPushButton, newPersonalInvitationButton)
-#: rc.cpp:87
-msgid "Click this button to create a new personal invitation."
-msgstr "ចុច​ប៊ូតុង​នេះ​ដើម្បី​បង្កើត​ការ​អញ្ជើញ​ផ្ទាល់ខ្លួន​ថ្មី ។"
-
-#. i18n: file: ui/manageinvitations.ui:130
-#. i18n: ectx: property (text), widget (QPushButton, newPersonalInvitationButton)
-#: rc.cpp:90
-msgid "New &Personal Invitation..."
-msgstr "ការ​អញ្ជើញ​ផ្ទាល់ខ្លួន​ថ្មី​..."
-
-#. i18n: file: ui/manageinvitations.ui:137
-#. i18n: ectx: property (toolTip), widget (QPushButton, newEmailInvitationButton)
-#: rc.cpp:93
-msgid "Send a new invitation via email..."
-msgstr "ផ្ញើ​ការអញ្ជើញ​ថ្មី​មួយ​តាមរយៈ​អ៊ីមែល..."
-
-#. i18n: file: ui/manageinvitations.ui:140
-#. i18n: ectx: property (whatsThis), widget (QPushButton, newEmailInvitationButton)
-#: rc.cpp:96
-msgid "Click this button to send a new invitation via email."
-msgstr "ចុច​ប៊ូតុង​នេះ​ដើម្បី​ផ្ញើ​ការ​អញ្ជើញ​ថ្មី​មួយ​​តាម​រយៈ​អ៊ីមែល ។"
-
-#. i18n: file: ui/manageinvitations.ui:143
-#. i18n: ectx: property (text), widget (QPushButton, newEmailInvitationButton)
-#: rc.cpp:99
-msgid "&New Email Invitation..."
-msgstr "ការ​អញ្ជើញ​តាម​រយៈ​អ៊ីមែល​ថ្មី..."
-
-#. i18n: file: ui/manageinvitations.ui:153
-#. i18n: ectx: property (toolTip), widget (QPushButton, deleteAllButton)
-#: rc.cpp:102
-msgid "Delete all invitations"
-msgstr "លុប​ការ​អញ្ជើញ​ទាំងអស់"
-
-#. i18n: file: ui/manageinvitations.ui:156
-#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteAllButton)
-#: rc.cpp:105
-msgid "Deletes all open invitations."
-msgstr "លុប​ការ​អញ្ជើញ​​ដែល​បើក​ទាំងអស់​ ។"
-
-#. i18n: file: ui/manageinvitations.ui:159
-#. i18n: ectx: property (text), widget (QPushButton, deleteAllButton)
-#: rc.cpp:108
-msgid "Delete All"
-msgstr "លុប​ទាំងអស់"
-
-#. i18n: file: ui/manageinvitations.ui:169
-#. i18n: ectx: property (toolTip), widget (QPushButton, deleteOneButton)
-#: rc.cpp:111
-msgid "Delete the selected invitation"
-msgstr "លុប​ការ​អញ្ជើញ​ដែល​បាន​ជ្រើស"
-
-#. i18n: file: ui/manageinvitations.ui:172
-#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteOneButton)
-#: rc.cpp:114
-msgid ""
-"Delete the selected invitation. The invited person will not be able to "
-"connect using this invitation anymore."
-msgstr ""
-"លុប​ការ​អញ្ជើញ​ដែល​បាន​ជ្រើស ។​ អ្នក​ដែល​បាន​អញ្ជើញ​នឹង​មិន​អាច​តភ្ជាប់ ដោយ​ប្រើ​ការ​អញ្ជើញ​នេះ​ទៀតទេ ។"
-
-#. i18n: file: ui/manageinvitations.ui:175
-#. i18n: ectx: property (text), widget (QPushButton, deleteOneButton)
-#: rc.cpp:117
-msgid "&Delete"
-msgstr "លុប"
-
-#. i18n: file: ui/personalinvitewidget.ui:47
-#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
-#: rc.cpp:120
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Personal Invitation</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Give the information below "
-"to the person that you want to invite (<a href=\"htc\">how to connect</a>). "
-"Note that everybody who gets the password can connect, so be careful.</p></"
-"body></html>"
-msgstr ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
-"weight:600;\">Personal Invitation</span></p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">ផ្ដល់​ព័ត៌មាន​ខាងក្រោម​ទៅ​មនុស្ស ដែល​"
-"អ្នក​ចង់​អញ្ជើញ (<a href=\"htc\">របៀប​តភ្ជាប់</a>) ។ ចំណាំ​ថា រាល់​គ្នា​ដែល​ទទួល​បាន​ពាក្យ​សម្ងាត់ "
-"អាច​តភ្ជាប់ ដូច្នេះ​ប្រុង​ប្រយ័ត្ន ។</p></body></html>"
-
-#. i18n: file: ui/personalinvitewidget.ui:81
-#. i18n: ectx: property (text), widget (QLabel, kActiveLabel5)
-#: rc.cpp:127
-msgid "<b>Host:</b>"
-msgstr "<b>ម៉ាស៊ីន ៖</b>"
-
-#. i18n: file: ui/personalinvitewidget.ui:116
-#. i18n: ectx: property (text), widget (QLabel, hostHelpLabel)
-#: rc.cpp:130
-msgid ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Help</a></"
-"p></body></html>"
-msgstr ""
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
-"weight:400; font-style:normal; text-decoration:none;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">ជំនួយ</a></"
-"p></body></html>"
-
-#. i18n: file: ui/personalinvitewidget.ui:129
-#. i18n: ectx: property (text), widget (QLabel, kActiveLabel6)
-#: rc.cpp:136
-msgid "<b>Password:</b>"
-msgstr "<b>ពាក្យ​សម្ងាត់​ ៖</b>"
-
-#. i18n: file: ui/personalinvitewidget.ui:161
-#. i18n: ectx: property (text), widget (QLabel, kActiveLabel7)
-#: rc.cpp:139
-msgid "<b>Expiration time:</b>"
-msgstr "<b>ពេល​វេលា​​ផុត​កំណត់ ៖</b>"
-
-#. i18n: file: ui/tubesconnectionwidget.ui:48
-#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
-#: rc.cpp:142
-msgid "Confirmation"
-msgstr "ការ​បញ្ជាក់"
-
-#. i18n: file: krfb.kcfg:8
-#. i18n: ectx: label, entry (useDefaultPort), group (TCP)
-#: rc.cpp:151
-msgid "Use the default port for VNC (5900)"
-msgstr "ប្រើ​ច្រក​លំនាំ​ដើម​សម្រាប់ VNC (5900)"
-
-#. i18n: file: krfb.kcfg:12
-#. i18n: ectx: label, entry (port), group (TCP)
-#: rc.cpp:154
-msgid "This is the port on which krfb will listen."
-msgstr "នេះ​គឺ​ជា​ច្រក​ដែល krfb នឹង​ស្ដាប់ ។"
-
-#. i18n: file: krfb.kcfg:22
-#. i18n: ectx: label, entry (allowDesktopControl), group (Security)
-#: rc.cpp:160
-msgid "Allow remote connections to manage the desktop."
-msgstr "អនុញ្ញាត​ការ​តភ្ជាប់​ពី​ចម្ងាយ​ដើម្បី​គ្រប់គ្រង​ផ្ទៃតុ ។"
-
-#. i18n: file: krfb.kcfg:26
-#. i18n: ectx: label, entry (askOnConnect), group (Security)
-#: rc.cpp:163
-msgid "Ask before allowing a remote connection."
-msgstr "សួរ មុន​ពេល​អនុញ្ញាត​ការ​តភ្ជាប់​ពី​ចម្ងាយ ។"
-
-#. i18n: file: krfb.kcfg:30
-#. i18n: ectx: label, entry (allowUninvitedConnections), group (Security)
-#: rc.cpp:166
-msgid "Allow connections without an invitation."
-msgstr "អនុញ្ញាត​ការ​តភ្ជាប់​ដោយ​គ្មាន​ការ​អញ្ជើញ ។"
-
-#. i18n: file: krfb.kcfg:34
-#. i18n: ectx: label, entry (uninvitedConnectionPassword), group (Security)
-#: rc.cpp:169
-msgid "Password for uninvited connections."
-msgstr "ពាក្យ​សម្ងាត់​សម្រាប់​ការ​តភ្ជាប់​ដែល​មិន​បាន​អញ្ជើញ ។"
-
-#. i18n: file: krfb.kcfg:39
-#. i18n: ectx: label, entry (preferredFrameBufferPlugin), group (FrameBuffer)
-#: rc.cpp:172
-msgid "Preferred Frame Buffer Plugin"
-msgstr "កម្មវិធី​ជំនួយ​សតិ​បណ្តោះ​អាសន្ននៃ​ស៊ុម​ដែល​ពេញ​ចិត្ត"
-
 #: rfbservermanager.cpp:216
 #, kde-format
 msgid "The remote user %1 is now connected."
@@ -766,6 +420,294 @@ msgstr "ការ​ចែក​រំលែក​​ផ្ទៃតុ - បា
 #: trayicon.cpp:123
 msgid "Desktop Sharing - connected"
 msgstr "ការ​ចែករំលែក​ផ្ទៃតុ - បាន​តភ្ជាប់"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_askOnConnect)
+#: ui/configsecurity.ui:20
+msgid "Ask before accepting connections"
+msgstr "សួរ​ មុន​នឹង​ទទួល​ការ​ត​ភ្ជាប់"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowDesktopControl)
+#: ui/configsecurity.ui:30
+msgid "Allow remote connections to control your desktop"
+msgstr "អនុញ្ញាត​ការ​តភ្ជាប់​ពី​ចម្ងាយ​ដើម្បី​បញ្ជា​ផ្ទៃតុ​របស់​អ្នក"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_allowUninvitedConnections)
+#: ui/configsecurity.ui:40
+msgid "Allow uninvited connections"
+msgstr "អនុញ្ញាត​ការ​តភ្ជាប់​មិន​បាន​អញ្ជើញ"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/configsecurity.ui:50
+msgid "Uninvited connections password:"
+msgstr "ពាក្យ​សម្ងាត់​ការ​តភ្ជាប់​មិន​បាន​អញ្ជើញ ៖"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_useDefaultPort)
+#: ui/configtcp.ui:32
+msgid "Use default port"
+msgstr "ប្រើ​ច្រក​លំនាំ​ដើម"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/configtcp.ui:50
+msgid "Listening port:"
+msgstr "ច្រក​ស្ដាប់ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: ui/connectionwidget.ui:47
+msgid "Attention"
+msgstr "ប្រុងប្រយ័ត្ន​"
+
+#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
+#: ui/connectionwidget.ui:72
+msgid ""
+"Somebody is requesting a connection to your computer. Granting this will "
+"allow the remote user to watch your desktop. "
+msgstr ""
+"នរណា​ម្នាក់​កំពុង​តែ​ស្នើ​ការ​តភ្ជាប់​ទៅ​កុំព្យូទ័រ​របស់​អ្នក ។ ការ​អនុញ្ញាត​នេះ នឹង​អនុញ្ញាត​អ្នក​ប្រើ​ពី​ចម្ងាយ​ឲ្យ​"
+"មើល​ផ្ទៃតុ​របស់​អ្នក ។"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel1)
+#: ui/connectionwidget.ui:102
+msgid "Remote system:"
+msgstr "ប្រព័ន្ធ​ពី​ចម្ងាយ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, remoteHost)
+#: ui/connectionwidget.ui:118
+msgid "123.234.123.234"
+msgstr "123.234.123.234"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, cbAllowRemoteControl)
+#: ui/connectionwidget.ui:136 ui/tubesconnectionwidget.ui:101
+msgid ""
+"If you turn this option on, the remote user can enter keystrokes and use "
+"your mouse pointer. This gives them full control over your computer, so be "
+"careful. When the option is disabled the remote user can only watch your "
+"screen."
+msgstr ""
+"បើ​អ្នក​បើក​ជម្រើស​នេះ អ្នក​ប្រើ​ពីចម្ងាយ​អាច​​សង្កត់​គ្រាប់ចុច និង​ប្រើ​ព្រួញ​កណ្តុរ​របស់​អ្នក​បាន ។​ នេះ​ផ្តល់​ឲ្យ​"
+"ពួកគេ​ត្រួតត្រា​ទាំងស្រុង​លើ​កុំព្យូទ័រ​របស់​អ្នក ដូច្នេះ​សូម​ប្រយ័ត្ន ។ នៅ​ពេល​ដែល​ជម្រើស​ត្រូវ​បាន​បិទ​ អ្នក​ប្រើ​ពី​"
+"ចំងាយ​អាច​មើល​បាន​តែ​អេក្រង់​របស់អ្នកប៉ុណ្ណោះ ។​​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbAllowRemoteControl)
+#: ui/connectionwidget.ui:139 ui/tubesconnectionwidget.ui:104
+msgid "Allow remote user to &control keyboard and mouse"
+msgstr "អនុញ្ញាត​​ឲ្យ​អ្នក​ប្រើ​ពី​ចម្ងាយ​បញ្ជា​ក្តារចុច និង​កណ្តុរ"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel2)
+#: ui/invitewidget.ui:40 ui/manageinvitations.ui:25
+msgid "Welcome to KDE Desktop Sharing"
+msgstr "សូម​ស្វាគមន៍​មក​កាន់​ការ​ចែក​រំលែក​ផ្ទៃតុ​របស់​ KDE"
+
+#. i18n: ectx: property (text), widget (QLabel, helpLabel)
+#: ui/invitewidget.ui:50
+msgid ""
+"KDE Desktop Sharing allows you to invite somebody at a remote location to "
+"watch and possibly control your desktop. <a href=\"whatsthis\">More about "
+"invitations...</a>"
+msgstr ""
+"ការ​ចែករំលែក​ផ្ទៃតុ KDE អនុញ្ញាត​ឲ្យ​អ្នក​អញ្ជើញ​នរណាម្នាក់​នៅទីតាំង​ពីចម្ងាយ ឲ្យ​មើល និង​អាច​ត្រួតពិនិត្យ​"
+"ផ្ទៃតុ​របស់​អ្នក​បាន ។ <a href=\"whatsthis\">ព័ត៌មាន​បន្ថែម​អំពី​ការ​អញ្ជើញ...</a>"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnCreateInvite)
+#: ui/invitewidget.ui:105
+msgid ""
+"Create a new invitation and display the connection data. Use this option if "
+"you want to invite somebody personally, for example, to give the connection "
+"data over the phone."
+msgstr ""
+"បង្កើត​ការ​អញ្ជើញ​ថ្មី និង​បង្ហាញ​ទិន្នន័យ​ការ​តភ្ជាប់ ។ ប្រើ​ជម្រើស​នេះ ​ប្រសិន​​បើ​អ្នក​ចង់​អញ្ជើញ​អ្នក​ណា​ម្នាក់​"
+"ជា​លក្ខណៈ​ផ្ទាល់​ខ្លួន ឧទាហរណ៍ ត្រូវ​ផ្ដល់​ទិន្នន័យ​តភ្ជាប់​តាម​រយៈ​ទូរស័ព្ទ ។"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnCreateInvite)
+#: ui/invitewidget.ui:108
+msgid "Create &Personal Invitation..."
+msgstr "បង្កើត​ការ​អញ្ជើញ​ផ្ទាល់ខ្លួន..."
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, btnEmailInvite)
+#: ui/invitewidget.ui:115
+msgid ""
+"This button will start your email application with a pre-configured text "
+"that explains to the recipient how to connect to your computer. "
+msgstr ""
+"ប៊ូតុង​នេះ​នឹង​ចាប់ផ្តើម​កម្មវិធី​អ៊ីមែល​របស់​អ្នក​ជាមួយ​នឹង​​អត្ថបទ ដែល​បាន​កំណត់​រចនាសម្ព័ន្ធ​ជាមុន ដែល​ពន្យល់​​​​អ្នក​"
+"ទទួល​នូវ​របៀប​តភ្ជាប់​ទៅ​កុំព្យូទ័រ​របស់​អ្នក ។"
+
+#. i18n: ectx: property (text), widget (QPushButton, btnEmailInvite)
+#: ui/invitewidget.ui:118
+msgid "Invite via &Email..."
+msgstr "អញ្ជើញ​តាម​រយៈ​អ៊ីមែល..."
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, ManageInvitationsDialog)
+#: ui/manageinvitations.ui:13
+msgid "Manage Invitations - Desktop Sharing"
+msgstr "គ្រប់គ្រង​ការអញ្ជើញ - ការ​ចែក​រំលែក​ផ្ទៃតុ"
+
+#. i18n: ectx: property (text), widget (QLabel, helpLabel)
+#: ui/manageinvitations.ui:38
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">KDE Desktop Sharing allows "
+"you to invite somebody at a remote location to watch and possibly control "
+"your desktop. <a href=\"whatsthis\">More about invitations...</a></p></"
+"body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">ការ​ចែក​រំលែក​ផ្ទៃតុ​របស់ KDE "
+"អនុញ្ញាត​ឲ្យ​អ្នក​អញ្ជើញ​នរណា​ម្នាក់​នៅ​ទីតាំង​ពី​ចម្ងាយ​ឲ្យ​មើល និង​ប្រហែល​ជា​អាច​បញ្ជា​ផ្ទៃតុ​របស់​អ្នក ។ <a "
+"href=\"whatsthis\">បន្ថែម​អីពី​ការ​អញ្ជើញ...</a></p></body></html>"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
+#: ui/manageinvitations.ui:95
+msgid "Creation Time"
+msgstr "ពេលវេលា​បង្កើត"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, invitationWidget)
+#: ui/manageinvitations.ui:100
+msgid "Expire Time"
+msgstr "ពេល​វេលា​ផុត​កំណត់"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:124
+msgid "Create a new personal invitation..."
+msgstr "បង្កើត​ការ​អញ្ជើញ​ផ្ទាល់ខ្លួន​ថ្មី..."
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:127
+msgid "Click this button to create a new personal invitation."
+msgstr "ចុច​ប៊ូតុង​នេះ​ដើម្បី​បង្កើត​ការ​អញ្ជើញ​ផ្ទាល់ខ្លួន​ថ្មី ។"
+
+#. i18n: ectx: property (text), widget (QPushButton, newPersonalInvitationButton)
+#: ui/manageinvitations.ui:130
+msgid "New &Personal Invitation..."
+msgstr "ការ​អញ្ជើញ​ផ្ទាល់ខ្លួន​ថ្មី​..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:137
+msgid "Send a new invitation via email..."
+msgstr "ផ្ញើ​ការអញ្ជើញ​ថ្មី​មួយ​តាមរយៈ​អ៊ីមែល..."
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:140
+msgid "Click this button to send a new invitation via email."
+msgstr "ចុច​ប៊ូតុង​នេះ​ដើម្បី​ផ្ញើ​ការ​អញ្ជើញ​ថ្មី​មួយ​​តាម​រយៈ​អ៊ីមែល ។"
+
+#. i18n: ectx: property (text), widget (QPushButton, newEmailInvitationButton)
+#: ui/manageinvitations.ui:143
+msgid "&New Email Invitation..."
+msgstr "ការ​អញ្ជើញ​តាម​រយៈ​អ៊ីមែល​ថ្មី..."
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:153
+msgid "Delete all invitations"
+msgstr "លុប​ការ​អញ្ជើញ​ទាំងអស់"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:156
+msgid "Deletes all open invitations."
+msgstr "លុប​ការ​អញ្ជើញ​​ដែល​បើក​ទាំងអស់​ ។"
+
+#. i18n: ectx: property (text), widget (QPushButton, deleteAllButton)
+#: ui/manageinvitations.ui:159
+msgid "Delete All"
+msgstr "លុប​ទាំងអស់"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:169
+msgid "Delete the selected invitation"
+msgstr "លុប​ការ​អញ្ជើញ​ដែល​បាន​ជ្រើស"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:172
+msgid ""
+"Delete the selected invitation. The invited person will not be able to "
+"connect using this invitation anymore."
+msgstr ""
+"លុប​ការ​អញ្ជើញ​ដែល​បាន​ជ្រើស ។​ អ្នក​ដែល​បាន​អញ្ជើញ​នឹង​មិន​អាច​តភ្ជាប់ ដោយ​ប្រើ​ការ​អញ្ជើញ​នេះ​ទៀតទេ ។"
+
+#. i18n: ectx: property (text), widget (QPushButton, deleteOneButton)
+#: ui/manageinvitations.ui:175
+msgid "&Delete"
+msgstr "លុប"
+
+#. i18n: ectx: property (text), widget (QLabel, mainTextLabel)
+#: ui/personalinvitewidget.ui:47
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Personal Invitation</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Give the information below "
+"to the person that you want to invite (<a href=\"htc\">how to connect</a>). "
+"Note that everybody who gets the password can connect, so be careful.</p></"
+"body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
+"weight:600;\">Personal Invitation</span></p>\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">ផ្ដល់​ព័ត៌មាន​ខាងក្រោម​ទៅ​មនុស្ស ដែល​"
+"អ្នក​ចង់​អញ្ជើញ (<a href=\"htc\">របៀប​តភ្ជាប់</a>) ។ ចំណាំ​ថា រាល់​គ្នា​ដែល​ទទួល​បាន​ពាក្យ​សម្ងាត់ "
+"អាច​តភ្ជាប់ ដូច្នេះ​ប្រុង​ប្រយ័ត្ន ។</p></body></html>"
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel5)
+#: ui/personalinvitewidget.ui:81
+msgid "<b>Host:</b>"
+msgstr "<b>ម៉ាស៊ីន ៖</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, hostHelpLabel)
+#: ui/personalinvitewidget.ui:116
+msgid ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">Help</a></"
+"p></body></html>"
+msgstr ""
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:9pt; font-"
+"weight:400; font-style:normal; text-decoration:none;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\"><a href=\"help\">ជំនួយ</a></"
+"p></body></html>"
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel6)
+#: ui/personalinvitewidget.ui:129
+msgid "<b>Password:</b>"
+msgstr "<b>ពាក្យ​សម្ងាត់​ ៖</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel7)
+#: ui/personalinvitewidget.ui:161
+msgid "<b>Expiration time:</b>"
+msgstr "<b>ពេល​វេលា​​ផុត​កំណត់ ៖</b>"
+
+#. i18n: ectx: property (text), widget (QLabel, TextLabel5)
+#: ui/tubesconnectionwidget.ui:48
+msgid "Confirmation"
+msgstr "ការ​បញ្ជាក់"
 
 #~ msgid "An error occurred sharing your desktop."
 #~ msgstr "កំហុស​មួយ​បានកើត​ឡើង​នៅពេល​ចែករំលែក​ផ្ទៃតុ​របស់​​អ្នក ។"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-07-24 12:53+0200\n"
+"POT-Creation-Date: 2012-08-19 15:40+0200\n"
 "PO-Revision-Date: 2010-06-08 14:47+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -280,6 +280,14 @@ msgstr "រក្សាទុក​ឯកសារ​ភ្ជាប់​"
 msgid "%1 already exists. Do you want to overwrite it?"
 msgstr "%1 មាន​រួច​ហើយ​ ។ តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ​ ?"
 
+#: calendar.cpp:53
+msgid "Unknown Name"
+msgstr "មិន​ស្គាល់​ឈ្មោះ"
+
+#: calendar.cpp:54
+msgid "unknown@nowhere"
+msgstr "unknown@nowhere"
+
 #: calendaradaptor.cpp:315 incidencechanger.cpp:392 nepomukcalendar.cpp:283
 #, kde-format
 msgid "Unable to delete incidence %1 \"%2\": %3"
@@ -312,14 +320,6 @@ msgid ""
 msgstr ""
 "មិន​អាច​ផ្ញើ​ធាតុ '%1' បាន​ទេ ៖\n"
 "វិធីសាស្ត្រ ៖ %2"
-
-#: calendar.cpp:53
-msgid "Unknown Name"
-msgstr "មិន​ស្គាល់​ឈ្មោះ"
-
-#: calendar.cpp:54
-msgid "unknown@nowhere"
-msgstr "unknown@nowhere"
 
 #: calendarmodel.cpp:220
 msgctxt "@title:column calendar event summary"
@@ -786,6 +786,431 @@ msgctxt "@title:column, calendar event type"
 msgid "Type"
 msgstr "ប្រភេទ"
 
+#. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
+#: kcalprefs.kcfg:16
+msgid "Use email settings from System Settings"
+msgstr "ប្រើ​ការ​កំណត់​អ៊ីមែល​​ពី​ការ​កំណត់​ប្រព័ន្ធ​"
+
+#. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
+#: kcalprefs.kcfg:17
+msgid ""
+"Check this box to use the KDE-wide e-mail settings, which are defined using "
+"the System Settings \"About Me\" Module. Uncheck this box to be able to "
+"specify your full name and e-mail."
+msgstr ""
+"គូស​ធីកប្រអប់​នេះ ដើម្បីប្រើការ​កំណត់ KDE-wide e-mail ដែល​ត្រូវ​បាន​កំណត់​ដោយ​ប្រើ​​ម៉ូឌុល​​​កំណត់​​​ប្រព័ន្ធ \"អំពី​"
+"ខ្ញុំ\"  ។ មិនគូស​ធីក​ប្រអប់​នេះ អាច​បញ្ជាក់​ឈ្មោះ​ពេញ និង​អ៊ីមែល ។"
+
+#. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
+#: kcalprefs.kcfg:25
+msgid "Default appointment time"
+msgstr "ពេលវេលា​ណាត់​លំនាំដើម"
+
+#. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
+#: kcalprefs.kcfg:26
+msgid ""
+"Enter the default time for events here. The default is used if you do not "
+"supply a start time."
+msgstr ""
+"បញ្ចូល​ពេលវេលា​លំនាំ​ដើម​សម្រាប់​ព្រឹត្តិការណ៍​នៅ​ទីនេះ ។ លំនាំដើម​ត្រូវ​បាន​ប្រើ​ ប្រសិនបើ​​អ្នក​មិន​ផ្ដល់​ពេលវេលា​"
+"ចាប់ផ្ដើម ។"
+
+#. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
+#: kcalprefs.kcfg:31
+msgid "Default duration of new appointment (HH:MM)"
+msgstr "ថិរវេលា​លំនាំដើម​​សម្រាប់​ការ​ណាត់​ថ្មី (HH:MM)"
+
+#. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
+#: kcalprefs.kcfg:32
+msgid ""
+"Enter default duration for events here. The default is used if you do not "
+"supply an end time."
+msgstr ""
+"បញ្ចូល​ថិរវេលា​លំនាំដើម​សម្រាប់​ព្រឹត្តិការណ៍​នៅ​ទីនេះ ។ លំនាំដើម​ត្រូវ​បាន​ប្រើ​ ប្រសិនបើ​អ្នក​មិន​ផ្ដល់​ពេលវេលា​"
+"បញ្ចប់ ។"
+
+#. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:37
+msgid "Enable a default sound file for audio reminders"
+msgstr "បើក​ឯកសារ​សំឡេង​លំនាំដើម​ សម្រាប់​កម្មវិធី​រំលឹក​អូឌីយ៉ូ​"
+
+#. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:38
+msgid ""
+"Check this box if you want to enable the specified file to be used as the "
+"default sound file for new reminders. You can always specify another file in "
+"the Reminder configuration accessible from the Event or To-do editors."
+msgstr ""
+"គូស​ធីក​ប្រអប់​នេះ ប្រសិនបើ​អ្នក​ចង់​បើក​ឯកសារ​​បញ្ជាក់​ដែល​នឹង​ត្រូវ​​ប្រើ​ជា​ឯកសារ​សំឡេង​លំនាំដើម​ សម្រាប់​កម្មវិធី​"
+"រំលឹក​ថ្មី​ ។ អ្នក​អាច​បញ្ជាក់​ឯកសារ​ផ្សេង​ទៀត​នៅ​ក្នុង​ការ​កំណត់​រចនាសម្ព័ន្ធ​​កម្មវិធី​រំលឹក​ដែល​​អាច​ចូល​ដំណើរការ​បាន​"
+"ពី​កម្មវិធី​កែសម្រួល​ព្រឹត្តិការណ៍​​ ឬ​កិច្ចការ​ត្រូវ​ធ្វើ​បាន​ជានិច្ច​​ ។"
+
+#. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
+#: kcalprefs.kcfg:43
+msgid "Default audio file"
+msgstr "ឯកសារ​អូឌីយ៉ូ​លំនាំដើម​"
+
+#. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
+#: kcalprefs.kcfg:44
+msgid ""
+"Set a file to be used as the default sound file for new reminders. You can "
+"always specify another file in the Reminder configuration accessible from "
+"the Event or To-do editors."
+msgstr ""
+"កំណត់​ឯកសារ​​ដែល​ត្រូវ​​ប្រើ​ជា​ឯកសារ​សំឡេង​លំនាំដើម​​ ​សម្រាប់​កម្មវិធី​រំលឹក​ថ្មី​ ។​ ​អ្នក​អាច​បញ្ជាក់​ឯកសារ​ផ្សេង​ទៀត​"
+"នៅ​ក្នុង​ការ​កំណត់​រចនាសម្ព័ន្ធ​​កម្មវិធី​រំលឹក​ដែល​​អាច​ចូល​ដំណើរការ​បាន​ពី​កម្មវិធី​កែសម្រួល​​ព្រឹត្តិការណ៍​ ឬ​​កិច្ចការ​ត្រូវ​"
+"ធ្វើ​បាន​​ជានិច្ច​ ។"
+
+#. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:48
+msgid "Enable reminders for new Events"
+msgstr "បើក​កម្មវិធី​រំលឹក​សម្រាប់​ព្រឹត្តិការណ៍​ថ្មី"
+
+#. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:49
+msgid ""
+"Check this box if you want to enable reminders for all newly created Events. "
+"You can always turn-off the reminders in the Event editor dialog."
+msgstr ""
+"គូស​ធីក​ប្រអប់​នេះ ប្រសិនបើ​អ្នក​ចង់បើក​កម្មវិធី​រំលឹក​សម្រាប់​ព្រឹត្តិការណ៍​ដែលបានបង្កើត​ថ្មីៗ ។ អ្នកតែងតែ​អាច​បិទ​"
+"កម្មវិធី​រំលឹក​នៅ​ក្នុង​ប្រអប់​កែសម្រួល​ព្រឹត្តិការណ៍ ។"
+
+#. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:50
+msgid "By default, enable reminders for new events"
+msgstr "តាម​លំនាំដើម​ បើក​កម្មវិធី​រំលឹក​សម្រាប់​ព្រឹត្តិការណ៍​ថ្មីៗ"
+
+#. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:55
+msgid "Enable reminders for new To-dos"
+msgstr "បើក​កម្មវិធី​រំលឹក​សម្រាប់​ការងារ​ត្រូ​វធ្វើ​ថ្មីៗ"
+
+#. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:56
+msgid ""
+"Check this box if you want to enable reminders for all newly created To-dos. "
+"You can always turn-off the reminders in the To-do editor dialog."
+msgstr ""
+"គូស​ធីក​ប្រអប់​នេះ ប្រសិនបើ​អ្នក​ចង់​បើក​កម្មវិធី​រំលឹក​សម្រាប់​ការងារ​ត្រូវ​ធ្វើ​ដែលបាន​បង្កើត​ថ្មីៗ​ទាំងអស់ ។ "
+"អ្នកតែងតែ​អាច​បិទ​កម្មវិធី រំលឹក​នៅ​ក្នុង​ប្រអប់​កែសម្រួល​ការងារ​ត្រូ​វធ្វើ ។"
+
+#. i18n: ectx: tooltip, entry (defaultTodoReminders), group (Default Datetimes)
+#: kcalprefs.kcfg:57
+msgid "By default, enable reminders for new to-dos"
+msgstr "តាម​លំនាំដើម បើក​កម្មវិធី​រំលឹក​សម្រាប់​ការងារ​ត្រូវធ្វើ​ថ្មី"
+
+#. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
+#: kcalprefs.kcfg:63
+msgid "Default reminder time"
+msgstr "ពេលវេលា​កម្មវិធី​រំលឹក​លំនាំដើម"
+
+#. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
+#: kcalprefs.kcfg:64
+msgid ""
+"Enter the default reminder time for all newly created items. The time unit "
+"is specified in the adjacent combobox."
+msgstr ""
+"បញ្ចូលពេលវេលា​កម្មវិធី​រំលឹក​លំនាំដើម​សម្រាប់​ធាតុ​ដែលបានបង្កើត​ថ្មីៗ​ទាំងអស់ ។ ឯកតា​ពេលវេលា​ត្រូវ​បាន​បញ្ជាក់​"
+"ក្នុង​ប្រអប់​ផ្សំ​នៅជាប់​នឹង​វា ។"
+
+#. i18n: ectx: tooltip, entry (ReminderTime), group (Default Datetimes)
+#: kcalprefs.kcfg:65
+msgid "Default time for reminders"
+msgstr "ពេលវេលា​លំនាំដើម​សម្រាប់​កម្មវិធី​រំលឹក"
+
+#. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
+#: kcalprefs.kcfg:70
+msgid ""
+"Enter the default reminder time units for all newly created items. The time "
+"is specified in the adjacent spinbox."
+msgstr ""
+"បញ្ចូល​ឯកតា​ពេលវេលា​របស់​កម្មវិធី​រំលឹក​សម្រាប់​ធាតុ​ដែល​បាន​បង្កើត​ថ្មីៗ ។ ពេលវេលា​ត្រូវ​បាន​បញ្ជាក់​ក្នុង​ប្រអប់​"
+"បង្កើន​បន្ថយ​ដែល​នៅ​ជាប់​វា ។"
+
+#. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
+#: kcalprefs.kcfg:71
+msgid "Default time unit for reminders"
+msgstr "ឯកតា​ពេលវេលា​លំនាំដើម​សម្រាប់​កម្មវិធី​រំលឹក"
+
+#. i18n: ectx: label, entry, group (Time &amp; Date)
+#: kcalprefs.kcfg:79
+msgid "Exclude holidays"
+msgstr "មិន​រាប់​បញ្ចូល​ថ្ងៃ​ឈប់សម្រាក​"
+
+#. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
+#: kcalprefs.kcfg:80
+msgid ""
+"Check this box to prevent KOrganizer from marking the working hours on "
+"holidays."
+msgstr "ធីក​ប្រអប់​នេះ​ ដើម្បី​រារាំង​​ KOrganizer ​ពី​ការ​សម្គាល់​ម៉ោង​ធ្វើ​ការ​​ក្នុង​​​ថ្ងៃ​ឈប់​សម្រាក​ ។"
+
+#. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
+#: kcalprefs.kcfg:85
+msgid "Use holiday region:"
+msgstr "ប្រើ​តំបន់​របស់​ថ្ងៃ​ឈប់​សម្រាក​ ៖​"
+
+#. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
+#: kcalprefs.kcfg:86
+msgid ""
+"Select from which region you want to use the holidays here. Defined holidays "
+"are shown as non-working days in the date navigator, the agenda view, etc."
+msgstr ""
+"ជ្រើស​​ពី​តំបន់​​ណាមួយ​ដែល​អ្នក​ចង់​ប្រើ​ថ្ងៃ​ឈប់​សម្រាក​នៅ​ទី​នេះ​ ។​ ថ្ងៃ​ឈប់​សម្រាក​ដែល​អ្នក​បាន​កំណត់​ត្រូវ​បាន​បង្ហាញ​​ "
+"ជា​ថ្ងៃ​មិន​ធ្វើ​ការ​ ​ក្នុង​​ទិសដៅ​កាលបរិច្ឆេទ​​ ​មើល​របៀបវារៈ​ ។ល។​"
+
+#. i18n: ectx: label, entry, group (Group Scheduling)
+#: kcalprefs.kcfg:93
+msgid "Use Groupware communication"
+msgstr "ប្រើ​ការ​ទាក់ទង​របស់ Groupware"
+
+#. i18n: ectx: whatsthis, entry, group (Group Scheduling)
+#: kcalprefs.kcfg:94
+msgid ""
+"Check this box to enable automatic generation of mails when creating, "
+"updating or deleting events (or to-dos) involving other attendees. You "
+"should check this box if you want to use the groupware functionality (e.g. "
+"Configuring Kontact as a KDE Kolab client)."
+msgstr ""
+"គូស​ធីក​ប្រអប់ ដើម្បីបើក​កា​របង្កើត​សំបុត្រ​ដោយ​ស្វ័យ​ប្រវត្តិ​នៅពេល​បង្កើត ធ្វើ​បច្ចុប្បន្នភាព​ ឬ​លុប​ព្រឹត្តិការណ៍ "
+"(ឬ​ការងារ​ត្រូវធ្វើ) ដែល​ពាក់ព័ន្ធ​នឹង​អ្នក​ចូលរួម​ផ្សេងៗ ។ អ្នកគួរ​តែ​គូស​ធីក​ប្រអប់នេះ ដើម្បី​ប្រើ​មុខាងារ "
+"functionality (ឧ. កំណត់​រចនាសម្ព័ន្ធ​ Kontact ជា​ម៉ាស៊ីន​ភ្ញៀវ KDE Kolab) ។"
+
+#. i18n: ectx: label, entry, group (Group Scheduling)
+#: kcalprefs.kcfg:99
+msgid "Send copy to owner when mailing events"
+msgstr "ផ្ញើ​ច្បាប់ចម្លង​ទៅ​ម្ចាស់​នៅពេល​ផ្ញើ​ព្រឹត្តិការណ៍"
+
+#. i18n: ectx: whatsthis, entry, group (Group Scheduling)
+#: kcalprefs.kcfg:100
+msgid ""
+"Check this box to get a copy of all e-mail messages that KOrganizer sends at "
+"your request to event attendees."
+msgstr ""
+"គូស​ធីក​ប្រអប់​នេះ ដើម្បី​ទទួល​បាន​ច្បាប់​ចម្លង​របស់​សារ​អ៊ីមែល​ទាំងអស់ ដែល​ KOrganizer ផ្ញើ​តាម​សំណើរ​របស់​អ្នក​"
+"ទៅកាន់​អ្នក​ចូលរួម​ព្រឹត្តិការណ៍ ។"
+
+#. i18n: ectx: label, entry (FreeBusyPublishUrl), group (FreeBusy Publish)
+#: kcalprefs.kcfg:123
+msgid "Free/Busy Publish URL"
+msgstr "URL បោះពុម្ព​ផ្សាយ​រវល់/ទំនេរ"
+
+#. i18n: ectx: whatsthis, entry (FreeBusyPublishUrl), group (FreeBusy Publish)
+#: kcalprefs.kcfg:124
+msgid "URL for publishing free/busy information"
+msgstr "URL សម្រាប់​បោះពុម្ព​ផ្សាយ​ព័ត៌មាន​រវល់/ទំនេរ"
+
+#. i18n: ectx: label, entry (FreeBusyPublishUser), group (FreeBusy Publish)
+#: kcalprefs.kcfg:128
+msgid "Free/Busy Publish Username"
+msgstr "ឈ្មោះ​អ្នកប្រើបោះពុម្ព​ផ្សាយ​រវល់/ទំនេរ"
+
+#. i18n: ectx: whatsthis, entry (FreeBusyPublishUser), group (FreeBusy Publish)
+#: kcalprefs.kcfg:129
+msgid "Username for publishing free/busy information"
+msgstr "ឈ្មោះ​អ្នកប្រើ​សម្រាប់បោះពុម្ព​ផ្សាយ​ព័ត៌មាន​រវល់/ទំនេរ"
+
+#. i18n: ectx: label, entry (FreeBusyPublishPassword), group (FreeBusy Publish)
+#: kcalprefs.kcfg:133
+msgid "Free/Busy Publish Password"
+msgstr "ពាក្យ​សម្ងាត់​បោះពុម្ព​ផ្សាយ​រវល់/ទំនេរ"
+
+#. i18n: ectx: whatsthis, entry (FreeBusyPublishPassword), group (FreeBusy Publish)
+#: kcalprefs.kcfg:134
+msgid "Password for publishing free/busy information"
+msgstr "ពាក្យ​សម្ងាត់​សម្រាប់​បោះពុម្ព​ផ្សាយ​ព័ត៌មាន​រវល់/ទំនេរ"
+
+#. i18n: ectx: label, entry (FreeBusyRetrieveAuto), group (FreeBusy Retrieve)
+#: kcalprefs.kcfg:145
+msgid "Enable Automatic Free/Busy Retrieval"
+msgstr "បើក​កា​រទៅ​យក​រវល់/ទំនេរ​ដោយ​ស្វ័យ​ប្រវត្តិ"
+
+#. i18n: ectx: label, entry (FreeBusyFullDomainRetrieval), group (FreeBusy Retrieve)
+#: kcalprefs.kcfg:150
+msgid "Use full email address for retrieval"
+msgstr "ប្រើ​អាសយដ្ឋាន​អ៊ីមែល​ពេញ​សម្រាប់​ទៅ​យក"
+
+#. i18n: ectx: whatsthis, entry (FreeBusyFullDomainRetrieval), group (FreeBusy Retrieve)
+#: kcalprefs.kcfg:151
+msgid ""
+"With this setting, you can change the filename that will be fetched from the "
+"server. With this checked, it will download a free/busy file called "
+"user@domain.ifb, for example nn@kde.org.ifb. Without this set, it will "
+"download user.ifb, for example nn.ifb."
+msgstr ""
+"ជា​មួយ​នឹង​ការ​កំណត់​នេះ អ្នក​អាច​ផ្លាស់ប្ដូរ​ឈ្មោះ​ឯកសារ​ដែល​នឹង​ត្រូវ​បាន​ទៅ​យក​ពី​ម៉ាស៊ីន​បម្រើ ។ ដោយ​គូស​ធីកវា វា​"
+"នឹង​ទាញយក​ឯកសារ​រវល់/ទំនេរ​ដែលហៅ​ថា user@domain.ifb ឧទាហរណ៍ nn@kde.org.ifb ។ ដោយ​មិន​កំណត់​"
+"វា វា​នឹង​ទាញយក​ user.ifb ឧទាហរណ៍ nn.ifb ។"
+
+#. i18n: ectx: label, entry (FreeBusyRetrieveUrl), group (FreeBusy Retrieve)
+#: kcalprefs.kcfg:156
+msgid "Free/Busy Retrieval URL"
+msgstr "URLl ទៅយក​រវល់/ទំនេរ"
+
+#. i18n: ectx: label, entry (FreeBusyRetrieveUser), group (FreeBusy Retrieve)
+#: kcalprefs.kcfg:160
+msgid "Free/Busy Retrieval Username"
+msgstr "ឈ្មោះ​អ្នក​ប្រើ​ទៅ​យក​រវល់/ទំនេរ"
+
+#. i18n: ectx: label, entry (FreeBusyRetrievePassword), group (FreeBusy Retrieve)
+#: kcalprefs.kcfg:164
+msgid "Free/Busy Retrieval Password"
+msgstr "ពាក្យ​សម្ងាត់​ទៅ​យក​រវល់/ទំនេរ"
+
+#. i18n: ectx: whatsthis, entry (FreeBusyRetrievePassword), group (FreeBusy Retrieve)
+#: kcalprefs.kcfg:165
+msgid "Password for retrieving free/busy information"
+msgstr "ពាក្យ​សម្ងាត់​សម្រាប់​ទៅ​យក​ព័ត៌មាន​រវល់​/ទំនេរ"
+
+#. i18n: ectx: label, entry (OutlookCompatCounterProposals), group (Hidden Options)
+#: kcalprefs.kcfg:176
+msgid "Send Outlook-like pseudo counter proposals"
+msgstr "ផ្ញើ​សំណើ​ចំនួន​រាប់​ដែល​មាន​រាង​ដូច Outlook pseudo"
+
+#. i18n: ectx: label, entry (FreeBusyCheckHostname), group (Hidden Options)
+#: kcalprefs.kcfg:181
+msgid "Check whether hostname and retrieval email address match"
+msgstr "ពិនិត្យ​មើល​ថាតើ​ឈ្មោះ​ម៉ាស៊ីន និង​អាសយដ្ឋាន​អ៊ីមែល​ទៅយក​ត្រូវ​គ្នា​ដែរឬទេ"
+
+#. i18n: ectx: whatsthis, entry (FreeBusyCheckHostname), group (Hidden Options)
+#: kcalprefs.kcfg:182
+msgid ""
+"With this setting you can configure whether the domain part of the free/busy "
+"URL has to match the domain part of the user ID you are looking for. For "
+"example, if this option is set, then looking for the free/busy data of "
+"joe@mydomain.com on the server www.yourdomain.com will fail."
+msgstr ""
+"ជា​មួយ​នឹង​ការ​កំណត់​នេះ អ្នក​អាច​កំណត់​រចនាសម្ព័ន្ធ​ថាតើ​ផ្នែក​របស់​ដែន​នៃ URL រវល់/ទំនេរ​ត្រូវ​តែ​ផ្គូផ្គង​នឹង​"
+"ផ្នែក​ដែន​របស់​​​លេខ​សម្គាល់​អ្នក​ប្រើ​​ ដែល​អ្នក​កំពុង​តែ​រក​មើល ។ ឧទាហរណ៍ ប្រសិនបើ​កំណត់​ជម្រើស​នេះ នោះ​ការ​"
+"រកមើល​សម្រាប់​ទិន្នន័យ​រវល់/ទំនេរ​របស់ joe@mydomain.com នៅ​លើ​ម៉ាស៊ីន​បម្រើ www.yourdomain.com "
+"នឹង​បរាជ័យ ។"
+
+#. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
+#: kcalprefs.kcfg:187
+msgid "Show timezone selectors in the event and todo editor dialog."
+msgstr "បង្ហាញ​កម្មវិធី​ជ្រើស​តំបន់​ពេលវេលា​នៅ​ក្នុង​ព្រឹត្តិការណ៍ និង​ប្រអប់​កែសម្រួល​ការងារ​ត្រូវ​ធ្វើ ។"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:196
+msgid "Regularly archive events"
+msgstr "ព្រឹត្តិការណ៍​​ទុក​ក្នុង​ប័ណ្ណ​យ៉ាង​ទៀងទាត់​​"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:201
+msgid ""
+"If auto-archiving is enabled, events older than this amount will be "
+"archived. The unit of this value is specified in another field."
+msgstr ""
+"ប្រសិន​បើ​ ទុក​ក្នុង​ប័ណ្ណសារ​​ស្វ័យ​ប្រវត្តិ​ត្រូវ​បាន​បើក​ ​ព្រឹត្តិការណ៍ដែល​​​ចាស់​ជាង​​ចំនួន​នេះ​នឹង​ត្រូវ​បាន​ទុក​ក្នុង​"
+"ប័ណ្ណសារ​ ។​ ​តម្លៃ​ឯកតា​នេះ​ត្រូវ​បាន​បញ្ជាក់​​ក្នុង​វាល​ផ្សេង​ទៀត​ ។"
+
+#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
+#: kcalprefs.kcfg:206
+msgid "The unit in which the expiry time is expressed."
+msgstr "ឯកតា​ដែល​បង្ហាញ​ពេលវេលា​ផុត​កំណត់ ។"
+
+#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
+#: kcalprefs.kcfg:209
+msgid "In days"
+msgstr "នៅ​ថ្ងៃ​"
+
+#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
+#: kcalprefs.kcfg:212
+msgid "In weeks"
+msgstr "នៅ​​សប្ដាហ៍​"
+
+#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
+#: kcalprefs.kcfg:215
+msgid "In months"
+msgstr "នៅ​ខែ​"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:222
+msgid "URL of the file where old events should be archived"
+msgstr "URL នៃ​ឯកសារ​ដែល​ព្រឹត្តិការណ៍​​ចាស់​ៗ​គួរ​តែ​ត្រូវ​បាន​ទុក​ក្នុង​​ប័ណ្ណសារ​"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:226
+msgid "Archive events"
+msgstr "ព្រឹត្តិការណ៍​ទុក​ក្នុង​ប័ណ្ណសារ​"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:231
+msgid "Archive to-dos"
+msgstr "កិច្ចការ​ត្រូវ​ធ្វើ​ទុក​ក្នុង​ប័ណ្ណ​សារ​"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:236
+msgid "What to do when archiving"
+msgstr "កិច្ច​ការ​ត្រូវ​ធ្វើ​នៅ​ពេល​ទុក​ក្នុង​ប័ណ្ណសារ​"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:239
+msgid "Delete old events"
+msgstr "លុប​ព្រឹត្តិការណ៍​ចាស់​​ៗ"
+
+#. i18n: ectx: label, entry, group (Archive Dialog)
+#: kcalprefs.kcfg:242
+msgid "Archive old events to a separate file"
+msgstr "ទុក​ព្រឹត្តិការណ៍​ចាស់​ៗ​ក្នុង​ប័ណ្ណសារ​ទៅ​កាន់​ឯកសារ​ញែក"
+
+#. i18n: ectx: label, entry (UserName), group (Internal Settings)
+#: kcalprefs.kcfg:256
+msgid "Full &name"
+msgstr "ឈ្មោះ​ពេញ"
+
+#. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
+#: kcalprefs.kcfg:257
+msgid ""
+"Enter your full name here. This name will be displayed as \"Organizer\" in "
+"to-dos and events you create."
+msgstr ""
+"បញ្ចូល​ឈ្មោះ​ពេញ​របស់​អ្នក​នៅ​ទីនេះ ។ ឈ្មោះ​នេះ​នឹង​ត្រូវ​បានបង្ហាញ​ជា \"អ្នក​រៀបចំ\" នៅ​ក្នុង​ការងារ​ត្រូវ​"
+"ធ្វើ និង​ព្រឹត្តិការណ៍​ដែល​អ្នក​បង្កើត ។"
+
+#: kcalprefs.kcfg:258
+msgid "Anonymous"
+msgstr "អនាមិក"
+
+#. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
+#: kcalprefs.kcfg:262
+msgid "E&mail address"
+msgstr "អាយដ្ឋាន​អ៊ីមែល"
+
+#. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
+#: kcalprefs.kcfg:263
+msgid ""
+"Enter here your e-mail address. This e-mail address will be used to identify "
+"the owner of the calendar, and displayed in events and to-dos you create."
+msgstr ""
+"បញ្ចូល​អាសយដ្ឋាន​អ៊ីមែល​របស់​អ្នក​នៅ​ទីនេះ ។ អាសយដ្ឋាន​អ៊ីមែល​នេះ​នឹង​ត្រូវ​បាន​ប្រើ ដើម្បី​កំណត់​អត្តសញ្ញាណ​​ម្ចាស់​​"
+"ប្រតិទិន ហើយ​ត្រូវ​បាន​បង្ហាញ​នៅ​ក្នុង​ព្រឹត្តិការណ៍ និង​កិច្ចការ​​ត្រូវ​ធ្វើ​ដែល​អ្នក​បង្កើត ។"
+
+#: kcalprefs.kcfg:264
+msgid "nobody@nowhere"
+msgstr "nobody@nowhere"
+
+#. i18n: ectx: label, entry, group (Colors)
+#: kcalprefs.kcfg:282
+msgid "\"No category\" color (for \"Only category\" drawing schemes)"
+msgstr "\"គ្មាន​ប្រភេទ\" ពណ៌ (សម្រាប់​គ្រោងការណ៍​គូរ​ \"តែ​ប្រភេទ\")"
+
+#. i18n: ectx: whatsthis, entry, group (Colors)
+#: kcalprefs.kcfg:283
+msgid ""
+"Select a color to use for the \"no category\" or \"unset category\" "
+"situation, when an item does not belong to any category. This color is used "
+"when drawing items in the agenda or month views using the \"Only category\" "
+"scheme."
+msgstr ""
+"ជ្រើស​ពណ៌​ត្រូវ​ប្រើ​ សម្រាប់​ស្ថានភាព​​​​ \"គ្មាន​ប្រភេទ​​\" ឬ​ \"​មិន​កំណត់​ប្រភេទ​​\" ​ នៅ​ពេល​ធាតុ​មិន​មែន​ជា​របស់​"
+"ប្រភេទ​មួយ​ចំនួន​ ។​ ​ពណ៌​នេះ​ត្រូវ​បាន​ប្រើ​​ នៅ​ពេល​គូរ​ធាតុ​ក្នុង​របៀបវារៈ​​ ឬ​មើល​ខែ​ដោយ​ប្រើ​គ្រោងការណ៍​ \"​​​តែ​"
+"ប្រភេទ​ប៉ុណ្ណោះ​​\" ។"
+
+#. i18n: ectx: tooltip, entry, group (Colors)
+#: kcalprefs.kcfg:284
+msgid "Use this color when drawing items without a category"
+msgstr "ប្រើ​ពណ៌​នេះ នៅពេល​គូរ​ធាតុ​ដោយ​មិនមាន​ប្រភេទ"
+
 #: mailclient.cpp:130
 msgid "Free Busy Object"
 msgstr "វត្ថុ​ទំនេរ/រវល់"
@@ -835,498 +1260,6 @@ msgstr "(EmptyName)"
 #: publishdialog.cpp:126
 msgid "(EmptyEmail)"
 msgstr "(EmptyEmail)"
-
-#. i18n: file: kcalprefs.kcfg:16
-#. i18n: ectx: label, entry (EmailControlCenter), group (Personal Settings)
-#: rc.cpp:3
-msgid "Use email settings from System Settings"
-msgstr "ប្រើ​ការ​កំណត់​អ៊ីមែល​​ពី​ការ​កំណត់​ប្រព័ន្ធ​"
-
-#. i18n: file: kcalprefs.kcfg:17
-#. i18n: ectx: whatsthis, entry (EmailControlCenter), group (Personal Settings)
-#: rc.cpp:6
-msgid ""
-"Check this box to use the KDE-wide e-mail settings, which are defined using "
-"the System Settings \"About Me\" Module. Uncheck this box to be able to "
-"specify your full name and e-mail."
-msgstr ""
-"គូស​ធីកប្រអប់​នេះ ដើម្បីប្រើការ​កំណត់ KDE-wide e-mail ដែល​ត្រូវ​បាន​កំណត់​ដោយ​ប្រើ​​ម៉ូឌុល​​​កំណត់​​​ប្រព័ន្ធ \"អំពី​"
-"ខ្ញុំ\"  ។ មិនគូស​ធីក​ប្រអប់​នេះ អាច​បញ្ជាក់​ឈ្មោះ​ពេញ និង​អ៊ីមែល ។"
-
-#. i18n: file: kcalprefs.kcfg:25
-#. i18n: ectx: label, entry (StartTime), group (Default Datetimes)
-#: rc.cpp:9
-msgid "Default appointment time"
-msgstr "ពេលវេលា​ណាត់​លំនាំដើម"
-
-#. i18n: file: kcalprefs.kcfg:26
-#. i18n: ectx: whatsthis, entry (StartTime), group (Default Datetimes)
-#: rc.cpp:12
-msgid ""
-"Enter the default time for events here. The default is used if you do not "
-"supply a start time."
-msgstr ""
-"បញ្ចូល​ពេលវេលា​លំនាំ​ដើម​សម្រាប់​ព្រឹត្តិការណ៍​នៅ​ទីនេះ ។ លំនាំដើម​ត្រូវ​បាន​ប្រើ​ ប្រសិនបើ​​អ្នក​មិន​ផ្ដល់​ពេលវេលា​"
-"ចាប់ផ្ដើម ។"
-
-#. i18n: file: kcalprefs.kcfg:31
-#. i18n: ectx: label, entry (DefaultDuration), group (Default Datetimes)
-#: rc.cpp:15
-msgid "Default duration of new appointment (HH:MM)"
-msgstr "ថិរវេលា​លំនាំដើម​​សម្រាប់​ការ​ណាត់​ថ្មី (HH:MM)"
-
-#. i18n: file: kcalprefs.kcfg:32
-#. i18n: ectx: whatsthis, entry (DefaultDuration), group (Default Datetimes)
-#: rc.cpp:18
-msgid ""
-"Enter default duration for events here. The default is used if you do not "
-"supply an end time."
-msgstr ""
-"បញ្ចូល​ថិរវេលា​លំនាំដើម​សម្រាប់​ព្រឹត្តិការណ៍​នៅ​ទីនេះ ។ លំនាំដើម​ត្រូវ​បាន​ប្រើ​ ប្រសិនបើ​អ្នក​មិន​ផ្ដល់​ពេលវេលា​"
-"បញ្ចប់ ។"
-
-#. i18n: file: kcalprefs.kcfg:37
-#. i18n: ectx: label, entry (defaultAudioFileReminders), group (Default Datetimes)
-#: rc.cpp:21
-msgid "Enable a default sound file for audio reminders"
-msgstr "បើក​ឯកសារ​សំឡេង​លំនាំដើម​ សម្រាប់​កម្មវិធី​រំលឹក​អូឌីយ៉ូ​"
-
-#. i18n: file: kcalprefs.kcfg:38
-#. i18n: ectx: whatsthis, entry (defaultAudioFileReminders), group (Default Datetimes)
-#: rc.cpp:24
-msgid ""
-"Check this box if you want to enable the specified file to be used as the "
-"default sound file for new reminders. You can always specify another file in "
-"the Reminder configuration accessible from the Event or To-do editors."
-msgstr ""
-"គូស​ធីក​ប្រអប់​នេះ ប្រសិនបើ​អ្នក​ចង់​បើក​ឯកសារ​​បញ្ជាក់​ដែល​នឹង​ត្រូវ​​ប្រើ​ជា​ឯកសារ​សំឡេង​លំនាំដើម​ សម្រាប់​កម្មវិធី​"
-"រំលឹក​ថ្មី​ ។ អ្នក​អាច​បញ្ជាក់​ឯកសារ​ផ្សេង​ទៀត​នៅ​ក្នុង​ការ​កំណត់​រចនាសម្ព័ន្ធ​​កម្មវិធី​រំលឹក​ដែល​​អាច​ចូល​ដំណើរការ​បាន​"
-"ពី​កម្មវិធី​កែសម្រួល​ព្រឹត្តិការណ៍​​ ឬ​កិច្ចការ​ត្រូវ​ធ្វើ​បាន​ជានិច្ច​​ ។"
-
-#. i18n: file: kcalprefs.kcfg:43
-#. i18n: ectx: label, entry (audioFilePath), group (Default Datetimes)
-#: rc.cpp:27
-msgid "Default audio file"
-msgstr "ឯកសារ​អូឌីយ៉ូ​លំនាំដើម​"
-
-#. i18n: file: kcalprefs.kcfg:44
-#. i18n: ectx: whatsthis, entry (audioFilePath), group (Default Datetimes)
-#: rc.cpp:30
-msgid ""
-"Set a file to be used as the default sound file for new reminders. You can "
-"always specify another file in the Reminder configuration accessible from "
-"the Event or To-do editors."
-msgstr ""
-"កំណត់​ឯកសារ​​ដែល​ត្រូវ​​ប្រើ​ជា​ឯកសារ​សំឡេង​លំនាំដើម​​ ​សម្រាប់​កម្មវិធី​រំលឹក​ថ្មី​ ។​ ​អ្នក​អាច​បញ្ជាក់​ឯកសារ​ផ្សេង​ទៀត​"
-"នៅ​ក្នុង​ការ​កំណត់​រចនាសម្ព័ន្ធ​​កម្មវិធី​រំលឹក​ដែល​​អាច​ចូល​ដំណើរការ​បាន​ពី​កម្មវិធី​កែសម្រួល​​ព្រឹត្តិការណ៍​ ឬ​​កិច្ចការ​ត្រូវ​"
-"ធ្វើ​បាន​​ជានិច្ច​ ។"
-
-#. i18n: file: kcalprefs.kcfg:48
-#. i18n: ectx: label, entry (defaultEventReminders), group (Default Datetimes)
-#: rc.cpp:33
-msgid "Enable reminders for new Events"
-msgstr "បើក​កម្មវិធី​រំលឹក​សម្រាប់​ព្រឹត្តិការណ៍​ថ្មី"
-
-#. i18n: file: kcalprefs.kcfg:49
-#. i18n: ectx: whatsthis, entry (defaultEventReminders), group (Default Datetimes)
-#: rc.cpp:36
-msgid ""
-"Check this box if you want to enable reminders for all newly created Events. "
-"You can always turn-off the reminders in the Event editor dialog."
-msgstr ""
-"គូស​ធីក​ប្រអប់​នេះ ប្រសិនបើ​អ្នក​ចង់បើក​កម្មវិធី​រំលឹក​សម្រាប់​ព្រឹត្តិការណ៍​ដែលបានបង្កើត​ថ្មីៗ ។ អ្នកតែងតែ​អាច​បិទ​"
-"កម្មវិធី​រំលឹក​នៅ​ក្នុង​ប្រអប់​កែសម្រួល​ព្រឹត្តិការណ៍ ។"
-
-#. i18n: file: kcalprefs.kcfg:50
-#. i18n: ectx: tooltip, entry (defaultEventReminders), group (Default Datetimes)
-#: rc.cpp:39
-msgid "By default, enable reminders for new events"
-msgstr "តាម​លំនាំដើម​ បើក​កម្មវិធី​រំលឹក​សម្រាប់​ព្រឹត្តិការណ៍​ថ្មីៗ"
-
-#. i18n: file: kcalprefs.kcfg:55
-#. i18n: ectx: label, entry (defaultTodoReminders), group (Default Datetimes)
-#: rc.cpp:42
-msgid "Enable reminders for new To-dos"
-msgstr "បើក​កម្មវិធី​រំលឹក​សម្រាប់​ការងារ​ត្រូ​វធ្វើ​ថ្មីៗ"
-
-#. i18n: file: kcalprefs.kcfg:56
-#. i18n: ectx: whatsthis, entry (defaultTodoReminders), group (Default Datetimes)
-#: rc.cpp:45
-msgid ""
-"Check this box if you want to enable reminders for all newly created To-dos. "
-"You can always turn-off the reminders in the To-do editor dialog."
-msgstr ""
-"គូស​ធីក​ប្រអប់​នេះ ប្រសិនបើ​អ្នក​ចង់​បើក​កម្មវិធី​រំលឹក​សម្រាប់​ការងារ​ត្រូវ​ធ្វើ​ដែលបាន​បង្កើត​ថ្មីៗ​ទាំងអស់ ។ "
-"អ្នកតែងតែ​អាច​បិទ​កម្មវិធី រំលឹក​នៅ​ក្នុង​ប្រអប់​កែសម្រួល​ការងារ​ត្រូ​វធ្វើ ។"
-
-#. i18n: file: kcalprefs.kcfg:57
-#. i18n: ectx: tooltip, entry (defaultTodoReminders), group (Default Datetimes)
-#: rc.cpp:48
-msgid "By default, enable reminders for new to-dos"
-msgstr "តាម​លំនាំដើម បើក​កម្មវិធី​រំលឹក​សម្រាប់​ការងារ​ត្រូវធ្វើ​ថ្មី"
-
-#. i18n: file: kcalprefs.kcfg:63
-#. i18n: ectx: label, entry (ReminderTime), group (Default Datetimes)
-#: rc.cpp:51
-msgid "Default reminder time"
-msgstr "ពេលវេលា​កម្មវិធី​រំលឹក​លំនាំដើម"
-
-#. i18n: file: kcalprefs.kcfg:64
-#. i18n: ectx: whatsthis, entry (ReminderTime), group (Default Datetimes)
-#: rc.cpp:54
-msgid ""
-"Enter the default reminder time for all newly created items. The time unit "
-"is specified in the adjacent combobox."
-msgstr ""
-"បញ្ចូលពេលវេលា​កម្មវិធី​រំលឹក​លំនាំដើម​សម្រាប់​ធាតុ​ដែលបានបង្កើត​ថ្មីៗ​ទាំងអស់ ។ ឯកតា​ពេលវេលា​ត្រូវ​បាន​បញ្ជាក់​"
-"ក្នុង​ប្រអប់​ផ្សំ​នៅជាប់​នឹង​វា ។"
-
-#. i18n: file: kcalprefs.kcfg:65
-#. i18n: ectx: tooltip, entry (ReminderTime), group (Default Datetimes)
-#: rc.cpp:57
-msgid "Default time for reminders"
-msgstr "ពេលវេលា​លំនាំដើម​សម្រាប់​កម្មវិធី​រំលឹក"
-
-#. i18n: file: kcalprefs.kcfg:70
-#. i18n: ectx: whatsthis, entry (ReminderTimeUnits), group (Default Datetimes)
-#: rc.cpp:60
-msgid ""
-"Enter the default reminder time units for all newly created items. The time "
-"is specified in the adjacent spinbox."
-msgstr ""
-"បញ្ចូល​ឯកតា​ពេលវេលា​របស់​កម្មវិធី​រំលឹក​សម្រាប់​ធាតុ​ដែល​បាន​បង្កើត​ថ្មីៗ ។ ពេលវេលា​ត្រូវ​បាន​បញ្ជាក់​ក្នុង​ប្រអប់​"
-"បង្កើន​បន្ថយ​ដែល​នៅ​ជាប់​វា ។"
-
-#. i18n: file: kcalprefs.kcfg:71
-#. i18n: ectx: tooltip, entry (ReminderTimeUnits), group (Default Datetimes)
-#: rc.cpp:63
-msgid "Default time unit for reminders"
-msgstr "ឯកតា​ពេលវេលា​លំនាំដើម​សម្រាប់​កម្មវិធី​រំលឹក"
-
-#. i18n: file: kcalprefs.kcfg:79
-#. i18n: ectx: label, entry, group (Time &amp; Date)
-#: rc.cpp:66
-msgid "Exclude holidays"
-msgstr "មិន​រាប់​បញ្ចូល​ថ្ងៃ​ឈប់សម្រាក​"
-
-#. i18n: file: kcalprefs.kcfg:80
-#. i18n: ectx: whatsthis, entry, group (Time &amp; Date)
-#: rc.cpp:69
-msgid ""
-"Check this box to prevent KOrganizer from marking the working hours on "
-"holidays."
-msgstr "ធីក​ប្រអប់​នេះ​ ដើម្បី​រារាំង​​ KOrganizer ​ពី​ការ​សម្គាល់​ម៉ោង​ធ្វើ​ការ​​ក្នុង​​​ថ្ងៃ​ឈប់​សម្រាក​ ។"
-
-#. i18n: file: kcalprefs.kcfg:85
-#. i18n: ectx: label, entry (Holidays), group (Time &amp; Date)
-#: rc.cpp:72
-msgid "Use holiday region:"
-msgstr "ប្រើ​តំបន់​របស់​ថ្ងៃ​ឈប់​សម្រាក​ ៖​"
-
-#. i18n: file: kcalprefs.kcfg:86
-#. i18n: ectx: whatsthis, entry (Holidays), group (Time &amp; Date)
-#: rc.cpp:75
-msgid ""
-"Select from which region you want to use the holidays here. Defined holidays "
-"are shown as non-working days in the date navigator, the agenda view, etc."
-msgstr ""
-"ជ្រើស​​ពី​តំបន់​​ណាមួយ​ដែល​អ្នក​ចង់​ប្រើ​ថ្ងៃ​ឈប់​សម្រាក​នៅ​ទី​នេះ​ ។​ ថ្ងៃ​ឈប់​សម្រាក​ដែល​អ្នក​បាន​កំណត់​ត្រូវ​បាន​បង្ហាញ​​ "
-"ជា​ថ្ងៃ​មិន​ធ្វើ​ការ​ ​ក្នុង​​ទិសដៅ​កាលបរិច្ឆេទ​​ ​មើល​របៀបវារៈ​ ។ល។​"
-
-#. i18n: file: kcalprefs.kcfg:93
-#. i18n: ectx: label, entry, group (Group Scheduling)
-#: rc.cpp:78
-msgid "Use Groupware communication"
-msgstr "ប្រើ​ការ​ទាក់ទង​របស់ Groupware"
-
-#. i18n: file: kcalprefs.kcfg:94
-#. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: rc.cpp:81
-msgid ""
-"Check this box to enable automatic generation of mails when creating, "
-"updating or deleting events (or to-dos) involving other attendees. You "
-"should check this box if you want to use the groupware functionality (e.g. "
-"Configuring Kontact as a KDE Kolab client)."
-msgstr ""
-"គូស​ធីក​ប្រអប់ ដើម្បីបើក​កា​របង្កើត​សំបុត្រ​ដោយ​ស្វ័យ​ប្រវត្តិ​នៅពេល​បង្កើត ធ្វើ​បច្ចុប្បន្នភាព​ ឬ​លុប​ព្រឹត្តិការណ៍ "
-"(ឬ​ការងារ​ត្រូវធ្វើ) ដែល​ពាក់ព័ន្ធ​នឹង​អ្នក​ចូលរួម​ផ្សេងៗ ។ អ្នកគួរ​តែ​គូស​ធីក​ប្រអប់នេះ ដើម្បី​ប្រើ​មុខាងារ "
-"functionality (ឧ. កំណត់​រចនាសម្ព័ន្ធ​ Kontact ជា​ម៉ាស៊ីន​ភ្ញៀវ KDE Kolab) ។"
-
-#. i18n: file: kcalprefs.kcfg:99
-#. i18n: ectx: label, entry, group (Group Scheduling)
-#: rc.cpp:84
-msgid "Send copy to owner when mailing events"
-msgstr "ផ្ញើ​ច្បាប់ចម្លង​ទៅ​ម្ចាស់​នៅពេល​ផ្ញើ​ព្រឹត្តិការណ៍"
-
-#. i18n: file: kcalprefs.kcfg:100
-#. i18n: ectx: whatsthis, entry, group (Group Scheduling)
-#: rc.cpp:87
-msgid ""
-"Check this box to get a copy of all e-mail messages that KOrganizer sends at "
-"your request to event attendees."
-msgstr ""
-"គូស​ធីក​ប្រអប់​នេះ ដើម្បី​ទទួល​បាន​ច្បាប់​ចម្លង​របស់​សារ​អ៊ីមែល​ទាំងអស់ ដែល​ KOrganizer ផ្ញើ​តាម​សំណើរ​របស់​អ្នក​"
-"ទៅកាន់​អ្នក​ចូលរួម​ព្រឹត្តិការណ៍ ។"
-
-#. i18n: file: kcalprefs.kcfg:123
-#. i18n: ectx: label, entry (FreeBusyPublishUrl), group (FreeBusy Publish)
-#: rc.cpp:90
-msgid "Free/Busy Publish URL"
-msgstr "URL បោះពុម្ព​ផ្សាយ​រវល់/ទំនេរ"
-
-#. i18n: file: kcalprefs.kcfg:124
-#. i18n: ectx: whatsthis, entry (FreeBusyPublishUrl), group (FreeBusy Publish)
-#: rc.cpp:93
-msgid "URL for publishing free/busy information"
-msgstr "URL សម្រាប់​បោះពុម្ព​ផ្សាយ​ព័ត៌មាន​រវល់/ទំនេរ"
-
-#. i18n: file: kcalprefs.kcfg:128
-#. i18n: ectx: label, entry (FreeBusyPublishUser), group (FreeBusy Publish)
-#: rc.cpp:96
-msgid "Free/Busy Publish Username"
-msgstr "ឈ្មោះ​អ្នកប្រើបោះពុម្ព​ផ្សាយ​រវល់/ទំនេរ"
-
-#. i18n: file: kcalprefs.kcfg:129
-#. i18n: ectx: whatsthis, entry (FreeBusyPublishUser), group (FreeBusy Publish)
-#: rc.cpp:99
-msgid "Username for publishing free/busy information"
-msgstr "ឈ្មោះ​អ្នកប្រើ​សម្រាប់បោះពុម្ព​ផ្សាយ​ព័ត៌មាន​រវល់/ទំនេរ"
-
-#. i18n: file: kcalprefs.kcfg:133
-#. i18n: ectx: label, entry (FreeBusyPublishPassword), group (FreeBusy Publish)
-#: rc.cpp:102
-msgid "Free/Busy Publish Password"
-msgstr "ពាក្យ​សម្ងាត់​បោះពុម្ព​ផ្សាយ​រវល់/ទំនេរ"
-
-#. i18n: file: kcalprefs.kcfg:134
-#. i18n: ectx: whatsthis, entry (FreeBusyPublishPassword), group (FreeBusy Publish)
-#: rc.cpp:105
-msgid "Password for publishing free/busy information"
-msgstr "ពាក្យ​សម្ងាត់​សម្រាប់​បោះពុម្ព​ផ្សាយ​ព័ត៌មាន​រវល់/ទំនេរ"
-
-#. i18n: file: kcalprefs.kcfg:145
-#. i18n: ectx: label, entry (FreeBusyRetrieveAuto), group (FreeBusy Retrieve)
-#: rc.cpp:108
-msgid "Enable Automatic Free/Busy Retrieval"
-msgstr "បើក​កា​រទៅ​យក​រវល់/ទំនេរ​ដោយ​ស្វ័យ​ប្រវត្តិ"
-
-#. i18n: file: kcalprefs.kcfg:150
-#. i18n: ectx: label, entry (FreeBusyFullDomainRetrieval), group (FreeBusy Retrieve)
-#: rc.cpp:111
-msgid "Use full email address for retrieval"
-msgstr "ប្រើ​អាសយដ្ឋាន​អ៊ីមែល​ពេញ​សម្រាប់​ទៅ​យក"
-
-#. i18n: file: kcalprefs.kcfg:151
-#. i18n: ectx: whatsthis, entry (FreeBusyFullDomainRetrieval), group (FreeBusy Retrieve)
-#: rc.cpp:114
-msgid ""
-"With this setting, you can change the filename that will be fetched from the "
-"server. With this checked, it will download a free/busy file called "
-"user@domain.ifb, for example nn@kde.org.ifb. Without this set, it will "
-"download user.ifb, for example nn.ifb."
-msgstr ""
-"ជា​មួយ​នឹង​ការ​កំណត់​នេះ អ្នក​អាច​ផ្លាស់ប្ដូរ​ឈ្មោះ​ឯកសារ​ដែល​នឹង​ត្រូវ​បាន​ទៅ​យក​ពី​ម៉ាស៊ីន​បម្រើ ។ ដោយ​គូស​ធីកវា វា​"
-"នឹង​ទាញយក​ឯកសារ​រវល់/ទំនេរ​ដែលហៅ​ថា user@domain.ifb ឧទាហរណ៍ nn@kde.org.ifb ។ ដោយ​មិន​កំណត់​"
-"វា វា​នឹង​ទាញយក​ user.ifb ឧទាហរណ៍ nn.ifb ។"
-
-#. i18n: file: kcalprefs.kcfg:156
-#. i18n: ectx: label, entry (FreeBusyRetrieveUrl), group (FreeBusy Retrieve)
-#: rc.cpp:117
-msgid "Free/Busy Retrieval URL"
-msgstr "URLl ទៅយក​រវល់/ទំនេរ"
-
-#. i18n: file: kcalprefs.kcfg:160
-#. i18n: ectx: label, entry (FreeBusyRetrieveUser), group (FreeBusy Retrieve)
-#: rc.cpp:120
-msgid "Free/Busy Retrieval Username"
-msgstr "ឈ្មោះ​អ្នក​ប្រើ​ទៅ​យក​រវល់/ទំនេរ"
-
-#. i18n: file: kcalprefs.kcfg:164
-#. i18n: ectx: label, entry (FreeBusyRetrievePassword), group (FreeBusy Retrieve)
-#: rc.cpp:123
-msgid "Free/Busy Retrieval Password"
-msgstr "ពាក្យ​សម្ងាត់​ទៅ​យក​រវល់/ទំនេរ"
-
-#. i18n: file: kcalprefs.kcfg:165
-#. i18n: ectx: whatsthis, entry (FreeBusyRetrievePassword), group (FreeBusy Retrieve)
-#: rc.cpp:126
-msgid "Password for retrieving free/busy information"
-msgstr "ពាក្យ​សម្ងាត់​សម្រាប់​ទៅ​យក​ព័ត៌មាន​រវល់​/ទំនេរ"
-
-#. i18n: file: kcalprefs.kcfg:176
-#. i18n: ectx: label, entry (OutlookCompatCounterProposals), group (Hidden Options)
-#: rc.cpp:129
-msgid "Send Outlook-like pseudo counter proposals"
-msgstr "ផ្ញើ​សំណើ​ចំនួន​រាប់​ដែល​មាន​រាង​ដូច Outlook pseudo"
-
-#. i18n: file: kcalprefs.kcfg:181
-#. i18n: ectx: label, entry (FreeBusyCheckHostname), group (Hidden Options)
-#: rc.cpp:132
-msgid "Check whether hostname and retrieval email address match"
-msgstr "ពិនិត្យ​មើល​ថាតើ​ឈ្មោះ​ម៉ាស៊ីន និង​អាសយដ្ឋាន​អ៊ីមែល​ទៅយក​ត្រូវ​គ្នា​ដែរឬទេ"
-
-#. i18n: file: kcalprefs.kcfg:182
-#. i18n: ectx: whatsthis, entry (FreeBusyCheckHostname), group (Hidden Options)
-#: rc.cpp:135
-msgid ""
-"With this setting you can configure whether the domain part of the free/busy "
-"URL has to match the domain part of the user ID you are looking for. For "
-"example, if this option is set, then looking for the free/busy data of "
-"joe@mydomain.com on the server www.yourdomain.com will fail."
-msgstr ""
-"ជា​មួយ​នឹង​ការ​កំណត់​នេះ អ្នក​អាច​កំណត់​រចនាសម្ព័ន្ធ​ថាតើ​ផ្នែក​របស់​ដែន​នៃ URL រវល់/ទំនេរ​ត្រូវ​តែ​ផ្គូផ្គង​នឹង​"
-"ផ្នែក​ដែន​របស់​​​លេខ​សម្គាល់​អ្នក​ប្រើ​​ ដែល​អ្នក​កំពុង​តែ​រក​មើល ។ ឧទាហរណ៍ ប្រសិនបើ​កំណត់​ជម្រើស​នេះ នោះ​ការ​"
-"រកមើល​សម្រាប់​ទិន្នន័យ​រវល់/ទំនេរ​របស់ joe@mydomain.com នៅ​លើ​ម៉ាស៊ីន​បម្រើ www.yourdomain.com "
-"នឹង​បរាជ័យ ។"
-
-#. i18n: file: kcalprefs.kcfg:187
-#. i18n: ectx: label, entry (ShowTimeZoneSelectorInIncidenceEditor), group (Hidden Options)
-#: rc.cpp:138
-msgid "Show timezone selectors in the event and todo editor dialog."
-msgstr "បង្ហាញ​កម្មវិធី​ជ្រើស​តំបន់​ពេលវេលា​នៅ​ក្នុង​ព្រឹត្តិការណ៍ និង​ប្រអប់​កែសម្រួល​ការងារ​ត្រូវ​ធ្វើ ។"
-
-#. i18n: file: kcalprefs.kcfg:196
-#. i18n: ectx: label, entry, group (Archive Dialog)
-#: rc.cpp:141
-msgid "Regularly archive events"
-msgstr "ព្រឹត្តិការណ៍​​ទុក​ក្នុង​ប័ណ្ណ​យ៉ាង​ទៀងទាត់​​"
-
-#. i18n: file: kcalprefs.kcfg:201
-#. i18n: ectx: label, entry, group (Archive Dialog)
-#: rc.cpp:144
-msgid ""
-"If auto-archiving is enabled, events older than this amount will be "
-"archived. The unit of this value is specified in another field."
-msgstr ""
-"ប្រសិន​បើ​ ទុក​ក្នុង​ប័ណ្ណសារ​​ស្វ័យ​ប្រវត្តិ​ត្រូវ​បាន​បើក​ ​ព្រឹត្តិការណ៍ដែល​​​ចាស់​ជាង​​ចំនួន​នេះ​នឹង​ត្រូវ​បាន​ទុក​ក្នុង​"
-"ប័ណ្ណសារ​ ។​ ​តម្លៃ​ឯកតា​នេះ​ត្រូវ​បាន​បញ្ជាក់​​ក្នុង​វាល​ផ្សេង​ទៀត​ ។"
-
-#. i18n: file: kcalprefs.kcfg:206
-#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: rc.cpp:147
-msgid "The unit in which the expiry time is expressed."
-msgstr "ឯកតា​ដែល​បង្ហាញ​ពេលវេលា​ផុត​កំណត់ ។"
-
-#. i18n: file: kcalprefs.kcfg:209
-#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: rc.cpp:150
-msgid "In days"
-msgstr "នៅ​ថ្ងៃ​"
-
-#. i18n: file: kcalprefs.kcfg:212
-#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: rc.cpp:153
-msgid "In weeks"
-msgstr "នៅ​​សប្ដាហ៍​"
-
-#. i18n: file: kcalprefs.kcfg:215
-#. i18n: ectx: label, entry (ExpiryUnit), group (Archive Dialog)
-#: rc.cpp:156
-msgid "In months"
-msgstr "នៅ​ខែ​"
-
-#. i18n: file: kcalprefs.kcfg:222
-#. i18n: ectx: label, entry, group (Archive Dialog)
-#: rc.cpp:159
-msgid "URL of the file where old events should be archived"
-msgstr "URL នៃ​ឯកសារ​ដែល​ព្រឹត្តិការណ៍​​ចាស់​ៗ​គួរ​តែ​ត្រូវ​បាន​ទុក​ក្នុង​​ប័ណ្ណសារ​"
-
-#. i18n: file: kcalprefs.kcfg:226
-#. i18n: ectx: label, entry, group (Archive Dialog)
-#: rc.cpp:162
-msgid "Archive events"
-msgstr "ព្រឹត្តិការណ៍​ទុក​ក្នុង​ប័ណ្ណសារ​"
-
-#. i18n: file: kcalprefs.kcfg:231
-#. i18n: ectx: label, entry, group (Archive Dialog)
-#: rc.cpp:165
-msgid "Archive to-dos"
-msgstr "កិច្ចការ​ត្រូវ​ធ្វើ​ទុក​ក្នុង​ប័ណ្ណ​សារ​"
-
-#. i18n: file: kcalprefs.kcfg:236
-#. i18n: ectx: label, entry, group (Archive Dialog)
-#: rc.cpp:168
-msgid "What to do when archiving"
-msgstr "កិច្ច​ការ​ត្រូវ​ធ្វើ​នៅ​ពេល​ទុក​ក្នុង​ប័ណ្ណសារ​"
-
-#. i18n: file: kcalprefs.kcfg:239
-#. i18n: ectx: label, entry, group (Archive Dialog)
-#: rc.cpp:171
-msgid "Delete old events"
-msgstr "លុប​ព្រឹត្តិការណ៍​ចាស់​​ៗ"
-
-#. i18n: file: kcalprefs.kcfg:242
-#. i18n: ectx: label, entry, group (Archive Dialog)
-#: rc.cpp:174
-msgid "Archive old events to a separate file"
-msgstr "ទុក​ព្រឹត្តិការណ៍​ចាស់​ៗ​ក្នុង​ប័ណ្ណសារ​ទៅ​កាន់​ឯកសារ​ញែក"
-
-#. i18n: file: kcalprefs.kcfg:256
-#. i18n: ectx: label, entry (UserName), group (Internal Settings)
-#: rc.cpp:177
-msgid "Full &name"
-msgstr "ឈ្មោះ​ពេញ"
-
-#. i18n: file: kcalprefs.kcfg:257
-#. i18n: ectx: whatsthis, entry (UserName), group (Internal Settings)
-#: rc.cpp:180
-msgid ""
-"Enter your full name here. This name will be displayed as \"Organizer\" in "
-"to-dos and events you create."
-msgstr ""
-"បញ្ចូល​ឈ្មោះ​ពេញ​របស់​អ្នក​នៅ​ទីនេះ ។ ឈ្មោះ​នេះ​នឹង​ត្រូវ​បានបង្ហាញ​ជា \"អ្នក​រៀបចំ\" នៅ​ក្នុង​ការងារ​ត្រូវ​"
-"ធ្វើ និង​ព្រឹត្តិការណ៍​ដែល​អ្នក​បង្កើត ។"
-
-#. i18n: file: kcalprefs.kcfg:262
-#. i18n: ectx: label, entry (UserEmail), group (Internal Settings)
-#: rc.cpp:183
-msgid "E&mail address"
-msgstr "អាយដ្ឋាន​អ៊ីមែល"
-
-#. i18n: file: kcalprefs.kcfg:263
-#. i18n: ectx: whatsthis, entry (UserEmail), group (Internal Settings)
-#: rc.cpp:186
-msgid ""
-"Enter here your e-mail address. This e-mail address will be used to identify "
-"the owner of the calendar, and displayed in events and to-dos you create."
-msgstr ""
-"បញ្ចូល​អាសយដ្ឋាន​អ៊ីមែល​របស់​អ្នក​នៅ​ទីនេះ ។ អាសយដ្ឋាន​អ៊ីមែល​នេះ​នឹង​ត្រូវ​បាន​ប្រើ ដើម្បី​កំណត់​អត្តសញ្ញាណ​​ម្ចាស់​​"
-"ប្រតិទិន ហើយ​ត្រូវ​បាន​បង្ហាញ​នៅ​ក្នុង​ព្រឹត្តិការណ៍ និង​កិច្ចការ​​ត្រូវ​ធ្វើ​ដែល​អ្នក​បង្កើត ។"
-
-#. i18n: file: kcalprefs.kcfg:282
-#. i18n: ectx: label, entry, group (Colors)
-#: rc.cpp:189
-msgid "\"No category\" color (for \"Only category\" drawing schemes)"
-msgstr "\"គ្មាន​ប្រភេទ\" ពណ៌ (សម្រាប់​គ្រោងការណ៍​គូរ​ \"តែ​ប្រភេទ\")"
-
-#. i18n: file: kcalprefs.kcfg:283
-#. i18n: ectx: whatsthis, entry, group (Colors)
-#: rc.cpp:192
-msgid ""
-"Select a color to use for the \"no category\" or \"unset category\" "
-"situation, when an item does not belong to any category. This color is used "
-"when drawing items in the agenda or month views using the \"Only category\" "
-"scheme."
-msgstr ""
-"ជ្រើស​ពណ៌​ត្រូវ​ប្រើ​ សម្រាប់​ស្ថានភាព​​​​ \"គ្មាន​ប្រភេទ​​\" ឬ​ \"​មិន​កំណត់​ប្រភេទ​​\" ​ នៅ​ពេល​ធាតុ​មិន​មែន​ជា​របស់​"
-"ប្រភេទ​មួយ​ចំនួន​ ។​ ​ពណ៌​នេះ​ត្រូវ​បាន​ប្រើ​​ នៅ​ពេល​គូរ​ធាតុ​ក្នុង​របៀបវារៈ​​ ឬ​មើល​ខែ​ដោយ​ប្រើ​គ្រោងការណ៍​ \"​​​តែ​"
-"ប្រភេទ​ប៉ុណ្ណោះ​​\" ។"
-
-#. i18n: file: kcalprefs.kcfg:284
-#. i18n: ectx: tooltip, entry, group (Colors)
-#: rc.cpp:195
-msgid "Use this color when drawing items without a category"
-msgstr "ប្រើ​ពណ៌​នេះ នៅពេល​គូរ​ធាតុ​ដោយ​មិនមាន​ប្រភេទ"
-
-#. i18n: file: kcalprefs.kcfg:258
-#: rc.cpp:197
-msgid "Anonymous"
-msgstr "អនាមិក"
-
-#. i18n: file: kcalprefs.kcfg:264
-#: rc.cpp:199
-msgid "nobody@nowhere"
-msgstr "nobody@nowhere"
 
 #: utils.cpp:379
 msgid "Select Calendar"
