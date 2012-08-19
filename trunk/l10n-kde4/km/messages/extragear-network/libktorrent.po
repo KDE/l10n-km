@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 04:06+0200\n"
+"POT-Creation-Date: 2012-08-19 04:05+0200\n"
 "PO-Revision-Date: 2012-07-04 08:47+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -69,6 +69,14 @@ msgstr "មិន​អាច​បង្កើត​​ %1 ទៅជា​ច�
 msgid "Torrent is incomplete."
 msgstr "Torrent មិន​ពេញ​លេញ​ ។"
 
+#: src/datachecker/multidatachecker.cpp:209
+#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
+#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
+#: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
+#, kde-format
+msgid "Cannot open file %1: %2"
+msgstr "មិន​អាច​បើក​ឯកសារ %1 ៖​ %2 បានទេ"
+
 #: src/datachecker/datacheckerjob.cpp:82
 msgid "Waiting for other data checks to finish"
 msgstr "រង់ចាំ​ការ​ពិនិត្យ​មើល​ទិន្នន័យ​ផ្សេង​ៗ​ទៀត​ត្រូវ​បញ្ចប់​"
@@ -81,19 +89,24 @@ msgstr "ពិនិត្យ​ទិន្នន័យ​"
 msgid "Checking Data"
 msgstr "ពិនិត្យ​ទិន្នន័យ​​"
 
-#: src/datachecker/multidatachecker.cpp:209
-#: src/datachecker/singledatachecker.cpp:49 src/diskio/multifilecache.cpp:706
-#: src/diskio/multifilecache.cpp:745 src/torrent/torrentcreator.cpp:124
-#: src/torrent/torrentcreator.cpp:255 src/torrent/torrentcreator.cpp:292
-#, kde-format
-msgid "Cannot open file %1: %2"
-msgstr "មិន​អាច​បើក​ឯកសារ %1 ៖​ %2 បានទេ"
+#: src/diskio/movedatafilesjob.cpp:140
+msgid "Waiting for other move jobs to finish"
+msgstr "រង់ចាំ​ការ​បញ្ចប់​នៃ​ការងារ​ផ្លាស់ទី​ផ្សេងទៀត"
 
-#: src/diskio/cache.cpp:170 src/diskio/multifilecache.cpp:118
-#: src/diskio/singlefilecache.cpp:85
-#, kde-format
-msgid "Failed to create %1: %2"
-msgstr "បរាជ័យ​ក្នុង​ការ​បង្កើត %1 ៖ %2​"
+#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
+msgctxt "The source of a file operation"
+msgid "Source"
+msgstr "ប្រភព​  "
+
+#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
+msgctxt "The destination of a file operation"
+msgid "Destination"
+msgstr "ទិសដៅ​"
+
+#: src/diskio/movedatafilesjob.cpp:180
+msgctxt "@title job"
+msgid "Moving"
+msgstr "ការ​ផ្លាស់ទី"
 
 #: src/diskio/cachefile.cpp:94 src/util/fileops.cpp:354
 #: src/util/fileops.cpp:399
@@ -148,11 +161,6 @@ msgstr "បាន​បរាជ័យ​ដើម្បី​សរសេរ​
 msgid "Cannot preallocate diskspace: %1"
 msgstr "មិន​អាច​ទុក​ទំហំ​ថាស​ដោយ​ឡែក​មុន​បាន​ឡើយ​ ៖​ %1"
 
-#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
-#, kde-format
-msgid "Cannot open index file %1: %2"
-msgstr "មិន​អាច​បើក​ឯកសារ​លិបិក្រម %1 ៖ %2"
-
 #: src/diskio/dndfile.cpp:89
 #, kde-format
 msgid "Cannot create file %1: %2"
@@ -168,33 +176,25 @@ msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​ក
 msgid "Failed to write last chunk to DND file: %1"
 msgstr "បរាជ័យ​ក្នុង​ការ​សរសេរ​កំណាត់​ចុងក្រោយ​ទៅ​ឯកសារ DND ៖ %1​"
 
-#: src/diskio/movedatafilesjob.cpp:140
-msgid "Waiting for other move jobs to finish"
-msgstr "រង់ចាំ​ការ​បញ្ចប់​នៃ​ការងារ​ផ្លាស់ទី​ផ្សេងទៀត"
-
-#: src/diskio/movedatafilesjob.cpp:141 src/diskio/movedatafilesjob.cpp:181
-msgctxt "The source of a file operation"
-msgid "Source"
-msgstr "ប្រភព​  "
-
-#: src/diskio/movedatafilesjob.cpp:142 src/diskio/movedatafilesjob.cpp:182
-msgctxt "The destination of a file operation"
-msgid "Destination"
-msgstr "ទិសដៅ​"
-
-#: src/diskio/movedatafilesjob.cpp:180
-msgctxt "@title job"
-msgid "Moving"
-msgstr "ការ​ផ្លាស់ទី"
+#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
+msgid "Unable to write to a piece mapped read only"
+msgstr "មិន​អាច​សរសេរ​ទៅ​កាន់​ផ្នែក​ដែល​ផ្គូផ្គង​បានតែ​អាន​ឡើយ​"
 
 #: src/diskio/multifilecache.cpp:91 src/diskio/singlefilecache.cpp:74
 #, kde-format
 msgid "Failed to open %1: %2"
 msgstr "បរាជ័យ​ក្នុង​ការ​បើក %1 ៖ %2"
 
-#: src/diskio/piecedata.cpp:69 src/diskio/piecedata.cpp:108
-msgid "Unable to write to a piece mapped read only"
-msgstr "មិន​អាច​សរសេរ​ទៅ​កាន់​ផ្នែក​ដែល​ផ្គូផ្គង​បានតែ​អាន​ឡើយ​"
+#: src/diskio/multifilecache.cpp:118 src/diskio/singlefilecache.cpp:85
+#: src/diskio/cache.cpp:170
+#, kde-format
+msgid "Failed to create %1: %2"
+msgstr "បរាជ័យ​ក្នុង​ការ​បង្កើត %1 ៖ %2​"
+
+#: src/diskio/chunkmanager.cpp:936 src/diskio/chunkmanager.cpp:962
+#, kde-format
+msgid "Cannot open index file %1: %2"
+msgstr "មិន​អាច​បើក​ឯកសារ​លិបិក្រម %1 ៖ %2"
 
 #: src/download/chunkdownload.cpp:383
 #, kde-format
@@ -298,6 +298,11 @@ msgstr "ថត ​%1 មិន​ទាន់​មាន​នូវ​ឡើ�
 msgid "Unknown client"
 msgstr "មិន​ស្គាល់​ម៉ាស៊ីន​ភ្ញៀវ"
 
+#: src/torrent/torrentcreator.cpp:361
+#, kde-format
+msgid "Cannot create index file: %1"
+msgstr "មិន​អាច​បង្កើត​ឯកសារ​លិបិក្រម ៖ %1"
+
 #: src/torrent/torrent.cpp:100 src/torrent/torrent.cpp:174
 #: src/torrent/torrent.cpp:202 src/torrent/torrent.cpp:209
 #: src/torrent/torrent.cpp:217 src/torrent/torrent.cpp:221
@@ -309,6 +314,59 @@ msgstr "torrent ខូច !"
 #, kde-format
 msgid "Unable to open torrent file %1: %2"
 msgstr " មិន​អាច​បើក​ឯកសារ​ torrent %1 ៖ %2 បានទេ"
+
+#: src/torrent/torrentstats.cpp:73
+msgid "Not started"
+msgstr "មិន​បាន​ចាប់ផ្ដើម"
+
+#: src/torrent/torrentstats.cpp:75
+msgid "Download completed"
+msgstr "បាន​បញ្ចប់​ការ​ទាញ​យក​ទាំងស្រុង"
+
+#: src/torrent/torrentstats.cpp:77
+msgid "Seeding completed"
+msgstr "បាន​បញ្ចប់​ការ​បណ្ដុះ"
+
+#: src/torrent/torrentstats.cpp:79
+msgctxt "Status of a torrent file"
+msgid "Seeding"
+msgstr "បណ្ដុះ​"
+
+#: src/torrent/torrentstats.cpp:81
+msgid "Downloading"
+msgstr "ការ​ទាញ​យក"
+
+#: src/torrent/torrentstats.cpp:83
+msgid "Stalled"
+msgstr "អាក់"
+
+#: src/torrent/torrentstats.cpp:85
+msgid "Stopped"
+msgstr "បាន​បញ្ឈប់"
+
+#: src/torrent/torrentstats.cpp:89
+msgid "Allocating diskspace"
+msgstr "បម្រុងទុក​ទំហំ​ថាស"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for seeding"
+msgstr "បាន​រៀប​ជាជួរ​ សម្រាប់​ការ​បណ្ដុះ​"
+
+#: src/torrent/torrentstats.cpp:91
+msgid "Queued for downloading"
+msgstr "បាន​រៀប​ជាជួរ​ សម្រាប់​ការ​ទាញ​យក​"
+
+#: src/torrent/torrentstats.cpp:95
+msgid "Stopped. No space left on device."
+msgstr "បាន​បញ្ឈប់ ដោយ​សារ​ឧបករណ៍​មិន​មាន​នៅ​សល់​ទំហំ ។"
+
+#: src/torrent/torrentstats.cpp:97
+msgid "Paused"
+msgstr "បាន​ផ្អាក"
+
+#: src/torrent/torrentstats.cpp:99
+msgid "Superseeding"
+msgstr "ការ​បណ្ដុះ​ពិសេស​"
 
 #: src/torrent/torrentcontrol.cpp:302
 msgid "Error writing to disk, do you have enough diskspace?"
@@ -347,67 +405,20 @@ msgstr ""
 msgid "You are already downloading the torrent <b>%1</b>."
 msgstr "អ្នក​កំពុងតែ​ទាញ​យក torrent <b>%1</b> ហើយ ។"
 
-#: src/torrent/torrentcreator.cpp:361
-#, kde-format
-msgid "Cannot create index file: %1"
-msgstr "មិន​អាច​បង្កើត​ឯកសារ​លិបិក្រម ៖ %1"
-
-#: src/torrent/torrentstats.cpp:73
-msgid "Not started"
-msgstr "មិន​បាន​ចាប់ផ្ដើម"
-
-#: src/torrent/torrentstats.cpp:75
-msgid "Download completed"
-msgstr "បាន​បញ្ចប់​ការ​ទាញ​យក​ទាំងស្រុង"
-
-#: src/torrent/torrentstats.cpp:77
-msgid "Seeding completed"
-msgstr "បាន​បញ្ចប់​ការ​បណ្ដុះ"
-
-#: src/torrent/torrentstats.cpp:79
-msgctxt "Status of a torrent file"
-msgid "Seeding"
-msgstr "បណ្ដុះ​"
-
-#: src/torrent/torrentstats.cpp:81
-msgid "Downloading"
-msgstr "ការ​ទាញ​យក"
-
-#: src/torrent/torrentstats.cpp:83
-msgid "Stalled"
-msgstr "អាក់"
-
-#: src/torrent/torrentstats.cpp:85
-msgid "Stopped"
-msgstr "បាន​បញ្ឈប់"
-
-#: src/torrent/torrentstats.cpp:89
-msgid "Allocating diskspace"
-msgstr "បម្រុងទុក​ទំហំ​ថាស"
-
-#: src/torrent/torrentstats.cpp:91
-msgid "Queued for downloading"
-msgstr "បាន​រៀប​ជាជួរ​ សម្រាប់​ការ​ទាញ​យក​"
-
-#: src/torrent/torrentstats.cpp:91
-msgid "Queued for seeding"
-msgstr "បាន​រៀប​ជាជួរ​ សម្រាប់​ការ​បណ្ដុះ​"
-
-#: src/torrent/torrentstats.cpp:95
-msgid "Stopped. No space left on device."
-msgstr "បាន​បញ្ឈប់ ដោយ​សារ​ឧបករណ៍​មិន​មាន​នៅ​សល់​ទំហំ ។"
-
-#: src/torrent/torrentstats.cpp:97
-msgid "Paused"
-msgstr "បាន​ផ្អាក"
-
-#: src/torrent/torrentstats.cpp:99
-msgid "Superseeding"
-msgstr "ការ​បណ្ដុះ​ពិសេស​"
-
 #: src/tracker/httpannouncejob.cpp:142
 msgid "Redirect without a redirect location"
 msgstr "ប្ដូរ​ទិស​ដោយ​គ្មាន​ទីតាំង​ប្ដូរ​ទិស"
+
+#: src/tracker/udptracker.cpp:364 src/tracker/udptracker.cpp:374
+#: src/tracker/httptracker.cpp:558
+#, kde-format
+msgid "Timeout contacting tracker %1"
+msgstr "អស់​ពេល​ក្នុង​ការ​ទាក់ទង​កម្មវិធី​តាមដាន %1"
+
+#: src/tracker/udptracker.cpp:401
+#, kde-format
+msgid "Unable to resolve hostname %1"
+msgstr "មិន​អាច​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1 បានទេ"
 
 #: src/tracker/httptracker.cpp:287 src/tracker/httptracker.cpp:307
 #: src/tracker/httptracker.cpp:463
@@ -421,17 +432,6 @@ msgstr "ទិន្នន័យ​មិន​ត្រឹម​ត្រូវ
 #: src/tracker/httptracker.cpp:480
 msgid "Invalid tracker URL"
 msgstr "URL កម្មវិធី​តាមដាន​បទ​មិន​ត្រឹមត្រូវ"
-
-#: src/tracker/httptracker.cpp:558 src/tracker/udptracker.cpp:364
-#: src/tracker/udptracker.cpp:374
-#, kde-format
-msgid "Timeout contacting tracker %1"
-msgstr "អស់​ពេល​ក្នុង​ការ​ទាក់ទង​កម្មវិធី​តាមដាន %1"
-
-#: src/tracker/udptracker.cpp:401
-#, kde-format
-msgid "Unable to resolve hostname %1"
-msgstr "មិន​អាច​ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន %1 បានទេ"
 
 #: src/upnp/httprequest.cpp:96
 msgid "Connection closed unexpectedly"
@@ -471,6 +471,25 @@ msgstr "មិន​អាច​សរសេរ​ទៅ​កាន់ %1 ៖ %
 #, kde-format
 msgid "Cannot read from %1"
 msgstr "មិន​អាច​អាន​ពី %1 បានទេ"
+
+#: src/util/functions.cpp:234
+#, kde-format
+msgid "%1/s"
+msgstr "%1/វិ."
+
+#: src/util/functions.cpp:245
+#, kde-format
+msgid "1 day "
+msgid_plural "%1 days "
+msgstr[0] "%1 ថ្ងៃ "
+
+#: src/util/signalcatcher.cpp:80
+msgid "Error when writing to disk"
+msgstr "កំហុស​នៅ​ពេល​សរសេរ​ទៅកាន់​ថាស​"
+
+#: src/util/signalcatcher.cpp:80
+msgid "Error when reading from disk"
+msgstr "កំហុស​នៅ​ពេល​អាន​ពី​ថាស"
 
 #: src/util/fileops.cpp:94
 #, kde-format
@@ -523,17 +542,6 @@ msgstr "មិន​អាច​ពង្រីក​​ឯកសារ​ ៖�
 msgid "Cannot seek in file: %1"
 msgstr "មិន​អាច​ស្វែងរក​ក្នុង​ឯកសារ​ ៖​ %1​"
 
-#: src/util/functions.cpp:234
-#, kde-format
-msgid "%1/s"
-msgstr "%1/វិ."
-
-#: src/util/functions.cpp:245
-#, kde-format
-msgid "1 day "
-msgid_plural "%1 days "
-msgstr[0] "%1 ថ្ងៃ "
-
 #: src/util/logsystemmanager.cpp:33
 msgid "General"
 msgstr "ទូទៅ"
@@ -557,14 +565,6 @@ msgstr "ការ​ចេញ/ចូល​របស់​ថាស"
 #: src/util/logsystemmanager.cpp:38
 msgid "µTP"
 msgstr "µTP"
-
-#: src/util/signalcatcher.cpp:80
-msgid "Error when reading from disk"
-msgstr "កំហុស​នៅ​ពេល​អាន​ពី​ថាស"
-
-#: src/util/signalcatcher.cpp:80
-msgid "Error when writing to disk"
-msgstr "កំហុស​នៅ​ពេល​សរសេរ​ទៅកាន់​ថាស​"
 
 #~ msgid "Parse Error"
 #~ msgstr "កំហុស​ញែក"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaudiocreator\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-18 03:45+0200\n"
+"POT-Creation-Date: 2012-08-19 03:34+0200\n"
 "PO-Revision-Date: 2012-07-05 09:03+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -63,11 +63,6 @@ msgstr "​ការងារ​បាន​ចាប់​ផ្ដើម​​
 msgid "Jobs have started"
 msgstr "ការ​ងារ​បាន​ចាប់​ផ្ដើម"
 
-#: encodefilemodel.cpp:29 tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183
-#: tracksimp.cpp:624
-msgid "Artist"
-msgstr "សិល្បករ"
-
 #: encodefilemodel.cpp:29
 msgid "File"
 msgstr "ឯកសារ"
@@ -76,6 +71,11 @@ msgstr "ឯកសារ"
 #: tracksimp.cpp:624
 msgid "Title"
 msgstr "ចំណង​ជើង"
+
+#: encodefilemodel.cpp:29 tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183
+#: tracksimp.cpp:624
+msgid "Artist"
+msgstr "សិល្បករ"
 
 #: encodefilemodel.cpp:30
 msgctxt "@title:column"
@@ -91,11 +91,6 @@ msgstr "មតិ​យោបល់"
 msgid "Genre"
 msgstr "ចង្វាក់"
 
-#: encodefilemodel.cpp:31
-msgctxt "@title:column"
-msgid "Encoder"
-msgstr "អ៊ិនកូឌ័រ​"
-
 #: encodefilemodel.cpp:31 tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183
 #: tracksimp.cpp:624
 msgid "Track"
@@ -105,10 +100,63 @@ msgstr "បទ"
 msgid "Year"
 msgstr "ឆ្នាំ"
 
-#: encoder.cpp:76 encoderconfigimp.cpp:150 encoderconfigimp.cpp:189
-#: encoderconfigimp.cpp:230
+#: encodefilemodel.cpp:31
+msgctxt "@title:column"
+msgid "Encoder"
+msgstr "អ៊ិនកូឌ័រ​"
+
+#: encoderconfigimp.cpp:101
+msgid "The default encoder has to accept wav as input."
+msgstr "អ៊ិនកូឌ័​រ​លំនាំដើម​ត្រូវ​តែ​ទទួល​យក​ wav ជា​ការ​បញ្ចូល ។"
+
+#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
+msgid "Not Allowed"
+msgstr "មិន​បាន​អនុញ្ញាត"
+
+#: encoderconfigimp.cpp:128
+msgid "Add Encoder"
+msgstr "បន្ថែម​អ៊ិនកូឌ័រ"
+
+#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
+msgid "Please select an encoder."
+msgstr "សូម​ជ្រើស​អ៊ិនកូឌ័រ ។"
+
+#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
+#: encoder.cpp:76
 msgid "No Encoder Selected"
 msgstr "មិន​បាន​ជ្រើស​អ៊ិនកូឌ័រ"
+
+#: encoderconfigimp.cpp:173
+msgid "Copy Encoder"
+msgstr "ចម្លង​អ៊ិនកូឌ័រ"
+
+#: encoderconfigimp.cpp:194
+msgid "WAV is not allowed to be removed."
+msgstr "មិន​អនុញ្ញាត​ឲ្យ​យក​ WAV ចេញ​ទេ ។"
+
+#: encoderconfigimp.cpp:198
+msgid "Delete encoder?"
+msgstr "លុប​អ៊ិនកូឌ័រ ?​"
+
+#: encoderconfigimp.cpp:198
+msgid "Delete Encoder"
+msgstr "លុប​អ៊ិនកូឌ័រ"
+
+#: encoderconfigimp.cpp:235
+msgid ""
+"WAV is not allowed to be changed.\n"
+"You can copy it to adjust it to your needs."
+msgstr ""
+"មិន​អនុញ្ញាត​ឲ្យ​ផ្លាស់​ប្ដូរ WAV  ។\n"
+"អ្នក​អាច​ចម្លង​វា ដើម្បី​លៃ​តម្រូវ​​ទៅ​​តាម​បំណង​របស់​អ្នក​បាន ។"
+
+#: encoderconfigimp.cpp:250
+msgid "Configure Encoder"
+msgstr "កំណត់​​រចនាសម្ព័ន្ធ​អ៊ិនកូឌ័រ"
+
+#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
+msgid "Encoder Configuration"
+msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​អ៊ិនកូឌ័រ"
 
 #: encoder.cpp:76
 msgid ""
@@ -144,14 +192,6 @@ msgstr ""
 "រក​មិន​ឃើញ​អ៊ិនកូឌ័រ​ដែល​បាន​ជ្រើស ។ \n"
 "ឯកសារ wav ត្រូវ​បាន​យក​ចេញ​ហើយ ។ ពាក្យ​បញ្ជា​គឺ ៖ %1"
 
-#: encoder.cpp:327 encoder.cpp:344
-msgid "Show Output"
-msgstr "បង្ហាញ​លទ្ធផល"
-
-#: encoder.cpp:327 encoder.cpp:344
-msgid "Skip Output"
-msgstr "រំលង​លទ្ធផល"
-
 #: encoder.cpp:327
 msgid ""
 "The encoder exited with a error.  Please check that the file was created.\n"
@@ -159,6 +199,14 @@ msgid ""
 msgstr ""
 "អ៊ិនកូឌ័រ​ត្រូវ​បាន​បិទ​ជាមួយ​កំហុស ។  សូម​ពិនិត្យ​មើល​ថា​ឯកសារ​ត្រូវ​បាន​បង្កើត ។\n"
 "តើ​អ្នក​ចង់​មើល​លទ្ធផល​អ៊ិនកូឌ័រ​ទាំងស្រុង ឬ​ទេ ?"
+
+#: encoder.cpp:327 encoder.cpp:344
+msgid "Show Output"
+msgstr "បង្ហាញ​លទ្ធផល"
+
+#: encoder.cpp:327 encoder.cpp:344
+msgid "Skip Output"
+msgstr "រំលង​លទ្ធផល"
 
 #: encoder.cpp:344
 msgid ""
@@ -172,54 +220,6 @@ msgstr ""
 "ឯកសារ wav ត្រូវ​បាន​យក​ចេញ​ហើយ ។\n"
 "តើ​អ្នក​ចង់​មើល​លទ្ធផល​អ៊ិនកូឌ័រ​ទាំងស្រុង​ឬ​ទេ ?"
 
-#: encoderconfigimp.cpp:101 encoderconfigimp.cpp:194 encoderconfigimp.cpp:235
-msgid "Not Allowed"
-msgstr "មិន​បាន​អនុញ្ញាត"
-
-#: encoderconfigimp.cpp:101
-msgid "The default encoder has to accept wav as input."
-msgstr "អ៊ិនកូឌ័​រ​លំនាំដើម​ត្រូវ​តែ​ទទួល​យក​ wav ជា​ការ​បញ្ចូល ។"
-
-#: encoderconfigimp.cpp:128
-msgid "Add Encoder"
-msgstr "បន្ថែម​អ៊ិនកូឌ័រ"
-
-#: encoderconfigimp.cpp:150 encoderconfigimp.cpp:189 encoderconfigimp.cpp:230
-msgid "Please select an encoder."
-msgstr "សូម​ជ្រើស​អ៊ិនកូឌ័រ ។"
-
-#: encoderconfigimp.cpp:173
-msgid "Copy Encoder"
-msgstr "ចម្លង​អ៊ិនកូឌ័រ"
-
-#: encoderconfigimp.cpp:194
-msgid "WAV is not allowed to be removed."
-msgstr "មិន​អនុញ្ញាត​ឲ្យ​យក​ WAV ចេញ​ទេ ។"
-
-#: encoderconfigimp.cpp:198
-msgid "Delete Encoder"
-msgstr "លុប​អ៊ិនកូឌ័រ"
-
-#: encoderconfigimp.cpp:198
-msgid "Delete encoder?"
-msgstr "លុប​អ៊ិនកូឌ័រ ?​"
-
-#: encoderconfigimp.cpp:235
-msgid ""
-"WAV is not allowed to be changed.\n"
-"You can copy it to adjust it to your needs."
-msgstr ""
-"មិន​អនុញ្ញាត​ឲ្យ​ផ្លាស់​ប្ដូរ WAV  ។\n"
-"អ្នក​អាច​ចម្លង​វា ដើម្បី​លៃ​តម្រូវ​​ទៅ​​តាម​បំណង​របស់​អ្នក​បាន ។"
-
-#: encoderconfigimp.cpp:250
-msgid "Configure Encoder"
-msgstr "កំណត់​​រចនាសម្ព័ន្ធ​អ៊ិនកូឌ័រ"
-
-#: encoderconfigimp.cpp:384 kaudiocreator.cpp:426
-msgid "Encoder Configuration"
-msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​អ៊ិនកូឌ័រ"
-
 #: general.cpp:61
 #, kde-format
 msgid ""
@@ -228,10 +228,6 @@ msgid ""
 msgstr ""
 "ខ្សែ​អក្សរ​ជំនួស​នៅ​តែ​មាន​តួ​អក្សរ​មិន​ឆបគ្នា (%1) ។\n"
 "ចម្លង​ទៅ FAT32 អាច​មិន​ដំណើរការ​តាម​ការ​រំពឹង​ទុក ។"
-
-#: job.h:35
-msgid "Other"
-msgstr "ផ្សេងៗ"
 
 #: jobdelegate.cpp:47
 msgid "Queued"
@@ -250,16 +246,16 @@ msgid "Done"
 msgstr "ធ្វើ​រួច​ហើយ"
 
 #: jobqueimp.cpp:51
-msgid "Description"
-msgstr "សេចក្ដី​ពិពណ៌នា"
-
-#: jobqueimp.cpp:51
 msgid "Job"
 msgstr "ការងារ​"
 
 #: jobqueimp.cpp:51
 msgid "Progress"
 msgstr "វឌ្ឍនភាព​"
+
+#: jobqueimp.cpp:51
+msgid "Description"
+msgstr "សេចក្ដី​ពិពណ៌នា"
 
 #: jobqueimp.cpp:84 jobqueimp.cpp:162 jobqueimp.cpp:223
 #, kde-format
@@ -272,12 +268,12 @@ msgid "KAudioCreator has not finished %1. Remove anyway?"
 msgstr "KAudioCreator មិន​ទាន់​បាន​បញ្ចប់ %1 ឡើយ ។ អញ្ចឹង​យក​ចេញ ?"
 
 #: jobqueimp.cpp:145 jobqueimp.cpp:197
-msgid "Keep"
-msgstr "រក្សា"
-
-#: jobqueimp.cpp:145 jobqueimp.cpp:197
 msgid "Unfinished Job in Queue"
 msgstr "ការងារ​មិន​ទាន់​ចប់​នៅ​ក្នុង​ជួរ"
+
+#: jobqueimp.cpp:145 jobqueimp.cpp:197
+msgid "Keep"
+msgstr "រក្សា"
 
 #. i18n: file: jobque.ui:17
 #. i18n: ectx: property (text), widget (QLabel, queLabel)
@@ -1486,25 +1482,25 @@ msgid "Track %1"
 msgstr "បទ​ %1"
 
 #: tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183 tracksimp.cpp:624
-msgid "Length"
-msgstr "រយៈ​ពេល"
-
-#: tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183 tracksimp.cpp:624
 msgctxt "@title:column"
 msgid "Rip"
 msgstr "បម្លែង"
+
+#: tracksimp.cpp:51 tracksimp.cpp:171 tracksimp.cpp:183 tracksimp.cpp:624
+msgid "Length"
+msgstr "រយៈ​ពេល"
 
 #: tracksimp.cpp:116 tracksimp.cpp:273 tracksimp.cpp:288
 msgid "none detected"
 msgstr "រក​មិន​ឃើញ​អ្វី​ទាំង​អស់"
 
 #: tracksimp.cpp:167 tracksimp.cpp:179
-msgid "Unknown Album"
-msgstr "មិន​ស្គាល់​អាល់ប៊ុម"
-
-#: tracksimp.cpp:167 tracksimp.cpp:179
 msgid "Unknown Artist"
 msgstr "មិន​ស្គាល់​សិល្បករ "
+
+#: tracksimp.cpp:167 tracksimp.cpp:179
+msgid "Unknown Album"
+msgstr "មិន​ស្គាល់​អាល់ប៊ុម"
 
 #: tracksimp.cpp:299
 msgid "Please insert a disk."
@@ -1551,10 +1547,6 @@ msgid "Protocol Not Found"
 msgstr "រក​មិន​ឃើញ​ពិធីការ"
 
 #: tracksimp.cpp:523
-msgid "Album Information Incomplete"
-msgstr "ព័ត៌មាន​អាល់ប៊ុម​មិន​ពេញលេញ"
-
-#: tracksimp.cpp:523
 #, kde-format
 msgid ""
 "Part of the album is not set: %1.\n"
@@ -1564,6 +1556,10 @@ msgstr ""
 "មិន​បាន​កំណត់​ផ្នែក​​របស់​អាល់ប៊ុម​ ៖ %1 ។\n"
 " (ដើម្បី​ផ្លាស់​ប្ដូរ​ព័ត៌មាន​របស់​អាល់ប៊ុម​ ចុច​ប៊ូតុង​ \"កែ​សម្រួល​ព័ត៌មាន​\" ។)\n"
 " តើ​អ្នក​ចង់​បម្លែង​បទ​ដែល​បាន​ជ្រើស​ឬ ?"
+
+#: tracksimp.cpp:523
+msgid "Album Information Incomplete"
+msgstr "ព័ត៌មាន​អាល់ប៊ុម​មិន​ពេញលេញ"
 
 #: tracksimp.cpp:523
 msgid "Rip"
@@ -1577,3 +1573,7 @@ msgstr " - "
 #, kde-format
 msgid "Example: %1"
 msgstr "ឧទាហរណ៍ ៖ %1"
+
+#: job.h:35
+msgid "Other"
+msgstr "ផ្សេងៗ"
