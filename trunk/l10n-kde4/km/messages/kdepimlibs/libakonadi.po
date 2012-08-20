@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-19 05:44+0200\n"
+"POT-Creation-Date: 2012-08-20 04:32+0200\n"
 "PO-Revision-Date: 2012-07-11 10:23+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -20,6 +20,14 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: km-KH\n"
+
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info"
 
 #: agentactionmanager.cpp:51
 msgid "&New Agent Instance..."
@@ -75,6 +83,26 @@ msgstr "ភ្នាក់ងារ​របស់ Akonadi"
 msgid "Agent identifier"
 msgstr "គ្រឿង​សម្គាល់​ភ្នាក់​ងារ"
 
+#: agentbase_p.h:59 resourcescheduler.cpp:235
+msgctxt "@info:status Application ready for work"
+msgid "Ready"
+msgstr "រួចរាល់​"
+
+#: agentbase_p.h:61
+msgctxt "@info:status"
+msgid "Offline"
+msgstr "ក្រៅបណ្ដាញ"
+
+#: agentbase_p.h:66
+msgctxt "@info:status"
+msgid "Syncing..."
+msgstr "ធ្វើសមកាលកម្ម..."
+
+#: agentbase_p.h:71
+msgctxt "@info:status"
+msgid "Error."
+msgstr "កំហុស ។"
+
 #: agentinstancecreatejob.cpp:89
 msgid "Unable to access D-Bus interface of created agent."
 msgstr "មិន​អាច​ចូល​ដំណើរ​ការ​ចំណុច​ប្រទាក់​ D-Bus នៃ​ភ្នាក់​ងារ​ដែល​បាន​បង្កើត​ទេ ។"
@@ -105,6 +133,65 @@ msgstr[0] "នាទី"
 #: cachepolicypage.cpp:75
 msgid "Retrieval"
 msgstr "ដែល​ទៅ​យក​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, inherit)
+#: cachepolicypage.ui:20
+msgid "Use options from parent folder or account"
+msgstr "ប្រើ​ជម្រើស​ពី​ថត​មេ​ ឬ​គណនី​​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, syncOnDemand)
+#: cachepolicypage.ui:33
+msgid "Synchronize when selecting this folder"
+msgstr "ធ្វើ​សម​កាល​កម្ម​ នៅ​ពេល​​ជ្រើស​ថត​នេះ​"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: cachepolicypage.ui:42
+msgid "Automatically synchronize after:"
+msgstr "ធ្វើ​សមកាលកម្ម​ដោយស្វ័យប្រវត្តិ​បន្ទាប់ពី ៖"
+
+#. i18n: ectx: property (suffix), widget (KIntNumInput, checkInterval)
+#. i18n: ectx: property (suffix), widget (KIntNumInput, localCacheTimeout)
+#: cachepolicypage.ui:55 cachepolicypage.ui:144
+msgid "minutes"
+msgstr "នាទី"
+
+#. i18n: ectx: property (specialValueText), widget (KIntNumInput, checkInterval)
+#: cachepolicypage.ui:58
+msgctxt "never check the cache"
+msgid "Never"
+msgstr "មិនដែល"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: ectx: property (title), widget (KEditListWidget, localParts)
+#: cachepolicypage.ui:77 cachepolicypage.ui:89
+msgid "Locally Cached Parts"
+msgstr "ផ្នែក​ឃ្លាំង​សម្ងាត់​មូលដ្ឋាន"
+
+#. i18n: ectx: property (title), widget (QGroupBox, retrievalOptionsGroupBox)
+#: cachepolicypage.ui:106
+msgid "Retrieval Options"
+msgstr "ជម្រើស​ដែល​​ទៅ​យក"
+
+#. i18n: ectx: property (text), widget (QRadioButton, retrieveFullMessages)
+#: cachepolicypage.ui:112
+msgid "Always retrieve full messages"
+msgstr "ទៅ​យក​សារ​ពេញ​ជានិច្ច​​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, retrieveOnlyHeaders)
+#: cachepolicypage.ui:122
+msgid "Retrieve message bodies on demand"
+msgstr "ទៅ​យក​តួ​សារ​តាម​តម្រូវ​ការ​"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: cachepolicypage.ui:131
+msgid "Keep message bodies locally for:"
+msgstr "រក្សា​ទុក​តួ​សារ​តាម​កន្លែង​សម្រាប់​ ៖​​"
+
+#. i18n: ectx: property (specialValueText), widget (KIntNumInput, localCacheTimeout)
+#: cachepolicypage.ui:147
+msgctxt "no cache timeout"
+msgid "Forever"
+msgstr "ជានិច្ច"
 
 #: collectionattributessynchronizationjob.cpp:90
 msgid "Invalid collection instance."
@@ -184,6 +271,54 @@ msgid "One object"
 msgid_plural "%1 objects"
 msgstr[0] "វត្ថុ %1"
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: collectiongeneralpropertiespage.ui:16
+#: collectiongeneralpropertiespage_mobile.ui:16
+msgid "&Name:"
+msgstr "ឈ្មោះ ៖"
+
+#. i18n: ectx: property (text), widget (QCheckBox, customIconCheckbox)
+#: collectiongeneralpropertiespage.ui:29
+#: collectiongeneralpropertiespage_mobile.ui:29
+msgid "&Use custom icon:"
+msgstr "ប្រើ​រូបតំណាង​ផ្ទាល់ខ្លួន ៖"
+
+#. i18n: ectx: property (icon), widget (KIconButton, customIcon)
+#: collectiongeneralpropertiespage.ui:39
+msgid "folder"
+msgstr "ថត"
+
+#. i18n: ectx: property (title), widget (QGroupBox, statsBox)
+#: collectiongeneralpropertiespage.ui:62
+#: collectiongeneralpropertiespage_mobile.ui:49
+msgid "Statistics"
+msgstr "ស្ថិតិ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: collectiongeneralpropertiespage.ui:68
+#: collectiongeneralpropertiespage_mobile.ui:55
+msgctxt "object names"
+msgid "Content:"
+msgstr "មាតិកា ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, countLabel)
+#: collectiongeneralpropertiespage.ui:75
+#: collectiongeneralpropertiespage_mobile.ui:62
+msgid "0 objects"
+msgstr "វត្ថុ ០"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: collectiongeneralpropertiespage.ui:82
+#: collectiongeneralpropertiespage_mobile.ui:69
+msgid "Size:"
+msgstr "ទំហំ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, sizeLabel)
+#: collectiongeneralpropertiespage.ui:89
+#: collectiongeneralpropertiespage_mobile.ui:76
+msgid "0 Byte"
+msgstr "០ បៃ"
+
 #: collectionpathresolver.cpp:91 collectionpathresolver.cpp:108
 msgid "No such collection."
 msgstr "គ្មាន​សម្រាំង​បែប​នេះ​ទេ ។​​"
@@ -244,6 +379,53 @@ msgstr "ចម្លង​ទីនេះ"
 #: collectionview.cpp:233
 msgid "Cancel"
 msgstr "បោះបង់"
+
+#: conflicthandling/conflicthandler.cpp:68
+msgid "Did not find other item for conflict handling"
+msgstr "កុំ​​រក​ធាតុ​ផ្សេង​ទៀត​ សម្រាប់​ដោះ​ស្រាយ​ការ​ប៉ះ​ទង្គិច​"
+
+#: conflicthandling/conflictresolvedialog.cpp:129
+msgid "Modification Time"
+msgstr "ពេលវេលា​កំណែប្រែ​"
+
+#: conflicthandling/conflictresolvedialog.cpp:145
+msgid "Flags"
+msgstr "ទង់​"
+
+#: conflicthandling/conflictresolvedialog.cpp:163
+#: conflicthandling/conflictresolvedialog.cpp:170
+#: conflicthandling/conflictresolvedialog.cpp:179
+#, kde-format
+msgid "Attribute: %1"
+msgstr "គុណ​លក្ខណៈ ៖​​ %1​"
+
+#: conflicthandling/conflictresolvedialog.cpp:190
+msgctxt "@title:window"
+msgid "Conflict Resolution"
+msgstr "ប៉ះ​ទង្គិច​គុណភាព​ដោះស្រាយ​"
+
+#: conflicthandling/conflictresolvedialog.cpp:194
+msgid "Take left one"
+msgstr "យក​ពី​ឆ្វេង​មួយ​"
+
+#: conflicthandling/conflictresolvedialog.cpp:195
+msgid "Take right one"
+msgstr "យក​ពី​ស្ដាំ​មួយ​"
+
+#: conflicthandling/conflictresolvedialog.cpp:196
+msgid "Keep both"
+msgstr "រក្សាទុក​ទាំងពីរ​"
+
+#: conflicthandling/conflictresolvedialog.cpp:205
+msgctxt "@label"
+msgid ""
+"Two updates conflict with each other.<nl/>Please choose which update(s) to "
+"apply."
+msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ទាំងពីរ​ប៉ះទង្គិច​គ្នា​ ។​<nl/>សូម​ជ្រើស​ធ្វើ​បច្ចុប្បន្នភាព​ណាមួយ​ ដើម្បី​អនុវត្ត ។"
+
+#: conflicthandling/conflictresolvedialog.cpp:235
+msgid "Data"
+msgstr "ទិន្នន័យ​"
 
 #: control.cpp:241
 msgid "Starting Akonadi server..."
@@ -330,6 +512,41 @@ msgid ""
 "take a few minutes."
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (QWidget, notRunningPage)
+#. i18n: ectx: property (text), widget (QLabel, notRunningDescription)
+#: erroroverlay.ui:21 erroroverlay.ui:50
+msgid ""
+"The Akonadi personal information management service is not running. This "
+"application cannot be used without it."
+msgstr ""
+"សេវា​​គ្រប់គ្រង​ព័ត៌មាន​ផ្ទាល់ខ្លួនរបស់ Akonadi មិនកំពុង​​ដំណើរការ​ឡើយ​ ។ កម្ម​វិធី​នេះ​អាច​មិនត្រូវបាន​ប្រើ​ដោយ​"
+"គ្មានវា​។"
+
+#. i18n: ectx: property (text), widget (KPushButton, startButton)
+#: erroroverlay.ui:80
+msgctxt "@action:button Start the Akonadi server"
+msgid "Start"
+msgstr "ចាប់​ផ្តើម​ "
+
+#. i18n: ectx: property (toolTip), widget (QWidget, brokenPage)
+#: erroroverlay.ui:122
+msgid ""
+"The Akonadi personal information management framework is not operational.\n"
+"Click on \"Details...\" to obtain detailed information on this problem."
+msgstr ""
+"គ្រោងការណ៍​គ្រប់គ្រង​ព័ត៌មាន​ផ្ទាល់ខ្លួន​របស់ Akonadi មិន​អាច​ប្រតិបត្តិ​បានទេ ។\n"
+"ចុច​លើ \"សេចក្ដី​លម្អិត...\" ដើម្បី​ទទួល​ព័ត៌មាន​លម្អិត​​​អំពី​បញ្ហា​នេះ ។"
+
+#. i18n: ectx: property (text), widget (QLabel, brokenDescription)
+#: erroroverlay.ui:151
+msgid "The Akonadi personal information management service is not operational."
+msgstr "សេវា​​គ្រប់គ្រង​ព័ត៌មាន​ផ្ទាល់ខ្លួន​របស់ Akonadi មិន​អាច​ប្រតិបត្តិ​បាន​ឡើយ​ ។"
+
+#. i18n: ectx: property (text), widget (KPushButton, selfTestButton)
+#: erroroverlay.ui:187
+msgid "Details..."
+msgstr "សេចក្ដី​លម្អិត​​..."
+
 #: favoritecollectionsmodel.cpp:256
 msgid "Favorite Folders"
 msgstr "ថត​សំណព្វ​"
@@ -373,6 +590,14 @@ msgstr "ប្រតិបត្តិការ​ត្រូវ​បាន​
 msgid "Unknown error."
 msgstr "កំហុស​ដែល​មិន​ស្គាល់ ។"
 
+#: linkjobimpl_p.h:49 movejobimpl_p.h:49
+msgid "No valid destination specified"
+msgstr "គ្មាន​ទិស​ដៅ​ត្រឹមត្រូវ​​​បាន​បញ្ជាក់"
+
+#: movejobimpl_p.h:43
+msgid "No objects specified for moving"
+msgstr "គ្មាន​វត្ថុ​ដែល​បាន​បញ្ជាក់​សម្រាប់​ការ​ផ្លាស់​ទី​​ឡើយ​"
+
 #: partfetcher.cpp:63
 msgid "Unable to fetch item for index"
 msgstr "មិន​អាច​ទៅ​ប្រមូល​យក​ធាតុ​សម្រាប់​លិបិក្រម​បាន​ឡើយ​​"
@@ -413,219 +638,9 @@ msgstr "កម្មវិធី​ជំនួយ​គ្មាន​ឈ្ម
 msgid "No description available"
 msgstr "មិន​មាន​សេចក្ដី​អធិប្បាយ"
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info"
-
-#. i18n: file: cachepolicypage.ui:20
-#. i18n: ectx: property (text), widget (QCheckBox, inherit)
-#: rc.cpp:5
-msgid "Use options from parent folder or account"
-msgstr "ប្រើ​ជម្រើស​ពី​ថត​មេ​ ឬ​គណនី​​"
-
-#. i18n: file: cachepolicypage.ui:33
-#. i18n: ectx: property (text), widget (QCheckBox, syncOnDemand)
-#: rc.cpp:8
-msgid "Synchronize when selecting this folder"
-msgstr "ធ្វើ​សម​កាល​កម្ម​ នៅ​ពេល​​ជ្រើស​ថត​នេះ​"
-
-#. i18n: file: cachepolicypage.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:11
-msgid "Automatically synchronize after:"
-msgstr "ធ្វើ​សមកាលកម្ម​ដោយស្វ័យប្រវត្តិ​បន្ទាប់ពី ៖"
-
-#. i18n: file: cachepolicypage.ui:55
-#. i18n: ectx: property (suffix), widget (KIntNumInput, checkInterval)
-#. i18n: file: cachepolicypage.ui:144
-#. i18n: ectx: property (suffix), widget (KIntNumInput, localCacheTimeout)
-#: rc.cpp:14 rc.cpp:38
-msgid "minutes"
-msgstr "នាទី"
-
-#. i18n: file: cachepolicypage.ui:58
-#. i18n: ectx: property (specialValueText), widget (KIntNumInput, checkInterval)
-#: rc.cpp:17
-msgctxt "never check the cache"
-msgid "Never"
-msgstr "មិនដែល"
-
-#. i18n: file: cachepolicypage.ui:77
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#. i18n: file: cachepolicypage.ui:89
-#. i18n: ectx: property (title), widget (KEditListWidget, localParts)
-#: rc.cpp:20 rc.cpp:23
-msgid "Locally Cached Parts"
-msgstr "ផ្នែក​ឃ្លាំង​សម្ងាត់​មូលដ្ឋាន"
-
-#. i18n: file: cachepolicypage.ui:106
-#. i18n: ectx: property (title), widget (QGroupBox, retrievalOptionsGroupBox)
-#: rc.cpp:26
-msgid "Retrieval Options"
-msgstr "ជម្រើស​ដែល​​ទៅ​យក"
-
-#. i18n: file: cachepolicypage.ui:112
-#. i18n: ectx: property (text), widget (QRadioButton, retrieveFullMessages)
-#: rc.cpp:29
-msgid "Always retrieve full messages"
-msgstr "ទៅ​យក​សារ​ពេញ​ជានិច្ច​​"
-
-#. i18n: file: cachepolicypage.ui:122
-#. i18n: ectx: property (text), widget (QRadioButton, retrieveOnlyHeaders)
-#: rc.cpp:32
-msgid "Retrieve message bodies on demand"
-msgstr "ទៅ​យក​តួ​សារ​តាម​តម្រូវ​ការ​"
-
-#. i18n: file: cachepolicypage.ui:131
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:35
-msgid "Keep message bodies locally for:"
-msgstr "រក្សា​ទុក​តួ​សារ​តាម​កន្លែង​សម្រាប់​ ៖​​"
-
-#. i18n: file: cachepolicypage.ui:147
-#. i18n: ectx: property (specialValueText), widget (KIntNumInput, localCacheTimeout)
-#: rc.cpp:41
-msgctxt "no cache timeout"
-msgid "Forever"
-msgstr "ជានិច្ច"
-
-#. i18n: file: collectiongeneralpropertiespage_mobile.ui:16
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: file: collectiongeneralpropertiespage.ui:16
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:44 rc.cpp:65
-msgid "&Name:"
-msgstr "ឈ្មោះ ៖"
-
-#. i18n: file: collectiongeneralpropertiespage_mobile.ui:29
-#. i18n: ectx: property (text), widget (QCheckBox, customIconCheckbox)
-#. i18n: file: collectiongeneralpropertiespage.ui:29
-#. i18n: ectx: property (text), widget (QCheckBox, customIconCheckbox)
-#: rc.cpp:47 rc.cpp:68
-msgid "&Use custom icon:"
-msgstr "ប្រើ​រូបតំណាង​ផ្ទាល់ខ្លួន ៖"
-
-#. i18n: file: collectiongeneralpropertiespage_mobile.ui:49
-#. i18n: ectx: property (title), widget (QGroupBox, statsBox)
-#. i18n: file: collectiongeneralpropertiespage.ui:62
-#. i18n: ectx: property (title), widget (QGroupBox, statsBox)
-#: rc.cpp:50 rc.cpp:74
-msgid "Statistics"
-msgstr "ស្ថិតិ"
-
-#. i18n: file: collectiongeneralpropertiespage_mobile.ui:55
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: file: collectiongeneralpropertiespage.ui:68
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:53 rc.cpp:77
-msgctxt "object names"
-msgid "Content:"
-msgstr "មាតិកា ៖"
-
-#. i18n: file: collectiongeneralpropertiespage_mobile.ui:62
-#. i18n: ectx: property (text), widget (QLabel, countLabel)
-#. i18n: file: collectiongeneralpropertiespage.ui:75
-#. i18n: ectx: property (text), widget (QLabel, countLabel)
-#: rc.cpp:56 rc.cpp:80
-msgid "0 objects"
-msgstr "វត្ថុ ០"
-
-#. i18n: file: collectiongeneralpropertiespage_mobile.ui:69
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: collectiongeneralpropertiespage.ui:82
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:59 rc.cpp:83
-msgid "Size:"
-msgstr "ទំហំ ៖"
-
-#. i18n: file: collectiongeneralpropertiespage_mobile.ui:76
-#. i18n: ectx: property (text), widget (QLabel, sizeLabel)
-#. i18n: file: collectiongeneralpropertiespage.ui:89
-#. i18n: ectx: property (text), widget (QLabel, sizeLabel)
-#: rc.cpp:62 rc.cpp:86
-msgid "0 Byte"
-msgstr "០ បៃ"
-
-#. i18n: file: collectiongeneralpropertiespage.ui:39
-#. i18n: ectx: property (icon), widget (KIconButton, customIcon)
-#: rc.cpp:71
-msgid "folder"
-msgstr "ថត"
-
-#. i18n: file: erroroverlay.ui:21
-#. i18n: ectx: property (toolTip), widget (QWidget, notRunningPage)
-#. i18n: file: erroroverlay.ui:50
-#. i18n: ectx: property (text), widget (QLabel, notRunningDescription)
-#: rc.cpp:89 rc.cpp:92
-msgid ""
-"The Akonadi personal information management service is not running. This "
-"application cannot be used without it."
-msgstr ""
-"សេវា​​គ្រប់គ្រង​ព័ត៌មាន​ផ្ទាល់ខ្លួនរបស់ Akonadi មិនកំពុង​​ដំណើរការ​ឡើយ​ ។ កម្ម​វិធី​នេះ​អាច​មិនត្រូវបាន​ប្រើ​ដោយ​"
-"គ្មានវា​។"
-
-#. i18n: file: erroroverlay.ui:80
-#. i18n: ectx: property (text), widget (KPushButton, startButton)
-#: rc.cpp:95
-msgctxt "@action:button Start the Akonadi server"
-msgid "Start"
-msgstr "ចាប់​ផ្តើម​ "
-
-#. i18n: file: erroroverlay.ui:122
-#. i18n: ectx: property (toolTip), widget (QWidget, brokenPage)
-#: rc.cpp:98
-msgid ""
-"The Akonadi personal information management framework is not operational.\n"
-"Click on \"Details...\" to obtain detailed information on this problem."
-msgstr ""
-"គ្រោងការណ៍​គ្រប់គ្រង​ព័ត៌មាន​ផ្ទាល់ខ្លួន​របស់ Akonadi មិន​អាច​ប្រតិបត្តិ​បានទេ ។\n"
-"ចុច​លើ \"សេចក្ដី​លម្អិត...\" ដើម្បី​ទទួល​ព័ត៌មាន​លម្អិត​​​អំពី​បញ្ហា​នេះ ។"
-
-#. i18n: file: erroroverlay.ui:151
-#. i18n: ectx: property (text), widget (QLabel, brokenDescription)
-#: rc.cpp:102
-msgid "The Akonadi personal information management service is not operational."
-msgstr "សេវា​​គ្រប់គ្រង​ព័ត៌មាន​ផ្ទាល់ខ្លួន​របស់ Akonadi មិន​អាច​ប្រតិបត្តិ​បាន​ឡើយ​ ។"
-
-#. i18n: file: erroroverlay.ui:187
-#. i18n: ectx: property (text), widget (KPushButton, selfTestButton)
-#: rc.cpp:105
-msgid "Details..."
-msgstr "សេចក្ដី​លម្អិត​​..."
-
-#. i18n: file: selftestdialog.ui:16
-#. i18n: ectx: property (text), widget (QLabel, introductionLabel)
-#: rc.cpp:108
-msgid ""
-"An error occurred during the startup of the Akonadi server. The following "
-"self-tests are supposed to help with tracking down and solving this problem. "
-"When requesting support or reporting bugs, please always include this report."
-msgstr ""
-"កំហុស​មួយ​បាន​កើត​ឡើង​អំឡុង​ពេល​ចាប់ផ្ដើម​ម៉ាស៊ីនបម្រើ Akonadi ។ ការ​សាកល្បង​ដោយ​ខ្លួន​ឯង​ដូច​ខាងក្រោម​ត្រូវ​"
-"បានគិតថា​​​ ដើម្បីជួយតាមដាន​ និង​ដោះស្រាយ​បញ្ហា​នេះ ​​។ នៅពេល​ស្នើ​សុំ​កា​រគាំទ្រ ឬ​រាយការណ៍​កំហុស តែងតែ​រួម​"
-"បញ្ចូល​របាយការណ៍​នេះ​ជា​និច្ច ។."
-
-#. i18n: file: selftestdialog.ui:39
-#. i18n: ectx: property (title), widget (QGroupBox, detailsGroup)
-#: rc.cpp:111
-msgid "Details"
-msgstr "សេចក្ដី​លម្អិត"
-
-#. i18n: file: selftestdialog.ui:61
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:114
-msgid ""
-"<p>For more troubleshooting tips please refer to <a href=\"http://userbase."
-"kde.org/Akonadi\">userbase.kde.org/Akonadi</a>.</p>"
-msgstr ""
-"<p>សម្រាប់​​ព័ត៌មាន​ជំនួយ​​ដោះស្រាយ​បន្ថែម​សូម​មើល  <a href=\"http://userbase.kde.org/Akonadi"
-"\">userbase.kde.org/Akonadi</a> ។</p>"
+#: qtest_akonadi.h:44
+msgid "KDE Test Program"
+msgstr "កម្មវិធី​សាកល្បង​របស់ KDE​"
 
 #: recentcollectionaction.cpp:43
 msgid "Recent Folder"
@@ -670,11 +685,6 @@ msgstr "ធ្វើ​សមកាលកម្ម​ថត '%1'"
 #: resourcebase.cpp:771
 msgid "The requested item no longer exists"
 msgstr "គ្មាន​ធាតុ​ដែល​បាន​ទាមទារ​ទៀត​ឡើយ​​"
-
-#: resourcescheduler.cpp:235 agentbase_p.h:59
-msgctxt "@info:status Application ready for work"
-msgid "Ready"
-msgstr "រួចរាល់​"
 
 #: resourcesynchronizationjob.cpp:145
 msgid "Resource synchronization timed out."
@@ -1253,6 +1263,31 @@ msgstr "រក្សា​ទុក​របាយការណ៍​សាកល
 msgid "Could not open file '%1'"
 msgstr "មិនអាច​បើក​ឯកសារ '%1'"
 
+#. i18n: ectx: property (text), widget (QLabel, introductionLabel)
+#: selftestdialog.ui:16
+msgid ""
+"An error occurred during the startup of the Akonadi server. The following "
+"self-tests are supposed to help with tracking down and solving this problem. "
+"When requesting support or reporting bugs, please always include this report."
+msgstr ""
+"កំហុស​មួយ​បាន​កើត​ឡើង​អំឡុង​ពេល​ចាប់ផ្ដើម​ម៉ាស៊ីនបម្រើ Akonadi ។ ការ​សាកល្បង​ដោយ​ខ្លួន​ឯង​ដូច​ខាងក្រោម​ត្រូវ​"
+"បានគិតថា​​​ ដើម្បីជួយតាមដាន​ និង​ដោះស្រាយ​បញ្ហា​នេះ ​​។ នៅពេល​ស្នើ​សុំ​កា​រគាំទ្រ ឬ​រាយការណ៍​កំហុស តែងតែ​រួម​"
+"បញ្ចូល​របាយការណ៍​នេះ​ជា​និច្ច ។."
+
+#. i18n: ectx: property (title), widget (QGroupBox, detailsGroup)
+#: selftestdialog.ui:39
+msgid "Details"
+msgstr "សេចក្ដី​លម្អិត"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: selftestdialog.ui:61
+msgid ""
+"<p>For more troubleshooting tips please refer to <a href=\"http://userbase."
+"kde.org/Akonadi\">userbase.kde.org/Akonadi</a>.</p>"
+msgstr ""
+"<p>សម្រាប់​​ព័ត៌មាន​ជំនួយ​​ដោះស្រាយ​បន្ថែម​សូម​មើល  <a href=\"http://userbase.kde.org/Akonadi"
+"\">userbase.kde.org/Akonadi</a> ។</p>"
+
 #: session.cpp:269
 #, kde-format
 msgid "Protocol version %1 found, expected at least %2"
@@ -1760,80 +1795,6 @@ msgstr "គ្មាន​សម្រាំង​ត្រឹមត្រូវ
 #: trashrestorejob.cpp:102
 msgid "Could not find restore collection and restore resource is not available"
 msgstr "រក​មិន​ឃើញ​សម្រាំង​ដែល​បាន​ស្ដារ ឬ​មិន​មាន​ធនធាន​ដែល​បាន​ស្ដារ"
-
-#: agentbase_p.h:61
-msgctxt "@info:status"
-msgid "Offline"
-msgstr "ក្រៅបណ្ដាញ"
-
-#: agentbase_p.h:66
-msgctxt "@info:status"
-msgid "Syncing..."
-msgstr "ធ្វើសមកាលកម្ម..."
-
-#: agentbase_p.h:71
-msgctxt "@info:status"
-msgid "Error."
-msgstr "កំហុស ។"
-
-#: linkjobimpl_p.h:49 movejobimpl_p.h:49
-msgid "No valid destination specified"
-msgstr "គ្មាន​ទិស​ដៅ​ត្រឹមត្រូវ​​​បាន​បញ្ជាក់"
-
-#: movejobimpl_p.h:43
-msgid "No objects specified for moving"
-msgstr "គ្មាន​វត្ថុ​ដែល​បាន​បញ្ជាក់​សម្រាប់​ការ​ផ្លាស់​ទី​​ឡើយ​"
-
-#: qtest_akonadi.h:44
-msgid "KDE Test Program"
-msgstr "កម្មវិធី​សាកល្បង​របស់ KDE​"
-
-#: conflicthandling/conflicthandler.cpp:68
-msgid "Did not find other item for conflict handling"
-msgstr "កុំ​​រក​ធាតុ​ផ្សេង​ទៀត​ សម្រាប់​ដោះ​ស្រាយ​ការ​ប៉ះ​ទង្គិច​"
-
-#: conflicthandling/conflictresolvedialog.cpp:129
-msgid "Modification Time"
-msgstr "ពេលវេលា​កំណែប្រែ​"
-
-#: conflicthandling/conflictresolvedialog.cpp:145
-msgid "Flags"
-msgstr "ទង់​"
-
-#: conflicthandling/conflictresolvedialog.cpp:163
-#: conflicthandling/conflictresolvedialog.cpp:170
-#: conflicthandling/conflictresolvedialog.cpp:179
-#, kde-format
-msgid "Attribute: %1"
-msgstr "គុណ​លក្ខណៈ ៖​​ %1​"
-
-#: conflicthandling/conflictresolvedialog.cpp:190
-msgctxt "@title:window"
-msgid "Conflict Resolution"
-msgstr "ប៉ះ​ទង្គិច​គុណភាព​ដោះស្រាយ​"
-
-#: conflicthandling/conflictresolvedialog.cpp:194
-msgid "Take left one"
-msgstr "យក​ពី​ឆ្វេង​មួយ​"
-
-#: conflicthandling/conflictresolvedialog.cpp:195
-msgid "Take right one"
-msgstr "យក​ពី​ស្ដាំ​មួយ​"
-
-#: conflicthandling/conflictresolvedialog.cpp:196
-msgid "Keep both"
-msgstr "រក្សាទុក​ទាំងពីរ​"
-
-#: conflicthandling/conflictresolvedialog.cpp:205
-msgctxt "@label"
-msgid ""
-"Two updates conflict with each other.<nl/>Please choose which update(s) to "
-"apply."
-msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ទាំងពីរ​ប៉ះទង្គិច​គ្នា​ ។​<nl/>សូម​ជ្រើស​ធ្វើ​បច្ចុប្បន្នភាព​ណាមួយ​ ដើម្បី​អនុវត្ត ។"
-
-#: conflicthandling/conflictresolvedialog.cpp:235
-msgid "Data"
-msgstr "ទិន្នន័យ​"
 
 #~ msgid "Fetch Job Error"
 #~ msgstr "កំហុស​ក្នុង​ការ​ទៅ​ប្រមូល​យក​ការងារ"

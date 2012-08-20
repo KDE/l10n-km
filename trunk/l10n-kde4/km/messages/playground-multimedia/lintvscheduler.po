@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: lintvscheduler\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-19 06:00+0200\n"
+"POT-Creation-Date: 2012-08-20 07:00+0200\n"
 "PO-Revision-Date: 2009-12-28 11:13+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -18,25 +18,92 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: km_KH\n"
 
-#: src/ui/lintvprogramwidget.cpp:36
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info"
+
+#: src/lintvscheduler.cpp:80
 msgid ""
-"Could not find the stylesheet.\n"
-"Please make sure you have installed LinTV correctly."
+"Click \"Add Program\" to\n"
+"create a new record schedule."
 msgstr ""
-"រក​មិន​ឃើញ​សន្លឹក​រចនាប័ទ្ម​ ។\n"
-"សូម​ប្រាកដ​ថា​ អ្នក​បាន​ដំឡើង​ LinTV បាន​យ៉ាង​ត្រឹម​ត្រួវ ។"
+"ចុច​ \"បន្ថែម​កម្មវិធី​\" ដើម្បី​\n"
+"បង្កើត​កាលវិភាគ​ថត​ថ្មី ​។"
 
-#: src/ui/lintvprogramwidget.cpp:38
-msgid "Error finding file."
-msgstr "កំហុស​ក្នុង​ការ​ស្វែង​រក​ឯកសារ ។"
-
-#: src/ui/lintvprogrameditor.cpp:36 src/lintvscheduler.cpp:122
+#: src/lintvscheduler.cpp:122 src/ui/lintvprogrameditor.cpp:36
 msgid "Add Program"
 msgstr "បន្ថែម​កម្មវិធី"
 
-#: src/ui/lintvprogrameditor.cpp:73 src/lintvscheduler.cpp:130
+#: src/lintvscheduler.cpp:130 src/ui/lintvprogrameditor.cpp:73
 msgid "Edit Program"
 msgstr "កែ​សម្រួល​កម្មវិធី"
+
+#: src/lintvscheduler.cpp:137
+msgid "Remove Program"
+msgstr "យក​កម្មវិធី​ចេញ"
+
+#: src/lintvscheduler.cpp:144
+msgid "Refresh Programs"
+msgstr "ធ្វើ​ឲ្យ​កម្មវិធីស្រស់"
+
+#: src/lintvscheduler.cpp:163
+msgid "Queued"
+msgstr "រៀប​ជា​ជួរ"
+
+#: src/lintvscheduler.cpp:165
+msgid "Recording..."
+msgstr "កំពុង​ថត..."
+
+#: src/lintvscheduler.cpp:171 src/lintvscheduler.cpp:190
+#, kde-format
+msgid "%1 (Channel %2)"
+msgstr "%1 (ឆានែល​ %2)"
+
+#: src/lintvscheduler.cpp:173 src/lintvscheduler.cpp:192
+#, kde-format
+msgid "%1 (Input %2)"
+msgstr "%1 (ការ​បញ្ចូល​ %2)"
+
+#: src/lintvscheduler.cpp:286
+#, kde-format
+msgid "Are you sure you want to remove \"%1\"?"
+msgstr "តើ​អ្នក​ពិត​ជា​ចង់​យក​ \"%1\" ចេញឬ ?"
+
+#: src/lintvscheduler.cpp:287
+msgid "Confirmation"
+msgstr "ការ​បញ្ជាក់"
+
+#: src/lintvscheduler.cpp:374
+msgid "No devices were detected."
+msgstr "រក​មិន​ឃើញឧបករណ៍ ។"
+
+#: src/lintvscheduler.cpp:375
+msgid "No devices."
+msgstr "គ្មាន​ឧបករណ៍ ។"
+
+#: src/lintvschedulermain.cpp:36
+msgid "A KDE 4 application for sheduling TV recordings for LinTV."
+msgstr "កម្មវិធី  KDE 4 សម្រាប់​កំណត់​កាល​បរិច្ឆេទ​ថត​ទូរទស្សន៍​សម្រាប់​ LinTV ។"
+
+#: src/lintvschedulermain.cpp:42
+msgid "LinTV Scheduler"
+msgstr "កម្មវិធី​កំណត់​កាល​បរិច្ឆេទ LinTV"
+
+#: src/lintvschedulermain.cpp:44
+msgid "(C) 2009 Zamora Studios"
+msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២​០​០​៩ ដោយ​ Zamora Studios"
+
+#: src/lintvschedulermain.cpp:46
+msgid "Jesse L. Zamora"
+msgstr "Jesse L. Zamora"
+
+#: src/lintvschedulermain.cpp:50
+msgid "The display on which to run LinTV Scheduler (e.g. --display :0)"
+msgstr "ការ​បង្ហាញ​ ដែល​ត្រូវ​ដំណើរ​ការ​កម្មវិធី​កំណត់​កាល​បរិច្ឆេទ​ LinTV (ឧ. --បង្ហាញ​ ៖០)"
 
 #: src/ui/lintvprogrameditor.cpp:202
 #, kde-format
@@ -87,148 +154,69 @@ msgstr "<b>កាល​បរិច្ឆេទ​ដំណើរការ​ប
 msgid "<b>Run Time: %1</b>"
 msgstr "<b>ពេល​វេលា​ដំណើរ​ការ​ ៖ %1</b>"
 
-#: src/lintvschedulermain.cpp:36
-msgid "A KDE 4 application for sheduling TV recordings for LinTV."
-msgstr "កម្មវិធី  KDE 4 សម្រាប់​កំណត់​កាល​បរិច្ឆេទ​ថត​ទូរទស្សន៍​សម្រាប់​ LinTV ។"
-
-#: src/lintvschedulermain.cpp:42
-msgid "LinTV Scheduler"
-msgstr "កម្មវិធី​កំណត់​កាល​បរិច្ឆេទ LinTV"
-
-#: src/lintvschedulermain.cpp:44
-msgid "(C) 2009 Zamora Studios"
-msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២​០​០​៩ ដោយ​ Zamora Studios"
-
-#: src/lintvschedulermain.cpp:46
-msgid "Jesse L. Zamora"
-msgstr "Jesse L. Zamora"
-
-#: src/lintvschedulermain.cpp:50
-msgid "The display on which to run LinTV Scheduler (e.g. --display :0)"
-msgstr "ការ​បង្ហាញ​ ដែល​ត្រូវ​ដំណើរ​ការ​កម្មវិធី​កំណត់​កាល​បរិច្ឆេទ​ LinTV (ឧ. --បង្ហាញ​ ៖០)"
-
-#: src/lintvscheduler.cpp:80
+#: src/ui/lintvprogramwidget.cpp:36
 msgid ""
-"Click \"Add Program\" to\n"
-"create a new record schedule."
+"Could not find the stylesheet.\n"
+"Please make sure you have installed LinTV correctly."
 msgstr ""
-"ចុច​ \"បន្ថែម​កម្មវិធី​\" ដើម្បី​\n"
-"បង្កើត​កាលវិភាគ​ថត​ថ្មី ​។"
+"រក​មិន​ឃើញ​សន្លឹក​រចនាប័ទ្ម​ ។\n"
+"សូម​ប្រាកដ​ថា​ អ្នក​បាន​ដំឡើង​ LinTV បាន​យ៉ាង​ត្រឹម​ត្រួវ ។"
 
-#: src/lintvscheduler.cpp:137
-msgid "Remove Program"
-msgstr "យក​កម្មវិធី​ចេញ"
+#: src/ui/lintvprogramwidget.cpp:38
+msgid "Error finding file."
+msgstr "កំហុស​ក្នុង​ការ​ស្វែង​រក​ឯកសារ ។"
 
-#: src/lintvscheduler.cpp:144
-msgid "Refresh Programs"
-msgstr "ធ្វើ​ឲ្យ​កម្មវិធីស្រស់"
-
-#: src/lintvscheduler.cpp:163
-msgid "Queued"
-msgstr "រៀប​ជា​ជួរ"
-
-#: src/lintvscheduler.cpp:165
-msgid "Recording..."
-msgstr "កំពុង​ថត..."
-
-#: src/lintvscheduler.cpp:171 src/lintvscheduler.cpp:190
-#, kde-format
-msgid "%1 (Channel %2)"
-msgstr "%1 (ឆានែល​ %2)"
-
-#: src/lintvscheduler.cpp:173 src/lintvscheduler.cpp:192
-#, kde-format
-msgid "%1 (Input %2)"
-msgstr "%1 (ការ​បញ្ចូល​ %2)"
-
-#: src/lintvscheduler.cpp:286
-#, kde-format
-msgid "Are you sure you want to remove \"%1\"?"
-msgstr "តើ​អ្នក​ពិត​ជា​ចង់​យក​ \"%1\" ចេញឬ ?"
-
-#: src/lintvscheduler.cpp:287
-msgid "Confirmation"
-msgstr "ការ​បញ្ជាក់"
-
-#: src/lintvscheduler.cpp:374
-msgid "No devices were detected."
-msgstr "រក​មិន​ឃើញឧបករណ៍ ។"
-
-#: src/lintvscheduler.cpp:375
-msgid "No devices."
-msgstr "គ្មាន​ឧបករណ៍ ។"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info"
-
-#. i18n: file: src/ui/program_editor.ui:24
 #. i18n: ectx: property (text), widget (QLabel, programName)
-#: rc.cpp:5
+#: src/ui/program_editor.ui:24
 msgid "Program Name:"
 msgstr "ឈ្មោះ​កម្មវិធី​ ៖"
 
-#. i18n: file: src/ui/program_editor.ui:36
 #. i18n: ectx: property (title), widget (QGroupBox, runGroupBox)
-#: rc.cpp:8
+#: src/ui/program_editor.ui:36
 msgid "Run the recording:"
 msgstr "ដំណើរ​ការថត ៖"
 
-#. i18n: file: src/ui/program_editor.ui:42
 #. i18n: ectx: property (toolTip), widget (QRadioButton, oneTimeRadioButton)
-#: rc.cpp:11
+#: src/ui/program_editor.ui:42
 msgid "Record only once"
 msgstr "ថត​តែ​ម្ដង​គត់"
 
-#. i18n: file: src/ui/program_editor.ui:45
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, oneTimeRadioButton)
-#: rc.cpp:14
+#: src/ui/program_editor.ui:45
 msgid ""
 "This records a program only one time, starting at the starting date you "
 "specify."
 msgstr "វា​ថត​កម្មវិធី​តែ​ម្ដង​គត់ ដោយ​ចាប់​ផ្ដើម​នៅ​ត្រង់​កាល​បរិច្ឆេទ​ចាប់​ផ្ដើម​ដែល​អ្នក​បាន​បញ្ជាក់​ ។"
 
-#. i18n: file: src/ui/program_editor.ui:48
 #. i18n: ectx: property (text), widget (QRadioButton, oneTimeRadioButton)
-#: rc.cpp:17
+#: src/ui/program_editor.ui:48
 msgid "One Time Only"
 msgstr "តែ​ម្ដង​គត់"
 
-#. i18n: file: src/ui/program_editor.ui:55
 #. i18n: ectx: property (toolTip), widget (QRadioButton, dailyRadioButton)
-#: rc.cpp:20
+#: src/ui/program_editor.ui:55
 msgid "Record every day"
 msgstr "ថត​រៀង​រាល់​ថ្ងៃ"
 
-#. i18n: file: src/ui/program_editor.ui:58
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, dailyRadioButton)
-#: rc.cpp:23
+#: src/ui/program_editor.ui:58
 msgid ""
 "This will record every day of the week which you select in the \"Days to run"
 "\" group box."
 msgstr "វា​នឹង​ថត​គ្រប់​ថ្ងៃ​នៃ​សប្ដាហ៍ ដែល​អ្នក​បាន​គូស​ធីក​នៅ​ក្នុង​ប្រអប់​ក្រុម​ \"ថ្ងៃ​ត្រូវ​ដំណើរ​ការ​\" ។"
 
-#. i18n: file: src/ui/program_editor.ui:61
 #. i18n: ectx: property (text), widget (QRadioButton, dailyRadioButton)
-#: rc.cpp:26
+#: src/ui/program_editor.ui:61
 msgid "Every Day"
 msgstr "រាល់​ថ្ងៃ"
 
-#. i18n: file: src/ui/program_editor.ui:68
 #. i18n: ectx: property (toolTip), widget (QRadioButton, weeklyRadioButton)
-#: rc.cpp:29
+#: src/ui/program_editor.ui:68
 msgid "Record every week"
 msgstr "ថត​រាល់​សប្ដាហ៍"
 
-#. i18n: file: src/ui/program_editor.ui:71
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, weeklyRadioButton)
-#: rc.cpp:32
+#: src/ui/program_editor.ui:71
 msgid ""
 "This records every week, starting at the date you specify. For example, if "
 "you start it on a Tuesday, it will run the next Tuesday, and so on."
@@ -236,45 +224,38 @@ msgstr ""
 "វា​នឹង​ថត​រាល់​សប្ដាហ៍ ដោយ​ចាប់​ផ្ដើម​នៅ​ត្រង់​កាល​បរិច្ឆេទ​ ដែល​អ្នក​បាន​បញ្ជាក់​ ។ ឧទាហរណ៍ បើ​អ្នក​ដាក់​ឲ្យ​វា​​​"
 "ចាប់​ផ្ដើម​នៅ​ថ្ងៃ​អង្គារ វា​នឹង​ដំណើរ​ការ​នៅ​ថ្ងៃ​អង្គារ​សប្ដាហ៍​ក្រោយ និង​​​នៅ​​សប្ដាហ៍​បន្ត​បន្ទាប់​ទៀត​ ។"
 
-#. i18n: file: src/ui/program_editor.ui:74
 #. i18n: ectx: property (text), widget (QRadioButton, weeklyRadioButton)
-#: rc.cpp:35
+#: src/ui/program_editor.ui:74
 msgid "Every Week"
 msgstr "រាល់​សប្ដាហ៍"
 
-#. i18n: file: src/ui/program_editor.ui:84
 #. i18n: ectx: property (title), widget (QGroupBox, timeDatesGroupBox)
-#: rc.cpp:38
+#: src/ui/program_editor.ui:84
 msgid "Run Time && Date"
 msgstr "ដំណើរ​ការ​ពេល​វេលា និង​កាល​បរិច្ឆេទ"
 
-#. i18n: file: src/ui/program_editor.ui:90
 #. i18n: ectx: property (text), widget (QLabel, startTimeLabel)
-#: rc.cpp:41
+#: src/ui/program_editor.ui:90
 msgid "Start Time:"
 msgstr "ពេល​វេលា​ចាប់​ផ្ដើម​ ៖"
 
-#. i18n: file: src/ui/program_editor.ui:97
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, startTimeEdit)
-#: rc.cpp:44
+#: src/ui/program_editor.ui:97
 msgid "Choose at what time you would like to start recording."
 msgstr "ជ្រើស​ពេល​វេលា​ ដែល​អ្នក​ចង់​ចាប់​ផ្ដើម​ថត​ ។"
 
-#. i18n: file: src/ui/program_editor.ui:104
 #. i18n: ectx: property (text), widget (QLabel, endTimeLabel)
-#: rc.cpp:47
+#: src/ui/program_editor.ui:104
 msgid "End Time:"
 msgstr "ពេល​វេលា​​បញ្ចប់​ ៖"
 
-#. i18n: file: src/ui/program_editor.ui:111
 #. i18n: ectx: property (toolTip), widget (QTimeEdit, endTimeEdit)
-#: rc.cpp:50
+#: src/ui/program_editor.ui:111
 msgid "Choose at what time you would like to end the recording."
 msgstr "ជ្រើស​ពេល​វេលា​ ដែល​អ្នក​ចង់​បញ្ចប់​ការ​ថត ។"
 
-#. i18n: file: src/ui/program_editor.ui:128
 #. i18n: ectx: property (text), widget (QLabel, runTimeLabel)
-#: rc.cpp:53
+#: src/ui/program_editor.ui:128
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -298,33 +279,28 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">ថិរវេលា ៖ ៣​០​នាទី</span></p></body></html>"
 
-#. i18n: file: src/ui/program_editor.ui:138
 #. i18n: ectx: property (text), widget (QLabel, endingDateLabel)
-#: rc.cpp:60
+#: src/ui/program_editor.ui:138
 msgid "Ending Date:"
 msgstr "កាល​បរិច្ឆេទ​បញ្ចប់​ ៖"
 
-#. i18n: file: src/ui/program_editor.ui:145
 #. i18n: ectx: property (text), widget (QLabel, startingDateLabel)
-#: rc.cpp:63
+#: src/ui/program_editor.ui:145
 msgid "Starting Date:"
 msgstr "កាល​បរិច្ឆេទ​ចាប់​ផ្ដើម ៖"
 
-#. i18n: file: src/ui/program_editor.ui:152
 #. i18n: ectx: property (toolTip), widget (QDateEdit, endDateEdit)
-#: rc.cpp:66
+#: src/ui/program_editor.ui:152
 msgid "Choose a date to stop recording your program."
 msgstr "ជ្រើស​កាល​បរិច្ឆេទ​ ដើម្បី​បញ្ឈប់​ការ​ថត​កម្មវិធី​របស់​អ្នក​ ។"
 
-#. i18n: file: src/ui/program_editor.ui:159
 #. i18n: ectx: property (toolTip), widget (QDateEdit, startDateEdit)
-#: rc.cpp:69
+#: src/ui/program_editor.ui:159
 msgid "Choose a start date for your program."
 msgstr "ជ្រើស​កាលបរិច្ឆេទ​ចាប់​ផ្ដើម​សម្រាប់​កម្មវិធី​របស់​អ្នក​ ។"
 
-#. i18n: file: src/ui/program_editor.ui:176
 #. i18n: ectx: property (text), widget (QLabel, nextRunDateLabel)
-#: rc.cpp:72
+#: src/ui/program_editor.ui:176
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -348,139 +324,117 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-"
 "weight:600;\">កាល​បរិច្ឆេទ​ដំណើរ​ការ​បន្ទាប់​ ៖ </span></p></body></html>"
 
-#. i18n: file: src/ui/program_editor.ui:189
 #. i18n: ectx: property (title), widget (QGroupBox, daysToRunGroupBox)
-#: rc.cpp:79
+#: src/ui/program_editor.ui:189
 msgid "Days to run:"
 msgstr "ថ្ងៃ​ត្រូវ​ដំណើរការ ៖"
 
-#. i18n: file: src/ui/program_editor.ui:195
 #. i18n: ectx: property (text), widget (QCheckBox, sundayCheckBox)
-#: rc.cpp:82
+#: src/ui/program_editor.ui:195
 msgid "Sunday"
 msgstr "អាទិត្យ"
 
-#. i18n: file: src/ui/program_editor.ui:205
 #. i18n: ectx: property (text), widget (QCheckBox, mondayCheckBox)
-#: rc.cpp:85
+#: src/ui/program_editor.ui:205
 msgid "Monday"
 msgstr "ច័ន្ទ"
 
-#. i18n: file: src/ui/program_editor.ui:215
 #. i18n: ectx: property (text), widget (QCheckBox, tuesdayCheckBox)
-#: rc.cpp:88
+#: src/ui/program_editor.ui:215
 msgid "Tuesday"
 msgstr "អង្គារ"
 
-#. i18n: file: src/ui/program_editor.ui:225
 #. i18n: ectx: property (text), widget (QCheckBox, wednesdayCheckBox)
-#: rc.cpp:91
+#: src/ui/program_editor.ui:225
 msgid "Wednesday"
 msgstr "ពុធ"
 
-#. i18n: file: src/ui/program_editor.ui:235
 #. i18n: ectx: property (text), widget (QCheckBox, thursdayCheckBox)
-#: rc.cpp:94
+#: src/ui/program_editor.ui:235
 msgid "Thursday"
 msgstr "ព្រហស្បត្តិ៍"
 
-#. i18n: file: src/ui/program_editor.ui:245
 #. i18n: ectx: property (text), widget (QCheckBox, fridayCheckBox)
-#: rc.cpp:97
+#: src/ui/program_editor.ui:245
 msgid "Friday"
 msgstr "សុក្រ"
 
-#. i18n: file: src/ui/program_editor.ui:255
 #. i18n: ectx: property (text), widget (QCheckBox, saturdayCheckBox)
-#: rc.cpp:100
+#: src/ui/program_editor.ui:255
 msgid "Saturday"
 msgstr "សៅរ៍"
 
-#. i18n: file: src/ui/program_editor.ui:265
 #. i18n: ectx: property (toolTip), widget (QPushButton, selectAllPushButton)
-#: rc.cpp:103
+#: src/ui/program_editor.ui:265
 msgid "Select All the Days"
 msgstr "ជ្រើស​ថ្ងៃ​ទាំង​អស់"
 
-#. i18n: file: src/ui/program_editor.ui:268
 #. i18n: ectx: property (text), widget (QPushButton, selectAllPushButton)
-#: rc.cpp:106
+#: src/ui/program_editor.ui:268
 msgid "Select All"
 msgstr "ជ្រើស​ទាំង​អស់"
 
-#. i18n: file: src/ui/program_editor.ui:275
 #. i18n: ectx: property (toolTip), widget (QPushButton, selectNonePushButton)
-#: rc.cpp:109
+#: src/ui/program_editor.ui:275
 msgid "Deselect All the Days"
 msgstr "មិន​ជ្រើស​ថ្ងៃ​ទាំង​អស់"
 
-#. i18n: file: src/ui/program_editor.ui:278
 #. i18n: ectx: property (text), widget (QPushButton, selectNonePushButton)
-#: rc.cpp:112
+#: src/ui/program_editor.ui:278
 msgid "Select None"
 msgstr "មិន​ជ្រើស​ទាំង​អស់"
 
-#. i18n: file: src/ui/program_editor.ui:288
 #. i18n: ectx: property (title), widget (QGroupBox, programSettingsGroupBox)
-#: rc.cpp:115
+#: src/ui/program_editor.ui:288
 msgid "Record Settings"
 msgstr "ការកំណត់​ការ​ថត"
 
-#. i18n: file: src/ui/program_editor.ui:294
 #. i18n: ectx: property (text), widget (QLabel, deviceLabel)
-#: rc.cpp:118
+#: src/ui/program_editor.ui:294
 msgid "Device:"
 msgstr "ឧបករណ៍ ៖"
 
-#. i18n: file: src/ui/program_editor.ui:301
 #. i18n: ectx: property (toolTip), widget (QComboBox, deviceComboBox)
-#: rc.cpp:121
+#: src/ui/program_editor.ui:301
 msgid "Select a device to record from."
 msgstr "ជ្រើស​ឧបករណ៍​ដើម្បី​ថត ។"
 
-#. i18n: file: src/ui/program_editor.ui:304
 #. i18n: ectx: property (whatsThis), widget (QComboBox, deviceComboBox)
-#: rc.cpp:124
+#: src/ui/program_editor.ui:304
 msgid ""
 "If you have multiple devices in your system, you may select the device you "
 "would like to record from here."
 msgstr "បើ​អ្នក​មាន​ឧបករណ៍​ច្រើន​នៅ​ក្នុង​ប្រព័ន្ធ​របស់​អ្នក អ្នក​អាច​ជ្រើស​ឧបករណ៍​ ដែល​អ្នក​ចង់​ថត​ពី​ទី​នេះ​បាន​ ។"
 
-#. i18n: file: src/ui/program_editor.ui:311
 #. i18n: ectx: property (text), widget (QLabel, inputLabel)
-#: rc.cpp:127
+#: src/ui/program_editor.ui:311
 msgid "Input:"
 msgstr "ការ​បញ្ចូល ៖"
 
-#. i18n: file: src/ui/program_editor.ui:318
 #. i18n: ectx: property (toolTip), widget (QComboBox, inputComboBox)
-#: rc.cpp:130
+#: src/ui/program_editor.ui:318
 msgid "Select an input on the device."
 msgstr "ជ្រើស​ការ​បញ្ចូល​នៅ​លើ​ឧបករណ៍ ។"
 
-#. i18n: file: src/ui/program_editor.ui:321
 #. i18n: ectx: property (whatsThis), widget (QComboBox, inputComboBox)
-#: rc.cpp:133
+#: src/ui/program_editor.ui:321
 msgid ""
 "You may select what input on the selected device from which to record from "
 "here."
 msgstr "អ្នក​អាច​ជ្រើស​អ្វី​ដែល​ត្រូវ​បញ្ចូល​នៅ​លើ​ឧបករណ៍​ដែល​បាន​ជ្រើស​ពី​ទី​នេះ​បាន​ ។"
 
-#. i18n: file: src/ui/program_editor.ui:328
 #. i18n: ectx: property (text), widget (QLabel, channelLabel)
-#: rc.cpp:136
+#: src/ui/program_editor.ui:328
 msgid "Channel:"
 msgstr "ឆានែល ៖"
 
-#. i18n: file: src/ui/program_editor.ui:335
 #. i18n: ectx: property (toolTip), widget (QSpinBox, channelSpinBox)
-#: rc.cpp:139
+#: src/ui/program_editor.ui:335
 msgid "Select a channel."
 msgstr "ជ្រើស​ឆានែល ។"
 
-#. i18n: file: src/ui/program_editor.ui:338
 #. i18n: ectx: property (whatsThis), widget (QSpinBox, channelSpinBox)
-#: rc.cpp:142
+#: src/ui/program_editor.ui:338
 msgid ""
 "Select a channel. If you set Input to be something other than \"Tuner\" or "
 "\"Television\", you cannot change the channel."

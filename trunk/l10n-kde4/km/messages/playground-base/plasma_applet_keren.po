@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasma_applet_keren\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-19 05:53+0200\n"
+"POT-Creation-Date: 2012-08-20 06:01+0200\n"
 "PO-Revision-Date: 2010-06-21 14:48+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -18,6 +18,22 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: KBabel 1.11.4\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+
+#: libkgstdevices/devicemanager.cpp:141
+msgid "Xv video renderer"
+msgstr "កម្មវិធី​បង្ហាញ​វីដេអូ Xv"
+
+#: libkgstdevices/devicemanager.cpp:145
+msgid "X11 video renderer"
+msgstr "កម្មវិធី​បង្ហាញ​វីដេអូ X11"
+
+#: libkgstdevices/devicemanager.cpp:154
+msgid "Autodetect"
+msgstr "រក​ឃើញ​​ស្វ័យ​ប្រវត្តិ"
+
+#: libkgstdevices/devicemanager.cpp:313
+msgid "Test input device"
+msgstr "ឧបករណ៍​បញ្ចូល​សាក​ល្បង"
 
 #: libkgstdevices/devicesmodel.cpp:81
 msgctxt "autodetected audio or video system"
@@ -69,22 +85,6 @@ msgstr "ធាតុ Gstreamer "
 msgid "Driver-specific handle"
 msgstr "ដោះស្រាយ​កម្ម​វីធី​បញ្ជា​ជាក់​លាក់"
 
-#: libkgstdevices/devicemanager.cpp:141
-msgid "Xv video renderer"
-msgstr "កម្មវិធី​បង្ហាញ​វីដេអូ Xv"
-
-#: libkgstdevices/devicemanager.cpp:145
-msgid "X11 video renderer"
-msgstr "កម្មវិធី​បង្ហាញ​វីដេអូ X11"
-
-#: libkgstdevices/devicemanager.cpp:154
-msgid "Autodetect"
-msgstr "រក​ឃើញ​​ស្វ័យ​ប្រវត្តិ"
-
-#: libkgstdevices/devicemanager.cpp:313
-msgid "Test input device"
-msgstr "ឧបករណ៍​បញ្ចូល​សាក​ល្បង"
-
 #: src/keren.cpp:117
 msgid "Audio Device"
 msgstr "ឧបករណ៍​អូឌីយ៉ូ"
@@ -93,70 +93,57 @@ msgstr "ឧបករណ៍​អូឌីយ៉ូ"
 msgid "Video Device"
 msgstr "ឧបករណ៍​វីដេអូ"
 
-#. i18n: file: ui/videoSettings.ui:17
 #. i18n: ectx: property (title), widget (QGroupBox, deviceGroupBox)
-#. i18n: file: ui/audioSettings.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, deviceGroupBox)
-#: rc.cpp:3 rc.cpp:30
+#: ui/audioSettings.ui:17 ui/videoSettings.ui:17
 msgid "Device"
 msgstr "ឧបករណ៍"
 
-#. i18n: file: ui/videoSettings.ui:30
 #. i18n: ectx: property (text), widget (QLabel, deviceLabel)
-#: rc.cpp:6
-msgid "Device:"
-msgstr "ឧបករណ៍ ៖"
-
-#. i18n: file: ui/videoSettings.ui:37
-#. i18n: ectx: property (text), widget (QLabel, resolutionLabel)
-#: rc.cpp:9
-msgid "Resolution:"
-msgstr "គុណភាព​បង្ហាញ ៖"
-
-#. i18n: file: ui/videoSettings.ui:44
-#. i18n: ectx: property (text), widget (QLabel, frameRateLabel)
-#: rc.cpp:12
-msgid "Frame Rate:"
-msgstr "អត្រា​ស៊ុម ៖"
-
-#. i18n: file: ui/videoSettings.ui:183
-#. i18n: ectx: property (title), widget (QGroupBox, settingsGroupBox)
-#: rc.cpp:15
-msgid "Settings"
-msgstr "ការ​កំណត់"
-
-#. i18n: file: ui/videoSettings.ui:200
-#. i18n: ectx: property (text), widget (QLabel, brightnessLabel)
-#: rc.cpp:18
-msgid "Brightness:"
-msgstr "ពន្លឺ ៖"
-
-#. i18n: file: ui/videoSettings.ui:235
-#. i18n: ectx: property (text), widget (QLabel, contrastLabel)
-#: rc.cpp:21
-msgid "Contrast:"
-msgstr "កម្រិត​​ពណ៌ ៖"
-
-#. i18n: file: ui/videoSettings.ui:270
-#. i18n: ectx: property (text), widget (QLabel, saturationLabel)
-#: rc.cpp:24
-msgid "Saturation:"
-msgstr "តត្ថិភាព ៖"
-
-#. i18n: file: ui/videoSettings.ui:305
-#. i18n: ectx: property (text), widget (QLabel, hueLabel)
-#: rc.cpp:27
-msgid "Hue:"
-msgstr "ពណ៌​លាំ ៗ​ ៖"
-
-#. i18n: file: ui/audioSettings.ui:30
-#. i18n: ectx: property (text), widget (QLabel, deviceLabel)
-#: rc.cpp:33
+#: ui/audioSettings.ui:30
 msgid "Input:"
 msgstr "បញ្ចូល ៖"
 
-#. i18n: file: ui/audioSettings.ui:82
 #. i18n: ectx: property (text), widget (QPushButton, testCaptureButton)
-#: rc.cpp:36
+#: ui/audioSettings.ui:82
 msgid "Test"
 msgstr "សាកល្បង"
+
+#. i18n: ectx: property (text), widget (QLabel, deviceLabel)
+#: ui/videoSettings.ui:30
+msgid "Device:"
+msgstr "ឧបករណ៍ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, resolutionLabel)
+#: ui/videoSettings.ui:37
+msgid "Resolution:"
+msgstr "គុណភាព​បង្ហាញ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, frameRateLabel)
+#: ui/videoSettings.ui:44
+msgid "Frame Rate:"
+msgstr "អត្រា​ស៊ុម ៖"
+
+#. i18n: ectx: property (title), widget (QGroupBox, settingsGroupBox)
+#: ui/videoSettings.ui:183
+msgid "Settings"
+msgstr "ការ​កំណត់"
+
+#. i18n: ectx: property (text), widget (QLabel, brightnessLabel)
+#: ui/videoSettings.ui:200
+msgid "Brightness:"
+msgstr "ពន្លឺ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, contrastLabel)
+#: ui/videoSettings.ui:235
+msgid "Contrast:"
+msgstr "កម្រិត​​ពណ៌ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, saturationLabel)
+#: ui/videoSettings.ui:270
+msgid "Saturation:"
+msgstr "តត្ថិភាព ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, hueLabel)
+#: ui/videoSettings.ui:305
+msgid "Hue:"
+msgstr "ពណ៌​លាំ ៗ​ ៖"

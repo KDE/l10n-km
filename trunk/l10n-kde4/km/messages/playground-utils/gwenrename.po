@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenrename\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-19 06:03+0200\n"
+"POT-Creation-Date: 2012-08-20 07:05+0200\n"
 "PO-Revision-Date: 2012-07-09 10:31+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -19,27 +19,37 @@ msgstr ""
 "X-Generator: WordForge 0.8 RC1\n"
 "X-Language: km-KH\n"
 
-#: rc.cpp:1
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr " ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា, ចាន់ សម្បត្តិរតនៈ, សុខ សុភា"
 
-#: rc.cpp:2
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr ""
 "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
 "ratanak@khmeros.info,sophea@khmeros.info"
 
-#. i18n: file: initaskmode.ui:20
+#: initaskmode.cpp:33 initaskmode.cpp:42
+msgid "Mode selection"
+msgstr "ជម្រើស​របៀប"
+
+#: initaskmode.cpp:48 initaskmode.cpp:75
+#, kde-format
+msgid ""
+"<p>The folder <b>%1</b> is the only parameter passed to <b>GwenRename</b>."
+"<br/><br/>Do you want to rename this folder, or the files contained in it?</"
+"p>"
+msgstr ""
+"<p>ថត <b>%1</b> ត្រូវ​បាន​ហុច​​តែ​ប៉ារ៉ាម៉ែត្រ​ទៅកាន់ <b>GwenRename</b> ។<br/><br/>តើ​អ្នក​ចង់​"
+"ប្ដូរ​ឈ្មោះ​ថត​​នេះ ឬ​ឯកសារ​ដែល​មាន​​នៅ​ក្នុង​ថត​នេះ​ដែរ​ឬ​ទេ ?</p>"
+
 #. i18n: ectx: property (windowTitle), widget (QDialog, initAskMode)
-#: rc.cpp:5 main.cpp:50
+#: initaskmode.ui:20 main.cpp:50
 msgid "GwenRename"
 msgstr "GwenRename"
 
-#. i18n: file: initaskmode.ui:71
 #. i18n: ectx: property (text), widget (QLabel, Message)
-#: rc.cpp:8
+#: initaskmode.ui:71
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -63,604 +73,187 @@ msgstr ""
 "margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
 "p></body></html>"
 
-#. i18n: file: initaskmode.ui:104
 #. i18n: ectx: property (text), widget (KPushButton, renameDir)
-#: rc.cpp:15
+#: initaskmode.ui:104
 msgid "Rename &folder"
 msgstr "ប្ដូរ​ឈ្មោះ​ថត"
 
-#. i18n: file: initaskmode.ui:111
 #. i18n: ectx: property (text), widget (KPushButton, renameFiles)
-#: rc.cpp:18
+#: initaskmode.ui:111
 msgid "&Rename files"
 msgstr "ប្ដូរ​ឈ្មោះ​ឯកសារ"
 
-#. i18n: file: initaskmode.ui:121
 #. i18n: ectx: property (text), widget (KPushButton, buttonCancel)
-#. i18n: file: rename.ui:1723
-#. i18n: ectx: property (text), widget (KPushButton, buttonCancel)
-#. i18n: file: timestamp.ui:324
-#. i18n: ectx: property (text), widget (KPushButton, buttonCancel)
-#. i18n: file: multiselecttool.ui:260
-#. i18n: ectx: property (text), widget (KPushButton, buttonCancel)
-#. i18n: file: inputdir.ui:208
 #. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#. i18n: file: namepartbase.ui:550
-#. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#. i18n: file: initaskmode.ui:121
-#. i18n: ectx: property (text), widget (KPushButton, buttonCancel)
-#. i18n: file: rename.ui:1723
-#. i18n: ectx: property (text), widget (KPushButton, buttonCancel)
-#. i18n: file: timestamp.ui:324
-#. i18n: ectx: property (text), widget (KPushButton, buttonCancel)
-#. i18n: file: multiselecttool.ui:260
-#. i18n: ectx: property (text), widget (KPushButton, buttonCancel)
-#. i18n: file: inputdir.ui:208
-#. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#. i18n: file: namepartbase.ui:550
-#. i18n: ectx: property (text), widget (QPushButton, buttonCancel)
-#: rc.cpp:21 rc.cpp:209 rc.cpp:258 rc.cpp:301 rc.cpp:319 rc.cpp:385
+#: initaskmode.ui:121 inputdir.ui:208 multiselecttool.ui:260
+#: namepartbase.ui:550 rename.ui:1723 timestamp.ui:324
 msgid "&Cancel"
 msgstr "បោះបង់"
 
-#. i18n: file: rename.ui:61
-#. i18n: ectx: property (text), widget (QCheckBox, rShow)
-#: rc.cpp:24
-msgid "Show all items"
-msgstr "បង្ហាញ​ធាតុ​ទាំងអស់"
+#. i18n: ectx: property (windowTitle), widget (QDialog, InputDir)
+#: inputdir.cpp:80 inputdir.ui:32
+msgid "Folder selection"
+msgstr "ជម្រើស​ថត"
 
-#. i18n: file: rename.ui:119
-#. i18n: ectx: property (toolTip), widget (KLed, kLed1)
-#. i18n: file: rename.ui:135
-#. i18n: ectx: property (toolTip), widget (QLabel, lblLed1)
-#. i18n: file: rename.ui:600
-#. i18n: ectx: property (toolTip), widget (KLed, kLed2)
-#. i18n: file: rename.ui:619
-#. i18n: ectx: property (toolTip), widget (QLabel, lblLed2)
-#. i18n: file: rename.ui:1136
-#. i18n: ectx: property (toolTip), widget (KLed, kLed3)
-#. i18n: file: rename.ui:1152
-#. i18n: ectx: property (toolTip), widget (QLabel, lblLed3)
-#. i18n: file: rename.ui:119
-#. i18n: ectx: property (toolTip), widget (KLed, kLed1)
-#. i18n: file: rename.ui:135
-#. i18n: ectx: property (toolTip), widget (QLabel, lblLed1)
-#. i18n: file: rename.ui:600
-#. i18n: ectx: property (toolTip), widget (KLed, kLed2)
-#. i18n: file: rename.ui:619
-#. i18n: ectx: property (toolTip), widget (QLabel, lblLed2)
-#. i18n: file: rename.ui:1136
-#. i18n: ectx: property (toolTip), widget (KLed, kLed3)
-#. i18n: file: rename.ui:1152
-#. i18n: ectx: property (toolTip), widget (QLabel, lblLed3)
-#: rc.cpp:27 rc.cpp:30 rc.cpp:78 rc.cpp:81 rc.cpp:146 rc.cpp:149
-msgid "Show / Hide widgets"
-msgstr "បង្ហាញ / លាក់​ធាតុ​ក្រាហ្វិក"
-
-#. i18n: file: rename.ui:168
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
-#: rc.cpp:33
-msgid "Name"
-msgstr "ឈ្មោះ"
-
-#. i18n: file: rename.ui:179
-#. i18n: ectx: property (text), widget (QCheckBox, nOriginal)
-#. i18n: file: namepartbase.ui:334
-#. i18n: ectx: property (text), widget (QRadioButton, origName)
-#. i18n: file: rename.ui:179
-#. i18n: ectx: property (text), widget (QCheckBox, nOriginal)
-#. i18n: file: namepartbase.ui:334
-#. i18n: ectx: property (text), widget (QRadioButton, origName)
-#: rc.cpp:36 rc.cpp:355
-msgid "Use original name"
-msgstr "ប្រើ​ឈ្មោះ​ដើម"
-
-#. i18n: file: rename.ui:230
-#. i18n: ectx: property (text), widget (QRadioButton, nLCase)
-#. i18n: file: rename.ui:1228
-#. i18n: ectx: property (text), widget (QCheckBox, rLExt)
-#. i18n: file: namepartbase.ui:404
-#. i18n: ectx: property (text), widget (QCheckBox, nLCase)
-#. i18n: file: rename.ui:230
-#. i18n: ectx: property (text), widget (QRadioButton, nLCase)
-#. i18n: file: rename.ui:1228
-#. i18n: ectx: property (text), widget (QCheckBox, rLExt)
-#. i18n: file: namepartbase.ui:404
-#. i18n: ectx: property (text), widget (QCheckBox, nLCase)
-#: rc.cpp:39 rc.cpp:158 rc.cpp:364
-msgid "Convert to lowercase"
-msgstr "បម្លែង​ទៅ​អក្សរ​តូច"
-
-#. i18n: file: rename.ui:246
-#. i18n: ectx: property (text), widget (QRadioButton, nUCase)
-#. i18n: file: rename.ui:1238
-#. i18n: ectx: property (text), widget (QCheckBox, rUExt)
-#. i18n: file: namepartbase.ui:420
-#. i18n: ectx: property (text), widget (QCheckBox, nUCase)
-#. i18n: file: rename.ui:246
-#. i18n: ectx: property (text), widget (QRadioButton, nUCase)
-#. i18n: file: rename.ui:1238
-#. i18n: ectx: property (text), widget (QCheckBox, rUExt)
-#. i18n: file: namepartbase.ui:420
-#. i18n: ectx: property (text), widget (QCheckBox, nUCase)
-#: rc.cpp:42 rc.cpp:161 rc.cpp:367
-msgid "Convert to uppercase"
-msgstr "បម្លែង​ទៅ​អក្សរ​ធំ"
-
-#. i18n: file: rename.ui:279
-#. i18n: ectx: property (text), widget (QRadioButton, nFCap)
-#. i18n: file: namepartbase.ui:453
-#. i18n: ectx: property (text), widget (QCheckBox, nFCap)
-#. i18n: file: rename.ui:279
-#. i18n: ectx: property (text), widget (QRadioButton, nFCap)
-#. i18n: file: namepartbase.ui:453
-#. i18n: ectx: property (text), widget (QCheckBox, nFCap)
-#: rc.cpp:45 rc.cpp:370
-msgid "Capitalize first letter"
-msgstr "អក្សរ​ដំបូង​សរសេរ​ជា​អក្សរ​ពុម្ព"
-
-#. i18n: file: rename.ui:295
-#. i18n: ectx: property (text), widget (QRadioButton, nSCap)
-#. i18n: file: namepartbase.ui:469
-#. i18n: ectx: property (text), widget (QCheckBox, nSCap)
-#. i18n: file: rename.ui:295
-#. i18n: ectx: property (text), widget (QRadioButton, nSCap)
-#. i18n: file: namepartbase.ui:469
-#. i18n: ectx: property (text), widget (QCheckBox, nSCap)
-#: rc.cpp:48 rc.cpp:373
-msgid "Capitalize starting letters"
-msgstr "ចាប់ផ្ដើម​​អក្សរ​សរសេរ​ជា​អក្សរ​ពុម្ព"
-
-#. i18n: file: rename.ui:308
-#. i18n: ectx: property (text), widget (QCheckBox, nSpecify)
-#: rc.cpp:51
-msgid "Specify name:"
-msgstr "បញ្ជាក់​ឈ្មោះ ៖"
-
-#. i18n: file: rename.ui:361
-#. i18n: ectx: property (toolTip), widget (KPushButton, partName)
-#. i18n: file: rename.ui:486
-#. i18n: ectx: property (toolTip), widget (KPushButton, pPartName)
-#. i18n: file: rename.ui:562
-#. i18n: ectx: property (toolTip), widget (KPushButton, sPartName)
-#. i18n: file: rename.ui:361
-#. i18n: ectx: property (toolTip), widget (KPushButton, partName)
-#. i18n: file: rename.ui:486
-#. i18n: ectx: property (toolTip), widget (KPushButton, pPartName)
-#. i18n: file: rename.ui:562
-#. i18n: ectx: property (toolTip), widget (KPushButton, sPartName)
-#: rc.cpp:54 rc.cpp:69 rc.cpp:75
-msgid "Use part of the original name"
-msgstr "ប្រើ​ផ្នែក​របស់​ឈ្មោះ​ដើម"
-
-#. i18n: file: rename.ui:384
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox4)
-#: rc.cpp:57
-msgid "Prefix - Suffix"
-msgstr "បុព្វបទ - បច្ច័យ"
-
-#. i18n: file: rename.ui:392
-#. i18n: ectx: property (text), widget (QLabel, lPref)
-#: rc.cpp:60
-msgid "Prefix:"
-msgstr "បុព្វបទ ៖"
-
-#. i18n: file: rename.ui:405
-#. i18n: ectx: property (text), widget (QLabel, lSuf)
-#: rc.cpp:63
-msgid "Suffix:"
-msgstr "បច្ច័យ ៖"
-
-#. i18n: file: rename.ui:461
-#. i18n: ectx: property (toolTip), widget (KPushButton, pTime)
-#. i18n: file: rename.ui:537
-#. i18n: ectx: property (toolTip), widget (QPushButton, sTime)
-#. i18n: file: rename.ui:461
-#. i18n: ectx: property (toolTip), widget (KPushButton, pTime)
-#. i18n: file: rename.ui:537
-#. i18n: ectx: property (toolTip), widget (QPushButton, sTime)
-#: rc.cpp:66 rc.cpp:72
-msgid "Use time-stamping info"
-msgstr "ប្រើ​ព័ត៌មាន​ពេលវេលា​ដែល​បាន​បោះត្រា"
-
-#. i18n: file: rename.ui:657
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
-#: rc.cpp:84
-msgid "Miscellaneous"
-msgstr "ផ្សេងៗ​គ្នា"
-
-#. i18n: file: rename.ui:664
-#. i18n: ectx: property (toolTip), widget (QCheckBox, sort)
-#: rc.cpp:87
-msgid ""
-"<p><b>Numeric sorting</b></p>\n"
-"<p>When this option is enabled, the original names are sorted taking into "
-"account their numeric value (when possible)</p>"
-msgstr ""
-"<p><b>តម្រៀប​ជា​លេខ</b></p>\n"
-"<p>នៅ​ពេល​ជម្រើស​ត្រូវ​បាន​បើក ឈ្មោះ​ដើម​នឹង​ត្រូវ​បាន​តម្រៀប​​ទៅកាន់​គណនី​តម្លៃ​ជា​លេខ​របស់​ពួក​វា (នៅ​ពេល​ដែល​"
-"អាច​ធ្វើ​បាន)</p>"
-
-#. i18n: file: rename.ui:667
-#. i18n: ectx: property (text), widget (QCheckBox, sort)
-#: rc.cpp:91
-msgid "Use numeric sorting"
-msgstr "ប្រើ​ការ​តម្រៀប​ជា​លេខ"
-
-#. i18n: file: rename.ui:691
-#. i18n: ectx: property (text), widget (QCheckBox, rShuffle)
-#: rc.cpp:94
-msgid "Shuffle folders"
-msgstr "រៀបចំ​ថត"
-
-#. i18n: file: rename.ui:716
-#. i18n: ectx: property (toolTip), widget (KPushButton, reRandomize)
-#: rc.cpp:97
-msgid "Redo"
-msgstr "ធ្វើ​វិញ"
-
-#. i18n: file: rename.ui:753
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox6)
-#: rc.cpp:100
-msgid "Space manipulation"
-msgstr "ការ​បែងចែក​ទំហំ"
-
-#. i18n: file: rename.ui:767
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:103
-msgid "Convert space characters to"
-msgstr "បម្លែង​ចន្លោះ​តួអក្សរ​ទៅកាន់"
-
-#. i18n: file: rename.ui:783
-#. i18n: ectx: property (text), widget (QCheckBox, spaceToUnder)
-#. i18n: file: rename.ui:842
-#. i18n: ectx: property (text), widget (QCheckBox, underToSpace)
-#. i18n: file: rename.ui:783
-#. i18n: ectx: property (text), widget (QCheckBox, spaceToUnder)
-#. i18n: file: rename.ui:842
-#. i18n: ectx: property (text), widget (QCheckBox, underToSpace)
-#: rc.cpp:106 rc.cpp:115
-msgid "underscore"
-msgstr "គូសបន្ទាត់​ពីក្រោម"
-
-#. i18n: file: rename.ui:793
-#. i18n: ectx: property (text), widget (QCheckBox, spaceToDash)
-#. i18n: file: rename.ui:855
-#. i18n: ectx: property (text), widget (QCheckBox, dashToSpace)
-#. i18n: file: rename.ui:793
-#. i18n: ectx: property (text), widget (QCheckBox, spaceToDash)
-#. i18n: file: rename.ui:855
-#. i18n: ectx: property (text), widget (QCheckBox, dashToSpace)
-#: rc.cpp:109 rc.cpp:118
-msgid "dash"
-msgstr "ដាច់ៗ"
-
-#. i18n: file: rename.ui:826
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:112
-msgid "Convert to space characters from"
-msgstr "បម្លែង​ទៅកាន់​ចន្លោះ​តួអក្សរ​ពី"
+#: inputdir.ui:81
+msgid "Please select the location of the files you want to rename"
+msgstr "សូម​ជ្រើស​ទីតាំង​ឯកសារ​ដែល​អ្នក​ចង់​ប្ដូរ​ឈ្មោះ"
 
-#. i18n: file: rename.ui:890
-#. i18n: ectx: property (title), widget (QGroupBox, countBox)
-#: rc.cpp:121
-msgid "Counter"
-msgstr "ច្រាស"
-
-#. i18n: file: rename.ui:896
-#. i18n: ectx: property (text), widget (QCheckBox, countEnable)
-#: rc.cpp:124
-msgid "Enable Counter"
-msgstr "បើក​ច្រាស"
-
-#. i18n: file: rename.ui:922
-#. i18n: ectx: property (text), widget (QLabel, lStart)
-#: rc.cpp:127
-msgid "Start:"
-msgstr "ចាប់ផ្ដើម ៖"
-
-#. i18n: file: rename.ui:935
-#. i18n: ectx: property (text), widget (QLabel, lStep)
-#: rc.cpp:130
-msgid "Step:"
-msgstr "ជំហាន ៖"
-
-#. i18n: file: rename.ui:948
-#. i18n: ectx: property (text), widget (QLabel, lDigits)
-#: rc.cpp:133
-msgid "Number of Digits:"
-msgstr "ចំនួន​តួលេខ ៖"
-
-#. i18n: file: rename.ui:1058
-#. i18n: ectx: property (text), widget (QCheckBox, rWidth)
-#: rc.cpp:136
-msgid "Same number of digits"
-msgstr "ចំនួន​តួលេខ​​ស្នើ​គ្នា"
-
-#. i18n: file: rename.ui:1097
-#. i18n: ectx: property (toolTip), widget (QCheckBox, rAllow)
-#: rc.cpp:139
-msgid ""
-"<p><b>'Relaxed' numbering</b></p>\n"
-"<p>When this option is enabled, the program will find the files that match "
-"the renaming criteria but are not selected for renaming, and adjust the "
-"starting value of the counter so that the resulting filenames will follow "
-"the last existing file. This means that the starting value of the counter "
-"may be different than the one defined by the user.</p>"
-msgstr ""
-"<p><b>លេខរៀង 'Relaxed' </b></p>\n"
-"<p>នៅ​ពេល​ជម្រើស​នេះ​ត្រូវ​បាន​បើក កម្មវិធី​នឹង​រក​ឃើញ​ឯកសារ​ដែល​ផ្គូផ្គង​លក្ខណវិនិច្ឆ័យ ប៉ុន្តែ​​មិន​ត្រូវ​បាន​"
-"ជ្រើស សម្រាប់​ការ​ប្ដូរ​ឈ្មោះ​ឡើយ ហើយ​លៃ​តម្រូវ​​តម្លៃ​ចាប់ផ្ដើម​​បញ្ច្រាស ដូច្នេះ​ឈ្មោះ​ឯកសារ​ដែល​ជា​លទ្ធផល​នឹង​"
-"អនុវត្ត​ទៅតាម​ឯកសារ​ដែល​មាន​ស្រាប់​ចុងក្រោយ ។ នេះ​មាន​ន័យ​ថា​​តម្លៃ​ចាប់ផ្ដើម​ច្រាស​អាច​ខុស​គ្នា​ពី​តម្លៃ​ដែល​"
-"អ្នក​ប្រើ​បាន​កំណត់ ។</p>"
-
-#. i18n: file: rename.ui:1100
-#. i18n: ectx: property (text), widget (QCheckBox, rAllow)
-#: rc.cpp:143
-msgid "Use 'relaxed' numbering"
-msgstr "ប្រើ​លេខ​រៀង 'relaxed'"
-
-#. i18n: file: rename.ui:1191
-#. i18n: ectx: property (title), widget (QGroupBox, extBox)
-#: rc.cpp:152
-msgid "Extension"
-msgstr "ផ្នែក​បន្ថែម"
-
-#. i18n: file: rename.ui:1200
-#. i18n: ectx: property (text), widget (QCheckBox, rSelExt)
-#: rc.cpp:155
-msgid "Use original extension"
-msgstr "ប្រើ​ផ្នែក​បន្ថែម​ដើម"
-
-#. i18n: file: rename.ui:1268
-#. i18n: ectx: property (text), widget (QLabel, lExt)
-#: rc.cpp:164
-msgid "New extension:"
-msgstr "ផ្នែក​បន្ថែម​ថ្មី ៖"
-
-#. i18n: file: rename.ui:1310
-#. i18n: ectx: property (text), widget (QCheckBox, chkFullExt)
-#: rc.cpp:167
-msgid "Use compound extensions"
-msgstr "ប្រើ​ផ្នែក​បន្ថែម​សមាស"
-
-#. i18n: file: rename.ui:1348
-#. i18n: ectx: property (toolTip), widget (KPushButton, btNewExt)
-#: rc.cpp:170
-msgid "New extension"
-msgstr "កន្សោម​ថ្មី"
-
-#. i18n: file: rename.ui:1376
-#. i18n: ectx: property (toolTip), widget (KPushButton, btSaveExt)
-#: rc.cpp:173
-msgid "Save extension"
-msgstr "រក្សាទុក​ផ្នែក​បន្ថែម"
-
-#. i18n: file: rename.ui:1401
-#. i18n: ectx: property (toolTip), widget (KPushButton, btDelExt)
-#: rc.cpp:176
-msgid "Delete extension"
-msgstr "លុប​ផ្នែក​បន្ថែម"
-
-#. i18n: file: rename.ui:1424
-#. i18n: ectx: property (title), widget (QGroupBox, btngrpProfiles)
-#: rc.cpp:179
-msgid "Profiles"
-msgstr "ទម្រង់"
-
-#. i18n: file: rename.ui:1433
-#. i18n: ectx: property (text), widget (QCheckBox, chkProfile)
-#: rc.cpp:182
-msgid "Use profiles"
-msgstr "ប្រើ​ទម្រង់"
-
-#. i18n: file: rename.ui:1508
-#. i18n: ectx: property (toolTip), widget (KPushButton, prLoad)
-#: rc.cpp:185
-msgid "Load default profile"
-msgstr "ផ្ទុក​ទម្រង់​លំនាំដើម"
-
-#. i18n: file: rename.ui:1536
-#. i18n: ectx: property (toolTip), widget (KPushButton, prDefault)
-#: rc.cpp:188
-msgid "Use as default profile"
-msgstr "ប្រើ​ជា​ទម្រង់​លំនាំដើម"
-
-#. i18n: file: rename.ui:1577
-#. i18n: ectx: property (toolTip), widget (KPushButton, prNew)
-#: rc.cpp:191 rename.cpp:261
-msgid "New profile"
-msgstr "ទម្រង់​ថ្មី"
-
-#. i18n: file: rename.ui:1605
-#. i18n: ectx: property (toolTip), widget (KPushButton, prEdit)
-#: rc.cpp:194
-msgid "Rename profile"
-msgstr "ប្ដូរ​ឈ្មោះ​ទម្រង់"
-
-#. i18n: file: rename.ui:1633
-#. i18n: ectx: property (toolTip), widget (KPushButton, prSave)
-#: rc.cpp:197
-msgid "Save profile"
-msgstr "រក្សាទុក​ទម្រង់"
-
-#. i18n: file: rename.ui:1661
-#. i18n: ectx: property (toolTip), widget (KPushButton, prDelete)
-#: rc.cpp:200
-msgid "Delete profile"
-msgstr "លុប​ទម្រង់"
-
-#. i18n: file: rename.ui:1690
-#. i18n: ectx: property (text), widget (KPushButton, buttonAbout)
-#: rc.cpp:203
-msgid "&About"
-msgstr "អំពី"
-
-#. i18n: file: rename.ui:1713
-#. i18n: ectx: property (text), widget (KPushButton, buttonOk)
-#. i18n: file: timestamp.ui:311
-#. i18n: ectx: property (text), widget (KPushButton, buttonOk)
-#. i18n: file: multiselecttool.ui:247
-#. i18n: ectx: property (text), widget (KPushButton, buttonOk)
-#. i18n: file: inputdir.ui:198
-#. i18n: ectx: property (text), widget (QPushButton, buttonOk)
-#. i18n: file: namepartbase.ui:534
-#. i18n: ectx: property (text), widget (QPushButton, buttonOk)
-#. i18n: file: rename.ui:1713
-#. i18n: ectx: property (text), widget (KPushButton, buttonOk)
-#. i18n: file: timestamp.ui:311
-#. i18n: ectx: property (text), widget (KPushButton, buttonOk)
-#. i18n: file: multiselecttool.ui:247
-#. i18n: ectx: property (text), widget (KPushButton, buttonOk)
-#. i18n: file: inputdir.ui:198
-#. i18n: ectx: property (text), widget (QPushButton, buttonOk)
-#. i18n: file: namepartbase.ui:534
-#. i18n: ectx: property (text), widget (QPushButton, buttonOk)
-#: rc.cpp:206 rc.cpp:255 rc.cpp:298 rc.cpp:316 rc.cpp:382
-msgid "&OK"
-msgstr "យល់ព្រម"
-
-#. i18n: file: timestamp.ui:14
-#. i18n: ectx: property (windowTitle), widget (QDialog, tStamp)
-#: rc.cpp:212
-msgid "Time-stamping"
-msgstr "ពេលវេលា​ដែល​បាន​បោះត្រា"
-
-#. i18n: file: timestamp.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:215
-msgid "Date type"
-msgstr "ប្រភេទ​កាលបរិច្ឆេទ"
-
-#. i18n: file: timestamp.ui:39
-#. i18n: ectx: property (text), widget (QRadioButton, rCreation)
-#: rc.cpp:218
-msgid "Creation date"
-msgstr "កាលបរិច្ឆេទ​បង្កើត"
-
-#. i18n: file: timestamp.ui:61
-#. i18n: ectx: property (text), widget (QRadioButton, rModified)
-#: rc.cpp:221
-msgid "Last modified date"
-msgstr "បាន​កែប្រែ​កាលបរិច្ឆេទ​ចុងក្រោយ"
-
-#. i18n: file: timestamp.ui:80
-#. i18n: ectx: property (text), widget (QRadioButton, rRead)
-#: rc.cpp:224
-msgid "Last read date"
-msgstr "កាលបរិច្ឆេទ​អាន​ចុងក្រោយ"
-
-#. i18n: file: timestamp.ui:95
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox2_2)
-#: rc.cpp:227 timestamp.cpp:146
-msgid "Date Format"
-msgstr "ទ្រង់ទ្រាយ​កាលបរិច្ឆេទ"
-
-#. i18n: file: timestamp.ui:103
-#. i18n: ectx: property (text), widget (QLabel, lblPredefined)
-#: rc.cpp:230
-msgid "Predefined expressions:"
-msgstr "កន្សោម​ដែល​បាន​កំណត់​ជា​មុន ៖"
-
-#. i18n: file: timestamp.ui:122
-#. i18n: ectx: property (text), widget (QLabel, lblUser)
-#: rc.cpp:233
-msgid "User defined expressions:"
-msgstr "អ្នក​ប្រើ​បាន​កំណត់​កន្សោម ៖"
-
-#. i18n: file: timestamp.ui:138
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:236
-msgid "Example:"
-msgstr "ឧទាហរណ៍ ៖"
+#: inputdir.ui:104
+msgid "Folder:"
+msgstr "ថត ៖"
 
-#. i18n: file: timestamp.ui:217
-#. i18n: ectx: property (toolTip), widget (QLabel, lblExample)
-#: rc.cpp:239
-msgid "Example of expression value"
-msgstr "ឧទាហរណ៍​តម្លៃ​កន្សោម"
-
-#. i18n: file: timestamp.ui:253
-#. i18n: ectx: property (text), widget (QCheckBox, chkExif)
-#: rc.cpp:242
-msgid "Use Exif info when available"
-msgstr "ប្រើ​ព័ត៌មាន Exif ​នៅ​ពេល​ដែល​អាច​រក​បាន"
-
-#. i18n: file: timestamp.ui:276
-#. i18n: ectx: property (html), widget (KTextBrowser, txt)
-#: rc.cpp:245
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
-"p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
-"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
-"p></body></html>"
-
-#. i18n: file: timestamp.ui:288
 #. i18n: ectx: property (text), widget (KPushButton, buttonHelp)
-#. i18n: file: multiselecttool.ui:224
-#. i18n: ectx: property (text), widget (KPushButton, buttonHelp)
-#. i18n: file: inputdir.ui:172
 #. i18n: ectx: property (text), widget (QPushButton, buttonHelp)
-#. i18n: file: namepartbase.ui:505
-#. i18n: ectx: property (text), widget (QPushButton, buttonHelp)
-#. i18n: file: timestamp.ui:288
-#. i18n: ectx: property (text), widget (KPushButton, buttonHelp)
-#. i18n: file: multiselecttool.ui:224
-#. i18n: ectx: property (text), widget (KPushButton, buttonHelp)
-#. i18n: file: inputdir.ui:172
-#. i18n: ectx: property (text), widget (QPushButton, buttonHelp)
-#. i18n: file: namepartbase.ui:505
-#. i18n: ectx: property (text), widget (QPushButton, buttonHelp)
-#: rc.cpp:252 rc.cpp:295 rc.cpp:313 rc.cpp:376
+#: inputdir.ui:172 multiselecttool.ui:224 namepartbase.ui:505 timestamp.ui:288
 msgid "&Help"
 msgstr "ជំនួយ"
 
-#. i18n: file: multiselecttool.ui:14
+#. i18n: ectx: property (text), widget (KPushButton, buttonOk)
+#. i18n: ectx: property (text), widget (QPushButton, buttonOk)
+#: inputdir.ui:198 multiselecttool.ui:247 namepartbase.ui:534 rename.ui:1713
+#: timestamp.ui:311
+msgid "&OK"
+msgstr "យល់ព្រម"
+
+#: main.cpp:40
+msgid "A batch renaming tool for KDE"
+msgstr "ក្រុម​ដែល​មាន​ឧបករណ៍​សម្រាប់ KDE"
+
+#: main.cpp:51
+msgid "(C) 2003 - 2011 Spiros Georgaras"
+msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៣ ២០១១ ដោយ Spiros Georgaras"
+
+#: main.cpp:52
+msgid "Spiros Georgaras"
+msgstr "Spiros Georgaras"
+
+#: main.cpp:56
+msgid "Disable profiles"
+msgstr "បិទ​ទម្រង់"
+
+#: main.cpp:57
+msgid "File(s) to be renamed, or"
+msgstr "ឯកសារ​ត្រូវ​បាន​ប្ដូរ​ឈ្មោះ ​ឬ"
+
+#: main.cpp:58
+msgid "Folders to be renamed, or"
+msgstr "ថត​ត្រូវ​បាន​ប្ដូរ​ឈ្មោះ ឬ"
+
+#: main.cpp:59
+msgid "Location of files to rename"
+msgstr "ទីតាំង​ឯកសារ​ត្រូវ​ប្ដូរ​ឈ្មោះ"
+
+#: main.cpp:127 main.cpp:243 main.cpp:254 main.cpp:258 rename.cpp:1503
+msgid ""
+"Memory allocation error\n"
+"\n"
+"The program could not allocate memory needed for its execution. Close some "
+"applications and try again"
+msgstr ""
+"កំហុស​ក្នុង​ការ​​បម្រុង​ទុក​​អង្គ​ចងចាំ\n"
+"\n"
+"កម្មវិធី​​មិន​អាច​បម្រុងទុក​អង្គ​ចងចាំ​ដែល​ត្រូវ​ការ​ប្រតិបត្តិ​របស់​វា​បាន​ទេ ។ បិទ​កម្មវិធី​ ហើយ​ព្យាយាម​ម្ដងទៀត"
+
+#: main.cpp:141
+#, kde-format
+msgid ""
+"Directory '%1' can not be renamed\n"
+"You don't have write permission to this directory"
+msgstr ""
+"មិន​អាច​ប្ដូរ​ឈ្មោះ​ថត '%1' បាន​​ឡើយ\n"
+"អ្នក​គ្មាន​​​​សិទ្ធិ​សរសេរ​​ទៅកាន់​ថត​នេះ​ឡើយ"
+
+#: main.cpp:181
+#, kde-format
+msgid ""
+"File '%1' does not exist\n"
+"Please check your selection and try again"
+msgstr ""
+"គ្មាន​ឯកសារ '%1' ឡើយ\n"
+"សូម​ពិនិត្យមើល​ជម្រើស​របស់​អ្នក ហើយ​ព្យាយាម​ម្ដងទៀត"
+
+#: main.cpp:189
+#, kde-format
+msgid ""
+"File '%1' can not be renamed\n"
+"You don't have write permission to this file"
+msgstr ""
+"មិន​អាច​ប្ដូរ​ឈ្មោះ​ឯកសារ '%1' បាន​ទេ\n"
+"អ្នក​មិន​មាន​សិទ្ធិ​សរសេរ​ទៅកាន់​ឯកសារ​នេះ​បាន​ទេ"
+
+#: main.cpp:198
+msgid ""
+"Invalid file type selected\n"
+"You can rename normal files or directories"
+msgstr ""
+"បាន​ជ្រើស​ប្រភេទ​ឯកសារ​​មិន​ត្រឹមត្រូវ\n"
+"អ្នក​អាច​ប្ដូរ​ឈ្មោះ​ធម្មតា​ ឬ​ថត​បាន"
+
+#: main.cpp:202
+msgid ""
+"Invalid selection\n"
+"You can not mix files and directories in the same renaming function"
+msgstr ""
+"ជ្រើស​ឯកសារ​មិន​ត្រឹមត្រូវ\n"
+"អ្នក​​​មិន​អាច​ដាក់​ឯកសារ និង​ថត​ចូល​គ្មាន​នៅ​ក្នុង​​ការ​ប្ដូរ​ឈ្មោះ​មុន​ងារ​ដូច​គ្នា​បាន​ទេ"
+
+#: main.cpp:207
+msgid ""
+"Invalid selection\n"
+"The files must be in the same directory"
+msgstr ""
+"ជម្រើស​មិន​ត្រឹមត្រូវ\n"
+"ឯកសារ​ត្រូវ​បាន​ដាក់​នៅ​ក្នុង​ថត​ដូច​គ្នា"
+
+#: main.cpp:214
+msgid ""
+"Invalid selection\n"
+"You can't rename the current or parent directory"
+msgstr ""
+"ជម្រើស​មិន​ត្រឹមត្រូវ\n"
+"អ្នក​មិន​អាច​ប្ដូរ​ឈ្មោះ​ថត​មេ ឬ​ថត​បច្ចុប្បន្ន​បាន​ឡើយ"
+
+#: main.cpp:250
+#, kde-format
+msgid "<p>Folder <b>%1</b> is empty!!!</p>"
+msgstr "<p>ថត <b>%1</b> ទទេ !!!</p>"
+
+#: multiselecttool.cpp:192
+msgid "Remove from current selection"
+msgstr "យក​ចេញ​ពី​ជម្រើស​បច្ចុប្បន្ន"
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkAdd)
+#: multiselecttool.cpp:194 multiselecttool.ui:141
+msgid "Add to current selection"
+msgstr "បន្ថែម​ទៅ​ជម្រើស​បច្ចុប្បន្ន"
+
 #. i18n: ectx: property (windowTitle), widget (QDialog, multiSelTool)
-#: rc.cpp:261
+#: multiselecttool.ui:14
 msgid "Search string"
 msgstr "ឃ្លា​ស្វែងរក"
 
-#. i18n: file: multiselecttool.ui:41
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:264
+#: multiselecttool.ui:41
 msgid ""
 "<p>Please insert a string to be used to select items in <b>GwenRename</b> "
 "item list</p>"
 msgstr "<p>សូម​បញ្ចូល​ឃ្លា ដើម្បី​​ជ្រើស​ធាតុ​នៅ​ក្នុង <b>GwenRename</b> បញ្ជី​ធាតុ</p>"
 
-#. i18n: file: multiselecttool.ui:77
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:267
+#: multiselecttool.ui:77
 msgid "Search string:"
 msgstr "ឃ្លា​ស្វែងរក ៖"
 
-#. i18n: file: multiselecttool.ui:111
 #. i18n: ectx: property (text), widget (QCheckBox, chkCaseSensitive)
-#: rc.cpp:270
+#: multiselecttool.ui:111
 msgid "Case sensitive search"
 msgstr "ការ​ស្វែងរក​ប្រកាន់​តួអក្សរ​តួច​ធំ"
 
-#. i18n: file: multiselecttool.ui:122
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkInvert)
-#: rc.cpp:273
+#: multiselecttool.ui:122
 msgid ""
 "<p><b>Invert selection in item list</b><br/><br/>\n"
 "When checked, only items that do <b>not</b> match the search string will be "
@@ -669,15 +262,13 @@ msgstr ""
 "<p><b>ជម្រើស​ដាក់​បញ្ច្រាស​នៅ​ក្នុង​បញ្ជី​ធាតុ</b><br/><br/>\n"
 "នៅ​ពេល​ដែល​បាន​គូស​ធីក តែ​ធាតុ​ដែល​បាន​ធ្វើ​ប៉ុណ្ណោះ <b>មិន</b> ផ្គូផ្គង​ឃ្លា​ស្វែងរក​នឹង​ត្រូវ​បាន​ជ្រើស</p>"
 
-#. i18n: file: multiselecttool.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, chkInvert)
-#: rc.cpp:277
+#: multiselecttool.ui:125
 msgid "Invert selection in item list"
 msgstr "ជម្រើស​ដាក់​បញ្ច្រាស​នៅ​ក្នុង​បញ្ជី​ធាតុ"
 
-#. i18n: file: multiselecttool.ui:138
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkAdd)
-#: rc.cpp:280
+#: multiselecttool.ui:138
 msgid ""
 "<p><b>Add to current selection</b><br/><br/>\n"
 "Normally, this operation will replace your current selection.<br/><br/>\n"
@@ -694,139 +285,124 @@ msgstr ""
 "<b>ចំណាំ</b> ៖ ប្រសិនបើ <i>​ជម្រើស​ដាក់​បញ្ច្រាស​នៅ​ក្នុង​បញ្ជី​ធាតុ</i> ត្រូវ​បាន​គូស​ធីក ធាតុ​ដែល​បាន​ជ្រើស​"
 "ដោយ​ប្រតិបត្តិការ​នេះ​នឹង​ត្រូវ​បាន​ <b>យក​ចេញ</b> ពី​ជម្រើស​បច្ចុប្បន្ន ។</p>"
 
-#. i18n: file: multiselecttool.ui:141
-#. i18n: ectx: property (text), widget (QCheckBox, chkAdd)
-#: rc.cpp:286 multiselecttool.cpp:194
-msgid "Add to current selection"
-msgstr "បន្ថែម​ទៅ​ជម្រើស​បច្ចុប្បន្ន"
-
-#. i18n: file: multiselecttool.ui:153
 #. i18n: ectx: property (text), widget (QCheckBox, regexpContentCb)
-#: rc.cpp:289
+#: multiselecttool.ui:153
 msgid "Regular expression"
 msgstr "កន្សោម​ធម្មតា"
 
-#. i18n: file: multiselecttool.ui:194
 #. i18n: ectx: property (text), widget (KPushButton, editRegExp)
-#: rc.cpp:292
+#: multiselecttool.ui:194
 msgid "Edit..."
 msgstr "កែសម្រួល..."
 
-#. i18n: file: inputdir.ui:32
-#. i18n: ectx: property (windowTitle), widget (QDialog, InputDir)
-#: rc.cpp:304 inputdir.cpp:80
-msgid "Folder selection"
-msgstr "ជម្រើស​ថត"
+#: namepartbase.cpp:31 namepartbase.cpp:44
+msgid ""
+"Please select part of the <b>original</b> filename to be included in the "
+"<b>new</b> filename"
+msgstr ""
+"សូម​ជ្រើស​ផ្នែក​របស់​ឈ្មោះ​ឯកសារ <b>ដើម</b> ដែល​ត្រូវ​បាន​រួម​បញ្ចូល​នៅ​ក្នុង​ឈ្មោះ​ឯកសារ​ <b>ថ្មី</b>"
 
-#. i18n: file: inputdir.ui:81
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:307
-msgid "Please select the location of the files you want to rename"
-msgstr "សូម​ជ្រើស​ទីតាំង​ឯកសារ​ដែល​អ្នក​ចង់​ប្ដូរ​ឈ្មោះ"
-
-#. i18n: file: inputdir.ui:104
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:310
-msgid "Folder:"
-msgstr "ថត ៖"
-
-#. i18n: file: namepartbase.ui:14
 #. i18n: ectx: property (windowTitle), widget (QDialog, namePartBase)
-#: rc.cpp:322 rename.cpp:212
+#: namepartbase.ui:14 rename.cpp:212
 msgid "Original name"
 msgstr "ឈ្មោះ​ដើម"
 
-#. i18n: file: namepartbase.ui:58
 #. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
-#: rc.cpp:325
+#: namepartbase.ui:58
 msgid "Input:"
 msgstr "បញ្ចូល ៖"
 
-#. i18n: file: namepartbase.ui:90
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:328
+#: namepartbase.ui:90
 msgid "Matched:"
 msgstr "ដែល​ផ្គូផ្គង ៖"
 
-#. i18n: file: namepartbase.ui:125
 #. i18n: ectx: property (text), widget (QCheckBox, chkFixed)
-#: rc.cpp:331
+#: namepartbase.ui:125
 msgid "Use this match"
 msgstr "ប្រើ​ការ​ផ្គូផ្គង​នេះ"
 
-#. i18n: file: namepartbase.ui:137
 #. i18n: ectx: property (text), widget (QLabel, tlSample)
-#: rc.cpp:334
+#: namepartbase.ui:137
 msgid "Output:"
 msgstr "លទ្ធផល ៖"
 
-#. i18n: file: namepartbase.ui:180
 #. i18n: ectx: property (title), widget (QGroupBox, grpMatch)
-#: rc.cpp:337
+#: namepartbase.ui:180
 msgid "Match to"
 msgstr "ផ្គូផ្គង​ទៅកាន់"
 
-#. i18n: file: namepartbase.ui:186
 #. i18n: ectx: property (text), widget (QRadioButton, partOfFilename)
-#: rc.cpp:340
+#: namepartbase.ui:186
 msgid "Part of filename"
 msgstr "ផ្នែក​របស់​ឈ្មោះ​ឯកសារ"
 
-#. i18n: file: namepartbase.ui:220
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:343
+#: namepartbase.ui:220
 msgid "Start at character:"
 msgstr "ចាប់ផ្ដើម​នៅ​តួអក្សរ ៖"
 
-#. i18n: file: namepartbase.ui:258
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:346
+#: namepartbase.ui:258
 msgid "Number of characters:"
 msgstr "ចំនួន​តួអក្សរ"
 
-#. i18n: file: namepartbase.ui:294
 #. i18n: ectx: property (text), widget (QRadioButton, chkSearchString)
-#: rc.cpp:349
+#: namepartbase.ui:294
 msgid "Search for:"
 msgstr "ស្វែងរក ៖"
 
-#. i18n: file: namepartbase.ui:322
 #. i18n: ectx: property (title), widget (QGroupBox, grpOutOptions)
-#: rc.cpp:352
+#: namepartbase.ui:322
 msgid "Output options"
 msgstr "ជម្រើស​លទ្ធផល"
 
-#. i18n: file: namepartbase.ui:346
+#. i18n: ectx: property (text), widget (QCheckBox, nOriginal)
+#. i18n: ectx: property (text), widget (QRadioButton, origName)
+#: namepartbase.ui:334 rename.ui:179
+msgid "Use original name"
+msgstr "ប្រើ​ឈ្មោះ​ដើម"
+
 #. i18n: ectx: property (text), widget (QRadioButton, chkReplace)
-#: rc.cpp:358
+#: namepartbase.ui:346
 msgid "Replace with:"
 msgstr "ជំនួស​ជាមួយ ៖"
 
-#. i18n: file: namepartbase.ui:374
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:361
+#: namepartbase.ui:374
 msgid "Misc"
 msgstr "ផ្សេងៗ"
 
-#. i18n: file: namepartbase.ui:508
+#. i18n: ectx: property (text), widget (QRadioButton, nLCase)
+#. i18n: ectx: property (text), widget (QCheckBox, rLExt)
+#. i18n: ectx: property (text), widget (QCheckBox, nLCase)
+#: namepartbase.ui:404 rename.ui:230 rename.ui:1228
+msgid "Convert to lowercase"
+msgstr "បម្លែង​ទៅ​អក្សរ​តូច"
+
+#. i18n: ectx: property (text), widget (QRadioButton, nUCase)
+#. i18n: ectx: property (text), widget (QCheckBox, rUExt)
+#. i18n: ectx: property (text), widget (QCheckBox, nUCase)
+#: namepartbase.ui:420 rename.ui:246 rename.ui:1238
+msgid "Convert to uppercase"
+msgstr "បម្លែង​ទៅ​អក្សរ​ធំ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, nFCap)
+#. i18n: ectx: property (text), widget (QCheckBox, nFCap)
+#: namepartbase.ui:453 rename.ui:279
+msgid "Capitalize first letter"
+msgstr "អក្សរ​ដំបូង​សរសេរ​ជា​អក្សរ​ពុម្ព"
+
+#. i18n: ectx: property (text), widget (QRadioButton, nSCap)
+#. i18n: ectx: property (text), widget (QCheckBox, nSCap)
+#: namepartbase.ui:469 rename.ui:295
+msgid "Capitalize starting letters"
+msgstr "ចាប់ផ្ដើម​​អក្សរ​សរសេរ​ជា​អក្សរ​ពុម្ព"
+
 #. i18n: ectx: property (shortcut), widget (QPushButton, buttonHelp)
-#: rc.cpp:379
+#: namepartbase.ui:508
 msgid "F1"
 msgstr "F1"
-
-#: initaskmode.cpp:33 initaskmode.cpp:42
-msgid "Mode selection"
-msgstr "ជម្រើស​របៀប"
-
-#: initaskmode.cpp:48 initaskmode.cpp:75
-#, kde-format
-msgid ""
-"<p>The folder <b>%1</b> is the only parameter passed to <b>GwenRename</b>."
-"<br/><br/>Do you want to rename this folder, or the files contained in it?</"
-"p>"
-msgstr ""
-"<p>ថត <b>%1</b> ត្រូវ​បាន​ហុច​​តែ​ប៉ារ៉ាម៉ែត្រ​ទៅកាន់ <b>GwenRename</b> ។<br/><br/>តើ​អ្នក​ចង់​"
-"ប្ដូរ​ឈ្មោះ​ថត​​នេះ ឬ​ឯកសារ​ដែល​មាន​​នៅ​ក្នុង​ថត​នេះ​ដែរ​ឬ​ទេ ?</p>"
 
 #: rename.cpp:168
 msgid "Show <b>Name / Prefix - Suffix</b> widgets"
@@ -843,6 +419,11 @@ msgstr "បង្ហាញ <b>ផ្នែក​បន្ថែម / ទម្�
 #: rename.cpp:213
 msgid "New name"
 msgstr "ឈ្មោះ​ថ្មី"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, prNew)
+#: rename.cpp:261 rename.ui:1577
+msgid "New profile"
+msgstr "ទម្រង់​ថ្មី"
 
 #: rename.cpp:270 rename.cpp:1135 rename.cpp:3238
 #, kde-format
@@ -879,17 +460,6 @@ msgstr ""
 "កំហុស​ក្នុង​ការ​ប្ដូរ​ឈ្មោះ​ឯកសារ \"%1\"\n"
 "\n"
 "ស្ដារ​ស្គ្រីប​ដែល​មាន​ឈ្មោះ \"gwenrename.restore\" ត្រូវ​បាន​សរសេរ​នៅ​ក្នុង​ថត​ការងារ"
-
-#: rename.cpp:1503 main.cpp:127 main.cpp:243 main.cpp:254 main.cpp:258
-msgid ""
-"Memory allocation error\n"
-"\n"
-"The program could not allocate memory needed for its execution. Close some "
-"applications and try again"
-msgstr ""
-"កំហុស​ក្នុង​ការ​​បម្រុង​ទុក​​អង្គ​ចងចាំ\n"
-"\n"
-"កម្មវិធី​​មិន​អាច​បម្រុងទុក​អង្គ​ចងចាំ​ដែល​ត្រូវ​ការ​ប្រតិបត្តិ​របស់​វា​បាន​ទេ ។ បិទ​កម្មវិធី​ ហើយ​ព្យាយាម​ម្ដងទៀត"
 
 #: rename.cpp:1507
 msgid ""
@@ -1014,108 +584,243 @@ msgstr "បង្កើត​ជម្រើស​ពី​បញ្ជី​ច
 msgid "Items containing a string"
 msgstr "ធាតុ​ដែល​មាន​ឃ្លា"
 
-#: main.cpp:40
-msgid "A batch renaming tool for KDE"
-msgstr "ក្រុម​ដែល​មាន​ឧបករណ៍​សម្រាប់ KDE"
+#. i18n: ectx: property (text), widget (QCheckBox, rShow)
+#: rename.ui:61
+msgid "Show all items"
+msgstr "បង្ហាញ​ធាតុ​ទាំងអស់"
 
-#: main.cpp:51
-msgid "(C) 2003 - 2011 Spiros Georgaras"
-msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៣ ២០១១ ដោយ Spiros Georgaras"
+#. i18n: ectx: property (toolTip), widget (KLed, kLed1)
+#. i18n: ectx: property (toolTip), widget (QLabel, lblLed1)
+#. i18n: ectx: property (toolTip), widget (KLed, kLed2)
+#. i18n: ectx: property (toolTip), widget (QLabel, lblLed2)
+#. i18n: ectx: property (toolTip), widget (KLed, kLed3)
+#. i18n: ectx: property (toolTip), widget (QLabel, lblLed3)
+#: rename.ui:119 rename.ui:135 rename.ui:600 rename.ui:619 rename.ui:1136
+#: rename.ui:1152
+msgid "Show / Hide widgets"
+msgstr "បង្ហាញ / លាក់​ធាតុ​ក្រាហ្វិក"
 
-#: main.cpp:52
-msgid "Spiros Georgaras"
-msgstr "Spiros Georgaras"
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
+#: rename.ui:168
+msgid "Name"
+msgstr "ឈ្មោះ"
 
-#: main.cpp:56
-msgid "Disable profiles"
-msgstr "បិទ​ទម្រង់"
+#. i18n: ectx: property (text), widget (QCheckBox, nSpecify)
+#: rename.ui:308
+msgid "Specify name:"
+msgstr "បញ្ជាក់​ឈ្មោះ ៖"
 
-#: main.cpp:57
-msgid "File(s) to be renamed, or"
-msgstr "ឯកសារ​ត្រូវ​បាន​ប្ដូរ​ឈ្មោះ ​ឬ"
+#. i18n: ectx: property (toolTip), widget (KPushButton, partName)
+#. i18n: ectx: property (toolTip), widget (KPushButton, pPartName)
+#. i18n: ectx: property (toolTip), widget (KPushButton, sPartName)
+#: rename.ui:361 rename.ui:486 rename.ui:562
+msgid "Use part of the original name"
+msgstr "ប្រើ​ផ្នែក​របស់​ឈ្មោះ​ដើម"
 
-#: main.cpp:58
-msgid "Folders to be renamed, or"
-msgstr "ថត​ត្រូវ​បាន​ប្ដូរ​ឈ្មោះ ឬ"
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox4)
+#: rename.ui:384
+msgid "Prefix - Suffix"
+msgstr "បុព្វបទ - បច្ច័យ"
 
-#: main.cpp:59
-msgid "Location of files to rename"
-msgstr "ទីតាំង​ឯកសារ​ត្រូវ​ប្ដូរ​ឈ្មោះ"
+#. i18n: ectx: property (text), widget (QLabel, lPref)
+#: rename.ui:392
+msgid "Prefix:"
+msgstr "បុព្វបទ ៖"
 
-#: main.cpp:141
-#, kde-format
+#. i18n: ectx: property (text), widget (QLabel, lSuf)
+#: rename.ui:405
+msgid "Suffix:"
+msgstr "បច្ច័យ ៖"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, pTime)
+#. i18n: ectx: property (toolTip), widget (QPushButton, sTime)
+#: rename.ui:461 rename.ui:537
+msgid "Use time-stamping info"
+msgstr "ប្រើ​ព័ត៌មាន​ពេលវេលា​ដែល​បាន​បោះត្រា"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox5)
+#: rename.ui:657
+msgid "Miscellaneous"
+msgstr "ផ្សេងៗ​គ្នា"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, sort)
+#: rename.ui:664
 msgid ""
-"Directory '%1' can not be renamed\n"
-"You don't have write permission to this directory"
+"<p><b>Numeric sorting</b></p>\n"
+"<p>When this option is enabled, the original names are sorted taking into "
+"account their numeric value (when possible)</p>"
 msgstr ""
-"មិន​អាច​ប្ដូរ​ឈ្មោះ​ថត '%1' បាន​​ឡើយ\n"
-"អ្នក​គ្មាន​​​​សិទ្ធិ​សរសេរ​​ទៅកាន់​ថត​នេះ​ឡើយ"
+"<p><b>តម្រៀប​ជា​លេខ</b></p>\n"
+"<p>នៅ​ពេល​ជម្រើស​ត្រូវ​បាន​បើក ឈ្មោះ​ដើម​នឹង​ត្រូវ​បាន​តម្រៀប​​ទៅកាន់​គណនី​តម្លៃ​ជា​លេខ​របស់​ពួក​វា (នៅ​ពេល​ដែល​"
+"អាច​ធ្វើ​បាន)</p>"
 
-#: main.cpp:181
-#, kde-format
+#. i18n: ectx: property (text), widget (QCheckBox, sort)
+#: rename.ui:667
+msgid "Use numeric sorting"
+msgstr "ប្រើ​ការ​តម្រៀប​ជា​លេខ"
+
+#. i18n: ectx: property (text), widget (QCheckBox, rShuffle)
+#: rename.ui:691
+msgid "Shuffle folders"
+msgstr "រៀបចំ​ថត"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, reRandomize)
+#: rename.ui:716
+msgid "Redo"
+msgstr "ធ្វើ​វិញ"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox6)
+#: rename.ui:753
+msgid "Space manipulation"
+msgstr "ការ​បែងចែក​ទំហំ"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: rename.ui:767
+msgid "Convert space characters to"
+msgstr "បម្លែង​ចន្លោះ​តួអក្សរ​ទៅកាន់"
+
+#. i18n: ectx: property (text), widget (QCheckBox, spaceToUnder)
+#. i18n: ectx: property (text), widget (QCheckBox, underToSpace)
+#: rename.ui:783 rename.ui:842
+msgid "underscore"
+msgstr "គូសបន្ទាត់​ពីក្រោម"
+
+#. i18n: ectx: property (text), widget (QCheckBox, spaceToDash)
+#. i18n: ectx: property (text), widget (QCheckBox, dashToSpace)
+#: rename.ui:793 rename.ui:855
+msgid "dash"
+msgstr "ដាច់ៗ"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: rename.ui:826
+msgid "Convert to space characters from"
+msgstr "បម្លែង​ទៅកាន់​ចន្លោះ​តួអក្សរ​ពី"
+
+#. i18n: ectx: property (title), widget (QGroupBox, countBox)
+#: rename.ui:890
+msgid "Counter"
+msgstr "ច្រាស"
+
+#. i18n: ectx: property (text), widget (QCheckBox, countEnable)
+#: rename.ui:896
+msgid "Enable Counter"
+msgstr "បើក​ច្រាស"
+
+#. i18n: ectx: property (text), widget (QLabel, lStart)
+#: rename.ui:922
+msgid "Start:"
+msgstr "ចាប់ផ្ដើម ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, lStep)
+#: rename.ui:935
+msgid "Step:"
+msgstr "ជំហាន ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, lDigits)
+#: rename.ui:948
+msgid "Number of Digits:"
+msgstr "ចំនួន​តួលេខ ៖"
+
+#. i18n: ectx: property (text), widget (QCheckBox, rWidth)
+#: rename.ui:1058
+msgid "Same number of digits"
+msgstr "ចំនួន​តួលេខ​​ស្នើ​គ្នា"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, rAllow)
+#: rename.ui:1097
 msgid ""
-"File '%1' does not exist\n"
-"Please check your selection and try again"
+"<p><b>'Relaxed' numbering</b></p>\n"
+"<p>When this option is enabled, the program will find the files that match "
+"the renaming criteria but are not selected for renaming, and adjust the "
+"starting value of the counter so that the resulting filenames will follow "
+"the last existing file. This means that the starting value of the counter "
+"may be different than the one defined by the user.</p>"
 msgstr ""
-"គ្មាន​ឯកសារ '%1' ឡើយ\n"
-"សូម​ពិនិត្យមើល​ជម្រើស​របស់​អ្នក ហើយ​ព្យាយាម​ម្ដងទៀត"
+"<p><b>លេខរៀង 'Relaxed' </b></p>\n"
+"<p>នៅ​ពេល​ជម្រើស​នេះ​ត្រូវ​បាន​បើក កម្មវិធី​នឹង​រក​ឃើញ​ឯកសារ​ដែល​ផ្គូផ្គង​លក្ខណវិនិច្ឆ័យ ប៉ុន្តែ​​មិន​ត្រូវ​បាន​"
+"ជ្រើស សម្រាប់​ការ​ប្ដូរ​ឈ្មោះ​ឡើយ ហើយ​លៃ​តម្រូវ​​តម្លៃ​ចាប់ផ្ដើម​​បញ្ច្រាស ដូច្នេះ​ឈ្មោះ​ឯកសារ​ដែល​ជា​លទ្ធផល​នឹង​"
+"អនុវត្ត​ទៅតាម​ឯកសារ​ដែល​មាន​ស្រាប់​ចុងក្រោយ ។ នេះ​មាន​ន័យ​ថា​​តម្លៃ​ចាប់ផ្ដើម​ច្រាស​អាច​ខុស​គ្នា​ពី​តម្លៃ​ដែល​"
+"អ្នក​ប្រើ​បាន​កំណត់ ។</p>"
 
-#: main.cpp:189
-#, kde-format
-msgid ""
-"File '%1' can not be renamed\n"
-"You don't have write permission to this file"
-msgstr ""
-"មិន​អាច​ប្ដូរ​ឈ្មោះ​ឯកសារ '%1' បាន​ទេ\n"
-"អ្នក​មិន​មាន​សិទ្ធិ​សរសេរ​ទៅកាន់​ឯកសារ​នេះ​បាន​ទេ"
+#. i18n: ectx: property (text), widget (QCheckBox, rAllow)
+#: rename.ui:1100
+msgid "Use 'relaxed' numbering"
+msgstr "ប្រើ​លេខ​រៀង 'relaxed'"
 
-#: main.cpp:198
-msgid ""
-"Invalid file type selected\n"
-"You can rename normal files or directories"
-msgstr ""
-"បាន​ជ្រើស​ប្រភេទ​ឯកសារ​​មិន​ត្រឹមត្រូវ\n"
-"អ្នក​អាច​ប្ដូរ​ឈ្មោះ​ធម្មតា​ ឬ​ថត​បាន"
+#. i18n: ectx: property (title), widget (QGroupBox, extBox)
+#: rename.ui:1191
+msgid "Extension"
+msgstr "ផ្នែក​បន្ថែម"
 
-#: main.cpp:202
-msgid ""
-"Invalid selection\n"
-"You can not mix files and directories in the same renaming function"
-msgstr ""
-"ជ្រើស​ឯកសារ​មិន​ត្រឹមត្រូវ\n"
-"អ្នក​​​មិន​អាច​ដាក់​ឯកសារ និង​ថត​ចូល​គ្មាន​នៅ​ក្នុង​​ការ​ប្ដូរ​ឈ្មោះ​មុន​ងារ​ដូច​គ្នា​បាន​ទេ"
+#. i18n: ectx: property (text), widget (QCheckBox, rSelExt)
+#: rename.ui:1200
+msgid "Use original extension"
+msgstr "ប្រើ​ផ្នែក​បន្ថែម​ដើម"
 
-#: main.cpp:207
-msgid ""
-"Invalid selection\n"
-"The files must be in the same directory"
-msgstr ""
-"ជម្រើស​មិន​ត្រឹមត្រូវ\n"
-"ឯកសារ​ត្រូវ​បាន​ដាក់​នៅ​ក្នុង​ថត​ដូច​គ្នា"
+#. i18n: ectx: property (text), widget (QLabel, lExt)
+#: rename.ui:1268
+msgid "New extension:"
+msgstr "ផ្នែក​បន្ថែម​ថ្មី ៖"
 
-#: main.cpp:214
-msgid ""
-"Invalid selection\n"
-"You can't rename the current or parent directory"
-msgstr ""
-"ជម្រើស​មិន​ត្រឹមត្រូវ\n"
-"អ្នក​មិន​អាច​ប្ដូរ​ឈ្មោះ​ថត​មេ ឬ​ថត​បច្ចុប្បន្ន​បាន​ឡើយ"
+#. i18n: ectx: property (text), widget (QCheckBox, chkFullExt)
+#: rename.ui:1310
+msgid "Use compound extensions"
+msgstr "ប្រើ​ផ្នែក​បន្ថែម​សមាស"
 
-#: main.cpp:250
-#, kde-format
-msgid "<p>Folder <b>%1</b> is empty!!!</p>"
-msgstr "<p>ថត <b>%1</b> ទទេ !!!</p>"
+#. i18n: ectx: property (toolTip), widget (KPushButton, btNewExt)
+#: rename.ui:1348
+msgid "New extension"
+msgstr "កន្សោម​ថ្មី"
 
-#: multiselecttool.cpp:192
-msgid "Remove from current selection"
-msgstr "យក​ចេញ​ពី​ជម្រើស​បច្ចុប្បន្ន"
+#. i18n: ectx: property (toolTip), widget (KPushButton, btSaveExt)
+#: rename.ui:1376
+msgid "Save extension"
+msgstr "រក្សាទុក​ផ្នែក​បន្ថែម"
 
-#: namepartbase.cpp:31 namepartbase.cpp:44
-msgid ""
-"Please select part of the <b>original</b> filename to be included in the "
-"<b>new</b> filename"
-msgstr ""
-"សូម​ជ្រើស​ផ្នែក​របស់​ឈ្មោះ​ឯកសារ <b>ដើម</b> ដែល​ត្រូវ​បាន​រួម​បញ្ចូល​នៅ​ក្នុង​ឈ្មោះ​ឯកសារ​ <b>ថ្មី</b>"
+#. i18n: ectx: property (toolTip), widget (KPushButton, btDelExt)
+#: rename.ui:1401
+msgid "Delete extension"
+msgstr "លុប​ផ្នែក​បន្ថែម"
+
+#. i18n: ectx: property (title), widget (QGroupBox, btngrpProfiles)
+#: rename.ui:1424
+msgid "Profiles"
+msgstr "ទម្រង់"
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkProfile)
+#: rename.ui:1433
+msgid "Use profiles"
+msgstr "ប្រើ​ទម្រង់"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, prLoad)
+#: rename.ui:1508
+msgid "Load default profile"
+msgstr "ផ្ទុក​ទម្រង់​លំនាំដើម"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, prDefault)
+#: rename.ui:1536
+msgid "Use as default profile"
+msgstr "ប្រើ​ជា​ទម្រង់​លំនាំដើម"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, prEdit)
+#: rename.ui:1605
+msgid "Rename profile"
+msgstr "ប្ដូរ​ឈ្មោះ​ទម្រង់"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, prSave)
+#: rename.ui:1633
+msgid "Save profile"
+msgstr "រក្សាទុក​ទម្រង់"
+
+#. i18n: ectx: property (toolTip), widget (KPushButton, prDelete)
+#: rename.ui:1661
+msgid "Delete profile"
+msgstr "លុប​ទម្រង់"
+
+#. i18n: ectx: property (text), widget (KPushButton, buttonAbout)
+#: rename.ui:1690
+msgid "&About"
+msgstr "អំពី"
 
 #: timestamp.cpp:124 timestamp.cpp:224
 msgctxt "Other date format"
@@ -1133,6 +838,11 @@ msgid ""
 msgstr ""
 "វាល​បោះត្រា​ពេលវេលា​គាំទ្រ​ប្រភេទ​កន្សោម ទាំង​កាលបរិច្ឆេទ និង​ពេលវេលា ។ ជម្រើស​ខាងក្រោម​ពិពណ៌នា​អំពី​"
 "កន្សោម​ទាំងនេះ ។"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox2_2)
+#: timestamp.cpp:146 timestamp.ui:95
+msgid "Date Format"
+msgstr "ទ្រង់ទ្រាយ​កាលបរិច្ឆេទ"
 
 #: timestamp.cpp:148
 msgid "These expressions may be used for the date:"
@@ -1238,3 +948,78 @@ msgstr "ប្រើ​ទិដ្ឋភាព ព្រឹក/ល្ងាច 
 msgctxt "This is where the above text was found"
 msgid "Source:"
 msgstr "ប្រភព ៖"
+
+#. i18n: ectx: property (windowTitle), widget (QDialog, tStamp)
+#: timestamp.ui:14
+msgid "Time-stamping"
+msgstr "ពេលវេលា​ដែល​បាន​បោះត្រា"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
+#: timestamp.ui:22
+msgid "Date type"
+msgstr "ប្រភេទ​កាលបរិច្ឆេទ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, rCreation)
+#: timestamp.ui:39
+msgid "Creation date"
+msgstr "កាលបរិច្ឆេទ​បង្កើត"
+
+#. i18n: ectx: property (text), widget (QRadioButton, rModified)
+#: timestamp.ui:61
+msgid "Last modified date"
+msgstr "បាន​កែប្រែ​កាលបរិច្ឆេទ​ចុងក្រោយ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, rRead)
+#: timestamp.ui:80
+msgid "Last read date"
+msgstr "កាលបរិច្ឆេទ​អាន​ចុងក្រោយ"
+
+#. i18n: ectx: property (text), widget (QLabel, lblPredefined)
+#: timestamp.ui:103
+msgid "Predefined expressions:"
+msgstr "កន្សោម​ដែល​បាន​កំណត់​ជា​មុន ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, lblUser)
+#: timestamp.ui:122
+msgid "User defined expressions:"
+msgstr "អ្នក​ប្រើ​បាន​កំណត់​កន្សោម ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: timestamp.ui:138
+msgid "Example:"
+msgstr "ឧទាហរណ៍ ៖"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, lblExample)
+#: timestamp.ui:217
+msgid "Example of expression value"
+msgstr "ឧទាហរណ៍​តម្លៃ​កន្សោម"
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkExif)
+#: timestamp.ui:253
+msgid "Use Exif info when available"
+msgstr "ប្រើ​ព័ត៌មាន Exif ​នៅ​ពេល​ដែល​អាច​រក​បាន"
+
+#. i18n: ectx: property (html), widget (KTextBrowser, txt)
+#: timestamp.ui:276
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
+"p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'DejaVu Sans'; font-size:9pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\"-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; "
+"margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"></"
+"p></body></html>"

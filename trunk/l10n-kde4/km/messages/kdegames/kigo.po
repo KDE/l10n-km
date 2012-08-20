@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kigo\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-08-19 05:13+0200\n"
+"POT-Creation-Date: 2012-08-20 03:44+0200\n"
 "PO-Revision-Date: 2009-10-23 15:12+0700\n"
 "Last-Translator: Morn Met\n"
 "Language-Team: Khmer <kde-i18n-doc@kde.org>\n"
@@ -19,76 +19,172 @@ msgstr ""
 "X-Generator: Lokalize 1.0\n"
 "X-Language: km-KH\n"
 
-#: gui/widgets/setupwidget.cpp:64
-msgid " Stone"
-msgid_plural " Stones"
-msgstr[0] "ថ្ម"
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា"
 
-#: gui/widgets/setupwidget.cpp:168
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info"
+
+#: game/game.cpp:327
 #, kde-format
-msgctxt "Time limit of a game in minutes"
-msgid "%1 minute"
-msgid_plural "%1 minutes"
-msgstr[0] "%1 នាទី"
+msgctxt "%1 stone coordinate"
+msgid "White %1"
+msgstr "ពណ៌​ស​ %1"
 
-#: gui/widgets/setupwidget.cpp:170
+#: game/game.cpp:330 game/game.cpp:400 gui/mainwindow.cpp:393
+msgid "White passed"
+msgstr "ពណ៌​ស​បាន​ឆ្លង​ផុត​"
+
+#: game/game.cpp:336
 #, kde-format
-msgctxt "Time limit of a game, hours, minutes"
-msgid "%1 hour, %2"
-msgid_plural "%1 hours, %2"
-msgstr[0] "%1 ម៉ោង %2"
+msgctxt "%1 stone coordinate"
+msgid "Black %1"
+msgstr "ពណ៌​ខ្មៅ​ %1"
 
-#: gui/widgets/setupwidget.cpp:192
+#: game/game.cpp:339 game/game.cpp:402 gui/mainwindow.cpp:395
+msgid "Black passed"
+msgstr "ពណ៌​ខ្មៅ​បាន​ផុត​ឆ្លង​ផុត​"
+
+#: game/game.cpp:409
+msgid "White resigned"
+msgstr "បាន​បោះ​បង់​ពណ៌​ស"
+
+#: game/game.cpp:411
+msgid "Black resigned"
+msgstr "បាន​បោះ​បង់​ពណ៌​ខ្មៅ"
+
+#: game/game.cpp:419
 #, kde-format
-msgid " of %1"
-msgstr " នៃ %1"
+msgctxt "%1 response from Go engine"
+msgid "White %1"
+msgstr "ពណ៌​ស​ %1"
 
-#: gui/widgets/setupwidget.cpp:235
-msgid "White to play"
-msgstr "អ្នកលេង​ពណ៌​ស"
-
-#. i18n: file: gui/widgets/setupwidget.ui:442
-#. i18n: ectx: property (text), widget (QLabel, playerLabel)
-#: gui/widgets/setupwidget.cpp:237 rc.cpp:122
-msgid "Black to play"
-msgstr "អ្នកលេង​ពណ៌​ខ្មៅ"
-
-#: gui/widgets/gamewidget.cpp:56 gui/widgets/gamewidget.cpp:61
+#: game/game.cpp:421
 #, kde-format
-msgid "Computer (level %1)"
-msgstr "កុំព្យូទ័រ (កម្រិត %1)"
+msgctxt "%1 response from Go engine"
+msgid "Black %1"
+msgstr "ពណ៌​ខ្មៅ​ %1"
 
-#: gui/widgets/gamewidget.cpp:64
-#, kde-format
-msgid "%1 Stone"
-msgid_plural "%1 Stones"
-msgstr[0] "ថ្ម %1"
+#. i18n: ectx: property (title), widget (QGroupBox, backendGroupBox)
+#: gui/config/generalconfig.ui:17
+msgid "Backend"
+msgstr "កម្ម​វិធី​ខាង​ក្រោយ"
 
-#: gui/widgets/gamewidget.cpp:81
-#, kde-format
-msgctxt "Indication who played the last move"
-msgid "%1 (white)"
-msgstr "%1 (ស)"
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: gui/config/generalconfig.ui:23
+msgid "Executable:"
+msgstr "អាច​ប្រតិបត្តិ​បាន ៖"
 
-#: gui/widgets/gamewidget.cpp:83
-#, kde-format
-msgctxt "Indication who played the last move"
-msgid "%1 (black)"
-msgstr "%1 (ខ្មៅ)"
+#. i18n: ectx: property (toolTip), widget (KUrlRequester, engineExecutable)
+#: gui/config/generalconfig.ui:42
+msgid "Select the executable file to start the Go engine"
+msgstr "ជ្រើស​ឯក​សារ​ដែល​អាច​ប្រតិបត្តិ​បាន​ ដើម្បី​ចាប់​ផ្ដើម​ម៉ាស៊ីន  Go "
 
-#: gui/widgets/gamewidget.cpp:92
-msgid "White's turn"
-msgstr "ការ​ផ្លាស់ទី​របស់​ពណ៌​ស"
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: gui/config/generalconfig.ui:49
+msgid "Parameters:"
+msgstr "ប៉ារ៉ាម៉ែត្រ ៖"
 
-#: gui/widgets/gamewidget.cpp:96
-msgid "Black's turn"
-msgstr "កា​​រ​ផ្លាស់​ទី​របស់​ពណ៌​ខ្មៅ"
+#. i18n: ectx: property (toolTip), widget (KLineEdit, engineParameters)
+#: gui/config/generalconfig.ui:62
+msgid "Add here the necessary parameters to start the Engine in GTP mode"
+msgstr "បន្ថែម​ប៉ារ៉ាម៉ែត្រ​ដែល​ចាំបាច់​នៅ​ទីនេះ ដើម្បី​ចាប់ផ្ដើម​ម៉ាស៊ីន​នៅ​ក្នុង​របៀប GTP"
 
-#: gui/widgets/gamewidget.cpp:101 gui/widgets/gamewidget.cpp:102
-#, kde-format
-msgid "%1 capture"
-msgid_plural "%1 captures"
-msgstr[0] "%1 ចាប់យក"
+#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_EngineCommand)
+#: gui/config/generalconfig.ui:75
+msgid "This is the resulting engine command which will be used by Kigo"
+msgstr "នេះ​ជា​ពាក្យ​បញ្ជា​ម៉ាស៊ីន​លទ្ធផល​ដែល​នឹង​ត្រូវ​បាន​ប្រើ​ដោយ Kigo"
+
+#. i18n: ectx: property (toolTip), widget (KLed, engineLed)
+#: gui/config/generalconfig.ui:97
+msgid "Indicates whether the Go engine works correctly"
+msgstr "បង្ហាញ​ថា​តើ​ម៉ាស៊ីន Go ដំណើរការ​យ៉ាង​ត្រឹមត្រូវ​ដែរ​ឬទេ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: gui/config/generalconfig.ui:111
+msgid ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">Please select a Go engine "
+"that supports the <span style=\" font-style:italic;\">GnuGo Text Protocol "
+"(GTP)</span>. The indicator light turns green when the selected backend is "
+"working.</p></body></html>"
+msgstr ""
+"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
+"REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
+"\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
+"weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
+"right:0px; -qt-block-indent:0; text-indent:0px;\">សូម​ជ្រើស​ម៉ាស៊ីន​ Go ដែល​គាំទ្រ​ "
+"<span style=\" font-style:italic;\">ពិធីការ​អត្ថបទ GnuGo  (GTP)</span> ។ ពន្លឺ​ទ្រនិច​"
+"បង្ហាញ​ប្រែ​ជា​ពណ៌​បៃតង​ នៅ​ពេល​កម្មវិធី​ខាង​ក្រោយ​ដែល​បាន​ជ្រើស​កំពុង​ដំណើរការ ។</p></body></html>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, appearanceGroupBox)
+#: gui/config/generalconfig.ui:131
+msgid "Appearance"
+msgstr "រូបរាង"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowBoardLabels)
+#: gui/config/generalconfig.ui:140
+msgid "Display Board Labels"
+msgstr "បង្ហាញ​ស្លាក​ក្ដារ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: gui/config/generalconfig.ui:147
+msgid "Hint Visibility Time:"
+msgstr "ពេល​វេលា​មើល​ឃើញ​ជំនួយ​​ ៖"
+
+#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, kcfg_HintVisibleTime)
+#: gui/config/generalconfig.ui:166
+msgid " Seconds"
+msgstr " វិនាទី"
+
+#. i18n: ectx: Menu (game)
+#: gui/kigoui.rc:6
+msgctxt "@title:menu"
+msgid "&Game"
+msgstr "ល្បែង"
+
+#. i18n: ectx: Menu (move)
+#: gui/kigoui.rc:17
+msgctxt "@title:menu"
+msgid "&Move"
+msgstr "ផ្លាស់ទី"
+
+#. i18n: ectx: Menu (settings)
+#: gui/kigoui.rc:22
+msgctxt "@title:menu"
+msgid "&Settings"
+msgstr "ការ​កំណត់"
+
+#. i18n: ectx: Menu (dockers)
+#: gui/kigoui.rc:24
+msgctxt "@title:menu"
+msgid "&Dockers"
+msgstr "ឧបករណ៍​ចូល​ផែ"
+
+#. i18n: ectx: ToolBar (mainToolBar)
+#: gui/kigoui.rc:33
+msgctxt "@title:menu"
+msgid "Main Toolbar"
+msgstr "របារ​ឧបករណ៍​មេ"
+
+#. i18n: ectx: ToolBar (moveToolBar)
+#: gui/kigoui.rc:39
+msgctxt "@title:menu"
+msgid "Move Toolbar"
+msgstr "ផ្លាស់ទី​របារ​ឧបករណ៍"
 
 #: gui/mainwindow.cpp:106
 msgid "Set up a new game..."
@@ -144,14 +240,6 @@ msgstr "ស្បែក"
 msgid "Backend was changed, restart necessary..."
 msgstr "កម្ម​វិធី​ខាង​ក្រោយ​ត្រូវ​បាន​ផ្លាស់​ប្ដូរ​  ចាប់​ផ្ដើម​ឡើង​វិញ​បើ​ចាំ​បាច់​..."
 
-#: gui/mainwindow.cpp:393 game/game.cpp:330 game/game.cpp:400
-msgid "White passed"
-msgstr "ពណ៌​ស​បាន​ឆ្លង​ផុត​"
-
-#: gui/mainwindow.cpp:395 game/game.cpp:339 game/game.cpp:402
-msgid "Black passed"
-msgstr "ពណ៌​ខ្មៅ​បាន​ផុត​ឆ្លង​ផុត​"
-
 #: gui/mainwindow.cpp:405 gui/mainwindow.cpp:407
 msgctxt "@action"
 msgid "Get More Games..."
@@ -201,433 +289,8 @@ msgctxt "@title:window"
 msgid "Error"
 msgstr "កំហុស"
 
-#: game/game.cpp:327
-#, kde-format
-msgctxt "%1 stone coordinate"
-msgid "White %1"
-msgstr "ពណ៌​ស​ %1"
-
-#: game/game.cpp:336
-#, kde-format
-msgctxt "%1 stone coordinate"
-msgid "Black %1"
-msgstr "ពណ៌​ខ្មៅ​ %1"
-
-#: game/game.cpp:409
-msgid "White resigned"
-msgstr "បាន​បោះ​បង់​ពណ៌​ស"
-
-#: game/game.cpp:411
-msgid "Black resigned"
-msgstr "បាន​បោះ​បង់​ពណ៌​ខ្មៅ"
-
-#: game/game.cpp:419
-#, kde-format
-msgctxt "%1 response from Go engine"
-msgid "White %1"
-msgstr "ពណ៌​ស​ %1"
-
-#: game/game.cpp:421
-#, kde-format
-msgctxt "%1 response from Go engine"
-msgid "Black %1"
-msgstr "ពណ៌​ខ្មៅ​ %1"
-
-#: main.cpp:41
-msgid "Kigo"
-msgstr "Kigo"
-
-#: main.cpp:42
-msgid "KDE Go Board Game"
-msgstr "ល្បែង​ក្ដារ Go របស់​ KDE  "
-
-#: main.cpp:43
-msgid "Copyright (c) 2008-2010 Sascha Peilicke"
-msgstr "រក្សា​សិទ្ធិ​ឆ្នាំ​ ២​០​​​០​៨​ និង​ ២​០​១​០ ដោយ​ Sascha Peilicke"
-
-#: main.cpp:44
-msgid "Sascha Peilicke (saschpe)"
-msgstr "Sascha Peilicke (saschpe)"
-
-#: main.cpp:44
-msgid "Original author"
-msgstr "អ្នកនិពន្ធ​ដើម"
-
-#: main.cpp:46
-msgid "Yuri Chornoivan"
-msgstr "Yuri Chornoivan"
-
-#: main.cpp:46
-msgid "Documentation editor"
-msgstr "កម្ម​វិធី​កែ​សម្រួល​ឯកសារ​"
-
-#: main.cpp:48
-msgid "Arturo Silva"
-msgstr "Arturo Silva"
-
-#: main.cpp:48
-msgid "Default theme designer"
-msgstr "កម្ម​វិធី​រចនា​ស្បែក​លំនាំ​ដើម"
-
-#: main.cpp:55
-msgctxt "@info:shell"
-msgid "Game to load (SGF file)"
-msgstr "ល្បែង​ត្រូវ​ផ្ទុក​ (ឯកសារ​ SGF)"
-
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា"
-
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info"
-
-#. i18n: file: gui/kigoui.rc:6
-#. i18n: ectx: Menu (game)
-#: rc.cpp:5
-msgctxt "@title:menu"
-msgid "&Game"
-msgstr "ល្បែង"
-
-#. i18n: file: gui/kigoui.rc:17
-#. i18n: ectx: Menu (move)
-#: rc.cpp:8
-msgctxt "@title:menu"
-msgid "&Move"
-msgstr "ផ្លាស់ទី"
-
-#. i18n: file: gui/kigoui.rc:22
-#. i18n: ectx: Menu (settings)
-#: rc.cpp:11
-msgctxt "@title:menu"
-msgid "&Settings"
-msgstr "ការ​កំណត់"
-
-#. i18n: file: gui/kigoui.rc:24
-#. i18n: ectx: Menu (dockers)
-#: rc.cpp:14
-msgctxt "@title:menu"
-msgid "&Dockers"
-msgstr "ឧបករណ៍​ចូល​ផែ"
-
-#. i18n: file: gui/kigoui.rc:33
-#. i18n: ectx: ToolBar (mainToolBar)
-#: rc.cpp:17
-msgctxt "@title:menu"
-msgid "Main Toolbar"
-msgstr "របារ​ឧបករណ៍​មេ"
-
-#. i18n: file: gui/kigoui.rc:39
-#. i18n: ectx: ToolBar (moveToolBar)
-#: rc.cpp:20
-msgctxt "@title:menu"
-msgid "Move Toolbar"
-msgstr "ផ្លាស់ទី​របារ​ឧបករណ៍"
-
-#. i18n: file: gui/config/generalconfig.ui:17
-#. i18n: ectx: property (title), widget (QGroupBox, backendGroupBox)
-#: rc.cpp:23
-msgid "Backend"
-msgstr "កម្ម​វិធី​ខាង​ក្រោយ"
-
-#. i18n: file: gui/config/generalconfig.ui:23
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:26
-msgid "Executable:"
-msgstr "អាច​ប្រតិបត្តិ​បាន ៖"
-
-#. i18n: file: gui/config/generalconfig.ui:42
-#. i18n: ectx: property (toolTip), widget (KUrlRequester, engineExecutable)
-#: rc.cpp:29
-msgid "Select the executable file to start the Go engine"
-msgstr "ជ្រើស​ឯក​សារ​ដែល​អាច​ប្រតិបត្តិ​បាន​ ដើម្បី​ចាប់​ផ្ដើម​ម៉ាស៊ីន  Go "
-
-#. i18n: file: gui/config/generalconfig.ui:49
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:32
-msgid "Parameters:"
-msgstr "ប៉ារ៉ាម៉ែត្រ ៖"
-
-#. i18n: file: gui/config/generalconfig.ui:62
-#. i18n: ectx: property (toolTip), widget (KLineEdit, engineParameters)
-#: rc.cpp:35
-msgid "Add here the necessary parameters to start the Engine in GTP mode"
-msgstr "បន្ថែម​ប៉ារ៉ាម៉ែត្រ​ដែល​ចាំបាច់​នៅ​ទីនេះ ដើម្បី​ចាប់ផ្ដើម​ម៉ាស៊ីន​នៅ​ក្នុង​របៀប GTP"
-
-#. i18n: file: gui/config/generalconfig.ui:75
-#. i18n: ectx: property (toolTip), widget (KLineEdit, kcfg_EngineCommand)
-#: rc.cpp:38
-msgid "This is the resulting engine command which will be used by Kigo"
-msgstr "នេះ​ជា​ពាក្យ​បញ្ជា​ម៉ាស៊ីន​លទ្ធផល​ដែល​នឹង​ត្រូវ​បាន​ប្រើ​ដោយ Kigo"
-
-#. i18n: file: gui/config/generalconfig.ui:97
-#. i18n: ectx: property (toolTip), widget (KLed, engineLed)
-#: rc.cpp:41
-msgid "Indicates whether the Go engine works correctly"
-msgstr "បង្ហាញ​ថា​តើ​ម៉ាស៊ីន Go ដំណើរការ​យ៉ាង​ត្រឹមត្រូវ​ដែរ​ឬទេ"
-
-#. i18n: file: gui/config/generalconfig.ui:111
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#: rc.cpp:44
-msgid ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">Please select a Go engine "
-"that supports the <span style=\" font-style:italic;\">GnuGo Text Protocol "
-"(GTP)</span>. The indicator light turns green when the selected backend is "
-"working.</p></body></html>"
-msgstr ""
-"<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
-"REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css"
-"\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans Serif'; font-size:10pt; font-"
-"weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-"
-"right:0px; -qt-block-indent:0; text-indent:0px;\">សូម​ជ្រើស​ម៉ាស៊ីន​ Go ដែល​គាំទ្រ​ "
-"<span style=\" font-style:italic;\">ពិធីការ​អត្ថបទ GnuGo  (GTP)</span> ។ ពន្លឺ​ទ្រនិច​"
-"បង្ហាញ​ប្រែ​ជា​ពណ៌​បៃតង​ នៅ​ពេល​កម្មវិធី​ខាង​ក្រោយ​ដែល​បាន​ជ្រើស​កំពុង​ដំណើរការ ។</p></body></html>"
-
-#. i18n: file: gui/config/generalconfig.ui:131
-#. i18n: ectx: property (title), widget (QGroupBox, appearanceGroupBox)
-#: rc.cpp:51
-msgid "Appearance"
-msgstr "រូបរាង"
-
-#. i18n: file: gui/config/generalconfig.ui:140
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowBoardLabels)
-#: rc.cpp:54
-msgid "Display Board Labels"
-msgstr "បង្ហាញ​ស្លាក​ក្ដារ"
-
-#. i18n: file: gui/config/generalconfig.ui:147
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:57
-msgid "Hint Visibility Time:"
-msgstr "ពេល​វេលា​មើល​ឃើញ​ជំនួយ​​ ៖"
-
-#. i18n: file: gui/config/generalconfig.ui:166
-#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, kcfg_HintVisibleTime)
-#: rc.cpp:60
-msgid " Seconds"
-msgstr " វិនាទី"
-
-#. i18n: file: gui/widgets/setupwidget.ui:30
-#. i18n: ectx: property (text), widget (QLabel, label_12)
-#: rc.cpp:63
-msgid "Board size:"
-msgstr "ទំហំ​ក្ដារ ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:37
-#. i18n: ectx: property (text), widget (QRadioButton, sizeSmall)
-#: rc.cpp:66
-msgid "Tiny (9x9)"
-msgstr "តូច​បំផុត​ (៩​x​៩)"
-
-#. i18n: file: gui/widgets/setupwidget.ui:47
-#. i18n: ectx: property (text), widget (QRadioButton, sizeMedium)
-#: rc.cpp:69
-msgid "Small (13x13)"
-msgstr "តូច (១​៣​x​​១​៣)"
-
-#. i18n: file: gui/widgets/setupwidget.ui:54
-#. i18n: ectx: property (text), widget (QRadioButton, sizeBig)
-#: rc.cpp:72
-msgid "Normal (19x19)"
-msgstr "ធម្មតា (១​​៩​​​x​​១​៩)"
-
-#. i18n: file: gui/widgets/setupwidget.ui:66
-#. i18n: ectx: property (text), widget (QRadioButton, sizeOther)
-#: rc.cpp:75
-msgid "Custom:"
-msgstr "ផ្ទាល់​ខ្លួន​ ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:103
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#. i18n: file: gui/widgets/gamewidget.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#. i18n: file: gui/widgets/setupwidget.ui:103
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#. i18n: file: gui/widgets/gamewidget.ui:19
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#: rc.cpp:78 rc.cpp:173
-msgid "Handicap:"
-msgstr "ឧបសគ្គ​ ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:126
-#. i18n: ectx: property (toolTip), widget (KIntSpinBox, handicapSpinBox)
-#: rc.cpp:81
-msgid ""
-"Handicap stones are an advantage for the black player.\n"
-"Black gets a number of stones on the board before the game starts."
-msgstr ""
-"ថ្ម Handicap គឺជា​ឱកាស​សម្រាប់​អ្នក​លេង​ពណ៌​ខ្មៅ ។\n"
-"អ្នក​លេង​ពណ៌​ខ្មៅ​ស៊ី​ថ្ម​មួយ​ចំនួន​នៅ​លើ​ក្ដារ មុន​នឹង​ល្បែង​ចាប់ផ្ដើម ។"
-
-#. i18n: file: gui/widgets/setupwidget.ui:129
-#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, handicapSpinBox)
-#: rc.cpp:85
-msgid "No handicap"
-msgstr "គ្មាន handicap"
-
-#. i18n: file: gui/widgets/setupwidget.ui:132
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, handicapSpinBox)
-#: rc.cpp:88
-msgid " Stones"
-msgstr " ថ្ម"
-
-#. i18n: file: gui/widgets/setupwidget.ui:154
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#. i18n: file: gui/widgets/setupwidget.ui:397
-#. i18n: ectx: property (text), widget (QLabel, komiStaticLabel)
-#. i18n: file: gui/widgets/gamewidget.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: file: gui/widgets/setupwidget.ui:154
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#. i18n: file: gui/widgets/setupwidget.ui:397
-#. i18n: ectx: property (text), widget (QLabel, komiStaticLabel)
-#. i18n: file: gui/widgets/gamewidget.ui:42
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: rc.cpp:91 rc.cpp:116 rc.cpp:179
-msgid "Komi:"
-msgstr "Komi ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:174
-#. i18n: ectx: property (toolTip), widget (QDoubleSpinBox, komiSpinBox)
-#: rc.cpp:94
-msgid ""
-"Komi are points given to the white player at the end of the game.\n"
-"It balances out the advantage black has by making the first move."
-msgstr ""
-"Komi គឺជា​ពិន្ទុ​ដែល​ផ្ដល់​ឲ្យ​អ្នក​លេង​ពណ៌​ស​នៅ​ពេល​បញ្ចប់​ល្បែង ។\n"
-"វា​ថ្លឹងថ្លែង​អំពី​ផលប្រយោជន៍​ដែល​អ្នក​លេង​ពណ៌​ខ្មៅ​ទទួល​បាន​ដោយ​ការ​ផ្លាស់ទី​ដំបូង ។"
-
-#. i18n: file: gui/widgets/setupwidget.ui:177
-#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, komiSpinBox)
-#: rc.cpp:98
-msgid " Points"
-msgstr "ពិន្ទុ"
-
-#. i18n: file: gui/widgets/setupwidget.ui:231
-#. i18n: ectx: property (text), widget (QLabel, eventStaticLabel)
-#: rc.cpp:101
-msgid "Event:"
-msgstr "ព្រឹត្តិការណ៍ ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:266
-#. i18n: ectx: property (text), widget (QLabel, locationStaticLabel)
-#: rc.cpp:104
-msgid "Location:"
-msgstr "ទីតាំង ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:301
-#. i18n: ectx: property (text), widget (QLabel, dateStaticLabel)
-#: rc.cpp:107
-msgid "Date:"
-msgstr "កាលបរិច្ឆេទ ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:333
-#. i18n: ectx: property (text), widget (QLabel, roundStaticLabel)
-#: rc.cpp:110
-msgid "Round:"
-msgstr "ជុំ ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:365
-#. i18n: ectx: property (text), widget (QLabel, scoreStaticLabel)
-#: rc.cpp:113
-msgid "Score:"
-msgstr "ពិន្ទុ ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:429
-#. i18n: ectx: property (text), widget (QLabel, continueStaticLabel)
-#: rc.cpp:119
-msgid "Continue:"
-msgstr "បន្ដ ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:461
-#. i18n: ectx: property (suffix), widget (KIntSpinBox, startMoveSpinBox)
-#: rc.cpp:125
-msgid " of 999"
-msgstr " នៃ ៩​​​៩​៩"
-
-#. i18n: file: gui/widgets/setupwidget.ui:464
-#. i18n: ectx: property (prefix), widget (KIntSpinBox, startMoveSpinBox)
-#: rc.cpp:128
-msgid "Move "
-msgstr "ផ្លាស់ទី"
-
-#. i18n: file: gui/widgets/setupwidget.ui:483
-#. i18n: ectx: property (text), widget (QLabel, timeStaticLabel)
-#: rc.cpp:131
-msgid "Time limit:"
-msgstr "ម៉ោង​កំណត់ ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:566
-#. i18n: ectx: property (text), widget (QCheckBox, whiteIsComputerCheckBox)
-#: rc.cpp:134
-msgid "&Computer"
-msgstr "កុំព្យូទ័រ"
-
-#. i18n: file: gui/widgets/setupwidget.ui:589
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#. i18n: file: gui/widgets/setupwidget.ui:747
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#. i18n: file: gui/widgets/setupwidget.ui:589
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#. i18n: file: gui/widgets/setupwidget.ui:747
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: rc.cpp:137 rc.cpp:149
-msgid "Name:"
-msgstr "ឈ្មោះ ៖"
-
-#. i18n: file: gui/widgets/setupwidget.ui:622
-#. i18n: ectx: property (text), widget (QLabel, label1)
-#. i18n: file: gui/widgets/setupwidget.ui:799
-#. i18n: ectx: property (text), widget (QLabel, label1_3)
-#. i18n: file: gui/widgets/setupwidget.ui:622
-#. i18n: ectx: property (text), widget (QLabel, label1)
-#. i18n: file: gui/widgets/setupwidget.ui:799
-#. i18n: ectx: property (text), widget (QLabel, label1_3)
-#: rc.cpp:140 rc.cpp:155
-msgid "Weak"
-msgstr "ខ្សោយ"
-
-#. i18n: file: gui/widgets/setupwidget.ui:641
-#. i18n: ectx: property (text), widget (QLabel, label2)
-#. i18n: file: gui/widgets/setupwidget.ui:780
-#. i18n: ectx: property (text), widget (QLabel, label2_3)
-#. i18n: file: gui/widgets/setupwidget.ui:641
-#. i18n: ectx: property (text), widget (QLabel, label2)
-#. i18n: file: gui/widgets/setupwidget.ui:780
-#. i18n: ectx: property (text), widget (QLabel, label2_3)
-#: rc.cpp:143 rc.cpp:152
-msgid "Strong"
-msgstr "ខ្លាំង"
-
-#. i18n: file: gui/widgets/setupwidget.ui:727
-#. i18n: ectx: property (text), widget (QCheckBox, blackIsComputerCheckBox)
-#: rc.cpp:146
-msgid "C&omputer"
-msgstr "កុំព្យូទ័រ"
-
-#. i18n: file: gui/widgets/setupwidget.ui:979
-#. i18n: ectx: property (text), widget (KPushButton, startButton)
-#: rc.cpp:158
-msgid "Start Game"
-msgstr "ចាប់ផ្ដើម​ល្បែង"
-
-#. i18n: file: gui/widgets/errorwidget.ui:21
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:161
+#: gui/widgets/errorwidget.ui:21
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -670,167 +333,396 @@ msgstr ""
 "សម​ស្រប​រួច​ហើយ​ អ្នក​ប្រហែល​ជា​ចង់​កំណត់​​រចនាសម្ព័ន្ធ Kigo ដើម្បី​ប្រើ​ម៉ាស៊ីន​នោះ​ ។ បើ​មិន​អញ្ចឹង​ទេ​ អ្នក​គួរ​តែ​"
 "ដំឡើង​ម៉ាស៊ីន​របស់​ Go  (ដូច​ជា​ GnuGo) ។</span></p></body></html>"
 
-#. i18n: file: gui/widgets/errorwidget.ui:49
 #. i18n: ectx: property (text), widget (KPushButton, configureButton)
-#: rc.cpp:170
+#: gui/widgets/errorwidget.ui:49
 msgid "Configure Kigo..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​​ Kigo..."
 
-#. i18n: file: gui/widgets/gamewidget.ui:35
+#: gui/widgets/gamewidget.cpp:56 gui/widgets/gamewidget.cpp:61
+#, kde-format
+msgid "Computer (level %1)"
+msgstr "កុំព្យូទ័រ (កម្រិត %1)"
+
+#: gui/widgets/gamewidget.cpp:64
+#, kde-format
+msgid "%1 Stone"
+msgid_plural "%1 Stones"
+msgstr[0] "ថ្ម %1"
+
+#: gui/widgets/gamewidget.cpp:81
+#, kde-format
+msgctxt "Indication who played the last move"
+msgid "%1 (white)"
+msgstr "%1 (ស)"
+
+#: gui/widgets/gamewidget.cpp:83
+#, kde-format
+msgctxt "Indication who played the last move"
+msgid "%1 (black)"
+msgstr "%1 (ខ្មៅ)"
+
+#: gui/widgets/gamewidget.cpp:92
+msgid "White's turn"
+msgstr "ការ​ផ្លាស់ទី​របស់​ពណ៌​ស"
+
+#: gui/widgets/gamewidget.cpp:96
+msgid "Black's turn"
+msgstr "កា​​រ​ផ្លាស់​ទី​របស់​ពណ៌​ខ្មៅ"
+
+#: gui/widgets/gamewidget.cpp:101 gui/widgets/gamewidget.cpp:102
+#, kde-format
+msgid "%1 capture"
+msgid_plural "%1 captures"
+msgstr[0] "%1 ចាប់យក"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: gui/widgets/gamewidget.ui:19 gui/widgets/setupwidget.ui:103
+msgid "Handicap:"
+msgstr "ឧបសគ្គ​ ៖"
+
 #. i18n: ectx: property (text), widget (QLabel, handicapLabel)
-#: rc.cpp:176
+#: gui/widgets/gamewidget.ui:35
 msgid "2"
 msgstr "២"
 
-#. i18n: file: gui/widgets/gamewidget.ui:58
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#. i18n: ectx: property (text), widget (QLabel, komiStaticLabel)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: gui/widgets/gamewidget.ui:42 gui/widgets/setupwidget.ui:154
+#: gui/widgets/setupwidget.ui:397
+msgid "Komi:"
+msgstr "Komi ៖"
+
 #. i18n: ectx: property (text), widget (QLabel, komiLabel)
-#: rc.cpp:182
+#: gui/widgets/gamewidget.ui:58
 msgid "0.5 Points"
 msgstr "០.៥ ពិន្ទុ"
 
-#. i18n: file: gui/widgets/gamewidget.ui:78
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:185
+#: gui/widgets/gamewidget.ui:78
 msgid "Last move:"
 msgstr "ការ​ផ្លាស់ទី​ចុងក្រោយ ៖"
 
-#. i18n: file: gui/widgets/gamewidget.ui:101
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:188
+#: gui/widgets/gamewidget.ui:101
 msgid "Move:"
 msgstr "ការ​ផ្លាស់ទី ៖"
 
-#. i18n: file: gui/widgets/gamewidget.ui:184
 #. i18n: ectx: property (text), widget (QLabel, whiteNameLabel)
-#: rc.cpp:191
+#: gui/widgets/gamewidget.ui:184
 msgid "White Player"
 msgstr "អ្នកលេង​ពណ៌​ស"
 
-#. i18n: file: gui/widgets/gamewidget.ui:191
 #. i18n: ectx: property (text), widget (QLabel, whiteCapturesLabel)
-#. i18n: file: gui/widgets/gamewidget.ui:265
 #. i18n: ectx: property (text), widget (QLabel, blackCapturesLabel)
-#. i18n: file: gui/widgets/gamewidget.ui:191
-#. i18n: ectx: property (text), widget (QLabel, whiteCapturesLabel)
-#. i18n: file: gui/widgets/gamewidget.ui:265
-#. i18n: ectx: property (text), widget (QLabel, blackCapturesLabel)
-#: rc.cpp:194 rc.cpp:200
+#: gui/widgets/gamewidget.ui:191 gui/widgets/gamewidget.ui:265
 msgid "Captures:"
 msgstr "ចាប់​យក ៖"
 
-#. i18n: file: gui/widgets/gamewidget.ui:233
 #. i18n: ectx: property (text), widget (QLabel, blackNameLabel)
-#: rc.cpp:197
+#: gui/widgets/gamewidget.ui:233
 msgid "Black Player"
 msgstr "អ្នកលេង​ពណ៌​ខ្មៅ"
 
-#. i18n: file: gui/widgets/gamewidget.ui:308
 #. i18n: ectx: property (text), widget (KPushButton, finishButton)
-#: rc.cpp:203
+#: gui/widgets/gamewidget.ui:308
 msgid "Finish Game"
 msgstr "បញ្ចប់​ល្បែង"
 
-#. i18n: file: kigo.kcfg:9
+#: gui/widgets/setupwidget.cpp:64
+msgid " Stone"
+msgid_plural " Stones"
+msgstr[0] "ថ្ម"
+
+#: gui/widgets/setupwidget.cpp:168
+#, kde-format
+msgctxt "Time limit of a game in minutes"
+msgid "%1 minute"
+msgid_plural "%1 minutes"
+msgstr[0] "%1 នាទី"
+
+#: gui/widgets/setupwidget.cpp:170
+#, kde-format
+msgctxt "Time limit of a game, hours, minutes"
+msgid "%1 hour, %2"
+msgid_plural "%1 hours, %2"
+msgstr[0] "%1 ម៉ោង %2"
+
+#: gui/widgets/setupwidget.cpp:192
+#, kde-format
+msgid " of %1"
+msgstr " នៃ %1"
+
+#: gui/widgets/setupwidget.cpp:235
+msgid "White to play"
+msgstr "អ្នកលេង​ពណ៌​ស"
+
+#. i18n: ectx: property (text), widget (QLabel, playerLabel)
+#: gui/widgets/setupwidget.cpp:237 gui/widgets/setupwidget.ui:442
+msgid "Black to play"
+msgstr "អ្នកលេង​ពណ៌​ខ្មៅ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_12)
+#: gui/widgets/setupwidget.ui:30
+msgid "Board size:"
+msgstr "ទំហំ​ក្ដារ ៖"
+
+#. i18n: ectx: property (text), widget (QRadioButton, sizeSmall)
+#: gui/widgets/setupwidget.ui:37
+msgid "Tiny (9x9)"
+msgstr "តូច​បំផុត​ (៩​x​៩)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, sizeMedium)
+#: gui/widgets/setupwidget.ui:47
+msgid "Small (13x13)"
+msgstr "តូច (១​៣​x​​១​៣)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, sizeBig)
+#: gui/widgets/setupwidget.ui:54
+msgid "Normal (19x19)"
+msgstr "ធម្មតា (១​​៩​​​x​​១​៩)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, sizeOther)
+#: gui/widgets/setupwidget.ui:66
+msgid "Custom:"
+msgstr "ផ្ទាល់​ខ្លួន​ ៖"
+
+#. i18n: ectx: property (toolTip), widget (KIntSpinBox, handicapSpinBox)
+#: gui/widgets/setupwidget.ui:126
+msgid ""
+"Handicap stones are an advantage for the black player.\n"
+"Black gets a number of stones on the board before the game starts."
+msgstr ""
+"ថ្ម Handicap គឺជា​ឱកាស​សម្រាប់​អ្នក​លេង​ពណ៌​ខ្មៅ ។\n"
+"អ្នក​លេង​ពណ៌​ខ្មៅ​ស៊ី​ថ្ម​មួយ​ចំនួន​នៅ​លើ​ក្ដារ មុន​នឹង​ល្បែង​ចាប់ផ្ដើម ។"
+
+#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, handicapSpinBox)
+#: gui/widgets/setupwidget.ui:129
+msgid "No handicap"
+msgstr "គ្មាន handicap"
+
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, handicapSpinBox)
+#: gui/widgets/setupwidget.ui:132
+msgid " Stones"
+msgstr " ថ្ម"
+
+#. i18n: ectx: property (toolTip), widget (QDoubleSpinBox, komiSpinBox)
+#: gui/widgets/setupwidget.ui:174
+msgid ""
+"Komi are points given to the white player at the end of the game.\n"
+"It balances out the advantage black has by making the first move."
+msgstr ""
+"Komi គឺជា​ពិន្ទុ​ដែល​ផ្ដល់​ឲ្យ​អ្នក​លេង​ពណ៌​ស​នៅ​ពេល​បញ្ចប់​ល្បែង ។\n"
+"វា​ថ្លឹងថ្លែង​អំពី​ផលប្រយោជន៍​ដែល​អ្នក​លេង​ពណ៌​ខ្មៅ​ទទួល​បាន​ដោយ​ការ​ផ្លាស់ទី​ដំបូង ។"
+
+#. i18n: ectx: property (suffix), widget (QDoubleSpinBox, komiSpinBox)
+#: gui/widgets/setupwidget.ui:177
+msgid " Points"
+msgstr "ពិន្ទុ"
+
+#. i18n: ectx: property (text), widget (QLabel, eventStaticLabel)
+#: gui/widgets/setupwidget.ui:231
+msgid "Event:"
+msgstr "ព្រឹត្តិការណ៍ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, locationStaticLabel)
+#: gui/widgets/setupwidget.ui:266
+msgid "Location:"
+msgstr "ទីតាំង ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, dateStaticLabel)
+#: gui/widgets/setupwidget.ui:301
+msgid "Date:"
+msgstr "កាលបរិច្ឆេទ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, roundStaticLabel)
+#: gui/widgets/setupwidget.ui:333
+msgid "Round:"
+msgstr "ជុំ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, scoreStaticLabel)
+#: gui/widgets/setupwidget.ui:365
+msgid "Score:"
+msgstr "ពិន្ទុ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, continueStaticLabel)
+#: gui/widgets/setupwidget.ui:429
+msgid "Continue:"
+msgstr "បន្ដ ៖"
+
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, startMoveSpinBox)
+#: gui/widgets/setupwidget.ui:461
+msgid " of 999"
+msgstr " នៃ ៩​​​៩​៩"
+
+#. i18n: ectx: property (prefix), widget (KIntSpinBox, startMoveSpinBox)
+#: gui/widgets/setupwidget.ui:464
+msgid "Move "
+msgstr "ផ្លាស់ទី"
+
+#. i18n: ectx: property (text), widget (QLabel, timeStaticLabel)
+#: gui/widgets/setupwidget.ui:483
+msgid "Time limit:"
+msgstr "ម៉ោង​កំណត់ ៖"
+
+#. i18n: ectx: property (text), widget (QCheckBox, whiteIsComputerCheckBox)
+#: gui/widgets/setupwidget.ui:566
+msgid "&Computer"
+msgstr "កុំព្យូទ័រ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: gui/widgets/setupwidget.ui:589 gui/widgets/setupwidget.ui:747
+msgid "Name:"
+msgstr "ឈ្មោះ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, label1)
+#. i18n: ectx: property (text), widget (QLabel, label1_3)
+#: gui/widgets/setupwidget.ui:622 gui/widgets/setupwidget.ui:799
+msgid "Weak"
+msgstr "ខ្សោយ"
+
+#. i18n: ectx: property (text), widget (QLabel, label2)
+#. i18n: ectx: property (text), widget (QLabel, label2_3)
+#: gui/widgets/setupwidget.ui:641 gui/widgets/setupwidget.ui:780
+msgid "Strong"
+msgstr "ខ្លាំង"
+
+#. i18n: ectx: property (text), widget (QCheckBox, blackIsComputerCheckBox)
+#: gui/widgets/setupwidget.ui:727
+msgid "C&omputer"
+msgstr "កុំព្យូទ័រ"
+
+#. i18n: ectx: property (text), widget (KPushButton, startButton)
+#: gui/widgets/setupwidget.ui:979
+msgid "Start Game"
+msgstr "ចាប់ផ្ដើម​ល្បែង"
+
 #. i18n: ectx: label, entry (EngineList), group (Backend)
-#: rc.cpp:206
+#: kigo.kcfg:9
 msgid "List of available/configured engine backends"
 msgstr "បញ្ជី​កម្មវិធី​ខាងក្រោយ​របស់​ម៉ាស៊ីន​ដែល​​បាន​កំណត់​រចនាសម្ព័ន្ធ/អាច​ប្រើ​​បាន"
 
-#. i18n: file: kigo.kcfg:16
 #. i18n: ectx: label, entry (EngineCommands), group (Backend)
-#: rc.cpp:209
+#: kigo.kcfg:16
 msgid "List of backend commands corresponding to the engine list"
 msgstr "បញ្ជី​ពាក្យ​បញ្ជា​របស់​កម្ម​វិធី​ខាង​ក្រោយ​ត្រូវ​គ្នា​នឹង​បញ្ជី​ម៉ាស៊ីន​"
 
-#. i18n: file: kigo.kcfg:23
 #. i18n: ectx: label, entry (EngineCommand), group (Backend)
-#: rc.cpp:212
+#: kigo.kcfg:23
 msgid "The current game engine command with (optional) parameters"
 msgstr "ពាក្យ​បញ្ជា​ម៉ាស៊ីន​របស់​ល្បែង​បច្ចុប្បន្ន​មាន​ប៉ារ៉ាម៉ែត្រ​ (ជា​ជម្រើស​) "
 
-#. i18n: file: kigo.kcfg:32
 #. i18n: ectx: label, entry (Theme), group (UserInterface)
-#: rc.cpp:215
+#: kigo.kcfg:32
 msgid "The graphical theme to be used"
 msgstr "ស្បែក​ក្រាហ្វិក​ដែល​នឹង​ត្រូវ​ប្រើ"
 
-#. i18n: file: kigo.kcfg:36
 #. i18n: ectx: label, entry (ShowBoardLabels), group (UserInterface)
-#: rc.cpp:218
+#: kigo.kcfg:36
 msgid "Determines whether board labels are shown"
 msgstr "កំណត់​ថា​តើ​ស្លាក​ក្ដារ​នឹង​ត្រូវ​បង្ហាញ​ឬ​អត់​"
 
-#. i18n: file: kigo.kcfg:40
 #. i18n: ectx: label, entry (ShowMoveNumbers), group (UserInterface)
-#: rc.cpp:221
+#: kigo.kcfg:40
 msgid "Move numbers are drawn onto stones if enabled"
 msgstr "លេខ​ផ្លាស់ទី​ត្រូវ​បាន​បង្ហាញ​នៅ​លើ​​ថ្ម​ ប្រសិនបើ​បាន​បើក"
 
-#. i18n: file: kigo.kcfg:44
 #. i18n: ectx: label, entry (HintVisibleTime), group (UserInterface)
-#: rc.cpp:224
+#: kigo.kcfg:44
 msgid "Number of seconds for which a hint is visible"
 msgstr "ចំនួន​វិនាទី​​​ដែល​មើល​ឃើញ​ជំនួយ​"
 
-#. i18n: file: kigo.kcfg:52
 #. i18n: ectx: label, entry (BlackPlayerHuman), group (Game)
-#: rc.cpp:227
+#: kigo.kcfg:52
 msgid "Is black a human player?"
 msgstr "តើ​ពណ៌​ខ្មៅ​ជា​អ្នកលេង​ជា​មនុស្ស​ឬ ?"
 
-#. i18n: file: kigo.kcfg:56
 #. i18n: ectx: label, entry (BlackPlayerName), group (Game)
-#: rc.cpp:230
+#: kigo.kcfg:56
 msgid "The name of the black player"
 msgstr "ឈ្មោះ​អ្នក​លេង​ពណ៌​ខ្មៅ"
 
-#. i18n: file: kigo.kcfg:60
 #. i18n: ectx: label, entry (BlackPlayerStrength), group (Game)
-#: rc.cpp:233
+#: kigo.kcfg:60
 msgid "The strength of the black player"
 msgstr "កម្លាំង​របស់​​អ្នក​លេង​ពណ៌​ខ្មៅ"
 
-#. i18n: file: kigo.kcfg:66
 #. i18n: ectx: label, entry (WhitePlayerHuman), group (Game)
-#: rc.cpp:236
+#: kigo.kcfg:66
 msgid "Is white a human player?"
 msgstr "តើ​ពណ៌​ស​ជា​អ្នក​លេង​ជា​មនុស្ស​ឬ ?"
 
-#. i18n: file: kigo.kcfg:70
 #. i18n: ectx: label, entry (WhitePlayerName), group (Game)
-#: rc.cpp:239
+#: kigo.kcfg:70
 msgid "The name of the white player"
 msgstr "ឈ្មោះ​របស់​អ្នកលេង​ពណ៌​ស"
 
-#. i18n: file: kigo.kcfg:74
 #. i18n: ectx: label, entry (WhitePlayerStrength), group (Game)
-#: rc.cpp:242
+#: kigo.kcfg:74
 msgid "The strength of the white player"
 msgstr "កម្លាំង​របស់​អ្នក​លេង​ពណ៌​ស"
 
-#. i18n: file: kigo.kcfg:80
 #. i18n: ectx: label, entry (BoardSize), group (Game)
-#: rc.cpp:245
+#: kigo.kcfg:80
 msgid "Go board size"
 msgstr "ទៅកាន់​ទំហំ​ក្ដារ"
 
-#. i18n: file: kigo.kcfg:87
 #. i18n: ectx: label, entry (Komi), group (Game)
-#: rc.cpp:248
+#: kigo.kcfg:87
 msgid "Komi"
 msgstr "Komi"
 
-#. i18n: file: kigo.kcfg:88
 #. i18n: ectx: tooltip, entry (Komi), group (Game)
-#: rc.cpp:251
+#: kigo.kcfg:88
 msgid "With komi you can give the black player some extra points"
 msgstr "ជា​មួយ​ komi អ្នក​អាច​ផ្ដល់​ពិន្ទុ​បន្ថែម​ដល់​អ្នក​លេង​ពណ៌​ខ្មៅបាន​"
 
-#. i18n: file: kigo.kcfg:94
 #. i18n: ectx: label, entry (FixedHandicapValue), group (Game)
-#: rc.cpp:254
+#: kigo.kcfg:94
 msgid "Extra stones for the black player"
 msgstr "ថ្ម​បន្ថែម​សម្រាប់​អ្នក​លេង​ពណ៌​ខ្មៅ"
+
+#: main.cpp:41
+msgid "Kigo"
+msgstr "Kigo"
+
+#: main.cpp:42
+msgid "KDE Go Board Game"
+msgstr "ល្បែង​ក្ដារ Go របស់​ KDE  "
+
+#: main.cpp:43
+msgid "Copyright (c) 2008-2010 Sascha Peilicke"
+msgstr "រក្សា​សិទ្ធិ​ឆ្នាំ​ ២​០​​​០​៨​ និង​ ២​០​១​០ ដោយ​ Sascha Peilicke"
+
+#: main.cpp:44
+msgid "Sascha Peilicke (saschpe)"
+msgstr "Sascha Peilicke (saschpe)"
+
+#: main.cpp:44
+msgid "Original author"
+msgstr "អ្នកនិពន្ធ​ដើម"
+
+#: main.cpp:46
+msgid "Yuri Chornoivan"
+msgstr "Yuri Chornoivan"
+
+#: main.cpp:46
+msgid "Documentation editor"
+msgstr "កម្ម​វិធី​កែ​សម្រួល​ឯកសារ​"
+
+#: main.cpp:48
+msgid "Arturo Silva"
+msgstr "Arturo Silva"
+
+#: main.cpp:48
+msgid "Default theme designer"
+msgstr "កម្ម​វិធី​រចនា​ស្បែក​លំនាំ​ដើម"
+
+#: main.cpp:55
+msgctxt "@info:shell"
+msgid "Game to load (SGF file)"
+msgstr "ល្បែង​ត្រូវ​ផ្ទុក​ (ឯកសារ​ SGF)"
 
 #~ msgid "for White"
 #~ msgstr "សម្រាប់​ពណ៌​ស"

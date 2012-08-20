@@ -20,31 +20,32 @@ msgstr ""
 "\n"
 "X-Generator: KBabel 1.11.4\n"
 
-#: kgpg.h:32
-msgid ""
-"Hi,\n"
-"\n"
-"please find attached the user id '%UIDNAME%' of your key %KEYID% signed by "
-"me. This mail is encrypted with that key to make sure you control both the "
-"email address and the key.\n"
-"\n"
-"If you have multiple user ids, I sent the signature for each user id "
-"separately to that user id's associated email address. You can import the "
-"signatures by running each through `gpg --import` after you have decrypted "
-"them with `gpg --decrypt`.\n"
-"\n"
-"If you are using KGpg store the attachment to disk and then import it. Just "
-"select `Import Key...` from `Keys` menu and open the file.\n"
-"\n"
-"Note that I did not upload your key to any keyservers. If you want this new "
-"signature to be available to others, please upload it yourself. With GnuPG "
-"this can be done using gpg --keyserver subkeys.pgp.net --send-key %KEYID%.\n"
-"\n"
-"With KGpg you can right click on the key once you imported all user ids and "
-"choose `Export Public Key...`.\n"
-"\n"
-"If you have any questions, don't hesitate to ask.\n"
-msgstr ""
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "ខឹម សុខែម, ​អេង វណ្ណៈ, អោក ពិសិដ្ឋ​"
+
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: adduid.ui:16
+#, fuzzy
+msgid "Name (minimum 5 characters):"
+msgstr "ឈ្មោះ:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: adduid.ui:29 newkey.ui:67
+#, fuzzy
+msgid "Email:"
+msgstr "អ៊ីមែល ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: adduid.ui:42
+#, fuzzy
+msgid "Comment (optional):"
+msgstr "សេចក្តី​អធិប្បាយ:"
 
 #: caff.cpp:258
 msgctxt "Email template placeholder for key id"
@@ -60,10 +61,1056 @@ msgstr ""
 msgid "your key "
 msgstr ""
 
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_4_2)
+#: conf_decryption.ui:52
+#, fuzzy
+msgid ""
+"<qt><b>Custom Decryption Command:</b><br />\n"
+"<p>This option allows the user to specify a custom command to be executed by "
+"GPG when decryption occurs. (This is recommended for advanced users only).</"
+"p></qt>"
+msgstr ""
+"<qt><b> ផ្ទាល់ខ្លួន ពាក្យ​បញ្ជា</b><br />\n"
+"<p> ដល់ a ដល់ ដោយ GPG ជា សម្រាប់</p></qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_4_2)
+#: conf_decryption.ui:55
+#, fuzzy
+msgid "Custom decryption command:"
+msgstr "ផ្ទាល់ខ្លួន:"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, Encryption)
+#: conf_encryption.ui:15 kgpgoptions.cpp:97
+#, fuzzy
+msgid "Encryption"
+msgstr "​ការ​អ៊ីនគ្រីប"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AsciiArmor)
+#: conf_encryption.ui:31
+#, fuzzy
+msgid ""
+"<qt><b>ASCII armored encryption:</b> <br /> \n"
+"<p>Checking this option outputs all encrypted files in a format that can be "
+"opened by a text editor and as such the output is suitable for placing in "
+"the body of an e-mail message.</p></qt>"
+msgstr ""
+"<qt><b> ASCII</b><br />\n"
+"<p> ទាំងអស់ អ៊ិន្ឈ៍ a ដោយ a និង លទ្ធផល ជា សម្រាប់ អ៊ិន្ឈ៍ នៃ​ e</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AsciiArmor)
+#: conf_encryption.ui:34 selectpublickeydialog.cpp:95
+#, fuzzy
+msgid "ASCII armored encryption"
+msgstr "ការ​អ៊ិនគ្រីប​ស្រោប​ដោយ ASCII"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_PgpExtension)
+#: conf_encryption.ui:42
+#, fuzzy
+msgid ""
+"<qt><b>Use *.pgp extension for encrypted files:</b><br />\n"
+"<p>Checking this option will append a .pgp extension to all encrypted files "
+"instead of a .gpg extension. This option will maintain compatibility with "
+"users of PGP (Pretty Good Privacy) software.</p></qt>"
+msgstr ""
+"<qt><b> ប្រើ សម្រាប់</b><br />\n"
+"<p> a ដល់ ទាំងអស់ នៃ​ a ជាមួយ នៃ​ PGP ល្អ ភាពឯកជន​</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PgpExtension)
+#: conf_encryption.ui:45
+#, fuzzy
+msgid "Use *.pgp extension for encrypted files"
+msgstr "ប្រើ សម្រាប់"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AllowCustomEncryptionOptions)
+#: conf_encryption.ui:69
+#, fuzzy
+msgid ""
+"<qt><b>Custom encryption command:</b><br />\n"
+"<p>When activated, an entry field will be shown in the key selection dialog, "
+"enabling you to enter a custom command for encryption. This option is "
+"recommended for experienced users only.</p></qt>"
+msgstr ""
+"<qt><b> ផ្ទាល់ខ្លួន</b><br />\n"
+"<p> វាល អ៊ិន្ឈ៍ ដល់ a សម្រាប់ ជា សម្រាប់</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowCustomEncryptionOptions)
+#: conf_encryption.ui:72
+#, fuzzy
+msgid "Custom encryption command:"
+msgstr "ផ្ទាល់ខ្លួន:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, encrypt_to_always)
+#: conf_encryption.ui:113
+#, fuzzy
+msgid ""
+"<qt><b>Always encrypt with:</b><br />\n"
+"<p>This ensures all files/messages will also be encrypted with the chosen "
+"key. However, if the \"Encrypt files with:\" option is selected that chosen "
+"key will override the \"Always encrypt with:\" selection.</p></qt>"
+msgstr ""
+"<qt><b> ជានិច្ច ជាមួយ</b><br />\n"
+"<p> ទាំងអស់ ជាមួយ ​អ៊ិនគ្រីប ជាមួយ ជា ជានិច្ច ជាមួយ</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, encrypt_to_always)
+#: conf_encryption.ui:116
+#, fuzzy
+msgid "Always encrypt with:"
+msgstr "ជានិច្ច ជាមួយ:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EncryptFilesTo)
+#: conf_encryption.ui:124
+#, fuzzy
+msgid ""
+"<qt><b>Encrypt files with:</b><br />\n"
+"<p>Checking this option and selecting a key will force any file encryption "
+"operation to use the selected key. KGpg will not query for a recipient and "
+"the default key will be bypassed.</p></qt>"
+msgstr ""
+"<qt><b> ​អ៊ិនគ្រីប ជាមួយ</b><br />\n"
+"<p> និង a ដល់ សម្រាប់ a និង លំនាំដើម</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_EncryptFilesTo)
+#: conf_encryption.ui:127
+#, fuzzy
+msgid "Encrypt files with:"
+msgstr "​អ៊ិនគ្រីប ជាមួយ:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AllowUntrustedKeys)
+#: conf_encryption.ui:135
+#, fuzzy
+msgid ""
+"<qt><b>Allow encryption with untrusted keys:</b><br />\n"
+"<p>When importing a public key, the key is usually marked as untrusted and "
+"as such cannot be used unless it is signed by the default key (thus making "
+"it 'trusted'). Checking this box enables any key to be used even if it is "
+"untrusted.</p></qt>"
+msgstr ""
+"<qt><b> អនុញ្ញាត ជាមួយ</b><br />\n"
+"<p> a ជា និង ជា ដោយ លំនាំដើម ដល់ ជា</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowUntrustedKeys)
+#: conf_encryption.ui:138 selectpublickeydialog.cpp:100
+#, fuzzy
+msgid "Allow encryption with untrusted keys"
+msgstr "អនុញ្ញាត​ការ​អ៊ិនគ្រីប​ដោយ​ប្រើ​កូនសោ​មិន​ជឿ​ទុកចិត្ត"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AllowUntrustedGroupMembers)
+#: conf_encryption.ui:145
+msgid ""
+"<qt><b>Allow untrusted keys as members of key groups:</b><br /><p>A key "
+"group allows simple encryption to multiple recipients at once. Similar to "
+"the <em>Allow encryption with untrusted keys</em> option this allows "
+"untrusted keys to become member of a key group.</p></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowUntrustedGroupMembers)
+#: conf_encryption.ui:148
+msgid "Allow untrusted keys as members of key groups"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_HideUserID)
+#: conf_encryption.ui:156
+#, fuzzy
+msgid ""
+"<qt><b>Hide user ID:</b><br /> \n"
+"<p>Checking this option will remove the keyid of the recipient from all "
+"encrypted packets. The advantage: traffic analysis of the encrypted packets "
+"cannot be performed as easily because the recipient is unknown. The "
+"disadvantage: the receiver of the encrypted packets is forced to try all "
+"secret keys before being able to decrypt the packets. This can be a lengthy "
+"process depending on the number of secret keys the receiver holds.</p></qt>"
+msgstr ""
+"<qt><b> លាក់ លេខ​សម្គាល់</b><br />\n"
+"<p> នៃ​ ពី ទាំងអស់ នៃ​ ជា មិន​ស្គាល់ នៃ​ ជា ដល់ ទាំងអស់ ដល់ a លើ លេខ​ នៃ​</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HideUserID)
+#: conf_encryption.ui:159 selectpublickeydialog.cpp:106
+#, fuzzy
+msgid "Hide user id"
+msgstr "លាក់​លេខសម្គាល់​អ្នក​ប្រើ​"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_PgpCompatibility)
+#: conf_encryption.ui:167
+#, fuzzy
+msgid ""
+"<qt><b>PGP 6 compatibility:</b><br /> \n"
+"<p>Checking this option forces GnuPG to output encrypted packets that are as "
+"compliant with PGP (Pretty Good Privacy) 6 standards as possible thus "
+"allowing GnuPG users to inter operate with PGP 6 users.</p></qt>"
+msgstr ""
+"<qt><b> PGP</b><br />\n"
+"<p> ដល់ លទ្ធផល ជាមួយ PGP ល្អ ភាពឯកជន​ ដល់ ជាមួយ PGP</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PgpCompatibility)
+#: conf_encryption.ui:170
+#, fuzzy
+msgid "PGP 6 compatibility"
+msgstr "PGP"
+
+#. i18n: ectx: property (whatsThis), widget (QWidget, GPGConf)
+#: conf_gpg.ui:16
+#, fuzzy
+msgid ""
+"<qt><b>Global Settings:</b><br />\n"
+"<p></p>\n"
+"</qt>"
+msgstr ""
+"<qt><b> សកល ការ​កំណត់</b><br />\n"
+"<p></p>\n"
+"</qt>"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
+#: conf_gpg.ui:22
+#, fuzzy
+msgid "GnuPG Home"
+msgstr "ផ្ទះ"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_5_2)
+#: conf_gpg.ui:30
+#, fuzzy
+msgid ""
+"<b>Home Location</b><p>This is the directory where GnuPG stores its "
+"configuration and the keyrings. If you have not changed it this is usually "
+"<em>~/.gnupg/</em></p>"
+msgstr "<b> ផ្ទះ ទីតាំង</b><p> ជា និង ជា<em></em></p>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_5_2)
+#: conf_gpg.ui:33
+#, fuzzy
+msgid "Home location:"
+msgstr "ផ្ទះ:"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_5_2_2)
+#: conf_gpg.ui:43
+#, fuzzy
+msgid ""
+"<b>Configuration File</b><p>This is the name of the configuration file in "
+"the directory specified above. The default is <em>gnupg.conf</em> while "
+"older versions of GnuPG used <em>options</em>.</p>"
+msgstr ""
+"<b> ​កំណត់​​រចនាសម្ព័ន្ធ ឯកសារ</b><p> ជា ឈ្មោះ នៃ​ អ៊ិន្ឈ៍ ខាង​លើ លំនាំដើម ជា<em></em> នៃ​"
+"<em></em></p>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_5_2_2)
+#: conf_gpg.ui:46
+#, fuzzy
+msgid "Configuration file:"
+msgstr "​កំណត់​​រចនាសម្ព័ន្ធ:"
+
+#. i18n: ectx: property (text), widget (QPushButton, changeHome)
+#: conf_gpg.ui:96
+#, fuzzy
+msgid "Change..."
+msgstr "ផ្លាស់ប្ដូរ..."
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
+#: conf_gpg.ui:108 kgpgfirstassistant.cpp:123
+#, fuzzy
+msgid "GnuPG Binary"
+msgstr "គោល​ពីរ"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_6_2)
+#: conf_gpg.ui:114
+#, fuzzy
+msgid ""
+"<b>Program path</b><p>This is the program that will be called for all GnuPG "
+"operations. The default of <em>gpg</em> will work on most systems.</p>"
+msgstr "<b> កម្មវិធី</b><p> ជា សម្រាប់ ទាំងអស់ លំនាំដើម នៃ​<em></em> លើ</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_6_2)
+#: conf_gpg.ui:117
+#, fuzzy
+msgid "Program path:"
+msgstr "កម្មវិធី:"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, use_agent)
+#: conf_gpg.ui:157
+#, fuzzy
+msgid ""
+"<b>Use GnuPG agent</b><p>The GnuPG agent stores the passwords for your "
+"secret keys in memory for a limited amount of time. If you use your secret "
+"key again while it is cached you do not have to enter it again. This is less "
+"secure than typing it every time.</p>"
+msgstr "<b> ប្រើ</b><p> សម្រាប់ អ៊ិន្ឈ៍ សម្រាប់ a នៃ​ ជា ដល់ ជា រៀងរាល់</p>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, use_agent)
+#: conf_gpg.ui:160
+#, fuzzy
+msgid "Use GnuPG agent"
+msgstr "ប្រើ"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabGlobal)
+#: conf_misc.ui:24
+#, fuzzy
+msgid "Global Settings"
+msgstr "ការ​កំណត់​សកល"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoStart)
+#: conf_misc.ui:33
+#, fuzzy
+msgid ""
+"<qt><b>Start KGpg automatically at KDE startup:</b><br />\n"
+"<p>If checked KGpg will start automatically each time that KDE starts up.</"
+"p></qt>"
+msgstr ""
+"<qt><b> ចាប់ផ្ដើម នៅ KDE</b><br />\n"
+"<p> ចាប់ផ្តើម KDE លើ</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoStart)
+#: conf_misc.ui:36
+#, fuzzy
+msgid "Start KGpg automatically at login"
+msgstr "ចាប់ផ្ដើម នៅ"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_UseMouseSelection)
+#: conf_misc.ui:53
+#, fuzzy
+msgid ""
+"<qt><b>Use mouse selection instead of clipboard:</b><br />\n"
+"<p>If checked, clipboard operations in KGpg will use the selection "
+"clipboard, that means highlighting a text to copy, and middle button (or "
+"right+left together) to paste. If this option is not checked, the clipboard "
+"will work with Key shortcuts (Ctrl-c, Ctrl-v).</p></qt> "
+msgstr ""
+"<qt><b> ប្រើ នៃ​ ក្តារ​តម្បៀត​ខ្ទាស់</b><br />\n"
+"<p> ក្តារ​តម្បៀត​ខ្ទាស់ អ៊ិន្ឈ៍ ក្តារ​តម្បៀត​ខ្ទាស់ a ដល់ ច្បាប់ចម្លង និង ឬ ​ស្តាំ ឆ្វេង ដល់ ជា ក្តារ​"
+"តម្បៀត​ខ្ទាស់ ជាមួយ គ្រាប់​ចុច បញ្ជា c បញ្ជា v</p></qt> "
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseMouseSelection)
+#: conf_misc.ui:56
+#, fuzzy
+msgid "Use mouse selection instead of clipboard"
+msgstr "ប្រើ នៃ​ ក្តារ​តម្បៀត​ខ្ទាស់"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_RemoteFileWarn)
+#: conf_misc.ui:70
+#, fuzzy
+msgid ""
+"<qt><b>Display warning before creating temporary files:</b><br />\n"
+"<p></p></qt>"
+msgstr ""
+"<qt><b> បង្ហាញ</b><br />\n"
+"<p></p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_RemoteFileWarn)
+#: conf_misc.ui:74
+#, fuzzy
+msgid ""
+"Display warning before creating temporary files\n"
+"(only occurs on remote files operations)"
+msgstr "បង្ហាញ n លើ"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabApplet)
+#: conf_misc.ui:97
+#, fuzzy
+msgid "Applet && Menus"
+msgstr "អាប់ភ្លេត ម៉ឺនុយ"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox11)
+#: conf_misc.ui:103
+#, fuzzy
+msgid "Konqueror Service Menus"
+msgstr "Konqueror សេវា ម៉ឺនុយ"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
+#: conf_misc.ui:119
+#, fuzzy
+msgid ""
+"<qt><b>Sign file service menu:</b><br />\n"
+"<p></p>\n"
+"</qt>"
+msgstr ""
+"<qt><b> ចុះ​ហត្ថលេខា</b><br />\n"
+"<p></p>\n"
+"</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: conf_misc.ui:122
+#, fuzzy
+msgid "Sign file service menu:"
+msgstr "ចុះ​ហត្ថលេខា:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_SignMenu)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_DecryptMenu)
+#: conf_misc.ui:139 conf_misc.ui:178 keysmanager.cpp:298
+#, fuzzy
+msgid "Disable"
+msgstr "មិន​អនុញ្ញាត"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_SignMenu)
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_DecryptMenu)
+#: conf_misc.ui:144 conf_misc.ui:183
+#, fuzzy
+msgid "Enable with All Files"
+msgstr "អនុញ្ញាត ជាមួយ ទាំង​អស់ ឯកសារ"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_3)
+#: conf_misc.ui:164
+#, fuzzy
+msgid ""
+"<qt><b>Decrypt file service menu:</b><br />\n"
+"<p></p>\n"
+"</qt>"
+msgstr ""
+"<qt><b> ចុះ​ហត្ថលេខា</b><br />\n"
+"<p></p>\n"
+"</qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
+#: conf_misc.ui:167
+#, fuzzy
+msgid "Decrypt file service menu:"
+msgstr "ចុះ​ហត្ថលេខា:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_DecryptMenu)
+#: conf_misc.ui:188
+#, fuzzy
+msgid "Enable with Encrypted Files"
+msgstr "អនុញ្ញាត ជាមួយ បាន​អ៊ិនគ្រីប ឯកសារ"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
+#: conf_misc.ui:201
+#, fuzzy
+msgid "System Tray Applet"
+msgstr "ប្រព័ន្ធ អាប់ភ្លេត"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShowSystray)
+#: conf_misc.ui:208
+#, fuzzy
+msgid ""
+"<qt><b>Show system tray icon:</b><br />\n"
+"<p>If checked KGpg will minimize to an icon in the system tray.</p></qt>"
+msgstr ""
+"<qt><b> បង្ហាញ​</b><br />\n"
+"<p> ដល់ អ៊ិន្ឈ៍</p></qt>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowSystray)
+#: conf_misc.ui:211
+#, fuzzy
+msgid "Show system tray icon"
+msgstr "បង្ហាញ​រូបតំណាង​ថាស​របស់​ប្រព័ន្ធ"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: conf_misc.ui:223
+#, fuzzy
+msgid "Left mouse click opens:"
+msgstr "ឆ្វេង ដល់:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftClick)
+#: conf_misc.ui:240
+#, fuzzy
+msgid "Key Manager"
+msgstr "គ្រាប់​ចុច កម្មវិធី​គ្រប់​គ្រង"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftClick)
+#. i18n: ectx: attribute (title), widget (QWidget, tabEditor)
+#: conf_misc.ui:245 conf_misc.ui:272 editor/kgpgeditor.cpp:502
+#, fuzzy
+msgid "Editor"
+msgstr "អ្នក​​​កែ​​សម្រួល​​"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: conf_misc.ui:280
+#, fuzzy
+msgid "Recent files"
+msgstr "​អ៊ិនគ្រីប"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabSigning)
+#: conf_misc.ui:306
+msgid "Key Signing"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, label_2)
+#: conf_misc.ui:314
+msgid ""
+"Here you can define how User Ids that do not contain an email address (like "
+"Photo Ids) are sent to the key owner. You can choose to either send them "
+"with every other User Id you signed, only with the first Id you signed or to "
+"not send them at all."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: conf_misc.ui:317
+msgid "Mailing of User Ids without Email Addresses"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MailUats)
+#: conf_misc.ui:325
+msgid "Send with every Email"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MailUats)
+#: conf_misc.ui:330
+msgid "Send only with first Email"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MailUats)
+#: conf_misc.ui:335
+#, fuzzy
+msgid "Do not send"
+msgstr "កុំ​បង្កើត"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: conf_misc.ui:345
+msgid "Email template"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (KTextEdit, EmailTemplateEdit)
+#: conf_misc.ui:353
+#, no-c-format
+msgid ""
+"This is the text of the email sent by the \"Sign and Mail User ID\" action.\n"
+"\n"
+"The placeholders surrounded by the percent signs (like %KEYID%) will be "
+"replaced with the corresponding text for every single mail."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
+#: conf_servers.ui:29
+#, fuzzy
+msgid ""
+"<b>INFORMATION</b>:\n"
+"Only the default server will be stored in GnuPG's configuration file,\n"
+"all others will be stored for use by KGpg only."
+msgstr "<b></b> លំនាំដើម ម៉ាស៊ីន​បម្រើ អ៊ិន្ឈ៍ s សម្រាប់ ដោយ."
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseProxy)
+#: conf_servers.ui:39
+#, fuzzy
+msgid "Honor HTTP proxy when available"
+msgstr "HTTP"
+
+#. i18n: ectx: property (text), widget (KPushButton, server_default)
+#: conf_servers.ui:50
+#, fuzzy
+msgid "&Set as Default"
+msgstr "កំណត់ លំនាំដើម"
+
+#. i18n: ectx: property (text), widget (KPushButton, server_add)
+#: conf_servers.ui:57
+#, fuzzy
+msgid "&Add..."
+msgstr "បន្ថែម..."
+
+#. i18n: ectx: property (text), widget (KPushButton, server_del)
+#: conf_servers.ui:67
+#, fuzzy
+msgid "&Delete"
+msgstr "លុប"
+
+#. i18n: ectx: property (text), widget (KPushButton, server_edit)
+#: conf_servers.ui:74
+#, fuzzy
+msgid "&Edit..."
+msgstr "កែសម្រួល"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab)
+#: conf_ui2.ui:32
+#, fuzzy
+msgid "Key Colors"
+msgstr "គ្រាប់​ចុច ពណ៌"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustUltimate)
+#: conf_ui2.ui:42
+#, fuzzy
+msgid "Ultimately trusted keys:"
+msgstr "ពណ៌ សម្រាប់."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustTrusted)
+#: conf_ui2.ui:52
+#, fuzzy
+msgid "Trusted keys:"
+msgstr "ដែល​ផុត​កំណត់:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustMarginally)
+#: conf_ui2.ui:62
+#, fuzzy
+msgid "Marginally trusted keys:"
+msgstr "ពណ៌ សម្រាប់."
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustExpired)
+#: conf_ui2.ui:72
+#, fuzzy
+msgid "Expired keys:"
+msgstr "ដែល​ផុត​កំណត់:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustRevoked)
+#: conf_ui2.ui:82
+#, fuzzy
+msgid "Revoked keys:"
+msgstr "បានដកហូត​វិញ:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustUnknown)
+#: conf_ui2.ui:92
+#, fuzzy
+msgid "Unknown keys:"
+msgstr "មិន​ស្គាល់:"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel_trustDisabled)
+#: conf_ui2.ui:102
+#, fuzzy
+msgid "Disabled keys:"
+msgstr "មិន​បាន​អនុញ្ញាត:"
+
+#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
+#: conf_ui2.ui:225
+#, fuzzy
+msgid "Editor Font"
+msgstr "កម្មវិធី​និពន្ធ​ពុម្ពអក្សរ"
+
+#: core/convert.cpp:37
+msgctxt "Encryption algorithm"
+msgid "RSA"
+msgstr ""
+
+#: core/convert.cpp:38
+msgctxt "Encryption algorithm"
+msgid "DSA"
+msgstr ""
+
+#: core/convert.cpp:39
+#, fuzzy
+msgctxt "Encryption algorithm"
+msgid "ElGamal"
+msgstr "អ៊ីមែល"
+
+#: core/convert.cpp:40
+#, fuzzy
+msgctxt "Encryption algorithm"
+msgid "DSA & ElGamal"
+msgstr "អ៊ីមែល"
+
+#: core/convert.cpp:41
+msgctxt "Encryption algorithm RSA, Signing algorithm RSA"
+msgid "RSA & RSA"
+msgstr ""
+
+#: core/convert.cpp:43
+#, fuzzy
+msgctxt "Unknown algorithm"
+msgid "Unknown"
+msgstr "មិន​ស្គាល់:"
+
+#: core/convert.cpp:51
+msgid "Do not Know"
+msgstr ""
+
+#: core/convert.cpp:52
+#, fuzzy
+msgid "Do NOT Trust"
+msgstr "NOT"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
+#: core/convert.cpp:53 kgpgKeyInfo.ui:193
+msgid "Marginally"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
+#: core/convert.cpp:54 kgpgKeyInfo.ui:198
+msgid "Fully"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
+#: core/convert.cpp:55 kgpgKeyInfo.ui:203
+msgid "Ultimately"
+msgstr ""
+
+#: core/convert.cpp:57
+#, fuzzy
+msgctxt "Unknown trust in key owner"
+msgid "Unknown"
+msgstr "មិន​ស្គាល់:"
+
+#: core/convert.cpp:65
+msgctxt "Invalid key"
+msgid "Invalid"
+msgstr ""
+
+#: core/convert.cpp:66
+#, fuzzy
+msgctxt "Disabled key"
+msgid "Disabled"
+msgstr "មិន​អនុញ្ញាត"
+
+#: core/convert.cpp:67
+#, fuzzy
+msgid "Revoked"
+msgstr "បានដកហូត​វិញ:"
+
+#: core/convert.cpp:68
+#, fuzzy
+msgctxt "Expired key"
+msgid "Expired"
+msgstr "ដែល​ផុត​កំណត់:"
+
+#: core/convert.cpp:69
+msgctxt "Undefined key trust"
+msgid "Undefined"
+msgstr ""
+
+#: core/convert.cpp:70
+#, fuzzy
+msgctxt "No trust in key"
+msgid "None"
+msgstr "គ្មាន"
+
+#: core/convert.cpp:71
+msgctxt "Marginal trust in key"
+msgid "Marginal"
+msgstr ""
+
+#: core/convert.cpp:72
+msgctxt "Full trust in key"
+msgid "Full"
+msgstr ""
+
+#: core/convert.cpp:73
+#, fuzzy
+msgctxt "Ultimate trust in key"
+msgid "Ultimate"
+msgstr "មិន​កំណត់"
+
+#: core/convert.cpp:75
+#, fuzzy
+msgctxt "Unknown trust in key"
+msgid "Unknown"
+msgstr "មិន​ស្គាល់:"
+
+#: core/KGpgGroupNode.cpp:164
+#, fuzzy, kde-format
+msgid "1 key"
+msgid_plural "%1 keys"
+msgstr[0] "គ្រាប់​ចុច"
+msgstr[1] ""
+
+#: core/KGpgKeyNode.cpp:84
+#, fuzzy, kde-format
+msgctxt "size of signing key / size of encryption key"
+msgid "%1 / %2"
+msgstr "%1 (%2)"
+
+#: core/KGpgKeyNode.cpp:164 core/KGpgSignableNode.cpp:48
+#, fuzzy, kde-format
+msgid "1 signature"
+msgid_plural "%1 signatures"
+msgstr[0] "ហត្ថលេខា"
+
+#: core/KGpgNode.cpp:56
+#, fuzzy, kde-format
+msgctxt "Name of uid (comment)"
+msgid "%1 (%2)"
+msgstr "%1 (%2)"
+
+#: core/KGpgRefNode.cpp:128 transactions/kgpgtransaction.cpp:481
+#, fuzzy
+msgid "[No user id found]"
+msgstr "ទេ"
+
+#: core/KGpgSignNode.cpp:86
+#, fuzzy, kde-format
+msgid "%1 [local signature]"
+msgstr "ហត្ថលេខា"
+
+#: core/KGpgSubkeyNode.cpp:86
+#, kde-format
+msgid "%1 subkey"
+msgstr ""
+
+#: core/KGpgUatNode.cpp:105
+#, fuzzy
+msgid "Photo id"
+msgstr "រូបថត"
+
 #: detailedconsole.cpp:30
 #, fuzzy
 msgid "Info"
 msgstr "ព័ត៌មាន"
+
+#: editor/kgpgeditor.cpp:90 editor/kgpgeditor.cpp:240
+#: editor/kgpgeditor.cpp:747 editor/kgpgeditor.cpp:776
+#, fuzzy
+msgid "Untitled"
+msgstr "គ្មាន​ចំណងជើង "
+
+#: editor/kgpgeditor.cpp:186
+#, fuzzy
+msgid "&Encrypt File..."
+msgstr "​អ៊ិនគ្រីប ឯកសារ."
+
+#: editor/kgpgeditor.cpp:190
+#, fuzzy
+msgid "&Decrypt File..."
+msgstr "ឯកសារ."
+
+#: editor/kgpgeditor.cpp:194
+#, fuzzy
+msgid "&Open Key Manager"
+msgstr "បើក គ្រាប់​ចុច កម្មវិធី​គ្រប់​គ្រង"
+
+#: editor/kgpgeditor.cpp:197
+#, fuzzy
+msgid "&Generate Signature..."
+msgstr "បង្កើត ហត្ថលេខា."
+
+#: editor/kgpgeditor.cpp:201
+#, fuzzy
+msgid "&Verify Signature..."
+msgstr "ហត្ថលេខា."
+
+#: editor/kgpgeditor.cpp:204
+#, fuzzy
+msgid "&Check MD5 Sum..."
+msgstr "ពិនិត្យមើល ផលបូក."
+
+#: editor/kgpgeditor.cpp:207
+#, fuzzy
+msgid "&Unicode (utf-8) Encoding"
+msgstr "យូនីកូដ ការ​អ៊ិនកូដ"
+
+#: editor/kgpgeditor.cpp:213
+#, fuzzy
+msgid "En&crypt"
+msgstr "​អ៊ិនគ្រីប"
+
+#: editor/kgpgeditor.cpp:217
+msgid "&Decrypt"
+msgstr ""
+
+#: editor/kgpgeditor.cpp:221
+#, fuzzy
+msgid "S&ign/Verify"
+msgstr "ចុះ​ហត្ថលេខា"
+
+#: editor/kgpgeditor.cpp:244
+#, fuzzy, kde-format
+msgid ""
+"The document \"%1\" has changed.\n"
+"Do you want to save it?"
+msgstr "ឯកសារ​ ដល់?"
+
+#: editor/kgpgeditor.cpp:245
+#, fuzzy
+msgid "Close the document"
+msgstr "បិទ​ ឯកសារ​"
+
+#: editor/kgpgeditor.cpp:291
+#, fuzzy
+msgid ""
+"The document could not been saved, as the selected codec is not supported."
+msgstr "ឯកសារ​ រៀងរាល់ អ៊ិន្ឈ៍."
+
+#: editor/kgpgeditor.cpp:297
+#, fuzzy
+msgid ""
+"The document could not been saved, as the selected encoding cannot encode "
+"every unicode character in it."
+msgstr "ឯកសារ​ រៀងរាល់ អ៊ិន្ឈ៍."
+
+#: editor/kgpgeditor.cpp:306 editor/kgpgeditor.cpp:325
+#, fuzzy
+msgid ""
+"The document could not be saved, please check your permissions and disk "
+"space."
+msgstr "ឯកសារ​ និង ថាស."
+
+#: editor/kgpgeditor.cpp:351 editor/kgpgeditor.cpp:358 keyexport.cpp:41
+#, fuzzy, kde-format
+msgid "Overwrite existing file %1?"
+msgstr "សរសេរ​ជាន់​លើ?"
+
+#: editor/kgpgeditor.cpp:469 editor/kgpgeditor.cpp:477
+#: editor/kgpgeditor.cpp:612 editor/kgpgeditor.cpp:650
+#: editor/kgpgeditor.cpp:688
+#, fuzzy
+msgid "*|All Files"
+msgstr "*|ឯកសារ​ទាំង​អស់"
+
+#: editor/kgpgeditor.cpp:469
+#, fuzzy
+msgid "Open File to Encode"
+msgstr "បើក ឯកសារ ដល់"
+
+#: editor/kgpgeditor.cpp:477
+#, fuzzy
+msgid "Open File to Decode"
+msgstr "បើក ឯកសារ ដល់"
+
+#: editor/kgpgeditor.cpp:491
+#, fuzzy
+msgid "Decrypt File To"
+msgstr "ឯកសារ ទៅ"
+
+#: editor/kgpgeditor.cpp:500 keyexport.cpp:28
+#, fuzzy
+msgid "Save File"
+msgstr "រក្សា​ទុក​ឯកសារ"
+
+#: editor/kgpgeditor.cpp:521 kgpgexternalactions.cpp:206
+#: kgpgexternalactions.cpp:361 transactions/kgpgencrypt.cpp:123
+#, fuzzy
+msgid "File Already Exists"
+msgstr "មាន​ឯកសារ​រួច​ហើយ"
+
+#: editor/kgpgeditor.cpp:612
+#, fuzzy
+msgid "Open File to Sign"
+msgstr "បើក ឯកសារ ដល់ ចុះ​ហត្ថលេខា"
+
+#: editor/kgpgeditor.cpp:650 editor/kgpgeditor.cpp:688
+#, fuzzy
+msgid "Open File to Verify"
+msgstr "បើក ឯកសារ ដល់"
+
+#: editor/kgpgeditor.cpp:701 editor/kgpgtextedit.cpp:333
+#, fuzzy, kde-format
+msgid ""
+"<qt><b>Missing signature:</b><br />Key id: %1<br /><br />Do you want to "
+"import this key from a keyserver?</qt>"
+msgstr "<qt><b> បាត់</b><br /> គ្រាប់​ចុច<br /><br /> ដល់ ពី a</qt>"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_import)
+#: editor/kgpgeditor.cpp:702 keyserver.ui:32 keytreeview.cpp:167
+#, fuzzy
+msgid "Import"
+msgstr "នាំចូល"
+
+#: editor/kgpgeditor.cpp:702 keytreeview.cpp:168
+#, fuzzy
+msgid "Do Not Import"
+msgstr "កុំនាំចូល"
+
+#: editor/kgpgeditor.cpp:728 transactions/kgpgverify.cpp:149
+#, fuzzy
+msgid "No signature found."
+msgstr "ទេ."
+
+#: editor/kgpgeditor.cpp:733 editor/kgpgtextedit.cpp:320
+#: kgpgexternalactions.cpp:283
+msgctxt "Caption of message box"
+msgid "Verification Finished"
+msgstr ""
+
+#. i18n: ectx: Menu (view)
+#: editor/kgpgeditor.rc:13 keysmanager.rc:24
+#, fuzzy
+msgid "&View"
+msgstr "មើល"
+
+#. i18n: ectx: Menu (signature)
+#: editor/kgpgeditor.rc:18
+#, fuzzy
+msgid "Si&gnature"
+msgstr "ហត្ថលេខា"
+
+#: editor/kgpgmd5widget.cpp:28
+msgid "MD5 Checksum"
+msgstr ""
+
+#: editor/kgpgmd5widget.cpp:31
+#, fuzzy
+msgid "Compare MD5 with Clipboard"
+msgstr "ប្រៀប​ធៀប ជាមួយ ក្ដារ​តម្បៀត​ខ្ទាស់"
+
+#: editor/kgpgmd5widget.cpp:46
+#, fuzzy, kde-format
+msgid "MD5 sum for <b>%1</b> is:"
+msgstr "សម្រាប់<b></b> ជា:"
+
+#: editor/kgpgmd5widget.cpp:59
+#, fuzzy
+msgid "<b>Unknown status</b>"
+msgstr "<b> មិន​ស្គាល់ ស្ថានភាព</b>"
+
+#: editor/kgpgmd5widget.cpp:84
+#, fuzzy
+msgid "Clipboard content is not a MD5 sum."
+msgstr "ក្ដារ​តម្បៀត​ខ្ទាស់ ជា a."
+
+#: editor/kgpgmd5widget.cpp:88
+#, fuzzy
+msgid "<b>Correct checksum</b>, file is ok."
+msgstr "<b> កែ​តម្រូវ</b> ជា."
+
+#: editor/kgpgmd5widget.cpp:94
+#, fuzzy
+msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
+msgstr "<b> ខុស<em></em></b>"
+
+#: editor/kgpgtextedit.cpp:90
+#, fuzzy
+msgid ""
+"<qt><b>Remote file dropped</b>.<br />The remote file will now be copied to a "
+"temporary file to process requested operation. This temporary file will be "
+"deleted after operation.</qt>"
+msgstr "<qt><b> ពី​ចម្ងាយ</b><br /> ឥឡូវ ដល់ a ដល់ បាន​លុប បន្ទាប់​ពី</qt>"
+
+#: editor/kgpgtextedit.cpp:94
+msgid "Could not download file."
+msgstr ""
+
+#: editor/kgpgtextedit.cpp:127
+#, fuzzy
+msgid ""
+"<qt>This file is a <b>public</b> key.<br />Do you want to import it instead "
+"of opening it in editor?</qt>"
+msgstr "<p> ជា a<br /> ដល់</p>"
+
+#: editor/kgpgtextedit.cpp:130
+#, fuzzy
+msgid ""
+"<qt>This file is a <b>private</b> key.<br />Do you want to import it instead "
+"of opening it in editor?</qt>"
+msgstr "<qt> ជា a<b></b> ដល់</qt>"
+
+#: editor/kgpgtextedit.cpp:135
+msgid "Key file dropped on Editor"
+msgstr ""
+
+#: editor/kgpgtextedit.cpp:257 kgpgexternalactions.cpp:397
+#, fuzzy
+msgid "Decryption failed."
+msgstr "បរាជ័យ​."
+
+#: editor/kgpgtextedit.cpp:272 foldercompressjob.cpp:139
+#, kde-format
+msgid "The encryption failed with error code %1"
+msgstr ""
+
+#: editor/kgpgtextedit.cpp:273 foldercompressjob.cpp:140
+#, fuzzy
+msgid "Encryption failed."
+msgstr "​ការ​អ៊ីនគ្រីប បរាជ័យ​."
+
+#: editor/kgpgtextedit.cpp:286
+#, fuzzy
+msgid "Signing not possible: bad passphrase or missing key"
+msgstr "ការចុះហត្ថលេខា ឬ"
+
+#. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
+#: editor/kgpgtextedit.cpp:326 keyserver.ui:144 keyservers.cpp:211
+#, fuzzy
+msgid "&Import"
+msgstr "នាំចូល"
+
+#: editor/kgpgtextedit.cpp:327
+#, fuzzy
+msgid "Import key in your list"
+msgstr "នាំចូល អ៊ិន្ឈ៍"
+
+#: editor/kgpgtextedit.cpp:330
+#, fuzzy
+msgid "Do &Not Import"
+msgstr "មិន នាំចូល"
+
+#: editor/kgpgtextedit.cpp:331
+#, fuzzy
+msgid "Will not import this key in your list"
+msgstr "អ៊ិន្ឈ៍"
+
+#: editor/kgpgtextedit.cpp:333
+#, fuzzy
+msgid "Missing Key"
+msgstr "បាត់ គ្រាប់​ចុច"
 
 #: foldercompressjob.cpp:44
 #, fuzzy
@@ -93,16 +1140,6 @@ msgstr "ដល់"
 msgctxt "Status message 'Encrypting <filename>' (operation starts)"
 msgid "Encrypting %1"
 msgstr "១"
-
-#: foldercompressjob.cpp:139 editor/kgpgtextedit.cpp:272
-#, kde-format
-msgid "The encryption failed with error code %1"
-msgstr ""
-
-#: foldercompressjob.cpp:140 editor/kgpgtextedit.cpp:273
-#, fuzzy
-msgid "Encryption failed."
-msgstr "​ការ​អ៊ីនគ្រីប បរាជ័យ​."
 
 #: foldercompressjob.cpp:143 transactions/kgpgencrypt.cpp:118
 #, fuzzy, kde-format
@@ -140,20 +1177,101 @@ msgstr "មាន​ គ្រាប់​ចុច"
 msgid "Available Trusted Keys"
 msgstr "មាន​ គ្រាប់​ចុច"
 
+#. i18n: ectx: property (text), widget (QLabel)
+#. i18n: ectx: property (text), widget (QLabel, filterEditLabel)
+#: groupedit.ui:38 keysmanager.cpp:414 searchres.ui:28
+#, fuzzy
+msgid "Search:"
+msgstr "ស្វែងរក ៖"
+
+#. i18n: ectx: property (text), widget (QTableView, availableKeys)
+#. i18n: ectx: property (text), widget (QTableView, groupKeys)
+#: groupedit.ui:74 groupedit.ui:158 model/kgpgitemmodel.cpp:329
+#: model/kgpgsearchresultmodel.cpp:332
+#, fuzzy
+msgid "Name"
+msgstr "ឈ្មោះ"
+
+#. i18n: ectx: property (text), widget (QTableView, availableKeys)
+#. i18n: ectx: property (text), widget (QTableView, groupKeys)
+#: groupedit.ui:79 groupedit.ui:163 model/kgpgitemmodel.cpp:330
+#: model/kgpgsearchresultmodel.cpp:334
+#, fuzzy
+msgctxt "@title:column Title of a column of emails"
+msgid "Email"
+msgstr "អ៊ីមែល"
+
+#. i18n: ectx: property (text), widget (QTableView, availableKeys)
+#. i18n: ectx: property (text), widget (QTableView, groupKeys)
+#: groupedit.ui:84 groupedit.ui:168
+#, fuzzy
+msgid "Id"
+msgstr "លេខ​សម្គាល់"
+
+#. i18n: ectx: property (text), widget (QLabel, kActiveLabel1)
+#: groupedit.ui:100
+#, fuzzy
+msgid "Keys in the Group"
+msgstr "គ្រាប់​ចុច អ៊ិន្ឈ៍ ក្រុម"
+
 #: keyexport.cpp:25
 #, fuzzy
 msgid "Public Key Export"
 msgstr "សាធារណៈ គ្រាប់​ចុច នាំចេញ"
 
-#: keyexport.cpp:28 editor/kgpgeditor.cpp:500
+#. i18n: ectx: property (text), widget (QRadioButton, checkMail)
+#: keyexport.ui:38
 #, fuzzy
-msgid "Save File"
-msgstr "រក្សា​ទុក​ឯកសារ"
+msgctxt "Export a key via email"
+msgid "Email"
+msgstr "អ៊ីមែល"
 
-#: keyexport.cpp:41 editor/kgpgeditor.cpp:351 editor/kgpgeditor.cpp:358
-#, fuzzy, kde-format
-msgid "Overwrite existing file %1?"
-msgstr "សរសេរ​ជាន់​លើ?"
+#. i18n: ectx: property (text), widget (QRadioButton, checkClipboard)
+#: keyexport.ui:45 sourceselect.ui:34
+#, fuzzy
+msgid "Clipboard"
+msgstr "ក្ដារ​តម្បៀត​ខ្ទាស់"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: ectx: property (text), widget (QRadioButton, checkServer)
+#: keyexport.ui:55 keyserver.ui:41 keyserver.ui:176
+#, fuzzy
+msgid "Key server:"
+msgstr "គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ:"
+
+#. i18n: ectx: property (text), widget (QRadioButton, checkFile)
+#: keyexport.ui:69 sourceselect.ui:43
+#, fuzzy
+msgid "File:"
+msgstr "ឯកសារ ៖"
+
+#. i18n: ectx: property (title), widget (QGroupBox, buttonGroup3)
+#: keyexport.ui:89
+#, fuzzy
+msgid "Export Settings"
+msgstr "នាំចេញ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, checkAttrAll)
+#: keyexport.ui:95
+#, fuzzy
+msgid "Export everything"
+msgstr "នាំចេញ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, checkAttrPhoto)
+#: keyexport.ui:105
+#, fuzzy
+msgid "Do not export attributes (photo ids)"
+msgstr "រូបថត"
+
+#. i18n: ectx: property (text), widget (QRadioButton, checkAttrClean)
+#: keyexport.ui:112
+#, fuzzy
+msgctxt ""
+"@option:radio Exports the smallest key possible. Maps to export-minimal "
+"option of gpg"
+msgid "Clean key"
+msgstr "ស្អាត"
 
 #: keyinfodialog.cpp:166
 msgid ""
@@ -218,12 +1336,118 @@ msgstr ""
 msgid "Changing key properties failed."
 msgstr ""
 
-#. i18n: file: kgpgKeyInfo.ui:37
 #. i18n: ectx: property (title), widget (QGroupBox, gr_properties)
-#: keyinfodialog.cpp:349 rc.cpp:520
+#: keyinfodialog.cpp:349 kgpgKeyInfo.ui:37
 #, fuzzy
 msgid "Key properties"
 msgstr "គ្រាប់​ចុច"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
+#: keyserver.ui:38
+#, fuzzy
+msgid ""
+"<qt><b>Key Server:</b><br /> <p>A Key Server is a centralized repository of "
+"PGP/GnuPG keys connected to the Internet which can be conveniently accessed "
+"in order to obtain or deposit keys. Select from the drop down list to "
+"specify which key server should be used.</p> <p>Often these keys are held by "
+"people whom the user has never met and as such the authenticity is dubious "
+"at best. Refer to the GnuPG manual covering \"Web-of-Trust\" relationships "
+"to find out how GnuPG works around the problem of verifying authenticity.</"
+"p> </qt>"
+msgstr ""
+"<qt><b> គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ</b><br /><p> A គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ ជា a នៃ​ PGP បានតភ្ជាប់​ "
+"ដល់ អ៊ីនធឺណិត អ៊ិន្ឈ៍ ដល់ ឬ ជ្រើស ពី ក្រោម ដល់ ម៉ាស៊ីន​បម្រើ</p><p> ដោយ កុំ​ និង ជា នៅ ដល់ ធ្វើ​ដោយ​ដៃ "
+"បណ្តាញ នៃ​ ដល់ នៃ​</p></qt>"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, kCBimportks)
+#: keyserver.ui:52
+#, fuzzy
+msgid ""
+"<b>Key Server Drop Down Dialog:</b>\n"
+"Allows the user to select the Key Server which will be used to import PGP/"
+"GnuPG keys into the local keyring."
+msgstr "<b> គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ ចុះ​ក្រោម ប្រអប់</b> ដល់ គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ ដល់ PGP."
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
+#: keyserver.ui:60
+#, fuzzy
+msgid ""
+"<qt><b>Text to search or ID of the key to import:</b><br />\n"
+"<p>There are multiple ways to search for a key, you can use a text or "
+"partial text search (example: entering Phil or Zimmerman will bring up all "
+"keys in which Phil or Zimmerman shows up) or you can search by the ID's of "
+"the key. Key ID's are strings of letters and numbers that uniquely identify "
+"a key (example: searching for 0xED7585F4 would bring up the key associated "
+"with that ID).</p></qt>"
+msgstr ""
+"<qt><b> អត្ថបទ ដល់ ឬ លេខ​សម្គាល់ នៃ​ ដល់</b><br />\n"
+"<p> ដល់ សម្រាប់ a a ឬ ឬ លើ ទាំងអស់ អ៊ិន្ឈ៍ ឬ លើ ឬ ដោយ លេខ​សម្គាល់ s នៃ​ គ្រាប់​ចុច លេខ​សម្គាល់ s "
+"នៃ​ និង a សម្រាប់ លើ ជាមួយ លេខ​សម្គាល់</p></qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: keyserver.ui:69
+#, fuzzy
+msgid "Text to search or ID of the key to import:"
+msgstr "អត្ថបទ ដល់ ឬ លេខ​សម្គាល់ នៃ​ ដល់:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cBproxyI)
+#. i18n: ectx: property (text), widget (QCheckBox, cBproxyE)
+#: keyserver.ui:91 keyserver.ui:221
+#, fuzzy
+msgid "Honor HTTP proxy:"
+msgstr "HTTP:"
+
+#. i18n: ectx: property (text), widget (QPushButton, Buttonsearch)
+#: keyserver.ui:134
+#, fuzzy
+msgid "&Search"
+msgstr "ស្វែង​រក"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tab_export)
+#: keyserver.ui:170
+#, fuzzy
+msgid "Export"
+msgstr "នាំចេញ"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
+#: keyserver.ui:190
+#, fuzzy
+msgid ""
+"<qt><b>Key to be exported:</b><br />\n"
+"<p>This allows the user to specify the key from the drop down list that will "
+"be exported to the key server selected.</p></qt>"
+msgstr ""
+"<qt><b> គ្រាប់​ចុច ដល់</b><br />\n"
+"<p> ដល់ ពី ក្រោម ដល់ ម៉ាស៊ីន​បម្រើ</p></qt>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: keyserver.ui:193
+#, fuzzy
+msgid "Key to be exported:"
+msgstr "គ្រាប់​ចុច ដល់:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, exportAttributes)
+#: keyserver.ui:206
+#, fuzzy
+msgid "Export attributes (photo id)"
+msgstr "នាំចេញ រូបថត"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, Buttonexport)
+#: keyserver.ui:265
+#, fuzzy
+msgid ""
+"<qt><b>Export:</b><br />\n"
+"<p>Pushing this button will export the specified key to the specified server."
+"</p></qt>"
+msgstr ""
+"<qt><b> នាំចេញ</b><br />\n"
+"<p> ដល់ ម៉ាស៊ីន​បម្រើ</p></qt>"
+
+#. i18n: ectx: property (text), widget (QPushButton, Buttonexport)
+#: keyserver.ui:268
+#, fuzzy
+msgid "&Export"
+msgstr "នាំចេញ"
 
 #: keyservers.cpp:45
 #, fuzzy
@@ -262,13 +1486,6 @@ msgstr ""
 msgid "Import Key From Keyserver"
 msgid_plural "Import Keys From Keyserver"
 msgstr[0] "នាំចូល គ្រាប់​ចុច ពី"
-
-#. i18n: file: keyserver.ui:144
-#. i18n: ectx: property (text), widget (QPushButton, Buttonimport)
-#: keyservers.cpp:211 rc.cpp:476 editor/kgpgtextedit.cpp:326
-#, fuzzy
-msgid "&Import"
-msgstr "នាំចូល"
 
 #: keyservers.cpp:216
 #, fuzzy
@@ -447,15 +1664,6 @@ msgstr "​ផុត​កំណត់"
 msgid "&Photo ID's"
 msgstr "រូបថត លេខ​សម្គាល់ s"
 
-#. i18n: file: conf_misc.ui:139
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_SignMenu)
-#. i18n: file: conf_misc.ui:178
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_DecryptMenu)
-#: keysmanager.cpp:298 rc.cpp:163 rc.cpp:177
-#, fuzzy
-msgid "Disable"
-msgstr "មិន​អនុញ្ញាត"
-
 #: keysmanager.cpp:299
 #, fuzzy
 msgctxt "small picture"
@@ -509,15 +1717,6 @@ msgstr "មិន​កំណត់"
 #, fuzzy
 msgid "&Show Only Secret Keys"
 msgstr "បង្ហាញ​ សម្ងាត់ គ្រាប់​ចុច"
-
-#. i18n: file: groupedit.ui:38
-#. i18n: ectx: property (text), widget (QLabel)
-#. i18n: file: searchres.ui:28
-#. i18n: ectx: property (text), widget (QLabel, filterEditLabel)
-#: keysmanager.cpp:414 rc.cpp:426 rc.cpp:656
-#, fuzzy
-msgid "Search:"
-msgstr "ស្វែងរក ៖"
 
 #: keysmanager.cpp:425
 #, fuzzy
@@ -573,9 +1772,8 @@ msgstr "ជា a."
 msgid "The name is not accepted by gpg. Cannot generate a new key pair."
 msgstr "ឈ្មោះ ជា ដោយ a."
 
-#. i18n: file: newkey.ui:13
 #. i18n: ectx: property (windowTitle), widget (QWidget, newKey)
-#: keysmanager.cpp:574 rc.cpp:616
+#: keysmanager.cpp:574 newkey.ui:13
 #, fuzzy
 msgid "New Key Pair Created"
 msgstr "ថ្មី គ្រាប់​ចុច គូ បាន​បង្កើត​"
@@ -1118,22 +2316,28 @@ msgstr "ក្ដារ​តម្បៀត​ខ្ទាស់ ជា ទទ�
 msgid "Text successfully encrypted."
 msgstr ""
 
+#. i18n: ectx: Menu (managekeys)
+#: keysmanager.rc:6
+#, fuzzy
+msgid "&Keys"
+msgstr "គ្រាប់​ចុច"
+
+#. i18n: ectx: Menu (show_details)
+#: keysmanager.rc:29
+#, fuzzy
+msgid "&Show Details"
+msgstr "បង្ហាញ​ លម្អិត"
+
+#. i18n: ectx: Menu (groups)
+#: keysmanager.rc:41
+#, fuzzy
+msgid "&Groups"
+msgstr "ក្រុម"
+
 #: keytreeview.cpp:166
 #, fuzzy, kde-format
 msgid "<p>Do you want to import file <b>%1</b> into your key ring?</p>"
 msgstr "<p> ដល់<b></b></p>"
-
-#. i18n: file: keyserver.ui:32
-#. i18n: ectx: attribute (title), widget (QWidget, tab_import)
-#: keytreeview.cpp:167 rc.cpp:450 editor/kgpgeditor.cpp:702
-#, fuzzy
-msgid "Import"
-msgstr "នាំចូល"
-
-#: keytreeview.cpp:168 editor/kgpgeditor.cpp:702
-#, fuzzy
-msgid "Do Not Import"
-msgstr "កុំនាំចូល"
 
 #: kgpg.cpp:78
 msgid ""
@@ -1178,6 +2382,294 @@ msgid ""
 "folders."
 msgstr "ដល់ មួយ ឬ និង."
 
+#: kgpg.h:32
+msgid ""
+"Hi,\n"
+"\n"
+"please find attached the user id '%UIDNAME%' of your key %KEYID% signed by "
+"me. This mail is encrypted with that key to make sure you control both the "
+"email address and the key.\n"
+"\n"
+"If you have multiple user ids, I sent the signature for each user id "
+"separately to that user id's associated email address. You can import the "
+"signatures by running each through `gpg --import` after you have decrypted "
+"them with `gpg --decrypt`.\n"
+"\n"
+"If you are using KGpg store the attachment to disk and then import it. Just "
+"select `Import Key...` from `Keys` menu and open the file.\n"
+"\n"
+"Note that I did not upload your key to any keyservers. If you want this new "
+"signature to be available to others, please upload it yourself. With GnuPG "
+"this can be done using gpg --keyserver subkeys.pgp.net --send-key %KEYID%.\n"
+"\n"
+"With KGpg you can right click on the key once you imported all user ids and "
+"choose `Export Public Key...`.\n"
+"\n"
+"If you have any questions, don't hesitate to ask.\n"
+msgstr ""
+
+#. i18n: ectx: label, entry (CustomDecrypt), group (Decryption)
+#: kgpg.kcfg:13
+#, fuzzy
+msgid "Custom decryption command."
+msgstr "ផ្ទាល់ខ្លួន."
+
+#. i18n: ectx: label, entry (CustomEncryptionOptions), group (Encryption)
+#: kgpg.kcfg:19
+#, fuzzy
+msgid "Custom encryption options"
+msgstr "ផ្ទាល់ខ្លួន"
+
+#. i18n: ectx: label, entry (AllowCustomEncryptionOptions), group (Encryption)
+#: kgpg.kcfg:22
+#, fuzzy
+msgid "Allow custom encryption options"
+msgstr "អនុញ្ញាត"
+
+#. i18n: ectx: label, entry (FileEncryptionKey), group (Encryption)
+#: kgpg.kcfg:26
+#, fuzzy
+msgid "File encryption key."
+msgstr "ឯកសារ."
+
+#. i18n: ectx: label, entry (EncryptFilesTo), group (Encryption)
+#: kgpg.kcfg:29
+#, fuzzy
+msgid "Encrypt files"
+msgstr "​អ៊ិនគ្រីប"
+
+#. i18n: ectx: label, entry (AsciiArmor), group (Encryption)
+#: kgpg.kcfg:33
+#, fuzzy
+msgid "Use ASCII armored encryption."
+msgstr "ប្រើ ASCII."
+
+#. i18n: ectx: label, entry (AllowUntrustedKeys), group (Encryption)
+#: kgpg.kcfg:37
+#, fuzzy
+msgid "Allow encryption with untrusted keys."
+msgstr "អនុញ្ញាត ជាមួយ."
+
+#. i18n: ectx: label, entry (AllowUntrustedGroupMembers), group (Encryption)
+#: kgpg.kcfg:41
+msgid "Allow untrusted keys to become members of key groups."
+msgstr ""
+
+#. i18n: ectx: label, entry (HideUserID), group (Encryption)
+#: kgpg.kcfg:45
+#, fuzzy
+msgid "Hide the user ID."
+msgstr "លាក់ លេខ​សម្គាល់."
+
+#. i18n: ectx: label, entry (PgpCompatibility), group (Encryption)
+#: kgpg.kcfg:49
+#, fuzzy
+msgid "Enable PGP 6 compatibility."
+msgstr "អនុញ្ញាត PGP."
+
+#. i18n: ectx: label, entry (PgpExtension), group (Encryption)
+#: kgpg.kcfg:53
+#, fuzzy
+msgid "Use *.pgp extension for encrypted files."
+msgstr "ប្រើ សម្រាប់."
+
+#. i18n: ectx: label, entry (GpgConfigPath), group (GPG Settings)
+#: kgpg.kcfg:60
+#, fuzzy
+msgid "The path of the gpg configuration file."
+msgstr "នៃ​."
+
+#. i18n: ectx: label, entry (GpgBinaryPath), group (GPG Settings)
+#: kgpg.kcfg:63
+#, fuzzy
+msgid "The path of the gpg binary used by KGpg."
+msgstr "នៃ​ ដោយ."
+
+#. i18n: ectx: label, entry (FirstRun), group (General Options)
+#: kgpg.kcfg:79
+#, fuzzy
+msgid "Is the first time the application runs."
+msgstr "ជា ទី​មួយ."
+
+#. i18n: ectx: label, entry (EditorGeometry), group (General Options)
+#: kgpg.kcfg:83
+#, fuzzy
+msgid "The size of the editor window."
+msgstr "ទំហំ នៃ​."
+
+#. i18n: ectx: label, entry (ShowTrust), group (General Options)
+#: kgpg.kcfg:86
+#, fuzzy
+msgid "Show the trust value in key manager."
+msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
+
+#. i18n: ectx: label, entry (ShowExpi), group (General Options)
+#: kgpg.kcfg:90
+#, fuzzy
+msgid "Show the expiration value in key manager."
+msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
+
+#. i18n: ectx: label, entry (ShowSize), group (General Options)
+#: kgpg.kcfg:94
+#, fuzzy
+msgid "Show the size value in key manager."
+msgstr "បង្ហាញ​ ទំហំ អ៊ិន្ឈ៍."
+
+#. i18n: ectx: label, entry (ShowCreat), group (General Options)
+#: kgpg.kcfg:98
+#, fuzzy
+msgid "Show the creation value in key manager."
+msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
+
+#. i18n: ectx: label, entry (ShowSecret), group (General Options)
+#: kgpg.kcfg:102
+#, fuzzy
+msgid "Show only secret keys in key manager."
+msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
+
+#. i18n: ectx: label, entry (ShowLongKeyId), group (General Options)
+#: kgpg.kcfg:106
+#, fuzzy
+msgid "Show long key id in key manager."
+msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
+
+#. i18n: ectx: label, entry (TrustLevel), group (General Options)
+#: kgpg.kcfg:110
+#, fuzzy
+msgid "Show only keys with at least that trust level in key manager."
+msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
+
+#. i18n: ectx: label, entry (UseMouseSelection), group (User Interface)
+#: kgpg.kcfg:124
+#, fuzzy
+msgid "Use the mouse selection instead of the clipboard."
+msgstr "ប្រើ នៃ​ ក្តារ​តម្បៀត​ខ្ទាស់."
+
+#. i18n: ectx: label, entry (AutoStart), group (User Interface)
+#: kgpg.kcfg:128 kgpgfirstassistant.cpp:232
+#, fuzzy
+msgid "Start KGpg automatically at KDE startup."
+msgstr "ចាប់ផ្ដើម នៅ KDE."
+
+#. i18n: ectx: label, entry (RemoteFileWarn), group (User Interface)
+#: kgpg.kcfg:132
+#, fuzzy
+msgid ""
+"Display a warning before creating temporary files during remote file "
+"operations."
+msgstr "បង្ហាញ a."
+
+#. i18n: ectx: label, entry (LeftClick), group (User Interface)
+#: kgpg.kcfg:136
+#, fuzzy
+msgid "Choose default left-click behavior"
+msgstr "ជ្រើស​ លំនាំដើម ឆ្វេង"
+
+#. i18n: ectx: label, entry (EncryptedDropEvent), group (User Interface)
+#: kgpg.kcfg:143
+msgid "Handle encrypted drops"
+msgstr ""
+
+#. i18n: ectx: label, entry (UnencryptedDropEvent), group (User Interface)
+#: kgpg.kcfg:151
+msgid "Handle unencrypted drops"
+msgstr ""
+
+#. i18n: ectx: label, entry (SignMenu), group (User Interface)
+#: kgpg.kcfg:159
+#, fuzzy
+msgid "Show the \"sign file\" service menu."
+msgstr "បង្ហាញ​."
+
+#. i18n: ectx: label, entry (DecryptMenu), group (User Interface)
+#: kgpg.kcfg:167
+#, fuzzy
+msgid "Show the \"decrypt file\" service menu."
+msgstr "បង្ហាញ​."
+
+#. i18n: ectx: label, entry (ShowSystray), group (User Interface)
+#: kgpg.kcfg:176
+#, fuzzy
+msgid "Show the systray icon"
+msgstr "បង្ហាញ​"
+
+#. i18n: ectx: label, entry (RecentFiles), group (User Interface)
+#: kgpg.kcfg:180
+msgid "The number of recently opened files shown in the editor menu."
+msgstr ""
+
+#. i18n: ectx: label, entry (ShowTipOfDay), group (TipOfDay)
+#: kgpg.kcfg:187
+#, fuzzy
+msgid "Show tip of the day."
+msgstr "បង្ហាញ​ នៃ​ ថ្ងៃ."
+
+#. i18n: ectx: label, entry (ColorGood), group (Key Colors)
+#: kgpg.kcfg:194
+#, fuzzy
+msgid "Color used for trusted keys."
+msgstr "ពណ៌ សម្រាប់."
+
+#. i18n: ectx: label, entry (ColorRev), group (Key Colors)
+#: kgpg.kcfg:198
+#, fuzzy
+msgid "Color used for revoked keys."
+msgstr "ពណ៌ សម្រាប់."
+
+#. i18n: ectx: label, entry (ColorUnknown), group (Key Colors)
+#: kgpg.kcfg:202
+#, fuzzy
+msgid "Color used for unknown keys."
+msgstr "ពណ៌ សម្រាប់ មិន​ស្គាល់."
+
+#. i18n: ectx: label, entry (ColorBad), group (Key Colors)
+#: kgpg.kcfg:206
+#, fuzzy
+msgid "Color used for untrusted keys."
+msgstr "ពណ៌ សម្រាប់."
+
+#. i18n: ectx: label, entry (ColorUltimate), group (Key Colors)
+#: kgpg.kcfg:210
+#, fuzzy
+msgid "Color used for ultimately trusted keys."
+msgstr "ពណ៌ សម្រាប់."
+
+#. i18n: ectx: label, entry (ColorMarginal), group (Key Colors)
+#: kgpg.kcfg:214
+#, fuzzy
+msgid "Color used for marginally trusted keys."
+msgstr "ពណ៌ សម្រាប់."
+
+#. i18n: ectx: label, entry (ColorExpired), group (Key Colors)
+#: kgpg.kcfg:218
+#, fuzzy
+msgid "Color used for expired keys."
+msgstr "ពណ៌ សម្រាប់."
+
+#. i18n: ectx: label, entry (Font), group (Text Font)
+#: kgpg.kcfg:225
+#, fuzzy
+msgid "Font"
+msgstr "ពុម្ព​អក្សរ"
+
+#. i18n: ectx: label, entry (KeyServers), group (Servers)
+#: kgpg.kcfg:236
+msgid ""
+"Key servers used by KGpg. The first server in the list is the default server."
+msgstr ""
+
+#. i18n: ectx: label, entry (UseProxy), group (Key Servers)
+#: kgpg.kcfg:243
+#, fuzzy
+msgid "Use HTTP proxy when available."
+msgstr "ប្រើ HTTP."
+
+#. i18n: ectx: label, entry (EmailTemplate), group (Key Signing)
+#: kgpg.kcfg:250
+msgid ""
+"This is the text of the email sent by the \"Sign and Mail User ID\" action."
+msgstr ""
+
 #: kgpgexternalactions.cpp:126
 msgid "Cannot create temporary file for folder compression."
 msgstr ""
@@ -1200,28 +2692,11 @@ msgstr "<qt> ឥឡូវ a<br /><b></b> ដល់ បាន​លុប បន�
 msgid "Compression method for archive:"
 msgstr "ការបង្ហាប់ សម្រាប់:"
 
-#: kgpgexternalactions.cpp:206 kgpgexternalactions.cpp:361
-#: editor/kgpgeditor.cpp:521 transactions/kgpgencrypt.cpp:123
-#, fuzzy
-msgid "File Already Exists"
-msgstr "មាន​ឯកសារ​រួច​ហើយ"
-
-#: kgpgexternalactions.cpp:283 editor/kgpgeditor.cpp:733
-#: editor/kgpgtextedit.cpp:320
-msgctxt "Caption of message box"
-msgid "Verification Finished"
-msgstr ""
-
 #: kgpgexternalactions.cpp:395
 #, fuzzy
 msgid "Decryption of this file failed:"
 msgid_plural "Decryption of these files failed:"
 msgstr[0] "បរាជ័យ​."
-
-#: kgpgexternalactions.cpp:397 editor/kgpgtextedit.cpp:257
-#, fuzzy
-msgid "Decryption failed."
-msgstr "បរាជ័យ​."
 
 #: kgpgexternalactions.cpp:422
 #, fuzzy
@@ -1276,13 +2751,6 @@ msgid ""
 "*|All files"
 msgstr "គោល​ពីរ"
 
-#. i18n: file: conf_gpg.ui:108
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
-#: kgpgfirstassistant.cpp:123 rc.cpp:109
-#, fuzzy
-msgid "GnuPG Binary"
-msgstr "គោល​ពីរ"
-
 #: kgpgfirstassistant.cpp:141
 #, fuzzy
 msgid "KGpg needs to know where your GnuPG configuration file is stored."
@@ -1312,13 +2780,6 @@ msgstr "គ្រាប់​ចុច លុប (Delete)"
 #, fuzzy
 msgid "Generate new key"
 msgstr "ថ្មី គ្រាប់​ចុច."
-
-#. i18n: file: kgpg.kcfg:128
-#. i18n: ectx: label, entry (AutoStart), group (User Interface)
-#: kgpgfirstassistant.cpp:232 rc.cpp:360
-#, fuzzy
-msgid "Start KGpg automatically at KDE startup."
-msgstr "ចាប់ផ្ដើម នៅ KDE."
 
 #: kgpgfirstassistant.cpp:236
 #, fuzzy
@@ -1414,9 +2875,8 @@ msgstr "អ៊ីមែល:"
 msgid "Commen&t (optional):"
 msgstr "សេចក្តី​អធិប្បាយ:"
 
-#. i18n: file: kgpgKeyInfo.ui:136
 #. i18n: ectx: property (text), widget (QLabel, tl_expiration)
-#: kgpgkeygenerate.cpp:66 rc.cpp:532
+#: kgpgkeygenerate.cpp:66 kgpgKeyInfo.ui:136
 #, fuzzy
 msgid "Expiration:"
 msgstr "​ផុត​កំណត់:"
@@ -1497,12 +2957,107 @@ msgstr "អ្នក ដល់ a ជាមួយ ទេ"
 msgid "Email address not valid"
 msgstr "អ៊ីមែល"
 
-#. i18n: file: conf_encryption.ui:15
-#. i18n: ectx: property (windowTitle), widget (QWidget, Encryption)
-#: kgpgoptions.cpp:97 rc.cpp:21
+#. i18n: ectx: property (windowTitle), widget (KDialog, kgpgKeyInfo)
+#: kgpgKeyInfo.ui:14
+msgid "Kgpg"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, tl_id)
+#. i18n: ectx: property (text), widget (QLabel, textLabel5)
+#: kgpgKeyInfo.ui:85 newkey.ui:91
 #, fuzzy
-msgid "Encryption"
-msgstr "​ការ​អ៊ីនគ្រីប"
+msgid "Key ID:"
+msgstr "គ្រាប់​ចុច លេខ​សម្គាល់:"
+
+#. i18n: ectx: property (text), widget (QLabel, tl_comment)
+#: kgpgKeyInfo.ui:102
+#, fuzzy
+msgid "Comment:"
+msgstr "សេចក្ដី​អធិប្បាយ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, tl_creation)
+#: kgpgKeyInfo.ui:119
+msgid "Creation:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, tl_trust)
+#: kgpgKeyInfo.ui:153
+msgid "Trust:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, tl_owtrust)
+#: kgpgKeyInfo.ui:160
+#, fuzzy
+msgid "Owner trust:"
+msgstr "ម្ចាស់:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
+#: kgpgKeyInfo.ui:183
+msgid "I do not know"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
+#: kgpgKeyInfo.ui:188
+#, fuzzy
+msgid "I do NOT trust"
+msgstr "NOT"
+
+#. i18n: ectx: property (text), widget (QLabel, tl_algorithm)
+#: kgpgKeyInfo.ui:211
+#, fuzzy
+msgid "Algorithm:"
+msgstr "ក្បួន​ដោះស្រាយ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, tl_length)
+#: kgpgKeyInfo.ui:228
+#, fuzzy
+msgid "Length:"
+msgstr "ប្រវែង ៖"
+
+#. i18n: ectx: property (title), widget (QGroupBox, gr_photo)
+#: kgpgKeyInfo.ui:277
+#, fuzzy
+msgid "Photo"
+msgstr "រូបថត"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, m_photo)
+#: kgpgKeyInfo.ui:297
+msgid ""
+"<qt><b>Photo:</b><p>A photo can be included with a public key for extra "
+"security. The photo can be used as an additional method of authenticating "
+"the key. However, it should not be relied upon as the only form of "
+"authentication.</p></qt>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_photo)
+#: kgpgKeyInfo.ui:306
+#, fuzzy
+msgid "No Photo"
+msgstr "គ្មាន​រូបថត"
+
+#. i18n: ectx: property (text), widget (QCheckBox, m_disable)
+#: kgpgKeyInfo.ui:343
+#, fuzzy
+msgid "Disable key"
+msgstr "មិន​អនុញ្ញាត"
+
+#. i18n: ectx: property (text), widget (KPushButton, m_expirationbtn)
+#: kgpgKeyInfo.ui:350
+#, fuzzy
+msgid "Change Expiration"
+msgstr "ផ្លាស់​ប្តូរ ​ផុត​កំណត់."
+
+#. i18n: ectx: property (text), widget (KPushButton, m_password)
+#: kgpgKeyInfo.ui:357
+#, fuzzy
+msgid "Change Passphrase"
+msgstr "ផ្លាស់​ប្តូរ."
+
+#. i18n: ectx: property (title), widget (QGroupBox, gr_fingerprint)
+#: kgpgKeyInfo.ui:383
+#, fuzzy
+msgid "Fingerprint"
+msgstr "ស្នាម​ម្រាមដៃ​"
 
 #: kgpgoptions.cpp:98
 msgid "Decryption"
@@ -1628,6 +3183,71 @@ msgstr "(លំនាំដើម)"
 msgid "Create Revocation Certificate"
 msgstr "បង្កើត វិញ្ញាបនបត្រ"
 
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: kgpgrevokewidget.ui:18
+#, fuzzy
+msgid "Create revocation certificate for"
+msgstr "បង្កើត សម្រាប់"
+
+#. i18n: ectx: property (text), widget (QLabel, keyID)
+#: kgpgrevokewidget.ui:28
+msgid "key id"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: kgpgrevokewidget.ui:45
+#, fuzzy
+msgid "Reason for revocation:"
+msgstr "សម្រាប់:"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, comboBox1)
+#: kgpgrevokewidget.ui:56
+#, fuzzy
+msgid "No Reason"
+msgstr "ទេ"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, comboBox1)
+#: kgpgrevokewidget.ui:61
+#, fuzzy
+msgid "Key Has Been Compromised"
+msgstr "គ្រាប់​ចុច"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, comboBox1)
+#: kgpgrevokewidget.ui:66
+#, fuzzy
+msgid "Key is Superseded"
+msgstr "គ្រាប់​ចុច ជា"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, comboBox1)
+#: kgpgrevokewidget.ui:71
+#, fuzzy
+msgid "Key is No Longer Used"
+msgstr "គ្រាប់​ចុច ជា ទេ បាន​ប្រើ"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: kgpgrevokewidget.ui:81
+#, fuzzy
+msgid "Description:"
+msgstr "ការ​ពិពណ៌នា ៖"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbSave)
+#: kgpgrevokewidget.ui:96
+#, fuzzy
+msgid "Save certificate:"
+msgstr "រក្សា​​ទុក​​:"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbPrint)
+#: kgpgrevokewidget.ui:111
+#, fuzzy
+msgid "Print certificate"
+msgstr "បោះ​​ពុម្ព​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, cbImport)
+#: kgpgrevokewidget.ui:121
+#, fuzzy
+msgid "Import into keyring"
+msgstr "នាំចូល"
+
 #: main.cpp:24
 #, fuzzy
 msgid ""
@@ -1696,1444 +3316,93 @@ msgstr ""
 msgid "File to open"
 msgstr "ឯកសារ​ដែល​ត្រូវ​បើក"
 
-#: rc.cpp:1
-msgctxt "NAME OF TRANSLATORS"
-msgid "Your names"
-msgstr "ខឹម សុខែម, ​អេង វណ្ណៈ, អោក ពិសិដ្ឋ​"
+#: model/keylistproxymodel.cpp:96 transactions/kgpgimport.cpp:193
+#, fuzzy, kde-format
+msgctxt "ID: Name"
+msgid "%1: %2"
+msgstr "%1 (%2)"
 
-#: rc.cpp:2
-msgctxt "EMAIL OF TRANSLATORS"
-msgid "Your emails"
-msgstr "khoemsokhem@khmeros.info,​​evannak@khmeros.info,piseth_dv@khmeros.info"
-
-#. i18n: file: adduid.ui:16
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:5
-#, fuzzy
-msgid "Name (minimum 5 characters):"
-msgstr "ឈ្មោះ:"
-
-#. i18n: file: adduid.ui:29
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#. i18n: file: newkey.ui:67
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:8 rc.cpp:628
-#, fuzzy
-msgid "Email:"
-msgstr "អ៊ីមែល ៖"
-
-#. i18n: file: adduid.ui:42
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:11
-#, fuzzy
-msgid "Comment (optional):"
-msgstr "សេចក្តី​អធិប្បាយ:"
-
-#. i18n: file: conf_decryption.ui:52
-#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_4_2)
-#: rc.cpp:14
-#, fuzzy
-msgid ""
-"<qt><b>Custom Decryption Command:</b><br />\n"
-"<p>This option allows the user to specify a custom command to be executed by "
-"GPG when decryption occurs. (This is recommended for advanced users only).</"
-"p></qt>"
-msgstr ""
-"<qt><b> ផ្ទាល់ខ្លួន ពាក្យ​បញ្ជា</b><br />\n"
-"<p> ដល់ a ដល់ ដោយ GPG ជា សម្រាប់</p></qt>"
-
-#. i18n: file: conf_decryption.ui:55
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_4_2)
-#: rc.cpp:18
-#, fuzzy
-msgid "Custom decryption command:"
-msgstr "ផ្ទាល់ខ្លួន:"
-
-#. i18n: file: conf_encryption.ui:31
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AsciiArmor)
-#: rc.cpp:24
-#, fuzzy
-msgid ""
-"<qt><b>ASCII armored encryption:</b> <br /> \n"
-"<p>Checking this option outputs all encrypted files in a format that can be "
-"opened by a text editor and as such the output is suitable for placing in "
-"the body of an e-mail message.</p></qt>"
-msgstr ""
-"<qt><b> ASCII</b><br />\n"
-"<p> ទាំងអស់ អ៊ិន្ឈ៍ a ដោយ a និង លទ្ធផល ជា សម្រាប់ អ៊ិន្ឈ៍ នៃ​ e</p></qt>"
-
-#. i18n: file: conf_encryption.ui:34
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AsciiArmor)
-#: rc.cpp:28 selectpublickeydialog.cpp:95
-#, fuzzy
-msgid "ASCII armored encryption"
-msgstr "ការ​អ៊ិនគ្រីប​ស្រោប​ដោយ ASCII"
-
-#. i18n: file: conf_encryption.ui:42
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_PgpExtension)
-#: rc.cpp:31
-#, fuzzy
-msgid ""
-"<qt><b>Use *.pgp extension for encrypted files:</b><br />\n"
-"<p>Checking this option will append a .pgp extension to all encrypted files "
-"instead of a .gpg extension. This option will maintain compatibility with "
-"users of PGP (Pretty Good Privacy) software.</p></qt>"
-msgstr ""
-"<qt><b> ប្រើ សម្រាប់</b><br />\n"
-"<p> a ដល់ ទាំងអស់ នៃ​ a ជាមួយ នៃ​ PGP ល្អ ភាពឯកជន​</p></qt>"
-
-#. i18n: file: conf_encryption.ui:45
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PgpExtension)
-#: rc.cpp:35
-#, fuzzy
-msgid "Use *.pgp extension for encrypted files"
-msgstr "ប្រើ សម្រាប់"
-
-#. i18n: file: conf_encryption.ui:69
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AllowCustomEncryptionOptions)
-#: rc.cpp:38
-#, fuzzy
-msgid ""
-"<qt><b>Custom encryption command:</b><br />\n"
-"<p>When activated, an entry field will be shown in the key selection dialog, "
-"enabling you to enter a custom command for encryption. This option is "
-"recommended for experienced users only.</p></qt>"
-msgstr ""
-"<qt><b> ផ្ទាល់ខ្លួន</b><br />\n"
-"<p> វាល អ៊ិន្ឈ៍ ដល់ a សម្រាប់ ជា សម្រាប់</p></qt>"
-
-#. i18n: file: conf_encryption.ui:72
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowCustomEncryptionOptions)
-#: rc.cpp:42
-#, fuzzy
-msgid "Custom encryption command:"
-msgstr "ផ្ទាល់ខ្លួន:"
-
-#. i18n: file: conf_encryption.ui:113
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, encrypt_to_always)
-#: rc.cpp:45
-#, fuzzy
-msgid ""
-"<qt><b>Always encrypt with:</b><br />\n"
-"<p>This ensures all files/messages will also be encrypted with the chosen "
-"key. However, if the \"Encrypt files with:\" option is selected that chosen "
-"key will override the \"Always encrypt with:\" selection.</p></qt>"
-msgstr ""
-"<qt><b> ជានិច្ច ជាមួយ</b><br />\n"
-"<p> ទាំងអស់ ជាមួយ ​អ៊ិនគ្រីប ជាមួយ ជា ជានិច្ច ជាមួយ</p></qt>"
-
-#. i18n: file: conf_encryption.ui:116
-#. i18n: ectx: property (text), widget (QCheckBox, encrypt_to_always)
-#: rc.cpp:49
-#, fuzzy
-msgid "Always encrypt with:"
-msgstr "ជានិច្ច ជាមួយ:"
-
-#. i18n: file: conf_encryption.ui:124
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EncryptFilesTo)
-#: rc.cpp:52
-#, fuzzy
-msgid ""
-"<qt><b>Encrypt files with:</b><br />\n"
-"<p>Checking this option and selecting a key will force any file encryption "
-"operation to use the selected key. KGpg will not query for a recipient and "
-"the default key will be bypassed.</p></qt>"
-msgstr ""
-"<qt><b> ​អ៊ិនគ្រីប ជាមួយ</b><br />\n"
-"<p> និង a ដល់ សម្រាប់ a និង លំនាំដើម</p></qt>"
-
-#. i18n: file: conf_encryption.ui:127
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_EncryptFilesTo)
-#: rc.cpp:56
-#, fuzzy
-msgid "Encrypt files with:"
-msgstr "​អ៊ិនគ្រីប ជាមួយ:"
-
-#. i18n: file: conf_encryption.ui:135
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AllowUntrustedKeys)
-#: rc.cpp:59
-#, fuzzy
-msgid ""
-"<qt><b>Allow encryption with untrusted keys:</b><br />\n"
-"<p>When importing a public key, the key is usually marked as untrusted and "
-"as such cannot be used unless it is signed by the default key (thus making "
-"it 'trusted'). Checking this box enables any key to be used even if it is "
-"untrusted.</p></qt>"
-msgstr ""
-"<qt><b> អនុញ្ញាត ជាមួយ</b><br />\n"
-"<p> a ជា និង ជា ដោយ លំនាំដើម ដល់ ជា</p></qt>"
-
-#. i18n: file: conf_encryption.ui:138
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowUntrustedKeys)
-#: rc.cpp:63 selectpublickeydialog.cpp:100
-#, fuzzy
-msgid "Allow encryption with untrusted keys"
-msgstr "អនុញ្ញាត​ការ​អ៊ិនគ្រីប​ដោយ​ប្រើ​កូនសោ​មិន​ជឿ​ទុកចិត្ត"
-
-#. i18n: file: conf_encryption.ui:145
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AllowUntrustedGroupMembers)
-#: rc.cpp:66
-msgid ""
-"<qt><b>Allow untrusted keys as members of key groups:</b><br /><p>A key "
-"group allows simple encryption to multiple recipients at once. Similar to "
-"the <em>Allow encryption with untrusted keys</em> option this allows "
-"untrusted keys to become member of a key group.</p></qt>"
+#: model/keylistproxymodel.cpp:98 transactions/kgpgimport.cpp:195
+#, kde-format
+msgctxt "ID: Name <Email>"
+msgid "%1: %2 &lt;%3&gt;"
 msgstr ""
 
-#. i18n: file: conf_encryption.ui:148
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AllowUntrustedGroupMembers)
-#: rc.cpp:69
-msgid "Allow untrusted keys as members of key groups"
-msgstr ""
-
-#. i18n: file: conf_encryption.ui:156
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_HideUserID)
-#: rc.cpp:72
-#, fuzzy
-msgid ""
-"<qt><b>Hide user ID:</b><br /> \n"
-"<p>Checking this option will remove the keyid of the recipient from all "
-"encrypted packets. The advantage: traffic analysis of the encrypted packets "
-"cannot be performed as easily because the recipient is unknown. The "
-"disadvantage: the receiver of the encrypted packets is forced to try all "
-"secret keys before being able to decrypt the packets. This can be a lengthy "
-"process depending on the number of secret keys the receiver holds.</p></qt>"
-msgstr ""
-"<qt><b> លាក់ លេខ​សម្គាល់</b><br />\n"
-"<p> នៃ​ ពី ទាំងអស់ នៃ​ ជា មិន​ស្គាល់ នៃ​ ជា ដល់ ទាំងអស់ ដល់ a លើ លេខ​ នៃ​</p></qt>"
-
-#. i18n: file: conf_encryption.ui:159
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_HideUserID)
-#: rc.cpp:76 selectpublickeydialog.cpp:106
-#, fuzzy
-msgid "Hide user id"
-msgstr "លាក់​លេខសម្គាល់​អ្នក​ប្រើ​"
-
-#. i18n: file: conf_encryption.ui:167
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_PgpCompatibility)
-#: rc.cpp:79
-#, fuzzy
-msgid ""
-"<qt><b>PGP 6 compatibility:</b><br /> \n"
-"<p>Checking this option forces GnuPG to output encrypted packets that are as "
-"compliant with PGP (Pretty Good Privacy) 6 standards as possible thus "
-"allowing GnuPG users to inter operate with PGP 6 users.</p></qt>"
-msgstr ""
-"<qt><b> PGP</b><br />\n"
-"<p> ដល់ លទ្ធផល ជាមួយ PGP ល្អ ភាពឯកជន​ ដល់ ជាមួយ PGP</p></qt>"
-
-#. i18n: file: conf_encryption.ui:170
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_PgpCompatibility)
-#: rc.cpp:83
-#, fuzzy
-msgid "PGP 6 compatibility"
-msgstr "PGP"
-
-#. i18n: file: conf_gpg.ui:16
-#. i18n: ectx: property (whatsThis), widget (QWidget, GPGConf)
-#: rc.cpp:86
-#, fuzzy
-msgid ""
-"<qt><b>Global Settings:</b><br />\n"
-"<p></p>\n"
-"</qt>"
-msgstr ""
-"<qt><b> សកល ការ​កំណត់</b><br />\n"
-"<p></p>\n"
-"</qt>"
-
-#. i18n: file: conf_gpg.ui:22
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:91
-#, fuzzy
-msgid "GnuPG Home"
-msgstr "ផ្ទះ"
-
-#. i18n: file: conf_gpg.ui:30
-#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_5_2)
-#: rc.cpp:94
-#, fuzzy
-msgid ""
-"<b>Home Location</b><p>This is the directory where GnuPG stores its "
-"configuration and the keyrings. If you have not changed it this is usually "
-"<em>~/.gnupg/</em></p>"
-msgstr "<b> ផ្ទះ ទីតាំង</b><p> ជា និង ជា<em></em></p>"
-
-#. i18n: file: conf_gpg.ui:33
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_5_2)
-#: rc.cpp:97
-#, fuzzy
-msgid "Home location:"
-msgstr "ផ្ទះ:"
-
-#. i18n: file: conf_gpg.ui:43
-#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_5_2_2)
-#: rc.cpp:100
-#, fuzzy
-msgid ""
-"<b>Configuration File</b><p>This is the name of the configuration file in "
-"the directory specified above. The default is <em>gnupg.conf</em> while "
-"older versions of GnuPG used <em>options</em>.</p>"
-msgstr ""
-"<b> ​កំណត់​​រចនាសម្ព័ន្ធ ឯកសារ</b><p> ជា ឈ្មោះ នៃ​ អ៊ិន្ឈ៍ ខាង​លើ លំនាំដើម ជា<em></em> នៃ​"
-"<em></em></p>"
-
-#. i18n: file: conf_gpg.ui:46
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_5_2_2)
-#: rc.cpp:103
-#, fuzzy
-msgid "Configuration file:"
-msgstr "​កំណត់​​រចនាសម្ព័ន្ធ:"
-
-#. i18n: file: conf_gpg.ui:96
-#. i18n: ectx: property (text), widget (QPushButton, changeHome)
-#: rc.cpp:106
-#, fuzzy
-msgid "Change..."
-msgstr "ផ្លាស់ប្ដូរ..."
-
-#. i18n: file: conf_gpg.ui:114
-#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_6_2)
-#: rc.cpp:112
-#, fuzzy
-msgid ""
-"<b>Program path</b><p>This is the program that will be called for all GnuPG "
-"operations. The default of <em>gpg</em> will work on most systems.</p>"
-msgstr "<b> កម្មវិធី</b><p> ជា សម្រាប់ ទាំងអស់ លំនាំដើម នៃ​<em></em> លើ</p>"
-
-#. i18n: file: conf_gpg.ui:117
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_6_2)
-#: rc.cpp:115
-#, fuzzy
-msgid "Program path:"
-msgstr "កម្មវិធី:"
-
-#. i18n: file: conf_gpg.ui:157
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, use_agent)
-#: rc.cpp:118
-#, fuzzy
-msgid ""
-"<b>Use GnuPG agent</b><p>The GnuPG agent stores the passwords for your "
-"secret keys in memory for a limited amount of time. If you use your secret "
-"key again while it is cached you do not have to enter it again. This is less "
-"secure than typing it every time.</p>"
-msgstr "<b> ប្រើ</b><p> សម្រាប់ អ៊ិន្ឈ៍ សម្រាប់ a នៃ​ ជា ដល់ ជា រៀងរាល់</p>"
-
-#. i18n: file: conf_gpg.ui:160
-#. i18n: ectx: property (text), widget (QCheckBox, use_agent)
-#: rc.cpp:121
-#, fuzzy
-msgid "Use GnuPG agent"
-msgstr "ប្រើ"
-
-#. i18n: file: conf_misc.ui:24
-#. i18n: ectx: attribute (title), widget (QWidget, tabGlobal)
-#: rc.cpp:124
-#, fuzzy
-msgid "Global Settings"
-msgstr "ការ​កំណត់​សកល"
-
-#. i18n: file: conf_misc.ui:33
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoStart)
-#: rc.cpp:127
-#, fuzzy
-msgid ""
-"<qt><b>Start KGpg automatically at KDE startup:</b><br />\n"
-"<p>If checked KGpg will start automatically each time that KDE starts up.</"
-"p></qt>"
-msgstr ""
-"<qt><b> ចាប់ផ្ដើម នៅ KDE</b><br />\n"
-"<p> ចាប់ផ្តើម KDE លើ</p></qt>"
-
-#. i18n: file: conf_misc.ui:36
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoStart)
-#: rc.cpp:131
-#, fuzzy
-msgid "Start KGpg automatically at login"
-msgstr "ចាប់ផ្ដើម នៅ"
-
-#. i18n: file: conf_misc.ui:53
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_UseMouseSelection)
-#: rc.cpp:134
-#, fuzzy
-msgid ""
-"<qt><b>Use mouse selection instead of clipboard:</b><br />\n"
-"<p>If checked, clipboard operations in KGpg will use the selection "
-"clipboard, that means highlighting a text to copy, and middle button (or "
-"right+left together) to paste. If this option is not checked, the clipboard "
-"will work with Key shortcuts (Ctrl-c, Ctrl-v).</p></qt> "
-msgstr ""
-"<qt><b> ប្រើ នៃ​ ក្តារ​តម្បៀត​ខ្ទាស់</b><br />\n"
-"<p> ក្តារ​តម្បៀត​ខ្ទាស់ អ៊ិន្ឈ៍ ក្តារ​តម្បៀត​ខ្ទាស់ a ដល់ ច្បាប់ចម្លង និង ឬ ​ស្តាំ ឆ្វេង ដល់ ជា ក្តារ​"
-"តម្បៀត​ខ្ទាស់ ជាមួយ គ្រាប់​ចុច បញ្ជា c បញ្ជា v</p></qt> "
-
-#. i18n: file: conf_misc.ui:56
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseMouseSelection)
-#: rc.cpp:138
-#, fuzzy
-msgid "Use mouse selection instead of clipboard"
-msgstr "ប្រើ នៃ​ ក្តារ​តម្បៀត​ខ្ទាស់"
-
-#. i18n: file: conf_misc.ui:70
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_RemoteFileWarn)
-#: rc.cpp:141
-#, fuzzy
-msgid ""
-"<qt><b>Display warning before creating temporary files:</b><br />\n"
-"<p></p></qt>"
-msgstr ""
-"<qt><b> បង្ហាញ</b><br />\n"
-"<p></p></qt>"
-
-#. i18n: file: conf_misc.ui:74
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_RemoteFileWarn)
-#: rc.cpp:145
-#, fuzzy
-msgid ""
-"Display warning before creating temporary files\n"
-"(only occurs on remote files operations)"
-msgstr "បង្ហាញ n លើ"
-
-#. i18n: file: conf_misc.ui:97
-#. i18n: ectx: attribute (title), widget (QWidget, tabApplet)
-#: rc.cpp:149
-#, fuzzy
-msgid "Applet && Menus"
-msgstr "អាប់ភ្លេត ម៉ឺនុយ"
-
-#. i18n: file: conf_misc.ui:103
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox11)
-#: rc.cpp:152
-#, fuzzy
-msgid "Konqueror Service Menus"
-msgstr "Konqueror សេវា ម៉ឺនុយ"
-
-#. i18n: file: conf_misc.ui:119
-#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
-#: rc.cpp:155
-#, fuzzy
-msgid ""
-"<qt><b>Sign file service menu:</b><br />\n"
-"<p></p>\n"
-"</qt>"
-msgstr ""
-"<qt><b> ចុះ​ហត្ថលេខា</b><br />\n"
-"<p></p>\n"
-"</qt>"
-
-#. i18n: file: conf_misc.ui:122
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:160
-#, fuzzy
-msgid "Sign file service menu:"
-msgstr "ចុះ​ហត្ថលេខា:"
-
-#. i18n: file: conf_misc.ui:144
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_SignMenu)
-#. i18n: file: conf_misc.ui:183
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_DecryptMenu)
-#: rc.cpp:166 rc.cpp:180
-#, fuzzy
-msgid "Enable with All Files"
-msgstr "អនុញ្ញាត ជាមួយ ទាំង​អស់ ឯកសារ"
-
-#. i18n: file: conf_misc.ui:164
-#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1_3)
-#: rc.cpp:169
-#, fuzzy
-msgid ""
-"<qt><b>Decrypt file service menu:</b><br />\n"
-"<p></p>\n"
-"</qt>"
-msgstr ""
-"<qt><b> ចុះ​ហត្ថលេខា</b><br />\n"
-"<p></p>\n"
-"</qt>"
-
-#. i18n: file: conf_misc.ui:167
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: rc.cpp:174
-#, fuzzy
-msgid "Decrypt file service menu:"
-msgstr "ចុះ​ហត្ថលេខា:"
-
-#. i18n: file: conf_misc.ui:188
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_DecryptMenu)
-#: rc.cpp:183
-#, fuzzy
-msgid "Enable with Encrypted Files"
-msgstr "អនុញ្ញាត ជាមួយ បាន​អ៊ិនគ្រីប ឯកសារ"
-
-#. i18n: file: conf_misc.ui:201
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox3)
-#: rc.cpp:186
-#, fuzzy
-msgid "System Tray Applet"
-msgstr "ប្រព័ន្ធ អាប់ភ្លេត"
-
-#. i18n: file: conf_misc.ui:208
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_ShowSystray)
-#: rc.cpp:189
-#, fuzzy
-msgid ""
-"<qt><b>Show system tray icon:</b><br />\n"
-"<p>If checked KGpg will minimize to an icon in the system tray.</p></qt>"
-msgstr ""
-"<qt><b> បង្ហាញ​</b><br />\n"
-"<p> ដល់ អ៊ិន្ឈ៍</p></qt>"
-
-#. i18n: file: conf_misc.ui:211
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_ShowSystray)
-#: rc.cpp:193
-#, fuzzy
-msgid "Show system tray icon"
-msgstr "បង្ហាញ​រូបតំណាង​ថាស​របស់​ប្រព័ន្ធ"
-
-#. i18n: file: conf_misc.ui:223
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#: rc.cpp:196
-#, fuzzy
-msgid "Left mouse click opens:"
-msgstr "ឆ្វេង ដល់:"
-
-#. i18n: file: conf_misc.ui:240
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftClick)
-#: rc.cpp:199
-#, fuzzy
-msgid "Key Manager"
-msgstr "គ្រាប់​ចុច កម្មវិធី​គ្រប់​គ្រង"
-
-#. i18n: file: conf_misc.ui:245
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_LeftClick)
-#. i18n: file: conf_misc.ui:272
-#. i18n: ectx: attribute (title), widget (QWidget, tabEditor)
-#: rc.cpp:202 rc.cpp:205 editor/kgpgeditor.cpp:502
-#, fuzzy
-msgid "Editor"
-msgstr "អ្នក​​​កែ​​សម្រួល​​"
-
-#. i18n: file: conf_misc.ui:280
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: rc.cpp:208
-#, fuzzy
-msgid "Recent files"
-msgstr "​អ៊ិនគ្រីប"
-
-#. i18n: file: conf_misc.ui:306
-#. i18n: ectx: attribute (title), widget (QWidget, tabSigning)
-#: rc.cpp:211
-msgid "Key Signing"
-msgstr ""
-
-#. i18n: file: conf_misc.ui:314
-#. i18n: ectx: property (whatsThis), widget (QLabel, label_2)
-#: rc.cpp:214
-msgid ""
-"Here you can define how User Ids that do not contain an email address (like "
-"Photo Ids) are sent to the key owner. You can choose to either send them "
-"with every other User Id you signed, only with the first Id you signed or to "
-"not send them at all."
-msgstr ""
-
-#. i18n: file: conf_misc.ui:317
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: rc.cpp:217
-msgid "Mailing of User Ids without Email Addresses"
-msgstr ""
-
-#. i18n: file: conf_misc.ui:325
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MailUats)
-#: rc.cpp:220
-msgid "Send with every Email"
-msgstr ""
-
-#. i18n: file: conf_misc.ui:330
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MailUats)
-#: rc.cpp:223
-msgid "Send only with first Email"
-msgstr ""
-
-#. i18n: file: conf_misc.ui:335
-#. i18n: ectx: property (text), item, widget (KComboBox, kcfg_MailUats)
-#: rc.cpp:226
-#, fuzzy
-msgid "Do not send"
-msgstr "កុំ​បង្កើត"
-
-#. i18n: file: conf_misc.ui:345
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: rc.cpp:229
-msgid "Email template"
-msgstr ""
-
-#. i18n: file: conf_misc.ui:353
-#. i18n: ectx: property (whatsThis), widget (KTextEdit, EmailTemplateEdit)
-#: rc.cpp:233
-#, no-c-format
-msgid ""
-"This is the text of the email sent by the \"Sign and Mail User ID\" action.\n"
-"\n"
-"The placeholders surrounded by the percent signs (like %KEYID%) will be "
-"replaced with the corresponding text for every single mail."
-msgstr ""
-
-#. i18n: file: conf_servers.ui:29
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
-#: rc.cpp:238
-#, fuzzy
-msgid ""
-"<b>INFORMATION</b>:\n"
-"Only the default server will be stored in GnuPG's configuration file,\n"
-"all others will be stored for use by KGpg only."
-msgstr "<b></b> លំនាំដើម ម៉ាស៊ីន​បម្រើ អ៊ិន្ឈ៍ s សម្រាប់ ដោយ."
-
-#. i18n: file: conf_servers.ui:39
-#. i18n: ectx: property (text), widget (QCheckBox, kcfg_UseProxy)
-#: rc.cpp:243
-#, fuzzy
-msgid "Honor HTTP proxy when available"
-msgstr "HTTP"
-
-#. i18n: file: conf_servers.ui:50
-#. i18n: ectx: property (text), widget (KPushButton, server_default)
-#: rc.cpp:246
-#, fuzzy
-msgid "&Set as Default"
-msgstr "កំណត់ លំនាំដើម"
-
-#. i18n: file: conf_servers.ui:57
-#. i18n: ectx: property (text), widget (KPushButton, server_add)
-#: rc.cpp:249
-#, fuzzy
-msgid "&Add..."
-msgstr "បន្ថែម..."
-
-#. i18n: file: conf_servers.ui:67
-#. i18n: ectx: property (text), widget (KPushButton, server_del)
-#: rc.cpp:252
-#, fuzzy
-msgid "&Delete"
-msgstr "លុប"
-
-#. i18n: file: conf_servers.ui:74
-#. i18n: ectx: property (text), widget (KPushButton, server_edit)
-#: rc.cpp:255
-#, fuzzy
-msgid "&Edit..."
-msgstr "កែសម្រួល"
-
-#. i18n: file: conf_ui2.ui:32
-#. i18n: ectx: attribute (title), widget (QWidget, tab)
-#: rc.cpp:258
-#, fuzzy
-msgid "Key Colors"
-msgstr "គ្រាប់​ចុច ពណ៌"
-
-#. i18n: file: conf_ui2.ui:42
-#. i18n: ectx: property (text), widget (QLabel, textLabel_trustUltimate)
-#: rc.cpp:261
-#, fuzzy
-msgid "Ultimately trusted keys:"
-msgstr "ពណ៌ សម្រាប់."
-
-#. i18n: file: conf_ui2.ui:52
-#. i18n: ectx: property (text), widget (QLabel, textLabel_trustTrusted)
-#: rc.cpp:264
-#, fuzzy
-msgid "Trusted keys:"
-msgstr "ដែល​ផុត​កំណត់:"
-
-#. i18n: file: conf_ui2.ui:62
-#. i18n: ectx: property (text), widget (QLabel, textLabel_trustMarginally)
-#: rc.cpp:267
-#, fuzzy
-msgid "Marginally trusted keys:"
-msgstr "ពណ៌ សម្រាប់."
-
-#. i18n: file: conf_ui2.ui:72
-#. i18n: ectx: property (text), widget (QLabel, textLabel_trustExpired)
-#: rc.cpp:270
-#, fuzzy
-msgid "Expired keys:"
-msgstr "ដែល​ផុត​កំណត់:"
-
-#. i18n: file: conf_ui2.ui:82
-#. i18n: ectx: property (text), widget (QLabel, textLabel_trustRevoked)
-#: rc.cpp:273
-#, fuzzy
-msgid "Revoked keys:"
-msgstr "បានដកហូត​វិញ:"
-
-#. i18n: file: conf_ui2.ui:92
-#. i18n: ectx: property (text), widget (QLabel, textLabel_trustUnknown)
-#: rc.cpp:276
-#, fuzzy
-msgid "Unknown keys:"
-msgstr "មិន​ស្គាល់:"
-
-#. i18n: file: conf_ui2.ui:102
-#. i18n: ectx: property (text), widget (QLabel, textLabel_trustDisabled)
-#: rc.cpp:279
-#, fuzzy
-msgid "Disabled keys:"
-msgstr "មិន​បាន​អនុញ្ញាត:"
-
-#. i18n: file: conf_ui2.ui:225
-#. i18n: ectx: attribute (title), widget (QWidget, TabPage)
-#: rc.cpp:282
-#, fuzzy
-msgid "Editor Font"
-msgstr "កម្មវិធី​និពន្ធ​ពុម្ពអក្សរ"
-
-#. i18n: file: editor/kgpgeditor.rc:13
-#. i18n: ectx: Menu (view)
-#. i18n: file: keysmanager.rc:24
-#. i18n: ectx: Menu (view)
-#: rc.cpp:285 rc.cpp:508
-#, fuzzy
-msgid "&View"
-msgstr "មើល"
-
-#. i18n: file: editor/kgpgeditor.rc:18
-#. i18n: ectx: Menu (signature)
-#: rc.cpp:288
-#, fuzzy
-msgid "Si&gnature"
-msgstr "ហត្ថលេខា"
-
-#. i18n: file: kgpg.kcfg:13
-#. i18n: ectx: label, entry (CustomDecrypt), group (Decryption)
-#: rc.cpp:291
-#, fuzzy
-msgid "Custom decryption command."
-msgstr "ផ្ទាល់ខ្លួន."
-
-#. i18n: file: kgpg.kcfg:19
-#. i18n: ectx: label, entry (CustomEncryptionOptions), group (Encryption)
-#: rc.cpp:294
-#, fuzzy
-msgid "Custom encryption options"
-msgstr "ផ្ទាល់ខ្លួន"
-
-#. i18n: file: kgpg.kcfg:22
-#. i18n: ectx: label, entry (AllowCustomEncryptionOptions), group (Encryption)
-#: rc.cpp:297
-#, fuzzy
-msgid "Allow custom encryption options"
-msgstr "អនុញ្ញាត"
-
-#. i18n: file: kgpg.kcfg:26
-#. i18n: ectx: label, entry (FileEncryptionKey), group (Encryption)
-#: rc.cpp:300
-#, fuzzy
-msgid "File encryption key."
-msgstr "ឯកសារ."
-
-#. i18n: file: kgpg.kcfg:29
-#. i18n: ectx: label, entry (EncryptFilesTo), group (Encryption)
-#: rc.cpp:303
-#, fuzzy
-msgid "Encrypt files"
-msgstr "​អ៊ិនគ្រីប"
-
-#. i18n: file: kgpg.kcfg:33
-#. i18n: ectx: label, entry (AsciiArmor), group (Encryption)
-#: rc.cpp:306
-#, fuzzy
-msgid "Use ASCII armored encryption."
-msgstr "ប្រើ ASCII."
-
-#. i18n: file: kgpg.kcfg:37
-#. i18n: ectx: label, entry (AllowUntrustedKeys), group (Encryption)
-#: rc.cpp:309
-#, fuzzy
-msgid "Allow encryption with untrusted keys."
-msgstr "អនុញ្ញាត ជាមួយ."
-
-#. i18n: file: kgpg.kcfg:41
-#. i18n: ectx: label, entry (AllowUntrustedGroupMembers), group (Encryption)
-#: rc.cpp:312
-msgid "Allow untrusted keys to become members of key groups."
-msgstr ""
-
-#. i18n: file: kgpg.kcfg:45
-#. i18n: ectx: label, entry (HideUserID), group (Encryption)
-#: rc.cpp:315
-#, fuzzy
-msgid "Hide the user ID."
-msgstr "លាក់ លេខ​សម្គាល់."
-
-#. i18n: file: kgpg.kcfg:49
-#. i18n: ectx: label, entry (PgpCompatibility), group (Encryption)
-#: rc.cpp:318
-#, fuzzy
-msgid "Enable PGP 6 compatibility."
-msgstr "អនុញ្ញាត PGP."
-
-#. i18n: file: kgpg.kcfg:53
-#. i18n: ectx: label, entry (PgpExtension), group (Encryption)
-#: rc.cpp:321
-#, fuzzy
-msgid "Use *.pgp extension for encrypted files."
-msgstr "ប្រើ សម្រាប់."
-
-#. i18n: file: kgpg.kcfg:60
-#. i18n: ectx: label, entry (GpgConfigPath), group (GPG Settings)
-#: rc.cpp:324
-#, fuzzy
-msgid "The path of the gpg configuration file."
-msgstr "នៃ​."
-
-#. i18n: file: kgpg.kcfg:63
-#. i18n: ectx: label, entry (GpgBinaryPath), group (GPG Settings)
-#: rc.cpp:327
-#, fuzzy
-msgid "The path of the gpg binary used by KGpg."
-msgstr "នៃ​ ដោយ."
-
-#. i18n: file: kgpg.kcfg:79
-#. i18n: ectx: label, entry (FirstRun), group (General Options)
-#: rc.cpp:330
-#, fuzzy
-msgid "Is the first time the application runs."
-msgstr "ជា ទី​មួយ."
-
-#. i18n: file: kgpg.kcfg:83
-#. i18n: ectx: label, entry (EditorGeometry), group (General Options)
-#: rc.cpp:333
-#, fuzzy
-msgid "The size of the editor window."
-msgstr "ទំហំ នៃ​."
-
-#. i18n: file: kgpg.kcfg:86
-#. i18n: ectx: label, entry (ShowTrust), group (General Options)
-#: rc.cpp:336
-#, fuzzy
-msgid "Show the trust value in key manager."
-msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
-
-#. i18n: file: kgpg.kcfg:90
-#. i18n: ectx: label, entry (ShowExpi), group (General Options)
-#: rc.cpp:339
-#, fuzzy
-msgid "Show the expiration value in key manager."
-msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
-
-#. i18n: file: kgpg.kcfg:94
-#. i18n: ectx: label, entry (ShowSize), group (General Options)
-#: rc.cpp:342
-#, fuzzy
-msgid "Show the size value in key manager."
-msgstr "បង្ហាញ​ ទំហំ អ៊ិន្ឈ៍."
-
-#. i18n: file: kgpg.kcfg:98
-#. i18n: ectx: label, entry (ShowCreat), group (General Options)
-#: rc.cpp:345
-#, fuzzy
-msgid "Show the creation value in key manager."
-msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
-
-#. i18n: file: kgpg.kcfg:102
-#. i18n: ectx: label, entry (ShowSecret), group (General Options)
-#: rc.cpp:348
-#, fuzzy
-msgid "Show only secret keys in key manager."
-msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
-
-#. i18n: file: kgpg.kcfg:106
-#. i18n: ectx: label, entry (ShowLongKeyId), group (General Options)
-#: rc.cpp:351
-#, fuzzy
-msgid "Show long key id in key manager."
-msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
-
-#. i18n: file: kgpg.kcfg:110
-#. i18n: ectx: label, entry (TrustLevel), group (General Options)
-#: rc.cpp:354
-#, fuzzy
-msgid "Show only keys with at least that trust level in key manager."
-msgstr "បង្ហាញ​ អ៊ិន្ឈ៍."
-
-#. i18n: file: kgpg.kcfg:124
-#. i18n: ectx: label, entry (UseMouseSelection), group (User Interface)
-#: rc.cpp:357
-#, fuzzy
-msgid "Use the mouse selection instead of the clipboard."
-msgstr "ប្រើ នៃ​ ក្តារ​តម្បៀត​ខ្ទាស់."
-
-#. i18n: file: kgpg.kcfg:132
-#. i18n: ectx: label, entry (RemoteFileWarn), group (User Interface)
-#: rc.cpp:363
-#, fuzzy
-msgid ""
-"Display a warning before creating temporary files during remote file "
-"operations."
-msgstr "បង្ហាញ a."
-
-#. i18n: file: kgpg.kcfg:136
-#. i18n: ectx: label, entry (LeftClick), group (User Interface)
-#: rc.cpp:366
-#, fuzzy
-msgid "Choose default left-click behavior"
-msgstr "ជ្រើស​ លំនាំដើម ឆ្វេង"
-
-#. i18n: file: kgpg.kcfg:143
-#. i18n: ectx: label, entry (EncryptedDropEvent), group (User Interface)
-#: rc.cpp:369
-msgid "Handle encrypted drops"
-msgstr ""
-
-#. i18n: file: kgpg.kcfg:151
-#. i18n: ectx: label, entry (UnencryptedDropEvent), group (User Interface)
-#: rc.cpp:372
-msgid "Handle unencrypted drops"
-msgstr ""
-
-#. i18n: file: kgpg.kcfg:159
-#. i18n: ectx: label, entry (SignMenu), group (User Interface)
-#: rc.cpp:375
-#, fuzzy
-msgid "Show the \"sign file\" service menu."
-msgstr "បង្ហាញ​."
-
-#. i18n: file: kgpg.kcfg:167
-#. i18n: ectx: label, entry (DecryptMenu), group (User Interface)
-#: rc.cpp:378
-#, fuzzy
-msgid "Show the \"decrypt file\" service menu."
-msgstr "បង្ហាញ​."
-
-#. i18n: file: kgpg.kcfg:176
-#. i18n: ectx: label, entry (ShowSystray), group (User Interface)
-#: rc.cpp:381
-#, fuzzy
-msgid "Show the systray icon"
-msgstr "បង្ហាញ​"
-
-#. i18n: file: kgpg.kcfg:180
-#. i18n: ectx: label, entry (RecentFiles), group (User Interface)
-#: rc.cpp:384
-msgid "The number of recently opened files shown in the editor menu."
-msgstr ""
-
-#. i18n: file: kgpg.kcfg:187
-#. i18n: ectx: label, entry (ShowTipOfDay), group (TipOfDay)
-#: rc.cpp:387
-#, fuzzy
-msgid "Show tip of the day."
-msgstr "បង្ហាញ​ នៃ​ ថ្ងៃ."
-
-#. i18n: file: kgpg.kcfg:194
-#. i18n: ectx: label, entry (ColorGood), group (Key Colors)
-#: rc.cpp:390
-#, fuzzy
-msgid "Color used for trusted keys."
-msgstr "ពណ៌ សម្រាប់."
-
-#. i18n: file: kgpg.kcfg:198
-#. i18n: ectx: label, entry (ColorRev), group (Key Colors)
-#: rc.cpp:393
-#, fuzzy
-msgid "Color used for revoked keys."
-msgstr "ពណ៌ សម្រាប់."
-
-#. i18n: file: kgpg.kcfg:202
-#. i18n: ectx: label, entry (ColorUnknown), group (Key Colors)
-#: rc.cpp:396
-#, fuzzy
-msgid "Color used for unknown keys."
-msgstr "ពណ៌ សម្រាប់ មិន​ស្គាល់."
-
-#. i18n: file: kgpg.kcfg:206
-#. i18n: ectx: label, entry (ColorBad), group (Key Colors)
-#: rc.cpp:399
-#, fuzzy
-msgid "Color used for untrusted keys."
-msgstr "ពណ៌ សម្រាប់."
-
-#. i18n: file: kgpg.kcfg:210
-#. i18n: ectx: label, entry (ColorUltimate), group (Key Colors)
-#: rc.cpp:402
-#, fuzzy
-msgid "Color used for ultimately trusted keys."
-msgstr "ពណ៌ សម្រាប់."
-
-#. i18n: file: kgpg.kcfg:214
-#. i18n: ectx: label, entry (ColorMarginal), group (Key Colors)
-#: rc.cpp:405
-#, fuzzy
-msgid "Color used for marginally trusted keys."
-msgstr "ពណ៌ សម្រាប់."
-
-#. i18n: file: kgpg.kcfg:218
-#. i18n: ectx: label, entry (ColorExpired), group (Key Colors)
-#: rc.cpp:408
-#, fuzzy
-msgid "Color used for expired keys."
-msgstr "ពណ៌ សម្រាប់."
-
-#. i18n: file: kgpg.kcfg:225
-#. i18n: ectx: label, entry (Font), group (Text Font)
-#: rc.cpp:411
-#, fuzzy
-msgid "Font"
-msgstr "ពុម្ព​អក្សរ"
-
-#. i18n: file: kgpg.kcfg:236
-#. i18n: ectx: label, entry (KeyServers), group (Servers)
-#: rc.cpp:414
-msgid ""
-"Key servers used by KGpg. The first server in the list is the default server."
-msgstr ""
-
-#. i18n: file: kgpg.kcfg:243
-#. i18n: ectx: label, entry (UseProxy), group (Key Servers)
-#: rc.cpp:417
-#, fuzzy
-msgid "Use HTTP proxy when available."
-msgstr "ប្រើ HTTP."
-
-#. i18n: file: kgpg.kcfg:250
-#. i18n: ectx: label, entry (EmailTemplate), group (Key Signing)
-#: rc.cpp:420
-msgid ""
-"This is the text of the email sent by the \"Sign and Mail User ID\" action."
-msgstr ""
-
-#. i18n: file: groupedit.ui:74
-#. i18n: ectx: property (text), widget (QTableView, availableKeys)
-#. i18n: file: groupedit.ui:158
-#. i18n: ectx: property (text), widget (QTableView, groupKeys)
-#: rc.cpp:429 rc.cpp:441 model/kgpgitemmodel.cpp:329
-#: model/kgpgsearchresultmodel.cpp:332
-#, fuzzy
-msgid "Name"
-msgstr "ឈ្មោះ"
-
-#. i18n: file: groupedit.ui:79
-#. i18n: ectx: property (text), widget (QTableView, availableKeys)
-#. i18n: file: groupedit.ui:163
-#. i18n: ectx: property (text), widget (QTableView, groupKeys)
-#: rc.cpp:432 rc.cpp:444 model/kgpgitemmodel.cpp:330
-#: model/kgpgsearchresultmodel.cpp:334
-#, fuzzy
-msgctxt "@title:column Title of a column of emails"
-msgid "Email"
-msgstr "អ៊ីមែល"
-
-#. i18n: file: groupedit.ui:84
-#. i18n: ectx: property (text), widget (QTableView, availableKeys)
-#. i18n: file: groupedit.ui:168
-#. i18n: ectx: property (text), widget (QTableView, groupKeys)
-#: rc.cpp:435 rc.cpp:447
-#, fuzzy
-msgid "Id"
+#: model/keylistproxymodel.cpp:103
+#, fuzzy, kde-format
+msgctxt "Name <Email>: ID"
+msgid "%1 &lt;%2&gt;: %3"
+msgstr "%1 (%2)"
+
+#: model/kgpgitemmodel.cpp:228 model/kgpgitemmodel.cpp:231
+#, fuzzy, kde-format
+msgid "1 Key"
+msgid_plural "%1 Keys"
+msgstr[0] "គ្រាប់​ចុច"
+msgstr[1] ""
+
+#: model/kgpgitemmodel.cpp:232
+#, fuzzy, kde-format
+msgid "1 Group"
+msgid_plural "%1 Groups"
+msgstr[0] "ក្រុម"
+msgstr[1] ""
+
+#: model/kgpgitemmodel.cpp:234
+#, fuzzy, kde-format
+msgctxt "%1 = something like 7 keys, %2 = something like 2 groups"
+msgid "%1, %2"
+msgstr "%1 (%2)"
+
+#: model/kgpgitemmodel.cpp:335
+#, fuzzy
+msgid "ID"
 msgstr "លេខ​សម្គាល់"
 
-#. i18n: file: groupedit.ui:100
-#. i18n: ectx: property (text), widget (QLabel, kActiveLabel1)
-#: rc.cpp:438
-#, fuzzy
-msgid "Keys in the Group"
-msgstr "គ្រាប់​ចុច អ៊ិន្ឈ៍ ក្រុម"
+#: model/kgpgsearchresultmodel.cpp:124
+#, fuzzy, kde-format
+msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009, revoked"
+msgid "ID %1, %2-bit %3 key, created %4, revoked"
+msgstr "លេខ​សម្គាល់"
 
-#. i18n: file: keyserver.ui:38
-#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
-#: rc.cpp:453
-#, fuzzy
-msgid ""
-"<qt><b>Key Server:</b><br /> <p>A Key Server is a centralized repository of "
-"PGP/GnuPG keys connected to the Internet which can be conveniently accessed "
-"in order to obtain or deposit keys. Select from the drop down list to "
-"specify which key server should be used.</p> <p>Often these keys are held by "
-"people whom the user has never met and as such the authenticity is dubious "
-"at best. Refer to the GnuPG manual covering \"Web-of-Trust\" relationships "
-"to find out how GnuPG works around the problem of verifying authenticity.</"
-"p> </qt>"
-msgstr ""
-"<qt><b> គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ</b><br /><p> A គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ ជា a នៃ​ PGP បានតភ្ជាប់​ "
-"ដល់ អ៊ីនធឺណិត អ៊ិន្ឈ៍ ដល់ ឬ ជ្រើស ពី ក្រោម ដល់ ម៉ាស៊ីន​បម្រើ</p><p> ដោយ កុំ​ និង ជា នៅ ដល់ ធ្វើ​ដោយ​ដៃ "
-"បណ្តាញ នៃ​ ដល់ នៃ​</p></qt>"
+#: model/kgpgsearchresultmodel.cpp:129
+#, fuzzy, kde-format
+msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009"
+msgid "ID %1, %2-bit %3 key, created %4"
+msgstr "លេខ​សម្គាល់ ៤"
 
-#. i18n: file: keyserver.ui:41
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#. i18n: file: keyserver.ui:176
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#. i18n: file: keyexport.ui:55
-#. i18n: ectx: property (text), widget (QRadioButton, checkServer)
-#: rc.cpp:456 rc.cpp:482 rc.cpp:683
-#, fuzzy
-msgid "Key server:"
-msgstr "គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ:"
+#: model/kgpgsearchresultmodel.cpp:218
+#, fuzzy, kde-format
+msgid "One Photo ID"
+msgid_plural "%1 Photo IDs"
+msgstr[0] "រូបថត លេខ​សម្គាល់"
 
-#. i18n: file: keyserver.ui:52
-#. i18n: ectx: property (whatsThis), widget (KComboBox, kCBimportks)
-#: rc.cpp:459
-#, fuzzy
-msgid ""
-"<b>Key Server Drop Down Dialog:</b>\n"
-"Allows the user to select the Key Server which will be used to import PGP/"
-"GnuPG keys into the local keyring."
-msgstr "<b> គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ ចុះ​ក្រោម ប្រអប់</b> ដល់ គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ ដល់ PGP."
-
-#. i18n: file: keyserver.ui:60
-#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
-#: rc.cpp:463
-#, fuzzy
-msgid ""
-"<qt><b>Text to search or ID of the key to import:</b><br />\n"
-"<p>There are multiple ways to search for a key, you can use a text or "
-"partial text search (example: entering Phil or Zimmerman will bring up all "
-"keys in which Phil or Zimmerman shows up) or you can search by the ID's of "
-"the key. Key ID's are strings of letters and numbers that uniquely identify "
-"a key (example: searching for 0xED7585F4 would bring up the key associated "
-"with that ID).</p></qt>"
-msgstr ""
-"<qt><b> អត្ថបទ ដល់ ឬ លេខ​សម្គាល់ នៃ​ ដល់</b><br />\n"
-"<p> ដល់ សម្រាប់ a a ឬ ឬ លើ ទាំងអស់ អ៊ិន្ឈ៍ ឬ លើ ឬ ដោយ លេខ​សម្គាល់ s នៃ​ គ្រាប់​ចុច លេខ​សម្គាល់ s "
-"នៃ​ និង a សម្រាប់ លើ ជាមួយ លេខ​សម្គាល់</p></qt>"
-
-#. i18n: file: keyserver.ui:69
-#. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:467
-#, fuzzy
-msgid "Text to search or ID of the key to import:"
-msgstr "អត្ថបទ ដល់ ឬ លេខ​សម្គាល់ នៃ​ ដល់:"
-
-#. i18n: file: keyserver.ui:91
-#. i18n: ectx: property (text), widget (QCheckBox, cBproxyI)
-#. i18n: file: keyserver.ui:221
-#. i18n: ectx: property (text), widget (QCheckBox, cBproxyE)
-#: rc.cpp:470 rc.cpp:495
-#, fuzzy
-msgid "Honor HTTP proxy:"
-msgstr "HTTP:"
-
-#. i18n: file: keyserver.ui:134
-#. i18n: ectx: property (text), widget (QPushButton, Buttonsearch)
-#: rc.cpp:473
-#, fuzzy
-msgid "&Search"
-msgstr "ស្វែង​រក"
-
-#. i18n: file: keyserver.ui:170
-#. i18n: ectx: attribute (title), widget (QWidget, tab_export)
-#: rc.cpp:479
-#, fuzzy
-msgid "Export"
-msgstr "នាំចេញ"
-
-#. i18n: file: keyserver.ui:190
-#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
-#: rc.cpp:485
-#, fuzzy
-msgid ""
-"<qt><b>Key to be exported:</b><br />\n"
-"<p>This allows the user to specify the key from the drop down list that will "
-"be exported to the key server selected.</p></qt>"
-msgstr ""
-"<qt><b> គ្រាប់​ចុច ដល់</b><br />\n"
-"<p> ដល់ ពី ក្រោម ដល់ ម៉ាស៊ីន​បម្រើ</p></qt>"
-
-#. i18n: file: keyserver.ui:193
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:489
-#, fuzzy
-msgid "Key to be exported:"
-msgstr "គ្រាប់​ចុច ដល់:"
-
-#. i18n: file: keyserver.ui:206
-#. i18n: ectx: property (text), widget (QCheckBox, exportAttributes)
-#: rc.cpp:492
-#, fuzzy
-msgid "Export attributes (photo id)"
-msgstr "នាំចេញ រូបថត"
-
-#. i18n: file: keyserver.ui:265
-#. i18n: ectx: property (whatsThis), widget (QPushButton, Buttonexport)
-#: rc.cpp:498
-#, fuzzy
-msgid ""
-"<qt><b>Export:</b><br />\n"
-"<p>Pushing this button will export the specified key to the specified server."
-"</p></qt>"
-msgstr ""
-"<qt><b> នាំចេញ</b><br />\n"
-"<p> ដល់ ម៉ាស៊ីន​បម្រើ</p></qt>"
-
-#. i18n: file: keyserver.ui:268
-#. i18n: ectx: property (text), widget (QPushButton, Buttonexport)
-#: rc.cpp:502
-#, fuzzy
-msgid "&Export"
-msgstr "នាំចេញ"
-
-#. i18n: file: keysmanager.rc:6
-#. i18n: ectx: Menu (managekeys)
-#: rc.cpp:505
-#, fuzzy
-msgid "&Keys"
-msgstr "គ្រាប់​ចុច"
-
-#. i18n: file: keysmanager.rc:29
-#. i18n: ectx: Menu (show_details)
-#: rc.cpp:511
-#, fuzzy
-msgid "&Show Details"
-msgstr "បង្ហាញ​ លម្អិត"
-
-#. i18n: file: keysmanager.rc:41
-#. i18n: ectx: Menu (groups)
-#: rc.cpp:514
-#, fuzzy
-msgid "&Groups"
-msgstr "ក្រុម"
-
-#. i18n: file: kgpgKeyInfo.ui:14
-#. i18n: ectx: property (windowTitle), widget (KDialog, kgpgKeyInfo)
-#: rc.cpp:517
-msgid "Kgpg"
-msgstr ""
-
-#. i18n: file: kgpgKeyInfo.ui:85
-#. i18n: ectx: property (text), widget (QLabel, tl_id)
-#. i18n: file: newkey.ui:91
-#. i18n: ectx: property (text), widget (QLabel, textLabel5)
-#: rc.cpp:523 rc.cpp:631
-#, fuzzy
-msgid "Key ID:"
-msgstr "គ្រាប់​ចុច លេខ​សម្គាល់:"
-
-#. i18n: file: kgpgKeyInfo.ui:102
-#. i18n: ectx: property (text), widget (QLabel, tl_comment)
-#: rc.cpp:526
-#, fuzzy
-msgid "Comment:"
-msgstr "សេចក្ដី​អធិប្បាយ ៖"
-
-#. i18n: file: kgpgKeyInfo.ui:119
-#. i18n: ectx: property (text), widget (QLabel, tl_creation)
-#: rc.cpp:529
-msgid "Creation:"
-msgstr ""
-
-#. i18n: file: kgpgKeyInfo.ui:153
-#. i18n: ectx: property (text), widget (QLabel, tl_trust)
-#: rc.cpp:535
-msgid "Trust:"
-msgstr ""
-
-#. i18n: file: kgpgKeyInfo.ui:160
-#. i18n: ectx: property (text), widget (QLabel, tl_owtrust)
-#: rc.cpp:538
-#, fuzzy
-msgid "Owner trust:"
-msgstr "ម្ចាស់:"
-
-#. i18n: file: kgpgKeyInfo.ui:183
-#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: rc.cpp:541
-msgid "I do not know"
-msgstr ""
-
-#. i18n: file: kgpgKeyInfo.ui:188
-#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: rc.cpp:544
-#, fuzzy
-msgid "I do NOT trust"
-msgstr "NOT"
-
-#. i18n: file: kgpgKeyInfo.ui:193
-#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: rc.cpp:547 core/convert.cpp:53
-msgid "Marginally"
-msgstr ""
-
-#. i18n: file: kgpgKeyInfo.ui:198
-#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: rc.cpp:550 core/convert.cpp:54
-msgid "Fully"
-msgstr ""
-
-#. i18n: file: kgpgKeyInfo.ui:203
-#. i18n: ectx: property (text), item, widget (KComboBox, m_owtrust)
-#: rc.cpp:553 core/convert.cpp:55
-msgid "Ultimately"
-msgstr ""
-
-#. i18n: file: kgpgKeyInfo.ui:211
-#. i18n: ectx: property (text), widget (QLabel, tl_algorithm)
-#: rc.cpp:556
-#, fuzzy
-msgid "Algorithm:"
-msgstr "ក្បួន​ដោះស្រាយ ៖"
-
-#. i18n: file: kgpgKeyInfo.ui:228
-#. i18n: ectx: property (text), widget (QLabel, tl_length)
-#: rc.cpp:559
-#, fuzzy
-msgid "Length:"
-msgstr "ប្រវែង ៖"
-
-#. i18n: file: kgpgKeyInfo.ui:277
-#. i18n: ectx: property (title), widget (QGroupBox, gr_photo)
-#: rc.cpp:562
-#, fuzzy
-msgid "Photo"
-msgstr "រូបថត"
-
-#. i18n: file: kgpgKeyInfo.ui:297
-#. i18n: ectx: property (whatsThis), widget (QLabel, m_photo)
-#: rc.cpp:565
-msgid ""
-"<qt><b>Photo:</b><p>A photo can be included with a public key for extra "
-"security. The photo can be used as an additional method of authenticating "
-"the key. However, it should not be relied upon as the only form of "
-"authentication.</p></qt>"
-msgstr ""
-
-#. i18n: file: kgpgKeyInfo.ui:306
-#. i18n: ectx: property (text), widget (QLabel, m_photo)
-#: rc.cpp:568
-#, fuzzy
-msgid "No Photo"
-msgstr "គ្មាន​រូបថត"
-
-#. i18n: file: kgpgKeyInfo.ui:343
-#. i18n: ectx: property (text), widget (QCheckBox, m_disable)
-#: rc.cpp:571
-#, fuzzy
-msgid "Disable key"
-msgstr "មិន​អនុញ្ញាត"
-
-#. i18n: file: kgpgKeyInfo.ui:350
-#. i18n: ectx: property (text), widget (KPushButton, m_expirationbtn)
-#: rc.cpp:574
-#, fuzzy
-msgid "Change Expiration"
-msgstr "ផ្លាស់​ប្តូរ ​ផុត​កំណត់."
-
-#. i18n: file: kgpgKeyInfo.ui:357
-#. i18n: ectx: property (text), widget (KPushButton, m_password)
-#: rc.cpp:577
-#, fuzzy
-msgid "Change Passphrase"
-msgstr "ផ្លាស់​ប្តូរ."
-
-#. i18n: file: kgpgKeyInfo.ui:383
-#. i18n: ectx: property (title), widget (QGroupBox, gr_fingerprint)
-#: rc.cpp:580
-#, fuzzy
-msgid "Fingerprint"
-msgstr "ស្នាម​ម្រាមដៃ​"
-
-#. i18n: file: kgpgrevokewidget.ui:18
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:583
-#, fuzzy
-msgid "Create revocation certificate for"
-msgstr "បង្កើត សម្រាប់"
-
-#. i18n: file: kgpgrevokewidget.ui:28
-#. i18n: ectx: property (text), widget (QLabel, keyID)
-#: rc.cpp:586
-msgid "key id"
-msgstr ""
-
-#. i18n: file: kgpgrevokewidget.ui:45
-#. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:589
-#, fuzzy
-msgid "Reason for revocation:"
-msgstr "សម្រាប់:"
-
-#. i18n: file: kgpgrevokewidget.ui:56
-#. i18n: ectx: property (text), item, widget (KComboBox, comboBox1)
-#: rc.cpp:592
-#, fuzzy
-msgid "No Reason"
-msgstr "ទេ"
-
-#. i18n: file: kgpgrevokewidget.ui:61
-#. i18n: ectx: property (text), item, widget (KComboBox, comboBox1)
-#: rc.cpp:595
-#, fuzzy
-msgid "Key Has Been Compromised"
-msgstr "គ្រាប់​ចុច"
-
-#. i18n: file: kgpgrevokewidget.ui:66
-#. i18n: ectx: property (text), item, widget (KComboBox, comboBox1)
-#: rc.cpp:598
-#, fuzzy
-msgid "Key is Superseded"
-msgstr "គ្រាប់​ចុច ជា"
-
-#. i18n: file: kgpgrevokewidget.ui:71
-#. i18n: ectx: property (text), item, widget (KComboBox, comboBox1)
-#: rc.cpp:601
-#, fuzzy
-msgid "Key is No Longer Used"
-msgstr "គ្រាប់​ចុច ជា ទេ បាន​ប្រើ"
-
-#. i18n: file: kgpgrevokewidget.ui:81
-#. i18n: ectx: property (text), widget (QLabel, textLabel4)
-#: rc.cpp:604
-#, fuzzy
-msgid "Description:"
-msgstr "ការ​ពិពណ៌នា ៖"
-
-#. i18n: file: kgpgrevokewidget.ui:96
-#. i18n: ectx: property (text), widget (QCheckBox, cbSave)
-#: rc.cpp:607
-#, fuzzy
-msgid "Save certificate:"
-msgstr "រក្សា​​ទុក​​:"
-
-#. i18n: file: kgpgrevokewidget.ui:111
-#. i18n: ectx: property (text), widget (QCheckBox, cbPrint)
-#: rc.cpp:610
-#, fuzzy
-msgid "Print certificate"
-msgstr "បោះ​​ពុម្ព​"
-
-#. i18n: file: kgpgrevokewidget.ui:121
-#. i18n: ectx: property (text), widget (QCheckBox, cbImport)
-#: rc.cpp:613
-#, fuzzy
-msgid "Import into keyring"
-msgstr "នាំចូល"
-
-#. i18n: file: newkey.ui:19
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: rc.cpp:619
+#: newkey.ui:19
 #, fuzzy
 msgid "New Key Created"
 msgstr "ថ្មី គ្រាប់​ចុច បាន​បង្កើត​"
 
-#. i18n: file: newkey.ui:25
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: rc.cpp:622
+#: newkey.ui:25
 #, fuzzy
 msgid "You have successfully created the following key:"
 msgstr "អ្នក:"
 
-#. i18n: file: newkey.ui:37
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: rc.cpp:625
+#: newkey.ui:37
 #, fuzzy
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
-#. i18n: file: newkey.ui:115
 #. i18n: ectx: property (text), widget (QLabel, textLabel6)
-#: rc.cpp:634
+#: newkey.ui:115
 #, fuzzy
 msgid "Fingerprint:"
 msgstr "ស្នាម​ម្រាមដៃ​:"
 
-#. i18n: file: newkey.ui:136
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, CBdefault)
-#: rc.cpp:637
+#: newkey.ui:136
 #, fuzzy
 msgid ""
 "<qt><b>Set as your default key:</b><br />\n"
@@ -3143,127 +3412,49 @@ msgstr ""
 "<qt><b> កំណត់ លំនាំដើម</b><br />\n"
 "<p> លំនាំដើម</p></qt>"
 
-#. i18n: file: newkey.ui:139
 #. i18n: ectx: property (text), widget (QCheckBox, CBdefault)
-#: rc.cpp:641
+#: newkey.ui:139
 #, fuzzy
 msgid "Set as your default key"
 msgstr "កំណត់ លំនាំដើម"
 
-#. i18n: file: newkey.ui:151
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox1)
-#: rc.cpp:644
+#: newkey.ui:151
 #, fuzzy
 msgid "Revocation Certificate"
 msgstr "វិញ្ញាបនបត្រ"
 
-#. i18n: file: newkey.ui:157
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:647
+#: newkey.ui:157
 #, fuzzy
 msgid ""
 "It is recommended to save or print a revocation certificate in case your key "
 "is compromised."
 msgstr "ជា ដល់ ឬ a អ៊ិន្ឈ៍ ជា."
 
-#. i18n: file: newkey.ui:169
 #. i18n: ectx: property (text), widget (QCheckBox, CBsave)
-#: rc.cpp:650
+#: newkey.ui:169
 #, fuzzy
 msgid "Save as:"
 msgstr "រក្សា​​ទុក​​:"
 
-#. i18n: file: newkey.ui:185
 #. i18n: ectx: property (text), widget (QCheckBox, CBprint)
-#: rc.cpp:653
+#: newkey.ui:185
 #, fuzzy
 msgid "Print"
 msgstr "បោះ​​ពុម្ព​"
 
-#. i18n: file: searchres.ui:57
 #. i18n: ectx: property (text), widget (QTreeView, kLVsearch)
-#: rc.cpp:659
+#: searchres.ui:57
 #, fuzzy
 msgid "Keys"
 msgstr "គ្រាប់​ចុច"
 
-#. i18n: file: searchres.ui:67
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: rc.cpp:662
+#: searchres.ui:67
 #, fuzzy
 msgid "Key to import:"
 msgstr "គ្រាប់​ចុច ដល់:"
-
-#. i18n: file: sourceselect.ui:34
-#. i18n: ectx: property (text), widget (QRadioButton, checkClipboard)
-#. i18n: file: keyexport.ui:45
-#. i18n: ectx: property (text), widget (QRadioButton, checkClipboard)
-#: rc.cpp:665 rc.cpp:680
-#, fuzzy
-msgid "Clipboard"
-msgstr "ក្ដារ​តម្បៀត​ខ្ទាស់"
-
-#. i18n: file: sourceselect.ui:43
-#. i18n: ectx: property (text), widget (QRadioButton, checkFile)
-#. i18n: file: keyexport.ui:69
-#. i18n: ectx: property (text), widget (QRadioButton, checkFile)
-#: rc.cpp:668 rc.cpp:686
-#, fuzzy
-msgid "File:"
-msgstr "ឯកសារ ៖"
-
-#. i18n: file: sourceselect.ui:67
-#. i18n: ectx: property (text), widget (QRadioButton, checkServer)
-#: rc.cpp:671
-#, fuzzy
-msgid "Keyserver:"
-msgstr "គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ:"
-
-#. i18n: file: sourceselect.ui:80
-#. i18n: ectx: property (toolTip), widget (KLineEdit, keyIds)
-#: rc.cpp:674
-msgid ""
-"Enter the ids or fingerprints of the keys to import as space separated list."
-msgstr ""
-
-#. i18n: file: keyexport.ui:38
-#. i18n: ectx: property (text), widget (QRadioButton, checkMail)
-#: rc.cpp:677
-#, fuzzy
-msgctxt "Export a key via email"
-msgid "Email"
-msgstr "អ៊ីមែល"
-
-#. i18n: file: keyexport.ui:89
-#. i18n: ectx: property (title), widget (QGroupBox, buttonGroup3)
-#: rc.cpp:689
-#, fuzzy
-msgid "Export Settings"
-msgstr "នាំចេញ"
-
-#. i18n: file: keyexport.ui:95
-#. i18n: ectx: property (text), widget (QRadioButton, checkAttrAll)
-#: rc.cpp:692
-#, fuzzy
-msgid "Export everything"
-msgstr "នាំចេញ"
-
-#. i18n: file: keyexport.ui:105
-#. i18n: ectx: property (text), widget (QRadioButton, checkAttrPhoto)
-#: rc.cpp:695
-#, fuzzy
-msgid "Do not export attributes (photo ids)"
-msgstr "រូបថត"
-
-#. i18n: file: keyexport.ui:112
-#. i18n: ectx: property (text), widget (QRadioButton, checkAttrClean)
-#: rc.cpp:698
-#, fuzzy
-msgctxt ""
-"@option:radio Exports the smallest key possible. Maps to export-minimal "
-"option of gpg"
-msgid "Clean key"
-msgstr "ស្អាត"
 
 #: selectexpirydate.cpp:27
 #, fuzzy
@@ -3418,9 +3609,20 @@ msgstr "ហត្ថលេខា​មូលដ្ឋាន (មិន​អា�
 msgid "Do not sign all user id's (open terminal)"
 msgstr "ទាំងអស់ s"
 
-#. i18n: file: tips:2
+#. i18n: ectx: property (text), widget (QRadioButton, checkServer)
+#: sourceselect.ui:67
+#, fuzzy
+msgid "Keyserver:"
+msgstr "គ្រាប់​ចុច ម៉ាស៊ីន​បម្រើ:"
+
+#. i18n: ectx: property (toolTip), widget (KLineEdit, keyIds)
+#: sourceselect.ui:80
+msgid ""
+"Enter the ids or fingerprints of the keys to import as space separated list."
+msgstr ""
+
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:3
+#: tips:2
 #, fuzzy
 msgid ""
 "<p>If you want to decrypt a text file, simply drag and drop it into the "
@@ -3431,9 +3633,8 @@ msgstr ""
 "<p> ដល់ a និង</p>\n"
 "<p> អូស a និង</p> n"
 
-#. i18n: file: tips:7
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:9
+#: tips:7
 #, fuzzy
 msgid ""
 "<p>The easiest way to encrypt a file: simply right click on the file, and "
@@ -3441,18 +3642,16 @@ msgid ""
 "This works in <strong>konqueror</strong> or on your Desktop!</p>\n"
 msgstr "<p> ដល់ a ​ស្តាំ លើ និង អ៊ិន្ឈ៍ អ៊ិន្ឈ៍<strong></strong> ឬ លើ ផ្ទៃតុ</p> n"
 
-#. i18n: file: tips:13
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:15
+#: tips:13
 #, fuzzy
 msgid ""
 "<p>If you want to encrypt a message for several persons, just select several "
 "encryption keys by pressing the &quot;Ctrl&quot; key.</p>\n"
 msgstr "<p> ដល់ a សម្រាប់ ដោយ&quot; បញ្ជា&quot;</p> n"
 
-#. i18n: file: tips:18
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:20
+#: tips:18
 #, fuzzy
 msgid ""
 "<p><strong>You do not know anything about encryption?</strong><br>\n"
@@ -3467,9 +3666,8 @@ msgstr ""
 "<p><strong> អ្នក អ្វី​ទាំងអស់</strong><br> a អ៊ិន្ឈ៍ នោះ និង ដល់<br> ដល់ និង ដល់ ប្រភេទ "
 "អ៊ិន្ឈ៍&quot;&quot; ជ្រើស​ និង&quot;&quot; ដល់ ដោយ</p> n"
 
-#. i18n: file: tips:26
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:28
+#: tips:26
 #, fuzzy
 msgid ""
 "<p>To perform an operation on a key, open the key management window and "
@@ -3477,18 +3675,16 @@ msgid ""
 "</p>\n"
 msgstr "<p> ទៅ លើ a និង ​ស្តាំ លើ A ជាមួយ ទាំងអស់</p> n"
 
-#. i18n: file: tips:31
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:33
+#: tips:31
 #, fuzzy
 msgid ""
 "<p>Decrypt a file with a single mouse click on it. You will then be prompted "
 "for password, and then that is it!</p>\n"
 msgstr "<p> a ជាមួយ a ទោល លើ អ្នក សម្រាប់ ពាក្យសម្ងាត់ និង s ទាំងអស់</p> n"
 
-#. i18n: file: tips:36
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:38
+#: tips:36
 #, fuzzy
 msgid ""
 "<p>If you only want to open the key manager, type this in the command line "
@@ -3496,470 +3692,37 @@ msgid ""
 "The editor can be reached by: <pre>kgpg -d</pre></p>\n"
 msgstr "<p> ដល់ ប្រភេទ អ៊ិន្ឈ៍ បន្ទាត់​<pre></pre> ដោយ<pre> d</pre></p> n"
 
-#. i18n: file: tips:42
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:44
+#: tips:42
 #, fuzzy
 msgid ""
 "<p>To open a file in the KGpg's editor and immediately decrypt it type: "
 "<pre>kgpg -s filename</pre></p>\n"
 msgstr "<p> ទៅ a អ៊ិន្ឈ៍ s និង ប្រភេទ<pre> s ឈ្មោះ​ឯកសារ</pre></p> n"
 
-#. i18n: file: tips:47
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:49
+#: tips:47
 #, fuzzy
 msgid ""
 "<p>If you want to change the password or expiration of a secret key simply "
 "double click on it to get the key properties dialog.</p>\n"
 msgstr "<p> ដល់ ពាក្យសម្ងាត់ ឬ នៃ​ a លើ ដល់</p> n"
 
-#. i18n: file: tips:52
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:54
+#: tips:52
 #, fuzzy
 msgid ""
 "<p>You can reach your default key by pressing &quot;Ctrl+Home&quot; in the "
 "key manager.</p>\n"
 msgstr "<p> អ្នក លំនាំដើម ដោយ&quot; បញ្ជា ផ្ទះ&quot; អ៊ិន្ឈ៍</p> n"
 
-#. i18n: file: tips:57
 #. i18n: ectx: @info:tipoftheday
-#: tips.cpp:59
+#: tips:57
 msgid ""
 "<p>The number of signatures is shown as a tooltip if you hover the mouse on "
 "the size column in key manager. A key has to be expanded once for this to "
 "work.</p>\n"
 msgstr ""
-
-#: core/convert.cpp:37
-msgctxt "Encryption algorithm"
-msgid "RSA"
-msgstr ""
-
-#: core/convert.cpp:38
-msgctxt "Encryption algorithm"
-msgid "DSA"
-msgstr ""
-
-#: core/convert.cpp:39
-#, fuzzy
-msgctxt "Encryption algorithm"
-msgid "ElGamal"
-msgstr "អ៊ីមែល"
-
-#: core/convert.cpp:40
-#, fuzzy
-msgctxt "Encryption algorithm"
-msgid "DSA & ElGamal"
-msgstr "អ៊ីមែល"
-
-#: core/convert.cpp:41
-msgctxt "Encryption algorithm RSA, Signing algorithm RSA"
-msgid "RSA & RSA"
-msgstr ""
-
-#: core/convert.cpp:43
-#, fuzzy
-msgctxt "Unknown algorithm"
-msgid "Unknown"
-msgstr "មិន​ស្គាល់:"
-
-#: core/convert.cpp:51
-msgid "Do not Know"
-msgstr ""
-
-#: core/convert.cpp:52
-#, fuzzy
-msgid "Do NOT Trust"
-msgstr "NOT"
-
-#: core/convert.cpp:57
-#, fuzzy
-msgctxt "Unknown trust in key owner"
-msgid "Unknown"
-msgstr "មិន​ស្គាល់:"
-
-#: core/convert.cpp:65
-msgctxt "Invalid key"
-msgid "Invalid"
-msgstr ""
-
-#: core/convert.cpp:66
-#, fuzzy
-msgctxt "Disabled key"
-msgid "Disabled"
-msgstr "មិន​អនុញ្ញាត"
-
-#: core/convert.cpp:67
-#, fuzzy
-msgid "Revoked"
-msgstr "បានដកហូត​វិញ:"
-
-#: core/convert.cpp:68
-#, fuzzy
-msgctxt "Expired key"
-msgid "Expired"
-msgstr "ដែល​ផុត​កំណត់:"
-
-#: core/convert.cpp:69
-msgctxt "Undefined key trust"
-msgid "Undefined"
-msgstr ""
-
-#: core/convert.cpp:70
-#, fuzzy
-msgctxt "No trust in key"
-msgid "None"
-msgstr "គ្មាន"
-
-#: core/convert.cpp:71
-msgctxt "Marginal trust in key"
-msgid "Marginal"
-msgstr ""
-
-#: core/convert.cpp:72
-msgctxt "Full trust in key"
-msgid "Full"
-msgstr ""
-
-#: core/convert.cpp:73
-#, fuzzy
-msgctxt "Ultimate trust in key"
-msgid "Ultimate"
-msgstr "មិន​កំណត់"
-
-#: core/convert.cpp:75
-#, fuzzy
-msgctxt "Unknown trust in key"
-msgid "Unknown"
-msgstr "មិន​ស្គាល់:"
-
-#: core/KGpgGroupNode.cpp:164
-#, fuzzy, kde-format
-msgid "1 key"
-msgid_plural "%1 keys"
-msgstr[0] "គ្រាប់​ចុច"
-msgstr[1] ""
-
-#: core/KGpgKeyNode.cpp:84
-#, fuzzy, kde-format
-msgctxt "size of signing key / size of encryption key"
-msgid "%1 / %2"
-msgstr "%1 (%2)"
-
-#: core/KGpgKeyNode.cpp:164 core/KGpgSignableNode.cpp:48
-#, fuzzy, kde-format
-msgid "1 signature"
-msgid_plural "%1 signatures"
-msgstr[0] "ហត្ថលេខា"
-
-#: core/KGpgNode.cpp:56
-#, fuzzy, kde-format
-msgctxt "Name of uid (comment)"
-msgid "%1 (%2)"
-msgstr "%1 (%2)"
-
-#: core/KGpgRefNode.cpp:128 transactions/kgpgtransaction.cpp:481
-#, fuzzy
-msgid "[No user id found]"
-msgstr "ទេ"
-
-#: core/KGpgSignNode.cpp:86
-#, fuzzy, kde-format
-msgid "%1 [local signature]"
-msgstr "ហត្ថលេខា"
-
-#: core/KGpgSubkeyNode.cpp:86
-#, kde-format
-msgid "%1 subkey"
-msgstr ""
-
-#: core/KGpgUatNode.cpp:105
-#, fuzzy
-msgid "Photo id"
-msgstr "រូបថត"
-
-#: editor/kgpgeditor.cpp:90 editor/kgpgeditor.cpp:240
-#: editor/kgpgeditor.cpp:747 editor/kgpgeditor.cpp:776
-#, fuzzy
-msgid "Untitled"
-msgstr "គ្មាន​ចំណងជើង "
-
-#: editor/kgpgeditor.cpp:186
-#, fuzzy
-msgid "&Encrypt File..."
-msgstr "​អ៊ិនគ្រីប ឯកសារ."
-
-#: editor/kgpgeditor.cpp:190
-#, fuzzy
-msgid "&Decrypt File..."
-msgstr "ឯកសារ."
-
-#: editor/kgpgeditor.cpp:194
-#, fuzzy
-msgid "&Open Key Manager"
-msgstr "បើក គ្រាប់​ចុច កម្មវិធី​គ្រប់​គ្រង"
-
-#: editor/kgpgeditor.cpp:197
-#, fuzzy
-msgid "&Generate Signature..."
-msgstr "បង្កើត ហត្ថលេខា."
-
-#: editor/kgpgeditor.cpp:201
-#, fuzzy
-msgid "&Verify Signature..."
-msgstr "ហត្ថលេខា."
-
-#: editor/kgpgeditor.cpp:204
-#, fuzzy
-msgid "&Check MD5 Sum..."
-msgstr "ពិនិត្យមើល ផលបូក."
-
-#: editor/kgpgeditor.cpp:207
-#, fuzzy
-msgid "&Unicode (utf-8) Encoding"
-msgstr "យូនីកូដ ការ​អ៊ិនកូដ"
-
-#: editor/kgpgeditor.cpp:213
-#, fuzzy
-msgid "En&crypt"
-msgstr "​អ៊ិនគ្រីប"
-
-#: editor/kgpgeditor.cpp:217
-msgid "&Decrypt"
-msgstr ""
-
-#: editor/kgpgeditor.cpp:221
-#, fuzzy
-msgid "S&ign/Verify"
-msgstr "ចុះ​ហត្ថលេខា"
-
-#: editor/kgpgeditor.cpp:244
-#, fuzzy, kde-format
-msgid ""
-"The document \"%1\" has changed.\n"
-"Do you want to save it?"
-msgstr "ឯកសារ​ ដល់?"
-
-#: editor/kgpgeditor.cpp:245
-#, fuzzy
-msgid "Close the document"
-msgstr "បិទ​ ឯកសារ​"
-
-#: editor/kgpgeditor.cpp:291
-#, fuzzy
-msgid ""
-"The document could not been saved, as the selected codec is not supported."
-msgstr "ឯកសារ​ រៀងរាល់ អ៊ិន្ឈ៍."
-
-#: editor/kgpgeditor.cpp:297
-#, fuzzy
-msgid ""
-"The document could not been saved, as the selected encoding cannot encode "
-"every unicode character in it."
-msgstr "ឯកសារ​ រៀងរាល់ អ៊ិន្ឈ៍."
-
-#: editor/kgpgeditor.cpp:306 editor/kgpgeditor.cpp:325
-#, fuzzy
-msgid ""
-"The document could not be saved, please check your permissions and disk "
-"space."
-msgstr "ឯកសារ​ និង ថាស."
-
-#: editor/kgpgeditor.cpp:469 editor/kgpgeditor.cpp:477
-#: editor/kgpgeditor.cpp:612 editor/kgpgeditor.cpp:650
-#: editor/kgpgeditor.cpp:688
-#, fuzzy
-msgid "*|All Files"
-msgstr "*|ឯកសារ​ទាំង​អស់"
-
-#: editor/kgpgeditor.cpp:469
-#, fuzzy
-msgid "Open File to Encode"
-msgstr "បើក ឯកសារ ដល់"
-
-#: editor/kgpgeditor.cpp:477
-#, fuzzy
-msgid "Open File to Decode"
-msgstr "បើក ឯកសារ ដល់"
-
-#: editor/kgpgeditor.cpp:491
-#, fuzzy
-msgid "Decrypt File To"
-msgstr "ឯកសារ ទៅ"
-
-#: editor/kgpgeditor.cpp:612
-#, fuzzy
-msgid "Open File to Sign"
-msgstr "បើក ឯកសារ ដល់ ចុះ​ហត្ថលេខា"
-
-#: editor/kgpgeditor.cpp:650 editor/kgpgeditor.cpp:688
-#, fuzzy
-msgid "Open File to Verify"
-msgstr "បើក ឯកសារ ដល់"
-
-#: editor/kgpgeditor.cpp:701 editor/kgpgtextedit.cpp:333
-#, fuzzy, kde-format
-msgid ""
-"<qt><b>Missing signature:</b><br />Key id: %1<br /><br />Do you want to "
-"import this key from a keyserver?</qt>"
-msgstr "<qt><b> បាត់</b><br /> គ្រាប់​ចុច<br /><br /> ដល់ ពី a</qt>"
-
-#: editor/kgpgeditor.cpp:728 transactions/kgpgverify.cpp:149
-#, fuzzy
-msgid "No signature found."
-msgstr "ទេ."
-
-#: editor/kgpgmd5widget.cpp:28
-msgid "MD5 Checksum"
-msgstr ""
-
-#: editor/kgpgmd5widget.cpp:31
-#, fuzzy
-msgid "Compare MD5 with Clipboard"
-msgstr "ប្រៀប​ធៀប ជាមួយ ក្ដារ​តម្បៀត​ខ្ទាស់"
-
-#: editor/kgpgmd5widget.cpp:46
-#, fuzzy, kde-format
-msgid "MD5 sum for <b>%1</b> is:"
-msgstr "សម្រាប់<b></b> ជា:"
-
-#: editor/kgpgmd5widget.cpp:59
-#, fuzzy
-msgid "<b>Unknown status</b>"
-msgstr "<b> មិន​ស្គាល់ ស្ថានភាព</b>"
-
-#: editor/kgpgmd5widget.cpp:84
-#, fuzzy
-msgid "Clipboard content is not a MD5 sum."
-msgstr "ក្ដារ​តម្បៀត​ខ្ទាស់ ជា a."
-
-#: editor/kgpgmd5widget.cpp:88
-#, fuzzy
-msgid "<b>Correct checksum</b>, file is ok."
-msgstr "<b> កែ​តម្រូវ</b> ជា."
-
-#: editor/kgpgmd5widget.cpp:94
-#, fuzzy
-msgid "<b>Wrong checksum, <em>file corrupted</em></b>"
-msgstr "<b> ខុស<em></em></b>"
-
-#: editor/kgpgtextedit.cpp:90
-#, fuzzy
-msgid ""
-"<qt><b>Remote file dropped</b>.<br />The remote file will now be copied to a "
-"temporary file to process requested operation. This temporary file will be "
-"deleted after operation.</qt>"
-msgstr "<qt><b> ពី​ចម្ងាយ</b><br /> ឥឡូវ ដល់ a ដល់ បាន​លុប បន្ទាប់​ពី</qt>"
-
-#: editor/kgpgtextedit.cpp:94
-msgid "Could not download file."
-msgstr ""
-
-#: editor/kgpgtextedit.cpp:127
-#, fuzzy
-msgid ""
-"<qt>This file is a <b>public</b> key.<br />Do you want to import it instead "
-"of opening it in editor?</qt>"
-msgstr "<p> ជា a<br /> ដល់</p>"
-
-#: editor/kgpgtextedit.cpp:130
-#, fuzzy
-msgid ""
-"<qt>This file is a <b>private</b> key.<br />Do you want to import it instead "
-"of opening it in editor?</qt>"
-msgstr "<qt> ជា a<b></b> ដល់</qt>"
-
-#: editor/kgpgtextedit.cpp:135
-msgid "Key file dropped on Editor"
-msgstr ""
-
-#: editor/kgpgtextedit.cpp:286
-#, fuzzy
-msgid "Signing not possible: bad passphrase or missing key"
-msgstr "ការចុះហត្ថលេខា ឬ"
-
-#: editor/kgpgtextedit.cpp:327
-#, fuzzy
-msgid "Import key in your list"
-msgstr "នាំចូល អ៊ិន្ឈ៍"
-
-#: editor/kgpgtextedit.cpp:330
-#, fuzzy
-msgid "Do &Not Import"
-msgstr "មិន នាំចូល"
-
-#: editor/kgpgtextedit.cpp:331
-#, fuzzy
-msgid "Will not import this key in your list"
-msgstr "អ៊ិន្ឈ៍"
-
-#: editor/kgpgtextedit.cpp:333
-#, fuzzy
-msgid "Missing Key"
-msgstr "បាត់ គ្រាប់​ចុច"
-
-#: model/keylistproxymodel.cpp:96 transactions/kgpgimport.cpp:193
-#, fuzzy, kde-format
-msgctxt "ID: Name"
-msgid "%1: %2"
-msgstr "%1 (%2)"
-
-#: model/keylistproxymodel.cpp:98 transactions/kgpgimport.cpp:195
-#, kde-format
-msgctxt "ID: Name <Email>"
-msgid "%1: %2 &lt;%3&gt;"
-msgstr ""
-
-#: model/keylistproxymodel.cpp:103
-#, fuzzy, kde-format
-msgctxt "Name <Email>: ID"
-msgid "%1 &lt;%2&gt;: %3"
-msgstr "%1 (%2)"
-
-#: model/kgpgitemmodel.cpp:228 model/kgpgitemmodel.cpp:231
-#, fuzzy, kde-format
-msgid "1 Key"
-msgid_plural "%1 Keys"
-msgstr[0] "គ្រាប់​ចុច"
-msgstr[1] ""
-
-#: model/kgpgitemmodel.cpp:232
-#, fuzzy, kde-format
-msgid "1 Group"
-msgid_plural "%1 Groups"
-msgstr[0] "ក្រុម"
-msgstr[1] ""
-
-#: model/kgpgitemmodel.cpp:234
-#, fuzzy, kde-format
-msgctxt "%1 = something like 7 keys, %2 = something like 2 groups"
-msgid "%1, %2"
-msgstr "%1 (%2)"
-
-#: model/kgpgitemmodel.cpp:335
-#, fuzzy
-msgid "ID"
-msgstr "លេខ​សម្គាល់"
-
-#: model/kgpgsearchresultmodel.cpp:124
-#, fuzzy, kde-format
-msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009, revoked"
-msgid "ID %1, %2-bit %3 key, created %4, revoked"
-msgstr "លេខ​សម្គាល់"
-
-#: model/kgpgsearchresultmodel.cpp:129
-#, fuzzy, kde-format
-msgctxt "example: ID abc123xy, 1024-bit RSA key, created Jan 12 2009"
-msgid "ID %1, %2-bit %3 key, created %4"
-msgstr "លេខ​សម្គាល់ ៤"
-
-#: model/kgpgsearchresultmodel.cpp:218
-#, fuzzy, kde-format
-msgid "One Photo ID"
-msgid_plural "%1 Photo IDs"
-msgstr[0] "រូបថត លេខ​សម្គាល់"
 
 #: transactions/kgpgaddphoto.cpp:41
 msgid "This image is very large. Use it anyway?"
