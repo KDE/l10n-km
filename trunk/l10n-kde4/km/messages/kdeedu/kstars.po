@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kstars\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-10-01 04:23+0200\n"
+"POT-Creation-Date: 2012-10-02 05:54+0200\n"
 "PO-Revision-Date: 2010-06-08 15:49+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -207,7 +207,7 @@ msgid ""
 msgstr ""
 
 #: colorscheme.cpp:233 colorscheme.cpp:248 dialogs/locationdialog.cpp:265
-#: indi/drivermanager.cpp:1308 indi/indidriver.cpp:936 kstarsactions.cpp:652
+#: indi/drivermanager.cpp:1306 indi/indidriver.cpp:936 kstarsactions.cpp:652
 #: oal/execute.cpp:278 options/opscolors.cpp:199 skymap.cpp:1093
 #: tools/modcalcaltaz.cpp:238 tools/modcalcangdist.cpp:128
 #: tools/modcalcapcoord.cpp:151 tools/modcalcdaylength.cpp:246
@@ -768,7 +768,7 @@ msgstr "កែសម្រួល​តំណ"
 msgid "Are you sure you want to remove the %1 link?"
 msgstr ""
 
-#: dialogs/detaildialog.cpp:804 indi/drivermanager.cpp:1286
+#: dialogs/detaildialog.cpp:804 indi/drivermanager.cpp:1284
 #: indi/indidriver.cpp:912
 #, fuzzy
 msgid "Delete Confirmation"
@@ -846,7 +846,9 @@ msgid "colorandtemp"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, BVIndex)
-#: dialogs/details_data.ui:312
+#. i18n: ectx: property (text), item, widget (QComboBox, filterCombo)
+#: dialogs/details_data.ui:312 ekos/capture.ui:379 ekos/focus.ui:197
+#: ekos/guide.ui:106
 msgid "--"
 msgstr ""
 
@@ -2479,6 +2481,601 @@ msgid ""
 "the <span style=\" font-weight:600;\">Next</span> button.</p></body></html>"
 msgstr ""
 
+#: ekos/capture.cpp:220
+#, kde-format
+msgid "Unable to find FILTER_SLOT property in driver %1"
+msgstr ""
+
+#: ekos/capture.cpp:271
+#, kde-format
+msgid "Recieved image %1 out of %2."
+msgstr ""
+
+#: ekos/capture.cpp:302
+msgid "Failed to set sub frame."
+msgstr ""
+
+#: ekos/capture.cpp:309
+msgid "Failed to set binning."
+msgstr ""
+
+#: ekos/capture.cpp:318
+msgid "Capturing dark frame..."
+msgstr ""
+
+#: ekos/capture.cpp:326 ekos/focus.cpp:212
+msgid "Capturing image..."
+msgstr ""
+
+#: ekos/capture.cpp:400 ekos/ekosmanager.cpp:602 ekos/focus.cpp:687
+#: ekos/guide.cpp:57 ekos/guide.cpp:58 ekos/guide.cpp:222
+#: fitsviewer/fitsviewer.cpp:159
+#, fuzzy, kde-format
+msgid "%1"
+msgstr "១"
+
+#. i18n: ectx: property (title), widget (QGroupBox, setupGroup_3)
+#: ekos/capture.ui:31 ekos/ekosmanager.cpp:631
+msgid "CCD"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_6)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_5_3)
+#: ekos/capture.ui:47 ekos/capture.ui:466 tools/argsetdeviceindi.ui:30
+#: tools/argshutdownindi.ui:38 tools/argstartindi.ui:30
+#, fuzzy
+msgid "Device:"
+msgstr "ឧបករណ៍:"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, exposureLabel_2)
+#: ekos/capture.ui:54
+msgid "Set the exposure time in seconds for individual images, if applicable"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, exposureLabel_2)
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ekos/capture.ui:60 ekos/focus.ui:152 ekos/guide.ui:65
+#, fuzzy
+msgid "Exposure:"
+msgstr "ការ​បង្ហាញ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_9)
+#: ekos/capture.ui:73
+#, fuzzy
+msgid "Binning:"
+msgstr "មធ្យម ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_12)
+#: ekos/capture.ui:86
+#, fuzzy
+msgid "Frame:"
+msgstr "ឈ្មោះ ៖"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_7)
+#: ekos/capture.ui:93
+msgid "Prefix to append to the beginning of file names"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_7)
+#: ekos/capture.ui:99
+#, fuzzy
+msgid "Prefix:"
+msgstr "បុព្វបទ ៖"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_4)
+#. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_2_3)
+#: ekos/capture.ui:106 ekos/capture.ui:473
+msgid "Number of images to capture"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_4)
+#: ekos/capture.ui:112
+#, fuzzy
+msgid "Count:"
+msgstr "ចំនួន ៖"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, textLabel1_8)
+#: ekos/capture.ui:119
+msgid "Delay in seconds between consecutive images"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_8)
+#: ekos/capture.ui:125
+#, fuzzy
+msgid "Delay:"
+msgstr "ការពន្យារ ៖"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, label_8)
+#: ekos/capture.ui:132 ekos/focus.ui:186 ekos/guide.ui:95
+msgid "Apply filter to image after capture to enhance it"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#: ekos/capture.ui:135 ekos/focus.ui:189 ekos/guide.ui:98
+#, fuzzy
+msgid "Filters:"
+msgstr "តម្រង ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_10)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_13)
+#: ekos/capture.ui:170 ekos/capture.ui:263
+msgid "X:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTreeWidget, FunctionTree)
+#. i18n: ectx: property (text), item, widget (KComboBox, filterSlotCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, binXCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, binYCombo)
+#: ekos/capture.ui:184 ekos/capture.ui:230 indi/opsindi.ui:391
+#: tools/scriptbuilder.ui:407
+#, fuzzy
+msgid "1"
+msgstr "១"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, filterSlotCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, binXCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, binYCombo)
+#: ekos/capture.ui:189 ekos/capture.ui:235 indi/opsindi.ui:396
+msgid "2"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, filterSlotCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, binXCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, binYCombo)
+#: ekos/capture.ui:194 ekos/capture.ui:240 indi/opsindi.ui:401
+msgid "3"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (KComboBox, filterSlotCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, binXCombo)
+#. i18n: ectx: property (text), item, widget (KComboBox, binYCombo)
+#: ekos/capture.ui:199 ekos/capture.ui:245 indi/opsindi.ui:406
+msgid "4"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_11)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_14)
+#: ekos/capture.ui:213 ekos/capture.ui:292
+msgid "Y:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_15)
+#: ekos/capture.ui:321
+#, fuzzy
+msgid "W:"
+msgstr "ឈ្នះ"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_16)
+#: ekos/capture.ui:350
+msgid "H:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, darkSubCheck)
+#: ekos/capture.ui:391
+msgid "Auto dark subtract"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, ISOCheck)
+#: ekos/capture.ui:401
+#, fuzzy
+msgid "Add time stamp to the file name"
+msgstr "បន្ថែម"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ISOCheck)
+#: ekos/capture.ui:404
+#, fuzzy
+msgid "Add ISO 8601 time stamp"
+msgstr "បន្ថែម"
+
+#. i18n: ectx: property (text), widget (QCheckBox, displayCheck)
+#: ekos/capture.ui:414
+msgid "Display in FITS Viewer"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, setupGroup)
+#. i18n: ectx: attribute (title), widget (QWidget, Filter)
+#: ekos/capture.ui:440 oal/equipmentwriter.ui:553
+#, fuzzy
+msgid "Filter"
+msgstr "តម្រង"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2_3)
+#. i18n: ectx: property (text), widget (QLabel, label_18)
+#: ekos/capture.ui:479 oal/execute.ui:377 tools/argsetfilternumindi.ui:30
+#, fuzzy
+msgid "Filter:"
+msgstr "តម្រង ៖"
+
+#. i18n: ectx: property (text), widget (QPushButton, startB)
+#: ekos/capture.ui:541
+#, fuzzy
+msgid "&Start"
+msgstr "ចាប់ផ្ដើម "
+
+#. i18n: ectx: property (text), widget (QPushButton, stopB)
+#: ekos/capture.ui:557
+#, fuzzy
+msgid "S&top"
+msgstr "ឈប់"
+
+#. i18n: ectx: property (title), widget (QGroupBox, progressGroup)
+#: ekos/capture.ui:574
+#, fuzzy
+msgid "Progress"
+msgstr "វឌ្ឍនភាព"
+
+#. i18n: ectx: property (text), widget (QLabel, progressLabel_2)
+#: ekos/capture.ui:582
+#, fuzzy
+msgid "Progress:"
+msgstr "វឌ្ឍនភាព ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_4_2_3)
+#: ekos/capture.ui:605
+#, fuzzy
+msgid "of"
+msgstr "នៃ​"
+
+#. i18n: ectx: property (text), widget (QLabel, completedLabel_2)
+#: ekos/capture.ui:628
+#, fuzzy
+msgid "completed"
+msgstr "គណនា"
+
+#: ekos/ekosmanager.cpp:313
+msgid "Stop INDI"
+msgstr ""
+
+#: ekos/ekosmanager.cpp:315
+msgid "INDI services started. Please connect devices."
+msgstr ""
+
+#: ekos/ekosmanager.cpp:351
+msgid "Connecting INDI devices..."
+msgstr ""
+
+#: ekos/ekosmanager.cpp:382
+msgid "Disconnecting INDI devices..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, processINDIB)
+#: ekos/ekosmanager.cpp:399 ekos/ekosmanager.ui:177
+#, fuzzy
+#| msgid "Star Name"
+msgid "Start INDI"
+msgstr "ឈ្មោះ​ផ្គាយ"
+
+#: ekos/ekosmanager.cpp:405
+msgid "INDI services stopped."
+msgstr ""
+
+#: ekos/ekosmanager.cpp:463 ekos/ekosmanager.cpp:475 ekos/ekosmanager.cpp:482
+#: ekos/ekosmanager.cpp:508 ekos/ekosmanager.cpp:526 indi/indistd.cpp:331
+#, kde-format
+msgid "%1 is online."
+msgstr ""
+
+#: ekos/ekosmanager.cpp:547
+#, kde-format
+msgid "%1 is offline."
+msgstr ""
+
+#: ekos/ekosmanager.cpp:642 fitsviewer/fitsviewer.cpp:220
+msgid "Focus"
+msgstr ""
+
+#: ekos/ekosmanager.cpp:655 fitsviewer/fitsviewer.cpp:224
+#, fuzzy
+msgid "Guide"
+msgstr "ណែនាំ"
+
+#: ekos/ekosmanager.cpp:662
+#, kde-format
+msgid "Guider port from %1 is ready."
+msgstr ""
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, EkosManager)
+#: ekos/ekosmanager.ui:14
+msgid "Ekos"
+msgstr ""
+
+#. i18n: ectx: attribute (title), widget (QWidget, setupTab)
+#: ekos/ekosmanager.ui:24
+msgid "Setup"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ekos/ekosmanager.ui:30
+#, fuzzy
+msgid "1. Select Devices"
+msgstr "​មិន​ជ្រើស​អ្វី​ទាំងអស់"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: ekos/ekosmanager.ui:40 oal/execute.ui:347 printing/loggingform.cpp:65
+#, fuzzy
+msgid "Telescope:"
+msgstr "​មិន​ជ្រើស​អ្វី​ទាំងអស់"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_6)
+#: ekos/ekosmanager.ui:47 ekos/focus.ui:33
+msgid "CCD:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_8)
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ekos/ekosmanager.ui:54 ekos/guide.ui:19
+#, fuzzy
+msgid "Guider:"
+msgstr "ណែនាំ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: ekos/ekosmanager.ui:61
+#, fuzzy
+msgid "Filter Wheel:"
+msgstr "តម្រង"
+
+#. i18n: ectx: property (text), widget (QLabel, label_10)
+#: ekos/ekosmanager.ui:68
+msgid "Focuser:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_11)
+#: ekos/ekosmanager.ui:75
+msgid "Auxiliary:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ekos/ekosmanager.ui:166
+msgid "2. Start && Stop INDI"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, controlPanelB)
+#: ekos/ekosmanager.ui:187
+msgid "Control Panel..."
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: ekos/ekosmanager.ui:199
+msgid "3. Connect && Disconnect Devices"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, connectHostB)
+#. i18n: ectx: property (text), widget (KPushButton, connectB)
+#: ekos/ekosmanager.ui:210 indi/devmanager.ui:318 indi/drivermanager.ui:306
+#, fuzzy
+msgid "Connect"
+msgstr "តភ្ជាប់"
+
+#. i18n: ectx: property (text), widget (QPushButton, disconnectHostB)
+#. i18n: ectx: property (text), widget (KPushButton, disconnectB)
+#: ekos/ekosmanager.ui:220 indi/devmanager.ui:325 indi/drivermanager.ui:313
+#, fuzzy
+msgid "Disconnect"
+msgstr "ផ្ដាច់"
+
+#. i18n: ectx: attribute (title), widget (QWidget, alignTab)
+#: ekos/ekosmanager.ui:233
+msgid "Align"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, enableLoggingCheck)
+#: ekos/ekosmanager.ui:250
+msgid "Enable logging"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KPushButton, ClearButton)
+#. i18n: ectx: property (text), widget (KPushButton, Clear)
+#. i18n: ectx: property (text), widget (QPushButton, clearB)
+#: ekos/ekosmanager.ui:273 indi/guimanager.cpp:69 indi/indimenu.cpp:74
+#: tools/conjunctions.ui:211 tools/modcalcgeod.ui:160
+#, fuzzy
+msgid "Clear"
+msgstr "ជម្រះ"
+
+#: ekos/focus.cpp:65
+msgid "Idle."
+msgstr ""
+
+#: ekos/focus.cpp:171
+msgid "Autofocus in progress..."
+msgstr ""
+
+#: ekos/focus.cpp:198 ekos/guide.cpp:164
+msgid "Error: Lost connection to CCD."
+msgstr ""
+
+#: ekos/focus.cpp:224 ekos/focus.cpp:255
+msgid "Error: Lost connection to Focuser."
+msgstr ""
+
+#: ekos/focus.cpp:243
+msgid "Focusing inward..."
+msgstr ""
+
+#: ekos/focus.cpp:274
+msgid "Focusing outward..."
+msgstr ""
+
+#: ekos/focus.cpp:303
+msgid "FITS received. No stars detected."
+msgstr ""
+
+#: ekos/focus.cpp:335
+#, kde-format
+msgid "FITS received. HFR %1 @ %2. Delta (%3%)"
+msgstr ""
+
+#: ekos/focus.cpp:337
+#, kde-format
+msgid "FITS received. HFR %1 @ %2."
+msgstr ""
+
+#: ekos/focus.cpp:341
+msgid "Autofocus failed to reach proper focus. Try increasing tolerance value."
+msgstr ""
+
+#: ekos/focus.cpp:349 ekos/focus.cpp:529
+msgid "No stars detected, capturing again..."
+msgstr ""
+
+#: ekos/focus.cpp:375
+msgid ""
+"Change in HFR is too small. Try increasing the step size or decreasing the "
+"tolerance."
+msgstr ""
+
+#: ekos/focus.cpp:377 ekos/focus.cpp:484 ekos/focus.cpp:544 ekos/focus.cpp:594
+msgid "Autofocus complete."
+msgstr ""
+
+#: ekos/focus.cpp:492
+msgid "Deadlock reached. Please try again with different settings."
+msgstr ""
+
+#: ekos/focus.cpp:518
+#, kde-format
+msgid "FITS received. HFR %1. Delta (%2%)"
+msgstr ""
+
+#: ekos/focus.cpp:522
+msgid ""
+"Autofocus failed to reach proper focus. Try adjusting the tolerance value."
+msgstr ""
+
+#: ekos/focus.cpp:656 ekos/focus.cpp:674
+msgid "Focuser error, check INDI panel."
+msgstr ""
+
+#: ekos/focus.cpp:706
+msgid "Starting continious exposure..."
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ekos/focus.ui:19
+msgid "Focus Mode"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, manualModeR)
+#: ekos/focus.ui:58
+#, fuzzy
+msgid "Manual"
+msgstr "វ៉ានុយអាទុយ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, autoR)
+#. i18n: ectx: property (text), widget (QRadioButton, AutoModeR)
+#: ekos/focus.ui:71 fitsviewer/fitshistogramui.ui:113
+#, fuzzy
+msgid "Auto"
+msgstr "ស្វ័យប្រវត្តិ"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ekos/focus.ui:81
+msgid "Autofocus Options"
+msgstr ""
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, label)
+#: ekos/focus.ui:89
+msgid "Delay between two consequetive focus images"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ekos/focus.ui:92
+msgid "Step:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ekos/focus.ui:115
+#, fuzzy
+msgid "ticks"
+msgstr "កំណែ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: ekos/focus.ui:122
+#, fuzzy
+msgid "Tolerance:"
+msgstr "បារាំង"
+
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: ekos/focus.ui:129
+#, fuzzy, no-c-format
+msgid "%"
+msgstr "១"
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: ekos/focus.ui:175
+#, fuzzy
+msgid "secs"
+msgstr "វិនាទី"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
+#: ekos/focus.ui:228
+#, fuzzy
+msgid "Control"
+msgstr "សេណេហ្គាល់"
+
+#. i18n: ectx: property (text), widget (QPushButton, focusOutB)
+#: ekos/focus.ui:239
+msgid "Focus Out"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, startFocusB)
+#: ekos/focus.ui:249
+#, fuzzy
+msgid "Start Focus"
+msgstr "ផ្កាយ"
+
+#. i18n: ectx: property (text), widget (QPushButton, focusInB)
+#: ekos/focus.ui:259
+msgid "Focus In"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, startLoopB)
+#: ekos/focus.ui:269
+#, fuzzy
+msgid "Start Looping"
+msgstr "កាល​បរិច្ឆេទ​ចាប់​ផ្ដើម ៖"
+
+#. i18n: ectx: property (text), widget (QPushButton, captureB)
+#: ekos/focus.ui:279
+msgid "Capture"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, stopFocusB)
+#: ekos/focus.ui:289
+msgid "Stop"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTreeWidget, localTreeWidget)
+#. i18n: ectx: property (text), widget (QTreeWidget, clientTreeWidget)
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_4)
+#: ekos/focus.ui:314 indi/devmanager.ui:194 indi/devmanager.ui:288
+#: indi/drivermanager.ui:190 indi/drivermanager.ui:276
+#, fuzzy
+msgid "Status"
+msgstr "ស្ថានភាព"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ekos/focus.ui:320
+msgid "HFR:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: ekos/focus.ui:334 xplanet/opsxplanet.ui:120
+msgid "pixels"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ekos/guide.ui:42
+msgid "Via:"
+msgstr ""
+
 #. i18n: ectx: Menu (file)
 #: fitsviewer.rc:5 kstarsui-indi.rc:5 kstarsui-win.rc:5 kstarsui.rc:5
 #, fuzzy
@@ -2595,12 +3192,6 @@ msgstr "អ៊ីស្តូក្រាម"
 #, fuzzy
 msgid "FITS Scale"
 msgstr "រក្សា​ទុក"
-
-#. i18n: ectx: property (text), widget (QRadioButton, autoR)
-#: fitsviewer/fitshistogramui.ui:113
-#, fuzzy
-msgid "Auto"
-msgstr "ស្វ័យប្រវត្តិ"
 
 #. i18n: ectx: property (text), widget (QRadioButton, logR)
 #: fitsviewer/fitshistogramui.ui:123
@@ -2746,11 +3337,6 @@ msgstr "ស្ថិតិ"
 msgid "Mark Stars"
 msgstr "ផ្កា​ភ្លើង​"
 
-#: fitsviewer/fitsviewer.cpp:159
-#, fuzzy, kde-format
-msgid "%1"
-msgstr "១"
-
 #: fitsviewer/fitsviewer.cpp:180
 msgid "KStars FITS Viewer"
 msgstr ""
@@ -2759,15 +3345,6 @@ msgstr ""
 #, fuzzy
 msgid "Calibrate"
 msgstr "ម៉ាស៊ីន​ភ្ញៀវ"
-
-#: fitsviewer/fitsviewer.cpp:220
-msgid "Focus"
-msgstr ""
-
-#: fitsviewer/fitsviewer.cpp:224
-#, fuzzy
-msgid "Guide"
-msgstr "ណែនាំ"
 
 #: fitsviewer/fitsviewer.cpp:272 fitsviewer/fitsviewer.cpp:495
 #, kde-format
@@ -2961,14 +3538,6 @@ msgid "Device"
 msgstr "ឧបករណ៍"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, localTreeWidget)
-#. i18n: ectx: property (text), widget (QTreeWidget, clientTreeWidget)
-#: indi/devmanager.ui:194 indi/devmanager.ui:288 indi/drivermanager.ui:190
-#: indi/drivermanager.ui:276
-#, fuzzy
-msgid "Status"
-msgstr "ស្ថានភាព"
-
-#. i18n: ectx: property (text), widget (QTreeWidget, localTreeWidget)
 #: indi/devmanager.ui:204 indi/drivermanager.ui:200
 #, fuzzy
 msgid "Version"
@@ -3022,102 +3591,90 @@ msgstr "ឈ្មោះ"
 msgid "Connection"
 msgstr "ការ​តភ្ជាប់"
 
-#. i18n: ectx: property (text), widget (QPushButton, connectHostB)
-#: indi/devmanager.ui:318 indi/drivermanager.ui:306
-#, fuzzy
-msgid "Connect"
-msgstr "តភ្ជាប់"
-
-#. i18n: ectx: property (text), widget (QPushButton, disconnectHostB)
-#: indi/devmanager.ui:325 indi/drivermanager.ui:313
-#, fuzzy
-msgid "Disconnect"
-msgstr "ផ្ដាច់"
-
 #: indi/drivermanager.cpp:253
 #, kde-format
 msgid "Driver %1 is already running, do you want to restart it?"
 msgstr ""
 
-#: indi/drivermanager.cpp:317 indi/indidriver.cpp:326
+#: indi/drivermanager.cpp:315 indi/indidriver.cpp:326
 msgid "Cannot start INDI server: port error."
 msgstr ""
 
-#: indi/drivermanager.cpp:392
+#: indi/drivermanager.cpp:390
 #, kde-format
 msgid "Connection to INDI server locally on port %1 failed."
 msgstr ""
 
-#: indi/drivermanager.cpp:547 indi/indidriver.cpp:308
+#: indi/drivermanager.cpp:545 indi/indidriver.cpp:308
 #, kde-format
 msgid "Invalid port entry: %1"
 msgstr ""
 
-#: indi/drivermanager.cpp:573
+#: indi/drivermanager.cpp:571
 #, kde-format
 msgid "Connection to INDI host at %1 on port %2 lost. Server disconnected."
 msgstr ""
 
-#: indi/drivermanager.cpp:608
+#: indi/drivermanager.cpp:606
 #, kde-format
 msgid "Connection to INDI host at %1 on port %2 encountered an error: %3."
 msgstr ""
 
-#: indi/drivermanager.cpp:683
+#: indi/drivermanager.cpp:681
 #, kde-format
 msgid "Connection to INDI server at host %1 with port %2 failed."
 msgstr ""
 
-#: indi/drivermanager.cpp:873 indi/indidriver.cpp:498
+#: indi/drivermanager.cpp:871 indi/indidriver.cpp:498
 #, kde-format
 msgid ""
 "Unable to find INDI Drivers directory: %1\n"
 "Please make sure to set the correct path in KStars configuration"
 msgstr ""
 
-#: indi/drivermanager.cpp:914 indi/indidriver.cpp:539
+#: indi/drivermanager.cpp:912 indi/indidriver.cpp:539
 #, kde-format
 msgid "Failed to open INDI Driver file: %1"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KPushButton, NoneButton)
 #. i18n: ectx: property (text), item, widget (QComboBox, driverComboBox)
-#: indi/drivermanager.cpp:1134 indi/indidriver.cpp:750
+#: indi/drivermanager.cpp:1132 indi/indidriver.cpp:750
 #: oal/equipmentwriter.ui:197 oal/log.cpp:255 oal/log.cpp:687
 #: tools/obslistwizard.ui:147
 #, fuzzy
 msgid "None"
 msgstr "គ្មាន"
 
-#: indi/drivermanager.cpp:1187 indi/indidriver.cpp:810
+#: indi/drivermanager.cpp:1185 indi/indidriver.cpp:810
 #, fuzzy
 msgid "Add Host"
 msgstr "បន្ថែម"
 
-#: indi/drivermanager.cpp:1198 indi/indidriver.cpp:826
+#: indi/drivermanager.cpp:1196 indi/indidriver.cpp:826
 msgid "Error: the port number is invalid."
 msgstr ""
 
-#: indi/drivermanager.cpp:1210 indi/indidriver.cpp:836
+#: indi/drivermanager.cpp:1208 indi/indidriver.cpp:836
 #, kde-format
 msgid "Host: %1 Port: %2 already exists."
 msgstr ""
 
-#: indi/drivermanager.cpp:1235 indi/indidriver.cpp:861
+#: indi/drivermanager.cpp:1233 indi/indidriver.cpp:861
 #, fuzzy
 msgid "Modify Host"
 msgstr "បន្ថែម"
 
-#: indi/drivermanager.cpp:1282 indi/indidriver.cpp:908
+#: indi/drivermanager.cpp:1280 indi/indidriver.cpp:908
 msgid "You need to disconnect the client before removing it."
 msgstr ""
 
-#: indi/drivermanager.cpp:1286 indi/indidriver.cpp:912
+#: indi/drivermanager.cpp:1284 indi/indidriver.cpp:912
 #, kde-format
 msgid "Are you sure you want to remove the %1 client?"
 msgstr ""
 
-#: indi/drivermanager.cpp:1307 indi/indidriver.cpp:935
+#: indi/drivermanager.cpp:1305 indi/indidriver.cpp:935
 msgid ""
 "unable to write to file 'indihosts.xml'\n"
 "Any changes to INDI hosts configurations will not be saved."
@@ -3126,14 +3683,6 @@ msgstr ""
 #: indi/guimanager.cpp:66 indi/indimenu.cpp:71
 msgid "INDI Control Panel"
 msgstr ""
-
-#. i18n: ectx: property (text), widget (KPushButton, ClearButton)
-#. i18n: ectx: property (text), widget (KPushButton, Clear)
-#: indi/guimanager.cpp:69 indi/indimenu.cpp:74 tools/conjunctions.ui:211
-#: tools/modcalcgeod.ui:160
-#, fuzzy
-msgid "Clear"
-msgstr "ជម្រះ"
 
 #: indi/guimanager.cpp:70 indi/indimenu.cpp:75
 #, fuzzy
@@ -3147,11 +3696,11 @@ msgid ""
 "from the Device Manager in the devices menu."
 msgstr "ឧបករណ៍."
 
-#: indi/indiccd.cpp:363 indi/servermanager.cpp:74
+#: indi/indiccd.cpp:382
 msgid "Error making temporary filename."
 msgstr ""
 
-#: indi/indiccd.cpp:402
+#: indi/indiccd.cpp:421
 #, fuzzy, kde-format
 msgid "FITS file saved to %1"
 msgstr "ឯកសារ​ត្រូវ​បាន​រក្សាទុក"
@@ -3221,11 +3770,6 @@ msgstr "ផ្ទុកឡើង"
 #: indi/indistd.cpp:310
 #, kde-format
 msgid "Data file saved to %1"
-msgstr ""
-
-#: indi/indistd.cpp:331
-#, kde-format
-msgid "%1 is online."
 msgstr ""
 
 #: indi/indistd.cpp:340
@@ -3438,28 +3982,6 @@ msgstr "ឈ្មោះ​ក្លែងក្លាយ ៖"
 msgid "0"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QTreeWidget, FunctionTree)
-#. i18n: ectx: property (text), item, widget (KComboBox, filterSlotCombo)
-#: indi/opsindi.ui:391 tools/scriptbuilder.ui:407
-#, fuzzy
-msgid "1"
-msgstr "១"
-
-#. i18n: ectx: property (text), item, widget (KComboBox, filterSlotCombo)
-#: indi/opsindi.ui:396
-msgid "2"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (KComboBox, filterSlotCombo)
-#: indi/opsindi.ui:401
-msgid "3"
-msgstr ""
-
-#. i18n: ectx: property (text), item, widget (KComboBox, filterSlotCombo)
-#: indi/opsindi.ui:406
-msgid "4"
-msgstr ""
-
 #. i18n: ectx: property (text), item, widget (KComboBox, filterSlotCombo)
 #: indi/opsindi.ui:411
 msgid "5"
@@ -3512,7 +4034,12 @@ msgstr "ពី ៖"
 msgid "To:"
 msgstr "ទៅ ៖"
 
-#: indi/servermanager.cpp:130
+#: indi/servermanager.cpp:75
+#, kde-format
+msgid "Error making FIFO file %1: %2."
+msgstr ""
+
+#: indi/servermanager.cpp:123
 #, kde-format
 msgid ""
 "Driver %1 was not found on the system. Please make sure the package that "
@@ -34665,12 +35192,6 @@ msgstr "ស្លាទុំ"
 msgid "Save Lens"
 msgstr "ឈ្មោះ​ឯកសារ"
 
-#. i18n: ectx: attribute (title), widget (QWidget, Filter)
-#: oal/equipmentwriter.ui:553
-#, fuzzy
-msgid "Filter"
-msgstr "តម្រង"
-
 #. i18n: ectx: property (text), widget (QPushButton, AddFilter)
 #: oal/equipmentwriter.ui:650
 #, fuzzy
@@ -34841,12 +35362,6 @@ msgstr ""
 msgid "Observer"
 msgstr "ម៉ាស៊ីន​បម្រើ"
 
-#. i18n: ectx: property (text), widget (QLabel, label_11)
-#: oal/execute.ui:347 printing/loggingform.cpp:65
-#, fuzzy
-msgid "Telescope:"
-msgstr "​មិន​ជ្រើស​អ្វី​ទាំងអស់"
-
 #. i18n: ectx: property (text), widget (QLabel, label_12)
 #: oal/execute.ui:357 printing/loggingform.cpp:68
 #, fuzzy
@@ -34858,13 +35373,6 @@ msgstr "ឧបករណ៍:"
 #, fuzzy
 msgid "Lens:"
 msgstr "កំណត់ហេតុ"
-
-#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
-#. i18n: ectx: property (text), widget (QLabel, label_18)
-#: oal/execute.ui:377 tools/argsetfilternumindi.ui:30
-#, fuzzy
-msgid "Filter:"
-msgstr "តម្រង ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #: oal/execute.ui:387 printing/loggingform.cpp:61
@@ -39065,14 +39573,6 @@ msgstr ""
 msgid "Color value:"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#. i18n: ectx: property (text), widget (QLabel, textLabel1)
-#: tools/argsetdeviceindi.ui:30 tools/argshutdownindi.ui:38
-#: tools/argstartindi.ui:30
-#, fuzzy
-msgid "Device:"
-msgstr "ឧបករណ៍:"
-
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
 #: tools/argsetfocusspeedindi.ui:30
 #, fuzzy
@@ -42754,11 +43254,6 @@ msgstr "xi"
 msgid "Set the height of window"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: xplanet/opsxplanet.ui:120
-msgid "pixels"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QLabel, textLabelXplanetPath)
 #: xplanet/opsxplanet.ui:142
 msgid "Xplanet path:"
@@ -43069,56 +43564,8 @@ msgstr ""
 #~ msgstr "កំណែ"
 
 #, fuzzy
-#~ msgid "&Start"
-#~ msgstr "ចាប់ផ្ដើម "
-
-#, fuzzy
-#~ msgid "S&top"
-#~ msgstr "ឈប់"
-
-#, fuzzy
-#~ msgid "Progress"
-#~ msgstr "វឌ្ឍនភាព"
-
-#, fuzzy
-#~ msgid "Progress:"
-#~ msgstr "វឌ្ឍនភាព ៖"
-
-#, fuzzy
-#~ msgid "of"
-#~ msgstr "នៃ​"
-
-#, fuzzy
-#~ msgid "completed"
-#~ msgstr "គណនា"
-
-#, fuzzy
 #~ msgid "Camera/CCD"
 #~ msgstr "ម៉ាស៊ីន​ថត​រូប"
-
-#, fuzzy
-#~ msgid "Exposure:"
-#~ msgstr "ការ​បង្ហាញ ៖"
-
-#, fuzzy
-#~ msgid "Count:"
-#~ msgstr "ចំនួន ៖"
-
-#, fuzzy
-#~ msgid "Prefix:"
-#~ msgstr "បុព្វបទ ៖"
-
-#, fuzzy
-#~ msgid "Delay:"
-#~ msgstr "ការពន្យារ ៖"
-
-#, fuzzy
-#~ msgid "Add time stamp to the file name"
-#~ msgstr "បន្ថែម"
-
-#, fuzzy
-#~ msgid "Add ISO 8601 time stamp"
-#~ msgstr "បន្ថែម"
 
 #, fuzzy
 #~ msgid "Device does not support CCD_EXPOSURE_REQUEST property."
