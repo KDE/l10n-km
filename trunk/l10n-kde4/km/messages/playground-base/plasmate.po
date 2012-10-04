@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: plasmate\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-09-25 08:09+0200\n"
+"POT-Creation-Date: 2012-10-04 04:50+0200\n"
 "PO-Revision-Date: 2012-06-14 16:51+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -30,72 +30,359 @@ msgstr ""
 "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
 "ratanak@khmeros.info,sophea@khmeros.info"
 
-#: docbrowser/docbrowser.cpp:33 mainwindow.cpp:268
+#: engineexplorer/engineexplorer.cpp:55 engineexplorer/main.cpp:68
+msgid "Plasma Engine Explorer"
+msgstr ""
+
+#: engineexplorer/engineexplorer.cpp:72
+msgid "Search"
+msgstr ""
+
+#: engineexplorer/engineexplorer.cpp:78
+msgid "Collapse All"
+msgstr ""
+
+#: engineexplorer/engineexplorer.cpp:79
+msgid "Expand All"
+msgstr ""
+
+#: engineexplorer/engineexplorer.cpp:170
+msgid "DataSource"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTableWidget, m_operationDescription)
+#: engineexplorer/engineexplorer.cpp:170 engineexplorer/serviceviewer.cpp:148
+#: engineexplorer/serviceviewer.ui:67
+msgid "Key"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QTableWidget, m_operationDescription)
+#. i18n: ectx: property (text), widget (QTreeWidget, twEntries)
+#: engineexplorer/engineexplorer.cpp:170 engineexplorer/serviceviewer.cpp:148
+#: engineexplorer/serviceviewer.ui:72
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:84
+msgid "Value"
+msgstr "តម្លៃ"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, twEntries)
+#: engineexplorer/engineexplorer.cpp:170
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:79
+#, fuzzy
+#| msgid "Type:"
+msgid "Type"
+msgstr "ប្រភេទ ៖"
+
+#: engineexplorer/engineexplorer.cpp:291
+msgid "Get associated service"
+msgstr ""
+
+#: engineexplorer/engineexplorer.cpp:292
+msgid "Update source now"
+msgstr ""
+
+#: engineexplorer/engineexplorer.cpp:293
+#, fuzzy
+#| msgid "Remove Project"
+msgid "Remove source"
+msgstr "យក​គម្រោង​ចេញ"
+
+#: engineexplorer/engineexplorer.cpp:313
+#, kde-format
+msgid "&lt;1 bit&gt;"
+msgid_plural "&lt;%1 bits&gt;"
+msgstr[0] ""
+
+#: engineexplorer/engineexplorer.cpp:322
+#, kde-format
+msgid "&lt;1 byte&gt;"
+msgid_plural "&lt;%1 bytes&gt;"
+msgstr[0] ""
+
+#: engineexplorer/engineexplorer.cpp:345
+#, kde-format
+msgid "&lt;1 item&gt;"
+msgid_plural "&lt;%1 items&gt;"
+msgstr[0] ""
+
+#: engineexplorer/engineexplorer.cpp:435
+msgctxt "The user did a query to a dataengine and it returned empty data"
+msgid "<empty>"
+msgstr ""
+
+#: engineexplorer/engineexplorer.cpp:442
+msgctxt ""
+"A the dataengine returned something that the humble view on the "
+"engineexplorer can't display, like a picture"
+msgid "<not displayable>"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (KTitleWidget, m_title)
+#: engineexplorer/engineexplorer.cpp:486 engineexplorer/engineexplorer.ui:17
+msgid "Plasma DataEngine Explorer"
+msgstr ""
+
+#: engineexplorer/engineexplorer.cpp:491
+#, kde-format
+msgctxt "The name of the engine followed by the number of data sources"
+msgid "%1 Engine - 1 data source"
+msgid_plural "%1 Engine - %2 data sources"
+msgstr[0] ""
+
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, m_sourceRequester)
+#: engineexplorer/engineexplorer.ui:38
+#, fuzzy
+#| msgctxt "NAME OF TRANSLATORS"
+#| msgid "Your names"
+msgid "Source name"
+msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា, ចាន់ សម្បត្តិរតនៈ, សុខ សុភា"
+
+#. i18n: ectx: property (specialValueText), widget (KIntSpinBox, m_updateInterval)
+#: engineexplorer/engineexplorer.ui:57
+msgid "Update on demand"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (KIntSpinBox, m_updateInterval)
+#: engineexplorer/engineexplorer.ui:60
+msgid "ms"
+msgstr ""
+
+#. i18n: ectx: property (prefix), widget (KIntSpinBox, m_updateInterval)
+#: engineexplorer/engineexplorer.ui:63
+msgid "Update every "
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, m_sourceRequesterButton)
+#: engineexplorer/engineexplorer.ui:85
+msgid "Request Source"
+msgstr ""
+
+#. i18n: ectx: property (clickMessage), widget (KLineEdit, m_serviceRequester)
+#: engineexplorer/engineexplorer.ui:105
+msgid "Service for source"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, m_serviceRequesterButton)
+#: engineexplorer/engineexplorer.ui:118
+msgid "Request Service for Source"
+msgstr ""
+
+#: engineexplorer/ktreeviewsearchline.cpp:420
+msgid "Search Columns"
+msgstr ""
+
+#: engineexplorer/ktreeviewsearchline.cpp:422
+msgid "All Visible Columns"
+msgstr ""
+
+#: engineexplorer/ktreeviewsearchline.cpp:579
+msgid "S&earch:"
+msgstr ""
+
+#: engineexplorer/main.cpp:31
+msgid "Explore the data published by Plasma DataEngines"
+msgstr ""
+
+#: engineexplorer/main.cpp:52 plasmoidviewer/main.cpp:102
+#: wallpaperviewer/main.cpp:54
+msgid "No description available"
+msgstr ""
+
+#: engineexplorer/main.cpp:70
+msgid "(c) 2006, The KDE Team"
+msgstr ""
+
+#: engineexplorer/main.cpp:71 wallpaperviewer/main.cpp:99
+#, fuzzy
+#| msgid "Aaron Seigo"
+msgid "Aaron J. Seigo"
+msgstr "Aaron Seigo"
+
+#: engineexplorer/main.cpp:72 wallpaperviewer/main.cpp:100
+msgid "Author and maintainer"
+msgstr ""
+
+#: engineexplorer/main.cpp:79
+msgid "Displays a list of known engines and their descriptions"
+msgstr ""
+
+#: engineexplorer/main.cpp:80 wallpaperviewer/main.cpp:107
+msgid "The desired height in pixels"
+msgstr ""
+
+#: engineexplorer/main.cpp:81 wallpaperviewer/main.cpp:109
+msgid "The desired width in pixels"
+msgstr ""
+
+#: engineexplorer/main.cpp:82
+msgid "The desired x position in pixels"
+msgstr ""
+
+#: engineexplorer/main.cpp:83
+msgid "The desired y position in pixels"
+msgstr ""
+
+#: engineexplorer/main.cpp:84
+msgid "The data engine to use"
+msgstr ""
+
+#: engineexplorer/main.cpp:85
+msgid "The source to request"
+msgstr ""
+
+#: engineexplorer/main.cpp:86
+msgid "Update interval in milliseconds"
+msgstr ""
+
+#: engineexplorer/main.cpp:87
+msgid ""
+"Only show engines associated with the parent application; maps to the X-KDE-"
+"ParentApp entry in the DataEngine's .desktop file."
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:46
+msgid "Start Operation"
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:53
+msgctxt "Plasma engine with unknown name"
+msgid "Unknown"
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:54
+msgctxt "Plasma service with unknown name"
+msgid "Unknown"
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:69
+msgid ""
+"No valid service was returned. Verify that a service is available for this "
+"source."
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:74
+#, kde-format
+msgctxt "%1 is a Plasma service name"
+msgid "%1 Service Explorer"
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:76
+#, kde-format
+msgctxt "Source: name of the data, Service: writes data instead of fetching"
+msgid "DataEngine: <b>%1</b>; Source: <b>%2</b>; Service: <b>%3</b>"
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:177
+#, kde-format
+msgid ""
+"<b>'%1'</b> operation with destination <b>'%2'</b> failed. <p>The error was: "
+"<b>'%3'</b></p>"
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:180 engineexplorer/serviceviewer.cpp:191
+msgid "Operation Result"
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:184
+msgid "No response from job."
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:188
+#, kde-format
+msgid ""
+"<b>'%1'</b> operation with destination <b>'%2'</b> returned successfully. "
+"<p>The result was: <b>'%3'</b></p>"
+msgstr ""
+
+#: engineexplorer/serviceviewer.cpp:213
+#, kde-format
+msgid "One active operation ..."
+msgid_plural "%1 operations active ..."
+msgstr[0] ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_operationsLabel)
+#: engineexplorer/serviceviewer.ui:33
+#, fuzzy
+#| msgid "Version:"
+msgid "&Operation:"
+msgstr "កំណែ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, m_operationStatus)
+#: engineexplorer/serviceviewer.ui:80
+msgid "Operation count"
+msgstr ""
+
+#: engineexplorer/titlecombobox.h:53
+#, fuzzy
+#| msgid "Data Engine"
+msgid "Data Engines"
+msgstr "ម៉ាស៊ីន​ទិន្នន័យ​"
+
+#: plasmate/docbrowser/docbrowser.cpp:33 plasmate/mainwindow.cpp:268
 msgid "Documentation"
 msgstr "​ឯកសារ​"
 
-#: docbrowser/docbrowser.cpp:43
+#: plasmate/docbrowser/docbrowser.cpp:43
 msgid "Tutorials"
 msgstr "ការ​បង្រៀន​"
 
-#: docbrowser/docbrowser.cpp:47
+#: plasmate/docbrowser/docbrowser.cpp:47
 msgid "API Reference"
 msgstr "សេចក្ដី​យោង API"
 
-#: docbrowser/docbrowser.cpp:51 main.cpp:42
+#: plasmate/docbrowser/docbrowser.cpp:51 plasmate/main.cpp:42
 msgid "Plasmate"
 msgstr "PlasMate"
 
-#: docbrowser/docbrowser.cpp:55 docbrowser/docbrowser.cpp:83
+#: plasmate/docbrowser/docbrowser.cpp:55 plasmate/docbrowser/docbrowser.cpp:83
 msgid "Find:"
 msgstr "រក​ ៖"
 
-#: docbrowser/docbrowser.cpp:65
+#: plasmate/docbrowser/docbrowser.cpp:65
 msgid "Next"
 msgstr "បន្ទាប់"
 
-#: docbrowser/docbrowser.cpp:81
+#: plasmate/docbrowser/docbrowser.cpp:81
 msgid "(Text not found)"
 msgstr "(រក​មិន​ឃើញ​អត្ថបទ)"
 
-#: docbrowser/docbrowser.cpp:115
+#: plasmate/docbrowser/docbrowser.cpp:115
 msgid "Loading API reference..."
 msgstr "កំពុង​ផ្ទុក​សេចក្ដី​យោង​ API..."
 
-#: docbrowser/docbrowser.cpp:136
+#: plasmate/docbrowser/docbrowser.cpp:136
 msgid "Loading tutorials..."
 msgstr "កំពុង​ផ្ទុក​ការ​បង្រៀន​...​"
 
-#: docbrowser/docbrowser.cpp:144
+#: plasmate/docbrowser/docbrowser.cpp:144
 msgid "Loading Plasmate Guide..."
 msgstr "កំពុង​ផ្ទុក​មគ្គុទ្ទេសក៍​របស់ Plasmate...​"
 
-#: editors/editpage.cpp:54
+#: plasmate/editors/editpage.cpp:54
 msgid "Delete"
 msgstr "លុប"
 
-#: editors/editpage.cpp:73
+#: plasmate/editors/editpage.cpp:73
 #, kde-format
 msgid "Are you sure you want to delete the file \"%1\"?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​​ឯកសារ \"%1\" ឬ ?"
 
-#: editors/editpage.cpp:132
+#: plasmate/editors/editpage.cpp:132
 msgid "Enter a name for the new file:"
 msgstr "បញ្ចូល​ឈ្មោះ​សម្រាប់​ឯកសារ​ថ្មី​ ៖"
 
-#: editors/kconfigxt/kconfigxteditor.cpp:167
+#: plasmate/editors/kconfigxt/kconfigxteditor.cpp:167
 msgid "There is already a TODO entry, fix it before you continue"
 msgstr ""
 
-#: editors/kconfigxt/kconfigxteditor.cpp:563
+#: plasmate/editors/kconfigxt/kconfigxteditor.cpp:563
 #, fuzzy
 #| msgid "A problem has occurred during import."
 msgid "An error has occurred during the removal of the item"
 msgstr "បញ្ហា​បាន​កើត​ឡើង​អំឡុងពេល​នាំ​ចូល ។​"
 
 #. i18n: ectx: property (text), widget (QLabel, srcLabel1)
-#: editors/kconfigxt/kconfigxteditor.ui:19
-#: publisher/remoteinstaller/remoteinstaller.ui:49
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:19
+#: plasmate/publisher/remoteinstaller/remoteinstaller.ui:49
 #, fuzzy
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
@@ -108,7 +395,7 @@ msgstr ""
 "គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, srcLabel2)
-#: editors/kconfigxt/kconfigxteditor.ui:29
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:29
 #, fuzzy
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
@@ -121,261 +408,251 @@ msgstr ""
 "គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: editors/kconfigxt/kconfigxteditor.ui:41
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:41
 msgid "Configuration file layout:"
 msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ប្លង់​ឯកសារ ៖"
 
 #. i18n: ectx: property (text), widget (KPushButton, pbAddEntry)
-#: editors/kconfigxt/kconfigxteditor.ui:50
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:50
 #, fuzzy
 #| msgid "Add Key"
 msgid "Add Entry"
 msgstr "បន្ថែម​គ្រាប់ចុច"
 
 #. i18n: ectx: property (text), widget (KPushButton, pbDeleteEntry)
-#: editors/kconfigxt/kconfigxteditor.ui:57
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:57
 #, fuzzy
 #| msgid "Delete"
 msgid "Delete Entry"
 msgstr "លុប"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, twEntries)
-#: editors/kconfigxt/kconfigxteditor.ui:79
-#, fuzzy
-#| msgid "Type:"
-msgid "Type"
-msgstr "ប្រភេទ ៖"
-
-#. i18n: ectx: property (text), widget (QTreeWidget, twEntries)
-#: editors/kconfigxt/kconfigxteditor.ui:84
-msgid "Value"
-msgstr "តម្លៃ"
-
-#. i18n: ectx: property (text), widget (QTreeWidget, twEntries)
-#: editors/kconfigxt/kconfigxteditor.ui:89
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:89
 msgid "Description Type"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QTreeWidget, twEntries)
-#: editors/kconfigxt/kconfigxteditor.ui:94
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:94
 msgid "Description Value"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (KPushButton, pbAddGroup)
-#: editors/kconfigxt/kconfigxteditor.ui:102
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:102
 msgid "Add Group"
 msgstr "បន្ថែម​ក្រុម"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, twGroups)
-#: editors/kconfigxt/kconfigxteditor.ui:119
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:119
 msgid "Group"
 msgstr "ក្រុម"
 
 #. i18n: ectx: property (text), widget (KPushButton, pbDeleteGroup)
-#: editors/kconfigxt/kconfigxteditor.ui:127
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:127
 #, fuzzy
 #| msgid "Delete"
 msgid "Delete Group"
 msgstr "លុប"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: editors/kconfigxt/kconfigxteditor.ui:202
+#: plasmate/editors/kconfigxt/kconfigxteditor.ui:202
 msgid "To edit a configuration item double-click its cell"
 msgstr "ដើម្បី​កែសម្រួល​ការ​កំណត់​រចនាសម្ព័ន្ធ​ធាតុ ចុច​ទ្វេដង​លើ​ក្រឡា​របស់​វា"
 
-#: editors/kconfigxt/kconfigxtreader.cpp:159
+#: plasmate/editors/kconfigxt/kconfigxtreader.cpp:159
 msgid "The xml file isn't writable"
 msgstr ""
 
-#: editors/kconfigxt/kconfigxtreader.cpp:190
+#: plasmate/editors/kconfigxt/kconfigxtreader.cpp:190
 msgid "The xml parsing has failed"
 msgstr ""
 
-#: editors/kconfigxt/standalone/main.cpp:31
-#: editors/kconfigxt/standalone/main.cpp:32
+#: plasmate/editors/kconfigxt/standalone/main.cpp:31
+#: plasmate/editors/kconfigxt/standalone/main.cpp:32
 msgid "Plasma KConfigXt Editor"
 msgstr ""
 
-#: editors/kconfigxt/standalone/main.cpp:34
-#: previewer/windowswitcher/standalone/main.cpp:31
-#: publisher/remoteinstaller/standalone/main.cpp:32
+#: plasmate/editors/kconfigxt/standalone/main.cpp:34
+#: plasmate/previewer/windowswitcher/standalone/main.cpp:31
+#: plasmate/publisher/remoteinstaller/standalone/main.cpp:32
 msgid "Copyright 2012 Plasma Development Team"
 msgstr "រក្សា​សិទ្ធិ​ឆ្នាំ​ ២០១២ ដោយ​ក្រុម​អភិវឌ្ឍន៍ Plasma "
 
-#: editors/kconfigxt/standalone/main.cpp:37
-#: publisher/remoteinstaller/standalone/main.cpp:35
+#: plasmate/editors/kconfigxt/standalone/main.cpp:37
+#: plasmate/publisher/remoteinstaller/standalone/main.cpp:35
 #, fuzzy
 #| msgid "Antonis Tsiapaliokas"
 msgid "Giorgos Tsiapaliwkas"
 msgstr "Antonis Tsiapaliokas"
 
-#: editors/kconfigxt/standalone/main.cpp:37 main.cpp:48 main.cpp:49
-#: main.cpp:50 main.cpp:51 main.cpp:52 main.cpp:53 main.cpp:54 main.cpp:55
-#: main.cpp:56 previewer/windowswitcher/standalone/main.cpp:34
-#: publisher/remoteinstaller/standalone/main.cpp:35
-#: savesystem/timeline.cpp:147
+#: plasmate/editors/kconfigxt/standalone/main.cpp:37 plasmate/main.cpp:48
+#: plasmate/main.cpp:49 plasmate/main.cpp:50 plasmate/main.cpp:51
+#: plasmate/main.cpp:52 plasmate/main.cpp:53 plasmate/main.cpp:54
+#: plasmate/main.cpp:55 plasmate/main.cpp:56
+#: plasmate/previewer/windowswitcher/standalone/main.cpp:34
+#: plasmate/publisher/remoteinstaller/standalone/main.cpp:35
+#: plasmate/savesystem/timeline.cpp:147 remote-widgets-browser/main.cpp:47
 msgid "Author"
 msgstr "អ្នកនិពន្ធ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#: editors/metadata/metadata.ui:23
+#: plasmate/editors/metadata/metadata.ui:23
 msgid "Project Info"
 msgstr "ព័ត៌មាន​អំពី​គម្រោង"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: editors/metadata/metadata.ui:30
+#: plasmate/editors/metadata/metadata.ui:30
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: editors/metadata/metadata.ui:50
+#: plasmate/editors/metadata/metadata.ui:50
 msgid "Comment:"
 msgstr "សេចក្ដី​អធិប្បាយ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: editors/metadata/metadata.ui:70
+#: plasmate/editors/metadata/metadata.ui:70
 msgid "Icon:"
 msgstr "រូបតំណាង ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: editors/metadata/metadata.ui:116
+#: plasmate/editors/metadata/metadata.ui:116
 msgid "Category:"
 msgstr "ប្រភេទ ៖"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:133
+#: plasmate/editors/metadata/metadata.ui:133
 msgid "Application Launchers"
 msgstr "កម្មវិធី​ចាប់ផ្ដើម​កម្មវិធី"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:138
+#: plasmate/editors/metadata/metadata.ui:138
 msgid "Astronomy"
 msgstr "តារាសាស្ត្រ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:143
+#: plasmate/editors/metadata/metadata.ui:143
 msgid "Date and Time"
 msgstr "កាលបរិច្ឆេទ និង​ពេលវេលា"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:148
+#: plasmate/editors/metadata/metadata.ui:148
 msgid "Development Tools"
 msgstr "ឧបករណ៍​អភិវឌ្ឍន៍"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:153
+#: plasmate/editors/metadata/metadata.ui:153
 msgid "Education"
 msgstr "ការ​អប់រំ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:158
+#: plasmate/editors/metadata/metadata.ui:158
 msgid "Environment and Weather"
 msgstr "បរិស្ថាន និង​អាកាសធាតុ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:163
+#: plasmate/editors/metadata/metadata.ui:163
 msgid "Examples"
 msgstr "ឧទាហរណ៍"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:168
+#: plasmate/editors/metadata/metadata.ui:168
 msgid "File System"
 msgstr "ប្រព័ន្ធ​ឯកសារ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:173
+#: plasmate/editors/metadata/metadata.ui:173
 msgid "Fun and Games"
 msgstr "សប្បាយ និង​ល្បែង"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:178
+#: plasmate/editors/metadata/metadata.ui:178
 msgid "Graphics"
 msgstr "ក្រាហ្វិក"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:183
+#: plasmate/editors/metadata/metadata.ui:183
 msgid "Language"
 msgstr "ភាសា"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:188
+#: plasmate/editors/metadata/metadata.ui:188
 msgid "Mapping"
 msgstr "ការ​ផ្គូផ្គង"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:193
+#: plasmate/editors/metadata/metadata.ui:193
 msgid "Online Services"
 msgstr "សេវា​លើ​បណ្ដាញ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:198
+#: plasmate/editors/metadata/metadata.ui:198
 msgid "System Information"
 msgstr "ព័ត៌មាន​ប្រព័ន្ធ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:203
+#: plasmate/editors/metadata/metadata.ui:203
 msgid "Utilities"
 msgstr "ឧបករណ៍​ប្រើប្រាស់"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:208
+#: plasmate/editors/metadata/metadata.ui:208
 msgid "Windows and Tasks"
 msgstr "បង្អួច និង​ភារកិច្ច"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, category_combo)
-#: editors/metadata/metadata.ui:213
+#: plasmate/editors/metadata/metadata.ui:213
 msgid "Miscellaneous"
 msgstr "ផ្សេងៗ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: editors/metadata/metadata.ui:221
+#: plasmate/editors/metadata/metadata.ui:221
 msgid "Version:"
 msgstr "កំណែ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_14)
-#: editors/metadata/metadata.ui:247
+#: plasmate/editors/metadata/metadata.ui:247
 msgid "Plugin Details"
 msgstr "សេចក្ដី​លម្អិត​កម្មវិធី​ជំនួយ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: editors/metadata/metadata.ui:254
+#: plasmate/editors/metadata/metadata.ui:254
 msgid "Type:"
 msgstr "ប្រភេទ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: editors/metadata/metadata.ui:274
+#: plasmate/editors/metadata/metadata.ui:274
 msgid "Plugin Name:"
 msgstr "ឈ្មោះ​កម្មវិធី​ជំនួយ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_12)
-#: editors/metadata/metadata.ui:294
+#: plasmate/editors/metadata/metadata.ui:294
 msgid "API:"
 msgstr "API ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #. i18n: ectx: property (text), widget (QLabel, authorLabel)
-#: editors/metadata/metadata.ui:307 startpage.ui:360
+#: plasmate/editors/metadata/metadata.ui:307 plasmate/startpage.ui:360
 msgid "Author:"
 msgstr "អ្នកនិពន្ធ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
 #. i18n: ectx: property (text), widget (QLabel, emailLabel)
-#: editors/metadata/metadata.ui:327 startpage.ui:376
+#: plasmate/editors/metadata/metadata.ui:327 plasmate/startpage.ui:376
 msgid "Email:"
 msgstr "អ៊ីមែល ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: editors/metadata/metadata.ui:347
+#: plasmate/editors/metadata/metadata.ui:347
 msgid "Website:"
 msgstr "តំបន់​បណ្ដាញ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_11)
-#: editors/metadata/metadata.ui:367
+#: plasmate/editors/metadata/metadata.ui:367
 msgid "License:"
 msgstr "អាជ្ញាបណ្ណ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_16)
-#: editors/metadata/metadata.ui:394
+#: plasmate/editors/metadata/metadata.ui:394
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -402,125 +679,125 @@ msgstr ""
 "ខាងលើ</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_15)
-#: editors/metadata/metadata.ui:413
+#: plasmate/editors/metadata/metadata.ui:413
 msgid "Contact Details"
 msgstr "សេចក្ដី​លម្អិតទំនាក់ទំនង"
 
-#: editors/metadata/metadataeditor.cpp:114 startpage.cpp:143
+#: plasmate/editors/metadata/metadataeditor.cpp:114 plasmate/startpage.cpp:143
 msgid "Data Engine"
 msgstr "ម៉ាស៊ីន​ទិន្នន័យ​"
 
-#: editors/metadata/metadataeditor.cpp:117 startpage.cpp:145
+#: plasmate/editors/metadata/metadataeditor.cpp:117 plasmate/startpage.cpp:145
 msgid "Theme"
 msgstr "រូបរាង"
 
-#: editors/metadata/metadataeditor.cpp:120 startpage.cpp:144
+#: plasmate/editors/metadata/metadataeditor.cpp:120 plasmate/startpage.cpp:144
 msgid "Runner"
 msgstr "កម្មវិធី​ដំណើរការ"
 
-#: editors/metadata/metadataeditor.cpp:123 startpage.cpp:146
+#: plasmate/editors/metadata/metadataeditor.cpp:123 plasmate/startpage.cpp:146
 msgid "Window Switcher"
 msgstr "កម្មវិធី​ប្ដូរ​បង្អួច"
 
-#: editors/metadata/metadataeditor.cpp:126 startpage.cpp:147
+#: plasmate/editors/metadata/metadataeditor.cpp:126 plasmate/startpage.cpp:147
 msgid "KWin Script"
 msgstr "ស្គ្រីប KWin"
 
-#: editors/metadata/metadataeditor.cpp:129 startpage.cpp:148
+#: plasmate/editors/metadata/metadataeditor.cpp:129 plasmate/startpage.cpp:148
 #, fuzzy
 #| msgid "KWin Script"
 msgid "KWin Effect"
 msgstr "ស្គ្រីប KWin"
 
-#: editors/metadata/metadataeditor.cpp:132
+#: plasmate/editors/metadata/metadataeditor.cpp:132
 msgid "Applet"
 msgstr "អាប់ភ្លេត"
 
-#: editors/metadata/metadataeditor.cpp:133
+#: plasmate/editors/metadata/metadataeditor.cpp:133
 msgid "Popup Applet"
 msgstr "អាប់​ភ្លេត​លេច​ឡើង"
 
-#: main.cpp:43
+#: plasmate/main.cpp:43
 msgid "Plasma Add-Ons Creator"
 msgstr "អ្នក​បង្កើត​កម្មវិធី​បន្ថែម​របស់​​ប្លាស្មា​"
 
-#: main.cpp:45
+#: plasmate/main.cpp:45
 msgid "Copyright 2009-2011 Plasma Development Team"
 msgstr "រក្សា​សិទ្ធិ​ឆ្នាំ​ ២០០៩-២០១១ ដោយ​ក្រុម​អភិវឌ្ឍន៍​​ប្លាស្មា"
 
-#: main.cpp:48
+#: plasmate/main.cpp:48
 msgid "Sebastian Kügler"
 msgstr "Sebastian Kügler"
 
-#: main.cpp:49
+#: plasmate/main.cpp:49
 msgid "Shantanu Tushar Jha"
 msgstr "Shantanu Tushar Jha"
 
-#: main.cpp:50
+#: plasmate/main.cpp:50
 msgid "Diego Casella"
 msgstr "Diego Casella"
 
-#: main.cpp:51
+#: plasmate/main.cpp:51
 msgid "Yuen Hoe Lim"
 msgstr "Yuen Hoe Lim"
 
-#: main.cpp:52
+#: plasmate/main.cpp:52
 msgid "Richard Moore"
 msgstr "Richard Moore"
 
-#: main.cpp:53
+#: plasmate/main.cpp:53
 msgid "Artur Duque de Souza"
 msgstr "Artur Duque de Souza"
 
-#: main.cpp:54
+#: plasmate/main.cpp:54 plasmoidviewer/main.cpp:123
 msgid "Frerich Raabe"
 msgstr "Frerich Raabe"
 
-#: main.cpp:55
+#: plasmate/main.cpp:55
 msgid "Aaron Seigo"
 msgstr "Aaron Seigo"
 
-#: main.cpp:56
+#: plasmate/main.cpp:56
 msgid "Riccardo Iaconelli"
 msgstr "Riccardo Iaconelli"
 
-#: mainwindow.cpp:252
+#: plasmate/mainwindow.cpp:252
 msgid "Close Project"
 msgstr "បិទគម្រោង"
 
-#: mainwindow.cpp:259
+#: plasmate/mainwindow.cpp:259
 msgid "Refresh Preview"
 msgstr "ធ្វើ​ឲ្យ​កម្មវិធី​មើល​ជា​មុន​ស្រស់"
 
-#: mainwindow.cpp:261
+#: plasmate/mainwindow.cpp:261
 msgid "Install Project"
 msgstr "ដំឡើង​គម្រោង"
 
-#: mainwindow.cpp:262
+#: plasmate/mainwindow.cpp:262
 msgid "Create Save Point"
 msgstr "បង្កើត​ចំណុច​រក្សាទុក"
 
-#: mainwindow.cpp:263
+#: plasmate/mainwindow.cpp:263
 msgid "Publish"
 msgstr "បោះ​ពុម្ព​ផ្សាយ​"
 
-#: mainwindow.cpp:264 mainwindow.cpp:975
+#: plasmate/mainwindow.cpp:264 plasmate/mainwindow.cpp:975
 msgid "Preview"
 msgstr "មើល​ជាមុន"
 
-#: mainwindow.cpp:265 mainwindow.cpp:394
+#: plasmate/mainwindow.cpp:265 plasmate/mainwindow.cpp:394
 msgid "Notes"
 msgstr "ចំណាំ"
 
-#: mainwindow.cpp:266 mainwindow.cpp:367
+#: plasmate/mainwindow.cpp:266 plasmate/mainwindow.cpp:367
 msgid "Files"
 msgstr "ឯកសារ"
 
-#: mainwindow.cpp:267
+#: plasmate/mainwindow.cpp:267
 msgid "Timeline"
 msgstr "TimeLine"
 
-#: mainwindow.cpp:524
+#: plasmate/mainwindow.cpp:524
 #, kde-format
 msgid ""
 "Failed to load editor for %1:\n"
@@ -531,162 +808,163 @@ msgstr ""
 "\n"
 "%2"
 
-#: mainwindow.cpp:524 mainwindow.cpp:530
+#: plasmate/mainwindow.cpp:524 plasmate/mainwindow.cpp:530
 msgid "Loading Failure"
 msgstr "បរាជ័យ​ក្នុង​ការ​ផ្ទុក"
 
-#: mainwindow.cpp:530
+#: plasmate/mainwindow.cpp:530
 #, kde-format
 msgid "Failed to load editor for %1"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ផ្ទុក​កម្មវិធី​កែសម្រួល​សម្រាប់ %1"
 
-#: mainwindow.cpp:775
+#: plasmate/mainwindow.cpp:775
 msgid "Invalid Plasma package."
 msgstr "កញ្ចប់​ប្លាស្មា​មិន​ត្រឹម​ត្រូវ ។"
 
-#: mainwindow.cpp:800
+#: plasmate/mainwindow.cpp:800
 msgid "Select a file to edit."
 msgstr "ជ្រើស​ឯកសារ​ដើម្បី​កែ​សម្រួល ។"
 
-#: mainwindow.cpp:845
+#: plasmate/mainwindow.cpp:845
 #, fuzzy
 #| msgid "Previewer"
 msgid "Previewer Output"
 msgstr "កម្មវិធី​មើល​ជាមុន"
 
-#: mainwindow.cpp:973
-#: previewer/windowswitcher/standalone/windowswitcherpreviewer.cpp:30
+#: plasmate/mainwindow.cpp:973
+#: plasmate/previewer/windowswitcher/standalone/windowswitcherpreviewer.cpp:30
 msgctxt "Window Title"
 msgid "Window Switcher Previewer"
 msgstr "កម្មវិធី​មើល​ជា​មុន​កម្មវិធី​ប្ដូរ​បង្អួច"
 
-#: mainwindow.cpp:977
+#: plasmate/mainwindow.cpp:977
 msgid "Previewer"
 msgstr "កម្មវិធី​មើល​ជាមុន"
 
-#: packagemodel.cpp:202
+#: plasmate/packagemodel.cpp:202
 msgid "New..."
 msgstr "ថ្មី..."
 
-#: packagemodel.cpp:237
+#: plasmate/packagemodel.cpp:237
 msgid "Metadata"
 msgstr "ទិន្ន​ន័យ​មេតា"
 
 #. i18n: ectx: Menu (file)
-#: plasmateui.rc:5 test-kpart/kparttut1ui.rc:4
+#: plasmate/plasmateui.rc:5 plasmate/test-kpart/kparttut1ui.rc:4
 msgid "&File"
 msgstr "ឯកសារ"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: plasmateui.rc:13 test-kpart/kparttut1ui.rc:14
+#: plasmate/plasmateui.rc:13 plasmate/test-kpart/kparttut1ui.rc:14
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
-#: previewer/plasmoid/previewcontainment.cpp:154
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:154
 msgid "Form Factor"
 msgstr "កត្តា​សំណុំ​បែបបទ"
 
-#: previewer/plasmoid/previewcontainment.cpp:158
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:158
 msgid "Planar"
 msgstr "រាបស្មើ"
 
-#: previewer/plasmoid/previewcontainment.cpp:159
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:159
 msgid "Media Center"
 msgstr "មេឌៀ​កណ្ដាល"
 
-#: previewer/plasmoid/previewcontainment.cpp:160
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:160
 msgid "Horizontal"
 msgstr "ផ្ដេក"
 
-#: previewer/plasmoid/previewcontainment.cpp:161
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:161
 msgid "Vertical"
 msgstr "បញ្ឈរ"
 
-#: previewer/plasmoid/previewcontainment.cpp:184
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:184
 msgid "Wallpaper"
 msgstr "​ផ្ទាំង​រូប​ភាព"
 
-#: previewer/plasmoid/previewcontainment.cpp:200
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:200
 msgid "Wallpaper Settings"
 msgstr "ការ​កំណត់​​ផ្ទាំង​រូប​ភាព"
 
-#: previewer/plasmoid/previewcontainment.cpp:220
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:220
 msgid "Location"
 msgstr "ទីតាំង"
 
-#: previewer/plasmoid/previewcontainment.cpp:224
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:224
 msgid "Floating"
 msgstr "អណ្ដែត"
 
-#: previewer/plasmoid/previewcontainment.cpp:225
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:225
 msgid "Desktop"
 msgstr "ផ្ទៃតុ"
 
-#: previewer/plasmoid/previewcontainment.cpp:226
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:226
 msgid "FullScreen"
 msgstr "ពេញ​អេក្រង់"
 
-#: previewer/plasmoid/previewcontainment.cpp:227
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:227
 msgid "Top Edge"
 msgstr "គែម​ខា​ងលើ"
 
-#: previewer/plasmoid/previewcontainment.cpp:228
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:228
 msgid "Bottom Edge"
 msgstr "គែម​បាត"
 
-#: previewer/plasmoid/previewcontainment.cpp:229
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:229
 msgid "Left Edge"
 msgstr "គែម​ខាងឆ្វេង"
 
-#: previewer/plasmoid/previewcontainment.cpp:230
+#: plasmate/previewer/plasmoid/previewcontainment.cpp:230
 msgid "Right Edge"
 msgstr "គែម​ខាងស្ដាំ"
 
-#: previewer/windowswitcher/standalone/main.cpp:28
+#: plasmate/previewer/windowswitcher/standalone/main.cpp:28
 msgid "Window Switcher Previewer"
 msgstr "កម្មវិធី​មើល​ជាមុន​​​កម្មវិធី​ប្ដូរ​បង្អួច"
 
-#: previewer/windowswitcher/standalone/main.cpp:29
+#: plasmate/previewer/windowswitcher/standalone/main.cpp:29
 msgid "Previewer for Window Switcher"
 msgstr "កម្មវិធី​មើល​ជា​មុន​សម្រាប់​កម្មវិធី​ប្ដូរ​បង្អួច"
 
-#: previewer/windowswitcher/standalone/main.cpp:34
+#: plasmate/previewer/windowswitcher/standalone/main.cpp:34
 msgid "Antonis Tsiapaliokas"
 msgstr "Antonis Tsiapaliokas"
 
-#: previewer/windowswitcher/standalone/windowswitcherpreviewer.cpp:35
+#: plasmate/previewer/windowswitcher/standalone/windowswitcherpreviewer.cpp:35
 msgid "Welcome to the Window Switcher Previewer"
 msgstr "ស្វាគមន៍​ចំណោះ​កម្មវិធី​មើល​ជា​មុន​កម្មវិធី​ប្ដូរ​បង្អួច"
 
-#: previewer/windowswitcher/windowswitcher.cpp:150
+#: plasmate/previewer/windowswitcher/windowswitcher.cpp:150
 msgctxt "An example Desktop Name"
 msgid "Desktop 1"
 msgstr "ផ្ទៃតុ ១"
 
-#: projectmanager/projectmanager.cpp:49
+#: plasmate/projectmanager/projectmanager.cpp:49
 msgid "Load Project"
 msgstr "ផ្ទុក​គម្រោង"
 
-#: projectmanager/projectmanager.cpp:52 projectmanager/projectmanager.cpp:54
+#: plasmate/projectmanager/projectmanager.cpp:52
+#: plasmate/projectmanager/projectmanager.cpp:54
 msgid "Remove Project"
 msgstr "យក​គម្រោង​ចេញ"
 
-#: projectmanager/projectmanager.cpp:57
+#: plasmate/projectmanager/projectmanager.cpp:57
 msgid "From List"
 msgstr "ពី​បញ្ជី"
 
-#: projectmanager/projectmanager.cpp:58
+#: plasmate/projectmanager/projectmanager.cpp:58
 msgid "From Disk"
 msgstr "ពី​ថាស"
 
-#: projectmanager/projectmanager.cpp:78
+#: plasmate/projectmanager/projectmanager.cpp:78
 msgid ""
 "Are you sure you want to remove the selected project from the project list?"
 msgid_plural ""
 "Are you sure you want to remove the selected projects from the project list?"
 msgstr[0] "តើ​អ្នក​ពិត​ជា​ចង់​យក​គម្រោង​ដែល​បាន​​ជ្រើស​ចេញ​ពី​បញ្ជី​គម្រោង​ឬ ?"
 
-#: projectmanager/projectmanager.cpp:90
+#: plasmate/projectmanager/projectmanager.cpp:90
 msgid ""
 "Are you sure you want to remove the selected project from disk? This cannot "
 "be undone"
@@ -695,37 +973,37 @@ msgid_plural ""
 "be undone"
 msgstr[0] "តើ​អ្នក​ពិត​ជា​ចង់​យក​គម្រោង​ដែល​បាន​ជ្រើស​ចេញ​ពីថាស​ឬ ? វា​មិន​អាច​មិន​ធ្វើ​វិញ​បាន​ទេ"
 
-#: publisher/publisher.cpp:93
+#: plasmate/publisher/publisher.cpp:93
 #, kde-format
 msgid "A file already exists at %1. Do you want to overwrite it?"
 msgstr "ឯកសារ​មាន​នៅ​​ %1 រួចហើយ ។ តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ ?"
 
-#: publisher/publisher.cpp:105
+#: plasmate/publisher/publisher.cpp:105
 #, kde-format
 msgid "Project has been exported to %1."
 msgstr "គម្រោង​ត្រូវ​បាន​នាំ​ចេញទៅ​កាន់​ %1 ។"
 
-#: publisher/publisher.cpp:107 publisher/publisher.cpp:383
+#: plasmate/publisher/publisher.cpp:107 plasmate/publisher/publisher.cpp:383
 msgid ""
 "An error has occurred during the export. Please check the write permissions "
 "in the target directory."
 msgstr "កំហុស​បាន​កើត​ឡើង​ក្នុង​អំឡុង​ពេល​នាំចេញ​ ។ សូម​ពិនិត្យ​សិទ្ធិ​ក្នុង​ការ​សរសេរ​នៅ​ក្នុង​ថត​គោល​ដៅ ។"
 
-#: publisher/publisher.cpp:230 publisher/publisher.cpp:338
+#: plasmate/publisher/publisher.cpp:230 plasmate/publisher/publisher.cpp:338
 msgid "Project has been installed"
 msgstr "គម្រោង​ត្រូវ​បាន​ដំឡើង"
 
-#: publisher/publisher.cpp:232 publisher/publisher.cpp:307
-#: publisher/publisher.cpp:340
+#: plasmate/publisher/publisher.cpp:232 plasmate/publisher/publisher.cpp:307
+#: plasmate/publisher/publisher.cpp:340
 msgid "Project has not been installed"
 msgstr "គម្រោង​មិន​ត្រូវ​បាន​ដំឡើង​"
 
-#: publisher/publisher.cpp:391 startpage.cpp:677
+#: plasmate/publisher/publisher.cpp:391 plasmate/startpage.cpp:677
 msgid "The file you entered is invalid."
 msgstr "ឯកសារ​ដែល​អ្នក​បាន​បញ្ចូល​មិន​ត្រឹម​ត្រូវ​ទេ ។"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: publisher/publisher.ui:38
+#: plasmate/publisher/publisher.ui:38
 msgid ""
 "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
 "\">Export Project</span></p></body></html>"
@@ -734,7 +1012,7 @@ msgstr ""
 "គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: publisher/publisher.ui:48
+#: plasmate/publisher/publisher.ui:48
 msgid ""
 "Choose a target file to export the current project to an installable package "
 "file on your system."
@@ -743,12 +1021,12 @@ msgstr ""
 "។"
 
 #. i18n: ectx: property (text), widget (KPushButton, exporterButton)
-#: publisher/publisher.ui:58
+#: plasmate/publisher/publisher.ui:58
 msgid "Export current project"
 msgstr "នាំ​ចេញ​គម្រោង​បច្ចុប្បន្ន"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: publisher/publisher.ui:65
+#: plasmate/publisher/publisher.ui:65
 msgid ""
 "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
 "\">Install Project</span></p></body></html>"
@@ -757,19 +1035,19 @@ msgstr ""
 "គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: publisher/publisher.ui:75
+#: plasmate/publisher/publisher.ui:75
 msgid ""
 "Select the method with which you want to install the current project "
 "directly onto your computer."
 msgstr "ជ្រើស​វិធី​សាស្ត្រ​ដែល​អ្នក​ចង់​ដំឡើង​ថត​គម្រោង​បច្ចុប្បន្ន​​ទៅ​ក្នុង​កុំព្យូទ័រ​របស់​អ្នក ។"
 
 #. i18n: ectx: property (text), widget (KPushButton, installButton)
-#: publisher/publisher.ui:112
+#: plasmate/publisher/publisher.ui:112
 msgid "Install Current Project"
 msgstr "ដំឡើង​គម្រោង​បច្ចុប្បន្ន"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: publisher/publisher.ui:121
+#: plasmate/publisher/publisher.ui:121
 msgid ""
 "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
 "\">Publish Project</span></p></body></html>"
@@ -778,7 +1056,7 @@ msgstr ""
 "\">បោះពុម្ព​​ផ្សាយ​គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: publisher/publisher.ui:134
+#: plasmate/publisher/publisher.ui:134
 msgid ""
 "<html><head/><body><p>Click to publish the current project online, so that "
 "other people can find and install it using the Internet.</p></body></html>"
@@ -787,11 +1065,11 @@ msgstr ""
 "ស្វែងរក និង​ដំឡើងវា​ដោយ​ប្រើ​អ៊ិនធឺណិត​បាន ។</p></body></html>"
 
 #. i18n: ectx: property (text), widget (KPushButton, publisherButton)
-#: publisher/publisher.ui:141
+#: plasmate/publisher/publisher.ui:141
 msgid "Publish current project"
 msgstr "បោះ​ពុម្ព​ផ្សាយ​គម្រោង​បច្ចុប្បន្ន​"
 
-#: publisher/remoteinstaller/remoteinstaller.cpp:38
+#: plasmate/publisher/remoteinstaller/remoteinstaller.cpp:38
 #, kde-format
 msgid ""
 "Plasma Remote Installer wasn't able to create a temp dir at%1, please check "
@@ -799,7 +1077,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: publisher/remoteinstaller/remoteinstaller.ui:32
+#: plasmate/publisher/remoteinstaller/remoteinstaller.ui:32
 #, fuzzy
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
@@ -813,7 +1091,7 @@ msgstr ""
 "គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_9)
-#: publisher/remoteinstaller/remoteinstaller.ui:42
+#: plasmate/publisher/remoteinstaller/remoteinstaller.ui:42
 #, fuzzy
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
@@ -827,14 +1105,14 @@ msgstr ""
 "គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, srcLabel2)
-#: publisher/remoteinstaller/remoteinstaller.ui:59
+#: plasmate/publisher/remoteinstaller/remoteinstaller.ui:59
 msgid ""
 "<html><head/><body><p>Choose the source directory of your package.</"
 "p><p>Your url must end in a metadata.desktop file</p></body></html>"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: publisher/remoteinstaller/remoteinstaller.ui:69
+#: plasmate/publisher/remoteinstaller/remoteinstaller.ui:69
 #, fuzzy
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
@@ -847,7 +1125,7 @@ msgstr ""
 "គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: publisher/remoteinstaller/remoteinstaller.ui:79
+#: plasmate/publisher/remoteinstaller/remoteinstaller.ui:79
 #, fuzzy
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
@@ -859,7 +1137,7 @@ msgstr ""
 "គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: publisher/remoteinstaller/remoteinstaller.ui:89
+#: plasmate/publisher/remoteinstaller/remoteinstaller.ui:89
 #, fuzzy
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
@@ -872,14 +1150,14 @@ msgstr ""
 "គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: publisher/remoteinstaller/remoteinstaller.ui:99
+#: plasmate/publisher/remoteinstaller/remoteinstaller.ui:99
 #, fuzzy
 #| msgid "Enter a name for the new file:"
 msgid "Enter the hostname of the target pc"
 msgstr "បញ្ចូល​ឈ្មោះ​សម្រាប់​ឯកសារ​ថ្មី​ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: publisher/remoteinstaller/remoteinstaller.ui:109
+#: plasmate/publisher/remoteinstaller/remoteinstaller.ui:109
 #, fuzzy
 #| msgid ""
 #| "<html><head/><body><p><span style=\" font-size:16pt; font-weight:600;"
@@ -892,69 +1170,69 @@ msgstr ""
 "គម្រោង</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (KPushButton, installButton)
-#: publisher/remoteinstaller/remoteinstaller.ui:116
+#: plasmate/publisher/remoteinstaller/remoteinstaller.ui:116
 #, fuzzy
 #| msgid "Invalid Plasma package."
 msgid "Install the package"
 msgstr "កញ្ចប់​ប្លាស្មា​មិន​ត្រឹម​ត្រូវ ។"
 
-#: publisher/remoteinstaller/standalone/main.cpp:29
+#: plasmate/publisher/remoteinstaller/standalone/main.cpp:29
 #, fuzzy
 #| msgid "Project has been installed"
 msgid "Plasma Remote installer"
 msgstr "គម្រោង​ត្រូវ​បាន​ដំឡើង"
 
-#: publisher/remoteinstaller/standalone/main.cpp:30
+#: plasmate/publisher/remoteinstaller/standalone/main.cpp:30
 msgid "Plasma Remote Installer"
 msgstr ""
 
-#: savesystem/branchdialog.cpp:32
+#: plasmate/savesystem/branchdialog.cpp:32
 msgid "New Branch"
 msgstr "ភាគ​ថ្មី"
 
-#: savesystem/branchdialog.cpp:40
+#: plasmate/savesystem/branchdialog.cpp:40
 msgid "New branch name:"
 msgstr "ឈ្មោះ​ភាគ​ថ្មី ៖"
 
-#: savesystem/branchdialog.cpp:41
+#: plasmate/savesystem/branchdialog.cpp:41
 msgid "type here"
 msgstr "វាយ​នៅ​ទីនេះ"
 
-#: savesystem/commitdialog.cpp:34
+#: plasmate/savesystem/commitdialog.cpp:34
 msgid "New SavePoint"
 msgstr "SavePoint ថ្មី"
 
-#: savesystem/commitdialog.cpp:41
+#: plasmate/savesystem/commitdialog.cpp:41
 msgid "Brief comment (required):"
 msgstr "សេចក្ដី​អធិប្បាយ​សង្ខេប​ (ទាម​ទារ) ៖"
 
-#: savesystem/commitdialog.cpp:44
+#: plasmate/savesystem/commitdialog.cpp:44
 msgid "Type here a brief description"
 msgstr "វាយ​បញ្ចូល​សេចក្ដី​ពណ៌នា​សង្ខេប​នៅ​ទី​នេះ"
 
-#: savesystem/commitdialog.cpp:47
+#: plasmate/savesystem/commitdialog.cpp:47
 msgid "Detailed comment:"
 msgstr "សេចក្ដី​អធិប្បាយ​លម្អិត ៖​"
 
-#: savesystem/dvcsjob.cpp:156
+#: plasmate/savesystem/dvcsjob.cpp:156
 #, kde-format
 msgid "Process exited with status %1"
 msgstr "ដំណើរ​ការ​បាន​ចាក​ចេញ​ជា​មួយ​ស្ថាន​ភាព​ %1"
 
-#: savesystem/timeline.cpp:51
+#: plasmate/savesystem/timeline.cpp:51
 msgid "TimeLine"
 msgstr "TimeLine"
 
-#: savesystem/timeline.cpp:84
+#: plasmate/savesystem/timeline.cpp:84
 #, kde-format
 msgid "On branch: %1"
 msgstr "​នៅ​លើ​ភាគ​ ៖ %1"
 
-#: savesystem/timeline.cpp:88
+#: plasmate/savesystem/timeline.cpp:88
 msgid "You are currently working on branch:\n"
 msgstr "បច្ចុប្បន្ន​​អ្នក​កំពុង​ធ្វើ​ការ​នៅ​លើ​ភាគ ៖\n"
 
-#: savesystem/timeline.cpp:91
+#: plasmate/savesystem/timeline.cpp:91
 msgid ""
 "\n"
 "Available branches are:\n"
@@ -962,7 +1240,7 @@ msgstr ""
 "\n"
 "ភាគ​ដែល​មាន​គឺ​ ៖\n"
 
-#: savesystem/timeline.cpp:93
+#: plasmate/savesystem/timeline.cpp:93
 msgid ""
 "\n"
 "Click here to switch to those branches."
@@ -970,55 +1248,55 @@ msgstr ""
 "\n"
 "ចុច​ទី​នេះ ដើម្បី​ប្ដូរ​ទៅកាន់​​ភាគ​ទាំង​នោះ ។"
 
-#: savesystem/timeline.cpp:101
+#: plasmate/savesystem/timeline.cpp:101
 msgid "New save point"
 msgstr "ចំណុច​រក្សាទុក​ថ្មី"
 
-#: savesystem/timeline.cpp:155
+#: plasmate/savesystem/timeline.cpp:155
 msgid "Created on:"
 msgstr "បាន​បង្កើត​នៅ​លើ ៖"
 
-#: savesystem/timeline.cpp:177
+#: plasmate/savesystem/timeline.cpp:177
 msgid "First save point"
 msgstr "ចំណុច​​រក្សាទុក​ដំបូង"
 
-#: savesystem/timeline.cpp:229
+#: plasmate/savesystem/timeline.cpp:229
 msgid "Restore save point"
 msgstr "ស្ដារ​ចំណុច​រក្សាទុក"
 
-#: savesystem/timeline.cpp:231
+#: plasmate/savesystem/timeline.cpp:231
 msgid "Move to this save point"
 msgstr "ផ្លាស់ទី​ទៅ​កាន់​ចំណុច​រក្សាទុក​នេះ"
 
-#: savesystem/timeline.cpp:241
+#: plasmate/savesystem/timeline.cpp:241
 msgid "Create new branch"
 msgstr "បង្កើត​ភាគ​ថ្មី"
 
-#: savesystem/timeline.cpp:242
+#: plasmate/savesystem/timeline.cpp:242
 msgid "Switch to branch"
 msgstr "ប្ដូរ​ទៅ​ភាគ"
 
-#: savesystem/timeline.cpp:243
+#: plasmate/savesystem/timeline.cpp:243
 msgid "Combine into branch"
 msgstr "ផ្សំ​ចូល​ភាគ"
 
-#: savesystem/timeline.cpp:244
+#: plasmate/savesystem/timeline.cpp:244
 msgid "Rename current branch"
 msgstr "ប្ដូរ​ឈ្មោះ​ភាគ​បច្ចុប្បន្ន"
 
-#: savesystem/timeline.cpp:247
+#: plasmate/savesystem/timeline.cpp:247
 msgid "Delete branch"
 msgstr "លុប​ភាគ"
 
-#: savesystem/timeline.cpp:297
+#: plasmate/savesystem/timeline.cpp:297
 msgid "Initial Commit"
 msgstr "ប្រតិបត្តិ​ដំបូង"
 
-#: savesystem/timeline.cpp:312
+#: plasmate/savesystem/timeline.cpp:312
 msgid "<b>No changes have been made in order to create a savepoint!</b>"
 msgstr "<b>គ្មាន​ការ​ផ្លាស់ប្ដូរ​ ដើម្បី​បង្កើត savepoint ឡើយ !</b>"
 
-#: savesystem/timeline.cpp:345
+#: plasmate/savesystem/timeline.cpp:345
 msgid ""
 "<b>You are restoring the selected save point.</b> \n"
 "With this operation, all the save points and branches created starting from "
@@ -1029,7 +1307,7 @@ msgstr ""
 "ជា​មួយ​ប្រតិបត្តិការ​នេះ ចំណុច​រក្សាទុក​ទាំងអស់ និង​ភាគ​ដើម​ដែល​បាន​បង្កើត​ពី​វា នឹង​ត្រូវ​បាន​លុប ។\n"
 "​បន្ត​ឬ ?"
 
-#: savesystem/timeline.cpp:361
+#: plasmate/savesystem/timeline.cpp:361
 msgid ""
 "<b>You are going to move to the selected save point.</b>\n"
 "To perform this, a new branch will be created and your current work may be "
@@ -1041,12 +1319,12 @@ msgstr ""
 "មិន​បាន​រក្សាទុក​ទេ​នោះ វា​ជា​ Savepoint ។\n"
 "បន្ត​ឬ ?"
 
-#: savesystem/timeline.cpp:376
+#: plasmate/savesystem/timeline.cpp:376
 msgid ""
 "<b>Cannot rename the section</b>: a section with this name already exists."
 msgstr "<b>មិន​អាច​ប្ដូរ​ឈ្មោះ​ភាគ​បាន​ទេ</b> ៖ ភាគ​មាន​ឈ្មោះ​នេះ​​រួច​ហើយ ។"
 
-#: savesystem/timeline.cpp:405
+#: plasmate/savesystem/timeline.cpp:405
 msgid ""
 "<b>You are going to combine two branch.</b>\n"
 " With this operation, a new save point will be created; then you should have "
@@ -1056,7 +1334,7 @@ msgstr ""
 " ជា​មួយ​ប្រតិបត្តិការ​នេះ ចំណុច​រក្សាទុក​ថ្មី​នឹង​ត្រូវ​បាន​បង្កើត បន្ទាប់​មក​អ្នក​គួរ​ដោះស្រាយ​ដោយ​ដៃ​ការ​ប៉ះ​ទង្គិច​"
 "លើ​កូដ​ប្រភព ។ បន្ត ?"
 
-#: savesystem/timeline.cpp:443
+#: plasmate/savesystem/timeline.cpp:443
 msgid ""
 "<b>You are going to remove the selected branch.</b>\n"
 " With this operation, you will also delete all save points and branches "
@@ -1067,85 +1345,85 @@ msgstr ""
 " ជា​មួយ​​ប្រតិបត្តិការ​នេះ អ្នក​នឹង​លុប​ចំណុច​រក្សាទុក​ទាំងអស់ ហើយ​ភាគ​ដែល​បាន​ប្រតិបត្តិ​នៅ​ខាង​ក្នុង​វា ។\n"
 "យ៉ាងណាក៏ដោយ​បន្ត​ឬ ?"
 
-#: savesystem/timeline.cpp:471
+#: plasmate/savesystem/timeline.cpp:471
 msgid "Cannot rename the section: a section with this name already exists."
 msgstr "មិន​អាច​ប្ដូរ​ឈ្មោះ​ភាគ ៖ ភាគ​ជា​មួយ​ឈ្មោះ​នេះ​មាន​ហើយ ។"
 
-#: savesystem/timeline.cpp:496
+#: plasmate/savesystem/timeline.cpp:496
 msgid "<b>Cannot create section: </b>a section with this name already exists."
 msgstr "<b>មិន​អាច​បង្កើត​ភាគ​បាន​ទេ ៖ </b>ភាគ​មាន​ឈ្មោះ​នេះ​រួច​ហើយ ។"
 
-#: sidebar.cpp:35
+#: plasmate/sidebar.cpp:35
 msgid "Workflow"
 msgstr "លំហូរ​ការងារ"
 
-#: startpage.cpp:142
+#: plasmate/startpage.cpp:142
 msgid "Plasma Widget"
 msgstr "ធាតុ​ក្រាហ្វិក​ប្លាស្មា"
 
-#: startpage.cpp:309
+#: plasmate/startpage.cpp:309
 #, kde-format
 msgid "Author: %1"
 msgstr "អ្នក​និពន្ធ ៖ %1"
 
-#: startpage.cpp:318
+#: plasmate/startpage.cpp:318
 #, kde-format
 msgid "Version: %1"
 msgstr "កំណែ ៖ %1"
 
-#: startpage.cpp:323
+#: plasmate/startpage.cpp:323
 #, kde-format
 msgid "API: %1"
 msgstr "API: %1"
 
-#: startpage.cpp:332
+#: plasmate/startpage.cpp:332
 msgid "Project Type: Window Switcher"
 msgstr "ប្រភេទ​គម្រោង ៖ កម្មវិធី​ប្ដូរ​គម្រោង"
 
-#: startpage.cpp:335
+#: plasmate/startpage.cpp:335
 msgid "Project type: Plasmoid"
 msgstr "ប្រភេទ​គម្រោង ៖ Plasmoid"
 
-#: startpage.cpp:338
+#: plasmate/startpage.cpp:338
 msgid "Project type: Data Engine"
 msgstr "ប្រភេទ​គម្រោង ៖ ម៉ាស៊ីន​ទិន្នន័យ"
 
-#: startpage.cpp:341
+#: plasmate/startpage.cpp:341
 msgid "Project type: Theme"
 msgstr "ប្រភេទ​គម្រោង ៖ រូបរាង"
 
-#: startpage.cpp:344
+#: plasmate/startpage.cpp:344
 msgid "Project type: Runner"
 msgstr "ប្រភេទ​គម្រោង ៖ កម្មវិធី​ដំណើរការ"
 
-#: startpage.cpp:347 startpage.cpp:350
+#: plasmate/startpage.cpp:347 plasmate/startpage.cpp:350
 msgid "Project type: KWin Script"
 msgstr "ប្រភេទ​គម្រោង ៖ ស្គ្រីប KWin"
 
-#: startpage.cpp:371
+#: plasmate/startpage.cpp:371
 msgid "Manage Projects..."
 msgstr "គ្រប់គ្រង​គម្រោង​..."
 
-#: startpage.cpp:373
+#: plasmate/startpage.cpp:373
 msgid "More projects..."
 msgstr "គម្រោង​​ជា​ច្រើន..."
 
-#: startpage.cpp:690
+#: plasmate/startpage.cpp:690
 msgid "A problem has occurred during import."
 msgstr "បញ្ហា​បាន​កើត​ឡើង​អំឡុងពេល​នាំ​ចូល ។​"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: startpage.ui:39
+#: plasmate/startpage.ui:39
 msgid "<h3>Create a new Addon...</h3>"
 msgstr "<h3>បង្កើត​កម្មវិធី​បន្ថែម​ថ្មី...</h3>"
 
 #. i18n: ectx: property (text), widget (QLabel, recentProjectsLabel)
-#: startpage.ui:102
+#: plasmate/startpage.ui:102
 msgid "<h3>Continue working on...</h3>"
 msgstr "<h3>បន្ត​ការងារ​នៅ​លើ...</h3>"
 
 #. i18n: ectx: property (text), widget (QLabel, invalidPlasmagikLabelEmpty)
-#: startpage.ui:172
+#: plasmate/startpage.ui:172
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1170,7 +1448,7 @@ msgstr ""
 "weight:600; color:#ff0000;\">ថត​របស់​អ្នកត្រូវ​បាន​សម្អាត</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, invalidPlasmagikLabelNoMetadataDesktop)
-#: startpage.ui:183
+#: plasmate/startpage.ui:183
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1197,42 +1475,42 @@ msgstr ""
 "span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: startpage.ui:190
+#: plasmate/startpage.ui:190
 msgid "<h3>Import an existing project...</h3>"
 msgstr "<h3>នាំចូល​គម្រោង​មាន​ស្រាប់...</h3>"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
-#: startpage.ui:199
+#: plasmate/startpage.ui:199
 msgid "Local folder:"
 msgstr "ថត​មូលដ្ឋាន ៖"
 
 #. i18n: ectx: property (text), widget (QPushButton, loadLocalProject)
-#: startpage.ui:228
+#: plasmate/startpage.ui:228
 msgid "Load"
 msgstr "ផ្ទុក"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: startpage.ui:235
+#: plasmate/startpage.ui:235
 msgid "Local package file:"
 msgstr "ឯកសារ​កញ្ចប់​មូលដ្ឋាន ៖"
 
 #. i18n: ectx: property (text), widget (QPushButton, importPackageButton)
-#: startpage.ui:261
+#: plasmate/startpage.ui:261
 msgid "Import"
 msgstr "នាំចូល"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: startpage.ui:268
+#: plasmate/startpage.ui:268
 msgid "Download:"
 msgstr "ទាញ​យក ៖"
 
 #. i18n: ectx: property (text), widget (QPushButton, importGHNSButton)
-#: startpage.ui:280
+#: plasmate/startpage.ui:280
 msgid "Download Addon"
 msgstr "ទាញ​យក​កម្មវិធី​បន្ថែម"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
-#: startpage.ui:328
+#: plasmate/startpage.ui:328
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1257,37 +1535,37 @@ msgstr ""
 "large; font-weight:600;\">បង្កើត​កម្មវិធី​បន្ថែម​ថ្មី...</span></p></body></html>"
 
 #. i18n: ectx: property (text), widget (QLabel, labelName)
-#: startpage.ui:340
+#: plasmate/startpage.ui:340
 msgid "Addon Name:"
 msgstr "ឈ្មោះ​កម្មវិធី​បន្ថែម ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, languageLabel)
-#: startpage.ui:392
+#: plasmate/startpage.ui:392
 msgid "Language:"
 msgstr "ភាសា ៖"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioButtonDe)
-#: startpage.ui:411
+#: plasmate/startpage.ui:411
 msgid "Qt Quick (QML)"
 msgstr "Qt Quick (QML)"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioButtonJs)
-#: startpage.ui:421
+#: plasmate/startpage.ui:421
 msgid "JavaScript"
 msgstr "JavaScript"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioButtonPy)
-#: startpage.ui:431
+#: plasmate/startpage.ui:431
 msgid "Python"
 msgstr "Python"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioButtonRb)
-#: startpage.ui:444
+#: plasmate/startpage.ui:444
 msgid "Ruby"
 msgstr "Ruby"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: startpage.ui:460
+#: plasmate/startpage.ui:460
 msgid ""
 "You can change the above information later in the Metadata editor in the "
 "project's file list."
@@ -1296,17 +1574,17 @@ msgstr ""
 "គម្រោង ។"
 
 #. i18n: ectx: property (text), widget (KPushButton, cancelNewProjectButton)
-#: startpage.ui:485
+#: plasmate/startpage.ui:485
 msgid "Back"
 msgstr "ថយក្រោយ"
 
 #. i18n: ectx: property (text), widget (KPushButton, newProjectButton)
-#: startpage.ui:495
+#: plasmate/startpage.ui:495
 msgid "&Create!"
 msgstr "បង្កើត !"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
-#: startpage.ui:513
+#: plasmate/startpage.ui:513
 msgid ""
 "Please ensure that your Addon's name will be globally unique; this is "
 "easiest to achieve by using a \"reverse domain name\" such as org.myproject."
@@ -1316,7 +1594,7 @@ msgstr ""
 "\"ឈ្មោះ​ដែន​បញ្ច្រាស\" មាន​ដូចជា org.myproject.Addonname ។"
 
 #. i18n: ectx: property (text), widget (QLabel, welcomeText)
-#: startpage.ui:568
+#: plasmate/startpage.ui:568
 msgid ""
 "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/"
 "REC-html40/strict.dtd\">\n"
@@ -1419,18 +1697,182 @@ msgstr ""
 "right:0px; -qt-block-indent:0; text-indent:0px;\">សូម​បង្កើត​តាម​សប្បាយ ! </p></"
 "body></html>"
 
-#: test-kpart/main.cpp:11
+#: plasmate/test-kpart/main.cpp:11
 msgid "KPart Tutorial 1"
 msgstr "ការ​បង្រៀន​អំពី KPart ១"
 
-#: test-kpart/main.cpp:12
+#: plasmate/test-kpart/main.cpp:12
 msgid "A MainWindow for a KatePart."
 msgstr "MainWindow សម្រាប់​ KatePart ។"
 
-#: test-kpart/main.cpp:14
+#: plasmate/test-kpart/main.cpp:14
 msgid "Copyright (c) 2007 Developer"
 msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០០៧ ដោយ​អ្នក​អភិវឌ្ឍន៍"
 
-#: test-kpart/main.cpp:18
+#: plasmate/test-kpart/main.cpp:18
 msgid "Document to open"
 msgstr "ឯកសារ​ត្រូវ​បើក"
+
+#: plasmoidviewer/main.cpp:51
+msgid "Run Plasma widgets in their own window"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:119
+#, fuzzy
+#| msgid "Plasma Widget"
+msgid "Plasma Widget Viewer"
+msgstr "ធាតុ​ក្រាហ្វិក​ប្លាស្មា"
+
+#: plasmoidviewer/main.cpp:121
+#, fuzzy
+#| msgid "Frerich Raabe"
+msgid "2007-2008, Frerich Raabe"
+msgstr "Frerich Raabe"
+
+#: plasmoidviewer/main.cpp:124
+msgid "Original author"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:131
+msgid "Name of the containment plugin"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:133
+msgctxt "Do not translate horizontal, vertical, mediacenter nor planar"
+msgid "The formfactor to use (horizontal, vertical, mediacenter or planar)"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:135
+msgid "Displays a list of known applets"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:137
+msgid "Displays a list of known wallpapers"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:139
+msgid "Displays a list of known containments"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:141
+msgid "Displays a list of known themes"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:142
+msgid "Disables save and restore of the config between runs"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:144
+msgctxt ""
+"Do not translate floating, desktop, fullscreen, top, bottom, left nor right"
+msgid ""
+"The location constraint to start the Containment with (floating, desktop, "
+"fullscreen, top, bottom, left, right)"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:146
+msgid "The size in kB to set the pixmap cache to"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:148
+msgid ""
+"Takes a screenshot of the widget and saves it the working directory as "
+"<pluginname>.png"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:150
+msgid ""
+"Takes a screenshot of each widget and saves it the working directory as "
+"<pluginname>.png"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:152
+msgid "Desktop SVG theme to use"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:154
+msgid ""
+"Name of the wallpaper plugin. Requires a containment plugin to be specified."
+msgstr ""
+
+#: plasmoidviewer/main.cpp:155
+msgid ""
+"Name of applet to view; may refer to the plugin name or be a path (absolute "
+"or relative) to a package. If not provided, then an attempt is made to load "
+"a package from the current directory."
+msgstr ""
+
+#: plasmoidviewer/main.cpp:158
+msgid "Optional arguments of the applet to add"
+msgstr ""
+
+#: plasmoidviewer/main.cpp:159
+msgid "List zeroconf announced remote widgets"
+msgstr ""
+
+#: remote-widgets-browser/main.cpp:38
+msgid "Explore the Plasma Widgets shared on the network"
+msgstr ""
+
+#: remote-widgets-browser/main.cpp:43
+#, fuzzy
+#| msgid "Project has been installed"
+msgid "Plasma Remote Widgets Browser"
+msgstr "គម្រោង​ត្រូវ​បាន​ដំឡើង"
+
+#: remote-widgets-browser/main.cpp:45
+msgid "(c) 2011 The KDE Team"
+msgstr ""
+
+#: remote-widgets-browser/main.cpp:46
+msgid "Kevin Ottens"
+msgstr ""
+
+#: wallpaperviewer/main.cpp:31
+msgid "Viewer for Plasma wallpapers"
+msgstr ""
+
+#: wallpaperviewer/main.cpp:76
+msgid "No wallpaper plugins installed."
+msgstr ""
+
+#: wallpaperviewer/main.cpp:80
+msgid "Installed wallpaper plugins:"
+msgstr ""
+
+#: wallpaperviewer/main.cpp:89
+#, fuzzy, kde-format
+#| msgid "Version: %1"
+msgid "Modes: %1"
+msgstr "កំណែ ៖ %1"
+
+#: wallpaperviewer/main.cpp:96
+msgid "Plasma Wallpaper Viewer"
+msgstr ""
+
+#: wallpaperviewer/main.cpp:98
+#, fuzzy
+#| msgid "Aaron Seigo"
+msgid "(c) 2009, Aaron J. Seigo"
+msgstr "Aaron Seigo"
+
+#: wallpaperviewer/main.cpp:111
+msgid "The wallpaper plugin to use"
+msgstr ""
+
+#: wallpaperviewer/main.cpp:113
+msgid "The mode to put the wallpaper in"
+msgstr ""
+
+#: wallpaperviewer/main.cpp:114
+msgid "List all the known wallpapers and their modes"
+msgstr ""
+
+#: wallpaperviewer/main.cpp:115
+msgid "Open configuration dialog additionally to show the wallpaper plugin"
+msgstr ""
+
+#: wallpaperviewer/wallpaperwidget.cpp:242
+#, kde-format
+msgid "Configure %1 Wallpaper"
+msgstr ""
