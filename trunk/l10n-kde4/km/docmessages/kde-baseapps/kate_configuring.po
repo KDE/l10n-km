@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_configuring\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-05-06 03:50+0000\n"
+"POT-Creation-Date: 2012-10-28 03:31+0000\n"
 "PO-Revision-Date: 2008-08-22 09:41+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -1156,52 +1156,114 @@ msgstr "<command>remove-trailing-space</command><arg>BOOL</arg>"
 msgid "Set dynamic end of line cleanup on or off."
 msgstr "កំណត់​បិទ បើក​ជម្រះ​ចុង​បន្ទាត់ថាមវន្ត​។"
 
+#. Tag: para
+#: configuring.docbook:513 configuring.docbook:544
+#, no-c-format
+msgid ""
+"Note: Deprecated since KDE 4.10. Please use <link linkend=\"variable-remove-"
+"trailing-spaces\"> remove-trailing-spaces</link> with the desired choice "
+"instead."
+msgstr ""
+
 #. Tag: cmdsynopsis
-#: configuring.docbook:516
+#: configuring.docbook:519
+#, fuzzy, no-c-format
+#| msgid "<command>remove-trailing-space</command><arg>BOOL</arg>"
+msgid "<command>remove-trailing-spaces</command><arg>STRING</arg>"
+msgstr "<command>remove-trailing-space</command><arg>BOOL</arg>"
+
+#. Tag: para
+#: configuring.docbook:520
+#, fuzzy, no-c-format
+#| msgid "Remove trailing spaces"
+msgid "Removes trailing spaces when saving the document. Valid options are:"
+msgstr "យក​ស្នាម​ចន្លោះ​ចេញ​"
+
+#. Tag: para
+#: configuring.docbook:522
+#, fuzzy, no-c-format
+#| msgid ""
+#| "Set the end of line mode. Valid settings are <quote>unix</quote>, "
+#| "<quote>mac</quote> and <quote>dos</quote>"
+msgid ""
+"<userinput>none</userinput>, <userinput>-</userinput> or <userinput>0</"
+"userinput>: never remove trailing spaces."
+msgstr ""
+"កំណត់​របៀប​ចុង​បន្ទាត់​ ។ ការកំណត់​ត្រឹមត្រូវ​គឺ​  <quote>unix</quote>, <quote>mac</quote> និង​ "
+"<quote>dos</quote>"
+
+#. Tag: para
+#: configuring.docbook:523
+#, no-c-format
+msgid ""
+"<userinput>modified</userinput>, <userinput>mod</userinput>, <userinput>+</"
+"userinput> or <userinput>1</userinput>: remove trailing spaces only in "
+"modified lines. The modified lines are marked by the line modification "
+"system."
+msgstr ""
+
+#. Tag: para
+#: configuring.docbook:525
+#, no-c-format
+msgid ""
+"<userinput>all</userinput>, <userinput>*</userinput> or <userinput>2</"
+"userinput>: remove trailing spaces in the entire document."
+msgstr ""
+
+#. Tag: para
+#: configuring.docbook:527
+#, no-c-format
+msgid ""
+"Since: KDE 4.10. This deprecates the options <userinput>remove-trailing-"
+"space</userinput> and <userinput>replace-trailing-space-save</userinput>."
+msgstr ""
+
+#. Tag: cmdsynopsis
+#: configuring.docbook:532
 #, no-c-format
 msgid "<command>replace-tabs-save</command><arg>BOOL</arg>"
 msgstr "<command>replace-tabs-save</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:517
+#: configuring.docbook:533
 #, fuzzy, no-c-format
 #| msgid "Set tab-&gt;space conversion on save on or off."
 msgid "Set tab to space conversion on save on or off."
 msgstr "កំណត់រក្សាទុក​ ​បិទ បើក​ការបម្លែង​ ថេប-&gt; ចន្លោះ​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:521
+#: configuring.docbook:537
 #, no-c-format
 msgid "<command>replace-tabs</command><arg>BOOL</arg>"
 msgstr "<command>replace-tabs</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:522
+#: configuring.docbook:538
 #, fuzzy, no-c-format
 #| msgid "Set dynamic tab-&gt;space conversion on or off."
 msgid "Set dynamic tab to space conversion on or off."
 msgstr "កំណត់​បើក ឬបិទ​ឋាមវន្ត​ ថេប-&gt; ចន្លោះ​ ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:526
+#: configuring.docbook:542
 #, no-c-format
 msgid "<command>replace-trailing-space-save</command><arg>BOOL</arg>"
 msgstr "<command>replace-trailing-space-save</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:527
+#: configuring.docbook:543
 #, no-c-format
 msgid "Set end of line cleanup on save on or off."
 msgstr "កំណត់​បិទ បើក​រក្សាទុក​ជម្រអះ​ចុង​បន្ទាត់ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:531
+#: configuring.docbook:550
 #, no-c-format
 msgid "<command>scheme</command><arg>STRING</arg>"
 msgstr "<command>scheme</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:532
+#: configuring.docbook:551
 #, no-c-format
 msgid ""
 "Set the color scheme. The string must be the name of a color scheme that "
@@ -1211,13 +1273,13 @@ msgstr ""
 "ការកំណត់រចនាសម្ព័ន្ធ​របស់​អ្នក​ ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:537
+#: configuring.docbook:556
 #, no-c-format
 msgid "<command>selection-color</command><arg>STRING</arg>"
 msgstr "<command>selection-color</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:538
+#: configuring.docbook:557
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Set the selection color. The value must be something that can be "
@@ -1228,26 +1290,26 @@ msgid ""
 msgstr "កំណត់​ការជ្រើសរើស​ពណ៌ ។ តម្លៃ​ត្រូវ​តែ​វាយ​តម្លៃ​ជា​ពណ៌​ដែល​ត្រឹមត្រូវ​ ឧទាហរណ៍ \"#ff0000\" ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:543
+#: configuring.docbook:562
 #, no-c-format
 msgid "<command>show-tabs</command><arg>BOOL</arg>"
 msgstr "<command>show-tabs</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:544
+#: configuring.docbook:563
 #, fuzzy, no-c-format
 #| msgid "Set the visual TAB character on or off."
 msgid "Set the visual tab character on or off."
 msgstr "កំណត់​បិទ ឬ​បើក​តួអក្សរ​ TAB និមិត្ត ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:548
+#: configuring.docbook:567
 #, no-c-format
 msgid "<command>smart-home</command><arg>BOOL</arg>"
 msgstr "<command>smart-home</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:549
+#: configuring.docbook:568
 #, no-c-format
 msgid ""
 "Set <link linkend=\"pref-edit-cursor-selection\">smart home navigation</"
@@ -1255,19 +1317,19 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:554
+#: configuring.docbook:573
 #, no-c-format
 msgid "<command>space-indent</command><arg>BOOL</arg>"
 msgstr "<command>space-indent</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:555
+#: configuring.docbook:574
 #, no-c-format
 msgid "Set indentation with spaces on or off."
 msgstr "កំណត់​បិទ ឬ​បើក​ការចូល​បន្ទាត់​ដែល​មាន​ចន្លោះ​ ។"
 
 #. Tag: para
-#: configuring.docbook:556
+#: configuring.docbook:575
 #, no-c-format
 msgid ""
 "Note: Deprecated since Kate 3 in KDE4. Mixed indentation is the default "
@@ -1276,45 +1338,45 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:561
+#: configuring.docbook:580
 #, no-c-format
 msgid "<command>tab-indents</command><arg>BOOL</arg>"
 msgstr "<command>tab-indents</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:562
+#: configuring.docbook:581
 #, fuzzy, no-c-format
 #| msgid "Set the TAB key indentation on or off."
 msgid "Set &Tab; key indentation on or off."
 msgstr "កំណត់​បិទ ឬ​បើក​ការចូល​បន្ទាត់​ដោយ​គ្រាប់​ចុច​ TAB ​។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:566
+#: configuring.docbook:585
 #, no-c-format
 msgid "<command>tab-width</command><arg>INT</arg>"
 msgstr "<command>tab-width</command><arg>INT</arg>"
 
 #. Tag: para
-#: configuring.docbook:567
+#: configuring.docbook:586
 #, fuzzy, no-c-format
 #| msgid "Set the tab display width."
 msgid "Set the tab character display width."
 msgstr "កំណត់​បង្ហាញ​ទទឹង​ថេប​ ។"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:571
+#: configuring.docbook:590
 #, no-c-format
 msgid "<command>undo-steps</command><arg>INT</arg>"
 msgstr "<command>undo-steps</command><arg>INT</arg>"
 
 #. Tag: para
-#: configuring.docbook:572
+#: configuring.docbook:591
 #, no-c-format
 msgid "Set the number of undo steps to remember."
 msgstr "កំណត់​ចំនួន​ជំហានមិនធ្វើវិញ​ដើម្បីចងចាំ​ ។"
 
 #. Tag: para
-#: configuring.docbook:573
+#: configuring.docbook:592
 #, no-c-format
 msgid ""
 "Note: Deprecated since Kate 3 in KDE4. This variable is ignored. The maximal "
@@ -1322,13 +1384,13 @@ msgid ""
 msgstr ""
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:577
+#: configuring.docbook:596
 #, no-c-format
 msgid "<command>word-wrap-column</command><arg>INT</arg>"
 msgstr "<command>word-wrap-column</command><arg>INT</arg>"
 
 #. Tag: para
-#: configuring.docbook:578
+#: configuring.docbook:597
 #, fuzzy, no-c-format
 #| msgid "Turns dynamic word wrap on or off."
 msgid ""
@@ -1336,13 +1398,13 @@ msgid ""
 msgstr "បើក ឬ​បិទ​ការរុំពាក្យ​ថាមវន្ត ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:583
+#: configuring.docbook:602
 #, no-c-format
 msgid "<command>word-wrap-marker-color</command><arg>STRING</arg>"
 msgstr "<command>word-wrap-marker-color</command><arg>STRING</arg>"
 
 #. Tag: para
-#: configuring.docbook:584
+#: configuring.docbook:603
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Set the word wrap marker color. The value must be something that can be "
@@ -1355,26 +1417,26 @@ msgstr ""
 "\"#ff0000\" ។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:589
+#: configuring.docbook:608
 #, no-c-format
 msgid "<command>word-wrap</command><arg>BOOL</arg>"
 msgstr "<command>word-wrap</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:590
+#: configuring.docbook:609
 #, fuzzy, no-c-format
 #| msgid "Set hard word wrapping on or off."
 msgid "Set static word wrapping on or off."
 msgstr "កំណត់​បិត ឬបើក​ការរុំពាក្យ​ដែល​ពិបាក​​។​"
 
 #. Tag: cmdsynopsis
-#: configuring.docbook:594
+#: configuring.docbook:613
 #, no-c-format
 msgid "<command>wrap-cursor</command><arg>BOOL</arg>"
 msgstr "<command>wrap-cursor</command><arg>BOOL</arg>"
 
 #. Tag: para
-#: configuring.docbook:595
+#: configuring.docbook:614
 #, no-c-format
 msgid "Set cursor wrapping on or off."
 msgstr "កំណត់​បិទ ឬ​បើក​ការរុំពាក្យ​ទស្សន៍ទ្រនិច​។"
@@ -1823,11 +1885,6 @@ msgstr "កំណត់​បិទ ឬ​បើក​ការរុំពា�
 #~ "បើ​ <link linkend=\"config-dialog-editor-word-wrap\"> ជម្រើស​​ការរុំពាក្យ​ </"
 #~ "link> ត្រូវ​បាន​ជ្រើស​​ក្នុង​ប្រវែង​ធាតុ​ដែល​បាន​ជ្រើស​(ក្នុង​តួអក្សរ​) ដែល​កម្មវិធី​និពន្ធ​ នឹង​ចាប់​ផ្តើម​"
 #~ "បន្ទាត់​ថ្មី​ដោយស្វ័យប្រវត្តិ​ ។​"
-
-#, fuzzy
-#~| msgid "Remove trailing spaces"
-#~ msgid "Remove trailing spaces while editing"
-#~ msgstr "យក​ស្នាម​ចន្លោះ​ចេញ​"
 
 #, fuzzy
 #~| msgid ""
