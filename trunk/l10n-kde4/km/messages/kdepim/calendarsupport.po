@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi-kcal\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-17 03:06+0100\n"
+"POT-Creation-Date: 2012-11-26 02:56+0100\n"
 "PO-Revision-Date: 2010-06-08 14:47+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -271,7 +271,7 @@ msgstr ""
 msgid "Unable to create a temporary file for the attachment."
 msgstr "មិន​អាច​បង្កើត​ឯកសារ​បណ្ដោះអាសន្ន​ សម្រាប់​ឯកសារ​ភ្ជាប់​បាន​ឡើយ​ ។"
 
-#: attachmenthandler.cpp:218 utils.cpp:795
+#: attachmenthandler.cpp:218 utils.cpp:846
 msgid "Save Attachment"
 msgstr "រក្សាទុក​ឯកសារ​ភ្ជាប់​"
 
@@ -293,17 +293,17 @@ msgstr "unknown@nowhere"
 msgid "Unable to delete incidence %1 \"%2\": %3"
 msgstr "មិន​អាច​លុប​ឧប្បត្តិហេតុ %1 \"%2\": %3 បាន​ទេ"
 
-#: calendaradaptor.cpp:385 utils.cpp:721
+#: calendaradaptor.cpp:385 utils.cpp:772
 #, kde-format
 msgid ""
 "The item '%1' has no attendees. Therefore no groupware message will be sent."
 msgstr ""
 
-#: calendaradaptor.cpp:388 utils.cpp:724
+#: calendaradaptor.cpp:388 utils.cpp:775
 msgid "Message Not Sent"
 msgstr ""
 
-#: calendaradaptor.cpp:402 utils.cpp:738
+#: calendaradaptor.cpp:402 utils.cpp:789
 #, kde-format
 msgid ""
 "The groupware message for item '%1' was successfully sent.\n"
@@ -312,11 +312,11 @@ msgstr ""
 "សារ​របស់ groupware សម្រាប់​ធាតុ '%1' ត្រូវ​បាន​ផ្ញើ​ដោយ​ជោគជ័យ ។\n"
 "វិធីសាស្ត្រ ៖ %2"
 
-#: calendaradaptor.cpp:406 freebusymanager.cpp:880 utils.cpp:742
+#: calendaradaptor.cpp:406 freebusymanager.cpp:880 utils.cpp:793
 msgid "Sending Free/Busy"
 msgstr "ផ្ញើ​​​រវល់/ទំនេរ"
 
-#: calendaradaptor.cpp:413 utils.cpp:749
+#: calendaradaptor.cpp:413 utils.cpp:800
 #, kde-format
 msgctxt ""
 "Groupware message sending failed. %2 is request/reply/add/cancel/counter/etc."
@@ -1275,90 +1275,126 @@ msgstr "ជ្រើស​ប្រតិទិន"
 msgid "Select the calendar where this item will be stored."
 msgstr "ជ្រើស​ប្រតិទិន​ដែល​នឹង​ត្រូវ​រក្សាទុក​ធាតុ​នេះ ។"
 
-#: utils.cpp:514
+#: utils.cpp:514 utils.cpp:575
 msgid "Calendar"
 msgstr "ប្រតិទិន"
 
-#: utils.cpp:515
+#: utils.cpp:515 utils.cpp:577
 msgid "Tasks"
 msgstr "ភារកិច្ច"
 
-#: utils.cpp:516
+#: utils.cpp:516 utils.cpp:579
 msgid "Journal"
 msgstr "ទិនានុប្បវត្តិ"
 
-#: utils.cpp:517
+#: utils.cpp:517 utils.cpp:581
 msgid "Notes"
 msgstr "ចំណាំ"
 
 #: utils.cpp:532
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "%1 is folder owner name, %2 is folder contents"
+#| msgid "%1's %2"
 msgctxt "%1 is folder owner name, %2 is folder contents"
-msgid "%1's %2"
+msgid "%1's Kolab %2"
 msgstr "%2 របស់ %1"
 
 #: utils.cpp:535
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "%1 is folder owner name, %2 is folder name, %3 is folder contents"
+#| msgid "%1's %2 %3"
 msgctxt "%1 is folder owner name, %2 is folder name, %3 is folder contents"
-msgid "%1's %2 %3"
+msgid "%1's %2 Kolab %3"
 msgstr "%2 %3 របស់ %1"
 
 #: utils.cpp:539
 #, kde-format
 msgctxt "%1 is folder contents"
-msgid "My Shared %1"
-msgstr "%1 ចែករំលែក​របស់​ខ្ញុំ"
+msgid "My Kolab %1"
+msgstr ""
 
-#: utils.cpp:548
+#: utils.cpp:543
+#, kde-format
+msgctxt "%1 is folder contents"
+msgid "Kolab %1"
+msgstr ""
+
+#: utils.cpp:549
 #, fuzzy, kde-format
 #| msgid "Calendar"
 msgctxt "%1 is the folder name"
 msgid "%1 CalDav Calendar"
 msgstr "ប្រតិទិន"
 
-#: utils.cpp:554 utils.cpp:556
+#: utils.cpp:591
+#, fuzzy, kde-format
+#| msgctxt "%1 is folder owner name, %2 is folder contents"
+#| msgid "%1's %2"
+msgctxt "%1 is folder owner name, %2 is folder contents"
+msgid "%1's Google %2"
+msgstr "%2 របស់ %1"
+
+#: utils.cpp:594
+#, fuzzy, kde-format
+#| msgctxt "%1 is folder owner name, %2 is folder contents"
+#| msgid "%1's %2"
+msgctxt "%1 is folder owner name, %2 is folder name"
+msgid "%1's %2"
+msgstr "%2 របស់ %1"
+
+#: utils.cpp:598
+#, kde-format
+msgctxt "%1 is folder contents"
+msgid "Google %1"
+msgstr ""
+
+#: utils.cpp:605 utils.cpp:607
 #, kde-format
 msgid "My %1"
 msgstr "%1 របស់​ខ្ញុំ"
 
-#: utils.cpp:620 utils.cpp:668 utils.cpp:714 utils.cpp:762
+#: utils.cpp:671 utils.cpp:719 utils.cpp:765 utils.cpp:813
 msgid "No item selected."
 msgstr "មិនបាន​ជ្រើស​ធាតុ ។"
 
-#: utils.cpp:621 utils.cpp:648
+#: utils.cpp:672 utils.cpp:699
 msgid "Forwarding"
 msgstr "ការ​បញ្ជូន​បន្ត​"
 
-#: utils.cpp:647 utils.cpp:692
+#: utils.cpp:698 utils.cpp:743
 msgid "The item information was successfully sent."
 msgstr "ព័ត៌មាន​អំពី​ធាតុ​ត្រូវ​បាន​ផ្ញើ​​ដោយ​ជោគជ័យ​ ។"
 
-#: utils.cpp:653
+#: utils.cpp:704
 #, kde-format
 msgid "Unable to forward the item '%1'"
 msgstr "មិន​​អាច​បញ្ជូន​បន្ត​ធាតុ​​ '%1' បាន​ឡើយ​"
 
-#: utils.cpp:654
+#: utils.cpp:705
 msgid "Forwarding Error"
 msgstr "កំហុស​ការ​បញ្ជូន​បន្ត​"
 
-#: utils.cpp:693
+#: utils.cpp:744
 msgid "Publishing"
 msgstr "ការ​បោះពុម្ពផ្សាយ​"
 
-#: utils.cpp:698
+#: utils.cpp:749
 #, kde-format
 msgid "Unable to publish the item '%1'"
 msgstr "មិន​អាច​បោះពុម្ព​ផ្សាយ​ធាតុ​​ '%1' បាន​ឡើយ​"
 
-#: utils.cpp:777
+#: utils.cpp:828
 msgid "Save Attachments To"
 msgstr "រក្សាទុក​ឯកសារ​ភ្ជាប់​ទៅកាន់​"
 
-#: utils.cpp:790
+#: utils.cpp:841
 msgctxt "filename for an unnamed attachment"
 msgid "attachment.1"
 msgstr "ឯកសារ​ភ្ជាប់​ ១"
+
+#~ msgctxt "%1 is folder contents"
+#~ msgid "My Shared %1"
+#~ msgstr "%1 ចែករំលែក​របស់​ខ្ញុំ"
 
 #~ msgid "The item has no attendees."
 #~ msgstr "ធាតុ​គ្មាន​​អ្នក​ចូលរួម​ទេ ។"
