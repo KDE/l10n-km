@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: add-printer\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2012-11-17 03:09+0100\n"
+"POT-Creation-Date: 2013-01-08 12:36+0100\n"
 "PO-Revision-Date: 2012-06-29 15:40+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -573,7 +573,7 @@ msgid "Failed to configure printer"
 msgstr "បាន​បរាជ័យ​ក្នុង​បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព"
 
 #: configure-printer/ModifyPrinter.cpp:287
-#: printer-manager-kcm/PrintKCM.cpp:338
+#: printer-manager-kcm/PrintKCM.cpp:341
 msgctxt "@title:window"
 msgid "Failed"
 msgstr "បាន​បរាជ័យ"
@@ -823,6 +823,148 @@ msgstr ""
 msgid "Recommended Drivers"
 msgstr ""
 
+#: libkcups/PrinterModel.cpp:192 plasmoid/printmanager.cpp:154
+#: plasmoid/printmanager.cpp:156
+#, fuzzy
+#| msgid "AddPrinter"
+msgid "Printers"
+msgstr "បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព"
+
+#: libkcups/PrinterModel.cpp:378
+msgid "Idle"
+msgstr "ទំនេរ"
+
+#: libkcups/PrinterModel.cpp:378
+msgid "Idle, rejecting jobs"
+msgstr ""
+
+#: libkcups/PrinterModel.cpp:380
+#, kde-format
+msgid "Idle - '%1'"
+msgstr "ទំនេរ '%1'"
+
+#: libkcups/PrinterModel.cpp:380
+#, kde-format
+msgid "Idle, rejecting jobs - '%1'"
+msgstr ""
+
+#: libkcups/PrinterModel.cpp:384
+msgid "In use"
+msgstr "កំពុង​ប្រើ"
+
+#: libkcups/PrinterModel.cpp:386
+#, kde-format
+msgid "In use - '%1'"
+msgstr "កំពុងប្រើ '%1'"
+
+#: libkcups/PrinterModel.cpp:390
+msgid "Paused"
+msgstr "បាន​ផ្អាក"
+
+#: libkcups/PrinterModel.cpp:390
+msgid "Paused, rejecting jobs"
+msgstr ""
+
+#: libkcups/PrinterModel.cpp:392
+#, kde-format
+msgid "Paused - '%1'"
+msgstr "បាន​ផ្អាក '%1'"
+
+#: libkcups/PrinterModel.cpp:392
+#, fuzzy, kde-format
+#| msgid "Paused - '%1'"
+msgid "Paused, rejecting jobs - '%1'"
+msgstr "បាន​ផ្អាក '%1'"
+
+#: libkcups/PrinterModel.cpp:396
+msgid "Unknown"
+msgstr "មិន​ស្គាល់"
+
+#: libkcups/PrinterModel.cpp:398
+#, kde-format
+msgid "Unknown - '%1'"
+msgstr "មិន​ស្គាល់ '%1'"
+
+#: libkcups/PrintQueueModel.cpp:45
+msgid "Status"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:46
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Name:"
+msgid "Name"
+msgstr "ឈ្មោះ ៖"
+
+#: libkcups/PrintQueueModel.cpp:47
+#, fuzzy
+#| msgctxt "@label:textbox"
+#| msgid "Username:"
+msgid "User"
+msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
+
+#: libkcups/PrintQueueModel.cpp:48
+msgid "Created"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:49 libkcups/PrintQueueModel.cpp:614
+msgid "Completed"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:50
+msgid "Pages"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:51
+msgid "Processed"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:52
+msgid "Size"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:53
+msgid "Status Message"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:54
+#, fuzzy
+#| msgid "AddPrinter"
+msgid "Printer"
+msgstr "បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព"
+
+#: libkcups/PrintQueueModel.cpp:543 printqueue/PrintQueueUi.cpp:532
+#, kde-format
+msgid "Failed to move '%1' to '%2'"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:546 printqueue/PrintQueueUi.cpp:538
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Failed"
+msgid "Failed"
+msgstr "បាន​បរាជ័យ"
+
+#: libkcups/PrintQueueModel.cpp:608
+msgid "Pending"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:609
+msgid "On hold"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:611
+msgid "Stopped"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:612
+msgid "Canceled"
+msgstr ""
+
+#: libkcups/PrintQueueModel.cpp:613
+msgid "Aborted"
+msgstr ""
+
 #: libkcups/SelectMakeModel.cpp:160
 #, fuzzy, kde-format
 #| msgctxt "@info"
@@ -862,9 +1004,45 @@ msgstr "សូម​ជ្រើស​ធាតុ​មួយ​នៅ​ក្
 msgid "Manually Provide a PPD File:"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plasmoid-package/contents/ui/config.ui:20
-msgid "Only Jobs from Printer:"
+#. i18n: ectx: property (windowTitle), widget (QWidget, PlasmoidConfig)
+#: plasmoid/PlasmoidConfig.ui:14
+msgid "Form"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, kcfg_filterPrinters)
+#: plasmoid/PlasmoidConfig.ui:20
+msgid "Show jobs only for the following printers"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_allJobs)
+#: plasmoid/PlasmoidConfig.ui:38
+msgid "Show all jobs"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_activeJobs)
+#: plasmoid/PlasmoidConfig.ui:45
+msgid "Show only active jobs"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, kcfg_completedJobs)
+#: plasmoid/PlasmoidConfig.ui:55
+msgid "Show only completed jobs"
+msgstr ""
+
+#: plasmoid/printmanager.cpp:104
+#, fuzzy
+#| msgid "Queue:"
+msgid "Print queue is empty"
+msgstr "ជួរ ៖"
+
+#: plasmoid/printmanager.cpp:107
+#, kde-format
+msgid "There is one print job in the queue"
+msgid_plural "There are %1 print jobs in the queue"
+msgstr[0] ""
+
+#: plasmoid/printmanager.cpp:149
+msgid "Behavior"
 msgstr ""
 
 #: print-manager-kded/NewPrinterNotification.cpp:70
@@ -1028,53 +1206,11 @@ msgstr "បោះពុម្ព​ទំព័រ​សាកល្បង"
 msgid "Print Self Test Page"
 msgstr "បោះពុម្ព​ទំព័រ​សាកល្បង"
 
-#: printer-manager-kcm/PrinterModel.cpp:173
-#, fuzzy
-#| msgid "AddPrinter"
-msgid "Printers"
-msgstr "បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព"
-
-#: printer-manager-kcm/PrinterModel.cpp:301
-msgid "Idle"
-msgstr "ទំនេរ"
-
-#: printer-manager-kcm/PrinterModel.cpp:303
-#, kde-format
-msgid "Idle - '%1'"
-msgstr "ទំនេរ '%1'"
-
-#: printer-manager-kcm/PrinterModel.cpp:307
-msgid "In use"
-msgstr "កំពុង​ប្រើ"
-
-#: printer-manager-kcm/PrinterModel.cpp:309
-#, kde-format
-msgid "In use - '%1'"
-msgstr "កំពុងប្រើ '%1'"
-
-#: printer-manager-kcm/PrinterModel.cpp:313
-msgid "Paused"
-msgstr "បាន​ផ្អាក"
-
-#: printer-manager-kcm/PrinterModel.cpp:315
-#, kde-format
-msgid "Paused - '%1'"
-msgstr "បាន​ផ្អាក '%1'"
-
-#: printer-manager-kcm/PrinterModel.cpp:319
-msgid "Unknown"
-msgstr "មិន​ស្គាល់"
-
-#: printer-manager-kcm/PrinterModel.cpp:321
-#, kde-format
-msgid "Unknown - '%1'"
-msgstr "មិន​ស្គាល់ '%1'"
-
 #: printer-manager-kcm/PrintKCM.cpp:58 printer-manager-kcm/PrintKCM.cpp:60
 msgid "Print settings"
 msgstr "ការ​កំណត់​បោះពុម្ព"
 
-#: printer-manager-kcm/PrintKCM.cpp:70
+#: printer-manager-kcm/PrintKCM.cpp:74
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Add a New Printer"
@@ -1082,24 +1218,24 @@ msgctxt "@action:intoolbar"
 msgid "Add a Printer Class"
 msgstr "ម៉ាស៊ីន​បោះពុម្ព"
 
-#: printer-manager-kcm/PrintKCM.cpp:73
+#: printer-manager-kcm/PrintKCM.cpp:77
 msgid "Add a new printer or a printer class"
 msgstr "បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព​ថ្មី ឬ​ថ្នាក់​ម៉ាស៊ីន​បោះពុម្ព"
 
 #. i18n: ectx: property (text), widget (QToolButton, removeTB)
-#: printer-manager-kcm/PrintKCM.cpp:77 printer-manager-kcm/PrintKCM.ui:32
+#: printer-manager-kcm/PrintKCM.cpp:81 printer-manager-kcm/PrintKCM.ui:32
 #, fuzzy
 #| msgctxt "@item"
 #| msgid "Local Printers"
 msgid "Remove Printer"
 msgstr "ម៉ាស៊ីន​បោះពុម្ព​មូលដ្ឋាន"
 
-#: printer-manager-kcm/PrintKCM.cpp:83
+#: printer-manager-kcm/PrintKCM.cpp:87
 msgctxt "@action:intoolbar"
 msgid "Show printers shared by other systems"
 msgstr "បង្ហាញ​ម៉ាស៊ីន​បោះពុម្ព​ដែល​បាន​ចែក​រំលែក​ដោយ​ប្រព័ន្ធ​ផ្សេង​ៗ​ទៀត"
 
-#: printer-manager-kcm/PrintKCM.cpp:87
+#: printer-manager-kcm/PrintKCM.cpp:91
 #, fuzzy
 #| msgctxt "@info:tooltip"
 #| msgid "A printer connected to a USB port"
@@ -1107,53 +1243,53 @@ msgctxt "@action:intoolbar"
 msgid "Share printers connected to this system"
 msgstr "ម៉ាស៊ីន​បោះពុម្ព​​បាន​តភ្ជាប់​ទៅកាន់​ច្រក USB"
 
-#: printer-manager-kcm/PrintKCM.cpp:89
+#: printer-manager-kcm/PrintKCM.cpp:93
 msgctxt "@action:intoolbar"
 msgid "Allow printing from the Internet"
 msgstr "អនុញ្ញាត​ឲ្យ​បោះពុម្ព​​ពី​អ៊ីនធឺណិត"
 
-#: printer-manager-kcm/PrintKCM.cpp:94
+#: printer-manager-kcm/PrintKCM.cpp:98
 msgctxt "@action:intoolbar"
 msgid "Allow remote administration"
 msgstr "អនុញ្ញាត​ការ​គ្រប់គ្រង​ពីចម្ងាយ"
 
-#: printer-manager-kcm/PrintKCM.cpp:96
+#: printer-manager-kcm/PrintKCM.cpp:100
 msgctxt "@action:intoolbar"
 msgid "Allow users to cancel any job (not just their own)"
 msgstr "អនុញ្ញាត​ឲ្យ​អ្នក​ប្រើ​បោះបង់​​កិច្ចការ​មួយ​ចំនួន (មិន​មែន​កិច្ចការ​ផ្ទាល់ខ្លួន​របស់​ពួកគេ​ទេ)"
 
-#: printer-manager-kcm/PrintKCM.cpp:100
+#: printer-manager-kcm/PrintKCM.cpp:104
 msgid "Configure the global preferences"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ចំណូលចិត្ត​សកល"
 
-#: printer-manager-kcm/PrintKCM.cpp:138 printer-manager-kcm/PrintKCM.cpp:240
+#: printer-manager-kcm/PrintKCM.cpp:141 printer-manager-kcm/PrintKCM.cpp:243
 msgid "No printers have been configured or discovered"
 msgstr "គ្មាន​ម៉ាស៊ីន​បោះពុម្ព​ត្រូវ​បាន​កំណត់​រចនាសម្ព័ន្ធ ឬ​រក​ឃើញ​ឡើយ"
 
-#: printer-manager-kcm/PrintKCM.cpp:281
+#: printer-manager-kcm/PrintKCM.cpp:284
 msgid "Remove class"
 msgstr "យក​ថ្នាក់​ចេញ"
 
-#: printer-manager-kcm/PrintKCM.cpp:282
+#: printer-manager-kcm/PrintKCM.cpp:285
 #, kde-format
 msgid "Are you sure you want to remove the class '%1'?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​យក​ថ្នាក់ '%1' ចេញ​ឬ ?"
 
-#: printer-manager-kcm/PrintKCM.cpp:285
+#: printer-manager-kcm/PrintKCM.cpp:288
 msgid "Remove printer"
 msgstr "យក​ម៉ាស៊ីន​បោះពុម្ព​ចេញ"
 
-#: printer-manager-kcm/PrintKCM.cpp:286
+#: printer-manager-kcm/PrintKCM.cpp:289
 #, kde-format
 msgid "Are you sure you want to remove the printer '%1'?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​យក​ម៉ាស៊ីន​បោះពុម្ព '%1' ចេញ​ឬ ?"
 
-#: printer-manager-kcm/PrintKCM.cpp:336
+#: printer-manager-kcm/PrintKCM.cpp:339
 msgctxt "@info"
 msgid "Failed to get server settings"
 msgstr "បាន​បរាជ័យ​ក្នុងការ​ទទួល​យក​ការកំណត់​របស់​ម៉ាស៊ីន​បម្រើ"
 
-#: printer-manager-kcm/PrintKCM.cpp:368
+#: printer-manager-kcm/PrintKCM.cpp:371
 #, fuzzy
 #| msgctxt "@info"
 #| msgid "Failed to configure printer"
@@ -1174,17 +1310,17 @@ msgid "System Preferences"
 msgstr "ចំណូលចិត្ត​ប្រព័ន្ធ"
 
 #. i18n: ectx: property (text), widget (QLabel, errorComment)
-#: printer-manager-kcm/PrintKCM.ui:190
+#: printer-manager-kcm/PrintKCM.ui:196
 msgid "TextLabel"
 msgstr "TextLabel"
 
 #. i18n: ectx: property (text), widget (QLabel, errorText)
-#: printer-manager-kcm/PrintKCM.ui:200
+#: printer-manager-kcm/PrintKCM.ui:206
 msgid "Error Title"
 msgstr "កំហុស​ចំណងជើង"
 
 #. i18n: ectx: property (text), widget (QPushButton, addPrinterBtn)
-#: printer-manager-kcm/PrintKCM.ui:225
+#: printer-manager-kcm/PrintKCM.ui:231
 #, fuzzy
 #| msgid "Tool for adding new printers"
 msgid "Click here to add a new printer"
@@ -1200,86 +1336,6 @@ msgstr "ជួរ ៖"
 msgid "Show printer queue"
 msgstr ""
 
-#: printqueue/PrintQueueModel.cpp:43
-msgid "Status"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:44
-#, fuzzy
-#| msgctxt "@label:textbox"
-#| msgid "Name:"
-msgid "Name"
-msgstr "ឈ្មោះ ៖"
-
-#: printqueue/PrintQueueModel.cpp:45
-#, fuzzy
-#| msgctxt "@label:textbox"
-#| msgid "Username:"
-msgid "User"
-msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
-
-#: printqueue/PrintQueueModel.cpp:46
-msgid "Created"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:47 printqueue/PrintQueueModel.cpp:509
-msgid "Completed"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:48
-msgid "Pages"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:49
-msgid "Processed"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:50
-msgid "Size"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:51
-msgid "Status Message"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:52
-#, fuzzy
-#| msgid "AddPrinter"
-msgid "Printer"
-msgstr "បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព"
-
-#: printqueue/PrintQueueModel.cpp:438 printqueue/PrintQueueUi.cpp:531
-#, kde-format
-msgid "Failed to move '%1' to '%2'"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:441 printqueue/PrintQueueUi.cpp:537
-#, fuzzy
-#| msgctxt "@title:window"
-#| msgid "Failed"
-msgid "Failed"
-msgstr "បាន​បរាជ័យ"
-
-#: printqueue/PrintQueueModel.cpp:503
-msgid "Pending"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:504
-msgid "On hold"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:506
-msgid "Stopped"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:507
-msgid "Canceled"
-msgstr ""
-
-#: printqueue/PrintQueueModel.cpp:508
-msgid "Aborted"
-msgstr ""
-
 #: printqueue/PrintQueueUi.cpp:78
 #, fuzzy
 #| msgctxt "@item"
@@ -1287,14 +1343,14 @@ msgstr ""
 msgid "All printers"
 msgstr "ម៉ាស៊ីន​បោះពុម្ព​មូលដ្ឋាន"
 
-#: printqueue/PrintQueueUi.cpp:235
+#: printqueue/PrintQueueUi.cpp:237
 #, fuzzy
 #| msgid "AddPrinter"
 msgid "Printer ready"
 msgstr "បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព"
 
 #. i18n: ectx: property (text), widget (QPushButton, pausePrinterPB)
-#: printqueue/PrintQueueUi.cpp:236 printqueue/PrintQueueUi.cpp:247
+#: printqueue/PrintQueueUi.cpp:238 printqueue/PrintQueueUi.cpp:249
 #: printqueue/PrintQueueUi.ui:109
 #, fuzzy
 #| msgctxt "@title:window"
@@ -1302,65 +1358,65 @@ msgstr "បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព"
 msgid "Pause Printer"
 msgstr "ម៉ាស៊ីន​បោះពុម្ព"
 
-#: printqueue/PrintQueueUi.cpp:243
+#: printqueue/PrintQueueUi.cpp:245
 msgid "Printing..."
 msgstr ""
 
-#: printqueue/PrintQueueUi.cpp:245
+#: printqueue/PrintQueueUi.cpp:247
 #, kde-format
 msgid "Printing '%1'"
 msgstr ""
 
-#: printqueue/PrintQueueUi.cpp:253
+#: printqueue/PrintQueueUi.cpp:255
 msgid "Printer paused"
 msgstr ""
 
-#: printqueue/PrintQueueUi.cpp:254
+#: printqueue/PrintQueueUi.cpp:256
 msgid "Resume Printer"
 msgstr ""
 
-#: printqueue/PrintQueueUi.cpp:269
+#: printqueue/PrintQueueUi.cpp:271
 msgid "Printer state unknown"
 msgstr ""
 
-#: printqueue/PrintQueueUi.cpp:303
+#: printqueue/PrintQueueUi.cpp:305
 msgid "Move to"
 msgstr ""
 
-#: printqueue/PrintQueueUi.cpp:430
+#: printqueue/PrintQueueUi.cpp:432
 #, kde-format
 msgid "All Printers (%1 Job)"
 msgid_plural "All Printers (%1 Jobs)"
 msgstr[0] ""
 
-#: printqueue/PrintQueueUi.cpp:432
+#: printqueue/PrintQueueUi.cpp:434
 #, kde-format
 msgid "%2 (%1 Job)"
 msgid_plural "%2 (%1 Jobs)"
 msgstr[0] ""
 
-#: printqueue/PrintQueueUi.cpp:435
+#: printqueue/PrintQueueUi.cpp:437
 #, fuzzy
 #| msgctxt "@item"
 #| msgid "Local Printers"
 msgid "All Printers"
 msgstr "ម៉ាស៊ីន​បោះពុម្ព​មូលដ្ឋាន"
 
-#: printqueue/PrintQueueUi.cpp:522
+#: printqueue/PrintQueueUi.cpp:523
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to add class"
 msgid "Failed to cancel '%1'"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បន្ថែម class"
 
-#: printqueue/PrintQueueUi.cpp:525
+#: printqueue/PrintQueueUi.cpp:526
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to add class"
 msgid "Failed to hold '%1'"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បន្ថែម class"
 
-#: printqueue/PrintQueueUi.cpp:528
+#: printqueue/PrintQueueUi.cpp:529
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to add class"
