@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatolibs\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-02-11 02:40+0100\n"
+"POT-Creation-Date: 2012-12-21 01:54+0100\n"
 "PO-Revision-Date: 2010-03-09 09:17+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -157,6 +157,7 @@ msgstr "មិន​ត្រូវ​នឹង​ទំហំ​ការងា
 msgid "Scheduling error"
 msgstr "កំហុស​កំណត់​ពេល"
 
+#. i18n: ectx: property (text), item, widget (KComboBox, risk)
 #: kernel/kptnode.cpp:139 kernel/kptnode.cpp:1631 kernel/kpttask.cpp:3712
 #: models/kptnodeitemmodel.cpp:401 models/kptnodeitemmodel.cpp:417
 #: models/kptnodeitemmodel.cpp:427 models/kptnodeitemmodel.cpp:625
@@ -169,12 +170,14 @@ msgstr "កំហុស​កំណត់​ពេល"
 #: models/kpttreecombobox.cpp:124 ui/kptpertresult.cpp:139
 #: ui/kptpertresult.cpp:494 ui/kptresourcedialog.cpp:304
 #: ui/kptresourcedialog.cpp:330 ui/kpttaskcostpanel.cpp:50
-#: ui/kpttaskgeneralpanel.cpp:80 ui/reports/reportview.cpp:1676
+#: ui/kpttaskgeneralpanel.cpp:80 ui/kpttaskgeneralpanelbase.ui:344
+#: ui/reports/reportview.cpp:1676
 msgid "None"
 msgstr "គ្មាន​"
 
+#. i18n: ectx: property (title), widget (QGroupBox, projectGroupBox)
 #: kernel/kptnode.cpp:140 models/kptpertcpmmodel.cpp:423
-#: models/kptresourceappointmentsmodel.cpp:1220
+#: models/kptresourceappointmentsmodel.cpp:1220 ui/kptscheduleeditor.ui:19
 msgid "Project"
 msgstr "គម្រោង"
 
@@ -182,7 +185,8 @@ msgstr "គម្រោង"
 msgid "Sub-Project"
 msgstr "គម្រោង​រង​"
 
-#: kernel/kptnode.cpp:142
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: kernel/kptnode.cpp:142 ui/kptscheduleeditor.ui:167
 msgid "Task"
 msgstr "ភារកិច្ច"
 
@@ -206,11 +210,13 @@ msgstr "ឆាប់​ៗ​តាម​ដែល​អាច​ទៅ​បា
 msgid "As Late As Possible"
 msgstr "យូរ​​តាម​ដែល​អាច​ទៅ​បាន​"
 
-#: kernel/kptnode.cpp:713
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: kernel/kptnode.cpp:713 ui/kpttaskgeneralpanelbase.ui:192
 msgid "Must Start On"
 msgstr "ត្រូវ​ចាប់​ផ្តើម​នៅ​​"
 
-#: kernel/kptnode.cpp:714
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: kernel/kptnode.cpp:714 ui/kpttaskgeneralpanelbase.ui:197
 msgid "Must Finish On"
 msgstr "ត្រូវ​បញ្ចប់​នៅ​"
 
@@ -222,23 +228,30 @@ msgstr "មិន​ចាប់​ផ្តើម​មុន​"
 msgid "Finish Not Later"
 msgstr "មិន​បញ្ចប់​ក្រោយ​"
 
-#: kernel/kptnode.cpp:717
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: kernel/kptnode.cpp:717 ui/kpttaskgeneralpanelbase.ui:212
 msgid "Fixed Interval"
 msgstr "ចន្លោះពេល​ថេរ​​"
 
-#: kernel/kptnode.cpp:1598
+#. i18n: ectx: property (title), widget (QGroupBox, ui_effort)
+#. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
+#: kernel/kptnode.cpp:1598 ui/kptperformancestatusviewsettingspanel.ui:142
+#: ui/kpttaskgeneralpanelbase.ui:281
 msgid "Effort"
 msgstr "ទំហំ​ការងារ​"
 
-#: kernel/kptnode.cpp:1599
+#. i18n: ectx: property (text), item, widget (KComboBox, estimateType)
+#: kernel/kptnode.cpp:1599 ui/kpttaskgeneralpanelbase.ui:286
 msgid "Duration"
 msgstr "ថិរវេលា​​"
 
-#: kernel/kptnode.cpp:1632
+#. i18n: ectx: property (text), item, widget (KComboBox, risk)
+#: kernel/kptnode.cpp:1632 ui/kpttaskgeneralpanelbase.ui:349
 msgid "Low"
 msgstr "ទាប​​"
 
-#: kernel/kptnode.cpp:1633
+#. i18n: ectx: property (text), item, widget (KComboBox, risk)
+#: kernel/kptnode.cpp:1633 ui/kpttaskgeneralpanelbase.ui:354
 msgid "High"
 msgstr "ខ្ពស់​​​"
 
@@ -367,23 +380,30 @@ msgstr "គណនា  %1"
 msgid "Plan"
 msgstr "គម្រោង​"
 
-#: kernel/kptrelation.cpp:87
+#. i18n: ectx: property (text), widget (QRadioButton, bFinishStart)
+#: kernel/kptrelation.cpp:87 ui/relationpanel.ui:114
 msgid "Finish-Start"
 msgstr "បញ្ចប់​  ចាប់​ផ្តើម​"
 
-#: kernel/kptrelation.cpp:88
+#. i18n: ectx: property (text), widget (QRadioButton, bFinishFinish)
+#: kernel/kptrelation.cpp:88 ui/relationpanel.ui:121
 msgid "Finish-Finish"
 msgstr "បញ្ចប់  បញ្ចប់​"
 
-#: kernel/kptrelation.cpp:89
+#. i18n: ectx: property (text), widget (QRadioButton, bStartStart)
+#: kernel/kptrelation.cpp:89 ui/relationpanel.ui:128
 msgid "Start-Start"
 msgstr "ចាប់​ផ្តើម  ចាប់​ផ្តើម​"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
 #: kernel/kptresource.cpp:124 ui/kptresourceassignmentview.cpp:82
+#: ui/resourcedialogbase.ui:169
 msgid "Work"
 msgstr "ការងារ​"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
 #: kernel/kptresource.cpp:125 ui/kptresourceassignmentview.cpp:86
+#: ui/resourcedialogbase.ui:174
 msgid "Material"
 msgstr "សម្ភារៈ​"
 
@@ -654,13 +674,14 @@ msgctxt "1=account name"
 msgid "%1 (Default account)"
 msgstr "%1 (គណនី​លំនាំ​ដើម)​"
 
+#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptaccountsmodel.cpp:129 models/kptaccountsmodel.cpp:1031
 #: models/kptdocumentmodel.cpp:200 models/kptresourceallocationmodel.cpp:335
 #: models/kptresourceappointmentsmodel.cpp:907
 #: models/kptresourceappointmentsmodel.cpp:922
 #: models/kptresourceappointmentsmodel.cpp:1483
 #: models/kptresourcemodel.cpp:448 models/kptschedulemodel.cpp:892
-#: models/kptschedulemodel.cpp:1172
+#: models/kptschedulemodel.cpp:1172 ui/kptresourceassignmentview.ui:27
 msgid "Name"
 msgstr "ឈ្មោះ​​"
 
@@ -1490,10 +1511,11 @@ msgstr "យក​ឯកសារ​ចេញ​"
 msgid "Url"
 msgstr "Url"
 
+#. i18n: ectx: property (text), widget (QTreeWidget, m_resList)
 #: models/kptdocumentmodel.cpp:201 models/kptrelationmodel.cpp:149
 #: models/kptresourceallocationmodel.cpp:336
 #: models/kptresourceappointmentsmodel.cpp:1484
-#: models/kptresourcemodel.cpp:449
+#: models/kptresourcemodel.cpp:449 ui/kptresourceassignmentview.ui:32
 msgid "Type"
 msgstr "ប្រភេទ​"
 
@@ -1951,8 +1973,10 @@ msgstr "បាន​បញ្ចប់​ក្រោយ​"
 msgid "Finished early"
 msgstr "បាន​បញ្ចប់​មុន​​"
 
+#. i18n: ectx: property (text), widget (QCheckBox, finished)
 #: models/kptnodeitemmodel.cpp:1315 models/kpttaskstatusmodel.cpp:60
-#: ui/kptresourceassignmentview.cpp:257 ui/kptresourceassignmentview.cpp:335
+#: ui/kptmilestoneprogresspanelbase.ui:23 ui/kptresourceassignmentview.cpp:257
+#: ui/kptresourceassignmentview.cpp:335
 msgid "Finished"
 msgstr "បាន​បញ្ចប់​"
 
@@ -1962,7 +1986,9 @@ msgstr "បាន​បញ្ចប់​"
 msgid "Running late"
 msgstr "ដំណើរ​ការ​"
 
+#. i18n: ectx: property (title), widget (QGroupBox, runningGroup)
 #: models/kptnodeitemmodel.cpp:1321 models/kpttaskstatusmodel.cpp:56
+#: ui/kpttaskcostpanelbase.ui:24
 msgid "Running"
 msgstr "ដំណើរ​ការ​"
 
@@ -3741,6 +3767,93 @@ msgstr "ទូទៅ​"
 msgid "View Settings"
 msgstr "ការកំណត់​ទិដ្ឋភាព​"
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kptaccountsviewconfigurepanelbase.ui:26
+msgid "Show:"
+msgstr "បង្ហាញ ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: ui/kptaccountsviewconfigurepanelbase.ui:33
+msgid "Periodicity:"
+msgstr "រយៈ​ពេល ៖​"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_periodBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:44
+msgid "Day"
+msgstr "ថ្ងៃ​"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_periodBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:49
+msgid "Week"
+msgstr "សប្តាហ៍​"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_periodBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:54
+msgid "Month"
+msgstr "ខែ​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_cumulative)
+#: ui/kptaccountsviewconfigurepanelbase.ui:62
+#, fuzzy
+msgid "Cumulative"
+msgstr "ដែល​ត្រួត​គ្នា"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:70
+msgid "Actual cost"
+msgstr "ថ្លៃ​ចំណាយ​ជាក់ស្ដែង​"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:75
+msgid "Planned cost"
+msgstr "ថ្លៃ​ចំណាយ​​ដែល​គ្រោង​"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:80
+msgid "Actual and planned"
+msgstr "ជាក់​ស្តែង និង​គ្រោង​"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, ui_showBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:85
+msgid "Deviation"
+msgstr "គម្លាត​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/kptaccountsviewconfigurepanelbase.ui:101
+msgid "Start date"
+msgstr "កាលបរិច្ឆេទ​ចាប់ផ្ដើម​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_projectstartBtn)
+#: ui/kptaccountsviewconfigurepanelbase.ui:107
+msgid "Project start"
+msgstr "ចាប់ផ្តើម​គម្រោង"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_startdateBtn)
+#. i18n: ectx: property (text), widget (QRadioButton, ui_enddateBtn)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_headerDate)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_footerDate)
+#: ui/kptaccountsviewconfigurepanelbase.ui:114
+#: ui/kptaccountsviewconfigurepanelbase.ui:144
+#: ui/kptprintingheaderfooter.ui:46 ui/kptprintingheaderfooter.ui:86
+#: ui/kptusedefforteditor.cpp:387
+msgid "Date"
+msgstr "កាល​បរិច្ឆេទ​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/kptaccountsviewconfigurepanelbase.ui:131
+msgid "End date"
+msgstr "កាល​បរិច្ឆេទ​បញ្ចប់​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_currentdateBtn)
+#: ui/kptaccountsviewconfigurepanelbase.ui:137
+msgid "Current date"
+msgstr "កាលបរិច្ឆេទ​បច្ចុប្បន្ន​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_projectendBtn)
+#: ui/kptaccountsviewconfigurepanelbase.ui:158
+msgid "Project end"
+msgstr "បញ្ចប់​គម្រោង​"
+
 #: ui/kptcalendareditor.cpp:201 ui/kptcalendareditor.cpp:639
 msgid "Work..."
 msgstr "ការងារ...​"
@@ -3803,6 +3916,49 @@ msgstr "%1 ៖ កំណត់​ទៅ​ជា​ថ្ងៃ​មិន​�
 #, kde-format
 msgid "Set %1 to Undefined"
 msgstr "កំណត់​ %1 ​ទៅ​ជា​មិន​កំណត់​"
+
+#. i18n: ectx: property (text), widget (QLabel, label_1)
+#: ui/kptcpmwidget.ui:36 ui/kptpertresult.ui:45
+msgid "Project Schedule:"
+msgstr "កាលវិភាគ​របស់​គម្រោង ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, scheduleName)
+#. i18n: ectx: property (text), widget (QLabel, totalFloat)
+#. i18n: ectx: property (text), widget (QLabel, labelResultCriticalPath)
+#. i18n: ectx: property (text), widget (QLabel, labelResultProjectFloat)
+#. i18n: ectx: property (text), widget (QToolButton, btnAdd)
+#. i18n: ectx: property (text), widget (QToolButton, btnRemove)
+#. i18n: ectx: property (text), widget (QToolButton, btnMoveUp)
+#. i18n: ectx: property (text), widget (QToolButton, btnMoveDown)
+#: ui/kptcpmwidget.ui:58 ui/kptpertresult.ui:70 ui/kptpertresult.ui:133
+#: ui/kptscheduleeditor.ui:84 ui/kptscheduleeditor.ui:117
+#: ui/reports/reportgroupsectionswidget.ui:25
+#: ui/reports/reportgroupsectionswidget.ui:32
+#: ui/reports/reportgroupsectionswidget.ui:39
+#: ui/reports/reportgroupsectionswidget.ui:46
+msgid "..."
+msgstr "..."
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kptcpmwidget.ui:92
+#, fuzzy
+msgid "Probability of finishing before"
+msgstr "ប្រូបាប៊ីលីតេ​​មុន​ពេល​ដែល​បញ្ចប់"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/kptcpmwidget.ui:112
+msgid "is"
+msgstr "គឺ​"
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, probability)
+#. i18n: ectx: property (suffix), widget (QSpinBox, optimisticValue)
+#. i18n: ectx: property (suffix), widget (QSpinBox, pessimisticValue)
+#. i18n: ectx: property (suffix), widget (QSpinBox, units)
+#: ui/kptcpmwidget.ui:119 ui/kpttaskgeneralpanelbase.ui:375
+#: ui/kpttaskgeneralpanelbase.ui:404 ui/resourcedialogbase.ui:233
+#, no-c-format
+msgid "%"
+msgstr "%"
 
 #: ui/kptdependencyeditor.cpp:2309 ui/kpttaskeditor.cpp:698
 #: ui/kpttaskeditor.cpp:703
@@ -3908,6 +4064,89 @@ msgctxt "(qtundo-format)"
 msgid "Add document"
 msgstr "បន្ថែម​ឯកសារ​"
 
+#. i18n: ectx: property (text), widget (QPushButton, pbAdd)
+#: ui/kptdocumentspanel.ui:31
+msgid "Add..."
+msgstr "បន្ថែម​...​"
+
+#. i18n: ectx: property (text), widget (QPushButton, pbChange)
+#: ui/kptdocumentspanel.ui:38
+msgid "Change..."
+msgstr "ផ្លាស់ប្ដូរ..."
+
+#. i18n: ectx: property (text), widget (QPushButton, pbRemove)
+#. i18n: ectx: property (text), widget (QPushButton, bRemoveInterval)
+#. i18n: ectx: property (text), widget (QPushButton, removeBtn)
+#: ui/kptdocumentspanel.ui:45 ui/kptintervaleditbase.ui:77
+#: ui/kptwbsdefinitionpanelbase.ui:180
+msgid "Remove"
+msgstr "យក​ចេញ​"
+
+#. i18n: ectx: property (text), widget (QPushButton, pbView)
+#: ui/kptdocumentspanel.ui:52
+msgid "Open"
+msgstr "បើក​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/kptganttchartdisplayoptions.ui:23
+msgid "Additional text information"
+msgstr "ព័ត៌មាន​អំពី​អត្ថបទ​ដែល​បន្ថែម​​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showTaskName)
+#: ui/kptganttchartdisplayoptions.ui:29
+msgid "Task name"
+msgstr "ឈ្មោះ​ភារកិច្ច​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showResourceNames)
+#: ui/kptganttchartdisplayoptions.ui:36
+msgid "Resource names"
+msgstr "ឈ្មោះ​ធន​ធាន"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/kptganttchartdisplayoptions.ui:46
+msgid "Additional graphics information"
+msgstr "ព័ត៌មាន​ក្រាហ្វិក​ដែល​បន្ថែម​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showDependencies)
+#: ui/kptganttchartdisplayoptions.ui:55
+msgid "Task dependencies"
+msgstr "បង្ហាញ​ភាព​អាស្រ័យ​របស់​ភារកិច្ច​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showCompletion)
+#: ui/kptganttchartdisplayoptions.ui:62
+msgid "Task completion"
+msgstr "ការ​បញ្ចប់​ភារកិច្ច​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showTimeConstraint)
+#: ui/kptganttchartdisplayoptions.ui:69
+msgid "Time constraints"
+msgstr "កម្រិត​​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showSchedulingError)
+#: ui/kptganttchartdisplayoptions.ui:89
+msgid "Scheduling errors"
+msgstr "កំហុស​កំណត់ពេល​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showPositiveFloat)
+#: ui/kptganttchartdisplayoptions.ui:96
+msgid "Positive float"
+msgstr "លំហូរ​វិជ្ជមាន​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showNegativeFloat)
+#: ui/kptganttchartdisplayoptions.ui:103
+msgid "Negative float"
+msgstr "លំហូរ​អវិជ្ជមាន​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalPath)
+#: ui/kptganttchartdisplayoptions.ui:110
+msgid "Critical path"
+msgstr "ផ្លូវ​សំខាន់​បំផុត​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_showCriticalTasks)
+#: ui/kptganttchartdisplayoptions.ui:117
+msgid "Critical tasks"
+msgstr "ភារកិច្ច​សំខាន់​បំផុត"
+
 #: ui/kptganttitemdelegate.cpp:77
 #, fuzzy, kde-format
 #| msgctxt "@infot:tooltip"
@@ -3965,6 +4204,21 @@ msgctxt "@info:tooltip"
 msgid "Name: %1<nl/>Planned: %2 - %3"
 msgstr "ឈ្មោះ​ ៖ %1<nl/>​បាន​គ្រោង ៖ %2 - %3"
 
+#. i18n: ectx: property (text), widget (QCheckBox, ui_printRowLabels)
+#: ui/kptganttprintingoptions.ui:16
+msgid "Print row labels"
+msgstr "បោះ​ពុម្ព​ស្លាក​ជួរដេក​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_singlePage)
+#: ui/kptganttprintingoptions.ui:35
+msgid "Print chart on a single page"
+msgstr "បោះ​ពុម្ព​គំនូស​តាង​លើ​ទំព័រ​តែ​មួយ​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_multiplePages)
+#: ui/kptganttprintingoptions.ui:45
+msgid "Divide chart on multiple pages"
+msgstr "ចែក​គំនូស​តាង​លើ​ទំព័រ​ជាច្រើន​"
+
 #: ui/kptganttview.cpp:135 ui/kpttaskstatusview.cpp:1363
 #: ui/kpttaskstatusview.cpp:1378
 msgid "Chart"
@@ -4003,6 +4257,52 @@ msgstr "កែ​សម្រួល​ចន្លោះ​ពេល​ការ
 msgctxt "(qtundo-format)"
 msgid "Modify Work Interval"
 msgstr "កែប្រែ​ចន្លោះ​ពេល​ការងារ​"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, intervalList)
+#: ui/kptintervaleditbase.ui:21
+msgid "1"
+msgstr "១​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: ui/kptintervaleditbase.ui:31
+msgctxt "Start time"
+msgid "From:"
+msgstr "ពី ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: ui/kptintervaleditbase.ui:47
+msgid "Length"
+msgstr "ប្រវែង​"
+
+#. i18n: ectx: property (text), widget (QPushButton, bAddInterval)
+#: ui/kptintervaleditbase.ui:70
+msgid "Add"
+msgstr "បន្ថែម​"
+
+#. i18n: ectx: property (text), widget (QPushButton, bClear)
+#: ui/kptintervaleditbase.ui:97
+msgid "Clear"
+msgstr "ជម្រះ​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, stretchLastSection)
+#: ui/kptitemviewsettings.ui:28
+msgid "Stretch last section"
+msgstr "ទាញ​ផ្នែក​ចុង​​ក្រោយ​ឲ្យ​វែង​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/kptitemviewsettings.ui:35
+msgid "Select columns to be shown:"
+msgstr "ជ្រើស​ជួរ​ឈរ​ដែល​ត្រូវ​បង្ហាញ ៖​"
+
+#. i18n: ectx: property (availableLabel), widget (KActionSelector, selector)
+#: ui/kptitemviewsettings.ui:56
+msgid "&Hidden columns:"
+msgstr "ជួរ​ឈរ​​ដែល​លាក់ ៖"
+
+#. i18n: ectx: property (selectedLabel), widget (KActionSelector, selector)
+#: ui/kptitemviewsettings.ui:59
+msgid "&Visible columns:"
+msgstr "ជួរ​ឈរ​មើល​ឃើញ ៖​"
 
 #: ui/kptitemviewsettup.cpp:151
 msgid "Tree View"
@@ -4062,6 +4362,59 @@ msgstr ""
 " កូដ​ WBS ត្រូវ​បាន​បង្កើត​ដោយ​ស្វ័យ​ប្រវត្តិ ។\n"
 "អ្នក​អាច​កំណត់​លំនាំ​កូដ​ WBS ​ដោយ​ប្រើ​ កំណត់​ពាក្យ​បញ្ជា​លំនាំ​ WBS ​នៅ​ក្នុង​ម៉ឺនុយ​ ឧបករណ៍ ។"
 
+#. i18n: ectx: property (text), widget (QLabel, wbslabel)
+#: ui/kptmainprojectpanelbase.ui:26 ui/kptsummarytaskgeneralpanelbase.ui:32
+#: ui/kpttaskgeneralpanelbase.ui:26
+msgid "WBS:"
+msgstr "WBS​ ៖​"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel1)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, namefield)
+#: ui/kptmainprojectpanelbase.ui:58 ui/kptmainprojectpanelbase.ui:80
+msgid "The project name."
+msgstr "ឈ្មោះ​​គម្រោង ។​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: ui/kptmainprojectpanelbase.ui:61
+msgid "N&ame:"
+msgstr "ឈ្មោះ ៖​"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel2)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, leaderfield)
+#: ui/kptmainprojectpanelbase.ui:87 ui/kptmainprojectpanelbase.ui:112
+msgid "The project leader."
+msgstr "ប្រធាន​គម្រោង ។​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: ui/kptmainprojectpanelbase.ui:90 ui/kptviewbase.cpp:485
+msgid "Manager:"
+msgstr "កម្មវិធី​គ្រប់​គ្រង ៖​"
+
+#. i18n: ectx: property (whatsThis), widget (QPushButton, chooseLeader)
+#: ui/kptmainprojectpanelbase.ui:119
+msgid "Choose a project leader from your address book."
+msgstr "ជ្រើស​ប្រធាន​គម្រោង​ពី​សៀវ​ភៅ​អាសយ​ដ្ឋាន​របស់​អ្នក ។​"
+
+#. i18n: ectx: property (text), widget (QPushButton, chooseLeader)
+#: ui/kptmainprojectpanelbase.ui:122
+msgid "&Choose..."
+msgstr "ជ្រើស...​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, schedulingGroup)
+#: ui/kptmainprojectpanelbase.ui:131
+msgid "Scheduling Range"
+msgstr "ជួរ​​​កំណត់​ពេល​"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kptmainprojectpanelbase.ui:163
+msgid "Earliest start:"
+msgstr "ចាប់​ផ្តើម​មុន​គេ ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/kptmainprojectpanelbase.ui:170
+msgid "Latest finish:"
+msgstr "បញ្ចប់​ក្រោយ​គេ ៖​"
+
 #: ui/kptmilestoneprogressdialog.cpp:39
 msgid "Milestone Progress"
 msgstr "វឌ្ឍនភាព​ដំណាក់​កាល​"
@@ -4070,6 +4423,97 @@ msgstr "វឌ្ឍនភាព​ដំណាក់​កាល​"
 msgid "Modify milestone completion"
 msgstr "កែប្រែ​ការ​បញ្ចប់​ដំណាក់​កាល​"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/kptperformancestatusviewsettingspanel.ui:17
+msgid "Chart type"
+msgstr "ប្រភេទ​គំនូស​តាង"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_linechart)
+#: ui/kptperformancestatusviewsettingspanel.ui:23
+msgid "Line chart"
+msgstr "គំនូស​តាង​បន្ទាត់​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_barchart)
+#: ui/kptperformancestatusviewsettingspanel.ui:33
+msgid "Bar chart"
+msgstr "គំនូស​តាង​បង្គោល​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_table)
+#: ui/kptperformancestatusviewsettingspanel.ui:40
+msgid "Table"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_showbasevalues)
+#: ui/kptperformancestatusviewsettingspanel.ui:59
+#, fuzzy
+#| msgid "Baseline"
+msgid "Base values"
+msgstr "បន្ទាត់​គោល​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_showindeces)
+#: ui/kptperformancestatusviewsettingspanel.ui:69
+msgid "Indices"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_cost)
+#. i18n: ectx: property (title), widget (QGroupBox, ui_costgroup)
+#: ui/kptperformancestatusviewsettingspanel.ui:91 ui/resourcedialogbase.ui:408
+msgid "Cost"
+msgstr "ថ្លៃ​ចំណាយ​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwsCost)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwsEffort)
+#: ui/kptperformancestatusviewsettingspanel.ui:106
+#: ui/kptperformancestatusviewsettingspanel.ui:154
+msgid "Show BCWS plot"
+msgstr "បង្ហាញ​គ្រោង​ BCWS​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwpCost)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_bcwpEffort)
+#: ui/kptperformancestatusviewsettingspanel.ui:116
+#: ui/kptperformancestatusviewsettingspanel.ui:164
+msgid "Show BCWP plot"
+msgstr "បង្ហាញ​គ្រោង​ BCWP​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_acwpCost)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_acwpEffort)
+#: ui/kptperformancestatusviewsettingspanel.ui:126
+#: ui/kptperformancestatusviewsettingspanel.ui:174
+msgid "Show ACWP plot"
+msgstr "បង្ហាញ​គ្រោង​ ACWP​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_spicost)
+#: ui/kptperformancestatusviewsettingspanel.ui:194
+#, fuzzy
+#| msgctxt "Cost based Budgeted Cost of Work Scheduled"
+#| msgid "BCWS Cost"
+msgid "SPI Cost"
+msgstr "BCWS (ថ្លៃ​ចំណាយ)​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_spieffort)
+#: ui/kptperformancestatusviewsettingspanel.ui:204
+#, fuzzy
+#| msgctxt "Effort based Budgeted Cost of Work Scheduled"
+#| msgid "BCWS Effort"
+msgid "SPI Effort"
+msgstr "BCWS (ទំហំ​ការងារ)​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_cpieffort)
+#: ui/kptperformancestatusviewsettingspanel.ui:211
+#, fuzzy
+#| msgctxt "Effort based Budgeted Cost of Work Performed"
+#| msgid "BCWP Effort"
+msgid "CPI Effort"
+msgstr "BCWP (ទំហំ​ការងារ​)​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_cpicost)
+#: ui/kptperformancestatusviewsettingspanel.ui:218
+#, fuzzy
+#| msgctxt "Cost based Budgeted Cost of Work Performed"
+#| msgid "BCWP Cost"
+msgid "CPI Cost"
+msgstr "BCWP (ថ្លៃ​ចំណាយ)​"
+
 #: ui/kptperteditor.cpp:163
 #, fuzzy
 #| msgid "Remove task dependency"
@@ -4077,9 +4521,74 @@ msgctxt "(qtundo-format)"
 msgid "Remove task dependency"
 msgstr "យក​ភាព​អាស្រ័យ​របស់​ភារកិច្ច​ចេញ​"
 
+#. i18n: ectx: property (text), widget (QTreeWidget, taskList)
+#. i18n: ectx: property (text), widget (QTreeWidget, m_taskList)
+#: ui/kptperteditor.ui:37 ui/kptresourceassignmentview.ui:39
+#: ui/reports/reportdata.cpp:349 ui/reports/reportview.cpp:980
+msgid "Tasks"
+msgstr "ភារកិច្ច​"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, available)
+#: ui/kptperteditor.ui:46
+msgid "Available tasks"
+msgstr "ភារកិច្ច​ដែល​មាន​"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, addBtn)
+#: ui/kptperteditor.ui:81
+msgid "Add required task"
+msgstr "បន្ថែម​ភារកិច្ច​ដែល​ទាម​ទារ​"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, removeBtn)
+#: ui/kptperteditor.ui:97
+msgid "Remove required task"
+msgstr "យក​ភារកិច្ច​ដែល​ទាម​ទារ​ចេញ​"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: ui/kptpertresult.ui:114
+msgid "Total Float:"
+msgstr "លំហូរ​សរុប ៖​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_header)
+#: ui/kptprintingheaderfooter.ui:16
+msgid "Header"
+msgstr "បឋម​កថា​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_headerProject)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_footerProject)
+#: ui/kptprintingheaderfooter.ui:25 ui/kptprintingheaderfooter.ui:65
+msgid "Project name"
+msgstr "ឈ្មោះ​គម្រោង​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_headerPage)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_footerPage)
+#: ui/kptprintingheaderfooter.ui:32 ui/kptprintingheaderfooter.ui:72
+msgid "Page number"
+msgstr "លេខ​ទំព័រ​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_headerManager)
+#. i18n: ectx: property (text), widget (QCheckBox, ui_footerManager)
+#: ui/kptprintingheaderfooter.ui:39 ui/kptprintingheaderfooter.ui:79
+msgid "Project manager"
+msgstr "អ្នក​គ្រប់​គ្រង​គម្រោង​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_footer)
+#: ui/kptprintingheaderfooter.ui:56
+msgid "Footer"
+msgstr "បាតកថា​"
+
 #: ui/kptrecalculatedialog.cpp:47
 msgid "Re-calculate Schedule"
 msgstr "គណនា​ការ​កំណត់​ពេល​ឡើង​វិញ​​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, btnCurrent)
+#: ui/kptrecalculatedialog.ui:26
+msgid "Re-calculate from current date/time"
+msgstr "គណនា​ឡើងវិញ​ពី​កាលបរិច្ឆេទ/ពេល​វេលា​បច្ចុប្បន្ន​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, btnFrom)
+#: ui/kptrecalculatedialog.ui:33
+msgid "Re-calculate from:"
+msgstr "គណនា​ឡើង​វិញ​ពី​ ៖​"
 
 #: ui/kptrelationdialog.cpp:38
 msgctxt "@label:spinbox Time lag"
@@ -4129,6 +4638,18 @@ msgctxt "(qtundo-format)"
 msgid "Modify task dependency"
 msgstr "កែប្រែ​ភាព​អាស្រ័យ​របស់​ភារកិច្ច​​"
 
+#. i18n: ectx: property (text), widget (QCheckBox, ui_internalAppointments)
+#: ui/kptresourceappointmentsdisplayoptions.ui:16
+#, fuzzy
+msgid "Show internal appointments"
+msgstr "បង្ហាញ​ការណាត់​ជួប​ខាង​ក្នុង"
+
+#. i18n: ectx: property (text), widget (QCheckBox, ui_externalAppointments)
+#: ui/kptresourceappointmentsdisplayoptions.ui:23
+#, fuzzy
+msgid "Show external appointments"
+msgstr "បង្ហាញ​ការ​ណាត់​ជួប​ខាង​ក្រៅ"
+
 #: ui/kptresourceappointmentsview.cpp:95
 msgid "Resource Assignments View Settings"
 msgstr "ការកំណត់​ទិដ្ឋភាព​ផ្ដល់​ធន​ធាន​"
@@ -4140,6 +4661,11 @@ msgstr "គ្មាន​ភារកិច្ច​​ដែល​បាន​
 #: ui/kptresourceassignmentview.cpp:322
 msgid "No resource attributed"
 msgstr "គ្មាន​ធនធាន​ដែល​បាន​កំណត់​ឡើយ​​"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, m_taskList)
+#: ui/kptresourceassignmentview.ui:44
+msgid "Advance"
+msgstr "ទៅ​មុខ​"
 
 #: ui/kptresourcedialog.cpp:74
 msgctxt "title:column"
@@ -4233,6 +4759,56 @@ msgstr "លទ្ធផល​"
 msgid "Scheduling Log"
 msgstr "កំណត់​ហេតុ​កំណត់​ពេល​​"
 
+#. i18n: ectx: property (text), widget (QLabel, labelCriticalPath)
+#: ui/kptscheduleeditor.ui:77
+msgid "Critical Path (Task Id) :"
+msgstr "ផ្លូវ​សំខាន់​បំផុត​ (លេខ​សម្គាល់​ភារកិច្ច) ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, labelProjectFloat)
+#: ui/kptscheduleeditor.ui:110
+msgid "Project Float :"
+msgstr "លំហូរ​របស់​គម្រោង ៖​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, taskGroupBoxDetail)
+#: ui/kptscheduleeditor.ui:131
+msgid "Task details "
+msgstr "សេចក្តី​លម្អិត​អំពី​ភារកិច្ច​"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:162
+msgid "Id"
+msgstr "លេខ​សម្គាល់​"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:172
+msgid "Early start date"
+msgstr "កាលបរិច្ឆេទ​ចាប់ផ្ដើម​មុន​"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:177
+msgid "Early finish date"
+msgstr "កាលបរិច្ឆេទ​បញ្ចប់​មុន​"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:182
+msgid "Late start date"
+msgstr "កាលបរិច្ឆេទ​ចាប់​ផ្តើម​ក្រោយ​"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:187
+msgid "Late finish date"
+msgstr "កាលបរិច្ឆេទ​បញ្ចប់​ក្រោយ​​"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:192
+msgid "Float"
+msgstr "លំហូរ​"
+
+#. i18n: ectx: property (text), widget (QTreeWidget, treeWidgetTaskResult)
+#: ui/kptscheduleeditor.ui:197
+msgid "Free Margin"
+msgstr "រឹម​សេរី​"
+
 #: ui/kptstandardworktimedialog.cpp:89
 msgid "Estimate Conversions"
 msgstr "ការ​បម្លែង​ប៉ាន់​ស្មាន​"
@@ -4259,12 +4835,94 @@ msgctxt "(qtundo-format)"
 msgid "Modify task"
 msgstr "កែប្រែ​ភារកិច្ច​"
 
+#. i18n: ectx: property (toolTip), widget (QLabel, wbslabel)
+#: ui/kptsummarytaskgeneralpanelbase.ui:29 ui/kpttaskgeneralpanelbase.ui:23
+msgid "Work Breakdown Structure"
+msgstr "រចនា​សម្ព័ន្ធ​ចែក​រំលែក​ការងារ​"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, namelabel)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, namefield)
+#: ui/kptsummarytaskgeneralpanelbase.ui:42
+#: ui/kptsummarytaskgeneralpanelbase.ui:67
+#: ui/kpttaskdescriptionpanelbase.ui:24 ui/kpttaskdescriptionpanelbase.ui:40
+#: ui/kpttaskgeneralpanelbase.ui:52 ui/kpttaskgeneralpanelbase.ui:68
+msgid "The name of the Task."
+msgstr "ឈ្មោះ​ភារកិច្ច ។​"
+
+#. i18n: ectx: property (text), widget (QLabel, namelabel)
+#. i18n: ectx: property (text), widget (QLabel, ui_namelabel)
+#: ui/kptsummarytaskgeneralpanelbase.ui:45
+#: ui/kpttaskdescriptionpanelbase.ui:27 ui/kpttaskgeneralpanelbase.ui:55
+#: ui/resourcedialogbase.ui:30
+msgid "Name:"
+msgstr "ឈ្មោះ ៖​"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
+#. i18n: ectx: property (whatsThis), widget (KLineEdit, leaderfield)
+#: ui/kptsummarytaskgeneralpanelbase.ui:76
+#: ui/kptsummarytaskgeneralpanelbase.ui:105 ui/kpttaskgeneralpanelbase.ui:77
+#: ui/kpttaskgeneralpanelbase.ui:103
+#, fuzzy
+msgid ""
+"The person responsible for this task.\n"
+"\n"
+"This is not limited to persons available in a resource group but can be "
+"anyone. You can even directly access your address book with the Choose "
+"button."
+msgstr ""
+"មនុស្ស​​ដែល​ទទួល​ខុស​ត្រូវចំពោះ​ភារកិច្ច​នេះ ។\n"
+"\n"
+"​វា​នឹង​មិន​ដាក់​កម្រិត​ចំពោះ​មនុស្ស​ដែល​មាន​នៅក្នុង​ក្រុម​ធន​ធាន​ទេ ប៉ុន្តែ​អាច​ដាក់​កម្រិត​ចំពោះ​អ្នក​ផ្សេង​ ។ អ្នក​ថែម​"
+"ទាំង​​អាច​ចូល​ដំណើរ​ការ​សៀវភៅ​អាសយ​ដ្ឋានរបស់​អ្នក​​ដោយ​ផ្ទាល់​ ដោយ​ប្រើប៊ូតុង ជ្រើស​ ផង​ដែរ ។"
+
+#. i18n: ectx: property (text), widget (QLabel, leaderlabel)
+#: ui/kptsummarytaskgeneralpanelbase.ui:79 ui/kpttaskgeneralpanelbase.ui:80
+msgid "Responsible:"
+msgstr "ទទួល​ខុស​ត្រូវ ៖​"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, chooseLeader)
+#: ui/kptsummarytaskgeneralpanelbase.ui:112 ui/kpttaskgeneralpanelbase.ui:110
+msgid "Insert a person from your address book"
+msgstr "បញ្ចូល​មនុស្ស​ពី​អាសយ​ដ្ឋាន​របស់​អ្នក​"
+
+#. i18n: ectx: property (text), widget (QPushButton, chooseLeader)
+#. i18n: ectx: property (text), widget (QPushButton, chooseBtn)
+#: ui/kptsummarytaskgeneralpanelbase.ui:115 ui/kpttaskgeneralpanelbase.ui:116
+#: ui/resourcedialogbase.ui:64
+msgid "Choose..."
+msgstr "ជ្រើស...​"
+
 #: ui/kpttaskcostpanel.cpp:94
 #, fuzzy
 #| msgid "Modify Task Cost"
 msgctxt "(qtundo-format)"
 msgid "Modify Task Cost"
 msgstr "កែប្រែ​តម្លៃ​ភារកិច្ច​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2_2)
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_3)
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kpttaskcostpanelbase.ui:36 ui/kpttaskcostpanelbase.ui:106
+#: ui/kpttaskcostpanelbase.ui:176 ui/resourcedialogbase.ui:486
+msgid "Account:"
+msgstr "គណនី ៖​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, startupGroup)
+#: ui/kpttaskcostpanelbase.ui:78
+msgid "Startup"
+msgstr "ចាប់​ផ្តើម​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: ui/kpttaskcostpanelbase.ui:90 ui/kpttaskcostpanelbase.ui:160
+msgid "Cost:"
+msgstr "ថ្លៃ​ចំណាយ ៖​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, shutdownGroup)
+#: ui/kpttaskcostpanelbase.ui:148
+msgid "Shutdown"
+msgstr "បិទ​"
 
 #: ui/kpttaskdescriptiondialog.cpp:50
 msgid "Modify task description"
@@ -4442,6 +5100,122 @@ msgctxt "(qtundo-format)"
 msgid "Modify Task"
 msgstr "កែ​ប្រែ​ភារកិច្ច​"
 
+#. i18n: ectx: property (whatsThis), widget (QPushButton, chooseLeader)
+#: ui/kpttaskgeneralpanelbase.ui:113
+msgid "Insert a person from your address book."
+msgstr "បញ្ចូល​មនុស្ស​ពី​សៀវភៅ​​អាសយដ្ឋាន​​របស់​អ្នក​ ។​"
+
+#. i18n: ectx: property (whatsThis), widget (QGroupBox, schedulingGroup)
+#: ui/kpttaskgeneralpanelbase.ui:132
+#, fuzzy
+msgid ""
+"Scheduling Configuration. These settings affect the actual scheduling of the "
+"task.\n"
+"\n"
+"The estimation can be either effort based or duration based. If it is effort "
+"based, the final duration will depend on the resources assigned to the task. "
+"For duration based estimation, the assigned resources don't affect the fixed "
+"duration of the task, but only the costs."
+msgstr ""
+"កំណត់​រចនា​សម្ព័ន្ធនូវ​​ការកំណត់​ពេល​ ។ ការកំណត់​ទាំង​នេះ​ប៉ះ​ពាល់​ដល់​ការកំណត់​ពេល​ពេល​ភារកិច្ចជាក់​ស្តែង​ ។\n"
+"\n"
+"​ការប៉ាន់​ស្មាន​អាច​អាស្រ័យ​លើ​ទំហំការងារ និង​​អាស្រ័យ​លើថិរវេលា ។ បើ​សិន​អាស្រ័យ​លើ​ទំហំការងារ ថិរវេលា​ចុង​"
+"ក្រោយ​នឹង​ពឹង​ផ្អែក​លើ​ធន​ធាន​ដែល​បាន​ផ្តល់​ដល់​ភារកិច្ច ។ ចំពោះ​ការប៉ាន់​ស្មាន​ដែល​អាស្រ័យ​លើ​ថិរវេលា ធន​ធាន​"
+"ដែល​បាន​ផ្តល់​នឹង​មិន​ប៉ះ​ពាល់​ដល់​ថិរវេលា​ថេរ​នៃ​ភារកិច្ច​ទេ ប៉ុន្តែ​ប៉ះ​ពាល់ចំពោះ​តែ​តម្លៃ​ចំណាយ​ប៉ុណ្ណោះ ។"
+
+#. i18n: ectx: property (title), widget (QGroupBox, schedulingGroup)
+#: ui/kpttaskgeneralpanelbase.ui:135
+msgid "Timing"
+msgstr "ការកំណត់​ពេលវេលា​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3)
+#: ui/kpttaskgeneralpanelbase.ui:162
+msgid "Schedule:"
+msgstr "កាល​វិភាគ ៖​"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: ui/kpttaskgeneralpanelbase.ui:182
+msgid "As Soon as Possible"
+msgstr "ឆាប់​ៗ​តាម​តែ​អាច​"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: ui/kpttaskgeneralpanelbase.ui:187
+msgid "As Late as Possible"
+msgstr "យូរ​តាម​តែ​អាច​"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: ui/kpttaskgeneralpanelbase.ui:202
+msgid "Start Not Earlier Than"
+msgstr "ចាប់ផ្ដើម​​មិន​​មុន​"
+
+#. i18n: ectx: property (text), item, widget (KComboBox, scheduleType)
+#: ui/kpttaskgeneralpanelbase.ui:207
+msgid "Finish Not Later Than"
+msgstr "បញ្ចប់​មិន​ក្រោយ​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#: ui/kpttaskgeneralpanelbase.ui:258
+msgid "Estimate:"
+msgstr "ប៉ាន់​ស្មាន ៖​"
+
+#. i18n: ectx: property (toolTip), widget (QLabel, textLabel3_2_3)
+#. i18n: ectx: property (toolTip), widget (KComboBox, risk)
+#: ui/kpttaskgeneralpanelbase.ui:303 ui/kpttaskgeneralpanelbase.ui:331
+msgid ""
+"Risk controls the PERT distribution used when calculating the actual "
+"estimate for this task."
+msgstr ""
+"ហានិភ័យ​ត្រួត​ពិនិត្យ​ច្បាប់​ PERT ​ដែល​នឹង​ត្រូវ​ប្រើ នៅ​ពេល​គណនា​ការ​ប៉ាន់​ស្មាន​ជាក់ស្ដែង​សម្រាប់​ភារកិច្ច​នេះ ។"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel3_2_3)
+#: ui/kpttaskgeneralpanelbase.ui:309
+#, fuzzy
+msgid ""
+"<p>Risk controls the PERT distribution used when calculating the actual "
+"estimate for the task.\n"
+"<b>None</b> means the Expected estimate is used as is.\n"
+"<b>Low risk</b> means that a normal distribution is used.\n"
+"<b>High risk</b> means that the estimate will be slightly pessimistic "
+"compared to Low risk.</p>"
+msgstr ""
+"<p>ហានិភ័យ​ត្រួត​ពិនិត្យ​ច្បាប់​ PERT ​ដែល​ត្រូវ​ប្រើ​ នៅ​ពេល​គណនា​ការប៉ាន់ស្មាន​ជាក់​ស្តែង​សម្រាប់​ភារកិច្ច​នេះ "
+"។\n"
+"<b>គ្មាន​</b> មាន​ន័យ​ថា​ការ​ប៉ាន់​ស្មាន​ដែល​រំពឹង​ទុក​នឹង​ត្រូវ​បាន​ប្រើ​ ។\n"
+"<b>ហានិភ័យ​ទាប</b> មាន​ន័យ​ថា​ច្បាប់​ណ័រម៉ាល់​នឹង​ត្រូវ​បាន​ប្រើ ។\n"
+"<b>ហានិភ័យ​ខ្ពស់​</b> មាន​ន័យ​ថា​ការ​ប៉ាន់ស្មាន​នឹង​មាន​ភាព​ទុទិដ្ឋិនិយ​ម​តិច​តួច​បើ​ធៀប​ទៅ​នឹង​ហានិភ័យ​ទាប ។</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2_3)
+#: ui/kpttaskgeneralpanelbase.ui:312
+msgid "Risk:"
+msgstr "ហានិភ័យ ៖​"
+
+#. i18n: ectx: property (whatsThis), widget (KComboBox, risk)
+#: ui/kpttaskgeneralpanelbase.ui:337
+#, fuzzy
+msgid ""
+"<p>Risk controles the PERT distribution used when calculating the actual "
+"estimate for the task.\n"
+"<b>None</b> means the Expected estimate is used as is.\n"
+"<b>Low risk</b> means that a normal distribution is used.\n"
+"<b>High risk</b> means that the estimate will be slightly pessimistic "
+"compared to Low risk.</p>"
+msgstr ""
+"<p>ហានិភ័យ​ត្រួត​ពិនិត្យ​ច្បាប់​ PERT ​ដែល​នឹង​ត្រូវ​ប្រើ នៅ​ពេល​គណនា​ការ​ប៉ាន់ស្មាន​ជាក់ស្ដែង​​សម្រាប់​ភារកិច្ច​"
+"នេះ ។\n"
+"<b>គ្មាន​</b> មានន័យ​ថា​ ការ​ប៉ាន់​ស្មាន​ដែល​រំពឹង​ទុក​នឹង​ត្រូវ​បាន​ប្រើ ។\n"
+"<b>ហានិភ័យ​ទាប​</b> មានន័យ​ថា​ច្បាប់​ណ័រម៉ាល់​នឹង​ត្រូវ​បាន​ប្រើ ។\n"
+"<b>ហានិភ័យ​ខ្ពស់​</b> មាន​ន័យ​ថានឹង​ភាព​ទុទ្ទិដ្ឋិនិយម​តិច​តួច​បើ​ធៀប​ទៅ​នឹង​ហានិភ័យ​ទាប ។</p>"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#: ui/kpttaskgeneralpanelbase.ui:362
+msgid "Optimistic:"
+msgstr "សុទិដ្ឋិនិយម ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
+#: ui/kpttaskgeneralpanelbase.ui:388
+msgid "Pessimistic:"
+msgstr "ទុទ្ទិដ្ឋិនិយម​ ៖​"
+
 #: ui/kpttaskprogressdialog.cpp:38 ui/kptworkpackagemergedialog.cpp:58
 msgid "Task Progress"
 msgstr "វឌ្ឍនភាព​ភារកិច្ច​"
@@ -4469,6 +5243,71 @@ msgctxt "Week number"
 msgid "Week %1"
 msgstr "សប្ដាហ៍​ %1​"
 
+#. i18n: ectx: property (text), widget (QCheckBox, started)
+#: ui/kpttaskprogresspanelbase.ui:27
+msgid "Started:"
+msgstr "បាន​ចាប់ផ្ដើម​ ៖​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, finished)
+#: ui/kpttaskprogresspanelbase.ui:44
+msgid "Finished:"
+msgstr "បាន​បញ្ចប់​ ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kpttaskprogresspanelbase.ui:74
+msgid "Edit mode:"
+msgstr "របៀប​កែសម្រួល ៖​"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, editmode)
+#: ui/kpttaskprogresspanelbase.ui:82
+msgid "Calculate effort"
+msgstr "គណនា​ទំហំ​ការងារ​"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, editmode)
+#: ui/kpttaskprogresspanelbase.ui:87
+msgid "Per task"
+msgstr "ក្នុង​មួយ​ភារកិច្ច​"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, editmode)
+#: ui/kpttaskprogresspanelbase.ui:92
+msgid "Per resource"
+msgstr "ក្នុង​មួយ​ធន​ធាន​"
+
+#. i18n: ectx: attribute (title), widget (QWidget, completionTab)
+#: ui/kpttaskprogresspanelbase.ui:107
+msgid "Completion"
+msgstr "បញ្ចប់​"
+
+#. i18n: ectx: property (text), widget (QPushButton, addEntryBtn)
+#: ui/kpttaskprogresspanelbase.ui:136
+msgid "Add Entry"
+msgstr "បន្ថែម​ធាតុ​"
+
+#. i18n: ectx: property (text), widget (QPushButton, removeEntryBtn)
+#: ui/kpttaskprogresspanelbase.ui:143
+msgid "Remove Entry"
+msgstr "យក​ធាតុ​ចេញ​"
+
+#. i18n: ectx: attribute (title), widget (QWidget, usedEffortTab)
+#: ui/kpttaskprogresspanelbase.ui:176
+msgid "Per Resource"
+msgstr "ក្នុង​មួយ​ធនធាន​"
+
+#. i18n: ectx: property (text), widget (QPushButton, prevWeekBtn)
+#: ui/kpttaskprogresspanelbase.ui:212
+msgid "Prev"
+msgstr "មុន​"
+
+#. i18n: ectx: property (text), widget (QPushButton, nextWeekBtn)
+#: ui/kpttaskprogresspanelbase.ui:222
+msgid "Next"
+msgstr "បន្ទាប់​"
+
+#. i18n: ectx: property (text), widget (QPushButton, addResource)
+#: ui/kpttaskprogresspanelbase.ui:242
+msgid "Add Resource..."
+msgstr "បន្ថែម​ធន​ធាន...​"
+
 #: ui/kpttaskstatusview.cpp:421
 msgid "General Settings"
 msgstr "ការកំណត់​ទូទៅ​​"
@@ -4488,6 +5327,26 @@ msgstr "ទំហំ​ការងារ (​ម៉ោង)"
 msgid "Chart Settings"
 msgstr "ការកំណត់​គំនូស​តាង​"
 
+#. i18n: ectx: property (title), widget (QGroupBox, periodGroupBox)
+#: ui/kpttaskstatusviewsettingspanel.ui:16
+msgid "Period Definition"
+msgstr "និយមន័យ​រយៈ​ពេល​"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kpttaskstatusviewsettingspanel.ui:25
+msgid "Period length (days):"
+msgstr "ប្រវែង​រយៈ​ពេល​ (ថ្ងៃ​) ៖​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, useCurrentDate)
+#: ui/kpttaskstatusviewsettingspanel.ui:48
+msgid "Use current date"
+msgstr "ប្រើ​កាល​បរិច្ឆេទ​បច្ចុប្បន្ន​"
+
+#. i18n: ectx: property (text), widget (QRadioButton, useWeekday)
+#: ui/kpttaskstatusviewsettingspanel.ui:68
+msgid "Use weekday:"
+msgstr "ប្រើ​ថ្ងៃ​ធ្វើការ ៖​"
+
 #: ui/kptusedefforteditor.cpp:47
 msgid "Resource"
 msgstr "ធន​ធាន​​"
@@ -4499,10 +5358,6 @@ msgstr "សប្ដាហ៍​នេះ​"
 #: ui/kptusedefforteditor.cpp:224
 msgid "Total effort this week"
 msgstr "ទំហំ​ការងារ​សរុប​ក្នុង​​សប្ដាហ៍​នេះ​​"
-
-#: ui/kptusedefforteditor.cpp:387
-msgid "Date"
-msgstr "កាល​បរិច្ឆេទ​"
 
 #: ui/kptusedefforteditor.cpp:389
 #, no-c-format
@@ -4542,10 +5397,6 @@ msgstr "គម្រោង ៖​"
 #: ui/kptviewbase.cpp:482
 msgid "Date:"
 msgstr "កាល​បរិច្ឆេទ ៖​"
-
-#: ui/kptviewbase.cpp:485
-msgid "Manager:"
-msgstr "កម្មវិធី​គ្រប់​គ្រង ៖​"
 
 #: ui/kptviewbase.cpp:560
 msgid "This view does not support printing."
@@ -4587,6 +5438,67 @@ msgctxt "(qtundo-format)"
 msgid "Modify WBS Code Definition"
 msgstr "កែប្រែ​និយម​ន័យ​កូដ​ WBS​"
 
+#. i18n: ectx: property (toolTip), widget (QFrame, frame_2)
+#: ui/kptwbsdefinitionpanelbase.ui:21
+msgctxt "@info:tooltip Work Breakdown Structure code"
+msgid "Define WBS code for the project"
+msgstr "កំណត់​កូដ​ WBS សម្រាប់​គម្រោង​"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/kptwbsdefinitionpanelbase.ui:33
+msgid "Project Code Definition"
+msgstr "និយម​ន័យ​កូដ​គម្រោង​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_2)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: ui/kptwbsdefinitionpanelbase.ui:42 ui/kptwbsdefinitionpanelbase.ui:107
+msgid "Code:"
+msgstr "កូដ ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3_3)
+#. i18n: ectx: property (text), widget (QLabel, textLabel1_3_2)
+#: ui/kptwbsdefinitionpanelbase.ui:58 ui/kptwbsdefinitionpanelbase.ui:127
+msgid "Separator:"
+msgstr "សញ្ញាបំបែក ៖​"
+
+#. i18n: ectx: property (toolTip), widget (QFrame, frame)
+#: ui/kptwbsdefinitionpanelbase.ui:86
+msgctxt "@info:tooltip Work Breakdown Structure code"
+msgid "Define default WBS code"
+msgstr "កំណត់​កូដ​ WBS លំនាំដើម​"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/kptwbsdefinitionpanelbase.ui:98
+msgid "Default Definition"
+msgstr "និយមន័យ​លំនាំ​ដើម​"
+
+#. i18n: ectx: property (toolTip), widget (QGroupBox, levelsGroup)
+#: ui/kptwbsdefinitionpanelbase.ui:148
+#, fuzzy
+msgctxt "@info:tooltip Work Breakdown Structure code"
+msgid "Define separate WBS codes for individual levels"
+msgstr "កំណត់​កូដ WBS ផ្សេង​គ្នា​សម្រាប់​កម្រិត​នីមួយ​ៗ"
+
+#. i18n: ectx: property (title), widget (QGroupBox, levelsGroup)
+#: ui/kptwbsdefinitionpanelbase.ui:151
+msgid "Use Levels Definition"
+msgstr "ប្រើ​និយម​ន័យ​កម្រិត​"
+
+#. i18n: ectx: property (text), widget (QTableWidget, levelsTable)
+#: ui/kptwbsdefinitionpanelbase.ui:167
+msgid "Code"
+msgstr "កូដ​"
+
+#. i18n: ectx: property (text), widget (QTableWidget, levelsTable)
+#: ui/kptwbsdefinitionpanelbase.ui:172
+msgid "Separator"
+msgstr "សញ្ញា​បំបែក​"
+
+#. i18n: ectx: property (text), widget (QPushButton, addBtn)
+#: ui/kptwbsdefinitionpanelbase.ui:187
+msgid "Add Level"
+msgstr "បន្ថែម​កម្រិត​"
+
 #: ui/kptworkpackagesenddialog.cpp:35
 msgctxt "@title:window"
 msgid "Send Work Packages"
@@ -4596,7 +5508,8 @@ msgstr "ផ្ញើ​កញ្ចប់​ការងារ​"
 msgid "Send To..."
 msgstr "ផ្ញើ​ទៅ​កាន់...​"
 
-#: ui/locale/localemon.cpp:52
+#. i18n: ectx: property (text), widget (QLabel, m_labMonCurSym)
+#: ui/locale/localemon.cpp:52 ui/locale/localemon.ui:19
 msgid "Currency symbol:"
 msgstr "និមិត្តសញ្ញា​រូបិយ​ប័ណ្ណ ៖​​​​​​​​​​​​​​​​​"
 
@@ -4605,39 +5518,62 @@ msgstr "និមិត្តសញ្ញា​រូបិយ​ប័ណ្ណ
 msgid "Fract digits:"
 msgstr "តួ​លេខ​ប្រភាគ ៖"
 
-#: ui/locale/localemon.cpp:56
+#. i18n: ectx: property (title), widget (QGroupBox, m_positiveGB)
+#: ui/locale/localemon.cpp:56 ui/locale/localemon.ui:49
 msgid "Positive"
 msgstr "វិជ្ជមាន​"
 
+#. i18n: ectx: property (text), widget (QCheckBox, m_chMonPosPreCurSym)
+#. i18n: ectx: property (text), widget (QCheckBox, m_chMonNegPreCurSym)
 #: ui/locale/localemon.cpp:57 ui/locale/localemon.cpp:60
+#: ui/locale/localemon.ui:55 ui/locale/localemon.ui:124
 msgid "Prefix currency symbol"
 msgstr "និមិត្ត​សញ្ញា​រូបិយ​ប័ណ្ណ​របស់​បុព្វបទ​"
 
+#. i18n: ectx: property (text), widget (QLabel, m_labMonPosMonSignPos)
+#. i18n: ectx: property (text), widget (QLabel, m_labMonNegMonSignPos)
 #: ui/locale/localemon.cpp:58 ui/locale/localemon.cpp:61
+#: ui/locale/localemon.ui:64 ui/locale/localemon.ui:133
 msgid "Sign position:"
 msgstr "ទីតាំង​សញ្ញា ៖​"
 
-#: ui/locale/localemon.cpp:59
+#. i18n: ectx: property (title), widget (QGroupBox, m_negativeGB)
+#: ui/locale/localemon.cpp:59 ui/locale/localemon.ui:118
 msgid "Negative"
 msgstr "អវិជ្ជមាន​"
 
-#: ui/locale/localemon.cpp:265
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
+#: ui/locale/localemon.cpp:265 ui/locale/localemon.ui:72
+#: ui/locale/localemon.ui:141
 msgid "Parentheses Around"
 msgstr "វង់​ក្រចក​ជុំវិញ​"
 
-#: ui/locale/localemon.cpp:266
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
+#: ui/locale/localemon.cpp:266 ui/locale/localemon.ui:77
+#: ui/locale/localemon.ui:146
 msgid "Before Quantity Money"
 msgstr "នៅ​ពី​មុខ​ចំនួន​​បរិមាណ​"
 
-#: ui/locale/localemon.cpp:267
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
+#: ui/locale/localemon.cpp:267 ui/locale/localemon.ui:82
+#: ui/locale/localemon.ui:151
 msgid "After Quantity Money"
 msgstr "នៅ​ពី​ក្រោយ​ចំនួន​​បរិមាណ​"
 
-#: ui/locale/localemon.cpp:268
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
+#: ui/locale/localemon.cpp:268 ui/locale/localemon.ui:87
+#: ui/locale/localemon.ui:156
 msgid "Before Money"
 msgstr "នៅ​ពីមុខ​ថវិកា​"
 
-#: ui/locale/localemon.cpp:269
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonPosMonSignPos)
+#. i18n: ectx: property (text), item, widget (QComboBox, m_cmbMonNegMonSignPos)
+#: ui/locale/localemon.cpp:269 ui/locale/localemon.ui:92
+#: ui/locale/localemon.ui:161
 msgid "After Money"
 msgstr "នៅ​ពី​ក្រោយ​​ថវិកា​"
 
@@ -4692,9 +5628,26 @@ msgstr ""
 "នៅ​ទី​នេះ អ្នក​អាច​ជ្រើស​របៀប​ដាក់​ទីតាំង​សញ្ញា​អវិជ្ជមាន​បាន​ ។ វា​មាន​ឥទ្ធិពល​ចំពោះ​តែ​តម្លៃ​រូបិយ​ប័ណ្ណ​ប៉ុណ្ណោះ "
 "។"
 
-#: ui/reports/reportdata.cpp:349 ui/reports/reportview.cpp:980
-msgid "Tasks"
-msgstr "ភារកិច្ច​"
+#. i18n: ectx: property (text), widget (QLabel, m_labMonFraDig)
+#: ui/locale/localemon.ui:32
+msgid "Fractional digits:"
+msgstr "តួ​លេខ​ប្រភាគ​ ៖​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, ui_fromgroup)
+#: ui/relationpanel.ui:44 ui/resourcedialogbase.ui:265
+msgid "From"
+msgstr "ពី​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/relationpanel.ui:72
+msgid "To"
+msgstr "ចំពោះ​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, relationType)
+#: ui/relationpanel.ui:102
+msgid "Dependency Type"
+msgstr "ប្រភេទ​ភាព​អាស្រ័យ​"
 
 #: ui/reports/reportdata.cpp:396 ui/reports/reportview.cpp:985
 msgid "Task status"
@@ -4767,6 +5720,212 @@ msgstr "HTML"
 #: ui/reports/reportexportpanel.cpp:38
 msgid "XHTML"
 msgstr "XHTML"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/reports/reportexportpanel.ui:17
+msgid "Select format:"
+msgstr "ជ្រើស​ទ្រង់​ទ្រាយ​ ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/reports/reportnavigator.ui:20
+msgid "Page"
+msgstr "ទំព័រ​"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, ui_first)
+#: ui/reports/reportnavigator.ui:42
+msgid "Go to first page"
+msgstr "ទៅ​កាន់​ទំព័រ​ដំបូង​"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, ui_prev)
+#: ui/reports/reportnavigator.ui:61
+msgid "Go to previous page"
+msgstr "ទៅ​កាន់​ទំព័រ​មុន​"
+
+#. i18n: ectx: property (toolTip), widget (KIntSpinBox, ui_selector)
+#: ui/reports/reportnavigator.ui:71
+msgid "Show page"
+msgstr "បង្ហាញ​ទំព័រ​"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: ui/reports/reportnavigator.ui:93
+msgid "of"
+msgstr "នៃ​​"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, ui_next)
+#: ui/reports/reportnavigator.ui:143
+msgid "Go to next page"
+msgstr "ទៅកាន់​ទំព័រ​បន្ទាប់​"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, ui_last)
+#: ui/reports/reportnavigator.ui:162
+msgid "Go to last page"
+msgstr "ទៅ​កាន់​ទំព័រ​ចុង​ក្រោយ​"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, reportheader)
+#: ui/reports/reportsectionswidget.ui:31
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Report Designer"
+msgid "Enable report header"
+msgstr "កម្មវិធី​រចនា​របាយ​ការណ៍​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, reportheader)
+#: ui/reports/reportsectionswidget.ui:34
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Report Designer"
+msgid "Report Header"
+msgstr "កម្មវិធី​រចនា​របាយ​ការណ៍​"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, reportfooter)
+#: ui/reports/reportsectionswidget.ui:41
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Report Designer"
+msgid "Enable report footer"
+msgstr "កម្មវិធី​រចនា​របាយ​ការណ៍​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, reportfooter)
+#: ui/reports/reportsectionswidget.ui:44
+#, fuzzy
+#| msgctxt "@title:window"
+#| msgid "Report Designer"
+msgid "Report Footer"
+msgstr "កម្មវិធី​រចនា​របាយ​ការណ៍​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: ui/reports/reportsectionswidget.ui:53
+#, fuzzy
+#| msgid "Header"
+msgid "Page Header"
+msgstr "បឋម​កថា​"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, headerFirstpage)
+#: ui/reports/reportsectionswidget.ui:65
+#, fuzzy
+#| msgid "Go to first page"
+msgid "Enable header on first page"
+msgstr "ទៅ​កាន់​ទំព័រ​ដំបូង​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerFirstpage)
+#. i18n: ectx: property (text), widget (QCheckBox, footerFirstpage)
+#: ui/reports/reportsectionswidget.ui:68
+#: ui/reports/reportsectionswidget.ui:133
+#, fuzzy
+#| msgid "Go to first page"
+msgid "First page"
+msgstr "ទៅ​កាន់​ទំព័រ​ដំបូង​"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, headerLastpage)
+#: ui/reports/reportsectionswidget.ui:75
+#, fuzzy
+#| msgid "Go to first page"
+msgid "Enable header on last page"
+msgstr "ទៅ​កាន់​ទំព័រ​ដំបូង​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerLastpage)
+#. i18n: ectx: property (text), widget (QCheckBox, footerLastpage)
+#: ui/reports/reportsectionswidget.ui:78
+#: ui/reports/reportsectionswidget.ui:163
+#, fuzzy
+#| msgid "Go to last page"
+msgid "Last page"
+msgstr "ទៅ​កាន់​ទំព័រ​ចុង​ក្រោយ​"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, headerOddpages)
+#: ui/reports/reportsectionswidget.ui:85
+#, fuzzy
+#| msgid "Divide chart on multiple pages"
+msgid "Enable header on odd pages"
+msgstr "ចែក​គំនូស​តាង​លើ​ទំព័រ​ជាច្រើន​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerOddpages)
+#. i18n: ectx: property (text), widget (QCheckBox, footerOddpages)
+#: ui/reports/reportsectionswidget.ui:88
+#: ui/reports/reportsectionswidget.ui:143
+msgid "Odd pages"
+msgstr ""
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, headerEvenpages)
+#: ui/reports/reportsectionswidget.ui:95
+#, fuzzy
+#| msgid "Divide chart on multiple pages"
+msgid "Enable header on even pages"
+msgstr "ចែក​គំនូស​តាង​លើ​ទំព័រ​ជាច្រើន​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerEvenpages)
+#. i18n: ectx: property (text), widget (QCheckBox, footerEvenpages)
+#: ui/reports/reportsectionswidget.ui:98
+#: ui/reports/reportsectionswidget.ui:153
+msgid "Even pages"
+msgstr ""
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, headerAllpages)
+#: ui/reports/reportsectionswidget.ui:105
+#, fuzzy
+#| msgid "Divide chart on multiple pages"
+msgid "Enable header on all pages"
+msgstr "ចែក​គំនូស​តាង​លើ​ទំព័រ​ជាច្រើន​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, headerAllpages)
+#. i18n: ectx: property (text), widget (QCheckBox, footerAllpages)
+#: ui/reports/reportsectionswidget.ui:108
+#: ui/reports/reportsectionswidget.ui:173
+msgid "All pages"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: ui/reports/reportsectionswidget.ui:118
+#, fuzzy
+#| msgid "Footer"
+msgid "Page Footer"
+msgstr "បាតកថា​"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, footerFirstpage)
+#: ui/reports/reportsectionswidget.ui:130
+#, fuzzy
+#| msgid "Go to first page"
+msgid "Enable footer on first page"
+msgstr "ទៅ​កាន់​ទំព័រ​ដំបូង​"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, footerOddpages)
+#: ui/reports/reportsectionswidget.ui:140
+#, fuzzy
+#| msgid "Go to last page"
+msgid "Enable footer on odd pages"
+msgstr "ទៅ​កាន់​ទំព័រ​ចុង​ក្រោយ​"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, footerEvenpages)
+#: ui/reports/reportsectionswidget.ui:150
+#, fuzzy
+#| msgid "Go to last page"
+msgid "Enable footer on even pages"
+msgstr "ទៅ​កាន់​ទំព័រ​ចុង​ក្រោយ​"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, footerLastpage)
+#: ui/reports/reportsectionswidget.ui:160
+#, fuzzy
+#| msgid "Go to last page"
+msgid "Enable footer on last page"
+msgstr "ទៅ​កាន់​ទំព័រ​ចុង​ក្រោយ​"
+
+#. i18n: @info:tooltip
+#. i18n: ectx: property (toolTip), widget (QCheckBox, footerAllpages)
+#: ui/reports/reportsectionswidget.ui:170
+#, fuzzy
+#| msgid "Go to last page"
+msgid "Enable footer on all pages"
+msgstr "ទៅ​កាន់​ទំព័រ​ចុង​ក្រោយ​"
 
 #: ui/reports/reportview.cpp:352
 msgctxt "@title:window"
@@ -5005,682 +6164,115 @@ msgstr "នៅ​ពី​ក្រោយ​​ថវិកា​"
 msgid "Before header"
 msgstr "នៅ​ពីមុខ​ថវិកា​"
 
-#~ msgid "Show:"
-#~ msgstr "បង្ហាញ ៖​"
+#. i18n: ectx: property (text), widget (QLabel, groupLabel)
+#: ui/resourcedialogbase.ui:23
+msgid "Group:"
+msgstr "ក្រុម ៖​"
 
-#~ msgid "Periodicity:"
-#~ msgstr "រយៈ​ពេល ៖​"
+#. i18n: ectx: property (toolTip), widget (QPushButton, chooseBtn)
+#: ui/resourcedialogbase.ui:61
+msgid "Choose resource from address book"
+msgstr "ជ្រើស​ធន​ធាន​ពី​សៀវភៅ​អាសយ​ដ្ឋាន​"
 
-#~ msgid "Day"
-#~ msgstr "ថ្ងៃ​"
+#. i18n: ectx: property (text), widget (QLabel, ui_initialslabel)
+#: ui/resourcedialogbase.ui:73
+msgid "Initials:"
+msgstr "អាទិសង្កេត ៖​"
 
-#~ msgid "Week"
-#~ msgstr "សប្តាហ៍​"
+#. i18n: ectx: property (text), widget (QLabel, ui_emaillabel)
+#: ui/resourcedialogbase.ui:113
+msgid "<p align=\"right\">Email:</p>"
+msgstr "<p align=\"right\">អ៊ីមែល ៖​</p>"
 
-#~ msgid "Month"
-#~ msgstr "ខែ​"
+#. i18n: ectx: property (text), widget (QLabel, textLabel7)
+#: ui/resourcedialogbase.ui:155
+msgid "Resource type:"
+msgstr "ប្រភេទ​ធន​ធាន ៖​"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, type)
+#: ui/resourcedialogbase.ui:179
+msgid "Team"
+msgstr "ក្រុម​"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_unitslabel)
+#: ui/resourcedialogbase.ui:214
+msgid "Available:"
+msgstr "អាច​មាន ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, ui_calendarlabel)
+#: ui/resourcedialogbase.ui:249
+msgid "<p align=\"right\">Calendar:</p>"
+msgstr "<p align=\"right\">ប្រតិទិន ៖​</p>"
+
+#. i18n: ectx: property (text), widget (QRadioButton, ui_rbfromunlimited)
+#. i18n: ectx: property (text), widget (QRadioButton, ui_rbuntilunlimited)
+#: ui/resourcedialogbase.ui:277 ui/resourcedialogbase.ui:326
+msgid "Unlimited"
+msgstr "មិន​កំណត់​​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, ui_untilgroup)
+#: ui/resourcedialogbase.ui:311
+msgid "Until"
+msgstr "រហូត​ដល់​"
+
+#. i18n: ectx: property (text), widget (QCheckBox, useRequired)
+#: ui/resourcedialogbase.ui:383
+msgid "Required resources:"
+msgstr "ធន​ធាន​ដែល​ទាម​ទារ ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#: ui/resourcedialogbase.ui:420
 #, fuzzy
-#~ msgid "Cumulative"
-#~ msgstr "ដែល​ត្រួត​គ្នា"
+msgid "Hourly rate:"
+msgstr "អត្រាគិត​ជា​ម៉ោង ៖"
 
-#~ msgid "Actual cost"
-#~ msgstr "ថ្លៃ​ចំណាយ​ជាក់ស្ដែង​"
+#. i18n: ectx: property (text), widget (QLabel, textLabel4_2)
+#: ui/resourcedialogbase.ui:440
+msgid "Overtime rate:"
+msgstr "អត្រា​ម៉ោង​លើស ៖​"
 
-#~ msgid "Planned cost"
-#~ msgstr "ថ្លៃ​ចំណាយ​​ដែល​គ្រោង​"
-
-#~ msgid "Actual and planned"
-#~ msgstr "ជាក់​ស្តែង និង​គ្រោង​"
-
-#~ msgid "Deviation"
-#~ msgstr "គម្លាត​"
-
-#~ msgid "Start date"
-#~ msgstr "កាលបរិច្ឆេទ​ចាប់ផ្ដើម​"
-
-#~ msgid "Project start"
-#~ msgstr "ចាប់ផ្តើម​គម្រោង"
-
-#~ msgid "End date"
-#~ msgstr "កាល​បរិច្ឆេទ​បញ្ចប់​"
-
-#~ msgid "Current date"
-#~ msgstr "កាលបរិច្ឆេទ​បច្ចុប្បន្ន​"
-
-#~ msgid "Project end"
-#~ msgstr "បញ្ចប់​គម្រោង​"
-
-#~ msgid "Project Schedule:"
-#~ msgstr "កាលវិភាគ​របស់​គម្រោង ៖​"
-
-#~ msgid "..."
-#~ msgstr "..."
-
+#. i18n: ectx: property (whatsThis), widget (QWidget, KPlato::StandardWorktimeDialogBase)
+#: ui/standardworktimedialogbase.ui:16
 #, fuzzy
-#~ msgid "Probability of finishing before"
-#~ msgstr "ប្រូបាប៊ីលីតេ​​មុន​ពេល​ដែល​បញ្ចប់"
-
-#~ msgid "is"
-#~ msgstr "គឺ​"
-
-#~ msgid "%"
-#~ msgstr "%"
-
-#~ msgid "Add..."
-#~ msgstr "បន្ថែម​...​"
-
-#~ msgid "Change..."
-#~ msgstr "ផ្លាស់ប្ដូរ..."
-
-#~ msgid "Remove"
-#~ msgstr "យក​ចេញ​"
-
-#~ msgid "Open"
-#~ msgstr "បើក​"
-
-#~ msgid "Additional text information"
-#~ msgstr "ព័ត៌មាន​អំពី​អត្ថបទ​ដែល​បន្ថែម​​"
-
-#~ msgid "Task name"
-#~ msgstr "ឈ្មោះ​ភារកិច្ច​"
-
-#~ msgid "Resource names"
-#~ msgstr "ឈ្មោះ​ធន​ធាន"
-
-#~ msgid "Additional graphics information"
-#~ msgstr "ព័ត៌មាន​ក្រាហ្វិក​ដែល​បន្ថែម​"
-
-#~ msgid "Task dependencies"
-#~ msgstr "បង្ហាញ​ភាព​អាស្រ័យ​របស់​ភារកិច្ច​"
-
-#~ msgid "Task completion"
-#~ msgstr "ការ​បញ្ចប់​ភារកិច្ច​"
-
-#~ msgid "Time constraints"
-#~ msgstr "កម្រិត​​"
-
-#~ msgid "Scheduling errors"
-#~ msgstr "កំហុស​កំណត់ពេល​"
-
-#~ msgid "Positive float"
-#~ msgstr "លំហូរ​វិជ្ជមាន​"
-
-#~ msgid "Negative float"
-#~ msgstr "លំហូរ​អវិជ្ជមាន​"
-
-#~ msgid "Critical path"
-#~ msgstr "ផ្លូវ​សំខាន់​បំផុត​"
-
-#~ msgid "Critical tasks"
-#~ msgstr "ភារកិច្ច​សំខាន់​បំផុត"
-
-#~ msgid "Print row labels"
-#~ msgstr "បោះ​ពុម្ព​ស្លាក​ជួរដេក​"
-
-#~ msgid "Print chart on a single page"
-#~ msgstr "បោះ​ពុម្ព​គំនូស​តាង​លើ​ទំព័រ​តែ​មួយ​"
-
-#~ msgid "Divide chart on multiple pages"
-#~ msgstr "ចែក​គំនូស​តាង​លើ​ទំព័រ​ជាច្រើន​"
-
-#~ msgid "1"
-#~ msgstr "១​"
-
-#~ msgctxt "Start time"
-#~ msgid "From:"
-#~ msgstr "ពី ៖​"
-
-#~ msgid "Length"
-#~ msgstr "ប្រវែង​"
-
-#~ msgid "Add"
-#~ msgstr "បន្ថែម​"
-
-#~ msgid "Clear"
-#~ msgstr "ជម្រះ​"
-
-#~ msgid "Stretch last section"
-#~ msgstr "ទាញ​ផ្នែក​ចុង​​ក្រោយ​ឲ្យ​វែង​"
-
-#~ msgid "Select columns to be shown:"
-#~ msgstr "ជ្រើស​ជួរ​ឈរ​ដែល​ត្រូវ​បង្ហាញ ៖​"
-
-#~ msgid "&Hidden columns:"
-#~ msgstr "ជួរ​ឈរ​​ដែល​លាក់ ៖"
-
-#~ msgid "&Visible columns:"
-#~ msgstr "ជួរ​ឈរ​មើល​ឃើញ ៖​"
-
-#~ msgid "WBS:"
-#~ msgstr "WBS​ ៖​"
-
-#~ msgid "The project name."
-#~ msgstr "ឈ្មោះ​​គម្រោង ។​"
-
-#~ msgid "N&ame:"
-#~ msgstr "ឈ្មោះ ៖​"
-
-#~ msgid "The project leader."
-#~ msgstr "ប្រធាន​គម្រោង ។​"
-
-#~ msgid "Choose a project leader from your address book."
-#~ msgstr "ជ្រើស​ប្រធាន​គម្រោង​ពី​សៀវ​ភៅ​អាសយ​ដ្ឋាន​របស់​អ្នក ។​"
-
-#~ msgid "&Choose..."
-#~ msgstr "ជ្រើស...​"
-
-#~ msgid "Scheduling Range"
-#~ msgstr "ជួរ​​​កំណត់​ពេល​"
-
-#~ msgid "Earliest start:"
-#~ msgstr "ចាប់​ផ្តើម​មុន​គេ ៖​"
-
-#~ msgid "Latest finish:"
-#~ msgstr "បញ្ចប់​ក្រោយ​គេ ៖​"
-
-#~ msgid "Chart type"
-#~ msgstr "ប្រភេទ​គំនូស​តាង"
-
-#~ msgid "Line chart"
-#~ msgstr "គំនូស​តាង​បន្ទាត់​"
-
-#~ msgid "Bar chart"
-#~ msgstr "គំនូស​តាង​បង្គោល​"
-
-#, fuzzy
-#~| msgid "Baseline"
-#~ msgid "Base values"
-#~ msgstr "បន្ទាត់​គោល​"
-
-#~ msgid "Cost"
-#~ msgstr "ថ្លៃ​ចំណាយ​"
-
-#~ msgid "Show BCWS plot"
-#~ msgstr "បង្ហាញ​គ្រោង​ BCWS​"
-
-#~ msgid "Show BCWP plot"
-#~ msgstr "បង្ហាញ​គ្រោង​ BCWP​"
-
-#~ msgid "Show ACWP plot"
-#~ msgstr "បង្ហាញ​គ្រោង​ ACWP​"
-
-#, fuzzy
-#~| msgctxt "Cost based Budgeted Cost of Work Scheduled"
-#~| msgid "BCWS Cost"
-#~ msgid "SPI Cost"
-#~ msgstr "BCWS (ថ្លៃ​ចំណាយ)​"
-
-#, fuzzy
-#~| msgctxt "Effort based Budgeted Cost of Work Scheduled"
-#~| msgid "BCWS Effort"
-#~ msgid "SPI Effort"
-#~ msgstr "BCWS (ទំហំ​ការងារ)​"
-
-#, fuzzy
-#~| msgctxt "Effort based Budgeted Cost of Work Performed"
-#~| msgid "BCWP Effort"
-#~ msgid "CPI Effort"
-#~ msgstr "BCWP (ទំហំ​ការងារ​)​"
-
-#, fuzzy
-#~| msgctxt "Cost based Budgeted Cost of Work Performed"
-#~| msgid "BCWP Cost"
-#~ msgid "CPI Cost"
-#~ msgstr "BCWP (ថ្លៃ​ចំណាយ)​"
-
-#~ msgid "Available tasks"
-#~ msgstr "ភារកិច្ច​ដែល​មាន​"
-
-#~ msgid "Add required task"
-#~ msgstr "បន្ថែម​ភារកិច្ច​ដែល​ទាម​ទារ​"
-
-#~ msgid "Remove required task"
-#~ msgstr "យក​ភារកិច្ច​ដែល​ទាម​ទារ​ចេញ​"
-
-#~ msgid "Total Float:"
-#~ msgstr "លំហូរ​សរុប ៖​"
-
-#~ msgid "Header"
-#~ msgstr "បឋម​កថា​"
-
-#~ msgid "Project name"
-#~ msgstr "ឈ្មោះ​គម្រោង​"
-
-#~ msgid "Page number"
-#~ msgstr "លេខ​ទំព័រ​"
-
-#~ msgid "Project manager"
-#~ msgstr "អ្នក​គ្រប់​គ្រង​គម្រោង​"
-
-#~ msgid "Footer"
-#~ msgstr "បាតកថា​"
-
-#~ msgid "Re-calculate from current date/time"
-#~ msgstr "គណនា​ឡើងវិញ​ពី​កាលបរិច្ឆេទ/ពេល​វេលា​បច្ចុប្បន្ន​"
-
-#~ msgid "Re-calculate from:"
-#~ msgstr "គណនា​ឡើង​វិញ​ពី​ ៖​"
-
-#, fuzzy
-#~ msgid "Show internal appointments"
-#~ msgstr "បង្ហាញ​ការណាត់​ជួប​ខាង​ក្នុង"
-
-#, fuzzy
-#~ msgid "Show external appointments"
-#~ msgstr "បង្ហាញ​ការ​ណាត់​ជួប​ខាង​ក្រៅ"
-
-#~ msgid "Advance"
-#~ msgstr "ទៅ​មុខ​"
-
-#~ msgid "Critical Path (Task Id) :"
-#~ msgstr "ផ្លូវ​សំខាន់​បំផុត​ (លេខ​សម្គាល់​ភារកិច្ច) ៖​"
-
-#~ msgid "Project Float :"
-#~ msgstr "លំហូរ​របស់​គម្រោង ៖​"
-
-#~ msgid "Task details "
-#~ msgstr "សេចក្តី​លម្អិត​អំពី​ភារកិច្ច​"
-
-#~ msgid "Id"
-#~ msgstr "លេខ​សម្គាល់​"
-
-#~ msgid "Early start date"
-#~ msgstr "កាលបរិច្ឆេទ​ចាប់ផ្ដើម​មុន​"
-
-#~ msgid "Early finish date"
-#~ msgstr "កាលបរិច្ឆេទ​បញ្ចប់​មុន​"
-
-#~ msgid "Late start date"
-#~ msgstr "កាលបរិច្ឆេទ​ចាប់​ផ្តើម​ក្រោយ​"
-
-#~ msgid "Late finish date"
-#~ msgstr "កាលបរិច្ឆេទ​បញ្ចប់​ក្រោយ​​"
-
-#~ msgid "Float"
-#~ msgstr "លំហូរ​"
-
-#~ msgid "Free Margin"
-#~ msgstr "រឹម​សេរី​"
-
-#~ msgid "Work Breakdown Structure"
-#~ msgstr "រចនា​សម្ព័ន្ធ​ចែក​រំលែក​ការងារ​"
-
-#~ msgid "The name of the Task."
-#~ msgstr "ឈ្មោះ​ភារកិច្ច ។​"
-
-#~ msgid "Name:"
-#~ msgstr "ឈ្មោះ ៖​"
-
-#, fuzzy
-#~ msgid ""
-#~ "The person responsible for this task.\n"
-#~ "\n"
-#~ "This is not limited to persons available in a resource group but can be "
-#~ "anyone. You can even directly access your address book with the Choose "
-#~ "button."
-#~ msgstr ""
-#~ "មនុស្ស​​ដែល​ទទួល​ខុស​ត្រូវចំពោះ​ភារកិច្ច​នេះ ។\n"
-#~ "\n"
-#~ "​វា​នឹង​មិន​ដាក់​កម្រិត​ចំពោះ​មនុស្ស​ដែល​មាន​នៅក្នុង​ក្រុម​ធន​ធាន​ទេ ប៉ុន្តែ​អាច​ដាក់​កម្រិត​ចំពោះ​អ្នក​ផ្សេង​ ។ អ្នក​"
-#~ "ថែម​ទាំង​​អាច​ចូល​ដំណើរ​ការ​សៀវភៅ​អាសយ​ដ្ឋានរបស់​អ្នក​​ដោយ​ផ្ទាល់​ ដោយ​ប្រើប៊ូតុង ជ្រើស​ ផង​ដែរ ។"
-
-#~ msgid "Responsible:"
-#~ msgstr "ទទួល​ខុស​ត្រូវ ៖​"
-
-#~ msgid "Insert a person from your address book"
-#~ msgstr "បញ្ចូល​មនុស្ស​ពី​អាសយ​ដ្ឋាន​របស់​អ្នក​"
-
-#~ msgid "Choose..."
-#~ msgstr "ជ្រើស...​"
-
-#~ msgid "Account:"
-#~ msgstr "គណនី ៖​"
-
-#~ msgid "Startup"
-#~ msgstr "ចាប់​ផ្តើម​"
-
-#~ msgid "Cost:"
-#~ msgstr "ថ្លៃ​ចំណាយ ៖​"
-
-#~ msgid "Shutdown"
-#~ msgstr "បិទ​"
-
-#~ msgid "Insert a person from your address book."
-#~ msgstr "បញ្ចូល​មនុស្ស​ពី​សៀវភៅ​​អាសយដ្ឋាន​​របស់​អ្នក​ ។​"
-
-#, fuzzy
-#~ msgid ""
-#~ "Scheduling Configuration. These settings affect the actual scheduling of "
-#~ "the task.\n"
-#~ "\n"
-#~ "The estimation can be either effort based or duration based. If it is "
-#~ "effort based, the final duration will depend on the resources assigned to "
-#~ "the task. For duration based estimation, the assigned resources don't "
-#~ "affect the fixed duration of the task, but only the costs."
-#~ msgstr ""
-#~ "កំណត់​រចនា​សម្ព័ន្ធនូវ​​ការកំណត់​ពេល​ ។ ការកំណត់​ទាំង​នេះ​ប៉ះ​ពាល់​ដល់​ការកំណត់​ពេល​ពេល​ភារកិច្ចជាក់​ស្តែង​ ។\n"
-#~ "\n"
-#~ "​ការប៉ាន់​ស្មាន​អាច​អាស្រ័យ​លើ​ទំហំការងារ និង​​អាស្រ័យ​លើថិរវេលា ។ បើ​សិន​អាស្រ័យ​លើ​ទំហំការងារ ថិរវេលា​"
-#~ "ចុង​ក្រោយ​នឹង​ពឹង​ផ្អែក​លើ​ធន​ធាន​ដែល​បាន​ផ្តល់​ដល់​ភារកិច្ច ។ ចំពោះ​ការប៉ាន់​ស្មាន​ដែល​អាស្រ័យ​លើ​ថិរវេលា ធន​"
-#~ "ធាន​ដែល​បាន​ផ្តល់​នឹង​មិន​ប៉ះ​ពាល់​ដល់​ថិរវេលា​ថេរ​នៃ​ភារកិច្ច​ទេ ប៉ុន្តែ​ប៉ះ​ពាល់ចំពោះ​តែ​តម្លៃ​ចំណាយ​ប៉ុណ្ណោះ ។"
-
-#~ msgid "Timing"
-#~ msgstr "ការកំណត់​ពេលវេលា​"
-
-#~ msgid "Schedule:"
-#~ msgstr "កាល​វិភាគ ៖​"
-
-#~ msgid "As Soon as Possible"
-#~ msgstr "ឆាប់​ៗ​តាម​តែ​អាច​"
-
-#~ msgid "As Late as Possible"
-#~ msgstr "យូរ​តាម​តែ​អាច​"
-
-#~ msgid "Start Not Earlier Than"
-#~ msgstr "ចាប់ផ្ដើម​​មិន​​មុន​"
-
-#~ msgid "Finish Not Later Than"
-#~ msgstr "បញ្ចប់​មិន​ក្រោយ​"
-
-#~ msgid "Estimate:"
-#~ msgstr "ប៉ាន់​ស្មាន ៖​"
-
-#~ msgid ""
-#~ "Risk controls the PERT distribution used when calculating the actual "
-#~ "estimate for this task."
-#~ msgstr ""
-#~ "ហានិភ័យ​ត្រួត​ពិនិត្យ​ច្បាប់​ PERT ​ដែល​នឹង​ត្រូវ​ប្រើ នៅ​ពេល​គណនា​ការ​ប៉ាន់​ស្មាន​ជាក់ស្ដែង​សម្រាប់​ភារកិច្ច​"
-#~ "នេះ ។"
-
-#, fuzzy
-#~ msgid ""
-#~ "<p>Risk controls the PERT distribution used when calculating the actual "
-#~ "estimate for the task.\n"
-#~ "<b>None</b> means the Expected estimate is used as is.\n"
-#~ "<b>Low risk</b> means that a normal distribution is used.\n"
-#~ "<b>High risk</b> means that the estimate will be slightly pessimistic "
-#~ "compared to Low risk.</p>"
-#~ msgstr ""
-#~ "<p>ហានិភ័យ​ត្រួត​ពិនិត្យ​ច្បាប់​ PERT ​ដែល​ត្រូវ​ប្រើ​ នៅ​ពេល​គណនា​ការប៉ាន់ស្មាន​ជាក់​ស្តែង​សម្រាប់​ភារកិច្ច​"
-#~ "នេះ ។\n"
-#~ "<b>គ្មាន​</b> មាន​ន័យ​ថា​ការ​ប៉ាន់​ស្មាន​ដែល​រំពឹង​ទុក​នឹង​ត្រូវ​បាន​ប្រើ​ ។\n"
-#~ "<b>ហានិភ័យ​ទាប</b> មាន​ន័យ​ថា​ច្បាប់​ណ័រម៉ាល់​នឹង​ត្រូវ​បាន​ប្រើ ។\n"
-#~ "<b>ហានិភ័យ​ខ្ពស់​</b> មាន​ន័យ​ថា​ការ​ប៉ាន់ស្មាន​នឹង​មាន​ភាព​ទុទិដ្ឋិនិយ​ម​តិច​តួច​បើ​ធៀប​ទៅ​នឹង​ហានិភ័យ​ទាប ។</"
-#~ "p>"
-
-#~ msgid "Risk:"
-#~ msgstr "ហានិភ័យ ៖​"
-
-#, fuzzy
-#~ msgid ""
-#~ "<p>Risk controles the PERT distribution used when calculating the actual "
-#~ "estimate for the task.\n"
-#~ "<b>None</b> means the Expected estimate is used as is.\n"
-#~ "<b>Low risk</b> means that a normal distribution is used.\n"
-#~ "<b>High risk</b> means that the estimate will be slightly pessimistic "
-#~ "compared to Low risk.</p>"
-#~ msgstr ""
-#~ "<p>ហានិភ័យ​ត្រួត​ពិនិត្យ​ច្បាប់​ PERT ​ដែល​នឹង​ត្រូវ​ប្រើ នៅ​ពេល​គណនា​ការ​ប៉ាន់ស្មាន​ជាក់ស្ដែង​​សម្រាប់​ភារកិច្ច​"
-#~ "នេះ ។\n"
-#~ "<b>គ្មាន​</b> មានន័យ​ថា​ ការ​ប៉ាន់​ស្មាន​ដែល​រំពឹង​ទុក​នឹង​ត្រូវ​បាន​ប្រើ ។\n"
-#~ "<b>ហានិភ័យ​ទាប​</b> មានន័យ​ថា​ច្បាប់​ណ័រម៉ាល់​នឹង​ត្រូវ​បាន​ប្រើ ។\n"
-#~ "<b>ហានិភ័យ​ខ្ពស់​</b> មាន​ន័យ​ថានឹង​ភាព​ទុទ្ទិដ្ឋិនិយម​តិច​តួច​បើ​ធៀប​ទៅ​នឹង​ហានិភ័យ​ទាប ។</p>"
-
-#~ msgid "Optimistic:"
-#~ msgstr "សុទិដ្ឋិនិយម ៖​"
-
-#~ msgid "Pessimistic:"
-#~ msgstr "ទុទ្ទិដ្ឋិនិយម​ ៖​"
-
-#~ msgid "Started:"
-#~ msgstr "បាន​ចាប់ផ្ដើម​ ៖​"
-
-#~ msgid "Finished:"
-#~ msgstr "បាន​បញ្ចប់​ ៖​"
-
-#~ msgid "Edit mode:"
-#~ msgstr "របៀប​កែសម្រួល ៖​"
-
-#~ msgid "Calculate effort"
-#~ msgstr "គណនា​ទំហំ​ការងារ​"
-
-#~ msgid "Per task"
-#~ msgstr "ក្នុង​មួយ​ភារកិច្ច​"
-
-#~ msgid "Per resource"
-#~ msgstr "ក្នុង​មួយ​ធន​ធាន​"
-
-#~ msgid "Completion"
-#~ msgstr "បញ្ចប់​"
-
-#~ msgid "Add Entry"
-#~ msgstr "បន្ថែម​ធាតុ​"
-
-#~ msgid "Remove Entry"
-#~ msgstr "យក​ធាតុ​ចេញ​"
-
-#~ msgid "Per Resource"
-#~ msgstr "ក្នុង​មួយ​ធនធាន​"
-
-#~ msgid "Prev"
-#~ msgstr "មុន​"
-
-#~ msgid "Next"
-#~ msgstr "បន្ទាប់​"
-
-#~ msgid "Add Resource..."
-#~ msgstr "បន្ថែម​ធន​ធាន...​"
-
-#~ msgid "Period Definition"
-#~ msgstr "និយមន័យ​រយៈ​ពេល​"
-
-#~ msgid "Period length (days):"
-#~ msgstr "ប្រវែង​រយៈ​ពេល​ (ថ្ងៃ​) ៖​"
-
-#~ msgid "Use current date"
-#~ msgstr "ប្រើ​កាល​បរិច្ឆេទ​បច្ចុប្បន្ន​"
-
-#~ msgid "Use weekday:"
-#~ msgstr "ប្រើ​ថ្ងៃ​ធ្វើការ ៖​"
-
-#~ msgctxt "@info:tooltip Work Breakdown Structure code"
-#~ msgid "Define WBS code for the project"
-#~ msgstr "កំណត់​កូដ​ WBS សម្រាប់​គម្រោង​"
-
-#~ msgid "Project Code Definition"
-#~ msgstr "និយម​ន័យ​កូដ​គម្រោង​"
-
-#~ msgid "Code:"
-#~ msgstr "កូដ ៖​"
-
-#~ msgid "Separator:"
-#~ msgstr "សញ្ញាបំបែក ៖​"
-
-#~ msgctxt "@info:tooltip Work Breakdown Structure code"
-#~ msgid "Define default WBS code"
-#~ msgstr "កំណត់​កូដ​ WBS លំនាំដើម​"
-
-#~ msgid "Default Definition"
-#~ msgstr "និយមន័យ​លំនាំ​ដើម​"
-
-#, fuzzy
-#~ msgctxt "@info:tooltip Work Breakdown Structure code"
-#~ msgid "Define separate WBS codes for individual levels"
-#~ msgstr "កំណត់​កូដ WBS ផ្សេង​គ្នា​សម្រាប់​កម្រិត​នីមួយ​ៗ"
-
-#~ msgid "Use Levels Definition"
-#~ msgstr "ប្រើ​និយម​ន័យ​កម្រិត​"
-
-#~ msgid "Code"
-#~ msgstr "កូដ​"
-
-#~ msgid "Separator"
-#~ msgstr "សញ្ញា​បំបែក​"
-
-#~ msgid "Add Level"
-#~ msgstr "បន្ថែម​កម្រិត​"
-
-#~ msgid "Fractional digits:"
-#~ msgstr "តួ​លេខ​ប្រភាគ​ ៖​"
-
-#~ msgid "From"
-#~ msgstr "ពី​"
-
-#~ msgid "To"
-#~ msgstr "ចំពោះ​"
-
-#~ msgid "Dependency Type"
-#~ msgstr "ប្រភេទ​ភាព​អាស្រ័យ​"
-
-#~ msgid "Select format:"
-#~ msgstr "ជ្រើស​ទ្រង់​ទ្រាយ​ ៖​"
-
-#~ msgid "Page"
-#~ msgstr "ទំព័រ​"
-
-#~ msgid "Go to first page"
-#~ msgstr "ទៅ​កាន់​ទំព័រ​ដំបូង​"
-
-#~ msgid "Go to previous page"
-#~ msgstr "ទៅ​កាន់​ទំព័រ​មុន​"
-
-#~ msgid "Show page"
-#~ msgstr "បង្ហាញ​ទំព័រ​"
-
-#~ msgid "of"
-#~ msgstr "នៃ​​"
-
-#~ msgid "Go to next page"
-#~ msgstr "ទៅកាន់​ទំព័រ​បន្ទាប់​"
-
-#~ msgid "Go to last page"
-#~ msgstr "ទៅ​កាន់​ទំព័រ​ចុង​ក្រោយ​"
-
-#, fuzzy
-#~| msgctxt "@title:window"
-#~| msgid "Report Designer"
-#~ msgid "Report Header"
-#~ msgstr "កម្មវិធី​រចនា​របាយ​ការណ៍​"
-
-#, fuzzy
-#~| msgctxt "@title:window"
-#~| msgid "Report Designer"
-#~ msgid "Report Footer"
-#~ msgstr "កម្មវិធី​រចនា​របាយ​ការណ៍​"
-
-#, fuzzy
-#~| msgid "Header"
-#~ msgid "Page Header"
-#~ msgstr "បឋម​កថា​"
-
-#, fuzzy
-#~| msgid "Go to first page"
-#~ msgid "Enable header on first page"
-#~ msgstr "ទៅ​កាន់​ទំព័រ​ដំបូង​"
-
-#, fuzzy
-#~| msgid "Go to first page"
-#~ msgid "First page"
-#~ msgstr "ទៅ​កាន់​ទំព័រ​ដំបូង​"
-
-#, fuzzy
-#~| msgid "Go to last page"
-#~ msgid "Last page"
-#~ msgstr "ទៅ​កាន់​ទំព័រ​ចុង​ក្រោយ​"
-
-#, fuzzy
-#~| msgid "Divide chart on multiple pages"
-#~ msgid "Enable header on all pages"
-#~ msgstr "ចែក​គំនូស​តាង​លើ​ទំព័រ​ជាច្រើន​"
-
-#, fuzzy
-#~| msgid "Footer"
-#~ msgid "Page Footer"
-#~ msgstr "បាតកថា​"
-
-#, fuzzy
-#~| msgid "Go to first page"
-#~ msgid "Enable footer on first page"
-#~ msgstr "ទៅ​កាន់​ទំព័រ​ដំបូង​"
-
-#, fuzzy
-#~| msgid "Go to last page"
-#~ msgid "Enable footer on last page"
-#~ msgstr "ទៅ​កាន់​ទំព័រ​ចុង​ក្រោយ​"
-
-#~ msgid "Group:"
-#~ msgstr "ក្រុម ៖​"
-
-#~ msgid "Choose resource from address book"
-#~ msgstr "ជ្រើស​ធន​ធាន​ពី​សៀវភៅ​អាសយ​ដ្ឋាន​"
-
-#~ msgid "Initials:"
-#~ msgstr "អាទិសង្កេត ៖​"
-
-#~ msgid "<p align=\"right\">Email:</p>"
-#~ msgstr "<p align=\"right\">អ៊ីមែល ៖​</p>"
-
-#~ msgid "Resource type:"
-#~ msgstr "ប្រភេទ​ធន​ធាន ៖​"
-
-#~ msgid "Team"
-#~ msgstr "ក្រុម​"
-
-#~ msgid "Available:"
-#~ msgstr "អាច​មាន ៖​"
-
-#~ msgid "<p align=\"right\">Calendar:</p>"
-#~ msgstr "<p align=\"right\">ប្រតិទិន ៖​</p>"
-
-#~ msgid "Unlimited"
-#~ msgstr "មិន​កំណត់​​"
-
-#~ msgid "Until"
-#~ msgstr "រហូត​ដល់​"
-
-#~ msgid "Required resources:"
-#~ msgstr "ធន​ធាន​ដែល​ទាម​ទារ ៖​"
-
-#, fuzzy
-#~ msgid "Hourly rate:"
-#~ msgstr "អត្រាគិត​ជា​ម៉ោង ៖"
-
-#~ msgid "Overtime rate:"
-#~ msgstr "អត្រា​ម៉ោង​លើស ៖​"
-
-#, fuzzy
-#~ msgid ""
-#~ "These values are used if your estimate is not in hours.\n"
-#~ "Let us say Hours per day is 8. If you estimate that a task needs 3 days "
-#~ "effort to complete, this is converted to 24 hours when the task is "
-#~ "scheduled. The actual time it will take to complete is of course "
-#~ "dependent on the availability of the person (or persons) that is assigned "
-#~ "to the task."
-#~ msgstr ""
-#~ "តម្លៃ​ទាំង​នេះ​នឹង​ត្រូវ​បាន​ប្រើ បើ​សិន​ការ​ប៉ាន់​ស្មាន​របស់​អ្នក​មិន​គិត​ជា​ម៉ោង ។\n"
-#~ " យើង​ចង់​និយាយថា​ ក្នុង​មួយ​ថ្ងៃ​គឺ​ ៨ ម៉ោង​ ។ បើ​អ្នក​ប៉ាន់​ស្មានថា​ភារកិច្ច​នេះ​ទាម​ទារ​ពេល​ ៣ ថ្ងៃ​ដើម្បី​"
-#~ "បញ្ចប់ អញ្ចឹង​វា​នឹង​បម្លែង​ទៅ​ជា​ ២៤ ម៉ោង​ នៅ​ពេល​ដែល​ភារកិច្ចនេះ​ត្រូវ​បាន​កំណត់​ពេល​ ។ ពេល​វេលា​ជាក់​"
-#~ "ស្តែង​ដែល​វា​នឹង​ត្រូវ​ការ​ដើម្បី​បញ្ចប់​តាម​ពិត​ទៅ​គឺ​អាស្រ័យ​ទៅ​លើ​ភាព​ដែល​អាច​មាន​របស់​មនុស្ស​ (ឬ​មនុស្ស​) ដែល​"
-#~ "ត្រូវ​ផ្តល់​ចំពោះ​ភារកិច្ច ។"
-
-#~ msgid "Hours per year:"
-#~ msgstr "ម៉ោង​ក្នុង​មួយ​ឆ្នាំ ៖​"
-
-#~ msgid "Hours per month:"
-#~ msgstr "ម៉ោង​ក្នុង​មួយ​ខែ ៖​"
-
-#~ msgid "Hours per week:"
-#~ msgstr "ម៉ោង​ក្នុង​មួយ​សប្តាហ៍ ៖​"
-
-#~ msgid ""
-#~ "These values are used when you estimate the effort needed to complete a "
-#~ "task."
-#~ msgstr ""
-#~ "តម្លៃ​ទាំង​នេះ​នឹង​ត្រូវ​បាន​ប្រើ​ នៅ​ពេល​ដែល​អ្នក​ប៉ាន់​ស្មាន​ទំហំ​ការងារ​ដែល​ទាម​ទារ​ឲ្យ​បញ្ចប់​ភារកិច្ចនេះ ។​"
-
-#~ msgid "Hours per day:"
-#~ msgstr "ម៉ោង​ក្នុង​មួយ​ថ្ងៃ ៖​"
+msgid ""
+"These values are used if your estimate is not in hours.\n"
+"Let us say Hours per day is 8. If you estimate that a task needs 3 days "
+"effort to complete, this is converted to 24 hours when the task is "
+"scheduled. The actual time it will take to complete is of course dependent "
+"on the availability of the person (or persons) that is assigned to the task."
+msgstr ""
+"តម្លៃ​ទាំង​នេះ​នឹង​ត្រូវ​បាន​ប្រើ បើ​សិន​ការ​ប៉ាន់​ស្មាន​របស់​អ្នក​មិន​គិត​ជា​ម៉ោង ។\n"
+" យើង​ចង់​និយាយថា​ ក្នុង​មួយ​ថ្ងៃ​គឺ​ ៨ ម៉ោង​ ។ បើ​អ្នក​ប៉ាន់​ស្មានថា​ភារកិច្ច​នេះ​ទាម​ទារ​ពេល​ ៣ ថ្ងៃ​ដើម្បី​"
+"បញ្ចប់ អញ្ចឹង​វា​នឹង​បម្លែង​ទៅ​ជា​ ២៤ ម៉ោង​ នៅ​ពេល​ដែល​ភារកិច្ចនេះ​ត្រូវ​បាន​កំណត់​ពេល​ ។ ពេល​វេលា​ជាក់​ស្តែង​"
+"ដែល​វា​នឹង​ត្រូវ​ការ​ដើម្បី​បញ្ចប់​តាម​ពិត​ទៅ​គឺ​អាស្រ័យ​ទៅ​លើ​ភាព​ដែល​អាច​មាន​របស់​មនុស្ស​ (ឬ​មនុស្ស​) ដែល​ត្រូវ​ផ្តល់​"
+"ចំពោះ​ភារកិច្ច ។"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel1)
+#: ui/standardworktimedialogbase.ui:25
+msgid "Hours per year:"
+msgstr "ម៉ោង​ក្នុង​មួយ​ឆ្នាំ ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#: ui/standardworktimedialogbase.ui:51
+msgid "Hours per month:"
+msgstr "ម៉ោង​ក្នុង​មួយ​ខែ ៖​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabe3)
+#: ui/standardworktimedialogbase.ui:80
+msgid "Hours per week:"
+msgstr "ម៉ោង​ក្នុង​មួយ​សប្តាហ៍ ៖​"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, textLabel4)
+#: ui/standardworktimedialogbase.ui:106
+msgid ""
+"These values are used when you estimate the effort needed to complete a task."
+msgstr ""
+"តម្លៃ​ទាំង​នេះ​នឹង​ត្រូវ​បាន​ប្រើ​ នៅ​ពេល​ដែល​អ្នក​ប៉ាន់​ស្មាន​ទំហំ​ការងារ​ដែល​ទាម​ទារ​ឲ្យ​បញ្ចប់​ភារកិច្ចនេះ ។​"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel4)
+#: ui/standardworktimedialogbase.ui:109
+msgid "Hours per day:"
+msgstr "ម៉ោង​ក្នុង​មួយ​ថ្ងៃ ៖​"
 
 #~ msgid "BCWS"
 #~ msgstr "BCWS"
