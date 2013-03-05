@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_extragear-multimedia_amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-03-01 02:27+0100\n"
+"POT-Creation-Date: 2013-03-05 02:38+0100\n"
 "PO-Revision-Date: 2012-06-08 14:50+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -208,13 +208,14 @@ msgstr ""
 msgid "Shift"
 msgstr ""
 
-#. i18n: ectx: property (placeholderText), widget (QLineEdit, actionNameLineEdit)
-#: src/kcmodule/buttonactionselectionwidget.ui:221
+#. i18n: Select an action which will be assigned to a tablet button.
+#. i18n: ectx: property (placeholderText), widget (Wacom::ButtonActionDisplayWidget, actionNameLineEdit)
+#: src/kcmodule/buttonactionselectionwidget.ui:218
 msgid "Please select an action."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KKeySequenceWidget, shortcutSelectorWidget)
-#: src/kcmodule/buttonactionselectionwidget.ui:234
+#: src/kcmodule/buttonactionselectionwidget.ui:231
 #, fuzzy
 #| msgid ""
 #| "Click on the field and press the key or keycombo that should be used with "
@@ -224,10 +225,10 @@ msgid ""
 "shortcut."
 msgstr "ចុច​លើ​វាល ឬ​ចុច​គ្រាប់ចុច ឬ​ចុច​បន្សំ​គ្រាប់ចុច​ដែល​គួរ​ត្រូវ​បាន​ប្រើ​សម្រាប់​សកម្មភាព​នេះ"
 
-#. i18n: The tablet button has not action assigned to it.
-#. i18n: ectx: property (placeholderText), widget (KLineEdit, actionNameLineEdit)
-#: src/kcmodule/buttonactionselectorwidget.ui:62
-msgid "No Action Assigned"
+#. i18n: Click to assign an action (shortcut) to a tablet button.
+#. i18n: ectx: property (placeholderText), widget (Wacom::ButtonActionDisplayWidget, actionNameDisplayWidget)
+#: src/kcmodule/buttonactionselectorwidget.ui:56
+msgid "Click to assign an action."
 msgstr ""
 
 #: src/kcmodule/calibrationdialog.cpp:56
@@ -326,7 +327,7 @@ msgid "In this module you can configure your Wacom tablet profiles"
 msgstr "នៅ​ក្នុង​ម៉ូឌុល​នេះ​អ្នក​អាច​កំណត់​រចនាសម្ព័ន្ធ​ទម្រង់ Wacom tablet របស់​អ្នក​បាន"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, PadButtonWidget)
-#: src/kcmodule/padbuttonwidget.ui:20 src/kcmodule/tabletwidget.cpp:330
+#: src/kcmodule/padbuttonwidget.ui:20
 msgid "Pad Buttons"
 msgstr "ប៊ូតុង Pad"
 
@@ -344,7 +345,7 @@ msgstr "ប៊ូតុង ១ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, labelButton2)
 #. i18n: ectx: property (text), widget (QLabel, button2Label)
-#: src/kcmodule/padbuttonwidget.ui:56 src/kcmodule/penwidget.ui:405
+#: src/kcmodule/padbuttonwidget.ui:56 src/kcmodule/penwidget.ui:62
 #, fuzzy
 #| msgid "Button 2:"
 msgid "Button 2"
@@ -352,7 +353,7 @@ msgstr "ប៊ូតុង ២"
 
 #. i18n: ectx: property (text), widget (QLabel, labelButton3)
 #. i18n: ectx: property (text), widget (QLabel, button3Label)
-#: src/kcmodule/padbuttonwidget.ui:69 src/kcmodule/penwidget.ui:386
+#: src/kcmodule/padbuttonwidget.ui:69 src/kcmodule/penwidget.ui:43
 #, fuzzy
 #| msgid "Button 3:"
 msgid "Button 3"
@@ -504,7 +505,7 @@ msgid "Screen 2 TabletArea"
 msgstr "ផ្ទៃ​អេក្រង់"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, PadMapping)
-#: src/kcmodule/padmapping.ui:14 src/kcmodule/tabletwidget.cpp:339
+#: src/kcmodule/padmapping.ui:14 src/kcmodule/tabletwidget.cpp:340
 msgid "Pad Mapping"
 msgstr "ការ​ផ្គូផ្គង Pad"
 
@@ -658,14 +659,33 @@ msgstr ""
 msgid "Pen Settings"
 msgstr "ការ​កំណត់​ប៊ិច"
 
-#. i18n: ectx: property (title), widget (QGroupBox, tipFeelGroupBox)
+#. i18n: ectx: property (title), widget (QGroupBox, buttonGroupBox)
 #: src/kcmodule/penwidget.ui:28
-msgid "Tip Feel"
-msgstr "អារម្មណ៍​ព័ត៌មាន​ជំនួយ"
+msgid "Button Settings"
+msgstr "ការ​កំណត់​ប៊ូតុង"
 
-#. i18n: ectx: property (toolTip), widget (QSlider, tipSlider)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, tpcCheckBox)
+#: src/kcmodule/penwidget.ui:94
+msgid ""
+"If selected, the stylus must be in contact with the tablet for a stylus side "
+"button to work.\n"
+"If deselected, stylus buttons will work once the stylus is in proximity of "
+"the tablet."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, tpcCheckBox)
+#: src/kcmodule/penwidget.ui:97
+msgid "Tap to execute action."
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, eraserBox)
+#: src/kcmodule/penwidget.ui:167
+msgid "Eraser Feel"
+msgstr "អារម្មណ៍​ជ័រលុប"
+
 #. i18n: ectx: property (toolTip), widget (QSlider, eraserSlider)
-#: src/kcmodule/penwidget.ui:53 src/kcmodule/penwidget.ui:268
+#. i18n: ectx: property (toolTip), widget (QSlider, tipSlider)
+#: src/kcmodule/penwidget.ui:189 src/kcmodule/penwidget.ui:385
 #, fuzzy
 #| msgid ""
 #| "Set the minimum pressure necessary to generate a Button event for the "
@@ -685,64 +705,53 @@ msgstr ""
 "របស់​ផ្នែក​រឹង​ជាក់ស្ដែង ។ \n"
 "ប៉ារ៉ាម៉ែត្រ​នេះ​គឺជា​ប៉ារ៉ាម៉ែត្រ​ឯករាជ្យ​របស់ PressureCurve ។"
 
-#. i18n: ectx: property (text), widget (QLabel, labelSlow_3)
 #. i18n: ectx: property (text), widget (QLabel, labelSlow_2)
-#: src/kcmodule/penwidget.ui:83 src/kcmodule/penwidget.ui:298
+#. i18n: ectx: property (text), widget (QLabel, labelSlow_3)
+#: src/kcmodule/penwidget.ui:219 src/kcmodule/penwidget.ui:415
 msgctxt "slow movement of the cursor (minimal value)"
 msgid "Soft"
 msgstr "ទន់"
 
-#. i18n: ectx: property (text), widget (QLabel, labelFast_3)
 #. i18n: ectx: property (text), widget (QLabel, labelFast_2)
-#: src/kcmodule/penwidget.ui:109 src/kcmodule/penwidget.ui:324
+#. i18n: ectx: property (text), widget (QLabel, labelFast_3)
+#: src/kcmodule/penwidget.ui:245 src/kcmodule/penwidget.ui:441
 msgctxt "fast movement of the cursor (maximal value)"
 msgid "Firm"
 msgstr "រឹងមាំ"
 
-#. i18n: ectx: property (toolTip), widget (QPushButton, tipPressureButton)
 #. i18n: ectx: property (toolTip), widget (QPushButton, eraserPressureButton)
-#: src/kcmodule/penwidget.ui:147 src/kcmodule/penwidget.ui:356
+#. i18n: ectx: property (toolTip), widget (QPushButton, tipPressureButton)
+#: src/kcmodule/penwidget.ui:277 src/kcmodule/penwidget.ui:479
 msgid "Defines the pressure sensitivity with a bezier curve"
 msgstr "កំណត់​សម្ពាធ​ភាព​ប្រែប្រួល​ជាមួយ​ខ្សែ​កោង bezier"
 
-#. i18n: ectx: property (text), widget (QPushButton, tipPressureButton)
 #. i18n: ectx: property (text), widget (QPushButton, eraserPressureButton)
-#: src/kcmodule/penwidget.ui:150 src/kcmodule/penwidget.ui:359
+#. i18n: ectx: property (text), widget (QPushButton, tipPressureButton)
+#: src/kcmodule/penwidget.ui:280 src/kcmodule/penwidget.ui:482
 msgid "Edit Press Curve..."
 msgstr "កែសម្រួល​ខ្សែ​កោង​ចុច..."
 
-#. i18n: ectx: property (title), widget (QGroupBox, cursorGroupBox)
-#: src/kcmodule/penwidget.ui:168
-msgid "Cursor Settings"
-msgstr "ការ​កំណត់​ទស្សន៍ទ្រនិច"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, tpcCheckBox)
-#: src/kcmodule/penwidget.ui:174
-msgid ""
-"If enabled pressing a button is recognized when the pen is above the tablet. "
-"If disabled the click and tap function is active"
-msgstr ""
-"ប្រសិនបើ​បើក ការ​ចុច​ប៊ូតុង​គឺ​ត្រូវ​បាន​ស្គាល់​ពេល​ប៊ិច​នៅ​លើ tablet ។ ប្រសិនបើ​បិទ ការ​ចុច និង​មុខងារ​គោះ​គឺ​"
-"សកម្ម"
-
-#. i18n: ectx: property (text), widget (QCheckBox, tpcCheckBox)
-#: src/kcmodule/penwidget.ui:177
-msgid "use Hover Click"
-msgstr "ប្រើ​ការ​ចុច​ជាប់"
+#. i18n: ectx: property (title), widget (QGroupBox, trackingModeGroupBox)
+#: src/kcmodule/penwidget.ui:314
+#, fuzzy
+#| msgctxt "Name"
+#| msgid "Track Change"
+msgid "Tracking Mode"
+msgstr "ការ​ផ្លាស់​ប្ដូរ​បទ"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, radioButton_Absolute)
-#: src/kcmodule/penwidget.ui:200 src/kcmodule/touchwidget.ui:51
+#: src/kcmodule/penwidget.ui:320 src/kcmodule/touchwidget.ui:51
 msgid "The mouse cursor will move exactly to the position on the tablet."
 msgstr "ព្រួញ​កណ្ដុរ​នឹង​ផ្លាស់ទី​ជាក់លាក់​ទៅកាន់​ទីតាំង​នៅ​លើ tablet ។"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioButton_Absolute)
-#: src/kcmodule/penwidget.ui:203 src/kcmodule/touchwidget.ui:54
+#: src/kcmodule/penwidget.ui:323
 msgctxt "absolute pen movement (pen mode)"
-msgid "Absolute (Pen Mode)"
-msgstr "ដាច់ខាត (របៀប​ប៊ិច)"
+msgid "Map to Screen (Absolute Mode)"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, radioButton_Relative)
-#: src/kcmodule/penwidget.ui:214 src/kcmodule/touchwidget.ui:65
+#: src/kcmodule/penwidget.ui:334 src/kcmodule/touchwidget.ui:65
 msgid ""
 "The mouse cursor can be moved freely. The tablet working space does not "
 "represent the screen space\n"
@@ -754,20 +763,15 @@ msgstr ""
 "ផ្នែក​ការ​កំណត់​កណ្ដុរ"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioButton_Relative)
-#: src/kcmodule/penwidget.ui:217 src/kcmodule/touchwidget.ui:68
+#: src/kcmodule/penwidget.ui:337
 msgctxt "relative pen movement (mouse mode)"
-msgid "Relative (Mouse Mode)"
-msgstr "ទំនាក់ទំនង (របៀប​កណ្ដុរ)"
+msgid "Map to Cursor (Relative Mode)"
+msgstr ""
 
-#. i18n: ectx: property (title), widget (QGroupBox, eraserBox)
-#: src/kcmodule/penwidget.ui:240
-msgid "Eraser Feel"
-msgstr "អារម្មណ៍​ជ័រលុប"
-
-#. i18n: ectx: property (title), widget (QGroupBox, buttonGroupBox)
-#: src/kcmodule/penwidget.ui:371
-msgid "Button Settings"
-msgstr "ការ​កំណត់​ប៊ូតុង"
+#. i18n: ectx: property (title), widget (QGroupBox, tipFeelGroupBox)
+#: src/kcmodule/penwidget.ui:363
+msgid "Tip Feel"
+msgstr "អារម្មណ៍​ព័ត៌មាន​ជំនួយ"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, PressCurveDialog)
 #: src/kcmodule/presscurvedialog.ui:23
@@ -880,11 +884,19 @@ msgid "Enter the text that should be pasted when the action is used."
 msgstr "បញ្ចូល​អត្ថបទ​ដែល​គួរ​ត្រូវ​បាន​បិទភ្ជាប់​ពេល​សកម្មភាព​ត្រូវ​បាន​ប្រើ ។"
 
 #: src/kcmodule/tabletwidget.cpp:132
+msgid "KDE tablet service not found"
+msgstr ""
+
+#: src/kcmodule/tabletwidget.cpp:133
+#, fuzzy
+#| msgid ""
+#| "D-Bus connection to the kded daemon not available.\n"
+#| "\n"
+#| "Please start the Wacom tablet daemon and try again.\n"
+#| "The daemon is responsible for tablet detection and profile support."
 msgid ""
-"D-Bus connection to the kded daemon not available.\n"
-"\n"
-"Please start the Wacom tablet daemon and try again.\n"
-"The daemon is responsible for tablet detection and profile support."
+"Please start the Wacom tablet service and try again.\n"
+"The daemon is required for tablet detection and profile support."
 msgstr ""
 "ការ​តភ្ជាប់ D-Bus ទៅកាន់​ដេមិន kded មិន​មាន​ទេ ។\n"
 "\n"
@@ -892,17 +904,22 @@ msgstr ""
 "ដេមិន​គឺ​មាន​ភារកិច្ច​ក្នុង​ការ​រកមើល tablet និង​គាំទ្រ​ទម្រង់ ។"
 
 #: src/kcmodule/tabletwidget.cpp:138
-msgid ""
-"No tablet device was found.\n"
-"\n"
-"Please connect the device before you start this module.\n"
-"If the device is already connected refer to the help file for any further "
-"information."
+#, fuzzy
+#| msgid ""
+#| "No tablet device was found.\n"
+#| "\n"
+#| "Please connect the device."
+msgid "No tablet device detected"
 msgstr ""
 "រក​មិន​ឃើញ​ឧបករណ៍ tablet ។\n"
 "\n"
-"សូម​តភ្ជាប់​ឧបករណ៍​មុន​ពេល​ចាប់ផ្ដើម​ម៉ូឌុល​នេះ ។\n"
-"ប្រសិនបើ​ឧបករណ៍​ត្រូវ​បាន​តភ្ជាប់​រួចហើយ សូម​មើល​ទៅ​ឯកសារ​ជំនួយ​សម្រាប់​ព័ត៌មាន​បន្ថែម ។"
+"សូម​តភ្ជាប់​ឧបករណ៍ ។"
+
+#: src/kcmodule/tabletwidget.cpp:139
+msgid ""
+"Please connect a tablet device to continue.\n"
+"If your device is already connected it is currently unsupported."
+msgstr ""
 
 #: src/kcmodule/tabletwidget.cpp:152
 msgid "Add new profile"
@@ -912,20 +929,26 @@ msgstr "បន្ថែម​ទម្រង់​ថ្មី"
 msgid "Profile name:"
 msgstr "ឈ្មោះ​ទម្រង់ ៖"
 
-#: src/kcmodule/tabletwidget.cpp:325
+#: src/kcmodule/tabletwidget.cpp:326
 msgctxt "Basic overview page for the tablet hardware"
 msgid "General"
 msgstr "ទូទៅ"
 
-#: src/kcmodule/tabletwidget.cpp:326
-msgid "Pen"
-msgstr "ប៊ិច"
+#: src/kcmodule/tabletwidget.cpp:327
+msgid "Stylus"
+msgstr ""
 
-#: src/kcmodule/tabletwidget.cpp:336
+#: src/kcmodule/tabletwidget.cpp:331
+#, fuzzy
+#| msgid "Express Keys"
+msgid "Express Buttons"
+msgstr "គ្រាប់ចុច​រហ័ស"
+
+#: src/kcmodule/tabletwidget.cpp:337
 msgid "Touch"
 msgstr "ប៉ះ"
 
-#: src/kcmodule/tabletwidget.cpp:341
+#: src/kcmodule/tabletwidget.cpp:342
 msgid "Touch Mapping"
 msgstr "ការ​ផ្គូផ្គង​ប៉ះ"
 
@@ -978,6 +1001,18 @@ msgstr "បើក​ព្រឹត្តិការណ៍​ប៉ះ"
 #: src/kcmodule/touchwidget.ui:44
 msgid "Invert Scrolldirection"
 msgstr "បញ្ច្រាស​ទិសដៅ​រមូរ"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton_Absolute)
+#: src/kcmodule/touchwidget.ui:54
+msgctxt "absolute pen movement (pen mode)"
+msgid "Absolute (Pen Mode)"
+msgstr "ដាច់ខាត (របៀប​ប៊ិច)"
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioButton_Relative)
+#: src/kcmodule/touchwidget.ui:68
+msgctxt "relative pen movement (mouse mode)"
+msgid "Relative (Mouse Mode)"
+msgstr "ទំនាក់ទំនង (របៀប​កណ្ដុរ)"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
 #: src/kcmodule/touchwidget.ui:78
@@ -1065,6 +1100,34 @@ msgstr "កំហុស​ក្រាហ្វិក Tablet"
 #, kde-format
 msgid "Profile <b>%1</b> does not exist"
 msgstr "ទម្រង់ <b>%1</b> មិន​មាន​ទេ"
+
+#~ msgid "Cursor Settings"
+#~ msgstr "ការ​កំណត់​ទស្សន៍ទ្រនិច"
+
+#~ msgid ""
+#~ "If enabled pressing a button is recognized when the pen is above the "
+#~ "tablet. If disabled the click and tap function is active"
+#~ msgstr ""
+#~ "ប្រសិនបើ​បើក ការ​ចុច​ប៊ូតុង​គឺ​ត្រូវ​បាន​ស្គាល់​ពេល​ប៊ិច​នៅ​លើ tablet ។ ប្រសិនបើ​បិទ ការ​ចុច និង​មុខងារ​គោះ​គឺ​"
+#~ "សកម្ម"
+
+#~ msgid "use Hover Click"
+#~ msgstr "ប្រើ​ការ​ចុច​ជាប់"
+
+#~ msgid ""
+#~ "No tablet device was found.\n"
+#~ "\n"
+#~ "Please connect the device before you start this module.\n"
+#~ "If the device is already connected refer to the help file for any further "
+#~ "information."
+#~ msgstr ""
+#~ "រក​មិន​ឃើញ​ឧបករណ៍ tablet ។\n"
+#~ "\n"
+#~ "សូម​តភ្ជាប់​ឧបករណ៍​មុន​ពេល​ចាប់ផ្ដើម​ម៉ូឌុល​នេះ ។\n"
+#~ "ប្រសិនបើ​ឧបករណ៍​ត្រូវ​បាន​តភ្ជាប់​រួចហើយ សូម​មើល​ទៅ​ឯកសារ​ជំនួយ​សម្រាប់​ព័ត៌មាន​បន្ថែម ។"
+
+#~ msgid "Pen"
+#~ msgstr "ប៊ិច"
 
 #, fuzzy
 #~| msgctxt "Disable button function"
@@ -1642,10 +1705,6 @@ msgstr "ទម្រង់ <b>%1</b> មិន​មាន​ទេ"
 #~ msgctxt "Comment"
 #~ msgid "Amarok"
 #~ msgstr "Amarok"
-
-#~ msgctxt "Name"
-#~ msgid "Track Change"
-#~ msgstr "ការ​ផ្លាស់​ប្ដូរ​បទ"
 
 #~ msgctxt "Comment"
 #~ msgid "Amarok changed to a new track"
