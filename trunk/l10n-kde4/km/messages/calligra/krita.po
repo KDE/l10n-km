@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-04-23 02:49+0200\n"
+"POT-Creation-Date: 2013-04-24 02:12+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1205,7 +1205,7 @@ msgstr "បម្លែង ប្រភេទ​រូបភាព"
 msgid "Convert Projection Color Space"
 msgstr "បម្លែង​ចន្លោះ​ពណ៌​នៃ​ការ​បញ្ចាំង"
 
-#: image/kis_image.cc:898 ui/kis_layer_manager.cc:767
+#: image/kis_image.cc:898 ui/kis_layer_manager.cc:775
 msgid "Flatten Image"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
@@ -2560,31 +2560,37 @@ msgid "&Generated Layer..."
 msgstr "បង្កើត​ស្រទាប់..."
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:238
+#, fuzzy
+#| msgid "&Filter Layer..."
+msgid "&File Layer"
+msgstr "ត្រង​ស្រទាប់..."
+
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:242
 msgid "&Transparency Mask"
 msgstr "របាំង​ថ្លា"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:243
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:247
 msgid "&Filter Mask..."
 msgstr "របាំង​តម្រង..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:248
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:252
 #, fuzzy
 #| msgid "Scale Selection"
 msgid "&Local Selection"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ការ​ជ្រើស"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:253
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:257
 #, fuzzy
 #| msgid "Select Opaque"
 msgid "&Select Opaque"
 msgstr "ជ្រើស​ស្រអាប់"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:272
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:277
 msgid "&Transformation Mask..."
 msgstr "របាំង​ប្លែង..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:479
-#: ui/kis_layer_manager.cc:282
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:484
+#: ui/kis_layer_manager.cc:290
 msgid "&Merge with Layer Below"
 msgstr "បញ្ចូល​ស្រទាប់​ខាង​ក្រោម​ចូល​គ្នា​"
 
@@ -2640,6 +2646,7 @@ msgstr "ជ្រើស​សំណុំ​ឆានែល​សកម្ម"
 #. i18n: ectx: property (text), widget (KoGroupButton, add)
 #. i18n: ectx: property (text), widget (KoGroupButton, pixel)
 #. i18n: ectx: property (text), widget (KoGroupButton, subtract)
+#. i18n: ectx: property (text), widget (QToolButton, bnGetFileName)
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:50
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:99
 #: plugins/extensions/dockers/defaultdockers/wdglayerbox.ui:124
@@ -2661,12 +2668,13 @@ msgstr "ជ្រើស​សំណុំ​ឆានែល​សកម្ម"
 #: plugins/extensions/dockers/lut/wdglut.ui:144
 #: plugins/extensions/dockers/lut/wdglut.ui:172
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:104
-#: ui/forms/wdgcolorsettings.ui:319 ui/forms/wdgnewimage.ui:164
-#: ui/forms/wdgnewimage.ui:186 ui/forms/wdgpaintactioneditor.ui:46
-#: ui/forms/wdgpaintactioneditor.ui:69 ui/forms/wdgpaintoppresets.ui:61
-#: ui/forms/wdgselectionoptions.ui:31 ui/forms/wdgselectionoptions.ui:47
-#: ui/forms/wdgselectionoptions.ui:63 ui/forms/wdgselectionoptions.ui:82
-#: ui/forms/wdgselectionoptions.ui:118 ui/forms/wdgselectionoptions.ui:137
+#: ui/forms/wdgcolorsettings.ui:319 ui/forms/wdgdlgfilelayer.ui:54
+#: ui/forms/wdgnewimage.ui:164 ui/forms/wdgnewimage.ui:186
+#: ui/forms/wdgpaintactioneditor.ui:46 ui/forms/wdgpaintactioneditor.ui:69
+#: ui/forms/wdgpaintoppresets.ui:61 ui/forms/wdgselectionoptions.ui:31
+#: ui/forms/wdgselectionoptions.ui:47 ui/forms/wdgselectionoptions.ui:63
+#: ui/forms/wdgselectionoptions.ui:82 ui/forms/wdgselectionoptions.ui:118
+#: ui/forms/wdgselectionoptions.ui:137
 msgid "..."
 msgstr "..."
 
@@ -9369,6 +9377,10 @@ msgstr "គ្មាន​ជម្រើស​កំណត់​រចនា​
 msgid "Cleanup resource files"
 msgstr "ឯកសារ​ប្រភព ៖"
 
+#: ui/dialogs/kis_dlg_file_layer.cpp:89
+msgid "Select file to use as dynamic file layer."
+msgstr ""
+
 #: ui/dialogs/kis_dlg_image_properties.cc:52
 msgid "Image Properties"
 msgstr "លក្ខណៈសម្បត្តិ​រូបភាព"
@@ -10060,9 +10072,23 @@ msgid "Brushes"
 msgstr "ជក់"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: ui/forms/wdgdlggeneratorlayer.ui:18
+#: ui/forms/wdgdlgfilelayer.ui:26 ui/forms/wdgdlggeneratorlayer.ui:18
 msgid "&Layer Name:"
 msgstr "ឈ្មោះ​ស្រទាប់ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ui/forms/wdgdlgfilelayer.ui:39
+#, fuzzy
+#| msgid "&File"
+msgid "File:"
+msgstr "តម្រង ៖"
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkScaleToImageResolution)
+#: ui/forms/wdgdlgfilelayer.ui:63
+#, fuzzy
+#| msgid "Image Resolution"
+msgid "Scale To Image Resolution"
+msgstr "គុណភាព​បង្ហាញ​រូបភាព"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, FilterDialog)
 #: ui/forms/wdgfilterdialog.ui:14
@@ -11126,6 +11152,12 @@ msgstr "រូបភាព​បច្ចុប្បន្ន​ធំពេក
 msgid "unnamed"
 msgstr "ដែលគ្មានឈ្មោះ"
 
+#: ui/kis_file_layer.cpp:95
+#, fuzzy
+#| msgid "&File"
+msgid "File"
+msgstr "តម្រង ៖"
+
 #: ui/kis_filter_handler.cc:121
 #, kde-format
 msgid ""
@@ -11170,75 +11202,75 @@ msgstr "លក្ខណៈ​សម្បត្តិ..."
 msgid "Import Image"
 msgstr "នាំ​ចូល​រូបភាព"
 
-#: ui/kis_layer_manager.cc:277
+#: ui/kis_layer_manager.cc:285
 msgid "&Flatten image"
 msgstr "ធ្វើ​ឲ្យ​រូបភាព​រាប​ស្មើ"
 
-#: ui/kis_layer_manager.cc:287
+#: ui/kis_layer_manager.cc:295
 msgid "&Flatten Layer"
 msgstr "ធ្វើ​ឲ្យ​រូបភាព​រាប​ស្មើ"
 
-#: ui/kis_layer_manager.cc:291 ui/kis_layer_manager.cc:836
+#: ui/kis_layer_manager.cc:299 ui/kis_layer_manager.cc:844
 msgid "Rasterize Layer"
 msgstr "ស្រទាប់ Rasterize"
 
-#: ui/kis_layer_manager.cc:297
+#: ui/kis_layer_manager.cc:305
 #, fuzzy
 #| msgid "&Group Layer"
 msgid "Save Group Layers..."
 msgstr "ដាក់​ស្រទាប់​ជា​ក្រុម"
 
-#: ui/kis_layer_manager.cc:301
+#: ui/kis_layer_manager.cc:309
 msgid "Size Canvas to Size of Current Layer"
 msgstr "ខ្សែកោង​ទំហំ​ទៅ​នឹង​ទំហំ​របស់​ស្រទាប់​បច្ចុប្បន្ន"
 
-#: ui/kis_layer_manager.cc:306
+#: ui/kis_layer_manager.cc:314
 #, fuzzy
 #| msgid "&Paint Layer"
 msgid "Add new paint layer"
 msgstr "ស្រទាប់​គូរ"
 
-#: ui/kis_layer_manager.cc:361
+#: ui/kis_layer_manager.cc:369
 msgid "Filter Layer Properties"
 msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​តម្រង"
 
-#: ui/kis_layer_manager.cc:406
+#: ui/kis_layer_manager.cc:414
 msgid "Generator Layer Properties"
 msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​​កម្មវិធី​បង្កើត"
 
-#: ui/kis_layer_manager.cc:464 ui/kis_layer_manager.cc:478
-#: ui/kis_layer_manager.cc:519 ui/kis_layer_manager.cc:550
-#: ui/kis_layer_manager.cc:657
+#: ui/kis_layer_manager.cc:472 ui/kis_layer_manager.cc:486
+#: ui/kis_layer_manager.cc:527 ui/kis_layer_manager.cc:558
+#: ui/kis_layer_manager.cc:665 ui/kis_layer_manager.cc:961
 msgid "Could not add layer to image."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: ui/kis_layer_manager.cc:464 ui/kis_layer_manager.cc:478
-#: ui/kis_layer_manager.cc:519 ui/kis_layer_manager.cc:550
-#: ui/kis_layer_manager.cc:657
+#: ui/kis_layer_manager.cc:472 ui/kis_layer_manager.cc:486
+#: ui/kis_layer_manager.cc:527 ui/kis_layer_manager.cc:558
+#: ui/kis_layer_manager.cc:665 ui/kis_layer_manager.cc:961
 msgid "Layer Error"
 msgstr "កំហុស​ស្រទាប់​"
 
-#: ui/kis_layer_manager.cc:575
+#: ui/kis_layer_manager.cc:583
 msgid "New Filter Layer"
 msgstr "ស្រទាប់​តម្រង​ថ្មី"
 
-#: ui/kis_layer_manager.cc:724
+#: ui/kis_layer_manager.cc:732
 msgid "Scale Layer"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ស្រទាប់"
 
-#: ui/kis_layer_manager.cc:766
+#: ui/kis_layer_manager.cc:774
 msgid "The image contains hidden layers that will be lost."
 msgstr "រូបភាព​មាន​ស្រទាប់​ដែល​លាក់​ ដែល​នឹង​ត្រូវ​បាត់បង់ ។"
 
-#: ui/kis_layer_manager.cc:768
+#: ui/kis_layer_manager.cc:776
 msgid "&Flatten Image"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
-#: ui/kis_layer_manager.cc:872
+#: ui/kis_layer_manager.cc:880
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:875
+#: ui/kis_layer_manager.cc:883
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
@@ -11283,19 +11315,19 @@ msgstr "ច្បាប់​ចម្លង​នៃ"
 msgid "Effect Mask Properties"
 msgstr "លក្ខណៈសម្បត្តិ​របាំង​បែបផែន"
 
-#: ui/kis_mirror_visitor.cpp:94 ui/kis_node_manager.cpp:553
+#: ui/kis_mirror_visitor.cpp:94 ui/kis_node_manager.cpp:555
 msgid "Mirror Layer X"
 msgstr "ស្រទាប់ X ឆ្លុះ"
 
-#: ui/kis_mirror_visitor.cpp:96 ui/kis_node_manager.cpp:566
+#: ui/kis_mirror_visitor.cpp:96 ui/kis_node_manager.cpp:568
 msgid "Mirror Layer Y"
 msgstr "ស្រទាប់​ Y ឆ្លុះ"
 
-#: ui/kis_mirror_visitor.cpp:128 ui/kis_node_manager.cpp:555
+#: ui/kis_mirror_visitor.cpp:128 ui/kis_node_manager.cpp:557
 msgid "Mirror Mask X"
 msgstr "របាំង​ឆ្លុះ X"
 
-#: ui/kis_mirror_visitor.cpp:130 ui/kis_node_manager.cpp:568
+#: ui/kis_mirror_visitor.cpp:130 ui/kis_node_manager.cpp:570
 #, fuzzy
 #| msgid "Mirror Mask X"
 msgid "Mirror Mask Y"
@@ -11343,13 +11375,13 @@ msgstr "ស្រទាប់​សកម្ម"
 msgid "Save Layer/Mask..."
 msgstr "រក្សា​ទុក​ស្រទាប់​ជា​រូបភាព..."
 
-#: ui/kis_node_manager.cpp:537
+#: ui/kis_node_manager.cpp:539
 #, fuzzy
 #| msgid "Remove Layer"
 msgid "Remove Last Layer"
 msgstr "យក​ស្រទាប់​ចេញ"
 
-#: ui/kis_node_manager.cpp:659
+#: ui/kis_node_manager.cpp:661
 #, fuzzy
 #| msgid "Exposure mode:"
 msgid "Export Node"
