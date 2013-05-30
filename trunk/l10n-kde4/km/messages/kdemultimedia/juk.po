@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: juk\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-01-26 03:25+0100\n"
+"POT-Creation-Date: 2013-05-30 01:53+0000\n"
 "PO-Revision-Date: 2012-06-20 15:05+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -90,7 +90,7 @@ msgid "Remove Cover"
 msgstr "យក​គម្រប​ចេញ"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CoverDialogBase)
-#: coverdialogbase.ui:13 playlistcollection.cpp:900
+#: coverdialogbase.ui:13 playlistcollection.cpp:955
 msgid "Cover Manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​គម្រប"
 
@@ -157,11 +157,11 @@ msgstr ""
 msgid "&Delete files instead of moving them to the trash"
 msgstr "លុប​ឯកសារ​ជំនួស​ការ​ផ្លាស់ទី​ទៅ​ធុង​សម្រាម"
 
-#: directorylist.cpp:48
+#: directorylist.cpp:50
 msgid "Folder List"
 msgstr "បញ្ជី​ថត"
 
-#: directorylist.cpp:146
+#: directorylist.cpp:191
 msgid "Music"
 msgstr "តន្ត្រី"
 
@@ -171,22 +171,32 @@ msgid "Please choose the folders where you keep your music:"
 msgstr "សូម​ជ្រើស​ថត​ដែល​អ្នក​រក្សាទុកតន្ត្រី​​របស់​អ្នក ៖"
 
 #. i18n: ectx: property (toolTip), widget (QListView, directoryListView)
-#: directorylistbase.ui:34
+#. i18n: ectx: property (toolTip), widget (QListView, excludeDirectoryListView)
+#: directorylistbase.ui:34 directorylistbase.ui:117
 msgid "These folders will be scanned on startup for new files."
 msgstr "ថត​ទាំងនេះ​នឹង​ត្រូវ​បាន​វិភាគ​ពេល​ចាប់ផ្ដើម​សម្រាប់​ឯកសារ​ថ្មី ។"
 
 #. i18n: ectx: property (text), widget (KPushButton, addDirectoryButton)
-#: directorylistbase.ui:64
+#. i18n: ectx: property (text), widget (KPushButton, addExcludeDirectoryButton)
+#: directorylistbase.ui:64 directorylistbase.ui:147
 msgid "Add Folder..."
 msgstr "បន្ថែម​ថត..."
 
 #. i18n: ectx: property (text), widget (KPushButton, removeDirectoryButton)
-#: directorylistbase.ui:71
+#. i18n: ectx: property (text), widget (KPushButton, removeExcludeDirectoryButton)
+#: directorylistbase.ui:71 directorylistbase.ui:154
 msgid "Remove Folder"
 msgstr "យក​ថត​ចេញ"
 
+#. i18n: ectx: property (text), widget (QLabel, ExcludeInformationLabel)
+#: directorylistbase.ui:102
+#, fuzzy
+#| msgid "Please choose the folders where you keep your music:"
+msgid "Please choose the folders that should be excluded from music search:"
+msgstr "សូម​ជ្រើស​ថត​ដែល​អ្នក​រក្សាទុកតន្ត្រី​​របស់​អ្នក ៖"
+
 #. i18n: ectx: property (text), widget (QCheckBox, importPlaylistsCheckBox)
-#: directorylistbase.ui:98
+#: directorylistbase.ui:183
 msgid "Import playlists"
 msgstr "នាំចូល​បញ្ជីចាក់"
 
@@ -1029,38 +1039,38 @@ msgstr "ឈ្មោះ​ឯកសារ (ផ្លូវ​ពេញ)"
 msgid "&Show Columns"
 msgstr "បង្ហាញ​ជួរ​ឈរ"
 
-#: playlist.cpp:2135
+#: playlist.cpp:2124
 msgid "Add to Play Queue"
 msgstr "បន្ថែម​ទៅ​ជួរ​ចាក់"
 
-#: playlist.cpp:2148 playlist.cpp:2298
+#: playlist.cpp:2137 playlist.cpp:2287
 msgid "Edit"
 msgstr "កែ​សម្រួល"
 
-#: playlist.cpp:2163
+#: playlist.cpp:2152
 msgid "Create Playlist From Selected Items..."
 msgstr "បង្កើត​បញ្ជី​ចាក់​ពី​ធាតុ​ដែល​បាន​ជ្រើស..."
 
-#: playlist.cpp:2184
+#: playlist.cpp:2173
 #, kde-format
 msgid "Edit '%1'"
 msgstr "កែ​សម្រួល '%1'"
 
-#: playlist.cpp:2296
+#: playlist.cpp:2285
 msgid "This will edit multiple files. Are you sure?"
 msgstr "នេះ​នឹង​កែ​សម្រួល​ឯកសារ​ច្រើន ។ អ្នក​ប្រាកដ​ឬ ?"
 
-#: playlist.cpp:2355 playlistcollection.h:180
+#: playlist.cpp:2344 playlistcollection.h:187
 msgid "Create New Playlist"
 msgstr "បង្កើត​បញ្ជី​ចាក់​ថ្មី"
 
-#: playlist.cpp:2364
+#: playlist.cpp:2353
 msgid ""
 "Manual column widths have been enabled.  You can switch back to automatic "
 "column sizes in the view menu."
 msgstr "បាន​បើក​ទទឹង​ជួរ​ឈរ​ដោយ​ដៃ ។ អ្នក​អាច​ប្ដូរ​ត្រឡប់​ទៅ​ទំហំ​ជួរ​ឈរ​ដោយ​ស្វ័យប្រវត្តិ​ក្នុង​ម៉ឺនុយ​មើល ។"
 
-#: playlist.cpp:2367
+#: playlist.cpp:2356
 msgid "Manual Column Widths Enabled"
 msgstr "បាន​បើក​ទទឹង​ជួរ​ឈរ​ដោយ​ដៃ"
 
@@ -1072,7 +1082,7 @@ msgstr "របៀប​មើល"
 msgid "Show &History"
 msgstr "បង្ហាញ​ប្រវត្តិ"
 
-#: playlistbox.cpp:214 playlistcollection.cpp:403
+#: playlistbox.cpp:214 playlistcollection.cpp:424
 msgctxt "verb, copy the playlist"
 msgid "Duplicate"
 msgstr "ចម្លង"
@@ -1106,151 +1116,151 @@ msgstr "យក​ចេញ"
 msgid "Hid&e"
 msgstr "លាក់"
 
-#: playlistbox.cpp:671 playlistcollection.cpp:892
+#: playlistbox.cpp:671 playlistcollection.cpp:947
 msgid "R&emove"
 msgstr "យក​ចេញ"
 
-#: playlistcollection.cpp:189
+#: playlistcollection.cpp:205
 msgid "Dynamic List"
 msgstr "បញ្ជី​ថាមវន្ត"
 
-#: playlistcollection.cpp:232
+#: playlistcollection.cpp:248
 msgid "Now Playing"
 msgstr "ឥឡូវ​កំពុង​ចាក់"
 
-#: playlistcollection.cpp:334
+#: playlistcollection.cpp:350
 msgid ""
 "Do you want to add these items to the current list or to the collection list?"
 msgstr "តើ​អ្នក​ចង់​បន្ថែម​ធាតុ​ទាំងនេះ​ទៅ​បញ្ជី​បច្ចុប្បន្ន ឬ​ទៅ​បញ្ជី​សម្រាំង ?"
 
-#: playlistcollection.cpp:336
+#: playlistcollection.cpp:352
 msgctxt "current playlist"
 msgid "Current"
 msgstr "បច្ចុប្បន្ន"
 
-#: playlistcollection.cpp:337
+#: playlistcollection.cpp:353
 msgid "Collection"
 msgstr "សម្រាំង"
 
-#: playlistcollection.cpp:391
+#: playlistcollection.cpp:412
 msgid "Rename"
 msgstr "ប្តូរ​​ឈ្មោះ​"
 
-#: playlistcollection.cpp:505
+#: playlistcollection.cpp:526
 msgid "Search Playlist"
 msgstr "ស្វែងរក​បញ្ជី​លេង"
 
-#: playlistcollection.cpp:522
+#: playlistcollection.cpp:543
 msgid "Create Folder Playlist"
 msgstr "បង្កើត​បញ្ជី​ចាក់​ថត"
 
-#: playlistcollection.cpp:561
+#: playlistcollection.cpp:582
 msgid "History"
 msgstr "ប្រវត្តិ"
 
-#: playlistcollection.cpp:743
+#: playlistcollection.cpp:764
 msgid "Please enter a name for this playlist:"
 msgstr "សូម​បញ្ចូល​ឈ្មោះ​សម្រាប់​បញ្ជី​ចាក់​នេះ ៖"
 
-#: playlistcollection.cpp:853
+#: playlistcollection.cpp:908
 msgctxt "new playlist"
 msgid "&New"
 msgstr "ថ្មី"
 
-#: playlistcollection.cpp:856
+#: playlistcollection.cpp:911
 msgid "&Empty Playlist..."
 msgstr "ទទេ​បញ្ជី​ចាក់..."
 
-#: playlistcollection.cpp:858
+#: playlistcollection.cpp:913
 msgid "&Search Playlist..."
 msgstr "ស្វែងរក​បញ្ជី​ចាក់..."
 
-#: playlistcollection.cpp:860
+#: playlistcollection.cpp:915
 msgid "Playlist From &Folder..."
 msgstr "បញ្ជី​ចាក់​ពី​ថត..."
 
-#: playlistcollection.cpp:866
+#: playlistcollection.cpp:921
 msgid "&Guess Tag Information"
 msgstr "ព័ត៌មាន​ស្លាក​ទាយ"
 
-#: playlistcollection.cpp:871
+#: playlistcollection.cpp:926
 msgid "From &File Name"
 msgstr "ពី​ឈ្មោះ​ឯកសារ"
 
-#: playlistcollection.cpp:873
+#: playlistcollection.cpp:928
 msgid "From &Internet"
 msgstr "ពី​អ៊ីនធឺណិត"
 
-#: playlistcollection.cpp:876
+#: playlistcollection.cpp:931
 msgid "Guess Tag Information From &File Name"
 msgstr "ព័ត៌មាន​ស្លាក​ទាយ​ពី​ឈ្មោះ​ឯកសារ"
 
-#: playlistcollection.cpp:881
+#: playlistcollection.cpp:936
 msgid "Play First Track"
 msgstr "ចាក់​បទ​ទីមួយ"
 
-#: playlistcollection.cpp:882
+#: playlistcollection.cpp:937
 msgid "Play Next Album"
 msgstr "ចាក់​អាល់ប៊ុម​បន្ទាប់"
 
-#: playlistcollection.cpp:888
+#: playlistcollection.cpp:943
 msgid "Manage &Folders..."
 msgstr "គ្រប់គ្រង​ថត..."
 
-#: playlistcollection.cpp:889
+#: playlistcollection.cpp:944
 msgid "&Rename..."
 msgstr "ប្តូរ​ឈ្មោះ..."
 
-#: playlistcollection.cpp:890
+#: playlistcollection.cpp:945
 msgctxt "verb, copy the playlist"
 msgid "D&uplicate..."
 msgstr "ចម្លង..."
 
-#: playlistcollection.cpp:893
+#: playlistcollection.cpp:948
 msgid "Reload"
 msgstr "ផ្ទុក​ឡើងវិញ"
 
-#: playlistcollection.cpp:894
+#: playlistcollection.cpp:949
 msgid "Edit Search..."
 msgstr "កែ​សម្រួល​ការស្វែងរក..."
 
-#: playlistcollection.cpp:896
+#: playlistcollection.cpp:951
 msgid "&Delete"
 msgstr "លុប"
 
-#: playlistcollection.cpp:897
+#: playlistcollection.cpp:952
 msgid "Refresh"
 msgstr "ធ្វើ​ឲ្យ​ស្រស់"
 
-#: playlistcollection.cpp:898
+#: playlistcollection.cpp:953
 msgid "&Rename File"
 msgstr "ប្ដូរ​ឈ្មោះ​ឯកសារ"
 
-#: playlistcollection.cpp:903
+#: playlistcollection.cpp:958
 msgid "&View Cover"
 msgstr "មើល​គម្រប"
 
-#: playlistcollection.cpp:905
+#: playlistcollection.cpp:960
 msgid "Get Cover From &File..."
 msgstr "យក​គម្រប​ពី​ឯកសារ..."
 
-#: playlistcollection.cpp:907
+#: playlistcollection.cpp:962
 msgid "Get Cover From &Internet..."
 msgstr "យក​គម្រប​ពី​អ៊ីនធឺណិត..."
 
-#: playlistcollection.cpp:909
+#: playlistcollection.cpp:964
 msgid "&Delete Cover"
 msgstr "លុប​គម្រប"
 
-#: playlistcollection.cpp:911
+#: playlistcollection.cpp:966
 msgid "Show Cover &Manager"
 msgstr "បង្ហាញ​កម្មវិធី​គ្រប់គ្រង​គម្រប"
 
-#: playlistcollection.cpp:915
+#: playlistcollection.cpp:970
 msgid "Show &Play Queue"
 msgstr "បង្ហាញ​ជួរ​ចាក់"
 
-#: playlistcollection.h:183
+#: playlistcollection.h:190
 msgid "Playlist"
 msgstr "បញ្ជីចាក់"
 
