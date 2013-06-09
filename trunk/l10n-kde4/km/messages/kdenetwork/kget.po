@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kget\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-06-07 01:35+0000\n"
+"POT-Creation-Date: 2013-06-09 01:37+0000\n"
 "PO-Revision-Date: 2012-07-09 10:43+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -416,6 +416,8 @@ msgstr "ម៉ាស៊ីន​បម្រើ​សោ ៖"
 
 #: core/datasourcefactory.cpp:279 core/datasourcefactory.cpp:624
 #: core/kget.cpp:1393 transfer-plugins/metalink/metalink.cpp:202
+#: transfer-plugins/metalink/metalinkhttp.cpp:224
+#: transfer-plugins/metalink/metalinkxml.cpp:199
 #: ui/metalinkcreator/metalinkcreator.cpp:161
 #: ui/metalinkcreator/metalinkcreator.cpp:178
 msgid "Error"
@@ -640,7 +642,8 @@ msgid "You are already downloading the same file"
 msgstr "កំពុង​កំពុង​ទាញយក​ឯកសារ​ដូច​គ្នា​រួច​ហើយ"
 
 #: core/kget.cpp:1123 core/kget.cpp:1126 core/urlchecker.cpp:648
-#: core/urlchecker.cpp:744 transfer-plugins/metalink/metalink.cpp:720
+#: core/urlchecker.cpp:744 transfer-plugins/metalink/abstractmetalink.cpp:483
+#: transfer-plugins/metalink/metalink.cpp:720
 msgid "File already exists"
 msgstr "មាន​ឯកសារ​រួច​ហើយ"
 
@@ -1349,7 +1352,7 @@ msgstr "កម្មវិធី​គ្រប់គ្រង​ការ​ទ
 #| "(C) 2002, Carsten Pfeiffer\n"
 #| "(C) 1998 - 2000, Matej Koss"
 msgid ""
-"(C) 2005 - 2011, The KGet developers\n"
+"(C) 2005 - 2012, The KGet developers\n"
 "(C) 2001 - 2002, Patrick Charbonnier\n"
 "(C) 2002, Carsten Pfeiffer\n"
 "(C) 1998 - 2000, Matej Koss"
@@ -1404,62 +1407,70 @@ msgid "Developer"
 msgstr "អ្នក​អភិវឌ្ឍន៍"
 
 #: main.cpp:120
+msgid "Aish Raj Dahal"
+msgstr ""
+
+#: main.cpp:120
+msgid "Google Summer of Code Student"
+msgstr ""
+
+#: main.cpp:121
 msgid "Ernesto Rodriguez Ortiz"
 msgstr "Ernesto Rodriguez Ortiz"
 
-#: main.cpp:120
+#: main.cpp:121
 msgid "Mms Plugin Author"
 msgstr "អ្នក​និពន្ធ​កម្មវិធី​ជំនួយ Mms"
 
-#: main.cpp:121
+#: main.cpp:122
 msgid "Patrick Charbonnier"
 msgstr "Patrick Charbonnier"
 
-#: main.cpp:121 main.cpp:122 main.cpp:123
+#: main.cpp:122 main.cpp:123 main.cpp:124
 msgid "Former Developer"
 msgstr "អតីត​អ្នក​អភិវឌ្ឍន៍"
 
-#: main.cpp:122
+#: main.cpp:123
 msgid "Carsten Pfeiffer"
 msgstr "Carsten Pfeiffer"
 
-#: main.cpp:123
+#: main.cpp:124
 msgid "Matej Koss"
 msgstr "Matej Koss"
 
-#: main.cpp:124
+#: main.cpp:125
 msgid "Joris Guisson"
 msgstr "Joris Guisson"
 
-#: main.cpp:124
+#: main.cpp:125
 msgid "BTCore (KTorrent) Developer"
 msgstr "អ្នក​អភិវឌ្ឍន៍ BTCore (KTorrent)​"
 
-#: main.cpp:125
+#: main.cpp:126
 msgid "Mensur Zahirovic (Nookie)"
 msgstr "Mensur Zahirovic (Nookie)"
 
-#: main.cpp:125
+#: main.cpp:126
 msgid "Design of Web Interface"
 msgstr "ការ​រចនា​របស់​ចំណុច​ប្រទាក់​បណ្ដាញ"
 
-#: main.cpp:130
+#: main.cpp:131
 msgid "Start KGet with drop target"
 msgstr "ចាប់ផ្ដើម KGet ជាមួយ​គោលដៅ​ទម្លាក់"
 
-#: main.cpp:131
+#: main.cpp:132
 msgid "Start KGet with hidden main window"
 msgstr "ចាប់ផ្ដើម KGet ជាមួយ​បង្អួច​មេ​ដែល​លាក់"
 
-#: main.cpp:132
+#: main.cpp:133
 msgid "Start KGet without drop target animation"
 msgstr "ចាប់ផ្ដើម KGet ជាមួយ​ចលនា​គោលដៅ​ទម្លាក់"
 
-#: main.cpp:134
+#: main.cpp:135
 msgid "Execute Unit Testing"
 msgstr "ប្រតិបត្តិ​ការ​សាកល្បង​ឯកតា"
 
-#: main.cpp:136
+#: main.cpp:137
 msgid "URL(s) to download"
 msgstr "URL ដែល​ត្រូវ​ទាញយក"
 
@@ -2807,6 +2818,15 @@ msgstr "ការ​ទាញយក (%1) មិនអាច​ត្រូវ​
 msgid "Verification failed."
 msgstr "បានបរាជ័យ​ក្នុង​កា​រផ្ទៀងផ្ទាត់"
 
+#: transfer-plugins/metalink/abstractmetalink.cpp:219
+#: transfer-plugins/metalink/metalink.cpp:493
+msgid ""
+"The download could not be verified, do you want to repair (if repairing does "
+"not work the download would be restarted) it?"
+msgstr ""
+"កា​រទាញយក​មិន​អាច​​​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​ទេ តើ​អ្នក​ចង់​ជួសជុលវា​ដែរឬទេ ?​ (ប្រសិនបើ​ការ​ជួសជុល​មិន​ដំណើរការ​ "
+"ការ​ទាញយក​នឹង​ត្រូវ​បាន​ចាប់ផ្ដើម​ឡើង​វិញ)"
+
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: transfer-plugins/metalink/dlgmetalink.ui:22
 msgid "Number of simultaneous file downloads:"
@@ -2835,29 +2855,32 @@ msgid "File Selection"
 msgstr "ការ​ជ្រើស​ឯកសារ"
 
 #: transfer-plugins/metalink/metalink.cpp:83
+#: transfer-plugins/metalink/metalinkxml.cpp:79
 msgid "Downloading Metalink File...."
 msgstr "កំពុង​ទាញយក​ឯកសារ​តំណ​មេតា...."
 
 #: transfer-plugins/metalink/metalink.cpp:117
+#: transfer-plugins/metalink/metalinkxml.cpp:113
 msgid ""
 "A newer version of this Metalink might exist, do you want to download it?"
 msgstr "មាន​កំណែ​ថ្មីជាង​របស់​តំណមេតា​​នេះ តើ​អ្នក​ចង់ទាញយក​វា​ដែរឬទេ ?"
 
 #: transfer-plugins/metalink/metalink.cpp:118
+#: transfer-plugins/metalink/metalinkxml.cpp:114
 msgid "Redownload Metalink"
 msgstr "ទាញយក​តំណ​មេតា​ឡើងវិញ"
 
 #: transfer-plugins/metalink/metalink.cpp:202
+#: transfer-plugins/metalink/metalinkhttp.cpp:224
+#: transfer-plugins/metalink/metalinkxml.cpp:199
 msgid "Download failed, no working URLs were found."
 msgstr "បាន​បរាជ័យ​ក្នុងកា​រទាញយក រក​មិនឃើញ URLs ដំណើរការ ។"
 
-#: transfer-plugins/metalink/metalink.cpp:493
-msgid ""
-"The download could not be verified, do you want to repair (if repairing does "
-"not work the download would be restarted) it?"
-msgstr ""
-"កា​រទាញយក​មិន​អាច​​​ត្រូវ​បាន​ផ្ទៀងផ្ទាត់​ទេ តើ​អ្នក​ចង់​ជួសជុលវា​ដែរឬទេ ?​ (ប្រសិនបើ​ការ​ជួសជុល​មិន​ដំណើរការ​ "
-"ការ​ទាញយក​នឹង​ត្រូវ​បាន​ចាប់ផ្ដើម​ឡើង​វិញ)"
+#: transfer-plugins/metalink/metalinkhttp.cpp:143
+#, fuzzy
+#| msgid "The download (%1) could not be verified. Do you want to repair it?"
+msgid "The download could not be verified, try to repair it?"
+msgstr "ការ​ទាញយក (%1) មិនអាច​ត្រូ​វបាន​ផ្ទៀងផ្ទាត់​ទេ ។ តើ​អ្នក​ចង់​ជួសជុល​វា​ដែរឬទេ ?"
 
 #. i18n: ectx: property (text), widget (QLabel, engineNameLabel)
 #: transfer-plugins/mirrorsearch/dlgengineediting.ui:16
@@ -4112,8 +4135,3 @@ msgstr "ផ្ទៀងផ្ទាត់"
 #: ui/verificationdialog.ui:71
 msgid "Verifying:"
 msgstr "កា​រផ្ទៀងផ្ទាត់ ៖"
-
-#, fuzzy
-#~| msgid "The download (%1) could not be verified. Do you want to repair it?"
-#~ msgid "The download could not be verified, try to repair it?"
-#~ msgstr "ការ​ទាញយក (%1) មិនអាច​ត្រូ​វបាន​ផ្ទៀងផ្ទាត់​ទេ ។ តើ​អ្នក​ចង់​ជួសជុល​វា​ដែរឬទេ ?"
