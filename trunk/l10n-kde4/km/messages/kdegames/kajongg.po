@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmj\n"
 "Report-Msgid-Bugs-To: wolfgang@rohdewald.de\n"
-"POT-Creation-Date: 2012-09-20 04:24+0200\n"
+"POT-Creation-Date: 2013-07-24 01:37+0000\n"
 "PO-Revision-Date: 2013-01-02 09:50+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -244,7 +244,7 @@ msgstr "អ្នក​មិនអាច​និយាយ​​ %1"
 msgid "You are already connected to server %1"
 msgstr "អ្នក​បាន​តភ្ជាប់​ទៅ​ម៉ាស៊ីន​បម្រើ​រួចហើយ %1"
 
-#: src/humanclient.py:687 src/humanclient.py:1048
+#: src/humanclient.py:687 src/humanclient.py:1055
 msgid "removed stale socket <filename>%1</filename>"
 msgstr "បាន​យក​រន្ធ​ចាស់​ចេញ​ហើយ​​ <filename>%1</filename>"
 
@@ -272,16 +272,20 @@ msgstr "សម្រាប់​ដៃ​បន្ទាប់​រួចហើ
 msgid "Aborted creating a user account"
 msgstr "បាន​បោះ​បង់​​ការ​បង្កើត​គណនី​អ្នក​ប្រើ​"
 
-#: src/humanclient.py:1035
+#: src/humanclient.py:1016
+msgid "DNS lookup failed, address not found"
+msgstr ""
+
+#: src/humanclient.py:1042
 msgctxt "USER is not known on SERVER"
 msgid "%1 is not known on %2, do you want to open an account?"
 msgstr "%1 មិន​ស្គាល់​កំហុស​​លើ​ %2 តើ​អ្នក​ចង់​បើក​គណនី​ឬ ?"
 
-#: src/humanclient.py:1049
+#: src/humanclient.py:1056
 msgid "Please try again"
 msgstr "សូម​ព្យាយាម​ម្ដងទៀត"
 
-#: src/humanclient.py:1166
+#: src/humanclient.py:1173
 msgid "The connection to the server %1 broke, please try again later."
 msgstr "ការ​តភ្ជាប់​ទៅកាន់​ម៉ាស៊ីន​បម្រើ​​ %1 បាន​ខូច​​ សូម​ព្យាយាម​ម្ដង​ទៀត​​ពេលក្រោយ​ ។​"
 
@@ -604,32 +608,32 @@ msgstr "N"
 msgid "You cannot or do not want to claim this tile"
 msgstr "អ្នក​មិន​អាច ឬ​មិន​ចង់​អះអាង​ក្រឡា​ក្បឿង​នេះ"
 
-#: src/player.py:424
+#: src/player.py:425
 msgid "%1 claiming MahJongg: She does not really have tile %2"
 msgstr "%1 ការ​ទាម​ទា​រ​ MahJongg ៖ គាត់​ពិត​ជា​មិន​មាន​ក្រឡា​ក្បឿង %2"
 
-#: src/player.py:429
+#: src/player.py:430
 msgid ""
 "%1 claiming MahJongg: She did not pass all concealed tiles to the server"
 msgstr "%1 ការ​ទាម​ទារ​​​ MahJongg ៖ គាត់​​មិនបាន​ហុច​គ្រប់​​ក្រឡា​ក្បឿង​ដែល​បាន​លាក់​​ទៅកាន់​ម៉ាស៊ីន​បម្រើ​ឡើយ​​"
 
-#: src/player.py:537
+#: src/player.py:538
 msgid "Player %1 has 3 or 4 exposed melds, all are green"
 msgstr "អ្នកលេង %1 មាន​ពុម្ព​ដែល​បង្ហាញ ៣ ឬ ៤ ដែល​ពណ៌​បៃតង​ទាំងអស់"
 
-#: src/player.py:545
+#: src/player.py:546
 msgid "Player %1 may try a True Color Game"
 msgstr "អ្នកលេង %1 អាច​សាកល្បង​លេង​ល្បែង​ពណ៌​ពិត"
 
-#: src/player.py:548
+#: src/player.py:549
 msgid "Player %1 may try an All Terminals Game"
 msgstr "អ្នកលេង %1 អាច​សាកល្បង​លេង​ល្បែង Terminals ទាំងអស់"
 
-#: src/player.py:559
+#: src/player.py:560
 msgid "Player %1 exposed many winds"
 msgstr "អ្នកលេង %1 បាន​បង្ហាញ​ខ្យល់​ជាច្រើន"
 
-#: src/player.py:562
+#: src/player.py:563
 msgid "Player %1 exposed many dragons"
 msgstr "អ្នកលេង %1 បាន​បង្ហាញ​នាគ​ជាច្រើន"
 
@@ -750,7 +754,10 @@ msgid "Manual Game"
 msgstr "ល្បែង​លេង​ដោយដៃ"
 
 #: src/playfield.py:730
-msgctxt "@info:tooltip"
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "&Score a manual game."
+msgctxt "kajongg @info:tooltip"
 msgid "&Score a manual game."
 msgstr "ល្បែង​ដាក់​ពិន្ទុ​ដោយ​ដៃ ។"
 
@@ -760,7 +767,10 @@ msgid "&Play"
 msgstr "លេង"
 
 #: src/playfield.py:734
-msgctxt "@info:tooltip"
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Start a new game."
+msgctxt "kajongg @info:tooltip"
 msgid "Start a new game."
 msgstr "ចាប់ផ្ដើម​ល្បែង​ថ្មី ។"
 
@@ -770,7 +780,10 @@ msgid "&Abort Game"
 msgstr "បោះបង់​ល្បែង"
 
 #: src/playfield.py:738
-msgctxt "@info:tooltip"
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Abort the current game."
+msgctxt "kajongg @info:tooltip"
 msgid "Abort the current game."
 msgstr "បោះបង់​ល្បែង​បច្ចុប្បន្ន ។"
 
@@ -785,7 +798,10 @@ msgid "&Players"
 msgstr "អ្នកលេង"
 
 #: src/playfield.py:744
-msgctxt "@info:tooltip"
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "define your players."
+msgctxt "kajongg @info:tooltip"
 msgid "define your players."
 msgstr "កំណត់​អ្នកលេង​របស់អ្នក ។"
 
@@ -800,7 +816,10 @@ msgid "Angle"
 msgstr "មុំ"
 
 #: src/playfield.py:748
-msgctxt "@info:tooltip"
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Change the visual appearance of the tiles."
+msgctxt "kajongg @info:tooltip"
 msgid "Change the visual appearance of the tiles."
 msgstr "ផ្លាស់ប្ដូរ​រូបរាង​ក្រឡាក្បឿង ។"
 
@@ -814,65 +833,78 @@ msgctxt "@action:intoolbar"
 msgid "&Scoring"
 msgstr "ដាក់​ពិន្ទុ"
 
-#: src/playfield.py:752
-msgctxt "@info:tooltip"
+#: src/playfield.py:753
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Show or hide the scoring editor for a manual game."
+msgctxt "kajongg @info:tooltip"
 msgid "Show or hide the scoring editor for a manual game."
 msgstr "បង្ហាញ​ឬ​លាក់​កម្មវិធី​កែសម្រួល​ពិន្ទុ​សម្រាប់​ល្បែង​លេង​ដោយដៃ ។"
 
-#: src/playfield.py:754
+#: src/playfield.py:755
 msgctxt "kajongg @action:inmenu"
 msgid "&Score Table"
 msgstr "តារាង​ពិន្ទុ"
 
-#: src/playfield.py:755
+#: src/playfield.py:756
 msgctxt "kajongg @action:intoolbar"
 msgid "&Scores"
 msgstr "ពិន្ទុ"
 
-#: src/playfield.py:757
+#: src/playfield.py:758
 msgctxt "kajongg @info:tooltip"
 msgid "Show or hide the score table for the current game."
 msgstr "បង្ហាញ ឬ​លាក់​តារាង​ពិន្ទុ​សម្រាប់​ល្បែង​បច្ចុប្បន្ន ។"
 
-#: src/playfield.py:759
+#: src/playfield.py:760
 msgctxt "@action:inmenu"
 msgid "&Explain Scores"
 msgstr "ពន្យល់​អំពី​ពិន្ទុ"
 
-#: src/playfield.py:760
+#: src/playfield.py:761
 msgctxt "@action:intoolbar"
 msgid "&Explain"
 msgstr "ពន្យល់"
 
-#: src/playfield.py:762
-msgctxt "@info:tooltip"
+#: src/playfield.py:763
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Explain the scoring for all players in the current game."
+msgctxt "kajongg @info:tooltip"
 msgid "Explain the scoring for all players in the current game."
 msgstr "ពន្យល់​អំពី​ការ​ដាក់​ពិន្ទុ​សម្រាប់​អ្នកលេង​ទាំងអស់​នៅ​ក្នុង​ល្បែង​បច្ចុប្បន្ន ។"
 
-#: src/playfield.py:764
+#: src/playfield.py:765
 msgctxt "@action:inmenu"
 msgid "&Demo Mode"
 msgstr "របៀប​បង្ហាញ​សាក​ល្បង"
 
-#: src/playfield.py:767
-msgctxt "@info:tooltip"
+#: src/playfield.py:768
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid ""
+#| "Let the computer take over for you. Start a new local game if needed."
+msgctxt "kajongg @info:tooltip"
 msgid "Let the computer take over for you. Start a new local game if needed."
 msgstr "អនុញ្ញាត​ឲ្យ​កុំព្យូទ័រ​គ្រប់គ្រង​អ្នក ។ ចាប់ផ្ដើម​ល្បែង​មូលដ្ឋាន​ថ្មី ប្រសិនបើ​ចាំបាច់ ។"
 
-#: src/playfield.py:769
+#: src/playfield.py:770
 msgid "C&hat"
 msgstr "ជជែក"
 
-#: src/playfield.py:770
-msgctxt "@info:tooltip"
+#: src/playfield.py:771
+#, fuzzy
+#| msgctxt "@info:tooltip"
+#| msgid "Chat with the other players."
+msgctxt "kajongg @info:tooltip"
 msgid "Chat with the other players."
 msgstr "ជជែកជាមួយ​អ្នកលេង​ផ្សេងទៀត ។"
 
-#: src/playfield.py:787
+#: src/playfield.py:788
 msgid "Please define four players in <interface>Settings|Players</interface>"
 msgstr "សូម​កំណត់​អ្នក​លេង​បួន​នាក់​នៅ​ក្នុង <interface>ការ​កំណត់|អ្នក​លេង</interface>"
 
-#: src/playfield.py:817
+#: src/playfield.py:818
 msgid "You have no network connection (error code %1)."
 msgstr "អ្នក​មិន​បាន​តភ្ជាប់​បណ្ដាញ (កូដ​កំហុស %1) ។"
 
@@ -1665,12 +1697,12 @@ msgctxt "Ruleset._newKey:%1 is empty or space plus number"
 msgid "Copy%1 of %2"
 msgstr "ច្បាប់​ចម្លង​ %1 នៃ​ %2"
 
-#: src/rule.py:720
+#: src/rule.py:721
 msgctxt "%1 can be a sentence"
 msgid "%4 have impossible values %2/%3 in rule \"%1\""
 msgstr "%4 មាន​តម្លៃ​ដែល​មិន​អាច​ប្រើ​បាន​​​ %2/%3 ក្នុង​ក្បួន​​ \"%1\""
 
-#: src/rule.py:728
+#: src/rule.py:729
 msgctxt "wrong value for rule"
 msgid "%1: %2 is too small, minimal value is %3"
 msgstr "%1: %2 តូច​ពេក តម្លៃ​អប្បបរមា​គឺ %3"
@@ -1885,54 +1917,54 @@ msgstr "%1 បាន​និយាយ​ខុស​ %2 ៖ ទាម​ទា�
 msgid "declareKong:%1 wrongly said Kong for meld %2"
 msgstr "declareKong ៖ %1 ​​​ Kong បាន​និយាយ​ខុស​សម្រាប់​ការ​បញ្ចូល​គ្នា​​​ %2"
 
-#: src/server.py:676
+#: src/server.py:674
 msgid "%1 claiming MahJongg: This is not a winning hand: %2"
 msgstr "%1 ការ​ទាម​ទារ​​ MahJongg ៖​ នេះ​មិនមែន​ជា​ដៃ​ដែល​ឈ្នះ​​ ៖​ %2​ ទេ​"
 
-#: src/server.py:819 src/server.py:858
+#: src/server.py:817 src/server.py:856
 msgid "table with id <numid>%1</numid> not found"
 msgstr "រក​មិន​ឃើញ​​ <numid>%1</numid> តារាង​ដែល​​មាន​លេខ​សម្គាល់​​"
 
-#: src/server.py:915
+#: src/server.py:913
 msgid "Player %1 has logged out"
 msgstr "អ្នក​លេង​​ %1 បាន​ចេញ​​"
 
-#: src/server.py:965
+#: src/server.py:963
 msgctxt "table status"
 msgid "Suspended"
 msgstr "បាន​ផ្អាក"
 
-#: src/server.py:999
+#: src/server.py:997
 msgid ""
 "Your client has a version older than 4.9.0 but you need %1 for this server"
 msgstr "កម្មវិធី​របស់​អ្នក​មាន​កំណែ​ចាស់​ជាង 4.9.0 ប៉ុន្តែ​អ្នក​ត្រូវការ %1 សម្រាប់​ម៉ាស៊ីន​បម្រើ​នេះ"
 
-#: src/server.py:1008
+#: src/server.py:1006
 msgid "Your client has version %1 but you need %2 for this server"
 msgstr "កម្មវិធី​របស់​អ្នក​មាន​កំណែ %1 ប៉ុន្តែ​អ្នក​ត្រូវការ %2 សម្រាប់​ម៉ាស៊ីន​បម្រើ​នេះ"
 
-#: src/server.py:1065
+#: src/server.py:1063
 #, python-format
 msgid "the server will listen on PORT (%d)"
 msgstr "ម៉ាស៊ីន​បម្រើ​នឹង​ស្ដាប់​លើ​ច្រក (%d)"
 
-#: src/server.py:1068
+#: src/server.py:1066
 msgid "the server will listen on SOCKET"
 msgstr "ម៉ាស៊ីន​បម្រើ​នឹង​ស្ដាប់​លើ​រន្ធ"
 
-#: src/server.py:1069
+#: src/server.py:1067
 msgid "name of the database"
 msgstr "ឈ្មោះ​របស់​មូលដ្ឋាន​ទិន្នន័យ​​​"
 
-#: src/server.py:1071
+#: src/server.py:1069
 msgid "start a local game server"
 msgstr "ចាប់ផ្ដើម​ម៉ាស៊ីន​បម្រើ​ល្បែង​មូលដ្ឋាន"
 
-#: src/server.py:1073
+#: src/server.py:1071
 msgid "do not terminate local game server after last client disconnects"
 msgstr "កុំ​បញ្ចប់​ដំណើរការ​ម៉ាស៊ីន​បម្រើ​ល្បែង​មូលដ្ឋាន បន្ទាប់ពី​កម្មវិធី​ចុងក្រោយ​ត្រូវ​បាន​ផ្ដាច់"
 
-#: src/server.py:1078
+#: src/server.py:1076
 msgid "unrecognized arguments:%1"
 msgstr "អាគុយម៉ង់​​ដែល​មិន​បាន​ទទួល​​ស្គាល់​ ៖​ %1"
 
@@ -1940,7 +1972,7 @@ msgstr "អាគុយម៉ង់​​ដែល​មិន​បាន​ទ
 msgid "No voices will be heard because the program %1 is missing"
 msgstr "នឹង​គ្មាន​សំឡេង​បន្លឺ​ឡើង​ទេ ដោយ​សារ​តែ​បាត់​កម្មវិធី %1"
 
-#: src/sound.py:308
+#: src/sound.py:309
 msgid "cannot write <filename>%1</filename>: %2"
 msgstr "មិន​អាច​សរសេរ <filename>%1</filename> ៖ %2"
 
