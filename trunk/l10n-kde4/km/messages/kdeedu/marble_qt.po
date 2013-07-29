@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2013-07-25 01:36+0000\n"
+"POT-Creation-Date: 2013-07-29 01:35+0000\n"
 "PO-Revision-Date: 2008-12-02 15:23+0700\n"
 "Last-Translator: Eng Vannak <evannak@khmeros.info>\n"
 "Language-Team: km <support@khmeros.info>\n"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "Marble - Virtual Globe"
 msgstr "Marble - Virtual Globe"
 
-#: src/ControlView.cpp:392 src/lib/routing/RoutingManager.cpp:393
+#: src/ControlView.cpp:392 src/lib/routing/RoutingManager.cpp:390
 msgid "The Marble development team wishes you a pleasant and safe journey."
 msgstr "ក្រុម​អភិវឌ្ឍ Marble សូម​ជូនពរ​ឲ្យ​អ្នក​ធ្វើដំណើរ​ប្រកបដោយ​សុវត្ថិភាព ។"
 
@@ -48,7 +48,7 @@ msgstr ""
 "សេចក្ដី​ណែនាំ​អំពី​ផ្លូវ អាកាសធាតុ និង​ការ​ប្រែប្រួល​ដោយ​ចៃដន្យ​ដែល​បង្ហាញ​នៅ​ក្នុង​ព័ត៌មាន​ផ្លូវ​បាន​ស្នើ មិនមែន​"
 "ជា​ផ្លូវ​ដែល​ងាយស្រួល និង​សុវត្ថិភាព​បំផុត​សម្រាប់​ទៅកាន់​ទិសដៅ​របស់​អ្នក​នោះ​ទេ ។"
 
-#: src/ControlView.cpp:395 src/lib/routing/RoutingManager.cpp:392
+#: src/ControlView.cpp:395 src/lib/routing/RoutingManager.cpp:389
 msgid "Please use common sense while navigating."
 msgstr "សូម​ប្រើ​វា​ដោយ​ប្រុងប្រយ័ត្ន​នៅ​ពេល​រុករក ។"
 
@@ -1535,9 +1535,9 @@ msgstr "ការ​រុករក"
 msgid "File View"
 msgstr "ការ​មើល​ឯកសារ"
 
-#: src/lib/MarbleControlBox.cpp:187 src/lib/routing/RoutingInputWidget.cpp:284
+#: src/lib/MarbleControlBox.cpp:187 src/lib/routing/RoutingInputWidget.cpp:310
+#: src/lib/routing/RoutingManager.cpp:436
 #: src/lib/routing/RoutingManager.cpp:439
-#: src/lib/routing/RoutingManager.cpp:442
 msgid "Current Location"
 msgstr "ទីតាំង​បច្ចុប្បន្ន"
 
@@ -1940,37 +1940,45 @@ msgstr "ចេញ​ទៅ​ឆ្វេង​នៅ​លើ %1 ។"
 msgid "Take the exit to the right onto %1."
 msgstr "ចេញ​ទៅ​ស្ដាំ​នៅ​លើ %1 ។"
 
-#: src/lib/routing/RoutingInputWidget.cpp:108
+#: src/lib/routing/RoutingInputWidget.cpp:113
+#, fuzzy, qt-format
+#| msgctxt "DayOfWeek: Condition, MinTemp to MaxTemp"
+#| msgid "%1: %2, %3 to %4"
+msgctxt "An address with parameters %1=house number, %2=road, %3=city"
+msgid "%1 %2, %3"
+msgstr "%1 ៖ %2, %3 ទៅ %4"
+
+#: src/lib/routing/RoutingInputWidget.cpp:134
 msgid "Address or search term..."
 msgstr "អាសយដ្ឋាន ឬ​ពាក្យ​ស្វែងរក..."
 
-#: src/lib/routing/RoutingInputWidget.cpp:141
+#: src/lib/routing/RoutingInputWidget.cpp:167
 #, fuzzy
 #| msgid "Remove Map"
 msgid "Remove via point"
 msgstr "យក​ផែនទី​ចេញ"
 
-#: src/lib/routing/RoutingInputWidget.cpp:158
+#: src/lib/routing/RoutingInputWidget.cpp:184
 msgid "&Center Map here"
 msgstr "ផែនទី​ចំណុច​កណ្ដាល​នៅ​ទីនេះ"
 
-#: src/lib/routing/RoutingInputWidget.cpp:162
+#: src/lib/routing/RoutingInputWidget.cpp:188
 msgid "Current &Location"
 msgstr "ទីតាំង​បច្ចុប្បន្ន"
 
-#: src/lib/routing/RoutingInputWidget.cpp:166
+#: src/lib/routing/RoutingInputWidget.cpp:192
 msgid "From &Map..."
 msgstr "ពី​ផែនទី..."
 
-#: src/lib/routing/RoutingInputWidget.cpp:170
+#: src/lib/routing/RoutingInputWidget.cpp:196
 msgid "From &Bookmark"
 msgstr "ពី​ចំណាំ"
 
-#: src/lib/routing/RoutingInputWidget.cpp:179
+#: src/lib/routing/RoutingInputWidget.cpp:205
 msgid "&Home"
 msgstr "ផ្ទះ"
 
-#: src/lib/routing/RoutingInputWidget.cpp:468
+#: src/lib/routing/RoutingInputWidget.cpp:490
 msgid "Choose Placemark"
 msgstr "ជ្រើស​សញ្ញា​សម្គាល់​កន្លែង"
 
@@ -1990,11 +1998,11 @@ msgstr "នាំចេញ​ផ្លូវ"
 msgid "GPX and KML files (*.gpx *.kml)"
 msgstr "ឯកសារ GPX និង KML (*.gpx *.kml)"
 
-#: src/lib/routing/RoutingManager.cpp:390
+#: src/lib/routing/RoutingManager.cpp:387
 msgid "Caution: Driving instructions may be incomplete or wrong."
 msgstr "ព្រមាន ៖ ការ​បង្រៀន​បើកបរ​ប្រហែលជា​មិន​បាន​បញ្ចប់ ឬខុស ។"
 
-#: src/lib/routing/RoutingManager.cpp:391
+#: src/lib/routing/RoutingManager.cpp:388
 msgid ""
 "Road construction, weather and other unforeseen variables can result in the "
 "suggested route not to be the most expedient or safest route to your "
@@ -2003,11 +2011,11 @@ msgstr ""
 "សេចក្ដី​ណែនាំ​អំពី​ផ្លូវ អាកាសធាតុ និង​ការ​ប្រែប្រួល​ដោយ​ចៃដន្យ​ដែល​បង្ហាញ​នៅ​ក្នុង​ព័ត៌មាន​ផ្លូវ​បាន​ស្នើ មិនមែន​"
 "ជា​ផ្លូវ​ដែល​ងាយស្រួល និង​សុវត្ថិភាព​បំផុត​សម្រាប់​ទៅកាន់​ទិសដៅ​របស់​អ្នក​នោះ​ទេ ។"
 
-#: src/lib/routing/RoutingManager.cpp:394
+#: src/lib/routing/RoutingManager.cpp:391
 msgid "Guidance Mode - Marble"
 msgstr "របៀប​នាំ​ផ្លូវ - Marble"
 
-#: src/lib/routing/RoutingManager.cpp:395
+#: src/lib/routing/RoutingManager.cpp:392
 msgid "Show again"
 msgstr "បង្ហាញ​ម្ដងទៀត"
 
