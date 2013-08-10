@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-06-30 01:29+0000\n"
+"POT-Creation-Date: 2013-08-10 05:22+0000\n"
 "PO-Revision-Date: 2010-06-24 10:42+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -179,7 +179,7 @@ msgid ""
 "schedule by selecting <em>Add Schedule</em> in the toolbar.</"
 "li><li>Calculate the schedule by selecting <em>Calculate</em> in the toolbar."
 "</li></ul>The task should now have been scheduled to start %1 with a "
-"duration of 8 hours. You can check this by selecting the Gantt chart "
+"duration of 8 hours. You can check this by selecting the gantt chart "
 "<em>Views->Gantt</em>."
 msgstr ""
 "ជ្រើស​កម្មវិធី​​កែសម្រួល​ភារកិច្ច <em> កម្មវិធី​កែសម្រួល​ -> ភារកិច្ច​ </em>:<ul><li> បង្កើត​ភារកិច្ច​"
@@ -222,7 +222,7 @@ msgid ""
 "project again with the new allocation:<br/>Select the schedules editor "
 "<em>Editors->Schedules</em> and calculate the schedule by selecting "
 "<em>Calculate</em> in the toolbar.<p>The task should be scheduled to start "
-"%1 with a duration of 8 hours. You can check this by selecting the Gantt "
+"%1 with a duration of 8 hours. You can check this by selecting the gantt "
 "chart <em>Views->Gantt</em>.<p>"
 msgstr ""
 "ជ្រើស​កម្មវិធី​កែសម្រួល​ភារកិច្ច​ <em> កម្មវិធី​កែសម្រួល​ -> ភារកិច្ច​ </em>:<ul><li> បញ្ចូល​ឈ្មោះ​ "
@@ -256,7 +256,7 @@ msgid "File-Format Error"
 msgstr "កំហុស​​​ធ្វើ​ទ្រង់ទ្រាយ​ឯកសារ​"
 
 #: KPlatoXmlLoader.cpp:73 KPlatoXmlLoader.cpp:85 KPlatoXmlLoader.cpp:127
-#: kptmaindocument.cpp:231 kptmaindocument.cpp:518
+#: kptpart.cpp:231 kptpart.cpp:518
 msgid "Continue"
 msgstr "បន្ត"
 
@@ -276,8 +276,8 @@ msgstr ""
 "%1)\n"
 "ការ​បើក​វា​នៅ​ក្នុង​កំណែ​នេះ​​នៃ ​Plan ​នឹង​បាត់បង់​ព័ត៌មាន​មួយ​ចំនួន ។"
 
-#: KPlatoXmlLoader.cpp:85 KPlatoXmlLoader.cpp:127 kptmaindocument.cpp:231
-#: kptmaindocument.cpp:518
+#: KPlatoXmlLoader.cpp:85 KPlatoXmlLoader.cpp:127 kptpart.cpp:231
+#: kptpart.cpp:518
 msgid "File-Format Mismatch"
 msgstr "មិន​ផ្គូផ្គង​ទ្រង់ទ្រាយ​ឯកសារ"
 
@@ -294,7 +294,7 @@ msgstr ""
 #: kptaboutdata.h:32
 #, fuzzy
 #| msgid "KPlato is a Project Planning and Management application."
-msgid "Project Planning and Management Tool"
+msgid "Calligra Plan - KDE Project Planning and Management Tool"
 msgstr "Calligra Plan - ឧបករណ៍​ការ​គ្រប់គ្រង​ និង​ការ​កសាង​ផែនការ​គម្រោង KDE"
 
 #: kptaboutdata.h:37
@@ -307,7 +307,7 @@ msgstr "Plan"
 #: kptaboutdata.h:39
 #, fuzzy
 #| msgid "(c) 1998-2011, The Plan Team"
-msgid "Copyright (C) 1998-2013, The Plan Team"
+msgid "(c) 1998-2012, The Plan Team"
 msgstr "រក្សា​សិទ្ធ​ឆ្នាំ ១៩៩៨-២០១១ ដោយ​ក្រុមPlan"
 
 #: kptaboutdata.h:42
@@ -325,6 +325,14 @@ msgstr "Dag Andersen"
 #: kptaboutdata.h:45
 msgid "Raphael Langerhorst"
 msgstr "Raphael Langerhorst"
+
+#: kptaboutdata.h:46
+msgid "Nuno Pinheiro and Danny Allen"
+msgstr "Nuno Pinheiro និង Danny Allen"
+
+#: kptaboutdata.h:46
+msgid "Application icon for plan"
+msgstr "រូបតំណាង​កម្មវិធី plan"
 
 #: kptbuiltinschedulerplugin.cpp:38
 #, fuzzy
@@ -420,34 +428,34 @@ msgstr "ភារកិច្ច​"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_12)
-#: kptcolorsconfigpanel.ui:243 kptcolorsconfigpanel.ui:385
+#: kptcolorsconfigpanel.ui:243 kptcolorsconfigpanel.ui:373
 msgctxt "@label:chooser"
 msgid "Normal:"
 msgstr "ធម្មតា ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #. i18n: ectx: property (text), widget (QLabel, label_14)
-#: kptcolorsconfigpanel.ui:275 kptcolorsconfigpanel.ui:417
+#: kptcolorsconfigpanel.ui:272 kptcolorsconfigpanel.ui:402
 msgctxt "@label:chooser"
 msgid "Critical:"
 msgstr "សំខាន់​បំផុត ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #. i18n: ectx: property (text), widget (QLabel, label_13)
-#: kptcolorsconfigpanel.ui:307 kptcolorsconfigpanel.ui:449
+#: kptcolorsconfigpanel.ui:301 kptcolorsconfigpanel.ui:431
 msgctxt "@label:chooser"
 msgid "Finished:"
 msgstr "បាន​បញ្ចប់ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #. i18n: ectx: property (text), widget (QLabel, label_11)
-#: kptcolorsconfigpanel.ui:339 kptcolorsconfigpanel.ui:481
+#: kptcolorsconfigpanel.ui:330 kptcolorsconfigpanel.ui:460
 msgctxt "@label:chooser"
 msgid "Error:"
 msgstr "កំហុស ៖"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_3)
-#: kptcolorsconfigpanel.ui:373
+#: kptcolorsconfigpanel.ui:361
 msgctxt "@title:tab"
 msgid "Milestone"
 msgstr "ដំណាក់កាល"
@@ -484,7 +492,7 @@ msgstr "ទូទៅ"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Leader)
-#: kptconfigtaskpanelbase.ui:33 kptconfigtaskpanelbase.ui:65
+#: kptconfigtaskpanelbase.ui:41 kptconfigtaskpanelbase.ui:65
 msgid ""
 "The person responsible for this task.\n"
 "\n"
@@ -498,7 +506,7 @@ msgstr ""
 "សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក​ដោយ​ផ្ទាល់​ផង​ដែរ ដោយ​ចុច​ប៊ូតុង​ជ្រើស ។"
 
 #. i18n: ectx: property (text), widget (QLabel, leaderlabel)
-#: kptconfigtaskpanelbase.ui:36
+#: kptconfigtaskpanelbase.ui:44
 msgid "Responsible:"
 msgstr "អ្នក​ទទួល​ខុសត្រូវ ៖"
 
@@ -523,117 +531,117 @@ msgid "Scheduling constraint:"
 msgstr "កា​រដាក់កម្រិត​កាលវិភាគ ៖"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
-#: kptconfigtaskpanelbase.ui:119
+#: kptconfigtaskpanelbase.ui:116
 msgid "As Soon as Possible"
 msgstr "ឆាប់ តាម​តែ​អាច​ធ្វើ​បាន"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
-#: kptconfigtaskpanelbase.ui:124
+#: kptconfigtaskpanelbase.ui:121
 msgid "As Late as Possible"
 msgstr "យឺត តាម​តែ​អាច​ធ្វើ​បាន"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
-#: kptconfigtaskpanelbase.ui:129
+#: kptconfigtaskpanelbase.ui:126
 msgid "Must Start On"
 msgstr "ត្រូវ​តែ​ចាប់​ផ្តើ​ម​នៅ​ថ្ងៃ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
-#: kptconfigtaskpanelbase.ui:134
+#: kptconfigtaskpanelbase.ui:131
 msgid "Must Finish On"
 msgstr "ត្រូវ​តែ​បញ្ចប់​នៅ​ថ្ងៃ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
-#: kptconfigtaskpanelbase.ui:139
+#: kptconfigtaskpanelbase.ui:136
 msgid "Start Not Earlier Than"
 msgstr "ចាប់ផ្ដើម​កុំ​ឲ្យ​មុន"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
-#: kptconfigtaskpanelbase.ui:144
+#: kptconfigtaskpanelbase.ui:141
 msgid "Finish Not Later Than"
 msgstr "បញ្ចប់​កុំ​ឲ្យ​ក្រោយ"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_ConstraintType)
-#: kptconfigtaskpanelbase.ui:149
+#: kptconfigtaskpanelbase.ui:146
 msgid "Fixed Interval"
 msgstr "ចន្លោះពេល​ថេរ"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_5)
-#: kptconfigtaskpanelbase.ui:163
+#: kptconfigtaskpanelbase.ui:160
 msgid "Constraint Start time usage:"
 msgstr "ការ​ប្រើប្រាស់​ពេលវេលា​ដាក់កម្រិត​ចាប់ផ្ដើម ៖"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartTimeUsage)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EndTimeUsage)
-#: kptconfigtaskpanelbase.ui:186 kptconfigtaskpanelbase.ui:262
+#: kptconfigtaskpanelbase.ui:180 kptconfigtaskpanelbase.ui:250
 msgid "Current date and time"
 msgstr "កាល​បរិច្ឆេទ និង​ពេល​វេលា​បច្ចុប្បន្ន"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartTimeUsage)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EndTimeUsage)
-#: kptconfigtaskpanelbase.ui:191 kptconfigtaskpanelbase.ui:267
+#: kptconfigtaskpanelbase.ui:185 kptconfigtaskpanelbase.ui:255
 msgid "Current date, specified time"
 msgstr "កាលបរិច្ឆេទ​បច្ចុប្បន្ន ពេលវេលា​ដែល​បានបញ្ជាក់"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_StartTimeUsage)
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EndTimeUsage)
-#: kptconfigtaskpanelbase.ui:196 kptconfigtaskpanelbase.ui:272
+#: kptconfigtaskpanelbase.ui:190 kptconfigtaskpanelbase.ui:260
 msgid "Specified date and time"
 msgstr "ពេលវេលា និង​កាលបរិច្ឆេទ​ដែល​បាន​បញ្ជាក់"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_3)
-#: kptconfigtaskpanelbase.ui:210
+#: kptconfigtaskpanelbase.ui:204
 msgid "Constraint start time:"
 msgstr "ពេលវេលា​ចាប់ផ្ដើម​ដាក់កម្រិត ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_6)
-#: kptconfigtaskpanelbase.ui:239
+#: kptconfigtaskpanelbase.ui:230
 msgid "Constraint End time usage:"
 msgstr "កា​រប្រើប្រាស់​ពេលវេលា​ដាក់កម្រិត​បញ្ចប់ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_4)
-#: kptconfigtaskpanelbase.ui:286
+#: kptconfigtaskpanelbase.ui:274
 msgid "Constraint end time:"
 msgstr "ពេលវេលា​បញ្ចប់​ដាក់កម្រិត ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_7)
-#: kptconfigtaskpanelbase.ui:322
+#: kptconfigtaskpanelbase.ui:307
 msgid "Estimate type:"
 msgstr "ប្រភេទ​វាយតម្លៃ ៖"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EstimateType)
-#: kptconfigtaskpanelbase.ui:348
+#: kptconfigtaskpanelbase.ui:330
 msgid "Effort"
 msgstr "កិច្ចប្រឹងប្រែង"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, kcfg_EstimateType)
-#: kptconfigtaskpanelbase.ui:353
+#: kptconfigtaskpanelbase.ui:335
 msgid "Duration"
 msgstr "ថិរវេលា"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3_8)
-#: kptconfigtaskpanelbase.ui:367
+#: kptconfigtaskpanelbase.ui:349
 msgid "Expected estimate:"
 msgstr "ការ​ប៉ាន់ស្មាន​ដែល​បាន​រំពឹង​ទុក ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1_3)
-#: kptconfigtaskpanelbase.ui:399
+#: kptconfigtaskpanelbase.ui:378
 msgid "Optimistic estimate:"
 msgstr "ការ​វាយតម្លៃ​សុទិដ្ឋិនិយម ៖"
 
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_OptimisticRatio)
 #. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_PessimisticRatio)
-#: kptconfigtaskpanelbase.ui:415 kptconfigtaskpanelbase.ui:450
+#: kptconfigtaskpanelbase.ui:391 kptconfigtaskpanelbase.ui:426
 #, no-c-format
 msgid "%"
 msgstr "%"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2_2)
-#: kptconfigtaskpanelbase.ui:434
+#: kptconfigtaskpanelbase.ui:410
 msgid "Pessimistic estimate:"
 msgstr "ការ​វាយតម្លៃ​ទុទិដ្ឋិនិយម ៖"
 
 #. i18n: ectx: attribute (title), widget (QWidget, widget)
-#: kptconfigtaskpanelbase.ui:481
+#: kptconfigtaskpanelbase.ui:457
 msgid "Description"
 msgstr "សេចក្ដី​ពិពណ៌នា"
 
@@ -661,18 +669,18 @@ msgstr "បញ្ចូល​ជាកូន​ទៅកាន់​ថ្នា
 msgid "Insert after current node"
 msgstr "បញ្ចូល​បន្ទាប់​ពី​ថ្នាំង​បច្ចុប្បន្ន"
 
-#: kptmaindocument.cpp:183 kptmaindocument.cpp:492
+#: kptpart.cpp:184 kptpart.cpp:492
 msgid "Invalid document. No mimetype specified."
 msgstr "ឯកសារ​មិន​ត្រឹមត្រូវ ។ មិន​បាន​បញ្ជាក់ mimetype ។"
 
-#: kptmaindocument.cpp:222
+#: kptpart.cpp:222
 #, fuzzy, kde-format
 #| msgid ""
 #| "Invalid document. Expected mimetype application/x-vnd.kde.kplato, got %1"
 msgid "Invalid document. Expected mimetype application/x-vnd.kde.plan, got %1"
 msgstr "ឯកសារ​មិន​ត្រឹមត្រូវ ។ កម្មវិធី​ប្រភេទ mime ដែល​រំពឹង​ទុក /x-vnd.kde.plan បាន​ទទួល %1"
 
-#: kptmaindocument.cpp:229
+#: kptpart.cpp:229
 #, fuzzy, kde-format
 #| msgid ""
 #| "This document was created with a newer version of KPlato (syntax version: "
@@ -685,28 +693,28 @@ msgstr ""
 "ឯកសារ​នេះ​ត្រូវ​បាន​បង្កើត​ជា​មួយ​នឹង​កំណែ​ថ្មី​ជាង​នៃ​ Plan (កំណែ​វាក្យ​សម្ព័ន្ធ ៖ %1)\n"
 "ការ​បើក​វា​នៅ​ក្នុង​កំណែ​នេះ​នៃ ​Plan​ នឹង​បាត់បង់​ព័ត៌មាន​មួយ​ចំនួន ។"
 
-#: kptmaindocument.cpp:383
+#: kptpart.cpp:383
 #, kde-format
 msgid "Could not create the workpackage file for saving: %1"
 msgstr "មិន​អាច​បង្កើត​ឯកសារ​កញ្ចប់​ការងារ​សម្រាប់​រក្សាទុក ៖ %1"
 
-#: kptmaindocument.cpp:391
+#: kptpart.cpp:391
 #, kde-format
 msgid "Not able to write '%1'. Partition full?"
 msgstr "មិនអាច​សរសេរ '%1' ។ ភាគ​ថាស​ពេញ ?"
 
-#: kptmaindocument.cpp:418
+#: kptpart.cpp:418
 msgid "Saving..."
 msgstr "រក្សាទុក..."
 
-#: kptmaindocument.cpp:509
+#: kptpart.cpp:509
 #, kde-format
 msgid ""
 "Invalid document. Expected mimetype application/x-vnd.kde.plan.work, got %1"
 msgstr ""
 "ឯកសារ​មិន​ត្រឹមត្រូវ ។ កម្មវិធី​ប្រភេទ mime ដែល​រំពឹង​ទុក/x-vnd.kde.kplato.work បាន​ទទួល %1​"
 
-#: kptmaindocument.cpp:516
+#: kptpart.cpp:516
 #, kde-format
 msgid ""
 "This document was created with a newer version of PlanWork (syntax version: "
@@ -716,26 +724,22 @@ msgstr ""
 "ឯកសារ​នេះ​ត្រូវ​បាន​បង្កើត​ជា​មួយ​នឹង​កំណែ​ថ្មី​ជាង​របស់  PlanWork (កំណែ​វាក្យសម្ព័ន្ធ ៖ %1)\n"
 "ការ​បើក​វា​នៅ​ក្នុង​កំណែ​នេះ​របស់PlanWorkនឹង​បាត់បង់​ព័ត៌មាន​មួយ​ចំនួន ។"
 
-#: kptmaindocument.cpp:672
+#: kptpart.cpp:672
 msgid "New work packages detected. Merge data with existing tasks?"
 msgstr ""
 
-#: kptmaindocument.cpp:766
+#: kptpart.cpp:766
 #, kde-format
 msgid ""
 "The package owner '%1' is not a resource in this project. You must handle "
 "this manually."
 msgstr "ម្ចាស់​កញ្ចប់​ '%1' ​មិន​មែន​ជា​ធន​ធាន​នៅ​ក្នុង​គម្រោង​នេះទេ ។ អ្នក​ត្រូវ​តែ​ដោះស្រាយ​វា​ដោយ​ដៃ​ ។"
 
-#: kptmaindocument.cpp:832
+#: kptpart.cpp:832
 msgid "Nothing to save from this package"
 msgstr "គ្មាន​អ្វី​ត្រូវ​​រក្សា​ទុក​ពីកញ្ចប់​នេះទេ"
 
-#: kptmaindocument.cpp:980
-msgid "Internal error, failed to insert file."
-msgstr ""
-
-#: kptmaindocument.cpp:1008
+#: kptpart.cpp:1006
 #, fuzzy
 #| msgid "Insert project"
 msgctxt "(qtundo-format)"
@@ -750,304 +754,289 @@ msgstr "កំណត់​ពេល​កម្មវិធីជ្រើស"
 msgid "&Create Template From Document..."
 msgstr "បង្កើត​ពុម្ព​ពី​ឯកសារ..."
 
-#: kptview.cpp:276
-#, fuzzy
-#| msgid "Create Report..."
-msgid "&Create New Project..."
-msgstr "បង្កើត​របាយ​ការណ៍..."
-
-#: kptview.cpp:288
+#: kptview.cpp:284
 msgid "Show Selector"
 msgstr "បង្ហាញ​កម្មវិធី​ជ្រើស"
 
-#: kptview.cpp:295
+#: kptview.cpp:291
 msgid "Edit Main Project..."
 msgstr "កែសម្រួល​គម្រោង​មេ​..."
 
-#: kptview.cpp:299
+#: kptview.cpp:295
 msgid "Define Estimate Conversions..."
 msgstr "កំណត់​ប៉ាន់ស្មាន​ការ​បម្លែង..."
 
-#: kptview.cpp:305
+#: kptview.cpp:301
 msgid "Define WBS Pattern..."
 msgstr "កំណត់​លំនាំ WBS..."
 
-#: kptview.cpp:309
+#: kptview.cpp:305
 msgid "Insert Project File..."
 msgstr "បញ្ចូលឯកសារ​គម្រោង..."
 
-#: kptview.cpp:314
+#: kptview.cpp:310
 msgid "Configure Plan..."
 msgstr "កំណត់ រចនាសម្ព័ន្ធ Plan..."
 
-#: kptview.cpp:318
+#: kptview.cpp:314
 msgid "Define Currency..."
 msgstr "កំណត់រូបិយប័ណ្ណ..."
 
-#: kptview.cpp:322
+#: kptview.cpp:318
 msgid "Open Report Definition File..."
 msgstr ""
 
-#: kptview.cpp:327
+#: kptview.cpp:323
 msgid "Introduction to Plan"
 msgstr "ការណែនាំ​ទៅកាន់ Plan "
 
-#: kptview.cpp:332
+#: kptview.cpp:328
 msgid "Edit..."
 msgstr "កែសម្រួល..."
 
-#: kptview.cpp:335
+#: kptview.cpp:331
 msgid "Progress..."
 msgstr "វឌ្ឍនភាព..."
 
-#: kptview.cpp:338
+#: kptview.cpp:334
 msgid "Delete Task"
 msgstr "លុបភារកិច្ច"
 
-#: kptview.cpp:341
+#: kptview.cpp:337
 msgid "Description..."
 msgstr "សេចក្ដី​ពិពណ៌នា..."
 
-#: kptview.cpp:344
+#: kptview.cpp:340
 msgid "Indent Task"
 msgstr "ចូល​បន្ទាត់​ភារកិច្ច​"
 
-#: kptview.cpp:347
+#: kptview.cpp:343
 msgid "Unindent Task"
 msgstr "ចេញ​បន្ទាត់​ភារកិច្ច"
 
-#: kptview.cpp:350
+#: kptview.cpp:346
 msgid "Move Task Up"
 msgstr "ផ្លាស់ទីភារកិច្ច​ឡើង​លើ"
 
-#: kptview.cpp:353
+#: kptview.cpp:349
 msgid "Move Task Down"
 msgstr "ផ្លាស់​ទីភារ​កិច្ច​ចុះក្រោម"
 
-#: kptview.cpp:357
+#: kptview.cpp:353
 msgid "Edit Resource..."
 msgstr "កែសម្រួលធនធាន..."
 
-#: kptview.cpp:361
+#: kptview.cpp:357
 msgid "Edit Dependency..."
 msgstr "កែសម្រួល​ភាព​អាស្រ័យ..."
 
-#: kptview.cpp:364
+#: kptview.cpp:360
 msgid "Delete Dependency"
 msgstr "លុប​ភាព​អាស្រ័យ"
 
-#: kptview.cpp:468
-msgctxt "@info"
-msgid ""
-"<note>This action cannot be undone.</note><nl/><nl/>Create a new Project "
-"from the current project with new project- and task identities.<nl/"
-">Resource- and calendar identities are not changed.<nl/>All scheduling "
-"information is removed.<nl/><nl/>Do you want to continue?"
-msgstr ""
-
-#: kptview.cpp:584 kptview.cpp:3084
+#: kptview.cpp:563 kptview.cpp:3062
 msgid "Task Status Report"
 msgstr "របាយការណ៍​ស្ថានភាព​ភារកិច្ច"
 
-#: kptview.cpp:655
+#: kptview.cpp:634
 msgid "Work & Vacation"
 msgstr "ការងារ​​ និង​ការ​សម្រាក"
 
-#: kptview.cpp:656
+#: kptview.cpp:635
 msgctxt "@info:tooltip"
 msgid "Edit working- and vacation days for resources"
 msgstr "កែសម្រួល​ការងារ និង​ថ្ងៃ​សម្រាក​សម្រាប់​ធនធាន​"
 
-#: kptview.cpp:658
+#: kptview.cpp:637
 msgid "Cost Breakdown Structure"
 msgstr "រចនាសម្ព័ន្ធ​កា​រចែក​តម្លៃ"
 
-#: kptview.cpp:659
+#: kptview.cpp:638
 #, fuzzy
 #| msgid "Edit cost breakdown structure."
 msgctxt "@info:tooltip"
 msgid "Edit cost breakdown structure."
 msgstr "កែសម្រួល​រចនាសម្ព័ន្ធ​ការ​ចែក​តម្លៃ ។"
 
-#: kptview.cpp:661
+#: kptview.cpp:640
 msgid "Resources"
 msgstr "ធនធាន"
 
-#: kptview.cpp:662
+#: kptview.cpp:641
 #, fuzzy
 #| msgid "Edit resource breakdown structure"
 msgctxt "@info:tooltip"
 msgid "Edit resource breakdown structure"
 msgstr "កែសម្រួល​រចនាសម្ព័ន្ធ​ការ​ចែក​ធនធាន"
 
-#: kptview.cpp:664
+#: kptview.cpp:643
 msgid "Tasks"
 msgstr "ភារកិច្ច"
 
-#: kptview.cpp:665
+#: kptview.cpp:644
 #, fuzzy
 #| msgid "Edit work breakdown structure"
 msgctxt "@info:tooltip"
 msgid "Edit work breakdown structure"
 msgstr "កែសម្រួល​រចនាសម្ព័ន្ធ​ការ​ចែក​ការងារ"
 
-#: kptview.cpp:667
+#: kptview.cpp:646
 msgid "Dependencies (Graphic)"
 msgstr "ភាព​អាស្រ័យ (ក្រាហ្វិក)"
 
-#: kptview.cpp:668 kptview.cpp:671
+#: kptview.cpp:647 kptview.cpp:650
 #, fuzzy
 #| msgid "Edit task dependencies"
 msgctxt "@info:tooltip"
 msgid "Edit task dependencies"
 msgstr "កែសម្រួល​ភាព​អាស្រ័យ​ភារកិច្ច"
 
-#: kptview.cpp:670
+#: kptview.cpp:649
 msgid "Dependencies (List)"
 msgstr "ភាព​អាស្រ័យ (បញ្ជី)"
 
-#: kptview.cpp:674 kptview.cpp:677
+#: kptview.cpp:653 kptview.cpp:656
 msgid "Schedules"
 msgstr "កាលវិភាគ"
 
-#: kptview.cpp:678
+#: kptview.cpp:657
 msgctxt "@info:tooltip"
 msgid "Calculate and analyze project schedules"
 msgstr "គណនា និង​វិភាគ​កាលវិភាគ​គម្រោង​"
 
-#: kptview.cpp:680 kptviewlistdialog.cpp:109
+#: kptview.cpp:659 kptviewlistdialog.cpp:112
 msgid "Project Performance Chart"
 msgstr "គំនូស​តាង​​អនុវត្ត​គម្រោង"
 
-#: kptview.cpp:681
+#: kptview.cpp:660
 msgctxt "@info:tooltip"
 msgid "View project status information"
 msgstr "មើល​ព័ត៌មាន​ស្ថានភាព​គម្រោង​"
 
-#: kptview.cpp:683 kptviewlistdialog.cpp:101
+#: kptview.cpp:662 kptviewlistdialog.cpp:104
 msgid "Task Status"
 msgstr "ស្ថានភាព​ភារកិច្ច"
 
-#: kptview.cpp:684
+#: kptview.cpp:663
 msgctxt "@info:tooltip"
 msgid "View task progress information"
 msgstr "មើល​ព័ត៌មាន​វឌ្ឍនភាព​ភារកិច្ច​​"
 
-#: kptview.cpp:686
+#: kptview.cpp:665
 msgid "Task Execution"
 msgstr "ការ​ប្រតិបត្តិ​ភារកិច្ច​"
 
-#: kptview.cpp:687
+#: kptview.cpp:666
 msgctxt "@info:tooltip"
 msgid "View task execution information"
 msgstr "មើល​ព័ត៌មាន​ប្រតិបត្តិ​ភារកិច្ច​"
 
-#: kptview.cpp:689 kptviewlistdialog.cpp:103
+#: kptview.cpp:668 kptviewlistdialog.cpp:106
 msgid "Work Package View"
 msgstr "ទិដ្ឋភាព​កញ្ចប់​ការងារ"
 
-#: kptview.cpp:690
+#: kptview.cpp:669
 msgctxt "@info:tooltip"
 msgid "View task work package information"
 msgstr "បង្ហាញ​ព័ត៌មាន​កញ្ចប់​​ការងារ​ភារកិច្ច​"
 
-#: kptview.cpp:692
+#: kptview.cpp:671
 msgid "Gantt"
 msgstr "ហ្កាន់"
 
-#: kptview.cpp:693
+#: kptview.cpp:672
 #, fuzzy
 #| msgctxt "@info:tooltip"
 #| msgid "View gantt chart"
 msgctxt "@info:tooltip"
-msgid "View Gantt chart"
+msgid "View gantt chart"
 msgstr "មើល​គំនូស​តាង gantt​"
 
-#: kptview.cpp:695
+#: kptview.cpp:674
 msgid "Milestone Gantt"
 msgstr "ដំណាក់កាល​របស់ Gantt​"
 
-#: kptview.cpp:696
+#: kptview.cpp:675
 #, fuzzy
 #| msgctxt "@info:tooltip"
 #| msgid "View milestone gantt chart"
 msgctxt "@info:tooltip"
-msgid "View milestone Gantt chart"
+msgid "View milestone gantt chart"
 msgstr "មើល​​ដំណាក់កាល​របស់គំនូស​តាង gantt​"
 
-#: kptview.cpp:698 kptviewlistdialog.cpp:106
+#: kptview.cpp:677 kptviewlistdialog.cpp:109
 msgid "Resource Assignments"
 msgstr "ការ​ផ្ដល់​ធនធាន"
 
-#: kptview.cpp:699
+#: kptview.cpp:678
 #, fuzzy
 #| msgid "View resource assignments in gantt chart"
 msgctxt "@info:tooltip"
 msgid "View resource assignments in a table"
 msgstr "មើល​ការ​ផ្ដល់​តម្លៃ​ធន​ធាន​នៅ​ក្នុង​​​​តារាង"
 
-#: kptview.cpp:701 kptviewlistdialog.cpp:107
+#: kptview.cpp:680 kptviewlistdialog.cpp:110
 msgid "Resource Assignments (Gantt)"
 msgstr "​ការ​ផ្ដល់​​​ធនធាន (Gantt)"
 
-#: kptview.cpp:702
+#: kptview.cpp:681
 #, fuzzy
 #| msgctxt "@info:tooltip"
 #| msgid "View resource assignments in gantt chart"
 msgctxt "@info:tooltip"
-msgid "View resource assignments in Gantt chart"
+msgid "View resource assignments in gantt chart"
 msgstr "មើល​ការ​ផ្ដល់​តម្លៃ​ធន​ធាន​នៅ​ក្នុង​គំនូស​តាង​ gantt​"
 
-#: kptview.cpp:704 kptviewlistdialog.cpp:108
+#: kptview.cpp:683 kptviewlistdialog.cpp:111
 msgid "Cost Breakdown"
 msgstr "ការ​ចែក​តម្លៃ"
 
-#: kptview.cpp:705
+#: kptview.cpp:684
 #, fuzzy
 #| msgid "View planned and actual cost"
 msgctxt "@info:tooltip"
 msgid "View planned and actual cost"
 msgstr "មើល​តម្លៃ​ជាក់លាក់ និង​បានគ្រោង​ទុក"
 
-#: kptview.cpp:707 kptviewlistdialog.cpp:110
+#: kptview.cpp:686 kptviewlistdialog.cpp:113
 msgid "Tasks Performance Chart"
 msgstr "គំនូស​តាង​​អនុវត្ត​ភារកិច្ច"
 
-#: kptview.cpp:708
+#: kptview.cpp:687
 msgctxt "@info:tooltip"
 msgid "View tasks performance status information"
 msgstr "មើល​ព័ត៌មាន​ស្ថានភាព​​អនុវត្ត​ភារកិច្ច​"
 
-#: kptview.cpp:710 kptview.cpp:3057 kptviewlistdialog.cpp:111
-#: kptviewlistdialog.cpp:521
+#: kptview.cpp:689 kptview.cpp:3035 kptviewlistdialog.cpp:114
+#: kptviewlistdialog.cpp:533
 msgid "Report"
 msgstr "របាយការណ៍"
 
-#: kptview.cpp:711
+#: kptview.cpp:690
 msgctxt "@info:tooltip"
 msgid "View report"
 msgstr "មើល​របាយ​ការណ៍​"
 
-#: kptview.cpp:722
+#: kptview.cpp:701
 msgid "Editors"
 msgstr "កម្មវិធី​កែសម្រួល​"
 
-#: kptview.cpp:724
+#: kptview.cpp:703
 msgid "Views"
 msgstr "ទិដ្ឋភាព​"
 
-#: kptview.cpp:726
+#: kptview.cpp:705
 #, fuzzy
 #| msgid "Task Execution"
 msgctxt "Project execution views"
 msgid "Execution"
 msgstr "ការ​ប្រតិបត្តិ​ភារកិច្ច​"
 
-#: kptview.cpp:728
+#: kptview.cpp:707
 msgid "Reports"
 msgstr "របាយ​ការណ៍"
 
-#: kptview.cpp:1672
+#: kptview.cpp:1650
 #, fuzzy, kde-format
 #| msgctxt "@info:status 1=schedule name"
 #| msgid "Calculate %1"
@@ -1055,82 +1044,82 @@ msgctxt "(qtundo-format) @info:status 1=schedule name"
 msgid "Calculate %1"
 msgstr "គណនា %1"
 
-#: kptview.cpp:1691
+#: kptview.cpp:1669
 msgid "Cannot baseline. The project is already baselined."
 msgstr "មិន​អាច​បង្កើត​បន្ទាត់​មូលដ្ឋាន ។ គម្រោង​ត្រូវ​បាន​បង្កើត​បន្ទាត់​មូលដ្ឋាន​រួច​ហើយ ។"
 
-#: kptview.cpp:1696
+#: kptview.cpp:1674
 msgid "This schedule is baselined. Do you want to remove the baseline?"
 msgstr "កាលវិភាគ​នេះ​ត្រូវ​បានកំណត់​បន្ទាត់​មូលដ្ឋាន ។ តើ​អ្នក​ចង់​យក​បន្ទាត់​មូលដ្ឋាន​ចេញ​ឬទេ ?"
 
-#: kptview.cpp:1700
+#: kptview.cpp:1678
 #, fuzzy, kde-format
 #| msgid "Reset baseline %1"
 msgctxt "(qtundo-format)"
 msgid "Reset baseline %1"
 msgstr "កំណត់​បន្ទាត់​មូលដ្ឋាន %1 ឡើង​វិញ"
 
-#: kptview.cpp:1702
+#: kptview.cpp:1680
 #, fuzzy, kde-format
 #| msgid "Baseline %1"
 msgctxt "(qtundo-format)"
 msgid "Baseline %1"
 msgstr "បន្ទាត់​មូលដ្ឋាន %1"
 
-#: kptview.cpp:1713
+#: kptview.cpp:1691
 #, fuzzy, kde-format
 #| msgid "Add schedule %1"
 msgctxt "(qtundo-format)"
 msgid "Add schedule %1"
 msgstr "បន្ថែម​កាលវិភាគ​ %1"
 
-#: kptview.cpp:1722
+#: kptview.cpp:1700
 #, fuzzy, kde-format
 #| msgid "Delete schedule %1"
 msgctxt "(qtundo-format)"
 msgid "Delete schedule %1"
 msgstr "លុប​កាលវិភាគ​ %1"
 
-#: kptview.cpp:1731
+#: kptview.cpp:1709
 #, fuzzy, kde-format
 #| msgid "Move schedule %1"
 msgctxt "(qtundo-format)"
 msgid "Move schedule %1"
 msgstr "ផ្លាស់​ទី​កាលវិភាគ​ %1"
 
-#: kptview.cpp:1800
+#: kptview.cpp:1778
 #, fuzzy
 #| msgid "Add milestone"
 msgctxt "(qtundo-format)"
 msgid "Add milestone"
 msgstr "បន្ថែម​ដំណាក់កាល"
 
-#: kptview.cpp:1826
+#: kptview.cpp:1804
 #, fuzzy
 #| msgid "Add sub-milestone"
 msgctxt "(qtundo-format)"
 msgid "Add sub-milestone"
 msgstr "បន្ថែម​ដំណាក់កាលរង"
 
-#: kptview.cpp:1867
+#: kptview.cpp:1845
 msgid "Task Defaults"
 msgstr "លំនាំដើម​ភារកិច្ច"
 
-#: kptview.cpp:1868
+#: kptview.cpp:1846
 msgid "Task Colors"
 msgstr "ពណ៌​ភារកិច្ច​"
 
-#: kptview.cpp:1869
+#: kptview.cpp:1847
 msgid "Work Package"
 msgstr "កញ្ចប់​ការងារ"
 
-#: kptview.cpp:2191
+#: kptview.cpp:2169
 msgid ""
 "A task that has been scheduled will be deleted. This will invalidate the "
 "schedule."
 msgstr "ភារកិច្ច​ដែល​ត្រូវ​បាន​កំណត់​ពេល​នឹង​ត្រូវ​បានលុប ។ វា​នឹង​ធ្វើ​ឲ្យ​កាលវិភាគ​គ្មាន​សុពលភាព ។"
 
-#: kptview.cpp:2199 kptview.cpp:2203 kptview.cpp:2219 kptview.cpp:2243
+#: kptview.cpp:2177 kptview.cpp:2181 kptview.cpp:2197 kptview.cpp:2221
 #, fuzzy
 #| msgid "Delete task"
 #| msgid_plural "Delete tasks"
@@ -1139,53 +1128,53 @@ msgid "Delete task"
 msgid_plural "Delete tasks"
 msgstr[0] "លុបភារកិច្ច"
 
-#: kptview.cpp:2238
+#: kptview.cpp:2216
 msgid "This task has been scheduled. This will invalidate the schedule."
 msgstr "ភារកិច្ច​ត្រូវ​បាន​កំណត់ពេល ។ វា​នឹង​ធ្វើ​ឲ្យ​កាលវិភាគ​គ្មាន​សុពលភាព ។"
 
-#: kptview.cpp:2262
+#: kptview.cpp:2240
 #, fuzzy
 #| msgid "Indent task"
 msgctxt "(qtundo-format)"
 msgid "Indent task"
 msgstr "ចូល​បន្ទាត់​ភារកិច្ច​"
 
-#: kptview.cpp:2276
+#: kptview.cpp:2254
 #, fuzzy
 #| msgid "Unindent task"
 msgctxt "(qtundo-format)"
 msgid "Unindent task"
 msgstr "ចេញ​បន្ទាត់​ភារកិច្ច"
 
-#: kptview.cpp:2298
+#: kptview.cpp:2276
 #, fuzzy
 #| msgid "Move task up"
 msgctxt "(qtundo-format)"
 msgid "Move task up"
 msgstr "ផ្លាស់ទីភារកិច្ច​ឡើង​លើ"
 
-#: kptview.cpp:2319
+#: kptview.cpp:2297
 #, fuzzy
 #| msgid "Move task down"
 msgctxt "(qtundo-format)"
 msgid "Move task down"
 msgstr "ផ្លាស់ទីភារកិច្ច​ចុះក្រោម"
 
-#: kptview.cpp:2357
+#: kptview.cpp:2335
 #, fuzzy
 #| msgid "Add task dependency"
 msgctxt "(qtundo-format)"
 msgid "Add task dependency"
 msgstr "កែសម្រួល​ភាព​អាស្រ័យ​ភារកិច្ច"
 
-#: kptview.cpp:2420
+#: kptview.cpp:2398
 #, fuzzy
 #| msgid "Delete task dependency"
 msgctxt "(qtundo-format)"
 msgid "Delete task dependency"
 msgstr "លុប​ភាព​អាស្រ័យ​ភារកិច្ច"
 
-#: kptview.cpp:2459
+#: kptview.cpp:2437
 #, fuzzy
 #| msgid "Delete resource"
 #| msgid_plural "Delete resources"
@@ -1193,7 +1182,7 @@ msgctxt "(qtundo-format)"
 msgid "Delete resource"
 msgstr "លុបធនធាន"
 
-#: kptview.cpp:2464
+#: kptview.cpp:2442
 #, fuzzy
 #| msgid "Delete resourcegroup"
 #| msgid_plural "Delete resourcegroups"
@@ -1201,27 +1190,27 @@ msgctxt "(qtundo-format)"
 msgid "Delete resourcegroup"
 msgstr "លុប​ក្រុមធនធាន​"
 
-#: kptview.cpp:2473 kptview.cpp:2481
+#: kptview.cpp:2451 kptview.cpp:2459
 msgid ""
 "A resource that has been scheduled will be deleted. This will invalidate the "
 "schedule."
 msgstr "ធនធាន​ដែល​ត្រូ​វបាន​កំណត់​ពេលវេលា​នឹង​ត្រូវ​បាន​លុប ។ វា​នឹង​ធ្វើ​ឲ្យ​កាលវិភាគ​គ្មាន​សុពលភាព ។"
 
-#: kptview.cpp:2518
+#: kptview.cpp:2496
 msgid "Delete resourcegroups and resources"
 msgstr "លុប​ក្រុម​ធន​ធាន​ និង​ធនធាន"
 
-#: kptview.cpp:2520
+#: kptview.cpp:2498
 msgid "Delete resource"
 msgid_plural "Delete resources"
 msgstr[0] "លុបធនធាន"
 
-#: kptview.cpp:2522
+#: kptview.cpp:2500
 msgid "Delete resourcegroup"
 msgid_plural "Delete resourcegroups"
 msgstr[0] "លុប​ក្រុមធនធាន​"
 
-#: kptview.cpp:2706
+#: kptview.cpp:2684
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Cannot open file:</br><filename>%1</filename>"
@@ -1229,47 +1218,47 @@ msgctxt "@info"
 msgid "Cannot open file:<br/><filename>%1</filename>"
 msgstr "មិន​អាច​បើក​ឯកសារ​ ៖</br><filename>%1</filename>"
 
-#: kptview.cpp:2836
+#: kptview.cpp:2814
 msgid "Modify name"
 msgstr "កែប្រែឈ្មោះ"
 
-#: kptview.cpp:2838
+#: kptview.cpp:2816
 msgid "Modify task name"
 msgstr "កែប្រែ​ឈ្មោះ​ភារកិច្ច"
 
-#: kptview.cpp:2839
+#: kptview.cpp:2817
 msgid "Modify milestone name"
 msgstr "កែប្រែ​ឈ្មោះ​ដំណាក់​កាល"
 
-#: kptview.cpp:2840
+#: kptview.cpp:2818
 msgid "Modify summarytask name"
 msgstr "កែប្រែ​ឈ្មោះ​ភារកិច្ច​សង្ខេប"
 
-#: kptview.cpp:2841
+#: kptview.cpp:2819
 msgid "Modify project name"
 msgstr "កែប្រែ​ឈ្មោះ​គម្រោង"
 
-#: kptview.cpp:2927
+#: kptview.cpp:2905
 msgctxt "@info:status"
 msgid "Not scheduled"
 msgstr "មិន​បាន​កំណត់​ពេល"
 
-#: kptview.cpp:2943 kptview.cpp:2983
+#: kptview.cpp:2921 kptview.cpp:2961
 msgid "Failed to open temporary file"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បើក​ឯកសារ​បណ្ដោះ​អាសន្ន"
 
-#: kptview.cpp:2950
+#: kptview.cpp:2928
 #, kde-format
 msgctxt "@info"
 msgid "Failed to save to temporary file:<br/> <filename>%1</filename>"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រក្សា​ទុក​ឯកសារ​បណ្តោះ​អាសន្ន ៖<br/> <filename>%1</filename>"
 
-#: kptview.cpp:2958
+#: kptview.cpp:2936
 #, kde-format
 msgid "Work Package: %1"
 msgstr "កញ្ចប់​ការងារ ៖ %1"
 
-#: kptview.cpp:2959
+#: kptview.cpp:2937
 #, kde-format
 msgctxt "1=project name, 2=task name"
 msgid ""
@@ -1279,42 +1268,42 @@ msgstr ""
 "%1\n"
 "%2"
 
-#: kptview.cpp:2973
+#: kptview.cpp:2951
 #, kde-format
 msgid "Work Package for project: %1"
 msgstr "កញ្ចប់​ការងារសម្រាប់​គម្រោង​ ៖ %1"
 
-#: kptview.cpp:2990
+#: kptview.cpp:2968
 #, kde-format
 msgctxt "@info"
 msgid "Failed to save to temporary file:<br><filename>%1</filename>"
 msgstr ""
 "បាន​បរាជ័យ​ក្នុង​ការរក្សា​ទុក​ឯកសារ​ទៅ​កាន់​ឯកសារ​បណ្តោះ​អាសន្ន​ ៖<br><filename>%1</filename>"
 
-#: kptview.cpp:3067
+#: kptview.cpp:3045
 msgctxt "Project manager"
 msgid "Manager:"
 msgstr "កម្មវិធី​គ្រប់គ្រង ៖"
 
-#: kptview.cpp:3075
+#: kptview.cpp:3053
 msgid "Project:"
 msgstr "គម្រោង​​"
 
-#: kptview.cpp:3098
+#: kptview.cpp:3076
 msgctxt "As in: Page 1 of 2"
 msgid "of"
 msgstr "នៃ"
 
-#: kptview.cpp:3102
+#: kptview.cpp:3080
 msgid "Page"
 msgstr "ទំព័រ"
 
-#: kptview.cpp:3113
+#: kptview.cpp:3091
 msgctxt "Task name"
 msgid "Name"
 msgstr "ឈ្មោះ ៖​"
 
-#: kptview.cpp:3121
+#: kptview.cpp:3099
 msgctxt "Task completion"
 msgid "Completion (%)"
 msgstr "ការ​បញ្ចប់ (%)"
@@ -1386,25 +1375,25 @@ msgid "Category:"
 msgstr "ប្រភេទ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: kptviewlistaddview.ui:49 kptviewlisteditcategory.ui:20
-#: kptviewlisteditview.ui:49
+#: kptviewlistaddview.ui:43 kptviewlisteditcategory.ui:20
+#: kptviewlisteditview.ui:43
 msgid "After"
 msgstr "បន្ទាប់​ពី"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: kptviewlistaddview.ui:69
+#: kptviewlistaddview.ui:63
 msgid "View type:"
 msgstr "ប្រភេទ​ទិដ្ឋភាព ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: kptviewlistaddview.ui:86 kptviewlisteditcategory.ui:40
-#: kptviewlisteditview.ui:69
+#: kptviewlistaddview.ui:80 kptviewlisteditcategory.ui:40
+#: kptviewlisteditview.ui:63
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
-#: kptviewlistaddview.ui:99 kptviewlisteditcategory.ui:53
-#: kptviewlisteditview.ui:82
+#: kptviewlistaddview.ui:93 kptviewlisteditcategory.ui:53
+#: kptviewlisteditview.ui:76
 msgid "Tip:"
 msgstr "ព័ត៌មាន​ជំនួយ ៖"
 
@@ -1413,62 +1402,62 @@ msgctxt "@title:window"
 msgid "Add View"
 msgstr "បន្ថែម​ទិដ្ឋភាព"
 
-#: kptviewlistdialog.cpp:94
+#: kptviewlistdialog.cpp:97
 msgid "Resource Editor"
 msgstr "កម្មវិធី​កែសម្រួល​ធនធាន"
 
-#: kptviewlistdialog.cpp:95
+#: kptviewlistdialog.cpp:98
 msgid "Task Editor"
 msgstr "កម្មវិធី​កែសម្រួល​ភារកិច្ច"
 
-#: kptviewlistdialog.cpp:96
+#: kptviewlistdialog.cpp:99
 msgid "Work & Vacation Editor"
 msgstr "កម្មវិធី​និពន្ធ​ការងារ និង​ការ​សម្រាក"
 
-#: kptviewlistdialog.cpp:97
+#: kptviewlistdialog.cpp:100
 msgid "Accounts Editor"
 msgstr "កម្មវិធី​កែសម្រួល​គណនី​"
 
-#: kptviewlistdialog.cpp:98
+#: kptviewlistdialog.cpp:101
 msgid "Dependency Editor (Graphic)"
 msgstr "កម្មវិធី​កែសម្រួល​ភាព​អាស្រ័យ (ក្រាហ្វិក)"
 
-#: kptviewlistdialog.cpp:99
+#: kptviewlistdialog.cpp:102
 msgid "Dependency Editor (List)"
 msgstr "កម្មវិធី​កែសម្រួល​ភាព​អាស្រ័យ (បញ្ជី)"
 
-#: kptviewlistdialog.cpp:100
+#: kptviewlistdialog.cpp:103
 msgid "Schedule Handler"
 msgstr "កម្មវិធី​គ្រប់គ្រង​កាលវិភាគ"
 
-#: kptviewlistdialog.cpp:102
+#: kptviewlistdialog.cpp:105
 msgid "Task View"
 msgstr "ទិដ្ឋភាព​ភារកិច្ច"
 
-#: kptviewlistdialog.cpp:104
+#: kptviewlistdialog.cpp:107
 msgid "Gantt View"
 msgstr "ទិដ្ឋភាព Gantt"
 
-#: kptviewlistdialog.cpp:105
+#: kptviewlistdialog.cpp:108
 msgid "Milestone Gantt View"
 msgstr "ទិដ្ឋភាព​ដំណាក់កាល​របស់ Gantt"
 
-#: kptviewlistdialog.cpp:177 kptviewlistdialog.cpp:373
-#: kptviewlistdialog.cpp:462 kptviewlistdialog.cpp:586
+#: kptviewlistdialog.cpp:180 kptviewlistdialog.cpp:379
+#: kptviewlistdialog.cpp:471 kptviewlistdialog.cpp:598
 msgid "Top"
 msgstr "កំពូល"
 
-#: kptviewlistdialog.cpp:278
+#: kptviewlistdialog.cpp:281
 msgctxt "@title:window"
 msgid "Configure View"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ទិដ្ឋភាព"
 
-#: kptviewlistdialog.cpp:392
+#: kptviewlistdialog.cpp:398
 msgctxt "@title:window"
 msgid "Configure Category"
 msgstr "កំណត់រចនាសម្ព័ន្ធ​​ប្រភេទ"
 
-#: kptviewlistdialog.cpp:480
+#: kptviewlistdialog.cpp:489
 msgctxt "@title:window"
 msgid "Add Report"
 msgstr "បន្ថែម​របាយ​ការណ៍"
@@ -1563,7 +1552,7 @@ msgstr "រក្សា​ទុក​ឯកសារ​បន្ទាប់​
 msgid "Save URL:"
 msgstr "រក្សាទុក​ URL ៖"
 
-#: main.cpp:50
+#: main.cpp:32
 msgid "File to open"
 msgstr "ឯកសារ​ត្រូវ​បើក"
 
@@ -1573,37 +1562,37 @@ msgid "&File"
 msgstr "ឯកសារ"
 
 #. i18n: ectx: Menu (edit)
-#: plan.rc:9
+#: plan.rc:8
 msgid "&Edit"
 msgstr "កែសម្រួល"
 
 #. i18n: ectx: Menu (view)
-#: plan.rc:35 plan_readonly.rc:3
+#: plan.rc:34 plan_readonly.rc:3
 msgid "&View"
 msgstr "ទិដ្ឋភាព"
 
 #. i18n: ectx: Menu (project)
-#: plan.rc:42
+#: plan.rc:41
 msgid "&Project"
 msgstr "គម្រោង​"
 
 #. i18n: ectx: Menu (tools)
-#: plan.rc:49
+#: plan.rc:48
 msgid "&Tools"
 msgstr "ឧបករណ៍"
 
 #. i18n: ectx: Menu (settings)
-#: plan.rc:56
+#: plan.rc:55
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: ectx: Menu (help)
-#: plan.rc:59
+#: plan.rc:58
 msgid "&Help"
 msgstr "ជំនួយ"
 
 #. i18n: ectx: ToolBar (project)
-#: plan.rc:63
+#: plan.rc:62
 msgid "Project"
 msgstr "គម្រោង​"
 
@@ -1786,11 +1775,10 @@ msgstr "បាន​អនុញ្ញាត​ឯកតា​ថិរវេល
 msgid "The largest duration unit allowed"
 msgstr "បាន​អនុញ្ញាត​ឯកតា​ថិរវេលា​ធំ​ផុត"
 
-#~ msgid "Nuno Pinheiro and Danny Allen"
-#~ msgstr "Nuno Pinheiro និង Danny Allen"
-
-#~ msgid "Application icon for plan"
-#~ msgstr "រូបតំណាង​កម្មវិធី plan"
+#, fuzzy
+#~| msgid "Create Report..."
+#~ msgid "&Create New Project..."
+#~ msgstr "បង្កើត​របាយ​ការណ៍..."
 
 #~ msgid "Open File..."
 #~ msgstr "បើក​ឯកសារ..."
