@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkdcraw\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-26 01:33+0000\n"
+"POT-Creation-Date: 2013-10-19 01:34+0000\n"
 "PO-Revision-Date: 2012-07-09 10:42+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -141,12 +141,52 @@ msgctxt "@item:inlistbox Quality"
 msgid "LMMSE"
 msgstr "LMMSE"
 
-#: libkdcraw/dcrawsettingswidget.cpp:288
+#: libkdcraw/dcrawsettingswidget.cpp:289
 msgctxt "@item:inlistbox Quality"
 msgid "AMaZE"
 msgstr "AMaZE"
 
-#: libkdcraw/dcrawsettingswidget.cpp:291
+#: libkdcraw/dcrawsettingswidget.cpp:306
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid ""
+#| "<title>Quality (interpolation)</title><para>Select here the demosaicing "
+#| "method to use when decoding RAW images. A demosaicing algorithm is a "
+#| "digital image process used to interpolate a complete image from the "
+#| "partial raw data received from the color-filtered image sensor, internal "
+#| "to many digital cameras, in form of a matrix of colored pixels. Also "
+#| "known as CFA interpolation or color reconstruction, another common "
+#| "spelling is demosaicing. The following methods are available for "
+#| "demosaicing RAW images:</para><para><list><item><emphasis "
+#| "strong='true'>Bilinear</emphasis>: use high-speed but low-quality "
+#| "bilinear interpolation (default - for slow computers). In this method, "
+#| "the red value of a non-red pixel is computed as the average of the "
+#| "adjacent red pixels, and similarly for blue and green.</"
+#| "item><item><emphasis strong='true'>VNG</emphasis>: use Variable Number of "
+#| "Gradients interpolation. This method computes gradients near the pixel of "
+#| "interest and uses the lower gradients (representing smoother and more "
+#| "similar parts of the image) to make an estimate.</item><item><emphasis "
+#| "strong='true'>PPG</emphasis>: use Patterned-Pixel-Grouping interpolation. "
+#| "Pixel Grouping uses assumptions about natural scenery in making "
+#| "estimates. It has fewer color artifacts on natural images than the "
+#| "Variable Number of Gradients method.</item><item><emphasis "
+#| "strong='true'>AHD</emphasis>: use Adaptive Homogeneity-Directed "
+#| "interpolation. This method selects the direction of interpolation so as "
+#| "to maximize a homogeneity metric, thus typically minimizing color "
+#| "artifacts.</item><item><emphasis strong='true'>DCB</emphasis>: DCB "
+#| "interpolation from linuxphoto.org project.</item><item><emphasis "
+#| "strong='true'>AHD v2</emphasis>: modified AHD interpolation using "
+#| "Variance of Color Differences method.</item><item><emphasis "
+#| "strong='true'>AFD</emphasis>: Adaptive Filtered Demosaicing interpolation "
+#| "through 5 pass median filter from PerfectRaw project.</"
+#| "item><item><emphasis strong='true'>VCD</emphasis>: Variance of Color "
+#| "Differences interpolation.</item><item><emphasis strong='true'>VCD & AHD</"
+#| "emphasis>: Mixed demosaicing between VCD and AHD.</item><item><emphasis "
+#| "strong='true'>LMMSE</emphasis>: color demosaicing via directional linear "
+#| "minimum mean-square error estimation interpolation from PerfectRaw.</"
+#| "item><item><emphasis strong='true'>AMaZE</emphasis>: Aliasing "
+#| "Minimization interpolation and Zipper Elimination to apply color "
+#| "aberration removal from RawTherapee project.</item></list></para>"
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Quality (interpolation)</title><para>Select here the demosaicing "
@@ -183,7 +223,8 @@ msgid ""
 "minimum mean-square error estimation interpolation from PerfectRaw.</"
 "item><item><emphasis strong='true'>AMaZE</emphasis>: Aliasing Minimization "
 "interpolation and Zipper Elimination to apply color aberration removal from "
-"RawTherapee project.</item></list></para>"
+"RawTherapee project.</item></list></para><para>Note: some methods can be "
+"unavailable if RAW decoder have been built without extention packs.</para>"
 msgstr ""
 "<title>គុណភាព​ (លៃ​សម្រួល​)</title><para>ជ្រើស​វិធីសាស្ត្រ​ demosaicing នៅ​ទីនេះ ដើម្បី​ប្រើ នៅ​"
 "ពេល​ឌិកូដ​រូបភាព​ដើម​ ។ក្បួន​ដោះស្រាយ​ demosaicing គឺ​ជា​ដំណើរការ​រូបភាព​ឌីជីថល​ដែល​ប្រើ​សម្រាប់​លៃ​សម្រួល​"
@@ -215,12 +256,12 @@ msgstr ""
 "strong='true'>AMaZE</emphasis> ៖ ការ​លៃ​តម្រូវ​ការ​ដាក់​ឈ្មោះ​ក្លែង​ក្លាយ​ជា​អតិបរមា​ និង​ការ​លុប​ "
 "Zipper ដើម្បី​អនុវត្ត​ការ​យក​កម្រិត​ពណ៌​ខុស​គ្នា​ចេញ​ពី​គម្រោង​ RawTherapee ។</item></list></para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:358
+#: libkdcraw/dcrawsettingswidget.cpp:376
 msgctxt "@label:slider"
 msgid "Pass:"
 msgstr "ចម្លង ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:359
+#: libkdcraw/dcrawsettingswidget.cpp:377
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Pass</title><para>Set here the passes used by the median filter "
@@ -239,12 +280,12 @@ msgstr ""
 "strong='true'>DCB</emphasis> និង​ <emphasis strong='true'>VCD & AHD</emphasis>។"
 "</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:371
+#: libkdcraw/dcrawsettingswidget.cpp:389
 msgctxt "@option:check"
 msgid "Refine interpolation"
 msgstr "ធ្វើ​ឲ្យ​ការ​លៃ​តម្រូវ​ប្រសើរ​ឡើង"
 
-#: libkdcraw/dcrawsettingswidget.cpp:372
+#: libkdcraw/dcrawsettingswidget.cpp:390
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Refine interpolation</title><para>This setting is available only for "
@@ -260,37 +301,37 @@ msgstr ""
 "និង​ AHD</emphasis>៖ បើក​ការ​លៃ​តម្រូវ​ពណ៌​ដែល​មាន​ប្រសិទ្ធិភាព​ខ្ពស់ (EECI) ដើម្បី​ធ្វើ​ឲ្យ​មាន​ភាព​កាន់​"
 "តែ​ច្បាស់ ។</item></list></para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:381
+#: libkdcraw/dcrawsettingswidget.cpp:407
 msgctxt "@label"
 msgid "Demosaicing"
 msgstr "Demosaicing"
 
-#: libkdcraw/dcrawsettingswidget.cpp:389
+#: libkdcraw/dcrawsettingswidget.cpp:415
 msgctxt "@label:listbox"
 msgid "Method:"
 msgstr "វិធីសាស្ត្រ ៖​"
 
-#: libkdcraw/dcrawsettingswidget.cpp:391
+#: libkdcraw/dcrawsettingswidget.cpp:417
 msgctxt "@item:inlistbox"
 msgid "Default D65"
 msgstr "D65 លំនាំ​ដើម"
 
-#: libkdcraw/dcrawsettingswidget.cpp:392
+#: libkdcraw/dcrawsettingswidget.cpp:418
 msgctxt "@item:inlistbox"
 msgid "Camera"
 msgstr "ម៉ាស៊ីន​ថត"
 
-#: libkdcraw/dcrawsettingswidget.cpp:393
+#: libkdcraw/dcrawsettingswidget.cpp:419
 msgctxt "@item:inlistbox set while balance automatically"
 msgid "Automatic"
 msgstr "ស្វ័យ​ប្រវត្តិ"
 
-#: libkdcraw/dcrawsettingswidget.cpp:394
+#: libkdcraw/dcrawsettingswidget.cpp:420
 msgctxt "@item:inlistbox set white balance manually"
 msgid "Manual"
 msgstr "ដោយ​ដៃ"
 
-#: libkdcraw/dcrawsettingswidget.cpp:396
+#: libkdcraw/dcrawsettingswidget.cpp:422
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>White Balance</title><para>Configure the raw white balance:</"
@@ -313,24 +354,24 @@ msgstr ""
 "strong='true'>Manual</emphasis>: Set a custom temperature and green level "
 "values.</item></list></para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:412
+#: libkdcraw/dcrawsettingswidget.cpp:438
 msgctxt "@label:slider"
 msgid "T(K):"
 msgstr "T(K) ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:413
+#: libkdcraw/dcrawsettingswidget.cpp:439
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Temperature</title><para>Set here the color temperature in Kelvin.</"
 "para>"
 msgstr "<title>សីតុណ្ហភាព​</title><para>កំណត់​សីតុណ្ហភាព​ពណ៌​គិត​ជា​កែលវិន​ នៅ​ទៅនេះ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:420
+#: libkdcraw/dcrawsettingswidget.cpp:446
 msgctxt "@label:slider Green component"
 msgid "Green:"
 msgstr "បៃតង ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:421
+#: libkdcraw/dcrawsettingswidget.cpp:447
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>Set here the green component to set magenta color cast removal level.</"
@@ -338,32 +379,32 @@ msgid ""
 msgstr ""
 "<para>នៅ​ទី​នេះ កំណត់​សមាសភាគ​ពណ៌​បៃ​តង​ ដើម្បី​កំណត់​កម្រិត​យក​ការ​ចោល​ស្រមោល​ពណ៌​ក្រហម​ស្វាយ​ចេញ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:424
+#: libkdcraw/dcrawsettingswidget.cpp:450
 msgctxt "@label:listbox"
 msgid "Highlights:"
 msgstr "បន្លិច​ ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:426
+#: libkdcraw/dcrawsettingswidget.cpp:452
 msgctxt "@item:inlistbox"
 msgid "Solid white"
 msgstr "ពណ៌​ស​តាន់"
 
-#: libkdcraw/dcrawsettingswidget.cpp:427
+#: libkdcraw/dcrawsettingswidget.cpp:453
 msgctxt "@item:inlistbox"
 msgid "Unclip"
 msgstr "មិន​ច្រឹប"
 
-#: libkdcraw/dcrawsettingswidget.cpp:428
+#: libkdcraw/dcrawsettingswidget.cpp:454
 msgctxt "@item:inlistbox"
 msgid "Blend"
 msgstr "លាយ"
 
-#: libkdcraw/dcrawsettingswidget.cpp:429
+#: libkdcraw/dcrawsettingswidget.cpp:455
 msgctxt "@item:inlistbox"
 msgid "Rebuild"
 msgstr "បង្កើត​ឡើងវិញ"
 
-#: libkdcraw/dcrawsettingswidget.cpp:431
+#: libkdcraw/dcrawsettingswidget.cpp:457
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Highlights</title><para>Select here the highlight clipping method:</"
@@ -383,12 +424,12 @@ msgstr ""
 "item><item><emphasis strong='true'>បង្កើត​​ឡើង​វិញ</emphasis>៖ បង្កើត​ការ​បន្លិច​ឡើង​វិញ​"
 "ដោយ​ប្រើតម្លៃ​កម្រិត​</item></list></para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:442
+#: libkdcraw/dcrawsettingswidget.cpp:468
 msgctxt "@label:slider Highlight reconstruct level"
 msgid "Level:"
 msgstr "កម្រិត​ ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:447
+#: libkdcraw/dcrawsettingswidget.cpp:473
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Level</title><para>Specify the reconstruct highlight level. Low "
@@ -397,7 +438,7 @@ msgstr ""
 "<title>កម្រិត​</title><para>បញ្ជាក់​កម្រិត​បន្លិច​នៃ​ការ​បង្កើត​ឡើង​វិញ ។ តម្លៃ​ទាប​ត្រូវ​ការ​ពណ៌ស  ហើយ​"
 "តម្លៃ​ខ្ពស់​ត្រូវ​ការ​ពណ៌​ផ្សេង​ៗ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:451
+#: libkdcraw/dcrawsettingswidget.cpp:477
 #, fuzzy
 #| msgctxt "@option:check"
 #| msgid "Exposure Correction"
@@ -405,17 +446,17 @@ msgctxt "@option:check"
 msgid "Exposure Correction (E.V)"
 msgstr "ការ​កែ​សម្រួល​កម្រិត​បង្ហាញ"
 
-#: libkdcraw/dcrawsettingswidget.cpp:452
+#: libkdcraw/dcrawsettingswidget.cpp:478
 msgctxt "@info:whatsthis"
 msgid "<para>Turn on the exposure correction before interpolation.</para>"
 msgstr "<para>បើក​ការ​កែ​សម្រួល​កម្រិត​បង្ហាញ​ មុន​នឹង​លៃ​តម្រូវ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:455
+#: libkdcraw/dcrawsettingswidget.cpp:481
 msgctxt "@label:slider"
 msgid "Linear Shift:"
 msgstr ""
 
-#: libkdcraw/dcrawsettingswidget.cpp:460
+#: libkdcraw/dcrawsettingswidget.cpp:486
 #, fuzzy
 #| msgctxt "@info:whatsthis"
 #| msgid ""
@@ -429,7 +470,7 @@ msgstr ""
 "<title>រំកិល​</title><para>រំកិល​​ការ​កែ​សម្រួល​កម្រិត​បង្ហាញ មុននឹង​លៃ​តម្រូវ​ជា​មាត្រដ្ឋាន​លីនេអ៊ែរ ។</"
 "para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:463
+#: libkdcraw/dcrawsettingswidget.cpp:489
 #, fuzzy
 #| msgctxt "@label:listbox"
 #| msgid "Highlights:"
@@ -437,7 +478,7 @@ msgctxt "@label:slider"
 msgid "Highlight:"
 msgstr "បន្លិច​ ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:468
+#: libkdcraw/dcrawsettingswidget.cpp:494
 #, fuzzy
 #| msgctxt "@info:whatsthis"
 #| msgid ""
@@ -452,12 +493,12 @@ msgstr ""
 "<title>បន្លិច​</title><para>ចំនួន​រក្សា​ទុក​ការ​បន្លិច​សម្រាប់​ការ​កែ​សម្រួល​កម្រិត​បង្ហាញ​មុន​នឹង​លៃ​តម្រូវ​នៅ​"
 "ក្នុង​ E.V ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:472
+#: libkdcraw/dcrawsettingswidget.cpp:498
 msgctxt "@option:check"
 msgid "Correct false colors in highlights"
 msgstr "កែ​ពណ៌​មិន​ត្រឹម​ត្រូវ​នៅ​ក្នុង​បន្លិច"
 
-#: libkdcraw/dcrawsettingswidget.cpp:473
+#: libkdcraw/dcrawsettingswidget.cpp:499
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>If enabled, images with overblown channels are processed much more "
@@ -467,12 +508,12 @@ msgstr ""
 "<para>បើ​បាន​បើក រូបភាព​ដែល​មាន​ឆានែលធំ​នឹង​ត្រូវ​បាន​ដំណើរការ​យ៉ាង​ត្រឹម​ត្រូវ​ជាង​មុន​ ដោយ​គ្មាន​ 'ពពក​ផ្កា​"
 "ឈូក​' (ហើយ​ពណ៌​ខៀវ​បន្លិច​ក្រោម​អំពូល​តង់ស្តែន) ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:477
+#: libkdcraw/dcrawsettingswidget.cpp:503
 msgctxt "@option:check"
 msgid "Auto Brightness"
 msgstr "ពន្លឺ​ស្វ័យ​ប្រវត្តិ"
 
-#: libkdcraw/dcrawsettingswidget.cpp:478
+#: libkdcraw/dcrawsettingswidget.cpp:504
 msgctxt "@info:whatsthis"
 msgid ""
 "<para>If disable, use a fixed white level and ignore the image histogram to "
@@ -480,12 +521,12 @@ msgid ""
 msgstr ""
 "<para>ប្រសិន​បើ​បិទ ប្រើ​កម្រិត​ពណ៌​ស​ថេរ​ និង​មិន​អើ​ពើ​អ៊ីស្តូក្រាម​​រូបភាព ដើម្បី​លៃ​តម្រូវ​ពន្លឺ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:481
+#: libkdcraw/dcrawsettingswidget.cpp:507
 msgctxt "@label:slider"
 msgid "Brightness:"
 msgstr "ពន្លឺ ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:486
+#: libkdcraw/dcrawsettingswidget.cpp:512
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Brightness</title><para>Specify the brightness level of output image. "
@@ -494,12 +535,12 @@ msgstr ""
 "<title>ពន្លឺ</title><para>បញ្ជាក់​កម្រិត​ពន្លឺ​នៃ​រូបភាព​លទ្ធផល​ ។ តម្លៃ​លំនាំ​ដើម​គឺ​ ១.០ (ដំណើរការ​តែ​"
 "នៅ​ក្នុង​របៀប​ ៨ ប៊ីត តែ​ប៉ុណ្ណោះ) ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:496
+#: libkdcraw/dcrawsettingswidget.cpp:522
 msgctxt "@option:check Black point"
 msgid "Black:"
 msgstr "ខ្មៅ ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:497
+#: libkdcraw/dcrawsettingswidget.cpp:523
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Black point</title><para>Use a specific black point value to decode "
@@ -509,7 +550,7 @@ msgstr ""
 "<title>ចំណុច​ខ្មៅ​</title><para>ប្រើ​តម្លៃ​ចំណុច​ខ្មៅ​ជាក់​លាក់​ ដើម្បី​ឌិកូដ​រូបភាព​ដើម​ ។ បើ​អ្នក​កំណត់​"
 "ជម្រើស​នេះ​ទៅ​ជា​បិទ តម្លៃ​ចំណុច​ខ្មៅ​នឹង​ត្រូវ​បាន​គណនា​ដោយ​ស្វ័យ​ប្រវត្តិ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:505
+#: libkdcraw/dcrawsettingswidget.cpp:531
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Black point value</title><para>Specify specific black point value of "
@@ -517,12 +558,12 @@ msgid ""
 msgstr ""
 "<title>តម្លៃ​ចំណុច​ខ្មៅ</title><para>បញ្ជាក់​តម្លៃ​ចំណុច​ខ្មៅ​ជាក់​លាក់​នៃ​រូបភាព​លទ្ធផល​ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:508
+#: libkdcraw/dcrawsettingswidget.cpp:534
 msgctxt "@option:check White point"
 msgid "White:"
 msgstr "ស ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:509
+#: libkdcraw/dcrawsettingswidget.cpp:535
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>White point</title><para>Use a specific white point value to decode "
@@ -532,49 +573,49 @@ msgstr ""
 "<title>ចំណុច​ស​</title><para>ប្រើ​តម្លៃ​ចំណុច​ស​ជាក់​លាក់​ ដើម្បី​ឌិកូដ​រូបភាព​ដើម ។ បើ​អ្នក​កំណត់​ជម្រើស​នេះ​"
 "ទៅ​ជា​បិទ តម្លៃ​ចំណុច​ស​នឹង​ត្រូវ​បាន​គណនា​ដោយ​ស្វ័យ​ប្រវត្តិ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:517
+#: libkdcraw/dcrawsettingswidget.cpp:543
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>White point value</title><para>Specify specific white point value of "
 "the output image.</para>"
 msgstr "<title>តម្លៃ​ចំណុច​ស​</title><para>បញ្ជាក់​តម្លៃ​ចំណុច​ស​ជាក់​លាក់​នៃ​រូបភាព​លទ្ធផល​ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:554
+#: libkdcraw/dcrawsettingswidget.cpp:580
 msgctxt "@label"
 msgid "White Balance"
 msgstr "តុល្យភាព​ពណ៌ស"
 
-#: libkdcraw/dcrawsettingswidget.cpp:562
+#: libkdcraw/dcrawsettingswidget.cpp:588
 msgctxt "@label:listbox"
 msgid "Noise reduction:"
 msgstr "កាត់​បន្ថយ​ភាព​រំខាន ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:564
+#: libkdcraw/dcrawsettingswidget.cpp:590
 msgctxt "@item:inlistbox Noise Reduction"
 msgid "None"
 msgstr "គ្មាន"
 
-#: libkdcraw/dcrawsettingswidget.cpp:565
+#: libkdcraw/dcrawsettingswidget.cpp:591
 msgctxt "@item:inlistbox Noise Reduction"
 msgid "Wavelets"
 msgstr "Wavelets"
 
-#: libkdcraw/dcrawsettingswidget.cpp:566
+#: libkdcraw/dcrawsettingswidget.cpp:592
 msgctxt "@item:inlistbox Noise Reduction"
 msgid "FBDD"
 msgstr "FBDD"
 
-#: libkdcraw/dcrawsettingswidget.cpp:567
+#: libkdcraw/dcrawsettingswidget.cpp:593
 msgctxt "@item:inlistbox Noise Reduction"
 msgid "CFA Line Denoise"
 msgstr "CFA Line Denoise"
 
-#: libkdcraw/dcrawsettingswidget.cpp:568
+#: libkdcraw/dcrawsettingswidget.cpp:594
 msgctxt "@item:inlistbox Noise Reduction"
 msgid "Impulse Denoise"
 msgstr "Impulse Denoise"
 
-#: libkdcraw/dcrawsettingswidget.cpp:570
+#: libkdcraw/dcrawsettingswidget.cpp:596
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Noise Reduction</title><para>Select here the noise reduction method "
@@ -601,12 +642,12 @@ msgstr ""
 "Denoise</emphasis> ៖ ការ​លុប​បំបាត់​ភាពរំខាន ។ វា​នឹង​ត្រូវ​បាន​អនុវត្ត​ បន្ទាប់​ពី​បាន​លៃ​តម្រូវ​រួច ។</"
 "item></list></para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:598
+#: libkdcraw/dcrawsettingswidget.cpp:624
 msgctxt "@option:check"
 msgid "Enable Chromatic Aberration correction"
 msgstr "បើក​ការ​កៃ​សម្រួល​ភាព​ប្រក្រតី​នៃ​ក្រូម៉ាទិច"
 
-#: libkdcraw/dcrawsettingswidget.cpp:599
+#: libkdcraw/dcrawsettingswidget.cpp:625
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Enable Chromatic Aberration correction</title><para>Enlarge the raw "
@@ -616,12 +657,12 @@ msgstr ""
 "<title>បើក​ការ​កែ​សម្រួល​ភាព​ខុស​ប្រក្រតី​នៃ​ក្រូម៉ាទិច​</title><para>ពង្រីក​អ័ក្ស​ក្រហម​-បៃតង និង​ខៀវ​-លឿង​"
 "ដើម​ តាម​កត្តា​ដែល​​បាន​ផ្ដល់​ (ស្វ័យ​ប្រវត្តិ​តាម​លំនាំ​ដើម) ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:604
+#: libkdcraw/dcrawsettingswidget.cpp:630
 msgctxt "@option:check"
 msgid "Automatic color axis adjustments"
 msgstr "ការ​លៃ​តម្រូវ​អ័ក្ស​ពណ៌​ស្វ័យ​ប្រវត្តិ"
 
-#: libkdcraw/dcrawsettingswidget.cpp:605
+#: libkdcraw/dcrawsettingswidget.cpp:631
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Automatic Chromatic Aberration correction</title><para>If this option "
@@ -635,12 +676,12 @@ msgstr ""
 "។ ចំណាំ​ថា បើ​អ្នក​ចុច​លំនាំ​ក្រហម ខៀវ វិធីសាស្ត្រ​នេះ​អាច​នឹង​បរាជ័យ ។ ក្នុង​ករណី​ដូច្នេះ សូម​បិទ​ជម្រើស​នេះ និង​"
 "ធ្វើ​ការ​លៃ​តម្រូវ​កត្តា​ពណ៌​ដោយ​ដៃ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:612
+#: libkdcraw/dcrawsettingswidget.cpp:638
 msgctxt "@label:slider"
 msgid "Red-Green:"
 msgstr "ក្រហម​-បៃ​តង ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:617
+#: libkdcraw/dcrawsettingswidget.cpp:643
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Red-Green multiplier</title><para>Set here the amount of correction "
@@ -649,12 +690,12 @@ msgstr ""
 "<title>ឧបករណ៍​បង្កើន​ក្រហម​-បៃតង​</title><para>នៅ​ទីនេះ កំណត់​ចំនួន​កែ​សម្រួល​នៅ​លើ​អ័ក្ស​ក្រហម​-បៃតង</"
 "para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:620
+#: libkdcraw/dcrawsettingswidget.cpp:646
 msgctxt "@label:slider"
 msgid "Blue-Yellow:"
 msgstr "ខៀវ​-លឿង ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:625
+#: libkdcraw/dcrawsettingswidget.cpp:651
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Blue-Yellow multiplier</title><para>Set here the amount of correction "
@@ -663,32 +704,32 @@ msgstr ""
 "<title>ឧបករណ៍​បង្កើន​ខៀវ​-លឿង​</title><para>នៅ​ទីនេះ កំណត់​ចំនួន​កែ​សម្រួល​នៅ​លើ​អ័ក្ស​ខៀវ​-លឿង</"
 "para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:644
+#: libkdcraw/dcrawsettingswidget.cpp:670
 msgctxt "@label"
 msgid "Corrections"
 msgstr "ការ​កែ​សម្រួល"
 
-#: libkdcraw/dcrawsettingswidget.cpp:652
+#: libkdcraw/dcrawsettingswidget.cpp:678
 msgctxt "@label:listbox"
 msgid "Camera Profile:"
 msgstr "ទម្រង់​ម៉ាស៊ីន​ថត ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:654
+#: libkdcraw/dcrawsettingswidget.cpp:680
 msgctxt "@item:inlistbox Camera Profile"
 msgid "None"
 msgstr "គ្មាន"
 
-#: libkdcraw/dcrawsettingswidget.cpp:655
+#: libkdcraw/dcrawsettingswidget.cpp:681
 msgctxt "@item:inlistbox Camera Profile"
 msgid "Embedded"
 msgstr "ដែល​បង្កប់"
 
-#: libkdcraw/dcrawsettingswidget.cpp:656
+#: libkdcraw/dcrawsettingswidget.cpp:682
 msgctxt "@item:inlistbox Camera Profile"
 msgid "Custom"
 msgstr "ផ្ទាល់​ខ្លួន"
 
-#: libkdcraw/dcrawsettingswidget.cpp:658
+#: libkdcraw/dcrawsettingswidget.cpp:684
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Camera Profile</title><para>Select here the input color space used to "
@@ -706,46 +747,46 @@ msgstr ""
 "item><item><emphasis strong='true'>ផ្ទាល់​ខ្លួន​</emphasis>៖ ប្រើ​ទម្រង់​គំរូ​ពណ៌​បញ្ចូល​ ។</"
 "item></list></para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:669 libkdcraw/dcrawsettingswidget.cpp:703
+#: libkdcraw/dcrawsettingswidget.cpp:695 libkdcraw/dcrawsettingswidget.cpp:729
 msgid "ICC Files (*.icc; *.icm)"
 msgstr "ឯកសារ ICC (*.icc; *.icm)"
 
-#: libkdcraw/dcrawsettingswidget.cpp:671
+#: libkdcraw/dcrawsettingswidget.cpp:697
 msgctxt "@label:listbox"
 msgid "Workspace:"
 msgstr "តំបន់​ធ្វើ​ការ ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:673
+#: libkdcraw/dcrawsettingswidget.cpp:699
 msgctxt "@item:inlistbox Workspace"
 msgid "Raw (no profile)"
 msgstr "ដើម​ (គ្មាន​ទម្រង់​)"
 
-#: libkdcraw/dcrawsettingswidget.cpp:674
+#: libkdcraw/dcrawsettingswidget.cpp:700
 msgctxt "@item:inlistbox Workspace"
 msgid "sRGB"
 msgstr "sRGB"
 
-#: libkdcraw/dcrawsettingswidget.cpp:675
+#: libkdcraw/dcrawsettingswidget.cpp:701
 msgctxt "@item:inlistbox Workspace"
 msgid "Adobe RGB"
 msgstr "Adobe RGB"
 
-#: libkdcraw/dcrawsettingswidget.cpp:676
+#: libkdcraw/dcrawsettingswidget.cpp:702
 msgctxt "@item:inlistbox Workspace"
 msgid "Wide Gamut"
 msgstr "Wide Gamut"
 
-#: libkdcraw/dcrawsettingswidget.cpp:677
+#: libkdcraw/dcrawsettingswidget.cpp:703
 msgctxt "@item:inlistbox Workspace"
 msgid "Pro-Photo"
 msgstr "Pro-Photo"
 
-#: libkdcraw/dcrawsettingswidget.cpp:678
+#: libkdcraw/dcrawsettingswidget.cpp:704
 msgctxt "@item:inlistbox Workspace"
 msgid "Custom"
 msgstr "ផ្ទាល់​ខ្លួន"
 
-#: libkdcraw/dcrawsettingswidget.cpp:680
+#: libkdcraw/dcrawsettingswidget.cpp:706
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Workspace</title><para>Select here the output color space used to "
@@ -780,17 +821,17 @@ msgstr ""
 "in mind.</item><item><emphasis strong='true'>Custom</emphasis>: use a custom "
 "output color space profile.</item></list></para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:715
+#: libkdcraw/dcrawsettingswidget.cpp:741
 msgctxt "@label"
 msgid "Color Management"
 msgstr "ការ​គ្រប់​គ្រង​ពណ៌"
 
-#: libkdcraw/dcrawsettingswidget.cpp:929
+#: libkdcraw/dcrawsettingswidget.cpp:955
 msgctxt "@label"
 msgid "Threshold:"
 msgstr "កម្រិត​ពន្លឺ ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:930
+#: libkdcraw/dcrawsettingswidget.cpp:956
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Threshold</title><para>Set here the noise reduction threshold value "
@@ -799,24 +840,24 @@ msgstr ""
 "<title>កម្រិត​ពន្លឺ</title><para>កំណត់​តម្លៃ​កម្រិត​ពន្លឺ​សម្រាប់​កាត់​បន្ថយ​ភាព​រំខាន​ដែល​ត្រូវ​ប្រើ​នៅ​ទី​នេះ "
 "។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:943
+#: libkdcraw/dcrawsettingswidget.cpp:969
 msgctxt "@label"
 msgid "Luminance:"
 msgstr "ពន្លឺ ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:944
+#: libkdcraw/dcrawsettingswidget.cpp:970
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Luminance</title><para>Amount of Luminance impulse noise reduction.</"
 "para>"
 msgstr "<title>ពន្លឺ​</title><para>ចំនួន​កាត់​បន្ថយ​ភាព​រំខាន​នៃ​លំញ័រ​ពន្លឺ ។</para>"
 
-#: libkdcraw/dcrawsettingswidget.cpp:946
+#: libkdcraw/dcrawsettingswidget.cpp:972
 msgctxt "@label"
 msgid "Chrominance:"
 msgstr "ក្រូម ៖"
 
-#: libkdcraw/dcrawsettingswidget.cpp:947
+#: libkdcraw/dcrawsettingswidget.cpp:973
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Chrominance</title><para>Amount of Chrominance impulse noise "
