@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: backupmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-10-18 01:40+0000\n"
+"POT-Creation-Date: 2013-10-24 01:32+0000\n"
 "PO-Revision-Date: 2012-12-31 14:00+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -109,15 +109,17 @@ msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​ធ
 
 #: addressbook/exportaddressbookjob.cpp:101
 #: akregator/exportakregatorjob.cpp:67 alarm/exportalarmjob.cpp:84
-#: calendar/exportcalendarjob.cpp:88 jot/exportjotjob.cpp:83
-#: mail/exportmailjob.cpp:182 notes/exportnotesjob.cpp:67
+#: blogilo/exportblogilojob.cpp:67 calendar/exportcalendarjob.cpp:88
+#: jot/exportjotjob.cpp:83 mail/exportmailjob.cpp:182
+#: notes/exportnotesjob.cpp:67
 msgid "Backing up config..."
 msgstr "កំពុង​បម្រុងទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ..."
 
 #: addressbook/exportaddressbookjob.cpp:137
 #: akregator/exportakregatorjob.cpp:72 alarm/exportalarmjob.cpp:109
-#: calendar/exportcalendarjob.cpp:134 jot/exportjotjob.cpp:108
-#: mail/exportmailjob.cpp:419 notes/exportnotesjob.cpp:73
+#: blogilo/exportblogilojob.cpp:73 calendar/exportcalendarjob.cpp:134
+#: jot/exportjotjob.cpp:108 mail/exportmailjob.cpp:419
+#: notes/exportnotesjob.cpp:73
 msgid "Config backup done."
 msgstr "បាន​ធ្វើការ​បម្រុងទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ ។"
 
@@ -139,8 +141,9 @@ msgstr "បាន​ស្ដារ​ធនធាន ។"
 
 #: addressbook/importaddressbookjob.cpp:191
 #: akregator/importakregatorjob.cpp:57 alarm/importalarmjob.cpp:130
-#: calendar/importcalendarjob.cpp:192 jot/importjotjob.cpp:128
-#: mail/importmailjob.cpp:792 notes/importnotesjob.cpp:57
+#: blogilo/importblogilojob.cpp:57 calendar/importcalendarjob.cpp:192
+#: jot/importjotjob.cpp:128 mail/importmailjob.cpp:792
+#: notes/importnotesjob.cpp:57
 msgid "Config restored."
 msgstr "បាន​ស្ដារ​ការ​កំណត់​រចនាសម្ព័ន្ធ ។"
 
@@ -148,7 +151,8 @@ msgstr "បាន​ស្ដារ​ការ​កំណត់​រចនា
 msgid "Start export akregator settings..."
 msgstr ""
 
-#: akregator/exportakregatorjob.cpp:77 notes/exportnotesjob.cpp:78
+#: akregator/exportakregatorjob.cpp:77 blogilo/exportblogilojob.cpp:78
+#: notes/exportnotesjob.cpp:78
 #, fuzzy
 #| msgid "Backing up Mails..."
 msgid "Backing up data..."
@@ -161,7 +165,8 @@ msgstr "កំពុង​បម្រុង​ទុក​សំបុត្រ
 msgid "\"%1\" directory cannot be added to backup file."
 msgstr "ឯកសារ MBox \"%1\" មិនអាច​បន្ថែម​ទៅ​ឯកសារ​បម្រុ​ងទុកបាន​ទេ ។"
 
-#: akregator/exportakregatorjob.cpp:87 notes/exportnotesjob.cpp:94
+#: akregator/exportakregatorjob.cpp:87 blogilo/exportblogilojob.cpp:86
+#: notes/exportnotesjob.cpp:94
 #, fuzzy
 #| msgid "Mails backup done."
 msgid "Data backup done."
@@ -171,7 +176,8 @@ msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​ស
 msgid "Start import akregator settings..."
 msgstr ""
 
-#: akregator/importakregatorjob.cpp:69 notes/importnotesjob.cpp:69
+#: akregator/importakregatorjob.cpp:69 blogilo/importblogilojob.cpp:69
+#: notes/importnotesjob.cpp:69
 #, fuzzy
 #| msgid "Mails restored."
 msgid "Data restored."
@@ -193,6 +199,15 @@ msgstr "មិន​អាច​បើក​ប័ណ្ណសារ​ក្ន
 msgid "Archive cannot be opened in read mode."
 msgstr "មិន​អាច​បើកប័ណ្ណសារ​ក្នុង​របៀប​អាន​បាន​ទេ ។"
 
+#: blogilo/exportblogilojob.cpp:46 mail/exportmailjob.cpp:68
+#: notes/exportnotesjob.cpp:46
+msgid "Start export knotes settings..."
+msgstr ""
+
+#: blogilo/importblogilojob.cpp:45 notes/importnotesjob.cpp:45
+msgid "Start import knotes settings..."
+msgstr ""
+
 #: calendar/exportcalendarjob.cpp:47
 msgid "Start export korganizer settings..."
 msgstr ""
@@ -211,10 +226,6 @@ msgstr ""
 
 #: mail/exportmailjob.cpp:57
 msgid "mysqldump not found. Export data aborted"
-msgstr ""
-
-#: mail/exportmailjob.cpp:68 notes/exportnotesjob.cpp:46
-msgid "Start export knotes settings..."
 msgstr ""
 
 #: mail/exportmailjob.cpp:124
@@ -399,59 +410,55 @@ msgstr "Laurent Montel"
 msgid "Maintainer"
 msgstr "អ្នក​ថែទាំ"
 
-#: notes/importnotesjob.cpp:45
-msgid "Start import knotes settings..."
-msgstr ""
-
-#: pimsettingexporterwindow.cpp:88
+#: pimsettingexporterwindow.cpp:91
 msgid "Zip program not found. Install it before to launch this application."
 msgstr "រក​មិ​ន​ឃើញ​កម្មវិធី Zip ទេ ។ ដំឡើង​វា​មុន​នឹង​ចាប់ផ្ដើម​កម្មវិធី​នេះ ។"
 
-#: pimsettingexporterwindow.cpp:88
+#: pimsettingexporterwindow.cpp:91
 msgid "Zip program not found."
 msgstr "រក​មិន​ឃើញ​កម្មវិធី Zip ។"
 
-#: pimsettingexporterwindow.cpp:103
+#: pimsettingexporterwindow.cpp:106
 msgid "Back Up Data..."
 msgstr "បម្រុង​ទុក​ទិន្នន័យ..."
 
-#: pimsettingexporterwindow.cpp:107
+#: pimsettingexporterwindow.cpp:110
 msgid "Restore Data..."
 msgstr "ស្ដារ​ទិន្នន័យ..."
 
-#: pimsettingexporterwindow.cpp:111
+#: pimsettingexporterwindow.cpp:114
 msgid "Save log..."
 msgstr ""
 
-#: pimsettingexporterwindow.cpp:120
+#: pimsettingexporterwindow.cpp:123
 msgid "Log is empty."
 msgstr ""
 
-#: pimsettingexporterwindow.cpp:120
+#: pimsettingexporterwindow.cpp:123
 msgid "Save log"
 msgstr ""
 
-#: pimsettingexporterwindow.cpp:129
+#: pimsettingexporterwindow.cpp:132
 msgid ""
 "Before to backup data, close all kdepim applications. Do you want to "
 "continue?"
 msgstr "មុន​បម្រុង​ទុក​ទិន្នន័យ បិទ​កម្មវិធី​របស់ kdepim ទាំងអស់ ។ តើ​អ្នក​ចង់​បន្ត​ដែរឬទេ ?"
 
-#: pimsettingexporterwindow.cpp:129 pimsettingexporterwindow.cpp:228
+#: pimsettingexporterwindow.cpp:132 pimsettingexporterwindow.cpp:233
 msgid "Backup"
 msgstr "បម្រុង​ទុក"
 
-#: pimsettingexporterwindow.cpp:132
+#: pimsettingexporterwindow.cpp:135
 msgid "Create backup"
 msgstr "បង្កើត​ការ​បម្រុង​ទុក"
 
-#: pimsettingexporterwindow.cpp:228
+#: pimsettingexporterwindow.cpp:233
 msgid ""
 "Before to restore data, close all kdepim applications. Do you want to "
 "continue?"
 msgstr "មុន​ស្ដារ​ទិន្នន័យ បិទ​កម្មវិធី kdepim ទាំងអស់ ។ តើ​អ្នក​ចង់បន្ត​ដែរឬទេ ?"
 
-#: pimsettingexporterwindow.cpp:230
+#: pimsettingexporterwindow.cpp:235
 msgid "Restore backup"
 msgstr "ស្ដារ​ការ​បម្រុង​ទុក"
 
@@ -459,35 +466,69 @@ msgstr "ស្ដារ​ការ​បម្រុង​ទុក"
 msgid "Select Type"
 msgstr "ជ្រើស​ប្រភេទ"
 
-#: selectiontypetreewidget.cpp:138
+#: selectiontypetreewidget.cpp:42
+#, fuzzy
+#| msgid "Mails"
+msgid "KMail"
+msgstr "សំបុត្រ"
+
+#: selectiontypetreewidget.cpp:51
+msgid "KAddressBook"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:56
+msgid "KAlarm"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:61
+msgid "KOrganizer"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:66
+msgid "KJots"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:71
+msgid "KNotes"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:76
+msgid "Akregator"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:81
+msgid "Blogilo"
+msgstr ""
+
+#: selectiontypetreewidget.cpp:126
 msgid "Identity"
 msgstr "អត្តសញ្ញាណ"
 
-#: selectiontypetreewidget.cpp:146
+#: selectiontypetreewidget.cpp:134
 msgid "Mails"
 msgstr "សំបុត្រ"
 
-#: selectiontypetreewidget.cpp:154
+#: selectiontypetreewidget.cpp:142
 msgid "Mail Transport"
 msgstr "ការ​ដឹកជញ្ជូន​សំបុត្រ"
 
-#: selectiontypetreewidget.cpp:162
+#: selectiontypetreewidget.cpp:150
 msgid "Resources"
 msgstr "ធនធាន"
 
-#: selectiontypetreewidget.cpp:170
+#: selectiontypetreewidget.cpp:158
 msgid "Config"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ"
 
-#: selectiontypetreewidget.cpp:178
+#: selectiontypetreewidget.cpp:166
 msgid "Akonadi Database"
 msgstr "មូលដ្ឋាន​ទិន្នន័យ Akonadi"
 
-#: selectiontypetreewidget.cpp:186
+#: selectiontypetreewidget.cpp:174
 msgid "Nepomuk Database"
 msgstr "មូលដ្ឋាន​ទិន្នន័យ Nepomuk"
 
-#: selectiontypetreewidget.cpp:194
+#: selectiontypetreewidget.cpp:182
 msgid "Data"
 msgstr ""
 
