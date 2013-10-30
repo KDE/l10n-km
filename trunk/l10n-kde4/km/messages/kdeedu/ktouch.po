@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktouch\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-05-21 01:47+0000\n"
+"POT-Creation-Date: 2013-10-30 01:34+0000\n"
 "PO-Revision-Date: 2010-06-08 15:50+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -31,6 +31,16 @@ msgstr "sokhem@open.org.kh,​​sutha@open.org.kh,sophea@open.org.kh"
 #, kde-format
 msgid "Invalid database version '%1'."
 msgstr "កំណែ​មូលដ្ឋាន​ទិន្នន័យ​មិន​ត្រឹមត្រូវ '%1' ។"
+
+#: src/core/profiledataaccess.cpp:628
+#, fuzzy
+#| msgid "Restart Lesson"
+msgid "Custom Lessons"
+msgstr "ចាប់ផ្ដើម​មេរៀន​ឡើង​វិញ"
+
+#: src/core/profiledataaccess.cpp:629
+msgid "A place to store personal lesson texts"
+msgstr ""
 
 #: src/core/userdataaccess.cpp:124
 #, kde-format
@@ -62,20 +72,14 @@ msgstr "ខាងក្រោម​ផ្នែក​ខាង​ឆ្វេង
 msgid "Bottom right"
 msgstr "ខាងក្រោម​ផ្នែក​ខាងស្ដាំ"
 
-#: src/editor/courseeditor.cpp:94 src/editor/resourceeditor.cpp:178
+#: src/editor/courseeditor.cpp:91 src/editor/resourceeditor.cpp:178
 #: src/editor/resourceeditor.cpp:258
 msgid "Error while opening course"
 msgstr "កំហុស​ខណៈ​ពេល​បើក​វគ្គ​សិក្សា"
 
-#: src/editor/courseeditor.cpp:101
+#: src/editor/courseeditor.cpp:98
 msgid "Built-in courses can only be viewed."
 msgstr "ជាប់​វគ្គសិក្សា​អាច​បាន​​តែ​មើល​ប៉ុណ្ណោះ ។"
-
-#: src/editor/courseeditor.cpp:338
-#, kde-format
-msgid "%1 Character"
-msgid_plural "%1 Characters"
-msgstr[0] "%1 តួអក្សរ"
 
 #: src/editor/keyboardlayouteditor.cpp:86 src/editor/resourceeditor.cpp:201
 #: src/editor/resourceeditor.cpp:286
@@ -90,6 +94,18 @@ msgstr "ជាប់​ប្លង់​ក្ដារ​ចុច​អាច
 #, kde-format
 msgid "%1%"
 msgstr "%1%"
+
+#: src/editor/lessontexteditor.cpp:74
+#, kde-format
+msgid "%1 Character"
+msgid_plural "%1 Characters"
+msgstr[0] "%1 តួអក្សរ"
+
+#: src/editor/lessontexteditor.cpp:88
+#, fuzzy
+#| msgid "The selected file could not be imported."
+msgid "The selected file could not be opened"
+msgstr "ឯកសារ​ដែល​បាន​ជ្រើស​មិន​អាច​នាំចូល​បាន​ទេ ។"
 
 #: src/editor/newkeyboardlayoutwidget.cpp:92
 msgid "There is already a keyboard layout with the same name."
@@ -116,8 +132,9 @@ msgid "Template"
 msgstr "ពុម្ព"
 
 #. i18n: ectx: property (text), widget (QToolButton, m_deleteKeyToolButton)
-#: src/editor/resourceeditor.cpp:62 src/qml/ProfileDetailsItem.qml:149
-#: src/qml/ProfileDetailsItem.qml:207 src/ui/keyboardlayouteditor.ui:82
+#: src/editor/resourceeditor.cpp:62 src/qml/CustomLessonSelector.qml:177
+#: src/qml/ProfileDetailsItem.qml:149 src/qml/ProfileDetailsItem.qml:207
+#: src/ui/keyboardlayouteditor.ui:82
 msgid "Delete"
 msgstr "លុប"
 
@@ -218,7 +235,7 @@ msgstr "ប្លង់​ក្ដារ​ចុច​ដែល​បាន​
 msgid "Restore"
 msgstr "ស្ដារ"
 
-#: src/editor/resourceeditorwidget.cpp:30
+#: src/editor/resourceeditorwidget.cpp:30 src/qml/CustomLessonSelector.qml:218
 msgid "Dismiss"
 msgstr "ចាកចេញ"
 
@@ -359,31 +376,37 @@ msgstr ""
 msgid "Launch the course and keyboard layout editor"
 msgstr "ចាប់ផ្ដើម​វគ្គសិក្សា និង​កម្មវិធី​កែសម្រួល​ប្លង់​ក្ដារ​ចុច​"
 
-#: src/mainwindow.cpp:139
+#: src/mainwindow.cpp:135
+#, fuzzy
+#| msgid "This Lesson"
+msgid "Edit Custom Lesson"
+msgstr "មេរៀន​នេះ"
+
+#: src/mainwindow.cpp:161
 msgid "Training"
 msgstr "ការ​ហ្វឹកហាត់"
 
-#: src/mainwindow.cpp:139
+#: src/mainwindow.cpp:161
 msgid "Training Settings"
 msgstr "ការ​កំណត់​ការ​ហ្វឹកហ្វឹន"
 
-#: src/mainwindow.cpp:140
+#: src/mainwindow.cpp:162
 msgid "Colors"
 msgstr "ពណ៌"
 
-#: src/mainwindow.cpp:140
+#: src/mainwindow.cpp:162
 msgid "Color Settings"
 msgstr "ការ​កំណត់​ពណ៌"
 
-#: src/mainwindow.cpp:153
+#: src/mainwindow.cpp:175
 msgid "Configure Keyboard"
 msgstr "កំណត់​​រចនាសម្ព័ន្ធ​ក្ដារ​ចុច"
 
-#: src/mainwindow.cpp:170
+#: src/mainwindow.cpp:192
 msgid "Course and Keyboard Layout Editor..."
 msgstr "កម្មវិធី​កែសម្រួល​ប្លង់​ក្ដារ​ចុច និង​វគ្គសិក្សា..."
 
-#: src/mainwindow.cpp:180
+#: src/mainwindow.cpp:202
 msgid "Configure Keyboard..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ប្លង់​ក្ដារ​ចុច..."
 
@@ -434,6 +457,25 @@ msgstr "កម្រិត​ត្រឹមត្រូវ"
 msgid "Characters per Minute"
 msgstr "តួ​អក្សរ​ក្នុង​មួយ​នាទី"
 
+#: src/qml/CustomLessonSelector.qml:138
+#, fuzzy
+#| msgid "Create new normal key"
+msgid "Create New Custom Lesson"
+msgstr "បង្កើត​គ្រាប់​ចុច​ធម្មតា​ថ្មី"
+
+#: src/qml/CustomLessonSelector.qml:171 src/qml/ProfileDetailsItem.qml:144
+msgid "Edit"
+msgstr "កែសម្រួល"
+
+#: src/qml/CustomLessonSelector.qml:204
+#, kde-format
+msgid "'%1' deleted."
+msgstr ""
+
+#: src/qml/CustomLessonSelector.qml:212
+msgid "Undo"
+msgstr ""
+
 #: src/qml/ElapsedTimeMeter.qml:29
 msgid "Elapsed time"
 msgstr "ពេលវេលា​ដែល​កន្លង​ទៅ"
@@ -442,7 +484,7 @@ msgstr "ពេលវេលា​ដែល​កន្លង​ទៅ"
 msgid "Welcome to Typewriting Trainer"
 msgstr "ស្វាគមន៍​ចំពោះ​អ្នក​ហ្វឹកហ្វឺន​ការ​វាយ"
 
-#: src/qml/InitialProfileForm.qml:100 src/qml/LessonSelector.qml:149
+#: src/qml/InitialProfileForm.qml:100 src/qml/LessonSelectorBase.qml:70
 msgid "Start Training"
 msgstr "ចាប់ផ្ដើម​ការ​ហ្វឹកហ្វឺន"
 
@@ -485,10 +527,6 @@ msgstr "បាន​ហ្វឹកហ្វឺន​ចុង​ក្រោយ
 #: src/qml/ProfileDetailsItem.qml:130
 msgid "Never"
 msgstr ""
-
-#: src/qml/ProfileDetailsItem.qml:144
-msgid "Edit"
-msgstr "កែសម្រួល"
 
 #: src/qml/ProfileDetailsItem.qml:196
 #, kde-format
@@ -682,6 +720,7 @@ msgstr "ដៃ​ស្ដាំ"
 #. i18n: ectx: property (text), widget (QLabel, m_lessonTitleLabel)
 #. i18n: ectx: property (text), widget (QLabel, m_keyboardLayouttTitleLabel)
 #: src/ui/courseeditor.ui:40 src/ui/courseeditor.ui:300
+#: src/ui/customlessoneditorwidget.ui:25
 #: src/ui/keyboardlayoutpropertieswidget.ui:59 src/ui/newcoursewidget.ui:25
 #: src/ui/newkeyboardlayoutwidget.ui:51
 msgid "Title:"
@@ -726,11 +765,6 @@ msgstr "ផ្លាស់ទី​មេរៀន​ចុះ​ក្រោម
 #: src/ui/courseeditor.ui:317
 msgid "New characters:"
 msgstr "តួ​អក្សរ​ថ្មី​ ៖"
-
-#. i18n: ectx: property (text), widget (QLabel, m_characterCountLabel)
-#: src/ui/courseeditor.ui:370
-msgid "0 Characters"
-msgstr "តួអក្សរ​ថ្មី ០"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, m_newKeyToolButton)
 #: src/ui/keyboardlayouteditor.ui:34
@@ -929,6 +963,28 @@ msgstr "ស្លាក ៖"
 #: src/ui/keyboardlayoutpropertieswidget.ui:630
 msgid "Modifier ID:"
 msgstr "លេខ​សម្គាល់​កម្មវិធី​កែប្រែ ៖"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, LessonTextEditor)
+#: src/ui/lessontexteditor.ui:14
+msgid "Form"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, m_openTextFileButton)
+#: src/ui/lessontexteditor.ui:34
+#, fuzzy
+#| msgid "&Open Plain Text File..."
+msgid "Open a text file..."
+msgstr "បើក​ឯកសារ​អត្ថបទ​ធម្មតា..."
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, m_reformatLessonTextButton)
+#: src/ui/lessontexteditor.ui:49
+msgid "Wrap lines automatically"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_characterCountLabel)
+#: src/ui/lessontexteditor.ui:77
+msgid "0 Characters"
+msgstr "តួអក្សរ​ថ្មី ០"
 
 #. i18n: ectx: property (toolTip), widget (QToolButton, m_pasteCurrentNameButton)
 #: src/ui/newkeyboardlayoutwidget.ui:37
@@ -1312,9 +1368,6 @@ msgstr "កំណត់​លេខ​សម្គាល់​កម្មវិ
 
 #~ msgid "Changing user to '%1'. Restarting training session at current level."
 #~ msgstr "ផ្លាស់ប្ដូរ​អ្នកប្រើ​ទៅ '%1' ។ ចាប់ផ្ដើម​សម័យ​​បង្រៀន​នៅ​កម្រិត​បច្ចុប្បន្ន ។"
-
-#~ msgid "&Open Plain Text File..."
-#~ msgstr "បើក​ឯកសារ​អត្ថបទ​ធម្មតា..."
 
 #~ msgid "&Open Lecture..."
 #~ msgstr "បើក​ការ​បង្រៀន..."
