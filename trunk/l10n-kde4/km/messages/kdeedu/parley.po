@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-04 01:32+0000\n"
+"POT-Creation-Date: 2013-11-11 01:32+0000\n"
 "PO-Revision-Date: 2012-07-23 15:02+0700\n"
 "Last-Translator: Sok Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -1562,49 +1562,59 @@ msgstr "ការ​កំណត់​ទិដ្ឋភាព"
 
 #: src/parleyactions.cpp:151
 #, fuzzy
+#| msgid "Export As"
+msgid "Export results..."
+msgstr "នាំចេញ​ជា"
+
+#: src/parleyactions.cpp:152
+msgid "Write a file with the results of the practice"
+msgstr ""
+
+#: src/parleyactions.cpp:156
+#, fuzzy
 msgid "Editor"
 msgstr "ការ​​កែសម្រួល"
 
-#: src/parleyactions.cpp:152
+#: src/parleyactions.cpp:157
 #, fuzzy
 #| msgid "Save the active vocabulary document"
 msgid "Switch to vocabulary editor"
 msgstr "រក្សា​ទុក"
 
-#: src/parleyactions.cpp:156
+#: src/parleyactions.cpp:161
 #, fuzzy
 msgid "Show Se&arch"
 msgstr "ស្វែងរក"
 
-#: src/parleyactions.cpp:157
+#: src/parleyactions.cpp:162
 #, fuzzy
 msgid "Toggle display of the search bar"
 msgstr "បិទ​បើក​ការ​បង្ហាញ​របស់​របារ​ឧបករណ៍"
 
-#: src/parleyactions.cpp:166
+#: src/parleyactions.cpp:171
 msgid "&Script Manager"
 msgstr ""
 
-#: src/parleyactions.cpp:167
+#: src/parleyactions.cpp:172
 msgid "Enable and disable scripts"
 msgstr ""
 
-#: src/parleyactions.cpp:183
+#: src/parleyactions.cpp:188
 msgid "Download New Vocabularies..."
 msgstr "ទាញយក​វាក្យសព្ទ​ថ្មី..."
 
-#: src/parleyactions.cpp:185
+#: src/parleyactions.cpp:190
 #, fuzzy
 #| msgid "Downloads new vocabularies"
 msgid "Downloads new vocabulary collections"
 msgstr "ទាញ​យក​វាក្យសព្ទ​ថ្មី"
 
-#: src/parleyactions.cpp:191
+#: src/parleyactions.cpp:196
 #, fuzzy
 msgid "&Upload Vocabulary Document..."
 msgstr "បើក​ឯកសារ​វាក្យសព្ទ"
 
-#: src/parleyactions.cpp:192
+#: src/parleyactions.cpp:197
 #, fuzzy
 #| msgid "Save the active vocabulary document with a different name"
 msgid "Share the current vocabulary collection with other users"
@@ -1747,7 +1757,7 @@ msgid "Statistics Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
 #. i18n: ectx: ToolBar (practiceSummaryToolBar)
-#: src/parleyui.rc:43 src/practice/practicesummaryui.rc:19
+#: src/parleyui.rc:43 src/practice/practicesummaryui.rc:20
 #, fuzzy
 #| msgid "Article"
 msgid "Practice Summary Toolbar"
@@ -2047,39 +2057,100 @@ msgid ""
 "This shortcut changes how the answer is counted."
 msgstr ""
 
-#: src/practice/practicesummarycomponent.cpp:60
+#: src/practice/practicesummarycomponent.cpp:66
 #, kde-format
 msgctxt "number of words, minutes, seconds"
 msgid "You practiced %1 in %2 and %3."
 msgstr ""
 
-#: src/practice/practicesummarycomponent.cpp:61
+#: src/practice/practicesummarycomponent.cpp:67
 #, fuzzy, kde-format
 #| msgid "Enter the word:"
 msgid "one word"
 msgid_plural "%1 words"
 msgstr[0] "បញ្ចូល​ពាក្យ​ ៖ "
 
-#: src/practice/practicesummarycomponent.cpp:62
+#: src/practice/practicesummarycomponent.cpp:68
 #, fuzzy, kde-format
 #| msgid "minutes"
 msgid "one minute"
 msgid_plural "%1 minutes"
 msgstr[0] "នាទី​"
 
-#: src/practice/practicesummarycomponent.cpp:63
+#: src/practice/practicesummarycomponent.cpp:69
 #, fuzzy, kde-format
 #| msgid "&Append Language"
 msgid "one second"
 msgid_plural "%1 seconds"
 msgstr[0] "វិនាទី"
 
-#: src/practice/practicesummarycomponent.cpp:79
-#: src/practice/practicesummarycomponent.cpp:80
+#: src/practice/practicesummarycomponent.cpp:86
+#: src/practice/practicesummarycomponent.cpp:87
 #, fuzzy
 #| msgid "View Settings"
 msgid "Practice Again"
 msgstr "ការ​កំណត់​ទិដ្ឋភាព"
+
+#: src/practice/practicesummarycomponent.cpp:156
+msgid "HTML Files"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:156
+#, fuzzy
+#| msgid "General Document Properties"
+msgid "OpenDocument text files"
+msgstr "លក្ខណៈ​សម្បត្តិ​ឯកសារ​ទូទៅ​"
+
+#: src/practice/practicesummarycomponent.cpp:164
+#, fuzzy
+#| msgid "Article"
+msgid "Practice results"
+msgstr "ពាក្យ​នាំ​មុខ​នាម​"
+
+#: src/practice/practicesummarycomponent.cpp:169
+#, kde-format
+msgid "Answered questions: %1\n"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:170
+#, kde-format
+msgid "Correct answers: %1\n"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:171
+#, kde-format
+msgid "Wrong answers: %1\n"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:178
+msgid "<b>Attempts</b>"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:179
+#, fuzzy
+#| msgid "&Show solution"
+msgid "<b>Question</b>"
+msgstr "បង្ហាញ​ដំណោះ​ស្រាយ"
+
+#: src/practice/practicesummarycomponent.cpp:180
+msgid "<b>Correct answer</b>"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:181
+msgid "<b>Your errors</b>"
+msgstr ""
+
+#: src/practice/practicesummarycomponent.cpp:195
+#, fuzzy, kde-format
+#| msgid "Starting special query..."
+msgid "Could not write to %1"
+msgstr "កំពុង​ចាប់ផ្ដើម​សំណួរ​ពិសេស..."
+
+#: src/practice/practicesummarycomponent.cpp:196
+#, fuzzy
+#| msgid "Starting special query..."
+msgid "Could not write file"
+msgstr "កំពុង​ចាប់ផ្ដើម​សំណួរ​ពិសេស..."
 
 #. i18n: ectx: property (text), widget (QTableWidget, tableWidget)
 #: src/practice/practicesummarywidget.ui:28
