@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadi_maildir_resource\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-07-09 21:20+0000\n"
+"POT-Creation-Date: 2013-11-16 01:32+0000\n"
 "PO-Revision-Date: 2011-12-21 14:07+0700\n"
 "Last-Translator: Seng Sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <supprot@khmeros.info>\n"
@@ -27,37 +27,68 @@ msgstr "ជ្រើស​ថត MailDir"
 msgid "The selected path is empty."
 msgstr "ផ្លូវ​ដែលបាន​ជ្រើស​គឺ​ទទេ ។"
 
-#: configdialog.cpp:67
+#: configdialog.cpp:66
 msgid "The selected path contains valid Maildir folders."
 msgstr "ផ្លូវ​ដែល​បាន​ជ្រើស​មាន​ថត Maildir ត្រឹមត្រូវ ។"
 
-#: configdialog.cpp:74
+#: configdialog.cpp:73
 msgid "The selected path is a valid Maildir."
 msgstr "ផ្លូវ​ដែលបាន​ជ្រើស​គឺ​ជា Maildir ដែល​ត្រឹមត្រូវ ។"
 
-#: configdialog.cpp:80
+#: configdialog.cpp:79
 msgid "The selected path does not exist yet, a new Maildir will be created."
 msgstr "ផ្លូវ​ដែល​បាន​ជ្រើស​មិន​ទាន់​មាន​នៅ​ឡើយ​ទេ Maildir នឹង​ត្រូវ​បាន​បង្កើត ។"
 
-#: configdialog.cpp:84
+#: configdialog.cpp:83
 msgid "The selected path does not exist."
 msgstr "ផ្លូវ​ដែល​បាន​ជ្រើស​មិនទាន់មាន​នៅ​ឡើយ​ទេ ។"
 
-#: libmaildir/maildir.cpp:252 libmaildir/maildir.cpp:257
+#: libmaildir/maildir.cpp:253 libmaildir/maildir.cpp:258
 #, kde-format
 msgid "Error opening %1; this folder is missing."
 msgstr ""
 
-#: libmaildir/maildir.cpp:262
+#: libmaildir/maildir.cpp:263
 #, kde-format
 msgid ""
 "Error opening %1; either this is not a valid maildir folder, or you do not "
 "have sufficient access permissions."
 msgstr ""
 
-#: maildirresource.cpp:139 maildirresource.cpp:265 maildirresource.cpp:296
-#: maildirresource.cpp:377 maildirresource.cpp:415 maildirresource.cpp:532
-#: maildirresource.cpp:563 maildirresource.cpp:605 maildirresource.cpp:638
+#: libmaildir/maildir.cpp:458 libmaildir/maildir.cpp:479
+#: libmaildir/maildir.cpp:497 libmaildir/maildir.cpp:516
+#: libmaildir/maildir.cpp:534 libmaildir/maildir.cpp:559
+#: libmaildir/maildir.cpp:634 libmaildir/maildir.cpp:776
+#, fuzzy, kde-format
+#| msgid "Cannot move root maildir folder '%1'."
+msgid "Cannot locate mail file %1."
+msgstr "មិនអាច​ផ្លាស់ទី​ថត root maildir '%1' បាន​ទេ ។"
+
+#: libmaildir/maildir.cpp:464 libmaildir/maildir.cpp:485
+#, fuzzy, kde-format
+#| msgid "Cannot move root maildir folder '%1'."
+msgid "Cannot open mail file %1."
+msgstr "មិនអាច​ផ្លាស់ទី​ថត root maildir '%1' បាន​ទេ ។"
+
+#: libmaildir/maildir.cpp:567 libmaildir/maildir.cpp:594
+#, fuzzy, kde-format
+#| msgid "Cannot move root maildir folder '%1'."
+msgid "Cannot write to mail file %1."
+msgstr "មិនអាច​ផ្លាស់ទី​ថត root maildir '%1' បាន​ទេ ។"
+
+#: libmaildir/maildir.cpp:608
+#, kde-format
+msgid "Failed to create mail file %1. The error was: %2"
+msgstr ""
+
+#: libmaildir/maildir.cpp:700
+#, kde-format
+msgid "Failed to update the file name %1 to %2 on the disk. The error was: %3."
+msgstr ""
+
+#: maildirresource.cpp:139 maildirresource.cpp:265 maildirresource.cpp:301
+#: maildirresource.cpp:385 maildirresource.cpp:422 maildirresource.cpp:538
+#: maildirresource.cpp:569 maildirresource.cpp:611 maildirresource.cpp:644
 msgid "Unusable configuration."
 msgstr "កា​កំណត់​រចនាសម្ព័ន្ធ​ដែល​មិន​អាច​ប្រើ​បាន ។"
 
@@ -66,71 +97,73 @@ msgstr "កា​កំណត់​រចនាសម្ព័ន្ធ​ដែ
 msgid "Unable to fetch item: The maildir folder \"%1\" is not valid."
 msgstr "មិនអាច​ប្រមូលយក​ធាតុ ៖ ថត maildir \"%1\" គឺ​មិនត្រឹមត្រូវ ។"
 
-#: maildirresource.cpp:277
+#: maildirresource.cpp:276
 msgid "Error: Unsupported type."
 msgstr "កំហុស​ ៖ ប្រភេទ​ដែល​មិន​បានគាំទ្រ ។"
 
-#: maildirresource.cpp:336
-msgid "Failed to change the flags for the mail."
+#: maildirresource.cpp:340
+#, fuzzy, kde-format
+#| msgid "Failed to change the flags for the mail."
+msgid "Failed to change the flags for the mail. %1"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ផ្លាស់ប្ដូរ​ទង់​សម្រាប់​សំបុត្រ ។"
 
-#: maildirresource.cpp:384
+#: maildirresource.cpp:391
 #, kde-format
 msgid "Source folder is invalid: '%1'."
 msgstr "ថត​ប្រភព​មិន​ត្រឹមត្រូវ ៖ '%1' ។"
 
-#: maildirresource.cpp:390
+#: maildirresource.cpp:397
 #, kde-format
 msgid "Destination folder is invalid: '%1'."
 msgstr "ថត​ទិសដៅ​មិន​ត្រឹមត្រូវ ៖ '%1' ។"
 
-#: maildirresource.cpp:403
+#: maildirresource.cpp:410
 #, fuzzy, kde-format
 #| msgid "Could not move message '%1'."
-msgid "Could not move message '%1' from '%2' to '%3'."
+msgid "Could not move message '%1' from '%2' to '%3'. The error was %4."
 msgstr "មិនអាច​ផ្លាស់ទី​សារ '%1' បាន​ទេ ។"
 
-#: maildirresource.cpp:425
+#: maildirresource.cpp:432
 #, kde-format
 msgid "Failed to delete message: %1"
 msgstr "បានបរាជ័យ​ក្នុង​ការ​លុប​សារ ៖ %1"
 
-#: maildirresource.cpp:512
+#: maildirresource.cpp:518
 #, kde-format
 msgid "Maildir '%1' for collection '%2' is invalid."
 msgstr "Maildir '%1' សម្រាប់​សម្រាំង '%2' មិន​ត្រឹមត្រូវ​ទេ ។"
 
-#: maildirresource.cpp:590
+#: maildirresource.cpp:596
 #, kde-format
 msgid "Unable to rename maildir folder '%1'."
 msgstr "មិនអាច​ប្ដូរ​ឈ្មោះ​ថត maildir '%1' បាន​ទេ ។"
 
-#: maildirresource.cpp:611
+#: maildirresource.cpp:617
 #, kde-format
 msgid "Cannot move root maildir folder '%1'."
 msgstr "មិនអាច​ផ្លាស់ទី​ថត root maildir '%1' បាន​ទេ ។"
 
-#: maildirresource.cpp:626
+#: maildirresource.cpp:632
 #, kde-format
 msgid "Unable to move maildir folder '%1' from '%2' to '%3'."
 msgstr "មិនអាច​ផ្លាស់ទី​ថត maildir '%1' ពី '%2' ទៅ '%3' បាន​ទេ ។"
 
-#: maildirresource.cpp:644
+#: maildirresource.cpp:650
 #, kde-format
 msgid "Cannot delete top-level maildir folder '%1'."
 msgstr "មិនអាច​លុប​ថត maildir កម្រិត​កំពូល​បាន​ទេ '%1' ។"
 
-#: maildirresource.cpp:653
+#: maildirresource.cpp:659
 #, kde-format
 msgid "Failed to delete sub-folder '%1'."
 msgstr "បាន​បរាជ័យ​ក្នុងការ​លុប​ថត​រង '%1' ។"
 
-#: maildirresource.cpp:667
+#: maildirresource.cpp:673
 #, kde-format
 msgid "Unable to create maildir '%1'."
 msgstr "មិនអាច​បង្កើត maildir '%1' បានទេ ។"
 
-#: maildirresource.cpp:676
+#: maildirresource.cpp:682
 msgid "No usable storage location configured."
 msgstr "គ្មាន​ទីតាង​ផ្ទុក​ដែល​អាច​ប្រើបាន​ បាន​កំណត់​រចនាសម្ព័ន្ធ​នោះ​ទេ ។"
 
