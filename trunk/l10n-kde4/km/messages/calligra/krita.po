@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-05 01:22+0000\n"
+"POT-Creation-Date: 2013-12-06 01:31+0000\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1256,38 +1256,42 @@ msgstr "ធ្វើ​​មាត្រដ្ឋាន រូបភាព"
 msgid "Change Image Resolution"
 msgstr "គុណភាព​បង្ហាញ​រូបភាព"
 
-#: image/kis_image.cc:600 plugins/extensions/rotateimage/rotateimage.cc:155
+#: image/kis_image.cc:528
+msgid "Scale Layer"
+msgstr "ធ្វើ​មាត្រដ្ឋាន​ស្រទាប់"
+
+#: image/kis_image.cc:622 plugins/extensions/rotateimage/rotateimage.cc:155
 msgid "Rotate Layer"
 msgstr "បង្វិល​ស្រទាប់"
 
-#: image/kis_image.cc:667
+#: image/kis_image.cc:689
 msgid "Shear layer"
 msgstr "កាត់​ស្រទាប់​"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: image/kis_image.cc:673 plugins/extensions/shearimage/dlg_shearimage.cc:32
+#: image/kis_image.cc:695 plugins/extensions/shearimage/dlg_shearimage.cc:32
 #: plugins/extensions/shearimage/shearimage.cc:64
 #: plugins/extensions/shearimage/wdg_shearimage.ui:14
 msgid "Shear Image"
 msgstr "កាត់​រូបភាព​"
 
-#: image/kis_image.cc:686
+#: image/kis_image.cc:708
 msgid "Convert Image Color Space"
 msgstr "បម្លែង ប្រភេទ​រូបភាព"
 
-#: image/kis_image.cc:720
+#: image/kis_image.cc:742
 msgid "Convert Projection Color Space"
 msgstr "បម្លែង​ចន្លោះ​ពណ៌​នៃ​ការ​បញ្ចាំង"
 
-#: image/kis_image.cc:899 ui/kis_layer_manager.cc:728
+#: image/kis_image.cc:921 ui/kis_layer_manager.cc:707
 msgid "Flatten Image"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
-#: image/kis_image.cc:975
+#: image/kis_image.cc:997
 msgid "Merge with Layer Below"
 msgstr "បញ្ចូល​ស្រទាប់​ខាងក្រោម​ចូលគ្នា "
 
-#: image/kis_image.cc:1021
+#: image/kis_image.cc:1043
 msgid "Flatten Layer"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
@@ -1370,10 +1374,6 @@ msgstr "ដាក់​ជម្រើស​បញ្ជ្រាស"
 #: image/kis_selection_mask.cpp:106 ui/kis_node_model.cpp:422
 msgid "Active"
 msgstr "សកម្ម"
-
-#: image/kis_transform_visitor.h:158
-msgid "Rotate Node"
-msgstr "បង្វិល​ថ្នាំង"
 
 #: image/metadata/kis_meta_data_filter_p.cc:51
 msgid "Anonymizer"
@@ -2686,7 +2686,7 @@ msgid "&Select Opaque"
 msgstr "ជ្រើស​ស្រអាប់"
 
 #: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:458
-#: ui/kis_layer_manager.cc:283
+#: ui/kis_layer_manager.cc:285
 msgid "&Merge with Layer Below"
 msgstr "បញ្ចូល​ស្រទាប់​ខាង​ក្រោម​ចូល​គ្នា​"
 
@@ -3446,29 +3446,28 @@ msgstr "ធ្វើ​មាត្រដ្ឋាន​ទៅ​ទំហំ​
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgLayerSize)
 #: plugins/extensions/imagesize/dlg_layersize.cc:46
-#: plugins/extensions/imagesize/imagesize.cc:135
+#: plugins/extensions/imagesize/imagesize.cc:130
 #: plugins/extensions/imagesize/wdg_layersize.ui:14
 msgid "Layer Size"
 msgstr "ទំហំ​ស្រទាប់​"
 
-#: plugins/extensions/imagesize/imagesize.cc:56
+#: plugins/extensions/imagesize/imagesize.cc:51
 msgid "Scale To New Size..."
 msgstr "រក្សា​ទុក​ស្រទាប់​ជា​រូបភាព..."
 
-#: plugins/extensions/imagesize/imagesize.cc:60
+#: plugins/extensions/imagesize/imagesize.cc:55
 msgid "Size Canvas..."
 msgstr "ខ្សែកោង​ទំហំ..."
 
-#: plugins/extensions/imagesize/imagesize.cc:64
+#: plugins/extensions/imagesize/imagesize.cc:59
 msgid "Scale &Layer..."
 msgstr "​មាត្រដ្ឋាន​ស្រទាប់​..."
 
-#: plugins/extensions/imagesize/imagesize.cc:70
+#: plugins/extensions/imagesize/imagesize.cc:65
 msgid "&Scale..."
 msgstr "មាត្រដ្ឋាន..."
 
-#: plugins/extensions/imagesize/imagesize.cc:165
-#: plugins/extensions/imagesize/imagesize.cc:172
+#: plugins/extensions/imagesize/imagesize.cc:159
 msgid "Scale Selection"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ការ​ជ្រើស"
 
@@ -9222,7 +9221,7 @@ msgstr "ជម្រើស​ស្រដៀងគ្នា"
 msgid "Select similar colors"
 msgstr "ជ្រើស​ពណ៌​ស្រដៀង​គ្នា"
 
-#: plugins/tools/tool_crop/kis_tool_crop.h:200
+#: plugins/tools/tool_crop/kis_tool_crop.h:201
 msgid "Crop the image to an area"
 msgstr "ច្រឹប​រូបភាព​ទៅ​តាម​ផ្ទៃ"
 
@@ -11880,79 +11879,75 @@ msgstr "លក្ខណៈ​សម្បត្តិ..."
 msgid "Import Image"
 msgstr "នាំ​ចូល​រូបភាព"
 
-#: ui/kis_layer_manager.cc:278
+#: ui/kis_layer_manager.cc:280
 msgid "&Flatten image"
 msgstr "ធ្វើ​ឲ្យ​រូបភាព​រាប​ស្មើ"
 
-#: ui/kis_layer_manager.cc:288
+#: ui/kis_layer_manager.cc:290
 msgid "&Flatten Layer"
 msgstr "ធ្វើ​ឲ្យ​រូបភាព​រាប​ស្មើ"
 
-#: ui/kis_layer_manager.cc:292 ui/kis_layer_manager.cc:797
+#: ui/kis_layer_manager.cc:294 ui/kis_layer_manager.cc:776
 msgid "Rasterize Layer"
 msgstr "ស្រទាប់ Rasterize"
 
-#: ui/kis_layer_manager.cc:298
+#: ui/kis_layer_manager.cc:300
 #, fuzzy
 #| msgid "&Group Layer"
 msgid "Save Group Layers..."
 msgstr "ដាក់​ស្រទាប់​ជា​ក្រុម"
 
-#: ui/kis_layer_manager.cc:302
+#: ui/kis_layer_manager.cc:304
 msgid "Size Canvas to Size of Current Layer"
 msgstr "ខ្សែកោង​ទំហំ​ទៅ​នឹង​ទំហំ​របស់​ស្រទាប់​បច្ចុប្បន្ន"
 
-#: ui/kis_layer_manager.cc:357
+#: ui/kis_layer_manager.cc:359
 msgid "Filter Layer Properties"
 msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​តម្រង"
 
-#: ui/kis_layer_manager.cc:402
+#: ui/kis_layer_manager.cc:404
 msgid "Generator Layer Properties"
 msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​​កម្មវិធី​បង្កើត"
 
-#: ui/kis_layer_manager.cc:480
+#: ui/kis_layer_manager.cc:482
 #, fuzzy
 #| msgid "Convert Current Layer From"
 msgid "Convert to a Paint Layer"
 msgstr "បម្លែង​ស្រទាប់​បច្ចុប្បន្ន​ពី "
 
-#: ui/kis_layer_manager.cc:559
+#: ui/kis_layer_manager.cc:561
 msgid "New Filter Layer"
 msgstr "ស្រទាប់​តម្រង​ថ្មី"
 
-#: ui/kis_layer_manager.cc:618
+#: ui/kis_layer_manager.cc:620
 msgid "Could not add layer to image."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: ui/kis_layer_manager.cc:618
+#: ui/kis_layer_manager.cc:620
 msgid "Layer Error"
 msgstr "កំហុស​ស្រទាប់​"
 
-#: ui/kis_layer_manager.cc:685
-msgid "Scale Layer"
-msgstr "ធ្វើ​មាត្រដ្ឋាន​ស្រទាប់"
-
-#: ui/kis_layer_manager.cc:727
+#: ui/kis_layer_manager.cc:706
 msgid "The image contains hidden layers that will be lost."
 msgstr "រូបភាព​មាន​ស្រទាប់​ដែល​លាក់​ ដែល​នឹង​ត្រូវ​បាត់បង់ ។"
 
-#: ui/kis_layer_manager.cc:729
+#: ui/kis_layer_manager.cc:708
 msgid "&Flatten Image"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
-#: ui/kis_layer_manager.cc:833
+#: ui/kis_layer_manager.cc:812
 msgid "Convert Invisible Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:836
+#: ui/kis_layer_manager.cc:815
 msgid "Export Only Toplevel Groups"
 msgstr ""
 
-#: ui/kis_layer_manager.cc:894
+#: ui/kis_layer_manager.cc:873
 msgid "No file name specified."
 msgstr ""
 
-#: ui/kis_layer_manager.cc:894
+#: ui/kis_layer_manager.cc:873
 msgid "No file specified"
 msgstr ""
 
@@ -12150,7 +12145,7 @@ msgstr "ស្រទាប់​ Y ឆ្លុះ"
 msgid "Mirror Mask Y"
 msgstr "របាំង​ឆ្លុះ X"
 
-#: ui/kis_node_manager.cpp:764
+#: ui/kis_node_manager.cpp:768
 #, fuzzy
 #| msgid "Exposure mode:"
 msgid "Export Node"
@@ -12730,6 +12725,9 @@ msgstr "តំបន់​ធ្វើ​ការ​"
 #, kde-format
 msgid "Workspace %1"
 msgstr "តំបន់​ធ្វើ​ការ %1"
+
+#~ msgid "Rotate Node"
+#~ msgstr "បង្វិល​ថ្នាំង"
 
 #~ msgid "File size:"
 #~ msgstr "ទំហំ​រូបភាព ៖"
