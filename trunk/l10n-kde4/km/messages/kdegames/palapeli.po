@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: palapeli\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-12-30 01:33+0000\n"
+"POT-Creation-Date: 2014-01-02 01:29+0000\n"
 "PO-Revision-Date: 2012-07-10 15:56+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -299,6 +299,21 @@ msgctxt "Description (used like a name) for a mouse interaction method"
 msgid "Toggle lock state of the puzzle table area"
 msgstr "បិទ​/បើក​ស្ថាន​ភាព​ចាក់​សោ​របស់​ផ្ទៃ​តារាង​ល្បែង​ផ្គុំ​រូប"
 
+#: src/engine/puzzlepreview.cpp:40
+msgctxt "Window title"
+msgid "Preview of completed puzzle"
+msgstr ""
+
+#: src/engine/puzzlepreview.cpp:47
+msgctxt "text in preview window"
+msgid "Image is not available."
+msgstr ""
+
+#: src/engine/puzzlepreview.cpp:75
+#, kde-format
+msgid "%1 - Preview"
+msgstr ""
+
 #: src/engine/scene.cpp:299
 msgid ""
 "You have finished the puzzle the last time. Do you want to restart it now?"
@@ -452,11 +467,19 @@ msgstr "រក្សា​សិទ្ធិ​ឆ្នាំ​ ២​០​�
 msgid "Stefan Majewsky"
 msgstr "Stefan Majewsky"
 
-#: src/main.cpp:36
+#: src/main.cpp:33
+msgid "Johannes Loehnert"
+msgstr ""
+
+#: src/main.cpp:34
+msgid "The option to preview the completed puzzle"
+msgstr ""
+
+#: src/main.cpp:39
 msgid "Path to puzzle file (will be opened if -i is not given)"
 msgstr "URL នៃ​ឯក​សារ​ល្បែង​ផ្គុំ​រូប​ (នឹង​ត្រូវ​បើក​បើ​ -i មិន​ត្រូវ​បាន​ផ្ដល់​)"
 
-#: src/main.cpp:37
+#: src/main.cpp:40
 msgid ""
 "Import the given puzzle file into the local collection (does nothing if no "
 "puzzle file is given)"
@@ -464,7 +487,7 @@ msgstr ""
 "នាំ​ចូល​ឯក​សារ​ល្បែង​ផ្គុំ​រូប​ដែល​បាន​ផ្ដល់​​ចូល​ទៅ​ក្នុង​សម្រាំង​មូលដ្ឋាន​​ (កុំ​ធ្វើ​អ្វី​ទាំង​អស់​ បើ​សិន​​ជា គ្មាន​ឯកសារ​"
 "ល្បែង​ផ្គុំ​រូប​​​ផ្ដល់​ឲ្យ​ទេ​)"
 
-#: src/main.cpp:38
+#: src/main.cpp:41
 msgid ""
 "If the -i/--import option is specified, the main window will not be shown "
 "after importing the given puzzle."
@@ -522,8 +545,18 @@ msgstr ""
 "ថា​តើ​ត្រូវ​បង្ហាញ​ជ្រុង​ទេរ​នៅ​លើ​ចំណិត​ល្បែង​ផ្គុំ​រូប​ឬ​អត់​ ។ ការ​បិទ​វា អាច​នឹង​ធ្វើ​ឲ្យ​សមត្ថភាព​ផ្ទុក​ល្បែង​ផ្គុំ​រូប​"
 "កាន់​តែ​ប្រសើរ​ឡើង ។"
 
+#. i18n: ectx: label, entry (PuzzlePreviewVisible), group (PuzzlePreview)
+#: src/palapeli.kcfg:34
+msgid "Whether the preview window was switched on last time Palapeli was run."
+msgstr ""
+
+#. i18n: ectx: label, entry (PuzzlePreviewGeometry), group (PuzzlePreview)
+#: src/palapeli.kcfg:38
+msgid "Last position and size of puzzle preview."
+msgstr ""
+
 #. i18n: ectx: ToolBar (mainToolBar)
-#: src/palapeliui.rc:21
+#: src/palapeliui.rc:24
 msgid "Main toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
@@ -587,63 +620,77 @@ msgctxt "@item:inrange description for the \"snapping precision\" setting"
 msgid "Unprecise (easier)"
 msgstr "មិន​ត្រឹម​ត្រូវ (ងាយ​ស្រួល)"
 
-#: src/window/mainwindow.cpp:79
+#: src/window/mainwindow.cpp:86
 msgid "Show statusbar of puzzle table"
 msgstr "បង្ហាញ​របារ​ស្ថាន​ភាព​របស់​តារាង​ល្បែង​ផ្គុំ​រូប​"
 
-#: src/window/mainwindow.cpp:81
+#: src/window/mainwindow.cpp:88
 msgid "Back to &collection"
 msgstr "សម្រាំង​របស់​ខ្ញុំ"
 
-#: src/window/mainwindow.cpp:82
+#: src/window/mainwindow.cpp:89
 msgid "Go back to the collection to choose another puzzle"
 msgstr "ត្រឡប់​​ទៅ​សម្រាំង​ ដើម្បី​ជ្រើស​ការ​ផ្គុំ​រូប​ផ្សេង​ទៀត"
 
-#: src/window/mainwindow.cpp:87
+#: src/window/mainwindow.cpp:94
 msgid "Create &new puzzle..."
 msgstr "បង្កើត​ល្បែង​ផ្គុំ​រូប​ថ្មី..."
 
-#: src/window/mainwindow.cpp:89
+#: src/window/mainwindow.cpp:96
 msgid "Create a new puzzle using an image file from your disk"
 msgstr "បង្កើត​ល្បែង​ផ្គុំ​រូប​ថ្មី​ដោយ​ប្រើ​ឯក​សារ​មក​ពី​ថាស​របស់​អ្នក​"
 
-#: src/window/mainwindow.cpp:93
+#: src/window/mainwindow.cpp:100
 msgid "&Delete"
 msgstr "លុប"
 
-#: src/window/mainwindow.cpp:95
+#: src/window/mainwindow.cpp:102
 msgid "Delete the selected puzzle from your collection"
 msgstr "លុប​ល្បែង​ផ្គុំ​រូប​ដែល​បាន​ជ្រើស​ចេញ​ពី​សម្រាំង​របស់​អ្នក"
 
-#: src/window/mainwindow.cpp:100
+#: src/window/mainwindow.cpp:107
 msgid "&Import from file..."
 msgstr "នាំ​ចូល​ពី​ឯកសារ​..."
 
-#: src/window/mainwindow.cpp:101
+#: src/window/mainwindow.cpp:108
 msgid "Import a new puzzle from a file into your collection"
 msgstr "នាំ​ចូល​ល្បែង​ផ្គុំ​រូប​ថ្មី​ពី​ឯកសារ​ចូល​ទៅ​ក្នុង​សម្រាំង​របស់​អ្នក"
 
-#: src/window/mainwindow.cpp:105
+#: src/window/mainwindow.cpp:112
 msgid "&Export to file..."
 msgstr "នាំ​ចេញ​ទៅ​ឯកសារ..."
 
-#: src/window/mainwindow.cpp:107
+#: src/window/mainwindow.cpp:114
 msgid "Export the selected puzzle from your collection into a file"
 msgstr "នាំ​ចេញ​ល្បែង​ផ្គុំ​រូប​ដែល​បាន​ជ្រើស​ពី​​សម្រាំង​របស់​អ្នក​ចូល​ទៅ​ក្នុង​ឯកសារ"
 
-#: src/window/mainwindow.cpp:112
+#: src/window/mainwindow.cpp:119
 msgid "&Restart puzzle..."
 msgstr "ចាប់​ផ្ដើម​ល្បែង​ផ្គុំ​រូប​ឡើង​វិញ​..."
 
-#: src/window/mainwindow.cpp:113
+#: src/window/mainwindow.cpp:120
 msgid "Delete the saved progress"
 msgstr "លុបវឌ្ឍនភាព​ដែល​បាន​រក្សា​ទុក"
 
-#: src/window/mainwindow.cpp:173
+#: src/window/mainwindow.cpp:126
+msgctxt "Preview is a noun here"
+msgid "&Preview"
+msgstr ""
+
+#: src/window/mainwindow.cpp:128
+msgctxt "Preview is a noun here"
+msgid "Preview"
+msgstr ""
+
+#: src/window/mainwindow.cpp:129
+msgid "Shows or hides the image of the completed puzzle"
+msgstr ""
+
+#: src/window/mainwindow.cpp:221
 msgid "The following puzzles will be deleted. This action cannot be undone."
 msgstr "ការ​ផ្គុំ​រូប​ដូច​ខាង​ក្រោម​នឹង​ត្រូវ​បាន​លុប ។ សកម្មភា​ព​នេះ​មិន​អាចធ្វើ​វិញ​បាន​ទេ ។"
 
-#: src/window/mainwindow.cpp:184 src/window/mainwindow.cpp:207
+#: src/window/mainwindow.cpp:232 src/window/mainwindow.cpp:255
 msgctxt "Filter for a file dialog"
 msgid "*.puzzle|Palapeli puzzles (*.puzzle)"
 msgstr "*.puzzle|Palapeli puzzles (*.puzzle)"
