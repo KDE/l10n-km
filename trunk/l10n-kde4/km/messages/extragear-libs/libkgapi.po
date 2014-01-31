@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkgapi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-06-01 01:26+0000\n"
+"POT-Creation-Date: 2014-01-31 01:34+0000\n"
 "PO-Revision-Date: 2012-07-09 09:46+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -19,15 +19,55 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: km-KH\n"
 
-#: libkgapi/accessmanager_p.cpp:82
-msgid "No valid reply received"
-msgstr "មិន​បាន​ទទួល​ចម្លើយ​តប​ត្រឹមត្រូវ​ទេ"
+#: libkgapi2/accountinfo/accountinfofetchjob.cpp:74
+#: libkgapi2/calendar/calendarcreatejob.cpp:96
+#: libkgapi2/calendar/calendarfetchjob.cpp:118
+#: libkgapi2/calendar/calendarmodifyjob.cpp:95
+#: libkgapi2/calendar/eventcreatejob.cpp:98
+#: libkgapi2/calendar/eventfetchjob.cpp:217
+#: libkgapi2/calendar/eventmodifyjob.cpp:97
+#: libkgapi2/calendar/eventmovejob.cpp:150
+#: libkgapi2/contacts/contactcreatejob.cpp:150
+#: libkgapi2/contacts/contactmodifyjob.cpp:155
+#: libkgapi2/contacts/contactsgroupcreatejob.cpp:106
+#: libkgapi2/contacts/contactsgroupfetchjob.cpp:115
+#: libkgapi2/contacts/contactsgroupmodifyjob.cpp:108
+#: libkgapi2/latitude/locationcreatejob.cpp:97
+#: libkgapi2/latitude/locationfetchhistoryjob.cpp:151
+#: libkgapi2/latitude/locationfetchjob.cpp:107
+#: libkgapi2/tasks/taskcreatejob.cpp:118 libkgapi2/tasks/taskfetchjob.cpp:249
+#: libkgapi2/tasks/tasklistcreatejob.cpp:95
+#: libkgapi2/tasks/tasklistfetchjob.cpp:95
+#: libkgapi2/tasks/tasklistmodifyjob.cpp:97
+#: libkgapi2/tasks/taskmodifyjob.cpp:98
+#, fuzzy
+#| msgid "Unknown reply content type!"
+msgid "Invalid response content type"
+msgstr "មិន​ស្គាល់​ប្រភេទ​មាតិកា​ឆ្លើយតប !"
 
-#: libkgapi/accessmanager_p.cpp:112
+#: libkgapi2/authjob.cpp:160
+msgid "Failed to parse newly fetched tokens"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ញែក​ថូខឹន​ដែល​បាន​ទៅ​ប្រមូល​យក​ថ្មីៗ"
+
+#: libkgapi2/authjob.cpp:205
+msgid "Account name is empty"
+msgstr ""
+
+#: libkgapi2/calendar/calendar.cpp:94
+msgid "Google Calendar"
+msgstr ""
+
+#: libkgapi2/job.cpp:132
 msgid "Bad request."
 msgstr "សំណើ​មិន​ល្អ"
 
-#: libkgapi/accessmanager_p.cpp:170 libkgapi/accessmanager_p.cpp:171
+#: libkgapi2/job.cpp:139
+#, fuzzy
+#| msgid "Not authenticated"
+msgid "Invalid authentication."
+msgstr "មិន​បានផ្ទៀងផ្ទាត់"
+
+#: libkgapi2/job.cpp:148
 #, kde-format
 msgid ""
 "Requested resource is forbidden.\n"
@@ -38,7 +78,7 @@ msgstr ""
 "\n"
 "Google បាន​ឆ្លើយ '%1'"
 
-#: libkgapi/accessmanager_p.cpp:179 libkgapi/accessmanager_p.cpp:180
+#: libkgapi2/job.cpp:158
 #, kde-format
 msgid ""
 "Requested resource does not exist.\n"
@@ -49,7 +89,7 @@ msgstr ""
 "\n"
 "Google បាន​ឆ្លើយ '%1'"
 
-#: libkgapi/accessmanager_p.cpp:188 libkgapi/accessmanager_p.cpp:189
+#: libkgapi2/job.cpp:174
 #, fuzzy, kde-format
 #| msgid ""
 #| "Conflict. Remote resource is newer then local.\n"
@@ -64,7 +104,7 @@ msgstr ""
 "\n"
 "Google បាន​ឆ្លើយ '%1'"
 
-#: libkgapi/accessmanager_p.cpp:197 libkgapi/accessmanager_p.cpp:198
+#: libkgapi2/job.cpp:184
 #, kde-format
 msgid ""
 "Requested resource does not exist anymore.\n"
@@ -75,7 +115,7 @@ msgstr ""
 "\n"
 "Google បាន​ឆ្លើយ '%1'"
 
-#: libkgapi/accessmanager_p.cpp:206 libkgapi/accessmanager_p.cpp:207
+#: libkgapi2/job.cpp:194
 #, kde-format
 msgid ""
 "Internal server error. Try again later.\n"
@@ -86,18 +126,21 @@ msgstr ""
 "\n"
 "Google បាន​ឆ្លើយ '%1'"
 
-#: libkgapi/accessmanager_p.cpp:215 libkgapi/accessmanager_p.cpp:216
-#, kde-format
+#: libkgapi2/job.cpp:212
+#, fuzzy, kde-format
+#| msgid ""
+#| "User quota exceeded. Try again later.\n"
+#| "\n"
+#| "Google replied '%1'"
 msgid ""
-"User quota exceeded. Try again later.\n"
-"\n"
+"Maximum quota exceeded. Try again later.\\n\n"
 "Google replied '%1'"
 msgstr ""
 "បាន​លើស​ពី​កូតា​អ្នកប្រើ សូម​ព្យាយាម​ម្ដងទៀត​នៅ​ពេល​ក្រោយ ។\n"
 "\n"
 "Google បាន​ឆ្លើយ '%1'"
 
-#: libkgapi/accessmanager_p.cpp:224
+#: libkgapi2/job.cpp:234
 #, kde-format
 msgid ""
 "Unknown error.\n"
@@ -108,55 +151,55 @@ msgstr ""
 "\n"
 "Google បាន​ឆ្លើយ '%1'"
 
-#: libkgapi/accessmanager_p.cpp:255 libkgapi/accessmanager_p.cpp:256
+#: libkgapi2/private/newtokensfetchjob.cpp:115
+msgid "Failed to parse server response."
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ញែក​ចម្លើយ​តប​ម៉ាស៊ីន​បម្រើ ។"
+
+#: libkgapi2/ui/authwidget.cpp:87
+msgid "Invalid account"
+msgstr ""
+
+#: libkgapi2/ui/authwidget.cpp:91
 #, fuzzy
-#| msgid "Unknown reply content type!"
-msgid "Unknown reply content type."
-msgstr "មិន​ស្គាល់​ប្រភេទ​មាតិកា​ឆ្លើយតប !"
+#| msgid "Not authenticated"
+msgid "No scopes to authenticate for"
+msgstr "មិន​បានផ្ទៀងផ្ទាត់"
 
-#: libkgapi/accessmanager_p.cpp:331
-#, kde-format
-msgid "Invalid request, service %1 is not registered."
-msgstr "សំណើ​មិន​ត្រឹមត្រូវ សេវាកម្ម %1 មិន​ត្រូវ​បាន​ចុះឈ្មោះ​ទេ ។"
+#: libkgapi2/ui/authwidget_p.cpp:60
+msgid "Authorizing token. This should take just a moment..."
+msgstr "កំពុង​អនុញ្ញាត​ថូខិន ។ វា​ប្រើ​ពេល​បន្តិចបន្តួច​ប៉ុណ្ណោះ..."
 
-#: libkgapi/auth_p.cpp:180
-msgid "Authentication cancelled"
-msgstr "បាន​បោះបង់​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
+#: libkgapi2/ui/authwidget_p.cpp:154
+msgid "Parsing token page failed."
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ញែក​ទំព័រ​ថូខឹន ។"
 
-#: libkgapi/auth_p.cpp:232
-msgid "Failed to parse newly fetched tokens"
-msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ញែក​ថូខឹន​ដែល​បាន​ទៅ​ប្រមូល​យក​ថ្មីៗ"
+#: libkgapi2/ui/authwidget_p.cpp:161
+msgid "Failed to obtain token."
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ទទួល​ថូខឹន"
 
-#: libkgapi/common.h:100
-msgid "An unknown error has occurred."
-msgstr "មាន​កំហុស​មិន​ស្គាល់​បាន​កើតឡើង ។"
+#~ msgid "No valid reply received"
+#~ msgstr "មិន​បាន​ទទួល​ចម្លើយ​តប​ត្រឹមត្រូវ​ទេ"
 
-#: libkgapi/common.h:126
-#, kde-format
-msgid "Unknown account '%1'"
-msgstr "មិន​ស្គាល់​គណនី '%1'"
+#~ msgid "Invalid request, service %1 is not registered."
+#~ msgstr "សំណើ​មិន​ត្រឹមត្រូវ សេវាកម្ម %1 មិន​ត្រូវ​បាន​ចុះឈ្មោះ​ទេ ។"
 
-#: libkgapi/common.h:139
-#, kde-format
-msgid "Unknown service '%1'"
-msgstr "មិន​ស្គាល់​សេវាកម្ម '%1'"
+#~ msgid "Authentication cancelled"
+#~ msgstr "បាន​បោះបង់​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#: libkgapi/common.h:165
-msgid "KWallet is not opened."
-msgstr "KWallet មិន​បាន​បើក​ទេ ។"
+#~ msgid "An unknown error has occurred."
+#~ msgstr "មាន​កំហុស​មិន​ស្គាល់​បាន​កើតឡើង ។"
 
-#: libkgapi/common.h:178
-msgid "The account is invalid."
-msgstr "គណនី​មិន​ត្រឹមត្រូវ ។"
+#~ msgid "Unknown account '%1'"
+#~ msgstr "មិន​ស្គាល់​គណនី '%1'"
 
-#~ msgid "Authorizing token. This should take just a moment..."
-#~ msgstr "កំពុង​អនុញ្ញាត​ថូខិន ។ វា​ប្រើ​ពេល​បន្តិចបន្តួច​ប៉ុណ្ណោះ..."
+#~ msgid "Unknown service '%1'"
+#~ msgstr "មិន​ស្គាល់​សេវាកម្ម '%1'"
 
-#~ msgid "Parsing token page failed."
-#~ msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ញែក​ទំព័រ​ថូខឹន ។"
+#~ msgid "KWallet is not opened."
+#~ msgstr "KWallet មិន​បាន​បើក​ទេ ។"
 
-#~ msgid "Failed to obtain token."
-#~ msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ទទួល​ថូខឹន"
+#~ msgid "The account is invalid."
+#~ msgstr "គណនី​មិន​ត្រឹមត្រូវ ។"
 
 #~ msgid ""
 #~ "Authentization failed:\n"
@@ -165,17 +208,11 @@ msgstr "គណនី​មិន​ត្រឹមត្រូវ ។"
 #~ "បាន​បរាជ័យ​ក្នុង​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ៖\n"
 #~ "%1"
 
-#~ msgid "Failed to parse server response."
-#~ msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ញែក​ចម្លើយ​តប​ម៉ាស៊ីន​បម្រើ ។"
-
 #~ msgid "MainWindow"
 #~ msgstr "បង្អួច​មេ"
 
 #~ msgid "Authenticate"
 #~ msgstr "​ផ្ទៀងផ្ទាត់"
-
-#~ msgid "Not authenticated"
-#~ msgstr "មិន​បានផ្ទៀងផ្ទាត់"
 
 #~ msgid "Get contact list"
 #~ msgstr "យក​បញ្ជីទំនាក់ទំនង"
