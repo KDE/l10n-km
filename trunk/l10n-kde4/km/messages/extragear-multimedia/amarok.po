@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-01-03 01:56+0000\n"
+"POT-Creation-Date: 2014-02-10 01:29+0000\n"
 "PO-Revision-Date: 2012-07-06 15:27+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -1148,9 +1148,10 @@ msgstr "ឈ្មោះ​អ្នក​ប្រើ ដែល​ប្រើ�
 
 #. i18n: ectx: property (text), widget (QLabel, labelPassword)
 #. i18n: ectx: property (text), widget (QTableWidget, serverList)
+#. i18n: ectx: property (text), widget (QLabel, m_passwordLabel)
 #. i18n: ectx: label, entry, group (Scrobbler)
-#: amarokconfig.kcfg:457
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:57
+#: amarokconfig.kcfg:457 importers/amarok/AmarokConfigWidget.ui:38
+#: importers/fastforward/FastForwardConfigWidget.ui:46
 #: services/ampache/AmpacheConfigWidget.ui:68
 #: services/ampache/NewServerWidget.ui:60
 msgid "Password"
@@ -2811,38 +2812,38 @@ msgstr "សប្បាយ​"
 msgid "Normal"
 msgstr "ទ្រង់ទ្រាយ ៖"
 
-#: configdialog/dialogs/MetadataConfig.cpp:33
+#: configdialog/dialogs/MetadataConfig.cpp:34
 msgctxt "Maximum cover size option"
 msgid "Small (200 px)"
 msgstr ""
 
-#: configdialog/dialogs/MetadataConfig.cpp:35
+#: configdialog/dialogs/MetadataConfig.cpp:36
 msgctxt "Maximum cover size option"
 msgid "Medium (400 px)"
 msgstr ""
 
-#: configdialog/dialogs/MetadataConfig.cpp:37
+#: configdialog/dialogs/MetadataConfig.cpp:38
 msgctxt "Maximum cover size option"
 msgid "Large (800 px)"
 msgstr ""
 
-#: configdialog/dialogs/MetadataConfig.cpp:39
+#: configdialog/dialogs/MetadataConfig.cpp:40
 msgctxt "Maximum cover size option"
 msgid "Huge (1600 px)"
 msgstr ""
 
-#: configdialog/dialogs/MetadataConfig.cpp:85
+#: configdialog/dialogs/MetadataConfig.cpp:101
 #, fuzzy
 msgid "Synchronize Labels"
 msgstr "  ធ្វើ​សមកាលកម្ម ការងារ​សិល្បៈ"
 
-#: configdialog/dialogs/MetadataConfig.cpp:103
+#: configdialog/dialogs/MetadataConfig.cpp:119
 #, fuzzy, kde-format
 msgctxt "%1 is field name such as Play Count"
 msgid "Synchronize %1"
 msgstr "  ធ្វើ​សមកាលកម្ម ការងារ​សិល្បៈ"
 
-#: configdialog/dialogs/MetadataConfig.cpp:191
+#: configdialog/dialogs/MetadataConfig.cpp:207
 #, kde-format
 msgid "(%2one exception%3)"
 msgid_plural "(%2%1 exceptions%3)"
@@ -2932,17 +2933,28 @@ msgid ""
 "of tracks played on iPods if you have Last.fm plugin configured"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, m_forgetCollectionsButton)
+#. i18n: ectx: property (text), widget (QPushButton, m_forgetTargetsButton)
 #: configdialog/dialogs/MetadataConfig.ui:128
-msgid "Forget about Selected Collections"
+msgid "Forget"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QPushButton, m_configureTargetButton)
+#: configdialog/dialogs/MetadataConfig.ui:138
+#, fuzzy
+#| msgid "&Configure"
+msgid "Configure…"
+msgstr "កំណត់​រចនាសម្ព័ន្ធ"
+
+#. i18n: ectx: property (text), widget (QPushButton, m_addTargetButton)
+#: configdialog/dialogs/MetadataConfig.ui:145
+msgid "Add…"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, m_synchronizeButton)
-#: configdialog/dialogs/MetadataConfig.ui:135
+#: configdialog/dialogs/MetadataConfig.ui:155
 #, fuzzy
-#| msgid "Configure Phonon"
-msgid "Perform Synchronization..."
-msgstr "កំណត់​រចនាសម្ព័ន្ធ ​Phonon"
+msgid "Synchronize…"
+msgstr "  ធ្វើ​សមកាលកម្ម ការងារ​សិល្បៈ"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: configdialog/dialogs/NotificationsConfig.ui:17
@@ -3198,6 +3210,12 @@ msgstr "សម្រាំង"
 #: configdialog/dialogs/PluginsConfig.cpp:48
 msgid "Internet Services"
 msgstr "សេវា​អ៊ីនធឺណិត"
+
+#: configdialog/dialogs/PluginsConfig.cpp:52
+#, fuzzy
+#| msgid "Statistics"
+msgid "Statistics importers"
+msgstr "ស្ថិតិ"
 
 #: configdialog/dialogs/ScriptsConfig.cpp:50
 msgid "Generic"
@@ -7581,154 +7599,18 @@ msgstr "សិល្បករ"
 msgid "Cover View"
 msgstr "ទិដ្ឋភាព​គម្រប"
 
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:39
-msgid "Connection"
-msgstr "ការ​តភ្ជាប់"
-
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:45
-#: databaseimporter/itunes/ITunesImporterConfig.cpp:37
-msgid "Database Location"
-msgstr "ទីតាំង​មូលដ្ឋាន​ទិន្នន័យ"
-
-#. i18n: ectx: property (text), widget (QLabel, labelUsername)
-#. i18n: ectx: property (text), widget (QTableWidget, serverList)
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:53
-#: services/ampache/AmpacheConfigWidget.ui:63
-#: services/ampache/NewServerWidget.ui:50
-msgid "Username"
-msgstr "ឈ្មោះ​អ្នក​ប្រើ"
-
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:62
-msgid "Database Name"
-msgstr "ឈ្មោះ​មូលដ្ឋាន​ទិន្នន័យ"
-
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:66
-msgid "Hostname"
-msgstr "ឈ្មោះ​ម៉ាស៊ីន"
-
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:92
-#, fuzzy
-msgid "Match tracks by meta tags"
-msgstr "ផ្គូផ្គងតាម​ដានដោយ​ស្លាក​មេតា"
-
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:93
-msgid ""
-"Perform meta information search on non-existing files, possibly detecting "
-"file renames. See <b>What's This</b>"
-msgstr ""
-
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:95
-msgid ""
-"If enabled, tracks from the old collection that do not exist anymore in the "
-"file system are searched for (by metadata) in the current collection. If a "
-"match is found, statistics for the matched track are updated, even if the "
-"file locations differ."
-msgstr ""
-
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:101
-msgid "Import downloaded artwork"
-msgstr "នាំចូល​ការងារ​សិល្បះ​ដែល​បាន​ទាញ​យក"
-
-#: databaseimporter/amarok14/FastForwardImporterConfig.cpp:110
-msgid "Artwork directory"
-msgstr "ថត​ការងារ​សិល្បៈ​"
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:81
-msgid "No database driver was selected"
-msgstr "គ្មាន​កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ​ត្រូវ​បាន​ជ្រើស​ទេ"
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:87
-#, kde-format
-msgid "Database could not be found at: %1"
-msgstr "រក​មិនឃើញ​មូលដ្ឋាន​ទិន្នន័យ​នៅ ៖ %1"
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:122
-#, kde-format
-msgid "Could not open Amarok 1.4 database: %1"
-msgstr "មិនអាច​បើក​មូលដ្ឋាន​ទិន្នន័យ Amarok 1.4 ៖ %1"
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:152
-#, fuzzy, kde-format
-msgid "Could not execute import query: %1"
-msgstr "មិនអាចប្រតិបត្តិ %1 បាន​ឡើយ"
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:236
-msgid ""
-"(track exists, but does not belong in any of your configured collection "
-"folders)"
-msgstr ""
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:270
-#, kde-format
-msgid "Adding <b>1 new track</b> to Amarok collection <b>%2</b>."
-msgid_plural "Adding <b>%1 new tracks</b> to Amarok collection <b>%2</b>."
-msgstr[0] ""
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:408
-#, fuzzy, kde-format
-msgid "Could not execute labels import query: %1; query was: %2"
-msgstr "មិនអាចប្រតិបត្តិ %1 បាន​ឡើយ"
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:431
-#, kde-format
-msgid "Updating cached lyrics and labels for 1 track..."
-msgid_plural "Updating cached lyrics and labels for %1 tracks..."
-msgstr[0] ""
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:447
-#, kde-format
-msgid "Failed to update lyrics/labels for track %1"
-msgstr ""
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:467
-#, fuzzy, kde-format
-#| msgid "There were no lyrics found for this track"
-msgid "Cached lyrics updated for 1 track"
-msgid_plural "Cached lyrics updated for %1 tracks"
-msgstr[0] "រក​មិនឃើញ​អត្ថបទ​ចម្រៀង​សម្រាប់​បទ​នេះ"
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:471
-#, kde-format
-msgid "labels added to 1 track"
-msgid_plural "labels added to %1 tracks"
-msgstr[0] ""
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:477
-#, fuzzy, kde-format
-#| msgctxt "monthname year"
-#| msgid "%1 %2"
-msgctxt ""
-"%1 is e.g. Cached lyrics updated for 2 tracks, %2 is e.g. labels added to 3 "
-"tracks"
-msgid "%1, %2."
-msgstr "%1 %2"
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:484
-#, fuzzy
-#| msgid "Importing downloaded album art"
-msgid "Importing downloaded album art..."
-msgstr "នាំចូល​​សិល្បះ​អាល់ប៊ុម​ដែល​បាន​ទាញ​យក"
-
-#: databaseimporter/amarok14/FastForwardWorker.cpp:518
-#, fuzzy, kde-format
-#| msgctxt "'Cover image' playlist column name and token for playlist layouts"
-#| msgid "Cover image"
-msgid "Copied 1 cover image."
-msgid_plural "Copied %1 cover images."
-msgstr[0] "រូបភាព​គម្រប"
-
-#: databaseimporter/sqlbatch/SqlBatchImporter.cpp:74
+#: databaseimporter/SqlBatchImporter.cpp:81
 #, fuzzy, kde-format
 msgid "Could not open file \"%1\"."
 msgstr "មិនអាចប្រតិបត្តិ %1 បាន​ឡើយ"
 
-#: databaseimporter/sqlbatch/SqlBatchImporterConfig.cpp:37
+#: databaseimporter/SqlBatchImporterConfig.cpp:37
 msgid ""
 "Input file produced by amarokcollectionscanner.<br>See <a href=\"http://"
 "community.kde.org/Amarok/Development/BatchMode\">Batch Mode</a>."
 msgstr ""
 
-#: databaseimporter/sqlbatch/SqlBatchImporterConfig.cpp:43
+#: databaseimporter/SqlBatchImporterConfig.cpp:44
 msgid "Input file"
 msgstr ""
 
@@ -7743,14 +7625,15 @@ msgstr ""
 
 #: dialogs/CollectionSetup.cpp:70
 #, fuzzy
-msgid "Import"
-msgstr "នាំចូល​សម្រាំង"
+#| msgid "Import OPML File"
+msgid "Import batch file..."
+msgstr "នាំ​ចូល​ឯកសារ​ OPML"
 
 #: dialogs/CollectionSetup.cpp:71
-msgid ""
-"Import collection and/or statistics from older Amarok versions, the batch "
-"scanner or media players."
-msgstr ""
+#, fuzzy
+#| msgid "Amarok Applet Manager"
+msgid "Import collection from file produced by amarokcollectionscanner."
+msgstr "កម្មវិធី​គ្រប់គ្រង​អាភ្លេត​របស់ Amarok"
 
 #: dialogs/CollectionSetup.cpp:79
 msgid "&Scan folders recursively (requires full rescan if newly checked)"
@@ -7775,75 +7658,40 @@ msgstr ""
 msgid "Rescan '%1'"
 msgstr ""
 
-#: dialogs/DatabaseImporterDialog.cpp:40
+#: dialogs/DatabaseImporterDialog.cpp:39
 msgid "Import Collection"
 msgstr "នាំចូល​សម្រាំង"
 
-#: dialogs/DatabaseImporterDialog.cpp:45
+#: dialogs/DatabaseImporterDialog.cpp:47
 #, fuzzy
-#| msgid ""
-#| "This tool allows you to import track information and<br>statistical data "
-#| "from another music application."
-msgid ""
-"This tool allows you to import track information and<br>statistical data "
-"from another music application.<br><br>Any statistical data in your database "
-"will be <i>overwritten</i>"
-msgstr "ឧបករណ៍​នេះ​អនុញ្ញាត​ឲ្យ​អ្នក​នាំចូល​ព័ត៌មានបទ​ និង<br>ទិន្នន័យ​ស្ថិតិ​ពី​កម្មវិធី​ចាក់តន្ត្រី​ផ្សេង​ទៀត ។"
+#| msgid "Podcast Configuration"
+msgid "Import configuration"
+msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ផតខាស់"
 
-#: dialogs/DatabaseImporterDialog.cpp:56
-#, fuzzy
-#| msgid "Amarok Applet Manager"
-msgid "Amarok collection scanner"
-msgstr "កម្មវិធី​គ្រប់គ្រង​អាភ្លេត​របស់ Amarok"
-
-#: dialogs/DatabaseImporterDialog.cpp:57
-msgid "Amarok 1.4"
-msgstr "Amarok 1.4"
-
-#: dialogs/DatabaseImporterDialog.cpp:58
-msgid "iTunes"
-msgstr "iTunes"
-
-#: dialogs/DatabaseImporterDialog.cpp:59
-msgid "Banshee"
-msgstr "Banshee"
-
-#: dialogs/DatabaseImporterDialog.cpp:60
-msgid "Rhythmbox"
-msgstr "Rhythmbox"
-
-#: dialogs/DatabaseImporterDialog.cpp:81
-msgid "Select Importer"
-msgstr "ជ្រើស​កម្មវិធី​នាំចូល"
-
-#: dialogs/DatabaseImporterDialog.cpp:86
-msgid "Configuration"
-msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ"
-
-#: dialogs/DatabaseImporterDialog.cpp:95
+#: dialogs/DatabaseImporterDialog.cpp:69
 msgid "Migrating"
 msgstr "ការ​ប្ដូរ"
 
-#: dialogs/DatabaseImporterDialog.cpp:162
+#: dialogs/DatabaseImporterDialog.cpp:100
 msgid "<b><font color='red'>Failed:</font></b> No tracks were imported"
 msgstr "<b><font color='red'>បានបរាជ័យ ៖</font></b> គ្មាន​បទ​ត្រូវ​បាននាំចូល"
 
-#: dialogs/DatabaseImporterDialog.cpp:164
+#: dialogs/DatabaseImporterDialog.cpp:102
 #, kde-format
 msgid "<b><font color='green'>Success:</font></b> Imported %1 track"
 msgid_plural "<b><font color='green'>Success:</font></b> Imported %1 tracks"
 msgstr[0] "<b><font color='green'>ជោគជ័យ ៖</font></b> បាន​នាំចូល​បទ %1"
 
-#: dialogs/DatabaseImporterDialog.cpp:175
+#: dialogs/DatabaseImporterDialog.cpp:113
 msgid "<b><font color='red'>Failed:</font></b> Unable to import statistics"
 msgstr "<b><font color='red'>បាន​បរាជ័យ ៖</font></b> មិនអាច​នាំចូល​ស្ថិតិ​បានទេ"
 
-#: dialogs/DatabaseImporterDialog.cpp:190
+#: dialogs/DatabaseImporterDialog.cpp:128
 #, kde-format
 msgid "<b><font color='red'>Error:</font></b> %1"
 msgstr "<b><font color='red'>កំហុស ៖</font></b> %1"
 
-#: dialogs/DatabaseImporterDialog.cpp:205
+#: dialogs/DatabaseImporterDialog.cpp:143
 #, fuzzy, kde-format
 #| msgctxt "Track has been imported, format: Artist - Track"
 #| msgid "Imported <b>%1 - %2</b>"
@@ -7851,25 +7699,25 @@ msgctxt "Track has been imported, format: Track"
 msgid "Imported <b>%1</b>"
 msgstr "បាន​នាំចូល <b>%1 - %2</b>"
 
-#: dialogs/DatabaseImporterDialog.cpp:208
+#: dialogs/DatabaseImporterDialog.cpp:146
 #, kde-format
 msgctxt "Track has been imported, format: Artist - Track"
 msgid "Imported <b>%1 - %2</b>"
 msgstr "បាន​នាំចូល <b>%1 - %2</b>"
 
-#: dialogs/DatabaseImporterDialog.cpp:211
+#: dialogs/DatabaseImporterDialog.cpp:149
 #, kde-format
 msgctxt "Track has been imported, format: Artist - Track (Album)"
 msgid "Imported <b>%1 - %2 (%3)</b>"
 msgstr "បាន​នាំចូល <b>%1 - %2 (%3)</b>"
 
-#: dialogs/DatabaseImporterDialog.cpp:220
+#: dialogs/DatabaseImporterDialog.cpp:158
 #, fuzzy, kde-format
 msgctxt "Track has been discarded, format: Url"
 msgid "Discarded <b><font color='gray'>%1</font></b>"
 msgstr "<b><font color='red'>កំហុស ៖</font></b> %1"
 
-#: dialogs/DatabaseImporterDialog.cpp:235
+#: dialogs/DatabaseImporterDialog.cpp:173
 #, fuzzy, kde-format
 msgctxt "Track has been imported by tags, format: Track, from Url, to Url"
 msgid ""
@@ -7879,7 +7727,7 @@ msgstr ""
 "ដែល​បាន​នាំចូល <b><font color='green'>%1 - %2</font></b><br/>&nbsp;&nbsp; ពី "
 "%3<br/>&nbsp;&nbsp; ទៅ %4"
 
-#: dialogs/DatabaseImporterDialog.cpp:238
+#: dialogs/DatabaseImporterDialog.cpp:176
 #, fuzzy, kde-format
 msgctxt ""
 "Track has been imported by tags, format: Artist - Track, from Url, to Url"
@@ -7890,7 +7738,7 @@ msgstr ""
 "ដែល​បាន​នាំចូល <b><font color='green'>%1 - %2</font></b><br/>&nbsp;&nbsp; ពី "
 "%3<br/>&nbsp;&nbsp; ទៅ %4"
 
-#: dialogs/DatabaseImporterDialog.cpp:241
+#: dialogs/DatabaseImporterDialog.cpp:179
 #, fuzzy, kde-format
 msgctxt ""
 "Track has been imported by tags, format: Artist - Track (Album), from Url, "
@@ -7902,7 +7750,7 @@ msgstr ""
 "ដែល​បាននាំចូល​ <b><font color='green'>%1 - %2 (%3)</font></b><br/>&nbsp;&nbsp; ពី"
 "%4<br/>&nbsp;&nbsp; ទៅ %5"
 
-#: dialogs/DatabaseImporterDialog.cpp:253
+#: dialogs/DatabaseImporterDialog.cpp:191
 #, fuzzy, kde-format
 msgctxt "Track has been matched ambigously, format: Url"
 msgid ""
@@ -9659,6 +9507,151 @@ msgstr "Techno"
 #: equalizer/EqualizerPresets.cpp:103
 msgid "Zero"
 msgstr "Zero"
+
+#: importers/amarok/AmarokConfigWidget.cpp:81
+#, fuzzy
+#| msgctxt "One word translation used in the collection filter"
+#| msgid "added"
+msgctxt "Database type"
+msgid "embedded"
+msgstr "បាន​បន្ថែម"
+
+#: importers/amarok/AmarokConfigWidget.cpp:82
+msgctxt "Database type"
+msgid "external"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, labelUsername)
+#. i18n: ectx: property (text), widget (QTableWidget, serverList)
+#. i18n: ectx: property (text), widget (QLabel, m_usernameLabel)
+#: importers/amarok/AmarokConfigWidget.ui:9
+#: importers/fastforward/FastForwardConfigWidget.ui:17
+#: services/ampache/AmpacheConfigWidget.ui:63
+#: services/ampache/NewServerWidget.ui:50
+msgid "Username"
+msgstr "ឈ្មោះ​អ្នក​ប្រើ"
+
+#. i18n: ectx: property (text), widget (QLabel, m_connectionTypeLabel)
+#: importers/amarok/AmarokConfigWidget.ui:58
+#, fuzzy
+#| msgid "Database Name"
+msgid "Database type"
+msgstr "ឈ្មោះ​មូលដ្ឋាន​ទិន្នន័យ"
+
+#. i18n: ectx: property (text), widget (QLabel, m_databaseLocationLabel)
+#: importers/amarok/AmarokConfigWidget.ui:71
+#: importers/banshee/BansheeConfigWidget.cpp:35
+#: importers/clementine/ClementineConfigWidget.cpp:35
+#: importers/fastforward/FastForwardConfigWidget.ui:79
+#: importers/itunes/ITunesConfigWidget.cpp:30
+#: importers/rhythmbox/RhythmboxConfigWidget.cpp:35
+#, fuzzy
+#| msgid "Database Location"
+msgid "Database location"
+msgstr "ទីតាំង​មូលដ្ឋាន​ទិន្នន័យ"
+
+#. i18n: ectx: property (text), widget (QLabel, m_targetNameLabel)
+#: importers/amarok/AmarokConfigWidget.ui:91
+#: importers/fastforward/FastForwardConfigWidget.ui:99
+#, fuzzy
+msgid "Target name"
+msgstr "ឈ្មោះ​បញ្ជី​ចាក់ ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, m_hostnameLabel)
+#: importers/amarok/AmarokConfigWidget.ui:104
+#: importers/fastforward/FastForwardConfigWidget.ui:112
+msgid "Hostname"
+msgstr "ឈ្មោះ​ម៉ាស៊ីន"
+
+#. i18n: ectx: property (text), widget (QLabel, m_portLabel)
+#: importers/amarok/AmarokConfigWidget.ui:117
+#: importers/fastforward/FastForwardConfigWidget.ui:125
+msgid "Port"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_databaseNameLabel)
+#: importers/amarok/AmarokConfigWidget.ui:127
+#: importers/fastforward/FastForwardConfigWidget.ui:135
+#, fuzzy
+#| msgid "Database Name"
+msgid "Database name"
+msgstr "ឈ្មោះ​មូលដ្ឋាន​ទិន្នន័យ"
+
+#. i18n: ectx: property (text), widget (QLabel, m_mysqlBinaryLabel)
+#: importers/amarok/AmarokConfigWidget.ui:163
+msgid "MySQL server binary"
+msgstr ""
+
+#. i18n: ectx: property (filter), widget (KUrlRequester, m_mysqlBinary)
+#: importers/amarok/AmarokConfigWidget.ui:170
+msgid "mysqld"
+msgstr ""
+
+#: importers/amarok/AmarokManager.cpp:50
+#, fuzzy
+#| msgid "Amarok 1.4"
+msgid "Amarok 2.x"
+msgstr "Amarok 1.4"
+
+#: importers/amarok/AmarokManager.cpp:56
+msgid "Amarok 2.x Statistics Importer"
+msgstr ""
+
+#: importers/banshee/BansheeManager.cpp:24
+msgid "Banshee"
+msgstr "Banshee"
+
+#: importers/banshee/BansheeManager.cpp:25
+msgid "Banshee Statistics Importer"
+msgstr ""
+
+#: importers/clementine/ClementineManager.cpp:24
+msgid "Clementine"
+msgstr ""
+
+#: importers/clementine/ClementineManager.cpp:25
+msgid "Clementine Statistics Importer"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, m_connectionTypeLabel)
+#: importers/fastforward/FastForwardConfigWidget.ui:66
+#, fuzzy
+#| msgid "Connection"
+msgid "Connection type"
+msgstr "ការ​តភ្ជាប់"
+
+#: importers/fastforward/FastForwardManager.cpp:24
+msgid "Amarok 1.4 (FastForward)"
+msgstr ""
+
+#: importers/fastforward/FastForwardManager.cpp:25
+msgid "Amarok 1.4 Statistics Importer"
+msgstr ""
+
+#: importers/itunes/ITunesManager.cpp:24
+#, fuzzy
+#| msgid "iTunes"
+msgid "Apple iTunes"
+msgstr "iTunes"
+
+#: importers/itunes/ITunesManager.cpp:25
+#, fuzzy
+msgid "iTunes Statistics Importer"
+msgstr "ឯក​សារ​សរសេរ​មតិ​ព័ត៌មាន​"
+
+#: importers/rhythmbox/RhythmboxManager.cpp:24
+msgid "Rhythmbox"
+msgstr "Rhythmbox"
+
+#: importers/rhythmbox/RhythmboxManager.cpp:25
+msgid "Rhythmbox Statistics Importer"
+msgstr ""
+
+#: importers/SimpleImporterConfigWidget.cpp:49
+#, fuzzy
+msgctxt "Name of the synchronization target"
+msgid "Target name"
+msgstr "ឈ្មោះ​បញ្ជី​ចាក់ ៖"
 
 #: k3bexporter.cpp:182
 msgid "Unable to start K3b."
@@ -12784,7 +12777,7 @@ msgstr "ផ្ទុក​បញ្ជី​ចាក់​ដែល​បាន
 msgid "<Empty>"
 msgstr "<សម្អាត>"
 
-#: PluginManager.cpp:258
+#: PluginManager.cpp:268
 msgid ""
 "Amarok could not find any plugins. This indicates an installation problem."
 msgstr ""
@@ -14849,7 +14842,7 @@ msgstr "គ្មាន​សេវា​ដែលមាន​ឈ្មោះ %1
 msgid "This collection is currently offline"
 msgstr ""
 
-#: statsyncing/Controller.cpp:106
+#: statsyncing/Controller.cpp:109
 #, kde-format
 msgctxt "%1 is collection name"
 msgid ""
@@ -14859,7 +14852,7 @@ msgid ""
 "You can always change the decision in Amarok configuration."
 msgstr ""
 
-#: statsyncing/Controller.cpp:295
+#: statsyncing/Controller.cpp:371
 msgid ""
 "You only seem to have the Local Collection. Statistics synchronization only "
 "makes sense if there is more than one collection."
@@ -15014,6 +15007,37 @@ msgstr ""
 #: statsyncing/ui/ChooseProvidersPage.ui:49
 msgid "Select Fields to Synchronize"
 msgstr ""
+
+#: statsyncing/ui/ConfigureProviderDialog.cpp:37
+#, fuzzy
+#| msgid "Configure Phonon"
+msgid "Configure Synchronization Target"
+msgstr "កំណត់​រចនាសម្ព័ន្ធ ​Phonon"
+
+#: statsyncing/ui/CreateProviderDialog.cpp:36
+#, fuzzy
+#| msgid "Add Position Marker"
+msgid "Add Synchronization Target"
+msgstr "បន្ថែម​សញ្ញា​សម្គាល់​ទីតាំង"
+
+#: statsyncing/ui/CreateProviderDialog.cpp:46
+msgid ""
+"<span style=\"color:red; font-weight:bold;\">Important:</span> before "
+"synchronizing tracks with a file-based target always make sure that the "
+"database file is not currently in use!"
+msgstr ""
+
+#: statsyncing/ui/CreateProviderDialog.cpp:59
+#, fuzzy
+#| msgid "Choose Language"
+msgid "Choose Target Type"
+msgstr "ជ្រើស​ភាសា"
+
+#: statsyncing/ui/CreateProviderDialog.cpp:85
+#, fuzzy
+#| msgid "Configure Scripts"
+msgid "Configure Target"
+msgstr "កំណត់​រចនា​សម្ព័ន្ធ​ស្គ្រីប"
 
 #: statsyncing/ui/MatchedTracksPage.cpp:142
 #, fuzzy
@@ -15767,6 +15791,90 @@ msgstr "សម្អាត"
 #, fuzzy, kde-format
 msgid "Volume: %1%"
 msgstr "កម្រិត​សំឡេង ៖ %1% %2"
+
+#, fuzzy
+#~| msgid "Configure Phonon"
+#~ msgid "Perform Synchronization..."
+#~ msgstr "កំណត់​រចនាសម្ព័ន្ធ ​Phonon"
+
+#, fuzzy
+#~ msgid "Match tracks by meta tags"
+#~ msgstr "ផ្គូផ្គងតាម​ដានដោយ​ស្លាក​មេតា"
+
+#~ msgid "Import downloaded artwork"
+#~ msgstr "នាំចូល​ការងារ​សិល្បះ​ដែល​បាន​ទាញ​យក"
+
+#~ msgid "Artwork directory"
+#~ msgstr "ថត​ការងារ​សិល្បៈ​"
+
+#~ msgid "No database driver was selected"
+#~ msgstr "គ្មាន​កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ​ត្រូវ​បាន​ជ្រើស​ទេ"
+
+#~ msgid "Database could not be found at: %1"
+#~ msgstr "រក​មិនឃើញ​មូលដ្ឋាន​ទិន្នន័យ​នៅ ៖ %1"
+
+#~ msgid "Could not open Amarok 1.4 database: %1"
+#~ msgstr "មិនអាច​បើក​មូលដ្ឋាន​ទិន្នន័យ Amarok 1.4 ៖ %1"
+
+#, fuzzy
+#~ msgid "Could not execute import query: %1"
+#~ msgstr "មិនអាចប្រតិបត្តិ %1 បាន​ឡើយ"
+
+#, fuzzy
+#~ msgid "Could not execute labels import query: %1; query was: %2"
+#~ msgstr "មិនអាចប្រតិបត្តិ %1 បាន​ឡើយ"
+
+#, fuzzy
+#~| msgid "There were no lyrics found for this track"
+#~ msgid "Cached lyrics updated for 1 track"
+#~ msgid_plural "Cached lyrics updated for %1 tracks"
+#~ msgstr[0] "រក​មិនឃើញ​អត្ថបទ​ចម្រៀង​សម្រាប់​បទ​នេះ"
+
+#, fuzzy
+#~| msgctxt "monthname year"
+#~| msgid "%1 %2"
+#~ msgctxt ""
+#~ "%1 is e.g. Cached lyrics updated for 2 tracks, %2 is e.g. labels added to "
+#~ "3 tracks"
+#~ msgid "%1, %2."
+#~ msgstr "%1 %2"
+
+#, fuzzy
+#~| msgid "Importing downloaded album art"
+#~ msgid "Importing downloaded album art..."
+#~ msgstr "នាំចូល​​សិល្បះ​អាល់ប៊ុម​ដែល​បាន​ទាញ​យក"
+
+#, fuzzy
+#~| msgctxt "'Cover image' playlist column name and token for playlist layouts"
+#~| msgid "Cover image"
+#~ msgid "Copied 1 cover image."
+#~ msgid_plural "Copied %1 cover images."
+#~ msgstr[0] "រូបភាព​គម្រប"
+
+#, fuzzy
+#~ msgid "Import"
+#~ msgstr "នាំចូល​សម្រាំង"
+
+#, fuzzy
+#~| msgid ""
+#~| "This tool allows you to import track information and<br>statistical data "
+#~| "from another music application."
+#~ msgid ""
+#~ "This tool allows you to import track information and<br>statistical data "
+#~ "from another music application.<br><br>Any statistical data in your "
+#~ "database will be <i>overwritten</i>"
+#~ msgstr "ឧបករណ៍​នេះ​អនុញ្ញាត​ឲ្យ​អ្នក​នាំចូល​ព័ត៌មានបទ​ និង<br>ទិន្នន័យ​ស្ថិតិ​ពី​កម្មវិធី​ចាក់តន្ត្រី​ផ្សេង​ទៀត ។"
+
+#, fuzzy
+#~| msgid "Amarok Applet Manager"
+#~ msgid "Amarok collection scanner"
+#~ msgstr "កម្មវិធី​គ្រប់គ្រង​អាភ្លេត​របស់ Amarok"
+
+#~ msgid "Select Importer"
+#~ msgstr "ជ្រើស​កម្មវិធី​នាំចូល"
+
+#~ msgid "Configuration"
+#~ msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ"
 
 #~ msgid ""
 #~ "<p>Amarok could not find any collection plugins. It is possible that "
