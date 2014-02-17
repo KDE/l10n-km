@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katebuild-plugin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-10 01:25+0000\n"
+"POT-Creation-Date: 2014-02-17 01:52+0000\n"
 "PO-Revision-Date: 2011-12-21 14:12+0700\n"
 "Last-Translator: Chan Sambathratanak <ratanak@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -29,45 +29,42 @@ msgstr ""
 "khoemsokhem@open.org.kh,​​mornmet@khmeros.info,sutha@open.org.kh,"
 "ratanak@khmeros.info,sophea@open.org.kh"
 
-#. i18n: ectx: attribute (title), widget (QWidget, output)
+#. i18n: ectx: attribute (title), widget (QWidget, errs)
 #: build.ui:27
 msgid "Output"
 msgstr "លទ្ធផល"
 
-#. i18n: ectx: attribute (title), widget (QWidget, errs)
-#: build.ui:53
-msgid "Errors && Warnings"
-msgstr "កំហុស និង​ការ​ព្រមាន"
+#. i18n: ectx: property (text), widget (QLabel, showLabel)
+#: build.ui:35
+msgid "Show:"
+msgstr ""
 
-#. i18n: ectx: property (text), widget (QPushButton, showErrorsButton)
-#: build.ui:61
-msgid "Errors"
-msgstr "កំហុស"
+#. i18n: ectx: property (text), widget (QPushButton, buildAgainButton)
+#: build.ui:100
+#, fuzzy
+#| msgid "Build Plugin"
+msgid "Build again"
+msgstr "កម្មវិធី​ស្ថាបនា"
 
-#. i18n: ectx: property (text), widget (QPushButton, showWarningsButton)
-#: build.ui:74
-msgid "Warnings"
-msgstr "ការ​ព្រមាន"
-
-#. i18n: ectx: property (text), widget (QPushButton, showOthersButton)
-#: build.ui:87
-msgid "Others"
-msgstr "ផ្សេងទៀត"
+#. i18n: ectx: property (text), widget (QPushButton, cancelBuildButton)
+#: build.ui:107
+msgid "Cancel"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QTreeWidget, errTreeWidget)
-#: build.ui:134
+#: build.ui:135
 msgctxt "Header for the file name column"
 msgid "File"
 msgstr "ឯកសារ"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, errTreeWidget)
-#: build.ui:139
+#: build.ui:140
 msgctxt "Header for the line number column"
 msgid "Line"
 msgstr "បន្ទាត់"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, errTreeWidget)
-#: build.ui:144
+#: build.ui:145
 msgctxt "Header for the error message column"
 msgid "Message"
 msgstr "សារ"
@@ -80,145 +77,194 @@ msgstr "កម្មវិធី​ស្ថាបនា"
 msgid "Build Output"
 msgstr "លទ្ធផល​នៃការ​ស្ថាបនា"
 
-#: plugin_katebuild.cpp:116
+#: plugin_katebuild.cpp:118
 #, fuzzy
 #| msgid "Build failed."
 msgid "Build Default Target"
 msgstr "បាន​បរាជ័យ​ស្ថាបនា ។"
 
-#: plugin_katebuild.cpp:120
+#: plugin_katebuild.cpp:122
 msgid "Clean"
 msgstr "សម្អាត"
 
-#: plugin_katebuild.cpp:124
+#: plugin_katebuild.cpp:126
 msgid "Stop"
 msgstr "បញ្ឈប់​"
 
-#: plugin_katebuild.cpp:128
+#: plugin_katebuild.cpp:130
 #, fuzzy
 #| msgid "Build failed."
 msgid "Build Target..."
 msgstr "បាន​បរាជ័យ​ស្ថាបនា ។"
 
-#: plugin_katebuild.cpp:132
+#: plugin_katebuild.cpp:134
 msgid "Build Previous Target Again"
 msgstr ""
 
-#: plugin_katebuild.cpp:136
+#: plugin_katebuild.cpp:138
 msgid "Next Error"
 msgstr "កំហុស​បន្ទាប់"
 
-#: plugin_katebuild.cpp:141
+#: plugin_katebuild.cpp:143
 msgid "Previous Error"
 msgstr "កំហុស​មុន"
 
-#: plugin_katebuild.cpp:146
+#: plugin_katebuild.cpp:148
 #, fuzzy
 #| msgid "Next Target"
 msgid "Sets of Targets"
 msgstr "គោលដៅ​បន្ទាប់​"
 
-#: plugin_katebuild.cpp:150
+#: plugin_katebuild.cpp:152
 #, fuzzy
 #| msgid "Next Target"
 msgid "Next Set of Targets"
 msgstr "គោលដៅ​បន្ទាប់​"
 
-#: plugin_katebuild.cpp:156
+#: plugin_katebuild.cpp:158
 msgctxt "Tab label"
 msgid "Target Settings"
 msgstr "ការ​កំណត់​គោលដៅ​"
 
-#: plugin_katebuild.cpp:442
+#: plugin_katebuild.cpp:446
 msgctxt "The same word as 'make' uses to mark an error."
 msgid "error"
 msgstr "កំហុស"
 
-#: plugin_katebuild.cpp:444
+#: plugin_katebuild.cpp:448
 msgctxt "The same word as 'ld' uses to mark an ..."
 msgid "undefined reference"
 msgstr "សេចក្ដី​យោង​​ដែល​មិនបានកំណត់"
 
-#: plugin_katebuild.cpp:453
+#: plugin_katebuild.cpp:457
 msgctxt "The same word as 'make' uses to mark a warning."
 msgid "warning"
 msgstr "ការព្រមាន​"
 
-#: plugin_katebuild.cpp:506
+#: plugin_katebuild.cpp:510
 msgid "There is no file or directory specified for building."
 msgstr "មាន​ឯកសារ ឬ​ថត​បាន​បញ្ជាក់​សម្រាប់​ស្ថាបនា ។"
 
-#: plugin_katebuild.cpp:510
+#: plugin_katebuild.cpp:514
 #, kde-format
 msgid ""
 "The file \"%1\" is not a local file. Non-local files cannot be compiled."
 msgstr ""
 "ឯកសារ \"%1\" មិន​មែនជា​​ឯកសារ​មូលដ្ឋាន​ទេ ។ មិនអាច​ចងក្រង​ឯកសារដែល​មិននៅ​ក្នុង​មូលដ្ឋាន​បានទេ ។"
 
-#: plugin_katebuild.cpp:527
+#: plugin_katebuild.cpp:531
 msgid "No previous target to build."
 msgstr ""
 
-#: plugin_katebuild.cpp:544
+#: plugin_katebuild.cpp:548
 msgid "No target set as default target."
 msgstr ""
 
-#: plugin_katebuild.cpp:560
+#: plugin_katebuild.cpp:564
 msgid "No target set as clean target."
 msgstr ""
 
-#: plugin_katebuild.cpp:601
+#: plugin_katebuild.cpp:608
 #, kde-format
 msgid "Failed to run \"%1\". exitStatus = %2"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការរត់ \"%1\" ។ exitStatus = %2"
 
-#: plugin_katebuild.cpp:663
+#: plugin_katebuild.cpp:621
+#, kde-format
+msgid "Building <b>%1</b> cancelled"
+msgstr ""
+
+#: plugin_katebuild.cpp:672
 #, kde-format
 msgid "Target \"%1\" not found for building."
 msgstr ""
 
-#: plugin_katebuild.cpp:720
+#: plugin_katebuild.cpp:707
+#, fuzzy, kde-format
+#| msgid "Build failed."
+msgid "Building target <b>%1</b> ..."
+msgstr "បាន​បរាជ័យ​ស្ថាបនា ។"
+
+#: plugin_katebuild.cpp:717
+#, kde-format
+msgid "Building <b>%1</b> completed."
+msgstr ""
+
+#: plugin_katebuild.cpp:736
 #, kde-format
 msgid "Found one error."
 msgid_plural "Found %1 errors."
 msgstr[0] "រក​ឃើញ​កំហុស %1 ។"
 
-#: plugin_katebuild.cpp:723
+#: plugin_katebuild.cpp:739
 #, kde-format
 msgid "Found one warning."
 msgid_plural "Found %1 warnings."
 msgstr[0] "រក​ឃើញការ​ព្រមាន %1 ។"
 
-#: plugin_katebuild.cpp:725 plugin_katebuild.cpp:728 plugin_katebuild.cpp:731
+#: plugin_katebuild.cpp:741 plugin_katebuild.cpp:747 plugin_katebuild.cpp:750
 msgid "Make Results"
 msgstr "លទ្ធផល​របស់ Make"
 
-#: plugin_katebuild.cpp:728
+#: plugin_katebuild.cpp:743
+#, kde-format
+msgid "Building <b>%1</b> had errors."
+msgstr ""
+
+#: plugin_katebuild.cpp:747
 msgid "Build failed."
 msgstr "បាន​បរាជ័យ​ស្ថាបនា ។"
 
-#: plugin_katebuild.cpp:731
+#: plugin_katebuild.cpp:750
 msgid "Build completed without problems."
 msgstr "ស្ថាបនា​បញ្ចប់​ដោយ​គ្មានបញ្ហា ។"
 
-#: plugin_katebuild.cpp:1052
+#: plugin_katebuild.cpp:1076
 #, kde-format
 msgid "Really delete target %1?"
 msgstr ""
 
-#: plugin_katebuild.cpp:1170
+#: plugin_katebuild.cpp:1139
+msgid "Nothing built yet."
+msgstr ""
+
+#: plugin_katebuild.cpp:1196
 #, fuzzy, kde-format
 #| msgid "Target %1"
 msgid "Target Set %1"
 msgstr "គោលដៅ %1"
 
-#: plugin_katebuild.cpp:1241
+#: plugin_katebuild.cpp:1267
 #, fuzzy
 #| msgid "Targets"
 msgid "Target"
 msgstr "គោលដៅ​"
 
-#: plugin_katebuild.cpp:1394 plugin_katebuild.cpp:1448
+#: plugin_katebuild.cpp:1344
+#, fuzzy
+#| msgid "Errors"
+msgid "Only Errors"
+msgstr "កំហុស"
+
+#: plugin_katebuild.cpp:1347
+#, fuzzy
+#| msgid "Errors && Warnings"
+msgid "Errors and Warnings"
+msgstr "កំហុស និង​ការ​ព្រមាន"
+
+#: plugin_katebuild.cpp:1350
+#, fuzzy
+#| msgid "Build Output"
+msgid "Parsed Output"
+msgstr "លទ្ធផល​នៃការ​ស្ថាបនា"
+
+#: plugin_katebuild.cpp:1353
+#, fuzzy
+#| msgid "Build Output"
+msgid "Full Output"
+msgstr "លទ្ធផល​នៃការ​ស្ថាបនា"
+
+#: plugin_katebuild.cpp:1428 plugin_katebuild.cpp:1482
 #, fuzzy
 #| msgid "Project Plugin Target"
 msgid "Project Plugin Targets"
@@ -282,6 +328,12 @@ msgstr ""
 #: ui.rc:4
 msgid "&Build"
 msgstr "ស្ថាបនា"
+
+#~ msgid "Warnings"
+#~ msgstr "ការ​ព្រមាន"
+
+#~ msgid "Others"
+#~ msgstr "ផ្សេងទៀត"
 
 #~ msgid "Build"
 #~ msgstr "ស្ថាបនា​"
