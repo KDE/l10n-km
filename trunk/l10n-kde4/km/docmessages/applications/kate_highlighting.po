@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_highlighting\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2013-11-28 01:57+0000\n"
+"POT-Creation-Date: 2014-02-19 02:55+0000\n"
 "PO-Revision-Date: 2008-08-22 09:43+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -1870,7 +1870,7 @@ msgstr ""
 #. Tag: para
 #: highlighting.docbook:646
 #, no-c-format
-msgid "Since: Kate 3.5 (KDE 4.5)"
+msgid "Since: &kate; 3.5 (&kde; 4.5)"
 msgstr ""
 
 #. Tag: term
@@ -2110,8 +2110,7 @@ msgstr "&lt;HlCOct (common attributes) /&gt;"
 
 #. Tag: para
 #: highlighting.docbook:723 highlighting.docbook:732 highlighting.docbook:741
-#: highlighting.docbook:762 highlighting.docbook:789 highlighting.docbook:829
-#: highlighting.docbook:844
+#: highlighting.docbook:762 highlighting.docbook:828 highlighting.docbook:843
 #, no-c-format
 msgid "This rule has no specific attributes."
 msgstr "ក្បូន​នេះមិនទាន់​មានគុណលក្ខណៈ​ច្បាស់លាស់​នូវ​ឡើយ​ទេ ។​"
@@ -2272,22 +2271,40 @@ msgstr "LineContinue"
 
 #. Tag: para
 #: highlighting.docbook:787
-#, no-c-format
-msgid "Matches a backslash (<userinput>'\\'</userinput>) at the end of a line."
-msgstr ""
+#, fuzzy, no-c-format
+#| msgid "Matches at end of line."
+msgid "Matches a specified char at the end of a line."
+msgstr "ផ្គូផ្គង​ចុង​បន្ទាត់​​។​"
 
 #. Tag: programlisting
 #: highlighting.docbook:788
-#, no-c-format
-msgid "&lt;LineContinue (common attributes) /&gt;"
+#, fuzzy, no-c-format
+#| msgid "&lt;LineContinue (common attributes) /&gt;"
+msgid "&lt;LineContinue (common attributes) [char=\"\\\"] /&gt;"
 msgstr "lt LineContinue (common attributes) / gt"
 
 #. Tag: para
-#: highlighting.docbook:790
-#, no-c-format
+#: highlighting.docbook:789
+#, fuzzy, no-c-format
+#| msgid ""
+#| "The <userinput>char</userinput> attribute defines the first character to "
+#| "match, <userinput>char1</userinput> the second."
 msgid ""
-"This rule is useful for switching context at end of line, if the last "
-"character is a backslash (<userinput>'\\'</userinput>). This is needed for "
+"<userinput>char</userinput> optional character to match, default is "
+"backslash (<userinput>'\\'</userinput>). New since &kde; 4.13."
+msgstr ""
+"គុណលក្ខណៈ <userinput> char </userinput> កំណត់​តួអក្សរ​ដំបូង​គេ​ដើម្បី​ផ្គូផ្គង​ទៅ​និង​<userinput> "
+"char1</userinput> ទីពីរ ។​"
+
+#. Tag: para
+#: highlighting.docbook:790
+#, fuzzy, no-c-format
+#| msgid ""
+#| "This rule is useful for switching context at end of line, if the last "
+#| "character is a backslash (<userinput>'\\'</userinput>). This is needed "
+#| "for example in C/C++ to continue macros or strings."
+msgid ""
+"This rule is useful for switching context at end of line. This is needed for "
 "example in C/C++ to continue macros or strings."
 msgstr ""
 "This rule is useful for switching context at end of line, if the last "
@@ -2295,19 +2312,19 @@ msgstr ""
 "example in C/C++ to continue macros or strings."
 
 #. Tag: term
-#: highlighting.docbook:797
+#: highlighting.docbook:796
 #, no-c-format
 msgid "IncludeRules"
 msgstr "IncludeRules"
 
 #. Tag: para
-#: highlighting.docbook:799
+#: highlighting.docbook:798
 #, no-c-format
 msgid "Include rules from another context or language/file."
 msgstr "រាប់បញ្ចូល​ក្បួន​បាន​មក​ពី​បរិបទ​ផ្សេងទៀត ឬ​ភាសា​ ឬ​ឯកសារ​ ។​"
 
 #. Tag: programlisting
-#: highlighting.docbook:800
+#: highlighting.docbook:799
 #, no-c-format
 msgid ""
 "&lt;IncludeRules context=&quot;contextlink&quot; [includeAttrib=&quot;true|"
@@ -2317,7 +2334,7 @@ msgstr ""
 "false&quot;] /&gt;"
 
 #. Tag: para
-#: highlighting.docbook:802
+#: highlighting.docbook:801
 #, no-c-format
 msgid ""
 "The <userinput>context</userinput> attribute defines which context to "
@@ -2325,7 +2342,7 @@ msgid ""
 msgstr "គុណលក្ខណៈ​ <userinput> context </userinput> កំណត់ ​អត្ថន័យ​ដើម្បី​បន្ថែម​បរិបទ ។"
 
 #. Tag: para
-#: highlighting.docbook:803
+#: highlighting.docbook:802
 #, fuzzy, no-c-format
 #| msgid ""
 #| "If it a simple string it includes all defined rules into the current "
@@ -2337,13 +2354,13 @@ msgstr ""
 "បើ​វា​ជា​ខ្សែអក្សរ​ធម្មតា​ វា​បន្ថែម​​ក្បួន​ដែល​បាន​កំណត់​អត្ថន័យ​ទាំងអស់​ទៅក្នុង​បរិបទ​ចប្ចុប្បន្ន​ ឧទាហរណ៍ ៖​"
 
 #. Tag: programlisting
-#: highlighting.docbook:804
+#: highlighting.docbook:803
 #, no-c-format
 msgid "&lt;IncludeRules context=&quot;anotherContext&quot; /&gt;"
 msgstr "&lt;IncludeRules context=&quot;anotherContext&quot; /&gt;"
 
 #. Tag: para
-#: highlighting.docbook:806
+#: highlighting.docbook:805
 #, no-c-format
 msgid ""
 "If the string contains a <userinput>##</userinput> the highlight system will "
@@ -2354,7 +2371,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: highlighting.docbook:813
+#: highlighting.docbook:812
 #, fuzzy, no-c-format
 #| msgid ""
 #| "If <userinput>includeAttrib</userinput> attribute is <emphasis>true</"
@@ -2372,25 +2389,25 @@ msgstr ""
 "ត្រូវ​បាន​តភ្ជាប់​តាម​បរិបទ​ដែល​បាន បន្ថែម​មាន​បន្លិច​ខុសគ្នាជាង​បរិបទ​ម៉ាស៊ីន​​។​"
 
 #. Tag: term
-#: highlighting.docbook:824
+#: highlighting.docbook:823
 #, no-c-format
 msgid "DetectSpaces"
 msgstr "រកឃើញ​ចន្លោះ​"
 
 #. Tag: para
-#: highlighting.docbook:826
+#: highlighting.docbook:825
 #, no-c-format
 msgid "Detect whitespaces."
 msgstr "រកឃើញ​ដកឃ្លា "
 
 #. Tag: programlisting
-#: highlighting.docbook:827
+#: highlighting.docbook:826
 #, no-c-format
 msgid "&lt;DetectSpaces (common attributes) /&gt;"
 msgstr "&lt;DetectSpaces (common attributes) /&gt;"
 
 #. Tag: para
-#: highlighting.docbook:830
+#: highlighting.docbook:829
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Use this rule if you know that there can several whitespaces ahead, for "
@@ -2408,26 +2425,26 @@ msgstr ""
 "បានផ្គូផ្គង​ ។​"
 
 #. Tag: term
-#: highlighting.docbook:839
+#: highlighting.docbook:838
 #, no-c-format
 msgid "DetectIdentifier"
 msgstr "DetectIdentifier"
 
 #. Tag: para
-#: highlighting.docbook:841
+#: highlighting.docbook:840
 #, no-c-format
 msgid ""
 "Detect identifier strings (as a regular expression: [a-zA-Z_][a-zA-Z0-9_]*)."
 msgstr "រកឃើញ​អត្ថសញ្ញាណ​ខ្សែអក្សរ  (​ជា​ខ្សែអក្សរ​ត្រឹមត្រូវ​៖ [a-zA-Z_][a-zA-Z0-9_]*) ។​"
 
 #. Tag: programlisting
-#: highlighting.docbook:842
+#: highlighting.docbook:841
 #, no-c-format
 msgid "&lt;DetectIdentifier (common attributes) /&gt;"
 msgstr "lt DetectIdentifier (common attributes) / gt"
 
 #. Tag: para
-#: highlighting.docbook:845
+#: highlighting.docbook:844
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Use this rule to skip a string of word characters at once, rather than "
@@ -2440,13 +2457,13 @@ msgstr ""
 "ម្តងមួយៗ​រាល់ពេល​ដែល​មិន​ផ្គូផ្គង ។​"
 
 #. Tag: title
-#: highlighting.docbook:854
+#: highlighting.docbook:853
 #, no-c-format
 msgid "Tips &amp; Tricks"
 msgstr "ព័ត៌មានជំនួយ​ និង​ការតាមដាន​ "
 
 #. Tag: para
-#: highlighting.docbook:857
+#: highlighting.docbook:856
 #, no-c-format
 msgid ""
 "Once you have understood how the context switching works it will be easy to "
@@ -2459,7 +2476,7 @@ msgstr ""
 "ប៉ុន្តែពួកវា​ប្រៀបធៀប​ទៅនិង​ក្បួន​ផ្សេងទៀត​ ។ ដូច្នេះ​អ្នក​ប្រហែលជា​អាច​ពិចារណា​បាន​តាម​ព័ត៌មាន​ដូចតទៅនេះ ។"
 
 #. Tag: para
-#: highlighting.docbook:865
+#: highlighting.docbook:864
 #, no-c-format
 msgid ""
 "If you only match two characters use <userinput>Detect2Chars</userinput> "
@@ -2471,7 +2488,7 @@ msgstr ""
 "</userinput> ដែរ ។​"
 
 #. Tag: para
-#: highlighting.docbook:870
+#: highlighting.docbook:869
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Regular expressions are easy to use but often there is another much "
@@ -2517,7 +2534,7 @@ msgstr ""
 "userinput> រាប់​តួអក្សរ ដូច្នេះកន្លែង​ផ្ទុក​នូវ​តែ​មានតួអក្សរ​មួយ​ ។​"
 
 #. Tag: para
-#: highlighting.docbook:883
+#: highlighting.docbook:882
 #, no-c-format
 msgid ""
 "You can switch contexts without processing characters. Assume that you want "
@@ -2532,7 +2549,7 @@ msgstr ""
 "ខ្សែអក្សរ​ដែល​បាន​ផ្គូផ្គង​ ចំពោះ​បរិបទ​បន្ទាប់ ។"
 
 #. Tag: programlisting
-#: highlighting.docbook:888
+#: highlighting.docbook:887
 #, no-c-format
 msgid ""
 "&lt;Detect2Chars attribute=&quot;Comment&quot; context=&quot;#pop&quot; "
@@ -2542,7 +2559,7 @@ msgstr ""
 "quot *​​ quot  char1= quot / quot  lookAhead= quot true quot / gt"
 
 #. Tag: para
-#: highlighting.docbook:892
+#: highlighting.docbook:891
 #, no-c-format
 msgid ""
 "Use <userinput>DetectSpaces</userinput> if you know that many whitespaces "
@@ -2550,7 +2567,7 @@ msgid ""
 msgstr "ប្រើ​ <userinput> DetectSpaces </userinput> បើ​អ្នក​​ជួបប្រទះ​ដកឃ្លាច្រើន​ ។"
 
 #. Tag: para
-#: highlighting.docbook:895
+#: highlighting.docbook:894
 #, no-c-format
 msgid ""
 "Use <userinput>DetectIdentifier</userinput> instead of the regular "
@@ -2560,7 +2577,7 @@ msgstr ""
 "zA-Z_]\\w*'</userinput> ។​"
 
 #. Tag: para
-#: highlighting.docbook:898
+#: highlighting.docbook:897
 #, no-c-format
 msgid ""
 "Use default styles whenever you can. This way the user will find a familiar "
@@ -2568,7 +2585,7 @@ msgid ""
 msgstr "ប្រើ​រចនាប័ទ្ម​លំនាំដើមកាលណា​អ្នកអាវ ។ វិធីនេះ​អ្នកប្រើ​នឹង​រក​បរិស្ថាន​ដែល​ធ្លាប់​ស្គាល់ ។"
 
 #. Tag: para
-#: highlighting.docbook:901
+#: highlighting.docbook:900
 #, no-c-format
 msgid ""
 "Look into other XML-files to see how other people implement tricky rules."
@@ -2576,7 +2593,7 @@ msgstr ""
 "មើល​ក្នុង​ឯកសារ XML ផ្សេងទៀត​ ដើម្បី​មើល​ពីរបៀបថាតើ​អ្នកប្រើអនុវត្ត​ការតាមដាន​ក្បួន​យ៉ាងដូចម្តេច ។"
 
 #. Tag: para
-#: highlighting.docbook:904
+#: highlighting.docbook:903
 #, no-c-format
 msgid ""
 "You can validate every XML file by using the command <command>xmllint --"
@@ -2586,7 +2603,7 @@ msgstr ""
 "language.dtd mySyntax.xml</command> ជាការស្រេច ។"
 
 #. Tag: para
-#: highlighting.docbook:908
+#: highlighting.docbook:907
 #, no-c-format
 msgid ""
 "If you repeat complex regular expression very often you can use "
@@ -2596,7 +2613,7 @@ msgstr ""
 "emphasis> ។ ឧទាហរណ៍ ៖​"
 
 #. Tag: programlisting
-#: highlighting.docbook:910
+#: highlighting.docbook:909
 #, no-c-format
 msgid ""
 "&lt;?xml version=\"1.0\" encoding=\"UTF-8\"?&gt;\n"
@@ -2612,7 +2629,7 @@ msgstr ""
 "] gt"
 
 #. Tag: para
-#: highlighting.docbook:911
+#: highlighting.docbook:910
 #, no-c-format
 msgid ""
 "Now you can use <emphasis>&amp;myref;</emphasis> instead of the regular "
@@ -2640,6 +2657,3 @@ msgstr "ឥឡូវ​នេះអ្នកអាច​ប្រើ​  <emphas
 
 #~ msgid "&lt;IncludeRules context=&quot;##C++&quot; /&gt;"
 #~ msgstr "&lt;IncludeRules context=&quot;##C++&quot; /&gt;"
-
-#~ msgid "Matches at end of line."
-#~ msgstr "ផ្គូផ្គង​ចុង​បន្ទាត់​​។​"
