@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: backupmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-17 02:06+0000\n"
+"POT-Creation-Date: 2014-02-20 01:45+0000\n"
 "PO-Revision-Date: 2012-12-31 14:00+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -86,7 +86,7 @@ msgstr "ចម្លង​ឯកសារ"
 #: abstractimportexportjob.cpp:309 abstractimportexportjob.cpp:316
 #: abstractimportexportjob.cpp:452 addressbook/exportaddressbookjob.cpp:91
 #: alarm/exportalarmjob.cpp:94 calendar/exportcalendarjob.cpp:97
-#: jot/exportjotjob.cpp:90 mail/exportmailjob.cpp:496
+#: jot/exportjotjob.cpp:90 mail/exportmailjob.cpp:488
 #, fuzzy, kde-format
 #| msgid "MBox \"%1\" was backuped."
 msgid "\"%1\" was backuped."
@@ -96,7 +96,7 @@ msgstr "MBox \"%1\" ត្រូវបាន​បម្រុង​ទុក �
 #: abstractimportexportjob.cpp:318 abstractimportexportjob.cpp:322
 #: abstractimportexportjob.cpp:454 addressbook/exportaddressbookjob.cpp:93
 #: alarm/exportalarmjob.cpp:96 calendar/exportcalendarjob.cpp:99
-#: jot/exportjotjob.cpp:92 mail/exportmailjob.cpp:498
+#: jot/exportjotjob.cpp:92 mail/exportmailjob.cpp:490
 #, fuzzy, kde-format
 #| msgid "MBox \"%1\" file cannot be added to backup file."
 msgid "\"%1\" file cannot be added to backup file."
@@ -107,7 +107,7 @@ msgid "Resource was not configured correctly, not archiving it."
 msgstr ""
 
 #: abstractimportexportjob.cpp:387 addressbook/importaddressbookjob.cpp:134
-#: mail/importmailjob.cpp:434
+#: mail/importmailjob.cpp:432
 msgid "Resources restored."
 msgstr "បាន​ស្ដារ​ធនធាន ។"
 
@@ -146,13 +146,13 @@ msgstr ""
 
 #: addressbook/exportaddressbookjob.cpp:68 alarm/exportalarmjob.cpp:70
 #: calendar/exportcalendarjob.cpp:73 jot/exportjotjob.cpp:69
-#: mail/exportmailjob.cpp:159
+#: mail/exportmailjob.cpp:151
 msgid "Backing up resources..."
 msgstr "កំពុង​បម្រុងទុក​ធនធាន..."
 
 #: addressbook/exportaddressbookjob.cpp:102 alarm/exportalarmjob.cpp:103
 #: calendar/exportcalendarjob.cpp:109 jot/exportjotjob.cpp:99
-#: mail/exportmailjob.cpp:185
+#: mail/exportmailjob.cpp:177
 msgid "Resources backup done."
 msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​ធនធាន ។"
 
@@ -160,7 +160,7 @@ msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​ធ
 #: akregator/exportakregatorjob.cpp:67 alarm/exportalarmjob.cpp:108
 #: blogilo/exportblogilojob.cpp:66 calendar/exportcalendarjob.cpp:114
 #: jot/exportjotjob.cpp:104 knode/exportknodejob.cpp:67
-#: mail/exportmailjob.cpp:190 notes/exportnotesjob.cpp:67
+#: mail/exportmailjob.cpp:182 notes/exportnotesjob.cpp:67
 msgid "Backing up config..."
 msgstr "កំពុង​បម្រុងទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ..."
 
@@ -168,7 +168,7 @@ msgstr "កំពុង​បម្រុងទុក​ការ​កំណត
 #: akregator/exportakregatorjob.cpp:72 alarm/exportalarmjob.cpp:133
 #: blogilo/exportblogilojob.cpp:72 calendar/exportcalendarjob.cpp:159
 #: jot/exportjotjob.cpp:129 knode/exportknodejob.cpp:73
-#: mail/exportmailjob.cpp:403 notes/exportnotesjob.cpp:79
+#: mail/exportmailjob.cpp:395 notes/exportnotesjob.cpp:79
 msgid "Config backup done."
 msgstr "បាន​ធ្វើការ​បម្រុងទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ ។"
 
@@ -178,7 +178,7 @@ msgstr ""
 
 #: addressbook/importaddressbookjob.cpp:71 alarm/importalarmjob.cpp:71
 #: calendar/importcalendarjob.cpp:70 jot/importjotjob.cpp:71
-#: mail/importmailjob.cpp:245
+#: mail/importmailjob.cpp:243
 msgid "Restore resources..."
 msgstr "ស្ដារ​ធនធាន..."
 
@@ -186,7 +186,7 @@ msgstr "ស្ដារ​ធនធាន..."
 #: akregator/importakregatorjob.cpp:54 alarm/importalarmjob.cpp:196
 #: blogilo/importblogilojob.cpp:54 calendar/importcalendarjob.cpp:276
 #: jot/importjotjob.cpp:194 knode/importknodejob.cpp:54
-#: mail/importmailjob.cpp:826 notes/importnotesjob.cpp:62
+#: mail/importmailjob.cpp:824 notes/importnotesjob.cpp:62
 msgid "Config restored."
 msgstr "បាន​ស្ដារ​ការ​កំណត់​រចនាសម្ព័ន្ធ ។"
 
@@ -332,167 +332,151 @@ msgstr ""
 msgid "mysqldump not found. Export data aborted"
 msgstr ""
 
-#: mail/exportmailjob.cpp:133
+#: mail/exportmailjob.cpp:125
 msgid "Backing up transports..."
 msgstr "កំពុង​បម្រុងទុក​ការ​ដឹក​ជញ្ជូន..."
 
-#: mail/exportmailjob.cpp:139 mail/exportmailjob.cpp:151
+#: mail/exportmailjob.cpp:131 mail/exportmailjob.cpp:143
 msgid "Transports backup done."
 msgstr "បាន​ធ្វើ​​បម្រុងទុក​កា​រដឹក​ជញ្ជូន ។"
 
-#: mail/exportmailjob.cpp:153
+#: mail/exportmailjob.cpp:145
 msgid "Transport file cannot be added to backup file."
 msgstr "មិន​អាច​​បន្ថែម​ឯកសារ​ដឹក​ជញ្ជូន​ទៅ​ឯកសារ​បម្រុង​ទុក​បាន​ទេ ។"
 
-#: mail/exportmailjob.cpp:201
+#: mail/exportmailjob.cpp:193
 msgid "Filters backup done."
 msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​តម្រង ។"
 
-#: mail/exportmailjob.cpp:203
+#: mail/exportmailjob.cpp:195
 msgid "Filters cannot be exported."
 msgstr "តម្រង​មិន​អាច​ត្រូវ​បាន​នាំចេញ​ទេ ។"
 
-#: mail/exportmailjob.cpp:293
+#: mail/exportmailjob.cpp:285
 #, fuzzy, kde-format
 #| msgid "MBox \"%1\" file cannot be added to backup file."
 msgid "Theme directory \"%1\" cannot be added to backup file."
 msgstr "ឯកសារ MBox \"%1\" មិនអាច​បន្ថែម​ទៅ​ឯកសារ​បម្រុ​ងទុកបាន​ទេ ។"
 
-#: mail/exportmailjob.cpp:409
+#: mail/exportmailjob.cpp:401
 msgid "Backing up identity..."
 msgstr "កំពុង​បម្រុងទុក​អត្តសញ្ញាណ..."
 
-#: mail/exportmailjob.cpp:446
+#: mail/exportmailjob.cpp:438
 #, fuzzy, kde-format
 #| msgid "vcard file \"%1\" cannot be saved."
 msgid "vCard file \"%1\" cannot be saved."
 msgstr "មិន​អាច​រក្សាទុក \"%1\" ឯកសារ vcard ។"
 
-#: mail/exportmailjob.cpp:458
+#: mail/exportmailjob.cpp:450
 msgid "Identity backup done."
 msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​អត្តសញ្ញាណ ។"
 
-#: mail/exportmailjob.cpp:460
+#: mail/exportmailjob.cpp:452
 msgid "Identity file cannot be added to backup file."
 msgstr "មិន​អាច​បន្ថែម​ឯកសារ​អត្តសញ្ញាណ​ទៅ​ឯកសារ​បម្រុងទុក​បាន​ទេ ។"
 
-#: mail/exportmailjob.cpp:466
+#: mail/exportmailjob.cpp:458
 msgid "Backing up Mails..."
 msgstr "កំពុង​បម្រុង​ទុក​សំបុត្រ..."
 
-#: mail/exportmailjob.cpp:506
+#: mail/exportmailjob.cpp:498
 msgid "Mails backup done."
 msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​សំបុត្រ ។"
 
-#: mail/exportmailjob.cpp:530
+#: mail/exportmailjob.cpp:522
 msgid "Backing up Akonadi Database..."
 msgstr "កំពុង​​បម្រុ​ងទុក​មូលដ្ឋាន​ទិន្នន័យ Akonadi​..."
 
-#: mail/exportmailjob.cpp:557 mail/importmailjob.cpp:961
+#: mail/exportmailjob.cpp:549 mail/importmailjob.cpp:959
 #, kde-format
 msgid "Database driver \"%1\" not supported."
 msgstr "កម្មវិធី​បញ្ជា​មូលដ្ឋាន​ទិន្នន័យ \"%1\" មិន​បានគាំទ្រ​ទេ ។"
 
-#: mail/exportmailjob.cpp:562
+#: mail/exportmailjob.cpp:554
 #, kde-format
 msgid "Could not find \"%1\" necessary to dump database."
 msgstr "រក​មិន​ឃើញ \"%1\" ចាំបាច់​ត្រូ​វបង្កើត​មូលដ្ឋាន​ទិន្នន័យ​ទេ​ ។"
 
-#: mail/exportmailjob.cpp:575
+#: mail/exportmailjob.cpp:567
 #, kde-format
 msgid "Akonadi Database \"%1\" cannot be added to backup file."
 msgstr "មិន​អាច​បន្ថែម​មូលដ្ឋាន​ទិន្នន័យ Akonadi \"%1\" ទៅ​ឯកសារ​បម្រុង​ទុក​បាន​ទេ ។"
 
-#: mail/exportmailjob.cpp:577
+#: mail/exportmailjob.cpp:569
 msgid "Akonadi Database backup done."
 msgstr "បាន​ធ្វើ​បម្រុងទុក​​មូលដ្ឋាន​ទិន្នន័យ Akonadi ។"
-
-#: mail/exportmailjob.cpp:582
-msgid "Backing up Nepomuk Database..."
-msgstr "កំពុង​បម្រុងទុក​មូលដ្ឋាន​ទិន្នន័យ Nepomuk ..."
-
-#: mail/exportmailjob.cpp:584
-msgid "Nepomuk Database backup done."
-msgstr "បាន​ធ្វើ​បម្រុងទុក​មូលដ្ឋាន​ Nepomuk រួចរាល់ ។"
 
 #: mail/importmailjob.cpp:67
 msgid "Start import KMail settings..."
 msgstr ""
 
-#: mail/importmailjob.cpp:156
+#: mail/importmailjob.cpp:154
 msgid "mailtransports file could not be found in the archive."
 msgstr "រក​មិន​ឃើញ​ឯកសារ mailtransports នៅ​ក្នុង​ប័ណ្ណសារ ។"
 
-#: mail/importmailjob.cpp:158
+#: mail/importmailjob.cpp:156
 msgid "Restore transports..."
 msgstr "ស្ដារ​កា​រដឹក​ជញ្ជូន..."
 
-#: mail/importmailjob.cpp:235
+#: mail/importmailjob.cpp:233
 msgid "Transports restored."
 msgstr "បាន​ស្ដារ​ការ​ដឹកជញ្ជូន ។"
 
-#: mail/importmailjob.cpp:237
+#: mail/importmailjob.cpp:235
 msgid "Failed to restore transports file."
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ស្ដារ​ឯកសារ​ដឹក​ជញ្ជូន ។"
 
-#: mail/importmailjob.cpp:441
+#: mail/importmailjob.cpp:439
 msgid "Restore mails..."
 msgstr "ស្ដារ​សំបុត្រ..."
 
-#: mail/importmailjob.cpp:558
+#: mail/importmailjob.cpp:556
 msgid "Mails restored."
 msgstr "បាន​ស្ដារ​សំបុត្រ ។"
 
-#: mail/importmailjob.cpp:567
+#: mail/importmailjob.cpp:565
 msgid "filters file could not be found in the archive."
 msgstr "រក​មិន​ឃើញ​​ឯកសារ​តម្រង​នៅ​ក្នុង​ប័ណ្ណសារ ។"
 
-#: mail/importmailjob.cpp:834
+#: mail/importmailjob.cpp:832
 msgid "emailidentities file could not be found in the archive."
 msgstr "រក​មិន​ឃើញ​ឯកសារ emailidentities នៅ​ក្នុង​ប័ណ្ណសារ ។"
 
-#: mail/importmailjob.cpp:836
+#: mail/importmailjob.cpp:834
 msgid "Restore identities..."
 msgstr "ស្ដារ​អត្តសញ្ញាណ..."
 
-#: mail/importmailjob.cpp:903
+#: mail/importmailjob.cpp:901
 msgid "Identities restored."
 msgstr "បាន​ស្ដារ​អត្តសញ្ញាណ ។"
 
-#: mail/importmailjob.cpp:905
+#: mail/importmailjob.cpp:903
 msgid "Failed to restore identity file."
 msgstr "បាន​បរាជ័យ​ក្នុងការ​ស្ដារ​​ឯកសារ​អត្តសញ្ញាណ ។"
 
-#: mail/importmailjob.cpp:926
+#: mail/importmailjob.cpp:924
 #, fuzzy
 #| msgid "akonadi database file could not be found in the archive."
 msgid "Akonadi database file could not be found in the archive."
 msgstr "រក​មិន​ឃើញ​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ akonadi នៅ​ក្នុង​ប័ណ្ណសារ ។"
 
-#: mail/importmailjob.cpp:928
+#: mail/importmailjob.cpp:926
 msgid "Restore Akonadi Database..."
 msgstr "ស្ដារ​មូលដ្ឋាន​ទិន្នន័យ Akonadi ..."
 
-#: mail/importmailjob.cpp:969
+#: mail/importmailjob.cpp:967
 #, kde-format
 msgid "Could not find \"%1\" necessary to restore database."
 msgstr "រក​មិន​ឃើញ \"%1\" ដែល​ចាំបាច់ ដើម្បី​ស្ដារ​មូលដ្ឋាន​ទិន្នន័យ ។"
 
-#: mail/importmailjob.cpp:979
+#: mail/importmailjob.cpp:977
 msgid "Failed to restore Akonadi Database."
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ស្ដារ​មូលដ្ឋាន​ទិន្នន័យ Akonadi ។"
 
-#: mail/importmailjob.cpp:984
+#: mail/importmailjob.cpp:982
 msgid "Akonadi Database restored."
 msgstr "បាន​ស្ដារ​មូលដ្ឋាន​ទិន្នន័យ Akonadi ។"
-
-#: mail/importmailjob.cpp:992
-msgid "Nepomuk Database restored."
-msgstr "បាន​ស្ដារ​មូលដ្ឋាន​ទិន្នន័យ Nepomuk ។"
-
-#: mail/importmailjob.cpp:993
-msgid "Failed to restore Nepomuk Database."
-msgstr "បាន​បរាជ័យក្នុងការ​ស្ដារ​មូលដ្ឋាន​ទិន្នន័យ Nepomuk ។"
 
 #: main.cpp:33 main.cpp:34
 msgid "PIM Setting Exporter"
@@ -682,12 +666,23 @@ msgid "Akonadi Database"
 msgstr "មូលដ្ឋាន​ទិន្នន័យ Akonadi"
 
 #: utils.cpp:343
-msgid "Nepomuk Database"
-msgstr "មូលដ្ឋាន​ទិន្នន័យ Nepomuk"
-
-#: utils.cpp:345
 msgid "Data"
 msgstr ""
+
+#~ msgid "Backing up Nepomuk Database..."
+#~ msgstr "កំពុង​បម្រុងទុក​មូលដ្ឋាន​ទិន្នន័យ Nepomuk ..."
+
+#~ msgid "Nepomuk Database backup done."
+#~ msgstr "បាន​ធ្វើ​បម្រុងទុក​មូលដ្ឋាន​ Nepomuk រួចរាល់ ។"
+
+#~ msgid "Nepomuk Database restored."
+#~ msgstr "បាន​ស្ដារ​មូលដ្ឋាន​ទិន្នន័យ Nepomuk ។"
+
+#~ msgid "Failed to restore Nepomuk Database."
+#~ msgstr "បាន​បរាជ័យក្នុងការ​ស្ដារ​មូលដ្ឋាន​ទិន្នន័យ Nepomuk ។"
+
+#~ msgid "Nepomuk Database"
+#~ msgstr "មូលដ្ឋាន​ទិន្នន័យ Nepomuk"
 
 #, fuzzy
 #~| msgid "Config"
