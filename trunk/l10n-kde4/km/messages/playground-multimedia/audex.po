@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: audex\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-22 01:49+0000\n"
+"POT-Creation-Date: 2014-02-24 01:55+0000\n"
 "PO-Revision-Date: 2012-07-02 11:29+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -59,35 +59,40 @@ msgid "Number of covers to fetch"
 msgstr "លេខ​គម្រប​ដែល​ត្រូវ​ទៅ​ប្រមូល​យក"
 
 #. i18n: ectx: label, entry (cdDevice), group (general)
-#: audex.kcfg:42
+#: audex.kcfg:44
 msgid "CD Device"
 msgstr "ឧបករណ៍​ស៊ីឌី"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_paranoiaMode)
 #. i18n: ectx: label, entry (paranoiaMode), group (general)
-#: audex.kcfg:46 widgets/generalsettingswidgetUI.ui:139
+#: audex.kcfg:48 widgets/devicewidgetUI.ui:33
 msgid "Full paranoia mode (best quality)"
 msgstr "របៀប paranoia ពេញលេញ (គុណ​ភាព​ល្អ​បំផុត​)"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_neverSkip)
 #. i18n: ectx: label, entry (neverSkip), group (general)
-#: audex.kcfg:50 widgets/generalsettingswidgetUI.ui:146
+#: audex.kcfg:52 widgets/devicewidgetUI.ui:40
 msgid "Never skip on read error"
 msgstr "កុំ​រំលង​ នៅ​ពេល​អាន​កំហុស"
 
+#. i18n: ectx: label, entry (sampleOffset), group (general)
+#: audex.kcfg:56
+msgid "Sample offset"
+msgstr ""
+
 #. i18n: ectx: label, entry (basePath), group (general)
-#: audex.kcfg:54
+#: audex.kcfg:62
 msgid "Base path to store music files"
 msgstr "ផ្លូវ​គោល​សម្រាប់​រក្សាទុក​ឯកសារ​តន្ត្រី "
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_upload)
 #. i18n: ectx: label, entry (upload), group (general)
-#: audex.kcfg:58 widgets/remoteserversettingswidgetUI.ui:23
+#: audex.kcfg:66 widgets/remoteserversettingswidgetUI.ui:23
 msgid "Upload files to server"
 msgstr "ផ្ទុក​ឯកសារ​ឡើង​ទៅ​កាន់​ម៉ាស៊ីន​បម្រើ"
 
 #. i18n: ectx: label, entry (url), group (general)
-#: audex.kcfg:62
+#: audex.kcfg:70
 msgid "URL of server"
 msgstr "URL របស់​ម៉ាស៊ីន​បម្រើ"
 
@@ -1409,48 +1414,54 @@ msgid "General settings"
 msgstr "ការ​កំណត់​ទូទៅ"
 
 #: mainwindow.cpp:153
+#, fuzzy
+#| msgid "Cover Settings"
+msgid "Device settings"
+msgstr "ការកំណត់​គម្រប"
+
+#: mainwindow.cpp:156
 msgid "Profiles"
 msgstr "ទម្រង់"
 
-#: mainwindow.cpp:165
+#: mainwindow.cpp:168
 #, fuzzy
 #| msgid "Cover Settings"
 msgid "CDDB settings"
 msgstr "ការកំណត់​គម្រប"
 
-#: mainwindow.cpp:173
+#: mainwindow.cpp:176
 msgid "Remote Server"
 msgstr "ម៉ាស៊ីន​បម្រើ​ពី​ចម្ងាយ"
 
-#: mainwindow.cpp:185
+#: mainwindow.cpp:188
 msgid "No status information available"
 msgstr "គ្មាន​ព័ត៌មាន​អំពី​ស្ថានភាព​ទេ"
 
-#: mainwindow.cpp:189 models/cddamodel.cpp:683
+#: mainwindow.cpp:192 models/cddamodel.cpp:683
 msgid "No disc in drive"
 msgstr "មិន​មាន​ថាស​ក្នុង​ដ្រាយ"
 
-#: mainwindow.cpp:193
+#: mainwindow.cpp:196
 msgid "Audio disc in drive"
 msgstr "ថាស​អូឌីយ៉ូ​ក្នុងដ្រាយ"
 
-#: mainwindow.cpp:202 models/cddamodel.cpp:685
+#: mainwindow.cpp:205 models/cddamodel.cpp:685
 msgid "Drive tray open"
 msgstr "ថាស​ដ្រាយ​បើក"
 
-#: mainwindow.cpp:206 models/cddamodel.cpp:686
+#: mainwindow.cpp:209 models/cddamodel.cpp:686
 msgid "Drive not ready"
 msgstr "ដ្រាយ​មិនទាន់​រួច​ទេ​​"
 
-#: mainwindow.cpp:210 models/cddamodel.cpp:687
+#: mainwindow.cpp:213 models/cddamodel.cpp:687
 msgid "Drive error"
 msgstr "កំហុស​ដ្រាយ"
 
-#: mainwindow.cpp:247
+#: mainwindow.cpp:250
 msgid "Fetching CDDB information..."
 msgstr "កំពុង​ប្រមូល​យក​ព័ត៌មាន​ CDDB..."
 
-#: mainwindow.cpp:252
+#: mainwindow.cpp:255
 #, kde-format
 msgid ""
 "CDDB lookup failed, with the following error:\n"
@@ -1459,15 +1470,15 @@ msgstr ""
 "បាន​បរាជ័យ​ក្នុង​ការ​រក​មើល CDDB  ដោយ​មាន​កំហុស​ដូច​ខាងក្រោម ៖\n"
 "%1"
 
-#: mainwindow.cpp:253
+#: mainwindow.cpp:256
 msgid "CDD Lookup Failure"
 msgstr "ភាព​បរាជ័យ​ក្នុង​ការ​រក​មើល CDD"
 
-#: mainwindow.cpp:358
+#: mainwindow.cpp:361
 msgid "Split titles"
 msgstr "ពុះ​ចំណង​ជើង"
 
-#: mainwindow.cpp:359
+#: mainwindow.cpp:362
 msgid ""
 "Please set a divider string. Be aware of empty spaces.\n"
 "\n"
@@ -1477,83 +1488,83 @@ msgstr ""
 "\n"
 "កម្មវិធី​បែង​ចែក ៖"
 
-#: mainwindow.cpp:369
+#: mainwindow.cpp:372
 msgid "Do you really want to swap all artists and titles?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​ដូរ​សិល្បករ និង​ចំណង​ជើង​ទាំង​អស់​ឬ ?"
 
-#: mainwindow.cpp:370
+#: mainwindow.cpp:373
 msgid "Swap artists and titles"
 msgstr "ដូរ​សិល្បករ​ និង​ចំណង​ជើង​"
 
-#: mainwindow.cpp:382
+#: mainwindow.cpp:385
 msgid "Do you really want to capitalize all artists and titles?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​សរសេរ​សិល្បករ និង​ចំណង​ជើង​ទាំង​អស់​ជា​អក្សរ​ពុម្ព​ធំ​ឬ ?"
 
-#: mainwindow.cpp:383
+#: mainwindow.cpp:386
 msgid "Capitalize artists and titles"
 msgstr "សរសេរ​សិល្បករ និង​ចំណង​ជើង​ជា​អក្សរ​ពុម្ព​ធំ"
 
-#: mainwindow.cpp:395
+#: mainwindow.cpp:398
 msgid "Do you really want to autofill track artists?"
 msgstr "តើ​អ្នក​ពិត​ជា​ចង់​បំពេញ​ដោយ​ស្វ័យ​ប្រវត្តិ​នូវ​សិល្បករ​របស់​បទ​ឬ ?"
 
-#: mainwindow.cpp:396
+#: mainwindow.cpp:399
 msgid "Autofill artists"
 msgstr "បំពេញ​សិល្បករ​ដោយ​ស្វ័យ​ប្រវត្តិ"
 
-#: mainwindow.cpp:420
+#: mainwindow.cpp:423
 msgid "Eject"
 msgstr "ច្រាន​ចេញ"
 
-#: mainwindow.cpp:427
+#: mainwindow.cpp:430
 msgid "Profile:"
 msgstr "ទម្រង់​ ៖"
 
-#: mainwindow.cpp:439
+#: mainwindow.cpp:442
 msgid "&Profile:"
 msgstr "ទម្រង់​ ៖"
 
-#: mainwindow.cpp:445
+#: mainwindow.cpp:448
 msgid "Profile"
 msgstr "ទម្រង់​"
 
-#: mainwindow.cpp:453
+#: mainwindow.cpp:456
 msgid "Fetch Info"
 msgstr "ទៅ​ប្រមូល​យក​ព័ត៌មាន​"
 
-#: mainwindow.cpp:460
+#: mainwindow.cpp:463
 msgid "Submit Info"
 msgstr "ដាក់​ស្នើ​ព័ត៌មាន"
 
-#: mainwindow.cpp:466
+#: mainwindow.cpp:469
 msgid "Rip..."
 msgstr "បម្លែង..."
 
-#: mainwindow.cpp:475
+#: mainwindow.cpp:478
 msgid "Split Titles..."
 msgstr "ពុះ​ចំណង​ជើង..."
 
-#: mainwindow.cpp:480
+#: mainwindow.cpp:483
 msgid "Swap Artists And Titles"
 msgstr "ដូរ​សិល្បករ​ និង​ចំណង​ជើង​"
 
-#: mainwindow.cpp:485
+#: mainwindow.cpp:488
 msgid "Capitalize"
 msgstr "សរសេរ​ជា​អក្សរពុម្ព"
 
-#: mainwindow.cpp:490
+#: mainwindow.cpp:493
 msgid "Auto Fill Artists"
 msgstr "បំពេញ​សិល្ប​ករ​ដោយ​ស្វ័យ​ប្រវត្តិ"
 
-#: mainwindow.cpp:495
+#: mainwindow.cpp:498
 msgid "Select All Tracks"
 msgstr "ជ្រើស​បទ​ទាំង​អស់"
 
-#: mainwindow.cpp:500
+#: mainwindow.cpp:503
 msgid "Deselect All Tracks"
 msgstr "ដោះ​ជម្រើស​បទ​ទាំងអស់"
 
-#: mainwindow.cpp:505
+#: mainwindow.cpp:508
 msgid "Invert Selection"
 msgstr "ដាក់​ជម្រើស​បញ្ច្រាស"
 
@@ -2064,6 +2075,12 @@ msgstr ""
 "ពិនិត្យ​មើល​ឧបករណ៍​របស់​អ្នក​ ។ តើ​វា​ពិត​ជា​ \"%1\" ឫ ? ប្រសិន​បើ​ដូច្នេះ​ ពិនិត្យ​មើល​សិទ្ធិ​របស់​អ្នក​នៅ​លើ​​ "
 "\"%1\" ។"
 
+#: utils/cddasolid.cpp:104
+#, fuzzy
+#| msgid "Audio disc"
+msgid "Audio Disc"
+msgstr "ថាស​អូឌីយ៉ូ"
+
 #: utils/coverfetcher.cpp:140
 msgid "There was an error communicating with Google."
 msgstr "មាន​កំហុស​​ទំនាក់ទំនង​​ជា​មួយ​ហ្គូហ្គល ។"
@@ -2216,7 +2233,7 @@ msgid "CD Number: "
 msgstr "​​លេខ​ស៊ីឌី ៖"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: widgets/cddaheaderwidget.cpp:498 widgets/generalsettingswidgetUI.ui:94
+#: widgets/cddaheaderwidget.cpp:498 widgets/generalsettingswidgetUI.ui:117
 msgid "Wikipedia"
 msgstr "វីគីភីឌៀ"
 
@@ -2267,6 +2284,29 @@ msgstr "យក​គម្រប​ចេញ"
 #: widgets/customwidgetUI.ui:29
 msgid "Command Pattern:"
 msgstr "លំនាំ​ពាក្យ​បញ្ជា ៖"
+
+#: widgets/devicewidget.cpp:27
+msgid "None detected"
+msgstr "រក​មិន​ឃើញ​អ្វី​ឡើយ"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, DeviceWidgetUI)
+#: widgets/devicewidgetUI.ui:14
+#, fuzzy
+#| msgid "Format:"
+msgid "Form"
+msgstr "ទ្រង់​ទ្រាយ ៖"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#: widgets/devicewidgetUI.ui:20
+msgid "Device"
+msgstr "​ឧបករណ៍"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: widgets/devicewidgetUI.ui:49
+#, fuzzy
+#| msgid "Sampler Example:"
+msgid "Sample offset:"
+msgstr "គំរូ​របស់​កម្មវិធី​ធ្វើ​គំរូ ៖"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: widgets/faacwidgetUI.ui:29 widgets/oggencwidgetUI.ui:29
@@ -2335,10 +2375,6 @@ msgstr "ព័រទុយហ្គាល់"
 msgid "Svenska"
 msgstr "ស៊ុយអែដ"
 
-#: widgets/generalsettingswidget.cpp:42
-msgid "None detected"
-msgstr "រក​មិន​ឃើញ​អ្វី​ឡើយ"
-
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_ejectCDTray)
 #: widgets/generalsettingswidgetUI.ui:37
 msgid "Eject CD tray after finished extraction"
@@ -2354,25 +2390,20 @@ msgstr "អនុវត្ត​ការ​រក​មើល​គម្រប
 msgid "Number of covers to fetch:"
 msgstr "លេខ​គម្រប​ដែល​ត្រូវ​ទៅ​ប្រមូល​យក ៖"
 
-#. i18n: ectx: property (text), widget (QLabel, label_wikipediaLocale)
-#: widgets/generalsettingswidgetUI.ui:106
-msgid "Localization:"
-msgstr "ការ​ធ្វើ​មូលដ្ឋានីយកម្ម ៖"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: widgets/generalsettingswidgetUI.ui:126
-msgid "Device"
-msgstr "​ឧបករណ៍"
-
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: widgets/generalsettingswidgetUI.ui:156
+#: widgets/generalsettingswidgetUI.ui:94
 msgid "Paths"
 msgstr "ផ្លូវ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_basePath)
-#: widgets/generalsettingswidgetUI.ui:164
+#: widgets/generalsettingswidgetUI.ui:102
 msgid "Base path to store music files:"
 msgstr "ផ្លូវ​គោល​សម្រាប់​ទុក​ឯកសារ​តន្ត្រី ៖"
+
+#. i18n: ectx: property (text), widget (QLabel, label_wikipediaLocale)
+#: widgets/generalsettingswidgetUI.ui:129
+msgid "Localization:"
+msgstr "ការ​ធ្វើ​មូលដ្ឋានីយកម្ម ៖"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #: widgets/lamewidgetUI.ui:41
