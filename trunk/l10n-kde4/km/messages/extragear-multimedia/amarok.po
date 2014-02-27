@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-02-10 01:29+0000\n"
+"POT-Creation-Date: 2014-02-27 01:33+0000\n"
 "PO-Revision-Date: 2012-07-06 15:27+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -311,7 +311,7 @@ msgstr "បញ្ជី​ចាក់​បច្ចុប្បន្ន"
 msgid "Selected Tracks"
 msgstr "បទ​ដែល​បាន​ជ្រើស"
 
-#: ActionClasses.cpp:421
+#: ActionClasses.cpp:421 scripting/scriptconsole/ScriptConsole.cpp:100
 msgid "Stop"
 msgstr "បញ្ឈប់"
 
@@ -328,7 +328,7 @@ msgid "Stop after current track: On"
 msgstr "បញ្ឈប់​ក្រោយ​ពេល​បទ​បច្ចុប្បន្ន ៖ បើក​"
 
 #: ActionClasses.cpp:493 context/engines/current/CurrentEngine.cpp:143
-#: EngineController.cpp:1452 mac/GrowlInterface.cpp:43 widgets/Osd.cpp:668
+#: EngineController.cpp:1327 mac/GrowlInterface.cpp:43 widgets/Osd.cpp:668
 msgid "No track playing"
 msgstr "មិន​កំពុង​ចាក់​បទ​អ្វី​ទាំងអស់​​​"
 
@@ -1382,8 +1382,30 @@ msgstr "ថាតើ​ត្រូវធ្វើ​ឲ្យ​ទាន់​
 msgid "Enable/Disable automatic update for built-in scripts."
 msgstr "បិទ/​បើក​ ធ្វើឲ្យ​ទាន់​សម័យដោយ​​ស្វ័យ​ប្រ​វត្តិ​សម្រាប់​​ស្គ្រីបដែលមាន​មកជាមួយ​​ ។"
 
+#. i18n: ectx: label, entry, group (ScriptManager)
+#. i18n: ectx: whatsthis, entry, group (ScriptManager)
+#: amarokconfig.kcfg:592 amarokconfig.kcfg:593
+#, fuzzy
+#| msgid "Whether to animate the systray icon"
+msgid "Whether to enable the script console."
+msgstr "ថា​តើ​ត្រូវ​ធ្វើ​ឲ្យ​រូបតំណាង​នៅ​ក្នុង​ថាស​ប្រព័ន្ធ​​មាន​ចលនា​ឬអត់"
+
+#. i18n: ectx: label, entry, group (ScriptManager)
+#. i18n: ectx: whatsthis, entry, group (ScriptManager)
+#: amarokconfig.kcfg:597 amarokconfig.kcfg:598
+msgid "Whether to display a warning about scripts accessing deprecated APIs."
+msgstr ""
+
+#. i18n: ectx: label, entry, group (ScriptConsole)
+#. i18n: ectx: whatsthis, entry, group (ScriptConsole)
+#: amarokconfig.kcfg:605 amarokconfig.kcfg:606
+#, fuzzy
+#| msgid "Whether to hide the context view."
+msgid "Whether to save the current session on exit."
+msgstr "ថាតើ​ត្រូវ​លាក់​ទិដ្ឋភាព​បរិបទ​ដែរ​ឬទេ​ ។"
+
 #. i18n: ectx: label, entry, group (Moodbar)
-#: amarokconfig.kcfg:595
+#: amarokconfig.kcfg:613
 #, fuzzy
 msgid ""
 "Whether to show the moodbar of the current track, if available, in the "
@@ -1391,25 +1413,25 @@ msgid ""
 msgstr "ថា​តើ​ដើម្បី​បង្ហាញ moodbar របស់​បទ​បច្ចុប្បន្ន​ ប្រ​សិន​បើ​អាច​រកបាន​​ កំ​ពុង​ដំ​ពើរ​ការ​​គ្រាប់​រំកិល ។ "
 
 #. i18n: ectx: whatsthis, entry, group (Moodbar)
-#: amarokconfig.kcfg:596
+#: amarokconfig.kcfg:614
 #, fuzzy
 msgid "Enable/Disable showing moodbar, if available, in the progress slider."
 msgstr "បិទ/​បើក​​ការ​បង្ហាញ moodbar ប្រ​សិន​បើ​អាច​រក​បាន​ កំពុង​តែ​ដំ​ណើរ​ការ​គ្រាប់​រំកិល ។ "
 
 #. i18n: ectx: label, entry, group (Moodbar)
-#: amarokconfig.kcfg:600
+#: amarokconfig.kcfg:618
 #, fuzzy
 msgid "The style to use when painting the moodbar"
 msgstr "រចនាប័ទ្ម​ត្រូវ​ប្រើ​ នៅពេលដែល​គូរ moodbar"
 
 #. i18n: ectx: label, entry, group (PlaylistGenerator)
-#: amarokconfig.kcfg:607
+#: amarokconfig.kcfg:625
 #, fuzzy
 msgid "Quality factor for Automated Playlist Generator"
 msgstr "កត្តាគុណភាព​សម្រាប់កម្ម​វិធី​បង្កើត​បញ្ជីចាក់​ដោយ​ស្វ័​យ​ប្រវត្តិ​"
 
 #. i18n: ectx: whatsthis, entry, group (PlaylistGenerator)
-#: amarokconfig.kcfg:608
+#: amarokconfig.kcfg:626
 #, fuzzy
 msgid ""
 "A value between 0 and 10 that controls whether the Automated Playlist "
@@ -1580,79 +1602,79 @@ msgctxt ""
 msgid "Play"
 msgstr "ចាក់"
 
-#: App.cpp:356
+#: App.cpp:357
 msgid "Files/URLs to open"
 msgstr "ឯកសារ​/​URL ដែលត្រូវ​​បើក"
 
-#: App.cpp:357
+#: App.cpp:358
 #, fuzzy
 msgid "Immediately start playing an audio cd"
 msgstr "ភ្លាមៗ​នេះ​ ចាប់​ផ្តើមចាក់​ស៊ីឌី​អូឌីយ៉ូ"
 
-#: App.cpp:359
+#: App.cpp:360
 #, fuzzy
 msgid "Skip backwards in playlist"
 msgstr "រំលង​ទៅ​ក្រោយ​ក្នុង​បញ្ជី​ចាក់"
 
-#: App.cpp:361
+#: App.cpp:362
 msgid "Start playing current playlist"
 msgstr "ចាប់ផ្ដើម​ចាក់​បញ្ជី​ចាក់​បច្ចុប្បន្ន"
 
-#: App.cpp:363
+#: App.cpp:364
 msgid "Play if stopped, pause if playing"
 msgstr "បើ​ឈប់ ឲ្យចាក់ បើ​ចាក់ ឲ្យ​ផ្អាក"
 
-#: App.cpp:364
+#: App.cpp:365
 msgid "Pause playback"
 msgstr "ផ្អាក​ចាក់​សារ​ថ្មី"
 
-#: App.cpp:366
+#: App.cpp:367
 msgid "Stop playback"
 msgstr "ឈប់​ចាក់​សារ​ថ្មី"
 
-#: App.cpp:368
+#: App.cpp:369
 msgid "Skip forwards in playlist"
 msgstr "រំលង​ទៅ​មុខ​ក្នុង​បញ្ជី​ចាក់"
 
-#: App.cpp:369
+#: App.cpp:370
 msgid "Additional options:"
 msgstr "ជម្រើស​បន្ថែម ៖"
 
-#: App.cpp:371
+#: App.cpp:372
 msgid "Append files/URLs to playlist"
 msgstr "បន្ថែម​ឯកសារ​/​URL ទៅ​ខាង​ចុង​បញ្ជី​ចាក់"
 
-#: App.cpp:372
+#: App.cpp:373
 msgid "Queue URLs after the currently playing track"
 msgstr "រៀប URL ជា​ជួរ​បន្ទាប់​ពី​ចាក់​បទ​រួច"
 
-#: App.cpp:374
+#: App.cpp:375
 msgid "Load URLs, replacing current playlist"
 msgstr "ផ្ទុក URL ដោយ​ជំនួស​បញ្ជី​ចាក់​បច្ចុប្បន្ន"
 
-#: App.cpp:376
+#: App.cpp:377
 msgid "Print verbose debugging information"
 msgstr "បោះពុម្ព​ព័ត៌មាន​បំបាត់​កំហុស​ការ​បរិយាយ"
 
-#: App.cpp:377
+#: App.cpp:378
 #, fuzzy
 #| msgid "Print verbose debugging information"
 msgid "Print verbose debugging information from the audio system"
 msgstr "បោះពុម្ព​ព័ត៌មាន​បំបាត់​កំហុស​ការ​បរិយាយ"
 
-#: App.cpp:379
+#: App.cpp:380
 msgid "Disable colorization for debug output."
 msgstr ""
 
-#: App.cpp:381
+#: App.cpp:382
 msgid "Allow running multiple Amarok instances"
 msgstr "អនុញ្ញាត​ឲ្យ​រត់​ធាតុ Amarok ជា​ច្រើន"
 
-#: App.cpp:382
+#: App.cpp:383
 msgid "Base for relative filenames/URLs"
 msgstr "គោល​សម្រាប់​ឈ្មោះ​ឯកសារ​/​URL ប្រែប្រួល"
 
-#: App.cpp:510
+#: App.cpp:516
 #, fuzzy
 msgid ""
 "The embedded database was not found; you must set up a database server "
@@ -1662,7 +1684,7 @@ msgstr ""
 "មូលដ្ឋាន​ទិន្នន័យ​ដែល​បាន​បង្កប់​មិន​បាន​ស្វែង​រក​ អ្នក​ត្រូវតែ​រៀប​ចំមូល​ដ្ឋាន​ទិន្នន័យ​តភ្ជាប់ម៉ាស៊ីន​បម្រើ ។ \n"
 "​អ្នក​ត្រូវ​តែ​ចាប់​ផ្តើម​ឡើង​​វិញ​ Amarok ក្រោយ​ពេល​ធ្វើវា ។ "
 
-#: App.cpp:511
+#: App.cpp:517
 #, fuzzy
 msgid ""
 "The connection details for the database server were invalid.\n"
@@ -1671,17 +1693,17 @@ msgstr ""
 "ការ​តភ្ជាប់​យ៉ាង​ល្អិត​ល្អន់​សម្រាប់មូល​ដ្ឋាន​ទិន្នន័យ​ម៉ាស៊ីន​បម្រើ​មិន​ត្រឹម​ត្រួវ​ ។ \n"
 "អ្នក​ត្រួវ​តែ​បញ្ចូលការ​កំណត់​ឲ្យ​បាន​ត្រឹម​ត្រូវ ហើយចាប់​ផ្តើម ​Amarok ​​ឡើង​វិញ ក្រោយ​ពេល​ធ្វើវា ។ "
 
-#: App.cpp:512
+#: App.cpp:518
 #, fuzzy
 msgid "Database Error"
 msgstr "កំហុស​មូលដ្ឋាន​ទិន្នន័យ"
 
-#: App.cpp:557
+#: App.cpp:563
 #, fuzzy
 msgid "Moving files to trash"
 msgstr "កំពុង​ផ្លាស់ទី​ឯកសារ​ទៅ​ធុងសំរាម"
 
-#: App.cpp:624
+#: App.cpp:630
 #, fuzzy, kde-format
 msgid ""
 "A music path, %1, is set in System Settings.\n"
@@ -1817,7 +1839,7 @@ msgid "Various Artists"
 msgstr "សិល្បករ​ផ្សេងៗ"
 
 #: browsers/CollectionTreeItemModelBase.cpp:987
-#: browsers/CollectionTreeView.cpp:218
+#: browsers/CollectionTreeView.cpp:219
 #: context/applets/albums/AlbumsView.cpp:256
 #: context/applets/wikipedia/WikipediaApplet.cpp:634
 #: dialogs/transferdialog.cpp:89 musicbrainz/MusicBrainzTagsModel.cpp:38
@@ -1868,38 +1890,38 @@ msgstr "ស្លាក"
 msgid "None"
 msgstr "គ្មាន"
 
-#: browsers/CollectionTreeView.cpp:238
+#: browsers/CollectionTreeView.cpp:239
 msgid "Collection"
 msgstr "សម្រាំង"
 
-#: browsers/CollectionTreeView.cpp:262 browsers/filebrowser/FileView.cpp:117
+#: browsers/CollectionTreeView.cpp:263 browsers/filebrowser/FileView.cpp:117
 msgid "Copy to Collection"
 msgstr "ចម្លង​ទៅ​សម្រាំង"
 
-#: browsers/CollectionTreeView.cpp:271 browsers/filebrowser/FileView.cpp:127
+#: browsers/CollectionTreeView.cpp:272 browsers/filebrowser/FileView.cpp:127
 msgid "Move to Collection"
 msgstr "ផ្លាស់ទី​ទៅ​សម្រាំង"
 
-#: browsers/CollectionTreeView.cpp:285
+#: browsers/CollectionTreeView.cpp:286
 msgid "Move Tracks to Trash"
 msgstr "ផ្លាស់ទីដាន​ទៅ​ធុងសំរាម"
 
-#: browsers/CollectionTreeView.cpp:296
+#: browsers/CollectionTreeView.cpp:297
 msgid "Delete Tracks"
 msgstr "លុប​បទ"
 
-#: browsers/CollectionTreeView.cpp:573 services/lastfm/LastFmTreeView.cpp:187
+#: browsers/CollectionTreeView.cpp:575 services/lastfm/LastFmTreeView.cpp:187
 msgid "More..."
 msgstr "ផ្សេងៗ​ទៀត..."
 
-#: browsers/CollectionTreeView.cpp:944 browsers/filebrowser/FileView.cpp:384
+#: browsers/CollectionTreeView.cpp:946 browsers/filebrowser/FileView.cpp:384
 #: browsers/playlistbrowser/PlaylistBrowserView.cpp:71
 #: context/applets/albums/AlbumsView.cpp:241
 #: services/lastfm/LastFmTreeView.cpp:97
 msgid "&Add to Playlist"
 msgstr "បន្ថែម​ទៅ​បញ្ជី​ចាក់"
 
-#: browsers/CollectionTreeView.cpp:955 browsers/filebrowser/FileView.cpp:395
+#: browsers/CollectionTreeView.cpp:957 browsers/filebrowser/FileView.cpp:395
 #: browsers/playlistbrowser/PlaylistBrowserView.cpp:76
 #: context/applets/albums/AlbumsView.cpp:242
 #: services/lastfm/LastFmTreeView.cpp:106
@@ -1907,12 +1929,12 @@ msgctxt "Replace the currently loaded tracks with these"
 msgid "&Replace Playlist"
 msgstr "ជំនួស​​បញ្ជី​ចាក់​"
 
-#: browsers/CollectionTreeView.cpp:1004
+#: browsers/CollectionTreeView.cpp:1006
 msgctxt "Organize Files"
 msgid "Organize Files"
 msgstr "រៀបចំ​ឯកសារ"
 
-#: browsers/CollectionTreeView.cpp:1037 browsers/filebrowser/FileView.cpp:428
+#: browsers/CollectionTreeView.cpp:1039 browsers/filebrowser/FileView.cpp:428
 msgid "&Edit Track Details"
 msgstr "កែសម្រួល​សេចក្ដី​លម្អិត​អំពី​​បទ"
 
@@ -2511,6 +2533,7 @@ msgid "Configure Plugins"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​កម្មវិធី​ជំនួយ"
 
 #: configdialog/ConfigDialog.cpp:65
+#: scripting/scriptconsole/ScriptConsole.cpp:345
 msgid "Scripts"
 msgstr "ស្គ្រីប"
 
@@ -3217,38 +3240,79 @@ msgstr "សេវា​អ៊ីនធឺណិត"
 msgid "Statistics importers"
 msgstr "ស្ថិតិ"
 
-#: configdialog/dialogs/ScriptsConfig.cpp:50
+#: configdialog/dialogs/ScriptsConfig.cpp:126
+msgid "Manually installed scripts cannot be automatically updated, continue?"
+msgstr ""
+
+#: configdialog/dialogs/ScriptsConfig.cpp:132
+#, fuzzy
+#| msgid "Search Scripts"
+msgid "Select Archived Script"
+msgstr "ស្វែងរក​​ស្គ្រីប"
+
+#: configdialog/dialogs/ScriptsConfig.cpp:146
+#, fuzzy
+#| msgid "Invalid encoder"
+msgid "Invalid Archive"
+msgstr "អ៊ិនកូឌ័រ​មិន​ត្រឹមត្រូវ"
+
+#: configdialog/dialogs/ScriptsConfig.cpp:156
+#: configdialog/dialogs/ScriptsConfig.cpp:170
+msgid "Invalid Script File"
+msgstr ""
+
+#: configdialog/dialogs/ScriptsConfig.cpp:177
+#, kde-format
+msgid ""
+"Another script with the name %1 already exists\n"
+"Existing Script's Version: %1\n"
+"Selected Script's Version: %2"
+msgstr ""
+
+#: configdialog/dialogs/ScriptsConfig.cpp:188
+#, fuzzy, kde-format
+#| msgid "Successfully installed %1"
+msgid "The script %1 was successfully installed"
+msgstr "បាន​ដំឡើង %1 ដោយ​ជោគជ័យ"
+
+#: configdialog/dialogs/ScriptsConfig.cpp:200
 msgid "Generic"
 msgstr "​ទូទៅ"
 
-#: configdialog/dialogs/ScriptsConfig.cpp:54
+#: configdialog/dialogs/ScriptsConfig.cpp:204
 #: context/applets/lyrics/LyricsApplet.cpp:441
 #: context/applets/lyrics/LyricsApplet.cpp:567 dialogs/TagDialog.cpp:502
 msgid "Lyrics"
 msgstr "Lyrics"
 
-#: configdialog/dialogs/ScriptsConfig.cpp:58
+#: configdialog/dialogs/ScriptsConfig.cpp:208
 msgid "Scriptable Service"
 msgstr "សេវាកម្ម​ដែល​អាច​ជា​ស្គ្រីប"
 
-#: configdialog/dialogs/ScriptsConfig.cpp:76
+#: configdialog/dialogs/ScriptsConfig.cpp:242
 msgid ""
-"<p>Script successfully installed.</p><p>Please restart Amarok to start the "
-"script.</p>"
+"You are advised to only uninstall manually installed scripts using this "
+"button."
 msgstr ""
-"<p>បាន​ដំឡើង​ស្គ្រីប​ដោយ​ជោគជ័យ ។</p><p>សូម​ចាប់ផ្ដើម​ Amarok ឡើង​វិញ​ដើម្បី​ចាប់ផ្ដើម​ស្គ្រីប ។</p>"
 
-#: configdialog/dialogs/ScriptsConfig.cpp:79
-msgid ""
-"<p>Script successfully uninstalled.</p><p>Please restart Amarok to totally "
-"remove the script.</p>"
-msgstr ""
-"<p>បានលុប​ស្គ្រីប​ដោយ​ជោគជ័យ ។</p><p>សូម​ចាប់ផ្ដើម​ Amarok ឡើង​វិញ ដើម្បី​យក​ស្គ្រីប​ចេញ​ទាំងស្រុង ។</p>"
+#. i18n: ectx: property (text), widget (KPushButton, uninstallButton)
+#: configdialog/dialogs/ScriptsConfig.ui:36
+#, fuzzy
+#| msgid "Manage Scripts"
+msgid "Uninstall Script"
+msgstr "គ្រប់គ្រង​ស្គ្រីប​"
+
+#. i18n: ectx: property (text), widget (KPushButton, installButton)
+#: configdialog/dialogs/ScriptsConfig.ui:43
+#, fuzzy
+#| msgid "Install MP3 Support"
+msgid "Install Local Script"
+msgstr "ដំឡើង​ការ​គាំទ្រ MP3"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_AutoUpdateScripts)
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_AutoUpdateScripts)
-#: configdialog/dialogs/ScriptsConfig.ui:36
-#: configdialog/dialogs/ScriptsConfig.ui:39
+#: configdialog/dialogs/ScriptsConfig.ui:54
+#: configdialog/dialogs/ScriptsConfig.ui:57
 #, fuzzy
 msgid ""
 "Automatically download and install updates for the built-in scripts from the "
@@ -3258,22 +3322,44 @@ msgstr ""
 "ប្រសិន​បើ​អាច​ធ្វើ​បាន"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_AutoUpdateScripts)
-#: configdialog/dialogs/ScriptsConfig.ui:42
+#: configdialog/dialogs/ScriptsConfig.ui:60
 #, fuzzy
 msgid "Automatically update built-in scripts"
 msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ដោយ​ស្វ័យ​ប្រវត្តិ​ស្គ្រីប​ដែល​មាន​មក​ជា​មួយ​"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, manageButton)
-#: configdialog/dialogs/ScriptsConfig.ui:62
+#: configdialog/dialogs/ScriptsConfig.ui:80
 msgid "Browse, install, and uninstall scripts"
 msgstr "រក​មើល​ ដំឡើង​ និង​លុប​ស្គ្រីប"
 
 #. i18n: ectx: property (text), widget (QPushButton, manageButton)
-#: configdialog/dialogs/ScriptsConfig.ui:65
+#: configdialog/dialogs/ScriptsConfig.ui:83
 msgid "Manage Scripts"
 msgstr "គ្រប់គ្រង​ស្គ្រីប​"
 
-#: configdialog/dialogs/ScriptSelector.cpp:30
+#. i18n: ectx: property (title), widget (QGroupBox, m_scriptConsoleGroup)
+#: configdialog/dialogs/ScriptsConfig.ui:107
+#: scripting/scriptconsole/ScriptConsole.cpp:73
+#, fuzzy
+#| msgid "Scripts"
+msgid "Script Console"
+msgstr "ស្គ្រីប"
+
+#. i18n: ectx: property (statusTip), widget (QCheckBox, kcfg_EnableScriptConsole)
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, kcfg_EnableScriptConsole)
+#: configdialog/dialogs/ScriptsConfig.ui:116
+#: configdialog/dialogs/ScriptsConfig.ui:119
+msgid "Enable the script console."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, kcfg_EnableScriptConsole)
+#: configdialog/dialogs/ScriptsConfig.ui:122
+#, fuzzy
+#| msgid "Manage Scripts"
+msgid "Enable Script Console"
+msgstr "គ្រប់គ្រង​ស្គ្រីប​"
+
+#: configdialog/dialogs/ScriptSelector.cpp:36
 msgid "Search Scripts"
 msgstr "ស្វែងរក​​ស្គ្រីប"
 
@@ -4957,7 +5043,7 @@ msgstr "មិន​ស្គាល់​សម្រាំង"
 
 #: core-impl/collections/ipodcollection/IpodMeta.cpp:183
 #: core-impl/collections/mediadevicecollection/MediaDeviceMeta.cpp:93
-#: EngineController.cpp:1430
+#: EngineController.cpp:1305
 msgid "Unknown track"
 msgstr "មិន​ស្គាល់​បទ"
 
@@ -8021,7 +8107,7 @@ msgstr "ស្វែងរក​​ស្គ្រីប"
 msgid "Configure Equalizer"
 msgstr "បើក​អេហ្គុយ"
 
-#: dialogs/EqualizerDialog.cpp:92
+#: dialogs/EqualizerDialog.cpp:93
 #, fuzzy
 #| msgid "0 dB"
 msgid ""
@@ -9324,47 +9410,47 @@ msgctxt "Inverted condition in tag match bias"
 msgid "Not %1"
 msgstr "អំពី %1"
 
-#: dynamic/BiasFactory.cpp:50
+#: dynamic/BiasFactory.cpp:51
 #, fuzzy
 #| msgid "Random"
 msgctxt "Name of the random bias"
 msgid "Random"
 msgstr "ចៃដន្យ"
 
-#: dynamic/BiasFactory.cpp:57
+#: dynamic/BiasFactory.cpp:58
 msgctxt "Description of the random bias"
 msgid ""
 "The random bias adds random tracks from the\n"
 "whole collection without any bias."
 msgstr ""
 
-#: dynamic/BiasFactory.cpp:68
+#: dynamic/BiasFactory.cpp:69
 #, fuzzy
 #| msgid "and"
 msgctxt "Name of the \"And\" bias"
 msgid "And"
 msgstr "និង"
 
-#: dynamic/BiasFactory.cpp:75
+#: dynamic/BiasFactory.cpp:76
 msgctxt "Description of the \"And\" bias"
 msgid ""
 "The \"And\" bias adds tracks that match all\n"
 "of the sub biases."
 msgstr ""
 
-#: dynamic/BiasFactory.cpp:86
+#: dynamic/BiasFactory.cpp:87
 msgctxt "Name of the \"Or\" bias"
 msgid "Or"
 msgstr ""
 
-#: dynamic/BiasFactory.cpp:93
+#: dynamic/BiasFactory.cpp:94
 msgctxt "Description of the \"Or\" bias"
 msgid ""
 "The \"Or\" bias adds tracks that match at\n"
 "least one of the sub biases."
 msgstr ""
 
-#: dynamic/BiasFactory.cpp:182 dynamic/BiasFactory.cpp:188
+#: dynamic/BiasFactory.cpp:183 dynamic/BiasFactory.cpp:189
 #, fuzzy, kde-format
 msgid "Replacement for bias %1"
 msgstr "ការ​កំណត់"
@@ -9380,11 +9466,11 @@ msgstr "ប្លង់​បញ្ជី​ចាក់​ថ្មី"
 msgid "Rock and Pop"
 msgstr ""
 
-#: dynamic/DynamicModel.cpp:920 equalizer/EqualizerPresets.cpp:98
+#: dynamic/DynamicModel.cpp:920 equalizer/EqualizerPresets.cpp:93
 msgid "Rock"
 msgstr "Rock"
 
-#: dynamic/DynamicModel.cpp:924 equalizer/EqualizerPresets.cpp:96
+#: dynamic/DynamicModel.cpp:924 equalizer/EqualizerPresets.cpp:91
 msgid "Pop"
 msgstr "Pop"
 
@@ -9400,111 +9486,99 @@ msgctxt "Name of a dynamic playlist"
 msgid "Rating"
 msgstr "កម្រិត​គុណភាព​"
 
-#: EngineController.cpp:856
-msgid ""
-"%0\n"
-"Hz"
-msgstr ""
-
-#: EngineController.cpp:858
-msgid ""
-"%0\n"
-"kHz"
-msgstr ""
-
-#: EngineController.cpp:1219
+#: EngineController.cpp:1094
 msgid "Too many errors encountered in playlist. Playback stopped."
 msgstr "បាន​ជួប​ប្រទះ​កំហុស​​ច្រើន​ពេក​នៅ​ក្នុង​បញ្ជី​ចាក់ ។ បាន​បញ្ឈប់​ការ​ចាក់​ឡើង​វិញ ។"
 
-#: EngineController.cpp:1420
+#: EngineController.cpp:1295
 #, kde-format
 msgctxt "track by artist on album"
 msgid "<b>%1</b> by <b>%2</b> on <b>%3</b>"
 msgstr "<b>%1</b> ច្រៀង​ដោយ <b>%2</b> នៅ <b>%3</b>"
 
-#: EngineController.cpp:1422
+#: EngineController.cpp:1297
 #, kde-format
 msgctxt "track by artist"
 msgid "<b>%1</b> by <b>%2</b>"
 msgstr "<b>%1</b> ច្រៀង​ដោយ <b>%2</b>"
 
-#: EngineController.cpp:1425
+#: EngineController.cpp:1300
 #, kde-format
 msgctxt "track on album"
 msgid "<b>%1</b> on <b>%2</b>"
 msgstr "<b>%1</b> នៅ <b>%2</b>"
 
-#: EngineController.cpp:1437
+#: EngineController.cpp:1312
 #, fuzzy, kde-format
 msgctxt "track from source"
 msgid "from <b>%1</b>"
 msgstr " ដោយ <b>%1</b>"
 
-#: equalizer/EqualizerPresets.cpp:85
+#: equalizer/EqualizerPresets.cpp:80
 msgid "Manual"
 msgstr "សៀវភៅ​ដៃ"
 
-#: equalizer/EqualizerPresets.cpp:86
+#: equalizer/EqualizerPresets.cpp:81
 msgid "Classical"
 msgstr "Classical"
 
-#: equalizer/EqualizerPresets.cpp:87
+#: equalizer/EqualizerPresets.cpp:82
 msgid "Club"
 msgstr "Club"
 
-#: equalizer/EqualizerPresets.cpp:88
+#: equalizer/EqualizerPresets.cpp:83
 msgid "Dance"
 msgstr "Dance"
 
-#: equalizer/EqualizerPresets.cpp:89
+#: equalizer/EqualizerPresets.cpp:84
 msgid "Full Bass"
 msgstr "Full Bass"
 
-#: equalizer/EqualizerPresets.cpp:90
+#: equalizer/EqualizerPresets.cpp:85
 msgid "Full Treble"
 msgstr "Full Treble"
 
-#: equalizer/EqualizerPresets.cpp:91
+#: equalizer/EqualizerPresets.cpp:86
 msgid "Full Bass + Treble"
 msgstr "Full Bass + Treble"
 
-#: equalizer/EqualizerPresets.cpp:92
+#: equalizer/EqualizerPresets.cpp:87
 msgid "Laptop/Headphones"
 msgstr "Laptop/Headphones"
 
-#: equalizer/EqualizerPresets.cpp:93
+#: equalizer/EqualizerPresets.cpp:88
 msgid "Large Hall"
 msgstr "Large Hall"
 
-#: equalizer/EqualizerPresets.cpp:94
+#: equalizer/EqualizerPresets.cpp:89
 msgid "Live"
 msgstr "Live"
 
-#: equalizer/EqualizerPresets.cpp:95
+#: equalizer/EqualizerPresets.cpp:90
 msgid "Party"
 msgstr "Party"
 
-#: equalizer/EqualizerPresets.cpp:97
+#: equalizer/EqualizerPresets.cpp:92
 msgid "Reggae"
 msgstr "Reggae"
 
-#: equalizer/EqualizerPresets.cpp:99
+#: equalizer/EqualizerPresets.cpp:94
 msgid "Soft"
 msgstr "Soft"
 
-#: equalizer/EqualizerPresets.cpp:100
+#: equalizer/EqualizerPresets.cpp:95
 msgid "Ska"
 msgstr "Ska"
 
-#: equalizer/EqualizerPresets.cpp:101
+#: equalizer/EqualizerPresets.cpp:96
 msgid "Soft Rock"
 msgstr "Soft Rock"
 
-#: equalizer/EqualizerPresets.cpp:102
+#: equalizer/EqualizerPresets.cpp:97
 msgid "Techno"
 msgstr "Techno"
 
-#: equalizer/EqualizerPresets.cpp:103
+#: equalizer/EqualizerPresets.cpp:98
 msgid "Zero"
 msgstr "Zero"
 
@@ -10818,6 +10892,18 @@ msgstr "កម្រិត​សំឡេង"
 #, fuzzy, kde-format
 msgid "Reading OPML podcast from %1 failed with error:\n"
 msgstr "បា​នបរាជ័យ​ជាមួយកំហុស​ការ​ធ្វើ​ឲ្យ​ទាន់សម័យ​ផតខាស់​ពី​ %1 ៖\n"
+
+#: playback/EqualizerController.cpp:133
+msgid ""
+"%0\n"
+"Hz"
+msgstr ""
+
+#: playback/EqualizerController.cpp:135
+msgid ""
+"%0\n"
+"kHz"
+msgstr ""
 
 #: playback/PowerManager.cpp:79
 #, fuzzy
@@ -12817,22 +12903,155 @@ msgid ""
 "%2"
 msgstr "ការ​វិភាគ​រក​សម្រាំង​ត្រូវ​បាន​បោះបង់ ។ បាន​ជួបប្រទះ​កំហុស​ច្រើន​ពេក​នៅ​ពេល​វិភាគ​រក ។"
 
-#: scriptengine/AmarokNetworkScript.cpp:64
+#: scripting/scriptconsole/ScriptConsole.cpp:63
+msgid ""
+"A KDE text-editor component could not be found.\n"
+"Please check your KDE installation.  Exiting the console!"
+msgstr ""
+
+#: scripting/scriptconsole/ScriptConsole.cpp:79
+msgid "Console"
+msgstr ""
+
+#: scripting/scriptconsole/ScriptConsole.cpp:80
+msgid "Error"
+msgstr ""
+
+#: scripting/scriptconsole/ScriptConsole.cpp:81
+msgid "Debug Output"
+msgstr ""
+
+#: scripting/scriptconsole/ScriptConsole.cpp:82
+#, fuzzy
+#| msgid "Manage Scripts"
+msgid "Loaded Scripts"
+msgstr "គ្រប់គ្រង​ស្គ្រីប​"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:83
+msgid "Breakpoints"
+msgstr ""
+
+#: scripting/scriptconsole/ScriptConsole.cpp:84
+msgid "Stack"
+msgstr ""
+
+#: scripting/scriptconsole/ScriptConsole.cpp:85
+#, fuzzy
+msgid "Locals"
+msgstr " ​តន្ត្រី​មូល​ដ្ឋាន"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:104
+#, fuzzy
+#| msgid "Search Scripts"
+msgid "Execute Script"
+msgstr "ស្វែងរក​​ស្គ្រីប"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:108
+#, fuzzy
+#| msgid "Scripts"
+msgid "&New Script"
+msgstr "ស្គ្រីប"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:112
+#, fuzzy
+#| msgid "&Delete bias"
+msgid "&Delete Script"
+msgstr "លុប​ភាព​លម្អៀង"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:115
+#, fuzzy
+#| msgid "Search Scripts"
+msgid "&Clear All Scripts"
+msgstr "ស្វែងរក​​ស្គ្រីប"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:118
+#, fuzzy
+#| msgid "Previous Track"
+msgid "Previous Script"
+msgstr "បទ​មុន"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:122
+#, fuzzy
+#| msgid "Scripts"
+msgid "Next Script"
+msgstr "ស្គ្រីប"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:130
+#, fuzzy
+msgid "&View"
+msgstr "ទិដ្ឋភាព"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:185
+#, kde-format
+msgid ""
+"Syntax error at line %1, continue anyway?\n"
+"Error: %2"
+msgstr ""
+
+#: scripting/scriptconsole/ScriptConsole.cpp:187
+#, fuzzy
+msgid "Syntax Error"
+msgstr "កំហុស​មូលដ្ឋាន​ទិន្នន័យ"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:213
+msgid "This will stop this script! Continue?"
+msgstr ""
+
+#: scripting/scriptconsole/ScriptConsole.cpp:225
+msgid "Choose where to save your scripts"
+msgstr ""
+
+#: scripting/scriptconsole/ScriptConsole.cpp:370
+#, fuzzy
+#| msgid "Remove empty folders?"
+msgid "Remove script file from disk?"
+msgstr "យក​ថត​ទទេ​ចេញ​ឬ ?"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:370
+#, fuzzy
+#| msgid "&Remove Subscription"
+msgid "Remove Script"
+msgstr "យក​ការ​ជាវ​ចេញ"
+
+#: scripting/scriptconsole/ScriptConsole.cpp:400
+msgid "Are you absolutely certain?"
+msgstr ""
+
+#: scripting/scriptengine/AmarokNetworkScript.cpp:57
 msgctxt "do not translate 'DataDownloader' or 'qt.core'"
 msgid "qt.core must be loaded to use DataDownloader"
 msgstr "qt.core ត្រូវតែ​បាន​ផ្ទុក​ដើម្បី​ប្រើ​កម្មវិធីទាញយក​ទិន្នន័យ"
 
-#: ScriptManager.cpp:82
+#: scripting/scriptmanager/ScriptItem.cpp:90
+msgid "Terminate"
+msgstr ""
+
+#: scripting/scriptmanager/ScriptItem.cpp:175
+#, kde-format
+msgid "Script %1 has been evaluating for over 5 seconds now, terminate?"
+msgstr ""
+
+#: scripting/scriptmanager/ScriptItem.cpp:317
+#, kde-format
+msgctxt ""
+"%1 is the name of the offending script, %2 the name of the script author, "
+"and %3 the author's email"
+msgid ""
+"The script %1 uses deprecated scripting API calls. Please contact the script "
+"author, %2 at %3, and ask him to upgrade it before the next Amarok release."
+msgstr ""
+
+#: scripting/scriptmanager/ScriptManager.cpp:62
 msgid ""
 "Scripts have been disabled since you are missing the QtScriptQtBindings "
 "package. Please install the package and restart Amarok for scripts to work."
 msgstr ""
 
-#: ScriptManager.cpp:84
+#: scripting/scriptmanager/ScriptManager.cpp:64
 msgid "Scripts Disabled!"
 msgstr ""
 
-#: ScriptManager.cpp:339
+#: scripting/scriptmanager/ScriptManager.cpp:277
 #, kde-format
 msgid ""
 "Script error reported by: %1\n"
@@ -15792,6 +16011,19 @@ msgstr "សម្អាត"
 msgid "Volume: %1%"
 msgstr "កម្រិត​សំឡេង ៖ %1% %2"
 
+#~ msgid ""
+#~ "<p>Script successfully installed.</p><p>Please restart Amarok to start "
+#~ "the script.</p>"
+#~ msgstr ""
+#~ "<p>បាន​ដំឡើង​ស្គ្រីប​ដោយ​ជោគជ័យ ។</p><p>សូម​ចាប់ផ្ដើម​ Amarok ឡើង​វិញ​ដើម្បី​ចាប់ផ្ដើម​ស្គ្រីប ។</p>"
+
+#~ msgid ""
+#~ "<p>Script successfully uninstalled.</p><p>Please restart Amarok to "
+#~ "totally remove the script.</p>"
+#~ msgstr ""
+#~ "<p>បានលុប​ស្គ្រីប​ដោយ​ជោគជ័យ ។</p><p>សូម​ចាប់ផ្ដើម​ Amarok ឡើង​វិញ ដើម្បី​យក​ស្គ្រីប​ចេញ​ទាំងស្រុង ។"
+#~ "</p>"
+
 #, fuzzy
 #~| msgid "Configure Phonon"
 #~ msgid "Perform Synchronization..."
@@ -16057,9 +16289,6 @@ msgstr "កម្រិត​សំឡេង ៖ %1% %2"
 #~ msgid "Fadeout &duration:"
 #~ msgstr "ថិរវេលា​លេចបន្តិចម្ដង ៖"
 
-#~ msgid "Whether to animate the systray icon"
-#~ msgstr "ថា​តើ​ត្រូវ​ធ្វើ​ឲ្យ​រូបតំណាង​នៅ​ក្នុង​ថាស​ប្រព័ន្ធ​​មាន​ចលនា​ឬអត់"
-
 #~ msgid "Enable/Disable tray icon animation."
 #~ msgstr "បើក/បិទ​ចលនា​របស់​រូបតំណាង​នៅ​ក្នុង​ថាស​ប្រព័ន្ធ ។"
 
@@ -16315,9 +16544,6 @@ msgstr "កម្រិត​សំឡេង ៖ %1% %2"
 
 #~ msgid "print() takes one argument"
 #~ msgstr "print() ត្រូវកា​រអាគុយម៉ង់​មួយ"
-
-#~ msgid "Invalid encoder"
-#~ msgstr "អ៊ិនកូឌ័រ​មិន​ត្រឹមត្រូវ"
 
 #~ msgctxt "%1 example: 'MP3' %2 example: 'VBR 175kb/s'"
 #~ msgid "%1, %2"
@@ -16834,9 +17060,6 @@ msgstr "កម្រិត​សំឡេង ៖ %1% %2"
 #~ "<p>Phonon ត្រូវការ​​វា <b>មិន​អាច</b> ចាក់​ឯកសារ MP3​ បាន​ទេ ។ អ្នក​ចង់​ពិនិត្យ​ការ​ដំឡើង​របស់​"
 #~ "កម្មវិធី​ផ្នែក​ខាង​ក្រោយ​ដែល​ phonon ប្រើ ។</p><p>អ្នក​អាច​រក​ព័ត៌មាន​ដែល​មាន​ប្រយោជន៍​នៅ​ក្នុង​ផ្នែក "
 #~ "<i>FAQ</i> របស់<i>សៀវភៅ​ដៃ Amarok​</i> ។</p>"
-
-#~ msgid "Install MP3 Support"
-#~ msgstr "ដំឡើង​ការ​គាំទ្រ MP3"
 
 #~ msgid ""
 #~ "Amarok currently cannot play MP3 files. Do you want to install support "
