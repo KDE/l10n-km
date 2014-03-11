@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcm_infobase\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-01-08 01:37+0000\n"
+"POT-Creation-Date: 2014-03-11 01:51+0000\n"
 "PO-Revision-Date: 2010-06-22 12:02+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "X-Generator: WordForge 0.6 RC1\n"
 "X-Language: km-KH\n"
 
-#: info_aix.cpp:68
+#: info_aix.cpp:68 info_wayland.cpp:125
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -71,15 +71,15 @@ msgstr "ប្រព័ន្ធដំណើរការ PA-RISC"
 msgid "PA-RISC Revision"
 msgstr "ការ​ពិនិត្យ​ PA-RISC ឡើងវិញ"
 
-#: info_linux.cpp:103
+#: info_linux.cpp:107
 msgid "DMA-Channel"
 msgstr "ឆានែល DMA"
 
-#: info_linux.cpp:103 info_linux.cpp:154
+#: info_linux.cpp:107 info_linux.cpp:158
 msgid "Used By"
 msgstr "បានប្រើ​ដោយ"
 
-#: info_linux.cpp:154
+#: info_linux.cpp:158
 msgid "I/O-Range"
 msgstr "ជួរ​ចេញ/ចូល"
 
@@ -102,6 +102,114 @@ msgstr "រកមិនឃើញ​ឧបករណ៍​ច្រក​ចេញ
 #: info_netbsd.cpp:157 info_openbsd.cpp:164
 msgid "No SCSI devices found."
 msgstr "រក​មិនឃើញ​ឧបករណ៍ SCSI នោះ​ទេ ។"
+
+#: info_wayland.cpp:38
+msgid "Output"
+msgstr ""
+
+#: info_wayland.cpp:39
+msgid "Manufacturer"
+msgstr "ក្រុមហ៊ុន​ផលិត"
+
+#: info_wayland.cpp:40
+msgid "Model"
+msgstr "ម៉ូដែល"
+
+#: info_wayland.cpp:41
+#, fuzzy
+#| msgid "Physical Path:"
+msgid "Physical Width"
+msgstr "ផ្លូវ​ហ្វីស៊ីខល ៖"
+
+#: info_wayland.cpp:42
+#, fuzzy
+#| msgid "Physical Path:"
+msgid "Physical Height"
+msgstr "ផ្លូវ​ហ្វីស៊ីខល ៖"
+
+#: info_wayland.cpp:43
+msgid "X"
+msgstr ""
+
+#: info_wayland.cpp:44
+msgid "Y"
+msgstr ""
+
+#: info_wayland.cpp:45
+msgid "Subpixel"
+msgstr ""
+
+#: info_wayland.cpp:49
+msgid "Normal"
+msgstr ""
+
+#: info_wayland.cpp:61
+msgid "Flipped"
+msgstr ""
+
+#: info_wayland.cpp:64
+msgid "Flipped 90"
+msgstr ""
+
+#: info_wayland.cpp:67
+msgid "Flipped 180"
+msgstr ""
+
+#: info_wayland.cpp:70
+msgid "Flipped 270"
+msgstr ""
+
+#: info_wayland.cpp:73
+msgid "Transform"
+msgstr ""
+
+#: info_wayland.cpp:111
+msgid "Pointer"
+msgstr ""
+
+#: info_wayland.cpp:114
+msgid "Keyboard"
+msgstr ""
+
+#: info_wayland.cpp:117
+msgid "Touch"
+msgstr ""
+
+#: info_wayland.cpp:141
+#, fuzzy
+#| msgid "Output Channels"
+msgid "Outputs"
+msgstr "ឆានែល​លទ្ធផល"
+
+#: info_wayland.cpp:147
+msgid "Seat"
+msgstr ""
+
+#: info_wayland.cpp:197 os_base.h:230
+msgid "Information"
+msgstr "ព័ត៌មាន"
+
+#: info_wayland.cpp:197 os_base.h:230
+msgid "Value"
+msgstr "តម្លៃ"
+
+#: info_wayland.cpp:200
+#, fuzzy
+#| msgid "Information"
+msgid "Compositor Information"
+msgstr "ព័ត៌មាន"
+
+#: info_wayland.cpp:204 os_base.h:241
+msgid "Name of the Display"
+msgstr "ឈ្មោះ​ការ​បង្ហាញ"
+
+#: info_wayland.cpp:206
+msgid "Interfaces"
+msgstr ""
+
+#: info_wayland.cpp:206
+msgid "Interface Version"
+msgstr ""
 
 #: os_base.h:61
 msgid "LSBFirst"
@@ -240,21 +348,9 @@ msgstr "របាំង​ព្រឹត្តិការណ៍​បញ្ច
 msgid "Event = %1"
 msgstr "ព្រឹត្តិការណ៍ = %1"
 
-#: os_base.h:230
-msgid "Information"
-msgstr "ព័ត៌មាន"
-
-#: os_base.h:230
-msgid "Value"
-msgstr "តម្លៃ"
-
 #: os_base.h:235
 msgid "Server Information"
 msgstr "ព័ត៌មាន​ម៉ាស៊ីន​បម្រើ"
-
-#: os_base.h:241
-msgid "Name of the Display"
-msgstr "ឈ្មោះ​ការ​បង្ហាញ"
 
 #: os_base.h:245
 msgid "Vendor String"
@@ -318,8 +414,8 @@ msgstr "វិសាលភាព"
 msgid "Image Byte Order"
 msgstr "លំដាប់បៃ​រូបភាព"
 
-#: os_current.h:58 os_current.h:68 os_current.h:90 os_current.h:100
-#: os_current.h:110 os_current.h:121 os_current.h:131 os_current.h:141
+#: os_current.h:60 os_current.h:70 os_current.h:92 os_current.h:102
+#: os_current.h:112 os_current.h:123 os_current.h:133 os_current.h:143
 msgid "This system may not be completely supported yet."
 msgstr "ប្រព័ន្ធ​ប្រហែលជា​មិន​ត្រូវបានគាំទ្រ​ទាំងស្រុង​នៅ​ឡើយ​ទេ ។"
 
@@ -367,9 +463,6 @@ msgstr "ប្រព័ន្ធ​ប្រហែលជា​មិន​ត្
 
 #~ msgid "Machine"
 #~ msgstr "ម៉ាស៊ីន"
-
-#~ msgid "Model"
-#~ msgstr "ម៉ូដែល"
 
 #~ msgid "Machine Identification Number"
 #~ msgstr "លេខ​​អត្តសញ្ញាណ​ម៉ាស៊ីន"
@@ -519,9 +612,6 @@ msgstr "ប្រព័ន្ធ​ប្រហែលជា​មិន​ត្
 #~ msgid "Right-Jack"
 #~ msgstr "Jack ស្ដាំ"
 
-#~ msgid "Output Channels"
-#~ msgstr "ឆានែល​លទ្ធផល"
-
 #~ msgid "Gain"
 #~ msgstr "ទទួល"
 
@@ -585,9 +675,6 @@ msgstr "ប្រព័ន្ធ​ប្រហែលជា​មិន​ត្
 #~ msgid "Device Name"
 #~ msgstr "ឈ្មោះ​ឧបករណ៍"
 
-#~ msgid "Manufacturer"
-#~ msgstr "ក្រុមហ៊ុន​ផលិត"
-
 #~ msgid "Instance"
 #~ msgstr "ធាតុ"
 
@@ -633,9 +720,6 @@ msgstr "ប្រព័ន្ធ​ប្រហែលជា​មិន​ត្
 
 #~ msgid "Compatible Names:"
 #~ msgstr "ឈ្មោះ​ដែល​អាច​ឆប​គ្នា ៖"
-
-#~ msgid "Physical Path:"
-#~ msgstr "ផ្លូវ​ហ្វីស៊ីខល ៖"
 
 #~ msgid "Properties"
 #~ msgstr "លក្ខណសម្បត្តិ"
