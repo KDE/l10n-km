@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-04-04 02:04+0000\n"
+"POT-Creation-Date: 2014-04-09 01:51+0000\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -441,7 +441,7 @@ msgid ""
 msgstr ""
 "<qt><p>កំហុស​បាន​កើតឡើង ខណៈ​ដែល​កំពុង​ព្យាយាម​លុប​វិញ្ញាបនបត្រ ៖</p><p><b>%1</b></p></qt>"
 
-#: commands/dumpcertificatecommand.cpp:90 commands/dumpcrlcachecommand.cpp:87
+#: commands/dumpcertificatecommand.cpp:90 commands/dumpcrlcachecommand.cpp:108
 msgctxt "@action:button Update the log text widget"
 msgid "&Update"
 msgstr "ធ្វើ​ប​ច្ចុប្បន្នភាព​"
@@ -451,7 +451,7 @@ msgid "Certificate Dump"
 msgstr "បោះវិញ្ញាបនបត្រ​ចោល"
 
 #: commands/dumpcertificatecommand.cpp:285
-#: commands/dumpcrlcachecommand.cpp:247
+#: commands/dumpcrlcachecommand.cpp:268
 msgid "Unable to start process gpgsm. Please check your installation."
 msgstr "មិនអាច​ចាប់ផ្ដើម​ដំណើរការ gpgsm ។ សូម​ពិនិត្យ​មើល​ការ​ដំឡើង​របស់​អ្នក ។"
 
@@ -481,16 +481,16 @@ msgstr ""
 "កំហុស​មួយ​បាន​កើតឡើង​ខណៈ​ពេល​ព្យាយាម​បោះចោល​វិញ្ញាបនបត្រ ។ លទ្ធផល​បាន​មក​ពី GpgSM គឺ ៖\n"
 "%1"
 
-#: commands/dumpcrlcachecommand.cpp:227
+#: commands/dumpcrlcachecommand.cpp:248
 msgid "CRL Cache Dump"
 msgstr "ការ​បោះបង់​ឃ្លាំង​សម្ងាត់ CRL ចោល"
 
-#: commands/dumpcrlcachecommand.cpp:249 commands/dumpcrlcachecommand.cpp:272
-#: commands/dumpcrlcachecommand.cpp:277
+#: commands/dumpcrlcachecommand.cpp:270 commands/dumpcrlcachecommand.cpp:293
+#: commands/dumpcrlcachecommand.cpp:298
 msgid "Dump CRL Cache Error"
 msgstr "កំហុស​នៃ​ការ​បោះបង់​ឃ្លាំង​សម្ងាត់ CRL ចោល"
 
-#: commands/dumpcrlcachecommand.cpp:269
+#: commands/dumpcrlcachecommand.cpp:290
 msgid ""
 "The GpgSM process that tried to dump the CRL cache ended prematurely because "
 "of an unexpected error. Please check the output of gpgsm --call-dirmngr "
@@ -499,7 +499,7 @@ msgstr ""
 "ដំណើរការ GpgSM ដែល​ព្យាយាម​បោះបង់​ឃ្លាំង​សម្ងាត់ CRL ចោល គឺ​បាន​បញ្ចប់មុន​ពេល ព្រោះ​មាន​កំហុស​ដោយ​មិន​"
 "រំពឹងទុក ។ ចំពោះ​ព័ត៌មាន​លម្អិត សូម​ពិនិត្យមើល​លទ្ធផល gpgsm --call-dirmngr listcrls ។"
 
-#: commands/dumpcrlcachecommand.cpp:275
+#: commands/dumpcrlcachecommand.cpp:296
 #, kde-format
 msgid ""
 "An error occurred while trying to dump the CRL cache. The output from GpgSM "
@@ -3303,11 +3303,11 @@ msgctxt "arg is name, email of certificate holder"
 msgid "Certify Certificate: %1"
 msgstr "បញ្ជាក់​វិញ្ញាបនបត្រ​ ៖ %1"
 
-#: dialogs/deletecertificatesdialog.cpp:94
+#: dialogs/deletecertificatesdialog.cpp:112
 msgid "These are the certificates you have selected for deletion:"
 msgstr "ទាំងនេះ ជា​វិញ្ញាបនបត្រ​ដែល​អ្នក​បាន​ជ្រើស​ដើម្បី​លុប ៖"
 
-#: dialogs/deletecertificatesdialog.cpp:96
+#: dialogs/deletecertificatesdialog.cpp:114
 msgid ""
 "These certificates will be deleted even though you did <emphasis>not</"
 "emphasis><nl/> explicitly select them (<a href=\"whatsthis://\">Why?</a>):"
@@ -3315,7 +3315,7 @@ msgstr ""
 "វិញ្ញាបនបត្រ​ទាំងនេះ នឹង​ត្រូវ​បាន​លុប ទោះបី​ជា​អ្នក <emphasis>មិន​</emphasis><nl/> ជ្រើស​ពួកវា​"
 "ក៏ដោយ  (<a href=\"whatsthis://\">ហេតុអ្វី ?</a>) ៖"
 
-#: dialogs/deletecertificatesdialog.cpp:117
+#: dialogs/deletecertificatesdialog.cpp:135
 msgctxt "@info:whatsthis"
 msgid ""
 "<title>Why do you want to delete more certificates than I selected?</"
@@ -3334,12 +3334,12 @@ msgstr ""
 "ប្រសិន​បើ​អ្នក​លុប​វិញ្ញាបនបត្រ​ដែល​មាន​កូនចៅ កូនចៅ​ទាំង​នោះ​ក៏​នឹង​ត្រូវ​បាន​លុប​ដែរ ។ គិត​អំពី​​វិញ្ញាបនបត្រ CA ជា​"
 "ថត ដែល​មាន​វិញ្ញាបនបត្រ​ផ្សេងទៀត ៖ នៅ​ពេល​ដែល​អ្នក​លុប​ថត អ្នក​ក៏​លុប​មាតិកា​របស់​វា​ដែរ ។</para>"
 
-#: dialogs/deletecertificatesdialog.cpp:129
+#: dialogs/deletecertificatesdialog.cpp:147
 msgctxt "@action:button"
 msgid "Delete"
 msgstr "លុប"
 
-#: dialogs/deletecertificatesdialog.cpp:189
+#: dialogs/deletecertificatesdialog.cpp:210
 msgid ""
 "The certificate to be deleted is your own. It contains private key material, "
 "which is needed to decrypt past communication encrypted to the certificate, "
@@ -3352,7 +3352,7 @@ msgstr[0] ""
 "វិញ្ញាបនបត្រ​ទាំងអស់​ដែល​ត្រូវ​លុប គឺ​ជា​កម្មសិទ្ធិ​របស់​អ្នក ។ ពួកវា​មាន​សោ​ឯកជន ដែល​ត្រូវការ​ដើម្បី​"
 "ឌិគ្រីបទំនាក់ទំនង​ពី​មុន ដែលបាន​អ៊ិនគ្រីប​ទៅ​ជា​វិញ្ញាបនបត្រ ដូច្នេះ​ហើយ មិនអាច​លុបវា​បានទេ ។"
 
-#: dialogs/deletecertificatesdialog.cpp:203
+#: dialogs/deletecertificatesdialog.cpp:224
 msgid ""
 "One of the certificates to be deleted is your own. It contains private key "
 "material, which is needed to decrypt past communication encrypted to the "
@@ -3365,7 +3365,7 @@ msgstr[0] ""
 "វិញ្ញាបនបត្រ​ដែល​ត្រូវ​លុប​ទាំងអស់ គឺ​ជា​កម្មសិទ្ធិ​របស់​អ្នក ។ ពួកវា​មាន​សោ​ឯកជន ដែល​ត្រូវការ​ដើម្បី​"
 "ឌិគ្រីបទំនាក់ទំនង​ពី​មុន ដែលបាន​អ៊ិនគ្រីប​ទៅ​ជា​វិញ្ញាបនបត្រ ដូច្នេះ​ហើយ មិនអាច​លុបវា​បានទេ ។"
 
-#: dialogs/deletecertificatesdialog.cpp:218
+#: dialogs/deletecertificatesdialog.cpp:239
 msgid "Secret Key Deletion"
 msgstr "ការ​លុប​សោ​សម្ងាត់​​"
 
