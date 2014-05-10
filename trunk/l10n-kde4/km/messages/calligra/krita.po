@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-09 08:42+0000\n"
+"POT-Creation-Date: 2014-05-10 01:33+0000\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -96,7 +96,9 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: crashreporter/wdg_crash_reporter.ui:49
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:100
 msgid "Email:"
 msgstr ""
 
@@ -3559,7 +3561,9 @@ msgstr "បន្ថែម​ពណ៌​ថ្មី​..."
 msgid "Patterns"
 msgstr "លំនាំ"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
 #: plugins/extensions/dockers/presetdocker/presetdocker_dock.cpp:37
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:56
 #, fuzzy
 #| msgid "Brush size"
 msgid "Brush Presets"
@@ -4082,7 +4086,9 @@ msgstr "ចំណង​ជើង ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, description)
 #: plugins/extensions/metadataeditor/editors/dublincore.ui:99
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:87
 #: ui/forms/wdgmetadatamergestrategychooser.ui:49
 msgid "Description:"
 msgstr "ពិពណ៌នា ៖"
@@ -9174,46 +9180,13 @@ msgstr "ការ​ផ្ទួន"
 msgid "Gravity:"
 msgstr "ភាព​ធ្ងន់​"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, KoBundleCreationWidget)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:20
-msgid "New Bundle..."
+#: plugins/paintops/resourcemanager/KoDlgCreateBundle.cpp:82
+msgid "The resource bundle name cannot be empty."
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, bundleName)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:29
-#, fuzzy
-#| msgid "Insert name"
-msgid "Bundle Name "
-msgstr "បញ្ចូល​ឈ្មោះ"
-
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#. i18n: ectx: property (text), widget (QLabel, author)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:39
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:727
-#: ui/dialogs/kis_dlg_preferences.cc:701
-msgid "Author"
+#: plugins/paintops/resourcemanager/KoDlgCreateBundle.cpp:92
+msgid "A bundle with this name already exists."
 msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_5)
-#. i18n: ectx: property (text), widget (QLabel, website)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:59
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:656
-msgid "Website"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, label_4)
-#. i18n: ectx: property (text), widget (QLabel, license)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:73
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:703
-msgid "License"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QLabel, description)
-#: plugins/paintops/resourcemanager/KoBundleCreationWidget.ui:87
-#, fuzzy
-#| msgid "Description:"
-msgid "Description"
-msgstr "ពិពណ៌នា ៖"
 
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.cpp:45
 #, fuzzy
@@ -9260,13 +9233,6 @@ msgstr "ជក់"
 #: ui/kis_control_frame.cpp:88 ui/kis_control_frame.cpp:188
 msgid "Gradients"
 msgstr "ជម្រាល​"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
-#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:56
-#, fuzzy
-#| msgid "Edit Presets"
-msgid "Pt. Presets"
-msgstr "កែសម្រួលការ​​កំណត់​ជាមុន"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbRemoveWorkspaces)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbResourceType)
@@ -9363,12 +9329,22 @@ msgstr "នាំ​ចូល​រូបភាព"
 msgid "Export"
 msgstr "កា​របង្ហាញ"
 
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:656
+msgid "Website"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:696
 #, fuzzy
 #| msgid "Create"
 msgid "Created"
 msgstr "បង្កើត"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:703
+msgid "License"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_7)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:713
@@ -9380,6 +9356,12 @@ msgstr "ធ្វើ​បច្ចុប្បន្នភាព"
 #. i18n: ectx: property (text), widget (QLabel, label_8)
 #: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:720
 msgid "Tags"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: plugins/paintops/resourcemanager/KoResourceManagerWidget.ui:727
+#: ui/dialogs/kis_dlg_preferences.cc:701
+msgid "Author"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLineEdit, txtWebsite)
@@ -9404,6 +9386,40 @@ msgstr "យក​ជក់​ចេញ"
 #| msgid "&Resources"
 msgid "Resource Manager..."
 msgstr "ធនធាន"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgDlgCreateBundle)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:20
+msgid "New Bundle..."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, bundleName)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:29
+#, fuzzy
+#| msgid "Insert name"
+msgid "Bundle Name:"
+msgstr "បញ្ចូល​ឈ្មោះ"
+
+#. i18n: ectx: property (text), widget (QLabel, author)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:39
+#, fuzzy
+#| msgid "Anchor"
+msgid "Author:"
+msgstr "យុថ្កា"
+
+#. i18n: ectx: property (text), widget (QLabel, website)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:59
+msgid "Website:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLineEdit, editWebsite)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:66
+msgid "http://"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, license)
+#: plugins/paintops/resourcemanager/wdg_dlgcreatebundle.ui:73
+msgid "License:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, densityRadioButton)
 #. i18n: ectx: property (text), widget (QLabel, label_3)
@@ -13984,6 +14000,16 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "បិទ"
+
+#, fuzzy
+#~| msgid "Description:"
+#~ msgid "Description"
+#~ msgstr "ពិពណ៌នា ៖"
+
+#, fuzzy
+#~| msgid "Edit Presets"
+#~ msgid "Pt. Presets"
+#~ msgstr "កែសម្រួលការ​​កំណត់​ជាមុន"
 
 #, fuzzy
 #~| msgid "&OK"
