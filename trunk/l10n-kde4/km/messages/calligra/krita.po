@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-19 01:27+0000\n"
+"POT-Creation-Date: 2014-05-20 01:29+0000\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1404,11 +1404,6 @@ msgstr "ស្រទាប់​គូរ"
 
 #: image/brushengine/kis_paintop_factory.cpp:66
 msgctxt "Category of brush engines"
-msgid "Experimental"
-msgstr "ពិសោធន៍​"
-
-#: image/brushengine/kis_paintop_factory.cpp:71
-msgctxt "Category of brush engines"
 msgid "Stable"
 msgstr "មាន​លំនឹង​"
 
@@ -1577,7 +1572,7 @@ msgid "Generator"
 msgstr "កម្មវិធី​បង្កើត"
 
 #. i18n: ectx: property (text), widget (QLabel, label_10)
-#: image/kis_adjustment_layer.cc:127
+#: image/kis_adjustment_layer.cc:127 plugins/paintops/filterop/filterop.cpp:45
 #: plugins/paintops/libpaintop/kis_filter_option.cpp:50
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:844
 #: ui/dialogs/kis_dlg_filter.cpp:105
@@ -1596,14 +1591,19 @@ msgstr ""
 msgid "Default"
 msgstr "លំនាំដើម"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
+#. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
 #: image/kis_base_mask_generator.h:33
-msgid "Soft brush"
-msgstr "ជក់​ទន់"
+#: plugins/extensions/metadataeditor/editors/exif.ui:860
+#: plugins/extensions/metadataeditor/editors/exif.ui:892
+#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:31
+msgid "Soft"
+msgstr "ស្រទន់​"
 
 #: image/kis_base_mask_generator.h:34
 #, fuzzy
 #| msgid "Gaussian Blur"
-msgid "Gaussian brush"
+msgid "Gaussian"
 msgstr "ព្រិល​ហ្គូសៀន"
 
 #: image/kis_base_node.cpp:141 ui/kis_node_model.cpp:420
@@ -2705,6 +2705,7 @@ msgstr "ប្រភេទ"
 
 #. i18n: ectx: property (text), widget (QRadioButton, shadeSelectorTypeMyPaint)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:234
+#: plugins/paintops/mypaint/mypaint_paintop_factory.h:55
 msgid "MyPaint"
 msgstr "ជក់​ MyPaint"
 
@@ -3646,7 +3647,7 @@ msgstr "ឈ្មោះ​របាំង ៖"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, brushNameLbl)
 #: plugins/extensions/dockers/tasksetdocker/tasksetdocker_dock.cpp:188
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:31
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:22
 #: ui/forms/wdgfilternodecreation.ui:17 ui/forms/wdgflipbookselector.ui:28
 #: ui/forms/wdgpaintopsettings.ui:93
 msgid "Name:"
@@ -4161,6 +4162,7 @@ msgstr "របៀប​បង្ហាញ ៖"
 #: plugins/extensions/metadataeditor/editors/exif.ui:101
 #: plugins/extensions/metadataeditor/editors/exif.ui:919
 #: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:88
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:58
 msgid "Auto"
 msgstr "យ​ស្វ័យប្រវត្តិ"
 
@@ -4587,14 +4589,6 @@ msgstr "ធម្មតា"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
 #. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
-#: plugins/extensions/metadataeditor/editors/exif.ui:860
-#: plugins/extensions/metadataeditor/editors/exif.ui:892
-#: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:31
-msgid "Soft"
-msgstr "ស្រទន់​"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, editSharpness)
-#. i18n: ectx: property (text), item, widget (QComboBox, editContrast)
 #: plugins/extensions/metadataeditor/editors/exif.ui:865
 #: plugins/extensions/metadataeditor/editors/exif.ui:897
 #: plugins/paintops/libpaintop/kis_pressure_softness_option.cpp:32
@@ -4614,6 +4608,8 @@ msgstr "តុល្យភាពពណ៌ស ៖"
 #. i18n: ectx: property (text), item, widget (QComboBox, editWhiteBalance)
 #. i18n: ectx: property (text), widget (QRadioButton, customRadioButton)
 #: plugins/extensions/metadataeditor/editors/exif.ui:924
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1037
 msgid "Custom"
 msgstr "ផ្ទាល់ខ្លួន"
@@ -6856,7 +6852,9 @@ msgid "Color"
 msgstr "ពណ៌"
 
 #: plugins/paintops/chalk/chalk_paintop_plugin.cpp:43
-msgid "Chalk brush"
+#, fuzzy
+#| msgid "Chalk brush"
+msgid "Chalk"
 msgstr "ជក់​ដីស"
 
 #. i18n: ectx: attribute (title), widget (QWidget, inkTab)
@@ -6878,7 +6876,9 @@ msgid "Saturation decrease"
 msgstr "ការថយ​តិត្ថិភាព​"
 
 #: plugins/paintops/colorsmudge/colorsmudge_paintop_plugin.cpp:44
-msgid "Color Smudge Brush"
+#, fuzzy
+#| msgid "Color Smudge Brush"
+msgid "Color Smudge"
 msgstr "ជក់​​ស្នាម​ប្រឡាក់​ពណ៌"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
@@ -6947,8 +6947,10 @@ msgid "Smudge mode:"
 msgstr "អត្រា​ស្នាម​​ប្រឡាក់"
 
 #: plugins/paintops/curvebrush/curve_paintop_plugin.cpp:43
-msgid "Curve brush"
-msgstr "ជក់​ខ្សែកោង"
+#, fuzzy
+#| msgid "Curved"
+msgid "Curve"
+msgstr "ពត់​ឲ្យកោង"
 
 #. i18n: ectx: property (text), item, widget (KComboBox, selectMainStyle)
 #. i18n: ectx: property (text), item, widget (KComboBox, selectSubdivisionStyle)
@@ -7019,14 +7021,19 @@ msgstr "ការ​តភ្ជាប់​គំនូរ​"
 msgid "Smoothing"
 msgstr "រលោង"
 
+#. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
+#. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
 #: plugins/paintops/defaultpaintops/defaultpaintops_plugin.cc:47
-msgid "Pixel Brush"
-msgstr "ជក់​ភីកសែល"
+#: plugins/paintops/experiment/wdgshapeoptions.ui:75
+#: plugins/paintops/gridbrush/wdgshapeoptions.ui:51
+#: plugins/paintops/spray/wdgshapeoptions.ui:75
+msgid "Pixel"
+msgstr "វើ​ភីកសែល"
 
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_factory.h:50
-msgctxt "duplicate paintbrush"
-msgid "Duplicate"
-msgstr "ច្បាប់​ចម្លង"
+msgctxt "clone paintbrush (previously \"Duplicate\")"
+msgid "Clone"
+msgstr ""
 
 #: plugins/paintops/defaultpaintops/duplicate/kis_duplicateop_option.cpp:45
 #: plugins/paintops/libpaintop/kis_paint_action_type_option.cpp:37
@@ -7053,8 +7060,10 @@ msgid "Deform Options"
 msgstr "ជម្រើសបង្ខូច​ទ្រង់​ទ្រាយ​"
 
 #: plugins/paintops/deform/kis_deform_paintop_factory.h:45
-msgid "Deform brush"
-msgstr "ជក់​​បង្ខូច​ទ្រង់ទ្រាយ"
+#, fuzzy
+#| msgid "Deform Mode"
+msgid "Deform"
+msgstr "របៀប​បង្ខូច​ទ្រង់ទ្រាយ"
 
 #. i18n: ectx: property (text), widget (QLabel, deformLabel)
 #: plugins/paintops/deform/wdgdeformoptions.ui:35
@@ -7126,8 +7135,10 @@ msgid "Use undeformed image"
 msgstr "ប្រើ​រូបភាព​ដែល​មិន​បាន​បង្ខូច​ទ្រង់ទ្រាយ"
 
 #: plugins/paintops/dynadraw/dyna_paintop_plugin.cpp:41
-msgid "Dyna brush"
-msgstr "ជក់ Dyna"
+#, fuzzy
+#| msgid "Dyna"
+msgid "Dyna"
+msgstr "Dyna"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:51
@@ -7161,6 +7172,7 @@ msgstr "ជួរ​ទទឹង ៖​"
 #. i18n: ectx: attribute (title), widget (QWidget, ShapeTab)
 #. i18n: ectx: property (title), widget (QGroupBox, shapeGroup)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:160
+#: plugins/paintops/experiment/experiment_paintop_plugin.cpp:45
 #: plugins/paintops/hairy/wdghairyeoptions.ui:43
 #: plugins/paintops/hairy/wdgshapeoptions.ui:84
 msgid "Shape"
@@ -7211,10 +7223,6 @@ msgstr "អង្កត់​ផ្ចិត ៖"
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:296
 msgid "Fixed angle"
 msgstr "មុំ​ថេរ"
-
-#: plugins/paintops/experiment/experiment_paintop_plugin.cpp:42
-msgid "Experiment brush"
-msgstr "ជក់​ពិសោធន៍"
 
 #: plugins/paintops/experiment/kis_experiment_shape_option.cpp:36
 #: plugins/paintops/gridbrush/kis_grid_shape_option.cpp:33
@@ -7277,14 +7285,6 @@ msgstr "មិន​ស្រទន់"
 msgid "Anti-aliased pixel"
 msgstr "ប្រឆាំងភាព​​​រឆេត​រឆូត​ភីកសែល"
 
-#. i18n: ectx: property (text), item, widget (QComboBox, shapeBox)
-#. i18n: ectx: property (text), item, widget (QComboBox, shapeCBox)
-#: plugins/paintops/experiment/wdgshapeoptions.ui:75
-#: plugins/paintops/gridbrush/wdgshapeoptions.ui:51
-#: plugins/paintops/spray/wdgshapeoptions.ui:75
-msgid "Pixel"
-msgstr "វើ​ភីកសែល"
-
 #. i18n: ectx: property (text), widget (QCheckBox, proportionalBox)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:213
 #: plugins/paintops/spray/wdgshapeoptions.ui:218
@@ -7310,7 +7310,7 @@ msgstr "​បង្វិល"
 #. i18n: ectx: property (text), widget (QCheckBox, fixedRotation)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:241
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:77
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:59
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:48
 msgid "Constant"
 msgstr "ថេរ​"
@@ -7318,7 +7318,7 @@ msgstr "ថេរ​"
 #. i18n: ectx: property (text), widget (QCheckBox, randomRotation)
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
 #: plugins/paintops/experiment/wdgshapeoptions.ui:289
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:82
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:64
 #: plugins/paintops/spray/wdgshapedynamicsoptions.ui:58
 msgid "Random"
 msgstr "ចៃដន្យ"
@@ -7337,13 +7337,11 @@ msgstr "ធ្វើ​តាម​ទស្សន៍​ទ្រនិច"
 msgid "Texture:"
 msgstr "វាយន​ភាព"
 
-#: plugins/paintops/filterop/filterop.cpp:45
-msgid "Filter Brush"
-msgstr "ជក់​តម្រង"
-
 #: plugins/paintops/gridbrush/grid_paintop_plugin.cpp:41
-msgid "Grid brush"
-msgstr "ជក់​ក្រឡា​ចត្រង្គ"
+#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:673
+#: ui/dialogs/kis_dlg_preferences.cc:674
+msgid "Grid"
+msgstr "ក្រឡា​ចត្រង្គ"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/paintops/gridbrush/wdggridoptions.ui:38
@@ -7410,7 +7408,9 @@ msgid "Line"
 msgstr "បន្ទាត់"
 
 #: plugins/paintops/hairy/hairy_paintop_plugin.cpp:44
-msgid "Hairy brush"
+#, fuzzy
+#| msgid "Hairy brush"
+msgid "Hairy"
 msgstr "សរសៃ​ជក់"
 
 #: plugins/paintops/hairy/kis_hairy_bristle_option.cpp:46
@@ -7589,7 +7589,9 @@ msgid "Soak ink"
 msgstr "ផ្សើម​​ទឹក​ខ្មៅ"
 
 #: plugins/paintops/hatching/hatching_paintop_plugin.cpp:43
-msgid "Hatching brush"
+#, fuzzy
+#| msgid "Hatching brush"
+msgid "Hatching"
 msgstr "សរសៃ​ជក់"
 
 #: plugins/paintops/hatching/kis_hatching_options.cpp:57
@@ -7741,7 +7743,7 @@ msgstr "ភាព​ចៃដន្យ​ ៖"
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:266
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:152
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:85
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:207
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:180
 #: plugins/paintops/libpaintop/forms/wdgtextbrush.ui:72
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:112
 #: plugins/paintops/spray/wdgsprayoptions.ui:204
@@ -7808,7 +7810,7 @@ msgstr "ចល​នា​ញាក់​ៗ"
 #. i18n: ectx: property (text), widget (QCheckBox, colorAsMask)
 #. i18n: ectx: property (text), widget (QCheckBox, colorAsmask)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:19
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:131
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:113
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:119
 msgid "Use color as mask"
 msgstr "ប្រើ​ពណ៌​ជា​របាំង​"
@@ -7816,9 +7818,9 @@ msgstr "ប្រើ​ពណ៌​ជា​របាំង​"
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/paintops/libpaintop/forms/wdgclipboardbrush.ui:102
 #, fuzzy
-#| msgid "Curve brush"
-msgid "Save brush:"
-msgstr "ជក់​ខ្សែកោង"
+#| msgid "Save macro"
+msgid "Save Tip:"
+msgstr "រក្សាទុក​ម៉ាក្រូ​"
 
 #. i18n: ectx: property (text), widget (QPushButton, saveBrush)
 #. i18n: ectx: property (text), widget (QPushButton, bnSave)
@@ -7907,51 +7909,55 @@ msgstr "ខ្សែ​កោង​ទំហំ"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
 #. i18n: ectx: property (text), widget (QLabel, labelStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:60
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:42
 #: plugins/tools/tool_text/wdgtextoptions.ui:71
 msgid "Style:"
 msgstr "​រចនាប័ទ្ម ៖"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:87
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:69
 msgid "Incremental"
 msgstr "បង្កើន​"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:92
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:74
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:47
 #: plugins/tools/defaulttools/kis_tool_line.cc:70
 msgid "Pressure"
 msgstr "សម្ពាធ"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, comboBox2)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:97
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:79
 msgid "Angular"
 msgstr "ជ្រុង​ច្រើន​"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:105
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:87
 msgid "Selection mode:"
 msgstr "របៀប​ជម្រើស ៖"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, brushStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:116
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:98
 msgid "Regular"
 msgstr "ទៀតទាត់"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, brushStyle)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:121
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:103
 msgid "Animated"
 msgstr "ដែល​មាន​ចលនា​"
 
 #. i18n: ectx: property (text), widget (QPushButton, brushButton)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:236
-msgid "Use as Brush"
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:200
+#, fuzzy
+#| msgid "Use as Brush"
+msgid "Use as Tip"
 msgstr "ប្រើ​ជា​ជក់"
 
 #. i18n: ectx: property (text), widget (QPushButton, addButton)
-#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:243
-msgid "Add to Predefined Brushes"
+#: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:207
+#, fuzzy
+#| msgid "Add to Predefined Brushes"
+msgid "Add to Predefined Tips"
 msgstr "បន្ថែមទៅកាន់ជក់​ដែល​បាន​កំណត់​ជា​មុន"
 
 #. i18n: ectx: property (text), widget (QCheckBox, checkBoxSmudgeMode)
@@ -8067,9 +8073,9 @@ msgstr "ជម្រើស​លាយ លាយ​គំនូរ​នៅ​�
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:156
 #, fuzzy
-#| msgid "Text Brush"
-msgid "Reset Brush"
-msgstr "ជក់​អត្ថបទ"
+#| msgid "Predefined Brushes"
+msgid "Reset Predefined Tip"
+msgstr "ជក់​ដែល​បានកំណត់​ជា​ស្រេច"
 
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:157
 msgid ""
@@ -8082,30 +8088,25 @@ msgstr ""
 msgid "Brush Tip"
 msgstr "ព័ត៌មាន​ជំនួយ​ជក់"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:58
-msgid "Autobrush"
-msgstr "ជក់​ស្វ័យ​ប្រវត្តិ"
-
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:62
-msgid "Predefined Brushes"
+#, fuzzy
+#| msgid "Predefined Brushes"
+msgid "Predefined"
 msgstr "ជក់​ដែល​បានកំណត់​ជា​ស្រេច"
 
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
-msgid "Custom Brush"
-msgstr "ច្រាស​ផ្ទាល់​ខ្លួន"
-
+#. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:68
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:70
+#: ui/forms/wdgnewimage.ui:331
 #, fuzzy
-#| msgid "Color Smudge Brush"
-msgid "Clipboard Brush"
-msgstr "ជក់​​ស្នាម​ប្រឡាក់​ពណ៌"
+#| msgid "Cork board"
+msgid "Clipboard"
+msgstr "ក្ដារ​ឆ្នុកដប"
 
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:72
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:74
-msgid "Text Brush"
-msgstr "ជក់​អត្ថបទ"
+msgid "Text"
+msgstr "អត្ថបទ"
 
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:98
 msgid ""
@@ -9169,13 +9170,11 @@ msgid ""
 "will make it smoother"
 msgstr "តម្លៃ​ទាប​នឹង​ធ្វើ​ឲ្យ​ការបញ្ចូល​ទិស​ប្រែ​ប្រួល​កាន់​តែ​លឿន​ តម្លៃ​ខ្ពស់​នឹង​ធ្វើ​ឲ្យ​វា​កាន់​តែ​រលោង"
 
-#: plugins/paintops/mypaint/mypaint_paintop_factory.h:55
-msgid "MyPaint brush"
-msgstr "ជក់​ MyPaint"
-
 #: plugins/paintops/particle/particle_paintop_plugin.cpp:42
-msgid "Particle brush"
-msgstr "ផ្នែក​​តូច​ៗ​របស់​ជក់"
+#, fuzzy
+#| msgid "Particles"
+msgid "Particle"
+msgstr "ផ្នែក​តូច​ៗ"
 
 #. i18n: ectx: property (text), widget (QLabel, particlesLbl)
 #: plugins/paintops/particle/wdgparticleoptions.ui:50
@@ -9570,7 +9569,9 @@ msgid "Offset scale"
 msgstr "មាត្រដ្ឋាន​អុហ្វសិត"
 
 #: plugins/paintops/sketch/sketch_paintop_plugin.cpp:43
-msgid "Sketch brush"
+#, fuzzy
+#| msgid "Sketch brush"
+msgid "Sketch"
 msgstr "ជក់​​គំនូរ​ព្រាង"
 
 #. i18n: ectx: property (suffix), widget (KDoubleNumInput, lineWidthSPBox)
@@ -9633,7 +9634,9 @@ msgid "Spray area"
 msgstr "ជក់​បាញ់"
 
 #: plugins/paintops/spray/spray_paintop_plugin.cpp:41
-msgid "Spray brush"
+#, fuzzy
+#| msgid "Spray shape"
+msgid "Spray"
 msgstr "ជក់​បាញ់"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
@@ -10603,11 +10606,6 @@ msgid ""
 "You are activating wrap-around mode, but have not enabled OpenGL.\n"
 "To visualize wrap-around mode, enable OpenGL."
 msgstr ""
-
-#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:673
-#: ui/dialogs/kis_dlg_preferences.cc:674
-msgid "Grid"
-msgstr "ក្រឡា​ចត្រង្គ"
 
 #: ui/canvas/kis_grid_manager.cpp:70
 msgid "Snap To Grid"
@@ -11896,13 +11894,6 @@ msgstr "រក្សាទុក"
 msgid "&Predefined:"
 msgstr "ជក់​ដែល​បានកំណត់​ជា​ស្រេច"
 
-#. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
-#: ui/forms/wdgnewimage.ui:331
-#, fuzzy
-#| msgid "Cork board"
-msgid "Clipboard"
-msgstr "ក្ដារ​ឆ្នុកដប"
-
 #. i18n: ectx: property (title), widget (QGroupBox, grpContents)
 #: ui/forms/wdgnewimage.ui:373
 msgid "Contents"
@@ -12097,7 +12088,7 @@ msgid "No Outline"
 msgstr "គ្មាន​គ្រោង"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbOutline)
-#: ui/forms/wdgshapeoptions.ui:38 ui/kis_paintop_option.cpp:26
+#: ui/forms/wdgshapeoptions.ui:38
 msgid "Brush"
 msgstr "ជក់"
 
@@ -13432,6 +13423,10 @@ msgstr ""
 msgid "Select Favorite Presets..."
 msgstr "ជក់​សំណព្វ"
 
+#: ui/kis_paintop_option.cpp:26
+msgid "Common"
+msgstr ""
+
 #: ui/kis_paintop_option.cpp:36
 msgid "Texture"
 msgstr "វាយន​ភាព"
@@ -13991,11 +13986,11 @@ msgstr "គ្មាន​សកម្មភាព​បានជ្រើស​
 msgid "Freehand Stroke"
 msgstr ""
 
-#: ui/tool/kis_tool_paint.cc:89
+#: ui/tool/kis_tool_paint.cc:105
 msgid "Increase Brush Size"
 msgstr "បង្កើន​ទំហំ​ជក់"
 
-#: ui/tool/kis_tool_paint.cc:95
+#: ui/tool/kis_tool_paint.cc:111
 msgid "Decrease Brush Size"
 msgstr "បន្ថយ​ទំហំ​ជក់"
 
@@ -14120,6 +14115,79 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "បិទ"
+
+#~ msgctxt "Category of brush engines"
+#~ msgid "Experimental"
+#~ msgstr "ពិសោធន៍​"
+
+#~ msgid "Soft brush"
+#~ msgstr "ជក់​ទន់"
+
+#, fuzzy
+#~| msgid "Gaussian Blur"
+#~ msgid "Gaussian brush"
+#~ msgstr "ព្រិល​ហ្គូសៀន"
+
+#~ msgid "Curve brush"
+#~ msgstr "ជក់​ខ្សែកោង"
+
+#~ msgid "Pixel Brush"
+#~ msgstr "ជក់​ភីកសែល"
+
+#~ msgctxt "duplicate paintbrush"
+#~ msgid "Duplicate"
+#~ msgstr "ច្បាប់​ចម្លង"
+
+#~ msgid "Deform brush"
+#~ msgstr "ជក់​​បង្ខូច​ទ្រង់ទ្រាយ"
+
+#~ msgid "Dyna brush"
+#~ msgstr "ជក់ Dyna"
+
+#~ msgid "Experiment brush"
+#~ msgstr "ជក់​ពិសោធន៍"
+
+#~ msgid "Filter Brush"
+#~ msgstr "ជក់​តម្រង"
+
+#~ msgid "Grid brush"
+#~ msgstr "ជក់​ក្រឡា​ចត្រង្គ"
+
+#, fuzzy
+#~| msgid "Curve brush"
+#~ msgid "Save brush:"
+#~ msgstr "ជក់​ខ្សែកោង"
+
+#, fuzzy
+#~| msgid "Text Brush"
+#~ msgid "Reset Brush"
+#~ msgstr "ជក់​អត្ថបទ"
+
+#~ msgid "Autobrush"
+#~ msgstr "ជក់​ស្វ័យ​ប្រវត្តិ"
+
+#~ msgid "Predefined Brushes"
+#~ msgstr "ជក់​ដែល​បានកំណត់​ជា​ស្រេច"
+
+#~ msgid "Custom Brush"
+#~ msgstr "ច្រាស​ផ្ទាល់​ខ្លួន"
+
+#, fuzzy
+#~| msgid "Color Smudge Brush"
+#~ msgid "Clipboard Brush"
+#~ msgstr "ជក់​​ស្នាម​ប្រឡាក់​ពណ៌"
+
+#~ msgid "Text Brush"
+#~ msgstr "ជក់​អត្ថបទ"
+
+#~ msgid "MyPaint brush"
+#~ msgstr "ជក់​ MyPaint"
+
+#~ msgid "Particle brush"
+#~ msgstr "ផ្នែក​​តូច​ៗ​របស់​ជក់"
+
+#~ msgid "Spray brush"
+#~ msgstr "ជក់​បាញ់"
 
 #~ msgid "Total Refresh"
 #~ msgstr "ធ្វើ​ឲ្យ​ស្រស់​សរុប"
@@ -14556,9 +14624,6 @@ msgstr "បិទ"
 
 #~ msgid "A -99ZZ END"
 #~ msgstr "ចុង A -99ZZ"
-
-#~ msgid "Text"
-#~ msgstr "អត្ថបទ"
 
 #~ msgid "Initial width"
 #~ msgstr "ទទឹង​ដំបូង"
