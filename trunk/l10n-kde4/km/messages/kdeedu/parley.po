@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: parley\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-05-22 01:48+0000\n"
+"POT-Creation-Date: 2014-06-04 01:40+0000\n"
 "PO-Revision-Date: 2012-07-23 15:02+0700\n"
 "Last-Translator: Sok Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -93,7 +93,7 @@ msgstr[0] "វិនាទី"
 msgid "*.kvtml|Vocabulary Collections"
 msgstr "សម្រាំង​វាក្យសព្ទ *.kvtml|"
 
-#: plugins/example.py:14 src/vocabulary/lessonview.cpp:37
+#: plugins/example.py:14
 #, fuzzy
 msgid "New Lesson"
 msgstr "បង្កើត​មេរៀន"
@@ -938,10 +938,15 @@ msgid "Lessons"
 msgstr "មេរៀន"
 
 #: src/editor/editor.cpp:164
+#, fuzzy
+#| msgid ""
+#| "Right click to add, delete, or rename lessons. \n"
+#| "With the checkboxes you can select which lessons you want to practice. \n"
+#| "Only checked lessons [x] will be asked in the tests!"
 msgid ""
-"Right click to add, delete, or rename lessons. \n"
-"With the checkboxes you can select which lessons you want to practice. \n"
-"Only checked lessons [x] will be asked in the tests!"
+"Right click to add, delete, or rename units. \n"
+"With the checkboxes you can select which units you want to practice. \n"
+"Only checked units [x] will be asked in the practice!"
 msgstr ""
 "ចុច​កណ្ដុរស្ដាំ​ដើម្បី​បន្ថែម លុប ឬ​ប្ដូរ​ឈ្មោះ​មេរៀន ។ \n"
 "ជាមួយ​ប្រអប់​ធីក អ្នក​អាច​ជ្រើស​មេរៀន​ណា​ដែល​អ្នក​ចង់​អនុវត្ត ។ \n"
@@ -1021,10 +1026,8 @@ msgstr "ទិដ្ឋភាព"
 
 #. i18n: ectx: Menu (lesson)
 #: src/editor/editorui.rc:49
-#, fuzzy
-#| msgid "&Lesson:"
-msgid "&Lesson"
-msgstr "មេរៀន ៖"
+msgid "&Unit"
+msgstr ""
 
 #. i18n: ectx: Menu (learning)
 #: src/editor/editorui.rc:62 src/practice/practicesummaryui.rc:12
@@ -1047,8 +1050,9 @@ msgid "Editor Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
 #: src/editor/FromToEntryPage.cpp:160
-#, kde-format
-msgid "Grades from %1 to %2"
+#, fuzzy, kde-format
+#| msgid "Grades from %1 to %2"
+msgid "Confidence Levels from %1 to %2"
 msgstr "ថ្នាក់​ពី %1 ទៅ %2"
 
 #. i18n: ectx: property (title), widget (QGroupBox, direc_label)
@@ -1058,8 +1062,8 @@ msgstr "លក្ខណៈ​សម្បត្តិ​ពី​ច្បាប
 
 #. i18n: ectx: property (text), widget (QLabel, grade_label)
 #: src/editor/FromToEntryPageForm.ui:72
-msgid "&Grade:"
-msgstr "ថ្នាក់ ៖"
+msgid "&Confidence Level:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, fauxami_label)
 #: src/editor/FromToEntryPageForm.ui:95
@@ -1120,10 +1124,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, resetGradesButton)
 #: src/editor/FromToEntryPageForm.ui:260
-#, fuzzy
-#| msgid "Reset &Grades"
-msgid "&Reset Grades"
-msgstr "កំណត់​ថ្នាក់​ឡើង​វិញ"
+msgid "&Reset Confidence Levels"
+msgstr ""
 
 #: src/editor/inflectionwidget.cpp:36 src/parleydocument.cpp:326
 #: src/vocabulary/wordtypeview.cpp:123
@@ -1189,7 +1191,7 @@ msgid "Language"
 msgstr "ភាសា​"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: src/editor/summarywordwidget.ui:32 src/vocabulary/containermodel.cpp:170
+#: src/editor/summarywordwidget.ui:32
 msgid "Lesson"
 msgstr "មេរៀន"
 
@@ -1558,24 +1560,22 @@ msgid ""
 "Edit which languages are in the collection and their grammar properties."
 msgstr ""
 
-#: src/parleyactions.cpp:121
-#, fuzzy
-#| msgid "Reset &Grades"
-msgid "Remove Grades"
-msgstr "កំណត់​ថ្នាក់​ឡើង​វិញ"
+#: src/parleyactions.cpp:121 src/vocabulary/lessonview.cpp:69
+msgid "Remove Confidence Levels"
+msgstr ""
 
 #: src/parleyactions.cpp:122
 #, fuzzy
-msgid "Remove all grades from the current document"
+msgid "Remove all confidence levels from the current document"
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/parleyactions.cpp:129
 #, fuzzy
-msgid "Show Entries from Child Lessons"
+msgid "Show Entries from Child Units"
 msgstr "ធាតុ​ក្នុង​មេរៀន​"
 
 #: src/parleyactions.cpp:130
-msgid "Enable to also see the entries of child lessons in each lesson."
+msgid "Enable to also see the entries of child units in each unit."
 msgstr ""
 
 #: src/parleyactions.cpp:136
@@ -1584,7 +1584,7 @@ msgstr ""
 
 #. i18n: ectx: label, entry (AutomaticTranslation), group (General)
 #: src/parleyactions.cpp:137 src/settings/parley.kcfg:50
-msgid "Enable automatic translation of the lesson entries."
+msgid "Enable automatic translation of the unit entries."
 msgstr ""
 
 #: src/parleyactions.cpp:143
@@ -2006,11 +2006,10 @@ msgid "%1 is neuter"
 msgstr "អភេទ"
 
 #: src/practice/guifrontend.cpp:129
-#, fuzzy, kde-format
-#| msgid "Lesson"
-msgctxt "Display of the current lesson during practice"
-msgid "Lesson: %1"
-msgstr "មេរៀន"
+#, kde-format
+msgctxt "Display of the current unit during practice"
+msgid "Unit: %1"
+msgstr ""
 
 #: src/practice/guifrontend.cpp:136
 #, fuzzy
@@ -3110,7 +3109,7 @@ msgstr ""
 #. i18n: ectx: label, entry (EntriesPerLesson), group (General)
 #: src/settings/parley.kcfg:27
 #, fuzzy
-msgid "The number of entries per lesson"
+msgid "The number of entries per unit"
 msgstr "បញ្ចូល​ចំនួន​ធាតុ​ក្នុង​មេរៀន ៖"
 
 #. i18n: ectx: label, entry (AutoOpenLast), group (General)
@@ -3165,8 +3164,8 @@ msgstr "ប្រើ​វិធីសាស្ត្រ​បង្រៀន Le
 #. i18n: ectx: label, entry (TestOrderLesson), group (PracticeOptions)
 #: src/settings/parley.kcfg:77
 msgid ""
-"Append new vocabulary in a test in order of their lessons. Note that this "
-"will not be a hard transition, but a slow mix from one lesson to the next."
+"Append new vocabulary in a collection in order of their units. Note that "
+"this will not be a hard transition, but a slow mix from one unit to the next."
 msgstr ""
 
 #. i18n: ectx: label, entry (TestNumberOfEntries), group (PracticeOptions)
@@ -3340,13 +3339,13 @@ msgstr "បិទ​បើក​ការ​បង្ហាញ​របស់​
 
 #. i18n: ectx: label, entry (ShowSublessonentries), group (Appearance)
 #: src/settings/parley.kcfg:198
-msgid "When enabled a lesson also shows entries from its sublessons."
+msgid "When enabled a unit also shows entries from its subunits."
 msgstr ""
 
 #. i18n: ectx: label, entry (TableLessonColumnVisible), group (Appearance)
 #: src/settings/parley.kcfg:203
 #, fuzzy
-msgid "Show/hide the lesson column."
+msgid "Show/hide the unit column."
 msgstr "ការ​ពិពណ៌នា​របស់​មេរៀន"
 
 #. i18n: ectx: label, entry (TableActiveColumnVisible), group (Appearance)
@@ -3357,7 +3356,7 @@ msgstr "ការ​ពិពណ៌នា​របស់​មេរៀន"
 
 #. i18n: ectx: label, entry (LessonEditingSelection), group (Appearance)
 #: src/settings/parley.kcfg:213
-msgid "Select which lessons are displayed for editing"
+msgid "Select which units are displayed for editing"
 msgstr ""
 
 #. i18n: ectx: label, entry (MainWindowSplitter), group (Appearance)
@@ -3392,11 +3391,10 @@ msgid "Currently selected row"
 msgstr "លុប​ជួរ​ដេក​ដែល​បាន​ជ្រើសចេញ​"
 
 #. i18n: ectx: label, entry (GradeColor), group (Appearance)
-#. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor)
-#: src/settings/parley.kcfg:243 src/settings/viewoptionsbase.ui:102
+#: src/settings/parley.kcfg:243
 #, fuzzy
 #| msgid "Color for the grade 7"
-msgid "Color used to display the grades"
+msgid "Color used to display the confidence levels"
 msgstr "ពណ៌​សម្រាប់​ថ្នាក់​ទី ៧"
 
 #. i18n: ectx: label, entry (PracticeMinimumTimesAsked), group (Thresholds)
@@ -3430,14 +3428,15 @@ msgstr ""
 #. i18n: ectx: label, entry (PracticeMinimumGrade), group (Thresholds)
 #: src/settings/parley.kcfg:269
 msgid ""
-"The entry must have at least this grade to be included in the practice "
-"(0..7)."
+"The entry must have at least this confidence level to be included in the "
+"practice (0..7)."
 msgstr ""
 
 #. i18n: ectx: label, entry (PracticeMaximumGrade), group (Thresholds)
 #: src/settings/parley.kcfg:273
 msgid ""
-"The entry must have at most this grade to be included in the practice (0..7)."
+"The entry must have at most this confidence level to be included in the "
+"practice (0..7)."
 msgstr ""
 
 #. i18n: ectx: label, entry (WordTypesInPracticeEnabled), group (Thresholds)
@@ -3491,12 +3490,12 @@ msgstr ""
 
 #. i18n: ectx: label, entry (BlockItem$(Grade)), group (PracticeManager)
 #: src/settings/parley.kcfg:338
-msgid "Amount of time different grades should be blocked"
+msgid "Amount of time different confidence levels should be blocked"
 msgstr ""
 
 #. i18n: ectx: label, entry (ExpireItem$(Grade)), group (PracticeManager)
 #: src/settings/parley.kcfg:349
-msgid "Amount of time after which different grades should expire"
+msgid "Amount of time after which different confidence levels should expire"
 msgstr ""
 
 #. i18n: ectx: label, entry (ProvidersUrl), group (KNewStuff)
@@ -3560,6 +3559,13 @@ msgstr "ការ​បន្លឺ​សម្លេង ៖"
 msgid "Base color for displaying grades:"
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (KColorButton, kcfg_GradeColor)
+#: src/settings/viewoptionsbase.ui:102
+#, fuzzy
+#| msgid "Color for the grade 7"
+msgid "Color used to display the grades"
+msgstr "ពណ៌​សម្រាប់​ថ្នាក់​ទី ៧"
+
 #. i18n: ectx: property (whatsThis), widget (KColorButton, kcfg_GradeColor)
 #: src/settings/viewoptionsbase.ui:105
 #, fuzzy
@@ -3592,23 +3598,19 @@ msgid "Not practiced"
 msgstr "មិន​ទាន់​បាន​សួរ​នៅ​ឡើយ​"
 
 #: src/statistics/lessonstatistics.cpp:182
-#, fuzzy
-msgid "Remove &Grades from this lesson"
-msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
-
 #: src/statistics/lessonstatistics.cpp:184
 #, fuzzy
-msgid "Remove grades from this lesson"
+msgid "Remove confidence levels from this unit"
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/statistics/lessonstatistics.cpp:192
 #, fuzzy
-msgid "Remove &Grades from this lesson and all sub-lessons"
+msgid "Remove confidence levels from this unit and all sub-units"
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/statistics/lessonstatistics.cpp:194
 #, fuzzy
-msgid "Remove grades from this lesson and all sub-lessons"
+msgid "Remove confidence level from this unit and all sub-units"
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/statistics/statisticsmainwindow.cpp:196
@@ -3699,11 +3701,10 @@ msgid "Practice Direction"
 msgstr "ការ​កំណត់​ទិដ្ឋភាព"
 
 #: src/statistics/statisticsmodel.cpp:31
-#, fuzzy, kde-format
-#| msgid "G&rade:"
-msgctxt "Grade in language, table header"
-msgid "Grade (%1)"
-msgstr "ថ្នាក់"
+#, kde-format
+msgctxt "Confidence level in language, table header"
+msgid "Confidence (%1)"
+msgstr ""
 
 #: src/vocabulary/basiccontainermodel.cpp:145
 #, fuzzy
@@ -3711,21 +3712,25 @@ msgstr "ថ្នាក់"
 msgid "None"
 msgstr "គ្មាន"
 
+#: src/vocabulary/containermodel.cpp:170
+msgid "Unit"
+msgstr ""
+
 #: src/vocabulary/containermodel.cpp:178
 #, fuzzy
 msgid "Number of entries in this lesson."
 msgstr "បញ្ចូល​ចំនួន​ធាតុ​ក្នុង​មេរៀន ៖"
 
-#: src/vocabulary/leitnerview.cpp:117 src/vocabulary/lessonview.cpp:194
-msgid "The root lesson cannot be deleted."
+#: src/vocabulary/leitnerview.cpp:117
+msgid "The root unit cannot be deleted."
 msgstr ""
 
 #: src/vocabulary/leitnerview.cpp:126 src/vocabulary/lessonview.cpp:203
 #, fuzzy, kde-format
 #| msgid "The file '%1' already exists. Do you want to overwrite it?"
-msgid "There is %1 word left in this lesson. Do you want to delete it?"
+msgid "There is %1 word left in this unit. Do you want to delete it?"
 msgid_plural ""
-"There are %1 words left in this lesson. Do you want to delete them?"
+"There are %1 words left in this unit. Do you want to delete them?"
 msgstr[0] "មាន​ឯកសារ '%1' រួចហើយ ។ តើអ្នក​ចង់​សរសេរ​ជាន់​លើ​វាឬទេ ?"
 
 #: src/vocabulary/lessonmodel.cpp:61
@@ -3734,85 +3739,89 @@ msgctxt "display of the name of the vocabulary collection"
 msgid "Collection: %1"
 msgstr "កំពុង​លុប​មេរៀន​"
 
+#: src/vocabulary/lessonview.cpp:37
+msgid "New Unit"
+msgstr ""
+
 #: src/vocabulary/lessonview.cpp:39
 #, fuzzy
 #| msgid "Creates a new blank vocabulary document"
-msgid "Add a new lesson to your document"
+msgid "Add a new unit to your document"
 msgstr "បន្ថែម"
 
 #: src/vocabulary/lessonview.cpp:45
 #, fuzzy
-msgid "Rename Lesson"
-msgstr "បង្កើត​មេរៀន"
+#| msgid "Filename:"
+msgid "Rename Unit"
+msgstr "ប្ដូរ​ឈ្មោះ"
 
 #: src/vocabulary/lessonview.cpp:53
 #, fuzzy
-msgid "Delete Lesson"
+msgid "Delete Unit"
 msgstr "លុប"
 
 #: src/vocabulary/lessonview.cpp:55
 #, fuzzy
 #| msgid "Delete the selected rows"
-msgid "Delete the selected lesson."
+msgid "Delete the selected unit."
 msgstr "លុប."
 
 #: src/vocabulary/lessonview.cpp:61
-msgid "Split Lesson into Smaller Lessons"
+msgid "Split Unit into Smaller Units"
 msgstr ""
 
 #: src/vocabulary/lessonview.cpp:63
-msgid "Make multiple smaller lessons out of one big lesson."
+msgid "Make multiple smaller units out of one big unit."
 msgstr ""
-
-#: src/vocabulary/lessonview.cpp:69
-#, fuzzy
-msgid "Remove Grades from this Lesson"
-msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/vocabulary/lessonview.cpp:71
 #, fuzzy
-msgid "Remove grades from this lesson."
+msgid "Remove confidence levels from this unit."
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/vocabulary/lessonview.cpp:77
 #, fuzzy
-msgid "Remove Grades from this Lesson and all Sub-Lessons"
+msgid "Remove Confidence Levels From This Unit And All Subunits"
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/vocabulary/lessonview.cpp:79
 #, fuzzy
-msgid "Remove grades from this lesson and all sub-lessons."
+msgid "Remove confidence levels from this unit and all subunits."
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/vocabulary/lessonview.cpp:85
 #, fuzzy
-msgid "Expand all lessons and sub-lessons"
+msgid "Expand Units and Subunits"
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/vocabulary/lessonview.cpp:87
 #, fuzzy
-msgid "Expand all lessons and sub-lessons."
+msgid "Expand all units and subunits."
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/vocabulary/lessonview.cpp:93
 #, fuzzy
-msgid "Collapse all lessons and sub-lessons"
+msgid "Collapse All Units And Subunits"
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #: src/vocabulary/lessonview.cpp:95
 #, fuzzy
-msgid "Collapse all lessons and sub-lessons."
+msgid "Collapse all units and subunits."
 msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
+
+#: src/vocabulary/lessonview.cpp:194
+msgid "The root lesson cannot be deleted."
+msgstr ""
 
 #: src/vocabulary/lessonview.cpp:217
 #, fuzzy
-msgid "Entries per Lesson"
+msgid "Entries per Unit"
 msgstr "ធាតុ​ក្នុង​មេរៀន​"
 
 #: src/vocabulary/lessonview.cpp:217
 msgid ""
-"The lesson will be split into smaller lessons. How many entries in each "
-"lesson do you want?"
+"The unit will be split into smaller unit. How many entries in each unit do "
+"you want?"
 msgstr ""
 
 #: src/vocabulary/vocabularycolumnsdialog.cpp:53
@@ -3873,11 +3882,11 @@ msgstr "បន្ថែម​កូដ​ភាសា​ថ្មី"
 #: src/vocabulary/vocabularymodel.cpp:328
 #, fuzzy
 #| msgid "&Append Language"
-msgid "Select a lesson before adding vocabulary."
+msgid "Select a unit before adding vocabulary."
 msgstr "បន្ថែម​ភាសា​នៅ​ខាង​ចុង​"
 
 #: src/vocabulary/vocabularymodel.cpp:328
-msgid "No Lesson Selected"
+msgid "No Unit Selected"
 msgstr ""
 
 #: src/vocabulary/vocabularyview.cpp:87
@@ -4214,6 +4223,56 @@ msgid ""
 "<a href=\"http://edu.kde.org/contrib/kvtml2.php\">http://edu.kde.org/contrib/"
 "kvtml2.php</a>.</p>\n"
 msgstr ""
+
+#, fuzzy
+#~| msgid "&Lesson:"
+#~ msgid "&Lesson"
+#~ msgstr "មេរៀន ៖"
+
+#~ msgid "&Grade:"
+#~ msgstr "ថ្នាក់ ៖"
+
+#, fuzzy
+#~| msgid "Reset &Grades"
+#~ msgid "&Reset Grades"
+#~ msgstr "កំណត់​ថ្នាក់​ឡើង​វិញ"
+
+#, fuzzy
+#~| msgid "Reset &Grades"
+#~ msgid "Remove Grades"
+#~ msgstr "កំណត់​ថ្នាក់​ឡើង​វិញ"
+
+#, fuzzy
+#~| msgid "Lesson"
+#~ msgctxt "Display of the current lesson during practice"
+#~ msgid "Lesson: %1"
+#~ msgstr "មេរៀន"
+
+#, fuzzy
+#~ msgid "Remove &Grades from this lesson"
+#~ msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
+
+#, fuzzy
+#~ msgid "Remove &Grades from this lesson and all sub-lessons"
+#~ msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
+
+#, fuzzy
+#~| msgid "G&rade:"
+#~ msgctxt "Grade in language, table header"
+#~ msgid "Grade (%1)"
+#~ msgstr "ថ្នាក់"
+
+#, fuzzy
+#~ msgid "Rename Lesson"
+#~ msgstr "បង្កើត​មេរៀន"
+
+#, fuzzy
+#~ msgid "Delete Lesson"
+#~ msgstr "លុប"
+
+#, fuzzy
+#~ msgid "Remove Grades from this Lesson"
+#~ msgstr "យក​ធាតុ​ដែល​មាន​មាតិកា​ដូច​គ្នា​ចេញ​ពី​វាក្យសព្ទ"
 
 #, fuzzy
 #~ msgctxt "caption for an overview of the grades for a document"
