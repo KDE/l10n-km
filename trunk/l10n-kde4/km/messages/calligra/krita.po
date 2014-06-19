@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-18 01:36+0000\n"
+"POT-Creation-Date: 2014-06-19 01:30+0000\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -29,16 +29,6 @@ msgid "Your emails"
 msgstr ""
 "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info, \n"
 "evannak@khmeros.info,piseth_dv@khmeros.info"
-
-#: benchmarks/kis_floodfill_benchmark.cpp:86
-#: plugins/tools/defaulttools/kis_tool_fill.cc:128
-#: ui/actions/kis_selection_action_factories.cpp:171
-msgid "Flood Fill"
-msgstr "ការ​បំពេញ​ច្រើន"
-
-#: benchmarks/kis_gradient_benchmark.cpp:69
-msgid "Gradient Fill"
-msgstr "បំពេញ​ជម្រាល​"
 
 #: crashreporter/main.cpp:53
 msgid "Krita Crash Reporter"
@@ -208,22 +198,22 @@ msgid "&Select"
 msgstr "ជ្រើស"
 
 #. i18n: ectx: Menu (Filter)
-#: gemini/kritagemini.rc:139 krita.rc:139 sketch/kritasketch.rc:139
+#: gemini/kritagemini.rc:139 krita.rc:140 sketch/kritasketch.rc:139
 msgid "Filte&r"
 msgstr "តម្រង"
 
 #. i18n: ectx: Menu (Tools)
-#: gemini/kritagemini.rc:156 krita.rc:156 sketch/kritasketch.rc:156
+#: gemini/kritagemini.rc:156 krita.rc:157 sketch/kritasketch.rc:156
 msgid "&Tools"
 msgstr "ឧបករណ៍"
 
 #. i18n: ectx: Menu (settings)
-#: gemini/kritagemini.rc:159 krita.rc:159 sketch/kritasketch.rc:159
+#: gemini/kritagemini.rc:159 krita.rc:160 sketch/kritasketch.rc:159
 msgid "Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: ectx: ToolBar (BrushesAndStuff)
-#: gemini/kritagemini.rc:172 krita.rc:172 sketch/kritasketch.rc:172
+#: gemini/kritagemini.rc:172 krita.rc:173 sketch/kritasketch.rc:172
 msgid "Brushes and Stuff"
 msgstr "ជក់ និង ឧបករណ៍"
 
@@ -1491,17 +1481,17 @@ msgstr "ភាព​ផ្លាស់ប្ដូរ​របស់​លក្
 
 #: image/commands/kis_node_compositeop_command.cpp:28
 #, fuzzy
-#| msgid "Node Composite Mode"
+#| msgid "Composite Mode"
 msgctxt "(qtundo-format)"
-msgid "Node Composite Mode"
-msgstr "របៀប​បន្សំ​ថ្នាំង"
+msgid "Composition Mode Change"
+msgstr "របៀប​តែង"
 
 #: image/commands/kis_node_opacity_command.cpp:26
 #, fuzzy
-#| msgid "Node Opacity"
+#| msgid "Opacity Curve"
 msgctxt "(qtundo-format)"
-msgid "Node Opacity"
-msgstr "ភាព​ស្រអាប់របស់​ថ្នាំង"
+msgid "Opacity Change"
+msgstr "ភាព​ស្រអាប់​នៃ​ខ្សែងកោង​"
 
 #: image/commands/kis_reselect_global_selection_command.cpp:30
 #, fuzzy
@@ -1510,7 +1500,7 @@ msgctxt "(qtundo-format)"
 msgid "Reselect"
 msgstr "ជ្រើស​ឡើង​វិញ"
 
-#: image/commands_new/kis_image_resize_command.cpp:28
+#: image/commands_new/kis_image_resize_command.cpp:28 image/kis_image.cc:421
 #, fuzzy
 #| msgid "Resize Image"
 msgctxt "(qtundo-format)"
@@ -1525,15 +1515,14 @@ msgid "Set Image Resolution"
 msgstr "គុណភាព​បង្ហាញ​រូបភាព"
 
 #: image/commands_new/kis_move_command_common.h:40
+#: plugins/tools/defaulttools/strokes/move_stroke_strategy.cpp:31
 #, fuzzy
 #| msgid "Move"
 msgctxt "(qtundo-format)"
 msgid "Move"
 msgstr "ផ្លាស់ទី"
 
-#. i18n: ectx: property (text), widget (QPushButton, bnZoomAdjust)
 #: image/filter/kis_filter.cc:35
-#: plugins/extensions/dockers/imagedocker/forms/wdgImageViewPopup.ui:35
 msgid "Adjust"
 msgstr "លៃតម្រូវ"
 
@@ -1617,13 +1606,13 @@ msgstr "ស្រទន់​"
 msgid "Gaussian"
 msgstr "ព្រិល​ហ្គូសៀន"
 
-#: image/kis_base_node.cpp:141 ui/kis_node_model.cpp:425
+#: image/kis_base_node.cpp:141 ui/kis_node_model.cpp:442
 msgid "Visible"
 msgstr "មើល​ឃើញ"
 
 #: image/kis_base_node.cpp:142
 #: plugins/extensions/dockers/channeldocker/channelmodel.cpp:68
-#: ui/kis_node_model.cpp:426
+#: ui/kis_node_model.cpp:443
 msgid "Locked"
 msgstr "ចាក់សោ"
 
@@ -1697,74 +1686,122 @@ msgstr "ផ្ទៃ​ខាងក្រោយ​"
 msgid "Layer %1"
 msgstr "ស្រទាប់ %1"
 
-#: image/kis_image.cc:419
+#: image/kis_image.cc:420
+#, fuzzy
+#| msgid "Crop Image"
+msgctxt "(qtundo-format)"
 msgid "Crop Image"
 msgstr "​ច្រឹប​រូបភាព"
 
-#: image/kis_image.cc:419
-msgid "Resize Image"
-msgstr "ប្តូរ​ទំហំ​រូបភាព"
-
-#: image/kis_image.cc:452
+#: image/kis_image.cc:456
 #, fuzzy
-#| msgid "Crop Image"
-msgid "Crop Node"
-msgstr "​ច្រឹប​រូបភាព"
+#| msgid "&Group Layer"
+msgctxt "(qtundo-format)"
+msgid "Crop Layer"
+msgstr "ដាក់​ស្រទាប់​ជា​ក្រុម"
 
-#: image/kis_image.cc:479
+#: image/kis_image.cc:457
+#, fuzzy
+#| msgid "Unsharp Mask"
+msgctxt "(qtundo-format)"
+msgid "Crop Mask"
+msgstr "ធ្វើ​ឲ្យ​របាំង​មិន​ច្បាស់"
+
+#: image/kis_image.cc:485
+#, fuzzy
+#| msgid "Scale Image"
+msgctxt "(qtundo-format)"
 msgid "Scale Image"
 msgstr "ធ្វើ​​មាត្រដ្ឋាន រូបភាព"
 
-#: image/kis_image.cc:479
+#: image/kis_image.cc:486
 #, fuzzy
 #| msgid "Image Resolution"
+msgctxt "(qtundo-format)"
 msgid "Change Image Resolution"
 msgstr "គុណភាព​បង្ហាញ​រូបភាព"
 
-#: image/kis_image.cc:526
+#: image/kis_image.cc:533
+#, fuzzy
+#| msgid "Scale Layer"
+msgctxt "(qtundo-format)"
 msgid "Scale Layer"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ស្រទាប់"
 
-#: image/kis_image.cc:620 plugins/extensions/rotateimage/rotateimage.cc:155
+#: image/kis_image.cc:621
+#, fuzzy
+#| msgid "Rotate Image"
+msgctxt "(qtundo-format)"
+msgid "Rotate Image"
+msgstr "បង្វិល​រូបភាព"
+
+#: image/kis_image.cc:626
+#, fuzzy
+#| msgid "Rotate Layer"
+msgctxt "(qtundo-format)"
 msgid "Rotate Layer"
 msgstr "បង្វិល​ស្រទាប់"
 
-#: image/kis_image.cc:687
+#: image/kis_image.cc:693
+#, fuzzy
+#| msgid "Shear layer"
+msgctxt "(qtundo-format)"
 msgid "Shear layer"
 msgstr "កាត់​ស្រទាប់​"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
-#: image/kis_image.cc:693 plugins/extensions/shearimage/dlg_shearimage.cc:32
-#: plugins/extensions/shearimage/shearimage.cc:64
-#: plugins/extensions/shearimage/wdg_shearimage.ui:14
+#: image/kis_image.cc:699
+#, fuzzy
+#| msgid "Shear Image"
+msgctxt "(qtundo-format)"
 msgid "Shear Image"
 msgstr "កាត់​រូបភាព​"
 
-#: image/kis_image.cc:706
+#: image/kis_image.cc:712
+#, fuzzy
+#| msgid "Convert Image Color Space"
+msgctxt "(qtundo-format)"
 msgid "Convert Image Color Space"
 msgstr "បម្លែង ប្រភេទ​រូបភាព"
 
-#: image/kis_image.cc:739
+#: image/kis_image.cc:745
+#, fuzzy
+#| msgid "Convert Projection Color Space"
+msgctxt "(qtundo-format)"
 msgid "Convert Projection Color Space"
 msgstr "បម្លែង​ចន្លោះ​ពណ៌​នៃ​ការ​បញ្ចាំង"
 
-#: image/kis_image.cc:918 ui/kis_layer_manager.cc:709
+#: image/kis_image.cc:924
+#, fuzzy
+#| msgid "Flatten Image"
+msgctxt "(qtundo-format)"
 msgid "Flatten Image"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
-#: image/kis_image.cc:1018
+#: image/kis_image.cc:1024
+#, fuzzy
+#| msgid "Merge with Layer Below"
+msgctxt "(qtundo-format)"
 msgid "Merge with Layer Below"
 msgstr "បញ្ចូល​ស្រទាប់​ខាងក្រោម​ចូលគ្នា "
 
-#: image/kis_image.cc:1064
+#: image/kis_image.cc:1070
+#, fuzzy
+#| msgid "Flatten Layer"
+msgctxt "(qtundo-format)"
 msgid "Flatten Layer"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
-#: image/kis_image.cc:1650
+#: image/kis_image.cc:1656
 #, fuzzy
 #| msgid "Grow Selection"
+msgctxt "(qtundo-format)"
 msgid "Crop Selections"
 msgstr "បង្កើន​ការ​ជ្រើស​រើស"
+
+#: image/kis_layer.cc:174
+#, kde-format
+msgid "%1%"
+msgstr "%1%"
 
 #. i18n: ectx: property (text), widget (QCheckBox, opacityCBox)
 #: image/kis_layer.cc:174 plugins/paintops/hairy/wdghairyeoptions.ui:297
@@ -1774,17 +1811,12 @@ msgstr "បង្កើន​ការ​ជ្រើស​រើស"
 msgid "Opacity"
 msgstr "ភាព​ស្រអាប់"
 
-#: image/kis_layer.cc:174
-#, kde-format
-msgid "%1%"
-msgstr "%1%"
-
 #: image/kis_layer.cc:176
 msgid "Composite Mode"
 msgstr "របៀប​តែង"
 
 #: image/kis_paint_layer.cc:151 image/kis_paint_layer.cc:160
-#: ui/kis_node_model.cpp:434
+#: ui/kis_node_model.cpp:451
 msgid "Alpha Locked"
 msgstr "បាន​ចាក់​សោ​អាល់ហ្វា"
 
@@ -1801,51 +1833,63 @@ msgstr "ក្រោយ​ដំណើរការ"
 #: image/kis_selection_filters.cpp:120
 #, fuzzy
 #| msgid "Border Selection"
+msgctxt "(qtundo-format)"
 msgid "Erode Selection"
 msgstr "ការ​ជ្រើស​ស៊ុម"
 
 #: image/kis_selection_filters.cpp:184
 #, fuzzy
 #| msgid "Display Selection"
+msgctxt "(qtundo-format)"
 msgid "Dilate Selection"
 msgstr "បង្ហាញ​ជម្រើស"
 
 #: image/kis_selection_filters.cpp:254
-#: plugins/extensions/modify_selection/dlg_border_selection.cc:31
+#, fuzzy
+#| msgid "Border Selection"
+msgctxt "(qtundo-format)"
 msgid "Border Selection"
 msgstr "ការ​ជ្រើស​ស៊ុម"
 
 #: image/kis_selection_filters.cpp:473
-#: plugins/extensions/modify_selection/dlg_feather_selection.cc:31
+#, fuzzy
+#| msgid "Feather Selection"
+msgctxt "(qtundo-format)"
 msgid "Feather Selection"
 msgstr "ការជ្រើស​សណ្ឋាន​ពិសេស"
 
 #: image/kis_selection_filters.cpp:520
-#: plugins/extensions/modify_selection/dlg_grow_selection.cc:31
+#, fuzzy
+#| msgid "Grow Selection"
+msgctxt "(qtundo-format)"
 msgid "Grow Selection"
 msgstr "បង្កើន​ការ​ជ្រើស​រើស"
 
 #: image/kis_selection_filters.cpp:647
-#: plugins/extensions/modify_selection/dlg_shrink_selection.cc:31
+#, fuzzy
+#| msgid "Shrink Selection"
+msgctxt "(qtundo-format)"
 msgid "Shrink Selection"
 msgstr "បង្រួញ​ជម្រើស​"
 
 #: image/kis_selection_filters.cpp:790
 #, fuzzy
 #| msgid "Path Selection"
+msgctxt "(qtundo-format)"
 msgid "Smooth Selection"
 msgstr "ការ​ជ្រើស​ផ្លូវ"
 
 #: image/kis_selection_filters.cpp:851
 #, fuzzy
 #| msgid "&Invert Selection"
+msgctxt "(qtundo-format)"
 msgid "Invert Selection"
 msgstr "ដាក់​ជម្រើស​បញ្ជ្រាស"
 
 #. i18n: ectx: property (text), widget (QLabel, label_17)
 #: image/kis_selection_mask.cpp:106
 #: plugins/paintops/resourcemanager/wdgdlgbundlemanager.ui:225
-#: ui/kis_node_model.cpp:427
+#: ui/kis_node_model.cpp:444
 msgid "Active"
 msgstr "សកម្ម"
 
@@ -1918,23 +1962,21 @@ msgstr ""
 msgid "Invalid value."
 msgstr "តម្លៃ​មិន​ត្រឹម​ត្រូវ ។"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
-#: image/processing/kis_crop_processing_visitor.cpp:54
-#: plugins/tools/tool_crop/wdg_tool_crop.ui:14
-msgid "Crop"
-msgstr "​ច្រឹប"
-
 #: image/processing/kis_transform_processing_visitor.cpp:160
 #, fuzzy
 #| msgid "Transform"
-msgid "Transform Node"
+msgctxt "(qtundo-format)"
+msgid "Transform Layer"
 msgstr "ប្លែង​"
 
-#: image/recorder/kis_macro_player.cc:75
+#: image/recorder/kis_macro_player.cc:77
+#, fuzzy
+#| msgid "Play macro"
+msgctxt "(qtundo-format)"
 msgid "Play macro"
 msgstr "ចាក់​ម៉ាក្រូ​"
 
-#: image/recorder/kis_macro_player.cc:81
+#: image/recorder/kis_macro_player.cc:83
 #: plugins/extensions/bigbrother/bigbrother.cc:124
 #, fuzzy
 #| msgid "Play macro"
@@ -1945,13 +1987,18 @@ msgstr "ចាក់​ម៉ាក្រូ​"
 msgid "Fill"
 msgstr "បំពេញ"
 
+#: image/recorder/kis_recorded_filter_action.cpp:103
+#, fuzzy, kde-format
+#| msgid "Filter:"
+msgctxt "(qtundo-format)"
+msgid "Filter: \"%1\""
+msgstr "តម្រង ៖"
+
 #: image/recorder/kis_recorded_node_action.cc:54
 msgid "Applying action to all selected nodes"
 msgstr ""
 
 #: image/recorder/kis_recorded_path_paint_action.cpp:61
-#: plugins/tools/defaulttools/kis_tool_path.cc:75
-#: plugins/tools/defaulttools/kis_tool_pencil.cc:61
 msgid "Path"
 msgstr "ផ្លូវ"
 
@@ -1963,7 +2010,6 @@ msgstr "ផ្លូវ"
 #: plugins/paintops/gridbrush/wdgshapeoptions.ui:36
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:343
 #: plugins/paintops/spray/wdgshapeoptions.ui:60
-#: plugins/tools/defaulttools/kis_tool_ellipse.cc:64
 msgid "Ellipse"
 msgstr "ពង​ក្រពើ"
 
@@ -1976,7 +2022,6 @@ msgstr "ពង​ក្រពើ"
 #: plugins/paintops/gridbrush/wdgshapeoptions.ui:41
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:348
 #: plugins/paintops/spray/wdgshapeoptions.ui:65
-#: plugins/tools/defaulttools/kis_tool_rectangle.cc:67
 msgid "Rectangle"
 msgstr "ចតុកោណកែង"
 
@@ -2062,7 +2107,7 @@ msgid "Perspective assistant"
 msgstr "អ្នក​ជំនួយការ​យថាទស្សន៍​"
 
 #: plugins/assistants/RulerAssistant/PerspectiveAssistant.cc:339
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:52
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:60
 msgid "Perspective"
 msgstr "យថា​ទស្សន៍"
 
@@ -2220,7 +2265,7 @@ msgstr "ចម្លង​ពី"
 #: plugins/extensions/clonesarray/wdg_clonesarray.ui:14
 #: plugins/extensions/offsetimage/wdg_offsetimage.ui:14
 #: plugins/extensions/rotateimage/dlg_rotateimage.cc:31
-#: plugins/extensions/rotateimage/rotateimage.cc:108
+#: plugins/extensions/rotateimage/rotateimage.cc:109
 #: plugins/extensions/rotateimage/wdg_rotateimage.ui:16
 msgid "Rotate Image"
 msgstr "បង្វិល​រូបភាព"
@@ -2328,7 +2373,13 @@ msgid "Select from Color Range..."
 msgstr "ជ្រើស​​ពី​ជួរ​ពណ៌..."
 
 #: plugins/extensions/colorrange/colorrange.cc:55
+msgid "Select Opaque"
+msgstr "ជ្រើស​ស្រអាប់"
+
 #: plugins/extensions/colorrange/colorrange.cc:83
+#, fuzzy
+#| msgid "Select Opaque"
+msgctxt "(qtundo-format)"
 msgid "Select Opaque"
 msgstr "ជ្រើស​ស្រអាប់"
 
@@ -2347,6 +2398,7 @@ msgstr "ជួរ​ពណ៌​"
 #: plugins/extensions/colorrange/dlg_colorrange.cc:318
 #, fuzzy
 #| msgid "Color Selector"
+msgctxt "(qtundo-format)"
 msgid "Color Range Selection"
 msgstr "ឧបករណ៍​ជ្រើស​ពណ៌"
 
@@ -2454,6 +2506,9 @@ msgid "Convert Current Layer From"
 msgstr "បម្លែង​ស្រទាប់​បច្ចុប្បន្ន​ពី "
 
 #: plugins/extensions/colorspaceconversion/colorspaceconversion.cc:122
+#, fuzzy
+#| msgid "Convert Layer Type"
+msgctxt "(qtundo-format)"
 msgid "Convert Layer Type"
 msgstr "បម្លែង​ប្រភេទ​ស្រទាប់"
 
@@ -2636,6 +2691,7 @@ msgstr "អង្កិល ៖"
 #. i18n: ectx: attribute (title), widget (QWidget, tab_4)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:24
 #: ui/dialogs/kis_dlg_preferences.cc:602 ui/dialogs/kis_dlg_preferences.cc:603
+#: ui/kis_paintop_option.cpp:26
 msgid "General"
 msgstr "ទូទៅ"
 
@@ -2825,8 +2881,10 @@ msgstr "យឺត"
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #. i18n: ectx: property (text), widget (QLabel, label_12)
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
+#. i18n: ectx: property (text), widget (QLabel, label_3)
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:476
 #: plugins/extensions/dockers/advancedcolorselector/wdg_color_selector_settings.ui:693
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:30
 #: plugins/formats/pdf/pdfimportwidgetbase.ui:214
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:97
 #: ui/forms/wdgdisplaysettings.ui:77 ui/kis_paintop_box.cc:152
@@ -3078,58 +3136,71 @@ msgstr "ឈ្មោះ ៖"
 msgid "Composition"
 msgstr "របៀប​តែង"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:120
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:122
 msgid "Layers"
 msgstr "ស្រទាប់"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:146
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:148
 msgid "Minimal View"
 msgstr "ទិដ្ឋភាពអប្បបរមា"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:148
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:150
 msgid "Detailed View"
 msgstr "ទិដ្ឋភាព​លម្អិត"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:150
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:152
 msgid "Thumbnail View"
 msgstr "ទិដ្ឋភាព​រូបភាព​តូចៗ"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:162
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:164
 msgid "View mode"
 msgstr "របៀប​មើល"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:189
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:191
 msgid "&Remove Layer"
 msgstr "យក​ស្រទាប់​ចេញ"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:197
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:199
 #, fuzzy
 #| msgid "Move Layer"
 msgid "Move Layer Left"
 msgstr "ផ្លាស់ទី ស្រទាប់"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:205
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:207
 #, fuzzy
 #| msgid "Move Layer"
 msgid "Move Layer Right"
 msgstr "ផ្លាស់ទី ស្រទាប់"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:212
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:214
 msgid "&Properties..."
 msgstr "លក្ខណៈ​សម្បត្តិ..."
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:230
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:232
 #, fuzzy
 #| msgid "Select Opaque"
 msgid "&Select Opaque"
 msgstr "ជ្រើស​ស្រអាប់"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:475
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:256
+#, fuzzy
+#| msgid "No Selection"
+msgid "&Show Global Selection Mask"
+msgstr "គ្មាន​ជម្រើស"
+
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:258
+msgctxt "@info:tooltip"
+msgid ""
+"Shows global selection as a usual selection mask in <interface>Layers</"
+"interface> docker"
+msgstr ""
+
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:487
 #: ui/kis_layer_manager.cc:283
 msgid "&Merge with Layer Below"
 msgstr "បញ្ចូល​ស្រទាប់​ខាង​ក្រោម​ចូល​គ្នា​"
 
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:479
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:491
 #, fuzzy
 #| msgid "&Invert"
 msgid "&Convert"
@@ -3422,6 +3493,14 @@ msgstr ""
 msgid "Fit"
 msgstr "តម្រង"
 
+#. i18n: ectx: property (text), widget (QPushButton, bnZoomAdjust)
+#: plugins/extensions/dockers/imagedocker/forms/wdgImageViewPopup.ui:35
+#, fuzzy
+#| msgid "Adjust"
+msgctxt "Zoom mode to fit by only one dimension - width or height"
+msgid "Adjust"
+msgstr "លៃតម្រូវ"
+
 #. i18n: ectx: property (text), widget (QPushButton, bnZoom100)
 #: plugins/extensions/dockers/imagedocker/forms/wdgImageViewPopup.ui:48
 #: plugins/paintops/curvebrush/kis_curves_opacity_option.cpp:26
@@ -3581,7 +3660,7 @@ msgid "LUT file:"
 msgstr "ទម្រង់​ស្រទាប់ ៖"
 
 #. i18n: ectx: property (text), widget (QToolButton, m_bnClearLut)
-#: plugins/extensions/dockers/lut/wdglut.ui:186 ui/tool/kis_tool.cc:545
+#: plugins/extensions/dockers/lut/wdglut.ui:186
 msgid "Clear"
 msgstr "ជម្រះ"
 
@@ -3748,6 +3827,9 @@ msgid "Layer Effects"
 msgstr "បែបផែន​ស្រទាប់"
 
 #: plugins/extensions/dropshadow/kis_dropshadow.cc:126
+#, fuzzy
+#| msgid "Add Drop Shadow"
+msgctxt "(qtundo-format)"
 msgid "Add Drop Shadow"
 msgstr "បន្ថែម​ស្រមោល​ទម្លាក់"
 
@@ -3826,7 +3908,7 @@ msgstr ""
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgSplash)
 #: plugins/extensions/gmic/kis_gmic_plugin.cpp:158
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:167 ui/kis_aboutdata.h:44
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:166 ui/kis_aboutdata.h:44
 #: wdgsplash.ui:300
 msgid "Krita"
 msgstr "កម្មវិធី​ krita "
@@ -3835,13 +3917,14 @@ msgstr "កម្មវិធី​ krita "
 msgid "Sorry, this filter is crashing Krita and is turned off."
 msgstr ""
 
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:167
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:166
 msgid "Sorry, this input mode is not implemented"
 msgstr ""
 
-#: plugins/extensions/gmic/kis_gmic_plugin.cpp:172
+#: plugins/extensions/gmic/kis_gmic_plugin.cpp:170
 #, fuzzy
 #| msgid "direction filter"
+msgctxt "(qtundo-format)"
 msgid "Gmic filter"
 msgstr "តម្រង​ទិស"
 
@@ -4063,7 +4146,6 @@ msgstr "បង្ខំ​ឲ្យ​មាន​សមាមាត្រ"
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, grpAngle)
 #: plugins/extensions/imagesize/wdg_canvassize.ui:158
-#: plugins/extensions/offsetimage/kis_offset_processing_visitor.cpp:109
 #: plugins/extensions/offsetimage/wdg_offsetimage.ui:20
 msgid "Offset"
 msgstr "អុហ្វសិត"
@@ -4688,8 +4770,6 @@ msgstr "តុល្យភាពពណ៌ស ៖"
 #. i18n: ectx: property (text), item, widget (QComboBox, editWhiteBalance)
 #. i18n: ectx: property (text), widget (QRadioButton, customRadioButton)
 #: plugins/extensions/metadataeditor/editors/exif.ui:924
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
-#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1037
 msgid "Custom"
 msgstr "ផ្ទាល់ខ្លួន"
@@ -4846,6 +4926,22 @@ msgstr "តម្លៃ"
 msgid "&Edit metadata..."
 msgstr "កែ​សម្រួល​ទិន្នន័យ​មេតា..."
 
+#: plugins/extensions/modify_selection/dlg_border_selection.cc:31
+msgid "Border Selection"
+msgstr "ការ​ជ្រើស​ស៊ុម"
+
+#: plugins/extensions/modify_selection/dlg_feather_selection.cc:31
+msgid "Feather Selection"
+msgstr "ការជ្រើស​សណ្ឋាន​ពិសេស"
+
+#: plugins/extensions/modify_selection/dlg_grow_selection.cc:31
+msgid "Grow Selection"
+msgstr "បង្កើន​ការ​ជ្រើស​រើស"
+
+#: plugins/extensions/modify_selection/dlg_shrink_selection.cc:31
+msgid "Shrink Selection"
+msgstr "បង្រួញ​ជម្រើស​"
+
 #: plugins/extensions/modify_selection/modify_selection.cc:42
 msgid "Grow Selection..."
 msgstr "បង្កើន​ការ​ជ្រើស..."
@@ -4903,13 +4999,6 @@ msgstr "បង្រួម"
 msgid "Shrink from image border"
 msgstr "បង្រួញ​ពី​ស៊ុម​រូបភាព"
 
-#: plugins/extensions/offsetimage/dlg_offsetimage.cpp:28
-#: plugins/extensions/offsetimage/offsetimage.cpp:73
-#, fuzzy
-#| msgid "Offset scale"
-msgid "Offset Image"
-msgstr "មាត្រដ្ឋាន​អុហ្វសិត"
-
 #: plugins/extensions/offsetimage/offsetimage.cpp:48
 #, fuzzy
 #| msgid "&Shear Image..."
@@ -4922,9 +5011,31 @@ msgstr "កាត់​រូបភាព​..."
 msgid "&Offset Layer..."
 msgstr "កាត់​ស្រទាប់..."
 
+#: plugins/extensions/offsetimage/offsetimage.cpp:73
+#, fuzzy
+#| msgid "Offset scale"
+msgctxt "(qtundo-format)"
+msgid "Offset Image"
+msgstr "មាត្រដ្ឋាន​អុហ្វសិត"
+
+#: plugins/extensions/offsetimage/offsetimage.cpp:74
+#, fuzzy
+#| msgid "Offset scale"
+msgctxt "@title:window"
+msgid "Offset Image"
+msgstr "មាត្រដ្ឋាន​អុហ្វសិត"
+
 #: plugins/extensions/offsetimage/offsetimage.cpp:97
 #, fuzzy
 #| msgid "Offset scale"
+msgctxt "(qtundo-format)"
+msgid "Offset Layer"
+msgstr "មាត្រដ្ឋាន​អុហ្វសិត"
+
+#: plugins/extensions/offsetimage/offsetimage.cpp:98
+#, fuzzy
+#| msgid "Offset scale"
+msgctxt "@title:window"
 msgid "Offset Layer"
 msgstr "មាត្រដ្ឋាន​អុហ្វសិត"
 
@@ -4933,11 +5044,11 @@ msgstr "មាត្រដ្ឋាន​អុហ្វសិត"
 msgid "Offset by x/2, y/2"
 msgstr ""
 
-#: plugins/extensions/rotateimage/rotateimage.cc:46
+#: plugins/extensions/rotateimage/rotateimage.cc:47
 msgid "&Rotate Image..."
 msgstr "បង្វិល​រូបភាព..."
 
-#: plugins/extensions/rotateimage/rotateimage.cc:50
+#: plugins/extensions/rotateimage/rotateimage.cc:51
 #, fuzzy
 #| msgctxt "rotate image 90 degrees to the right"
 #| msgid "Rotate Image of 90° to the Right"
@@ -4945,7 +5056,7 @@ msgctxt "rotate image 90 degrees to the right"
 msgid "Rotate Image 90° to the Right"
 msgstr "បង្វិល​រូបភាព​ត្រឹម​ ៩០ ដឺក្រេ​ ទៅ​ស្តាំ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:54
+#: plugins/extensions/rotateimage/rotateimage.cc:55
 #, fuzzy
 #| msgctxt "rotate image 180 degrees to the right"
 #| msgid "Rotate Image of 180°"
@@ -4953,7 +5064,7 @@ msgctxt "rotate image 180 degrees to the right"
 msgid "Rotate Image 180°"
 msgstr "បង្វិល​រូបភាព​ត្រឹម​ ១៨០ ដឺក្រេ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:58
+#: plugins/extensions/rotateimage/rotateimage.cc:59
 #, fuzzy
 #| msgctxt "rotate image 90 degrees to the left"
 #| msgid "Rotate Image of 90° to the Left"
@@ -4961,25 +5072,23 @@ msgctxt "rotate image 90 degrees to the left"
 msgid "Rotate Image 90° to the Left"
 msgstr "បង្វិល​រូបភាព​ត្រឹម​ ៩០ ដឺក្រេ​ទៅ​ឆ្វេង"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:62
-#: plugins/extensions/rotateimage/rotateimage.cc:143
+#: plugins/extensions/rotateimage/rotateimage.cc:63
 #, fuzzy
 #| msgid "Mirror Horizontally"
 msgid "Mirror Image Horizontally"
 msgstr "ការ​ឆ្លុះ​ផ្ដេក"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:66
-#: plugins/extensions/rotateimage/rotateimage.cc:136
+#: plugins/extensions/rotateimage/rotateimage.cc:67
 #, fuzzy
 #| msgid "Mirror Vertically"
 msgid "Mirror Image Vertically"
 msgstr "ការ​ឆ្លុះ​បញ្ឈរ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:70
+#: plugins/extensions/rotateimage/rotateimage.cc:71
 msgid "&Rotate Layer..."
 msgstr "បង្វិល ស្រទាប់..."
 
-#: plugins/extensions/rotateimage/rotateimage.cc:76
+#: plugins/extensions/rotateimage/rotateimage.cc:77
 #, fuzzy
 #| msgctxt "rotate the layer 180 degrees"
 #| msgid "Rotate Layer of 180°"
@@ -4987,7 +5096,7 @@ msgctxt "rotate the layer 180 degrees"
 msgid "Rotate Layer 180°"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ១៨០ ដឺក្រេ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:82
+#: plugins/extensions/rotateimage/rotateimage.cc:83
 #, fuzzy
 #| msgctxt "rotate the layer 90 degrees to the right"
 #| msgid "Rotate Layer of 90° to the Right"
@@ -4995,13 +5104,31 @@ msgctxt "rotate the layer 90 degrees to the right"
 msgid "Rotate Layer 90° to the Right"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ៩០ ដឺក្រេ​ទៅ​ស្តាំ"
 
-#: plugins/extensions/rotateimage/rotateimage.cc:88
+#: plugins/extensions/rotateimage/rotateimage.cc:89
 #, fuzzy
 #| msgctxt "rotate the layer 90 degrees to the left"
 #| msgid "Rotate Layer of 90° to the Left"
 msgctxt "rotate the layer 90 degrees to the left"
 msgid "Rotate Layer 90° to the Left"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ៩០ ដឺក្រេ​ទៅ​ឆ្វេង"
+
+#: plugins/extensions/rotateimage/rotateimage.cc:137
+#, fuzzy
+#| msgid "Mirror Vertically"
+msgctxt "(qtundo-format)"
+msgid "Mirror Image Vertically"
+msgstr "ការ​ឆ្លុះ​បញ្ឈរ"
+
+#: plugins/extensions/rotateimage/rotateimage.cc:144
+#, fuzzy
+#| msgid "Mirror Horizontally"
+msgctxt "(qtundo-format)"
+msgid "Mirror Image Horizontally"
+msgstr "ការ​ឆ្លុះ​ផ្ដេក"
+
+#: plugins/extensions/rotateimage/rotateimage.cc:156
+msgid "Rotate Layer"
+msgstr "បង្វិល​ស្រទាប់"
 
 #. i18n: ectx: Menu (Rotate)
 #: plugins/extensions/rotateimage/rotateimage.rc:5
@@ -5045,9 +5172,15 @@ msgid "&Custom:"
 msgstr "ផ្ទាល់ខ្លួន ៖"
 
 #: plugins/extensions/separate_channels/dlg_separate.cc:40
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:214
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:76
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:87
+msgid "Separate Image"
+msgstr "បំបែក​រូបភាព"
+
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:214
+#, fuzzy
+#| msgid "Separate Image"
+msgctxt "(qtundo-format)"
 msgid "Separate Image"
 msgstr "បំបែក​រូបភាព"
 
@@ -5124,6 +5257,13 @@ msgstr "បន្ថយ​មាត្រដ្ឋាន​ទៅ ៨ ប៊ី�
 #: plugins/extensions/separate_channels/wdg_separations.ui:138
 msgid "Output to color, not grayscale"
 msgstr "បង្ហាញ​ជា​ពណ៌ មិនមែន​ជាមាត្រដ្ឋាន​ប្រផេះទេ"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
+#: plugins/extensions/shearimage/dlg_shearimage.cc:32
+#: plugins/extensions/shearimage/shearimage.cc:64
+#: plugins/extensions/shearimage/wdg_shearimage.ui:14
+msgid "Shear Image"
+msgstr "កាត់​រូបភាព​"
 
 #: plugins/extensions/shearimage/shearimage.cc:40
 msgid "&Shear Image..."
@@ -5243,7 +5383,7 @@ msgstr "រាងឥន្ទធនូ"
 #: plugins/paintops/experiment/wdgshapeoptions.ui:46
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:326
 #: plugins/paintops/spray/wdgshapeoptions.ui:46
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:214
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:215
 msgid "Shape:"
 msgstr "រូបរាង​ ៖"
 
@@ -5807,6 +5947,11 @@ msgid "&Index Colors..."
 msgstr "ពណ៌​តាន់..."
 
 #: plugins/filters/indexcolors/indexcolors.cpp:82
+msgctxt "Color palette shade"
+msgid "Base"
+msgstr ""
+
+#: plugins/filters/indexcolors/indexcolors.cpp:82
 #, fuzzy
 #| msgid "Brightness"
 msgctxt "Color palette shade"
@@ -5819,11 +5964,6 @@ msgstr "ភាព​ភ្លឺ"
 msgctxt "Color palette shade"
 msgid "Light"
 msgstr "ពន្លឺ ៖"
-
-#: plugins/filters/indexcolors/indexcolors.cpp:82
-msgctxt "Color palette shade"
-msgid "Base"
-msgstr ""
 
 #: plugins/filters/indexcolors/indexcolors.cpp:82
 #, fuzzy
@@ -6212,7 +6352,7 @@ msgstr "ជ្រុង​មូល..."
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
 #: plugins/filters/roundcorners/kis_round_corners_filter.cpp:130
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:284
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:285
 #: plugins/tools/selectiontools/kis_tool_select_magnetic_option_widget.ui:103
 msgid "Radius"
 msgstr "កាំ"
@@ -6345,13 +6485,13 @@ msgstr ""
 msgid "HDR Layer"
 msgstr "ស្រទាប់"
 
-#: plugins/formats/exr/exr_converter.cc:1071
+#: plugins/formats/exr/exr_converter.cc:1070
 #, kde-format
 msgctxt "@item:unsupported-node-message"
 msgid "%1 (type: \"%2\")"
 msgstr ""
 
-#: plugins/formats/exr/exr_converter.cc:1076
+#: plugins/formats/exr/exr_converter.cc:1075
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -6360,7 +6500,7 @@ msgid ""
 "saved to the final EXR file</warning></para>"
 msgstr ""
 
-#: plugins/formats/exr/exr_converter.cc:1081
+#: plugins/formats/exr/exr_converter.cc:1080
 msgctxt "@title:window"
 msgid "Layers will be lost"
 msgstr ""
@@ -6437,8 +6577,83 @@ msgstr ""
 msgid "Krita could not create a new image."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: plugins/formats/jp2/jp2_converter.cc:345
-#: plugins/formats/jp2/jp2_converter.cc:356
+#: plugins/formats/heightmap/kis_heightmap_export.cpp:79
+msgid "Cannot export this image to a heightmap: it is not square"
+msgstr ""
+
+#: plugins/formats/heightmap/kis_heightmap_export.cpp:84
+msgid "Cannot export this image to a heightmap: it is not grayscale"
+msgstr ""
+
+#: plugins/formats/heightmap/kis_heightmap_export.cpp:89
+#, fuzzy
+#| msgid "PPM Export Options"
+msgid "HeightMap Export Options"
+msgstr "ជម្រើស​នាំ​ចេញ PPM"
+
+#: plugins/formats/heightmap/kis_heightmap_export.cpp:139
+#, fuzzy
+#| msgid "Scale Image"
+msgid "Downscale Image"
+msgstr "ធ្វើ​​មាត្រដ្ឋាន រូបភាព"
+
+#: plugins/formats/heightmap/kis_heightmap_export.cpp:140
+msgid ""
+"You specified the .r8 extension for a 16 bit/channel image. Do you want to "
+"save as 8 bit? Your image data will not be changed."
+msgstr ""
+
+#: plugins/formats/heightmap/kis_heightmap_import.cpp:83
+msgid "The file is not 8 or 16 bits raw"
+msgstr ""
+
+#: plugins/formats/heightmap/kis_heightmap_import.cpp:112
+#, fuzzy
+#| msgid "PDF Import Options"
+msgid "R16 HeightMap Import Options"
+msgstr "ជម្រើសនាំចូល PDF"
+
+#: plugins/formats/heightmap/kis_heightmap_import.cpp:132
+msgid "File does not exist."
+msgstr ""
+
+#: plugins/formats/heightmap/kis_heightmap_import.cpp:158
+msgid "Source file is not the right size for the specified width and height."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:40
+#, fuzzy
+#| msgid "Randomness:"
+msgid "Endianness:"
+msgstr "ភាព​ចៃដន្យ​ ៖"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioMac)
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:58
+msgid "Big Endian"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioMac)
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:61
+#, fuzzy
+#| msgid "Macro"
+msgid "Mac"
+msgstr "ម៉ាក្រូ​"
+
+#. i18n: ectx: property (toolTip), widget (QRadioButton, radioPC)
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:68
+msgid "Little Endian"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QRadioButton, radioPC)
+#: plugins/formats/heightmap/kis_wdg_options_heightmap.ui:71
+#, fuzzy
+#| msgid "IPTC"
+msgid "PC"
+msgstr "IPTC"
+
+#: plugins/formats/jp2/jp2_converter.cc:344
+#: plugins/formats/jp2/jp2_converter.cc:355
 #: plugins/formats/tiff/kis_tiff_writer_visitor.cpp:67
 #, kde-format
 msgid "Cannot export images in %1.\n"
@@ -6600,7 +6815,7 @@ msgstr "កាត់​ស្រទាប់"
 
 #: plugins/formats/ora/ora_export.cc:100
 msgid ""
-"This image contains vector, clone or generated layers..\n"
+"This image contains vector, clone or fill layers..\n"
 "These layers will be saved as raster layers."
 msgstr ""
 
@@ -7123,27 +7338,27 @@ msgstr "ជក់​​ស្នាម​ប្រឡាក់​ពណ៌"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
 #, fuzzy
-#| msgid "smudge length"
-msgid "Smudge Length"
-msgstr "ប្រវែង​ពណ៌​ព្រលាំង"
-
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
-#, fuzzy
 #| msgid "Length:"
 msgid "Length: "
 msgstr "ប្រវែង ៖"
 
-#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:52
 #, fuzzy
-#| msgid "Smudge Brush"
-msgid "Smudge Radius"
-msgstr "ស្នាម​​ប្រឡាក់​កាំ"
+#| msgid "smudge length"
+msgid "Smudge Length"
+msgstr "ប្រវែង​ពណ៌​ព្រលាំង"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
 #, fuzzy
 #| msgid "Radius:"
 msgid "Radius: "
 msgstr "កាំ ៖"
+
+#: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:53
+#, fuzzy
+#| msgid "Smudge Brush"
+msgid "Smudge Radius"
+msgstr "ស្នាម​​ប្រឡាក់​កាំ"
 
 #: plugins/paintops/colorsmudge/kis_colorsmudgeop_settings_widget.cpp:54
 msgid "Color Rate"
@@ -7472,7 +7687,6 @@ msgstr "ចំនួន​បន្ទាត់"
 
 #. i18n: ectx: property (text), widget (QRadioButton, polygonRBox)
 #: plugins/paintops/dynadraw/wdgdynaoptions.ui:227
-#: plugins/tools/tool_polygon/kis_tool_polygon.cc:63
 msgid "Polygon"
 msgstr "ពហុកោណ"
 
@@ -7615,8 +7829,7 @@ msgid "Texture:"
 msgstr "វាយន​ភាព"
 
 #: plugins/paintops/gridbrush/grid_paintop_plugin.cpp:41
-#: ui/canvas/kis_grid_manager.cpp:47 ui/dialogs/kis_dlg_preferences.cc:636
-#: ui/dialogs/kis_dlg_preferences.cc:637
+#: ui/dialogs/kis_dlg_preferences.cc:636 ui/dialogs/kis_dlg_preferences.cc:637
 msgid "Grid"
 msgstr "ក្រឡា​ចត្រង្គ"
 
@@ -8364,6 +8577,11 @@ msgstr "ព័ត៌មាន​ជំនួយ​ជក់"
 msgid "Predefined"
 msgstr "ជក់​ដែល​បានកំណត់​ជា​ស្រេច"
 
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:64
+#: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:66
+msgid "Stamp"
+msgstr ""
+
 #. i18n: ectx: property (title), widget (QGroupBox, grpClipboard)
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:68
 #: plugins/paintops/libpaintop/kis_brush_selection_widget.cpp:70
@@ -8449,8 +8667,6 @@ msgstr "ពណ៌​​ធម្មតា"
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbStyle)
 #: plugins/paintops/libpaintop/kis_color_source_option.cpp:56
 #: plugins/paintops/libpaintop/kis_pressure_gradient_option.cpp:26
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:151
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:165
 #: plugins/tools/tool_text/wdgtextoptions.ui:53
 msgid "Gradient"
 msgstr "ជម្រាល​"
@@ -8500,15 +8716,19 @@ msgstr "X-Tilt"
 msgid "Y-Tilt"
 msgstr "Y-Tilt"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:50
-msgid "Ascension"
-msgstr "ការ​ឡើង"
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:57
+#, fuzzy
+#| msgid "Direction:"
+msgid "Tilt direction"
+msgstr "ថិរវេលា ៖"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:51
-msgid "Declination"
-msgstr "Declination"
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:58
+#, fuzzy
+#| msgid "Display Selection"
+msgid "Tilt elevation"
+msgstr "បង្ហាញ​ជម្រើស"
 
-#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:53
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.h:61
 #, fuzzy
 #| msgid "Z- Test pressure"
 msgid "Tangential pressure"
@@ -8574,7 +8794,7 @@ msgid "Lower value "
 msgstr "តម្លៃ​ពណ៌"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option.cpp:30
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:242
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:243
 #: ui/kis_paintop_box.cc:252
 msgid "Mirror"
 msgstr "ឆ្លុះ"
@@ -8588,12 +8808,12 @@ msgid "Mirrored"
 msgstr "ឆ្លុះMirrored"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:35
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:262
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:263
 msgid "Horizontally"
 msgstr "ផ្ដេក"
 
 #: plugins/paintops/libpaintop/kis_pressure_mirror_option_widget.cpp:37
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:264
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:265
 msgid "Vertically"
 msgstr "បញ្ឈរ"
 
@@ -8714,14 +8934,14 @@ msgid "Texturing Mode:"
 msgstr "របៀបវាស់ ៖​"
 
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:105
-msgid "Cut Off Disabled"
-msgstr ""
-
-#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
 #, fuzzy
 #| msgid "Custom Brush"
 msgid "Cut Off Brush"
 msgstr "ច្រាស​ផ្ទាល់​ខ្លួន"
+
+#: plugins/paintops/libpaintop/kis_texture_option.cpp:105
+msgid "Cut Off Disabled"
+msgstr ""
 
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:105
 #, fuzzy
@@ -8745,9 +8965,9 @@ msgstr ""
 
 #: plugins/paintops/libpaintop/kis_texture_option.cpp:119
 #, fuzzy
-#| msgid "Texture"
-msgid "Invert Texture:"
-msgstr "វាយន​ភាព"
+#| msgid "Saturation"
+msgid "Invert Pattern:"
+msgstr "តិត្ថិភាព"
 
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_distance.cc:29
 msgid "0 px"
@@ -8918,10 +9138,6 @@ msgstr ""
 "នេះ​ជា​ការបញ្ចូល​ដែល​កំណត់​ដោយ​អ្នក​ប្រើ ។ ចំពោះ​ព័ត៌មាន​លម្អិត សូម​មើល​ការកំណត់​ 'ការ​បញ្ចូល​ផ្ទាល់​ខ្លួន​' ។"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:156
-msgid "opaque"
-msgstr "ស្រអាប់"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:156
 msgid ""
 "0 means brush is transparent, 1 fully visible\n"
 "(also known as alpha or opacity)"
@@ -8929,9 +9145,9 @@ msgstr ""
 "តម្លៃ ០ មាន​ន័យ​ថា​ជក់​មាន​ភាព​ថ្លា តម្លៃ​ ១ អាច​មើល​ឃើញ​ទាំង​ស្រុង​\n"
 "(ក៏​ត្រូវ​បាន​ស្គាល់​ថា​ជា​អាល់ហ្វា ឬ​ភាព​ស្រអាប់​ផង​ដែរ)"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:157
-msgid "opaque multiply"
-msgstr "គុណ​ភាព​ស្រអាប់​"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:156
+msgid "opaque"
+msgstr "ស្រអាប់"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:157
 msgid ""
@@ -8941,9 +9157,9 @@ msgstr ""
 "វា​ត្រូវគុណ​ជា​មួយ​ភាព​ស្រអាប់ ។ វា​ត្រូវ​បាន​ប្រើ​សម្រាប់បង្កើត​ភាព​ស្រអាប់​ ដោយ​ផ្អែក​លើ​សម្ពាធ (ឬ​ទិន្ន​ន័យ​"
 "បញ្ចូល​ផ្សេង​ទៀត) ។"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:158
-msgid "opaque linearize"
-msgstr "ធ្វើ​លីនេអ៊ែរ​ភាព​ស្រអាប់"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:157
+msgid "opaque multiply"
+msgstr "គុណ​ភាព​ស្រអាប់​"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:158
 msgid ""
@@ -8964,6 +9180,10 @@ msgstr ""
 "១.០ តម្លៃ​ស្រអាប់​ខាងលើ​នេះ​គឺ​សម្រាប់​ការ​គូស​ខ្វាច់​របស់​ជក់​ចុង​ក្រោយ ដោយ​សន្មត​ថាភីកសែល​នីមួយ​ៗ​នឹង​ទទួល​បាន​​ "
 "(dabs_per_radius*2) ស្នាម​ឆ្នូត​របស់​ជក់​ជា​ទូទៅ​​ក្នុង​អំឡុង​ពេលដែល​​មាន​ការ​គូស​ខ្វាច់"
 
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:158
+msgid "opaque linearize"
+msgstr "ធ្វើ​លីនេអ៊ែរ​ភាព​ស្រអាប់"
+
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:159
 msgid ""
 "basic brush radius (logarithmic)\n"
@@ -8975,12 +9195,12 @@ msgstr ""
 " ៣.០ មធ្យមភាគ ២០​ ភីកសែល"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:160
-msgid "hardness"
-msgstr "ភាព​រឹង"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:160
 msgid "hard brush-circle borders (setting to zero will draw nothing)"
 msgstr "ស៊ុម​រង្វង់របស់​ជក់​រឹង​ (ការកំណត់​ទៅ​ជា​សូន្យ​នឹង​មិន​គូស​អ្វី​ទាំង​អស់)"
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:160
+msgid "hardness"
+msgstr "ភាព​រឹង"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:161
 msgid "dabs per basic radius"
@@ -9015,10 +9235,6 @@ msgid "dabs to draw each second, no matter how far the pointer moves"
 msgstr "ស្នាម​​​ត្រូវ​គូស​​​ក្នុង​មួយ​វិនាទី ទោះ​បី​ជា​ថា​ទ្រនិច​ផ្លាស់​ទី​ឆ្ងាយ​ប៉ុណ្ណា​ក៏ដោយ"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:164
-msgid "radius by random"
-msgstr "កាំ​តាម​ការ​ស្មាន​ៗ"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:164
 msgid ""
 "Alter the radius randomly each dab. You can also do this with the by_random "
 "input on the radius setting. If you do it here, there are two differences:\n"
@@ -9031,9 +9247,9 @@ msgstr ""
 "១) តម្លៃ​ស្រអាប់​នឹង​ត្រូវ​បាន​កែ​ ហើយ​ស្នាម​ឆ្នូត​ធំ​ៗ​របស់​កាំ​នោះ​នឹង​មាន​លក្ខណ​កាន់​តែ​ថ្លា \n"
 "២) វា​នឹង​មិន​ផ្លាស់​ប្តូរ​កាំ​ជាក់​ស្តែង​ដែល​មើល​ឃើញ​ដោយ​ dabs_per_actual_radius"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:165
-msgid "speed1 filter"
-msgstr "​តម្រងល្បឿន​ទី ១"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:164
+msgid "radius by random"
+msgstr "កាំ​តាម​ការ​ស្មាន​ៗ"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:165
 msgid ""
@@ -9044,17 +9260,17 @@ msgstr ""
 " ០.០ នឹង​ផ្លាស់​ប្តូរ​ភ្លាម​ៗ​ នៅ​ពេល​ដែល​ល្បឿន​របស់​អ្នក​ផ្លាស់​ប្តូរ​ (មិន​ផ្តល់​អនុសាសន៍​ទេ ប៉ុន្តែសូម​​សាក​ល្បង​វា​ "
 "។)"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:166
-msgid "speed2 filter"
-msgstr "​តម្រងល្បឿន​​ទី ២"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:165
+msgid "speed1 filter"
+msgstr "​តម្រងល្បឿន​ទី ១"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:166
 msgid "same as 'speed1 slowness' but note that the range is different"
 msgstr "ដូច​គ្នា​នឹង​ 'ភាព​យឺត​របស់​ល្បឿន​ទី​ ១'  ដែរ​ ប៉ុន្តែ​ចំណាំ​ថា​ជួរ​គឺ​ខុស​គ្នា"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:167
-msgid "speed1 gamma"
-msgstr "​ហ្គាម៉ា​ល្បឿន​ទី ១"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:166
+msgid "speed2 filter"
+msgstr "​តម្រងល្បឿន​​ទី ២"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:167
 msgid ""
@@ -9070,17 +9286,17 @@ msgstr ""
 " ល្បឿន​លឿន​បំផុត +៨.០ ​នឹង​បង្កើន​ល្បឿន​ទី ១ ឲ្យ​កាន់​តែលឿន ។\n"
 "ចំពោះ​ល្បឿន​ដែល​យឺត​បំផុត​នឹង​ខុស​​ពី​នេះ ។"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:168
-msgid "speed2 gamma"
-msgstr "ហ្គាម៉ា​ល្បឿន​ទី ២"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:167
+msgid "speed1 gamma"
+msgstr "​ហ្គាម៉ា​ល្បឿន​ទី ១"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:168
 msgid "same as 'speed1 gamma' for speed2"
 msgstr "ដូច​គ្នា​នឹង​ 'ហ្គាម៉ា​ល្បឿន​ទី​ ១ ' សម្រាប់​ល្បឿន​ទី ២ ដែរ"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:169
-msgid "jitter"
-msgstr "ញាក់​ៗ"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:168
+msgid "speed2 gamma"
+msgstr "ហ្គាម៉ា​ល្បឿន​ទី ២"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:169
 msgid ""
@@ -9094,9 +9310,9 @@ msgstr ""
 " គម្លាត​ស្តង់ដារ ១.០ ជា​កាំ​មូលដ្ឋាន​មួយ​ដែល​នៅ​ឆ្ងាយ​\n"
 "<តម្លៃ​អវិជ្ជមាន​ ០.០ មិន​បង្ក​ឲ្យ​មាន​ភាព​ញាក់​ៗ​ទេ"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:170
-msgid "offset by speed"
-msgstr "អុហ្វសិត​តាម​ល្បឿន"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:169
+msgid "jitter"
+msgstr "ញាក់​ៗ"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:170
 msgid ""
@@ -9110,17 +9326,17 @@ msgstr ""
 "> ០ បាន​គូស​ទីតាំង​ត្រង់​ទ្រនិច​ផ្លាស់​ទី​ទៅ\n"
 "< ០ បាន​គូស​ទីតាំង​ត្រង់​ទ្រនិច​ផ្លាស់​ទី​មក​"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:171
-msgid "offset by speed filter"
-msgstr "អុហ្វសិត​តាម​តម្រង​ល្បឿន"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:170
+msgid "offset by speed"
+msgstr "អុហ្វសិត​តាម​ល្បឿន"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:171
 msgid "how slow the offset goes back to zero when the cursor stops moving"
 msgstr "ល្បឿន​យឺត​ប៉ុណ្ណា​ដែល​អុហ្វសិត​ត្រឡប់​ទៅ​កាន់សូន្យ​វិញ នៅ​ពេល​ទ្រនិច​ឈប់​ផ្លាស់​ទី"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:172
-msgid "slow position tracking"
-msgstr "ពន្យឺត​​​ដានទីតាំង​"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:171
+msgid "offset by speed filter"
+msgstr "អុហ្វសិត​តាម​តម្រង​ល្បឿន"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:172
 msgid ""
@@ -9130,9 +9346,9 @@ msgstr ""
 "ពន្យឺតល្បឿន​​ដាន​ទ្រនិច ។ ០ បិទ​វា តម្លៃ​ខ្ពស់​ជាង​នេះ​នឹង​យក​ភាព​ញាក់​ខ្លាំង​ចេញ​ពី​ក្នុង​ចលនា​ទស្សន៍​ទ្រនិច ។ មាន​"
 "សារៈ​សំខាន់​បំផុត​សម្រាប់​ការគូស​ភាព​រលោង និង​គ្រោង​ដែល​មានលក្ខណៈ​ជា​រូប​កំប្លែង ។"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:173
-msgid "slow tracking per dab"
-msgstr "ពន្យឺត​ដាន​ក្នុង​មួយ​ស្នាម​"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:172
+msgid "slow position tracking"
+msgstr "ពន្យឺត​​​ដានទីតាំង​"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:173
 msgid ""
@@ -9142,9 +9358,9 @@ msgstr ""
 "ស្រដៀង​គ្នា​នឹង​ខាង​លើ​ដែរ ប៉ុន្តែ​ខុស​គ្នា​ត្រង់​កម្រិត​ស្នាម​ឆ្នូត​ៗ​របស់​ជក់​ (មិន​អើ​ពើ​ចំនួន​ដង​ដែល​កន្លង​ហួស បើ​សិន​"
 "ស្នាម​ឆ្នូត​របស់​ជក់​មិន​ពឹង​ផ្អែក​លើ​ពេល​វេលា)"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:174
-msgid "tracking noise"
-msgstr "ដាន​ដែល​មិន​ច្បាស់"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:173
+msgid "slow tracking per dab"
+msgstr "ពន្យឺត​ដាន​ក្នុង​មួយ​ស្នាម​"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:174
 msgid ""
@@ -9153,6 +9369,10 @@ msgid ""
 msgstr ""
 "បន្ថែម​ភាព​ស្មាន​ៗ​ទៅ​ព្រួញ​កណ្តុរ​ ​ជា​ទូ​ទៅ​វា​នឹង​បង្កើត​នូវ​បន្ទាត់​តូច​ៗ​ជា​ច្រើន​នៅ​ក្នុង​ទិស​ព្រាវ​ៗ  ប្រហែល​ជា​អាច​"
 "នឹង​សាក​ល្បង​ជា​មួយនឹង​ 'ពន្យឺត​ដាន​​' ផង​ក៏ថា​បាន​"
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:174
+msgid "tracking noise"
+msgstr "ដាន​ដែល​មិន​ច្បាស់"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:176
 msgid "color hue"
@@ -9171,10 +9391,6 @@ msgid "color value (brightness, intensity)"
 msgstr "តម្លៃ​ពណ៌ (ពន្លឺ  អាំង​តង់ស៊ីតេ)"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:179
-msgid "change color hue"
-msgstr "ផ្លាស់​ប្តូរ​ពណ៌លាំ​ៗរបស់​ពណ៌"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:179
 msgid ""
 "Change color hue.\n"
 "-0.1 small clockwise color hue shift\n"
@@ -9186,9 +9402,9 @@ msgstr ""
 " ០.០ បិទ​\n"
 " ប្តូរ​ពណ៌លាំ​ៗ​ច្រាស​ទ្រនិច​នាឡិកា​ ០.៥ ត្រឹម​ ១៨០ ដឺក្រេ"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:180
-msgid "change color lightness (HSL)"
-msgstr "ផ្លាស់​ប្តូរ​ពន្លឺ​ពណ៌ (HSL)"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:179
+msgid "change color hue"
+msgstr "ផ្លាស់​ប្តូរ​ពណ៌លាំ​ៗរបស់​ពណ៌"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:180
 msgid ""
@@ -9202,9 +9418,9 @@ msgstr ""
 " ០.០​ បិទ​\n"
 " ១.០ កាន់​តែ​ស"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:181
-msgid "change color satur. (HSL)"
-msgstr "ផ្លាស់​ប្តូរតិត្ថិភាព​របស់​ពណ៌ (HSL)"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:180
+msgid "change color lightness (HSL)"
+msgstr "ផ្លាស់​ប្តូរ​ពន្លឺ​ពណ៌ (HSL)"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:181
 msgid ""
@@ -9218,9 +9434,9 @@ msgstr ""
 " ០.០ បិទ\n"
 " ១.០ កាន់​តែ​មាន​លក្ខណៈ​តិត្ថិភាព"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:182
-msgid "change color value (HSV)"
-msgstr "ផ្លាស់​ប្តូរ​តម្លៃ​ពណ៌ (HSV)"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:181
+msgid "change color satur. (HSL)"
+msgstr "ផ្លាស់​ប្តូរតិត្ថិភាព​របស់​ពណ៌ (HSL)"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:182
 msgid ""
@@ -9236,9 +9452,9 @@ msgstr ""
 " ០.០ បិទ\n"
 " ១.០ កាន់​តែ​ភ្លឺ"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:183
-msgid "change color satur. (HSV)"
-msgstr "ផ្លាស់​ប្តូរ​តិត្ថិភាព​របស់​ពណ៌ (HSV)"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:182
+msgid "change color value (HSV)"
+msgstr "ផ្លាស់​ប្តូរ​តម្លៃ​ពណ៌ (HSV)"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:183
 msgid ""
@@ -9253,9 +9469,9 @@ msgstr ""
 " ០.០ បិទ​\n"
 " ១.០ កាន់​តែ​មាន​លក្ខណៈ​តិត្ថិភាព"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:184
-msgid "smudge"
-msgstr "ពណ៌​ព្រលាំង"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:183
+msgid "change color satur. (HSV)"
+msgstr "ផ្លាស់​ប្តូរ​តិត្ថិភាព​របស់​ពណ៌ (HSV)"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:184
 msgid ""
@@ -9271,9 +9487,9 @@ msgstr ""
 " ០.៥ លាយ​ពណ៌​ព្រលាំង​ជាមួយ​ពណ៌​របស់​ជក់​\n"
 " ១.០ ប្រើ​តែ​ពណ៌​ព្រលាំង​ប៉ុណ្ណោះ"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:185
-msgid "smudge length"
-msgstr "ប្រវែង​ពណ៌​ព្រលាំង"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:184
+msgid "smudge"
+msgstr "ពណ៌​ព្រលាំង"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:185
 msgid ""
@@ -9286,11 +9502,9 @@ msgstr ""
 "០.០ ផ្លាស់​ប្តូរ​ពណ៌​ព្រលាំង​ភ្លាម​ៗ​\n"
 "១.០ មិន​ផ្លាស់​ប្តូរ​ពណ៌​ព្រលាំង​តែ​ម្តង"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:186
-#, fuzzy
-#| msgid "Smudge Brush"
-msgid "smudge radius"
-msgstr "ស្នាម​​ប្រឡាក់​កាំ"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:185
+msgid "smudge length"
+msgstr "ប្រវែង​ពណ៌​ព្រលាំង"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:186
 msgid ""
@@ -9306,6 +9520,12 @@ msgstr ""
 "-០.៧ ពាក់​កណ្ដាល់​កាំ​​ច្រាស\n"
 "+០.៧ ពីរដង​កាំច្រាស\n"
 "+១.៦ កាំ​ច្រាស​ប្រាំដង (យឺ​ត)"
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:186
+#, fuzzy
+#| msgid "Smudge Brush"
+msgid "smudge radius"
+msgstr "ស្នាម​​ប្រឡាក់​កាំ"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:187
 msgid "eraser"
@@ -9324,10 +9544,6 @@ msgstr ""
 " ០.៥ ភីកសែល​ក្លាយ​ទៅ​ជា​ភាព​ថ្លា 50% "
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:189
-msgid "stroke threshold"
-msgstr "កម្រិត​ពន្លឺ​ខ្វាច់"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:189
 msgid ""
 "How much pressure is needed to start a stroke. This affects the stroke input "
 "only. Mypaint does not need a minimal pressure to start drawing."
@@ -9335,9 +9551,9 @@ msgstr ""
 "ចំនួន​សម្ពាធ​ដែល​ត្រូវ​ការ​ដើម្បី​ចាប់​ផ្តើម​ខ្វាច់​ ។ វា​មាន​ឥទ្ធិ​ពល​ចំពោះ​តែ​ការ​បញ្ចូល​ខ្វាច់​តែ​ប៉ុណ្ណោះ ។ "
 "Mypaint ​មិនត្រូវ​ការ​សម្ពាធ​អប្បបរមា​ ដើម្បី​​​​​ចាប់​ផ្តើម​គំនូរ​ទេ ។"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:190
-msgid "stroke duration"
-msgstr "ថិរ​វេលា​ខ្វាច់"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:189
+msgid "stroke threshold"
+msgstr "កម្រិត​ពន្លឺ​ខ្វាច់"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:190
 msgid ""
@@ -9347,49 +9563,49 @@ msgstr ""
 "ចម្ងាយ​ដែល​អ្នក​​ត្រូវ​ផ្លាស់​ទី​ រហូត​ដល់ការ​បញ្ចូល​​ខ្វាច់ឈាន​ដល់​ ១.០ ។ តម្លៃ​នេះ​ជា​លោការីត​ (តម្លៃ​អវិជ្ជមាន​"
 "នឹង​មិន​ដាក់​ដំណើរ​ការ​បញ្ជ្រាស​ទេ) ។"
 
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:190
+msgid "stroke duration"
+msgstr "ថិរ​វេលា​ខ្វាច់"
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:191
+msgid ""
+"This defines how long the stroke input stays at 1.0. After that it will "
+"reset to 0.0 and start growing again, even if the stroke is not yet "
+"finished.\n"
+"2.0 means twice as long as it takes to go from 0.0 to 1.0\n"
+"9.9 and bigger stands for infinite"
+msgstr ""
+"This defines how long the stroke input stays at 1.0. After that it will "
+"reset to 0.0 and start growing again, even if the stroke is not yet "
+"finished.\n"
+"2.0 means twice as long as it takes to go from 0.0 to 1.0\n"
+"9.9 and bigger stands for infinite"
+
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:191
 msgid "stroke hold time"
 msgstr "ពេល​វេលា​ផ្ទុក​ខ្វាច់"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:191
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:192
 msgid ""
-"This defines how long the stroke input stays at 1.0. After that it will "
-"reset to 0.0 and start growing again, even if the stroke is not yet "
-"finished.\n"
-"2.0 means twice as long as it takes to go from 0.0 to 1.0\n"
-"9.9 and bigger stands for infinite"
+"Set the custom input to this value. If it is slowed down, move it towards "
+"this value (see below). The idea is that you make this input depend on a "
+"mixture of pressure/speed/whatever, and then make other this depend on this "
+"'custom input' instead of repeating this combination everywhere you need "
+"it.\n"
+"If you make it change 'by random' you can generate a slow (smooth) random "
+"input."
 msgstr ""
-"This defines how long the stroke input stays at 1.0. After that it will "
-"reset to 0.0 and start growing again, even if the stroke is not yet "
-"finished.\n"
-"2.0 means twice as long as it takes to go from 0.0 to 1.0\n"
-"9.9 and bigger stands for infinite"
+"Set the custom input to this value. If it is slowed down, move it towards "
+"this value (see below). The idea is that you make this input depend on a "
+"mixture of pressure/speed/whatever, and then make other this depend on this "
+"'custom input' instead of repeating this combination everywhere you need "
+"it.\n"
+"If you make it change 'by random' you can generate a slow (smooth) random "
+"input."
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:192
 msgid "custom input"
 msgstr "ការបញ្ចូល​ផ្ទាល់​ខ្លួន"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:192
-msgid ""
-"Set the custom input to this value. If it is slowed down, move it towards "
-"this value (see below). The idea is that you make this input depend on a "
-"mixture of pressure/speed/whatever, and then make other this depend on this "
-"'custom input' instead of repeating this combination everywhere you need "
-"it.\n"
-"If you make it change 'by random' you can generate a slow (smooth) random "
-"input."
-msgstr ""
-"Set the custom input to this value. If it is slowed down, move it towards "
-"this value (see below). The idea is that you make this input depend on a "
-"mixture of pressure/speed/whatever, and then make other this depend on this "
-"'custom input' instead of repeating this combination everywhere you need "
-"it.\n"
-"If you make it change 'by random' you can generate a slow (smooth) random "
-"input."
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:193
-msgid "custom input filter"
-msgstr "តម្រង​បញ្ចូល​ផ្ទាល់​ខ្លួន"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:193
 msgid ""
@@ -9402,9 +9618,9 @@ msgstr ""
 "កម្រិត​ស្នាម​​ជក់​ (មិន​អើ​ពើ​ចំនួន​ដង​ដែល​បាន​កន្លង​ផុត​ បើ​សិន​ស្នាម​​ជក់​មិន​ពឹង​ផ្អែក​លើ​ពេល​វេលា​) ។\n"
 " ០.០​ មិន​បន្ថយ​ (ការ​ផ្លាស់​ប្តូរ​នឹង​អនុវត្ត​ភ្លាម​ៗ​)"
 
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:195
-msgid "elliptical dab: ratio"
-msgstr "ស្នាម​​​រាង​ពង​ក្រពើ​ ៖ សមាមាត្រ"
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:193
+msgid "custom input filter"
+msgstr "តម្រង​បញ្ចូល​ផ្ទាល់​ខ្លួន"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:195
 msgid ""
@@ -9413,6 +9629,10 @@ msgid ""
 msgstr ""
 "សមាមាត្រ​របស់​ស្នាម​ ត្រូវ​ជា​ >= ១.០ ដែល​ ១.០ មាន​ន័យ​ថា​ជា​ស្នាម​​​មូល​ឥត​ខ្ចោះ ។ ការងារ​ត្រូវ​ធ្វើ ៖ "
 "ធ្វើ​ឲ្យ​ទៅ​ជា​លីនេអ៊ែរឬ​ ​? ប្រហែល​ជា​ចាប់​ផ្តើម​នៅ​ត្រង់​ ០.០ ឬ​ត្រង់​កំណត់​ហេតុ?"
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:195
+msgid "elliptical dab: ratio"
+msgstr "ស្នាម​​​រាង​ពង​ក្រពើ​ ៖ សមាមាត្រ"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:196
 msgid "elliptical dab: angle"
@@ -9431,14 +9651,14 @@ msgstr ""
 " ១៨០.០ ផ្តេក​ម្តង​ទៀត"
 
 #: plugins/paintops/mypaint/mypaint_brush_resource.cpp:197
-msgid "direction filter"
-msgstr "តម្រង​ទិស"
-
-#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:197
 msgid ""
 "a low value will make the direction input adapt more quickly, a high value "
 "will make it smoother"
 msgstr "តម្លៃ​ទាប​នឹង​ធ្វើ​ឲ្យ​ការបញ្ចូល​ទិស​ប្រែ​ប្រួល​កាន់​តែ​លឿន​ តម្លៃ​ខ្ពស់​នឹង​ធ្វើ​ឲ្យ​វា​កាន់​តែ​រលោង"
+
+#: plugins/paintops/mypaint/mypaint_brush_resource.cpp:197
+msgid "direction filter"
+msgstr "តម្រង​ទិស"
 
 #: plugins/paintops/particle/particle_paintop_plugin.cpp:42
 #, fuzzy
@@ -10060,10 +10280,10 @@ msgstr "ច្បាប់​ហ្គូសៀន"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:39
 #, fuzzy
-#| msgid "Brush"
+#| msgid "Predefined Brushes"
 msgctxt "(qtundo-format)"
-msgid "Brush"
-msgstr "ជក់"
+msgid "Freehand Brush Stroke"
+msgstr "ជក់​ដែល​បានកំណត់​ជា​ស្រេច"
 
 #: plugins/tools/defaulttools/kis_tool_brush.cc:167
 #, fuzzy
@@ -10130,10 +10350,8 @@ msgid "Assistant Magnetism"
 msgstr "មេដែក​ជំនួយ"
 
 #: plugins/tools/defaulttools/kis_tool_brush.h:96
-#, fuzzy
-#| msgid "Paint with brushes"
-msgid "Paint with brushes"
-msgstr "គូស​ដោយ​ប្រើ​ជក់"
+msgid "Freehand Brush Tool"
+msgstr ""
 
 #: plugins/tools/defaulttools/kis_tool_colorpicker.cc:248
 msgid "Cannot pick a color as no layer is active."
@@ -10152,9 +10370,25 @@ msgstr "មិន​អាច​សរសេរ​ទៅ​កាន់​ឯក
 msgid "Select a color from the image or current layer"
 msgstr "ជ្រើស​ពណ៌​​ពី​រូបភាព ឬ​ស្រទាប់​បច្ចុប្បន្ន"
 
-#: plugins/tools/defaulttools/kis_tool_ellipse.h:56
-msgid "Draw an ellipse"
+#: plugins/tools/defaulttools/kis_tool_ellipse.cc:64
+#, fuzzy
+#| msgid "Draw an ellipse"
+msgctxt "(qtundo-format)"
+msgid "Draw Ellipse"
 msgstr "គូស​រង្វង់​ពង​ក្រពើ"
+
+#: plugins/tools/defaulttools/kis_tool_ellipse.h:56
+#, fuzzy
+#| msgid "Ellipse"
+msgid "Ellipse Tool"
+msgstr "ពង​ក្រពើ"
+
+#: plugins/tools/defaulttools/kis_tool_fill.cc:128
+#, fuzzy
+#| msgid "Flood Fill"
+msgctxt "(qtundo-format)"
+msgid "Flood Fill"
+msgstr "ការ​បំពេញ​ច្រើន"
 
 #: plugins/tools/defaulttools/kis_tool_fill.cc:158
 #, fuzzy
@@ -10221,61 +10455,75 @@ msgstr "នៅ​ពេល​បាន​គូស​ធីក កុំ​ម�
 msgid "Fill a contiguous area of color with a color, or fill a selection."
 msgstr "បំពេញ​ផ្ទៃ​របស់​ពណ៌​ដែល​ជាប់​គ្នា​ជាមួយ​ពណ៌ ឬ​បំពេញ​ការ​ជ្រើស ។"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:215
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:150
+#, fuzzy
+#| msgid "Gradient"
+msgctxt "(qtundo-format)"
+msgid "Gradient"
+msgstr "ជម្រាល​"
+
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:166
+#, fuzzy
+#| msgid "Gradient"
+msgctxt "@info:progress"
+msgid "Gradient..."
+msgstr "ជម្រាល​"
+
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:216
 msgid "Repeat:"
 msgstr "ធ្វើ​ម្ដង​ទៀត ៖"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:217
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:218
 msgctxt "the gradient will be drawn with the color order reversed"
 msgid "Reverse"
 msgstr "បញ្ច្រាស"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:224
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:225
 msgctxt "the gradient will be drawn linearly"
 msgid "Linear"
 msgstr "​លីនេអ៊ែរ"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:225
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:226
 msgctxt "the gradient will be drawn bilinearly"
 msgid "Bi-Linear"
 msgstr "លីនេអ៊ែ​ទ្វេ"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:226
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:227
 msgctxt "the gradient will be drawn radially"
 msgid "Radial"
 msgstr "នៃ​កាំ"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:227
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:228
 msgctxt "the gradient will be drawn in a square around a centre"
 msgid "Square"
 msgstr "ការេ"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:228
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:229
 msgctxt "the gradient will be drawn as an assymmetric cone"
 msgid "Conical"
 msgstr "​រាង​សាជី​មូល​"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:229
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:230
 msgctxt "the gradient will be drawn as a symmetric cone"
 msgid "Conical Symmetric"
 msgstr "ស៊ីមេទ្រី​រាង​​សាជី"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:234
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:235
 msgctxt "The gradient will not repeat"
 msgid "None"
 msgstr "គ្មាន"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:235
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:236
 msgctxt "The gradient will repeat forwards"
 msgid "Forwards"
 msgstr "ទៅ​មុខ​"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:236
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:237
 msgctxt "The gradient will repeat alternatingly"
 msgid "Alternating"
 msgstr "ជំនួស​"
 
-#: plugins/tools/defaulttools/kis_tool_gradient.cc:244
+#: plugins/tools/defaulttools/kis_tool_gradient.cc:245
 msgid "Anti-alias threshold:"
 msgstr "ប្រឆាំង​កម្រិត​ពន្លឺ​រឆេតរឆូត ៖"
 
@@ -10302,9 +10550,11 @@ msgid "Varying End-Points"
 msgstr "ចំណុច​ជម្រះ"
 
 #: plugins/tools/defaulttools/kis_tool_line.cc:186
-msgctxt "a straight drawn line"
-msgid "Line"
-msgstr "បន្ទាត់"
+#, fuzzy
+#| msgid "Dashed Lines"
+msgctxt "(qtundo-format)"
+msgid "Draw Line"
+msgstr "បន្ទាត់​ដាច់​ៗ​"
 
 #: plugins/tools/defaulttools/kis_tool_line.cc:259
 msgid ""
@@ -10315,8 +10565,10 @@ msgstr ""
 "បន្ទាត់​ត្រង់"
 
 #: plugins/tools/defaulttools/kis_tool_line.h:85
-msgid "Draw a straight line with the current brush"
-msgstr "គូរ​បន្ទាត់​ត្រង់​ដោយ​ប្រើ​ជក់​បច្ចុប្បន្ន"
+#, fuzzy
+#| msgid "&Painter's Tools"
+msgid "Line Tool"
+msgstr "ឧបករណ៍​របស់​កម្មវិធី​គូរ"
 
 #: plugins/tools/defaulttools/kis_tool_measure.cc:51
 msgid "Distance: "
@@ -10334,39 +10586,46 @@ msgstr "វាស់​ចម្ងាយ​រវាង​ចំណុច​ព
 msgid "Move a layer"
 msgstr "ផ្លាស់ទី ស្រទាប់​"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:223
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:59
+#, fuzzy
+#| msgid "Brush"
+msgctxt "(qtundo-format)"
+msgid "Multibrush Stroke"
+msgstr "ជក់"
+
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:224
 #, fuzzy
 #| msgid "Show"
 msgid "Show Axes"
 msgstr "យឺត"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:227
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:228
 #, fuzzy
 #| msgid "Axis X"
 msgid "Axes point"
 msgstr "អ័ក្ស X"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:233
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:234
 msgid "Set axes angle (degrees)"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:238
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:239
 #, fuzzy
 #| msgid "Angle:"
 msgid "Axes Angle:"
 msgstr "មុំ ៖"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:241
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:242
 msgid "Symmetry"
 msgstr ""
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:243
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:244
 #, fuzzy
 #| msgid "Triangle"
 msgid "Translate"
 msgstr "ត្រីកោណ"
 
-#: plugins/tools/defaulttools/kis_tool_multihand.cpp:249
+#: plugins/tools/defaulttools/kis_tool_multihand.cpp:250
 #, fuzzy
 #| msgid "Brush tip"
 msgid "Brush count"
@@ -10374,40 +10633,58 @@ msgstr "ព័ត៌មាន​ជំនួយ​ជក់"
 
 #: plugins/tools/defaulttools/kis_tool_multihand.h:99
 #, fuzzy
-#| msgid "Paint with brushes"
-msgid "Paint with multibrushes"
-msgstr "គូស​ដោយ​ប្រើ​ជក់"
+#| msgid "Brush"
+msgid "Multibrush Tool"
+msgstr "ជក់"
 
 #: plugins/tools/defaulttools/kis_tool_pan.h:76
 #, fuzzy
 msgid "Move and rotate your canvas"
 msgstr "ផ្លាស់ទី និង​បង្វិល​ផ្ទាំង​គូរ​គំនូរ​របស់​អ្នក"
 
+#: plugins/tools/defaulttools/kis_tool_path.cc:75
+#, fuzzy
+#| msgid "Bezier Curve"
+msgctxt "(qtundo-format)"
+msgid "Draw Bezier Curve"
+msgstr "ខ្សែ​កោង Bezier"
+
 #: plugins/tools/defaulttools/kis_tool_path.h:76
 #, fuzzy
-#| msgid "Draw a polygon. Shift-mouseclick ends the polygon."
-msgid "Draw a path. Shift-mouseclick ends the path."
-msgstr "គូស​ពហុកោណ ។ ប្ដូរ (Shift) និង​ចុច​កណ្ដុរ​បញ្ចប់​ពហុកោណ ។"
+#| msgid "Draw a polyline. Shift-mouseclick ends the polyline."
+msgid "Bezier Curve Tool. Shift-mouseclick ends the curve."
+msgstr "គូស​ពហុ​បន្ទាត់ ។ ប្ដូរ (Shift) និង​ចុច​កណ្ដុរ​បញ្ចប់​ពហុ​បន្ទាត់ ។"
 
-#: plugins/tools/defaulttools/kis_tool_pencil.h:67
+#: plugins/tools/defaulttools/kis_tool_pencil.cc:61
 #, fuzzy
 #| msgid "Draw a path."
-msgid "Draw a freehand path."
+msgctxt "(qtundo-format)"
+msgid "Draw Freehand Path"
 msgstr "គូស​ផ្លូវ"
 
-#: plugins/tools/defaulttools/kis_tool_rectangle.h:61
-msgid "Draw a rectangle"
+#: plugins/tools/defaulttools/kis_tool_pencil.h:67
+msgid "Freehand Path Tool"
+msgstr ""
+
+#: plugins/tools/defaulttools/kis_tool_rectangle.cc:67
+#, fuzzy
+#| msgid "Draw a rectangle"
+msgctxt "(qtundo-format)"
+msgid "Draw Rectangle"
 msgstr "គូស​ចតុកោណកែង​"
+
+#: plugins/tools/defaulttools/kis_tool_rectangle.h:61
+#, fuzzy
+#| msgid "Rectangle"
+msgid "Rectangle Tool"
+msgstr "ចតុកោណកែង"
 
 #: plugins/tools/defaulttools/strokes/move_selection_stroke_strategy.cpp:35
 #, fuzzy
-#| msgid "Selection Mode"
-msgid "Move Selection Stroke"
-msgstr "របៀប​ជ្រើស"
-
-#: plugins/tools/defaulttools/strokes/move_stroke_strategy.cpp:31
-msgid "Move Stroke"
-msgstr ""
+#| msgid "No Selection"
+msgctxt "(qtundo-format)"
+msgid "Move Selection"
+msgstr "គ្មាន​ជម្រើស"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ColorPickerOptionsWidget)
 #: plugins/tools/defaulttools/wdgcolorpicker.ui:14
@@ -10502,7 +10779,6 @@ msgid "Move the whole group"
 msgstr "ផ្លាស់ទី​ក្រុម​ទាំង​មូល"
 
 #: plugins/tools/selectiontools/kis_tool_select_brush.cc:53
-#: plugins/tools/selectiontools/kis_tool_select_brush.cc:176
 msgid "Brush Selection"
 msgstr "ការជ្រើស​ជក់"
 
@@ -10510,14 +10786,29 @@ msgstr "ការជ្រើស​ជក់"
 msgid "Brush size:"
 msgstr "ទំហំ​ជក់ ៖"
 
-#: plugins/tools/selectiontools/kis_tool_select_brush.h:76
-msgid "Select by brush"
+#: plugins/tools/selectiontools/kis_tool_select_brush.cc:176
+#, fuzzy
+#| msgid "Select by brush"
+msgctxt "(qtundo-format)"
+msgid "Select by Brush"
 msgstr "ជ្រើស​តាម​ជក់​"
 
+#: plugins/tools/selectiontools/kis_tool_select_brush.h:76
+#, fuzzy
+#| msgid "Brush Selection"
+msgid "Brush Selection Tool"
+msgstr "ការជ្រើស​ជក់"
+
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:55
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:106
 msgid "Contiguous Area Selection"
 msgstr "ការ​ជ្រើស​ផ្ទៃ​ដែល​ជាប់​គ្នា"
+
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:106
+#, fuzzy
+#| msgid "Select a contiguous area of colors"
+msgctxt "(qtundo-format)"
+msgid "Select Contiguous Area"
+msgstr "ជ្រើស​ផ្ទៃ​របស់​ពណ៌​ដែល​ជាប់​គ្នា"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:148
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:139
@@ -10535,24 +10826,33 @@ msgid "Limit to current layer"
 msgstr "កំណត់​ស្រទាប់​បច្ចុប្បន្ន"
 
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.h:67
-msgid "Select a contiguous area of colors"
-msgstr "ជ្រើស​ផ្ទៃ​របស់​ពណ៌​ដែល​ជាប់​គ្នា"
+#, fuzzy
+#| msgid "Contiguous Area Selection"
+msgid "Contiguous Selection Tool"
+msgstr "ការ​ជ្រើស​ផ្ទៃ​ដែល​ជាប់​គ្នា"
 
 #: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:39
-#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:71
 msgid "Elliptical Selection"
 msgstr "ការ​ជ្រើស​ជា​រាង​ពង​ក្រពើ"
 
+#: plugins/tools/selectiontools/kis_tool_select_elliptical.cc:71
+#, fuzzy
+#| msgid "Select All"
+msgctxt "(qtundo-format)"
+msgid "Select Ellipse"
+msgstr "ជ្រើស​ទាំងអស់"
+
 #: plugins/tools/selectiontools/kis_tool_select_elliptical.h:53
-msgid "Select an elliptical area"
-msgstr "ជ្រើស​ផ្ទៃ​ពង​ក្រពើ​"
+#, fuzzy
+#| msgid "Elliptical Selection"
+msgid "Elliptical Selection Tool"
+msgstr "ការ​ជ្រើស​ជា​រាង​ពង​ក្រពើ"
 
 #: plugins/tools/selectiontools/kis_tool_select_magnetic.cc:91
 msgid "Magnetic Selection"
 msgstr "ការ​ជ្រើស​មេដែក"
 
 #: plugins/tools/selectiontools/kis_tool_select_magnetic.cc:477
-#: plugins/tools/selectiontools/kis_tool_select_path.cc:97
 #: plugins/tools/selectiontools/kis_tool_select_path.h:53
 msgid "Path Selection"
 msgstr "ការ​ជ្រើស​ផ្លូវ"
@@ -10594,48 +10894,96 @@ msgid "Red"
 msgstr "ក្រហម"
 
 #: plugins/tools/selectiontools/kis_tool_select_outline.cc:58
-#: plugins/tools/selectiontools/kis_tool_select_outline.cc:105
 msgid "Outline Selection"
 msgstr "ការជ្រើសរើស​គ្រោង"
 
-#: plugins/tools/selectiontools/kis_tool_select_outline.h:66
-msgid "Select an area by its outline"
+#: plugins/tools/selectiontools/kis_tool_select_outline.cc:105
+#, fuzzy
+#| msgid "Select an area by its outline"
+msgctxt "(qtundo-format)"
+msgid "Select by Outline"
 msgstr "ជ្រើស​ផ្ទៃ​តាម​គ្រោង​របស់​វា"
 
+#: plugins/tools/selectiontools/kis_tool_select_outline.h:66
+#, fuzzy
+#| msgid "Outline Selection"
+msgid "Outline Selection Tool"
+msgstr "ការជ្រើសរើស​គ្រោង"
+
+#: plugins/tools/selectiontools/kis_tool_select_path.cc:97
+#, fuzzy
+#| msgid "Bezier Curve"
+msgctxt "(qtundo-format)"
+msgid "Select by Bezier Curve"
+msgstr "ខ្សែ​កោង Bezier"
+
 #: plugins/tools/selectiontools/kis_tool_select_path.h:82
-msgid "Select an area of the image with path."
-msgstr "ជ្រើស​ផ្ទៃ​របស់​រូបភាព​ដោយ​ប្រើ​ផ្លូវ ។"
+#, fuzzy
+#| msgid "Bezier Selection Tool"
+msgid "Bezier Curve Selection Tool"
+msgstr "ឧបករណ៍​ជ្រើស Bezier"
 
 #: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:42
-#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:89
 msgid "Polygonal Selection"
 msgstr "ការ​ជ្រើស​រាង​ជា​ពហុកោណ​"
 
+#: plugins/tools/selectiontools/kis_tool_select_polygonal.cc:89
+#, fuzzy
+#| msgid "Selection"
+msgctxt "(qtundo-format)"
+msgid "Select Polygon"
+msgstr "ការជ្រើសរើស"
+
 #: plugins/tools/selectiontools/kis_tool_select_polygonal.h:62
-msgid "Select a polygonal region"
-msgstr "ជ្រើស​តំបន់​ពហុកោណ"
+#, fuzzy
+#| msgid "Polygonal Selection"
+msgid "Polygonal Selection Tool"
+msgstr "ការ​ជ្រើស​រាង​ជា​ពហុកោណ​"
 
 #: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:42
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:88
 msgid "Rectangular Selection"
 msgstr "ជម្រើស​រាង​ចតុកោណ​កែង"
 
-#: plugins/tools/selectiontools/kis_tool_select_rectangular.h:62
-msgid "Select a rectangular area"
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.cc:88
+#, fuzzy
+#| msgid "Select a rectangular area"
+msgctxt "(qtundo-format)"
+msgid "Select Rectangle"
 msgstr "ជ្រើស​ផ្ទៃ​ចតុកោណ​"
 
+#: plugins/tools/selectiontools/kis_tool_select_rectangular.h:62
+#, fuzzy
+#| msgid "Rectangular Selection"
+msgid "Rectangular Selection Tool"
+msgstr "ជម្រើស​រាង​ចតុកោណ​កែង"
+
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:79
-#: plugins/tools/selectiontools/kis_tool_select_similar.cc:120
-msgid "Similar Selection"
+#, fuzzy
+#| msgid "Similar Selection"
+msgid "Similar Color Selection"
 msgstr "ជម្រើស​ស្រដៀងគ្នា"
 
-#: plugins/tools/selectiontools/kis_tool_select_similar.h:47
-msgid "Select similar colors"
+#: plugins/tools/selectiontools/kis_tool_select_similar.cc:120
+#, fuzzy
+#| msgid "Select similar colors"
+msgctxt "(qtundo-format)"
+msgid "Select Similar Color"
 msgstr "ជ្រើស​ពណ៌​ស្រដៀង​គ្នា"
+
+#: plugins/tools/selectiontools/kis_tool_select_similar.h:47
+#, fuzzy
+#| msgid "Similar Selection"
+msgid "Similar Color Selection Tool"
+msgstr "ជម្រើស​ស្រដៀងគ្នា"
 
 #: plugins/tools/tool_crop/kis_tool_crop.h:201
 msgid "Crop the image to an area"
 msgstr "ច្រឹប​រូបភាព​ទៅ​តាម​ផ្ទៃ"
+
+#. i18n: ectx: property (windowTitle), widget (QWidget, WdgToolCrop)
+#: plugins/tools/tool_crop/wdg_tool_crop.ui:14
+msgid "Crop"
+msgstr "​ច្រឹប"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label_horizPos)
 #. i18n: ectx: property (toolTip), widget (KIntSpinBox, intX)
@@ -10738,18 +11086,20 @@ msgstr "​ខ្វែង"
 
 #: plugins/tools/tool_dyna/kis_tool_dyna.cpp:46
 #, fuzzy
-#| msgid "Dyna"
+#| msgid "A - 2 Dynamic Brush"
 msgctxt "(qtundo-format)"
-msgid "Dyna"
-msgstr "Dyna"
+msgid "Dynamic Brush Stroke"
+msgstr "ជក់​ថាមវន្ត​ A - 2"
 
 #: plugins/tools/tool_dyna/kis_tool_dyna.cpp:288
 msgid "Fixed angle:"
 msgstr "មុំ​ថេរ ៖"
 
 #: plugins/tools/tool_dyna/kis_tool_dyna.h:155
-msgid "Paint with brushes using dynamic movements"
-msgstr "គូរ​ដោយ​ប្រើជក់ ដោយ​ប្រើ​កា​រផ្លាស់ទីអថេរ"
+#, fuzzy
+#| msgid "A - 2 Dynamic Brush"
+msgid "Dynamic Brush Tool"
+msgstr "ជក់​ថាមវន្ត​ A - 2"
 
 #: plugins/tools/tool_grid/kis_tool_grid.h:71
 msgid "Edit the grid"
@@ -10759,16 +11109,30 @@ msgstr "កែ​សម្រួល​ក្រឡា​ចត្រង្គ"
 msgid "Edit the perspective grid"
 msgstr "កែ​សម្រួល​ក្រឡា​ចត្រង្គ​យថាទស្សន៍"
 
+#: plugins/tools/tool_polygon/kis_tool_polygon.cc:63
+#, fuzzy
+#| msgid "Polygon"
+msgctxt "(qtundo-format)"
+msgid "Draw Polygon"
+msgstr "ពហុកោណ"
+
 #: plugins/tools/tool_polygon/kis_tool_polygon.h:51
-msgid "Draw a polygon. Shift-mouseclick ends the polygon."
+#, fuzzy
+#| msgid "Draw a polygon. Shift-mouseclick ends the polygon."
+msgid "Polygon Tool. Shift-mouseclick ends the polygon."
 msgstr "គូស​ពហុកោណ ។ ប្ដូរ (Shift) និង​ចុច​កណ្ដុរ​បញ្ចប់​ពហុកោណ ។"
 
 #: plugins/tools/tool_polyline/kis_tool_polyline.cc:67
-msgid "Polyline"
+#, fuzzy
+#| msgid "Polyline"
+msgctxt "(qtundo-format)"
+msgid "Draw Polyline"
 msgstr "ពហុ​បន្ទាត់​"
 
 #: plugins/tools/tool_polyline/kis_tool_polyline.h:51
-msgid "Draw a polyline. Shift-mouseclick ends the polyline."
+#, fuzzy
+#| msgid "Draw a polyline. Shift-mouseclick ends the polyline."
+msgid "Polyline Tool. Shift-mouseclick ends the polyline."
 msgstr "គូស​ពហុ​បន្ទាត់ ។ ប្ដូរ (Shift) និង​ចុច​កណ្ដុរ​បញ្ចប់​ពហុ​បន្ទាត់ ។"
 
 #: plugins/tools/tool_text/kis_tool_text.h:60
@@ -10832,7 +11196,8 @@ msgstr "ចំណុះ​មិន​ចាក់សោ"
 #: plugins/tools/tool_transform2/strokes/transform_stroke_strategy.cpp:39
 #, fuzzy
 #| msgid "Transform"
-msgid "Transform Stroke"
+msgctxt "(qtundo-format)"
+msgid "Transform"
 msgstr "ប្លែង​"
 
 #. i18n: ectx: property (text), widget (QToolButton, freeTransformButton)
@@ -10982,49 +11347,56 @@ msgid "Open sketch in a window, otherwise defaults to full-screen"
 msgstr ""
 
 #: ui/actions/kis_selection_action_factories.cpp:102
+#, fuzzy
+#| msgid "Select All"
+msgctxt "(qtundo-format)"
 msgid "Select All"
 msgstr "ជ្រើស​ទាំងអស់"
 
-#: ui/actions/kis_selection_action_factories.cpp:261
+#: ui/actions/kis_selection_action_factories.cpp:171
+#, fuzzy
+#| msgid "Flood Fill"
+msgctxt "(qtundo-format)"
+msgid "Flood Fill Layer"
+msgstr "ការ​បំពេញ​ច្រើន"
+
+#: ui/actions/kis_selection_action_factories.cpp:262
+#, fuzzy
+#| msgid "Cut"
+msgctxt "(qtundo-format)"
 msgid "Cut"
 msgstr "កាត់"
 
-#: ui/actions/kis_selection_action_factories.cpp:261
+#: ui/actions/kis_selection_action_factories.cpp:263
 #, fuzzy
 #| msgid "Copy From"
+msgctxt "(qtundo-format)"
 msgid "Copy"
 msgstr "ចម្លង​ពី"
 
-#: ui/actions/kis_selection_action_factories.cpp:285
+#: ui/actions/kis_selection_action_factories.cpp:287
 #, fuzzy
 #| msgid "Copy merged"
+msgctxt "(qtundo-format)"
 msgid "Copy Merged"
 msgstr "បាន​បញ្ចូល​ចូល​គ្នា​ច្បាប់​ចម្លង"
 
-#: ui/actions/kis_selection_action_factories.cpp:295
+#: ui/actions/kis_selection_action_factories.cpp:297
 msgid "(pasted)"
 msgstr "(បាន​បិទភ្ជាប់)"
 
-#: ui/actions/kis_selection_action_factories.cpp:326
+#: ui/actions/kis_selection_action_factories.cpp:328
 #, fuzzy
 #| msgid "Pastels"
 msgid "Pasted"
 msgstr "ប៉ាស្តែល​"
 
-#: ui/actions/kis_selection_action_factories.cpp:373
-#: ui/kis_selection_manager.cc:225
+#: ui/actions/kis_selection_action_factories.cpp:375
 #, fuzzy
 #| msgid "Feather Selection"
+msgctxt "(qtundo-format)"
 msgid "Convert to Vector Selection"
 msgstr "ការជ្រើស​សណ្ឋាន​ពិសេស"
-
-#: ui/canvas/kis_canvas_controller.cpp:164
-msgid "ON"
-msgstr ""
-
-#: ui/canvas/kis_canvas_controller.cpp:164
-msgid "OFF"
-msgstr ""
 
 #: ui/canvas/kis_canvas_controller.cpp:164
 #, fuzzy, kde-format
@@ -11032,6 +11404,14 @@ msgstr ""
 msgctxt "floating message about mirroring"
 msgid "Horizontal mirroring: %1 "
 msgstr "គម្លាត​ផ្តេក ៖"
+
+#: ui/canvas/kis_canvas_controller.cpp:164
+msgid "OFF"
+msgstr ""
+
+#: ui/canvas/kis_canvas_controller.cpp:164
+msgid "ON"
+msgstr ""
 
 #: ui/canvas/kis_canvas_controller.cpp:183
 #, fuzzy, kde-format
@@ -11095,16 +11475,6 @@ msgstr "40x40"
 #: ui/canvas/kis_grid_manager.cpp:116
 msgid "64x64"
 msgstr ""
-
-#: ui/canvas/kis_infinity_manager.cpp:38
-#, fuzzy
-#| msgid "Vanishing Point Decoration"
-msgid "Expand into Infinity Decoration"
-msgstr "ការតុប​តែង​ចំណុច​ដែល​មើល​មិន​ឃើញ​"
-
-#: ui/canvas/kis_perspective_grid_manager.cpp:140
-msgid "Perspective grid"
-msgstr "ក្រឡាចត្រង្គ​យថាទស្សន៍"
 
 #: ui/canvas/kis_perspective_grid_manager.cpp:162
 msgid "Show Perspective Grid"
@@ -12572,15 +12942,15 @@ msgid "Copy of %1"
 msgstr "ចម្លង​ពី"
 
 #: ui/input/config/kis_edit_profiles_dialog.cpp:95
-msgid ""
-"You will lose all changes to any input profiles. Do you wish to continue?"
-msgstr ""
-
-#: ui/input/config/kis_edit_profiles_dialog.cpp:95
 #, fuzzy
 #| msgid "Apply Profile"
 msgid "Reset All Profiles"
 msgstr "អនុវត្ត​ទម្រង់​"
+
+#: ui/input/config/kis_edit_profiles_dialog.cpp:95
+msgid ""
+"You will lose all changes to any input profiles. Do you wish to continue?"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (KPushButton, renameButton)
 #: ui/input/config/kis_edit_profiles_dialog.ui:17
@@ -12728,22 +13098,26 @@ msgstr ""
 #: ui/input/kis_alternate_invocation_action.cpp:43
 #, fuzzy
 #| msgid "Rotate Node"
-msgid "Toggle Primary Mode"
+msgid "Primary Mode"
 msgstr "បង្វិល​ថ្នាំង"
 
 #: ui/input/kis_alternate_invocation_action.cpp:44
 #, fuzzy
 #| msgid "Rotate Node"
-msgid "Toggle Secondary Mode"
+msgid "Secondary Mode"
 msgstr "បង្វិល​ថ្នាំង"
 
 #: ui/input/kis_alternate_invocation_action.cpp:46
-msgid "Pick Foreground Color from Current Node"
-msgstr ""
+#, fuzzy
+#| msgid "Fill Palette from Current Layer"
+msgid "Pick Foreground Color from Current Layer"
+msgstr "បំពេញ​ក្ដារលាយ​ពី​ស្រទាប់​បច្ចុប្បន្ន"
 
 #: ui/input/kis_alternate_invocation_action.cpp:47
-msgid "Pick Background Color from Current Node"
-msgstr ""
+#, fuzzy
+#| msgid "Fill Palette from Current Layer"
+msgid "Pick Background Color from Current Layer"
+msgstr "បំពេញ​ក្ដារលាយ​ពី​ស្រទាប់​បច្ចុប្បន្ន"
 
 #: ui/input/kis_alternate_invocation_action.cpp:49
 msgid "Pick Foreground Color from Merged Image"
@@ -12843,8 +13217,10 @@ msgid "The <i>Pan Canvas</i> action pans the canvas."
 msgstr ""
 
 #: ui/input/kis_pan_action.cpp:54
-msgid "Toggle Pan Mode"
-msgstr ""
+#, fuzzy
+#| msgid "Painting Mode"
+msgid "Pan Mode"
+msgstr "របៀប​គូរ​"
 
 #: ui/input/kis_pan_action.cpp:55
 #, fuzzy
@@ -12879,13 +13255,13 @@ msgstr ""
 #: ui/input/kis_rotate_canvas_action.cpp:47
 #, fuzzy
 #| msgid "Rotate Node"
-msgid "Toggle Rotate Mode"
+msgid "Rotate Mode"
 msgstr "បង្វិល​ថ្នាំង"
 
 #: ui/input/kis_rotate_canvas_action.cpp:48
 #, fuzzy
 #| msgid "Rotate Node"
-msgid "Toggle Discrete Rotate Mode"
+msgid "Discrete Rotate Mode"
 msgstr "បង្វិល​ថ្នាំង"
 
 #: ui/input/kis_rotate_canvas_action.cpp:49
@@ -12919,7 +13295,7 @@ msgstr ""
 #: ui/input/kis_select_layer_action.cpp:50
 #, fuzzy
 #| msgid "Rotate Node"
-msgid "Toggle Select Layer Mode"
+msgid "Select Layer Mode"
 msgstr "បង្វិល​ថ្នាំង"
 
 #: ui/input/kis_shortcut_configuration.cpp:234
@@ -13091,13 +13467,15 @@ msgid "The <i>Zoom Canvas</i> action zooms the canvas."
 msgstr ""
 
 #: ui/input/kis_zoom_action.cpp:116
-msgid "Toggle Zoom Mode"
-msgstr ""
+#, fuzzy
+#| msgid "Deform Mode"
+msgid "Zoom Mode"
+msgstr "របៀប​បង្ខូច​ទ្រង់ទ្រាយ"
 
 #: ui/input/kis_zoom_action.cpp:117
 #, fuzzy
 #| msgid "Rotate Node"
-msgid "Toggle Discrete Zoom Mode"
+msgid "Discrete Zoom Mode"
 msgstr "បង្វិល​ថ្នាំង"
 
 #: ui/input/kis_zoom_action.cpp:120
@@ -13139,12 +13517,12 @@ msgid "Bart Coppens"
 msgstr "Bart Coppens"
 
 #: ui/kis_aboutdata.h:58
-msgid "David Revoy"
-msgstr "David Revoy"
-
-#: ui/kis_aboutdata.h:58
 msgid "Brush and palette set"
 msgstr "សំណុំ​ក្តារ​លាយ​ពណ៌ និង​ជក់"
+
+#: ui/kis_aboutdata.h:58
+msgid "David Revoy"
+msgstr "David Revoy"
 
 #: ui/kis_aboutdata.h:59
 msgid "Carsten Pfeiffer"
@@ -13257,12 +13635,12 @@ msgid "Michael Thaler"
 msgstr "Michael Thaler"
 
 #: ui/kis_aboutdata.h:84
-msgid "Øyvind Kolås"
-msgstr "Øyvind Kolås"
-
-#: ui/kis_aboutdata.h:84
 msgid "Wiseguy"
 msgstr "Wiseguy"
+
+#: ui/kis_aboutdata.h:84
+msgid "Øyvind Kolås"
+msgstr "Øyvind Kolås"
 
 #: ui/kis_aboutdata.h:85
 msgid "Patrick Julien"
@@ -13277,11 +13655,11 @@ msgid "Vision master"
 msgstr "​Vision master"
 
 #: ui/kis_aboutdata.h:87
-msgid "Ramon Miranda"
+msgid "Artist, Muses author, brush and preset creator"
 msgstr ""
 
 #: ui/kis_aboutdata.h:87
-msgid "Artist, Muses author, brush and preset creator"
+msgid "Ramon Miranda"
 msgstr ""
 
 #: ui/kis_aboutdata.h:88
@@ -13301,14 +13679,14 @@ msgid "Sven Langkamp"
 msgstr "Sven Langkamp"
 
 #: ui/kis_aboutdata.h:92
-msgid "Timothée Giet"
-msgstr "Timothée Giet"
-
-#: ui/kis_aboutdata.h:92
 #, fuzzy
 #| msgid "BD Artist and template developer"
 msgid "BD Artist, brush presets and templates"
 msgstr "អ្នក​អភិវឌ្ឍន៍​ពុម្ព និង​វិចិត្រករ BD"
+
+#: ui/kis_aboutdata.h:92
+msgid "Timothée Giet"
+msgstr "Timothée Giet"
 
 #: ui/kis_aboutdata.h:93
 msgid "Toshitaka Fujioka"
@@ -13370,6 +13748,14 @@ msgid "Decrease opacity"
 msgstr "មើល​ជា​មុន ៖ "
 
 #: ui/kis_clipboard.cc:257
+msgid "As &Web"
+msgstr "ជា​បណ្ដាញ"
+
+#: ui/kis_clipboard.cc:257
+msgid "As on &Monitor"
+msgstr "នៅ​ពេល​នៅ​លើ​ម៉ូនីទ័រ"
+
+#: ui/kis_clipboard.cc:257
 msgid "Pasting data from simple source"
 msgstr "កំពុង​បិទភ្ជាប់​ទិន្នន័យ​ពី​ប្រភព​ធម្មតា"
 
@@ -13393,14 +13779,6 @@ msgstr ""
 "អ្នក​ប្រហែល​ជា​ចង់​នាំ​វា​ចូល នៅ​ពេល​ដែល​បាន​បង្ហាញ​វា​នៅ​លើ​ម៉ូនីទ័រ​របស់​អ្នក ។\n"
 "\n"
 "តើ​អ្នក​ចង់​ទាញ​ទិន្នន័យ​ទាំង​នេះ​ដោយ​របៀប​ណា ?"
-
-#: ui/kis_clipboard.cc:257
-msgid "As &Web"
-msgstr "ជា​បណ្ដាញ"
-
-#: ui/kis_clipboard.cc:257
-msgid "As on &Monitor"
-msgstr "នៅ​ពេល​នៅ​លើ​ម៉ូនីទ័រ"
 
 #: ui/kis_control_frame.cpp:80 ui/kis_control_frame.cpp:81
 msgid "Fill Patterns"
@@ -13524,7 +13902,7 @@ msgstr "ធ្វើ​ឲ្យ​រូបភាព​រាប​ស្មើ
 msgid "Rename current layer"
 msgstr "ផ្លាស់ទី​ស្រទាប់បច្ចុប្បន្ន"
 
-#: ui/kis_layer_manager.cc:298 ui/kis_layer_manager.cc:778
+#: ui/kis_layer_manager.cc:298
 msgid "Rasterize Layer"
 msgstr "ស្រទាប់ Rasterize"
 
@@ -13543,12 +13921,15 @@ msgid "Filter Layer Properties"
 msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​តម្រង"
 
 #: ui/kis_layer_manager.cc:403
-msgid "Generator Layer Properties"
-msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​​កម្មវិធី​បង្កើត"
+#, fuzzy
+#| msgid "Filter Layer Properties"
+msgid "Fill Layer Properties"
+msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​តម្រង"
 
 #: ui/kis_layer_manager.cc:484
 #, fuzzy
 #| msgid "Convert Current Layer From"
+msgctxt "(qtundo-format)"
 msgid "Convert to a Paint Layer"
 msgstr "បម្លែង​ស្រទាប់​បច្ចុប្បន្ន​ពី "
 
@@ -13568,9 +13949,20 @@ msgstr "កំហុស​ស្រទាប់​"
 msgid "The image contains hidden layers that will be lost."
 msgstr "រូបភាព​មាន​ស្រទាប់​ដែល​លាក់​ ដែល​នឹង​ត្រូវ​បាត់បង់ ។"
 
+#: ui/kis_layer_manager.cc:709
+msgid "Flatten Image"
+msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
+
 #: ui/kis_layer_manager.cc:710
 msgid "&Flatten Image"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
+
+#: ui/kis_layer_manager.cc:778
+#, fuzzy
+#| msgid "Rasterize Layer"
+msgctxt "(qtundo-format)"
+msgid "Rasterize Layer"
+msgstr "ស្រទាប់ Rasterize"
 
 #: ui/kis_layer_manager.cc:814
 msgid "Convert Invisible Groups"
@@ -13591,6 +13983,7 @@ msgstr ""
 #: ui/kis_mask_manager.cc:177
 #, fuzzy
 #| msgid "&Local Selection"
+msgctxt "(qtundo-format)"
 msgid "Add Selection Mask"
 msgstr "ជម្រើស​មូលដ្ឋាន"
 
@@ -13601,6 +13994,7 @@ msgstr "ការជ្រើសរើស"
 #: ui/kis_mask_manager.cc:184
 #, fuzzy
 #| msgid "Transparency Mask"
+msgctxt "(qtundo-format)"
 msgid "Add Transparency Mask"
 msgstr "របាំង​ថ្លា"
 
@@ -13611,6 +14005,7 @@ msgstr "របាំង​ថ្លា"
 #: ui/kis_mask_manager.cc:190
 #, fuzzy
 #| msgid "New Filter Mask"
+msgctxt "(qtundo-format)"
 msgid "Add Filter Mask"
 msgstr "របាំង​តម្រង​ថ្មី"
 
@@ -13633,12 +14028,6 @@ msgstr "ច្បាប់​ចម្លង​នៃ"
 #| msgid "Filter Layer Properties"
 msgid "Filter Mask Properties"
 msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​តម្រង"
-
-#: ui/kis_mirror_axis.cpp:91
-#, fuzzy
-#| msgid "Mirrored"
-msgid "Mirror Axis"
-msgstr "ឆ្លុះMirrored"
 
 #: ui/kis_node_manager.cpp:194
 #, fuzzy
@@ -13704,14 +14093,14 @@ msgstr "ត្រង​ស្រទាប់..."
 
 #: ui/kis_node_manager.cpp:246
 #, fuzzy
-#| msgid "&Generated Layer..."
-msgid "&Generated Layer..."
-msgstr "បង្កើត​ស្រទាប់..."
+#| msgid "&Filter Layer..."
+msgid "&Fill Layer..."
+msgstr "ត្រង​ស្រទាប់..."
 
 #: ui/kis_node_manager.cpp:249
 #, fuzzy
 #| msgid "&Filter Layer..."
-msgid "&File Layer"
+msgid "&File Layer..."
 msgstr "ត្រង​ស្រទាប់..."
 
 #: ui/kis_node_manager.cpp:252
@@ -13743,7 +14132,7 @@ msgstr "គ្មាន​ជម្រើស"
 #: ui/kis_node_manager.cpp:270
 #, fuzzy
 #| msgid "&Filter Mask..."
-msgid "to &Filter Mask"
+msgid "to &Filter Mask..."
 msgstr "របាំង​តម្រង..."
 
 #: ui/kis_node_manager.cpp:273
@@ -13761,42 +14150,50 @@ msgstr "ធ្វើ​ឲ្យ​រូបភាព​រាប​ស្មើ
 #: ui/kis_node_manager.cpp:464
 #, fuzzy
 #| msgid "&Invert Selection"
+msgctxt "(qtundo-format)"
 msgid "Convert to a Selection Mask"
 msgstr "ដាក់​ជម្រើស​បញ្ជ្រាស"
 
 #: ui/kis_node_manager.cpp:664
 #, fuzzy
 #| msgid "Remove Layer"
+msgctxt "(qtundo-format)"
 msgid "Remove Last Layer"
 msgstr "យក​ស្រទាប់​ចេញ"
 
 #: ui/kis_node_manager.cpp:683
+#, fuzzy
+#| msgid "Mirror Layer X"
+msgctxt "(qtundo-format)"
 msgid "Mirror Layer X"
 msgstr "ស្រទាប់ X ឆ្លុះ"
 
 #: ui/kis_node_manager.cpp:685
+#, fuzzy
+#| msgid "Mirror Mask X"
+msgctxt "(qtundo-format)"
 msgid "Mirror Mask X"
 msgstr "របាំង​ឆ្លុះ X"
 
 #: ui/kis_node_manager.cpp:696
+#, fuzzy
+#| msgid "Mirror Layer Y"
+msgctxt "(qtundo-format)"
 msgid "Mirror Layer Y"
 msgstr "ស្រទាប់​ Y ឆ្លុះ"
 
 #: ui/kis_node_manager.cpp:698
 #, fuzzy
 #| msgid "Mirror Mask X"
+msgctxt "(qtundo-format)"
 msgid "Mirror Mask Y"
 msgstr "របាំង​ឆ្លុះ X"
 
 #: ui/kis_node_manager.cpp:819
-#, fuzzy
-#| msgid "Exposure mode:"
-msgid "Export Node"
-msgstr "របៀប​បង្ហាញ ៖"
-
-#: ui/kis_painting_assistants_decoration.cpp:41
-msgid "Painting assistants"
-msgstr "អ្នក​ជំនួយការ​គូរ"
+#, fuzzy, kde-format
+#| msgid "Exposure"
+msgid "Export \"%1\""
+msgstr "កា​របង្ហាញ"
 
 #: ui/kis_painting_assistants_decoration.cpp:107
 msgid "Show Painting Assistants"
@@ -13890,10 +14287,6 @@ msgstr ""
 msgid "Select Favorite Presets..."
 msgstr "ជក់​សំណព្វ"
 
-#: ui/kis_paintop_option.cpp:26
-msgid "Common"
-msgstr ""
-
 #: ui/kis_paintop_option.cpp:36
 msgid "Texture"
 msgstr "វាយន​ភាព"
@@ -13960,10 +14353,6 @@ msgstr "ឧបករណ៍​ចូល​ផែ​សម្រាប់​សៀ
 msgid "Installation error"
 msgstr "កំហុស​ក្នុង​ការ​ដំឡើង​"
 
-#: ui/kis_selection_decoration.cc:45
-msgid "Selection decoration"
-msgstr "ជ្រើស​ការ​តុបតែង"
-
 #: ui/kis_selection_manager.cc:137
 msgid "Paste into &New Image"
 msgstr "បិទភ្ជាប់​ទៅ​ក្នុង​រូបភាព​ថ្មី"
@@ -14016,15 +14405,22 @@ msgstr "បង្ហាញ​ជម្រើស"
 msgid "Size Canvas to Size of Selection"
 msgstr "ខ្សែកោង​ទំហំ​ទៅ​នឹង​ទំហំ​របស់​ស្រទាប់​បច្ចុប្បន្ន"
 
+#: ui/kis_selection_manager.cc:225
+#, fuzzy
+#| msgid "Feather Selection"
+msgid "Convert to Vector Selection"
+msgstr "ការជ្រើស​សណ្ឋាន​ពិសេស"
+
 #: ui/kis_selection_manager.cc:500
 #, fuzzy
 #| msgid "Flake shapes"
 msgid "Stroked Shapes"
 msgstr "រាង​សំប៉ែត "
 
-#: ui/kis_selection_manager.cc:502 ui/kis_selection_manager.cc:505
+#: ui/kis_selection_manager.cc:502
 #, fuzzy
 #| msgid "Flake shapes"
+msgctxt "(qtundo-format)"
 msgid "Stroke Shapes"
 msgstr "រាង​សំប៉ែត "
 
@@ -14430,6 +14826,13 @@ msgstr "ដូរ​ពណ៌​ផ្ទៃ​ខាង​មុខ និង�
 msgid "Reset Foreground and Background Color"
 msgstr "កំណត់​ឡើង​វិញ​នូវ​ពណ៌​ផ្ទៃ​ខាង​មុខ និង​ផ្ទៃ​ខាង​ក្រោយ"
 
+#: ui/tool/kis_tool.cc:545
+#, fuzzy
+#| msgid "Clear"
+msgctxt "(qtundo-format)"
+msgid "Clear"
+msgstr "ជម្រះ"
+
 #: ui/tool/kis_tool.cc:574
 msgid "No options"
 msgstr "គ្មាន​ជម្រើស"
@@ -14458,10 +14861,6 @@ msgstr ""
 msgid "Local selection is locked."
 msgstr "គ្មាន​សកម្មភាព​បានជ្រើស​ទេ ។"
 
-#: ui/tool/kis_tool_freehand_helper.cpp:209
-msgid "Freehand Stroke"
-msgstr ""
-
 #: ui/tool/kis_tool_paint.cc:105
 msgid "Increase Brush Size"
 msgstr "បង្កើន​ទំហំ​ជក់"
@@ -14469,6 +14868,13 @@ msgstr "បង្កើន​ទំហំ​ជក់"
 #: ui/tool/kis_tool_paint.cc:111
 msgid "Decrease Brush Size"
 msgstr "បន្ថយ​ទំហំ​ជក់"
+
+#: ui/tool/strokes/kis_filter_stroke_strategy.cpp:44
+#, fuzzy, kde-format
+#| msgid "Filter:"
+msgctxt "(qtundo-format)"
+msgid "Filter \"%1\""
+msgstr "តម្រង ៖"
 
 #: ui/widgets/kis_channelflags_widget.cpp:39
 msgid ""
@@ -14748,6 +15154,143 @@ msgstr ""
 msgid "&Close"
 msgstr "បិទ"
 
+#~ msgid "Gradient Fill"
+#~ msgstr "បំពេញ​ជម្រាល​"
+
+#, fuzzy
+#~| msgid "Node Composite Mode"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Node Composite Mode"
+#~ msgstr "របៀប​បន្សំ​ថ្នាំង"
+
+#, fuzzy
+#~| msgid "Node Opacity"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Node Opacity"
+#~ msgstr "ភាព​ស្រអាប់របស់​ថ្នាំង"
+
+#~ msgid "Resize Image"
+#~ msgstr "ប្តូរ​ទំហំ​រូបភាព"
+
+#, fuzzy
+#~| msgid "Crop Image"
+#~ msgid "Crop Node"
+#~ msgstr "​ច្រឹប​រូបភាព"
+
+#~ msgid "Ascension"
+#~ msgstr "ការ​ឡើង"
+
+#~ msgid "Declination"
+#~ msgstr "Declination"
+
+#, fuzzy
+#~| msgid "Texture"
+#~ msgid "Invert Texture:"
+#~ msgstr "វាយន​ភាព"
+
+#, fuzzy
+#~| msgid "Brush"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Brush"
+#~ msgstr "ជក់"
+
+#, fuzzy
+#~| msgid "Paint with brushes"
+#~ msgid "Paint with brushes"
+#~ msgstr "គូស​ដោយ​ប្រើ​ជក់"
+
+#~ msgctxt "a straight drawn line"
+#~ msgid "Line"
+#~ msgstr "បន្ទាត់"
+
+#~ msgid "Draw a straight line with the current brush"
+#~ msgstr "គូរ​បន្ទាត់​ត្រង់​ដោយ​ប្រើ​ជក់​បច្ចុប្បន្ន"
+
+#, fuzzy
+#~| msgid "Paint with brushes"
+#~ msgid "Paint with multibrushes"
+#~ msgstr "គូស​ដោយ​ប្រើ​ជក់"
+
+#, fuzzy
+#~| msgid "Draw a polygon. Shift-mouseclick ends the polygon."
+#~ msgid "Draw a path. Shift-mouseclick ends the path."
+#~ msgstr "គូស​ពហុកោណ ។ ប្ដូរ (Shift) និង​ចុច​កណ្ដុរ​បញ្ចប់​ពហុកោណ ។"
+
+#, fuzzy
+#~| msgid "Selection Mode"
+#~ msgid "Move Selection Stroke"
+#~ msgstr "របៀប​ជ្រើស"
+
+#~ msgid "Select an elliptical area"
+#~ msgstr "ជ្រើស​ផ្ទៃ​ពង​ក្រពើ​"
+
+#~ msgid "Select an area of the image with path."
+#~ msgstr "ជ្រើស​ផ្ទៃ​របស់​រូបភាព​ដោយ​ប្រើ​ផ្លូវ ។"
+
+#~ msgid "Select a polygonal region"
+#~ msgstr "ជ្រើស​តំបន់​ពហុកោណ"
+
+#, fuzzy
+#~| msgid "Dyna"
+#~ msgctxt "(qtundo-format)"
+#~ msgid "Dyna"
+#~ msgstr "Dyna"
+
+#~ msgid "Paint with brushes using dynamic movements"
+#~ msgstr "គូរ​ដោយ​ប្រើជក់ ដោយ​ប្រើ​កា​រផ្លាស់ទីអថេរ"
+
+#, fuzzy
+#~| msgid "Transform"
+#~ msgid "Transform Stroke"
+#~ msgstr "ប្លែង​"
+
+#, fuzzy
+#~| msgid "Vanishing Point Decoration"
+#~ msgid "Expand into Infinity Decoration"
+#~ msgstr "ការតុប​តែង​ចំណុច​ដែល​មើល​មិន​ឃើញ​"
+
+#~ msgid "Perspective grid"
+#~ msgstr "ក្រឡាចត្រង្គ​យថាទស្សន៍"
+
+#, fuzzy
+#~| msgid "Rotate Node"
+#~ msgid "Toggle Rotate Mode"
+#~ msgstr "បង្វិល​ថ្នាំង"
+
+#~ msgid "Generator Layer Properties"
+#~ msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​​កម្មវិធី​បង្កើត"
+
+#, fuzzy
+#~| msgid "Mirrored"
+#~ msgid "Mirror Axis"
+#~ msgstr "ឆ្លុះMirrored"
+
+#, fuzzy
+#~| msgid "&Generated Layer..."
+#~ msgid "&Generated Layer..."
+#~ msgstr "បង្កើត​ស្រទាប់..."
+
+#, fuzzy
+#~| msgid "&Filter Layer..."
+#~ msgid "&File Layer"
+#~ msgstr "ត្រង​ស្រទាប់..."
+
+#, fuzzy
+#~| msgid "&Filter Mask..."
+#~ msgid "to &Filter Mask"
+#~ msgstr "របាំង​តម្រង..."
+
+#, fuzzy
+#~| msgid "Exposure mode:"
+#~ msgid "Export Node"
+#~ msgstr "របៀប​បង្ហាញ ៖"
+
+#~ msgid "Painting assistants"
+#~ msgstr "អ្នក​ជំនួយការ​គូរ"
+
+#~ msgid "Selection decoration"
+#~ msgstr "ជ្រើស​ការ​តុបតែង"
+
 #, fuzzy
 #~| msgid "Formats:"
 #~ msgid "Form"
@@ -14864,9 +15407,6 @@ msgstr "បិទ"
 
 #~ msgid "Autobrush"
 #~ msgstr "ជក់​ស្វ័យ​ប្រវត្តិ"
-
-#~ msgid "Predefined Brushes"
-#~ msgstr "ជក់​ដែល​បានកំណត់​ជា​ស្រេច"
 
 #~ msgid "Custom Brush"
 #~ msgstr "ច្រាស​ផ្ទាល់​ខ្លួន"
@@ -15024,9 +15564,6 @@ msgstr "បិទ"
 #~| msgid "Add to palette:"
 #~ msgid "Add to Palette"
 #~ msgstr "បន្ថែម​ទៅ​ក្ដារ​លាយ ៖"
-
-#~ msgid "Rotate Node"
-#~ msgstr "បង្វិល​ថ្នាំង"
 
 #~ msgid "File size:"
 #~ msgstr "ទំហំ​រូបភាព ៖"
@@ -15436,12 +15973,6 @@ msgstr "បិទ"
 #~ msgid "Apply transformation"
 #~ msgstr "ការ​នុវត្ត​ការ​ប្លែង​ភាព​"
 
-#, fuzzy
-#~| msgid "Transform"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Transform"
-#~ msgstr "ប្លែង​"
-
 #~ msgid "Selection "
 #~ msgstr "ជម្រើស"
 
@@ -15768,9 +16299,6 @@ msgstr "បិទ"
 #~ msgid "Use custom curve"
 #~ msgstr "ប្រើ​ខ្សែកោង​ផ្ទាល់ខ្លួន​"
 
-#~ msgid "Opacity Curve"
-#~ msgstr "ភាព​ស្រអាប់​នៃ​ខ្សែងកោង​"
-
 #~ msgid "Darken Curve"
 #~ msgstr "ធ្វើ​ឲ្យ​ខ្សែ​កោង​ងងឹត​"
 
@@ -16050,9 +16578,6 @@ msgstr "បិទ"
 #~ msgid "Mixing Brush"
 #~ msgstr "ជក់​ភីកសែល"
 
-#~ msgid "Bezier Curve"
-#~ msgstr "ខ្សែ​កោង Bezier"
-
 #~ msgid "Bezier Painting Tool"
 #~ msgstr "ឧបកណ៍​គូរ Bezier"
 
@@ -16062,9 +16587,6 @@ msgstr "បិទ"
 #~ msgstr ""
 #~ "គូរ​គូប beziers ។ នៅ​តែ​ចុច Alt, Control ឬ Shift សម្រាប់​ជម្រើស ។ ត្រឡប់ ឬ​ចុច​ទ្វេរ​ដង​ដើម្បី​"
 #~ "បញ្ចប់ ។"
-
-#~ msgid "Bezier Selection Tool"
-#~ msgstr "ឧបករណ៍​ជ្រើស Bezier"
 
 #~ msgid "&Bezier Path"
 #~ msgstr "Bezier"
@@ -16550,11 +17072,6 @@ msgstr "បិទ"
 
 #~ msgid "Wood"
 #~ msgstr "ឈើ​"
-
-#, fuzzy
-#~| msgid "Brush"
-#~ msgid "MultiBrush"
-#~ msgstr "ជក់"
 
 #~ msgid "Resize Image to Size of Current Layer"
 #~ msgstr "ប្ដូរ​រូបភាព​ទៅ​ទំហំ​ស្រទាប់​បច្ចុប្បន្ន"
