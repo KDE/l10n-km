@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kexi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-06-19 01:29+0000\n"
+"POT-Creation-Date: 2014-06-28 01:33+0000\n"
 "PO-Revision-Date: 2012-07-09 10:12+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1313,7 +1313,7 @@ msgstr "ផ្លាស់ទី​ធាតុ​ចុះ​ក្រោម"
 msgid "Contents"
 msgstr "មាតិកា"
 
-#: formeditor/editlistviewdialog.cpp:119 formeditor/form.cpp:404
+#: formeditor/editlistviewdialog.cpp:119 formeditor/form_p.cpp:254
 #: plugins/queries/kexiquerydesignerguieditor.cpp:1755
 #: plugins/tables/kexitabledesignerview.cpp:374
 msgid "Caption"
@@ -1435,7 +1435,7 @@ msgstr "ប្រអប់​ក្រុម​"
 msgid "A container to group some widgets"
 msgstr "ឧបករណ៍​ផ្ទុក​​​សម្រាប់​ដាក់​ធាតុ​ក្រាហ្វិក​មួយ​ចំនួន​ជា​ក្រុម"
 
-#: formeditor/factories/containerfactory.cpp:510 formeditor/form.cpp:428
+#: formeditor/factories/containerfactory.cpp:510 formeditor/form_p.cpp:278
 #: plugins/forms/kexidbfactory.cpp:154
 msgid "Frame"
 msgstr "ស៊ុម"
@@ -1635,7 +1635,7 @@ msgctxt "Edit rich text for a widget"
 msgid "Edit Rich Text"
 msgstr "កែ​សម្រួល​អត្ថបទ​សម្បូរ​បែប"
 
-#: formeditor/factories/stdwidgetfactory.cpp:187 formeditor/form.cpp:731
+#: formeditor/factories/stdwidgetfactory.cpp:187 formeditor/form.cpp:285
 #: plugins/forms/kexidbfactory.cpp:84
 msgid "Form"
 msgstr "សំណុំ​បែបបទ"
@@ -2181,317 +2181,12 @@ msgctxt "default indent value"
 msgid "default"
 msgstr "លំនាំដើម"
 
-#. i18n: ectx: property (text), widget (QTreeWidget, list)
-#: formeditor/form.cpp:402 formeditor/form.cpp:403
-#: plugins/tables/kexitabledesignerview.cpp:337
-#: widget/KexiConnectionSelector.ui:94
-msgid "Name"
-msgstr "ឈ្មោះ"
-
-#: formeditor/form.cpp:405
-msgid "Window title"
-msgstr "ចំណងជើង​បង្អួច"
-
-#: formeditor/form.cpp:406
-msgid "Text"
-msgstr "អត្ថបទ"
-
-#: formeditor/form.cpp:407
-msgid "Background Pixmap"
-msgstr "ផែនទី​ចំណុច​ផ្ទៃ​ខាង​ក្រោយ"
-
-#: formeditor/form.cpp:408
-msgid "Enabled"
-msgstr "ដែល​បាន​អនុញ្ញាត​"
-
-#: formeditor/form.cpp:409
-msgid "Geometry"
-msgstr "ធរណីមាត្រ"
-
-#: formeditor/form.cpp:410
-msgid "Size Policy"
-msgstr "គោល​ការណ៍​ទំហំ"
-
-#: formeditor/form.cpp:411
-msgid "Minimum Size"
-msgstr "ទំហំ​អប្បបរមា"
-
-#: formeditor/form.cpp:412
-msgid "Maximum Size"
-msgstr "ទំហំ​អតិបរមា"
-
-#: formeditor/form.cpp:413
-msgid "Font"
-msgstr "ពុម្ព​អក្សរ"
-
-#: formeditor/form.cpp:414
-msgid "Cursor"
-msgstr "ទស្សន៍​ទ្រនិច"
-
-#: formeditor/form.cpp:415
-msgid "Foreground Color"
-msgstr "​ពណ៌​ផ្ទៃ​ខាង​មុខ"
-
-#: formeditor/form.cpp:416
-msgid "Background Color"
-msgstr "ពណ៌​​​​ផ្ទៃ​ខាង​ក្រោយ"
-
-#: formeditor/form.cpp:417
-#, fuzzy
-#| msgid "No Background"
-msgid "Fill Background"
-msgstr "មិន​មាន​ផ្ទៃ​ខាង​ក្រោយ"
-
-#: formeditor/form.cpp:418
-msgid "Focus Policy"
-msgstr "គោល​ការណ៍ផ្តោត"
-
-#: formeditor/form.cpp:419
-msgid "Margin"
-msgstr "រឹម "
-
-#: formeditor/form.cpp:420 plugins/forms/kexidbfactorybase.cpp:64
-msgid "Read Only"
-msgstr "បាន​តែ​អាន"
-
-#: formeditor/form.cpp:421
-msgid "Style Sheet"
-msgstr "សន្លឹក​រចនាប័ទ្ម"
-
-#: formeditor/form.cpp:422
-msgctxt "Widget's Tooltip"
-msgid "Tooltip"
-msgstr "ព័ត៌មាន​ជំនួយឧបករណ៍"
-
-#: formeditor/form.cpp:423
-msgctxt "Widget's Whats This"
-msgid "What's This"
-msgstr "តើនេះ​ជា​អ្វី"
-
-#: formeditor/form.cpp:424
-msgid "Layout Direction"
-msgstr "ទិស​ប្លង់​"
-
-#: formeditor/form.cpp:425
-msgid "Icon Size"
-msgstr "ទំហំ​រូបតំណាង"
-
-#: formeditor/form.cpp:429
-msgid "Frame Width"
-msgstr "ទទឹង​ស៊ុម"
-
-#: formeditor/form.cpp:430
-msgid "Mid Frame Width"
-msgstr "ទទឹង​ស៊ុម​កណ្ដាល"
-
-#: formeditor/form.cpp:431
-msgid "Frame Shape"
-msgstr "រាង​ស៊ុម"
-
-#: formeditor/form.cpp:432
-msgid "Frame Shadow"
-msgstr "ស្រមោលស៊ុម"
-
-#: formeditor/form.cpp:434
-msgid "Vertical Scrollbar"
-msgstr "របារ​រមូរ​បញ្ឈរ"
-
-#: formeditor/form.cpp:435
-msgid "Horizontal Scrollbar"
-msgstr "របារ​រមូរ​​​ផ្ដេក"
-
-#: formeditor/form.cpp:437
-msgid "No Background"
-msgstr "មិន​មាន​ផ្ទៃ​ខាង​ក្រោយ"
-
-#: formeditor/form.cpp:438
-msgid "Palette Foreground"
-msgstr "ផ្ទៃ​ខាង​មុខ​ក្តារ​លាយ"
-
-#: formeditor/form.cpp:439
-msgctxt "Auto (HINT: for AutoText)"
-msgid "Auto"
-msgstr "ស្វ័យប្រវត្តិ"
-
-#: formeditor/form.cpp:441
-msgctxt "Auto (HINT: for Align)"
-msgid "Auto"
-msgstr "ស្វ័យប្រវត្តិ"
-
-#: formeditor/form.cpp:442
-msgctxt "Left (HINT: for Align)"
-msgid "Left"
-msgstr "ខាងឆ្វេង"
-
-#: formeditor/form.cpp:443
-msgctxt "Right (HINT: for Align)"
-msgid "Right"
-msgstr "ខាង​ស្តាំ"
-
-#: formeditor/form.cpp:444 formeditor/form.cpp:446
-msgctxt "Center (HINT: for Align)"
-msgid "Center"
-msgstr "កណ្ដាល"
-
-#: formeditor/form.cpp:445
-msgctxt "Justify (HINT: for Align)"
-msgid "Justify"
-msgstr "តម្រឹម​សង​ខាង"
-
-#: formeditor/form.cpp:447
-msgctxt "Top (HINT: for Align)"
-msgid "Top"
-msgstr "ខាង​លើ"
-
-#: formeditor/form.cpp:448
-msgctxt "Bottom (HINT: for Align)"
-msgid "Bottom"
-msgstr "ខាង​ក្រោម"
-
-#: formeditor/form.cpp:450
-msgctxt "No Frame (HINT: for Frame Shape)"
-msgid "No Frame"
-msgstr "មិន​មាន​ស៊ុម"
-
-#: formeditor/form.cpp:451
-msgctxt "Box (HINT: for Frame Shape)"
-msgid "Box"
-msgstr "ប្រអប់​"
-
-#: formeditor/form.cpp:452
-msgctxt "Panel (HINT: for Frame Shape)"
-msgid "Panel"
-msgstr "ផ្ទាំង"
-
-#: formeditor/form.cpp:453
-msgctxt "Windows Panel (HINT: for Frame Shape)"
-msgid "Windows Panel"
-msgstr "ផ្ទាំង​វីនដូ"
-
-#: formeditor/form.cpp:454
-msgctxt "Horiz. Line (HINT: for Frame Shape)"
-msgid "Horiz. Line"
-msgstr "បន្ទាត់​ផ្តេក"
-
-#: formeditor/form.cpp:455
-msgctxt "Vertical Line (HINT: for Frame Shape)"
-msgid "Vertical Line"
-msgstr "បន្ទាត់​បញ្ឈរ"
-
-#: formeditor/form.cpp:456
-msgctxt "Styled (HINT: for Frame Shape)"
-msgid "Styled"
-msgstr "ជា​រចនាប័ទ្ម"
-
-#: formeditor/form.cpp:457
-msgctxt "Popup (HINT: for Frame Shape)"
-msgid "Popup"
-msgstr "​លេចឡើង"
-
-#: formeditor/form.cpp:458
-msgctxt "Menu Bar (HINT: for Frame Shape)"
-msgid "Menu Bar"
-msgstr "របារ​ម៉ឺនុយ"
-
-#: formeditor/form.cpp:459
-msgctxt "Toolbar (HINT: for Frame Shape)"
-msgid "Toolbar"
-msgstr "របារ​ឧបករណ៍"
-
-#: formeditor/form.cpp:460
-msgctxt "Text Box (HINT: for Frame Shape)"
-msgid "Text Box"
-msgstr "ប្រអប់​អត្ថបទ"
-
-#: formeditor/form.cpp:461
-msgctxt "Tab Widget (HINT: for Frame Shape)"
-msgid "Tab Widget"
-msgstr "ធាតុ​ក្រាហ្វិក​ថេប"
-
-#: formeditor/form.cpp:462
-msgctxt "Group Box (HINT: for Frame Shape)"
-msgid "Group Box"
-msgstr "ប្រអប់​ក្រុម"
-
-#: formeditor/form.cpp:464
-msgctxt "Plain (HINT: for Frame Shadow)"
-msgid "Plain"
-msgstr "ធម្មតា"
-
-#: formeditor/form.cpp:465
-msgctxt "Raised (HINT: for Frame Shadow)"
-msgid "Raised"
-msgstr "លើក​ឡើង​លើ"
-
-#: formeditor/form.cpp:466
-msgctxt "Sunken (HINT: for Frame Shadow)"
-msgid "Sunken"
-msgstr "ធ្លាក់​ចុះ"
-
-#: formeditor/form.cpp:467
-msgctxt "for Frame Shadow"
-msgid "Internal"
-msgstr "ខាង​ក្នុង"
-
-#: formeditor/form.cpp:469
-msgctxt "No Focus (HINT: for Focus)"
-msgid "No Focus"
-msgstr "មិន​ផ្ដោត"
-
-#: formeditor/form.cpp:470
-msgctxt "Tab (HINT: for Focus)"
-msgid "Tab"
-msgstr "ថេប"
-
-#: formeditor/form.cpp:471
-msgctxt "Click (HINT: for Focus)"
-msgid "Click"
-msgstr "ចុច"
-
-#: formeditor/form.cpp:472
-msgctxt "Tab/Click (HINT: for Focus)"
-msgid "Tab/Click"
-msgstr "ថេប​​/​ចុច"
-
-#: formeditor/form.cpp:473
-msgctxt "Tab/Click/MouseWheel (HINT: for Focus)"
-msgid "Tab/Click/MouseWheel"
-msgstr "ថេប​​/​​ចុច​/​កង់​កណ្តុរ"
-
-#: formeditor/form.cpp:475
-msgid "Auto"
-msgstr "ស្វ័យប្រវត្តិ"
-
-#: formeditor/form.cpp:476
-msgid "Always Off"
-msgstr "បិទ​ជានិច្"
-
-#: formeditor/form.cpp:477
-msgid "Always On"
-msgstr "បើក​ជានិច្ច"
-
-#: formeditor/form.cpp:480
-msgid "Horizontal"
-msgstr "ផ្ដេក"
-
-#: formeditor/form.cpp:481
-msgid "Vertical"
-msgstr "បញ្ឈរ"
-
-#: formeditor/form.cpp:484
-msgid "Left to Right"
-msgstr "ឆ្វេង​ទៅ​​ស្តាំ"
-
-#: formeditor/form.cpp:485
-msgid "Right to Left"
-msgstr "ស្តាំ​ទៅ​​​ឆ្វេង"
-
-#: formeditor/form.cpp:1241
+#: formeditor/form.cpp:795
 #, kde-format
 msgid "Renaming widget \"%1\" to \"%2\" failed."
 msgstr "បានបរាជ័យ​ក្នុង​ការ​ប្តូរ​ឈ្មោះ​ធាតុ​ \"%1\" ​​​ជា​ \"%2\" ​។"
 
-#: formeditor/form.cpp:1812
+#: formeditor/form.cpp:1366
 #, kde-format
 msgid ""
 "Could not rename widget \"%1\" to \"%2\" because \"%3\" is not a valid name "
@@ -2500,7 +2195,7 @@ msgstr ""
 "មិន​អាច​ប្តូរ​ឈ្មោះ​ធាតុ​ក្រាហ្វិក​ \"%1\" ​ជា \"%2\" បាន​ទេ ពីព្រោះ​ \"%3\" មិន​មែន​ជាឈ្មោះ​ដែលត្រឹម​"
 "ត្រូវ​ (គ្រឿង​សម្គាល់​) សម្រាប់​ធាតុ​ក្រាហ្វិក​ ។\n"
 
-#: formeditor/form.cpp:1823
+#: formeditor/form.cpp:1377
 #, kde-format
 msgid ""
 "Could not rename widget \"%1\" to \"%2\" because a widget with the name "
@@ -2509,25 +2204,25 @@ msgstr ""
 "មិន​អាច​ប្តូរ​ឈ្មោះ​ធាតុ​ក្រាហ្វិក​ \"%1\" ​ជា​ \"%2\" បាន​ទេ ពី​ព្រោះ​ធាតុ​ក្រាហ្វិក​មាន​ឈ្មោះ​ \"%3\" រួច​"
 "ហើយ​ ។\n"
 
-#: formeditor/form.cpp:1937 formeditor/form.cpp:2196
+#: formeditor/form.cpp:1491 formeditor/form.cpp:1750
 #, kde-format
 msgid "Multiple Widgets (%1)"
 msgstr "ធាតុ​ក្រាហ្វិក​ច្រើន​ (%1)"
 
-#: formeditor/form.cpp:2186
+#: formeditor/form.cpp:1740
 #, kde-format
 msgid "%1 : Form"
 msgstr "%1 ៖ ទម្រង់"
 
-#: formeditor/form.cpp:2248
+#: formeditor/form.cpp:1802
 msgid "No Buddy"
 msgstr "មិន​មាន​មិត្ត​ជិត​ស្និទ្ធ"
 
-#: formeditor/form.cpp:2288
+#: formeditor/form.cpp:1842
 msgid "Events"
 msgstr "ព្រឹត្តិការណ៍"
 
-#: formeditor/form.cpp:2681
+#: formeditor/form.cpp:2235
 msgid ""
 "<b>Cannot create the layout.</b>\n"
 "All selected widgets must have the same parent."
@@ -2535,41 +2230,346 @@ msgstr ""
 "<b>មិន​អាច​បង្កើត​ប្លង់​ ។</b>\n"
 "ធាតុ​ក្រាហ្វិកដែល​បាន​ជ្រើស​ទាំង​អស់​ត្រូវ​តែ​មាន​មេ​ដូច​គ្នា​ ។"
 
-#: formeditor/form.cpp:2746
+#: formeditor/form.cpp:2300
 msgctxt "Translators: please keep this string short (less than 20 chars)"
 msgid "Hor. Alignment"
 msgstr "ការ​តម្រឹមផ្តេក"
 
-#: formeditor/form.cpp:2747
+#: formeditor/form.cpp:2301
 msgid "Horizontal Alignment"
 msgstr "ការ​តម្រឹមផ្តេក"
 
-#: formeditor/form.cpp:2769
+#: formeditor/form.cpp:2323
 msgctxt "Translators: please keep this string short (less than 20 chars)"
 msgid "Ver. Alignment"
 msgstr "ការ​តម្រឹម​​បញ្ឈរ​"
 
-#: formeditor/form.cpp:2770
+#: formeditor/form.cpp:2324
 msgid "Vertical Alignment"
 msgstr "ការ​តម្រឹម​​បញ្ឈរ"
 
-#: formeditor/form.cpp:2782
+#: formeditor/form.cpp:2336
 msgid "Word Break"
 msgstr "ការ​បំបែក​ពាក្យ"
 
-#: formeditor/form.cpp:2853
+#: formeditor/form.cpp:2407
 msgid "Container's Layout"
 msgstr "ប្លង់​របស់​ឧបករណ៍​ផ្ទុក"
 
-#: formeditor/form.cpp:2860
+#: formeditor/form.cpp:2414
 msgid "Layout Margin"
 msgstr "រឹម​ប្លង់"
 
-#: formeditor/form.cpp:2867
+#: formeditor/form.cpp:2421
 msgid "Layout Spacing"
 msgstr "គម្លាត​ប្លង់"
 
-#: formeditor/formIO.cpp:141 formeditor/formIO.cpp:321
+#. i18n: ectx: property (text), widget (QTreeWidget, list)
+#: formeditor/form_p.cpp:252 formeditor/form_p.cpp:253
+#: plugins/tables/kexitabledesignerview.cpp:337
+#: widget/KexiConnectionSelector.ui:94
+msgid "Name"
+msgstr "ឈ្មោះ"
+
+#: formeditor/form_p.cpp:255
+msgid "Window title"
+msgstr "ចំណងជើង​បង្អួច"
+
+#: formeditor/form_p.cpp:256
+msgid "Text"
+msgstr "អត្ថបទ"
+
+#: formeditor/form_p.cpp:257
+msgid "Background Pixmap"
+msgstr "ផែនទី​ចំណុច​ផ្ទៃ​ខាង​ក្រោយ"
+
+#: formeditor/form_p.cpp:258
+msgid "Enabled"
+msgstr "ដែល​បាន​អនុញ្ញាត​"
+
+#: formeditor/form_p.cpp:259
+msgid "Geometry"
+msgstr "ធរណីមាត្រ"
+
+#: formeditor/form_p.cpp:260
+msgid "Size Policy"
+msgstr "គោល​ការណ៍​ទំហំ"
+
+#: formeditor/form_p.cpp:261
+msgid "Minimum Size"
+msgstr "ទំហំ​អប្បបរមា"
+
+#: formeditor/form_p.cpp:262
+msgid "Maximum Size"
+msgstr "ទំហំ​អតិបរមា"
+
+#: formeditor/form_p.cpp:263
+msgid "Font"
+msgstr "ពុម្ព​អក្សរ"
+
+#: formeditor/form_p.cpp:264
+msgid "Cursor"
+msgstr "ទស្សន៍​ទ្រនិច"
+
+#: formeditor/form_p.cpp:265
+msgid "Foreground Color"
+msgstr "​ពណ៌​ផ្ទៃ​ខាង​មុខ"
+
+#: formeditor/form_p.cpp:266
+msgid "Background Color"
+msgstr "ពណ៌​​​​ផ្ទៃ​ខាង​ក្រោយ"
+
+#: formeditor/form_p.cpp:267
+#, fuzzy
+#| msgid "No Background"
+msgid "Fill Background"
+msgstr "មិន​មាន​ផ្ទៃ​ខាង​ក្រោយ"
+
+#: formeditor/form_p.cpp:268
+msgid "Focus Policy"
+msgstr "គោល​ការណ៍ផ្តោត"
+
+#: formeditor/form_p.cpp:269
+msgid "Margin"
+msgstr "រឹម "
+
+#: formeditor/form_p.cpp:270 plugins/forms/kexidbfactorybase.cpp:64
+msgid "Read Only"
+msgstr "បាន​តែ​អាន"
+
+#: formeditor/form_p.cpp:271
+msgid "Style Sheet"
+msgstr "សន្លឹក​រចនាប័ទ្ម"
+
+#: formeditor/form_p.cpp:272
+msgctxt "Widget's Tooltip"
+msgid "Tooltip"
+msgstr "ព័ត៌មាន​ជំនួយឧបករណ៍"
+
+#: formeditor/form_p.cpp:273
+msgctxt "Widget's Whats This"
+msgid "What's This"
+msgstr "តើនេះ​ជា​អ្វី"
+
+#: formeditor/form_p.cpp:274
+msgid "Layout Direction"
+msgstr "ទិស​ប្លង់​"
+
+#: formeditor/form_p.cpp:275
+msgid "Icon Size"
+msgstr "ទំហំ​រូបតំណាង"
+
+#: formeditor/form_p.cpp:279
+msgid "Frame Width"
+msgstr "ទទឹង​ស៊ុម"
+
+#: formeditor/form_p.cpp:280
+msgid "Mid Frame Width"
+msgstr "ទទឹង​ស៊ុម​កណ្ដាល"
+
+#: formeditor/form_p.cpp:281
+msgid "Frame Shape"
+msgstr "រាង​ស៊ុម"
+
+#: formeditor/form_p.cpp:282
+msgid "Frame Shadow"
+msgstr "ស្រមោលស៊ុម"
+
+#: formeditor/form_p.cpp:284
+msgid "Vertical Scrollbar"
+msgstr "របារ​រមូរ​បញ្ឈរ"
+
+#: formeditor/form_p.cpp:285
+msgid "Horizontal Scrollbar"
+msgstr "របារ​រមូរ​​​ផ្ដេក"
+
+#: formeditor/form_p.cpp:287
+msgid "No Background"
+msgstr "មិន​មាន​ផ្ទៃ​ខាង​ក្រោយ"
+
+#: formeditor/form_p.cpp:288
+msgid "Palette Foreground"
+msgstr "ផ្ទៃ​ខាង​មុខ​ក្តារ​លាយ"
+
+#: formeditor/form_p.cpp:289
+msgctxt "Auto (HINT: for AutoText)"
+msgid "Auto"
+msgstr "ស្វ័យប្រវត្តិ"
+
+#: formeditor/form_p.cpp:291
+msgctxt "Auto (HINT: for Align)"
+msgid "Auto"
+msgstr "ស្វ័យប្រវត្តិ"
+
+#: formeditor/form_p.cpp:292
+msgctxt "Left (HINT: for Align)"
+msgid "Left"
+msgstr "ខាងឆ្វេង"
+
+#: formeditor/form_p.cpp:293
+msgctxt "Right (HINT: for Align)"
+msgid "Right"
+msgstr "ខាង​ស្តាំ"
+
+#: formeditor/form_p.cpp:294 formeditor/form_p.cpp:296
+msgctxt "Center (HINT: for Align)"
+msgid "Center"
+msgstr "កណ្ដាល"
+
+#: formeditor/form_p.cpp:295
+msgctxt "Justify (HINT: for Align)"
+msgid "Justify"
+msgstr "តម្រឹម​សង​ខាង"
+
+#: formeditor/form_p.cpp:297
+msgctxt "Top (HINT: for Align)"
+msgid "Top"
+msgstr "ខាង​លើ"
+
+#: formeditor/form_p.cpp:298
+msgctxt "Bottom (HINT: for Align)"
+msgid "Bottom"
+msgstr "ខាង​ក្រោម"
+
+#: formeditor/form_p.cpp:300
+msgctxt "No Frame (HINT: for Frame Shape)"
+msgid "No Frame"
+msgstr "មិន​មាន​ស៊ុម"
+
+#: formeditor/form_p.cpp:301
+msgctxt "Box (HINT: for Frame Shape)"
+msgid "Box"
+msgstr "ប្រអប់​"
+
+#: formeditor/form_p.cpp:302
+msgctxt "Panel (HINT: for Frame Shape)"
+msgid "Panel"
+msgstr "ផ្ទាំង"
+
+#: formeditor/form_p.cpp:303
+msgctxt "Windows Panel (HINT: for Frame Shape)"
+msgid "Windows Panel"
+msgstr "ផ្ទាំង​វីនដូ"
+
+#: formeditor/form_p.cpp:304
+msgctxt "Horiz. Line (HINT: for Frame Shape)"
+msgid "Horiz. Line"
+msgstr "បន្ទាត់​ផ្តេក"
+
+#: formeditor/form_p.cpp:305
+msgctxt "Vertical Line (HINT: for Frame Shape)"
+msgid "Vertical Line"
+msgstr "បន្ទាត់​បញ្ឈរ"
+
+#: formeditor/form_p.cpp:306
+msgctxt "Styled (HINT: for Frame Shape)"
+msgid "Styled"
+msgstr "ជា​រចនាប័ទ្ម"
+
+#: formeditor/form_p.cpp:307
+msgctxt "Popup (HINT: for Frame Shape)"
+msgid "Popup"
+msgstr "​លេចឡើង"
+
+#: formeditor/form_p.cpp:308
+msgctxt "Menu Bar (HINT: for Frame Shape)"
+msgid "Menu Bar"
+msgstr "របារ​ម៉ឺនុយ"
+
+#: formeditor/form_p.cpp:309
+msgctxt "Toolbar (HINT: for Frame Shape)"
+msgid "Toolbar"
+msgstr "របារ​ឧបករណ៍"
+
+#: formeditor/form_p.cpp:310
+msgctxt "Text Box (HINT: for Frame Shape)"
+msgid "Text Box"
+msgstr "ប្រអប់​អត្ថបទ"
+
+#: formeditor/form_p.cpp:311
+msgctxt "Tab Widget (HINT: for Frame Shape)"
+msgid "Tab Widget"
+msgstr "ធាតុ​ក្រាហ្វិក​ថេប"
+
+#: formeditor/form_p.cpp:312
+msgctxt "Group Box (HINT: for Frame Shape)"
+msgid "Group Box"
+msgstr "ប្រអប់​ក្រុម"
+
+#: formeditor/form_p.cpp:314
+msgctxt "Plain (HINT: for Frame Shadow)"
+msgid "Plain"
+msgstr "ធម្មតា"
+
+#: formeditor/form_p.cpp:315
+msgctxt "Raised (HINT: for Frame Shadow)"
+msgid "Raised"
+msgstr "លើក​ឡើង​លើ"
+
+#: formeditor/form_p.cpp:316
+msgctxt "Sunken (HINT: for Frame Shadow)"
+msgid "Sunken"
+msgstr "ធ្លាក់​ចុះ"
+
+#: formeditor/form_p.cpp:317
+msgctxt "for Frame Shadow"
+msgid "Internal"
+msgstr "ខាង​ក្នុង"
+
+#: formeditor/form_p.cpp:319
+msgctxt "No Focus (HINT: for Focus)"
+msgid "No Focus"
+msgstr "មិន​ផ្ដោត"
+
+#: formeditor/form_p.cpp:320
+msgctxt "Tab (HINT: for Focus)"
+msgid "Tab"
+msgstr "ថេប"
+
+#: formeditor/form_p.cpp:321
+msgctxt "Click (HINT: for Focus)"
+msgid "Click"
+msgstr "ចុច"
+
+#: formeditor/form_p.cpp:322
+msgctxt "Tab/Click (HINT: for Focus)"
+msgid "Tab/Click"
+msgstr "ថេប​​/​ចុច"
+
+#: formeditor/form_p.cpp:323
+msgctxt "Tab/Click/MouseWheel (HINT: for Focus)"
+msgid "Tab/Click/MouseWheel"
+msgstr "ថេប​​/​​ចុច​/​កង់​កណ្តុរ"
+
+#: formeditor/form_p.cpp:325
+msgid "Auto"
+msgstr "ស្វ័យប្រវត្តិ"
+
+#: formeditor/form_p.cpp:326
+msgid "Always Off"
+msgstr "បិទ​ជានិច្"
+
+#: formeditor/form_p.cpp:327
+msgid "Always On"
+msgstr "បើក​ជានិច្ច"
+
+#: formeditor/form_p.cpp:330
+msgid "Horizontal"
+msgstr "ផ្ដេក"
+
+#: formeditor/form_p.cpp:331
+msgid "Vertical"
+msgstr "បញ្ឈរ"
+
+#: formeditor/form_p.cpp:334
+msgid "Left to Right"
+msgstr "ឆ្វេង​ទៅ​​ស្តាំ"
+
+#: formeditor/form_p.cpp:335
+msgid "Right to Left"
+msgstr "ស្តាំ​ទៅ​​​ឆ្វេង"
+
+#: formeditor/formIO.cpp:140 formeditor/formIO.cpp:320
 msgid "*.ui|Qt Designer UI Files"
 msgstr "ឯកសារ​ចំណុច​ប្រទាក់​អ្នក​ប្រើ​របស់​កម្មវិធី​រចនា *.ui|Qt "
 
@@ -2987,7 +2987,7 @@ msgid "Fi&nd:"
 msgstr "រក ៖"
 
 #. i18n: ectx: property (text), widget (KPushButton, m_btnReplace)
-#: main/kexifinddialog.ui:107 migration/importwizard.cpp:815
+#: main/kexifinddialog.ui:107 migration/importwizard.cpp:817
 #: widget/KexiNameDialog.cpp:164 widget/utils/kexicontextmenuutils.cpp:155
 msgid "&Replace"
 msgstr "ជំនួស"
@@ -3912,10 +3912,10 @@ msgstr "បង្ហាញ​កម្មវិធី​រាយការណ៍
 msgid "Activates \"What's This\" tool."
 msgstr "បង្ហាញ​ឧបករណ៍ \"នេះ​ជា​អ្វី\" ។"
 
-#: main/KexiMainWindow_p.h:897 migration/importwizard.cpp:970
-#: migration/importwizard.cpp:973 migration/importwizard.cpp:975
-#: migration/importwizard.cpp:977 migration/importwizard.cpp:979
-#: migration/importwizard.cpp:981
+#: main/KexiMainWindow_p.h:897 migration/importwizard.cpp:972
+#: migration/importwizard.cpp:975 migration/importwizard.cpp:977
+#: migration/importwizard.cpp:979 migration/importwizard.cpp:981
+#: migration/importwizard.cpp:983
 msgid "Help"
 msgstr "ជំនួយ"
 
@@ -4738,8 +4738,8 @@ msgid "Share"
 msgstr ""
 
 #: migration/AlterSchemaWidget.cpp:51 migration/AlterSchemaWidget.cpp:113
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:166
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1366
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1277
+#: plugins/importexport/csv/KexiCSVImportDialogModel.cpp:75
 #, kde-format
 msgid "Column %1"
 msgstr "ជួរ​ឈរ %1"
@@ -4844,7 +4844,7 @@ msgid "Alter the Detected Design"
 msgstr "ប្តូរ​ការ​រចនា​ដែល​បាន​រកឃើញ"
 
 #: migration/importtablewizard.cpp:277 migration/importwizard.cpp:457
-#: migration/importwizard.cpp:834
+#: migration/importwizard.cpp:836
 msgid "Success"
 msgstr "ជោគជ័យ"
 
@@ -4868,13 +4868,13 @@ msgstr ""
 "អ្នក​បាន​ជ្រើស​​ដើម្បី​នាំចូល​តារាង​ដូច​ខាង​ក្រោម​ ៖ \n"
 "\n"
 
-#: migration/importtablewizard.cpp:463 migration/importwizard.cpp:719
+#: migration/importtablewizard.cpp:463 migration/importwizard.cpp:721
 msgid "No appropriate migration driver found."
 msgstr "រក​មិនឃើញ​កម្មវិធី​បញ្ជា​ការ​ប្ដូរ​ដែល​សមរម្យ ។"
 
 #: migration/importtablewizard.cpp:552
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:481
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1822
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:392
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1733
 msgid "No project available."
 msgstr "គ្មាន​គម្រោង ។"
 
@@ -4996,20 +4996,20 @@ msgstr ""
 "\n"
 "ដោយ​អាស្រ័យ​លើ​ទំហំ​របស់​មូលដ្ឋាន​ទិន្នន័យ​​អាច​ត្រូវការ​ពេលវេលា​មួយ​រយៈ ។"
 
-#: migration/importwizard.cpp:812
+#: migration/importwizard.cpp:814
 #, kde-format
 msgid "Database %1 already exists.<p>Do you want to replace it with a new one?"
 msgstr "មាន​មូលដ្ឋាន​ទិន្នន័យ %1 រួច​ហើយ ។<p>តើអ្នក​ចង់​ជំនួស​វា​ដោយ​មូលដ្ឋាន​ទិន្នន័យ​ថ្មី​មួយ​ឬ ?"
 
-#: migration/importwizard.cpp:815
+#: migration/importwizard.cpp:817
 msgid "No"
 msgstr "ទេ"
 
-#: migration/importwizard.cpp:848
+#: migration/importwizard.cpp:850
 msgid "Failure"
 msgstr "​បរាជ័យ"
 
-#: migration/importwizard.cpp:851
+#: migration/importwizard.cpp:853
 #, kde-format
 msgid ""
 "<p>Import failed.</p>%1<p>%2</p><p>You can click \"Back\" button and try "
@@ -5018,49 +5018,49 @@ msgstr ""
 "<p>ការ​នាំចូល​បាន​បរាជ័យ ។</p>%1<p>%2</p><p>អ្នក​អាច​ចុច​ប៊ូតុង \"ថយក្រោយ\" និង​ព្យាយាម​ម្ដង​ទៀត ។"
 "</p>"
 
-#: migration/importwizard.cpp:871
+#: migration/importwizard.cpp:873
 msgid "Select source database filename."
 msgstr "ជ្រើស​ឈ្មោះ​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ​ប្រភព ។"
 
-#: migration/importwizard.cpp:876
+#: migration/importwizard.cpp:878
 msgid "Select source database."
 msgstr "ជ្រើស​មូលដ្ឋាន​ទិន្នន័យ​ប្រភព ។"
 
-#: migration/importwizard.cpp:890
+#: migration/importwizard.cpp:892
 msgid "Could not import database. This type is not supported."
 msgstr "មិនអាច​នាំចូល​មូលដ្ឋាន​ទិន្នន័យ​បាន​ទេ ។ ប្រភេទ​នេះ​មិន​ត្រូវ​បានគាំទ្រ​ទេ ។"
 
-#: migration/importwizard.cpp:891
+#: migration/importwizard.cpp:893
 #, kde-format
 msgid "Could not import database \"%1\". This type is not supported."
 msgstr "មិនអាច​នាំចូល​មូលដ្ឋាន​ទិន្នន័យ \"%1\" ។ ប្រភេទ​នេះ​មិន​ត្រូ​វបានគាំទ្រ ។"
 
-#: migration/importwizard.cpp:905
+#: migration/importwizard.cpp:907
 msgid "Importing in progress..."
 msgstr "ការ​នាំ​ចូល​កំពុង​ដំណើរការ..."
 
-#: migration/importwizard.cpp:909
+#: migration/importwizard.cpp:911
 #, kde-format
 msgid "Database has been imported into Kexi database project \"%1\"."
 msgstr "មូលដ្ឋាន​ទិន្នន័យ​ត្រូវ​បាននាំចូល​ទៅ​ក្នុង​គម្រោង​មូលដ្ឋាន​ទិន្នន័យ​របស់ Kexi \"%1\" ។"
 
-#: migration/importwizard.cpp:970 migration/importwizard.cpp:981
+#: migration/importwizard.cpp:972 migration/importwizard.cpp:983
 msgid "No help is available for this page."
 msgstr "មិនមាន​ជំនួយ​សម្រាប់​ទំព័រ​នេះ ។"
 
-#: migration/importwizard.cpp:973
+#: migration/importwizard.cpp:975
 msgid "Here you can choose the location to import data from."
 msgstr "នៅ​​ទីនេះ​អ្នក​អាច​ជ្រើស​ទីតាំង​​ត្រូវ​នាំ​ទិន្នន័យ​ចូល ។"
 
-#: migration/importwizard.cpp:975
+#: migration/importwizard.cpp:977
 msgid "Here you can choose the actual database to import data from."
 msgstr "នៅ​ទីនេះ អ្នក​អាច​ជ្រើស​មូលដ្ឋាន​ទិន្នន័យ​ពិតប្រាកដ​ត្រូវ​នាំទិន្នន័យ​ចូល ។"
 
-#: migration/importwizard.cpp:977
+#: migration/importwizard.cpp:979
 msgid "Here you can choose the location to save the data."
 msgstr "នៅ​ទីនេះ អ្នក​អាច​ជ្រើស​ទីតាំង​ត្រូវ​រក្សា​ទិន្នន័យ​ទុក ។"
 
-#: migration/importwizard.cpp:979
+#: migration/importwizard.cpp:981
 msgid ""
 "Here you can choose the location to save the data in and the new database "
 "name."
@@ -5985,12 +5985,12 @@ msgid "Show Options >>"
 msgstr "បង្ហាញ​ជម្រើស>>"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:176
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:663
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:574
 msgid "Delimiter:"
 msgstr "សញ្ញា​កំណត់​ព្រំដែន ៖"
 
 #: plugins/importexport/csv/kexicsvexportwizard.cpp:185
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:692
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:603
 msgid "Text quote:"
 msgstr "សម្រង់​អត្ថបទ ៖"
 
@@ -6022,132 +6022,125 @@ msgstr "​នាំចេញ"
 msgid "Hide Options <<"
 msgstr "លាក់​ជម្រើស <<"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:178
-#, fuzzy
-#| msgid "Column name"
-msgctxt "@title:row"
-msgid "Column name"
-msgstr "ឈ្មោះ​ជួរ​ឈរ"
-
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:318
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:229
 msgid "no"
 msgstr "ទេ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:320
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:231
 msgid "false"
 msgstr "បរាជ័យ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:328
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:239
 msgid "Import CSV Data From File"
 msgstr "នាំចូល​​ទិន្នន័យ CSV​​ ពីឯកសារ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:328
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:239
 msgid "Paste CSV Data From Clipboard"
 msgstr "បិទ​ភ្ជាប់​ទិន្នន័យ​ CSV ពីក្ដារ​តម្បៀត​ខ្ទាស់"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:337
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:248
 #: plugins/scripting/kexiscripting/kexiscriptdesignview.cpp:154
 msgid "&Import..."
 msgstr "នាំចូល..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:339
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:250
 #, fuzzy
 #| msgid "Next Page"
 msgctxt "Opposite to Back"
 msgid "Next"
 msgstr "ទំព័រ​បន្ទាប់"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:412
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:323
 msgid "Open CSV Data File"
 msgstr "បើក​ឯកសារ​ទិន្នន័យ CSV"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:461
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:372
 #, fuzzy
 #| msgid "Select source database filename."
 msgctxt "@info"
 msgid "Select source filename."
 msgstr "ជ្រើស​ឈ្មោះ​ឯកសារ​មូលដ្ឋាន​ទិន្នន័យ​ប្រភព ។"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:474
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:385
 msgid "Data set contains no rows. Do you want to import empty table?"
 msgstr "គ្មាន​ជួរ​ដេក​ក្នុង​សំណុំ​ទិន្នន័យ ។ តើ​អ្នក​ចង់​នាំចូល​តារាង​ទទេដែរឬទេ ?"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:487
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1827
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:398
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1738
 msgid "No database connection available."
 msgstr "គ្មាន​ការ​ត​ភ្ជាប់​មូលដ្ឋាន​ទិន្នន័យ ។"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:505
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:416
 #: widget/KexiNameDialog.cpp:155
 msgid "Please choose other name."
 msgstr "សូម​ជ្រើស​ឈ្មោះ​ផ្សេង ។"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:555
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:466
 #, fuzzy
 #| msgid "Loading CSV Data"
 msgctxt "@title:window"
 msgid "Loading CSV Data"
 msgstr "ផ្ទុក​ទិន្នន័យ CSV"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:556
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:467
 #, fuzzy, kde-format
 #| msgid "Loading CSV Data from \"%1\"..."
 msgctxt "@info"
 msgid "Loading CSV Data from <filename>%1</filename>..."
 msgstr "កំពុង​ផ្ទុក​ទិន្នន័យ CSV ពី \"%1\"..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:622
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:836
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:533
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:747
 #, fuzzy
 #| msgid "Table:"
 msgid "To table:"
 msgstr "តារាង ៖"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:639
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:550
 #, fuzzy
 #| msgid "Select the Table to Import"
 msgid "Select file name for import"
 msgstr "ជ្រើស​តារាង​ដើម្បី​​នាំចូល"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:649
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:560
 msgid "Preview of data from file:"
 msgstr "មើល​ទិន្នន័យ​ជា​មុន​ពី​ឯកសារ ៖"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:650
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:561
 msgid "Preview of data from clipboard"
 msgstr "មើល​ទិន្នន័យ​ជា​មុន​ពី​ក្ដារតម្បៀតខ្ទាស់"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:684
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:595
 msgid "Primary key"
 msgstr "កូនសោ​ចម្បង"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:716
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:627
 msgid "Ignore duplicated delimiters"
 msgstr "មិនអើពើ​នឹង​សញ្ញា​កំណត់​ព្រំដែន​ស្ទួន​"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:721
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:632
 msgid "First row contains column names"
 msgstr "ជួរដេក​ដំបូង​មាន​ឈ្មោះ​ជួរឈរ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:739
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:650
 #, fuzzy
 #| msgid "CSV Import Options"
 msgid "Import Options"
 msgstr "ជម្រើស​នាំចូល CVS"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:748
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:659
 #, fuzzy
 #| msgid "New database"
 msgctxt "@action:button"
 msgid "New table"
 msgstr "មូលដ្ឋាន​ទិន្នន័យ​ថ្មី"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:749
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:660
 msgctxt "CSV import: data will be appended to a new table"
 msgid "Data will be appended to a new table"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:751
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:662
 #, fuzzy
 #| msgctxt "Keep this text narrow: split to multiple rows if needed"
 #| msgid ""
@@ -6159,97 +6152,97 @@ msgstr ""
 "នាំចូល​មូលដ្ឋាន\n"
 "ដែល​មាន​ស្រាប់"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:752
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:663
 msgctxt "CSV import: data will be appended to existing table"
 msgid "Data will be appended to existing table"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:763
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:674
 msgid "Choose Method of Saving Imported Data"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:794
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:705
 #, fuzzy
 #| msgid "Caption:"
 msgctxt "@label"
 msgid "Caption:"
 msgstr "ចំណង​ជើង ៖"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:795
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:706
 #, fuzzy
 #| msgid "Name:"
 msgctxt "@label"
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:796
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:707
 #, fuzzy
 #| msgid "Row Layout"
 msgctxt "@label"
 msgid "Row count:"
 msgstr "ប្លង់​ជួរ​ដេក"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:797
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:708
 #, fuzzy
 #| msgid "Column Layout"
 msgctxt "@label"
 msgid "Column count:"
 msgstr "ប្លង់​ជួរ​ឈរ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:823
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:734
 msgctxt "@label"
 msgid "Choose Name of Destination Table"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:831
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:742
 #, fuzzy
 #| msgid "To CSV file:"
 msgid "From CSV file:"
 msgstr "ទៅ​ឯកសារ CSV ៖"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:831
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:742
 #, fuzzy
 #| msgid "To clipboard:"
 msgid "From Clipboard"
 msgstr "ទៅ​ក្តារ​តម្បៀត​ខ្ទាស់ ៖"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:850
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:761
 #, fuzzy
 #| msgid "Importing"
 msgid "Importing..."
 msgstr "នាំចូល"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:903
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:814
 #, kde-format
 msgid "Cannot open input file <nobr>\"%1\"</nobr>."
 msgstr "មិនអាច​បើក​ឯកសារ​បញ្ចូល <nobr>\"%1\"</nobr> បាន​ទេ ។"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:980
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:891
 #, kde-format
 msgid "Start at line (1-%1):"
 msgstr "ចាប់ផ្ដើម​នៅ​បន្ទាត់ (1-%1) ៖"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:981
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:989
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:892
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:900
 msgid "Start at line:"
 msgstr "ចាប់ផ្ដើម​នៅ​បន្ទាត់ ៖"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1652
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1563
 #: plugins/queries/kexiquerydesignerguieditor.cpp:226
 msgid "Column"
 msgstr "ជួរឈរ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1689
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1600
 msgctxt "@info"
 msgid "An error occurred during insert record."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1770
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1681
 #, kde-format
 msgid "Format for column %1:"
 msgstr "ទ្រង់ទ្រាយ​សម្រាប់​ជួរ​ឈរ %1 ៖"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1842
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1753
 msgid ""
 "No Primary Key (autonumber) has been defined.\n"
 "Should it be automatically defined on import (recommended)?\n"
@@ -6263,68 +6256,75 @@ msgstr ""
 "ចំណាំ ៖ តារាង​ដែល​បាន​នាំចូល​ដោយ​គ្មាន​កូនសោ​ចម្បង​មិនអាច​កែសម្រួល​បានទេ (អាស្រ័យ​លើ​ប្រភេទ​មូលដ្ឋាន​"
 "ទិន្នន័យ) ។"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1846
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1757
 msgctxt "Add Database Primary Key to a Table"
 msgid "Add Primary Key"
 msgstr "បន្ថែម​កូន​សោ​ចម្បង"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1847
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1758
 msgctxt "Do Not Add Database Primary Key to a Table"
 msgid "Do Not Add"
 msgstr "កុំ​បន្ថែម"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1931
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1842
 msgid "<p>Fields count does not match!</p><p>Please choose another table.</p>"
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1971
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1882
 #, kde-format
 msgid "Importing CSV Data from <nobr>\"%1\"</nobr> into \"%2\" table..."
 msgstr "កំពុង​​នាំាំចូល​ទិន្នន័យ CSV ពី​ <nobr>\"%1\"</nobr> ទៅ​ក្នុង​តារាង \"%2\"..."
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1987
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1898
 msgid "Import has been canceled."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:1989
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1900
 msgid "Error occurred during import."
 msgstr ""
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2023
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1934
 #, kde-format
 msgid "Data has been successfully imported to table \"%1\"."
 msgstr "ទិន្នន័យ​ត្រូវ​បាន​នាំចូល​ដោយ​ជោគជ័យ​ទៅ​តារាង \"%1\" ។"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2049
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1960
 msgctxt "Text type for column"
 msgid "Text"
 msgstr "អត្ថបទ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2051
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1962
 msgctxt "Numeric type for column"
 msgid "Number"
 msgstr "លេខ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2053
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:1964
 msgctxt "Currency type for column"
 msgid "Currency"
 msgstr "រូបិយប័ណ្ណ"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2134
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2045
 #, kde-format
 msgctxt "row count"
 msgid "(rows: %1)"
 msgstr "(ជួរ​ដេក ៖ %1)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2138
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2049
 #, kde-format
 msgctxt "row count"
 msgid "(rows: more than %1)"
 msgstr "(ជួរ​ដេក ៖ ច្រើន​ជាង %1)"
 
-#: plugins/importexport/csv/kexicsvimportdialog.cpp:2139
+#: plugins/importexport/csv/kexicsvimportdialog.cpp:2050
 msgid "Not all rows are visible on this preview"
 msgstr "មិន​អាច​មើល​ឃើញ​ជួរ​ដេក​ទាំង​អស់​លើ​ការ​មើល​ជា​មុន​នេះ​ទេ"
+
+#: plugins/importexport/csv/KexiCSVImportDialogModel.cpp:88
+#, fuzzy
+#| msgid "Column name"
+msgctxt "@title:row"
+msgid "Column name"
+msgstr "ឈ្មោះ​ជួរ​ឈរ"
 
 #: plugins/importexport/csv/kexicsvimportoptionsdlg.cpp:102
 msgid "CSV Import Options"
