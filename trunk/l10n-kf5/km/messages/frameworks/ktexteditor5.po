@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-11 08:11+0000\n"
+"POT-Creation-Date: 2014-10-12 07:53+0000\n"
 "PO-Revision-Date: 2012-06-13 09:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -77,7 +77,7 @@ msgstr "វិសាលភាព"
 
 #. i18n: ectx: property (text), widget (QTreeWidget, treeWidget)
 #: completion/katecompletionmodel.cpp:1330
-#: dialogs/commandmenuconfigwidget.ui:22 dialogs/katedialogs.cpp:1080
+#: dialogs/commandmenuconfigwidget.ui:22 dialogs/katedialogs.cpp:1076
 msgid "Name"
 msgstr "ឈ្មោះ"
 
@@ -236,7 +236,7 @@ msgstr "ការ​រុំ​ពាក្យឋិតិវន្ត"
 #. i18n: ectx: Menu (view_menu_borders)
 #. i18n: ectx: property (title), widget (QGroupBox, gbBorders)
 #: data/katepartui.rc:68 dialogs/bordersappearanceconfigwidget.ui:9
-#: dialogs/katedialogs.cpp:653
+#: dialogs/katedialogs.cpp:649
 msgid "Borders"
 msgstr "ស៊ុម"
 
@@ -389,7 +389,7 @@ msgid "Scrollbars visibility:"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbShowScrollbars)
-#: dialogs/bordersappearanceconfigwidget.ui:168 dialogs/katedialogs.cpp:657
+#: dialogs/bordersappearanceconfigwidget.ui:168 dialogs/katedialogs.cpp:653
 msgid "Always On"
 msgstr "បើក​ជានិច្ច"
 
@@ -520,8 +520,8 @@ msgstr "ប្រភេទ ៖"
 
 #. i18n: ectx: property (title), widget (QGroupBox, gbGeneral)
 #. i18n: ectx: property (title), widget (QGroupBox, gbViInputMode)
-#: dialogs/completionconfigtab.ui:20 dialogs/katedialogs.cpp:519
-#: dialogs/katedialogs.cpp:649 dialogs/katedialogs.cpp:839
+#: dialogs/completionconfigtab.ui:20 dialogs/katedialogs.cpp:515
+#: dialogs/katedialogs.cpp:645 dialogs/katedialogs.cpp:835
 #: vimode/config/configwidget.ui:29
 msgid "General"
 msgstr "ទូទៅ"
@@ -767,7 +767,7 @@ msgstr "បង្ហាញ​សញ្ញា​​សម្គាល់​រុ
 msgid "W&rap words at:"
 msgstr "រុំ​ពាក្យត្រង់ ៖"
 
-#. i18n: ectx: property (whatsThis), widget (QSpinBox, sbWordWrap)
+#. i18n: ectx: property (whatsThis), widget (KPluralHandlingSpinBox, sbWordWrap)
 #: dialogs/editconfigwidget.ui:53
 msgid ""
 "If the Word Wrap option is selected this entry determines the length (in "
@@ -980,7 +980,7 @@ msgstr "ថេប និង​ចន្លោះ"
 msgid "Tab wi&dth:"
 msgstr "ទទឹង​ថេប ៖"
 
-#. i18n: ectx: property (whatsThis), widget (QSpinBox, sbIndentWidth)
+#. i18n: ectx: property (whatsThis), widget (KPluralHandlingSpinBox, sbIndentWidth)
 #: dialogs/indentationconfigwidget.ui:125
 msgid ""
 "The indentation width is the number of spaces which is used to indent a "
@@ -1125,181 +1125,176 @@ msgstr ""
 msgid "Increase indentation level if in l&eading blank space"
 msgstr "បង្កើន​កម្រិត​​ចូល​បន្ទាត់ នៅពេល​ដែល​មាន​ចន្លោះ​នៅ​ពីមុខ"
 
-#: dialogs/katedialogs.cpp:198 dialogs/katedialogs.cpp:201
+#: dialogs/katedialogs.cpp:198 dialogs/katedialogs.cpp:200
 #, fuzzy
+#| msgctxt "Wrap words at"
 #| msgid " character"
 #| msgid_plural " characters"
-msgctxt "spinbox special value for 1"
-msgid "1 character"
-msgstr " តួអក្សរ"
+msgid " character"
+msgid_plural " characters"
+msgstr[0] " តួអក្សរ"
 
-#: dialogs/katedialogs.cpp:199 dialogs/katedialogs.cpp:202
-#, fuzzy
-#| msgid " character"
-#| msgid_plural " characters"
-msgctxt "suffix for spinbox >1"
-msgid " characters"
-msgstr " តួអក្សរ"
-
-#: dialogs/katedialogs.cpp:229
+#: dialogs/katedialogs.cpp:227
 msgid "Indentation"
 msgstr "ការ​ចូល​បន្ទាត់"
 
-#: dialogs/katedialogs.cpp:302
+#: dialogs/katedialogs.cpp:300
 msgid "Auto Completion"
 msgstr "ការ​បំពេញ​ស្វ័យប្រវត្តិ"
 
-#: dialogs/katedialogs.cpp:366
+#: dialogs/katedialogs.cpp:364
 msgid "Spellcheck"
 msgstr "ពិនិត្យ​​អក្ខរាវិរុទ្ធ"
 
-#: dialogs/katedialogs.cpp:442
+#: dialogs/katedialogs.cpp:440
 msgid "Text Navigation"
 msgstr "ការ​រុករក​អត្ថបទ"
 
-#: dialogs/katedialogs.cpp:509
+#: dialogs/katedialogs.cpp:505
 #, fuzzy
+#| msgctxt "Wrap words at"
 #| msgid " character"
 #| msgid_plural " characters"
-msgctxt "suffix for spinbox >1 wrap words at (value is at 20 or larger)"
-msgid " characters"
-msgstr " តួអក្សរ"
+msgctxt "Wrap words at (value is at 20 or larger)"
+msgid " character"
+msgid_plural " characters"
+msgstr[0] " តួអក្សរ"
 
-#: dialogs/katedialogs.cpp:621
+#: dialogs/katedialogs.cpp:617
 msgid "Editing"
 msgstr "ការ​​កែសម្រួល"
 
-#: dialogs/katedialogs.cpp:626
+#: dialogs/katedialogs.cpp:622
 msgid "Editing Options"
 msgstr "ជម្រើស​ការ​កែសម្រួល"
 
-#: dialogs/katedialogs.cpp:655
+#: dialogs/katedialogs.cpp:651
 msgid "Off"
 msgstr "បិទ"
 
-#: dialogs/katedialogs.cpp:656
+#: dialogs/katedialogs.cpp:652
 msgid "Follow Line Numbers"
 msgstr "ដាក់​ពី​ក្រោយ​លេខ​បន្ទាត់"
 
-#: dialogs/katedialogs.cpp:769 dialogs/katedialogs.cpp:774
+#: dialogs/katedialogs.cpp:765 dialogs/katedialogs.cpp:770
 msgid "Appearance"
 msgstr "រូបរាង"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: dialogs/katedialogs.cpp:840 dialogs/textareaappearanceconfigwidget.ui:102
+#: dialogs/katedialogs.cpp:836 dialogs/textareaappearanceconfigwidget.ui:102
 msgid "Advanced"
 msgstr "កម្រិត​ខ្ពស់"
 
-#: dialogs/katedialogs.cpp:895
+#: dialogs/katedialogs.cpp:891
 msgid ""
 "You did not provide a backup suffix or prefix. Using default suffix: '~'"
 msgstr "អ្នក​មិន​បាន​ផ្ដល់​បច្ច័យ ឬ​បុព្វបទ​បម្រុង​ទុក ។ ប្រើ​បច្ច័យ​លំនាំដើម ៖ '~'"
 
-#: dialogs/katedialogs.cpp:896
+#: dialogs/katedialogs.cpp:892
 msgid "No Backup Suffix or Prefix"
 msgstr "គ្មាន​បច្ច័យ ឬ​បុព្វបទ​បម្រុង​ឡើយ"
 
-#: dialogs/katedialogs.cpp:907
+#: dialogs/katedialogs.cpp:903
 msgid ""
 "Selected directory for swap file storage does not exist. Do you want to "
 "create it?"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:908
+#: dialogs/katedialogs.cpp:904
 msgid "Missing Swap File Directory"
 msgstr ""
 
-#: dialogs/katedialogs.cpp:965
+#: dialogs/katedialogs.cpp:961
 msgid "KDE Default"
 msgstr "KDE លំនាំដើម"
 
-#: dialogs/katedialogs.cpp:1049
+#: dialogs/katedialogs.cpp:1045
 msgid "Open/Save"
 msgstr "បើក​/​រក្សាទុក"
 
-#: dialogs/katedialogs.cpp:1054
+#: dialogs/katedialogs.cpp:1050
 msgid "File Opening & Saving"
 msgstr "ការបើក និង​រក្សាទុក​ឯកសារ"
 
-#: dialogs/katedialogs.cpp:1068
+#: dialogs/katedialogs.cpp:1064
 msgid "Highlight Download"
 msgstr "រំលេច​ការ​ទាញ​យក"
 
-#: dialogs/katedialogs.cpp:1075
+#: dialogs/katedialogs.cpp:1071
 msgid "Select the syntax highlighting files you want to update:"
 msgstr "ជ្រើស​ឯកសារ​​រំលេច​​វាក្យ​សម្ពន្ធ ដែល​អ្នក​ចង់​ធ្វើ​បច្ចុប្បន្នភាព ៖"
 
-#: dialogs/katedialogs.cpp:1080
+#: dialogs/katedialogs.cpp:1076
 msgid "Installed"
 msgstr "បាន​ដំឡើង"
 
-#: dialogs/katedialogs.cpp:1080
+#: dialogs/katedialogs.cpp:1076
 msgid "Latest"
 msgstr "ចុង​ក្រោយ​បំផុត"
 
-#: dialogs/katedialogs.cpp:1087
+#: dialogs/katedialogs.cpp:1083
 msgid "<b>Note:</b> New versions are selected automatically."
 msgstr "<b>ចំណាំ ៖</b> កំណែ​ថ្មី​ត្រូវ​បាន​ជ្រើសដោយ​ស្វ័យ​ប្រវត្តិ ។"
 
-#: dialogs/katedialogs.cpp:1094
+#: dialogs/katedialogs.cpp:1090
 msgid "&Install"
 msgstr "ដំឡើង"
 
-#: dialogs/katedialogs.cpp:1137
+#: dialogs/katedialogs.cpp:1133
 msgid ""
 "The list of highlightings could not be found on / retrieved from the server"
 msgstr "រក​មិន​ឃើញ​បញ្ជី​រំលេច​នៅ​ពេល​បាន​យក​ពី​ម៉ាស៊ីន​បម្រើ"
 
-#: dialogs/katedialogs.cpp:1241
+#: dialogs/katedialogs.cpp:1237
 msgid "&Go to line:"
 msgstr "ទៅ​កាន់​បន្ទាត់ ៖"
 
-#: dialogs/katedialogs.cpp:1247
+#: dialogs/katedialogs.cpp:1243
 msgid "Go"
 msgstr "ទៅ"
 
-#: dialogs/katedialogs.cpp:1309
+#: dialogs/katedialogs.cpp:1305
 msgid "Dictionary:"
 msgstr "វចនានុក្រម  ៖"
 
-#: dialogs/katedialogs.cpp:1357
+#: dialogs/katedialogs.cpp:1353
 msgid "File Was Deleted on Disk"
 msgstr "ឯកសារ​ត្រូវ​បាន​លុប​នៅ​លើ​ថាស"
 
-#: dialogs/katedialogs.cpp:1358
+#: dialogs/katedialogs.cpp:1354
 msgid "&Save File As..."
 msgstr "រក្សាទុក​ឯកសារ​ជា..."
 
-#: dialogs/katedialogs.cpp:1360
+#: dialogs/katedialogs.cpp:1356
 msgid "Lets you select a location and save the file again."
 msgstr "អនុញ្ញាត​ឲ្យ​អ្នក​ជ្រើស​ទីតាំង និង​រក្សា​ទុក​ឯកសារ​ម្ដង​ទៀត ។"
 
-#: dialogs/katedialogs.cpp:1362
+#: dialogs/katedialogs.cpp:1358
 msgid "File Changed on Disk"
 msgstr "បាន​ផ្លាស់ប្ដូរ​ឯកសារ​នៅ​លើ​ថាស"
 
-#: dialogs/katedialogs.cpp:1363 document/katedocument.cpp:3976
+#: dialogs/katedialogs.cpp:1359 document/katedocument.cpp:3976
 msgid "&Reload File"
 msgstr "ផ្ទុក​ឯកសារ​ឡើង​វិញ"
 
-#: dialogs/katedialogs.cpp:1365
+#: dialogs/katedialogs.cpp:1361
 msgid ""
 "Reload the file from disk. If you have unsaved changes, they will be lost."
 msgstr "ផ្ទុក​ឯកសារ​ពី​ថាស​ឡើងវិញ ។ ប្រសិន​បើ​មិនបាន​រក្សាទុក​ការ​ផ្លាស់​ប្ដូរ នោះ​ពួក​វា​នឹង​ត្រូវ​បាត់​បង់ ។"
 
-#: dialogs/katedialogs.cpp:1379 document/katedocument.cpp:3974
+#: dialogs/katedialogs.cpp:1375 document/katedocument.cpp:3974
 msgid "What do you want to do?"
 msgstr "តើ​អ្នក​ចង់​ធ្វើ​អ្វី ?"
 
-#: dialogs/katedialogs.cpp:1390 document/katedocument.cpp:3977
+#: dialogs/katedialogs.cpp:1386 document/katedocument.cpp:3977
 msgid "&Ignore Changes"
 msgstr "មិន​អើពើ​នឹង​ការ​ផ្លាស់ប្ដូរ"
 
-#: dialogs/katedialogs.cpp:1391
+#: dialogs/katedialogs.cpp:1387
 msgid "Ignore the changes. You will not be prompted again."
 msgstr "មិន​អើពើ​នឹង​ការ​ផ្លាស់​ប្ដូរ ។ អ្នក​នឹង​មិន​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​ផ្លាស់ប្ដូរ​ម្ដងទៀត​ឡើយ ។"
 
-#: dialogs/katedialogs.cpp:1397
+#: dialogs/katedialogs.cpp:1393
 msgid ""
 "Do nothing. Next time you focus the file, or try to save it or close it, you "
 "will be prompted again."
@@ -1307,11 +1302,11 @@ msgstr ""
 "កុំ​ធ្វើ​អ្វី​ទាំង​អស់ ។ នៅ​ពេល​ដែល​អ្នក​ផ្ដោត​លើ​ឯកសារ​នៅ​ពេល​ក្រោយ ឬ​ព្យាយាម​រក្សា​ទុក​វា ឬ​បិទ​វា នោះ​អ្នក​នឹង​"
 "ត្រូវ​បាន​សួរ​ម្ដង​ទៀត ។​"
 
-#: dialogs/katedialogs.cpp:1406
+#: dialogs/katedialogs.cpp:1402
 msgid "Overwrite the disk file with the editor content."
 msgstr "សរសេរ​ជាន់​លើ​ឯកសារ​ថាស​ដែល​មាន​មាតិកា​របស់​កម្មវិធី​​កែសម្រួល ។"
 
-#: dialogs/katedialogs.cpp:1480 swapfile/kateswapdiffcreator.cpp:137
+#: dialogs/katedialogs.cpp:1476 swapfile/kateswapdiffcreator.cpp:137
 msgid ""
 "The diff command failed. Please make sure that diff(1) is installed and in "
 "your PATH."
@@ -1319,26 +1314,26 @@ msgstr ""
 "ពាក្យ​បញ្ជា diff បាន​បរាជ័យ ។ សូម​ប្រាកដ​ថា diff(1) ត្រូវ​បាន​ដំឡើង ហើយ​ស្ថិតនៅ​ក្នុង PATH របស់​"
 "អ្នក ។"
 
-#: dialogs/katedialogs.cpp:1482 swapfile/kateswapdiffcreator.cpp:139
+#: dialogs/katedialogs.cpp:1478 swapfile/kateswapdiffcreator.cpp:139
 msgid "Error Creating Diff"
 msgstr "កំហុស​ក្នុង​ការ​បង្កើត Diff"
 
-#: dialogs/katedialogs.cpp:1491 swapfile/kateswapdiffcreator.cpp:147
+#: dialogs/katedialogs.cpp:1487 swapfile/kateswapdiffcreator.cpp:147
 msgid "The files are identical."
 msgstr "ឯកសារ​ដូច​គ្នា ។"
 
-#: dialogs/katedialogs.cpp:1492 dialogs/katedialogs.cpp:1496
+#: dialogs/katedialogs.cpp:1488 dialogs/katedialogs.cpp:1492
 #: swapfile/kateswapdiffcreator.cpp:148
 msgid "Diff Output"
 msgstr "លទ្ធផល Diff"
 
-#: dialogs/katedialogs.cpp:1495
+#: dialogs/katedialogs.cpp:1491
 #, fuzzy
 #| msgid "Besides white space changes, the files are identical."
 msgid "Ignoring amount of white space changed, the files are identical."
 msgstr "ក្រៅពី​ការ​ផ្លាស់ប្ដូរ​ចន្លោះ​មិនឃើញ ឯកសារ​គឺ​ដូចគ្នា​បេះបិទ ។"
 
-#: dialogs/katedialogs.cpp:1520
+#: dialogs/katedialogs.cpp:1516
 msgid ""
 "Ignoring means that you will not be warned again (unless the disk file "
 "changes once more): if you save the document, you will overwrite the file on "
@@ -1348,7 +1343,7 @@ msgstr ""
 "ប្រសិន​បើ​អ្នក​រក្សា​ទុក​ឯកសារ អ្នក​នឹង​សរសេរ​ជាន់​លើ​ឯកសារ​នៅ​លើ​ថាស ។ ប្រសិន​បើ​អ្នក​មិន​រក្សា​ទុក នោះ​ឯកសារ​"
 "ថាស (ប្រសិន​បើមាន​) គឺ​ជា​អ្វី​ដែល​អ្នក​មាន ។"
 
-#: dialogs/katedialogs.cpp:1524
+#: dialogs/katedialogs.cpp:1520
 msgid "You Are on Your Own"
 msgstr "អ្នក​ទទួល​ខុសត្រូវ​ដោយ​ខ្លួន​ឯង"
 
@@ -8450,6 +8445,27 @@ msgstr "'%1' %2,  គោល​ដប់​ប្រាំមួយ %3  គោល
 msgid "Mark not set: %1"
 msgstr "សញ្ញា​សម្គាល់​មិន​បានកំណត់ ៖ %1"
 
+#, fuzzy
+#~| msgid " character"
+#~| msgid_plural " characters"
+#~ msgctxt "spinbox special value for 1"
+#~ msgid "1 character"
+#~ msgstr " តួអក្សរ"
+
+#, fuzzy
+#~| msgid " character"
+#~| msgid_plural " characters"
+#~ msgctxt "suffix for spinbox >1"
+#~ msgid " characters"
+#~ msgstr " តួអក្សរ"
+
+#, fuzzy
+#~| msgid " character"
+#~| msgid_plural " characters"
+#~ msgctxt "suffix for spinbox >1 wrap words at (value is at 20 or larger)"
+#~ msgid " characters"
+#~ msgstr " តួអក្សរ"
+
 #~ msgid "Folder Config File"
 #~ msgstr "ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ​ថត"
 
@@ -8527,11 +8543,6 @@ msgstr "សញ្ញា​សម្គាល់​មិន​បានកំណ
 #~ msgctxt "Language"
 #~ msgid "C++"
 #~ msgstr "C++"
-
-#~ msgctxt "Wrap words at"
-#~ msgid " character"
-#~ msgid_plural " characters"
-#~ msgstr[0] " តួអក្សរ"
 
 #~ msgid ""
 #~ "Changing the power user mode affects only newly opened / created "
