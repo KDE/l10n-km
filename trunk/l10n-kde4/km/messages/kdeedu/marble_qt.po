@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-10-12 01:49+0000\n"
+"POT-Creation-Date: 2014-10-19 01:50+0000\n"
 "PO-Revision-Date: 2008-12-02 15:23+0700\n"
 "Last-Translator: Eng Vannak <evannak@khmeros.info>\n"
 "Language-Team: km <support@khmeros.info>\n"
@@ -1094,12 +1094,12 @@ msgid "Upload to cloud"
 msgstr "ពពក​ដោយ​អន្លើ"
 
 #: src/lib/marble/CurrentLocationWidget.cpp:205
-msgid "Waiting for current location information..."
-msgstr "កំពុង​រង់ចាំ​ព័ត៌មាន​ទីតាំង​បច្ចុប្បន្ន..."
+msgid "No position available."
+msgstr ""
 
 #: src/lib/marble/CurrentLocationWidget.cpp:208
-msgid "Initializing current location service..."
-msgstr "កំពុង​ចាប់ផ្ដើម​សេវា​ទីតាំង​បច្ចុប្បន្ន..."
+msgid "Waiting for current location information..."
+msgstr "កំពុង​រង់ចាំ​ព័ត៌មាន​ទីតាំង​បច្ចុប្បន្ន..."
 
 #: src/lib/marble/CurrentLocationWidget.cpp:214
 msgid "Error when determining current location: "
@@ -1159,28 +1159,29 @@ msgstr ""
 msgid "nm"
 msgstr "ម៉ែត្រ"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:321
-msgid "Disabled"
-msgstr "បាន​បិទ"
+#: src/lib/marble/CurrentLocationWidget.cpp:340
+#: src/lib/marble/PlacemarkPositionProviderPlugin.cpp:46
+msgid "Placemark"
+msgstr "សញ្ញា​សម្គាល់​កន្លែង"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:380
+#: src/lib/marble/CurrentLocationWidget.cpp:375
 msgid "Save Track"
 msgstr "រក្សាទុក​ដាន"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:382
-#: src/lib/marble/CurrentLocationWidget.cpp:398
+#: src/lib/marble/CurrentLocationWidget.cpp:377
+#: src/lib/marble/CurrentLocationWidget.cpp:393
 msgid "KML File (*.kml)"
 msgstr "ឯកសារ KML (*.kml)"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:397
+#: src/lib/marble/CurrentLocationWidget.cpp:392
 msgid "Open Track"
 msgstr "បើក​ដាន"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:409
+#: src/lib/marble/CurrentLocationWidget.cpp:404
 msgid "Clear current track"
 msgstr "សម្អាត​ដាន​បច្ចុប្បន្ន"
 
-#: src/lib/marble/CurrentLocationWidget.cpp:410
+#: src/lib/marble/CurrentLocationWidget.cpp:405
 msgid "Are you sure you want to clear the current track?"
 msgstr "តើ​អ្នក​ពិតជា​ចង់​សម្អាត​ដាន​បច្ចុប្បន្ន​មែន​ទេ ?"
 
@@ -2633,6 +2634,14 @@ msgstr ""
 msgid "Installation aborted by user."
 msgstr "បាន​បោះបង់​ការ​ដំឡើង​ដោយ​អ្នកប្រើ ។"
 
+#: src/lib/marble/PlacemarkPositionProviderPlugin.cpp:36
+msgid "Placemark position provider Plugin"
+msgstr "កម្មវិធី​ជំនួយ​ផ្ដល់​ទីតាំង​សញ្ញា​សម្គាល់​កន្លែង"
+
+#: src/lib/marble/PlacemarkPositionProviderPlugin.cpp:56
+msgid "Reports the position of a placemark"
+msgstr "រាយការណ៍​ទីតាំង​របស់​សញ្ញា​សម្គាល់​កន្លែង"
+
 #: src/lib/marble/PlanetFactory.cpp:229
 msgctxt "the planet"
 msgid "Mercury"
@@ -2867,6 +2876,20 @@ msgstr ""
 "អ្នក​បាន​សម្រេចចិត្ត​ដំណើរការ Marble ដោយ​ប្រើ​ប្រព័ន្ធ​ក្រាហ្វិក​ផ្សេងគ្នា ។\n"
 "ដើម្បីឲ្យ​ការ​ផ្លាស់ប្ដូរ​នេះ​មាន​ប្រសិទ្ធភាព អ្នក​ត្រូវ​ចាប់ផ្ដើម Marble ឡើងវិញ ។\n"
 "សូម​បិទ​កម្មវិធី រួច​ចាប់ផ្ដើម Marble ម្ដងទៀត ។"
+
+#: src/lib/marble/RouteSimulationPositionProviderPlugin.cpp:34
+msgid "Current Route Position Provider Plugin"
+msgstr "កម្មវិធី​ជំនួយ​ផ្ដល់​ទីតាំង​ផ្លូវ​បច្ចុប្បន្ន"
+
+#: src/lib/marble/RouteSimulationPositionProviderPlugin.cpp:44
+msgid "Current Route"
+msgstr "ផ្លូវ​បច្ចុប្បន្ន"
+
+#: src/lib/marble/RouteSimulationPositionProviderPlugin.cpp:54
+#, fuzzy
+#| msgid "Simulates travelling along the current route."
+msgid "Simulates traveling along the current route."
+msgstr "ធ្វើដំណើរ​ត្រាប់តាម​បណ្ដោយ​ផ្លូវ​បច្ចុប្បន្ន ។"
 
 #: src/lib/marble/routing/instructions/RoutingInstruction.cpp:250
 msgid "Enter the roundabout."
@@ -3235,7 +3258,7 @@ msgstr "នាំចេញ​ផ្លូវ..."
 msgid "No route found"
 msgstr "រក​មិន​ឃើញ​ផ្លូវ"
 
-#: src/lib/marble/RoutingRunner.cpp:51
+#: src/lib/marble/RoutingRunner.cpp:40
 #, qt-format
 msgctxt "journey duration"
 msgid "%1:%2 h"
@@ -3441,18 +3464,6 @@ msgstr "Maemo"
 msgid "Reports the GPS position of a Maemo device (e.g. Nokia N900)."
 msgstr "រាយការណ៍​ទីតាំង GPS របស់​ឧបករណ៍ Maemo (ឧ. ណូគា N900) ។"
 
-#: src/plugins/positionprovider/placemark/PlacemarkPositionProviderPlugin.cpp:35
-msgid "Placemark position provider Plugin"
-msgstr "កម្មវិធី​ជំនួយ​ផ្ដល់​ទីតាំង​សញ្ញា​សម្គាល់​កន្លែង"
-
-#: src/plugins/positionprovider/placemark/PlacemarkPositionProviderPlugin.cpp:45
-msgid "Placemark"
-msgstr "សញ្ញា​សម្គាល់​កន្លែង"
-
-#: src/plugins/positionprovider/placemark/PlacemarkPositionProviderPlugin.cpp:55
-msgid "Reports the position of a placemark"
-msgstr "រាយការណ៍​ទីតាំង​របស់​សញ្ញា​សម្គាល់​កន្លែង"
-
 #: src/plugins/positionprovider/qtmobility/QtMobilityPositionProviderPlugin.cpp:39
 msgid "Qt Mobility Position Provider Plugin"
 msgstr "កម្មវិធី​ជំនួយ​ផ្ដល់​ទីតាំង​ចល័ត​របស់ Qt"
@@ -3464,20 +3475,6 @@ msgstr "ទីតាំង​ចល័ត​របស់ Qt"
 #: src/plugins/positionprovider/qtmobility/QtMobilityPositionProviderPlugin.cpp:59
 msgid "Reports the GPS position of a QtMobility compatible device."
 msgstr "រាយការណ៍​ទីតាំង GPS របស់​ឧបករណ៍ QtMobility ដែល​ឆបគ្នា ។"
-
-#: src/plugins/positionprovider/routesimulation/RouteSimulationPositionProviderPlugin.cpp:35
-msgid "Current Route Position Provider Plugin"
-msgstr "កម្មវិធី​ជំនួយ​ផ្ដល់​ទីតាំង​ផ្លូវ​បច្ចុប្បន្ន"
-
-#: src/plugins/positionprovider/routesimulation/RouteSimulationPositionProviderPlugin.cpp:45
-msgid "Current Route"
-msgstr "ផ្លូវ​បច្ចុប្បន្ន"
-
-#: src/plugins/positionprovider/routesimulation/RouteSimulationPositionProviderPlugin.cpp:55
-#, fuzzy
-#| msgid "Simulates travelling along the current route."
-msgid "Simulates traveling along the current route."
-msgstr "ធ្វើដំណើរ​ត្រាប់តាម​បណ្ដោយ​ផ្លូវ​បច្ចុប្បន្ន ។"
 
 #: src/plugins/positionprovider/wlocate/WlocatePositionProviderPlugin.cpp:63
 #, fuzzy
@@ -6243,6 +6240,12 @@ msgstr "ពុម្ព​ធាតុ​អណ្ដែត"
 #: src/plugins/templates/floatitem/FITemplateFloatItem.cpp:68
 msgid "This is a template class for float items."
 msgstr "នេះ​ជា​ពុម្ព​សម្រាប់​ធាតុ​អណ្ដែត ។"
+
+#~ msgid "Initializing current location service..."
+#~ msgstr "កំពុង​ចាប់ផ្ដើម​សេវា​ទីតាំង​បច្ចុប្បន្ន..."
+
+#~ msgid "Disabled"
+#~ msgstr "បាន​បិទ"
 
 #, fuzzy
 #~| msgid "Delete"
