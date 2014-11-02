@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kopete\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-10-29 01:48+0000\n"
+"POT-Creation-Date: 2014-11-02 18:45+0000\n"
 "PO-Revision-Date: 2012-06-08 15:03+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -2668,13 +2668,13 @@ msgstr ""
 msgid "Meta Contact Merge"
 msgstr "កា​របញ្ចូល​ទំនាក់ទំនង​មេតា​ចូលគ្នា​"
 
-#: kopete/contactlist/contactlistmodel.cpp:514
+#: kopete/contactlist/contactlistmodel.cpp:530
 #, kde-format
 msgctxt "%1 is display name, %2 is status (connected/away/etc.)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: kopete/contactlist/contactlistmodel.cpp:517
+#: kopete/contactlist/contactlistmodel.cpp:533
 #, kde-format
 msgctxt "%1 is display name, %2 is status and %3 is status message"
 msgid ""
@@ -2684,7 +2684,7 @@ msgstr ""
 "%1 (%2)\n"
 "%3"
 
-#: kopete/contactlist/contactlistmodel.cpp:679
+#: kopete/contactlist/contactlistmodel.cpp:695
 #, kde-format
 msgctxt ""
 "<tr><td>STATUS ICON <b>PROTOCOL NAME</b> (ACCOUNT NAME)</td><td>STATUS "
@@ -2696,7 +2696,7 @@ msgstr ""
 "<tr style='white-space:pre'><td><img src=\"%1\">&nbsp;</td><td><b>%2</"
 "b>&nbsp;(%3)</td><td align=\"right\">%4</td></tr>"
 
-#: kopete/contactlist/contactlistmodel.cpp:690
+#: kopete/contactlist/contactlistmodel.cpp:706
 #, kde-format
 msgctxt "<tr><td><small><i>STATUS MESSAGE</i></small></td></tr>"
 msgid "<tr><td>&nbsp;</td><td colspan='2'><small><i>%1</i></small></td></tr>"
@@ -6772,13 +6772,19 @@ msgstr "បោះបង់​ការ​ញែក"
 msgid "Parsing history"
 msgstr "ញែក​ប្រវត្តិ"
 
-#: plugins/history/historyimport.cpp:299
+#: plugins/history/historyimport.cpp:301
+#: plugins/history2/history2import.cpp:360
+#, kde-format
+msgid "WARNING: There is no equivalent for protocol %1 in kopete.\n"
+msgstr ""
+
+#: plugins/history/historyimport.cpp:319
 #: plugins/history2/history2import.cpp:387
 #, kde-format
 msgid "WARNING: Cannot find matching account for %1 (%2).\n"
 msgstr "ព្រមាន ៖ មិនអាច​រកឃើញ​គណនី​ដែល​ផ្គូផ្គង​សម្រាប់ %1 (%2) បានទេ ។\n"
 
-#: plugins/history/historyimport.cpp:311
+#: plugins/history/historyimport.cpp:331
 #: plugins/history2/history2import.cpp:399
 #, kde-format
 msgid ""
@@ -6788,22 +6794,13 @@ msgstr ""
 "ព្រមាន ៖ មិនអាច​រក %1 (%2) នៅ​ក្នុង​បញ្ជី​ទំនាក់ទំនង​របស់​អ្នក​បានទេ ។ កំណត់ហេតុ​ដែល​រកឃើញ នឹង​"
 "មិនត្រូវបាន​នាំចូល​ទេ ។\n"
 
-#: plugins/history/historyimport.cpp:326
+#: plugins/history/historyimport.cpp:346
 #: plugins/history2/history2import.cpp:413
 #, kde-format
 msgid "WARNING: Cannot open file %1. Skipping.\n"
 msgstr "ការ​ព្រមាន ៖ មិនអាច​បើក​ឯកសារ %1 បានទេ ​​។ រំលង ។\n"
 
-#: plugins/history/historyimport.cpp:375
-msgid "Cannot Map Nickname to Account"
-msgstr "មិន​អាច​ផ្គូផ្គង​សម្មតិនាម​ជាមួយ​នឹង​គណនី​បានទេ"
-
-#: plugins/history/historyimport.cpp:376
-#, kde-format
-msgid "Did you use \"%1\" as nickname in history?"
-msgstr "តើ​អ្នក​ប្រើ \"%1\" ជា​សម្មតិនាម​នៅ​ក្នុង​ប្រវត្តិ​ឬ ?"
-
-#: plugins/history/historyimport.cpp:423
+#: plugins/history/historyimport.cpp:411
 #: plugins/history2/history2import.cpp:478
 #, fuzzy, kde-format
 #| msgid ""
@@ -6818,13 +6815,39 @@ msgstr ""
 "នេះ​ដោយ​ដៃ ។ (ឧទាហរណ៍​ ខ្សែអក្សរ​កាលបរិច្ឆេទ​ដែល​បាន​ទទួល​ស្គាល់ ៖ \"05/31/2008 "
 "15:24:30\" ។)\n"
 
-#: plugins/history/historyimport.cpp:546
+#: plugins/history/historyimport.cpp:511
+#: plugins/history2/history2import.cpp:573
+#, kde-format
+msgid "INFORMATION: Guessed %1 to be one of your nicks.\n"
+msgstr ""
+
+#: plugins/history/historyimport.cpp:513
+#: plugins/history2/history2import.cpp:575
+#, kde-format
+msgid "INFORMATION: Guessed %1 to be one of your buddys nicks.\n"
+msgstr ""
+
+#: plugins/history/historyimport.cpp:530
+#: plugins/history2/history2import.cpp:589
+#, fuzzy
+#| msgid "Cannot Map Nickname to Account"
+msgid "Cannot map Nickname to Account"
+msgstr "មិន​អាច​ផ្គូផ្គង​សម្មតិនាម​ជាមួយ​នឹង​គណនី​បានទេ"
+
+#: plugins/history/historyimport.cpp:531
+#: plugins/history2/history2import.cpp:590
+#, fuzzy, kde-format
+#| msgid "Did you use \"%1\" as nickname in history?"
+msgid "Did you ever use \"%1\" as nickname in your history?"
+msgstr "តើ​អ្នក​ប្រើ \"%1\" ជា​សម្មតិនាម​នៅ​ក្នុង​ប្រវត្តិ​ឬ ?"
+
+#: plugins/history/historyimport.cpp:612
 #: plugins/history2/history2import.cpp:670
 #, kde-format
 msgid "WARNING: XML parser error in %1 at line %2, character %3: %4"
 msgstr "ការ​ព្រមាន ៖កំហុស​កម្មវិធី​ញែក XML នៅ​ក្នុង %1 នៅ​បន្ទាត់ %2 តួអក្សរ %3 ៖ %4"
 
-#: plugins/history/historyimport.cpp:549
+#: plugins/history/historyimport.cpp:615
 #: plugins/history2/history2import.cpp:673
 #, kde-format
 msgid "\t%1"
@@ -6983,33 +7006,6 @@ msgstr "យក​ប្រវត្តិ​ពី Pidgin..."
 #| msgid "Parsing history from pidgin ..."
 msgid "Parsing history from kopete ..."
 msgstr "កំពុង​ញែក​ប្រវត្តិ​ពី pidgin ..."
-
-#: plugins/history2/history2import.cpp:360
-#, kde-format
-msgid "WARNING: There is no equivalent for protocol %1 in kopete.\n"
-msgstr ""
-
-#: plugins/history2/history2import.cpp:573
-#, kde-format
-msgid "INFORMATION: Guessed %1 to be one of your nicks.\n"
-msgstr ""
-
-#: plugins/history2/history2import.cpp:575
-#, kde-format
-msgid "INFORMATION: Guessed %1 to be one of your buddys nicks.\n"
-msgstr ""
-
-#: plugins/history2/history2import.cpp:589
-#, fuzzy
-#| msgid "Cannot Map Nickname to Account"
-msgid "Cannot map Nickname to Account"
-msgstr "មិន​អាច​ផ្គូផ្គង​សម្មតិនាម​ជាមួយ​នឹង​គណនី​បានទេ"
-
-#: plugins/history2/history2import.cpp:590
-#, fuzzy, kde-format
-#| msgid "Did you use \"%1\" as nickname in history?"
-msgid "Did you ever use \"%1\" as nickname in your history?"
-msgstr "តើ​អ្នក​ប្រើ \"%1\" ជា​សម្មតិនាម​នៅ​ក្នុង​ប្រវត្តិ​ឬ ?"
 
 #: plugins/history2/history2plugin.cpp:47
 #, fuzzy
@@ -21159,6 +21155,12 @@ msgstr "បន្ថែម ៤"
 #: protocols/yahoo/yahooverifyaccount.cpp:44
 msgid "Account Verification - Yahoo"
 msgstr "ការ​ផ្ទៀងផ្ទាត់ - យ៉ាហ៊ូ"
+
+#~ msgid "Cannot Map Nickname to Account"
+#~ msgstr "មិន​អាច​ផ្គូផ្គង​សម្មតិនាម​ជាមួយ​នឹង​គណនី​បានទេ"
+
+#~ msgid "Did you use \"%1\" as nickname in history?"
+#~ msgstr "តើ​អ្នក​ប្រើ \"%1\" ជា​សម្មតិនាម​នៅ​ក្នុង​ប្រវត្តិ​ឬ ?"
 
 #~ msgid "Use old inline PGP format for signed and encrypted messages"
 #~ msgstr "ប្រើ​ទ្រង់ទ្រាយ PGP ក្នុង​តួ​ចាស់ សម្រាប់​ចុះហត្ថលេខា​ និង​អ៊ីនគ្រិប​សារ"
