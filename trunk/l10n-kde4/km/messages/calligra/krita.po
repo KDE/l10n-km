@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-23 01:51+0000\n"
+"POT-Creation-Date: 2014-11-24 01:50+0000\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -3789,7 +3789,7 @@ msgstr "លុប​ស្រទាប់ ឬ​របាំង"
 #: plugins/extensions/dropshadow/wdg_dropshadow.ui:57
 #: plugins/filters/noisefilter/wdgnoiseoptions.ui:29
 #: plugins/filters/randompickfilter/wdgrandompickoptions.ui:65
-#: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:38
+#: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:59
 #: ui/forms/wdganimationselector.ui:220 ui/forms/wdgautogradient.ui:81
 #: ui/forms/wdgpaintactioneditor.ui:89 ui/kis_paintop_box.cc:174
 msgid "Opacity:"
@@ -4199,7 +4199,7 @@ msgstr "បញ្ចូល​ឈ្មោះ"
 #: plugins/extensions/resourcemanager/wdgdlgbundlemanager.ui:131
 #: plugins/paintops/libpaintop/forms/wdgcustombrush.ui:22
 #: ui/forms/wdgautogradient.ui:25 ui/forms/wdgfilternodecreation.ui:17
-#: ui/forms/wdgflipbookselector.ui:28 ui/forms/wdgpaintopsettings.ui:156
+#: ui/forms/wdgflipbookselector.ui:28 ui/forms/wdgpaintopsettings.ui:177
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
 
@@ -9145,7 +9145,7 @@ msgid "Color background"
 msgstr "ពណ៌​ផ្ទៃ​ខាងក្រោយ"
 
 #. i18n: ectx: property (text), widget (QLabel, rateLbl)
-#: plugins/paintops/libpaintop/forms/wdgairbrush.ui:38
+#: plugins/paintops/libpaintop/forms/wdgairbrush.ui:37
 #, fuzzy
 #| msgid "Rate: "
 msgid "Rate:"
@@ -9446,13 +9446,6 @@ msgstr "អត្រា​ស្នាម​​ប្រឡាក់"
 #: plugins/paintops/libpaintop/forms/wdgfilteroption.ui:58
 msgid "Filter Settings"
 msgstr "កា​រកំណត់​តម្រង"
-
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox2)
-#: plugins/paintops/libpaintop/forms/wdgflowopacityoption.ui:61
-#, fuzzy
-#| msgid "Opacity: "
-msgid "Opacity Dynamics"
-msgstr "ភាព​ស្រអាប់ ៖"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpIncremental)
 #: plugins/paintops/libpaintop/forms/wdgincremental.ui:20
@@ -13157,42 +13150,73 @@ msgstr "ភាព​ស្រអាប់​របស់​គំនូរ​ �
 msgid "Preset Collection"
 msgstr "ការ​ប្រមូលផ្ដុំ​ដែល​បានកំណត់​ជា​មុន"
 
+#. i18n: ectx: property (toolTip), widget (QPushButton, paintPresetIcon)
+#: ui/forms/wdgpaintopsettings.ui:71
+#, fuzzy
+#| msgid "Delete the current action"
+msgid "Fill preset area with current icon"
+msgstr "លុប​សកម្មភាព​​បច្ចុប្បន្ន"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, fillGradient)
+#: ui/forms/wdgpaintopsettings.ui:88
+#, fuzzy
+#| msgid "Fill with Pattern"
+msgid "Fill area with gradient"
+msgstr "បំពេញ​ដោយ​លំនាំ"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, fillSolid)
+#: ui/forms/wdgpaintopsettings.ui:98
+#, fuzzy
+#| msgid "Fill with Background Color"
+msgid "Fill area with background color"
+msgstr "បំពេញ​ដោយ​ពណ៌​ផ្ទៃ​ខាង​ក្រោយ"
+
+#. i18n: ectx: property (toolTip), widget (QPushButton, eraseScratchPad)
+#: ui/forms/wdgpaintopsettings.ui:108
+msgid "Reset area to white"
+msgstr ""
+
 #. i18n: ectx: property (toolTip), widget (QLineEdit, txtPreset)
-#: ui/forms/wdgpaintopsettings.ui:166
+#: ui/forms/wdgpaintopsettings.ui:187
 msgid ""
 "Current Brush Preset. Pink in Color whenever the preset has modified "
 "settings. Stays the same if original settings are loaded."
 msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, bnSave)
-#: ui/forms/wdgpaintopsettings.ui:173
+#: ui/forms/wdgpaintopsettings.ui:194
 #, fuzzy
 #| msgid "save the current brush definition under this name"
 msgid "Save the current brush settings under this name"
 msgstr "រក្សាទុក​កា​រកំណត់ជក់​បច្ចុប្បន្ន​ក្រោមឈ្មោះ​នេះ"
 
 #. i18n: ectx: property (text), widget (QPushButton, bnSave)
-#: ui/forms/wdgpaintopsettings.ui:176
+#: ui/forms/wdgpaintopsettings.ui:197
 msgid "&Save to Presets"
 msgstr "រក្សា​ទុក​ទៅ​ការ​កំណត់​ជា​មុន"
 
 #. i18n: ectx: property (text), widget (QPushButton, reload)
-#: ui/forms/wdgpaintopsettings.ui:183
+#: ui/forms/wdgpaintopsettings.ui:204
 msgid "Reload"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, bnDefaultPreset)
-#: ui/forms/wdgpaintopsettings.ui:224
+#: ui/forms/wdgpaintopsettings.ui:245
 msgid "Default preset"
 msgstr "ការកំណត់​ជា​មុន​លំនាំ​ដើម"
 
 #. i18n: ectx: property (text), widget (QCheckBox, dirtyPresetCheckBox)
-#: ui/forms/wdgpaintopsettings.ui:237
+#: ui/forms/wdgpaintopsettings.ui:258
 msgid "Temporarily Save Tweaks To Presets"
 msgstr ""
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, eraserBrushSizeCheckBox)
+#: ui/forms/wdgpaintopsettings.ui:274
+msgid "Erase mode will use a separate brush size"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, eraserBrushSizeCheckBox)
-#: ui/forms/wdgpaintopsettings.ui:253
+#: ui/forms/wdgpaintopsettings.ui:277
 msgid "Eraser switch size"
 msgstr ""
 
@@ -15660,6 +15684,11 @@ msgstr ""
 #| msgid "Close"
 msgid "&Close"
 msgstr "បិទ"
+
+#, fuzzy
+#~| msgid "Opacity: "
+#~ msgid "Opacity Dynamics"
+#~ msgstr "ភាព​ស្រអាប់ ៖"
 
 #~ msgctxt ""
 #~ "The compression will take a long time; saving the file will be slow."

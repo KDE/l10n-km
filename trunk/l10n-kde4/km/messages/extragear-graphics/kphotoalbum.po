@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-16 01:45+0000\n"
+"POT-Creation-Date: 2014-11-24 01:53+0000\n"
 "PO-Revision-Date: 2012-07-09 10:31+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -440,7 +440,8 @@ msgstr ""
 msgid "Really Delete %1?"
 msgstr "ពិត​ជា​លុប​ %1 ឬ ?"
 
-#: AnnotationDialog/ListSelect.cpp:392 Settings/SubCategoriesPage.cpp:191
+#: AnnotationDialog/ListSelect.cpp:392 Settings/TagGroupsPage.cpp:537
+#: Settings/TagGroupsPage.cpp:780
 msgid "&Delete"
 msgstr "លុប​"
 
@@ -870,11 +871,11 @@ msgstr "២ ម៉ោង​"
 msgid "10 Minutes"
 msgstr "១០​ នាទី​"
 
-#: DB/Category.cpp:140 DB/Category.cpp:148
+#: DB/Category.cpp:140
 msgid "People"
 msgstr "មនុស្ស"
 
-#: DB/Category.cpp:141 DB/Category.cpp:149
+#: DB/Category.cpp:141
 msgid "Places"
 msgstr "ទីកន្លែង"
 
@@ -882,37 +883,37 @@ msgstr "ទីកន្លែង"
 msgid "Events"
 msgstr "ព្រឹត្តិការណ៍"
 
-#: DB/Category.cpp:143 Settings/CategoryPage.cpp:217
+#: DB/Category.cpp:143 Settings/CategoryPage.cpp:219
 msgid "Folder"
 msgstr "ថត"
 
-#: DB/Category.cpp:144 Settings/CategoryPage.cpp:218
+#: DB/Category.cpp:144 Settings/CategoryPage.cpp:220
 msgid "Tokens"
 msgstr "ថូខឺន"
 
-#: DB/Category.cpp:145 Settings/CategoryPage.cpp:219
+#: DB/Category.cpp:145 Settings/CategoryPage.cpp:221
 msgid "Media Type"
 msgstr "ប្រភេទ​មេឌៀ"
 
-#: DB/Category.cpp:150 Settings/CategoryPage.cpp:220
+#: DB/Category.cpp:147 Settings/CategoryPage.cpp:222
 msgid "Keywords"
 msgstr "ពាក្យ​គន្លឹះ"
 
-#: DB/Category.cpp:234
+#: DB/Category.cpp:228
 #, kde-format
 msgid "Unable to create directory '%1'."
 msgstr "មិន​អាច​បង្កើត​ថត '%1' ។"
 
-#: DB/Category.cpp:234
+#: DB/Category.cpp:228
 msgid "Unable to Create Directory"
 msgstr "មិន​អាច​បង្កើត​ថត"
 
-#: DB/Category.cpp:241
+#: DB/Category.cpp:235
 #, kde-format
 msgid "Error when saving image '%1'."
 msgstr "កំហុស​ពេល​កំពុង​រក្សា​ទុក​រូបភាព '%1' ។"
 
-#: DB/Category.cpp:241
+#: DB/Category.cpp:235
 msgid "Error Saving Image"
 msgstr "កំហុស​ពេល​កំពុង​រក្សា​ទុក​រូបភាព"
 
@@ -1134,7 +1135,7 @@ msgstr ""
 msgid "Override image dates"
 msgstr "បដិសេធ​កាលបរិច្ឆេទ​រូបភាព"
 
-#: Exif/SearchDialog.cpp:41 Settings/SettingsDialog.cpp:106
+#: Exif/SearchDialog.cpp:41 Settings/SettingsDialog.cpp:107
 msgid "Settings"
 msgstr "ការ​កំណត់"
 
@@ -1873,7 +1874,7 @@ msgid "&Maintenance"
 msgstr "តំហែ​ទាំ"
 
 #. i18n: ectx: Menu (plugins)
-#: kphotoalbumui.rc:72 Settings/SettingsDialog.cpp:82
+#: kphotoalbumui.rc:72 Settings/SettingsDialog.cpp:83
 msgid "Plugins"
 msgstr "កម្មវិធី​ជំនួយ​"
 
@@ -2723,8 +2724,7 @@ msgid ""
 msgstr ""
 "បើ​សិន​អ្នក​ប្រើ​ស្លាក​ជាក់​លាក់​ ដើម្បី​បង្ហាញ​ថា​រូបភាព​ត្រូវ​បាន​ដាក់​ស្លាក​នោះ​ អញ្ចឹង​សូម​បញ្ជាក់​វា​នៅ​ទីនេះ ។"
 
-#: MainWindow/StatisticsDialog.cpp:116 Settings/SubCategoriesPage.cpp:40
-#: Settings/UntaggedGroupBox.cpp:36
+#: MainWindow/StatisticsDialog.cpp:116 Settings/UntaggedGroupBox.cpp:36
 msgid "Category:"
 msgstr "ប្រភេទ​ ៖​"
 
@@ -3233,11 +3233,11 @@ msgstr "វាយ​បញ្ចូល​ពាក្យ​សម្ងាត់
 msgid "Type in New Password"
 msgstr "វាយ​បញ្ចូល​ពាក្យ​សម្ងាត់​ថ្មី​"
 
-#: MainWindow/Window.cpp:1241 Settings/SettingsDialog.cpp:75
+#: MainWindow/Window.cpp:1241 Settings/SettingsDialog.cpp:76
 msgid "General"
 msgstr "ទូទៅ​"
 
-#: MainWindow/Window.cpp:1242 Settings/SettingsDialog.cpp:80
+#: MainWindow/Window.cpp:1242 Settings/SettingsDialog.cpp:81
 msgid "Viewer"
 msgstr "កម្មវិធី​មើល​"
 
@@ -3420,60 +3420,60 @@ msgstr "ថ្មី​"
 msgid "Rename"
 msgstr "ប្ដូរ​ឈ្មោះ​​..."
 
-#: Settings/CategoryPage.cpp:113
+#: Settings/CategoryPage.cpp:114
 msgid "Positionable tags:"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:115
+#: Settings/CategoryPage.cpp:116
 msgid "Coordinates can be added to tags in this category"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:121
+#: Settings/CategoryPage.cpp:122
 msgid "Icon:"
 msgstr "រូបតំណាង ៖ "
 
-#: Settings/CategoryPage.cpp:131
+#: Settings/CategoryPage.cpp:132
 #, fuzzy
 #| msgid "Thumbnail Size: "
 msgid "Thumbnail Size:"
 msgstr "ទំហំ​រូបភាព​តូច:  "
 
-#: Settings/CategoryPage.cpp:142
+#: Settings/CategoryPage.cpp:143
 msgid "Preferred view:"
 msgstr "ទិដ្ឋភាព​ដែល​ពេញចិត្ត ៖"
 
-#: Settings/CategoryPage.cpp:147
+#: Settings/CategoryPage.cpp:148
 msgid "List View"
 msgstr "ទិដ្ឋភាព​បញ្ជី​"
 
-#: Settings/CategoryPage.cpp:148
+#: Settings/CategoryPage.cpp:149
 msgid "List View with Custom Thumbnails"
 msgstr "ទិដ្ឋភាព​បញ្ជី​ដែល​មាន​រូបភាព​តូច​ផ្ទាល់​ខ្លួន​"
 
-#: Settings/CategoryPage.cpp:149
+#: Settings/CategoryPage.cpp:150
 msgid "Icon View"
 msgstr "ទិដ្ឋភាព​រូប​តំណាង​"
 
-#: Settings/CategoryPage.cpp:150
+#: Settings/CategoryPage.cpp:151
 msgid "Icon View with Custom Thumbnails"
 msgstr "ទិដ្ឋភាព​រូប​តំណាង​ដែល​មាន​រូបភាព​តូច​ផ្ទាល់​ខ្លួន​"
 
-#: Settings/CategoryPage.cpp:171
+#: Settings/CategoryPage.cpp:172
 msgid "<i>Choose a category to edit it</i>"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:185
+#: Settings/CategoryPage.cpp:186
 #, fuzzy
 #| msgid "<b>Setting Category: </b>"
 msgid "Settings for category"
 msgstr "<b>ប្រភេទ​កំណត់​ ៖ </b>​"
 
-#: Settings/CategoryPage.cpp:188
+#: Settings/CategoryPage.cpp:189
 #, kde-format
 msgid "<i>Pending change: rename to \"%1\"</i>"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:224
+#: Settings/CategoryPage.cpp:226
 #, kde-format
 msgid ""
 "<p>Can't change the name of category \"%1\" to \"%2\":</p><p>\"%2\" is a "
@@ -3481,21 +3481,21 @@ msgid ""
 "category.</p>"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:228 Settings/CategoryPage.cpp:239
-#: Settings/CategoryPage.cpp:261 Settings/CategoryPage.cpp:278
+#: Settings/CategoryPage.cpp:230 Settings/CategoryPage.cpp:241
+#: Settings/CategoryPage.cpp:255 Settings/CategoryPage.cpp:272
 #, fuzzy
 #| msgid "Invalid password."
 msgid "Invalid category name"
 msgstr "ពាក្យ​សម្ងាត់​មិន​ត្រឹម​ត្រូវ​ ។​"
 
-#: Settings/CategoryPage.cpp:236
+#: Settings/CategoryPage.cpp:238
 #, kde-format
 msgid ""
 "<p>Can't change the name of category \"%1\" to \"%2\":</p><p>A category with "
 "this name already exists.</p>"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:256
+#: Settings/CategoryPage.cpp:250
 #, kde-format
 msgid ""
 "<p>Can't change the name of category \"%1\" to \"%2\":</p><p>\"%2\" is a "
@@ -3503,7 +3503,7 @@ msgid ""
 "\"%2\" is \"%1\", so this category already has this name.</p>"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:273
+#: Settings/CategoryPage.cpp:267
 #, kde-format
 msgid ""
 "<p>Can't change the name of category \"%1\" to \"%2\":</p><p>\"%2\" is a "
@@ -3511,18 +3511,18 @@ msgid ""
 "\"%2\" is \"%3\" and this category already exists.</p>"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:284
+#: Settings/CategoryPage.cpp:280
 #, kde-format
 msgid ""
 "<p>\"%1\" is a standard category which comes with a localized name. The "
 "localized name for \"%1\" is \"%2\", this name will be used instead.</p>"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:288
+#: Settings/CategoryPage.cpp:284
 msgid "Localized category name entered"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:304
+#: Settings/CategoryPage.cpp:301
 #, kde-format
 msgid ""
 "<p>Can't change the name of category \"%1\" to \"%2\":</p><p>There's a "
@@ -3530,30 +3530,30 @@ msgid ""
 "</p>"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:308
+#: Settings/CategoryPage.cpp:305
 msgid "Unsaved pending renaming action"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:337
+#: Settings/CategoryPage.cpp:334
 #, kde-format
 msgid ""
 "<p>Do you really want to make \"%1\" non-positionable?</p><p>All areas "
 "linked against this category will be deleted!</p>"
 msgstr ""
 
-#: Settings/CategoryPage.cpp:386
+#: Settings/CategoryPage.cpp:383
 #, fuzzy
 #| msgid "New Category..."
 msgid "New category"
 msgstr "ប្រភេទ​ថ្មី​..."
 
-#: Settings/CategoryPage.cpp:418
+#: Settings/CategoryPage.cpp:415
 #, fuzzy, kde-format
 #| msgid "<p>Really delete category '%1'?</p>"
 msgid "<p>Really delete category \"%1\"?</p>"
 msgstr "<p>ពិត​ជា​ចង់​លុប​ប្រភេទ '%1'?</p>​"
 
-#: Settings/CategoryPage.cpp:431
+#: Settings/CategoryPage.cpp:428
 msgid "<i>choose a category to edit it</i>"
 msgstr ""
 
@@ -4106,77 +4106,199 @@ msgstr ""
 msgid "Trust Time Stamps?"
 msgstr "ទុក​ចិត្ត​លើ​ត្រា​ពេល​វេលា​ឬ​អត់ ?​"
 
-#: Settings/SettingsDialog.cpp:76
+#: Settings/SettingsDialog.cpp:77
 msgid "File Searching & Versions"
 msgstr "កំណែ និង​ការ​ស្វែង​រក​ឯកសារ"
 
-#: Settings/SettingsDialog.cpp:77
+#: Settings/SettingsDialog.cpp:78
 msgid "Thumbnail View"
 msgstr "ទិដ្ឋភាព​រូបភាព​តូច​"
 
-#: Settings/SettingsDialog.cpp:78
+#: Settings/SettingsDialog.cpp:79
 msgid "Categories"
 msgstr "ប្រភេទ​"
 
-#: Settings/SettingsDialog.cpp:79
-msgid "Subcategories"
-msgstr "ប្រភេទ​រង​"
+#: Settings/SettingsDialog.cpp:80
+#, fuzzy
+#| msgid "New Group"
+msgid "Tag Groups"
+msgstr "ក្រុម​ថ្មី​"
 
-#: Settings/SettingsDialog.cpp:86
+#: Settings/SettingsDialog.cpp:87
 msgid "EXIF/IPTC Information"
 msgstr "ព័ត៌មាន​អំពី EXIF/IPTC​"
 
-#: Settings/SettingsDialog.cpp:88
+#: Settings/SettingsDialog.cpp:89
 msgid "Database backend"
 msgstr "កម្មវិធី​ខាង​ក្រោយ​មូលដ្ឋាន​ទិន្នន័យ​"
 
-#: Settings/SettingsDialog.cpp:90
+#: Settings/SettingsDialog.cpp:91
 msgid "Face management"
 msgstr ""
 
-#: Settings/SubCategoriesPage.cpp:53
-msgid "Super Categories:"
-msgstr "ប្រភេទ​ពិសេស ៖​"
+#: Settings/TagGroupsPage.cpp:48
+#, fuzzy
+#| msgid "Categories"
+msgctxt "@label"
+msgid "Categories and groups:"
+msgstr "ប្រភេទ​"
 
-#: Settings/SubCategoriesPage.cpp:62
-msgid "Items of Category:"
-msgstr "ធាតុ​របស់​ប្រភេទ ៖"
-
-#: Settings/SubCategoriesPage.cpp:72
-msgid "Add Super Category..."
-msgstr "បន្ថែម​ប្រភេទ​ពិសេស​...​"
-
-#: Settings/SubCategoriesPage.cpp:74
-msgid "Rename Super Category..."
-msgstr "ប្តូរ​ឈ្មោះ​ប្រភេទ​ពិសេស...​"
-
-#: Settings/SubCategoriesPage.cpp:76
-msgid "Delete Super Category"
-msgstr "លុប​ប្រភេទ​ពិសេស​"
-
-#: Settings/SubCategoriesPage.cpp:80
-msgid ""
-"<b>Notice:</b> It is also possible to set up subcategories in the annotation "
-"dialog, simply by dragging items."
+#: Settings/TagGroupsPage.cpp:59
+msgctxt "@label/rich"
+msgid "<emphasis>Select a group on the left side to add tags to it</emphasis>"
 msgstr ""
-"<b>ចំណាំ​ ៖</b> ​អ្នក​ក៏​អាច​រៀប​ចំ​ប្រភេទ​រង​នៅ​ក្នុង​ប្រអប់​ចំណារ​ពន្យល់​ផង​ដែរ​ តាម​ធម្មតា​ដោយ​អូស​ធាតុ ។"
 
-#: Settings/SubCategoriesPage.cpp:159 Settings/SubCategoriesPage.cpp:176
+#: Settings/TagGroupsPage.cpp:72
+msgctxt "@label/rich"
+msgid ""
+"<emphasis>There are pending changes of category names.<nl> Please save the "
+"changes before working on tag groups.</emphasis>"
+msgstr ""
+
+#: Settings/TagGroupsPage.cpp:80
+msgctxt "@action:inmenu"
+msgid "Add group ..."
+msgstr ""
+
+#: Settings/TagGroupsPage.cpp:259
+#, fuzzy, kde-format
+#| msgid "Really delete group %1?"
+msgctxt "@action:inmenu"
+msgid "Rename group \"%1\""
+msgstr "ពិត​ជា​ចង់​លុប​ក្រុម​ %1 ឬ​ ?"
+
+#: Settings/TagGroupsPage.cpp:261
+#, fuzzy, kde-format
+#| msgid "Delete Group"
+msgctxt "@action:inmenu"
+msgid "Delete group \"%1\""
+msgstr "លុប​ក្រុម​"
+
+#: Settings/TagGroupsPage.cpp:329
+#, fuzzy, kde-format
+#| msgid "Take item out of category %1"
+msgctxt "@label"
+msgid "Tags in group \"%1\" of category \"%2\""
+msgstr "យក​ធាតុ​ចេញ​ពី​ប្រភេទ %1​"
+
+#: Settings/TagGroupsPage.cpp:348
+#, fuzzy
+#| msgid "New Group"
+msgctxt "@title:window"
 msgid "New Group"
 msgstr "ក្រុម​ថ្មី​"
 
-#: Settings/SubCategoriesPage.cpp:159 Settings/SubCategoriesPage.cpp:176
+#: Settings/TagGroupsPage.cpp:349
+#, fuzzy
+#| msgid "Group name:"
+msgctxt "@label:textbox"
 msgid "Group name:"
 msgstr "ឈ្មោះ​ក្រុម​ ៖​"
 
-#: Settings/SubCategoriesPage.cpp:191
+#: Settings/TagGroupsPage.cpp:366
 #, kde-format
-msgid "Really delete group %1?"
-msgstr "ពិត​ជា​ចង់​លុប​ក្រុម​ %1 ឬ​ ?"
+msgctxt "@info"
+msgid "<p>The group \"%1\" already exists.</p>"
+msgstr ""
 
-#: Settings/SubCategoriesPage.cpp:191
+#: Settings/TagGroupsPage.cpp:367
+msgctxt "@title:window"
+msgid "Cannot add group"
+msgstr ""
+
+#: Settings/TagGroupsPage.cpp:445 Settings/TagGroupsPage.cpp:468
+#, fuzzy
+#| msgid "Delete Group"
+msgctxt "@title:window"
+msgid "Rename Group"
+msgstr "លុប​ក្រុម​"
+
+#: Settings/TagGroupsPage.cpp:446
+#, fuzzy
+#| msgid "Group name:"
+msgctxt "@label:textbox"
+msgid "New group name:"
+msgstr "ឈ្មោះ​ក្រុម​ ៖​"
+
+#: Settings/TagGroupsPage.cpp:463
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>Cannot rename group \"%1\" to \"%2\": \"%2\" already exists in "
+"category \"%3\"</para>"
+msgstr ""
+
+#: Settings/TagGroupsPage.cpp:525
+#, kde-format
+msgctxt "@info"
+msgid ""
+"<para>Really delete group \"%1\"?</para><para>Sub-categories of this group "
+"will be moved to the super category of \"%1\" (\"%2\").<nl/> All other "
+"memberships of the sub-categories will stay intact.</para>"
+msgstr ""
+
+#: Settings/TagGroupsPage.cpp:531
+#, fuzzy, kde-format
+#| msgid "<p>Really delete category '%1'?</p>"
+msgctxt "@info"
+msgid "<para>Really delete group \"%1\"?</para>"
+msgstr "<p>ពិត​ជា​ចង់​លុប​ប្រភេទ '%1'?</p>​"
+
+#: Settings/TagGroupsPage.cpp:536
+#, fuzzy
+#| msgid "Delete Group"
+msgctxt "@title:window"
 msgid "Delete Group"
 msgstr "លុប​ក្រុម​"
+
+#: Settings/TagGroupsPage.cpp:714
+#, fuzzy, kde-format
+#| msgid "Rename..."
+msgctxt "@action:inmenu"
+msgid "Rename \"%1\""
+msgstr "ប្ដូរ​ឈ្មោះ​​..."
+
+#: Settings/TagGroupsPage.cpp:716
+#, fuzzy, kde-format
+#| msgid "Delete"
+msgctxt "@action:inmenu"
+msgid "Delete \"%1\""
+msgstr "លុប​"
+
+#: Settings/TagGroupsPage.cpp:726
+#, fuzzy
+#| msgid "New Sub Category Name:"
+msgctxt "@title:window"
+msgid "New Tag Name"
+msgstr "ឈ្មោះ​ប្រភេទ​រង​ថ្មី ៖"
+
+#: Settings/TagGroupsPage.cpp:727
+#, fuzzy
+#| msgid "Group name:"
+msgctxt "@label:textbox"
+msgid "Tag name:"
+msgstr "ឈ្មោះ​ក្រុម​ ៖​"
+
+#: Settings/TagGroupsPage.cpp:775
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>Do you really want to delete \"%1\"?<br/>Deleting the item will remove "
+#| "any information about it from any image containing the item.</p>"
+msgctxt "@info"
+msgid ""
+"<para>Do you really want to delete \"%1\"?</para><para>Deleting the item "
+"will remove any information about it from any image containing the item.</"
+"para>"
+msgstr ""
+"<p>តើ​អ្នក​ពិត​ជា​ចង់​លុប​ \"%1\" ឬ ?<br/>ការ​លុប​ធាតុ​ នឹង​យក​ព័ត៌មាន​ណា​មួយ​ដែល​ទាក់​ទង​នឹង​វា​ចេញ​ពី​រូបភាព​"
+"ដែល​មាន​ធាតុ​នេះ ។</p>"
+
+#: Settings/TagGroupsPage.cpp:779
+#, fuzzy, kde-format
+#| msgid "Really Delete %1?"
+msgctxt "@title:window"
+msgid "Really delete %1?"
+msgstr "ពិត​ជា​លុប​ %1 ឬ ?"
 
 #: Settings/ThumbnailsPage.cpp:36
 msgid "Tooltip preview image size:"
@@ -4830,7 +4952,7 @@ msgid "Unable to copy '%1' to '%2'."
 msgstr "មិន​អាច​ចម្លង​ឯកសារ​ '%1' ទៅ '%2' បាន​ទេ ។​"
 
 #: Utilities/Util.cpp:352 Utilities/Util.cpp:366 Utilities/Util.cpp:384
-#: Utilities/Util.cpp:401 XMLDB/FileReader.cpp:385
+#: Utilities/Util.cpp:401 XMLDB/FileReader.cpp:393
 msgid "Error Running Demo"
 msgstr "កំហុស​ក្នុងការ​រត់​ការ​បង្ហាញ​សាកល្បង"
 
@@ -5457,7 +5579,7 @@ msgstr "មិនអាច​រក​ស្លាក 'ជម្រើស' ន�
 msgid "Unable to find 'Images' tag in configuration file %1."
 msgstr "មិនអាច​រក​ស្លាក 'រូបភាព' នៅ​ក្នុង​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ %1 ។"
 
-#: XMLDB/FileReader.cpp:304
+#: XMLDB/FileReader.cpp:312
 #, fuzzy
 #| msgid ""
 #| "<p>Your images/videos are not sorted, which means that navigating using "
@@ -5490,7 +5612,7 @@ msgstr ""
 "រូបភាព​ដែល​បាន​ជ្រើស​តាម​កាល​បរិច្ឆេទ និង​ពេល​វេលា​</b> ​ដើម្បី​តម្រៀប​ពួក​វា​នៅ​ក្នុង​មូលដ្ឋាន​ទិន្នន័យ ។ "
 "ចងចាំ​ថា​អ្នក​គួរតែ​ពង្រីក​ជង់​ទាំងអស់​សម្រាប់​ការ​តម្រៀប ។</p>"
 
-#: XMLDB/FileReader.cpp:314
+#: XMLDB/FileReader.cpp:322
 msgid ""
 "<p>Your images/videos are not sorted, which means that navigating using the "
 "date bar will only work suboptimally.</p><p>You also do not have EXIF "
@@ -5505,11 +5627,11 @@ msgstr ""
 "ម៉ាត់​ថា​ត្រូវ​តែ​ចង​ក្រង​ KPhotoAlbum ​ឡើង​វិញ​ជា​មួយ​នឹង​បណ្ណាល័យ​ <code>exiv2</code> ។ បន្ទាប់​ពី​អ្នក​"
 "បាន​ធ្វើ​ដូច្នេះ​រួច​ហើយ​ អ្នក​នឹង​ត្រូវ​សួរ​នូវ​អ្វី​ដែល​នឹង​ត្រូវធ្វើ​ ដើម្បី​កែ​ព័ត៌មាន​ទាំង​អស់​ដែល​បាន​បាត់ ។​</p>"
 
-#: XMLDB/FileReader.cpp:321
+#: XMLDB/FileReader.cpp:329
 msgid "Images/Videos Are Not Sorted"
 msgstr "រូបភាព/វីដេអូ​មិនត្រូវ​​​បាន​តម្រៀប"
 
-#: XMLDB/FileReader.cpp:336
+#: XMLDB/FileReader.cpp:344
 msgid ""
 "<p>Not all the images in the database have information about image sizes; "
 "this is needed to get the best result in the thumbnail view. To fix this, "
@@ -5524,11 +5646,11 @@ msgstr ""
 "tt>។</p><p>បើ​មិន​ធ្វើ​ដូច្នេះ​ទេ វា​នឹង​ធ្វើ​ឲ្យ​មាន​គម្លាត​ធំ​នៅ​ជុំ​វិញ​រូបភាព​ក្នុង​ទិដ្ឋភាព​រូបភាព​តូច មានតែ​"
 "ប៉ុណ្ណឹង ដូច្នេះ​មិន​ចាំបាច់​ប្រញាប​ធ្វើ​វា​ក៏​បាន​ដែរ ។</p>"
 
-#: XMLDB/FileReader.cpp:341
+#: XMLDB/FileReader.cpp:349
 msgid "Not All Images Have Size Information"
 msgstr "មិនមែន​រូបភាព​ទាំងអស់​មាន​ព័ត៌មាន​អំពី​ទំហំ​នោះ​ទេ"
 
-#: XMLDB/FileReader.cpp:364
+#: XMLDB/FileReader.cpp:372
 msgid ""
 "<p>KPhotoAlbum was unable to load a default setup, which indicates an "
 "installation error</p><p>If you have installed KPhotoAlbum yourself, then "
@@ -5548,31 +5670,31 @@ msgstr ""
 "p><p><b>នាំ​ចេញ​ KDEDIRS=/usr/local/kde</b></p><p>​ក្នុង​ករណី​ដែល​អ្នក​មាន​សំណុំ​ KDEDIRS ​រួច​"
 "ហើយ ហើយ​អ្នក​អាច​បន្ថែម​ឃ្លា​ខាង​ចុង​បាន ប្រសិនបើ​អ្នក​កំណត់​នូវ​អថេរ​បរិស្ថាន <b>ផ្លូវ</b> </p>"
 
-#: XMLDB/FileReader.cpp:371
+#: XMLDB/FileReader.cpp:379
 msgid "No default setup file found"
 msgstr "រក​មិនឃើញ​ការ​រៀបចំ​ឯកសារ​លំនាំដើម"
 
-#: XMLDB/FileReader.cpp:385
+#: XMLDB/FileReader.cpp:393
 #, kde-format
 msgid "Unable to open '%1' for reading"
 msgstr "មិនអាច​បើក​ '%1' ដើម្បី​អាន​បានទេ"
 
-#: XMLDB/FileReader.cpp:398
+#: XMLDB/FileReader.cpp:406
 #, kde-format
 msgid "line %1 column %2 in file %3: %4"
 msgstr "បន្ទាត់ %1 ជួរឈរ %2 នៅ​ក្នុង​ឯកសារ %3 ៖ %4"
 
-#: XMLDB/FileReader.cpp:400
+#: XMLDB/FileReader.cpp:408
 #, kde-format
 msgid "Failed to recover the backup: %1"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​យក​ព័ត៌មាន​បម្រុងទុក ៖ %1"
 
-#: XMLDB/FileReader.cpp:411
+#: XMLDB/FileReader.cpp:419
 #, kde-format
 msgid "Error in file %1: No elements found"
 msgstr "កំហុស​ក្នុង​ឯកសារ %1 ៖ រក​មិនឃើញ​ធាតុ"
 
-#: XMLDB/FileReader.cpp:417
+#: XMLDB/FileReader.cpp:425
 #, kde-format
 msgid "Error in file %1: expected 'KPhotoAlbum' as top element but found '%2'"
 msgstr "កំហុស​ក្នុង​ឯកសារ %1 ៖ បាន​រំពឹងទុក 'KPhotoAlbum' ជា​ធាតុ​កំពូល​ប៉ុន្តែ​រកឃើញ '%2'"
@@ -5657,6 +5779,30 @@ msgstr ""
 #| msgid "Loading Database"
 msgid "Error while reading database file"
 msgstr "កំពុង​ផ្ទុក​មូលដ្ឋាន​ទិន្នន័យ "
+
+#~ msgid "Subcategories"
+#~ msgstr "ប្រភេទ​រង​"
+
+#~ msgid "Super Categories:"
+#~ msgstr "ប្រភេទ​ពិសេស ៖​"
+
+#~ msgid "Items of Category:"
+#~ msgstr "ធាតុ​របស់​ប្រភេទ ៖"
+
+#~ msgid "Add Super Category..."
+#~ msgstr "បន្ថែម​ប្រភេទ​ពិសេស​...​"
+
+#~ msgid "Rename Super Category..."
+#~ msgstr "ប្តូរ​ឈ្មោះ​ប្រភេទ​ពិសេស...​"
+
+#~ msgid "Delete Super Category"
+#~ msgstr "លុប​ប្រភេទ​ពិសេស​"
+
+#~ msgid ""
+#~ "<b>Notice:</b> It is also possible to set up subcategories in the "
+#~ "annotation dialog, simply by dragging items."
+#~ msgstr ""
+#~ "<b>ចំណាំ​ ៖</b> ​អ្នក​ក៏​អាច​រៀប​ចំ​ប្រភេទ​រង​នៅ​ក្នុង​ប្រអប់​ចំណារ​ពន្យល់​ផង​ដែរ​ តាម​ធម្មតា​ដោយ​អូស​ធាតុ ។"
 
 #~ msgid "Label:"
 #~ msgstr "ស្លាក ៖ "
