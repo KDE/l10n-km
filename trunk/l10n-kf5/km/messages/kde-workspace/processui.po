@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: processui\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-24 07:55+0000\n"
+"POT-Creation-Date: 2014-11-30 07:54+0000\n"
 "PO-Revision-Date: 2010-06-08 14:10+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -663,6 +663,20 @@ msgstr "<br/>ក្រុម Setuid ៖ %1"
 msgid "<br/>File System Group: %1"
 msgstr "<br/>ក្រុម​ប្រព័ន្ធ​ឯកសារ ៖ %1"
 
+#: ProcessModel.cpp:1142
+#, fuzzy, kde-format
+#| msgctxt "Short description of a process. PID, name, user"
+#| msgid "<numid>%1</numid>: %2, owned by user %3"
+msgctxt "Short description of a process. PID, name, user"
+msgid "%1: %2, owned by user %3"
+msgstr "<numid>%1</numid> ៖ %2 ជា​កម្មសិទ្ធិ​របស់​អ្នកប្រើ %3"
+
+#: ProcessModel.cpp:1149
+#, fuzzy, kde-format
+#| msgid "%1 (uid: %2)"
+msgid "%1 (gid: %2)"
+msgstr "%1 (លេខ​សម្គាល់​អ្នកប្រើ ៖ %2)"
+
 #: ProcessModel.cpp:1170
 #, kde-format
 msgid "%1 (uid: %2)"
@@ -708,6 +722,14 @@ msgstr "(IA) %1"
 msgid "%1/s"
 msgstr "%1/s"
 
+#: ProcessModel.cpp:1345
+#, fuzzy, kde-format
+#| msgctxt "tooltip. name,pid "
+#| msgid "This process is being debugged by %1 (<numid>%2</numid>)"
+msgctxt "tooltip. name,pid "
+msgid "This process is being debugged by %1 (%2)"
+msgstr "ដំណើរការ​នេះ គឺត្រូវបាន​បំបាត់​កំហុស​ដោយ %1 (<numid>%2</numid>)"
+
 #: ProcessModel.cpp:1366
 msgid ""
 "<b>Init</b> is the parent of all other processes and cannot be killed.<br/>"
@@ -720,6 +742,38 @@ msgid ""
 msgstr ""
 "<b>KThreadd</b> គ្រប់គ្រង​ខ្សែស្រឡាយ​ខឺណែល ។ ដំណើរការ​កូន​រត់​នៅ​ក្នុង​ខឺណែល ដែល​ត្រួតពិនិត្យ​សិទ្ធិ​ចូល​"
 "ដំណើរការ​របស់​ថាសរឹង ។ល។<br/>"
+
+#: ProcessModel.cpp:1370
+#, fuzzy, kde-format
+#| msgctxt "name column tooltip. first item is the name"
+#| msgid "<b>%1</b><br />Process ID: <numid>%2</numid>"
+msgctxt "name column tooltip. first item is the name"
+msgid "<b>%1</b><br />Process ID: %2"
+msgstr "<b>%1</b><br />លេខ​សម្គាល់​ដំណើរការ ៖ <numid>%2</numid>"
+
+#: ProcessModel.cpp:1375
+#, fuzzy, kde-format
+#| msgctxt "name column tooltip. first item is the name"
+#| msgid ""
+#| "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent: %3<br /"
+#| ">Parent's ID: <numid>%4</numid>"
+msgctxt "name column tooltip. first item is the name"
+msgid "<b>%1</b><br />Process ID: %2<br />Parent: %3<br />Parent's ID: %4"
+msgstr ""
+"<b>%1</b><br />លេខ​សម្គាល់​ដំណើរការ ៖ <numid>%2</numid><br />មេ ៖ %3<br />លេខ​សម្គាល់​"
+"របស់​មេ ៖ <numid>%4</numid>"
+
+#: ProcessModel.cpp:1377
+#, fuzzy, kde-format
+#| msgctxt "name column tooltip. first item is the name"
+#| msgid ""
+#| "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>%3</"
+#| "numid>"
+msgctxt "name column tooltip. first item is the name"
+msgid "<b>%1</b><br />Process ID: %2<br />Parent's ID: %3"
+msgstr ""
+"<b>%1</b><br />លេខ​សម្គាល់​ដំណើរការ ៖ <numid>%2</numid><br />លេខ​សម្គាល់​របស់​មេ ៖ "
+"<numid>%3</numid>"
 
 #: ProcessModel.cpp:1381 ProcessModel.cpp:1445
 #, kde-format
@@ -1635,36 +1689,8 @@ msgstr "អាទិភាព​ខ្ពស់"
 #~ msgstr ""
 #~ "អ្នក​មិន​មាន​សិទ្ធិ​ ដើម្បី​បញ្ចប់​ដំណើរការ​ ហើយ​មាន​បញ្ហា​ក្នុង​ការ​ព្យាយាម​ដំណើរការ​ជា​ root ។ %1"
 
-#~ msgctxt "Short description of a process. PID, name, user"
-#~ msgid "<numid>%1</numid>: %2, owned by user %3"
-#~ msgstr "<numid>%1</numid> ៖ %2 ជា​កម្មសិទ្ធិ​របស់​អ្នកប្រើ %3"
-
 #~ msgid "%1 (gid: <numid>%2</numid>)"
 #~ msgstr "%1 (លេខសម្គាល់​ក្រុម ៖ <numid>%2</numid>)"
-
-#~ msgctxt "tooltip. name,pid "
-#~ msgid "This process is being debugged by %1 (<numid>%2</numid>)"
-#~ msgstr "ដំណើរការ​នេះ គឺត្រូវបាន​បំបាត់​កំហុស​ដោយ %1 (<numid>%2</numid>)"
-
-#~ msgctxt "name column tooltip. first item is the name"
-#~ msgid "<b>%1</b><br />Process ID: <numid>%2</numid>"
-#~ msgstr "<b>%1</b><br />លេខ​សម្គាល់​ដំណើរការ ៖ <numid>%2</numid>"
-
-#~ msgctxt "name column tooltip. first item is the name"
-#~ msgid ""
-#~ "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent: %3<br /"
-#~ ">Parent's ID: <numid>%4</numid>"
-#~ msgstr ""
-#~ "<b>%1</b><br />លេខ​សម្គាល់​ដំណើរការ ៖ <numid>%2</numid><br />មេ ៖ %3<br />លេខ​"
-#~ "សម្គាល់​របស់​មេ ៖ <numid>%4</numid>"
-
-#~ msgctxt "name column tooltip. first item is the name"
-#~ msgid ""
-#~ "<b>%1</b><br />Process ID: <numid>%2</numid><br />Parent's ID: <numid>%3</"
-#~ "numid>"
-#~ msgstr ""
-#~ "<b>%1</b><br />លេខ​សម្គាល់​ដំណើរការ ៖ <numid>%2</numid><br />លេខ​សម្គាល់​របស់​មេ ៖ "
-#~ "<numid>%3</numid>"
 
 #~ msgid "End Process..."
 #~ msgid_plural "End Processes..."
