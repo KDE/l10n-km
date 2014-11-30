@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-01 08:17+0000\n"
+"POT-Creation-Date: 2014-11-30 09:24+0000\n"
 "PO-Revision-Date: 2012-07-11 10:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -207,6 +207,11 @@ msgstr "បោះបង់"
 msgctxt "@title:window"
 msgid "Rename"
 msgstr "ប្តូរឈ្មោះ"
+
+#: app/fileoperations.cpp:206
+#, kde-format
+msgid "Rename <filename>%1</filename> to:"
+msgstr "ប្តូរ​ឈ្មោះ <filename>%1</filename> ទៅជា ៖"
 
 #: app/fileopscontextmanageritem.cpp:158
 msgid "File Operations"
@@ -423,6 +428,22 @@ msgstr "រក្សា​ទុក​ដោយ​ប្រើ​ទ្រង់
 #, kde-format
 msgid "Gwenview cannot save images in '%1' format."
 msgstr "Gwenview មិន​អាច​រក្សា​ទុក​រូបភាព​ជា​ទ្រង់​ទ្រាយ​ '%1' បាន​ទេ ។"
+
+#: app/gvcore.cpp:261
+#, kde-format
+msgctxt "@info"
+msgid ""
+"A file named <filename>%1</filename> already exists.\n"
+"Are you sure you want to overwrite it?"
+msgstr ""
+"មាន​ឯកសារ​ដែល​មាន​ឈ្មោះ​ <filename>%1</filename> រួច​ហើយ ។\n"
+"តើ​អ្នក​ពិត​ជា​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ ?"
+
+#: app/gvcore.cpp:276 app/gvcore.cpp:299
+#, kde-format
+msgctxt "@info"
+msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
+msgstr "<b>ការ​រក្សា​ទុក​ <filename>%1</filename> បាន​បរាជ័យ ៖</b><br>%2"
 
 #: app/gvcore.cpp:319
 msgid "You are now viewing the new document."
@@ -959,6 +980,14 @@ msgid "One document could not be saved:"
 msgid_plural "%1 documents could not be saved:"
 msgstr[0] "ឯកសារ %1 មិន​អាច​រក្សា​ទុក​បាន​ទេ ៖"
 
+#: app/saveallhelper.cpp:108
+#, kde-format
+msgctxt ""
+"@info %1 is the name of the document which failed to save, %2 is the reason "
+"for the failure"
+msgid "<filename>%1</filename>: %2"
+msgstr "<filename>%1</filename>៖ %2"
+
 #: app/savebar.cpp:87
 msgid ""
 "You have modified many images. To avoid memory problems, you should save "
@@ -1417,6 +1446,26 @@ msgstr "ការ​ផ្ទុក​រូបភាព​បាន​បរា
 msgid "Could not load document %1"
 msgstr "មិន​អាច​ផ្ទុក​ឯកសារ %1"
 
+#: lib/document/savejob.cpp:107
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not open file for writing, check that you have the necessary rights in "
+"<filename>%1</filename>."
+msgstr ""
+"មិន​អាច​បើក​ឯកសារ​ដើម្បី​សរសេរ​បាន​ទេ សូម​ពិនិត្យ​មើល​ថា​ តើ​អ្នក​មាន​សិទ្ធិ​ត្រឹម​ត្រូវ​នៅ​ក្នុង <filename>%1</"
+"filename> ដែរ​ឬទេ ។"
+
+#: lib/document/savejob.cpp:132
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Could not overwrite file, check that you have the necessary rights to write "
+"in <filename>%1</filename>."
+msgstr ""
+"មិន​អាច​សរសេរ​ជាន់​លើ​ឯកសារ​នេះ​បាន​ទេ សូម​ពិនិត្យ​មើល​ថា​ តើ​អ្នក​មិន​សិទ្ធិ​ត្រឹម​ត្រូវ​ ដើម្បី​សរសេរ​នៅ​ក្នុង​ "
+"<filename>%1</filename> ដែរ​ឬ​ទេ ។"
+
 #: lib/documentview/documentview.cpp:178
 msgctxt "@info:tooltip"
 msgid "Trash"
@@ -1430,6 +1479,11 @@ msgstr "ដោះ​ជម្រើស"
 #: lib/documentview/documentview.cpp:369
 msgid "Gwenview does not know how to display this kind of document"
 msgstr "Gwenview មិន​ដឹង​អំពី​វិធី​បង្ហាញ​ឯកសារ​ប្រភេទ​នេះ​ទេ"
+
+#: lib/documentview/documentview.cpp:467
+#, kde-format
+msgid "Loading <filename>%1</filename> failed"
+msgstr "ការ​ផ្ទុក​ <filename>%1</filename> បាន​បរាជ័យ"
 
 #: lib/documentview/documentviewcontroller.cpp:97
 msgid "Zoom to Fit"
@@ -1787,46 +1841,6 @@ msgstr "មើល"
 
 #~ msgid "Size"
 #~ msgstr "ទំហំ"
-
-#~ msgid "Rename <filename>%1</filename> to:"
-#~ msgstr "ប្តូរ​ឈ្មោះ <filename>%1</filename> ទៅជា ៖"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "A file named <filename>%1</filename> already exists.\n"
-#~ "Are you sure you want to overwrite it?"
-#~ msgstr ""
-#~ "មាន​ឯកសារ​ដែល​មាន​ឈ្មោះ​ <filename>%1</filename> រួច​ហើយ ។\n"
-#~ "តើ​អ្នក​ពិត​ជា​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ ?"
-
-#~ msgctxt "@info"
-#~ msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
-#~ msgstr "<b>ការ​រក្សា​ទុក​ <filename>%1</filename> បាន​បរាជ័យ ៖</b><br>%2"
-
-#~ msgctxt ""
-#~ "@info %1 is the name of the document which failed to save, %2 is the "
-#~ "reason for the failure"
-#~ msgid "<filename>%1</filename>: %2"
-#~ msgstr "<filename>%1</filename>៖ %2"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Could not open file for writing, check that you have the necessary rights "
-#~ "in <filename>%1</filename>."
-#~ msgstr ""
-#~ "មិន​អាច​បើក​ឯកសារ​ដើម្បី​សរសេរ​បាន​ទេ សូម​ពិនិត្យ​មើល​ថា​ តើ​អ្នក​មាន​សិទ្ធិ​ត្រឹម​ត្រូវ​នៅ​ក្នុង <filename>"
-#~ "%1</filename> ដែរ​ឬទេ ។"
-
-#~ msgctxt "@info"
-#~ msgid ""
-#~ "Could not overwrite file, check that you have the necessary rights to "
-#~ "write in <filename>%1</filename>."
-#~ msgstr ""
-#~ "មិន​អាច​សរសេរ​ជាន់​លើ​ឯកសារ​នេះ​បាន​ទេ សូម​ពិនិត្យ​មើល​ថា​ តើ​អ្នក​មិន​សិទ្ធិ​ត្រឹម​ត្រូវ​ ដើម្បី​សរសេរ​នៅ​ក្នុង​ "
-#~ "<filename>%1</filename> ដែរ​ឬ​ទេ ។"
-
-#~ msgid "Loading <filename>%1</filename> failed"
-#~ msgstr "ការ​ផ្ទុក​ <filename>%1</filename> បាន​បរាជ័យ"
 
 #~ msgid ""
 #~ "Defines what happens when going to image B after having zoomed an area of "
