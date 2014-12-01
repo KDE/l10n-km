@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: konversation\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2014-11-30 09:24+0000\n"
+"POT-Creation-Date: 2014-12-01 09:21+0000\n"
 "PO-Revision-Date: 2012-07-11 10:37+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -6221,12 +6221,12 @@ msgctxt "%1 = file name, %2 = file size, %3 = nickname of sender"
 msgid "Downloading \"%1\" (%2) from %3..."
 msgstr "កំពុង​ទាញ​យក​​ \"%1\" (%2) ពី​ %3..."
 
-#: src/irc/server.cpp:3014 src/notificationhandler.cpp:322
+#: src/irc/server.cpp:3014 src/notificationhandler.cpp:328
 #, kde-format
 msgid "%1 is online (%2)."
 msgstr "%1 លើ​បណ្តាញ​ (%2) ។"
 
-#: src/irc/server.cpp:3028 src/notificationhandler.cpp:336
+#: src/irc/server.cpp:3028 src/notificationhandler.cpp:342
 #, kde-format
 msgid "%1 went offline (%2)."
 msgstr "%1 ទៅ​ក្រៅ​បណ្ដាញ (%2) ។"
@@ -7377,98 +7377,131 @@ msgstr "កំណត់​ឆ្ងាយ​ជាសាកល"
 msgid "Server List"
 msgstr "បញ្ជី​របស់​​ម៉ាស៊ីន​បម្រើ​"
 
-#: src/notificationhandler.cpp:105
+#: src/notificationhandler.cpp:53
+#, fuzzy, kde-format
+#| msgid "no messages from outside"
+msgctxt "Notification title; see Event/message in konversation.notifyrc"
+msgid "New message from %1 in %2"
+msgstr "គ្មាន​សារ​ចេញ​ពី​ខាង​ក្រៅ​ឡើយ"
+
+#: src/notificationhandler.cpp:99
+#, fuzzy, kde-format
+#| msgid "The topic was set by %1 on %2."
+msgctxt "Notification title; see Event/nick in konversation.notifyrc"
+msgid "Your nick was mentioned by %1 in %2"
+msgstr "ប្រ​ធាន​បទ​ត្រូវ​បាន​កំណត់​ដោយ​ %1 លើ​ %2 ។"
+
+#: src/notificationhandler.cpp:109
 #, kde-format
 msgid "[HighLight] (%1) &lt;%2&gt;"
 msgstr "[HighLight] (%1) &lt;%2&gt;"
 
-#: src/notificationhandler.cpp:119 src/notificationhandler.cpp:397
+#: src/notificationhandler.cpp:123 src/notificationhandler.cpp:409
 #, kde-format
 msgid "[HighLight] (%1) &lt;%2&gt; %3"
 msgstr "[HighLight] (%1) &lt;%2&gt; %3"
 
-#: src/notificationhandler.cpp:146
+#: src/notificationhandler.cpp:142
+#, fuzzy, kde-format
+#| msgid "&Query message:"
+msgctxt "Notification title; see Event/message in konversation.notifyrc"
+msgid "New query message from %1"
+msgstr "សារ​សំណួរ​ ៖"
+
+#: src/notificationhandler.cpp:152
 #, kde-format
 msgid "[Query] &lt;%1&gt;"
 msgstr "[Query] &lt;%1&gt;"
 
-#: src/notificationhandler.cpp:160
+#: src/notificationhandler.cpp:166
 #, kde-format
 msgid "[Query] &lt;%1&gt; %2"
 msgstr "[Query] &lt;%1&gt; %2"
 
-#: src/notificationhandler.cpp:188 src/notificationhandler.cpp:195
+#: src/notificationhandler.cpp:194 src/notificationhandler.cpp:201
 #, kde-format
 msgid "%1 joined %2"
 msgstr "%1 បាន​ភ្ជាប់ %2"
 
-#: src/notificationhandler.cpp:207 src/notificationhandler.cpp:214
+#: src/notificationhandler.cpp:213 src/notificationhandler.cpp:220
 #, kde-format
 msgid "%1 parted %2"
 msgstr "%1 បាន​ចែក​ %2"
 
-#: src/notificationhandler.cpp:226
+#: src/notificationhandler.cpp:232
 #, kde-format
 msgid "%1 quit %2"
 msgstr "%1 បោះបង់​ %2"
 
-#: src/notificationhandler.cpp:237
+#: src/notificationhandler.cpp:243
 #, kde-format
 msgid "%1 changed nickname to %2"
 msgstr "%1 បាន​ប្តូរ​សម្មតិនាម​ទៅ %2"
 
-#: src/notificationhandler.cpp:248
+#: src/notificationhandler.cpp:254
 #, kde-format
 msgid "%1 wants to send a file to you"
 msgstr "%1 ចង់​ផ្ញើ​ឯកសារ​ទៅ​អ្នក"
 
-#: src/notificationhandler.cpp:259
+#: src/notificationhandler.cpp:265
 #, kde-format
 msgid "An error has occurred in a DCC transfer: %1"
 msgstr "មាន​កំហុស​​ក្នុង​ការ​ផ្ទេរ DCC ៖ %1"
 
-#: src/notificationhandler.cpp:272 src/notificationhandler.cpp:277
+#: src/notificationhandler.cpp:278 src/notificationhandler.cpp:283
 #, kde-format
 msgctxt "%1 - filename"
 msgid "%1 File Transfer is complete"
 msgstr "បញ្ចប់​ការ​ផ្ទេរ​ឯកសារ %1"
 
-#: src/notificationhandler.cpp:279
+#: src/notificationhandler.cpp:285
 msgctxt "Opens the file from the finished dcc transfer"
 msgid "Open"
 msgstr "បើក"
 
-#: src/notificationhandler.cpp:294
+#: src/notificationhandler.cpp:300
 #, kde-format
 msgid "%1 changed modes in %2: %3"
 msgstr "%1 បាន​ប្ដូរ​របៀប​នៅ​ក្នុង %2 ៖ %3"
 
-#: src/notificationhandler.cpp:309
+#: src/notificationhandler.cpp:315
 #, kde-format
 msgid "%1 has started a conversation (query) with you."
 msgstr "%1 ​​ចាប់ផ្ដើម​ការ​សន្ទនា​​ (សំណួរ​​) ជាមួយ​អ្នក​ ។"
 
-#: src/notificationhandler.cpp:350
+#: src/notificationhandler.cpp:356
 #, kde-format
 msgid "You are kicked by %1 from %2"
 msgstr "អ្នក​ត្រូវ​បាន​ទាត់​ដោយ​​ %1 ចេញ​ពី​ %2"
 
-#: src/notificationhandler.cpp:364
+#: src/notificationhandler.cpp:370
 #, kde-format
 msgid "%1 started a DCC chat with you"
 msgstr "%1 បាន​ចាប់ផ្ដើម​​ការ​ជជែក​ DCC ជាមួយ​អ្នក​​"
 
-#: src/notificationhandler.cpp:394
+#: src/notificationhandler.cpp:390
+#, kde-format
+msgctxt "Notification title; see Event/highlight in konversation.notifyrc"
+msgid "Highlight triggered in %1"
+msgstr ""
+
+#: src/notificationhandler.cpp:395
+#, kde-format
+msgctxt "Notification title; see Event/highlight in konversation.notifyrc"
+msgid "Highlight triggered by %2 in %1"
+msgstr ""
+
+#: src/notificationhandler.cpp:406
 #, kde-format
 msgid "[HighLight] (%1) *** %2"
 msgstr "[HighLight] (%1) *** %2"
 
-#: src/notificationhandler.cpp:407
+#: src/notificationhandler.cpp:419
 #, kde-format
 msgid "Failed to connect to %1"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​​តភ្ជាប់​ទៅកាន់​ %1"
 
-#: src/notificationhandler.cpp:420
+#: src/notificationhandler.cpp:432
 #, kde-format
 msgid "You have joined %1."
 msgstr "អ្នក​បាន​​តភ្ជាប់​ %1 ។"
