@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2014-12-08 01:54+0000\n"
+"POT-Creation-Date: 2014-12-15 01:57+0000\n"
 "PO-Revision-Date: 2008-12-02 15:23+0700\n"
 "Last-Translator: Eng Vannak <evannak@khmeros.info>\n"
 "Language-Team: km <support@khmeros.info>\n"
@@ -760,6 +760,7 @@ msgid "All Supported Files"
 msgstr "ឯកសារ​គាំទ្រ​ទាំងអស់"
 
 #: src/apps/marble-qt/QtMainWindow.cpp:1027
+#: src/lib/marble/PlacemarkEditHeader.cpp:127
 #: src/plugins/render/fileview/FileViewFloatItem.cpp:231
 msgid "Open File"
 msgstr "បើក​ឯកសារ"
@@ -2604,6 +2605,16 @@ msgstr "ប្រអប់​ព័ត៌មាន"
 msgid "Address Details"
 msgstr "អាសយដ្ឋាន​លម្អិត"
 
+#: src/lib/marble/MovieCapture.cpp:34
+msgid "Missing encoding tools"
+msgstr ""
+
+#: src/lib/marble/MovieCapture.cpp:35
+#, qt-format
+msgid ""
+"Marble requires additional software in order to create movies. Please get %1 "
+msgstr ""
+
 #: src/lib/marble/MovieCaptureDialog.cpp:57
 #: src/lib/marble/TourCaptureDialog.cpp:69
 #, fuzzy
@@ -2646,6 +2657,12 @@ msgstr ""
 #: src/lib/marble/NewstuffModel.cpp:718 src/lib/marble/NewstuffModel.cpp:727
 msgid "Installation aborted by user."
 msgstr "បាន​បោះបង់​ការ​ដំឡើង​ដោយ​អ្នកប្រើ ។"
+
+#: src/lib/marble/PlacemarkEditHeader.cpp:129
+#, fuzzy
+#| msgid "All Supported Files"
+msgid "All Supported Files (*.png)"
+msgstr "ឯកសារ​គាំទ្រ​ទាំងអស់"
 
 #: src/lib/marble/PlacemarkPositionProviderPlugin.cpp:36
 msgid "Placemark position provider Plugin"
@@ -3551,8 +3568,6 @@ msgid ""
 msgstr "ឯកសារ​គាំទ្រ​ទាំងអស់ (*.kml);;Kml Annotation file (*.kml)"
 
 #: src/plugins/render/annotate/AnnotatePlugin.cpp:367
-#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:89
-#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:211
 msgid "Open Annotation File"
 msgstr "បើក​ឯកសារ​ចំណារ​ពន្យល់"
 
@@ -3696,41 +3711,35 @@ msgstr "លុប"
 msgid "Deselect Node"
 msgstr ""
 
-#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:91
-#, fuzzy
-#| msgid "All Supported Files"
-msgid "All Supported Files (*.jpg *.png)"
-msgstr "ឯកសារ​គាំទ្រ​ទាំងអស់"
-
-#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:123
+#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:110
 #: src/plugins/render/annotate/EditPolygonDialog.cpp:184
 #: src/plugins/render/annotate/EditPolylineDialog.cpp:174
-#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:225
+#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:207
 msgid "No name specified"
 msgstr ""
 
-#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:124
+#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:111
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify a name for this ground overlay."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
-#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:127
-#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:229
+#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:114
+#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:211
 msgid "No image specified"
 msgstr ""
 
-#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:128
+#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:115
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify an image file."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
-#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:133
+#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:120
 msgid "Invalid image path"
 msgstr ""
 
-#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:134
+#: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:121
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify a valid path for the image file."
@@ -3766,29 +3775,23 @@ msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទ
 msgid "Untitled Placemark"
 msgstr "បន្ថែម​សញ្ញា​សម្គាល់​កន្លែង"
 
-#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:213
-#, fuzzy
-#| msgid "All Supported Files"
-msgid "All Supported Files (*.png)"
-msgstr "ឯកសារ​គាំទ្រ​ទាំងអស់"
-
-#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:226
+#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:208
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify a name for this placemark."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
-#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:230
+#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:212
 #, fuzzy
 #| msgid "Please specify a source image."
 msgid "Please specify an icon for this placemark."
 msgstr "សូម​បញ្ជាក់​រូបភាព​ប្រភព ។"
 
-#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:235
+#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:217
 msgid "Invalid icon path"
 msgstr ""
 
-#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:236
+#: src/plugins/render/annotate/EditTextAnnotationDialog.cpp:218
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify a valid path for the icon file."
@@ -4176,49 +4179,49 @@ msgstr "អ្នក​អភិវឌ្ឍន៍​ដើម"
 msgid "&Ratio Scale"
 msgstr "មាត្រដ្ឋាន​សមាមាត្រ"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:76
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:79
 msgid "Measure Tool"
 msgstr "ឧបករណ៍​វាស់"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:81
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:84
 msgid "&Measure Tool"
 msgstr "ឧបករណ៍​វាស់"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:96
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:99
 msgid "Measure distances between two or more points."
 msgstr "វាស់​ចម្ងាយ​រវាង​ចំណុច​ពីរ ឬ​ច្រើន ។"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:237
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:245
 #: src/plugins/render/opencachingcom/OpenCachingComItem.cpp:357
 #, qt-format
 msgid "%1 km"
 msgstr "%1 គ.ម."
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:240
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:248
 #: src/plugins/render/opencachingcom/OpenCachingComItem.cpp:360
 #, qt-format
 msgid "%1 m"
 msgstr "%1 ម."
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:306
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:354
 #, qt-format
 msgid "Total Distance: %1 km"
 msgstr "ចម្ងាយ​សរុប ៖ %1 គ.ម."
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:309
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:357
 #, qt-format
 msgid "Total Distance: %1 m"
 msgstr "ចម្ងាយ​សរុប ៖ %1 ម."
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:354
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:402
 msgid "Add &Measure Point"
 msgstr "បន្ថែម​ចំណុច​វ៉ាស់"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:355
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:403
 msgid "Remove &Last Measure Point"
 msgstr "យក​ចំណុច​វាស់​ចុងក្រោយ​ចេញ"
 
-#: src/plugins/render/measure/MeasureToolPlugin.cpp:357
+#: src/plugins/render/measure/MeasureToolPlugin.cpp:405
 msgid "&Remove Measure Points"
 msgstr "យក​ចំណុច​វាស់​ចេញ"
 
@@ -6241,6 +6244,11 @@ msgstr "ពុម្ព​ធាតុ​អណ្ដែត"
 #: src/plugins/templates/floatitem/FITemplateFloatItem.cpp:68
 msgid "This is a template class for float items."
 msgstr "នេះ​ជា​ពុម្ព​សម្រាប់​ធាតុ​អណ្ដែត ។"
+
+#, fuzzy
+#~| msgid "All Supported Files"
+#~ msgid "All Supported Files (*.jpg *.png)"
+#~ msgstr "ឯកសារ​គាំទ្រ​ទាំងអស់"
 
 #~ msgid "Initializing current location service..."
 #~ msgstr "កំពុង​ចាប់ផ្ដើម​សេវា​ទីតាំង​បច្ចុប្បន្ន..."
