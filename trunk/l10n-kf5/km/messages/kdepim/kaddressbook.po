@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kaddressbook\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-08 08:47+0000\n"
+"POT-Creation-Date: 2015-02-09 10:08+0000\n"
 "PO-Revision-Date: 2012-12-26 08:41+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -520,14 +520,14 @@ msgid ""
 "wide shortcuts."
 msgstr "អ្នក​នឹង​បាន​ឃើញ​ប្រអប់​មួយ​ដែល​អាច​កំណត់​រចនាសម្ព័ន្ធ​ផ្លូវកាត់​របស់​កម្មវិធី​ពេញលេញ ។"
 
-#: merge/mergecontactsdialog.cpp:45
+#: merge/manualmerge/mergecontactsdialog.cpp:45
 #: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:39
 #, fuzzy
 #| msgid "Select Contacts"
 msgid "Select Contacts to merge"
 msgstr "ជ្រើស​ទំនាក់ទំនង"
 
-#: merge/mergecontactsdialog.cpp:54
+#: merge/manualmerge/mergecontactsdialog.cpp:54
 #: merge/searchduplicate/searchandmergecontactduplicatecontactdialog.cpp:66
 #, fuzzy
 #| msgctxt "@info:status"
@@ -535,23 +535,40 @@ msgstr "ជ្រើស​ទំនាក់ទំនង"
 msgid "You must select at least two elements."
 msgstr "អ្នក​ត្រូវ​តែ​ផ្ដល់​យ៉ាងហោចណាស់​មួយ​ជួរឈរ ។"
 
-#: merge/mergecontactsdialog.cpp:58
+#: merge/manualmerge/mergecontactsdialog.cpp:58
 #, kde-format
 msgid "You selected %1 and some item has not the same name"
 msgstr ""
 
-#: merge/mergecontactsdialog.cpp:96
+#: merge/manualmerge/mergecontactsdialog.cpp:96
 #, fuzzy
 #| msgctxt "@label"
 #| msgid "Importing contacts"
 msgid "Error while merging contacts."
 msgstr "នាំចូល​ទំនាក់ទំនង"
 
-#: merge/mergecontactsdialog.cpp:96
+#: merge/manualmerge/mergecontactsdialog.cpp:96
 #, fuzzy
 #| msgid "Select Contacts"
 msgid "Merge contact"
 msgstr "ជ្រើស​ទំនាក់ទំនង"
+
+#: merge/manualmerge/mergecontactwidget.cpp:43
+#, fuzzy
+#| msgid "Select Contacts"
+msgid "Select contacts that you really want to merge:"
+msgstr "ជ្រើស​ទំនាក់ទំនង"
+
+#: merge/manualmerge/mergecontactwidget.cpp:55
+#, fuzzy
+#| msgctxt "@info:whatsthis"
+#| msgid "Print the complete address book or a selected number of contacts."
+msgid "Select the addressbook in which to store merged contacts:"
+msgstr "បោះពុម្ព​សៀវភៅ​អាសយដ្ឋាន​ទាំងមូល ឬ​ចំនួន​ទំនាក់ទំនង​ដែលបានជ្រើស ។"
+
+#: merge/manualmerge/mergecontactwidget.cpp:72
+msgid "merge"
+msgstr ""
 
 #: merge/mergecontactselectinformationdialog.cpp:31
 msgid "Select Which Information to Use for new Contact"
@@ -563,24 +580,7 @@ msgstr ""
 msgid "Merged Contact"
 msgstr "ជ្រើស​ទំនាក់ទំនង"
 
-#: merge/mergecontactwidget.cpp:43
-#, fuzzy
-#| msgid "Select Contacts"
-msgid "Select contacts that you really want to merge:"
-msgstr "ជ្រើស​ទំនាក់ទំនង"
-
-#: merge/mergecontactwidget.cpp:55
-#, fuzzy
-#| msgctxt "@info:whatsthis"
-#| msgid "Print the complete address book or a selected number of contacts."
-msgid "Select the addressbook in which to store merged contacts:"
-msgstr "បោះពុម្ព​សៀវភៅ​អាសយដ្ឋាន​ទាំងមូល ឬ​ចំនួន​ទំនាក់ទំនង​ដែលបានជ្រើស ។"
-
-#: merge/mergecontactwidget.cpp:69
-msgid "merge"
-msgstr ""
-
-#: merge/searchduplicate/resultduplicatetreewidget.cpp:39
+#: merge/searchduplicate/resultduplicatetreewidget.cpp:53
 #, fuzzy, kde-format
 #| msgid "Select Contacts"
 msgid "Duplicate contact %1"
@@ -599,13 +599,13 @@ msgstr "តែ​ទំនាក់ទំនង​ដែល​បាន​ជ្
 msgid "No duplicated contact found."
 msgstr "ជ្រើស​ទំនាក់ទំនង"
 
-#: merge/searchduplicate/searchduplicateresultwidget.cpp:56
+#: merge/searchduplicate/searchduplicateresultwidget.cpp:59
 #, fuzzy
 #| msgid "Select Address Book"
 msgid "Select AddressBook:"
 msgstr "ជ្រើស​​សៀវភៅ​អាសយដ្ឋាន"
 
-#: merge/searchduplicate/searchduplicateresultwidget.cpp:67
+#: merge/searchduplicate/searchduplicateresultwidget.cpp:72
 msgid "Merge"
 msgstr ""
 
@@ -1116,13 +1116,13 @@ msgstr ""
 "នេះ​ជា​វិធីសាស្ត្រ​ស្វែងរក​រហ័ស​សម្រាប់​ទំនាក់ទំនង​ដែល​ចាប់អារម្មណ៍ ។"
 
 #: xxport/csv/csv_xxport.cpp:67 xxport/gmx/gmx_xxport.cpp:370
-#: xxport/ldif/ldif_xxport.cpp:106
+#: xxport/ldif/ldif_xxport.cpp:105
 #, kde-format
 msgid "<qt>Unable to open file <b>%1</b></qt>"
 msgstr "<qt>មិនអាច​បើក​ឯកសារ <b>%1</b></qt> បាន​ទេ"
 
 #: xxport/csv/csv_xxport.cpp:80 xxport/gmx/gmx_xxport.cpp:384
-#: xxport/ldif/ldif_xxport.cpp:137
+#: xxport/ldif/ldif_xxport.cpp:136
 #, kde-format
 msgid "<qt>Unable to open file <b>%1</b>.</qt>"
 msgstr "<qt>មិន​អាច​បើក​ឯកសារ <b>%1</b>បាន​ទេ ។</qt>"
@@ -1458,7 +1458,7 @@ msgstr "សូម​ជ្រើស​ពុម្ព ដែល​ផ្គូ�
 msgid "GMX address book file (*.gmxa)"
 msgstr "ឯកសារ​សៀវភៅ​អាសយដ្ឋាន GMX (*.gmxa)"
 
-#: xxport/gmx/gmx_xxport.cpp:137 xxport/ldif/ldif_xxport.cpp:78
+#: xxport/gmx/gmx_xxport.cpp:137 xxport/ldif/ldif_xxport.cpp:77
 #, kde-format
 msgid "<qt>Unable to open <b>%1</b> for reading.</qt>"
 msgstr "<qt>មិនអាច​បើក <b>%1</b> ដើម្បី​អាន​បានទេ ។</qt>"
@@ -1468,40 +1468,40 @@ msgstr "<qt>មិនអាច​បើក <b>%1</b> ដើម្បី​អា
 msgid "%1 is not a GMX address book file."
 msgstr "%1 មិនមែន​ជា​ឯកសារ​សៀវភៅ​អាសយដ្ឋាន​របស់ GMX ។"
 
-#: xxport/vcard/vcard_xxport.cpp:147
+#: xxport/vcard/vcard_xxport.cpp:91
 msgctxt "@info"
 msgid ""
 "You have selected a list of contacts, shall they be exported to several "
 "files?"
 msgstr "អ្នក​បាន​ជ្រើស​បញ្ជី​ទំនាក់ទំនង តើ​ពួក​វា​គួរ​ត្រូវ​បាន​នាំចេញ​ទៅ​កាន់​ឯកសារ​ជា​ច្រើន​ដែរ​ឬទេ ?"
 
-#: xxport/vcard/vcard_xxport.cpp:150
+#: xxport/vcard/vcard_xxport.cpp:94
 msgctxt "@action:button"
 msgid "Export to One File"
 msgstr "នាំចេញ​ទៅកាន់​ឯកសារ​មួយ"
 
-#: xxport/vcard/vcard_xxport.cpp:151
+#: xxport/vcard/vcard_xxport.cpp:95
 msgctxt "@action:button"
 msgid "Export to Several Files"
 msgstr "នាំចេញ​ទៅ​កាន់​ឯកសារ​ជា​ច្រើន"
 
-#: xxport/vcard/vcard_xxport.cpp:215
+#: xxport/vcard/vcard_xxport.cpp:159
 msgid ""
 "*.vcf|vCard (*.vcf)\n"
 "*|all files (*)"
 msgstr ""
 
-#: xxport/vcard/vcard_xxport.cpp:221
+#: xxport/vcard/vcard_xxport.cpp:165
 msgctxt "@title:window"
 msgid "Select vCard to Import"
 msgstr "ជ្រើស vCard ដែល​ត្រូវ​នាំចូល"
 
-#: xxport/vcard/vcard_xxport.cpp:228
+#: xxport/vcard/vcard_xxport.cpp:172
 msgctxt "@title:window"
 msgid "vCard Import Failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​នាំចូល vCard"
 
-#: xxport/vcard/vcard_xxport.cpp:250
+#: xxport/vcard/vcard_xxport.cpp:194
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1511,148 +1511,133 @@ msgstr ""
 "<para>នៅពេល​ព្យាយាម​អាន​ vCard មាន​កំហុស​មួយ​ក្នុងកា​របើក​ឯកសារ<filename>%1</filename> ៖</"
 "para><para>%2</para>"
 
-#: xxport/vcard/vcard_xxport.cpp:261
+#: xxport/vcard/vcard_xxport.cpp:205
 #, kde-format
 msgctxt "@info"
 msgid "<para>Unable to access vCard:</para><para>%1</para>"
 msgstr "<para>មិនអាច​ចូលដំណើរការ vCard ៖</para><para>%1</para> បាន​ទេ"
 
-#: xxport/vcard/vcard_xxport.cpp:273
+#: xxport/vcard/vcard_xxport.cpp:217
 msgctxt "@info"
 msgid "No contacts were imported, due to errors with the vCards."
 msgstr "គ្មាន​ទំនាក់ទំនង​ត្រូវ​បាន​នាំចូល​ទេ ដោយ​សារ​តែ​មាន​កំហុស​ជា​មួយ vCards ។"
 
-#: xxport/vcard/vcard_xxport.cpp:277
+#: xxport/vcard/vcard_xxport.cpp:221
 msgctxt "@info"
 msgid "The vCard does not contain any contacts."
 msgstr "vCard មិន​មាន​ទំនាក់ទំនង​ណាមួយ​ទេ ។"
 
-#: xxport/vcard/vcard_xxport.cpp:511
-msgctxt "@title:window"
-msgid "Import vCard"
-msgstr "នាំចូល vCard"
-
-#: xxport/vcard/vcard_xxport.cpp:535
-msgctxt "@info"
-msgid "Do you want to import this contact into your address book?"
-msgstr "តើ​អ្នក​ចង់​នាំចូល​ទំនាក់ទំនង​នេះ​ទៅ​ក្នុង​សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក​ដែរ​ឬទេ ?"
-
-#: xxport/vcard/vcard_xxport.cpp:545
-msgctxt "@action:button"
-msgid "Import All..."
-msgstr "នាំចូល​ទាំងអស់..."
-
-#: xxport/vcard/vcard_xxport.cpp:635
+#: xxport/vcard/vcardexportselectiondialog.cpp:35
 msgctxt "@title:window"
 msgid "Select vCard Fields"
 msgstr "ជ្រើស​វាល vCard"
 
-#: xxport/vcard/vcard_xxport.cpp:659
+#: xxport/vcard/vcardexportselectiondialog.cpp:59
 msgctxt "@title:group"
 msgid "Fields to be exported"
 msgstr "ឯកសារ​ដែល​ត្រូវ​នាំចេញ ៖"
 
-#: xxport/vcard/vcard_xxport.cpp:663
+#: xxport/vcard/vcardexportselectiondialog.cpp:63
 msgctxt "@option:check"
 msgid "Private fields"
 msgstr "វាល​ឯកជន"
 
-#: xxport/vcard/vcard_xxport.cpp:665
+#: xxport/vcard/vcardexportselectiondialog.cpp:65
 msgctxt "@info:tooltip"
 msgid "Export private fields"
 msgstr "នាំចេញ​វាល​ឯកជន"
 
-#: xxport/vcard/vcard_xxport.cpp:668
+#: xxport/vcard/vcardexportselectiondialog.cpp:68
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's private fields to the "
 "vCard output file."
 msgstr "ធីក​ប្រអប់​នេះ​ប្រសិនបើ​អ្នក​ចង់​នាំចេញ​វាល​ឯកជន​របស់​ទំនាក់ទំនង​ទៅកាន់​ឯកសារ​លទ្ធផល vCard ។"
 
-#: xxport/vcard/vcard_xxport.cpp:672
+#: xxport/vcard/vcardexportselectiondialog.cpp:72
 msgctxt "@option:check"
 msgid "Business fields"
 msgstr "វាល​ពាណិជ្ជកម្ម"
 
-#: xxport/vcard/vcard_xxport.cpp:674
+#: xxport/vcard/vcardexportselectiondialog.cpp:74
 msgctxt "@info:tooltip"
 msgid "Export business fields"
 msgstr "នាំចេញ​វាល​ពាណិជ្ជកម្ម"
 
-#: xxport/vcard/vcard_xxport.cpp:677
+#: xxport/vcard/vcardexportselectiondialog.cpp:77
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's business fields to the "
 "vCard output file."
 msgstr "ធីក​ប្រអប់​នេះ​ប្រសិនបើ​អ្នក​ចង់​នាំចេញ​វាល​ជំនួញ​របស់​ទំនាក់ទំនង​ទៅកាន់​ឯកសារ​លទ្ធផល vCard ។"
 
-#: xxport/vcard/vcard_xxport.cpp:681
+#: xxport/vcard/vcardexportselectiondialog.cpp:81
 msgctxt "@option:check"
 msgid "Other fields"
 msgstr "វាល​ផ្សេងៗ"
 
-#: xxport/vcard/vcard_xxport.cpp:683
+#: xxport/vcard/vcardexportselectiondialog.cpp:83
 msgctxt "@info:tooltip"
 msgid "Export other fields"
 msgstr "នាំចេញ​វាល​ផ្សេងៗ"
 
-#: xxport/vcard/vcard_xxport.cpp:686
+#: xxport/vcard/vcardexportselectiondialog.cpp:86
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's other fields to the vCard "
 "output file."
 msgstr "ធីក​ប្រអប់​នេះ​ប្រសិនបើ​អ្នក​ចង់​នាំចេញ​វាល​ផ្សេងទៀត​របស់​ទំនាក់ទំនង​ទៅកាន់​ឯកសារ​លទ្ធផល vCard ។"
 
-#: xxport/vcard/vcard_xxport.cpp:690
+#: xxport/vcard/vcardexportselectiondialog.cpp:90
 msgctxt "@option:check"
 msgid "Encryption keys"
 msgstr "ការ​អ៊ីនគ្រីប​សោ"
 
-#: xxport/vcard/vcard_xxport.cpp:692
+#: xxport/vcard/vcardexportselectiondialog.cpp:92
 msgctxt "@info:tooltip"
 msgid "Export encryption keys"
 msgstr "នាំចេញ​ការ​អ៊ិនគ្រីប​សោ"
 
-#: xxport/vcard/vcard_xxport.cpp:695
+#: xxport/vcard/vcardexportselectiondialog.cpp:95
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's encryption keys to the "
 "vCard output file."
 msgstr "ធីក​ប្រអប់​នេះ​ប្រសិនបើ​អ្នក​ចង់​នាំចេញ​កូនសោ​ការ​អ៊ិនគ្រីប​របស់​ទំនាក់ទំនង​ទៅកាន់​ឯកសារ​លទ្ធផល vCard ។"
 
-#: xxport/vcard/vcard_xxport.cpp:699
+#: xxport/vcard/vcardexportselectiondialog.cpp:99
 msgctxt "@option:check"
 msgid "Pictures"
 msgstr "រូបភាព"
 
-#: xxport/vcard/vcard_xxport.cpp:701
+#: xxport/vcard/vcardexportselectiondialog.cpp:101
 msgctxt "@info:tooltip"
 msgid "Export pictures"
 msgstr "នាំចេញ​រូបភាព"
 
-#: xxport/vcard/vcard_xxport.cpp:704
+#: xxport/vcard/vcardexportselectiondialog.cpp:104
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's picture to the vCard "
 "output file."
 msgstr "ធីក​ប្រអប់​នេះ​ប្រសិនបើ​អ្នក​ចង់​នាំចេញ​រូបភាព​ទំនាក់ទំនង​ទៅកាន់​ឯកសារ​លទ្ធផល vCard ។"
 
-#: xxport/vcard/vcard_xxport.cpp:709
+#: xxport/vcard/vcardexportselectiondialog.cpp:109
 msgctxt "@title:group"
 msgid "Export options"
 msgstr "ជម្រើស​នាំចេញ"
 
-#: xxport/vcard/vcard_xxport.cpp:713
+#: xxport/vcard/vcardexportselectiondialog.cpp:113
 msgctxt "@option:check"
 msgid "Display name as full name"
 msgstr "បង្ហាញ​ឈ្មោះ​ជា​ឈ្មោះ​ពេញ"
 
-#: xxport/vcard/vcard_xxport.cpp:715
+#: xxport/vcard/vcardexportselectiondialog.cpp:115
 msgctxt "@info:tooltip"
 msgid "Export display name as full name"
 msgstr "នាំចេញ​ឈ្មោះ​បង្ហាញ​ជា​ឈ្មោះ​ពេញ"
 
-#: xxport/vcard/vcard_xxport.cpp:718
+#: xxport/vcard/vcardexportselectiondialog.cpp:118
 msgctxt "@info:whatsthis"
 msgid ""
 "Check this box if you want to export the contact's display name in the "
@@ -1662,29 +1647,44 @@ msgstr ""
 "ធីក​ប្រអប់​នេះ​ប្រសិនបើ​អ្នក​ចង់​នាំចេញ​ឈ្មោះ​បង្ហាញ​របស់​ទំនាក់ទំនង​ទៅកាន់​វាល​ឈ្មោះ​ពេញ​របស់ vCard ។ វា​អាច​"
 "ទាមទារ​ឲ្យ​ប្រើឈ្មោះ​ដែល​បាន​បង្ហាញ​ត្រឹមត្រូវ​នៅ​ក្នុង GMail ឬ Android ។"
 
-#: xxportmanager.cpp:125
+#: xxport/vcard/vcardviewerdialog.cpp:34
+msgctxt "@title:window"
+msgid "Import vCard"
+msgstr "នាំចូល vCard"
+
+#: xxport/vcard/vcardviewerdialog.cpp:58
+msgctxt "@info"
+msgid "Do you want to import this contact into your address book?"
+msgstr "តើ​អ្នក​ចង់​នាំចូល​ទំនាក់ទំនង​នេះ​ទៅ​ក្នុង​សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក​ដែរ​ឬទេ ?"
+
+#: xxport/vcard/vcardviewerdialog.cpp:68
+msgctxt "@action:button"
+msgid "Import All..."
+msgstr "នាំចូល​ទាំងអស់..."
+
+#: xxport/xxportmanager.cpp:125
 msgid "Select Address Book"
 msgstr "ជ្រើស​​សៀវភៅ​អាសយដ្ឋាន"
 
-#: xxportmanager.cpp:127
+#: xxport/xxportmanager.cpp:127
 msgid "Select the address book the imported contact(s) shall be saved in:"
 msgstr "ជ្រើស​សៀវភៅ​អាសយដ្ឋាន​ ដែល​ត្រូវ​រក្សាទុក​ទំនាក់ទំនង​ដែល​បាន​ជ្រើស ៖"
 
-#: xxportmanager.cpp:140
+#: xxport/xxportmanager.cpp:140
 msgid "Import Contacts"
 msgstr "នាំចូល​ទំនាក់ទំនង"
 
-#: xxportmanager.cpp:142
+#: xxport/xxportmanager.cpp:142
 #, kde-format
 msgid "Importing one contact to %2"
 msgid_plural "Importing %1 contacts to %2"
 msgstr[0] "នាំចូល​ទំនាក់ទំនង %1 ទៅ​កាន់ %2"
 
-#: xxportmanager.cpp:184
+#: xxport/xxportmanager.cpp:184
 msgid "Which contact do you want to export?"
 msgstr "តើ​ទំនាក់ទំនង​ណាមួយ​ដែល​អ្នក​ចង់​នាំចេញ ?"
 
-#: xxportmanager.cpp:195
+#: xxport/xxportmanager.cpp:195
 msgid "You have not selected any contacts to export."
 msgstr "អ្នក​មិនបាន​ជ្រើស​ទំនាក់ទំនង​ដើម្បីនាំចេញ​ទេ ។"
 
