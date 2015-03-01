@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: yakuake\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-02-16 08:55+0000\n"
+"POT-Creation-Date: 2015-03-01 08:44+0000\n"
 "PO-Revision-Date: 2012-07-11 11:30+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -30,12 +30,20 @@ msgstr ""
 "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
 "ratanak@khmeros.info,sophea@khmeros.info"
 
-#: app/config/appearancesettings.cpp:173
+#: app/config/appearancesettings.cpp:175
 msgctxt "@item:inlistbox Unknown skin author"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#: app/config/appearancesettings.cpp:262
+#: app/config/appearancesettings.cpp:221
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Unable to list the skin archive contents."
+msgctxt "@title:window"
+msgid "Select the skin archive to install"
+msgstr "មិន​អាច​រាយ​បញ្ជី​មាតិកា​ប័ណ្ណសារ​ស្បែក​បាន​ទេ ។"
+
+#: app/config/appearancesettings.cpp:271
 msgctxt "@info"
 msgid ""
 "Unable to locate required files in the skin archive.<nl/><nl/>The archive "
@@ -44,12 +52,12 @@ msgstr ""
 "មិន​អាច​រក​​ឃើញ​ទីតាំង​ឯកសារ​ដែល​ទាមទារ​នៅ​ក្នុង​ប័ណ្ណសារ​ស្បែក​ឡើយ ។<nl/><nl/>ប័ណ្ណសារ​លេចឡើង​មិន​"
 "ត្រឹមត្រូវ ។"
 
-#: app/config/appearancesettings.cpp:265
+#: app/config/appearancesettings.cpp:274
 msgctxt "@info"
 msgid "Unable to list the skin archive contents."
 msgstr "មិន​អាច​រាយ​បញ្ជី​មាតិកា​ប័ណ្ណសារ​ស្បែក​បាន​ទេ ។"
 
-#: app/config/appearancesettings.cpp:310
+#: app/config/appearancesettings.cpp:320
 msgctxt "@info"
 msgid ""
 "This skin appears to be already installed and you lack the required "
@@ -57,37 +65,48 @@ msgid ""
 msgstr ""
 "ស្បែក​​លេច​ឡើង​នេះ​ ត្រូវ​បាន​ដំឡើង​រួច​ហើយ ហើយ​អ្នក​បាត់​សិទ្ធិ​ដែល​បាន​ទាមទារ​ ដើម្បី​សរសេរ​ជាន់​លើ​វា ។"
 
-#: app/config/appearancesettings.cpp:317
+#: app/config/appearancesettings.cpp:327
 msgctxt "@info"
 msgid "This skin appears to be already installed. Do you want to overwrite it?"
 msgstr "ស្បែក​លេចឡើង​នេះ ត្រូវ​បាន​ដំឡើង​រួចហើយ ។ តើ​អ្នក​ចង់​សរសេរ​ជាន់​លើ​វា​ឬ ?"
 
-#: app/config/appearancesettings.cpp:318
+#: app/config/appearancesettings.cpp:328
 msgctxt "@title:window"
 msgid "Skin Already Exists"
 msgstr "មាន​ស្បែក​រួចហើយ"
 
-#: app/config/appearancesettings.cpp:319
+#: app/config/appearancesettings.cpp:329
 msgctxt "@action:button"
 msgid "Reinstall Skin"
 msgstr "ដំឡើង​ស្បែក​ឡើងវិញ"
 
-#: app/config/appearancesettings.cpp:339
+#: app/config/appearancesettings.cpp:348 app/config/appearancesettings.cpp:447
 msgctxt "@title:Window"
 msgid "Could Not Delete Skin"
 msgstr "មិន​អាច​លុប​ស្បែក​បាន​ទេ"
 
-#: app/config/appearancesettings.cpp:360
+#: app/config/appearancesettings.cpp:368
 msgctxt "@info"
 msgid "The skin archive file could not be opened."
 msgstr "មិន​អាច​បើក​ឯកសារ​ប័ណ្ណសារ​ស្បែក​​បាន​ទេ ។"
 
-#: app/config/appearancesettings.cpp:365
+#: app/config/appearancesettings.cpp:373
 msgctxt "@title:window"
 msgid "Cannot Install Skin"
 msgstr "មិន​អាច​ដំឡើង​ស្បែក​បាន​ទេ"
 
-#: app/config/appearancesettings.cpp:541
+#: app/config/appearancesettings.cpp:437
+#, kde-format
+msgctxt "@info"
+msgid "Do you want to remove \"%1\" by %2?"
+msgstr "តើ​អ្នក​ចង់​យក \"%1\" ចេញ​ដោយ %2 ?"
+
+#: app/config/appearancesettings.cpp:438
+msgctxt "@title:window"
+msgid "Remove Skin"
+msgstr "យក​ស្បែក​ចេញ"
+
+#: app/config/appearancesettings.cpp:548
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1365,14 +1384,6 @@ msgstr "បោះបង់​កម្មវិធី ។"
 #~ msgctxt "@info"
 #~ msgid "The installer was given a directory, not a file."
 #~ msgstr "កម្មវិធី​ដំឡើង​បាន​ផ្ដល់​ថត​មួយ មិន​មែន​ឯកសារ​ឡើយ ។"
-
-#~ msgctxt "@info"
-#~ msgid "Do you want to remove \"%1\" by %2?"
-#~ msgstr "តើ​អ្នក​ចង់​យក \"%1\" ចេញ​ដោយ %2 ?"
-
-#~ msgctxt "@title:window"
-#~ msgid "Remove Skin"
-#~ msgstr "យក​ស្បែក​ចេញ"
 
 #~ msgctxt "@info"
 #~ msgid "Could not remove skin \"%1\"."
