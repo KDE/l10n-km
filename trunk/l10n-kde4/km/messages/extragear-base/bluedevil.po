@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bluedevil\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-03-17 02:44+0000\n"
+"POT-Creation-Date: 2015-04-04 02:18+0000\n"
 "PO-Revision-Date: 2012-01-12 16:58+0700\n"
 "Last-Translator: Seng Sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <supprot@khmeros.info>\n"
@@ -29,7 +29,7 @@ msgstr ""
 "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
 "ratanak@khmeros.info,sophea@khmeros.info"
 
-#: daemon/helpers/authorize/authorize.cpp:42
+#: daemon/helpers/authorize/authorize.cpp:43
 #, kde-format
 msgctxt ""
 "Show a notification asking to authorize or deny access to this computer from "
@@ -37,25 +37,50 @@ msgctxt ""
 msgid "%1 is requesting access to this computer"
 msgstr "%1 កំពុង​ទាមទារ​ឲ្យ​ចូល​ដំណើរការ​​​​​នៅ​កុំព្យូទ័រ​នេះ"
 
-#: daemon/helpers/authorize/authorize.cpp:46
+#: daemon/helpers/authorize/authorize.cpp:47
 msgctxt "Button to trust a bluetooth remote device and authorize it to connect"
 msgid "Trust and Authorize"
 msgstr "ជឿ​ទុកចិត្ត និង​អនុញ្ញាត"
 
-#: daemon/helpers/authorize/authorize.cpp:47
+#: daemon/helpers/authorize/authorize.cpp:48
 #, fuzzy
 #| msgctxt "Button to authorize a bluetooth remote device to connect "
 #| msgid "Authorize Only"
-msgctxt "Button to authorize a bluetooth remote device to connect"
+msgctxt "Button to authorize a bluetooth remote device to connect "
 msgid "Authorize Only"
 msgstr "អនុញ្ញាត​តែប៉ុណ្ណោះ"
 
-#: daemon/helpers/authorize/authorize.cpp:48
+#: daemon/helpers/authorize/authorize.cpp:49
 msgctxt "Deny access to a remote bluetooth device"
 msgid "Deny"
 msgstr "បដិសេធ"
 
-#: daemon/helpers/requestconfirmation/requestconfirmation.cpp:38
+#: daemon/helpers/authorize/main.cpp:32
+#: daemon/helpers/confirmmodechange/main.cpp:31
+#: daemon/helpers/requestconfirmation/main.cpp:30
+#: daemon/helpers/requestpin/main.cpp:30
+msgid "KDE Bluetooth System"
+msgstr "ប្រព័ន្ធ​ប៊្លូធូស​របស់ KDE"
+
+#: daemon/helpers/confirmmodechange/confirmmodechange.cpp:41
+#, kde-format
+msgctxt ""
+"Showed in a notification when the Bluetooth mode is going to be changed (for "
+"example to flight mode), the %1 is the name of the mode"
+msgid "Change Bluetooth mode to '%1'?"
+msgstr "ផ្លាស់ប្ដូរ​របៀប​ប៊្លូធូស​ទៅ​ '%1' ?"
+
+#: daemon/helpers/confirmmodechange/confirmmodechange.cpp:45
+msgctxt "Confirm the bluetooth mode change, shown in a notification button"
+msgid "Confirm"
+msgstr "អះអាង"
+
+#: daemon/helpers/confirmmodechange/confirmmodechange.cpp:46
+msgctxt "Deny the bluetooth mdoe change, shown in a notification"
+msgid "Deny"
+msgstr "បដិសេធ"
+
+#: daemon/helpers/requestconfirmation/requestconfirmation.cpp:39
 #, kde-format
 msgctxt ""
 "The text is shown in a notification to know if the PIN is correct, %1 is the "
@@ -63,12 +88,12 @@ msgctxt ""
 msgid "%1 is asking if the PIN is correct: %2"
 msgstr "%1 កំពុង​ស្នើ ប្រសិនបើ PIN គឺ​ត្រឹមត្រូវ ៖ %2"
 
-#: daemon/helpers/requestconfirmation/requestconfirmation.cpp:42
+#: daemon/helpers/requestconfirmation/requestconfirmation.cpp:43
 msgctxt "Notification button to know if the pin is correct or not"
 msgid "PIN correct"
 msgstr "PIN ត្រឹមត្រូវ"
 
-#: daemon/helpers/requestconfirmation/requestconfirmation.cpp:43
+#: daemon/helpers/requestconfirmation/requestconfirmation.cpp:44
 msgctxt "Notification button to say that the PIN is wrong"
 msgid "PIN incorrect"
 msgstr "PIN មិន​ត្រឹមត្រូវ"
@@ -79,7 +104,7 @@ msgid "PIN:"
 msgstr "PIN:"
 
 #. i18n: ectx: property (placeholderText), widget (KLineEdit, pin)
-#: daemon/helpers/requestpin/dialogWidget.ui:65
+#: daemon/helpers/requestpin/dialogWidget.ui:71
 msgid "1234"
 msgstr ""
 
@@ -98,12 +123,7 @@ msgctxt ""
 msgid "Introduce PIN"
 msgstr "ណែនាំ PIN"
 
-#: daemon/helpers/requestpin/requestpin.cpp:83
-msgctxt "Shown in the caption of a dialog where the user introduce the PIN"
-msgid "Introduce PIN"
-msgstr "ណែនាំ​ PIN"
-
-#: daemon/helpers/requestpin/requestpin.cpp:90
+#: daemon/helpers/requestpin/requestpin.cpp:87
 #, kde-format
 msgctxt ""
 "Shown in a dialog which asks to introduce a PIN that will be used to pair a "
@@ -113,31 +133,36 @@ msgid ""
 "it below."
 msgstr "ដើម្បី​​ដាក់​គូ​កុំព្យូទ័រ​ជាមួយ %1 អ្នក​ត្រូវ​បញ្ចូល PIN មួយ ។ សូម​បញ្ចូល​វា​នៅ​ខាងក្រោម ។"
 
-#: daemon/kded/BlueDevilDaemon.cpp:84 daemon/kded/BlueDevilDaemon.cpp:86
+#: daemon/helpers/requestpin/requestpin.cpp:96
+msgctxt "Shown in the caption of a dialog where the user introduce the PIN"
+msgid "Introduce PIN"
+msgstr "ណែនាំ​ PIN"
+
+#: daemon/kded/BlueDevilDaemon.cpp:90 daemon/kded/BlueDevilDaemon.cpp:92
 msgid "Bluetooth Daemon"
 msgstr "ដេមិន​របស់​ប៊្លូធូស"
 
-#: daemon/kded/BlueDevilDaemon.cpp:88 kio/obexftp/daemon/ObexFtpDaemon.cpp:62
-#: monolithic/main.cpp:37 sendfile/main.cpp:42 wizard/main.cpp:41
+#: daemon/kded/BlueDevilDaemon.cpp:94 kio/obexftp/daemon/ObexFtpDaemon.cpp:64
+#: monolithic/main.cpp:29 sendfile/main.cpp:33 wizard/main.cpp:31
 msgid "(c) 2010, UFO Coders"
 msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០១០ ដោយ UFO Coders"
 
-#: daemon/kded/BlueDevilDaemon.cpp:91 kio/obexftp/daemon/ObexFtpDaemon.cpp:64
-#: monolithic/main.cpp:39 sendfile/main.cpp:44 wizard/main.cpp:43
+#: daemon/kded/BlueDevilDaemon.cpp:97 kio/obexftp/daemon/ObexFtpDaemon.cpp:67
+#: monolithic/main.cpp:31 sendfile/main.cpp:35 wizard/main.cpp:33
 msgid "Alejandro Fiestas Olivares"
 msgstr "Alejandro Fiestas Olivares"
 
-#: daemon/kded/BlueDevilDaemon.cpp:91 daemon/kded/BlueDevilDaemon.cpp:94
-#: kio/obexftp/daemon/ObexFtpDaemon.cpp:64 monolithic/main.cpp:39
-#: sendfile/main.cpp:44 wizard/main.cpp:43
+#: daemon/kded/BlueDevilDaemon.cpp:97 daemon/kded/BlueDevilDaemon.cpp:100
+#: kio/obexftp/daemon/ObexFtpDaemon.cpp:67 monolithic/main.cpp:31
+#: sendfile/main.cpp:35 wizard/main.cpp:33
 msgid "Maintainer"
 msgstr "អ្នក​ថែទាំ"
 
-#: daemon/kded/BlueDevilDaemon.cpp:94
+#: daemon/kded/BlueDevilDaemon.cpp:100
 msgid "Eduardo Robles Elvira"
 msgstr "Eduardo Robles Elvira"
 
-#: daemon/kded/bluezagent.cpp:212
+#: daemon/kded/bluezagent.cpp:194
 #, fuzzy
 #| msgid "Bluetooth Devices"
 msgctxt ""
@@ -146,7 +171,7 @@ msgctxt ""
 msgid "Bluetooth device"
 msgstr "ឧបករណ៍​របស់​ប៊្លូធូស"
 
-#: daemon/kded/filereceiver/receivefilejob.cpp:133
+#: daemon/kded/filereceiver/receivefilejob.cpp:130
 #, kde-format
 msgctxt ""
 "Show a notification asking to authorize or deny an incoming file transfer to "
@@ -154,81 +179,68 @@ msgctxt ""
 msgid "%1 is sending you the file %2"
 msgstr "%1 កំពុង​ផ្ញើ​​ឯកសារ​ឲ្យ​អ្នក %2"
 
-#: daemon/kded/filereceiver/receivefilejob.cpp:137
+#: daemon/kded/filereceiver/receivefilejob.cpp:134
 msgctxt ""
 "Button to accept the incoming file transfer and download it in the default "
 "download directory"
 msgid "Accept"
 msgstr "ព្រម​ទទួល"
 
-#: daemon/kded/filereceiver/receivefilejob.cpp:138
+#: daemon/kded/filereceiver/receivefilejob.cpp:135
 msgctxt "Deny the incoming file transfer"
 msgid "Cancel"
 msgstr "បោះបង់"
 
-#: daemon/kded/filereceiver/receivefilejob.cpp:208
+#: daemon/kded/filereceiver/receivefilejob.cpp:207
 msgid "Receiving file over Bluetooth"
 msgstr "ទទួល​ឯកសារ​ពី​ប៊្លូធូស"
 
-#: daemon/kded/filereceiver/receivefilejob.cpp:209
-#: sendfile/sendfilesjob.cpp:76 sendfile/sendfilesjob.cpp:188
+#: daemon/kded/filereceiver/receivefilejob.cpp:208
+#: sendfile/sendfilesjob.cpp:74 sendfile/sendfilesjob.cpp:177
 msgctxt "File transfer origin"
 msgid "From"
 msgstr "ពី"
 
-#: daemon/kded/filereceiver/receivefilejob.cpp:211
-#: sendfile/sendfilesjob.cpp:77 sendfile/sendfilesjob.cpp:189
+#: daemon/kded/filereceiver/receivefilejob.cpp:210
+#: sendfile/sendfilesjob.cpp:74 sendfile/sendfilesjob.cpp:177
 msgctxt "File transfer destination"
 msgid "To"
 msgstr "ជូន​ចំពោះ​​"
 
-#: daemon/kded/filereceiver/receivefilejob.cpp:224
-#: kio/obexftp/transferfilejob.cpp:95 sendfile/sendfilesjob.cpp:149
-#, fuzzy
-#| msgid "Bluetooth Transfer"
-msgid "Bluetooth transfer failed"
-msgstr "ការ​ផ្ទេរ​ប៊្លូធូស"
-
-#: daemon/kded/filereceiver/receivefilejob.cpp:262
-#, fuzzy
-#| msgid "Save files in:"
-msgid "Saving file failed"
-msgstr "រក្សាទុក​ឯកសារ​ក្នុង ៖"
-
-#: fileitemactionplugin/sendfileitemaction.cpp:65
+#: fileitemactionplugin/sendfileitemaction.cpp:66
 msgid "Send via Bluetooth"
 msgstr "ផ្ញើ​តាម​ប៊្លូធូស"
 
-#: fileitemactionplugin/sendfileitemaction.cpp:80
+#: fileitemactionplugin/sendfileitemaction.cpp:82
 #, fuzzy
 #| msgid "Add Device..."
 msgctxt "Find Bluetooth device"
 msgid "Find Device..."
 msgstr "បន្ថែម​ឧបករណ៍..."
 
-#: fileitemactionplugin/sendfileitemaction.cpp:83
+#: fileitemactionplugin/sendfileitemaction.cpp:85
 #, fuzzy
 #| msgid "Other"
 msgctxt "Other Bluetooth device"
 msgid "Other..."
 msgstr "ផ្សេង​ទៀត"
 
-#: kcmodule/bluedeviladapters.cpp:52
+#: kcmodule/bluedeviladapters.cpp:51
 msgctxt "Radio widget to set if we want the adapter to be hidden"
 msgid "Hidden"
 msgstr "ដែល​លាក់"
 
-#: kcmodule/bluedeviladapters.cpp:53
+#: kcmodule/bluedeviladapters.cpp:52
 msgctxt "Radio widget to set if we want the adapter to be always visible"
 msgid "Always visible"
 msgstr "អាច​មើល​ឃើញ​ជានិច្ច"
 
-#: kcmodule/bluedeviladapters.cpp:54
+#: kcmodule/bluedeviladapters.cpp:53
 msgctxt "Radio widget to set if we want the adapter to be temporarily visible"
 msgid "Temporarily visible"
 msgstr "អាច​មើល​ឃើញ​ជា​បណ្ដោះអាសន្ន"
 
-#: kcmodule/bluedeviladapters.cpp:94
+#: kcmodule/bluedeviladapters.cpp:93
 #, kde-format
 msgctxt "Discover time for the adapter"
 msgid "1 minute"
@@ -236,289 +248,294 @@ msgid_plural "%1 minutes"
 msgstr[0] ""
 msgstr[1] "%1 នាទី"
 
-#: kcmodule/bluedeviladapters.cpp:100
+#: kcmodule/bluedeviladapters.cpp:99
 msgctxt "Name of the adapter"
 msgid "Name"
 msgstr "ឈ្មោះ"
 
-#: kcmodule/bluedeviladapters.cpp:101
+#: kcmodule/bluedeviladapters.cpp:100
 msgctxt "Whether the adapter is powered or not"
 msgid "Powered"
 msgstr "បាន​ផ្ដល់"
 
-#: kcmodule/bluedeviladapters.cpp:102
+#: kcmodule/bluedeviladapters.cpp:101
 msgctxt "Whether the adapter is visible or not"
 msgid "Visibility"
 msgstr "ភាព​មើល​ឃើញ"
 
-#: kcmodule/bluedeviladapters.cpp:105
+#: kcmodule/bluedeviladapters.cpp:104
 msgctxt "How long the adapter will be discoverable"
 msgid "Discover Time"
 msgstr "ពេលវេលា​រក​ឃើញ"
 
-#: kcmodule/bluedeviladapters.cpp:122 kcmodule/bluedeviladapters.cpp:207
+#: kcmodule/bluedeviladapters.cpp:121 kcmodule/bluedeviladapters.cpp:206
 #, kde-format
 msgid "Default adapter: %1 (%2)"
 msgstr "អាដាប់ទ័រ​លំនាំដើម ៖ %1 (%2)"
 
-#: kcmodule/bluedeviladapters.cpp:124 kcmodule/bluedeviladapters.cpp:209
+#: kcmodule/bluedeviladapters.cpp:123 kcmodule/bluedeviladapters.cpp:208
 #, kde-format
 msgid "Adapter: %1 (%2)"
 msgstr "អាដាប់ទ័រ ៖ %1 (%2)"
 
-#: kcmodule/bluedeviladapters.cpp:205 kcmodule/bluedeviladapters.cpp:230
+#: kcmodule/bluedeviladapters.cpp:204 kcmodule/bluedeviladapters.cpp:229
 #, kde-format
 msgid "1 minute"
 msgid_plural "%1 minutes"
 msgstr[0] ""
 msgstr[1] "%1 នាទី"
 
-#: kcmodule/bluedeviladapters.cpp:242
+#: kcmodule/bluedeviladapters.cpp:241
 msgid "Bluetooth Adapters"
 msgstr "អាដាប់ទ័រ​របស់​ប៊្លូធូស"
 
-#: kcmodule/bluedeviladapters.cpp:244
+#: kcmodule/bluedeviladapters.cpp:242
 msgid "Bluetooth Adapters Control Panel Module"
 msgstr "ម៉ូឌុល​ផ្ទាំង​បញ្ជា​អាដាប់ទ័រ​របស់​ប៊្លូធូស"
 
-#: kcmodule/bluedeviladapters.cpp:246 kcmodule/bluedevildevices.cpp:327
-#: kcmodule/bluedeviltransfer.cpp:57
+#: kcmodule/bluedeviladapters.cpp:243 kcmodule/bluedevildevices.cpp:332
+#: kcmodule/bluedeviltransfer.cpp:52
 msgid "(c) 2010 Rafael Fernández López"
 msgstr "រក្សាសិទ្ធិ​ឆ្នាំ ២០១០ ដោយ Rafael Fernández López"
 
-#: kcmodule/bluedeviladapters.cpp:248 kcmodule/bluedevildevices.cpp:329
-#: kcmodule/bluedeviltransfer.cpp:59 monolithic/main.cpp:41
+#: kcmodule/bluedeviladapters.cpp:245 kcmodule/bluedevildevices.cpp:334
+#: kcmodule/bluedeviltransfer.cpp:54 monolithic/main.cpp:32
 msgid "Rafael Fernández López"
 msgstr "Rafael Fernández López"
 
-#: kcmodule/bluedeviladapters.cpp:248 kcmodule/bluedevildevices.cpp:329
-#: kcmodule/bluedeviltransfer.cpp:59
+#: kcmodule/bluedeviladapters.cpp:245 kcmodule/bluedevildevices.cpp:334
+#: kcmodule/bluedeviltransfer.cpp:54
 msgid "Developer and Maintainer"
 msgstr "អ្នក​អភិវឌ្ឍន៍ និង​អ្នក​ថែទាំ"
 
-#: kcmodule/bluedeviladapters.cpp:325
+#: kcmodule/bluedeviladapters.cpp:322
 msgid "No adapters found. Please connect one."
 msgstr "រក​មិន​ឃើញ​អាដាប់ទ័រ​ឡើយ ។ សូម​តភ្ជាប់ ។"
 
-#: kcmodule/bluedevildevices.cpp:318
+#: kcmodule/bluedevildevices.cpp:325
 msgid "Enable KDE Bluetooth Integration"
 msgstr "បើក​ការ​រួមបញ្ចូល​ប៊្លូធូស​របស់ KDE"
 
-#: kcmodule/bluedevildevices.cpp:323
+#: kcmodule/bluedevildevices.cpp:330
 msgid "Bluetooth Devices"
 msgstr "ឧបករណ៍​របស់​ប៊្លូធូស"
 
-#: kcmodule/bluedevildevices.cpp:325
+#: kcmodule/bluedevildevices.cpp:331
 msgid "Bluetooth Devices Control Panel Module"
 msgstr "ម៉ូឌុល​ផ្ទាំង​បញ្ជា​ឧបករណ៍​របស់​ប៊្លូធូស"
 
-#: kcmodule/bluedevildevices.cpp:361
+#: kcmodule/bluedevildevices.cpp:366
 msgctxt "Details of the device"
 msgid "Details"
 msgstr "សេចក្ដី​លម្អិត"
 
-#: kcmodule/bluedevildevices.cpp:363
+#: kcmodule/bluedevildevices.cpp:368
 msgctxt "Remove a device from the list of known devices"
 msgid "Remove"
 msgstr "យកចេញ"
 
-#: kcmodule/bluedevildevices.cpp:365 kcmodule/bluedevildevices.cpp:448
+#: kcmodule/bluedevildevices.cpp:370 kcmodule/bluedevildevices.cpp:453
 #, fuzzy
 #| msgctxt "Action"
 #| msgid "Connect"
 msgid "Connect"
 msgstr "តភ្ជាប់"
 
-#: kcmodule/bluedevildevices.cpp:367
+#: kcmodule/bluedevildevices.cpp:372
 msgid "Disconnect"
 msgstr "ផ្ដាច់"
 
-#: kcmodule/bluedevildevices.cpp:369
+#: kcmodule/bluedevildevices.cpp:374
 msgid "Add Device..."
 msgstr "បន្ថែម​ឧបករណ៍..."
 
-#: kcmodule/bluedevildevices.cpp:446
+#: kcmodule/bluedevildevices.cpp:451
 #, fuzzy
 #| msgctxt "Action"
 #| msgid "Connect"
 msgid "Re-connect"
 msgstr "តភ្ជាប់"
 
-#: kcmodule/bluedevildevices.cpp:482
+#: kcmodule/bluedevildevices.cpp:488
+#, kde-format
+msgid "Pick a new alias for %1"
+msgstr "រើស​ឈ្មោះ​ក្លែងក្លាយ​ថ្មី​​មួយ​​សម្រាប់ %1"
+
+#: kcmodule/bluedevildevices.cpp:512
 #, kde-format
 msgid ""
 "Are you sure that you want to remove device \"%1\" from the list of known "
 "devices?"
 msgstr "តើ​អ្នក​ប្រាកដ​ជា​ចង់​យក​ឧបករណ៍​ \"%1\" ចេញ​ពី​បញ្ជី​នៃ​ឧបករណ៍​ដែល​មិន​ស្គាល់​ឬ ?"
 
-#: kcmodule/bluedevildevices.cpp:483
+#: kcmodule/bluedevildevices.cpp:513
 msgctxt "Title of window that asks for confirmation when removing a device"
 msgid "Device removal"
 msgstr "ការ​យក​ឧបករណ៍​ចេញ"
 
-#: kcmodule/bluedevildevices.cpp:556
+#: kcmodule/bluedevildevices.cpp:586
 msgid "No remote devices have been added"
 msgstr "មិន​បាន​បន្ថែម​ឧបករណ៍​ពី​ចម្ងាយ​ឡើយ"
 
-#: kcmodule/bluedevildevices.cpp:558
+#: kcmodule/bluedevildevices.cpp:588
 msgid "Click here to add a remote device"
 msgstr "ចុច​ទីនេះ​ដើម្បី​បន្ថែម​ឧបករណ៍​ពី​ចម្ងាយ"
 
-#: kcmodule/bluedevildevices.cpp:598 kcmodule/bluedevildevices.cpp:640
+#: kcmodule/bluedevildevices.cpp:628 kcmodule/bluedevildevices.cpp:670
 msgctxt "Type of device: could not be determined"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#: kcmodule/bluedevildevices.cpp:601
+#: kcmodule/bluedevildevices.cpp:631
 msgctxt "This device is a Phone"
 msgid "Phone"
 msgstr "ទូរស័ព្ទ"
 
-#: kcmodule/bluedevildevices.cpp:604
+#: kcmodule/bluedevildevices.cpp:634
 msgctxt "This device is a Modem"
 msgid "Modem"
 msgstr "ម៉ូដឹម"
 
-#: kcmodule/bluedevildevices.cpp:607
+#: kcmodule/bluedevildevices.cpp:637
 msgctxt "This device is a Computer"
 msgid "Computer"
 msgstr "កុំព្យូទ័រ"
 
-#: kcmodule/bluedevildevices.cpp:610
+#: kcmodule/bluedevildevices.cpp:640
 msgctxt "This device is of type Network"
 msgid "Network"
 msgstr "បណ្ដាញ"
 
-#: kcmodule/bluedevildevices.cpp:613
+#: kcmodule/bluedevildevices.cpp:643
 msgctxt "This device is a Headset"
 msgid "Headset"
 msgstr "ឧបករណ៍​សម្រាប់​ស្ដាប់"
 
-#: kcmodule/bluedevildevices.cpp:616
+#: kcmodule/bluedevildevices.cpp:646
 msgctxt "This device are Headphones"
 msgid "Headphones"
 msgstr "ឧបករណ៍​សម្រាប់​ស្ដាប់​ទូរស័ព្ទ"
 
-#: kcmodule/bluedevildevices.cpp:619
+#: kcmodule/bluedevildevices.cpp:649
 msgctxt "This device is of type Audio"
 msgid "Audio"
 msgstr "អូឌីយ៉ូ"
 
-#: kcmodule/bluedevildevices.cpp:622
+#: kcmodule/bluedevildevices.cpp:652
 msgctxt "This device is a Keyboard"
 msgid "Keyboard"
 msgstr "ក្ដារចុច"
 
-#: kcmodule/bluedevildevices.cpp:625
+#: kcmodule/bluedevildevices.cpp:655
 msgctxt "This device is a Mouse"
 msgid "Mouse"
 msgstr "កណ្ដុរ"
 
-#: kcmodule/bluedevildevices.cpp:628
+#: kcmodule/bluedevildevices.cpp:658
 msgctxt "This device is a Camera"
 msgid "Camera"
 msgstr "ម៉ាស៊ីនថតរូប"
 
-#: kcmodule/bluedevildevices.cpp:631
+#: kcmodule/bluedevildevices.cpp:661
 msgctxt "This device is a Printer"
 msgid "Printer"
 msgstr "ម៉ាស៊ីន​បោះពុម្ព"
 
-#: kcmodule/bluedevildevices.cpp:634
+#: kcmodule/bluedevildevices.cpp:664
 msgctxt "This device is a Joypad"
 msgid "Joypad"
 msgstr "Joypad"
 
-#: kcmodule/bluedevildevices.cpp:637
+#: kcmodule/bluedevildevices.cpp:667
 msgctxt "This device is a Tablet"
 msgid "Tablet"
 msgstr "Tablet"
 
-#: kcmodule/bluedevildevices.cpp:643
+#: kcmodule/bluedevildevices.cpp:673
 #, kde-format
 msgctxt "Type of remote device (e.g. Camera, Mouse, Headset...)"
 msgid "Type: %1"
 msgstr "ប្រភេទ ៖ %1"
 
-#: kcmodule/bluedeviltransfer.cpp:53
+#: kcmodule/bluedeviltransfer.cpp:50
 msgid "Bluetooth Transfer"
 msgstr "ការ​ផ្ទេរ​ប៊្លូធូស"
 
-#: kcmodule/bluedeviltransfer.cpp:55
+#: kcmodule/bluedeviltransfer.cpp:51
 msgid "Bluetooth Transfer Control Panel Module"
 msgstr "ម៉ូឌុល​ផ្ទាំង​បញ្ជា​អំពី​ការផ្ទេរ​ប៊្លូធូស"
 
-#: kcmodule/bluedeviltransfer.cpp:77
+#: kcmodule/bluedeviltransfer.cpp:72
 msgctxt "'Auto accept' option value"
 msgid "Never"
 msgstr "គ្មាន"
 
-#: kcmodule/bluedeviltransfer.cpp:78
+#: kcmodule/bluedeviltransfer.cpp:73
 msgctxt "'Auto accept' option value"
 msgid "Trusted devices"
 msgstr "ឧបករណ៍​ដែល​ជឿ​ទុកចិត្ត"
 
-#: kcmodule/bluedeviltransfer.cpp:79
+#: kcmodule/bluedeviltransfer.cpp:74
 msgctxt "'Auto accept' option value"
 msgid "All devices"
 msgstr "ឧបករណ៍​ទាំងអស់"
 
-#: kcmodule/devicedetails.cpp:46
+#: kcmodule/devicedetails.cpp:44
 msgctxt "Name of the device"
 msgid "Name"
 msgstr "ឈ្មោះ"
 
-#: kcmodule/devicedetails.cpp:47
+#: kcmodule/devicedetails.cpp:45
 msgctxt "Alias of the device"
 msgid "Alias"
 msgstr "ឈ្មោះ​ក្លែងក្លាយ"
 
-#: kcmodule/devicedetails.cpp:51
+#: kcmodule/devicedetails.cpp:49
 msgctxt "Physical address of the device"
 msgid "Address"
 msgstr "អាសយដ្ឋាន"
 
-#: kcmodule/devicedetails.cpp:54
+#: kcmodule/devicedetails.cpp:52
 msgctxt "Device is paired"
 msgid "Paired"
 msgstr "ដាក់​ជា​គូរ"
 
-#: kcmodule/devicedetails.cpp:56
+#: kcmodule/devicedetails.cpp:54
 msgctxt "Device is blocked"
 msgid "Blocked"
 msgstr "បាន​ទប់​ស្កាត់"
 
-#: kcmodule/devicedetails.cpp:58
+#: kcmodule/devicedetails.cpp:56
 msgctxt "Device is trusted"
 msgid "Trusted"
 msgstr "ដែល​ជឿ​ទុកចិត្ត"
 
-#: kcmodule/systemcheck.cpp:64 kio/bluetooth/kiobluetooth.cpp:75
-#: kio/bluetooth/kiobluetooth.cpp:192
+#: kcmodule/systemcheck.cpp:68 kio/bluetooth/kiobluetooth.cpp:81
+#: kio/bluetooth/kiobluetooth.cpp:199
 msgid "No Bluetooth adapters have been found."
 msgstr "រក​មិន​ឃើញ​អាដាប់ទ័រ​របស់​ប៊្លូធូស​ឡើយ ។"
 
-#: kcmodule/systemcheck.cpp:70
+#: kcmodule/systemcheck.cpp:74
 #, fuzzy
 #| msgid "No Bluetooth adapters have been found."
 msgid "Your Bluetooth adapter is powered off."
 msgstr "រក​មិន​ឃើញ​អាដាប់ទ័រ​របស់​ប៊្លូធូស​ឡើយ ។"
 
-#: kcmodule/systemcheck.cpp:72 kcmodule/systemcheck.cpp:81
-#: kcmodule/systemcheck.cpp:92 kcmodule/systemcheck.cpp:103
+#: kcmodule/systemcheck.cpp:76 kcmodule/systemcheck.cpp:85
+#: kcmodule/systemcheck.cpp:96 kcmodule/systemcheck.cpp:107
 msgctxt "Action to fix a problem"
 msgid "Fix it"
 msgstr "ជួសជុល​វា"
 
-#: kcmodule/systemcheck.cpp:84
+#: kcmodule/systemcheck.cpp:88
 msgid "Your default Bluetooth adapter is not visible for remote devices."
 msgstr "អាដាប់ទ័រ​នៃ​ប៊្លូធូស​លំនាំដើម​របស់​អ្នក​មិន​អាច​មើល​ឃើញ​ឧបករណ៍​ពី​ចម្ងាយ​បាន​ទេ ។"
 
-#: kcmodule/systemcheck.cpp:95
+#: kcmodule/systemcheck.cpp:99
 msgid "Interaction with Bluetooth system is not optimal."
 msgstr "អន្តរកម្ម​ជាមួយ​ប្រព័ន្ធ​របស់​ប៊្លូធូស​គឺ​មិន​ប្រសើរ​ឡើយ ។"
 
-#: kcmodule/systemcheck.cpp:106
+#: kcmodule/systemcheck.cpp:110
 msgid "Bluetooth is not completely enabled."
 msgstr "ប៊្លូធូស​មិន​ត្រូវ​បាន​បើក​ដោយ​ពេញលេញ​​​ឡើយ ។"
 
@@ -542,68 +559,76 @@ msgstr "ព្រម​ទទួល​ដោយ​ស្វ័យប្រវត
 msgid "Receive files:"
 msgstr "ទទួល​ឯកសារ ៖"
 
-#: kio/bluetooth/kiobluetooth.cpp:56 monolithic/monolithic.cpp:144
+#: kio/bluetooth/kiobluetooth.cpp:40
+msgid "kiobluetooth"
+msgstr "kiobluetooth"
+
+#: kio/bluetooth/kiobluetooth.cpp:64 monolithic/monolithic.cpp:144
 msgid "Send File"
 msgstr "ផ្ញើ​ឯកសារ"
 
-#: kio/bluetooth/kiobluetooth.cpp:62
+#: kio/bluetooth/kiobluetooth.cpp:70
 msgid "Browse Files"
 msgstr "រកមើល​ឯកសារ"
 
-#: kio/bluetooth/kiobluetooth.cpp:95
+#: kio/bluetooth/kiobluetooth.cpp:99
 msgid "Retrieving services..."
 msgstr "កំពុង​ភ្ជាប់​សេវា..."
 
-#: kio/bluetooth/kiobluetooth.cpp:102
+#: kio/bluetooth/kiobluetooth.cpp:106
 msgid "This address is unavailable."
 msgstr ""
 
-#: kio/bluetooth/kiobluetooth.cpp:158
+#: kio/bluetooth/kiobluetooth.cpp:163
 #, fuzzy
 #| msgid "Scanning for remote devices..."
 msgid "Scanning for new devices..."
 msgstr "កំពុង​វិភាគ​រក​ឧបករណ៍​ពី​ចម្ងាយ..."
 
-#: kio/obexftp/daemon/ObexFtpDaemon.cpp:58
 #: kio/obexftp/daemon/ObexFtpDaemon.cpp:60
+#: kio/obexftp/daemon/ObexFtpDaemon.cpp:62
 msgid "ObexFtp Daemon"
 msgstr "ដេមិន​របស់ ObexFtp"
 
-#: kio/obexftp/kio_obexftp.cpp:112
+#: kio/obexftp/kio_obexftp.cpp:42
+msgid "kioobexftp"
+msgstr "kioobexftp"
+
+#: kio/obexftp/kio_obexftp.cpp:103
 msgid "Obexd service is not running."
 msgstr ""
 
-#: kio/obexftp/kio_obexftp.cpp:173
+#: kio/obexftp/kio_obexftp.cpp:164
 msgid "Retrieving information from remote device..."
 msgstr "កំពុង​យក​ព័ត៌មាន​ពី​ឧបករណ៍​ពី​ចម្ងាយ..."
 
-#: kio/obexftp/kio_obexftp.cpp:269
+#: kio/obexftp/kio_obexftp.cpp:260
 msgid "Connecting to the device"
 msgstr "ការ​តភ្ជាប់​ទៅកាន់​ឧបករណ៍"
 
-#: kio/obexftp/kio_obexftp.cpp:546
+#: kio/obexftp/kio_obexftp.cpp:540
 msgid "Phone memory"
 msgstr ""
 
-#: kio/obexftp/kio_obexftp.cpp:549
+#: kio/obexftp/kio_obexftp.cpp:543
 msgid "External memory"
 msgstr ""
 
-#: monolithic/main.cpp:33 monolithic/main.cpp:35 monolithic/main.cpp:51
+#: monolithic/main.cpp:28
 msgid "Bluetooth"
 msgstr "ប៊្លូធូស"
 
-#: monolithic/main.cpp:41
+#: monolithic/main.cpp:32
 msgid "Developer"
 msgstr "អ្នក​អភិវឌ្ឍន៍"
 
-#: monolithic/monolithic.cpp:44
+#: monolithic/monolithic.cpp:42
 #, fuzzy
 #| msgid "Browse devices"
 msgid "Browse device"
 msgstr "រកមើល​ឧបករណ៍"
 
-#: monolithic/monolithic.cpp:45 sendfile/sendfilewizard.cpp:61
+#: monolithic/monolithic.cpp:43 sendfile/sendfilewizard.cpp:62
 msgid "Send Files"
 msgstr "ផ្ញើ​ឯកសារ"
 
@@ -647,21 +672,21 @@ msgid_plural "%1 connected devices"
 msgstr[0] ""
 msgstr[1] "%1 ឧបករណ៍​ដែល​បាន​តភ្ជាប់"
 
-#: monolithic/monolithic.cpp:365
+#: monolithic/monolithic.cpp:367
 msgid "No adapters found"
 msgstr "រក​មិន​ឃើញ​អាដាប់ទ័រ​ឡើយ"
 
-#: monolithic/monolithic.cpp:405
+#: monolithic/monolithic.cpp:407
 msgctxt "When the bluetooth is enabled and powered"
 msgid "Bluetooth is On"
 msgstr "បើក​ប៊្លូធូស"
 
-#: monolithic/monolithic.cpp:407
+#: monolithic/monolithic.cpp:409
 msgctxt "When the bluetooth is disabled or not powered"
 msgid "Bluetooth is Off"
 msgstr "បិទ​ប៊្លូធូស"
 
-#: monolithic/monolithic.cpp:458
+#: monolithic/monolithic.cpp:460
 #, fuzzy
 #| msgctxt "Action"
 #| msgid "Connect"
@@ -669,14 +694,14 @@ msgctxt "Re-connect to a bluetooth device"
 msgid "Re-connect"
 msgstr "តភ្ជាប់"
 
-#: monolithic/monolithic.cpp:459
+#: monolithic/monolithic.cpp:461
 #, fuzzy
 #| msgid "Disconnect"
 msgctxt "Disconnect to a bluetooth device"
 msgid "Disconnect"
 msgstr "ផ្ដាច់"
 
-#: monolithic/monolithic.cpp:465
+#: monolithic/monolithic.cpp:467
 #, fuzzy
 #| msgctxt "Action"
 #| msgid "Connect"
@@ -684,37 +709,37 @@ msgctxt "Connect to a bluetooth device"
 msgid "Connect"
 msgstr "តភ្ជាប់"
 
-#: sendfile/main.cpp:38 sendfile/main.cpp:40 sendfile/main.cpp:64
+#: sendfile/main.cpp:32
 msgid "Bluetooth Send File Helper"
 msgstr "អ្នក​ជំនួយ​ឯកសារ​​ផ្ញើ​របស់​ប៊្លូធូស"
 
-#: sendfile/main.cpp:54 sendfile/main.cpp:57
+#: sendfile/main.cpp:42 sendfile/main.cpp:43
 msgid "Device UUID where the files will be sent"
 msgstr "ឧបករណ៍​ UUID ដែល​ឯកសារ​នឹង​ត្រូវ​បាន​ផ្ញើ"
 
-#: sendfile/main.cpp:60
+#: sendfile/main.cpp:44
 msgid "Files that will be sent"
 msgstr "ឯកសារ​ដែល​នឹង​​ត្រូវ​បាន​ផ្ញើ"
 
-#: sendfile/pages/connectingpage.cpp:42
+#. i18n: ectx: property (text), widget (QLabel, connLabel)
+#: sendfile/pages/connecting.ui:17
+#, no-c-format, kde-format
+msgid "Connecting to: %1"
+msgstr "តភ្ជាប់​ទៅកាន់ ៖ %1"
+
+#: sendfile/pages/connectingpage.cpp:41
 #, kde-format
 msgctxt "Connecting to a Bluetooth device"
 msgid "Connecting to %1..."
 msgstr "កំពុង​តភ្ជាប់​ទៅកាន់ %1..."
 
-#: sendfile/pages/selectdeviceandfilespage.cpp:80
-#, fuzzy
-#| msgid "Send files..."
-msgid "Open file..."
-msgstr "ផ្ញើ​ឯកសារ..."
-
 #. i18n: ectx: property (text), widget (QLabel, selectLbl)
-#: sendfile/pages/selectdeviceandfilespage.cpp:93
+#: sendfile/pages/selectdeviceandfilespage.cpp:87
 #: sendfile/pages/selectfilediscover.ui:112
 msgid "Select one or more files:"
 msgstr "ជ្រើស​ឯកសារ​មួយ ឬ​ច្រើន ៖"
 
-#: sendfile/pages/selectdeviceandfilespage.cpp:95
+#: sendfile/pages/selectdeviceandfilespage.cpp:89
 #, kde-format
 msgid "Selected files: <b>%1</b>"
 msgstr "បាន​ជ្រើស​ឯកសារ ៖ <b>%1</b>"
@@ -729,64 +754,53 @@ msgstr "ជ្រើស​ឧបករណ៍​ពី​បញ្ជី ៖"
 msgid "Scanning"
 msgstr "ការ​វិភាគរក"
 
-#: sendfile/sendfilesjob.cpp:75 sendfile/sendfilesjob.cpp:187
+#: sendfile/sendfilesjob.cpp:74 sendfile/sendfilesjob.cpp:177
 msgid "Sending file over Bluetooth"
 msgstr "ផ្ញើ​ឯកសារ​ទៅកាន់​ប៊្លូធូស"
 
-#: sendfile/sendfilesjob.cpp:98
-msgid "Creating OBEX session failed"
-msgstr ""
-
-#: sendfile/sendfilewizard.cpp:59
+#: sendfile/sendfilewizard.cpp:60
 msgid "Bluetooth Send Files"
 msgstr "ផ្ញើ​ឯកសារ​របស់​ប៊្លូធូស"
 
-#: sendfile/sendfilewizard.cpp:62
-#, fuzzy
-#| msgctxt "Deny the incoming file transfer"
-#| msgid "Cancel"
-msgid "Cancel"
-msgstr "បោះបង់"
-
 #. i18n: ectx: label, entry (enabled), group (General)
-#: settings/filereceiver.kcfg:11
+#: settings/filereceiver.kcfg:13
 msgid "Enable or disable receiving files"
 msgstr "បិទ ឬ​បើក​ការ​ទទួល​ឯកសារ"
 
 #. i18n: ectx: label, entry (saveUrl), group (General)
-#: settings/filereceiver.kcfg:15
+#: settings/filereceiver.kcfg:17
 msgid "Save received files to:"
 msgstr "រក្សាទុក​ឯកសារ​ដែល​បាន​ទទួល​ទៅកាន់ ៖"
 
 #. i18n: ectx: label, entry (autoAccept), group (General)
-#: settings/filereceiver.kcfg:19
+#: settings/filereceiver.kcfg:21
 msgid "Whether allow to modify shared files"
 msgstr "ទោះជា​អនុញ្ញាត​ឲ្យ​កែប្រែ​ឯកសារ​ដែល​បាន​ចែករំលែក​ក៏ដោយ"
 
 #. i18n: ectx: label, entry (enableGlobalBluetooth), group (General)
-#: settings/global.kcfg:9
+#: settings/global.kcfg:10
 msgid "Enable or disable the global KDE Bluetooth integration"
 msgstr "បើក ឬ​បិទ​ការ​រួមបញ្ចូល​ប៊្លូធូស​របស់ KDE សកល"
 
-#: wizard/bluewizard.cpp:46
+#: wizard/bluewizard.cpp:42
 msgid "Bluetooth Device Wizard"
 msgstr "អ្នក​ជំនួយការ​ឧបករណ៍​អំពី​ប៊្លូធូស"
 
-#: wizard/bluewizard.cpp:86
+#: wizard/bluewizard.cpp:70
 msgctxt "Action to go to the next page on the wizard"
 msgid "Next"
 msgstr "បន្ទាប់"
 
-#: wizard/bluewizard.cpp:87
+#: wizard/bluewizard.cpp:71
 msgctxt "Action to finish the wizard"
 msgid "Finish"
 msgstr "បញ្ចប់"
 
-#: wizard/main.cpp:37 wizard/main.cpp:39 wizard/main.cpp:54
+#: wizard/main.cpp:30
 msgid "Bluetooth Wizard"
 msgstr "អ្នក​ជំនួយ​ការ​អំពី​ប៊្លូធូស"
 
-#: wizard/main.cpp:57
+#: wizard/main.cpp:39
 msgid "Device to pair with"
 msgstr "ឧបករណ៍​ត្រូវ​ដាក់​ជា​គូ​ជាមួយ"
 
@@ -805,27 +819,27 @@ msgstr "PIN ដែល​ធ្វើ​ដោយ​ដៃ ៖"
 msgid "0000"
 msgstr "0000"
 
-#: wizard/pages/discoverpage.cpp:44
+#: wizard/pages/discoverpage.cpp:40
 msgid "Select a device"
 msgstr "ជ្រើស​ឧបករណ៍"
 
-#: wizard/pages/fail.cpp:51
+#: wizard/pages/fail.cpp:48
 msgctxt ""
 "Button offered when the wizard fail. This button will restart the wizard"
 msgid "Restart the wizard"
 msgstr "ចាប់ផ្ដើម​អ្នក​ជំនួយ​ការ​ឡើងវិញ"
 
-#: wizard/pages/fail.cpp:55
+#: wizard/pages/fail.cpp:52
 msgctxt "Button that closes the wizard"
 msgid "Close"
 msgstr "បិទ"
 
-#: wizard/pages/fail.cpp:66
+#: wizard/pages/fail.cpp:63
 msgctxt "This string is shown when the wizard fail"
 msgid "The setup of the device has failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រៀបចំ​ឧបករណ៍"
 
-#: wizard/pages/fail.cpp:68
+#: wizard/pages/fail.cpp:65
 #, kde-format
 msgid "The setup of %1 has failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រៀបចំ​ %1"
@@ -837,11 +851,11 @@ msgid ""
 msgstr "សូម​ណែនាំ PIN នៅ​ក្នុង​ក្ដារចុច​របស់​អ្នក នៅ​ពេល​វា​លេចឡើង​ ហើយ​ចុច​បញ្ចូល"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: wizard/pages/legacypairing.ui:108 wizard/pages/ssppairing.cpp:108
+#: wizard/pages/legacypairing.ui:108 wizard/pages/ssppairing.cpp:99
 msgid "Please introduce the PIN in your device when it appears"
 msgstr "សូម​ណែនាំ​ PIN នៅ​​ក្នុង​ឧបករណ៍​របស់​អ្នក នៅ​ពេល​វា​លេចឡើង"
 
-#: wizard/pages/legacypairingdatabase.cpp:56 wizard/pages/ssppairing.cpp:67
+#: wizard/pages/legacypairingdatabase.cpp:48 wizard/pages/ssppairing.cpp:60
 #, fuzzy, kde-format
 #| msgctxt "Connecting to a Bluetooth device"
 #| msgid "Connecting to %1..."
@@ -855,21 +869,21 @@ msgstr "កំពុង​តភ្ជាប់​ទៅកាន់ %1..."
 msgid "Connecting to:"
 msgstr "តភ្ជាប់​ទៅកាន់ ៖ %1"
 
-#: wizard/pages/ssppairing.cpp:83
+#: wizard/pages/ssppairing.cpp:76
 msgid "Matches"
 msgstr "ដំណូច"
 
-#: wizard/pages/ssppairing.cpp:87
+#: wizard/pages/ssppairing.cpp:78
 msgid "Does not match"
 msgstr "មិន​ផ្គូផ្គង"
 
-#: wizard/pages/ssppairing.cpp:100
+#: wizard/pages/ssppairing.cpp:91
 #, kde-format
 msgid ""
 "Please, confirm that the PIN displayed on \"%1\" matches the wizard one."
 msgstr "សូម​ បញ្ជាក់​ថា​ PIN ដែល​បាន​បង្ហាញ​នៅ​លើ​​ \"%1\" មាន​ការ​ផ្គូផ្គង​អ្នក​ជំនួយការ​ ។"
 
-#: wizard/pages/success.cpp:57
+#: wizard/pages/success.cpp:55
 #, fuzzy
 #| msgctxt "This string is shown when the wizard fail"
 #| msgid "The setup of the device has failed"
@@ -877,40 +891,32 @@ msgctxt "This string is shown when the wizard succeeds"
 msgid "The setup of the device has succeeded"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រៀបចំ​ឧបករណ៍"
 
-#: wizard/pages/success.cpp:59
+#: wizard/pages/success.cpp:57
 #, fuzzy, kde-format
 #| msgid "The setup of %1 has failed"
 msgid "The setup of %1 has succeeded"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រៀបចំ​ %1"
 
-#~ msgctxt ""
-#~ "Showed in a notification when the Bluetooth mode is going to be changed "
-#~ "(for example to flight mode), the %1 is the name of the mode"
-#~ msgid "Change Bluetooth mode to '%1'?"
-#~ msgstr "ផ្លាស់ប្ដូរ​របៀប​ប៊្លូធូស​ទៅ​ '%1' ?"
+#, fuzzy
+#~| msgid "Bluetooth Transfer"
+#~ msgid "Bluetooth transfer failed"
+#~ msgstr "ការ​ផ្ទេរ​ប៊្លូធូស"
 
-#~ msgctxt "Confirm the bluetooth mode change, shown in a notification button"
-#~ msgid "Confirm"
-#~ msgstr "អះអាង"
+#, fuzzy
+#~| msgid "Save files in:"
+#~ msgid "Saving file failed"
+#~ msgstr "រក្សាទុក​ឯកសារ​ក្នុង ៖"
 
-#~ msgctxt "Deny the bluetooth mdoe change, shown in a notification"
-#~ msgid "Deny"
-#~ msgstr "បដិសេធ"
+#, fuzzy
+#~| msgid "Send files..."
+#~ msgid "Open file..."
+#~ msgstr "ផ្ញើ​ឯកសារ..."
 
-#~ msgid "KDE Bluetooth System"
-#~ msgstr "ប្រព័ន្ធ​ប៊្លូធូស​របស់ KDE"
-
-#~ msgid "Pick a new alias for %1"
-#~ msgstr "រើស​ឈ្មោះ​ក្លែងក្លាយ​ថ្មី​​មួយ​​សម្រាប់ %1"
-
-#~ msgid "kiobluetooth"
-#~ msgstr "kiobluetooth"
-
-#~ msgid "kioobexftp"
-#~ msgstr "kioobexftp"
-
-#~ msgid "Connecting to: %1"
-#~ msgstr "តភ្ជាប់​ទៅកាន់ ៖ %1"
+#, fuzzy
+#~| msgctxt "Deny the incoming file transfer"
+#~| msgid "Cancel"
+#~ msgid "Cancel"
+#~ msgstr "បោះបង់"
 
 #, fuzzy
 #~| msgid "Bluetooth is not completely enabled."
