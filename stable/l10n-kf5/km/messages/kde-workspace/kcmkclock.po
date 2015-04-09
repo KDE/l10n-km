@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkclock\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-01-13 12:18+0000\n"
+"POT-Creation-Date: 2015-03-05 09:36+0000\n"
 "PO-Revision-Date: 2012-06-13 15:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -33,40 +33,44 @@ msgstr "កាលបរិច្ឆេទ និង​ពេលវេលា"
 
 #. i18n: ectx: property (text), widget (QCheckBox, setDateTimeAuto)
 #: dateandtime.ui:30
-msgid "Set date and time &automatically:"
+#, fuzzy
+#| msgid "Set date and time &automatically:"
+msgid "Set date and time &automatically"
 msgstr "កំណត់​កាល​បរិច្ឆេទ និង​ពេល​វេលា​ស្វ័យប្រវត្តិ ៖"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), widget (QLabel, timeServerLabel)
 #: dateandtime.ui:53
-msgid "Time server:"
+#, fuzzy
+#| msgid "Time server:"
+msgid "&Time server:"
 msgstr "ម៉ាស៊ីន​បម្រើ​ពេលវេលា ៖"
 
 #. i18n: ectx: property (whatsThis), widget (KDatePicker, cal)
-#: dateandtime.ui:83
+#: dateandtime.ui:86
 msgid "Here you can change the system date's day of the month, month and year."
 msgstr "នៅ​ទីនេះ​អ្នក​អាច​ផ្លាស់ប្តូរ​ថ្ងៃ​របស់​ខែ ខែ​ និង​ឆ្នាំ​នៃ​កាល​បរិច្ឆេទ​របស់​ប្រព័ន្ធ ។"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
-#: dateandtime.ui:116
+#: dateandtime.ui:122
 msgid "Time Zone"
 msgstr "​តំបន់​ពេល​វេលា"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: dateandtime.ui:122
+#: dateandtime.ui:128
 msgid "To change the local time zone, select your area from the list below."
 msgstr "ដើម្បី​ផ្លាស់ប្ដូរ​តំបន់​ពេលវេលា​មូលដ្ឋាន ជ្រើស​តំបន់​របស់​អ្នក​ពី​បញ្ជីខាង​ក្រោម ។"
 
 #. i18n: ectx: property (text), widget (QLabel, m_local)
-#: dateandtime.ui:145
+#: dateandtime.ui:151
 msgid "Current local time zone:"
 msgstr "តំបន់​ពេលវេលា​​មូលដ្ឋាន​បច្ចុប្បន្ន ៖"
 
 #. i18n: ectx: property (placeholderText), widget (KTreeWidgetSearchLine, tzonesearch)
-#: dateandtime.ui:155
+#: dateandtime.ui:161
 msgid "Search"
 msgstr "ស្វែងរក"
 
-#: dtime.cpp:77
+#: dtime.cpp:81
 msgid ""
 "No NTP utility has been found. Install 'ntpdate' or 'rdate' command to "
 "enable automatic updating of date and time."
@@ -74,7 +78,7 @@ msgstr ""
 "រក​មិន​ឃើញ​កា​រប្រើប្រាស់ NTP ទេ ។ សូម​ដំឡើង 'ntpdate' ឬ 'rdate' ដើម្បី​បើក​ការ​ធ្វើ​បច្ចុប្បន្ន​ភាព​"
 "ពេលវេលា និងកាលបរិច្ឆេទ​ដោយ​ស្វ័យ​ប្រវត្តិ ។"
 
-#: dtime.cpp:107
+#: dtime.cpp:112
 msgid ""
 "Here you can change the system time. Click into the hours, minutes or "
 "seconds field to change the relevant value, either using the up and down "
@@ -83,44 +87,50 @@ msgstr ""
 "នៅ​ទីនេះ​អ្នក​អាច​ផ្លាស់ប្តូរ​ពេល​វេលា​របស់​ប្រព័ន្ធ ។ ចុច​ក្នុង​វាល ម៉ោង នាទី ឬ វិនាទី​\n"
 "ដើម្បី​ផ្លាស់ប្តូរ​តម្លៃ ដោយ​ប្រើ​ប៊ូតុង​ឡើង​ចុះ​នៅ​ខាង​ស្តាំ ឬ​បញ្ចូល​តម្លៃ​ថ្មី ។"
 
-#: dtime.cpp:129
+#: dtime.cpp:134
 #, fuzzy, kde-format
+#| msgid "Current local time zone:"
 msgctxt "%1 is name of time zone"
 msgid "Current local time zone: %1"
 msgstr "តំបន់​ពេលវេលា​​មូលដ្ឋាន​បច្ចុប្បន្ន ៖"
 
-#: dtime.cpp:133
+#: dtime.cpp:138
 #, fuzzy, kde-format
+#| msgid "Current local time zone: %1 (%2)"
 msgctxt "%1 is name of time zone, %2 is its abbreviation"
 msgid "Current local time zone: %1 (%2)"
 msgstr "តំបន់​ពេលវេលា​មូលដ្ឋាន​បច្ចុប្បន្ន​ ៖ %1 (%2)"
 
-#: dtime.cpp:201
+#: dtime.cpp:218
+#, fuzzy
+#| msgid ""
+#| "Public Time Server (pool.ntp.org),asia.pool.ntp.org,europe.pool.ntp.org,"
+#| "north-america.pool.ntp.org,oceania.pool.ntp.org"
 msgid ""
-"Public Time Server (pool.ntp.org),asia.pool.ntp.org,europe.pool.ntp.org,"
-"north-america.pool.ntp.org,oceania.pool.ntp.org"
+"Public Time Server (pool.ntp.org),        asia.pool.ntp.org,        europe."
+"pool.ntp.org,        north-america.pool.ntp.org,        oceania.pool.ntp.org"
 msgstr ""
 "ម៉ាស៊ីន​បម្រើ​ពេល​វេលា​សាធារណៈ (pool.ntp.org),asia.pool.ntp.org,europe.pool.ntp.org,"
 "north-america.pool.ntp.org,oceania.pool.ntp.org"
 
-#: dtime.cpp:283
+#: dtime.cpp:288
 #, kde-format
 msgid "Unable to contact time server: %1."
 msgstr "មិន​អាច​ទាក់ទង​ម៉ាស៊ីន​បម្រើ​ពេល​វេលា ៖ %1 ។"
 
-#: dtime.cpp:287
+#: dtime.cpp:292
 msgid "Can not set date."
 msgstr "មិន​អាច​កំណត់​កាល​បរិច្ឆេទ ។"
 
-#: dtime.cpp:290
+#: dtime.cpp:295
 msgid "Error setting new time zone."
 msgstr "កំហុស​ក្នុងកា​រកំណត់​តំបន់​ពេលវេលា​ថ្មី ។"
 
-#: dtime.cpp:291
+#: dtime.cpp:296
 msgid "Time zone Error"
 msgstr "កំហុស​តំបន់​ពេល​វេលា"
 
-#: dtime.cpp:308
+#: dtime.cpp:313
 msgid ""
 "<h1>Date & Time</h1> This system settings module can be used to set the "
 "system date and time. As these settings do not only affect you as a user, "
@@ -135,39 +145,39 @@ msgstr ""
 "មិន​មាន​ពាក្យ​សម្ងាត់​ជា root ប៉ុន្តែ​ចង់​ឲ្យ​ពេល​វេលា​ប្រព័ន្ធ​របស់​អ្នក​ត្រឹមត្រូវ សូម​ទាក់ទង​អ្នក​គ្រប់គ្រង​ប្រព័ន្ធ​"
 "របស់​អ្នក ។"
 
-#: main.cpp:50
+#: main.cpp:62
 msgid "KDE Clock Control Module"
 msgstr "ម៉ូឌុល​ត្រួត​ពិនិត្យ​នាឡិកា​របស់ KDE"
 
-#: main.cpp:52
+#: main.cpp:64
 msgid "(c) 1996 - 2001 Luca Montecchiani"
 msgstr "រក្សា​សិទ្ធិ​ឆ្នាំ ១៩៩៦-២០០១ ដោយ Luca Montecchiani"
 
-#: main.cpp:54
+#: main.cpp:66
 msgid "Luca Montecchiani"
 msgstr "Luca Montecchiani"
 
-#: main.cpp:54
+#: main.cpp:66
 msgid "Original author"
 msgstr "អ្នក​និពន្ធ​ដើម"
 
-#: main.cpp:55
+#: main.cpp:67
 msgid "Paul Campbell"
 msgstr "Paul Campbell"
 
-#: main.cpp:55
+#: main.cpp:67
 msgid "Current Maintainer"
 msgstr "អ្នក​ថែទាំ​បច្ចុប្បន្ន"
 
-#: main.cpp:56
+#: main.cpp:68
 msgid "Benjamin Meyer"
 msgstr "Benjamin Meyer"
 
-#: main.cpp:56
+#: main.cpp:68
 msgid "Added NTP support"
 msgstr "ការ​គាំទ្រ NTP ដែល​បាន​បន្ថែម"
 
-#: main.cpp:58
+#: main.cpp:70
 msgid ""
 "<h1>Date & Time</h1> This control module can be used to set the system date "
 "and time. As these settings do not only affect you as a user, but rather the "
@@ -181,10 +191,26 @@ msgstr ""
 "មិន​មាន​ពាក្យ​សម្ងាត់​ជា root ប៉ុន្តែ​ចង់​ឲ្យ​ពេល​វេលា​ប្រព័ន្ធ​របស់​អ្នក​ត្រឹមត្រូវ សូម​ទាក់ទង​អ្នក​គ្រប់គ្រង​ប្រព័ន្ធ​"
 "របស់​អ្នក ។"
 
-#: main.cpp:92
+#: main.cpp:125
 #, kde-format
 msgid "Unable to authenticate/execute the action: %1, %2"
 msgstr "មិនអាច​ផ្ទៀងផ្ទាត់/ប្រតិបត្តិ​សកម្មភាព ៖ %1, %2"
+
+#: main.cpp:144
+msgid "Unable to change NTP settings"
+msgstr ""
+
+#: main.cpp:156
+#, fuzzy
+#| msgid "Unable to contact time server: %1."
+msgid "Unable to set current time"
+msgstr "មិន​អាច​ទាក់ទង​ម៉ាស៊ីន​បម្រើ​ពេល​វេលា ៖ %1 ។"
+
+#: main.cpp:166
+#, fuzzy
+#| msgid "Unable to contact time server: %1."
+msgid "Unable to set timezone"
+msgstr "មិន​អាច​ទាក់ទង​ម៉ាស៊ីន​បម្រើ​ពេល​វេលា ៖ %1 ។"
 
 #~ msgid "kcmclock"
 #~ msgstr "kcmclock"
