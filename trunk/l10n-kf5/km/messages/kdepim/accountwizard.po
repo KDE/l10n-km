@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: accountwizard\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-05-06 08:42+0000\n"
+"POT-Creation-Date: 2015-05-08 08:51+0000\n"
 "PO-Revision-Date: 2012-07-09 11:22+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -27,20 +27,29 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info"
 
-#: configfile.cpp:46
+#: configfile.cpp:48
 #, kde-format
 msgid "Writing config file for %1..."
 msgstr "កំពុង​សរសេរ​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ​សម្រាប់ %1... "
 
-#: configfile.cpp:58
+#: configfile.cpp:65
 #, kde-format
 msgid "Config file for %1 is writing."
 msgstr "ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ​សម្រាប់ %1 កំពុង​សរសេរ ។"
 
-#: configfile.cpp:63
+#: configfile.cpp:70
 #, kde-format
 msgid "Config file for %1 was not changed."
 msgstr "ឯកសារកំណត់​រចនាសម្ព័ន្ធ​សម្រាប់ %1 មិន​ត្រូវ​បាន​ផ្លាស់ប្ដូរ​ទេ ។"
+
+#: configfile.cpp:101
+msgid "No given name for the configuration"
+msgstr ""
+
+#: configfile.cpp:112
+#, kde-format
+msgid "Unknown configurationname '%1'"
+msgstr ""
 
 #: dialog.cpp:55
 msgid "Provide personal data"
@@ -79,15 +88,15 @@ msgstr "គ្មាន​ឈ្មោះ"
 msgid "Identity removed."
 msgstr "បាន​យក​អត្តសញ្ញាណ​ចេញ ។"
 
-#: ispdb/ispdb.cpp:69
+#: ispdb/ispdb.cpp:378
 msgid "Lookup configuration: Email provider"
 msgstr ""
 
-#: ispdb/ispdb.cpp:74
+#: ispdb/ispdb.cpp:382
 msgid "Lookup configuration: Trying common server name"
 msgstr ""
 
-#: ispdb/ispdb.cpp:79
+#: ispdb/ispdb.cpp:386
 msgid "Lookup configuration: Mozilla database"
 msgstr ""
 
@@ -117,17 +126,34 @@ msgstr ""
 msgid "Tries to fetch the settings for that email address"
 msgstr ""
 
-#: ldap.cpp:37
+#: ldap.cpp:55
 msgid "Setting up LDAP server..."
 msgstr "កំពុង​រៀបចំ​ម៉ាស៊ីន​បម្រើ LDAP..."
 
-#: ldap.cpp:89
+#: ldap.cpp:58
+#, kde-format
+msgid "Needed parameters are missing for ldap config server='%1'"
+msgstr ""
+
+#: ldap.cpp:142
 msgid "LDAP set up."
 msgstr "រៀបចំ LDAP ។"
 
-#: ldap.cpp:94
+#: ldap.cpp:155
+msgid "Unknown security setting for LDAP server"
+msgstr ""
+
+#: ldap.cpp:162
 msgid "LDAP not configuring."
 msgstr "LDAP មិន​កំណត់​រចនាសម្ព័ន្ធ​ទេ ។"
+
+#: ldap.cpp:198
+msgid "Removed LDAP entry."
+msgstr ""
+
+#: ldap.cpp:205
+msgid "No config found to edit"
+msgstr ""
 
 #: loadpage.cpp:49
 #, kde-format
@@ -201,54 +227,54 @@ msgstr "Pop3, %1"
 msgid "Fetching provider list..."
 msgstr "កំពុង​​ទៅយក​បញ្ជី​របស់​​ក្រុមហ៊ុន​ផ្ដល់..."
 
-#: resource.cpp:83
+#: resource.cpp:84
 #, kde-format
 msgid "Resource type '%1' is not available."
 msgstr "ប្រភេទ​ធនធាន '%1' មិនអាច​ប្រើបាន​ទេ ។"
 
-#: resource.cpp:93
+#: resource.cpp:97
 #, kde-format
 msgid "Resource '%1' is already set up."
 msgstr "ធនធាន '%1' ត្រូវ​បាន​រៀបចំ​រួច​ហើយ ។"
 
-#: resource.cpp:99
+#: resource.cpp:103
 #, kde-format
 msgid "Creating resource instance for '%1'..."
 msgstr "កំពុង​បង្កើត​​ធាតុ​ធនធាន​សម្រាប់ '%1'..."
 
-#: resource.cpp:108
+#: resource.cpp:112
 #, kde-format
 msgid "Failed to create resource instance: %1"
 msgstr "បាន​បរាជ័យ​ក្នុងកា​របង្កើត​ធាតុ​ធនធាន ៖ %1"
 
-#: resource.cpp:115
+#: resource.cpp:119
 msgid "Configuring resource instance..."
 msgstr "កំពុង​កំណត់​រចនាសម្ព័ន្ធ​ធាតុ​ធនធាន..."
 
-#: resource.cpp:118
+#: resource.cpp:122
 msgid "Unable to configure resource instance."
 msgstr "មិនអាច​កំណត់​រចនាសម្ព័ន្ធ​ធាតុធនធាន​បាន​ទេ ។"
 
-#: resource.cpp:133
+#: resource.cpp:137
 #, kde-format
 msgid "Could not convert value of setting '%1' to required type %2."
 msgstr "មិន​អាច​បម្លែង​តម្លៃ​នៃ​ការ​ '%1' ទៅ​ប្រភេទ​ដែល​ទាមទារ %2 បាន​ទេ ។"
 
-#: resource.cpp:139
+#: resource.cpp:143
 #, kde-format
 msgid "Could not set setting '%1': %2"
 msgstr "មិន​អាច​កំណត់​ការ​កំណត់ '%1': %2 បាន​ទេ"
 
-#: resource.cpp:146
+#: resource.cpp:153
 msgid "Resource setup completed."
 msgstr "បាន​បញ្ចប់​ការ​រៀបចំ​ធនធាន ។"
 
-#: resource.cpp:153
+#: resource.cpp:167
 #, kde-format
 msgid "Removed resource instance for '%1'."
 msgstr "បានយក​ធាតុធនធាន​ចេញ​សម្រាប់ '%1' ។"
 
-#: servertest.cpp:56
+#: servertest.cpp:61
 msgid ""
 "There seems to be a problem in reaching this server or choosing a safe way "
 "to sent the credentials to server. We advise you to check the settings of "
@@ -258,38 +284,60 @@ msgstr ""
 "ទុកចិត្ត​ទៅ​ម៉ាស៊ីន​បម្រើ ។ យើង​ផ្ដល់​យោបល់​ឲ្យ​អ្នក​ពិនិត្យ​មើល​ការ​កំណត់​គណនី និង​កែតម្រូវ​វា​ដោយ​ដៃ ប្រសិនបើ​"
 "ចាំបាច់ ។"
 
-#: servertest.cpp:59
+#: servertest.cpp:64
 msgid "Autodetecting settings failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​កំណត់​ការ​​រក​ដោយ​ស្វ័យប្រវត្តិ"
 
+#: setupautoconfigkolabfreebusy.cpp:87 setupautoconfigkolabldap.cpp:86
+#: setupispdb.cpp:150
+msgid "Searching for autoconfiguration..."
+msgstr ""
+
+#: setupautoconfigkolabfreebusy.cpp:112 setupautoconfigkolabldap.cpp:111
+#: setupispdb.cpp:175
+msgid "Autoconfiguration found."
+msgstr ""
+
+#: setupautoconfigkolabfreebusy.cpp:114 setupautoconfigkolabldap.cpp:113
+#: setupispdb.cpp:177
+#, fuzzy
+#| msgid "Autodetecting settings failed"
+msgid "Autoconfiguration failed."
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​កំណត់​ការ​​រក​ដោយ​ស្វ័យប្រវត្តិ"
+
 #. i18n: ectx: property (text), widget (QLabel, progressLabel)
-#: setupmanager.cpp:90 ui/setuppage.ui:37
+#: setupmanager.cpp:96 ui/setuppage.ui:37
 msgid "Setting up account..."
 msgstr "កំពុង​រៀបចំ​គណនី..."
 
-#: setupmanager.cpp:136
+#: setupmanager.cpp:143
 msgid "Setup complete."
 msgstr "ការ​រៀបចំ​បានបញ្ចប់ ។"
 
-#: setupmanager.cpp:150
+#: setupmanager.cpp:158
 msgid "Failed to set up account, rolling back..."
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រៀបចំ​គណនី រមូរ​ថយក្រោយ..."
 
-#: setupmanager.cpp:162
+#: setupmanager.cpp:170
 msgid "Failed to set up account."
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រៀបចំ​គណនី ។"
 
-#: transport.cpp:89
+#: transport.cpp:90
 msgid "Setting up mail transport account..."
 msgstr "កំពុង​រៀបចំ​គណនី​បញ្ជូន​សំបុត្រ..."
 
-#: transport.cpp:110
+#: transport.cpp:114
 msgid "Mail transport account set up."
 msgstr "រៀបចំ​គណនី​បញ្ជូន​សំបុត្រ ។"
 
-#: transport.cpp:116
+#: transport.cpp:120
 msgid "Mail transport account deleted."
 msgstr "បាន​លុប​គណនី​បញ្ជូន​សំបុត្រ ។"
+
+#: transport.cpp:127
+#, kde-format
+msgid "Could not load config dialog for uid=%1"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, statusLabel)
 #: ui/loadpage.ui:30
