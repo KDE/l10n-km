@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: choqok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-05-17 08:48+0000\n"
+"POT-Creation-Date: 2015-05-19 12:09+0000\n"
 "PO-Revision-Date: 2012-06-15 11:06+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -804,6 +804,7 @@ msgid "Updating friends list for account %1..."
 msgstr "កំពុង​ធ្វើ​បច្ចុប្បន្នភាព​បញ្ជី​មិត្តភ័ក្ដិ​សម្រាប់​គណនី %1 ..."
 
 #: helperlibs/twitterapihelper/twitterapimicroblog.cpp:757
+#: microblogs/laconica/laconicamicroblog.cpp:295
 #, kde-format
 msgid ""
 "Friends list for account %1 could not be updated:\n"
@@ -2081,11 +2082,6 @@ msgctxt "Thread of specified user"
 msgid "Choqok: %1's thread"
 msgstr "Choqok (%1)"
 
-#. i18n: ectx: property (windowTitle), widget (QWidget, PumpIOShowThread)
-#: microblogs/pumpio/pumpioshowthread.ui:14
-msgid "Thread"
-msgstr ""
-
 #: microblogs/twitter/twittereditaccount.cpp:146
 msgid "Enter the PIN received from Twitter:"
 msgstr "បញ្ចូល PIN ដែល​ទទួល​​បាន​ពី Twitter ៖"
@@ -2115,43 +2111,44 @@ msgstr ""
 msgid "&Authenticate with Twitter Service"
 msgstr "ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​ជាមួយ​សេវា Twitter"
 
-#: microblogs/twitter/twitterlistdialog.cpp:49
-msgid "Add List"
-msgstr "បន្ថែម​បញ្ជី"
-
 #. i18n: ectx: property (toolTip), widget (QPushButton, btnAdd)
-#: microblogs/twitter/twitterlistdialog.cpp:72
+#: microblogs/twitter/twitterlistdialog.cpp:71
 #: plugins/filter/filterprefs.ui:81
 msgid "Add"
 msgstr "បន្ថែម"
 
-#: microblogs/twitter/twitterlistdialog.cpp:91
+#: microblogs/twitter/twitterlistdialog.cpp:90
 msgid "You should provide both list author username and list name."
 msgstr "អ្នក​គួរតែ​ផ្ដល់​ឲ្យ​ទាំង​ឈ្មោះ​អ្នក​និពន្ធ​បញ្ជី និង​ឈ្មោះ​បញ្ជី ។"
 
-#: microblogs/twitter/twitterlistdialog.cpp:113
+#: microblogs/twitter/twitterlistdialog.cpp:112
 msgid "No user."
 msgstr ""
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, TwitterListDialogBase)
+#: microblogs/twitter/twitterlistdialog_base.ui:14
+msgid "Add List"
+msgstr "បន្ថែម​បញ្ជី"
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: microblogs/twitter/twitterlistdialog_base.ui:23
+#: microblogs/twitter/twitterlistdialog_base.ui:26
 msgid "List name:"
 msgstr "ឈ្មោះ​បញ្ជី ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: microblogs/twitter/twitterlistdialog_base.ui:49
+#: microblogs/twitter/twitterlistdialog_base.ui:52
 msgid "User name:"
 msgstr "ឈ្មោះ​អ្នក​ប្រើ ៖"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, loadUserLists)
-#: microblogs/twitter/twitterlistdialog_base.ui:75
+#: microblogs/twitter/twitterlistdialog_base.ui:78
 #, fuzzy
 #| msgid "Load User Lists"
 msgid "Load user lists"
 msgstr "ផ្ទុក​បញ្ជី​អ្នកប្រើ"
 
 #. i18n: ectx: property (text), widget (QPushButton, loadUserLists)
-#: microblogs/twitter/twitterlistdialog_base.ui:78
+#: microblogs/twitter/twitterlistdialog_base.ui:81
 #, fuzzy
 #| msgid "Load lists"
 msgid "Load Lists"
@@ -2347,42 +2344,43 @@ msgstr ""
 "ផ្លាស់ប្ដូរ​មួយ​ចំនួន ត្រូវ​ការ​កម្មវិធី​ជំនួយ​ដើម្បី​ផ្ទុក​ឡើង​វិញ (បិទ/​បើក) ដើម្បី​មាន​ប្រសិទ្ធភាព ។</p></"
 "body></html>"
 
-#: plugins/filter/addeditfilter.cpp:52
-msgid "Define new filter rules"
-msgstr "កំណត់​ច្បាប់​ត្រង​ថ្មី"
-
-#: plugins/filter/addeditfilter.cpp:62
+#: plugins/filter/addeditfilter.cpp:60
 msgid "Modify filter rules"
 msgstr "កែប្រែ​ច្បាប់​ត្រង"
 
+#. i18n: ectx: property (windowTitle), widget (QWidget, AddEditFilterBase)
+#: plugins/filter/addeditfilter_base.ui:14
+msgid "Define new filter rules"
+msgstr "កំណត់​ច្បាប់​ត្រង​ថ្មី"
+
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/filter/addeditfilter_base.ui:20
+#: plugins/filter/addeditfilter_base.ui:23
 #, fuzzy
 #| msgid "Filter &Field:"
-msgid "Filter &field:"
+msgid "Fi&lter field:"
 msgstr "វាល​តម្រង ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: plugins/filter/addeditfilter_base.ui:33
+#: plugins/filter/addeditfilter_base.ui:36
 #, fuzzy
 #| msgid "Filter &Type:"
 msgid "Filter &type:"
 msgstr "ប្រភេទ​តម្រង ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_3)
-#: plugins/filter/addeditfilter_base.ui:46
-msgid "&Text:"
-msgstr "អត្ថបទ ៖"
+#: plugins/filter/addeditfilter_base.ui:49
+msgid "Te&xt:"
+msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
-#: plugins/filter/addeditfilter_base.ui:59
+#: plugins/filter/addeditfilter_base.ui:62
 #, fuzzy
 #| msgid "Filter Action:"
 msgid "Filter action:"
 msgstr "សកម្មភាព​តម្រង ៖"
 
 #. i18n: ectx: property (text), widget (QCheckBox, dontHideReplies)
-#: plugins/filter/addeditfilter_base.ui:69
+#: plugins/filter/addeditfilter_base.ui:72
 msgid "Do not hide replies to me"
 msgstr "កុំ​លាក់​ការ​ឆ្លើយតប​មក​កាន់​ខ្ញុំ"
 
@@ -3186,6 +3184,9 @@ msgstr "គណនី Twitter ៖"
 #: plugins/uploaders/twitgoo/twitgooprefs.ui:50
 msgid "Get direct link to file"
 msgstr "យក​តំណ​ផ្ទាល់​ទៅ​ឯកសារ"
+
+#~ msgid "&Text:"
+#~ msgstr "អត្ថបទ ៖"
 
 #~ msgid " Second"
 #~ msgid_plural " Seconds"
