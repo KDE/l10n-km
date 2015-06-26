@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libakonadi\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-06-08 08:43+0000\n"
+"POT-Creation-Date: 2015-06-26 08:54+0000\n"
 "PO-Revision-Date: 2012-07-11 10:23+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -203,54 +203,75 @@ msgstr "មិន​អាច​​ទៅយក​​ចំណុច​ប្រ
 msgid "Collection attributes synchronization timed out."
 msgstr "អស់​ពេល​​ធ្វើ​សម​កាល​កម្ម​គុណ​លក្ខណៈ​​​សម្រាំង​ ។"
 
+#: core/jobs/collectioncopyjob.cpp:62
+#, fuzzy
+#| msgid "Invalid collection"
+msgid "Invalid collection to copy"
+msgstr "សម្រាំង​មិន​ត្រឹម​ត្រូវ​"
+
+#: core/jobs/collectioncopyjob.cpp:68
+#, fuzzy
+#| msgid "Invalid collection"
+msgid "Invalid destination collection"
+msgstr "សម្រាំង​មិន​ត្រឹម​ត្រូវ​"
+
 #: core/jobs/collectioncreatejob.cpp:58
 msgid "Invalid parent"
 msgstr "មេ​ដែល​មិន​ត្រឹម​ត្រូវ​"
 
-#: core/jobs/collectiondeletejob.cpp:59
+#: core/jobs/collectioncreatejob.cpp:105
+#, fuzzy
+#| msgid "Failed to fetch the resource collection."
+msgid "Failed to parse Collection from response"
+msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ទៅ​ប្រមូល​យក​​​សម្រាំង​ធនធាន ។"
+
+#: core/jobs/collectiondeletejob.cpp:60
 msgid "Invalid collection"
 msgstr "សម្រាំង​មិន​ត្រឹម​ត្រូវ​"
 
-#: core/jobs/collectionfetchjob.cpp:231
+#: core/jobs/collectionfetchjob.cpp:233
 msgid "Invalid collection given."
 msgstr "សម្រាំង​ដែល​ផ្ដល់​ឲ្យ​មិន​ត្រឹម​ត្រូវ ។​"
 
-#: core/jobs/collectionselectjob.cpp:73
-msgid "Invalid collection specified"
-msgstr "សម្រាំង​ដែល​បាន​បញ្ជាក់មិន​ត្រឹម​ត្រូវ"
+#: core/jobs/collectionmovejob.cpp:59 core/jobs/itemmovejob.cpp:85
+msgid "No objects specified for moving"
+msgstr "គ្មាន​វត្ថុ​ដែល​បាន​បញ្ជាក់​សម្រាប់​ការ​ផ្លាស់​ទី​​ឡើយ​"
+
+#: core/jobs/collectionmovejob.cpp:66 core/jobs/itemmovejob.cpp:92
+#: core/jobs/linkjobimpl_p.h:54
+msgid "No valid destination specified"
+msgstr "គ្មាន​ទិស​ដៅ​ត្រឹមត្រូវ​​​បាន​បញ្ជាក់"
 
 #: core/jobs/invalidatecachejob.cpp:65
 msgid "Invalid collection."
 msgstr "សម្រាំង​មិន​ត្រឹម​ត្រូវ ។"
 
-#: core/jobs/job.cpp:308
+#: core/jobs/itemcreatejob.cpp:100
+#, fuzzy
+#| msgid "Invalid collection"
+msgid "Invalid parent collection"
+msgstr "សម្រាំង​មិន​ត្រឹម​ត្រូវ​"
+
+#: core/jobs/job.cpp:304
 msgid "Cannot connect to the Akonadi service."
 msgstr "មិន​អាច​តភ្ជាប់​ទៅ​កាន់​សេវា Akonadi បាន​ទេ ។"
 
-#: core/jobs/job.cpp:311
+#: core/jobs/job.cpp:307
 msgid ""
 "The protocol version of the Akonadi server is incompatible. Make sure you "
 "have a compatible version installed."
 msgstr ""
 "កំណែ​ពិធីការ​របស់​ម៉ាស៊ីន​បម្រើ Akonadi មិន​ឆប​គ្នា​ទេ ។ សូម​ប្រាកដ​ថា អ្នក​​បាន​ដំឡើង​កំណែ​ដែល​ឆបគ្នា ។"
 
-#: core/jobs/job.cpp:314
+#: core/jobs/job.cpp:310
 msgid "User canceled operation."
 msgstr "ប្រតិបត្តិការ​ត្រូវ​បាន​បោះបង់​ដោយ​អ្នកប្រើ ។"
 
-#: core/jobs/job.cpp:319
+#: core/jobs/job.cpp:315
 msgid "Unknown error."
 msgstr "កំហុស​ដែល​មិន​ស្គាល់ ។"
 
-#: core/jobs/linkjobimpl_p.h:52 core/jobs/movejobimpl_p.h:52
-msgid "No valid destination specified"
-msgstr "គ្មាន​ទិស​ដៅ​ត្រឹមត្រូវ​​​បាន​បញ្ជាក់"
-
-#: core/jobs/movejobimpl_p.h:46
-msgid "No objects specified for moving"
-msgstr "គ្មាន​វត្ថុ​ដែល​បាន​បញ្ជាក់​សម្រាប់​ការ​ផ្លាស់​ទី​​ឡើយ​"
-
-#: core/jobs/relationcreatejob.cpp:52 core/jobs/relationdeletejob.cpp:52
+#: core/jobs/relationcreatejob.cpp:54 core/jobs/relationdeletejob.cpp:54
 #, fuzzy
 #| msgid "Unable to create agent instance."
 msgid "Failed to create relation."
@@ -455,10 +476,19 @@ msgstr "កម្មវិធី​ជំនួយ​គ្មាន​ឈ្ម
 msgid "No description available"
 msgstr "មិន​មាន​សេចក្ដី​អធិប្បាយ"
 
-#: core/session.cpp:292
+#: core/session.cpp:307
 #, kde-format
-msgid "Protocol version %1 found, expected at least %2"
-msgstr "រក​ឃើញ​កំណែ​ពិធីការ %1  ដែល​រំពឹង​ទុក​ថា​យ៉ាង​ហោច​ណាស់ %2"
+msgid ""
+"Protocol version mismatch. Server version is newer (%1) than ours (%2). If "
+"you updated your system recently please restart the Akonadi server."
+msgstr ""
+
+#: core/session.cpp:313
+#, kde-format
+msgid ""
+"Protocol version mismatch. Server version is older (%1) than ours (%2). If "
+"you updated your system recently please restart all KDE PIM applications."
+msgstr ""
 
 #: selftest/main.cpp:31
 #, fuzzy
@@ -1199,39 +1229,50 @@ msgstr "ដោយ​គ្មានការ​តភ្ជាប់​ទៅ​
 msgid "Server protocol version is too old."
 msgstr "កំណែ​ពិធីការ​ម៉ាស៊ីន​​បម្រើ​ចាស់​ពេក ។"
 
-#: widgets/selftestdialog.cpp:446
-#, kde-format
+#: widgets/selftestdialog.cpp:446 widgets/selftestdialog.cpp:452
+#, fuzzy, kde-format
+#| msgid ""
+#| "The server protocol version is %1, but at least version %2 is required. "
+#| "Install a newer version of the Akonadi server."
 msgid ""
-"The server protocol version is %1, but at least version %2 is required. "
-"Install a newer version of the Akonadi server."
+"The server protocol version is %1, but version %2 is required by the client. "
+"If you recently updated KDE PIM, please make sure to restart both Akonadi "
+"and KDE PIM applications."
 msgstr ""
 "កំណែ​ពិធីការ​ម៉ាស៊ីន​បម្រើ %1 ប៉ុន្តែ​យ៉ាង​ហោច​ណាស់​កំណែ​ %2 ត្រូវ​បាន​ទាមទារ​  ។ ដំឡើង​កំណែ​​របស់​ម៉ាស៊ីន​បម្រើ "
 "Akonadi ដែល​ថ្មី​ជាង​នេះ ។"
 
 #: widgets/selftestdialog.cpp:451
-msgid "Server protocol version is recent enough."
-msgstr "កំណែ​ពិធីការ​ម៉ាស៊ីនបម្រើ​បច្ចុប្បន្ន​គ្រប់គ្រាន់​ហើយ ។"
+#, fuzzy
+#| msgid "Server protocol version is too old."
+msgid "Server protocol version is too new."
+msgstr "កំណែ​ពិធីការ​ម៉ាស៊ីន​​បម្រើ​ចាស់​ពេក ។"
 
-#: widgets/selftestdialog.cpp:452
-#, kde-format
-msgid ""
-"The server Protocol version is %1, which equal or newer than the required "
-"version %2."
-msgstr "កំណែ​ពិធីការ​ម៉ាស៊ីន​បម្រើ %1 ដែល​ស្មើ ឬ​ថ្មី​ជាង​កំណែ​ដែល​ត្រូវការ %2 ។"
+#: widgets/selftestdialog.cpp:457
+#, fuzzy
+#| msgid "Server protocol version is too old."
+msgid "Server protocol version matches."
+msgstr "កំណែ​ពិធីការ​ម៉ាស៊ីន​​បម្រើ​ចាស់​ពេក ។"
 
-#: widgets/selftestdialog.cpp:472
+#: widgets/selftestdialog.cpp:458
+#, fuzzy, kde-format
+#| msgid "Server protocol version is too old."
+msgid "The current Protocol version is %1."
+msgstr "កំណែ​ពិធីការ​ម៉ាស៊ីន​​បម្រើ​ចាស់​ពេក ។"
+
+#: widgets/selftestdialog.cpp:477
 msgid "Resource agents found."
 msgstr "រក​ឃើញ​ភ្នាក់ងារ​ធនធាន ។"
 
-#: widgets/selftestdialog.cpp:472
+#: widgets/selftestdialog.cpp:477
 msgid "At least one resource agent has been found."
 msgstr "យ៉ាង​ហោច​ណាស់​មាន​ភ្នាក់​ងារ​​ធន​ធាន​មួយ​ត្រូវ​បាន​រក​ឃើញ ។​"
 
-#: widgets/selftestdialog.cpp:474
+#: widgets/selftestdialog.cpp:479
 msgid "No resource agents found."
 msgstr "រក​មិន​ឃើញ​ភ្នាក់ងារ​ធនធាន ។"
 
-#: widgets/selftestdialog.cpp:475
+#: widgets/selftestdialog.cpp:480
 #, kde-format
 msgid ""
 "No resource agents have been found, Akonadi is not usable without at least "
@@ -1245,21 +1286,21 @@ msgstr ""
 "ស្វែងរក ៖ '%1' ។ អថេរ​បរិស្ថាន XDG_DATA_DIRS ត្រូវ​បាន​កំណត់​ទៅ '%2' សូម​ប្រាកដ​ថា វា​រួម​មាន​"
 "ផ្លូវ​ទាំងអស់​ដែល​ភ្នាក់ងារ​របស់​ Akonadi ត្រូវ​បាន​ដំឡើង ។"
 
-#: widgets/selftestdialog.cpp:493
+#: widgets/selftestdialog.cpp:498
 msgid "No current Akonadi server error log found."
 msgstr "រក​មិន​ឃើញ​កំណត់​ហេតុ​កំហុស​ម៉ាស៊ីន​បម្រើ​របស់​ Akonadi បច្ចុប្បន្ន​ទេ ។"
 
-#: widgets/selftestdialog.cpp:494
+#: widgets/selftestdialog.cpp:499
 msgid ""
 "The Akonadi server did not report any errors during its current startup."
 msgstr ""
 "ម៉ាស៊ីន​បម្រើ​របស់​​ Akonadi ​មិន​បាន​រាយការណ៍​កំហុស​ណា​មួយ​ក្នុង​កំឡុង​ពេល​នៃ​ការ​ចាប់ផ្ដើម​​​បច្ចុប្បន្ន​របស់​វា​ទេ ។​"
 
-#: widgets/selftestdialog.cpp:496
+#: widgets/selftestdialog.cpp:501
 msgid "Current Akonadi server error log found."
 msgstr "រក​ឃើញ​​កំណត់​ហេតុ​កំហុស​ម៉ាស៊ីន​បម្រើ​របស់​​ Akonadi បច្ចុប្បន្ន ។​"
 
-#: widgets/selftestdialog.cpp:497
+#: widgets/selftestdialog.cpp:502
 #, kde-format
 msgid ""
 "The Akonadi server reported errors during its current startup. The log can "
@@ -1268,20 +1309,20 @@ msgstr ""
 "ម៉ាស៊ីន​បម្រើ​របស់​​ Akonadi ​មិន​បាន​រាយការណ៍​កំហុស​ក្នុង​កំឡុង​ពេល​​នៃ​ការ​ចាប់ផ្ដើម​​បច្ចុប្បន្ន​របស់​វា​ទេ ។ កំណត់​"
 "ហេតុ​ត្រូវ​បាន​រក​ឃើញ​ក្នុង​ %1 ។​"
 
-#: widgets/selftestdialog.cpp:504
+#: widgets/selftestdialog.cpp:509
 msgid "No previous Akonadi server error log found."
 msgstr "រក​មិនឃើញ​កំណត់ហេតុ​កំហុស​ម៉ាស៊ីនបម្រើ​របស់ Akonadi ពី​មុន ។"
 
-#: widgets/selftestdialog.cpp:505
+#: widgets/selftestdialog.cpp:510
 msgid ""
 "The Akonadi server did not report any errors during its previous startup."
 msgstr "ម៉ាស៊ីនបម្រើ Akonadi មិនបាន​រាយការណ៍​ថា​មាន​កំហុស​ក្នុង​អំឡុង​ពេល​ចាប់ផ្ដើម​ពីមុន​របស់​វា​ទេ ។"
 
-#: widgets/selftestdialog.cpp:507
+#: widgets/selftestdialog.cpp:512
 msgid "Previous Akonadi server error log found."
 msgstr "រក​ឃើញ​កំណត់​ហេតុ​កំហុស​ម៉ាស៊ីន​បម្រើ​របស់​ Akonadi មុន ។"
 
-#: widgets/selftestdialog.cpp:508
+#: widgets/selftestdialog.cpp:513
 #, kde-format
 msgid ""
 "The Akonadi server reported errors during its previous startup. The log can "
@@ -1290,11 +1331,11 @@ msgstr ""
 "ម៉ាស៊ីន​បម្រើ​របស់​​ Akonadi បាន​រាយការណ៍​​កំហុស​កំឡុង​​ពេល​ការ​ចាប់​ផ្ដើម​ឡើង​​​ពី​មុន​ ។ ​ កំណត់​ហេតុ​អាច​ត្រូវ​បាន​រក​"
 "ឃើញ​ក្នុង​ %1 ។"
 
-#: widgets/selftestdialog.cpp:519
+#: widgets/selftestdialog.cpp:524
 msgid "No current Akonadi control error log found."
 msgstr "រក​មិន​ឃើញ​កំណត់ហេតុ​កំហុស​នៃ​វត្ថុ​បញ្ជា​របស់​ Akonadi បច្ចុប្បន្ន​ទេ ។"
 
-#: widgets/selftestdialog.cpp:520
+#: widgets/selftestdialog.cpp:525
 msgid ""
 "The Akonadi control process did not report any errors during its current "
 "startup."
@@ -1302,11 +1343,11 @@ msgstr ""
 "ដំណើរការ​នៃ​វត្ថុ​បញ្ជា​របស់​ Akonadi មិន​បាន​រាយការណ៍​ថា​មាន​កំហុស​កំឡុង​ពេល​​​ចាប់ផ្ដើម​ឡើង​បច្ចុប្បន្ន​របស់​វា​"
 "ទេ ។"
 
-#: widgets/selftestdialog.cpp:522
+#: widgets/selftestdialog.cpp:527
 msgid "Current Akonadi control error log found."
 msgstr "រក​ឃើញ​កំណត់​ហេតុ​កំហុស​នៃ​វត្ថុ​បញ្ជា​របស់​ Akonadi បច្ចុប្បន្ន ។"
 
-#: widgets/selftestdialog.cpp:523
+#: widgets/selftestdialog.cpp:528
 #, kde-format
 msgid ""
 "The Akonadi control process reported errors during its current startup. The "
@@ -1315,22 +1356,22 @@ msgstr ""
 "ដំណើរការ​នៃ​វត្ថុ​បញ្ជា​របស់​ Akonadi ​​បាន​រាយការណ៍​ថា​មាន​កំហុស​កំឡុង​​ពេល​​​ចាប់ផ្ដើម​​បច្ចុប្បន្ន​​របស់​វា​ទេ ។ "
 "កំណត់ហេតុ​អាច​ត្រូវ​បាន​រក​ឃើញ​ក្នុង​ %1 ។"
 
-#: widgets/selftestdialog.cpp:530
+#: widgets/selftestdialog.cpp:535
 msgid "No previous Akonadi control error log found."
 msgstr "រក​មិន​ឃើញ​កំណត់ហេតុ​កំហុស​នៃ​វត្ថុ​បញ្ជា​របស់​ Akonadi ពី​មុន ។"
 
-#: widgets/selftestdialog.cpp:531
+#: widgets/selftestdialog.cpp:536
 msgid ""
 "The Akonadi control process did not report any errors during its previous "
 "startup."
 msgstr ""
 "ដំណើរការ​នៃ​វត្ថុ​បញ្ជា​របស់​ Akonadi មិន​បាន​រាយការណ៍​​ថា​មាន​កំហុស​ក្នុង​អំឡុង​ពេល​ចាប់ផ្ដើម​​​ពី​មុន​របស់​វា​ទេ ។"
 
-#: widgets/selftestdialog.cpp:533
+#: widgets/selftestdialog.cpp:538
 msgid "Previous Akonadi control error log found."
 msgstr "រក​ឃើញ​​កំណត់​ហេតុ​កំហុស​នៃ​វត្ថុ​បញ្ជា Akonadi ពី​មុន ។"
 
-#: widgets/selftestdialog.cpp:534
+#: widgets/selftestdialog.cpp:539
 #, kde-format
 msgid ""
 "The Akonadi control process reported errors during its previous startup. The "
@@ -1339,11 +1380,11 @@ msgstr ""
 "ដំណើរ​ការ​នៃ​វត្ថុ​បញ្ជា​របស់​ Akonadi បាន​រាយការណ៍​​ថា​មាន​កំហុស​កំឡុង​ពេល​ចាប់​ផ្ដើម​​​ពី​មុន​របស់​វា ​។ កំណត់​ហេតុ​"
 "អាច​ត្រូវ​បាន​រក​ឃើញ​​​ក្នុង​ %1 ។"
 
-#: widgets/selftestdialog.cpp:543
+#: widgets/selftestdialog.cpp:548
 msgid "Akonadi was started as root"
 msgstr "Akonadi បាន​ចាប់​ផ្ដើម​​ជា​ root"
 
-#: widgets/selftestdialog.cpp:543
+#: widgets/selftestdialog.cpp:548
 msgid ""
 "Running Internet-facing applications as root/administrator exposes you to "
 "many security risks. MySQL, used by this Akonadi installation, will not "
@@ -1353,11 +1394,11 @@ msgstr ""
 "ជាច្រើន​ ។ MySQL  បាន​ប្រើ​ដោយ​ការដំឡើង​​ Akonadi នេះ​ នឹង​មិន​អនុញ្ញាត​ឲ្យ​ខ្លួន​វា​ដំណើរការ​ជា​ root "
 "ដើម្បី​ការពារ​អ្នក​ពី​​ហានិភ័យ​ទាំងនេះ​​ ។"
 
-#: widgets/selftestdialog.cpp:545
+#: widgets/selftestdialog.cpp:550
 msgid "Akonadi is not running as root"
 msgstr "Akonadi មិន​កំពុង​ដំណើរការ​ជា​​ root ឡើយ​"
 
-#: widgets/selftestdialog.cpp:545
+#: widgets/selftestdialog.cpp:550
 msgid ""
 "Akonadi is not running as a root/administrator user, which is the "
 "recommended setup for a secure system."
@@ -1365,11 +1406,11 @@ msgstr ""
 "Akonadi  មិន​កំពុង​ដំណើរ​ការ​ក្នុងនាម​​ជា​អ្នក​ប្រើ​ root/administrator ដែល​រៀបចំ​ផ្ដល់​អនុសាសន៍​​ សម្រាប់​"
 "ប្រព័ន្ធ​ដែល​ដែល​មាន​សុវត្ថិភាព​ទេ​ ។​"
 
-#: widgets/selftestdialog.cpp:623
+#: widgets/selftestdialog.cpp:628
 msgid "Save Test Report"
 msgstr "រក្សា​ទុក​របាយការណ៍​សាកល្បង​"
 
-#: widgets/selftestdialog.cpp:630
+#: widgets/selftestdialog.cpp:635
 #, kde-format
 msgid "Could not open file '%1'"
 msgstr "មិនអាច​បើក​ឯកសារ '%1'"
@@ -1993,6 +2034,20 @@ msgstr "មិនអាច​បិទភ្ជាប់​​ទិន្នន
 #| msgid "Invalid collection"
 msgid "Unable to find collection %1"
 msgstr "សម្រាំង​មិន​ត្រឹម​ត្រូវ​"
+
+#~ msgid "Invalid collection specified"
+#~ msgstr "សម្រាំង​ដែល​បាន​បញ្ជាក់មិន​ត្រឹម​ត្រូវ"
+
+#~ msgid "Protocol version %1 found, expected at least %2"
+#~ msgstr "រក​ឃើញ​កំណែ​ពិធីការ %1  ដែល​រំពឹង​ទុក​ថា​យ៉ាង​ហោច​ណាស់ %2"
+
+#~ msgid "Server protocol version is recent enough."
+#~ msgstr "កំណែ​ពិធីការ​ម៉ាស៊ីនបម្រើ​បច្ចុប្បន្ន​គ្រប់គ្រាន់​ហើយ ។"
+
+#~ msgid ""
+#~ "The server Protocol version is %1, which equal or newer than the required "
+#~ "version %2."
+#~ msgstr "កំណែ​ពិធីការ​ម៉ាស៊ីន​បម្រើ %1 ដែល​ស្មើ ឬ​ថ្មី​ជាង​កំណែ​ដែល​ត្រូវការ %2 ។"
 
 #~ msgid "Inconsistent local collection tree detected."
 #~ msgstr "បាន​រក​ឃើញ​មែក​ធាង​សម្រាំង​មូលដ្ឋាន​ដែល​អ​ស្ថេរ​ភាព​ ។"
