@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-06-26 01:53+0000\n"
+"POT-Creation-Date: 2015-07-31 02:02+0000\n"
 "PO-Revision-Date: 2012-07-09 10:31+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -700,7 +700,8 @@ msgid ""
 "which is currently shown in the thumbnail viewer)</li></ul></p>"
 msgstr ""
 
-#: Browser/AbstractCategoryModel.cpp:46
+#: Browser/AbstractCategoryModel.cpp:46 Exif/SearchDialog.cpp:397
+#: Exif/SearchInfo.cpp:183
 #, fuzzy
 #| msgid "None"
 msgctxt "As in No persons, no locations etc."
@@ -1169,7 +1170,7 @@ msgstr ""
 msgid "Following files could not be read:"
 msgstr "មិនអាច​អាន​ឯកសារ​ដូច​ខាងក្រោម​បានទេ ៖"
 
-#: Exif/Database.cpp:96
+#: Exif/Database.cpp:100
 #, kde-format
 msgid ""
 "<p>There was an error while executing the SQL backend command. The error is "
@@ -1183,11 +1184,11 @@ msgstr ""
 "ទិន្នន័យ​ស្វែង​រក​ Exif ​ឡើង​វិញ ។</p><hr/><p>​សម្រាប់​ការ​បំបាត់​កំហុស ៖ ពាក្យ​បញ្ជា​ដែល​ត្រូវ​បាន​ប៉ុនប៉ង​"
 "ប្រតិបត្តិ​គឺ​ ៖<br/>%1</p><p>កំហុស​សារ​ដែល​បាន​ទទួល​បាន​គឺ ៖<br/>%2</p>"
 
-#: Exif/Database.cpp:104
+#: Exif/Database.cpp:108
 msgid "Error Executing Exif Command"
 msgstr "កំហុស​ក្នុងកា​រប្រតិបត្តិ​ពាក្យ​បញ្ជា Exif"
 
-#: Exif/Database.cpp:415
+#: Exif/Database.cpp:483
 msgid "Rereading EXIF information from all images"
 msgstr "អាន​ព័ត៌មាន EXIF ពី​រូបភាព​ទាំងអស់"
 
@@ -1277,54 +1278,70 @@ msgstr "ម.ម."
 msgid "Camera"
 msgstr "ម៉ាស៊ីន​ថត​រូប"
 
-#: Exif/SearchDialog.cpp:111 Settings/GeneralPage.cpp:124
+#: Exif/SearchDialog.cpp:110
+msgid "Lens"
+msgstr ""
+
+#: Exif/SearchDialog.cpp:115 Settings/GeneralPage.cpp:124
 msgid "Miscellaneous"
 msgstr "ផ្សេងៗ"
 
-#: Exif/SearchDialog.cpp:137
+#: Exif/SearchDialog.cpp:141
 msgid "Iso setting"
 msgstr "ការ​កំណត់​ Iso"
 
-#: Exif/SearchDialog.cpp:142
+#: Exif/SearchDialog.cpp:146
 msgctxt "Example 1.6 secs (as in seconds)"
 msgid "secs."
 msgstr "វិ."
 
-#: Exif/SearchDialog.cpp:181
+#: Exif/SearchDialog.cpp:185
 msgid "1 second"
 msgstr "១ វិនាទី"
 
-#: Exif/SearchDialog.cpp:198
+#: Exif/SearchDialog.cpp:202
 msgid "Exposure time"
 msgstr "ពេល​វេលា​បង្ហាញ"
 
-#: Exif/SearchDialog.cpp:248
+#: Exif/SearchDialog.cpp:252
 msgid "Exposure Program"
 msgstr "កម្មវិធី​បង្ហាញ"
 
-#: Exif/SearchDialog.cpp:265 ImportExport/MD5CheckPage.cpp:76
+#: Exif/SearchDialog.cpp:269 ImportExport/MD5CheckPage.cpp:76
 msgid "Orientation"
 msgstr "ទិស"
 
-#: Exif/SearchDialog.cpp:277
+#: Exif/SearchDialog.cpp:281
 msgid "Metering Mode"
 msgstr "របៀបវាស់"
 
-#: Exif/SearchDialog.cpp:293
+#: Exif/SearchDialog.cpp:297
 msgid "Contrast"
 msgstr "កម្រិត​ពណ៌​"
 
-#: Exif/SearchDialog.cpp:304
+#: Exif/SearchDialog.cpp:308
 msgid "Sharpness"
 msgstr "ភាព​ច្បាស់"
 
-#: Exif/SearchDialog.cpp:315
+#: Exif/SearchDialog.cpp:319
 msgid "Saturation"
 msgstr "តិត្ថិភាព"
 
 #: Exif/SearchDialog.cpp:372
 msgid "No cameras found in the database"
 msgstr "រក​មិន​ឃើញ​ម៉ាស៊ីន​ថត​ក្នុង​មូលដ្ឋាន​ទិន្នន័យ"
+
+#: Exif/SearchDialog.cpp:393
+#, fuzzy
+#| msgid "No cameras found in the database"
+msgid "No lenses found in the database"
+msgstr "រក​មិន​ឃើញ​ម៉ាស៊ីន​ថត​ក្នុង​មូលដ្ឋាន​ទិន្នន័យ"
+
+#: Exif/SearchDialog.cpp:409
+msgid ""
+"Not all images in the database have lens information. <note>Recreate the "
+"EXIF search database to ensure lens data for all images.</note>"
+msgstr ""
 
 #: HTMLGenerator/Generator.cpp:52
 msgid "Generating images for HTML page "
