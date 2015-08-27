@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: marble\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-08-10 08:30+0000\n"
+"POT-Creation-Date: 2015-08-27 09:03+0000\n"
 "PO-Revision-Date: 2008-12-02 15:23+0700\n"
 "Last-Translator: Eng Vannak <evannak@khmeros.info>\n"
 "Language-Team: km <support@khmeros.info>\n"
@@ -939,10 +939,11 @@ msgid "Please specify a URL for this link."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
 #: src/lib/marble/AddLinkDialog.cpp:75
-#: src/lib/marble/EditPlacemarkDialog.cpp:326
+#: src/lib/marble/EditPlacemarkDialog.cpp:375
+#: src/lib/marble/osm/OsmRelationEditorDialog.cpp:85
 #: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:118
-#: src/plugins/render/annotate/EditPolygonDialog.cpp:250
-#: src/plugins/render/annotate/EditPolylineDialog.cpp:240
+#: src/plugins/render/annotate/EditPolygonDialog.cpp:297
+#: src/plugins/render/annotate/EditPolylineDialog.cpp:288
 msgid "No name specified"
 msgstr ""
 
@@ -1328,61 +1329,75 @@ msgstr "ទំហំ​ទាញ​យក​ដែល​បាន​ប៉ាន
 msgid "Estimated download size: %1 kB"
 msgstr "ទំហំ​ទាញ​យក​ដែល​បាន​ប៉ាន់ស្មាន ៖ %1 គីឡូបៃ"
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:105
+#: src/lib/marble/EditPlacemarkDialog.cpp:128
 #, fuzzy
 #| msgid "Add Placemark"
 msgid "Untitled Placemark"
 msgstr "បន្ថែម​សញ្ញា​សម្គាល់​កន្លែង"
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:145
+#: src/lib/marble/EditPlacemarkDialog.cpp:170
+#: src/plugins/render/annotate/EditPolygonDialog.cpp:98
+#: src/plugins/render/annotate/EditPolylineDialog.cpp:97
+msgid "Tags"
+msgstr ""
+
+#: src/lib/marble/EditPlacemarkDialog.cpp:176
+#: src/plugins/render/annotate/EditPolygonDialog.cpp:104
+#: src/plugins/render/annotate/EditPolylineDialog.cpp:103
+#, fuzzy
+#| msgid "Elevation Profile"
+msgid "Relations"
+msgstr "ទម្រង់​ល្បើក"
+
+#: src/lib/marble/EditPlacemarkDialog.cpp:185
 #: src/plugins/render/annotate/NodeModel.cpp:92
 #, fuzzy
 #| msgid "Elevation Profile"
 msgid "Elevation"
 msgstr "ទម្រង់​ល្បើក"
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:327
+#: src/lib/marble/EditPlacemarkDialog.cpp:376
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify a name for this placemark."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:330
+#: src/lib/marble/EditPlacemarkDialog.cpp:379
 msgid "No ID specified"
 msgstr ""
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:331
+#: src/lib/marble/EditPlacemarkDialog.cpp:380
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify a ID for this placemark."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:334
+#: src/lib/marble/EditPlacemarkDialog.cpp:383
 msgid "ID is invalid"
 msgstr ""
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:335
+#: src/lib/marble/EditPlacemarkDialog.cpp:384
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify a valid ID for this placemark."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:338
+#: src/lib/marble/EditPlacemarkDialog.cpp:387
 #: src/plugins/render/annotate/EditGroundOverlayDialog.cpp:122
 msgid "No image specified"
 msgstr ""
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:339
+#: src/lib/marble/EditPlacemarkDialog.cpp:388
 #, fuzzy
 #| msgid "Please specify a source image."
-msgid "Please specify an icon for this placemark."
+msgid "Please specify an icon for this placemark or add a valid tag."
 msgstr "សូម​បញ្ជាក់​រូបភាព​ប្រភព ។"
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:342
+#: src/lib/marble/EditPlacemarkDialog.cpp:391
 msgid "Invalid icon path"
 msgstr ""
 
-#: src/lib/marble/EditPlacemarkDialog.cpp:343
+#: src/lib/marble/EditPlacemarkDialog.cpp:392
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify a valid path for the icon file."
@@ -1568,6 +1583,7 @@ msgstr "នេះ​ជា​ឯកសារ​មិន​ត្រឹមត្
 
 #: src/lib/marble/GeoDataTreeModel.cpp:214
 #: src/lib/marble/MapThemeManager.cpp:407
+#: src/lib/marble/osm/OsmRelationEditorDialog.cpp:39
 #: src/plugins/runner/monav/MonavMapsModel.cpp:46
 msgid "Name"
 msgstr "ឈ្មោះ"
@@ -1642,10 +1658,12 @@ msgstr "កំពុង​ដំឡើង %1"
 
 #: src/lib/marble/MapThemeDownloadDialog.cpp:247
 #: src/lib/marble/MapThemeDownloadDialog.cpp:286
+#: src/lib/marble/osm/OsmRelationManagerWidget.cpp:131
+#: src/lib/marble/osm/OsmRelationManagerWidget.cpp:139
 #: src/plugins/render/annotate/AnnotatePlugin.cpp:1046
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1160
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1294
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1535
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1165
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1299
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1544
 #, fuzzy
 #| msgid "Remove Map"
 msgid "Remove"
@@ -2906,7 +2924,7 @@ msgstr "ការ​មើល​ឯកសារ"
 msgid "Current Location"
 msgstr "ទីតាំង​បច្ចុប្បន្ន"
 
-#: src/lib/marble/MarbleGlobal.h:268
+#: src/lib/marble/MarbleGlobal.h:269
 msgid "not available"
 msgstr ""
 
@@ -2986,8 +3004,8 @@ msgstr ""
 
 #: src/lib/marble/MarbleWebView.cpp:23
 #: src/plugins/render/annotate/AnnotatePlugin.cpp:1042
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1290
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1531
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1295
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1540
 #, fuzzy
 #| msgid "&Copy Map"
 msgid "Copy"
@@ -3142,6 +3160,45 @@ msgstr ""
 #: src/lib/marble/NewstuffModel.cpp:718 src/lib/marble/NewstuffModel.cpp:727
 msgid "Installation aborted by user."
 msgstr "បាន​បោះបង់​ការ​ដំឡើង​ដោយ​អ្នកប្រើ ។"
+
+#: src/lib/marble/osm/OsmRelationEditorDialog.cpp:86
+#, fuzzy
+#| msgid "Please specify a map title."
+msgid "Please specify a name for this relation."
+msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
+
+#: src/lib/marble/osm/OsmRelationEditorDialog.cpp:90
+msgid "No type tag specified"
+msgstr ""
+
+#: src/lib/marble/osm/OsmRelationEditorDialog.cpp:91
+#, fuzzy
+#| msgid "Please specify a map title."
+msgid "Please add a type tag for this relation."
+msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
+
+#: src/lib/marble/osm/OsmRelationManagerWidget.cpp:57
+#: src/lib/marble/osm/OsmRelationManagerWidget_p.cpp:111
+#, fuzzy
+#| msgid "Nation"
+msgid "New Relation"
+msgstr "ជាតិ"
+
+#: src/lib/marble/osm/OsmRelationManagerWidget.cpp:132
+#: src/lib/marble/osm/OsmRelationManagerWidget.cpp:143
+#, fuzzy
+#| msgid "&Edit"
+msgid "Edit"
+msgstr "កែសម្រួល"
+
+#: src/lib/marble/osm/OsmTagEditorWidget.cpp:86
+#: src/lib/marble/osm/OsmTagEditorWidget_p.cpp:128
+msgid "value"
+msgstr ""
+
+#: src/lib/marble/osm/OsmTagEditorWidget_p.cpp:30
+msgid "Add custom tag..."
+msgstr ""
 
 #: src/lib/marble/PlacemarkEditHeader.cpp:222
 #, fuzzy
@@ -4182,8 +4239,8 @@ msgstr "ឯកសារ​គាំទ្រ​ទាំងអស់ (*.kml);;Km
 #: src/plugins/render/annotate/AnnotatePlugin.cpp:767
 #: src/plugins/render/annotate/AnnotatePlugin.cpp:772
 #: src/plugins/render/annotate/AnnotatePlugin.cpp:777
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1424
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1508
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1431
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1517
 msgid "Operation not permitted"
 msgstr ""
 
@@ -4259,59 +4316,59 @@ msgid "Paste"
 msgstr "រថយន្ត (លឿន​បំផុត)"
 
 #: src/plugins/render/annotate/AnnotatePlugin.cpp:1038
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1286
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1527
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1291
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1536
 #, fuzzy
 #| msgid "Custom"
 msgid "Cut"
 msgstr "ផ្ទាល់ខ្លួន"
 
 #: src/plugins/render/annotate/AnnotatePlugin.cpp:1052
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1154
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1300
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1541
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1159
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1305
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1550
 msgid "Properties"
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1179
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1184
 #, fuzzy
 #| msgid "Remove from Favorites"
 msgid "Untitled Ground Overlay"
 msgstr "យកចេញ​ពី​ចំណូលចិត្ត"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1276
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1517
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1281
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1526
 msgid "Deselect All Nodes"
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1280
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1521
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1285
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1530
 #, fuzzy
 #| msgid "Remove Map"
 msgid "Delete All Selected Nodes"
 msgstr "យក​ផែនទី​ចេញ"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1425
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1509
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1432
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1518
 msgid ""
 "Cannot delete one of the selected nodes. Most probably this would make the "
 "polygon's outer boundary not contain all its inner boundary nodes."
 msgstr ""
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1451
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1472
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1460
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1481
 #, fuzzy
 #| msgid "Selection Method"
 msgid "Select Node"
 msgstr "វិធីសាស្ត្រ​ជម្រើស"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1455
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1464
 #, fuzzy
 #| msgid "Delete"
 msgid "Delete Node"
 msgstr "លុប"
 
-#: src/plugins/render/annotate/AnnotatePlugin.cpp:1472
+#: src/plugins/render/annotate/AnnotatePlugin.cpp:1481
 msgid "Deselect Node"
 msgstr ""
 
@@ -4337,42 +4394,42 @@ msgstr ""
 msgid "Please specify a valid path for the image file."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
-#: src/plugins/render/annotate/EditPolygonDialog.cpp:84
+#: src/plugins/render/annotate/EditPolygonDialog.cpp:122
 #, fuzzy
 #| msgid "Draw Polygon"
 msgid "Untitled Polygon"
 msgstr "គូរ​ពហុកោណ"
 
-#: src/plugins/render/annotate/EditPolygonDialog.cpp:251
+#: src/plugins/render/annotate/EditPolygonDialog.cpp:298
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify a name for this polygon."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
-#: src/plugins/render/annotate/EditPolygonDialog.cpp:258
-#: src/plugins/render/annotate/EditPolylineDialog.cpp:248
+#: src/plugins/render/annotate/EditPolygonDialog.cpp:305
+#: src/plugins/render/annotate/EditPolylineDialog.cpp:296
 msgid "Not enough nodes specified."
 msgstr ""
 
-#: src/plugins/render/annotate/EditPolygonDialog.cpp:259
+#: src/plugins/render/annotate/EditPolygonDialog.cpp:306
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify at least 3 nodes for the polygon by clicking on the map."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
-#: src/plugins/render/annotate/EditPolylineDialog.cpp:82
+#: src/plugins/render/annotate/EditPolylineDialog.cpp:117
 #, fuzzy
 #| msgid "Add Placemark"
 msgid "Untitled Path"
 msgstr "បន្ថែម​សញ្ញា​សម្គាល់​កន្លែង"
 
-#: src/plugins/render/annotate/EditPolylineDialog.cpp:241
+#: src/plugins/render/annotate/EditPolylineDialog.cpp:289
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify a name for this polyline."
 msgstr "សូម​បញ្ជាក់​ចំណងជើង​ផែនទី ។"
 
-#: src/plugins/render/annotate/EditPolylineDialog.cpp:249
+#: src/plugins/render/annotate/EditPolylineDialog.cpp:297
 #, fuzzy
 #| msgid "Please specify a map title."
 msgid "Please specify at least 2 nodes for the path by clicking on the map."
@@ -7025,9 +7082,6 @@ msgstr "នេះ​ជា​ពុម្ព​សម្រាប់​ធាត
 
 #~ msgid "Ocean"
 #~ msgstr "មហាសមុទ្រ"
-
-#~ msgid "Nation"
-#~ msgstr "ជាតិ"
 
 #~ msgid "Continent"
 #~ msgstr "ទ្វីប"
