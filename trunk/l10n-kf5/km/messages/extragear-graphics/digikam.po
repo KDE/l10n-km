@@ -47,7 +47,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2015-11-04 14:08+0000\n"
+"POT-Creation-Date: 2015-11-05 09:16+0000\n"
 "PO-Revision-Date: 2010-06-23 14:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -6100,7 +6100,7 @@ msgstr ""
 "ការ​ចែករំលែក​បណ្ដាញ​នឹង​ត្រូវ​បាន​កំណត់​ដោយ​ផ្លូវ​​ដែល​អ្នក​បាន​ជ្រើស​ឡើយ ។ ប្រសិនបើ​ផ្លូវ​ទទេ នឹង​មិន​អាច​ត្រូវ​បាន​​"
 "ពិចារណា​​​ឡើយ ។"
 
-#: libs/database/core/databaseconfigelement.cpp:214
+#: libs/database/core/databaseconfigloader.cpp:194
 #, fuzzy, kde-format
 #| msgid ""
 #| "Could not open the dbconfig.xml file. This file is installed with the "
@@ -6114,14 +6114,12 @@ msgstr ""
 "មិន​អាច​បើក​ឯកសារ dbconfig.xml បាន​ទេ ។ ឯកសារ​នេះ​ត្រូវ​បាន​ដំឡើង​ជាមួយ​កម្មវិធី digikam និង​"
 "កម្មវិធី​ដែល​បាន​ទាមទារ​ ដើម្បី​ដំណើរការ digikam ។ សូម​ពិនិត្យមើល​ការ​ដំឡើង​របស់​អ្នក ។"
 
-#: libs/database/core/databaseconfigelement.cpp:223
-#: libs/facesengine/database/databasefaceconfigelement.cpp:217
+#: libs/database/core/databaseconfigloader.cpp:203
 #, fuzzy, kde-format
 msgid "Could not open configuration file <b>%1</b>"
 msgstr "មិន​អាច​បើក​ឯកសារ dbconfig.xml <filename>%1</filename>"
 
-#: libs/database/core/databaseconfigelement.cpp:232
-#: libs/facesengine/database/databasefaceconfigelement.cpp:226
+#: libs/database/core/databaseconfigloader.cpp:212
 #, fuzzy, kde-format
 msgid ""
 "The XML in the configuration file <b>%1</b> is invalid and cannot be read."
@@ -6129,7 +6127,7 @@ msgstr ""
 "XML នៅ​ក្នុង​ឯកសារ dbconfig.xml <filename>%1</filename> គឺ​មិន​ត្រឹមត្រូវ និង​មិន​អាច​អាន​បាន​"
 "ទេ ។"
 
-#: libs/database/core/databaseconfigelement.cpp:242
+#: libs/database/core/databaseconfigloader.cpp:222
 #, fuzzy, kde-format
 msgid ""
 "The XML in the configuration file <b>%1</b> is missing the required element "
@@ -6138,8 +6136,7 @@ msgstr ""
 "XML នៅ​ក្នុង​ឯកសារ dbconfig.xml <filename>%1</filename> បាត់​ធាតុ​ដែល​បាន​ទាមទារ "
 "<icode>%2</icode>"
 
-#: libs/database/core/databaseconfigelement.cpp:252
-#: libs/facesengine/database/databasefaceconfigelement.cpp:237
+#: libs/database/core/databaseconfigloader.cpp:232
 #, fuzzy, kde-format
 msgid ""
 "The XML in the configuration file <b>%1</b> is missing the required element "
@@ -6148,7 +6145,7 @@ msgstr ""
 "XML នៅ​ក្នុង​ឯកសារ dbconfig.xml <filename>%1</filename> បាត់​ធាតុ​ដែល​បាន​ទាមទារ "
 "<icode>%2</icode>"
 
-#: libs/database/core/databaseconfigelement.cpp:274
+#: libs/database/core/databaseconfigloader.cpp:254
 #, fuzzy, kde-format
 msgid ""
 "An old version of the configuration file <b>%1</b> is found. Please ensure "
@@ -6251,7 +6248,7 @@ msgctxt "The list of detected faces from the collections but not recognized"
 msgid "Unknown"
 msgstr "មិនស្គាល់"
 
-#: libs/database/framework/databaseaccess.cpp:261
+#: libs/database/framework/databaseaccess.cpp:262
 #: libs/database/thumbnails/thumbnaildatabaseaccess.cpp:194
 msgid ""
 "The driver \"SQLITE\" for SQLite3 databases is not available.\n"
@@ -6260,7 +6257,7 @@ msgstr ""
 "កម្មវិធី​បញ្ជា \"SQLITE\" សម្រាប់​មូលដ្ឋាន​ទិន្នន័យ SQLite3 ​មិន​មាន​ឡើយ ។\n"
 "digiKam ផ្អែក​លើ​កម្មវិធី​បញ្ជា​ដែល​បាន​ផ្ដល់​ដោយ​ម៉ូឌុល SQL ​របស់ Qt4 ។"
 
-#: libs/database/framework/databaseaccess.cpp:298
+#: libs/database/framework/databaseaccess.cpp:299
 #: libs/database/thumbnails/thumbnaildatabaseaccess.cpp:218
 msgid ""
 "Error opening database backend.\n"
@@ -9365,7 +9362,7 @@ msgstr ""
 msgid "Deletion Time"
 msgstr "ពេលវេលា​ការ​បង្កើត​"
 
-#: libs/facesengine/database/databasefaceaccess.cpp:206
+#: libs/facesengine/database/databasefaceaccess.cpp:207
 #, fuzzy
 #| msgid ""
 #| "The driver \"SQLITE\" for SQLite3 databases is not available.\n"
@@ -9377,7 +9374,7 @@ msgstr ""
 "កម្មវិធី​បញ្ជា \"SQLITE\" សម្រាប់​មូលដ្ឋាន​ទិន្នន័យ SQLite3 ​មិន​មាន​ឡើយ ។\n"
 "digiKam ផ្អែក​លើ​កម្មវិធី​បញ្ជា​ដែល​បាន​ផ្ដល់​ដោយ​ម៉ូឌុល SQL ​របស់ Qt4 ។"
 
-#: libs/facesengine/database/databasefaceaccess.cpp:230
+#: libs/facesengine/database/databasefaceaccess.cpp:231
 #, fuzzy, kde-format
 #| msgid ""
 #| "Error opening database backend.\n"
@@ -9388,29 +9385,6 @@ msgid ""
 msgstr ""
 "កំហុស​ក្នុង​ការ​បើក​កម្មវិធី​ខាងក្រោយ ។\n"
 " "
-
-#: libs/facesengine/database/databasefaceconfigelement.cpp:208
-#, fuzzy, kde-format
-#| msgid ""
-#| "Could not open the dbconfig.xml file. This file is installed with the "
-#| "digikam application and is absolutely required to run digikam. Please "
-#| "check your installation."
-msgid ""
-"Could not open the configuration file <b>%1</b>. This file is installed with "
-"digiKam and is absolutely required to run recognition. Please check your "
-"installation."
-msgstr ""
-"មិន​អាច​បើក​ឯកសារ dbconfig.xml បាន​ទេ ។ ឯកសារ​នេះ​ត្រូវ​បាន​ដំឡើង​ជាមួយ​កម្មវិធី digikam និង​"
-"កម្មវិធី​ដែល​បាន​ទាមទារ​ ដើម្បី​ដំណើរការ digikam ។ សូម​ពិនិត្យមើល​ការ​ដំឡើង​របស់​អ្នក ។"
-
-#: libs/facesengine/database/databasefaceconfigelement.cpp:258
-#, fuzzy, kde-format
-msgid ""
-"An old version of the configuration file <b>%1</b> is found. Please ensure "
-"that the right version of digiKam is installed."
-msgstr ""
-"រក​មិន​ឃើញ​កំណែ​ចាស់​របស់​ឯកសារ dbconfig.xml <filename>%1</filename>​ឡើយ ។ សូម​ប្រាកដ​ថា​កំណែ​"
-"ដែល​បាន​ចេញ​ជាមួយ​កំណែ​ដែល​បាន​ដំណើរការ​របស់ digiKam ត្រូវ​បាន​ដំឡើង​ ។"
 
 #: libs/facesengine/database/databasefaceschemaupdater.cpp:160
 #, fuzzy
@@ -27546,6 +27520,27 @@ msgstr "ប្ដូរ​ប្រេកង់ ៖"
 msgctxt "%1 is the screen number (0, 1, ...)"
 msgid "Screen %1"
 msgstr ""
+
+#, fuzzy
+#~| msgid ""
+#~| "Could not open the dbconfig.xml file. This file is installed with the "
+#~| "digikam application and is absolutely required to run digikam. Please "
+#~| "check your installation."
+#~ msgid ""
+#~ "Could not open the configuration file <b>%1</b>. This file is installed "
+#~ "with digiKam and is absolutely required to run recognition. Please check "
+#~ "your installation."
+#~ msgstr ""
+#~ "មិន​អាច​បើក​ឯកសារ dbconfig.xml បាន​ទេ ។ ឯកសារ​នេះ​ត្រូវ​បាន​ដំឡើង​ជាមួយ​កម្មវិធី digikam និង​"
+#~ "កម្មវិធី​ដែល​បាន​ទាមទារ​ ដើម្បី​ដំណើរការ digikam ។ សូម​ពិនិត្យមើល​ការ​ដំឡើង​របស់​អ្នក ។"
+
+#, fuzzy
+#~ msgid ""
+#~ "An old version of the configuration file <b>%1</b> is found. Please "
+#~ "ensure that the right version of digiKam is installed."
+#~ msgstr ""
+#~ "រក​មិន​ឃើញ​កំណែ​ចាស់​របស់​ឯកសារ dbconfig.xml <filename>%1</filename>​ឡើយ ។ សូម​ប្រាកដ​ថា​"
+#~ "កំណែ​ដែល​បាន​ចេញ​ជាមួយ​កំណែ​ដែល​បាន​ដំណើរការ​របស់ digiKam ត្រូវ​បាន​ដំឡើង​ ។"
 
 #, fuzzy
 #~ msgid "Could not open dbfaceconfig.xml file <filename>%1</filename>"
