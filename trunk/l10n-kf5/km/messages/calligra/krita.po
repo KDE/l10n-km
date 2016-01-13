@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-12 08:37+0000\n"
+"POT-Creation-Date: 2016-01-13 07:21+0000\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1663,8 +1663,10 @@ msgstr "បញ្ច្រាស"
 
 #. i18n: ectx: property (text), widget (QPushButton, bnSelect)
 #. i18n: ectx: Menu (Select)
-#: gemini/kritagemini.rc:126 krita.rc:207
+#. i18n: ectx: Menu (LayerSelect)
+#: gemini/kritagemini.rc:126 krita.rc:168 krita.rc:220
 #: plugins/extensions/colorrange/wdg_colorrange.ui:131
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:538
 #: plugins/extensions/imagesize/imagesize.rc:12
 #: plugins/extensions/modify_selection/modify_selection.rc:4
 #: sketch/kritasketch.rc:126
@@ -1672,12 +1674,12 @@ msgid "&Select"
 msgstr "ជ្រើស"
 
 #. i18n: ectx: Menu (Filter)
-#: gemini/kritagemini.rc:139 krita.rc:233 sketch/kritasketch.rc:139
+#: gemini/kritagemini.rc:139 krita.rc:246 sketch/kritasketch.rc:139
 msgid "Filte&r"
 msgstr "តម្រង"
 
 #. i18n: ectx: Menu (tools)
-#: gemini/kritagemini.rc:156 krita.rc:253
+#: gemini/kritagemini.rc:156 krita.rc:266
 #: plugins/extensions/bigbrother/bigbrother.rc:4 sketch/kritasketch.rc:156
 msgid "&Tools"
 msgstr "ឧបករណ៍"
@@ -1691,7 +1693,7 @@ msgid "Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: ectx: ToolBar (BrushesAndStuff)
-#: gemini/kritagemini.rc:172 krita.rc:310 sketch/kritasketch.rc:172
+#: gemini/kritagemini.rc:172 krita.rc:323 sketch/kritasketch.rc:172
 msgid "Brushes and Stuff"
 msgstr "ជក់ និង ឧបករណ៍"
 
@@ -1742,7 +1744,7 @@ msgid "Krita: No QML Found"
 msgstr ""
 
 #: gemini/MainWindow.cpp:286 gemini/MainWindow.cpp:648
-#: sketch/MainWindow.cpp:140 ui/KisView.cpp:810
+#: sketch/MainWindow.cpp:140 ui/KisView.cpp:779
 #, fuzzy
 #| msgid "untitled-1"
 msgid "Untitled"
@@ -1774,16 +1776,16 @@ msgstr "គ្មាន​ចំណងជើង ១"
 #: plugins/tools/tool_transform2/kis_free_transform_strategy_gsl_helpers.cpp:338
 #: ui/dialogs/kis_dlg_preferences.cc:234 ui/input/kis_tablet_debugger.cpp:100
 #: ui/kis_filter_manager.cc:214 ui/kis_filter_manager.cc:223
-#: ui/kis_layer_manager.cc:855 ui/KisApplication.cpp:537
-#: ui/KisApplication.cpp:540 ui/KisApplication.cpp:565
-#: ui/KisApplication.cpp:591 ui/KisApplication.cpp:612 ui/KisDocument.cpp:623
+#: ui/kis_layer_manager.cc:855 ui/KisApplication.cpp:550
+#: ui/KisApplication.cpp:553 ui/KisApplication.cpp:578
+#: ui/KisApplication.cpp:604 ui/KisApplication.cpp:625 ui/KisDocument.cpp:623
 #: ui/KisDocument.cpp:625 ui/KisDocument.cpp:1098 ui/KisDocument.cpp:1144
 #: ui/KisDocument.cpp:1285 ui/KisDocument.cpp:1940 ui/KisDocument.cpp:1943
 #: ui/KisImportExportManager.cpp:243 ui/KisImportExportManager.cpp:254
 #: ui/KisImportExportManager.cpp:552 ui/KisMainWindow.cpp:705
-#: ui/KisMainWindow.cpp:769 ui/KisMainWindow.cpp:783 ui/KisMainWindow.cpp:1475
-#: ui/KisMainWindow.cpp:1621 ui/KisMainWindow.cpp:1633
-#: ui/KisTemplateCreateDia.cpp:303 ui/KisView.cpp:813
+#: ui/KisMainWindow.cpp:769 ui/KisMainWindow.cpp:783 ui/KisMainWindow.cpp:1476
+#: ui/KisMainWindow.cpp:1622 ui/KisMainWindow.cpp:1634
+#: ui/KisTemplateCreateDia.cpp:303 ui/KisView.cpp:782
 #: ui/opengl/kis_opengl_canvas2.cpp:631
 #: ui/opengl/kis_opengl_image_textures.cpp:575
 #: ui/widgets/kis_custom_image_widget.cc:247
@@ -1793,7 +1795,7 @@ msgctxt "@title:window"
 msgid "Krita"
 msgstr "កម្មវិធី​ krita "
 
-#: gemini/MainWindow.cpp:652 ui/KisView.cpp:814
+#: gemini/MainWindow.cpp:652 ui/KisView.cpp:783
 #, kde-format
 msgid ""
 "<p>The document <b>'%1'</b> has been modified.</p><p>Do you want to save it?"
@@ -3126,7 +3128,7 @@ msgctxt "(qtundo-format)"
 msgid "Reselect"
 msgstr "ជ្រើស​ឡើង​វិញ"
 
-#: image/commands_new/kis_image_resize_command.cpp:28 image/kis_image.cc:445
+#: image/commands_new/kis_image_resize_command.cpp:28 image/kis_image.cc:451
 #, fuzzy
 #| msgid "Resize Image"
 msgctxt "(qtundo-format)"
@@ -3310,100 +3312,102 @@ msgstr ""
 msgid "Mitchell"
 msgstr "Mitchell"
 
-#: image/kis_image.cc:351
+#: image/kis_image.cc:353
 msgid "background"
 msgstr "ផ្ទៃ​ខាងក្រោយ​"
 
-#: image/kis_image.cc:354
-#, kde-format
-msgid "Layer %1"
-msgstr "ស្រទាប់ %1"
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
+#. i18n: ectx: Menu (Layer)
+#: image/kis_image.cc:357 plugins/extensions/imagesize/imagesize.rc:9
+#: plugins/tools/tool_crop/wdg_tool_crop.ui:227
+msgid "Layer"
+msgstr "ស្រទាប់"
 
-#: image/kis_image.cc:444
+#: image/kis_image.cc:450
 #, fuzzy
 #| msgid "Crop Image"
 msgctxt "(qtundo-format)"
 msgid "Crop Image"
 msgstr "​ច្រឹប​រូបភាព"
 
-#: image/kis_image.cc:486
+#: image/kis_image.cc:492
 #, fuzzy
 #| msgid "&Group Layer"
 msgctxt "(qtundo-format)"
 msgid "Crop Layer"
 msgstr "ដាក់​ស្រទាប់​ជា​ក្រុម"
 
-#: image/kis_image.cc:487
+#: image/kis_image.cc:493
 #, fuzzy
 #| msgid "Unsharp Mask"
 msgctxt "(qtundo-format)"
 msgid "Crop Mask"
 msgstr "ធ្វើ​ឲ្យ​របាំង​មិន​ច្បាស់"
 
-#: image/kis_image.cc:519
+#: image/kis_image.cc:525
 #, fuzzy
 #| msgid "Scale Image"
 msgctxt "(qtundo-format)"
 msgid "Scale Image"
 msgstr "ធ្វើ​​មាត្រដ្ឋាន រូបភាព"
 
-#: image/kis_image.cc:520
+#: image/kis_image.cc:526
 #, fuzzy
 #| msgid "Image Resolution"
 msgctxt "(qtundo-format)"
 msgid "Change Image Resolution"
 msgstr "គុណភាព​បង្ហាញ​រូបភាព"
 
-#: image/kis_image.cc:567
+#: image/kis_image.cc:573
 #, fuzzy
 #| msgid "Scale Layer"
 msgctxt "(qtundo-format)"
 msgid "Scale Layer"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ស្រទាប់"
 
-#: image/kis_image.cc:655
+#: image/kis_image.cc:661
 #, fuzzy
 #| msgid "Rotate Image"
 msgctxt "(qtundo-format)"
 msgid "Rotate Image"
 msgstr "បង្វិល​រូបភាព"
 
-#: image/kis_image.cc:660
+#: image/kis_image.cc:666
 #, fuzzy
 #| msgid "Rotate Layer"
 msgctxt "(qtundo-format)"
 msgid "Rotate Layer"
 msgstr "បង្វិល​ស្រទាប់"
 
-#: image/kis_image.cc:727
+#: image/kis_image.cc:733
 #, fuzzy
 #| msgid "Shear layer"
 msgctxt "(qtundo-format)"
 msgid "Shear layer"
 msgstr "កាត់​ស្រទាប់​"
 
-#: image/kis_image.cc:733
+#: image/kis_image.cc:739
 #, fuzzy
 #| msgid "Shear Image"
 msgctxt "(qtundo-format)"
 msgid "Shear Image"
 msgstr "កាត់​រូបភាព​"
 
-#: image/kis_image.cc:745
+#: image/kis_image.cc:751
 #, fuzzy
 #| msgid "Convert Image Color Space"
 msgctxt "(qtundo-format)"
 msgid "Convert Image Color Space"
 msgstr "បម្លែង ប្រភេទ​រូបភាព"
 
-#: image/kis_image.cc:778
+#: image/kis_image.cc:784
 #, fuzzy
 #| msgid "Convert Projection Color Space"
 msgctxt "(qtundo-format)"
 msgid "Convert Projection Color Space"
 msgstr "បម្លែង​ចន្លោះ​ពណ៌​នៃ​ការ​បញ្ចាំង"
 
-#: image/kis_image.cc:1481
+#: image/kis_image.cc:1487
 #, fuzzy
 #| msgid "Grow Selection"
 msgctxt "(qtundo-format)"
@@ -3469,41 +3473,41 @@ msgstr "បង្ខំ​ឲ្យ​មាន​សមាមាត្រ"
 msgid "Merged"
 msgstr "បាន​បញ្ចូល​ចូល​គ្នា​ច្បាប់​ចម្លង"
 
-#: image/kis_layer_utils.cpp:555
+#: image/kis_layer_utils.cpp:539
 #, fuzzy
 #| msgid "Clear Points"
 msgctxt "(qtundo-format)"
 msgid "Merge Down"
 msgstr "ចំណុច​ជម្រះ"
 
-#: image/kis_layer_utils.cpp:647
+#: image/kis_layer_utils.cpp:638
 #, fuzzy
 #| msgid "Copy From"
 msgid "Copy of"
 msgstr "ចម្លង​ពី"
 
-#: image/kis_layer_utils.cpp:708
+#: image/kis_layer_utils.cpp:699
 #, fuzzy
 #| msgid "Remove Selected Color"
 msgctxt "(qtundo-format)"
 msgid "Merge Selected Nodes"
 msgstr "យក​ពណ៌​ដែល​បាន​ជ្រើស​ចេញ​"
 
-#: image/kis_layer_utils.cpp:789
+#: image/kis_layer_utils.cpp:780
 #, fuzzy
 #| msgid "&Local Selection"
 msgctxt "(qtundo-format)"
 msgid "Merge Selection Masks"
 msgstr "ជម្រើស​មូលដ្ឋាន"
 
-#: image/kis_layer_utils.cpp:812
+#: image/kis_layer_utils.cpp:803
 #, fuzzy
 #| msgid "Flatten Layer"
 msgctxt "(qtundo-format)"
 msgid "Flatten Layer"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
-#: image/kis_layer_utils.cpp:820
+#: image/kis_layer_utils.cpp:811
 #, fuzzy
 #| msgid "Flatten Image"
 msgctxt "(qtundo-format)"
@@ -6473,8 +6477,110 @@ msgctxt "action"
 msgid "Paste layer from clipboard"
 msgstr "ស្រទាប់​ដំបូង​ពី​ក្ដារតម្បៀតខ្ទាស់"
 
-#. i18n: context: Action (save_node_as_image), Actions (Layers), ActionCollection (Krita)
+#. i18n: context: Action (create_quick_group), Actions (Layers), ActionCollection (Krita)
 #: krita.action:2509
+msgctxt "action"
+msgid "Quick Group"
+msgstr ""
+
+#. i18n: context: Action (create_quick_group), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2511
+msgctxt "action"
+msgid "Create a group layer containing selected layers"
+msgstr ""
+
+#. i18n: context: Action (create_quick_clipping_group), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2522
+msgctxt "action"
+msgid "Quick Clipping Group"
+msgstr ""
+
+#. i18n: context: Action (create_quick_clipping_group), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2524
+msgctxt "action"
+msgid "Group selected layers and add a layer with clipped alpha channel"
+msgstr ""
+
+#. i18n: context: Action (select_all_layers), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2535
+#, fuzzy
+#| msgid "&Filter Layer..."
+msgctxt "action"
+msgid "All Layers"
+msgstr "ត្រង​ស្រទាប់..."
+
+#. i18n: context: Action (select_all_layers), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2537
+#, fuzzy
+#| msgid "Scale Layer"
+msgctxt "action"
+msgid "Select all layers"
+msgstr "ធ្វើ​មាត្រដ្ឋាន​ស្រទាប់"
+
+#. i18n: context: Action (select_visible_layers), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2548
+#, fuzzy
+#| msgid "&Filter Layer..."
+msgctxt "action"
+msgid "Visible Layers"
+msgstr "ត្រង​ស្រទាប់..."
+
+#. i18n: context: Action (select_visible_layers), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2550
+#, fuzzy
+#| msgid "Sample All Visible Layers"
+msgctxt "action"
+msgid "Select all visible layers"
+msgstr "ធ្វើជា​គំរូ​ដល់​ស្រទាប់​ដែល​មើល​ឃើញ​ទាំងអស់"
+
+#. i18n: context: Action (select_locked_layers), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2561
+#, fuzzy
+#| msgid "Locked pattern"
+msgctxt "action"
+msgid "Locked Layers"
+msgstr "លំនាំ​ជាប់សោ"
+
+#. i18n: context: Action (select_locked_layers), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2563
+#, fuzzy
+#| msgid "Scale Layer"
+msgctxt "action"
+msgid "Select all locked layers"
+msgstr "ធ្វើ​មាត្រដ្ឋាន​ស្រទាប់"
+
+#. i18n: context: Action (select_invisible_layers), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2574
+#, fuzzy
+#| msgid "&Filter Layer..."
+msgctxt "action"
+msgid "Invisible Layers"
+msgstr "ត្រង​ស្រទាប់..."
+
+#. i18n: context: Action (select_invisible_layers), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2576
+#, fuzzy
+#| msgid "Sample All Visible Layers"
+msgctxt "action"
+msgid "Select all invisible layers"
+msgstr "ធ្វើជា​គំរូ​ដល់​ស្រទាប់​ដែល​មើល​ឃើញ​ទាំងអស់"
+
+#. i18n: context: Action (select_unlocked_layers), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2587
+#, fuzzy
+#| msgid "&Clone Layer"
+msgctxt "action"
+msgid "Unlocked Layers"
+msgstr "ក្លូន​ស្រទាប់"
+
+#. i18n: context: Action (select_unlocked_layers), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2589
+msgctxt "action"
+msgid "Select all unlocked layers"
+msgstr ""
+
+#. i18n: context: Action (save_node_as_image), Actions (Layers), ActionCollection (Krita)
+#: krita.action:2600
 #, fuzzy
 #| msgid "Save Layer as Image..."
 msgctxt "action"
@@ -6482,7 +6588,7 @@ msgid "&Save Layer/Mask..."
 msgstr "រក្សា​ទុក​ស្រទាប់​ជា​រូបភាព..."
 
 #. i18n: context: Action (save_node_as_image), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2511
+#: krita.action:2602
 #, fuzzy
 #| msgid "Save Layer as Image..."
 msgctxt "action"
@@ -6490,7 +6596,7 @@ msgid "Save Layer/Mask"
 msgstr "រក្សា​ទុក​ស្រទាប់​ជា​រូបភាព..."
 
 #. i18n: context: Action (save_groups_as_images), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2522
+#: krita.action:2613
 #, fuzzy
 #| msgid "&Group Layer"
 msgctxt "action"
@@ -6498,7 +6604,7 @@ msgid "Save &Group Layers..."
 msgstr "ដាក់​ស្រទាប់​ជា​ក្រុម"
 
 #. i18n: context: Action (save_groups_as_images), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2524
+#: krita.action:2615
 #, fuzzy
 #| msgid "&Group Layer"
 msgctxt "action"
@@ -6506,7 +6612,7 @@ msgid "Save Group Layers"
 msgstr "ដាក់​ស្រទាប់​ជា​ក្រុម"
 
 #. i18n: context: Action (import_layer_from_file), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2535
+#: krita.action:2626
 #, fuzzy
 #| msgid "Compose Layer..."
 msgctxt "action"
@@ -6514,7 +6620,7 @@ msgid "I&mport Layer..."
 msgstr "ស្រទាប់​តែង..."
 
 #. i18n: context: Action (import_layer_from_file), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2537
+#: krita.action:2628
 #, fuzzy
 #| msgid "Compose Layer..."
 msgctxt "action"
@@ -6522,7 +6628,7 @@ msgid "Import Layer"
 msgstr "ស្រទាប់​តែង..."
 
 #. i18n: context: Action (import_layer_as_paint_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2548
+#: krita.action:2639
 #, fuzzy
 #| msgid "&Paint Layer"
 msgctxt "action"
@@ -6530,7 +6636,7 @@ msgid "&as Paint Layer..."
 msgstr "ស្រទាប់​គូរ"
 
 #. i18n: context: Action (import_layer_as_paint_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2550
+#: krita.action:2641
 #, fuzzy
 #| msgid "&Paint Layer"
 msgctxt "action"
@@ -6538,7 +6644,7 @@ msgid "as Paint Layer"
 msgstr "ស្រទាប់​គូរ"
 
 #. i18n: context: Action (import_layer_as_transparency_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2561
+#: krita.action:2652
 #, fuzzy
 #| msgid "Transparency Mask"
 msgctxt "action"
@@ -6546,7 +6652,7 @@ msgid "as &Transparency Mask..."
 msgstr "របាំង​ថ្លា"
 
 #. i18n: context: Action (import_layer_as_transparency_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2563
+#: krita.action:2654
 #, fuzzy
 #| msgid "Transparency Mask"
 msgctxt "action"
@@ -6554,7 +6660,7 @@ msgid "as Transparency Mask"
 msgstr "របាំង​ថ្លា"
 
 #. i18n: context: Action (import_layer_as_filter_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2574
+#: krita.action:2665
 #, fuzzy
 #| msgid "&Filter Mask..."
 msgctxt "action"
@@ -6562,7 +6668,7 @@ msgid "as &Filter Mask..."
 msgstr "របាំង​តម្រង..."
 
 #. i18n: context: Action (import_layer_as_filter_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2576
+#: krita.action:2667
 #, fuzzy
 #| msgid "&Filter Mask..."
 msgctxt "action"
@@ -6570,7 +6676,7 @@ msgid "as Filter Mask"
 msgstr "របាំង​តម្រង..."
 
 #. i18n: context: Action (import_layer_as_selection_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2587
+#: krita.action:2678
 #, fuzzy
 #| msgid "No Selection"
 msgctxt "action"
@@ -6578,7 +6684,7 @@ msgid "as &Selection Mask..."
 msgstr "គ្មាន​ជម្រើស"
 
 #. i18n: context: Action (import_layer_as_selection_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2589
+#: krita.action:2680
 #, fuzzy
 #| msgid "No Selection"
 msgctxt "action"
@@ -6586,7 +6692,7 @@ msgid "as Selection Mask"
 msgstr "គ្មាន​ជម្រើស"
 
 #. i18n: context: Action (convert_to_paint_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2600
+#: krita.action:2691
 #, fuzzy
 #| msgid "&Paint Layer"
 msgctxt "action"
@@ -6594,7 +6700,7 @@ msgid "to &Paint Layer"
 msgstr "ស្រទាប់​គូរ"
 
 #. i18n: context: Action (convert_to_paint_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2602
+#: krita.action:2693
 #, fuzzy
 #| msgid "&Paint Layer"
 msgctxt "action"
@@ -6602,7 +6708,7 @@ msgid "to Paint Layer"
 msgstr "ស្រទាប់​គូរ"
 
 #. i18n: context: Action (convert_to_transparency_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2613
+#: krita.action:2704
 #, fuzzy
 #| msgid "&Transparency Mask"
 msgctxt "action"
@@ -6610,7 +6716,7 @@ msgid "to &Transparency Mask"
 msgstr "របាំង​ថ្លា"
 
 #. i18n: context: Action (convert_to_transparency_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2615
+#: krita.action:2706
 #, fuzzy
 #| msgid "&Transparency Mask"
 msgctxt "action"
@@ -6618,7 +6724,7 @@ msgid "to Transparency Mask"
 msgstr "របាំង​ថ្លា"
 
 #. i18n: context: Action (convert_to_filter_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2626
+#: krita.action:2717
 #, fuzzy
 #| msgid "&Filter Mask..."
 msgctxt "action"
@@ -6626,7 +6732,7 @@ msgid "to &Filter Mask..."
 msgstr "របាំង​តម្រង..."
 
 #. i18n: context: Action (convert_to_filter_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2628
+#: krita.action:2719
 #, fuzzy
 #| msgid "&Filter Mask..."
 msgctxt "action"
@@ -6634,7 +6740,7 @@ msgid "to Filter Mask"
 msgstr "របាំង​តម្រង..."
 
 #. i18n: context: Action (convert_to_selection_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2639
+#: krita.action:2730
 #, fuzzy
 #| msgid "No Selection"
 msgctxt "action"
@@ -6642,7 +6748,7 @@ msgid "to &Selection Mask"
 msgstr "គ្មាន​ជម្រើស"
 
 #. i18n: context: Action (convert_to_selection_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2641
+#: krita.action:2732
 #, fuzzy
 #| msgid "No Selection"
 msgctxt "action"
@@ -6650,7 +6756,7 @@ msgid "to Selection Mask"
 msgstr "គ្មាន​ជម្រើស"
 
 #. i18n: context: Action (split_alpha_into_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2652
+#: krita.action:2743
 #, fuzzy
 #| msgid "Alpha Options"
 msgctxt "action"
@@ -6658,7 +6764,7 @@ msgid "&Alpha into Mask"
 msgstr "ជម្រើស​​អាល់ហ្វា"
 
 #. i18n: context: Action (split_alpha_into_mask), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2654
+#: krita.action:2745
 #, fuzzy
 #| msgid "Alpha Options"
 msgctxt "action"
@@ -6666,7 +6772,7 @@ msgid "Alpha into Mask"
 msgstr "ជម្រើស​​អាល់ហ្វា"
 
 #. i18n: context: Action (split_alpha_write), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2665
+#: krita.action:2756
 #, fuzzy
 #| msgid "ignore alpha"
 msgctxt "action"
@@ -6674,7 +6780,7 @@ msgid "&Write as Alpha"
 msgstr "មិនអើពើ​អាល់ហ្វា"
 
 #. i18n: context: Action (split_alpha_write), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2667
+#: krita.action:2758
 #, fuzzy
 #| msgid "ignore alpha"
 msgctxt "action"
@@ -6682,7 +6788,7 @@ msgid "Write as Alpha"
 msgstr "មិនអើពើ​អាល់ហ្វា"
 
 #. i18n: context: Action (split_alpha_save_merged), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2678
+#: krita.action:2769
 #, fuzzy
 #| msgid "Save..."
 msgctxt "action"
@@ -6690,7 +6796,7 @@ msgid "&Save Merged..."
 msgstr "រក្សាទុក..."
 
 #. i18n: context: Action (split_alpha_save_merged), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2680
+#: krita.action:2771
 #, fuzzy
 #| msgid "Save..."
 msgctxt "action"
@@ -6698,7 +6804,7 @@ msgid "Save Merged"
 msgstr "រក្សាទុក..."
 
 #. i18n: context: Action (layersplit), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2691
+#: krita.action:2782
 #, fuzzy
 #| msgid "Scale &Layer..."
 msgctxt "action"
@@ -6706,7 +6812,7 @@ msgid "Split Layer..."
 msgstr "​មាត្រដ្ឋាន​ស្រទាប់​..."
 
 #. i18n: context: Action (layersplit), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2693
+#: krita.action:2784
 #, fuzzy
 #| msgid "Scale Layer"
 msgctxt "action"
@@ -6714,7 +6820,7 @@ msgid "Split Layer"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ស្រទាប់"
 
 #. i18n: context: Action (mirrorNodeX), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2704
+#: krita.action:2795
 #, fuzzy
 #| msgid "Mirror Horizontally"
 msgctxt "action"
@@ -6722,7 +6828,7 @@ msgid "Mirror Layer Hori&zontally"
 msgstr "ការ​ឆ្លុះ​ផ្ដេក"
 
 #. i18n: context: Action (mirrorNodeX), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2706
+#: krita.action:2797
 #, fuzzy
 #| msgid "Mirror Horizontally"
 msgctxt "action"
@@ -6730,7 +6836,7 @@ msgid "Mirror Layer Horizontally"
 msgstr "ការ​ឆ្លុះ​ផ្ដេក"
 
 #. i18n: context: Action (mirrorNodeY), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2717
+#: krita.action:2808
 #, fuzzy
 #| msgid "Mirror Vertically"
 msgctxt "action"
@@ -6738,7 +6844,7 @@ msgid "Mirror Layer &Vertically"
 msgstr "ការ​ឆ្លុះ​បញ្ឈរ"
 
 #. i18n: context: Action (mirrorNodeY), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2719
+#: krita.action:2810
 #, fuzzy
 #| msgid "Mirror Vertically"
 msgctxt "action"
@@ -6746,7 +6852,7 @@ msgid "Mirror Layer Vertically"
 msgstr "ការ​ឆ្លុះ​បញ្ឈរ"
 
 #. i18n: context: Action (rotatelayer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2730
+#: krita.action:2821
 #, fuzzy
 #| msgid "&Rotate Layer..."
 msgctxt "action"
@@ -6754,7 +6860,7 @@ msgid "&Rotate Layer..."
 msgstr "បង្វិល ស្រទាប់..."
 
 #. i18n: context: Action (rotatelayer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2732
+#: krita.action:2823
 #, fuzzy
 #| msgid "Rotate Layer"
 msgctxt "action"
@@ -6762,7 +6868,7 @@ msgid "Rotate Layer"
 msgstr "បង្វិល​ស្រទាប់"
 
 #. i18n: context: Action (rotateLayerCW90), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2743
+#: krita.action:2834
 #, fuzzy
 #| msgctxt "rotate the layer 90 degrees to the right"
 #| msgid "Rotate Layer of 90° to the Right"
@@ -6771,7 +6877,7 @@ msgid "Rotate &Layer 90° to the Right"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ៩០ ដឺក្រេ​ទៅ​ស្តាំ"
 
 #. i18n: context: Action (rotateLayerCW90), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2745
+#: krita.action:2836
 #, fuzzy
 #| msgctxt "rotate the layer 90 degrees to the right"
 #| msgid "Rotate Layer of 90° to the Right"
@@ -6780,7 +6886,7 @@ msgid "Rotate Layer 90° to the Right"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ៩០ ដឺក្រេ​ទៅ​ស្តាំ"
 
 #. i18n: context: Action (rotateLayerCCW90), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2756
+#: krita.action:2847
 #, fuzzy
 #| msgctxt "rotate the layer 90 degrees to the left"
 #| msgid "Rotate Layer of 90° to the Left"
@@ -6789,7 +6895,7 @@ msgid "Rotate Layer &90° to the Left"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ៩០ ដឺក្រេ​ទៅ​ឆ្វេង"
 
 #. i18n: context: Action (rotateLayerCCW90), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2758
+#: krita.action:2849
 #, fuzzy
 #| msgctxt "rotate the layer 90 degrees to the left"
 #| msgid "Rotate Layer of 90° to the Left"
@@ -6798,7 +6904,7 @@ msgid "Rotate Layer 90° to the Left"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ៩០ ដឺក្រេ​ទៅ​ឆ្វេង"
 
 #. i18n: context: Action (rotateLayer180), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2769
+#: krita.action:2860
 #, fuzzy
 #| msgctxt "rotate the layer 180 degrees"
 #| msgid "Rotate Layer of 180°"
@@ -6807,7 +6913,7 @@ msgid "Rotate Layer &180°"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ១៨០ ដឺក្រេ"
 
 #. i18n: context: Action (rotateLayer180), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2771
+#: krita.action:2862
 #, fuzzy
 #| msgctxt "rotate the layer 180 degrees"
 #| msgid "Rotate Layer of 180°"
@@ -6816,7 +6922,7 @@ msgid "Rotate Layer 180°"
 msgstr "បង្វិល​ស្រទាប់​ត្រឹម​ ១៨០ ដឺក្រេ"
 
 #. i18n: context: Action (layersize), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2782
+#: krita.action:2873
 #, fuzzy
 #| msgid "Scale To New Size..."
 msgctxt "action"
@@ -6824,7 +6930,7 @@ msgid "Scale &Layer to new Size..."
 msgstr "រក្សា​ទុក​ស្រទាប់​ជា​រូបភាព..."
 
 #. i18n: context: Action (layersize), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2784
+#: krita.action:2875
 #, fuzzy
 #| msgid "Scale To New Size..."
 msgctxt "action"
@@ -6832,7 +6938,7 @@ msgid "Scale Layer to new Size"
 msgstr "រក្សា​ទុក​ស្រទាប់​ជា​រូបភាព..."
 
 #. i18n: context: Action (shearlayer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2795
+#: krita.action:2886
 #, fuzzy
 #| msgid "&Shear Layer..."
 msgctxt "action"
@@ -6840,7 +6946,7 @@ msgid "&Shear Layer..."
 msgstr "កាត់​ស្រទាប់..."
 
 #. i18n: context: Action (shearlayer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2797
+#: krita.action:2888
 #, fuzzy
 #| msgid "Shear Layer"
 msgctxt "action"
@@ -6848,7 +6954,7 @@ msgid "Shear Layer"
 msgstr "កាត់​ស្រទាប់"
 
 #. i18n: context: Action (offsetlayer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2808
+#: krita.action:2899
 #, fuzzy
 #| msgid "&Shear Layer..."
 msgctxt "action"
@@ -6856,7 +6962,7 @@ msgid "&Offset Layer..."
 msgstr "កាត់​ស្រទាប់..."
 
 #. i18n: context: Action (offsetlayer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2810
+#: krita.action:2901
 #, fuzzy
 #| msgid "Offset scale"
 msgctxt "action"
@@ -6864,13 +6970,13 @@ msgid "Offset Layer"
 msgstr "មាត្រដ្ឋាន​អុហ្វសិត"
 
 #. i18n: context: Action (clones_array), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2821
+#: krita.action:2912
 msgctxt "action"
 msgid "Clones &Array..."
 msgstr ""
 
 #. i18n: context: Action (clones_array), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2823
+#: krita.action:2914
 #, fuzzy
 #| msgid "&Clone Layer"
 msgctxt "action"
@@ -6878,7 +6984,7 @@ msgid "Clones Array"
 msgstr "ក្លូន​ស្រទាប់"
 
 #. i18n: context: Action (EditLayerMetaData), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2834
+#: krita.action:2925
 #, fuzzy
 #| msgid "&Edit metadata..."
 msgctxt "action"
@@ -6886,7 +6992,7 @@ msgid "&Edit metadata..."
 msgstr "កែ​សម្រួល​ទិន្នន័យ​មេតា..."
 
 #. i18n: context: Action (EditLayerMetaData), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2836
+#: krita.action:2927
 #, fuzzy
 #| msgid "&Edit metadata..."
 msgctxt "action"
@@ -6894,7 +7000,7 @@ msgid "Edit metadata"
 msgstr "កែ​សម្រួល​ទិន្នន័យ​មេតា..."
 
 #. i18n: context: Action (histogram), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2847
+#: krita.action:2938
 #, fuzzy
 #| msgid "&Histogram..."
 msgctxt "action"
@@ -6902,7 +7008,7 @@ msgid "&Histogram..."
 msgstr "អ៊ីស្តូក្រាម"
 
 #. i18n: context: Action (histogram), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2849
+#: krita.action:2940
 #, fuzzy
 #| msgid "Histogram"
 msgctxt "action"
@@ -6910,7 +7016,7 @@ msgid "Histogram"
 msgstr "អ៊ីស្តូក្រាម"
 
 #. i18n: context: Action (layercolorspaceconversion), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2860
+#: krita.action:2951
 #, fuzzy
 #| msgid "Convert Image Color Space"
 msgctxt "action"
@@ -6918,7 +7024,7 @@ msgid "&Convert Layer Color Space..."
 msgstr "បម្លែង ប្រភេទ​រូបភាព"
 
 #. i18n: context: Action (layercolorspaceconversion), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2862
+#: krita.action:2953
 #, fuzzy
 #| msgid "Convert Image Color Space"
 msgctxt "action"
@@ -6926,7 +7032,7 @@ msgid "Convert Layer Color Space"
 msgstr "បម្លែង ប្រភេទ​រូបភាព"
 
 #. i18n: context: Action (merge_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2873
+#: krita.action:2964
 #, fuzzy
 #| msgid "&Merge with Layer Below"
 msgctxt "action"
@@ -6934,7 +7040,7 @@ msgid "&Merge with Layer Below"
 msgstr "បញ្ចូល​ស្រទាប់​ខាង​ក្រោម​ចូល​គ្នា​"
 
 #. i18n: context: Action (merge_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2875
+#: krita.action:2966
 #, fuzzy
 #| msgid "Merge with Layer Below"
 msgctxt "action"
@@ -6942,7 +7048,7 @@ msgid "Merge with Layer Below"
 msgstr "បញ្ចូល​ស្រទាប់​ខាងក្រោម​ចូលគ្នា "
 
 #. i18n: context: Action (flatten_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2886
+#: krita.action:2977
 #, fuzzy
 #| msgid "&Flatten Layer"
 msgctxt "action"
@@ -6950,7 +7056,7 @@ msgid "&Flatten Layer"
 msgstr "ធ្វើ​ឲ្យ​រូបភាព​រាប​ស្មើ"
 
 #. i18n: context: Action (flatten_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2888
+#: krita.action:2979
 #, fuzzy
 #| msgid "Flatten Layer"
 msgctxt "action"
@@ -6958,7 +7064,7 @@ msgid "Flatten Layer"
 msgstr "ធ្វើ​រូបភាព​ឲ្យ​រាបស្មើ"
 
 #. i18n: context: Action (rasterize_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2899
+#: krita.action:2990
 #, fuzzy
 #| msgid "Rasterize Layer"
 msgctxt "action"
@@ -6966,7 +7072,7 @@ msgid "Ras&terize Layer"
 msgstr "ស្រទាប់ Rasterize"
 
 #. i18n: context: Action (rasterize_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2901
+#: krita.action:2992
 #, fuzzy
 #| msgid "Rasterize Layer"
 msgctxt "action"
@@ -6974,7 +7080,7 @@ msgid "Rasterize Layer"
 msgstr "ស្រទាប់ Rasterize"
 
 #. i18n: context: Action (flatten_image), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2912
+#: krita.action:3003
 #, fuzzy
 #| msgid "&Flatten image"
 msgctxt "action"
@@ -6982,7 +7088,7 @@ msgid "Flatten ima&ge"
 msgstr "ធ្វើ​ឲ្យ​រូបភាព​រាប​ស្មើ"
 
 #. i18n: context: Action (flatten_image), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2914
+#: krita.action:3005
 #, fuzzy
 #| msgid "&Flatten image"
 msgctxt "action"
@@ -6990,7 +7096,7 @@ msgid "Flatten image"
 msgstr "ធ្វើ​ឲ្យ​រូបភាព​រាប​ស្មើ"
 
 #. i18n: context: Action (merge_selected_layers), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2925
+#: krita.action:3016
 #, fuzzy
 #| msgid "Scale Layer"
 msgctxt "action"
@@ -6998,7 +7104,7 @@ msgid "&Merge Selected Layers"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ស្រទាប់"
 
 #. i18n: context: Action (merge_selected_layers), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2927
+#: krita.action:3018
 #, fuzzy
 #| msgid "Scale Layer"
 msgctxt "action"
@@ -7006,7 +7112,7 @@ msgid "Merge Selected Layers"
 msgstr "ធ្វើ​មាត្រដ្ឋាន​ស្រទាប់"
 
 #. i18n: context: Action (layer_style), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2936
+#: krita.action:3027
 #, fuzzy
 #| msgid "Layer Size"
 msgctxt "action"
@@ -7014,7 +7120,7 @@ msgid "La&yer Style..."
 msgstr "ទំហំ​ស្រទាប់​"
 
 #. i18n: context: Action (layer_style), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2938
+#: krita.action:3029
 #, fuzzy
 #| msgid "Layer Size"
 msgctxt "action"
@@ -7025,7 +7131,7 @@ msgstr "ទំហំ​ស្រទាប់​"
 #. i18n: context: Action (LayerGroupSwitcher/previous), Actions (Layers), ActionCollection (Krita)
 #. i18n: context: Action (LayerGroupSwitcher/previous), Actions (Layers), ActionCollection (Krita)
 #. i18n: context: Action (LayerGroupSwitcher/previous), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2949 krita.action:2951
+#: krita.action:3040 krita.action:3042
 #, fuzzy
 #| msgid "Move layer or mask up"
 msgctxt "action"
@@ -7036,7 +7142,7 @@ msgstr "ផ្លាស់ទី​ស្រទាប់ ឬ​របាំង�
 #. i18n: context: Action (LayerGroupSwitcher/next), Actions (Layers), ActionCollection (Krita)
 #. i18n: context: Action (LayerGroupSwitcher/next), Actions (Layers), ActionCollection (Krita)
 #. i18n: context: Action (LayerGroupSwitcher/next), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2962 krita.action:2964
+#: krita.action:3053 krita.action:3055
 #, fuzzy
 #| msgid "Move layer or mask up"
 msgctxt "action"
@@ -7047,7 +7153,7 @@ msgstr "ផ្លាស់ទី​ស្រទាប់ ឬ​របាំង�
 #. i18n: context: Action (RenameCurrentLayer), Actions (Layers), ActionCollection (Krita)
 #. i18n: context: Action (RenameCurrentLayer), Actions (Layers), ActionCollection (Krita)
 #. i18n: context: Action (RenameCurrentLayer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2975 krita.action:2977
+#: krita.action:3066 krita.action:3068
 #, fuzzy
 #| msgid "Move current layer"
 msgctxt "action"
@@ -7055,7 +7161,7 @@ msgid "Rename current layer"
 msgstr "ផ្លាស់ទី​ស្រទាប់បច្ចុប្បន្ន"
 
 #. i18n: context: Action (remove_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2988
+#: krita.action:3079
 #, fuzzy
 #| msgid "&Remove Layer"
 msgctxt "action"
@@ -7063,7 +7169,7 @@ msgid "&Remove Layer"
 msgstr "យក​ស្រទាប់​ចេញ"
 
 #. i18n: context: Action (remove_layer), Actions (Layers), ActionCollection (Krita)
-#: krita.action:2990
+#: krita.action:3081
 #, fuzzy
 #| msgid "Remove Layer"
 msgctxt "action"
@@ -7074,7 +7180,7 @@ msgstr "យក​ស្រទាប់​ចេញ"
 #. i18n: context: Action (move_layer_up), Actions (Layers), ActionCollection (Krita)
 #. i18n: context: Action (move_layer_up), Actions (Layers), ActionCollection (Krita)
 #. i18n: context: Action (move_layer_up), Actions (Layers), ActionCollection (Krita)
-#: krita.action:3001 krita.action:3003
+#: krita.action:3092 krita.action:3094
 #, fuzzy
 #| msgid "Move layer or mask up"
 msgctxt "action"
@@ -7082,7 +7188,7 @@ msgid "Move Layer or Mask Up"
 msgstr "ផ្លាស់ទី​ស្រទាប់ ឬ​របាំង​ឡើង​លើ"
 
 #. i18n: context: Action (move_layer_down), Actions (Layers), ActionCollection (Krita)
-#: krita.action:3012
+#: krita.action:3103
 #, fuzzy
 #| msgid "Move layer or mask down"
 msgctxt "action"
@@ -7090,7 +7196,7 @@ msgid "Move Layer or Mask down"
 msgstr "ផ្លាស់ទី​ស្រទាប់ ឬ​របាំង​ចុះក្រោម​"
 
 #. i18n: context: Action (move_layer_down), Actions (Layers), ActionCollection (Krita)
-#: krita.action:3014
+#: krita.action:3105
 #, fuzzy
 #| msgid "Move layer or mask down"
 msgctxt "action"
@@ -7101,7 +7207,7 @@ msgstr "ផ្លាស់ទី​ស្រទាប់ ឬ​របាំង�
 #. i18n: context: Action (layer_properties), Actions (Layers), ActionCollection (Krita)
 #. i18n: context: Action (image_properties), Actions (Image), ActionCollection (Menu)
 #. i18n: context: Action (layer_properties), Actions (Layers), ActionCollection (Krita)
-#: krita.action:3023 kritamenu.action:713
+#: krita.action:3114 kritamenu.action:713
 #, fuzzy
 #| msgid "&Properties..."
 msgctxt "action"
@@ -7112,7 +7218,7 @@ msgstr "លក្ខណៈ​សម្បត្តិ..."
 #. i18n: context: Action (layer_properties), Actions (Layers), ActionCollection (Krita)
 #. i18n: context: Action (image_properties), Actions (Image), ActionCollection (Menu)
 #. i18n: context: Action (layer_properties), Actions (Layers), ActionCollection (Krita)
-#: krita.action:3025 kritamenu.action:715
+#: krita.action:3116 kritamenu.action:715
 #, fuzzy
 #| msgid "Properties..."
 msgctxt "action"
@@ -7127,7 +7233,7 @@ msgid "&Canvas"
 msgstr "ទំហំ​ខ្សែកោង"
 
 #. i18n: ectx: Menu (Rotate)
-#: krita.rc:115 krita.rc:182 plugins/extensions/rotateimage/rotateimage.rc:5
+#: krita.rc:115 krita.rc:191 plugins/extensions/rotateimage/rotateimage.rc:5
 #: plugins/extensions/rotateimage/rotateimage.rc:18
 msgid "&Rotate"
 msgstr "បង្វិល"
@@ -7148,44 +7254,44 @@ msgstr "នាំ​ចូល​រូបភាព"
 
 #. i18n: ectx: Menu (LayerConvert)
 #: krita.rc:160
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:547
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:557
 #, fuzzy
 #| msgid "&Invert"
 msgid "&Convert"
 msgstr "ដាក់​បញ្ច្រាស"
 
 #. i18n: ectx: Menu (LayerSplitAlpha)
-#: krita.rc:172
-#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:553
+#: krita.rc:181
+#: plugins/extensions/dockers/defaultdockers/kis_layer_box.cpp:563
 #, fuzzy
 #| msgid "Color to Alpha"
 msgid "S&plit Alpha"
 msgstr "ពណ៌​ទៅ​អាល់ហ្វា"
 
 #. i18n: ectx: Menu (Recording)
-#: krita.rc:255 plugins/extensions/bigbrother/bigbrother.rc:5
+#: krita.rc:268 plugins/extensions/bigbrother/bigbrother.rc:5
 msgid "Recording"
 msgstr "ថត​"
 
 #. i18n: ectx: Menu (Macros)
-#: krita.rc:260 plugins/extensions/bigbrother/bigbrother.rc:9
+#: krita.rc:273 plugins/extensions/bigbrother/bigbrother.rc:9
 msgid "Macros"
 msgstr "ម៉ាក្រូ​"
 
 #. i18n: ectx: Menu (settings)
-#: krita.rc:266
+#: krita.rc:279
 #, fuzzy
 #| msgid "Settings"
 msgid "Setti&ngs"
 msgstr "ការ​កំណត់"
 
 #. i18n: ectx: Menu (help)
-#: krita.rc:287
+#: krita.rc:300
 msgid "&Help"
 msgstr "ជំនួយ​"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: krita.rc:301 ui/kis_file_layer.cpp:98
+#: krita.rc:314 ui/kis_file_layer.cpp:98
 #, fuzzy
 #| msgid "&File"
 msgid "File"
@@ -11661,13 +11767,6 @@ msgstr "ធ្វើ​មាត្រដ្ឋាន​ការ​ជ្រើ
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:232
 msgid "Image"
 msgstr "រូបភាព"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbType)
-#. i18n: ectx: Menu (Layer)
-#: plugins/extensions/imagesize/imagesize.rc:9
-#: plugins/tools/tool_crop/wdg_tool_crop.ui:227
-msgid "Layer"
-msgstr "ស្រទាប់"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgCanvasSize)
 #: plugins/extensions/imagesize/wdg_canvassize.ui:14
@@ -20533,7 +20632,7 @@ msgstr "បើក​នៅ​ក្នុង​ឯកសារ​ថ្មី"
 
 #. i18n: ectx: property (text), widget (QPushButton, cancelButton)
 #: ui/forms/KisOpenPaneBase.ui:67 ui/input/kis_tool_invocation_action.cpp:53
-#: ui/kis_animation_exporter.cpp:43 ui/kis_clipboard.cc:263 ui/KisView.cpp:494
+#: ui/kis_animation_exporter.cpp:43 ui/kis_clipboard.cc:263 ui/KisView.cpp:491
 msgid "Cancel"
 msgstr "បោះបង់​"
 
@@ -23038,35 +23137,35 @@ msgstr "លក្ខណៈសម្បត្តិ​ស្រទាប់​ត
 msgid "Mirror View"
 msgstr "ឆ្លុះMirrored"
 
-#: ui/kis_node_manager.cpp:359
+#: ui/kis_node_manager.cpp:384
 #, fuzzy
 #| msgid "&Painter's Tools"
 msgctxt "(qtundo-format)"
 msgid "Move Nodes"
 msgstr "ឧបករណ៍​របស់​កម្មវិធី​គូរ"
 
-#: ui/kis_node_manager.cpp:366
+#: ui/kis_node_manager.cpp:391
 #, fuzzy
 #| msgid "Copy From"
 msgctxt "(qtundo-format)"
 msgid "Copy Nodes"
 msgstr "ចម្លង​ពី"
 
-#: ui/kis_node_manager.cpp:373
+#: ui/kis_node_manager.cpp:398
 #, fuzzy
 #| msgid "&Resources"
 msgctxt "(qtundo-format)"
 msgid "Add Nodes"
 msgstr "ធនធាន"
 
-#: ui/kis_node_manager.cpp:511
+#: ui/kis_node_manager.cpp:536
 #, fuzzy
 #| msgid "&Invert Selection"
 msgctxt "(qtundo-format)"
 msgid "Convert to a Selection Mask"
 msgstr "ដាក់​ជម្រើស​បញ្ជ្រាស"
 
-#: ui/kis_node_manager.cpp:703
+#: ui/kis_node_manager.cpp:727
 #, fuzzy
 #| msgctxt "duplicate paintbrush"
 #| msgid "Duplicate"
@@ -23074,94 +23173,116 @@ msgctxt "(qtundo-format)"
 msgid "Duplicate Nodes"
 msgstr "ច្បាប់​ចម្លង"
 
-#: ui/kis_node_manager.cpp:725
+#: ui/kis_node_manager.cpp:749
 #, fuzzy
 #| msgid "&Painter's Tools"
 msgctxt "(qtundo-format)"
 msgid "Raise Nodes"
 msgstr "ឧបករណ៍​របស់​កម្មវិធី​គូរ"
 
-#: ui/kis_node_manager.cpp:732
+#: ui/kis_node_manager.cpp:756
 #, fuzzy
 #| msgid "&Painter's Tools"
 msgctxt "(qtundo-format)"
 msgid "Lower Nodes"
 msgstr "ឧបករណ៍​របស់​កម្មវិធី​គូរ"
 
-#: ui/kis_node_manager.cpp:750
+#: ui/kis_node_manager.cpp:774
 #, fuzzy
 #| msgid "&Painter's Tools"
 msgctxt "(qtundo-format)"
 msgid "Remove Nodes"
 msgstr "ឧបករណ៍​របស់​កម្មវិធី​គូរ"
 
-#: ui/kis_node_manager.cpp:766
+#: ui/kis_node_manager.cpp:790
 #, fuzzy
 #| msgid "Mirror Layer X"
 msgctxt "(qtundo-format)"
 msgid "Mirror Layer X"
 msgstr "ស្រទាប់ X ឆ្លុះ"
 
-#: ui/kis_node_manager.cpp:768
+#: ui/kis_node_manager.cpp:792
 #, fuzzy
 #| msgid "Mirror Mask X"
 msgctxt "(qtundo-format)"
 msgid "Mirror Mask X"
 msgstr "របាំង​ឆ្លុះ X"
 
-#: ui/kis_node_manager.cpp:779
+#: ui/kis_node_manager.cpp:803
 #, fuzzy
 #| msgid "Mirror Layer Y"
 msgctxt "(qtundo-format)"
 msgid "Mirror Layer Y"
 msgstr "ស្រទាប់​ Y ឆ្លុះ"
 
-#: ui/kis_node_manager.cpp:781
+#: ui/kis_node_manager.cpp:805
 #, fuzzy
 #| msgid "Mirror Mask X"
 msgctxt "(qtundo-format)"
 msgid "Mirror Mask Y"
 msgstr "របាំង​ឆ្លុះ X"
 
-#: ui/kis_node_manager.cpp:899
+#: ui/kis_node_manager.cpp:923
 #, fuzzy, kde-format
 #| msgid "Exposure"
 msgid "Export \"%1\""
 msgstr "កា​របង្ហាញ"
 
-#: ui/kis_node_manager.cpp:973
+#: ui/kis_node_manager.cpp:997
 msgctxt "(qtundo-format)"
 msgid "Split Alpha into a Mask"
 msgstr ""
 
-#: ui/kis_node_manager.cpp:1003
+#: ui/kis_node_manager.cpp:1027
 #, fuzzy, kde-format
 #| msgid "Layer Size"
 msgctxt "@title:window"
 msgid "Layer %1 is not editable"
 msgstr "ទំហំ​ស្រទាប់​"
 
-#: ui/kis_node_manager.cpp:1004
+#: ui/kis_node_manager.cpp:1028
 #, kde-format
 msgid ""
 "Cannot write alpha channel of the parent layer \"%1\".\n"
 "The operation will be cancelled."
 msgstr ""
 
-#: ui/kis_node_manager.cpp:1035
+#: ui/kis_node_manager.cpp:1059
 #, fuzzy
 #| msgid "Create a new mask or layer"
 msgctxt "(qtundo-format)"
 msgid "Write Alpha into a Layer"
 msgstr "បង្កើត​របាំង ឬ​ស្រទាប់​ថ្មី"
 
-#: ui/kis_node_manager.cpp:1083
+#: ui/kis_node_manager.cpp:1107
 #, fuzzy
 #| msgctxt "duplicate paintbrush"
 #| msgid "Duplicate"
 msgctxt "(qtundo-format)"
 msgid "Cut Nodes"
 msgstr "ច្បាប់​ចម្លង"
+
+#: ui/kis_node_manager.cpp:1177
+msgctxt "(qtundo-format)"
+msgid "Quick Group"
+msgstr ""
+
+#: ui/kis_node_manager.cpp:1188
+msgctxt "(qtundo-format)"
+msgid "Quick Clipping Group"
+msgstr ""
+
+#: ui/kis_node_manager.cpp:1195
+msgctxt "default name for a clipping group layer"
+msgid "Clipping Group"
+msgstr ""
+
+#: ui/kis_node_manager.cpp:1197
+#, fuzzy
+#| msgid "&Paint Layer"
+msgctxt "default name for quick clip group mask layer"
+msgid "Mask Layer"
+msgstr "ស្រទាប់​គូរ"
 
 #: ui/kis_paintop_box.cc:112
 msgid "Painter's Toolchest"
@@ -23265,36 +23386,36 @@ msgid ""
 "Files</span></b></p>"
 msgstr ""
 
-#: ui/kis_statusbar.cc:190
+#: ui/kis_statusbar.cc:245
 msgctxt "very shortened 'byte' suffix (for statusbar)"
 msgid "b"
 msgstr ""
 
-#: ui/kis_statusbar.cc:194
+#: ui/kis_statusbar.cc:249
 #, fuzzy
 #| msgid "&OK"
 msgctxt "very shortened KiB suffix (for statusbar)"
 msgid "K"
 msgstr "យល់ព្រម "
 
-#: ui/kis_statusbar.cc:199
+#: ui/kis_statusbar.cc:254
 #, fuzzy
 #| msgid "M"
 msgctxt "very shortened MiB suffix (for statusbar)"
 msgid "M"
 msgstr "M"
 
-#: ui/kis_statusbar.cc:204
+#: ui/kis_statusbar.cc:259
 msgctxt "very shortened GiB suffix (for statusbar)"
 msgid "G"
 msgstr ""
 
-#: ui/kis_statusbar.cc:209
+#: ui/kis_statusbar.cc:264
 msgctxt "very shortened TiB suffix (for statusbar)"
 msgid "T"
 msgstr ""
 
-#: ui/kis_statusbar.cc:223
+#: ui/kis_statusbar.cc:278
 #, kde-format
 msgctxt "tooltip on statusbar memory reporting button"
 msgid ""
@@ -23308,7 +23429,7 @@ msgid ""
 "Swap used:\t %9"
 msgstr ""
 
-#: ui/kis_statusbar.cc:255
+#: ui/kis_statusbar.cc:310
 msgctxt "tooltip on statusbar memory reporting button"
 msgid ""
 "\n"
@@ -23317,21 +23438,21 @@ msgid ""
 "\t\tPlease configure more RAM for Krita in Settings dialog"
 msgstr ""
 
-#: ui/kis_statusbar.cc:282
+#: ui/kis_statusbar.cc:337
 msgid "Hidden"
 msgstr ""
 
-#: ui/kis_statusbar.cc:284
+#: ui/kis_statusbar.cc:339
 msgid "Ants"
 msgstr ""
 
-#: ui/kis_statusbar.cc:284
+#: ui/kis_statusbar.cc:339
 #, fuzzy
 #| msgid "Mask Source"
 msgid "Mask"
 msgstr "ប្រភព​របាំង"
 
-#: ui/kis_statusbar.cc:287
+#: ui/kis_statusbar.cc:342
 #, fuzzy, kde-format
 #| msgid "Selection Active: x = %1 y = %2 width = %3 height = %4"
 msgid ""
@@ -23339,11 +23460,11 @@ msgid ""
 "Display Mode: %5"
 msgstr "ការ​ជ្រើស​សកម្ម ៖ x = %1 y = %2 ទទឹង​ = %3 កម្ពស់ = %4"
 
-#: ui/kis_statusbar.cc:292
+#: ui/kis_statusbar.cc:347
 msgid "No Selection"
 msgstr "គ្មាន​ជម្រើស"
 
-#: ui/kis_statusbar.cc:311
+#: ui/kis_statusbar.cc:366
 msgid "No profile"
 msgstr "គ្មាន​ទម្រង់​"
 
@@ -23354,40 +23475,40 @@ msgctxt "floating message about zoom"
 msgid "Zoom: %1 %"
 msgstr "ពង្រីក"
 
-#: ui/KisApplication.cpp:192 ui/opengl/kis_opengl_canvas2.cpp:264
+#: ui/KisApplication.cpp:205 ui/opengl/kis_opengl_canvas2.cpp:264
 #, fuzzy
 #| msgid "Warning!"
 msgctxt "@title:window"
 msgid "Krita: Warning"
 msgstr "ការ​ព្រមាន!"
 
-#: ui/KisApplication.cpp:193
+#: ui/KisApplication.cpp:206
 msgid ""
 "You are running a 32 bits build on a 64 bits Windows.\n"
 "This is not recommended.\n"
 "Please download and install the x64 build instead."
 msgstr ""
 
-#: ui/KisApplication.cpp:345
+#: ui/KisApplication.cpp:358
 msgid "Mimetype not found, try using the -mimetype option"
 msgstr ""
 
-#: ui/KisApplication.cpp:538
+#: ui/KisApplication.cpp:551
 #, kde-format
 msgid "No template found for: %1"
 msgstr ""
 
-#: ui/KisApplication.cpp:541
+#: ui/KisApplication.cpp:554
 #, kde-format
 msgid "Too many templates found for: %1"
 msgstr ""
 
-#: ui/KisApplication.cpp:566
+#: ui/KisApplication.cpp:579
 #, kde-format
 msgid "Template %1 failed to load."
 msgstr ""
 
-#: ui/KisApplication.cpp:592
+#: ui/KisApplication.cpp:605
 #, kde-format
 msgid ""
 "Failed to clear %1\n"
@@ -23395,7 +23516,7 @@ msgid ""
 "Please make sure no other program is using the file and try again."
 msgstr ""
 
-#: ui/KisApplication.cpp:613
+#: ui/KisApplication.cpp:626
 msgid "Do you want to clear the settings file?"
 msgstr ""
 
@@ -23818,52 +23939,52 @@ msgstr "រាង​សំប៉ែត %1"
 msgid "untitled"
 msgstr "គ្មាន​ចំណងជើង ១"
 
-#: ui/KisMainWindow.cpp:1207
+#: ui/KisMainWindow.cpp:1208
 #, fuzzy
 #| msgid "Small Tiles"
 msgid "All files (*.*)"
 msgstr "ក្រឡាក្បឿង​តូចៗ"
 
-#: ui/KisMainWindow.cpp:1210
+#: ui/KisMainWindow.cpp:1211
 #, fuzzy
 #| msgid "Import Image"
 msgid "Import Images"
 msgstr "នាំ​ចូល​រូបភាព"
 
-#: ui/KisMainWindow.cpp:1210
+#: ui/KisMainWindow.cpp:1211
 #, fuzzy
 #| msgid "Image"
 msgid "Open Images"
 msgstr "រូបភាព"
 
-#: ui/KisMainWindow.cpp:1433
+#: ui/KisMainWindow.cpp:1434
 #, fuzzy
 #| msgid "Export Layer"
 msgid "Export as PDF"
 msgstr "នាំ​ស្រទាប់​ចេញ"
 
-#: ui/KisMainWindow.cpp:1475
+#: ui/KisMainWindow.cpp:1476
 msgid "Cannot export to the specified file"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1622
+#: ui/KisMainWindow.cpp:1623
 msgid ""
 "You will lose all changes made since your last save\n"
 "Do you want to continue?"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1633
+#: ui/KisMainWindow.cpp:1634
 #, fuzzy
 #| msgid "Could not add layer to image."
 msgid "Error: Could not reload this document"
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: ui/KisMainWindow.cpp:1890
+#: ui/KisMainWindow.cpp:1891
 #, kde-format
 msgid "&%1 %2"
 msgstr ""
 
-#: ui/KisMainWindow.cpp:1893
+#: ui/KisMainWindow.cpp:1894
 #, kde-format
 msgid "%1 %2"
 msgstr ""
@@ -24057,71 +24178,71 @@ msgstr ""
 msgid "Undo %1"
 msgstr ""
 
-#: ui/KisView.cpp:488
+#: ui/KisView.cpp:485
 msgid "Insert as New Layer"
 msgstr "បញ្ចូល​ជា​ស្រទាប់​ថ្មី"
 
-#: ui/KisView.cpp:489
+#: ui/KisView.cpp:486
 #, fuzzy
 #| msgid "Insert as New Layers"
 msgid "Insert Many Layers"
 msgstr "បញ្ចូល​ជា​ស្រទាប់​ថ្មី"
 
-#: ui/KisView.cpp:491
+#: ui/KisView.cpp:488
 msgid "Open in New Document"
 msgstr "បើក​នៅ​ក្នុង​ឯកសារ​ថ្មី"
 
-#: ui/KisView.cpp:492
+#: ui/KisView.cpp:489
 #, fuzzy
 #| msgid "Open in New Documents"
 msgid "Open Many Documents"
 msgstr "បើក​នៅ​ក្នុង​ឯកសារ​ថ្មី"
 
-#: ui/KisViewManager.cpp:690
+#: ui/KisViewManager.cpp:622
 #, fuzzy
 #| msgid "Apply Profile"
 msgid "Active Author Profile"
 msgstr "អនុវត្ត​ទម្រង់​"
 
-#: ui/KisViewManager.cpp:793
+#: ui/KisViewManager.cpp:725
 #, fuzzy, kde-format
 #| msgid "Copy From"
 msgid "%1 (Copy)"
 msgstr "ចម្លង​ពី"
 
-#: ui/KisViewManager.cpp:912 ui/KisViewManager.cpp:983
+#: ui/KisViewManager.cpp:844 ui/KisViewManager.cpp:915
 msgid "Alternative names exhausted, try manually saving with a higher number"
 msgstr ""
 
-#: ui/KisViewManager.cpp:912
+#: ui/KisViewManager.cpp:844
 #, fuzzy
 #| msgid "Incremental"
 msgctxt "@title:window"
 msgid "Couldn't save incremental version"
 msgstr "បង្កើន​"
 
-#: ui/KisViewManager.cpp:983
+#: ui/KisViewManager.cpp:915
 #, fuzzy
 #| msgid "Incremental"
 msgctxt "@title:window"
 msgid "Couldn't save incremental backup"
 msgstr "បង្កើន​"
 
-#: ui/KisViewManager.cpp:1141
+#: ui/KisViewManager.cpp:1073
 #, kde-format
 msgid ""
 "Going into Canvas-Only mode.\n"
 "Press %1 to go back."
 msgstr ""
 
-#: ui/KisViewManager.cpp:1242 ui/KisViewManager.cpp:1261
+#: ui/KisViewManager.cpp:1174 ui/KisViewManager.cpp:1193
 #, fuzzy
 #| msgid "Anonymizer"
 msgctxt "choice for author profile"
 msgid "Anonymous"
 msgstr "អនាមិក"
 
-#: ui/KisViewManager.cpp:1260
+#: ui/KisViewManager.cpp:1192
 #, fuzzy
 #| msgid "Default &printer profile:"
 msgid "Default Author Profile"
@@ -26158,6 +26279,9 @@ msgstr "តំបន់​ធ្វើ​ការ​"
 #, kde-format
 msgid "Workspace %1"
 msgstr "តំបន់​ធ្វើ​ការ %1"
+
+#~ msgid "Layer %1"
+#~ msgstr "ស្រទាប់ %1"
 
 #~ msgid "&Merge with Layer Below"
 #~ msgstr "បញ្ចូល​ស្រទាប់​ខាង​ក្រោម​ចូល​គ្នា​"
