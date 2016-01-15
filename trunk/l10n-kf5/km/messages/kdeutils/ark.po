@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-01-13 07:41+0000\n"
+"POT-Creation-Date: 2016-01-15 07:49+0000\n"
 "PO-Revision-Date: 2012-06-11 15:59+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -26,8 +26,15 @@ msgstr ""
 "khoemsokhem@khmeros.info,soursdey@khmeros.info,evannak@khmeros.info,"
 "piseth_dv@khmeros.info"
 
+#. i18n: ectx: Menu (archive)
+#: app/arkui.rc:5 part/ark_part.rc:5
+#, fuzzy
+#| msgid "Open an archive"
+msgid "&Archive"
+msgstr "បើក​ប័ណ្ណសារ"
+
 #. i18n: ectx: ToolBar (mainToolBar)
-#: app/arkui.rc:13
+#: app/arkui.rc:20
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
@@ -240,32 +247,32 @@ msgstr ""
 msgid "Unable to find Ark's KPart component, please check your installation."
 msgstr "មិន​អាច​រកសមាសភាគ KPart របស់ Ark សូម​ពិនិត្យ​មើក​ការ​ដំឡើង​របស់​អ្ន​ក ។"
 
-#: app/mainwindow.cpp:172
+#: app/mainwindow.cpp:174
 msgctxt "action, to open an archive"
 msgid "Open"
 msgstr "បើក"
 
-#: app/mainwindow.cpp:173
+#: app/mainwindow.cpp:175
 msgid ""
 "Click to open an archive, click and hold to open a recently-opened archive"
 msgstr "ចុច​ដើម្បី​បើក​ប័ណ្ណសារ ចុច និង​សង្កត់​ដើម្បី​បើក​ប័ណ្ណសារ​ដែល​បាន​បើក​ថ្មី"
 
-#: app/mainwindow.cpp:174
+#: app/mainwindow.cpp:176
 msgid "Open an archive"
 msgstr "បើក​ប័ណ្ណសារ"
 
-#: app/mainwindow.cpp:224
+#: app/mainwindow.cpp:226
 #, fuzzy
 #| msgid "Open an archive"
 msgctxt "to open an archive"
 msgid "Open Archive"
 msgstr "បើក​ប័ណ្ណសារ"
 
-#: app/mainwindow.cpp:233
+#: app/mainwindow.cpp:235
 msgid "All supported archives ("
 msgstr ""
 
-#: app/mainwindow.cpp:314
+#: app/mainwindow.cpp:316
 #, fuzzy
 #| msgid "Open an archive"
 msgid "Create a new Archive"
@@ -786,11 +793,6 @@ msgctxt "Unnamed column"
 msgid "??"
 msgstr "??"
 
-#. i18n: ectx: Menu (file)
-#: part/ark_part.rc:5
-msgid "&File"
-msgstr "ឯកសារ"
-
 #. i18n: ectx: Menu (action)
 #: part/ark_part.rc:9
 msgid "&Action"
@@ -1239,24 +1241,30 @@ msgid "Could not add the file <filename>%1</filename> to the archive."
 msgstr "មិនអាច​បន្ថែម​ឯកសារ​ <filename>%1</filename> ទៅប័ណ្ណសារ​បាន​ទេ ។"
 
 #: plugins/libarchive/libarchivehandler.cpp:105
-#: plugins/libarchive/libarchivehandler.cpp:178
-#, kde-format
+#, fuzzy
+#| msgid "Source archive"
+msgctxt "@info"
+msgid "Could not open the archive."
+msgstr "ប័ណ្ណសារ​ប្រភព"
+
+#: plugins/libarchive/libarchivehandler.cpp:130
+#, fuzzy
+#| msgid "Click to add files to the archive"
+msgctxt "@info"
+msgid "Could not read until the end of the archive"
+msgstr "ចុច​ដើម្បី​បន្ថែម​ឯកសារ​ទៅប័ណ្ណសារ"
+
+#: plugins/libarchive/libarchivehandler.cpp:179
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not open the archive <filename>%1</filename> for reading"
 msgctxt "@info"
 msgid ""
-"Could not open the archive <filename>%1</filename>, libarchive cannot handle "
-"it."
-msgstr ""
-"មិនអាច​បើក​ប័ណ្ណសារ <filename>%1</filename> បាន​ទេ ដោយ​សារ​តែ libarchive មិនអាច​ដោះស្រាយ​"
-"បាន ។"
+"Could not open the archive <filename>%1</filename>.<nl/>Check whether you "
+"have sufficient permissions."
+msgstr "មិនអាច​បើក​ប័ណ្ណសារ <filename>%1</filename> ដើម្បី​អាន​បាន​ទេ"
 
-#: plugins/libarchive/libarchivehandler.cpp:129
-#, kde-format
-msgctxt "@info"
-msgid ""
-"The archive reading failed with the following error: <message>%1</message>"
-msgstr "បានបរាជ័យ​ក្នុងការ​អាន​ប័ណ្ណសារ ដោយ​មានកំហុស​ដូច​ខាងក្រោម ៖ <message>%1</message>"
-
-#: plugins/libarchive/libarchivehandler.cpp:249
+#: plugins/libarchive/libarchivehandler.cpp:251
 #, fuzzy
 #| msgid ""
 #| "This archive contains archive entries with absolute paths, which are not "
@@ -1266,7 +1274,7 @@ msgid ""
 "supported by Ark."
 msgstr "ប័ណ្ណសារ​នេះ​មាន​ធាតុ​ប័ណ្ណសារ​ដែលមាន​ផ្នែក​ពេញលេញ ដែល​មិនត្រូវ​បានគាំទ្រ​ដោយ ark នៅ​ឡើយ​ទេ ។"
 
-#: plugins/libarchive/libarchivehandler.cpp:388
+#: plugins/libarchive/libarchivehandler.cpp:390
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Error creating directory <filename>%1</filename>"
@@ -1274,17 +1282,17 @@ msgctxt "@info"
 msgid "Extraction failed at:<nl/><filename>%1</filename>"
 msgstr "កំហុស​ក្នុងការ​បង្កើត​ថត <filename>%1</filename>"
 
-#: plugins/libarchive/libarchivehandler.cpp:442
-#: plugins/libarchive/libarchivehandler.cpp:635
+#: plugins/libarchive/libarchivehandler.cpp:444
+#: plugins/libarchive/libarchivehandler.cpp:637
 msgid "The archive reader could not be initialized."
 msgstr "មិនអាច​ចាប់ផ្ដើម​កម្មវិធី​អាន​ប័ណ្ណសារ​បាន​ទេ ។"
 
-#: plugins/libarchive/libarchivehandler.cpp:455
-#: plugins/libarchive/libarchivehandler.cpp:648
+#: plugins/libarchive/libarchivehandler.cpp:457
+#: plugins/libarchive/libarchivehandler.cpp:650
 msgid "The source file could not be read."
 msgstr "មិនអាច​អាន​ឯកសារ​ប្រភព​បានទេ ។"
 
-#: plugins/libarchive/libarchivehandler.cpp:466
+#: plugins/libarchive/libarchivehandler.cpp:468
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Failed to locate program <filename>%2</filename> on disk."
@@ -1293,14 +1301,14 @@ msgctxt "@info"
 msgid "Failed to create a temporary file to compress <filename>%1</filename>."
 msgstr "បាន​បរាជ័យ​ក្នុងការ​កំណត់​ទីតាំង​កម្មវិធី <filename>%2</filename> នៅ​លើ​ថាស ។"
 
-#: plugins/libarchive/libarchivehandler.cpp:472
-#: plugins/libarchive/libarchivehandler.cpp:664
+#: plugins/libarchive/libarchivehandler.cpp:474
+#: plugins/libarchive/libarchivehandler.cpp:666
 msgid "The archive writer could not be initialized."
 msgstr "មិនអាច​ចាប់ផ្ដើម​កម្មវិធី​សរសេរ​ប័ណ្ណសារ​បានទេ ។"
 
-#: plugins/libarchive/libarchivehandler.cpp:502
-#: plugins/libarchive/libarchivehandler.cpp:530
-#: plugins/libarchive/libarchivehandler.cpp:694
+#: plugins/libarchive/libarchivehandler.cpp:504
+#: plugins/libarchive/libarchivehandler.cpp:532
+#: plugins/libarchive/libarchivehandler.cpp:696
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1313,14 +1321,14 @@ msgid ""
 msgstr ""
 "បាន​បរាជ័យ​ក្នុងកា​រកំណត់​វិធីសាស្ត្រ​បង្ហាប់ ដោយ​មាន​កំហុស​ដូច​ខាងក្រោម ៖ <message>%1</message>"
 
-#: plugins/libarchive/libarchivehandler.cpp:524
-#: plugins/libarchive/libarchivehandler.cpp:689
+#: plugins/libarchive/libarchivehandler.cpp:526
+#: plugins/libarchive/libarchivehandler.cpp:691
 #, kde-format
 msgid "The compression type '%1' is not supported by Ark."
 msgstr "ប្រភេទ​បង្ហាប់ '%1' មិន​ត្រូវ​បានគាំទ្រ​ដោយ Ark ។"
 
-#: plugins/libarchive/libarchivehandler.cpp:538
-#: plugins/libarchive/libarchivehandler.cpp:701
+#: plugins/libarchive/libarchivehandler.cpp:540
+#: plugins/libarchive/libarchivehandler.cpp:703
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1333,8 +1341,8 @@ msgid ""
 msgstr ""
 "បានបរាជ័យ​ក្នុងការ​​បើក​ប័ណ្ណសារ ដើម្បី​សរសេរ ​ដោយ​មាន​កំហុស​ដូច​ខាងក្រោម ៖ <message>%1</message>"
 
-#: plugins/libarchive/libarchivehandler.cpp:605
-#: plugins/libarchive/libarchivehandler.cpp:732
+#: plugins/libarchive/libarchivehandler.cpp:607
+#: plugins/libarchive/libarchivehandler.cpp:734
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1342,7 +1350,7 @@ msgid ""
 ">Operation aborted."
 msgstr ""
 
-#: plugins/libarchive/libarchivehandler.cpp:658
+#: plugins/libarchive/libarchivehandler.cpp:660
 #, fuzzy
 #| msgctxt "@info"
 #| msgid "Failed to locate program <filename>%2</filename> on disk."
@@ -1351,7 +1359,7 @@ msgctxt "@info"
 msgid "Failed to create a temporary file."
 msgstr "បាន​បរាជ័យ​ក្នុងការ​កំណត់​ទីតាំង​កម្មវិធី <filename>%2</filename> នៅ​លើ​ថាស ។"
 
-#: plugins/libarchive/libarchivehandler.cpp:895
+#: plugins/libarchive/libarchivehandler.cpp:897
 #, kde-format
 msgctxt "@info Error in a message box"
 msgid "Ark could not compress <filename>%1</filename>:<nl/>%2"
@@ -1375,6 +1383,22 @@ msgctxt "@info"
 msgid ""
 "There was an error while reading <filename>%1</filename> during extraction."
 msgstr "មាន​កំហុស​មួយ​ខណៈដែល​អាន <filename>%1</filename> ក្នុង​ពេល​ស្រង់ចេញ ។"
+
+#~ msgid "&File"
+#~ msgstr "ឯកសារ"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "Could not open the archive <filename>%1</filename>, libarchive cannot "
+#~ "handle it."
+#~ msgstr ""
+#~ "មិនអាច​បើក​ប័ណ្ណសារ <filename>%1</filename> បាន​ទេ ដោយ​សារ​តែ libarchive មិនអាច​"
+#~ "ដោះស្រាយ​បាន ។"
+
+#~ msgctxt "@info"
+#~ msgid ""
+#~ "The archive reading failed with the following error: <message>%1</message>"
+#~ msgstr "បានបរាជ័យ​ក្នុងការ​អាន​ប័ណ្ណសារ ដោយ​មានកំហុស​ដូច​ខាងក្រោម ៖ <message>%1</message>"
 
 #, fuzzy
 #~| msgid "Extra Compression Options"
