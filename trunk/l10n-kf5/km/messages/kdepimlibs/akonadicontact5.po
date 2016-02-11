@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadicontact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-02-10 07:34+0000\n"
+"POT-Creation-Date: 2016-02-11 07:53+0000\n"
 "PO-Revision-Date: 2012-07-11 10:24+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -721,6 +721,7 @@ msgid "Partner's name:"
 msgstr "ឈ្មោះ​របស់​ដៃ​គូ​ ៖"
 
 #: editor/contacteditorwidget.cpp:406
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:49
 #, fuzzy
 #| msgid "Additional names:"
 msgid "Add name"
@@ -736,25 +737,72 @@ msgctxt "@title:tab"
 msgid "Custom Fields"
 msgstr "វាល​ផ្ទាល់​ខ្លួន​"
 
-#: editor/customfieldeditor/customfieldeditorwidget.cpp:36
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:41
 #, fuzzy
 #| msgid "Edit Custom Field"
 msgid "Title Custom Type"
 msgstr "កែសម្រួល​វាល​ផ្ទាល់​ខ្លួន​​"
 
-#: editor/customfieldeditor/customfieldeditorwidget.cpp:49
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:58
 #, fuzzy
 #| msgid "Add Email"
 msgid "Add Field"
 msgstr "បន្ថែម​អ៊ីមែល​"
 
-#: editor/customfieldeditordialog.cpp:39
-msgid "Edit Custom Field"
-msgstr "កែសម្រួល​វាល​ផ្ទាល់​ខ្លួន​​"
-
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:65
 #: editor/customfieldeditordialog.cpp:50
 msgid "Use field for all contacts"
 msgstr "ប្រើ​វាល​​សម្រាប់​គ្រប់​ការ​ទំនាក់ទំនង​"
+
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:77
+#: editor/customfieldeditordialog.cpp:57
+msgid "Text"
+msgstr "អត្ថបទ​​"
+
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:78
+#: editor/customfieldeditordialog.cpp:58
+msgid "Numeric"
+msgstr "ជា​លេខ​​"
+
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:79
+#: editor/customfieldeditordialog.cpp:59
+msgid "Boolean"
+msgstr "ប៊ូលីន​"
+
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:80
+#: editor/customfieldeditordialog.cpp:60
+msgid "Date"
+msgstr "កាលបរិច្ឆេទ"
+
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:81
+#: editor/customfieldeditordialog.cpp:61
+msgid "Time"
+msgstr "ពេលវេលា​"
+
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:82
+#: editor/customfieldeditordialog.cpp:62
+msgid "DateTime"
+msgstr "DateTime​"
+
+#: editor/customfieldeditor/customfieldeditorwidget.cpp:83
+#: editor/customfieldeditordialog.cpp:63
+msgid "Url"
+msgstr ""
+
+#: editor/customfieldeditor/customfieldslistdelegate.cpp:235
+#: editor/customfieldseditwidget.cpp:327
+msgctxt "Custom Fields"
+msgid "Do you really want to delete the selected custom field?"
+msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​វាល​ផ្ទាល់ខ្លួន​ដែល​បាន​ជ្រើស​​ឬ​ ?"
+
+#: editor/customfieldeditor/customfieldslistdelegate.cpp:236
+#: editor/customfieldseditwidget.cpp:328
+msgid "Confirm Delete"
+msgstr "អះអាង​ការ​​លុប​"
+
+#: editor/customfieldeditordialog.cpp:39
+msgid "Edit Custom Field"
+msgstr "កែសម្រួល​វាល​ផ្ទាល់​ខ្លួន​​"
 
 #: editor/customfieldeditordialog.cpp:52
 msgctxt "The title of a custom field"
@@ -770,34 +818,6 @@ msgstr "ប្រភេទ​"
 msgid "Key"
 msgstr "សោ​"
 
-#: editor/customfieldeditordialog.cpp:57
-msgid "Text"
-msgstr "អត្ថបទ​​"
-
-#: editor/customfieldeditordialog.cpp:58
-msgid "Numeric"
-msgstr "ជា​លេខ​​"
-
-#: editor/customfieldeditordialog.cpp:59
-msgid "Boolean"
-msgstr "ប៊ូលីន​"
-
-#: editor/customfieldeditordialog.cpp:60
-msgid "Date"
-msgstr "កាលបរិច្ឆេទ"
-
-#: editor/customfieldeditordialog.cpp:61
-msgid "Time"
-msgstr "ពេលវេលា​"
-
-#: editor/customfieldeditordialog.cpp:62
-msgid "DateTime"
-msgstr "DateTime​"
-
-#: editor/customfieldeditordialog.cpp:63
-msgid "Url"
-msgstr ""
-
 #: editor/customfieldeditordialog.cpp:77
 #: editor/customfieldeditordialog.cpp:118
 #, fuzzy
@@ -806,27 +826,18 @@ msgstr ""
 msgid "Advanced"
 msgstr "កម្រិត​ខ្ពស់​"
 
-#: editor/customfieldseditwidget.cpp:67 editor/emaileditwidget.cpp:210
+#: editor/customfieldseditwidget.cpp:52 editor/emaileditwidget.cpp:210
 msgid "Add..."
 msgstr "បន្ថែម...​"
 
-#: editor/customfieldseditwidget.cpp:68 editor/emaileditwidget.cpp:216
+#: editor/customfieldseditwidget.cpp:53 editor/emaileditwidget.cpp:216
 msgid "Edit..."
 msgstr "កែ​សម្រួល...​"
 
-#: editor/customfieldseditwidget.cpp:69 editor/dateeditwidget.cpp:51
+#: editor/customfieldseditwidget.cpp:54 editor/dateeditwidget.cpp:51
 #: editor/emaileditwidget.cpp:223 editor/phoneeditwidget.cpp:302
 msgid "Remove"
 msgstr "យក​ចេញ​"
-
-#: editor/customfieldseditwidget.cpp:327
-msgctxt "Custom Fields"
-msgid "Do you really want to delete the selected custom field?"
-msgstr "តើ​អ្នក​ពិត​ជា​ចង់​លុប​វាល​ផ្ទាល់ខ្លួន​ដែល​បាន​ជ្រើស​​ឬ​ ?"
-
-#: editor/customfieldseditwidget.cpp:328
-msgid "Confirm Delete"
-msgstr "អះអាង​ការ​​លុប​"
 
 #: editor/customfieldsmodel.cpp:216
 msgctxt "custom field title"
