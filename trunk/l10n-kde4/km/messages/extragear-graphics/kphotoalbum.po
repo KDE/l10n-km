@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kphotoalbum\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-02-28 01:44+0000\n"
+"POT-Creation-Date: 2016-03-09 01:40+0000\n"
 "PO-Revision-Date: 2012-07-09 10:31+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -1823,18 +1823,18 @@ msgstr ""
 
 #: ImportExport/ImportDialog.cpp:261 Settings/CategoryPage.cpp:275
 #: ThumbnailView/CellGeometry.cpp:77 ThumbnailView/ThumbnailModel.cpp:349
-#: XMLDB/FileReader.cpp:92
+#: XMLDB/FileReader.cpp:91
 msgid "Folder"
 msgstr "ថត"
 
-#: ImportExport/ImportDialog.cpp:262 XMLDB/FileReader.cpp:110
-#: XMLDB/FileReader.cpp:122
+#: ImportExport/ImportDialog.cpp:262 XMLDB/FileReader.cpp:113
+#: XMLDB/FileReader.cpp:125
 msgid "Tokens"
 msgstr "ថូខឺន"
 
 #: ImportExport/ImportDialog.cpp:263 Settings/CategoryPage.cpp:277
 #: ThumbnailView/CellGeometry.cpp:77 ThumbnailView/ThumbnailModel.cpp:349
-#: XMLDB/Database.cpp:224 XMLDB/Database.cpp:571 XMLDB/FileReader.cpp:137
+#: XMLDB/Database.cpp:224 XMLDB/Database.cpp:571 XMLDB/FileReader.cpp:139
 msgid "Media Type"
 msgstr "ប្រភេទ​មេឌៀ"
 
@@ -3561,7 +3561,7 @@ msgctxt "A set of images with no description."
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#: Plugins/Interface.cpp:107 XMLDB/FileReader.cpp:432
+#: Plugins/Interface.cpp:107 XMLDB/FileReader.cpp:464
 msgid "Places"
 msgstr "ទីកន្លែង"
 
@@ -3628,7 +3628,7 @@ msgid ""
 "when viewing the images."
 msgstr ""
 
-#: Settings/BirthdayPage.cpp:147 XMLDB/FileReader.cpp:431
+#: Settings/BirthdayPage.cpp:147 XMLDB/FileReader.cpp:463
 msgid "People"
 msgstr "មនុស្ស"
 
@@ -4340,11 +4340,11 @@ msgstr ""
 msgid "Trust Time Stamps?"
 msgstr "ទុក​ចិត្ត​លើ​ត្រា​ពេល​វេលា​ឬ​អត់ ?​"
 
-#: Settings/SettingsData.cpp:353 XMLDB/FileReader.cpp:433
+#: Settings/SettingsData.cpp:353 XMLDB/FileReader.cpp:465
 msgid "Events"
 msgstr "ព្រឹត្តិការណ៍"
 
-#: Settings/SettingsData.cpp:354 XMLDB/FileReader.cpp:434
+#: Settings/SettingsData.cpp:354 XMLDB/FileReader.cpp:466
 #, fuzzy
 #| msgid "Untagged Images"
 msgid "untagged"
@@ -5412,7 +5412,7 @@ msgid "Unable to copy '%1' to '%2'."
 msgstr "មិន​អាច​ចម្លង​ឯកសារ​ '%1' ទៅ '%2' បាន​ទេ ។​"
 
 #: Utilities/Util.cpp:371 Utilities/Util.cpp:385 Utilities/Util.cpp:403
-#: Utilities/Util.cpp:420 XMLDB/FileReader.cpp:444
+#: Utilities/Util.cpp:420 XMLDB/FileReader.cpp:476
 msgid "Error Running Demo"
 msgstr "កំហុស​ក្នុងការ​រត់​ការ​បង្ហាញ​សាកល្បង"
 
@@ -6017,13 +6017,13 @@ msgstr "បង្ហាញ​ទំហំ​រូបភាព"
 msgid "Show Rating"
 msgstr "បង្ហាញ​ការ​វាយតម្លៃ"
 
-#: XMLDB/Database.cpp:225 XMLDB/Database.cpp:572 XMLDB/FileReader.cpp:139
+#: XMLDB/Database.cpp:225 XMLDB/Database.cpp:572 XMLDB/FileReader.cpp:141
 #, fuzzy
 #| msgid "Image"
 msgid "Image"
 msgstr "រូបភាព"
 
-#: XMLDB/Database.cpp:225 XMLDB/Database.cpp:573 XMLDB/FileReader.cpp:140
+#: XMLDB/Database.cpp:225 XMLDB/Database.cpp:573 XMLDB/FileReader.cpp:142
 #, fuzzy
 #| msgid "Video"
 msgid "Video"
@@ -6040,21 +6040,40 @@ msgstr ""
 msgid "index.xml version mismatch"
 msgstr ""
 
-#: XMLDB/FileReader.cpp:208
+#: XMLDB/FileReader.cpp:191
+#, kde-format
+msgid ""
+"<p>Line %1, column %2: duplicate category '%3'</p><p>Choose continue to "
+"ignore the duplicate category and try an automatic repair, or choose cancel "
+"to quit.</p>"
+msgstr ""
+
+#: XMLDB/FileReader.cpp:198
+#, fuzzy
+#| msgid "Loading Database"
+msgid "Error in database file"
+msgstr "កំពុង​ផ្ទុក​មូលដ្ឋាន​ទិន្នន័យ "
+
+#: XMLDB/FileReader.cpp:242
+msgctxt ""
+"Leave \"Folder\" and \"Media Type\" untranslated below, those will show up "
+"with these exact names. Thanks :-)"
 msgid ""
 "<p><b>This version of KPhotoAlbum does not translate \"standard\" categories "
 "any more.</b></p><p>This may mean that – if you use a locale other than "
-"English – some of your categories are now displayed in English. <p></p>You "
-"can manually rename your categories any time and then save your database.</p>"
+"English – some of your categories are now displayed in English.</p><p>You "
+"can manually rename your categories any time and then save your database.</"
+"p><p>In some cases, you may get two additional empty categories, \"Folder\" "
+"and \"Media Type\". You can delete those.</p>"
 msgstr ""
 
-#: XMLDB/FileReader.cpp:218
+#: XMLDB/FileReader.cpp:250
 #, fuzzy
 #| msgid "Invalid password."
 msgid "Changed standard category names"
 msgstr "ពាក្យ​សម្ងាត់​មិន​ត្រឹម​ត្រូវ​ ។​"
 
-#: XMLDB/FileReader.cpp:356
+#: XMLDB/FileReader.cpp:388
 #, fuzzy
 #| msgid ""
 #| "<p>Your images/videos are not sorted, which means that navigating using "
@@ -6087,7 +6106,7 @@ msgstr ""
 "រូបភាព​ដែល​បាន​ជ្រើស​តាម​កាល​បរិច្ឆេទ និង​ពេល​វេលា​</b> ​ដើម្បី​តម្រៀប​ពួក​វា​នៅ​ក្នុង​មូលដ្ឋាន​ទិន្នន័យ ។ "
 "ចងចាំ​ថា​អ្នក​គួរតែ​ពង្រីក​ជង់​ទាំងអស់​សម្រាប់​ការ​តម្រៀប ។</p>"
 
-#: XMLDB/FileReader.cpp:366
+#: XMLDB/FileReader.cpp:398
 msgid ""
 "<p>Your images/videos are not sorted, which means that navigating using the "
 "date bar will only work suboptimally.</p><p>You also do not have EXIF "
@@ -6102,11 +6121,11 @@ msgstr ""
 "ម៉ាត់​ថា​ត្រូវ​តែ​ចង​ក្រង​ KPhotoAlbum ​ឡើង​វិញ​ជា​មួយ​នឹង​បណ្ណាល័យ​ <code>exiv2</code> ។ បន្ទាប់​ពី​អ្នក​"
 "បាន​ធ្វើ​ដូច្នេះ​រួច​ហើយ​ អ្នក​នឹង​ត្រូវ​សួរ​នូវ​អ្វី​ដែល​នឹង​ត្រូវធ្វើ​ ដើម្បី​កែ​ព័ត៌មាន​ទាំង​អស់​ដែល​បាន​បាត់ ។​</p>"
 
-#: XMLDB/FileReader.cpp:373
+#: XMLDB/FileReader.cpp:405
 msgid "Images/Videos Are Not Sorted"
 msgstr "រូបភាព/វីដេអូ​មិនត្រូវ​​​បាន​តម្រៀប"
 
-#: XMLDB/FileReader.cpp:388
+#: XMLDB/FileReader.cpp:420
 msgid ""
 "<p>Not all the images in the database have information about image sizes; "
 "this is needed to get the best result in the thumbnail view. To fix this, "
@@ -6121,11 +6140,11 @@ msgstr ""
 "tt>។</p><p>បើ​មិន​ធ្វើ​ដូច្នេះ​ទេ វា​នឹង​ធ្វើ​ឲ្យ​មាន​គម្លាត​ធំ​នៅ​ជុំ​វិញ​រូបភាព​ក្នុង​ទិដ្ឋភាព​រូបភាព​តូច មានតែ​"
 "ប៉ុណ្ណឹង ដូច្នេះ​មិន​ចាំបាច់​ប្រញាប​ធ្វើ​វា​ក៏​បាន​ដែរ ។</p>"
 
-#: XMLDB/FileReader.cpp:393
+#: XMLDB/FileReader.cpp:425
 msgid "Not All Images Have Size Information"
 msgstr "មិនមែន​រូបភាព​ទាំងអស់​មាន​ព័ត៌មាន​អំពី​ទំហំ​នោះ​ទេ"
 
-#: XMLDB/FileReader.cpp:416
+#: XMLDB/FileReader.cpp:448
 msgid ""
 "<p>KPhotoAlbum was unable to load a default setup, which indicates an "
 "installation error</p><p>If you have installed KPhotoAlbum yourself, then "
@@ -6145,31 +6164,31 @@ msgstr ""
 "p><p><b>នាំ​ចេញ​ KDEDIRS=/usr/local/kde</b></p><p>​ក្នុង​ករណី​ដែល​អ្នក​មាន​សំណុំ​ KDEDIRS ​រួច​"
 "ហើយ ហើយ​អ្នក​អាច​បន្ថែម​ឃ្លា​ខាង​ចុង​បាន ប្រសិនបើ​អ្នក​កំណត់​នូវ​អថេរ​បរិស្ថាន <b>ផ្លូវ</b> </p>"
 
-#: XMLDB/FileReader.cpp:423
+#: XMLDB/FileReader.cpp:455
 msgid "No default setup file found"
 msgstr "រក​មិនឃើញ​ការ​រៀបចំ​ឯកសារ​លំនាំដើម"
 
-#: XMLDB/FileReader.cpp:444
+#: XMLDB/FileReader.cpp:476
 #, kde-format
 msgid "Unable to open '%1' for reading"
 msgstr "មិនអាច​បើក​ '%1' ដើម្បី​អាន​បានទេ"
 
-#: XMLDB/FileReader.cpp:457
+#: XMLDB/FileReader.cpp:489
 #, kde-format
 msgid "line %1 column %2 in file %3: %4"
 msgstr "បន្ទាត់ %1 ជួរឈរ %2 នៅ​ក្នុង​ឯកសារ %3 ៖ %4"
 
-#: XMLDB/FileReader.cpp:459
+#: XMLDB/FileReader.cpp:491
 #, kde-format
 msgid "Failed to recover the backup: %1"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​យក​ព័ត៌មាន​បម្រុងទុក ៖ %1"
 
-#: XMLDB/FileReader.cpp:470
+#: XMLDB/FileReader.cpp:502
 #, kde-format
 msgid "Error in file %1: No elements found"
 msgstr "កំហុស​ក្នុង​ឯកសារ %1 ៖ រក​មិនឃើញ​ធាតុ"
 
-#: XMLDB/FileReader.cpp:476
+#: XMLDB/FileReader.cpp:508
 #, kde-format
 msgid "Error in file %1: expected 'KPhotoAlbum' as top element but found '%2'"
 msgstr "កំហុស​ក្នុង​ឯកសារ %1 ៖ បាន​រំពឹងទុក 'KPhotoAlbum' ជា​ធាតុ​កំពូល​ប៉ុន្តែ​រកឃើញ '%2'"
