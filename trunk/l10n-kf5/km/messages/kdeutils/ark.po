@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-03-18 07:21+0000\n"
+"POT-Creation-Date: 2016-03-19 07:49+0000\n"
 "PO-Revision-Date: 2012-06-11 15:59+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -438,27 +438,23 @@ msgstr ""
 msgid "Ask for password before showing the list of files in the archive"
 msgstr ""
 
-#: kerfuffle/extractiondialog.cpp:60
+#: kerfuffle/extractiondialog.cpp:62
 msgctxt "@title:window"
 msgid "Extract"
 msgstr "ស្រង់​ចេញ"
 
-#: kerfuffle/extractiondialog.cpp:74
+#: kerfuffle/extractiondialog.cpp:76
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Extract"
 msgid "Extract"
 msgstr "ស្រង់​ចេញ"
 
-#: kerfuffle/extractiondialog.cpp:115
-msgid "Extract multiple archives"
-msgstr "ស្រង់​ប័ណ្ណសារ​ជា​ច្រើន​ចេញ"
-
-#: kerfuffle/extractiondialog.cpp:124
+#: kerfuffle/extractiondialog.cpp:121
 msgid "The subfolder name may not contain the character '/'."
 msgstr "ឈ្មោះ​ថត​រង​មិនអាច​មាន​តួអក្សរ '/' ទេ ។"
 
-#: kerfuffle/extractiondialog.cpp:133
+#: kerfuffle/extractiondialog.cpp:131
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -466,7 +462,7 @@ msgid ""
 "extract here?"
 msgstr "មាន​ថត <filename>%1</filename> រួច​ហើយ ។ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ស្រង់​ចេញ​នៅ​ទីនេះ​ឬ ?"
 
-#: kerfuffle/extractiondialog.cpp:133
+#: kerfuffle/extractiondialog.cpp:132
 msgid "Folder exists"
 msgstr "មាន​ថត"
 
@@ -474,29 +470,33 @@ msgstr "មាន​ថត"
 msgid "Extract here"
 msgstr "ស្រង់​ចេញ​នៅ​ទីនេះ"
 
-#: kerfuffle/extractiondialog.cpp:133
+#: kerfuffle/extractiondialog.cpp:134
 msgid "Retry"
 msgstr "ព្យាយាម​ម្ដង​ទៀត"
 
-#: kerfuffle/extractiondialog.cpp:133
+#: kerfuffle/extractiondialog.cpp:135
 msgid "Cancel"
 msgstr "បោះបង់"
 
-#: kerfuffle/extractiondialog.cpp:143 kerfuffle/extractiondialog.cpp:149
+#: kerfuffle/extractiondialog.cpp:145 kerfuffle/extractiondialog.cpp:151
 #, kde-format
 msgctxt "@info"
 msgid "The folder <filename>%1</filename> could not be created."
 msgstr "មិន​អាច​បង្កើត​ថត <filename>%1</filename> បាន​ទេ ។"
 
-#: kerfuffle/extractiondialog.cpp:144
+#: kerfuffle/extractiondialog.cpp:146
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> already exists, but is not a folder."
 msgstr "មាន​<filename>%1</filename> រួច​ហើយ ប៉ុន្តែ​មិនមែនជា​ថត​ទេ ។"
 
-#: kerfuffle/extractiondialog.cpp:150
+#: kerfuffle/extractiondialog.cpp:152
 msgid "Please check your permissions to create it."
 msgstr "សូម​ពិនិត្យ​មើល​សិទ្ធិ​របស់​អ្នក ដើម្បី​បង្កើត​វា ។"
+
+#: kerfuffle/extractiondialog.cpp:191
+msgid "Extract multiple archives"
+msgstr "ស្រង់​ប័ណ្ណសារ​ជា​ច្រើន​ចេញ"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, ExtractionDialog)
 #: kerfuffle/extractiondialog.ui:21
@@ -1174,13 +1174,57 @@ msgstr "ស្រង់ចេញ​​ទៅ..."
 msgid "Quick Extract To..."
 msgstr "ស្រង់ចេញ​រហ័ស​ទៅ..."
 
-#: part/part.cpp:524
+#: part/part.cpp:525
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Ark was not able to open the archive <filename>%1</filename>. No plugin "
+#| "capable of handling the file was found."
+msgctxt "@info"
+msgid ""
+"Ark was not able to open <filename>%1</filename>. No suitable plugin found."
+"<nl/>Ark does not seem to support this file type."
+msgstr ""
+"Ark មិនអាច​បើក​ប័ណ្ណសារ <filename>%1</filename> បាន​ទេ ។ គ្មាន​កម្មវិធី​ជំនួយ​អាច​ដោះស្រាយ​"
+"ឯកសារ​ដែលបាន​រកឃើញ​ទេ ។"
+
+#: part/part.cpp:532
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Ark was not able to open the archive <filename>%1</filename>. No plugin "
+#| "capable of handling the file was found."
+msgctxt "@info"
+msgid ""
+"Ark was not able to open <filename>%1</filename>. Failed to load a suitable "
+"plugin.<nl/>Make sure any executables needed to handle the archive type are "
+"installed."
+msgstr ""
+"Ark មិនអាច​បើក​ប័ណ្ណសារ <filename>%1</filename> បាន​ទេ ។ គ្មាន​កម្មវិធី​ជំនួយ​អាច​ដោះស្រាយ​"
+"ឯកសារ​ដែលបាន​រកឃើញ​ទេ ។"
+
+#: part/part.cpp:582
+#, fuzzy
+#| msgid "Extraction Dialog"
+msgctxt "@title:tab"
+msgid "Extraction Settings"
+msgstr "ប្រអប់​ស្រង់ចេញ"
+
+#: part/part.cpp:583
+#, fuzzy
+#| msgctxt "@action:button"
+#| msgid "Preview as Text"
+msgctxt "@title:tab"
+msgid "Preview Settings"
+msgstr "មើល​ជា​​​មុន​ជា​អត្ថបទ"
+
+#: part/part.cpp:596
 #, kde-format
 msgctxt "@info"
 msgid "<filename>%1</filename> is a directory."
 msgstr "<filename>%1</filename> គឺ​ជា​ថត ។"
 
-#: part/part.cpp:531
+#: part/part.cpp:603
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1188,16 +1232,16 @@ msgid ""
 "it instead?"
 msgstr "មាន​ប័ណ្ណសារ <filename>%1</filename> រួច​ហើយ ។ តើ​​អ្នក​ចង់​បើក​វា​ជំនួស​វិញ​ឬ ?"
 
-#: part/part.cpp:531
+#: part/part.cpp:603
 msgctxt "@title:window"
 msgid "File Exists"
 msgstr "មាន​ឯកសារ​រួច​ហើយ"
 
-#: part/part.cpp:531
+#: part/part.cpp:603
 msgid "Open File"
 msgstr "បើក​ឯកសារ"
 
-#: part/part.cpp:537
+#: part/part.cpp:609
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "The archive <filename>%1</filename> was not found."
@@ -1207,18 +1251,13 @@ msgid ""
 "file."
 msgstr "រក​មិនឃើញ​ <filename>%1</filename> ទេ ។"
 
-#: part/part.cpp:540
+#: part/part.cpp:612
 #, kde-format
 msgctxt "@info"
 msgid "The archive <filename>%1</filename> was not found."
 msgstr "រក​មិនឃើញ​ <filename>%1</filename> ទេ ។"
 
-#: part/part.cpp:540 part/part.cpp:559 part/part.cpp:566 part/part.cpp:633
-msgctxt "@title:window"
-msgid "Error Opening Archive"
-msgstr "កំហុស​ក្នុងការ​បើក​ប័ណ្ណសារ"
-
-#: part/part.cpp:545
+#: part/part.cpp:617
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1230,51 +1269,7 @@ msgid ""
 "possible to read from it."
 msgstr "មាន​ប័ណ្ណសារ <filename>%1</filename> រួច​ហើយ ។ តើ​​អ្នក​ចង់​បើក​វា​ជំនួស​វិញ​ឬ ?"
 
-#: part/part.cpp:556
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid ""
-#| "Ark was not able to open the archive <filename>%1</filename>. No plugin "
-#| "capable of handling the file was found."
-msgctxt "@info"
-msgid ""
-"Ark was not able to open <filename>%1</filename>. No suitable plugin found."
-"<nl/><nl/>Ark does not seem to support this file type."
-msgstr ""
-"Ark មិនអាច​បើក​ប័ណ្ណសារ <filename>%1</filename> បាន​ទេ ។ គ្មាន​កម្មវិធី​ជំនួយ​អាច​ដោះស្រាយ​"
-"ឯកសារ​ដែលបាន​រកឃើញ​ទេ ។"
-
-#: part/part.cpp:563
-#, fuzzy, kde-format
-#| msgctxt "@info"
-#| msgid ""
-#| "Ark was not able to open the archive <filename>%1</filename>. No plugin "
-#| "capable of handling the file was found."
-msgctxt "@info"
-msgid ""
-"Ark was not able to open <filename>%1</filename>. Failed to load a suitable "
-"plugin.<nl/><nl/>Make sure any executables needed to handle the archive type "
-"are installed."
-msgstr ""
-"Ark មិនអាច​បើក​ប័ណ្ណសារ <filename>%1</filename> បាន​ទេ ។ គ្មាន​កម្មវិធី​ជំនួយ​អាច​ដោះស្រាយ​"
-"ឯកសារ​ដែលបាន​រកឃើញ​ទេ ។"
-
-#: part/part.cpp:614
-#, fuzzy
-#| msgid "Extraction Dialog"
-msgctxt "@title:tab"
-msgid "Extraction Settings"
-msgstr "ប្រអប់​ស្រង់ចេញ"
-
-#: part/part.cpp:615
-#, fuzzy
-#| msgctxt "@action:button"
-#| msgid "Preview as Text"
-msgctxt "@title:tab"
-msgid "Preview Settings"
-msgstr "មើល​ជា​​​មុន​ជា​អត្ថបទ"
-
-#: part/part.cpp:630
+#: part/part.cpp:634
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1283,28 +1278,28 @@ msgstr "មើល​ជា​​​មុន​ជា​អត្ថបទ"
 msgctxt "@info"
 msgid ""
 "Loading the archive <filename>%1</filename> failed with the following error:"
-"<nl/><nl/><message>%2</message>"
+"<nl/><message>%2</message>"
 msgstr ""
 "បាន​បរាជ័យ​ក្នុងការ​ផ្ទុកប័ណ្ណសារ <filename>%1</filename> ដោយ​មាន​កំហុស​ដូច​ខាងក្រោម ៖<message>"
 "%2</message>"
 
-#: part/part.cpp:674
+#: part/part.cpp:677
 #, fuzzy
 #| msgid "The archive writer could not be initialized."
 msgctxt "@info"
 msgid "The archive is empty or Ark could not open its content."
 msgstr "មិនអាច​ចាប់ផ្ដើម​កម្មវិធី​សរសេរ​ប័ណ្ណសារ​បានទេ ។"
 
-#: part/part.cpp:679
+#: part/part.cpp:682
 msgctxt "@info"
 msgid "Ark does not currently support ISO files with UDF filesystem."
 msgstr ""
 
-#: part/part.cpp:726
+#: part/part.cpp:729
 msgid "Ark cannot open symlinks."
 msgstr ""
 
-#: part/part.cpp:838
+#: part/part.cpp:841
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1315,38 +1310,38 @@ msgid ""
 "archive?"
 msgstr "មាន​ថត <filename>%1</filename> រួច​ហើយ ។ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ស្រង់​ចេញ​នៅ​ទីនេះ​ឬ ?"
 
-#: part/part.cpp:840
+#: part/part.cpp:843
 msgctxt "@title:window"
 msgid "File Modified"
 msgstr ""
 
-#: part/part.cpp:1110
+#: part/part.cpp:1113
 msgctxt "@title:window"
 msgid "Add Files"
 msgstr "បន្ថែម​ឯកសារ"
 
-#: part/part.cpp:1117
+#: part/part.cpp:1120
 msgctxt "@title:window"
 msgid "Add Folder"
 msgstr "បន្ថែម​ថត"
 
-#: part/part.cpp:1142
+#: part/part.cpp:1145
 msgid "Deleting these files is not undoable. Are you sure you want to do this?"
 msgstr "លុប​ឯកសារ​ទាំង​នេះ​មិនអាច​ធ្វើវិញ​បានទេ ។ តើអ្នកប្រាកដ​ជា​ចង់​ធ្វើ​ដូច្នេះ​ឬ ?"
 
-#: part/part.cpp:1143
+#: part/part.cpp:1146
 msgctxt "@title:window"
 msgid "Delete files"
 msgstr "លុប​ឯកសារ"
 
-#: part/part.cpp:1182
+#: part/part.cpp:1185
 #, fuzzy
 #| msgid "Source archive"
 msgctxt "@title:window"
 msgid "Save Archive As"
 msgstr "ប័ណ្ណសារ​ប្រភព"
 
-#: part/part.cpp:1189
+#: part/part.cpp:1192
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1356,7 +1351,7 @@ msgstr ""
 "មាន​ឯកសារ​ដែលមាន​ឈ្មោះ <filename>%1</filename> រួច​ហើយ ។ តើ​អ្នក​ប្រាកដ​​ជា​ចង់​សរសេរ​ជាន់​លើ​វា​"
 "ដែរឬទេ ?"
 
-#: part/part.cpp:1203
+#: part/part.cpp:1206
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1366,7 +1361,7 @@ msgstr ""
 "ឯកសារ <filename>%1</filename> មិនអាច​ត្រូវបាន​ចម្លង​ទៅ​ទីតាំង​ដែលបានបញ្ជាក់​បាន​ទេ ។ ប័ណ្ណសារ​"
 "មិនមាន​ទៀត​ទេ ។"
 
-#: part/part.cpp:1217
+#: part/part.cpp:1220
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1525,6 +1520,10 @@ msgctxt "@info"
 msgid ""
 "There was an error while reading <filename>%1</filename> during extraction."
 msgstr "មាន​កំហុស​មួយ​ខណៈដែល​អាន <filename>%1</filename> ក្នុង​ពេល​ស្រង់ចេញ ។"
+
+#~ msgctxt "@title:window"
+#~ msgid "Error Opening Archive"
+#~ msgstr "កំហុស​ក្នុងការ​បើក​ប័ណ្ណសារ"
 
 #, fuzzy
 #~| msgid "Open an archive"
