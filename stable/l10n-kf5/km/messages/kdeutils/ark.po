@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ark\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-03-20 07:35+0000\n"
+"POT-Creation-Date: 2016-03-25 11:27+0000\n"
 "PO-Revision-Date: 2012-06-11 15:59+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -349,13 +349,19 @@ msgstr ""
 msgid "Preview file size limit in megabytes."
 msgstr ""
 
-#: kerfuffle/cliinterface.cpp:303
+#: kerfuffle/cliinterface.cpp:197
 #, fuzzy
 #| msgid "Incorrect password."
-msgid "Extraction failed due to a wrong password."
+msgid "Extraction failed. Make sure that enough space is available."
 msgstr "ពាក្យ​សម្ងាត់​មិន​ត្រឹមត្រូវ ។"
 
-#: kerfuffle/cliinterface.cpp:313 kerfuffle/cliinterface.cpp:327
+#: kerfuffle/cliinterface.cpp:200
+msgid ""
+"Extraction failed. Make sure you provided the correct password and that "
+"enough space is available."
+msgstr ""
+
+#: kerfuffle/cliinterface.cpp:215 kerfuffle/cliinterface.cpp:229
 #, fuzzy
 #| msgid "Click to preview the selected file"
 msgctxt "@info"
@@ -363,55 +369,62 @@ msgid "Could not move the extracted file to the destination directory."
 msgid_plural "Could not move the extracted files to the destination directory."
 msgstr[0] "ចុច​​ដើម្បីមើល​ឯកសារ​ដែល​បាន​ជ្រើស​ជាមុន"
 
-#: kerfuffle/cliinterface.cpp:495
+#: kerfuffle/cliinterface.cpp:397
 #, kde-format
 msgctxt "@info"
 msgid "Failed to locate program <filename>%2</filename> on disk."
 msgid_plural "Failed to locate programs <filename>%2</filename> on disk."
 msgstr[0] "បាន​បរាជ័យ​ក្នុងការ​កំណត់​ទីតាំង​កម្មវិធី <filename>%2</filename> នៅ​លើ​ថាស ។"
 
-#: kerfuffle/cliinterface.cpp:866
+#: kerfuffle/cliinterface.cpp:891
+#, fuzzy
+#| msgid "Extraction failed because of an unexpected error."
+msgctxt "@info"
+msgid "Extraction failed because the disk is full."
+msgstr "បានបរាជ័យ​ក្នុងការ​ស្រង់​ចេញ ដោយ​សារ​ដែ​មាន​កំហុ​សដែល​មិនបាន​រំពឹង​ទុក ។"
+
+#: kerfuffle/cliinterface.cpp:899
 #, fuzzy
 #| msgid "Incorrect password."
 msgctxt "@info"
 msgid "Extraction failed: Incorrect password"
 msgstr "ពាក្យ​សម្ងាត់​មិន​ត្រឹមត្រូវ ។"
 
-#: kerfuffle/cliinterface.cpp:873 kerfuffle/cliinterface.cpp:915
+#: kerfuffle/cliinterface.cpp:906 kerfuffle/cliinterface.cpp:948
 msgid "Extraction failed because of an unexpected error."
 msgstr "បានបរាជ័យ​ក្នុងការ​ស្រង់​ចេញ ដោយ​សារ​ដែ​មាន​កំហុ​សដែល​មិនបាន​រំពឹង​ទុក ។"
 
-#: kerfuffle/cliinterface.cpp:908
+#: kerfuffle/cliinterface.cpp:941
 msgid "Incorrect password."
 msgstr "ពាក្យ​សម្ងាត់​មិន​ត្រឹមត្រូវ ។"
 
-#: kerfuffle/createdialog.cpp:166
+#: kerfuffle/createdialog.cpp:165
 msgid "The chosen password does not match the given verification password."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:169
+#: kerfuffle/createdialog.cpp:168
 msgid "The password cannot be empty."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:188
+#: kerfuffle/createdialog.cpp:187
 #, kde-format
 msgid ""
 "Protection of the archive with password is not possible with the %1 format."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:201
+#: kerfuffle/createdialog.cpp:200
 #, kde-format
 msgid "Protection of the list of files is not possible with the %1 format."
 msgstr ""
 
-#: kerfuffle/createdialog.cpp:227
+#: kerfuffle/createdialog.cpp:226
 #, fuzzy
 #| msgid "Deleting a file from the archive"
 #| msgid_plural "Deleting %1 files"
 msgid "Please select a filename for the archive."
 msgstr "លុប​ឯកសារ %1"
 
-#: kerfuffle/createdialog.cpp:227
+#: kerfuffle/createdialog.cpp:226
 #, fuzzy
 #| msgid "One file selected"
 #| msgid_plural "%1 files selected"
@@ -1209,24 +1222,17 @@ msgctxt "@info"
 msgid "<filename>%1</filename> is a directory."
 msgstr "<filename>%1</filename> គឺ​ជា​ថត ។"
 
-#: part/part.cpp:592
-#, kde-format
+#: part/part.cpp:594
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid "Could not open the archive <filename>%1</filename> for reading"
 msgctxt "@info"
 msgid ""
-"The archive <filename>%1</filename> already exists. Would you like to open "
-"it instead?"
-msgstr "មាន​ប័ណ្ណសារ <filename>%1</filename> រួច​ហើយ ។ តើ​​អ្នក​ចង់​បើក​វា​ជំនួស​វិញ​ឬ ?"
+"Could not overwrite <filename>%1</filename>. Check whether you have write "
+"permission."
+msgstr "មិនអាច​បើក​ប័ណ្ណសារ <filename>%1</filename> ដើម្បី​អាន​បាន​ទេ"
 
-#: part/part.cpp:592
-msgctxt "@title:window"
-msgid "File Exists"
-msgstr "មាន​ឯកសារ​រួច​ហើយ"
-
-#: part/part.cpp:592
-msgid "Open File"
-msgstr "បើក​ឯកសារ"
-
-#: part/part.cpp:598
+#: part/part.cpp:600
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "The archive <filename>%1</filename> was not found."
@@ -1236,13 +1242,13 @@ msgid ""
 "file."
 msgstr "រក​មិនឃើញ​ <filename>%1</filename> ទេ ។"
 
-#: part/part.cpp:601
+#: part/part.cpp:603
 #, kde-format
 msgctxt "@info"
 msgid "The archive <filename>%1</filename> was not found."
 msgstr "រក​មិនឃើញ​ <filename>%1</filename> ទេ ។"
 
-#: part/part.cpp:606
+#: part/part.cpp:608
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1254,7 +1260,29 @@ msgid ""
 "possible to read from it."
 msgstr "មាន​ប័ណ្ណសារ <filename>%1</filename> រួច​ហើយ ។ តើ​​អ្នក​ចង់​បើក​វា​ជំនួស​វិញ​ឬ ?"
 
+#: part/part.cpp:621
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "The archive <filename>%1</filename> already exists. Would you like to "
+#| "open it instead?"
+msgctxt "@info"
+msgid ""
+"The archive <filename>%1</filename> already exists. Do you wish to overwrite "
+"it?"
+msgstr "មាន​ប័ណ្ណសារ <filename>%1</filename> រួច​ហើយ ។ តើ​​អ្នក​ចង់​បើក​វា​ជំនួស​វិញ​ឬ ?"
+
 #: part/part.cpp:623
+msgctxt "@title:window"
+msgid "File Exists"
+msgstr "មាន​ឯកសារ​រួច​ហើយ"
+
+#: part/part.cpp:624
+msgctxt "@action:button"
+msgid "Overwrite"
+msgstr ""
+
+#: part/part.cpp:645
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1268,23 +1296,23 @@ msgstr ""
 "បាន​បរាជ័យ​ក្នុងការ​ផ្ទុកប័ណ្ណសារ <filename>%1</filename> ដោយ​មាន​កំហុស​ដូច​ខាងក្រោម ៖<message>"
 "%2</message>"
 
-#: part/part.cpp:666
+#: part/part.cpp:688
 #, fuzzy
 #| msgid "The archive writer could not be initialized."
 msgctxt "@info"
 msgid "The archive is empty or Ark could not open its content."
 msgstr "មិនអាច​ចាប់ផ្ដើម​កម្មវិធី​សរសេរ​ប័ណ្ណសារ​បានទេ ។"
 
-#: part/part.cpp:671
+#: part/part.cpp:693
 msgctxt "@info"
 msgid "Ark does not currently support ISO files with UDF filesystem."
 msgstr ""
 
-#: part/part.cpp:718
+#: part/part.cpp:748
 msgid "Ark cannot open symlinks."
 msgstr ""
 
-#: part/part.cpp:830
+#: part/part.cpp:860
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1295,22 +1323,22 @@ msgid ""
 "archive?"
 msgstr "មាន​ថត <filename>%1</filename> រួច​ហើយ ។ តើ​អ្នក​ប្រាកដ​ជា​ចង់​ស្រង់​ចេញ​នៅ​ទីនេះ​ឬ ?"
 
-#: part/part.cpp:832
+#: part/part.cpp:862
 msgctxt "@title:window"
 msgid "File Modified"
 msgstr ""
 
-#: part/part.cpp:1101
+#: part/part.cpp:1131
 msgctxt "@title:window"
 msgid "Add Files"
 msgstr "បន្ថែម​ឯកសារ"
 
-#: part/part.cpp:1108
+#: part/part.cpp:1138
 msgctxt "@title:window"
 msgid "Add Folder"
 msgstr "បន្ថែម​ថត"
 
-#: part/part.cpp:1135
+#: part/part.cpp:1165
 #, fuzzy
 #| msgid ""
 #| "Deleting these files is not undoable. Are you sure you want to do this?"
@@ -1320,7 +1348,7 @@ msgid_plural ""
 "Deleting these files is not undoable. Are you sure you want to do this?"
 msgstr[0] "លុប​ឯកសារ​ទាំង​នេះ​មិនអាច​ធ្វើវិញ​បានទេ ។ តើអ្នកប្រាកដ​ជា​ចង់​ធ្វើ​ដូច្នេះ​ឬ ?"
 
-#: part/part.cpp:1138
+#: part/part.cpp:1168
 #, fuzzy
 #| msgctxt "@title:window"
 #| msgid "Delete files"
@@ -1329,14 +1357,14 @@ msgid "Delete File"
 msgid_plural "Delete Files"
 msgstr[0] "លុប​ឯកសារ"
 
-#: part/part.cpp:1177
+#: part/part.cpp:1207
 #, fuzzy
 #| msgid "Source archive"
 msgctxt "@title:window"
 msgid "Save Archive As"
 msgstr "ប័ណ្ណសារ​ប្រភព"
 
-#: part/part.cpp:1184
+#: part/part.cpp:1214
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1346,7 +1374,7 @@ msgstr ""
 "មាន​ឯកសារ​ដែលមាន​ឈ្មោះ <filename>%1</filename> រួច​ហើយ ។ តើ​អ្នក​ប្រាកដ​​ជា​ចង់​សរសេរ​ជាន់​លើ​វា​"
 "ដែរឬទេ ?"
 
-#: part/part.cpp:1198
+#: part/part.cpp:1228
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1356,7 +1384,7 @@ msgstr ""
 "ឯកសារ <filename>%1</filename> មិនអាច​ត្រូវបាន​ចម្លង​ទៅ​ទីតាំង​ដែលបានបញ្ជាក់​បាន​ទេ ។ ប័ណ្ណសារ​"
 "មិនមាន​ទៀត​ទេ ។"
 
-#: part/part.cpp:1212
+#: part/part.cpp:1242
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1515,6 +1543,9 @@ msgctxt "@info"
 msgid ""
 "There was an error while reading <filename>%1</filename> during extraction."
 msgstr "មាន​កំហុស​មួយ​ខណៈដែល​អាន <filename>%1</filename> ក្នុង​ពេល​ស្រង់ចេញ ។"
+
+#~ msgid "Open File"
+#~ msgstr "បើក​ឯកសារ"
 
 #~ msgid "Main Toolbar"
 #~ msgstr "របារ​ឧបករណ៍​មេ"
