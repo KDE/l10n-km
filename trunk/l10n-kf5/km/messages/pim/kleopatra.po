@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-04-06 07:43+0000\n"
+"POT-Creation-Date: 2016-04-08 07:41+0000\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -319,7 +319,7 @@ msgstr "\"gpgconf --reload gpg-agent\" បាន​បរាជ័យ​ ៖​ 
 #: src/commands/encryptclipboardcommand.cpp:180
 #: src/commands/signclipboardcommand.cpp:169
 #: src/commands/signclipboardcommand.cpp:183
-#: src/commands/signencryptfilescommand.cpp:258
+#: src/commands/signencryptfilescommand.cpp:260
 #, kde-format
 msgid "An error occurred: %1"
 msgstr "កំហុស​មួយ​បាន​កើតឡើង ៖ %1"
@@ -740,17 +740,17 @@ msgstr "បាន​នាំ​សោ​សម្ងាត់​ចេញ​ដ
 msgid "Subprocess Diagnostics"
 msgstr "ការ​វិនិច្ឆ័យ​ដំណើរការ​រង ៖"
 
-#: src/commands/gnupgprocesscommand.cpp:276
+#: src/commands/gnupgprocesscommand.cpp:275
 #, kde-format
 msgid "Unable to start process %1. Please check your installation."
 msgstr "មិន​អាច​ចាប់ផ្ដើម​ដំណើរការ %1 បានទេ ។ សូម​ពិនិត្យ​មើល​ការ​ដំឡើង​របស់​អ្នក ។"
 
-#: src/commands/gnupgprocesscommand.cpp:282
+#: src/commands/gnupgprocesscommand.cpp:281
 #, kde-format
 msgid "Starting %1..."
 msgstr "កំពុង​ចាប់​ផ្ដើម​​ %1..."
 
-#: src/commands/gnupgprocesscommand.cpp:302
+#: src/commands/gnupgprocesscommand.cpp:301
 msgid "Process finished"
 msgstr "បាន​បញ្ចប់​ដំណើរការ​"
 
@@ -1267,11 +1267,11 @@ msgstr "កំណត់​ Pin ដំបូង​​"
 msgid "Sign Clipboard Error"
 msgstr "កំហុស​ក្នុង​ការ​ចុះហត្ថលេខា​ក្ដារ​តម្បៀត​ខ្ទាស់"
 
-#: src/commands/signencryptfilescommand.cpp:260
+#: src/commands/signencryptfilescommand.cpp:262
 msgid "Sign/Encrypt Files Error"
 msgstr "កំហុស​ចុះហត្ថលេខា/អ៊ីនគ្រិប​ឯកសារ"
 
-#: src/commands/signencryptfilescommand.cpp:273
+#: src/commands/signencryptfilescommand.cpp:275
 msgid "Select One or More Files to Sign and/or Encrypt"
 msgstr "ជ្រើស​ឯកសារ​មួយ ឬ​ច្រើន ដើម្បី​ចុះហត្ថលេខា និង​/​ឬ​អ៊ិនគ្រីប"
 
@@ -2368,11 +2368,13 @@ msgstr "ចុះហត្ថលេខា និង​អ៊ិនគ្រី�
 #: src/crypto/gui/newsignencryptfileswizard.cpp:398
 #: src/newcertificatewizard/newcertificatewizard.cpp:1574
 #: src/newcertificatewizard/newcertificatewizard.cpp:1603
+#: src/utils/formatting.cpp:748
 msgid "Encrypt"
 msgstr "អ៊ីនគ្រិប"
 
 #: src/crypto/gui/newsignencryptfileswizard.cpp:399
 #: src/newcertificatewizard/newcertificatewizard.cpp:1570
+#: src/utils/formatting.cpp:745
 msgid "Sign"
 msgstr "​ចុះហត្ថលេខា"
 
@@ -3212,12 +3214,12 @@ msgid "Certifications"
 msgstr "វិញ្ញាបនបត្រ​"
 
 #. i18n: ectx: property (text), widget (QPushButton, expandAllCertificationsPB)
-#: src/dialogs/certificatedetailsdialog.ui:229 src/view/tabwidget.cpp:480
+#: src/dialogs/certificatedetailsdialog.ui:229 src/view/tabwidget.cpp:789
 msgid "Expand All"
 msgstr "ពង្រីក​ទាំងអស់"
 
 #. i18n: ectx: property (text), widget (QPushButton, collapseAllCertificationsPB)
-#: src/dialogs/certificatedetailsdialog.ui:239 src/view/tabwidget.cpp:484
+#: src/dialogs/certificatedetailsdialog.ui:239 src/view/tabwidget.cpp:793
 msgid "Collapse All"
 msgstr "វេញ​ទាំងអស់​"
 
@@ -3339,6 +3341,7 @@ msgstr ""
 
 #: src/dialogs/certifycertificatedialog.cpp:202
 #: src/newcertificatewizard/newcertificatewizard.cpp:1578
+#: src/utils/formatting.cpp:742
 msgid "Certify"
 msgstr "បញ្ជាក់"
 
@@ -4445,6 +4448,10 @@ msgstr "ស្ថានភាព"
 msgid "Strength"
 msgstr "គុណភាព"
 
+#: src/models/subkeylistmodel.cpp:176
+msgid "Usage"
+msgstr ""
+
 #. i18n: ectx: property (windowTitle), widget (QDialog, Kleo::NewCertificateUi::AdvancedSettingsDialog)
 #: src/newcertificatewizard/advancedsettingsdialog.ui:14
 msgid "Advanced Settings"
@@ -4823,6 +4830,7 @@ msgid "Certificate Creation Wizard"
 msgstr "អ្នក​ជំនួយការ​បង្កើត​វិញ្ញាបនបត្រ"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:1581
+#: src/utils/formatting.cpp:751
 msgid "Authenticate"
 msgstr "ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
@@ -6511,57 +6519,69 @@ msgstr "ស្វែងរក"
 msgid "Search...<%1>"
 msgstr "ស្វែងរក"
 
-#: src/view/tabwidget.cpp:448
-msgid "New Tab"
-msgstr "ផ្ទាំងថ្មី"
-
-#: src/view/tabwidget.cpp:448
-msgid "Open a new tab"
-msgstr "បើក​ផ្ទាំង​ថ្មី"
-
-#: src/view/tabwidget.cpp:456
-msgid "Rename Tab..."
-msgstr "ប្ដូរ​ឈ្មោះ​ផ្ទាំង..."
-
-#: src/view/tabwidget.cpp:456
-msgid "Rename this tab"
-msgstr "ប្ដូរ​ឈ្មោះ​ផ្ទាំង​នេះ"
-
-#: src/view/tabwidget.cpp:460
-msgid "Duplicate Tab"
-msgstr "ស្ទួន​ផ្ទាំង"
-
-#: src/view/tabwidget.cpp:460
-msgid "Duplicate this tab"
-msgstr "ស្ទួន​ផ្ទាំង​​នេះ"
-
-#: src/view/tabwidget.cpp:464
-msgid "Close Tab"
-msgstr "បិទ​ផ្ទាំង​"
-
-#: src/view/tabwidget.cpp:464
-msgid "Close this tab"
-msgstr "បិទ​ផ្ទាំង​នេះ"
-
-#: src/view/tabwidget.cpp:468
-msgid "Move Tab Left"
-msgstr "ផ្លាស់ទី​ផ្ទាំង​ទៅ​ឆ្វេង"
-
-#: src/view/tabwidget.cpp:472
-msgid "Move Tab Right"
-msgstr "ផ្លាស់ទី​ផ្ទាំង​ទៅ​ស្ដាំ"
-
-#: src/view/tabwidget.cpp:476
-msgid "Hierarchical Certificate List"
-msgstr "បញ្ជី​សញ្ញា​បត្រ​តាម​ឋានានុក្រម"
-
-#: src/view/tabwidget.cpp:630
+#: src/view/tabwidget.cpp:572
 msgid "Rename Tab"
 msgstr "ប្ដូរ​ឈ្មោះ​ផ្ទាំង"
 
-#: src/view/tabwidget.cpp:630
+#: src/view/tabwidget.cpp:572
 msgid "New tab title:"
 msgstr "ចំណងជើង​ផ្ទាំង​ថ្មី ៖"
+
+#: src/view/tabwidget.cpp:757
+msgid "New Tab"
+msgstr "ផ្ទាំងថ្មី"
+
+#: src/view/tabwidget.cpp:757
+msgid "Open a new tab"
+msgstr "បើក​ផ្ទាំង​ថ្មី"
+
+#: src/view/tabwidget.cpp:765
+msgid "Rename Tab..."
+msgstr "ប្ដូរ​ឈ្មោះ​ផ្ទាំង..."
+
+#: src/view/tabwidget.cpp:765
+msgid "Rename this tab"
+msgstr "ប្ដូរ​ឈ្មោះ​ផ្ទាំង​នេះ"
+
+#: src/view/tabwidget.cpp:769
+msgid "Duplicate Tab"
+msgstr "ស្ទួន​ផ្ទាំង"
+
+#: src/view/tabwidget.cpp:769
+msgid "Duplicate this tab"
+msgstr "ស្ទួន​ផ្ទាំង​​នេះ"
+
+#: src/view/tabwidget.cpp:773
+msgid "Close Tab"
+msgstr "បិទ​ផ្ទាំង​"
+
+#: src/view/tabwidget.cpp:773
+msgid "Close this tab"
+msgstr "បិទ​ផ្ទាំង​នេះ"
+
+#: src/view/tabwidget.cpp:777
+msgid "Move Tab Left"
+msgstr "ផ្លាស់ទី​ផ្ទាំង​ទៅ​ឆ្វេង"
+
+#: src/view/tabwidget.cpp:777
+#, fuzzy
+#| msgid "Move Tab Left"
+msgid "Move this tab left"
+msgstr "ផ្លាស់ទី​ផ្ទាំង​ទៅ​ឆ្វេង"
+
+#: src/view/tabwidget.cpp:781
+msgid "Move Tab Right"
+msgstr "ផ្លាស់ទី​ផ្ទាំង​ទៅ​ស្ដាំ"
+
+#: src/view/tabwidget.cpp:781
+#, fuzzy
+#| msgid "Move Tab Right"
+msgid "Move this tab right"
+msgstr "ផ្លាស់ទី​ផ្ទាំង​ទៅ​ស្ដាំ"
+
+#: src/view/tabwidget.cpp:785
+msgid "Hierarchical Certificate List"
+msgstr "បញ្ជី​សញ្ញា​បត្រ​តាម​ឋានានុក្រម"
 
 #~ msgctxt "Version string is a guess"
 #~ msgid "guessed"
