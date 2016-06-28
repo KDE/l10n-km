@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: libkleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-05-24 09:19+0000\n"
+"POT-Creation-Date: 2016-06-28 08:42+0000\n"
 "PO-Revision-Date: 2012-07-09 10:59+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -80,9 +80,9 @@ msgstr "បណ្ណាល័យ​មិនមាន​និមិត្ត​
 msgid "Scanning directory %1..."
 msgstr "កំពុង​វិភាគ​ថត %1..."
 
-#: backends/qgpgme/qgpgmebackend.cpp:93 ui/keyselectiondialog.cpp:270
-#: ui/keyselectiondialog.cpp:272 ui/keyselectiondialog.cpp:279
-#: ui/keyselectiondialog.cpp:281 ui/keyselectiondialog.cpp:282
+#: backends/qgpgme/qgpgmebackend.cpp:93 ui/keyselectiondialog.cpp:289
+#: ui/keyselectiondialog.cpp:291 ui/keyselectiondialog.cpp:300
+#: ui/keyselectiondialog.cpp:302
 msgid "unknown"
 msgstr "​មិន​ស្គាល់"
 
@@ -140,7 +140,7 @@ msgstr "មាន​កំហុស​ពី gpgconf នៅពេល​ដែល
 
 #: backends/qgpgme/qgpgmekeylistjob.cpp:163
 #: backends/qgpgme/qgpgmelistallkeysjob.cpp:165 ui/keyrequester.cpp:245
-#: ui/keyselectiondialog.cpp:638
+#: ui/keyselectiondialog.cpp:663
 #, kde-format
 msgid ""
 "<qt><p>An error occurred while fetching the keys from the backend:</p><p><b>"
@@ -808,12 +808,12 @@ msgstr "ជម្រះ"
 msgid "Change..."
 msgstr "ផ្លាស់ប្ដូរ..."
 
-#: ui/keyrequester.cpp:231 ui/keyselectiondialog.cpp:240
+#: ui/keyrequester.cpp:231 ui/keyselectiondialog.cpp:256
 msgid "<placeholder>unknown</placeholder>"
 msgstr "<placeholder>មិនស្គាល់</placeholder>"
 
 #: ui/keyrequester.cpp:250 ui/keyrequester.cpp:282 ui/keyrequester.cpp:305
-#: ui/keyselectiondialog.cpp:611 ui/keyselectiondialog.cpp:643
+#: ui/keyselectiondialog.cpp:636 ui/keyselectiondialog.cpp:668
 msgid "Key Listing Failed"
 msgstr "ការ​រាយ​កូនសោ​បាន​បរាជ័យ"
 
@@ -851,59 +851,112 @@ msgstr "ជម្រើស​កូនសោ"
 msgid "Please select an (OpenPGP or S/MIME) key to use."
 msgstr "សូម​ជ្រើស​កូនសោ (OpenPGP ឬ S/MIME) ដើម្បី​ប្រើ​ប្រាស់ ។"
 
-#: ui/keyselectiondialog.cpp:214
+#: ui/keyselectiondialog.cpp:98
+msgid "The key is not valid."
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:106
+msgid "The key is expired."
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:110
+msgid "The key is revoked."
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:114
+msgid "The key is disabled."
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:122
+#, fuzzy
+#| msgid "The following keys will be used for encryption:"
+msgid "The key is not designated for encryption."
+msgstr "កូន​សោ​ដូច​ខាង​ក្រោម​នឹង​ត្រូវ​បាន​ប្រើ​សម្រាប់​អ៊ិនគ្រីប ៖"
+
+#: ui/keyselectiondialog.cpp:128
+msgid "The key is not designated for signing."
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:134
+msgid "The key is not designated for certifying."
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:140
+msgid "The key is not designated for authentication."
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:148
+msgid "The key is not secret."
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:163
+msgid "The key is not trusted enough."
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:169
+msgid "The key can be used."
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:230
 msgid "Key ID"
 msgstr "លេខ​សម្គាល់​កូនសោ"
 
-#: ui/keyselectiondialog.cpp:215
+#: ui/keyselectiondialog.cpp:231
 msgid "User ID"
 msgstr "លេខ​សម្គាល់​អ្នក​ប្រើ"
 
-#: ui/keyselectiondialog.cpp:263
+#: ui/keyselectiondialog.cpp:279
 msgid "never"
 msgstr "កុំ​"
 
-#: ui/keyselectiondialog.cpp:266
+#: ui/keyselectiondialog.cpp:289
 #, kde-format
-msgid ""
-"OpenPGP key for %1\n"
-"Created: %2\n"
-"Expiry: %3\n"
-"Fingerprint: %4"
+msgid "OpenPGP key for <b>%1</b>"
 msgstr ""
-"កូនសោ​ OpenPGP សម្រាប់​ %1\n"
-"បានបង្កើត​ ៖ %2\n"
-"ផុត​កំណត់​ ៖ %3\n"
-"ស្នាម​ផ្ដិត​ម្រាមដៃ​ ៖​ %4"
 
-#: ui/keyselectiondialog.cpp:274
+#: ui/keyselectiondialog.cpp:291
 #, kde-format
-msgid ""
-"S/MIME key for %1\n"
-"Created: %2\n"
-"Expiry: %3\n"
-"Fingerprint: %4\n"
-"Issuer: %5"
+msgid "S/MIME key for <b>%1</b>"
 msgstr ""
-"កូនសោ S/MIME សម្រាប់​ %1\n"
-"បាន​បង្កើត​ ៖ %2\n"
-"ផុត​កំណត់​ ៖​ %3\n"
-"ស្នាម​ផ្ដិត​ម្រាម​ដៃ ៖ %4\n"
-"អ្នក​ចេញ​ផ្សាយ​ ៖​ %5"
 
-#: ui/keyselectiondialog.cpp:431
+#: ui/keyselectiondialog.cpp:298
+msgctxt "Key creation date"
+msgid "Created"
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:299
+msgctxt "Key Expiration date"
+msgid "Expiry"
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:300
+msgctxt "Key fingerprint"
+msgid "Fingerprint"
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:302
+msgctxt "Key issuer"
+msgid "Issuer"
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:304
+msgctxt "Key status"
+msgid "Status"
+msgstr ""
+
+#: ui/keyselectiondialog.cpp:456
 msgid "Search for &External Certificates"
 msgstr "ស្វែងរក​វិញ្ញាបនបត្រ​ខាង​ក្រៅ"
 
-#: ui/keyselectiondialog.cpp:446
+#: ui/keyselectiondialog.cpp:471
 msgid "&Search for:"
 msgstr "ស្វែងរក ៖"
 
-#: ui/keyselectiondialog.cpp:470
+#: ui/keyselectiondialog.cpp:495
 msgid "&Remember choice"
 msgstr "ចងចាំ​ជម្រើស​"
 
-#: ui/keyselectiondialog.cpp:473
+#: ui/keyselectiondialog.cpp:498
 msgid ""
 "<qt><p>If you check this box your choice will be stored and you will not be "
 "asked again.</p></qt>"
@@ -911,35 +964,35 @@ msgstr ""
 "<qt><p>ប្រសិន​បើអ្នកធីក​ប្រអប់​នេះ ជម្រើស​របស់អ្នក​នឹង​ត្រូវបាន​រក្សាទុក ហើយ​អ្នក​នឹង​មិន​ត្រូវបាន​សួរ​ម្ដង​ទៀត​"
 "ឡើយ ។</p></qt>"
 
-#: ui/keyselectiondialog.cpp:489
+#: ui/keyselectiondialog.cpp:514
 msgid "&Reread Keys"
 msgstr "អាន​កូនសោ​​ឡើង​វិញ​"
 
-#: ui/keyselectiondialog.cpp:490
+#: ui/keyselectiondialog.cpp:515
 msgid "&Start Certificate Manager"
 msgstr "ចាប់ផ្ដើម​កម្មវិធី​គ្រប់គ្រង​វិញ្ញាបនបត្រ"
 
-#: ui/keyselectiondialog.cpp:609
+#: ui/keyselectiondialog.cpp:634
 msgid "No backends found for listing keys. Check your installation."
 msgstr "រក​មិន​មាន​កម្មវិធី​ខាងក្រោយ​សម្រាប់​​ការ​រាយ​កូនសោ​ទេ ។ ពិនិត្យ​ការ​ដំឡើង​របស់​អ្នក ។"
 
-#: ui/keyselectiondialog.cpp:625
+#: ui/keyselectiondialog.cpp:650
 msgid "Could not start certificate manager; please check your installation."
 msgstr "មិនអាចចាប់ផ្ដើម​អ្នកគ្រប់គ្រង​​វិញ្ញាបនបត្រ​បានឡើយ ។ សូម​ពិនិត្យ​មើល​ការដំឡើង​របស់អ្នក ។"
 
-#: ui/keyselectiondialog.cpp:627
+#: ui/keyselectiondialog.cpp:652
 msgid "Certificate Manager Error"
 msgstr "កំហុស​កម្មវិធី​គ្រប់គ្រង​វិញ្ញាបនបត្រ"
 
-#: ui/keyselectiondialog.cpp:684
+#: ui/keyselectiondialog.cpp:709
 msgid "Checking selected keys..."
 msgstr "កំពុង​ពិនិត្យ​កូនសោ​ដែល​​បានជ្រើស​..."
 
-#: ui/keyselectiondialog.cpp:684
+#: ui/keyselectiondialog.cpp:709
 msgid "Fetching keys..."
 msgstr "កំពុង​ទៅ​យកសោ​..."
 
-#: ui/keyselectiondialog.cpp:715
+#: ui/keyselectiondialog.cpp:740
 #, kde-format
 msgid ""
 "<qt>One backend returned truncated output.<p>Not all available keys are "
@@ -951,11 +1004,11 @@ msgstr[0] ""
 "<qt>កម្មវិធី​ខាងក្រោយ %1​ ​បាន​ត្រឡប់​លទ្ធផល​ដែល​បានកាត់​ឲ្យ​ខ្លី ។<p>គ្មាន​សោ​ដែល​មាន​ត្រូវ​បានបង្ហាញ</"
 "p></qt>"
 
-#: ui/keyselectiondialog.cpp:720
+#: ui/keyselectiondialog.cpp:745
 msgid "Key List Result"
 msgstr "លទ្ធផ​ល​នៃ​បញ្ជី​កូនសោ"
 
-#: ui/keyselectiondialog.cpp:840
+#: ui/keyselectiondialog.cpp:865
 msgid "Recheck Key"
 msgstr "ពិនិត្យ​​កូនសោ​ឡើង​វិញ"
 
@@ -1029,6 +1082,30 @@ msgstr "បង្ហាញ​កំណត់ហេតុ​ត្រួតពិ
 #, kde-format
 msgid "%1: %2"
 msgstr "%1 ៖ %2"
+
+#~ msgid ""
+#~ "OpenPGP key for %1\n"
+#~ "Created: %2\n"
+#~ "Expiry: %3\n"
+#~ "Fingerprint: %4"
+#~ msgstr ""
+#~ "កូនសោ​ OpenPGP សម្រាប់​ %1\n"
+#~ "បានបង្កើត​ ៖ %2\n"
+#~ "ផុត​កំណត់​ ៖ %3\n"
+#~ "ស្នាម​ផ្ដិត​ម្រាមដៃ​ ៖​ %4"
+
+#~ msgid ""
+#~ "S/MIME key for %1\n"
+#~ "Created: %2\n"
+#~ "Expiry: %3\n"
+#~ "Fingerprint: %4\n"
+#~ "Issuer: %5"
+#~ msgstr ""
+#~ "កូនសោ S/MIME សម្រាប់​ %1\n"
+#~ "បាន​បង្កើត​ ៖ %2\n"
+#~ "ផុត​កំណត់​ ៖​ %3\n"
+#~ "ស្នាម​ផ្ដិត​ម្រាម​ដៃ ៖ %4\n"
+#~ "អ្នក​ចេញ​ផ្សាយ​ ៖​ %5"
 
 #~ msgid "Copy Audit Log to Clipboard"
 #~ msgstr "ចម្លង​កំណត់ហេតុ​ត្រួតពិនិត្យ​ទៅ​ក្ដារតម្បៀតខ្ទាស់"
