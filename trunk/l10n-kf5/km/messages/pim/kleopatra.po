@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-07-07 07:39+0000\n"
+"POT-Creation-Date: 2016-07-15 07:43+0000\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -297,7 +297,6 @@ msgid "Cannot set restrictive permissions on file %1: %2"
 msgstr "មិន​អាច​កំណត់​សិទ្ធ​ដែល​បន្ថយ​លើ​ឯកសារ​​ %1 ៖ %2 បាន​ទេ​"
 
 #: src/commands/changeroottrustcommand.cpp:353
-#: src/crypto/createchecksumscontroller.cpp:625
 #, kde-format
 msgid "Failed to move file %1 to its final destination, %2: %3"
 msgstr "បាន​បរាជ័យ​យក​ឯកសារ​ចេញ​​ %1 ទិសដៅ​​ចុងក្រោយ​របស់​វា​ %2 ៖ %3​"
@@ -314,7 +313,7 @@ msgstr "\"gpgconf --reload gpg-agent\" បាន​បរាជ័យ​ ៖​ 
 #: src/commands/checksumcreatefilescommand.cpp:174
 #: src/commands/checksumverifyfilescommand.cpp:174
 #: src/commands/decryptverifyclipboardcommand.cpp:179
-#: src/commands/decryptverifyfilescommand.cpp:185
+#: src/commands/decryptverifyfilescommand.cpp:197
 #: src/commands/encryptclipboardcommand.cpp:166
 #: src/commands/encryptclipboardcommand.cpp:180
 #: src/commands/signclipboardcommand.cpp:169
@@ -381,17 +380,17 @@ msgstr "ក្ដារ​តម្បៀត​ខ្ទាស់​មិន​
 msgid "Decrypt/Verify Clipboard Error"
 msgstr "កំហុស​ក្នុង​ការ​ឌិគ្រីប​/​បញ្ជាក់​ក្ដារ​តម្បៀត​ខ្ទាស់"
 
-#: src/commands/decryptverifyfilescommand.cpp:79
+#: src/commands/decryptverifyfilescommand.cpp:82
 #, fuzzy
 #| msgid "Decrypt/Verify Files"
 msgid "Decrypt/Verify Failed"
 msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់​ឯកសារ"
 
-#: src/commands/decryptverifyfilescommand.cpp:187
+#: src/commands/decryptverifyfilescommand.cpp:199
 msgid "Decrypt/Verify Files Error"
 msgstr "កំហុស​ក្នុងការ​ឌិគ្រីប​/បញ្ជាក់​ឯកសារ"
 
-#: src/commands/decryptverifyfilescommand.cpp:200
+#: src/commands/decryptverifyfilescommand.cpp:212
 msgid "Select One or More Files to Decrypt and/or Verify"
 msgstr "ជ្រើស​ឯកសារ​មួយ ឬ​ច្រើន​ដើម្បី​ឌិគ្រីប និង/​ឬ​បញ្ជាក់"
 
@@ -1379,74 +1378,43 @@ msgstr "រូបរាង​លំនាំដើម​"
 msgid "Configure"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ"
 
-#. i18n: ectx: attribute (title), widget (QWidget, emailOperationsTab)
-#: src/conf/cryptooperationsconfigwidget.ui:18
+#: src/conf/cryptooperationsconfigwidget.cpp:72
 msgid "EMail Operations"
 msgstr "​ប្រតិបត្តិ​ការ​អ៊ីមែល​ "
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, quickSignCB)
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, quickEncryptCB)
-#: src/conf/cryptooperationsconfigwidget.ui:24
-#: src/conf/cryptooperationsconfigwidget.ui:34
-msgctxt "@info:whatsthis"
+#: src/conf/cryptooperationsconfigwidget.cpp:74
 msgid ""
-"When 'Quick Mode' is enabled, no dialog is shown when signing (encrypting) "
-"emails, respectively, unless there is a conflict that needs manual "
-"resolution."
+"Don't confirm signing certificate if there are is only one valid certificate "
+"for the identity"
 msgstr ""
-"នៅ​ពេល​ដែល​​ 'របៀប​រហ័ស​​' ត្រូវ​បាន​បើក គ្មាន​ប្រអប់​ត្រូវ​បាន​បង្ហាញ​ទេ​នៅ​ពេល​ចុះហត្ថលេខា (ការ​អ៊ិនគ្រីប​​) "
-"អ៊ីមែល​នីមួយៗ លុះត្រាតែ​មាន​ការ​ប៉ះ​ទង្គិច​ដែល​ត្រូវការ​គុណភាព​បង្ហាញ​​​សៀវភៅ​ដៃ​​​​ ។​"
 
-#. i18n: ectx: property (text), widget (QCheckBox, quickSignCB)
-#: src/conf/cryptooperationsconfigwidget.ui:27
-msgid "Use 'Quick Mode' when signing"
-msgstr "ប្រើ​​ '​​របៀប​រហ័ស​​' នៅ​ពេល​ដែល​​ចុះហត្ថលេខា"
+#: src/conf/cryptooperationsconfigwidget.cpp:75
+msgid ""
+"Don't confirm encryption certificates if there is exactly one valid "
+"certificate for each recipient"
+msgstr ""
 
-#. i18n: ectx: property (text), widget (QCheckBox, quickEncryptCB)
-#: src/conf/cryptooperationsconfigwidget.ui:37
-msgid "Use 'Quick Mode' when encrypting"
-msgstr "ប្រើ​​ '​របៀប​រហ័ស​​' នៅ​ពេល​ដែល​ការ​អ៊ិនគ្រីប​"
-
-#. i18n: ectx: attribute (title), widget (QWidget, fileOperationsTab)
-#: src/conf/cryptooperationsconfigwidget.ui:58
+#: src/conf/cryptooperationsconfigwidget.cpp:81
 msgid "File Operations"
 msgstr "ប្រតិបត្តិ​ឯកសារ​"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, pgpFileExtCB)
-#: src/conf/cryptooperationsconfigwidget.ui:66
-msgctxt "@info:whatsthis"
-msgid ""
-"<p>Check this if you want to have OpenPGP encrypted files created by "
-"Kleopatra have the .pgp file extension.</p>\n"
-"<p>This will not modify any contents of the created files.</p>\n"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QCheckBox, pgpFileExtCB)
-#: src/conf/cryptooperationsconfigwidget.ui:69
+#: src/conf/cryptooperationsconfigwidget.cpp:83
 msgid ""
 "Create OpenPGP encrypted files with \".pgp\" file extensions instead of \"."
 "gpg\""
 msgstr ""
 
-#. i18n: ectx: property (whatsThis), widget (QLabel, label)
-#. i18n: ectx: property (whatsThis), widget (QComboBox, checksumDefinitionCB)
-#: src/conf/cryptooperationsconfigwidget.ui:80
-#: src/conf/cryptooperationsconfigwidget.ui:92
-msgctxt "@info:whatsthis"
+#. i18n: ectx: label, entry (AutoDecryptVerify), group (FileOperations)
+#: src/conf/cryptooperationsconfigwidget.cpp:84
+#: src/kcfg/fileoperationspreferences.kcfg:15
 msgid ""
-"<p>Choose here which of the configured checksum programs should be used when "
-"creating checksum files.</p>\n"
-"<p>When verifying checksums, the program to use is automatically found, "
-"based on the names of the checksum files found.</p>\n"
+"Automatically start operation based on input detection for decrypt/verify."
 msgstr ""
-"<p>នៅ​ទីនេះ​ជ្រើស​កម្មវិធី​ឆេកសាំដែល​បាន​កំណត់​រចនាសម្ព័ន្ធ​ដែល​គួរ​ត្រូវ​បាន​ត្រូវ​បាន​ប្រើ នៅ​ពេល​បង្កើត​ឯកសារ​"
-"ឆេកសាំ ។​</p>\n"
-"<p>នៅ​ពេល​ផ្ទៀងផ្ទាត់​ឆេកសាំ​ កម្មវិធី​ដែល​ត្រូវ​ប្រើ​នឹង​ត្រូវ​បាន​រក​ឃើញ​ដោយ​ស្វ័យ​ប្រវត្តិ​​ដោយ​ផ្អែក​លើ​ឈ្មោះ​​​"
-"ឯកសារ​ឆេកសាំ​ដែល​រក​ឃើញ​ ។​</p>\n"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: src/conf/cryptooperationsconfigwidget.ui:83
-msgid "Checksum program to use:"
+#: src/conf/cryptooperationsconfigwidget.cpp:88
+#, fuzzy
+#| msgid "Checksum program to use:"
+msgid "Checksum program to use when creating checksum files:"
 msgstr "កម្មវិធី​ឆេកសាំ​​ត្រូវ​ប្រើ​ ៖"
 
 #: src/conf/dirservconfigpage.cpp:174
@@ -1801,6 +1769,73 @@ msgstr "កំហុស​កម្មវិធី​គ្រប់គ្រង
 msgid "The GpgSM process ended prematurely because of an unexpected error."
 msgstr "ដំណើរការ GpgSM បាន​បញ្ចប់​មុន ដោយសារ​កំហុស​ដោយ​មិននឹក​ស្មាន ។"
 
+#: src/crypto/autodecryptverifyfilescontroller.cpp:146
+msgid ""
+"Failed to find encrypted or signed data in one or more files.<nl/>You can "
+"manually select what to do with the files now.<nl/>If they contain signed or "
+"encrypted data please report a bug (see Help->Report Bug)."
+msgstr ""
+
+#: src/crypto/autodecryptverifyfilescontroller.cpp:181
+#: src/utils/output.cpp:454
+#, kde-format
+msgid ""
+"The file <b>%1</b> already exists.\n"
+"Overwrite?"
+msgstr ""
+"មាន​ឯកសារ <b>%1</b> រួចហើយ ។\n"
+"សរសេរ​ជាន់លើ​ឬ ?"
+
+#: src/crypto/autodecryptverifyfilescontroller.cpp:183
+#: src/utils/output.cpp:456
+msgid "Overwrite Existing File?"
+msgstr "សរសេរ​ជាន់លើ​ឯកសារ​ដែល​មាន​ឬ ?"
+
+#: src/crypto/autodecryptverifyfilescontroller.cpp:185
+#: src/utils/output.cpp:458
+msgid "Overwrite All"
+msgstr "សរសេរ​ជាន់​លើ​ទាំងអស់"
+
+#: src/crypto/autodecryptverifyfilescontroller.cpp:197
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Could not copy temporary file <filename>%1</filename> to file <filename>"
+#| "%2</filename>: <message>%3</message>"
+msgid "Failed to delete <filename>%1</filename>."
+msgstr ""
+"មិន​អាច​ម្លង​ឯកសារ​បណ្ដោះអាសន្ន <filename>%1</filename> ទៅ​ឯកសារ <filename>%2</"
+"filename> ៖ <message>%3</message>"
+
+#: src/crypto/autodecryptverifyfilescontroller.cpp:204
+#, fuzzy, kde-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Could not copy temporary file <filename>%1</filename> to file <filename>"
+#| "%2</filename>: <message>%3</message>"
+msgid "Failed to move <filename>%1</filename> to <filename>%2</filename>."
+msgstr ""
+"មិន​អាច​ម្លង​ឯកសារ​បណ្ដោះអាសន្ន <filename>%1</filename> ទៅ​ឯកសារ <filename>%2</"
+"filename> ៖ <message>%3</message>"
+
+#: src/crypto/autodecryptverifyfilescontroller.cpp:227
+#, fuzzy, kde-format
+#| msgid "Could not open file \"%1\" for reading"
+msgid "Cannot open <filename>%1</filename> for reading."
+msgstr "មិន​អាច​បើក​អាន​ឯកសារ \"%1\" បានទេ"
+
+#: src/crypto/autodecryptverifyfilescontroller.cpp:232
+#, kde-format
+msgid ""
+"The file <filename>%1</filename> contains certificates and can't be "
+"decrypted or verified."
+msgstr ""
+
+#: src/crypto/autodecryptverifyfilescontroller.cpp:238
+#, kde-format
+msgid "Select the file to verify with \"%1\""
+msgstr ""
+
 #: src/crypto/createchecksumscontroller.cpp:88
 msgctxt "@info"
 msgid "No checksum files have been created."
@@ -1842,23 +1877,23 @@ msgctxt "@title:window"
 msgid "Create Checksum Progress"
 msgstr "បង្កើត​វឌ្ឍនភាព​របស់​ឆេកសាំ​"
 
-#: src/crypto/createchecksumscontroller.cpp:600
-#, kde-format
-msgid "Failed to open file \"%1\" for reading and writing: %2"
-msgstr "បាន​បរាជ័យ​បើក​ឯកសារ​​ \"%1\" សម្រាប់​ការ​​អាន និង​ការ​សរសេរ ៖​ %2"
-
-#: src/crypto/createchecksumscontroller.cpp:617
+#: src/crypto/createchecksumscontroller.cpp:615
 #: src/crypto/verifychecksumscontroller.cpp:594 src/utils/output.cpp:580
 #, kde-format
 msgid "Error while running %1: %2"
 msgstr "កំហុស​ខណៈ​ពេល​កំពុង​ដំណើរការ​​ %1 ៖ %2"
 
-#: src/crypto/createchecksumscontroller.cpp:620
+#: src/crypto/createchecksumscontroller.cpp:618
 #: src/crypto/verifychecksumscontroller.cpp:597 src/utils/input.cpp:388
 #: src/utils/output.cpp:583
 #, kde-format
 msgid "Failed to execute %1: %2"
 msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
+
+#: src/crypto/createchecksumscontroller.cpp:628
+#, kde-format
+msgid "Failed to overwrite <filename>%1</filename>."
+msgstr ""
 
 #: src/crypto/createchecksumscontroller.cpp:655
 msgid "No checksum programs defined."
@@ -1889,7 +1924,6 @@ msgid "Status and progress of the crypto operations is shown here."
 msgstr "ស្ថានភាព​ និង​វឌ្ឍនភាព​​នៃ​ការ​ប្រតិបត្តិការ​សម្ងាត់​ត្រូវ​​បាន​បង្ហាញ​ទីនេះ ។"
 
 #: src/crypto/decryptverifyemailcontroller.cpp:167
-#: src/crypto/decryptverifyfilescontroller.cpp:200
 msgid "User canceled"
 msgstr "អ្នកប្រើ​បោះបង់"
 
@@ -1934,7 +1968,8 @@ msgstr "មិន​អាច​កំណត់​ថា​តើ​​បញ្
 msgid "No usable inputs found"
 msgstr "រក​មិន​ឃើញ​ព័ត៌មាន​បញ្ចូល​ដែល​អាច​ប្រើ​បាន​ទេ"
 
-#: src/crypto/decryptverifyfilescontroller.cpp:248
+#: src/crypto/decryptverifyfilescontroller.cpp:247
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:107
 msgid "Decrypt/Verify Files"
 msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់​ឯកសារ"
 
@@ -2291,6 +2326,77 @@ msgstr "ការ​អ៊ិនគ្រីប​បាន​បរាជ័យ
 msgid "Encryption succeeded."
 msgstr "ការ​អ៊ិនគ្រីប​បាន​ជោគជ័យ ។"
 
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:71
+#: src/crypto/gui/decryptverifyfileswizard.cpp:225
+msgid "&Output folder:"
+msgstr "ថត​លទ្ធផល ៖"
+
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:114
+#, fuzzy
+#| msgid "Decrypt/Verify Files"
+msgid "Verify Files"
+msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់​ឯកសារ"
+
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:138
+#: src/crypto/gui/newresultpage.cpp:136 src/crypto/gui/resultpage.cpp:119
+#, kde-format
+msgid "%1: All operations completed."
+msgstr "%1 ៖ បាន​បញ្ចប់​ប្រតិបត្តិការ​ទាំងអស់ ។"
+
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:140
+#: src/crypto/gui/newresultpage.cpp:138 src/crypto/gui/resultpage.cpp:121
+msgid "All operations completed."
+msgstr "បាន​បញ្ចប់​ប្រតិបត្តិការ​ទាំងអស់ ។"
+
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:153
+#: src/crypto/gui/newresultpage.cpp:164
+#: src/crypto/gui/resultlistwidget.cpp:234 src/crypto/gui/resultpage.cpp:138
+#, kde-format
+msgctxt "number, operation description"
+msgid "Operation %1: %2"
+msgstr "ប្រតិបត្តិការ %1 ៖ %2"
+
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:155
+#: src/crypto/gui/newresultpage.cpp:166 src/crypto/gui/resultpage.cpp:140
+#, kde-format
+msgctxt "tag( \"OpenPGP\" or \"CMS\"),  operation description"
+msgid "%1: %2"
+msgstr "%1 ៖ %2"
+
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:201
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Please select export options for %1:"
+msgid "Please select an output folder."
+msgstr "សូម​ជ្រើស​ជម្រើស​នាំចេញ​សម្រាប់ %1 ៖"
+
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:202
+#, fuzzy
+#| msgid "&Output folder:"
+msgid "No output folder."
+msgstr "ថត​លទ្ធផល ៖"
+
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:216
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:225
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "Please select export options for %1:"
+msgid "Please select a different output folder."
+msgstr "សូម​ជ្រើស​ជម្រើស​នាំចេញ​សម្រាប់ %1 ៖"
+
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:217
+#, fuzzy
+#| msgctxt "@info"
+#| msgid "You have to enter an output filename."
+msgid "Failed to create output folder."
+msgstr "អ្នក​ត្រូវ​តែ​បញ្ចូល​ឈ្មោះ​ឯកសា​រលទ្ធផល ។"
+
+#: src/crypto/gui/decryptverifyfilesdialog.cpp:226
+#, fuzzy
+#| msgid "&Output folder:"
+msgid "Invalid output folder."
+msgstr "ថត​លទ្ធផល ៖"
+
 #: src/crypto/gui/decryptverifyfileswizard.cpp:214
 msgid "<b>Choose operations to be performed</b>"
 msgstr "<b>ជ្រើស​ប្រតិបត្តិការ​ដែល​ត្រូវ​ធ្វើ</b>"
@@ -2310,10 +2416,6 @@ msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់"
 #: src/crypto/gui/decryptverifyfileswizard.cpp:224
 msgid "Create all output files in a single folder"
 msgstr "បង្កើត​ឯកសារ​លទ្ធផល​ទាំងអស់​នៅ​ក្នុង​ថត​មួយ"
-
-#: src/crypto/gui/decryptverifyfileswizard.cpp:225
-msgid "&Output folder:"
-msgstr "ថត​លទ្ធផល ៖"
 
 #: src/crypto/gui/decryptverifyoperationwidget.cpp:94
 msgid "Input file:"
@@ -2338,28 +2440,6 @@ msgstr "អ៊ិនគ្រីប​សារ​សំបុត្រ"
 #: src/crypto/gui/newresultpage.cpp:102 src/crypto/gui/resultpage.cpp:91
 msgid "Keep open after operation completed"
 msgstr "ទុក​ឲ្យ​នៅ​បើក បន្ទាប់​ពី​បញ្ចប់​ប្រតិបត្តិការ"
-
-#: src/crypto/gui/newresultpage.cpp:136 src/crypto/gui/resultpage.cpp:119
-#, kde-format
-msgid "%1: All operations completed."
-msgstr "%1 ៖ បាន​បញ្ចប់​ប្រតិបត្តិការ​ទាំងអស់ ។"
-
-#: src/crypto/gui/newresultpage.cpp:138 src/crypto/gui/resultpage.cpp:121
-msgid "All operations completed."
-msgstr "បាន​បញ្ចប់​ប្រតិបត្តិការ​ទាំងអស់ ។"
-
-#: src/crypto/gui/newresultpage.cpp:164
-#: src/crypto/gui/resultlistwidget.cpp:234 src/crypto/gui/resultpage.cpp:138
-#, kde-format
-msgctxt "number, operation description"
-msgid "Operation %1: %2"
-msgstr "ប្រតិបត្តិការ %1 ៖ %2"
-
-#: src/crypto/gui/newresultpage.cpp:166 src/crypto/gui/resultpage.cpp:140
-#, kde-format
-msgctxt "tag( \"OpenPGP\" or \"CMS\"),  operation description"
-msgid "%1: %2"
-msgstr "%1 ៖ %2"
 
 #: src/crypto/gui/newresultpage.cpp:172 src/crypto/gui/resultpage.cpp:146
 msgid "<b>Results</b>"
@@ -3961,6 +4041,14 @@ msgid ""
 "Set this to make kleopatra default to pgp file extensions for OpenPGP files."
 msgstr ""
 
+#. i18n: ectx: whatsthis, entry (AutoDecryptVerify), group (FileOperations)
+#: src/kcfg/fileoperationspreferences.kcfg:16
+msgid ""
+"With this option set Kleopatra no longer asks you what you want to do with "
+"input files but instead automatically starts the operations it detects as "
+"applicable to the input."
+msgstr ""
+
 #. i18n: ectx: label, entry (RefreshInterval), group (SMime Validation)
 #: src/kcfg/smimevalidationpreferences.kcfg:6
 msgid "Certificate refresh interval (in hours). Zero (0) disables."
@@ -4105,7 +4193,13 @@ msgstr ""
 "វិញ្ញាបនបត្រ​ ៖​​ %1\n"
 "ស្នាម​ម្រាមដៃ ​៖​ %2"
 
-#: src/kleopatra_options.h:87
+#: src/kleopatra_options.h:84
+#, fuzzy
+#| msgid "Create Checksum Files..."
+msgid "Create or check a checksum file"
+msgstr "បង្កើត​ឯកសារ​​របស់​ឆេកសាំ​...​"
+
+#: src/kleopatra_options.h:89
 msgctxt ""
 "If a certificate is already known it shows the certificate details dialog."
 "Otherwise it brings up the certificate search dialog."
@@ -4114,43 +4208,43 @@ msgid ""
 "fingerprint"
 msgstr ""
 
-#: src/kleopatra_options.h:91
+#: src/kleopatra_options.h:93
 msgid "Parent Window Id for dialogs"
 msgstr ""
 
-#: src/kleopatra_options.h:99
+#: src/kleopatra_options.h:101
 msgid "File(s) to process"
 msgstr "ឯកសារ​ត្រូវ​ដំណើរការ"
 
-#: src/kleopatraapplication.cpp:238
+#: src/kleopatraapplication.cpp:240
 #, fuzzy
 #| msgid "Failed to execute %1: %2"
 msgid "Failed to execute command"
 msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
 
-#: src/kleopatraapplication.cpp:275
+#: src/kleopatraapplication.cpp:277
 msgid "Ambiguous protocol: --openpgp and --cms"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:301
+#: src/kleopatraapplication.cpp:303
 msgid "No search string specified for --search"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:313
+#: src/kleopatraapplication.cpp:315
 msgid "No fingerprint argument specified for --query"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:337
+#: src/kleopatraapplication.cpp:340
 #, kde-format
 msgid "Ambiguous commands \"%1\" and \"%2\""
 msgstr ""
 
-#: src/kleopatraapplication.cpp:343
+#: src/kleopatraapplication.cpp:346
 #, kde-format
 msgid "No files specified for \"%1\" command"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:358
+#: src/kleopatraapplication.cpp:361
 #, fuzzy, kde-format
 #| msgid "Can not send \"%1\" status"
 msgid "Cannot read \"%1\""
@@ -6283,23 +6377,6 @@ msgstr "មិនអាច​បើក​ FD %1 ដើម្បី​សរស�
 msgid "Could not create temporary file for output \"%1\""
 msgstr "មិនអាច​បង្កើត​ឯកសារ​បណ្ដោះអាសន្ន​សម្រាប់​លទ្ធផល \"%1\""
 
-#: src/utils/output.cpp:454
-#, kde-format
-msgid ""
-"The file <b>%1</b> already exists.\n"
-"Overwrite?"
-msgstr ""
-"មាន​ឯកសារ <b>%1</b> រួចហើយ ។\n"
-"សរសេរ​ជាន់លើ​ឬ ?"
-
-#: src/utils/output.cpp:456
-msgid "Overwrite Existing File?"
-msgstr "សរសេរ​ជាន់លើ​ឯកសារ​ដែល​មាន​ឬ ?"
-
-#: src/utils/output.cpp:458
-msgid "Overwrite All"
-msgstr "សរសេរ​ជាន់​លើ​ទាំងអស់"
-
 #: src/utils/output.cpp:504
 msgid "Overwriting declined"
 msgstr "បាន​បដិសេធ​ការ​សរសេរ​ជាន់​លើ"
@@ -6539,6 +6616,36 @@ msgstr "ផ្លាស់ទី​ផ្ទាំង​ទៅ​ស្ដាំ
 #: src/view/tabwidget.cpp:787
 msgid "Hierarchical Certificate List"
 msgstr "បញ្ជី​សញ្ញា​បត្រ​តាម​ឋានានុក្រម"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "When 'Quick Mode' is enabled, no dialog is shown when signing "
+#~ "(encrypting) emails, respectively, unless there is a conflict that needs "
+#~ "manual resolution."
+#~ msgstr ""
+#~ "នៅ​ពេល​ដែល​​ 'របៀប​រហ័ស​​' ត្រូវ​បាន​បើក គ្មាន​ប្រអប់​ត្រូវ​បាន​បង្ហាញ​ទេ​នៅ​ពេល​ចុះហត្ថលេខា (ការ​អ៊ិនគ្រីប​​"
+#~ ") អ៊ីមែល​នីមួយៗ លុះត្រាតែ​មាន​ការ​ប៉ះ​ទង្គិច​ដែល​ត្រូវការ​គុណភាព​បង្ហាញ​​​សៀវភៅ​ដៃ​​​​ ។​"
+
+#~ msgid "Use 'Quick Mode' when signing"
+#~ msgstr "ប្រើ​​ '​​របៀប​រហ័ស​​' នៅ​ពេល​ដែល​​ចុះហត្ថលេខា"
+
+#~ msgid "Use 'Quick Mode' when encrypting"
+#~ msgstr "ប្រើ​​ '​របៀប​រហ័ស​​' នៅ​ពេល​ដែល​ការ​អ៊ិនគ្រីប​"
+
+#~ msgctxt "@info:whatsthis"
+#~ msgid ""
+#~ "<p>Choose here which of the configured checksum programs should be used "
+#~ "when creating checksum files.</p>\n"
+#~ "<p>When verifying checksums, the program to use is automatically found, "
+#~ "based on the names of the checksum files found.</p>\n"
+#~ msgstr ""
+#~ "<p>នៅ​ទីនេះ​ជ្រើស​កម្មវិធី​ឆេកសាំដែល​បាន​កំណត់​រចនាសម្ព័ន្ធ​ដែល​គួរ​ត្រូវ​បាន​ត្រូវ​បាន​ប្រើ នៅ​ពេល​បង្កើត​"
+#~ "ឯកសារ​ឆេកសាំ ។​</p>\n"
+#~ "<p>នៅ​ពេល​ផ្ទៀងផ្ទាត់​ឆេកសាំ​ កម្មវិធី​ដែល​ត្រូវ​ប្រើ​នឹង​ត្រូវ​បាន​រក​ឃើញ​ដោយ​ស្វ័យ​ប្រវត្តិ​​ដោយ​ផ្អែក​លើ​ឈ្មោះ​​​"
+#~ "ឯកសារ​ឆេកសាំ​ដែល​រក​ឃើញ​ ។​</p>\n"
+
+#~ msgid "Failed to open file \"%1\" for reading and writing: %2"
+#~ msgstr "បាន​បរាជ័យ​បើក​ឯកសារ​​ \"%1\" សម្រាប់​ការ​​អាន និង​ការ​សរសេរ ៖​ %2"
 
 #~ msgid ""
 #~ "Caught unexpected exception in DecryptVerifyFilesController::Private::"
