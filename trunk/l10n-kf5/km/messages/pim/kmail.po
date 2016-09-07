@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmail\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-09-06 08:16+0000\n"
+"POT-Creation-Date: 2016-09-07 07:11+0000\n"
 "PO-Revision-Date: 2012-07-09 10:48+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -961,7 +961,7 @@ msgstr "តម្លៃ"
 
 #. i18n: ectx: property (text), widget (QLabel, mDescriptionLabel)
 #: ktnef/src/ui/attachpropertywidgetbase.ui:45
-#: src/configuredialog/configureagentswidget.cpp:107
+#: src/configuredialog/configureagents/configureagentswidget.cpp:106
 msgid "Description:"
 msgstr ""
 
@@ -1077,7 +1077,7 @@ msgstr "កូនសោ​អ៊ិនគ្រីប​ច្រើន​ក្
 
 #: src/aboutdata.cpp:364 src/collectionpage/collectionmailinglistpage.cpp:103
 #: src/editor/kmcomposerwin.cpp:1985 src/kmmainwin.cpp:66
-#: src/kmreaderwin.cpp:318 src/kmsystemtray.cpp:72 src/kmsystemtray.cpp:112
+#: src/kmreaderwin.cpp:318 src/kmsystemtray.cpp:71 src/kmsystemtray.cpp:111
 msgid "KMail"
 msgstr "KMail"
 
@@ -1389,7 +1389,7 @@ msgstr "ជម្រើស​ទូទៅ"
 
 #. i18n: ectx: label, entry (ConfirmBeforeSend), group (Composer)
 #: src/configuredialog/configureaccountpage.cpp:105
-#: src/settings/kmail.kcfg.cmake:194
+#: src/settings/kmail.kcfg.cmake:186
 msgid "Confirm &before send"
 msgstr "អះអាងមុនផ្ញើ"
 
@@ -1487,7 +1487,7 @@ msgstr "បញ្ជី​សារ - សារ​ធាតុ​សកម្ម
 
 #. i18n: ectx: label, entry (FolderList), group (Geometry)
 #: src/configuredialog/configureappearancepage.cpp:151
-#: src/settings/kmail.kcfg.cmake:337
+#: src/settings/kmail.kcfg.cmake:329
 msgid "Folder List"
 msgstr "បញ្ជី​ថត"
 
@@ -1720,50 +1720,38 @@ msgstr "បិទ​​បង្អួច​សារ​តែ​ឯង​បន
 msgid "Enable system tray icon"
 msgstr "អនុញ្ញាត​រូបតំណាង​ក្នុង​ថាស​ប្រព័ន្ធ"
 
-#: src/configuredialog/configureappearancepage.cpp:946
-msgid "System Tray Mode"
-msgstr "របៀបថាស​ប្រព័ន្ធ"
-
-#: src/configuredialog/configureappearancepage.cpp:954
-msgid "Always show KMail in system tray"
-msgstr "បង្ហាញ KMail នៅ​ក្នុង​ថាស​ប្រព័ន្ធ​ជានិច្ច"
-
-#: src/configuredialog/configureappearancepage.cpp:957
-msgid "Only show KMail in system tray if there are unread messages"
-msgstr "បង្ហាញ KMail នៅ​ក្នុង​ថាស​ប្រព័ន្ធ តែ​ក្នុង​ករណី​មាន​សារ​មិន​ទាន់អាន"
-
-#: src/configuredialog/configureappearancepage.cpp:1020
+#: src/configuredialog/configureappearancepage.cpp:994
 msgid "A&vailable Tags"
 msgstr "ស្លាក​ដែលមាន"
 
-#: src/configuredialog/configureappearancepage.cpp:1033
+#: src/configuredialog/configureappearancepage.cpp:1007
 msgid "Add new tag"
 msgstr "បន្ថែម​ស្លាក​ថ្មី"
 
-#: src/configuredialog/configureappearancepage.cpp:1038
+#: src/configuredialog/configureappearancepage.cpp:1012
 msgid "Remove selected tag"
 msgstr "យក​ស្លាក​ដែល​បាន​ជ្រើស​ចេញ"
 
-#: src/configuredialog/configureappearancepage.cpp:1047
+#: src/configuredialog/configureappearancepage.cpp:1021
 msgid "Increase tag priority"
 msgstr "បង្កើន​អាទិភាព​ស្លាក"
 
-#: src/configuredialog/configureappearancepage.cpp:1053
+#: src/configuredialog/configureappearancepage.cpp:1027
 msgid "Decrease tag priority"
 msgstr "បន្ថយ​អាទិភាព​ស្លាក"
 
-#: src/configuredialog/configureappearancepage.cpp:1076
+#: src/configuredialog/configureappearancepage.cpp:1050
 msgid "Ta&g Settings"
 msgstr "កា​រកំណត់​ស្លាក"
 
-#: src/configuredialog/configureappearancepage.cpp:1264
+#: src/configuredialog/configureappearancepage.cpp:1238
 #, fuzzy, kde-format
 #| msgid "Do you want to remove account '%1'?"
 msgid "Do you want to remove tag '%1'?"
 msgstr "តើ​អ្នក​ចង់​យក​គណនី '%1' ចេញ​ឬ ?"
 
-#: src/configuredialog/configureappearancepage.cpp:1309
-#: src/configuredialog/configureappearancepage.cpp:1345
+#: src/configuredialog/configureappearancepage.cpp:1283
+#: src/configuredialog/configureappearancepage.cpp:1319
 #, fuzzy
 #| msgid "We can not create tag. A tag with same name already exists."
 msgid "We cannot create tag. A tag with same name already exists."
@@ -4005,35 +3993,35 @@ msgstr ""
 msgid "Opening Autosave File Failed"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បើក​ឯកសារ​រក្សាទុក​ដោយ​ស្វ័យ​ប្រវត្តិ"
 
-#: src/kmkernel.cpp:1804
+#: src/kmkernel.cpp:1798
 #, kde-format
 msgid "This identity has been changed to use the default transport:"
 msgid_plural ""
 "These %1 identities have been changed to use the default transport:"
 msgstr[0] "អត្តសញ្ញាណ %1 ​ត្រូវ​បាន​ផ្លាស់ប្ដូរ​ ដើម្បី​ប្រើ​កា​រដឹកជញ្ជូន​លំនាំដើម ៖"
 
-#: src/kmkernel.cpp:1829
+#: src/kmkernel.cpp:1823
 #, kde-format
 msgid "This identity has been changed to use the modified transport:"
 msgid_plural ""
 "These %1 identities have been changed to use the modified transport:"
 msgstr[0] "អត្តសញ្ញាណ %1 ត្រូវ​បាន​ផ្លាស់ប្ដូរ​​ដើម្បី​ប្រើ​កា​របញ្ជូនអ្វី​​ដែល​បាន​កែប្រែ ៖"
 
-#: src/kmkernel.cpp:1844
+#: src/kmkernel.cpp:1838
 msgid "Sending messages"
 msgstr "កំពុង​ផ្ញើ​សារ"
 
-#: src/kmkernel.cpp:1845
+#: src/kmkernel.cpp:1839
 msgid "Initiating sending process..."
 msgstr "កំពុង​ចាប់ផ្ដើម​ដំណើរការ​ផ្ញើ..."
 
-#: src/kmkernel.cpp:1916
+#: src/kmkernel.cpp:1910
 #, fuzzy, kde-format
 #| msgid "Resource %1 is broken. This resource is now %2"
 msgid "Resource %1 is broken."
 msgstr "ធនធាន %1 ខូច ។ ធនធាន​នេះ​ឥឡូវ​គឺជា %2"
 
-#: src/kmkernel.cpp:2072 src/kmkernel.cpp:2082
+#: src/kmkernel.cpp:2066 src/kmkernel.cpp:2076
 #, kde-format
 msgctxt "<source>: <error message>"
 msgid "%1: %2"
@@ -5052,15 +5040,15 @@ msgstr ""
 msgid "Contact modified successfully"
 msgstr "បាន​ផ្លាស់ទី​សារ​ដោយជោគជ័យ ។"
 
-#: src/kmsystemtray.cpp:267
+#: src/kmsystemtray.cpp:240
 msgid "New Messages In"
 msgstr "សារ​ថ្មី​នៅក្នុង"
 
-#: src/kmsystemtray.cpp:365
+#: src/kmsystemtray.cpp:336
 msgid "There are no unread messages"
 msgstr "មិនមានសារ​មិនទាន់​អាន​ទេ"
 
-#: src/kmsystemtray.cpp:366
+#: src/kmsystemtray.cpp:337
 #, kde-format
 msgid "1 unread message"
 msgid_plural "%1 unread messages"
@@ -5616,23 +5604,18 @@ msgstr ""
 msgid "The most recently selected folder in the folder selection dialog."
 msgstr "ថត​ដែលបាន​ជ្រើស​ថ្មីៗ​បំផុត នៅក្នុង​ប្រអប់​ជ្រើស​ថត ។"
 
-#. i18n: ectx: label, entry (SystemTrayPolicy), group (General)
-#: src/settings/kmail.kcfg.cmake:88
-msgid "Policy for showing the system tray icon"
-msgstr "គោលការណ៍​​សម្រាប់​ការបង្ហាញ​រូបតំណាង​ថាសប្រព័ន្ធ"
-
 #. i18n: ectx: label, entry (ExternalEditor), group (General)
-#: src/settings/kmail.kcfg.cmake:96
+#: src/settings/kmail.kcfg.cmake:88
 msgid "Specify e&ditor:"
 msgstr "បញ្ជាក់​កម្មវិធី​កែសម្រួល ៖"
 
 #. i18n: ectx: label, entry (UseExternalEditor), group (General)
-#: src/settings/kmail.kcfg.cmake:100
+#: src/settings/kmail.kcfg.cmake:92
 msgid "Use e&xternal editor instead of composer"
 msgstr "ប្រើ​កម្មវិធី​កែសម្រួល​ខាងក្នុង ជំនួស​ឲ្យ​កម្មវិធី​តែង"
 
 #. i18n: ectx: label, entry (CustomMessageHeadersCount), group (General)
-#: src/settings/kmail.kcfg.cmake:104
+#: src/settings/kmail.kcfg.cmake:96
 msgid ""
 "Specifies the number of custom MIME header fields to be inserted in messages "
 "(for internal use only)"
@@ -5640,41 +5623,41 @@ msgstr ""
 "បញ្ជាក់​ចំនួន​វាល​បឋមកថា MIME ផ្ទាល់ខ្លួន ដើម្បី​​ឲ្យ​បញ្ចូល​ក្នុង​សារ (សម្រាប់​ការ​ប្រើប្រាស់​ខា​ងក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (CloseToQuotaThreshold), group (General)
-#: src/settings/kmail.kcfg.cmake:107
+#: src/settings/kmail.kcfg.cmake:99
 msgid ""
 "The threshold for when to warn the user that a folder is nearing its quota "
 "limit."
 msgstr "កម្រិត​ពន្លឺ​សម្រាប់​នៅ​ពេល​ព្រមាន​អ្នក​ប្រើ​ ដែល​ថត​មួយ​នៅ​ជិត​ដែន​កំណត់​កូតា​របស់​វា ។"
 
 #. i18n: ectx: label, entry (EmptyTrashOnExit), group (General)
-#: src/settings/kmail.kcfg.cmake:111
+#: src/settings/kmail.kcfg.cmake:103
 msgid "Empty the local trash folder on program exit"
 msgstr "សម្អាត​ថត​ធុងសំរាម ពេល​ចេញ​ពី​កម្មវិធី"
 
 #. i18n: ectx: label, entry (StartSpecificFolderAtStartup), group (General)
-#: src/settings/kmail.kcfg.cmake:115
+#: src/settings/kmail.kcfg.cmake:107
 msgid "Allow to start specific folder"
 msgstr ""
 
 #. i18n: ectx: label, entry (StartupFolder), group (General)
-#: src/settings/kmail.kcfg.cmake:119
+#: src/settings/kmail.kcfg.cmake:111
 msgid "Specify the folder to open when the program is started"
 msgstr "បញ្ជាក់​ចំនួន​ថត​ត្រូវ​បើក នៅពេល​កម្មវិធី​ចាប់ផ្ដើម"
 
 #. i18n: ectx: label, entry (ConfirmBeforeEmpty), group (General)
-#: src/settings/kmail.kcfg.cmake:123
+#: src/settings/kmail.kcfg.cmake:115
 msgid "Ask for confirmation before moving all messages to trash"
 msgstr "សួររក​ការ​អះអាង មុន​ផ្លាស់ទី​សារ​ទាំងអស់​ទៅ​ធុងសំរាម"
 
 #. i18n: ectx: label, entry (AutoExpiring), group (General)
-#: src/settings/kmail.kcfg.cmake:130
+#: src/settings/kmail.kcfg.cmake:122
 msgid ""
 "Specifies whether the folders will expire in the background (for internal "
 "use only)"
 msgstr "បញ្ជាក់​ថាតើថត​នឹង​ផុត​កំណត់​ក្នុង​ផ្ទៃ​ខាង​ក្រោយ​ដែរឬទេ (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុងប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (FirstStart), group (General)
-#: src/settings/kmail.kcfg.cmake:134
+#: src/settings/kmail.kcfg.cmake:126
 msgid ""
 "Specifies whether this is the very first time that the application is run "
 "(for internal use only)"
@@ -5682,31 +5665,31 @@ msgstr ""
 "បញ្ជាក់​ថាតើ​​ នេះ​ជា​ពេល​ដំបូង​បង្អស់​ដែល​កម្មវិធី​ដំណើការ​មែនឬ (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (PreviousVersion), group (General)
-#: src/settings/kmail.kcfg.cmake:138
+#: src/settings/kmail.kcfg.cmake:130
 msgid ""
 "Specifies the version of the application that was last used (for internal "
 "use only)"
 msgstr "បញ្ជាក់​កំណែ​របស់​កម្មវិធី​ ដែល​ត្រូវ​បាន​ប្រើប្រាស់​ចុងក្រោយ (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុងប៉ុណ្ណោះ)"
 
 #. i18n: ectx: whatsthis, entry (PreviousNewFeaturesMD5), group (Internal)
-#: src/settings/kmail.kcfg.cmake:153
+#: src/settings/kmail.kcfg.cmake:145
 msgid ""
 "This value is used to decide whether the KMail Introduction should be "
 "displayed."
 msgstr "តម្លៃ​នេះ​គឺត្រូវបាន​ប្រើ​ដើម្បី​សម្រេច​ថាតើ​ ការណែនាំ​អំពី KMail គួរតែត្រូវបាន​បង្ហាញ​ឬអត់ ។"
 
 #. i18n: ectx: label, entry (EnableFolderQuickSearch), group (UserInterface)
-#: src/settings/kmail.kcfg.cmake:160
+#: src/settings/kmail.kcfg.cmake:152
 msgid "Show folder quick search line edit"
 msgstr "បង្ហាញ​ការ​កែសម្រួល​ស្វែង​រក​​ថត​រហ័ស"
 
 #. i18n: ectx: label, entry (ForwardingInlineByDefault), group (Composer)
-#: src/settings/kmail.kcfg.cmake:168
+#: src/settings/kmail.kcfg.cmake:160
 msgid "Forward Inline As Default."
 msgstr "បញ្ជូន​បន្ត​ក្នុងតួ​ជា​លំនាំដើម ។"
 
 #. i18n: ectx: label, entry (TooManyRecipients), group (Composer)
-#: src/settings/kmail.kcfg.cmake:171
+#: src/settings/kmail.kcfg.cmake:163
 #, fuzzy
 #| msgid "Warn if the number of recipients is larger than"
 msgid "Warn if the number of recipients is more than:"
@@ -5714,7 +5697,7 @@ msgstr "ព្រមាន នៅពេលដែល​ចំនួន​អ្�
 
 #. i18n: ectx: whatsthis, entry (TooManyRecipients), group (Composer)
 #. i18n: ectx: whatsthis, entry (RecipientThreshold), group (Composer)
-#: src/settings/kmail.kcfg.cmake:173 src/settings/kmail.kcfg.cmake:180
+#: src/settings/kmail.kcfg.cmake:165 src/settings/kmail.kcfg.cmake:172
 msgid ""
 "If the number of recipients is larger than this value, KMail will warn and "
 "ask for a confirmation before sending the mail. The warning can be turned "
@@ -5724,17 +5707,17 @@ msgstr ""
 "អាច​ត្រូវ​បាន​បិទ ។"
 
 #. i18n: ectx: label, entry (CheckSpellingBeforeSend), group (Composer)
-#: src/settings/kmail.kcfg.cmake:201
+#: src/settings/kmail.kcfg.cmake:193
 msgid "Check spelling before send"
 msgstr "ពិនិត្យមើល​អក្ខរាវិរុទ្ធ​មុន​ពេល​ផ្ញើ"
 
 #. i18n: ectx: label, entry (RequestMDN), group (Composer)
-#: src/settings/kmail.kcfg.cmake:205
+#: src/settings/kmail.kcfg.cmake:197
 msgid "Automatically request &message disposition notifications"
 msgstr "ស្នើ​ការជូន​ដំណឹង​អំពី​ការរៀបចំ​សារ​ដោយស្វ័យប្រវត្តិ"
 
 #. i18n: ectx: whatsthis, entry (RequestMDN), group (Composer)
-#: src/settings/kmail.kcfg.cmake:206
+#: src/settings/kmail.kcfg.cmake:198
 msgid ""
 "<qt><p>Enable this option if you want KMail to request Message Disposition "
 "Notifications (MDNs) for each of your outgoing messages.</p><p>This option "
@@ -5748,12 +5731,12 @@ msgstr ""
 "><em>ការជូនដំណឹង​អំពី​ការរៀបចំ​សំណើរ</em> ។</p></qt>"
 
 #. i18n: ectx: label, entry (AutosaveInterval), group (Composer)
-#: src/settings/kmail.kcfg.cmake:228
+#: src/settings/kmail.kcfg.cmake:220
 msgid "Autosave interval:"
 msgstr "រក្សាទុក​ចន្លោះពេល​ដោយស្វ័យប្រវត្តិ ៖"
 
 #. i18n: ectx: whatsthis, entry (AutosaveInterval), group (Composer)
-#: src/settings/kmail.kcfg.cmake:229
+#: src/settings/kmail.kcfg.cmake:221
 msgid ""
 "A backup copy of the text in the composer window can be created regularly. "
 "The interval used to create the backups is set here. You can disable "
@@ -5764,134 +5747,134 @@ msgstr ""
 "ដោយ​កំណត់​វា​ទៅ​តម្លៃ 0 ។"
 
 #. i18n: ectx: label, entry (ShowSnippetManager), group (Composer)
-#: src/settings/kmail.kcfg.cmake:236
+#: src/settings/kmail.kcfg.cmake:228
 msgid "Show the Text Snippet Management and Insertion Panel in the composer."
 msgstr "បង្ហាញ​កា​រគ្រប់គ្រង​អត្ថបទ​ដែល​បាន​ច្រឹប និង​បញ្ចូល​បន្ទះ​នៅ​ក្នុង​កម្មវិធី​តែង ។"
 
 #. i18n: ectx: label, entry (CryptoStoreEncrypted), group (Composer)
-#: src/settings/kmail.kcfg.cmake:242
+#: src/settings/kmail.kcfg.cmake:234
 msgid "When check, sent messages will be stored in the encrypted form"
 msgstr "នៅ​ពេល​ពិនិត្យ​មើល សារ​ដែលបានផ្ញើ​នឹង​ត្រូវ​បាន​ទុក​នៅ​ក្នុង​ទម្រង់​ដែល​បានអ៊ីនគ្រិប"
 
 #. i18n: ectx: label, entry (RecentUrls), group (Composer)
-#: src/settings/kmail.kcfg.cmake:246
+#: src/settings/kmail.kcfg.cmake:238
 msgid "A list of all the recently used URLs"
 msgstr "បញ្ជី​របស់​ URLs ដែលបាន​ប្រើប្រាស់​ថ្មី​ទាំងអស់"
 
 #. i18n: ectx: label, entry (RecentEncodings), group (Composer)
-#: src/settings/kmail.kcfg.cmake:252
+#: src/settings/kmail.kcfg.cmake:244
 msgid "A list of all the recently used encodings"
 msgstr "បញ្ជី​របស់​ការ​អ៊ីនកូ​ដដែល​បាន​ប្រើ​ថ្មី​ទាំងអស់"
 
 #. i18n: ectx: label, entry (ShowCryptoLabelIndicator), group (Composer)
-#: src/settings/kmail.kcfg.cmake:258
+#: src/settings/kmail.kcfg.cmake:250
 msgid "Show crypto label indicator"
 msgstr ""
 
 #. i18n: ectx: label, entry (CheckSendDefaultActionShortcut), group (Composer)
-#: src/settings/kmail.kcfg.cmake:262
+#: src/settings/kmail.kcfg.cmake:254
 msgid "Validate Send Default Shortcut"
 msgstr ""
 
 #. i18n: ectx: label, entry (IdentityDialogSize), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:279
+#: src/settings/kmail.kcfg.cmake:271
 msgid "The size of the identity dialog (for internal use only)"
 msgstr "ទំហំ​ប្រអប់​អត្តសញ្ញាណ (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (SearchWidgetWidth), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:283
+#: src/settings/kmail.kcfg.cmake:275
 msgid "The width of the search window (for internal use only)"
 msgstr "ទំហំ​បង្អួច​ស្វែងរក (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (SearchWidgetHeight), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:287
+#: src/settings/kmail.kcfg.cmake:279
 msgid "The height of the search window (for internal use only)"
 msgstr "កម្ពស់​បង្អួច​ស្វែងរក (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (ConfigureDialogWidth), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:291
+#: src/settings/kmail.kcfg.cmake:283
 msgid "The width of the Configure KMail dialog (for internal use only)"
 msgstr "ទទឹង​ប្រអប់​កំណត់​រចនាសម្ព័ន្ធ KMail (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (ConfigureDialogHeight), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:295
+#: src/settings/kmail.kcfg.cmake:287
 msgid "The height of the Configure KMail dialog (for internal use only)"
 msgstr "កម្ពស់​របស់​ប្រអប់​កំណត់​រចនាសម្ព័ន្ធ KMail (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:321
+#: src/settings/kmail.kcfg.cmake:313
 msgid "Message Preview Pane"
 msgstr "ស្លាបព្រិល​ទិដ្ឋភាព​សារ"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:324
+#: src/settings/kmail.kcfg.cmake:316
 msgid "Do not show a message preview pane"
 msgstr "កុំ​បង្ហាញ​ស្លាបព្រិល​សារ​មើលជា​មុន"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:327
+#: src/settings/kmail.kcfg.cmake:319
 msgid "Show the message preview pane below the message list"
 msgstr "បង្ហាញ​ស្លាបព្រិល​​មើល​សារ​ជា​មុន​ខាង​ក្រោម​បញ្ជី​សារ"
 
 #. i18n: ectx: label, entry (readerWindowMode), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:330
+#: src/settings/kmail.kcfg.cmake:322
 msgid "Show the message preview pane next to the message list"
 msgstr "បង្ហាញ​ស្លាបព្រិល​មើលសារ​ជាមុន​នៅ​ជាប់នឹង​បញ្ជីសារ"
 
 #. i18n: ectx: label, entry (FolderList), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:340
+#: src/settings/kmail.kcfg.cmake:332
 msgid "Long folder list"
 msgstr "បញ្ជី​ថត​សារ​វែង"
 
 #. i18n: ectx: label, entry (FolderList), group (Geometry)
-#: src/settings/kmail.kcfg.cmake:343
+#: src/settings/kmail.kcfg.cmake:335
 msgid "Short folder list"
 msgstr "បញ្ជី​ថត​ខ្លី"
 
 #. i18n: ectx: label, entry (CloseAfterReplyOrForward), group (Reader)
-#: src/settings/kmail.kcfg.cmake:352
+#: src/settings/kmail.kcfg.cmake:344
 msgid "Close message window after replying or forwarding"
 msgstr "បិទ​​បង្អួចសារ​បន្ទាប់ពី​ឆ្លើយ​តប​ ឬ​បញ្ជូន​បន្ត"
 
 #. i18n: ectx: label, entry (TemplateNewMessage), group (GlobalTemplates)
-#: src/settings/kmail.kcfg.cmake:359
+#: src/settings/kmail.kcfg.cmake:351
 msgid "Message template for new message"
 msgstr "ពុម្ពសារ​​សម្រាប់​សារ​ថ្មី"
 
 #. i18n: ectx: label, entry (TemplateReply), group (GlobalTemplates)
-#: src/settings/kmail.kcfg.cmake:364
+#: src/settings/kmail.kcfg.cmake:356
 msgid "Message template for reply"
 msgstr "ពុម្ព​សារ​សម្រាប់​ឆ្លើយតប"
 
 #. i18n: ectx: label, entry (TemplateReplyAll), group (GlobalTemplates)
-#: src/settings/kmail.kcfg.cmake:369
+#: src/settings/kmail.kcfg.cmake:361
 msgid "Message template for reply to all"
 msgstr "ពុម្ព​សារ​សម្រាប់​ឆ្លើយតប​ទៅ​អ្នក​ទាំងអស់"
 
 #. i18n: ectx: label, entry (TemplateForward), group (GlobalTemplates)
-#: src/settings/kmail.kcfg.cmake:374
+#: src/settings/kmail.kcfg.cmake:366
 msgid "Message template for forward"
 msgstr "ពុម្ព​សារ​សម្រាប់​បញ្ជូន​បន្ត"
 
 #. i18n: ectx: label, entry (QuoteString), group (GlobalTemplates)
-#: src/settings/kmail.kcfg.cmake:379
+#: src/settings/kmail.kcfg.cmake:371
 msgid "Quote characters"
 msgstr "តួអក្សរ​សម្រង់"
 
 #. i18n: ectx: label, entry (ToolTipDisplayPolicy), group (MainFolderView)
-#: src/settings/kmail.kcfg.cmake:394
+#: src/settings/kmail.kcfg.cmake:386
 msgid "Specifies the policy used when displaying policy"
 msgstr "បញ្ជាក់​ថាតើ​ គោលនយោបាយ​ត្រូវ​បាន​ប្រើ​នៅពេល​បង្ហាញ​គោលនយោបាយ​ដែរឬទេ"
 
 #. i18n: ectx: label, entry (CollectionWidth), group (SearchDialog)
-#: src/settings/kmail.kcfg.cmake:402
+#: src/settings/kmail.kcfg.cmake:394
 msgid ""
 "Specifies the width of the collection field in the Search Window dialog (for "
 "internal use only)"
 msgstr "បញ្ជាក់​ទទឹង​នៃ​វាល​សម្រាំង​នៅ​ក្នុង​ប្រអប់​បង្អួច​ស្វែងរក (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (SubjectWidth), group (SearchDialog)
-#: src/settings/kmail.kcfg.cmake:406
+#: src/settings/kmail.kcfg.cmake:398
 msgid ""
 "Specifies the width of the subject field in the Search Window dialog (for "
 "internal use only)"
@@ -5899,21 +5882,21 @@ msgstr ""
 "បញ្ជាក់​ទទឹង​របស់​វាល​ប្រធាន​បទ​នៅ​ក្នុង​ប្រអប់​បង្អួច​ស្វែងរក (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (SenderWidth), group (SearchDialog)
-#: src/settings/kmail.kcfg.cmake:410
+#: src/settings/kmail.kcfg.cmake:402
 msgid ""
 "Specifies the width of the sender field in the Search Window dialog (for "
 "internal use only)"
 msgstr "បញ្ជាក់​ទទឹង​របស់​វាល​​អ្នក​ផ្ញើ​នៅ​ក្នុង​ប្រអប់​បង្អួច​ស្វែងរក (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (ReceiverWidth), group (SearchDialog)
-#: src/settings/kmail.kcfg.cmake:414
+#: src/settings/kmail.kcfg.cmake:406
 msgid ""
 "Specifies the width of the receiver field in the Search Window dialog (for "
 "internal use only)"
 msgstr "បញ្ជាក់​ទទឹង​នៃ​វាល​អ្នកទទួល​នៅ​ក្នុង​ប្រអប់​បង្អួច​ស្វែងរក (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាងក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (DateWidth), group (SearchDialog)
-#: src/settings/kmail.kcfg.cmake:418
+#: src/settings/kmail.kcfg.cmake:410
 msgid ""
 "Specifies the width of the date field in the Search Window dialog (for "
 "internal use only)"
@@ -5921,7 +5904,7 @@ msgstr ""
 "បញ្ជាក់​ទទឹង​របស់​វាល​កាលបរិច្ឆេទ​នៅ​ក្នុង​ប្រអប់​បង្អួច​ស្វែងរក (សម្រាប់​តែ​ការ​ប្រើប្រាស់​ខាង​ក្នុង​ប៉ុណ្ណោះ)"
 
 #. i18n: ectx: label, entry (FolderWidth), group (SearchDialog)
-#: src/settings/kmail.kcfg.cmake:422
+#: src/settings/kmail.kcfg.cmake:414
 msgid ""
 "Specifies the width of the folder field in the Search Window dialog (for "
 "internal use only)"
@@ -7109,6 +7092,18 @@ msgstr "កំណត់​ការកំណត់​ពុម្ព​អក្
 msgid "Out of office reply active on server"
 msgid_plural "Out of office reply active on servers"
 msgstr[0] "កា​រឆ្លើយតប​នៅ​ក្រៅ​ការិយាល័យ​សកម្ម"
+
+#~ msgid "System Tray Mode"
+#~ msgstr "របៀបថាស​ប្រព័ន្ធ"
+
+#~ msgid "Always show KMail in system tray"
+#~ msgstr "បង្ហាញ KMail នៅ​ក្នុង​ថាស​ប្រព័ន្ធ​ជានិច្ច"
+
+#~ msgid "Only show KMail in system tray if there are unread messages"
+#~ msgstr "បង្ហាញ KMail នៅ​ក្នុង​ថាស​ប្រព័ន្ធ តែ​ក្នុង​ករណី​មាន​សារ​មិន​ទាន់អាន"
+
+#~ msgid "Policy for showing the system tray icon"
+#~ msgstr "គោលការណ៍​​សម្រាប់​ការបង្ហាញ​រូបតំណាង​ថាសប្រព័ន្ធ"
 
 #~ msgid "Chang&e..."
 #~ msgstr "ផ្លាស់ប្តូរ​..."
