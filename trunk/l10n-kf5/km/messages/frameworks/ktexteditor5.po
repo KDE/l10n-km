@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: katepart4\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-01-09 03:49+0100\n"
+"POT-Creation-Date: 2017-01-10 07:47+0100\n"
 "PO-Revision-Date: 2012-06-13 09:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -1861,15 +1861,24 @@ msgstr "ការ​អ៊ិនកូដ Fallback ៖"
 
 #. i18n: ectx: property (whatsThis), widget (KComboBox, cmbEncodingFallback)
 #: dialogs/opensaveconfigwidget.ui:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "This defines the fallback encoding to try for opening files if neither "
+#| "the encoding chosen as standard above, nor the encoding specified in the "
+#| "open/save dialog, nor the encoding specified on command line match the "
+#| "content of the file.  Before this is used, an attempt will be made to "
+#| "determine the encoding to use by looking for a byte order marker at start "
+#| "of file: if one is found, the right unicode encoding will be chosen; "
+#| "otherwise encoding detection will run, if both fail fallback encoding "
+#| "will be tried."
 msgid ""
 "This defines the fallback encoding to try for opening files if neither the "
 "encoding chosen as standard above, nor the encoding specified in the open/"
 "save dialog, nor the encoding specified on command line match the content of "
 "the file.  Before this is used, an attempt will be made to determine the "
-"encoding to use by looking for a byte order marker at start of file: if one "
-"is found, the right unicode encoding will be chosen; otherwise encoding "
-"detection will run, if both fail fallback encoding will be tried."
+"encoding to use by looking for a byte order mark at start of file: if one is "
+"found, the right Unicode encoding will be chosen; otherwise encoding "
+"detection will run, if both fail the fallback encoding will be tried."
 msgstr ""
 "វា​កំណត់​ការ​អ៊ីនកូដ fallback ដើម្បី​ព្យាយាម​បើក​ឯកសារ ប្រសិនបើ​ការ​អ៊ីនកូដ​ដែលបានជ្រើស​រើស​ជា​ស្តង់ដារ​"
 "ខាង​លើ ឬ​ការ​អ៊ីនកូដ​ដែល​បានបញ្ជាក់​នៅ​ក្នុង​ប្រអប់​បើក/បិទ ឬ​ការ​អ៊ីនកូដ​ដែលបានបញ្ជាក់​នៅក្នុង​​បន្ទាត់​ពាក្យ​"
@@ -1920,11 +1929,16 @@ msgstr "ការ​រក​ឃើញ​ចុង​បន្ទាត់​ដ
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, chkEnableBOM)
 #: dialogs/opensaveconfigwidget.ui:115
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The byte order mark is a special sequence at the beginning of unicode "
+#| "encoded documents. It helps editors to open text documents with the "
+#| "correct unicode encoding. The byte order mark is not visible in the "
+#| "displayed document."
 msgid ""
-"The byte order mark is a special sequence at the beginning of unicode "
+"The byte order mark is a special sequence at the beginning of Unicode "
 "encoded documents. It helps editors to open text documents with the correct "
-"unicode encoding. The byte order mark is not visible in the displayed "
+"Unicode encoding. The byte order mark is not visible in the displayed "
 "document."
 msgstr ""
 "សញ្ញា​សម្គាល់​លំដាប់បៃ​គឺ​ជា​លំដាប់​ពិសេស​នៅ​ដើម​ឯកសារ​ដែល​បាន​អ៊ីនកូដ​​យូនីកូដ ។ វា​ជួយ​កម្មវិធី​កែសម្រួល​ ក្នុងការ​"
@@ -1933,8 +1947,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkEnableBOM)
 #: dialogs/opensaveconfigwidget.ui:118
-#, kde-format
-msgid "Enable byte order marker"
+#, fuzzy, kde-format
+#| msgid "Enable byte order marker"
+msgid "Enable byte order mark (BOM)"
 msgstr "បើក​ឧបករណ៍​សម្គាល់​លំដាប់​បៃ"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
@@ -2312,9 +2327,12 @@ msgid "Possible Data Loss"
 msgstr "អាច​បណ្ដាល​ឲ្យ​បាត់​ទិន្នន័យ"
 
 #: document/katedocument.cpp:2360
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The selected encoding cannot encode every unicode character in this "
+#| "document. Do you really want to save it? There could be some data lost."
 msgid ""
-"The selected encoding cannot encode every unicode character in this "
+"The selected encoding cannot encode every Unicode character in this "
 "document. Do you really want to save it? There could be some data lost."
 msgstr ""
 "ការ​អ៊ិនកូដ​ដែល​បាន​ជ្រើស​មិន​អាច​អ៊ិនកូដ​រាល់​តួអក្សរ​យូនីកូដ​​នៅ​ក្នុង​តួអក្សរ​នេះ​បាន​ទេ ។ តើ​អ្នក​ពិត​ជា​ចង់​រក្សាទុក​"
@@ -3122,7 +3140,7 @@ msgstr ""
 msgid "Marker Colors"
 msgstr "ពណ៌​ឧបករណ៍​សម្គាល់"
 
-#: schema/kateschemaconfig.cpp:206 view/kateviewhelpers.cpp:1337
+#: schema/kateschemaconfig.cpp:206 view/kateviewhelpers.cpp:1342
 #, kde-format
 msgid "Bookmark"
 msgstr "ចំណាំ"
@@ -5974,9 +5992,11 @@ msgid "Enable block selection mode."
 msgstr "បើក​របៀប​ជ្រើស​ប្លុក ។"
 
 #: variableeditor/variablelineedit.cpp:164
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "short translation please"
+#| msgid "Enable the byte order marker when saving unicode files."
 msgctxt "short translation please"
-msgid "Enable the byte order marker when saving unicode files."
+msgid "Enable the byte order mark (BOM) when saving Unicode files."
 msgstr "បើក​ឧបករណ៍​សម្គាល់​លំដាប់​បៃ​នៅ​ពេល​រក្សាទុក​ឯកសារ​យូនីកូដ ។"
 
 #: variableeditor/variablelineedit.cpp:169
@@ -6901,9 +6921,12 @@ msgid "Add &Byte Order Mark (BOM)"
 msgstr "បន្ថែម​ការ​សម្គាល់​លំដាប់​បៃ (BOM)"
 
 #: view/kateview.cpp:792
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Enable/disable adding of byte order markers for UTF-8/UTF-16 encoded "
+#| "files while saving"
 msgid ""
-"Enable/disable adding of byte order markers for UTF-8/UTF-16 encoded files "
+"Enable/disable adding of byte order marks for UTF-8/UTF-16 encoded files "
 "while saving"
 msgstr ""
 "បិទ/បើក​កា​របន្ថែម​បៃ​នៃ​លំដាប់​កម្មវិធី​សម្គាល់​សម្រាប់ UTF-8/UTF-16 ឯកសារ​ដែល​បានអ៊ិនកូដ​ខណៈពេល​ដែល​"
@@ -7278,7 +7301,7 @@ msgid "Export File as HTML"
 msgstr ""
 
 #: view/kateviewhelpers.cpp:213 view/kateviewhelpers.cpp:260
-#: view/kateviewhelpers.cpp:836
+#: view/kateviewhelpers.cpp:841
 #, fuzzy, kde-format
 #| msgctxt "from line - to line"
 #| msgid "<center>%1<br>&mdash;<br/>%2</center>"
@@ -7286,12 +7309,12 @@ msgctxt "from line - to line"
 msgid "<center>%1<br/>&#x2014;<br/>%2</center>"
 msgstr "<center>%1<br>&mdash;<br/>%2</center>"
 
-#: view/kateviewhelpers.cpp:1010
+#: view/kateviewhelpers.cpp:1015
 #, kde-format
 msgid "Available Commands"
 msgstr "ពាក្យ​បញ្ជា​ដែល​អាច​ប្រើ​បាន"
 
-#: view/kateviewhelpers.cpp:1012
+#: view/kateviewhelpers.cpp:1017
 #, kde-format
 msgid ""
 "<p>For help on individual commands, do <code>'help &lt;command&gt;'</code></"
@@ -7299,17 +7322,17 @@ msgid ""
 msgstr ""
 "<p>សម្រាប់​ជំនួយ​អំពី​ពាក្យ​បញ្ជា​នីមួយៗ សូម​ធ្វើ <code>'help &lt;command&gt;'</code></p>"
 
-#: view/kateviewhelpers.cpp:1020
+#: view/kateviewhelpers.cpp:1025
 #, kde-format
 msgid "No help for '%1'"
 msgstr "គ្មាន​ជំនួយ​សម្រាប់ '%1' ឡើយ"
 
-#: view/kateviewhelpers.cpp:1023
+#: view/kateviewhelpers.cpp:1028
 #, kde-format
 msgid "No such command <b>%1</b>"
 msgstr "គ្មាន​ពាក្យ​បញ្ជា <b>%1</b> ​បែប​នេះទេ"
 
-#: view/kateviewhelpers.cpp:1029
+#: view/kateviewhelpers.cpp:1034
 #, kde-format
 msgid ""
 "<p>This is the Katepart <b>command line</b>.<br />Syntax: <code><b>command "
@@ -7322,37 +7345,37 @@ msgstr ""
 "<code><b>help list</b></code><br />ចំពោះ​ជំនួយ​អំពី​ពាក្យ​បញ្ជី​នីមួយៗ សូម​បញ្ចូល <code><b>help "
 "&lt;ពាក្យ​បញ្ជា&gt;</b></code></p>"
 
-#: view/kateviewhelpers.cpp:1115 vimode/emulatedcommandbar/commandmode.cpp:222
+#: view/kateviewhelpers.cpp:1120 vimode/emulatedcommandbar/commandmode.cpp:222
 #, kde-format
 msgid "No such command: \"%1\""
 msgstr "គ្មាន​ពាក្យ​បញ្ជា​បែប​នេះទេ ៖ \"%1\""
 
-#: view/kateviewhelpers.cpp:1119 vimode/emulatedcommandbar/commandmode.cpp:203
+#: view/kateviewhelpers.cpp:1124 vimode/emulatedcommandbar/commandmode.cpp:203
 #, kde-format
 msgid "Error: No range allowed for command \"%1\"."
 msgstr "កំហុស ៖ គ្មាន​ជួរ​បាន​អនុញ្ញាត​សម្រាប់​ពាក្យ​បញ្ជា \"%1\" ។"
 
-#: view/kateviewhelpers.cpp:1130 vimode/emulatedcommandbar/commandmode.cpp:208
+#: view/kateviewhelpers.cpp:1135 vimode/emulatedcommandbar/commandmode.cpp:208
 #, kde-format
 msgid "Success: "
 msgstr "ជោគជ័យ ៖ "
 
-#: view/kateviewhelpers.cpp:1144 vimode/emulatedcommandbar/commandmode.cpp:217
+#: view/kateviewhelpers.cpp:1149 vimode/emulatedcommandbar/commandmode.cpp:217
 #, kde-format
 msgid "Command \"%1\" failed."
 msgstr "ពាក្យ​បញ្ជា \"%1\" បាន​បរាជ័យ ។"
 
-#: view/kateviewhelpers.cpp:2227 view/kateviewhelpers.cpp:2228
+#: view/kateviewhelpers.cpp:2232 view/kateviewhelpers.cpp:2233
 #, kde-format
 msgid "Mark Type %1"
 msgstr "សម្គាល់​ប្រភេទ %1"
 
-#: view/kateviewhelpers.cpp:2250
+#: view/kateviewhelpers.cpp:2255
 #, kde-format
 msgid "Set Default Mark Type"
 msgstr "កំណត់​ប្រភេទ​សម្គាល់​លំនាំដើម"
 
-#: view/kateviewhelpers.cpp:2309
+#: view/kateviewhelpers.cpp:2314
 #, kde-format
 msgid "Disable Annotation Bar"
 msgstr "បិទ​របារ​ចំណារ"
