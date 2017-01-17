@@ -619,8 +619,7 @@ msgstr "%1 វិនាទី"
 #| msgid_plural "%1 milliseconds"
 msgctxt "KFormat|"
 msgid "%n millisecond(s)"
-msgid_plural "%n millisecond(s)"
-msgstr[0] "%1 មិល្លីវិនាទី"
+msgstr "%1 មិល្លីវិនាទី"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:300
@@ -629,8 +628,7 @@ msgstr[0] "%1 មិល្លីវិនាទី"
 #| msgid "%1 days"
 msgctxt "KFormat|"
 msgid "%n day(s)"
-msgid_plural "%n day(s)"
-msgstr[0] "%1 ថ្ងៃ"
+msgstr "%1 ថ្ងៃ"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:305
@@ -639,8 +637,7 @@ msgstr[0] "%1 ថ្ងៃ"
 #| msgid "%1 hours"
 msgctxt "KFormat|"
 msgid "%n hour(s)"
-msgid_plural "%n hour(s)"
-msgstr[0] "%1 ម៉ោង"
+msgstr "%1 ម៉ោង"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:310
@@ -649,8 +646,7 @@ msgstr[0] "%1 ម៉ោង"
 #| msgid "%1 minutes"
 msgctxt "KFormat|"
 msgid "%n minute(s)"
-msgid_plural "%n minute(s)"
-msgstr[0] "%1 នាទី"
+msgstr "%1 នាទី"
 
 #. @item:intext %n is a whole number
 #: lib/util/kformatprivate.cpp:315
@@ -659,8 +655,7 @@ msgstr[0] "%1 នាទី"
 #| msgid "%1 seconds"
 msgctxt "KFormat|"
 msgid "%n second(s)"
-msgid_plural "%n second(s)"
-msgstr[0] "%1 វិនាទី"
+msgstr "%1 វិនាទី"
 
 #. @item:intext days and hours. This uses the previous item:intext messages. If this does not fit the grammar of your language please contact the i18n team to solve the problem
 #. ----------
@@ -679,7 +674,16 @@ msgctxt "KFormat|"
 msgid "%1 and %2"
 msgstr "%1 និង %2"
 
-#: lib/util/kformatprivate.cpp:372
+#: lib/util/kformatprivate.cpp:366
+#, fuzzy
+#| msgid "Invalid item."
+msgctxt ""
+"KFormat|used when a relative date string can't be generated because the date "
+"is invalid"
+msgid "Invalid date"
+msgstr "ធាតុ​មិន​ត្រឹមត្រូវ ។"
+
+#: lib/util/kformatprivate.cpp:376
 #, fuzzy
 #| msgctxt "@option tomorrow"
 #| msgid "Tomorrow"
@@ -687,44 +691,140 @@ msgctxt "KFormat|"
 msgid "Tomorrow"
 msgstr "ថ្ងៃ​ស្អែក"
 
-#: lib/util/kformatprivate.cpp:374
+#: lib/util/kformatprivate.cpp:378
 #, fuzzy
 #| msgid "Today"
 msgctxt "KFormat|"
 msgid "Today"
 msgstr "ថ្ងៃនេះ"
 
-#: lib/util/kformatprivate.cpp:376
+#: lib/util/kformatprivate.cpp:380
 #, fuzzy
 #| msgid "Yesterday"
 msgctxt "KFormat|"
 msgid "Yesterday"
 msgstr "ម្សិលមិញ"
 
-#: lib/util/kformatprivate.cpp:383
-#, fuzzy, qt-format
-#| msgctxt "@option last week"
-#| msgid "Last Week"
-msgctxt "KFormat|"
-msgid "Last %1"
-msgstr "សប្ដាហ៍​មុន"
+#: lib/util/kformatprivate.cpp:386
+#, fuzzy
+#| msgctxt "@option last month"
+#| msgid "Last Month"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Monday"
+msgstr "ខែមុន"
 
 #: lib/util/kformatprivate.cpp:388
-#, fuzzy, qt-format
-#| msgctxt "Opposite to Back"
-#| msgid "Next"
-msgctxt "KFormat|"
-msgid "Next %1"
-msgstr "បន្ទាប់"
+#, fuzzy
+#| msgctxt "@option last year"
+#| msgid "Last Year"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Tuesday"
+msgstr "ឆ្នាំ​មុន"
+
+#: lib/util/kformatprivate.cpp:390
+#, fuzzy
+#| msgctxt ""
+#| "referring to a filter on the modification and usage date of files/"
+#| "resources"
+#| msgid "Last Week"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Wednesday"
+msgstr "សប្ដាហ៍​មុន"
+
+#: lib/util/kformatprivate.cpp:392
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Thursday"
+msgstr ""
+
+#: lib/util/kformatprivate.cpp:394
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Friday"
+msgstr ""
+
+#: lib/util/kformatprivate.cpp:396
+#, fuzzy
+#| msgctxt "@option last year"
+#| msgid "Last Year"
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Saturday"
+msgstr "ឆ្នាំ​មុន"
+
+#: lib/util/kformatprivate.cpp:398
+msgctxt "KFormat|most recent such day before today"
+msgid "Last Sunday"
+msgstr ""
+
+#: lib/util/kformatprivate.cpp:403
+#, fuzzy
+#| msgctxt "@option next month"
+#| msgid "Next Month"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Monday"
+msgstr "ខែក្រោយ"
+
+#: lib/util/kformatprivate.cpp:405
+#, fuzzy
+#| msgid "Next year"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Tuesday"
+msgstr "ឆ្នាំ​ក្រោយ"
+
+#: lib/util/kformatprivate.cpp:407
+#, fuzzy
+#| msgctxt "@option next week"
+#| msgid "Next Week"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Wednesday"
+msgstr "សប្ដាហ៍​ក្រោយ"
+
+#: lib/util/kformatprivate.cpp:409
+msgctxt "KFormat|the next such day after today"
+msgid "Next Thursday"
+msgstr ""
+
+#: lib/util/kformatprivate.cpp:411
+#, fuzzy
+#| msgid "Next year"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Friday"
+msgstr "ឆ្នាំ​ក្រោយ"
+
+#: lib/util/kformatprivate.cpp:413
+#, fuzzy
+#| msgid "Next year"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Saturday"
+msgstr "ឆ្នាំ​ក្រោយ"
+
+#: lib/util/kformatprivate.cpp:415
+#, fuzzy
+#| msgid "Next year"
+msgctxt "KFormat|the next such day after today"
+msgid "Next Sunday"
+msgstr "ឆ្នាំ​ក្រោយ"
 
 #. relative datetime with %1 result of formatReleativeDate() and %2 the formatted time If this does not fit the grammar of your language please contact the i18n team to solve the problem
-#: lib/util/kformatprivate.cpp:402
+#: lib/util/kformatprivate.cpp:430
 #, fuzzy, qt-format
 #| msgctxt "City, Country"
 #| msgid "%1, %2"
 msgctxt "KFormat|"
 msgid "%1, %2"
 msgstr "%1, %2"
+
+#, fuzzy
+#~| msgctxt "@option last week"
+#~| msgid "Last Week"
+#~ msgctxt "KFormat|"
+#~ msgid "Last %1"
+#~ msgstr "សប្ដាហ៍​មុន"
+
+#, fuzzy
+#~| msgctxt "Opposite to Back"
+#~| msgid "Next"
+#~ msgctxt "KFormat|"
+#~ msgid "Next %1"
+#~ msgstr "បន្ទាប់"
 
 #, fuzzy
 #~ msgctxt "KPluginLoader|"
@@ -6503,14 +6603,6 @@ msgstr "%1, %2"
 #~ msgid "Next Year"
 #~ msgstr "ឆ្នាំ​ក្រោយ"
 
-#~ msgctxt "@option next month"
-#~ msgid "Next Month"
-#~ msgstr "ខែក្រោយ"
-
-#~ msgctxt "@option next week"
-#~ msgid "Next Week"
-#~ msgstr "សប្ដាហ៍​ក្រោយ"
-
 #~ msgctxt "@option today"
 #~ msgid "Today"
 #~ msgstr "ថ្ងៃនេះ"
@@ -6518,14 +6610,6 @@ msgstr "%1, %2"
 #~ msgctxt "@option yesterday"
 #~ msgid "Yesterday"
 #~ msgstr "ម្សិលមិញ"
-
-#~ msgctxt "@option last month"
-#~ msgid "Last Month"
-#~ msgstr "ខែមុន"
-
-#~ msgctxt "@option last year"
-#~ msgid "Last Year"
-#~ msgstr "ឆ្នាំ​មុន"
 
 #~ msgctxt "@option do not specify a date"
 #~ msgid "No Date"
@@ -6545,9 +6629,6 @@ msgstr "%1, %2"
 
 #~ msgid "Week %1"
 #~ msgstr "សប្ដាហ៍ %1"
-
-#~ msgid "Next year"
-#~ msgstr "ឆ្នាំ​ក្រោយ"
 
 #~ msgid "Previous year"
 #~ msgstr "ឆ្នាំ​មុន"
@@ -8933,9 +9014,6 @@ msgstr "%1, %2"
 #~ msgid "Installing"
 #~ msgstr "ដំឡើង"
 
-#~ msgid "Invalid item."
-#~ msgstr "ធាតុ​មិន​ត្រឹមត្រូវ ។"
-
 #~ msgid "Download of item failed: no download URL for \"%1\"."
 #~ msgstr "បានបរាជ័យ​ក្នុងការ​ទាញយក​​ធាតុ ៖ គ្មាន URL ទាញយក​សម្រាប់ \"%1\" ទេ ។"
 
@@ -9892,12 +9970,6 @@ msgstr "%1, %2"
 #~ "resources"
 #~ msgid "This Week"
 #~ msgstr "សប្ដាហ៍​នេះ"
-
-#~ msgctxt ""
-#~ "referring to a filter on the modification and usage date of files/"
-#~ "resources"
-#~ msgid "Last Week"
-#~ msgstr "សប្ដាហ៍​មុន"
 
 #~ msgctxt ""
 #~ "referring to a filter on the modification and usage date of files/"
