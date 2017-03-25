@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-03-04 04:05+0100\n"
+"POT-Creation-Date: 2017-03-25 02:58+0100\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -691,6 +691,7 @@ msgid ""
 msgstr ""
 
 #: src/commands/exportpaperkeycommand.cpp:91
+#: src/commands/importpaperkeycommand.cpp:174
 #, fuzzy, kde-format
 #| msgid "Could not find gpgconf executable"
 msgctxt "@title"
@@ -1143,6 +1144,87 @@ msgstr "បាន​នាំចូល​ឯកសារ​ CRL ដោយ​ជ�
 #, kde-format
 msgid "Import CRL Finished"
 msgstr "បាន​បញ្ចប់​ការ​នាំចូល CRL"
+
+#: src/commands/importpaperkeycommand.cpp:108
+#: src/crypto/autodecryptverifyfilescontroller.cpp:225
+#, fuzzy, kde-kuit-format
+#| msgid "Could not open file \"%1\" for reading"
+msgid "Cannot open <filename>%1</filename> for reading."
+msgstr "មិន​អាច​បើក​អាន​ឯកសារ \"%1\" បានទេ"
+
+#: src/commands/importpaperkeycommand.cpp:151
+#, fuzzy, kde-format
+#| msgid "Failed to execute %1: %2"
+msgid "Failed to restore any secret keys."
+msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
+
+#: src/commands/importpaperkeycommand.cpp:170
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<para><application>Kleopatra</application> uses <application>PaperKey</"
+"application> to import your text backup.</para><para>Please make sure it is "
+"installed.</para>"
+msgstr ""
+
+#: src/commands/importpaperkeycommand.cpp:179
+#, fuzzy, kde-format
+#| msgid "Select File"
+msgid "Select input file"
+msgstr "ជ្រើសឯកសារ"
+
+#: src/commands/importpaperkeycommand.cpp:198
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Error Deleting Registry Key"
+msgctxt "@title:window"
+msgid "Error importing secret key"
+msgstr "កំហុស​ក្នុង​ការ​លុប​សោ​ចុះបញ្ជី"
+
+#: src/commands/importpaperkeycommand.cpp:204
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<para>The GPG or GpgSM process that tried to export the secret key ended "
+#| "prematurely because of an unexpected error.</para><para>Please check the "
+#| "output of <icode>%1</icode> for details.</para>"
+msgctxt "@info"
+msgid ""
+"<para>The GPG process that tried to restore the secret key ended prematurely "
+"because of an unexpected error.</para><para>Please check the output of "
+"<icode>%1</icode> for details.</para>"
+msgstr ""
+"<para>​ដំណើរការ​ GPG ឬ​ GpgSM ដែល​បាន​ព្យាយាម​នាំ​ចេញ​សោ​​សម្ងាត់​ត្រូវ​បាន​បញ្ចប់​មុន​ពេល ​ដោយសារតែ​កំហុស​"
+"មិន​រំពឹង ។​</para><para>សូម​ពិនិត្យ​មើល​លទ្ធផល​របស់​​ <icode>%1</icode> សម្រាប់​សេចក្ដី​លម្អិត​ ។​</"
+"para>"
+
+#: src/commands/importpaperkeycommand.cpp:213
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<para>An error occurred while trying to export the secret key.</para> "
+#| "<para>The output from <command>%1</command> was: <message>%2</message></"
+#| "para>"
+msgctxt "@info"
+msgid ""
+"<para>An error occurred while trying to restore the secret key.</para> "
+"<para>The output from <command>%1</command> was:</para><para><message>%2</"
+"message></para>"
+msgstr ""
+"<para>កំហុស​បាន​កើតឡើង​ខណៈ​ពេល​ព្យាយាម​នាំ​ចេញ​សោ​​សម្ងាត់​ ។​</para> <para>​លទ្ធផល​ចេញពី​​ <command>"
+"%1</command> គឺ​ ៖​ <message>%2</message></para>"
+
+#: src/commands/importpaperkeycommand.cpp:221
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Could not copy temporary file <filename>%1</filename> to file <filename>"
+#| "%2</filename>: <message>%3</message>"
+msgctxt "@info"
+msgid "Successfully restored the secret key parts from <filename>%1</filename>"
+msgstr ""
+"មិន​អាច​ម្លង​ឯកសារ​បណ្ដោះអាសន្ន <filename>%1</filename> ទៅ​ឯកសារ <filename>%2</"
+"filename> ៖ <message>%3</message>"
 
 #: src/commands/keytocardcommand.cpp:103
 #, fuzzy, kde-format
@@ -2147,12 +2229,6 @@ msgid "Failed to move <filename>%1</filename> to <filename>%2</filename>."
 msgstr ""
 "មិន​អាច​ម្លង​ឯកសារ​បណ្ដោះអាសន្ន <filename>%1</filename> ទៅ​ឯកសារ <filename>%2</"
 "filename> ៖ <message>%3</message>"
-
-#: src/crypto/autodecryptverifyfilescontroller.cpp:225
-#, fuzzy, kde-kuit-format
-#| msgid "Could not open file \"%1\" for reading"
-msgid "Cannot open <filename>%1</filename> for reading."
-msgstr "មិន​អាច​បើក​អាន​ឯកសារ \"%1\" បានទេ"
 
 #: src/crypto/autodecryptverifyfilescontroller.cpp:230
 #, kde-kuit-format
@@ -4764,25 +4840,30 @@ msgstr "ជំហាន ២ ៖​ ​កំណត់​ PIN ដំបូង​�
 msgid "Set Initial PIN (SigG)"
 msgstr "កំណត់​​ PIN ដំបូង​ (SigG)​"
 
-#: src/dialogs/subkeyswidget.cpp:86
+#: src/dialogs/subkeyswidget.cpp:76
+#, kde-format
+msgid "Restore printed backup"
+msgstr ""
+
+#: src/dialogs/subkeyswidget.cpp:95
 #, fuzzy, kde-format
 #| msgid "SmartCard"
 msgid "Transfer to smartcard"
 msgstr "​SmartCard"
 
-#: src/dialogs/subkeyswidget.cpp:128
+#: src/dialogs/subkeyswidget.cpp:144
 #, kde-format
 msgctxt "stored..."
 msgid "on SmartCard with serial no. %1"
 msgstr "លើ​ SmartCard ដោយ​​លេខ​​សៀរៀល​ %1"
 
-#: src/dialogs/subkeyswidget.cpp:130
+#: src/dialogs/subkeyswidget.cpp:146
 #, kde-format
 msgctxt "stored..."
 msgid "on this computer"
 msgstr "លើកុំព្យូទ័រនេះ​"
 
-#: src/dialogs/subkeyswidget.cpp:145
+#: src/dialogs/subkeyswidget.cpp:161
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Subkeys"
