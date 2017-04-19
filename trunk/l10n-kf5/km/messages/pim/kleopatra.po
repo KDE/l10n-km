@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-03-30 02:47+0200\n"
+"POT-Creation-Date: 2017-04-19 02:51+0200\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -700,7 +700,7 @@ msgid ""
 msgstr ""
 
 #: src/commands/exportpaperkeycommand.cpp:91
-#: src/commands/importpaperkeycommand.cpp:174
+#: src/commands/importpaperkeycommand.cpp:182
 #, fuzzy, kde-format
 #| msgid "Could not find gpgconf executable"
 msgctxt "@title"
@@ -1195,20 +1195,32 @@ msgstr "បាន​នាំចូល​ឯកសារ​ CRL ដោយ​ជ�
 msgid "Import CRL Finished"
 msgstr "បាន​បញ្ចប់​ការ​នាំចូល CRL"
 
-#: src/commands/importpaperkeycommand.cpp:108
+#: src/commands/importpaperkeycommand.cpp:110
 #: src/crypto/autodecryptverifyfilescontroller.cpp:225
 #, fuzzy, kde-kuit-format
 #| msgid "Could not open file \"%1\" for reading"
 msgid "Cannot open <filename>%1</filename> for reading."
 msgstr "មិន​អាច​បើក​អាន​ឯកសារ \"%1\" បានទេ"
 
-#: src/commands/importpaperkeycommand.cpp:151
+#: src/commands/importpaperkeycommand.cpp:161
 #, fuzzy, kde-format
 #| msgid "Failed to execute %1: %2"
 msgid "Failed to restore any secret keys."
 msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
 
-#: src/commands/importpaperkeycommand.cpp:170
+#: src/commands/importpaperkeycommand.cpp:169
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid ""
+#| "Could not copy temporary file <filename>%1</filename> to file <filename>"
+#| "%2</filename>: <message>%3</message>"
+msgctxt "@info"
+msgid "Successfully restored the secret key parts from <filename>%1</filename>"
+msgstr ""
+"មិន​អាច​ម្លង​ឯកសារ​បណ្ដោះអាសន្ន <filename>%1</filename> ទៅ​ឯកសារ <filename>%2</"
+"filename> ៖ <message>%3</message>"
+
+#: src/commands/importpaperkeycommand.cpp:178
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1217,13 +1229,13 @@ msgid ""
 "installed.</para>"
 msgstr ""
 
-#: src/commands/importpaperkeycommand.cpp:179
+#: src/commands/importpaperkeycommand.cpp:187
 #, fuzzy, kde-format
 #| msgid "Select File"
 msgid "Select input file"
 msgstr "ជ្រើសឯកសារ"
 
-#: src/commands/importpaperkeycommand.cpp:215
+#: src/commands/importpaperkeycommand.cpp:223
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Error Deleting Registry Key"
@@ -1231,7 +1243,7 @@ msgctxt "@title:window"
 msgid "Error importing secret key"
 msgstr "កំហុស​ក្នុង​ការ​លុប​សោ​ចុះបញ្ជី"
 
-#: src/commands/importpaperkeycommand.cpp:221
+#: src/commands/importpaperkeycommand.cpp:229
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1248,7 +1260,7 @@ msgstr ""
 "មិន​រំពឹង ។​</para><para>សូម​ពិនិត្យ​មើល​លទ្ធផល​របស់​​ <icode>%1</icode> សម្រាប់​សេចក្ដី​លម្អិត​ ។​</"
 "para>"
 
-#: src/commands/importpaperkeycommand.cpp:230
+#: src/commands/importpaperkeycommand.cpp:238
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid ""
@@ -1263,18 +1275,6 @@ msgid ""
 msgstr ""
 "<para>កំហុស​បាន​កើតឡើង​ខណៈ​ពេល​ព្យាយាម​នាំ​ចេញ​សោ​​សម្ងាត់​ ។​</para> <para>​លទ្ធផល​ចេញពី​​ <command>"
 "%1</command> គឺ​ ៖​ <message>%2</message></para>"
-
-#: src/commands/importpaperkeycommand.cpp:238
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid ""
-#| "Could not copy temporary file <filename>%1</filename> to file <filename>"
-#| "%2</filename>: <message>%3</message>"
-msgctxt "@info"
-msgid "Successfully restored the secret key parts from <filename>%1</filename>"
-msgstr ""
-"មិន​អាច​ម្លង​ឯកសារ​បណ្ដោះអាសន្ន <filename>%1</filename> ទៅ​ឯកសារ <filename>%2</"
-"filename> ៖ <message>%3</message>"
 
 #: src/commands/keytocardcommand.cpp:103
 #, fuzzy, kde-format
@@ -6314,19 +6314,19 @@ msgstr ""
 "<para>ជំនួស​បណ្ណាល័យ <icode>gpgme</icode> ជា​មួយ​នឹង​កំណែ​ដែល​ត្រូវ​គ្នា​ជា​មួយ​នឹង​ការ​គាំទ្រ "
 "<application>%1</application> ។</para>"
 
-#: src/selftest/enginecheck.cpp:115
+#: src/selftest/enginecheck.cpp:118
 #, kde-format
 msgid "not properly installed"
 msgstr "មិន​បាន​ដំឡើង​ដោយ​ត្រឹមត្រូវ​ទេ"
 
-#: src/selftest/enginecheck.cpp:117
+#: src/selftest/enginecheck.cpp:120
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<para>Backend <command>%1</command> is not installed properly.</para>"
 msgstr ""
 "<para>ផ្នែក​ខាង​ក្រោយ <command>%1</command> មិន​ត្រូវ​បាន​ដំឡើង​ដោយ​ត្រឹមត្រូវ​ទេ ។</para>"
 
-#: src/selftest/enginecheck.cpp:119
+#: src/selftest/enginecheck.cpp:122
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -6334,12 +6334,12 @@ msgid ""
 "para>"
 msgstr "<para>សូម​ពិនិត្យ​មើល​លទ្ធផល​របស់ <command>%1 --version</command> ដោយ​ដៃ ។</para>"
 
-#: src/selftest/enginecheck.cpp:122
+#: src/selftest/enginecheck.cpp:125
 #, kde-format
 msgid "too old"
 msgstr "ចាស់​ណាស់"
 
-#: src/selftest/enginecheck.cpp:124
+#: src/selftest/enginecheck.cpp:127
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -6349,19 +6349,19 @@ msgstr ""
 "<para>ផ្នែក​ខាង​ក្រោយ <command>%1</command> ត្រូវ​បាន​ដំឡើង​នៅ​ក្នុងកំណែ %2 ប៉ុន្តែ​​យ៉ាង​ហោចណាស់​"
 "ត្រូវ​ការ​កំណែ %3 ។</para>"
 
-#: src/selftest/enginecheck.cpp:130 src/selftest/enginecheck.cpp:182
+#: src/selftest/enginecheck.cpp:133 src/selftest/enginecheck.cpp:185
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
 "<para>Install <application>%1</application> version %2 or higher.</para>"
 msgstr "<para>ដំឡើង <application>%1</application> កំណែ %2 ឬ​ខ្ពស់​ជាង​នេះ ​។</para>"
 
-#: src/selftest/enginecheck.cpp:133
+#: src/selftest/enginecheck.cpp:136
 #, kde-format
 msgid "unknown problem"
 msgstr "មិន​ស្គាល់​បញ្ហា"
 
-#: src/selftest/enginecheck.cpp:135
+#: src/selftest/enginecheck.cpp:138
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -6371,7 +6371,7 @@ msgstr ""
 "<para>ប្រាកដថា <application>%1</application> ត្រូវ​បាន​ដំឡើង​នៅ​ក្នុង <envar>ផ្លូវ</"
 "envar> ។</para>"
 
-#: src/selftest/enginecheck.cpp:179
+#: src/selftest/enginecheck.cpp:182
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -6381,7 +6381,7 @@ msgstr ""
 "<para><application>%1</application> v%2.%3.%4 ត្រូវ​បាន​ទាមទារ​សម្រាប់​ការ​សាកល្បង​នេះ "
 "ប៉ុន្តែ​មាន​តែ %5 ប៉ុណ្ណោះ​ត្រូវ​បាន​ដំឡើង ។</para>"
 
-#: src/selftest/enginecheck.cpp:187
+#: src/selftest/enginecheck.cpp:190
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -6391,7 +6391,7 @@ msgstr ""
 "<para><application>%1</application> ត្រូវបាន​ទាមទារ​សម្រាប់​ការ​សាកល្បង​នេះ ប៉ុន្តែ​​ហាក់បី​"
 "ដូចជា​មិនមាន ។ </para><para>សូម​មើល​ការ​សាកល្បង​​​សម្រាប់​ព័ត៌មាន​បន្ថែម ។</para>"
 
-#: src/selftest/enginecheck.cpp:191
+#: src/selftest/enginecheck.cpp:194
 #, kde-kuit-format
 msgctxt "@info %1: test name"
 msgid "<para>See \"%1\" above.</para>"
