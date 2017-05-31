@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-05-25 02:57+0200\n"
+"POT-Creation-Date: 2017-05-31 06:44+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -8637,7 +8637,7 @@ msgstr "បន្ទាត់"
 #: plugins/flake/pathshapes/ellipse/EllipseShapeConfigWidget.ui:35
 #: plugins/flake/pathshapes/spiral/SpiralShapeConfigWidget.ui:20
 #: plugins/impex/ppm/kis_wdg_options_ppm.ui:17
-#: plugins/tools/basictools/wdgmultihandtool.ui:35
+#: plugins/tools/basictools/wdgmultihandtool.ui:57
 #, kde-format
 msgid "Type:"
 msgstr "ប្រភេទ ៖"
@@ -9056,8 +9056,10 @@ msgstr "ទំហំ"
 #. i18n: ectx: property (suffix), widget (KisIntParseSpinBox, intHalfWidth)
 #. i18n: ectx: property (suffix), widget (KisIntParseSpinBox, intHalfHeight)
 #. i18n: ectx: property (suffix), widget (KisIntParseSpinBox, radius)
+#. i18n: ectx: property (suffix), widget (KisDoubleParseSpinBox, spinMoveStep)
 #. i18n: ectx: property (suffix), widget (KisIntParseSpinBox, intX)
 #. i18n: ectx: property (suffix), widget (KisIntParseSpinBox, intY)
+#. i18n: ectx: property (suffix), widget (QSpinBox, patchRadius)
 #: libs/image/brushengine/kis_standard_uniform_properties_factory.cpp:60
 #: libs/ui/dialogs/kis_dlg_layer_style.cpp:593
 #: libs/ui/dialogs/kis_dlg_layer_style.cpp:596
@@ -9115,14 +9117,16 @@ msgstr "ទំហំ"
 #: plugins/tools/basictools/kis_tool_fill.cc:196
 #: plugins/tools/basictools/kis_tool_movetooloptionswidget.cpp:63
 #: plugins/tools/basictools/kis_tool_movetooloptionswidget.cpp:64
-#: plugins/tools/basictools/kis_tool_multihand.cpp:302
+#: plugins/tools/basictools/kis_tool_multihand.cpp:304
 #: plugins/tools/basictools/wdgcolorpicker.ui:64
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:231
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:234
+#: plugins/tools/basictools/wdgmovetool.ui:127
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:223
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:226
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:113
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:138
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:246
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:271
+#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:130
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:108
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:109
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:118
@@ -20893,10 +20897,12 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QPushButton, CurveResetButton)
 #. i18n: ectx: property (text), widget (QPushButton, bnReset)
 #. i18n: ectx: property (text), widget (QPushButton, btnResetCustomLine)
+#. i18n: ectx: property (text), widget (QPushButton, resetOriginButton)
 #: libs/widgetutils/xmlgui/kedittoolbar.cpp:679
 #: plugins/dockers/artisticcolorselector/forms/wdgArtisticColorSelector.ui:32
 #: plugins/impex/video/video_export_options_dialog.ui:128
 #: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:197
+#: plugins/tools/basictools/wdgmultihandtool.ui:97
 #, fuzzy, kde-format
 msgid "Reset"
 msgstr "ជ្រើស​ឡើង​វិញ"
@@ -26387,7 +26393,7 @@ msgstr "រូបរាង​ ៖"
 #: plugins/filters/blur/wdg_lens_blur.ui:73
 #: plugins/filters/blur/wdg_lens_blur.ui:92
 #: plugins/filters/unsharp/wdgunsharp.ui:23
-#: plugins/tools/basictools/wdgmultihandtool.ui:58
+#: plugins/tools/basictools/wdgmultihandtool.ui:221
 #, kde-format
 msgid "Radius:"
 msgstr "កាំ ៖"
@@ -26399,7 +26405,7 @@ msgstr "កាំ ៖"
 #: plugins/filters/blur/wdg_lens_blur.ui:102
 #: plugins/filters/blur/wdg_lens_blur.ui:124
 #: plugins/paintops/libpaintop/forms/wdgpredefinedbrushchooser.ui:144
-#: plugins/tools/basictools/wdgmultihandtool.ui:77
+#: plugins/tools/basictools/wdgmultihandtool.ui:118
 #, fuzzy, kde-format
 msgid "Rotation:"
 msgstr "ការបង្វិល ៖"
@@ -27503,7 +27509,9 @@ msgstr "ធ្វើ​ឲ្យ​របាំង​មិន​ច្បាស
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
 #. i18n: ectx: property (text), widget (QLabel, lblAmount)
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: plugins/filters/unsharp/wdgunsharp.ui:68
+#: plugins/tools/basictools/wdgmovetool.ui:149
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1952
 #, kde-format
 msgid "Amount:"
@@ -28757,7 +28765,7 @@ msgstr "ស្រមោល"
 #. i18n: ectx: property (title), widget (QGroupBox, positionGroupBox)
 #. i18n: ectx: property (title), widget (QGroupBox, moveGroup)
 #: plugins/flake/textshape/dialogs/FontDecorations.ui:289
-#: plugins/tools/basictools/wdgmovetool.ui:138
+#: plugins/tools/basictools/wdgmovetool.ui:184
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:998
 #, fuzzy, kde-format
 msgid "Position"
@@ -33099,7 +33107,7 @@ msgstr "0%"
 #: plugins/paintops/filterop/kis_filterop_settings_widget.cpp:53
 #: plugins/paintops/hatching/kis_hatching_paintop_settings_widget.cpp:60
 #: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:62
-#: plugins/tools/basictools/kis_tool_multihand.cpp:272
+#: plugins/tools/basictools/kis_tool_multihand.cpp:274
 #, kde-format
 msgid "Mirror"
 msgstr "ឆ្លុះ"
@@ -33463,8 +33471,10 @@ msgstr "គួច​បញ្ច្រាស​ទ្រនិច​នាឡិ
 
 #. i18n: ectx: property (text), widget (QRadioButton, moveBtn)
 #. i18n: ectx: property (text), widget (QToolButton, liquifyMove)
+#. i18n: ectx: property (text), widget (QPushButton, moveOriginButton)
 #: plugins/paintops/deform/kis_deform_paintop_settings.cpp:172
 #: plugins/paintops/deform/wdgdeformoptions.ui:75
+#: plugins/tools/basictools/wdgmultihandtool.ui:78
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1737
 #, kde-format
 msgid "Move"
@@ -34793,9 +34803,7 @@ msgstr "%1 វិ."
 msgid "360°"
 msgstr "360°"
 
-#. i18n: ectx: property (text), widget (QLabel, Fast)
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:262
-#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:100
 #, kde-format
 msgid "Fast"
 msgstr "លឿន​"
@@ -35629,6 +35637,12 @@ msgstr "មេដែក​ជំនួយ"
 msgid "Toggle Assistant"
 msgstr "អ្នក​ជំនួយ​ការ ៖"
 
+#: plugins/tools/basictools/kis_tool_brush.cc:439
+#, fuzzy, kde-format
+#| msgid "Magnetify"
+msgid "Magnetism:"
+msgstr "ធ្វើ​ឲ្យ​ទៅ​ជា​មេដែក"
+
 #: plugins/tools/basictools/kis_tool_brush.cc:442
 #, fuzzy, kde-format
 msgid "Snap Single:"
@@ -35707,7 +35721,7 @@ msgid "Grow selection: "
 msgstr "បង្កើន​ការ​ជ្រើស​រើស​ដោយ"
 
 #: plugins/tools/basictools/kis_tool_fill.cc:191
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:209
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:200
 #, fuzzy, kde-format
 msgid "Feathering radius: "
 msgstr "កាំ​គំរូ ៖"
@@ -35897,22 +35911,22 @@ msgctxt "(qtundo-format)"
 msgid "Multibrush Stroke"
 msgstr "ជក់"
 
-#: plugins/tools/basictools/kis_tool_multihand.cpp:271
+#: plugins/tools/basictools/kis_tool_multihand.cpp:273
 #, kde-format
 msgid "Symmetry"
 msgstr ""
 
-#: plugins/tools/basictools/kis_tool_multihand.cpp:273
+#: plugins/tools/basictools/kis_tool_multihand.cpp:275
 #, fuzzy, kde-format
 msgid "Translate"
 msgstr "ត្រីកោណ"
 
-#: plugins/tools/basictools/kis_tool_multihand.cpp:274
+#: plugins/tools/basictools/kis_tool_multihand.cpp:276
 #, kde-format
 msgid "Snowflake"
 msgstr ""
 
-#: plugins/tools/basictools/kis_tool_multihand.h:102
+#: plugins/tools/basictools/kis_tool_multihand.h:103
 #, fuzzy, kde-format
 msgid "Multibrush Tool"
 msgstr "ជក់"
@@ -36006,13 +36020,13 @@ msgid "Sample All Visible Layers"
 msgstr "ធ្វើជា​គំរូ​ដល់​ស្រទាប់​ដែល​មើល​ឃើញ​ទាំងអស់"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpSelectionMethod)
-#: plugins/tools/basictools/wdgmovetool.ui:17
+#: plugins/tools/basictools/wdgmovetool.ui:23
 #, kde-format
 msgid "Selection Mode"
 msgstr "របៀប​ជ្រើស"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, radioSelectedLayer)
-#: plugins/tools/basictools/wdgmovetool.ui:23
+#: plugins/tools/basictools/wdgmovetool.ui:29
 #, fuzzy, kde-format
 msgid ""
 "Move the layer that you have currently selected in the layerbox with its "
@@ -36021,14 +36035,14 @@ msgstr ""
 "ផ្លាស់ទី​ស្រទាប់​ដែល​អ្នក​បានជ្រើស​បច្ចុប្បន្ន​នៅ​ក្នុង​ប្រអប់​ស្រទាប់ ។ ផ្លូវកាត់ ៖ បញ្ជា (ctrl-ចុច) ។"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioSelectedLayer)
-#: plugins/tools/basictools/wdgmovetool.ui:26
+#: plugins/tools/basictools/wdgmovetool.ui:32
 #, fuzzy, kde-format
 #| msgid "Move current layer"
 msgid "&Move current layer"
 msgstr "ផ្លាស់ទី​ស្រទាប់បច្ចុប្បន្ន"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, radioFirstLayer)
-#: plugins/tools/basictools/wdgmovetool.ui:36
+#: plugins/tools/basictools/wdgmovetool.ui:42
 #, kde-format
 msgid ""
 "Move the first layer with visible content at the place where you click. This "
@@ -36038,14 +36052,14 @@ msgstr ""
 "ស្រទាប់​នោះដែរ ។"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioFirstLayer)
-#: plugins/tools/basictools/wdgmovetool.ui:39
+#: plugins/tools/basictools/wdgmovetool.ui:45
 #, fuzzy, kde-format
 #| msgid "Move layer with content"
 msgid "Mo&ve layer with content"
 msgstr "ផ្លាស់ទី​ស្រទាប់​ដែលមានមាតិកា"
 
 #. i18n: ectx: property (toolTip), widget (QRadioButton, radioGroup)
-#: plugins/tools/basictools/wdgmovetool.ui:49
+#: plugins/tools/basictools/wdgmovetool.ui:55
 #, kde-format
 msgid ""
 "Move the group containing the first layer that contains visible content. "
@@ -36055,54 +36069,46 @@ msgstr ""
 "shift-) ។ចុច"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioGroup)
-#: plugins/tools/basictools/wdgmovetool.ui:52
+#: plugins/tools/basictools/wdgmovetool.ui:58
 #, fuzzy, kde-format
 #| msgid "Move the whole group"
 msgid "Move &the whole group"
 msgstr "ផ្លាស់ទី​ក្រុម​ទាំង​មូល"
 
 #. i18n: ectx: property (title), widget (QGroupBox, grpMoveStep)
-#: plugins/tools/basictools/wdgmovetool.ui:65
+#: plugins/tools/basictools/wdgmovetool.ui:74
 #, fuzzy, kde-format
-msgid "Shortcut Move Distance"
-msgstr "ចម្ងាយ​ប្រធាន​បទ ៖"
-
-#. i18n: ectx: property (toolTip), widget (KisDoubleParseSpinBox, spinMoveStep)
-#: plugins/tools/basictools/wdgmovetool.ui:71
-#, kde-format
-msgid "Number of pixels to move after move shortcut keypress."
-msgstr ""
+msgid "Move Shortcut"
+msgstr "ខ្លី"
 
 #. i18n: ectx: property (toolTip), widget (KisDoubleParseSpinBox, spinMoveScale)
-#: plugins/tools/basictools/wdgmovetool.ui:90
+#: plugins/tools/basictools/wdgmovetool.ui:86
 #, kde-format
 msgid "When holding shift, move keyboard shortcuts scale up by this amount."
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, scaleLabel)
-#: plugins/tools/basictools/wdgmovetool.ui:106
+#: plugins/tools/basictools/wdgmovetool.ui:108
+#, fuzzy, kde-format
+msgid "Multiplier:"
+msgstr "គ្រោង ៖"
+
+#. i18n: ectx: property (toolTip), widget (KisDoubleParseSpinBox, spinMoveStep)
+#: plugins/tools/basictools/wdgmovetool.ui:124
 #, kde-format
-msgid "Large Move Scale"
+msgid "Number of pixels to move after move shortcut keypress."
 msgstr ""
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, chkShowCoordinates)
-#: plugins/tools/basictools/wdgmovetool.ui:116
-#, fuzzy, kde-format
-#| msgid "Show Decorations"
-msgid "Show coordinates on canvas"
-msgstr "បង្ហាញ​ការ​តុបតែង"
-
-#. i18n: ectx: property (text), widget (QCheckBox, chkShowCoordinates)
-#: plugins/tools/basictools/wdgmovetool.ui:119
-#, fuzzy, kde-format
-#| msgid "Show Decorations"
-msgid "Show coordinates"
-msgstr "បង្ហាញ​ការ​តុបតែង"
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: plugins/tools/basictools/wdgmovetool.ui:162
+#, kde-format
+msgid "Unit:"
+msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label_offsetX)
 #. i18n: ectx: property (toolTip), widget (KisIntParseSpinBox, translateXBox)
-#: plugins/tools/basictools/wdgmovetool.ui:176
-#: plugins/tools/basictools/wdgmovetool.ui:198
+#: plugins/tools/basictools/wdgmovetool.ui:234
+#: plugins/tools/basictools/wdgmovetool.ui:256
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1036
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1058
 #, kde-format
@@ -36111,7 +36117,7 @@ msgstr "ការ​បកប្រែ​ផ្ដេក​"
 
 #. i18n: ectx: property (text), widget (QLabel, label_rotateX)
 #. i18n: ectx: property (text), widget (QLabel, label_offsetX)
-#: plugins/tools/basictools/wdgmovetool.ui:182
+#: plugins/tools/basictools/wdgmovetool.ui:240
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:728
 #, kde-format
 msgid "&x:"
@@ -36119,8 +36125,8 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (KisIntParseSpinBox, translateYBox)
 #. i18n: ectx: property (toolTip), widget (QLabel, label_offsetY)
-#: plugins/tools/basictools/wdgmovetool.ui:214
-#: plugins/tools/basictools/wdgmovetool.ui:227
+#: plugins/tools/basictools/wdgmovetool.ui:272
+#: plugins/tools/basictools/wdgmovetool.ui:285
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1074
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1087
 #, kde-format
@@ -36129,43 +36135,53 @@ msgstr "ការ​បកប្រែ​បញ្ឈរ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_rotateY)
 #. i18n: ectx: property (text), widget (QLabel, label_offsetY)
-#: plugins/tools/basictools/wdgmovetool.ui:230
+#: plugins/tools/basictools/wdgmovetool.ui:288
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:763
 #, fuzzy, kde-format
 msgid "&y:"
 msgstr "គ្រាប់ចុច ៖"
 
+#. i18n: ectx: property (toolTip), widget (QCheckBox, chkShowCoordinates)
+#. i18n: ectx: property (text), widget (QCheckBox, chkShowCoordinates)
+#: plugins/tools/basictools/wdgmovetool.ui:303
+#: plugins/tools/basictools/wdgmovetool.ui:306
+#, fuzzy, kde-format
+#| msgid "Show Decorations"
+msgid "Show coordinates on canvas"
+msgstr "បង្ហាញ​ការ​តុបតែង"
+
+#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckbox)
+#: plugins/tools/basictools/wdgmultihandtool.ui:153
+#, fuzzy, kde-format
+msgid "Show Origin"
+msgstr "ខ្ទាស់​ទៅ​ក្រឡាចត្រង្គ"
+
 #. i18n: ectx: property (text), widget (QLabel, brushesLabel)
-#: plugins/tools/basictools/wdgmultihandtool.ui:45
+#: plugins/tools/basictools/wdgmultihandtool.ui:166
 #, fuzzy, kde-format
 msgid "Brushes:"
 msgstr "ជក់"
 
-#. i18n: ectx: property (text), widget (QCheckBox, verticalCheckbox)
-#: plugins/tools/basictools/wdgmultihandtool.ui:87
-#, fuzzy, kde-format
-#| msgid "Vertical"
-msgid "Vertical"
-msgstr "បញ្ឈរ ៖"
-
 #. i18n: ectx: property (text), widget (QCheckBox, horizontalCheckbox)
-#: plugins/tools/basictools/wdgmultihandtool.ui:94
+#: plugins/tools/basictools/wdgmultihandtool.ui:182
 #, fuzzy, kde-format
 #| msgid "Horizontal"
 msgid "Horizontal"
 msgstr "ផ្ដេក ៖​"
 
-#. i18n: ectx: property (text), widget (QPushButton, moveOriginButton)
-#: plugins/tools/basictools/wdgmultihandtool.ui:110
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: plugins/tools/basictools/wdgmultihandtool.ui:198
 #, fuzzy, kde-format
-msgid "Move Origin"
-msgstr "ផ្លាស់ទី ស្រទាប់"
+#| msgid "Origin X:"
+msgid "Origin:"
+msgstr "ដើម X ៖​"
 
-#. i18n: ectx: property (text), widget (QCheckBox, showAxesCheckbox)
-#: plugins/tools/basictools/wdgmultihandtool.ui:145
+#. i18n: ectx: property (text), widget (QCheckBox, verticalCheckbox)
+#: plugins/tools/basictools/wdgmultihandtool.ui:208
 #, fuzzy, kde-format
-msgid "Show Origin"
-msgstr "ខ្ទាស់​ទៅ​ក្រឡាចត្រង្គ"
+#| msgid "Vertical"
+msgid "Vertical"
+msgstr "បញ្ឈរ ៖"
 
 #. i18n: ectx: property (text), widget (QCheckBox, toggleEditMode)
 #: plugins/tools/defaulttool/connectionTool/ConnectionPointWidget.ui:30
@@ -36948,29 +36964,29 @@ msgstr "សរសៃ​ជក់"
 msgid "Pattern editing"
 msgstr "រក្សា​ទុក​ទៅ​ក្តារលាយ​ពណ៌"
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:59
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:58
 #, kde-format
 msgid "Contiguous Area Selection"
 msgstr "ការ​ជ្រើស​ផ្ទៃ​ដែល​ជាប់​គ្នា"
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:136
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:135
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Select Contiguous Area"
 msgstr "ជ្រើស​ផ្ទៃ​របស់​ពណ៌​ដែល​ជាប់​គ្នា"
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:180
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:179
 #: plugins/tools/selectiontools/kis_tool_select_similar.cc:151
 #, kde-format
 msgid "Fuzziness: "
 msgstr "ភាព​ស្រពិចស្រពិល​ ៖ "
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:195
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:190
 #, fuzzy, kde-format
 msgid "Grow/shrink selection: "
 msgstr "បង្រួញ​ការជ្រើស​រើស​ដោយ"
 
-#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:222
+#: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:214
 #, kde-format
 msgid "Limit to current layer"
 msgstr "កំណត់​ស្រទាប់​បច្ចុប្បន្ន"
@@ -37280,23 +37296,29 @@ msgstr "ផ្កាយ​"
 msgid "Smart Patch Tool"
 msgstr "អត្ថបទ"
 
-#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#. i18n: ectx: property (text), widget (QLabel, Fast)
 #: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:23
 #, fuzzy, kde-format
-msgid "Inpaint Tool"
-msgstr "ជម្រាល​"
+msgid "low/fast"
+msgstr "ប៉ាស្តែល​"
 
 #. i18n: ectx: property (text), widget (QLabel, Accurate)
-#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:84
+#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:46
+#, fuzzy, kde-format
+msgid "high/slow"
+msgstr "យឺត​"
+
+#. i18n: ectx: property (text), widget (QLabel, Fast_2)
+#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:94
 #, kde-format
-msgid "Accurate"
+msgid "Accuracy:"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:114
+#. i18n: ectx: property (text), widget (QLabel, patchRadiusLabel)
+#: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:111
 #, fuzzy, kde-format
 #| msgid "Vertical Radius"
-msgid "Patch Radius"
+msgid "Patch Radius:"
 msgstr "កាំ​បញ្ឈរ ៖"
 
 #: plugins/tools/tool_text/kis_tool_text.h:93
@@ -37765,6 +37787,23 @@ msgstr "បង្ហាញ​ការ​តុបតែង"
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Shortcut Move Distance"
+#~ msgstr "ចម្ងាយ​ប្រធាន​បទ ៖"
+
+#, fuzzy
+#~| msgid "Show Decorations"
+#~ msgid "Show coordinates"
+#~ msgstr "បង្ហាញ​ការ​តុបតែង"
+
+#, fuzzy
+#~ msgid "Move Origin"
+#~ msgstr "ផ្លាស់ទី ស្រទាប់"
+
+#, fuzzy
+#~ msgid "Inpaint Tool"
+#~ msgstr "ជម្រាល​"
 
 #, fuzzy
 #~| msgid "Start Search From"
@@ -58068,20 +58107,6 @@ msgstr ""
 #~ "translations"
 #~ msgid "faster"
 #~ msgstr "ប៉ាស្តែល​"
-
-#, fuzzy
-#~ msgctxt ""
-#~ "(qtundo-format) h264 preset name, check simplescreenrecorder for standard "
-#~ "translations"
-#~ msgid "fast"
-#~ msgstr "ប៉ាស្តែល​"
-
-#, fuzzy
-#~ msgctxt ""
-#~ "(qtundo-format) h264 preset name, check simplescreenrecorder for standard "
-#~ "translations"
-#~ msgid "slow"
-#~ msgstr "យឺត​"
 
 #, fuzzy
 #~ msgctxt ""
