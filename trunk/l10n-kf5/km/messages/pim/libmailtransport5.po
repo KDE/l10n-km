@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: desktop_extragear-utils_kdiff3\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-07-01 03:16+0200\n"
+"POT-Creation-Date: 2017-07-04 03:09+0200\n"
 "PO-Revision-Date: 2010-12-22 05:05+0700\n"
 "Last-Translator: Seng Sutha <Sutha@khmeros.info>\n"
 "Language-Team: Khmer [km] <Support@khmeros.info>\n"
@@ -211,13 +211,23 @@ msgid ""
 "address."
 msgstr "បញ្ចូល​អាសយដ្ឋាន​ដែល​គួរតែ​ត្រូវ​បាន​ប្រើ ដើម្បី​សរសេរ​ជាន់​លើ​អាសយដ្ឋាន​អ្នក​ផ្ញើ​លំនាំដើម ។"
 
-#: kmailtransport/plugins/smtp/smtpconfigwidget.cpp:271
+#: kmailtransport/plugins/smtp/lineeditpassword.cpp:55
+#, kde-format
+msgid "Change the visibility of the password"
+msgstr ""
+
+#: kmailtransport/plugins/smtp/smtpconfigwidget.cpp:154
+#, kde-format
+msgid "The password to send to the server for authorization."
+msgstr "ពាក្យ​សម្ងាត់​ដែល​ត្រូវ​ផ្ញើ​ទៅ​ម៉ាស៊ីន​បម្រើ​សម្រាប់​សេចក្ដី​អនុញ្ញាត ។"
+
+#: kmailtransport/plugins/smtp/smtpconfigwidget.cpp:274
 #, kde-format
 msgid ""
 "Failed to check capabilities. Please verify port and authentication mode."
 msgstr ""
 
-#: kmailtransport/plugins/smtp/smtpconfigwidget.cpp:271
+#: kmailtransport/plugins/smtp/smtpconfigwidget.cpp:274
 #, kde-format
 msgid "Check Capabilities Failed"
 msgstr ""
@@ -280,117 +290,111 @@ msgstr "ចូល ៖"
 msgid "P&assword:"
 msgstr "​ពាក្យ​សម្ងាត់ ៖"
 
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, password)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:111
-#, kde-format
-msgid "The password to send to the server for authorization."
-msgstr "ពាក្យ​សម្ងាត់​ដែល​ត្រូវ​ផ្ញើ​ទៅ​ម៉ាស៊ីន​បម្រើ​សម្រាប់​សេចក្ដី​អនុញ្ញាត ។"
-
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_storePassword)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:127
+#: kmailtransport/plugins/smtp/smtpsettings.ui:115
 #, kde-format
 msgid "&Store SMTP password"
 msgstr "ទុក​ពាក្យ​សម្ងាត់​របស់ SMTP"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_requiresAuthentication)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:134
+#: kmailtransport/plugins/smtp/smtpsettings.ui:122
 #, kde-format
 msgid "Server &requires authentication"
 msgstr "ម៉ាស៊ីន​បម្រើ​ទាមទារ​​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
 #. i18n: ectx: attribute (title), widget (QWidget, advancedTab)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:158
+#: kmailtransport/plugins/smtp/smtpsettings.ui:146
 #, kde-format
 msgctxt "advanced smtp settings"
 msgid "Advanced"
 msgstr "កម្រិត​ខ្ពស់"
 
 #. i18n: ectx: property (title), widget (QGroupBox, encryptionGroup)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:167
+#: kmailtransport/plugins/smtp/smtpsettings.ui:155
 #, kde-format
 msgid "Connection Settings"
 msgstr "ការកំណត់​ការតភ្ជាប់​​"
 
 #. i18n: ectx: property (text), widget (QPushButton, checkCapabilities)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:180
+#: kmailtransport/plugins/smtp/smtpsettings.ui:168
 #, kde-format
 msgid "Auto Detect"
 msgstr "រកឃើញ​ដោយ​​​ស្វ័យ​ប្រវត្តិ​"
 
 #. i18n: ectx: property (text), widget (QLabel, noAuthPossible)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:214
+#: kmailtransport/plugins/smtp/smtpsettings.ui:202
 #, kde-format
 msgid "This server does not support authentication"
 msgstr "ម៉ាស៊ីន​បម្រើ​នេះ​មិន​គាំទ្រ​ការ​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​ទេ"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:229
+#: kmailtransport/plugins/smtp/smtpsettings.ui:217
 #, kde-format
 msgid "Encryption:"
 msgstr "ការអ៊ិនគ្រីប ៖"
 
 #. i18n: ectx: property (text), widget (QRadioButton, encryptionNone)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:238
+#: kmailtransport/plugins/smtp/smtpsettings.ui:226
 #, kde-format
 msgid "&None"
 msgstr "គ្មាន"
 
 #. i18n: ectx: property (text), widget (QRadioButton, encryptionSsl)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:245
+#: kmailtransport/plugins/smtp/smtpsettings.ui:233
 #, kde-format
 msgid "&SSL"
 msgstr "SSL"
 
 #. i18n: ectx: property (text), widget (QRadioButton, encryptionTls)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:252
+#: kmailtransport/plugins/smtp/smtpsettings.ui:240
 #, kde-format
 msgid "&TLS"
 msgstr "TLS"
 
 #. i18n: ectx: property (text), widget (QLabel, portLabel)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:261
+#: kmailtransport/plugins/smtp/smtpsettings.ui:249
 #, kde-format
 msgid "&Port:"
 msgstr "ច្រក ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, authLabel)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:287
+#: kmailtransport/plugins/smtp/smtpsettings.ui:275
 #, kde-format
 msgid "Authentication:"
 msgstr "ការ​​ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ ៖"
 
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:302
+#: kmailtransport/plugins/smtp/smtpsettings.ui:290
 #, kde-format
 msgid "SMTP Settings"
 msgstr "ការកំណត់​ SMTP ​​"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_specifyHostname)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:308
+#: kmailtransport/plugins/smtp/smtpsettings.ui:296
 #, kde-format
 msgid "Sen&d custom hostname to server"
 msgstr "ផ្ញើ​ឈ្មោះ​ម៉ាស៊ីន​ផ្ទាល់​ខ្លួន​ទៅ​​ម៉ាស៊ីន​បម្រើ"
 
 #. i18n: ectx: property (text), widget (QLabel, hostnameLabel)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:318
+#: kmailtransport/plugins/smtp/smtpsettings.ui:306
 #, kde-format
 msgid "Hostna&me:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_specifySenderOverwriteAddress)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:341
+#: kmailtransport/plugins/smtp/smtpsettings.ui:329
 #, kde-format
 msgid "Use custom sender address"
 msgstr "ប្រើ​អាសយដ្ឋាន​អ្នក​ផ្ញើ​ផ្ទាល់ខ្លួន"
 
 #. i18n: ectx: property (text), widget (QLabel, label_2)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:351
+#: kmailtransport/plugins/smtp/smtpsettings.ui:339
 #, kde-format
 msgid "Sender Address:"
 msgstr "អាសយដ្ឋាន​អ្នក​ផ្ញើ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, precommandLabel)
-#: kmailtransport/plugins/smtp/smtpsettings.ui:368
+#: kmailtransport/plugins/smtp/smtpsettings.ui:356
 #, kde-format
 msgid "Precommand:"
 msgstr "ពាក្យ​បញ្ជាមុន ៖"
@@ -444,13 +448,13 @@ msgctxt "Authentication method"
 msgid "Anonymous"
 msgstr "អនាមិក​"
 
-#: kmailtransport/transport.cpp:173
+#: kmailtransport/transport.cpp:172
 #, kde-format
 msgctxt "An unknown transport type"
 msgid "Unknown"
 msgstr "មិន​ស្គាល់​"
 
-#: kmailtransport/transport.cpp:227
+#: kmailtransport/transport.cpp:226
 #, kde-format
 msgid ""
 "KWallet is not available. It is strongly recommended to use KWallet for "
@@ -468,17 +472,17 @@ msgstr ""
 "ចូល​ដំណើរការ​ទៅ​កាន់​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ​ត្រូវ​បាន​ទទួល ។\n"
 "តើ​អ្នក​ពិត​ជា​ចង់ទុក​ពាក្យ​សម្ងាត់​សម្រាប់​ម៉ាស៊ីន​បម្រើ '%1' នៅ​ក្នុង​ឯកសារ​កំណត់​រចនាសម្ព័ន្ធ ឬ​ ?"
 
-#: kmailtransport/transport.cpp:235
+#: kmailtransport/transport.cpp:234
 #, kde-format
 msgid "KWallet Not Available"
 msgstr "មិនមាន KWallet ទេ"
 
-#: kmailtransport/transport.cpp:236
+#: kmailtransport/transport.cpp:235
 #, kde-format
 msgid "Store Password"
 msgstr "ទុក​ពាក្យ​សម្ងាត់"
 
-#: kmailtransport/transport.cpp:237
+#: kmailtransport/transport.cpp:236
 #, kde-format
 msgid "Do Not Store Password"
 msgstr "កុំ​ទុក​ពាក្យ​សម្ងាត់"
@@ -489,27 +493,27 @@ msgstr "កុំ​ទុក​ពាក្យ​សម្ងាត់"
 msgid "The outgoing account \"%1\" is not correctly configured."
 msgstr "ការ​បញ្ជូន​សំបុត្រ \"%1\" មិន​ត្រូវ​បាន​កំណត់​រចនាសម្ព័ន្ធ​ត្រឹមត្រូវ​ទេ ។"
 
-#: kmailtransport/transportmanager.cpp:246
+#: kmailtransport/transportmanager.cpp:247
 #, kde-format
 msgid "Default Transport"
 msgstr "ការ​​បញ្ជូន​លំនាំដើម​"
 
-#: kmailtransport/transportmanager.cpp:265
+#: kmailtransport/transportmanager.cpp:266
 #, kde-format
 msgid "You must create an outgoing account before sending."
 msgstr "អ្នក​ត្រូវ​តែ​បង្កើត​គណនី​ចេញ​សិន​មុន​នឹង​ផ្ញើ ។"
 
-#: kmailtransport/transportmanager.cpp:266
+#: kmailtransport/transportmanager.cpp:267
 #, kde-format
 msgid "Create Account Now?"
 msgstr "បង្កើត​គណនី​ឥឡូវ​នេះ​ឬ ?"
 
-#: kmailtransport/transportmanager.cpp:267
+#: kmailtransport/transportmanager.cpp:268
 #, kde-format
 msgid "Create Account Now"
 msgstr "បង្កើត​គណនី​ឥឡូវ​នេះ"
 
-#: kmailtransport/transportmanager.cpp:682
+#: kmailtransport/transportmanager.cpp:695
 #, kde-format
 msgid ""
 "The following mail transports store their passwords in an unencrypted "
@@ -524,17 +528,17 @@ msgstr ""
 "ដែល​ទុក​ទិន្នន័យ​​បម្រែ​បម្រួល​សម្រាប់​អ្នក​ស្ថិតនៅ​ក្នុង​ឯកសារ​ដែល​បានអ៊ិនគ្រីប​យ៉ាង​ខ្លាំង ។\n"
 "តើអ្នក​ចង់​ប្ដូរ​ពាក្យ​សម្ងាត់​របស់​អ្នក​ទៅ KWallet?"
 
-#: kmailtransport/transportmanager.cpp:688
+#: kmailtransport/transportmanager.cpp:701
 #, kde-format
 msgid "Question"
 msgstr "សំណួរ"
 
-#: kmailtransport/transportmanager.cpp:689
+#: kmailtransport/transportmanager.cpp:702
 #, kde-format
 msgid "Migrate"
 msgstr "ប្ដូរ"
 
-#: kmailtransport/transportmanager.cpp:689
+#: kmailtransport/transportmanager.cpp:702
 #, kde-format
 msgid "Keep"
 msgstr "រក្សា"
@@ -606,12 +610,12 @@ msgstr "ប្តូរ​ឈ្មោះ​"
 msgid "&Modify..."
 msgstr "កែប្រែ..."
 
-#: kmailtransport/widgets/addtransportdialogng.cpp:109
+#: kmailtransport/widgets/addtransportdialogng.cpp:108
 #, kde-format
 msgid "Create Outgoing Account"
 msgstr "បង្កើត​គណនី​​ចេញ​"
 
-#: kmailtransport/widgets/addtransportdialogng.cpp:112
+#: kmailtransport/widgets/addtransportdialogng.cpp:111
 #, kde-format
 msgctxt "create and configure a mail transport"
 msgid "Create and Configure"
