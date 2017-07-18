@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-07-17 05:18+0200\n"
+"POT-Creation-Date: 2017-07-18 05:14+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -30238,7 +30238,7 @@ msgid ""
 "Will save as RGB."
 msgstr "មិន​អាច​នាំចេញ​រូបភាព​ក្នុង %1 បាន​ទេ ។\n"
 
-#: plugins/impex/jpeg/kis_jpeg_export.cc:83
+#: plugins/impex/jpeg/kis_jpeg_export.cc:110
 #, kde-format
 msgid "JPEG Export Options"
 msgstr "ជម្រើស​នាំចេញ JPEG"
@@ -30463,20 +30463,20 @@ msgctxt "horizontal resolution"
 msgid "Resolution:"
 msgstr "គុណ​ភាព​បង្ហាញ ៖"
 
-#: plugins/impex/png/kis_png_export.cc:98
+#: plugins/impex/png/kis_png_export.cc:124
 #, kde-format
 msgctxt "@title:window"
 msgid "Krita PNG Export"
 msgstr ""
 
-#: plugins/impex/png/kis_png_export.cc:98
+#: plugins/impex/png/kis_png_export.cc:124
 #, kde-format
 msgid ""
 "You can only save 8 and 16 bits integer/channel grayscale and RGB images to "
 "PNG. Your image will be saved as 8 bits/channel RGB."
 msgstr ""
 
-#: plugins/impex/png/kis_png_export.cc:120
+#: plugins/impex/png/kis_png_export.cc:146
 #, kde-format
 msgid "PNG Export Options"
 msgstr "ជម្រើស​នាំចេញ PNG"
@@ -30574,15 +30574,55 @@ msgctxt "The file will save fast but will not be compressed a lot"
 msgid "Large file size"
 msgstr "ទំហំ​​ក្រឡាក្បឿង"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
+#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
 #: plugins/impex/png/kis_wdg_options_png.ui:110
+#, kde-format
+msgid "Use interlacing when publishing on the Internet."
+msgstr "ប្រើការ​ត្របាញ់​នៅពេល​បោះពុម្ព​ផ្សាយ​នៅ​លើ​អ៊ិនធើណិត ។"
+
+#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
+#: plugins/impex/png/kis_wdg_options_png.ui:114
+#, kde-format
+msgid ""
+"<p>Interlacing is useful if you intend to publish your image on the Internet."
+"<br>\n"
+"Enabling interlacing will cause the image to be displayed by the browser "
+"even while downloading.</p>"
+msgstr ""
+"<p>ត្របាញ់​មាន​ប្រយោជន៍​ ប្រសិនបើ​អ្នក​មាន​បំណង​បោះពុម្ពផ្សាយ​រូបភាព​របស់​អ្នក​នៅ​លើ​អ៊ិនធើណិត ។<br>\n"
+"បើក​ត្របាញ់​នឹង​បណ្ដាល​ឲ្យ​រូបភាព​បង្ហាញ​ក្នុង​កម្មវិធី​រុករក ខណៈពេល​ទាញ​​យក ។</p>"
+
+#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
+#: plugins/impex/png/kis_wdg_options_png.ui:117
+#, kde-format
+msgid "Interlacing"
+msgstr "ត្របាញ់"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, tryToSaveAsIndexed)
+#: plugins/impex/png/kis_wdg_options_png.ui:124
+#, kde-format
+msgid ""
+"Indexed PNG images are smaller. If you enabled this option, your image will "
+"be analyzed to see whether it is possible to save as an indexed PNG."
+msgstr ""
+"រូបភាព​ PNG ​ដែល​បាន​ធ្វើ​លិបិក្រម​កាន់​តែ​តូច ។ បើ​សិន​អ្នក​បើក​ជម្រើស​នេះ រូបភាព​របស់​អ្នក​នឹង​ត្រូវ​បាន​វិភាគ​"
+"ឲ្យ​មើល​ឃើញ​ថា​ តើ​អាច​នឹង​រក្សា​ទុក​ជា​ PNG ដែល​បាន​ធ្វើ​លិបិក្រម​ឬ​អត់ ។"
+
+#. i18n: ectx: property (text), widget (QCheckBox, tryToSaveAsIndexed)
+#: plugins/impex/png/kis_wdg_options_png.ui:127
+#, kde-format
+msgid "Save as indexed PNG, if possible"
+msgstr "រក្សា​ទុក​ជា​ PNG ដែល​បាន​ធ្វើ​លិបិក្រម បើ​សិន​អាច"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, alpha)
+#: plugins/impex/png/kis_wdg_options_png.ui:137
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:149
 #, kde-format
 msgid "Disable to get smaller files if your image has no transparency"
 msgstr "បិទ​ដើម្បី​ទទួល​បាន​ឯកសារតូច​ជាង ប្រិសនបើ​រូបភាព​របស់​អ្នកមិន​ថ្លា​ទេ"
 
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, alpha)
-#: plugins/impex/png/kis_wdg_options_png.ui:114
+#: plugins/impex/png/kis_wdg_options_png.ui:141
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:153
 #, kde-format
 msgid ""
@@ -30598,50 +30638,10 @@ msgstr ""
 "ឲ្យ​រក្សាទុក​ឆានែល​អាល់ហ្វា​ជា​និច្ច​ ។</p>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, alpha)
-#: plugins/impex/png/kis_wdg_options_png.ui:117
+#: plugins/impex/png/kis_wdg_options_png.ui:144
 #, kde-format
 msgid "Store alpha channel (transparency)"
 msgstr "ទុក​ឆានែល​អាល់ហ្វា (ភាព​ថ្លា)"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:127
-#, kde-format
-msgid "Use interlacing when publishing on the Internet."
-msgstr "ប្រើការ​ត្របាញ់​នៅពេល​បោះពុម្ព​ផ្សាយ​នៅ​លើ​អ៊ិនធើណិត ។"
-
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:131
-#, kde-format
-msgid ""
-"<p>Interlacing is useful if you intend to publish your image on the Internet."
-"<br>\n"
-"Enabling interlacing will cause the image to be displayed by the browser "
-"even while downloading.</p>"
-msgstr ""
-"<p>ត្របាញ់​មាន​ប្រយោជន៍​ ប្រសិនបើ​អ្នក​មាន​បំណង​បោះពុម្ពផ្សាយ​រូបភាព​របស់​អ្នក​នៅ​លើ​អ៊ិនធើណិត ។<br>\n"
-"បើក​ត្របាញ់​នឹង​បណ្ដាល​ឲ្យ​រូបភាព​បង្ហាញ​ក្នុង​កម្មវិធី​រុករក ខណៈពេល​ទាញ​​យក ។</p>"
-
-#. i18n: ectx: property (text), widget (QCheckBox, interlacing)
-#: plugins/impex/png/kis_wdg_options_png.ui:134
-#, kde-format
-msgid "Interlacing"
-msgstr "ត្របាញ់"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/impex/png/kis_wdg_options_png.ui:141
-#, kde-format
-msgid ""
-"Indexed PNG images are smaller. If you enabled this option, your image will "
-"be analyzed to see whether it is possible to save as an indexed PNG."
-msgstr ""
-"រូបភាព​ PNG ​ដែល​បាន​ធ្វើ​លិបិក្រម​កាន់​តែ​តូច ។ បើ​សិន​អ្នក​បើក​ជម្រើស​នេះ រូបភាព​របស់​អ្នក​នឹង​ត្រូវ​បាន​វិភាគ​"
-"ឲ្យ​មើល​ឃើញ​ថា​ តើ​អាច​នឹង​រក្សា​ទុក​ជា​ PNG ដែល​បាន​ធ្វើ​លិបិក្រម​ឬ​អត់ ។"
-
-#. i18n: ectx: property (text), widget (QCheckBox, tryToSaveAsIndexed)
-#: plugins/impex/png/kis_wdg_options_png.ui:144
-#, kde-format
-msgid "Save as indexed PNG, if possible"
-msgstr "រក្សា​ទុក​ជា​ PNG ដែល​បាន​ធ្វើ​លិបិក្រម បើ​សិន​អាច"
 
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #: plugins/impex/png/kis_wdg_options_png.ui:154
