@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-07-26 07:06+0200\n"
+"POT-Creation-Date: 2017-07-27 03:33+0200\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -216,27 +216,33 @@ msgid "Expiry Date Change Succeeded"
 msgstr "បាន​ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់​ដោយ​ជោគជ័យ"
 
 #: src/commands/changeownertrustcommand.cpp:247
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>An error occurred while trying to change the owner trust for <b>%1</b>:"
+#| "</p><p>%2</p>"
 msgid ""
-"<p>An error occurred while trying to change the owner trust for <b>%1</b>:</"
-"p><p>%2</p>"
+"<p>An error occurred while trying to change the certification trust for <b>"
+"%1</b>:</p><p>%2</p>"
 msgstr ""
 "<p>កំហុស​មួយ​បានកើត​ឡើង​ខណៈ​ពេល​ព្យាយាម​ផ្លាស់ប្ដូរ​ការ​ជឿជាក់​លើ​ម្ចាស់​សម្រាប់ <b>%1</b> ៖</p><p>"
 "%2</p>"
 
 #: src/commands/changeownertrustcommand.cpp:251
-#, kde-format
-msgid "Owner Trust Change Error"
+#, fuzzy, kde-format
+#| msgid "Owner Trust Change Error"
+msgid "Certification Trust Change Error"
 msgstr "កំហុស​ក្នុងកា​រផ្លាស់ប្ដូរ​ការ​ជឿជាក់​របស់​ម្ចាស់"
 
 #: src/commands/changeownertrustcommand.cpp:256
-#, kde-format
-msgid "Owner trust changed successfully."
+#, fuzzy, kde-format
+#| msgid "Owner trust changed successfully."
+msgid "Certification trust changed successfully."
 msgstr "បាន​ផ្លាស់ប្ដូរ​ការ​ជឿជាក់​ម្ចាស់​ដោយ​ជោគជ័យ ។"
 
 #: src/commands/changeownertrustcommand.cpp:257
-#, kde-format
-msgid "Owner Trust Change Succeeded"
+#, fuzzy, kde-format
+#| msgid "Owner Trust Change Succeeded"
+msgid "Certification Trust Change Succeeded"
 msgstr "បាន​ជោគជ័យ​ក្នុង​កា​រ​ផ្លាស់ប្ដូរ​ការ​ជឿជាក់​ម្ចាស់"
 
 #: src/commands/changepassphrasecommand.cpp:210
@@ -487,8 +493,8 @@ msgid ""
 msgstr ""
 "<qt><p>កំហុស​បាន​កើតឡើង ខណៈ​ដែល​កំពុង​ព្យាយាម​លុប​វិញ្ញាបនបត្រ ៖</p><p><b>%1</b></p></qt>"
 
-#: src/commands/dumpcertificatecommand.cpp:94
-#: src/commands/dumpcrlcachecommand.cpp:113
+#: src/commands/dumpcertificatecommand.cpp:95
+#: src/commands/dumpcrlcachecommand.cpp:114
 #, kde-format
 msgctxt "@action:button Update the log text widget"
 msgid "&Update"
@@ -1783,6 +1789,14 @@ msgstr "រូបរាង​លំនាំដើម​"
 msgid "Configure"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ"
 
+#: src/conf/cryptooperationsconfigwidget.cpp:120
+#: src/conf/cryptooperationsconfigwidget.cpp:200
+#: src/newcertificatewizard/newcertificatewizard.cpp:1696
+#: src/newcertificatewizard/newcertificatewizard.cpp:1706
+#, kde-format
+msgid "default"
+msgstr "លំនាំដើម"
+
 #: src/conf/cryptooperationsconfigwidget.cpp:123
 #, kde-format
 msgid ""
@@ -1796,63 +1810,69 @@ msgstr ""
 msgid "Apply profile"
 msgstr "ឯកសារ​មួយចំនួន"
 
-#: src/conf/cryptooperationsconfigwidget.cpp:152
-#, kde-format
-msgctxt "@info"
-msgid "The configuration profile is now applied."
-msgstr ""
-
 #: src/conf/cryptooperationsconfigwidget.cpp:153
 #, fuzzy, kde-format
 #| msgid "Configuration Error"
-msgid "Configuration profile applied"
+msgctxt "%1 is the name of the profile"
+msgid "The configuration profile \"%1\" was applied."
 msgstr "កំហុស​កំណត់​រចនាសម្ព័ន្ធ"
 
-#: src/conf/cryptooperationsconfigwidget.cpp:187
+#: src/conf/cryptooperationsconfigwidget.cpp:154
+#, fuzzy, kde-format
+#| msgid "Input file:"
+msgid "GnuPG Profile - Kleopatra"
+msgstr "ឯកសារ​បញ្ចូល​"
+
+#: src/conf/cryptooperationsconfigwidget.cpp:188
 #, fuzzy, kde-format
 #| msgid "EMail Operations"
 msgctxt "@title"
 msgid "General Operations"
 msgstr "​ប្រតិបត្តិ​ការ​អ៊ីមែល​ "
 
-#: src/conf/cryptooperationsconfigwidget.cpp:191
+#: src/conf/cryptooperationsconfigwidget.cpp:192
 #, fuzzy, kde-format
 #| msgid "Input file:"
 msgid "GnuPG Profile:"
 msgstr "ឯកសារ​បញ្ចូល​"
 
-#: src/conf/cryptooperationsconfigwidget.cpp:192
+#: src/conf/cryptooperationsconfigwidget.cpp:193
 #, kde-format
 msgid ""
 "A profile consists of various settings that can apply to multiple components "
 "of the GnuPG system."
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:221
+#: src/conf/cryptooperationsconfigwidget.cpp:205
+#, kde-format
+msgid "Apply"
+msgstr ""
+
+#: src/conf/cryptooperationsconfigwidget.cpp:222
 #, kde-format
 msgid "EMail Operations"
 msgstr "​ប្រតិបត្តិ​ការ​អ៊ីមែល​ "
 
-#: src/conf/cryptooperationsconfigwidget.cpp:223
+#: src/conf/cryptooperationsconfigwidget.cpp:224
 #, kde-format
 msgid ""
 "Don't confirm signing certificate if there is only one valid certificate for "
 "the identity"
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:224
+#: src/conf/cryptooperationsconfigwidget.cpp:225
 #, kde-format
 msgid ""
 "Don't confirm encryption certificates if there is exactly one valid "
 "certificate for each recipient"
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:230
+#: src/conf/cryptooperationsconfigwidget.cpp:231
 #, kde-format
 msgid "File Operations"
 msgstr "ប្រតិបត្តិ​ឯកសារ​"
 
-#: src/conf/cryptooperationsconfigwidget.cpp:232
+#: src/conf/cryptooperationsconfigwidget.cpp:233
 #, kde-format
 msgid ""
 "Create OpenPGP encrypted files with \".pgp\" file extensions instead of \"."
@@ -1860,14 +1880,14 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (AddASCIIArmor), group (FileOperations)
-#: src/conf/cryptooperationsconfigwidget.cpp:233
+#: src/conf/cryptooperationsconfigwidget.cpp:234
 #: src/kcfg/fileoperationspreferences.kcfg:25
 #, fuzzy, kde-format
 #| msgid "Sign and/or encrypt file(s)"
 msgid "Create signed or encrypted files as text files."
 msgstr "ចុះ​ហត្ថលេខា​ និង​​/​ឬ​ ​ឯកសារ​អ៊ិនគ្រីប​"
 
-#: src/conf/cryptooperationsconfigwidget.cpp:234
+#: src/conf/cryptooperationsconfigwidget.cpp:235
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1877,20 +1897,20 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (AutoDecryptVerify), group (FileOperations)
-#: src/conf/cryptooperationsconfigwidget.cpp:237
+#: src/conf/cryptooperationsconfigwidget.cpp:238
 #: src/kcfg/fileoperationspreferences.kcfg:15
 #, kde-format
 msgid ""
 "Automatically start operation based on input detection for decrypt/verify."
 msgstr ""
 
-#: src/conf/cryptooperationsconfigwidget.cpp:243
+#: src/conf/cryptooperationsconfigwidget.cpp:244
 #, fuzzy, kde-format
 #| msgid "Checksum program to use:"
 msgid "Checksum program to use when creating checksum files:"
 msgstr "កម្មវិធី​ឆេកសាំ​​ត្រូវ​ប្រើ​ ៖"
 
-#: src/conf/cryptooperationsconfigwidget.cpp:248
+#: src/conf/cryptooperationsconfigwidget.cpp:249
 #, kde-format
 msgid "Archive command to use when archiving files:"
 msgstr ""
@@ -2376,7 +2396,7 @@ msgstr ""
 "បង្កើត​ឆេកសាំ​ ៖​ ឯកសារ​បញ្ចូល​ត្រូវតែ​ជា​ឯកសារ​ឆេកសាំទាំង​អស់​​ ឬ​គ្រប់​ឯកសារ​ត្រូវតែ​បាន​​ឆេកសាំ មិនមែន​បញ្ចូល​"
 "ទាំងពីរ​ទេ  ។"
 
-#: src/crypto/createchecksumscontroller.cpp:349 src/mainwindow.cpp:624
+#: src/crypto/createchecksumscontroller.cpp:349 src/mainwindow.cpp:625
 #, kde-format
 msgid "Cancel"
 msgstr "​បោះបង់"
@@ -2625,20 +2645,20 @@ msgstr "វិញ្ញាបនបត្រ​"
 #, fuzzy, kde-format
 #| msgid "The signature is bad."
 msgctxt ""
-"VS-conforming is a German standard for restricted documents for which "
+"VS-NfD-conforming is a German standard for restricted documents for which "
 "special restrictions about algorithms apply.  The string states that a "
 "signature is compliant with that."
-msgid "The signature is VS-compliant."
+msgid "The signature is VS-NfD-compliant."
 msgstr "ហត្ថលេខា​នេះ​មិន​ត្រឹមត្រូវ ។"
 
 #: src/crypto/decryptverifytask.cpp:307
 #, fuzzy, kde-format
 #| msgid "The signature is bad."
 msgctxt ""
-"VS-conforming is a German standard for restricted documents for which "
+"VS-NfD-conforming is a German standard for restricted documents for which "
 "special restrictions about algorithms apply.  The string states that a "
 "signature is not compliant with that."
-msgid "The signature <b>is not</b> VS-compliant."
+msgid "The signature <b>is not</b> VS-NfD-compliant."
 msgstr "ហត្ថលេខា​នេះ​មិន​ត្រឹមត្រូវ ។"
 
 #: src/crypto/decryptverifytask.cpp:323 src/crypto/signencryptfilestask.cpp:71
@@ -2776,22 +2796,24 @@ msgid ""
 msgstr "<p>អាសយដ្ឋាន​របស់​អ្នកផ្ញើ %1 មិន​ត្រូវ​បានទុក​នៅ​ក្នុង​វិញ្ញាបនបត្រ​ទេ ។​ បាន​ទុក​ ៖ %2</p>"
 
 #: src/crypto/decryptverifytask.cpp:556
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The signature is bad."
 msgctxt ""
-"VS-conforming is a German standard for restricted documents for which "
+"VS-NfD-conforming is a German standard for restricted documents for which "
 "special restrictions about algorithms apply.  The string states that the "
 "decryption is compliant with that."
-msgid "The decryption is VS-compliant."
-msgstr ""
+msgid "The decryption is VS-NfD-compliant."
+msgstr "ហត្ថលេខា​នេះ​មិន​ត្រឹមត្រូវ ។"
 
 #: src/crypto/decryptverifytask.cpp:558
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "The signature is bad."
 msgctxt ""
-"VS-conforming is a German standard for restricted documents for which "
+"VS-NfD-conforming is a German standard for restricted documents for which "
 "special restrictions about algorithms apply.  The string states that the "
 "decryption is compliant with that."
-msgid "The decryption <b>is not</b> VS-compliant."
-msgstr ""
+msgid "The decryption <b>is not</b> VS-NfD-compliant."
+msgstr "ហត្ថលេខា​នេះ​មិន​ត្រឹមត្រូវ ។"
 
 #: src/crypto/decryptverifytask.cpp:564
 #, kde-format
@@ -3279,22 +3301,22 @@ msgstr "សូម​ផ្ទៀងផ្ទាត់​ថា​បាន​ជ
 #: src/crypto/gui/signencryptfileswizard.cpp:303
 #, kde-format
 msgctxt ""
-"VS-conforming is a German standard for restricted documents for which "
+"VS-NfD-conforming is a German standard for restricted documents for which "
 "special restrictions about algorithms apply.  The string states that all "
 "cryptographic operations necessary for the communication are compliant with "
 "that."
-msgid "VS-compliant communication possible."
+msgid "VS-NfD-compliant communication possible."
 msgstr ""
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:306
 #: src/crypto/gui/signencryptfileswizard.cpp:305
 #, kde-format
 msgctxt ""
-"VS-conforming is a German standard for restricted documents for which "
+"VS-NfD-conforming is a German standard for restricted documents for which "
 "special restrictions about algorithms apply.  The string states that all "
 "cryptographic operations necessary for the communication are compliant with "
 "that."
-msgid "VS-compliant communication not possible."
+msgid "VS-NfD-compliant communication not possible."
 msgstr ""
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:388
@@ -3476,7 +3498,7 @@ msgid "Sign as:"
 msgstr "ចុះហត្ថលេខា​ឯកសារ"
 
 #: src/crypto/gui/signencryptwidget.cpp:130
-#: src/crypto/gui/signencryptwidget.cpp:314
+#: src/crypto/gui/signencryptwidget.cpp:313
 #, kde-format
 msgctxt "@action"
 msgid "Encrypt"
@@ -3510,7 +3532,7 @@ msgid ""
 "Even if you pick a very strong password."
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:312
+#: src/crypto/gui/signencryptwidget.cpp:311
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Sign && Encrypt"
@@ -3518,7 +3540,7 @@ msgctxt "@action"
 msgid "Sign / Encrypt"
 msgstr "ចុះហត្ថលេខា និង​អ៊ិនគ្រីប​"
 
-#: src/crypto/gui/signencryptwidget.cpp:316
+#: src/crypto/gui/signencryptwidget.cpp:315
 #, kde-format
 msgctxt "@action"
 msgid "Sign"
@@ -3844,14 +3866,14 @@ msgid "(optional)"
 msgstr "(ជម្រើស)"
 
 #: src/dialogs/adduseriddialog.cpp:301
-#: src/newcertificatewizard/newcertificatewizard.cpp:1544
+#: src/newcertificatewizard/newcertificatewizard.cpp:1545
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is required, but empty."
 msgstr "<interface>%1</interface> ត្រូវ​​​បាន​ទាមទារ ប៉ុន្តែ​វា​ទទេ ។​"
 
 #: src/dialogs/adduseriddialog.cpp:303
-#: src/newcertificatewizard/newcertificatewizard.cpp:1546
+#: src/newcertificatewizard/newcertificatewizard.cpp:1547
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3862,14 +3884,14 @@ msgstr ""
 "<icode>%2</icode>"
 
 #: src/dialogs/adduseriddialog.cpp:309
-#: src/newcertificatewizard/newcertificatewizard.cpp:1552
+#: src/newcertificatewizard/newcertificatewizard.cpp:1553
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is incomplete."
 msgstr "<interface>%1</interface> មិន​ពេញលេញ ។"
 
 #: src/dialogs/adduseriddialog.cpp:311
-#: src/newcertificatewizard/newcertificatewizard.cpp:1554
+#: src/newcertificatewizard/newcertificatewizard.cpp:1555
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3879,14 +3901,14 @@ msgstr ""
 "<interface>%1</interface> មិន​ពេញលេញ​ ។​<nl/>ច្បាប់​គ្រប់គ្រង​មូលដ្ឋាន​ ៖​ <icode>%2</icode>"
 
 #: src/dialogs/adduseriddialog.cpp:316
-#: src/newcertificatewizard/newcertificatewizard.cpp:1559
+#: src/newcertificatewizard/newcertificatewizard.cpp:1560
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<interface>%1</interface> is invalid."
 msgstr "<interface>%1</interface> មិនត្រឹមត្រូវ​ ។"
 
 #: src/dialogs/adduseriddialog.cpp:318
-#: src/newcertificatewizard/newcertificatewizard.cpp:1561
+#: src/newcertificatewizard/newcertificatewizard.cpp:1562
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -4274,7 +4296,7 @@ msgstr ""
 "ស្នាម​ម្រាមដៃ ​៖​ %2"
 
 #: src/dialogs/certifycertificatedialog.cpp:200
-#: src/newcertificatewizard/newcertificatewizard.cpp:1615
+#: src/newcertificatewizard/newcertificatewizard.cpp:1618
 #, kde-format
 msgid "Certify"
 msgstr "បញ្ជាក់"
@@ -4561,7 +4583,7 @@ msgid "ASCII armor"
 msgstr "ASCII armor"
 
 #: src/dialogs/gencardkeydialog.cpp:78
-#: src/newcertificatewizard/newcertificatewizard.cpp:1676
+#: src/newcertificatewizard/newcertificatewizard.cpp:1680
 #, kde-format
 msgid "Name:"
 msgstr "ឈ្មោះ ៖"
@@ -5634,7 +5656,7 @@ msgstr ""
 msgid "Really Quit?"
 msgstr "ពិត​ជា​ចេញ​ឬ ?"
 
-#: src/mainwindow.cpp:198
+#: src/mainwindow.cpp:199
 #, kde-format
 msgctxt ""
 "Compliance means that GnuPG is running in a more restricted mode e.g. to "
@@ -5642,7 +5664,7 @@ msgctxt ""
 msgid "Compliance: %1"
 msgstr ""
 
-#: src/mainwindow.cpp:217
+#: src/mainwindow.cpp:218
 #, kde-format
 msgid ""
 "Could not start the GnuPG Log Viewer (kwatchgnupg). Please check your "
@@ -5651,12 +5673,12 @@ msgstr ""
 "មិនអាច​ចាប់ផ្ដើម​កម្មវិធី​មើល​កំណត់ហេតុ​របស់ GnuPG បាន​ទេ (kwatchgnupg) ។ សូម​ពិនិត្យ​មើល​កា​រដំឡើង​របស់​"
 "អ្នក !"
 
-#: src/mainwindow.cpp:219
+#: src/mainwindow.cpp:220
 #, kde-format
 msgid "Error Starting KWatchGnuPG"
 msgstr "កំហុស​ក្នុងកា​រចាប់ផ្ដើម KWatchGnuPG"
 
-#: src/mainwindow.cpp:233
+#: src/mainwindow.cpp:234
 #, kde-format
 msgctxt ""
 "The Gpg4win compendium is only availableat this point (24.7.2017) in german "
@@ -5664,58 +5686,58 @@ msgctxt ""
 msgid "gpg4win-compendium-en.pdf"
 msgstr ""
 
-#: src/mainwindow.cpp:394
+#: src/mainwindow.cpp:395
 #, kde-format
 msgid "GnuPG Log Viewer"
 msgstr "កម្មវិធី​មើល​កំណត់​ហេតុ​របស់ GnuPG"
 
-#: src/mainwindow.cpp:400
+#: src/mainwindow.cpp:401
 #, kde-format
 msgid "Check for updates"
 msgstr ""
 
-#: src/mainwindow.cpp:404
+#: src/mainwindow.cpp:405
 #, kde-format
 msgid "Gpg4win Compendium"
 msgstr ""
 
-#: src/mainwindow.cpp:411
+#: src/mainwindow.cpp:412
 #, kde-format
 msgid "Configure GnuPG Backend..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្នែក​ខាង​ក្រោយ​របស់ GnuPG​..."
 
-#: src/mainwindow.cpp:417
+#: src/mainwindow.cpp:418
 #, kde-format
 msgid "Perform Self-Test"
 msgstr "អនុវត្ត​ការ​សាកល្បង​ដោយ​ខ្លួនឯង"
 
-#: src/mainwindow.cpp:421
+#: src/mainwindow.cpp:422
 #, fuzzy, kde-format
 #| msgid "SmartCard"
 msgid "Manage Smartcards"
 msgstr "​SmartCard"
 
-#: src/mainwindow.cpp:422
+#: src/mainwindow.cpp:423
 #, kde-format
 msgid "Edit or initialize a crypto hardware token."
 msgstr ""
 
-#: src/mainwindow.cpp:440
+#: src/mainwindow.cpp:441
 #, kde-format
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwindow.cpp:461
+#: src/mainwindow.cpp:462
 #, kde-format
 msgid "Could not configure the cryptography backend (gpgconf tool not found)"
 msgstr "មិន​អាច​កំណត់​រចនាសម្ព័ន្ធ​ផ្នែក​ខាង​ក្រោយ​កា​រគ្រីប (រក​មិន​ឃើញ​ឧបករណ៍ gpgconf​)"
 
-#: src/mainwindow.cpp:461
+#: src/mainwindow.cpp:462
 #, kde-format
 msgid "Configuration Error"
 msgstr "កំហុស​កំណត់​រចនាសម្ព័ន្ធ"
 
-#: src/mainwindow.cpp:496
+#: src/mainwindow.cpp:497
 #, kde-format
 msgid ""
 "There are still some background operations ongoing. These will be terminated "
@@ -5724,28 +5746,28 @@ msgstr ""
 "នៅ​មាន​ប្រតិបត្តិការ​ផ្ទៃ​ខាងក្រោយ​មួយ​ចំនួន​កំពុង​ធ្វើ​បន្ត ។ ប្រតិបត្តិការ​ទាំង​នេះ នឹង​ត្រូវបាន​បញ្ចប់ នៅពេល​"
 "ដែល​បិទ​បង្អួច ។ បញ្ចប់​ដំណើរការ​ឬ ?"
 
-#: src/mainwindow.cpp:499
+#: src/mainwindow.cpp:500
 #, kde-format
 msgid "Ongoing Background Tasks"
 msgstr "ភារកិច្ច​ផ្ទៃខាងក្រោយ​ធ្វើ​បន្ត"
 
-#: src/mainwindow.cpp:608 src/view/keylistcontroller.cpp:406
+#: src/mainwindow.cpp:609 src/view/keylistcontroller.cpp:406
 #, kde-format
 msgid "Sign/Encrypt..."
 msgstr "ចុះហត្ថលេខា/អ៊ីនគ្រិប..."
 
-#: src/mainwindow.cpp:609 src/utils/clipboardmenu.cpp:49
+#: src/mainwindow.cpp:610 src/utils/clipboardmenu.cpp:49
 #: src/view/keylistcontroller.cpp:402
 #, kde-format
 msgid "Decrypt/Verify..."
 msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់..."
 
-#: src/mainwindow.cpp:614 src/view/welcomewidget.cpp:87
+#: src/mainwindow.cpp:615 src/view/welcomewidget.cpp:87
 #, kde-format
 msgid "Import Certificates"
 msgstr "នាំចូល​វិញ្ញាបនបត្រ​"
 
-#: src/mainwindow.cpp:615
+#: src/mainwindow.cpp:616
 #, kde-format
 msgid "Import CRLs"
 msgstr "នាំចូល​ CRL"
@@ -5825,7 +5847,7 @@ msgstr "វិញ្ញាបនបត្រ​"
 
 #. i18n: ectx: attribute (title), widget (QWidget, personalTab)
 #: src/newcertificatewizard/advancedsettingsdialog.ui:250
-#: src/newcertificatewizard/newcertificatewizard.cpp:1932
+#: src/newcertificatewizard/newcertificatewizard.cpp:1943
 #, kde-format
 msgid "Personal Details"
 msgstr "សេចក្ដី​លម្អិត​ផ្ទាល់ខ្លួន"
@@ -6165,140 +6187,134 @@ msgctxt "@title"
 msgid "Certificate Creation Wizard"
 msgstr "អ្នក​ជំនួយការ​បង្កើត​វិញ្ញាបនបត្រ"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1607
+#: src/newcertificatewizard/newcertificatewizard.cpp:1610
 #, kde-format
 msgid "Sign"
 msgstr "​ចុះហត្ថលេខា"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1611
-#: src/newcertificatewizard/newcertificatewizard.cpp:1640
+#: src/newcertificatewizard/newcertificatewizard.cpp:1614
+#: src/newcertificatewizard/newcertificatewizard.cpp:1643
 #, kde-format
 msgid "Encrypt"
 msgstr "អ៊ីនគ្រិប"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1618
+#: src/newcertificatewizard/newcertificatewizard.cpp:1621
 #, kde-format
 msgid "Authenticate"
 msgstr "ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1678
+#: src/newcertificatewizard/newcertificatewizard.cpp:1684
 #, kde-format
 msgid "Email Address:"
 msgstr "អាសយដ្ឋាន​អ៊ីមែល ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1680
+#: src/newcertificatewizard/newcertificatewizard.cpp:1687
 #, kde-format
 msgid "Subject-DN:"
 msgstr "ប្រធាន​បទ DN ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1683
+#: src/newcertificatewizard/newcertificatewizard.cpp:1690
 #, kde-format
 msgid "Key Type:"
 msgstr "ប្រភេទ​សោ ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1685
-#: src/newcertificatewizard/newcertificatewizard.cpp:1695
+#: src/newcertificatewizard/newcertificatewizard.cpp:1692
+#: src/newcertificatewizard/newcertificatewizard.cpp:1702
 #, fuzzy, kde-format
 #| msgid "Key Type:"
 msgid "Key Curve:"
 msgstr "ប្រភេទ​សោ ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1687
-#: src/newcertificatewizard/newcertificatewizard.cpp:1689
+#: src/newcertificatewizard/newcertificatewizard.cpp:1694
+#: src/newcertificatewizard/newcertificatewizard.cpp:1696
 #, kde-format
 msgid "Key Strength:"
 msgstr "កម្លាំង​សោ ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1687
-#: src/newcertificatewizard/newcertificatewizard.cpp:1697
+#: src/newcertificatewizard/newcertificatewizard.cpp:1694
+#: src/newcertificatewizard/newcertificatewizard.cpp:1704
 #, kde-format
 msgid "1 bit"
 msgid_plural "%1 bits"
 msgstr[0] "%1 ប៊ីត​"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1689
-#: src/newcertificatewizard/newcertificatewizard.cpp:1699
-#, kde-format
-msgid "default"
-msgstr "លំនាំដើម"
-
-#: src/newcertificatewizard/newcertificatewizard.cpp:1691
+#: src/newcertificatewizard/newcertificatewizard.cpp:1698
 #, kde-format
 msgid "Certificate Usage:"
 msgstr "ការ​ប្រើប្រាស់​វិញ្ញាបនបត្រ ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1691
-#: src/newcertificatewizard/newcertificatewizard.cpp:1701
+#: src/newcertificatewizard/newcertificatewizard.cpp:1698
+#: src/newcertificatewizard/newcertificatewizard.cpp:1708
 #, kde-format
 msgctxt "separator for key usages"
 msgid ",&nbsp;"
 msgstr ",&nbsp;"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1693
+#: src/newcertificatewizard/newcertificatewizard.cpp:1700
 #, kde-format
 msgid "Subkey Type:"
 msgstr "ប្រភេទ​សោរង ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1697
-#: src/newcertificatewizard/newcertificatewizard.cpp:1699
+#: src/newcertificatewizard/newcertificatewizard.cpp:1704
+#: src/newcertificatewizard/newcertificatewizard.cpp:1706
 #, kde-format
 msgid "Subkey Strength:"
 msgstr "កម្លាំង​សោ​រង ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1701
+#: src/newcertificatewizard/newcertificatewizard.cpp:1708
 #, kde-format
 msgid "Subkey Usage:"
 msgstr "កា​រ​ប្រើ​ប្រាស់​សោ​រង ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1705
+#: src/newcertificatewizard/newcertificatewizard.cpp:1712
 #, kde-format
 msgid "Valid Until:"
 msgstr "មាន​សុពលភាព​ដល់ ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1709
+#: src/newcertificatewizard/newcertificatewizard.cpp:1716
 #, kde-format
 msgid "Add. Email Address:"
 msgstr "បន្ថែម​អាសយដ្ឋាន​អ៊ីមែល ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1712
+#: src/newcertificatewizard/newcertificatewizard.cpp:1719
 #, kde-format
 msgid "DNS Name:"
 msgstr "ឈ្មោះ DNS ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1715
+#: src/newcertificatewizard/newcertificatewizard.cpp:1722
 #, kde-format
 msgid "URI:"
 msgstr "URI ៖"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1791
+#: src/newcertificatewizard/newcertificatewizard.cpp:1802
 #, kde-format
 msgctxt "%2: some admin-supplied text, %1: key size in bits"
 msgid "%2 (1 bit; default)"
 msgid_plural "%2 (%1 bits; default)"
 msgstr[0] "%2 (%1 ប៊ីត​  លំនាំដើម​​)​"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1792
+#: src/newcertificatewizard/newcertificatewizard.cpp:1803
 #, kde-format
 msgctxt "%2: some admin-supplied text, %1: key size in bits"
 msgid "%2 (1 bit)"
 msgid_plural "%2 (%1 bits)"
 msgstr[0] "%2 (%1 ប៊ីត​​)"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1794
+#: src/newcertificatewizard/newcertificatewizard.cpp:1805
 #, kde-format
 msgctxt "%1: key size in bits"
 msgid "1 bit (default)"
 msgid_plural "%1 bits (default)"
 msgstr[0] "%1 ប៊ីត​​ (លំនាំដើម​​)"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1795
+#: src/newcertificatewizard/newcertificatewizard.cpp:1806
 #, kde-format
 msgctxt "%1: key size in bits"
 msgid "1 bit"
 msgid_plural "%1 bits"
 msgstr[0] "%1 ប៊ីត​"
 
-#: src/newcertificatewizard/newcertificatewizard.cpp:1937
+#: src/newcertificatewizard/newcertificatewizard.cpp:1948
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Adding more than one User ID is not yet implemented."
@@ -7703,8 +7719,9 @@ msgid "Change Expiry Date..."
 msgstr "ផ្លាស់ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់..."
 
 #: src/view/keylistcontroller.cpp:448
-#, kde-format
-msgid "Change Owner Trust..."
+#, fuzzy, kde-format
+#| msgid "Change Owner Trust..."
+msgid "Change Certification Trust..."
 msgstr "ផ្លាស់ប្ដូរ​កា​ជឿជាក់​លើ​ម្ចាស់..."
 
 #: src/view/keylistcontroller.cpp:452
