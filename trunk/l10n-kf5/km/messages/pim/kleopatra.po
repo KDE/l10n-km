@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-08-20 03:31+0200\n"
+"POT-Creation-Date: 2017-08-22 03:36+0200\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -4631,9 +4631,10 @@ msgstr "នាំចូល"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, LookupCertificatesDialog)
 #: src/dialogs/lookupcertificatesdialog.ui:13
-#, kde-format
-msgid "Certificate Server Certificate Lookup"
-msgstr "រកមើល​វិញ្ញាបនបត្រ​ម៉ាស៊ីន​បម្រើ​​វិញ្ញាបនបត្រ​​"
+#, fuzzy, kde-format
+#| msgid "Lookup Certificates on Server..."
+msgid "Lookup on Server"
+msgstr "រកមើល​វិញ្ញាបនបត្រ​លើ​ម៉ាស៊ីន​បម្រើ..."
 
 #. i18n: ectx: property (text), widget (QPushButton, findPB)
 #: src/dialogs/lookupcertificatesdialog.ui:24
@@ -5762,7 +5763,7 @@ msgstr "ចុះហត្ថលេខា/អ៊ីនគ្រិប..."
 msgid "Decrypt/Verify..."
 msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់..."
 
-#: src/mainwindow.cpp:614 src/view/welcomewidget.cpp:87
+#: src/mainwindow.cpp:614
 #, kde-format
 msgid "Import Certificates"
 msgstr "នាំចូល​វិញ្ញាបនបត្រ​"
@@ -5878,15 +5879,18 @@ msgstr "URIs"
 
 #. i18n: ectx: property (title), widget (QWizardPage, Kleo::NewCertificateUi::ChooseProtocolPage)
 #: src/newcertificatewizard/chooseprotocolpage.ui:13
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Choose Certificate Format"
 msgctxt "@title"
-msgid "Choose Certificate Format"
+msgid "Choose Format"
 msgstr "ជ្រើស​ទ្រង់ទ្រាយ​វិញ្ញាបនបត្រ"
 
 #. i18n: ectx: property (subTitle), widget (QWizardPage, Kleo::NewCertificateUi::ChooseProtocolPage)
 #: src/newcertificatewizard/chooseprotocolpage.ui:16
-#, kde-format
-msgid "Please choose which type of certificate you want to create. "
+#, fuzzy, kde-format
+#| msgid "Please choose which type of certificate you want to create. "
+msgid "Please choose which type you want to create. "
 msgstr "សូម​ជ្រើស​ប្រភេទ​វិញ្ញាបនបត្រ​ណាមួយ​ដែល​អ្នក​ចង់​បង្កើត ។ "
 
 #. i18n: ectx: property (text), widget (QCommandLinkButton, pgpCLB)
@@ -5932,10 +5936,13 @@ msgstr "បញ្ចូល​សេចក្ដី​លម្អិត"
 
 #. i18n: ectx: property (subTitle), widget (QWizardPage, Kleo::NewCertificateUi::EnterDetailsPage)
 #: src/newcertificatewizard/enterdetailspage.ui:8
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Please enter your personal details below. If you want more control over "
+#| "the certificate parameters, click on the Advanced Settings button."
 msgid ""
 "Please enter your personal details below. If you want more control over the "
-"certificate parameters, click on the Advanced Settings button."
+"parameters, click on the Advanced Settings button."
 msgstr ""
 "សូម​បញ្ចូល​សេចក្ដី​លម្អិត​ផ្ទាល់ខ្លួន​របស់​អ្នក​ខាង​ក្រោម ។ ប្រសិន​បើ​អ្នក​ចង់​ត្រួតពិនិត្យ​បន្ថែម​លើ​ប៉ារ៉ាម៉ែត្រ​"
 "វិញ្ញាបនបត្រ ចុច​លើ​ប៊ូតុង​កា​រកំណត់​កម្រិត​ខ្ពស់ ។"
@@ -5966,31 +5973,20 @@ msgstr "កា​រកំណត់​កម្រិត​ខ្ពស់..."
 
 #. i18n: ectx: property (title), widget (QWizardPage, Kleo::NewCertificateUi::KeyCreationPage)
 #: src/newcertificatewizard/keycreationpage.ui:5
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Creating Key..."
 msgctxt "@title"
-msgid "Creating Key..."
+msgid "Creating Key Pair..."
 msgstr "កំពុង​បង្កើត​សោ..."
 
-#. i18n: ectx: property (subTitle), widget (QWizardPage, Kleo::NewCertificateUi::KeyCreationPage)
-#: src/newcertificatewizard/keycreationpage.ui:8
-#, kde-format
-msgid "Your key is being created."
-msgstr "សោ​របស់​អ្នក​កំពុង​ត្រូ​វបាន​បង្កើត ។"
-
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: src/newcertificatewizard/keycreationpage.ui:17
+#: src/newcertificatewizard/keycreationpage.ui:14
 #, kde-format
 msgid ""
-"The process of creating a key requires large amounts of random numbers. To "
-"foster this process, you can use the entry field below to enter some "
-"gibberish. The text itself does not matter - only the inter-character "
-"timing. You can also move this window around with your mouse, or start some "
-"disk-intensive application."
+"The process of creating a key requires large amounts of random numbers. This "
+"may require several minutes..."
 msgstr ""
-"ដំណើរការ​បង្កើត​សោ​ត្រូវការ​លេខ​ចៃដន្យ​មួយ​ចំនួន​ធំ ។ ដើម្បី​ផ្គត់ផ្គង់​ដំណើរការ​នេះ អ្នក​អាច​ប្រើ​វាល​ធាតុ​ខាង​"
-"ក្រោម​ដើម្បី​បញ្ចូល​អ្វីឥតបានការ ។ អត្ថបទ​ខ្លួន​វាផ្ទាល់​នឹង​មិន​ត្រូវ​បានប្រើ​ទាល់​តែ​សោះ មានតែ​ការ​កំណត់​"
-"ពេលវេលា​តួអក្សរ​ខាង​ក្នុង​ប៉ុណ្ណោះ ។ អ្នក​ក៏​អាច​ផ្លាស់ទី​បង្អួច​នេះ​ជុំវិញ​ដោយ​ប្រើ​កណ្ដុរ​របស់​អ្នក ឬ​ចាប់ផ្ដើម​"
-"កម្មវិធី​ដែល​ស្គាល់​ថា​ស​មួយ​ចំនួន ។"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:404
 #, kde-format
@@ -6008,14 +6004,17 @@ msgid "new uri"
 msgstr "uri ថ្មី"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:798
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Create Key"
 msgctxt "@action"
-msgid "Create Key"
+msgid "Create"
 msgstr "បង្កើត​សោ"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:855
-#, kde-format
-msgid "Could not start certificate creation: %1"
+#, fuzzy, kde-format
+#| msgid "Could not start certificate creation: %1"
+msgid "Could not start key pair creation: %1"
 msgstr "មិន​អាច​ចាប់ផ្ដើម​បង្កើត​វិញ្ញាបនបត្រ ៖ %1"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:871
@@ -6024,14 +6023,18 @@ msgid "Operation canceled."
 msgstr "បាន​បោះបង់ប្រតិបត្តិការ ។"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:872
-#, kde-format
-msgid "Could not create certificate: %1"
-msgstr "មិន​អាច​បង្កើត​វិញ្ញាបនបត្រ ៖ %1 បាន​ទេ"
+#, fuzzy, kde-format
+#| msgid "Could not create socket: %1"
+msgid "Could not create key pair: %1"
+msgstr "មិនអាច​បង្កើត​រន្ធ ៖ %1"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:879
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Certificate created successfully.\n"
+#| "Fingerprint: %1"
 msgid ""
-"Certificate created successfully.\n"
+"Key pair created successfully.\n"
 "Fingerprint: %1"
 msgstr ""
 "បាន​បង្កើត​វិញ្ញាបនបត្រដោយ​ជោគជ័យ ។\n"
@@ -6043,8 +6046,9 @@ msgid "Could not write output file %1: %2"
 msgstr "មិន​អាច​សរសេរ​​ឯកសារ​លទ្ធផល %1 ៖ %2"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:893
-#, kde-format
-msgid "Certificate created successfully."
+#, fuzzy, kde-format
+#| msgid "Certificate created successfully."
+msgid "Key pair created successfully."
 msgstr "បាន​បង្កើត​វិញ្ញាបនបត្រ​ដោយ​ជោគជ័យ ។"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:934
@@ -6134,13 +6138,15 @@ msgstr ""
 "សូម​អរគុណ\n"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:1061
-#, kde-format
-msgid "My new OpenPGP certificate"
+#, fuzzy, kde-format
+#| msgid "My new OpenPGP certificate"
+msgid "My new public OpenPGP key"
 msgstr "វិញ្ញាបនបត្រ OpenPGP ថ្មី​របស់​ខ្ញុំ"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:1062
-#, kde-format
-msgid "Please find attached my new OpenPGP certificate."
+#, fuzzy, kde-format
+#| msgid "Please find attached my new OpenPGP certificate."
+msgid "Please find attached my new public OpenPGP key."
 msgstr "សូម​រក​វិញ្ញាបនបត្រ OpenPGP ថ្មី​របស់​ខ្ញុំ​ដែល​បានភ្ជាប់ជា​មួយ ។"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:1098
@@ -6182,9 +6188,11 @@ msgid "Certification Request About To Be Deleted"
 msgstr "សំណើ​វិញ្ញាបនបត្រ​រៀបនឹង​ត្រូវ​បាន​លុប"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:1186
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Certificate Creation Wizard"
 msgctxt "@title"
-msgid "Certificate Creation Wizard"
+msgid "Key Pair Creation Wizard"
 msgstr "អ្នក​ជំនួយការ​បង្កើត​វិញ្ញាបនបត្រ"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:1610
@@ -6239,9 +6247,10 @@ msgid_plural "%1 bits"
 msgstr[0] "%1 ប៊ីត​"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:1698
-#, kde-format
-msgid "Certificate Usage:"
-msgstr "ការ​ប្រើប្រាស់​វិញ្ញាបនបត្រ ៖"
+#, fuzzy, kde-format
+#| msgid "Subkey Usage:"
+msgid "Usage:"
+msgstr "កា​រ​ប្រើ​ប្រាស់​សោ​រង ៖"
 
 #: src/newcertificatewizard/newcertificatewizard.cpp:1698
 #: src/newcertificatewizard/newcertificatewizard.cpp:1708
@@ -6322,17 +6331,20 @@ msgstr "ការ​បន្ថែម​លេខ​សម្គាល់​អ
 
 #. i18n: ectx: property (title), widget (QWizardPage, Kleo::NewCertificateUi::OverviewPage)
 #: src/newcertificatewizard/overviewpage.ui:5
-#, kde-format
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Review Certificate Parameters"
 msgctxt "@title"
-msgid "Review Certificate Parameters"
+msgid "Review Parameters"
 msgstr "ពិនិត្យ​ប៉ារ៉ាម៉ែត្រ​វិញ្ញាបនបត្រ​ឡើង​វិញ"
 
 #. i18n: ectx: property (subTitle), widget (QWizardPage, Kleo::NewCertificateUi::OverviewPage)
 #: src/newcertificatewizard/overviewpage.ui:8
-#, kde-format
-msgid ""
-"Please review the certificate parameters before proceeding to create the "
-"certificate."
+#, fuzzy, kde-format
+#| msgid ""
+#| "Please review the certificate parameters before proceeding to create the "
+#| "certificate."
+msgid "Please review the parameters before proceeding."
 msgstr "សូម​ពិនិត្យមើល​ប៉ារ៉ាម៉ែត្រ​វិញ្ញាបនបត្រ​មុននឹង​បន្ត​បង្កើត​វិញ្ញាបនបត្រ ។"
 
 #. i18n: ectx: property (text), widget (QCheckBox, showAllDetailsCB)
@@ -6381,14 +6393,16 @@ msgstr "ធ្វើ​ការ​បម្រុង​ទុក​នៃ​គ
 
 #. i18n: ectx: property (text), widget (QPushButton, sendCertificateByEMailPB)
 #: src/newcertificatewizard/resultpage.ui:75
-#, kde-format
-msgid "Send Certificate By EMail..."
+#, fuzzy, kde-format
+#| msgid "Send Certificate By EMail..."
+msgid "Send Public Key By EMail..."
 msgstr "ផ្ញើ​វិញ្ញាបនបត្រ​​តាម​អ៊ីមែល​​..."
 
 #. i18n: ectx: property (text), widget (QPushButton, uploadToKeyserverPB)
 #: src/newcertificatewizard/resultpage.ui:82
-#, kde-format
-msgid "Upload Certificate To Directory Service..."
+#, fuzzy, kde-format
+#| msgid "Upload Certificate To Directory Service..."
+msgid "Upload Public Key To Directory Service..."
 msgstr "ផ្ទុក​វិញ្ញាបនបត្រ​ទៅ​សេវា​ថត...​"
 
 #. i18n: ectx: property (text), widget (QPushButton, createRevocationRequestPB)
@@ -7577,11 +7591,11 @@ msgstr "មិន​អាច​យក​ឯកសារ​ %1 ៖ %2 ចេញ�
 msgid "Loading certificate cache..."
 msgstr "កំពុង​ឃ្លាំង​សម្ងាត់​វិញ្ញាបនបត្រ​..."
 
-#: src/view/keylistcontroller.cpp:374
+#: src/view/keylistcontroller.cpp:374 src/view/welcomewidget.cpp:83
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Create Key"
-msgid "New Keypair..."
+msgid "New Key Pair..."
 msgstr "បង្កើត​សោ"
 
 #: src/view/keylistcontroller.cpp:378
@@ -7633,7 +7647,7 @@ msgstr ""
 "វិញ្ញាបនបត្រ​ ៖​​ %1\n"
 "ស្នាម​ម្រាមដៃ ​៖​ %2"
 
-#: src/view/keylistcontroller.cpp:398
+#: src/view/keylistcontroller.cpp:398 src/view/welcomewidget.cpp:87
 #, fuzzy, kde-format
 #| msgid "Import"
 msgid "Import..."
@@ -8210,8 +8224,8 @@ msgstr ""
 #: src/view/welcomewidget.cpp:69
 #, kde-format
 msgid ""
-"For most actions you need either a public certificate (key) from others or a "
-"private key of your own."
+"For most actions you need either a public key (certificate) or your own "
+"private key."
 msgstr ""
 
 #: src/view/welcomewidget.cpp:71
@@ -8222,8 +8236,8 @@ msgstr ""
 #: src/view/welcomewidget.cpp:72
 #, kde-format
 msgid ""
-"The certificate (public key) can be used by others to verify your identity "
-"or encrypt to you."
+"The public key can be used by others to verify your identity or encrypt to "
+"you."
 msgstr ""
 
 #: src/view/welcomewidget.cpp:75
@@ -8237,26 +8251,19 @@ msgstr ""
 #: src/view/welcomewidget.cpp:76
 #, kde-format
 msgctxt "%1 is link a wiki article"
-msgid "You can learn more about this on <a href=\"%1\">Wikipedia</a>"
+msgid "You can learn more about this on <a href=\"%1\">Wikipedia</a>."
 msgstr ""
-
-#: src/view/welcomewidget.cpp:83
-#, fuzzy, kde-format
-#| msgctxt "@action"
-#| msgid "Create Key"
-msgid "Generate Keypair"
-msgstr "បង្កើត​សោ"
 
 #: src/view/welcomewidget.cpp:97
 #, fuzzy, kde-format
 #| msgid "Create a personal OpenPGP key pair"
-msgid "Create a new OpenPGP Keypair"
+msgid "Create a new OpenPGP key pair"
 msgstr "បង្កើត​គូរសោ OpenPGP ផ្ទាល់ខ្លួន"
 
 #: src/view/welcomewidget.cpp:98
 #, kde-format
 msgid ""
-"To create an S/MIME certificate request use \"New Keypair\" from the 'File' "
+"To create an S/MIME certificate request use \"New Key Pair\" from the 'File' "
 "Menu instead"
 msgstr ""
 
@@ -8264,13 +8271,43 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgctxt "@info:tooltip"
 #| msgid "Imported Certificates from %1"
-msgid "Import a Certificate from a file."
+msgid "Import from a file."
 msgstr "វិញ្ញាបនបត្រ​ដែលបាននាំចូល​ពី %1​"
 
 #: src/view/welcomewidget.cpp:105
 #, kde-format
 msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
+
+#~ msgid "Certificate Server Certificate Lookup"
+#~ msgstr "រកមើល​វិញ្ញាបនបត្រ​ម៉ាស៊ីន​បម្រើ​​វិញ្ញាបនបត្រ​​"
+
+#~ msgid "Your key is being created."
+#~ msgstr "សោ​របស់​អ្នក​កំពុង​ត្រូ​វបាន​បង្កើត ។"
+
+#~ msgid ""
+#~ "The process of creating a key requires large amounts of random numbers. "
+#~ "To foster this process, you can use the entry field below to enter some "
+#~ "gibberish. The text itself does not matter - only the inter-character "
+#~ "timing. You can also move this window around with your mouse, or start "
+#~ "some disk-intensive application."
+#~ msgstr ""
+#~ "ដំណើរការ​បង្កើត​សោ​ត្រូវការ​លេខ​ចៃដន្យ​មួយ​ចំនួន​ធំ ។ ដើម្បី​ផ្គត់ផ្គង់​ដំណើរការ​នេះ អ្នក​អាច​ប្រើ​វាល​ធាតុ​"
+#~ "ខាង​ក្រោម​ដើម្បី​បញ្ចូល​អ្វីឥតបានការ ។ អត្ថបទ​ខ្លួន​វាផ្ទាល់​នឹង​មិន​ត្រូវ​បានប្រើ​ទាល់​តែ​សោះ មានតែ​ការ​"
+#~ "កំណត់​ពេលវេលា​តួអក្សរ​ខាង​ក្នុង​ប៉ុណ្ណោះ ។ អ្នក​ក៏​អាច​ផ្លាស់ទី​បង្អួច​នេះ​ជុំវិញ​ដោយ​ប្រើ​កណ្ដុរ​របស់​អ្នក ឬ​"
+#~ "ចាប់ផ្ដើម​កម្មវិធី​ដែល​ស្គាល់​ថា​ស​មួយ​ចំនួន ។"
+
+#~ msgid "Could not create certificate: %1"
+#~ msgstr "មិន​អាច​បង្កើត​វិញ្ញាបនបត្រ ៖ %1 បាន​ទេ"
+
+#~ msgid "Certificate Usage:"
+#~ msgstr "ការ​ប្រើប្រាស់​វិញ្ញាបនបត្រ ៖"
+
+#, fuzzy
+#~| msgctxt "@action"
+#~| msgid "Create Key"
+#~ msgid "Generate Keypair"
+#~ msgstr "បង្កើត​សោ"
 
 #~ msgid "Comment:"
 #~ msgstr "សេចក្ដី​អធិប្បាយ ៖"
