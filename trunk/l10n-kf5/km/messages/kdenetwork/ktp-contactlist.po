@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: telepathy-contactslist-prototype\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2016-11-19 20:16+0100\n"
+"POT-Creation-Date: 2017-11-22 05:02+0100\n"
 "PO-Revision-Date: 2012-07-03 11:15+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -263,37 +263,54 @@ msgstr ""
 msgid "Remove Group"
 msgstr "យក​ក្រុម​ចេញ"
 
-#: dialogs/custom-presence-dialog.cpp:71
+#: dialogs/advanced-presence-dialog.cpp:152
+#, fuzzy, kde-format
+#| msgid "Presence String"
+msgid "Advanced Presence Setting"
+msgstr "ឃ្លា​វត្តមាន"
+
+#: dialogs/advanced-presence-dialog.cpp:160
+#, kde-format
+msgid "It appears that you do not have any accounts configured"
+msgstr ""
+
+#: dialogs/advanced-presence-dialog.cpp:184
+#, fuzzy, kde-format
+#| msgid "Set custom busy message..."
+msgid "Set a status message ..."
+msgstr "កំណត់​សារ​រវល់​ផ្ទាល់ខ្លួន..."
+
+#: dialogs/custom-presence-dialog.cpp:72
 #, kde-format
 msgid "Edit Custom Presences"
 msgstr "កែសម្រួល​វត្តមាន​ផ្ទាល់ខ្លួន"
 
-#: dialogs/custom-presence-dialog.cpp:91
+#: dialogs/custom-presence-dialog.cpp:92
 #, kde-format
 msgid "Set custom available message..."
 msgstr "កំណត់​សារ​ទំនេរ​ផ្ទាល់ខ្លួន..."
 
-#: dialogs/custom-presence-dialog.cpp:92
+#: dialogs/custom-presence-dialog.cpp:93
 #, kde-format
 msgid "Set custom busy message..."
 msgstr "កំណត់​សារ​រវល់​ផ្ទាល់ខ្លួន..."
 
-#: dialogs/custom-presence-dialog.cpp:93
+#: dialogs/custom-presence-dialog.cpp:94
 #, kde-format
 msgid "Set custom away message..."
 msgstr "កំណត់​សារ​ចាក​ឆ្ងាយ​ផ្ទាល់ខ្លួន..."
 
-#: dialogs/custom-presence-dialog.cpp:94
+#: dialogs/custom-presence-dialog.cpp:95
 #, kde-format
 msgid "Set custom extended away message..."
 msgstr "កំណត់​សារ​ចាក​ឆ្ងាយ​យូរ​ផ្ទាល់ខ្លួន..."
 
-#: dialogs/custom-presence-dialog.cpp:104
+#: dialogs/custom-presence-dialog.cpp:106
 #, kde-format
 msgid "Add Presence"
 msgstr "បន្ថែម​វត្តមាន"
 
-#: dialogs/custom-presence-dialog.cpp:105
+#: dialogs/custom-presence-dialog.cpp:107
 #, kde-format
 msgid "Remove Presence"
 msgstr "យក​វត្តមាន​ចេញ"
@@ -345,40 +362,153 @@ msgctxt "@label:textbox"
 msgid "Filter:"
 msgstr "តម្រង ៖"
 
-#: global-presence-chooser.cpp:99
+#: global-presence-chooser.cpp:49
+#, kde-format
+msgid ""
+"<p>Tokens can be used wherever a status message can be set to create a "
+"dynamic status message.</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:50
+#, kde-format
+msgid ""
+"<p><strong>%tr+&lt;val&gt;</strong>: Countdown to 0 from <strong>&lt;val&gt;"
+"</strong> minutes. e.g. %tr+30</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:51
+#, kde-format
+msgid ""
+"<p><strong>%time+[&lt;val&gt;]</strong>: The current local time, or if a "
+"value is specified, the local time <strong>&lt;val&gt;</strong> minutes in "
+"the future. e.g. %time+10</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:52
+#, kde-format
+msgid ""
+"<p><strong>%utc+[&lt;val&gt;]</strong>: The current UTC time, or if a value "
+"is specified, the UTC time <strong>&lt;val&gt;</strong> minutes into the "
+"future. e.g. %utc</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:53
+#, kde-format
+msgid ""
+"<p><strong>%te+[&lt;val&gt;]</strong>: Time elapsed from message activation. "
+"Append an initial elapsed time &quot;&lt;val&gt;&quot in minutes.; e.g. %te"
+"+5</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:54
+#, kde-format
+msgid "<p><strong>%title</strong>: Now Playing track title.</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:55
+#, kde-format
+msgid "<p><strong>%artist</strong>: Now Playing track or album artist.</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:56
+#, kde-format
+msgid "<p><strong>%album</strong>: Now Playing album.</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:57
+#, kde-format
+msgid "<p><strong>%track</strong>: Now Playing track number.</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:58
+#, kde-format
+msgid ""
+"<p><strong>%um+[&lt;val&gt;]</strong>: When specified globally or in an "
+"account presence status message, overrides all automatic presence messages. "
+"When specified in an automatic presence status message, is substituted for "
+"the global or account presence status message (if specified). When "
+"<strong>val = g</strong> in an account presence status message or an "
+"automatic presence status message, overrides the account presence status "
+"message or automatic presence status message with the global presence status "
+"message. e.g. %um, %um+g</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:59
+#, kde-format
+msgid ""
+"<p><strong>%tu+&lt;val&gt;</strong>: Refresh the status message every "
+"<strong>&lt;val&gt;</strong> minutes. e.g. %tu+2</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:60
+#, kde-format
+msgid ""
+"<p><strong>%tx+&lt;val&gt;</strong>: Expire the status message after "
+"<strong>&lt;val&gt;</strong> minutes, or when the Now Playing active player "
+"stops (<strong>val = np</strong>). e.g. %tx+20, %tx+np</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:61
+#, kde-format
+msgid ""
+"<p><strong>%xm+&quot;&lt;val&gt;&quot;</strong>: Specify a message to follow "
+"%tr, %time, %utc, and %tx token expiry. e.g. %xm+&quot;Back %time. %tx+3 %xm"
+"+&quot;Running late&quot;&quot;</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:62
+#, kde-format
+msgid ""
+"<p><strong>%tf+&quot;&lt;val&gt;&quot;</strong>: Specify the format for "
+"local time using QDateTime::toString() expressions. e.g. %tf+&quot;h:mm AP "
+"t&quot;</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:63
+#, kde-format
+msgid ""
+"<p><strong>%uf+&quot;&lt;val&gt;&quot;</strong>: Specify the format for UTC "
+"time using QDateTime::toString() expressions. e.g. %uf+&quot;hh:mm t&quot;</"
+"p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:64
+#, kde-format
+msgid ""
+"<p><strong>%sp+&quot;&lt;val&gt;&quot;</strong>: Change the separator for "
+"empty fields. e.g. %sp+&quot;-&quot;</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:65
+#, kde-format
+msgid ""
+"<p>Using tokens requires the Telepathy KDED module to be loaded. Tokens can "
+"be escaped by prepending a backslash character, e.g. &#92;%sp</p>"
+msgstr ""
+
+#: global-presence-chooser.cpp:118
 #, kde-format
 msgid "Configure Custom Presences..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​វត្តមាន​ផ្ទាល់ខ្លួន..."
 
-#: global-presence-chooser.cpp:106
-#, kde-format
-msgid "Now listening to..."
-msgstr "ឥឡូវ​កំពុង​ស្ដាប់..."
+#: global-presence-chooser.cpp:125
+#, fuzzy, kde-format
+#| msgid "Presence String"
+msgid "Advanced Presence Setting..."
+msgstr "ឃ្លា​វត្តមាន"
 
-#: global-presence-chooser.cpp:191
+#: global-presence-chooser.cpp:208
 #, kde-format
 msgid "Click to change your presence message"
 msgstr "ចុច​ដើម្បី​ប្ដូរ​វត្តមាន​សារ​របស់​អ្នក"
 
-#: global-presence-chooser.cpp:231
+#: global-presence-chooser.cpp:245
 #, kde-format
 msgctxt "Presence string when the account is connecting"
 msgid "Connecting..."
 msgstr "កំពុង​តភ្ជាប់..."
 
-#: global-presence-chooser.cpp:332
-#, kde-format
-msgid ""
-"This plugin is currently disabled. Do you want to enable it and use as your "
-"presence?"
-msgstr "បាន​បិទ​កម្មវិធី​ជំនួយ​បច្ចុប្បន្ន ។ តើ​អ្នក​ចង់​បើក​វា ហើយ​ប្រើ​ជា​វត្តមាន​របស់​អ្នក​ដែរ​ឬទេ ?"
-
-#: global-presence-chooser.cpp:333
-#, kde-format
-msgid "Plugin disabled"
-msgstr "បាន​បិទ​កម្មវិធី​ជំនួយ"
-
-#: main-widget.cpp:176
+#: main-widget.cpp:177
 #, kde-format
 msgid ""
 "Something unexpected happened to the core part of your Instant Messaging "
@@ -387,12 +517,12 @@ msgstr ""
 "មាន​បញ្ហា​ដែល​មិន​រំពឹង​ទុក​បាន​កើតឡើង​ចំពោះ​ផ្នែក​សំខាន់​នៃ​ប្រព័ន្ធ​សារ​បន្ទាន់​របស់​អ្នក ហើយ​វា​មិន​អាច​ត្រូវ​បាន​"
 "ចាប់ផ្ដើម​ទេ ។ ព្យាយាម​ចាប់ផ្ដើម​បញ្ជី​ទំនាក់ទំនង ។"
 
-#: main-widget.cpp:178
+#: main-widget.cpp:179
 #, kde-format
 msgid "IM system failed to initialize"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ចាប់ផ្ដើម​ប្រព័ន្ធ​សារ​បន្ទាន់"
 
-#: main-widget.cpp:298
+#: main-widget.cpp:300
 #, kde-format
 msgid ""
 "You do not have any other presence controls active (a Presence widget for "
@@ -402,176 +532,176 @@ msgstr ""
 "អ្នក​មិន​មាន​ការ​គ្រប់គ្រង​វត្តមាន​ផ្សេងទៀត​សកម្ម​ទេ (ឧទាហរណ៍ វត្តមាន​ធាតុ​ក្រាហ្វិក) ។\n"
 "តើ​អ្នក​ចង់​នៅ​លើ​បណ្ដាញ ឬ​នៅ​ក្រៅ​បណ្ដាញ ?"
 
-#: main-widget.cpp:300
+#: main-widget.cpp:302
 #, kde-format
 msgid "No Other Presence Controls Found"
 msgstr "រក​មិន​ឃើញ​ការ​គ្រប់គ្រង​វត្តមាន​ផ្សេងទៀត​ទេ"
 
-#: main-widget.cpp:301
+#: main-widget.cpp:303
 #, kde-format
 msgid "Stay Online"
 msgstr "នៅ​លើ​បណ្ដាញ"
 
-#: main-widget.cpp:302
+#: main-widget.cpp:304
 #, kde-format
 msgid "Go Offline"
 msgstr "នៅ​ក្រៅ​បណ្ដាញ"
 
-#: main-widget.cpp:392 tooltips/persontooltip.cpp:57
+#: main-widget.cpp:372 tooltips/persontooltip.cpp:57
 #, fuzzy, kde-format
 #| msgid "ContactID"
 msgid "Contacts"
 msgstr "លេខ​សម្គាល់​ទំនាក់ទំនង"
 
-#: main-widget.cpp:408
+#: main-widget.cpp:388
 #, kde-format
 msgid "View"
 msgstr ""
 
-#: main-widget.cpp:412 main-widget.cpp:455
+#: main-widget.cpp:392 main-widget.cpp:435
 #, kde-format
 msgid "Contact List Type"
 msgstr "ប្រភេទ​បញ្ជី​ទំនាក់ទំនង"
 
-#: main-widget.cpp:415 main-widget.cpp:460
+#: main-widget.cpp:395 main-widget.cpp:440
 #, kde-format
 msgid "Shown Contacts"
 msgstr "បាន​បង្ហាញ​ទំនាក់ទំនង"
 
-#: main-widget.cpp:418 main-widget.cpp:465
+#: main-widget.cpp:398 main-widget.cpp:445
 #, fuzzy, kde-format
 #| msgid "Show all contacts"
 msgid "Contact Grouping"
 msgstr "បង្ហាញ​ទំនាក់ទំនង​ទាំងអស់"
 
-#: main-widget.cpp:543
+#: main-widget.cpp:523
 #, kde-format
 msgid "Instant Messaging Settings..."
 msgstr "ការ​កំណត់​សារ​បន្ទាន់..."
 
-#: main-widget.cpp:548
+#: main-widget.cpp:528
 #, kde-format
 msgid "Join Chat Room..."
 msgstr "ចូលរួម​បន្ទប់​ជជែក..."
 
-#: main-widget.cpp:550
+#: main-widget.cpp:530
 #, fuzzy, kde-format
 #| msgid "Start Audio Call..."
 msgid "Make a Call..."
 msgstr "ចាប់ផ្ដើម​ការ​ហៅ​ជា​សំឡេង..."
 
-#: main-widget.cpp:551
+#: main-widget.cpp:531
 #, fuzzy, kde-format
 #| msgid "Remove contact"
 msgid "Merge Contacts..."
 msgstr "យក​ទំនាក់ទំនង​ចេញ"
 
-#: main-widget.cpp:552
+#: main-widget.cpp:532
 #, kde-format
 msgid "Add New Contacts..."
 msgstr "បន្ថែម​ទំនាក់ទំនង​ថ្មី..."
 
-#: main-widget.cpp:553
+#: main-widget.cpp:533
 #, kde-format
 msgid "Find Contact"
 msgstr "រក​ទំនាក់ទំនង"
 
-#: main-widget.cpp:556
+#: main-widget.cpp:536
 #, fuzzy, kde-format
 #| msgid "Start Chat..."
 msgid "Start a Chat..."
 msgstr "ចាប់ផ្ដើម​ជជែក..."
 
-#: main-widget.cpp:559
+#: main-widget.cpp:539
 #, fuzzy, kde-format
 #| msgid "Show blocked contacts"
 msgid "Split Selected Contacts"
 msgstr "បង្ហាញ​ទំនាក់ទំនង​ដែល​បាន​ទប់ស្កាត់"
 
-#: main-widget.cpp:560
+#: main-widget.cpp:540
 #, fuzzy, kde-format
 #| msgid "Remove contact"
 msgid "Merge Selected Contacts"
 msgstr "យក​ទំនាក់ទំនង​ចេញ"
 
-#: main-widget.cpp:570
+#: main-widget.cpp:550
 #, fuzzy, kde-format
 #| msgid "Show all contacts"
 msgid "Show Contacts by Groups"
 msgstr "បង្ហាញ​ទំនាក់ទំនង​ទាំងអស់"
 
-#: main-widget.cpp:574
+#: main-widget.cpp:554
 #, fuzzy, kde-format
 #| msgid "Move to Group"
 msgid "Do Not Group"
 msgstr "ផ្លាស់ទី​ទៅកាន់​ក្រុម"
 
-#: main-widget.cpp:577
+#: main-widget.cpp:557
 #, fuzzy, kde-format
 #| msgid "Show all contacts"
 msgid "Show Contacts by Accounts"
 msgstr "បង្ហាញ​ទំនាក់ទំនង​ទាំងអស់"
 
-#: main-widget.cpp:582
+#: main-widget.cpp:562
 #, fuzzy, kde-format
 #| msgid "Show all contacts"
 msgid "Show Offline Contacts"
 msgstr "បង្ហាញ​ទំនាក់ទំនង​ទាំងអស់"
 
-#: main-widget.cpp:583
+#: main-widget.cpp:563
 #, fuzzy, kde-format
 #| msgid "Show all contacts"
 msgid "Hide Offline Contacts"
 msgstr "បង្ហាញ​ទំនាក់ទំនង​ទាំងអស់"
 
-#: main-widget.cpp:591
+#: main-widget.cpp:571
 #, fuzzy, kde-format
 #| msgid "Remove Presence"
 msgid "Sort by Presence"
 msgstr "យក​វត្តមាន​ចេញ"
 
-#: main-widget.cpp:592
+#: main-widget.cpp:572
 #, fuzzy, kde-format
 #| msgid "Remove Presence"
 msgid "Sort by Name"
 msgstr "យក​វត្តមាន​ចេញ"
 
-#: main-widget.cpp:600
+#: main-widget.cpp:580
 #, kde-format
 msgid "Use Full List"
 msgstr "ប្រើ​បញ្ជី​ពេញលេញ"
 
-#: main-widget.cpp:602
+#: main-widget.cpp:582
 #, fuzzy, kde-format
 #| msgid "Use Compact List"
 msgid "Use Normal List"
 msgstr "ប្រើ​បញ្ជី​បង្ហាប់"
 
-#: main-widget.cpp:606
+#: main-widget.cpp:586
 #, fuzzy, kde-format
 #| msgid "Use Compact List"
 msgid "Use Minimalistic List"
 msgstr "ប្រើ​បញ្ជី​បង្ហាប់"
 
-#: main-widget.cpp:613
+#: main-widget.cpp:593
 #, fuzzy, kde-format
 #| msgid "Show all contacts"
 msgid "Show All Contacts"
 msgstr "បង្ហាញ​ទំនាក់ទំនង​ទាំងអស់"
 
-#: main-widget.cpp:615
+#: main-widget.cpp:595
 #, fuzzy, kde-format
 #| msgid "Show unblocked contacts"
 msgid "Show Unblocked Contacts"
 msgstr "បង្ហាញ​ទំនាក់ទំនង​ដែល​មិន​បាន​ទប់ស្កាត់"
 
-#: main-widget.cpp:617
+#: main-widget.cpp:597
 #, fuzzy, kde-format
 #| msgid "Show blocked contacts"
 msgid "Show Blocked Contacts"
 msgstr "បង្ហាញ​ទំនាក់ទំនង​ដែល​បាន​ទប់ស្កាត់"
 
-#: main-widget.cpp:736
+#: main-widget.cpp:716
 #, kde-format
 msgid ""
 "Some data sources failed to initialize properly, your contact list might be "
@@ -628,6 +758,17 @@ msgstr "កំហុស​គណនី"
 #, kde-format
 msgid "User is blocked"
 msgstr "អ្នកប្រើ​ត្រូវ​បាន​ទប់​ស្កាត់"
+
+#~ msgid "Now listening to..."
+#~ msgstr "ឥឡូវ​កំពុង​ស្ដាប់..."
+
+#~ msgid ""
+#~ "This plugin is currently disabled. Do you want to enable it and use as "
+#~ "your presence?"
+#~ msgstr "បាន​បិទ​កម្មវិធី​ជំនួយ​បច្ចុប្បន្ន ។ តើ​អ្នក​ចង់​បើក​វា ហើយ​ប្រើ​ជា​វត្តមាន​របស់​អ្នក​ដែរ​ឬទេ ?"
+
+#~ msgid "Plugin disabled"
+#~ msgstr "បាន​បិទ​កម្មវិធី​ជំនួយ"
 
 #~ msgctxt "@action:inmenu This is an IM user status"
 #~ msgid "Available"
@@ -716,9 +857,6 @@ msgstr "អ្នកប្រើ​ត្រូវ​បាន​ទប់​ស
 
 #~ msgid "Contact Display Name"
 #~ msgstr "បង្ហាញ​ទំនាក់ទំនង​តាម​ឈ្មោះ"
-
-#~ msgid "Presence String"
-#~ msgstr "ឃ្លា​វត្តមាន"
 
 #~ msgid "Contact can see when you are online:"
 #~ msgstr "ទំនាក់ទំនង​អាច​មើល​ឃើញ​ពេល​អ្នក​នៅ​លើ​បណ្ដាញ ៖"
