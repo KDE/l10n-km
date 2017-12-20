@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2017-12-15 03:07+0100\n"
+"POT-Creation-Date: 2017-12-20 04:49+0100\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -9391,6 +9391,8 @@ msgstr "ទំហំ"
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:138
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:246
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:271
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.cpp:79
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.cpp:89
 #: plugins/tools/tool_smart_patch/kis_tool_smart_patch_options_widget.ui:130
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:108
 #: plugins/tools/tool_transform2/kis_tool_transform_config_widget.cpp:109
@@ -9508,25 +9510,25 @@ msgctxt "(qtundo-format)"
 msgid "Property Changes"
 msgstr "ភាព​ផ្លាស់ប្ដូរ​របស់​លក្ខណៈ​សម្បត្តិ"
 
-#: libs/image/commands/kis_node_property_list_command.cpp:135
+#: libs/image/commands/kis_node_property_list_command.cpp:148
 #: libs/image/kis_layer_properties_icons.cpp:33
 #, kde-format
 msgid "Visible"
 msgstr "មើល​ឃើញ"
 
-#: libs/image/commands/kis_node_property_list_command.cpp:136
+#: libs/image/commands/kis_node_property_list_command.cpp:149
 #: libs/image/kis_layer_properties_icons.cpp:32
 #, kde-format
 msgid "Locked"
 msgstr "ចាក់សោ"
 
-#: libs/image/commands/kis_node_property_list_command.cpp:137
+#: libs/image/commands/kis_node_property_list_command.cpp:150
 #: libs/image/kis_layer_properties_icons.cpp:39
 #, kde-format
 msgid "Active"
 msgstr "សកម្ម"
 
-#: libs/image/commands/kis_node_property_list_command.cpp:144
+#: libs/image/commands/kis_node_property_list_command.cpp:157
 #: libs/image/kis_layer_properties_icons.cpp:36
 #: libs/image/kis_paint_layer.cc:211
 #, kde-format
@@ -10166,17 +10168,29 @@ msgstr "របៀប​​លាប​ ឬ​បិទ"
 msgid "Satin (style)"
 msgstr "រចនាប័ទ្ម​ការ​បំបែក​"
 
-#: libs/image/lazybrush/kis_colorize_mask.cpp:762
+#: libs/image/lazybrush/kis_colorize_mask.cpp:929
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Change Key Stroke Color"
 msgstr "បម្លែង​ចន្លោះ​ពណ៌​នៃ​ការ​បញ្ចាំង"
 
-#: libs/image/lazybrush/kis_colorize_mask.cpp:789
+#: libs/image/lazybrush/kis_colorize_mask.cpp:956
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Remove Key Stroke"
 msgstr "បញ្ចូល​ឈ្មោះ"
+
+#: libs/image/lazybrush/kis_colorize_stroke_strategy.cpp:86
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Colorize"
+msgstr "ពណ៌"
+
+#: libs/image/lazybrush/kis_colorize_stroke_strategy.cpp:86
+#, fuzzy
+msgctxt "(qtundo-format)"
+msgid "Prefilter Colorize Mask"
+msgstr "ពណ៌"
 
 #: libs/image/metadata/kis_meta_data_filter_p.cc:51
 #, kde-format
@@ -12363,6 +12377,7 @@ msgstr "ជ្រើស​ទាំងអស់"
 #: libs/ui/dialogs/kis_dlg_preferences.cc:670 libs/ui/kis_autogradient.cc:76
 #: libs/ui/kis_autogradient.cc:80
 #: plugins/flake/textshape/dialogs/ParagraphIndentSpacing.ui:134
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.cpp:97
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:912
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:928
 #, no-c-format, kde-format
@@ -14297,7 +14312,7 @@ msgstr "បន្ថែម​រូបភាព​"
 #: libs/ui/input/config/kis_edit_profiles_dialog.ui:40
 #: libs/widgets/KoEditColorSet.ui:55
 #: libs/widgetutils/xmlgui/kswitchlanguagedialog_p.cpp:419
-#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:123
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:155
 #, fuzzy, kde-format
 msgid "Remove"
 msgstr "យក​ជក់​ចេញ"
@@ -15633,22 +15648,27 @@ msgstr "បង្វិល​ថ្នាំង"
 msgid "Secondary Mode"
 msgstr "បង្វិល​ថ្នាំង"
 
-#: libs/ui/input/kis_alternate_invocation_action.cpp:46
+#: libs/ui/input/kis_alternate_invocation_action.cpp:44
+#, fuzzy, kde-format
+msgid "Tertiary Mode"
+msgstr "បង្វិល​ថ្នាំង"
+
+#: libs/ui/input/kis_alternate_invocation_action.cpp:47
 #, fuzzy, kde-format
 msgid "Pick Foreground Color from Current Layer"
 msgstr "បំពេញ​ក្ដារលាយ​ពី​ស្រទាប់​បច្ចុប្បន្ន"
 
-#: libs/ui/input/kis_alternate_invocation_action.cpp:47
+#: libs/ui/input/kis_alternate_invocation_action.cpp:48
 #, fuzzy, kde-format
 msgid "Pick Background Color from Current Layer"
 msgstr "បំពេញ​ក្ដារលាយ​ពី​ស្រទាប់​បច្ចុប្បន្ន"
 
-#: libs/ui/input/kis_alternate_invocation_action.cpp:49
+#: libs/ui/input/kis_alternate_invocation_action.cpp:50
 #, kde-format
 msgid "Pick Foreground Color from Merged Image"
 msgstr ""
 
-#: libs/ui/input/kis_alternate_invocation_action.cpp:50
+#: libs/ui/input/kis_alternate_invocation_action.cpp:51
 #, kde-format
 msgid "Pick Background Color from Merged Image"
 msgstr ""
@@ -18955,27 +18975,32 @@ msgstr ""
 msgid "No options"
 msgstr "គ្មាន​ជម្រើស"
 
-#: libs/ui/tool/kis_tool.cc:668
+#: libs/ui/tool/kis_tool.cc:681
 #, fuzzy, kde-format
 msgid "Layer is locked and invisible."
 msgstr "ទំហំ​ស្រទាប់​"
 
-#: libs/ui/tool/kis_tool.cc:670
+#: libs/ui/tool/kis_tool.cc:683
 #, fuzzy, kde-format
 msgid "Layer is locked."
 msgstr "ទំហំ​ស្រទាប់​"
 
-#: libs/ui/tool/kis_tool.cc:672
+#: libs/ui/tool/kis_tool.cc:685
 #, fuzzy, kde-format
 msgid "Layer is invisible."
 msgstr "ទំហំ​ស្រទាប់​"
 
-#: libs/ui/tool/kis_tool.cc:674
+#: libs/ui/tool/kis_tool.cc:687
+#, kde-format
+msgid "Layer can be painted in Wash Mode only."
+msgstr ""
+
+#: libs/ui/tool/kis_tool.cc:689
 #, fuzzy, kde-format
 msgid "Group not editable."
 msgstr "ទំហំ​ស្រទាប់​"
 
-#: libs/ui/tool/kis_tool.cc:689
+#: libs/ui/tool/kis_tool.cc:704
 #, fuzzy, kde-format
 msgid "Local selection is locked."
 msgstr "គ្មាន​សកម្មភាព​បានជ្រើស​ទេ ។"
@@ -19991,7 +20016,7 @@ msgstr "ផ្តាច់​ពី​របារ​ឧបករណ៍"
 msgid "No configuration options."
 msgstr "គ្មាន​ជម្រើស​កំណត់​រចនាសម្ព័ន្ធ ។"
 
-#: libs/ui/widgets/KoDualColorButton.cpp:99
+#: libs/ui/widgets/KoDualColorButton.cpp:101
 #, fuzzy, kde-format
 msgid "Select a color"
 msgstr "ជ្រើស​ស្រអាប់"
@@ -32596,64 +32621,64 @@ msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទ
 msgid "Could not create transform mask params"
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:454
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:455
 #, fuzzy, kde-format
 msgid "Could not find keyframe pixel data for frame %1 in %2."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:462
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:463
 #, fuzzy, kde-format
 msgid "Could not load keyframe pixel data for frame %1 in %2."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:476
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:477
 #, fuzzy, kde-format
 msgid "Could not read pixel data: %1."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:483
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:484
 #, fuzzy, kde-format
 msgid "Could not load pixel data: %1."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:516
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:517
 #, fuzzy, kde-format
 msgid "Could not load profile: %1."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:540
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:541
 #, fuzzy, kde-format
 msgid "Could not filter configuration %1."
 msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ថ្មី %1"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:570
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:571
 #, fuzzy, kde-format
 msgid "Could not load metadata for layer %1."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:585
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:586
 #, fuzzy, kde-format
 msgid "Could not load raster selection %1."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:603
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:604
 #, fuzzy, kde-format
 msgid "Could not load vector selection %1."
 msgstr "ការជ្រើស​សណ្ឋាន​ពិសេស"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:630
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:631
 #, fuzzy, kde-format
 msgid "Could not load keyframes from %1."
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:644
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:645
 #, kde-format
 msgid ""
 "parsing error in the keyframe file %1 at line %2, column %3\n"
 "Error message: %4"
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_load_visitor.cpp:657
+#: plugins/impex/libkra/kis_kra_load_visitor.cpp:658
 #, fuzzy, kde-format
 msgid "unknown keyframe channel type: %1 in %2"
 msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
@@ -32719,13 +32744,13 @@ msgid ""
 msgstr ""
 
 #: plugins/impex/libkra/kis_kra_loader.cpp:805
-#: plugins/impex/libkra/kis_kra_loader.cpp:1151
+#: plugins/impex/libkra/kis_kra_loader.cpp:1164
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "File not found"
 msgstr "លិបិក្រម​ក្រៅ​ព្រំដែន"
 
-#: plugins/impex/libkra/kis_kra_loader.cpp:1146
+#: plugins/impex/libkra/kis_kra_loader.cpp:1159
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -33893,7 +33918,7 @@ msgstr "កំណត់​ទៅលំនាំដើម​ឡើង​វិញ
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonUpdate)
 #. i18n: ectx: property (text), widget (QPushButton, btnUpdate)
 #: plugins/impex/raw/wdgrawimport.ui:29
-#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:41
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:26
 #, kde-format
 msgid "Update"
 msgstr "ធ្វើ​បច្ចុប្បន្នភាព"
@@ -34412,7 +34437,7 @@ msgstr "ស្រអាប់"
 #: plugins/paintops/sketch/kis_sketch_paintop_settings_widget.cpp:47
 #: plugins/paintops/spray/kis_spray_paintop_settings_widget.cpp:45
 #: plugins/paintops/tangentnormal/kis_tangent_normal_paintop_settings_widget.cpp:54
-#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:113
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:145
 #, kde-format
 msgid "Transparent"
 msgstr "ថ្លា"
@@ -38730,38 +38755,69 @@ msgstr "មុំ​ថេរ ៖"
 msgid "Dynamic Brush Tool"
 msgstr "ជក់​ថាមវន្ត​ A - 2"
 
-#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush.cpp:49
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush.cpp:61
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Colorize Mask Key Stroke"
 msgstr "ពណ៌"
 
-#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush.h:80
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush.h:96
 #, fuzzy, kde-format
 msgid "Colorize Mask Editing Tool"
 msgstr "ជម្រាល​"
 
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.cpp:83
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"Activate for images with vast solid areas. Set the value to the width of the "
+"thinnest lines on the image"
+msgstr ""
+
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.cpp:93
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"The mask will try to close non-closed contours if the gas is smaller than "
+"\"Gap close hint\" value"
+msgstr ""
+
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.cpp:101
+#, kde-format
+msgctxt "@info:tooltip"
+msgid ""
+"The mask will try to remove parts of the key strokes that are places outside "
+"the closed contours. 0% - no effect, 100% - max effect"
+msgstr ""
+
 #. i18n: ectx: property (text), widget (QCheckBox, chkAutoUpdates)
-#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:34
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:19
 #, fuzzy, kde-format
 #| msgid "&Autoupdate"
 msgid "Auto updates"
 msgstr "ធ្វើ​បច្ចុប្បន្នភាព​ដោយ​ស្វ័យ​ប្រវត្តិ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowKeyStrokes)
-#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:53
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:35
 #, fuzzy, kde-format
 msgid "Edit key strokes"
 msgstr "កែសម្រួល​កំណត់​ជាមុន"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkShowOutput)
-#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:60
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:42
 #, fuzzy, kde-format
 msgid "Show output"
 msgstr "លទ្ធផល"
 
+#. i18n: ectx: property (text), widget (QCheckBox, chkLimitToDevice)
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:49
+#, fuzzy, kde-format
+#| msgid "Limit to current layer"
+msgid "Limit to layer bounds"
+msgstr "កំណត់​ស្រទាប់​បច្ចុប្បន្ន"
+
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox)
-#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:83
+#: plugins/tools/tool_lazybrush/kis_tool_lazy_brush_options_widget.ui:115
 #, fuzzy, kde-format
 msgid "Key Strokes"
 msgstr "រាង​សំប៉ែត "
