@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: amarok\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-01-29 01:47+0100\n"
+"POT-Creation-Date: 2018-02-05 01:46+0100\n"
 "PO-Revision-Date: 2012-07-06 15:27+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -7867,40 +7867,21 @@ msgstr "%1 - %2"
 #, kde-format
 msgid ""
 "The bitrate is a measure of the quantity of data used to represent a second "
-"of the audio track.<br>The <b>AAC</b> encoder used by Amarok supports a <a "
-"href=http://en.wikipedia.org/wiki/"
-"Variable_bitrate#Advantages_and_disadvantages_of_VBR>variable bitrate (VBR)</"
-"a> setting, which means that the bitrate value fluctuates along the track "
-"based on the complexity of the audio content. More complex intervals of data "
-"are encoded with a higher bitrate than less complex ones; this approach "
-"yields overall better quality and a smaller file than having a constant "
-"bitrate throughout the track.<br>For this reason, the bitrate measure in "
-"this slider is just an estimate of the <a href=http://www.ffmpeg.org/faq."
-"html#SEC21>average bitrate</a> of the encoded track.<br><b>150kb/s</b> is a "
-"good choice for music listening on a portable player.<br/>Anything below "
-"<b>120kb/s</b> might be unsatisfactory for music and anything above <b>200kb/"
-"s</b> is probably overkill."
+"of the audio track.<br>The encoder used by Amarok operates better with a "
+"constant bitrate.<br>VBR is experimental and likely to get even worse "
+"results than the CBR.<br>For this reason, the bitrate measure in this slider "
+"is a pretty accurate estimate of the bitrate of the encoded track.<br>The "
+"encoder is transparent at 128kbps for most samples tested with artifacts "
+"only appearing in extreme cases."
 msgstr ""
-"អត្រា​ប៊ីត​គឺជា​រង្វាស់​គុណភាព​ទិន្នន័យ​ដែល​ត្រូវ​បាន​ប្រើ​ដើម្បី​បង្ហាញ​វិនាទី​របស់​បទ​អូឌីយ៉ូ ។<br>អ៊ិនកូឌ័រ <b>AAC</"
-"b> ត្រូវ​បាន​ប្រើ​ដោយ​ Amarok ហើយ​គាំទ្រ <a href=http://en.wikipedia.org/wiki/"
-"Variable_bitrate#Advantages_and_disadvantages_of_VBR>ការ​កំណត់ variable bitrate "
-"(VBR)</a> ដែល​មានន័យថា​តម្លៃ​អត្រា​ប៊ីត​ប្រែប្រួល​ទៅ​តាម​បទ​ដោយ​ផ្អែកលើ​ភាព​ស្មុគស្មាញ​របស់​មាតិកា​អូឌីយ៉ូ ។ "
-"ទិន្នន័យ​ដែល​មាន​ចន្លោះ​ពេល​​ស្មុគស្មាញ​ខ្លាំង ទិន្នន័យ​នោះ​នឹង​ត្រូវ​បាន​អ៊ិនកូដ​ជាមួយ​អត្រា​ប៊ីត​ខ្ពស់​ជាង​ទិន្នន័យ​ដែល​"
-"មាន​ភាព​ស្មុគស្មាញ​តិច វា​ផ្ដល់​ឲ្យ​គុណភាព​ល្អ ហើយ​មាន​ទំហំ​តូចជាង​បទ​ដែល​បាន​អ៊ិនកូដ​ដោយ​ប្រើ​អត្រា​ប៊ីត​ថេរ ។"
-"<br>សម្រាប់​ហេតុផល​នេះ រង្វាស់​អត្រា​ប៊ីត​នៅ​ក្នុង​ការ​បង្ហាញ​នេះ​គឺ​គ្រាន់តែ​ប៉ាន់ស្មាន​ទៅ​លើ <a "
-"href=http://www.ffmpeg.org/faq.html#SEC21>អត្រា​ប៊ីត​ជាមធ្យម</a> របស់​បទ​ដែល​បាន​អ៊ិនកូដ​"
-"តែប៉ុណ្ណោះ ។<br><b>150kb/s</b> គឺជា​ជម្រើស​ដ៏​ល្អ​សម្រាប់​តន្ត្រី​ដែល​ចាក់​នៅ​លើ​ឧបករណ៍​ចល័ត ។<br/"
-">ប្រសិនបើ​វា​ទាប​ជាង <b>120kb/s</b> វា​អាច​នឹង​មិន​ល្អ​សម្រាប់​តន្ត្រី​ទេ ហើយ​ប្រសិនបើ​វា​ខ្ពស់​ជាង "
-"<b>200kb/s</b> វិញ វា​គឺ​ខ្ពស់​ពេក​ហើយ ។"
 
-#: core/transcoding/formats/TranscodingAacFormat.cpp:58
-#: core/transcoding/formats/TranscodingMp3Format.cpp:55
-#: core/transcoding/formats/TranscodingOpusFormat.cpp:64
+#: core/transcoding/formats/TranscodingAacFormat.cpp:48
+#: core/transcoding/formats/TranscodingWmaFormat.cpp:59
 #, kde-format
-msgid "Expected average bitrate for variable bitrate encoding"
-msgstr "អត្រា​ប៊ីត​ជាមធ្យម​ដែល​បាន​រំពឹង​ទុក​សម្រាប់​ការ​អ៊ិនកូដ​អត្រា​ប៊ីត​អថេរ"
+msgid "Bitrate target for constant bitrate encoding"
+msgstr "គោលដៅ​អត្រា​ប៊ីត​សម្រាប់​ការ​អ៊ិនកូដ​អត្រា​ប៊ីត​ថេរ"
 
-#: core/transcoding/formats/TranscodingAacFormat.cpp:59
+#: core/transcoding/formats/TranscodingAacFormat.cpp:49
 #: core/transcoding/formats/TranscodingFlacFormat.cpp:42
 #: core/transcoding/formats/TranscodingMp3Format.cpp:56
 #: core/transcoding/formats/TranscodingOpusFormat.cpp:65
@@ -7910,7 +7891,7 @@ msgstr "អត្រា​ប៊ីត​ជាមធ្យម​ដែល​ប
 msgid "Smaller file"
 msgstr "ឯកសារ​តូច"
 
-#: core/transcoding/formats/TranscodingAacFormat.cpp:59
+#: core/transcoding/formats/TranscodingAacFormat.cpp:49
 #: core/transcoding/formats/TranscodingMp3Format.cpp:56
 #: core/transcoding/formats/TranscodingOpusFormat.cpp:65
 #: core/transcoding/formats/TranscodingVorbisFormat.cpp:60
@@ -7919,13 +7900,22 @@ msgstr "ឯកសារ​តូច"
 msgid "Better sound quality"
 msgstr "គុណភាព​សំឡេង​ល្អ​ជាង"
 
-#: core/transcoding/formats/TranscodingAacFormat.cpp:66
+#: core/transcoding/formats/TranscodingAacFormat.cpp:56
 #, kde-format
-msgid "AAC (Non-Free)"
-msgstr "AAC (បង់​ថ្លៃ)"
+msgid "AAC"
+msgstr ""
 
-#: core/transcoding/formats/TranscodingAacFormat.cpp:74
-#, kde-format
+#: core/transcoding/formats/TranscodingAacFormat.cpp:64
+#, fuzzy, kde-format
+#| msgctxt ""
+#| "Feel free to redirect the english Wikipedia link to a local version, if "
+#| "it exists."
+#| msgid ""
+#| "<a href=http://en.wikipedia.org/wiki/Advanced_Audio_Coding>Advanced Audio "
+#| "Coding</a> (AAC) is a patented lossy codec for digital audio.<br>AAC "
+#| "generally achieves better sound quality than MP3 at similar bit rates. It "
+#| "is a reasonable choice for the iPod and some other portable music "
+#| "players. Non-Free implementation."
 msgctxt ""
 "Feel free to redirect the english Wikipedia link to a local version, if it "
 "exists."
@@ -7933,8 +7923,7 @@ msgid ""
 "<a href=http://en.wikipedia.org/wiki/Advanced_Audio_Coding>Advanced Audio "
 "Coding</a> (AAC) is a patented lossy codec for digital audio.<br>AAC "
 "generally achieves better sound quality than MP3 at similar bit rates. It is "
-"a reasonable choice for the iPod and some other portable music players. Non-"
-"Free implementation."
+"a reasonable choice for the iPod and some other portable music players."
 msgstr ""
 "<a href=http://en.wikipedia.org/wiki/Advanced_Audio_Coding>Advanced Audio "
 "Coding</a> (AAC) គឺជា​កូដិក​ដែល​បាត់បង់​ពេញលេញ​សម្រាប់​អូឌីយ៉ូ​ឌីជីថល ។<br>AAC ជាទូទៅ​ទទួល​បាន​គុណភាព​"
@@ -8035,6 +8024,12 @@ msgstr ""
 "គ្រាន់តែ​ប៉ាន់ស្មាន​ទៅ​លើ<br><b>160kb/s</b> គឺជា​ជម្រើស​ដ៏​ល្អ​សម្រាប់​តន្ត្រី​ដែល​ចាក់​នៅ​លើ​ឧបករណ៍​ចល័ត ។"
 "<br/>ប្រសិនបើ​វា​ទាប​ជាង <b>120kb/s</b> វា​អាច​នឹង​មិន​ល្អ​សម្រាប់​តន្ត្រី​ទេ ហើយ​ប្រសិនបើ​វា​ខ្ពស់​ជាង "
 "<b>205kb/s</b> វិញ វា​គឺ​ខ្ពស់​ពេក​ហើយ ។"
+
+#: core/transcoding/formats/TranscodingMp3Format.cpp:55
+#: core/transcoding/formats/TranscodingOpusFormat.cpp:64
+#, kde-format
+msgid "Expected average bitrate for variable bitrate encoding"
+msgstr "អត្រា​ប៊ីត​ជាមធ្យម​ដែល​បាន​រំពឹង​ទុក​សម្រាប់​ការ​អ៊ិនកូដ​អត្រា​ប៊ីត​អថេរ"
 
 #: core/transcoding/formats/TranscodingMp3Format.cpp:71
 #, kde-format
@@ -8181,11 +8176,6 @@ msgstr ""
 "បាន​អ៊ិនកូដ ។<br><b>136kb/s</b> គឺជា​ជម្រើស​ដ៏​ល្អ​សម្រាប់​តន្ត្រី​ដែល​ចាក់​នៅ​លើ​ឧបករណ៍​ចល័ត ។<br/"
 ">ប្រសិនបើ​វា​ទាប​ជាង <b>112kb/s</b> វា​អាច​នឹង​មិន​ល្អ​សម្រាប់​តន្ត្រី​ទេ ហើយ​ប្រសិនបើ​វា​ខ្ពស់​ជាង "
 "<b>182kb/s</b> វិញ វា​គឺ​ខ្ពស់​ពេក​ហើយ ។"
-
-#: core/transcoding/formats/TranscodingWmaFormat.cpp:59
-#, kde-format
-msgid "Bitrate target for constant bitrate encoding"
-msgstr "គោលដៅ​អត្រា​ប៊ីត​សម្រាប់​ការ​អ៊ិនកូដ​អត្រា​ប៊ីត​ថេរ"
 
 #: core/transcoding/formats/TranscodingWmaFormat.cpp:67
 #, kde-format
@@ -17177,13 +17167,13 @@ msgstr "កម្រិត​សំឡេង ៖ %1% %2"
 msgid "Transcode Tracks"
 msgstr "បទ​ដែល​បាន​ជ្រើស"
 
-#: transcoding/TranscodingAssistantDialog.cpp:50
+#: transcoding/TranscodingAssistantDialog.cpp:49
 #, fuzzy, kde-format
 #| msgid "&Translucent"
 msgid "Transc&ode"
 msgstr "ល្អក់"
 
-#: transcoding/TranscodingAssistantDialog.cpp:61
+#: transcoding/TranscodingAssistantDialog.cpp:60
 #, kde-format
 msgid ""
 "While copying, you can choose to transcode your music files into another "
@@ -17192,17 +17182,17 @@ msgid ""
 "program."
 msgstr ""
 
-#: transcoding/TranscodingAssistantDialog.cpp:66
+#: transcoding/TranscodingAssistantDialog.cpp:65
 #, kde-format
 msgid "&Copy"
 msgstr ""
 
-#: transcoding/TranscodingAssistantDialog.cpp:67
+#: transcoding/TranscodingAssistantDialog.cpp:66
 #, kde-format
 msgid "Just copy the tracks without transcoding them."
 msgstr ""
 
-#: transcoding/TranscodingAssistantDialog.cpp:71
+#: transcoding/TranscodingAssistantDialog.cpp:70
 #, kde-format
 msgid ""
 "While moving, you can choose to transcode your music files into another "
@@ -17212,23 +17202,23 @@ msgid ""
 "original location."
 msgstr ""
 
-#: transcoding/TranscodingAssistantDialog.cpp:77
+#: transcoding/TranscodingAssistantDialog.cpp:76
 #, kde-format
 msgid "&Move"
 msgstr ""
 
-#: transcoding/TranscodingAssistantDialog.cpp:78
+#: transcoding/TranscodingAssistantDialog.cpp:77
 #, kde-format
 msgid "Just move the tracks without transcoding them."
 msgstr ""
 
-#: transcoding/TranscodingAssistantDialog.cpp:145
+#: transcoding/TranscodingAssistantDialog.cpp:144
 #, kde-format
 msgctxt "Tooltip of a disabled transcoding encoder option"
 msgid "Not currently available on your system."
 msgstr ""
 
-#: transcoding/TranscodingAssistantDialog.cpp:152
+#: transcoding/TranscodingAssistantDialog.cpp:151
 #, kde-format
 msgid "Target collection indicates this format would not be playable."
 msgstr ""
@@ -17761,6 +17751,37 @@ msgstr "សិល្បករ \"%1\""
 #, kde-format
 msgid "empty"
 msgstr "សម្អាត"
+
+#~ msgid ""
+#~ "The bitrate is a measure of the quantity of data used to represent a "
+#~ "second of the audio track.<br>The <b>AAC</b> encoder used by Amarok "
+#~ "supports a <a href=http://en.wikipedia.org/wiki/"
+#~ "Variable_bitrate#Advantages_and_disadvantages_of_VBR>variable bitrate "
+#~ "(VBR)</a> setting, which means that the bitrate value fluctuates along "
+#~ "the track based on the complexity of the audio content. More complex "
+#~ "intervals of data are encoded with a higher bitrate than less complex "
+#~ "ones; this approach yields overall better quality and a smaller file than "
+#~ "having a constant bitrate throughout the track.<br>For this reason, the "
+#~ "bitrate measure in this slider is just an estimate of the <a href=http://"
+#~ "www.ffmpeg.org/faq.html#SEC21>average bitrate</a> of the encoded track."
+#~ "<br><b>150kb/s</b> is a good choice for music listening on a portable "
+#~ "player.<br/>Anything below <b>120kb/s</b> might be unsatisfactory for "
+#~ "music and anything above <b>200kb/s</b> is probably overkill."
+#~ msgstr ""
+#~ "អត្រា​ប៊ីត​គឺជា​រង្វាស់​គុណភាព​ទិន្នន័យ​ដែល​ត្រូវ​បាន​ប្រើ​ដើម្បី​បង្ហាញ​វិនាទី​របស់​បទ​អូឌីយ៉ូ ។<br>អ៊ិនកូឌ័រ "
+#~ "<b>AAC</b> ត្រូវ​បាន​ប្រើ​ដោយ​ Amarok ហើយ​គាំទ្រ <a href=http://en.wikipedia.org/"
+#~ "wiki/Variable_bitrate#Advantages_and_disadvantages_of_VBR>ការ​កំណត់ variable "
+#~ "bitrate (VBR)</a> ដែល​មានន័យថា​តម្លៃ​អត្រា​ប៊ីត​ប្រែប្រួល​ទៅ​តាម​បទ​ដោយ​ផ្អែកលើ​ភាព​ស្មុគស្មាញ​របស់​"
+#~ "មាតិកា​អូឌីយ៉ូ ។ ទិន្នន័យ​ដែល​មាន​ចន្លោះ​ពេល​​ស្មុគស្មាញ​ខ្លាំង ទិន្នន័យ​នោះ​នឹង​ត្រូវ​បាន​អ៊ិនកូដ​ជាមួយ​អត្រា​ប៊ីត​"
+#~ "ខ្ពស់​ជាង​ទិន្នន័យ​ដែល​មាន​ភាព​ស្មុគស្មាញ​តិច វា​ផ្ដល់​ឲ្យ​គុណភាព​ល្អ ហើយ​មាន​ទំហំ​តូចជាង​បទ​ដែល​បាន​អ៊ិនកូដ​ដោយ​"
+#~ "ប្រើ​អត្រា​ប៊ីត​ថេរ ។<br>សម្រាប់​ហេតុផល​នេះ រង្វាស់​អត្រា​ប៊ីត​នៅ​ក្នុង​ការ​បង្ហាញ​នេះ​គឺ​គ្រាន់តែ​ប៉ាន់ស្មាន​"
+#~ "ទៅ​លើ <a href=http://www.ffmpeg.org/faq.html#SEC21>អត្រា​ប៊ីត​ជាមធ្យម</a> របស់​បទ​"
+#~ "ដែល​បាន​អ៊ិនកូដ​តែប៉ុណ្ណោះ ។<br><b>150kb/s</b> គឺជា​ជម្រើស​ដ៏​ល្អ​សម្រាប់​តន្ត្រី​ដែល​ចាក់​នៅ​លើ​ឧបករណ៍​"
+#~ "ចល័ត ។<br/>ប្រសិនបើ​វា​ទាប​ជាង <b>120kb/s</b> វា​អាច​នឹង​មិន​ល្អ​សម្រាប់​តន្ត្រី​ទេ ហើយ​ប្រសិនបើ​វា​"
+#~ "ខ្ពស់​ជាង <b>200kb/s</b> វិញ វា​គឺ​ខ្ពស់​ពេក​ហើយ ។"
+
+#~ msgid "AAC (Non-Free)"
+#~ msgstr "AAC (បង់​ថ្លៃ)"
 
 #, fuzzy
 #~ msgid "New Format Preset"
