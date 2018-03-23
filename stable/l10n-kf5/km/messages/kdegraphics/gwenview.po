@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-03-22 06:00+0100\n"
+"POT-Creation-Date: 2018-03-23 06:05+0100\n"
 "PO-Revision-Date: 2012-07-11 10:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -699,7 +699,7 @@ msgstr "ប្ដូរ​ទំហំ​"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, CropWidget)
 #: app/imageopscontextmanageritem.cpp:110 lib/crop/cropimageoperation.cpp:71
-#: lib/crop/cropwidget.cpp:191 lib/crop/cropwidget.ui:20
+#: lib/crop/cropwidget.cpp:246 lib/crop/cropwidget.ui:20
 #, kde-format
 msgid "Crop"
 msgstr "ច្រឹប"
@@ -1766,44 +1766,51 @@ msgstr "ទំហំ​បច្ចុប្បន្ន ៖"
 msgid "Developer"
 msgstr "អ្នក​អភិវឌ្ឍន៍​ចម្បង"
 
-#: lib/crop/cropwidget.cpp:140
+#: lib/crop/cropwidget.cpp:183
+#, fuzzy, kde-format
+#| msgid "Print Image"
+msgid "Current Image"
+msgstr "បោះ​ពុម្ព​រូបភាព"
+
+#: lib/crop/cropwidget.cpp:186
 #, kde-format
 msgid "Square"
 msgstr "ការេ"
 
-#: lib/crop/cropwidget.cpp:141
+#: lib/crop/cropwidget.cpp:187
 #, kde-format
 msgid "This Screen"
 msgstr "អេក្រង់​នេះ"
 
-#: lib/crop/cropwidget.cpp:142
+#: lib/crop/cropwidget.cpp:188
 #, kde-format
 msgid "Landscape"
 msgstr "Landscape"
 
-#: lib/crop/cropwidget.cpp:147 lib/crop/cropwidget.cpp:154
-#, kde-format
-msgid "ISO Size (A4, A3...)"
+#: lib/crop/cropwidget.cpp:193 lib/crop/cropwidget.cpp:200
+#, fuzzy, kde-format
+#| msgid "ISO Size (A4, A3...)"
+msgid "ISO (A4, A3...)"
 msgstr "ISO Size (A4, A3...)"
 
-#: lib/crop/cropwidget.cpp:148 lib/crop/cropwidget.cpp:155
+#: lib/crop/cropwidget.cpp:194 lib/crop/cropwidget.cpp:201
 #, kde-format
 msgid "US Letter"
 msgstr "US Letter"
 
-#: lib/crop/cropwidget.cpp:149
+#: lib/crop/cropwidget.cpp:195
 #, kde-format
 msgid "Portrait"
 msgstr "Portrait"
 
 #. i18n("%1:%2") because ':' should not be translated, it is
 #. used to parse the ratio string.
-#: lib/crop/cropwidget.cpp:164
+#: lib/crop/cropwidget.cpp:210
 #, kde-format
 msgid "Width"
 msgstr "ទទឹង"
 
-#: lib/crop/cropwidget.cpp:164
+#: lib/crop/cropwidget.cpp:210
 #, kde-format
 msgid "Height"
 msgstr "កម្ពស់"
@@ -1816,9 +1823,10 @@ msgstr "ការ​កំណត់​កម្រិត​ខ្ពស់"
 
 #. i18n: ectx: property (text), widget (QLabel, label_6)
 #: lib/crop/cropwidget.ui:55
-#, kde-format
-msgid "Ratio:"
-msgstr "សមាមាត្រ ៖"
+#, fuzzy, kde-format
+#| msgid "Keep aspect ratio"
+msgid "Aspect ratio:"
+msgstr "រក្សា​សមាមាត្រ"
 
 #. i18n: ectx: property (text), widget (QLabel, label)
 #: lib/crop/cropwidget.ui:84
@@ -1831,6 +1839,13 @@ msgstr "ទំហំ ៖"
 #, kde-format
 msgid "Position:"
 msgstr "ទីតាំង ៖"
+
+#. i18n: ectx: property (text), widget (QCheckBox, preserveAspectRatioCheckBox)
+#: lib/crop/cropwidget.ui:166
+#, fuzzy, kde-format
+#| msgid "Keep aspect ratio"
+msgid "Preserve aspect ratio"
+msgstr "រក្សា​សមាមាត្រ"
 
 #: lib/document/document.cpp:305
 #, kde-format
@@ -2042,6 +2057,30 @@ msgstr "បញ្ឈប់​ត្រឹម​រូបភាព​របស់
 #, kde-format
 msgid "Interval between images (in seconds)"
 msgstr "ចន្លោះ​ពេល​រវាង​រូបភាព​ (គិត​ជា​វិនាទី)"
+
+#. i18n: ectx: label, entry (CropPreserveAspectRatio), group (Crop)
+#: lib/gwenviewconfig.kcfg:304
+#, kde-format
+msgid "Restrict crop to image ratio when Advanced Settings disabled"
+msgstr ""
+
+#. i18n: ectx: label, entry (CropRatioIndex), group (Crop)
+#: lib/gwenviewconfig.kcfg:308
+#, kde-format
+msgid "Index representing selected ratio in the Advanced settings combobox"
+msgstr ""
+
+#. i18n: ectx: label, entry (CropRatioWidth), group (Crop)
+#: lib/gwenviewconfig.kcfg:312
+#, kde-format
+msgid "Last used crop ratio width when Advanced Settings enabled"
+msgstr ""
+
+#. i18n: ectx: label, entry (CropRatioHeight), group (Crop)
+#: lib/gwenviewconfig.kcfg:316
+#, kde-format
+msgid "Last used crop ratio height when Advanced Settings enabled"
+msgstr ""
 
 #: lib/historymodel.cpp:148
 #, kde-format
@@ -2328,6 +2367,9 @@ msgstr "ឯកសារ"
 #, kde-format
 msgid "&View"
 msgstr "មើល"
+
+#~ msgid "Ratio:"
+#~ msgstr "សមាមាត្រ ៖"
 
 #~ msgid "Stop Slideshow"
 #~ msgstr "បញ្ឈប់​ការ​បញ្ចាំង​ស្លាយ"
