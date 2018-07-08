@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksudoku\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-06-30 03:42+0200\n"
+"POT-Creation-Date: 2018-07-08 03:23+0200\n"
 "PO-Revision-Date: 2013-01-02 14:55+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -41,21 +41,31 @@ msgstr ""
 msgid "Mathdoku or Killer Sudoku Puzzle"
 msgstr "បោះពុម្ព​ផ្គុំ​រូប Sudoku"
 
-#: src/generator/sudokuboard.cpp:192 src/generator/sudokuboard.cpp:232
+#: src/generator/sudokuboard.cpp:192 src/generator/sudokuboard.cpp:233
 #, fuzzy, kde-format
 #| msgid "%"
 msgid "%1"
 msgstr "%"
 
 #: src/generator/sudokuboard.cpp:198
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "After %1 tries, the best difficulty level achieved is %2, with internal "
+#| "difficulty rating %3, but you requested difficulty level %4. Do you wish "
+#| "to try again or accept the puzzle as is?\n"
+#| "\n"
+#| "If you accept the puzzle, it may help to change to No Symmetry or some "
+#| "low symmetry type, then use Game->New and try generating another puzzle."
 msgid ""
-"After %1 tries, the best difficulty level achieved is %2, with internal "
-"difficulty rating %3, but you requested difficulty level %4. Do you wish to "
-"try again or accept the puzzle as is?\n"
+"After %1 tries, the best difficulty level achieved by the generator is %2, "
+"with internal difficulty rating %3, but you requested difficulty level %4.\n"
 "\n"
-"If you accept the puzzle, it may help to change to No Symmetry or some low "
-"symmetry type, then use Game->New and try generating another puzzle."
+"Do you wish to let the generator try again or accept the puzzle as is?\n"
+"\n"
+"Hint: you can try to increase the difficulty rating by doing the following: "
+"Continue with the 'Accept' button, choose Game -> New, then change the "
+"Symmetry setting to 'No Symmetry' or some low symmetry type and then use "
+"'Generate A Puzzle' again."
 msgstr ""
 "បន្ទាប់ពី​ព្យាយាម %1 កម្រិត​ពិបាក​បំផុត​ដែល​ទទួល​បាន គឺ %2 ដោយ​មាន​ការ​វាយតម្លៃ​កម្រិត​ពិបាក​ខាងក្នុង %3 "
 "ប៉ុន្តែ​អ្នក​ស្នើ​សុំ​កម្រិត​ពិបាក %4 ។ តើ​អ្នក​ចង់​ព្យាយាម​ម្ដងទៀត ឬ​ព្រម​ទទួល​ល្បែង​ផ្គុំ​រូប​ដែរ​ឬ​ទេ ?\n"
@@ -63,23 +73,23 @@ msgstr ""
 "ប្រសិនបើ​អ្នក​ព្រម​ទទួល​ល្បែង​ផ្គុំ​រូប វា​អាច​ជួយ​អ្នក​ក្នុង​ការ​ផ្លាស់ប្ដូរ​ទៅជា​មិន​ស៊ីមេទ្រី ឬ​ប្រភេទ​ស៊ីមេទ្រី​កម្រិត​ទាប​"
 "មួយ​ចំនួន បន្ទាប់មក​ចុច ល្បែង->ថ្មី រួច​ព្យាយាម​បង្កើត​ល្បែង​ផ្គុំ​រូប​ផ្សេងទៀត ។"
 
-#: src/generator/sudokuboard.cpp:208 src/generator/sudokuboard.cpp:228
-#: src/generator/sudokuboard.cpp:244
+#: src/generator/sudokuboard.cpp:209 src/generator/sudokuboard.cpp:229
+#: src/generator/sudokuboard.cpp:245
 #, kde-format
 msgid "Difficulty Level"
 msgstr "កម្រិត​ពិបាក"
 
-#: src/generator/sudokuboard.cpp:209
+#: src/generator/sudokuboard.cpp:210
 #, kde-format
 msgid "&Try Again"
 msgstr "ព្យាយាម​ម្ដងទៀត"
 
-#: src/generator/sudokuboard.cpp:209
+#: src/generator/sudokuboard.cpp:210
 #, kde-format
 msgid "&Accept"
 msgstr "ព្រម​ទទួល"
 
-#: src/generator/sudokuboard.cpp:221
+#: src/generator/sudokuboard.cpp:222
 #, kde-format
 msgid ""
 "It will be possible to solve the generated puzzle by logic alone. No "
@@ -92,12 +102,12 @@ msgstr ""
 "\n"
 "ការ​វាយតម្លៃ​កម្រិត​ពិបាក​ខាងក្នុង គឺ %1 ។ មាន​គន្លឹះ %2 នៅ​ពេល​ចាប់ផ្ដើម និង %3 ផ្លាស់ទី​ទៅ ។"
 
-#: src/generator/sudokuboard.cpp:229 src/generator/sudokuboard.cpp:245
+#: src/generator/sudokuboard.cpp:230 src/generator/sudokuboard.cpp:246
 #, kde-format
 msgid "&Retry"
 msgstr ""
 
-#: src/generator/sudokuboard.cpp:235
+#: src/generator/sudokuboard.cpp:236
 #, kde-format
 msgid ""
 "Solving the generated puzzle will require an average of %1 guesses or branch "
@@ -523,7 +533,7 @@ msgstr "លេង​រូបផ្ដុំ"
 msgid "Play"
 msgstr "លេង​"
 
-#: src/gui/ksudoku.cpp:473 src/gui/ksudoku.cpp:887
+#: src/gui/ksudoku.cpp:473
 #, kde-format
 msgid "Enable all messages"
 msgstr ""
@@ -678,19 +688,35 @@ msgid "Theme"
 msgstr "ស្បែក"
 
 #: src/gui/ksudoku.cpp:844
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Warning: The Unlimited difficulty level has no limit on how many guesses "
+#| "or branch points are required to solve the puzzle and there is no lower "
+#| "limit on how soon guessing becomes necessary."
 msgid ""
 "Warning: The Unlimited difficulty level has no limit on how many guesses or "
 "branch points are required to solve the puzzle and there is no lower limit "
-"on how soon guessing becomes necessary."
+"on how soon guessing becomes necessary.\n"
+"\n"
+"Please also note that the generation of this type of puzzle might take much "
+"longer than other ones. During this time KSudoku will not respond."
 msgstr ""
 "ការ​ព្រមាន ៖ កម្រិត​ពិបាក​មិន​កំណត់​​មិន​មាន​ដែន​កំណត់​ក្នុង​ចំនួន​ស្មាន ឬ​ចំណុច​មែកធាង​ដែល​ត្រូវ​ទាមទារ​សម្រាប់​"
 "ដោះស្រាយ​ល្បែង​ផ្គុំ​រូប និង​គ្មាន​លីមីត​ក្រោម​អំពី​រយៈពេល​ដែល​ចាំបាច់​ផង​ដែរ ។"
 
-#: src/gui/ksudoku.cpp:848
+#: src/gui/ksudoku.cpp:851
 #, kde-format
 msgid "Warning"
 msgstr "ការ​ព្រមាន"
+
+#: src/gui/ksudoku.cpp:890
+#, kde-format
+msgid ""
+"This will enable all the dialogs that you had disabled by marking the 'Do "
+"not show this message again' option.\n"
+"\n"
+"Do you want to continue?"
+msgstr ""
 
 #. i18n: ectx: label, entry (Theme), group (Themes)
 #: src/gui/ksudoku.kcfg:41
