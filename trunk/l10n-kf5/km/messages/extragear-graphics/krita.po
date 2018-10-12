@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2018-10-11 03:42+0200\n"
+"POT-Creation-Date: 2018-10-12 03:52+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -7154,12 +7154,6 @@ msgctxt "action"
 msgid "Workspaces"
 msgstr "តំបន់​ធ្វើ​ការ​"
 
-#: krita/main.cc:390 libs/ui/KisApplication.cpp:364
-#, fuzzy, kde-format
-msgctxt "@title:window"
-msgid "Krita: Warning"
-msgstr "ការ​ព្រមាន!"
-
 #: krita/main.cc:391
 #, kde-format
 msgid ""
@@ -8188,6 +8182,7 @@ msgstr "ទំហំ"
 #: plugins/paintops/libpaintop/forms/wdgbrushchooser.ui:128
 #: plugins/paintops/libpaintop/kis_auto_brush_widget.cpp:63
 #: plugins/paintops/libpaintop/kis_brush_chooser.cpp:118
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:370
 #: plugins/paintops/libpaintop/kis_texture_chooser.cpp:43
 #: plugins/paintops/libpaintop/kis_texture_chooser.cpp:45
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_fade.cpp:65
@@ -11413,7 +11408,7 @@ msgstr "ជ្រើស​ផ្ទៃ​ខាងក្រោយ​"
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:822
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:825
 #: plugins/dockers/gamutmask/gamutmask_dock.cpp:299
-#: plugins/extensions/animationrenderer/AnimationRenderer.cpp:159
+#: plugins/extensions/animationrenderer/AnimationRenderer.cpp:160
 #: plugins/extensions/animationrenderer/DlgAnimationRenderer.cpp:477
 #: plugins/extensions/animationrenderer/DlgAnimationRenderer.cpp:481
 #: plugins/extensions/animationrenderer/DlgAnimationRenderer.cpp:487
@@ -12694,7 +12689,11 @@ msgstr "ចាប់ផ្ដើម​ថត​ម៉ាក្រូ"
 #: plugins/paintops/curvebrush/kis_curve_paintop_settings.cpp:142
 #: plugins/paintops/experiment/kis_experiment_paintop_settings.cpp:94
 #: plugins/paintops/experiment/kis_experiment_paintop_settings.cpp:169
+#: plugins/paintops/libpaintop/kis_curve_option.cpp:136
 #: plugins/paintops/libpaintop/kis_curve_option_widget.cpp:87
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:366
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:381
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:173
 #: plugins/paintops/spray/kis_spray_paintop_settings.cpp:179
 #: plugins/tools/defaulttool/connectionTool/ConnectionPointWidget.ui:116
 #, no-c-format, kde-format
@@ -23337,25 +23336,25 @@ msgctxt "@item:inmenu"
 msgid "Change audio (%1)..."
 msgstr "បើក​ ហើយ​កែសម្រួល..."
 
-#: plugins/dockers/animation/timeline_frames_view.cpp:954
+#: plugins/dockers/animation/timeline_frames_view.cpp:957
 #, fuzzy, kde-format
 msgctxt "@item:inmenu"
 msgid "Keyframes"
 msgstr "បញ្ចូល​ឈ្មោះ"
 
-#: plugins/dockers/animation/timeline_frames_view.cpp:962
+#: plugins/dockers/animation/timeline_frames_view.cpp:965
 #, fuzzy, kde-format
 msgctxt "@item:inmenu"
 msgid "Hold Frames"
 msgstr "ចម្លង​ពី"
 
-#: plugins/dockers/animation/timeline_frames_view.cpp:1426
+#: plugins/dockers/animation/timeline_frames_view.cpp:1429
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "Insert or Remove Hold Frames"
 msgstr "បញ្ចូល​ឈ្មោះ"
 
-#: plugins/dockers/animation/timeline_frames_view.cpp:1427
+#: plugins/dockers/animation/timeline_frames_view.cpp:1430
 #, fuzzy, kde-format
 msgctxt "@label:spinbox"
 msgid "Enter number of frames"
@@ -24460,14 +24459,19 @@ msgstr "ឧបករណ៍​ចូល​ផែ​"
 msgid "Render Animation"
 msgstr "ទិស"
 
-#: plugins/extensions/animationrenderer/AnimationRenderer.cpp:159
+#: plugins/extensions/animationrenderer/AnimationRenderer.cpp:151
+#, fuzzy, kde-format
+msgid "Could not open %1 for writing!"
+msgstr "ជ្រើស​សំណុំ​ឆានែល​សកម្ម"
+
+#: plugins/extensions/animationrenderer/AnimationRenderer.cpp:160
 #, fuzzy, kde-format
 msgid ""
 "Could not render animation:\n"
 "%1"
 msgstr "ការ​កំណត់​រចនាសម្ព័ន្ធ​ថ្មី %1"
 
-#: plugins/extensions/animationrenderer/AnimationRenderer.cpp:170
+#: plugins/extensions/animationrenderer/AnimationRenderer.cpp:171
 #, fuzzy, kde-format
 #| msgid "Failed to create an action."
 msgid "Failed to render animation frames!"
@@ -27042,6 +27046,9 @@ msgstr "កាត់​មុំ X ៖"
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:1099
 #: plugins/flake/pathshapes/ellipse/EllipseShapeConfigWidget.ui:55
 #: plugins/flake/pathshapes/ellipse/EllipseShapeConfigWidget.ui:72
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:379
+#: plugins/paintops/libpaintop/kis_pressure_hsv_option.cpp:171
+#: plugins/paintops/libpaintop/kis_pressure_rotation_option.cpp:85
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:93
 #: plugins/paintops/libpaintop/sensors/kis_dynamic_sensor_drawing_angle.cpp:102
 #, kde-format
@@ -31325,8 +31332,8 @@ msgid ""
 msgstr ""
 
 #: plugins/impex/libkra/kis_kra_load_visitor.cpp:155
-#: plugins/impex/libkra/kis_kra_loader.cpp:850
-#: plugins/impex/libkra/kis_kra_loader.cpp:1204
+#: plugins/impex/libkra/kis_kra_loader.cpp:853
+#: plugins/impex/libkra/kis_kra_loader.cpp:1207
 #, fuzzy, kde-format
 msgctxt "@title:window"
 msgid "File not found"
@@ -31452,7 +31459,7 @@ msgstr "ទំហំ​ស្រទាប់​"
 msgid "Failure loading layer %1 of type: %2."
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_loader.cpp:845
+#: plugins/impex/libkra/kis_kra_loader.cpp:848
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -31464,7 +31471,7 @@ msgid ""
 "Do you want to locate it manually?"
 msgstr ""
 
-#: plugins/impex/libkra/kis_kra_loader.cpp:1199
+#: plugins/impex/libkra/kis_kra_loader.cpp:1202
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -32839,7 +32846,7 @@ msgstr ""
 msgid "Video Export Error"
 msgstr "ស៊ុម​បញ្ឈរ"
 
-#: plugins/impex/video/kis_video_export.cpp:92
+#: plugins/impex/video/kis_video_export.cpp:93
 #, kde-format
 msgid ""
 "FFMpeg failed to convert the image sequence. Check the logfile in your "
@@ -33066,13 +33073,18 @@ msgid ""
 "destination streams of the ffmpeg"
 msgstr ""
 
-#: plugins/impex/video/video_saver.cpp:281
+#: plugins/impex/video/video_saver.cpp:220
+#, fuzzy, kde-format
+msgid "ffmpeg could not be found at %1"
+msgstr "មិន​អាច​បន្ថែម​ស្រទាប់​ទៅ​កាន់​រូបភាព​បាន​ទេ ។"
+
+#: plugins/impex/video/video_saver.cpp:282
 #, fuzzy, kde-format
 msgid "Fetching palette..."
 msgstr "កែសម្រួល​ក្តារលាយ​..."
 
-#: plugins/impex/video/video_saver.cpp:309
-#: plugins/impex/video/video_saver.cpp:352
+#: plugins/impex/video/video_saver.cpp:310
+#: plugins/impex/video/video_saver.cpp:353
 #, fuzzy, kde-format
 #| msgid "Export Layer"
 msgid "Encoding frames..."
@@ -34459,8 +34471,8 @@ msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label)
 #. i18n: ectx: property (toolTip), widget (QComboBox, curveMode)
-#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:407
-#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:423
+#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:490
+#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:506
 #, kde-format
 msgid ""
 "<html><head/><body>\n"
@@ -34477,39 +34489,39 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, label)
-#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:410
+#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:493
 #, fuzzy, kde-format
 #| msgid "Selection mode:"
 msgid "Curves calculation mode:"
 msgstr "របៀប​ជម្រើស ៖"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, curveMode)
-#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:430
+#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:513
 #, fuzzy, kde-format
 msgid "multiply"
 msgstr "គ្រោង ៖"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, curveMode)
-#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:435
+#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:518
 #, fuzzy, kde-format
 msgid "addition"
 msgstr "អំពើ ៖"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, curveMode)
-#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:440
+#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:523
 #, fuzzy, kde-format
 #| msgid "Matrix Widget"
 msgid "maximum"
 msgstr "ធាតុ​ក្រាហ្វិក​ម៉ាទ្រីស​"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, curveMode)
-#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:445
+#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:528
 #, kde-format
 msgid "minimum"
 msgstr ""
 
 #. i18n: ectx: property (text), item, widget (QComboBox, curveMode)
-#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:450
+#: plugins/paintops/libpaintop/forms/wdgcurveoption.ui:533
 #, fuzzy, kde-format
 msgid "difference"
 msgstr "ចំណូល​ចិត្ត"
@@ -34958,6 +34970,12 @@ msgstr "30°"
 #, kde-format
 msgid "Near"
 msgstr "ជិត"
+
+#: plugins/paintops/libpaintop/kis_dynamic_sensor.cc:372
+#, fuzzy, kde-format
+#| msgid "0 s"
+msgid " ms"
+msgstr "0 វិ."
 
 #: plugins/paintops/libpaintop/kis_dynamic_sensor.h:40
 #, fuzzy, kde-format
@@ -41002,6 +41020,11 @@ msgstr "បង្ហាញ​ការ​តុបតែង"
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
+
+#, fuzzy
+#~ msgctxt "@title:window"
+#~ msgid "Krita: Warning"
+#~ msgstr "ការ​ព្រមាន!"
 
 #, fuzzy
 #~ msgid "Show Scrollbar"
