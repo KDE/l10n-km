@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: dolphin\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-03-11 02:56+0100\n"
+"POT-Creation-Date: 2019-03-18 07:46+0100\n"
 "PO-Revision-Date: 2012-12-18 08:25+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -1482,7 +1482,31 @@ msgctxt "@label::textbox"
 msgid "Select which data should be shown:"
 msgstr "ជ្រើស​ទិន្នន័យ​ណាមួយ​ដែល​គួរ​ត្រូវ​បាន​បង្ហាញ ៖"
 
-#: panels/information/informationpanelcontent.cpp:226
+#: panels/information/informationpanel.cpp:174
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Preview"
+msgstr "មើល​ជា​​​មុន"
+
+#: panels/information/informationpanel.cpp:179
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Configure..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​​​​..."
+
+#: panels/information/informationpanel.cpp:182
+#, kde-format
+msgctxt "@action:inmenu"
+msgid "Condensed Date"
+msgstr ""
+
+#: panels/information/informationpanel.cpp:206
+#, kde-format
+msgctxt "@label::textbox"
+msgid "Select which data should be shown in the information panel:"
+msgstr "ជ្រើស​ទិន្នន័យ​ណាមួយ​ដែល​គួរ​ត្រូវ​បង្ហាញ​នៅ​ក្នុង​បន្ទះ​ព័ត៌មាន ៖"
+
+#: panels/information/informationpanelcontent.cpp:224
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "%1 item selected"
@@ -1491,30 +1515,6 @@ msgctxt "@label"
 msgid "%1 item selected"
 msgid_plural "%1 items selected"
 msgstr[0] "បាន​ជ្រើស​ធាតុ %1"
-
-#: panels/information/informationpanelcontent.cpp:271
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Preview"
-msgstr "មើល​ជា​​​មុន"
-
-#: panels/information/informationpanelcontent.cpp:276
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Configure..."
-msgstr "កំណត់​រចនាសម្ព័ន្ធ​​​​..."
-
-#: panels/information/informationpanelcontent.cpp:279
-#, kde-format
-msgctxt "@action:inmenu"
-msgid "Condensed Date"
-msgstr ""
-
-#: panels/information/informationpanelcontent.cpp:303
-#, kde-format
-msgctxt "@label::textbox"
-msgid "Select which data should be shown in the information panel:"
-msgstr "ជ្រើស​ទិន្នន័យ​ណាមួយ​ដែល​គួរ​ត្រូវ​បង្ហាញ​នៅ​ក្នុង​បន្ទះ​ព័ត៌មាន ៖"
 
 #: panels/information/phononwidget.cpp:126
 #, kde-format
@@ -2347,16 +2347,24 @@ msgstr "ធុងសំរាម"
 #: settings/general/behaviorsettingspage.cpp:51
 #, kde-format
 msgctxt "@option:radio"
-msgid "Remember properties for each folder"
-msgstr "ចងចាំ​លក្ខណៈសម្បត្តិ​​សម្រាប់​ថត​នីមួយៗ"
+msgid "Use common properties for all folders"
+msgstr "ប្រើ​លក្ខណៈសម្បត្តិ​ទិដ្ឋភាព​​ទូទៅ​​សម្រាប់​ថត​ទាំងអស់"
 
 #: settings/general/behaviorsettingspage.cpp:52
 #, kde-format
 msgctxt "@option:radio"
-msgid "Use common properties for all folders"
-msgstr "ប្រើ​លក្ខណៈសម្បត្តិ​ទិដ្ឋភាព​​ទូទៅ​​សម្រាប់​ថត​ទាំងអស់"
+msgid "Remember properties for each folder"
+msgstr "ចងចាំ​លក្ខណៈសម្បត្តិ​​សម្រាប់​ថត​នីមួយៗ"
 
-#: settings/general/behaviorsettingspage.cpp:57
+#: settings/general/behaviorsettingspage.cpp:53
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Dolphin will create an hidden .directory file in each folder you change view "
+"properties for."
+msgstr ""
+
+#: settings/general/behaviorsettingspage.cpp:58
 #, fuzzy, kde-format
 #| msgctxt "@title:group"
 #| msgid "View"
@@ -2364,7 +2372,7 @@ msgctxt "@title:group"
 msgid "View: "
 msgstr "មើល"
 
-#: settings/general/behaviorsettingspage.cpp:65
+#: settings/general/behaviorsettingspage.cpp:66
 #, fuzzy, kde-format
 #| msgctxt "option:check"
 #| msgid "Natural sorting of items"
@@ -2372,19 +2380,19 @@ msgctxt "option:radio"
 msgid "Natural"
 msgstr "តម្រៀប​ធាតុ​តាម​​តាម​លំនាំដើម"
 
-#: settings/general/behaviorsettingspage.cpp:66
+#: settings/general/behaviorsettingspage.cpp:67
 #, kde-format
 msgctxt "option:radio"
 msgid "Alphabetical, case insensitive"
 msgstr ""
 
-#: settings/general/behaviorsettingspage.cpp:67
+#: settings/general/behaviorsettingspage.cpp:68
 #, kde-format
 msgctxt "option:radio"
 msgid "Alphabetical, case sensitive"
 msgstr ""
 
-#: settings/general/behaviorsettingspage.cpp:73
+#: settings/general/behaviorsettingspage.cpp:74
 #, fuzzy, kde-format
 #| msgctxt "@label:listbox"
 #| msgid "Sorting:"
@@ -2392,44 +2400,44 @@ msgctxt "@title:group"
 msgid "Sorting mode: "
 msgstr "ការ​តម្រៀប ៖"
 
-#: settings/general/behaviorsettingspage.cpp:83
+#: settings/general/behaviorsettingspage.cpp:84
 #, kde-format
 msgctxt "@option:check"
 msgid "Show tooltips"
 msgstr "បង្ហាញ​ព័ត៌មាន​ជំនួយ"
 
-#: settings/general/behaviorsettingspage.cpp:84
-#: settings/general/behaviorsettingspage.cpp:92
+#: settings/general/behaviorsettingspage.cpp:85
+#: settings/general/behaviorsettingspage.cpp:93
 #, kde-format
 msgctxt "@title:group"
 msgid "Miscellaneous: "
 msgstr ""
 
-#: settings/general/behaviorsettingspage.cpp:88
+#: settings/general/behaviorsettingspage.cpp:89
 #, kde-format
 msgctxt "@option:check"
 msgid "Show selection marker"
 msgstr "បង្ហាញ​ឧបករណ៍​សម្គាល់​ការ​ជ្រើស"
 
-#: settings/general/behaviorsettingspage.cpp:96
+#: settings/general/behaviorsettingspage.cpp:97
 #, kde-format
 msgctxt "option:check"
 msgid "Rename inline"
 msgstr "ប្ដូរ​ឈ្មោះ​​ក្នុង​តួ"
 
-#: settings/general/behaviorsettingspage.cpp:100
+#: settings/general/behaviorsettingspage.cpp:101
 #, kde-format
 msgctxt "option:check"
 msgid "Switch between split views panes with tab key"
 msgstr ""
 
-#: settings/general/behaviorsettingspage.cpp:104
+#: settings/general/behaviorsettingspage.cpp:105
 #, kde-format
 msgctxt "option:check"
 msgid "Turning off split view closes active pane"
 msgstr ""
 
-#: settings/general/behaviorsettingspage.cpp:106
+#: settings/general/behaviorsettingspage.cpp:107
 #, kde-format
 msgid "When deactivated, turning off split view will close the inactive pane"
 msgstr ""
