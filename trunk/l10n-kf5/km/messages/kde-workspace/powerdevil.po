@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: powerdevil\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-03-04 03:42+0100\n"
+"POT-Creation-Date: 2019-03-19 03:42+0100\n"
 "PO-Revision-Date: 2012-06-14 13:53+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -316,18 +316,24 @@ msgid "Previous maintainer"
 msgstr "អ្នកថែទាំ"
 
 #: powerdevilcore.cpp:91
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "No valid Power Management backend plugins are available. A new "
+#| "installation might solve this problem."
 msgid ""
-"No valid Power Management backend plugins are available. A new installation "
+"No valid Power Management backend plugins available. A new installation "
 "might solve this problem."
 msgstr ""
 "កម្មវិធី​ជំនួយ​កម្មវិធី​ខាងក្រោយ​ការ​គ្រប់គ្រង​ថាមពល​មិន​ត្រឹមត្រូវ​​ដែល​អាច​មាន​ ។ ​ការ​ដំឡើង​ថ្មី​អាច​ត្រូវ​បាន​ដោះ​"
 "ស្រាយ​បញ្ហានេះ​ ។​"
 
 #: powerdevilcore.cpp:329
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "The profile \"%1\" has been selected, but it does not exist.\n"
+#| "Please check your PowerDevil configuration."
 msgid ""
-"The profile \"%1\" has been selected, but it does not exist.\n"
+"Profile \"%1\" has been selected but does not exist.\n"
 "Please check your PowerDevil configuration."
 msgstr ""
 "ទម្រង់ \"%1\" ត្រូវ​បាន​ជ្រើស ប៉ុន្តែ​វា​មិនទាន់មាន​ទេ !\n"
@@ -339,8 +345,9 @@ msgid "Activity Manager"
 msgstr "កម្មវិធី​គ្រប់គ្រង​សកម្មភាព"
 
 #: powerdevilcore.cpp:392
-#, kde-format
-msgid "This activity's policies prevent the system from suspending"
+#, fuzzy, kde-format
+#| msgid "This activity's policies prevent the system from suspending"
+msgid "This activity's policies prevent the system from going to sleep"
 msgstr "គោលនយោបាយ​របស់​សកម្មភាព​នេះ​ការពារ​ប្រព័ន្ធ​មិន​ឲ្យ​ផ្អាក"
 
 #: powerdevilcore.cpp:404
@@ -363,12 +370,9 @@ msgid "Extra Battery Added"
 msgstr ""
 
 #: powerdevilcore.cpp:465 powerdevilcore.cpp:641
-#, fuzzy, kde-format
-#| msgid ""
-#| "The power adaptor has been plugged in – all pending suspend actions have "
-#| "been canceled."
-msgid "All pending suspend actions have been canceled."
-msgstr "អាដាប់ទ័រ​ថាមពល​ត្រូវ​បាន​ដោត ។ ​ការ​ផ្អាក​សកម្មភាព​​ដែល​មិន​ទាន់​សម្រេច​ទាំងងស់​ត្រូវ​បានបោះបង់ ។"
+#, kde-format
+msgid "The computer will no longer go to sleep."
+msgstr ""
 
 #: powerdevilcore.cpp:530
 #, kde-format
@@ -381,12 +385,12 @@ msgstr ""
 msgid "Mouse Battery Low (%1% Remaining)"
 msgstr ""
 
-#: powerdevilcore.cpp:541
+#: powerdevilcore.cpp:541 powerdevilcore.cpp:548 powerdevilcore.cpp:555
 #, kde-format
 msgctxt "Placeholder is device name"
 msgid ""
-"The battery in your mouse (\"%1\") is low, and the device may turn itself "
-"off at any time. Please replace or charge the battery as soon as possible."
+"The battery in (\"%1\") is running low, and the device may turn off at any "
+"time. Please recharge or replace the battery."
 msgstr ""
 
 #: powerdevilcore.cpp:546
@@ -394,27 +398,10 @@ msgstr ""
 msgid "Keyboard Battery Low (%1% Remaining)"
 msgstr ""
 
-#: powerdevilcore.cpp:548
-#, kde-format
-msgctxt "Placeholder is device name"
-msgid ""
-"The battery in your keyboard (\"%1\") is low, and the device may turn itself "
-"off at any time. Please replace or charge the battery as soon as possible."
-msgstr ""
-
 #: powerdevilcore.cpp:553
 #, kde-format
 msgctxt "The battery in an external device"
 msgid "Device Battery Low (%1% Remaining)"
-msgstr ""
-
-#: powerdevilcore.cpp:555
-#, kde-format
-msgctxt "Placeholder is device name"
-msgid ""
-"The battery in a connected device (\"%1\") is low, and the device may turn "
-"itself off at any time. Please replace or charge the battery as soon as "
-"possible."
 msgstr ""
 
 #: powerdevilcore.cpp:579
@@ -425,8 +412,8 @@ msgstr ""
 #: powerdevilcore.cpp:580
 #, kde-format
 msgid ""
-"Your battery is low. If you need to continue using your computer, either "
-"plug in your computer, or shut it down and then change the battery."
+"Battery running low - to continue using your computer, plug it in or shut it "
+"down and change the battery."
 msgstr ""
 
 #: powerdevilcore.cpp:591
@@ -437,7 +424,8 @@ msgstr ""
 #: powerdevilcore.cpp:593
 #, kde-format
 msgctxt ""
-"Cancel timeout that will automatically suspend system because of low battery"
+"Cancel timeout that will automatically put system to sleep because of low "
+"battery"
 msgid "Cancel"
 msgstr ""
 
@@ -445,8 +433,7 @@ msgstr ""
 #, fuzzy, kde-format
 #| msgid ""
 #| "Your battery level is critical, the computer will be halted in 30 seconds."
-msgid ""
-"Your battery level is critical, the computer will be halted in 60 seconds."
+msgid "Battery level critical. Your computer will shut down in 60 seconds."
 msgstr "ថ្ម​របស់​អ្នក​បាន​ដល់​កម្រិត​គ្រោះថ្នាក់​ កុំព្យូទ័រ​នឹង​​ត្រូវ​បាន​បញ្ឈប់​នៅ​​ក្នុង​រយៈ​ពេល​ ៣០ វិនាទី ។"
 
 #: powerdevilcore.cpp:607
@@ -455,23 +442,21 @@ msgstr "ថ្ម​របស់​អ្នក​បាន​ដល់​កម
 #| "Your battery level is critical, the computer will be hibernated in 30 "
 #| "seconds."
 msgid ""
-"Your battery level is critical, the computer will be hibernated in 60 "
+"Battery level critical. Your computer will enter hibernation mode in 60 "
 "seconds."
 msgstr "ថ្ម​របស់​អ្នក​បាន​ដល់​កម្រិត​គ្រោះថ្នាក់ កុំព្យូទ័រ​នឹង​ផ្អាក​ក្នុងរយៈពេល ៣០ វិនាទី ។"
 
 #: powerdevilcore.cpp:612
 #, fuzzy, kde-format
 #| msgid ""
-#| "Your battery level is critical, the computer will be suspended in 30 "
-#| "seconds."
-msgid ""
-"Your battery level is critical, the computer will be suspended in 60 seconds."
-msgstr "ថ្ម​របស់​អ្នក​បាន​ដល់​កម្រិត​គ្រោះថ្នាក់ កុំព្យូទ័រ​នឹង​ផ្អាក​​​ក្នុង​រយៈពេល ៣០ វិនាទី ។"
+#| "Your battery level is critical, the computer will be halted in 30 seconds."
+msgid "Battery level critical. Your computer will go to sleep in 60 seconds."
+msgstr "ថ្ម​របស់​អ្នក​បាន​ដល់​កម្រិត​គ្រោះថ្នាក់​ កុំព្យូទ័រ​នឹង​​ត្រូវ​បាន​បញ្ឈប់​នៅ​​ក្នុង​រយៈ​ពេល​ ៣០ វិនាទី ។"
 
 #: powerdevilcore.cpp:617
 #, fuzzy, kde-format
 #| msgid "Your battery level is critical: save your work as soon as possible."
-msgid "Your battery level is critical, save your work as soon as possible."
+msgid "Battery level critical. Please save your work."
 msgstr "ថ្ម​របស់​អ្នក​បាន​ដល់​កម្រិត​គ្រោះថ្នាក់ រក្សាទុក​ការងារ​របស់​អ្នក​ឲ្យ​បាន​ឆាប់​តាមដែល​អាច​ធ្វើ​បាន ។"
 
 #: powerdevilcore.cpp:640
@@ -485,8 +470,9 @@ msgid "Running on AC power"
 msgstr ""
 
 #: powerdevilcore.cpp:643
-#, kde-format
-msgid "The power adaptor has been plugged in."
+#, fuzzy, kde-format
+#| msgid "The power adaptor has been plugged in."
+msgid "The power adapter has been plugged in."
 msgstr "អាដាប់ទ័រ​ថាមពល​ត្រូវ​បាន​ដោត ។"
 
 #: powerdevilcore.cpp:646
@@ -495,15 +481,20 @@ msgid "Running on Battery Power"
 msgstr ""
 
 #: powerdevilcore.cpp:646
-#, kde-format
-msgid "The power adaptor has been unplugged."
+#, fuzzy, kde-format
+#| msgid "The power adaptor has been unplugged."
+msgid "The power adapter has been unplugged."
 msgstr "អាដាប់ទ័រ​ថាមពល​បាន​ដក​ចេញ ។"
 
 #: powerdevilcore.cpp:652
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "KDE Power Management System could not be initialized. The backend "
+#| "reported the following error: %1\n"
+#| "Please check your system configuration"
 msgid ""
-"KDE Power Management System could not be initialized. The backend reported "
-"the following error: %1\n"
+"The KDE Power Management System could not be initialized. The backend "
+"reported the following error: %1\n"
 "Please check your system configuration"
 msgstr ""
 "ប្រព័ន្ធ​​គ្រប់គ្រង​ថាមពល​ KDE ​អាច​មិន​ត្រូវ​បាន​ដំឡើង​ទេ ។​ កម្មវិធី​ខាង​ក្រោយ​បាន​រាយការណ៍​កំហុស​ដូច​ខាងក្រោម "
@@ -512,13 +503,30 @@ msgstr ""
 
 #: powerdevilcore.cpp:713
 #, kde-format
-msgid "Charge Complete"
+msgid "Charging Complete"
 msgstr ""
 
 #: powerdevilcore.cpp:713
 #, kde-format
-msgid "Your battery is now fully charged."
+msgid "Battery now fully charged."
 msgstr ""
+
+#, fuzzy
+#~| msgid ""
+#~| "The power adaptor has been plugged in – all pending suspend actions have "
+#~| "been canceled."
+#~ msgid "All pending suspend actions have been canceled."
+#~ msgstr ""
+#~ "អាដាប់ទ័រ​ថាមពល​ត្រូវ​បាន​ដោត ។ ​ការ​ផ្អាក​សកម្មភាព​​ដែល​មិន​ទាន់​សម្រេច​ទាំងងស់​ត្រូវ​បានបោះបង់ ។"
+
+#, fuzzy
+#~| msgid ""
+#~| "Your battery level is critical, the computer will be suspended in 30 "
+#~| "seconds."
+#~ msgid ""
+#~ "Your battery level is critical, the computer will be suspended in 60 "
+#~ "seconds."
+#~ msgstr "ថ្ម​របស់​អ្នក​បាន​ដល់​កម្រិត​គ្រោះថ្នាក់ កុំព្យូទ័រ​នឹង​ផ្អាក​​​ក្នុង​រយៈពេល ៣០ វិនាទី ។"
 
 #, fuzzy
 #~| msgid "Sleep"
