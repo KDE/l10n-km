@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: akonadicontact\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-04-12 03:24+0200\n"
+"POT-Creation-Date: 2019-04-15 03:27+0200\n"
 "PO-Revision-Date: 2012-07-11 10:24+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -131,12 +131,20 @@ msgstr ""
 
 #. i18n: ectx: whatsthis, entry (SendSmsAction), group (Send SMS Settings)
 #: akonadi-contacts/actions/contactactionssettings.kcfg.cmake:72
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Defines which application shall be used to send an SMS to the phone "
+#| "number of a contact. If 'Skype' is selected the Skype application will be "
+#| "started (if installed on the computer) and the SMS is sent via Skype. If "
+#| "'External Application' is selected, a command with placeholders can be "
+#| "defined."
 msgid ""
 "Defines which application shall be used to send an SMS to the phone number "
-"of a contact. If 'Skype' is selected the Skype application will be started "
-"(if installed on the computer) and the SMS is sent via Skype. If 'External "
-"Application' is selected, a command with placeholders can be defined."
+"of a contact. If 'System Default' is selected the default handler for SMS "
+"messages on your system will be used (e.g. KDE Connect), otherwise the "
+"selected application will be used to send the SMS message (if installed on "
+"the computer). If 'External Application' is selected, a command with "
+"placeholders can be defined."
 msgstr ""
 "កំណត់​កម្មវិធី​ណាមួយ​ដែលនឹង​ត្រូវ​បាន​ប្រើ​ ដើម្បី​ផ្ញើ SMS ទៅលេខ​ទូរស័ព្ទ​របស់​ទំនាក់ទំនង ។ ប្រសិនបើ 'Skype' "
 "ត្រូវ​បាន​ជ្រើសរើស នោះ​កម្មវិធី Skype នឹង​ត្រូវ​បាន​ចាប់ផ្ដើម​ (ប្រសិនបើ​បាន​ដំឡើង) ហើយ SMS ត្រូវ​បាន​"
@@ -159,9 +167,7 @@ msgstr ""
 "ពាក្យ​បញ្ជា​នេះ​កំណត់​កម្មវិធី​ដែល​នឹង​ត្រូវ​បាន​ប្រតិបត្តិ​ ដើម្បី​ផ្ញើ SMS ទៅ​លេខ​ទូរស័ព្ទ​របស់​ទំនាក់ទំនង ។"
 
 #. i18n: ectx: tooltip, entry (SmsCommand), group (Send SMS Settings)
-#. i18n: ectx: tooltip, entry (SmsKdeconnectCommand), group (Send SMS Settings)
 #: akonadi-contacts/actions/contactactionssettings.kcfg.cmake:81
-#: akonadi-contacts/actions/contactactionssettings.kcfg.cmake:89
 #, no-c-format, kde-format
 msgid ""
 "The following placeholders can be used in the command:\n"
@@ -173,13 +179,6 @@ msgstr ""
 "   %N ៖ លេខ​ជួរដេក​ដូច​បាន​រក្សាទុក​នៅ​ក្នុង​សៀវភៅ​អាសយដ្ឋាន ។\n"
 "   %n ៖ លេខ​ធម្មតា​ដែលមាន​កា​រយក​តួអក្សរ​មិនមែន​ជា​លេខ​ចេញ ។\n"
 "   %t ៖ អត្ថបទ"
-
-#. i18n: ectx: label, entry (SmsKdeconnectCommand), group (Send SMS Settings)
-#: akonadi-contacts/actions/contactactionssettings.kcfg.cmake:85
-#, fuzzy, kde-format
-#| msgid "SMS Command"
-msgid "KdeConnect SMS Command"
-msgstr "ពាក្យ​បញ្ជា SMS"
 
 #: akonadi-contacts/actions/dialphonenumberaction.cpp:86
 #: akonadi-contacts/actions/sendsmsaction.cpp:66
@@ -460,7 +459,7 @@ msgctxt "@title:column all email addresses of a person"
 msgid "All EMails"
 msgstr "គ្រប់​អ៊ីមែល​"
 
-#: akonadi-contacts/contactviewer.cpp:79
+#: akonadi-contacts/contactviewer.cpp:77
 #, kde-format
 msgid "Contact %1"
 msgstr "​ទំនាក់ទំនង​​ %1"
@@ -994,11 +993,11 @@ msgctxt "@action:inmenu Copy a contact photo"
 msgid "Copy Photo"
 msgstr "ចម្លង​ទំនាក់ទំនង​ទៅកាន់​"
 
-#: akonadi-contacts/textbrowser.cpp:120
+#: akonadi-contacts/textbrowser.cpp:119
 #, fuzzy, kde-format
 #| msgid "Copy Contact"
 #| msgid_plural "Copy %1 Contacts"
-msgctxt "@action:inmenu Copy a QR or Datamatrix image"
+msgctxt "@action:inmenu Copy a QR code image"
 msgid "Copy Code"
 msgstr "ចម្លង​ទំនាក់ទំនង​​ %1​​"
 
@@ -1693,6 +1692,11 @@ msgstr ""
 #| msgid "Set as Standard"
 msgid "Set as Preferred"
 msgstr "កំណត់​ស្តង់ដារ​"
+
+#, fuzzy
+#~| msgid "SMS Command"
+#~ msgid "KdeConnect SMS Command"
+#~ msgstr "ពាក្យ​បញ្ជា SMS"
 
 #~ msgid ""
 #~ "Defines which application shall be used to dial the phone number of a "
