@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-06-22 02:53+0200\n"
+"POT-Creation-Date: 2019-06-23 02:55+0200\n"
 "PO-Revision-Date: 2012-07-09 10:34+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -274,7 +274,7 @@ msgid ""
 "Root privileges are required to complete renaming. Do you want to continue?"
 msgstr ""
 
-#: core/job.cpp:318 filewidgets/knewfilemenu.cpp:549
+#: core/job.cpp:318 filewidgets/knewfilemenu.cpp:529
 #, kde-format
 msgid "Create Symlink"
 msgstr "​បង្កើត​តំណ​និមិត្ត​សញ្ញា"
@@ -3661,23 +3661,33 @@ msgstr ""
 "តម្រងផ្ទាល់ខ្លួន​ដោយផ្ទាល់​ទៅក្នុង​ផ្ទៃអត្ថបទ ។</p><p>តួអក្សរ​ជំនួស​ដូចជា * និង ? គឺ​អាចប្រើបាន ។</"
 "p></qt>"
 
-#: filewidgets/knewfilemenu.cpp:389
+#: filewidgets/knewfilemenu.cpp:395
 #, kde-format
 msgid "Sorry"
 msgstr "សូម​ទោស"
 
-#: filewidgets/knewfilemenu.cpp:398
+#: filewidgets/knewfilemenu.cpp:404
 #, kde-format
 msgid "<qt>The template file <b>%1</b> does not exist.</qt>"
 msgstr "<qt>មិន​ទាន់​មាន​ឯកសារ​ពុម្ព <b>%1</b> នៅ​ឡើយទេ ។</qt>"
 
-#: filewidgets/knewfilemenu.cpp:416
+#: filewidgets/knewfilemenu.cpp:526 filewidgets/knewfilemenu.cpp:607
 #, kde-format
-msgctxt "@action:button"
-msgid "Create directory"
-msgstr "បង្កើត​ថត"
+msgid "File name:"
+msgstr "ឈ្មោះ​ឯកសារ ៖"
 
-#: filewidgets/knewfilemenu.cpp:418 filewidgets/knewfilemenu.cpp:867
+#: filewidgets/knewfilemenu.cpp:611
+#, kde-format
+msgid "Create link to URL"
+msgstr "បង្កើត​តំណ​ទៅ​កាន់ URL"
+
+#: filewidgets/knewfilemenu.cpp:657 filewidgets/knewfilemenu.cpp:714
+#, kde-format
+msgctxt "@item:inmenu Create New"
+msgid "%1"
+msgstr "%1"
+
+#: filewidgets/knewfilemenu.cpp:847
 #, fuzzy, kde-format
 #| msgctxt "@action:button"
 #| msgid "Enter a different name"
@@ -3685,46 +3695,13 @@ msgctxt "@action:button"
 msgid "Enter a Different Name"
 msgstr "បញ្ចូល​ឈ្មោះ​ផ្សេង"
 
-#: filewidgets/knewfilemenu.cpp:422
-#, kde-format
-msgid "Create hidden directory?"
-msgstr "បង្កើត​ថត​ដែល​បានលាក់ ?"
-
-#: filewidgets/knewfilemenu.cpp:432
-#, kde-format
-msgid ""
-"The name \"%1\" starts with a dot, so the directory will be hidden by "
-"default."
-msgstr "ឈ្មោះ \"%1\" ចាប់ផ្ដើម​ដោយ ដូច្នេះ​ថត​នឹង​ត្រូវ​បានលាក់​​តាម​លំនាំដើម ។"
-
-#: filewidgets/knewfilemenu.cpp:434 widgets/executablefileopendialog.cpp:36
-#, kde-format
-msgid "Do not ask again"
-msgstr "កុំ​សួរ​ម្ដង​ទៀត"
-
-#: filewidgets/knewfilemenu.cpp:546 filewidgets/knewfilemenu.cpp:627
-#, kde-format
-msgid "File name:"
-msgstr "ឈ្មោះ​ឯកសារ ៖"
-
-#: filewidgets/knewfilemenu.cpp:631
-#, kde-format
-msgid "Create link to URL"
-msgstr "បង្កើត​តំណ​ទៅ​កាន់ URL"
-
-#: filewidgets/knewfilemenu.cpp:677 filewidgets/knewfilemenu.cpp:734
-#, kde-format
-msgctxt "@item:inmenu Create New"
-msgid "%1"
-msgstr "%1"
-
-#: filewidgets/knewfilemenu.cpp:871
+#: filewidgets/knewfilemenu.cpp:851
 #, fuzzy, kde-format
 #| msgid "Invalid Filenames"
 msgid "Invalid Directory Name"
 msgstr "ឈ្មោះ​ឯកសារ​មិន​ត្រឹមត្រូវ"
 
-#: filewidgets/knewfilemenu.cpp:880
+#: filewidgets/knewfilemenu.cpp:860
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3732,33 +3709,80 @@ msgid ""
 "it is reserved for use by the operating system."
 msgstr ""
 
-#: filewidgets/knewfilemenu.cpp:1140
+#: filewidgets/knewfilemenu.cpp:1060
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"The name <filename>%1</filename> cannot be used because it is reserved for "
+"use by the operating system."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1068
+#, fuzzy, kde-kuit-format
+#| msgid ""
+#| "The name \"%1\" starts with a dot, so the directory will be hidden by "
+#| "default."
+msgctxt "@info"
+msgid ""
+"The name <filename>%1</filename> starts with a dot, so it will be hidden by "
+"default."
+msgstr "ឈ្មោះ \"%1\" ចាប់ផ្ដើម​ដោយ ដូច្នេះ​ថត​នឹង​ត្រូវ​បានលាក់​​តាម​លំនាំដើម ។"
+
+#: filewidgets/knewfilemenu.cpp:1085
+#, kde-format
+msgid "Using slashes in folder names will create sub-folders, like so:"
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1095
+#, kde-format
+msgid "Using slashes in folder names will create sub-folders."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1107
+#, kde-format
+msgid "Slashes cannot be used in file and folder names."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1113
+#, kde-format
+msgid "Backslashes cannot be used in file and folder names."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1122
+#, kde-format
+msgid ""
+"Starting a file or folder name with a tilde is not recommended because it "
+"may be confusing or dangerous when using the terminal to delete things."
+msgstr ""
+
+#: filewidgets/knewfilemenu.cpp:1195
 #, kde-format
 msgid "Create New"
 msgstr "បង្កើត​ថ្មី"
 
-#: filewidgets/knewfilemenu.cpp:1155
+#: filewidgets/knewfilemenu.cpp:1210
 #, kde-format
 msgid "Link to Device"
 msgstr "តភ្ជាប់​ទៅ​ឧបករណ៍"
 
-#: filewidgets/knewfilemenu.cpp:1209
+#: filewidgets/knewfilemenu.cpp:1264
 #, kde-format
 msgctxt "Default name for a new folder"
 msgid "New Folder"
 msgstr "ថត​ថ្មី"
 
-#: filewidgets/knewfilemenu.cpp:1219
+#: filewidgets/knewfilemenu.cpp:1275
 #, kde-format
 msgctxt "@title:window"
 msgid "New Folder"
 msgstr "ថត​ថ្មី"
 
-#: filewidgets/knewfilemenu.cpp:1222
-#, kde-format
-msgid ""
-"Create new folder in:\n"
-"%1"
+#: filewidgets/knewfilemenu.cpp:1285
+#, fuzzy, kde-format
+#| msgid ""
+#| "Create new folder in:\n"
+#| "%1"
+msgid "Create new folder in %1:"
 msgstr ""
 "បង្កើត​ថត​ថ្មី​ក្នុង ៖\n"
 "%1"
@@ -7241,6 +7265,11 @@ msgstr ""
 msgid "What do you wish to do with this executable file?"
 msgstr "តើ​អ្នក​ចង់​រក្សាទុក​ឃ្លា​សម្ងាត់​ក្នុង​ឯកសារ​កាបូប​របស់​អ្នក​ឬ​ទេ ?"
 
+#: widgets/executablefileopendialog.cpp:36
+#, kde-format
+msgid "Do not ask again"
+msgstr "កុំ​សួរ​ម្ដង​ទៀត"
+
 #: widgets/executablefileopendialog.cpp:39
 #, fuzzy, kde-format
 #| msgid "Exec"
@@ -9383,6 +9412,13 @@ msgid ""
 msgstr ""
 "ម៉ាស៊ីន​ពី​ចម្ងាយ​មិន​ផ្ញើ​វិញ្ញាបនបត្រ SSL ។\n"
 "បោះបង់​ពីព្រោះ​អត្តសញ្ញាណ​របស់ម៉ាស៊ីន​មិន​អាច​ត្រូវ​បានបង្កើត​ទេ ។"
+
+#~ msgctxt "@action:button"
+#~ msgid "Create directory"
+#~ msgstr "បង្កើត​ថត"
+
+#~ msgid "Create hidden directory?"
+#~ msgstr "បង្កើត​ថត​ដែល​បានលាក់ ?"
 
 #~ msgid "Show Aside Preview"
 #~ msgstr "បង្ហាញ​ការ​មើល​ផ្នែក​ជា​មុន"
