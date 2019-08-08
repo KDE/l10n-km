@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-06 02:32+0200\n"
+"POT-Creation-Date: 2019-08-08 02:30+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -5228,11 +5228,9 @@ msgstr "រក្សាទុក​ម៉ាក្រូ​"
 msgid "&Image"
 msgstr "​រូបភាព"
 
-#. i18n: ectx: property (text), widget (QRadioButton, freeRotationRadioButton)
 #: krita/krita4.xmlgui:149 krita/krita4.xmlgui:231 krita/krita4.xmlgui:247
 #: plugins/extensions/rotateimage/rotateimage.xmlgui:5
 #: plugins/extensions/rotateimage/rotateimage.xmlgui:18
-#: plugins/tools/tool_transform2/wdg_tool_transform.ui:546
 #, kde-format
 msgid "&Rotate"
 msgstr "បង្វិល"
@@ -12409,6 +12407,7 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QLabel, label_4)
 #. i18n: ectx: property (text), widget (QLabel, widthLabel)
 #. i18n: ectx: property (text), widget (QLabel, intWidthzqffs)
+#. i18n: ectx: property (text), widget (QLabel, label_width)
 #: libs/ui/dialogs/KisDlgCustomTabletResolution.ui:67
 #: libs/ui/forms/wdg_resolution.ui:20 libs/ui/forms/wdgimageproperties.ui:44
 #: libs/ui/forms/wdgrectangleconstraints.ui:92
@@ -12428,6 +12427,7 @@ msgstr ""
 #: plugins/python/documenttools/tools/canvassizetool/canvassizetool.py:46
 #: plugins/python/documenttools/tools/scaletool/scaletool.py:52
 #: plugins/tools/karbonplugins/tools/CalligraphyTool/KarbonCalligraphyOptionWidget.cpp:91
+#: plugins/tools/tool_transform2/wdg_tool_transform.ui:875
 #, kde-format
 msgid "Width:"
 msgstr "​ទទឹង ៖"
@@ -12449,6 +12449,7 @@ msgstr "អុហ្វសិត X ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_12)
 #. i18n: ectx: property (text), widget (QLabel, heightLabel)
 #. i18n: ectx: property (text), widget (QLabel, intHeightqsdfq)
+#. i18n: ectx: property (text), widget (QLabel, label_height)
 #: libs/ui/dialogs/KisDlgCustomTabletResolution.ui:104
 #: libs/ui/forms/wdg_resolution.ui:27 libs/ui/forms/wdgimageproperties.ui:67
 #: libs/ui/forms/wdgrectangleconstraints.ui:150
@@ -12466,6 +12467,7 @@ msgstr "អុហ្វសិត X ៖"
 #: plugins/python/comics_project_management_tools/comics_template_dialog.py:196
 #: plugins/python/documenttools/tools/canvassizetool/canvassizetool.py:47
 #: plugins/python/documenttools/tools/scaletool/scaletool.py:53
+#: plugins/tools/tool_transform2/wdg_tool_transform.ui:935
 #, kde-format
 msgid "Height:"
 msgstr "កម្ពស់​ ៖"
@@ -38890,11 +38892,9 @@ msgstr ""
 msgid "Degrees:"
 msgstr "៩០ អង្សា"
 
-#. i18n: ectx: property (text), widget (QRadioButton, freeScaleRadioButton)
 #. i18n: ectx: property (title), widget (QGroupBox, scaleGroup)
 #. i18n: ectx: property (text), widget (QToolButton, liquifyScale)
 #: plugins/python/documenttools/tools/scaletool/scaletool.py:24
-#: plugins/tools/tool_transform2/wdg_tool_transform.ui:556
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:826
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1823
 #, kde-format
@@ -42619,14 +42619,29 @@ msgstr ""
 #. i18n: ectx: property (text), widget (QRadioButton, freeMoveRadioButton)
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:533
 #, fuzzy, kde-format
-msgid "Posi&tion"
+msgctxt "@option:radio Type of transformation"
+msgid "Position"
 msgstr "របៀប​តែង"
 
-#. i18n: ectx: property (text), widget (QRadioButton, freeShearRadioButton)
-#. i18n: ectx: property (title), widget (QGroupBox, shearGroup)
-#: plugins/tools/tool_transform2/wdg_tool_transform.ui:566
-#: plugins/tools/tool_transform2/wdg_tool_transform.ui:1105
+#. i18n: ectx: property (text), widget (QRadioButton, freeRotationRadioButton)
+#: plugins/tools/tool_transform2/wdg_tool_transform.ui:546
 #, fuzzy, kde-format
+msgctxt "@option:radio Type of transformation"
+msgid "Rotate"
+msgstr "បង្វិល"
+
+#. i18n: ectx: property (text), widget (QRadioButton, freeScaleRadioButton)
+#: plugins/tools/tool_transform2/wdg_tool_transform.ui:556
+#, fuzzy, kde-format
+#| msgid "Scale"
+msgctxt "@option:radio Type of transformation"
+msgid "Scale"
+msgstr "​មាត្រដ្ឋាន"
+
+#. i18n: ectx: property (text), widget (QRadioButton, freeShearRadioButton)
+#: plugins/tools/tool_transform2/wdg_tool_transform.ui:566
+#, fuzzy, kde-format
+msgctxt "@option:radio Type of transformation"
 msgid "Shear"
 msgstr "កាត់"
 
@@ -42674,12 +42689,6 @@ msgstr "ទំហំ ៖"
 msgid "Horizontal Scale"
 msgstr "រលក​ផ្ដេក​ "
 
-#. i18n: ectx: property (text), widget (QLabel, label_width)
-#: plugins/tools/tool_transform2/wdg_tool_transform.ui:875
-#, fuzzy, kde-format
-msgid "w&idth:"
-msgstr "​ទទឹង ៖"
-
 #. i18n: ectx: property (toolTip), widget (KisIntParseSpinBox, scaleYBox)
 #. i18n: ectx: property (toolTip), widget (QLabel, label_height)
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:910
@@ -42687,12 +42696,6 @@ msgstr "​ទទឹង ៖"
 #, kde-format
 msgid "Vertical Scale"
 msgstr "មាត្រដ្ឋាន​បញ្ឈរ"
-
-#. i18n: ectx: property (text), widget (QLabel, label_height)
-#: plugins/tools/tool_transform2/wdg_tool_transform.ui:935
-#, fuzzy, kde-format
-msgid "&height:"
-msgstr "កម្ពស់​ ៖"
 
 #. i18n: ectx: property (text), widget (QLabel, label_offsetX)
 #. i18n: ectx: property (text), widget (QLabel, label_shearX)
@@ -42709,6 +42712,12 @@ msgstr "គ្រាប់ចុច ៖"
 #, fuzzy, kde-format
 msgid "y:"
 msgstr "គ្រាប់ចុច ៖"
+
+#. i18n: ectx: property (title), widget (QGroupBox, shearGroup)
+#: plugins/tools/tool_transform2/wdg_tool_transform.ui:1105
+#, fuzzy, kde-format
+msgid "Shear"
+msgstr "កាត់"
 
 #. i18n: ectx: property (toolTip), widget (QLabel, label_shearX)
 #. i18n: ectx: property (toolTip), widget (KisDoubleSliderSpinBox, shearXBox)
@@ -42842,6 +42851,18 @@ msgstr "បង្ហាញ​ការ​តុបតែង"
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
+
+#, fuzzy
+#~ msgid "Posi&tion"
+#~ msgstr "របៀប​តែង"
+
+#, fuzzy
+#~ msgid "w&idth:"
+#~ msgstr "​ទទឹង ៖"
+
+#, fuzzy
+#~ msgid "&height:"
+#~ msgstr "កម្ពស់​ ៖"
 
 #, fuzzy
 #~ msgctxt "action"
