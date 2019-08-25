@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: gwenview\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-08-13 03:17+0200\n"
+"POT-Creation-Date: 2019-08-25 02:43+0200\n"
 "PO-Revision-Date: 2012-07-11 10:26+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -596,8 +596,22 @@ msgstr "បញ្ចាំង​វីដេអូ"
 msgid "Background color:"
 msgstr "ពណ៌​ផ្ទៃ​ខាង​ក្រោយ ៖"
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
+#. i18n: ectx: property (text), widget (QLabel, label)
 #: app/generalconfigpage.ui:128
+#, kde-format
+msgid "JPEG save quality:"
+msgstr ""
+
+#. i18n: ectx: property (suffix), widget (QSpinBox, kcfg_JPEGQuality)
+#: app/generalconfigpage.ui:141
+#, fuzzy, no-c-format, kde-format
+#| msgctxt "@info:tooltip of custom toolbar button"
+#| msgid "%1"
+msgid "%"
+msgstr "%1"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: app/generalconfigpage.ui:164
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu"
 #| msgid "Thumbnail Details"
@@ -605,25 +619,38 @@ msgid "Thumbnail actions:"
 msgstr "សេចក្ដី​លម្អិត​អំពី​រូបភាព​តូច​ៗ"
 
 #. i18n: ectx: property (text), widget (QRadioButton, allButtonsThumbnailActionsRadioButton)
-#: app/generalconfigpage.ui:135
+#: app/generalconfigpage.ui:171
 #, kde-format
 msgid "All buttons"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, selectionOnlyThumbnailActionsRadioButton)
-#: app/generalconfigpage.ui:142
+#: app/generalconfigpage.ui:178
 #, kde-format
 msgid "Show selection button only"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, noneThumbnailActionsRadioButton)
 #. i18n: ectx: property (text), widget (QRadioButton, noAnimationRadioButton)
-#: app/generalconfigpage.ui:149 app/imageviewconfigpage.ui:466
+#: app/generalconfigpage.ui:185 app/imageviewconfigpage.ui:466
 #, kde-format
 msgid "None"
 msgstr "គ្មាន"
 
-#: app/gvcore.cpp:73
+#: app/gvcore.cpp:82
+#, kde-format
+msgid "JPEG quality:"
+msgstr ""
+
+#: app/gvcore.cpp:89
+#, fuzzy, kde-format
+#| msgctxt "@info:tooltip of custom toolbar button"
+#| msgid "%1"
+msgctxt "Spinbox suffix; percentage 1 - 100"
+msgid "%"
+msgstr "%1"
+
+#: app/gvcore.cpp:112
 #, fuzzy, kde-format
 #| msgctxt "@title:window"
 #| msgid "Open Image"
@@ -631,23 +658,23 @@ msgctxt "@title:window"
 msgid "Save Image"
 msgstr "បើក​រូបភាព"
 
-#: app/gvcore.cpp:108
+#: app/gvcore.cpp:153
 #, kde-format
 msgctxt "@info"
 msgid "Gwenview cannot save images as %1."
 msgstr "Gwenview មិន​អាច​រក្សា​ទុក​រូបភាព​ជា​ %1 បាន​ទេ ។"
 
-#: app/gvcore.cpp:343
+#: app/gvcore.cpp:388
 #, kde-format
 msgid "Save using another format"
 msgstr "រក្សា​ទុក​ដោយ​ប្រើ​ទ្រង់​ទ្រាយ​មួយ​ផ្សេង​ទៀត"
 
-#: app/gvcore.cpp:346
+#: app/gvcore.cpp:391
 #, kde-format
 msgid "Gwenview cannot save images in '%1' format."
 msgstr "Gwenview មិន​អាច​រក្សា​ទុក​រូបភាព​ជា​ទ្រង់​ទ្រាយ​ '%1' បាន​ទេ ។"
 
-#: app/gvcore.cpp:369 app/gvcore.cpp:392
+#: app/gvcore.cpp:421 app/gvcore.cpp:450
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "<b>Saving <filename>%1</filename> failed:</b><br>%2"
@@ -657,12 +684,12 @@ msgid ""
 "emphasis><nl />%2"
 msgstr "<b>ការ​រក្សា​ទុក​ <filename>%1</filename> បាន​បរាជ័យ ៖</b><br>%2"
 
-#: app/gvcore.cpp:412
+#: app/gvcore.cpp:470
 #, kde-format
 msgid "You are now viewing the new document."
 msgstr "ឥឡូវ​នេះ​ អ្នក​កំពុង​តែ​មើល​ឯកសារ​ថ្មី ។"
 
-#: app/gvcore.cpp:414
+#: app/gvcore.cpp:472
 #, kde-format
 msgid "Go back to the original"
 msgstr "ត្រឡប់​ទៅ​កាន់​រូបភាពដើម"
@@ -2096,7 +2123,7 @@ msgstr ""
 "            ដែល​ត្រូវ​ប្រើ​សម្រាប់​ឯកសារ​បណ្ដោះ​អាសន្ន​ដោយ​ KSaveFile ។"
 
 #. i18n: ectx: whatsthis, entry (ZoomMode), group (ImageView)
-#: lib/gwenviewconfig.kcfg:182
+#: lib/gwenviewconfig.kcfg:186
 #, kde-format
 msgid ""
 "Defines what happens when going to image B after\n"
@@ -2113,7 +2140,7 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: whatsthis, entry (RenderingIntent), group (ImageView)
-#: lib/gwenviewconfig.kcfg:196
+#: lib/gwenviewconfig.kcfg:200
 #, kde-format
 msgid ""
 "Defines how colors are rendered when your display\n"
@@ -2126,55 +2153,55 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: label, entry (random), group (slide show)
-#: lib/gwenviewconfig.kcfg:282
+#: lib/gwenviewconfig.kcfg:286
 #, kde-format
 msgid "Display slide show images in random order"
 msgstr "បង្ហាញ​រូបភាព​បញ្ចាំង​ស្លាយ​តាម​លំដាប់​ចៃដន្យ"
 
 #. i18n: ectx: label, entry (fullscreen), group (slide show)
-#: lib/gwenviewconfig.kcfg:286
+#: lib/gwenviewconfig.kcfg:290
 #, kde-format
 msgid "Show slideshow in fullscreen mode"
 msgstr "បង្ហាញ​ការ​បញ្ចាំង​ស្លាយ​តាម​របៀប​ពេញ​អេក្រង់"
 
 #. i18n: ectx: label, entry (loop), group (slide show)
-#: lib/gwenviewconfig.kcfg:290
+#: lib/gwenviewconfig.kcfg:294
 #, kde-format
 msgid "Loop on images"
 msgstr "រង្វិល​ជុំ​លើ​រូបភាព"
 
 #. i18n: ectx: label, entry (stopAtEnd), group (slide show)
-#: lib/gwenviewconfig.kcfg:294
+#: lib/gwenviewconfig.kcfg:298
 #, kde-format
 msgid "Stop at last image of folder"
 msgstr "បញ្ឈប់​ត្រឹម​រូបភាព​របស់​ថត​ចុង​ក្រោយ"
 
 #. i18n: ectx: label, entry (interval), group (slide show)
-#: lib/gwenviewconfig.kcfg:298
+#: lib/gwenviewconfig.kcfg:302
 #, kde-format
 msgid "Interval between images (in seconds)"
 msgstr "ចន្លោះ​ពេល​រវាង​រូបភាព​ (គិត​ជា​វិនាទី)"
 
 #. i18n: ectx: label, entry (CropPreserveAspectRatio), group (Crop)
-#: lib/gwenviewconfig.kcfg:314
+#: lib/gwenviewconfig.kcfg:318
 #, kde-format
 msgid "Restrict crop to image ratio when Advanced Settings disabled"
 msgstr ""
 
 #. i18n: ectx: label, entry (CropRatioIndex), group (Crop)
-#: lib/gwenviewconfig.kcfg:318
+#: lib/gwenviewconfig.kcfg:322
 #, kde-format
 msgid "Index representing selected ratio in the Advanced settings combobox"
 msgstr ""
 
 #. i18n: ectx: label, entry (CropRatioWidth), group (Crop)
-#: lib/gwenviewconfig.kcfg:322
+#: lib/gwenviewconfig.kcfg:326
 #, kde-format
 msgid "Last used crop ratio width when Advanced Settings enabled"
 msgstr ""
 
 #. i18n: ectx: label, entry (CropRatioHeight), group (Crop)
-#: lib/gwenviewconfig.kcfg:326
+#: lib/gwenviewconfig.kcfg:330
 #, kde-format
 msgid "Last used crop ratio height when Advanced Settings enabled"
 msgstr ""
@@ -2250,13 +2277,13 @@ msgctxt "@title:column"
 msgid "Value"
 msgstr "តម្លៃ"
 
-#: lib/jpegcontent.cpp:649
+#: lib/jpegcontent.cpp:650
 #, kde-format
 msgctxt "@info"
 msgid "Could not open file for writing."
 msgstr "មិន​អាច​បើក​ឯកសារ​ដើម្បី​សរសេរ​បាន​ទេ ។"
 
-#: lib/jpegcontent.cpp:665
+#: lib/jpegcontent.cpp:666
 #, kde-format
 msgctxt "@info"
 msgid "No data to store."
