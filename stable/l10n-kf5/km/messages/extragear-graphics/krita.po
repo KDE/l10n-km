@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-10-10 07:44+0200\n"
+"POT-Creation-Date: 2019-10-11 07:58+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -28304,23 +28304,18 @@ msgstr "២៧០ អង្សា"
 msgid "&Custom:"
 msgstr "ផ្ទាល់ខ្លួន ៖"
 
-#: plugins/extensions/separate_channels/dlg_separate.cc:39
+#: plugins/extensions/separate_channels/dlg_separate.cc:41
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:74
 #: plugins/extensions/separate_channels/kis_separate_channels_plugin.cc:86
 #, kde-format
 msgid "Separate Image"
 msgstr "បំបែក​រូបភាព"
 
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:210
+#: plugins/extensions/separate_channels/kis_channel_separator.cc:203
 #, fuzzy
 msgctxt "(qtundo-format)"
 msgid "Separate Image"
 msgstr "បំបែក​រូបភាព"
-
-#: plugins/extensions/separate_channels/kis_channel_separator.cc:238
-#, kde-format
-msgid "Export Layer"
-msgstr "នាំ​ស្រទាប់​ចេញ"
 
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: plugins/extensions/separate_channels/wdg_separations.ui:19
@@ -28347,62 +28342,56 @@ msgstr "ស្រទាប់​បច្ចុប្បន្ន"
 msgid "Flatten all layers before separation"
 msgstr "ធ្វើ​ឲ្យ​ស្រទាប់​ទាំងអស់​រាប​ស្មើ​មុន​ពេល​បំបែក​"
 
-#. i18n: ectx: property (title), widget (QGroupBox, grpOutput)
-#: plugins/extensions/separate_channels/wdg_separations.ui:84
-#: plugins/python/scripter/ui_scripter/actions/runaction/runaction.py:46
-#: plugins/python/scripter/ui_scripter/actions/runaction/runaction.py:68
-#: plugins/python/scripter/ui_scripter/tabwidgets/outputwidget/outputwidget.py:28
-#, kde-format
-msgid "Output"
-msgstr "លទ្ធផល"
-
-#. i18n: ectx: property (text), widget (QRadioButton, radioLayers)
-#: plugins/extensions/separate_channels/wdg_separations.ui:90
-#, kde-format
-msgid "To layers"
-msgstr "ទៅ​កាន់​ស្រទាប់​"
-
-#. i18n: ectx: property (text), widget (QRadioButton, radioImages)
-#: plugins/extensions/separate_channels/wdg_separations.ui:100
-#, kde-format
-msgid "To images"
-msgstr "ទៅ​កាន់​រូបភាព​"
-
 #. i18n: ectx: property (title), widget (QGroupBox, grpAlpha)
-#: plugins/extensions/separate_channels/wdg_separations.ui:112
+#: plugins/extensions/separate_channels/wdg_separations.ui:86
 #, kde-format
 msgid "Alpha Options"
 msgstr "ជម្រើស​​អាល់ហ្វា"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioCopyAlpha)
-#: plugins/extensions/separate_channels/wdg_separations.ui:118
+#: plugins/extensions/separate_channels/wdg_separations.ui:92
 #, kde-format
 msgid "Copy alpha channel to each separated channel as an alpha channel"
 msgstr "ចម្លង​ឆានែល​អាល់ហ្វា ទៅ​ឆានែល​ដែល​បាន​បំបែក​នីមួយៗ​ជា​ឆានែល​អាល់ហ្វា​"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioDiscardAlpha)
-#: plugins/extensions/separate_channels/wdg_separations.ui:125
+#: plugins/extensions/separate_channels/wdg_separations.ui:99
 #, kde-format
 msgid "Discard alpha channel"
 msgstr "បោះបង់​ឆានែល​អាល់ហ្វា​"
 
 #. i18n: ectx: property (text), widget (QRadioButton, radioSeparateAlpha)
-#: plugins/extensions/separate_channels/wdg_separations.ui:135
+#: plugins/extensions/separate_channels/wdg_separations.ui:109
 #, kde-format
 msgid "Create separate separation from alpha channel"
 msgstr "បង្កើត​ការ​បំបែក​ពី​ឆានែល​អាល់ហ្វា​"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkDownscale)
-#: plugins/extensions/separate_channels/wdg_separations.ui:145
+#: plugins/extensions/separate_channels/wdg_separations.ui:119
 #, kde-format
 msgid "Downscale to 8-bit before separating"
 msgstr "បន្ថយ​មាត្រដ្ឋាន​ទៅ ៨ ប៊ីត មុន​ពេល​បំបែក"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkColors)
-#: plugins/extensions/separate_channels/wdg_separations.ui:152
+#: plugins/extensions/separate_channels/wdg_separations.ui:126
 #, kde-format
 msgid "Output to color, not grayscale"
 msgstr "បង្ហាញ​ជា​ពណ៌ មិនមែន​ជាមាត្រដ្ឋាន​ប្រផេះទេ"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, chkActivateCurrentChannel)
+#: plugins/extensions/separate_channels/wdg_separations.ui:133
+#, kde-format
+msgid ""
+"Activate only the current channel for the new node, deactivate all other "
+"channels."
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QCheckBox, chkActivateCurrentChannel)
+#: plugins/extensions/separate_channels/wdg_separations.ui:136
+#, fuzzy, kde-format
+#| msgid "Delete the current action"
+msgid "Activate the current channel"
+msgstr "លុប​សកម្មភាព​​បច្ចុប្បន្ន"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgShearImage)
 #: plugins/extensions/shearimage/dlg_shearimage.cc:32
@@ -38948,6 +38937,12 @@ msgstr "បើក​នៅ​ក្នុង​ឯកសារ​ថ្មី"
 msgid "Please specify a document by opening it before reloading"
 msgstr ""
 
+#: plugins/python/scripter/ui_scripter/actions/runaction/runaction.py:46
+#: plugins/python/scripter/ui_scripter/actions/runaction/runaction.py:68
+#: plugins/python/scripter/ui_scripter/tabwidgets/outputwidget/outputwidget.py:28
+msgid "Output"
+msgstr "លទ្ធផល"
+
 #: plugins/python/scripter/ui_scripter/actions/runaction/runaction.py:50
 msgid "Run"
 msgstr ""
@@ -42389,6 +42384,15 @@ msgstr "បង្ហាញ​ការ​តុបតែង"
 #, kde-format
 msgid "Work Recursively"
 msgstr ""
+
+#~ msgid "Export Layer"
+#~ msgstr "នាំ​ស្រទាប់​ចេញ"
+
+#~ msgid "To layers"
+#~ msgstr "ទៅ​កាន់​ស្រទាប់​"
+
+#~ msgid "To images"
+#~ msgstr "ទៅ​កាន់​រូបភាព​"
 
 #, fuzzy
 #~ msgid "File not found"
@@ -48870,12 +48874,6 @@ msgstr ""
 #~ msgctxt "(qtundo-format)"
 #~ msgid "Move an action down"
 #~ msgstr "ផ្លាស់ទី​សកម្មភាព​ចុះក្រោម"
-
-#, fuzzy
-#~| msgid "Delete the current action"
-#~ msgctxt "(qtundo-format)"
-#~ msgid "Delete the current action"
-#~ msgstr "លុប​សកម្មភាព​​បច្ចុប្បន្ន"
 
 #, fuzzy
 #~| msgid "Current color model:"
