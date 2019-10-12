@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplato\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-09-25 02:28+0200\n"
+"POT-Creation-Date: 2019-10-12 02:34+0200\n"
 "PO-Revision-Date: 2010-06-24 10:42+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -734,19 +734,23 @@ msgstr "បាន​អនុញ្ញាត​ឯកតា​ថិរវេល
 msgid "Path to the documentation"
 msgstr ""
 
-#. i18n: ectx: label, entry (Language), group (Documentation)
+#. i18n: ectx: label, entry (ContextPath), group (Documentation)
 #: calligraplansettings.kcfg:364
 #, kde-format
-msgid "The documentation must have been translated to the language"
+msgid "Path to the context help documentation"
+msgstr ""
+
+#. i18n: ectx: label, entry (ContextLanguage), group (Documentation)
+#: calligraplansettings.kcfg:368
+#, kde-format
+msgid ""
+"The context help documentation must have been translated to the language"
 msgstr ""
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, leaderlabel)
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_DocumentationPath)
-#. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Manager)
 #. i18n: ectx: property (whatsThis), widget (KLineEdit, kcfg_Leader)
-#: ConfigDocumentationPanel.ui:54 ConfigDocumentationPanel.ui:91
-#: ConfigProjectPanel.ui:41 ConfigProjectPanel.ui:68
-#: kptconfigtaskpanelbase.ui:33 kptconfigtaskpanelbase.ui:65
+#: ConfigDocumentationPanel.ui:40 kptconfigtaskpanelbase.ui:33
+#: kptconfigtaskpanelbase.ui:65
 #, kde-format
 msgid ""
 "The person responsible for this task.\n"
@@ -761,15 +765,48 @@ msgstr ""
 "សៀវភៅ​អាសយដ្ឋាន​របស់​អ្នក​ដោយ​ផ្ទាល់​ផង​ដែរ ដោយ​ចុច​ប៊ូតុង​ជ្រើស ។"
 
 #. i18n: ectx: property (text), widget (QLabel, leaderlabel)
-#: ConfigDocumentationPanel.ui:57
+#: ConfigDocumentationPanel.ui:43
+#, fuzzy, kde-format
+#| msgid "Duration"
+msgid "Documentation:"
+msgstr "ថិរវេលា"
+
+#. i18n: ectx: property (text), widget (QLabel, contextlabel)
+#: ConfigDocumentationPanel.ui:79
 #, kde-format
-msgid "Path:"
+msgid "Contex help:"
 msgstr ""
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: ConfigDocumentationPanel.ui:73
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: ConfigDocumentationPanel.ui:95
 #, kde-format
-msgid "Language:"
+msgid "Context language"
+msgstr ""
+
+#: ConfigProjectPanel.cpp:50
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "The project manager of this project."
+msgstr ""
+
+#: ConfigProjectPanel.cpp:53
+#, fuzzy, kde-kuit-format
+#| msgid "Delete resource"
+#| msgid_plural "Delete resources"
+msgctxt "@info:tooltip"
+msgid "Check to enable shared resources"
+msgstr "លុបធនធាន"
+
+#: ConfigProjectPanel.cpp:56
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "The file where shared resources are defined"
+msgstr ""
+
+#: ConfigProjectPanel.cpp:59
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid "The directory where projects sharing the resources are placed"
 msgstr ""
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab)
@@ -779,23 +816,23 @@ msgid "General"
 msgstr "ទូទៅ"
 
 #. i18n: ectx: property (text), widget (QLabel, leaderlabel)
-#: ConfigProjectPanel.ui:44
+#: ConfigProjectPanel.ui:42
 #, fuzzy, kde-format
 #| msgctxt "Project manager"
 #| msgid "Manager:"
 msgid "&Manager:"
 msgstr "កម្មវិធី​គ្រប់គ្រង ៖"
 
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: ConfigProjectPanel.ui:75
+#. i18n: ectx: property (text), widget (QLabel, usrlabel)
+#: ConfigProjectPanel.ui:71
 #, fuzzy, kde-format
 #| msgid "Delete resource"
 #| msgid_plural "Delete resources"
 msgid "Use shared resources:"
 msgstr "លុបធនធាន"
 
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#: ConfigProjectPanel.ui:89
+#. i18n: ectx: property (text), widget (QLabel, srflabel)
+#: ConfigProjectPanel.ui:85
 #, fuzzy, kde-format
 #| msgid "Delete resource"
 #| msgid_plural "Delete resources"
@@ -804,14 +841,14 @@ msgstr "លុបធនធាន"
 
 #. i18n: ectx: property (text), widget (QPushButton, resourceFileBrowseBtn)
 #. i18n: ectx: property (text), widget (QPushButton, projectsPlaceBrowseBtn)
-#: ConfigProjectPanel.ui:101 ConfigProjectPanel.ui:126
+#: ConfigProjectPanel.ui:97 ConfigProjectPanel.ui:122
 #, fuzzy, kde-format
 #| msgid "Choose..."
 msgid "Browse..."
 msgstr "ជ្រើស..."
 
-#. i18n: ectx: property (text), widget (QLabel, label_3)
-#: ConfigProjectPanel.ui:114
+#. i18n: ectx: property (text), widget (QLabel, spplabel)
+#: ConfigProjectPanel.ui:110
 #, fuzzy, kde-format
 #| msgid "Delete resource"
 #| msgid_plural "Delete resources"
@@ -820,7 +857,7 @@ msgstr "លុបធនធាន"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_2)
 #. i18n: ectx: attribute (title), widget (QWidget, widget)
-#: ConfigProjectPanel.ui:152 kptconfigtaskpanelbase.ui:481
+#: ConfigProjectPanel.ui:149 kptconfigtaskpanelbase.ui:481
 #, kde-format
 msgid "Description"
 msgstr "សេចក្ដី​ពិពណ៌នា"
@@ -1424,9 +1461,9 @@ msgid "Insert after current node"
 msgstr "បញ្ចូល​បន្ទាប់​ពី​ថ្នាំង​បច្ចុប្បន្ន"
 
 #: kptloadsharedprojectsdialog.cpp:40
-#, fuzzy, kde-format
+#, fuzzy, kde-kuit-format
 #| msgid "Resource Assignments"
-msgctxt "@title"
+msgctxt "@title:window"
 msgid "Load Resource Assignments"
 msgstr "ការ​ផ្ដល់​ធនធាន"
 
@@ -1731,7 +1768,7 @@ msgstr "ពណ៌​ភារកិច្ច​"
 msgid "Generate reports"
 msgstr ""
 
-#: kptview.cpp:598 kptview.cpp:3303
+#: kptview.cpp:598 kptview.cpp:3304
 #, kde-format
 msgid "Task Status Report"
 msgstr "របាយការណ៍​ស្ថានភាព​ភារកិច្ច"
@@ -1940,9 +1977,9 @@ msgctxt "@info:tooltip"
 msgid "Generate reports"
 msgstr ""
 
-#: kptview.cpp:732 kptview.cpp:3300 kptviewlistdialog.cpp:122
+#: kptview.cpp:732 kptview.cpp:3301 kptviewlistdialog.cpp:122
 #: kptviewlistdialog.cpp:562
-#, kde-format
+#, kde-format, kde-kuit-format
 msgid "Report"
 msgstr "របាយការណ៍"
 
@@ -2068,14 +2105,14 @@ msgstr "កញ្ចប់​ការងារ"
 msgid "Documentation"
 msgstr "ថិរវេលា"
 
-#: kptview.cpp:2316
+#: kptview.cpp:2317
 #, kde-format
 msgid ""
 "A task that has been scheduled will be deleted. This will invalidate the "
 "schedule."
 msgstr "ភារកិច្ច​ដែល​ត្រូវ​បាន​កំណត់​ពេល​នឹង​ត្រូវ​បានលុប ។ វា​នឹង​ធ្វើ​ឲ្យ​កាលវិភាគ​គ្មាន​សុពលភាព ។"
 
-#: kptview.cpp:2324 kptview.cpp:2328 kptview.cpp:2344 kptview.cpp:2368
+#: kptview.cpp:2325 kptview.cpp:2329 kptview.cpp:2345 kptview.cpp:2369
 #, fuzzy
 #| msgid "Delete task"
 #| msgid_plural "Delete tasks"
@@ -2084,54 +2121,54 @@ msgid "Delete task"
 msgid_plural "Delete tasks"
 msgstr[0] "លុបភារកិច្ច"
 
-#: kptview.cpp:2363
+#: kptview.cpp:2364
 #, kde-format
 msgid "This task has been scheduled. This will invalidate the schedule."
 msgstr "ភារកិច្ច​ត្រូវ​បាន​កំណត់ពេល ។ វា​នឹង​ធ្វើ​ឲ្យ​កាលវិភាគ​គ្មាន​សុពលភាព ។"
 
-#: kptview.cpp:2387
+#: kptview.cpp:2388
 #, fuzzy
 #| msgid "Indent task"
 msgctxt "(qtundo-format)"
 msgid "Indent task"
 msgstr "ចូល​បន្ទាត់​ភារកិច្ច​"
 
-#: kptview.cpp:2401
+#: kptview.cpp:2402
 #, fuzzy
 #| msgid "Unindent task"
 msgctxt "(qtundo-format)"
 msgid "Unindent task"
 msgstr "ចេញ​បន្ទាត់​ភារកិច្ច"
 
-#: kptview.cpp:2423
+#: kptview.cpp:2424
 #, fuzzy
 #| msgid "Move task up"
 msgctxt "(qtundo-format)"
 msgid "Move task up"
 msgstr "ផ្លាស់ទីភារកិច្ច​ឡើង​លើ"
 
-#: kptview.cpp:2444
+#: kptview.cpp:2445
 #, fuzzy
 #| msgid "Move task down"
 msgctxt "(qtundo-format)"
 msgid "Move task down"
 msgstr "ផ្លាស់ទីភារកិច្ច​ចុះក្រោម"
 
-#: kptview.cpp:2480
+#: kptview.cpp:2481
 #, fuzzy
 #| msgid "Add task dependency"
 msgctxt "(qtundo-format)"
 msgid "Add task dependency"
 msgstr "កែសម្រួល​ភាព​អាស្រ័យ​ភារកិច្ច"
 
-#: kptview.cpp:2541
+#: kptview.cpp:2542
 #, fuzzy
 #| msgid "Delete task dependency"
 msgctxt "(qtundo-format)"
 msgid "Delete task dependency"
 msgstr "លុប​ភាព​អាស្រ័យ​ភារកិច្ច"
 
-#: kptview.cpp:2578 kptview.cpp:2639
+#: kptview.cpp:2579 kptview.cpp:2640
 #, fuzzy
 #| msgid "Delete resource"
 #| msgid_plural "Delete resources"
@@ -2140,7 +2177,7 @@ msgid "Delete resource"
 msgid_plural "Delete resources"
 msgstr[0] "លុបធនធាន"
 
-#: kptview.cpp:2583 kptview.cpp:2641
+#: kptview.cpp:2584 kptview.cpp:2642
 #, fuzzy
 #| msgid "Delete resourcegroup"
 #| msgid_plural "Delete resourcegroups"
@@ -2149,21 +2186,21 @@ msgid "Delete resourcegroup"
 msgid_plural "Delete resourcegroups"
 msgstr[0] "លុប​ក្រុមធនធាន​"
 
-#: kptview.cpp:2592 kptview.cpp:2600
+#: kptview.cpp:2593 kptview.cpp:2601
 #, kde-format
 msgid ""
 "A resource that has been scheduled will be deleted. This will invalidate the "
 "schedule."
 msgstr "ធនធាន​ដែល​ត្រូ​វបាន​កំណត់​ពេលវេលា​នឹង​ត្រូវ​បាន​លុប ។ វា​នឹង​ធ្វើ​ឲ្យ​កាលវិភាគ​គ្មាន​សុពលភាព ។"
 
-#: kptview.cpp:2637
+#: kptview.cpp:2638
 #, fuzzy
 #| msgid "Delete resourcegroups and resources"
 msgctxt "(qtundo-format)"
 msgid "Delete resourcegroups and resources"
 msgstr "លុប​ក្រុម​ធន​ធាន​ និង​ធនធាន"
 
-#: kptview.cpp:2808
+#: kptview.cpp:2809
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Cannot open file:</br><filename>%1</filename>"
@@ -2171,64 +2208,64 @@ msgctxt "@info"
 msgid "Cannot open file:<br/><filename>%1</filename>"
 msgstr "មិន​អាច​បើក​ឯកសារ​ ៖</br><filename>%1</filename>"
 
-#: kptview.cpp:2934
+#: kptview.cpp:2935
 #, fuzzy
 #| msgid "Modify name"
 msgctxt "(qtundo-format)"
 msgid "Modify name"
 msgstr "កែប្រែឈ្មោះ"
 
-#: kptview.cpp:2936
+#: kptview.cpp:2937
 #, fuzzy
 #| msgid "Modify task name"
 msgctxt "(qtundo-format)"
 msgid "Modify task name"
 msgstr "កែប្រែ​ឈ្មោះ​ភារកិច្ច"
 
-#: kptview.cpp:2937
+#: kptview.cpp:2938
 #, fuzzy
 #| msgid "Modify milestone name"
 msgctxt "(qtundo-format)"
 msgid "Modify milestone name"
 msgstr "កែប្រែ​ឈ្មោះ​ដំណាក់​កាល"
 
-#: kptview.cpp:2938
+#: kptview.cpp:2939
 #, fuzzy
 #| msgid "Modify summarytask name"
 msgctxt "(qtundo-format)"
 msgid "Modify summarytask name"
 msgstr "កែប្រែ​ឈ្មោះ​ភារកិច្ច​សង្ខេប"
 
-#: kptview.cpp:2939
+#: kptview.cpp:2940
 #, fuzzy
 #| msgid "Modify project name"
 msgctxt "(qtundo-format)"
 msgid "Modify project name"
 msgstr "កែប្រែ​ឈ្មោះ​គម្រោង"
 
-#: kptview.cpp:3031
+#: kptview.cpp:3032
 #, kde-kuit-format
 msgctxt "@info:status"
 msgid "Not scheduled"
 msgstr "មិន​បាន​កំណត់​ពេល"
 
-#: kptview.cpp:3073
+#: kptview.cpp:3074
 #, kde-format
 msgid "Failed to open temporary file"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បើក​ឯកសារ​បណ្ដោះ​អាសន្ន"
 
-#: kptview.cpp:3079
+#: kptview.cpp:3080
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Failed to save to temporary file:<br/> <filename>%1</filename>"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រក្សា​ទុក​ឯកសារ​បណ្តោះ​អាសន្ន ៖<br/> <filename>%1</filename>"
 
-#: kptview.cpp:3087
+#: kptview.cpp:3088
 #, kde-format
 msgid "Work Package: %1"
 msgstr "កញ្ចប់​ការងារ ៖ %1"
 
-#: kptview.cpp:3088
+#: kptview.cpp:3089
 #, kde-format
 msgctxt "1=project name, 2=task name"
 msgid ""
@@ -2238,13 +2275,13 @@ msgstr ""
 "%1\n"
 "%2"
 
-#: kptview.cpp:3118
+#: kptview.cpp:3119
 #, fuzzy, kde-format
 #| msgid "Failed to open temporary file"
 msgid "Failed to open work package file"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​បើក​ឯកសារ​បណ្ដោះ​អាសន្ន"
 
-#: kptview.cpp:3125
+#: kptview.cpp:3126
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid "Failed to save to temporary file:<br/> <filename>%1</filename>"
@@ -2252,51 +2289,51 @@ msgctxt "@info"
 msgid "Failed to save to temporary file:<br/><filename>%1</filename>"
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​រក្សា​ទុក​ឯកសារ​បណ្តោះ​អាសន្ន ៖<br/> <filename>%1</filename>"
 
-#: kptview.cpp:3134
+#: kptview.cpp:3135
 #, kde-format
 msgid "Work Package for project: %1"
 msgstr "កញ្ចប់​ការងារសម្រាប់​គម្រោង​ ៖ %1"
 
-#: kptview.cpp:3199
+#: kptview.cpp:3200
 #, kde-format
 msgid "Do you want to reload task modules?"
 msgstr ""
 
-#: kptview.cpp:3199
+#: kptview.cpp:3200
 #, kde-kuit-format
 msgctxt "@title"
 msgid "Task module changed"
 msgstr ""
 
-#: kptview.cpp:3301
+#: kptview.cpp:3302
 #, kde-format
 msgctxt "Project manager"
 msgid "Manager:"
 msgstr "កម្មវិធី​គ្រប់គ្រង ៖"
 
-#: kptview.cpp:3302
+#: kptview.cpp:3303
 #, kde-format
 msgid "Project:"
 msgstr "គម្រោង​​"
 
-#: kptview.cpp:3304
+#: kptview.cpp:3305
 #, kde-format
 msgctxt "As in: Page 1 of 2"
 msgid "of"
 msgstr "នៃ"
 
-#: kptview.cpp:3305
+#: kptview.cpp:3306
 #, kde-format
 msgid "Page"
 msgstr "ទំព័រ"
 
-#: kptview.cpp:3306
+#: kptview.cpp:3307
 #, kde-format
 msgctxt "Task name"
 msgid "Name"
 msgstr "ឈ្មោះ ៖​"
 
-#: kptview.cpp:3307
+#: kptview.cpp:3308
 #, kde-format
 msgctxt "Task completion"
 msgid "Completion (%)"
@@ -2450,7 +2487,7 @@ msgid "Description:"
 msgstr "សេចក្ដី​ពិពណ៌នា"
 
 #: kptviewlistdialog.cpp:42
-#, kde-format
+#, kde-kuit-format
 msgctxt "@title:window"
 msgid "Add View"
 msgstr "បន្ថែម​ទិដ្ឋភាព"
@@ -2526,7 +2563,7 @@ msgid "Top"
 msgstr "កំពូល"
 
 #: kptviewlistdialog.cpp:304
-#, kde-format
+#, kde-kuit-format
 msgctxt "@title:window"
 msgid "Configure View"
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ទិដ្ឋភាព"
@@ -2542,13 +2579,13 @@ msgid ""
 msgstr ""
 
 #: kptviewlistdialog.cpp:429
-#, kde-format
+#, kde-kuit-format
 msgctxt "@title:window"
 msgid "Configure Category"
 msgstr "កំណត់រចនាសម្ព័ន្ធ​​ប្រភេទ"
 
 #: kptviewlistdialog.cpp:520
-#, kde-format
+#, kde-kuit-format
 msgctxt "@title:window"
 msgid "Add Report"
 msgstr "បន្ថែម​របាយ​ការណ៍"
