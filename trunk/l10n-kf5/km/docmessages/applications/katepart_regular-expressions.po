@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate_regular-expressions\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2019-02-20 02:46+0000\n"
+"POT-Creation-Date: 2019-10-20 01:37+0000\n"
 "PO-Revision-Date: 2008-08-22 09:43+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <en@li.org>\n"
@@ -621,31 +621,51 @@ msgstr "<userinput>\\w</userinput>"
 
 #. Tag: para
 #: regular-expressions.docbook:238
-#, no-c-format
+#, fuzzy, no-c-format
+#| msgid ""
+#| "Matches any non-word character - anything but letters or numbers. Equal "
+#| "to <literal>[^a-zA-Z0-9]</literal> or <literal>[^\\w]</literal>"
 msgid ""
-"Matches any <quote>word character</quote> - in this case any letter or "
-"digit. Note that underscore (<literal>_</literal>) is not matched, as is the "
-"case with perl regular expressions. Equal to <literal>[a-zA-Z0-9]</literal>"
+"Matches any <quote>word character</quote> - in this case any letter, digit "
+"or underscore. Equal to <literal>[a-zA-Z0-9_]</literal>"
 msgstr ""
+"ផ្គូផ្គងពាក្យ​ដែល​មិន​មែនជា​តួអក្សរ​  - ប៉ុន្តែ​តួអក្សរ​ជាច្រើន​ ឬ​លេខ​ ស្នើនឹង <literal>[^a-zA-"
+"Z0-9]</literal> ឬ <literal>[^\\w]</literal>"
 
 #. Tag: userinput
-#: regular-expressions.docbook:244
+#: regular-expressions.docbook:243
 #, no-c-format
 msgid "<userinput>\\W</userinput>"
 msgstr "<userinput>\\W</userinput>"
 
 #. Tag: para
-#: regular-expressions.docbook:245
-#, no-c-format
+#: regular-expressions.docbook:244
+#, fuzzy, no-c-format
+#| msgid ""
+#| "Matches any non-word character - anything but letters or numbers. Equal "
+#| "to <literal>[^a-zA-Z0-9]</literal> or <literal>[^\\w]</literal>"
 msgid ""
-"Matches any non-word character - anything but letters or numbers. Equal to "
-"<literal>[^a-zA-Z0-9]</literal> or <literal>[^\\w]</literal>"
+"Matches any non-word character - anything but letters, numbers or "
+"underscore. Equal to <literal>[^a-zA-Z0-9_]</literal> or <literal>[^\\w]</"
+"literal>"
 msgstr ""
 "ផ្គូផ្គងពាក្យ​ដែល​មិន​មែនជា​តួអក្សរ​  - ប៉ុន្តែ​តួអក្សរ​ជាច្រើន​ ឬ​លេខ​ ស្នើនឹង <literal>[^a-zA-"
 "Z0-9]</literal> ឬ <literal>[^\\w]</literal>"
 
 #. Tag: para
-#: regular-expressions.docbook:254
+#: regular-expressions.docbook:253
+#, no-c-format
+msgid ""
+"The <emphasis>POSIX notation of classes</emphasis>, <userinput>[:&lt;class "
+"name&gt;:]</userinput> are also supported. For example, <userinput>[:"
+"digit:]</userinput> is equivalent to <userinput>\\d</userinput>, and "
+"<userinput>[:space:]</userinput> to <userinput>\\s</userinput>. See the full "
+"list of POSIX character classes <ulink url=\"https://www.regular-expressions."
+"info/posixbrackets.html\">here</ulink>."
+msgstr ""
+
+#. Tag: para
+#: regular-expressions.docbook:260
 #, no-c-format
 msgid ""
 "The abbreviated classes can be put inside a custom class, for example to "
@@ -655,24 +675,14 @@ msgstr ""
 "ថ្នាក់​ដែល​បាន​ធ្វើ​អក្សរ​កាត់​ អាច​ដាក់​ចូល​ក្នុង​ថ្នាក់ផ្ទាល់​ខ្លូន​ ឧទាហរណ៍​ដើម្បី​ផ្គូផ្គង​ពាក្យ​តួអក្សរ​ទទេ ឬ​ចំណុច "
 "អ្នក​អាច​សរសេរ​ <userinput>[\\w \\.]</userinput>"
 
-#. Tag: para
-#: regular-expressions.docbook:258
-#, no-c-format
-msgid ""
-"The POSIX notation of classes, <userinput>[:&lt;class name&gt;:]</userinput> "
-"is currently not supported."
-msgstr ""
-"ថ្នាក់​ POSIX អន្តរជាតិ​ <userinput>[:&lt;class name&gt;:]</userinput> បច្ចុប្បន្ន​​មិន​ត្រូវ​"
-"បាន​គាំទ្រ ។​"
-
 #. Tag: title
-#: regular-expressions.docbook:262
+#: regular-expressions.docbook:265
 #, no-c-format
 msgid "Characters with special meanings inside character classes"
 msgstr "បណ្តា​តួអក្សរ​ដែល​មាន​ន័យ​ពិសេស​នៅ​ក្នុង​ថ្នាក់​តួអក្សរ "
 
 #. Tag: para
-#: regular-expressions.docbook:264
+#: regular-expressions.docbook:267
 #, no-c-format
 msgid ""
 "The following characters has a special meaning inside the <quote>[]</quote> "
@@ -683,13 +693,13 @@ msgstr ""
 "<quote>[]</quote>  ថ្នាក់តួអក្សរសាងសង់​ ហើយ​ត្រូវ​បាន​គេចចេញ​តាម​ពាក្យ​ពញ្ជនៈ​រួមទាំង​ថ្នាក់​ ៖"
 
 #. Tag: userinput
-#: regular-expressions.docbook:270
+#: regular-expressions.docbook:273
 #, no-c-format
 msgid "<userinput>]</userinput>"
 msgstr "<userinput>]</userinput>"
 
 #. Tag: para
-#: regular-expressions.docbook:271
+#: regular-expressions.docbook:274
 #, no-c-format
 msgid ""
 "Ends the character class. Must be escaped unless it is the very first "
@@ -699,13 +709,13 @@ msgstr ""
 "សម្រាប់បន្ថែម​ពាក្យ​រំលង​ដែល​បាន​គេច​ចេញ )"
 
 #. Tag: term
-#: regular-expressions.docbook:275 regular-expressions.docbook:393
+#: regular-expressions.docbook:278 regular-expressions.docbook:398
 #, no-c-format
 msgid "<userinput>^</userinput> (caret)"
 msgstr "<userinput>^</userinput> (សញ្ញា​សម្រាប់​បន្ថែម​ពាក្យ​រំលង​)"
 
 #. Tag: para
-#: regular-expressions.docbook:276
+#: regular-expressions.docbook:279
 #, no-c-format
 msgid ""
 "Denotes a negative class, if it is the first character. Must be escaped to "
@@ -715,38 +725,38 @@ msgstr ""
 "តួអក្សរ​ដំបូង​ក្នុង​ថ្នាក់ ។"
 
 #. Tag: term
-#: regular-expressions.docbook:279
+#: regular-expressions.docbook:282
 #, no-c-format
 msgid "<userinput>-</userinput> (dash)"
 msgstr "<userinput>-</userinput> (dash)"
 
 #. Tag: para
-#: regular-expressions.docbook:280
+#: regular-expressions.docbook:283
 #, no-c-format
 msgid ""
 "Denotes a logical range. Must always be escaped within a character class."
 msgstr "តំណាង​ឲ្យ​ជួរ​កត្ត​ ។ គួរតែ​ត្រូវ​បាន​គេចចេញ​នៅ​ក្នុង​ថ្នាក់​តួអក្សរ​ ។"
 
 #. Tag: term
-#: regular-expressions.docbook:283 regular-expressions.docbook:388
+#: regular-expressions.docbook:286 regular-expressions.docbook:393
 #, no-c-format
 msgid "<userinput>\\</userinput> (backslash)"
 msgstr "<userinput>\\</userinput> (backslash)"
 
 #. Tag: para
-#: regular-expressions.docbook:284
+#: regular-expressions.docbook:287
 #, no-c-format
 msgid "The escape character. Must always be escaped."
 msgstr "តួអក្សរ​គេចចេញ ។ ត្រូវ​តែ​បានគេចចេញ​ជានិច្ច ។"
 
 #. Tag: title
-#: regular-expressions.docbook:295
+#: regular-expressions.docbook:298
 #, no-c-format
 msgid "Alternatives: matching <quote>one of</quote>"
 msgstr "ជំនួស ៖  កាផ្គូផ្គង​  <quote> មួយ </quote>"
 
 #. Tag: para
-#: regular-expressions.docbook:297
+#: regular-expressions.docbook:300
 #, no-c-format
 msgid ""
 "If you want to match one of a set of alternative patterns, you can separate "
@@ -756,7 +766,7 @@ msgstr ""
 "(ថេបតួអក្សរ​បញ្ឈរ) ។​"
 
 #. Tag: para
-#: regular-expressions.docbook:300
+#: regular-expressions.docbook:303
 #, no-c-format
 msgid ""
 "For example to find either <quote>John</quote> or <quote>Harry</quote> you "
@@ -766,13 +776,13 @@ msgstr ""
 "<userinput>John|Harry</userinput> ។​"
 
 #. Tag: title
-#: regular-expressions.docbook:306
+#: regular-expressions.docbook:309
 #, no-c-format
 msgid "Sub Patterns"
 msgstr "លំនាំរង​"
 
 #. Tag: para
-#: regular-expressions.docbook:308
+#: regular-expressions.docbook:311
 #, no-c-format
 msgid ""
 "<emphasis>Sub patterns</emphasis> are patterns enclosed in parentheses, and "
@@ -782,13 +792,13 @@ msgstr ""
 "ពាក្យ​ធម្មតា​ ។"
 
 #. Tag: title
-#: regular-expressions.docbook:314
+#: regular-expressions.docbook:317
 #, no-c-format
 msgid "Specifying alternatives"
 msgstr "ជំនួស​ជាក់លាក់​"
 
 #. Tag: para
-#: regular-expressions.docbook:316
+#: regular-expressions.docbook:319
 #, no-c-format
 msgid ""
 "You may use a sub pattern to group a set of alternatives within a larger "
@@ -799,7 +809,7 @@ msgstr ""
 "<quote>|</quote> (របារ​បញ្ឈរ) ។​"
 
 #. Tag: para
-#: regular-expressions.docbook:320
+#: regular-expressions.docbook:323
 #, no-c-format
 msgid ""
 "For example to match either of the words <quote>int</quote>, <quote>float</"
@@ -814,21 +824,23 @@ msgstr ""
 "លំនាំរង​  ៖ <userinput>(int|float|double)\\s+\\w+</userinput>."
 
 #. Tag: title
-#: regular-expressions.docbook:331
+#: regular-expressions.docbook:334
 #, no-c-format
 msgid "Capturing matching text (back references)"
 msgstr "កំពុង​ចាប់​យក​ការផ្គូផ្គង​អត្ថបទ  (ត្រឡប់​ទៅ​សេចក្តីយោង​)"
 
 #. Tag: para
-#: regular-expressions.docbook:333
+#: regular-expressions.docbook:336
 #, no-c-format
 msgid ""
-"If you want to use a back reference, use a sub pattern to have the desired "
-"part of the pattern remembered."
-msgstr "បើ​អ្នកចង់​ប្រើ​ត្រឡប់សេចក្តីយោង​ ប្រើ​លំនាំរង​ដើម្បីចង់​បាន​លំនាំ​ដែល​បាន​ចង់ចាំ ។"
+"If you want to use a back reference, use a sub pattern <userinput>(PATTERN)</"
+"userinput> to have the desired part of the pattern remembered. To prevent "
+"the sub pattern from being remembered, use a non-capturing group "
+"<userinput>(?:PATTERN)</userinput>."
+msgstr ""
 
 #. Tag: para
-#: regular-expressions.docbook:336
+#: regular-expressions.docbook:341
 #, fuzzy, no-c-format
 #| msgid ""
 #| "For example, it you want to find two occurrences of the same word "
@@ -855,7 +867,7 @@ msgstr ""
 "<emphasis>លំនាំដើម​រង​ដំបូង​នៅព័ទ្ធជុំវិញ​រងក្រចក​ </emphasis>)"
 
 #. Tag: para
-#: regular-expressions.docbook:346
+#: regular-expressions.docbook:351
 #, no-c-format
 msgid ""
 "To avoid ambiguities with usage of <userinput>\\1</userinput> with some "
@@ -865,19 +877,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: regular-expressions.docbook:347
+#: regular-expressions.docbook:352
 #, no-c-format
 msgid "Examples:"
 msgstr ""
 
 #. Tag: para
-#: regular-expressions.docbook:349
+#: regular-expressions.docbook:354
 #, no-c-format
 msgid "<userinput>\\{12}1</userinput> is <quote>use subpattern 12</quote>"
 msgstr ""
 
 #. Tag: para
-#: regular-expressions.docbook:350
+#: regular-expressions.docbook:355
 #, no-c-format
 msgid ""
 "<userinput>\\123</userinput> is <quote>use capture 1 then 23 as the normal "
@@ -885,13 +897,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: regular-expressions.docbook:360
+#: regular-expressions.docbook:365
 #, no-c-format
 msgid "Lookahead Assertions"
 msgstr "Lookahead Assertions"
 
 #. Tag: para
-#: regular-expressions.docbook:362
+#: regular-expressions.docbook:367
 #, no-c-format
 msgid ""
 "A lookahead assertion is a sub pattern, starting with either <literal>?=</"
@@ -901,7 +913,7 @@ msgstr ""
 "literal>."
 
 #. Tag: para
-#: regular-expressions.docbook:365
+#: regular-expressions.docbook:370
 #, no-c-format
 msgid ""
 "For example to match the literal string <quote>Bill</quote> but only if not "
@@ -916,25 +928,25 @@ msgstr ""
 "kid</quote>ប៉ុន្តែ​មិន​អើពើ​ការផ្គូផ្គង​ដទៃទៀត​) ។"
 
 #. Tag: para
-#: regular-expressions.docbook:371
+#: regular-expressions.docbook:376
 #, no-c-format
 msgid "Sub patterns used for assertions are not captured."
 msgstr "លំនាំ​រង​ត្រូវ​បានប្រើ​សម្រាប់ការការពារ​អះអាង​ដែល​មិន​បាន​ចាប់យក​ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:373
+#: regular-expressions.docbook:378
 #, no-c-format
 msgid "See also <link linkend=\"assertions\">Assertions</link>"
 msgstr "មើល​  <link linkend=\"assertions\"> ការពារ​ការអះអាង </link>"
 
 #. Tag: title
-#: regular-expressions.docbook:380
+#: regular-expressions.docbook:385
 #, no-c-format
 msgid "Characters with a special meaning inside patterns"
 msgstr "បណ្តា​តួអក្សរ​សែល​មាន​អត្ថន័យ​ពិសេស​ក្នុង​លំនាំ "
 
 #. Tag: para
-#: regular-expressions.docbook:382
+#: regular-expressions.docbook:387
 #, no-c-format
 msgid ""
 "The following characters have meaning inside a pattern, and must be escaped "
@@ -942,121 +954,121 @@ msgid ""
 msgstr "តួអក្សរ​ដូចតទៅ​នេះ​មានអត្ថន័យ​ក្នុង​លំនាំ​ ហើយ​ត្រូវ​បាន​រត់គេចេញ​ បើ​អ្នក​ចង់​ផ្គូផ្គង​តាម​ព្យញ្ជនៈ ៖"
 
 #. Tag: para
-#: regular-expressions.docbook:389
+#: regular-expressions.docbook:394
 #, no-c-format
 msgid "The escape character."
 msgstr "តួអក្សរ​គេចចេញ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:394
+#: regular-expressions.docbook:399
 #, no-c-format
 msgid "Asserts the beginning of the string."
 msgstr "ការពារ​ការចាប់ផ្តើម​ខ្សែអក្សរ​ ។"
 
 #. Tag: userinput
-#: regular-expressions.docbook:398
+#: regular-expressions.docbook:403
 #, no-c-format
 msgid "<userinput>$</userinput>"
 msgstr "<userinput>$</userinput>"
 
 #. Tag: para
-#: regular-expressions.docbook:399
+#: regular-expressions.docbook:404
 #, no-c-format
 msgid "Asserts the end of string."
 msgstr "ការពារ​ចុង​បញ្ចប់​ខ្សែអក្សរ ។"
 
 #. Tag: term
-#: regular-expressions.docbook:403
+#: regular-expressions.docbook:408
 #, no-c-format
 msgid "<userinput>()</userinput> (left and right parentheses)"
 msgstr "<userinput>()</userinput> (រងក្រចក​ឆ្វេង និង​ស្តាំ )"
 
 #. Tag: para
-#: regular-expressions.docbook:404
+#: regular-expressions.docbook:409
 #, no-c-format
 msgid "Denotes sub patterns."
 msgstr "តំណាង​ឲ្យ​លំនាំ​រង​ ។"
 
 #. Tag: term
-#: regular-expressions.docbook:408
+#: regular-expressions.docbook:413
 #, no-c-format
 msgid "<userinput>{}</userinput> (left and right curly braces)"
 msgstr "<userinput>{}</userinput> (ប្រើ​ដង្កៀប​អង្កាញ់​ឆ្វេង និ​ងស្តាំ )"
 
 #. Tag: para
-#: regular-expressions.docbook:409
+#: regular-expressions.docbook:414
 #, no-c-format
 msgid "Denotes numeric quantifiers."
 msgstr "តំណាង​ឲ្យ​ចំនួនកម្រិត ។"
 
 #. Tag: term
-#: regular-expressions.docbook:413
+#: regular-expressions.docbook:418
 #, no-c-format
 msgid "<userinput>[]</userinput> (left and right square brackets)"
 msgstr "<userinput>[]</userinput> (ដង្កៀប​ការេ​ឆ្វេង និង​ស្តាំ)"
 
 #. Tag: para
-#: regular-expressions.docbook:414
+#: regular-expressions.docbook:419
 #, no-c-format
 msgid "Denotes character classes."
 msgstr "តំណាងឲ្យ​ថ្នាក់​តួអក្សរ ។"
 
 #. Tag: term
-#: regular-expressions.docbook:418
+#: regular-expressions.docbook:423
 #, no-c-format
 msgid "<userinput>|</userinput> (vertical bar)"
 msgstr "<userinput>|</userinput> (របារ​បញ្ឈរ)"
 
 #. Tag: para
-#: regular-expressions.docbook:419
+#: regular-expressions.docbook:424
 #, no-c-format
 msgid "logical OR. Separates alternatives."
 msgstr "តក្ក OR ជំនួស​បំបែក ។"
 
 #. Tag: term
-#: regular-expressions.docbook:423 regular-expressions.docbook:500
+#: regular-expressions.docbook:428 regular-expressions.docbook:505
 #, no-c-format
 msgid "<userinput>+</userinput> (plus sign)"
 msgstr "<userinput>+</userinput> (សញ្ញា​បូក)"
 
 #. Tag: para
-#: regular-expressions.docbook:424
+#: regular-expressions.docbook:429
 #, no-c-format
 msgid "Quantifier, 1 or more."
 msgstr "កម្រិត ១ ឬ​ច្រើន​ ។"
 
 #. Tag: term
-#: regular-expressions.docbook:428 regular-expressions.docbook:495
+#: regular-expressions.docbook:433 regular-expressions.docbook:500
 #, no-c-format
 msgid "<userinput>*</userinput> (asterisk)"
 msgstr "<userinput>*</userinput> (សញ្ញាផ្កាយ)"
 
 #. Tag: para
-#: regular-expressions.docbook:429
+#: regular-expressions.docbook:434
 #, no-c-format
 msgid "Quantifier, 0 or more."
 msgstr "កម្រិត ០​ ឬច្រើន​ ។"
 
 #. Tag: term
-#: regular-expressions.docbook:433 regular-expressions.docbook:505
+#: regular-expressions.docbook:438 regular-expressions.docbook:510
 #, no-c-format
 msgid "<userinput>?</userinput> (question mark)"
 msgstr "<userinput>?</userinput> (សញ្ញា​សួរ)"
 
 #. Tag: para
-#: regular-expressions.docbook:434
+#: regular-expressions.docbook:439
 #, no-c-format
 msgid "An optional character. Can be interpreted as a quantifier, 0 or 1."
 msgstr "តួអក្សរ​ស្រេចចិត្ត​ ។ អាច​ត្រូវ​បានបកប្រែ​ជា​កម្រិត ០ ឬ​១ ។"
 
 #. Tag: title
-#: regular-expressions.docbook:446
+#: regular-expressions.docbook:451
 #, no-c-format
 msgid "<title>Quantifiers</title>"
 msgstr "<title> កម្រិត </title>"
 
 #. Tag: para
-#: regular-expressions.docbook:448
+#: regular-expressions.docbook:453
 #, no-c-format
 msgid ""
 "<emphasis>Quantifiers</emphasis> allows a regular expression to match a "
@@ -1067,7 +1079,7 @@ msgstr ""
 "តួអក្សរ​ ចំណាត់ថ្នាក់​តួអក្សរ ឬ​លំនាំរង ។"
 
 #. Tag: para
-#: regular-expressions.docbook:452
+#: regular-expressions.docbook:457
 #, no-c-format
 msgid ""
 "Quantifiers are enclosed in curly brackets (<literal>{</literal> and "
@@ -1079,103 +1091,103 @@ msgstr ""
 "occurrences]]}</literal>"
 
 #. Tag: para
-#: regular-expressions.docbook:457
+#: regular-expressions.docbook:462
 #, no-c-format
 msgid "The usage is best explained by example:"
 msgstr "ប្រើ​ការពន្យល់​យ៉ាងច្បាស់​បំផុត​តាម​ឧទាហរណ៍ ៖"
 
 #. Tag: userinput
-#: regular-expressions.docbook:462
+#: regular-expressions.docbook:467
 #, no-c-format
 msgid "<userinput>{1}</userinput>"
 msgstr "<userinput>{1}</userinput>"
 
 #. Tag: para
-#: regular-expressions.docbook:463
+#: regular-expressions.docbook:468
 #, no-c-format
 msgid "Exactly 1 occurrence"
 msgstr "ជាការពិត ៖ ជួបលេខ ១"
 
 #. Tag: userinput
-#: regular-expressions.docbook:467
+#: regular-expressions.docbook:472
 #, no-c-format
 msgid "{0,1}"
 msgstr "{០,១}"
 
 #. Tag: para
-#: regular-expressions.docbook:468
+#: regular-expressions.docbook:473
 #, no-c-format
 msgid "Zero or 1 occurrences"
 msgstr "សូន្យ ឬ​ជួបលេខ​ ១"
 
 #. Tag: userinput
-#: regular-expressions.docbook:472
+#: regular-expressions.docbook:477
 #, no-c-format
 msgid "{,1}"
 msgstr "{,១}"
 
 #. Tag: para
-#: regular-expressions.docbook:473
+#: regular-expressions.docbook:478
 #, no-c-format
 msgid "The same, with less work;)"
 msgstr "ជាមួយ​ការងារ​តិច​ដូចគ្នា;)"
 
 #. Tag: userinput
-#: regular-expressions.docbook:477
+#: regular-expressions.docbook:482
 #, no-c-format
 msgid "{5,10}"
 msgstr "{៥,១០}"
 
 #. Tag: para
-#: regular-expressions.docbook:478
+#: regular-expressions.docbook:483
 #, no-c-format
 msgid "At least 5 but maximum 10 occurrences."
 msgstr "​មាន​យ៉ាងហោចណាស់ប៉ុន្តែ​អតិប្បរមា​១០ ។"
 
 #. Tag: userinput
-#: regular-expressions.docbook:482
+#: regular-expressions.docbook:487
 #, no-c-format
 msgid "{5,}"
 msgstr "{៥,}"
 
 #. Tag: para
-#: regular-expressions.docbook:483
+#: regular-expressions.docbook:488
 #, no-c-format
 msgid "At least 5 occurrences, no maximum."
 msgstr "ការជួបប្រទះ​យ៉ាងហោច​ណាស់​ ៥ គ្មាន​អតិប្បរមា​ឡើយ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:490
+#: regular-expressions.docbook:495
 #, no-c-format
 msgid "Additionally, there are some abbreviations:"
 msgstr "បន្ថែម មាន​អក្សរកាត់​មួយ​ចំនួន ៖"
 
 #. Tag: para
-#: regular-expressions.docbook:496
+#: regular-expressions.docbook:501
 #, no-c-format
 msgid "similar to <literal>{0,}</literal>, find any number of occurrences."
 msgstr "ស្រដៀង​ទៅ​នឹង <literal>{០,}</literal> រក​ចំនួន​ដែល​បាន​ជួបប្រទះ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:501
+#: regular-expressions.docbook:506
 #, no-c-format
 msgid "similar to <literal>{1,}</literal>, at least 1 occurrence."
 msgstr "ស្រដៀងទៅនឹង <literal>{១,}</literal> បាន​ជួបប្រទះ​យ៉ាងហោចណាស់​ ១ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:506
+#: regular-expressions.docbook:511
 #, no-c-format
 msgid "similar to <literal>{0,1}</literal>, zero or 1 occurrence."
 msgstr "ស្រដៀង​ទៅ​នឹង  <literal>{០,១}</literal> ជួប​សូន ឬ​ ១ ។"
 
 #. Tag: title
-#: regular-expressions.docbook:515
+#: regular-expressions.docbook:520
 #, no-c-format
 msgid "Greed"
 msgstr "Greed"
 
 #. Tag: para
-#: regular-expressions.docbook:517
+#: regular-expressions.docbook:522
 #, no-c-format
 msgid ""
 "When using quantifiers with no maximum, regular expressions defaults to "
@@ -1186,7 +1198,7 @@ msgstr ""
 "ធ្វើបាន​  ដែល​ជា​ពាក្យ​សាមាញ​ជា <emphasis>ឥរិយាបទដែល​លើសលប់​ </emphasis> ។"
 
 #. Tag: para
-#: regular-expressions.docbook:521
+#: regular-expressions.docbook:526
 #, no-c-format
 msgid ""
 "Modern regular expression software provides the means of <quote>turning off "
@@ -1202,25 +1214,25 @@ msgstr ""
 "quote> ក៏​គួរតែ​​បង្ហាញ​បើ​ភាចដាច់ខាត​ត្រូវ​បានកំណត់​ជា​ឥរិយាបទ​លំនាំដើម​ ។"
 
 #. Tag: title
-#: regular-expressions.docbook:532
+#: regular-expressions.docbook:537
 #, no-c-format
 msgid "In context examples"
 msgstr "ក្នុង​ឧទាហរណ៍​បរិបទ​"
 
 #. Tag: para
-#: regular-expressions.docbook:534
+#: regular-expressions.docbook:539
 #, no-c-format
 msgid "Here are a few examples of using quantifiers"
 msgstr "ទីនេះ​មានឧទាហរណ៍​មួយ​ចំនួន​ប្រើប្រាស់​កម្រិត "
 
 #. Tag: userinput
-#: regular-expressions.docbook:539
+#: regular-expressions.docbook:544
 #, no-c-format
 msgid "^\\d{4,5}\\s"
 msgstr "^\\d{៤,៥}\\s"
 
 #. Tag: para
-#: regular-expressions.docbook:540
+#: regular-expressions.docbook:545
 #, no-c-format
 msgid ""
 "Matches the digits in <quote>1234 go</quote> and <quote>12345 now</quote>, "
@@ -1229,25 +1241,25 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: regular-expressions.docbook:545
+#: regular-expressions.docbook:550
 #, no-c-format
 msgid "<userinput>\\s+</userinput>"
 msgstr "<userinput>\\s+</userinput>"
 
 #. Tag: para
-#: regular-expressions.docbook:546
+#: regular-expressions.docbook:551
 #, no-c-format
 msgid "Matches one or more whitespace characters"
 msgstr "ផ្គូផ្គង​តួអក្សរ​ដកឃ្លា​មួយ ឬ​ច្រើន​ "
 
 #. Tag: userinput
-#: regular-expressions.docbook:550
+#: regular-expressions.docbook:555
 #, no-c-format
 msgid "(bla){1,}"
 msgstr "(bla){១,}"
 
 #. Tag: para
-#: regular-expressions.docbook:551
+#: regular-expressions.docbook:556
 #, no-c-format
 msgid ""
 "Matches all of <quote>blablabla</quote> and the <quote>bla</quote> in "
@@ -1257,13 +1269,13 @@ msgstr ""
 "<quote>blackbird</quote> ឬ <quote>tabla</quote>"
 
 #. Tag: userinput
-#: regular-expressions.docbook:555
+#: regular-expressions.docbook:560
 #, no-c-format
 msgid "/?&gt;"
 msgstr "/?&gt;"
 
 #. Tag: para
-#: regular-expressions.docbook:556
+#: regular-expressions.docbook:561
 #, no-c-format
 msgid ""
 "Matches <quote>/&gt;</quote> in <quote>&lt;closeditem/&gt;</quote> as well "
@@ -1273,13 +1285,13 @@ msgstr ""
 "<quote>&gt;</quote> ក្នុង​ <quote>&lt;openitem&gt;</quote>​។​"
 
 #. Tag: title
-#: regular-expressions.docbook:567
+#: regular-expressions.docbook:572
 #, no-c-format
 msgid "<title>Assertions</title>"
 msgstr "<title> ការពារការអះអាង </title>"
 
 #. Tag: para
-#: regular-expressions.docbook:569
+#: regular-expressions.docbook:574
 #, no-c-format
 msgid ""
 "<emphasis>Assertions</emphasis> allows a regular expression to match only "
@@ -1289,7 +1301,7 @@ msgstr ""
 "ប្រាកដមួ​យ​ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:572
+#: regular-expressions.docbook:577
 #, no-c-format
 msgid ""
 "An assertion does not need a character to match, it rather investigates the "
@@ -1305,7 +1317,7 @@ msgstr ""
 "ផ្គូផ្គង​កន្លែងណា​ដែលគ្មាន​តួអក្សរ​ឧទាហរណ៍ ស្វែងរក​ខ្សែអក្សរ​ចុងក្រោយ​ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:580
+#: regular-expressions.docbook:585
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Some assertions actually does have a pattern to match, but the part of "
@@ -1320,26 +1332,26 @@ msgstr ""
 "លទ្ធផល​នៃ​ការផ្គូផ្គង​កន្សោមពេញ​ឡើយ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:584
+#: regular-expressions.docbook:589
 #, no-c-format
 msgid ""
 "Regular Expressions as documented here supports the following assertions:"
 msgstr "កន្សោម​ធម្មតា​​ត្រូវ​បានរៀប​ជា​ឯកសារ​គាំទ្រ​ការអះអាង​ដូចតទៅ​នេះ ។"
 
 #. Tag: term
-#: regular-expressions.docbook:590
+#: regular-expressions.docbook:595
 #, no-c-format
 msgid "<userinput>^</userinput> (caret: beginning of string)"
 msgstr "<userinput>^</userinput> (សញ្ញា​សម្រាប់បន្ថែមពាក្យ​រំលង ៖ ខ្សែអក្សរ​កំពុង​ចាប់ផ្តើម​ )"
 
 #. Tag: para
-#: regular-expressions.docbook:592
+#: regular-expressions.docbook:597
 #, no-c-format
 msgid "Matches the beginning of the searched string."
 msgstr "កំពុង​ចាប់ផ្តើម​ផ្គូផ្គង​ខ្សែអក្សរ​ដែលបានស្វែងរក ។"
 
 #. Tag: para
-#: regular-expressions.docbook:593
+#: regular-expressions.docbook:598
 #, no-c-format
 msgid ""
 "The expression <userinput>^Peter</userinput> will match at <quote>Peter</"
@@ -1351,19 +1363,19 @@ msgstr ""
 "ឡើយ ។"
 
 #. Tag: term
-#: regular-expressions.docbook:599
+#: regular-expressions.docbook:604
 #, no-c-format
 msgid "<userinput>$</userinput> (end of string)"
 msgstr "<userinput>$</userinput> ( ចុង​ខ្សែអក្សរ)"
 
 #. Tag: para
-#: regular-expressions.docbook:600
+#: regular-expressions.docbook:605
 #, no-c-format
 msgid "Matches the end of the searched string."
 msgstr "ផ្គូផ្គង​ខ្សែអក្សរ​ដែលបានស្វែងរក​ចុងក្រោយ​ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:602
+#: regular-expressions.docbook:607
 #, no-c-format
 msgid ""
 "The expression <userinput>you\\?$</userinput> will match at the last you in "
@@ -1375,13 +1387,13 @@ msgstr ""
 "quote>"
 
 #. Tag: term
-#: regular-expressions.docbook:610
+#: regular-expressions.docbook:615
 #, no-c-format
 msgid "<userinput>\\b</userinput> (word boundary)"
 msgstr "<userinput>\\b</userinput> ( ព្រំដែន​ពាក្យ)"
 
 #. Tag: para
-#: regular-expressions.docbook:611
+#: regular-expressions.docbook:616
 #, no-c-format
 msgid ""
 "Matches if there is a word character at one side and not a word character at "
@@ -1389,7 +1401,7 @@ msgid ""
 msgstr "ផ្គូផ្គង​ បើ​មាន​តួអក្សរ​ពាក្យ​មួយ​ផ្នែក​ជា​ពាក្យ​ និង​មួយ​ផ្នែក​ទៀត​មិន​មែន​ជា​តួអក្សរ​ពាក្យ​ផ្សេងទៀត ។"
 
 #. Tag: para
-#: regular-expressions.docbook:613
+#: regular-expressions.docbook:618
 #, no-c-format
 msgid ""
 "This is useful to find word ends, for example both ends to find a whole "
@@ -1403,19 +1415,19 @@ msgstr ""
 "ឡើយ </quote> ។​"
 
 #. Tag: term
-#: regular-expressions.docbook:622
+#: regular-expressions.docbook:627
 #, no-c-format
 msgid "<userinput>\\B</userinput> (non word boundary)"
 msgstr "<userinput>\\B</userinput> (មិនមែនជា​ព្រំដែនពាក្យ​ទេ​)"
 
 #. Tag: para
-#: regular-expressions.docbook:623
+#: regular-expressions.docbook:628
 #, no-c-format
 msgid "Matches wherever <quote>\\b</quote> does not."
 msgstr "ផ្គូផ្គង​ពេល​​ <quote>\\b</quote> មិនទាន់​បាន​ផ្គូផ្គង​ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:624
+#: regular-expressions.docbook:629
 #, no-c-format
 msgid ""
 "That means that it will match for example within words: The expression "
@@ -1427,13 +1439,13 @@ msgstr ""
 "quote> ឬ <quote> ខ្ញុំ​មាន​ស្នេហា </quote> ។"
 
 #. Tag: term
-#: regular-expressions.docbook:630
+#: regular-expressions.docbook:635
 #, no-c-format
 msgid "<userinput>(?=PATTERN)</userinput> (Positive lookahead)"
 msgstr "<userinput>(?=PATTERN)</userinput> ( lookahead វិជ្ជមាន​)"
 
 #. Tag: para
-#: regular-expressions.docbook:631
+#: regular-expressions.docbook:636
 #, no-c-format
 msgid ""
 "A lookahead assertion looks at the part of the string following a possible "
@@ -1447,7 +1459,7 @@ msgstr ""
 "<emphasis>PATTERN</emphasis> នៃ​ការអះអាង​ប៉ុន្តែ​អត្ថបទ​ត្រូវ​បាន​ផ្គូផ្គង​រួម​មាន​ទាំង​លទ្ធផល​ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:635
+#: regular-expressions.docbook:640
 #, no-c-format
 msgid ""
 "The expression <userinput>handy(?=\\w)</userinput> will match at "
@@ -1458,13 +1470,13 @@ msgstr ""
 "<quote>handyman</quote> ប៉ុន្តែ​មិនមែន​  <quote>That came in handy!</quote>"
 
 #. Tag: term
-#: regular-expressions.docbook:641
+#: regular-expressions.docbook:646
 #, no-c-format
 msgid "<userinput>(?!PATTERN)</userinput> (Negative lookahead)"
 msgstr "<userinput>(?!PATTERN)</userinput> (បដិសេធ​ lookahead)"
 
 #. Tag: para
-#: regular-expressions.docbook:643
+#: regular-expressions.docbook:648
 #, no-c-format
 msgid ""
 "The negative lookahead prevents a possible match to be acknowledged if the "
@@ -1475,7 +1487,7 @@ msgstr ""
 "ទាន់​បាន​ផ្គូផ្គង​ទៅ​ <emphasis>PATTERN</emphasis> នូវ​ឡើយ​ ។"
 
 #. Tag: para
-#: regular-expressions.docbook:646
+#: regular-expressions.docbook:651
 #, no-c-format
 msgid ""
 "The expression <userinput>const \\w+\\b(?!\\s*&amp;)</userinput> will match "
@@ -1488,3 +1500,57 @@ msgstr ""
 "char</quote> ក្នុង​ខ្សែអក្សរ <quote>const char* foo</quote>  ខណៈពេល​ដែល​វា​មិន​អាច​"
 "ផ្គួផ្គង​  <quote>const QString</quote> ក្នុងរបារ ​ <quote>const QString&amp; </"
 "quote> ព្រោះ  <quote>&amp;</quote> ផ្គូផ្គង​លំនាំ​ការអះអាង​បដិសេធ lookahead ។"
+
+#. Tag: term
+#: regular-expressions.docbook:661
+#, fuzzy, no-c-format
+#| msgid "<userinput>(?!PATTERN)</userinput> (Negative lookahead)"
+msgid "<userinput>(PATTERN)</userinput> (Capturing group)"
+msgstr "<userinput>(?!PATTERN)</userinput> (បដិសេធ​ lookahead)"
+
+#. Tag: para
+#: regular-expressions.docbook:663
+#, no-c-format
+msgid ""
+"The sub pattern within the parentheses is captured and remembered, so that "
+"it can be used in back references. For example, the expression "
+"<userinput>(&amp;quot;+)[^&amp;quot;]*\\1</userinput> matches "
+"<userinput>&quot;&quot;&quot;&quot;text&quot;&quot;&quot;&quot;</userinput> "
+"and <userinput>&quot;text&quot;</userinput>."
+msgstr ""
+
+#. Tag: para
+#: regular-expressions.docbook:668
+#, no-c-format
+msgid ""
+"See the section <link linkend=\"regex-capturing\">Capturing matching text "
+"(back references)</link> for more information."
+msgstr ""
+
+#. Tag: term
+#: regular-expressions.docbook:674
+#, fuzzy, no-c-format
+#| msgid "<userinput>(?!PATTERN)</userinput> (Negative lookahead)"
+msgid "<userinput>(?:PATTERN)</userinput> (Non-capturing group)"
+msgstr "<userinput>(?!PATTERN)</userinput> (បដិសេធ​ lookahead)"
+
+#. Tag: para
+#: regular-expressions.docbook:676
+#, no-c-format
+msgid ""
+"The sub pattern within the parentheses is not captured and is not "
+"remembered. It is preferable to always use non-capturing groups if the "
+"captures will not be used."
+msgstr ""
+
+#~ msgid ""
+#~ "The POSIX notation of classes, <userinput>[:&lt;class name&gt;:]</"
+#~ "userinput> is currently not supported."
+#~ msgstr ""
+#~ "ថ្នាក់​ POSIX អន្តរជាតិ​ <userinput>[:&lt;class name&gt;:]</userinput> បច្ចុប្បន្ន​​មិន​"
+#~ "ត្រូវ​បាន​គាំទ្រ ។​"
+
+#~ msgid ""
+#~ "If you want to use a back reference, use a sub pattern to have the "
+#~ "desired part of the pattern remembered."
+#~ msgstr "បើ​អ្នកចង់​ប្រើ​ត្រឡប់សេចក្តីយោង​ ប្រើ​លំនាំរង​ដើម្បីចង់​បាន​លំនាំ​ដែល​បាន​ចង់ចាំ ។"
