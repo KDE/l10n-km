@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-11-03 03:10+0100\n"
+"POT-Creation-Date: 2019-12-13 03:26+0100\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -168,7 +168,7 @@ msgctxt "@title:window"
 msgid "Add User-ID Succeeded"
 msgstr "បន្ថែម​លេខ​សម្គាល់​អ្នកប្រើ​ដែល​ជោគជ័យ"
 
-#: src/commands/certifycertificatecommand.cpp:208
+#: src/commands/certifycertificatecommand.cpp:216
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid ""
@@ -183,15 +183,43 @@ msgstr ""
 "ដើម្បី​បញ្ជាក់​វិញ្ញាបនបត្រ​ផ្សេងៗ​ទៀត ជា​ដំបូង​អ្នក​ត្រូវ​តែ​បង្កើត​វិញ្ញាបនបត្រ OpenPGP សម្រាប់​ខ្លួន​ឯង​សិន "
 "។ ជ្រើស <interface>ឯកសារ->វិញ្ញាបនបត្រ​ថ្មី...</interface> ដើម្បី​បង្កើត​វា​មួយ ។"
 
-#: src/commands/certifycertificatecommand.cpp:210
+#: src/commands/certifycertificatecommand.cpp:218
 #, kde-format
 msgid "Do you wish to create one now?"
 msgstr ""
 
-#: src/commands/certifycertificatecommand.cpp:211
+#: src/commands/certifycertificatecommand.cpp:219
 #, kde-format
 msgid "Certification Not Possible"
 msgstr "មិន​មាន​វិញ្ញាបនបត្រ"
+
+#: src/commands/certifycertificatecommand.cpp:284
+#, fuzzy, kde-format
+#| msgid "Certification successful."
+msgid "Certification successfully."
+msgstr "បញ្ជាក់​ដោយ​ជោគជ័យ ។"
+
+#: src/commands/certifycertificatecommand.cpp:285
+#, fuzzy, kde-format
+#| msgid "Certification canceled."
+msgid "Certification Succeeded"
+msgstr "បាន​បោះបង់​ការ​បញ្ជាក់ ។"
+
+#: src/commands/certifycertificatecommand.cpp:287
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>An error occurred while trying to change the expiry date for <b>%1</b>:"
+#| "</p><p>%2</p>"
+msgid ""
+"<p>An error occurred while trying to certify<br/><br/><b>%1</b>:</p><p>\t%2</"
+"p>"
+msgstr "<p>មាន​កំហុស​​កើតឡើង​នៅ​ខណៈ​ផ្លាស់ប្ដូរ​កាលបរិច្ឆេទ​​ផុត​កំណត់​សម្រាប់ <b>%1</b>:</p><p>%2</p>"
+
+#: src/commands/certifycertificatecommand.cpp:291
+#, fuzzy, kde-format
+#| msgid "Certification"
+msgid "Certification Error"
+msgstr "វិញ្ញាបនបត្រ​"
 
 #: src/commands/changeexpirycommand.cpp:249
 #, kde-format
@@ -1354,7 +1382,7 @@ msgstr "ហត្ថលេខា​ថ្មី ៖​"
 
 #. i18n: ectx: property (text), widget (QCheckBox, encryptionCB)
 #: src/commands/keytocardcommand.cpp:106
-#: src/dialogs/certificatedetailswidget.cpp:388
+#: src/dialogs/certificatedetailswidget.cpp:412
 #: src/newcertificatewizard/advancedsettingsdialog.ui:216
 #, kde-format
 msgid "Encryption"
@@ -2464,7 +2492,7 @@ msgstr ""
 "ទាំងពីរ​ទេ  ។"
 
 #: src/crypto/createchecksumscontroller.cpp:349
-#: src/dialogs/updatenotification.cpp:94 src/mainwindow.cpp:646
+#: src/dialogs/updatenotification.cpp:94 src/mainwindow.cpp:660
 #, kde-format
 msgid "Cancel"
 msgstr "​បោះបង់"
@@ -3420,7 +3448,7 @@ msgid ""
 msgstr "សូម​ផ្ទៀងផ្ទាត់​ថា​បាន​ជ្រើស​​វិញ្ញាបនបត្រ​ត្រឹមត្រូវ​សម្រាប់​អ្នកផ្ញើ​នីមួយៗ​ ៖"
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:302
-#: src/crypto/gui/signencryptfileswizard.cpp:310 src/view/padwidget.cpp:497
+#: src/crypto/gui/signencryptfileswizard.cpp:313 src/view/padwidget.cpp:497
 #, kde-format
 msgctxt ""
 "VS-NfD-conforming is a German standard for restricted documents for which "
@@ -3431,7 +3459,7 @@ msgid "VS-NfD-compliant communication possible."
 msgstr ""
 
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:304
-#: src/crypto/gui/signencryptfileswizard.cpp:312 src/view/padwidget.cpp:499
+#: src/crypto/gui/signencryptfileswizard.cpp:315 src/view/padwidget.cpp:499
 #, kde-format
 msgctxt ""
 "VS-NfD-conforming is a German standard for restricted documents for which "
@@ -3515,7 +3543,7 @@ msgctxt "@info"
 msgid "Keep each file separate instead of creating an archive for all."
 msgstr ""
 
-#: src/crypto/gui/signencryptfileswizard.cpp:173
+#: src/crypto/gui/signencryptfileswizard.cpp:176
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3532,13 +3560,13 @@ msgstr ""
 "ជា​ឯកសារ​មួយ​​ដោយ​​ Kleopatra ។</para><para>កំណែ​របស់​ Kleopatra ត្រូវបាន​រំពឹង​ដើម្បី​បាន​​ផ្ដាច់​ការ​"
 "គាំ​ទ្រ​ហត្ថលេខា​ក្នុង​ករណី​នេះ​​ ។​</para>"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:178
+#: src/crypto/gui/signencryptfileswizard.cpp:181
 #, kde-format
 msgctxt "@title:window"
 msgid "Unusual Signature Warning"
 msgstr "ការ​ព្រមាន​ហត្ថលេខា​ខុសធម្មតា​"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:199
+#: src/crypto/gui/signencryptfileswizard.cpp:202
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -3551,104 +3579,104 @@ msgstr ""
 "para><para>នេះ​មានន័យថា​ពេល​ដែល​បាន​អ៊ិនគ្រីប​ហើយ អ្នក​នឹង​មិន​អាច​ឌិគ្រីប​ទិន្នន័យ​បាន​វិញ​ទេ ។​</"
 "para><para>តើ​អ្នក​ចង់​បន្ត ឬ​បោះបង់​ការ​ផ្លាស់ប្ដូរ​ជម្រើស​អ្នក​ទទួល ?</para>"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:202
+#: src/crypto/gui/signencryptfileswizard.cpp:205
 #, kde-format
 msgctxt "@title:window"
 msgid "Encrypt-To-Self Warning"
 msgstr "ការ​អ៊ិនគ្រីប​ទៅ​ការ​ព្រមាន​ខ្លួន​ឯង​"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:241
+#: src/crypto/gui/signencryptfileswizard.cpp:244
 #, fuzzy, kde-format
 #| msgid "The signature is bad."
 msgid "The S/MIME signature."
 msgstr "ហត្ថលេខា​នេះ​មិន​ត្រឹមត្រូវ ។"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:242
+#: src/crypto/gui/signencryptfileswizard.cpp:245
 #, fuzzy, kde-format
 #| msgid "The signature is bad."
 msgid "The signature."
 msgstr "ហត្ថលេខា​នេះ​មិន​ត្រឹមត្រូវ ។"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:243
+#: src/crypto/gui/signencryptfileswizard.cpp:246
 #, fuzzy, kde-format
 #| msgid "Sign and/or encrypt file(s)"
 msgid "The signed and encrypted file."
 msgstr "ចុះ​ហត្ថលេខា​ និង​​/​ឬ​ ​ឯកសារ​អ៊ិនគ្រីប​"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:244
+#: src/crypto/gui/signencryptfileswizard.cpp:247
 #, fuzzy, kde-format
 #| msgid "Selected file:"
 #| msgid_plural "Selected files:"
 msgid "The encrypted file."
 msgstr "ឯកសារ​ដែលបាន​ជ្រើស​ ៖"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:245
+#: src/crypto/gui/signencryptfileswizard.cpp:248
 #, fuzzy, kde-format
 #| msgid "S/MIME export file:"
 msgid "The S/MIME encrypted file."
 msgstr "ឯកសារ​នាំចេញ S/MIME ៖"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:246
+#: src/crypto/gui/signencryptfileswizard.cpp:249
 #, fuzzy, kde-format
 #| msgid "&Output folder:"
 msgid "Output directory."
 msgstr "ថត​លទ្ធផល ៖"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:315
+#: src/crypto/gui/signencryptfileswizard.cpp:318
 #, fuzzy, kde-format
 #| msgid "&Next"
 msgid "Next"
 msgstr "បន្ទាប់"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:374
+#: src/crypto/gui/signencryptfileswizard.cpp:377
 #, kde-format
 msgctxt "@title"
 msgid "Results"
 msgstr "លទ្ធផល​"
 
-#: src/crypto/gui/signencryptfileswizard.cpp:376
+#: src/crypto/gui/signencryptfileswizard.cpp:379
 #, kde-format
 msgctxt "@title"
 msgid "Status and progress of the crypto operations is shown here."
 msgstr "ស្ថានភាព និង​វឌ្ឍនភាព​របស់​ការប្រតិបត្តិការ​សម្ងាត់​ត្រូវបាន​បង្ហាញ​នៅទីនេះ​ ។"
 
-#: src/crypto/gui/signencryptwidget.cpp:123
+#: src/crypto/gui/signencryptwidget.cpp:124
 #, kde-format
 msgid "Prove authenticity (sign)"
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:124
+#: src/crypto/gui/signencryptwidget.cpp:125
 #, fuzzy, kde-format
 #| msgid "Sign Files"
 msgid "Sign as:"
 msgstr "ចុះហត្ថលេខា​ឯកសារ"
 
-#: src/crypto/gui/signencryptwidget.cpp:143
-#: src/crypto/gui/signencryptwidget.cpp:404
+#: src/crypto/gui/signencryptwidget.cpp:144
+#: src/crypto/gui/signencryptwidget.cpp:405
 #, kde-format
 msgctxt "@action"
 msgid "Encrypt"
 msgstr "អ៊ីនគ្រិប​"
 
-#: src/crypto/gui/signencryptwidget.cpp:149
+#: src/crypto/gui/signencryptwidget.cpp:150
 #, fuzzy, kde-format
 #| msgid "Encrypt file(s)"
 msgid "Encrypt for me:"
 msgstr "អ៊ិនគ្រីប​ឯកសារ"
 
-#: src/crypto/gui/signencryptwidget.cpp:155
+#: src/crypto/gui/signencryptwidget.cpp:156
 #, fuzzy, kde-format
 #| msgid "Encrypt file(s)"
 msgid "Encrypt for others:"
 msgstr "អ៊ិនគ្រីប​ឯកសារ"
 
-#: src/crypto/gui/signencryptwidget.cpp:184
+#: src/crypto/gui/signencryptwidget.cpp:185
 #, kde-format
 msgid ""
 "Encrypt with password. Anyone you share the password with can read the data."
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:186
+#: src/crypto/gui/signencryptwidget.cpp:187
 #, kde-format
 msgctxt "Tooltip information for symetric encryption"
 msgid ""
@@ -3658,7 +3686,7 @@ msgid ""
 "Even if you pick a very strong password."
 msgstr ""
 
-#: src/crypto/gui/signencryptwidget.cpp:402
+#: src/crypto/gui/signencryptwidget.cpp:403
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Sign && Encrypt"
@@ -3666,11 +3694,24 @@ msgctxt "@action"
 msgid "Sign / Encrypt"
 msgstr "ចុះហត្ថលេខា និង​អ៊ិនគ្រីប​"
 
-#: src/crypto/gui/signencryptwidget.cpp:406
+#: src/crypto/gui/signencryptwidget.cpp:407
 #, kde-format
 msgctxt "@action"
 msgid "Sign"
 msgstr "​ចុះហត្ថលេខា​"
+
+#: src/crypto/gui/signencryptwidget.cpp:538
+#, fuzzy, kde-format
+#| msgid "Could not bind to socket: %1"
+msgctxt "%1 is user input that could not be found"
+msgid "Could not find a key for '%1'"
+msgstr "មិនអាច​ចង​រន្ធ ៖ %1"
+
+#: src/crypto/gui/signencryptwidget.cpp:539
+#, fuzzy, kde-format
+#| msgid "Failed to execute %1: %2"
+msgid "Failed to find recipient"
+msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
 
 #: src/crypto/gui/signerresolvepage.cpp:85
 #, kde-format
@@ -3974,7 +4015,7 @@ msgstr "មិន​អាច​ស្វែងរក​ឯកសារ​រប
 msgid "Verifying checksums (%2) in %1"
 msgstr "ការផ្ទៀងផ្ទាត់ឆេកសាំង​​ (%2) ក្នុង​ %1"
 
-#: src/dialogs/addemaildialog.cpp:69
+#: src/dialogs/addemaildialog.cpp:69 src/dialogs/certifywidget.cpp:269
 #, kde-format
 msgid "Advanced"
 msgstr "កម្រិត​ខ្ពស់"
@@ -3992,7 +4033,7 @@ msgid "Add New EMail"
 msgstr ""
 
 #: src/dialogs/adduseriddialog.cpp:70
-#: src/dialogs/certificatedetailswidget.cpp:135
+#: src/dialogs/certificatedetailswidget.cpp:141
 #: src/newcertificatewizard/newcertificatewizard.cpp:1273
 #, kde-format
 msgid "Name"
@@ -4096,114 +4137,120 @@ msgstr "បន្ថែម​លេខសម្គាល់​អ្នក​ប
 msgid "This is how the new User-ID will be stored in the certificate:"
 msgstr "វា​ជា​របៀប​រក្សាទុក​លេខ​សម្គាល់​អ្នកប្រើ​នៅ​ក្នុង​វិញ្ញាបនបត្រ ៖"
 
-#: src/dialogs/certificatedetailswidget.cpp:123
+#: src/dialogs/certificatedetailswidget.cpp:129
 #, fuzzy, kde-format
 #| msgid "Never"
 msgctxt "Expires"
 msgid "never"
 msgstr "កុំ"
 
-#: src/dialogs/certificatedetailswidget.cpp:135
+#: src/dialogs/certificatedetailswidget.cpp:141
+#: src/dialogs/certifywidget.cpp:281
+#, kde-format
+msgid "Tags"
+msgstr ""
+
+#: src/dialogs/certificatedetailswidget.cpp:141
 #, kde-format
 msgid "Email"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:135
+#: src/dialogs/certificatedetailswidget.cpp:141
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Change Trust Level of %1"
 msgid "Trust Level"
 msgstr "ផ្លាស់ប្ដូរ​កម្រិត​ទុកចិត្ត​របស់ %1"
 
-#: src/dialogs/certificatedetailswidget.cpp:183
+#: src/dialogs/certificatedetailswidget.cpp:189
 #, fuzzy, kde-format
 #| msgid "Export"
 msgid "Updating..."
 msgstr "នាំចេញ"
 
-#: src/dialogs/certificatedetailswidget.cpp:211
+#: src/dialogs/certificatedetailswidget.cpp:228
 #, kde-format
 msgid "Revoke this User ID"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:329
+#: src/dialogs/certificatedetailswidget.cpp:349
 #, fuzzy, kde-format
 #| msgid "Certify..."
 msgid "Certify ..."
 msgstr "ផ្ទៀងផ្ទាត់..."
 
-#: src/dialogs/certificatedetailswidget.cpp:382
+#: src/dialogs/certificatedetailswidget.cpp:406
 #, fuzzy, kde-format
 #| msgid "Never"
 msgid "never"
 msgstr "កុំ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, signingCB)
-#: src/dialogs/certificatedetailswidget.cpp:384
+#: src/dialogs/certificatedetailswidget.cpp:408
 #: src/newcertificatewizard/advancedsettingsdialog.ui:206
 #, kde-format
 msgid "Signing"
 msgstr "ការ​ចុះហត្ថលេខា"
 
-#: src/dialogs/certificatedetailswidget.cpp:385
-#: src/dialogs/certificatedetailswidget.cpp:389
+#: src/dialogs/certificatedetailswidget.cpp:409
+#: src/dialogs/certificatedetailswidget.cpp:413
 #, kde-format
 msgid "First message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:386
-#: src/dialogs/certificatedetailswidget.cpp:390
+#: src/dialogs/certificatedetailswidget.cpp:410
+#: src/dialogs/certificatedetailswidget.cpp:414
 #, kde-format
 msgid "Last message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:387
-#: src/dialogs/certificatedetailswidget.cpp:391
+#: src/dialogs/certificatedetailswidget.cpp:411
+#: src/dialogs/certificatedetailswidget.cpp:415
 #, fuzzy, kde-format
 #| msgid "Message #%1"
 msgid "Message count"
 msgstr "សារ #%1"
 
-#: src/dialogs/certificatedetailswidget.cpp:427
+#: src/dialogs/certificatedetailswidget.cpp:451
 #, kde-format
 msgid "Common Name"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:428
+#: src/dialogs/certificatedetailswidget.cpp:452
 #, fuzzy, kde-format
 #| msgid "Animations"
 msgid "Organization"
 msgstr "ចលនា"
 
-#: src/dialogs/certificatedetailswidget.cpp:429
+#: src/dialogs/certificatedetailswidget.cpp:453
 #, fuzzy, kde-format
 #| msgid "Strength"
 msgid "Street"
 msgstr "គុណភាព"
 
-#: src/dialogs/certificatedetailswidget.cpp:430
+#: src/dialogs/certificatedetailswidget.cpp:454
 #, kde-format
 msgid "City"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:431
+#: src/dialogs/certificatedetailswidget.cpp:455
 #, fuzzy, kde-format
 #| msgid "Status"
 msgid "State"
 msgstr "ស្ថានភាព"
 
-#: src/dialogs/certificatedetailswidget.cpp:432
+#: src/dialogs/certificatedetailswidget.cpp:456
 #, kde-format
 msgid "Country"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:455
+#: src/dialogs/certificatedetailswidget.cpp:479
 #, kde-format
 msgctxt "<name> of <company>"
 msgid "%1 of %2"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:583
+#: src/dialogs/certificatedetailswidget.cpp:609
 #, fuzzy, kde-format
 #| msgid "Certificate Details"
 msgctxt "@title:window"
@@ -4258,7 +4305,7 @@ msgstr "បង្កើត​វិញ្ញាបនបត្រ​ថ្មី
 
 #. i18n: ectx: property (text), widget (QPushButton, certifyBtn)
 #: src/dialogs/certificatedetailswidget.ui:67
-#: src/dialogs/certifycertificatedialog.cpp:194
+#: src/dialogs/certifycertificatedialog.cpp:77
 #: src/newcertificatewizard/newcertificatewizard.cpp:1646
 #, kde-format
 msgid "Certify"
@@ -4459,134 +4506,65 @@ msgctxt "@title:window"
 msgid "Certificate Selection"
 msgstr "ជម្រើស​វិញ្ញាបនបត្រ"
 
-#. i18n: ectx: property (text), widget (QLabel, label_6)
-#: src/dialogs/certificationoptionswidget.ui:16
+#: src/dialogs/certifycertificatedialog.cpp:86
 #, kde-format
-msgid "<b>Step 2:</b> Choose how to certify."
-msgstr "<b>ជំហាន ២ ៖</b> ជ្រើស​វិធី​ត្រូវ​បញ្ជាក់ ។"
-
-#. i18n: ectx: property (text), widget (QLabel, label_7)
-#: src/dialogs/certificationoptionswidget.ui:30
-#, kde-format
-msgid "Choose which of your certificates to sign with:"
-msgstr "ជ្រើស​វិញ្ញាបនបត្រ​​របស់​អ្នក​ណាមួយ​​ត្រូវ​ចុះហត្ថលេខា​ដោយ​ ៖​"
-
-#. i18n: ectx: property (text), widget (QRadioButton, localSignatureRB)
-#: src/dialogs/certificationoptionswidget.ui:57
-#, kde-format
-msgid "Certify only for myself"
-msgstr "បញ្ជាក់​តែ​សម្រាប់​ខ្លួន​អ្នក​ផ្ទាល់"
-
-#. i18n: ectx: property (text), widget (QRadioButton, exportableSignatureRB)
-#: src/dialogs/certificationoptionswidget.ui:67
-#, kde-format
-msgid "Certify for everyone to see"
-msgstr "បញ្ជាក់​សម្រាប់​​អ្នក​រាល់គ្នា​ឃើញ"
-
-#. i18n: ectx: property (text), widget (QCheckBox, sendToServerCB)
-#: src/dialogs/certificationoptionswidget.ui:95
-#, kde-format
-msgid "Send certified certificate to server afterwards"
-msgstr "ផ្ញើ​វិញ្ញាបនបត្រ​ដែល​បាន​បញ្ជាក់​ទៅ​ម៉ាស៊ីន​បម្រើ​ពេល​ក្រោយ"
-
-#: src/dialogs/certifycertificatedialog.cpp:134
-#, fuzzy, kde-format
-#| msgid "<b>Step 1:</b> Please select the user IDs you wish to certify."
-msgid ""
-"<b>Step 1:</b> Please select the names and email addresses you wish to "
-"certify."
-msgstr "<b>ជំហាន ១ ៖</b> សូម​ជ្រើស​លេខ​សម្គាល់​អ្នក​ប្រើ ដែល​អ្នក​ចង់​បញ្ជាក់ ។"
-
-#: src/dialogs/certifycertificatedialog.cpp:161
-#, fuzzy, kde-format
-#| msgid "Fingerprint"
-msgid "Fingerprint: <b>%1</b>"
-msgstr "ស្នាម​ម្រាមដៃ"
-
-#: src/dialogs/certifycertificatedialog.cpp:163
-#, kde-format
-msgid "<i>Only the fingerprint clearly identifies the key and its owner.</i>"
+msgid "You cannot certify using the same key."
 msgstr ""
 
-#: src/dialogs/certifycertificatedialog.cpp:208
-#, kde-format
-msgid "Certification will be performed using certificate %1."
-msgstr "ការ​បញ្ជាក់​នឹង​​ត្រូវ​បាន​អនុវត្ត​ដោយ​ប្រើ​វិញ្ញាបនបត្រ %1 ។"
+#: src/dialogs/certifycertificatedialog.cpp:87
+#, fuzzy, kde-format
+#| msgid "Selection"
+msgid "Invalid Selection"
+msgstr "ជម្រើស"
 
-#: src/dialogs/certifycertificatedialog.cpp:244
-#, kde-format
-msgid "Signed user IDs:"
-msgstr "បាន​ចុះហត្ថលេខា​លេខ​សម្គាល់​របស់​អ្នក​ប្រើ ៖"
-
-#: src/dialogs/certifycertificatedialog.cpp:247
-#, kde-format
-msgid "<b>Summary:</b>"
-msgstr "<b>សង្ខេប ៖</b>"
-
-#: src/dialogs/certifycertificatedialog.cpp:251
-#, kde-format
-msgid "Check level:"
-msgstr "កម្រិត​ពិនិត្យ ៖"
-
-#: src/dialogs/certifycertificatedialog.cpp:256
-#, kde-format
-msgid "Selected secret key:"
-msgstr "សោ​​សម្ងាត់​ដែល​បាន​ជ្រើស​ ៖​"
-
-#: src/dialogs/certifycertificatedialog.cpp:278
-#, kde-format
-msgid "Default certificate"
-msgstr "ប​វិញ្ញាបនបត្រ​លំនាំដើម​"
-
-#: src/dialogs/certifycertificatedialog.cpp:282
-#, kde-format
-msgid "No statement made"
-msgstr "គ្មាន​សេចក្ដី​ថ្លែងការ"
-
-#: src/dialogs/certifycertificatedialog.cpp:285
-#, kde-format
-msgid "Not checked"
-msgstr "មិនបានត្រួតពិនិត្យ"
-
-#: src/dialogs/certifycertificatedialog.cpp:288
-#, kde-format
-msgid "Casually checked"
-msgstr "បានពិនិត្យ​តាម​ធម្មតា"
-
-#: src/dialogs/certifycertificatedialog.cpp:291
-#, kde-format
-msgid "Thoroughly checked"
-msgstr "បាន​ពិនិត្យ​យ៉ាង​ហ្មត់ចត់"
-
-#: src/dialogs/certifycertificatedialog.cpp:309
-#, kde-format
-msgid ""
-"The certificate was not certified because it was already certified by the "
-"same certificate."
-msgstr "វិញ្ញាបនបត្រ​គឺ​មិនត្រូវបាន​បញ្ជាក់​ទេ ព្រោះ​វា​បាន​បញ្ជាក់​ដោយ​វិញ្ញាបនបត្រ​ដូចគ្នា​រួចហើយ ។"
-
-#: src/dialogs/certifycertificatedialog.cpp:311
-#, kde-format
-msgid "The certificate could not be certified. <b>Error</b>: %1"
-msgstr "វិញ្ញាបនបត្រ​មិន​អាច​ត្រូវ​បានបញ្ជាក់​ទេ ។ <b>កំហុស</b> ៖ %1"
-
-#: src/dialogs/certifycertificatedialog.cpp:314
-#, kde-format
-msgid "Certification canceled."
-msgstr "បាន​បោះបង់​ការ​បញ្ជាក់ ។"
-
-#: src/dialogs/certifycertificatedialog.cpp:316
-#, kde-format
-msgid "Certification successful."
-msgstr "បញ្ជាក់​ដោយ​ជោគជ័យ ។"
-
-#: src/dialogs/certifycertificatedialog.cpp:395
+#: src/dialogs/certifycertificatedialog.cpp:122
 #, fuzzy, kde-format
 #| msgctxt "arg is name, email of certificate holder"
 #| msgid "Certify Certificate: %1"
 msgctxt "@title:window arg is name, email of certificate holder"
 msgid "Certify Certificate: %1"
 msgstr "បញ្ជាក់​វិញ្ញាបនបត្រ​ ៖ %1"
+
+#: src/dialogs/certifywidget.cpp:249
+#, fuzzy, kde-format
+#| msgid "Certify"
+msgid "Certify with:"
+msgstr "បញ្ជាក់"
+
+#: src/dialogs/certifywidget.cpp:274
+#, fuzzy, kde-format
+#| msgid "Certify for everyone to see"
+msgid "Certify for everyone to see. (exportable)"
+msgstr "បញ្ជាក់​សម្រាប់​​អ្នក​រាល់គ្នា​ឃើញ"
+
+#: src/dialogs/certifywidget.cpp:275
+#, fuzzy, kde-format
+#| msgid "Lookup Certificates on Server..."
+msgid "Publish on keyserver afterwards."
+msgstr "រកមើល​វិញ្ញាបនបត្រ​លើ​ម៉ាស៊ីន​បម្រើ..."
+
+#: src/dialogs/certifywidget.cpp:288
+#, kde-format
+msgid "You can use this to add additional info to a certification."
+msgstr ""
+
+#: src/dialogs/certifywidget.cpp:290
+#, kde-format
+msgid ""
+"Tags created by anyone with full certification trust are shown in the "
+"keylist and can be searched."
+msgstr ""
+
+#: src/dialogs/certifywidget.cpp:374
+#, fuzzy, kde-format
+#| msgid "Fingerprint"
+msgid "Fingerprint: <b>%1</b>"
+msgstr "ស្នាម​ម្រាមដៃ"
+
+#: src/dialogs/certifywidget.cpp:376
+#, kde-format
+msgid "<i>Only the fingerprint clearly identifies the key and its owner.</i>"
+msgstr ""
 
 #: src/dialogs/deletecertificatesdialog.cpp:111
 #, kde-format
@@ -5387,7 +5365,7 @@ msgctxt "@title:window"
 msgid "Certifications"
 msgstr "វិញ្ញាបនបត្រ​"
 
-#: src/dialogs/weboftrustwidget.cpp:154
+#: src/dialogs/weboftrustwidget.cpp:161
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -5395,7 +5373,7 @@ msgid ""
 "message></para>"
 msgstr "<para>កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ផ្ទុក​វិញ្ញាបនបត្រ ៖ <message>%1</message></para>"
 
-#: src/dialogs/weboftrustwidget.cpp:157
+#: src/dialogs/weboftrustwidget.cpp:164
 #, kde-format
 msgctxt "@title"
 msgid "Certifications Loading Failed"
@@ -5919,69 +5897,69 @@ msgctxt ""
 msgid "gpg4win-compendium-en.pdf"
 msgstr ""
 
-#: src/mainwindow.cpp:412
+#: src/mainwindow.cpp:426
 #, kde-format
 msgid "GnuPG Log Viewer"
 msgstr "កម្មវិធី​មើល​កំណត់​ហេតុ​របស់ GnuPG"
 
-#: src/mainwindow.cpp:418
+#: src/mainwindow.cpp:432
 #, kde-format
 msgid "Check for updates"
 msgstr ""
 
-#: src/mainwindow.cpp:422
+#: src/mainwindow.cpp:436
 #, kde-format
 msgid "Gpg4win Compendium"
 msgstr ""
 
-#: src/mainwindow.cpp:427
+#: src/mainwindow.cpp:441
 #, kde-format
 msgctxt "Title for a generic data input / output area supporting text actions."
 msgid "Notepad"
 msgstr ""
 
-#: src/mainwindow.cpp:428
+#: src/mainwindow.cpp:442
 #, kde-format
 msgid "Switch to Pad view."
 msgstr ""
 
-#: src/mainwindow.cpp:433
+#: src/mainwindow.cpp:447
 #, kde-format
 msgid "Configure GnuPG Backend..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្នែក​ខាង​ក្រោយ​របស់ GnuPG​..."
 
-#: src/mainwindow.cpp:439
+#: src/mainwindow.cpp:453
 #, kde-format
 msgid "Perform Self-Test"
 msgstr "អនុវត្ត​ការ​សាកល្បង​ដោយ​ខ្លួនឯង"
 
-#: src/mainwindow.cpp:443
+#: src/mainwindow.cpp:457
 #, fuzzy, kde-format
 #| msgid "SmartCard"
 msgid "Manage Smartcards"
 msgstr "​SmartCard"
 
-#: src/mainwindow.cpp:444
+#: src/mainwindow.cpp:458
 #, kde-format
 msgid "Edit or initialize a crypto hardware token."
 msgstr ""
 
-#: src/mainwindow.cpp:462
+#: src/mainwindow.cpp:476
 #, kde-format
 msgid "Set Focus to Quick Search"
 msgstr ""
 
-#: src/mainwindow.cpp:483
+#: src/mainwindow.cpp:497
 #, kde-format
 msgid "Could not configure the cryptography backend (gpgconf tool not found)"
 msgstr "មិន​អាច​កំណត់​រចនាសម្ព័ន្ធ​ផ្នែក​ខាង​ក្រោយ​កា​រគ្រីប (រក​មិន​ឃើញ​ឧបករណ៍ gpgconf​)"
 
-#: src/mainwindow.cpp:483
+#: src/mainwindow.cpp:497
 #, kde-format
 msgid "Configuration Error"
 msgstr "កំហុស​កំណត់​រចនាសម្ព័ន្ធ"
 
-#: src/mainwindow.cpp:518
+#: src/mainwindow.cpp:532
 #, kde-format
 msgid ""
 "There are still some background operations ongoing. These will be terminated "
@@ -5990,28 +5968,28 @@ msgstr ""
 "នៅ​មាន​ប្រតិបត្តិការ​ផ្ទៃ​ខាងក្រោយ​មួយ​ចំនួន​កំពុង​ធ្វើ​បន្ត ។ ប្រតិបត្តិការ​ទាំង​នេះ នឹង​ត្រូវបាន​បញ្ចប់ នៅពេល​"
 "ដែល​បិទ​បង្អួច ។ បញ្ចប់​ដំណើរការ​ឬ ?"
 
-#: src/mainwindow.cpp:521
+#: src/mainwindow.cpp:535
 #, kde-format
 msgid "Ongoing Background Tasks"
 msgstr "ភារកិច្ច​ផ្ទៃខាងក្រោយ​ធ្វើ​បន្ត"
 
-#: src/mainwindow.cpp:630 src/view/keylistcontroller.cpp:405
+#: src/mainwindow.cpp:644 src/view/keylistcontroller.cpp:405
 #, kde-format
 msgid "Sign/Encrypt..."
 msgstr "ចុះហត្ថលេខា/អ៊ីនគ្រិប..."
 
-#: src/mainwindow.cpp:631 src/utils/clipboardmenu.cpp:49
+#: src/mainwindow.cpp:645 src/utils/clipboardmenu.cpp:49
 #: src/view/keylistcontroller.cpp:401
 #, kde-format
 msgid "Decrypt/Verify..."
 msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់..."
 
-#: src/mainwindow.cpp:636
+#: src/mainwindow.cpp:650
 #, kde-format
 msgid "Import Certificates"
 msgstr "នាំចូល​វិញ្ញាបនបត្រ​"
 
-#: src/mainwindow.cpp:637
+#: src/mainwindow.cpp:651
 #, kde-format
 msgid "Import CRLs"
 msgstr "នាំចូល​ CRL"
@@ -7970,7 +7948,7 @@ msgstr "បោះបង់ចោល​ឃ្លាំងសម្ងាត់​
 msgid "Import CRL From File..."
 msgstr "នាំចូល​ CRL ពី​ឯកសារ..."
 
-#: src/view/keytreeview.cpp:98
+#: src/view/keytreeview.cpp:106
 #, kde-format
 msgid "View Columns"
 msgstr ""
@@ -8596,6 +8574,63 @@ msgstr "វិញ្ញាបនបត្រ​ដែលបាននាំចូ
 #, kde-format
 msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
+
+#~ msgid "<b>Step 2:</b> Choose how to certify."
+#~ msgstr "<b>ជំហាន ២ ៖</b> ជ្រើស​វិធី​ត្រូវ​បញ្ជាក់ ។"
+
+#~ msgid "Choose which of your certificates to sign with:"
+#~ msgstr "ជ្រើស​វិញ្ញាបនបត្រ​​របស់​អ្នក​ណាមួយ​​ត្រូវ​ចុះហត្ថលេខា​ដោយ​ ៖​"
+
+#~ msgid "Certify only for myself"
+#~ msgstr "បញ្ជាក់​តែ​សម្រាប់​ខ្លួន​អ្នក​ផ្ទាល់"
+
+#~ msgid "Send certified certificate to server afterwards"
+#~ msgstr "ផ្ញើ​វិញ្ញាបនបត្រ​ដែល​បាន​បញ្ជាក់​ទៅ​ម៉ាស៊ីន​បម្រើ​ពេល​ក្រោយ"
+
+#, fuzzy
+#~| msgid "<b>Step 1:</b> Please select the user IDs you wish to certify."
+#~ msgid ""
+#~ "<b>Step 1:</b> Please select the names and email addresses you wish to "
+#~ "certify."
+#~ msgstr "<b>ជំហាន ១ ៖</b> សូម​ជ្រើស​លេខ​សម្គាល់​អ្នក​ប្រើ ដែល​អ្នក​ចង់​បញ្ជាក់ ។"
+
+#~ msgid "Certification will be performed using certificate %1."
+#~ msgstr "ការ​បញ្ជាក់​នឹង​​ត្រូវ​បាន​អនុវត្ត​ដោយ​ប្រើ​វិញ្ញាបនបត្រ %1 ។"
+
+#~ msgid "Signed user IDs:"
+#~ msgstr "បាន​ចុះហត្ថលេខា​លេខ​សម្គាល់​របស់​អ្នក​ប្រើ ៖"
+
+#~ msgid "<b>Summary:</b>"
+#~ msgstr "<b>សង្ខេប ៖</b>"
+
+#~ msgid "Check level:"
+#~ msgstr "កម្រិត​ពិនិត្យ ៖"
+
+#~ msgid "Selected secret key:"
+#~ msgstr "សោ​​សម្ងាត់​ដែល​បាន​ជ្រើស​ ៖​"
+
+#~ msgid "Default certificate"
+#~ msgstr "ប​វិញ្ញាបនបត្រ​លំនាំដើម​"
+
+#~ msgid "No statement made"
+#~ msgstr "គ្មាន​សេចក្ដី​ថ្លែងការ"
+
+#~ msgid "Not checked"
+#~ msgstr "មិនបានត្រួតពិនិត្យ"
+
+#~ msgid "Casually checked"
+#~ msgstr "បានពិនិត្យ​តាម​ធម្មតា"
+
+#~ msgid "Thoroughly checked"
+#~ msgstr "បាន​ពិនិត្យ​យ៉ាង​ហ្មត់ចត់"
+
+#~ msgid ""
+#~ "The certificate was not certified because it was already certified by the "
+#~ "same certificate."
+#~ msgstr "វិញ្ញាបនបត្រ​គឺ​មិនត្រូវបាន​បញ្ជាក់​ទេ ព្រោះ​វា​បាន​បញ្ជាក់​ដោយ​វិញ្ញាបនបត្រ​ដូចគ្នា​រួចហើយ ។"
+
+#~ msgid "The certificate could not be certified. <b>Error</b>: %1"
+#~ msgstr "វិញ្ញាបនបត្រ​មិន​អាច​ត្រូវ​បានបញ្ជាក់​ទេ ។ <b>កំហុស</b> ៖ %1"
 
 #~ msgid "I have verified the fingerprint"
 #~ msgstr "ខ្ញុំ​បាន​បញ្ជាក់​ស្នាម​ផ្ដិត​ម្រាមដៃ​​"
