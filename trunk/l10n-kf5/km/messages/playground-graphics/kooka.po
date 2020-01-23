@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kooka\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2019-11-05 03:27+0100\n"
+"POT-Creation-Date: 2020-01-23 03:41+0100\n"
 "PO-Revision-Date: 2012-06-15 10:12+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -253,21 +253,21 @@ msgstr "<filename><a href=\"%1\">%2</a></filename><br>"
 msgid "OCR Temporary Files"
 msgstr "ឯកសារ​បណ្ដោះអាសន្ន OCR T"
 
-#: ../plugins/ocr/abstractocrengine.cpp:413
+#: ../plugins/ocr/abstractocrengine.cpp:415
 #, fuzzy, kde-kuit-format
 #| msgid "<qt>Cannot read GOCR result file <filename>%1</filename><br/>%2"
 msgctxt "@info"
 msgid "Cannot create temporary file <filename>%1</filename>"
 msgstr "<qt>មិន​អាច​អាន​ឯកសារ​លទ្ធផល​  GOCR បាន​ទេ <filename>%1</filename><br/>%2"
 
-#: ../plugins/ocr/abstractocrengine.cpp:459
+#: ../plugins/ocr/abstractocrengine.cpp:461
 #, fuzzy, kde-kuit-format
 #| msgid "<qt>Cannot read GOCR result file <filename>%1</filename><br/>%2"
 msgctxt "@info"
 msgid "Cannot save image to temporary file <filename>%1</filename>"
 msgstr "<qt>មិន​អាច​អាន​ឯកសារ​លទ្ធផល​  GOCR បាន​ទេ <filename>%1</filename><br/>%2"
 
-#: ../plugins/ocr/abstractocrengine.cpp:488
+#: ../plugins/ocr/abstractocrengine.cpp:490
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -275,27 +275,27 @@ msgid ""
 "envar>."
 msgstr ""
 
-#: ../plugins/ocr/abstractocrengine.cpp:498
+#: ../plugins/ocr/abstractocrengine.cpp:500
 #, fuzzy, kde-kuit-format
 #| msgid "File '%1' does not exist"
 msgctxt "@info"
 msgid "The executable <filename>%1</filename> does not exist or is not usable."
 msgstr "មិន​ទាន់​មាន​ឯកសារ '%1' ទេ"
 
-#: ../plugins/ocr/abstractocrengine.cpp:570
+#: ../plugins/ocr/abstractocrengine.cpp:572
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
 "Command <command>%1</command> crashed with exit status <numid>%2</numid>"
 msgstr ""
 
-#: ../plugins/ocr/abstractocrengine.cpp:575
+#: ../plugins/ocr/abstractocrengine.cpp:577
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Command <command>%1</command> exited with status <numid>%2</numid>"
 msgstr ""
 
-#: ../plugins/ocr/abstractocrengine.cpp:579
+#: ../plugins/ocr/abstractocrengine.cpp:581
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Parsing the OCRAD result file failed\n"
@@ -306,7 +306,7 @@ msgstr ""
 "បាន​បរាជ័យ​ក្នុង​ការ​ញែក​ឯកសារ​លទ្ធផល OCRAD\n"
 "%1"
 
-#: ../plugins/ocr/abstractocrengine.cpp:580
+#: ../plugins/ocr/abstractocrengine.cpp:582
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -314,12 +314,12 @@ msgid ""
 "link> log file."
 msgstr ""
 
-#: ../plugins/ocr/abstractocrengine.cpp:583
+#: ../plugins/ocr/abstractocrengine.cpp:585
 #, kde-format
 msgid "OCR Command Failed"
 msgstr "បាន​បរាជ័យ​​​ពាក្យ​បញ្ជា OCR"
 
-#: ../plugins/ocr/abstractocrengine.cpp:590
+#: ../plugins/ocr/abstractocrengine.cpp:592
 #, fuzzy, kde-kuit-format
 #| msgid ""
 #| "Parsing the OCRAD result file failed\n"
@@ -330,7 +330,7 @@ msgstr ""
 "បាន​បរាជ័យ​ក្នុង​ការ​ញែក​ឯកសារ​លទ្ធផល OCRAD\n"
 "%1"
 
-#: ../plugins/ocr/abstractocrengine.cpp:591
+#: ../plugins/ocr/abstractocrengine.cpp:593
 #, fuzzy, kde-format
 #| msgid "OCR Command Failed"
 msgid "OCR Processing Failed"
@@ -360,6 +360,7 @@ msgstr ""
 
 #: ../plugins/ocr/gocr/ocrgocrdialog.cpp:186
 #: ../plugins/ocr/ocrad/ocrocraddialog.cpp:283
+#: ../plugins/ocr/tesseract/ocrtesseractdialog.cpp:251
 #, kde-format
 msgid "Error"
 msgstr "កំហុស"
@@ -560,11 +561,15 @@ msgstr "រកឃើញ​ប្លង់​ទាំងមូល"
 #: ../plugins/ocr/ocrad/ocrocraddialog.cpp:117
 #: ../plugins/ocr/ocrad/ocrocraddialog.cpp:138
 #: ../plugins/ocr/ocrad/ocrocraddialog.cpp:159
+#: ../plugins/ocr/tesseract/ocrtesseractdialog.cpp:88
+#: ../plugins/ocr/tesseract/ocrtesseractdialog.cpp:150
+#: ../plugins/ocr/tesseract/ocrtesseractdialog.cpp:175
 #, kde-format
 msgid "(default)"
 msgstr "(លំនាំដើម)"
 
 #: ../plugins/ocr/ocrad/ocrocradengine.cpp:243
+#: ../plugins/ocr/tesseract/ocrtesseractengine.cpp:157
 #, fuzzy, kde-kuit-format
 #| msgid "File '%1' does not exist"
 msgctxt "@info"
@@ -572,6 +577,7 @@ msgid "File <filename>%1</filename> does not exist"
 msgstr "មិន​ទាន់​មាន​ឯកសារ '%1' ទេ"
 
 #: ../plugins/ocr/ocrad/ocrocradengine.cpp:247
+#: ../plugins/ocr/tesseract/ocrtesseractengine.cpp:158
 #, fuzzy, kde-kuit-format
 #| msgid "<qt><p>%1<br><filename>%3</filename><br><br>%2"
 msgctxt "@info"
@@ -579,6 +585,7 @@ msgid "File <filename>%1</filename> unreadable"
 msgstr "<qt><p>%1<br><filename>%3</filename><br><br>%2"
 
 #: ../plugins/ocr/ocrad/ocrocradengine.cpp:251
+#: ../plugins/ocr/tesseract/ocrtesseractengine.cpp:165
 #, fuzzy, kde-kuit-format
 #| msgid "<qt>Cannot read GOCR result file <filename>%1</filename><br/>%2"
 msgctxt "@info"
@@ -588,6 +595,28 @@ msgstr "<qt>មិន​អាច​អាន​ឯកសារ​លទ្ធ�
 #: ../plugins/ocr/ocrad/ocrocradengine.cpp:434
 #, kde-format
 msgid "Name or path of the OCRAD executable:"
+msgstr ""
+
+#: ../plugins/ocr/tesseract/ocrtesseractdialog.cpp:73
+#, kde-format
+msgid "The Tesseract executable is not configured or is not available."
+msgstr ""
+
+#: ../plugins/ocr/tesseract/ocrtesseractdialog.cpp:113
+#: ../plugins/ocr/tesseract/ocrtesseractdialog.cpp:130
+#, fuzzy, kde-format
+#| msgid "Select Scan Device..."
+msgid "Select a file if required..."
+msgstr "ជ្រើស​ឧបករណ៍​ស្កេន..."
+
+#: ../plugins/ocr/tesseract/ocrtesseractengine.cpp:226
+#, kde-format
+msgid "HOCR parsing error, %1"
+msgstr ""
+
+#: ../plugins/ocr/tesseract/ocrtesseractengine.cpp:251
+#, kde-format
+msgid "Name or path of the Tesseract executable:"
 msgstr ""
 
 #. i18n: ectx: Menu (file)
@@ -1987,6 +2016,37 @@ msgstr "កំណត់​កម្រិត​ពន្លឺ"
 #| msgid "Threshold"
 msgid "Threshold"
 msgstr "កម្រិត​ពន្លឺ"
+
+#. i18n: ectx: label, entry (ocrTesseractLanguage), group (tesseract)
+#: kookasettings.kcfg:292
+#, kde-format
+msgid "Language:"
+msgstr ""
+
+#. i18n: ectx: label, entry (ocrTesseractUserWords), group (tesseract)
+#: kookasettings.kcfg:296
+#, kde-format
+msgid "User word list:"
+msgstr ""
+
+#. i18n: ectx: label, entry (ocrTesseractUserPatterns), group (tesseract)
+#: kookasettings.kcfg:300
+#, kde-format
+msgid "User patterns:"
+msgstr ""
+
+#. i18n: ectx: label, entry (ocrTesseractEngineMode), group (tesseract)
+#: kookasettings.kcfg:304
+#, fuzzy, kde-format
+#| msgid "OCR Engine:"
+msgid "Engine mode:"
+msgstr "ម៉ាស៊ីន OCR ៖"
+
+#. i18n: ectx: label, entry (ocrTesseractSegmentationMode), group (tesseract)
+#: kookasettings.kcfg:308
+#, kde-format
+msgid "Segmentation mode:"
+msgstr ""
 
 #: kookaview.cpp:199
 #, kde-format
