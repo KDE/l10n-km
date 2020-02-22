@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatolibs\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-02-19 02:34+0100\n"
+"POT-Creation-Date: 2020-02-22 02:32+0100\n"
 "PO-Revision-Date: 2010-03-09 09:17+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -2484,10 +2484,10 @@ msgstr "ឈ្មោះ​ធន​ធាន ឬ​ក្រុម​ធន​�
 #: models/kptcommonstrings.cpp:115
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info:tooltip"
-#| msgid "The type of the resource or resource group"
+#| msgid "The name of the resource or resource group"
 msgctxt "@info:tooltip"
-msgid "The scope of the resource or resource group"
-msgstr "ប្រភេទ​ធន​ធាន​ ឬ​ក្រុម​ធន​ធាន"
+msgid "The origin of the resource or resource group"
+msgstr "ឈ្មោះ​ធន​ធាន ឬ​ក្រុម​ធន​ធាន​"
 
 #: models/kptcommonstrings.cpp:116
 #, kde-kuit-format
@@ -5037,21 +5037,21 @@ msgctxt "@info"
 msgid "Missing namespace declarations:<nl/><filename>%1</filename>"
 msgstr "មិន​អាច​បើក​ឯកសារ​បាន​ទេ​ ៖<br/><filename>%1</filename>"
 
-#: models/ResourceGroupItemModel.cpp:349
+#: models/ResourceGroupItemModel.cpp:363
 #, fuzzy
 #| msgid "Modify resource account"
 msgctxt "(qtundo-format)"
 msgid "Modify resourcegroup name"
 msgstr "កែប្រែ​គណនី​ធន​ធាន​"
 
-#: models/ResourceGroupItemModel.cpp:390
+#: models/ResourceGroupItemModel.cpp:404
 #, fuzzy
 #| msgid "Modify resource account"
 msgctxt "(qtundo-format)"
 msgid "Modify resourcegroup type"
 msgstr "កែប្រែ​គណនី​ធន​ធាន​"
 
-#: models/ResourceGroupItemModel.cpp:597 models/ResourceItemModel.cpp:804
+#: models/ResourceGroupItemModel.cpp:611 models/ResourceItemModel.cpp:804
 #, fuzzy, kde-format
 #| msgid "Add resource from address book"
 #| msgid_plural "Add %1 resources from address book"
@@ -5060,7 +5060,7 @@ msgid "Add resource from address book"
 msgid_plural "Add %1 resources from address book"
 msgstr[0] "បន្ថែម​ធន​ធាន %1 ​ពី​សៀវ​ភៅ​អាសយ​ដ្ឋាន"
 
-#: models/ResourceGroupItemModel.cpp:658 models/ResourceItemModel.cpp:866
+#: models/ResourceGroupItemModel.cpp:672 models/ResourceItemModel.cpp:866
 #, fuzzy, kde-format
 #| msgid "Move resource"
 #| msgid_plural "Move %1 resources"
@@ -5069,7 +5069,7 @@ msgid "Move resource"
 msgid_plural "Move %1 resources"
 msgstr[0] "ផ្លាស់​ទី​ធនធាន %1"
 
-#: models/ResourceGroupItemModel.cpp:677 models/ResourceItemModel.cpp:885
+#: models/ResourceGroupItemModel.cpp:691 models/ResourceItemModel.cpp:885
 #, fuzzy, kde-format
 #| msgid "Copy resource"
 #| msgid_plural "Copy %1 resources"
@@ -5078,28 +5078,28 @@ msgid "Copy resource"
 msgid_plural "Copy %1 resources"
 msgstr[0] "ចម្លង​ធនធាន %1​"
 
-#: models/ResourceGroupItemModel.cpp:778 models/ResourceGroupItemModel.cpp:782
+#: models/ResourceGroupItemModel.cpp:792 models/ResourceGroupItemModel.cpp:796
 #, fuzzy
 #| msgid "Add resource group"
 msgctxt "(qtundo-format)"
 msgid "Add resource group"
 msgstr "បន្ថែម​ក្រុម​ធន​ធាន​"
 
-#: models/ResourceGroupItemModel.cpp:789 models/ResourceItemModel.cpp:983
+#: models/ResourceGroupItemModel.cpp:803 models/ResourceItemModel.cpp:983
 #, fuzzy
 #| msgid "Add resource"
 msgctxt "(qtundo-format)"
 msgid "Add resource"
 msgstr "បន្ថែម​ធន​ធាន​"
 
-#: models/ResourceGroupItemModel.cpp:850
+#: models/ResourceGroupItemModel.cpp:865 ui/ResourceGroupDocker.cpp:127
 #, fuzzy
 #| msgid "Add resource group"
 msgctxt "(qtundo-format)"
 msgid "Add parent group"
 msgstr "បន្ថែម​ក្រុម​ធន​ធាន​"
 
-#: models/ResourceGroupItemModel.cpp:852
+#: models/ResourceGroupItemModel.cpp:867 ui/ResourceGroupDocker.cpp:132
 #, fuzzy
 #| msgid "Remove Entry"
 msgctxt "(qtundo-format)"
@@ -5124,7 +5124,7 @@ msgstr ""
 
 #: models/ResourceGroupModel.cpp:207 models/ResourceModel.cpp:411
 #, kde-format
-msgid "Scope"
+msgid "Origin"
 msgstr ""
 
 #: models/ResourceGroupModel.cpp:209
@@ -7176,7 +7176,7 @@ msgctxt "(qtundo-format)"
 msgid "Modify Resource"
 msgstr "កែប្រែ​ធន​ធាន​​"
 
-#: ui/kptresourceeditor.cpp:151 ui/ResourceGroupEditor.cpp:155
+#: ui/kptresourceeditor.cpp:151
 #, fuzzy, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -7568,7 +7568,7 @@ msgctxt "@title resource allocations"
 msgid "Allocations"
 msgstr "ការ​បម្រុង​ទុក​"
 
-#: ui/kpttaskeditor.cpp:462
+#: ui/kpttaskeditor.cpp:462 ui/ResourceGroupEditor.cpp:400
 #, fuzzy, kde-kuit-format
 #| msgid "Resources"
 msgctxt "@title"
@@ -9376,6 +9376,16 @@ msgstr "អត្រាគិត​ជា​ម៉ោង ៖"
 msgid "Overtime rate:"
 msgstr "អត្រា​ម៉ោង​លើស ៖​"
 
+#: ui/ResourceGroupEditor.cpp:157
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<title>Resource Breakdown Structure</title><para>Resources can be organized "
+"in a Resource Breakdown Structure. The structure is purely organizational "
+"and has no impact on resource allocations.<nl/><link url='%1'>More...</"
+"link></para>"
+msgstr ""
+
 #: ui/ResourceGroupEditor.cpp:295
 #, kde-format
 msgid "Add Resource Group"
@@ -10057,6 +10067,13 @@ msgstr "ការចែក​ចាយ​"
 #, kde-format
 msgid "All supported formats"
 msgstr ""
+
+#, fuzzy
+#~| msgctxt "@info:tooltip"
+#~| msgid "The type of the resource or resource group"
+#~ msgctxt "@info:tooltip"
+#~ msgid "The scope of the resource or resource group"
+#~ msgstr "ប្រភេទ​ធន​ធាន​ ឬ​ក្រុម​ធន​ធាន"
 
 #~ msgid "No task attributed"
 #~ msgstr "គ្មាន​ភារកិច្ច​​ដែល​បាន​កំណត់​ឡើយ​​"
