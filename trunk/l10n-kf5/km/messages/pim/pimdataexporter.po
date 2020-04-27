@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: backupmail\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-04-26 03:39+0200\n"
+"POT-Creation-Date: 2020-04-27 03:34+0200\n"
 "PO-Revision-Date: 2012-12-31 14:00+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -129,8 +129,8 @@ msgid "\"%1\" file cannot be added to backup file."
 msgstr "ឯកសារ MBox \"%1\" មិនអាច​បន្ថែម​ទៅ​ឯកសារ​បម្រុ​ងទុកបាន​ទេ ។"
 
 #: core/abstractimportexportjob.cpp:440
-#: core/addressbook/importaddressbookjob.cpp:149
-#: core/mail/importmailjob.cpp:526
+#: core/addressbook/importaddressbookjobinterface.cpp:149
+#: core/mail/importmailjobinterface.cpp:526
 #, kde-format
 msgid "Resources restored."
 msgstr "បាន​ស្ដារ​ធនធាន ។"
@@ -186,81 +186,93 @@ msgstr "ឯកសារ MBox \"%1\" មិនអាច​បន្ថែម​�
 msgid "Directory \"%1\" cannot be added to backup file."
 msgstr "ឯកសារ MBox \"%1\" មិនអាច​បន្ថែម​ទៅ​ឯកសារ​បម្រុ​ងទុកបាន​ទេ ។"
 
-#: core/addressbook/exportaddressbookjob.cpp:46
+#: core/addressbook/exportaddressbookjobinterface.cpp:43
 #, kde-format
 msgid "Start export KAddressBook settings..."
 msgstr ""
 
-#: core/addressbook/exportaddressbookjob.cpp:47
+#: core/addressbook/exportaddressbookjobinterface.cpp:44
 #, kde-format
 msgid "Export KAddressBook settings"
 msgstr ""
 
-#: core/addressbook/exportaddressbookjob.cpp:59
-#: core/alarm/exportalarmjob.cpp:60 core/calendar/exportcalendarjob.cpp:62
-#: core/mail/exportmailjob.cpp:239 core/notes/exportnotesjobinterface.cpp:68
+#: core/addressbook/exportaddressbookjobinterface.cpp:56
+#: core/alarm/exportalarmjobinterface.cpp:60
+#: core/calendar/exportcalendarjobinterface.cpp:62
+#: core/mail/exportmailjobinterface.cpp:239
+#: core/notes/exportnotesjobinterface.cpp:68
 #, kde-format
 msgid "Backing up resources..."
 msgstr "កំពុង​បម្រុងទុក​ធនធាន..."
 
-#: core/addressbook/exportaddressbookjob.cpp:126
-#: core/alarm/exportalarmjob.cpp:127 core/calendar/exportcalendarjob.cpp:129
-#: core/mail/exportmailjob.cpp:264
+#: core/addressbook/exportaddressbookjobinterface.cpp:78
+#: core/akregator/exportakregatorjobinterface.cpp:55
+#: core/alarm/exportalarmjobinterface.cpp:134
+#: core/calendar/exportcalendarjobinterface.cpp:82
+#: core/mail/exportmailjobinterface.cpp:269
+#: core/notes/exportnotesjobinterface.cpp:89
+#, kde-format
+msgid "Backing up config..."
+msgstr "កំពុង​បម្រុងទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ..."
+
+#: core/addressbook/exportaddressbookjobinterface.cpp:119
+#: core/akregator/exportakregatorjobinterface.cpp:62
+#: core/alarm/exportalarmjobinterface.cpp:161
+#: core/calendar/exportcalendarjobinterface.cpp:160
+#: core/mail/exportmailjobinterface.cpp:631
+#: core/notes/exportnotesjobinterface.cpp:122
+#, kde-format
+msgid "Config backup done."
+msgstr "បាន​ធ្វើការ​បម្រុងទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ ។"
+
+#: core/addressbook/exportaddressbookjobinterfaceimpl.cpp:99
+#: core/alarm/exportalarmjobinterface.cpp:127
+#: core/calendar/exportcalendarjobinterfaceimpl.cpp:101
+#: core/mail/exportmailjobinterface.cpp:264
 #: core/notes/exportnotesjobinterfaceimpl.cpp:90
 #, kde-format
 msgid "Resources backup done."
 msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​ធនធាន ។"
 
-#: core/addressbook/exportaddressbookjob.cpp:133
-#: core/akregator/exportakregatorjobinterface.cpp:55
-#: core/alarm/exportalarmjob.cpp:134 core/calendar/exportcalendarjob.cpp:136
-#: core/mail/exportmailjob.cpp:269 core/notes/exportnotesjobinterface.cpp:89
-#, kde-format
-msgid "Backing up config..."
-msgstr "កំពុង​បម្រុងទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ..."
-
-#: core/addressbook/exportaddressbookjob.cpp:176
-#: core/akregator/exportakregatorjobinterface.cpp:62
-#: core/alarm/exportalarmjob.cpp:161 core/calendar/exportcalendarjob.cpp:214
-#: core/mail/exportmailjob.cpp:631 core/notes/exportnotesjobinterface.cpp:122
-#, kde-format
-msgid "Config backup done."
-msgstr "បាន​ធ្វើការ​បម្រុងទុក​ការ​កំណត់​រចនាសម្ព័ន្ធ ។"
-
-#: core/addressbook/importaddressbookjob.cpp:55
+#: core/addressbook/importaddressbookjobinterface.cpp:55
 #, kde-format
 msgid "Starting to import KAddressBook settings..."
 msgstr ""
 
-#: core/addressbook/importaddressbookjob.cpp:57
+#: core/addressbook/importaddressbookjobinterface.cpp:57
 #, kde-format
 msgid "Import KAddressBook settings"
 msgstr ""
 
-#: core/addressbook/importaddressbookjob.cpp:80
-#: core/addressbook/importaddressbookjob.cpp:81
-#: core/alarm/importalarmjob.cpp:84 core/alarm/importalarmjob.cpp:85
-#: core/calendar/importcalendarjob.cpp:88
-#: core/calendar/importcalendarjob.cpp:89 core/mail/importmailjob.cpp:304
-#: core/mail/importmailjob.cpp:305
+#: core/addressbook/importaddressbookjobinterface.cpp:80
+#: core/addressbook/importaddressbookjobinterface.cpp:81
+#: core/alarm/importalarmjobinterface.cpp:84
+#: core/alarm/importalarmjobinterface.cpp:85
+#: core/calendar/importcalendarjobinterfaceimpl.cpp:60
+#: core/calendar/importcalendarjobinterfaceimpl.cpp:61
+#: core/mail/importmailjobinterface.cpp:304
+#: core/mail/importmailjobinterface.cpp:305
 #: core/notes/importnotesjobinterfaceimpl.cpp:57
 #: core/notes/importnotesjobinterfaceimpl.cpp:58
 #, kde-format
 msgid "Restore resources..."
 msgstr "ស្ដារ​ធនធាន..."
 
-#: core/addressbook/importaddressbookjob.cpp:180
-#: core/akregator/importakregatorjob.cpp:73 core/alarm/importalarmjob.cpp:157
-#: core/calendar/importcalendarjob.cpp:179
+#: core/addressbook/importaddressbookjobinterface.cpp:180
+#: core/akregator/importakregatorjobinterface.cpp:73
+#: core/alarm/importalarmjobinterface.cpp:157
+#: core/calendar/importcalendarjobinterface.cpp:104
 #: core/notes/importnotesjobinterface.cpp:77
 #, fuzzy, kde-format
 #| msgid "Restore mails..."
 msgid "Restore configs..."
 msgstr "ស្ដារ​សំបុត្រ..."
 
-#: core/addressbook/importaddressbookjob.cpp:195
-#: core/akregator/importakregatorjob.cpp:79 core/alarm/importalarmjob.cpp:172
-#: core/calendar/importcalendarjob.cpp:289 core/mail/importmailjob.cpp:926
+#: core/addressbook/importaddressbookjobinterface.cpp:195
+#: core/akregator/importakregatorjobinterface.cpp:79
+#: core/alarm/importalarmjobinterface.cpp:172
+#: core/calendar/importcalendarjobinterface.cpp:214
+#: core/mail/importmailjobinterface.cpp:926
 #: core/notes/importnotesjobinterface.cpp:104
 #, kde-format
 msgid "Config restored."
@@ -295,46 +307,46 @@ msgstr "ឯកសារ MBox \"%1\" មិនអាច​បន្ថែម​�
 msgid "Data backup done."
 msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​សំបុត្រ ។"
 
-#: core/akregator/importakregatorjob.cpp:44
+#: core/akregator/importakregatorjobinterface.cpp:44
 #, kde-format
 msgid "Starting to import Akregator settings..."
 msgstr ""
 
-#: core/akregator/importakregatorjob.cpp:47
+#: core/akregator/importakregatorjobinterface.cpp:47
 #, kde-format
 msgid "Import Akregator settings"
 msgstr ""
 
-#: core/akregator/importakregatorjob.cpp:86
+#: core/akregator/importakregatorjobinterface.cpp:86
 #: core/notes/importnotesjobinterface.cpp:111
 #, fuzzy, kde-format
 #| msgid "Restore Data..."
 msgid "Restore data..."
 msgstr "ស្ដារ​ទិន្នន័យ..."
 
-#: core/akregator/importakregatorjob.cpp:92
+#: core/akregator/importakregatorjobinterface.cpp:92
 #: core/notes/importnotesjobinterface.cpp:124
 #, fuzzy, kde-format
 #| msgid "Mails restored."
 msgid "Data restored."
 msgstr "បាន​ស្ដារ​សំបុត្រ ។"
 
-#: core/alarm/exportalarmjob.cpp:47
+#: core/alarm/exportalarmjobinterface.cpp:47
 #, kde-format
 msgid "Start export KAlarm settings..."
 msgstr ""
 
-#: core/alarm/exportalarmjob.cpp:48
+#: core/alarm/exportalarmjobinterface.cpp:48
 #, kde-format
 msgid "Export KAlarm settings"
 msgstr ""
 
-#: core/alarm/importalarmjob.cpp:56
+#: core/alarm/importalarmjobinterface.cpp:56
 #, kde-format
 msgid "Starting to import KAlarm settings..."
 msgstr ""
 
-#: core/alarm/importalarmjob.cpp:57
+#: core/alarm/importalarmjobinterface.cpp:57
 #, kde-format
 msgid "Import KAlarm settings"
 msgstr ""
@@ -350,155 +362,159 @@ msgstr "មិន​អាច​បើក​ប័ណ្ណសារ​ក្ន
 msgid "Archive cannot be opened in read mode."
 msgstr "មិន​អាច​បើកប័ណ្ណសារ​ក្នុង​របៀប​អាន​បាន​ទេ ។"
 
-#: core/calendar/exportcalendarjob.cpp:49
+#: core/calendar/exportcalendarjobinterface.cpp:49
 #, kde-format
 msgid "Start export KOrganizer settings..."
 msgstr ""
 
-#: core/calendar/exportcalendarjob.cpp:50
+#: core/calendar/exportcalendarjobinterface.cpp:50
 #, kde-format
 msgid "Export KOrganizer settings"
 msgstr ""
 
-#: core/calendar/importcalendarjob.cpp:60
+#: core/calendar/importcalendarjobinterface.cpp:52
 #, kde-format
 msgid "Starting to import KOrganizer settings..."
 msgstr ""
 
-#: core/calendar/importcalendarjob.cpp:62
+#: core/calendar/importcalendarjobinterface.cpp:54
 #, kde-format
 msgid "Import KOrganizer settings"
 msgstr ""
 
-#: core/mail/exportmailjob.cpp:66
+#: core/mail/exportmailjobinterface.cpp:66
 #, kde-format
 msgid "Start export KMail settings..."
 msgstr ""
 
-#: core/mail/exportmailjob.cpp:67
+#: core/mail/exportmailjobinterface.cpp:67
 #, kde-format
 msgid "Export KMail settings"
 msgstr ""
 
-#: core/mail/exportmailjob.cpp:126
+#: core/mail/exportmailjobinterface.cpp:126
 #, kde-format
 msgid "Backing up Mails..."
 msgstr "កំពុង​បម្រុង​ទុក​សំបុត្រ..."
 
-#: core/mail/exportmailjob.cpp:200
+#: core/mail/exportmailjobinterface.cpp:200
 #, kde-format
 msgid "Backing up transports..."
 msgstr "កំពុង​បម្រុងទុក​ការ​ដឹក​ជញ្ជូន..."
 
-#: core/mail/exportmailjob.cpp:205 core/mail/exportmailjob.cpp:217
+#: core/mail/exportmailjobinterface.cpp:205
+#: core/mail/exportmailjobinterface.cpp:217
 #, kde-format
 msgid "Transports backup done."
 msgstr "បាន​ធ្វើ​​បម្រុងទុក​កា​រដឹក​ជញ្ជូន ។"
 
-#: core/mail/exportmailjob.cpp:219
+#: core/mail/exportmailjobinterface.cpp:219
 #, kde-format
 msgid "Transport file cannot be added to backup file."
 msgstr "មិន​អាច​​បន្ថែម​ឯកសារ​ដឹក​ជញ្ជូន​ទៅ​ឯកសារ​បម្រុង​ទុក​បាន​ទេ ។"
 
-#: core/mail/exportmailjob.cpp:281
+#: core/mail/exportmailjobinterface.cpp:281
 #, kde-format
 msgid "Filters backup done."
 msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​តម្រង ។"
 
-#: core/mail/exportmailjob.cpp:283
+#: core/mail/exportmailjobinterface.cpp:283
 #, kde-format
 msgid "Filters cannot be exported."
 msgstr "តម្រង​មិន​អាច​ត្រូវ​បាន​នាំចេញ​ទេ ។"
 
-#: core/mail/exportmailjob.cpp:636
+#: core/mail/exportmailjobinterface.cpp:636
 #, kde-format
 msgid "Backing up identity..."
 msgstr "កំពុង​បម្រុងទុក​អត្តសញ្ញាណ..."
 
-#: core/mail/exportmailjob.cpp:671
+#: core/mail/exportmailjobinterface.cpp:671
 #, fuzzy, kde-format
 #| msgid "vcard file \"%1\" cannot be saved."
 msgid "vCard file \"%1\" cannot be saved."
 msgstr "មិន​អាច​រក្សាទុក \"%1\" ឯកសារ vcard ។"
 
-#: core/mail/exportmailjob.cpp:684
+#: core/mail/exportmailjobinterface.cpp:684
 #, kde-format
 msgid "Identity backup done."
 msgstr "បាន​ធ្វើ​ការ​បម្រុងទុក​អត្តសញ្ញាណ ។"
 
-#: core/mail/exportmailjob.cpp:686
+#: core/mail/exportmailjobinterface.cpp:686
 #, kde-format
 msgid "Identity file cannot be added to backup file."
 msgstr "មិន​អាច​បន្ថែម​ឯកសារ​អត្តសញ្ញាណ​ទៅ​ឯកសារ​បម្រុងទុក​បាន​ទេ ។"
 
-#: core/mail/importmailjob.cpp:71
+#: core/mail/importmailjobinterface.cpp:71
 #, kde-format
 msgid "Starting to import KMail settings..."
 msgstr ""
 
-#: core/mail/importmailjob.cpp:72
+#: core/mail/importmailjobinterface.cpp:72
 #, kde-format
 msgid "Import KMail settings"
 msgstr ""
 
-#: core/mail/importmailjob.cpp:268 core/mail/importmailjob.cpp:274
+#: core/mail/importmailjobinterface.cpp:268
+#: core/mail/importmailjobinterface.cpp:274
 #, kde-format
 msgid "Restore transports..."
 msgstr "ស្ដារ​កា​រដឹក​ជញ្ជូន..."
 
-#: core/mail/importmailjob.cpp:272
+#: core/mail/importmailjobinterface.cpp:272
 #, kde-format
 msgid "mailtransports file could not be found in the archive."
 msgstr "រក​មិន​ឃើញ​ឯកសារ mailtransports នៅ​ក្នុង​ប័ណ្ណសារ ។"
 
-#: core/mail/importmailjob.cpp:282
+#: core/mail/importmailjobinterface.cpp:282
 #, kde-format
 msgid "Transports restored."
 msgstr "បាន​ស្ដារ​ការ​ដឹកជញ្ជូន ។"
 
-#: core/mail/importmailjob.cpp:284
+#: core/mail/importmailjobinterface.cpp:284
 #, kde-format
 msgid "Failed to restore transports file."
 msgstr "បាន​បរាជ័យ​ក្នុង​ការ​ស្ដារ​ឯកសារ​ដឹក​ជញ្ជូន ។"
 
-#: core/mail/importmailjob.cpp:533 core/mail/importmailjob.cpp:535
+#: core/mail/importmailjobinterface.cpp:533
+#: core/mail/importmailjobinterface.cpp:535
 #, kde-format
 msgid "Restore mails..."
 msgstr "ស្ដារ​សំបុត្រ..."
 
-#: core/mail/importmailjob.cpp:649
+#: core/mail/importmailjobinterface.cpp:649
 #, kde-format
 msgid "Mails restored."
 msgstr "បាន​ស្ដារ​សំបុត្រ ។"
 
-#: core/mail/importmailjob.cpp:656
+#: core/mail/importmailjobinterface.cpp:656
 #, fuzzy, kde-format
 #| msgid "Restore mails..."
 msgid "Restore config..."
 msgstr "ស្ដារ​សំបុត្រ..."
 
-#: core/mail/importmailjob.cpp:659
+#: core/mail/importmailjobinterface.cpp:659
 #, kde-format
 msgid "filters file could not be found in the archive."
 msgstr "រក​មិន​ឃើញ​​ឯកសារ​តម្រង​នៅ​ក្នុង​ប័ណ្ណសារ ។"
 
-#: core/mail/importmailjob.cpp:970 core/mail/importmailjob.cpp:975
+#: core/mail/importmailjobinterface.cpp:970
+#: core/mail/importmailjobinterface.cpp:975
 #, fuzzy, kde-format
 #| msgid "Restore identities..."
 msgid "Restoring identities..."
 msgstr "ស្ដារ​អត្តសញ្ញាណ..."
 
-#: core/mail/importmailjob.cpp:973
+#: core/mail/importmailjobinterface.cpp:973
 #, kde-format
 msgid "emailidentities file could not be found in the archive."
 msgstr "រក​មិន​ឃើញ​ឯកសារ emailidentities នៅ​ក្នុង​ប័ណ្ណសារ ។"
 
-#: core/mail/importmailjob.cpp:1045
+#: core/mail/importmailjobinterface.cpp:1045
 #, kde-format
 msgid "Identities restored."
 msgstr "បាន​ស្ដារ​អត្តសញ្ញាណ ។"
 
-#: core/mail/importmailjob.cpp:1047
+#: core/mail/importmailjobinterface.cpp:1047
 #, kde-format
 msgid "Failed to restore identity file."
 msgstr "បាន​បរាជ័យ​ក្នុងការ​ស្ដារ​​ឯកសារ​អត្តសញ្ញាណ ។"
