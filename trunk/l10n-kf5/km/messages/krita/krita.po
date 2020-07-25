@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-24 02:10+0200\n"
+"POT-Creation-Date: 2020-07-25 02:09+0200\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -13254,6 +13254,9 @@ msgstr "លក្ខណៈ​សម្បត្តិ​ស្រទាប់"
 #: plugins/dockers/animation/onion_skins_docker.cpp:58
 #: plugins/dockers/animation/timeline_frames_view.cpp:255
 #: plugins/dockers/layerdocker/LayerBox.cpp:199
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:59
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:63
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:66
 #: plugins/generators/pattern/wdgpatternoptions.ui:116
 #: plugins/generators/pattern/wdgpatternoptions.ui:145
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:41
@@ -16420,8 +16423,10 @@ msgid "Bac&kground Color:"
 msgstr "ពណ៌​ផ្ទៃ​ខាង​ក្រោយ"
 
 #. i18n: ectx: property (text), widget (QLabel, lblBackgroundStyle)
+#. i18n: ectx: property (text), widget (QLabel, labelBackground)
 #. i18n: ectx: property (text), widget (QLabel, mLabelBackground)
 #: libs/ui/forms/wdgnewimage.ui:487
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:174
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:390
 #, fuzzy, kde-format
 msgid "Background:"
@@ -17164,9 +17169,11 @@ msgstr "បន្ថែម​ស្រទាប់​"
 
 #. i18n: ectx: property (text), widget (QLabel, lblMode)
 #. i18n: ectx: property (text), widget (QLabel, label_21)
+#. i18n: ectx: property (text), widget (QLabel, labelMode)
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: libs/ui/forms/wdgselectionoptions.ui:92
 #: plugins/extensions/metadataeditor/editors/exif.ui:555
+#: plugins/filters/halftone/KisHalftoneConfigWidget.ui:46
 #: plugins/python/highpass/highpass.py:65
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:2035
 #, kde-format
@@ -17195,10 +17202,8 @@ msgstr "ជម្រើស​ធរណីមាត្រ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkAntiAliasing)
 #. i18n: ectx: property (text), widget (QCheckBox, chkAntialiasing)
-#. i18n: ectx: property (text), widget (QCheckBox, ckbAntialiasing)
 #: libs/ui/forms/wdgselectionoptions.ui:181
 #: plugins/extensions/modify_selection/wdg_border_selection.ui:123
-#: plugins/filters/halftone/wdg_halftone_filter.ui:83
 #, kde-format
 msgid "Anti-aliasing"
 msgstr "ប្រឆាំងភាព​​​រឆេត​រឆូត"
@@ -17316,6 +17321,7 @@ msgstr ""
 #: libs/ui/widgets/KoFillConfigWidget.ui:37
 #: libs/ui/widgets/KoFillConfigWidget.ui:258
 #: plugins/extensions/metadataeditor/editors/exif.ui:666
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:47
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:66
 #: plugins/impex/tiff/kis_wdg_options_tiff.ui:118
 #: plugins/tools/tool_crop/wdg_tool_crop.ui:427
@@ -18696,11 +18702,9 @@ msgid "Flow:"
 msgstr "យឺត​"
 
 #. i18n: ectx: property (text), widget (QLabel, brushSizeLabel)
-#. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, labelSize)
 #. i18n: ectx: property (text), widget (QLabel, lblSize)
 #: libs/ui/kis_paintop_box.cc:246 libs/ui/kis_paintop_box.cc:252
-#: plugins/filters/halftone/wdg_halftone_filter.ui:42
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:210
 #: plugins/paintops/libpaintop/forms/wdgpredefinedbrushchooser.ui:198
 #: plugins/tools/tool_transform2/wdg_tool_transform.ui:1991
@@ -18980,6 +18984,8 @@ msgstr ""
 #: libs/ui/kis_stopgradient_editor.cpp:54
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:1048
 #: plugins/assistants/Assistants/kis_assistant_tool.cc:1054
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:62
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.cpp:65
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:40
 #: plugins/generators/screentone/KisScreentoneConfigWidget.cpp:43
 #: plugins/tools/defaulttool/defaulttool/DefaultToolGeometryWidget.cpp:123
@@ -25589,6 +25595,8 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QCheckBox, csl_hsiI)
 #: plugins/dockers/advancedcolorselector/wdg_color_selector_settings.ui:1356
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:44
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:203
 #, fuzzy, kde-format
 msgid "Intensity"
 msgstr "ដង់ស៊ីតេ"
@@ -28319,8 +28327,10 @@ msgid "Flash ener&gy:"
 msgstr "ថាមពល​បញ្ចេញ​ពន្លឺ ៖"
 
 #. i18n: ectx: attribute (title), widget (QWidget, tab_5)
+#. i18n: ectx: attribute (title), widget (QWidget, tabPostprocessing)
 #. i18n: ectx: attribute (title), widget (QWidget, tabPostProcessing)
 #: plugins/extensions/metadataeditor/editors/exif.ui:638
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:83
 #: plugins/generators/screentone/KisScreentoneConfigWidget.ui:327
 #, kde-format
 msgid "Postprocessing"
@@ -29866,8 +29876,6 @@ msgid "Slope, Offset, Power(ASC-CDL)"
 msgstr "កាត់​ស្រទាប់..."
 
 #. i18n: ectx: property (text), widget (KisGradientSlider, cutoffSlider)
-#. i18n: ectx: property (text), widget (KisColorButton, bnforeground)
-#. i18n: ectx: property (text), widget (KisColorButton, bnbackground)
 #. i18n: ectx: property (text), widget (KisColorButton, btnSlope)
 #. i18n: ectx: property (text), widget (KisColorButton, btnPower)
 #. i18n: ectx: property (text), widget (KisColorButton, btnOffset)
@@ -29876,8 +29884,6 @@ msgstr "កាត់​ស្រទាប់..."
 #: plugins/filters/asccdl/wdg_asccdl.ui:24
 #: plugins/filters/asccdl/wdg_asccdl.ui:45
 #: plugins/filters/gradientmap/wdg_gradientmap.ui:26
-#: plugins/filters/halftone/wdg_halftone_filter.ui:26
-#: plugins/filters/halftone/wdg_halftone_filter.ui:33
 #: plugins/paintops/libpaintop/forms/wdgtexturechooser.ui:198
 #, fuzzy, kde-format
 #| msgid "Mouse pressure"
@@ -30077,12 +30083,10 @@ msgstr "ការបង្វិល ៖"
 #. i18n: ectx: property (text), widget (QLabel, label_14)
 #. i18n: ectx: property (text), widget (QLabel, rotationLbl)
 #. i18n: ectx: property (text), widget (QLabel, lblAngle)
-#. i18n: ectx: property (text), widget (QLabel, lbl_angle)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), widget (QLabel, textLabel5)
 #: plugins/filters/blur/wdg_motion_blur.ui:83
 #: plugins/filters/blur/wdgblur.ui:123
-#: plugins/filters/halftone/wdg_halftone_filter.ui:73
 #: plugins/paintops/hatching/wdghatchingoptions.ui:49
 #: plugins/paintops/libpaintop/forms/wdgautobrush.ui:161
 #: plugins/paintops/libpaintop/forms/wdgBrushSizeOptions.ui:177
@@ -30655,9 +30659,7 @@ msgstr "ជម្រៅ"
 msgid "Emboss with Variable Depth"
 msgstr "ក្រឡោត​ដោយ​ជម្រៅ​អថេរ"
 
-#. i18n: ectx: property (text), widget (QCheckBox, ckbInvert)
 #: plugins/filters/example/example.h:45
-#: plugins/filters/halftone/wdg_halftone_filter.ui:93
 #, kde-format
 msgid "Invert"
 msgstr "បញ្ច្រាស"
@@ -30735,22 +30737,58 @@ msgstr "ជិត"
 msgid "Dither"
 msgstr "ផ្សេងៗ"
 
-#: plugins/filters/halftone/kis_halftone_filter.cpp:56
+#. i18n: ectx: property (windowTitle), widget (QWidget, HalftoneConfigPageWidget)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:20
+#, fuzzy, kde-format
+msgid "Form"
+msgstr "ទ្រង់ទ្រាយ ៖"
+
+#. i18n: ectx: attribute (title), widget (QWidget, tabScreenGenerator)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:48
+#, fuzzy, kde-format
+#| msgid "Generator"
+msgid "Screen Generator"
+msgstr "កម្មវិធី​បង្កើត"
+
+#. i18n: ectx: property (text), widget (QLabel, labelHardness)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:112
+#, fuzzy, kde-format
+#| msgid "hardness"
+msgid "Hardness:"
+msgstr "ភាព​រឹង"
+
+#. i18n: ectx: property (text), widget (QLabel, labelInvert)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:129
+#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:424
+#, fuzzy, kde-format
+#| msgid "Invert"
+msgid "Invert:"
+msgstr "បញ្ច្រាស"
+
+#. i18n: ectx: property (text), widget (QLabel, labelForeground)
+#: plugins/filters/halftone/KisHalftoneConfigPageWidget.ui:143
+#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:356
+#, fuzzy, kde-format
+#| msgid "Foreground"
+msgid "Foreground:"
+msgstr "ពណ៌​ផ្ទៃ​ខាង​មុខ​ ​"
+
+#: plugins/filters/halftone/KisHalftoneConfigWidget.cpp:45
+#, fuzzy, kde-format
+#| msgid "Independence"
+msgid "Independent Channels"
+msgstr "ឯករាជ្យ"
+
+#: plugins/filters/halftone/KisHalftoneFilter.cpp:55
 #, fuzzy, kde-format
 msgid "&Halftone..."
 msgstr "ភាព​មិន​ច្បាស់​ចៃដន្យ..."
 
-#: plugins/filters/halftone/kis_halftone_filter.h:72
+#: plugins/filters/halftone/KisHalftoneFilter.h:49
 #, fuzzy, kde-format
 #| msgid "Stone"
 msgid "Halftone"
 msgstr "​ថ្ម"
-
-#. i18n: ectx: property (text), widget (QLabel, lblcolors)
-#: plugins/filters/halftone/wdg_halftone_filter.ui:17
-#, fuzzy, kde-format
-msgid "Colors:"
-msgstr "ពណ៌"
 
 #: plugins/filters/imageenhancement/kis_simple_noise_reducer.cpp:43
 #, kde-format
@@ -31865,20 +31903,6 @@ msgstr "ការ​ផ្ទួន"
 #, fuzzy, kde-format
 msgid "Transformation"
 msgstr "កំណត់​ការ​ប្លែង​ផ្ទាំង​​គំនូរឡើងវិញ​"
-
-#. i18n: ectx: property (text), widget (QLabel, labelForeground)
-#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:356
-#, fuzzy, kde-format
-#| msgid "Foreground"
-msgid "Foreground:"
-msgstr "ពណ៌​ផ្ទៃ​ខាង​មុខ​ ​"
-
-#. i18n: ectx: property (text), widget (QLabel, labelInvert)
-#: plugins/generators/screentone/KisScreentoneConfigWidget.ui:424
-#, fuzzy, kde-format
-#| msgid "Invert"
-msgid "Invert:"
-msgstr "បញ្ច្រាស"
 
 #. i18n: ectx: property (text), widget (QLabel, lblRatio)
 #. i18n: ectx: property (text), widget (QLabel, labelBrightness)
@@ -42515,6 +42539,10 @@ msgid "Work Recursively"
 msgstr ""
 
 #, fuzzy
+#~ msgid "Colors:"
+#~ msgstr "ពណ៌"
+
+#, fuzzy
 #~| msgid "Value"
 #~ msgctxt "HSV Value"
 #~ msgid "HSV Value"
@@ -44860,10 +44888,6 @@ msgstr ""
 #~ msgctxt "@action"
 #~ msgid "Brush Smoothing: Stabilizer"
 #~ msgstr "ជម្រើស​សរសៃ"
-
-#, fuzzy
-#~ msgid "Form"
-#~ msgstr "ទ្រង់ទ្រាយ ៖"
 
 #, fuzzy
 #~ msgid "Show Colorspace Selector"
@@ -69791,9 +69815,6 @@ msgstr ""
 #~ msgid "hard brush-circle borders (setting to zero will draw nothing)"
 #~ msgstr "ស៊ុម​រង្វង់របស់​ជក់​រឹង​ (ការកំណត់​ទៅ​ជា​សូន្យ​នឹង​មិន​គូស​អ្វី​ទាំង​អស់)"
 
-#~ msgid "hardness"
-#~ msgstr "ភាព​រឹង"
-
 #~ msgid "dabs per basic radius"
 #~ msgstr "ស្នាម​​​ក្នុង​មួយ​កាំ​មូលដ្ឋាន"
 
@@ -70796,9 +70817,6 @@ msgstr ""
 
 #~ msgid "4"
 #~ msgstr "៤"
-
-#~ msgid "Independence"
-#~ msgstr "ឯករាជ្យ"
 
 #~ msgid "Variance 2:"
 #~ msgstr "រូបមន្ត ២ ៖"
