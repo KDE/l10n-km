@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmix\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-07-16 02:09+0200\n"
+"POT-Creation-Date: 2020-07-27 02:12+0200\n"
 "PO-Revision-Date: 2012-06-20 15:10+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -81,17 +81,17 @@ msgstr "ផ្ទុក​កម្រិត​សំឡេង​ទម្រង
 msgid "Load volume profile 4"
 msgstr "ផ្ទុក​កម្រិត​សំឡេង​ទម្រង់ ៤"
 
-#: apps/kmix.cpp:241 gui/mdwslider.cpp:165
+#: apps/kmix.cpp:241
 #, kde-format
 msgid "Increase Volume"
 msgstr "បង្កើន​កម្រិត​សំឡេង"
 
-#: apps/kmix.cpp:248 gui/mdwslider.cpp:172
+#: apps/kmix.cpp:248
 #, kde-format
 msgid "Decrease Volume"
 msgstr "បន្ថយ​កម្រិត​សំឡេង"
 
-#: apps/kmix.cpp:253 gui/mdwslider.cpp:114
+#: apps/kmix.cpp:253 gui/mdwslider.cpp:107
 #, kde-format
 msgid "Mute"
 msgstr "ស្ងាត់"
@@ -1042,59 +1042,58 @@ msgstr ""
 msgid "No sound devices are installed or are currently available."
 msgstr "មិនមានកាត​សំឡេង​បានដំឡើង​ ឬ​បច្ចុប្បន្ន​មិនបានដោត ។"
 
-#: gui/mdwenum.cpp:55
-#, kde-format
-msgid "&Hide"
-msgstr "លាក់"
-
-#: gui/mdwenum.cpp:58
-#, kde-format
-msgid "C&onfigure Shortcuts..."
-msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្លូវកាត់..."
-
 #: gui/mdwslider.cpp:101
 #, fuzzy, kde-format
 #| msgid "&Split Channels"
 msgid "Split Channels"
 msgstr "ពុះ​ឆានែល"
 
-#: gui/mdwslider.cpp:120 gui/mdwslider.cpp:639
+#: gui/mdwslider.cpp:113 gui/mdwslider.cpp:644
 #, kde-format
 msgid "Capture"
 msgstr "ចាប់យក"
 
-#: gui/mdwslider.cpp:125
+#: gui/mdwslider.cpp:118
 #, fuzzy, kde-format
 #| msgid "Capture Devices"
 msgid "Use Device"
 msgstr "ឧបករណ៍​ចាប់យក"
 
-#: gui/mdwslider.cpp:130
-#, fuzzy, kde-format
-#| msgid "C&onfigure Shortcuts..."
-msgid "Channel Shortcuts..."
-msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្លូវកាត់..."
-
-#: gui/mdwslider.cpp:179
+#: gui/mdwslider.cpp:163
 #, kde-format
-msgid "Toggle Mute"
-msgstr "បិទ/​បើក​ស្ងាត់"
+msgctxt "1=device name, 2=control name"
+msgid "Mute %2 on %1"
+msgstr ""
 
-#: gui/mdwslider.cpp:338
+#: gui/mdwslider.cpp:175
+#, fuzzy, kde-format
+#| msgid "Increase Volume"
+msgctxt "1=device name, 2=control name"
+msgid "Increase volume of %2 on %1"
+msgstr "បង្កើន​កម្រិត​សំឡេង"
+
+#: gui/mdwslider.cpp:183
+#, fuzzy, kde-format
+#| msgid "Decrease Volume"
+msgctxt "1=device name, 2=control name"
+msgid "Decrease volume of %2 on %1"
+msgstr "បន្ថយ​កម្រិត​សំឡេង"
+
+#: gui/mdwslider.cpp:343
 #, fuzzy, kde-format
 #| msgid "Capture/Uncapture %1"
 msgctxt "%1=channel"
 msgid "Capture/Uncapture %1"
 msgstr "ចាប់យក/មិនចាប់យក %1"
 
-#: gui/mdwslider.cpp:339
+#: gui/mdwslider.cpp:344
 #, fuzzy, kde-format
 #| msgid "Mute/Unmute %1"
 msgctxt "%1=channel"
 msgid "Mute/Unmute %1"
 msgstr "ស្ងាត់/ដោះ​ស្ងាត់ %1"
 
-#: gui/mdwslider.cpp:343 gui/mdwslider.cpp:344 gui/mdwslider.cpp:345
+#: gui/mdwslider.cpp:348 gui/mdwslider.cpp:349 gui/mdwslider.cpp:350
 #, kde-format
 msgctxt "%1=device %2=channel"
 msgid ""
@@ -1102,16 +1101,22 @@ msgid ""
 "%2"
 msgstr ""
 
-#: gui/mdwslider.cpp:673
+#: gui/mdwslider.cpp:678
 #, kde-format
 msgid "%1 (capture)"
 msgstr "%1 (ចាប់យក)"
 
-#: gui/mdwslider.cpp:1195
+#: gui/mdwslider.cpp:1180
 #, fuzzy, kde-format
 #| msgid "Automatic According to Category"
 msgid "Automatic (according to category)"
 msgstr "យោង​តាម​ប្រភេទ​ដោយ​ស្វ័យ​ប្រវត្តិ"
+
+#: gui/mixdevicewidget.cpp:66
+#, fuzzy, kde-format
+#| msgid "C&onfigure Shortcuts..."
+msgid "Channel Shortcuts..."
+msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្លូវកាត់..."
 
 #: gui/viewbase.cpp:96
 #, fuzzy, kde-format
@@ -1162,6 +1167,15 @@ msgstr "គ្មាន​ឧបករណ៍​ចាប់យក ។"
 #| msgid "No playback devices."
 msgid "There are no playback devices."
 msgstr "គ្មាន​ឧបករណ៍​ចាក់​សារ​ថ្មី ។"
+
+#~ msgid "&Hide"
+#~ msgstr "លាក់"
+
+#~ msgid "C&onfigure Shortcuts..."
+#~ msgstr "កំណត់​រចនាសម្ព័ន្ធ​ផ្លូវកាត់..."
+
+#~ msgid "Toggle Mute"
+#~ msgstr "បិទ/​បើក​ស្ងាត់"
 
 #, fuzzy
 #~| msgid "Audio Setup"
