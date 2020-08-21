@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-19 02:26+0200\n"
+"POT-Creation-Date: 2020-08-21 02:22+0200\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -1436,12 +1436,13 @@ msgid "Moving the key to the card failed: %1"
 msgstr ""
 
 #: src/commands/keytocardcommand.cpp:182 src/commands/keytocardcommand.cpp:207
-#: src/view/netkeywidget.cpp:204 src/view/nullpinwidget.cpp:98
-#: src/view/pgpcardwidget.cpp:270 src/view/pgpcardwidget.cpp:285
-#: src/view/pgpcardwidget.cpp:336 src/view/pgpcardwidget.cpp:362
-#: src/view/pgpcardwidget.cpp:368 src/view/pgpcardwidget.cpp:374
-#: src/view/pgpcardwidget.cpp:392 src/view/pgpcardwidget.cpp:419
-#: src/view/pgpcardwidget.cpp:434
+#: src/commands/pivgeneratecardkeycommand.cpp:117
+#: src/commands/pivgeneratecardkeycommand.cpp:144 src/view/netkeywidget.cpp:204
+#: src/view/nullpinwidget.cpp:98 src/view/pgpcardwidget.cpp:270
+#: src/view/pgpcardwidget.cpp:285 src/view/pgpcardwidget.cpp:336
+#: src/view/pgpcardwidget.cpp:362 src/view/pgpcardwidget.cpp:368
+#: src/view/pgpcardwidget.cpp:374 src/view/pgpcardwidget.cpp:392
+#: src/view/pgpcardwidget.cpp:419 src/view/pgpcardwidget.cpp:434
 #, fuzzy, kde-format
 #| msgid "Error"
 msgctxt "@title"
@@ -1453,9 +1454,10 @@ msgstr "កំហុស"
 msgid "Successfully copied the key to the card."
 msgstr ""
 
-#: src/commands/keytocardcommand.cpp:198 src/view/pgpcardwidget.cpp:293
-#: src/view/pgpcardwidget.cpp:342 src/view/pgpcardwidget.cpp:398
-#: src/view/pgpcardwidget.cpp:440
+#: src/commands/keytocardcommand.cpp:198
+#: src/commands/pivgeneratecardkeycommand.cpp:146
+#: src/view/pgpcardwidget.cpp:293 src/view/pgpcardwidget.cpp:342
+#: src/view/pgpcardwidget.cpp:398 src/view/pgpcardwidget.cpp:440
 #, kde-format
 msgctxt "@title"
 msgid "Success"
@@ -1561,6 +1563,27 @@ msgstr ""
 msgctxt "@title"
 msgid "No Directory Servers Configured"
 msgstr "គ្មាន​ម៉ាស៊ីន​បម្រើ​ថត​បានកំណត់​រចនាសម្ព័ន្ធ"
+
+#: src/commands/pivgeneratecardkeycommand.cpp:116
+#, kde-format
+msgctxt "@info"
+msgid "Authenticating to the card failed: %1"
+msgstr ""
+
+#: src/commands/pivgeneratecardkeycommand.cpp:143
+#, fuzzy, kde-format
+#| msgid "Signing failed: %1"
+msgctxt "@info"
+msgid "Generating key failed: %1"
+msgstr "ការ​ចុះហត្ថលេខា​បាន​បរាជ័យ ៖ %1"
+
+#: src/commands/pivgeneratecardkeycommand.cpp:146
+#, fuzzy, kde-format
+#| msgctxt "@title"
+#| msgid "Key Pair Successfully Created"
+msgctxt "@info"
+msgid "Key successfully generated."
+msgstr "បាន​បង្កើត​គូសោ​ដោយ​ជោគជ័យ"
 
 #: src/commands/refreshopenpgpcertscommand.cpp:41
 #, kde-kuit-format
@@ -7954,7 +7977,7 @@ msgid "View Columns"
 msgstr ""
 
 #: src/view/netkeywidget.cpp:68 src/view/pgpcardwidget.cpp:124
-#: src/view/pivcardwidget.cpp:75
+#: src/view/pivcardwidget.cpp:85
 #, fuzzy, kde-format
 #| msgid "Serial number"
 msgid "Serial number:"
@@ -8146,7 +8169,7 @@ msgctxt ""
 msgid "Pubkey URL:"
 msgstr "កា​រ​ប្រើ​ប្រាស់​សោ​រង ៖"
 
-#: src/view/pgpcardwidget.cpp:158 src/view/pivcardwidget.cpp:84
+#: src/view/pgpcardwidget.cpp:158 src/view/pivcardwidget.cpp:94
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Subkeys"
@@ -8372,7 +8395,7 @@ msgctxt "@info"
 msgid "URL successfully changed."
 msgstr "បាន​បន្ថែម​លេខ​សម្គាល់​អ្នក​ប្រើ​ដោយ​ជោគជ័យ ។"
 
-#: src/view/pgpcardwidget.cpp:450 src/view/pivcardwidget.cpp:135
+#: src/view/pgpcardwidget.cpp:450 src/view/pivcardwidget.cpp:166
 #, kde-format
 msgid "Slot empty"
 msgstr ""
@@ -8383,30 +8406,63 @@ msgstr ""
 msgid "Public key not found."
 msgstr "រក​មិន​ឃើញ​ព័ត៌មាន​បញ្ចូល​ដែល​អាច​ប្រើ​បាន​ទេ"
 
-#: src/view/pivcardwidget.cpp:86
+#: src/view/pivcardwidget.cpp:96
 #, fuzzy, kde-format
 #| msgid "Authentication"
 msgid "PIV authentication:"
 msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#: src/view/pivcardwidget.cpp:90
+#: src/view/pivcardwidget.cpp:99 src/view/pivcardwidget.cpp:108
+#: src/view/pivcardwidget.cpp:117 src/view/pivcardwidget.cpp:126
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Create Key"
+msgid "Generate"
+msgstr "បង្កើត​សោ"
+
+#: src/view/pivcardwidget.cpp:100
+#, fuzzy, kde-format
+#| msgid "Authentication"
+msgid "Generate PIV Authentication Key"
+msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
+
+#: src/view/pivcardwidget.cpp:105
 #, fuzzy, kde-format
 #| msgid "Authentication"
 msgid "Card authentication:"
 msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#: src/view/pivcardwidget.cpp:94
+#: src/view/pivcardwidget.cpp:109
+#, fuzzy, kde-format
+#| msgid "Authentication"
+msgid "Generate Card Authentication Key"
+msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
+
+#: src/view/pivcardwidget.cpp:114
 #, fuzzy, kde-format
 #| msgid "Bad signature"
 msgid "Digital signature:"
 msgstr "ហត្ថលេខា​មិន​ត្រឹមត្រូវ"
 
-#: src/view/pivcardwidget.cpp:98
+#: src/view/pivcardwidget.cpp:118
+#, fuzzy, kde-format
+#| msgid "Bad signature"
+msgid "Generate Digital Signature Key"
+msgstr "ហត្ថលេខា​មិន​ត្រឹមត្រូវ"
+
+#: src/view/pivcardwidget.cpp:123
 #, kde-format
 msgid "Key management:"
 msgstr ""
 
-#: src/view/pivcardwidget.cpp:111
+#: src/view/pivcardwidget.cpp:127
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Create Key"
+msgid "Generate Key Management Key"
+msgstr "បង្កើត​សោ"
+
+#: src/view/pivcardwidget.cpp:145
 #, kde-format
 msgctxt "Placeholder is a version number"
 msgid "PIV v%1 card"
