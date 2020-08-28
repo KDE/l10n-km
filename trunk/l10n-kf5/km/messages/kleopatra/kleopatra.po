@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-26 02:26+0200\n"
+"POT-Creation-Date: 2020-08-28 02:30+0200\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -167,6 +167,35 @@ msgstr "បាន​បន្ថែម​លេខ​សម្គាល់​អ
 msgctxt "@title:window"
 msgid "Add User-ID Succeeded"
 msgstr "បន្ថែម​លេខ​សម្គាល់​អ្នកប្រើ​ដែល​ជោគជ័យ"
+
+#: src/commands/authenticatepivcardapplicationcommand.cpp:131
+#, kde-format
+msgctxt "@info"
+msgid "Authenticating to the card failed: %1"
+msgstr ""
+
+#: src/commands/authenticatepivcardapplicationcommand.cpp:132
+#: src/commands/changepincommand.cpp:157 src/commands/keytocardcommand.cpp:182
+#: src/commands/keytocardcommand.cpp:207
+#: src/commands/pivgeneratecardkeycommand.cpp:198
+#: src/commands/setpivcardapplicationadministrationkeycommand.cpp:174
+#: src/commands/setpivcardapplicationadministrationkeycommand.cpp:197
+#: src/view/netkeywidget.cpp:204 src/view/nullpinwidget.cpp:98
+#: src/view/pgpcardwidget.cpp:279 src/view/pgpcardwidget.cpp:294
+#: src/view/pgpcardwidget.cpp:357 src/view/pgpcardwidget.cpp:363
+#: src/view/pgpcardwidget.cpp:369 src/view/pgpcardwidget.cpp:387
+#: src/view/pgpcardwidget.cpp:414 src/view/pgpcardwidget.cpp:429
+#, fuzzy, kde-format
+#| msgid "Error"
+msgctxt "@title"
+msgid "Error"
+msgstr "កំហុស"
+
+#: src/commands/authenticatepivcardapplicationcommand.cpp:153
+#, kde-format
+msgid ""
+"Please enter the PIV Card Application Administration Key in hex-encoded form."
+msgstr ""
 
 #: src/commands/certifycertificatecommand.cpp:194
 #, fuzzy, kde-kuit-format
@@ -352,23 +381,9 @@ msgctxt "@info"
 msgid "PIN changed successfully."
 msgstr "កំណត់ PIN ដោយ​ជោគជ័យ​ ។"
 
-#: src/commands/changepincommand.cpp:157 src/commands/keytocardcommand.cpp:182
-#: src/commands/keytocardcommand.cpp:207
-#: src/commands/pivgeneratecardkeycommand.cpp:156
-#: src/commands/pivgeneratecardkeycommand.cpp:194 src/view/netkeywidget.cpp:204
-#: src/view/nullpinwidget.cpp:98 src/view/pgpcardwidget.cpp:279
-#: src/view/pgpcardwidget.cpp:294 src/view/pgpcardwidget.cpp:357
-#: src/view/pgpcardwidget.cpp:363 src/view/pgpcardwidget.cpp:369
-#: src/view/pgpcardwidget.cpp:387 src/view/pgpcardwidget.cpp:414
-#: src/view/pgpcardwidget.cpp:429
-#, fuzzy, kde-format
-#| msgid "Error"
-msgctxt "@title"
-msgid "Error"
-msgstr "កំហុស"
-
 #: src/commands/changepincommand.cpp:159 src/commands/keytocardcommand.cpp:198
-#: src/commands/pivgeneratecardkeycommand.cpp:196
+#: src/commands/pivgeneratecardkeycommand.cpp:200
+#: src/commands/setpivcardapplicationadministrationkeycommand.cpp:199
 #: src/view/pgpcardwidget.cpp:302 src/view/pgpcardwidget.cpp:393
 #: src/view/pgpcardwidget.cpp:435
 #, kde-format
@@ -1476,7 +1491,7 @@ msgid "Authentication"
 msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
 #: src/commands/keytocardcommand.cpp:118
-#: src/commands/pivgeneratecardkeycommand.cpp:123
+#: src/commands/pivgeneratecardkeycommand.cpp:127
 #: src/view/pgpcardwidget.cpp:311
 #, kde-format
 msgid ""
@@ -1485,13 +1500,13 @@ msgid ""
 msgstr ""
 
 #: src/commands/keytocardcommand.cpp:130
-#: src/commands/pivgeneratecardkeycommand.cpp:111
+#: src/commands/pivgeneratecardkeycommand.cpp:115
 #, kde-format
 msgid "Failed to find the card with the serial number: %1"
 msgstr ""
 
 #: src/commands/keytocardcommand.cpp:136
-#: src/commands/pivgeneratecardkeycommand.cpp:119
+#: src/commands/pivgeneratecardkeycommand.cpp:123
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -1507,7 +1522,7 @@ msgid "The existing key has the fingerprint:"
 msgstr "ខ្ញុំ​បាន​បញ្ជាក់​ស្នាម​ផ្ដិត​ម្រាមដៃ​​"
 
 #: src/commands/keytocardcommand.cpp:140
-#: src/commands/pivgeneratecardkeycommand.cpp:126
+#: src/commands/pivgeneratecardkeycommand.cpp:130
 #, fuzzy, kde-format
 #| msgid "Overwrite Existing File?"
 msgctxt "@title:window"
@@ -1626,26 +1641,20 @@ msgctxt "@title"
 msgid "No Directory Servers Configured"
 msgstr "គ្មាន​ម៉ាស៊ីន​បម្រើ​ថត​បានកំណត់​រចនាសម្ព័ន្ធ"
 
-#: src/commands/pivgeneratecardkeycommand.cpp:121
+#: src/commands/pivgeneratecardkeycommand.cpp:125
 #, fuzzy, kde-format
 #| msgid "I have verified the fingerprint"
 msgid "The existing key has the ID:"
 msgstr "ខ្ញុំ​បាន​បញ្ជាក់​ស្នាម​ផ្ដិត​ម្រាមដៃ​​"
 
-#: src/commands/pivgeneratecardkeycommand.cpp:155
-#, kde-format
-msgctxt "@info"
-msgid "Authenticating to the card failed: %1"
-msgstr ""
-
-#: src/commands/pivgeneratecardkeycommand.cpp:193
+#: src/commands/pivgeneratecardkeycommand.cpp:197
 #, fuzzy, kde-format
 #| msgid "Signing failed: %1"
 msgctxt "@info"
 msgid "Generating key failed: %1"
 msgstr "ការ​ចុះហត្ថលេខា​បាន​បរាជ័យ ៖ %1"
 
-#: src/commands/pivgeneratecardkeycommand.cpp:196
+#: src/commands/pivgeneratecardkeycommand.cpp:200
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Key Pair Successfully Created"
@@ -1819,6 +1828,43 @@ msgstr "បាន​ធ្វើ​ឲ្យ​វិញ្ញាបនបត្
 msgctxt "@title:window"
 msgid "Set Initial Pin"
 msgstr "កំណត់​ Pin ដំបូង​​"
+
+#: src/commands/setpivcardapplicationadministrationkeycommand.cpp:113
+#, kde-format
+msgid ""
+"Please enter the old PIV Card Application Administration Key in hex-encoded "
+"form."
+msgstr ""
+
+#: src/commands/setpivcardapplicationadministrationkeycommand.cpp:154
+#, kde-format
+msgid ""
+"Please enter the new PIV Card Application Administration Key in hex-encoded "
+"form. The key needs to consist of 24 bytes, i.e. 48 hex-characters."
+msgstr ""
+
+#: src/commands/setpivcardapplicationadministrationkeycommand.cpp:156
+#, kde-format
+msgid "Please enter the new PIV Card Application Administration Key again."
+msgstr ""
+
+#: src/commands/setpivcardapplicationadministrationkeycommand.cpp:173
+#, kde-format
+msgctxt "@info"
+msgid "The two keys you have entered do not match. Please retry."
+msgstr ""
+
+#: src/commands/setpivcardapplicationadministrationkeycommand.cpp:196
+#, kde-format
+msgctxt "@info"
+msgid "Setting the PIV Card Application Administration Key failed: %1"
+msgstr ""
+
+#: src/commands/setpivcardapplicationadministrationkeycommand.cpp:199
+#, kde-format
+msgctxt "@info"
+msgid "PIV Card Application Administration Key set successfully."
+msgstr ""
 
 #: src/commands/signclipboardcommand.cpp:147
 #: src/commands/signclipboardcommand.cpp:161
@@ -8075,7 +8121,7 @@ msgid "View Columns"
 msgstr ""
 
 #: src/view/netkeywidget.cpp:68 src/view/pgpcardwidget.cpp:128
-#: src/view/pivcardwidget.cpp:97
+#: src/view/pivcardwidget.cpp:98
 #, fuzzy, kde-format
 #| msgid "Serial number"
 msgid "Serial number:"
@@ -8267,7 +8313,7 @@ msgctxt ""
 msgid "Pubkey URL:"
 msgstr "កា​រ​ប្រើ​ប្រាស់​សោ​រង ៖"
 
-#: src/view/pgpcardwidget.cpp:162 src/view/pivcardwidget.cpp:106
+#: src/view/pgpcardwidget.cpp:162 src/view/pivcardwidget.cpp:107
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Subkeys"
@@ -8302,7 +8348,7 @@ msgstr ""
 msgid "Create a new primary key and generate subkeys on the card."
 msgstr ""
 
-#: src/view/pgpcardwidget.cpp:188 src/view/pivcardwidget.cpp:150
+#: src/view/pgpcardwidget.cpp:188 src/view/pivcardwidget.cpp:152
 #, fuzzy, kde-format
 #| msgid "Change Passphrase..."
 msgid "Change PIN"
@@ -8478,7 +8524,7 @@ msgctxt "@info"
 msgid "URL successfully changed."
 msgstr "បាន​បន្ថែម​លេខ​សម្គាល់​អ្នក​ប្រើ​ដោយ​ជោគជ័យ ។"
 
-#: src/view/pgpcardwidget.cpp:445 src/view/pivcardwidget.cpp:191
+#: src/view/pgpcardwidget.cpp:445 src/view/pivcardwidget.cpp:203
 #, kde-format
 msgid "Slot empty"
 msgstr ""
@@ -8489,94 +8535,109 @@ msgstr ""
 msgid "Public key not found."
 msgstr "រក​មិន​ឃើញ​ព័ត៌មាន​បញ្ចូល​ដែល​អាច​ប្រើ​បាន​ទេ"
 
-#: src/view/pivcardwidget.cpp:56
+#: src/view/pivcardwidget.cpp:57
 #, fuzzy, kde-format
 #| msgid "Authentication"
 msgid "PIV Authentication Key"
 msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#: src/view/pivcardwidget.cpp:57
+#: src/view/pivcardwidget.cpp:58
 #, fuzzy, kde-format
 #| msgid "Authentication"
 msgid "Card Authentication Key"
 msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#: src/view/pivcardwidget.cpp:58
+#: src/view/pivcardwidget.cpp:59
 #, fuzzy, kde-format
 #| msgid "Bad signature"
 msgid "Digital Signature Key"
 msgstr "ហត្ថលេខា​មិន​ត្រឹមត្រូវ"
 
-#: src/view/pivcardwidget.cpp:59
+#: src/view/pivcardwidget.cpp:60
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Create Key"
 msgid "Key Management Key"
 msgstr "បង្កើត​សោ"
 
-#: src/view/pivcardwidget.cpp:108
+#: src/view/pivcardwidget.cpp:109
 #, fuzzy, kde-format
 #| msgid "Authentication"
 msgid "PIV authentication:"
 msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#: src/view/pivcardwidget.cpp:111 src/view/pivcardwidget.cpp:120
-#: src/view/pivcardwidget.cpp:129 src/view/pivcardwidget.cpp:138
-#: src/view/pivcardwidget.cpp:192
+#: src/view/pivcardwidget.cpp:112 src/view/pivcardwidget.cpp:121
+#: src/view/pivcardwidget.cpp:130 src/view/pivcardwidget.cpp:139
+#: src/view/pivcardwidget.cpp:204
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Create Key"
 msgid "Generate"
 msgstr "បង្កើត​សោ"
 
-#: src/view/pivcardwidget.cpp:117
+#: src/view/pivcardwidget.cpp:118
 #, fuzzy, kde-format
 #| msgid "Authentication"
 msgid "Card authentication:"
 msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#: src/view/pivcardwidget.cpp:126
+#: src/view/pivcardwidget.cpp:127
 #, fuzzy, kde-format
 #| msgid "Bad signature"
 msgid "Digital signature:"
 msgstr "ហត្ថលេខា​មិន​ត្រឹមត្រូវ"
 
-#: src/view/pivcardwidget.cpp:135
+#: src/view/pivcardwidget.cpp:136
 #, kde-format
 msgid "Key management:"
 msgstr ""
 
-#: src/view/pivcardwidget.cpp:151
+#: src/view/pivcardwidget.cpp:153
 #, kde-format
 msgid ""
 "Change the PIV Card Application PIN that activates the PIV Card and enables "
 "private key operations using the stored keys."
 msgstr ""
 
-#: src/view/pivcardwidget.cpp:155
+#: src/view/pivcardwidget.cpp:158
 #, fuzzy, kde-format
 #| msgid "Change Passphrase..."
 msgid "Change PUK"
 msgstr "ផ្លាស់ប្ដូរ​ឃ្លា​សម្ងាត់..."
 
-#: src/view/pivcardwidget.cpp:156
+#: src/view/pivcardwidget.cpp:159
 #, kde-format
 msgid "Change the PIN Unblocking Key that enables a reset of the PIN."
 msgstr ""
 
-#: src/view/pivcardwidget.cpp:173
+#: src/view/pivcardwidget.cpp:164
+#, fuzzy, kde-format
+#| msgid "Change Expiry Date..."
+msgid "Change Admin Key"
+msgstr "ផ្លាស់ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់..."
+
+#: src/view/pivcardwidget.cpp:165
+#, kde-format
+msgid ""
+"Change the PIV Card Application Administration Key that is used by the PIV "
+"Card Application to authenticate the PIV Card Application Administrator and "
+"by the administrator (resp. Kleopatra) to authenticate the PIV Card "
+"Application."
+msgstr ""
+
+#: src/view/pivcardwidget.cpp:185
 #, kde-format
 msgctxt "Placeholder is a version number"
 msgid "PIV v%1 card"
 msgstr ""
 
-#: src/view/pivcardwidget.cpp:192
+#: src/view/pivcardwidget.cpp:204
 #, fuzzy, kde-format
 #| msgid "Places"
 msgid "Replace"
 msgstr "ទីតាំង"
 
-#: src/view/pivcardwidget.cpp:194
+#: src/view/pivcardwidget.cpp:206
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Create Key"
@@ -8584,7 +8645,7 @@ msgctxt "Placeholder is the display name of a key"
 msgid "Generate %1"
 msgstr "បង្កើត​សោ"
 
-#: src/view/pivcardwidget.cpp:195
+#: src/view/pivcardwidget.cpp:207
 #, kde-format
 msgctxt "Placeholder is the display name of a key"
 msgid "Replace %1 with new key"
