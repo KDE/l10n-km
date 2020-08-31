@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kalarm\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-08-28 02:29+0200\n"
+"POT-Creation-Date: 2020-08-31 02:22+0200\n"
 "PO-Revision-Date: 2012-12-26 10:26+0700\n"
 "Last-Translator: sutha <sutha@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros>\n"
@@ -3785,19 +3785,135 @@ msgctxt "@action"
 msgid "Disa&ble"
 msgstr "បិទ"
 
-#: messagewin.cpp:329
+#: messagedisplayhelper.cpp:188
 #, kde-format
 msgctxt "@title:window"
 msgid "Reminder"
 msgstr "កម្មវិធី​រំលឹក"
 
-#: messagewin.cpp:329 messagewin.cpp:767
+#: messagedisplayhelper.cpp:189 messagedisplayhelper.cpp:394
 #, kde-format
 msgctxt "@title:window"
 msgid "Message"
 msgstr "សារ"
 
-#: messagewin.cpp:349
+#: messagedisplayhelper.cpp:202
+#, kde-format
+msgctxt "@info"
+msgid "Reminder"
+msgstr "កម្មវិធី​រំលឹក"
+
+#: messagedisplayhelper.cpp:279
+#, kde-format
+msgctxt "@info"
+msgid "File is a folder"
+msgstr "ឯកសារគឺ​​ជា​ថត"
+
+#: messagedisplayhelper.cpp:279
+#, kde-format
+msgctxt "@info"
+msgid "Failed to open file"
+msgstr "បរាជ័យ​ក្នុង​ការបើក​ឯកសារ"
+
+#: messagedisplayhelper.cpp:279
+#, kde-format
+msgctxt "@info"
+msgid "File not found"
+msgstr "រក​មិន​ឃើញ​ឯកសារ"
+
+#: messagedisplayhelper.cpp:322
+#, kde-format
+msgctxt "@info Email addressee"
+msgid "To:"
+msgstr "ជូន​ចំពោះ ៖"
+
+#: messagedisplayhelper.cpp:324
+#, kde-format
+msgctxt "@info Email subject"
+msgid "Subject:"
+msgstr "ប្រធានបទ ៖"
+
+#: messagedisplayhelper.cpp:338
+#, kde-format
+msgctxt "@title:window"
+msgid "Error"
+msgstr "កំហុស"
+
+#: messagedisplayhelper.cpp:466
+#, kde-format
+msgctxt "@info"
+msgid "Today"
+msgstr "ថ្ងៃ​នេះ"
+
+#: messagedisplayhelper.cpp:468
+#, kde-format
+msgctxt "@info"
+msgid "Tomorrow"
+msgid_plural "in %1 days' time"
+msgstr[0] "ក្នុង​​រយៈពេល %1 ថ្ងៃ"
+
+#: messagedisplayhelper.cpp:470
+#, kde-format
+msgctxt "@info"
+msgid "in 1 week's time"
+msgid_plural "in %1 weeks' time"
+msgstr[0] "ក្នុង​រយៈ​ពេល​ %1 សប្ដាហ៍"
+
+#: messagedisplayhelper.cpp:484
+#, kde-format
+msgctxt "@info"
+msgid "in 1 minute's time"
+msgid_plural "in %1 minutes' time"
+msgstr[0] "ក្នុង​រយៈពេល %1 នាទី"
+
+#: messagedisplayhelper.cpp:486
+#, kde-format
+msgctxt "@info"
+msgid "in 1 hour's time"
+msgid_plural "in %1 hours' time"
+msgstr[0] "ក្នុង​រយៈពេល %1 ម៉ោង"
+
+#: messagedisplayhelper.cpp:489
+#, kde-format
+msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
+msgid "1 hour"
+msgid_plural "%1 hours"
+msgstr[0] "%1 ម៉ោង​"
+
+#: messagedisplayhelper.cpp:490
+#, kde-format
+msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
+msgid "in %2 1 minute's time"
+msgid_plural "in %2 %1 minutes' time"
+msgstr[0] "ក្នុង​រយៈ​ពេល​ %2 %1 នាទី​"
+
+#: messagedisplayhelper.cpp:793
+#, kde-format
+msgctxt "@info"
+msgid "Unable to speak message"
+msgstr "មិន​អាច​និយាយ​សារ​បានឡើយ"
+
+#: messagedisplayhelper.cpp:793
+#, kde-format
+msgctxt "@info"
+msgid "Text-to-speech subsystem is not available"
+msgstr ""
+
+#: messagedisplayhelper.cpp:956
+#, kde-kuit-format
+msgctxt "@info"
+msgid "Cannot open audio file: <filename>%1</filename>"
+msgstr "មិនអាច​បើក​ឯកសារ​អូឌីយ៉ូ ៖ <filename>%1</filename>"
+
+#: messagedisplayhelper.cpp:1054
+#, kde-kuit-format
+msgctxt "@info"
+msgid ""
+"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
+msgstr ""
+"<para>កំហុស​ក្នុង​ការ​ចាក់​ឯកសារ​អូឌីយ៉ូ ៖ <filename>%1</filename></para><para>%2</para>"
+
+#: messagewindow.cpp:253
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -3806,109 +3922,83 @@ msgid ""
 msgstr ""
 "កាលបរិច្ឆេទ​/​ពេលវេលា​ដែលបាន​កំណត់​ពេល​សម្រាប់​សារ (ដូចដែលបាន​ប្រឆាំង​នឹង​ពេលវេលា​ពិត​នៃ​ការ​បង្ហាញ) ។"
 
-#: messagewin.cpp:359
-#, kde-format
-msgctxt "@info"
-msgid "Reminder"
-msgstr "កម្មវិធី​រំលឹក"
-
-#: messagewin.cpp:383
+#: messagewindow.cpp:270
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The file whose contents are displayed below"
 msgstr "ឯកសារ​ដែល​មាតិការបស់​វា​ត្រូវ​បង្ហាញ​ខាង​ក្រោម"
 
-#: messagewin.cpp:454
+#: messagewindow.cpp:304
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The contents of the file to be displayed"
 msgstr "មាតិកា​ឯកសារ​ដែលត្រូវ​បង្ហាញ"
 
-#: messagewin.cpp:460
-#, kde-format
-msgctxt "@info"
-msgid "File is a folder"
-msgstr "ឯកសារគឺ​​ជា​ថត"
-
-#: messagewin.cpp:460
-#, kde-format
-msgctxt "@info"
-msgid "Failed to open file"
-msgstr "បរាជ័យ​ក្នុង​ការបើក​ឯកសារ"
-
-#: messagewin.cpp:460
-#, kde-format
-msgctxt "@info"
-msgid "File not found"
-msgstr "រក​មិន​ឃើញ​ឯកសារ"
-
-#: messagewin.cpp:480
+#: messagewindow.cpp:324
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The alarm message"
 msgstr "សារ​ការជូនដំណឹង"
 
-#: messagewin.cpp:507
+#: messagewindow.cpp:351
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The output of the alarm's command"
 msgstr "លទ្ធផល​នៃ​ពាក្យ​បញ្ជា​ការ​ជូនដំណឹង"
 
-#: messagewin.cpp:549
+#: messagewindow.cpp:384
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "The email to send"
 msgstr "អ៊ីមែល​ដែលត្រូវ​ផ្ញើ"
 
-#: messagewin.cpp:553
-#, kde-format
-msgctxt "@info Email addressee"
-msgid "To:"
-msgstr "ជូន​ចំពោះ ៖"
-
-#: messagewin.cpp:560
-#, kde-format
-msgctxt "@info Email subject"
-msgid "Subject:"
-msgstr "ប្រធានបទ ៖"
-
-#: messagewin.cpp:586
-#, kde-format
-msgctxt "@title:window"
-msgid "Error"
-msgstr "កំហុស"
-
-#: messagewin.cpp:606
+#: messagewindow.cpp:440
 #, kde-format
 msgctxt "@option:check"
 msgid "Do not display this error message again for this alarm"
 msgstr "កុំបង្ហាញ​សារ​កំហុស​នេះ​ម្ដងទៀត​សម្រាប់​ការ​ជូនដំណឹង​នេះ"
 
-#: messagewin.cpp:625
+#: messagewindow.cpp:459
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Acknowledge the alarm"
 msgstr "ទទួល​ស្គាល់​ការជូនដំណឹង"
 
-#: messagewin.cpp:630
+#: messagewindow.cpp:464
 #, kde-format
 msgctxt "@action:button"
 msgid "&Edit..."
 msgstr "កែសម្រួល..."
 
-#: messagewin.cpp:635
+#: messagewindow.cpp:469
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "Edit the alarm."
+msgctxt "@info:tooltip"
+msgid "Edit the alarm"
+msgstr "កែសម្រួល​ការជូនដំណឹង ។"
+
+#: messagewindow.cpp:470
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Edit the alarm."
 msgstr "កែសម្រួល​ការជូនដំណឹង ។"
 
-#: messagewin.cpp:639
+#: messagewindow.cpp:474
 #, kde-format
 msgctxt "@action:button"
 msgid "&Defer..."
 msgstr "ពន្យារ​ពេល..."
 
-#: messagewin.cpp:644
+#: messagewindow.cpp:479
+#, fuzzy, kde-format
+#| msgctxt "@info:whatsthis"
+#| msgid "Defer the alarm until the specified time."
+msgctxt "@info:tooltip"
+msgid "Defer the alarm until later"
+msgstr "ពន្យារ​ការ​ជូន​ដំណឹង រហូត​ដល់​ពេលវេលា​ដែល​បាន​បញ្ជាក់ ។"
+
+#: messagewindow.cpp:480
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid ""
@@ -3918,141 +4008,67 @@ msgstr ""
 "<para>ពន្យារពេល​ការ​ជូនដំណឹង​រហូត​ដល់​ពេល​ក្រោយ ។</para><para>អ្នក​នឹងត្រូវបាន​សួរ​បញ្ជាក់ នៅពេល​"
 "ការបង្ហាញ​គួរ​ត្រូវបាន​បង្ហាញ​ឡើងវិញ ។</para>"
 
-#: messagewin.cpp:658 sounddlg.cpp:446
+#: messagewindow.cpp:494 sounddlg.cpp:446
 #, kde-format
 msgctxt "@info:tooltip"
 msgid "Stop sound"
 msgstr "បញ្ឈប់​សំឡេង"
 
-#: messagewin.cpp:659 sounddlg.cpp:447
+#: messagewindow.cpp:495 sounddlg.cpp:447
 #, kde-format
 msgctxt "@info:whatsthis"
 msgid "Stop playing the sound"
 msgstr "បញ្ឈប់​ការចាក់​សំឡេង"
 
-#: messagewin.cpp:671
+#: messagewindow.cpp:509
 #, kde-kuit-format
 msgctxt "@info:tooltip Locate this email in KMail"
 msgid "Locate in <application>KMail</application>"
 msgstr "ទុក​ក្នុង <application>KMail</application>"
 
-#: messagewin.cpp:672
+#: messagewindow.cpp:510
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid "Locate and highlight this email in <application>KMail</application>"
 msgstr "ទុក និង​បន្លិច​សារ​នេះ​នៅក្នុង <application>KMail</application>"
 
-#: messagewin.cpp:680
+#: messagewindow.cpp:518
 #, kde-kuit-format
 msgctxt "@info:tooltip"
 msgid "Activate <application>KAlarm</application>"
 msgstr "ធ្វើ​ឲ្យ <application>KAlarm</application> សកម្ម"
 
-#: messagewin.cpp:681
+#: messagewindow.cpp:519
 #, kde-kuit-format
 msgctxt "@info:whatsthis"
 msgid "Activate <application>KAlarm</application>"
 msgstr "ធ្វើ​ឲ្យ <application>KAlarm</application> សកម្ម"
 
-#: messagewin.cpp:847
-#, kde-format
-msgctxt "@info"
-msgid "Today"
-msgstr "ថ្ងៃ​នេះ"
-
-#: messagewin.cpp:849
-#, kde-format
-msgctxt "@info"
-msgid "Tomorrow"
-msgid_plural "in %1 days' time"
-msgstr[0] "ក្នុង​​រយៈពេល %1 ថ្ងៃ"
-
-#: messagewin.cpp:851
-#, kde-format
-msgctxt "@info"
-msgid "in 1 week's time"
-msgid_plural "in %1 weeks' time"
-msgstr[0] "ក្នុង​រយៈ​ពេល​ %1 សប្ដាហ៍"
-
-#: messagewin.cpp:865
-#, kde-format
-msgctxt "@info"
-msgid "in 1 minute's time"
-msgid_plural "in %1 minutes' time"
-msgstr[0] "ក្នុង​រយៈពេល %1 នាទី"
-
-#: messagewin.cpp:867
-#, kde-format
-msgctxt "@info"
-msgid "in 1 hour's time"
-msgid_plural "in %1 hours' time"
-msgstr[0] "ក្នុង​រយៈពេល %1 ម៉ោង"
-
-#: messagewin.cpp:870
-#, kde-format
-msgctxt "@item:intext inserted into 'in ... %1 minute's time' below"
-msgid "1 hour"
-msgid_plural "%1 hours"
-msgstr[0] "%1 ម៉ោង​"
-
-#: messagewin.cpp:871
-#, kde-format
-msgctxt "@info '%2' is the previous message '1 hour'/'%1 hours'"
-msgid "in %2 1 minute's time"
-msgid_plural "in %2 %1 minutes' time"
-msgstr[0] "ក្នុង​រយៈ​ពេល​ %2 %1 នាទី​"
-
-#: messagewin.cpp:1333
-#, kde-format
-msgctxt "@info"
-msgid "Unable to speak message"
-msgstr "មិន​អាច​និយាយ​សារ​បានឡើយ"
-
-#: messagewin.cpp:1333
-#, kde-format
-msgctxt "@info"
-msgid "Text-to-speech subsystem is not available"
-msgstr ""
-
-#: messagewin.cpp:1496
-#, kde-kuit-format
-msgctxt "@info"
-msgid "Cannot open audio file: <filename>%1</filename>"
-msgstr "មិនអាច​បើក​ឯកសារ​អូឌីយ៉ូ ៖ <filename>%1</filename>"
-
-#: messagewin.cpp:1594
-#, kde-kuit-format
-msgctxt "@info"
-msgid ""
-"<para>Error playing audio file: <filename>%1</filename></para><para>%2</para>"
-msgstr ""
-"<para>កំហុស​ក្នុង​ការ​ចាក់​ឯកសារ​អូឌីយ៉ូ ៖ <filename>%1</filename></para><para>%2</para>"
-
-#: messagewin.cpp:1930
+#: messagewindow.cpp:1087
 #, kde-format
 msgctxt "@info"
 msgid "Do you really want to acknowledge this alarm?"
 msgstr "តើអ្នក​ពិតជា​ចង់​ទទួល​ស្គាល់​ការជូន​ដំណឹង​នេះ​ឬ ?"
 
-#: messagewin.cpp:1931
+#: messagewindow.cpp:1088
 #, kde-format
 msgctxt "@action:button"
 msgid "Acknowledge Alarm"
 msgstr "ទទួល​ស្គាល់​ការ​ជូនដំណឹង"
 
-#: messagewin.cpp:1931
+#: messagewindow.cpp:1088
 #, kde-format
 msgctxt "@action:button"
 msgid "Acknowledge"
 msgstr "ទទួល​ស្គាល់"
 
-#: messagewin.cpp:2002
+#: messagewindow.cpp:1152
 #, kde-kuit-format
 msgctxt "@info"
 msgid "Unable to locate this email in <application>KMail</application>"
 msgstr "មិនអាច​ទុក​អ៊ីមែល​នេះ​នៅក្នុង <application>KMail</application> បានទេ"
 
-#: messagewin.cpp:2166
+#: messagewindow.cpp:1316
 #, kde-kuit-format
 msgctxt "@info"
 msgid "<para>Cannot defer alarm:</para><para>Alarm not found.</para>"
