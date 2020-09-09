@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-01 02:27+0200\n"
+"POT-Creation-Date: 2020-09-09 02:35+0200\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -175,8 +175,8 @@ msgid "Authenticating to the card failed: %1"
 msgstr ""
 
 #: src/commands/authenticatepivcardapplicationcommand.cpp:132
-#: src/commands/changepincommand.cpp:157 src/commands/keytocardcommand.cpp:177
-#: src/commands/keytocardcommand.cpp:202
+#: src/commands/changepincommand.cpp:157 src/commands/keytocardcommand.cpp:330
+#: src/commands/keytocardcommand.cpp:364 src/commands/keytocardcommand.cpp:378
 #: src/commands/pivgeneratecardkeycommand.cpp:198
 #: src/commands/setpivcardapplicationadministrationkeycommand.cpp:174
 #: src/commands/setpivcardapplicationadministrationkeycommand.cpp:197
@@ -381,7 +381,8 @@ msgctxt "@info"
 msgid "PIN changed successfully."
 msgstr "កំណត់ PIN ដោយ​ជោគជ័យ​ ។"
 
-#: src/commands/changepincommand.cpp:159 src/commands/keytocardcommand.cpp:193
+#: src/commands/changepincommand.cpp:159 src/commands/keytocardcommand.cpp:346
+#: src/commands/keytocardcommand.cpp:368
 #: src/commands/pivgeneratecardkeycommand.cpp:200
 #: src/commands/setpivcardapplicationadministrationkeycommand.cpp:199
 #: src/view/pgpcardwidget.cpp:302 src/view/pgpcardwidget.cpp:393
@@ -1469,46 +1470,66 @@ msgstr ""
 "<para>កំហុស​បាន​កើតឡើង​ខណៈ​ពេល​ព្យាយាម​នាំ​ចេញ​សោ​​សម្ងាត់​ ។​</para> <para>​លទ្ធផល​ចេញពី​​ <command>"
 "%1</command> គឺ​ ៖​ <message>%2</message></para>"
 
-#: src/commands/keytocardcommand.cpp:85
+#: src/commands/keytocardcommand.cpp:100
+#: src/commands/pivgeneratecardkeycommand.cpp:115
+#, kde-format
+msgid "Failed to find the card with the serial number: %1"
+msgstr ""
+
+#: src/commands/keytocardcommand.cpp:111
+#, kde-format
+msgid "Sorry! This key cannot be transferred to an OpenPGP card."
+msgstr ""
+
+#: src/commands/keytocardcommand.cpp:120
+#, kde-format
+msgid "Sorry! This key cannot be transferred to a PIV card."
+msgstr ""
+
+#: src/commands/keytocardcommand.cpp:126
+#, kde-format
+msgid "Sorry! Transferring keys to this card is not supported."
+msgstr ""
+
+#: src/commands/keytocardcommand.cpp:152
 #, fuzzy, kde-format
 #| msgid "New signatures:"
 msgctxt "Placeholder is the number of a slot on a smart card"
 msgid "Signature (%1)"
 msgstr "ហត្ថលេខា​ថ្មី ៖​"
 
-#: src/commands/keytocardcommand.cpp:88
+#: src/commands/keytocardcommand.cpp:155
 #, fuzzy, kde-format
 #| msgid "Encryption"
 msgctxt "Placeholder is the number of a slot on a smart card"
 msgid "Encryption (%1)"
 msgstr "ការ​​អ៊ិនគ្រីប​"
 
-#: src/commands/keytocardcommand.cpp:91
+#: src/commands/keytocardcommand.cpp:158
 #, fuzzy, kde-format
 #| msgid "Authentication"
 msgctxt "Placeholder is the number of a slot on a smart card"
 msgid "Authentication (%1)"
 msgstr "កា​រផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ"
 
-#: src/commands/keytocardcommand.cpp:95
+#: src/commands/keytocardcommand.cpp:162
 #, fuzzy, kde-format
 #| msgid "Select All"
 msgid "Select Slot"
 msgstr "ជ្រើសទាំងអស់"
 
-#: src/commands/keytocardcommand.cpp:96
+#: src/commands/keytocardcommand.cpp:163
 #, fuzzy, kde-format
 #| msgid "Please select one of the following certificates:"
 msgid "Please select the slot the key should be written to:"
 msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​ខាងក្រោម​មួយ ៖"
 
-#: src/commands/keytocardcommand.cpp:112
-#: src/commands/pivgeneratecardkeycommand.cpp:115
+#: src/commands/keytocardcommand.cpp:174
 #, kde-format
-msgid "Failed to find the card with the serial number: %1"
+msgid "Failed to find the OpenPGP card with the serial number: %1"
 msgstr ""
 
-#: src/commands/keytocardcommand.cpp:123
+#: src/commands/keytocardcommand.cpp:192 src/commands/keytocardcommand.cpp:249
 #: src/commands/pivgeneratecardkeycommand.cpp:127
 #: src/view/pgpcardwidget.cpp:311
 #, kde-format
@@ -1517,7 +1538,7 @@ msgid ""
 "the existing key."
 msgstr ""
 
-#: src/commands/keytocardcommand.cpp:130
+#: src/commands/keytocardcommand.cpp:199 src/commands/keytocardcommand.cpp:245
 #: src/commands/pivgeneratecardkeycommand.cpp:123
 #, kde-format
 msgctxt "@info"
@@ -1527,13 +1548,13 @@ msgid ""
 "be irrecoverably lost.</p>"
 msgstr ""
 
-#: src/commands/keytocardcommand.cpp:132
+#: src/commands/keytocardcommand.cpp:201
 #, fuzzy, kde-format
 #| msgid "I have verified the fingerprint"
 msgid "The existing key has the fingerprint:"
 msgstr "ខ្ញុំ​បាន​បញ្ជាក់​ស្នាម​ផ្ដិត​ម្រាមដៃ​​"
 
-#: src/commands/keytocardcommand.cpp:134
+#: src/commands/keytocardcommand.cpp:205 src/commands/keytocardcommand.cpp:251
 #: src/commands/pivgeneratecardkeycommand.cpp:130
 #, fuzzy, kde-format
 #| msgid "Overwrite Existing File?"
@@ -1541,34 +1562,45 @@ msgctxt "@title:window"
 msgid "Overwrite existing key"
 msgstr "សរសេរ​ជាន់លើ​ឯកសារ​ដែល​មាន​ឬ ?"
 
-#: src/commands/keytocardcommand.cpp:176
+#: src/commands/keytocardcommand.cpp:229
+#, kde-format
+msgid "Failed to find the PIV card with the serial number: %1"
+msgstr ""
+
+#: src/commands/keytocardcommand.cpp:235
+#, kde-format
+msgid "Sorry! Only encryption keys can be transferred to a PIV card."
+msgstr ""
+
+#: src/commands/keytocardcommand.cpp:247
+#, fuzzy, kde-format
+#| msgid "I have verified the fingerprint"
+msgid "The existing key has the key grip:"
+msgstr "ខ្ញុំ​បាន​បញ្ជាក់​ស្នាម​ផ្ដិត​ម្រាមដៃ​​"
+
+#: src/commands/keytocardcommand.cpp:329 src/commands/keytocardcommand.cpp:363
 #, kde-format
 msgctxt "@info"
 msgid "Moving the key to the card failed: %1"
 msgstr ""
 
-#: src/commands/keytocardcommand.cpp:192
+#: src/commands/keytocardcommand.cpp:345 src/commands/keytocardcommand.cpp:367
 #, kde-format
 msgid "Successfully copied the key to the card."
 msgstr ""
 
-#: src/commands/keytocardcommand.cpp:201
+#: src/commands/keytocardcommand.cpp:377
 #, fuzzy, kde-format
 #| msgid "Failed to execute %1: %2"
 msgctxt "@info"
 msgid "Failed to delete the key: %1"
 msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
 
-#: src/commands/keytocardcommand.cpp:267
+#: src/commands/keytocardcommand.cpp:401
 #, fuzzy, kde-format
 #| msgid "Could not find gpgconf executable"
 msgid "Failed to find a smart card."
 msgstr "មិន​អាច​ស្វែងរក​ឯកសារ​ប្រតិបត្តិ​ gpgconf បាន​ឡើយ​"
-
-#: src/commands/keytocardcommand.cpp:273
-#, kde-format
-msgid "Sorry! This OpenPGP key cannot be transferred to this non-OpenPGP card."
-msgstr ""
 
 #: src/commands/learncardkeyscommand.cpp:57
 #, fuzzy, kde-format
