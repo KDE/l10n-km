@@ -13,7 +13,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ktorrent\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-23 02:26+0200\n"
+"POT-Creation-Date: 2020-10-07 02:21+0200\n"
 "PO-Revision-Date: 2012-07-04 08:46+0700\n"
 "Last-Translator: Sophea <sophea@khmeros.info>\n"
 "Language-Team: Khmer <>\n"
@@ -310,7 +310,7 @@ msgstr ""
 "ការ​បើក​ torrent <b>%1</b> នឹង​ចែករំលែក​ឯកសារ​មួយ​ ឬ​ច្រើន​ជាមួយ​​ torrents ដូច​ខាង​ក្រោម​ ។​ "
 "Torrents មិន​ត្រូវ​បាន​អនុញ្ញាត​ឲ្យ​​សរសេរ​ទៅកាន់​ឯកសារ​ដូច​គ្នា​ឡើយ​ ។​ សូម​ជ្រើស​ទីតាំង​ផ្សេង​មួយ​ទៀត ។"
 
-#: ktorrent/dialogs/fileselectdlg.cpp:450 ktorrent/dialogs/pastedialog.cpp:71
+#: ktorrent/dialogs/fileselectdlg.cpp:450 ktorrent/dialogs/pastedialog.cpp:77
 #: ktorrent/dialogs/torrentcreatordlg.cpp:134 libktcore/groups/allgroup.cpp:27
 #, kde-format
 msgid "All Torrents"
@@ -697,12 +697,24 @@ msgid "Cancel"
 msgstr "បោះបង់"
 
 #. i18n: ectx: property (windowTitle), widget (QDialog, PasteDlgBase)
-#: ktorrent/dialogs/pastedialog.cpp:44 ktorrent/dialogs/pastedlgbase.ui:14
+#: ktorrent/dialogs/pastedialog.cpp:50 ktorrent/dialogs/pastedlgbase.ui:14
 #, kde-format
 msgid "Open an URL"
 msgstr "បើក URL"
 
-#: ktorrent/dialogs/pastedialog.cpp:115
+#: ktorrent/dialogs/pastedialog.cpp:136
+#, kde-format
+msgid "Error fetching tracker list"
+msgstr ""
+
+#: ktorrent/dialogs/pastedialog.cpp:137
+#, kde-format
+msgid ""
+"Please check if the URL in Settings > Advanced > Tracker list URL is "
+"reachable."
+msgstr ""
+
+#: ktorrent/dialogs/pastedialog.cpp:164
 #: ktorrent/dialogs/torrentcreatordlg.cpp:262 ktorrent/gui.cpp:344
 #, kde-format
 msgid "Invalid URL: %1"
@@ -2207,8 +2219,23 @@ msgstr ""
 msgid "Do not use KIO for tracker announces"
 msgstr "កុំ​ប្រើ​ KIO សម្រាប់​ការ​ប្រកាស​កម្ម​វិធី​តាម​ដាន​"
 
-#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_lookUpHostnameOfPeers)
+#. i18n: ectx: property (text), widget (QLabel, label_4)
 #: ktorrent/pref/advancedpref.ui:300
+#, fuzzy, kde-format
+#| msgid "Copy Torrent URL"
+msgid "Tracker list URL:"
+msgstr "ចម្លង URL របស់ Torrent"
+
+#. i18n: ectx: property (toolTip), widget (QLineEdit, kcfg_trackerListUrl)
+#: ktorrent/pref/advancedpref.ui:308
+#, kde-format
+msgid ""
+"URL of the tracker list used when adding a torrent by infohash\n"
+"NOTE: Each tracker must be on it's own line. Blank lines are ignored."
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, kcfg_lookUpHostnameOfPeers)
+#: ktorrent/pref/advancedpref.ui:319
 #, kde-format
 msgid ""
 "Resolve the hostname of each peer. This will result in the hostname of a "
@@ -2223,7 +2250,7 @@ msgstr ""
 "វា​អាច​ត្រូវ​បាន​បិទ​ ប្រសិន​បើ​អ្នក​មិន​ចូលចិត្ត​ចរាចរ​បណ្ដាញ​បន្ថែម​ដែល​វា​បង្កើត"
 
 #. i18n: ectx: property (text), widget (QCheckBox, kcfg_lookUpHostnameOfPeers)
-#: ktorrent/pref/advancedpref.ui:303
+#: ktorrent/pref/advancedpref.ui:322
 #, kde-format
 msgid "Resolve hostnames of peers"
 msgstr "ដោះស្រាយ​ឈ្មោះ​ម៉ាស៊ីន​របស់​ម៉ាស៊ីន​ដូចគ្នា"
@@ -4829,18 +4856,18 @@ msgstr ""
 "torrents ខាងក្រោម​បាន​ដល់​សមាមាត្រ​ចែករំលែក​អតិបរមា​របស់​ពួកវា​ហើយ ។ ទោះជាយ៉ាងណាក៏ដោយ តើ​អ្នក​ចង់​"
 "ចាប់ផ្ដើម​ពួកវា​ឬ ?"
 
-#: libktcore/torrent/queuemanager.cpp:773
+#: libktcore/torrent/queuemanager.cpp:781
 #, kde-format
 msgid "Error starting torrent %1: %2"
 msgstr "កំហុស​ក្នុង​ការ​ចាប់ផ្ដើម torrent %1 ៖ %2"
 
-#: libktcore/torrent/queuemanager.cpp:775
-#: libktcore/torrent/queuemanager.cpp:791
+#: libktcore/torrent/queuemanager.cpp:783
+#: libktcore/torrent/queuemanager.cpp:799
 #, kde-format
 msgid "Error"
 msgstr "កំហុស"
 
-#: libktcore/torrent/queuemanager.cpp:789
+#: libktcore/torrent/queuemanager.cpp:797
 #, kde-format
 msgid "Error stopping torrent %1: %2"
 msgstr "កំហុស​ក្នុង​ការ​បញ្ឈប់ torrent %1 ៖​ %2"
