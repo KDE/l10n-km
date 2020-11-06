@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-10-27 02:32+0100\n"
+"POT-Creation-Date: 2020-11-06 02:30+0100\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -2008,6 +2008,34 @@ msgstr ""
 msgctxt "@info"
 msgid "X.509 certificates refreshed successfully."
 msgstr "បាន​ធ្វើ​ឲ្យ​វិញ្ញាបនបត្រ X.509 ស្រស់​ដោយ​ជោគជ័យ ។​"
+
+#: src/commands/revokecertificationcommand.cpp:126
+#, fuzzy, kde-format
+#| msgid "Certification successful."
+msgid "Revocation successful."
+msgstr "បញ្ជាក់​ដោយ​ជោគជ័យ ។"
+
+#: src/commands/revokecertificationcommand.cpp:127
+#, fuzzy, kde-format
+#| msgid "Certification canceled."
+msgid "Revocation Succeeded"
+msgstr "បាន​បោះបង់​ការ​បញ្ជាក់ ។"
+
+#: src/commands/revokecertificationcommand.cpp:129
+#, fuzzy, kde-format
+#| msgid ""
+#| "<p>An error occurred while trying to change the expiry date for <b>%1</b>:"
+#| "</p><p>%2</p>"
+msgid ""
+"<p>An error occurred while trying to revoke the certification of<br/><br/><b>"
+"%1</b>:</p><p>\t%2</p>"
+msgstr "<p>មាន​កំហុស​​កើតឡើង​នៅ​ខណៈ​ផ្លាស់ប្ដូរ​កាលបរិច្ឆេទ​​ផុត​កំណត់​សម្រាប់ <b>%1</b>:</p><p>%2</p>"
+
+#: src/commands/revokecertificationcommand.cpp:133
+#, fuzzy, kde-format
+#| msgid "Certification"
+msgid "Revocation Error"
+msgstr "វិញ្ញាបនបត្រ​"
 
 #: src/commands/setinitialpincommand.cpp:54
 #, fuzzy, kde-format
@@ -4358,7 +4386,7 @@ msgid "Add New EMail"
 msgstr ""
 
 #: src/dialogs/adduseriddialog.cpp:47
-#: src/dialogs/certificatedetailswidget.cpp:130
+#: src/dialogs/certificatedetailswidget.cpp:131
 #: src/newcertificatewizard/newcertificatewizard.cpp:1251
 #, kde-format
 msgid "Name"
@@ -4462,127 +4490,135 @@ msgstr "បន្ថែម​លេខសម្គាល់​អ្នក​ប
 msgid "This is how the new User-ID will be stored in the certificate:"
 msgstr "វា​ជា​របៀប​រក្សាទុក​លេខ​សម្គាល់​អ្នកប្រើ​នៅ​ក្នុង​វិញ្ញាបនបត្រ ៖"
 
-#: src/dialogs/certificatedetailswidget.cpp:118
+#: src/dialogs/certificatedetailswidget.cpp:119
 #, fuzzy, kde-format
 #| msgid "Never"
 msgctxt "Expires"
 msgid "never"
 msgstr "កុំ"
 
-#: src/dialogs/certificatedetailswidget.cpp:130
+#: src/dialogs/certificatedetailswidget.cpp:131
 #: src/dialogs/certifywidget.cpp:258
 #, kde-format
 msgid "Tags"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:130
+#: src/dialogs/certificatedetailswidget.cpp:131
 #, kde-format
 msgid "Email"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:130
+#: src/dialogs/certificatedetailswidget.cpp:131
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Change Trust Level of %1"
 msgid "Trust Level"
 msgstr "ផ្លាស់ប្ដូរ​កម្រិត​ទុកចិត្ត​របស់ %1"
 
-#: src/dialogs/certificatedetailswidget.cpp:178
+#: src/dialogs/certificatedetailswidget.cpp:179
 #, fuzzy, kde-format
 #| msgid "Export"
 msgid "Updating..."
 msgstr "នាំចេញ"
 
-#: src/dialogs/certificatedetailswidget.cpp:217
+#: src/dialogs/certificatedetailswidget.cpp:218
 #, kde-format
 msgid "Revoke this User ID"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:338
+#: src/dialogs/certificatedetailswidget.cpp:339
+#: src/dialogs/weboftrustwidget.cpp:94 src/view/keylistcontroller.cpp:416
 #, fuzzy, kde-format
 #| msgid "Certify..."
-msgid "Certify ..."
+msgid "Certify..."
 msgstr "ផ្ទៀងផ្ទាត់..."
 
-#: src/dialogs/certificatedetailswidget.cpp:396
+#: src/dialogs/certificatedetailswidget.cpp:353
+#: src/dialogs/weboftrustwidget.cpp:109 src/view/keylistcontroller.cpp:420
+#, fuzzy, kde-format
+#| msgid "Revoke This Certificate..."
+msgid "Revoke Certification..."
+msgstr "យក​វិញ្ញាបនបត្រ​នេះ​ចេញ..."
+
+#: src/dialogs/certificatedetailswidget.cpp:412
 #, fuzzy, kde-format
 #| msgid "Never"
 msgid "never"
 msgstr "កុំ"
 
 #. i18n: ectx: property (text), widget (QCheckBox, signingCB)
-#: src/dialogs/certificatedetailswidget.cpp:398
+#: src/dialogs/certificatedetailswidget.cpp:414
 #: src/newcertificatewizard/advancedsettingsdialog.ui:206
 #, kde-format
 msgid "Signing"
 msgstr "ការ​ចុះហត្ថលេខា"
 
-#: src/dialogs/certificatedetailswidget.cpp:399
-#: src/dialogs/certificatedetailswidget.cpp:403
+#: src/dialogs/certificatedetailswidget.cpp:415
+#: src/dialogs/certificatedetailswidget.cpp:419
 #, kde-format
 msgid "First message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:400
-#: src/dialogs/certificatedetailswidget.cpp:404
+#: src/dialogs/certificatedetailswidget.cpp:416
+#: src/dialogs/certificatedetailswidget.cpp:420
 #, kde-format
 msgid "Last message"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:401
-#: src/dialogs/certificatedetailswidget.cpp:405
+#: src/dialogs/certificatedetailswidget.cpp:417
+#: src/dialogs/certificatedetailswidget.cpp:421
 #, fuzzy, kde-format
 #| msgid "Message #%1"
 msgid "Message count"
 msgstr "សារ #%1"
 
 #. i18n: ectx: property (text), widget (QCheckBox, encryptionCB)
-#: src/dialogs/certificatedetailswidget.cpp:402
+#: src/dialogs/certificatedetailswidget.cpp:418
 #: src/newcertificatewizard/advancedsettingsdialog.ui:216
 #, kde-format
 msgid "Encryption"
 msgstr "ការ​​អ៊ិនគ្រីប​"
 
-#: src/dialogs/certificatedetailswidget.cpp:441
+#: src/dialogs/certificatedetailswidget.cpp:457
 #, kde-format
 msgid "Common Name"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:442
+#: src/dialogs/certificatedetailswidget.cpp:458
 #, fuzzy, kde-format
 #| msgid "Animations"
 msgid "Organization"
 msgstr "ចលនា"
 
-#: src/dialogs/certificatedetailswidget.cpp:443
+#: src/dialogs/certificatedetailswidget.cpp:459
 #, fuzzy, kde-format
 #| msgid "Strength"
 msgid "Street"
 msgstr "គុណភាព"
 
-#: src/dialogs/certificatedetailswidget.cpp:444
+#: src/dialogs/certificatedetailswidget.cpp:460
 #, kde-format
 msgid "City"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:445
+#: src/dialogs/certificatedetailswidget.cpp:461
 #, fuzzy, kde-format
 #| msgid "Status"
 msgid "State"
 msgstr "ស្ថានភាព"
 
-#: src/dialogs/certificatedetailswidget.cpp:446
+#: src/dialogs/certificatedetailswidget.cpp:462
 #, kde-format
 msgid "Country"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:469
+#: src/dialogs/certificatedetailswidget.cpp:485
 #, kde-format
 msgctxt "<name> of <company>"
 msgid "%1 of %2"
 msgstr ""
 
-#: src/dialogs/certificatedetailswidget.cpp:599
+#: src/dialogs/certificatedetailswidget.cpp:615
 #, fuzzy, kde-format
 #| msgid "Certificate Details"
 msgctxt "@title:window"
@@ -4789,7 +4825,7 @@ msgid "Reload"
 msgstr "ផ្ទុកឡើងវិញ"
 
 #: src/dialogs/certificateselectiondialog.cpp:128
-#: src/view/keylistcontroller.cpp:373 src/view/welcomewidget.cpp:69
+#: src/view/keylistcontroller.cpp:374 src/view/welcomewidget.cpp:69
 #, fuzzy, kde-format
 #| msgid "Import"
 msgid "Import..."
@@ -4888,12 +4924,14 @@ msgid ""
 msgstr ""
 
 #: src/dialogs/certifywidget.cpp:351
+#: src/dialogs/revokecertificationwidget.cpp:220
 #, fuzzy, kde-format
 #| msgid "Fingerprint"
 msgid "Fingerprint: <b>%1</b>"
 msgstr "ស្នាម​ម្រាមដៃ"
 
 #: src/dialogs/certifywidget.cpp:353
+#: src/dialogs/revokecertificationwidget.cpp:222
 #, kde-format
 msgid "<i>Only the fingerprint clearly identifies the key and its owner.</i>"
 msgstr ""
@@ -5309,6 +5347,37 @@ msgstr ""
 "អ្នក​ផ្ទាល់​បាន ។<br>វិញ្ញាបនបត្រ​នឹង​ក្លាយ​ជា​មាន​សុពលភាព​​ជា​មួយនឹង​កា​របញ្ជាក់​មួយ​នៅ​កម្រិត​ទុកចិត្ត ។</"
 "font>"
 
+#: src/dialogs/revokecertificationdialog.cpp:96
+#, fuzzy, kde-format
+#| msgid "Certification"
+msgid "Revoke Certification"
+msgstr "វិញ្ញាបនបត្រ​"
+
+#: src/dialogs/revokecertificationdialog.cpp:116
+#, fuzzy, kde-format
+#| msgid "Certification"
+msgctxt "@title:window arg is name, email of certificate holder"
+msgid "Revoke Certification: %1"
+msgstr "វិញ្ញាបនបត្រ​"
+
+#: src/dialogs/revokecertificationwidget.cpp:161
+#, fuzzy, kde-format
+#| msgid "Certification"
+msgid "Certification key:"
+msgstr "វិញ្ញាបនបត្រ​"
+
+#: src/dialogs/revokecertificationwidget.cpp:162
+#, fuzzy, kde-format
+#| msgid "This certificate has been revoked."
+msgid "The key whose certifications shall be revoke"
+msgstr "​វិញ្ញាបនបត្រ​ត្រូវបាន​ដកហូត​វិញ ។"
+
+#: src/dialogs/revokecertificationwidget.cpp:179
+#, fuzzy, kde-format
+#| msgid "Lookup Certificates on Server..."
+msgid "Publish revocations on keyserver"
+msgstr "រកមើល​វិញ្ញាបនបត្រ​លើ​ម៉ាស៊ីន​បម្រើ..."
+
 #. i18n: ectx: property (text), widget (QLabel, label_2)
 #: src/dialogs/selectchecklevelwidget.ui:16
 #, kde-format
@@ -5431,7 +5500,7 @@ msgid "Show all test results"
 msgstr "បង្ហាញ​លទ្ធផល​សាកល្បង​ទាំងអស់​​"
 
 #. i18n: ectx: property (title), widget (QGroupBox, detailsGB)
-#: src/dialogs/selftestdialog.ui:76 src/view/keylistcontroller.cpp:406
+#: src/dialogs/selftestdialog.ui:76 src/view/keylistcontroller.cpp:407
 #, kde-format
 msgid "Details"
 msgstr "សេចក្ដី​លម្អិត"
@@ -5537,7 +5606,7 @@ msgstr "ជំហាន ២ ៖​ ​កំណត់​ PIN ដំបូង​�
 msgid "(optional) Set Initial PIN (SigG)"
 msgstr "កំណត់​​ PIN ដំបូង​ (SigG)​"
 
-#: src/dialogs/subkeyswidget.cpp:77 src/view/keylistcontroller.cpp:419
+#: src/dialogs/subkeyswidget.cpp:77 src/view/keylistcontroller.cpp:424
 #, kde-format
 msgid "Change Expiry Date..."
 msgstr "ផ្លាស់ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់..."
@@ -5711,7 +5780,7 @@ msgctxt "@title:window"
 msgid "Certifications"
 msgstr "វិញ្ញាបនបត្រ​"
 
-#: src/dialogs/weboftrustwidget.cpp:149
+#: src/dialogs/weboftrustwidget.cpp:213
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -5719,7 +5788,7 @@ msgid ""
 "message></para>"
 msgstr "<para>កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ផ្ទុក​វិញ្ញាបនបត្រ ៖ <message>%1</message></para>"
 
-#: src/dialogs/weboftrustwidget.cpp:152
+#: src/dialogs/weboftrustwidget.cpp:216
 #, kde-format
 msgctxt "@title"
 msgid "Certifications Loading Failed"
@@ -5891,37 +5960,37 @@ msgstr "មើល"
 
 #. i18n: ectx: Menu (certMenu)
 #. i18n: ectx: Menu (listview_popup)
-#: src/kleopatra.rc:42 src/kleopatra.rc:108
+#: src/kleopatra.rc:42 src/kleopatra.rc:110
 #, kde-format
 msgid "&Certificates"
 msgstr "វិញ្ញាបនបត្រ​"
 
 #. i18n: ectx: Menu (tools)
-#: src/kleopatra.rc:55
+#: src/kleopatra.rc:57
 #, kde-format
 msgid "&Tools"
 msgstr "ឧបករណ៍"
 
 #. i18n: ectx: Menu (settings)
-#: src/kleopatra.rc:71
+#: src/kleopatra.rc:73
 #, kde-format
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: ectx: Menu (window)
-#: src/kleopatra.rc:75
+#: src/kleopatra.rc:77
 #, kde-format
 msgid "&Window"
 msgstr "បង្អួច"
 
 #. i18n: ectx: Menu (help)
-#: src/kleopatra.rc:86
+#: src/kleopatra.rc:88
 #, kde-format
 msgid "&Help"
 msgstr "ជំនួយ"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: src/kleopatra.rc:93 src/kwatchgnupg/kwatchgnupgui.rc:13
+#: src/kleopatra.rc:95 src/kwatchgnupg/kwatchgnupgui.rc:13
 #, kde-format
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
@@ -6075,59 +6144,59 @@ msgstr ""
 msgid "Cannot read \"%1\""
 msgstr "មិនអាច​ផ្ញើ​ស្ថានភាព \"%1\""
 
-#: src/libkleopatraclient/core/command.cpp:464
+#: src/libkleopatraclient/core/command.cpp:457
 #, kde-format
 msgid "Failed to start uiserver %1"
 msgstr ""
 
-#: src/libkleopatraclient/core/command.cpp:578
+#: src/libkleopatraclient/core/command.cpp:571
 #, kde-format
 msgid "Invalid socket name!"
 msgstr ""
 
-#: src/libkleopatraclient/core/command.cpp:589
+#: src/libkleopatraclient/core/command.cpp:582
 #, kde-format
 msgid ""
 "Could not allocate resources to connect to Kleopatra UI server at %1: %2"
 msgstr ""
 
-#: src/libkleopatraclient/core/command.cpp:620
+#: src/libkleopatraclient/core/command.cpp:609
 #, fuzzy, kde-format
 #| msgctxt "@info"
 #| msgid "Could not connect to UiServer: <message>%1</message>"
 msgid "Could not connect to Kleopatra UI server at %1: %2"
 msgstr "មិនអាច​តភ្ជាប់​ទៅ UiServer ៖ <message>%1</message>"
 
-#: src/libkleopatraclient/core/command.cpp:633
+#: src/libkleopatraclient/core/command.cpp:622
 #, kde-format
 msgid "Could not get the process-id of the Kleopatra UI server at %1: %2"
 msgstr ""
 
-#: src/libkleopatraclient/core/command.cpp:663
+#: src/libkleopatraclient/core/command.cpp:652
 #, fuzzy, kde-format
 #| msgid "Failed to execute %1: %2"
 msgid "Failed to send critical option %1: %2"
 msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
 
-#: src/libkleopatraclient/core/command.cpp:672
+#: src/libkleopatraclient/core/command.cpp:661
 #, fuzzy, kde-format
 #| msgid "Failed to execute %1: %2"
 msgid "Failed to send file path %1: %2"
 msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
 
-#: src/libkleopatraclient/core/command.cpp:678
+#: src/libkleopatraclient/core/command.cpp:667
 #, fuzzy, kde-format
 #| msgid "Failed to execute %1: %2"
 msgid "Failed to send sender %1: %2"
 msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
 
-#: src/libkleopatraclient/core/command.cpp:684
+#: src/libkleopatraclient/core/command.cpp:673
 #, fuzzy, kde-format
 #| msgid "Failed to execute %1: %2"
 msgid "Failed to send recipient %1: %2"
 msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
 
-#: src/libkleopatraclient/core/command.cpp:697
+#: src/libkleopatraclient/core/command.cpp:686
 #, kde-format
 msgid "Command (%1) failed: %2"
 msgstr ""
@@ -6332,13 +6401,13 @@ msgstr ""
 msgid "Ongoing Background Tasks"
 msgstr "ភារកិច្ច​ផ្ទៃខាងក្រោយ​ធ្វើ​បន្ត"
 
-#: src/mainwindow.cpp:629 src/view/keylistcontroller.cpp:381
+#: src/mainwindow.cpp:629 src/view/keylistcontroller.cpp:382
 #, kde-format
 msgid "Sign/Encrypt..."
 msgstr "ចុះហត្ថលេខា/អ៊ីនគ្រិប..."
 
 #: src/mainwindow.cpp:630 src/utils/clipboardmenu.cpp:38
-#: src/view/keylistcontroller.cpp:377
+#: src/view/keylistcontroller.cpp:378
 #, kde-format
 msgid "Decrypt/Verify..."
 msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់..."
@@ -6361,7 +6430,7 @@ msgstr "កា​រកំណត់​កម្រិត​ខ្ពស់"
 
 #. i18n: ectx: attribute (title), widget (QWidget, technicalTab)
 #: src/newcertificatewizard/advancedsettingsdialog.ui:21
-#: src/view/keylistcontroller.cpp:443
+#: src/view/keylistcontroller.cpp:448
 #, kde-format
 msgid "Technical Details"
 msgstr "សេចក្ដី​លម្អិត​បច្ចេកទេស"
@@ -8187,54 +8256,54 @@ msgstr "មិន​អាច​យក​ឯកសារ​ %1 ៖ %2 ចេញ�
 msgid "Loading certificate cache..."
 msgstr "កំពុង​ឃ្លាំង​សម្ងាត់​វិញ្ញាបនបត្រ​..."
 
-#: src/view/keylistcontroller.cpp:349 src/view/welcomewidget.cpp:65
+#: src/view/keylistcontroller.cpp:350 src/view/welcomewidget.cpp:65
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Create Key"
 msgid "New Key Pair..."
 msgstr "បង្កើត​សោ"
 
-#: src/view/keylistcontroller.cpp:353
+#: src/view/keylistcontroller.cpp:354
 #, fuzzy, kde-format
 #| msgid "Export"
 msgid "Export..."
 msgstr "នាំចេញ"
 
-#: src/view/keylistcontroller.cpp:353
+#: src/view/keylistcontroller.cpp:354
 #, kde-format
 msgid "Export the selected certificate (public key) to a file"
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:357
+#: src/view/keylistcontroller.cpp:358
 #, fuzzy, kde-format
 #| msgid "Lookup Certificates on Server..."
 msgid "Publish on Server..."
 msgstr "រកមើល​វិញ្ញាបនបត្រ​លើ​ម៉ាស៊ីន​បម្រើ..."
 
-#: src/view/keylistcontroller.cpp:357
+#: src/view/keylistcontroller.cpp:358
 #, kde-format
 msgid "Publish the selected certificate (public key) on a public keyserver"
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:361
+#: src/view/keylistcontroller.cpp:362
 #, fuzzy, kde-format
 #| msgid "Export Secret Keys..."
 msgid "Backup Secret Keys..."
 msgstr "នាំចេញ​វិញ្ញាបនបត្រ​​សម្ងាត់​​​...​"
 
-#: src/view/keylistcontroller.cpp:365
+#: src/view/keylistcontroller.cpp:366
 #, fuzzy, kde-format
 #| msgid "Export Secret Keys..."
 msgid "Print Secret Key..."
 msgstr "នាំចេញ​វិញ្ញាបនបត្រ​​សម្ងាត់​​​...​"
 
-#: src/view/keylistcontroller.cpp:369
+#: src/view/keylistcontroller.cpp:370
 #, fuzzy, kde-format
 #| msgid "Lookup Certificates on Server..."
 msgid "Lookup on Server..."
 msgstr "រកមើល​វិញ្ញាបនបត្រ​លើ​ម៉ាស៊ីន​បម្រើ..."
 
-#: src/view/keylistcontroller.cpp:369
+#: src/view/keylistcontroller.cpp:370
 #, fuzzy, kde-format
 #| msgid ""
 #| "Certificate: %1\n"
@@ -8244,128 +8313,128 @@ msgstr ""
 "វិញ្ញាបនបត្រ​ ៖​​ %1\n"
 "ស្នាម​ម្រាមដៃ ​៖​ %2"
 
-#: src/view/keylistcontroller.cpp:373
+#: src/view/keylistcontroller.cpp:374
 #, fuzzy, kde-format
 #| msgctxt "@info:tooltip"
 #| msgid "Imported Certificates from %1"
 msgid "Import a certificate from a file"
 msgstr "វិញ្ញាបនបត្រ​ដែលបាននាំចូល​ពី %1​"
 
-#: src/view/keylistcontroller.cpp:377
+#: src/view/keylistcontroller.cpp:378
 #, fuzzy, kde-format
 #| msgid "Decrypt and/or verify file(s)"
 msgid "Decrypt and/or verify files"
 msgstr "ឌិគ្រីប និង/ឬ​ផ្ទៀងផ្ទាត់​ឯកសារ"
 
-#: src/view/keylistcontroller.cpp:381
+#: src/view/keylistcontroller.cpp:382
 #, fuzzy, kde-format
 #| msgid "Decrypt and/or verify file(s)"
 msgid "Encrypt and/or sign files"
 msgstr "ឌិគ្រីប និង/ឬ​ផ្ទៀងផ្ទាត់​ឯកសារ"
 
-#: src/view/keylistcontroller.cpp:385
+#: src/view/keylistcontroller.cpp:386
 #, fuzzy, kde-format
 #| msgid "Sign/Encrypt Files..."
 msgid "Sign/Encrypt Folder..."
 msgstr "ចុះហត្ថលេខា/អ៊ីនគ្រិប​ឯកសារ..."
 
-#: src/view/keylistcontroller.cpp:385
+#: src/view/keylistcontroller.cpp:386
 #, fuzzy, kde-format
 #| msgid "Decrypt and/or verify file(s)"
 msgid "Encrypt and/or sign folders"
 msgstr "ឌិគ្រីប និង/ឬ​ផ្ទៀងផ្ទាត់​ឯកសារ"
 
-#: src/view/keylistcontroller.cpp:389
+#: src/view/keylistcontroller.cpp:390
 #, kde-format
 msgid "Create Checksum Files..."
 msgstr "បង្កើត​ឯកសារ​​របស់​ឆេកសាំ​...​"
 
-#: src/view/keylistcontroller.cpp:393
+#: src/view/keylistcontroller.cpp:394
 #, kde-format
 msgid "Verify Checksum Files..."
 msgstr "ផ្ទៀង​ផ្ទាត់​ឯកសារ​របស់​ឆេកសាំ​...​"
 
-#: src/view/keylistcontroller.cpp:398
+#: src/view/keylistcontroller.cpp:399
 #, kde-format
 msgid "Redisplay"
 msgstr "បង្ហាញ​ឡើងវិញ"
 
-#: src/view/keylistcontroller.cpp:402
+#: src/view/keylistcontroller.cpp:403
 #, kde-format
 msgid "Stop Operation"
 msgstr "បញ្ឈប់​ប្រតិបត្តិ​ការ"
 
-#: src/view/keylistcontroller.cpp:411
+#: src/view/keylistcontroller.cpp:412
 #, kde-format
 msgid "Delete"
 msgstr "លុប"
 
-#: src/view/keylistcontroller.cpp:411
+#: src/view/keylistcontroller.cpp:412
 #, fuzzy, kde-format
 #| msgid "Please select a certificate"
 msgid "Delete selected certificates"
 msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​"
 
-#: src/view/keylistcontroller.cpp:415
-#, fuzzy, kde-format
-#| msgid "Certify..."
-msgid "Certify..."
-msgstr "ផ្ទៀងផ្ទាត់..."
-
-#: src/view/keylistcontroller.cpp:415
+#: src/view/keylistcontroller.cpp:416
 #, fuzzy, kde-format
 #| msgid "The validity of the signature cannot be verified."
 msgid "Certify the validity of the selected certificate"
 msgstr "សុពលភាព​របស់​ហត្ថលេខា​មិនអាច​​បញ្ជាក់​បានទេ ។"
 
-#: src/view/keylistcontroller.cpp:423
+#: src/view/keylistcontroller.cpp:420
+#, fuzzy, kde-format
+#| msgid "The validity of the signature cannot be verified."
+msgid "Revoke the certification of the selected certificate"
+msgstr "សុពលភាព​របស់​ហត្ថលេខា​មិនអាច​​បញ្ជាក់​បានទេ ។"
+
+#: src/view/keylistcontroller.cpp:428
 #, fuzzy, kde-format
 #| msgid "Change Owner Trust..."
 msgid "Change Certification Trust..."
 msgstr "ផ្លាស់ប្ដូរ​កា​ជឿជាក់​លើ​ម្ចាស់..."
 
-#: src/view/keylistcontroller.cpp:427
+#: src/view/keylistcontroller.cpp:432
 #, kde-format
 msgid "Trust Root Certificate"
 msgstr "វិញ្ញាបនបត្រ​​ Root ដែល​ជឿ​ទុកចិត្ត​​"
 
-#: src/view/keylistcontroller.cpp:431
+#: src/view/keylistcontroller.cpp:436
 #, kde-format
 msgid "Distrust Root Certificate"
 msgstr "វិញ្ញាបនបត្រ​​ Root ដែល​មិន​ជឿ​ទុកចិត្ត​​"
 
-#: src/view/keylistcontroller.cpp:435
+#: src/view/keylistcontroller.cpp:440
 #, kde-format
 msgid "Change Passphrase..."
 msgstr "ផ្លាស់ប្ដូរ​ឃ្លា​សម្ងាត់..."
 
-#: src/view/keylistcontroller.cpp:439
+#: src/view/keylistcontroller.cpp:444
 #, kde-format
 msgid "Add User-ID..."
 msgstr "បន្ថែម​លេខសម្គាល់​អ្នក​ប្រើ..."
 
-#: src/view/keylistcontroller.cpp:448
+#: src/view/keylistcontroller.cpp:453
 #, fuzzy, kde-format
 #| msgid "S/MIME Certificates"
 msgid "Refresh S/MIME Certificates"
 msgstr "វិញ្ញាបនបត្រ S/MIME"
 
-#: src/view/keylistcontroller.cpp:452
+#: src/view/keylistcontroller.cpp:457
 #, kde-format
 msgid "Refresh OpenPGP Certificates"
 msgstr "ធ្វើ​ឲ្យ​វិញ្ញាបនបត្រ OpenPGP ស្រស់"
 
-#: src/view/keylistcontroller.cpp:456
+#: src/view/keylistcontroller.cpp:461
 #, kde-format
 msgid "Clear CRL Cache"
 msgstr "ជម្រះ​ឃ្លាំង​សម្ងាត់ CRL"
 
-#: src/view/keylistcontroller.cpp:460
+#: src/view/keylistcontroller.cpp:465
 #, kde-format
 msgid "Dump CRL Cache"
 msgstr "បោះបង់ចោល​ឃ្លាំងសម្ងាត់​ CRL"
 
-#: src/view/keylistcontroller.cpp:464
+#: src/view/keylistcontroller.cpp:469
 #, kde-format
 msgid "Import CRL From File..."
 msgstr "នាំចូល​ CRL ពី​ឯកសារ..."
@@ -9173,6 +9242,11 @@ msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
 
 #, fuzzy
+#~| msgid "Certify..."
+#~ msgid "Certify ..."
+#~ msgstr "ផ្ទៀងផ្ទាត់..."
+
+#, fuzzy
 #~| msgid "SmartCard"
 #~ msgid "Manage Smartcards"
 #~ msgstr "​SmartCard"
@@ -9607,9 +9681,6 @@ msgstr ""
 #~ msgid "Trust Certifications Made by This Certificate..."
 #~ msgstr "ទុក​ចិត្ត​កា​របញ្ជាក់​​ដែល​បាន​ធ្វើ​ឡើង​ដោយ​វិញ្ញាបនបត្រ​នេះ..."
 
-#~ msgid "Revoke This Certificate..."
-#~ msgstr "យក​វិញ្ញាបនបត្រ​នេះ​ចេញ..."
-
 #~ msgid "Photo"
 #~ msgstr "រូបថត"
 
@@ -9756,9 +9827,6 @@ msgstr ""
 
 #~ msgid "Authenticate against Servers"
 #~ msgstr "ផ្ទៀងផ្ទាត់​ភាព​ត្រឹមត្រូវ​ម៉ាស៊ីន​បម្រើ"
-
-#~ msgid "This certificate has been revoked."
-#~ msgstr "​វិញ្ញាបនបត្រ​ត្រូវបាន​ដកហូត​វិញ ។"
 
 #~ msgid "This certificate has expired."
 #~ msgstr "វិញ្ញាបនបត្រ​បាន​ផុត​កំណត់ ។"
