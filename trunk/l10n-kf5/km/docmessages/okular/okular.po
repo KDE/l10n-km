@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kpdf\n"
 "Report-Msgid-Bugs-To: http://bugs.kde.org\n"
-"POT-Creation-Date: 2020-09-26 00:47+0000\n"
+"POT-Creation-Date: 2020-12-14 01:59+0000\n"
 "PO-Revision-Date: 2007-06-27 10:15+0700\n"
 "Last-Translator: Eng Vannak<evannak@khmeros.info>\n"
 "Language-Team: Khmer<support@khmeros.info>\n"
@@ -1021,40 +1021,90 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:476 index.docbook:2820
+#: index.docbook:475
+#, no-c-format
+msgid "Adding Digital Signatures"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:476
+#, no-c-format
+msgid ""
+"You can add digital signatures to documents using the corresponding action "
+"in the <menuchoice><guimenu>Tools</guimenu></menuchoice> menu."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:479
+#, no-c-format
+msgid ""
+"To be able to sign a document you need to have a proper <acronym>PKCS</"
+"acronym> signing certificate available on your system. Okular does not have "
+"the ability to create such certificates since they need to be issued by "
+"certificate authorities to be useful for validation, &etc;"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:482
+#, no-c-format
+msgid ""
+"We use the Poppler library to handle signing of &PDF; documents and Poppler "
+"is using the NSS library to handle certificates. At the point of writing, "
+"Poppler will try to use the following NSS certificate stores in order (if "
+"they exist): <itemizedlist> <listitem><para>The current Firefox user "
+"certificate store.</para></listitem> <listitem><para>The system-wide "
+"<filename>/etc/pki/nssdb</filename> certificate store.</para></listitem> "
+"<listitem><para>The current user <filename>$HOME/.pki/nssdb</filename></"
+"para></listitem> </itemizedlist> If you want to use a custom certificate "
+"store you can do so by setting it in the <link linkend=\"config-pdf-digital-"
+"signatures\">PDF Digital Signature Certificates</link> section of the <link "
+"linkend=\"configure-backends\">Configure Backends...</link> dialog."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:492
+#, no-c-format
+msgid ""
+"This feature is available for &PDF; documents only. You need to install at "
+"least version 21.01 of <ulink url=\"https://poppler.freedesktop.org/"
+"\">Poppler</ulink> to be able to add digital signatures to a document."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:499 index.docbook:2864
 #, fuzzy, no-c-format
 #| msgid "<title>Presentation</title>"
 msgid "<title>Annotations</title>"
 msgstr "<title>ការ​បង្ហាញ</title>"
 
 #. Tag: para
-#: index.docbook:477
+#: index.docbook:500
 #, no-c-format
 msgid "&okular; allows you to review and annotate your documents."
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:481
+#: index.docbook:504
 #, fuzzy, no-c-format
 #| msgid "<screeninfo>The configuration dialogue</screeninfo>"
 msgid "<screeninfo>&okular;'s Annotations</screeninfo>"
 msgstr "<screeninfo>ប្រអប់​កំណត់​រចនា​សម្ព័ន្ធ</screeninfo>"
 
 #. Tag: phrase
-#: index.docbook:487
+#: index.docbook:510
 #, fuzzy, no-c-format
 #| msgid "<phrase>The configuration dialogue</phrase>"
 msgid "<phrase>&okular;'s Annotations</phrase>"
 msgstr "<phrase>ប្រអប់​ការ​កំណត់​រចនា​សម្ព័ន្ធ</phrase>"
 
 #. Tag: para
-#: index.docbook:491
+#: index.docbook:514
 #, no-c-format
 msgid "&okular; has two different kind of annotations:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:492
+#: index.docbook:515
 #, no-c-format
 msgid ""
 "Text annotations like <guilabel>Yellow Highlighter</guilabel> and "
@@ -1062,7 +1112,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:494
+#: index.docbook:517
 #, no-c-format
 msgid ""
 "Graphic annotations like <guilabel>Pop-up Note</guilabel>, <guilabel>Inline "
@@ -1074,7 +1124,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:495
+#: index.docbook:518
 #, no-c-format
 msgid ""
 "Using the context menu either in the <guilabel>Annotations</guilabel> view "
@@ -1083,7 +1133,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:496
+#: index.docbook:519
 #, no-c-format
 msgid ""
 "Annotations are not only limited to &PDF; files, they can be used for any "
@@ -1091,7 +1141,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:497
+#: index.docbook:520
 #, no-c-format
 msgid ""
 "&okular; has the \"document archiving\" feature. This is an &okular;-"
@@ -1106,7 +1156,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:500
+#: index.docbook:523
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<action>Enable the continuous page mode</action>. In continuous mode, all "
@@ -1127,7 +1177,7 @@ msgstr ""
 "guimenu><guimenuitem>ទំព័រ​បន្ទាប់</guimenuitem> </menuchoice> ទេ ។"
 
 #. Tag: para
-#: index.docbook:504
+#: index.docbook:527
 #, no-c-format
 msgid ""
 "Due to DRM limitations (typically with &PDF; documents), adding, editing "
@@ -1135,7 +1185,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:510
+#: index.docbook:533
 #, no-c-format
 msgid ""
 "Any action on annotations (creation and removal of annotations, editing "
@@ -1149,7 +1199,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:514
+#: index.docbook:537
 #, no-c-format
 msgid ""
 "You can configure the default properties and appearance of each annotating "
@@ -1158,13 +1208,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:518
+#: index.docbook:541
 #, no-c-format
 msgid "Adding annotations"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:519
+#: index.docbook:542
 #, no-c-format
 msgid ""
 "To add some annotations to the document, you have to use <guilabel>Quick "
@@ -1178,7 +1228,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:526
+#: index.docbook:549
 #, no-c-format
 msgid ""
 "The annotating toolbar helps you to make annotations with drawings, shapes, "
@@ -1189,37 +1239,37 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:533 index.docbook:950 index.docbook:1104
+#: index.docbook:556 index.docbook:973 index.docbook:1127
 #, no-c-format
 msgid "Button"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:536
+#: index.docbook:559
 #, no-c-format
 msgid "Tool Name"
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:539 index.docbook:956 index.docbook:1107
+#: index.docbook:562 index.docbook:979 index.docbook:1130
 #, no-c-format
 msgid "Description"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:556
+#: index.docbook:579
 #, no-c-format
 msgid "Highlighter"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:561
+#: index.docbook:584
 #, no-c-format
 msgid "To highlight text in the document with some given background color."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:564
+#: index.docbook:587
 #, no-c-format
 msgid ""
 "Click on the tool button, then click with the &LMB; and hold to place the "
@@ -1227,7 +1277,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:567
+#: index.docbook:590
 #, no-c-format
 msgid ""
 "It is possible to define the <guilabel>Type</guilabel> "
@@ -1239,19 +1289,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:583
+#: index.docbook:606
 #, no-c-format
 msgid "Underline"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:588
+#: index.docbook:611
 #, no-c-format
 msgid "To underline some text."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:591 index.docbook:618 index.docbook:645
+#: index.docbook:614 index.docbook:641 index.docbook:668
 #, no-c-format
 msgid ""
 "Click on the tool button, then click with the &LMB; and hold to place the "
@@ -1259,7 +1309,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:594 index.docbook:621 index.docbook:648
+#: index.docbook:617 index.docbook:644 index.docbook:671
 #, no-c-format
 msgid ""
 "It is possible to define the <guilabel>Type</guilabel> "
@@ -1271,37 +1321,37 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:610
+#: index.docbook:633
 #, no-c-format
 msgid "Squiggle"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:615
+#: index.docbook:638
 #, no-c-format
 msgid "To underline some text by a squiggle line."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:637
+#: index.docbook:660
 #, no-c-format
 msgid "Strike Out"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:642
+#: index.docbook:665
 #, no-c-format
 msgid "To strike out some text."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:664
+#: index.docbook:687
 #, no-c-format
 msgid "Typewriter"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:669
+#: index.docbook:692
 #, no-c-format
 msgid ""
 "Typewriter features opaque letters on transparent background, so that it is "
@@ -1309,7 +1359,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:672 index.docbook:699
+#: index.docbook:695 index.docbook:722
 #, no-c-format
 msgid ""
 "Click on the tool button, then click with the &LMB; and hold to place the "
@@ -1320,7 +1370,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:675
+#: index.docbook:698
 #, no-c-format
 msgid ""
 "It is possible to define the <guilabel>Font</guilabel> and <guilabel>Text "
@@ -1329,19 +1379,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:691
+#: index.docbook:714
 #, no-c-format
 msgid "Inline Note"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:696
+#: index.docbook:719
 #, no-c-format
 msgid "To draw inline note. The note will be shown inline as is."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:702
+#: index.docbook:725
 #, no-c-format
 msgid ""
 "It is possible to define the <guilabel>Color</guilabel>, <guilabel>Opacity</"
@@ -1351,13 +1401,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:718
+#: index.docbook:741
 #, no-c-format
 msgid "Pop-up Note"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:723
+#: index.docbook:746
 #, no-c-format
 msgid ""
 "To draw multiline note. The note will can be viewed by double clicking on an "
@@ -1365,7 +1415,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:726
+#: index.docbook:749
 #, no-c-format
 msgid ""
 "Click on the tool button, then click on the place in the document where the "
@@ -1375,7 +1425,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:729
+#: index.docbook:752
 #, no-c-format
 msgid ""
 "It is possible to define the <guilabel>Color</guilabel>, <guilabel>Opacity</"
@@ -1385,20 +1435,20 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:745
+#: index.docbook:768
 #, fuzzy, no-c-format
 #| msgid "Credits and License"
 msgid "Freehand Line"
 msgstr "បញ្ជី​អ្នក​ចូល​រួម និង​អជ្ញាបណ្ណ"
 
 #. Tag: para
-#: index.docbook:750
+#: index.docbook:773
 #, no-c-format
 msgid "To draw free-form lines."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:753
+#: index.docbook:776
 #, no-c-format
 msgid ""
 "Click on the tool button, then click with the &LMB; and hold to place the "
@@ -1406,7 +1456,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:756
+#: index.docbook:779
 #, no-c-format
 msgid ""
 "It is possible to define the <guilabel>Color</guilabel>, <guilabel>Opacity</"
@@ -1416,19 +1466,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:772
+#: index.docbook:795
 #, no-c-format
 msgid "Arrow (drop-down list)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:777
+#: index.docbook:800
 #, no-c-format
 msgid "To mark with an arrow."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:780 index.docbook:807
+#: index.docbook:803 index.docbook:830
 #, no-c-format
 msgid ""
 "Click on the tool button, then click with the &LMB; to place the starting "
@@ -1437,7 +1487,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:783 index.docbook:810
+#: index.docbook:806 index.docbook:833
 #, no-c-format
 msgid ""
 "It is possible to define the <guilabel>Color</guilabel>, <guilabel>Opacity</"
@@ -1449,31 +1499,31 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:799
+#: index.docbook:822
 #, no-c-format
 msgid "Straight line (drop-down list)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:804
+#: index.docbook:827
 #, no-c-format
 msgid "To mark with a line."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:826
+#: index.docbook:849
 #, no-c-format
 msgid "Rectangle (drop-down list)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:831
+#: index.docbook:854
 #, no-c-format
 msgid "To draw a rectangle around some chosen area."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:834
+#: index.docbook:857
 #, no-c-format
 msgid ""
 "Click on the tool button, then click with the &LMB; and hold to place the "
@@ -1481,7 +1531,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:837 index.docbook:864
+#: index.docbook:860 index.docbook:887
 #, no-c-format
 msgid ""
 "It is possible to define the <guilabel>Type</guilabel> "
@@ -1493,19 +1543,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:853
+#: index.docbook:876
 #, no-c-format
 msgid "Ellipse (drop-down list)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:858
+#: index.docbook:881
 #, no-c-format
 msgid "To draw an ellipse or rectangle around some chosen area."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:861
+#: index.docbook:884
 #, no-c-format
 msgid ""
 "Click on the tool button, then click with the &LMB; and hold to place the "
@@ -1514,13 +1564,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:880
+#: index.docbook:903
 #, no-c-format
 msgid "Polygon (drop-down list)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:885
+#: index.docbook:908
 #, no-c-format
 msgid ""
 "To draw a closed plane figure from three or more segments. The corresponding "
@@ -1528,7 +1578,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:888
+#: index.docbook:911
 #, no-c-format
 msgid ""
 "Click on the tool button, then click with the &LMB; to place the first "
@@ -1541,7 +1591,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:891
+#: index.docbook:914
 #, no-c-format
 msgid ""
 "It is possible to define the <guilabel>Color</guilabel>, <guilabel>Opacity</"
@@ -1551,19 +1601,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:907
+#: index.docbook:930
 #, no-c-format
 msgid "Stamp"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:912
+#: index.docbook:935
 #, no-c-format
 msgid "To mark the text or image with some predefined shape."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:915
+#: index.docbook:938
 #, no-c-format
 msgid ""
 "Click on the tool button to choose the stamp from the drop-down list then "
@@ -1571,7 +1621,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:918
+#: index.docbook:941
 #, no-c-format
 msgid ""
 "A single click just places a square stamp (useful for icons). To add a "
@@ -1580,7 +1630,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:922
+#: index.docbook:945
 #, no-c-format
 msgid ""
 "It is possible to define the <guilabel>Opacity</guilabel> and "
@@ -1590,7 +1640,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:926
+#: index.docbook:949
 #, no-c-format
 msgid ""
 "This feature is experimental. Custom stamps inserted in &PDF; documents are "
@@ -1598,7 +1648,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:935
+#: index.docbook:958
 #, no-c-format
 msgid ""
 "These are the default annotations provided by &okular;. Using the <link "
@@ -1608,7 +1658,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:939
+#: index.docbook:962
 #, no-c-format
 msgid ""
 "It is possible to add &latex; code into the text of annotations. Please add "
@@ -1619,7 +1669,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:943
+#: index.docbook:966
 #, no-c-format
 msgid ""
 "It is possible to configure the current tool options using the annotating "
@@ -1628,38 +1678,38 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:953
+#: index.docbook:976
 #, no-c-format
 msgid "Option Name"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:973
+#: index.docbook:996
 #, no-c-format
 msgid "Line width"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:978
+#: index.docbook:1001
 #, no-c-format
 msgid "Click on the tool button to choose the width from the drop-down list."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:989
+#: index.docbook:1012
 #, no-c-format
 msgid "<para>/</para>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1000
+#: index.docbook:1023
 #, fuzzy, no-c-format
 #| msgid "Installation"
 msgid "Annotation color"
 msgstr "ការ​ដំឡើង"
 
 #. Tag: para
-#: index.docbook:1005
+#: index.docbook:1028
 #, no-c-format
 msgid ""
 "Click on the tool button to choose color of text or border of your "
@@ -1669,14 +1719,14 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1021
+#: index.docbook:1044
 #, fuzzy, no-c-format
 #| msgid "Installation"
 msgid "Annotation fill color"
 msgstr "ការ​ដំឡើង"
 
 #. Tag: para
-#: index.docbook:1026
+#: index.docbook:1049
 #, no-c-format
 msgid ""
 "Click on the tool button to choose a fill color of your annotation. You can "
@@ -1685,14 +1735,14 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1042
+#: index.docbook:1065
 #, fuzzy, no-c-format
 #| msgid "Installation"
 msgid "Annotation opacity"
 msgstr "ការ​ដំឡើង"
 
 #. Tag: para
-#: index.docbook:1047
+#: index.docbook:1070
 #, no-c-format
 msgid ""
 "Click on the tool button to choose annotation level of opacity from the drop-"
@@ -1700,26 +1750,26 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1063
+#: index.docbook:1086
 #, fuzzy, no-c-format
 #| msgid "Installation"
 msgid "Annotation font"
 msgstr "ការ​ដំឡើង"
 
 #. Tag: para
-#: index.docbook:1068
+#: index.docbook:1091
 #, no-c-format
 msgid "Click on the tool button to open the font selection dialog."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1084
+#: index.docbook:1107
 #, no-c-format
 msgid "Advanced settings for the current annotation tool"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1089
+#: index.docbook:1112
 #, no-c-format
 msgid ""
 "Click on the tool button to open the general configuration dialog for your "
@@ -1727,14 +1777,14 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1097
+#: index.docbook:1120
 #, no-c-format
 msgid ""
 "There are three additional utility buttons on the default annotating toolbar."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1124
+#: index.docbook:1147
 #, no-c-format
 msgid ""
 "Add the current annotation to the <guilabel>Quick Annotations</guilabel> "
@@ -1742,7 +1792,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1128
+#: index.docbook:1151
 #, no-c-format
 msgid ""
 "You can use the default shortcuts from <keycombo action=\"simul\">&Alt;"
@@ -1752,19 +1802,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1145
+#: index.docbook:1168
 #, no-c-format
 msgid "When checked keep the current annotation tool active after use."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1161
+#: index.docbook:1184
 #, no-c-format
 msgid "Hide the annotating toolbar."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1169
+#: index.docbook:1192
 #, no-c-format
 msgid ""
 "By pressing &Shift; you can constrain the angle of line and polygon "
@@ -1775,7 +1825,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1172
+#: index.docbook:1195
 #, no-c-format
 msgid ""
 "The contents of the <guilabel>Quick Annotations</guilabel> menu can be "
@@ -1786,14 +1836,14 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1176
+#: index.docbook:1199
 #, no-c-format
 msgid ""
 "Activating the annotating toolbar will make you switch to the Browse Mode."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1180
+#: index.docbook:1203
 #, no-c-format
 msgid ""
 "You can stop the construction any time by pressing again on the button of "
@@ -1801,7 +1851,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1184
+#: index.docbook:1207
 #, no-c-format
 msgid ""
 "The newly constructed annotation will have as author the author you set in "
@@ -1812,13 +1862,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1191
+#: index.docbook:1214
 #, no-c-format
 msgid "Removing annotations"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1192
+#: index.docbook:1215
 #, no-c-format
 msgid ""
 "To remove an annotation, just click on it with the &RMB;, and select "
@@ -1827,13 +1877,13 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1196
+#: index.docbook:1219
 #, no-c-format
 msgid "When removing the annotation, its window will be closed if open."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1200
+#: index.docbook:1223
 #, no-c-format
 msgid ""
 "This option could not be enabled because the document does not allow "
@@ -1841,13 +1891,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1207
+#: index.docbook:1230
 #, no-c-format
 msgid "Editing annotations"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1208
+#: index.docbook:1231
 #, no-c-format
 msgid ""
 "To edit an annotation, click on it with the &RMB; and select "
@@ -1857,21 +1907,21 @@ msgid ""
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:1215
+#: index.docbook:1238
 #, fuzzy, no-c-format
 #| msgid "<screeninfo>The configuration dialogue</screeninfo>"
 msgid "<screeninfo>Annotation Property Dialog</screeninfo>"
 msgstr "<screeninfo>ប្រអប់​កំណត់​រចនា​សម្ព័ន្ធ</screeninfo>"
 
 #. Tag: phrase
-#: index.docbook:1221
+#: index.docbook:1244
 #, fuzzy, no-c-format
 #| msgid "<phrase>The configuration dialogue</phrase>"
 msgid "<phrase>Annotation Property Dialog</phrase>"
 msgstr "<phrase>ប្រអប់​ការ​កំណត់​រចនា​សម្ព័ន្ធ</phrase>"
 
 #. Tag: para
-#: index.docbook:1225
+#: index.docbook:1248
 #, no-c-format
 msgid ""
 "To move an annotation, hold down the &Ctrl; key, move the mouse pointer on "
@@ -1879,7 +1929,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1229
+#: index.docbook:1252
 #, no-c-format
 msgid ""
 "If you click with the &LMB; on an annotation, it gets selected. Resize "
@@ -1891,7 +1941,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1235
+#: index.docbook:1258
 #, no-c-format
 msgid ""
 "Resizing is only applicable for annotation types Inline Note, Typewriter, "
@@ -1899,7 +1949,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1238
+#: index.docbook:1261
 #, no-c-format
 msgid ""
 "Depending on the document permissions (typically with &PDF; documents), some "
@@ -1907,14 +1957,14 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1246
+#: index.docbook:1269
 #, fuzzy, no-c-format
 #| msgid "The <guimenu>Tools</guimenu> Menu"
 msgid "Bookmark Management"
 msgstr "ម៉ឺនុយ <guimenu>ឧបករណ៍</guimenu>"
 
 #. Tag: para
-#: index.docbook:1247
+#: index.docbook:1270
 #, no-c-format
 msgid ""
 "&okular; has a very flexible bookmark system. &okular; saves the position on "
@@ -1923,7 +1973,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1250
+#: index.docbook:1273
 #, no-c-format
 msgid ""
 "To manage bookmarks in &okular; you can use <guilabel>Bookmarks</guilabel> "
@@ -1933,14 +1983,14 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1254
+#: index.docbook:1277
 #, fuzzy, no-c-format
 #| msgid "The <guimenu>Tools</guimenu> Menu"
 msgid "Bookmarks view"
 msgstr "ម៉ឺនុយ <guimenu>ឧបករណ៍</guimenu>"
 
 #. Tag: para
-#: index.docbook:1255
+#: index.docbook:1278
 #, no-c-format
 msgid ""
 "To open <guilabel>Bookmarks</guilabel> view, click on the "
@@ -1953,21 +2003,21 @@ msgid ""
 msgstr ""
 
 #. Tag: screeninfo
-#: index.docbook:1259
+#: index.docbook:1282
 #, fuzzy, no-c-format
 #| msgid "<screeninfo>The configuration dialogue</screeninfo>"
 msgid "<screeninfo>Bookmark view context menu</screeninfo>"
 msgstr "<screeninfo>ប្រអប់​កំណត់​រចនា​សម្ព័ន្ធ</screeninfo>"
 
 #. Tag: phrase
-#: index.docbook:1265
+#: index.docbook:1288
 #, fuzzy, no-c-format
 #| msgid "<phrase>The configuration dialogue</phrase>"
 msgid "<phrase>Bookmark view context menu</phrase>"
 msgstr "<phrase>ប្រអប់​ការ​កំណត់​រចនា​សម្ព័ន្ធ</phrase>"
 
 #. Tag: para
-#: index.docbook:1269
+#: index.docbook:1292
 #, no-c-format
 msgid ""
 "The filter bar at the top of <guilabel>Bookmarks</guilabel> view can be used "
@@ -1975,7 +2025,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1272
+#: index.docbook:1295
 #, no-c-format
 msgid ""
 "The list pane permits to view the bookmark list in a tree-like fashion: each "
@@ -1985,7 +2035,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1275
+#: index.docbook:1298
 #, no-c-format
 msgid ""
 "Click on <inlinemediaobject><imageobject><imagedata fileref=\"bookmarks.png"
@@ -1994,7 +2044,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1278
+#: index.docbook:1301
 #, no-c-format
 msgid ""
 "Right-click menu of document item can be used to open document, rename its "
@@ -2003,7 +2053,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1281
+#: index.docbook:1304
 #, no-c-format
 msgid ""
 "Right-click menus of individual bookmark items allow you to go to the "
@@ -2011,7 +2061,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1284
+#: index.docbook:1307
 #, no-c-format
 msgid ""
 "The Right-click menu of items in the table of contents can be used to create "
@@ -2019,13 +2069,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1291
+#: index.docbook:1314
 #, no-c-format
 msgid "Command Line Options"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1292
+#: index.docbook:1315
 #, no-c-format
 msgid ""
 "Though &okular; may most often be started from the &kde; program menu, or a "
@@ -2034,13 +2084,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1296
+#: index.docbook:1319
 #, no-c-format
 msgid "Specify a File"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1297
+#: index.docbook:1320
 #, no-c-format
 msgid ""
 "By specifying the path and name of a particular file the user can have "
@@ -2049,7 +2099,7 @@ msgid ""
 msgstr ""
 
 #. Tag: screen
-#: index.docbook:1300
+#: index.docbook:1323
 #, no-c-format
 msgid ""
 "<prompt>%</prompt> <userinput><command>okular</command> "
@@ -2058,7 +2108,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1303
+#: index.docbook:1326
 #, no-c-format
 msgid ""
 "For &PDF; documents, the name can be given as <replaceable>document_name</"
@@ -2068,19 +2118,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1309
+#: index.docbook:1332
 #, no-c-format
 msgid "Other Command Line Options"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1310
+#: index.docbook:1333
 #, no-c-format
 msgid "The following command line help options are available"
 msgstr ""
 
 #. Tag: userinput
-#: index.docbook:1315
+#: index.docbook:1338
 #, no-c-format
 msgid ""
 "<command>okular</command> <option>-p --page <replaceable>number</"
@@ -2088,7 +2138,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1317
+#: index.docbook:1340
 #, no-c-format
 msgid ""
 "Open a page with a given number in the document. Also available through "
@@ -2097,67 +2147,67 @@ msgid ""
 msgstr ""
 
 #. Tag: userinput
-#: index.docbook:1320
+#: index.docbook:1343
 #, no-c-format
 msgid "<command>okular</command> <option>--presentation</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1322
+#: index.docbook:1345
 #, no-c-format
 msgid "Start the document in presentation mode."
 msgstr ""
 
 #. Tag: userinput
-#: index.docbook:1325
+#: index.docbook:1348
 #, no-c-format
 msgid "<command>okular</command> <option>--print</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1327
+#: index.docbook:1350
 #, no-c-format
 msgid "Start with print dialog."
 msgstr ""
 
 #. Tag: userinput
-#: index.docbook:1330
+#: index.docbook:1353
 #, no-c-format
 msgid "<command>okular</command> <option>--print-and-exit</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1332
+#: index.docbook:1355
 #, no-c-format
 msgid "Start with print dialog and exit after printing."
 msgstr ""
 
 #. Tag: userinput
-#: index.docbook:1335
+#: index.docbook:1358
 #, no-c-format
 msgid "<command>okular</command> <option>--unique</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1337
+#: index.docbook:1360
 #, no-c-format
 msgid "Unique instance control."
 msgstr ""
 
 #. Tag: userinput
-#: index.docbook:1340
+#: index.docbook:1363
 #, no-c-format
 msgid "<command>okular</command> <option>--noraise</option>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1342
+#: index.docbook:1365
 #, no-c-format
 msgid "Allows to prevent &okular; window raising after the start."
 msgstr ""
 
 #. Tag: userinput
-#: index.docbook:1345
+#: index.docbook:1368
 #, no-c-format
 msgid ""
 "<command>okular</command> <option>--find <replaceable>string</replaceable></"
@@ -2165,7 +2215,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1347
+#: index.docbook:1370
 #, no-c-format
 msgid ""
 "Tries to find and highlight a given string in the document. Only works if "
@@ -2174,13 +2224,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1353
+#: index.docbook:1376
 #, no-c-format
 msgid "Fit window to page"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1354
+#: index.docbook:1377
 #, no-c-format
 msgid ""
 "The Fit window to page feature resizes the window so that it is exactly the "
@@ -2190,7 +2240,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1358
+#: index.docbook:1381
 #, no-c-format
 msgid ""
 "This feature can be accessed by using the keyboard shortcut <keycombo action="
@@ -2198,20 +2248,20 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1365
+#: index.docbook:1388
 #, no-c-format
 msgid "The Menubar"
 msgstr "របារ​ម៉ឺនុយ"
 
 #. Tag: title
-#: index.docbook:1368
+#: index.docbook:1391
 #, fuzzy, no-c-format
 #| msgid "The Menubar"
 msgid "The File Menu"
 msgstr "របារ​ម៉ឺនុយ"
 
 #. Tag: menuchoice
-#: index.docbook:1372
+#: index.docbook:1395
 #, no-c-format
 msgid ""
 "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> </"
@@ -2221,7 +2271,7 @@ msgstr ""
 "shortcut> <guimenu>ឯកសារ</guimenu> <guimenuitem>បើក...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1381
+#: index.docbook:1404
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<action>Open</action> a PDF or PS file. If there is already an opened "
@@ -2236,14 +2286,14 @@ msgstr ""
 "ព័ត៌មាន​បន្ថែម សូម​មើល​ផ្នែក​អំពី <link linkend=\"opening\">ការ​បើក​ឯកសារ</link> ។"
 
 #. Tag: menuchoice
-#: index.docbook:1389
+#: index.docbook:1412
 #, fuzzy, no-c-format
 #| msgid "<guimenu>File</guimenu> <guimenuitem>Open Recent</guimenuitem>"
 msgid "<guimenu>File</guimenu> <guisubmenu>Open Recent</guisubmenu>"
 msgstr "<guimenu>ឯកសារ</guimenu> <guimenuitem>បើក​ថ្មីៗ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1395
+#: index.docbook:1418
 #, no-c-format
 msgid ""
 "<action>Open</action> a file which was used previously from a submenu. If a "
@@ -2255,7 +2305,7 @@ msgstr ""
 "ឯកសារ</link> ។"
 
 #. Tag: menuchoice
-#: index.docbook:1419
+#: index.docbook:1442
 #, fuzzy, no-c-format
 #| msgid "<guimenu>File</guimenu> <guimenuitem>Print Preview...</guimenuitem>"
 msgid ""
@@ -2264,13 +2314,13 @@ msgid ""
 msgstr "<guimenu>ឯកសារ</guimenu> <guimenuitem>មើល​មុន​បោះពុម្ព...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1425
+#: index.docbook:1448
 #, no-c-format
 msgid "<action>Open</action> a &PostScript; file and convert it to &PDF;."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1433
+#: index.docbook:1456
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> "
@@ -2284,7 +2334,7 @@ msgstr ""
 "shortcut> <guimenu>ឯកសារ</guimenu> <guimenuitem>បើក...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1442
+#: index.docbook:1465
 #, no-c-format
 msgid ""
 "<action>Reopen</action> the last closed document. This action is active only "
@@ -2292,7 +2342,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1450
+#: index.docbook:1473
 #, fuzzy, no-c-format
 #| msgid "<guimenu>File</guimenu> <guimenuitem>Properties</guimenuitem>"
 msgid ""
@@ -2300,7 +2350,7 @@ msgid ""
 msgstr "<guimenu>ឯកសារ</guimenu> <guimenuitem>លក្ខណៈ​សម្បត្តិ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1456
+#: index.docbook:1479
 #, no-c-format
 msgid ""
 "<action>Open</action> folder that contains the current document in your "
@@ -2311,7 +2361,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1464
+#: index.docbook:1487
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> "
@@ -2324,7 +2374,7 @@ msgstr ""
 "shortcut> <guimenu>ឯកសារ</guimenu> <guimenuitem>បើក...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1473
+#: index.docbook:1496
 #, no-c-format
 msgid ""
 "<action>Saves</action> the document including all the changes (annotations, "
@@ -2335,7 +2385,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1479
+#: index.docbook:1502
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut> <keycombo action=\"simul\">&Ctrl;<keycap>O</keycap></keycombo> "
@@ -2349,7 +2399,7 @@ msgstr ""
 "shortcut> <guimenu>ឯកសារ</guimenu> <guimenuitem>បើក...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1488
+#: index.docbook:1511
 #, no-c-format
 msgid ""
 "<action>Saves</action> the document under a new name including all the "
@@ -2360,7 +2410,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1490
+#: index.docbook:1513
 #, no-c-format
 msgid ""
 "Note that, due to the way this is implemented, even if there are no changes "
@@ -2369,7 +2419,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1499
+#: index.docbook:1522
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycap>F3</keycap></shortcut> <guimenu>Edit</guimenu> "
@@ -2382,7 +2432,7 @@ msgstr ""
 "<guimenuitem>រក​បន្ទាប់</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1506
+#: index.docbook:1529
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<action>Save</action> the currently open file under a different name."
@@ -2390,7 +2440,7 @@ msgid "<action>Reload</action> the currently open file."
 msgstr "<action>រក្សា​ទុក</action> ឯកសារ​ដែល​បើក​បច្ចុប្បន្ន​ក្រោម​ឈ្មោះ​ផ្សេង ។"
 
 #. Tag: menuchoice
-#: index.docbook:1512
+#: index.docbook:1535
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo></"
@@ -2400,7 +2450,7 @@ msgstr ""
 "shortcut> <guimenu>ឯកសារ</guimenu> <guimenuitem>បោះពុម្ព...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1519
+#: index.docbook:1542
 #, no-c-format
 msgid ""
 "<action>Print</action> the currently displayed document. Please take into "
@@ -2412,7 +2462,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1523
+#: index.docbook:1546
 #, no-c-format
 msgid ""
 "The scale mode options are only available when you check the <guilabel>Force "
@@ -2420,13 +2470,13 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1532
+#: index.docbook:1555
 #, no-c-format
 msgid "<guimenu>File</guimenu> <guimenuitem>Print Preview...</guimenuitem>"
 msgstr "<guimenu>ឯកសារ</guimenu> <guimenuitem>មើល​មុន​បោះពុម្ព...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1538
+#: index.docbook:1561
 #, no-c-format
 msgid ""
 "<action>Show a preview</action> of how the currently displayed document "
@@ -2436,7 +2486,7 @@ msgstr ""
 "លំនាំ​ដើម ។"
 
 #. Tag: menuchoice
-#: index.docbook:1547
+#: index.docbook:1570
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>P</keycap></keycombo></"
@@ -2450,7 +2500,7 @@ msgstr ""
 "shortcut> <guimenu>ឯកសារ</guimenu> <guimenuitem>បោះពុម្ព...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1554
+#: index.docbook:1577
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<action>Display some basic information</action> about the document, such "
@@ -2464,7 +2514,7 @@ msgstr ""
 "បង្កើត និង​លម្អិត​អំពី​ពុម្ព​អក្សរ​ដែល​ប្រើ ។"
 
 #. Tag: para
-#: index.docbook:1558
+#: index.docbook:1581
 #, no-c-format
 msgid ""
 "Please pay attention on the information about substituting font in the "
@@ -2474,14 +2524,14 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1564
+#: index.docbook:1587
 #, fuzzy, no-c-format
 #| msgid "<guimenu>File</guimenu> <guimenuitem>Save As...</guimenuitem>"
 msgid "<guimenu>File</guimenu> <guimenuitem>Embedded Files...</guimenuitem>"
 msgstr "<guimenu>ឯកសារ</guimenu> <guimenuitem>រក្សា​ទុក​ជា...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1570
+#: index.docbook:1593
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<action>Activates</action> the Presentation Mode. For more information, "
@@ -2496,14 +2546,14 @@ msgstr ""
 "linkend=\"presentationMode\">របៀប​បង្ហាញ</link> ។"
 
 #. Tag: menuchoice
-#: index.docbook:1578
+#: index.docbook:1601
 #, fuzzy, no-c-format
 #| msgid "<guimenu>File</guimenu> <guimenuitem>Properties</guimenuitem>"
 msgid "<guimenu>File</guimenu> <guisubmenu>Export As</guisubmenu>"
 msgstr "<guimenu>ឯកសារ</guimenu> <guimenuitem>លក្ខណៈ​សម្បត្តិ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1584
+#: index.docbook:1607
 #, no-c-format
 msgid ""
 "This item contains the export formats the current document can be exported "
@@ -2512,7 +2562,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1586
+#: index.docbook:1609
 #, no-c-format
 msgid ""
 "The second entry is <guimenuitem>Document Archive</guimenuitem>, which "
@@ -2523,14 +2573,14 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1592
+#: index.docbook:1615
 #, fuzzy, no-c-format
 #| msgid "<guimenu>File</guimenu> <guimenuitem>Properties</guimenuitem>"
 msgid "<guimenu>File</guimenu> <guisubmenu>Share</guisubmenu>"
 msgstr "<guimenu>ឯកសារ</guimenu> <guimenuitem>លក្ខណៈ​សម្បត្តិ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1598
+#: index.docbook:1621
 #, no-c-format
 msgid ""
 "This item contains the services which can be used to share the current "
@@ -2540,7 +2590,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1605
+#: index.docbook:1628
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>Q</keycap></"
@@ -2554,21 +2604,21 @@ msgstr ""
 "keycombo></shortcut> <guimenu>ឯកសារ</guimenu> <guimenuitem>ចេញ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1612
+#: index.docbook:1635
 #, fuzzy, no-c-format
 #| msgid "<action>Close</action> &kpdf;."
 msgid "<action>Close</action> &okular;."
 msgstr "<action>បិទ</action> Kpdf ។"
 
 #. Tag: title
-#: index.docbook:1619
+#: index.docbook:1642
 #, fuzzy, no-c-format
 #| msgid "The Menubar"
 msgid "The Edit Menu"
 msgstr "របារ​ម៉ឺនុយ"
 
 #. Tag: menuchoice
-#: index.docbook:1624
+#: index.docbook:1647
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>F</keycap></"
@@ -2582,7 +2632,7 @@ msgstr ""
 "shortcut> <guimenu>កែ​សម្រួល</guimenu> <guimenuitem>រក...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1631
+#: index.docbook:1654
 #, no-c-format
 msgid ""
 "<action>Undo</action> the last annotation editing command (creation and "
@@ -2592,7 +2642,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1637
+#: index.docbook:1660
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>F</keycap></"
@@ -2606,14 +2656,14 @@ msgstr ""
 "shortcut> <guimenu>កែ​សម្រួល</guimenu> <guimenuitem>រក...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1644
+#: index.docbook:1667
 #, fuzzy, no-c-format
 #| msgid "<action>Enables</action> the color changing options."
 msgid "<action>Redo</action> the last undo step when editing annotations."
 msgstr "<action>អនុញ្ញាត</action> ជម្រើស​ដែល​ផ្លាស់ប្ដូរ​ពណ៌ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1652
+#: index.docbook:1675
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>F</keycap></"
@@ -2627,7 +2677,7 @@ msgstr ""
 "shortcut> <guimenu>កែ​សម្រួល</guimenu> <guimenuitem>រក...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1659
+#: index.docbook:1682
 #, no-c-format
 msgid ""
 "<action>Copy</action> the currently selected text in <guibutton>Text "
@@ -2635,7 +2685,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1668
+#: index.docbook:1691
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>G</keycap></keycombo></"
@@ -2649,7 +2699,7 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1675
+#: index.docbook:1698
 #, no-c-format
 msgid ""
 "<action>Selects</action> all the text (if the document provides it). This "
@@ -2657,7 +2707,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1684
+#: index.docbook:1707
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Fit to Page</guimenuitem>"
 msgid ""
@@ -2666,7 +2716,7 @@ msgid ""
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>សម​ទៅ​ទំព័រ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1690
+#: index.docbook:1713
 #, no-c-format
 msgid ""
 "<action>Selects</action> all the text (if the document provides it) of the "
@@ -2674,7 +2724,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1699
+#: index.docbook:1722
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>F</keycap></"
@@ -2688,7 +2738,7 @@ msgstr ""
 "shortcut> <guimenu>កែ​សម្រួល</guimenu> <guimenuitem>រក...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1706
+#: index.docbook:1729
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Open a dialogue that allows you to <action>search for a string in the "
@@ -2699,7 +2749,7 @@ msgid ""
 msgstr "បើក​ប្រអប់​ដែល​អនុញ្ញាត​ឲ្យ​អ្នក <action>ស្វែងរក​ខ្សែ​អក្សរ​ក្នុង​ឯកសារ</action> ។"
 
 #. Tag: menuchoice
-#: index.docbook:1715
+#: index.docbook:1738
 #, no-c-format
 msgid ""
 "<shortcut><keycap>F3</keycap></shortcut> <guimenu>Edit</guimenu> "
@@ -2709,7 +2759,7 @@ msgstr ""
 "<guimenuitem>រក​បន្ទាប់</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1722
+#: index.docbook:1745
 #, no-c-format
 msgid ""
 "Try to <action>find the previous searched string again</action> in the "
@@ -2717,7 +2767,7 @@ msgid ""
 msgstr "ព្យាយាម <action>រក​ខ្សែ​អក្សរ​ដែល​បាន​ស្វែងរក​ពី​មុន​ម្ដង​ទៀត</action> ក្នុង​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1728
+#: index.docbook:1751
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>F</keycap></"
@@ -2731,7 +2781,7 @@ msgstr ""
 "shortcut> <guimenu>កែ​សម្រួល</guimenu> <guimenuitem>រក...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1735
+#: index.docbook:1758
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Try to <action>find the previous searched string again</action> in the "
@@ -2742,14 +2792,14 @@ msgid ""
 msgstr "ព្យាយាម <action>រក​ខ្សែ​អក្សរ​ដែល​បាន​ស្វែងរក​ពី​មុន​ម្ដង​ទៀត</action> ក្នុង​ឯកសារ ។"
 
 #. Tag: title
-#: index.docbook:1742
+#: index.docbook:1765
 #, fuzzy, no-c-format
 #| msgid "The Menubar"
 msgid "The View Menu"
 msgstr "របារ​ម៉ឺនុយ"
 
 #. Tag: menuchoice
-#: index.docbook:1746
+#: index.docbook:1769
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;&Shift;<keycap>P</keycap></"
@@ -2761,7 +2811,7 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1753
+#: index.docbook:1776
 #, no-c-format
 msgid ""
 "<action>Activates</action> the Presentation Mode. For more information, see "
@@ -2772,7 +2822,7 @@ msgstr ""
 "linkend=\"presentationMode\">របៀប​បង្ហាញ</link> ។"
 
 #. Tag: menuchoice
-#: index.docbook:1759
+#: index.docbook:1782
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;&Shift;<keycap>F</keycap></"
@@ -2788,7 +2838,7 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1766
+#: index.docbook:1789
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<action>Enables the full screen mode</action>. Note that full screen mode "
@@ -2807,7 +2857,7 @@ msgstr ""
 "the toolbar."
 
 #. Tag: menuchoice
-#: index.docbook:1774
+#: index.docbook:1797
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>+</keycap></keycombo></"
@@ -2817,13 +2867,13 @@ msgstr ""
 "shortcut> <guimenu>មើល</guimenu> <guimenuitem>ពង្រីក</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1781
+#: index.docbook:1804
 #, no-c-format
 msgid "<action>Increase the magnification</action> of the document view."
 msgstr "<action>បង្កើន​ការ​ពង្រីក</action> នៃ​ការ​មើល​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1787
+#: index.docbook:1810
 #, no-c-format
 msgid ""
 "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>-</keycap></keycombo></"
@@ -2833,20 +2883,20 @@ msgstr ""
 "shortcut> <guimenu>មើល</guimenu> <guimenuitem>បង្រួម</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1794
+#: index.docbook:1817
 #, no-c-format
 msgid "<action>Decrease the magnification</action> of the document view."
 msgstr "<action>បន្ថយ​ការ​ពង្រីក</action> នៃ​ការ​មើល​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1799
+#: index.docbook:1822
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Fit to Page Width</guimenuitem>"
 msgid "<guimenu>View</guimenu> <guimenuitem>Zoom to 100%</guimenuitem>"
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>សម​ទៅ​ទទឹង​ទំព័រ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1805
+#: index.docbook:1828
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Try to <action>find the previous searched string again</action> in the "
@@ -2857,14 +2907,14 @@ msgid ""
 msgstr "ព្យាយាម <action>រក​ខ្សែ​អក្សរ​ដែល​បាន​ស្វែងរក​ពី​មុន​ម្ដង​ទៀត</action> ក្នុង​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1810
+#: index.docbook:1833
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Fit to Page Width</guimenuitem>"
 msgid "<guimenu>View</guimenu> <guimenuitem>Fit Width</guimenuitem>"
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>សម​ទៅ​ទទឹង​ទំព័រ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1816
+#: index.docbook:1839
 #, no-c-format
 msgid ""
 "<action>Change the magnification</action> of the document view to a value "
@@ -2874,14 +2924,14 @@ msgstr ""
 "របស់​ការ​មើល​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1823
+#: index.docbook:1846
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Fit to Page</guimenuitem>"
 msgid "<guimenu>View</guimenu> <guimenuitem>Fit Page</guimenuitem>"
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>សម​ទៅ​ទំព័រ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1829
+#: index.docbook:1852
 #, no-c-format
 msgid ""
 "<action>Change the magnification</action> of the document view to a value "
@@ -2891,14 +2941,14 @@ msgstr ""
 "មើល​ឃើញ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1835
+#: index.docbook:1858
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Fit to Page Width</guimenuitem>"
 msgid "<guimenu>View</guimenu> <guimenuitem>Auto Fit</guimenuitem>"
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>សម​ទៅ​ទទឹង​ទំព័រ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1841
+#: index.docbook:1864
 #, no-c-format
 msgid ""
 "<action>Change the magnification</action> of the document view to a value "
@@ -2909,14 +2959,14 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1847
+#: index.docbook:1870
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Fit to Page</guimenuitem>"
 msgid "<guimenu>View</guimenu> <guisubmenu>View Mode</guisubmenu>"
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>សម​ទៅ​ទំព័រ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1853
+#: index.docbook:1876
 #, no-c-format
 msgid ""
 "This submenu makes you choose the view mode for the pages. The possible "
@@ -2928,7 +2978,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1859
+#: index.docbook:1882
 #, no-c-format
 msgid ""
 "Additionally, you can enable the <guimenuitem>Continuous</guimenuitem> mode. "
@@ -2938,14 +2988,14 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1867
+#: index.docbook:1890
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Continuous</guimenuitem>"
 msgid "<guimenu>View</guimenu> <guisubmenu>Orientation</guisubmenu>"
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>បន្ត</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1873
+#: index.docbook:1896
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Open a dialog which allows you to <action>go to any page</action> of the "
@@ -2956,13 +3006,13 @@ msgid ""
 msgstr "បើក​ប្រអប់​ដែល​អនុញ្ញាត​ឲ្យ​អ្នក <action>ទៅ​កាន់​ទំព័រ​ណាមួយ</action> នៃ​ឯកសារ ។"
 
 #. Tag: para
-#: index.docbook:1878
+#: index.docbook:1901
 #, no-c-format
 msgid "The rotation is applied to the orientation of every page."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1882
+#: index.docbook:1905
 #, no-c-format
 msgid ""
 "You can select <guimenuitem>Original Orientation</guimenuitem> to restore "
@@ -2971,14 +3021,14 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1891
+#: index.docbook:1914
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Fit to Page</guimenuitem>"
 msgid "<guimenu>View</guimenu> <guisubmenu>Trim View</guisubmenu>"
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>សម​ទៅ​ទំព័រ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1897
+#: index.docbook:1920
 #, no-c-format
 msgid ""
 "This submenu allows you to remove the white border of pages when viewing "
@@ -2987,7 +3037,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1900
+#: index.docbook:1923
 #, no-c-format
 msgid ""
 "The <quote>trim to selection</quote> mode allows you to draw a selection "
@@ -2998,7 +3048,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1903
+#: index.docbook:1926
 #, no-c-format
 msgid ""
 "The <quote>trim margins</quote> mode is persistent across &okular; restarts. "
@@ -3007,7 +3057,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1906
+#: index.docbook:1929
 #, no-c-format
 msgid ""
 "When you switch &okular; from <quote>trim margins</quote> mode to "
@@ -3016,7 +3066,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:1909
+#: index.docbook:1932
 #, no-c-format
 msgid ""
 "The trim mode can be deactivated by selecting the same menu item that "
@@ -3024,7 +3074,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:1916
+#: index.docbook:1939
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<guimenu>Settings</guimenu> <guimenuitem>Show/Hide Toolbar</guimenuitem>"
@@ -3033,7 +3083,7 @@ msgstr ""
 "<guimenu>ការ​កំណត់</guimenu> <guimenuitem>បង្ហាញ/លាក់​របារ​ឧបករណ៍</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1922
+#: index.docbook:1945
 #, fuzzy, no-c-format
 #| msgid "<action>Go to the first page</action> of the document."
 msgid ""
@@ -3042,46 +3092,46 @@ msgid ""
 msgstr "<action>ទៅ​កាន់​ទំព័រ​ដំបូង</action> នៃ​ឯកសារ ។"
 
 #. Tag: para
-#: index.docbook:1927
+#: index.docbook:1950
 #, no-c-format
 msgid "This menu item is active only if the current document has form fields."
 msgstr ""
 
 #. Tag: title
-#: index.docbook:1939
+#: index.docbook:1962
 #, fuzzy, no-c-format
 #| msgid "The Menubar"
 msgid "The Go Menu"
 msgstr "របារ​ម៉ឺនុយ"
 
 #. Tag: menuchoice
-#: index.docbook:1943
+#: index.docbook:1966
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Fit to Page</guimenuitem>"
 msgid "<guimenu>Go</guimenu> <guimenuitem>Previous Page</guimenuitem>"
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>សម​ទៅ​ទំព័រ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1949
+#: index.docbook:1972
 #, no-c-format
 msgid "<action>View the previous page</action> of the document."
 msgstr "<action>មើល​ទំព័រ​មុន</action> នៃ​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1954
+#: index.docbook:1977
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Fit to Page</guimenuitem>"
 msgid "<guimenu>Go</guimenu> <guimenuitem>Next Page</guimenuitem>"
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>សម​ទៅ​ទំព័រ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1960
+#: index.docbook:1983
 #, no-c-format
 msgid "<action>View the next page</action> of the document."
 msgstr "<action>មើល​ទំព័រ​បន្ទាប់</action> នៃឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1965
+#: index.docbook:1988
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>Home</keycap></"
@@ -3095,14 +3145,14 @@ msgstr ""
 "keycombo></shortcut> <guimenu>ទៅ</guimenu> <guimenuitem>ទំព័រ​ដំបូង</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1972
+#: index.docbook:1995
 #, fuzzy, no-c-format
 #| msgid "<action>Go to the first page</action> of the document."
 msgid "<action>Go to the beginning</action> of the document."
 msgstr "<action>ទៅ​កាន់​ទំព័រ​ដំបូង</action> នៃ​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1977
+#: index.docbook:2000
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>End</keycap></"
@@ -3117,14 +3167,14 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1984
+#: index.docbook:2007
 #, fuzzy, no-c-format
 #| msgid "<action>Go to the last page</action> of the document."
 msgid "<action>Go to the end</action> of the document."
 msgstr "<action>ទៅ​កាន់​ទំព័រ​ចុង​ក្រោយ</action> នៃ​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:1989
+#: index.docbook:2012
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Alt; <keycap>Left</keycap></"
@@ -3137,13 +3187,13 @@ msgstr ""
 "keycombo></shortcut> <guimenu>ទៅ</guimenu> <guimenuitem>ក្រោយ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:1996
+#: index.docbook:2019
 #, no-c-format
 msgid "<action>Go back to the previous view</action> of the document."
 msgstr "<action>ទៅ​ក្រោយ​ទៅ​កាន់​ទិដ្ឋភាព​មុន</action> នៃ​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:2001
+#: index.docbook:2024
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Alt;<keycap>Right</keycap></"
@@ -3157,7 +3207,7 @@ msgstr ""
 "keycombo></shortcut> <guimenu>ទៅ</guimenu> <guimenuitem>មុខ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2008
+#: index.docbook:2031
 #, no-c-format
 msgid ""
 "<action>Move forward to the next view</action> of the document. This only "
@@ -3167,7 +3217,7 @@ msgstr ""
 "ផ្លាស់ទី​ទៅ​ក្រោយ​ពី​មុន ។"
 
 #. Tag: menuchoice
-#: index.docbook:2013
+#: index.docbook:2036
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>G</keycap></keycombo></"
@@ -3181,7 +3231,7 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2020
+#: index.docbook:2043
 #, no-c-format
 msgid ""
 "Open a dialog which allows you to <action>go to any page</action> of the "
@@ -3189,14 +3239,14 @@ msgid ""
 msgstr "បើក​ប្រអប់​ដែល​អនុញ្ញាត​ឲ្យ​អ្នក <action>ទៅ​កាន់​ទំព័រ​ណាមួយ</action> នៃ​ឯកសារ ។"
 
 #. Tag: title
-#: index.docbook:2027
+#: index.docbook:2050
 #, fuzzy, no-c-format
 #| msgid "The <guimenu>Tools</guimenu> Menu"
 msgid "The Bookmarks Menu"
 msgstr "ម៉ឺនុយ <guimenu>ឧបករណ៍</guimenu>"
 
 #. Tag: menuchoice
-#: index.docbook:2031
+#: index.docbook:2054
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>G</keycap></keycombo></"
@@ -3211,26 +3261,26 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2038
+#: index.docbook:2061
 #, no-c-format
 msgid "<action>Add or remove a bookmark for the current position</action>."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:2045
+#: index.docbook:2068
 #, fuzzy, no-c-format
 #| msgid "<guimenu>Tools</guimenu> <guimenuitem>Browse Tool</guimenuitem>"
 msgid "<guimenu>Bookmarks</guimenu> <guimenuitem>Rename Bookmark</guimenuitem>"
 msgstr "<guimenu>ឧបករណ៍</guimenu> <guimenuitem>ឧបករណ៍​រុករក</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2051
+#: index.docbook:2074
 #, no-c-format
 msgid "<action>Rename a bookmark for the current position</action>."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:2058
+#: index.docbook:2081
 #, fuzzy, no-c-format
 #| msgid "<guimenu>Tools</guimenu> <guimenuitem>Browse Tool</guimenuitem>"
 msgid ""
@@ -3238,7 +3288,7 @@ msgid ""
 msgstr "<guimenu>ឧបករណ៍</guimenu> <guimenuitem>ឧបករណ៍​រុករក</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2064
+#: index.docbook:2087
 #, no-c-format
 msgid ""
 "<action>Go to the previous bookmark</action>, or do nothing if there are no "
@@ -3246,14 +3296,14 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:2070
+#: index.docbook:2093
 #, fuzzy, no-c-format
 #| msgid "<guimenu>Tools</guimenu> <guimenuitem>Select Tool</guimenuitem>"
 msgid "<guimenu>Bookmarks</guimenu> <guimenuitem>Next Bookmark</guimenuitem>"
 msgstr "<guimenu>ឧបករណ៍</guimenu> <guimenuitem>ឧបករណ៍​ជ្រើស</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2076
+#: index.docbook:2099
 #, no-c-format
 msgid ""
 "<action>Go to the next bookmark</action>, or do nothing if there are no "
@@ -3261,14 +3311,14 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:2082
+#: index.docbook:2105
 #, fuzzy, no-c-format
 #| msgid "<guimenu>Tools</guimenu> <guimenuitem>Select Tool</guimenuitem>"
 msgid "<guimenu>Bookmarks</guimenu> <guimenuitem>No Bookmarks</guimenuitem>"
 msgstr "<guimenu>ឧបករណ៍</guimenu> <guimenuitem>ឧបករណ៍​ជ្រើស</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2088
+#: index.docbook:2111
 #, no-c-format
 msgid ""
 "This is an always disabled action that appears in this menu only if the "
@@ -3278,14 +3328,14 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2097
+#: index.docbook:2120
 #, fuzzy, no-c-format
 #| msgid "The Menubar"
 msgid "The Tools Menu"
 msgstr "របារ​ម៉ឺនុយ"
 
 #. Tag: menuchoice
-#: index.docbook:2101
+#: index.docbook:2124
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>G</keycap></keycombo></"
@@ -3299,7 +3349,7 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2108
+#: index.docbook:2131
 #, fuzzy, no-c-format
 #| msgid ""
 #| "The mouse will have its normal behaviour, &LMB; for dragging the document "
@@ -3312,7 +3362,7 @@ msgstr ""
 "សម្រាប់​បន្ថែម​ចំណាំ និង​សម​ទៅ​និង​ទទឹង ។"
 
 #. Tag: menuchoice
-#: index.docbook:2113
+#: index.docbook:2136
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>+</keycap></keycombo></"
@@ -3325,7 +3375,7 @@ msgstr ""
 "shortcut> <guimenu>មើល</guimenu> <guimenuitem>ពង្រីក</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2120
+#: index.docbook:2143
 #, no-c-format
 msgid ""
 "The mouse will work as a zoom tool. Clicking &LMB; and dragging will zoom "
@@ -3336,7 +3386,7 @@ msgstr ""
 "ជ្រើស ដោយ​ចុច​ប៊ូតុង​កណ្ដុរ​នឹង​នាំ​ឯកសារ​ថយ​ក្រោយ​ទៅ​ការ​ពង្រីក​មុន ។"
 
 #. Tag: menuchoice
-#: index.docbook:2125
+#: index.docbook:2148
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>G</keycap></keycombo></"
@@ -3350,7 +3400,7 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2132
+#: index.docbook:2155
 #, fuzzy, no-c-format
 #| msgid ""
 #| "The mouse will work as a select tool. In that mode clicking &LMB; and "
@@ -3369,7 +3419,7 @@ msgstr ""
 "ទៅ​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:2137
+#: index.docbook:2160
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>G</keycap></keycombo></"
@@ -3383,7 +3433,7 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2144
+#: index.docbook:2167
 #, fuzzy, no-c-format
 #| msgid ""
 #| "The mouse will work as a select tool. In that mode clicking &LMB; and "
@@ -3401,7 +3451,7 @@ msgstr ""
 "ទៅ​ឯកសារ ។"
 
 #. Tag: menuchoice
-#: index.docbook:2151
+#: index.docbook:2174
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>G</keycap></keycombo></"
@@ -3415,7 +3465,7 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2158
+#: index.docbook:2181
 #, no-c-format
 msgid ""
 "Draw a rectangle around the text for the table, then use the click with the "
@@ -3424,7 +3474,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:2164
+#: index.docbook:2187
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>G</keycap></keycombo></"
@@ -3438,7 +3488,7 @@ msgstr ""
 "guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2171
+#: index.docbook:2194
 #, no-c-format
 msgid ""
 "Activates the magnifier mode for the mouse pointer. Press and hold the &LMB; "
@@ -3448,7 +3498,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:2176
+#: index.docbook:2199
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl; <keycap>Q</keycap></"
@@ -3462,7 +3512,7 @@ msgstr ""
 "keycombo></shortcut> <guimenu>ឯកសារ</guimenu> <guimenuitem>ចេញ</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2183
+#: index.docbook:2206
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<action>Activates</action> the Presentation Mode. For more information, "
@@ -3478,7 +3528,30 @@ msgstr ""
 "linkend=\"presentationMode\">របៀប​បង្ហាញ</link> ។"
 
 #. Tag: menuchoice
-#: index.docbook:2190
+#: index.docbook:2213
+#, fuzzy, no-c-format
+#| msgid "<guimenu>Tools</guimenu> <guimenuitem>Zoom Tool</guimenuitem>"
+msgid "<guimenu>Tools</guimenu> <guimenuitem>Digitally Sign...</guimenuitem>"
+msgstr "<guimenu>ឧបករណ៍</guimenu> <guimenuitem>ឧបករណ៍​ពង្រីក</guimenuitem>"
+
+#. Tag: para
+#: index.docbook:2219
+#, fuzzy, no-c-format
+#| msgid ""
+#| "<action>Activates</action> the Presentation Mode. For more information, "
+#| "see the section about <link linkend=\"presentationMode\">Presentation "
+#| "Mode</link>."
+msgid ""
+"<action>Starts the digital signature creation workflow</action>. Addition of "
+"digital signatures is only supported for PDF files at this point. For more "
+"information, please see the section about <link linkend="
+"\"adding_digital_signatures\">Adding Digital Signatures</link>."
+msgstr ""
+"<action>ធ្វើ​ឲ្យ​សកម្ម</action> របៀប​បង្ហាញ ។ សម្រាប់​ព័ត៌មាន​បន្ថែម សូម​មើល​ផ្នែក​អំពី <link "
+"linkend=\"presentationMode\">របៀប​បង្ហាញ</link> ។"
+
+#. Tag: menuchoice
+#: index.docbook:2224
 #, fuzzy, no-c-format
 #| msgid "<guimenu>File</guimenu> <guimenuitem>Open Recent</guimenuitem>"
 msgid ""
@@ -3486,21 +3559,21 @@ msgid ""
 msgstr "<guimenu>ឯកសារ</guimenu> <guimenuitem>បើក​ថ្មីៗ</guimenuitem>"
 
 #. Tag: menuchoice
-#: index.docbook:2196
+#: index.docbook:2230
 #, fuzzy, no-c-format
 #| msgid "<guimenu>View</guimenu> <guimenuitem>Fit to Page</guimenuitem>"
 msgid "<guimenu>Tools</guimenu> <guimenuitem>Speak Current Page</guimenuitem>"
 msgstr "<guimenu>មើល</guimenu> <guimenuitem>សម​ទៅ​ទំព័រ</guimenuitem>"
 
 #. Tag: menuchoice
-#: index.docbook:2202
+#: index.docbook:2236
 #, fuzzy, no-c-format
 #| msgid "<guimenu>Tools</guimenu> <guimenuitem>Zoom Tool</guimenuitem>"
 msgid "<guimenu>Tools</guimenu> <guimenuitem>Stop Speaking</guimenuitem>"
 msgstr "<guimenu>ឧបករណ៍</guimenu> <guimenuitem>ឧបករណ៍​ពង្រីក</guimenuitem>"
 
 #. Tag: menuchoice
-#: index.docbook:2208
+#: index.docbook:2242
 #, fuzzy, no-c-format
 #| msgid "<guimenu>Tools</guimenu> <guimenuitem>Zoom Tool</guimenuitem>"
 msgid ""
@@ -3508,7 +3581,7 @@ msgid ""
 msgstr "<guimenu>ឧបករណ៍</guimenu> <guimenuitem>ឧបករណ៍​ពង្រីក</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2214
+#: index.docbook:2248
 #, no-c-format
 msgid ""
 "These items allow you to speak the whole document or just the current page "
@@ -3520,7 +3593,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2217
+#: index.docbook:2251
 #, no-c-format
 msgid ""
 "The <guilabel>Speak ...</guilabel> actions are enabled only if a speech "
@@ -3528,14 +3601,14 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2224
+#: index.docbook:2258
 #, fuzzy, no-c-format
 #| msgid "The <guimenu>Settings</guimenu> Menu"
 msgid "The Settings and Help Menu"
 msgstr "ម៉ឺនុយ <guimenu>ការ​កំណត់</guimenu>"
 
 #. Tag: para
-#: index.docbook:2225
+#: index.docbook:2259
 #, no-c-format
 msgid ""
 "Apart from the common &kde; <guimenu>Settings</guimenu> and <guimenu>Help</"
@@ -3545,7 +3618,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:2231
+#: index.docbook:2265
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<shortcut><keycombo action=\"simul\">&Ctrl;<keycap>L</keycap></keycombo></"
@@ -3560,13 +3633,13 @@ msgstr ""
 "រុករក</guimenuitem>"
 
 #. Tag: action
-#: index.docbook:2238
+#: index.docbook:2272
 #, no-c-format
 msgid "Shows or hides the Sidebar."
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:2243
+#: index.docbook:2277
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<guimenu>Settings</guimenu> <guimenuitem>Show/Hide Toolbar</guimenuitem>"
@@ -3575,7 +3648,7 @@ msgstr ""
 "<guimenu>ការ​កំណត់</guimenu> <guimenuitem>បង្ហាញ/លាក់​របារ​ឧបករណ៍</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2249
+#: index.docbook:2283
 #, no-c-format
 msgid ""
 "<action>Toggle the page bar</action> at the bottom of document area on and "
@@ -3584,7 +3657,7 @@ msgid ""
 msgstr ""
 
 #. Tag: menuchoice
-#: index.docbook:2254
+#: index.docbook:2288
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<guimenu>Settings</guimenu> <guimenuitem>Configure &kpdf;...</guimenuitem>"
@@ -3594,7 +3667,7 @@ msgstr ""
 "<guimenu>ការ​កំណត់</guimenu> <guimenuitem>កំណត់​រចនា​សម្ព័ន្ធ Kpdf...</guimenuitem>"
 
 #. Tag: para
-#: index.docbook:2260
+#: index.docbook:2294
 #, fuzzy, no-c-format
 #| msgid "Opens the <link linkend=\"configure\">Configure</link> window."
 msgid ""
@@ -3603,14 +3676,14 @@ msgid ""
 msgstr "បើក <link linkend=\"configure\">កំណត់​រចនា​សម្ព័ន្ធ</link> បង្អួច ។"
 
 #. Tag: title
-#: index.docbook:2269
+#: index.docbook:2303
 #, fuzzy, no-c-format
 #| msgid "Configuring &kpdf;"
 msgid "Configuring &okular; Backends"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ Kpdf"
 
 #. Tag: para
-#: index.docbook:2270
+#: index.docbook:2304
 #, fuzzy, no-c-format
 #| msgid ""
 #| "You can configure &kpdf; by choosing <menuchoice><guimenu>Settings</"
@@ -3628,21 +3701,21 @@ msgstr ""
 "រចនា​សម្ព័ន្ធ​ត្រូវ​បាន​បំបែក​ជា​បួន​ផ្នែក ។ ជំពូក​នេះ​ពណ៌នា​ជម្រើស​ដែល​មាន​ជា​លម្អិត ។"
 
 #. Tag: screeninfo
-#: index.docbook:2278
+#: index.docbook:2312
 #, fuzzy, no-c-format
 #| msgid "<screeninfo>The configuration dialogue</screeninfo>"
 msgid "<screeninfo>The backends configuration dialog</screeninfo>"
 msgstr "<screeninfo>ប្រអប់​កំណត់​រចនា​សម្ព័ន្ធ</screeninfo>"
 
 #. Tag: phrase
-#: index.docbook:2284
+#: index.docbook:2318
 #, fuzzy, no-c-format
 #| msgid "<phrase>The configuration dialogue</phrase>"
 msgid "<phrase>The backends configuration dialog</phrase>"
 msgstr "<phrase>ប្រអប់​ការ​កំណត់​រចនា​សម្ព័ន្ធ</phrase>"
 
 #. Tag: para
-#: index.docbook:2288
+#: index.docbook:2322
 #, no-c-format
 msgid ""
 "Using backend configuration pages for EPub, FictionBook, Mobipocket, "
@@ -3654,7 +3727,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2291
+#: index.docbook:2325
 #, no-c-format
 msgid ""
 "The description of Markdown, &PostScript; and &PDF; backends configuration "
@@ -3662,13 +3735,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2295
+#: index.docbook:2329
 #, no-c-format
 msgid "Markdown backend configuration"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2296
+#: index.docbook:2330
 #, no-c-format
 msgid ""
 "You can configure &okular; Markdown rendering backend based on <ulink url="
@@ -3678,13 +3751,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2303
+#: index.docbook:2337
 #, no-c-format
 msgid "Enable SmartyPants formatting"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2306
+#: index.docbook:2340
 #, no-c-format
 msgid ""
 "When checked this option allows &okular; to process <ulink url=\"https://"
@@ -3695,13 +3768,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2314
+#: index.docbook:2348
 #, no-c-format
 msgid "&PostScript; backend configuration"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2315
+#: index.docbook:2349
 #, no-c-format
 msgid ""
 "You can configure &okular; &PostScript; rendering backend based on <ulink "
@@ -3711,13 +3784,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2322
+#: index.docbook:2356
 #, no-c-format
 msgid "Use platform fonts"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2325
+#: index.docbook:2359
 #, no-c-format
 msgid ""
 "This option determines whether Ghostscript should be allowed to use platform "
@@ -3726,13 +3799,13 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2333
+#: index.docbook:2367
 #, no-c-format
 msgid "&PDF; backend configuration"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2334
+#: index.docbook:2368
 #, no-c-format
 msgid ""
 "You can configure &okular; &PDF; rendering backend based on <ulink url="
@@ -3742,13 +3815,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2341
+#: index.docbook:2375
 #, no-c-format
 msgid "Enhance thin lines"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2344
+#: index.docbook:2378
 #, no-c-format
 msgid ""
 "Drawing lines in &okular; is implemented in two steps: generation of the "
@@ -3763,7 +3836,7 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2375
+#: index.docbook:2409
 #, no-c-format
 msgid ""
 "Thin line (red), its clipping path (dashed line) and pixel boundaries (black "
@@ -3771,19 +3844,19 @@ msgid ""
 msgstr ""
 
 #. Tag: entry
-#: index.docbook:2376
+#: index.docbook:2410
 #, no-c-format
 msgid "Thin line shown at a low contrast"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2381
+#: index.docbook:2415
 #, no-c-format
 msgid "To enhance the look of the thin lines &okular; implements two options."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2384
+#: index.docbook:2418
 #, no-c-format
 msgid ""
 "The first option is <guimenuitem>Solid</guimenuitem>. With this option "
@@ -3796,21 +3869,21 @@ msgid ""
 msgstr ""
 
 #. Tag: phrase
-#: index.docbook:2395
+#: index.docbook:2429
 #, no-c-format
 msgid ""
 "<phrase>Thin line with <guimenuitem>Solid</guimenuitem> enhancement</phrase>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2398
+#: index.docbook:2432
 #, no-c-format
 msgid ""
 "<para>Thin line with <guimenuitem>Solid</guimenuitem> enhancement</para>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2403
+#: index.docbook:2437
 #, no-c-format
 msgid ""
 "The second option is <guimenuitem>Shape</guimenuitem>. With this option the "
@@ -3819,21 +3892,21 @@ msgid ""
 msgstr ""
 
 #. Tag: phrase
-#: index.docbook:2413
+#: index.docbook:2447
 #, no-c-format
 msgid ""
 "<phrase>Thin line with <guimenuitem>Shape</guimenuitem> enhancement</phrase>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2416
+#: index.docbook:2450
 #, no-c-format
 msgid ""
 "<para>Thin line with <guimenuitem>Shape</guimenuitem> enhancement</para>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2421
+#: index.docbook:2455
 #, no-c-format
 msgid ""
 "The thin lines are not enhanced by default (option <guimenuitem>No</"
@@ -3841,20 +3914,42 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2431
+#: index.docbook:2464
+#, no-c-format
+msgid "&PDF; Digital Signature Certificates"
+msgstr ""
+
+#. Tag: para
+#: index.docbook:2466
+#, no-c-format
+msgid ""
+"This section allows you to set a custom Certificate Database to use when "
+"adding Digital Signatures to &PDF; files."
+msgstr ""
+
+#. Tag: para
+#: index.docbook:2469
+#, no-c-format
+msgid ""
+"It also lists the certificates available in the current Certificate Database "
+"(if any)."
+msgstr ""
+
+#. Tag: title
+#: index.docbook:2475
 #, fuzzy, no-c-format
 #| msgid "Configuring &kpdf;"
 msgid "<title>Configuring &okular;</title>"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ Kpdf"
 
 #. Tag: title
-#: index.docbook:2433
+#: index.docbook:2477
 #, no-c-format
 msgid "General configuration"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2434
+#: index.docbook:2478
 #, fuzzy, no-c-format
 #| msgid ""
 #| "You can configure &kpdf; by choosing <menuchoice><guimenu>Settings</"
@@ -3872,63 +3967,63 @@ msgstr ""
 "រចនា​សម្ព័ន្ធ​ត្រូវ​បាន​បំបែក​ជា​បួន​ផ្នែក ។ ជំពូក​នេះ​ពណ៌នា​ជម្រើស​ដែល​មាន​ជា​លម្អិត ។"
 
 #. Tag: link
-#: index.docbook:2442
+#: index.docbook:2486
 #, fuzzy, no-c-format
 #| msgid "Opens the <link linkend=\"configure\">Configure</link> window."
 msgid "<link linkend=\"configgeneral\">General</link>"
 msgstr "បើក <link linkend=\"configure\">កំណត់​រចនា​សម្ព័ន្ធ</link> បង្អួច ។"
 
 #. Tag: link
-#: index.docbook:2445
+#: index.docbook:2489
 #, fuzzy, no-c-format
 #| msgid "<link>Accessibility</link>"
 msgid "<link linkend=\"configaccessibility\">Accessibility</link>"
 msgstr "<link>មធ្យោបាយ​ងាយស្រួល</link>"
 
 #. Tag: link
-#: index.docbook:2448
+#: index.docbook:2492
 #, fuzzy, no-c-format
 #| msgid "<link>Performance</link>"
 msgid "<link linkend=\"configperformance\">Performance</link>"
 msgstr "<link>ដំណើរ​ការ</link>"
 
 #. Tag: link
-#: index.docbook:2451
+#: index.docbook:2495
 #, fuzzy, no-c-format
 #| msgid "Opens the <link linkend=\"configure\">Configure</link> window."
 msgid "<link linkend=\"configpresentation\">Presentation</link>"
 msgstr "បើក <link linkend=\"configure\">កំណត់​រចនា​សម្ព័ន្ធ</link> បង្អួច ។"
 
 #. Tag: link
-#: index.docbook:2454
+#: index.docbook:2498
 #, fuzzy, no-c-format
 #| msgid "Opens the <link linkend=\"configure\">Configure</link> window."
 msgid "<link linkend=\"configannotations\">Annotations</link>"
 msgstr "បើក <link linkend=\"configure\">កំណត់​រចនា​សម្ព័ន្ធ</link> បង្អួច ។"
 
 #. Tag: link
-#: index.docbook:2457
+#: index.docbook:2501
 #, fuzzy, no-c-format
 #| msgid "Opens the <link linkend=\"configure\">Configure</link> window."
 msgid "<link linkend=\"configeditor\">Editor</link>"
 msgstr "បើក <link linkend=\"configure\">កំណត់​រចនា​សម្ព័ន្ធ</link> បង្អួច ។"
 
 #. Tag: screeninfo
-#: index.docbook:2461
+#: index.docbook:2505
 #, fuzzy, no-c-format
 #| msgid "<screeninfo>The configuration dialogue</screeninfo>"
 msgid "<screeninfo>The configuration dialog</screeninfo>"
 msgstr "<screeninfo>ប្រអប់​កំណត់​រចនា​សម្ព័ន្ធ</screeninfo>"
 
 #. Tag: phrase
-#: index.docbook:2467
+#: index.docbook:2511
 #, fuzzy, no-c-format
 #| msgid "<phrase>The configuration dialogue</phrase>"
 msgid "<phrase>The configuration dialog</phrase>"
 msgstr "<phrase>ប្រអប់​ការ​កំណត់​រចនា​សម្ព័ន្ធ</phrase>"
 
 #. Tag: para
-#: index.docbook:2471
+#: index.docbook:2515
 #, fuzzy, no-c-format
 #| msgid ""
 #| "You can configure &kpdf; by choosing <menuchoice><guimenu>Settings</"
@@ -3947,19 +4042,19 @@ msgstr ""
 "រចនា​សម្ព័ន្ធ​ត្រូវ​បាន​បំបែក​ជា​បួន​ផ្នែក ។ ជំពូក​នេះ​ពណ៌នា​ជម្រើស​ដែល​មាន​ជា​លម្អិត ។"
 
 #. Tag: title
-#: index.docbook:2479
+#: index.docbook:2523
 #, no-c-format
 msgid "<title>General</title>"
 msgstr "<title>ទូទៅ</title>"
 
 #. Tag: guilabel
-#: index.docbook:2482
+#: index.docbook:2526
 #, no-c-format
 msgid "Use smooth scrolling"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2484
+#: index.docbook:2528
 #, no-c-format
 msgid ""
 "Whether to display animated transitions when scrolling using the mouse wheel "
@@ -3967,39 +4062,39 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2488
+#: index.docbook:2532
 #, no-c-format
 msgid "Show scrollbars"
 msgstr "បង្ហាញ​របារ​រមូរ"
 
 #. Tag: para
-#: index.docbook:2490
+#: index.docbook:2534
 #, no-c-format
 msgid "Whether to show scrollbars for the document view."
 msgstr "ថា​តើ​ត្រូវ​បង្ហាញ​របារ​រមូរ​សម្រាប់​ទិដ្ឋភាព​ឯកសារ ។"
 
 #. Tag: guilabel
-#: index.docbook:2494
+#: index.docbook:2538
 #, fuzzy, no-c-format
 #| msgid "Link thumbnails list with the page"
 msgid "Link the thumbnails with the page"
 msgstr "តភ្ជាប់​រូបភាព​តូច​ជាមួយ​ទំព័រ"
 
 #. Tag: para
-#: index.docbook:2496
+#: index.docbook:2540
 #, no-c-format
 msgid ""
 "Whether the thumbnails view should always display the current page or not."
 msgstr "ថា​តើ​ទិដ្ឋភាព​រូបភាព​តូច​គួរ​តែ​បង្ហាញ​ទំព័រ​បច្ចុប្បន្ន ឬ​អត់ ។"
 
 #. Tag: guilabel
-#: index.docbook:2501
+#: index.docbook:2545
 #, no-c-format
 msgid "Show hints and info messages"
 msgstr "បង្ហាញ​ព័ត៌មាន​ជំនួយ និង​សារ​ព័ត៌មាន"
 
 #. Tag: para
-#: index.docbook:2503
+#: index.docbook:2547
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Whether to show some informative messages on startup, file load, etc."
@@ -4007,13 +4102,13 @@ msgid "Whether to show some informative messages on startup, file load, &etc;"
 msgstr "ថា​តើ​ត្រូវ​បង្ហាញ​សារ​ព័ត៌មាន​ពេល​ចាប់ផ្ដើម ផ្ទុក​ឯកសារ ។ល។"
 
 #. Tag: guilabel
-#: index.docbook:2508
+#: index.docbook:2552
 #, no-c-format
 msgid "Display document title in titlebar if available"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2510
+#: index.docbook:2554
 #, no-c-format
 msgid ""
 "Whether to show the current document title in the titlebar of &okular; "
@@ -4022,13 +4117,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2516
+#: index.docbook:2560
 #, no-c-format
 msgid "When not displaying document title"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2518
+#: index.docbook:2562
 #, no-c-format
 msgid ""
 "You can choose any of two options, <guilabel>Display file name only</"
@@ -4036,14 +4131,14 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2523
+#: index.docbook:2567
 #, fuzzy, no-c-format
 #| msgid "Background color"
 msgid "Use custom background color"
 msgstr "ពណ៌​ផ្ទៃ​ខាងក្រោយ"
 
 #. Tag: para
-#: index.docbook:2525
+#: index.docbook:2569
 #, no-c-format
 msgid ""
 "Enables <ulink url=\"help:/fundamentals/colors.html\">choosing the document "
@@ -4052,20 +4147,20 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2530
+#: index.docbook:2574
 #, no-c-format
 msgid "Open new files in tabs"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2532
+#: index.docbook:2576
 #, no-c-format
 msgid ""
 "Whether to open new documents in tabs. The tabs are disabled by default."
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2533
+#: index.docbook:2577
 #, no-c-format
 msgid ""
 "The default shortcuts to switch between tabs are <keycombo>&Ctrl;<keycap>.</"
@@ -4074,13 +4169,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2539
+#: index.docbook:2583
 #, no-c-format
 msgid "Switch to existing tab if file is already open"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2541
+#: index.docbook:2585
 #, no-c-format
 msgid ""
 "Whether &okular; should switch to a tab if the file is already open instead "
@@ -4089,13 +4184,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2545
+#: index.docbook:2589
 #, no-c-format
 msgid "Obey DRM limitations"
 msgstr "គោរព​ការ​កំណត់ DRM"
 
 #. Tag: para
-#: index.docbook:2547
+#: index.docbook:2591
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Whether &kpdf; should obey <firstterm>DRM</firstterm> (Digital Rights "
@@ -4116,13 +4211,13 @@ msgstr ""
 "Kpdf ជម្រើស​នេះ​មិន​មាន​ទេ ។"
 
 #. Tag: guilabel
-#: index.docbook:2555
+#: index.docbook:2599
 #, no-c-format
 msgid "Reload document on file change"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2557
+#: index.docbook:2601
 #, no-c-format
 msgid ""
 "Whether opened files should be automatically checked for changes and "
@@ -4132,13 +4227,13 @@ msgstr ""
 "បាច់ ។"
 
 #. Tag: guilabel
-#: index.docbook:2562
+#: index.docbook:2606
 #, no-c-format
 msgid "Show backend selection dialog"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2564
+#: index.docbook:2608
 #, no-c-format
 msgid ""
 "Whether &okular; should ask the user which backend to use in case of more "
@@ -4147,13 +4242,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2570
+#: index.docbook:2614
 #, no-c-format
 msgid "Right to left reading direction"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2572
+#: index.docbook:2616
 #, no-c-format
 msgid ""
 "Whether to use right to left reading direction by default for the opened "
@@ -4162,27 +4257,27 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2578
+#: index.docbook:2622
 #, fuzzy, no-c-format
 #| msgid "Overview"
 msgid "Overview columns"
 msgstr "ទិដ្ឋភាព​ទូទៅ"
 
 #. Tag: para
-#: index.docbook:2580
+#: index.docbook:2624
 #, no-c-format
 msgid ""
 "This option represents the number of columns to use in the overview mode."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2586
+#: index.docbook:2630
 #, no-c-format
 msgid "Page Up/Down overlap"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2588
+#: index.docbook:2632
 #, no-c-format
 msgid ""
 "Here you can define the percentage of the current viewing area that should "
@@ -4190,14 +4285,14 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2594
+#: index.docbook:2638
 #, fuzzy, no-c-format
 #| msgid "Default transition"
 msgid "Default Zoom"
 msgstr "ដំណើរ​ផ្លាស់ប្ដូរ​លំនាំ​ដើម"
 
 #. Tag: para
-#: index.docbook:2596
+#: index.docbook:2640
 #, no-c-format
 msgid ""
 "This options specifies the default zoom mode for file which were never "
@@ -4206,45 +4301,45 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2606
+#: index.docbook:2650
 #, no-c-format
 msgid "<title>Accessibility</title>"
 msgstr "<title>មធ្យោបាយ​ងាយ​ស្រួល</title>"
 
 #. Tag: guilabel
-#: index.docbook:2609
+#: index.docbook:2653
 #, no-c-format
 msgid "Draw border around links"
 msgstr "គូស​ស៊ុម​ជុំវិញ​តំណ"
 
 #. Tag: para
-#: index.docbook:2611
+#: index.docbook:2655
 #, no-c-format
 msgid "Whether to draw a border around links."
 msgstr "ថា​តើ​ត្រូវ​គូស​ស៊ុម​ជុំវិញ​តំណ ។"
 
 #. Tag: guilabel
-#: index.docbook:2615
+#: index.docbook:2659
 #, fuzzy, no-c-format
 #| msgid "Change colors"
 msgid "Change colors"
 msgstr "ផ្លាស់ប្ដូរ​ពណ៌"
 
 #. Tag: para
-#: index.docbook:2617
+#: index.docbook:2661
 #, no-c-format
 msgid "<action>Enables</action> the color changing options."
 msgstr "<action>អនុញ្ញាត</action> ជម្រើស​ដែល​ផ្លាស់ប្ដូរ​ពណ៌ ។"
 
 #. Tag: guilabel
-#: index.docbook:2621
+#: index.docbook:2665
 #, fuzzy, no-c-format
 #| msgid "Invert colors"
 msgid "Invert Colors"
 msgstr "បញ្ច្រាស​ពណ៌"
 
 #. Tag: para
-#: index.docbook:2623
+#: index.docbook:2667
 #, no-c-format
 msgid ""
 "<action>Inverts</action> colors on the view, &ie; black objects will be "
@@ -4252,28 +4347,28 @@ msgid ""
 msgstr "<action>បញ្ច្រាស</action> ពណ៌​នៅ​លើ​ទិដ្ឋភាព ឧ. វត្ថុ​ពណ៌​ខ្មៅ​​នឹង​បង្ហាញ​ជា​ពណ៌​ស ។"
 
 #. Tag: guilabel
-#: index.docbook:2627
+#: index.docbook:2671
 #, fuzzy, no-c-format
 #| msgid "Change paper color"
 msgid "Change Paper Color"
 msgstr "ផ្លាស់ប្ដូរ​ពណ៌​ក្រដាស"
 
 #. Tag: para
-#: index.docbook:2629
+#: index.docbook:2673
 #, no-c-format
 msgid ""
 "<action>Changes</action> the paper's color, &ie; the document's background."
 msgstr "<action>ផ្លាស់ប្ដូរ</action> ពណ៌​របស់​ក្រដាស ឧ.​ពណ៌​ផ្ទៃ​ខាងក្រោយ​របស់​ឯកសារ ។"
 
 #. Tag: guilabel
-#: index.docbook:2633
+#: index.docbook:2677
 #, fuzzy, no-c-format
 #| msgid "Change dark and light colors"
 msgid "Change Dark &amp; Light Colors"
 msgstr "ផ្លាស់ប្ដូរ​ពណ៌ ស្រអាប់ និង​ថ្លា"
 
 #. Tag: para
-#: index.docbook:2635
+#: index.docbook:2679
 #, no-c-format
 msgid ""
 "<action>Changes</action> the dark and light color to your preference, that "
@@ -4285,14 +4380,14 @@ msgstr ""
 "ស្រាល​ដែល​បាន​ជ្រើស ។"
 
 #. Tag: guilabel
-#: index.docbook:2641
+#: index.docbook:2685
 #, fuzzy, no-c-format
 #| msgid "Convert to black and white"
 msgid "Convert to Black &amp; White"
 msgstr "បម្លែង​ទៅ​ខ្មៅ និង​ស"
 
 #. Tag: para
-#: index.docbook:2643
+#: index.docbook:2687
 #, fuzzy, no-c-format
 #| msgid ""
 #| "<action>Converts</action> the document to black and white. You can set "
@@ -4307,13 +4402,13 @@ msgstr ""
 "កម្រិត​ពន្លឺ​ទៅ​តម្លៃ​ខ្ពស់​ជាង​នឹង​ឲ្យ​លទ្ធផល​ជា​ពណ៌​ប្រផេះ​ងងឹត​ដែល​ប្រើ ។"
 
 #. Tag: guilabel
-#: index.docbook:2649
+#: index.docbook:2693
 #, no-c-format
 msgid "Invert Lightness"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2651
+#: index.docbook:2695
 #, no-c-format
 msgid ""
 "<action>Inverts</action> lightness of all colors. Light and dark colors will "
@@ -4323,13 +4418,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2657
+#: index.docbook:2701
 #, no-c-format
 msgid "Invert Luma (sRGB Linear)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2659
+#: index.docbook:2703
 #, no-c-format
 msgid ""
 "<action>Inverts</action> luma of all colors. Light and dark will be swapped, "
@@ -4340,13 +4435,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2667
+#: index.docbook:2711
 #, no-c-format
 msgid "Invert Luma (Symmetric)"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2669
+#: index.docbook:2713
 #, no-c-format
 msgid ""
 "<action>Inverts</action> luma of all colors, using symmetric luma "
@@ -4356,13 +4451,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2676
+#: index.docbook:2720
 #, no-c-format
 msgid "Shift Hue Positive"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2678
+#: index.docbook:2722
 #, no-c-format
 msgid ""
 "<action>Shifts</action> hue of all colors by 120 degrees. Can mitigate some "
@@ -4370,13 +4465,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2683
+#: index.docbook:2727
 #, no-c-format
 msgid "Shift Hue Negative"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2685
+#: index.docbook:2729
 #, no-c-format
 msgid ""
 "<action>Shifts</action> hue of all colors by 240 degrees. Can mitigate some "
@@ -4384,13 +4479,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2690
+#: index.docbook:2734
 #, no-c-format
 msgid "Engine"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2692
+#: index.docbook:2736
 #, no-c-format
 msgid ""
 "<action>Allows you to choose</action> the text-to-speech (<abbrev>TTS</"
@@ -4401,19 +4496,19 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2701
+#: index.docbook:2745
 #, no-c-format
 msgid "<title>Performance</title>"
 msgstr "<title>ដំណើរ​ការ</title>"
 
 #. Tag: guilabel
-#: index.docbook:2704
+#: index.docbook:2748
 #, no-c-format
 msgid "Enable transparency effects"
 msgstr "អនុញ្ញាត​បែបផែន​ថ្លា"
 
 #. Tag: para
-#: index.docbook:2706
+#: index.docbook:2750
 #, no-c-format
 msgid ""
 "Draw selections and other special graphics using transparency effects. "
@@ -4424,14 +4519,14 @@ msgstr ""
 "ការ​បំពេញ​ខាងក្រៅ ឬ​ស្រអាប់ និង​បង្កើត​ល្បឿន​លើ​ការ​ជ្រើស ។"
 
 #. Tag: guilabel
-#: index.docbook:2712
+#: index.docbook:2756
 #, fuzzy, no-c-format
 #| msgid "Memory usage profiles"
 msgid "Memory Usage"
 msgstr "ទម្រង់​ការ​ប្រើប្រាស់​សតិ"
 
 #. Tag: para
-#: index.docbook:2714
+#: index.docbook:2758
 #, fuzzy, no-c-format
 #| msgid ""
 #| "&kpdf; can achieve best performance by tuning the memory usage, based on "
@@ -4455,13 +4550,13 @@ msgstr ""
 "ទាប ឬ​អនុញ្ញាត​ឲ្យ​វា​យក​ភាគ​ច្រើន​ចេញ​ពី​ប្រព័ន្ធ​របស់​អ្នក​ដោយ​ប្រើ បង្ខំ ។"
 
 #. Tag: guilabel
-#: index.docbook:2722
+#: index.docbook:2766
 #, no-c-format
 msgid "Rendering"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2724
+#: index.docbook:2768
 #, no-c-format
 msgid ""
 "Using this group of options you can improve text and image rendering in "
@@ -4477,31 +4572,31 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2733
+#: index.docbook:2777
 #, no-c-format
 msgid "<title>Presentation</title>"
 msgstr "<title>ការ​បង្ហាញ</title>"
 
 #. Tag: guilabel
-#: index.docbook:2736
+#: index.docbook:2780
 #, no-c-format
 msgid "Advance every"
 msgstr "ទៅ​មុខ​គ្រប់"
 
 #. Tag: para
-#: index.docbook:2738
+#: index.docbook:2782
 #, no-c-format
 msgid "Enables automatic advancing of pages given a time period."
 msgstr "បើក​ការ​ទៅមុខ​នៃ​ទំព័រ​ដែល​ផ្ដល់​ឲ្យ​ពេល​វេលា​ស្វ័យ​ប្រវត្តិ ។"
 
 #. Tag: guilabel
-#: index.docbook:2742
+#: index.docbook:2786
 #, no-c-format
 msgid "Loop after last page"
 msgstr "រង្វិល​ជុំ​បន្ទាប់​ពី​ទំព័រ​ចុង​ក្រោយ"
 
 #. Tag: para
-#: index.docbook:2744
+#: index.docbook:2788
 #, no-c-format
 msgid ""
 "When navigating on presentation mode and going past the last page the first "
@@ -4509,14 +4604,14 @@ msgid ""
 msgstr "ពេល​រុករក​នៅ​របៀប​បង្ហាញ និង​ឆ្លង​កាត់​ទំព័រ​ចុង​ក្រោយ ទំព័រ​ដំបូង​នឹង​លេចឡើង ។"
 
 #. Tag: guilabel
-#: index.docbook:2748
+#: index.docbook:2792
 #, fuzzy, no-c-format
 #| msgid "Navigating"
 msgid "Touch navigation"
 msgstr "ការ​រុករក"
 
 #. Tag: para
-#: index.docbook:2750
+#: index.docbook:2794
 #, no-c-format
 msgid ""
 "Allows you to fine-tune touchscreen navigation with tapping in the "
@@ -4524,7 +4619,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2753
+#: index.docbook:2797
 #, no-c-format
 msgid ""
 "<guilabel>Tap left/right side to go back/forward</guilabel>: Tapping on the "
@@ -4533,7 +4628,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2756
+#: index.docbook:2800
 #, no-c-format
 msgid ""
 "<guilabel>Tap anywhere to go forward</guilabel> (default): Tapping on the "
@@ -4542,19 +4637,19 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2759
+#: index.docbook:2803
 #, no-c-format
 msgid "<guilabel>Disabled</guilabel>: Screen tapping does not do anything."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2765
+#: index.docbook:2809
 #, no-c-format
 msgid "Background color"
 msgstr "ពណ៌​ផ្ទៃ​ខាងក្រោយ"
 
 #. Tag: para
-#: index.docbook:2767
+#: index.docbook:2811
 #, no-c-format
 msgid ""
 "The color that will fill the part of the screen not covered by the page when "
@@ -4562,13 +4657,13 @@ msgid ""
 msgstr "ពណ៌​ដែល​នឹង​បំពេញ​ផ្នែក​នៃ​អេក្រង់​នឹង​មិន​គ្រប់​ដណ្ដប់​ដោយ​ទំព័រ ពេល​នៅ​របៀប​បង្ហាញ​ទេ ។"
 
 #. Tag: guilabel
-#: index.docbook:2771
+#: index.docbook:2815
 #, no-c-format
 msgid "Mouse cursor"
 msgstr "ទស្សន៍​ទ្រនិច​កណ្ដុរ"
 
 #. Tag: para
-#: index.docbook:2773
+#: index.docbook:2817
 #, no-c-format
 msgid ""
 "Whether the mouse should be always hidden, always shown or hidden after a "
@@ -4576,13 +4671,13 @@ msgid ""
 msgstr "ថា​តើ​កណ្ដុរ​គួរ​តែ​លាក់​ជានិច្ច បង្ហាញ ឬ​លាក់​ជានិច្ច​​បន្ទាប់​ពី​ពេល​អសកម្ម​ខ្លី​មួយ ។"
 
 #. Tag: guilabel
-#: index.docbook:2777
+#: index.docbook:2821
 #, no-c-format
 msgid "Show progress indicator"
 msgstr "បង្ហាញ​ទ្រនិច​វឌ្ឍនភាព"
 
 #. Tag: para
-#: index.docbook:2779
+#: index.docbook:2823
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Whether to show a progress circle that shows the current page and the "
@@ -4597,13 +4692,13 @@ msgstr ""
 "ការ​បង្ហាញ​គ្រប់​ពេល​ដែល​អ្នក​ផ្លាស់ប្ដូរ​ទំព័រ ។"
 
 #. Tag: guilabel
-#: index.docbook:2784
+#: index.docbook:2828
 #, no-c-format
 msgid "Show summary page"
 msgstr "បង្ហាញ​ទំព័រ​សង្ខេប"
 
 #. Tag: para
-#: index.docbook:2786
+#: index.docbook:2830
 #, no-c-format
 msgid ""
 "Whether to show a summary page at the beginning of the presentation with the "
@@ -4612,27 +4707,27 @@ msgstr ""
 "ថា​តើ​ត្រូវ​បង្ហាញ​ទំព័រ​សង្ខេប​នៅ​ពេល​ចាប់​ផ្ដើម​ការ​បង្ហាញ​ជាមួយ​​ចំណង​ជើង អ្នក​និពន្ធ និង​ចំនួន​ទំព័រ​នៃ​ឯកសារ ។"
 
 #. Tag: guilabel
-#: index.docbook:2790
+#: index.docbook:2834
 #, fuzzy, no-c-format
 #| msgid "Default transition"
 msgid "Enable transitions"
 msgstr "ដំណើរ​ផ្លាស់ប្ដូរ​លំនាំ​ដើម"
 
 #. Tag: para
-#: index.docbook:2792
+#: index.docbook:2836
 #, no-c-format
 msgid ""
 "Use this check box to enable or disable transition effects between pages."
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2796
+#: index.docbook:2840
 #, no-c-format
 msgid "Default transition"
 msgstr "ដំណើរ​ផ្លាស់ប្ដូរ​លំនាំ​ដើម"
 
 #. Tag: para
-#: index.docbook:2798
+#: index.docbook:2842
 #, fuzzy, no-c-format
 #| msgid ""
 #| "The transition effect between page and page if the document does not "
@@ -4647,13 +4742,13 @@ msgstr ""
 "ផ្លាស់ប្ដូរ​ចៃដន្យ</guilabel> ដើម្បី​ធ្វើ​ឲ្យ Kpdf ជ្រើស​បែបផែន​ដែល​មាន​មួយ​ដោយ​ចៃដន្យ ។"
 
 #. Tag: guilabel
-#: index.docbook:2803
+#: index.docbook:2847
 #, no-c-format
 msgid "Placement"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2805
+#: index.docbook:2849
 #, no-c-format
 msgid ""
 "In this section you can select the <guilabel>Screen</guilabel> used to "
@@ -4661,7 +4756,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2806
+#: index.docbook:2850
 #, no-c-format
 msgid ""
 "<guilabel>Current Screen</guilabel> is same screen of the &okular; window "
@@ -4669,7 +4764,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2807
+#: index.docbook:2851
 #, no-c-format
 msgid ""
 "<guilabel>Default Screen</guilabel> is the screen marked as default in the "
@@ -4677,7 +4772,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2808
+#: index.docbook:2852
 #, no-c-format
 msgid ""
 "<guilabel>Screen 0</guilabel>, <guilabel>Screen 1</guilabel> &etc; are the "
@@ -4685,13 +4780,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2812
+#: index.docbook:2856
 #, no-c-format
 msgid "Drawing Tool Configuration"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2814
+#: index.docbook:2858
 #, fuzzy, no-c-format
 #| msgid ""
 #| "The color that will fill the part of the screen not covered by the page "
@@ -4702,7 +4797,7 @@ msgid ""
 msgstr "ពណ៌​ដែល​នឹង​បំពេញ​ផ្នែក​នៃ​អេក្រង់​នឹង​មិន​គ្រប់​ដណ្ដប់​ដោយ​ទំព័រ ពេល​នៅ​របៀប​បង្ហាញ​ទេ ។"
 
 #. Tag: screeninfo
-#: index.docbook:2822
+#: index.docbook:2866
 #, fuzzy, no-c-format
 #| msgid "<screeninfo>The configuration dialogue</screeninfo>"
 msgid ""
@@ -4710,20 +4805,20 @@ msgid ""
 msgstr "<screeninfo>ប្រអប់​កំណត់​រចនា​សម្ព័ន្ធ</screeninfo>"
 
 #. Tag: phrase
-#: index.docbook:2828
+#: index.docbook:2872
 #, fuzzy, no-c-format
 #| msgid "<phrase>The configuration dialogue</phrase>"
 msgid "<phrase>The Annotations page of the configuration dialog</phrase>"
 msgstr "<phrase>ប្រអប់​ការ​កំណត់​រចនា​សម្ព័ន្ធ</phrase>"
 
 #. Tag: guilabel
-#: index.docbook:2834
+#: index.docbook:2878
 #, no-c-format
 msgid "Author"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2836
+#: index.docbook:2880
 #, no-c-format
 msgid ""
 "The author of the contents added on a document. Default is the name from the "
@@ -4732,14 +4827,14 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2841
+#: index.docbook:2885
 #, fuzzy, no-c-format
 #| msgid "Installation"
 msgid "Annotation tools"
 msgstr "ការ​ដំឡើង"
 
 #. Tag: para
-#: index.docbook:2843
+#: index.docbook:2887
 #, no-c-format
 msgid ""
 "This pane is used to configure your <link linkend=\"annotations-add"
@@ -4747,7 +4842,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2846
+#: index.docbook:2890
 #, no-c-format
 msgid ""
 "There are five buttons (<guibutton>Add</guibutton>, <guibutton>Edit</"
@@ -4757,7 +4852,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2849
+#: index.docbook:2893
 #, no-c-format
 msgid ""
 "If you need to add some tool button on the toolbar click on the "
@@ -4767,7 +4862,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2853
+#: index.docbook:2897
 #, no-c-format
 msgid ""
 "Please remember that annotation tools in &okular; are highly configurable. "
@@ -4777,7 +4872,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2857
+#: index.docbook:2901
 #, no-c-format
 msgid ""
 "Click on some item in the list box then click on the corresponding button at "
@@ -4788,13 +4883,13 @@ msgid ""
 msgstr ""
 
 #. Tag: term
-#: index.docbook:2863
+#: index.docbook:2907
 #, no-c-format
 msgid "Using Custom Stamps"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2866
+#: index.docbook:2910
 #, no-c-format
 msgid ""
 "Create the icon you want to use for your own stamp and save it in any "
@@ -4802,7 +4897,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2867
+#: index.docbook:2911
 #, no-c-format
 msgid ""
 "Click the <guibutton>Add</guibutton> button, select type <guilabel>Stamp</"
@@ -4810,7 +4905,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2868
+#: index.docbook:2912
 #, no-c-format
 msgid ""
 "Enter the full path to your custom icon into the dropdown box in the "
@@ -4818,20 +4913,20 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2875
+#: index.docbook:2919
 #, fuzzy, no-c-format
 #| msgid "<title>Presentation</title>"
 msgid "<title>Editor</title>"
 msgstr "<title>ការ​បង្ហាញ</title>"
 
 #. Tag: guilabel
-#: index.docbook:2878
+#: index.docbook:2922
 #, no-c-format
 msgid "<guilabel>Editor</guilabel>"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2880
+#: index.docbook:2924
 #, no-c-format
 msgid ""
 "Choose the editor you want to launch when &okular; wants to open a source "
@@ -4846,7 +4941,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2883
+#: index.docbook:2927
 #, no-c-format
 msgid ""
 "&okular; ships with preconfigured settings for the following editors: <ulink "
@@ -4860,7 +4955,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2887
+#: index.docbook:2931
 #, no-c-format
 msgid ""
 "To use inverse search in &kile;, you have to compile your &latex; file with "
@@ -4868,13 +4963,13 @@ msgid ""
 msgstr ""
 
 #. Tag: guilabel
-#: index.docbook:2894
+#: index.docbook:2938
 #, no-c-format
 msgid "Command"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2896
+#: index.docbook:2940
 #, no-c-format
 msgid ""
 "This is the command and its parameters to invoke the selected editor with "
@@ -4882,7 +4977,7 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2897
+#: index.docbook:2941
 #, no-c-format
 msgid ""
 "This field will be filled automatically if you use one of the preconfigured "
@@ -4892,31 +4987,31 @@ msgid ""
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2899
+#: index.docbook:2943
 #, no-c-format
 msgid "You can use the following placeholders:"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2902
+#: index.docbook:2946
 #, no-c-format
 msgid "%f - the file name"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2905
+#: index.docbook:2949
 #, no-c-format
 msgid "%l - the line of the file to be reached"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2908
+#: index.docbook:2952
 #, no-c-format
 msgid "%c - the column of the file to be reached"
 msgstr ""
 
 #. Tag: para
-#: index.docbook:2911
+#: index.docbook:2955
 #, no-c-format
 msgid ""
 "If %f is not specified, then the document name is appended to the specified "
@@ -4924,53 +5019,53 @@ msgid ""
 msgstr ""
 
 #. Tag: title
-#: index.docbook:2918
+#: index.docbook:2962
 #, no-c-format
 msgid "Credits and License"
 msgstr "បញ្ជី​អ្នក​ចូល​រួម និង​អជ្ញាបណ្ណ"
 
 #. Tag: title
-#: index.docbook:2921
+#: index.docbook:2965
 #, no-c-format
 msgid "Program Copyright:"
 msgstr "រក្សា​សិទ្ធិ​កម្មវិធី ៖"
 
 #. Tag: para
-#: index.docbook:2922
+#: index.docbook:2966
 #, fuzzy, no-c-format
 #| msgid "Albert Astals Cid<email>tsdgeos@yahoo.es</email> Author"
 msgid "&Albert.Astals.Cid; &Albert.Astals.Cid.mail; Current maintainer"
 msgstr "Albert Astals Cid<email>tsdgeos@yahoo.es</email> អ្នក​និពន្ធ"
 
 #. Tag: para
-#: index.docbook:2923 index.docbook:2931
+#: index.docbook:2967 index.docbook:2975
 #, fuzzy, no-c-format
 #| msgid "Laurent Montel<email>montel@kde.org</email>"
 msgid "Pino Toscano <email>pino@kde.org</email>"
 msgstr "Laurent Montel<email>montel@kde.org</email>"
 
 #. Tag: para
-#: index.docbook:2924
+#: index.docbook:2968
 #, fuzzy, no-c-format
 #| msgid "Enrico Ros<email>eros.kde@email.it</email> Refactoring for 3.4"
 msgid "Enrico Ros <email>eros.kde@email.it</email> &kpdf; developer"
 msgstr "Enrico Ros<email>eros.kde@email.it</email> ធ្វើ​ឲ្យ​ប្រសើរ​សម្រាប់ ៣.៤"
 
 #. Tag: title
-#: index.docbook:2928
+#: index.docbook:2972
 #, no-c-format
 msgid "Documentation Copyright:"
 msgstr "រក្សា​សិទ្ធិ​ឯកសារ ៖"
 
 #. Tag: para
-#: index.docbook:2929
+#: index.docbook:2973
 #, fuzzy, no-c-format
 #| msgid "Albert Astals Cid<email>tsdgeos@yahoo.es</email> Author"
 msgid "&Albert.Astals.Cid; &Albert.Astals.Cid.mail; Author"
 msgstr "Albert Astals Cid<email>tsdgeos@yahoo.es</email> អ្នក​និពន្ធ"
 
 #. Tag: para
-#: index.docbook:2930
+#: index.docbook:2974
 #, fuzzy, no-c-format
 #| msgid ""
 #| "Titus Laska<email>titus.laska@gmx.de</email> Some updates and additions"
@@ -4979,7 +5074,7 @@ msgid ""
 msgstr "Titus Laska<email>titus.laska@gmx.de</email> ភាព​ទាន់​សម័យ​ខ្លះ និង​ការ​បន្ថែម"
 
 #. Tag: trans_comment
-#: index.docbook:2933
+#: index.docbook:2977
 #, no-c-format
 msgid "CREDIT_FOR_TRANSLATORS"
 msgstr ""
@@ -4989,7 +5084,7 @@ msgstr ""
 "<email>piseth_dv@khmeros.info</email>.</para>"
 
 #. Tag: chapter
-#: index.docbook:2933
+#: index.docbook:2977
 #, no-c-format
 msgid "&underFDL; &underGPL;"
 msgstr "&underFDL; &underGPL;"
