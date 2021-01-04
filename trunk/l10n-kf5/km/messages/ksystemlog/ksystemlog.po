@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: ksystemlog\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2020-11-21 02:36+0100\n"
+"POT-Creation-Date: 2021-01-04 02:52+0100\n"
 "PO-Revision-Date: 2008-02-12 18:14+0700\n"
 "Last-Translator: Auk Piseth <piseth_dv@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -104,13 +104,13 @@ msgid "General"
 msgstr "ទូទៅ"
 
 #. i18n: ectx: property (text), widget (QPushButton, previous)
-#: src/detailDialog.cpp:43 src/lib/logViewSearchWidgetBase.ui:68
+#: src/detailDialog.cpp:42 src/lib/logViewSearchWidgetBase.ui:68
 #, fuzzy, kde-format
 msgid "&Previous"
 msgstr "មុន"
 
 #. i18n: ectx: property (text), widget (QPushButton, next)
-#: src/detailDialog.cpp:47 src/lib/logViewSearchWidgetBase.ui:58
+#: src/detailDialog.cpp:46 src/lib/logViewSearchWidgetBase.ui:58
 #, fuzzy, kde-format
 msgid "&Next"
 msgstr "បន្ទាប់"
@@ -131,10 +131,10 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (KTextEdit, message)
 #. i18n: ectx: property (title), widget (QGroupBox, groupBox_3)
-#: src/detailDialogBase.ui:28 src/loggerDialogBase.ui:33
-#: src/modes/acpid/acpidAnalyzer.h:50 src/modes/apache/apacheAnalyzer.h:53
-#: src/modes/base/syslogAnalyzer.cpp:59 src/modes/cups/cupsAnalyzer.cpp:38
-#: src/modes/cups/cupsPdfAnalyzer.h:55
+#: src/detailDialogBase.ui:28 src/lib/logViewWidget.cpp:60
+#: src/loggerDialogBase.ui:33 src/modes/acpid/acpidAnalyzer.h:50
+#: src/modes/apache/apacheAnalyzer.h:53 src/modes/base/syslogAnalyzer.cpp:59
+#: src/modes/cups/cupsAnalyzer.cpp:38 src/modes/cups/cupsPdfAnalyzer.h:55
 #: src/modes/journald/journaldAnalyzer.cpp:38
 #: src/modes/kernel/kernelAnalyzer.h:58 src/modes/samba/sambaAnalyzer.h:56
 #: src/modes/xorg/xorgAnalyzer.cpp:41 src/modes/xsession/xsessionAnalyzer.h:54
@@ -422,47 +422,47 @@ msgstr ""
 msgid "Log file '%1' has changed."
 msgstr ""
 
-#: src/lib/globals.cpp:131
+#: src/lib/globals.cpp:129
 #, fuzzy, kde-format
 msgid "None"
 msgstr "គ្មាន"
 
-#: src/lib/globals.cpp:136
+#: src/lib/globals.cpp:134
 #, fuzzy, kde-format
 msgid "Debug"
 msgstr "បំបាត់​កំហុស"
 
-#: src/lib/globals.cpp:140
+#: src/lib/globals.cpp:138
 #, fuzzy, kde-format
 msgid "Information"
 msgstr "ព័ត៌មាន"
 
-#: src/lib/globals.cpp:145
+#: src/lib/globals.cpp:143
 #, fuzzy, kde-format
 msgid "Notice"
 msgstr "ចំណាំ"
 
-#: src/lib/globals.cpp:148
+#: src/lib/globals.cpp:146
 #, fuzzy, kde-format
 msgid "Warning"
 msgstr "ព្រមាន"
 
-#: src/lib/globals.cpp:153
+#: src/lib/globals.cpp:151
 #, fuzzy, kde-format
 msgid "Error"
 msgstr "កំហុស"
 
-#: src/lib/globals.cpp:157
+#: src/lib/globals.cpp:155
 #, fuzzy, kde-format
 msgid "Critical"
 msgstr "​គ្រោះថ្នាក់"
 
-#: src/lib/globals.cpp:161
+#: src/lib/globals.cpp:159
 #, fuzzy, kde-format
 msgid "Alert"
 msgstr "ព្រមាន"
 
-#: src/lib/globals.cpp:164
+#: src/lib/globals.cpp:162
 #, kde-format
 msgid "Emergency"
 msgstr ""
@@ -557,7 +557,7 @@ msgstr ""
 msgid "URL '%1' is not valid, skipping this URL."
 msgstr ""
 
-#: src/lib/logModeItemBuilder.cpp:71 src/lib/logModeItemBuilder.cpp:88
+#: src/lib/logModeItemBuilder.cpp:72 src/lib/logModeItemBuilder.cpp:89
 #: src/modes/acpid/acpidItemBuilder.h:54
 #: src/modes/apache/apacheAccessItemBuilder.h:52
 #: src/modes/apache/apacheItemBuilder.h:52 src/modes/cron/cronItemBuilder.h:52
@@ -571,18 +571,18 @@ msgstr ""
 msgid "Date:"
 msgstr "កាល​បរិច្ឆេទ ៖"
 
-#: src/lib/logModeItemBuilder.cpp:72 src/modes/cron/cronItemBuilder.h:53
+#: src/lib/logModeItemBuilder.cpp:73 src/modes/cron/cronItemBuilder.h:53
 #: src/modes/cups/cupsAccessItemBuilder.h:54
 #, fuzzy, kde-format
 msgid "Hostname:"
 msgstr "ឈ្មោះ​ម៉ាស៊ីន ៖"
 
-#: src/lib/logModeItemBuilder.cpp:73 src/modes/cron/cronItemBuilder.h:54
+#: src/lib/logModeItemBuilder.cpp:74 src/modes/cron/cronItemBuilder.h:54
 #, kde-format
 msgid "Process:"
 msgstr ""
 
-#: src/lib/logModeItemBuilder.cpp:74 src/lib/logModeItemBuilder.cpp:89
+#: src/lib/logModeItemBuilder.cpp:75 src/lib/logModeItemBuilder.cpp:90
 #: src/modes/acpid/acpidItemBuilder.h:55
 #: src/modes/apache/apacheAccessItemBuilder.h:53
 #: src/modes/apache/apacheItemBuilder.h:53 src/modes/cron/cronItemBuilder.h:56
@@ -595,7 +595,7 @@ msgstr ""
 msgid "Level:"
 msgstr "កម្រិត ៖"
 
-#: src/lib/logModeItemBuilder.cpp:75 src/lib/logModeItemBuilder.cpp:90
+#: src/lib/logModeItemBuilder.cpp:76 src/lib/logModeItemBuilder.cpp:91
 #: src/modes/cron/cronItemBuilder.h:57 src/modes/xorg/xorgItemBuilder.h:75
 #: src/modes/xsession/xsessionItemBuilder.h:75
 #, kde-format
@@ -736,6 +736,18 @@ msgstr ""
 #, kde-format
 msgid "&Highlight all"
 msgstr ""
+
+#: src/lib/logViewWidget.cpp:59 src/modes/acpid/acpidAnalyzer.h:48
+#: src/modes/apache/apacheAccessAnalyzer.h:51
+#: src/modes/apache/apacheAnalyzer.h:51 src/modes/base/syslogAnalyzer.cpp:56
+#: src/modes/cron/cronAnalyzer.h:49 src/modes/cups/cupsAccessAnalyzer.h:53
+#: src/modes/cups/cupsAnalyzer.cpp:37 src/modes/cups/cupsPageAnalyzer.h:52
+#: src/modes/cups/cupsPdfAnalyzer.h:54
+#: src/modes/journald/journaldAnalyzer.cpp:36
+#: src/modes/kernel/kernelAnalyzer.h:56 src/modes/samba/sambaAnalyzer.h:52
+#, fuzzy, kde-format
+msgid "Date"
+msgstr "កាលបរិច្ឆេទ"
 
 #: src/lib/logViewWidget.cpp:130
 #, kde-format
@@ -1229,12 +1241,12 @@ msgstr ""
 msgid "&New Tab"
 msgstr "ផ្ទាំង​ថ្មី"
 
-#: src/mainWindow.cpp:695 src/tabLogViewsWidget.cpp:59
+#: src/mainWindow.cpp:695 src/tabLogViewsWidget.cpp:58
 #, kde-format
 msgid "Create a new tab"
 msgstr ""
 
-#: src/mainWindow.cpp:696 src/tabLogViewsWidget.cpp:60
+#: src/mainWindow.cpp:696 src/tabLogViewsWidget.cpp:59
 #, kde-format
 msgid "Creates a new tab which can display another log."
 msgstr ""
@@ -1244,12 +1256,12 @@ msgstr ""
 msgid "&Close Tab"
 msgstr "បិទ​ផ្ទាំង"
 
-#: src/mainWindow.cpp:704 src/tabLogViewsWidget.cpp:66
+#: src/mainWindow.cpp:704 src/tabLogViewsWidget.cpp:65
 #, fuzzy, kde-format
 msgid "Close the current tab"
 msgstr "បិទ​ផ្ទាំង​បច្ចុប្បន្ន"
 
-#: src/mainWindow.cpp:705 src/tabLogViewsWidget.cpp:67
+#: src/mainWindow.cpp:705 src/tabLogViewsWidget.cpp:66
 #, kde-format
 msgid "Closes the current tab."
 msgstr ""
@@ -1377,18 +1389,6 @@ msgstr "សេវា"
 #, fuzzy, kde-format
 msgid "Others"
 msgstr "ផ្សេងទៀត"
-
-#: src/modes/acpid/acpidAnalyzer.h:48
-#: src/modes/apache/apacheAccessAnalyzer.h:51
-#: src/modes/apache/apacheAnalyzer.h:51 src/modes/base/syslogAnalyzer.cpp:56
-#: src/modes/cron/cronAnalyzer.h:49 src/modes/cups/cupsAccessAnalyzer.h:53
-#: src/modes/cups/cupsAnalyzer.cpp:37 src/modes/cups/cupsPageAnalyzer.h:52
-#: src/modes/cups/cupsPdfAnalyzer.h:54
-#: src/modes/journald/journaldAnalyzer.cpp:36
-#: src/modes/kernel/kernelAnalyzer.h:56 src/modes/samba/sambaAnalyzer.h:52
-#, fuzzy, kde-format
-msgid "Date"
-msgstr "កាលបរិច្ឆេទ"
 
 #: src/modes/acpid/acpidAnalyzer.h:49 src/modes/xorg/xorgAnalyzer.cpp:40
 #, kde-format
@@ -2480,34 +2480,34 @@ msgstr ""
 msgid "Modify address"
 msgstr ""
 
-#: src/modes/journald/journaldFactory.cpp:45
+#: src/modes/journald/journaldFactory.cpp:44
 #, kde-format
 msgid "Journald"
 msgstr ""
 
-#: src/modes/journald/journaldFactory.cpp:62
+#: src/modes/journald/journaldFactory.cpp:61
 #, kde-format
 msgid "Local journal"
 msgstr ""
 
-#: src/modes/journald/journaldFactory.cpp:65
+#: src/modes/journald/journaldFactory.cpp:64
 #, fuzzy, kde-format
 msgid "All messages"
 msgstr "សារ"
 
-#: src/modes/journald/journaldFactory.cpp:76
-#: src/modes/journald/journaldFactory.cpp:137
+#: src/modes/journald/journaldFactory.cpp:75
+#: src/modes/journald/journaldFactory.cpp:136
 #, kde-format
 msgid "Filter by systemd unit"
 msgstr ""
 
-#: src/modes/journald/journaldFactory.cpp:91
-#: src/modes/journald/journaldFactory.cpp:155
+#: src/modes/journald/journaldFactory.cpp:90
+#: src/modes/journald/journaldFactory.cpp:154
 #, kde-format
 msgid "Filter by syslog identifier"
 msgstr ""
 
-#: src/modes/journald/journaldFactory.cpp:121
+#: src/modes/journald/journaldFactory.cpp:120
 #, kde-format
 msgid "Connect"
 msgstr ""
@@ -2774,27 +2774,27 @@ msgid ""
 "non-specialized processes (like \"sudo\" or \"fsck\" commands)"
 msgstr ""
 
-#: src/modes/xorg/xorgAnalyzer.cpp:87
+#: src/modes/xorg/xorgAnalyzer.cpp:85
 #, fuzzy, kde-format
 msgid "Probed"
 msgstr "ដំណើរការ"
 
-#: src/modes/xorg/xorgAnalyzer.cpp:90
+#: src/modes/xorg/xorgAnalyzer.cpp:88
 #, kde-format
 msgid "From config file"
 msgstr ""
 
-#: src/modes/xorg/xorgAnalyzer.cpp:94
+#: src/modes/xorg/xorgAnalyzer.cpp:92
 #, kde-format
 msgid "Default setting"
 msgstr ""
 
-#: src/modes/xorg/xorgAnalyzer.cpp:98
+#: src/modes/xorg/xorgAnalyzer.cpp:96
 #, kde-format
 msgid "From command Line"
 msgstr ""
 
-#: src/modes/xorg/xorgAnalyzer.cpp:107
+#: src/modes/xorg/xorgAnalyzer.cpp:105
 #, kde-format
 msgid "Not implemented"
 msgstr ""
@@ -2932,7 +2932,7 @@ msgctxt "Log mode name (added lines count)"
 msgid "%1 (%2)"
 msgstr "%1 (%2)"
 
-#: src/tabLogViewsWidget.cpp:104
+#: src/tabLogViewsWidget.cpp:103
 #, kde-format
 msgid "No Log"
 msgstr ""
