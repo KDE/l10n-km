@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-06-24 00:21+0000\n"
+"POT-Creation-Date: 2021-06-29 00:18+0000\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -333,24 +333,24 @@ msgstr "<p>មាន​កំហុស​​កើតឡើង​នៅ​ខណ
 msgid "Certification Error"
 msgstr "វិញ្ញាបនបត្រ​"
 
-#: src/commands/changeexpirycommand.cpp:256
+#: src/commands/changeexpirycommand.cpp:207
 #, kde-format
 msgid ""
 "<p>An error occurred while trying to change the expiry date for <b>%1</b>:</"
 "p><p>%2</p>"
 msgstr "<p>មាន​កំហុស​​កើតឡើង​នៅ​ខណៈ​ផ្លាស់ប្ដូរ​កាលបរិច្ឆេទ​​ផុត​កំណត់​សម្រាប់ <b>%1</b>:</p><p>%2</p>"
 
-#: src/commands/changeexpirycommand.cpp:260
+#: src/commands/changeexpirycommand.cpp:211
 #, kde-format
 msgid "Expiry Date Change Error"
 msgstr "កំហុស​ក្នុង​ការ​ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់"
 
-#: src/commands/changeexpirycommand.cpp:265
+#: src/commands/changeexpirycommand.cpp:216
 #, kde-format
 msgid "Expiry date changed successfully."
 msgstr "បាន​ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់​ដោយ​ជោគជ័យ ។"
 
-#: src/commands/changeexpirycommand.cpp:266
+#: src/commands/changeexpirycommand.cpp:217
 #, kde-format
 msgid "Expiry Date Change Succeeded"
 msgstr "បាន​ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់​ដោយ​ជោគជ័យ"
@@ -5421,67 +5421,64 @@ msgctxt "@title:window"
 msgid "Edit Group"
 msgstr ""
 
-#: src/dialogs/expirydialog.cpp:133
+#: src/dialogs/expirydialog.cpp:148
+#, fuzzy, kde-format
+#| msgid "Please select when to expire this certificate:"
+msgid "Please select when to expire this subkey:"
+msgstr "សូមជ្រើស​ពេល​ដែល​វិញ្ញាបនបត្រ​ត្រូវ​ផុត​កំណត់ ៖"
+
+#: src/dialogs/expirydialog.cpp:149
+#, kde-format
+msgid "Please select when to expire this certificate:"
+msgstr "សូមជ្រើស​ពេល​ដែល​វិញ្ញាបនបត្រ​ត្រូវ​ផុត​កំណត់ ៖"
+
+#: src/dialogs/expirydialog.cpp:153
+#, kde-format
+msgid "Ne&ver"
+msgstr ""
+
+#: src/dialogs/expirydialog.cpp:161
+#, kde-format
+msgid "In"
+msgstr "នៅ"
+
+#: src/dialogs/expirydialog.cpp:174
+#, kde-format
+msgid "Days"
+msgstr "ថ្ងៃ"
+
+#: src/dialogs/expirydialog.cpp:175
+#, kde-format
+msgid "Weeks"
+msgstr "សប្ដាហ៍"
+
+#: src/dialogs/expirydialog.cpp:176
+#, kde-format
+msgid "Months"
+msgstr "ខែ"
+
+#: src/dialogs/expirydialog.cpp:177
+#, kde-format
+msgid "Years"
+msgstr "ឆ្នាំ"
+
+#: src/dialogs/expirydialog.cpp:188
+#, fuzzy, kde-format
+#| msgid "On this day:"
+msgid "On this da&y:"
+msgstr "នៅ​ថ្ងៃ​នេះ ៖"
+
+#: src/dialogs/expirydialog.cpp:210
+#, kde-format
+msgid "Also update the expiry of the subkeys"
+msgstr ""
+
+#: src/dialogs/expirydialog.cpp:292
 #, fuzzy, kde-format
 #| msgid "Change Expiry Date..."
 msgctxt "@title:window"
 msgid "Change Expiry"
 msgstr "ផ្លាស់ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់..."
-
-#. i18n: ectx: property (windowTitle), widget (QWidget, Kleo::Dialogs::ExpiryDialog)
-#: src/dialogs/expirydialog.ui:14
-#, kde-format
-msgid "Change Certificate Date of Expiry"
-msgstr "ប្ដូរ​កាលបរិច្ឆេទ​ផុតកំណត់​របស់​វិញ្ញាបនបត្រ"
-
-#. i18n: ectx: property (text), widget (QLabel, label)
-#: src/dialogs/expirydialog.ui:32
-#, kde-format
-msgid "Please select when to expire this certificate:"
-msgstr "សូមជ្រើស​ពេល​ដែល​វិញ្ញាបនបត្រ​ត្រូវ​ផុត​កំណត់ ៖"
-
-#. i18n: ectx: property (text), widget (QRadioButton, neverRB)
-#: src/dialogs/expirydialog.ui:39
-#, kde-format
-msgid "Ne&ver"
-msgstr ""
-
-#. i18n: ectx: property (text), widget (QRadioButton, inRB)
-#: src/dialogs/expirydialog.ui:51
-#, kde-format
-msgid "In"
-msgstr "នៅ"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:75
-#, kde-format
-msgid "Days"
-msgstr "ថ្ងៃ"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:80
-#, kde-format
-msgid "Weeks"
-msgstr "សប្ដាហ៍"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:85
-#, kde-format
-msgid "Months"
-msgstr "ខែ"
-
-#. i18n: ectx: property (text), item, widget (QComboBox, inCB)
-#: src/dialogs/expirydialog.ui:90
-#, kde-format
-msgid "Years"
-msgstr "ឆ្នាំ"
-
-#. i18n: ectx: property (text), widget (QRadioButton, onRB)
-#: src/dialogs/expirydialog.ui:113
-#, fuzzy, kde-format
-#| msgid "On this day:"
-msgid "On this da&y:"
-msgstr "នៅ​ថ្ងៃ​នេះ ៖"
 
 #: src/dialogs/exportdialog.cpp:70
 #, fuzzy, kde-format
@@ -6016,36 +6013,36 @@ msgstr "កំណត់​​ PIN ដំបូង​ (SigG)​"
 msgid "Change Expiry Date..."
 msgstr "ផ្លាស់ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់..."
 
-#: src/dialogs/subkeyswidget.cpp:102
+#: src/dialogs/subkeyswidget.cpp:99
 #, fuzzy, kde-format
 #| msgid "Export Secret Keys..."
 msgid "Export OpenSSH key"
 msgstr "នាំចេញ​វិញ្ញាបនបត្រ​​សម្ងាត់​​​...​"
 
-#: src/dialogs/subkeyswidget.cpp:114
+#: src/dialogs/subkeyswidget.cpp:111
 #, kde-format
 msgid "Restore printed backup"
 msgstr ""
 
-#: src/dialogs/subkeyswidget.cpp:128
+#: src/dialogs/subkeyswidget.cpp:125
 #, fuzzy, kde-format
 #| msgid "SmartCard"
 msgid "Transfer to smartcard"
 msgstr "​SmartCard"
 
-#: src/dialogs/subkeyswidget.cpp:193
+#: src/dialogs/subkeyswidget.cpp:190
 #, kde-format
 msgctxt "stored..."
 msgid "on SmartCard with serial no. %1"
 msgstr "លើ​ SmartCard ដោយ​​លេខ​​សៀរៀល​ %1"
 
-#: src/dialogs/subkeyswidget.cpp:195
+#: src/dialogs/subkeyswidget.cpp:192
 #, kde-format
 msgctxt "stored..."
 msgid "on this computer"
 msgstr "លើកុំព្យូទ័រនេះ​"
 
-#: src/dialogs/subkeyswidget.cpp:211
+#: src/dialogs/subkeyswidget.cpp:208
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Subkeys"
@@ -9712,6 +9709,9 @@ msgstr "វិញ្ញាបនបត្រ​ដែលបាននាំចូ
 #, kde-format
 msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
+
+#~ msgid "Change Certificate Date of Expiry"
+#~ msgstr "ប្ដូរ​កាលបរិច្ឆេទ​ផុតកំណត់​របស់​វិញ្ញាបនបត្រ"
 
 #, fuzzy
 #~| msgid "Scanning directories..."
