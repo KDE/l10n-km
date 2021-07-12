@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kate\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-07-07 00:20+0000\n"
+"POT-Creation-Date: 2021-07-12 00:19+0000\n"
 "PO-Revision-Date: 2011-12-21 14:07+0700\n"
 "Last-Translator: Chan Sambathratanak <ratanak@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -66,29 +66,29 @@ msgid "Sess&ions"
 msgstr "សម័យ"
 
 #. i18n: ectx: Menu (settings)
-#: data/kateui.rc:108
+#: data/kateui.rc:109
 #, kde-format
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: data/kateui.rc:115
+#: data/kateui.rc:116
 #, kde-format
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
 
 #. i18n: ectx: Menu (viewspace_popup_statusbar)
-#: data/kateui.rc:148
+#: data/kateui.rc:149
 #, kde-format
 msgid "&Status Bar Items"
 msgstr "ធាតុ​របស់​របារ​ស្ថានភាព"
 
-#: kateapp.cpp:215
+#: kateapp.cpp:235
 #, kde-format
 msgid "Folders can only be opened when the projects plugin is enabled"
 msgstr ""
 
-#: kateapp.cpp:324
+#: kateapp.cpp:344
 #, kde-format
 msgid ""
 "The file '%1' could not be opened: it is not a normal file, it is a folder."
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Configure"
 msgstr "កំណត់​រចនា​សម្ព័ន្ធ"
 
-#: kateconfigdialog.cpp:72 katemdi.cpp:510
+#: kateconfigdialog.cpp:72 katemdi.cpp:588
 #, kde-format
 msgid "Behavior"
 msgstr "ឥរិយាបថ"
@@ -322,7 +322,7 @@ msgstr ""
 "<p>ឯកសារ '%1' ត្រូវ​បាន​កែប្រែ ប៉ុន្តែ​មិនបាន​រក្សាទុក​ទេ ។</p><p>តើ​អ្នក​ចង់​រក្សាទុក​ការ​ផ្លាស់ប្ដូរ​"
 "របស់​អ្នក ឬ​បោះបង់​វា​ចោល ?</p>"
 
-#: katedocmanager.cpp:337
+#: katedocmanager.cpp:337 session/katesessionmanager.cpp:450
 #, kde-format
 msgid "Close Document"
 msgstr "បិទ​ឯកសារ"
@@ -332,12 +332,12 @@ msgstr "បិទ​ឯកសារ"
 msgid "Save As"
 msgstr "រក្សាទុកជា"
 
-#: katedocmanager.cpp:364 katemainwindow.cpp:564
+#: katedocmanager.cpp:364 katemainwindow.cpp:568
 #, kde-format
 msgid "New file opened while trying to close Kate, closing aborted."
 msgstr "មាន​ឯកសារ​ថ្មី​បាន​បើក ខណៈ​ពេល​ព្យាយាម​បិទ Kate, ការ​បិទ​ត្រូវ​បាន​បោះបង់ ។"
 
-#: katedocmanager.cpp:364 katemainwindow.cpp:564
+#: katedocmanager.cpp:364 katemainwindow.cpp:568
 #, kde-format
 msgid "Closing Aborted"
 msgstr "ការ​បិទ​ត្រូវ​បាន​បោះបង់"
@@ -661,45 +661,50 @@ msgstr "សម័យ​ថ្មី"
 
 #: katemainwindow.cpp:453
 #, kde-format
+msgid "&Save as defaults"
+msgstr ""
+
+#: katemainwindow.cpp:457
+#, kde-format
 msgid "&Save Session"
 msgstr "រក្សាទុក​សម័យ"
 
-#: katemainwindow.cpp:457
+#: katemainwindow.cpp:461
 #, kde-format
 msgid "Save Session &As..."
 msgstr "រក្សាទុក​សម័យ​ជា..."
 
-#: katemainwindow.cpp:461
+#: katemainwindow.cpp:465
 #, kde-format
 msgid "&Manage Sessions..."
 msgstr "គ្រប់គ្រង​សម័យ..."
 
-#: katemainwindow.cpp:466
+#: katemainwindow.cpp:470
 #, kde-format
 msgid "&Quick Open Session"
 msgstr "បិទ​សម័យ​ដែល​បើក"
 
-#: katemainwindow.cpp:472
+#: katemainwindow.cpp:476
 #, kde-format
 msgid "Go back"
 msgstr ""
 
-#: katemainwindow.cpp:480
+#: katemainwindow.cpp:484
 #, kde-format
 msgid "Go forward"
 msgstr ""
 
-#: katemainwindow.cpp:491
+#: katemainwindow.cpp:495
 #, kde-format
 msgid "This will close all open documents. Are you sure you want to continue?"
 msgstr "វា​នឹង​បិទ​​គ្រប់​ឯកសារ​បើក​ ។​ តើ​អ្នក​ប្រាកដ​ជា​ចង់​បន្ត​ឬ​ ?​"
 
-#: katemainwindow.cpp:492
+#: katemainwindow.cpp:496
 #, kde-format
 msgid "Close all documents"
 msgstr "បិទ​គ្រប់​ឯកសារ​ទាំងអស់​"
 
-#: katemainwindow.cpp:507
+#: katemainwindow.cpp:511
 #, fuzzy, kde-format
 #| msgid ""
 #| "This will close all open documents. Are you sure you want to continue?"
@@ -708,41 +713,41 @@ msgid ""
 "want to continue?"
 msgstr "វា​នឹង​បិទ​​គ្រប់​ឯកសារ​បើក​ ។​ តើ​អ្នក​ប្រាកដ​ជា​ចង់​បន្ត​ឬ​ ?​"
 
-#: katemainwindow.cpp:508
+#: katemainwindow.cpp:512
 #, fuzzy, kde-format
 #| msgid "Close all documents"
 msgid "Close all documents beside current one"
 msgstr "បិទ​គ្រប់​ឯកសារ​ទាំងអស់​"
 
-#: katemainwindow.cpp:700
+#: katemainwindow.cpp:704
 #, kde-format
 msgid ""
 "This will hide the menu bar completely. You can show it again by typing %1."
 msgstr ""
 
-#: katemainwindow.cpp:703
+#: katemainwindow.cpp:707
 #, kde-format
 msgid "Hide menu bar"
 msgstr ""
 
-#: katemainwindow.cpp:815
+#: katemainwindow.cpp:819
 #, kde-format
 msgid ""
 "You dropped the directory %1 into Kate. Do you want to load all files "
 "contained in it ?"
 msgstr ""
 
-#: katemainwindow.cpp:818
+#: katemainwindow.cpp:822
 #, kde-format
 msgid "Load files recursively?"
 msgstr ""
 
-#: katemainwindow.cpp:946
+#: katemainwindow.cpp:950
 #, kde-format
 msgid "&Other..."
 msgstr "ផ្សេង​ទៀត..."
 
-#: katemainwindow.cpp:1058
+#: katemainwindow.cpp:1062
 #, kde-format
 msgid " [read only]"
 msgstr ""
@@ -762,47 +767,47 @@ msgstr "បង្ហាញ​របារ​ចំហៀង"
 msgid "Show %1"
 msgstr "បង្ហាញ %1"
 
-#: katemdi.cpp:506
+#: katemdi.cpp:584
 #, kde-format
 msgid "Configure ..."
 msgstr "កំណត់​រចនាសម្ព័ន្ធ ..."
 
-#: katemdi.cpp:513
+#: katemdi.cpp:591
 #, kde-format
 msgid "Make Non-Persistent"
 msgstr "បង្កើត​បណ្តោះ​អាសន្ន"
 
-#: katemdi.cpp:513
+#: katemdi.cpp:591
 #, kde-format
 msgid "Make Persistent"
 msgstr "បង្កើត​អចិន្ត្រៃយ៍"
 
-#: katemdi.cpp:516
+#: katemdi.cpp:594
 #, kde-format
 msgid "Move To"
 msgstr "ផ្លាស់ទី​ទៅ"
 
-#: katemdi.cpp:519
+#: katemdi.cpp:597
 #, kde-format
 msgid "Left Sidebar"
 msgstr "របារ​ចំហៀង​ឆ្វេង"
 
-#: katemdi.cpp:523
+#: katemdi.cpp:601
 #, kde-format
 msgid "Right Sidebar"
 msgstr "របារ​ចំហៀង​ស្តាំ"
 
-#: katemdi.cpp:527
+#: katemdi.cpp:605
 #, kde-format
 msgid "Top Sidebar"
 msgstr "របារ​ចំហៀង​កំពូល"
 
-#: katemdi.cpp:531
+#: katemdi.cpp:609
 #, kde-format
 msgid "Bottom Sidebar"
 msgstr "របារ​ចំហៀង​បាត"
 
-#: katemdi.cpp:862
+#: katemdi.cpp:940
 #, kde-format
 msgid ""
 "<qt>You are about to hide the sidebars. With hidden sidebars it is not "
@@ -1195,30 +1200,30 @@ msgid_plural ""
 "switch to the Quick Open view by clicking here."
 msgstr[0] ""
 
-#: kateviewspace.cpp:559
+#: kateviewspace.cpp:569
 #, fuzzy, kde-format
 #| msgid "Close Document"
 msgid "&Close Document"
 msgstr "បិទ​ឯកសារ"
 
-#: kateviewspace.cpp:560
+#: kateviewspace.cpp:570
 #, fuzzy, kde-format
 #| msgid "Close Document"
 msgid "Close Other &Documents"
 msgstr "បិទ​ឯកសារ"
 
-#: kateviewspace.cpp:569
+#: kateviewspace.cpp:579
 #, fuzzy, kde-format
 #| msgid "Close the current document."
 msgid "Compare with active document"
 msgstr "បិទ​ឯកសារ​បច្ចុប្បន្ន ។"
 
-#: kateviewspace.cpp:625
+#: kateviewspace.cpp:635
 #, kde-format
 msgid "Could not start program"
 msgstr ""
 
-#: kateviewspace.cpp:626
+#: kateviewspace.cpp:636
 #, kde-format
 msgid "The selected program could not be started. Maybe it is not installed."
 msgstr ""
@@ -1567,10 +1572,16 @@ msgstr "សម័យ"
 #: main.cpp:229
 #, fuzzy, kde-format
 #| msgid "Start Kate with a new anonymous session, implies '-n'"
-msgid "Start Kate with a new anonymous session, implies '-n'."
+msgid "Start Kate with a new session, implies '-n' (deprecated)."
 msgstr "ចាប់ផ្តើម Kate ជាមួយ​នឹង​សម័យ​អនាមិក​ថ្មី អនុវត្ត '-n'"
 
-#: main.cpp:234
+#: main.cpp:233
+#, fuzzy, kde-format
+#| msgid "Start Kate with a new anonymous session, implies '-n'"
+msgid "Start Kate with a new session, implies '-n'."
+msgstr "ចាប់ផ្តើម Kate ជាមួយ​នឹង​សម័យ​អនាមិក​ថ្មី អនុវត្ត '-n'"
+
+#: main.cpp:238
 #, fuzzy, kde-format
 #| msgid ""
 #| "Force start of a new kate instance (is ignored if start is used and "
@@ -1584,7 +1595,7 @@ msgstr ""
 "បង្ខំ​ឲ្យ​ចាប់ផ្ដើម​ធាតុ kate ថ្មី (មិនអើពើ​ប្រសិនបើ​ការ​ចាប់ផ្ដើម​ត្រូវ​បានប្រើ​ ហើយ​ធាតុ kate បាន​ផ្ដល់​"
 "សម័យ​ដែល​បានបើក​រួច​ហើយ) បង្ខំ​វា ប្រសិនបើ​គ្មាន​ប៉ារ៉ាម៉ែត្រ និង URLs ត្រូវ​បាន​ផ្ដល់​ទាល់តែ​សោះ"
 
-#: main.cpp:240
+#: main.cpp:244
 #, fuzzy, kde-format
 #| msgid ""
 #| "If using an already running kate instance, block until it exits, if URLs "
@@ -1595,7 +1606,7 @@ msgid ""
 msgstr ""
 "ប្រសិនបើ​ប្រើ​ធាតុ kate ដែល​កំពុង​រត់ ទប់ស្កាត់​វា​រហូតដល់​ពេល​ចេញ ប្រសិនបើ URLs ត្រូវ​ផ្ដល់​ដើម្បី​បើក"
 
-#: main.cpp:246
+#: main.cpp:250
 #, fuzzy, kde-format
 #| msgid ""
 #| "Only try to reuse kate instance with this pid (is ignored if start is "
@@ -1607,63 +1618,63 @@ msgstr ""
 "ព្យាយាម​ប្រើ​តែ​ធាតុ kate ឡើង​វិញ​ដោយ​ប្រើ pid (មិនអើពើ​ ប្រសិនបើ​កា​រចាប់ផ្ដើម​ត្រូវ​បានប្រើ និង​ធាតុ "
 "kate ផ្សេង​ទៀត​ត្រូវ​បាន​ផ្ដល់​រួច​ហើយ​ត្រូវ​បាន​បើក)"
 
-#: main.cpp:247
+#: main.cpp:251
 #, kde-format
 msgid "pid"
 msgstr ""
 
-#: main.cpp:252
+#: main.cpp:256
 #, fuzzy, kde-format
 #| msgid "Set encoding for the file to open"
 msgid "Set encoding for the file to open."
 msgstr "កំណត់​សំណុំ​តួអក្សរ ដើម្បី​បើក​ឯកសារ"
 
-#: main.cpp:253
+#: main.cpp:257
 #, fuzzy, kde-format
 #| msgid "Show Encoding"
 msgid "encoding"
 msgstr "បង្ហាញ​ការ​អ៊ិនកូដ"
 
-#: main.cpp:257
+#: main.cpp:261
 #, fuzzy, kde-format
 #| msgid "Navigate to this line"
 msgid "Navigate to this line."
 msgstr "រុករក​មក​កាន់​បន្ទាត់​នេះ"
 
-#: main.cpp:257
+#: main.cpp:261
 #, kde-format
 msgid "line"
 msgstr ""
 
-#: main.cpp:262
+#: main.cpp:266
 #, fuzzy, kde-format
 #| msgid "Navigate to this column"
 msgid "Navigate to this column."
 msgstr "រុករក​មក​កាន់​ជួរឈរ​នេះ"
 
-#: main.cpp:263
+#: main.cpp:267
 #, kde-format
 msgid "column"
 msgstr ""
 
-#: main.cpp:267
+#: main.cpp:271
 #, fuzzy, kde-format
 #| msgid "Read the contents of stdin"
 msgid "Read the contents of stdin."
 msgstr "អាន​មាតិកា​របស់ stdin"
 
-#: main.cpp:272
+#: main.cpp:276
 #, kde-format
 msgid "The files/URLs opened by the application will be deleted after use"
 msgstr ""
 
-#: main.cpp:276
+#: main.cpp:280
 #, fuzzy, kde-format
 #| msgid "Document to open"
 msgid "Documents to open."
 msgstr "ឯកសារ​ត្រូវ​បើក"
 
-#: main.cpp:276
+#: main.cpp:280
 #, kde-format
 msgid "[urls...]"
 msgstr ""
@@ -1699,7 +1710,7 @@ msgstr "ឧបករណ៍​ជ្រើស​សម័យ"
 msgid "Restore"
 msgstr ""
 
-#: session/katesessionmanagedialog.cpp:305
+#: session/katesessionmanagedialog.cpp:303
 #, kde-format
 msgid "Session will be deleted on dialog close"
 msgstr ""
@@ -1780,38 +1791,45 @@ msgstr "បាន​លុប"
 msgid "Close"
 msgstr "បិទ"
 
-#: session/katesessionmanager.cpp:107
+#: session/katesessionmanager.cpp:127
 #, kde-format
 msgid ""
 "Internal error: there is more than one instance open for a given session."
 msgstr "កំហុស​ខាង​ក្នុង ៖ មាន​ធាតុ​ច្រើនជាង​មួយ​​បើក​ ​សម្រាប់​សម័យ​ដែល​បាន​ផ្ដល់ ។"
 
-#: session/katesessionmanager.cpp:113
+#: session/katesessionmanager.cpp:133
 #, kde-format
 msgid ""
 "Session '%1' is already opened in another kate instance, change there "
 "instead of reopening?"
 msgstr "សម័យ '%1' ត្រូវ​បានបើក​រួច​ហើយ​នៅ​​ក្នុង​ធាតុ kate ផ្សេង ផ្លាស់ប្ដូរ​វា​​ជំនួស​ឲ្យ​បើក​ឡើង​វិញ ?"
 
-#: session/katesessionmanager.cpp:306
+#: session/katesessionmanager.cpp:349
 #, fuzzy, kde-format
 #| msgid ""
 #| "The session could not be renamed to \"%1\", there already exists another "
 #| "session with the same name"
-msgid "The session could not be renamed to \"%1\". Failed to write to \"%2\""
+msgid ""
+"The session could not be renamed to \"%1\". Failed to write to \"%2\"\n"
+"%3"
 msgstr "មិនអាច​ប្ដូរ​ឈ្មោះ​សម័យ​ទៅ \"%1\" បានទេ ព្រោះ​មាន​សម័យ​ផ្សេងមាន​ឈ្មោះ​នេះ​រួចហើយ"
 
-#: session/katesessionmanager.cpp:307
+#: session/katesessionmanager.cpp:350
 #, kde-format
 msgid "Session Renaming"
 msgstr "ការ​ប្ដូរ​ឈ្មោះ​សម័យ"
 
-#: session/katesessionmanager.cpp:450
+#: session/katesessionmanager.cpp:449
+#, kde-format
+msgid "Do you want to save current anonymous session?"
+msgstr ""
+
+#: session/katesessionmanager.cpp:492
 #, kde-format
 msgid "Session name:"
 msgstr "ឈ្មោះ​សម័យ ៖"
 
-#: session/katesessionmanager.cpp:452
+#: session/katesessionmanager.cpp:494
 #, fuzzy, kde-format
 #| msgid ""
 #| "There is already an existing session with your chosen name.\n"
@@ -1825,18 +1843,18 @@ msgstr ""
 "សូម​ជ្រើស​ឈ្មោះ​សម័យ\n"
 "ផ្សេង ៖"
 
-#: session/katesessionmanager.cpp:454
+#: session/katesessionmanager.cpp:496
 #, kde-format
 msgid "To save a session, you must specify a name."
 msgstr "ដើម្បី​រក្សាទុកសម័យ​មួយ អ្នក​ត្រូវ​តែ​បញ្ជាក់​ឈ្មោះ​មួយ​ ។"
 
-#: session/katesessionmanager.cpp:481
+#: session/katesessionmanager.cpp:523
 #, fuzzy, kde-format
 #| msgid "Specify New Name for Session"
 msgid "Specify a name for this session"
 msgstr "បញ្ជាក់​ឈ្មោះ​ថ្មី​សម្រាប់​សម័យ"
 
-#: session/katesessionmanager.cpp:483
+#: session/katesessionmanager.cpp:525
 #, fuzzy, kde-format
 #| msgid "Specify New Name for Session"
 msgid "Specify a new name for session: %1"
