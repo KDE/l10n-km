@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-09-27 00:15+0000\n"
+"POT-Creation-Date: 2021-09-28 00:15+0000\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -16665,6 +16665,7 @@ msgstr "YCbCr (ចំនួនគត់/ឆានែល ១៦ ប៊ីត)"
 #: plugins/color/lcms2engine/colorspaces/lab_f32/LabF32ColorSpace.cpp:27
 #: plugins/color/lcms2engine/colorspaces/lab_u16/LabColorSpace.cpp:22
 #: plugins/color/lcms2engine/colorspaces/lab_u8/LabU8ColorSpace.cpp:22
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.cpp:89
 #, fuzzy, kde-format
 msgctxt "Lightness value in Lab color model"
 msgid "Lightness"
@@ -17865,7 +17866,8 @@ msgstr "ឯកសារ​ប្រភព ៖"
 #: plugins/extensions/resourcemanager/dlg_bundle_manager.cpp:273
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:326
 #: plugins/extensions/resourcemanager/resourcemanager.cpp:221
-#: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:393
+#: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:351
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.cpp:163
 #: plugins/tools/basictools/kis_tool_colorsampler.cc:162
 #: plugins/tools/basictools/kis_tool_colorsampler.cc:167
 #: plugins/tools/basictools/kis_tool_colorsampler.cc:225
@@ -18506,7 +18508,7 @@ msgstr "យក​ស្រទាប់​ចេញ"
 #: libs/ui/input/kis_tool_invocation_action.cpp:43 libs/ui/kis_clipboard.cc:301
 #: libs/ui/utils/KisClipboardUtil.cpp:70
 #: plugins/dockers/gamutmask/forms/wdgGamutMaskChooser.ui:190
-#: plugins/dockers/recorder/recorder_export.ui:703
+#: plugins/dockers/recorder/recorder_export.ui:693
 #: plugins/dockers/recorder/recorder_snapshots_manager.ui:130
 #: plugins/extensions/resourcemanager/wdgtagselection.cpp:116
 #: plugins/generators/seexpr/wdgseexpr.ui:179
@@ -20567,12 +20569,9 @@ msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, btnClose)
 #. i18n: ectx: property (text), widget (QPushButton, pushButtonClose)
-#. i18n: ectx: property (text), widget (QPushButton, buttonClose)
 #: libs/ui/dialogs/kis_about_application.cpp:188
 #: libs/ui/forms/wdgbookmarkedconfigurationseditor.ui:75
 #: libs/ui/forms/wdgsessionmanager.ui:94
-#: plugins/dockers/recorder/recorder_export.ui:563
-#: plugins/dockers/recorder/recorder_snapshots_manager.ui:279
 #: plugins/python/scripter/ui_scripter/actions/closeaction/closeaction.py:20
 #, kde-format
 msgid "Close"
@@ -20725,6 +20724,7 @@ msgstr "លក្ខណៈ​សម្បត្តិ​ស្រទាប់"
 #: libs/ui/widgets/gradient/KisSegmentGradientEditor.cpp:159
 #: libs/ui/widgets/gradient/KisSegmentGradientEditor.cpp:162
 #: libs/ui/widgets/kis_custom_image_widget.cc:101
+#: libs/ui/widgets/KisAutoLevelsWidget.cpp:16
 #: libs/widgets/kis_color_input.cpp:146 libs/widgets/kis_color_input.cpp:189
 #: plugins/dockers/animation/KisAnimTimelineFramesView.cpp:230
 #: plugins/dockers/animation/KisOnionSkinsDocker.cpp:46
@@ -24582,7 +24582,9 @@ msgid "Force Instant Preview in Filters"
 msgstr "មើល​រូបភាព​ជា​មុន"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgPopupPaletteSettings)
+#. i18n: ectx: property (windowTitle), widget (QWidget, KisAutoLevelsWidget)
 #: libs/ui/forms/WdgPopupPaletteSettings.ui:14
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:14
 #, fuzzy, kde-format
 msgid "Form"
 msgstr "ទ្រង់ទ្រាយ ៖"
@@ -29356,6 +29358,7 @@ msgid "Fill"
 msgstr "បំពេញ"
 
 #. i18n: ectx: property (text), widget (QLabel, label_5)
+#. i18n: ectx: property (text), widget (QLabel, label_8)
 #. i18n: ectx: property (text), widget (QLabel, soldStrokeColorLabel)
 #. i18n: ectx: property (text), widget (QLabel, colorLabel4)
 #. i18n: ectx: property (text), widget (QLabel, colorLabel2)
@@ -29363,6 +29366,7 @@ msgstr "បំពេញ"
 #. i18n: ectx: property (text), widget (QLabel, colorLabel3)
 #. i18n: ectx: property (text), widget (QLabel, textLabel1)
 #: libs/ui/layerstyles/WdgStroke.ui:163
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:189
 #: libs/ui/widgets/KoFillConfigWidget.ui:176
 #: plugins/filters/colors/wdgcolortoalphabase.ui:44
 #: plugins/filters/phongbumpmap/wdgphongbumpmap.ui:462
@@ -31003,6 +31007,102 @@ msgstr ""
 msgid "Save current window layout."
 msgstr "ទំហំ​​បង្អួច"
 
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:35
+#, fuzzy, kde-format
+msgid "Shadows and Highlights"
+msgstr "បន្លិច​"
+
+#. i18n: ectx: property (text), widget (QLabel, label)
+#. i18n: ectx: property (text), widget (QLabel, label_5)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:62
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:163
+#: plugins/python/comics_project_management_tools/comics_export_dialog.py:65
+#, fuzzy, kde-format
+msgid "Method:"
+msgstr "វិធីសាស្ត្រ​"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxShadowsAndLightsMethod)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:70
+#, kde-format
+msgid "Adjust monochromatic contrast"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxShadowsAndLightsMethod)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:75
+#, kde-format
+msgid "Adjust per channel contrast"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:83
+#, fuzzy, kde-format
+#| msgid "Shadows 3"
+msgid "Shadows clipping:"
+msgstr "ស្រមោល ៣"
+
+#. i18n: ectx: property (text), widget (QLabel, label_3)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:90
+#, fuzzy, kde-format
+msgid "Highlights clipping:"
+msgstr "បន្លិច​"
+
+#. i18n: ectx: property (text), widget (QLabel, label_4)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:97
+#, fuzzy, kde-format
+msgid "Maximum offset:"
+msgstr "អុហ្វសិត​ចៃដន្យ"
+
+#. i18n: ectx: property (text), widget (QLabel, label_6)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:107
+#, fuzzy, kde-format
+#| msgid "Shadows 3"
+msgid "Shadows color:"
+msgstr "ស្រមោល ៣"
+
+#. i18n: ectx: property (text), widget (QLabel, label_7)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:114
+#, fuzzy, kde-format
+msgid "Highlights color:"
+msgstr "បន្លិច​"
+
+#. i18n: ectx: property (title), widget (QGroupBox, groupBox_2)
+#. i18n: ectx: property (text), widget (QRadioButton, radioButtonMidtones)
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#. i18n: ectx: property (text), item, widget (QComboBox, cmbSelect)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:136
+#: plugins/extensions/colorrange/wdg_colorrange.ui:62
+#: plugins/filters/colorsfilters/wdg_color_balance.ui:185
+#: plugins/filters/dodgeburn/DodgeBurnConfigurationBaseWidget.ui:37
+#, kde-format
+msgid "Midtones"
+msgstr "ពណ៌​លាំៗ"
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxMidtonesMethod)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:171
+#, kde-format
+msgid "Don't adjust the midtones"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxMidtonesMethod)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:176
+#, kde-format
+msgid "Use the median to adjust the midtones"
+msgstr ""
+
+#. i18n: ectx: property (text), item, widget (QComboBox, comboBoxMidtonesMethod)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:181
+#, kde-format
+msgid "Use the mean value to adjust the midtones"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_9)
+#: libs/ui/widgets/KisAutoLevelsWidget.ui:202
+#, fuzzy, kde-format
+#| msgid "Amount:"
+msgid "Amount:"
+msgstr "ចំនួន​សរុប ៖"
+
 #: libs/ui/widgets/KisDitherWidget.cpp:44
 #, kde-format
 msgid "Spread:"
@@ -31208,7 +31308,7 @@ msgid "Stop:"
 msgstr "ល្បឿន"
 
 #. i18n: ectx: property (text), widget (KisColorButton, meshStopColorButton)
-#. i18n: ectx: property (text), widget (KisGradientSlider, cutoffSlider)
+#. i18n: ectx: property (text), widget (KisInputLevelsSlider, cutoffSlider)
 #. i18n: ectx: property (text), widget (KisColorButton, btnSlope)
 #. i18n: ectx: property (text), widget (KisColorButton, btnPower)
 #. i18n: ectx: property (text), widget (KisColorButton, btnOffset)
@@ -35917,58 +36017,66 @@ msgctxt "Status for the export of the video record"
 msgid "Starting FFMpeg..."
 msgstr "ការ​កំណត់"
 
-#: plugins/dockers/recorder/recorder_export.cpp:337
+#. i18n: ectx: property (text), widget (QToolButton, btnExport)
+#: plugins/dockers/recorder/recorder_export.cpp:314
+#: plugins/dockers/storyboarddocker/DlgExportStoryboard.cpp:29
+#: plugins/dockers/storyboarddocker/wdgstoryboarddock.ui:21
+#, fuzzy, kde-format
+msgid "Export"
+msgstr "កា​របង្ហាញ"
+
+#: plugins/dockers/recorder/recorder_export.cpp:339
 #, fuzzy, kde-format
 msgctxt "Can't export recording because nothing to export"
 msgid "No frames to export"
 msgstr "ចម្លង​ជម្រើស​ទៅ​កាន់​ស្រទាប់​ថ្មី"
 
-#: plugins/dockers/recorder/recorder_export.cpp:341
+#: plugins/dockers/recorder/recorder_export.cpp:343
 #, fuzzy, kde-format
 #| msgid "Recording"
 msgctxt "General information about recording"
 msgid "Recording info"
 msgstr "ថត​"
 
-#: plugins/dockers/recorder/recorder_export.cpp:344
+#: plugins/dockers/recorder/recorder_export.cpp:346
 #, fuzzy, kde-format
 #| msgid "px"
 msgctxt "Pixel dimension suffix"
 msgid "px"
 msgstr "ភីកសែល"
 
-#: plugins/dockers/recorder/recorder_export.cpp:346
+#: plugins/dockers/recorder/recorder_export.cpp:348
 #, fuzzy, kde-format
 msgctxt "The suffix after number of frames"
 msgid "frame(s)"
 msgstr "យក​ស្រទាប់​ចេញ"
 
-#: plugins/dockers/recorder/recorder_export.cpp:448
+#: plugins/dockers/recorder/recorder_export.cpp:450
 #, kde-format
 msgid "Select FFMpeg Executable File"
 msgstr ""
 
-#: plugins/dockers/recorder/recorder_export.cpp:494
+#: plugins/dockers/recorder/recorder_export.cpp:496
 #, fuzzy, kde-format
 msgid "Export Timelapse Video As"
 msgstr "របៀប​តែង"
 
-#: plugins/dockers/recorder/recorder_export.cpp:509
+#: plugins/dockers/recorder/recorder_export.cpp:511
 #, kde-format
 msgid "The video file is already exists. Do you wish to overwrite?"
 msgstr ""
 
-#: plugins/dockers/recorder/recorder_export.cpp:536
+#: plugins/dockers/recorder/recorder_export.cpp:538
 #, kde-format
 msgid "The timelapse video is being encoded..."
 msgstr ""
 
-#: plugins/dockers/recorder/recorder_export.cpp:549
+#: plugins/dockers/recorder/recorder_export.cpp:551
 #, kde-format
 msgid "Export failed. FFMpeg message:"
 msgstr ""
 
-#: plugins/dockers/recorder/recorder_export.cpp:570
+#: plugins/dockers/recorder/recorder_export.cpp:572
 #, kde-format
 msgid ""
 "The recordings for this document will be deleted and you will not be able to "
@@ -35977,8 +36085,8 @@ msgid ""
 "Do you wish to continue?"
 msgstr ""
 
-#: plugins/dockers/recorder/recorder_export.cpp:577
-#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:260
+#: plugins/dockers/recorder/recorder_export.cpp:579
+#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:262
 #, fuzzy, kde-format
 msgctxt "Label title, Snapshot directory deleting is in progress"
 msgid "Cleaning up..."
@@ -36069,58 +36177,49 @@ msgstr "បញ្ចូល ៖"
 msgid "Video duration:"
 msgstr "ការបង្វិល ៖"
 
-#. i18n: ectx: property (text), widget (QToolButton, btnExport)
-#. i18n: ectx: property (text), widget (QPushButton, buttonExport)
-#: plugins/dockers/recorder/recorder_export.ui:570
-#: plugins/dockers/storyboarddocker/DlgExportStoryboard.cpp:29
-#: plugins/dockers/storyboarddocker/wdgstoryboarddock.ui:21
-#, fuzzy, kde-format
-msgid "Export"
-msgstr "កា​របង្ហាញ"
-
 #. i18n: ectx: property (text), widget (QLabel, labelDone)
-#: plugins/dockers/recorder/recorder_export.ui:806
+#: plugins/dockers/recorder/recorder_export.ui:796
 #, kde-format
 msgctxt "Caption: Video exporting finished"
 msgid "Done!"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, buttonWatchIt)
-#: plugins/dockers/recorder/recorder_export.ui:824
+#: plugins/dockers/recorder/recorder_export.ui:814
 #, kde-format
 msgctxt "Watch the video which is just created"
 msgid "Watch it!"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QLabel, labelWritten)
-#: plugins/dockers/recorder/recorder_export.ui:834
+#: plugins/dockers/recorder/recorder_export.ui:824
 #, kde-format
 msgid "The timelapse video has been written to:"
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QPushButton, buttonShowInFolder)
-#: plugins/dockers/recorder/recorder_export.ui:852
+#: plugins/dockers/recorder/recorder_export.ui:842
 #, fuzzy, kde-format
 msgctxt "Open the folder when the new created video is placed"
 msgid "Show in folder"
 msgstr "ទទឹង​ជួរ"
 
 #. i18n: ectx: property (text), widget (QPushButton, buttonRemoveSnapshots)
-#: plugins/dockers/recorder/recorder_export.ui:889
+#: plugins/dockers/recorder/recorder_export.ui:879
 #, fuzzy, kde-format
 msgctxt "Open the folder when the new created video is placed"
 msgid "Remove recordings"
 msgstr "យក​ចម្រៀក​ចេញ"
 
 #. i18n: ectx: property (text), widget (QPushButton, buttonRestart)
-#: plugins/dockers/recorder/recorder_export.ui:955
+#: plugins/dockers/recorder/recorder_export.ui:945
 #, fuzzy, kde-format
 msgctxt "Button to restart the timelapse video configuring"
 msgid "Restart"
 msgstr "ផ្កាយ​"
 
 #. i18n: ectx: property (text), widget (QPushButton, buttonDoneClose)
-#: plugins/dockers/recorder/recorder_export.ui:962
+#: plugins/dockers/recorder/recorder_export.ui:952
 #, fuzzy, kde-format
 #| msgid "Close"
 msgctxt "Close dialog button"
@@ -36173,52 +36272,52 @@ msgstr "ទម្រង់ ៖"
 msgid "File extension:"
 msgstr "ការជ្រើស​រូបភាព"
 
-#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:157
+#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:159
 #, fuzzy, kde-format
 #| msgid "Preview"
 msgctxt "Header title for preview thumbnail"
 msgid "Preview"
 msgstr "មើល​ជាមុន"
 
-#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:159
+#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:161
 #, fuzzy, kde-format
 #| msgid "Name"
 msgctxt "Header title for directory name column"
 msgid "Name"
 msgstr "ឈ្មោះ"
 
-#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:161
+#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:163
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "Header title for size of directory column"
 msgid "Size"
 msgstr "ទំហំ"
 
-#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:163
+#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:165
 #, fuzzy, kde-format
 msgctxt "Header title for last modified date/time column"
 msgid "Last Modified"
 msgstr "បាន​ប្រើ​ចុងក្រោយ"
 
-#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:201
+#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:203
 #, fuzzy, kde-format
 msgctxt "Label title, Scanning for directory, files, etc.."
 msgid "Scanning..."
 msgstr "កំពុងផ្គូផ្គង​សំឡេង..."
 
 #. i18n: ectx: property (text), widget (QPushButton, buttonSelectAll)
-#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:219
+#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:221
 #: plugins/dockers/recorder/recorder_snapshots_manager.ui:205
 #, fuzzy, kde-format
 msgid "Select All"
 msgstr "ជ្រើស​ទាំងអស់"
 
-#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:219
+#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:221
 #, fuzzy, kde-format
 msgid "Select None"
 msgstr "ការជ្រើសរើស"
 
-#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:247
+#: plugins/dockers/recorder/recorder_snapshots_manager.cpp:249
 #, kde-format
 msgid ""
 "The selected recordings will be deleted and you will not be able to export a "
@@ -36258,12 +36357,6 @@ msgstr "រក្សាទុក​ត្រូវ​​កំណត់​ជា
 #| msgid "0 s"
 msgid "0 B"
 msgstr "0 វិ."
-
-#. i18n: ectx: property (text), widget (QPushButton, buttonCleanUp)
-#: plugins/dockers/recorder/recorder_snapshots_manager.ui:289
-#, fuzzy, kde-format
-msgid "Clean Up"
-msgstr "មុំ​គូស"
 
 #. i18n: ectx: property (text), widget (QLabel, labelDirectory)
 #: plugins/dockers/recorder/recorderdocker.ui:95
@@ -37132,16 +37225,6 @@ msgstr "ពណ៌​ក្រហម​ស្វាយ"
 msgid "Highlights"
 msgstr "បន្លិច​"
 
-#. i18n: ectx: property (text), widget (QRadioButton, radioButtonMidtones)
-#. i18n: ectx: property (text), widget (QLabel, label_2)
-#. i18n: ectx: property (text), item, widget (QComboBox, cmbSelect)
-#: plugins/extensions/colorrange/wdg_colorrange.ui:62
-#: plugins/filters/colorsfilters/wdg_color_balance.ui:185
-#: plugins/filters/dodgeburn/DodgeBurnConfigurationBaseWidget.ui:37
-#, kde-format
-msgid "Midtones"
-msgstr "ពណ៌​លាំៗ"
-
 #. i18n: ectx: property (text), widget (QRadioButton, radioButtonShadows)
 #. i18n: ectx: property (text), widget (QLabel, label)
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbSelect)
@@ -37152,11 +37235,9 @@ msgstr "ពណ៌​លាំៗ"
 msgid "Shadows"
 msgstr "ស្រមោល"
 
-#. i18n: ectx: property (text), widget (QPushButton, butinvert)
 #. i18n: ectx: property (text), widget (QCheckBox, chkInvert)
 #: plugins/extensions/colorrange/wdg_colorrange.ui:75
 #: plugins/filters/example/example.cpp:42
-#: plugins/filters/levelfilter/wdg_level.ui:298
 #, kde-format
 msgid "&Invert"
 msgstr "ដាក់​បញ្ច្រាស"
@@ -40219,7 +40300,7 @@ msgstr "កា​រលៃតម្រូវ HSV...​"
 msgid "HSV/HSL Adjustment"
 msgstr "ការ​លៃ​តម្រូវ​ពណ៌"
 
-#: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:393
+#: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:351
 #, kde-format
 msgid ""
 "The current configuration was created for a different colorspace and cannot "
@@ -40410,7 +40491,6 @@ msgstr "បញ្ចេញ ៖"
 
 #. i18n: ectx: property (text), widget (QCheckBox, chkLogarithmic)
 #: plugins/filters/colorsfilters/wdg_perchannel.ui:330
-#: plugins/filters/levelfilter/wdg_level.ui:69
 #: plugins/filters/threshold/wdg_threshold.ui:59
 #, kde-format
 msgid "Logarithmic"
@@ -40927,37 +41007,127 @@ msgstr "ផ្សេងៗ"
 msgid "Alpha Steps"
 msgstr "ជម្រើស​​អាល់ហ្វា"
 
-#: plugins/filters/levelfilter/kis_level_filter.cpp:37
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.cpp:163
 #, kde-format
-msgid "&Levels..."
-msgstr "កម្រិត..."
+msgid ""
+"The current configuration was created for a different colorspace and cannot "
+"be used.\n"
+"The channels will be reset."
+msgstr ""
+
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.cpp:621
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.cpp:672
+#, fuzzy, kde-format
+msgctxt "@title:window"
+msgid "Auto Levels"
+msgstr "កម្រិត"
 
 #. i18n: ectx: property (windowTitle), widget (QWidget, WdgThreshold)
-#. i18n: ectx: property (windowTitle), widget (QWidget, WdgLevel)
-#: plugins/filters/levelfilter/kis_level_filter.h:40
-#: plugins/filters/levelfilter/wdg_level.ui:36
+#. i18n: ectx: property (windowTitle), widget (QWidget, LevelsConfigWidget)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:18
+#: plugins/filters/levelfilter/KisLevelsFilter.h:30
 #: plugins/filters/threshold/wdg_threshold.ui:36
 #, kde-format
 msgid "Levels"
 msgstr "កម្រិត"
 
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonLightnessMode)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:49
+#, fuzzy, kde-format
+msgid "Modify lightness only"
+msgstr "ភាព​ភ្លឺ"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonAllChannelsMode)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:71
+#, kde-format
+msgid "Modify all channels independently"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonResetAll)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:108
+#, fuzzy, kde-format
+#| msgid "Rectangle"
+msgid "Reset channel"
+msgstr "ចតុកោណកែង"
+
 #. i18n: ectx: property (text), widget (QLabel, textLabel2)
-#: plugins/filters/levelfilter/wdg_level.ui:56
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:130
 #, kde-format
 msgid "<b>Input Levels</b>"
 msgstr "<b>កម្រិត​បញ្ចូល</b>"
 
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonLinearHistogram)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:158
+#, fuzzy, kde-format
+msgid "Show linear histogram"
+msgstr "ប្រវត្តិ​ពណ៌"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonLogarithmicHistogram)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:180
+#, fuzzy, kde-format
+msgid "Show logarithmic histogram"
+msgstr "ប្រវត្តិ​ពណ៌"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonScaleHistogramToFit)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:201
+#, kde-format
+msgid "Scale the histogram to fit"
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonScaleHistogramToCutLongPeaks)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:214
+#, kde-format
+msgid "Scale the histogram to cut long peaks "
+msgstr ""
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonAutoLevels)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:240
+#, fuzzy, kde-format
+#| msgid "Discard alpha channel"
+msgid "Apply auto levels to this channel"
+msgstr "បោះបង់​ឆានែល​អាល់ហ្វា​"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonResetInputLevels)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:250
+#, fuzzy, kde-format
+msgid "Reset input levels"
+msgstr "តម្រង"
+
 #. i18n: ectx: property (text), widget (QLabel, textLabel3)
-#: plugins/filters/levelfilter/wdg_level.ui:229
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:404
 #, kde-format
 msgid "<b>Output Levels</b>"
 msgstr "<b>កម្រិត​លទ្ធផល</b>"
 
-#. i18n: ectx: property (text), widget (QPushButton, butauto)
-#: plugins/filters/levelfilter/wdg_level.ui:291
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonResetOutputLevels)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:427
 #, fuzzy, kde-format
-msgid "&Auto Levels"
-msgstr "កម្រិត"
+msgid "Reset output levels"
+msgstr "លទ្ធផល"
+
+#. i18n: ectx: property (text), widget (QLabel, textLabel3_2)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:524
+#, fuzzy, kde-format
+msgid "<b>All Channels</b>"
+msgstr "ឆានែល​​"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonAutoLevelsAllChannels)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:575
+#, fuzzy, kde-format
+#| msgid "Discard alpha channel"
+msgid "Apply auto levels to all the channels"
+msgstr "បោះបង់​ឆានែល​អាល់ហ្វា​"
+
+#. i18n: ectx: property (toolTip), widget (QToolButton, buttonResetAllChannels)
+#: plugins/filters/levelfilter/KisLevelsConfigWidget.ui:585
+#, fuzzy, kde-format
+msgid "Reset all channels"
+msgstr "ឆានែល​​"
+
+#: plugins/filters/levelfilter/KisLevelsFilter.cpp:18
+#, kde-format
+msgid "&Levels..."
+msgstr "កម្រិត..."
 
 #: plugins/filters/noisefilter/noisefilter.cpp:53
 #, kde-format
@@ -41355,7 +41525,7 @@ msgctxt "action"
 msgid "Threshold Filter"
 msgstr "កម្រិត​ពន្លឺ​ ៖ "
 
-#: plugins/filters/threshold/threshold.cpp:54
+#: plugins/filters/threshold/threshold.cpp:55
 #, fuzzy, kde-format
 #| msgid "Threshold"
 msgid "&Threshold..."
@@ -48087,7 +48257,7 @@ msgstr "បាន​បើក​"
 msgid "Cut Off Pattern"
 msgstr "លំនាំ​ផ្ទាល់ខ្លួន"
 
-#: plugins/paintops/libpaintop/kis_texture_chooser.cpp:88
+#: plugins/paintops/libpaintop/kis_texture_chooser.cpp:86
 #, kde-format
 msgid ""
 "When pattern texture values are outside the range specified by the slider, "
@@ -49090,11 +49260,6 @@ msgstr "ពន្លឺ ៖"
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:43
 msgid " DPI"
 msgstr ""
-
-#: plugins/python/comics_project_management_tools/comics_export_dialog.py:65
-#, fuzzy
-msgid "Method:"
-msgstr "វិធីសាស្ត្រ​"
 
 #: plugins/python/comics_project_management_tools/comics_export_dialog.py:66
 #: plugins/python/comics_project_management_tools/comics_template_dialog.py:177
@@ -54907,6 +55072,10 @@ msgid "Reference Images Tool"
 msgstr "រូបភាព​យោង ៖"
 
 #, fuzzy
+#~ msgid "Clean Up"
+#~ msgstr "មុំ​គូស"
+
+#, fuzzy
 #~ msgctxt "action"
 #~ msgid "Filters"
 #~ msgstr "តម្រង"
@@ -59501,10 +59670,6 @@ msgstr "រូបភាព​យោង ៖"
 #, fuzzy
 #~ msgid "All invisibles"
 #~ msgstr "ក្រឡាក្បឿង​តូចៗ"
-
-#, fuzzy
-#~ msgid "1st output"
-#~ msgstr "លទ្ធផល"
 
 #, fuzzy
 #~ msgid "2nd output"
@@ -83472,9 +83637,6 @@ msgstr "រូបភាព​យោង ៖"
 
 #~ msgid "Rounded edge"
 #~ msgstr "គែម​មូល​"
-
-#~ msgid "Shadows 3"
-#~ msgstr "ស្រមោល ៣"
 
 #~ msgid "Skyline"
 #~ msgstr "ជើងមេឃ"
