@@ -47,7 +47,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2021-11-09 00:15+0000\n"
+"POT-Creation-Date: 2021-11-10 00:15+0000\n"
 "PO-Revision-Date: 2010-06-23 14:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -36137,7 +36137,7 @@ msgid "Map"
 msgstr "ផែនទី"
 
 #: core/libs/properties/itempropertiessidebar.cpp:254
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:559
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:569
 #: core/showfoto/stackview/showfotostackviewitem.cpp:80
 #, fuzzy, kde-format
 #| msgid "Images"
@@ -45300,7 +45300,7 @@ msgid "The bookmark title which must be unique and not empty"
 msgstr ""
 
 #: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:137
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:198
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:205
 #, fuzzy, kde-format
 #| msgid "&Icon:"
 msgctxt "@label"
@@ -45308,7 +45308,7 @@ msgid "&Icon:"
 msgstr "រូបតំណាង ៖"
 
 #: core/showfoto/folderview/showfotofolderviewbookmarkdlg.cpp:145
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:206
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:214
 #, fuzzy, kde-format
 #| msgid "Reset"
 msgctxt "@action:button"
@@ -46396,7 +46396,7 @@ msgstr "ឈ្មោះ ៖"
 #, fuzzy, kde-format
 #| msgid "Enter tag name here..."
 msgctxt "@info"
-msgid "Enter favorite item name here..."
+msgid "Enter favorite entry name here..."
 msgstr "បញ្ចូល​​ឈ្មោះ​ស្លាក​នៅ​ទីនេះ..."
 
 #: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:154
@@ -46415,40 +46415,52 @@ msgstr "ស្វែងរក​"
 #: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:163
 #, kde-format
 msgctxt "@info"
-msgid "The favorite item hierarchy which must be unique in tree-view"
+msgid "The favorite entry hierarchy which must be unique in tree-view"
 msgstr ""
 
 #: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:168
 #, fuzzy, kde-format
-#| msgid "Advanced Search - 1 Item"
-#| msgid_plural "Advanced Search - %1 Items"
-msgctxt "@option:check"
-msgid "Advanced Properties Item"
-msgstr "ស្វែងរក​កម្រិត​ខ្ពស់ - %1 ធាតុ"
+#| msgid "Type:"
+msgctxt "@label: favorite entry type properties"
+msgid "Type:"
+msgstr "ប្រភេទ ៖"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:169
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:171
+#, fuzzy, kde-format
+msgctxt "@option:combo"
+msgid "Favorite Folder"
+msgstr "លក្ខណៈ​ពិសេស​​"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:172
+#, fuzzy, kde-format
+msgctxt "@option:combo"
+msgid "Favorite Item"
+msgstr "លក្ខណៈ​ពិសេស​​"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:174
 #, kde-format
-msgctxt "@info:whatsthis"
+msgctxt "@info"
 msgid ""
-"Turn on this option to enable advanced properties stored by the favorite "
-"item. If this option is disabled, favorite item will be a simple folder in "
-"the hierarchy."
+"A \"Favorite Item\" is a hierarchy entry hosting advanced properties\n"
+"as date, icon, description, and images list.\n"
+"A \"Favorite Folder\" is a simple entry in the hierarchy without extra "
+"property."
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:176
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:182
 #, fuzzy, kde-format
 msgctxt "@label: favorite item caption properties"
 msgid "&Description:"
 msgstr "សេចក្ដី​ពិពណ៌នា ៖"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:180
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:186
 #, fuzzy, kde-format
 #| msgid "Enter tag name here..."
 msgctxt "@info"
 msgid "Enter favorite item description here..."
 msgstr "បញ្ចូល​​ឈ្មោះ​ស្លាក​នៅ​ទីនេះ..."
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:186
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:192
 #, fuzzy, kde-format
 #| msgctxt "creation date of the image"
 #| msgid "Created:"
@@ -46456,49 +46468,69 @@ msgctxt "@label: favorite item date properties"
 msgid "&Created:"
 msgstr "បាន​បង្កើត ៖"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:219
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:199
+#, kde-format
+msgctxt "@info"
+msgid ""
+"Select favorite item date. By default, day of item creation is assigned."
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:210
+#, fuzzy, kde-format
+#| msgid "Set here the color used to draw composition guides."
+msgctxt "@info"
+msgid "Select here the icon to use for this favorite item in tree-view."
+msgstr "កំណត់​ពណ៌​ដែល​បាន​ប្រើ​នៅ​ទីនេះ ដើម្បី​អូស​មគ្គុទ្ទេសក៍សមាសភាគ ។"
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:215
+#, kde-format
+msgctxt "@info"
+msgid "Assign favorite item icon to default in tree-view."
+msgstr ""
+
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:228
 #, fuzzy, kde-format
 #| msgid "Items:"
 msgctxt "@label: favorites item file properties"
 msgid "&Items:"
 msgstr "ធាតុ ៖"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:233
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:242
 #, fuzzy, kde-format
 #| msgid "Name:"
 msgctxt "@title"
 msgid "Name"
 msgstr "ឈ្មោះ ៖"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:234
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:243
 #, fuzzy, kde-format
 #| msgid "Size"
 msgctxt "@title"
 msgid "Size"
 msgstr "ទំហំ"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:235
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:244
 #, fuzzy, kde-format
 #| msgid "Type:"
 msgctxt "@title"
 msgid "Type"
 msgstr "ប្រភេទ ៖"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:236
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:245
 #, fuzzy, kde-format
 #| msgid "Date"
 msgctxt "@title"
 msgid "Date"
 msgstr "កាលបរិច្ឆេទ"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:237
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:246
 #, fuzzy, kde-format
 #| msgid "Path"
 msgctxt "@title"
 msgid "Path"
 msgstr "ផ្លូវ"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:239
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:248
 #, kde-format
 msgctxt "@info"
 msgid ""
@@ -46508,21 +46540,21 @@ msgid ""
 "first one from the list will be displayed."
 msgstr ""
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:349
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:359
 #, fuzzy, kde-format
 #| msgid "Tag name cannot be empty"
 msgctxt "@label"
 msgid "Note: favorite item name cannot be empty!"
 msgstr "ឈ្មោះ​ស្លាក​មិន​អាច​ទទេ​ឡើយ"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:353
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:363
 #, fuzzy, kde-format
 #| msgid "Tag name cannot be empty"
 msgctxt "@label"
 msgid "Note: favorite item files list cannot be empty!"
 msgstr "ឈ្មោះ​ស្លាក​មិន​អាច​ទទេ​ឡើយ"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:357
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:367
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Note: favorite item name already exists in hierarchy!"
@@ -46530,14 +46562,14 @@ msgstr ""
 "ស្លាក​ផ្សេងទៀត​មាន​ឈ្មោះ​នេះ​រួច​​ហើយ ។\n"
 "សូម​ជ្រើស​ឈ្មោះ​ផ្សេង ។"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:390
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:400
 #, fuzzy, kde-format
 #| msgid "Tag name cannot be empty"
 msgctxt "@label"
 msgid "Note: favorite folder name cannot be empty!"
 msgstr "ឈ្មោះ​ស្លាក​មិន​អាច​ទទេ​ឡើយ"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:394
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:404
 #, fuzzy, kde-format
 msgctxt "@label"
 msgid "Note: favorite folder name already exists in hierarchy!"
@@ -46545,7 +46577,7 @@ msgstr ""
 "ស្លាក​ផ្សេងទៀត​មាន​ឈ្មោះ​នេះ​រួច​​ហើយ ។\n"
 "សូម​ជ្រើស​ឈ្មោះ​ផ្សេង ។"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:410
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:420
 #, fuzzy, kde-format
 #| msgctxt "Content type"
 #| msgid "Profile"
@@ -46554,25 +46586,25 @@ msgid "%1 file"
 msgid_plural "%1 files"
 msgstr[0] "ទម្រង់"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:642
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:652
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "New Favorite Item"
 msgstr "លក្ខណៈ​ពិសេស​​"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:646
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:656
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Edit Favorite Item"
 msgstr "ចំណងជើង​រូបភាព"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:653
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:663
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "New Favorite Folder"
 msgstr "លក្ខណៈ​ពិសេស​​"
 
-#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:657
+#: core/showfoto/stackview/showfotostackviewfavoriteitemdlg.cpp:667
 #, fuzzy, kde-format
 msgctxt "@title"
 msgid "Edit Favorite Folder"
@@ -58333,17 +58365,24 @@ msgid ""
 msgstr ""
 
 #, fuzzy
+#~| msgid "Enter tag name here..."
+#~ msgctxt "@info"
+#~ msgid "Enter favorite item name here..."
+#~ msgstr "បញ្ចូល​​ឈ្មោះ​ស្លាក​នៅ​ទីនេះ..."
+
+#, fuzzy
+#~| msgid "Advanced Search - 1 Item"
+#~| msgid_plural "Advanced Search - %1 Items"
+#~ msgctxt "@option:check"
+#~ msgid "Advanced Properties Item"
+#~ msgstr "ស្វែងរក​កម្រិត​ខ្ពស់ - %1 ធាតុ"
+
+#, fuzzy
 #~| msgctxt "filename"
 #~| msgid "Name:"
 #~ msgctxt "@label: favorite folder title properties"
 #~ msgid "&Name:"
 #~ msgstr "ឈ្មោះ ៖"
-
-#, fuzzy
-#~| msgid "Enter tag name here..."
-#~ msgctxt "@info"
-#~ msgid "Enter favorite folder name here..."
-#~ msgstr "បញ្ចូល​​ឈ្មោះ​ស្លាក​នៅ​ទីនេះ..."
 
 #, fuzzy
 #~| msgid "Search"
