@@ -47,7 +47,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: digikam\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-01-03 00:41+0000\n"
+"POT-Creation-Date: 2022-01-04 00:42+0000\n"
 "PO-Revision-Date: 2010-06-23 14:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -21752,7 +21752,6 @@ msgstr "ស្លាក '%2' ត្រូវ​បាន​កំណត់​ទ
 #: core/dplugins/generic/webservices/pinterest/pwindow.cpp:264
 #: core/dplugins/generic/webservices/smugmug/smugwindow.cpp:683
 #: core/dplugins/generic/webservices/twitter/twitterwindow.cpp:268
-#: core/libs/database/utils/ifaces/dio.cpp:363
 #: core/libs/dialogs/dmessagebox.cpp:164
 #, kde-format
 msgid "Continue"
@@ -25521,7 +25520,7 @@ msgid ""
 msgstr ""
 
 #: core/libs/album/engine/album.cpp:378
-#: core/libs/database/utils/ifaces/dio.cpp:711
+#: core/libs/database/utils/ifaces/dio.cpp:714
 #, kde-format
 msgid "Trash"
 msgstr ""
@@ -27504,67 +27503,80 @@ msgstr ""
 msgid ""
 "Files or folders with the same name already exist in the target folder.\n"
 "\n"
-"What action is applied in the event of a file conflict?"
+"What action is applied in the event of a file conflict?\n"
+"\n"
+"Available options are:\n"
+"Rename automatically: conflicting files will be renamed.\n"
+"Overwrite automatically: conflicting files will be overwritten.\n"
+"Skip automatically: conflicting files will be skipped."
 msgstr ""
 
-#: core/libs/database/utils/ifaces/dio.cpp:359
+#: core/libs/database/utils/ifaces/dio.cpp:362
 #, fuzzy, kde-format
 #| msgid "Overwrite automatically"
 msgid "Rename automatically"
 msgstr "សរសេរ​ជាន់​លើ​ដោយ​ស្វ័យប្រវត្តិ​"
 
-#: core/libs/database/utils/ifaces/dio.cpp:361
+#: core/libs/database/utils/ifaces/dio.cpp:364
 #: core/libs/widgets/files/filesaveconflictbox.cpp:78
 #: core/utilities/setup/camera/setupcamera.cpp:384
 #, kde-format
 msgid "Overwrite automatically"
 msgstr "សរសេរ​ជាន់​លើ​ដោយ​ស្វ័យប្រវត្តិ​"
 
-#: core/libs/database/utils/ifaces/dio.cpp:675
+#: core/libs/database/utils/ifaces/dio.cpp:366
+#: core/libs/widgets/files/filesaveconflictbox.cpp:79
+#: core/utilities/setup/camera/setupcamera.cpp:385
+#, fuzzy, kde-format
+#| msgid "Overwrite automatically"
+msgid "Skip automatically"
+msgstr "សរសេរ​ជាន់​លើ​ដោយ​ស្វ័យប្រវត្តិ​"
+
+#: core/libs/database/utils/ifaces/dio.cpp:678
 #, fuzzy, kde-format
 #| msgid "By Album"
 msgid "Copy Album"
 msgstr "តាម​អាល់ប៊ុម"
 
-#: core/libs/database/utils/ifaces/dio.cpp:680
+#: core/libs/database/utils/ifaces/dio.cpp:683
 #, fuzzy, kde-format
 #| msgid "&Group Images"
 msgid "Copy Images"
 msgstr "រូបភាព​ក្រុម"
 
-#: core/libs/database/utils/ifaces/dio.cpp:686
+#: core/libs/database/utils/ifaces/dio.cpp:689
 #, fuzzy, kde-format
 #| msgid "&Copy Here"
 msgid "Copy Files"
 msgstr "ចម្លង​​នៅ​ទីនេះ"
 
-#: core/libs/database/utils/ifaces/dio.cpp:691
+#: core/libs/database/utils/ifaces/dio.cpp:694
 #, fuzzy, kde-format
 #| msgid "&Move to Album..."
 msgid "Move Album"
 msgstr "ផ្លាស់ទី​ទៅ​អាល់ប៊ុម..."
 
-#: core/libs/database/utils/ifaces/dio.cpp:696
+#: core/libs/database/utils/ifaces/dio.cpp:699
 #, fuzzy, kde-format
 #| msgctxt "@title"
 #| msgid "Source Images"
 msgid "Move Images"
 msgstr "រូបភាព​ប្រភព"
 
-#: core/libs/database/utils/ifaces/dio.cpp:701
+#: core/libs/database/utils/ifaces/dio.cpp:704
 #, fuzzy, kde-format
 #| msgid "Movie Files"
 msgid "Move Files"
 msgstr "ផ្លាស់ទី​ឯកសារ"
 
-#: core/libs/database/utils/ifaces/dio.cpp:706
+#: core/libs/database/utils/ifaces/dio.cpp:709
 #: core/utilities/searchwindow/editablesearchtreeview.cpp:72
 #: core/utilities/setup/metadata/advancedmetadatatab.cpp:371
 #, kde-format
 msgid "Delete"
 msgstr "លុប"
 
-#: core/libs/database/utils/ifaces/dio.cpp:716
+#: core/libs/database/utils/ifaces/dio.cpp:719
 #, fuzzy, kde-format
 #| msgctxt "@action:inmenu Pluralized"
 #| msgid "Move to Trash"
@@ -27572,7 +27584,7 @@ msgstr "លុប"
 msgid "Restore Trash"
 msgstr "ផ្លាស់ទី​ឯកសារ​ %1 ទៅ​ធុង​សំរាម"
 
-#: core/libs/database/utils/ifaces/dio.cpp:721
+#: core/libs/database/utils/ifaces/dio.cpp:724
 #, kde-format
 msgid "Empty Trash"
 msgstr ""
@@ -39455,13 +39467,6 @@ msgstr "ប្រសិនបើ​មាន​ឯកសារ​គោលដៅ
 #, kde-format
 msgid "Store as a different name"
 msgstr "រក្សាទុក​ជា​ឈ្មោះ​ផ្សេង"
-
-#: core/libs/widgets/files/filesaveconflictbox.cpp:79
-#: core/utilities/setup/camera/setupcamera.cpp:385
-#, fuzzy, kde-format
-#| msgid "Overwrite automatically"
-msgid "Skip automatically"
-msgstr "សរសេរ​ជាន់​លើ​ដោយ​ស្វ័យប្រវត្តិ​"
 
 #: core/libs/widgets/files/filesaveoptionsbox.cpp:129
 #, kde-format
