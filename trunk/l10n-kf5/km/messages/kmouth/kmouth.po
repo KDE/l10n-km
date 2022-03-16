@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kmouth\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-02-11 00:38+0000\n"
+"POT-Creation-Date: 2022-03-16 00:38+0000\n"
 "PO-Revision-Date: 2009-06-03 15:22+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -838,33 +838,33 @@ msgstr "សួរ​ថា​តើ​ត្រូវ​រក្សា​ទុ
 msgid "Text-to-Speech"
 msgstr "អត្ថបទ​ទៅ​ការ​និយាយ"
 
-#. i18n: ectx: property (whatsThis), widget (QCheckBox, useQtSpeech)
-#: texttospeechconfigurationui.ui:35
-#, fuzzy, kde-format
-#| msgid ""
-#| "This check box specifies KMouth tries to use the KTTSD speech service "
-#| "prior to calling the speech synthesizer directly. The KTTSD speech "
-#| "service is a KDE daemon which gives KDE applications a standardized "
-#| "interface for speech synthesis and is currently developed in CVS."
-msgid ""
-"<html><head/><body><p>This check box specifies KMouth tries to use the "
-"system speech service prior to calling the speech synthesizer directly. The "
-"system speech service is a Qt library which wraps speech-dispatcher on "
-"linux, and native speech systems on other platforms.</p></body></html>"
-msgstr ""
-"ប្រអប់​ធីក​នេះ​បញ្ជាក់​ថា KMouth ព្យាយាម​ប្រើ​សេវា​និយាយ KTTSD មុន​ហៅ​កម្មវិធី​សំយោគ​ការ​និយាយ​ដោយ​"
-"ផ្ទាល់ ។ សេវា​និយាយ KTTSD គឺ​ជា​ដេមិន KDE ដែល​ផ្តល់​ឲ្យ​កម្មវិធី KDE នូវ​ចំណុ​ប្រទាក់​ស្តង់ដារ​មួយ សម្រាប់​"
-"សំយោគ​ការ​និយាយ ហើយ​បច្ចុប្បន្ន​​វា​កំពុង​ត្រូវ​បាន​អភិវឌ្ឍ​ក្នុង CVS ។"
-
-#. i18n: ectx: property (text), widget (QCheckBox, useQtSpeech)
-#: texttospeechconfigurationui.ui:38
+#. i18n: ectx: property (title), widget (QGroupBox, qtspeechGroupBox)
+#: texttospeechconfigurationui.ui:32
 #, kde-format
 msgid "&Use default speech system"
 msgstr ""
 
+#. i18n: ectx: property (text), widget (QLabel, label)
+#: texttospeechconfigurationui.ui:41
+#, kde-format
+msgid "&Engine:"
+msgstr ""
+
+#. i18n: ectx: property (text), widget (QLabel, label_2)
+#: texttospeechconfigurationui.ui:61
+#, kde-format
+msgid "&Voice:"
+msgstr ""
+
+#. i18n: ectx: property (title), widget (QGroupBox, alternativeGroupBox)
+#: texttospeechconfigurationui.ui:87
+#, kde-format
+msgid "Alternative"
+msgstr ""
+
 #. i18n: ectx: property (whatsThis), widget (QLabel, urlLabel)
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, urlReq)
-#: texttospeechconfigurationui.ui:72 texttospeechconfigurationui.ui:95
+#: texttospeechconfigurationui.ui:120 texttospeechconfigurationui.ui:143
 #, no-c-format, kde-format
 msgid ""
 "This field specifies both the command used for speaking texts and its "
@@ -882,30 +882,14 @@ msgstr ""
 "%% -- សញ្ញា​ភាគរយ"
 
 #. i18n: ectx: property (text), widget (QLabel, urlLabel)
-#: texttospeechconfigurationui.ui:75
+#: texttospeechconfigurationui.ui:123
 #, fuzzy, kde-format
 #| msgid "C&ommand for speaking texts:"
-msgid "Alternative command for speaking &texts:"
+msgid "Command for speaking &texts:"
 msgstr "ពាក្យ​បញ្ជា​សម្រាប់​អត្ថបទ​និយាយ ៖"
 
-#. i18n: ectx: property (whatsThis), widget (QLabel, characterCodingLabel)
-#. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
-#: texttospeechconfigurationui.ui:127 texttospeechconfigurationui.ui:140
-#, kde-format
-msgid ""
-"This combo box specifies which character encoding is used for passing the "
-"text."
-msgstr "ប្រអប់​បន្សំ​នេះ​បញ្ជាក់​ថា​តើ ​សំណុំ​តួ​អក្សរ​មួយ​ណា​ដែល​ត្រូវ​ប្រើ​សម្រាប់​ញែក​អត្ថបទ ។"
-
-#. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
-#: texttospeechconfigurationui.ui:130
-#, fuzzy, kde-format
-#| msgid "Character &encoding:"
-msgid "Character encodin&g:"
-msgstr "សំណុំ​តួ​អក្សរ ៖"
-
 #. i18n: ectx: property (whatsThis), widget (QCheckBox, stdInButton)
-#: texttospeechconfigurationui.ui:149
+#: texttospeechconfigurationui.ui:152
 #, kde-format
 msgid ""
 "This check box specifies whether the text is sent as standard input to the "
@@ -914,25 +898,41 @@ msgstr ""
 "ប្រអប់​ធីក​នេះ​បញ្ជាក់​ថា​តើ អត្ថបទ​ដែល​ត្រូវ​ផ្ញើ​ជា​ការ​បញ្ចូល​ស្តង់ដារ ទៅ​កាន់​កម្មវិធី​សំយោគ​ការ​និយាយ ។"
 
 #. i18n: ectx: property (text), widget (QCheckBox, stdInButton)
-#: texttospeechconfigurationui.ui:152
+#: texttospeechconfigurationui.ui:155
 #, kde-format
 msgid "Send the data as standard &input"
 msgstr "បញ្ជូន​ទិន្នន័យ​ជា​ការ​បញ្ចូល​ស្តង់ដារ"
 
-#: texttospeechconfigurationwidget.cpp:46
+#. i18n: ectx: property (whatsThis), widget (QLabel, characterCodingLabel)
+#. i18n: ectx: property (whatsThis), widget (KComboBox, characterCodingBox)
+#: texttospeechconfigurationui.ui:185 texttospeechconfigurationui.ui:198
+#, kde-format
+msgid ""
+"This combo box specifies which character encoding is used for passing the "
+"text."
+msgstr "ប្រអប់​បន្សំ​នេះ​បញ្ជាក់​ថា​តើ ​សំណុំ​តួ​អក្សរ​មួយ​ណា​ដែល​ត្រូវ​ប្រើ​សម្រាប់​ញែក​អត្ថបទ ។"
+
+#. i18n: ectx: property (text), widget (QLabel, characterCodingLabel)
+#: texttospeechconfigurationui.ui:188
+#, fuzzy, kde-format
+#| msgid "Character &encoding:"
+msgid "Character encodin&g:"
+msgstr "សំណុំ​តួ​អក្សរ ៖"
+
+#: texttospeechconfigurationwidget.cpp:65
 #: wordcompletion/dictionarycreationwizard.cpp:116
 #, kde-format
 msgctxt "Local characterset"
 msgid "Local"
 msgstr "មូលដ្ឋាន"
 
-#: texttospeechconfigurationwidget.cpp:49
+#: texttospeechconfigurationwidget.cpp:68
 #, kde-format
 msgctxt "Latin1 characterset"
 msgid "Latin1"
 msgstr "ឡាតាំង ១"
 
-#: texttospeechconfigurationwidget.cpp:50
+#: texttospeechconfigurationwidget.cpp:69
 #: wordcompletion/dictionarycreationwizard.cpp:120
 #, kde-format
 msgid "Unicode"
@@ -1346,6 +1346,22 @@ msgstr "កំពុង​ញែក​ថត​..."
 #, kde-format
 msgid "Performing spell check..."
 msgstr "កំពុង​អនុវត្ត​ការ​ពិនិត្យ​អក្ខរាវិរុទ្ធ..."
+
+#, fuzzy
+#~| msgid ""
+#~| "This check box specifies KMouth tries to use the KTTSD speech service "
+#~| "prior to calling the speech synthesizer directly. The KTTSD speech "
+#~| "service is a KDE daemon which gives KDE applications a standardized "
+#~| "interface for speech synthesis and is currently developed in CVS."
+#~ msgid ""
+#~ "<html><head/><body><p>This check box specifies KMouth tries to use the "
+#~ "system speech service prior to calling the speech synthesizer directly. "
+#~ "The system speech service is a Qt library which wraps speech-dispatcher "
+#~ "on linux, and native speech systems on other platforms.</p></body></html>"
+#~ msgstr ""
+#~ "ប្រអប់​ធីក​នេះ​បញ្ជាក់​ថា KMouth ព្យាយាម​ប្រើ​សេវា​និយាយ KTTSD មុន​ហៅ​កម្មវិធី​សំយោគ​ការ​និយាយ​ដោយ​"
+#~ "ផ្ទាល់ ។ សេវា​និយាយ KTTSD គឺ​ជា​ដេមិន KDE ដែល​ផ្តល់​ឲ្យ​កម្មវិធី KDE នូវ​ចំណុ​ប្រទាក់​ស្តង់ដារ​មួយ "
+#~ "សម្រាប់​សំយោគ​ការ​និយាយ ហើយ​បច្ចុប្បន្ន​​វា​កំពុង​ត្រូវ​បាន​អភិវឌ្ឍ​ក្នុង CVS ។"
 
 #, fuzzy
 #~| msgid "KMouth"
