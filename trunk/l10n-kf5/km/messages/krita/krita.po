@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: krita\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-19 00:42+0000\n"
+"POT-Creation-Date: 2022-07-20 00:43+0000\n"
 "PO-Revision-Date: 2010-06-29 09:54+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -19506,9 +19506,6 @@ msgstr "ឯកសារ​ប្រភព ៖"
 #: plugins/extensions/resourcemanager/dlg_create_bundle.cpp:413
 #: plugins/filters/colorsfilters/kis_multichannel_filter_base.cpp:352
 #: plugins/filters/levelfilter/KisLevelsConfigWidget.cpp:163
-#: plugins/tools/basictools/kis_tool_colorsampler.cc:162
-#: plugins/tools/basictools/kis_tool_colorsampler.cc:167
-#: plugins/tools/basictools/kis_tool_colorsampler.cc:225
 #: plugins/tools/defaulttool/referenceimagestool/KisReferenceImageCollection.cpp:95
 #: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:131
 #: plugins/tools/defaulttool/referenceimagestool/ToolReferenceImages.cpp:166
@@ -22580,7 +22577,7 @@ msgstr "លក្ខណៈ​សម្បត្តិ​ស្រទាប់"
 #: plugins/paintops/spray/kis_sprayop_option.cpp:60
 #: plugins/paintops/tangentnormal/kis_tangent_tilt_option.cpp:39
 #: plugins/paintops/tangentnormal/kis_tangent_tilt_option.cpp:43
-#: plugins/tools/basictools/kis_tool_colorsampler.cc:398
+#: plugins/tools/basictools/kis_tool_colorsampler.cc:273
 #: plugins/tools/basictools/kis_tool_fill.cc:359
 #: plugins/tools/basictools/kis_tool_fill.cc:369
 #: plugins/tools/selectiontools/kis_tool_select_contiguous.cc:244
@@ -31735,12 +31732,7 @@ msgstr ""
 msgid "The MyPaint Brush Engine is not available for this colorspace"
 msgstr ""
 
-#: libs/ui/tool/kis_tool_paint.cc:431
-#, kde-format
-msgid "Color sampler does not work on this layer."
-msgstr ""
-
-#: libs/ui/tool/kis_tool_paint.cc:718
+#: libs/ui/tool/kis_tool_paint.cc:569
 #, fuzzy, kde-format
 #| msgid "Brush size"
 msgid "Brush Size: %1 px"
@@ -31778,6 +31770,11 @@ msgstr ""
 msgctxt "(qtundo-format)"
 msgid "Clear"
 msgstr "ជម្រះ"
+
+#: libs/ui/tool/KisAsyncColorSamplerHelper.cpp:291
+#, kde-format
+msgid "Color sampler does not work on this layer."
+msgstr ""
 
 #: libs/ui/tool/KisToolPaintFactoryBase.cpp:27
 #, kde-format
@@ -55395,24 +55392,12 @@ msgstr ""
 msgid "Freehand Brush Tool"
 msgstr "ជក់​ដែល​បានកំណត់​ជា​ស្រេច"
 
-#: plugins/tools/basictools/kis_tool_colorsampler.cc:162
-#, fuzzy, kde-format
-#| msgid "Cannot pick a color as no layer is active."
-msgid "Cannot sample a color as no layer is active."
-msgstr "មិន​អាច​រើស​ពណ៌​ពេល​ដែល​គ្មាន​ស្រទាប់​សកម្ម ។"
-
-#: plugins/tools/basictools/kis_tool_colorsampler.cc:167
-#, fuzzy, kde-format
-#| msgid "Cannot pick a color as the active layer is not visible."
-msgid "Cannot sample a color as the active layer is not visible."
-msgstr "មិន​អាច​រើស​ពណ៌​ពេល​ដែល​ស្រទាប់​សកម្ម​មើល​មិន​ឃើញ ។"
-
-#: plugins/tools/basictools/kis_tool_colorsampler.cc:225
+#: plugins/tools/basictools/kis_tool_colorsampler.cc:90
 #, kde-format
 msgid "Cannot write to palette file %1. Maybe it is read-only."
 msgstr "មិន​អាច​សរសេរ​ទៅ​កាន់​ឯកសារ​ក្ដារលាយ %1 បាន​ឡើយ​។ ប្រហែល​ជា​វា​បាន​តែ​អាន​ប៉ុណ្ណោះ ។"
 
-#: plugins/tools/basictools/kis_tool_colorsampler.h:137
+#: plugins/tools/basictools/kis_tool_colorsampler.h:122
 #, fuzzy, kde-format
 msgid "Color Sampler Tool"
 msgstr "ឧបករណ៍​ជ្រើស​ពណ៌"
@@ -59231,6 +59216,16 @@ msgstr "ពណ៌​ទៅ​អាល់ហ្វា"
 msgctxt "action"
 msgid "Reference Images Tool"
 msgstr "រូបភាព​យោង ៖"
+
+#, fuzzy
+#~| msgid "Cannot pick a color as no layer is active."
+#~ msgid "Cannot sample a color as no layer is active."
+#~ msgstr "មិន​អាច​រើស​ពណ៌​ពេល​ដែល​គ្មាន​ស្រទាប់​សកម្ម ។"
+
+#, fuzzy
+#~| msgid "Cannot pick a color as the active layer is not visible."
+#~ msgid "Cannot sample a color as the active layer is not visible."
+#~ msgstr "មិន​អាច​រើស​ពណ៌​ពេល​ដែល​ស្រទាប់​សកម្ម​មើល​មិន​ឃើញ ។"
 
 #, fuzzy
 #~ msgid "Could not save %1."
