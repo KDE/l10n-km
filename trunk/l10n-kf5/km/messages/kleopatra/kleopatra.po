@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-07-30 00:47+0000\n"
+"POT-Creation-Date: 2022-08-02 00:47+0000\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -652,7 +652,6 @@ msgid "CRL cache cleared successfully."
 msgstr "បាន​ជម្រះ​ឃ្លាំង​សម្ងាត់ CRL ដោយ​ជោគជ័យ ។"
 
 #: src/commands/command_p.h:105
-#: src/dialogs/newopenpgpcertificateresultdialog.cpp:140
 #, kde-format
 msgctxt "@title:window"
 msgid "Success"
@@ -2407,14 +2406,21 @@ msgctxt "@title"
 msgid "No Directory Servers Configured"
 msgstr "គ្មាន​ម៉ាស៊ីន​បម្រើ​ថត​បានកំណត់​រចនាសម្ព័ន្ធ"
 
-#: src/commands/newopenpgpcertificatecommand.cpp:155
+#: src/commands/newcertificatesigningrequestcommand.cpp:104
+#: src/kleopatraapplication.cpp:479
+#, fuzzy, kde-format
+#| msgid "Create a personal X.509 key pair and certification request "
+msgid "You are not allowed to create S/MIME certificate signing requests."
+msgstr "បង្កើត​គូសោ X.509 ផ្ទាល់ខ្លួន និង​សំណើ​​បញ្ជាក់ "
+
+#: src/commands/newopenpgpcertificatecommand.cpp:149
 #: src/newcertificatewizard/keycreationpage.cpp:99
 #, fuzzy, kde-format
 #| msgid "Could not start certificate creation: %1"
 msgid "Could not start key pair creation: %1"
 msgstr "មិន​អាច​ចាប់ផ្ដើម​បង្កើត​វិញ្ញាបនបត្រ ៖ %1"
 
-#: src/commands/newopenpgpcertificatecommand.cpp:165
+#: src/commands/newopenpgpcertificatecommand.cpp:159
 #: src/newcertificatewizard/keycreationpage.cpp:52
 #, fuzzy, kde-format
 #| msgctxt "@title"
@@ -2423,7 +2429,7 @@ msgctxt "@title"
 msgid "Creating Key Pair..."
 msgstr "កំពុង​បង្កើត​សោ..."
 
-#: src/commands/newopenpgpcertificatecommand.cpp:166
+#: src/commands/newopenpgpcertificatecommand.cpp:160
 #: src/newcertificatewizard/keycreationpage.cpp:56
 #, kde-format
 msgid ""
@@ -2431,7 +2437,14 @@ msgid ""
 "may require several minutes..."
 msgstr ""
 
-#: src/commands/newopenpgpcertificatecommand.cpp:245
+#: src/commands/newopenpgpcertificatecommand.cpp:193
+#, kde-kuit-format
+msgid ""
+"<para>A new OpenPGP certificate was created successfully.</"
+"para><para>Fingerprint of the new certificate: %1</para>"
+msgstr ""
+
+#: src/commands/newopenpgpcertificatecommand.cpp:207
 #, fuzzy, kde-kuit-format
 #| msgctxt "@info"
 #| msgid ""
@@ -2442,7 +2455,7 @@ msgid ""
 "<message>%1</message></para>"
 msgstr "<para>កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ផ្ទុក​វិញ្ញាបនបត្រ ៖ <message>%1</message></para>"
 
-#: src/commands/newopenpgpcertificatecommand.cpp:251
+#: src/commands/newopenpgpcertificatecommand.cpp:213
 #, kde-kuit-format
 msgid ""
 "<para>A new OpenPGP certificate was created successfully, but it has not "
@@ -2450,7 +2463,7 @@ msgid ""
 "<nl/>%1</para>"
 msgstr ""
 
-#: src/commands/newopenpgpcertificatecommand.cpp:258
+#: src/commands/newopenpgpcertificatecommand.cpp:220
 #: src/crypto/newsignencryptemailcontroller.cpp:576
 #: src/crypto/newsignencryptemailcontroller.cpp:581
 #, kde-format
@@ -4731,7 +4744,6 @@ msgstr "បន្ថែម​អ្នក​ទទួល..."
 
 #: src/crypto/gui/resolverecipientspage.cpp:402
 #: src/crypto/gui/signencryptemailconflictdialog.cpp:368
-#: src/dialogs/choosecertificateprotocoldialog.cpp:62
 #: src/view/padwidget.cpp:171
 #, kde-format
 msgid "OpenPGP"
@@ -6167,12 +6179,12 @@ msgstr ""
 msgid "The issuer certificate could not be found locally."
 msgstr "វិញ្ញាបនបត្រ​នេះ ត្រូវបាន​បិទ​ជា​មូលដ្ឋាន ។"
 
-#: src/dialogs/certificateselectiondialog.cpp:134
+#: src/dialogs/certificateselectiondialog.cpp:133
 #, kde-format
 msgid "Please select one or more of the following certificates:"
 msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​ខាងក្រោម​មួយ ឬ​ច្រើន ៖"
 
-#: src/dialogs/certificateselectiondialog.cpp:135
+#: src/dialogs/certificateselectiondialog.cpp:134
 #, kde-format
 msgid "Please select one of the following certificates:"
 msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​ខាងក្រោម​មួយ ៖"
@@ -6190,7 +6202,7 @@ msgid "Refresh certificate list"
 msgstr "ធ្វើ​ឲ្យ​បញ្ជី​​​វិញ្ញាបនបត្រ​ស្រស់"
 
 #: src/dialogs/certificateselectiondialog.cpp:168
-#: src/view/keylistcontroller.cpp:389 src/view/welcomewidget.cpp:127
+#: src/view/keylistcontroller.cpp:390 src/view/welcomewidget.cpp:127
 #, fuzzy, kde-format
 #| msgid "Import"
 msgid "Import..."
@@ -6236,10 +6248,11 @@ msgid "New..."
 msgstr "ថ្មី..."
 
 #: src/dialogs/certificateselectiondialog.cpp:175
-#, kde-format
+#, fuzzy, kde-format
+#| msgid "OpenPGP Certificates"
 msgctxt "@info:tooltip"
-msgid "Create a new certificate"
-msgstr "បង្កើត​វិញ្ញាបនបត្រ​ថ្មី​មួយ​"
+msgid "Create a new OpenPGP certificate"
+msgstr "វិញ្ញាបនបត្រ OpenPGP"
 
 #: src/dialogs/certificateselectiondialog.cpp:176
 #, fuzzy, kde-format
@@ -6464,57 +6477,6 @@ msgstr "បាន​ជោគជ័យ​ក្នុង​កា​រ​ផ្
 #| msgid "PIN set successfully."
 msgid "Owner trust set successfully."
 msgstr "កំណត់ PIN ដោយ​ជោគជ័យ​ ។"
-
-#: src/dialogs/choosecertificateprotocoldialog.cpp:46
-#, fuzzy, kde-format
-#| msgid "Please choose which type of certificate you want to create. "
-msgid "Choose which type of key pair you want to create."
-msgstr "សូម​ជ្រើស​ប្រភេទ​វិញ្ញាបនបត្រ​ណាមួយ​ដែល​អ្នក​ចង់​បង្កើត ។ "
-
-#: src/dialogs/choosecertificateprotocoldialog.cpp:65
-#, kde-format
-msgid ""
-"OpenPGP key pairs are certified by confirming the fingerprint of the public "
-"key."
-msgstr ""
-
-#: src/dialogs/choosecertificateprotocoldialog.cpp:70
-#, fuzzy, kde-format
-#| msgid "Create a personal OpenPGP key pair"
-msgid "Create a Personal OpenPGP Key Pair"
-msgstr "បង្កើត​គូរសោ OpenPGP ផ្ទាល់ខ្លួន"
-
-#: src/dialogs/choosecertificateprotocoldialog.cpp:80
-#, fuzzy, kde-format
-#| msgctxt "X.509/CMS encryption standard"
-#| msgid "X.509"
-msgid "X.509"
-msgstr "X.509"
-
-#: src/dialogs/choosecertificateprotocoldialog.cpp:83
-#, fuzzy, kde-format
-#| msgid ""
-#| "X.509 key pairs are created locally, but certified centrally by a "
-#| "certification authority (CA). CAs can certify other CAs, creating a "
-#| "central, hierarchical chain of trust."
-msgid ""
-"X.509 key pairs are certified by a certification authority (CA). The "
-"generated request needs to be sent to a CA to finalize creation."
-msgstr ""
-"គូសោ X.509 ត្រូវ​បាន​បង្កើត​ក្នុង​មូលដ្ឋាន ប៉ុន្តែ​បាន​បញ្ជាក់​ជា​ទូទៅ​ដោយ certification authority "
-"(CA) ។ CAs អាច​បញ្ជាក់​ CAs ផ្សេង​ទៀត ដោយ​បង្កើត​ឋានានុក្រម​កណ្ដាល​នៃ​កា​រទុកចិត្ត ។"
-
-#: src/dialogs/choosecertificateprotocoldialog.cpp:88
-#, fuzzy, kde-format
-#| msgid "Create a personal X.509 key pair and certification request "
-msgid "Create a Personal X.509 Key Pair and Certification Request"
-msgstr "បង្កើត​គូសោ X.509 ផ្ទាល់ខ្លួន និង​សំណើ​​បញ្ជាក់ "
-
-#: src/dialogs/choosecertificateprotocoldialog.cpp:113
-#, kde-format
-msgctxt "@title:window"
-msgid "Choose Type of Key Pair"
-msgstr ""
 
 #: src/dialogs/deletecertificatesdialog.cpp:92
 #, kde-format
@@ -6990,91 +6952,6 @@ msgstr ""
 msgid "Enter a name and/or an email address to use for the certificate."
 msgstr ""
 
-#: src/dialogs/newopenpgpcertificateresultdialog.cpp:85
-#: src/newcertificatewizard/resultpage.cpp:109
-#, fuzzy, kde-format
-#| msgid "Next Steps"
-msgctxt "@title:group"
-msgid "Next Steps"
-msgstr "ជំហាន​បន្ទាប់"
-
-#: src/dialogs/newopenpgpcertificateresultdialog.cpp:89
-#, fuzzy, kde-format
-#| msgid "Make a Backup Of Your Key Pair..."
-msgctxt "@action:button"
-msgid "Make a Backup Of Your Key Pair..."
-msgstr "ធ្វើ​ការ​បម្រុង​ទុក​នៃ​គូ​សោ​របស់​អ្នក​​..."
-
-#: src/dialogs/newopenpgpcertificateresultdialog.cpp:92
-#, fuzzy, kde-format
-#| msgid "Send Certificate By EMail..."
-msgctxt "@action:button"
-msgid "Send Public Key By EMail..."
-msgstr "ផ្ញើ​វិញ្ញាបនបត្រ​​តាម​អ៊ីមែល​​..."
-
-#: src/dialogs/newopenpgpcertificateresultdialog.cpp:95
-#, fuzzy, kde-format
-#| msgid "Upload Certificate To Directory Service..."
-msgctxt "@action:button"
-msgid "Upload Public Key To Directory Service..."
-msgstr "ផ្ទុក​វិញ្ញាបនបត្រ​ទៅ​សេវា​ថត...​"
-
-#: src/dialogs/newopenpgpcertificateresultdialog.cpp:143
-#, kde-kuit-format
-msgid ""
-"<para>A new OpenPGP certificate was created successfully. Find some "
-"suggested next steps below.</para><para>Fingerprint of the new certificate: "
-"%1</para>"
-msgstr ""
-
-#: src/dialogs/newopenpgpcertificateresultdialog.cpp:197
-#: src/newcertificatewizard/resultpage.cpp:313
-#, fuzzy, kde-format
-#| msgid "My new OpenPGP certificate"
-msgid "My new public OpenPGP key"
-msgstr "វិញ្ញាបនបត្រ OpenPGP ថ្មី​របស់​ខ្ញុំ"
-
-#: src/dialogs/newopenpgpcertificateresultdialog.cpp:197
-#: src/newcertificatewizard/resultpage.cpp:314
-#, fuzzy, kde-format
-#| msgid "Please find attached my new OpenPGP certificate."
-msgid "Please find attached my new public OpenPGP key."
-msgstr "សូម​រក​វិញ្ញាបនបត្រ OpenPGP ថ្មី​របស់​ខ្ញុំ​ដែល​បានភ្ជាប់ជា​មួយ ។"
-
-#: src/dialogs/newopenpgpcertificateresultdialog.cpp:200
-#: src/newcertificatewizard/resultpage.cpp:318
-#, fuzzy, kde-kuit-format
-#| msgctxt "@info"
-#| msgid ""
-#| "<para><application>Kleopatra</application> tried to send a mail via your "
-#| "default mail client.</para><para>Some mail clients are known not to "
-#| "support attachments when invoked this way.</para><para>If your mail "
-#| "client does not have an attachment, then drag the <application>Kleopatra</"
-#| "application> icon and drop it on the message compose window of your mail "
-#| "client.</para><para>If that does not work, either, save the request to a "
-#| "file, and then attach that.</para>"
-msgctxt "@info"
-msgid ""
-"<para><application>Kleopatra</application> tried to send a mail via your "
-"default mail client.</para><para>Some mail clients are known not to support "
-"attachments when invoked this way.</para><para>If your mail client does not "
-"have an attachment, then attach the file <filename>%1</filename> manually.</"
-"para>"
-msgstr ""
-"<para><application>Kleopatra</application> បាន​ព្យាយាម​ផ្ញើ​សំបុត្រ​តាមរយៈ​កម្មវិធី​អ៊ីមែល​លំនាំ​"
-"ដើម​របស់​អ្នក ។</para><para>កម្មវិធី​អ៊ីមែល​មួយ​ចំនួន​ត្រូវ​បាន​ដឹង​ថា​មិន​គាំទ្រ​ឯកសារ​ភ្ជាប់​នៅពេល​ដក​ហូត​វិធី​"
-"នេះ ។</para><para>ប្រសិន​បើ​​កម្មវិធី​អ៊ីមែល​មិន​មាន​ឯកសារ​ភ្ជាប់ បន្ទាប់​អូស​ និង​ទម្លាក់​រូបតំណាង "
-"<application>Kleopatra</application> នៅ​លើ​បង្អួច​កម្មវិធី​តែងសារ​របស់​កម្មវិធី​អ៊ីមែល​របស់​អ្នក ។"
-"</para><para>ប្រសិន​បើ​វា​មិន​ធ្វើការ រក្សាទុក​សំណើ​​ទៅ​ឯកសារ និង​បន្ទាប់​មក​ភ្ជាប់​វា ។</para>"
-
-#: src/dialogs/newopenpgpcertificateresultdialog.cpp:204
-#, fuzzy, kde-format
-#| msgctxt "@title"
-#| msgid "Sending Mail"
-msgctxt "@title:window"
-msgid "Sending Mail"
-msgstr "ផ្ញើ​អ៊ីមែល"
-
 #: src/dialogs/ownertrustdialog.cpp:37
 #, kde-format
 msgid "(unknown certificate)"
@@ -7443,7 +7320,7 @@ msgid "Show all test results"
 msgstr "បង្ហាញ​លទ្ធផល​សាកល្បង​ទាំងអស់​​"
 
 #. i18n: ectx: property (title), widget (QGroupBox, detailsGB)
-#: src/dialogs/selftestdialog.ui:76 src/view/keylistcontroller.cpp:422
+#: src/dialogs/selftestdialog.ui:76 src/view/keylistcontroller.cpp:423
 #, kde-format
 msgid "Details"
 msgstr "សេចក្ដី​លម្អិត"
@@ -7627,7 +7504,7 @@ msgctxt "@title:column"
 msgid "Storage"
 msgstr "បាន​ទុក​"
 
-#: src/dialogs/subkeyswidget.cpp:118 src/view/keylistcontroller.cpp:445
+#: src/dialogs/subkeyswidget.cpp:118 src/view/keylistcontroller.cpp:446
 #, kde-format
 msgid "Change Expiry Date..."
 msgstr "ផ្លាស់ប្ដូរ​កាលបរិច្ឆេទ​ផុត​កំណត់..."
@@ -7798,56 +7675,62 @@ msgid ""
 "key"
 msgstr ""
 
-#: src/dialogs/weboftrustwidget.cpp:100 src/view/keylistcontroller.cpp:437
+#: src/dialogs/weboftrustwidget.cpp:55
+#, fuzzy, kde-format
+#| msgid "User-IDs && Certifications"
+msgid "User IDs and certifications"
+msgstr "លេខ​សម្គាល់​អ្នក​ប្រើ និង​ការ​បញ្ជាក់"
+
+#: src/dialogs/weboftrustwidget.cpp:101 src/view/keylistcontroller.cpp:438
 #, fuzzy, kde-format
 #| msgid "Certify..."
 msgid "Certify..."
 msgstr "ផ្ទៀងផ្ទាត់..."
 
-#: src/dialogs/weboftrustwidget.cpp:115 src/dialogs/weboftrustwidget.cpp:142
-#: src/view/keylistcontroller.cpp:441
+#: src/dialogs/weboftrustwidget.cpp:116 src/dialogs/weboftrustwidget.cpp:143
+#: src/view/keylistcontroller.cpp:442
 #, fuzzy, kde-format
 #| msgid "Revoke This Certificate..."
 msgid "Revoke Certification..."
 msgstr "យក​វិញ្ញាបនបត្រ​នេះ​ចេញ..."
 
-#: src/dialogs/weboftrustwidget.cpp:134
+#: src/dialogs/weboftrustwidget.cpp:135
 #, fuzzy, kde-format
 #| msgid "Show certificate details"
 msgid "Show Certificate Details..."
 msgstr "បង្ហាញ​វិញ្ញាបនបត្រ​លម្អិត"
 
-#: src/dialogs/weboftrustwidget.cpp:159
+#: src/dialogs/weboftrustwidget.cpp:160
 #, fuzzy, kde-format
 #| msgid "Loading certificate cache..."
 msgid "Revocation of self-certifications is currently not possible."
 msgstr "កំពុង​ឃ្លាំង​សម្ងាត់​វិញ្ញាបនបត្រ​..."
 
-#: src/dialogs/weboftrustwidget.cpp:161
+#: src/dialogs/weboftrustwidget.cpp:162
 #, kde-format
 msgid ""
 "You cannot revoke this certification because it wasn't made with one of your "
 "keys (or the required secret key is missing)."
 msgstr ""
 
-#: src/dialogs/weboftrustwidget.cpp:163
+#: src/dialogs/weboftrustwidget.cpp:164
 #, kde-format
 msgid ""
 "You cannot revoke this revocation certification. (But you can re-certify the "
 "corresponding user ID.)"
 msgstr ""
 
-#: src/dialogs/weboftrustwidget.cpp:165
+#: src/dialogs/weboftrustwidget.cpp:166
 #, kde-format
 msgid "You cannot revoke this expired certification."
 msgstr ""
 
-#: src/dialogs/weboftrustwidget.cpp:167
+#: src/dialogs/weboftrustwidget.cpp:168
 #, kde-format
 msgid "You cannot revoke this invalid certification."
 msgstr ""
 
-#: src/dialogs/weboftrustwidget.cpp:264
+#: src/dialogs/weboftrustwidget.cpp:265
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -7855,7 +7738,7 @@ msgid ""
 "message></para>"
 msgstr "<para>កំហុស​មួយ​បាន​កើតឡើង ខណៈពេល​ផ្ទុក​វិញ្ញាបនបត្រ ៖ <message>%1</message></para>"
 
-#: src/dialogs/weboftrustwidget.cpp:267
+#: src/dialogs/weboftrustwidget.cpp:268
 #, kde-format
 msgctxt "@title"
 msgid "Certifications Loading Failed"
@@ -8457,44 +8340,44 @@ msgid "&File"
 msgstr "ឯកសារ"
 
 #. i18n: ectx: Menu (view)
-#: src/kleopatra.rc:27
+#: src/kleopatra.rc:28
 #, kde-format
 msgid "&View"
 msgstr "មើល"
 
 #. i18n: ectx: Menu (certMenu)
 #. i18n: ectx: Menu (listview_popup)
-#: src/kleopatra.rc:43 src/kleopatra.rc:118
+#: src/kleopatra.rc:44 src/kleopatra.rc:119
 #, kde-format
 msgid "&Certificates"
 msgstr "វិញ្ញាបនបត្រ​"
 
 #. i18n: ectx: Menu (tools)
-#: src/kleopatra.rc:59
+#: src/kleopatra.rc:60
 #, kde-format
 msgid "&Tools"
 msgstr "ឧបករណ៍"
 
 #. i18n: ectx: Menu (settings)
-#: src/kleopatra.rc:75
+#: src/kleopatra.rc:76
 #, kde-format
 msgid "&Settings"
 msgstr "ការ​កំណត់"
 
 #. i18n: ectx: Menu (window)
-#: src/kleopatra.rc:80
+#: src/kleopatra.rc:81
 #, kde-format
 msgid "&Window"
 msgstr "បង្អួច"
 
 #. i18n: ectx: Menu (help)
-#: src/kleopatra.rc:91
+#: src/kleopatra.rc:92
 #, kde-format
 msgid "&Help"
 msgstr "ជំនួយ"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: src/kleopatra.rc:103 src/kwatchgnupg/kwatchgnupgui.rc:13
+#: src/kleopatra.rc:104 src/kwatchgnupg/kwatchgnupgui.rc:13
 #, kde-format
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
@@ -8611,49 +8494,49 @@ msgstr "ឯកសារ​ត្រូវ​ដំណើរការ"
 msgid "String or Fingerprint for query and search"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:373
+#: src/kleopatraapplication.cpp:374
 #, fuzzy, kde-format
 #| msgid "Failed to execute %1: %2"
 msgid "Failed to execute command"
 msgstr "បាន​បរាជ័យ​ប្រតិបត្តិ​ %1 ៖ %2"
 
-#: src/kleopatraapplication.cpp:416
+#: src/kleopatraapplication.cpp:417
 #, kde-format
 msgid "Ambiguous protocol: --openpgp and --cms"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:450
+#: src/kleopatraapplication.cpp:451
 #, kde-format
 msgid "No search string specified for --search"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:461
+#: src/kleopatraapplication.cpp:462
 #, kde-format
 msgid "No fingerprint argument specified for --query"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:507
+#: src/kleopatraapplication.cpp:518
 #, kde-format
 msgid "Ambiguous commands \"%1\" and \"%2\""
 msgstr ""
 
-#: src/kleopatraapplication.cpp:514
+#: src/kleopatraapplication.cpp:525
 #, kde-format
 msgid "No files specified for \"%1\" command"
 msgstr ""
 
-#: src/kleopatraapplication.cpp:528
+#: src/kleopatraapplication.cpp:539
 #, fuzzy, kde-format
 #| msgid "Can not send \"%1\" status"
 msgid "Cannot read \"%1\""
 msgstr "មិនអាច​ផ្ញើ​ស្ថានភាព \"%1\""
 
-#: src/kleopatraapplication.cpp:795
+#: src/kleopatraapplication.cpp:806
 #, kde-format
 msgid "Opening an external link is administratively prohibited."
 msgstr ""
 
-#: src/kleopatraapplication.cpp:796
+#: src/kleopatraapplication.cpp:807
 #, kde-format
 msgid "Prohibited"
 msgstr ""
@@ -9004,13 +8887,13 @@ msgstr ""
 msgid "Ongoing Background Tasks"
 msgstr "ភារកិច្ច​ផ្ទៃខាងក្រោយ​ធ្វើ​បន្ត"
 
-#: src/mainwindow.cpp:731 src/view/keylistcontroller.cpp:397
+#: src/mainwindow.cpp:731 src/view/keylistcontroller.cpp:398
 #, kde-format
 msgid "Sign/Encrypt..."
 msgstr "ចុះហត្ថលេខា/អ៊ីនគ្រិប..."
 
 #: src/mainwindow.cpp:732 src/utils/clipboardmenu.cpp:47
-#: src/view/keylistcontroller.cpp:393
+#: src/view/keylistcontroller.cpp:394
 #, kde-format
 msgid "Decrypt/Verify..."
 msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់..."
@@ -9368,6 +9251,13 @@ msgstr "អូស​រូបតំណាង​នេះ​ទៅ​កម្ម
 msgid "Restart This Wizard (Keeps Your Parameters)"
 msgstr "ចាប់ផ្ដើម​អ្នកជំនួយការ​នេះ​ឡើង​វិញ (រក្សា​ប៉ារ៉ាម៉ែត្រ​របស់​អ្នក)"
 
+#: src/newcertificatewizard/resultpage.cpp:109
+#, fuzzy, kde-format
+#| msgid "Next Steps"
+msgctxt "@title:group"
+msgid "Next Steps"
+msgstr "ជំហាន​បន្ទាប់"
+
 #: src/newcertificatewizard/resultpage.cpp:112
 #, kde-format
 msgid "Save Certificate Request To File..."
@@ -9487,6 +9377,43 @@ msgstr ""
 msgctxt "@title"
 msgid "Sending Mail"
 msgstr "ផ្ញើ​អ៊ីមែល"
+
+#: src/newcertificatewizard/resultpage.cpp:313
+#, fuzzy, kde-format
+#| msgid "My new OpenPGP certificate"
+msgid "My new public OpenPGP key"
+msgstr "វិញ្ញាបនបត្រ OpenPGP ថ្មី​របស់​ខ្ញុំ"
+
+#: src/newcertificatewizard/resultpage.cpp:314
+#, fuzzy, kde-format
+#| msgid "Please find attached my new OpenPGP certificate."
+msgid "Please find attached my new public OpenPGP key."
+msgstr "សូម​រក​វិញ្ញាបនបត្រ OpenPGP ថ្មី​របស់​ខ្ញុំ​ដែល​បានភ្ជាប់ជា​មួយ ។"
+
+#: src/newcertificatewizard/resultpage.cpp:318
+#, fuzzy, kde-kuit-format
+#| msgctxt "@info"
+#| msgid ""
+#| "<para><application>Kleopatra</application> tried to send a mail via your "
+#| "default mail client.</para><para>Some mail clients are known not to "
+#| "support attachments when invoked this way.</para><para>If your mail "
+#| "client does not have an attachment, then drag the <application>Kleopatra</"
+#| "application> icon and drop it on the message compose window of your mail "
+#| "client.</para><para>If that does not work, either, save the request to a "
+#| "file, and then attach that.</para>"
+msgctxt "@info"
+msgid ""
+"<para><application>Kleopatra</application> tried to send a mail via your "
+"default mail client.</para><para>Some mail clients are known not to support "
+"attachments when invoked this way.</para><para>If your mail client does not "
+"have an attachment, then attach the file <filename>%1</filename> manually.</"
+"para>"
+msgstr ""
+"<para><application>Kleopatra</application> បាន​ព្យាយាម​ផ្ញើ​សំបុត្រ​តាមរយៈ​កម្មវិធី​អ៊ីមែល​លំនាំ​"
+"ដើម​របស់​អ្នក ។</para><para>កម្មវិធី​អ៊ីមែល​មួយ​ចំនួន​ត្រូវ​បាន​ដឹង​ថា​មិន​គាំទ្រ​ឯកសារ​ភ្ជាប់​នៅពេល​ដក​ហូត​វិធី​"
+"នេះ ។</para><para>ប្រសិន​បើ​​កម្មវិធី​អ៊ីមែល​មិន​មាន​ឯកសារ​ភ្ជាប់ បន្ទាប់​អូស​ និង​ទម្លាក់​រូបតំណាង "
+"<application>Kleopatra</application> នៅ​លើ​បង្អួច​កម្មវិធី​តែងសារ​របស់​កម្មវិធី​អ៊ីមែល​របស់​អ្នក ។"
+"</para><para>ប្រសិន​បើ​វា​មិន​ធ្វើការ រក្សាទុក​សំណើ​​ទៅ​ឯកសារ និង​បន្ទាប់​មក​ភ្ជាប់​វា ។</para>"
 
 #: src/newcertificatewizard/resultpage.cpp:368
 #, kde-format
@@ -10786,67 +10713,73 @@ msgstr "(ត្រូវការ)"
 msgid "Loading certificate cache..."
 msgstr "កំពុង​ឃ្លាំង​សម្ងាត់​វិញ្ញាបនបត្រ​..."
 
-#: src/view/keylistcontroller.cpp:359 src/view/welcomewidget.cpp:123
+#: src/view/keylistcontroller.cpp:360
 #, fuzzy, kde-format
 #| msgctxt "@action"
 #| msgid "Create Key"
-msgid "New Key Pair..."
+msgid "New OpenPGP Key Pair..."
 msgstr "បង្កើត​សោ"
 
-#: src/view/keylistcontroller.cpp:363
+#: src/view/keylistcontroller.cpp:360
+#, fuzzy, kde-format
+#| msgid "OpenPGP Certificates"
+msgid "Create a new OpenPGP certificate"
+msgstr "វិញ្ញាបនបត្រ OpenPGP"
+
+#: src/view/keylistcontroller.cpp:364
 #, fuzzy, kde-format
 #| msgid "Export"
 msgid "Export..."
 msgstr "នាំចេញ"
 
-#: src/view/keylistcontroller.cpp:363
+#: src/view/keylistcontroller.cpp:364
 #, kde-format
 msgid "Export the selected certificate (public key) to a file"
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:367
+#: src/view/keylistcontroller.cpp:368
 #, fuzzy, kde-format
 #| msgid "Lookup Certificates on Server..."
 msgid "Publish on Server..."
 msgstr "រកមើល​វិញ្ញាបនបត្រ​លើ​ម៉ាស៊ីន​បម្រើ..."
 
-#: src/view/keylistcontroller.cpp:367
+#: src/view/keylistcontroller.cpp:368
 #, kde-format
 msgid "Publish the selected certificate (public key) on a public keyserver"
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:372
+#: src/view/keylistcontroller.cpp:373
 #, fuzzy, kde-format
 #| msgid "Lookup Certificates on Server..."
 msgid "Publish at Mail Provider..."
 msgstr "រកមើល​វិញ្ញាបនបត្រ​លើ​ម៉ាស៊ីន​បម្រើ..."
 
-#: src/view/keylistcontroller.cpp:372
+#: src/view/keylistcontroller.cpp:373
 #, kde-format
 msgid ""
 "Publish the selected certificate (public key) at mail provider's Web Key "
 "Directory if offered"
 msgstr ""
 
-#: src/view/keylistcontroller.cpp:377
+#: src/view/keylistcontroller.cpp:378
 #, fuzzy, kde-format
 #| msgid "Export Secret Keys..."
 msgid "Backup Secret Keys..."
 msgstr "នាំចេញ​វិញ្ញាបនបត្រ​​សម្ងាត់​​​...​"
 
-#: src/view/keylistcontroller.cpp:381
+#: src/view/keylistcontroller.cpp:382
 #, fuzzy, kde-format
 #| msgid "Export Secret Keys..."
 msgid "Print Secret Key..."
 msgstr "នាំចេញ​វិញ្ញាបនបត្រ​​សម្ងាត់​​​...​"
 
-#: src/view/keylistcontroller.cpp:385
+#: src/view/keylistcontroller.cpp:386
 #, fuzzy, kde-format
 #| msgid "Lookup Certificates on Server..."
 msgid "Lookup on Server..."
 msgstr "រកមើល​វិញ្ញាបនបត្រ​លើ​ម៉ាស៊ីន​បម្រើ..."
 
-#: src/view/keylistcontroller.cpp:385
+#: src/view/keylistcontroller.cpp:386
 #, fuzzy, kde-format
 #| msgid ""
 #| "Certificate: %1\n"
@@ -10856,146 +10789,158 @@ msgstr ""
 "វិញ្ញាបនបត្រ​ ៖​​ %1\n"
 "ស្នាម​ម្រាមដៃ ​៖​ %2"
 
-#: src/view/keylistcontroller.cpp:389
+#: src/view/keylistcontroller.cpp:390
 #, fuzzy, kde-format
 #| msgctxt "@info:tooltip"
 #| msgid "Imported Certificates from %1"
 msgid "Import a certificate from a file"
 msgstr "វិញ្ញាបនបត្រ​ដែលបាននាំចូល​ពី %1​"
 
-#: src/view/keylistcontroller.cpp:393
+#: src/view/keylistcontroller.cpp:394
 #, fuzzy, kde-format
 #| msgid "Decrypt and/or verify file(s)"
 msgid "Decrypt and/or verify files"
 msgstr "ឌិគ្រីប និង/ឬ​ផ្ទៀងផ្ទាត់​ឯកសារ"
 
-#: src/view/keylistcontroller.cpp:397
+#: src/view/keylistcontroller.cpp:398
 #, fuzzy, kde-format
 #| msgid "Decrypt and/or verify file(s)"
 msgid "Encrypt and/or sign files"
 msgstr "ឌិគ្រីប និង/ឬ​ផ្ទៀងផ្ទាត់​ឯកសារ"
 
-#: src/view/keylistcontroller.cpp:401
+#: src/view/keylistcontroller.cpp:402
 #, fuzzy, kde-format
 #| msgid "Sign/Encrypt Files..."
 msgid "Sign/Encrypt Folder..."
 msgstr "ចុះហត្ថលេខា/អ៊ីនគ្រិប​ឯកសារ..."
 
-#: src/view/keylistcontroller.cpp:401
+#: src/view/keylistcontroller.cpp:402
 #, fuzzy, kde-format
 #| msgid "Decrypt and/or verify file(s)"
 msgid "Encrypt and/or sign folders"
 msgstr "ឌិគ្រីប និង/ឬ​ផ្ទៀងផ្ទាត់​ឯកសារ"
 
-#: src/view/keylistcontroller.cpp:405
+#: src/view/keylistcontroller.cpp:406
 #, kde-format
 msgid "Create Checksum Files..."
 msgstr "បង្កើត​ឯកសារ​​របស់​ឆេកសាំ​...​"
 
-#: src/view/keylistcontroller.cpp:409
+#: src/view/keylistcontroller.cpp:410
 #, kde-format
 msgid "Verify Checksum Files..."
 msgstr "ផ្ទៀង​ផ្ទាត់​ឯកសារ​របស់​ឆេកសាំ​...​"
 
-#: src/view/keylistcontroller.cpp:414
+#: src/view/keylistcontroller.cpp:415
 #, kde-format
 msgid "Redisplay"
 msgstr "បង្ហាញ​ឡើងវិញ"
 
-#: src/view/keylistcontroller.cpp:418
+#: src/view/keylistcontroller.cpp:419
 #, kde-format
 msgid "Stop Operation"
 msgstr "បញ្ឈប់​ប្រតិបត្តិ​ការ"
 
-#: src/view/keylistcontroller.cpp:428
+#: src/view/keylistcontroller.cpp:429
 #, fuzzy, kde-format
 #| msgid "Revoke This Certificate..."
 msgid "Revoke Certificate..."
 msgstr "យក​វិញ្ញាបនបត្រ​នេះ​ចេញ..."
 
-#: src/view/keylistcontroller.cpp:428
+#: src/view/keylistcontroller.cpp:429
 #, fuzzy, kde-format
 #| msgid "Please select a certificate"
 msgid "Revoke the selected OpenPGP certificate"
 msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​"
 
-#: src/view/keylistcontroller.cpp:433
+#: src/view/keylistcontroller.cpp:434
 #, kde-format
 msgid "Delete"
 msgstr "លុប"
 
-#: src/view/keylistcontroller.cpp:433
+#: src/view/keylistcontroller.cpp:434
 #, fuzzy, kde-format
 #| msgid "Please select a certificate"
 msgid "Delete selected certificates"
 msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​"
 
-#: src/view/keylistcontroller.cpp:437
+#: src/view/keylistcontroller.cpp:438
 #, fuzzy, kde-format
 #| msgid "The validity of the signature cannot be verified."
 msgid "Certify the validity of the selected certificate"
 msgstr "សុពលភាព​របស់​ហត្ថលេខា​មិនអាច​​បញ្ជាក់​បានទេ ។"
 
-#: src/view/keylistcontroller.cpp:441
+#: src/view/keylistcontroller.cpp:442
 #, fuzzy, kde-format
 #| msgid "The validity of the signature cannot be verified."
 msgid "Revoke the certification of the selected certificate"
 msgstr "សុពលភាព​របស់​ហត្ថលេខា​មិនអាច​​បញ្ជាក់​បានទេ ។"
 
-#: src/view/keylistcontroller.cpp:449
+#: src/view/keylistcontroller.cpp:450
 #, fuzzy, kde-format
 #| msgid "Change Owner Trust..."
 msgid "Change Certification Trust..."
 msgstr "ផ្លាស់ប្ដូរ​កា​ជឿជាក់​លើ​ម្ចាស់..."
 
-#: src/view/keylistcontroller.cpp:453
+#: src/view/keylistcontroller.cpp:454
 #, kde-format
 msgid "Change Passphrase..."
 msgstr "ផ្លាស់ប្ដូរ​ឃ្លា​សម្ងាត់..."
 
-#: src/view/keylistcontroller.cpp:457
+#: src/view/keylistcontroller.cpp:458
 #, fuzzy, kde-format
 #| msgid "Add User-ID..."
 msgid "Add User ID..."
 msgstr "បន្ថែម​លេខសម្គាល់​អ្នក​ប្រើ..."
 
-#: src/view/keylistcontroller.cpp:462
+#: src/view/keylistcontroller.cpp:463
 #, kde-format
 msgid "Refresh OpenPGP Certificates"
 msgstr "ធ្វើ​ឲ្យ​វិញ្ញាបនបត្រ OpenPGP ស្រស់"
 
-#: src/view/keylistcontroller.cpp:474
+#: src/view/keylistcontroller.cpp:473
+#, fuzzy, kde-format
+#| msgid "S/MIME Certificates"
+msgid "New S/MIME Certification Request..."
+msgstr "វិញ្ញាបនបត្រ S/MIME"
+
+#: src/view/keylistcontroller.cpp:473
+#, fuzzy, kde-format
+#| msgid "Create a personal X.509 key pair and certification request "
+msgid "Create a new S/MIME certificate signing request (CSR)"
+msgstr "បង្កើត​គូសោ X.509 ផ្ទាល់ខ្លួន និង​សំណើ​​បញ្ជាក់ "
+
+#: src/view/keylistcontroller.cpp:480
 #, kde-format
 msgid "Trust Root Certificate"
 msgstr "វិញ្ញាបនបត្រ​​ Root ដែល​ជឿ​ទុកចិត្ត​​"
 
-#: src/view/keylistcontroller.cpp:478
+#: src/view/keylistcontroller.cpp:484
 #, kde-format
 msgid "Distrust Root Certificate"
 msgstr "វិញ្ញាបនបត្រ​​ Root ដែល​មិន​ជឿ​ទុកចិត្ត​​"
 
-#: src/view/keylistcontroller.cpp:482
+#: src/view/keylistcontroller.cpp:488
 #, kde-format
 msgid "Technical Details"
 msgstr "សេចក្ដី​លម្អិត​បច្ចេកទេស"
 
-#: src/view/keylistcontroller.cpp:487
+#: src/view/keylistcontroller.cpp:493
 #, fuzzy, kde-format
 #| msgid "S/MIME Certificates"
 msgid "Refresh S/MIME Certificates"
 msgstr "វិញ្ញាបនបត្រ S/MIME"
 
-#: src/view/keylistcontroller.cpp:491
+#: src/view/keylistcontroller.cpp:497
 #, kde-format
 msgid "Clear CRL Cache"
 msgstr "ជម្រះ​ឃ្លាំង​សម្ងាត់ CRL"
 
-#: src/view/keylistcontroller.cpp:495
+#: src/view/keylistcontroller.cpp:501
 #, kde-format
 msgid "Dump CRL Cache"
 msgstr "បោះបង់ចោល​ឃ្លាំងសម្ងាត់​ CRL"
 
-#: src/view/keylistcontroller.cpp:499
+#: src/view/keylistcontroller.cpp:505
 #, kde-format
 msgid "Import CRL From File..."
 msgstr "នាំចូល​ CRL ពី​ឯកសារ..."
@@ -11992,6 +11937,13 @@ msgctxt "%1 is link a wiki article"
 msgid "You can learn more about this on <a href=\"%1\">Wikipedia</a>."
 msgstr ""
 
+#: src/view/welcomewidget.cpp:123
+#, fuzzy, kde-format
+#| msgctxt "@action"
+#| msgid "Create Key"
+msgid "New Key Pair..."
+msgstr "បង្កើត​សោ"
+
 #: src/view/welcomewidget.cpp:137
 #, fuzzy, kde-format
 #| msgid "Create a personal OpenPGP key pair"
@@ -12016,6 +11968,69 @@ msgstr "វិញ្ញាបនបត្រ​ដែលបាននាំចូ
 #, kde-format
 msgid "To import from a public keyserver use \"Lookup on Server\" instead."
 msgstr ""
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Create a new certificate"
+#~ msgstr "បង្កើត​វិញ្ញាបនបត្រ​ថ្មី​មួយ​"
+
+#, fuzzy
+#~| msgid "Please choose which type of certificate you want to create. "
+#~ msgid "Choose which type of key pair you want to create."
+#~ msgstr "សូម​ជ្រើស​ប្រភេទ​វិញ្ញាបនបត្រ​ណាមួយ​ដែល​អ្នក​ចង់​បង្កើត ។ "
+
+#, fuzzy
+#~| msgid "Create a personal OpenPGP key pair"
+#~ msgid "Create a Personal OpenPGP Key Pair"
+#~ msgstr "បង្កើត​គូរសោ OpenPGP ផ្ទាល់ខ្លួន"
+
+#, fuzzy
+#~| msgctxt "X.509/CMS encryption standard"
+#~| msgid "X.509"
+#~ msgid "X.509"
+#~ msgstr "X.509"
+
+#, fuzzy
+#~| msgid ""
+#~| "X.509 key pairs are created locally, but certified centrally by a "
+#~| "certification authority (CA). CAs can certify other CAs, creating a "
+#~| "central, hierarchical chain of trust."
+#~ msgid ""
+#~ "X.509 key pairs are certified by a certification authority (CA). The "
+#~ "generated request needs to be sent to a CA to finalize creation."
+#~ msgstr ""
+#~ "គូសោ X.509 ត្រូវ​បាន​បង្កើត​ក្នុង​មូលដ្ឋាន ប៉ុន្តែ​បាន​បញ្ជាក់​ជា​ទូទៅ​ដោយ certification "
+#~ "authority (CA) ។ CAs អាច​បញ្ជាក់​ CAs ផ្សេង​ទៀត ដោយ​បង្កើត​ឋានានុក្រម​កណ្ដាល​នៃ​កា​"
+#~ "រទុកចិត្ត ។"
+
+#, fuzzy
+#~| msgid "Create a personal X.509 key pair and certification request "
+#~ msgid "Create a Personal X.509 Key Pair and Certification Request"
+#~ msgstr "បង្កើត​គូសោ X.509 ផ្ទាល់ខ្លួន និង​សំណើ​​បញ្ជាក់ "
+
+#, fuzzy
+#~| msgid "Make a Backup Of Your Key Pair..."
+#~ msgctxt "@action:button"
+#~ msgid "Make a Backup Of Your Key Pair..."
+#~ msgstr "ធ្វើ​ការ​បម្រុង​ទុក​នៃ​គូ​សោ​របស់​អ្នក​​..."
+
+#, fuzzy
+#~| msgid "Send Certificate By EMail..."
+#~ msgctxt "@action:button"
+#~ msgid "Send Public Key By EMail..."
+#~ msgstr "ផ្ញើ​វិញ្ញាបនបត្រ​​តាម​អ៊ីមែល​​..."
+
+#, fuzzy
+#~| msgid "Upload Certificate To Directory Service..."
+#~ msgctxt "@action:button"
+#~ msgid "Upload Public Key To Directory Service..."
+#~ msgstr "ផ្ទុក​វិញ្ញាបនបត្រ​ទៅ​សេវា​ថត...​"
+
+#, fuzzy
+#~| msgctxt "@title"
+#~| msgid "Sending Mail"
+#~ msgctxt "@title:window"
+#~ msgid "Sending Mail"
+#~ msgstr "ផ្ញើ​អ៊ីមែល"
 
 #~ msgctxt "stored..."
 #~ msgid "on SmartCard with serial no. %1"
@@ -12848,9 +12863,6 @@ msgstr ""
 #~ "<li>រូបថត​ផ្ដល់​នូវ​​ការ​យល់ដឹង​មិនពិត​នៃ​សុវត្ថិភាព ។</li>\n"
 #~ "<li>រូបថត​បង្កើន​ទំហំ​វិញ្ញាបនបត្រ ។</li>\n"
 #~ "</ul>"
-
-#~ msgid "User-IDs && Certifications"
-#~ msgstr "លេខ​សម្គាល់​អ្នក​ប្រើ និង​ការ​បញ្ជាក់"
 
 #~ msgid "Add..."
 #~ msgstr "បន្ថែម..."
