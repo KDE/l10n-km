@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kleopatra\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-30 00:47+0000\n"
+"POT-Creation-Date: 2022-09-06 00:46+0000\n"
 "PO-Revision-Date: 2012-07-11 10:25+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -1617,8 +1617,8 @@ msgstr "មាតិកា​ក្ដារ​តម្បៀត​ខ្ទា
 #: src/commands/importcertificatefromfilecommand.cpp:134
 #: src/commands/importcertificatescommand.cpp:493
 #: src/commands/importcertificatescommand.cpp:501
-#: src/commands/importcertificatescommand.cpp:834
-#: src/commands/importcertificatescommand.cpp:885
+#: src/commands/importcertificatescommand.cpp:836
+#: src/commands/importcertificatescommand.cpp:887
 #, kde-format
 msgid "Certificate Import Failed"
 msgstr "ការ​នាំចូល​វិញ្ញាបនបត្រ​បាន​បរាជ័យ​"
@@ -1911,13 +1911,21 @@ msgstr ""
 "<qt><p>កំហុស​បាន​កើត​ឡើង​ខណៈពេល​ដែល​កំពុង​ព្យាយាម​នាំចូល​វិញ្ញាបនបត្រ​ %1 ៖ </p><p><b>%2</b></"
 "p></qt>"
 
-#: src/commands/importcertificatescommand.cpp:569
+#. i18n(" ") as initializer because initializing with empty string leads to
+#. (I18N_EMPTY_MESSAGE)
+#: src/commands/importcertificatescommand.cpp:570
+#, fuzzy, kde-format
+#| msgid ", "
+msgid " "
+msgstr ", "
+
+#: src/commands/importcertificatescommand.cpp:571
 #, kde-kuit-format
 msgctxt "@info"
 msgid "%1<item>%2</item>"
 msgstr ""
 
-#: src/commands/importcertificatescommand.cpp:573
+#: src/commands/importcertificatescommand.cpp:575
 #, kde-kuit-format
 msgctxt "@info"
 msgid ""
@@ -1926,22 +1934,22 @@ msgid ""
 "%2</list></para>Is this your own key? (Set trust level to ultimate)"
 msgstr ""
 
-#: src/commands/importcertificatescommand.cpp:585
+#: src/commands/importcertificatescommand.cpp:587
 #, fuzzy, kde-format
 #| msgid "Secret keys imported:"
 msgctxt "@title:window"
 msgid "Secret key imported"
 msgstr "បាន​នាំចូល​សោ​​សម្ងាត់​ ៖​"
 
-#: src/commands/importcertificatescommand.cpp:797
+#: src/commands/importcertificatescommand.cpp:799
 #, fuzzy, kde-format
 #| msgid "Load Certifications (may take a while)"
 msgid "Fetching 1 signer key... (this can take a while)"
 msgid_plural "Fetching %1 signer keys... (this can take a while)"
 msgstr[0] "ផ្ទុក​ការ​បញ្ជាក់ (អាច​ចំណាយ​ពេល​មួយ​រយៈ)"
 
-#: src/commands/importcertificatescommand.cpp:832
-#: src/commands/importcertificatescommand.cpp:883
+#: src/commands/importcertificatescommand.cpp:834
+#: src/commands/importcertificatescommand.cpp:885
 #, kde-format
 msgid ""
 "The type of this certificate (%1) is not supported by this Kleopatra "
@@ -4049,7 +4057,7 @@ msgstr ""
 "ទាំងពីរ​ទេ  ។"
 
 #: src/crypto/createchecksumscontroller.cpp:293
-#: src/dialogs/updatenotification.cpp:74 src/mainwindow.cpp:771
+#: src/dialogs/updatenotification.cpp:74 src/mainwindow.cpp:777
 #, kde-format
 msgid "Cancel"
 msgstr "​បោះបង់"
@@ -8461,7 +8469,7 @@ msgstr "មើល"
 
 #. i18n: ectx: Menu (certMenu)
 #. i18n: ectx: Menu (listview_popup)
-#: src/kleopatra.rc:44 src/kleopatra.rc:119
+#: src/kleopatra.rc:44 src/kleopatra.rc:120
 #, kde-format
 msgid "&Certificates"
 msgstr "វិញ្ញាបនបត្រ​"
@@ -8491,7 +8499,7 @@ msgid "&Help"
 msgstr "ជំនួយ"
 
 #. i18n: ectx: ToolBar (mainToolBar)
-#: src/kleopatra.rc:104 src/kwatchgnupg/kwatchgnupgui.rc:13
+#: src/kleopatra.rc:105 src/kwatchgnupg/kwatchgnupgui.rc:13
 #, kde-format
 msgid "Main Toolbar"
 msgstr "របារ​ឧបករណ៍​មេ"
@@ -8984,12 +8992,24 @@ msgctxt ""
 msgid "BSI-VSA-10584-ENG_secops-20220207.pdf"
 msgstr ""
 
-#: src/mainwindow.cpp:620
+#: src/mainwindow.cpp:620 src/view/smartcardwidget.cpp:119
+#, kde-format
+msgid "Smartcard Management"
+msgstr ""
+
+#: src/mainwindow.cpp:622
+#, kde-format
+msgctxt ""
+"Only available in German and English. Leave to English for other languages."
+msgid "smartcard_howto_de.pdf"
+msgstr ""
+
+#: src/mainwindow.cpp:626
 #, kde-format
 msgid "GnuPG Manual"
 msgstr ""
 
-#: src/mainwindow.cpp:644
+#: src/mainwindow.cpp:650
 #, kde-format
 msgid ""
 "There are still some background operations ongoing. These will be terminated "
@@ -8998,28 +9018,28 @@ msgstr ""
 "នៅ​មាន​ប្រតិបត្តិការ​ផ្ទៃ​ខាងក្រោយ​មួយ​ចំនួន​កំពុង​ធ្វើ​បន្ត ។ ប្រតិបត្តិការ​ទាំង​នេះ នឹង​ត្រូវបាន​បញ្ចប់ នៅពេល​"
 "ដែល​បិទ​បង្អួច ។ បញ្ចប់​ដំណើរការ​ឬ ?"
 
-#: src/mainwindow.cpp:647
+#: src/mainwindow.cpp:653
 #, kde-format
 msgid "Ongoing Background Tasks"
 msgstr "ភារកិច្ច​ផ្ទៃខាងក្រោយ​ធ្វើ​បន្ត"
 
-#: src/mainwindow.cpp:755 src/view/keylistcontroller.cpp:398
+#: src/mainwindow.cpp:761 src/view/keylistcontroller.cpp:398
 #, kde-format
 msgid "Sign/Encrypt..."
 msgstr "ចុះហត្ថលេខា/អ៊ីនគ្រិប..."
 
-#: src/mainwindow.cpp:756 src/utils/clipboardmenu.cpp:47
+#: src/mainwindow.cpp:762 src/utils/clipboardmenu.cpp:47
 #: src/view/keylistcontroller.cpp:394
 #, kde-format
 msgid "Decrypt/Verify..."
 msgstr "ឌិគ្រីប/ផ្ទៀងផ្ទាត់..."
 
-#: src/mainwindow.cpp:761
+#: src/mainwindow.cpp:767
 #, kde-format
 msgid "Import Certificates"
 msgstr "នាំចូល​វិញ្ញាបនបត្រ​"
 
-#: src/mainwindow.cpp:762
+#: src/mainwindow.cpp:768
 #, kde-format
 msgid "Import CRLs"
 msgstr "នាំចូល​ CRL"
@@ -10566,7 +10586,7 @@ msgid ""
 "bug."
 msgstr "មិនអាច​ចម្លង​រន្ធ​ទៅ Qt: %1 ។ វា​មិនគួរ​កើត​ឡើង​ទេ សូម​រាយការណ៍​កំហុស​នេះ ។"
 
-#: src/utils/accessibility.cpp:71
+#: src/utils/accessibility.cpp:94
 #, fuzzy, kde-format
 #| msgid "Selection"
 msgctxt ""
@@ -10575,7 +10595,7 @@ msgctxt ""
 msgid "invalid entry"
 msgstr "ជម្រើស"
 
-#: src/utils/accessibility.cpp:78
+#: src/utils/accessibility.cpp:101
 #, fuzzy, kde-format
 #| msgid "(required)"
 msgctxt ""
@@ -11906,11 +11926,6 @@ msgstr "សូម​ជ្រើស​វិញ្ញាបនបត្រ​"
 #: src/view/smartcardwidget.cpp:61
 #, kde-format
 msgid "Kleopatra currently supports the following card types:"
-msgstr ""
-
-#: src/view/smartcardwidget.cpp:119
-#, kde-format
-msgid "Smartcard Management"
 msgstr ""
 
 #: src/view/smartcardwidget.cpp:161
@@ -13813,6 +13828,3 @@ msgstr ""
 
 #~ msgid "CTRL+,"
 #~ msgstr "បញ្ជា​(CTRL)+"
-
-#~ msgid ", "
-#~ msgstr ", "
