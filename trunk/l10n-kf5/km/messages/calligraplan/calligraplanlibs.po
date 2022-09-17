@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kplatolibs\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-09-15 00:45+0000\n"
+"POT-Creation-Date: 2022-09-17 00:46+0000\n"
 "PO-Revision-Date: 2010-03-09 09:17+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer <support@khmeros.info>\n"
@@ -203,7 +203,7 @@ msgstr "មីល្លី​វិនាទី​"
 msgid "Deleted"
 msgstr "បាន​លុប​"
 
-#: kernel/kptglobal.cpp:20 kernel/kptnode.cpp:668 kernel/kptschedule.cpp:1906
+#: kernel/kptglobal.cpp:20 kernel/kptnode.cpp:668 kernel/kptschedule.cpp:1927
 #: models/kptschedulemodel.cpp:840
 #, kde-format
 msgid "Not scheduled"
@@ -569,7 +569,7 @@ msgstr "កំណត់​ពេល​ភារកិច្ច​ថយ​ក្
 msgid "Finished scheduling backward: %1 ms"
 msgstr "បាន​គណនា​ពេល​​​បញ្ចប់​ចុង​ក្រោយ ៖ %1"
 
-#: kernel/kptproject.cpp:3383
+#: kernel/kptproject.cpp:3392
 #, kde-format
 msgid "Plan"
 msgstr "គម្រោង​"
@@ -613,27 +613,27 @@ msgstr "មិន​អាច​ផ្គូផ្គង​ទំហំ​កា
 msgid "Resource %1 available from %2 to %3"
 msgstr "ធន​ធាន​ %1 មាន​ចាប់​ពី​ %2 ដល់​ %3​"
 
-#: kernel/kptschedule.cpp:143
+#: kernel/kptschedule.cpp:164
 #, kde-format
 msgid "Expected"
 msgstr "ដែល​រំពឹង​ "
 
-#: kernel/kptschedule.cpp:1572
+#: kernel/kptschedule.cpp:1593
 #, kde-format
 msgid "Debug"
 msgstr ""
 
-#: kernel/kptschedule.cpp:1573
+#: kernel/kptschedule.cpp:1594
 #, kde-format
 msgid "Info"
 msgstr "ព័ត៌មាន​"
 
-#: kernel/kptschedule.cpp:1574 main/KoMainWindow.cpp:1834
+#: kernel/kptschedule.cpp:1595 main/KoMainWindow.cpp:1834
 #, kde-format
 msgid "Warning"
 msgstr "ព្រមាន​"
 
-#: kernel/kptschedule.cpp:1575 kernel/kptschedule.cpp:1910
+#: kernel/kptschedule.cpp:1596 kernel/kptschedule.cpp:1931
 #: models/kptnodeitemmodel.cpp:1699 models/kptnodeitemmodel.cpp:1732
 #: models/kptnodeitemmodel.cpp:1765 models/kptnodeitemmodel.cpp:1798
 #: models/kptnodeitemmodel.cpp:1831 models/kptnodeitemmodel.cpp:1864
@@ -642,12 +642,12 @@ msgstr "ព្រមាន​"
 msgid "Error"
 msgstr "កំហុស​"
 
-#: kernel/kptschedule.cpp:1900
+#: kernel/kptschedule.cpp:1921
 #, kde-format
 msgid "Baselined"
 msgstr "ជា​បន្ទាត់​គោល​"
 
-#: kernel/kptschedule.cpp:1903
+#: kernel/kptschedule.cpp:1924
 #, kde-format
 msgid "Scheduling"
 msgstr "ការកំណត់​ពេល​"
@@ -2282,14 +2282,16 @@ msgstr "%1 (ប្រតិទិន​លំនាំ​ដើម)​"
 
 #: models/kptcalendarmodel.cpp:306 models/kptcalendarmodel.cpp:315
 #: models/ResourceGroupModel.cpp:92 models/ResourceGroupModel.cpp:101
-#: models/ResourceModel.cpp:106 models/ResourceModel.cpp:115
+#: models/ResourceModel.cpp:83 models/ResourceModel.cpp:106
+#: models/ResourceModel.cpp:115
 #, kde-format
 msgid "Local"
 msgstr ""
 
 #: models/kptcalendarmodel.cpp:306 models/kptcalendarmodel.cpp:315
 #: models/ResourceGroupModel.cpp:92 models/ResourceGroupModel.cpp:101
-#: models/ResourceModel.cpp:106 models/ResourceModel.cpp:115
+#: models/ResourceModel.cpp:83 models/ResourceModel.cpp:106
+#: models/ResourceModel.cpp:115
 #, kde-format
 msgid "Shared"
 msgstr ""
@@ -5772,19 +5774,23 @@ msgctxt "(qtundo-format)"
 msgid "Modify resource account"
 msgstr "កែប្រែ​គណនី​ធន​ធាន​"
 
-#: models/ResourceModel.cpp:80 models/ResourceModel.cpp:111
-#, kde-kuit-format
+#: models/ResourceModel.cpp:79
+#, fuzzy, kde-kuit-format
+#| msgctxt "@infot:tooltip"
+#| msgid "Name: %1<nl/>Planned: %2<nl/>Status: %4<nl/>"
 msgctxt "@info:tooltip"
-msgid ""
-"%1 is a <emphasis>Shared</emphasis> resource and can thus be shared with "
-"other projects"
+msgid "%1:<nl/>Type: %2<nl/>Allocation: %3<nl/>Origin: %4"
+msgstr "ឈ្មោះ​ ៖ %1<nl/>បាន​គ្រោង ៖ %2<nl/>ស្ថានភាព ៖ %4<nl/>"
+
+#: models/ResourceModel.cpp:82
+#, kde-format
+msgid "Manual"
 msgstr ""
 
-#: models/ResourceModel.cpp:83
-#, kde-kuit-format
-msgctxt "@info:tooltip"
-msgid "%1:<nl/>This resource will be automatically allocated to new tasks"
-msgstr ""
+#: models/ResourceModel.cpp:82
+#, fuzzy, kde-format
+msgid "On task creation"
+msgstr "បង្ហាញ​ការបញ្ចប់​ភារកិច្ច"
 
 #: models/ResourceModel.cpp:109
 #, kde-kuit-format
@@ -5792,6 +5798,14 @@ msgctxt "@info:tooltip"
 msgid ""
 "%1 is a <emphasis>Local</emphasis> resource and can only be used in this "
 "project"
+msgstr ""
+
+#: models/ResourceModel.cpp:111
+#, kde-kuit-format
+msgctxt "@info:tooltip"
+msgid ""
+"%1 is a <emphasis>Shared</emphasis> resource and can thus be shared with "
+"other projects"
 msgstr ""
 
 #: models/ResourceModel.cpp:140
@@ -11460,10 +11474,6 @@ msgstr ""
 #, fuzzy
 #~ msgid "Show critical path"
 #~ msgstr "បង្ហាញ​ផ្លូវ​សំខាន់​បំផុត"
-
-#, fuzzy
-#~ msgid "Show task completion"
-#~ msgstr "បង្ហាញ​ការបញ្ចប់​ភារកិច្ច"
 
 #, fuzzy
 #~ msgid "Show positive float"
