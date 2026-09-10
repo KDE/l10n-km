@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: add-printer\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-06-07 02:49+0000\n"
+"POT-Creation-Date: 2026-08-13 00:52+0000\n"
 "PO-Revision-Date: 2012-06-29 15:40+0700\n"
 "Last-Translator: Khoem Sokhem <khoemsokhem@khmeros.info>\n"
 "Language-Team: Khmer\n"
@@ -19,27 +19,27 @@ msgstr ""
 "X-Generator: KBabel 1.11.4\n"
 "X-Language: km-KH\n"
 
-#: src/configure-printer/ConfigureDialog.cpp:93
-#: src/configure-printer/ConfigureDialog.cpp:94
+#: src/configure-printer/ConfigureDialog.cpp:96
+#: src/configure-printer/ConfigureDialog.cpp:97
 #, fuzzy, kde-format
 #| msgid "Print settings"
 msgid "Media Settings"
 msgstr "ការ​កំណត់​បោះពុម្ព"
 
-#: src/configure-printer/ConfigureDialog.cpp:101
-#: src/configure-printer/ConfigureDialog.cpp:102
+#: src/configure-printer/ConfigureDialog.cpp:104
+#: src/configure-printer/ConfigureDialog.cpp:105
 #, kde-format
 msgid "Banners, Policies and Allowed Users"
 msgstr ""
 
-#: src/configure-printer/ConfigureDialog.cpp:171
+#: src/configure-printer/ConfigureDialog.cpp:182
 #, kde-format
 msgid ""
 "The current page has changes.\n"
 "Do you want to save them?"
 msgstr ""
 
-#: src/configure-printer/ConfigureDialog.cpp:173
+#: src/configure-printer/ConfigureDialog.cpp:184
 #, kde-format
 msgid "Save"
 msgstr ""
@@ -285,28 +285,23 @@ msgid ""
 "properly."
 msgstr ""
 
-#: src/kded/MarkerLevelChecker.cpp:194
+#: src/kded/CupsWatcher.cpp:55
 #, kde-format
-msgctxt "@info:usagetip The name and type of the ink cartridge"
-msgid "%1 (%2) appears to be empty."
+msgctxt "@info:status %1 is the reason message for the status"
+msgid ""
+"%1\n"
+"The print job will complete when the printer becomes available."
 msgstr ""
 
-#: src/kded/MarkerLevelChecker.cpp:197
-#, kde-format
-msgctxt ""
-"@info:usagetip The name and type of the ink cartridge and percent ink "
-"remaining"
-msgid "%1 (%2) appears to be low (%3% remaining)."
-msgstr ""
+#: src/kded/CupsWatcher.cpp:59
+#, fuzzy, kde-format
+#| msgctxt "@item"
+#| msgid "Local Printers"
+msgctxt "@action:button Prompt to resume printer"
+msgid "Resume Printer"
+msgstr "ម៉ាស៊ីន​បោះពុម្ព​មូលដ្ឋាន"
 
-#: src/kded/MarkerLevelChecker.cpp:204
-#, kde-format
-msgctxt ""
-"@info:usagetip The name, type, and percentage full of the waste receptacle"
-msgid "%1 (%2) is almost full (%3%)"
-msgstr ""
-
-#: src/kded/MarkerLevelChecker.cpp:219
+#: src/kded/CupsWatcher.cpp:79
 #, kde-format
 msgctxt "@action:button check printer ink levels"
 msgid "Check Levels…"
@@ -720,14 +715,41 @@ msgstr ""
 msgid "A CUPS connection requires authentication: \"%1\""
 msgstr ""
 
-#: src/libkcups/KCupsPasswordDialog.cpp:22
+#: src/libkcups/KCupsPasswordDialog.cpp:21
 #, kde-format
 msgid "Enter an username and a password to complete the task"
 msgstr ""
 
-#: src/libkcups/KCupsPasswordDialog.cpp:44
+#: src/libkcups/KCupsPasswordDialog.cpp:43
 #, kde-format
 msgid "Wrong username or password"
+msgstr ""
+
+#: src/libkcups/KCupsPrinter.cpp:147
+#, kde-format
+msgctxt "@info:usagetip The name and type of the ink cartridge"
+msgid "%1 (%2) appears to be empty."
+msgstr ""
+
+#: src/libkcups/KCupsPrinter.cpp:150
+#, kde-format
+msgctxt ""
+"@info:usagetip The name and type of the ink cartridge and percent ink "
+"remaining"
+msgid "%1 (%2) appears to be low (%3% remaining)."
+msgstr ""
+
+#: src/libkcups/KCupsPrinter.cpp:157
+#, kde-format
+msgctxt ""
+"@info:usagetip The name, type, and percentage full of the waste receptacle"
+msgid "%1 (%2) is almost full (%3%)"
+msgstr ""
+
+#: src/libkcups/KCupsPrinter.cpp:309
+#, kde-format
+msgctxt "@info:status"
+msgid "The printer is paused or stopped."
 msgstr ""
 
 #: src/libkcups/KCupsRequest.cpp:31
@@ -760,80 +782,80 @@ msgstr ""
 msgid "Empty ppd model"
 msgstr ""
 
-#: src/libkcups/PrinterModel.cpp:196
+#: src/libkcups/PrinterModel.cpp:192
 #, fuzzy, kde-format
 #| msgid "AddPrinter"
 msgid "Printers"
 msgstr "បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព"
 
-#: src/libkcups/PrinterModel.cpp:384
+#: src/libkcups/PrinterModel.cpp:390
 #, kde-format
 msgid "Idle"
 msgstr "ទំនេរ"
 
-#: src/libkcups/PrinterModel.cpp:384
+#: src/libkcups/PrinterModel.cpp:390
 #, kde-format
 msgid "Idle, rejecting jobs"
 msgstr ""
 
-#: src/libkcups/PrinterModel.cpp:386
+#: src/libkcups/PrinterModel.cpp:392
 #, kde-format
 msgid "Idle - '%1'"
 msgstr "ទំនេរ '%1'"
 
-#: src/libkcups/PrinterModel.cpp:386
+#: src/libkcups/PrinterModel.cpp:392
 #, kde-format
 msgid "Idle, rejecting jobs - '%1'"
 msgstr ""
 
-#: src/libkcups/PrinterModel.cpp:390
+#: src/libkcups/PrinterModel.cpp:396
 #, kde-format
 msgid "In use"
 msgstr "កំពុង​ប្រើ"
 
-#: src/libkcups/PrinterModel.cpp:392
+#: src/libkcups/PrinterModel.cpp:398
 #, kde-format
 msgid "In use - '%1'"
 msgstr "កំពុងប្រើ '%1'"
 
-#: src/libkcups/PrinterModel.cpp:396
+#: src/libkcups/PrinterModel.cpp:402
 #, kde-format
 msgid "Paused"
 msgstr "បាន​ផ្អាក"
 
-#: src/libkcups/PrinterModel.cpp:396
+#: src/libkcups/PrinterModel.cpp:402
 #, kde-format
 msgid "Paused, rejecting jobs"
 msgstr ""
 
-#: src/libkcups/PrinterModel.cpp:398
+#: src/libkcups/PrinterModel.cpp:404
 #, kde-format
 msgid "Paused - '%1'"
 msgstr "បាន​ផ្អាក '%1'"
 
-#: src/libkcups/PrinterModel.cpp:398
+#: src/libkcups/PrinterModel.cpp:404
 #, fuzzy, kde-format
 #| msgid "Paused - '%1'"
 msgid "Paused, rejecting jobs - '%1'"
 msgstr "បាន​ផ្អាក '%1'"
 
-#: src/libkcups/PrinterModel.cpp:402
+#: src/libkcups/PrinterModel.cpp:408
 #, kde-format
 msgid "Unknown"
 msgstr "មិន​ស្គាល់"
 
-#: src/libkcups/PrinterModel.cpp:404
+#: src/libkcups/PrinterModel.cpp:410
 #, kde-format
 msgid "Unknown - '%1'"
 msgstr "មិន​ស្គាល់ '%1'"
 
-#: src/print-queue/main.cpp:38
+#: src/print-queue/main.cpp:39
 #, kde-format
 msgctxt "@info:credit"
 msgid "Plasma Print Queue Manager"
 msgstr ""
 
-#: src/print-queue/main.cpp:40
+#: src/print-queue/main.cpp:41
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "Share this printer"
@@ -841,30 +863,30 @@ msgctxt "@info:credit"
 msgid "Manage printer job queues"
 msgstr "ចែករំលែក​ម៉ាស៊ីន​បោះពុម្ព​នេះ"
 
-#: src/print-queue/main.cpp:42
+#: src/print-queue/main.cpp:43
 #, kde-format
 msgid "© KDE Community"
 msgstr ""
 
-#: src/print-queue/main.cpp:47
+#: src/print-queue/main.cpp:48
 #, kde-format
 msgctxt "@info:credit"
 msgid "Mike Noe"
 msgstr ""
 
-#: src/print-queue/main.cpp:47
+#: src/print-queue/main.cpp:48
 #, kde-format
 msgctxt "@info:credit"
 msgid "Developer"
 msgstr ""
 
-#: src/print-queue/main.cpp:48
+#: src/print-queue/main.cpp:49
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
 msgstr "ខឹម សុខែម, ម៉ន ម៉េត, សេង សុត្ថា, ចាន់ សម្បត្តិរតនៈ, សុខ សុភា"
 
-#: src/print-queue/main.cpp:48
+#: src/print-queue/main.cpp:49
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
@@ -872,14 +894,14 @@ msgstr ""
 "khoemsokhem@khmeros.info,​​mornmet@khmeros.info,sutha@khmeros.info,"
 "ratanak@khmeros.info,sophea@khmeros.info"
 
-#: src/print-queue/main.cpp:58
+#: src/print-queue/main.cpp:62
 #, fuzzy, kde-format
 #| msgctxt "@option:check"
 #| msgid "Share this printer"
 msgid "Show printer queue"
 msgstr "ចែករំលែក​ម៉ាស៊ីន​បោះពុម្ព​នេះ"
 
-#: src/print-queue/PrintQueue.cpp:82
+#: src/print-queue/PrintQueue.cpp:88
 #, kde-format
 msgid "Enter credentials to print from <b>%1</b>"
 msgstr ""
@@ -1376,12 +1398,6 @@ msgstr ""
 
 #~ msgid "Add a new printer or a printer class"
 #~ msgstr "បន្ថែម​ម៉ាស៊ីន​បោះពុម្ព​ថ្មី ឬ​ថ្នាក់​ម៉ាស៊ីន​បោះពុម្ព"
-
-#, fuzzy
-#~| msgctxt "@item"
-#~| msgid "Local Printers"
-#~ msgid "Remove Printer"
-#~ msgstr "ម៉ាស៊ីន​បោះពុម្ព​មូលដ្ឋាន"
 
 #~ msgctxt "@action:intoolbar"
 #~ msgid "Show printers shared by other systems"
